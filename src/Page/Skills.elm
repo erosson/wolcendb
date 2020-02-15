@@ -22,6 +22,7 @@ view dm =
                 [ tr []
                     [ th [] [ text "name" ]
                     , th [] [ text "id" ]
+                    , th [] [ text "lore" ]
                     ]
                 ]
             , tbody []
