@@ -20,8 +20,5 @@ node_modules
 # path we extract game files from
 /GAMEPATH
 
-# extracted game files.
-# For some other projects (PoE), I would include these in the repository.
-# However, Wolcen is newer, and I'm not sure how picky its devs are about
-# copyright - so let's play it safe and leave them out of git for now.
-/datamine/
+# extracted game data. These are way too big, and I'm not sure how wolcen devs are about copyright yet anyway, so don't commit by default.
+/datamine.tmp
