@@ -1,9 +1,9 @@
 # WolcenDB
 
-A website with Wolcen's item/skill information, in the spirit of [poedb](https://poedb.tw) and the [PoE wiki](https://pathofexile.gamepedia.com/).
-Built with [Node](https://nodejs.org/) and [Yarn](https://yarnpkg.com/).
+A website with datamined [Wolcen](https://wolcengame.com) item/skill information, in the spirit of [poedb](https://poedb.tw) and the [PoE wiki](https://pathofexile.gamepedia.com/).
+Built with [Elm](https://elm-lang.org), [create-elm-app](https://github.com/halfzebra/create-elm-app), [Node](https://nodejs.org/) and [Yarn](https://yarnpkg.com/).
 
-Datamined with [gabriel-dehan's WolcenExtractor](https://github.com/gabriel-dehan/WolcenExtractor). Requires [Ruby](https://rubyinstaller.org/downloads/).
+Special thanks to [gabriel-dehan's WolcenExtractor](https://github.com/gabriel-dehan/WolcenExtractor), which does the datamining! Requires [Ruby](https://rubyinstaller.org/downloads/).
 
 
 
