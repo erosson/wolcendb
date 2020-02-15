@@ -8,6 +8,12 @@ import Html as H exposing (..)
 import Html.Attributes as A exposing (..)
 import Html.Events as E exposing (..)
 import Maybe.Extra
+import Page.Accessories
+import Page.Armors
+import Page.Home
+import Page.Shields
+import Page.Weapons
+import Route exposing (Route)
 import Url exposing (Url)
 
 
@@ -22,6 +28,7 @@ type alias Model =
 type alias OkModel =
     { nav : Nav.Key
     , datamine : Datamine
+    , route : Maybe Route
     }
 
 
@@ -40,6 +47,7 @@ init flags url nav =
             ( Ok
                 { nav = nav
                 , datamine = datamine
+                , route = Route.parse url
                 }
             , Cmd.none
             )
@@ -55,8 +63,27 @@ type Msg
 
 
 update : Msg -> Model -> ( Model, Cmd Msg )
-update msg model =
-    ( model, Cmd.none )
+update msg mmodel =
+    case mmodel of
+        Err err ->
+            ( mmodel, Cmd.none )
+
+        Ok model ->
+            updateOk msg model
+                |> Tuple.mapFirst Ok
+
+
+updateOk : Msg -> OkModel -> ( OkModel, Cmd Msg )
+updateOk msg model =
+    case msg of
+        OnUrlChange url ->
+            ( { model | route = Route.parse url }, Cmd.none )
+
+        OnUrlRequest (Browser.Internal url) ->
+            ( model, url |> Url.toString |> Nav.pushUrl model.nav )
+
+        OnUrlRequest (Browser.External url) ->
+            ( model, Nav.load url )
 
 
 
@@ -75,126 +102,29 @@ viewBody mmodel =
             [ code [] [ text err ] ]
 
         Ok model ->
-            viewOk model
+            case model.route of
+                Nothing ->
+                    [ code [] [ text "404 not found" ], div [] [ a [ Route.href Route.Home ] [ text "Back to safety" ] ] ]
 
+                Just route ->
+                    case route of
+                        Route.Home ->
+                            Page.Home.view
 
-viewOk : OkModel -> List (Html Msg)
-viewOk model =
-    [ div []
-        [ h1 [] [ text "hello from wolcendb" ]
-        , h1 [] [ text "Weapons" ]
-        , table []
-            [ thead []
-                [ tr []
-                    [ th [] [ text "name" ]
-                    , th [] [ text "id" ]
-                    , th [] [ text "damage" ]
-                    , th [] [ text "keywords" ]
-                    ]
-                ]
-            , tbody []
-                (model.datamine.loot.weapons
-                    |> List.take 100
-                    |> List.map
-                        (\w ->
-                            tr []
-                                [ td []
-                                    [ Dict.get (String.replace "@" "" w.uiName) model.datamine.en
-                                        |> Maybe.withDefault "???"
-                                        |> text
-                                    ]
-                                , td [] [ text w.name ]
-                                , td []
-                                    [ Maybe.Extra.unwrap "?" String.fromInt w.damage.min
-                                        ++ "-"
-                                        ++ Maybe.Extra.unwrap "?" String.fromInt w.damage.max
-                                        |> text
-                                    ]
-                                , td [] [ text <| String.join ", " w.keywords ]
-                                ]
-                        )
-                )
-            ]
-        , h1 [] [ text "Shields" ]
-        , table []
-            [ thead []
-                [ tr []
-                    [ th [] [ text "name" ]
-                    , th [] [ text "id" ]
-                    , th [] [ text "keywords" ]
-                    ]
-                ]
-            , tbody []
-                (model.datamine.loot.shields
-                    |> List.take 100
-                    |> List.map
-                        (\w ->
-                            tr []
-                                [ td []
-                                    [ Dict.get (String.replace "@" "" w.uiName) model.datamine.en
-                                        |> Maybe.withDefault "???"
-                                        |> text
-                                    ]
-                                , td [] [ text w.name ]
-                                , td [] [ text <| String.join ", " w.keywords ]
-                                ]
-                        )
-                )
-            ]
-        , h1 [] [ text "Armors" ]
-        , table []
-            [ thead []
-                [ tr []
-                    [ th [] [ text "name" ]
-                    , th [] [ text "id" ]
-                    , th [] [ text "keywords" ]
-                    ]
-                ]
-            , tbody []
-                (model.datamine.loot.armors
-                    |> List.take 100
-                    |> List.map
-                        (\w ->
-                            tr []
-                                [ td []
-                                    [ Dict.get (String.replace "@" "" w.uiName) model.datamine.en
-                                        |> Maybe.withDefault "???"
-                                        |> text
-                                    ]
-                                , td [] [ text w.name ]
-                                , td [] [ text <| String.join ", " w.keywords ]
-                                ]
-                        )
-                )
-            ]
-        , h1 [] [ text "Accessories" ]
-        , table []
-            [ thead []
-                [ tr []
-                    [ th [] [ text "name" ]
-                    , th [] [ text "id" ]
-                    , th [] [ text "keywords" ]
-                    ]
-                ]
-            , tbody []
-                (model.datamine.loot.accessories
-                    |> List.take 100
-                    |> List.map
-                        (\w ->
-                            tr []
-                                [ td []
-                                    [ Dict.get (String.replace "@" "" w.uiName) model.datamine.en
-                                        |> Maybe.withDefault "???"
-                                        |> text
-                                    ]
-                                , td [] [ text w.name ]
-                                , td [] [ text <| String.join ", " w.keywords ]
-                                ]
-                        )
-                )
-            ]
-        ]
-    ]
+                        Route.Weapons ->
+                            Page.Weapons.view model.datamine
+
+                        Route.Shields ->
+                            Page.Shields.view model.datamine
+
+                        Route.Armors ->
+                            Page.Armors.view model.datamine
+
+                        Route.Accessories ->
+                            Page.Accessories.view model.datamine
+
+                        _ ->
+                            [ code [] [ text "404 not found" ], div [] [ a [ Route.href Route.Home ] [ text "Back to safety" ] ] ]
 
 
 
