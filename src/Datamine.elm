@@ -97,17 +97,16 @@ type alias Range a =
 
 type alias Skill =
     { uid : String
-    , uiName : Maybe String
+    , uiName : String
     , lore : Maybe String
-
-    -- , keywords : List String
+    , keywords : List String
     , variants : List SkillVariant
     }
 
 
 type alias SkillVariant =
     { uid : String
-    , uiName : Maybe String
+    , uiName : String
     , lore : Maybe String
     }
 
@@ -150,39 +149,37 @@ skillsDecoder =
     Json.keyValuePairs Json.value
         |> Json.map (List.filter (Tuple.first >> String.contains "/Skills/NewSkills/Player/"))
         |> Json.map (List.map (Tuple.second >> Json.decodeValue (jsonXmlDecoder skillDecoder)))
-        |> Json.map Result.Extra.combine
-        |> Json.andThen
-            (\r ->
-                case r of
-                    Err err ->
-                        Json.fail <| Json.errorToString err
-
-                    Ok ok ->
-                        Json.succeed ok
-            )
+        -- |> Json.map Result.Extra.combine
+        |> Json.map (List.filterMap Result.toMaybe)
 
 
-type SkillDecoder
-    = SkillXml (List SkillVariant -> Skill)
-    | SkillVariantXml SkillVariant
+
+--|> Json.andThen
+--    (\r ->
+--        case r of
+--            Err err ->
+--                Json.fail <| Json.errorToString err
+--
+--            Ok ok ->
+--                Json.succeed ok
+--    )
+
+
+type alias SkillDecoder =
+    { uid : String
+    , uiName : Maybe String
+    , lore : Maybe String
+    , keywords : Maybe (List String)
+    }
 
 
 skillDecoder : D.Decoder Skill
 skillDecoder =
-    D.oneOf
-        [ D.map3 Skill
-            -- (D.path [ "WeaponRequirements" ] <| D.single <| D.stringAttr "Requirements")
-            (D.stringAttr "UID")
-            (D.maybe <| D.path [ "HUD" ] <| D.single <| D.stringAttr "UIName")
-            (D.maybe <| D.path [ "HUD" ] <| D.single <| D.stringAttr "Lore")
-            -- (D.stringAttr "Keywords" |> D.map (String.split ","))
-            |> D.map SkillXml
-        , D.map3 SkillVariant
-            (D.stringAttr "UID")
-            (D.maybe <| D.path [ "HUD" ] <| D.single <| D.stringAttr "UIName")
-            (D.maybe <| D.path [ "HUD" ] <| D.single <| D.stringAttr "Lore")
-            |> D.map SkillVariantXml
-        ]
+    D.map4 SkillDecoder
+        (D.stringAttr "UID")
+        (D.maybe <| D.path [ "HUD" ] <| D.single <| D.stringAttr "UIName")
+        (D.maybe <| D.path [ "HUD" ] <| D.single <| D.stringAttr "Lore")
+        (D.maybe <| D.map (String.split ",") <| D.stringAttr "Keywords")
         -- |> D.maybe
         |> D.list
         |> D.path [ "Skill" ]
@@ -190,27 +187,34 @@ skillDecoder =
         |> D.andThen
             (\els ->
                 case els of
-                    (SkillXml s) :: tail ->
-                        let
-                            variants : List SkillVariant
-                            variants =
-                                els
-                                    |> List.filterMap
-                                        (\el ->
-                                            case el of
-                                                SkillVariantXml v ->
-                                                    Just v
+                    s :: vs ->
+                        case s.uiName of
+                            Nothing ->
+                                D.fail "no skill.uiname"
 
-                                                _ ->
-                                                    Nothing
-                                        )
-                        in
-                        D.succeed <| s variants
+                            Just uiName ->
+                                D.succeed
+                                    { uid = s.uid
+                                    , uiName = uiName
+                                    , lore = s.lore
+                                    , keywords = s.keywords |> Maybe.withDefault []
+                                    , variants =
+                                        vs
+                                            |> List.filterMap
+                                                (\v ->
+                                                    Maybe.map
+                                                        (\vUiName ->
+                                                            { uid = v.uid
+                                                            , uiName = vUiName
+                                                            , lore = v.lore
+                                                            }
+                                                        )
+                                                        v.uiName
+                                                )
+                                    }
 
-                    _ ->
-                        D.fail "first <skill> unparsable as a skill"
-             -- _ ->
-             -- D.fail "multiple skills"
+                    [] ->
+                        D.fail "skill has no instances"
             )
 
 

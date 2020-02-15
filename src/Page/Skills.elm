@@ -15,14 +15,14 @@ view : Datamine -> List (Html msg)
 view dm =
     [ div [ class "container" ]
         [ View.Nav.view
-        , div [ class "navbar navbar-expand-sm navbar-light bg-light" ]
-            [ a [ class "navbar-brand", Route.href Route.Skills ] [ text "Skills" ]
+        , ol [ class "breadcrumb" ]
+            [ a [ class "breadcrumb-item active", Route.href Route.Home ] [ text "Home" ]
+            , a [ class "breadcrumb-item active", Route.href Route.Skills ] [ text "Skills" ]
             ]
         , table [ class "table" ]
             [ thead []
                 [ tr []
                     [ th [] [ text "name" ]
-                    , th [] [ text "id" ]
                     , th [] [ text "desc" ]
                     , th [] [ text "lore" ]
                     ]
@@ -32,11 +32,10 @@ view dm =
                     |> List.map
                         (\s ->
                             tr []
-                                [ td [ title <| Maybe.withDefault "" s.uiName ]
-                                    [ Datamine.mlang dm s.uiName |> Maybe.withDefault "???" |> text ]
-                                , td [] [ text s.uid ]
-                                , td [ title <| Maybe.withDefault "" <| Maybe.map (\n -> n ++ "_desc") s.uiName ]
-                                    (View.Desc.mdesc dm (Maybe.map (\n -> n ++ "_desc") s.uiName) |> Maybe.withDefault [ text "???" ])
+                                [ td [ title s.uiName ]
+                                    [ a [ Route.href <| Route.Skill s.uid ] [ Datamine.lang dm s.uiName |> Maybe.withDefault "???" |> text ] ]
+                                , td [ title <| s.uiName ++ "_desc" ]
+                                    (View.Desc.desc dm (s.uiName ++ "_desc") |> Maybe.withDefault [ text "???" ])
                                 , td [ title <| Maybe.withDefault "" s.lore ]
                                     (View.Desc.mdesc dm s.lore |> Maybe.withDefault [ text "???" ])
                                 ]

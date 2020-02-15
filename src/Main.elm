@@ -12,6 +12,7 @@ import Page.Accessories
 import Page.Armors
 import Page.Home
 import Page.Shields
+import Page.Skill
 import Page.Skills
 import Page.UniqueAccessories
 import Page.UniqueArmors
@@ -109,7 +110,7 @@ viewBody mmodel =
         Ok model ->
             case model.route of
                 Nothing ->
-                    [ code [] [ text "404 not found" ], div [] [ a [ Route.href Route.Home ] [ text "Back to safety" ] ] ]
+                    viewNotFound
 
                 Just route ->
                     case route of
@@ -142,6 +143,14 @@ viewBody mmodel =
 
                         Route.Skills ->
                             Page.Skills.view model.datamine
+
+                        Route.Skill s ->
+                            Page.Skill.view model.datamine s
+                                |> Maybe.withDefault viewNotFound
+
+
+viewNotFound =
+    [ code [] [ text "404 not found" ], div [] [ a [ Route.href Route.Home ] [ text "Back to safety" ] ] ]
 
 
 

@@ -14,8 +14,9 @@ view : Datamine -> List (Html msg)
 view dm =
     [ div [ class "container" ]
         [ View.Nav.view
-        , div [ class "navbar navbar-expand-sm navbar-light bg-light" ]
-            [ a [ class "navbar-brand", Route.href Route.Shields ] [ text "Shields" ]
+        , ol [ class "breadcrumb" ]
+            [ a [ class "breadcrumb-item active", Route.href Route.Home ] [ text "Home" ]
+            , a [ class "breadcrumb-item active", Route.href Route.Shields ] [ text "Shields" ]
             ]
         , table [ class "table" ]
             [ thead []

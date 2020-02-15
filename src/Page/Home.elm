@@ -17,7 +17,7 @@ view =
         , div [ class "row" ]
             [ div [ class "col-sm" ]
                 [ div [ class "card" ]
-                    [ div [ class "card-header" ] [ text "" ]
+                    [ div [ class "card-header" ] [ text "Player" ]
                     , ul [ class "list-group list-group-flush" ]
                         [ li [ class "list-group-item" ] [ a [ Route.href Route.Skills ] [ text "Skills" ] ]
                         ]
