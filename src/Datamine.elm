@@ -1,6 +1,7 @@
 module Datamine exposing (Datamine, Flag, decode, lang, mlang)
 
 import Dict exposing (Dict)
+import Dict.Extra
 import Json.Decode as Json
 import Result.Extra
 import Xml.Decode as D
@@ -13,6 +14,7 @@ type alias Flag =
 type alias Datamine =
     { loot : Loot
     , skills : List Skill
+    , skillASTs : List SkillAST
     , en : Dict String String
     }
 
@@ -111,6 +113,19 @@ type alias SkillVariant =
     }
 
 
+type alias SkillAST =
+    { name : String
+    , variants : List SkillASTVariant
+    }
+
+
+type alias SkillASTVariant =
+    { uid : String
+    , level : Int
+    , cost : Int
+    }
+
+
 lang : Datamine -> String -> Maybe String
 lang dm key =
     Dict.get (String.toLower key) dm.en
@@ -129,7 +144,7 @@ decode =
 
 jsonDecoder : Json.Decoder Datamine
 jsonDecoder =
-    Json.map3 Datamine
+    Json.map4 Datamine
         (Json.map8 Loot
             (Json.field "Game/Umbra/Loot/Weapons/Weapons.xml" <| jsonXmlDecoder weaponsDecoder)
             (Json.field "Game/Umbra/Loot/Weapons/Shields.xml" <| jsonXmlDecoder shieldsDecoder)
@@ -141,7 +156,41 @@ jsonDecoder =
             (Json.field "Game/Umbra/Loot/Armors/UniquesAccessories.xml" <| jsonXmlDecoder uniqueAccessoriesDecoder)
         )
         skillsDecoder
+        skillASTsDecoder
         rootLangDecoder
+
+
+skillASTsDecoder : Json.Decoder (List SkillAST)
+skillASTsDecoder =
+    Json.keyValuePairs Json.value
+        |> Json.map (List.filter (Tuple.first >> String.contains "/Skills/Trees/ActiveSkills/"))
+        |> Json.map (List.map (Tuple.second >> Json.decodeValue (jsonXmlDecoder skillASTDecoder)))
+        -- |> Json.map (List.filterMap Result.toMaybe)
+        |> Json.map Result.Extra.combine
+        |> Json.andThen
+            (\r ->
+                case r of
+                    Err err ->
+                        Json.fail <| Json.errorToString err
+
+                    Ok ok ->
+                        Json.succeed ok
+            )
+
+
+skillASTDecoder : D.Decoder SkillAST
+skillASTDecoder =
+    D.map2 SkillAST
+        (D.stringAttr "Name")
+        (D.map3 SkillASTVariant
+            (D.stringAttr "UID")
+            (D.intAttr "Level")
+            (D.intAttr "Cost")
+            |> D.list
+            |> D.path [ "SkillVariant" ]
+        )
+        |> D.single
+        |> D.path [ "AST" ]
 
 
 skillsDecoder : Json.Decoder (List Skill)

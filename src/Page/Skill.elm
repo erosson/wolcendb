@@ -19,6 +19,22 @@ view dm uid =
         |> Maybe.map
             (\skill ->
                 let
+                    ast =
+                        dm.skillASTs
+                            |> List.filter (\a -> String.toLower a.name == String.toLower skill.uid)
+                            |> List.head
+
+                    vas =
+                        ast
+                            |> Maybe.Extra.unwrap [] .variants
+                            |> List.filterMap
+                                (\va ->
+                                    skill.variants
+                                        |> List.filter (\v -> String.toLower va.uid == String.toLower v.uid)
+                                        |> List.head
+                                        |> Maybe.map (Tuple.pair va)
+                                )
+
                     label : String
                     label =
                         Datamine.lang dm skill.uiName |> Maybe.withDefault "???"
@@ -37,18 +53,22 @@ view dm uid =
                             [ tr []
                                 [ th [] [ text "name" ]
                                 , th [] [ text "desc" ]
+                                , th [] [ text "level" ]
+                                , th [] [ text "cost" ]
                                 , th [] [ text "lore" ]
                                 ]
                             ]
                         , tbody []
-                            (skill.variants
+                            (vas
                                 |> List.map
-                                    (\v ->
+                                    (\( va, v ) ->
                                         tr []
                                             [ td [ title v.uiName ]
                                                 [ Datamine.lang dm v.uiName |> Maybe.withDefault "???" |> text ]
                                             , td [ title <| v.uiName ++ "_desc" ]
                                                 (View.Desc.desc dm (v.uiName ++ "_desc") |> Maybe.withDefault [ text "???" ])
+                                            , td [] [ text <| String.fromInt va.level ]
+                                            , td [] [ text <| String.fromInt va.cost ]
                                             , td [ title <| Maybe.withDefault "" v.lore ]
                                                 (View.Desc.mdesc dm v.lore |> Maybe.withDefault [ text "???" ])
                                             ]

@@ -8,7 +8,7 @@
   "scripts": {
     "export:pull": "bash -c \"git subtree pull --squash --prefix third-party/WolcenExtractor git@github.com:gabriel-dehan/WolcenExtractor.git master && yarn export:install\"",
     "export:install": "bash -c \"gem install bundler && cd third-party/WolcenExtractor && bundle install\"",
-    "export:cp": "bash -c \"rm -rf datamine && mkdir -p datamine && cd datamine.tmp && cp -r --parents localization/text_ui_{Loot,Activeskills}.xml Game/Umbra/Loot/Armors/{Armors,Accessories,Armors_unique,UniquesAccessories}* Game/Umbra/Loot/Weapons/{Unique,}{Weapons,Shields}* Game/Umbra/Skills/NewSkills/Player/Player_* -t ../datamine/ && cd - && node ./src/import_datamine.js\"",
+    "export:cp": "bash -c \"rm -rf datamine && mkdir -p datamine && cd datamine.tmp && cp -r --parents localization/text_ui_{Loot,Activeskills}.xml Game/Umbra/Loot/Armors/{Armors,Accessories,Armors_unique,UniquesAccessories}* Game/Umbra/Loot/Weapons/{Unique,}{Weapons,Shields}* Game/Umbra/Skills/NewSkills/Player/Player_* Game/Umbra/Skills/Trees/ActiveSkills/*.xml -t ../datamine/ && cd - && node ./src/import_datamine.js\"",
     "export": "bash -c \"cd third-party/WolcenExtractor && ruby src/main.rb extract --source \\\"`cat ../../GAMEPATH`\\\" --dest ../../datamine.tmp --only english_xml.pak,umbra.pak && yarn export:cp\"",
     "start": "bash -c \"ELM_DEBUGGER=false elm-app start\"",
     "build": "bash -c \"elm-app build\"",
