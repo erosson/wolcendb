@@ -7,6 +7,7 @@ import Html.Attributes as A exposing (..)
 import Html.Events as E exposing (..)
 import Maybe.Extra
 import Route exposing (Route)
+import View.Desc
 import View.Nav
 
 
@@ -22,6 +23,7 @@ view dm =
                 [ tr []
                     [ th [] [ text "name" ]
                     , th [] [ text "id" ]
+                    , th [] [ text "desc" ]
                     , th [] [ text "lore" ]
                     ]
                 ]
@@ -33,8 +35,10 @@ view dm =
                                 [ td [ title <| Maybe.withDefault "" s.uiName ]
                                     [ Datamine.mlang dm s.uiName |> Maybe.withDefault "???" |> text ]
                                 , td [] [ text s.uid ]
+                                , td [ title <| Maybe.withDefault "" <| Maybe.map (\n -> n ++ "_desc") s.uiName ]
+                                    (View.Desc.mdesc dm (Maybe.map (\n -> n ++ "_desc") s.uiName) |> Maybe.withDefault [ text "???" ])
                                 , td [ title <| Maybe.withDefault "" s.lore ]
-                                    [ Datamine.mlang dm s.lore |> Maybe.withDefault "???" |> text ]
+                                    (View.Desc.mdesc dm s.lore |> Maybe.withDefault [ text "???" ])
                                 ]
                         )
                 )

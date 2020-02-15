@@ -7,6 +7,7 @@ import Html.Attributes as A exposing (..)
 import Html.Events as E exposing (..)
 import Maybe.Extra
 import Route exposing (Route)
+import View.Desc
 import View.Nav
 
 
@@ -43,7 +44,7 @@ view dm =
                                     ]
                                 , td [] [ text <| String.join ", " w.keywords ]
                                 , td []
-                                    [ Datamine.mlang dm w.lore |> Maybe.withDefault "???" |> text ]
+                                    (View.Desc.mdesc dm w.lore |> Maybe.withDefault [ text "???" ])
                                 ]
                         )
                 )

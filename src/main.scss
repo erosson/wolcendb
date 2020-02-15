@@ -34,3 +34,10 @@ $body-bg: $white;
 
 body {
 }
+
+// Extracted html descriptions sometimes set font size to absurd sizes,
+// when I just want consistent size
+.desc font,
+.desc {
+  font-size: medium !important;
+}
