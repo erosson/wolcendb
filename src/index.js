@@ -1,4 +1,4 @@
-import './main.css';
+import '!!style-loader!css-loader!sass-loader!./main.scss';
 import { Elm } from './Main.elm';
 import * as serviceWorker from './serviceWorker';
 import Weapons from '!!raw-loader!../datamine/Game/Umbra/Loot/Weapons/Weapons.xml'

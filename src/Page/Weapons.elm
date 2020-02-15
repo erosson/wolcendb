@@ -6,40 +6,47 @@ import Html as H exposing (..)
 import Html.Attributes as A exposing (..)
 import Html.Events as E exposing (..)
 import Maybe.Extra
+import Route exposing (Route)
+import View.Nav
 
 
 view : Datamine -> List (Html msg)
 view dm =
-    [ h1 [] [ text "Weapons" ]
-    , table []
-        [ thead []
-            [ tr []
-                [ th [] [ text "name" ]
-                , th [] [ text "id" ]
-                , th [] [ text "damage" ]
-                , th [] [ text "keywords" ]
-                ]
+    [ div [ class "container" ]
+        [ View.Nav.view
+        , div [ class "navbar navbar-expand-sm navbar-light bg-light" ]
+            [ a [ class "navbar-brand", Route.href Route.Weapons ] [ text "Weapons" ]
             ]
-        , tbody []
-            (dm.loot.weapons
-                |> List.map
-                    (\w ->
-                        tr []
-                            [ td []
-                                [ Dict.get (String.replace "@" "" w.uiName) dm.en
-                                    |> Maybe.withDefault "???"
-                                    |> text
+        , table [ class "table" ]
+            [ thead []
+                [ tr []
+                    [ th [] [ text "name" ]
+                    , th [] [ text "id" ]
+                    , th [] [ text "damage" ]
+                    , th [] [ text "keywords" ]
+                    ]
+                ]
+            , tbody []
+                (dm.loot.weapons
+                    |> List.map
+                        (\w ->
+                            tr []
+                                [ td []
+                                    [ Dict.get (String.replace "@" "" w.uiName) dm.en
+                                        |> Maybe.withDefault "???"
+                                        |> text
+                                    ]
+                                , td [] [ text w.name ]
+                                , td []
+                                    [ Maybe.Extra.unwrap "?" String.fromInt w.damage.min
+                                        ++ "-"
+                                        ++ Maybe.Extra.unwrap "?" String.fromInt w.damage.max
+                                        |> text
+                                    ]
+                                , td [] [ text <| String.join ", " w.keywords ]
                                 ]
-                            , td [] [ text w.name ]
-                            , td []
-                                [ Maybe.Extra.unwrap "?" String.fromInt w.damage.min
-                                    ++ "-"
-                                    ++ Maybe.Extra.unwrap "?" String.fromInt w.damage.max
-                                    |> text
-                                ]
-                            , td [] [ text <| String.join ", " w.keywords ]
-                            ]
-                    )
-            )
+                        )
+                )
+            ]
         ]
     ]

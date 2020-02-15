@@ -7,15 +7,36 @@ import Html.Attributes as A exposing (..)
 import Html.Events as E exposing (..)
 import Maybe.Extra
 import Route exposing (Route)
+import View.Nav
 
 
 view : List (Html msg)
 view =
-    [ h1 [] [ text "WolcenDB" ]
-    , ul []
-        [ li [] [ a [ Route.href Route.Weapons ] [ text "Weapons" ], text "; ", a [ Route.href Route.UniqueWeapons ] [ text "Unique Weapons" ] ]
-        , li [] [ a [ Route.href Route.Shields ] [ text "Shields" ], text "; ", a [ Route.href Route.UniqueShields ] [ text "Unique Shields" ] ]
-        , li [] [ a [ Route.href Route.Armors ] [ text "Armors" ], text "; ", a [ Route.href Route.UniqueArmors ] [ text "Unique Armors" ] ]
-        , li [] [ a [ Route.href Route.Accessories ] [ text "Accessories" ], text "; ", a [ Route.href Route.UniqueAccessories ] [ text "Unique Accessories" ] ]
+    [ div [ class "container" ]
+        [ View.Nav.view
+        , div [ class "row" ]
+            [ div [ class "col-sm" ]
+                [ div [ class "card" ]
+                    [ div [ class "card-header" ] [ text "Loot" ]
+                    , ul [ class "list-group list-group-flush" ]
+                        [ li [ class "list-group-item" ] [ a [ Route.href Route.Weapons ] [ text "Weapons" ] ]
+                        , li [ class "list-group-item" ] [ a [ Route.href Route.Shields ] [ text "Shields" ] ]
+                        , li [ class "list-group-item" ] [ a [ Route.href Route.Armors ] [ text "Armors" ] ]
+                        , li [ class "list-group-item" ] [ a [ Route.href Route.Accessories ] [ text "Accessories" ] ]
+                        ]
+                    ]
+                ]
+            , div [ class "col-sm" ]
+                [ div [ class "card" ]
+                    [ div [ class "card-header" ] [ text "Uniques" ]
+                    , ul [ class "list-group list-group-flush" ]
+                        [ li [ class "list-group-item" ] [ a [ Route.href Route.UniqueWeapons ] [ text "Weapons" ] ]
+                        , li [ class "list-group-item" ] [ a [ Route.href Route.UniqueShields ] [ text "Shields" ] ]
+                        , li [ class "list-group-item" ] [ a [ Route.href Route.UniqueArmors ] [ text "Armors" ] ]
+                        , li [ class "list-group-item" ] [ a [ Route.href Route.UniqueAccessories ] [ text "Accessories" ] ]
+                        ]
+                    ]
+                ]
+            ]
         ]
     ]
