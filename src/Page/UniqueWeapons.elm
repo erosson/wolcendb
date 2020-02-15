@@ -24,12 +24,8 @@ view dm =
             [ thead []
                 [ tr []
                     [ th [] [ text "name" ]
-                    , th [] [ text "id" ]
                     , th [] [ text "damage" ]
                     , th [] [ text "keywords" ]
-                    , th [] [ text "implicits" ]
-                    , th [] [ text "affixes" ]
-                    , th [] [ text "lore" ]
                     ]
                 ]
             , tbody []
@@ -38,8 +34,9 @@ view dm =
                         (\w ->
                             tr []
                                 [ td []
-                                    [ Datamine.lang dm w.uiName |> Maybe.withDefault "???" |> text ]
-                                , td [] [ text w.name ]
+                                    [ a [ Route.href <| Route.UniqueWeapon w.name ]
+                                        [ Datamine.lang dm w.uiName |> Maybe.withDefault "???" |> text ]
+                                    ]
                                 , td []
                                     [ Maybe.Extra.unwrap "?" String.fromInt w.damage.min
                                         ++ "-"
@@ -47,10 +44,6 @@ view dm =
                                         |> text
                                     ]
                                 , td [] [ text <| String.join ", " w.keywords ]
-                                , td [] [ ul [] <| View.Affix.viewAffixIds dm w.implicitAffixes ]
-                                , td [] [ ul [] <| View.Affix.viewAffixIds dm w.defaultAffixes ]
-                                , td []
-                                    (View.Desc.mdesc dm w.lore |> Maybe.withDefault [ text "???" ])
                                 ]
                         )
                 )

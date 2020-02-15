@@ -15,8 +15,12 @@ import Page.Shields
 import Page.Skill
 import Page.Skills
 import Page.UniqueAccessories
+import Page.UniqueAccessory
+import Page.UniqueArmor
 import Page.UniqueArmors
+import Page.UniqueShield
 import Page.UniqueShields
+import Page.UniqueWeapon
 import Page.UniqueWeapons
 import Page.Weapons
 import Route exposing (Route)
@@ -140,6 +144,22 @@ viewBody mmodel =
 
                         Route.UniqueAccessories ->
                             Page.UniqueAccessories.view model.datamine
+
+                        Route.UniqueWeapon name ->
+                            Page.UniqueWeapon.view model.datamine name
+                                |> Maybe.withDefault viewNotFound
+
+                        Route.UniqueShield name ->
+                            Page.UniqueShield.view model.datamine name
+                                |> Maybe.withDefault viewNotFound
+
+                        Route.UniqueArmor name ->
+                            Page.UniqueArmor.view model.datamine name
+                                |> Maybe.withDefault viewNotFound
+
+                        Route.UniqueAccessory name ->
+                            Page.UniqueAccessory.view model.datamine name
+                                |> Maybe.withDefault viewNotFound
 
                         Route.Skills ->
                             Page.Skills.view model.datamine

@@ -17,6 +17,10 @@ type Route
     | UniqueShields
     | UniqueArmors
     | UniqueAccessories
+    | UniqueWeapon String
+    | UniqueShield String
+    | UniqueArmor String
+    | UniqueAccessory String
     | Skills
     | Skill String
 
@@ -38,6 +42,10 @@ parser =
         , P.map UniqueShields <| P.s "loot" </> P.s "unique" </> P.s "shield"
         , P.map UniqueArmors <| P.s "loot" </> P.s "unique" </> P.s "armor"
         , P.map UniqueAccessories <| P.s "loot" </> P.s "unique" </> P.s "accessory"
+        , P.map UniqueWeapon <| P.s "loot" </> P.s "unique" </> P.s "weapon" </> P.string
+        , P.map UniqueShield <| P.s "loot" </> P.s "unique" </> P.s "shield" </> P.string
+        , P.map UniqueArmor <| P.s "loot" </> P.s "unique" </> P.s "armor" </> P.string
+        , P.map UniqueAccessory <| P.s "loot" </> P.s "unique" </> P.s "accessory" </> P.string
         , P.map Skills <| P.s "skill"
         , P.map Skill <| P.s "skill" </> P.string
         ]
@@ -72,6 +80,18 @@ toString r =
 
         UniqueAccessories ->
             "/loot/unique/accessory"
+
+        UniqueWeapon id ->
+            "/loot/unique/weapon/" ++ id
+
+        UniqueShield id ->
+            "/loot/unique/shield/" ++ id
+
+        UniqueArmor id ->
+            "/loot/unique/armor/" ++ id
+
+        UniqueAccessory id ->
+            "/loot/unique/accessory/" ++ id
 
         Skills ->
             "/skill"
