@@ -103,23 +103,23 @@ jsonDecoder : Json.Decoder Datamine
 jsonDecoder =
     Json.map2 Datamine
         (Json.map8 Loot
-            (Json.field "Weapons" <| jsonXmlDecoder weaponsDecoder)
-            (Json.field "Shields" <| jsonXmlDecoder shieldsDecoder)
-            (Json.field "Armors" <| jsonXmlDecoder armorsDecoder)
-            (Json.field "Accessories" <| jsonXmlDecoder accessoriesDecoder)
-            (Json.field "UniqueWeapons" <| jsonXmlDecoder uniqueWeaponsDecoder)
-            (Json.field "UniqueShields" <| jsonXmlDecoder uniqueShieldsDecoder)
-            (Json.field "UniqueArmors" <| jsonXmlDecoder uniqueArmorsDecoder)
-            (Json.field "UniqueAccessories" <| jsonXmlDecoder uniqueAccessoriesDecoder)
+            (Json.field "Game/Umbra/Loot/Weapons/Weapons.xml" <| jsonXmlDecoder weaponsDecoder)
+            (Json.field "Game/Umbra/Loot/Weapons/Shields.xml" <| jsonXmlDecoder shieldsDecoder)
+            (Json.field "Game/Umbra/Loot/Armors/Armors.xml" <| jsonXmlDecoder armorsDecoder)
+            (Json.field "Game/Umbra/Loot/Armors/Accessories.xml" <| jsonXmlDecoder accessoriesDecoder)
+            (Json.field "Game/Umbra/Loot/Weapons/UniqueWeapons.xml" <| jsonXmlDecoder uniqueWeaponsDecoder)
+            (Json.field "Game/Umbra/Loot/Weapons/UniqueShields.xml" <| jsonXmlDecoder uniqueShieldsDecoder)
+            (Json.field "Game/Umbra/Loot/Armors/Armors_uniques.xml" <| jsonXmlDecoder uniqueArmorsDecoder)
+            (Json.field "Game/Umbra/Loot/Armors/UniquesAccessories.xml" <| jsonXmlDecoder uniqueAccessoriesDecoder)
         )
-        (Json.field "en" rootLangDecoder)
+        rootLangDecoder
 
 
 rootLangDecoder : Json.Decoder (Dict String String)
 rootLangDecoder =
     Json.map Dict.fromList
         -- (Json.field "Loot" <| jsonXmlDecoder langDecoder)
-        (Json.field "Loot" langDecoder)
+        (Json.field "localization/text_ui_Loot.xml" langDecoder)
 
 
 jsonXmlDecoder : D.Decoder a -> Json.Decoder a
