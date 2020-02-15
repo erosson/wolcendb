@@ -12,6 +12,7 @@ import Page.Accessories
 import Page.Armors
 import Page.Home
 import Page.Shields
+import Page.Skills
 import Page.UniqueAccessories
 import Page.UniqueArmors
 import Page.UniqueShields
@@ -138,6 +139,9 @@ viewBody mmodel =
 
                         Route.UniqueAccessories ->
                             Page.UniqueAccessories.view model.datamine
+
+                        Route.Skills ->
+                            Page.Skills.view model.datamine
 
 
 

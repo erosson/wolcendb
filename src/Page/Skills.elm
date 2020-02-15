@@ -1,4 +1,4 @@
-module Page.Armors exposing (view)
+module Page.Skills exposing (view)
 
 import Datamine exposing (Datamine)
 import Dict exposing (Dict)
@@ -15,25 +15,25 @@ view dm =
     [ div [ class "container" ]
         [ View.Nav.view
         , div [ class "navbar navbar-expand-sm navbar-light bg-light" ]
-            [ a [ class "navbar-brand", Route.href Route.Armors ] [ text "Armors" ]
+            [ a [ class "navbar-brand", Route.href Route.Skills ] [ text "Skills" ]
             ]
         , table [ class "table" ]
             [ thead []
                 [ tr []
                     [ th [] [ text "name" ]
                     , th [] [ text "id" ]
-                    , th [] [ text "keywords" ]
                     ]
                 ]
             , tbody []
-                (dm.loot.armors
+                (dm.skills
                     |> List.map
-                        (\w ->
+                        (\s ->
                             tr []
-                                [ td []
-                                    [ Datamine.lang dm w.uiName |> Maybe.withDefault "???" |> text ]
-                                , td [] [ text w.name ]
-                                , td [] [ text <| String.join ", " w.keywords ]
+                                [ td [ title <| Maybe.withDefault "" s.uiName ]
+                                    [ Datamine.mlang dm s.uiName |> Maybe.withDefault "???" |> text ]
+                                , td [] [ text s.uid ]
+                                , td [ title <| Maybe.withDefault "" s.lore ]
+                                    [ Datamine.mlang dm s.lore |> Maybe.withDefault "???" |> text ]
                                 ]
                         )
                 )

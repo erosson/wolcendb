@@ -58,7 +58,8 @@ import game_54 from "!!raw-loader!../datamine/Game/Umbra/Skills/NewSkills/Player
 import game_55 from "!!raw-loader!../datamine/Game/Umbra/Skills/NewSkills/Player/Player_Vortex.xml"
 import game_56 from "!!raw-loader!../datamine/Game/Umbra/Skills/NewSkills/Player/Player_WarCry.xml"
 import game_57 from "!!raw-loader!../datamine/Game/Umbra/Skills/NewSkills/Player/Player_WhirlWind.xml"
-import localization_0 from "!!json-loader!@erosson/xlsx-loader!../datamine/localization/text_ui_Loot.xml"
+import localization_0 from "!!json-loader!@erosson/xlsx-loader!../datamine/localization/text_ui_Activeskills.xml"
+import localization_1 from "!!json-loader!@erosson/xlsx-loader!../datamine/localization/text_ui_Loot.xml"
 
 export default {
   "Game/Umbra/Loot/Armors/Accessories.xml": game_0,
@@ -119,5 +120,6 @@ export default {
   "Game/Umbra/Skills/NewSkills/Player/Player_Vortex.xml": game_55,
   "Game/Umbra/Skills/NewSkills/Player/Player_WarCry.xml": game_56,
   "Game/Umbra/Skills/NewSkills/Player/Player_WhirlWind.xml": game_57,
-  "localization/text_ui_Loot.xml": localization_0,
+  "localization/text_ui_Activeskills.xml": localization_0,
+  "localization/text_ui_Loot.xml": localization_1,
 }

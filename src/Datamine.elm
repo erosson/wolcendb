@@ -1,7 +1,8 @@
-module Datamine exposing (Datamine, Flag, decode)
+module Datamine exposing (Datamine, Flag, decode, lang, mlang)
 
 import Dict exposing (Dict)
 import Json.Decode as Json
+import Result.Extra
 import Xml.Decode as D
 
 
@@ -11,6 +12,7 @@ type alias Flag =
 
 type alias Datamine =
     { loot : Loot
+    , skills : List Skill
     , en : Dict String String
     }
 
@@ -93,6 +95,33 @@ type alias Range a =
     { min : a, max : a }
 
 
+type alias Skill =
+    { uid : String
+    , uiName : Maybe String
+    , lore : Maybe String
+
+    -- , keywords : List String
+    , variants : List SkillVariant
+    }
+
+
+type alias SkillVariant =
+    { uid : String
+    , uiName : Maybe String
+    , lore : Maybe String
+    }
+
+
+lang : Datamine -> String -> Maybe String
+lang dm key =
+    Dict.get (String.toLower key) dm.en
+
+
+mlang : Datamine -> Maybe String -> Maybe String
+mlang dm =
+    Maybe.andThen (lang dm)
+
+
 decode : Flag -> Result String Datamine
 decode =
     Json.decodeValue jsonDecoder
@@ -101,7 +130,7 @@ decode =
 
 jsonDecoder : Json.Decoder Datamine
 jsonDecoder =
-    Json.map2 Datamine
+    Json.map3 Datamine
         (Json.map8 Loot
             (Json.field "Game/Umbra/Loot/Weapons/Weapons.xml" <| jsonXmlDecoder weaponsDecoder)
             (Json.field "Game/Umbra/Loot/Weapons/Shields.xml" <| jsonXmlDecoder shieldsDecoder)
@@ -112,14 +141,90 @@ jsonDecoder =
             (Json.field "Game/Umbra/Loot/Armors/Armors_uniques.xml" <| jsonXmlDecoder uniqueArmorsDecoder)
             (Json.field "Game/Umbra/Loot/Armors/UniquesAccessories.xml" <| jsonXmlDecoder uniqueAccessoriesDecoder)
         )
+        skillsDecoder
         rootLangDecoder
+
+
+skillsDecoder : Json.Decoder (List Skill)
+skillsDecoder =
+    Json.keyValuePairs Json.value
+        |> Json.map (List.filter (Tuple.first >> String.contains "/Skills/NewSkills/Player/"))
+        |> Json.map (List.map (Tuple.second >> Json.decodeValue (jsonXmlDecoder skillDecoder)))
+        |> Json.map Result.Extra.combine
+        |> Json.andThen
+            (\r ->
+                case r of
+                    Err err ->
+                        Json.fail <| Json.errorToString err
+
+                    Ok ok ->
+                        Json.succeed ok
+            )
+
+
+type SkillDecoder
+    = SkillXml (List SkillVariant -> Skill)
+    | SkillVariantXml SkillVariant
+
+
+skillDecoder : D.Decoder Skill
+skillDecoder =
+    D.oneOf
+        [ D.map3 Skill
+            -- (D.path [ "WeaponRequirements" ] <| D.single <| D.stringAttr "Requirements")
+            (D.stringAttr "UID")
+            (D.maybe <| D.path [ "HUD" ] <| D.single <| D.stringAttr "UIName")
+            (D.maybe <| D.path [ "HUD" ] <| D.single <| D.stringAttr "Lore")
+            -- (D.stringAttr "Keywords" |> D.map (String.split ","))
+            |> D.map SkillXml
+        , D.map3 SkillVariant
+            (D.stringAttr "UID")
+            (D.maybe <| D.path [ "HUD" ] <| D.single <| D.stringAttr "UIName")
+            (D.maybe <| D.path [ "HUD" ] <| D.single <| D.stringAttr "Lore")
+            |> D.map SkillVariantXml
+        ]
+        -- |> D.maybe
+        |> D.list
+        |> D.path [ "Skill" ]
+        -- |> D.map (List.filterMap identity)
+        |> D.andThen
+            (\els ->
+                case els of
+                    (SkillXml s) :: tail ->
+                        let
+                            variants : List SkillVariant
+                            variants =
+                                els
+                                    |> List.filterMap
+                                        (\el ->
+                                            case el of
+                                                SkillVariantXml v ->
+                                                    Just v
+
+                                                _ ->
+                                                    Nothing
+                                        )
+                        in
+                        D.succeed <| s variants
+
+                    _ ->
+                        D.fail "first <skill> unparsable as a skill"
+             -- _ ->
+             -- D.fail "multiple skills"
+            )
 
 
 rootLangDecoder : Json.Decoder (Dict String String)
 rootLangDecoder =
-    Json.map Dict.fromList
-        -- (Json.field "Loot" <| jsonXmlDecoder langDecoder)
+    Json.map2
+        (\a b ->
+            [ a, b ]
+                |> List.concat
+                |> List.map (Tuple.mapFirst (\k -> "@" ++ String.toLower k))
+                |> Dict.fromList
+        )
         (Json.field "localization/text_ui_Loot.xml" langDecoder)
+        (Json.field "localization/text_ui_Activeskills.xml" langDecoder)
 
 
 jsonXmlDecoder : D.Decoder a -> Json.Decoder a

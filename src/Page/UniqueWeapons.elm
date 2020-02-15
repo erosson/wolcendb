@@ -33,10 +33,7 @@ view dm =
                         (\w ->
                             tr []
                                 [ td []
-                                    [ Dict.get (String.replace "@" "" w.uiName) dm.en
-                                        |> Maybe.withDefault "???"
-                                        |> text
-                                    ]
+                                    [ Datamine.lang dm w.uiName |> Maybe.withDefault "???" |> text ]
                                 , td [] [ text w.name ]
                                 , td []
                                     [ Maybe.Extra.unwrap "?" String.fromInt w.damage.min
@@ -46,10 +43,7 @@ view dm =
                                     ]
                                 , td [] [ text <| String.join ", " w.keywords ]
                                 , td []
-                                    [ Dict.get (String.replace "@" "" (Maybe.withDefault "" w.lore)) dm.en
-                                        |> Maybe.withDefault "???"
-                                        |> text
-                                    ]
+                                    [ Datamine.mlang dm w.lore |> Maybe.withDefault "???" |> text ]
                                 ]
                         )
                 )

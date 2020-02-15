@@ -31,10 +31,7 @@ view dm =
                         (\w ->
                             tr []
                                 [ td []
-                                    [ Dict.get (String.replace "@" "" w.uiName) dm.en
-                                        |> Maybe.withDefault "???"
-                                        |> text
-                                    ]
+                                    [ Datamine.lang dm w.uiName |> Maybe.withDefault "???" |> text ]
                                 , td [] [ text w.name ]
                                 , td [] [ text <| String.join ", " w.keywords ]
                                 ]
