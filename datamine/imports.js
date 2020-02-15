@@ -4,14 +4,14 @@ import game_0 from "!!raw-loader!../datamine/Game/Umbra/Loot/Armors/Accessories.
 import game_1 from "!!raw-loader!../datamine/Game/Umbra/Loot/Armors/Armors_uniques.xml"
 import game_2 from "!!raw-loader!../datamine/Game/Umbra/Loot/Armors/Armors.xml"
 import game_3 from "!!raw-loader!../datamine/Game/Umbra/Loot/Armors/UniquesAccessories.xml"
-import game_4 from "!!raw-loader!../datamine/Game/Umbra/Loot/MagicEffects/Affixes/Armors_Weapons/AffixesImplicit.xml"
-import game_5 from "!!raw-loader!../datamine/Game/Umbra/Loot/MagicEffects/Affixes/Armors_Weapons/AffixesUniques.xml"
-import game_6 from "!!raw-loader!../datamine/Game/Umbra/Loot/Weapons/Shields.xml"
-import game_7 from "!!raw-loader!../datamine/Game/Umbra/Loot/Weapons/UniqueShields.xml"
-import game_8 from "!!raw-loader!../datamine/Game/Umbra/Loot/Weapons/UniqueWeapons.xml"
-import game_9 from "!!raw-loader!../datamine/Game/Umbra/Loot/Weapons/UniqueWeaponsMax.xml"
-import game_10 from "!!raw-loader!../datamine/Game/Umbra/Loot/Weapons/UniqueWeaponsMaxMax.xml"
-import game_11 from "!!raw-loader!../datamine/Game/Umbra/Loot/Weapons/Weapons.xml"
+import game_4 from "!!raw-loader!../datamine/Game/Umbra/Loot/Weapons/Shields.xml"
+import game_5 from "!!raw-loader!../datamine/Game/Umbra/Loot/Weapons/UniqueShields.xml"
+import game_6 from "!!raw-loader!../datamine/Game/Umbra/Loot/Weapons/UniqueWeapons.xml"
+import game_7 from "!!raw-loader!../datamine/Game/Umbra/Loot/Weapons/UniqueWeaponsMax.xml"
+import game_8 from "!!raw-loader!../datamine/Game/Umbra/Loot/Weapons/UniqueWeaponsMaxMax.xml"
+import game_9 from "!!raw-loader!../datamine/Game/Umbra/Loot/Weapons/Weapons.xml"
+import game_10 from "!!raw-loader!../datamine/Game/Umbra/Loot/MagicEffects/Affixes/Armors_Weapons/AffixesImplicit.xml"
+import game_11 from "!!raw-loader!../datamine/Game/Umbra/Loot/MagicEffects/Affixes/Armors_Weapons/AffixesUniques.xml"
 import game_12 from "!!raw-loader!../datamine/Game/Umbra/Skills/NewSkills/Player/Player_ActiveDodge.xml"
 import game_13 from "!!raw-loader!../datamine/Game/Umbra/Skills/NewSkills/Player/Player_AetherBlade.xml"
 import game_14 from "!!raw-loader!../datamine/Game/Umbra/Skills/NewSkills/Player/Player_AetherBlast.xml"
@@ -109,14 +109,14 @@ export default {
   "Game/Umbra/Loot/Armors/Armors_uniques.xml": game_1,
   "Game/Umbra/Loot/Armors/Armors.xml": game_2,
   "Game/Umbra/Loot/Armors/UniquesAccessories.xml": game_3,
-  "Game/Umbra/Loot/MagicEffects/Affixes/Armors_Weapons/AffixesImplicit.xml": game_4,
-  "Game/Umbra/Loot/MagicEffects/Affixes/Armors_Weapons/AffixesUniques.xml": game_5,
-  "Game/Umbra/Loot/Weapons/Shields.xml": game_6,
-  "Game/Umbra/Loot/Weapons/UniqueShields.xml": game_7,
-  "Game/Umbra/Loot/Weapons/UniqueWeapons.xml": game_8,
-  "Game/Umbra/Loot/Weapons/UniqueWeaponsMax.xml": game_9,
-  "Game/Umbra/Loot/Weapons/UniqueWeaponsMaxMax.xml": game_10,
-  "Game/Umbra/Loot/Weapons/Weapons.xml": game_11,
+  "Game/Umbra/Loot/Weapons/Shields.xml": game_4,
+  "Game/Umbra/Loot/Weapons/UniqueShields.xml": game_5,
+  "Game/Umbra/Loot/Weapons/UniqueWeapons.xml": game_6,
+  "Game/Umbra/Loot/Weapons/UniqueWeaponsMax.xml": game_7,
+  "Game/Umbra/Loot/Weapons/UniqueWeaponsMaxMax.xml": game_8,
+  "Game/Umbra/Loot/Weapons/Weapons.xml": game_9,
+  "Game/Umbra/Loot/MagicEffects/Affixes/Armors_Weapons/AffixesImplicit.xml": game_10,
+  "Game/Umbra/Loot/MagicEffects/Affixes/Armors_Weapons/AffixesUniques.xml": game_11,
   "Game/Umbra/Skills/NewSkills/Player/Player_ActiveDodge.xml": game_12,
   "Game/Umbra/Skills/NewSkills/Player/Player_AetherBlade.xml": game_13,
   "Game/Umbra/Skills/NewSkills/Player/Player_AetherBlast.xml": game_14,
