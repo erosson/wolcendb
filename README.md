@@ -1,6 +1,7 @@
 # WolcenDB
 
-A website with Wolcen's item/skill information, in the spirit of [poedb](https://poedb.tw). Built with [Node]() and [Yarn]().
+A website with Wolcen's item/skill information, in the spirit of [poedb](https://poedb.tw) and the [PoE wiki](https://pathofexile.gamepedia.com/).
+Built with [Node](https://nodejs.org/) and [Yarn](https://yarnpkg.com/).
 
 Datamined with [gabriel-dehan's WolcenExtractor](https://github.com/gabriel-dehan/WolcenExtractor). Requires [Ruby](https://rubyinstaller.org/downloads/).
 
@@ -18,7 +19,7 @@ The everyday workflow:
 
 * `yarn start` runs the website
 * `yarn build` builds a production version of the website
-* `yarn test` runs the unit tests
+* `yarn test` runs the unit tests (I'll have some soon, honest)
 
 Every once in a while, or whenever `yarn export` is busted:
 

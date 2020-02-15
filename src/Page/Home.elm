@@ -57,7 +57,11 @@ view =
             ]
         , div [ class "row" ]
             [ div [ class "col-sm" ]
-                [ small []
+                [ p []
+                    [ a [ target "_blank", href "https://gitlab.com/erosson/wolcendb" ]
+                        [ text "WolcenDB is open-source" ]
+                    ]
+                , small []
                     [ p []
                         [ text "This site is fan-made and not affiliated with "
                         , a [ target "_blank", href "https://wolcengame.com/" ] [ text "Wolcen Studios" ]

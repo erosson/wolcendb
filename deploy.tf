@@ -39,7 +39,7 @@ resource "gitlab_project" "git" {
   name = local.project
   # description      = "https://${local.fulldomain}"
   description      = "Datamined Wolcen item and skill data. https://${local.fulldomain}"
-  visibility_level = "private"
+  visibility_level = "public"
   default_branch   = "master"
 
   provisioner "local-exec" {
