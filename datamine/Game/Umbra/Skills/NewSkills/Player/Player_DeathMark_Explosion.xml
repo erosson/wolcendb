@@ -1,0 +1,9 @@
+<MetaData>
+  <Skill ESkill="player_deathmark_explosion" Keywords="magic_spell," UID="player_deathmark_explosion">
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="Player_skill_deathmark" TrailPresetBase="default" />
+    <DamageMaxHealthPercentage PercentMin="20" PercentMinPerLevel="0" PercentMax="20" PercentMaxPerLevel="0" />
+    <SoundTrigger OnAnimCast="PLAY_Skill_FrostLance_Explosion" />
+    <Explosion ExplosionRadius="3" />
+    <Particles ParticleName="U_Buff.Debuff.DeathMark_Explosion_03" ParticleOffSet="0,0,0.75" ParticleDirection="0,0,1" ParticleScale="1" />
+  </Skill>
+</MetaData>

@@ -1,0 +1,109 @@
+<MetaData>
+  <Skill UID="player_solarfall" ESkill="player_solarfall" Keywords="magic_spell">
+    <VisualFeedback TrailPresetBase="default" FeedbackPresetBase="Player_skill_solarfall" BloodDecalOrientation="forward" />
+    <WeaponRequirements Requirements="magic,sacred" />
+    <Animation AnimationDrivenMovement="0" ActionString_In="player_skill_Solarfall_in" ActionString_Loop="player_skill_Solarfall_loop" ActionString_Out="player_skill_Solarfall_out" ScaleWithSpellCastingSpeed="0" />
+    <HUD HUDPicture="../u_resources/spells/Active_Skills/Solarfall.png" UIName="@ui_AST_Solarfall" Lore="@ui_AST_Solarfall_Lore" ActiveEffectTitle="" ActiveEffectDesc="" ASTTreeNumber="8" ShowParamsInAST="Cost,ROSTime,Cooldown,Range,DamageDetail,DamageCritical,StatusAilmentsChance,Explosion,SpecificSolarfall" ShowParamsInTooltip="Cost,Cooldown,DamageOverview,StatusAilmentsChance,SpecificSolarfall" />
+    <Enneract PickableParticle_MoveToGround="U_CommonVFX_02.Esseract.Esseract_Projectile.Fire" PickableParticle_OnGround_Shape="U_CommonVFX_02.Esseract.Esseract_Shape.Circle_Fire" PickableParticle_OnGround_Damage="U_CommonVFX_02.Esseract.Esseract_Color.Fire" PickableParticle_OnGround_Symbol="U_CommonVFX_02.Esseract.Esseract_Symbol.ABANAZAR" PickableParticle_OnGround_Indicator="U_CommonVFX_02.Esseract.Esseract_Indicator.Fire" PickableParticle_OnGround_Pickup="U_CommonVFX_02.Esseract.Esseract_Loot.Fire" SkillLearningParticle="U_CommonVFX.Skill_Learn.Skill_Learn_Fire" Inventory_HUDPicture="../u_resources/enneracts/solarfall.png" Inventory_LoreDesc="@ui_enneract_lore" />
+    <Aggression TargetValueOnHit="20" />
+    <Range AttackRange="22" />
+    <DamageBase Type="sacred" Min="9" MinPerLevel="0" Max="11" MaxPerLevel="0" />
+    <Cooldown Cooldown="0.5" CooldownPerLevel="0" />
+    <CastingParams CanCastWhileMoving="0" MaintainedCast="1" MinimumCastDuration="0.5" />
+    <ResourceCostMaintained ManaCostPerSecond="-150" ManaCostPerSecondPerLevel="0" ROSTransfertDuration="1.0" />
+    <SoundTrigger OnHit="Play_Skill_Solarfall_Beam_Impact" />
+    <ParticleList>
+      <Particle Key="Beam" Name="U_Character_02.SolarFall.SolarFall_Impact_Loop_01" Direction="0,1,0" Offset="0,0,-1.1" />
+      <Particle Key="WarmUp" Name="U_Character_02.SolarFall.SolarFall_Gaining_01_Short" Direction="0,1,0" Offset="0,0,-1.1" />
+      <Particle Key="Hand" Name="U_Character_02.SolarFall.SolarFall_Gaining_01_Short_02" Direction="0,1,0" />
+      <Particle Key="Trail" Name="U_Character_02.SolarFall.SolarFall_Ground_Loop" Direction="0,1,0" />
+    </ParticleList>
+    <Specific_Solarfall MoveSpeed="8" StartAOERadius="3" EndAOERadius="3" StartDamageMultiplier="1" EndDamageMultiplier="1" MaxDuration="5" WarmUpTime="1.0" DamageTickRate="0.5" InstantSoundTrigger="Play_Skill_Solarfall_Cast_Static_Start" LoopSoundTrigger="Play_Skill_Solarfall_Cast_Loop" EndSoundTrigger="Stop_Skill_Solarfall_Cast_Loop" />
+  </Skill>
+  <Skill UID="player_Solarfall_variant_1" ESkill="default_variant">
+    <HUD UIName="@ui_Variant_Solarfall_variant_1" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_003.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_003.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_003.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_003.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_003.png" ShowParamsInTooltip="SpecificSolarfall" />
+    <Specific_Solarfall StartAOERadius="0" EndAOERadius="1" />
+  </Skill>
+  <Skill UID="player_Solarfall_variant_2" ESkill="default_variant">
+    <HUD UIName="@ui_Variant_Solarfall_variant_2" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_003.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_003.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_003.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_003.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_003.png" ShowParamsInTooltip="SpecificSolarfall" />
+    <Specific_Solarfall MoveSpeed="3" />
+  </Skill>
+  <Skill UID="player_Solarfall_variant_3" ESkill="default_variant">
+    <HUD UIName="@ui_Variant_Solarfall_variant_3" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_001.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_001.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_001.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_001.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_001.png" ShowParamsInTooltip="SpecificSolarfall" />
+    <Specific_Solarfall DamageTickRate="-0.10" />
+  </Skill>
+  <Skill UID="player_Solarfall_variant_4" ESkill="default_variant">
+    <HUD UIName="@ui_Variant_Solarfall_variant_4" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_003.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_003.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_003.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_003.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_003.png" ShowParamsInTooltip="SpecificSolarfall" />
+    <DamageZone Duration="5" RateOfFire="0.33" />
+    <Specific_Solarfall TrailDamageMultiplier="0.2" TrailRadius="3" />
+  </Skill>
+  <Skill UID="player_Solarfall_variant_5" ESkill="default_variant">
+    <HUD UIName="@ui_Variant_Solarfall_variant_5" Lore="@ui_Variant_Solarfall_variant_5_Lore" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_005.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_005.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_005.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_005.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_005.png" ShowParamsInTooltip="SpecificSolarfall,Cooldown,Cost,ROSTime" />
+    <Cooldown Cooldown="5" />
+    <DamageBase Type="sacred" Min="0" Max="0" />
+    <Recast Cooldown="0.5" UmbraCost="0" />
+    <CastingParams RemoveMaintainedCast="1" />
+    <ResourceCost ManaCost="-150" ManaCostPerLevel="0" ROSTransfertDuration="1.0" />
+  </Skill>
+  <Skill UID="player_Solarfall_variant_6" ESkill="default_variant">
+    <HUD UIName="@ui_Variant_Solarfall_variant_6" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_003.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_003.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_003.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_003.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_003.png" ShowParamsInTooltip="SpecificSolarfall" />
+    <Specific_Solarfall BuffName="AST_Solarfall_Buff" UseBuffAllies="1" />
+  </Skill>
+  <Skill UID="player_Solarfall_variant_7" ESkill="default_variant">
+    <HUD UIName="@ui_Variant_Solarfall_variant_7" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_001.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_001.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_001.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_001.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_001.png" ShowParamsInTooltip="SpecificSolarfall" />
+    <Specific_Solarfall StartDamageMultiplier="-0.5" EndDamageMultiplier="2" />
+  </Skill>
+  <Skill UID="player_Solarfall_variant_8" ESkill="default_variant">
+    <HUD UIName="@ui_Variant_Solarfall_variant_8" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_003.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_003.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_003.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_003.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_003.png" ShowParamsInTooltip="SpecificSolarfall" />
+    <Specific_Solarfall WarmUpTime="-0.7" />
+  </Skill>
+  <Skill UID="player_Solarfall_variant_9" ESkill="default_variant">
+    <HUD UIName="@ui_Variant_Solarfall_variant_9" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_001.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_001.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_001.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_001.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_001.png" ShowParamsInTooltip="SpecificSolarfall,StatusAilmentsChance" />
+    <StatusAilment AllAilmentsInflictScoreIncreasePercent="40" />
+  </Skill>
+  <Skill UID="player_Solarfall_variant_10" ESkill="default_variant">
+    <HUD UIName="@ui_Variant_Solarfall_variant_10" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_003.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_003.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_003.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_003.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_003.png" ShowParamsInTooltip="SpecificSolarfall" />
+    <ParticleList>
+      <Particle Key="Nova" Name="U_Character_02.SolarFall.Solarfall_Impact_Instant_01" Direction="0,1,0" Scale="1" Offset="0,0,0" />
+    </ParticleList>
+    <Specific_Solarfall NovaOnCritical="1" NovaDamageMultiplier="1.5" NovaCoolDown="1" NovaRadius="4" />
+  </Skill>
+  <Skill UID="player_Solarfall_variant_11" ESkill="default_variant">
+    <HUD UIName="@ui_Variant_Solarfall_variant_11" Lore="@ui_Variant_Solarfall_variant_11_lore" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_005.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_005.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_005.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_005.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_005.png" ShowParamsInTooltip="SpecificSolarfall" />
+    <ParticleList>
+      <Particle Key="Insta" Name="U_Character.Skills.Teleport_Decoy_end" Direction="0,0,1" Scale="2" />
+    </ParticleList>
+    <Specific_Solarfall ForceTickOnCasterDamaged="1" ForceTickCD="1" />
+  </Skill>
+  <Skill UID="player_Solarfall_variant_12" ESkill="default_variant">
+    <HUD UIName="@ui_Variant_Solarfall_variant_12" Lore="@ui_Variant_Solarfall_variant_12_lore" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_005.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_005.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_005.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_005.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_005.png" ShowParamsInTooltip="SpecificSolarfall,DamageDetail,DamageBase" />
+    <WeaponRequirements Requirements="magic,fire" />
+    <ParticleList>
+      <Particle Key="Beam" Name="U_Character_02.SolarFall.SolarFall_Impact_Loop_01_Fire" Direction="0,1,0" />
+      <Particle Key="WarmUp" Name="U_Character_02.SolarFall.SolarFall_Gaining_01_Short_Fire" Direction="0,1,0" />
+      <Particle Key="Hand" Name="U_Character_02.SolarFall.SolarFall_Gaining_01_Short_02_Fire" Direction="0,1,0" />
+      <Particle Key="Trail" Name="U_Character_02.SolarFall.SolarFall_Ground_Loop_Fire" Direction="0,1,0" />
+      <Particle Key="Nova" Name="U_Character_02.SolarFall.Solarfall_Impact_Instant_01_Fire" Direction="0,1,0" Scale="1" Offset="0,0,0" />
+    </ParticleList>
+    <Damage_Conversion>
+      <Entry From="sacred" To="fire" ConversionRate="100" />
+    </Damage_Conversion>
+    <DamageBase Max="10" Min="10" />
+  </Skill>
+  <Skill UID="player_Solarfall_variant_13" ESkill="default_variant">
+    <HUD UIName="@ui_Variant_Solarfall_variant_13" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_001.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_001.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_001.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_001.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_001.png" ShowParamsInTooltip="SpecificSolarfall,DamageBase" />
+    <DamageBase BonusPercent="10" />
+  </Skill>
+  <Skill UID="player_Solarfall_variant_14" ESkill="default_variant">
+    <HUD UIName="@ui_Variant_Solarfall_variant_14" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_001.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_001.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_001.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_001.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_001.png" ShowParamsInTooltip="SpecificSolarfall,StatusAilmentsChance" />
+    <StatusAilment AllAilmentsInflictDamageIncreasePercent="40" />
+  </Skill>
+  <Skill UID="player_Solarfall_variant_15" ESkill="default_variant">
+    <HUD UIName="@ui_Variant_Solarfall_variant_15" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_001.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_001.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_001.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_001.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_001.png" ShowParamsInTooltip="SpecificSolarfall,DamageCritical" />
+    <DamageCritical CriticalInflictScoreModifier="40" />
+  </Skill>
+  <Skill UID="player_Solarfall_variant_16" ESkill="default_variant">
+    <HUD UIName="@ui_Variant_Solarfall_variant_16" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_001.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_001.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_001.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_001.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_001.png" ShowParamsInTooltip="SpecificSolarfall,DamageCritical" />
+    <DamageCritical CriticalDamageModifier="30" />
+  </Skill>
+</MetaData>

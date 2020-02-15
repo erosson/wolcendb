@@ -10,6 +10,54 @@ import game_6 from "!!raw-loader!../datamine/Game/Umbra/Loot/Weapons/UniqueWeapo
 import game_7 from "!!raw-loader!../datamine/Game/Umbra/Loot/Weapons/UniqueWeaponsMax.xml"
 import game_8 from "!!raw-loader!../datamine/Game/Umbra/Loot/Weapons/UniqueWeaponsMaxMax.xml"
 import game_9 from "!!raw-loader!../datamine/Game/Umbra/Loot/Weapons/Weapons.xml"
+import game_10 from "!!raw-loader!../datamine/Game/Umbra/Skills/NewSkills/Player/Player_ActiveDodge.xml"
+import game_11 from "!!raw-loader!../datamine/Game/Umbra/Skills/NewSkills/Player/Player_AetherBlade.xml"
+import game_12 from "!!raw-loader!../datamine/Game/Umbra/Skills/NewSkills/Player/Player_AetherBlast.xml"
+import game_13 from "!!raw-loader!../datamine/Game/Umbra/Skills/NewSkills/Player/Player_ArrowsRain.xml"
+import game_14 from "!!raw-loader!../datamine/Game/Umbra/Skills/NewSkills/Player/Player_AutoDash.xml"
+import game_15 from "!!raw-loader!../datamine/Game/Umbra/Skills/NewSkills/Player/Player_Bladeslinger.xml"
+import game_16 from "!!raw-loader!../datamine/Game/Umbra/Skills/NewSkills/Player/Player_Bomb.xml"
+import game_17 from "!!raw-loader!../datamine/Game/Umbra/Skills/NewSkills/Player/Player_BrutalStrike.xml"
+import game_18 from "!!raw-loader!../datamine/Game/Umbra/Skills/NewSkills/Player/Player_BullEye.xml"
+import game_19 from "!!raw-loader!../datamine/Game/Umbra/Skills/NewSkills/Player/Player_ChainLightning.xml"
+import game_20 from "!!raw-loader!../datamine/Game/Umbra/Skills/NewSkills/Player/Player_Charge.xml"
+import game_21 from "!!raw-loader!../datamine/Game/Umbra/Skills/NewSkills/Player/Player_CorpseExplosion.xml"
+import game_22 from "!!raw-loader!../datamine/Game/Umbra/Skills/NewSkills/Player/Player_DeathMark_Explosion.xml"
+import game_23 from "!!raw-loader!../datamine/Game/Umbra/Skills/NewSkills/Player/Player_DeathMark.xml"
+import game_24 from "!!raw-loader!../datamine/Game/Umbra/Skills/NewSkills/Player/Player_DualStrike.xml"
+import game_25 from "!!raw-loader!../datamine/Game/Umbra/Skills/NewSkills/Player/Player_Fire_Fireball.xml"
+import game_26 from "!!raw-loader!../datamine/Game/Umbra/Skills/NewSkills/Player/Player_Frost_FrostComet.xml"
+import game_27 from "!!raw-loader!../datamine/Game/Umbra/Skills/NewSkills/Player/Player_Frost_FrostLance_Explosion.xml"
+import game_28 from "!!raw-loader!../datamine/Game/Umbra/Skills/NewSkills/Player/Player_Frost_FrostLance.xml"
+import game_29 from "!!raw-loader!../datamine/Game/Umbra/Skills/NewSkills/Player/Player_Frost_FrostNova.xml"
+import game_30 from "!!raw-loader!../datamine/Game/Umbra/Skills/NewSkills/Player/Player_FrostNova_Zone_Shadow.xml"
+import game_31 from "!!raw-loader!../datamine/Game/Umbra/Skills/NewSkills/Player/Player_FrostNova_Zone.xml"
+import game_32 from "!!raw-loader!../datamine/Game/Umbra/Skills/NewSkills/Player/Player_Hammer.xml"
+import game_33 from "!!raw-loader!../datamine/Game/Umbra/Skills/NewSkills/Player/Player_HolyDive.xml"
+import game_34 from "!!raw-loader!../datamine/Game/Umbra/Skills/NewSkills/Player/Player_Hook.xml"
+import game_35 from "!!raw-loader!../datamine/Game/Umbra/Skills/NewSkills/Player/Player_Introduction_LightningAttack.xml"
+import game_36 from "!!raw-loader!../datamine/Game/Umbra/Skills/NewSkills/Player/Player_Ironguard.xml"
+import game_37 from "!!raw-loader!../datamine/Game/Umbra/Skills/NewSkills/Player/Player_Laceration.xml"
+import game_38 from "!!raw-loader!../datamine/Game/Umbra/Skills/NewSkills/Player/Player_Laser.xml"
+import game_39 from "!!raw-loader!../datamine/Game/Umbra/Skills/NewSkills/Player/Player_Leap.xml"
+import game_40 from "!!raw-loader!../datamine/Game/Umbra/Skills/NewSkills/Player/Player_Possession.xml"
+import game_41 from "!!raw-loader!../datamine/Game/Umbra/Skills/NewSkills/Player/Player_Reave.xml"
+import game_42 from "!!raw-loader!../datamine/Game/Umbra/Skills/NewSkills/Player/Player_RingOfPain.xml"
+import game_43 from "!!raw-loader!../datamine/Game/Umbra/Skills/NewSkills/Player/Player_SacredGround.xml"
+import game_44 from "!!raw-loader!../datamine/Game/Umbra/Skills/NewSkills/Player/Player_SmokeBomb.xml"
+import game_45 from "!!raw-loader!../datamine/Game/Umbra/Skills/NewSkills/Player/Player_Sniper.xml"
+import game_46 from "!!raw-loader!../datamine/Game/Umbra/Skills/NewSkills/Player/Player_Solarfall.xml"
+import game_47 from "!!raw-loader!../datamine/Game/Umbra/Skills/NewSkills/Player/Player_SpreadShot.xml"
+import game_48 from "!!raw-loader!../datamine/Game/Umbra/Skills/NewSkills/Player/Player_Summon_Champion.xml"
+import game_49 from "!!raw-loader!../datamine/Game/Umbra/Skills/NewSkills/Player/Player_Summon_Melee.xml"
+import game_50 from "!!raw-loader!../datamine/Game/Umbra/Skills/NewSkills/Player/Player_Summon_Ranged.xml"
+import game_51 from "!!raw-loader!../datamine/Game/Umbra/Skills/NewSkills/Player/Player_Teleport.xml"
+import game_52 from "!!raw-loader!../datamine/Game/Umbra/Skills/NewSkills/Player/Player_Turret.xml"
+import game_53 from "!!raw-loader!../datamine/Game/Umbra/Skills/NewSkills/Player/Player_UsePotion.xml"
+import game_54 from "!!raw-loader!../datamine/Game/Umbra/Skills/NewSkills/Player/Player_Vault.xml"
+import game_55 from "!!raw-loader!../datamine/Game/Umbra/Skills/NewSkills/Player/Player_Vortex.xml"
+import game_56 from "!!raw-loader!../datamine/Game/Umbra/Skills/NewSkills/Player/Player_WarCry.xml"
+import game_57 from "!!raw-loader!../datamine/Game/Umbra/Skills/NewSkills/Player/Player_WhirlWind.xml"
 import localization_0 from "!!json-loader!@erosson/xlsx-loader!../datamine/localization/text_ui_Loot.xml"
 
 export default {
@@ -23,5 +71,53 @@ export default {
   "Game/Umbra/Loot/Weapons/UniqueWeaponsMax.xml": game_7,
   "Game/Umbra/Loot/Weapons/UniqueWeaponsMaxMax.xml": game_8,
   "Game/Umbra/Loot/Weapons/Weapons.xml": game_9,
+  "Game/Umbra/Skills/NewSkills/Player/Player_ActiveDodge.xml": game_10,
+  "Game/Umbra/Skills/NewSkills/Player/Player_AetherBlade.xml": game_11,
+  "Game/Umbra/Skills/NewSkills/Player/Player_AetherBlast.xml": game_12,
+  "Game/Umbra/Skills/NewSkills/Player/Player_ArrowsRain.xml": game_13,
+  "Game/Umbra/Skills/NewSkills/Player/Player_AutoDash.xml": game_14,
+  "Game/Umbra/Skills/NewSkills/Player/Player_Bladeslinger.xml": game_15,
+  "Game/Umbra/Skills/NewSkills/Player/Player_Bomb.xml": game_16,
+  "Game/Umbra/Skills/NewSkills/Player/Player_BrutalStrike.xml": game_17,
+  "Game/Umbra/Skills/NewSkills/Player/Player_BullEye.xml": game_18,
+  "Game/Umbra/Skills/NewSkills/Player/Player_ChainLightning.xml": game_19,
+  "Game/Umbra/Skills/NewSkills/Player/Player_Charge.xml": game_20,
+  "Game/Umbra/Skills/NewSkills/Player/Player_CorpseExplosion.xml": game_21,
+  "Game/Umbra/Skills/NewSkills/Player/Player_DeathMark_Explosion.xml": game_22,
+  "Game/Umbra/Skills/NewSkills/Player/Player_DeathMark.xml": game_23,
+  "Game/Umbra/Skills/NewSkills/Player/Player_DualStrike.xml": game_24,
+  "Game/Umbra/Skills/NewSkills/Player/Player_Fire_Fireball.xml": game_25,
+  "Game/Umbra/Skills/NewSkills/Player/Player_Frost_FrostComet.xml": game_26,
+  "Game/Umbra/Skills/NewSkills/Player/Player_Frost_FrostLance_Explosion.xml": game_27,
+  "Game/Umbra/Skills/NewSkills/Player/Player_Frost_FrostLance.xml": game_28,
+  "Game/Umbra/Skills/NewSkills/Player/Player_Frost_FrostNova.xml": game_29,
+  "Game/Umbra/Skills/NewSkills/Player/Player_FrostNova_Zone_Shadow.xml": game_30,
+  "Game/Umbra/Skills/NewSkills/Player/Player_FrostNova_Zone.xml": game_31,
+  "Game/Umbra/Skills/NewSkills/Player/Player_Hammer.xml": game_32,
+  "Game/Umbra/Skills/NewSkills/Player/Player_HolyDive.xml": game_33,
+  "Game/Umbra/Skills/NewSkills/Player/Player_Hook.xml": game_34,
+  "Game/Umbra/Skills/NewSkills/Player/Player_Introduction_LightningAttack.xml": game_35,
+  "Game/Umbra/Skills/NewSkills/Player/Player_Ironguard.xml": game_36,
+  "Game/Umbra/Skills/NewSkills/Player/Player_Laceration.xml": game_37,
+  "Game/Umbra/Skills/NewSkills/Player/Player_Laser.xml": game_38,
+  "Game/Umbra/Skills/NewSkills/Player/Player_Leap.xml": game_39,
+  "Game/Umbra/Skills/NewSkills/Player/Player_Possession.xml": game_40,
+  "Game/Umbra/Skills/NewSkills/Player/Player_Reave.xml": game_41,
+  "Game/Umbra/Skills/NewSkills/Player/Player_RingOfPain.xml": game_42,
+  "Game/Umbra/Skills/NewSkills/Player/Player_SacredGround.xml": game_43,
+  "Game/Umbra/Skills/NewSkills/Player/Player_SmokeBomb.xml": game_44,
+  "Game/Umbra/Skills/NewSkills/Player/Player_Sniper.xml": game_45,
+  "Game/Umbra/Skills/NewSkills/Player/Player_Solarfall.xml": game_46,
+  "Game/Umbra/Skills/NewSkills/Player/Player_SpreadShot.xml": game_47,
+  "Game/Umbra/Skills/NewSkills/Player/Player_Summon_Champion.xml": game_48,
+  "Game/Umbra/Skills/NewSkills/Player/Player_Summon_Melee.xml": game_49,
+  "Game/Umbra/Skills/NewSkills/Player/Player_Summon_Ranged.xml": game_50,
+  "Game/Umbra/Skills/NewSkills/Player/Player_Teleport.xml": game_51,
+  "Game/Umbra/Skills/NewSkills/Player/Player_Turret.xml": game_52,
+  "Game/Umbra/Skills/NewSkills/Player/Player_UsePotion.xml": game_53,
+  "Game/Umbra/Skills/NewSkills/Player/Player_Vault.xml": game_54,
+  "Game/Umbra/Skills/NewSkills/Player/Player_Vortex.xml": game_55,
+  "Game/Umbra/Skills/NewSkills/Player/Player_WarCry.xml": game_56,
+  "Game/Umbra/Skills/NewSkills/Player/Player_WhirlWind.xml": game_57,
   "localization/text_ui_Loot.xml": localization_0,
 }

@@ -1,0 +1,16 @@
+<MetaData>
+  <Skill UID="player_use_potion" ESkill="player_use_potion" Keywords="">
+    <CastingParams CountAsMovementForAnimationCancelling="1" />
+    <ParticleList>
+      <Particle Key="PotionMesh_Health" Name="U_Buff.Potion.Potion_Mesh_Red" Direction="0,0,1" Scale="1" Bone="R_Weapon_Bone" />
+      <Particle Key="PotionMesh_Mana" Name="U_Buff.Potion.Potion_Mesh_Blue" Direction="0,0,1" Scale="1" Bone="R_Weapon_Bone" />
+      <Particle Key="PotionMesh_Rage" Name="U_Buff.Potion.Potion_Mesh_Yellow" Direction="0,0,1" Scale="1" Bone="R_Weapon_Bone" />
+      <Particle Key="PotionStart_Health" Name="U_CommonVFX.Orb.Orb_Health_Use_01" Direction="0,0,1" Scale="1.2" Bone="Bip01 Spine2" />
+      <Particle Key="PotionStart_Mana" Name="U_CommonVFX.Orb.Orb_Mana_Use_01" Direction="0,0,1" Scale="1.2" Bone="Bip01 Spine2" />
+      <Particle Key="PotionStart_Rage" Name="U_CommonVFX.Orb.Orb_Rage_Use_01" Direction="0,0,1" Scale="1.2" Bone="Bip01 Spine2" />
+      <Particle Key="PotionLoop_Health" Name="U_Buff.Heal.Usage_Heal_Loop_01" Direction="0,0,1" Scale="1" Bone="Bip01 Spine2" />
+      <Particle Key="PotionLoop_Mana" Name="U_Buff.Heal.Usage_Mana_Loop_01" Direction="0,0,1" Scale="1" Bone="Bip01 Spine2" />
+      <Particle Key="PotionLoop_Rage" Name="U_Buff.Heal.Usage_Rage_Loop_01" Direction="0,0,1" Scale="1" Bone="Bip01 Spine2" />
+    </ParticleList>
+  </Skill>
+</MetaData>

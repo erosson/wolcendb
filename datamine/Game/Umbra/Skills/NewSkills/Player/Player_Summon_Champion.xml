@@ -1,0 +1,126 @@
+<MetaData>
+  <Skill UID="player_summon_champion" ESkill="player_summon" Keywords="magic_spell">
+    <CastingParams CanCastWhileMoving="0" />
+    <Animation AnimationDrivenMovement="0" ActionString="player_skill_Sumoning" ScaleWithSpellCastingSpeed="1" />
+    <HUD HUDPicture="../u_resources/spells/Active_Skills/livormortis.png" UIName="@ui_AST_SummonChampion" Lore="@ui_AST_SummonChampion_Lore" ActiveEffectTitle="" ActiveEffectDesc="" ASTTreeNumber="1" ShowParamsInAST="Cost,ROSTime,Cooldown,Range,MaxSummon,SpecificSummon" ShowParamsInTooltip="Cost,Cooldown,MaxSummon,SpecificSummon" />
+    <Enneract PickableParticle_MoveToGround="U_CommonVFX_02.Esseract.Esseract_Projectile.Toxic" PickableParticle_OnGround_Shape="U_CommonVFX_02.Esseract.Esseract_Shape.Circle_Toxic" PickableParticle_OnGround_Damage="U_CommonVFX_02.Esseract.Esseract_Color.Toxic" PickableParticle_OnGround_Symbol="U_CommonVFX_02.Esseract.Esseract_Symbol.BEZERIEL" PickableParticle_OnGround_Indicator="U_CommonVFX_02.Esseract.Esseract_Indicator.Toxic" PickableParticle_OnGround_Pickup="U_CommonVFX_02.Esseract.Esseract_Loot.Toxic" SkillLearningParticle="U_CommonVFX.Skill_Learn.Skill_Learn_Toxic" Inventory_HUDPicture="../u_resources/enneracts/livormortis.png" Inventory_LoreDesc="@ui_enneract_lore" />
+    <Range AttackRange="15" />
+    <Cooldown Cooldown="1.5" CooldownPerLevel="0" />
+    <Summoning MaxSummons="1" KillLowestHPOnOversummoning="0" SummonsSuicideWhenMasterDies="1">
+      <SummonedSpawnClass Key="Base" Name="SC_SkillSummon_ChampionToxic" />
+    </Summoning>
+    <WeaponRequirements Requirements="magic,poison" />
+    <Specific_Summon Type="toxic" SummonSoundTrigger="Play_Skill_Summon_SpawnScream">
+      <SummonedSkills UID="AI_Summon_Champion_ToxicBreeder_Taunt" OnEvent="SummonCapacityReached" />
+    </Specific_Summon>
+    <Specific_Summon_Champion />
+    <ResourceCost ManaCost="-150" ROSTransfertDuration="2.0" />
+    <SoundTrigger OnAnimStart="Play_Skill_Summon_SpawnScream_Champion" />
+    <ParticleList>
+      <Particle Key="PermanentRing" Name="U_Character_02.Summon.SummonLoop.SummonLoop_Aura_01" Bone="Bip01" Direction="0,1,0" Delay="0.1" />
+      <Particle Key="SpawnRing" Name="U_Character_02.Summon.SummonStart_01_Physical" Bone="Bip01" Direction="0,1,0" Scale="1.25" Delay="0.1" />
+    </ParticleList>
+  </Skill>
+  <Skill UID="player_summon_champion_variant_1" ESkill="default_variant">
+    <HUD UIName="@ui_Variant_SummonChampion_variant_1" Lore="@ui_Variant_SummonChampion_variant_1_lore" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_005.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_005.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_005.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_005.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_005.png" ShowParamsInTooltip="SpecificSummon" />
+    <Specific_Summon>
+      <PermanentBuffs Name="Summon_DropGlobeOnDeath" />
+    </Specific_Summon>
+  </Skill>
+  <Skill UID="player_summon_champion_variant_2" ESkill="default_variant">
+    <HUD UIName="@ui_Variant_SummonChampion_variant_2" Lore="@ui_Variant_SummonChampion_variant_2_lore" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_005.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_005.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_005.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_005.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_005.png" ShowParamsInTooltip="SpecificSummon" />
+    <Specific_Summon>
+      <PermanentBuffs Name="Summon_DamageRedirectionFromCaster" />
+    </Specific_Summon>
+  </Skill>
+  <Skill UID="player_summon_champion_variant_3" ESkill="default_variant">
+    <HUD UIName="@ui_Variant_SummonChampion_variant_3" Lore="@ui_Variant_SummonChampion_variant_3_lore" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_005.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_005.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_005.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_005.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_005.png" ShowParamsInTooltip="SpecificSummon" />
+    <Summoning MaxSummons="0" KillLowestHPOnOversummoning="0" SummonsSuicideWhenMasterDies="1">
+      <SummonedSpawnClass Key="Base" Name="SC_SkillSummon_ChampionShadow" />
+    </Summoning>
+    <Specific_Summon Type="shadow">
+      <SummonedSkills UID="AI_Summon_Champion_Shadow_Leap" OnEvent="SummonCapacityReached" />
+    </Specific_Summon>
+  </Skill>
+  <Skill UID="player_summon_champion_variant_4" ESkill="default_variant">
+    <HUD UIName="@ui_Variant_SummonChampion_variant_4" Lore="@ui_Variant_SummonChampion_variant_4_lore" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_005.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_005.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_005.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_005.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_005.png" ShowParamsInTooltip="SpecificSummon" />
+    <Summoning MaxSummons="0" KillLowestHPOnOversummoning="0" SummonsSuicideWhenMasterDies="1">
+      <SummonedSpawnClass Key="Base" Name="SC_SkillSummon_ChampionLightning" />
+    </Summoning>
+    <Specific_Summon Type="lightning">
+      <SummonedSkills UID="AI_Summon_Champion_Lightning_Protection" OnEvent="SummonCapacityReached" />
+    </Specific_Summon>
+  </Skill>
+  <Skill UID="player_summon_champion_variant_5" ESkill="default_variant">
+    <HUD UIName="@ui_Variant_SummonChampion_variant_5" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_001.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_001.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_001.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_001.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_001.png" ShowParamsInTooltip="SpecificSummon" />
+    <Specific_Summon>
+      <PermanentBuffs Name="Summon_HigherAggro_Champion_1" />
+    </Specific_Summon>
+  </Skill>
+  <Skill UID="player_summon_champion_variant_6" ESkill="default_variant">
+    <HUD UIName="@ui_Variant_SummonChampion_variant_6" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_003.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_003.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_003.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_003.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_003.png" ShowParamsInTooltip="SpecificSummon" />
+    <Specific_Summon>
+      <PermanentBuffs Name="Summon_AilmentChance" />
+    </Specific_Summon>
+  </Skill>
+  <Skill UID="player_summon_champion_variant_7" ESkill="default_variant">
+    <HUD UIName="@ui_Variant_SummonChampion_variant_7" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_003.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_003.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_003.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_003.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_003.png" ShowParamsInTooltip="SpecificSummon" />
+    <Specific_Summon>
+      <PermanentBuffs Name="Summon_Champion_Attackspeed_1" />
+    </Specific_Summon>
+  </Skill>
+  <Skill UID="player_summon_champion_variant_8" ESkill="default_variant">
+    <HUD UIName="@ui_Variant_SummonChampion_variant_8" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_003.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_003.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_003.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_003.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_003.png" ShowParamsInTooltip="SpecificSummon,StatusAilmentsChance" />
+    <Specific_Summon_Champion FrenzyRadius="5" ChanceToFrenzy="100" />
+    <StatusEffect_Frenzy Duration="5" />
+  </Skill>
+  <Skill UID="player_summon_champion_variant_9" ESkill="default_variant">
+    <HUD UIName="@ui_Variant_SummonChampion_variant_9" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_001.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_001.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_001.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_001.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_001.png" ShowParamsInTooltip="SpecificSummon" />
+    <Specific_Summon>
+      <PermanentBuffs Name="SummonBuff_Damage_Champion_1" />
+    </Specific_Summon>
+  </Skill>
+  <Skill UID="player_summon_champion_variant_10" ESkill="default_variant">
+    <HUD UIName="@ui_Variant_SummonChampion_variant_10" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_001.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_001.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_001.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_001.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_001.png" ShowParamsInTooltip="SpecificSummon" />
+    <Specific_Summon>
+      <PermanentBuffs Name="SummonBuff_Damage_Champion_2" />
+    </Specific_Summon>
+  </Skill>
+  <Skill UID="player_summon_champion_variant_11" ESkill="default_variant">
+    <HUD UIName="@ui_Variant_SummonChampion_variant_11" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_003.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_003.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_003.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_003.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_003.png" ShowParamsInTooltip="SpecificSummon" />
+    <Specific_Summon>
+      <PermanentBuffs Name="SummonBuff_Damage_Champion_3" />
+    </Specific_Summon>
+  </Skill>
+  <Skill UID="player_summon_champion_variant_12" ESkill="default_variant">
+    <HUD UIName="@ui_Variant_SummonChampion_variant_12" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_001.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_001.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_001.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_001.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_001.png" ShowParamsInTooltip="SpecificSummon" />
+    <Specific_Summon>
+      <PermanentBuffs Name="SummonBuff_Life_Champion_1" />
+    </Specific_Summon>
+  </Skill>
+  <Skill UID="player_summon_champion_variant_13" ESkill="default_variant">
+    <HUD UIName="@ui_Variant_SummonChampion_variant_13" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_001.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_001.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_001.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_001.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_001.png" ShowParamsInTooltip="SpecificSummon" />
+    <Specific_Summon>
+      <PermanentBuffs Name="SummonBuff_Life_Champion_2" />
+    </Specific_Summon>
+  </Skill>
+  <Skill UID="player_summon_champion_variant_14" ESkill="default_variant">
+    <HUD UIName="@ui_Variant_SummonChampion_variant_14" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_001.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_001.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_001.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_001.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_001.png" ShowParamsInTooltip="SpecificSummon" />
+    <Specific_Summon>
+      <PermanentBuffs Name="SummonBuff_MovementSpeed_Champion_1" />
+    </Specific_Summon>
+  </Skill>
+  <Skill UID="player_summon_champion_variant_15" ESkill="default_variant">
+    <HUD UIName="@ui_Variant_SummonChampion_variant_15" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_003.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_003.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_003.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_003.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_003.png" ShowParamsInTooltip="SpecificSummon" />
+    <Specific_Summon>
+      <PermanentBuffs Name="Summon_Champion_Attackspeed_2" />
+    </Specific_Summon>
+  </Skill>
+  <Skill UID="player_summon_champion_variant_16" ESkill="default_variant">
+    <HUD UIName="@ui_Variant_SummonChampion_variant_16" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_003.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_003.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_003.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_003.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_003.png" ShowParamsInTooltip="SpecificSummon" />
+    <Specific_Summon>
+      <PermanentBuffs Name="Summon_HigherAggro_Champion_2" />
+      <PermanentBuffs Name="SummonBuff_Life_Champion_3" />
+    </Specific_Summon>
+  </Skill>
+</MetaData>

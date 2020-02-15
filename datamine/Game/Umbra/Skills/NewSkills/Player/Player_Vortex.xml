@@ -1,0 +1,130 @@
+<MetaData>
+  <Skill UID="player_vortex" ESkill="player_vortex" Keywords="magic_spell">
+    <VisualFeedback TrailPresetBase="default" BloodDecalOrientation="forward" />
+    <WeaponRequirements Requirements="magic,umbra" />
+    <Animation ActionString="player_skill_vortex" />
+    <CastingParams CastBone="R_weapon_bone" CasterImmobilizationTime="0.33" />
+    <HUD HUDPicture="../u_resources/spells/Active_Skills/Anomaly.png" UIName="@ui_AST_Vortex" Lore="@ui_AST_Vortex_Lore" ActiveEffectTitle="" ActiveEffectDesc="" ASTTreeNumber="8" ShowParamsInAST="Cost,ROSTime,Cooldown,Range,DamageDetail,DamageCritical,StatusAilmentsChance,Explosion,SpecificVortex" ShowParamsInTooltip="Cost,Cooldown,DamageOverview,StatusAilmentsChance,SpecificVortex" />
+    <Enneract PickableParticle_MoveToGround="U_CommonVFX_02.Esseract.Esseract_Projectile.Umbra" PickableParticle_OnGround_Shape="U_CommonVFX_02.Esseract.Esseract_Shape.Circle_Umbra" PickableParticle_OnGround_Damage="U_CommonVFX_02.Esseract.Esseract_Color.Umbra" PickableParticle_OnGround_Symbol="U_CommonVFX_02.Esseract.Esseract_Symbol.ANULAI_TAI" PickableParticle_OnGround_Indicator="U_CommonVFX_02.Esseract.Esseract_Indicator.Umbra" PickableParticle_OnGround_Pickup="U_CommonVFX_02.Esseract.Esseract_Loot.Umbra" SkillLearningParticle="U_CommonVFX.Skill_Learn.Skill_Learn_Umbra" Inventory_HUDPicture="../u_resources/enneracts/Anomaly.png" Inventory_LoreDesc="@ui_enneract_lore" />
+    <Aggression TargetValueOnHit="20" />
+    <DamageBase Type="umbra" Min="6" MinPerLevel="0" Max="6" MaxPerLevel="0" />
+    <Cooldown Cooldown="12" />
+    <SoundTrigger OnAnimStart="Play_Skill_Vortex_Cast_Aether" />
+    <Range AttackRange="20" />
+    <ResourceCost ManaCost="-200" ROSTransfertDuration="1.5" />
+    <ParticleList>
+      <Particle Key="Wind" Name="U_Character_02.Vortex.Vortex_Area_01" Direction="0,1,0" Scale="1.2" />
+      <Particle Key="Lightning" Name="U_Character_02.Vortex.Vortex_Area_Inside_01" Direction="0,0,1" Scale="0.7" />
+      <Particle Key="LightningEnd" Name="U_Character_02.Vortex.Vortex_Area_Inside_End_01" Direction="0,0,1" Scale="0.7" />
+      <Particle Key="ProjectileShield" Name="U_Character_02.Vortex.Vortex_Area_Mesh_01" Direction="0,1,0" Scale="1.2" />
+      <Particle Key="ProjectileReaction" Name="U_Character_02.Vortex.Vortex_Area_Mesh_Reaction_01" Direction="0,1,0" Scale="1.2" />
+      <Particle Key="PulseCenter" Name="U_Character_02.Vortex.Vortex_Pulling_Center_01" Direction="0,0,1" Scale="1.1" />
+      <Particle Key="Pulse" Name="U_Character_02.Vortex.Vortex_Pulling_01" Direction="0,1,0" Scale="1.1" />
+      <Particle Key="Explosion" Name="U_Character_02.Vortex.Vortex_Explosion_01" Direction="0,0,1" Scale="0.85" />
+      <Particle Key="Hand" Name="U_Character_02.Vortex.Vortex_Hand_Aura_01" Direction="0,1,0" />
+    </ParticleList>
+    <Recast Cooldown="0.8" />
+    <DamageZone Duration="4" RateOfFire="0.33" MaxEntityHits="20" />
+    <Shapes>
+      <Entry Key="attraction" ShapeName="vortex_attraction_shape" />
+      <Entry Key="damage" ShapeName="vortex_damage_shape" />
+      <Entry Key="explosion" ShapeName="vortex_explosion_shape" />
+    </Shapes>
+    <Specific_Vortex CanBeRecastForExplosion="0" RepeatingPulse="0" PulseFrequency=".5" AttractionLength="3.5" AttractionDuration=".5" VortexCount="1" />
+  </Skill>
+  <Skill UID="player_vortex_variant_1" ESkill="default_variant">
+    <HUD UIName="@ui_Variant_Vortex_variant_1" Lore="@ui_Variant_Vortex_variant_1_lore" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_005.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_005.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_005.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_005.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_005.png" ShowParamsInTooltip="SpecificVortex" />
+    <Specific_Vortex RepeatingPulse="1" />
+  </Skill>
+  <Skill UID="player_vortex_variant_2" ESkill="default_variant">
+    <HUD UIName="@ui_Variant_Vortex_variant_2" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_001.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_001.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_001.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_001.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_001.png" ShowParamsInTooltip="SpecificVortex" />
+    <Shapes>
+      <Entry Key="attraction" ShapeName="vortex_attraction_shape" />
+      <Entry Key="damage" ShapeName="vortex_damage_shape_big" />
+      <Entry Key="explosion" ShapeName="vortex_explosion_shape" />
+    </Shapes>
+    <ParticleList>
+      <Particle Key="Wind" Name="U_Character_02.Vortex.Vortex_Area_01" Direction="0,1,0" Scale="1" />
+      <Particle Key="Lightning" Name="U_Character_02.Vortex.Vortex_Area_Inside_01" Direction="0,0,1" Scale="1.428" />
+      <Particle Key="ProjectileShield" Name="U_Character_02.Vortex.Vortex_Area_Mesh_01" Direction="0,1,0" Scale="1" />
+      <Particle Key="ProjectileReaction" Name="U_Character_02.Vortex.Vortex_Area_Mesh_Reaction_01" Direction="0,1,0" Scale="1" />
+      <Particle Key="PulseCenter" Name="U_ApocalypticForm.Mage_ApocalypticFrom.MovementSkill_In_01" Direction="0,0,1" Scale="1" />
+      <Particle Key="Pulse" Name="U_Character_02.Vortex.Vortex_Pulling_01" Direction="0,1,0" Scale="1" />
+    </ParticleList>
+  </Skill>
+  <Skill UID="player_vortex_variant_3" ESkill="default_variant">
+    <HUD UIName="@ui_Variant_Vortex_variant_3" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_003.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_003.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_003.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_003.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_003.png" ShowParamsInTooltip="SpecificVortex" />
+    <PassiveSkills>
+      <Skill Index="0" Name="AST_Vortex_SpeedBuff" Duration="8" Targeting="OnTarget" />
+    </PassiveSkills>
+  </Skill>
+  <Skill UID="player_vortex_variant_4" ESkill="default_variant">
+    <HUD UIName="@ui_Variant_Vortex_variant_4" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_003.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_003.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_003.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_003.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_003.png" ShowParamsInTooltip="SpecificVortex,Cooldown" />
+    <Specific_Vortex AntiProjectileArea="1" />
+    <Cooldown Cooldown="5" CooldownPerLevel="0" />
+  </Skill>
+  <Skill UID="player_vortex_variant_5" ESkill="default_variant">
+    <HUD UIName="@ui_Variant_Vortex_variant_5" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_003.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_003.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_003.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_003.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_003.png" ShowParamsInTooltip="SpecificVortex" />
+    <Specific_Vortex PullDoesDamage="1" PullDamageFactor="0.5" />
+  </Skill>
+  <Skill UID="player_vortex_variant_6" ESkill="default_variant">
+    <HUD UIName="@ui_Variant_Vortex_variant_6" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_003.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_003.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_003.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_003.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_003.png" ShowParamsInTooltip="SpecificVortex" />
+    <Specific_Vortex VortexCount="1" />
+  </Skill>
+  <Skill UID="player_vortex_variant_7" ESkill="default_variant">
+    <HUD UIName="@ui_Variant_Vortex_variant_7" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_003.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_003.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_003.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_003.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_003.png" ShowParamsInTooltip="SpecificVortex" />
+    <Specific_Vortex DebuffName="AST_Vortex_DOTDamage" UseDebuff="1" />
+  </Skill>
+  <Skill UID="player_vortex_variant_8" ESkill="default_variant">
+    <HUD UIName="@ui_Variant_Vortex_variant_8" Lore="@ui_Variant_Vortex_variant_8_lore" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_005.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_005.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_005.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_005.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_005.png" ShowParamsInTooltip="SpecificVortex" />
+    <Specific_Vortex UseGlobes="1" />
+  </Skill>
+  <Skill UID="player_vortex_variant_9" ESkill="default_variant">
+    <HUD UIName="@ui_Variant_Vortex_variant_9" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_001.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_001.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_001.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_001.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_001.png" ShowParamsInTooltip="SpecificVortex" />
+    <DamageZone Duration="2" />
+  </Skill>
+  <Skill UID="player_vortex_variant_10" ESkill="default_variant">
+    <HUD UIName="@ui_Variant_Vortex_variant_10" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_003.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_003.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_003.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_003.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_003.png" ShowParamsInTooltip="SpecificVortex" />
+    <Specific_Vortex CanBeRecastForExplosion="1" />
+  </Skill>
+  <Skill UID="player_vortex_variant_11" ESkill="default_variant">
+    <HUD UIName="@ui_Variant_Vortex_variant_11" Lore="@ui_Variant_Vortex_variant_11_lore" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_005.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_005.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_005.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_005.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_005.png" ShowParamsInTooltip="SpecificVortex,DamageBase,DamageDetail" />
+    <Damage_Conversion>
+      <Entry From="umbra" To="lightning" ConversionRate="100" />
+    </Damage_Conversion>
+    <WeaponRequirements Requirements="magic,lightning" />
+    <DamageBase Min="1" Max="1" />
+    <ParticleList>
+      <Particle Key="Wind" Name="U_Character_02.Vortex.Vortex_Area_01_Lightning" Direction="0,1,0" />
+      <Particle Key="Lightning" Name="U_Character_02.Vortex.Vortex_Area_Inside_01_Lightning" Direction="0,0,1" />
+      <Particle Key="LightningEnd" Name="U_Character_02.Vortex.Vortex_Area_Inside_End_01_Lightning" Direction="0,0,1" />
+      <Particle Key="ProjectileShield" Name="U_Character_02.Vortex.Vortex_Area_Mesh_01_Lightning" Direction="0,1,0" />
+      <Particle Key="ProjectileReaction" Name="U_Character_02.Vortex.Vortex_Area_Mesh_Reaction_01_Lightning" Direction="0,1,0" />
+      <Particle Key="PulseCenter" Name="U_Character_02.Vortex.Vortex_Pulling_Center_01_Lightning" Direction="0,0,1" />
+      <Particle Key="Pulse" Name="U_Character_02.Vortex.Vortex_Pulling_01_Lightning" Direction="0,1,0" />
+      <Particle Key="Explosion" Name="U_Character_02.Vortex.Vortex_Explosion_01_Lightning" Direction="0,0,1" />
+      <Particle Key="Hand" Name="U_Character_02.Vortex.Vortex_Hand_Aura_01_Lightning" Direction="0,1,0" />
+    </ParticleList>
+    <SoundTrigger OnAnimStart="Play_Skill_Vortex_Cast_Elec" />
+  </Skill>
+  <Skill UID="player_vortex_variant_12" ESkill="default_variant">
+    <HUD UIName="@ui_Variant_Vortex_variant_12" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_001.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_001.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_001.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_001.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_001.png" ShowParamsInTooltip="SpecificVortex,DamageBase" />
+    <DamageBase BonusPercent="10" />
+  </Skill>
+  <Skill UID="player_vortex_variant_13" ESkill="default_variant">
+    <HUD UIName="@ui_Variant_Vortex_variant_13" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_001.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_001.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_001.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_001.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_001.png" ShowParamsInTooltip="SpecificVortex,StatusAilmentsChance" />
+    <StatusAilment AllAilmentsInflictScoreIncreasePercent="40" />
+  </Skill>
+  <Skill UID="player_vortex_variant_14" ESkill="default_variant">
+    <HUD UIName="@ui_Variant_Vortex_variant_14" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_001.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_001.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_001.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_001.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_001.png" ShowParamsInTooltip="SpecificVortex,StatusAilmentsChance" />
+    <StatusAilment AllAilmentsInflictDamageIncreasePercent="40" />
+  </Skill>
+  <Skill UID="player_vortex_variant_15" ESkill="default_variant">
+    <HUD UIName="@ui_Variant_Vortex_variant_15" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_001.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_001.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_001.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_001.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_001.png" ShowParamsInTooltip="SpecificVortex,DamageCritical" />
+    <DamageCritical CriticalInflictScoreModifier="40" />
+  </Skill>
+  <Skill UID="player_vortex_variant_16" ESkill="default_variant">
+    <HUD UIName="@ui_Variant_Vortex_variant_16" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_001.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_001.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_001.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_001.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_001.png" ShowParamsInTooltip="SpecificVortex,DamageCritical" />
+    <DamageCritical CriticalDamageModifier="30" />
+  </Skill>
+</MetaData>

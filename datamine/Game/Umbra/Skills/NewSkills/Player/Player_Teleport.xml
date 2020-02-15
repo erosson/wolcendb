@@ -1,0 +1,109 @@
+<MetaData>
+  <Skill UID="player_teleport" ESkill="player_teleport" Keywords="magic_spell">
+    <WeaponRequirements Requirements="magic,umbra" />
+    <VisualFeedback TrailPresetBase="default" FeedbackPresetBase="Player_skill_teleport" BloodDecalOrientation="forward" />
+    <Animation AnimationDrivenMovement="0" ActionString_In="player_skill_tp_in" ActionString_Loop="player_skill_tp_loop" ActionString_Out="player_skill_tp_out" />
+    <HUD HUDPicture="../u_resources/spells/Active_Skills/teleport.png" UIName="@ui_AST_Teleport" Lore="@ui_AST_Teleport_Lore" ActiveEffectTitle="" ActiveEffectDesc="" ASTTreeNumber="8" ShowParamsInAST="Cost,ROSTime,Cooldown,Range,SpecificTeleport" ShowParamsInTooltip="Cost,Cooldown,DamageOverview,StatusAilmentsChance,SpecificTeleport" />
+    <Enneract PickableParticle_MoveToGround="U_CommonVFX_02.Esseract.Esseract_Projectile.Umbra" PickableParticle_OnGround_Shape="U_CommonVFX_02.Esseract.Esseract_Shape.Circle_Umbra" PickableParticle_OnGround_Damage="U_CommonVFX_02.Esseract.Esseract_Color.Umbra" PickableParticle_OnGround_Symbol="U_CommonVFX_02.Esseract.Esseract_Symbol.ANULAI_TAI" PickableParticle_OnGround_Indicator="U_CommonVFX_02.Esseract.Esseract_Indicator.Umbra" PickableParticle_OnGround_Pickup="U_CommonVFX_02.Esseract.Esseract_Loot.Umbra" SkillLearningParticle="U_CommonVFX.Skill_Learn.Skill_Learn_Umbra" Inventory_HUDPicture="../u_resources/enneracts/teleport.png" Inventory_LoreDesc="@ui_enneract_lore" />
+    <Cooldown Cooldown="8" CooldownPerLevel="0" />
+    <Aggression TargetValueOnHit="30" />
+    <ResourceCost ManaCost="-100" ROSTransfertDuration="1" />
+    <Specific_Teleport TeleportInSound="Play_Skill_Teleport_Enter" TeleportOutSound="Play_Skill_Teleport_Exit" TeleportDuration="0.1" HeightLimit="15" NavPathLengthLimit="15" DamageEnemiesBetweenShapeWidth="1" />
+    <ParticleList>
+      <Particle Key="InOut" Name="U_Character.Skills.Teleport_In_02" Offset="0,1,0" Direction="0,0,1" />
+      <Particle Key="Trail" Name="U_Character.Skills.Teleport_Move_01" Offset="0,0,1.5" Direction="0,1,0" />
+      <Particle Key="MagicCircleIn" Name="U_Magic_Sign.Umbra.Teleport_Sign_01" Offset="0,0.5,1.25" Direction="0,1,0" />
+      <Particle Key="MagicCircleOut" Name="U_Magic_Sign.Umbra.Teleport_Sign_01" Offset="0,-0.5,1.25" Direction="0,1,0" />
+      <Particle Key="DecoyBegin" Name="U_Character.Skills.Teleport_Decoy_Aura" Direction="0,0,1" />
+      <Particle Key="DecoyEnd" Name="U_Character.Skills.Teleport_Decoy_end" Direction="0,0,1" />
+      <Particle Key="SwapAura" Name="U_Character.Skills.Teleport_In_02" Direction="0,0,1" />
+      <Particle Key="SwapWarp" Name="U_Magic_Sign.Umbra.Teleport_Sign_02" Scale="2.5" Direction="0,0,1" />
+      <Particle Key="Stasis" Name="U_Character.Skills.Teleport_AoE_Stasis_01" Direction="0,0,1" />
+    </ParticleList>
+  </Skill>
+  <Skill UID="player_teleport_variant_1" ESkill="default_variant">
+    <HUD UIName="@ui_Variant_Teleport_variant_1" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_001.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_001.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_001.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_001.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_001.png" ShowParamsInTooltip="SpecificTeleport" />
+    <Specific_Teleport NavPathLengthLimit="5" />
+  </Skill>
+  <Skill UID="player_teleport_variant_2" ESkill="default_variant">
+    <HUD UIName="@ui_Variant_Teleport_variant_2" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_003.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_003.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_003.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_003.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_003.png" ShowParamsInTooltip="SpecificTeleport,StatusAilmentsChance" />
+    <Specific_Teleport AOEStasis="1" AOEStasisRadius="3" />
+    <StatusAilment>
+      <stasis Chance="0" ChanceMode="override" Duration="3" DurationMode="override" Stacks="1" StacksMode="override" />
+    </StatusAilment>
+  </Skill>
+  <Skill UID="player_teleport_variant_3" ESkill="default_variant">
+    <HUD UIName="@ui_Variant_Teleport_variant_3" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_001.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_001.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_001.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_001.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_001.png" ShowParamsInTooltip="SpecificTeleport" />
+    <Specific_Teleport WillpowerGainOnHit="30" />
+  </Skill>
+  <Skill UID="player_teleport_variant_4" ESkill="default_variant">
+    <HUD UIName="@ui_Variant_Teleport_variant_4" Lore="@ui_Variant_Teleport_variant_4_Lore" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_005.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_005.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_005.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_005.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_005.png" ShowParamsInTooltip="SpecificTeleport" />
+    <Specific_Teleport SwapPosition="1" SwapPositionRadius="2" />
+  </Skill>
+  <Skill UID="player_teleport_variant_5" ESkill="default_variant">
+    <HUD UIName="@ui_Variant_Teleport_variant_5" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_003.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_003.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_003.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_003.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_003.png" ShowParamsInTooltip="SpecificTeleport" />
+    <Specific_Teleport Decoy="1" DecoyLifeTime="5" DecoyCharacterFilepath="Game/objects/characters/players/male/Male_Hollywood_clone.cdf" DecoyAnim="cmh_skill_teleport_clone_01" />
+  </Skill>
+  <Skill UID="player_teleport_variant_6" ESkill="default_variant">
+    <HUD UIName="@ui_Variant_Teleport_variant_6" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_001.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_001.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_001.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_001.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_001.png" ShowParamsInTooltip="SpecificTeleport,StatusAilmentsChance" />
+    <ParticleList>
+      <Particle Key="Trail" Name="U_Character.Skills.Teleport_Move_Damage_01" Direction="0,1,0" />
+    </ParticleList>
+    <Specific_Teleport DamageEnemiesBetween="1" />
+    <StatusAilment>
+      <stasis Chance="20" ChanceMode="AddToBase" />
+    </StatusAilment>
+    <DamageBase Type="umbra" Min="10" MinPerLevel="2" Max="10" MaxPerLevel="2" />
+    <SoundTrigger OnHit="Play_Skill_Teleport_Damage_Impact" />
+  </Skill>
+  <Skill UID="player_teleport_variant_7" ESkill="default_variant">
+    <HUD UIName="@ui_Variant_Teleport_variant_7" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_001.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_001.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_001.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_001.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_001.png" ShowParamsInTooltip="SpecificTeleport,CastingParams" />
+    <CastingParams CanCastEvenUnderCrowdControl="1" />
+    <Specific_Teleport RemoveCrowdControlOnCast="1" />
+  </Skill>
+  <Skill UID="player_teleport_variant_8" ESkill="default_variant">
+    <HUD UIName="@ui_Variant_Teleport_variant_8" Lore="@ui_Variant_Teleport_variant_8_Lore" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_005.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_005.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_005.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_005.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_005.png" ShowParamsInTooltip="SpecificTeleport,Cost,Cooldown" />
+    <ResourceCost CostMultiplierAfterCast="2" CostMultiplierAfterCastTimer="5" />
+    <Cooldown Cooldown="-10.0" />
+  </Skill>
+  <Skill UID="player_teleport_variant_9" ESkill="default_variant">
+    <HUD UIName="@ui_Variant_Teleport_variant_9" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_003.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_003.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_003.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_003.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_003.png" ShowParamsInTooltip="SpecificTeleport" />
+    <Specific_Teleport BuffDuration="5" BuffRadius="2" Buffname="AST_Teleport_Buff" />
+  </Skill>
+  <Skill UID="player_teleport_variant_10" ESkill="default_variant">
+    <HUD UIName="@ui_Variant_Teleport_variant_10" Lore="@ui_Variant_Teleport_variant_10_Lore" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_005.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_005.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_005.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_005.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_005.png" ShowParamsInTooltip="SpecificTeleport,Cooldown,Cost" />
+    <Specific_Teleport BackwardTeleportationMaxTime="3" />
+    <Recast Cooldown="0.5" UmbraCost="0" />
+    <ParticleList>
+      <Particle Key="BackwardIndicator" Name="U_Character.Skills.Teleport_Back_01" Direction="0,1,0" />
+      <Particle Key="BackImpact" Name="U_ApocalypticForm.Mage_ApocalypticFrom.Explosion_Projectile_Trigger" Direction="0,0,1" Offset="0,1.25,0" />
+    </ParticleList>
+  </Skill>
+  <Skill UID="player_teleport_variant_11" ESkill="default_variant">
+    <HUD UIName="@ui_Variant_Teleport_variant_11" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_003.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_003.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_003.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_003.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_003.png" ShowParamsInTooltip="SpecificTeleport" />
+    <Specific_Teleport BuffDuration="5" BuffRadius="2" Buffname="AST_Teleport_Buff_2" />
+  </Skill>
+  <Skill UID="player_teleport_variant_9,player_teleport_variant_11" ESkill="default_variant_combo">
+    <Specific_Teleport BuffDuration="5" BuffRadius="2" Buffname="AST_Teleport_Buff_Combo" />
+  </Skill>
+  <Skill UID="player_teleport_variant_12" ESkill="default_variant">
+    <HUD UIName="@ui_Variant_Teleport_variant_12" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_001.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_001.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_001.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_001.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_001.png" ShowParamsInTooltip="SpecificTeleport,Cost,ROSTime" />
+    <ResourceCost ManaCost="15" ManaCostPerLevel="0" ROSTransfertDuration="1.0" />
+  </Skill>
+  <Skill UID="player_teleport_variant_13" ESkill="default_variant">
+    <HUD UIName="@ui_Variant_Teleport_variant_13" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_001.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_001.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_001.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_001.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_001.png" ShowParamsInTooltip="SpecificTeleport,Cooldown" />
+    <Cooldown Cooldown="-2" CooldownPerLevel="0" />
+  </Skill>
+  <Skill UID="player_teleport_variant_14" ESkill="default_variant">
+    <HUD UIName="@ui_Variant_Teleport_variant_14" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_001.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_001.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_001.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_001.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_001.png" ShowParamsInTooltip="SpecificTeleport" />
+    <Specific_Teleport WillpowerGainOnHit="30" />
+  </Skill>
+  <Skill UID="player_teleport_variant_15" ESkill="default_variant">
+    <HUD UIName="@ui_Variant_Teleport_variant_15" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_003.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_003.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_003.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_003.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_003.png" ShowParamsInTooltip="SpecificTeleport,Cost,ROSTime" />
+    <ResourceCost ManaCost="25" ManaCostPerLevel="0" ROSTransfertDuration="1.0" />
+  </Skill>
+  <Skill UID="player_teleport_variant_16" ESkill="default_variant">
+    <HUD UIName="@ui_Variant_Teleport_variant_16" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_003.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_003.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_003.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_003.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_003.png" ShowParamsInTooltip="SpecificTeleport" />
+    <Specific_Teleport NavPathLengthLimit="5" />
+  </Skill>
+</MetaData>

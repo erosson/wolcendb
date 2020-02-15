@@ -1,0 +1,118 @@
+<MetaData>
+  <Skill UID="player_chainlightning" ESkill="player_chainlightning" Keywords="magic_spell">
+    <WeaponRequirements Requirements="lightning,magic" />
+    <VisualFeedback TrailPresetBase="" FeedbackPresetBase="Player_skill_chainlightning" BloodDecalOrientation="forward" />
+    <Animation ActionString="player_skill_chainlightning_windup" ActionString_FollowUp="player_skill_chainlightning_followup" ScaleWithSpellCastingSpeed="1" />
+    <SkillLoop PresetID="skillloop_chainlightning" />
+    <CastingParams CastBone="R_Weapon_Bone" CanCastWhileMoving="0" />
+    <HUD HUDPicture="../u_resources/spells/Active_Skills/chainlightning.png" UIName="@ui_AST_ChainLightning" Lore="@ui_AST_ChainLightning_Lore" ActiveEffectTitle="" ActiveEffectDesc="" ASTTreeNumber="2" ShowParamsInAST="Cost,ROSTime,Cooldown,Range,DamageDetail,DamageCritical,StatusAilmentsChance,SpecificChainLightning" ShowParamsInTooltip="Cost,Cooldown,DamageOverview,StatusAilmentsChance,SpecificChainLightning" />
+    <Enneract PickableParticle_MoveToGround="U_CommonVFX_02.Esseract.Esseract_Projectile.Lightning" PickableParticle_OnGround_Shape="U_CommonVFX_02.Esseract.Esseract_Shape.Circle_Lightning" PickableParticle_OnGround_Damage="U_CommonVFX_02.Esseract.Esseract_Color.Lightning" PickableParticle_OnGround_Symbol="U_CommonVFX_02.Esseract.Esseract_Symbol.BEELMALIK" PickableParticle_OnGround_Indicator="U_CommonVFX_02.Esseract.Esseract_Indicator.Lightning" PickableParticle_OnGround_Pickup="U_CommonVFX_02.Esseract.Esseract_Loot.Lightning" SkillLearningParticle="U_CommonVFX.Skill_Learn.Skill_Learn_Lightning" Inventory_HUDPicture="../u_resources/enneracts/chainlightning.png" Inventory_LoreDesc="@ui_enneract_lore" />
+    <Aggression TargetValueOnHit="5" />
+    <DamageBase Max="8" MaxPerLevel="0" Min="1" MinPerLevel="0" Type="lightning" />
+    <Cooldown Cooldown="0" CooldownPerLevel="0" />
+    <ResourceCost ManaCost="-100" ManaCostPerLevel="0" ROSTransfertDuration="0.5" />
+    <Range AttackRange="15" />
+    <ParticleList>
+      <Particle Key="Ready" Name="U_Character.Skills.Chain_Lightning_Hit" />
+      <Particle Key="ChainSkillBeam" Name="U_Character.Skills.Chain_Lightning_01" Direction="0,0,-1" />
+      <Particle Key="ChainSkillHit" Name="U_Character.Skills.Chain_Lightning_Hit" />
+    </ParticleList>
+    <ChainSkill MaxBounce="3" HitBounceDelay="0.1" TargetBone="Bip01 Spine1" SoundTriggerOnFirstHit="PLAY_Skill_ChainLightning_FirstImpact" SoundTriggerOnMiss="PLAY_Skill_ChainLightning_Miss">
+      <SpreadDatas>
+        <Entry Probability="100" Radius="8" DamagePercent="70" SoundTriggerHit="PLAY_Skill_ChainLightning_SecondImpact" />
+        <Entry Probability="100" Radius="6" DamagePercent="45" SoundTriggerHit="PLAY_Skill_ChainLightning_ThirdImpact" />
+        <Entry Probability="100" Radius="5" DamagePercent="20" SoundTriggerHit="PLAY_Skill_ChainLightning_FourthImpact" />
+        <Entry Probability="100" Radius="8" DamagePercent="80" SoundTriggerHit="PLAY_Skill_ChainLightning_ThirdImpact" />
+      </SpreadDatas>
+    </ChainSkill>
+    <Specific_ChainLightning SnapToTargetTolerance="5" />
+    <SoundTrigger OnAnimCast="PLAY_Skill_ChainLightning_Cast" OnAnimStart="PLAY_Skill_ChainLightning_BuildUp" OnHit="" />
+  </Skill>
+  <Skill UID="player_chainlightning_step_1" ESkill="default_variant">
+    <HUD UIName="@ui_Variant_Chainlightning_variant_1" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_001.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_001.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_001.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_001.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_001.png" ShowParamsInTooltip="SpecificChainLightning,Cost" />
+    <ResourceCost ManaCost="20" />
+  </Skill>
+  <Skill UID="player_chainlightning_step_2" ESkill="default_variant">
+    <HUD UIName="@ui_Variant_Chainlightning_variant_2" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_003.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_003.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_003.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_003.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_003.png" ShowParamsInTooltip="SpecificChainLightning" />
+    <Specific_ChainLightning DamageLossMitigation="10" />
+  </Skill>
+  <Skill UID="player_chainlightning_step_3" ESkill="default_variant">
+    <HUD UIName="@ui_Variant_Chainlightning_variant_3" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_003.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_003.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_003.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_003.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_003.png" ShowParamsInTooltip="SpecificChainLightning,DamageBase" />
+    <DamageBase BonusPercent="20" />
+  </Skill>
+  <Skill UID="player_chainlightning_step_4" ESkill="default_variant">
+    <HUD UIName="@ui_Variant_Chainlightning_variant_4" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_003.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_003.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_003.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_003.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_003.png" ShowParamsInTooltip="SpecificChainLightning" />
+    <ChainSkill MaxBounce="1" />
+  </Skill>
+  <Skill UID="player_chainlightning_step_5" ESkill="default_variant">
+    <HUD UIName="@ui_Variant_Chainlightning_variant_5" Lore="@ui_Variant_Chainlightning_variant_5_Lore" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_005.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_005.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_005.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_005.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_005.png" ShowParamsInTooltip="SpecificChainLightning,StatusAilmentsChance" />
+    <WeaponRequirements Requirements="shadow,magic" />
+    <ChainSkill SoundTriggerOnFirstHit="Skill_ChainLightning_Shadow_Impact_First" SoundTriggerOnMiss="PLAY_Skill_ChainLightning_Shadow_Miss">
+      <SpreadDatas>
+        <Entry Probability="100" Radius="8" DamagePercent="70" SoundTriggerHit="Play_Skill_ChainLightning_Shadow_Impact_Second" />
+        <Entry Probability="100" Radius="6" DamagePercent="45" SoundTriggerHit="Play_Skill_ChainLightning_Shadow_Impact_Third" />
+        <Entry Probability="100" Radius="5" DamagePercent="20" SoundTriggerHit="Play_Skill_ChainLightning_Shadow_Impact_Fourth" />
+        <Entry Probability="100" Radius="8" DamagePercent="80" SoundTriggerHit="Play_Skill_ChainLightning_Shadow_Impact_Third" />
+      </SpreadDatas>
+    </ChainSkill>
+    <Specific_ChainLightning Shadow="1" />
+    <SoundTrigger OnAnimCast="Play_Skill_ChainLightning_Shadow_Cast" OnAnimStart="Play_Skill_ChainLightning_Shadow_PreCast" OnHit="" />
+    <Damage_Conversion>
+      <Entry From="lightning" To="shadow" ConversionRate="100" />
+    </Damage_Conversion>
+    <StatusAilment>
+      <curse Chance="20" ChanceMode="AddToBase" />
+    </StatusAilment>
+    <SkillLoop PresetID="skillloop_chainlightning_shadow" />
+    <ParticleList>
+      <Particle Key="Ready" Name="U_Character.Skills.Chain_Lightning_Hit_Shadow" />
+      <Particle Key="ChainSkillBeam" Name="U_Character.Skills.Chain_Lightning_01_Shaodw" />
+      <Particle Key="ChainSkillHit" Name="U_Character.Skills.Chain_Lightning_Hit_Shadow" />
+    </ParticleList>
+  </Skill>
+  <Skill UID="player_chainlightning_step_6" ESkill="default_variant">
+    <HUD UIName="@ui_Variant_Chainlightning_variant_6" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_001.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_001.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_001.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_001.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_001.png" ShowParamsInTooltip="SpecificChainLightning,StatusAilmentsChance" />
+    <StatusAilment AllAilmentsInflictScoreIncreasePercent="40" />
+  </Skill>
+  <Skill UID="player_chainlightning_step_7" ESkill="default_variant">
+    <HUD UIName="@ui_Variant_Chainlightning_variant_7" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_001.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_001.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_001.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_001.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_001.png" ShowParamsInTooltip="SpecificChainLightning,DamageCritical" />
+    <DamageCritical CriticalInflictScoreModifier="40" />
+  </Skill>
+  <Skill UID="player_chainlightning_step_8" ESkill="default_variant">
+    <HUD UIName="@ui_Variant_Chainlightning_variant_8" Lore="@ui_Variant_Chainlightning_variant_8_Lore" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_005.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_005.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_005.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_005.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_005.png" ShowParamsInTooltip="SpecificChainLightning" />
+    <Specific_ChainLightning BuffName="AST_ChainLightning_DamageBoost" BuffDuration="10" />
+  </Skill>
+  <Skill UID="player_chainlightning_step_9" ESkill="default_variant">
+    <HUD UIName="@ui_Variant_Chainlightning_variant_9" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_003.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_003.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_003.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_003.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_003.png" ShowParamsInTooltip="SpecificChainLightning" />
+    <Specific_ChainLightning ChanceToAdditionalLightning="25" />
+  </Skill>
+  <Skill UID="player_chainlightning_step_10" ESkill="default_variant">
+    <HUD UIName="@ui_Variant_Chainlightning_variant_10" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_003.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_003.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_003.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_003.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_003.png" ShowParamsInTooltip="SpecificChainLightning" />
+    <Specific_ChainLightning PrioritizeTargetWithDOT="1" />
+  </Skill>
+  <Skill UID="player_chainlightning_step_11" ESkill="default_variant">
+    <HUD UIName="@ui_Variant_Chainlightning_variant_11" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_003.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_003.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_003.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_003.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_003.png" ShowParamsInTooltip="SpecificChainLightning,Cooldown" />
+    <Specific_ChainLightning ChanceToStunOnCritical="100" StunDuration="2" />
+    <Cooldown Cooldown="4" CooldownPerLevel="0" />
+  </Skill>
+  <Skill UID="player_chainlightning_step_12" ESkill="default_variant">
+    <HUD UIName="@ui_Variant_Chainlightning_variant_12" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_001.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_001.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_001.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_001.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_001.png" ShowParamsInTooltip="SpecificChainLightning,DamageCritical" />
+    <DamageCritical CriticalChanceAgainstShocked="80" />
+  </Skill>
+  <Skill UID="player_chainlightning_step_13" ESkill="default_variant">
+    <HUD UIName="@ui_Variant_Chainlightning_variant_13" Lore="@ui_Variant_Chainlightning_variant_13_lore" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_005.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_005.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_005.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_005.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_005.png" ShowParamsInTooltip="SpecificChainLightning" />
+    <Specific_ChainLightning ForkOnCritical="1" ForkRadius="8" />
+  </Skill>
+  <Skill UID="player_chainlightning_step_14" ESkill="default_variant">
+    <HUD UIName="@ui_Variant_Chainlightning_variant_14" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_001.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_001.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_001.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_001.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_001.png" ShowParamsInTooltip="SpecificChainLightning,DamageCritical" />
+    <DamageCritical CriticalDamageModifier="30" />
+  </Skill>
+  <Skill UID="player_chainlightning_step_15" ESkill="default_variant">
+    <HUD UIName="@ui_Variant_Chainlightning_variant_15" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_001.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_001.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_001.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_001.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_001.png" ShowParamsInTooltip="SpecificChainLightning,StatusAilmentsChance" />
+    <StatusAilment AllAilmentsInflictDamageIncreasePercent="40" />
+  </Skill>
+  <Skill UID="player_chainlightning_step_16" ESkill="default_variant">
+    <HUD UIName="@ui_Variant_Chainlightning_variant_16" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_001.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_001.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_001.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_001.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_001.png" ShowParamsInTooltip="SpecificChainLightning,DamageBase" />
+    <DamageBase BonusPercent="10" />
+  </Skill>
+</MetaData>

@@ -1,0 +1,130 @@
+<MetaData>
+  <Skill UID="player_aetherblast" ESkill="player_aetherblast" Keywords="magic_spell">
+    <VisualFeedback TrailPresetBase="default" FeedbackPresetBase="Player_skill_aetherblast" BloodDecalOrientation="forward" />
+    <WeaponRequirements Requirements="magic,shadow" />
+    <Animation ActionString="player_skill_shadowblast_01" />
+    <CastingParams CastBone="R_weapon_bone" CasterImmobilizationTime="0" CanCastWhileMoving="0" MaximumTurnRate="0" ShouldMoveInRange="0" />
+    <HUD HUDPicture="../u_resources/spells/Active_Skills/Eclipse.png" UIName="@ui_AST_AetherBlast" Lore="@ui_AST_AetherBlast_Lore" ActiveEffectTitle="" ActiveEffectDesc="" ASTTreeNumber="8" ShowParamsInAST="Cost,ROSTime,Cooldown,Range,DamageDetail,StatusAilmentsChance,Explosion,Slow,SpecificAetherBlast" ShowParamsInTooltip="Cost,Cooldown,DamageOverview,StatusAilmentsChance,Slow,SpecificAetherBlast" />
+    <Enneract PickableParticle_MoveToGround="U_CommonVFX_02.Esseract.Esseract_Projectile.Shadow" PickableParticle_OnGround_Shape="U_CommonVFX_02.Esseract.Esseract_Shape.Circle_Shadow" PickableParticle_OnGround_Damage="U_CommonVFX_02.Esseract.Esseract_Color.Shadow" PickableParticle_OnGround_Symbol="U_CommonVFX_02.Esseract.Esseract_Symbol.MOROS" PickableParticle_OnGround_Indicator="U_CommonVFX_02.Esseract.Esseract_Indicator.Shadow" PickableParticle_OnGround_Pickup="U_CommonVFX_02.Esseract.Esseract_Loot.Shadow" SkillLearningParticle="U_CommonVFX.Skill_Learn.Skill_Learn_Shadow" Inventory_HUDPicture="../u_resources/enneracts/Eclipse.png" Inventory_LoreDesc="@ui_enneract_lore" />
+    <Aggression TargetValueOnHit="20" />
+    <Cooldown Cooldown="5" CooldownPerLevel="0" />
+    <ResourceCost ManaCost="-100" ManaCostPerLevel="0" ROSTransfertDuration="1" />
+    <SoundTrigger OnAnimStart="Play_Skill_AetherBlast_Blast" />
+    <Blownaway Height="0.5" Distance="3.5" />
+    <DamageBase Type="shadow" Min="8" MinPerLevel="0" Max="9" MaxPerLevel="0" />
+    <Shapes>
+      <Entry ShapeName="Player_AetherBlast_Shape" />
+    </Shapes>
+    <ParticleList>
+      <Particle Key="Wave" Name="U_Character_02.ShadowBlast.ShadowBlast_CornShape_01" Direction="0,0,1" Scale="1.05" TimeScale="1" Bone="Bip01" />
+      <Particle Key="WaveCircle" Name="U_Character_02.ShadowBlast.ShadowBlast_CircleShape_01" Direction="0,0,1" Scale="1.025" Bone="Bip01" />
+      <Particle Key="Aura" Name="U_Character_02.ShadowBlast.ShadowBlast_CornShape_02" Direction="0,-1,0" Offset="0,0,1.25" Bone="Bip01" />
+      <Particle Key="AuraCircle" Name="U_Character_02.ShadowBlast.ShadowBlast_CircleShpae_02" Direction="0,0,1" Offset="0,0,0" Scale="2.5" Bone="Bip01" />
+    </ParticleList>
+    <Specific_AetherBlast DebuffDuration="0" DoDamage="1" />
+  </Skill>
+  <Skill UID="player_AetherBlast_variant_1" ESkill="default_variant">
+    <HUD UIName="@ui_Variant_AetherBlast_variant_1" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_003.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_003.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_003.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_003.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_003.png" ShowParamsInTooltip="SpecificAetherBlast" />
+    <Blownaway StunDuration="1" />
+  </Skill>
+  <Skill UID="player_AetherBlast_variant_2" ESkill="default_variant">
+    <HUD UIName="@ui_Variant_AetherBlast_variant_2" Lore="@ui_Variant_AetherBlast_variant_2_Lore" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_005.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_005.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_005.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_005.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_005.png" ShowParamsInTooltip="SpecificAetherBlast" />
+    <Animation ActionString="player_skill_shadowblast_360" />
+    <Shapes>
+      <Entry ShapeName="Player_AetherBlast_Shape_Circle" />
+    </Shapes>
+    <Specific_AetherBlast IsCircle="1" />
+  </Skill>
+  <Skill UID="player_AetherBlast_variant_3" ESkill="default_variant">
+    <HUD UIName="@ui_Variant_AetherBlast_variant_3" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_001.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_001.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_001.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_001.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_001.png" ShowParamsInTooltip="Cooldown,SpecificAetherBlast" />
+    <Cooldown Cooldown="-1" CooldownPerLevel="0" />
+  </Skill>
+  <Skill UID="player_AetherBlast_variant_4" ESkill="default_variant">
+    <HUD UIName="@ui_Variant_AetherBlast_variant_4" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_003.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_003.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_003.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_003.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_003.png" ShowParamsInTooltip="SpecificAetherBlast,DamageBase" />
+    <DamageBase BonusPercent="50" />
+  </Skill>
+  <Skill UID="player_AetherBlast_variant_5" ESkill="default_variant">
+    <HUD UIName="@ui_Variant_AetherBlast_variant_5" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_001.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_001.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_001.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_001.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_001.png" ShowParamsInTooltip="SpecificAetherBlast" />
+    <ParticleList>
+      <Particle Key="Wave" Name="U_Character_02.ShadowBlast.ShadowBlast_CornShape_01" Direction="0,0,1" Scale="1.125" TimeScale="1" Bone="Bip01" />
+      <Particle Key="WaveCircle" Name="U_Character_02.ShadowBlast.ShadowBlast_CircleShape_01" Direction="0,0,1" Scale="1.05" Bone="Bip01" />
+    </ParticleList>
+    <Shapes>
+      <Entry ShapeName="Player_AetherBlast_Shape_Big" />
+    </Shapes>
+  </Skill>
+  <Skill UID="player_AetherBlast_variant_2,player_AetherBlast_variant_5" ESkill="default_variant_combo">
+    <Shapes>
+      <Entry ShapeName="Player_AetherBlast_Shape_Circle_Big" />
+    </Shapes>
+  </Skill>
+  <Skill UID="player_AetherBlast_variant_6" ESkill="default_variant">
+    <HUD UIName="@ui_Variant_AetherBlast_variant_6" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_003.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_003.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_003.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_003.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_003.png" ShowParamsInTooltip="SpecificAetherBlast,slow" />
+    <StatusEffect_MovementSpeed SlowPercent="25" Duration="5" />
+  </Skill>
+  <Skill UID="player_AetherBlast_variant_7" ESkill="default_variant">
+    <HUD UIName="@ui_Variant_AetherBlast_variant_7" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_003.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_003.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_003.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_003.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_003.png" ShowParamsInTooltip="SpecificAetherBlast" />
+    <Specific_AetherBlast ManaPerHit="10" />
+  </Skill>
+  <Skill UID="player_AetherBlast_variant_8" ESkill="default_variant">
+    <HUD UIName="@ui_Variant_AetherBlast_variant_8" Lore="@ui_Variant_AetherBlast_variant_8_Lore" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_005.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_005.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_005.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_005.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_005.png" ShowParamsInTooltip="SpecificAetherBlast" />
+    <Specific_AetherBlast ReflectProjectile="1" />
+  </Skill>
+  <Skill UID="player_AetherBlast_variant_9" ESkill="default_variant">
+    <HUD UIName="@ui_Variant_AetherBlast_variant_9" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_003.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_003.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_003.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_003.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_003.png" ShowParamsInTooltip="SpecificAetherBlast" />
+    <ParticleList>
+      <Particle Key="GlobeExplosion" Name="U_CommonVFX.Map_Modifier.Fire_Explosion_01" Direction="0,0,1" Scale="0.4" Bone="Bip01" />
+    </ParticleList>
+    <Specific_AetherBlast GlobeExplosionDamageMultiplier="2" GlobeExplosionRadius="3.5" />
+  </Skill>
+  <Skill UID="player_AetherBlast_variant_10" ESkill="default_variant">
+    <HUD UIName="@ui_Variant_AetherBlast_variant_10" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_001.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_001.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_001.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_001.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_001.png" ShowParamsInTooltip="SpecificAetherBlast,StatusAilmentsChance" />
+    <StatusAilment AllAilmentsInflictScoreIncreasePercent="40" />
+  </Skill>
+  <Skill UID="player_AetherBlast_variant_11" ESkill="default_variant">
+    <HUD UIName="@ui_Variant_AetherBlast_variant_11" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_001.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_001.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_001.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_001.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_001.png" ShowParamsInTooltip="SpecificAetherBlast" />
+    <Specific_AetherBlast ForceFieldPerHit="5" />
+  </Skill>
+  <Skill UID="player_AetherBlast_variant_12" ESkill="default_variant">
+    <HUD UIName="@ui_Variant_AetherBlast_variant_12" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_003.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_003.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_003.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_003.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_003.png" ShowParamsInTooltip="SpecificAetherBlast,StatusAilmentsChance" />
+    <Specific_AetherBlast ChanceToFrenzy="10" />
+    <StatusEffect_Frenzy Duration="4" DurationPerLevel="0" />
+  </Skill>
+  <Skill UID="player_AetherBlast_variant_13" ESkill="default_variant">
+    <HUD UIName="@ui_Variant_AetherBlast_variant_13" Lore="@ui_Variant_AetherBlast_variant_13_Lore" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_005.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_005.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_005.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_005.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_005.png" ShowParamsInTooltip="SpecificAetherBlast,StatusAilmentsChance" />
+    <ParticleList>
+      <Particle Key="Wave" Name="U_Character_02.ShadowBlast.ShadowBlast_CornShape_01_Sacred" Direction="0,0,1" Bone="Bip01" />
+      <Particle Key="WaveCircle" Name="U_Character_02.ShadowBlast.ShadowBlast_CircleShape_01_Sacred" Direction="0,0,1" Bone="Bip01" />
+      <Particle Key="Aura" Name="U_Character_02.ShadowBlast.ShadowBlast_CornShape_02_Sacred" Direction="0,-1,0" Bone="Bip01" />
+      <Particle Key="AuraCircle" Name="U_Character_02.ShadowBlast.ShadowBlast_CircleShpae_02_Sacred" Direction="0,0,1" Bone="Bip01" />
+    </ParticleList>
+    <Damage_Conversion>
+      <Entry From="shadow" To="sacred" ConversionRate="100" />
+    </Damage_Conversion>
+    <StatusAilment>
+      <weakness Chance="30" ChanceMode="AddToBase" />
+    </StatusAilment>
+    <WeaponRequirements Requirements="magic,sacred" />
+    <SoundTrigger OnAnimCast="Play_Skill_AetherBlast_Blast_Sacred_Layer" />
+  </Skill>
+  <Skill UID="player_AetherBlast_variant_5,player_AetherBlast_variant_13" ESkill="default_variant_combo">
+    <ParticleList>
+      <Particle Key="Wave" Name="U_Character_02.ShadowBlast.ShadowBlast_CornShape_01_Sacred" Direction="0,0,1" Bone="Bip01" />
+      <Particle Key="WaveCircle" Name="U_Character_02.ShadowBlast.ShadowBlast_CircleShape_01_Sacred" Direction="0,0,1" Bone="Bip01" />
+      <Particle Key="Aura" Name="U_Character_02.ShadowBlast.ShadowBlast_CornShape_02_Sacred" Direction="0,-1,0" Bone="Bip01" />
+      <Particle Key="AuraCircle" Name="U_Character_02.ShadowBlast.ShadowBlast_CircleShpae_02_Sacred" Direction="0,0,1" Bone="Bip01" />
+    </ParticleList>
+  </Skill>
+  <Skill UID="player_AetherBlast_variant_14" ESkill="default_variant">
+    <HUD UIName="@ui_Variant_AetherBlast_variant_14" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_001.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_001.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_001.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_001.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_001.png" ShowParamsInTooltip="Cost,ROSTime,SpecificAetherBlast" />
+    <ResourceCost ManaCost="25" ManaCostPerLevel="0" ROSTransfertDuration="1.0" />
+  </Skill>
+  <Skill UID="player_AetherBlast_variant_15" ESkill="default_variant">
+    <HUD UIName="@ui_Variant_AetherBlast_variant_15" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_001.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_001.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_001.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_001.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_001.png" ShowParamsInTooltip="SpecificAetherBlast,StatusAilmentsChance" />
+    <StatusAilment AllAilmentsInflictDamageIncreasePercent="40" />
+  </Skill>
+  <Skill UID="player_AetherBlast_variant_16" ESkill="default_variant">
+    <HUD UIName="@ui_Variant_AetherBlast_variant_16" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_001.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_001.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_001.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_001.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_001.png" ShowParamsInTooltip="Cooldown,SpecificAetherBlast" />
+    <Cooldown Cooldown="-1" CooldownPerLevel="0" />
+  </Skill>
+</MetaData>
