@@ -7,6 +7,7 @@ import Html.Attributes as A exposing (..)
 import Html.Events as E exposing (..)
 import Maybe.Extra
 import Route exposing (Route)
+import View.Affix
 import View.Desc
 import View.Nav
 
@@ -26,6 +27,8 @@ view dm =
                     , th [] [ text "id" ]
                     , th [] [ text "damage" ]
                     , th [] [ text "keywords" ]
+                    , th [] [ text "implicits" ]
+                    , th [] [ text "affixes" ]
                     , th [] [ text "lore" ]
                     ]
                 ]
@@ -44,6 +47,8 @@ view dm =
                                         |> text
                                     ]
                                 , td [] [ text <| String.join ", " w.keywords ]
+                                , td [] [ ul [] <| View.Affix.viewAffixIds dm w.implicitAffixes ]
+                                , td [] [ ul [] <| View.Affix.viewAffixIds dm w.defaultAffixes ]
                                 , td []
                                     (View.Desc.mdesc dm w.lore |> Maybe.withDefault [ text "???" ])
                                 ]

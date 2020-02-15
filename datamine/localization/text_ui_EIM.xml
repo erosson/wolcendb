@@ -1,0 +1,3039 @@
+<?xml version="1.0"?>
+<?mso-application progid="Excel.Sheet"?>
+<Workbook xmlns="urn:schemas-microsoft-com:office:spreadsheet"
+ xmlns:o="urn:schemas-microsoft-com:office:office"
+ xmlns:x="urn:schemas-microsoft-com:office:excel"
+ xmlns:ss="urn:schemas-microsoft-com:office:spreadsheet"
+ xmlns:html="http://www.w3.org/TR/REC-html40">
+ <DocumentProperties xmlns="urn:schemas-microsoft-com:office:office">
+  <Title>Audio script template</Title>
+  <Author>Maëlenn Lumineau</Author>
+  <LastAuthor>Wolcen_James</LastAuthor>
+  <LastPrinted>2019-12-30T14:20:14Z</LastPrinted>
+  <Created>2002-06-17T19:14:00Z</Created>
+  <LastSaved>2020-02-10T08:46:05Z</LastSaved>
+  <Company>Electronic Arts</Company>
+  <Version>16.00</Version>
+ </DocumentProperties>
+ <OfficeDocumentSettings xmlns="urn:schemas-microsoft-com:office:office">
+  <AllowPNG/>
+ </OfficeDocumentSettings>
+ <ExcelWorkbook xmlns="urn:schemas-microsoft-com:office:excel">
+  <SupBook>
+   <Path>\DOCUME~1\jack\LOCALS~1\Temp\p4v\PC025 perforce 1666\data\Game02\Game\Languages\Copy of Dialog_Asset_List_Final_edit.xls</Path>
+   <SheetName>DropDown</SheetName>
+   <SheetName>Conversations</SheetName>
+   <Xct>
+    <Count>-2</Count>
+    <SheetIndex>0</SheetIndex>
+    <Crn>
+     <Row>6</Row>
+     <ColFirst>0</ColFirst>
+     <ColLast>4</ColLast>
+     <Text>clean</Text>
+     <Text>TV</Text>
+     <Text>radio (disturbed) </Text>
+     <Text>radio (low)</Text>
+     <Text>radio (heavy)</Text>
+    </Crn>
+    <Crn>
+     <Row>9</Row>
+     <ColFirst>0</ColFirst>
+     <ColLast>41</ColLast>
+     <Text>Player</Text>
+     <Text>Barnes</Text>
+     <Text>Hawker</Text>
+     <Text>Sykes</Text>
+     <Text>Johnson</Text>
+     <Text>Cortez</Text>
+     <Text>Beck</Text>
+     <Text>Miller</Text>
+     <Text>Baxter</Text>
+     <Text>American scientist</Text>
+     <Text>Shark</Text>
+     <Text>Chia</Text>
+     <Text>Kirovski</Text>
+     <Text>Michaels</Text>
+     <Text>Chang</Text>
+     <Text>Marine Soldier a</Text>
+     <Text>Marine Soldier b</Text>
+     <Text>Chinese Soldier a</Text>
+     <Text>Chinese Soldier b</Text>
+     <Text>Chinese Soldier c</Text>
+     <Text>Chinese Soldier d</Text>
+     <Text>Chinese Soldier e</Text>
+     <Text>Chinese Soldier f</Text>
+     <Text>Chinese Officer a</Text>
+     <Text>Chinese Officer b</Text>
+     <Text>Chinese Scientist a</Text>
+     <Text>Chinese Scientist b</Text>
+     <Text>Chinese Scientist Female a</Text>
+     <Text>Chinese Scientist Female b</Text>
+     <Text>Filmcrew Member</Text>
+     <Text>Morrison</Text>
+     <Text>C17 Pilot a</Text>
+     <Text>C17 Pilot b</Text>
+     <Text>Submarine Commander Davis</Text>
+     <Text>Pilot (camera)</Text>
+     <Text>Bridge officer 1</Text>
+     <Text>Bridge officer 2</Text>
+     <Text>Carrier deck guide</Text>
+     <Text>Jet Pilot</Text>
+     <Text>VTOL Pilot</Text>
+     <Text>Commander (camera)</Text>
+     <Text>Team Two (camera)</Text>
+    </Crn>
+   </Xct>
+  </SupBook>
+  <WindowHeight>15765</WindowHeight>
+  <WindowWidth>32767</WindowWidth>
+  <WindowTopX>32767</WindowTopX>
+  <WindowTopY>32767</WindowTopY>
+  <TabRatio>274</TabRatio>
+  <RefModeR1C1/>
+  <ProtectStructure>False</ProtectStructure>
+  <ProtectWindows>False</ProtectWindows>
+ </ExcelWorkbook>
+ <Styles>
+  <Style ss:ID="Default" ss:Name="Normal">
+   <Alignment ss:Vertical="Bottom"/>
+   <Borders/>
+   <Font ss:FontName="Arial" x:Family="Swiss"/>
+   <Interior/>
+   <NumberFormat/>
+   <Protection/>
+  </Style>
+  <Style ss:ID="s40" ss:Name="40&#160;% - Accent1">
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="11" ss:Color="#000000"/>
+   <Interior ss:Color="#BDD7EE" ss:Pattern="Solid"/>
+  </Style>
+  <Style ss:ID="s28" ss:Name="Neutre">
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="11" ss:Color="#993300"/>
+   <Interior ss:Color="#FFEB9C" ss:Pattern="Solid"/>
+  </Style>
+  <Style ss:ID="s26" ss:Name="Satisfaisant">
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="11" ss:Color="#008000"/>
+   <Interior ss:Color="#C6EFCE" ss:Pattern="Solid"/>
+  </Style>
+  <Style ss:ID="s62">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Top" ss:WrapText="1"/>
+  </Style>
+  <Style ss:ID="s63">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Top" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Courier New" x:Family="Modern" ss:Color="#FFFFFF" ss:Bold="1"/>
+   <Interior ss:Color="#FFCC00" ss:Pattern="Solid"/>
+  </Style>
+  <Style ss:ID="s64">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Top" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Courier New" x:Family="Modern" ss:Color="#FFFFFF" ss:Bold="1"/>
+   <Interior ss:Color="#FF0000" ss:Pattern="Solid"/>
+  </Style>
+  <Style ss:ID="s66" ss:Parent="s40">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Bottom" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="2"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="2"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="2"/>
+   </Borders>
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="11" ss:Color="#000000"
+    ss:Bold="1"/>
+  </Style>
+  <Style ss:ID="s76">
+   <Alignment ss:Vertical="Bottom" ss:WrapText="1"/>
+  </Style>
+  <Style ss:ID="s78" ss:Parent="s28">
+   <Alignment ss:Vertical="Bottom" ss:WrapText="1"/>
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="11" ss:Color="#008000"/>
+   <Interior ss:Color="#C6EFCE" ss:Pattern="Solid"/>
+  </Style>
+  <Style ss:ID="s79">
+   <Alignment ss:Vertical="Bottom" ss:WrapText="1"/>
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="11" ss:Color="#008000"/>
+   <Interior ss:Color="#C6EFCE" ss:Pattern="Solid"/>
+  </Style>
+  <Style ss:ID="s80" ss:Parent="s28">
+   <Alignment ss:Vertical="Bottom"/>
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="11" ss:Color="#008000"/>
+   <Interior ss:Color="#C6EFCE" ss:Pattern="Solid"/>
+  </Style>
+  <Style ss:ID="s81" ss:Parent="s28">
+   <Alignment ss:Horizontal="Left" ss:Vertical="Bottom" ss:WrapText="1"/>
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="11" ss:Color="#008000"/>
+   <Interior ss:Color="#C6EFCE" ss:Pattern="Solid"/>
+   <NumberFormat ss:Format="0%"/>
+  </Style>
+  <Style ss:ID="s82" ss:Parent="s28">
+   <Alignment ss:Vertical="Bottom" ss:WrapText="1"/>
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="11" ss:Color="#008000"/>
+   <Interior ss:Color="#C6EFCE" ss:Pattern="Solid"/>
+   <NumberFormat ss:Format="0%"/>
+  </Style>
+  <Style ss:ID="s83">
+   <Font ss:FontName="Arial" x:Family="Swiss" ss:Color="#333333"/>
+  </Style>
+  <Style ss:ID="s85">
+   <Alignment ss:Vertical="Bottom"/>
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="11" ss:Color="#008000"/>
+   <Interior ss:Color="#C6EFCE" ss:Pattern="Solid"/>
+  </Style>
+  <Style ss:ID="s88" ss:Parent="s28">
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="11" ss:Color="#008000"/>
+   <Interior ss:Color="#C6EFCE" ss:Pattern="Solid"/>
+  </Style>
+  <Style ss:ID="s89" ss:Parent="s26">
+   <Alignment ss:Vertical="Bottom" ss:WrapText="1"/>
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="11" ss:Color="#008000"/>
+   <Interior ss:Color="#C6EFCE" ss:Pattern="Solid"/>
+  </Style>
+  <Style ss:ID="s90" ss:Parent="s40">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Bottom" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="2"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="2"/>
+   </Borders>
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="11" ss:Color="#008000"
+    ss:Bold="1"/>
+   <Interior ss:Color="#C6EFCE" ss:Pattern="Solid"/>
+  </Style>
+  <Style ss:ID="s91">
+   <Alignment ss:Vertical="Bottom" ss:WrapText="1"/>
+   <Borders/>
+   <Interior/>
+  </Style>
+  <Style ss:ID="s93">
+   <Alignment ss:Vertical="Bottom" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"
+     ss:Color="#E7E6E6"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"
+     ss:Color="#E7E6E6"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"
+     ss:Color="#E7E6E6"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"
+     ss:Color="#E7E6E6"/>
+   </Borders>
+   <Font ss:FontName="Arial" x:Family="Swiss" ss:Color="#000000"/>
+   <Interior ss:Color="#FFFFFF" ss:Pattern="Solid"/>
+  </Style>
+  <Style ss:ID="s95">
+   <Alignment ss:Vertical="Bottom" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"
+     ss:Color="#E7E6E6"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"
+     ss:Color="#E7E6E6"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"
+     ss:Color="#E7E6E6"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"
+     ss:Color="#E7E6E6"/>
+   </Borders>
+   <Interior ss:Color="#FFFFFF" ss:Pattern="Solid"/>
+  </Style>
+  <Style ss:ID="s96">
+   <Font ss:FontName="Arial" x:Family="Swiss" ss:Color="#000000"/>
+  </Style>
+  <Style ss:ID="s97">
+   <Alignment ss:Vertical="Bottom" ss:WrapText="1"/>
+   <Borders/>
+   <Interior ss:Color="#FFFFFF" ss:Pattern="Solid"/>
+  </Style>
+  <Style ss:ID="s98">
+   <Alignment ss:Vertical="Center"/>
+   <Font ss:FontName="Arial" x:Family="Swiss" ss:Color="#000000"/>
+  </Style>
+  <Style ss:ID="s99" ss:Parent="s28">
+   <Alignment ss:Vertical="Bottom" ss:WrapText="1"/>
+  </Style>
+ </Styles>
+ <Names>
+  <NamedRange ss:Name="characters"
+   ss:RefersTo="='\DOCUME~1\jack\LOCALS~1\Temp\p4v\PC025 perforce 1666\data\Game02\Game\Languages\[Copy of Dialog_Asset_List_Final_edit.xls]DropDown'!R10C1:R10C42"/>
+  <NamedRange ss:Name="type"
+   ss:RefersTo="='\DOCUME~1\jack\LOCALS~1\Temp\p4v\PC025 perforce 1666\data\Game02\Game\Languages\[Copy of Dialog_Asset_List_Final_edit.xls]DropDown'!R7C1:R7C5"/>
+ </Names>
+ <Worksheet ss:Name="Sheet1">
+  <Names>
+   <NamedRange ss:Name="Print_Area" ss:RefersTo="=Sheet1!R1C2:R1C2"/>
+  </Names>
+  <Table ss:ExpandedColumnCount="3" ss:ExpandedRowCount="1538" x:FullColumns="1"
+   x:FullRows="1" ss:DefaultColumnWidth="60">
+   <Column ss:AutoFitWidth="0" ss:Width="356.25"/>
+   <Column ss:AutoFitWidth="0" ss:Width="413.25"/>
+   <Column ss:AutoFitWidth="0" ss:Width="160.5"/>
+   <Row ss:AutoFitHeight="0" ss:Height="14.25" ss:StyleID="s62">
+    <Cell ss:StyleID="s63"><Data ss:Type="String">KEY</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">ORIGINAL TEXT</Data><NamedCell
+      ss:Name="Print_Area"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="14.25" ss:StyleID="s62">
+    <Cell ss:MergeAcross="1" ss:StyleID="s66"><Data ss:Type="String">Units EIM</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="14.25" ss:StyleID="s62">
+    <Cell ss:StyleID="Default"><Data ss:Type="String">ui_UnitSymbols_Seconds</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">s</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="14.25" ss:StyleID="s62">
+    <Cell ss:StyleID="Default"><Data ss:Type="String">ui_UnitSymbols_Meter</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">m</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="14.25" ss:StyleID="s62">
+    <Cell ss:MergeAcross="1" ss:StyleID="s66"><Data ss:Type="String">AST INTERFACE</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="s76"><Data ss:Type="String">ui_eim_ailment_stacks_multiplier_chance</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="String">%1 Chance to multiply the number of Ailment Stacks</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="14.25" ss:StyleID="s62">
+    <Cell ss:StyleID="Default"><Data ss:Type="String">ui_eim_additional_ailment_stacks</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">%1 Ailment Stack(s) inflicted</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="14.25" ss:StyleID="s62">
+    <Cell ss:StyleID="Default"><Data ss:Type="String">ui_eim_additional_ailment_rolls</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">Can now apply %1 Additional Ailment(s)</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="s76"><Data ss:Type="String">ui_eim_additional_projectile</Data></Cell>
+    <Cell ss:StyleID="s79"><Data ss:Type="String">%1 Projectile(s) to all Projectile Skills (Attacks and Spells)</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="s76"><Data ss:Type="String">ui_eim_additional_stacks_chance_pts</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="String">%1 Chance to double the number of Ailment Stacks inflicted</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="s76"><Data ss:Type="String">ui_eim_additional_stamina_pts</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="String">%1 Stamina Point</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="s76"><Data ss:Type="String">ui_eim_agility_pts</Data></Cell>
+    <Cell ss:StyleID="s79"><Data ss:Type="String">%1 Agility</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="s76"><Data ss:Type="String">ui_eim_ailment_damage_resistance_percent</Data></Cell>
+    <Cell ss:StyleID="s79"><Data ss:Type="String">%1 Ailment Damage Resistance</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s76"><Data ss:Type="String">ui_eim_ailment_stacks_multiplier</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="String">%1 Chance to multiply the number of Ailment Stacks inflicted by %2</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s76"><Data ss:Type="String">ui_eim_ailment_stacks_multiplier_increase</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="String">%1 Chance to multiply the number of Ailment Stacks inflicted</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="s76"><Data ss:Type="String">ui_eim_anystack_duration_percent</Data></Cell>
+    <Cell ss:StyleID="s79"><Data ss:Type="String">%1 Ailment Stack Duration</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="s76"><Data ss:Type="String">ui_eim_all_attribute_pts</Data></Cell>
+    <Cell ss:StyleID="s79"><Data ss:Type="String">%1 to All Attributes</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="s76"><Data ss:Type="String">ui_eim_all_resistance</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="String">%1 to All Resistances Score</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="s76"><Data ss:Type="String">ui_eim_all_resistance_final_percent</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="String">%1 to All Resistances</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="s76"><Data ss:Type="String">ui_eim_all_resistance_percent</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="String">%1 to All Resistances Score</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="s76"><Data ss:Type="String">ui_eim_all_resistance_score_percent</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="String">%1 to All Resistances Score</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="s76"><Data ss:Type="String">ui_eim_anystack_duration_increase</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="String">%1 Ailment Stack Duration</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="s76"><Data ss:Type="String">ui_eim_attack_damage_bonus_from_last_spell</Data></Cell>
+    <Cell ss:StyleID="s80"><Data ss:Type="String">Attacks gain %1 damage from the last spell cast. The type of damage is the same as the last spell cast</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="s76"><Data ss:Type="String">ui_eim_attackspeed_final_percent</Data></Cell>
+    <Cell ss:StyleID="s79"><Data ss:Type="String">%1 Attack Speed</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="s76"><Data ss:Type="String">ui_eim_attackspeed_score</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="String">%1 Attack Speed Score</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="s76"><Data ss:Type="String">ui_eim_attackspeed_score_percent</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="String">%1 Attack Speed Score</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="s76"><Data ss:Type="String">ui_eim_autodash_cdr_percent</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="String">%1 Dash Cooldown Reduction</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="s76"><Data ss:Type="String">ui_eim_autodash_range_flat</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="String">%1m Dash attack Range</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="s76"><Data ss:Type="String">ui_eim_autopierce_radius</Data></Cell>
+    <Cell ss:StyleID="s81"><Data ss:Type="String">%1m of All Projectiles Pierce Range</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="s76"><Data ss:Type="String">ui_eim_autopierce_radius_detail</Data></Cell>
+    <Cell ss:StyleID="s81"><Data ss:Type="String">All Projectiles pierce every target within a %1m radius</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="s76"><Data ss:Type="String">ui_eim_bleed_on_hit_percent</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="String">%1 Bleed Chance on hit</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15" ss:StyleID="s62">
+    <Cell ss:StyleID="s76"><Data ss:Type="String">ui_eim_bleedchance_on_rend_damage_score_percent</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="String">%1 Bleed Chance Score on Rend Damage</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="s76"><Data ss:Type="String">ui_eim_blockchance_ifcanblock_flat</Data></Cell>
+    <Cell ss:StyleID="s82"><Data ss:Type="String">%1 Block Chance</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="s76"><Data ss:Type="String">ui_eim_blockchance_unconditional_flat</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="String">%1 Added Block Chance and allow any weapon to block</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="s76"><Data ss:Type="String">ui_eim_blockefficiency_percent</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="String">%1 Block Efficiency</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="s76"><Data ss:Type="String">ui_eim_burn_on_hit_percent</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="String">%1 Burn Chance on Hit</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="s76"><Data ss:Type="String">ui_eim_burnchance_on_fire_damage_score_flat</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="String">%1 Burn Chance Score on Fire Damage</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="s76"><Data ss:Type="String">ui_eim_burnchance_on_fire_damage_score_percent</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="String">%1 Burn Chance Score on Fire Damage</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="s83"><Data ss:Type="String">ui_eim_can_cast_arrowsrain</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="String">Allows the Bearer to Cast Wailing Arrows</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="s83"><Data ss:Type="String">ui_eim_can_cast_bladeslinger</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="String">Allows the Bearer to Cast Phantom Blades</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="s83"><Data ss:Type="String">ui_eim_can_cast_bomb</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="String">Allows the Bearer to Cast Havoc Orb</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="s83"><Data ss:Type="String">ui_eim_can_cast_brutalstrike</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="String">Allows the Bearer to Cast Anvil's Woe</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="s83"><Data ss:Type="String">ui_eim_can_cast_bullseye</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="String">Allows the Bearer to Cast Gunslinger's Brand</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="s83"><Data ss:Type="String">ui_eim_can_cast_chainlightning</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="String">Allows the Bearer to Cast Thunderstrike</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="s83"><Data ss:Type="String">ui_eim_can_cast_charge</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="String">Allows the Bearer to Cast Warpath</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="s83"><Data ss:Type="String">ui_eim_can_cast_deathmark</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="String">Allows the Bearer to Cast Mark of Impurity</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="s83"><Data ss:Type="String">ui_eim_can_cast_dualstrike</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="String">Allows the Bearer to Cast Slayer's Flurry</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="s83"><Data ss:Type="String">ui_eim_can_cast_fireball</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="String">Allows the Bearer to Cast Consuming Embers</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="s83"><Data ss:Type="String">ui_eim_can_cast_frostcomet</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="String">Allows the Bearer to Cast Tear of Etheliel</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="s83"><Data ss:Type="String">ui_eim_can_cast_frostlance</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="String">Allows the Bearer to Cast Arctic Spear</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="s83"><Data ss:Type="String">ui_eim_can_cast_frostnova</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="String">Allows the Bearer to Cast Winter's Grasp</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="s83"><Data ss:Type="String">ui_eim_can_cast_hook</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="String">Allows the Bearer to Cast Tracker's Reach</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="s83"><Data ss:Type="String">ui_eim_can_cast_laceration</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="String">Allows the Bearer to Cast Bleeding Edge</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="s83"><Data ss:Type="String">ui_eim_can_cast_laser</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="String">Allows the Bearer to Cast Annihilation</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="s83"><Data ss:Type="String">ui_eim_can_cast_leap</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="String">Allows the Bearer to Cast Wings of Ishmir</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="s83"><Data ss:Type="String">ui_eim_can_cast_reave</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="String">Allows the Bearer to Cast Wrath of Baäpheth</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="s83"><Data ss:Type="String">ui_eim_can_cast_sacredground</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="String">Allows the Bearer to Cast Bulwark of Dawn</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="s83"><Data ss:Type="String">ui_eim_can_cast_spreadshot</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="String">Allows the Bearer to Cast Stings of Krearion</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="s83"><Data ss:Type="String">ui_eim_can_cast_teleport</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="String">Allows the Bearer to Cast Aether Jump</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="s83"><Data ss:Type="String">ui_eim_can_cast_turret</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="String">Allows the Bearer to Cast 'Avenger' Autoturret</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="s83"><Data ss:Type="String">ui_eim_can_cast_warcry</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="String">Allows the Bearer to Cast Sovereign Shout</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="s83"><Data ss:Type="String">ui_eim_can_cast_whirlwind</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="String">Allows the Bearer to Cast Bladestorm</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="s83"><Data ss:Type="String">ui_eim_can_cast_aetherblade</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="String">Allows the Bearer to Cast Infinity Blades</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="s83"><Data ss:Type="String">ui_eim_can_cast_aetherblast</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="String">Allows the Bearer to Cast Eclipse</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="s83"><Data ss:Type="String">ui_eim_can_cast_corpse_explosion</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="String">Allows the Bearer to Cast Plagueburst</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="s83"><Data ss:Type="String">ui_eim_can_cast_hammer</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="String">Allows the Bearer to Cast Flight of Gaavanir</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="s83"><Data ss:Type="String">ui_eim_can_cast_holydive</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="String">Allows the Bearer to Cast Light-bringer</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="s83"><Data ss:Type="String">ui_eim_can_cast_ironguard</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="String">Allows the Bearer to Cast Juggernaut</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="s83"><Data ss:Type="String">ui_eim_can_cast_possession</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="String">Allows the Bearer to Cast Parasite</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="s83"><Data ss:Type="String">ui_eim_can_cast_ringofpain</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="String">Allows the Bearer to Cast Blood for Blood</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="s83"><Data ss:Type="String">ui_eim_can_cast_smokebomb</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="String">Allows the Bearer to Cast Duskshroud</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="s83"><Data ss:Type="String">ui_eim_can_cast_sniper</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="String">Allows the Bearer to Cast “Deathgazer” Railgun</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="s83"><Data ss:Type="String">ui_eim_can_cast_solarfall</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="String">Allows the Bearer to Cast Solarfall</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="s83"><Data ss:Type="String">ui_eim_can_cast_summon_champion</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="String">Allows the Bearer to Cast Livor Mortis</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="s83"><Data ss:Type="String">ui_eim_can_cast_summon_melee</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="String">Allows the Bearer to Cast Feeding Swarm</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="s83"><Data ss:Type="String">ui_eim_can_cast_summon_ranged</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="String">Allows the Bearer to Cast Hunting Swarm</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="s83"><Data ss:Type="String">ui_eim_can_cast_vault</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="String">Allows the Bearer to Cast Evasion</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="s83"><Data ss:Type="String">ui_eim_can_cast_vortex</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="String">Allows the Bearer to Cast Anomaly</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="s83"><Data ss:Type="String">ui_eim_can_not_dodge</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="String">You are unable to Passive Dodge (can still dodge roll)</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="s76"><Data ss:Type="String">ui_eim_canrollthroughennemies</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="String">Active dodge can go through enemies</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="s76"><Data ss:Type="String">ui_eim_cc_immunity</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="String">Crowd Control Immunity</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="s76"><Data ss:Type="String">ui_eim_convert_fire_to_frost</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="String">%1 Fire Damage converted into Frost Damage</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="s76"><Data ss:Type="String">ui_eim_convert_fire_to_lightning</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="String">%1 Fire Damage converted into Lightning Damage</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15" ss:StyleID="s62">
+    <Cell ss:StyleID="s76"><Data ss:Type="String">ui_eim_convert_fire_to_physical</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="String">%1 Fire Damage converted into Physical Damage</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="s76"><Data ss:Type="String">ui_eim_convert_fire_to_rend</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="String">%1 Fire Damage converted into Rend Damage</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="s76"><Data ss:Type="String">ui_eim_convert_fire_to_sacred</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="String">%1 Fire Damage converted into Sacred Damage</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="s76"><Data ss:Type="String">ui_eim_convert_fire_to_shadow</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="String">%1 Fire Damage converted into Shadow Damage</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="s76"><Data ss:Type="String">ui_eim_convert_fire_to_toxic</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="String">%1 Fire Damage converted into Toxic Damage</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="s76"><Data ss:Type="String">ui_eim_convert_fire_to_umbra</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="String">%1 Fire Damage converted into Aether Damage</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="s76"><Data ss:Type="String">ui_eim_convert_frost_to_fire</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="String">%1 Frost Damage converted into Fire Damage</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="s76"><Data ss:Type="String">ui_eim_convert_frost_to_lightning</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="String">%1 Frost Damage converted into Lightning Damage</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="s76"><Data ss:Type="String">ui_eim_convert_frost_to_physical</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="String">%1 Frost Damage converted into Physical Damage</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="s76"><Data ss:Type="String">ui_eim_convert_frost_to_rend</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="String">%1 Frost Damage converted into Rend Damage</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="s76"><Data ss:Type="String">ui_eim_convert_frost_to_sacred</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="String">%1 Frost Damage converted into Sacred Damage</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="s76"><Data ss:Type="String">ui_eim_convert_frost_to_shadow</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="String">%1 Frost Damage converted into Shadow Damage</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="s76"><Data ss:Type="String">ui_eim_convert_frost_to_toxic</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="String">%1 Frost Damage converted into Toxic Damage</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="s76"><Data ss:Type="String">ui_eim_convert_frost_to_umbra</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="String">%1 Frost Damage converted into Aether Damage</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="s76"><Data ss:Type="String">ui_eim_convert_lightning_to_fire</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="String">%1 Lightning Damage converted into Fire Damage</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="s76"><Data ss:Type="String">ui_eim_convert_lightning_to_frost</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="String">%1 Lightning Damage converted into Frost Damage</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="s76"><Data ss:Type="String">ui_eim_convert_lightning_to_physical</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="String">%1 Lightning Damage converted into Physical Damage</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="s76"><Data ss:Type="String">ui_eim_convert_lightning_to_rebd</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="String">%1 Lightning Damage converted into Rend Damage</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="s76"><Data ss:Type="String">ui_eim_convert_lightning_to_sacred</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="String">%1 Lightning Damage converted into Sacred Damage</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="s76"><Data ss:Type="String">ui_eim_convert_lightning_to_shadow</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="String">%1 Lightning Damage converted into Shadow Damage</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="s76"><Data ss:Type="String">ui_eim_convert_lightning_to_toxic</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="String">%1 Lightning Damage converted into Toxic Damage</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="s76"><Data ss:Type="String">ui_eim_convert_lightning_to_umbra</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="String">%1 Lightning Damage converted into Aether Damage</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="s76"><Data ss:Type="String">ui_eim_convert_physcial_to_frost</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="String">%1 Physical Damage converted into Frost Damage</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="s76"><Data ss:Type="String">ui_eim_convert_physical_to_fire</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="String">%1 Physical Damage converted into Fire Damage</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="s76"><Data ss:Type="String">ui_eim_convert_physical_to_lightning</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="String">%1 Physical Damage converted into Lightning Damage</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="s76"><Data ss:Type="String">ui_eim_convert_physical_to_rend</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="String">%1 Physical Damage converted into Rend Damage</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="s76"><Data ss:Type="String">ui_eim_convert_physical_to_sacred</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="String">%1 Physical Damage converted into Sacred Damage</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="s76"><Data ss:Type="String">ui_eim_convert_physical_to_shadow</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="String">%1 Physical Damage converted into Shadow Damage</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="s76"><Data ss:Type="String">ui_eim_convert_physical_to_toxic</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="String">%1 Physical Damage converted into Toxic Damage</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="s76"><Data ss:Type="String">ui_eim_convert_physical_to_umbra</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="String">%1 Physical Damage converted into Aether Damage</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="s76"><Data ss:Type="String">ui_eim_convert_rend_to_fire</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="String">%1 Rend Damage converted into Fire Damage</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="s76"><Data ss:Type="String">ui_eim_convert_rend_to_frost</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="String">%1 Rend Damage converted into Frost Damage</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="s76"><Data ss:Type="String">ui_eim_convert_rend_to_lightning</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="String">%1 Rend Damage converted into Lightning Damage</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="s76"><Data ss:Type="String">ui_eim_convert_rend_to_physical</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="String">%1 Rend Damage converted into Physical Damage</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="s76"><Data ss:Type="String">ui_eim_convert_rend_to_sacred</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="String">%1 Rend Damage converted into Sacred Damage</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="s76"><Data ss:Type="String">ui_eim_convert_rend_to_shadow</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="String">%1 Rend Damage converted into Shadow Damage</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="s76"><Data ss:Type="String">ui_eim_convert_rend_to_toxic</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="String">%1 Rend Damage converted into Toxic Damage</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="s76"><Data ss:Type="String">ui_eim_convert_rend_to_umbra</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="String">%1 Rend Damage converted into Aether Damage</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="s76"><Data ss:Type="String">ui_eim_convert_sacred_to_fire</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="String">%1 Sacred Damage converted into Fire Damage</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="s76"><Data ss:Type="String">ui_eim_convert_sacred_to_frost</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="String">%1 Sacred Damage converted into Frost Damage</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="s76"><Data ss:Type="String">ui_eim_convert_sacred_to_lightning</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="String">%1 Sacred Damage converted into Lightning Damage</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="s76"><Data ss:Type="String">ui_eim_convert_sacred_to_physical</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="String">%1 Sacred Damage converted into Physical Damage</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="s76"><Data ss:Type="String">ui_eim_convert_sacred_to_rend</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="String">%1 Sacred Damage converted into Rend Damage</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="s76"><Data ss:Type="String">ui_eim_convert_sacred_to_shadow</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="String">%1 Sacred Damage converted into Shadow Damage</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="s76"><Data ss:Type="String">ui_eim_convert_sacred_to_toxic</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="String">%1 Sacred Damage converted into Toxic Damage</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="s76"><Data ss:Type="String">ui_eim_convert_sacred_to_umbra</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="String">%1 Sacred Damage converted into Aether Damage</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="s76"><Data ss:Type="String">ui_eim_convert_shadow_to_fire</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="String">%1 Shadow Damage converted into Fire Damage</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="s76"><Data ss:Type="String">ui_eim_convert_shadow_to_frost</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="String">%1 Shadow Damage converted into Frost Damage</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="s76"><Data ss:Type="String">ui_eim_convert_shadow_to_lightning</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="String">%1 Shadow Damage converted into Lightning Damage</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="s76"><Data ss:Type="String">ui_eim_convert_shadow_to_physical</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="String">%1 Shadow Damage converted into Physical Damage</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="s76"><Data ss:Type="String">ui_eim_convert_shadow_to_rend</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="String">%1 Shadow Damage converted into Rend Damage</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="s76"><Data ss:Type="String">ui_eim_convert_shadow_to_sacred</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="String">%1 Shadow Damage converted into Sacred Damage</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="s76"><Data ss:Type="String">ui_eim_convert_shadow_to_toxic</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="String">%1 Shadow Damage converted into Toxic Damage</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="s76"><Data ss:Type="String">ui_eim_convert_shadow_to_umbra</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="String">%1 Shadow Damage converted into Aether Damage</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="s76"><Data ss:Type="String">ui_eim_convert_toxic_to_fire</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="String">%1 Toxic Damage converted into Fire Damage</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="s76"><Data ss:Type="String">ui_eim_convert_toxic_to_frost</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="String">%1 Toxic Damage converted into Frost Damage</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="s76"><Data ss:Type="String">ui_eim_convert_toxic_to_lightning</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="String">%1 Toxic Damage converted into Lightning Damage</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="s76"><Data ss:Type="String">ui_eim_convert_toxic_to_physical</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="String">%1 Toxic Damage converted into Physical Damage</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="s76"><Data ss:Type="String">ui_eim_convert_toxic_to_rend</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="String">%1 Toxic Damage converted into Rend Damage</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="s76"><Data ss:Type="String">ui_eim_convert_toxic_to_sacred</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="String">%1 Toxic Damage converted into Sacred Damage</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="s76"><Data ss:Type="String">ui_eim_convert_toxic_to_shadow</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="String">%1 Toxic Damage converted into Shadow Damage</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="s76"><Data ss:Type="String">ui_eim_convert_toxic_to_umbra</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="String">%1 Toxic Damage converted into Aether Damage</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="20.0625">
+    <Cell ss:StyleID="s76"><Data ss:Type="String">ui_eim_convert_umbra_to_fire</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="String">%1 Aether Damage converted into Fire Damage</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="20.0625">
+    <Cell ss:StyleID="s76"><Data ss:Type="String">ui_eim_convert_umbra_to_frost</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="String">%1 Aether Damage converted into Frost Damage</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="20.0625">
+    <Cell ss:StyleID="s76"><Data ss:Type="String">ui_eim_convert_umbra_to_lightning</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="String">%1 Aether Damage converted into Lightning Damage</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="20.0625">
+    <Cell ss:StyleID="s76"><Data ss:Type="String">ui_eim_convert_umbra_to_physical</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="String">%1 Aether Damage converted into Physical Damage</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="20.0625">
+    <Cell ss:StyleID="s76"><Data ss:Type="String">ui_eim_convert_umbra_to_poison</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="String">%1 Aether Damage converted into Poison Damage</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="20.0625">
+    <Cell ss:StyleID="s76"><Data ss:Type="String">ui_eim_convert_umbra_to_rend</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="String">%1 Aether Damage converted into Rend Damage</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="20.0625">
+    <Cell ss:StyleID="s76"><Data ss:Type="String">ui_eim_convert_umbra_to_sacred</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="String">%1 Aether Damage converted into Sacred Damage</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="20.0625">
+    <Cell ss:StyleID="s76"><Data ss:Type="String">ui_eim_convert_umbra_to_shadow</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="String">%1 Aether Damage converted into Shadow Damage</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="20.0625">
+    <Cell ss:StyleID="s76"><Data ss:Type="String">ui_eim_critchance_doubled_on_dash</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="String">The Critical Hit Chance of the Dash Attack is doubled</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="20.0625">
+    <Cell ss:StyleID="s76"><Data ss:Type="String">ui_eim_critical_damage_resistance_percent</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="String">%1 Critical Damage Resistance</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="20.0625">
+    <Cell ss:StyleID="s76"><Data ss:Type="String">ui_eim_criticalchance_attackskill_score_percent</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="String">%1 Attacks Critical Hit Chance Score</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="20.0625">
+    <Cell ss:StyleID="s76"><Data ss:Type="String">ui_eim_criticalchance_attackskill_final_percent</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="String">%1 Attacks Critical Hit Chance</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="20.0625">
+    <Cell ss:StyleID="s76"><Data ss:Type="String">ui_eim_criticalchance_attackskill_score</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="String">%1 Attacks Critical Hit Chance Score</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="20.0625">
+    <Cell ss:StyleID="s76"><Data ss:Type="String">ui_eim_criticalchance_final_percent</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="String">%1 Critical Hit Chance</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="20.0625">
+    <Cell ss:StyleID="s76"><Data ss:Type="String">ui_eim_criticalchance_magicspell_final_percent</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="String">%1 Spells Critical Hit Chance</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="20.0625">
+    <Cell ss:StyleID="s76"><Data ss:Type="String">ui_eim_criticalchance_magicspell_score</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="String">%1 Spells Critical Hit Chance Score</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="20.0625">
+    <Cell ss:StyleID="s76"><Data ss:Type="String">ui_eim_criticalchance_magicspell_score_percent</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="String">%1 Spells Critical Hit Chance Score</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="20.0625">
+    <Cell ss:StyleID="s76"><Data ss:Type="String">ui_eim_criticalchance_on_ailment_final_percent</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="String">%1 Status Ailment Critical Hit Chance </Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="20.0625">
+    <Cell ss:StyleID="s76"><Data ss:Type="String">ui_eim_criticalchance_on_ailment_score</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="String">%1 Status Ailment Critical Hit Chance Score</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="20.0625">
+    <Cell ss:StyleID="s76"><Data ss:Type="String">ui_eim_criticalchance_on_ailment_score_percent</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="String">%1 Status Ailment Critical Hit Chance Score</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="20.0625">
+    <Cell ss:StyleID="s76"><Data ss:Type="String">ui_eim_criticalchance_projectiles_final_percent</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="String">%1 All Projectiles Critical Hit Chance</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="20.0625">
+    <Cell ss:StyleID="s76"><Data ss:Type="String">ui_eim_criticalchance_projectiles_score</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="String">%1 All Projectiles Critical Hit Chance Score</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="20.0625">
+    <Cell ss:StyleID="s76"><Data ss:Type="String">ui_eim_criticalchance_projectiles_score_percent</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="String">%1 All Projectiles Critical Hit Chance Score</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="20.0625">
+    <Cell ss:StyleID="s76"><Data ss:Type="String">ui_eim_criticalchance_score</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="String">%1 Critical Hit Chance Score</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="20.0625">
+    <Cell ss:StyleID="s76"><Data ss:Type="String">ui_eim_criticalchance_score_percent</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="String">%1 Critical Hit Chance Score</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="20.0625">
+    <Cell ss:StyleID="s76"><Data ss:Type="String">ui_eim_criticaldamage_attackskill_pts</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="String">%1 Attacks Critical Damage</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="20.0625">
+    <Cell ss:StyleID="s76"><Data ss:Type="String">ui_eim_criticaldamage_magicspell_pts</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="String">%1 Spells Critical Damage</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="20.0625">
+    <Cell ss:StyleID="s76"><Data ss:Type="String">ui_eim_criticaldamage_on_ailment_pts</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="String">%1 Critical Damage on Status Ailment</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="20.0625">
+    <Cell ss:StyleID="s76"><Data ss:Type="String">ui_eim_criticaldamage_on_dots</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="String">Damage over time generated with a Critical Hit deals Critical Damage</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="20.0625">
+    <Cell ss:StyleID="s76"><Data ss:Type="String">ui_eim_criticaldamage_projectiles_pts</Data></Cell>
+    <Cell ss:StyleID="s81"><Data ss:Type="String">%1 All Projectiles Critical Damage</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="20.0625">
+    <Cell ss:StyleID="s76"><Data ss:Type="String">ui_eim_criticaldamage_pts</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="String">%1 Critical Hit Damage</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="20.0625">
+    <Cell ss:StyleID="s76"><Data ss:Type="String">ui_eim_criticaldamage_received_percent_increase</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="String">%1 Critical Damage Received</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="20.0625">
+    <Cell ss:StyleID="s76"><Data ss:Type="String">ui_eim_criticalscore_percent_lightning_damage</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="String">%1 Critical Hit Chance on Lightning Damage</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="20.0625">
+    <Cell ss:StyleID="s76"><Data ss:Type="String">ui_eim_criticalscore_percent_spell_when_above_ceil</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="String">%1 Spells Critical Hit Chance Score while willpower is above %2</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="20.0625">
+    <Cell ss:StyleID="s76"><Data ss:Type="String">ui_eim_crowd_control_duration_percent</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="String">%1 Duration of Crowd Control effects received</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="20.0625">
+    <Cell ss:StyleID="s76"><Data ss:Type="String">ui_eim_curse_on_hit_percent</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="String">%1 Cursed Chance on Hit</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="20.0625">
+    <Cell ss:StyleID="s76"><Data ss:Type="String">ui_eim_curesechance_on_shadow_damage_score_percent</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="String">%1 Cursed Chance Score on Shadow Damage</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="s76"><Data ss:Type="String">ui_eim_curse_on_dash</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="String">Dash attack applies Cursed</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s76"><Data ss:Type="String">ui_eim_damage_from_physical_resistance</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="String">%1 Damage per percent of Physical Resistance</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s76"><Data ss:Type="String">ui_eim_damage_percent</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="String">%1 Damage</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s76"><Data ss:Type="String">ui_eim_damage_percent_against_burning</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="String">%1 Additional Damage against Burning target</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s76"><Data ss:Type="String">ui_eim_damage_percent_against_frozen</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="String">%1 Additional Damage against Frozen target</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s76"><Data ss:Type="String">ui_eim_damage_percent_any_weapon</Data></Cell>
+    <Cell ss:StyleID="s79"><Data ss:Type="String">%1 Attack Damage</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s76"><Data ss:Type="String">ui_eim_damage_percent_as_fire</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="String">%1 Damage as Fire Damage</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s76"><Data ss:Type="String">ui_eim_damage_percent_as_frost</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="String">%1 Damage as Frost Damage</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="s76"><Data ss:Type="String">ui_eim_damage_percent_as_lightning</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="String">%1 Damage as Lightning Damage</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="s76"><Data ss:Type="String">ui_eim_damage_percent_as_physical</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="String">%1 Damage as Physical Damage</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="s76"><Data ss:Type="String">ui_eim_damage_percent_as_rend</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="String">%1 Damage as Rend Damage</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s76"><Data ss:Type="String">ui_eim_damage_percent_as_sacred</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="String">%1 Damage as Sacred Damage</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s76"><Data ss:Type="String">ui_eim_damage_percent_as_shadow</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="String">%1 Damage as Shadow Damage</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s76"><Data ss:Type="String">ui_eim_damage_percent_as_toxic</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="String">%1 Damage as Toxic Damage</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s76"><Data ss:Type="String">ui_eim_damage_percent_as_umbra</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="String">%1 Damage as Aether Damage</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s76"><Data ss:Type="String">ui_eim_damage_percent_attack</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="String">%1 Attack Damage</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s76"><Data ss:Type="String">ui_eim_damage_percent_full_stamina</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="String">%1 Damage when at full Stamina</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s76"><Data ss:Type="String">ui_eim_damage_percent_melee_weapon</Data></Cell>
+    <Cell ss:StyleID="s79"><Data ss:Type="String">%1 Melee Weapon Damage</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s76"><Data ss:Type="String">ui_eim_damage_percent_if_only_one_nearby_enemy</Data></Cell>
+    <Cell ss:StyleID="s79"><Data ss:Type="String">%1 Damage when only one enemy is within %2m range</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s76"><Data ss:Type="String">ui_eim_damage_percent_if_only_one_nearby_enemy_damage</Data></Cell>
+    <Cell ss:StyleID="s79"><Data ss:Type="String">%1 Damage when only one enemy is considered Nearby</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s76"><Data ss:Type="String">ui_eim_damage_percent_if_only_one_nearby_enemy_range</Data></Cell>
+    <Cell ss:StyleID="s79"><Data ss:Type="String" x:Ticked="1">%2m Range for Increased Damage to solo Nearby enemies</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s76"><Data ss:Type="String">ui_eim_damage_percent_impaired</Data></Cell>
+    <Cell ss:StyleID="s79"><Data ss:Type="String">%1 Damage to enemies with Impaired Movement</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s76"><Data ss:Type="String">ui_eim_damage_percent_per_enemy_ailment_stack_on_target_kill</Data></Cell>
+    <Cell ss:StyleID="s85"><Data ss:Type="String">Killing an enemy grants %1 Damage for each Ailment Stack on that enemy (up to %2 stacks per Damage type)</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s76"><Data ss:Type="String">ui_eim_damage_percent_per_enemy_in_range</Data></Cell>
+    <Cell ss:StyleID="s85"><Data ss:Type="String">%1 Damage for each Nearby enemy within %3m range</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s76"><Data ss:Type="String">ui_eim_damage_percent_per_enemy_in_range_damage</Data></Cell>
+    <Cell ss:StyleID="s85"><Data ss:Type="String">%1 Damage for each Nearby enemy</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s76"><Data ss:Type="String">ui_eim_damage_percent_per_enemy_in_range_range</Data></Cell>
+    <Cell ss:StyleID="s85"><Data ss:Type="String" x:Ticked="1">%3m Range for enemies to be considered Nearby</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s76"><Data ss:Type="String">ui_eim_damage_percent_per_missing_stamina</Data></Cell>
+    <Cell ss:StyleID="s79"><Data ss:Type="String">%1 Damage per missing Stamina point</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="s76"><Data ss:Type="String">ui_eim_damage_percent_per_rage_point</Data></Cell>
+    <Cell ss:StyleID="s79"><Data ss:Type="String">%1 Damage per 100 unspent Rage points</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="s76"><Data ss:Type="String">ui_eim_damage_percent_projectiles</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="String">%1 All Projectiles Damage</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="s76"><Data ss:Type="String">ui_eim_damage_percent_ranged_weapon</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="String">%1 Ranged Weapon Damage</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s76"><Data ss:Type="String">ui_eim_damage_percent_spell</Data></Cell>
+    <Cell ss:StyleID="s79"><Data ss:Type="String">%1 Spell Damage</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s76"><Data ss:Type="String">ui_eim_damage_percent_twohanded</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="String">%1 Two Handed Weapon Damage</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s76"><Data ss:Type="String">ui_eim_damage_percent_while_nobody_close</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="String">%1 Damage when at least %2m away from all enemies</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s76"><Data ss:Type="String">ui_eim_damage_percent_while_nobody_close_damage</Data></Cell>
+    <Cell ss:StyleID="s82"><Data ss:Type="String">%1 Damage when far away from all enemies</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s76"><Data ss:Type="String">ui_eim_damage_percent_while_nobody_close_range</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="String" x:Ticked="1">%2m Distance required to be far away from all enemies</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s76"><Data ss:Type="String">ui_eim_damage_ranged_weapon</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="String">%1 Ranged Weapon Damage</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s76"><Data ss:Type="String">ui_eim_damage_reduction_on_full_force_shield</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="String">%1 Damage Reduction when Force Shield is full</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s76"><Data ss:Type="String">ui_eim_dash_cooldown_on_kill</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="String">%1 Dash Cooldown Reduction</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s76"><Data ss:Type="String">ui_eim_deathmark_on_hit</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="String">%1 Chance to apply Mark of Impurity on hit</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s76"><Data ss:Type="String">ui_eim_defense_up_on_block</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="String">%1 All Resistances Score for you and your allies after blocking a hit</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s76"><Data ss:Type="String">ui_eim_defense_up_on_globe_pickup</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="String">%1 All Resistances Score for you and your allies after picking up a health globe</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s76"><Data ss:Type="String">ui_eim_dodgechance_on_being_hit</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="String">%1 Dodge Chance Score after taking a hit</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s76"><Data ss:Type="String">ui_eim_dodgechance_score</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="String">%1 Dodge Chance Score</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s76"><Data ss:Type="String">ui_eim_dodgechance_score_percent</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="String">%1 Dodge Chance Score</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s76"><Data ss:Type="String">ui_eim_dodgechance_score_to_allres_score</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="String">%1 of Dodge Chance Score is converted to All Resistances Score</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s76"><Data ss:Type="String">ui_eim_dodgechance_final_percent</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="String">%1 Dodge Chance</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s76"><Data ss:Type="String">ui_eim_dotdamage_percent_bleed</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="String">%1 Bleed Ailment Damage</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s76"><Data ss:Type="String">ui_eim_dotdamage_percent_burn</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="String">%1 Burn Ailment Damage</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s76"><Data ss:Type="String">ui_eim_dotdamage_percent_global</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="String">%1 Ailment Damage</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s76"><Data ss:Type="String">ui_eim_dotdamage_percent_per_wisdom_point</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="String">%1 Ailment Damage per Wisdom Point (up to %2)</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s76"><Data ss:Type="String">ui_eim_dotdamage_percent_poison</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="String">%1 Poison Ailment Damage</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s76"><Data ss:Type="String">ui_eim_dotdamage_percent_received_increase</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="String">%1 Ailment Damage Received</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s76"><Data ss:Type="String">ui_eim_dotdamage_percent_shock</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="String">%1 Shock Ailment Damage</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s76"><Data ss:Type="String">ui_eim_dots_to_shield</Data></Cell>
+    <Cell ss:StyleID="s88"><Data ss:Type="String">Damage Over Time is dealt to your Force Shield before your Health</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s76"><Data ss:Type="String">ui_eim_elemental_cycling_percent</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="String">%1 Elemental Damage on the next Elemental Spell you cast if the preceding Elemental Spell cast had a different base Element</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s76"><Data ss:Type="String">ui_eim_elemental_damage_percent</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="String">%1 Elemental Damage </Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s76"><Data ss:Type="String">ui_eim_elemental_resistance</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="String">%1 Elemental Resistance Score</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s76"><Data ss:Type="String">ui_eim_elemental_resistance_final_percent</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="String">%1 Elemental Resistance</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s76"><Data ss:Type="String">ui_eim_elemental_resistance_percent</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="String">%1 Elemental Resistance Score</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s76"><Data ss:Type="String">ui_eim_elemental_resistance_score_percent</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="String">%1 Elemental Resistance Score</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s76"><Data ss:Type="String">ui_eim_elemental_protection</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="String">%1 Elemental Protection</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s76"><Data ss:Type="String">ui_eim_elemental_stacks_to_shock</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="String">Freeze and Burn Chance become Shock Chance</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s76"><Data ss:Type="String">ui_eim_ferocity_pts</Data></Cell>
+    <Cell ss:StyleID="s79"><Data ss:Type="String">%1 Ferocity</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s76"><Data ss:Type="String">ui_eim_fire_damage_percent</Data></Cell>
+    <Cell ss:StyleID="s79"><Data ss:Type="String">%1 Fire Damage</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s76"><Data ss:Type="String">ui_eim_fire_damage_percent_spell</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="String">%1 Fire Damage added to Spells</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s76"><Data ss:Type="String">ui_eim_fire_damage_percent_weapon</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="String">%1 Fire Damage added to Attacks</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s76"><Data ss:Type="String">ui_eim_fire_damage_spell</Data></Cell>
+    <Cell ss:StyleID="s79"><Data ss:Type="String">%1-%2 Fire Damage added to Spells</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s76"><Data ss:Type="String">ui_eim_fire_damage_weapon</Data></Cell>
+    <Cell ss:StyleID="s79"><Data ss:Type="String">%1-%2 Fire Damage added to Attacks</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s76"><Data ss:Type="String">ui_eim_fire_protection</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="String">%1 Fire Protection</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s76"><Data ss:Type="String">ui_eim_fire_resistance</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="String">%1 Fire Resistance Score</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s76"><Data ss:Type="String">ui_eim_fire_resistance_final_percent</Data></Cell>
+    <Cell ss:StyleID="s89"><Data ss:Type="String">%1 Fire Resistance</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s76"><Data ss:Type="String">ui_eim_fire_resistance_percent</Data></Cell>
+    <Cell ss:StyleID="s89"><Data ss:Type="String">%1 Fire Resistance Score</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s76"><Data ss:Type="String">ui_eim_fire_resistance_score_percent</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="String">%1 Fire Resistance Score</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s76"><Data ss:Type="String">ui_eim_forceshield_lock_timer_percent</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="String">%1 Force Shield Regeneration Delay Reduction</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s76"><Data ss:Type="String">ui_eim_forceshield_percent</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="String">%1 Force Shield</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s76"><Data ss:Type="String">ui_eim_forceshield_pts</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="String">%1 Force Shield</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s76"><Data ss:Type="String">ui_eim_forceshield_regeneration_flat</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="String">%1 Force Shield Regeneration Rate</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s76"><Data ss:Type="String">ui_eim_forceshield_regeneration_percent</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="String">%1 Force Shield Regeneration Rate</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s76"><Data ss:Type="String">ui_eim_forceshield_to_life</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="String">Convert Force Shield into Health</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s76"><Data ss:Type="String">ui_eim_freeze_on_hit_percent</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="String">%1 Freeze Chance on Hit</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s76"><Data ss:Type="String">ui_eim_freeze_received_duration_percent_bonus</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="String">When you are Frozen, it lasts %1 longer</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s76"><Data ss:Type="String">ui_eim_freezechance_on_frost_damage_score_flat</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="String">%1 Freeze Chance Score on Frost Damage</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s76"><Data ss:Type="String">ui_eim_freezechance_on_frost_damage_score_percent</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="String">%1 Freeze Chance Score on Frost Damage</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s76"><Data ss:Type="String">ui_eim_frost_damage_percent</Data></Cell>
+    <Cell ss:StyleID="s79"><Data ss:Type="String">%1 Frost Damage</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s76"><Data ss:Type="String">ui_eim_frost_damage_percent_spell</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="String">%1 Frost Damage added to Spells</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s76"><Data ss:Type="String">ui_eim_frost_damage_percent_weapon</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="String">%1 Frost Damage added to Attacks</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s76"><Data ss:Type="String">ui_eim_frost_damage_spell</Data></Cell>
+    <Cell ss:StyleID="s79"><Data ss:Type="String">%1-%2 Frost Damage added to Spells</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s76"><Data ss:Type="String">ui_eim_frost_damage_weapon</Data></Cell>
+    <Cell ss:StyleID="s79"><Data ss:Type="String">%1-%2 Frost Damage added to Attacks</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s76"><Data ss:Type="String">ui_eim_frost_protection</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="String">%1 Frost Protection</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s76"><Data ss:Type="String">ui_eim_frost_resistance</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="String">%1 Frost Resistance Score</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s76"><Data ss:Type="String">ui_eim_frost_resistance_final_percent</Data></Cell>
+    <Cell ss:StyleID="s89"><Data ss:Type="String">%1 Frost Resistance</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s76"><Data ss:Type="String">ui_eim_frost_resistance_percent</Data></Cell>
+    <Cell ss:StyleID="s89"><Data ss:Type="String">%1 Frost Resistance Score</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s76"><Data ss:Type="String">ui_eim_frost_resistance_score_percent</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="String">%1 Frost Resistance Score</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s76"><Data ss:Type="String">ui_eim_globes_pickup_radius</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="String">%1 Range for picking up Health Globes</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s76"><Data ss:Type="String">ui_eim_healing_from_globes_bonus_percent</Data></Cell>
+    <Cell ss:StyleID="s81"><Data ss:Type="String">%1 Healing from Health Globes</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s76"><Data ss:Type="String">ui_eim_healing_from_spells_percent</Data></Cell>
+    <Cell ss:StyleID="s81"><Data ss:Type="String">%1 Healing from Spells</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s76"><Data ss:Type="String">ui_eim_health_gain_on_spent_rage</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="String">%1 Health gained per Rage point spent</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s76"><Data ss:Type="String">ui_eim_health_percent</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="String">%1 Maximum Health</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s76"><Data ss:Type="String">ui_eim_health_pts</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="String">%1 Maximum Health</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s76"><Data ss:Type="String">ui_eim_health_regen_frequency</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="String">%1 Health Regeneration Rate</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s76"><Data ss:Type="String">ui_eim_health_regen_on_low_health</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="String">When under %2 of Max Health, gain a burst of Health Regeneration</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s76"><Data ss:Type="String">ui_eim_health_regen_percent</Data></Cell>
+    <Cell ss:StyleID="s79"><Data ss:Type="String">%1 Health Regeneration</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s76"><Data ss:Type="String">ui_eim_health_regen_pts</Data></Cell>
+    <Cell ss:StyleID="s79"><Data ss:Type="String">%1 Health Regeneration</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s76"><Data ss:Type="String">ui_eim_health_regen_true_percent</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="String">%1 Health Regeneration</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s76"><Data ss:Type="String">ui_eim_healthglobe_drop_chance_on_hit</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="String">%1 Health Globe Generation</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s76"><Data ss:Type="String">ui_eim_item_quantity_find</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="String">%1 Item Quantity</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s76"><Data ss:Type="String">ui_eim_life_leech_percent_against_burning</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="String">%1 Life Leech on Burning Target</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s76"><Data ss:Type="String">ui_eim_life_leech_percent_against_frozen</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="String">%1 Life Leech on Frozen Target</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s76"><Data ss:Type="String">ui_eim_life_leech_percent_fire</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="String">%1 Life Leech from Fire Damage</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s76"><Data ss:Type="String">ui_eim_life_leech_percent_global</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="String">%1 Global Life Leech</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s76"><Data ss:Type="String">ui_eim_life_leech_percent_lightning</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="String">%1 Life Leech from Lightning Damage</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s76"><Data ss:Type="String">ui_eim_life_leech_percent_against_bleeding</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="String">%1 Life Leech on Bleeding Target</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s76"><Data ss:Type="String">ui_eim_life_leech_percent_physical</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="String">%1 Life Leech from Physical Damage</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s76"><Data ss:Type="String">ui_eim_life_leech_percent_rend</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="String">%1 Life Leech from Rend Damage</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s76"><Data ss:Type="String">ui_eim_life_leech_percent_sacred</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="String">%1 Life Leech from Sacred Damage</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s76"><Data ss:Type="String">ui_eim_life_leech_percent_shadow</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="String">%1 Life Leech from Shadow Damage</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s76"><Data ss:Type="String">ui_eim_life_leech_percent_spell</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="String">%1 Life Leech from Spell Damage</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s76"><Data ss:Type="String">ui_eim_life_leech_percent_toxic</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="String">%1 Life Leech from Toxic Damage</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s76"><Data ss:Type="String">ui_eim_life_leech_percent_umbra</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="String">%1 Life Leech from Aether Damage</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s76"><Data ss:Type="String">ui_eim_life_leech_percent_weapon</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="String">%1 Life Leech from Attack Damage</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s76"><Data ss:Type="String">ui_eim_lifeleech_toshields</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="String">Life Leech affects Force Shield instead of Health</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s76"><Data ss:Type="String">ui_eim_lightning_damage_percent</Data></Cell>
+    <Cell ss:StyleID="s79"><Data ss:Type="String">%1 Lightning Damage</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s76"><Data ss:Type="String">ui_eim_lightning_damage_percent_spell</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="String">%1 Lightning Damage added to Spells</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s76"><Data ss:Type="String">ui_eim_lightning_damage_percent_weapon</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="String">%1 Lightning Damage added to Attacks</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s76"><Data ss:Type="String">ui_eim_lightning_damage_spell</Data></Cell>
+    <Cell ss:StyleID="s79"><Data ss:Type="String">%1-%2 Lightning Damage added to Spells</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s76"><Data ss:Type="String">ui_eim_lightning_damage_weapon</Data></Cell>
+    <Cell ss:StyleID="s79"><Data ss:Type="String">%1-%2 Lightning Damage added to Attacks</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s76"><Data ss:Type="String">ui_eim_lightning_protection</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="String">%1 Lightning Protection</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s76"><Data ss:Type="String">ui_eim_lightning_resistance</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="String">%1 Lightning Resistance Score</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s76"><Data ss:Type="String">ui_eim_lightning_resistance_final_percent</Data></Cell>
+    <Cell ss:StyleID="s79"><Data ss:Type="String">%1 Lightning Resistance</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s76"><Data ss:Type="String">ui_eim_lightning_resistance_percent</Data></Cell>
+    <Cell ss:StyleID="s79"><Data ss:Type="String">%1 Lightning Resistance Score</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s76"><Data ss:Type="String">ui_eim_lightning_resistance_score_percent</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="String">%1 Lightning Resistance Score</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s76"><Data ss:Type="String">ui_eim_lightning_strike_on_critical_hit</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="String">When you deal a Critical Hit with this weapon, there is a %1 chance to unleash a bolt of lightning, dealing damage to yourself and enemies. This ability has a %4 second cooldown.</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s76"><Data ss:Type="String">ui_eim_magic_find</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="String">%1 Magic Find</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s76"><Data ss:Type="String">ui_eim_material_damage_only</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="String">Can only deal Material Damage</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s76"><Data ss:Type="String">ui_eim_material_damage_percent</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="String">%1 Material Damage</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s76"><Data ss:Type="String">ui_eim_material_protection</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="String">%1 Material Protection</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s76"><Data ss:Type="String">ui_eim_material_resistance</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="String">%1 Material Resistance Score</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s76"><Data ss:Type="String">ui_eim_material_resistance_final_percent</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="String">%1 Material Resistance</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s76"><Data ss:Type="String">ui_eim_material_resistance_percent</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="String">%1 Material Resistance Score</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s76"><Data ss:Type="String">ui_eim_material_resistance_score_percent</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="String">%1 Material Resistance Score</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s76"><Data ss:Type="String">ui_eim_max_stacks_capacity</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="String">%1 Max Ailment Stacks</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s76"><Data ss:Type="String">ui_eim_melee_damage_benefits_from_projectiles_bonuses</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="String">Melee damage benefits from %1 of Bonuses to Projectiles</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s76"><Data ss:Type="String">ui_eim_move_speed</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="String">%1 Movespeed</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s76"><Data ss:Type="String">ui_eim_movespeed</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="String">%1 Movespeed</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s76"><Data ss:Type="String">ui_eim_non_dot_damage_percent</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="String">%1 Damage that is not Damage Over Time</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s76"><Data ss:Type="String">ui_eim_occult_damage_percent</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="String">%1 Occult Damage</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s76"><Data ss:Type="String">ui_eim_occult_protection</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="String">%1 Occult Protection</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s76"><Data ss:Type="String">ui_eim_occult_resistance</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="String">%1 Occult Resistance Score</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s76"><Data ss:Type="String">ui_eim_occult_resistance_final_percent</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="String">%1 Occult Resistance</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s76"><Data ss:Type="String">ui_eim_occult_resistance_percent</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="String">%1 Occult Resistance Score</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s76"><Data ss:Type="String">ui_eim_occult_resistance_score_percent</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="String">%1 Occult Resistance Score</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s76"><Data ss:Type="String">ui_eim_offensivespeed_final_percent</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="String">%1 Attack and Casting Speed</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s76"><Data ss:Type="String">ui_eim_offensivespeed_score</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="String">%1 Attack and Casting Speed Score</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s76"><Data ss:Type="String">ui_eim_offensivespeed_score_percent</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="String">%1 Attack and Casting Speed Score</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s76"><Data ss:Type="String">ui_eim_only_weakness</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="String">Only able to apply the Weakness Ailment</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s76"><Data ss:Type="String">ui_eim_physical_damage_percent</Data></Cell>
+    <Cell ss:StyleID="s79"><Data ss:Type="String">%1 Physical Damage</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s76"><Data ss:Type="String">ui_eim_physical_damage_percent_spell</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="String">%1 Physical Damage added to Spells</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s76"><Data ss:Type="String">ui_eim_physical_damage_percent_weapon</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="String">%1 Physical Damage Attacks</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s76"><Data ss:Type="String">ui_eim_physical_damage_spell</Data></Cell>
+    <Cell ss:StyleID="s79"><Data ss:Type="String">%1-%2 Physical Damage added to Spells</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s76"><Data ss:Type="String">ui_eim_physical_damage_weapon</Data></Cell>
+    <Cell ss:StyleID="s79"><Data ss:Type="String">%1-%2 Physical Damage added to Attacks</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s76"><Data ss:Type="String">ui_eim_physical_protection</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="String">%1 Physical Protection</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s76"><Data ss:Type="String">ui_eim_physical_resistance</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="String">%1 Physical Resistance Score</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s76"><Data ss:Type="String">ui_eim_physical_resistance_final_percent</Data></Cell>
+    <Cell ss:StyleID="s89"><Data ss:Type="String">%1 Physical Resistance</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s76"><Data ss:Type="String">ui_eim_physical_resistance_percent</Data></Cell>
+    <Cell ss:StyleID="s89"><Data ss:Type="String">%1 Physical Resistance Score</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s76"><Data ss:Type="String">ui_eim_physical_resistance_score_percent</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="String">%1 Physical Resistance Score</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s76"><Data ss:Type="String">ui_eim_piercing</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="String">%1 Pierce to All Projectiles</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s76"><Data ss:Type="String">ui_eim_pinflicted_freeze_duration_percent</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="String" x:Ticked="1">%1 Duration to Freeze inflicted on Enemies</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s76"><Data ss:Type="String">ui_eim_inflicted_freeze_duration_percent</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="String" x:Ticked="1">%1 Duration to Freeze inflicted on Enemies</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s83"><Data ss:Type="String">ui_eim_poison_on_hit_percent</Data></Cell>
+    <Cell ss:StyleID="s79"><Data ss:Type="String">%1 Poison Chance on Hit</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s76"><Data ss:Type="String">ui_eim_poisonchance_on_toxic_damage_score_percent</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="String">%1 Poison Chance Score on Toxic Damage</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s76"><Data ss:Type="String">ui_eim_poisonstack_duration_increase</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="String">%1 Poison Stack Duration</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s76"><Data ss:Type="String">ui_eim_projectiles_damage_asdistance</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="String">%1 All Projectiles Damage scaling with Distance at %3 m</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s76"><Data ss:Type="String">ui_eim_projectiles_knockback</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="String">%1 Chance to Knockback the Target</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s76"><Data ss:Type="String">ui_eim_projectiles_speed_percent</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="String">%1 All Projectiles Speed</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s76"><Data ss:Type="String">ui_eim_rage_conservation_time</Data></Cell>
+    <Cell ss:StyleID="s79"><Data ss:Type="String">%1 Rage Conservation Time</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s76"><Data ss:Type="String">ui_eim_rage_on_blocked_attack_pts</Data></Cell>
+    <Cell ss:StyleID="s79"><Data ss:Type="String">%1 Rage Generation on Blocking an Attack</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s76"><Data ss:Type="String">ui_eim_rage_on_hit_pts</Data></Cell>
+    <Cell ss:StyleID="s79"><Data ss:Type="String">%1 Rage per hit taken</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s76"><Data ss:Type="String">ui_eim_rage_on_kill_pts</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="String">%1 Rage Generation on Kill</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s76"><Data ss:Type="String">ui_eim_rage_per_strike_percent</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="String">%1 Rage Generation on Hit</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s76"><Data ss:Type="String">ui_eim_rage_per_strike_pts</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="String">%1 Rage Generation on Hit</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s76"><Data ss:Type="String">ui_eim_rage_per_strike_when_empty</Data></Cell>
+    <Cell ss:StyleID="s79"><Data ss:Type="String">%1 Rage Generation on Hit when your Rage is Empty</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s76"><Data ss:Type="String">ui_eim_rage_to_umbra_transfer_percent</Data></Cell>
+    <Cell ss:StyleID="s79"><Data ss:Type="String">%1 Increase in Transfer Rate between Rage and Willpower</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s76"><Data ss:Type="String">ui_eim_rage_to_umbra_transfer_pts</Data></Cell>
+    <Cell ss:StyleID="s79"><Data ss:Type="String">%1-%2 Decrease in Transfer Rate between Rage and Willpower</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s76"><Data ss:Type="String">ui_eim_rageandumbra_cost_percent</Data></Cell>
+    <Cell ss:StyleID="s79"><Data ss:Type="String">%1 Rage and Willpower Cost Reduction</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s76"><Data ss:Type="String">ui_eim_ragecosts_percent</Data></Cell>
+    <Cell ss:StyleID="s79"><Data ss:Type="String">%1 Rage Cost Reduction</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s76"><Data ss:Type="String">ui_eim_refill_stamina_on_low_health</Data></Cell>
+    <Cell ss:StyleID="s79"><Data ss:Type="String">Gain %1 Stamina Point(s) when at %2 of Max Health or lower</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s76"><Data ss:Type="String">ui_eim_rend_damage_percent</Data></Cell>
+    <Cell ss:StyleID="s79"><Data ss:Type="String">%1 Rend Damage</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s76"><Data ss:Type="String">ui_eim_rend_damage_percent_spell</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="String">%1 Rend Damage added to Spells</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s76"><Data ss:Type="String">ui_eim_rend_damage_percent_weapon</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="String">%1 Rend Damage added to Attacks</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s76"><Data ss:Type="String">ui_eim_rend_damage_spell</Data></Cell>
+    <Cell ss:StyleID="s79"><Data ss:Type="String">%1-%2 Rend Damage added to Spells</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s76"><Data ss:Type="String">ui_eim_rend_damage_weapon</Data></Cell>
+    <Cell ss:StyleID="s79"><Data ss:Type="String">%1-%2 Rend Damage added to Attacks</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s76"><Data ss:Type="String">ui_eim_rend_protection</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="String">%1 Rend Protection</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s76"><Data ss:Type="String">ui_eim_rend_resistance</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="String">%1 Rend Resistance Score</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s76"><Data ss:Type="String">ui_eim_rend_resistance_final_percent</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="String">%1 Rend Resistance</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s76"><Data ss:Type="String">ui_eim_rend_resistance_percent</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="String">%1 Rend Resistance Score</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s76"><Data ss:Type="String">ui_eim_rend_resistance_score_percent</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="String">%1 Rend Resistance Score</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s76"><Data ss:Type="String">ui_eim_resource_points</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="String">%1 Max Willpower and Rage</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell><Data ss:Type="String">ui_eim_sacred_damage_percent</Data></Cell>
+    <Cell ss:StyleID="s89"><Data ss:Type="String">%1 Sacred Damage</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s76"><Data ss:Type="String">ui_eim_sacred_damage_percent_spell</Data></Cell>
+    <Cell ss:StyleID="s79"><Data ss:Type="String">%1 Sacred Damage added to Spells</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell><Data ss:Type="String">ui_eim_sacred_damage_percent_weapon</Data></Cell>
+    <Cell ss:StyleID="s79"><Data ss:Type="String">%1 Sacred Damage added to Attacks</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s76"><Data ss:Type="String">ui_eim_sacred_damage_spell</Data></Cell>
+    <Cell ss:StyleID="s79"><Data ss:Type="String">%1-%2 Sacred Damage added to Spells</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s76"><Data ss:Type="String">ui_eim_sacred_damage_weapon</Data></Cell>
+    <Cell ss:StyleID="s79"><Data ss:Type="String">%1-%2 Sacred Damage added to Attacks</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s76"><Data ss:Type="String">ui_eim_sacred_ground_on_cursed_stacks</Data></Cell>
+    <Cell ss:StyleID="s79"><Data ss:Type="String">When an enemy is afflicted with five stacks of Cursed, cast Bulwark of Dawn on their location that provide AOE Healing for you and your allies</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell><Data ss:Type="String">ui_eim_sacred_protection</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="String">%1 Sacred Protection</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s76"><Data ss:Type="String">ui_eim_sacred_resistance_score_percent</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="String">%1 Sacred Resistance Score</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s76"><Data ss:Type="String">ui_eim_sacred_resistance_final_percent</Data></Cell>
+    <Cell ss:StyleID="s79"><Data ss:Type="String">%1 Sacred Resistance</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s76"><Data ss:Type="String">ui_eim_sacred_resistance_percent</Data></Cell>
+    <Cell ss:StyleID="s79"><Data ss:Type="String">%1 Sacred Resistance Score</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s76"><Data ss:Type="String">ui_eim_self_shock</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="String">The Shock Stacks are on the target and user</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s76"><Data ss:Type="String">ui_eim_shadow_damage_percent</Data></Cell>
+    <Cell ss:StyleID="s79"><Data ss:Type="String">%1 Shadow Damage</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s76"><Data ss:Type="String">ui_eim_shadow_damage_percent_spell</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="String">%1 Shadow Damage added to Spells</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s76"><Data ss:Type="String">ui_eim_shadow_damage_percent_weapon</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="String">%1 Shadow Damage added to Attacks</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s76"><Data ss:Type="String">ui_eim_shadow_damage_spell</Data></Cell>
+    <Cell ss:StyleID="s79"><Data ss:Type="String">%1-%2 Shadow Damage added to Spells</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s76"><Data ss:Type="String">ui_eim_shadow_damage_weapon</Data></Cell>
+    <Cell ss:StyleID="s79"><Data ss:Type="String">%1-%2 Shadow Damage added to Attacks</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s76"><Data ss:Type="String">ui_eim_shadow_nova_on_weakness_stacks</Data></Cell>
+    <Cell ss:StyleID="s79"><Data ss:Type="String">When an enemy is afflicted with five stacks of Weakness, unleash a shadow nova that deals AOE Shadow Damage</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell><Data ss:Type="String">ui_eim_shadow_protection</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="String">%1 Shadow Protection</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s76"><Data ss:Type="String">ui_eim_shadow_resistance_score_percent</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="String">%1 Shadow Resistance Score</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s76"><Data ss:Type="String">ui_eim_shadow_resistance_final_percent</Data></Cell>
+    <Cell ss:StyleID="s79"><Data ss:Type="String">%1 Shadow Resistance</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s76"><Data ss:Type="String">ui_eim_shadow_resistance_percent</Data></Cell>
+    <Cell ss:StyleID="s79"><Data ss:Type="String">%1 Shadow Resistance Score</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s76"><Data ss:Type="String">ui_eim_shadow_spells_cost_to_rage</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="String">Shadow-based Spells use Rage instead of Willpower</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s76"><Data ss:Type="String">ui_eim_shield_regeneration_from_health_globes</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="String">%1 Force Shield Recharge from Health Globes</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s76"><Data ss:Type="String">ui_eim_shock_on_hit_percent</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="String">%1 Shock Chance on Hit</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s76"><Data ss:Type="String">ui_eim_shockchance_on_lightning_damage_score_flat</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="String">%1 Shock Chance Score on Lightning Damage</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s76"><Data ss:Type="String">ui_eim_shockchance_on_lightning_damage_score_percent</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="String">%1 Shock Chance Score on Lightning Damage</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s76"><Data ss:Type="String">ui_eim_skill_cooldownreduction_percent</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="String">%1 Cooldown Reduction for all Skills</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s76"><Data ss:Type="String">ui_eim_skillrequirement_keyword_fire</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="String">Allows the Bearer to Cast Fire Spells</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s76"><Data ss:Type="String">ui_eim_skillrequirement_keyword_frost</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="String">Allows the Bearer to Cast Frost Spells</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s76"><Data ss:Type="String">ui_eim_skillrequirement_keyword_lightning</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="String">Allows the Bearer to Cast Lightning Spells</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s76"><Data ss:Type="String">ui_eim_skillrequirement_keyword_physical</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="String">Allows the Bearer to Cast Physical Spells</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s76"><Data ss:Type="String">ui_eim_skillrequirement_keyword_rend</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="String">Allows the Bearer to Cast Rend Spells</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s76"><Data ss:Type="String">ui_eim_skillrequirement_keyword_sacred</Data></Cell>
+    <Cell ss:StyleID="s79"><Data ss:Type="String">Allows the Bearer to Cast Sacred Spells</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s76"><Data ss:Type="String">ui_eim_skillrequirement_keyword_shadow</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="String">Allows the Bearer to Cast Shadow Spells</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s76"><Data ss:Type="String">ui_eim_skillrequirement_keyword_toxic</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="String">Allows the Bearer to Cast Toxic Spells</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s76"><Data ss:Type="String">ui_eim_skillrequirement_keyword_umbra</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="String">Allows the Bearer to Cast Aether Spells</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s76"><Data ss:Type="String">ui_eim_skills_buffs_intensity</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="String">Buffs given by your Skills are %1 more effective</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s76"><Data ss:Type="String">ui_eim_slow_aoe_on_active_dodge</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="String">Whenever you dodge roll, slow all enemies around you. This ability has a cooldown.</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s76"><Data ss:Type="String">ui_eim_spellcastingspeed_final_percent</Data></Cell>
+    <Cell ss:StyleID="s79"><Data ss:Type="String">%1 Spell Casting Speed</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s76"><Data ss:Type="String">ui_eim_spellcastingspeed_score</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="String">%1 Spell Casting Speed Score</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s76"><Data ss:Type="String">ui_eim_spellcastingspeed_score_percent</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="String">%1 Spell Casting Speed Score</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s76"><Data ss:Type="String">ui_eim_stamina_regeneration_percent</Data></Cell>
+    <Cell ss:StyleID="s82"><Data ss:Type="String">%1 Stamina Regeneration Rate Reduction</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s76"><Data ss:Type="String">ui_eim_stasis_on_attack_skill</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="String">%2 Stasis Stacks per Attacks</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s76"><Data ss:Type="String">ui_eim_stasis_on_hit_percent</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="String">%1 Stasis Chance on Hit</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s76"><Data ss:Type="String">ui_eim_stasischance_on_umbra_damage_score_flat</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="String">%1 Stasis Chance Score on Aether Damage</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s76"><Data ss:Type="String">ui_eim_stasischance_on_umbra_damage_score_percent</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="String">%1 Stasis Chance Score on Aether Damage</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s76"><Data ss:Type="String">ui_eim_statusailment_inflict_chance_final_percent</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="String">%1 Status Ailment Chance</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s76"><Data ss:Type="String">ui_eim_statusailment_inflict_score_flat_elemental</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="String">%1 Elemental Status Ailment Chance Score</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s76"><Data ss:Type="String">ui_eim_statusailment_inflict_score_flat_material</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="String">%1 Material Status Ailment Chance Score</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s76"><Data ss:Type="String">ui_eim_statusailment_inflict_score_flat_occult</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="String">%1 Occult Status Ailment Chance Score</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s76"><Data ss:Type="String">ui_eim_statusailment_inflict_score_percent</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="String">%1 Status Ailment Chance Score</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s76"><Data ss:Type="String">ui_eim_statusailment_inflict_chance_score</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="String">%1 Status Ailment Chance Score</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s76"><Data ss:Type="String">ui_eim_statusailment_inflict_score_percent_elemental</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="String">%1 Elemental Status Ailment Chance Score</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s76"><Data ss:Type="String">ui_eim_statusailment_inflict_score_percent_material</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="String">%1 Material Status Ailment Chance Score</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s76"><Data ss:Type="String">ui_eim_statusailment_inflict_score_percent_occult</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="String">%1 Occult Status Ailment Chance Score</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s76"><Data ss:Type="String">ui_eim_statusailment_resist_score</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="String">%1 Status Ailment Resistance Score</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s76"><Data ss:Type="String">ui_eim_statusailment_resist_score_percent</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="String">%1 Status Ailment Resistance Score</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s76"><Data ss:Type="String">ui_eim_stavesattacks_consideredspells</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="String">Basic Attacks with Staves are considered as spells</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s76"><Data ss:Type="String">ui_eim_stun_on_hit_percent</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="String">%1 Stun Chance on Hit</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s76"><Data ss:Type="String">ui_eim_stunchance_on_dash</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="String">Your Dash Attack stuns enemies</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s76"><Data ss:Type="String">ui_eim_stunchance_on_physical_damage_score_flat</Data></Cell>
+    <Cell ss:StyleID="s82"><Data ss:Type="String">%1 Stun Chance Score on Physical Damage</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s76"><Data ss:Type="String">ui_eim_stunchance_on_physical_damage_score_percent</Data></Cell>
+    <Cell ss:StyleID="s82"><Data ss:Type="String">%1 Stun Chance Score on Physical Damage</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s76"><Data ss:Type="String">ui_eim_toughness_pts</Data></Cell>
+    <Cell ss:StyleID="s79"><Data ss:Type="String">%1 Toughness</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s76"><Data ss:Type="String">ui_eim_toxic_damage_percent</Data></Cell>
+    <Cell ss:StyleID="s79"><Data ss:Type="String">%1 Toxic Damage</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s76"><Data ss:Type="String">ui_eim_toxic_damage_percent_spell</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="String">%1 Toxic Damage added to Spells</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s76"><Data ss:Type="String">ui_eim_toxic_damage_percent_weapon</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="String">%1 Toxic Damage added to Attacks</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s76"><Data ss:Type="String">ui_eim_toxic_damage_spell</Data></Cell>
+    <Cell ss:StyleID="s79"><Data ss:Type="String">%1-%2 Toxic Damage added to Spells</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s76"><Data ss:Type="String">ui_eim_toxic_damage_weapon</Data></Cell>
+    <Cell ss:StyleID="s79"><Data ss:Type="String">%1-%2 Toxic Damage added to Attacks</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s76"><Data ss:Type="String">ui_eim_toxic_protection</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="String">%1 Toxic Protection</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s76"><Data ss:Type="String">ui_eim_toxic_resistance_score_percent</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="String">%1 Toxic Resistance Score</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s76"><Data ss:Type="String">ui_eim_toxic_resistance_final_percent</Data></Cell>
+    <Cell ss:StyleID="s79"><Data ss:Type="String">%1 Toxic Resistance</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s76"><Data ss:Type="String">ui_eim_toxic_resistance_percent</Data></Cell>
+    <Cell ss:StyleID="s79"><Data ss:Type="String">%1 Toxic Resistance Score</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s76"><Data ss:Type="String">ui_eim_transfer_time_percent</Data></Cell>
+    <Cell ss:StyleID="s82"><Data ss:Type="String">%1 Transfer Time Reduction between Willpower and Rage</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s76"><Data ss:Type="String">ui_eim_twohanded_blockchance_flat</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="String">%1 Block Chance</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s76"><Data ss:Type="String">ui_eim_umbra_damage_percent</Data></Cell>
+    <Cell ss:StyleID="s79"><Data ss:Type="String">%1 Aether Damage</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s76"><Data ss:Type="String">ui_eim_umbra_damage_percent_spell</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="String">%1 Aether Damage added to Spells</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s76"><Data ss:Type="String">ui_eim_umbra_damage_percent_weapon</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="String">%1 Aether Damage added to Attacks</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s76"><Data ss:Type="String">ui_eim_umbra_damage_spell</Data></Cell>
+    <Cell ss:StyleID="s79"><Data ss:Type="String">%1-%2 Aether Damage added to Spells</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s76"><Data ss:Type="String">ui_eim_umbra_damage_weapon</Data></Cell>
+    <Cell ss:StyleID="s79"><Data ss:Type="String">%1-%2 Aether Damage added to Attacks</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s76"><Data ss:Type="String">ui_eim_umbra_on_hit_pts</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="String">%1 Willpower on Hit</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s76"><Data ss:Type="String">ui_eim_umbra_protection</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="String">%1 Aether Protection</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s76"><Data ss:Type="String">ui_eim_umbra_regen_percent</Data></Cell>
+    <Cell ss:StyleID="s79"><Data ss:Type="String">%1 Willpower Regeneration</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s76"><Data ss:Type="String">ui_eim_umbra_regen_pts</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="String">%1 Willpower Regeneration</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s76"><Data ss:Type="String">ui_eim_umbra_resistance_score_percent</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="String">%1 Aether Resistance Score</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s76"><Data ss:Type="String">ui_eim_umbra_resistance_final_percent</Data></Cell>
+    <Cell ss:StyleID="s79"><Data ss:Type="String">%1 Aether Resistance</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s76"><Data ss:Type="String">ui_eim_umbra_resistance_percent</Data></Cell>
+    <Cell ss:StyleID="s79"><Data ss:Type="String">%1 Aether Resistance Score</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s76"><Data ss:Type="String">ui_eim_umbra_to_rage_transfer_percent</Data></Cell>
+    <Cell ss:StyleID="s79"><Data ss:Type="String">%1 Increase in Transfer Rate between Willpower and Rage</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s76"><Data ss:Type="String">ui_eim_umbra_to_rage_transfer_pts</Data></Cell>
+    <Cell ss:StyleID="s79"><Data ss:Type="String">%1-%2 Decrease in Transfer Rate between Willpower and Rage</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s76"><Data ss:Type="String">ui_eim_umbracost_percent</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="String">%1 Spell Cost Reduction</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s76"><Data ss:Type="String">ui_eim_umbracosts_percent</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="String">%1 Willpower Cost Reduction</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s76"><Data ss:Type="String">ui_eim_umbracost_percent_elemental</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="String">%1 Elemental Spell Cost Reduction</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s76"><Data ss:Type="String">ui_eim_vulnerability</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="String">%1 Damage Taken</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s76"><Data ss:Type="String">ui_eim_weaknes_on_hit_percent</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="String">%1 Weakness Chance on Hit</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s76"><Data ss:Type="String">ui_eim_weakness_aoe_onblock</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="String" x:Ticked="1">%2 Weakness Stack inflicted on Block</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell><Data ss:Type="String">ui_eim_weakness_aoe_onblock_detail</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="String">Apply %2 Weakness Stacks upon Blocking an Attack to the Targets in %1m Radius</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s76"><Data ss:Type="String">ui_eim_weaknesschance_on_sacred_damage_score_flat</Data></Cell>
+    <Cell ss:StyleID="s82"><Data ss:Type="String">%1 Weakness Chance Score on Sacred Damage</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s76"><Data ss:Type="String">ui_eim_weaknesschance_on_sacred_damage_score_percent</Data></Cell>
+    <Cell ss:StyleID="s82"><Data ss:Type="String">%1 Weakness Chance Score on Sacred Damage</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s76"><Data ss:Type="String">ui_eim_force_weakness_roll_on_attack_skills</Data></Cell>
+    <Cell ss:StyleID="s82"><Data ss:Type="String">Your Attacks apply Weakness</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s76"><Data ss:Type="String">ui_eim_willpower_pts</Data></Cell>
+    <Cell ss:StyleID="s79"><Data ss:Type="String">%1 Wisdom</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s76"><Data ss:Type="String">ui_eim_ghost_damage</Data></Cell>
+    <Cell ss:StyleID="s79"><Data ss:Type="String" x:Ticked="1">%1 Chance to Summon Ghost on Hit with Basic Attacks. Ghost deals %2 of your Weapon Damage to the Enemy Hit</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s76"><Data ss:Type="String">ui_eim_aggression_percent</Data></Cell>
+    <Cell ss:StyleID="s79"><Data ss:Type="String" x:Ticked="1">%1 Threat generated</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s66"><Data ss:Type="String">LOCAL ITEM EIMS</Data></Cell>
+    <Cell ss:StyleID="s90"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell><Data ss:Type="String">ui_eim_local_allresistances_score_flat</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="String" x:Ticked="1">%1 All Resistances Score on this item</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell><Data ss:Type="String">ui_eim_local_allresistances_score_percent</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="String" x:Ticked="1">%1 All Resistances Score on this item</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell><Data ss:Type="String">ui_eim_local_blockchance_flat</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="String" x:Ticked="1">%1 Block Chance on this item</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell><Data ss:Type="String">ui_eim_local_blockchance_percent</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="String" x:Ticked="1">%1 Block Chance on this item</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell><Data ss:Type="String">ui_eim_local_blockefficiency_flat</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="String" x:Ticked="1">%1 Block Efficiency on this item</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell><Data ss:Type="String">ui_eim_local_blockefficiency_percent</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="String" x:Ticked="1">%1 Block Efficiency on this item</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s91"><Data ss:Type="String">ui_eim_local_damage_flat_fire</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="String" x:Ticked="1">%1-%2 Fire Damage on Attacks with this weapon</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s91"><Data ss:Type="String">ui_eim_local_damage_flat_frost</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="String" x:Ticked="1">%1-%2 Frost Damage on Attacks with this weapon</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s91"><Data ss:Type="String">ui_eim_local_damage_flat_lightning</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="String" x:Ticked="1">%1-%2 Lightning Damage on Attacks with this weapon</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s91"><Data ss:Type="String">ui_eim_local_damage_flat_physical</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="String" x:Ticked="1">%1-%2 Physical Damage on Attacks with this weapon</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s91"><Data ss:Type="String">ui_eim_local_damage_flat_rend</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="String" x:Ticked="1">%1-%2 Rend Damage on Attacks with this weapon</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s91"><Data ss:Type="String">ui_eim_local_damage_flat_sacred</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="String" x:Ticked="1">%1-%2 Sacred Damage on Attacks with this weapon</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s91"><Data ss:Type="String">ui_eim_local_damage_flat_shadow</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="String" x:Ticked="1">%1-%2 Shadow Damage on Attacks with this weapon</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s91"><Data ss:Type="String">ui_eim_local_damage_flat_toxic</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="String" x:Ticked="1">%1-%2 Toxic Damage on Attacks with this weapon</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s91"><Data ss:Type="String">ui_eim_local_damage_flat_umbra</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="String" x:Ticked="1">%1-%2 Aether Damage on Attacks with this weapon</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell><Data ss:Type="String">ui_eim_local_damage_percent_elemental</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="String" x:Ticked="1">%1 Elemental Damage on Attacks with this weapon</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell><Data ss:Type="String">ui_eim_local_damage_percent_material</Data></Cell>
+    <Cell ss:StyleID="s88"><Data ss:Type="String" x:Ticked="1">%1 Material Damage on Attacks with this weapon</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell><Data ss:Type="String">ui_eim_local_damage_percent_primeval</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="String" x:Ticked="1">%1 Occult Damage on Attacks with this weapon</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s83"><Data ss:Type="String">ui_eim_local_damage_percent_all</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="String" x:Ticked="1">%1 All Damage on Attacks with this weapon</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell><Data ss:Type="String">ui_eim_local_forceshield_flat</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="String" x:Ticked="1">%1 Force Shield on this item</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell><Data ss:Type="String">ui_eim_local_forceshield_percent</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="String" x:Ticked="1">%1 Force Shield on this item</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell><Data ss:Type="String">ui_eim_local_health_flat</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="String" x:Ticked="1">%1 Health on this item</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell><Data ss:Type="String">ui_eim_local_health_percent</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="String" x:Ticked="1">%1 Health on this item</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell><Data ss:Type="String">ui_eim_local_resourcegeneration_flat</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="String" x:Ticked="1">%1 Resource Generation on this item</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell><Data ss:Type="String">ui_eim_local_resourcegeneration_percent</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="String" x:Ticked="1">%1 Resource Generation on this item</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="14.25" ss:StyleID="s62">
+    <Cell ss:MergeAcross="1" ss:StyleID="s66"><Data ss:Type="String">PST</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s93"><Data ss:Type="String">ui_eim_willpower_regeneration_becomes_rage_regeneration</Data></Cell>
+    <Cell ss:StyleID="s80"><Data ss:Type="String" x:Ticked="1">Passively generate Rage instead of Willpower</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell><Data ss:Type="String">ui_eim_minion_health_percent</Data></Cell>
+    <Cell ss:StyleID="s80"><Data ss:Type="String" x:Ticked="1">%1 to Summons Health</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell><Data ss:Type="String">ui_eim_minion_regeneration_percent</Data></Cell>
+    <Cell ss:StyleID="s80"><Data ss:Type="String" x:Ticked="1">%1 to Summons' Health Regeneration</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell><Data ss:Type="String">ui_eim_minion_damage_percent</Data></Cell>
+    <Cell ss:StyleID="s80"><Data ss:Type="String" x:Ticked="1">%1 to Damage dealt by Summons</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell><Data ss:Type="String">ui_eim_minion_offensive_speed_percent</Data></Cell>
+    <Cell ss:StyleID="s80"><Data ss:Type="String" x:Ticked="1">%1 to Summons' Attack Speed Score and Spell Casting Speed Score</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s93"><Data ss:Type="String">ui_eim_increased_rage_costs_double_skill_damage_on_high_rage</Data></Cell>
+    <Cell ss:StyleID="s80"><Data ss:Type="String" x:Ticked="1">Skills have %2 Rage Cost when Rage is over %1, but Skills cast at this increased Cost deal double damage.</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s95"><Data ss:Type="String">ui_eim_burn_stacks_consumption_chance_for_instant_damage</Data></Cell>
+    <Cell ss:StyleID="s80"><Data ss:Type="String" x:Ticked="1">When Hitting an Enemy with an Attack, %1 Chance to consume the Burn Stacks you inflicted when their Burn Stacks exceed %2, increasing Damage of the Hit by %3 per consumed stack</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s95"><Data ss:Type="String">ui_eim_burn_stacks_consumption_propagate_stacks_on_kill</Data></Cell>
+    <Cell ss:StyleID="s80"><Data ss:Type="String" x:Ticked="1">Enemies killed by an attack that consumed Burn Stacks transfers %1 Burn Stacks to Enemies considered Nearby</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s93"><Data ss:Type="String">ui_eim_stack_anger_uses_mechanic</Data></Cell>
+    <Cell ss:StyleID="s80"><Data ss:Type="String" x:Ticked="1">Your Attacks generate &quot;Unleashed Fury&quot; Points up to a maximum of %1. Points reset after %2s out of combat </Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s93"><Data ss:Type="String">ui_eim_stack_anger_attack_speed</Data></Cell>
+    <Cell ss:StyleID="s80"><Data ss:Type="String" x:Ticked="1">%1 Attack Speed Score per &quot;Unleashed Fury&quot; Point</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s93"><Data ss:Type="String">ui_eim_stack_anger_life_leech</Data></Cell>
+    <Cell ss:StyleID="s80"><Data ss:Type="String" x:Ticked="1">%1 Life Leech per &quot;Unleashed Fury&quot; Point</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s93"><Data ss:Type="String">ui_eim_stack_anger_all_resistances</Data></Cell>
+    <Cell ss:StyleID="s80"><Data ss:Type="String" x:Ticked="1">%1 All Resistances Score per &quot;Unleashed Fury&quot; Point</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s93"><Data ss:Type="String">ui_eim_can_change_stances_with_dodgeroll</Data></Cell>
+    <Cell ss:StyleID="s80"><Data ss:Type="String" x:Ticked="1">Gain access to two &quot;Stances&quot;: &quot;Probing Weakness&quot; and &quot;Stalwart Resolve&quot;. A &quot;Stance&quot; is changed when a Dodge Roll is used.</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s93"><Data ss:Type="String">ui_eim_stance_offensive_stats</Data></Cell>
+    <Cell ss:StyleID="s80"><Data ss:Type="String" x:Ticked="1">While &quot;Probing Weakness&quot; is active, you have a %1 Chance to double Attack Damage at the cost of %2 of your All Resistances Score</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s95"><Data ss:Type="String">ui_eim_stance_defensive_stats</Data></Cell>
+    <Cell ss:StyleID="s80"><Data ss:Type="String" x:Ticked="1">While &quot;Stalwart Resolve&quot; is active, you have %1 Block Chance and %2 Block Efficiency at the cost of %3 of your Attack and Spell Damage</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell><Data ss:Type="String">ui_eim_stance_offensive_stats_bonus</Data></Cell>
+    <Cell ss:StyleID="s80"><Data ss:Type="String" x:Ticked="1">Increases Chance to double Attack Damage while &quot;Probing Weakness&quot; is active by %1</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell><Data ss:Type="String">ui_eim_stance_defensive_stats_bonus</Data></Cell>
+    <Cell ss:StyleID="s80"><Data ss:Type="String" x:Ticked="1">Increases Block Chance while &quot;Stalwart Resolve&quot; is active by %1</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s93"><Data ss:Type="String">ui_eim_damage_on_block</Data></Cell>
+    <Cell ss:StyleID="s80"><Data ss:Type="String" x:Ticked="1">%1 of Weapon Damage dealt to Attacking Enemy when their Attack is Blocked</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s93"><Data ss:Type="String">ui_eim_damage_on_block_rend</Data></Cell>
+    <Cell ss:StyleID="s80"><Data ss:Type="String" x:Ticked="1">Damage dealt to Attacking Enemy when their Attack is Blocked is dealt as Rend Damage</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s93"><Data ss:Type="String">ui_eim_final_weapon_combos</Data></Cell>
+    <Cell ss:StyleID="s80"><Data ss:Type="String" x:Ticked="1">Provides alternative fourth Attack to each basic weapon Combo</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s93"><Data ss:Type="String">ui_eim_final_weapon_combos_bows</Data></Cell>
+    <Cell ss:StyleID="s80"><Data ss:Type="String" x:Ticked="1">Fourth Attack of a Bow weapon Attack Combo shoots multiple arrows in all directions</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s93"><Data ss:Type="String">ui_eim_final_weapon_combos_staves</Data></Cell>
+    <Cell ss:StyleID="s80"><Data ss:Type="String" x:Ticked="1">Fourth Attack of a Staff weapon Combo fires additional projectiles in Target's direction</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s93"><Data ss:Type="String">ui_eim_final_weapon_combos_two_handed</Data></Cell>
+    <Cell ss:StyleID="s80"><Data ss:Type="String" x:Ticked="1">Fourth Attack of a Two-Handed weapon Attack Combo Stuns all enemies hit.</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s93"><Data ss:Type="String">ui_eim_final_weapon_combos_other</Data></Cell>
+    <Cell ss:StyleID="s80"><Data ss:Type="String" x:Ticked="1">Fourth Attack of a One-Handed weapon Attack Combo is a Critical Hit</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell><Data ss:Type="String">ui_eim_final_weapon_combos_damage</Data></Cell>
+    <Cell ss:StyleID="s80"><Data ss:Type="String" x:Ticked="1">Fourth Attack of each basic weapon Combo deals %1 additional Damage</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s93"><Data ss:Type="String">ui_eim_uses_fortress_mechanic</Data></Cell>
+    <Cell ss:StyleID="s80"><Data ss:Type="String" x:Ticked="1">While stationary, gain 1 &quot;Inexorable&quot; Point every %1s, up to a maximum of %2</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s93"><Data ss:Type="String">ui_eim_fortress_movement_speed</Data></Cell>
+    <Cell ss:StyleID="s80"><Data ss:Type="String" x:Ticked="1">%1 Movement Speed per &quot;Inexorable&quot; Point</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s95"><Data ss:Type="String">ui_eim_fortress_damage_percent</Data></Cell>
+    <Cell ss:StyleID="s80"><Data ss:Type="String" x:Ticked="1">%1 Damage per &quot;Inexorable&quot; Point</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s93"><Data ss:Type="String">ui_eim_fortress_health_regeneration</Data></Cell>
+    <Cell ss:StyleID="s80"><Data ss:Type="String" x:Ticked="1">%1 Health Regeneration per &quot;Inexorable&quot; Point</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s93"><Data ss:Type="String">ui_eim_fortress_all_resistances</Data></Cell>
+    <Cell ss:StyleID="s80"><Data ss:Type="String" x:Ticked="1">%1 All Resistances Score per &quot;Inexorable&quot; Point</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell><Data ss:Type="String">ui_eim_uses_fortress_mechanic_tickrate</Data></Cell>
+    <Cell ss:StyleID="s80"><Data ss:Type="String" x:Ticked="1">&quot;Inexorable&quot; Points are gained every %1s</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s93"><Data ss:Type="String">ui_eim_stat_bonus_from_chest_armor</Data></Cell>
+    <Cell ss:StyleID="s80"><Data ss:Type="String" x:Ticked="1">Allows Bonuses to be applied depending on Chest-piece equipped</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s93"><Data ss:Type="String">ui_eim_stat_bonus_from_chest_armor_warrior</Data></Cell>
+    <Cell ss:StyleID="s80"><Data ss:Type="String" x:Ticked="1">%1 Health Regeneration for every Health point on equipped Bruiser Chest-piece</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s93"><Data ss:Type="String">ui_eim_stat_bonus_from_chest_armor_tank</Data></Cell>
+    <Cell ss:StyleID="s80"><Data ss:Type="String" x:Ticked="1">Gain All Resistance Score equal to All Resistance score on equipped Heavy Chest-piece </Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s93"><Data ss:Type="String">ui_eim_stat_bonus_from_chest_armor_rogue</Data></Cell>
+    <Cell ss:StyleID="s80"><Data ss:Type="String" x:Ticked="1">You regenerate Health and Force Shield equivalent to %1 times the Health given by your equipped Rogue Chest-piece each time you complete a successful Passive Dodge. </Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s95"><Data ss:Type="String">ui_eim_stat_bonus_from_chest_armor_mage</Data></Cell>
+    <Cell ss:StyleID="s80"><Data ss:Type="String" x:Ticked="1">%1 Force Shield Regeneration for every Force Shield point on equipped Sorcerer Chest-piece</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s93"><Data ss:Type="String">ui_eim_stat_bonus_from_helmet</Data></Cell>
+    <Cell ss:StyleID="s80"><Data ss:Type="String" x:Ticked="1">Allows Bonuses to be applied depending on Helmet equipped</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s93"><Data ss:Type="String">ui_eim_stat_bonus_from_helmet_warrior</Data></Cell>
+    <Cell ss:StyleID="s80"><Data ss:Type="String" x:Ticked="1">%1 Health Regeneration for every Health point on equipped Bruiser Helmet</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s93"><Data ss:Type="String">ui_eim_stat_bonus_from_helmet_tank</Data></Cell>
+    <Cell ss:StyleID="s80"><Data ss:Type="String" x:Ticked="1">Gain All Resistance Score equal to %1 multiplied by the All Resistance score on equipped Heavy Helmet </Data></Cell>
+    <Cell ss:StyleID="s96"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s93"><Data ss:Type="String">ui_eim_stat_bonus_from_helmet_rogue</Data></Cell>
+    <Cell ss:StyleID="s80"><Data ss:Type="String" x:Ticked="1">You regenerate Health and Force Shield equivalent to %1 times the Health given by your equipped Rogue Helmet each time you complete a successful Passive Dodge. </Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s95"><Data ss:Type="String">ui_eim_stat_bonus_from_helmet_mage</Data></Cell>
+    <Cell ss:StyleID="s80"><Data ss:Type="String" x:Ticked="1">%1 Force Shield Regeneration for every Force Shield point on equipped Sorcerer Helmet</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell><Data ss:Type="String">ui_eim_stack_block_uses_mechanic</Data></Cell>
+    <Cell ss:StyleID="s80"><Data ss:Type="String" x:Ticked="1">%2 &quot;Fortress&quot; Point(s) gained every %1s, up to a maximum of %3</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell><Data ss:Type="String">ui_eim_block_chance_per_block_stack</Data></Cell>
+    <Cell ss:StyleID="s80"><Data ss:Type="String" x:Ticked="1">%1 Block Chance per &quot;Fortress&quot; Point.</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s95"><Data ss:Type="String">ui_eim_block_chance_increase_with_time</Data></Cell>
+    <Cell ss:StyleID="s80"><Data ss:Type="String" x:Ticked="1">%1 &quot;Fortress Point&quot; gained every second. When an Attack is Blocked, the bonus is rest to 0</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s93"><Data ss:Type="String">ui_eim_smite_wounded_on_sacred_damage</Data></Cell>
+    <Cell ss:StyleID="s80"><Data ss:Type="String" x:Ticked="1">Dealing Sacred Damage instantly kills Enemies below %1 of their Max Health (Underlings and Specialists only)</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s93"><Data ss:Type="String">ui_eim_smite_elites</Data></Cell>
+    <Cell ss:StyleID="s80"><Data ss:Type="String" x:Ticked="1">Dealing Sacred Damage now instantly kills Champion Enemies below a percentage of their Health in addition to Underlings and Specialists</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s93"><Data ss:Type="String">ui_eim_pray_on_low_health</Data></Cell>
+    <Cell ss:StyleID="s80"><Data ss:Type="String" x:Ticked="1">All Nearby Allies are Resurrected when your Health drops below %2 of maximum</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s93"><Data ss:Type="String">ui_eim_pray_on_low_health_all_resistances</Data></Cell>
+    <Cell ss:StyleID="s80"><Data ss:Type="String" x:Ticked="1">All Nearby Allies gain %1 boost to All Resistances Score when Allies are resurrected</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s93"><Data ss:Type="String">ui_eim_pray_on_low_health_all_resistances_added</Data></Cell>
+    <Cell ss:StyleID="s80"><Data ss:Type="String" x:Ticked="1">%1 to All Resistances Score upon Ally resurrection</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s93"><Data ss:Type="String">ui_eim_dawn_stat_bonus_from_force_shield_state</Data></Cell>
+    <Cell ss:StyleID="s80"><Data ss:Type="String" x:Ticked="1">%1 Spell Damage when Force Shield is above %2 and %1 Attack Damage when Force Shield is below %2</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell><Data ss:Type="String">ui_eim_dawn_stat_bonus_from_force_shield_state_bonus</Data></Cell>
+    <Cell ss:StyleID="s80"><Data ss:Type="String" x:Ticked="1">%1 Increase to Spell Damage when above Force Shield threshold and %1 increase to Attack Damage when below Force Shield threshold </Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s95"><Data ss:Type="String">ui_eim_can_proc_attunements</Data></Cell>
+    <Cell ss:StyleID="s80"><Data ss:Type="String" x:Ticked="1">Spells that inflict fire, frost, or lightning ailments grant passive bonuses called &quot;Accords&quot;. Up to %1 &quot;Accord(s)&quot; can be active concurrently. Triggered &quot;Accords&quot; remain locked for %2s.  </Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell><Data ss:Type="String">ui_eim_attunements_simulaneous</Data></Cell>
+    <Cell ss:StyleID="s80"><Data ss:Type="String" x:Ticked="1">%1 &quot;Accords&quot; can be active concurrently</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s93"><Data ss:Type="String">ui_eim_attunement_frost</Data></Cell>
+    <Cell ss:StyleID="s80"><Data ss:Type="String" x:Ticked="1">&quot;Etheliel's Accord&quot; is active for %3s unless it is triggered again. You have %1 Ailment Chance when &quot;Etheliel's Accord&quot; is active.</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s93"><Data ss:Type="String">ui_eim_attunement_fire</Data></Cell>
+    <Cell ss:StyleID="s80"><Data ss:Type="String" x:Ticked="1">'&quot;Abanazaar's Accord&quot; is active for %3s unless it is triggered again. You have %1 Damage when &quot;Abanazaar's Accord&quot; is active</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s93"><Data ss:Type="String">ui_eim_attunement_lightning</Data></Cell>
+    <Cell ss:StyleID="s80"><Data ss:Type="String" x:Ticked="1">'&quot;Beelmalik's Accord&quot; is active for %3s unless it is triggered again. You have %1 Critical Chance when &quot;Beelmalik's Accord&quot; is active.</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell><Data ss:Type="String">ui_eim_meteor_on_casting_fire_skill</Data></Cell>
+    <Cell ss:StyleID="s80"><Data ss:Type="String" x:Ticked="1">%1 Chance to Cast a Meteor at cursor location when Fire Skill is Cast. Has a Cooldown of %4s</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s93"><Data ss:Type="String">ui_eim_frost_lance_on_casting_frost_skill</Data></Cell>
+    <Cell ss:StyleID="s80"><Data ss:Type="String" x:Ticked="1">%1 Chance to Cast a Frost Lance at cursor location when Frost Skill is Cast. Has a Cooldown of %4s</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s93"><Data ss:Type="String">ui_eim_thunderstrike_on_casting_lightning_skill</Data></Cell>
+    <Cell ss:StyleID="s80"><Data ss:Type="String" x:Ticked="1">%1 Chance to Cast Chain Lightning at cursor location when Lightning Skill is Cast. Has a Cooldown of %4s</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s93"><Data ss:Type="String">ui_eim_explosion_on_low_willpower</Data></Cell>
+    <Cell ss:StyleID="s80"><Data ss:Type="String" x:Ticked="1">When Willpower is below %2 of its maximum, you have a chance to cause an Explosion, dealing Damage based on your maximum Force Shield or Health. This Explosion regenerates %1 of your Willpower, and has a cooldown of %4s. </Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell><Data ss:Type="String">ui_eim_explosion_on_low_willpower_damage</Data></Cell>
+    <Cell ss:StyleID="s80"><Data ss:Type="String" x:Ticked="1">Explosion caused by Willpower being below the percentage of its maximum (stated in Elementary Destabilization) deals increased damage based on your maximum Health or Force Shield.</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s95"><Data ss:Type="String">ui_eim_stasis_afflicted_enemies_take_damage_twice</Data></Cell>
+    <Cell ss:StyleID="s80"><Data ss:Type="String" x:Ticked="1">When you hit Enemies afflicted with Stasis, they take %1 of the Hit Damage again after a %2s delay</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s95"><Data ss:Type="String">ui_eim_stasis_afflicted_enemies_take_damage_twice_increase</Data></Cell>
+    <Cell ss:StyleID="s80"><Data ss:Type="String" x:Ticked="1">Damage dealt after the delay is increased by %3</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s95"><Data ss:Type="String">ui_eim_stack_hybrid_uses_mechanic</Data></Cell>
+    <Cell ss:StyleID="s80"><Data ss:Type="String" x:Ticked="1">You gain Supernatural Paradox Points when you Hit an enemy in Stasis with an Attack, and Earthly Paradox Points when you Hit them with a Spell. Points reset after %1s. Maximum of %2 Point(s)</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s95"><Data ss:Type="String">ui_eim_stack_hybrid_attack_speed</Data></Cell>
+    <Cell ss:StyleID="s80"><Data ss:Type="String" x:Ticked="1">%1 Attack Speed Score per Earthly Paradox Point</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s95"><Data ss:Type="String">ui_eim_stack_hybrid_cast_speed</Data></Cell>
+    <Cell ss:StyleID="s80"><Data ss:Type="String" x:Ticked="1">%1 Spell Casting Speed Score per Supernatural Paradox Point</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s95"><Data ss:Type="String">ui_eim_take_delayed_damage</Data></Cell>
+    <Cell ss:StyleID="s80"><Data ss:Type="String" x:Ticked="1">You only take %1 Damage of an Enemy's attack when it Hits, the rest is inflicted %2s after the Hit</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s97"><Data ss:Type="String">ui_eim_cap_max_health_and_force_shield</Data></Cell>
+    <Cell ss:StyleID="s80"><Data ss:Type="String" x:Ticked="1">Your Health is set to %1 of maximum, and Force Shield to %2 of maximum</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s97"><Data ss:Type="String">ui_eim_cap_max_health_and_force_shield_increase</Data></Cell>
+    <Cell ss:StyleID="s80"><Data ss:Type="String" x:Ticked="1">Your maximum Health and Force Shield are increased by %1 and %2 respectively from the maximums set in Dire Juncture</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s95"><Data ss:Type="String">ui_eim_dead_enemies_may_spawn_green_globes</Data></Cell>
+    <Cell ss:StyleID="s80"><Data ss:Type="String" x:Ticked="1">Enemies that die in %1m radius around you have %2 chance to drop green globes. Picking up green globes grants you an additional %3 Damage as Poison Damage for %4s</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s95"><Data ss:Type="String">ui_eim_dead_summons_may_spawn_green_globes</Data></Cell>
+    <Cell ss:StyleID="s80"><Data ss:Type="String" x:Ticked="1">Summons that die in a %1m radius around you have %2 chance to drop green globes. Picking up green globes grants you an additional %3 Damage as Poison Damage for %4s</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s95"><Data ss:Type="String">ui_eim_soul_sharing</Data></Cell>
+    <Cell ss:StyleID="s80"><Data ss:Type="String" x:Ticked="1">You lose %1 of your Health and %2 of your Force Shield, but all Summons take %3 less Damage</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell><Data ss:Type="String">ui_eim_soul_sharing_add</Data></Cell>
+    <Cell ss:StyleID="s80"><Data ss:Type="String" x:Ticked="1">You lose an additional %1 of your Health and %2 of your Force Shield, but summons take %3 less Damage</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s95"><Data ss:Type="String">ui_eim_poisonous_aura</Data></Cell>
+    <Cell ss:StyleID="s80"><Data ss:Type="String" x:Ticked="1">Every %1s, Enemies in a %2m radius gain a Poison Stack</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s95"><Data ss:Type="String">ui_eim_poisonous_aura_slow</Data></Cell>
+    <Cell ss:StyleID="s80"><Data ss:Type="String" x:Ticked="1">Enemies are Slowed by %1 for %2s when they are within the radius</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s95"><Data ss:Type="String">ui_eim_cursed_enemies_take_additional_occult_damage</Data></Cell>
+    <Cell ss:StyleID="s80"><Data ss:Type="String" x:Ticked="1">Occult Damage increased by %1 for every Cursed Stack an Enemy has </Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s95"><Data ss:Type="String">ui_eim_double_force_shield_capacity</Data></Cell>
+    <Cell ss:StyleID="s80"><Data ss:Type="String" x:Ticked="1">Doubles Max Force Shield.</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s95"><Data ss:Type="String">ui_eim_life_ceil_from_force_shield</Data></Cell>
+    <Cell ss:StyleID="s80"><Data ss:Type="String" x:Ticked="1">Health cannot exceed %1 of maximum Force Shield</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s95"><Data ss:Type="String">ui_eim_purge_ailment_stacks</Data></Cell>
+    <Cell ss:StyleID="s80"><Data ss:Type="String" x:Ticked="1">When you have over %1 of the same Ailment Stack, you cleanse them, granting buffs to yourself and nearby allies</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s95"><Data ss:Type="String">ui_eim_suffers_inflicted_ailment_stacks</Data></Cell>
+    <Cell ss:StyleID="s80"><Data ss:Type="String" x:Ticked="1">Ailment Stacks inflicted on Enemies are also inflicted on you. When you have %1 of the same Ailment Stack, they are removed and you gain bonuses</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s95"><Data ss:Type="String">ui_eim_movement_speed_on_purged_stasis_stacks</Data></Cell>
+    <Cell ss:StyleID="s80"><Data ss:Type="String" x:Ticked="1">%1 Movement Speed to yourself and allies in a %2m radius for %3s when Stasis Stacks are removed</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s95"><Data ss:Type="String">ui_eim_all_resistances_score_on_purged_curse_stacks</Data></Cell>
+    <Cell ss:StyleID="s80"><Data ss:Type="String" x:Ticked="1">%1 All Resistance Score to yourself and allies in a %2m radius for %3s when Cursed Stacks are removed</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s95"><Data ss:Type="String">ui_eim_damage_on_purged_weakness_stacks</Data></Cell>
+    <Cell ss:StyleID="s80"><Data ss:Type="String" x:Ticked="1">%1 Damage increases for yourself and allies in a %2m radius for %3s when Weakness Stacks are removed.</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s95"><Data ss:Type="String">ui_eim_heal_on_purged_dot_stacks</Data></Cell>
+    <Cell ss:StyleID="s80"><Data ss:Type="String" x:Ticked="1">Removing Ailment stacks that deal Damage-Over-Time restores %1 of Max Health and %1 of Max Force Shield to yourself and allies in a %2m radius</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s95"><Data ss:Type="String">ui_eim_self_ailment_stacks_added_chance</Data></Cell>
+    <Cell ss:StyleID="s80"><Data ss:Type="String" x:Ticked="1">When inflicting an Ailment on yourself, %1 Chance to increase number of Ailment stacks inflicted by %2</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s95"><Data ss:Type="String">ui_eim_stack_tatoo_damage_reduction</Data></Cell>
+    <Cell ss:StyleID="s80"><Data ss:Type="String" x:Ticked="1">%1 Damage Reduction per &quot;Tenet&quot; Point</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s95"><Data ss:Type="String">ui_eim_stack_tatoo_use_mechanic</Data></Cell>
+    <Cell ss:StyleID="s80"><Data ss:Type="String" x:Ticked="1">You gain 1 &quot;Tenet&quot; Point every %1s up to a maximum of %2 &quot;Tenet Points&quot;, and 1 &quot;Tenet Point&quot; is consumed whenever you are Hit.</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s95"><Data ss:Type="String">ui_eim_material_damage_on_elites</Data></Cell>
+    <Cell ss:StyleID="s80"><Data ss:Type="String" x:Ticked="1">Gain 1 &quot;Headhunter&quot; Points (Max %3) every  time an enemy that is Champion or above is killed, with Points resetting after %2s. &quot;Headhunter&quot; Points grant %1 Material Damage</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell><Data ss:Type="String">ui_eim_material_damage_on_elites_timer</Data></Cell>
+    <Cell ss:StyleID="s80"><Data ss:Type="String" x:Ticked="1">Duration of &quot;Headhunter&quot; Points before resetting is increased to %2s</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s95"><Data ss:Type="String">ui_eim_stack_bullet_uses_mechanic</Data></Cell>
+    <Cell ss:StyleID="s80"><Data ss:Type="String" x:Ticked="1">You have %2 &quot;Annointed Ammunition&quot; Point(s) that are used each time a Projectile Skill is used. A Point of &quot;Annointed Ammunition&quot; is refilled every %1s</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s95"><Data ss:Type="String">ui_eim_stack_bullet_charges_on_dodge_roll</Data></Cell>
+    <Cell ss:StyleID="s80"><Data ss:Type="String" x:Ticked="1">%1 &quot;Annointed Ammunition&quot; Point(s) refilled whenever you Dodge Roll</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s95"><Data ss:Type="String">ui_eim_stack_bullet_charges_on_critical</Data></Cell>
+    <Cell ss:StyleID="s80"><Data ss:Type="String" x:Ticked="1">%1 &quot;Annointed Ammunition&quot; Point(s) refilled whenever you deal a Critical Hit</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s95"><Data ss:Type="String">ui_eim_stack_bullet_proj_damage</Data></Cell>
+    <Cell ss:StyleID="s80"><Data ss:Type="String" x:Ticked="1">%1 Projectile Damage for each Point of &quot;Annointed Ammunition&quot; you have</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s95"><Data ss:Type="String">ui_eim_stack_bullet_melee_damage</Data></Cell>
+    <Cell ss:StyleID="s80"><Data ss:Type="String" x:Ticked="1">%1 Melee Damage for each empty &quot;Annointed Ammunition&quot; Point</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s95"><Data ss:Type="String">ui_eim_remaining_pierce_as_damage</Data></Cell>
+    <Cell ss:StyleID="s80"><Data ss:Type="String" x:Ticked="1">Enemies are dealt %1 Damage per the amount of Pierce remaining on a Projectile after it Hits an Enemy</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s95"><Data ss:Type="String">ui_eim_default_attacks_chain</Data></Cell>
+    <Cell ss:StyleID="s80"><Data ss:Type="String" x:Ticked="1">Basic Attack Projectiles bounce up to %1 times to Nearby Enemies in %2m radius</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s95"><Data ss:Type="String">ui_eim_default_attacks_chain_increase</Data></Cell>
+    <Cell ss:StyleID="s80"><Data ss:Type="String" x:Ticked="1">Projectiles bounce to Nearby Enemies an additional %1 time(s)</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s95"><Data ss:Type="String">ui_eim_frost_damage_bonus_on_chained_projectiles</Data></Cell>
+    <Cell ss:StyleID="s80"><Data ss:Type="String" x:Ticked="1">%1 Frost Damage to Projectiles that have bounced.</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s95"><Data ss:Type="String">ui_eim_stacks_hunter_uses_mechanic</Data></Cell>
+    <Cell ss:StyleID="s80"><Data ss:Type="String" x:Ticked="1">While in Combat, gain &quot;Cold Blooded&quot; Points every %1s, up to a maximum of %2</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell><Data ss:Type="String">ui_eim_stacks_hunter_tickrate</Data></Cell>
+    <Cell ss:StyleID="s80"><Data ss:Type="String" x:Ticked="1">Gain &quot;Cold Blooded&quot; Points every %1s</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s95"><Data ss:Type="String">ui_eim_stacks_hunter_damage</Data></Cell>
+    <Cell ss:StyleID="s80"><Data ss:Type="String" x:Ticked="1">%1 Damage per &quot;Cold Blooded&quot; Point</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s95"><Data ss:Type="String">ui_eim_attack_speed_on_critical_hit</Data></Cell>
+    <Cell ss:StyleID="s80"><Data ss:Type="String" x:Ticked="1">%1 Attack Speed Score for %3s on Critical Hit</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s95"><Data ss:Type="String">ui_eim_stack_gadget_uses_mechanic</Data></Cell>
+    <Cell ss:StyleID="s80"><Data ss:Type="String" x:Ticked="1">Basic Attacks refill &quot;Power Charge&quot; Points by %1. %2 &quot;Power Charge&quot; Points are generated per second, capped between -%3 and +%3</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s95"><Data ss:Type="String">ui_eim_stack_gadget_costs</Data></Cell>
+    <Cell ss:StyleID="s80"><Data ss:Type="String" x:Ticked="1">%1 reduction in &quot;Power Charge&quot; Points Cost for all Device Skills</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s95"><Data ss:Type="String">ui_eim_stack_gadget_damage</Data></Cell>
+    <Cell ss:StyleID="s80"><Data ss:Type="String" x:Ticked="1">Device and Skills with base Lightning Damage have their Damage increased by %1 multiplied by your current number of &quot;Power Charge&quot; Points</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s95"><Data ss:Type="String">ui_eim_stack_focus_damage</Data></Cell>
+    <Cell ss:StyleID="s80"><Data ss:Type="String" x:Ticked="1">%2 Damage per &quot;Overload&quot; Point. Basic Attacks generate 1 &quot;Overload&quot; Point up to a maximum of %1. Using a Skill consumes all &quot;Overload&quot; Points but doubles Damage of the Skill </Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell><Data ss:Type="String">ui_eim_stack_focus_half</Data></Cell>
+    <Cell ss:StyleID="s80"><Data ss:Type="String" x:Ticked="1">&quot;Overload&quot; Points are halved instead of set to 0 when consumed.</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s95"><Data ss:Type="String">ui_eim_stack_balance_uses_mechanic</Data></Cell>
+    <Cell ss:StyleID="s80"><Data ss:Type="String" x:Ticked="1">You have %1 Points shared between &quot;Lure of Light&quot; and &quot;Lure of Darkness&quot; Points. Casting a Spell converts &quot;Lure of Light&quot; into &quot;Lure of Darkness&quot;, and Attacking converts &quot;Lure of Darkness&quot; into &quot;Lure of Light&quot;. When &quot;Lure of Light&quot; and &quot;Lure of Darkness&quot; Points have a weighting between 6/4, they are considered to be in Equilibrium.</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s95"><Data ss:Type="String">ui_eim_stack_balance_mixed_bonus</Data></Cell>
+    <Cell ss:StyleID="s80"><Data ss:Type="String" x:Ticked="1">While &quot;Lure of Light&quot; and &quot;Lure of Darkness&quot; are in &quot;Equilibrium&quot;, your Attacks benefit from %1 of Spell Damage bonuses and your Spells %1 of Attack Damage bonuses</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s95"><Data ss:Type="String">ui_eim_stack_balance_mixed_malus</Data></Cell>
+    <Cell ss:StyleID="s80"><Data ss:Type="String" x:Ticked="1">While &quot;Lure of Light&quot; and &quot;Lure of Darkness&quot; are not in &quot;Equilibrium&quot;, your Attacks lose %1 of Spell Damage bonuses and your Spells %1 of Attack Damage bonuses</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell><Data ss:Type="String">ui_eim_stack_balance_margin</Data></Cell>
+    <Cell ss:StyleID="s80"><Data ss:Type="String" x:Ticked="1">&quot;Lure of Light&quot; and &quot;Lure of Darkness&quot; Points are now considered to be in &quot;Equilibrium&quot; when they have a weighting between 7/3</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s95"><Data ss:Type="String">ui_eim_leave_decoy_on_dodgeroll</Data></Cell>
+    <Cell ss:StyleID="s80"><Data ss:Type="String" x:Ticked="1">Dodge Roll Damages Enemies and leaves a Decoy for %1s</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell><Data ss:Type="String">ui_eim_leave_decoy_on_dodgeroll_explosion</Data></Cell>
+    <Cell ss:StyleID="s80"><Data ss:Type="String" x:Ticked="1">Decoy left by Dodge Roll explodes when it is destroyed, dealing Damage in a %2m radius</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s95"><Data ss:Type="String">ui_eim_active_dodge_makes_invisible</Data></Cell>
+    <Cell ss:StyleID="s80"><Data ss:Type="String" x:Ticked="1">Dodge Roll turns you Invisible for %1s. While Invisible, the damage of your next Skill activated is increased by %2. Using a Skill breaks Invisibility. This has a cooldown of %3s.  </Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell><Data ss:Type="String">ui_eim_active_dodge_makes_invisible_duration</Data></Cell>
+    <Cell ss:StyleID="s80"><Data ss:Type="String" x:Ticked="1">Duration of the Invisibility triggered by a Dodge Roll is increased by %1s</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s95"><Data ss:Type="String">ui_eim_damage_percent_onehanded</Data></Cell>
+    <Cell ss:StyleID="s80"><Data ss:Type="String" x:Ticked="1">%1 Damage with One-Handed Weapons</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s95"><Data ss:Type="String">ui_eim_onehanded_blockchance_flat</Data></Cell>
+    <Cell ss:StyleID="s80"><Data ss:Type="String" x:Ticked="1">%1 Block Chance while One-Handed Weapon equipped</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s95"><Data ss:Type="String">ui_eim_damage_from_shield_block_chance</Data></Cell>
+    <Cell ss:StyleID="s80"><Data ss:Type="String" x:Ticked="1">Damage is increased by %1 multiplied by your equipped Shield's Block Chance</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s97"><Data ss:Type="String">ui_eim_self_ailments</Data></Cell>
+    <Cell ss:StyleID="s80"><Data ss:Type="String" x:Ticked="1">You receive 1 Ailment stack when inflicting an Ailment on an Enemy</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s97"><Data ss:Type="String">ui_eim_health_gain_percent</Data></Cell>
+    <Cell ss:StyleID="s80"><Data ss:Type="String" x:Ticked="1">%1 Health gained from all sources</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="14.25" ss:StyleID="s62">
+    <Cell ss:MergeAcross="1" ss:StyleID="s66"><Data ss:Type="String">Uniques</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s98"><Data ss:Type="String">ui_eim_freeze_chance_to_crit</Data></Cell>
+    <Cell ss:StyleID="s80"><Data ss:Type="String">If your Hits have Freeze Chance, %1 of your Freeze Chance is added to your Critical Chance. These Hits do not inflcit Freeze anymore.</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s83"><Data ss:Type="String">ui_eim_damage_percent_against_burning</Data></Cell>
+    <Cell ss:StyleID="s80"><Data ss:Type="String" x:Ticked="1">%1 Damage against Burning Enemies</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_eim_damage_taken_percent_from_burning_enemies</Data></Cell>
+    <Cell ss:StyleID="s80"><Data ss:Type="String" x:Ticked="1">%1 Damage from Burning Enemies</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell><Data ss:Type="String">ui_eim_all_resistance_score_percent_on_full_stamina</Data></Cell>
+    <Cell ss:StyleID="s80"><Data ss:Type="String" x:Ticked="1">%1 to All Resistances Score percent while at full Stamina</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell><Data ss:Type="String">ui_summon_life</Data></Cell>
+    <Cell ss:StyleID="s80"><Data ss:Type="String" x:Ticked="1">%1 to Summon's Health</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell><Data ss:Type="String">ui_summon_damage</Data></Cell>
+    <Cell ss:StyleID="s80"><Data ss:Type="String" x:Ticked="1">%1 to Summon's Damage</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell><Data ss:Type="String">ui_eim_criticaldamage_on_bleeding_pts</Data></Cell>
+    <Cell ss:StyleID="s80"><Data ss:Type="String" x:Ticked="1">%1 Critical Hit Damage when Hitting a Bleeding target</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell><Data ss:Type="String">ui_eim_criticalchance_on_poisoned_score</Data></Cell>
+    <Cell ss:StyleID="s80"><Data ss:Type="String" x:Ticked="1">%1 Critical Chance Score when Hitting a Poisoned target</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell><Data ss:Type="String">ui_eim_dodge_roll_breaks_cc</Data></Cell>
+    <Cell ss:StyleID="s80"><Data ss:Type="String" x:Ticked="1">Using a Movement Skill cleanses you of Crowd Control effects. Has a Cooldown of %1s</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_eim_forceshield_leech_percent_lightning</Data></Cell>
+    <Cell ss:StyleID="s80"><Data ss:Type="String" x:Ticked="1">%1 Lightning Damage Leeched as Force Shield</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_elemental_rotation_buff</Data></Cell>
+    <Cell ss:StyleID="s80"><Data ss:Type="String" x:Ticked="1">Using an Elemental Spell applies a Buff to the other two Elements</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell><Data ss:Type="String">ui_eim_ailment_spread</Data></Cell>
+    <Cell ss:StyleID="s80"><Data ss:Type="String" x:Ticked="1">%1 Chance to spread Ailments to Enemies around the Target Hit</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="14.25" ss:StyleID="s62">
+    <Cell ss:MergeAcross="1" ss:StyleID="s66"><Data ss:Type="String">Gems</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell><Data ss:Type="String">ui_eim_life_leech_percent_frost</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="String">%1 Frost Damage into Life Leech</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell><Data ss:Type="String">ui_eim_resourcegeneration_percent</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="String" x:Ticked="1">%1 Resource Generation</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell><Data ss:Type="String">ui_eim_inflicted_curse_duration_percent</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="String" x:Ticked="1">%1 Duration to Cursed inflicted on Enemies</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell><Data ss:Type="String">ui_eim_inflicted_stasis_duration_percent</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="String" x:Ticked="1">%1 Duration to Stasis inflicted on Enemies</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell><Data ss:Type="String">ui_eim_inflicted_weakness_duration_percent</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="String" x:Ticked="1">%1 Duration to Weakness inflicted on Enemies</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell><Data ss:Type="String">ui_eim_inflicted_stun_duration_percent</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="String" x:Ticked="1">%1 Duration to Stun inflicted on Enemies</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:Index="2" ss:StyleID="s99"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:Index="2" ss:StyleID="s99"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:Index="2" ss:StyleID="s99"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:Index="2" ss:StyleID="s99"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:Index="2" ss:StyleID="s99"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:Index="2" ss:StyleID="s99"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:Index="2" ss:StyleID="s99"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:Index="2" ss:StyleID="s99"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:Index="2" ss:StyleID="s99"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:Index="2" ss:StyleID="s99"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:Index="2" ss:StyleID="s99"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:Index="2" ss:StyleID="s99"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:Index="2" ss:StyleID="s99"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:Index="2" ss:StyleID="s99"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:Index="2" ss:StyleID="s99"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:Index="2" ss:StyleID="s99"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:Index="2" ss:StyleID="s99"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:Index="2" ss:StyleID="s99"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:Index="2" ss:StyleID="s99"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:Index="2" ss:StyleID="s99"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:Index="2" ss:StyleID="s99"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:Index="2" ss:StyleID="s99"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:Index="2" ss:StyleID="s99"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:Index="2" ss:StyleID="s99"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:Index="2" ss:StyleID="s99"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:Index="2" ss:StyleID="s99"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75" ss:Span="128"/>
+   <Row ss:Index="803" ss:AutoFitHeight="0" ss:Height="15" ss:Span="405"/>
+   <Row ss:Index="1237" ss:AutoFitHeight="0" ss:Height="25.5"/>
+   <Row ss:AutoFitHeight="0" ss:Height="15" ss:Span="2"/>
+   <Row ss:Index="1241" ss:AutoFitHeight="0" ss:Height="25.5" ss:Span="78"/>
+   <Row ss:Index="1320" ss:AutoFitHeight="0" ss:Height="18"/>
+   <Row ss:AutoFitHeight="0" ss:Height="25.5"/>
+   <Row ss:AutoFitHeight="0" ss:Height="15" ss:Span="2"/>
+   <Row ss:Index="1325" ss:AutoFitHeight="0" ss:Height="25.5" ss:Span="2"/>
+   <Row ss:Index="1328" ss:AutoFitHeight="0" ss:Height="15" ss:Span="3"/>
+   <Row ss:Index="1332" ss:AutoFitHeight="0" ss:Height="25.5" ss:Span="2"/>
+   <Row ss:Index="1335" ss:AutoFitHeight="0" ss:Height="15" ss:Span="3"/>
+   <Row ss:Index="1339" ss:AutoFitHeight="0" ss:Height="25.5" ss:Span="2"/>
+   <Row ss:Index="1342" ss:AutoFitHeight="0" ss:Height="15" ss:Span="13"/>
+   <Row ss:Index="1356" ss:AutoFitHeight="0" ss:Height="38.25"/>
+   <Row ss:AutoFitHeight="0" ss:Height="51"/>
+   <Row ss:AutoFitHeight="0" ss:Height="25.5"/>
+   <Row ss:AutoFitHeight="0" ss:Height="38.25" ss:Span="1"/>
+   <Row ss:Index="1361" ss:AutoFitHeight="0" ss:Height="15"/>
+   <Row ss:AutoFitHeight="0" ss:Height="25.5" ss:Span="2"/>
+   <Row ss:Index="1365" ss:AutoFitHeight="0" ss:Height="15" ss:Span="3"/>
+   <Row ss:Index="1369" ss:AutoFitHeight="0" ss:Height="25.5"/>
+   <Row ss:AutoFitHeight="0" ss:Height="63.75"/>
+   <Row ss:AutoFitHeight="0" ss:Height="47.25"/>
+   <Row ss:AutoFitHeight="0" ss:Height="51"/>
+   <Row ss:AutoFitHeight="0" ss:Height="45"/>
+   <Row ss:AutoFitHeight="0" ss:Height="38.25"/>
+   <Row ss:AutoFitHeight="0" ss:Height="25.5"/>
+   <Row ss:AutoFitHeight="0" ss:Height="15" ss:Span="1"/>
+   <Row ss:Index="1378" ss:AutoFitHeight="0" ss:Height="25.5"/>
+   <Row ss:AutoFitHeight="0" ss:Height="15" ss:Span="1"/>
+   <Row ss:Index="1381" ss:AutoFitHeight="0" ss:Height="25.5"/>
+   <Row ss:AutoFitHeight="0" ss:Height="15" ss:Span="2"/>
+   <Row ss:Index="1385" ss:AutoFitHeight="0" ss:Height="25.5"/>
+   <Row ss:AutoFitHeight="0" ss:Height="75.75"/>
+   <Row ss:AutoFitHeight="0" ss:Height="15"/>
+   <Row ss:AutoFitHeight="0" ss:Height="85.5"/>
+   <Row ss:AutoFitHeight="0" ss:Height="25.5"/>
+   <Row ss:AutoFitHeight="0" ss:Height="38.25"/>
+   <Row ss:AutoFitHeight="0" ss:Height="15"/>
+   <Row ss:AutoFitHeight="0" ss:Height="25.5"/>
+   <Row ss:AutoFitHeight="0" ss:Height="15"/>
+   <Row ss:AutoFitHeight="0" ss:Height="25.5"/>
+   <Row ss:AutoFitHeight="0" ss:Height="15" ss:Span="3"/>
+   <Row ss:Index="1399" ss:AutoFitHeight="0" ss:Height="25.5" ss:Span="1"/>
+   <Row ss:Index="1401" ss:AutoFitHeight="0" ss:Height="15"/>
+   <Row ss:AutoFitHeight="0" ss:Height="25.5"/>
+   <Row ss:AutoFitHeight="0" ss:Height="15"/>
+   <Row ss:AutoFitHeight="0" ss:Height="25.5"/>
+   <Row ss:AutoFitHeight="0" ss:Height="15" ss:Span="2"/>
+   <Row ss:Index="1408" ss:AutoFitHeight="0" ss:Height="25.5" ss:Span="4"/>
+   <Row ss:Index="1413" ss:AutoFitHeight="0" ss:Height="15"/>
+   <Row ss:AutoFitHeight="0" ss:Height="25.5"/>
+   <Row ss:AutoFitHeight="0" ss:Height="15" ss:Span="1"/>
+   <Row ss:Index="1417" ss:AutoFitHeight="0" ss:Height="25.5" ss:Span="3"/>
+   <Row ss:Index="1421" ss:AutoFitHeight="0" ss:Height="15" ss:Span="1"/>
+   <Row ss:Index="1423" ss:AutoFitHeight="0" ss:Height="25.5" ss:Span="2"/>
+   <Row ss:Index="1426" ss:AutoFitHeight="0" ss:Height="15" ss:Span="3"/>
+   <Row ss:Index="1430" ss:AutoFitHeight="0" ss:Height="25.5" ss:Span="1"/>
+   <Row ss:Index="1432" ss:AutoFitHeight="0" ss:Height="15"/>
+   <Row ss:AutoFitHeight="0" ss:Height="25.5"/>
+   <Row ss:AutoFitHeight="0" ss:Height="38.25" ss:Span="1"/>
+   <Row ss:Index="1436" ss:AutoFitHeight="0" ss:Height="15" ss:Span="2"/>
+   <Row ss:Index="1439" ss:AutoFitHeight="0" ss:Height="25.5" ss:Span="6"/>
+   <Row ss:Index="1446" ss:AutoFitHeight="0" ss:Height="38.25"/>
+   <Row ss:AutoFitHeight="0" ss:Height="25.5" ss:Span="1"/>
+   <Row ss:Index="1449" ss:AutoFitHeight="0" ss:Height="38.25"/>
+   <Row ss:AutoFitHeight="0" ss:Height="25.5"/>
+   <Row ss:AutoFitHeight="0" ss:Height="15" ss:Span="6"/>
+   <Row ss:Index="1458" ss:AutoFitHeight="0" ss:Height="25.5" ss:Span="6"/>
+   <Row ss:Index="1465" ss:AutoFitHeight="0" ss:Height="15" ss:Span="73"/>
+  </Table>
+  <WorksheetOptions xmlns="urn:schemas-microsoft-com:office:excel">
+   <PageSetup>
+    <Layout x:Orientation="Landscape"/>
+    <Header x:Margin="0.51181102362204722"
+     x:Data="&amp;LTime restriction sample script"/>
+    <Footer x:Margin="0.51181102362204722" x:Data="Page &amp;P"/>
+    <PageMargins x:Bottom="0.98425196850393704" x:Left="0" x:Right="0"
+     x:Top="0.98425196850393704"/>
+   </PageSetup>
+   <Print>
+    <ValidPrinterInfo/>
+    <PaperSizeIndex>9</PaperSizeIndex>
+    <Scale>70</Scale>
+    <HorizontalResolution>600</HorizontalResolution>
+    <VerticalResolution>600</VerticalResolution>
+   </Print>
+   <Zoom>85</Zoom>
+   <Selected/>
+   <TopRowVisible>566</TopRowVisible>
+   <Panes>
+    <Pane>
+     <Number>3</Number>
+     <ActiveRow>592</ActiveRow>
+    </Pane>
+   </Panes>
+   <ProtectObjects>False</ProtectObjects>
+   <ProtectScenarios>False</ProtectScenarios>
+  </WorksheetOptions>
+ </Worksheet>
+</Workbook>
