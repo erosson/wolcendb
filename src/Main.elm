@@ -12,6 +12,10 @@ import Page.Accessories
 import Page.Armors
 import Page.Home
 import Page.Shields
+import Page.UniqueAccessories
+import Page.UniqueArmors
+import Page.UniqueShields
+import Page.UniqueWeapons
 import Page.Weapons
 import Route exposing (Route)
 import Url exposing (Url)
@@ -123,8 +127,17 @@ viewBody mmodel =
                         Route.Accessories ->
                             Page.Accessories.view model.datamine
 
-                        _ ->
-                            [ code [] [ text "404 not found" ], div [] [ a [ Route.href Route.Home ] [ text "Back to safety" ] ] ]
+                        Route.UniqueWeapons ->
+                            Page.UniqueWeapons.view model.datamine
+
+                        Route.UniqueShields ->
+                            Page.UniqueShields.view model.datamine
+
+                        Route.UniqueArmors ->
+                            Page.UniqueArmors.view model.datamine
+
+                        Route.UniqueAccessories ->
+                            Page.UniqueAccessories.view model.datamine
 
 
 

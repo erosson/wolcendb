@@ -21,7 +21,6 @@ view dm =
             ]
         , tbody []
             (dm.loot.accessories
-                |> List.take 100
                 |> List.map
                     (\w ->
                         tr []

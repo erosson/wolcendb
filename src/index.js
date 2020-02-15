@@ -5,6 +5,10 @@ import Weapons from '!!raw-loader!../datamine/Game/Umbra/Loot/Weapons/Weapons.xm
 import Shields from '!!raw-loader!../datamine/Game/Umbra/Loot/Weapons/Shields.xml'
 import Armors from '!!raw-loader!../datamine/Game/Umbra/Loot/Armors/Armors.xml'
 import Accessories from '!!raw-loader!../datamine/Game/Umbra/Loot/Armors/Accessories.xml'
+import UniqueWeapons from '!!raw-loader!../datamine/Game/Umbra/Loot/Weapons/UniqueWeapons.xml'
+import UniqueShields from '!!raw-loader!../datamine/Game/Umbra/Loot/Weapons/UniqueShields.xml'
+import UniqueArmors from '!!raw-loader!../datamine/Game/Umbra/Loot/Armors/Armors_uniques.xml'
+import UniqueAccessories from '!!raw-loader!../datamine/Game/Umbra/Loot/Armors/UniquesAccessories.xml'
 // import enLoot from '!!raw-loader!../datamine/localization/text_ui_Loot.xml'
 import enLoot from '!!json-loader!@erosson/xlsx-loader!../datamine/localization/text_ui_Loot.xml'
 // import Passives from '../datamine/Game/Umbra/Skills/Trees/PassivesSkills/'
@@ -13,6 +17,10 @@ const datamine = {
   Shields,
   Armors,
   Accessories,
+  UniqueWeapons,
+  UniqueShields,
+  UniqueArmors,
+  UniqueAccessories,
   en: {
     Loot: enLoot,
   }

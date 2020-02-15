@@ -22,7 +22,6 @@ view dm =
             ]
         , tbody []
             (dm.loot.weapons
-                |> List.take 100
                 |> List.map
                     (\w ->
                         tr []

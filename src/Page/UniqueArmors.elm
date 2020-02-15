@@ -1,4 +1,4 @@
-module Page.Armors exposing (view)
+module Page.UniqueArmors exposing (view)
 
 import Datamine exposing (Datamine)
 import Dict exposing (Dict)
@@ -10,17 +10,18 @@ import Maybe.Extra
 
 view : Datamine -> List (Html msg)
 view dm =
-    [ h1 [] [ text "Armors" ]
+    [ h1 [] [ text "Unique Armors" ]
     , table []
         [ thead []
             [ tr []
                 [ th [] [ text "name" ]
                 , th [] [ text "id" ]
                 , th [] [ text "keywords" ]
+                , th [] [ text "lore" ]
                 ]
             ]
         , tbody []
-            (dm.loot.armors
+            (dm.loot.uniqueArmors
                 |> List.map
                     (\w ->
                         tr []
@@ -31,6 +32,11 @@ view dm =
                                 ]
                             , td [] [ text w.name ]
                             , td [] [ text <| String.join ", " w.keywords ]
+                            , td []
+                                [ Dict.get (String.replace "@" "" (Maybe.withDefault "" w.lore)) dm.en
+                                    |> Maybe.withDefault "???"
+                                    |> text
+                                ]
                             ]
                     )
             )

@@ -20,14 +20,18 @@ type alias Loot =
     , shields : List Shield
     , armors : List Armor
     , accessories : List Accessory
+    , uniqueWeapons : List UniqueWeapon
+    , uniqueShields : List UniqueShield
+    , uniqueArmors : List UniqueArmor
+    , uniqueAccessories : List UniqueAccessory
     }
 
 
 type alias Weapon =
     { name : String
     , uiName : String
-    , damage : Range (Maybe Int)
     , keywords : List String
+    , damage : Range (Maybe Int)
     }
 
 
@@ -52,6 +56,39 @@ type alias Accessory =
     }
 
 
+type alias UniqueWeapon =
+    { name : String
+    , uiName : String
+    , lore : Maybe String
+    , keywords : List String
+    , damage : Range (Maybe Int)
+    }
+
+
+type alias UniqueShield =
+    { name : String
+    , uiName : String
+    , lore : Maybe String
+    , keywords : List String
+    }
+
+
+type alias UniqueArmor =
+    { name : String
+    , uiName : String
+    , lore : Maybe String
+    , keywords : List String
+    }
+
+
+type alias UniqueAccessory =
+    { name : String
+    , uiName : String
+    , lore : Maybe String
+    , keywords : List String
+    }
+
+
 type alias Range a =
     { min : a, max : a }
 
@@ -65,11 +102,15 @@ decode =
 jsonDecoder : Json.Decoder Datamine
 jsonDecoder =
     Json.map2 Datamine
-        (Json.map4 Loot
+        (Json.map8 Loot
             (Json.field "Weapons" <| jsonXmlDecoder weaponsDecoder)
             (Json.field "Shields" <| jsonXmlDecoder shieldsDecoder)
             (Json.field "Armors" <| jsonXmlDecoder armorsDecoder)
             (Json.field "Accessories" <| jsonXmlDecoder accessoriesDecoder)
+            (Json.field "UniqueWeapons" <| jsonXmlDecoder uniqueWeaponsDecoder)
+            (Json.field "UniqueShields" <| jsonXmlDecoder uniqueShieldsDecoder)
+            (Json.field "UniqueArmors" <| jsonXmlDecoder uniqueArmorsDecoder)
+            (Json.field "UniqueAccessories" <| jsonXmlDecoder uniqueAccessoriesDecoder)
         )
         (Json.field "en" rootLangDecoder)
 
@@ -111,11 +152,11 @@ weaponsDecoder =
     D.map4 Weapon
         (D.stringAttr "Name")
         (D.stringAttr "UIName")
+        (D.stringAttr "Keywords" |> D.map (String.split ","))
         (D.map2 Range
             (D.maybe <| D.intAttr "LowDamage_Max")
             (D.maybe <| D.intAttr "HighDamage_Max")
         )
-        (D.stringAttr "Keywords" |> D.map (String.split ","))
         |> D.list
         |> D.path [ "Weapons", "Item" ]
 
@@ -145,6 +186,54 @@ accessoriesDecoder =
     D.map3 Accessory
         (D.stringAttr "Name")
         (D.stringAttr "UIName")
+        (D.stringAttr "Keywords" |> D.map (String.split ","))
+        |> D.list
+        |> D.path [ "Armors", "Item" ]
+
+
+uniqueWeaponsDecoder : D.Decoder (List UniqueWeapon)
+uniqueWeaponsDecoder =
+    D.map5 UniqueWeapon
+        (D.stringAttr "Name")
+        (D.stringAttr "UIName")
+        (D.maybe <| D.stringAttr "Lore")
+        (D.stringAttr "Keywords" |> D.map (String.split ","))
+        (D.map2 Range
+            (D.maybe <| D.intAttr "LowDamage_Max")
+            (D.maybe <| D.intAttr "HighDamage_Max")
+        )
+        |> D.list
+        |> D.path [ "Weapons", "Item" ]
+
+
+uniqueShieldsDecoder : D.Decoder (List UniqueShield)
+uniqueShieldsDecoder =
+    D.map4 UniqueShield
+        (D.stringAttr "Name")
+        (D.stringAttr "UIName")
+        (D.maybe <| D.stringAttr "Lore")
+        (D.stringAttr "Keywords" |> D.map (String.split ","))
+        |> D.list
+        |> D.path [ "Weapons", "Item" ]
+
+
+uniqueArmorsDecoder : D.Decoder (List UniqueArmor)
+uniqueArmorsDecoder =
+    D.map4 UniqueArmor
+        (D.stringAttr "Name")
+        (D.stringAttr "UIName")
+        (D.maybe <| D.stringAttr "Lore")
+        (D.stringAttr "Keywords" |> D.map (String.split ","))
+        |> D.list
+        |> D.path [ "Armors", "Item" ]
+
+
+uniqueAccessoriesDecoder : D.Decoder (List UniqueAccessory)
+uniqueAccessoriesDecoder =
+    D.map4 UniqueAccessory
+        (D.stringAttr "Name")
+        (D.stringAttr "UIName")
+        (D.maybe <| D.stringAttr "Lore")
         (D.stringAttr "Keywords" |> D.map (String.split ","))
         |> D.list
         |> D.path [ "Armors", "Item" ]
