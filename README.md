@@ -1,3 +1,33 @@
+# WolcenDB
+
+A website with Wolcen's item/skill information, in the spirit of [poedb](https://poedb.tw). Built with [Node]() and [Yarn]().
+
+Datamined with [gabriel-dehan's WolcenExtractor](https://github.com/gabriel-dehan/WolcenExtractor). Requires [Ruby](https://rubyinstaller.org/downloads/).
+
+
+
+## Build
+
+To get started, from the root of the repository:
+
+* `yarn && yarn export:install` sets up the website and WolcenExtractor, respectively
+* `echo $PATH_TO_YOUR_WOLCEN_INSTALL > GAMEPATH`, replacing the path appropriately, so we know where to extract files from
+* `yarn export` extracts Wolcen files. This will break if you haven't written the `GAMEPATH` file above
+
+The everyday workflow:
+
+* `yarn start` runs the website
+* `yarn build` builds a production version of the website
+* `yarn test` runs the unit tests
+
+Every once in a while, or whenever `yarn export` is busted:
+
+* `yarn export:pull` updates WolcenExtractor (it's a git subtree)
+
+---
+
+Below is create-elm-app boilerplate:
+
 # Elm App
 
 This project is bootstrapped with [Create Elm App](https://github.com/halfzebra/create-elm-app).
@@ -788,7 +818,7 @@ Mutate the configuration directly or use [webpack-merge](https://www.npmjs.com/p
 `env` variable will help you distinguish `"development"` from `"production"` for environment-specific overrides.
 
 ## Configuring the Proxy Manually
- 
+
 If the `proxy` option is not flexible enough for you, you can get direct access to the Express app instance and hook up your own proxy middleware.
 
 You can use this feature in conjunction with the `proxy` property in `elmapp.config.js`, but it is recommended you consolidate all of your logic into `setupProxy` property`.

@@ -1,20 +1,48 @@
 module Main exposing (..)
 
 import Browser
-import Html exposing (Html, text, div, h1, img)
-import Html.Attributes exposing (src)
+import Browser.Navigation as Nav
+import Datamine exposing (Datamine)
+import Dict exposing (Dict)
+import Html as H exposing (..)
+import Html.Attributes as A exposing (..)
+import Html.Events as E exposing (..)
+import Maybe.Extra
+import Url exposing (Url)
+
 
 
 ---- MODEL ----
 
 
 type alias Model =
-    {}
+    Result String OkModel
 
 
-init : ( Model, Cmd Msg )
-init =
-    ( {}, Cmd.none )
+type alias OkModel =
+    { nav : Nav.Key
+    , datamine : Datamine
+    }
+
+
+type alias Flags =
+    { datamine : Datamine.Flag
+    }
+
+
+init : Flags -> Url -> Nav.Key -> ( Model, Cmd Msg )
+init flags url nav =
+    case Datamine.decode flags.datamine of
+        Err err ->
+            ( Err err, Cmd.none )
+
+        Ok datamine ->
+            ( Ok
+                { nav = nav
+                , datamine = datamine
+                }
+            , Cmd.none
+            )
 
 
 
@@ -22,7 +50,8 @@ init =
 
 
 type Msg
-    = NoOp
+    = OnUrlChange Url
+    | OnUrlRequest Browser.UrlRequest
 
 
 update : Msg -> Model -> ( Model, Cmd Msg )
@@ -34,23 +63,73 @@ update msg model =
 ---- VIEW ----
 
 
-view : Model -> Html Msg
+view : Model -> Browser.Document Msg
 view model =
-    div []
+    { title = "WolcenDB", body = viewBody model }
+
+
+viewBody : Model -> List (Html Msg)
+viewBody mmodel =
+    case mmodel of
+        Err err ->
+            [ code [] [ text err ] ]
+
+        Ok model ->
+            viewOk model
+
+
+viewOk : OkModel -> List (Html Msg)
+viewOk model =
+    [ div []
         [ img [ src "/logo.svg" ] []
-        , h1 [] [ text "Your Elm App is working!" ]
+        , h1 [] [ text "hello from wolcendb" ]
+        , table []
+            [ thead []
+                [ tr []
+                    [ th [] [ text "name" ]
+                    , th [] [ text "id" ]
+                    , th [] [ text "damage" ]
+                    , th [] [ text "keywords" ]
+                    ]
+                ]
+            , tbody []
+                (model.datamine.weapons
+                    |> List.take 100
+                    |> List.map
+                        (\w ->
+                            tr []
+                                [ td []
+                                    [ Dict.get (String.replace "@" "" w.uiName) model.datamine.en
+                                        |> Maybe.withDefault "???"
+                                        |> text
+                                    ]
+                                , td [] [ text w.name ]
+                                , td []
+                                    [ Maybe.Extra.unwrap "?" String.fromInt w.damage.min
+                                        ++ "-"
+                                        ++ Maybe.Extra.unwrap "?" String.fromInt w.damage.max
+                                        |> text
+                                    ]
+                                , td [] [ text <| String.join ", " w.keywords ]
+                                ]
+                        )
+                )
+            ]
         ]
+    ]
 
 
 
 ---- PROGRAM ----
 
 
-main : Program () Model Msg
+main : Program Flags Model Msg
 main =
-    Browser.element
+    Browser.application
         { view = view
-        , init = \_ -> init
+        , init = init
         , update = update
         , subscriptions = always Sub.none
+        , onUrlChange = OnUrlChange
+        , onUrlRequest = OnUrlRequest
         }
