@@ -16,6 +16,15 @@ view =
         [ View.Nav.view
         , div [ class "row" ]
             [ div [ class "col-sm" ]
+                [ p []
+                    [ text "Datamined loot and skill information for the action RPG "
+                    , a [ target "_blank", href "https://wolcengame.com/" ] [ text "Wolcen: Lords of Mayhem" ]
+                    , text "."
+                    ]
+                ]
+            ]
+        , div [ class "row" ]
+            [ div [ class "col-sm" ]
                 [ div [ class "card" ]
                     [ div [ class "card-header" ] [ text "Player" ]
                     , ul [ class "list-group list-group-flush" ]
@@ -42,6 +51,17 @@ view =
                         , li [ class "list-group-item" ] [ a [ Route.href Route.UniqueShields ] [ text "Shields" ] ]
                         , li [ class "list-group-item" ] [ a [ Route.href Route.UniqueArmors ] [ text "Armors" ] ]
                         , li [ class "list-group-item" ] [ a [ Route.href Route.UniqueAccessories ] [ text "Accessories" ] ]
+                        ]
+                    ]
+                ]
+            ]
+        , div [ class "row" ]
+            [ div [ class "col-sm" ]
+                [ small []
+                    [ p []
+                        [ text "This site is fan-made and not affiliated with "
+                        , a [ target "_blank", href "https://wolcengame.com/" ] [ text "Wolcen Studios" ]
+                        , text "."
                         ]
                     ]
                 ]
