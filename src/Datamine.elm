@@ -10,8 +10,16 @@ type alias Flag =
 
 
 type alias Datamine =
-    { weapons : List Weapon
+    { loot : Loot
     , en : Dict String String
+    }
+
+
+type alias Loot =
+    { weapons : List Weapon
+    , shields : List Shield
+    , armors : List Armor
+    , accessories : List Accessory
     }
 
 
@@ -19,6 +27,27 @@ type alias Weapon =
     { name : String
     , uiName : String
     , damage : Range (Maybe Int)
+    , keywords : List String
+    }
+
+
+type alias Shield =
+    { name : String
+    , uiName : String
+    , keywords : List String
+    }
+
+
+type alias Armor =
+    { name : String
+    , uiName : String
+    , keywords : List String
+    }
+
+
+type alias Accessory =
+    { name : String
+    , uiName : String
     , keywords : List String
     }
 
@@ -36,7 +65,12 @@ decode =
 jsonDecoder : Json.Decoder Datamine
 jsonDecoder =
     Json.map2 Datamine
-        (Json.field "Weapons" <| jsonXmlDecoder weaponsDecoder)
+        (Json.map4 Loot
+            (Json.field "Weapons" <| jsonXmlDecoder weaponsDecoder)
+            (Json.field "Shields" <| jsonXmlDecoder shieldsDecoder)
+            (Json.field "Armors" <| jsonXmlDecoder armorsDecoder)
+            (Json.field "Accessories" <| jsonXmlDecoder accessoriesDecoder)
+        )
         (Json.field "en" rootLangDecoder)
 
 
@@ -72,14 +106,6 @@ langDecoder =
         |> Json.field "Sheet1"
 
 
-
---D.map2 Tuple.pair
---    (D.succeed "key")
---    (D.succeed "val")
---    |> D.list
---    |> D.path [ "ExcelWorkbook", "Worksheet", "Row" ]
-
-
 weaponsDecoder : D.Decoder (List Weapon)
 weaponsDecoder =
     D.map4 Weapon
@@ -92,3 +118,33 @@ weaponsDecoder =
         (D.stringAttr "Keywords" |> D.map (String.split ","))
         |> D.list
         |> D.path [ "Weapons", "Item" ]
+
+
+shieldsDecoder : D.Decoder (List Shield)
+shieldsDecoder =
+    D.map3 Shield
+        (D.stringAttr "Name")
+        (D.stringAttr "UIName")
+        (D.stringAttr "Keywords" |> D.map (String.split ","))
+        |> D.list
+        |> D.path [ "Weapons", "Item" ]
+
+
+armorsDecoder : D.Decoder (List Armor)
+armorsDecoder =
+    D.map3 Armor
+        (D.stringAttr "Name")
+        (D.stringAttr "UIName")
+        (D.stringAttr "Keywords" |> D.map (String.split ","))
+        |> D.list
+        |> D.path [ "Armors", "Item" ]
+
+
+accessoriesDecoder : D.Decoder (List Accessory)
+accessoriesDecoder =
+    D.map3 Accessory
+        (D.stringAttr "Name")
+        (D.stringAttr "UIName")
+        (D.stringAttr "Keywords" |> D.map (String.split ","))
+        |> D.list
+        |> D.path [ "Armors", "Item" ]

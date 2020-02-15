@@ -81,8 +81,8 @@ viewBody mmodel =
 viewOk : OkModel -> List (Html Msg)
 viewOk model =
     [ div []
-        [ img [ src "/logo.svg" ] []
-        , h1 [] [ text "hello from wolcendb" ]
+        [ h1 [] [ text "hello from wolcendb" ]
+        , h1 [] [ text "Weapons" ]
         , table []
             [ thead []
                 [ tr []
@@ -93,7 +93,7 @@ viewOk model =
                     ]
                 ]
             , tbody []
-                (model.datamine.weapons
+                (model.datamine.loot.weapons
                     |> List.take 100
                     |> List.map
                         (\w ->
@@ -110,6 +110,84 @@ viewOk model =
                                         ++ Maybe.Extra.unwrap "?" String.fromInt w.damage.max
                                         |> text
                                     ]
+                                , td [] [ text <| String.join ", " w.keywords ]
+                                ]
+                        )
+                )
+            ]
+        , h1 [] [ text "Shields" ]
+        , table []
+            [ thead []
+                [ tr []
+                    [ th [] [ text "name" ]
+                    , th [] [ text "id" ]
+                    , th [] [ text "keywords" ]
+                    ]
+                ]
+            , tbody []
+                (model.datamine.loot.shields
+                    |> List.take 100
+                    |> List.map
+                        (\w ->
+                            tr []
+                                [ td []
+                                    [ Dict.get (String.replace "@" "" w.uiName) model.datamine.en
+                                        |> Maybe.withDefault "???"
+                                        |> text
+                                    ]
+                                , td [] [ text w.name ]
+                                , td [] [ text <| String.join ", " w.keywords ]
+                                ]
+                        )
+                )
+            ]
+        , h1 [] [ text "Armors" ]
+        , table []
+            [ thead []
+                [ tr []
+                    [ th [] [ text "name" ]
+                    , th [] [ text "id" ]
+                    , th [] [ text "keywords" ]
+                    ]
+                ]
+            , tbody []
+                (model.datamine.loot.armors
+                    |> List.take 100
+                    |> List.map
+                        (\w ->
+                            tr []
+                                [ td []
+                                    [ Dict.get (String.replace "@" "" w.uiName) model.datamine.en
+                                        |> Maybe.withDefault "???"
+                                        |> text
+                                    ]
+                                , td [] [ text w.name ]
+                                , td [] [ text <| String.join ", " w.keywords ]
+                                ]
+                        )
+                )
+            ]
+        , h1 [] [ text "Accessories" ]
+        , table []
+            [ thead []
+                [ tr []
+                    [ th [] [ text "name" ]
+                    , th [] [ text "id" ]
+                    , th [] [ text "keywords" ]
+                    ]
+                ]
+            , tbody []
+                (model.datamine.loot.accessories
+                    |> List.take 100
+                    |> List.map
+                        (\w ->
+                            tr []
+                                [ td []
+                                    [ Dict.get (String.replace "@" "" w.uiName) model.datamine.en
+                                        |> Maybe.withDefault "???"
+                                        |> text
+                                    ]
+                                , td [] [ text w.name ]
                                 , td [] [ text <| String.join ", " w.keywords ]
                                 ]
                         )
