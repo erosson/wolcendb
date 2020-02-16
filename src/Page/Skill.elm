@@ -70,7 +70,7 @@ view dm uid =
                                             , td [] [ text <| String.fromInt va.level ]
                                             , td [] [ text <| String.fromInt va.cost ]
                                             , td [ title <| Maybe.withDefault "" v.lore ]
-                                                (View.Desc.mdesc dm v.lore |> Maybe.withDefault [ text "???" ])
+                                                (View.Desc.mdesc dm v.lore |> Maybe.withDefault [ text "" ])
                                             ]
                                     )
                             )

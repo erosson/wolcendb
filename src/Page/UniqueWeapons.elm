@@ -30,6 +30,7 @@ view dm =
                 ]
             , tbody []
                 (dm.loot.uniqueWeapons
+                    |> List.filter (\w -> Datamine.lang dm w.uiName |> Maybe.Extra.isJust)
                     |> List.map
                         (\w ->
                             tr []

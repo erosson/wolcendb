@@ -29,6 +29,7 @@ view dm =
                 ]
             , tbody []
                 (dm.loot.uniqueShields
+                    |> List.filter (\w -> Datamine.lang dm w.uiName |> Maybe.Extra.isJust)
                     |> List.map
                         (\w ->
                             tr []
