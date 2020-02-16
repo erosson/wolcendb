@@ -9,15 +9,26 @@ module Datamine exposing
     , mlang
     )
 
+{-| Import JSON files from the `datamine` directory.
+
+These are passed in as Elm flags.
+
+We used to decode the xml directly in Elm using the `ymtszw/elm-xml-decode` package.
+Converting to JSON and parsing that instead is a little awkward, but it runs much
+faster in development (webpack imports - not sure why!) and the JSON decoder has
+some features we need (ex. `Json.Decode.keyValuePairs`).
+
+-}
+
 import Dict exposing (Dict)
 import Dict.Extra
-import Json.Decode as Json
+import Json.Decode as D
+import Json.Decode.Pipeline as P
 import Result.Extra
-import Xml.Decode as D
 
 
 type alias Flag =
-    Json.Value
+    D.Value
 
 
 type alias Datamine =
@@ -171,8 +182,8 @@ mlang dm =
 
 decode : Flag -> Result String Datamine
 decode =
-    Json.decodeValue jsonDecoder
-        >> Result.mapError Json.errorToString
+    D.decodeValue jsonDecoder
+        >> Result.mapError D.errorToString
 
 
 affixes : Datamine -> List String -> List Affix
@@ -180,18 +191,18 @@ affixes dm =
     List.filterMap (\id -> dm.affixes |> List.filter (\a -> a.affixId == id) |> List.head)
 
 
-jsonDecoder : Json.Decoder Datamine
+jsonDecoder : D.Decoder Datamine
 jsonDecoder =
-    Json.map5 Datamine
-        (Json.map8 Loot
-            (Json.field "Game/Umbra/Loot/Weapons/Weapons.xml" <| jsonXmlDecoder weaponsDecoder)
-            (Json.field "Game/Umbra/Loot/Weapons/Shields.xml" <| jsonXmlDecoder shieldsDecoder)
-            (Json.field "Game/Umbra/Loot/Armors/Armors.xml" <| jsonXmlDecoder armorsDecoder)
-            (Json.field "Game/Umbra/Loot/Armors/Accessories.xml" <| jsonXmlDecoder accessoriesDecoder)
-            (Json.field "Game/Umbra/Loot/Weapons/UniqueWeapons.xml" <| jsonXmlDecoder uniqueWeaponsDecoder)
-            (Json.field "Game/Umbra/Loot/Weapons/UniqueShields.xml" <| jsonXmlDecoder uniqueShieldsDecoder)
-            (Json.field "Game/Umbra/Loot/Armors/Armors_uniques.xml" <| jsonXmlDecoder uniqueArmorsDecoder)
-            (Json.field "Game/Umbra/Loot/Armors/UniquesAccessories.xml" <| jsonXmlDecoder uniqueAccessoriesDecoder)
+    D.map5 Datamine
+        (D.map8 Loot
+            (D.field "Game/Umbra/Loot/Weapons/Weapons.json" weaponsDecoder)
+            (D.field "Game/Umbra/Loot/Weapons/Shields.json" shieldsDecoder)
+            (D.field "Game/Umbra/Loot/Armors/Armors.json" armorsDecoder)
+            (D.field "Game/Umbra/Loot/Armors/Accessories.json" accessoriesDecoder)
+            (D.field "Game/Umbra/Loot/Weapons/UniqueWeapons.json" uniqueWeaponsDecoder)
+            (D.field "Game/Umbra/Loot/Weapons/UniqueShields.json" uniqueShieldsDecoder)
+            (D.field "Game/Umbra/Loot/Armors/Armors_uniques.json" uniqueArmorsDecoder)
+            (D.field "Game/Umbra/Loot/Armors/UniquesAccessories.json" uniqueAccessoriesDecoder)
         )
         skillsDecoder
         skillASTsDecoder
@@ -199,73 +210,75 @@ jsonDecoder =
         rootLangDecoder
 
 
-rootAffixesDecoder : Json.Decoder (List Affix)
+rootAffixesDecoder : D.Decoder (List Affix)
 rootAffixesDecoder =
-    Json.keyValuePairs Json.value
-        |> Json.map (List.filter (Tuple.first >> String.contains "/Loot/MagicEffects/Affixes/"))
-        |> Json.map (List.map (Tuple.second >> Json.decodeValue (jsonXmlDecoder affixesDecoder)))
-        |> Json.map (Result.Extra.combine >> Result.mapError Json.errorToString)
+    D.keyValuePairs D.value
+        |> D.map (List.filter (Tuple.first >> String.contains "/Loot/MagicEffects/Affixes/"))
+        |> D.map (List.map (Tuple.second >> D.decodeValue affixesDecoder))
+        |> D.map (Result.Extra.combine >> Result.mapError D.errorToString)
         |> resultDecoder
-        |> Json.map List.concat
+        |> D.map List.concat
 
 
 affixesDecoder : D.Decoder (List Affix)
 affixesDecoder =
-    D.map2 Affix
-        (D.stringAttr "AffixId")
-        (D.map MagicEffect
-            (D.stringAttr "EffectId")
-            |> D.list
-            |> D.path [ "MagicEffect" ]
-        )
+    D.succeed Affix
+        |> P.requiredAt [ "$", "AffixId" ] D.string
+        |> P.custom
+            (D.succeed MagicEffect
+                |> P.requiredAt [ "$", "EffectId" ] D.string
+                |> D.list
+                |> D.at [ "MagicEffect" ]
+            )
         |> D.list
-        |> D.path [ "Affix" ]
+        |> D.at [ "MetaData", "Affix" ]
 
 
-skillASTsDecoder : Json.Decoder (List SkillAST)
+skillASTsDecoder : D.Decoder (List SkillAST)
 skillASTsDecoder =
-    Json.keyValuePairs Json.value
-        |> Json.map (List.filter (Tuple.first >> String.contains "/Skills/Trees/ActiveSkills/"))
-        |> Json.map (List.map (Tuple.second >> Json.decodeValue (jsonXmlDecoder skillASTDecoder)))
-        -- |> Json.map (List.filterMap Result.toMaybe)
-        |> Json.map (Result.Extra.combine >> Result.mapError Json.errorToString)
+    D.keyValuePairs D.value
+        |> D.map (List.filter (Tuple.first >> String.contains "/Skills/Trees/ActiveSkills/"))
+        |> D.map (List.map (Tuple.second >> D.decodeValue skillASTDecoder))
+        -- |> D.map (List.filterMap Result.toMaybe)
+        |> D.map (Result.Extra.combine >> Result.mapError D.errorToString)
         |> resultDecoder
 
 
 skillASTDecoder : D.Decoder SkillAST
 skillASTDecoder =
-    D.map2 SkillAST
-        (D.stringAttr "Name")
-        (D.map3 SkillASTVariant
-            (D.stringAttr "UID")
-            (D.intAttr "Level")
-            (D.intAttr "Cost")
-            |> D.list
-            |> D.path [ "SkillVariant" ]
-        )
-        |> D.single
-        |> D.path [ "AST" ]
+    D.succeed SkillAST
+        |> P.requiredAt [ "$", "Name" ] D.string
+        |> P.custom
+            (D.succeed SkillASTVariant
+                |> P.requiredAt [ "$", "UID" ] D.string
+                |> P.requiredAt [ "$", "Level" ] intString
+                |> P.requiredAt [ "$", "Cost" ] intString
+                |> D.list
+                |> D.at [ "SkillVariant" ]
+            )
+        |> single
+        |> D.at [ "MetaData", "AST" ]
 
 
-skillsDecoder : Json.Decoder (List Skill)
+ignoredSkills =
+    [ "ActiveDodge"
+    , "AutoDash"
+    , "DeathMark_Explosion"
+    , "FrostLance_Explosion"
+    , "FrostNova_Zone_Shadow"
+    , "FrostNova_Zone"
+    , "UsePotion"
+    ]
+
+
+skillsDecoder : D.Decoder (List Skill)
 skillsDecoder =
-    Json.keyValuePairs Json.value
-        |> Json.map (List.filter (Tuple.first >> String.contains "/Skills/NewSkills/Player/"))
-        |> Json.map (List.map (Tuple.second >> Json.decodeValue (jsonXmlDecoder skillDecoder)))
-        -- |> Json.map Result.Extra.combine
-        |> Json.map (List.filterMap Result.toMaybe)
-
-
-
---|> Json.andThen
---    (\r ->
---        case r of
---            Err err ->
---                Json.fail <| Json.errorToString err
---
---            Ok ok ->
---                Json.succeed ok
---    )
+    D.keyValuePairs D.value
+        |> D.map (List.filter (Tuple.first >> String.contains "/Skills/NewSkills/Player/"))
+        |> D.map (List.filter (Tuple.first >> (\s -> List.any (\c -> String.contains c s) ignoredSkills) >> not))
+        |> D.map (List.map (Tuple.second >> D.decodeValue skillDecoder))
+        |> D.map (Result.Extra.combine >> Result.mapError D.errorToString)
+        |> resultDecoder
 
 
 type alias SkillDecoder =
@@ -281,22 +294,20 @@ skillDecoder =
     -- The first skill entry is the skill itself; all following entries are its variants (d3 "runes").
     -- The XML decoding is a bit awkward because lists must be homogeneous. Decode them as an
     -- intermediate structure, SkillDecoder, and transform them to Skills/SkillVariants later.
-    D.map4 SkillDecoder
-        (D.stringAttr "UID")
-        (D.maybe <| D.path [ "HUD" ] <| D.single <| D.stringAttr "UIName")
-        (D.maybe <| D.path [ "HUD" ] <| D.single <| D.stringAttr "Lore")
-        (D.maybe <| D.map (String.split ",") <| D.stringAttr "Keywords")
-        -- |> D.maybe
+    D.succeed SkillDecoder
+        |> P.requiredAt [ "$", "UID" ] D.string
+        |> P.optionalAt [ "HUD", "0", "$", "UIName" ] (D.string |> D.map Just) Nothing
+        |> P.optionalAt [ "HUD", "0", "$", "Lore" ] (D.string |> D.map Just) Nothing
+        |> P.optionalAt [ "HUD", "0", "$", "Keywords" ] (D.string |> D.map (String.split "," >> Just)) Nothing
         |> D.list
-        |> D.path [ "Skill" ]
-        -- |> D.map (List.filterMap identity)
+        |> D.at [ "MetaData", "Skill" ]
         |> D.andThen
             (\els ->
                 case els of
                     s :: vs ->
                         case s.uiName of
                             Nothing ->
-                                D.fail "no skill.uiname"
+                                D.fail <| "no skill.uiname for skill: " ++ s.uid
 
                             Just uiName ->
                                 D.succeed
@@ -324,60 +335,57 @@ skillDecoder =
             )
 
 
-rootLangDecoder : Json.Decoder (Dict String String)
+rootLangDecoder : D.Decoder (Dict String String)
 rootLangDecoder =
-    Json.keyValuePairs Json.value
-        |> Json.map (List.filter (Tuple.first >> String.contains "localization/text_ui_"))
-        |> Json.map (List.map (Tuple.second >> Json.decodeValue langDecoder))
-        |> Json.map (Result.Extra.combine >> Result.mapError Json.errorToString)
+    D.keyValuePairs D.value
+        |> D.map (List.filter (Tuple.first >> String.contains "localization/text_ui_"))
+        |> D.map (List.map (Tuple.second >> D.decodeValue langDecoder))
+        |> D.map (Result.Extra.combine >> Result.mapError D.errorToString)
         |> resultDecoder
-        |> Json.map
+        |> D.map
             (List.concat
                 >> List.map (Tuple.mapFirst (\k -> "@" ++ String.toLower k))
                 >> Dict.fromList
             )
 
 
-jsonXmlDecoder : D.Decoder a -> Json.Decoder a
-jsonXmlDecoder decoder =
-    Json.string |> Json.map (D.decodeString decoder) |> resultDecoder
-
-
-resultDecoder : Json.Decoder (Result String a) -> Json.Decoder a
+resultDecoder : D.Decoder (Result String a) -> D.Decoder a
 resultDecoder =
-    Json.andThen
+    D.andThen
         (\r ->
             case r of
                 Err err ->
-                    Json.fail err
+                    D.fail err
 
                 Ok val ->
-                    Json.succeed val
+                    D.succeed val
         )
 
 
-langDecoder : Json.Decoder (List ( String, String ))
+langDecoder : D.Decoder (List ( String, String ))
 langDecoder =
-    Json.map2 Tuple.pair
-        (Json.field "KEY" Json.string)
-        (Json.field "ORIGINAL TEXT" Json.string)
-        |> Json.maybe
-        |> Json.list
-        |> Json.map (List.filterMap identity)
-        |> Json.field "Sheet1"
+    D.map2 Tuple.pair
+        (D.field "KEY" D.string)
+        (D.field "ORIGINAL TEXT" D.string)
+        |> D.maybe
+        |> D.list
+        |> D.map (List.filterMap identity)
+        |> D.field "Sheet1"
 
 
 weaponsDecoder : D.Decoder (List Weapon)
 weaponsDecoder =
     D.succeed Weapon
         |> commonLootDecoder
-        |> D.andMap
-            (D.map2 Range
-                (D.maybe <| D.intAttr "LowDamage_Max")
-                (D.maybe <| D.intAttr "HighDamage_Max")
+        |> P.custom
+            (D.succeed Range
+                |> P.optionalAt [ "$", "LowDamage_Max" ] (intString |> D.map Just) Nothing
+                |> P.optionalAt [ "$", "HighDamage_Max" ] (intString |> D.map Just) Nothing
             )
         |> D.list
-        |> D.path [ "Weapons", "Item" ]
+        |> D.field "Item"
+        |> single
+        |> D.at [ "MetaData", "Weapons" ]
 
 
 shieldsDecoder : D.Decoder (List Shield)
@@ -385,7 +393,9 @@ shieldsDecoder =
     D.succeed Shield
         |> commonLootDecoder
         |> D.list
-        |> D.path [ "Weapons", "Item" ]
+        |> D.field "Item"
+        |> single
+        |> D.at [ "MetaData", "Weapons" ]
 
 
 armorsDecoder : D.Decoder (List Armor)
@@ -393,7 +403,9 @@ armorsDecoder =
     D.succeed Armor
         |> commonLootDecoder
         |> D.list
-        |> D.path [ "Armors", "Item" ]
+        |> D.field "Item"
+        |> single
+        |> D.at [ "MetaData", "Armors" ]
 
 
 accessoriesDecoder : D.Decoder (List Accessory)
@@ -401,20 +413,24 @@ accessoriesDecoder =
     D.succeed Accessory
         |> commonLootDecoder
         |> D.list
-        |> D.path [ "Armors", "Item" ]
+        |> D.field "Item"
+        |> single
+        |> D.at [ "MetaData", "Armors" ]
 
 
 uniqueWeaponsDecoder : D.Decoder (List UniqueWeapon)
 uniqueWeaponsDecoder =
     D.succeed UniqueWeapon
         |> uniqueLootDecoder
-        |> D.andMap
-            (D.map2 Range
-                (D.maybe <| D.intAttr "LowDamage_Max")
-                (D.maybe <| D.intAttr "HighDamage_Max")
+        |> P.custom
+            (D.succeed Range
+                |> P.optionalAt [ "$", "LowDamage_Max" ] (intString |> D.map Just) Nothing
+                |> P.optionalAt [ "$", "HighDamage_Max" ] (intString |> D.map Just) Nothing
             )
         |> D.list
-        |> D.path [ "Weapons", "Item" ]
+        |> D.field "Item"
+        |> single
+        |> D.at [ "MetaData", "Weapons" ]
 
 
 uniqueShieldsDecoder : D.Decoder (List UniqueShield)
@@ -422,7 +438,9 @@ uniqueShieldsDecoder =
     D.succeed UniqueShield
         |> uniqueLootDecoder
         |> D.list
-        |> D.path [ "Weapons", "Item" ]
+        |> D.field "Item"
+        |> single
+        |> D.at [ "MetaData", "Weapons" ]
 
 
 uniqueArmorsDecoder : D.Decoder (List UniqueArmor)
@@ -430,7 +448,9 @@ uniqueArmorsDecoder =
     D.succeed UniqueArmor
         |> uniqueLootDecoder
         |> D.list
-        |> D.path [ "Armors", "Item" ]
+        |> D.field "Item"
+        |> single
+        |> D.at [ "MetaData", "Armors" ]
 
 
 uniqueAccessoriesDecoder : D.Decoder (List UniqueAccessory)
@@ -438,17 +458,59 @@ uniqueAccessoriesDecoder =
     D.succeed UniqueAccessory
         |> uniqueLootDecoder
         |> D.list
-        |> D.path [ "Armors", "Item" ]
+        |> D.field "Item"
+        |> single
+        |> D.at [ "MetaData", "Armors" ]
 
 
 commonLootDecoder =
-    D.andMap (D.stringAttr "Name")
-        >> D.andMap (D.stringAttr "UIName")
-        >> D.andMap (D.stringAttr "Keywords" |> D.map (String.split ","))
-        >> D.andMap (D.stringAttr "ImplicitAffixes" |> D.maybe |> D.map (Maybe.withDefault "" >> String.split ","))
+    P.requiredAt [ "$", "Name" ] D.string
+        >> P.requiredAt [ "$", "UIName" ] D.string
+        >> P.requiredAt [ "$", "Keywords" ] (D.string |> D.map (String.split ","))
+        >> P.optionalAt [ "$", "ImplicitAffixes" ] (D.string |> D.map (String.split ",")) []
 
 
 uniqueLootDecoder =
     commonLootDecoder
-        >> D.andMap (D.stringAttr "DefaultAffixes" |> D.maybe |> D.map (Maybe.withDefault "" >> String.split ","))
-        >> D.andMap (D.maybe <| D.stringAttr "Lore")
+        >> P.optionalAt [ "$", "DefaultAffixes" ] (D.string |> D.map (String.split ",")) []
+        >> P.optionalAt [ "$", "Lore" ] (D.string |> D.map Just) Nothing
+
+
+{-| Decode a JSON string as an Elm int.
+
+Our XML-to-JSON converter leaves everything as strings in the JSON, so
+D.Decode.int doesn't work. Same with other non-string decoders.
+
+-}
+intString : D.Decoder Int
+intString =
+    D.string
+        |> D.andThen
+            (\s ->
+                case String.toInt s of
+                    Nothing ->
+                        D.fail <| "expected an int, got: " ++ s
+
+                    Just i ->
+                        D.succeed i
+            )
+
+
+{-| Decode a list with exactly one item.
+
+A side effect of our xml-to-json conversion is that our data has many scattered single-item lists.
+This unwraps them cleanly.
+
+-}
+single : D.Decoder a -> D.Decoder a
+single =
+    D.list
+        >> D.andThen
+            (\vals ->
+                case vals of
+                    [ val ] ->
+                        D.succeed val
+
+                    _ ->
+                        D.fail <| "`single` expected 1 item, got " ++ String.fromInt (List.length vals)
+            )
