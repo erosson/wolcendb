@@ -39,8 +39,8 @@ view dm name =
                             |> text
                         ]
                     , p [] [ text "Keywords: ", text <| String.join ", " item.keywords ]
-                    , ul [] <| View.Affix.viewAffixIds dm item.implicitAffixes
-                    , ul [] <| View.Affix.viewAffixIds dm item.defaultAffixes
+                    , ul [ class "list-group affixes" ] <| View.Affix.viewAffixIds dm item.implicitAffixes
+                    , ul [ class "list-group affixes" ] <| View.Affix.viewAffixIds dm item.defaultAffixes
                     , p [] <| (View.Desc.mdesc dm item.lore |> Maybe.withDefault [ text "???" ])
                     ]
                 ]

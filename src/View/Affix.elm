@@ -13,17 +13,26 @@ viewAffixIds dm =
 
 viewAffixes : Datamine -> List Affix -> List (Html msg)
 viewAffixes dm =
-    List.concatMap .effects >> List.map (viewEffect dm >> li [])
+    List.concatMap .effects >> List.map (viewEffect dm >> li [ class "list-group-item" ])
 
 
 formatEffect : Datamine -> MagicEffect -> Maybe String
 formatEffect dm effect =
+    let
+        stats =
+            -- TODO: sometimes stats are out of order, but I haven't been able to find a pattern. JSON decoding seems fine.
+            if effect.effectId == "default_attacks_chain" then
+                effect.stats |> List.reverse
+
+            else
+                effect.stats
+    in
     "@ui_eim_"
         ++ effect.effectId
         |> Datamine.lang dm
         |> Maybe.map
             (\template ->
-                effect.stats
+                stats
                     |> List.indexedMap Tuple.pair
                     |> List.foldl formatEffectStat template
             )
@@ -45,8 +54,15 @@ formatEffectStat ( index, ( name, stat ) ) =
 
             else
                 "(" ++ String.fromFloat stat.min ++ "-" ++ String.fromFloat stat.max ++ ")"
+
+        suffix =
+            if String.contains "percent" (String.toLower name) then
+                "%"
+
+            else
+                ""
     in
-    String.replace ("%" ++ String.fromInt (index + 1)) val
+    String.replace ("%" ++ String.fromInt (index + 1)) <| val ++ suffix
 
 
 
@@ -56,7 +72,7 @@ formatEffectStat ( index, ( name, stat ) ) =
 viewEffect : Datamine -> MagicEffect -> List (Html msg)
 viewEffect dm effect =
     -- [ text effect.effectId
-    [ span [ title <| "@ui_eim_" ++ effect.effectId ]
+    [ span [ title <| "@ui_eim_" ++ effect.effectId ++ "; " ++ (effect.stats |> List.map Tuple.first |> String.join ", ") ]
         [ text <| Maybe.withDefault "???" <| formatEffect dm effect
 
         -- , text <| Debug.toString effect

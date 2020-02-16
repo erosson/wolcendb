@@ -329,7 +329,7 @@ skillDecoder =
         |> P.requiredAt [ "$", "UID" ] D.string
         |> P.optionalAt [ "HUD", "0", "$", "UIName" ] (D.string |> D.map Just) Nothing
         |> P.optionalAt [ "HUD", "0", "$", "Lore" ] (D.string |> D.map Just) Nothing
-        |> P.optionalAt [ "HUD", "0", "$", "Keywords" ] (D.string |> D.map (String.split "," >> Just)) Nothing
+        |> P.optionalAt [ "HUD", "0", "$", "Keywords" ] (csStrings |> D.map Just) Nothing
         |> D.list
         |> D.at [ "MetaData", "Skill" ]
         |> D.andThen
@@ -497,14 +497,29 @@ uniqueAccessoriesDecoder =
 commonLootDecoder =
     P.requiredAt [ "$", "Name" ] D.string
         >> P.requiredAt [ "$", "UIName" ] D.string
-        >> P.requiredAt [ "$", "Keywords" ] (D.string |> D.map (String.split ","))
-        >> P.optionalAt [ "$", "ImplicitAffixes" ] (D.string |> D.map (String.split ",")) []
+        >> P.requiredAt [ "$", "Keywords" ] csStrings
+        >> P.optionalAt [ "$", "ImplicitAffixes" ] csStrings []
 
 
 uniqueLootDecoder =
     commonLootDecoder
-        >> P.optionalAt [ "$", "DefaultAffixes" ] (D.string |> D.map (String.split ",")) []
+        >> P.optionalAt [ "$", "DefaultAffixes" ] csStrings []
         >> P.optionalAt [ "$", "Lore" ] (D.string |> D.map Just) Nothing
+
+
+{-| Decode a comma-separated list of strings
+
+data's a bit sloppy, sometimes has empty strings - remove them
+
+-}
+csStrings : D.Decoder (List String)
+csStrings =
+    D.string
+        |> D.map
+            (String.split ","
+                >> List.map String.trim
+                >> List.filter ((/=) "")
+            )
 
 
 {-| Decode a JSON string as an Elm int.

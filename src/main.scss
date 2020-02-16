@@ -41,3 +41,14 @@ body {
 .desc {
   font-size: medium !important;
 }
+
+ul.affixes li {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+ul.affixes {
+  padding-left: 0;
+  margin: 1em;
+  margin-left: 0;
+}
