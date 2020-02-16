@@ -3,6 +3,7 @@ module Datamine exposing
     , Datamine
     , Flag
     , MagicEffect
+    , Range
     , affixes
     , decode
     , lang
@@ -167,6 +168,7 @@ type alias Affix =
 
 type alias MagicEffect =
     { effectId : String
+    , stats : List ( String, Range Float )
     }
 
 
@@ -224,14 +226,43 @@ affixesDecoder : D.Decoder (List Affix)
 affixesDecoder =
     D.succeed Affix
         |> P.requiredAt [ "$", "AffixId" ] D.string
-        |> P.custom
-            (D.succeed MagicEffect
-                |> P.requiredAt [ "$", "EffectId" ] D.string
-                |> D.list
-                |> D.at [ "MagicEffect" ]
-            )
+        |> P.custom (magicEffectDecoder |> D.list |> D.at [ "MagicEffect" ])
         |> D.list
         |> D.at [ "MetaData", "Affix" ]
+
+
+magicEffectDecoder : D.Decoder MagicEffect
+magicEffectDecoder =
+    D.succeed MagicEffect
+        |> P.requiredAt [ "$", "EffectId" ] D.string
+        |> P.custom magicEffectStatsDecoder
+
+
+magicEffectStatsDecoder : D.Decoder (List ( String, Range Float ))
+magicEffectStatsDecoder =
+    D.map2 Tuple.pair
+        (D.at [ "LoRoll", "0", "$" ] (D.keyValuePairs floatString))
+        (D.at [ "HiRoll", "0", "$" ] (D.keyValuePairs floatString))
+        |> D.map
+            (\( mins, maxs ) ->
+                let
+                    maxd =
+                        Dict.fromList maxs
+                in
+                if List.map Tuple.first maxs /= List.map Tuple.first mins then
+                    Err <| "magicEffectStats have different lo/hi keys: " ++ String.join "," (List.map Tuple.first mins)
+
+                else
+                    mins
+                        |> List.map
+                            (\( key, min ) ->
+                                Dict.get key maxd
+                                    |> Maybe.map (\max -> ( key, { min = min, max = max } ))
+                                    |> Result.fromMaybe ("magicEffectStats missing max key: " ++ key)
+                            )
+                        |> Result.Extra.combine
+            )
+        |> resultDecoder
 
 
 skillASTsDecoder : D.Decoder (List SkillAST)
@@ -496,6 +527,20 @@ intString =
             )
 
 
+floatString : D.Decoder Float
+floatString =
+    D.string
+        |> D.andThen
+            (\s ->
+                case String.toFloat s of
+                    Nothing ->
+                        D.fail <| "expected a float, got: " ++ s
+
+                    Just i ->
+                        D.succeed i
+            )
+
+
 {-| Decode a list with exactly one item.
 
 A side effect of our xml-to-json conversion is that our data has many scattered single-item lists.
@@ -504,13 +549,14 @@ This unwraps them cleanly.
 -}
 single : D.Decoder a -> D.Decoder a
 single =
-    D.list
-        >> D.andThen
-            (\vals ->
-                case vals of
-                    [ val ] ->
-                        D.succeed val
+    D.list >> D.andThen single_
 
-                    _ ->
-                        D.fail <| "`single` expected 1 item, got " ++ String.fromInt (List.length vals)
-            )
+
+single_ : List a -> D.Decoder a
+single_ vals =
+    case vals of
+        [ val ] ->
+            D.succeed val
+
+        _ ->
+            D.fail <| "`single` expected 1 item, got " ++ String.fromInt (List.length vals)
