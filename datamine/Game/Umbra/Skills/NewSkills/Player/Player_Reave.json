@@ -1,0 +1,961 @@
+{
+  "MetaData": {
+    "Skill": [
+      {
+        "$": {
+          "UID": "player_reave",
+          "ESkill": "player_reave",
+          "Keywords": "attack_skill"
+        },
+        "WeaponRequirements": [
+          {
+            "$": {
+              "Requirements": "melee,"
+            }
+          }
+        ],
+        "CastingParams": [
+          {
+            "$": {
+              "CastBone": "L_Weapon_Bone"
+            }
+          }
+        ],
+        "Combo": [
+          {
+            "$": {
+              "ComboStarter": "Combo_Reave"
+            }
+          }
+        ],
+        "Animation": [
+          {
+            "$": {
+              "ScaleWithAttackSpeed": "1",
+              "AnimationDrivenMovement": "1",
+              "ActionString": "player_skill_reave_atk_01",
+              "IgnoreAnimationMovementWhenHoldingShift": "1"
+            }
+          }
+        ],
+        "HUD": [
+          {
+            "$": {
+              "HUDPicture": "../u_resources/spells/Active_Skills/reave.png",
+              "UIName": "@ui_AST_Reave",
+              "Lore": "@ui_AST_Reave_Lore",
+              "ActiveEffectTitle": "",
+              "ActiveEffectDesc": "",
+              "ASTTreeNumber": "1",
+              "ShowParamsInAST": "Cost,ROSTime,Cooldown,DamageDetail,DamageWeapon,DamageCritical,StatusAilmentsChance,SpecificReave",
+              "ShowParamsInTooltip": "Cost,Cooldown,DamageOverview,StatusAilmentsChance,SpecificReave"
+            }
+          }
+        ],
+        "Enneract": [
+          {
+            "$": {
+              "PickableParticle_MoveToGround": "U_CommonVFX_02.Esseract.Esseract_Projectile.Physical",
+              "PickableParticle_OnGround_Shape": "U_CommonVFX_02.Esseract.Esseract_Shape.Circle_Physical",
+              "PickableParticle_OnGround_Damage": "U_CommonVFX_02.Esseract.Esseract_Color.Physical",
+              "PickableParticle_OnGround_Symbol": "U_CommonVFX_02.Esseract.Esseract_Symbol.HEPHAARON",
+              "PickableParticle_OnGround_Indicator": "U_CommonVFX_02.Esseract.Esseract_Indicator.Physical",
+              "PickableParticle_OnGround_Pickup": "U_CommonVFX_02.Esseract.Esseract_Loot.Physical",
+              "SkillLearningParticle": "U_CommonVFX.Skill_Learn.Skill_Learn_Physical",
+              "Inventory_HUDPicture": "../u_resources/enneracts/reave.png",
+              "Inventory_LoreDesc": "@ui_enneract_lore"
+            }
+          }
+        ],
+        "DamageWeapon": [
+          {
+            "$": {
+              "PercentMin": "160",
+              "PercentMax": "175"
+            }
+          }
+        ],
+        "Shapes": [
+          {
+            "Entry": [
+              {
+                "$": {
+                  "ShapeName": "Player_Reave_Shape_1"
+                }
+              },
+              {
+                "$": {
+                  "ShapeName": "Player_Reave_Shape_2"
+                }
+              },
+              {
+                "$": {
+                  "ShapeName": "Player_Reave_Shape_3"
+                }
+              },
+              {
+                "$": {
+                  "ShapeName": "Player_Reave_Shape_4"
+                }
+              },
+              {
+                "$": {
+                  "ShapeName": "Player_Reave_Shape_5"
+                }
+              }
+            ]
+          }
+        ],
+        "VisualFeedback": [
+          {
+            "$": {
+              "TrailPresetBase": "default",
+              "FeedbackPresetBase": "Player_skill_leap",
+              "BloodDecalOrientation": "forward"
+            }
+          }
+        ],
+        "Specific_Reave": [
+          {
+            "$": {
+              "LeftGeometry": "Game/Objects/Animated_Object/Skill/Skill_Reave/skill_reaveL.cdf",
+              "RightGeometry": "Game/Objects/Animated_Object/Skill/Skill_Reave/skill_reaveR.cdf",
+              "UseRandDamage": "0",
+              "UseFullCombo": "0",
+              "IsBig": "0",
+              "ChainScale": "0.7"
+            },
+            "ReaveAnimation": [
+              {
+                "$": {
+                  "ComboId": "0",
+                  "PlayerTag": "player_skill_reave_atk_01",
+                  "LeftChain": "skill_reavel_atk_01",
+                  "LeftSpeed": "1.0",
+                  "RightChain": "skill_reaver_atk_01",
+                  "RightSpeed": "1.0"
+                }
+              },
+              {
+                "$": {
+                  "ComboId": "1",
+                  "PlayerTag": "player_skill_reave_atk_02",
+                  "LeftChain": "skill_reavel_atk_02",
+                  "LeftSpeed": "1.0",
+                  "RightChain": "skill_reaver_atk_02",
+                  "RightSpeed": "1.0"
+                }
+              },
+              {
+                "$": {
+                  "ComboId": "2",
+                  "PlayerTag": "player_skill_reave_atk_03",
+                  "LeftChain": "skill_reavel_atk_03",
+                  "LeftSpeed": "1.0",
+                  "RightChain": "skill_reaver_atk_03",
+                  "RightSpeed": "1.0"
+                }
+              },
+              {
+                "$": {
+                  "ComboId": "3",
+                  "PlayerTag": "player_skill_reave_atk_04",
+                  "LeftChain": "skill_reavel_atk_04",
+                  "LeftSpeed": "1.0",
+                  "RightChain": "skill_reaver_atk_04",
+                  "RightSpeed": "1.0"
+                }
+              },
+              {
+                "$": {
+                  "ComboId": "4",
+                  "PlayerTag": "player_skill_reave_atk_05",
+                  "LeftChain": "skill_reavel_atk_05",
+                  "LeftSpeed": "1.0",
+                  "RightChain": "skill_reaver_atk_05",
+                  "RightSpeed": "1.0"
+                }
+              }
+            ],
+            "ReaveSound": [
+              {
+                "$": {
+                  "ComboId": "0",
+                  "OnAnimStart": "Play_Skill_Reave_Attack_Swing_Combo0",
+                  "OnAnimCast": "",
+                  "OnHit": "Play_Skill_Reave_Attack_Swing_Impact"
+                }
+              },
+              {
+                "$": {
+                  "ComboId": "1",
+                  "OnAnimStart": "Play_Skill_Reave_Attack_Swing_Combo1",
+                  "OnAnimCast": "",
+                  "OnHit": "Play_Skill_Reave_Attack_Swing_Impact"
+                }
+              },
+              {
+                "$": {
+                  "ComboId": "2",
+                  "OnAnimStart": "Play_Skill_Reave_Attack_Swing_Combo2",
+                  "OnAnimCast": "",
+                  "OnHit": "Play_Skill_Reave_Attack_Swing_Impact"
+                }
+              },
+              {
+                "$": {
+                  "ComboId": "3",
+                  "OnAnimStart": "Play_Skill_Reave_Attack_Jump",
+                  "OnAnimCast": "Play_Skill_Reave_Attack_Jump_Impact",
+                  "OnHit": "Play_Skill_Reave_Attack_Swing_Impact"
+                }
+              },
+              {
+                "$": {
+                  "ComboId": "4",
+                  "OnAnimStart": "Play_Skill_Reave_Attack_Swing_Spin",
+                  "OnAnimCast": ""
+                }
+              }
+            ]
+          }
+        ],
+        "SoundTrigger": [
+          {
+            "$": {
+              "OnHit": "Play_Skill_Reave_Attack_Swing_Impact"
+            }
+          }
+        ],
+        "ResourceCost": [
+          {
+            "$": {
+              "RageCost": "-150",
+              "RageCostPerLevel": "0",
+              "ROSTransfertDuration": "0.5"
+            }
+          }
+        ],
+        "Material": [
+          {
+            "$": {
+              "ScaleWithAnimationSpeed": "1",
+              "ForceStopDuration": "0.5"
+            },
+            "EmissiveIntensity": [
+              {
+                "$": {
+                  "From": "100",
+                  "To": "500",
+                  "In": "0.5"
+                }
+              },
+              {
+                "$": {
+                  "From": "500",
+                  "To": "400",
+                  "In": "1"
+                }
+              },
+              {
+                "$": {
+                  "From": "400",
+                  "To": "500",
+                  "In": "2"
+                }
+              },
+              {
+                "$": {
+                  "From": "500",
+                  "To": "origin",
+                  "In": "2"
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "$": {
+          "UID": "player_Reave_variant_1",
+          "ESkill": "default_variant"
+        },
+        "HUD": [
+          {
+            "$": {
+              "UIName": "@ui_Variant_Reave_variant_1",
+              "Lore": "",
+              "HUDPictureVariant_Normal": "../u_resources/spells/variants/normal_activation_001.png",
+              "HUDPictureVariant_Hover": "../u_resources/spells/variants/normal_hover_001.png",
+              "HUDPictureVariant_Selected": "../u_resources/spells/variants/normal_clicked_001.png",
+              "HUDPictureVariant_NotEnoughPoints": "../u_resources/spells/variants/locked_points_001.png",
+              "HUDPictureVariant_InvalidLevel": "../u_resources/spells/variants/locked_levels_001.png",
+              "ShowParamsInTooltip": "SpecificReave,Cost"
+            }
+          }
+        ],
+        "ResourceCost": [
+          {
+            "$": {
+              "RageCost": "30"
+            }
+          }
+        ]
+      },
+      {
+        "$": {
+          "UID": "player_Reave_variant_2",
+          "ESkill": "default_variant"
+        },
+        "HUD": [
+          {
+            "$": {
+              "UIName": "@ui_Variant_Reave_variant_2",
+              "Lore": "",
+              "HUDPictureVariant_Normal": "../u_resources/spells/variants/normal_activation_003.png",
+              "HUDPictureVariant_Hover": "../u_resources/spells/variants/normal_hover_003.png",
+              "HUDPictureVariant_Selected": "../u_resources/spells/variants/normal_clicked_003.png",
+              "HUDPictureVariant_NotEnoughPoints": "../u_resources/spells/variants/locked_points_003.png",
+              "HUDPictureVariant_InvalidLevel": "../u_resources/spells/variants/locked_levels_003.png",
+              "ShowParamsInTooltip": "SpecificReave,DamageWeapon"
+            }
+          }
+        ],
+        "DamageWeapon": [
+          {
+            "$": {
+              "PercentMax": "35",
+              "PercentMin": "35"
+            }
+          }
+        ]
+      },
+      {
+        "$": {
+          "UID": "player_Reave_variant_3",
+          "ESkill": "default_variant"
+        },
+        "HUD": [
+          {
+            "$": {
+              "UIName": "@ui_Variant_Reave_variant_3",
+              "Lore": "",
+              "HUDPictureVariant_Normal": "../u_resources/spells/variants/normal_activation_003.png",
+              "HUDPictureVariant_Hover": "../u_resources/spells/variants/normal_hover_003.png",
+              "HUDPictureVariant_Selected": "../u_resources/spells/variants/normal_clicked_003.png",
+              "HUDPictureVariant_NotEnoughPoints": "../u_resources/spells/variants/locked_points_003.png",
+              "HUDPictureVariant_InvalidLevel": "../u_resources/spells/variants/locked_levels_003.png",
+              "ShowParamsInTooltip": "SpecificReave"
+            }
+          }
+        ],
+        "Shapes": [
+          {
+            "Entry": [
+              {
+                "$": {
+                  "ShapeName": "Player_Reave_Shape_1_big"
+                }
+              },
+              {
+                "$": {
+                  "ShapeName": "Player_Reave_Shape_2_big"
+                }
+              },
+              {
+                "$": {
+                  "ShapeName": "Player_Reave_Shape_3_big"
+                }
+              },
+              {
+                "$": {
+                  "ShapeName": "Player_Reave_Shape_4_big"
+                }
+              },
+              {
+                "$": {
+                  "ShapeName": "Player_Reave_Shape_5_big"
+                }
+              }
+            ]
+          }
+        ],
+        "Specific_Reave": [
+          {
+            "$": {
+              "LeftGeometry": "Game/Objects/Animated_Object/Skill/Skill_Reave/skill_reaveL_Big.cdf",
+              "RightGeometry": "Game/Objects/Animated_Object/Skill/Skill_Reave/skill_reaveR_Big.cdf",
+              "IsBig": "1",
+              "ChainScale": "0.4"
+            },
+            "ReaveAnimation": [
+              {
+                "$": {
+                  "ComboId": "0",
+                  "PlayerTag": "player_skill_reave_atk_big_01",
+                  "LeftChain": "skill_reavel_atk_01",
+                  "LeftSpeed": "1.0",
+                  "RightChain": "skill_reaver_atk_01",
+                  "RightSpeed": "1.0"
+                }
+              },
+              {
+                "$": {
+                  "ComboId": "1",
+                  "PlayerTag": "player_skill_reave_atk_big_02",
+                  "LeftChain": "skill_reavel_atk_02",
+                  "LeftSpeed": "1.0",
+                  "RightChain": "skill_reaver_atk_02",
+                  "RightSpeed": "1.0"
+                }
+              },
+              {
+                "$": {
+                  "ComboId": "2",
+                  "PlayerTag": "player_skill_reave_atk_big_03",
+                  "LeftChain": "skill_reavel_atk_03",
+                  "LeftSpeed": "1.0",
+                  "RightChain": "skill_reaver_atk_03",
+                  "RightSpeed": "1.0"
+                }
+              },
+              {
+                "$": {
+                  "ComboId": "3",
+                  "PlayerTag": "player_skill_reave_atk_big_04",
+                  "LeftChain": "skill_reavel_atk_04",
+                  "LeftSpeed": "1.0",
+                  "RightChain": "skill_reaver_atk_04",
+                  "RightSpeed": "1.0"
+                }
+              },
+              {
+                "$": {
+                  "ComboId": "4",
+                  "PlayerTag": "player_skill_reave_atk_big_05",
+                  "LeftChain": "skill_reavel_atk_05",
+                  "LeftSpeed": "1.0",
+                  "RightChain": "skill_reaver_atk_05",
+                  "RightSpeed": "1.0"
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "$": {
+          "UID": "player_Reave_variant_4",
+          "ESkill": "default_variant"
+        },
+        "HUD": [
+          {
+            "$": {
+              "UIName": "@ui_Variant_Reave_variant_4",
+              "Lore": "@ui_Variant_Reave_variant_4_Lore",
+              "HUDPictureVariant_Normal": "../u_resources/spells/variants/normal_activation_005.png",
+              "HUDPictureVariant_Hover": "../u_resources/spells/variants/normal_hover_005.png",
+              "HUDPictureVariant_Selected": "../u_resources/spells/variants/normal_clicked_005.png",
+              "HUDPictureVariant_NotEnoughPoints": "../u_resources/spells/variants/locked_points_005.png",
+              "HUDPictureVariant_InvalidLevel": "../u_resources/spells/variants/locked_levels_005.png",
+              "ShowParamsInTooltip": "SpecificReave,LifeLeech"
+            }
+          }
+        ],
+        "LifeLeech": [
+          {
+            "$": {
+              "ScaleWithCasterLife": "1",
+              "Inverted": "1",
+              "MinTransfertPercentBasedOnLife": "10",
+              "MaxTransfertPercentBasedOnLife": "30"
+            }
+          }
+        ]
+      },
+      {
+        "$": {
+          "UID": "player_Reave_variant_5",
+          "ESkill": "default_variant"
+        },
+        "HUD": [
+          {
+            "$": {
+              "UIName": "@ui_Variant_Reave_variant_5",
+              "Lore": "@ui_Variant_Reave_variant_5_Lore",
+              "HUDPictureVariant_Normal": "../u_resources/spells/variants/normal_activation_005.png",
+              "HUDPictureVariant_Hover": "../u_resources/spells/variants/normal_hover_005.png",
+              "HUDPictureVariant_Selected": "../u_resources/spells/variants/normal_clicked_005.png",
+              "HUDPictureVariant_NotEnoughPoints": "../u_resources/spells/variants/locked_points_005.png",
+              "HUDPictureVariant_InvalidLevel": "../u_resources/spells/variants/locked_levels_005.png",
+              "ShowParamsInTooltip": "SpecificReave,StatusAilmentsChance"
+            }
+          }
+        ],
+        "Damage_Conversion": [
+          {
+            "Entry": [
+              {
+                "$": {
+                  "From": "physical",
+                  "To": "sacred",
+                  "ConversionRate": "100"
+                }
+              }
+            ]
+          }
+        ],
+        "WeaponRequirements": [
+          {
+            "$": {
+              "Requirements": "melee,sacred"
+            }
+          }
+        ],
+        "StatusAilment": [
+          {
+            "weakness": [
+              {
+                "$": {
+                  "Chance": "20",
+                  "ChanceMode": "AddToBase"
+                }
+              }
+            ]
+          }
+        ],
+        "Specific_Reave": [
+          {
+            "$": {
+              "SacredDamage": "1",
+              "LeftGeometry": "Game/Objects/Animated_Object/Skill/Skill_Reave/skill_reaveL_sacred.cdf",
+              "RightGeometry": "Game/Objects/Animated_Object/Skill/Skill_Reave/skill_reaveR_sacred.cdf"
+            },
+            "ReaveSound": [
+              {
+                "$": {
+                  "ComboId": "0",
+                  "OnAnimStart": "Play_Skill_Reave_Attack_Swing_Combo0_Sacred",
+                  "OnAnimCast": "",
+                  "OnHit": "Play_Skill_Reave_Attack_Swing_Impact_Sacred"
+                }
+              },
+              {
+                "$": {
+                  "ComboId": "1",
+                  "OnAnimStart": "Play_Skill_Reave_Attack_Swing_Combo1_Sacred",
+                  "OnAnimCast": "",
+                  "OnHit": "Play_Skill_Reave_Attack_Swing_Impact_Sacred"
+                }
+              },
+              {
+                "$": {
+                  "ComboId": "2",
+                  "OnAnimStart": "Play_Skill_Reave_Attack_Swing_Combo2_Sacred",
+                  "OnAnimCast": "",
+                  "OnHit": "Play_Skill_Reave_Attack_Swing_Impact_Sacred"
+                }
+              },
+              {
+                "$": {
+                  "ComboId": "3",
+                  "OnAnimStart": "Play_Skill_Reave_Attack_Jump",
+                  "OnAnimCast": "Play_Skill_Reave_Attack_Jump_Impact_Sacred",
+                  "OnHit": "Play_Skill_Reave_Attack_Swing_Impact_Sacred"
+                }
+              },
+              {
+                "$": {
+                  "ComboId": "4",
+                  "OnAnimStart": "Play_Skill_Reave_Attack_Swing_Spin",
+                  "OnAnimCast": ""
+                }
+              }
+            ]
+          }
+        ],
+        "SoundTrigger": [
+          {
+            "$": {
+              "OnHit": "Play_Skill_Reave_Attack_Swing_Impact"
+            }
+          }
+        ]
+      },
+      {
+        "$": {
+          "UID": "player_Reave_variant_6",
+          "ESkill": "default_variant"
+        },
+        "HUD": [
+          {
+            "$": {
+              "UIName": "@ui_Variant_Reave_variant_6",
+              "Lore": "",
+              "HUDPictureVariant_Normal": "../u_resources/spells/variants/normal_activation_001.png",
+              "HUDPictureVariant_Hover": "../u_resources/spells/variants/normal_hover_001.png",
+              "HUDPictureVariant_Selected": "../u_resources/spells/variants/normal_clicked_001.png",
+              "HUDPictureVariant_NotEnoughPoints": "../u_resources/spells/variants/locked_points_001.png",
+              "HUDPictureVariant_InvalidLevel": "../u_resources/spells/variants/locked_levels_001.png",
+              "ShowParamsInTooltip": "SpecificReave,StatusAilmentsChance"
+            }
+          }
+        ],
+        "StatusAilment": [
+          {
+            "$": {
+              "AllAilmentsInflictScoreIncreasePercent": "40"
+            }
+          }
+        ]
+      },
+      {
+        "$": {
+          "UID": "player_Reave_variant_7",
+          "ESkill": "default_variant"
+        },
+        "HUD": [
+          {
+            "$": {
+              "UIName": "@ui_Variant_Reave_variant_7",
+              "Lore": "",
+              "HUDPictureVariant_Normal": "../u_resources/spells/variants/normal_activation_001.png",
+              "HUDPictureVariant_Hover": "../u_resources/spells/variants/normal_hover_001.png",
+              "HUDPictureVariant_Selected": "../u_resources/spells/variants/normal_clicked_001.png",
+              "HUDPictureVariant_NotEnoughPoints": "../u_resources/spells/variants/locked_points_001.png",
+              "HUDPictureVariant_InvalidLevel": "../u_resources/spells/variants/locked_levels_001.png",
+              "ShowParamsInTooltip": "SpecificReave,DamageCritical"
+            }
+          }
+        ],
+        "DamageCritical": [
+          {
+            "$": {
+              "CriticalDamageModifier": "30"
+            }
+          }
+        ]
+      },
+      {
+        "$": {
+          "UID": "player_Reave_variant_8",
+          "ESkill": "default_variant"
+        },
+        "HUD": [
+          {
+            "$": {
+              "UIName": "@ui_Variant_Reave_variant_8",
+              "Lore": "",
+              "HUDPictureVariant_Normal": "../u_resources/spells/variants/normal_activation_003.png",
+              "HUDPictureVariant_Hover": "../u_resources/spells/variants/normal_hover_003.png",
+              "HUDPictureVariant_Selected": "../u_resources/spells/variants/normal_clicked_003.png",
+              "HUDPictureVariant_NotEnoughPoints": "../u_resources/spells/variants/locked_points_003.png",
+              "HUDPictureVariant_InvalidLevel": "../u_resources/spells/variants/locked_levels_003.png",
+              "ShowParamsInTooltip": "SpecificReave"
+            }
+          }
+        ],
+        "Combo": [
+          {
+            "$": {
+              "ComboStarter": "Combo_Reave_Increase"
+            }
+          }
+        ],
+        "Specific_Reave": [
+          {
+            "$": {
+              "UseFullCombo": "1"
+            },
+            "ReaveSound": [
+              {
+                "$": {
+                  "ComboId": "0",
+                  "OnAnimStart": "Play_Skill_Reave_Attack_Swing_Combo0",
+                  "OnAnimCast": "",
+                  "OnHit": "Play_Skill_Reave_Attack_Swing_Impact"
+                }
+              },
+              {
+                "$": {
+                  "ComboId": "1",
+                  "OnAnimStart": "Play_Skill_Reave_Attack_Swing_Combo1",
+                  "OnAnimCast": "",
+                  "OnHit": "Play_Skill_Reave_Attack_Swing_Impact"
+                }
+              },
+              {
+                "$": {
+                  "ComboId": "2",
+                  "OnAnimStart": "Play_Skill_Reave_Attack_Swing_Combo2",
+                  "OnAnimCast": "",
+                  "OnHit": "Play_Skill_Reave_Attack_Swing_Impact"
+                }
+              },
+              {
+                "$": {
+                  "ComboId": "3",
+                  "OnAnimStart": "Play_Skill_Reave_Attack_Jump",
+                  "OnAnimCast": "Play_Skill_Reave_Attack_Jump_Impact",
+                  "OnHit": "Play_Skill_Reave_Attack_Swing_Impact"
+                }
+              },
+              {
+                "$": {
+                  "ComboId": "4",
+                  "OnAnimStart": "Play_Skill_Reave_Attack_Swing_Spin",
+                  "OnAnimCast": ""
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "$": {
+          "UID": "player_Reave_variant_3,player_Reave_variant_5",
+          "ESkill": "default_variant_combo"
+        },
+        "Specific_Reave": [
+          {
+            "$": {
+              "LeftGeometry": "Game/Objects/Animated_Object/Skill/Skill_Reave/skill_reaveL_Big_sacred.cdf",
+              "RightGeometry": "Game/Objects/Animated_Object/Skill/Skill_Reave/skill_reaveR_Big_sacred.cdf"
+            }
+          }
+        ]
+      },
+      {
+        "$": {
+          "UID": "player_Reave_variant_9",
+          "ESkill": "default_variant"
+        },
+        "HUD": [
+          {
+            "$": {
+              "UIName": "@ui_Variant_Reave_variant_9",
+              "Lore": "",
+              "HUDPictureVariant_Normal": "../u_resources/spells/variants/normal_activation_003.png",
+              "HUDPictureVariant_Hover": "../u_resources/spells/variants/normal_hover_003.png",
+              "HUDPictureVariant_Selected": "../u_resources/spells/variants/normal_clicked_003.png",
+              "HUDPictureVariant_NotEnoughPoints": "../u_resources/spells/variants/locked_points_003.png",
+              "HUDPictureVariant_InvalidLevel": "../u_resources/spells/variants/locked_levels_003.png",
+              "ShowParamsInTooltip": "SpecificReave"
+            }
+          }
+        ],
+        "Specific_Reave": [
+          {
+            "$": {
+              "BuffName": "AST_Reave_Buff",
+              "BuffDuration": "10"
+            }
+          }
+        ]
+      },
+      {
+        "$": {
+          "UID": "player_Reave_variant_10",
+          "ESkill": "default_variant"
+        },
+        "HUD": [
+          {
+            "$": {
+              "UIName": "@ui_Variant_Reave_variant_10",
+              "Lore": "",
+              "HUDPictureVariant_Normal": "../u_resources/spells/variants/normal_activation_001.png",
+              "HUDPictureVariant_Hover": "../u_resources/spells/variants/normal_hover_001.png",
+              "HUDPictureVariant_Selected": "../u_resources/spells/variants/normal_clicked_001.png",
+              "HUDPictureVariant_NotEnoughPoints": "../u_resources/spells/variants/locked_points_001.png",
+              "HUDPictureVariant_InvalidLevel": "../u_resources/spells/variants/locked_levels_001.png",
+              "ShowParamsInTooltip": "SpecificReave"
+            }
+          }
+        ],
+        "Specific_Reave": [
+          {
+            "$": {
+              "RageOnKill": "20"
+            }
+          }
+        ]
+      },
+      {
+        "$": {
+          "UID": "player_Reave_variant_11",
+          "ESkill": "default_variant"
+        },
+        "HUD": [
+          {
+            "$": {
+              "UIName": "@ui_Variant_Reave_variant_11",
+              "Lore": "@ui_Variant_Reave_variant_11_Lore",
+              "HUDPictureVariant_Normal": "../u_resources/spells/variants/normal_activation_005.png",
+              "HUDPictureVariant_Hover": "../u_resources/spells/variants/normal_hover_005.png",
+              "HUDPictureVariant_Selected": "../u_resources/spells/variants/normal_clicked_005.png",
+              "HUDPictureVariant_NotEnoughPoints": "../u_resources/spells/variants/locked_points_005.png",
+              "HUDPictureVariant_InvalidLevel": "../u_resources/spells/variants/locked_levels_005.png",
+              "ShowParamsInTooltip": "SpecificReave"
+            }
+          }
+        ],
+        "Specific_Reave": [
+          {
+            "$": {
+              "DamageMultiplierAtNoHP": "1.5"
+            }
+          }
+        ]
+      },
+      {
+        "$": {
+          "UID": "player_Reave_variant_12",
+          "ESkill": "default_variant"
+        },
+        "HUD": [
+          {
+            "$": {
+              "UIName": "@ui_Variant_Reave_variant_12",
+              "Lore": "",
+              "HUDPictureVariant_Normal": "../u_resources/spells/variants/normal_activation_003.png",
+              "HUDPictureVariant_Hover": "../u_resources/spells/variants/normal_hover_003.png",
+              "HUDPictureVariant_Selected": "../u_resources/spells/variants/normal_clicked_003.png",
+              "HUDPictureVariant_NotEnoughPoints": "../u_resources/spells/variants/locked_points_003.png",
+              "HUDPictureVariant_InvalidLevel": "../u_resources/spells/variants/locked_levels_003.png",
+              "ShowParamsInTooltip": "SpecificReave,DamageCritical"
+            }
+          }
+        ],
+        "DamageCritical": [
+          {
+            "$": {
+              "CriticalInflictScoreModifier": "80"
+            }
+          }
+        ]
+      },
+      {
+        "$": {
+          "UID": "player_Reave_variant_13",
+          "ESkill": "default_variant"
+        },
+        "HUD": [
+          {
+            "$": {
+              "UIName": "@ui_Variant_Reave_variant_13",
+              "Lore": "",
+              "HUDPictureVariant_Normal": "../u_resources/spells/variants/normal_activation_001.png",
+              "HUDPictureVariant_Hover": "../u_resources/spells/variants/normal_hover_001.png",
+              "HUDPictureVariant_Selected": "../u_resources/spells/variants/normal_clicked_001.png",
+              "HUDPictureVariant_NotEnoughPoints": "../u_resources/spells/variants/locked_points_001.png",
+              "HUDPictureVariant_InvalidLevel": "../u_resources/spells/variants/locked_levels_001.png",
+              "ShowParamsInTooltip": "SpecificReave,StatusAilmentsChance"
+            }
+          }
+        ],
+        "StatusAilment": [
+          {
+            "$": {
+              "AllAilmentsInflictDamageIncreasePercent": "40"
+            }
+          }
+        ]
+      },
+      {
+        "$": {
+          "UID": "player_Reave_variant_14",
+          "ESkill": "default_variant"
+        },
+        "HUD": [
+          {
+            "$": {
+              "UIName": "@ui_Variant_Reave_variant_14",
+              "Lore": "",
+              "HUDPictureVariant_Normal": "../u_resources/spells/variants/normal_activation_001.png",
+              "HUDPictureVariant_Hover": "../u_resources/spells/variants/normal_hover_001.png",
+              "HUDPictureVariant_Selected": "../u_resources/spells/variants/normal_clicked_001.png",
+              "HUDPictureVariant_NotEnoughPoints": "../u_resources/spells/variants/locked_points_001.png",
+              "HUDPictureVariant_InvalidLevel": "../u_resources/spells/variants/locked_levels_001.png",
+              "ShowParamsInTooltip": "SpecificReave,DamageWeapon"
+            }
+          }
+        ],
+        "DamageWeapon": [
+          {
+            "$": {
+              "PercentMin": "17",
+              "PercentMinPerLevel": "0",
+              "PercentMax": "17",
+              "PercentMaxPerLevel": "0"
+            }
+          }
+        ]
+      },
+      {
+        "$": {
+          "UID": "player_Reave_variant_15",
+          "ESkill": "default_variant"
+        },
+        "HUD": [
+          {
+            "$": {
+              "UIName": "@ui_Variant_Reave_variant_15",
+              "Lore": "",
+              "HUDPictureVariant_Normal": "../u_resources/spells/variants/normal_activation_001.png",
+              "HUDPictureVariant_Hover": "../u_resources/spells/variants/normal_hover_001.png",
+              "HUDPictureVariant_Selected": "../u_resources/spells/variants/normal_clicked_001.png",
+              "HUDPictureVariant_NotEnoughPoints": "../u_resources/spells/variants/locked_points_001.png",
+              "HUDPictureVariant_InvalidLevel": "../u_resources/spells/variants/locked_levels_001.png",
+              "ShowParamsInTooltip": "SpecificReave"
+            }
+          }
+        ],
+        "CastingSpeed": [
+          {
+            "$": {
+              "AttackSpeedPercent": "120",
+              "ApplyOnCharged": "1"
+            }
+          }
+        ]
+      },
+      {
+        "$": {
+          "UID": "player_Reave_variant_16",
+          "ESkill": "default_variant"
+        },
+        "HUD": [
+          {
+            "$": {
+              "UIName": "@ui_Variant_Reave_variant_16",
+              "Lore": "",
+              "HUDPictureVariant_Normal": "../u_resources/spells/variants/normal_activation_003.png",
+              "HUDPictureVariant_Hover": "../u_resources/spells/variants/normal_hover_003.png",
+              "HUDPictureVariant_Selected": "../u_resources/spells/variants/normal_clicked_003.png",
+              "HUDPictureVariant_NotEnoughPoints": "../u_resources/spells/variants/locked_points_003.png",
+              "HUDPictureVariant_InvalidLevel": "../u_resources/spells/variants/locked_levels_003.png",
+              "ShowParamsInTooltip": "SpecificReave,DamageCritical,DamageWeapon"
+            }
+          }
+        ],
+        "DamageCritical": [
+          {
+            "$": {
+              "CriticalInflictScoreModifier": "-60"
+            }
+          }
+        ],
+        "DamageWeapon": [
+          {
+            "$": {
+              "PercentMin": "50",
+              "PercentMinPerLevel": "0",
+              "PercentMax": "50",
+              "PercentMaxPerLevel": "0"
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

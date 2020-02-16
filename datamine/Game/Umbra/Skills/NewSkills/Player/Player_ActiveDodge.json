@@ -1,0 +1,141 @@
+{
+  "MetaData": {
+    "Skill": [
+      {
+        "$": {
+          "ESkill": "player_activedodge",
+          "UID": "player_activedodge",
+          "Keywords": ""
+        },
+        "Attachments": [
+          {
+            "$": {
+              "HideEquippedItemsWhilecasting_Left": "1",
+              "HideEquippedItemsWhilecasting_Right": "1"
+            }
+          }
+        ],
+        "Animation": [
+          {
+            "$": {
+              "ActionString": "active_dodge",
+              "ForceVirtualUpdate": "1",
+              "ScaleWithAttackSpeed": "1"
+            }
+          }
+        ],
+        "CastingParams": [
+          {
+            "$": {
+              "CanCastWhileMoving": "0",
+              "CastBone": "",
+              "MaximumTurnRate": "0",
+              "CountAsMovementForAnimationCancelling": "1"
+            }
+          }
+        ],
+        "Cooldown": [
+          {
+            "$": {
+              "Cooldown": "0",
+              "CooldownPerLevel": "0"
+            }
+          }
+        ],
+        "Range": [
+          {
+            "$": {
+              "DashRange": "10"
+            }
+          }
+        ],
+        "ResourceCost": [
+          {
+            "$": {
+              "StaminaCost": "-1"
+            }
+          }
+        ],
+        "SoundTrigger": [
+          {
+            "$": {
+              "OnInterrupt": "STOP_Skill_ActiveDodge",
+              "OnAnimCast": "PLAY_Skill_ActiveDodge"
+            }
+          }
+        ],
+        "SkillSpecific": [
+          {
+            "$": {
+              "DodgeSpeed": "22",
+              "InvulnerabilityDuration": "0.35",
+              "MoveDistance": "7",
+              "DecoyCharacterFilepath": "Objects/characters/players/Male/Male_Hollywood_clone_02.cdf",
+              "DecoyAnim": "cmb_h1_melee_idle_01"
+            }
+          }
+        ],
+        "DamageWeapon": [
+          {
+            "$": {
+              "PercentMin": "25",
+              "PercentMinPerLevel": "0",
+              "PercentMax": "25",
+              "PercentMaxPerLevel": "0"
+            }
+          }
+        ],
+        "VisualFeedback": [
+          {
+            "$": {
+              "TrailPresetBase": "default",
+              "FeedbackPresetBase": "Player_skill_frostcomet",
+              "BloodDecalOrientation": "forward"
+            }
+          }
+        ],
+        "ParticleList": [
+          {
+            "Particle": [
+              {
+                "$": {
+                  "Key": "DecoyStart",
+                  "Name": "U_Character.Skills.Teleport_In_02_White",
+                  "Offset": "0,0.5,0",
+                  "Direction": "0,0,1",
+                  "Scale": "1"
+                }
+              },
+              {
+                "$": {
+                  "Key": "DecoyBodyAura",
+                  "Name": "U_Character.Skills.Teleport_Decoy_BodyAura_DarkBlue",
+                  "Offset": "0,0.5,0",
+                  "Bone": "Bip01_Spine2",
+                  "Direction": "0,0,1",
+                  "Scale": "1"
+                }
+              },
+              {
+                "$": {
+                  "Key": "DecoyGroundAura",
+                  "Name": "U_Character.Skills.Teleport_Decoy_BodyAura_DarkBlue",
+                  "Direction": "0,0,1",
+                  "Scale": "1"
+                }
+              },
+              {
+                "$": {
+                  "Key": "DecoyEnd",
+                  "Name": "U_Character_02.Summon.Summon_Shadow_Spawn_01",
+                  "Direction": "0,0,1",
+                  "Scale": "0.9"
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

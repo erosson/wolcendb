@@ -1,0 +1,832 @@
+{
+  "MetaData": {
+    "Skill": [
+      {
+        "$": {
+          "UID": "player_dualstrike",
+          "ESkill": "player_dualstrike",
+          "Keywords": "attack_skill,additional_projectile"
+        },
+        "WeaponRequirements": [
+          {
+            "$": {
+              "Requirements": "rogue"
+            }
+          }
+        ],
+        "Animation": [
+          {
+            "$": {
+              "ActionString": "player_skill_dualstrike_narrow_windup",
+              "ActionString_FollowUp": "player_skill_dualstrike_narrow_followup",
+              "AnimationDrivenMovement": "0"
+            }
+          }
+        ],
+        "CastingParams": [
+          {
+            "$": {
+              "CastBone": "",
+              "CanCastWhileMoving": "0",
+              "MaximumTurnRate": "0",
+              "ShouldMoveInRange": "1"
+            }
+          }
+        ],
+        "SkillLoop": [
+          {
+            "$": {
+              "PresetID": "skillloop_empty"
+            }
+          }
+        ],
+        "HUD": [
+          {
+            "$": {
+              "HUDPicture": "../u_resources/spells/Active_Skills/dualstrike.png",
+              "UIName": "@ui_AST_DualStrike",
+              "Lore": "@ui_AST_DualStrike_Lore",
+              "ActiveEffectTitle": "",
+              "ActiveEffectDesc": "",
+              "ASTTreeNumber": "1",
+              "ShowParamsInAST": "Cost,ROSTime,Cooldown,Range,DamageDetail,DamageWeapon,DamageCritical,StatusAilmentsChance,SpecificDualStrike,BlownAway",
+              "ShowParamsInTooltip": "Cost,Cooldown,DamageOverview,StatusAilmentsChance,SpecificDualStrike"
+            }
+          }
+        ],
+        "Enneract": [
+          {
+            "$": {
+              "PickableParticle_MoveToGround": "U_CommonVFX_02.Esseract.Esseract_Projectile.Physical",
+              "PickableParticle_OnGround_Shape": "U_CommonVFX_02.Esseract.Esseract_Shape.Circle_Physical",
+              "PickableParticle_OnGround_Damage": "U_CommonVFX_02.Esseract.Esseract_Color.Physical",
+              "PickableParticle_OnGround_Symbol": "U_CommonVFX_02.Esseract.Esseract_Symbol.HEPHAARON",
+              "PickableParticle_OnGround_Indicator": "U_CommonVFX_02.Esseract.Esseract_Indicator.Physical",
+              "PickableParticle_OnGround_Pickup": "U_CommonVFX_02.Esseract.Esseract_Loot.Physical",
+              "SkillLearningParticle": "U_CommonVFX.Skill_Learn.Skill_Learn_Physical",
+              "Inventory_HUDPicture": "../u_resources/enneracts/dualstrike.png",
+              "Inventory_LoreDesc": "@ui_enneract_lore"
+            }
+          }
+        ],
+        "Aggression": [
+          {
+            "$": {
+              "TargetValueOnHit": "5"
+            }
+          }
+        ],
+        "DamageWeapon": [
+          {
+            "$": {
+              "PercentMin": "60",
+              "PercentMinPerLevel": "0",
+              "PercentMax": "60",
+              "PercentMaxPerLevel": "0"
+            }
+          }
+        ],
+        "Shapes": [
+          {
+            "Entry": [
+              {
+                "$": {
+                  "ShapeName": "player_dualstrike_shape"
+                }
+              }
+            ]
+          }
+        ],
+        "Cooldown": [
+          {
+            "$": {
+              "Cooldown": "0.0",
+              "CooldownPerLevel": "0"
+            }
+          }
+        ],
+        "ResourceCost": [
+          {
+            "$": {
+              "RageCost": "-50",
+              "ROSTransfertDuration": "0.5"
+            }
+          }
+        ],
+        "VisualFeedback": [
+          {
+            "$": {
+              "TrailPresetBase": "player_skill_dualstrike",
+              "BloodDecalOrientation": "forward",
+              "FeedbackPresetBase": "Player_skill_dualstrike"
+            }
+          }
+        ],
+        "Range": [
+          {
+            "$": {
+              "AttackRange": "10",
+              "DashIgnoresMidwaysCollisions": "1"
+            }
+          }
+        ],
+        "ParticleList": [
+          {
+            "Particle": [
+              {
+                "$": {
+                  "Key": "WeaponAppearL",
+                  "Name": "U_Character.Skills.DualStrike_Summon_Appear",
+                  "Bone": "L_Weapon_Bone",
+                  "Direction": "0,1,0"
+                }
+              },
+              {
+                "$": {
+                  "Key": "WeaponAppearR",
+                  "Name": "U_Character.Skills.DualStrike_Summon_Appear",
+                  "Bone": "R_Weapon_Bone",
+                  "Direction": "0,1,0"
+                }
+              },
+              {
+                "$": {
+                  "Key": "WeaponDisappearL",
+                  "Name": "U_Character.Skills.DualStrike_Summon_Disappear",
+                  "Bone": "L_Weapon_Bone",
+                  "Direction": "0,1,0"
+                }
+              },
+              {
+                "$": {
+                  "Key": "WeaponDisappearR",
+                  "Name": "U_Character.Skills.DualStrike_Summon_Disappear",
+                  "Bone": "R_Weapon_Bone",
+                  "Direction": "0,1,0"
+                }
+              },
+              {
+                "$": {
+                  "Key": "Trail",
+                  "Name": "U_Character.Skills.DualStrike_Dash_01",
+                  "Offset": "0,0,1.5",
+                  "Direction": "0,1,0"
+                }
+              },
+              {
+                "$": {
+                  "Key": "Transfer",
+                  "Name": "U_Character.Skills.DualStrike_Transfer_Circle_01",
+                  "offset": "0,0,0",
+                  "Direction": "0,1,0"
+                }
+              }
+            ]
+          }
+        ],
+        "Specific_DualStrike": [
+          {
+            "$": {
+              "AutoTargetRadius": "3",
+              "MultiTarget": "1",
+              "WeaponAppearParticleDelay": "0.08",
+              "RangeConsideredMelee": "3.5",
+              "DashSpeed": "60",
+              "DashActionString_In": "player_skill_dualstrike_dash_narrow_in",
+              "DashActionString_Loop": "player_skill_dualstrike_dash_narrow_loop",
+              "DashActionString_Out": "player_skill_dualstrike_dash_narrow_out",
+              "TransferStackRadius": "2.0",
+              "LoopStartSound": "Play_Skill_DualStrike_Loop_Start",
+              "ShadowTrailPreset": "U_Character.Skills.DualStrike_Stab_Attack_01_Shadow"
+            }
+          }
+        ],
+        "SoundTrigger": [
+          {
+            "$": {
+              "OnAnimLoopIn": "Play_Skill_DualStrike_Dash",
+              "OnAnimLoopOut": "Play_Skill_DualStrike_Dash_Attack",
+              "OnAnimCast": "Skill_DualStrike_Followup_Attack",
+              "OnInterrupt": "",
+              "OnHit": "Play_Skill_DualStrike_Attack_Impact",
+              "PlayAttackVoice": "0"
+            }
+          }
+        ]
+      },
+      {
+        "$": {
+          "UID": "player_dualstrike_variant_1",
+          "ESkill": "default_variant"
+        },
+        "HUD": [
+          {
+            "$": {
+              "UIName": "@ui_Variant_DualStrike_variant_1",
+              "Lore": "",
+              "HUDPictureVariant_Normal": "../u_resources/spells/variants/normal_activation_003.png",
+              "HUDPictureVariant_Hover": "../u_resources/spells/variants/normal_hover_003.png",
+              "HUDPictureVariant_Selected": "../u_resources/spells/variants/normal_clicked_003.png",
+              "HUDPictureVariant_NotEnoughPoints": "../u_resources/spells/variants/locked_points_003.png",
+              "HUDPictureVariant_InvalidLevel": "../u_resources/spells/variants/locked_levels_003.png",
+              "ShowParamsInTooltip": "SpecificDualStrike"
+            }
+          }
+        ],
+        "Animation": [
+          {
+            "$": {
+              "Scale": "1.20"
+            }
+          }
+        ]
+      },
+      {
+        "$": {
+          "UID": "player_dualstrike_variant_2",
+          "ESkill": "default_variant"
+        },
+        "HUD": [
+          {
+            "$": {
+              "UIName": "@ui_Variant_DualStrike_variant_2",
+              "Lore": "",
+              "HUDPictureVariant_Normal": "../u_resources/spells/variants/normal_activation_003.png",
+              "HUDPictureVariant_Hover": "../u_resources/spells/variants/normal_hover_003.png",
+              "HUDPictureVariant_Selected": "../u_resources/spells/variants/normal_clicked_003.png",
+              "HUDPictureVariant_NotEnoughPoints": "../u_resources/spells/variants/locked_points_003.png",
+              "HUDPictureVariant_InvalidLevel": "../u_resources/spells/variants/locked_levels_003.png",
+              "ShowParamsInTooltip": "SpecificDualStrike"
+            }
+          }
+        ],
+        "Animation": [
+          {
+            "$": {
+              "ActionString": "player_skill_dualstrike_windup",
+              "ActionString_FollowUp": "player_skill_dualstrike_followup"
+            }
+          }
+        ],
+        "Shapes": [
+          {
+            "Entry": [
+              {
+                "$": {
+                  "ShapeName": "player_dualstrikewider_shape"
+                }
+              }
+            ]
+          }
+        ],
+        "Specific_DualStrike": [
+          {
+            "$": {
+              "MultiTarget": "1",
+              "DashActionString_In": "player_skill_dualstrike_dash_in",
+              "DashActionString_Loop": "player_skill_dualstrike_dash_loop",
+              "DashActionString_Out": "player_skill_dualstrike_dash_out",
+              "ShadowTrailPreset": "U_Character.Skills.DualStrike_Stab_Attack_Wider_02_Shadow"
+            }
+          }
+        ]
+      },
+      {
+        "$": {
+          "UID": "player_dualstrike_variant_3",
+          "ESkill": "default_variant"
+        },
+        "HUD": [
+          {
+            "$": {
+              "UIName": "@ui_Variant_DualStrike_variant_3",
+              "Lore": "",
+              "HUDPictureVariant_Normal": "../u_resources/spells/variants/normal_activation_001.png",
+              "HUDPictureVariant_Hover": "../u_resources/spells/variants/normal_hover_001.png",
+              "HUDPictureVariant_Selected": "../u_resources/spells/variants/normal_clicked_001.png",
+              "HUDPictureVariant_NotEnoughPoints": "../u_resources/spells/variants/locked_points_001.png",
+              "HUDPictureVariant_InvalidLevel": "../u_resources/spells/variants/locked_levels_001.png",
+              "ShowParamsInTooltip": "SpecificDualStrike,DamageWeapon"
+            }
+          }
+        ],
+        "DamageWeapon": [
+          {
+            "$": {
+              "PercentMin": "6",
+              "PercentMinPerLevel": "0",
+              "PercentMax": "6",
+              "PercentMaxPerLevel": "0"
+            }
+          }
+        ]
+      },
+      {
+        "$": {
+          "UID": "player_dualstrike_variant_4",
+          "ESkill": "default_variant"
+        },
+        "HUD": [
+          {
+            "$": {
+              "UIName": "@ui_Variant_DualStrike_variant_4",
+              "Lore": "@ui_Variant_DualStrike_variant_4_Lore",
+              "HUDPictureVariant_Normal": "../u_resources/spells/variants/normal_activation_005.png",
+              "HUDPictureVariant_Hover": "../u_resources/spells/variants/normal_hover_005.png",
+              "HUDPictureVariant_Selected": "../u_resources/spells/variants/normal_clicked_005.png",
+              "HUDPictureVariant_NotEnoughPoints": "../u_resources/spells/variants/locked_points_005.png",
+              "HUDPictureVariant_InvalidLevel": "../u_resources/spells/variants/locked_levels_005.png",
+              "ShowParamsInTooltip": "SpecificDualStrike,DamageWeapon"
+            }
+          }
+        ],
+        "Specific_DualStrike": [
+          {
+            "$": {
+              "TeleportBehindTarget": "1",
+              "TeleportMeleeRangeMultiplier": "0.8",
+              "TeleportDuration": ".05",
+              "TeleportPositionToleranceXY": ".5",
+              "TeleportPositionToleranceZ": "3"
+            }
+          }
+        ],
+        "DamageWeapon": [
+          {
+            "$": {
+              "PercentMin": "10",
+              "PercentMinPerLevel": "0",
+              "PercentMax": "10",
+              "PercentMaxPerLevel": "0"
+            }
+          }
+        ]
+      },
+      {
+        "$": {
+          "UID": "player_dualstrike_variant_5",
+          "ESkill": "default_variant"
+        },
+        "HUD": [
+          {
+            "$": {
+              "UIName": "@ui_Variant_DualStrike_variant_5",
+              "Lore": "@ui_Variant_DualStrike_variant_5_Lore",
+              "HUDPictureVariant_Normal": "../u_resources/spells/variants/normal_activation_005.png",
+              "HUDPictureVariant_Hover": "../u_resources/spells/variants/normal_hover_005.png",
+              "HUDPictureVariant_Selected": "../u_resources/spells/variants/normal_clicked_005.png",
+              "HUDPictureVariant_NotEnoughPoints": "../u_resources/spells/variants/locked_points_005.png",
+              "HUDPictureVariant_InvalidLevel": "../u_resources/spells/variants/locked_levels_005.png",
+              "ShowParamsInTooltip": "SpecificDualStrike,StatusAilmentsChance"
+            }
+          }
+        ],
+        "Specific_DualStrike": [
+          {
+            "$": {
+              "IsShadow": "1"
+            }
+          }
+        ],
+        "Damage_Conversion": [
+          {
+            "Entry": [
+              {
+                "$": {
+                  "From": "physical",
+                  "To": "shadow",
+                  "ConversionRate": "100"
+                }
+              }
+            ]
+          }
+        ],
+        "WeaponRequirements": [
+          {
+            "$": {
+              "Requirements": "rogue,shadow"
+            }
+          }
+        ],
+        "StatusAilment": [
+          {
+            "curse": [
+              {
+                "$": {
+                  "Chance": "20",
+                  "ChanceMode": "AddToBase"
+                }
+              }
+            ]
+          }
+        ],
+        "ParticleList": [
+          {
+            "Particle": [
+              {
+                "$": {
+                  "Key": "WeaponAppearL",
+                  "Name": "U_Character.Skills.DualStrike_Summon_Appear_Shadow",
+                  "Bone": "L_Weapon_Bone",
+                  "Direction": "0,1,0"
+                }
+              },
+              {
+                "$": {
+                  "Key": "WeaponAppearR",
+                  "Name": "U_Character.Skills.DualStrike_Summon_Appear_Shadow",
+                  "Bone": "R_Weapon_Bone",
+                  "Direction": "0,1,0"
+                }
+              },
+              {
+                "$": {
+                  "Key": "WeaponDisappearL",
+                  "Name": "U_Character.Skills.DualStrike_Summon_Disappear_Shadow",
+                  "Bone": "L_Weapon_Bone",
+                  "Direction": "0,1,0"
+                }
+              },
+              {
+                "$": {
+                  "Key": "WeaponDisappearR",
+                  "Name": "U_Character.Skills.DualStrike_Summon_Disappear_Shadow",
+                  "Bone": "R_Weapon_Bone",
+                  "Direction": "0,1,0"
+                }
+              },
+              {
+                "$": {
+                  "Key": "Trail",
+                  "Name": "U_Character.Skills.DualStrike_Dash_01",
+                  "Offset": "0,0,1.5",
+                  "Direction": "0,1,0"
+                }
+              },
+              {
+                "$": {
+                  "Key": "Transfer",
+                  "Name": "U_Character.Skills.DualStrike_Transfer_Circle_01_Shadow",
+                  "offset": "0,0,0",
+                  "Direction": "0,1,0"
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "$": {
+          "UID": "player_dualstrike_variant_6",
+          "ESkill": "default_variant"
+        },
+        "HUD": [
+          {
+            "$": {
+              "UIName": "@ui_Variant_DualStrike_variant_6",
+              "Lore": "",
+              "HUDPictureVariant_Normal": "../u_resources/spells/variants/normal_activation_003.png",
+              "HUDPictureVariant_Hover": "../u_resources/spells/variants/normal_hover_003.png",
+              "HUDPictureVariant_Selected": "../u_resources/spells/variants/normal_clicked_003.png",
+              "HUDPictureVariant_NotEnoughPoints": "../u_resources/spells/variants/locked_points_003.png",
+              "HUDPictureVariant_InvalidLevel": "../u_resources/spells/variants/locked_levels_003.png",
+              "ShowParamsInTooltip": "SpecificDualStrike"
+            }
+          }
+        ],
+        "Specific_DualStrike": [
+          {
+            "$": {
+              "IncreaseDamageOverRecast": "1",
+              "DamagePercentIncreasePerRecast": "50",
+              "DamagePercentIncreaseMaxCap": "100",
+              "RecastDelayBeforeStacksDrop": "5"
+            }
+          }
+        ]
+      },
+      {
+        "$": {
+          "UID": "player_dualstrike_variant_7",
+          "ESkill": "default_variant"
+        },
+        "HUD": [
+          {
+            "$": {
+              "UIName": "@ui_Variant_DualStrike_variant_7",
+              "Lore": "",
+              "HUDPictureVariant_Normal": "../u_resources/spells/variants/normal_activation_001.png",
+              "HUDPictureVariant_Hover": "../u_resources/spells/variants/normal_hover_001.png",
+              "HUDPictureVariant_Selected": "../u_resources/spells/variants/normal_clicked_001.png",
+              "HUDPictureVariant_NotEnoughPoints": "../u_resources/spells/variants/locked_points_001.png",
+              "HUDPictureVariant_InvalidLevel": "../u_resources/spells/variants/locked_levels_001.png",
+              "ShowParamsInTooltip": "SpecificDualStrike,DamageCritical"
+            }
+          }
+        ],
+        "DamageCritical": [
+          {
+            "$": {
+              "CriticalInflictScoreModifier": "40"
+            }
+          }
+        ]
+      },
+      {
+        "$": {
+          "UID": "player_dualstrike_variant_8",
+          "ESkill": "default_variant"
+        },
+        "HUD": [
+          {
+            "$": {
+              "UIName": "@ui_Variant_DualStrike_variant_8",
+              "Lore": "",
+              "HUDPictureVariant_Normal": "../u_resources/spells/variants/normal_activation_003.png",
+              "HUDPictureVariant_Hover": "../u_resources/spells/variants/normal_hover_003.png",
+              "HUDPictureVariant_Selected": "../u_resources/spells/variants/normal_clicked_003.png",
+              "HUDPictureVariant_NotEnoughPoints": "../u_resources/spells/variants/locked_points_003.png",
+              "HUDPictureVariant_InvalidLevel": "../u_resources/spells/variants/locked_levels_003.png",
+              "ShowParamsInTooltip": "SpecificDualStrike"
+            }
+          }
+        ],
+        "Specific_DualStrike": [
+          {
+            "$": {
+              "TransferStack": "1"
+            }
+          }
+        ]
+      },
+      {
+        "$": {
+          "UID": "player_dualstrike_variant_9",
+          "ESkill": "default_variant"
+        },
+        "HUD": [
+          {
+            "$": {
+              "UIName": "@ui_Variant_DualStrike_variant_9",
+              "Lore": "",
+              "HUDPictureVariant_Normal": "../u_resources/spells/variants/normal_activation_003.png",
+              "HUDPictureVariant_Hover": "../u_resources/spells/variants/normal_hover_003.png",
+              "HUDPictureVariant_Selected": "../u_resources/spells/variants/normal_clicked_003.png",
+              "HUDPictureVariant_NotEnoughPoints": "../u_resources/spells/variants/locked_points_003.png",
+              "HUDPictureVariant_InvalidLevel": "../u_resources/spells/variants/locked_levels_003.png",
+              "ShowParamsInTooltip": "SpecificDualStrike,BlownAway"
+            }
+          }
+        ],
+        "Blownaway": [
+          {
+            "$": {
+              "Height": "0.2",
+              "Distance": "5",
+              "StunDuration": "0.0"
+            }
+          }
+        ],
+        "Specific_DualStrike": [
+          {
+            "$": {
+              "BlownAwayRadius": "3"
+            }
+          }
+        ]
+      },
+      {
+        "$": {
+          "UID": "player_dualstrike_variant_10",
+          "ESkill": "default_variant"
+        },
+        "HUD": [
+          {
+            "$": {
+              "UIName": "@ui_Variant_DualStrike_variant_10",
+              "Lore": "",
+              "HUDPictureVariant_Normal": "../u_resources/spells/variants/normal_activation_003.png",
+              "HUDPictureVariant_Hover": "../u_resources/spells/variants/normal_hover_003.png",
+              "HUDPictureVariant_Selected": "../u_resources/spells/variants/normal_clicked_003.png",
+              "HUDPictureVariant_NotEnoughPoints": "../u_resources/spells/variants/locked_points_003.png",
+              "HUDPictureVariant_InvalidLevel": "../u_resources/spells/variants/locked_levels_003.png",
+              "ShowParamsInTooltip": "SpecificDualStrike"
+            }
+          }
+        ],
+        "GhostDamage": [
+          {
+            "$": {
+              "ChanceToHit": "3",
+              "MinDelay": "0.1",
+              "MaxDelay": "0.2",
+              "MaxHit": "1",
+              "DamageMultiplier": "1"
+            }
+          }
+        ],
+        "Specific_DualStrike": [
+          {
+            "$": {
+              "GhostRadius": "4"
+            }
+          }
+        ]
+      },
+      {
+        "$": {
+          "UID": "player_dualstrike_variant_11",
+          "ESkill": "default_variant"
+        },
+        "HUD": [
+          {
+            "$": {
+              "UIName": "@ui_Variant_DualStrike_variant_11",
+              "Lore": "",
+              "HUDPictureVariant_Normal": "../u_resources/spells/variants/normal_activation_001.png",
+              "HUDPictureVariant_Hover": "../u_resources/spells/variants/normal_hover_001.png",
+              "HUDPictureVariant_Selected": "../u_resources/spells/variants/normal_clicked_001.png",
+              "HUDPictureVariant_NotEnoughPoints": "../u_resources/spells/variants/locked_points_001.png",
+              "HUDPictureVariant_InvalidLevel": "../u_resources/spells/variants/locked_levels_001.png",
+              "ShowParamsInTooltip": "SpecificDualStrike"
+            }
+          }
+        ],
+        "Specific_DualStrike": [
+          {
+            "$": {
+              "DashLineWidth": "2.2"
+            }
+          }
+        ]
+      },
+      {
+        "$": {
+          "UID": "player_dualstrike_variant_12",
+          "ESkill": "default_variant"
+        },
+        "HUD": [
+          {
+            "$": {
+              "UIName": "@ui_Variant_DualStrike_variant_12",
+              "Lore": "@ui_Variant_DualStrike_variant_12_lore",
+              "HUDPictureVariant_Normal": "../u_resources/spells/variants/normal_activation_005.png",
+              "HUDPictureVariant_Hover": "../u_resources/spells/variants/normal_hover_005.png",
+              "HUDPictureVariant_Selected": "../u_resources/spells/variants/normal_clicked_005.png",
+              "HUDPictureVariant_NotEnoughPoints": "../u_resources/spells/variants/locked_points_005.png",
+              "HUDPictureVariant_InvalidLevel": "../u_resources/spells/variants/locked_levels_005.png",
+              "ShowParamsInTooltip": "SpecificDualStrike,Projectiles,Range"
+            }
+          }
+        ],
+        "Range": [
+          {
+            "$": {
+              "AttackRange": "5"
+            }
+          }
+        ],
+        "Projectile": [
+          {
+            "$": {
+              "Name": "dualstrike_proj",
+              "ProjectileCount": "1",
+              "AngleBetweenProjectiles": "20"
+            }
+          }
+        ],
+        "Specific_DualStrike": [
+          {
+            "$": {
+              "ProjectilesBackwardOffset": "2"
+            }
+          }
+        ]
+      },
+      {
+        "$": {
+          "UID": "player_dualstrike_variant_5,player_dualstrike_variant_12",
+          "ESkill": "default_variant_combo"
+        },
+        "Projectile": [
+          {
+            "$": {
+              "Name": "dualstrike_shadow_proj"
+            }
+          }
+        ]
+      },
+      {
+        "$": {
+          "UID": "player_dualstrike_variant_13",
+          "ESkill": "default_variant"
+        },
+        "HUD": [
+          {
+            "$": {
+              "UIName": "@ui_Variant_DualStrike_variant_13",
+              "Lore": "",
+              "HUDPictureVariant_Normal": "../u_resources/spells/variants/normal_activation_001.png",
+              "HUDPictureVariant_Hover": "../u_resources/spells/variants/normal_hover_001.png",
+              "HUDPictureVariant_Selected": "../u_resources/spells/variants/normal_clicked_001.png",
+              "HUDPictureVariant_NotEnoughPoints": "../u_resources/spells/variants/locked_points_001.png",
+              "HUDPictureVariant_InvalidLevel": "../u_resources/spells/variants/locked_levels_001.png",
+              "ShowParamsInTooltip": "SpecificDualStrike,DamageCritical"
+            }
+          }
+        ],
+        "DamageCritical": [
+          {
+            "$": {
+              "CriticalDamageModifier": "30"
+            }
+          }
+        ]
+      },
+      {
+        "$": {
+          "UID": "player_dualstrike_variant_14",
+          "ESkill": "default_variant"
+        },
+        "HUD": [
+          {
+            "$": {
+              "UIName": "@ui_Variant_DualStrike_variant_14",
+              "Lore": "",
+              "HUDPictureVariant_Normal": "../u_resources/spells/variants/normal_activation_001.png",
+              "HUDPictureVariant_Hover": "../u_resources/spells/variants/normal_hover_001.png",
+              "HUDPictureVariant_Selected": "../u_resources/spells/variants/normal_clicked_001.png",
+              "HUDPictureVariant_NotEnoughPoints": "../u_resources/spells/variants/locked_points_001.png",
+              "HUDPictureVariant_InvalidLevel": "../u_resources/spells/variants/locked_levels_001.png",
+              "ShowParamsInTooltip": "SpecificDualStrike,StatusAilmentsChance"
+            }
+          }
+        ],
+        "StatusAilment": [
+          {
+            "$": {
+              "AllAilmentsInflictScoreIncreasePercent": "40"
+            }
+          }
+        ]
+      },
+      {
+        "$": {
+          "UID": "player_dualstrike_variant_15",
+          "ESkill": "default_variant"
+        },
+        "HUD": [
+          {
+            "$": {
+              "UIName": "@ui_Variant_DualStrike_variant_15",
+              "Lore": "",
+              "HUDPictureVariant_Normal": "../u_resources/spells/variants/normal_activation_001.png",
+              "HUDPictureVariant_Hover": "../u_resources/spells/variants/normal_hover_001.png",
+              "HUDPictureVariant_Selected": "../u_resources/spells/variants/normal_clicked_001.png",
+              "HUDPictureVariant_NotEnoughPoints": "../u_resources/spells/variants/locked_points_001.png",
+              "HUDPictureVariant_InvalidLevel": "../u_resources/spells/variants/locked_levels_001.png",
+              "ShowParamsInTooltip": "SpecificDualStrike,StatusAilmentsChance"
+            }
+          }
+        ],
+        "StatusAilment": [
+          {
+            "$": {
+              "AllAilmentsInflictDamageIncreasePercent": "40"
+            }
+          }
+        ]
+      },
+      {
+        "$": {
+          "UID": "player_dualstrike_variant_16",
+          "ESkill": "default_variant"
+        },
+        "HUD": [
+          {
+            "$": {
+              "UIName": "@ui_Variant_DualStrike_variant_16",
+              "Lore": "",
+              "HUDPictureVariant_Normal": "../u_resources/spells/variants/normal_activation_001.png",
+              "HUDPictureVariant_Hover": "../u_resources/spells/variants/normal_hover_001.png",
+              "HUDPictureVariant_Selected": "../u_resources/spells/variants/normal_clicked_001.png",
+              "HUDPictureVariant_NotEnoughPoints": "../u_resources/spells/variants/locked_points_001.png",
+              "HUDPictureVariant_InvalidLevel": "../u_resources/spells/variants/locked_levels_001.png",
+              "ShowParamsInTooltip": "SpecificDualStrike,DamageWeapon"
+            }
+          }
+        ],
+        "DamageWeapon": [
+          {
+            "$": {
+              "PercentMin": "6",
+              "PercentMinPerLevel": "0",
+              "PercentMax": "6",
+              "PercentMaxPerLevel": "0"
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

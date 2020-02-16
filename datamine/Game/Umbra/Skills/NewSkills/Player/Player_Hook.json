@@ -1,0 +1,759 @@
+{
+  "MetaData": {
+    "Skill": [
+      {
+        "$": {
+          "UID": "player_hook",
+          "ESkill": "player_hook",
+          "Keywords": "attack_skill"
+        },
+        "WeaponRequirements": [
+          {
+            "$": {
+              "Requirements": "melee"
+            }
+          }
+        ],
+        "Animation": [
+          {
+            "$": {
+              "ActionString": "player_skill_hook",
+              "ScaleWithSpellCastingSpeed": "1"
+            }
+          }
+        ],
+        "HUD": [
+          {
+            "$": {
+              "HUDPicture": "../u_resources/spells/Active_Skills/hook.png",
+              "UIName": "@ui_AST_Hook",
+              "Lore": "@ui_AST_Hook_Lore",
+              "ActiveEffectTitle": "",
+              "ActiveEffectDesc": "",
+              "ASTTreeNumber": "8",
+              "ShowParamsInAST": "Cost,ROSTime,Cooldown,Range,DamageDetail,DamageWeapon,DamageCritical,StatusAilmentsChance,SpecificHook",
+              "ShowParamsInTooltip": "Cost,Cooldown,DamageOverview,StatusAilmentsChance,SpecificHook"
+            }
+          }
+        ],
+        "Enneract": [
+          {
+            "$": {
+              "PickableParticle_MoveToGround": "U_CommonVFX_02.Esseract.Esseract_Projectile.Physical",
+              "PickableParticle_OnGround_Shape": "U_CommonVFX_02.Esseract.Esseract_Shape.Circle_Physical",
+              "PickableParticle_OnGround_Damage": "U_CommonVFX_02.Esseract.Esseract_Color.Physical",
+              "PickableParticle_OnGround_Symbol": "U_CommonVFX_02.Esseract.Esseract_Symbol.EZANEAL",
+              "PickableParticle_OnGround_Indicator": "U_CommonVFX_02.Esseract.Esseract_Indicator.Physical",
+              "PickableParticle_OnGround_Pickup": "U_CommonVFX_02.Esseract.Esseract_Loot.Physical",
+              "SkillLearningParticle": "U_CommonVFX.Skill_Learn.Skill_Learn_Physical",
+              "Inventory_HUDPicture": "../u_resources/enneracts/hook.png",
+              "Inventory_LoreDesc": "@ui_enneract_lore"
+            }
+          }
+        ],
+        "CastingParams": [
+          {
+            "$": {
+              "CastBone": "R_Weapon_Bone"
+            }
+          }
+        ],
+        "Cooldown": [
+          {
+            "$": {
+              "Cooldown": "10"
+            }
+          }
+        ],
+        "Aggression": [
+          {
+            "$": {
+              "TargetValueOnHit": "40"
+            }
+          }
+        ],
+        "Shapes": [
+          {
+            "Entry": [
+              {
+                "$": {
+                  "ShapeName": "Player_HookShape"
+                }
+              }
+            ]
+          }
+        ],
+        "ParticleList": [
+          {
+            "Particle": [
+              {
+                "$": {
+                  "Key": "Head",
+                  "Name": "U_Character.Skills.Hook_Head_01",
+                  "Offset": "0,0.4,0",
+                  "Direction": "0,1,0"
+                }
+              },
+              {
+                "$": {
+                  "Key": "Chain",
+                  "Name": "U_Character.Skills.Hook_Chain_01",
+                  "Bone": "R_Weapon_Bone",
+                  "Offset": "0,0,0",
+                  "Direction": "0,1,0"
+                }
+              },
+              {
+                "$": {
+                  "Key": "Chain2",
+                  "Name": "U_Character.Skills.Hook_Chain_02",
+                  "Offset": "0,0,1.5",
+                  "Direction": "0,1,0"
+                }
+              },
+              {
+                "$": {
+                  "Key": "Aura",
+                  "Name": "U_Character.Skills.Hook_AoE_01",
+                  "Offset": "0,0.2,1.5",
+                  "Direction": "0,1,0"
+                }
+              },
+              {
+                "$": {
+                  "Key": "Hit",
+                  "Name": "U_CommonVFX.Hook.Hook_Hit_Blood",
+                  "Offset": "0,0,1.35",
+                  "Direction": "0,1,0"
+                }
+              },
+              {
+                "$": {
+                  "Key": "PullTrail",
+                  "Name": "U_CommonVFX.Hook.Hook_follow_Red_01",
+                  "Bone": "Bip01 Spine1",
+                  "Offset": "0,0,0",
+                  "Direction": "0,1,0"
+                }
+              }
+            ]
+          }
+        ],
+        "Specific_Hook": [
+          {
+            "$": {
+              "OnHookImpactSoundTrigger": "Play_Skill_Hook_Impact",
+              "OnHookReleaseSoundTrigger": "Play_Skill_Hook_Cast",
+              "OnHookRetractSoundTrigger": "",
+              "SpeedForLaunch": "36",
+              "SpeedForPull": "48",
+              "NumberOfHooks": "1",
+              "PiercingHooks": "1",
+              "HookParticleTTL": "0.6"
+            },
+            "HookForwardMovementKeyFrames": [
+              {
+                "KeyFrame": [
+                  {
+                    "$": {
+                      "Time": "0",
+                      "Value": "0"
+                    }
+                  },
+                  {
+                    "$": {
+                      "Time": "0.1",
+                      "Value": "0"
+                    }
+                  },
+                  {
+                    "$": {
+                      "Time": "0.3",
+                      "Value": "1"
+                    }
+                  },
+                  {
+                    "$": {
+                      "Time": "0.55",
+                      "Value": "1"
+                    }
+                  },
+                  {
+                    "$": {
+                      "Time": "0.6",
+                      "Value": "0"
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "VisualFeedback": [
+          {
+            "$": {
+              "BloodDecalOrientation": "forward",
+              "FeedbackPresetBase": "Player_skill_hook",
+              "TrailPresetBase": "default"
+            }
+          }
+        ]
+      },
+      {
+        "$": {
+          "UID": "player_hook_variant_1",
+          "ESkill": "player_hook_variant"
+        },
+        "HUD": [
+          {
+            "$": {
+              "UIName": "@ui_Variant_Hook_variant_1",
+              "Lore": "",
+              "HUDPictureVariant_Normal": "../u_resources/spells/variants/normal_activation_001.png",
+              "HUDPictureVariant_Hover": "../u_resources/spells/variants/normal_hover_001.png",
+              "HUDPictureVariant_Selected": "../u_resources/spells/variants/normal_clicked_001.png",
+              "HUDPictureVariant_NotEnoughPoints": "../u_resources/spells/variants/locked_points_001.png",
+              "HUDPictureVariant_InvalidLevel": "../u_resources/spells/variants/locked_levels_001.png",
+              "ShowParamsInTooltip": "SpecificHook"
+            }
+          }
+        ],
+        "Specific_Hook": [
+          {
+            "$": {
+              "MainHookExtraLength": "1.5"
+            }
+          }
+        ]
+      },
+      {
+        "$": {
+          "UID": "player_hook_variant_2",
+          "ESkill": "player_hook_variant"
+        },
+        "HUD": [
+          {
+            "$": {
+              "UIName": "@ui_Variant_Hook_variant_2",
+              "Lore": "",
+              "HUDPictureVariant_Normal": "../u_resources/spells/variants/normal_activation_003.png",
+              "HUDPictureVariant_Hover": "../u_resources/spells/variants/normal_hover_003.png",
+              "HUDPictureVariant_Selected": "../u_resources/spells/variants/normal_clicked_003.png",
+              "HUDPictureVariant_NotEnoughPoints": "../u_resources/spells/variants/locked_points_003.png",
+              "HUDPictureVariant_InvalidLevel": "../u_resources/spells/variants/locked_levels_003.png",
+              "ShowParamsInTooltip": "SpecificHook,StatusAilmentsChance"
+            }
+          }
+        ],
+        "StatusAilment": [
+          {
+            "stun": [
+              {
+                "$": {
+                  "Chance": "100",
+                  "ChanceMode": "override",
+                  "Duration": "1",
+                  "DurationMode": "override"
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "$": {
+          "UID": "player_hook_variant_3",
+          "ESkill": "player_hook_variant"
+        },
+        "HUD": [
+          {
+            "$": {
+              "UIName": "@ui_Variant_Hook_variant_3",
+              "Lore": "",
+              "HUDPictureVariant_Normal": "../u_resources/spells/variants/normal_activation_003.png",
+              "HUDPictureVariant_Hover": "../u_resources/spells/variants/normal_hover_003.png",
+              "HUDPictureVariant_Selected": "../u_resources/spells/variants/normal_clicked_003.png",
+              "HUDPictureVariant_NotEnoughPoints": "../u_resources/spells/variants/locked_points_003.png",
+              "HUDPictureVariant_InvalidLevel": "../u_resources/spells/variants/locked_levels_003.png",
+              "ShowParamsInTooltip": "SpecificHook"
+            }
+          }
+        ],
+        "Specific_Hook": [
+          {
+            "$": {
+              "RageGenerationOnEnemyHit": "30",
+              "MaxRageGenerationOnEnemyHit": "200"
+            }
+          }
+        ]
+      },
+      {
+        "$": {
+          "UID": "player_hook_variant_4",
+          "ESkill": "player_hook_variant"
+        },
+        "HUD": [
+          {
+            "$": {
+              "UIName": "@ui_Variant_Hook_variant_4",
+              "Lore": "@ui_Variant_Hook_variant_4_Lore",
+              "HUDPictureVariant_Normal": "../u_resources/spells/variants/normal_activation_005.png",
+              "HUDPictureVariant_Hover": "../u_resources/spells/variants/normal_hover_005.png",
+              "HUDPictureVariant_Selected": "../u_resources/spells/variants/normal_clicked_005.png",
+              "HUDPictureVariant_NotEnoughPoints": "../u_resources/spells/variants/locked_points_005.png",
+              "HUDPictureVariant_InvalidLevel": "../u_resources/spells/variants/locked_levels_005.png",
+              "ShowParamsInTooltip": "SpecificHook"
+            }
+          }
+        ],
+        "Specific_Hook": [
+          {
+            "$": {
+              "GoOnTarget": "1"
+            }
+          }
+        ]
+      },
+      {
+        "$": {
+          "UID": "player_hook_variant_5",
+          "ESkill": "player_hook_variant"
+        },
+        "HUD": [
+          {
+            "$": {
+              "UIName": "@ui_Variant_Hook_variant_5",
+              "Lore": "@ui_Variant_Hook_variant_5_Lore",
+              "HUDPictureVariant_Normal": "../u_resources/spells/variants/normal_activation_005.png",
+              "HUDPictureVariant_Hover": "../u_resources/spells/variants/normal_hover_005.png",
+              "HUDPictureVariant_Selected": "../u_resources/spells/variants/normal_clicked_005.png",
+              "HUDPictureVariant_NotEnoughPoints": "../u_resources/spells/variants/locked_points_005.png",
+              "HUDPictureVariant_InvalidLevel": "../u_resources/spells/variants/locked_levels_005.png",
+              "ShowParamsInTooltip": "SpecificHook,DamageWeapon,StatusAilmentsChance"
+            }
+          }
+        ],
+        "Specific_Hook": [
+          {
+            "$": {
+              "IsRend": "1"
+            }
+          }
+        ],
+        "ParticleList": [
+          {
+            "Particle": [
+              {
+                "$": {
+                  "Key": "Head",
+                  "Name": "U_Character.Skills.Hook_Head_01_Rend",
+                  "Direction": "0,1,0"
+                }
+              },
+              {
+                "$": {
+                  "Key": "Chain",
+                  "Name": "U_Character.Skills.Hook_Chain_01_Rend",
+                  "Bone": "R_Weapon_Bone",
+                  "Direction": "0,1,0"
+                }
+              },
+              {
+                "$": {
+                  "Key": "Chain2",
+                  "Name": "U_Character.Skills.Hook_Chain_02_Rend",
+                  "Direction": "0,1,0"
+                }
+              },
+              {
+                "$": {
+                  "Key": "Aura",
+                  "Name": "U_Character.Skills.Hook_AoE_01_Rend",
+                  "Direction": "0,1,0"
+                }
+              },
+              {
+                "$": {
+                  "Key": "Hit",
+                  "Name": "U_CommonVFX.Hook.Hook_Hit_Blood",
+                  "Direction": "0,1,0"
+                }
+              },
+              {
+                "$": {
+                  "Key": "PullTrail",
+                  "Name": "U_CommonVFX.Hook.Hook_follow_Red_01",
+                  "Bone": "Bip01 Spine1",
+                  "Offset": "0,0,0",
+                  "Direction": "0,1,0"
+                }
+              }
+            ]
+          }
+        ],
+        "DamageWeapon": [
+          {
+            "$": {
+              "PercentMin": "40",
+              "PercentMinPerLevel": "0",
+              "PercentMax": "40",
+              "PercentMaxPerLevel": "0"
+            }
+          }
+        ],
+        "Damage_Conversion": [
+          {
+            "Entry": [
+              {
+                "$": {
+                  "From": "physical",
+                  "To": "rend",
+                  "ConversionRate": "100"
+                }
+              }
+            ]
+          }
+        ],
+        "WeaponRequirements": [
+          {
+            "$": {
+              "Requirements": "melee,bleed"
+            }
+          }
+        ],
+        "StatusAilment": [
+          {
+            "bleed": [
+              {
+                "$": {
+                  "Stacks": "1",
+                  "StacksMode": "AddToBase"
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "$": {
+          "UID": "player_hook_variant_6",
+          "ESkill": "player_hook_variant"
+        },
+        "HUD": [
+          {
+            "$": {
+              "UIName": "@ui_Variant_Hook_variant_6",
+              "Lore": "",
+              "HUDPictureVariant_Normal": "../u_resources/spells/variants/normal_activation_001.png",
+              "HUDPictureVariant_Hover": "../u_resources/spells/variants/normal_hover_001.png",
+              "HUDPictureVariant_Selected": "../u_resources/spells/variants/normal_clicked_001.png",
+              "HUDPictureVariant_NotEnoughPoints": "../u_resources/spells/variants/locked_points_001.png",
+              "HUDPictureVariant_InvalidLevel": "../u_resources/spells/variants/locked_levels_001.png",
+              "ShowParamsInTooltip": "SpecificHook,Cooldown"
+            }
+          }
+        ],
+        "Cooldown": [
+          {
+            "$": {
+              "Cooldown": "-1.5"
+            }
+          }
+        ]
+      },
+      {
+        "$": {
+          "UID": "player_hook_variant_7",
+          "ESkill": "player_hook_variant"
+        },
+        "HUD": [
+          {
+            "$": {
+              "UIName": "@ui_Variant_Hook_variant_7",
+              "Lore": "",
+              "HUDPictureVariant_Normal": "../u_resources/spells/variants/normal_activation_003.png",
+              "HUDPictureVariant_Hover": "../u_resources/spells/variants/normal_hover_003.png",
+              "HUDPictureVariant_Selected": "../u_resources/spells/variants/normal_clicked_003.png",
+              "HUDPictureVariant_NotEnoughPoints": "../u_resources/spells/variants/locked_points_003.png",
+              "HUDPictureVariant_InvalidLevel": "../u_resources/spells/variants/locked_levels_003.png",
+              "ShowParamsInTooltip": "SpecificHook"
+            }
+          }
+        ],
+        "Specific_Hook": [
+          {
+            "$": {
+              "LootGlobeName": "health_globe",
+              "LootChancePercent": "10",
+              "MaxLootsPerCast": "3"
+            }
+          }
+        ]
+      },
+      {
+        "$": {
+          "UID": "player_hook_variant_8",
+          "ESkill": "player_hook_variant"
+        },
+        "HUD": [
+          {
+            "$": {
+              "UIName": "@ui_Variant_Hook_variant_8",
+              "Lore": "@ui_Variant_Hook_variant_8_Lore",
+              "HUDPictureVariant_Normal": "../u_resources/spells/variants/normal_activation_005.png",
+              "HUDPictureVariant_Hover": "../u_resources/spells/variants/normal_hover_005.png",
+              "HUDPictureVariant_Selected": "../u_resources/spells/variants/normal_clicked_005.png",
+              "HUDPictureVariant_NotEnoughPoints": "../u_resources/spells/variants/locked_points_005.png",
+              "HUDPictureVariant_InvalidLevel": "../u_resources/spells/variants/locked_levels_005.png",
+              "ShowParamsInTooltip": "SpecificHook"
+            }
+          }
+        ],
+        "Specific_Hook": [
+          {
+            "$": {
+              "MultiHook": "1",
+              "NumberOfHooks": "8",
+              "MultiHookRadius": "5"
+            }
+          }
+        ]
+      },
+      {
+        "$": {
+          "UID": "player_hook_variant_9",
+          "ESkill": "player_hook_variant"
+        },
+        "HUD": [
+          {
+            "$": {
+              "UIName": "@ui_Variant_Hook_variant_9",
+              "Lore": "",
+              "HUDPictureVariant_Normal": "../u_resources/spells/variants/normal_activation_003.png",
+              "HUDPictureVariant_Hover": "../u_resources/spells/variants/normal_hover_003.png",
+              "HUDPictureVariant_Selected": "../u_resources/spells/variants/normal_clicked_003.png",
+              "HUDPictureVariant_NotEnoughPoints": "../u_resources/spells/variants/locked_points_003.png",
+              "HUDPictureVariant_InvalidLevel": "../u_resources/spells/variants/locked_levels_003.png",
+              "ShowParamsInTooltip": "SpecificHook,StatusAilmentsChance"
+            }
+          }
+        ],
+        "StatusAilment": [
+          {
+            "Stasis": [
+              {
+                "$": {
+                  "Chance": "100",
+                  "ChanceMode": "override",
+                  "Duration": "4",
+                  "DurationMode": "override",
+                  "Stacks": "1",
+                  "StacksMode": "override"
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "$": {
+          "UID": "player_hook_variant_10",
+          "ESkill": "player_hook_variant"
+        },
+        "HUD": [
+          {
+            "$": {
+              "UIName": "@ui_Variant_Hook_variant_10",
+              "Lore": "",
+              "HUDPictureVariant_Normal": "../u_resources/spells/variants/normal_activation_001.png",
+              "HUDPictureVariant_Hover": "../u_resources/spells/variants/normal_hover_001.png",
+              "HUDPictureVariant_Selected": "../u_resources/spells/variants/normal_clicked_001.png",
+              "HUDPictureVariant_NotEnoughPoints": "../u_resources/spells/variants/locked_points_001.png",
+              "HUDPictureVariant_InvalidLevel": "../u_resources/spells/variants/locked_levels_001.png",
+              "ShowParamsInTooltip": "SpecificHook,DamageWeapon"
+            }
+          }
+        ],
+        "DamageWeapon": [
+          {
+            "$": {
+              "PercentMin": "40",
+              "PercentMinPerLevel": "0",
+              "PercentMax": "40",
+              "PercentMaxPerLevel": "0"
+            }
+          }
+        ]
+      },
+      {
+        "$": {
+          "UID": "player_hook_variant_11",
+          "ESkill": "player_hook_variant"
+        },
+        "HUD": [
+          {
+            "$": {
+              "UIName": "@ui_Variant_Hook_variant_11",
+              "Lore": "",
+              "HUDPictureVariant_Normal": "../u_resources/spells/variants/normal_activation_003.png",
+              "HUDPictureVariant_Hover": "../u_resources/spells/variants/normal_hover_003.png",
+              "HUDPictureVariant_Selected": "../u_resources/spells/variants/normal_clicked_003.png",
+              "HUDPictureVariant_NotEnoughPoints": "../u_resources/spells/variants/locked_points_003.png",
+              "HUDPictureVariant_InvalidLevel": "../u_resources/spells/variants/locked_levels_003.png",
+              "ShowParamsInTooltip": "SpecificHook,DamageWeapon"
+            }
+          }
+        ],
+        "DamageWeapon": [
+          {
+            "$": {
+              "PercentMin": "80",
+              "PercentMinPerLevel": "0",
+              "PercentMax": "80",
+              "PercentMaxPerLevel": "0"
+            }
+          }
+        ]
+      },
+      {
+        "$": {
+          "UID": "player_hook_variant_12",
+          "ESkill": "player_hook_variant"
+        },
+        "HUD": [
+          {
+            "$": {
+              "UIName": "@ui_Variant_Hook_variant_12",
+              "Lore": "",
+              "HUDPictureVariant_Normal": "../u_resources/spells/variants/normal_activation_001.png",
+              "HUDPictureVariant_Hover": "../u_resources/spells/variants/normal_hover_001.png",
+              "HUDPictureVariant_Selected": "../u_resources/spells/variants/normal_clicked_001.png",
+              "HUDPictureVariant_NotEnoughPoints": "../u_resources/spells/variants/locked_points_001.png",
+              "HUDPictureVariant_InvalidLevel": "../u_resources/spells/variants/locked_levels_001.png",
+              "ShowParamsInTooltip": "SpecificHook"
+            }
+          }
+        ],
+        "Specific_Hook": [
+          {
+            "$": {
+              "MainHookExtraLength": "1.5"
+            }
+          }
+        ]
+      },
+      {
+        "$": {
+          "UID": "player_hook_variant_13",
+          "ESkill": "player_hook_variant"
+        },
+        "HUD": [
+          {
+            "$": {
+              "UIName": "@ui_Variant_Hook_variant_13",
+              "Lore": "",
+              "HUDPictureVariant_Normal": "../u_resources/spells/variants/normal_activation_001.png",
+              "HUDPictureVariant_Hover": "../u_resources/spells/variants/normal_hover_001.png",
+              "HUDPictureVariant_Selected": "../u_resources/spells/variants/normal_clicked_001.png",
+              "HUDPictureVariant_NotEnoughPoints": "../u_resources/spells/variants/locked_points_001.png",
+              "HUDPictureVariant_InvalidLevel": "../u_resources/spells/variants/locked_levels_001.png",
+              "ShowParamsInTooltip": "SpecificHook,Cooldown"
+            }
+          }
+        ],
+        "Cooldown": [
+          {
+            "$": {
+              "Cooldown": "-1.5",
+              "CooldownPerLevel": "0"
+            }
+          }
+        ]
+      },
+      {
+        "$": {
+          "UID": "player_hook_variant_14",
+          "ESkill": "player_hook_variant"
+        },
+        "HUD": [
+          {
+            "$": {
+              "UIName": "@ui_Variant_Hook_variant_14",
+              "Lore": "",
+              "HUDPictureVariant_Normal": "../u_resources/spells/variants/normal_activation_001.png",
+              "HUDPictureVariant_Hover": "../u_resources/spells/variants/normal_hover_001.png",
+              "HUDPictureVariant_Selected": "../u_resources/spells/variants/normal_clicked_001.png",
+              "HUDPictureVariant_NotEnoughPoints": "../u_resources/spells/variants/locked_points_001.png",
+              "HUDPictureVariant_InvalidLevel": "../u_resources/spells/variants/locked_levels_001.png",
+              "ShowParamsInTooltip": "SpecificHook,Cooldown"
+            }
+          }
+        ],
+        "Cooldown": [
+          {
+            "$": {
+              "Cooldown": "-1.5",
+              "CooldownPerLevel": "0"
+            }
+          }
+        ]
+      },
+      {
+        "$": {
+          "UID": "player_hook_variant_15",
+          "ESkill": "player_hook_variant"
+        },
+        "HUD": [
+          {
+            "$": {
+              "UIName": "@ui_Variant_Hook_variant_15",
+              "Lore": "",
+              "HUDPictureVariant_Normal": "../u_resources/spells/variants/normal_activation_003.png",
+              "HUDPictureVariant_Hover": "../u_resources/spells/variants/normal_hover_003.png",
+              "HUDPictureVariant_Selected": "../u_resources/spells/variants/normal_clicked_003.png",
+              "HUDPictureVariant_NotEnoughPoints": "../u_resources/spells/variants/locked_points_003.png",
+              "HUDPictureVariant_InvalidLevel": "../u_resources/spells/variants/locked_levels_003.png",
+              "ShowParamsInTooltip": "SpecificHook,Cooldown"
+            }
+          }
+        ],
+        "Cooldown": [
+          {
+            "$": {
+              "Cooldown": "-1.5",
+              "CooldownPerLevel": "0"
+            }
+          }
+        ]
+      },
+      {
+        "$": {
+          "UID": "player_hook_variant_16",
+          "ESkill": "player_hook_variant"
+        },
+        "HUD": [
+          {
+            "$": {
+              "UIName": "@ui_Variant_Hook_variant_16",
+              "Lore": "",
+              "HUDPictureVariant_Normal": "../u_resources/spells/variants/normal_activation_001.png",
+              "HUDPictureVariant_Hover": "../u_resources/spells/variants/normal_hover_001.png",
+              "HUDPictureVariant_Selected": "../u_resources/spells/variants/normal_clicked_001.png",
+              "HUDPictureVariant_NotEnoughPoints": "../u_resources/spells/variants/locked_points_001.png",
+              "HUDPictureVariant_InvalidLevel": "../u_resources/spells/variants/locked_levels_001.png",
+              "ShowParamsInTooltip": "SpecificHook"
+            }
+          }
+        ],
+        "Specific_Hook": [
+          {
+            "$": {
+              "MainHookExtraLength": "1.5"
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,823 @@
+{
+  "MetaData": {
+    "Skill": [
+      {
+        "$": {
+          "UID": "player_laser",
+          "ESkill": "player_laser",
+          "Keywords": "magic_spell"
+        },
+        "WeaponRequirements": [
+          {
+            "$": {
+              "Requirements": "magic,umbra"
+            }
+          }
+        ],
+        "Animation": [
+          {
+            "$": {
+              "ActionString": "player_skill_laser",
+              "ScaleWithSpellCastingSpeed": "1"
+            }
+          }
+        ],
+        "VisualFeedback": [
+          {
+            "$": {
+              "TrailPresetBase": "default",
+              "FeedbackPresetBase": "Player_skill_laser",
+              "BloodDecalOrientation": "forward"
+            }
+          }
+        ],
+        "CastingParams": [
+          {
+            "$": {
+              "CastBone": "R_Weapon_Bone",
+              "CanCastWhileMoving": "0",
+              "MinimumCastDuration": "0.1",
+              "MaintainedCast": "1",
+              "MaximumTurnRate": "120",
+              "ScaleTurnRateWithSpellCastingSpeed": "1"
+            }
+          }
+        ],
+        "HUD": [
+          {
+            "$": {
+              "HUDPicture": "../u_resources/spells/Active_Skills/laser.png",
+              "UIName": "@ui_AST_Laser",
+              "Lore": "@ui_AST_Laser_Lore",
+              "ActiveEffectTitle": "",
+              "ActiveEffectDesc": "",
+              "ASTTreeNumber": "3",
+              "ShowParamsInAST": "Cost,ROSTime,Cooldown,Range,DamageDetail,DamageCritical,StatusAilmentsChance,SpecificLaser",
+              "ShowParamsInTooltip": "Cost,Cooldown,DamageOverview,StatusAilmentsChance,SpecificLaser"
+            }
+          }
+        ],
+        "Enneract": [
+          {
+            "$": {
+              "PickableParticle_MoveToGround": "U_CommonVFX_02.Esseract.Esseract_Projectile.Umbra",
+              "PickableParticle_OnGround_Shape": "U_CommonVFX_02.Esseract.Esseract_Shape.Circle_Umbra",
+              "PickableParticle_OnGround_Damage": "U_CommonVFX_02.Esseract.Esseract_Color.Umbra",
+              "PickableParticle_OnGround_Symbol": "U_CommonVFX_02.Esseract.Esseract_Symbol.ANULAI_TAI",
+              "PickableParticle_OnGround_Indicator": "U_CommonVFX_02.Esseract.Esseract_Indicator.Umbra",
+              "PickableParticle_OnGround_Pickup": "U_CommonVFX_02.Esseract.Esseract_Loot.Umbra",
+              "SkillLearningParticle": "U_CommonVFX.Skill_Learn.Skill_Learn_Umbra",
+              "Inventory_HUDPicture": "../u_resources/enneracts/laser.png",
+              "Inventory_LoreDesc": "@ui_enneract_lore"
+            }
+          }
+        ],
+        "Aggression": [
+          {
+            "$": {
+              "TargetValueOnHit": "7"
+            }
+          }
+        ],
+        "DamageBase": [
+          {
+            "$": {
+              "Type": "umbra",
+              "Min": "10",
+              "MinPerLevel": "0",
+              "Max": "11",
+              "MaxPerLevel": "0"
+            }
+          }
+        ],
+        "ParticleList": [
+          {
+            "Particle": [
+              {
+                "$": {
+                  "Key": "Ready",
+                  "Name": "U_Character.Skills.Laser_Ready_01",
+                  "Direction": "0,0,1",
+                  "Bone": "R_Weapon_Bone"
+                }
+              },
+              {
+                "$": {
+                  "Key": "Beam",
+                  "Name": "U_Character.Skills.Laser_01",
+                  "Direction": "0,0,-1"
+                }
+              },
+              {
+                "$": {
+                  "Key": "Hit",
+                  "Name": "U_Character.Skills.Laser_Hit_01"
+                }
+              },
+              {
+                "$": {
+                  "Key": "Circle",
+                  "Name": "U_Magic_Sign.Umbra.FrontCircle_Sign_01_Loop",
+                  "Direction": "0,0,0",
+                  "Offset": "0,0,0"
+                }
+              },
+              {
+                "$": {
+                  "Key": "CircleEnd",
+                  "Name": "U_Magic_Sign.Umbra.FrontCircle_Sign_01_End",
+                  "Direction": "0,1,0",
+                  "Offset": "0,0.75,1.5"
+                }
+              }
+            ]
+          }
+        ],
+        "Range": [
+          {
+            "$": {
+              "AttackRange": "12"
+            }
+          }
+        ],
+        "Cooldown": [
+          {
+            "$": {
+              "Cooldown": "0",
+              "CooldownPerLevel": "0"
+            }
+          }
+        ],
+        "ResourceCost": [
+          {
+            "$": {
+              "ManaCost": "-100",
+              "ManaCostPerLevel": "0",
+              "ROSTransfertDuration": "1.0"
+            }
+          }
+        ],
+        "ResourceCostMaintained": [
+          {
+            "$": {
+              "ManaCostPerSecond": "-100",
+              "ManaCostPerSecondPerLevel": "0",
+              "ROSTransfertDuration": "1.0"
+            }
+          }
+        ],
+        "Specific_Laser": [
+          {
+            "$": {
+              "Width": "0.4",
+              "LengthPadding": "0.1",
+              "MaxZOffset": "1.5",
+              "TimeBetweenHits": "0.3",
+              "WarmupTime": "0.1",
+              "CanHitMultipleTargets": "0",
+              "TargetBone": "Bip01 Spine",
+              "SoundStart": "PLAY_Skill_Laser_Loop",
+              "SoundEnd": "STOP_Skill_Laser_Loop",
+              "SoundHitStart": "PLAY_Skill_Laser_ImpactLoop",
+              "SoundHitEnd": "STOP_Skill_Laser_ImpactLoop",
+              "NumberOfBeams": "1",
+              "CastAngle_DistanceMin": "2",
+              "CastAngle_DistanceMax": "7",
+              "CastAngle_AngleAtDistanceMin": "75",
+              "CastAngle_AngleAtDistanceMax": "0"
+            }
+          }
+        ]
+      },
+      {
+        "$": {
+          "UID": "player_laser_step_1",
+          "ESkill": "default_variant",
+          "Keywords": "magic_spell"
+        },
+        "HUD": [
+          {
+            "$": {
+              "UIName": "@ui_Variant_Laser_variant_1",
+              "Lore": "",
+              "HUDPictureVariant_Normal": "../u_resources/spells/variants/normal_activation_001.png",
+              "HUDPictureVariant_Hover": "../u_resources/spells/variants/normal_hover_001.png",
+              "HUDPictureVariant_Selected": "../u_resources/spells/variants/normal_clicked_001.png",
+              "HUDPictureVariant_NotEnoughPoints": "../u_resources/spells/variants/locked_points_001.png",
+              "HUDPictureVariant_InvalidLevel": "../u_resources/spells/variants/locked_levels_001.png",
+              "ShowParamsInTooltip": "SpecificLaser,Cost,ROSTime"
+            }
+          }
+        ],
+        "ResourceCost": [
+          {
+            "$": {
+              "ManaCost": "30",
+              "ManaCostPerLevel": "0",
+              "ROSTransfertDuration": "1.0"
+            }
+          }
+        ],
+        "ResourceCostMaintained": [
+          {
+            "$": {
+              "ManaCostPerSecond": "10",
+              "ManaCostPerSecondPerLevel": "0",
+              "ROSTransfertDuration": "1.0"
+            }
+          }
+        ]
+      },
+      {
+        "$": {
+          "UID": "player_laser_step_2",
+          "ESkill": "default_variant",
+          "Keywords": "magic_spell"
+        },
+        "HUD": [
+          {
+            "$": {
+              "UIName": "@ui_Variant_Laser_variant_2",
+              "Lore": "",
+              "HUDPictureVariant_Normal": "../u_resources/spells/variants/normal_activation_001.png",
+              "HUDPictureVariant_Hover": "../u_resources/spells/variants/normal_hover_001.png",
+              "HUDPictureVariant_Selected": "../u_resources/spells/variants/normal_clicked_001.png",
+              "HUDPictureVariant_NotEnoughPoints": "../u_resources/spells/variants/locked_points_001.png",
+              "HUDPictureVariant_InvalidLevel": "../u_resources/spells/variants/locked_levels_001.png",
+              "ShowParamsInTooltip": "SpecificLaser,DamageBase"
+            }
+          }
+        ],
+        "DamageBase": [
+          {
+            "$": {
+              "BonusPercent": "10"
+            }
+          }
+        ]
+      },
+      {
+        "$": {
+          "UID": "player_laser_step_3",
+          "ESkill": "default_variant",
+          "Keywords": "magic_spell"
+        },
+        "HUD": [
+          {
+            "$": {
+              "UIName": "@ui_Variant_Laser_variant_3",
+              "Lore": "",
+              "HUDPictureVariant_Normal": "../u_resources/spells/variants/normal_activation_003.png",
+              "HUDPictureVariant_Hover": "../u_resources/spells/variants/normal_hover_003.png",
+              "HUDPictureVariant_Selected": "../u_resources/spells/variants/normal_clicked_003.png",
+              "HUDPictureVariant_NotEnoughPoints": "../u_resources/spells/variants/locked_points_003.png",
+              "HUDPictureVariant_InvalidLevel": "../u_resources/spells/variants/locked_levels_003.png",
+              "ShowParamsInTooltip": "SpecificLaser"
+            }
+          }
+        ],
+        "Specific_Laser": [
+          {
+            "$": {
+              "Width": "0.75"
+            }
+          }
+        ],
+        "ParticleList": [
+          {
+            "Particle": [
+              {
+                "$": {
+                  "Key": "Beam",
+                  "Name": "U_Character.Skills.Laser_02",
+                  "Direction": "0,0,-1"
+                }
+              },
+              {
+                "$": {
+                  "Key": "Hit",
+                  "Name": "U_Character.Skills.Laser_Hit_01_Big"
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "$": {
+          "UID": "player_laser_step_4",
+          "ESkill": "default_variant",
+          "Keywords": "magic_spell"
+        },
+        "HUD": [
+          {
+            "$": {
+              "UIName": "@ui_Variant_Laser_variant_4",
+              "Lore": "@ui_Variant_Laser_variant_4_Lore",
+              "HUDPictureVariant_Normal": "../u_resources/spells/variants/normal_activation_005.png",
+              "HUDPictureVariant_Hover": "../u_resources/spells/variants/normal_hover_005.png",
+              "HUDPictureVariant_Selected": "../u_resources/spells/variants/normal_clicked_005.png",
+              "HUDPictureVariant_NotEnoughPoints": "../u_resources/spells/variants/locked_points_005.png",
+              "HUDPictureVariant_InvalidLevel": "../u_resources/spells/variants/locked_levels_005.png",
+              "ShowParamsInTooltip": "SpecificLaser,DamageBase"
+            }
+          }
+        ],
+        "Specific_Laser": [
+          {
+            "$": {
+              "CanHitMultipleTargets": "1"
+            }
+          }
+        ],
+        "DamageBase": [
+          {
+            "$": {
+              "BonusPercent": "-30"
+            }
+          }
+        ]
+      },
+      {
+        "$": {
+          "UID": "player_laser_step_5",
+          "ESkill": "default_variant",
+          "Keywords": "magic_spell"
+        },
+        "HUD": [
+          {
+            "$": {
+              "UIName": "@ui_Variant_Laser_variant_5",
+              "Lore": "@ui_Variant_Laser_variant_5_Lore",
+              "HUDPictureVariant_Normal": "../u_resources/spells/variants/normal_activation_005.png",
+              "HUDPictureVariant_Hover": "../u_resources/spells/variants/normal_hover_005.png",
+              "HUDPictureVariant_Selected": "../u_resources/spells/variants/normal_clicked_005.png",
+              "HUDPictureVariant_NotEnoughPoints": "../u_resources/spells/variants/locked_points_005.png",
+              "HUDPictureVariant_InvalidLevel": "../u_resources/spells/variants/locked_levels_005.png",
+              "ShowParamsInTooltip": "SpecificLaser,StatusAilmentsChance"
+            }
+          }
+        ],
+        "Specific_Laser": [
+          {
+            "$": {
+              "Poison": "1"
+            }
+          }
+        ],
+        "Damage_Conversion": [
+          {
+            "Entry": [
+              {
+                "$": {
+                  "From": "umbra",
+                  "To": "poison",
+                  "ConversionRate": "100"
+                }
+              }
+            ]
+          }
+        ],
+        "StatusAilment": [
+          {
+            "poison": [
+              {
+                "$": {
+                  "Stacks": "1",
+                  "StacksMode": "AddToBase"
+                }
+              }
+            ]
+          }
+        ],
+        "ParticleList": [
+          {
+            "Particle": [
+              {
+                "$": {
+                  "Key": "Ready",
+                  "Name": "U_Character.Skills.Laser_Ready_01_Poison",
+                  "Direction": "0,0,1",
+                  "Bone": "R_Weapon_Bone"
+                }
+              },
+              {
+                "$": {
+                  "Key": "Beam",
+                  "Name": "U_Character.Skills.Laser_01_Poison",
+                  "Direction": "0,0,-1"
+                }
+              },
+              {
+                "$": {
+                  "Key": "Circle",
+                  "Name": "U_Magic_Sign.Toxic.FrontCircle_Sign_01_Loop",
+                  "Direction": "0,0,0"
+                }
+              },
+              {
+                "$": {
+                  "Key": "CircleEnd",
+                  "Name": "U_Magic_Sign.Toxic.FrontCircle_Sign_01_End",
+                  "Direction": "0,1,0"
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "$": {
+          "UID": "player_laser_step_6",
+          "ESkill": "default_variant",
+          "Keywords": "magic_spell"
+        },
+        "HUD": [
+          {
+            "$": {
+              "UIName": "@ui_Variant_Laser_variant_6",
+              "Lore": "",
+              "HUDPictureVariant_Normal": "../u_resources/spells/variants/normal_activation_003.png",
+              "HUDPictureVariant_Hover": "../u_resources/spells/variants/normal_hover_003.png",
+              "HUDPictureVariant_Selected": "../u_resources/spells/variants/normal_clicked_003.png",
+              "HUDPictureVariant_NotEnoughPoints": "../u_resources/spells/variants/locked_points_003.png",
+              "HUDPictureVariant_InvalidLevel": "../u_resources/spells/variants/locked_levels_003.png",
+              "ShowParamsInTooltip": "SpecificLaser,CastingParams"
+            }
+          }
+        ],
+        "CastingParams": [
+          {
+            "$": {
+              "MaximumTurnRate": "230"
+            }
+          }
+        ]
+      },
+      {
+        "$": {
+          "UID": "player_laser_step_7",
+          "ESkill": "default_variant",
+          "Keywords": "magic_spell"
+        },
+        "HUD": [
+          {
+            "$": {
+              "UIName": "@ui_Variant_Laser_variant_7",
+              "Lore": "",
+              "HUDPictureVariant_Normal": "../u_resources/spells/variants/normal_activation_003.png",
+              "HUDPictureVariant_Hover": "../u_resources/spells/variants/normal_hover_003.png",
+              "HUDPictureVariant_Selected": "../u_resources/spells/variants/normal_clicked_003.png",
+              "HUDPictureVariant_NotEnoughPoints": "../u_resources/spells/variants/locked_points_003.png",
+              "HUDPictureVariant_InvalidLevel": "../u_resources/spells/variants/locked_levels_003.png",
+              "ShowParamsInTooltip": "SpecificLaser"
+            }
+          }
+        ],
+        "Specific_Laser": [
+          {
+            "$": {
+              "DamageOverTimeTargetTime": "2",
+              "DamageOverTimeTargetModifier": "100"
+            }
+          }
+        ]
+      },
+      {
+        "$": {
+          "UID": "player_laser_step_8",
+          "ESkill": "default_variant",
+          "Keywords": "magic_spell"
+        },
+        "HUD": [
+          {
+            "$": {
+              "UIName": "@ui_Variant_Laser_variant_8",
+              "Lore": "@ui_Variant_Laser_variant_8_Lore",
+              "HUDPictureVariant_Normal": "../u_resources/spells/variants/normal_activation_005.png",
+              "HUDPictureVariant_Hover": "../u_resources/spells/variants/normal_hover_005.png",
+              "HUDPictureVariant_Selected": "../u_resources/spells/variants/normal_clicked_005.png",
+              "HUDPictureVariant_NotEnoughPoints": "../u_resources/spells/variants/locked_points_005.png",
+              "HUDPictureVariant_InvalidLevel": "../u_resources/spells/variants/locked_levels_005.png",
+              "ShowParamsInTooltip": "SpecificLaser,Cost,ROSTime"
+            }
+          }
+        ],
+        "Aggression": [
+          {
+            "$": {
+              "TargetValueOnHit": "-3"
+            }
+          }
+        ],
+        "Specific_Laser": [
+          {
+            "$": {
+              "NumberOfBeams": "1"
+            }
+          }
+        ],
+        "ResourceCost": [
+          {
+            "$": {
+              "ManaCost": "-30",
+              "ManaCostPerLevel": "0",
+              "ROSTransfertDuration": "1.0"
+            }
+          }
+        ],
+        "ResourceCostMaintained": [
+          {
+            "$": {
+              "ManaCostPerSecond": "-30",
+              "ManaCostPerSecondPerLevel": "0",
+              "ROSTransfertDuration": "1.0"
+            }
+          }
+        ]
+      },
+      {
+        "$": {
+          "UID": "player_laser_step_9",
+          "ESkill": "default_variant",
+          "Keywords": "magic_spell"
+        },
+        "HUD": [
+          {
+            "$": {
+              "UIName": "@ui_Variant_Laser_variant_9",
+              "Lore": "",
+              "HUDPictureVariant_Normal": "../u_resources/spells/variants/normal_activation_003.png",
+              "HUDPictureVariant_Hover": "../u_resources/spells/variants/normal_hover_003.png",
+              "HUDPictureVariant_Selected": "../u_resources/spells/variants/normal_clicked_003.png",
+              "HUDPictureVariant_NotEnoughPoints": "../u_resources/spells/variants/locked_points_003.png",
+              "HUDPictureVariant_InvalidLevel": "../u_resources/spells/variants/locked_levels_003.png",
+              "ShowParamsInTooltip": "SpecificLaser"
+            }
+          }
+        ],
+        "Specific_Laser": [
+          {
+            "$": {
+              "BuffAlliesName": "AST_Laser_Buff_Aether",
+              "BuffAlliesDuration": "10"
+            }
+          }
+        ]
+      },
+      {
+        "$": {
+          "UID": "player_laser_step_10",
+          "ESkill": "default_variant",
+          "Keywords": "magic_spell"
+        },
+        "HUD": [
+          {
+            "$": {
+              "UIName": "@ui_Variant_Laser_variant_10",
+              "Lore": "",
+              "HUDPictureVariant_Normal": "../u_resources/spells/variants/normal_activation_003.png",
+              "HUDPictureVariant_Hover": "../u_resources/spells/variants/normal_hover_003.png",
+              "HUDPictureVariant_Selected": "../u_resources/spells/variants/normal_clicked_003.png",
+              "HUDPictureVariant_NotEnoughPoints": "../u_resources/spells/variants/locked_points_003.png",
+              "HUDPictureVariant_InvalidLevel": "../u_resources/spells/variants/locked_levels_003.png",
+              "ShowParamsInTooltip": "SpecificLaser,DamageBase"
+            }
+          }
+        ],
+        "Specific_Laser": [
+          {
+            "$": {
+              "NumberOfBeams": "1"
+            }
+          }
+        ],
+        "DamageBase": [
+          {
+            "$": {
+              "BonusPercent": "-30"
+            }
+          }
+        ]
+      },
+      {
+        "$": {
+          "UID": "player_laser_step_11",
+          "ESkill": "default_variant",
+          "Keywords": "magic_spell"
+        },
+        "HUD": [
+          {
+            "$": {
+              "UIName": "@ui_Variant_Laser_variant_11",
+              "Lore": "",
+              "HUDPictureVariant_Normal": "../u_resources/spells/variants/normal_activation_001.png",
+              "HUDPictureVariant_Hover": "../u_resources/spells/variants/normal_hover_001.png",
+              "HUDPictureVariant_Selected": "../u_resources/spells/variants/normal_clicked_001.png",
+              "HUDPictureVariant_NotEnoughPoints": "../u_resources/spells/variants/locked_points_001.png",
+              "HUDPictureVariant_InvalidLevel": "../u_resources/spells/variants/locked_levels_001.png",
+              "ShowParamsInTooltip": "SpecificLaser,DamageCritical"
+            }
+          }
+        ],
+        "DamageCritical": [
+          {
+            "$": {
+              "CriticalInflictScoreModifier": "40"
+            }
+          }
+        ]
+      },
+      {
+        "$": {
+          "UID": "player_laser_step_12",
+          "ESkill": "default_variant",
+          "Keywords": "magic_spell"
+        },
+        "HUD": [
+          {
+            "$": {
+              "UIName": "@ui_Variant_Laser_variant_12",
+              "Lore": "",
+              "HUDPictureVariant_Normal": "../u_resources/spells/variants/normal_activation_001.png",
+              "HUDPictureVariant_Hover": "../u_resources/spells/variants/normal_hover_001.png",
+              "HUDPictureVariant_Selected": "../u_resources/spells/variants/normal_clicked_001.png",
+              "HUDPictureVariant_NotEnoughPoints": "../u_resources/spells/variants/locked_points_001.png",
+              "HUDPictureVariant_InvalidLevel": "../u_resources/spells/variants/locked_levels_001.png",
+              "ShowParamsInTooltip": "SpecificLaser,StatusAilmentsChance"
+            }
+          }
+        ],
+        "StatusAilment": [
+          {
+            "$": {
+              "AllAilmentsInflictScoreIncreasePercent": "40"
+            }
+          }
+        ]
+      },
+      {
+        "$": {
+          "UID": "player_laser_step_13",
+          "ESkill": "default_variant",
+          "Keywords": "magic_spell"
+        },
+        "HUD": [
+          {
+            "$": {
+              "UIName": "@ui_Variant_Laser_variant_13",
+              "Lore": "",
+              "HUDPictureVariant_Normal": "../u_resources/spells/variants/normal_activation_001.png",
+              "HUDPictureVariant_Hover": "../u_resources/spells/variants/normal_hover_001.png",
+              "HUDPictureVariant_Selected": "../u_resources/spells/variants/normal_clicked_001.png",
+              "HUDPictureVariant_NotEnoughPoints": "../u_resources/spells/variants/locked_points_001.png",
+              "HUDPictureVariant_InvalidLevel": "../u_resources/spells/variants/locked_levels_001.png",
+              "ShowParamsInTooltip": "SpecificLaser,StatusAilmentsChance"
+            }
+          }
+        ],
+        "StatusAilment": [
+          {
+            "$": {
+              "AllAilmentsInflictDamageIncreasePercent": "40"
+            }
+          }
+        ]
+      },
+      {
+        "$": {
+          "UID": "player_laser_step_14",
+          "ESkill": "default_variant",
+          "Keywords": "magic_spell"
+        },
+        "HUD": [
+          {
+            "$": {
+              "UIName": "@ui_Variant_Laser_variant_14",
+              "Lore": "",
+              "HUDPictureVariant_Normal": "../u_resources/spells/variants/normal_activation_001.png",
+              "HUDPictureVariant_Hover": "../u_resources/spells/variants/normal_hover_001.png",
+              "HUDPictureVariant_Selected": "../u_resources/spells/variants/normal_clicked_001.png",
+              "HUDPictureVariant_NotEnoughPoints": "../u_resources/spells/variants/locked_points_001.png",
+              "HUDPictureVariant_InvalidLevel": "../u_resources/spells/variants/locked_levels_001.png",
+              "ShowParamsInTooltip": "SpecificLaser,DamageCritical"
+            }
+          }
+        ],
+        "DamageCritical": [
+          {
+            "$": {
+              "CriticalDamageModifier": "30"
+            }
+          }
+        ]
+      },
+      {
+        "$": {
+          "UID": "player_laser_step_15",
+          "ESkill": "default_variant",
+          "Keywords": "magic_spell"
+        },
+        "HUD": [
+          {
+            "$": {
+              "UIName": "@ui_Variant_Laser_variant_15",
+              "Lore": "",
+              "HUDPictureVariant_Normal": "../u_resources/spells/variants/normal_activation_003.png",
+              "HUDPictureVariant_Hover": "../u_resources/spells/variants/normal_hover_003.png",
+              "HUDPictureVariant_Selected": "../u_resources/spells/variants/normal_clicked_003.png",
+              "HUDPictureVariant_NotEnoughPoints": "../u_resources/spells/variants/locked_points_003.png",
+              "HUDPictureVariant_InvalidLevel": "../u_resources/spells/variants/locked_levels_003.png",
+              "ShowParamsInTooltip": "SpecificLaser,DamageBase"
+            }
+          }
+        ],
+        "DamageBase": [
+          {
+            "$": {
+              "BonusPercent": "20"
+            }
+          }
+        ]
+      },
+      {
+        "$": {
+          "UID": "player_laser_step_16",
+          "ESkill": "default_variant",
+          "Keywords": "magic_spell"
+        },
+        "HUD": [
+          {
+            "$": {
+              "UIName": "@ui_Variant_Laser_variant_16",
+              "Lore": "",
+              "HUDPictureVariant_Normal": "../u_resources/spells/variants/normal_activation_001.png",
+              "HUDPictureVariant_Hover": "../u_resources/spells/variants/normal_hover_001.png",
+              "HUDPictureVariant_Selected": "../u_resources/spells/variants/normal_clicked_001.png",
+              "HUDPictureVariant_NotEnoughPoints": "../u_resources/spells/variants/locked_points_001.png",
+              "HUDPictureVariant_InvalidLevel": "../u_resources/spells/variants/locked_levels_001.png",
+              "ShowParamsInTooltip": "SpecificLaser,Cost,ROSTime"
+            }
+          }
+        ],
+        "ResourceCost": [
+          {
+            "$": {
+              "ManaCost": "10",
+              "ManaCostPerLevel": "0",
+              "ROSTransfertDuration": "1.0"
+            }
+          }
+        ],
+        "ResourceCostMaintained": [
+          {
+            "$": {
+              "ManaCostPerSecond": "30",
+              "ManaCostPerSecondPerLevel": "0",
+              "ROSTransfertDuration": "1.0"
+            }
+          }
+        ]
+      },
+      {
+        "$": {
+          "UID": "player_laser_step_3,player_laser_step_5",
+          "ESkill": "default_variant_combo"
+        },
+        "ParticleList": [
+          {
+            "Particle": [
+              {
+                "$": {
+                  "Key": "Beam",
+                  "Name": "U_Character.Skills.Laser_02_Poison",
+                  "Direction": "0,0,-1"
+                }
+              }
+            ]
+          }
+        ],
+        "WeaponRequirements": [
+          {
+            "$": {
+              "Requirements": "magic,poison"
+            }
+          }
+        ]
+      },
+      {
+        "$": {
+          "UID": "player_laser_step_5,player_laser_step_9",
+          "ESkill": "default_variant_combo"
+        },
+        "Specific_Laser": [
+          {
+            "$": {
+              "BuffAlliesName": "AST_Laser_Buff_Poison"
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

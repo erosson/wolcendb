@@ -1,0 +1,785 @@
+{
+  "MetaData": {
+    "Skill": [
+      {
+        "$": {
+          "UID": "player_leap",
+          "ESkill": "player_leap",
+          "Keywords": "attack_skill"
+        },
+        "WeaponRequirements": [
+          {
+            "$": {
+              "Requirements": "melee,"
+            }
+          }
+        ],
+        "Animation": [
+          {
+            "$": {
+              "AnimationDrivenMovement": "0",
+              "ActionString_In": "player_skill_leap_in",
+              "ActionString_Loop": "player_skill_leap_loop",
+              "ActionString_Out": "player_skill_leap_out",
+              "ScaleWithSpellCastingSpeed": "1"
+            }
+          }
+        ],
+        "HUD": [
+          {
+            "$": {
+              "HUDPicture": "../u_resources/spells/Active_Skills/leap.png",
+              "UIName": "@ui_AST_Leap",
+              "Lore": "@ui_AST_Leap_Lore",
+              "ActiveEffectTitle": "",
+              "ActiveEffectDesc": "",
+              "ASTTreeNumber": "1",
+              "ShowParamsInAST": "Cost,ROSTime,Cooldown,Range,Blownaway,DamageDetail,DamageWeapon,DamageCritical,StatusAilmentsChance,SpecificLeap",
+              "ShowParamsInTooltip": "Cost,Cooldown,DamageOverview,StatusAilmentsChance,SpecificLeap"
+            }
+          }
+        ],
+        "Enneract": [
+          {
+            "$": {
+              "PickableParticle_MoveToGround": "U_CommonVFX_02.Esseract.Esseract_Projectile.Physical",
+              "PickableParticle_OnGround_Shape": "U_CommonVFX_02.Esseract.Esseract_Shape.Circle_Physical",
+              "PickableParticle_OnGround_Damage": "U_CommonVFX_02.Esseract.Esseract_Color.Physical",
+              "PickableParticle_OnGround_Symbol": "U_CommonVFX_02.Esseract.Esseract_Symbol.HEPHAARON",
+              "PickableParticle_OnGround_Indicator": "U_CommonVFX_02.Esseract.Esseract_Indicator.Physical",
+              "PickableParticle_OnGround_Pickup": "U_CommonVFX_02.Esseract.Esseract_Loot.Physical",
+              "SkillLearningParticle": "U_CommonVFX.Skill_Learn.Skill_Learn_Physical",
+              "Inventory_HUDPicture": "../u_resources/enneracts/leap.png",
+              "Inventory_LoreDesc": "@ui_enneract_lore"
+            }
+          }
+        ],
+        "PostProcess": [
+          {
+            "$": {
+              "CameraZoomStartTime": "0",
+              "CameraZoomDuration": "0.7",
+              "CameraUnzoomDuration": "0.08",
+              "CameraZoomFov": "28",
+              "BulletTimeStartTime": "0",
+              "BulletTimeMinLimit": "0",
+              "BulletTimeLerpDuration": "0",
+              "BulletTimeRestoreLerpDuration": "0",
+              "ChromaShiftStartTime": "0.61",
+              "ChromaShiftLerpDuration": ".15",
+              "ChromaShiftRestoreLerpDuration": "0.1",
+              "ChromaShiftMaxAmount": ".5",
+              "Dof_StartTime": "0",
+              "Dof_InDuration": "0",
+              "Dof_LoopDuration": "0",
+              "Dof_OutDuration": "0",
+              "Dof_BlurAmount": "0",
+              "Dof_FocusRange": "0",
+              "Dof_FocusDistance": "0",
+              "CameraSlowdownSpeed": "24",
+              "CameraPointToPlayer": "1"
+            }
+          }
+        ],
+        "Aggression": [
+          {
+            "$": {
+              "TargetValueOnHit": "60"
+            }
+          }
+        ],
+        "DamageWeapon": [
+          {
+            "$": {
+              "PercentMin": "100",
+              "PercentMax": "120",
+              "PercentMinPerLevel": "0",
+              "PercentMaxPerLevel": "0"
+            }
+          }
+        ],
+        "Cooldown": [
+          {
+            "$": {
+              "Cooldown": "10",
+              "CooldownPerLevel": "0"
+            }
+          }
+        ],
+        "Shapes": [
+          {
+            "Entry": [
+              {
+                "$": {
+                  "Key": "Impact",
+                  "ShapeName": "player_leap_shape"
+                }
+              }
+            ]
+          }
+        ],
+        "ParticleList": [
+          {
+            "Particle": [
+              {
+                "$": {
+                  "Key": "Impact",
+                  "Name": "U_CommonVFX.Impact_Ground.Physical_01_3M"
+                }
+              },
+              {
+                "$": {
+                  "Key": "JumpDust",
+                  "Name": "U_CommonVFX.Dust.Dust_Jump_02"
+                }
+              },
+              {
+                "$": {
+                  "Key": "Spear",
+                  "Bone": "R_Weapon_Bone",
+                  "Name": "U_Character.Skills.Leap_Spear_02",
+                  "Direction": "0,1,0"
+                }
+              }
+            ]
+          }
+        ],
+        "VisualFeedback": [
+          {
+            "$": {
+              "TrailPresetBase": "default",
+              "FeedbackPresetBase": "Player_skill_leap",
+              "BloodDecalOrientation": "forward"
+            }
+          }
+        ],
+        "Specific_Leap": [
+          {
+            "$": {
+              "Speed": "15",
+              "MoveDistanceMinimum": "1",
+              "MoveDistanceMaximum": "10",
+              "MidPointAdvancement": "0.5",
+              "RaycastHeightOffset": "2.5",
+              "JumpHeight": "3.5",
+              "JumpZOnlyForce": "15",
+              "JumpZOnlyFallingGravityMultiplier": "8",
+              "HeightLimit": "3",
+              "NavPathLengthLimit": "15",
+              "TriggerDistance": "1.5",
+              "ImpactForwardOffset": "1",
+              "SpearParticleSpawnDelay": "0.185"
+            }
+          }
+        ],
+        "ResourceCost": [
+          {
+            "$": {
+              "RageCost": "100",
+              "ROSTransfertDuration": "1.0"
+            }
+          }
+        ],
+        "SoundTrigger": [
+          {
+            "$": {
+              "OnAnimStart": "PLAY_Skill_Leap_Jump",
+              "OnAnimCast": "PLAY_Skill_Leap_Impact"
+            }
+          }
+        ]
+      },
+      {
+        "$": {
+          "UID": "player_leap_step_4,player_leap_step_5",
+          "ESkill": "default_variant_combo"
+        },
+        "SoundTrigger": [
+          {
+            "$": {
+              "OnAnimCast": "Play_Skill_Leap_Impact_Donut_Sacred"
+            }
+          }
+        ]
+      },
+      {
+        "$": {
+          "UID": "player_leap_step_1",
+          "ESkill": "default_variant"
+        },
+        "HUD": [
+          {
+            "$": {
+              "UIName": "@ui_Variant_Leap_variant_1",
+              "Lore": "",
+              "HUDPictureVariant_Normal": "../u_resources/spells/variants/normal_activation_001.png",
+              "HUDPictureVariant_Hover": "../u_resources/spells/variants/normal_hover_001.png",
+              "HUDPictureVariant_Selected": "../u_resources/spells/variants/normal_clicked_001.png",
+              "HUDPictureVariant_NotEnoughPoints": "../u_resources/spells/variants/locked_points_001.png",
+              "HUDPictureVariant_InvalidLevel": "../u_resources/spells/variants/locked_levels_001.png",
+              "ShowParamsInTooltip": "SpecificLeap,Cost"
+            }
+          }
+        ],
+        "ResourceCost": [
+          {
+            "$": {
+              "RageCost": "30"
+            }
+          }
+        ]
+      },
+      {
+        "$": {
+          "UID": "player_leap_step_2",
+          "ESkill": "default_variant"
+        },
+        "HUD": [
+          {
+            "$": {
+              "UIName": "@ui_Variant_Leap_variant_2",
+              "Lore": "",
+              "HUDPictureVariant_Normal": "../u_resources/spells/variants/normal_activation_001.png",
+              "HUDPictureVariant_Hover": "../u_resources/spells/variants/normal_hover_001.png",
+              "HUDPictureVariant_Selected": "../u_resources/spells/variants/normal_clicked_001.png",
+              "HUDPictureVariant_NotEnoughPoints": "../u_resources/spells/variants/locked_points_001.png",
+              "HUDPictureVariant_InvalidLevel": "../u_resources/spells/variants/locked_levels_001.png",
+              "ShowParamsInTooltip": "SpecificLeap"
+            }
+          }
+        ],
+        "Specific_Leap": [
+          {
+            "$": {
+              "Speed": "6",
+              "MidPointAdvancement": "-0.1",
+              "JumpZOnlyFallingGravityMultiplier": "1",
+              "JumpZOnlyForce": "-2",
+              "SpearParticleSpawnDelay": "-0.185"
+            }
+          }
+        ]
+      },
+      {
+        "$": {
+          "UID": "player_leap_step_3",
+          "ESkill": "default_variant"
+        },
+        "HUD": [
+          {
+            "$": {
+              "UIName": "@ui_Variant_Leap_variant_3",
+              "Lore": "",
+              "HUDPictureVariant_Normal": "../u_resources/spells/variants/normal_activation_003.png",
+              "HUDPictureVariant_Hover": "../u_resources/spells/variants/normal_hover_003.png",
+              "HUDPictureVariant_Selected": "../u_resources/spells/variants/normal_clicked_003.png",
+              "HUDPictureVariant_NotEnoughPoints": "../u_resources/spells/variants/locked_points_003.png",
+              "HUDPictureVariant_InvalidLevel": "../u_resources/spells/variants/locked_levels_003.png",
+              "ShowParamsInTooltip": "SpecificLeap,StatusAilmentsChance"
+            }
+          }
+        ],
+        "StatusAilment": [
+          {
+            "stun": [
+              {
+                "$": {
+                  "Chance": "100",
+                  "ChanceMode": "override",
+                  "Duration": "1.5",
+                  "DurationMode": "override"
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "$": {
+          "UID": "player_leap_step_4",
+          "ESkill": "default_variant"
+        },
+        "HUD": [
+          {
+            "$": {
+              "UIName": "@ui_Variant_Leap_variant_4",
+              "Lore": "",
+              "HUDPictureVariant_Normal": "../u_resources/spells/variants/normal_activation_003.png",
+              "HUDPictureVariant_Hover": "../u_resources/spells/variants/normal_hover_003.png",
+              "HUDPictureVariant_Selected": "../u_resources/spells/variants/normal_clicked_003.png",
+              "HUDPictureVariant_NotEnoughPoints": "../u_resources/spells/variants/locked_points_003.png",
+              "HUDPictureVariant_InvalidLevel": "../u_resources/spells/variants/locked_levels_003.png",
+              "ShowParamsInTooltip": "SpecificLeap"
+            }
+          }
+        ],
+        "Specific_Leap": [
+          {
+            "$": {
+              "UseRing": "1"
+            }
+          }
+        ],
+        "Shapes": [
+          {
+            "Entry": [
+              {
+                "$": {
+                  "Key": "Impact",
+                  "ShapeName": "player_leap_shape_ring"
+                }
+              }
+            ]
+          }
+        ],
+        "ParticleList": [
+          {
+            "Particle": [
+              {
+                "$": {
+                  "Key": "Impact_Ring",
+                  "Name": "U_CommonVFX.Impact_Ground.Leap_Impact_Ring_01"
+                }
+              }
+            ]
+          }
+        ],
+        "DamageZone": [
+          {
+            "$": {
+              "Duration": "1.25",
+              "RateOfFire": "1",
+              "RemoveParticleWithShape": "1",
+              "MaxEntityHits": "20"
+            }
+          }
+        ],
+        "SoundTrigger": [
+          {
+            "$": {
+              "OnAnimCast": "Play_Skill_Leap_Impact_Donut"
+            }
+          }
+        ]
+      },
+      {
+        "$": {
+          "UID": "player_leap_step_5",
+          "ESkill": "default_variant"
+        },
+        "HUD": [
+          {
+            "$": {
+              "UIName": "@ui_Variant_Leap_variant_5",
+              "Lore": "@ui_Variant_Leap_variant_5_Lore",
+              "HUDPictureVariant_Normal": "../u_resources/spells/variants/normal_activation_005.png",
+              "HUDPictureVariant_Hover": "../u_resources/spells/variants/normal_hover_005.png",
+              "HUDPictureVariant_Selected": "../u_resources/spells/variants/normal_clicked_005.png",
+              "HUDPictureVariant_NotEnoughPoints": "../u_resources/spells/variants/locked_points_005.png",
+              "HUDPictureVariant_InvalidLevel": "../u_resources/spells/variants/locked_levels_005.png",
+              "ShowParamsInTooltip": "SpecificLeap,StatusAilmentsChance"
+            }
+          }
+        ],
+        "Specific_Leap": [
+          {
+            "$": {
+              "IsSacred": "1"
+            }
+          }
+        ],
+        "StatusAilment": [
+          {
+            "weakness": [
+              {
+                "$": {
+                  "Chance": "20",
+                  "ChanceMode": "AddToBase"
+                }
+              }
+            ]
+          }
+        ],
+        "Damage_Conversion": [
+          {
+            "Entry": [
+              {
+                "$": {
+                  "From": "physical",
+                  "To": "sacred",
+                  "ConversionRate": "100"
+                }
+              }
+            ]
+          }
+        ],
+        "WeaponRequirements": [
+          {
+            "$": {
+              "Requirements": "melee,sacred"
+            }
+          }
+        ],
+        "ParticleList": [
+          {
+            "Particle": [
+              {
+                "$": {
+                  "Key": "Impact",
+                  "Name": "U_CommonVFX.Impact_Ground.Physical_01_Sacred_3M"
+                }
+              },
+              {
+                "$": {
+                  "Key": "Spear",
+                  "Bone": "R_Weapon_Bone",
+                  "Name": "U_Character.Skills.Leap_Spear_02_Sacred",
+                  "Direction": "0,1,0"
+                }
+              }
+            ]
+          }
+        ],
+        "SoundTrigger": [
+          {
+            "$": {
+              "OnAnimCast": "Play_Skill_Leap_Impact_Sacred"
+            }
+          }
+        ]
+      },
+      {
+        "$": {
+          "UID": "player_leap_step_6",
+          "ESkill": "default_variant"
+        },
+        "HUD": [
+          {
+            "$": {
+              "UIName": "@ui_Variant_Leap_variant_6",
+              "Lore": "",
+              "HUDPictureVariant_Normal": "../u_resources/spells/variants/normal_activation_001.png",
+              "HUDPictureVariant_Hover": "../u_resources/spells/variants/normal_hover_001.png",
+              "HUDPictureVariant_Selected": "../u_resources/spells/variants/normal_clicked_001.png",
+              "HUDPictureVariant_NotEnoughPoints": "../u_resources/spells/variants/locked_points_001.png",
+              "HUDPictureVariant_InvalidLevel": "../u_resources/spells/variants/locked_levels_001.png",
+              "ShowParamsInTooltip": "SpecificLeap,DamageWeapon"
+            }
+          }
+        ],
+        "DamageWeapon": [
+          {
+            "$": {
+              "PercentMax": "20",
+              "PercentMin": "20"
+            }
+          }
+        ]
+      },
+      {
+        "$": {
+          "UID": "player_leap_step_7",
+          "ESkill": "default_variant"
+        },
+        "HUD": [
+          {
+            "$": {
+              "UIName": "@ui_Variant_Leap_variant_7",
+              "Lore": "",
+              "HUDPictureVariant_Normal": "../u_resources/spells/variants/normal_activation_003.png",
+              "HUDPictureVariant_Hover": "../u_resources/spells/variants/normal_hover_003.png",
+              "HUDPictureVariant_Selected": "../u_resources/spells/variants/normal_clicked_003.png",
+              "HUDPictureVariant_NotEnoughPoints": "../u_resources/spells/variants/locked_points_003.png",
+              "HUDPictureVariant_InvalidLevel": "../u_resources/spells/variants/locked_levels_003.png",
+              "ShowParamsInTooltip": "SpecificLeap,BlownAway"
+            }
+          }
+        ],
+        "Blownaway": [
+          {
+            "$": {
+              "Chance": "100",
+              "Height": "2",
+              "Distance": "4.5",
+              "StunDuration": "0.0"
+            }
+          }
+        ]
+      },
+      {
+        "$": {
+          "UID": "player_leap_step_8",
+          "ESkill": "default_variant"
+        },
+        "HUD": [
+          {
+            "$": {
+              "UIName": "@ui_Variant_Leap_variant_8",
+              "Lore": "@ui_Variant_Leap_variant_8_Lore",
+              "HUDPictureVariant_Normal": "../u_resources/spells/variants/normal_activation_005.png",
+              "HUDPictureVariant_Hover": "../u_resources/spells/variants/normal_hover_005.png",
+              "HUDPictureVariant_Selected": "../u_resources/spells/variants/normal_clicked_005.png",
+              "HUDPictureVariant_NotEnoughPoints": "../u_resources/spells/variants/locked_points_005.png",
+              "HUDPictureVariant_InvalidLevel": "../u_resources/spells/variants/locked_levels_005.png",
+              "ShowParamsInTooltip": "SpecificLeap,Cost,Cooldown"
+            }
+          }
+        ],
+        "Cooldown": [
+          {
+            "$": {
+              "Cooldown": "-10"
+            }
+          }
+        ],
+        "Aggression": [
+          {
+            "$": {
+              "TargetValueOnHit": "-10"
+            }
+          }
+        ],
+        "ResourceCost": [
+          {
+            "$": {
+              "StaminaCost": "-1"
+            }
+          }
+        ]
+      },
+      {
+        "$": {
+          "UID": "player_leap_step_9",
+          "ESkill": "default_variant"
+        },
+        "HUD": [
+          {
+            "$": {
+              "UIName": "@ui_Variant_Leap_variant_9",
+              "Lore": "",
+              "HUDPictureVariant_Normal": "../u_resources/spells/variants/normal_activation_001.png",
+              "HUDPictureVariant_Hover": "../u_resources/spells/variants/normal_hover_001.png",
+              "HUDPictureVariant_Selected": "../u_resources/spells/variants/normal_clicked_001.png",
+              "HUDPictureVariant_NotEnoughPoints": "../u_resources/spells/variants/locked_points_001.png",
+              "HUDPictureVariant_InvalidLevel": "../u_resources/spells/variants/locked_levels_001.png",
+              "ShowParamsInTooltip": "SpecificLeap"
+            }
+          }
+        ],
+        "Specific_Leap": [
+          {
+            "$": {
+              "CDReducrionPerKill": "0.5"
+            }
+          }
+        ]
+      },
+      {
+        "$": {
+          "UID": "player_leap_step_10",
+          "ESkill": "default_variant"
+        },
+        "HUD": [
+          {
+            "$": {
+              "UIName": "@ui_Variant_Leap_variant_10",
+              "Lore": "@ui_Variant_Leap_variant_10_lore",
+              "HUDPictureVariant_Normal": "../u_resources/spells/variants/normal_activation_005.png",
+              "HUDPictureVariant_Hover": "../u_resources/spells/variants/normal_hover_005.png",
+              "HUDPictureVariant_Selected": "../u_resources/spells/variants/normal_clicked_005.png",
+              "HUDPictureVariant_NotEnoughPoints": "../u_resources/spells/variants/locked_points_005.png",
+              "HUDPictureVariant_InvalidLevel": "../u_resources/spells/variants/locked_levels_005.png",
+              "ShowParamsInTooltip": "SpecificLeap"
+            }
+          }
+        ],
+        "ParticleList": [
+          {
+            "Particle": [
+              {
+                "$": {
+                  "Key": "Vortex",
+                  "Name": "U_Character.Skills.Leep_Pulling_01",
+                  "Direction": "0,1,0",
+                  "Scale": "1",
+                  "TimeScale": "0.85"
+                }
+              }
+            ]
+          }
+        ],
+        "Specific_Leap": [
+          {
+            "$": {
+              "VortexRadius": "4"
+            }
+          }
+        ]
+      },
+      {
+        "$": {
+          "UID": "player_leap_step_11",
+          "ESkill": "default_variant"
+        },
+        "HUD": [
+          {
+            "$": {
+              "UIName": "@ui_Variant_Leap_variant_11",
+              "Lore": "",
+              "HUDPictureVariant_Normal": "../u_resources/spells/variants/normal_activation_003.png",
+              "HUDPictureVariant_Hover": "../u_resources/spells/variants/normal_hover_003.png",
+              "HUDPictureVariant_Selected": "../u_resources/spells/variants/normal_clicked_003.png",
+              "HUDPictureVariant_NotEnoughPoints": "../u_resources/spells/variants/locked_points_003.png",
+              "HUDPictureVariant_InvalidLevel": "../u_resources/spells/variants/locked_levels_003.png",
+              "ShowParamsInTooltip": "SpecificLeap"
+            }
+          }
+        ],
+        "Specific_Leap": [
+          {
+            "$": {
+              "ForceShieldPerHit": "5"
+            }
+          }
+        ]
+      },
+      {
+        "$": {
+          "UID": "player_leap_step_12",
+          "ESkill": "default_variant"
+        },
+        "HUD": [
+          {
+            "$": {
+              "UIName": "@ui_Variant_Leap_variant_12",
+              "Lore": "",
+              "HUDPictureVariant_Normal": "../u_resources/spells/variants/normal_activation_003.png",
+              "HUDPictureVariant_Hover": "../u_resources/spells/variants/normal_hover_003.png",
+              "HUDPictureVariant_Selected": "../u_resources/spells/variants/normal_clicked_003.png",
+              "HUDPictureVariant_NotEnoughPoints": "../u_resources/spells/variants/locked_points_003.png",
+              "HUDPictureVariant_InvalidLevel": "../u_resources/spells/variants/locked_levels_003.png",
+              "ShowParamsInTooltip": "SpecificLeap"
+            }
+          }
+        ],
+        "Specific_Leap": [
+          {
+            "$": {
+              "BuffPerHitName": "AST_Leap_BuffPerHit",
+              "BuffPerHitDuration": "10"
+            }
+          }
+        ]
+      },
+      {
+        "$": {
+          "UID": "player_leap_step_13",
+          "ESkill": "default_variant"
+        },
+        "HUD": [
+          {
+            "$": {
+              "UIName": "@ui_Variant_Leap_variant_13",
+              "Lore": "",
+              "HUDPictureVariant_Normal": "../u_resources/spells/variants/normal_activation_003.png",
+              "HUDPictureVariant_Hover": "../u_resources/spells/variants/normal_hover_003.png",
+              "HUDPictureVariant_Selected": "../u_resources/spells/variants/normal_clicked_003.png",
+              "HUDPictureVariant_NotEnoughPoints": "../u_resources/spells/variants/locked_points_003.png",
+              "HUDPictureVariant_InvalidLevel": "../u_resources/spells/variants/locked_levels_003.png",
+              "ShowParamsInTooltip": "SpecificLeap"
+            }
+          }
+        ],
+        "Specific_Leap": [
+          {
+            "$": {
+              "LandingBuffName": "AST_Leap_Buff",
+              "LandingBuffDuration": "10"
+            }
+          }
+        ]
+      },
+      {
+        "$": {
+          "UID": "player_leap_step_14",
+          "ESkill": "default_variant"
+        },
+        "HUD": [
+          {
+            "$": {
+              "UIName": "@ui_Variant_Leap_variant_14",
+              "Lore": "",
+              "HUDPictureVariant_Normal": "../u_resources/spells/variants/normal_activation_001.png",
+              "HUDPictureVariant_Hover": "../u_resources/spells/variants/normal_hover_001.png",
+              "HUDPictureVariant_Selected": "../u_resources/spells/variants/normal_clicked_001.png",
+              "HUDPictureVariant_NotEnoughPoints": "../u_resources/spells/variants/locked_points_001.png",
+              "HUDPictureVariant_InvalidLevel": "../u_resources/spells/variants/locked_levels_001.png",
+              "ShowParamsInTooltip": "SpecificLeap,DamageCritical"
+            }
+          }
+        ],
+        "DamageCritical": [
+          {
+            "$": {
+              "CriticalInflictScoreModifier": "40"
+            }
+          }
+        ]
+      },
+      {
+        "$": {
+          "UID": "player_leap_step_15",
+          "ESkill": "default_variant"
+        },
+        "HUD": [
+          {
+            "$": {
+              "UIName": "@ui_Variant_Leap_variant_15",
+              "Lore": "",
+              "HUDPictureVariant_Normal": "../u_resources/spells/variants/normal_activation_001.png",
+              "HUDPictureVariant_Hover": "../u_resources/spells/variants/normal_hover_001.png",
+              "HUDPictureVariant_Selected": "../u_resources/spells/variants/normal_clicked_001.png",
+              "HUDPictureVariant_NotEnoughPoints": "../u_resources/spells/variants/locked_points_001.png",
+              "HUDPictureVariant_InvalidLevel": "../u_resources/spells/variants/locked_levels_001.png",
+              "ShowParamsInTooltip": "SpecificLeap,StatusAilmentsChance"
+            }
+          }
+        ],
+        "StatusAilment": [
+          {
+            "$": {
+              "AllAilmentsInflictScoreIncreasePercent": "40"
+            }
+          }
+        ]
+      },
+      {
+        "$": {
+          "UID": "player_leap_step_16",
+          "ESkill": "default_variant"
+        },
+        "HUD": [
+          {
+            "$": {
+              "UIName": "@ui_Variant_Leap_variant_16",
+              "Lore": "",
+              "HUDPictureVariant_Normal": "../u_resources/spells/variants/normal_activation_001.png",
+              "HUDPictureVariant_Hover": "../u_resources/spells/variants/normal_hover_001.png",
+              "HUDPictureVariant_Selected": "../u_resources/spells/variants/normal_clicked_001.png",
+              "HUDPictureVariant_NotEnoughPoints": "../u_resources/spells/variants/locked_points_001.png",
+              "HUDPictureVariant_InvalidLevel": "../u_resources/spells/variants/locked_levels_001.png",
+              "ShowParamsInTooltip": "SpecificLeap"
+            }
+          }
+        ],
+        "Aggression": [
+          {
+            "$": {
+              "TargetValueOnHit": "200"
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

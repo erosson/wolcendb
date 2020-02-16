@@ -1,0 +1,1043 @@
+{
+  "MetaData": {
+    "Skill": [
+      {
+        "$": {
+          "UID": "player_spreadshot",
+          "ESkill": "player_spreadshot",
+          "Keywords": "projectile,attack_skill,additional_projectile"
+        },
+        "VisualFeedback": [
+          {
+            "$": {
+              "TrailPresetBase": "ranged",
+              "FeedbackPresetBase": "Player_skill_spreadshot",
+              "BloodDecalOrientation": "forward",
+              "HitDestroyableFromCasterPosition": "1"
+            }
+          }
+        ],
+        "Animation": [
+          {
+            "$": {
+              "ActionString": "player_skill_spreadshot",
+              "AnimationDrivenMovement": "1",
+              "IgnoreAnimationMovementWhenHoldingShift": "1"
+            }
+          }
+        ],
+        "WeaponRequirements": [
+          {
+            "$": {
+              "Requirements": "ranged"
+            }
+          }
+        ],
+        "CastingParams": [
+          {
+            "$": {
+              "CastBone": "Bip01 Spine",
+              "MaximumTurnRate": "180"
+            }
+          }
+        ],
+        "HUD": [
+          {
+            "$": {
+              "HUDPicture": "../u_resources/spells/Active_Skills/spreadshot.png",
+              "UIName": "@ui_AST_SpreadShot",
+              "Lore": "@ui_AST_SpreadShot_Lore",
+              "ActiveEffectTitle": "",
+              "ActiveEffectDesc": "",
+              "ASTTreeNumber": "0",
+              "ShowParamsInAST": "Cost,ROSTime,Cooldown,Range,Projectiles,DamageDetail,DamageWeapon,DamageCritical,StatusAilmentsChance,SpecificSpreadShot",
+              "ShowParamsInTooltip": "Cost,Cooldown,DamageOverview,StatusAilmentsChance,SpecificSpreadShot"
+            }
+          }
+        ],
+        "Enneract": [
+          {
+            "$": {
+              "PickableParticle_MoveToGround": "U_CommonVFX_02.Esseract.Esseract_Projectile.Physical",
+              "PickableParticle_OnGround_Shape": "U_CommonVFX_02.Esseract.Esseract_Shape.Circle_Physical",
+              "PickableParticle_OnGround_Damage": "U_CommonVFX_02.Esseract.Esseract_Color.Physical",
+              "PickableParticle_OnGround_Symbol": "U_CommonVFX_02.Esseract.Esseract_Symbol.HEPHAARON",
+              "PickableParticle_OnGround_Indicator": "U_CommonVFX_02.Esseract.Esseract_Indicator.Physical",
+              "PickableParticle_OnGround_Pickup": "U_CommonVFX_02.Esseract.Esseract_Loot.Physical",
+              "SkillLearningParticle": "U_CommonVFX.Skill_Learn.Skill_Learn_Physical",
+              "Inventory_HUDPicture": "../u_resources/enneracts/multishot2.png",
+              "Inventory_LoreDesc": "@ui_enneract_lore"
+            }
+          }
+        ],
+        "Cooldown": [
+          {
+            "$": {
+              "Cooldown": "0.0",
+              "CooldownPerLevel": "0"
+            }
+          }
+        ],
+        "Aggression": [
+          {
+            "$": {
+              "TargetValueOnHit": "4"
+            }
+          }
+        ],
+        "DamageWeapon": [
+          {
+            "$": {
+              "PercentMin": "75",
+              "PercentMinPerLevel": "0",
+              "PercentMax": "75",
+              "PercentMaxPerLevel": "0"
+            }
+          }
+        ],
+        "ResourceCost": [
+          {
+            "$": {
+              "RageCost": "-150",
+              "ROSTransfertDuration": "1.2"
+            }
+          }
+        ],
+        "Range": [
+          {
+            "$": {
+              "AttackRange": "20"
+            }
+          }
+        ],
+        "Projectile": [
+          {
+            "$": {
+              "Name": "player_spreadshot_proj",
+              "ProjectileCount": "5",
+              "AngleBetweenProjectiles": "10",
+              "PenetrationLimit": "2"
+            },
+            "AutomaticCastAngle": [
+              {
+                "$": {
+                  "distanceMin": "2",
+                  "distanceMax": "7",
+                  "totalAngleAtDistanceMin": "120",
+                  "totalAngleAtDistanceMax": "120",
+                  "projectileAngleAtDistanceMin": "45",
+                  "projectileAngleAtDistanceMax": "10"
+                }
+              }
+            ]
+          }
+        ],
+        "SoundTrigger": [
+          {
+            "$": {
+              "OnAnimStart": "PLAY_Skill_Spreadshot_Start",
+              "OnAnimCast": "PLAY_Skill_Spreadshot_Shoot",
+              "OnHit": "Play_Skill_ArrowsRain_Impact"
+            }
+          }
+        ]
+      },
+      {
+        "$": {
+          "UID": "player_spreadshot_step_1",
+          "ESkill": "default_variant",
+          "Keywords": "projectile"
+        },
+        "HUD": [
+          {
+            "$": {
+              "UIName": "@ui_Variant_SpreadShot_variant_1",
+              "Lore": "",
+              "HUDPictureVariant_Normal": "../u_resources/spells/variants/normal_activation_001.png",
+              "HUDPictureVariant_Hover": "../u_resources/spells/variants/normal_hover_001.png",
+              "HUDPictureVariant_Selected": "../u_resources/spells/variants/normal_clicked_001.png",
+              "HUDPictureVariant_NotEnoughPoints": "../u_resources/spells/variants/locked_points_001.png",
+              "HUDPictureVariant_InvalidLevel": "../u_resources/spells/variants/locked_levels_001.png",
+              "ShowParamsInTooltip": "SpecificSpreadShot,DamageWeapon"
+            }
+          }
+        ],
+        "DamageWeapon": [
+          {
+            "$": {
+              "PercentMin": "10",
+              "PercentMax": "10"
+            }
+          }
+        ]
+      },
+      {
+        "$": {
+          "UID": "player_spreadshot_step_2",
+          "ESkill": "default_variant",
+          "Keywords": "projectile"
+        },
+        "HUD": [
+          {
+            "$": {
+              "UIName": "@ui_Variant_SpreadShot_variant_2",
+              "Lore": "",
+              "HUDPictureVariant_Normal": "../u_resources/spells/variants/normal_activation_001.png",
+              "HUDPictureVariant_Hover": "../u_resources/spells/variants/normal_hover_001.png",
+              "HUDPictureVariant_Selected": "../u_resources/spells/variants/normal_clicked_001.png",
+              "HUDPictureVariant_NotEnoughPoints": "../u_resources/spells/variants/locked_points_001.png",
+              "HUDPictureVariant_InvalidLevel": "../u_resources/spells/variants/locked_levels_001.png",
+              "ShowParamsInTooltip": "SpecificSpreadShot,Cost"
+            }
+          }
+        ],
+        "ResourceCost": [
+          {
+            "$": {
+              "RageCost": "30"
+            }
+          }
+        ]
+      },
+      {
+        "$": {
+          "UID": "player_spreadshot_step_3",
+          "ESkill": "default_variant",
+          "Keywords": "projectile"
+        },
+        "HUD": [
+          {
+            "$": {
+              "UIName": "@ui_Variant_SpreadShot_variant_3",
+              "Lore": "",
+              "HUDPictureVariant_Normal": "../u_resources/spells/variants/normal_activation_003.png",
+              "HUDPictureVariant_Hover": "../u_resources/spells/variants/normal_hover_003.png",
+              "HUDPictureVariant_Selected": "../u_resources/spells/variants/normal_clicked_003.png",
+              "HUDPictureVariant_NotEnoughPoints": "../u_resources/spells/variants/locked_points_003.png",
+              "HUDPictureVariant_InvalidLevel": "../u_resources/spells/variants/locked_levels_003.png",
+              "ShowParamsInTooltip": "SpecificSpreadShot,DamageWeapon,Projectiles"
+            }
+          }
+        ],
+        "DamageWeapon": [
+          {
+            "$": {
+              "PercentMin": "35",
+              "PercentMax": "35"
+            }
+          }
+        ],
+        "Projectile": [
+          {
+            "$": {
+              "ProjectileCount": "-2"
+            }
+          }
+        ]
+      },
+      {
+        "$": {
+          "UID": "player_spreadshot_step_4",
+          "ESkill": "default_variant",
+          "Keywords": "projectile"
+        },
+        "HUD": [
+          {
+            "$": {
+              "UIName": "@ui_Variant_SpreadShot_variant_4",
+              "Lore": "@ui_Variant_SpreadShot_variant_4_Lore",
+              "HUDPictureVariant_Normal": "../u_resources/spells/variants/normal_activation_005.png",
+              "HUDPictureVariant_Hover": "../u_resources/spells/variants/normal_hover_005.png",
+              "HUDPictureVariant_Selected": "../u_resources/spells/variants/normal_clicked_005.png",
+              "HUDPictureVariant_NotEnoughPoints": "../u_resources/spells/variants/locked_points_005.png",
+              "HUDPictureVariant_InvalidLevel": "../u_resources/spells/variants/locked_levels_005.png",
+              "ShowParamsInTooltip": "SpecificSpreadShot,Explosion"
+            }
+          }
+        ],
+        "Explosion": [
+          {
+            "$": {
+              "ExplosionRadius": "1.5"
+            }
+          }
+        ],
+        "Specific_SpreadShot": [
+          {
+            "$": {
+              "ExplodingArrows": "1"
+            }
+          }
+        ]
+      },
+      {
+        "$": {
+          "UID": "player_spreadshot_step_5",
+          "ESkill": "default_variant",
+          "Keywords": "projectile"
+        },
+        "HUD": [
+          {
+            "$": {
+              "UIName": "@ui_Variant_SpreadShot_variant_5",
+              "Lore": "@ui_Variant_SpreadShot_variant_5_Lore",
+              "HUDPictureVariant_Normal": "../u_resources/spells/variants/normal_activation_005.png",
+              "HUDPictureVariant_Hover": "../u_resources/spells/variants/normal_hover_005.png",
+              "HUDPictureVariant_Selected": "../u_resources/spells/variants/normal_clicked_005.png",
+              "HUDPictureVariant_NotEnoughPoints": "../u_resources/spells/variants/locked_points_005.png",
+              "HUDPictureVariant_InvalidLevel": "../u_resources/spells/variants/locked_levels_005.png",
+              "ShowParamsInTooltip": "SpecificSpreadShot,StatusAilmentsChance"
+            }
+          }
+        ],
+        "Specific_SpreadShot": [
+          {
+            "$": {
+              "IsPoison": "1"
+            }
+          }
+        ],
+        "Damage_Conversion": [
+          {
+            "Entry": [
+              {
+                "$": {
+                  "From": "physical",
+                  "To": "toxic",
+                  "ConversionRate": "100"
+                }
+              }
+            ]
+          }
+        ],
+        "WeaponRequirements": [
+          {
+            "$": {
+              "Requirements": "ranged,poison"
+            }
+          }
+        ],
+        "StatusAilment": [
+          {
+            "poison": [
+              {
+                "$": {
+                  "Stacks": "1",
+                  "StacksMode": "AddToBase"
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "$": {
+          "UID": "player_spreadshot_step_6",
+          "ESkill": "default_variant",
+          "Keywords": "projectile"
+        },
+        "HUD": [
+          {
+            "$": {
+              "UIName": "@ui_Variant_SpreadShot_variant_6",
+              "Lore": "",
+              "HUDPictureVariant_Normal": "../u_resources/spells/variants/normal_activation_001.png",
+              "HUDPictureVariant_Hover": "../u_resources/spells/variants/normal_hover_001.png",
+              "HUDPictureVariant_Selected": "../u_resources/spells/variants/normal_clicked_001.png",
+              "HUDPictureVariant_NotEnoughPoints": "../u_resources/spells/variants/locked_points_001.png",
+              "HUDPictureVariant_InvalidLevel": "../u_resources/spells/variants/locked_levels_001.png",
+              "ShowParamsInTooltip": "SpecificSpreadShot,StatusAilmentsChance"
+            }
+          }
+        ],
+        "StatusAilment": [
+          {
+            "$": {
+              "AllAilmentsInflictScoreIncreasePercent": "40"
+            }
+          }
+        ]
+      },
+      {
+        "$": {
+          "UID": "player_spreadshot_step_7",
+          "ESkill": "default_variant",
+          "Keywords": "projectile"
+        },
+        "HUD": [
+          {
+            "$": {
+              "UIName": "@ui_Variant_SpreadShot_variant_7",
+              "Lore": "",
+              "HUDPictureVariant_Normal": "../u_resources/spells/variants/normal_activation_003.png",
+              "HUDPictureVariant_Hover": "../u_resources/spells/variants/normal_hover_003.png",
+              "HUDPictureVariant_Selected": "../u_resources/spells/variants/normal_clicked_003.png",
+              "HUDPictureVariant_NotEnoughPoints": "../u_resources/spells/variants/locked_points_003.png",
+              "HUDPictureVariant_InvalidLevel": "../u_resources/spells/variants/locked_levels_003.png",
+              "ShowParamsInTooltip": "SpecificSpreadShot,Projectiles,Cost"
+            }
+          }
+        ],
+        "Projectile": [
+          {
+            "$": {
+              "ProjectileCount": "2"
+            }
+          }
+        ],
+        "ResourceCost": [
+          {
+            "$": {
+              "RageCost": "-80"
+            }
+          }
+        ],
+        "Aggression": [
+          {
+            "$": {
+              "TargetValueOnHit": "0"
+            }
+          }
+        ]
+      },
+      {
+        "$": {
+          "UID": "player_spreadshot_step_8",
+          "ESkill": "default_variant",
+          "Keywords": "projectile"
+        },
+        "HUD": [
+          {
+            "$": {
+              "UIName": "@ui_Variant_SpreadShot_variant_8",
+              "Lore": "",
+              "HUDPictureVariant_Normal": "../u_resources/spells/variants/normal_activation_003.png",
+              "HUDPictureVariant_Hover": "../u_resources/spells/variants/normal_hover_003.png",
+              "HUDPictureVariant_Selected": "../u_resources/spells/variants/normal_clicked_003.png",
+              "HUDPictureVariant_NotEnoughPoints": "../u_resources/spells/variants/locked_points_003.png",
+              "HUDPictureVariant_InvalidLevel": "../u_resources/spells/variants/locked_levels_003.png",
+              "ShowParamsInTooltip": "SpecificSpreadShot"
+            }
+          }
+        ],
+        "Animation": [
+          {
+            "$": {
+              "ActionString": "player_skill_spreadshot_ghost",
+              "AnimationDrivenMovement": "0"
+            }
+          }
+        ],
+        "ParticleList": [
+          {
+            "Particle": [
+              {
+                "$": {
+                  "Key": "GhostAppear",
+                  "Name": "U_Character.Skills.Teleport_Decoy_end_Summon",
+                  "Direction": "0,1,0"
+                }
+              },
+              {
+                "$": {
+                  "Key": "GhostDisappear",
+                  "Name": "U_Character.Skills.Teleport_Decoy_end_Summon_02",
+                  "Direction": "0,1,0"
+                }
+              }
+            ]
+          }
+        ],
+        "Specific_SpreadShot": [
+          {
+            "$": {
+              "StraightLineShot": "1",
+              "SpaceBetweenShots": "0.75",
+              "GhostLifetime": "1.25",
+              "GhostSpawnDelay": "0.18",
+              "GhostSpawnDelayBetween": "0.075",
+              "GhostProjectileOffsetPosition": "0.0,0.1,0.9",
+              "GhostCharacterFilepath": "Game/objects/characters/mobs/humanoid/humansoul/COSS_HumanSoul/COSS_HumanSoul01.cdf",
+              "GhostPoisonCharacterFilepath": "Game/objects/characters/mobs/humanoid/humansoul/COSS_HumanSoul/COSS_HumanSoul02.cdf",
+              "GhostFrostCharacterFilepath": "Game/objects/characters/mobs/humanoid/humansoul/COSS_HumanSoul/COSS_HumanSoul03.cdf",
+              "GhostAnim": "coss_humansoul_skill_atk_spreadshot_01"
+            }
+          }
+        ],
+        "SoundTrigger": [
+          {
+            "$": {
+              "OnAnimStart": "PLAY_Skill_Spreadshot_Ghost_Start",
+              "OnAnimCast": "PLAY_Skill_Spreadshot_Ghost_Shoot",
+              "OnHit": "Play_Skill_ArrowsRain_Impact"
+            }
+          }
+        ]
+      },
+      {
+        "$": {
+          "UID": "player_spreadshot_step_9",
+          "ESkill": "default_variant",
+          "Keywords": "projectile"
+        },
+        "HUD": [
+          {
+            "$": {
+              "UIName": "@ui_Variant_SpreadShot_variant_9",
+              "Lore": "",
+              "HUDPictureVariant_Normal": "../u_resources/spells/variants/normal_activation_003.png",
+              "HUDPictureVariant_Hover": "../u_resources/spells/variants/normal_hover_003.png",
+              "HUDPictureVariant_Selected": "../u_resources/spells/variants/normal_clicked_003.png",
+              "HUDPictureVariant_NotEnoughPoints": "../u_resources/spells/variants/locked_points_003.png",
+              "HUDPictureVariant_InvalidLevel": "../u_resources/spells/variants/locked_levels_003.png",
+              "ShowParamsInTooltip": "SpecificSpreadShot"
+            }
+          }
+        ],
+        "GhostDamage": [
+          {
+            "$": {
+              "ChanceToHit": "5",
+              "ChanceToHitPerLevel": "0",
+              "MinDelay": "0.1",
+              "MaxDelay": "0.5",
+              "DamageMultiplier": "1"
+            }
+          }
+        ]
+      },
+      {
+        "$": {
+          "UID": "player_spreadshot_step_10",
+          "ESkill": "default_variant",
+          "Keywords": "projectile"
+        },
+        "HUD": [
+          {
+            "$": {
+              "UIName": "@ui_Variant_SpreadShot_variant_10",
+              "Lore": "",
+              "HUDPictureVariant_Normal": "../u_resources/spells/variants/normal_activation_003.png",
+              "HUDPictureVariant_Hover": "../u_resources/spells/variants/normal_hover_003.png",
+              "HUDPictureVariant_Selected": "../u_resources/spells/variants/normal_clicked_003.png",
+              "HUDPictureVariant_NotEnoughPoints": "../u_resources/spells/variants/locked_points_003.png",
+              "HUDPictureVariant_InvalidLevel": "../u_resources/spells/variants/locked_levels_003.png",
+              "ShowParamsInTooltip": "SpecificSpreadShot"
+            }
+          }
+        ],
+        "Specific_SpreadShot": [
+          {
+            "$": {
+              "AnimIncreasePercent": "15"
+            }
+          }
+        ]
+      },
+      {
+        "$": {
+          "UID": "player_spreadshot_step_11",
+          "ESkill": "default_variant",
+          "Keywords": "projectile"
+        },
+        "HUD": [
+          {
+            "$": {
+              "UIName": "@ui_Variant_SpreadShot_variant_11",
+              "Lore": "",
+              "HUDPictureVariant_Normal": "../u_resources/spells/variants/normal_activation_003.png",
+              "HUDPictureVariant_Hover": "../u_resources/spells/variants/normal_hover_003.png",
+              "HUDPictureVariant_Selected": "../u_resources/spells/variants/normal_clicked_003.png",
+              "HUDPictureVariant_NotEnoughPoints": "../u_resources/spells/variants/locked_points_003.png",
+              "HUDPictureVariant_InvalidLevel": "../u_resources/spells/variants/locked_levels_003.png",
+              "ShowParamsInTooltip": "SpecificSpreadShot"
+            }
+          }
+        ],
+        "Specific_SpreadShot": [
+          {
+            "$": {
+              "DamageMultiplierPerPierce": "0.1"
+            }
+          }
+        ]
+      },
+      {
+        "$": {
+          "UID": "player_spreadshot_step_12",
+          "ESkill": "default_variant",
+          "Keywords": "projectile"
+        },
+        "HUD": [
+          {
+            "$": {
+              "UIName": "@ui_Variant_SpreadShot_variant_12",
+              "Lore": "@ui_Variant_SpreadShot_variant_12_lore",
+              "HUDPictureVariant_Normal": "../u_resources/spells/variants/normal_activation_005.png",
+              "HUDPictureVariant_Hover": "../u_resources/spells/variants/normal_hover_005.png",
+              "HUDPictureVariant_Selected": "../u_resources/spells/variants/normal_clicked_005.png",
+              "HUDPictureVariant_NotEnoughPoints": "../u_resources/spells/variants/locked_points_005.png",
+              "HUDPictureVariant_InvalidLevel": "../u_resources/spells/variants/locked_levels_005.png",
+              "ShowParamsInTooltip": "SpecificSpreadShot"
+            }
+          }
+        ],
+        "ParticleList": [
+          {
+            "Particle": [
+              {
+                "$": {
+                  "Key": "arrow",
+                  "Name": "U_Character.Skills.Spread_Shot_Ready_01",
+                  "Bone": "L_Weapon_Bone",
+                  "Scale": "1",
+                  "Direction": "0,1,0"
+                }
+              },
+              {
+                "$": {
+                  "Key": "loop",
+                  "Name": "U_Character.Skills.Spread_Shot_Bow_Loop_01",
+                  "Bone": "L_Weapon_Bone",
+                  "Scale": "1",
+                  "Direction": "0,1,0"
+                }
+              },
+              {
+                "$": {
+                  "Key": "disappear",
+                  "Name": "U_Character.Skills.Spread_Shot_Bow_End_01",
+                  "Bone": "L_Weapon_Bone",
+                  "Scale": "1",
+                  "Direction": "0,1,0"
+                }
+              },
+              {
+                "$": {
+                  "Key": "aura",
+                  "Name": "U_Character.Skills.BrutalStrike_ChargingAura_01",
+                  "Bone": "L_Weapon_Bone",
+                  "Scale": "0.5",
+                  "Direction": "0,1,0"
+                }
+              },
+              {
+                "$": {
+                  "Key": "glow1",
+                  "Name": "U_Character.Skills.BrutalStrike_Charge_01",
+                  "Bone": "L_Weapon_Bone",
+                  "Scale": "0.75",
+                  "Direction": "0,1,0"
+                }
+              },
+              {
+                "$": {
+                  "Key": "glow2",
+                  "Name": "U_Character.Skills.BrutalStrike_Charge_02",
+                  "Bone": "L_Weapon_Bone",
+                  "Scale": "0.75",
+                  "Direction": "0,1,0"
+                }
+              },
+              {
+                "$": {
+                  "Key": "glow3",
+                  "Name": "U_Character.Skills.BrutalStrike_Charge_03",
+                  "Bone": "L_Weapon_Bone",
+                  "Scale": "0.75",
+                  "Direction": "0,1,0"
+                }
+              },
+              {
+                "$": {
+                  "Key": "glow4",
+                  "Name": "U_Character.Skills.BrutalStrike_Charge_04",
+                  "Bone": "L_Weapon_Bone",
+                  "Scale": "0.75",
+                  "Direction": "0,1,0"
+                }
+              },
+              {
+                "$": {
+                  "Key": "glow5",
+                  "Name": "U_Character.Skills.BrutalStrike_Charge_04",
+                  "Bone": "L_Weapon_Bone",
+                  "Scale": "0.75",
+                  "Direction": "0,1,0"
+                }
+              },
+              {
+                "$": {
+                  "Key": "glowf",
+                  "Name": "U_Character.Skills.BrutalStrike_Charge_Final",
+                  "Bone": "L_Weapon_Bone",
+                  "Scale": "0.75",
+                  "Direction": "0,1,0"
+                }
+              }
+            ]
+          }
+        ],
+        "Specific_SpreadShot": [
+          {
+            "$": {
+              "FireAnimationLoop": "player_skill_spreadshot_Charge_Out",
+              "GhostLoopAnimIn": "cmh_skill_spreadshot_ghost_01_Charge_In",
+              "GhostLoopAnimLoop": "cmh_skill_spreadshot_ghost_01_Charge_Loop",
+              "GhostLoopAnimOut": "cmh_skill_spreadshot_ghost_01_Charge_Out",
+              "GhostLoopAnimFire": "cmh_skill_spreadshot_ghost_01_MultiShot"
+            }
+          }
+        ],
+        "ChargedSkill": [
+          {
+            "$": {
+              "WindupAnim": "player_skill_spreadshot_Charge_In",
+              "FollowupAnim": "player_skill_spreadshot_Multishot"
+            },
+            "Step": [
+              {
+                "$": {
+                  "TimeToReachStep": "0.5",
+                  "AssociatedAnim": "player_skill_spreadshot_Charge_Loop_01",
+                  "WeaponDamagePercent": "100"
+                }
+              },
+              {
+                "$": {
+                  "TimeToReachStep": "0.5",
+                  "AssociatedAnim": "player_skill_spreadshot_Charge_Loop_02",
+                  "WeaponDamagePercent": "105"
+                }
+              },
+              {
+                "$": {
+                  "TimeToReachStep": "0.5",
+                  "AssociatedAnim": "player_skill_spreadshot_Charge_Loop_03",
+                  "WeaponDamagePercent": "110"
+                }
+              },
+              {
+                "$": {
+                  "TimeToReachStep": "0.5",
+                  "AssociatedAnim": "player_skill_spreadshot_Charge_Loop_03",
+                  "WeaponDamagePercent": "115"
+                }
+              },
+              {
+                "$": {
+                  "TimeToReachStep": "0.5",
+                  "AssociatedAnim": "player_skill_spreadshot_Charge_Loop_03",
+                  "WeaponDamagePercent": "120"
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "$": {
+          "UID": "player_spreadshot_step_13",
+          "ESkill": "default_variant",
+          "Keywords": "projectile"
+        },
+        "HUD": [
+          {
+            "$": {
+              "UIName": "@ui_Variant_SpreadShot_variant_13",
+              "Lore": "@ui_Variant_SpreadShot_variant_13_Lore",
+              "HUDPictureVariant_Normal": "../u_resources/spells/variants/normal_activation_005.png",
+              "HUDPictureVariant_Hover": "../u_resources/spells/variants/normal_hover_005.png",
+              "HUDPictureVariant_Selected": "../u_resources/spells/variants/normal_clicked_005.png",
+              "HUDPictureVariant_NotEnoughPoints": "../u_resources/spells/variants/locked_points_005.png",
+              "HUDPictureVariant_InvalidLevel": "../u_resources/spells/variants/locked_levels_005.png",
+              "ShowParamsInTooltip": "SpecificSpreadShot,DamageWeapon"
+            }
+          }
+        ],
+        "Specific_SpreadShot": [
+          {
+            "$": {
+              "IsFrost": "1"
+            }
+          }
+        ],
+        "Damage_Conversion": [
+          {
+            "Entry": [
+              {
+                "$": {
+                  "From": "physical",
+                  "To": "frost",
+                  "ConversionRate": "100"
+                }
+              }
+            ]
+          }
+        ],
+        "DamageWeapon": [
+          {
+            "$": {
+              "PercentMin": "10",
+              "PercentMinPerLevel": "0",
+              "PercentMax": "10",
+              "PercentMaxPerLevel": "0"
+            }
+          }
+        ]
+      },
+      {
+        "$": {
+          "UID": "player_spreadshot_step_14",
+          "ESkill": "default_variant",
+          "Keywords": "projectile"
+        },
+        "HUD": [
+          {
+            "$": {
+              "UIName": "@ui_Variant_SpreadShot_variant_14",
+              "Lore": "",
+              "HUDPictureVariant_Normal": "../u_resources/spells/variants/normal_activation_001.png",
+              "HUDPictureVariant_Hover": "../u_resources/spells/variants/normal_hover_001.png",
+              "HUDPictureVariant_Selected": "../u_resources/spells/variants/normal_clicked_001.png",
+              "HUDPictureVariant_NotEnoughPoints": "../u_resources/spells/variants/locked_points_001.png",
+              "HUDPictureVariant_InvalidLevel": "../u_resources/spells/variants/locked_levels_001.png",
+              "ShowParamsInTooltip": "SpecificSpreadShot,StatusAilmentsChance"
+            }
+          }
+        ],
+        "StatusAilment": [
+          {
+            "$": {
+              "AllAilmentsInflictDamageIncreasePercent": "40"
+            }
+          }
+        ]
+      },
+      {
+        "$": {
+          "UID": "player_spreadshot_step_15",
+          "ESkill": "default_variant",
+          "Keywords": "projectile"
+        },
+        "HUD": [
+          {
+            "$": {
+              "UIName": "@ui_Variant_SpreadShot_variant_15",
+              "Lore": "",
+              "HUDPictureVariant_Normal": "../u_resources/spells/variants/normal_activation_001.png",
+              "HUDPictureVariant_Hover": "../u_resources/spells/variants/normal_hover_001.png",
+              "HUDPictureVariant_Selected": "../u_resources/spells/variants/normal_clicked_001.png",
+              "HUDPictureVariant_NotEnoughPoints": "../u_resources/spells/variants/locked_points_001.png",
+              "HUDPictureVariant_InvalidLevel": "../u_resources/spells/variants/locked_levels_001.png",
+              "ShowParamsInTooltip": "SpecificSpreadShot,DamageCritical"
+            }
+          }
+        ],
+        "DamageCritical": [
+          {
+            "$": {
+              "CriticalInflictScoreModifier": "40"
+            }
+          }
+        ]
+      },
+      {
+        "$": {
+          "UID": "player_spreadshot_step_16",
+          "ESkill": "default_variant",
+          "Keywords": "projectile"
+        },
+        "HUD": [
+          {
+            "$": {
+              "UIName": "@ui_Variant_SpreadShot_variant_16",
+              "Lore": "",
+              "HUDPictureVariant_Normal": "../u_resources/spells/variants/normal_activation_001.png",
+              "HUDPictureVariant_Hover": "../u_resources/spells/variants/normal_hover_001.png",
+              "HUDPictureVariant_Selected": "../u_resources/spells/variants/normal_clicked_001.png",
+              "HUDPictureVariant_NotEnoughPoints": "../u_resources/spells/variants/locked_points_001.png",
+              "HUDPictureVariant_InvalidLevel": "../u_resources/spells/variants/locked_levels_001.png",
+              "ShowParamsInTooltip": "SpecificSpreadShot,DamageCritical"
+            }
+          }
+        ],
+        "DamageCritical": [
+          {
+            "$": {
+              "CriticalDamageModifier": "30"
+            }
+          }
+        ]
+      },
+      {
+        "$": {
+          "UID": "player_spreadshot_step_5,player_spreadshot_step_12",
+          "ESkill": "default_variant_combo"
+        },
+        "ParticleList": [
+          {
+            "Particle": [
+              {
+                "$": {
+                  "Key": "arrow",
+                  "Name": "U_Character.Skills.Spread_Shot_Ready_01_Poison",
+                  "Bone": "L_Weapon_Bone",
+                  "Direction": "0,1,0"
+                }
+              },
+              {
+                "$": {
+                  "Key": "loop",
+                  "Name": "U_Character.Skills.Spread_Shot_Bow_Loop_01_Poison",
+                  "Bone": "L_Weapon_Bone",
+                  "Direction": "0,1,0"
+                }
+              },
+              {
+                "$": {
+                  "Key": "disappear",
+                  "Name": "U_Character.Skills.Spread_Shot_Bow_End_01_Poison",
+                  "Bone": "L_Weapon_Bone",
+                  "Direction": "0,1,0"
+                }
+              },
+              {
+                "$": {
+                  "Key": "aura",
+                  "Name": "U_Character.Skills.BrutalStrike_ChargingAura_01_Poison",
+                  "Bone": "L_Weapon_Bone",
+                  "Direction": "0,1,0"
+                }
+              },
+              {
+                "$": {
+                  "Key": "glow1",
+                  "Name": "U_Character.Skills.BrutalStrike_Charge_01_Poison",
+                  "Bone": "L_Weapon_Bone",
+                  "Direction": "0,1,0"
+                }
+              },
+              {
+                "$": {
+                  "Key": "glow2",
+                  "Name": "U_Character.Skills.BrutalStrike_Charge_02_Poison",
+                  "Bone": "L_Weapon_Bone",
+                  "Direction": "0,1,0"
+                }
+              },
+              {
+                "$": {
+                  "Key": "glow3",
+                  "Name": "U_Character.Skills.BrutalStrike_Charge_03_Poison",
+                  "Bone": "L_Weapon_Bone",
+                  "Direction": "0,1,0"
+                }
+              },
+              {
+                "$": {
+                  "Key": "glow4",
+                  "Name": "U_Character.Skills.BrutalStrike_Charge_04_Poison",
+                  "Bone": "L_Weapon_Bone",
+                  "Direction": "0,1,0"
+                }
+              },
+              {
+                "$": {
+                  "Key": "glowf",
+                  "Name": "U_Character.Skills.BrutalStrike_Charge_Final_Poison",
+                  "Bone": "L_Weapon_Bone",
+                  "Direction": "0,1,0"
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "$": {
+          "UID": "player_spreadshot_step_12,player_spreadshot_step_13",
+          "ESkill": "default_variant_combo"
+        },
+        "ParticleList": [
+          {
+            "Particle": [
+              {
+                "$": {
+                  "Key": "arrow",
+                  "Name": "U_Character.Skills.Spread_Shot_Ready_01_Frost",
+                  "Bone": "L_Weapon_Bone",
+                  "Direction": "0,1,0"
+                }
+              },
+              {
+                "$": {
+                  "Key": "loop",
+                  "Name": "U_Character.Skills.Spread_Shot_Bow_Loop_01_Frost",
+                  "Bone": "L_Weapon_Bone",
+                  "Direction": "0,1,0"
+                }
+              },
+              {
+                "$": {
+                  "Key": "disappear",
+                  "Name": "U_Character.Skills.Spread_Shot_Bow_End_01_Frost",
+                  "Bone": "L_Weapon_Bone",
+                  "Direction": "0,1,0"
+                }
+              },
+              {
+                "$": {
+                  "Key": "aura",
+                  "Name": "U_Character_02.Sniper.Sniper_Charging_Aura_01_Frost",
+                  "Bone": "L_Weapon_Bone",
+                  "Direction": "0,1,0"
+                }
+              },
+              {
+                "$": {
+                  "Key": "glow1",
+                  "Name": "U_Character_02.Sniper.Sniper_Charging_01_Frost",
+                  "Bone": "L_Weapon_Bone",
+                  "Direction": "0,1,0"
+                }
+              },
+              {
+                "$": {
+                  "Key": "glow2",
+                  "Name": "U_Character_02.Sniper.Sniper_Charging_02_Frost",
+                  "Bone": "L_Weapon_Bone",
+                  "Direction": "0,1,0"
+                }
+              },
+              {
+                "$": {
+                  "Key": "glow3",
+                  "Name": "U_Character_02.Sniper.Sniper_Charging_03_Frost",
+                  "Bone": "L_Weapon_Bone",
+                  "Direction": "0,1,0"
+                }
+              },
+              {
+                "$": {
+                  "Key": "glow4",
+                  "Name": "U_Character_02.Sniper.Sniper_Charging_03_Frost",
+                  "Bone": "L_Weapon_Bone",
+                  "Direction": "0,1,0"
+                }
+              },
+              {
+                "$": {
+                  "Key": "glowf",
+                  "Name": "U_Character_02.Sniper.Sniper_Charging_Trigger_Frost",
+                  "Bone": "L_Weapon_Bone",
+                  "Direction": "0,1,0"
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

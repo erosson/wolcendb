@@ -30,11 +30,11 @@ function main() {
       // copied files are committed to git
       Promise.all(paths.map(p => fs.copyFile(prefix + p, dest + p))),
       // convert xml to json
-      //Promise.all(paths.map(p => {
-      //  fs.readFile(prefix + p)
-      //  .then(xml => promisify((new xml2js.Parser()).parseString)(xml))
-      //  .then(json => fs.writeFile(dest + p.replace(/\.xml$/, '.json'), JSON.stringify(json, null, 2)))
-      //})),
+      Promise.all(paths.map(p => {
+        fs.readFile(prefix + p)
+        .then(xml => promisify((new xml2js.Parser()).parseString)(xml))
+        .then(json => fs.writeFile(dest + p.replace(/\.xml$/, '.json'), JSON.stringify(json, null, 2)))
+      })),
       // create a js file that imports the above stuff
       generateImports(groups),
     ]))

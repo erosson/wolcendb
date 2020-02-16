@@ -1,0 +1,676 @@
+{
+  "MetaData": {
+    "Skill": [
+      {
+        "$": {
+          "UID": "player_frostlance",
+          "ESkill": "player_frostlance",
+          "Keywords": "projectile,magic_spell,additional_projectile"
+        },
+        "WeaponRequirements": [
+          {
+            "$": {
+              "Requirements": "magic,frost"
+            }
+          }
+        ],
+        "VisualFeedback": [
+          {
+            "$": {
+              "TrailPresetBase": "default",
+              "FeedbackPresetBase": "Player_skill_frostlance",
+              "BloodDecalOrientation": "forward"
+            }
+          }
+        ],
+        "CastingParams": [
+          {
+            "$": {
+              "CastBone": "",
+              "CastDelay": "1",
+              "CanCastWhileMoving": "1"
+            }
+          }
+        ],
+        "HUD": [
+          {
+            "$": {
+              "HUDPicture": "../u_resources/spells/Active_Skills/frostlance.png",
+              "UIName": "@ui_AST_FrostLance",
+              "Lore": "@ui_AST_FrostLance_Lore",
+              "ActiveEffectTitle": "",
+              "ActiveEffectDesc": "",
+              "ASTTreeNumber": "2",
+              "ShowParamsInAST": "Cost,ROSTime,Cooldown,Range,Projectiles,DamageDetail,DamageCritical,StatusAilmentsChance,CastingParams,SpecificFrostLance",
+              "ShowParamsInTooltip": "Cost,Cooldown,DamageOverview,StatusAilmentsChance,SpecificFrostLance"
+            }
+          }
+        ],
+        "Enneract": [
+          {
+            "$": {
+              "PickableParticle_MoveToGround": "U_CommonVFX_02.Esseract.Esseract_Projectile.Frost",
+              "PickableParticle_OnGround_Shape": "U_CommonVFX_02.Esseract.Esseract_Shape.Circle_Frost",
+              "PickableParticle_OnGround_Damage": "U_CommonVFX_02.Esseract.Esseract_Color.Frost",
+              "PickableParticle_OnGround_Symbol": "U_CommonVFX_02.Esseract.Esseract_Symbol.ETHELIEL",
+              "PickableParticle_OnGround_Indicator": "U_CommonVFX_02.Esseract.Esseract_Indicator.Frost",
+              "PickableParticle_OnGround_Pickup": "U_CommonVFX_02.Esseract.Esseract_Loot.Frost",
+              "SkillLearningParticle": "U_CommonVFX.Skill_Learn.Skill_Learn_Frost",
+              "Inventory_HUDPicture": "../u_resources/enneracts/frostlance.png",
+              "Inventory_LoreDesc": "@ui_enneract_lore"
+            }
+          }
+        ],
+        "Aggression": [
+          {
+            "$": {
+              "TargetValueOnHit": "20"
+            }
+          }
+        ],
+        "DamageBase": [
+          {
+            "$": {
+              "Type": "frost",
+              "Min": "11",
+              "MinPerLevel": "0",
+              "Max": "13",
+              "MaxPerLevel": "0"
+            }
+          }
+        ],
+        "Cooldown": [
+          {
+            "$": {
+              "Cooldown": "0.33",
+              "CooldownPerLevel": "0"
+            }
+          }
+        ],
+        "ResourceCost": [
+          {
+            "$": {
+              "ManaCost": "-100",
+              "ManaCostPerLevel": "0",
+              "ROSTransfertDuration": "0.5"
+            }
+          }
+        ],
+        "Range": [
+          {
+            "$": {
+              "AttackRange": "20"
+            }
+          }
+        ],
+        "Projectile": [
+          {
+            "$": {
+              "Name": "player_frostlance_proj",
+              "ProjectileCount": "1",
+              "PenetrationLimit": "2"
+            },
+            "AutomaticCastAngle": [
+              {
+                "$": {
+                  "distanceMin": "2",
+                  "distanceMax": "7",
+                  "totalAngleAtDistanceMin": "120",
+                  "totalAngleAtDistanceMax": "120",
+                  "projectileAngleAtDistanceMin": "45",
+                  "projectileAngleAtDistanceMax": "10"
+                }
+              }
+            ]
+          }
+        ],
+        "Specific_Frostlance": [
+          {
+            "$": {
+              "RandomAngle": "6"
+            }
+          }
+        ]
+      },
+      {
+        "$": {
+          "UID": "player_frostlance_step_1",
+          "ESkill": "default_variant"
+        },
+        "HUD": [
+          {
+            "$": {
+              "UIName": "@ui_Variant_FrostLance_variant_1",
+              "Lore": "",
+              "HUDPictureVariant_Normal": "../u_resources/spells/variants/normal_activation_001.png",
+              "HUDPictureVariant_Hover": "../u_resources/spells/variants/normal_hover_001.png",
+              "HUDPictureVariant_Selected": "../u_resources/spells/variants/normal_clicked_001.png",
+              "HUDPictureVariant_NotEnoughPoints": "../u_resources/spells/variants/locked_points_001.png",
+              "HUDPictureVariant_InvalidLevel": "../u_resources/spells/variants/locked_levels_001.png",
+              "ShowParamsInTooltip": "SpecificFrostLance,DamageBase"
+            }
+          }
+        ],
+        "DamageBase": [
+          {
+            "$": {
+              "BonusPercent": "10"
+            }
+          }
+        ]
+      },
+      {
+        "$": {
+          "UID": "player_frostlance_step_2",
+          "ESkill": "default_variant"
+        },
+        "HUD": [
+          {
+            "$": {
+              "UIName": "@ui_Variant_FrostLance_variant_2",
+              "Lore": "",
+              "HUDPictureVariant_Normal": "../u_resources/spells/variants/normal_activation_001.png",
+              "HUDPictureVariant_Hover": "../u_resources/spells/variants/normal_hover_001.png",
+              "HUDPictureVariant_Selected": "../u_resources/spells/variants/normal_clicked_001.png",
+              "HUDPictureVariant_NotEnoughPoints": "../u_resources/spells/variants/locked_points_001.png",
+              "HUDPictureVariant_InvalidLevel": "../u_resources/spells/variants/locked_levels_001.png",
+              "ShowParamsInTooltip": "SpecificFrostLance,Cost"
+            }
+          }
+        ],
+        "ResourceCost": [
+          {
+            "$": {
+              "ManaCost": "20"
+            }
+          }
+        ]
+      },
+      {
+        "$": {
+          "UID": "player_frostlance_step_3",
+          "ESkill": "default_variant"
+        },
+        "HUD": [
+          {
+            "$": {
+              "UIName": "@ui_Variant_FrostLance_variant_3",
+              "Lore": "",
+              "HUDPictureVariant_Normal": "../u_resources/spells/variants/normal_activation_003.png",
+              "HUDPictureVariant_Hover": "../u_resources/spells/variants/normal_hover_003.png",
+              "HUDPictureVariant_Selected": "../u_resources/spells/variants/normal_clicked_003.png",
+              "HUDPictureVariant_NotEnoughPoints": "../u_resources/spells/variants/locked_points_003.png",
+              "HUDPictureVariant_InvalidLevel": "../u_resources/spells/variants/locked_levels_003.png",
+              "ShowParamsInTooltip": "SpecificFrostLance,DamageBase,CastingParams"
+            }
+          }
+        ],
+        "CastingParams": [
+          {
+            "$": {
+              "CastDelay": "1"
+            }
+          }
+        ],
+        "DamageBase": [
+          {
+            "$": {
+              "BonusPercent": "100"
+            }
+          }
+        ],
+        "Projectile": [
+          {
+            "$": {
+              "Name": "player_frostlance_proj_large"
+            }
+          }
+        ]
+      },
+      {
+        "$": {
+          "UID": "player_frostlance_step_4",
+          "ESkill": "default_variant"
+        },
+        "HUD": [
+          {
+            "$": {
+              "UIName": "@ui_Variant_FrostLance_variant_4",
+              "Lore": "@ui_Variant_FrostLance_variant_4_Lore",
+              "HUDPictureVariant_Normal": "../u_resources/spells/variants/normal_activation_005.png",
+              "HUDPictureVariant_Hover": "../u_resources/spells/variants/normal_hover_005.png",
+              "HUDPictureVariant_Selected": "../u_resources/spells/variants/normal_clicked_005.png",
+              "HUDPictureVariant_NotEnoughPoints": "../u_resources/spells/variants/locked_points_005.png",
+              "HUDPictureVariant_InvalidLevel": "../u_resources/spells/variants/locked_levels_005.png",
+              "ShowParamsInTooltip": "SpecificFrostLance"
+            }
+          }
+        ],
+        "SecondarySkillToCast": [
+          {
+            "$": {
+              "UID": "player_frostlance_explosion"
+            }
+          }
+        ]
+      },
+      {
+        "$": {
+          "UID": "player_frostlance_step_5",
+          "ESkill": "default_variant"
+        },
+        "HUD": [
+          {
+            "$": {
+              "UIName": "@ui_Variant_FrostLance_variant_5",
+              "Lore": "@ui_Variant_FrostLance_variant_5_Lore",
+              "HUDPictureVariant_Normal": "../u_resources/spells/variants/normal_activation_005.png",
+              "HUDPictureVariant_Hover": "../u_resources/spells/variants/normal_hover_005.png",
+              "HUDPictureVariant_Selected": "../u_resources/spells/variants/normal_clicked_005.png",
+              "HUDPictureVariant_NotEnoughPoints": "../u_resources/spells/variants/locked_points_005.png",
+              "HUDPictureVariant_InvalidLevel": "../u_resources/spells/variants/locked_levels_005.png",
+              "ShowParamsInTooltip": "DamageDetail,StatusAilmentsChance,SpecificFrostLance"
+            }
+          }
+        ],
+        "Specific_Frostlance": [
+          {
+            "$": {
+              "IsSacred": "1"
+            }
+          }
+        ],
+        "WeaponRequirements": [
+          {
+            "$": {
+              "Requirements": "sacred,magic"
+            }
+          }
+        ],
+        "Damage_Conversion": [
+          {
+            "Entry": [
+              {
+                "$": {
+                  "From": "frost",
+                  "To": "sacred",
+                  "ConversionRate": "100"
+                }
+              }
+            ]
+          }
+        ],
+        "StatusAilment": [
+          {
+            "weakness": [
+              {
+                "$": {
+                  "Chance": "30",
+                  "ChanceMode": "AddToBase"
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "$": {
+          "UID": "player_frostlance_step_6",
+          "ESkill": "default_variant"
+        },
+        "HUD": [
+          {
+            "$": {
+              "UIName": "@ui_Variant_FrostLance_variant_6",
+              "Lore": "",
+              "HUDPictureVariant_Normal": "../u_resources/spells/variants/normal_activation_003.png",
+              "HUDPictureVariant_Hover": "../u_resources/spells/variants/normal_hover_003.png",
+              "HUDPictureVariant_Selected": "../u_resources/spells/variants/normal_clicked_003.png",
+              "HUDPictureVariant_NotEnoughPoints": "../u_resources/spells/variants/locked_points_003.png",
+              "HUDPictureVariant_InvalidLevel": "../u_resources/spells/variants/locked_levels_003.png",
+              "ShowParamsInTooltip": "SpecificFrostLance,StatusAilmentsChance"
+            }
+          }
+        ],
+        "StatusAilment": [
+          {
+            "$": {
+              "AllAilmentsInflictScoreIncreasePercent": "40"
+            }
+          }
+        ]
+      },
+      {
+        "$": {
+          "UID": "player_frostlance_step_7",
+          "ESkill": "default_variant"
+        },
+        "HUD": [
+          {
+            "$": {
+              "UIName": "@ui_Variant_FrostLance_variant_7",
+              "Lore": "",
+              "HUDPictureVariant_Normal": "../u_resources/spells/variants/normal_activation_003.png",
+              "HUDPictureVariant_Hover": "../u_resources/spells/variants/normal_hover_003.png",
+              "HUDPictureVariant_Selected": "../u_resources/spells/variants/normal_clicked_003.png",
+              "HUDPictureVariant_NotEnoughPoints": "../u_resources/spells/variants/locked_points_003.png",
+              "HUDPictureVariant_InvalidLevel": "../u_resources/spells/variants/locked_levels_003.png",
+              "ShowParamsInTooltip": "SpecificFrostLance,DamageCritical"
+            }
+          }
+        ],
+        "DamageCritical": [
+          {
+            "$": {
+              "CriticalInflictScoreModifier": "30"
+            }
+          }
+        ]
+      },
+      {
+        "$": {
+          "UID": "player_frostlance_step_8",
+          "ESkill": "default_variant"
+        },
+        "HUD": [
+          {
+            "$": {
+              "UIName": "@ui_Variant_FrostLance_variant_8",
+              "Lore": "",
+              "HUDPictureVariant_Normal": "../u_resources/spells/variants/normal_activation_003.png",
+              "HUDPictureVariant_Hover": "../u_resources/spells/variants/normal_hover_003.png",
+              "HUDPictureVariant_Selected": "../u_resources/spells/variants/normal_clicked_003.png",
+              "HUDPictureVariant_NotEnoughPoints": "../u_resources/spells/variants/locked_points_003.png",
+              "HUDPictureVariant_InvalidLevel": "../u_resources/spells/variants/locked_levels_003.png",
+              "ShowParamsInTooltip": "SpecificFrostLance"
+            }
+          }
+        ],
+        "Specific_Frostlance": [
+          {
+            "$": {
+              "SharpShooter": "1",
+              "StacksDuration": "5",
+              "MaxStacksOverall": "20",
+              "MaxStacksPerCast": "3",
+              "DamagePercentPerStack": "5"
+            }
+          }
+        ]
+      },
+      {
+        "$": {
+          "UID": "player_frostlance_step_9",
+          "ESkill": "default_variant"
+        },
+        "HUD": [
+          {
+            "$": {
+              "UIName": "@ui_Variant_FrostLance_variant_9",
+              "Lore": "@ui_Variant_FrostLance_variant_9_lore",
+              "HUDPictureVariant_Normal": "../u_resources/spells/variants/normal_activation_005.png",
+              "HUDPictureVariant_Hover": "../u_resources/spells/variants/normal_hover_005.png",
+              "HUDPictureVariant_Selected": "../u_resources/spells/variants/normal_clicked_005.png",
+              "HUDPictureVariant_NotEnoughPoints": "../u_resources/spells/variants/locked_points_005.png",
+              "HUDPictureVariant_InvalidLevel": "../u_resources/spells/variants/locked_levels_005.png",
+              "ShowParamsInTooltip": "SpecificFrostLance"
+            }
+          }
+        ],
+        "Specific_Frostlance": [
+          {
+            "$": {
+              "MaxHoldedLances": "3",
+              "DamageMultiplierPerLance": "0.40"
+            }
+          }
+        ]
+      },
+      {
+        "$": {
+          "UID": "player_frostlance_step_10",
+          "ESkill": "default_variant"
+        },
+        "HUD": [
+          {
+            "$": {
+              "UIName": "@ui_Variant_FrostLance_variant_10",
+              "Lore": "",
+              "HUDPictureVariant_Normal": "../u_resources/spells/variants/normal_activation_003.png",
+              "HUDPictureVariant_Hover": "../u_resources/spells/variants/normal_hover_003.png",
+              "HUDPictureVariant_Selected": "../u_resources/spells/variants/normal_clicked_003.png",
+              "HUDPictureVariant_NotEnoughPoints": "../u_resources/spells/variants/locked_points_003.png",
+              "HUDPictureVariant_InvalidLevel": "../u_resources/spells/variants/locked_levels_003.png",
+              "ShowParamsInTooltip": "SpecificFrostLance,DamageBase"
+            }
+          }
+        ],
+        "Specific_Frostlance": [
+          {
+            "$": {
+              "FragmentCount": "4",
+              "DistanceBetweenFragments": "10",
+              "SecondaryProjectiles": "frostlance_proj"
+            }
+          }
+        ],
+        "DamageBase": [
+          {
+            "$": {
+              "BonusPercent": "-20"
+            }
+          }
+        ],
+        "ParticleList": [
+          {
+            "Particle": [
+              {
+                "$": {
+                  "Key": "Fragment",
+                  "Name": "U_VFX_Temp.Temp_Chaguk.IceSpear_Spread_Impact_01"
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "$": {
+          "UID": "player_frostlance_step_5,player_frostlance_step_10",
+          "ESkill": "default_variant_combo"
+        },
+        "Specific_Frostlance": [
+          {
+            "$": {
+              "SecondaryProjectiles": "frostlance_sacred_proj"
+            }
+          }
+        ],
+        "ParticleList": [
+          {
+            "Particle": [
+              {
+                "$": {
+                  "Key": "Fragment",
+                  "Name": "U_VFX_Temp.Temp_Chaguk.IceSpear_Spread_Impact_01_Sacred"
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "$": {
+          "UID": "player_frostlance_step_11",
+          "ESkill": "default_variant"
+        },
+        "HUD": [
+          {
+            "$": {
+              "UIName": "@ui_Variant_FrostLance_variant_11",
+              "Lore": "",
+              "HUDPictureVariant_Normal": "../u_resources/spells/variants/normal_activation_001.png",
+              "HUDPictureVariant_Hover": "../u_resources/spells/variants/normal_hover_001.png",
+              "HUDPictureVariant_Selected": "../u_resources/spells/variants/normal_clicked_001.png",
+              "HUDPictureVariant_NotEnoughPoints": "../u_resources/spells/variants/locked_points_001.png",
+              "HUDPictureVariant_InvalidLevel": "../u_resources/spells/variants/locked_levels_001.png",
+              "ShowParamsInTooltip": "SpecificFrostLance,StatusAilmentsChance"
+            }
+          }
+        ],
+        "StatusAilment": [
+          {
+            "$": {
+              "AllAilmentsInflictDamageIncreasePercent": "40"
+            }
+          }
+        ]
+      },
+      {
+        "$": {
+          "UID": "player_frostlance_step_12",
+          "ESkill": "default_variant"
+        },
+        "HUD": [
+          {
+            "$": {
+              "UIName": "@ui_Variant_FrostLance_variant_12",
+              "Lore": "",
+              "HUDPictureVariant_Normal": "../u_resources/spells/variants/normal_activation_001.png",
+              "HUDPictureVariant_Hover": "../u_resources/spells/variants/normal_hover_001.png",
+              "HUDPictureVariant_Selected": "../u_resources/spells/variants/normal_clicked_001.png",
+              "HUDPictureVariant_NotEnoughPoints": "../u_resources/spells/variants/locked_points_001.png",
+              "HUDPictureVariant_InvalidLevel": "../u_resources/spells/variants/locked_levels_001.png",
+              "ShowParamsInTooltip": "SpecificFrostLance,DamageCritical"
+            }
+          }
+        ],
+        "DamageCritical": [
+          {
+            "$": {
+              "CriticalDamageModifier": "40"
+            }
+          }
+        ]
+      },
+      {
+        "$": {
+          "UID": "player_frostlance_step_13",
+          "ESkill": "default_variant"
+        },
+        "HUD": [
+          {
+            "$": {
+              "UIName": "@ui_Variant_FrostLance_variant_13",
+              "Lore": "",
+              "HUDPictureVariant_Normal": "../u_resources/spells/variants/normal_activation_001.png",
+              "HUDPictureVariant_Hover": "../u_resources/spells/variants/normal_hover_001.png",
+              "HUDPictureVariant_Selected": "../u_resources/spells/variants/normal_clicked_001.png",
+              "HUDPictureVariant_NotEnoughPoints": "../u_resources/spells/variants/locked_points_001.png",
+              "HUDPictureVariant_InvalidLevel": "../u_resources/spells/variants/locked_levels_001.png",
+              "ShowParamsInTooltip": "SpecificFrostLance,DamageBase"
+            }
+          }
+        ],
+        "DamageBase": [
+          {
+            "$": {
+              "BonusPercent": "10"
+            }
+          }
+        ]
+      },
+      {
+        "$": {
+          "UID": "player_frostlance_step_14",
+          "ESkill": "default_variant"
+        },
+        "HUD": [
+          {
+            "$": {
+              "UIName": "@ui_Variant_FrostLance_variant_14",
+              "Lore": "",
+              "HUDPictureVariant_Normal": "../u_resources/spells/variants/normal_activation_001.png",
+              "HUDPictureVariant_Hover": "../u_resources/spells/variants/normal_hover_001.png",
+              "HUDPictureVariant_Selected": "../u_resources/spells/variants/normal_clicked_001.png",
+              "HUDPictureVariant_NotEnoughPoints": "../u_resources/spells/variants/locked_points_001.png",
+              "HUDPictureVariant_InvalidLevel": "../u_resources/spells/variants/locked_levels_001.png",
+              "ShowParamsInTooltip": "SpecificFrostLance,DamageBase"
+            }
+          }
+        ],
+        "DamageBase": [
+          {
+            "$": {
+              "BonusPercent": "10"
+            }
+          }
+        ]
+      },
+      {
+        "$": {
+          "UID": "player_frostlance_step_15",
+          "ESkill": "default_variant"
+        },
+        "HUD": [
+          {
+            "$": {
+              "UIName": "@ui_Variant_FrostLance_variant_15",
+              "Lore": "",
+              "HUDPictureVariant_Normal": "../u_resources/spells/variants/normal_activation_001.png",
+              "HUDPictureVariant_Hover": "../u_resources/spells/variants/normal_hover_001.png",
+              "HUDPictureVariant_Selected": "../u_resources/spells/variants/normal_clicked_001.png",
+              "HUDPictureVariant_NotEnoughPoints": "../u_resources/spells/variants/locked_points_001.png",
+              "HUDPictureVariant_InvalidLevel": "../u_resources/spells/variants/locked_levels_001.png",
+              "ShowParamsInTooltip": "SpecificFrostLance,Cost,ROSTime"
+            }
+          }
+        ],
+        "ResourceCost": [
+          {
+            "$": {
+              "ManaCost": "20",
+              "ManaCostPerLevel": "0",
+              "ROSTransfertDuration": "1.0"
+            }
+          }
+        ]
+      },
+      {
+        "$": {
+          "UID": "player_frostlance_step_16",
+          "ESkill": "default_variant"
+        },
+        "HUD": [
+          {
+            "$": {
+              "UIName": "@ui_Variant_FrostLance_variant_16",
+              "Lore": "",
+              "HUDPictureVariant_Normal": "../u_resources/spells/variants/normal_activation_003.png",
+              "HUDPictureVariant_Hover": "../u_resources/spells/variants/normal_hover_003.png",
+              "HUDPictureVariant_Selected": "../u_resources/spells/variants/normal_clicked_003.png",
+              "HUDPictureVariant_NotEnoughPoints": "../u_resources/spells/variants/locked_points_003.png",
+              "HUDPictureVariant_InvalidLevel": "../u_resources/spells/variants/locked_levels_003.png",
+              "ShowParamsInTooltip": "SpecificFrostLance,DamageBase,Cooldown"
+            }
+          }
+        ],
+        "DamageBase": [
+          {
+            "$": {
+              "BonusPercent": "100"
+            }
+          }
+        ],
+        "Cooldown": [
+          {
+            "$": {
+              "Cooldown": "4",
+              "CooldownPerLevel": "0"
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

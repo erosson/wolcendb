@@ -1,0 +1,1151 @@
+{
+  "MetaData": {
+    "Skill": [
+      {
+        "$": {
+          "UID": "player_brutalstrike",
+          "ESkill": "player_brutalstrike",
+          "Keywords": "explosion,attack_skill"
+        },
+        "WeaponRequirements": [
+          {
+            "$": {
+              "Requirements": "melee,"
+            }
+          }
+        ],
+        "Animation": [
+          {
+            "$": {
+              "ActionString": "player_skill_brutalstrike"
+            }
+          }
+        ],
+        "CastingParams": [
+          {
+            "$": {
+              "CastBone": "Bip01 Spine",
+              "MaximumTurnRate": "180"
+            }
+          }
+        ],
+        "HUD": [
+          {
+            "$": {
+              "HUDPicture": "../u_resources/spells/Active_Skills/brutal_strike.png",
+              "UIName": "@ui_AST_BrutalStrike",
+              "Lore": "@ui_AST_BrutalStrike_Lore",
+              "ActiveEffectTitle": "",
+              "ActiveEffectDesc": "",
+              "ASTTreeNumber": "1",
+              "ShowParamsInAST": "Cost,ROSTime,Cooldown,Range,DamageDetail,DamageWeapon,DamageCritical,StatusAilmentsChance,Explosion,SpecificBrutalStrike",
+              "ShowParamsInTooltip": "Cost,Cooldown,DamageOverview,StatusAilmentsChance"
+            }
+          }
+        ],
+        "Enneract": [
+          {
+            "$": {
+              "PickableParticle_MoveToGround": "U_CommonVFX_02.Esseract.Esseract_Projectile.Physical",
+              "PickableParticle_OnGround_Shape": "U_CommonVFX_02.Esseract.Esseract_Shape.Circle_Physical",
+              "PickableParticle_OnGround_Damage": "U_CommonVFX_02.Esseract.Esseract_Color.Physical",
+              "PickableParticle_OnGround_Symbol": "U_CommonVFX_02.Esseract.Esseract_Symbol.HEPHAARON",
+              "PickableParticle_OnGround_Indicator": "U_CommonVFX_02.Esseract.Esseract_Indicator.Physical",
+              "PickableParticle_OnGround_Pickup": "U_CommonVFX_02.Esseract.Esseract_Loot.Physical",
+              "SkillLearningParticle": "U_CommonVFX.Skill_Learn.Skill_Learn_Physical",
+              "Inventory_HUDPicture": "../u_resources/enneracts/brutal_strike.png",
+              "Inventory_LoreDesc": "@ui_enneract_lore"
+            }
+          }
+        ],
+        "Aggression": [
+          {
+            "$": {
+              "TargetValueOnHit": "20"
+            }
+          }
+        ],
+        "DamageWeapon": [
+          {
+            "$": {
+              "PercentMin": "210",
+              "PercentMinPerLevel": "0",
+              "PercentMax": "230",
+              "PercentMaxPerLevel": "0"
+            }
+          }
+        ],
+        "PostProcess": [
+          {
+            "$": {
+              "CameraZoomStartTime": ".2",
+              "CameraZoomDuration": "0.5",
+              "CameraUnzoomDuration": "0.08",
+              "CameraZoomFov": "32",
+              "ChromaShiftStartTime": "0.4",
+              "ChromaShiftLerpDuration": "0.2",
+              "ChromaShiftRestoreLerpDuration": "0.15",
+              "ChromaShiftMaxAmount": ".65"
+            }
+          }
+        ],
+        "Cooldown": [
+          {
+            "$": {
+              "Cooldown": "0",
+              "CooldownPerLevel": "0"
+            }
+          }
+        ],
+        "ResourceCost": [
+          {
+            "$": {
+              "RageCost": "-150",
+              "ROSTransfertDuration": "2.2"
+            }
+          }
+        ],
+        "ParticleList": [
+          {
+            "Particle": [
+              {
+                "$": {
+                  "Key": "Impact_Base",
+                  "Name": "U_CommonVFX.Impact_Ground.Physical_01_Blue_2M",
+                  "Direction": "0,0,1",
+                  "Scale": "1",
+                  "OffSet": "0,0,0"
+                }
+              }
+            ]
+          }
+        ],
+        "Specific_BrutalStrike": [
+          {
+            "$": {
+              "HitForwardOffset": "1.8",
+              "SubSkillToCast": "secondary_chainlightning_physical",
+              "MaxHitPerEntity": "1"
+            }
+          }
+        ],
+        "Explosion": [
+          {
+            "$": {
+              "ExplosionRadius": "2"
+            }
+          }
+        ],
+        "SoundTrigger": [
+          {
+            "$": {
+              "OnAnimStart": "PLAY_Skill_BrutalStrike_Swing",
+              "OnAnimCast": "PLAY_Skill_BrutalStrike_Impact"
+            }
+          }
+        ],
+        "VisualFeedback": [
+          {
+            "$": {
+              "TrailPresetBase": "default",
+              "FeedbackPresetBase": "Player_skill_brutalstrike",
+              "BloodDecalOrientation": "forward"
+            }
+          }
+        ]
+      },
+      {
+        "$": {
+          "UID": "player_brutalstrike_step_1",
+          "ESkill": "default_variant"
+        },
+        "HUD": [
+          {
+            "$": {
+              "UIName": "@ui_Variant_BrutalStrike_variant_1",
+              "Lore": "",
+              "HUDPictureVariant_Normal": "../u_resources/spells/variants/normal_activation_001.png",
+              "HUDPictureVariant_Hover": "../u_resources/spells/variants/normal_hover_001.png",
+              "HUDPictureVariant_Selected": "../u_resources/spells/variants/normal_clicked_001.png",
+              "HUDPictureVariant_NotEnoughPoints": "../u_resources/spells/variants/locked_points_001.png",
+              "HUDPictureVariant_InvalidLevel": "../u_resources/spells/variants/locked_levels_001.png",
+              "ShowParamsInTooltip": "SpecificBrutalStrike,DamageWeapon"
+            }
+          }
+        ],
+        "DamageWeapon": [
+          {
+            "$": {
+              "PercentMin": "25",
+              "PercentMinPerLevel": "0",
+              "PercentMax": "25",
+              "PercentMaxPerLevel": "0"
+            }
+          }
+        ]
+      },
+      {
+        "$": {
+          "UID": "player_brutalstrike_step_2",
+          "ESkill": "default_variant"
+        },
+        "HUD": [
+          {
+            "$": {
+              "UIName": "@ui_Variant_BrutalStrike_variant_2",
+              "Lore": "",
+              "HUDPictureVariant_Normal": "../u_resources/spells/variants/normal_activation_001.png",
+              "HUDPictureVariant_Hover": "../u_resources/spells/variants/normal_hover_001.png",
+              "HUDPictureVariant_Selected": "../u_resources/spells/variants/normal_clicked_001.png",
+              "HUDPictureVariant_NotEnoughPoints": "../u_resources/spells/variants/locked_points_001.png",
+              "HUDPictureVariant_InvalidLevel": "../u_resources/spells/variants/locked_levels_001.png",
+              "ShowParamsInTooltip": "SpecificBrutalStrike,Cost"
+            }
+          }
+        ],
+        "ResourceCost": [
+          {
+            "$": {
+              "RageCost": "30"
+            }
+          }
+        ]
+      },
+      {
+        "$": {
+          "UID": "player_brutalstrike_step_3",
+          "ESkill": "default_variant"
+        },
+        "HUD": [
+          {
+            "$": {
+              "UIName": "@ui_Variant_BrutalStrike_variant_3",
+              "Lore": "",
+              "HUDPictureVariant_Normal": "../u_resources/spells/variants/normal_activation_003.png",
+              "HUDPictureVariant_Hover": "../u_resources/spells/variants/normal_hover_003.png",
+              "HUDPictureVariant_Selected": "../u_resources/spells/variants/normal_clicked_003.png",
+              "HUDPictureVariant_NotEnoughPoints": "../u_resources/spells/variants/locked_points_003.png",
+              "HUDPictureVariant_InvalidLevel": "../u_resources/spells/variants/locked_levels_003.png",
+              "ShowParamsInTooltip": "SpecificBrutalStrike,Explosion"
+            }
+          }
+        ],
+        "Explosion": [
+          {
+            "$": {
+              "ExplosionRadius": "1"
+            }
+          }
+        ],
+        "ParticleList": [
+          {
+            "Particle": [
+              {
+                "$": {
+                  "Key": "impact_base",
+                  "Name": "U_CommonVFX.Impact_Ground.Physical_01_Blue_3M",
+                  "Direction": "0,0,1",
+                  "Scale": "1",
+                  "OffSet": "0,0,0"
+                }
+              },
+              {
+                "$": {
+                  "Key": "impact",
+                  "Name": "U_Character.Skills.BrutalStrike_Charging_Impact_01",
+                  "Scale": "1.33"
+                }
+              },
+              {
+                "$": {
+                  "Key": "impact_lightning",
+                  "Name": "U_CommonVFX.Impact_Ground.Physical_01_Lightning_2M",
+                  "Scale": "1.33"
+                }
+              }
+            ]
+          }
+        ],
+        "Specific_BrutalStrike": [
+          {
+            "ExplosionSequence": [
+              {
+                "Entry": [
+                  {
+                    "$": {
+                      "Offset": "-1.5,9,0",
+                      "Delay": "0.3"
+                    }
+                  },
+                  {
+                    "$": {
+                      "Offset": "1.5,9,0",
+                      "Delay": "0.35"
+                    }
+                  },
+                  {
+                    "$": {
+                      "Offset": "-4.5,8,0",
+                      "Delay": "0.4"
+                    }
+                  },
+                  {
+                    "$": {
+                      "Offset": "4.5,8,0",
+                      "Delay": "0.45"
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "$": {
+          "UID": "player_brutalstrike_step_4",
+          "ESkill": "default_variant"
+        },
+        "HUD": [
+          {
+            "$": {
+              "UIName": "@ui_Variant_BrutalStrike_variant_4",
+              "Lore": "",
+              "HUDPictureVariant_Normal": "../u_resources/spells/variants/normal_activation_001.png",
+              "HUDPictureVariant_Hover": "../u_resources/spells/variants/normal_hover_001.png",
+              "HUDPictureVariant_Selected": "../u_resources/spells/variants/normal_clicked_001.png",
+              "HUDPictureVariant_NotEnoughPoints": "../u_resources/spells/variants/locked_points_001.png",
+              "HUDPictureVariant_InvalidLevel": "../u_resources/spells/variants/locked_levels_001.png",
+              "ShowParamsInTooltip": "SpecificBrutalStrike,DamageCritical"
+            }
+          }
+        ],
+        "DamageCritical": [
+          {
+            "$": {
+              "CriticalChanceAgainstStunned": "50"
+            }
+          }
+        ]
+      },
+      {
+        "$": {
+          "UID": "player_brutalstrike_step_5",
+          "ESkill": "default_variant"
+        },
+        "HUD": [
+          {
+            "$": {
+              "UIName": "@ui_Variant_BrutalStrike_variant_5",
+              "Lore": "@ui_Variant_BrutalStrike_variant_5_Lore",
+              "HUDPictureVariant_Normal": "../u_resources/spells/variants/normal_activation_005.png",
+              "HUDPictureVariant_Hover": "../u_resources/spells/variants/normal_hover_005.png",
+              "HUDPictureVariant_Selected": "../u_resources/spells/variants/normal_clicked_005.png",
+              "HUDPictureVariant_NotEnoughPoints": "../u_resources/spells/variants/locked_points_005.png",
+              "HUDPictureVariant_InvalidLevel": "../u_resources/spells/variants/locked_levels_005.png",
+              "ShowParamsInTooltip": "SpecificBrutalStrike,DamageWeapon"
+            }
+          }
+        ],
+        "Specific_BrutalStrike": [
+          {
+            "$": {
+              "IsLightning": "1",
+              "SubSkillToCast": "secondary_chainlightning_lightning"
+            }
+          }
+        ],
+        "Damage_Conversion": [
+          {
+            "Entry": [
+              {
+                "$": {
+                  "From": "physical",
+                  "To": "lightning",
+                  "ConversionRate": "100"
+                }
+              }
+            ]
+          }
+        ],
+        "WeaponRequirements": [
+          {
+            "$": {
+              "Requirements": "melee,lightning"
+            }
+          }
+        ],
+        "DamageWeapon": [
+          {
+            "$": {
+              "PercentMin": "25",
+              "PercentMinPerLevel": "0",
+              "PercentMax": "25",
+              "PercentMaxPerLevel": "0"
+            }
+          }
+        ],
+        "ParticleList": [
+          {
+            "Particle": [
+              {
+                "$": {
+                  "Key": "appear_lightning",
+                  "Name": "U_Character.Skills.BrutalStrike_Hammer_Appear_01_Lightning",
+                  "Bone": "R_Weapon_Bone",
+                  "Scale": "1",
+                  "Direction": "0,1,0"
+                }
+              },
+              {
+                "$": {
+                  "Key": "loop_lightning",
+                  "Name": "U_Character.Skills.BrutalStrike_Hammer_Looping_01_Lightning",
+                  "Bone": "R_Weapon_Bone",
+                  "Scale": "1",
+                  "Direction": "0,1,0"
+                }
+              },
+              {
+                "$": {
+                  "Key": "disappear_lightning",
+                  "Name": "U_Character.Skills.BrutalStrike_Hammer_Disappear_01_Lightning",
+                  "Bone": "R_Weapon_Bone",
+                  "Scale": "1",
+                  "Direction": "0,1,0"
+                }
+              },
+              {
+                "$": {
+                  "Key": "aura_lightning",
+                  "Name": "U_Character.Skills.BrutalStrike_ChargingAura_01_Lightning",
+                  "Bone": "R_Weapon_Bone",
+                  "OffSet": "0,1.5,0",
+                  "Scale": "1",
+                  "Direction": "0,1,0"
+                }
+              },
+              {
+                "$": {
+                  "Key": "glow1_lightning",
+                  "Name": "U_Character.Skills.BrutalStrike_Charge_01_Lightning",
+                  "Bone": "R_Weapon_Bone",
+                  "OffSet": "0,1.5,0",
+                  "Scale": "1",
+                  "Direction": "0,1,0"
+                }
+              },
+              {
+                "$": {
+                  "Key": "glow2_lightning",
+                  "Name": "U_Character.Skills.BrutalStrike_Charge_02_Lightning",
+                  "Bone": "R_Weapon_Bone",
+                  "OffSet": "0,1.5,0",
+                  "Scale": "1",
+                  "Direction": "0,1,0"
+                }
+              },
+              {
+                "$": {
+                  "Key": "glow3_lightning",
+                  "Name": "U_Character.Skills.BrutalStrike_Charge_03_Lightning",
+                  "Bone": "R_Weapon_Bone",
+                  "OffSet": "0,1.5,0",
+                  "Scale": "1",
+                  "Direction": "0,1,0"
+                }
+              },
+              {
+                "$": {
+                  "Key": "glow4_lightning",
+                  "Name": "U_Character.Skills.BrutalStrike_Charge_04_Lightning",
+                  "Bone": "R_Weapon_Bone",
+                  "OffSet": "0,1.5,0",
+                  "Scale": "1",
+                  "Direction": "0,1,0"
+                }
+              },
+              {
+                "$": {
+                  "Key": "glowf_lightning",
+                  "Name": "U_Character.Skills.BrutalStrike_Charge_Final_Lightning",
+                  "Bone": "R_Weapon_Bone",
+                  "OffSet": "0,1.5,0",
+                  "Scale": "1.2",
+                  "Direction": "0,1,0"
+                }
+              },
+              {
+                "$": {
+                  "Key": "impact_lightning",
+                  "Name": "U_CommonVFX.Impact_Ground.Physical_01_Lightning_2M",
+                  "Direction": "0,0,1",
+                  "Scale": ".75"
+                }
+              }
+            ]
+          }
+        ],
+        "SoundTrigger": [
+          {
+            "$": {
+              "OnAnimLoopIn": "Play_Skill_BrutalStrike_Charge_Base",
+              "OnAnimStart": "Play_Skill_BrutalStrike_Charge_Lightning_Point_01",
+              "OnAnimLoopOut": "Play_Skill_BrutalStrike_Charge_Lightning_Swing",
+              "OnAnimCast": "Play_Skill_BrutalStrike_Lightning_Impact",
+              "OnHit": "Play_Skill_BrutalStrike_Lightning_Damage",
+              "OnInterrupt": "Stop_Skill_BurtalStrike_Charge_Lightning_Sound"
+            }
+          }
+        ]
+      },
+      {
+        "$": {
+          "UID": "player_brutalstrike_step_6",
+          "ESkill": "default_variant"
+        },
+        "HUD": [
+          {
+            "$": {
+              "UIName": "@ui_Variant_BrutalStrike_variant_6",
+              "Lore": "",
+              "HUDPictureVariant_Normal": "../u_resources/spells/variants/normal_activation_001.png",
+              "HUDPictureVariant_Hover": "../u_resources/spells/variants/normal_hover_001.png",
+              "HUDPictureVariant_Selected": "../u_resources/spells/variants/normal_clicked_001.png",
+              "HUDPictureVariant_NotEnoughPoints": "../u_resources/spells/variants/locked_points_001.png",
+              "HUDPictureVariant_InvalidLevel": "../u_resources/spells/variants/locked_levels_001.png",
+              "ShowParamsInTooltip": "SpecificBrutalStrike,StatusAilmentsChance"
+            }
+          }
+        ],
+        "StatusAilment": [
+          {
+            "$": {
+              "AllAilmentsInflictScoreIncreasePercent": "40"
+            }
+          }
+        ]
+      },
+      {
+        "$": {
+          "UID": "player_brutalstrike_step_7",
+          "ESkill": "default_variant"
+        },
+        "HUD": [
+          {
+            "$": {
+              "UIName": "@ui_Variant_BrutalStrike_variant_7",
+              "Lore": "",
+              "HUDPictureVariant_Normal": "../u_resources/spells/variants/normal_activation_001.png",
+              "HUDPictureVariant_Hover": "../u_resources/spells/variants/normal_hover_001.png",
+              "HUDPictureVariant_Selected": "../u_resources/spells/variants/normal_clicked_001.png",
+              "HUDPictureVariant_NotEnoughPoints": "../u_resources/spells/variants/locked_points_001.png",
+              "HUDPictureVariant_InvalidLevel": "../u_resources/spells/variants/locked_levels_001.png",
+              "ShowParamsInTooltip": "SpecificBrutalStrike,DamageCritical"
+            }
+          }
+        ],
+        "DamageCritical": [
+          {
+            "$": {
+              "CriticalDamageModifier": "30"
+            }
+          }
+        ]
+      },
+      {
+        "$": {
+          "UID": "player_brutalstrike_step_8",
+          "ESkill": "default_variant"
+        },
+        "HUD": [
+          {
+            "$": {
+              "UIName": "@ui_Variant_BrutalStrike_variant_8",
+              "Lore": "@ui_Variant_BrutalStrike_variant_8_Lore",
+              "HUDPictureVariant_Normal": "../u_resources/spells/variants/normal_activation_005.png",
+              "HUDPictureVariant_Hover": "../u_resources/spells/variants/normal_hover_005.png",
+              "HUDPictureVariant_Selected": "../u_resources/spells/variants/normal_clicked_005.png",
+              "HUDPictureVariant_NotEnoughPoints": "../u_resources/spells/variants/locked_points_005.png",
+              "HUDPictureVariant_InvalidLevel": "../u_resources/spells/variants/locked_levels_005.png",
+              "ShowParamsInTooltip": "SpecificBrutalStrike"
+            }
+          }
+        ],
+        "ChargedSkill": [
+          {
+            "$": {
+              "WindupAnim": "player_brutalstrike_charge_windup",
+              "FollowupAnim": "player_brutalstrike_charge_followup"
+            },
+            "Step": [
+              {
+                "$": {
+                  "TimeToReachStep": "1.0",
+                  "AssociatedAnim": "player_brutalstrike_charge_loop_01",
+                  "WeaponDamagePercent": "300"
+                }
+              },
+              {
+                "$": {
+                  "TimeToReachStep": "1.0",
+                  "AssociatedAnim": "player_brutalstrike_charge_loop_02",
+                  "WeaponDamagePercent": "800"
+                }
+              },
+              {
+                "$": {
+                  "TimeToReachStep": "1.5",
+                  "AssociatedAnim": "player_brutalstrike_charge_loop_03",
+                  "WeaponDamagePercent": "1500"
+                }
+              }
+            ]
+          }
+        ],
+        "ParticleList": [
+          {
+            "Particle": [
+              {
+                "$": {
+                  "Key": "appear",
+                  "Name": "U_Character.Skills.BrutalStrike_Hammer_Appear_01",
+                  "Bone": "R_Weapon_Bone",
+                  "Scale": "1",
+                  "Direction": "0,1,0"
+                }
+              },
+              {
+                "$": {
+                  "Key": "loop",
+                  "Name": "U_Character.Skills.BrutalStrike_Hammer_Looping_01",
+                  "Bone": "R_Weapon_Bone",
+                  "Scale": "1",
+                  "Direction": "0,1,0"
+                }
+              },
+              {
+                "$": {
+                  "Key": "disappear",
+                  "Name": "U_Character.Skills.BrutalStrike_Hammer_Disappear_01",
+                  "Bone": "R_Weapon_Bone",
+                  "Scale": "1",
+                  "Direction": "0,1,0"
+                }
+              },
+              {
+                "$": {
+                  "Key": "aura",
+                  "Name": "U_Character.Skills.BrutalStrike_ChargingAura_01",
+                  "Bone": "R_Weapon_Bone",
+                  "OffSet": "0,1.5,0",
+                  "Scale": "1",
+                  "Direction": "0,1,0"
+                }
+              },
+              {
+                "$": {
+                  "Key": "blink",
+                  "Name": "U_Character.Skills.BrutalStrike_Hammer_Blink_01",
+                  "Bone": "R_Weapon_Bone",
+                  "Scale": "1",
+                  "Direction": "0,1,0"
+                }
+              },
+              {
+                "$": {
+                  "Key": "wind",
+                  "Name": "U_Character.Skills.BrutalStrike_Wind_01",
+                  "Scale": "1",
+                  "Direction": "0,1,0"
+                }
+              },
+              {
+                "$": {
+                  "Key": "glow1",
+                  "Name": "U_Character.Skills.BrutalStrike_Charge_01",
+                  "Bone": "R_Weapon_Bone",
+                  "OffSet": "0,1.5,0",
+                  "Scale": "1",
+                  "Direction": "0,1,0"
+                }
+              },
+              {
+                "$": {
+                  "Key": "glow2",
+                  "Name": "U_Character.Skills.BrutalStrike_Charge_02",
+                  "Bone": "R_Weapon_Bone",
+                  "OffSet": "0,1.5,0",
+                  "Scale": "1",
+                  "Direction": "0,1,0"
+                }
+              },
+              {
+                "$": {
+                  "Key": "glow3",
+                  "Name": "U_Character.Skills.BrutalStrike_Charge_03",
+                  "Bone": "R_Weapon_Bone",
+                  "OffSet": "0,1.5,0",
+                  "Scale": "1",
+                  "Direction": "0,1,0"
+                }
+              },
+              {
+                "$": {
+                  "Key": "glow4",
+                  "Name": "U_Character.Skills.BrutalStrike_Charge_04",
+                  "Bone": "R_Weapon_Bone",
+                  "OffSet": "0,1.5,0",
+                  "Scale": "1",
+                  "Direction": "0,1,0"
+                }
+              },
+              {
+                "$": {
+                  "Key": "glowf",
+                  "Name": "U_Character.Skills.BrutalStrike_Charge_Final",
+                  "Bone": "R_Weapon_Bone",
+                  "OffSet": "0,1.5,0",
+                  "Scale": "1.2",
+                  "Direction": "0,1,0"
+                }
+              },
+              {
+                "$": {
+                  "Key": "impact",
+                  "Name": "U_Character.Skills.BrutalStrike_Charging_Impact_01",
+                  "Direction": "0,0,1",
+                  "Scale": ".75"
+                }
+              }
+            ]
+          }
+        ],
+        "SoundTrigger": [
+          {
+            "$": {
+              "OnAnimLoopIn": "Play_Skill_BrutalStrike_Charge_Base",
+              "OnAnimStart": "Play_Skill_BrutalStrike_Charge_Point_1",
+              "OnAnimLoopOut": "Play_Skill_BrutalStrike_Charge_Swing",
+              "OnAnimCast": "Play_Skill_BrutalStrike_Charge_Impact",
+              "OnHit": "Play_Skill_BrutalStrike_Lightning_Damage",
+              "OnInterrupt": "Stop_Skill_BurtalStrike_Charge_Sound"
+            }
+          }
+        ]
+      },
+      {
+        "$": {
+          "UID": "player_brutalstrike_step_9",
+          "ESkill": "default_variant"
+        },
+        "HUD": [
+          {
+            "$": {
+              "UIName": "@ui_Variant_BrutalStrike_variant_9",
+              "Lore": "@ui_Variant_BrutalStrike_variant_9_Lore",
+              "HUDPictureVariant_Normal": "../u_resources/spells/variants/normal_activation_005.png",
+              "HUDPictureVariant_Hover": "../u_resources/spells/variants/normal_hover_005.png",
+              "HUDPictureVariant_Selected": "../u_resources/spells/variants/normal_clicked_005.png",
+              "HUDPictureVariant_NotEnoughPoints": "../u_resources/spells/variants/locked_points_005.png",
+              "HUDPictureVariant_InvalidLevel": "../u_resources/spells/variants/locked_levels_005.png",
+              "ShowParamsInTooltip": "SpecificBrutalStrike,DamageWeapon"
+            }
+          }
+        ],
+        "ParticleList": [
+          {
+            "Particle": [
+              {
+                "$": {
+                  "Key": "Wave",
+                  "Name": "U_Character.Skills.BrutalStrike_Impact_Wave_01",
+                  "Direction": "0,1,0"
+                }
+              }
+            ]
+          }
+        ],
+        "Shapes": [
+          {
+            "Entry": [
+              {
+                "$": {
+                  "Key": "Wave",
+                  "ShapeName": "Player_BrutalStrike_Wave_Shape"
+                }
+              }
+            ]
+          }
+        ],
+        "DamageWeapon": [
+          {
+            "$": {
+              "PercentMin": "-40",
+              "PercentMax": "-40"
+            }
+          }
+        ],
+        "Specific_BrutalStrike": [
+          {
+            "$": {
+              "WaveDamageMultiplier": "0.25",
+              "WaveComponentRadius": "1.5"
+            },
+            "ExplosionSequence": [
+              {
+                "Entry": [
+                  {
+                    "$": {
+                      "Offset": "0,2,0",
+                      "Delay": "0"
+                    }
+                  },
+                  {
+                    "$": {
+                      "Offset": "1.5,4,0",
+                      "Delay": "0.05"
+                    }
+                  },
+                  {
+                    "$": {
+                      "Offset": "-1.5,4,0",
+                      "Delay": "0.1"
+                    }
+                  },
+                  {
+                    "$": {
+                      "Offset": "-3,6,0",
+                      "Delay": "0.15"
+                    }
+                  },
+                  {
+                    "$": {
+                      "Offset": "3,6,0",
+                      "Delay": "0.2"
+                    }
+                  },
+                  {
+                    "$": {
+                      "Offset": "0,6.5,0",
+                      "Delay": "0.25"
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "$": {
+          "UID": "player_brutalstrike_step_5,player_brutalstrike_step_9",
+          "ESkill": "default_variant_combo"
+        },
+        "ParticleList": [
+          {
+            "Particle": [
+              {
+                "$": {
+                  "Key": "Wave",
+                  "Name": "U_Character.Skills.BrutalStrike_Impact_Wave_01_Lightning",
+                  "Direction": "0,1,0"
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "$": {
+          "UID": "player_brutalstrike_step_10",
+          "ESkill": "default_variant"
+        },
+        "HUD": [
+          {
+            "$": {
+              "UIName": "@ui_Variant_BrutalStrike_variant_10",
+              "Lore": "",
+              "HUDPictureVariant_Normal": "../u_resources/spells/variants/normal_activation_003.png",
+              "HUDPictureVariant_Hover": "../u_resources/spells/variants/normal_hover_003.png",
+              "HUDPictureVariant_Selected": "../u_resources/spells/variants/normal_clicked_003.png",
+              "HUDPictureVariant_NotEnoughPoints": "../u_resources/spells/variants/locked_points_003.png",
+              "HUDPictureVariant_InvalidLevel": "../u_resources/spells/variants/locked_levels_003.png",
+              "ShowParamsInTooltip": "SpecificBrutalStrike,DamageWeapon"
+            }
+          }
+        ],
+        "ParticleList": [
+          {
+            "Particle": [
+              {
+                "$": {
+                  "Key": "appear_lightning",
+                  "Name": "U_Character.Skills.BrutalStrike_Axe_Appear_01_Lightning",
+                  "Bone": "R_Weapon_Bone",
+                  "Scale": "1",
+                  "Direction": "0,1,0"
+                }
+              },
+              {
+                "$": {
+                  "Key": "loop_lightning",
+                  "Name": "U_Character.Skills.BrutalStrike_Axe_Looping_01_Lightning",
+                  "Bone": "R_Weapon_Bone",
+                  "Scale": "1",
+                  "Direction": "0,1,0"
+                }
+              },
+              {
+                "$": {
+                  "Key": "disappear_lightning",
+                  "Name": "U_Character.Skills.BrutalStrike_Axe_Disappear_01_Lightning",
+                  "Bone": "R_Weapon_Bone",
+                  "Scale": "1",
+                  "Direction": "0,1,0"
+                }
+              },
+              {
+                "$": {
+                  "Key": "appear",
+                  "Name": "U_Character.Skills.BrutalStrike_Axe_Appear_01",
+                  "Bone": "R_Weapon_Bone",
+                  "Scale": "1",
+                  "Direction": "0,1,0"
+                }
+              },
+              {
+                "$": {
+                  "Key": "loop",
+                  "Name": "U_Character.Skills.BrutalStrike_Axe_Looping_01",
+                  "Bone": "R_Weapon_Bone",
+                  "Scale": "1",
+                  "Direction": "0,1,0"
+                }
+              },
+              {
+                "$": {
+                  "Key": "disappear",
+                  "Name": "U_Character.Skills.BrutalStrike_Axe_Disappear_01",
+                  "Bone": "R_Weapon_Bone",
+                  "Scale": "1",
+                  "Direction": "0,1,0"
+                }
+              },
+              {
+                "$": {
+                  "Key": "blink",
+                  "Name": "U_Character.Skills.BrutalStrike_Axe_Blink_01",
+                  "Bone": "R_Weapon_Bone",
+                  "Scale": "1",
+                  "Direction": "0,1,0"
+                }
+              }
+            ]
+          }
+        ],
+        "DamageWeapon": [
+          {
+            "$": {
+              "PercentMin": "-70",
+              "PercentMax": "-70"
+            }
+          }
+        ],
+        "CastingSpeed": [
+          {
+            "$": {
+              "AttackSpeedPercent": "150",
+              "ApplyOnCharged": "1"
+            }
+          }
+        ],
+        "Specific_BrutalStrike": [
+          {
+            "$": {
+              "IsAxe": "1",
+              "AxeVFX": "U_Character.Skills.BrutalStrike_Axe_01"
+            }
+          }
+        ]
+      },
+      {
+        "$": {
+          "UID": "player_brutalstrike_step_11",
+          "ESkill": "default_variant"
+        },
+        "HUD": [
+          {
+            "$": {
+              "UIName": "@ui_Variant_BrutalStrike_variant_11",
+              "Lore": "",
+              "HUDPictureVariant_Normal": "../u_resources/spells/variants/normal_activation_003.png",
+              "HUDPictureVariant_Hover": "../u_resources/spells/variants/normal_hover_003.png",
+              "HUDPictureVariant_Selected": "../u_resources/spells/variants/normal_clicked_003.png",
+              "HUDPictureVariant_NotEnoughPoints": "../u_resources/spells/variants/locked_points_003.png",
+              "HUDPictureVariant_InvalidLevel": "../u_resources/spells/variants/locked_levels_003.png",
+              "ShowParamsInTooltip": "SpecificBrutalStrike"
+            }
+          }
+        ],
+        "GhostDamage": [
+          {
+            "$": {
+              "ChanceToHit": "20",
+              "MaxHit": "5",
+              "MinDelay": "0.1",
+              "MaxDelay": "0.4",
+              "DamageMultiplier": "1"
+            }
+          }
+        ]
+      },
+      {
+        "$": {
+          "UID": "player_brutalstrike_step_12",
+          "ESkill": "default_variant"
+        },
+        "HUD": [
+          {
+            "$": {
+              "UIName": "@ui_Variant_BrutalStrike_variant_12",
+              "Lore": "",
+              "HUDPictureVariant_Normal": "../u_resources/spells/variants/normal_activation_003.png",
+              "HUDPictureVariant_Hover": "../u_resources/spells/variants/normal_hover_003.png",
+              "HUDPictureVariant_Selected": "../u_resources/spells/variants/normal_clicked_003.png",
+              "HUDPictureVariant_NotEnoughPoints": "../u_resources/spells/variants/locked_points_003.png",
+              "HUDPictureVariant_InvalidLevel": "../u_resources/spells/variants/locked_levels_003.png",
+              "ShowParamsInTooltip": "SpecificBrutalStrike,Cooldown"
+            }
+          }
+        ],
+        "Specific_BrutalStrike": [
+          {
+            "$": {
+              "CriticalStunDuration": "2"
+            }
+          }
+        ],
+        "Cooldown": [
+          {
+            "$": {
+              "Cooldown": "5",
+              "CooldownPerLevel": "0"
+            }
+          }
+        ]
+      },
+      {
+        "$": {
+          "UID": "player_brutalstrike_step_13",
+          "ESkill": "default_variant"
+        },
+        "HUD": [
+          {
+            "$": {
+              "UIName": "@ui_Variant_BrutalStrike_variant_13",
+              "Lore": "",
+              "HUDPictureVariant_Normal": "../u_resources/spells/variants/normal_activation_003.png",
+              "HUDPictureVariant_Hover": "../u_resources/spells/variants/normal_hover_003.png",
+              "HUDPictureVariant_Selected": "../u_resources/spells/variants/normal_clicked_003.png",
+              "HUDPictureVariant_NotEnoughPoints": "../u_resources/spells/variants/locked_points_003.png",
+              "HUDPictureVariant_InvalidLevel": "../u_resources/spells/variants/locked_levels_003.png",
+              "ShowParamsInTooltip": "SpecificBrutalStrike"
+            }
+          }
+        ],
+        "Specific_BrutalStrike": [
+          {
+            "$": {
+              "LightningChanceOnCritical": "50"
+            }
+          }
+        ]
+      },
+      {
+        "$": {
+          "UID": "player_brutalstrike_step_14",
+          "ESkill": "default_variant"
+        },
+        "HUD": [
+          {
+            "$": {
+              "UIName": "@ui_Variant_BrutalStrike_variant_14",
+              "Lore": "",
+              "HUDPictureVariant_Normal": "../u_resources/spells/variants/normal_activation_001.png",
+              "HUDPictureVariant_Hover": "../u_resources/spells/variants/normal_hover_001.png",
+              "HUDPictureVariant_Selected": "../u_resources/spells/variants/normal_clicked_001.png",
+              "HUDPictureVariant_NotEnoughPoints": "../u_resources/spells/variants/locked_points_001.png",
+              "HUDPictureVariant_InvalidLevel": "../u_resources/spells/variants/locked_levels_001.png",
+              "ShowParamsInTooltip": "SpecificBrutalStrike,StatusAilmentsChance"
+            }
+          }
+        ],
+        "StatusAilment": [
+          {
+            "$": {
+              "AllAilmentsInflictDamageIncreasePercent": "40"
+            }
+          }
+        ]
+      },
+      {
+        "$": {
+          "UID": "player_brutalstrike_step_15",
+          "ESkill": "default_variant"
+        },
+        "HUD": [
+          {
+            "$": {
+              "UIName": "@ui_Variant_BrutalStrike_variant_15",
+              "Lore": "",
+              "HUDPictureVariant_Normal": "../u_resources/spells/variants/normal_activation_001.png",
+              "HUDPictureVariant_Hover": "../u_resources/spells/variants/normal_hover_001.png",
+              "HUDPictureVariant_Selected": "../u_resources/spells/variants/normal_clicked_001.png",
+              "HUDPictureVariant_NotEnoughPoints": "../u_resources/spells/variants/locked_points_001.png",
+              "HUDPictureVariant_InvalidLevel": "../u_resources/spells/variants/locked_levels_001.png",
+              "ShowParamsInTooltip": "SpecificBrutalStrike,DamageCritical"
+            }
+          }
+        ],
+        "DamageCritical": [
+          {
+            "$": {
+              "CriticalInflictScoreModifier": "40"
+            }
+          }
+        ]
+      },
+      {
+        "$": {
+          "UID": "player_brutalstrike_step_16",
+          "ESkill": "default_variant"
+        },
+        "HUD": [
+          {
+            "$": {
+              "UIName": "@ui_Variant_BrutalStrike_variant_16",
+              "Lore": "",
+              "HUDPictureVariant_Normal": "../u_resources/spells/variants/normal_activation_003.png",
+              "HUDPictureVariant_Hover": "../u_resources/spells/variants/normal_hover_003.png",
+              "HUDPictureVariant_Selected": "../u_resources/spells/variants/normal_clicked_003.png",
+              "HUDPictureVariant_NotEnoughPoints": "../u_resources/spells/variants/locked_points_003.png",
+              "HUDPictureVariant_InvalidLevel": "../u_resources/spells/variants/locked_levels_003.png",
+              "ShowParamsInTooltip": "SpecificBrutalStrike,DamageWeapon"
+            }
+          }
+        ],
+        "DamageWeapon": [
+          {
+            "$": {
+              "PercentMin": "50",
+              "PercentMinPerLevel": "0",
+              "PercentMax": "50",
+              "PercentMaxPerLevel": "0"
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

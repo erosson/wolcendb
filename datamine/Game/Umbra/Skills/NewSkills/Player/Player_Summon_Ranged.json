@@ -1,0 +1,817 @@
+{
+  "MetaData": {
+    "Skill": [
+      {
+        "$": {
+          "UID": "player_summon_ranged",
+          "ESkill": "player_summon",
+          "Keywords": "magic_spell"
+        },
+        "CastingParams": [
+          {
+            "$": {
+              "CanCastWhileMoving": "0"
+            }
+          }
+        ],
+        "WeaponRequirements": [
+          {
+            "$": {
+              "Requirements": "magic"
+            }
+          }
+        ],
+        "Animation": [
+          {
+            "$": {
+              "AnimationDrivenMovement": "0",
+              "ActionString": "player_skill_Sumoning",
+              "ScaleWithSpellCastingSpeed": "1"
+            }
+          }
+        ],
+        "HUD": [
+          {
+            "$": {
+              "HUDPicture": "../u_resources/spells/Active_Skills/Huntingswarm.png",
+              "UIName": "@ui_AST_SummonRanged",
+              "Lore": "@ui_AST_SummonRanged_Lore",
+              "ActiveEffectTitle": "",
+              "ActiveEffectDesc": "",
+              "ASTTreeNumber": "1",
+              "ShowParamsInAST": "Cost,ROSTime,Cooldown,Range,MaxSummon,SpecificSummon",
+              "ShowParamsInTooltip": "Cost,Cooldown,MaxSummon,SpecificSummon"
+            }
+          }
+        ],
+        "Enneract": [
+          {
+            "$": {
+              "PickableParticle_MoveToGround": "U_CommonVFX_02.Esseract.Esseract_Projectile.Physical",
+              "PickableParticle_OnGround_Shape": "U_CommonVFX_02.Esseract.Esseract_Shape.Circle_Physical",
+              "PickableParticle_OnGround_Damage": "U_CommonVFX_02.Esseract.Esseract_Color.Physical",
+              "PickableParticle_OnGround_Symbol": "U_CommonVFX_02.Esseract.Esseract_Symbol.BEZERIEL",
+              "PickableParticle_OnGround_Indicator": "U_CommonVFX_02.Esseract.Esseract_Indicator.Physical",
+              "PickableParticle_OnGround_Pickup": "U_CommonVFX_02.Esseract.Esseract_Loot.Physical",
+              "SkillLearningParticle": "U_CommonVFX.Skill_Learn.Skill_Learn_Physical",
+              "Inventory_HUDPicture": "../u_resources/enneracts/Huntingswarm.png",
+              "Inventory_LoreDesc": "@ui_enneract_lore"
+            }
+          }
+        ],
+        "Range": [
+          {
+            "$": {
+              "AttackRange": "15"
+            }
+          }
+        ],
+        "Cooldown": [
+          {
+            "$": {
+              "Cooldown": "1.5",
+              "CooldownPerLevel": "0"
+            }
+          }
+        ],
+        "Summoning": [
+          {
+            "$": {
+              "MaxSummons": "2",
+              "KillLowestHPOnOversummoning": "0",
+              "SummonsSuicideWhenMasterDies": "1"
+            },
+            "SummonedSpawnClass": [
+              {
+                "$": {
+                  "Key": "Base",
+                  "Name": "SC_SkillSummon_Ranged"
+                }
+              }
+            ]
+          }
+        ],
+        "Specific_Summon": [
+          {
+            "$": {
+              "Type": "physical",
+              "SummonSoundTrigger": "Play_Skill_Summon_SpawnScream"
+            },
+            "SummonedSkills": [
+              {
+                "$": {
+                  "UID": "summon_default_range",
+                  "OnEvent": "SummonCapacityReached"
+                }
+              }
+            ]
+          }
+        ],
+        "Specific_Summon_Ranged": [
+          {
+            "$": {
+              "HeightOffsetAtCastPos": "1.5"
+            }
+          }
+        ],
+        "ResourceCost": [
+          {
+            "$": {
+              "ManaCost": "-100",
+              "ROSTransfertDuration": "2.0"
+            }
+          }
+        ],
+        "SoundTrigger": [
+          {
+            "$": {
+              "OnAnimStart": "Play_Skill_Summon_Start"
+            }
+          }
+        ],
+        "ParticleList": [
+          {
+            "Particle": [
+              {
+                "$": {
+                  "Key": "PermanentRing",
+                  "Name": "U_Character_02.Summon.SummonLoop.SummonLoop_Aura_01",
+                  "Bone": "Bip01",
+                  "Direction": "0,1,0",
+                  "Delay": "0.1"
+                }
+              },
+              {
+                "$": {
+                  "Key": "SpawnRing",
+                  "Name": "U_Character_02.Summon.SummonStart_01_Physical",
+                  "Bone": "Bip01",
+                  "Direction": "0,1,0",
+                  "Delay": "0.1"
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "$": {
+          "UID": "player_summon_ranged_variant_1",
+          "ESkill": "default_variant"
+        },
+        "HUD": [
+          {
+            "$": {
+              "UIName": "@ui_Variant_SummonRanged_variant_1",
+              "Lore": "@ui_Variant_SummonRanged_variant_1_lore",
+              "HUDPictureVariant_Normal": "../u_resources/spells/variants/normal_activation_005.png",
+              "HUDPictureVariant_Hover": "../u_resources/spells/variants/normal_hover_005.png",
+              "HUDPictureVariant_Selected": "../u_resources/spells/variants/normal_clicked_005.png",
+              "HUDPictureVariant_NotEnoughPoints": "../u_resources/spells/variants/locked_points_005.png",
+              "HUDPictureVariant_InvalidLevel": "../u_resources/spells/variants/locked_levels_005.png",
+              "ShowParamsInTooltip": "SpecificSummon"
+            }
+          }
+        ],
+        "Summoning": [
+          {
+            "$": {
+              "MaxSummons": "0",
+              "KillLowestHPOnOversummoning": "0",
+              "SummonsSuicideWhenMasterDies": "1"
+            },
+            "SummonedSpawnClass": [
+              {
+                "$": {
+                  "Key": "Base",
+                  "Name": "SC_SkillSummon_Ranged_Explosive"
+                }
+              }
+            ]
+          }
+        ],
+        "Specific_Summon": [
+          {
+            "SummonedSkills": [
+              {
+                "$": {
+                  "UID": "summon_default_range_explosive",
+                  "OnEvent": "SummonCapacityReached"
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "$": {
+          "UID": "player_summon_ranged_variant_2",
+          "ESkill": "default_variant"
+        },
+        "HUD": [
+          {
+            "$": {
+              "UIName": "@ui_Variant_SummonRanged_variant_2",
+              "Lore": "",
+              "HUDPictureVariant_Normal": "../u_resources/spells/variants/normal_activation_001.png",
+              "HUDPictureVariant_Hover": "../u_resources/spells/variants/normal_hover_001.png",
+              "HUDPictureVariant_Selected": "../u_resources/spells/variants/normal_clicked_001.png",
+              "HUDPictureVariant_NotEnoughPoints": "../u_resources/spells/variants/locked_points_001.png",
+              "HUDPictureVariant_InvalidLevel": "../u_resources/spells/variants/locked_levels_001.png",
+              "ShowParamsInTooltip": "SpecificSummon"
+            }
+          }
+        ],
+        "Specific_Summon": [
+          {
+            "PermanentBuffs": [
+              {
+                "$": {
+                  "Name": "SummonBuff_Pierce"
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "$": {
+          "UID": "player_summon_ranged_variant_3",
+          "ESkill": "default_variant"
+        },
+        "HUD": [
+          {
+            "$": {
+              "UIName": "@ui_Variant_SummonRanged_variant_3",
+              "Lore": "",
+              "HUDPictureVariant_Normal": "../u_resources/spells/variants/normal_activation_003.png",
+              "HUDPictureVariant_Hover": "../u_resources/spells/variants/normal_hover_003.png",
+              "HUDPictureVariant_Selected": "../u_resources/spells/variants/normal_clicked_003.png",
+              "HUDPictureVariant_NotEnoughPoints": "../u_resources/spells/variants/locked_points_003.png",
+              "HUDPictureVariant_InvalidLevel": "../u_resources/spells/variants/locked_levels_003.png",
+              "ShowParamsInTooltip": "SpecificSummon"
+            }
+          }
+        ],
+        "PassiveSkills": [
+          {
+            "Skill": [
+              {
+                "$": {
+                  "Index": "0",
+                  "Name": "AI_Summon_FocusShot",
+                  "Duration": "3",
+                  "Targeting": "OnSummons"
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "$": {
+          "UID": "player_summon_ranged_variant_4",
+          "ESkill": "default_variant"
+        },
+        "HUD": [
+          {
+            "$": {
+              "UIName": "@ui_Variant_SummonRanged_variant_4",
+              "Lore": "@ui_Variant_SummonRanged_variant_4_lore",
+              "HUDPictureVariant_Normal": "../u_resources/spells/variants/normal_activation_005.png",
+              "HUDPictureVariant_Hover": "../u_resources/spells/variants/normal_hover_005.png",
+              "HUDPictureVariant_Selected": "../u_resources/spells/variants/normal_clicked_005.png",
+              "HUDPictureVariant_NotEnoughPoints": "../u_resources/spells/variants/locked_points_005.png",
+              "HUDPictureVariant_InvalidLevel": "../u_resources/spells/variants/locked_levels_005.png",
+              "ShowParamsInTooltip": "SpecificSummon"
+            }
+          }
+        ],
+        "Specific_Summon": [
+          {
+            "PermanentBuffs": [
+              {
+                "$": {
+                  "Name": "SummonBuff_GlassCannon_Ranged"
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "$": {
+          "UID": "player_summon_ranged_variant_5",
+          "ESkill": "default_variant"
+        },
+        "HUD": [
+          {
+            "$": {
+              "UIName": "@ui_Variant_SummonRanged_variant_5",
+              "Lore": "@ui_Variant_SummonRanged_variant_5_lore",
+              "HUDPictureVariant_Normal": "../u_resources/spells/variants/normal_activation_005.png",
+              "HUDPictureVariant_Hover": "../u_resources/spells/variants/normal_hover_005.png",
+              "HUDPictureVariant_Selected": "../u_resources/spells/variants/normal_clicked_005.png",
+              "HUDPictureVariant_NotEnoughPoints": "../u_resources/spells/variants/locked_points_005.png",
+              "HUDPictureVariant_InvalidLevel": "../u_resources/spells/variants/locked_levels_005.png",
+              "ShowParamsInTooltip": "SpecificSummon"
+            }
+          }
+        ],
+        "Specific_Summon": [
+          {
+            "$": {
+              "Type": "poison"
+            }
+          }
+        ],
+        "WeaponRequirements": [
+          {
+            "$": {
+              "Requirements": "magic,poison"
+            }
+          }
+        ],
+        "Summoning": [
+          {
+            "$": {
+              "MaxSummons": "0",
+              "KillLowestHPOnOversummoning": "0",
+              "SummonsSuicideWhenMasterDies": "1"
+            },
+            "SummonedSpawnClass": [
+              {
+                "$": {
+                  "Key": "Base",
+                  "Name": "SC_SkillSummon_Ranged_v01"
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "$": {
+          "UID": "player_summon_ranged_variant_6",
+          "ESkill": "default_variant"
+        },
+        "HUD": [
+          {
+            "$": {
+              "UIName": "@ui_Variant_SummonRanged_variant_6",
+              "Lore": "@ui_Variant_SummonRanged_variant_6_lore",
+              "HUDPictureVariant_Normal": "../u_resources/spells/variants/normal_activation_005.png",
+              "HUDPictureVariant_Hover": "../u_resources/spells/variants/normal_hover_005.png",
+              "HUDPictureVariant_Selected": "../u_resources/spells/variants/normal_clicked_005.png",
+              "HUDPictureVariant_NotEnoughPoints": "../u_resources/spells/variants/locked_points_005.png",
+              "HUDPictureVariant_InvalidLevel": "../u_resources/spells/variants/locked_levels_005.png",
+              "ShowParamsInTooltip": "SpecificSummon"
+            }
+          }
+        ],
+        "Specific_Summon": [
+          {
+            "$": {
+              "Type": "frost"
+            }
+          }
+        ],
+        "WeaponRequirements": [
+          {
+            "$": {
+              "Requirements": "magic,frost"
+            }
+          }
+        ],
+        "Summoning": [
+          {
+            "$": {
+              "MaxSummons": "0",
+              "KillLowestHPOnOversummoning": "0",
+              "SummonsSuicideWhenMasterDies": "1"
+            },
+            "SummonedSpawnClass": [
+              {
+                "$": {
+                  "Key": "Base",
+                  "Name": "SC_SkillSummon_Ranged_v02"
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "$": {
+          "UID": "player_summon_ranged_variant_7",
+          "ESkill": "default_variant"
+        },
+        "HUD": [
+          {
+            "$": {
+              "UIName": "@ui_Variant_SummonRanged_variant_7",
+              "Lore": "@ui_Variant_SummonRanged_variant_7_lore",
+              "HUDPictureVariant_Normal": "../u_resources/spells/variants/normal_activation_005.png",
+              "HUDPictureVariant_Hover": "../u_resources/spells/variants/normal_hover_005.png",
+              "HUDPictureVariant_Selected": "../u_resources/spells/variants/normal_clicked_005.png",
+              "HUDPictureVariant_NotEnoughPoints": "../u_resources/spells/variants/locked_points_005.png",
+              "HUDPictureVariant_InvalidLevel": "../u_resources/spells/variants/locked_levels_005.png",
+              "ShowParamsInTooltip": "SpecificSummon"
+            }
+          }
+        ],
+        "Specific_Summon": [
+          {
+            "$": {
+              "Type": "shadow"
+            }
+          }
+        ],
+        "WeaponRequirements": [
+          {
+            "$": {
+              "Requirements": "magic,shadow"
+            }
+          }
+        ],
+        "Summoning": [
+          {
+            "$": {
+              "MaxSummons": "0",
+              "KillLowestHPOnOversummoning": "0",
+              "SummonsSuicideWhenMasterDies": "1"
+            },
+            "SummonedSpawnClass": [
+              {
+                "$": {
+                  "Key": "Base",
+                  "Name": "SC_SkillSummon_Ranged_v03"
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "$": {
+          "UID": "player_summon_ranged_variant_8",
+          "ESkill": "default_variant"
+        },
+        "HUD": [
+          {
+            "$": {
+              "UIName": "@ui_Variant_SummonRanged_variant_8",
+              "Lore": "",
+              "HUDPictureVariant_Normal": "../u_resources/spells/variants/normal_activation_003.png",
+              "HUDPictureVariant_Hover": "../u_resources/spells/variants/normal_hover_003.png",
+              "HUDPictureVariant_Selected": "../u_resources/spells/variants/normal_clicked_003.png",
+              "HUDPictureVariant_NotEnoughPoints": "../u_resources/spells/variants/locked_points_003.png",
+              "HUDPictureVariant_InvalidLevel": "../u_resources/spells/variants/locked_levels_003.png",
+              "ShowParamsInTooltip": "SpecificSummon,MaxSummon"
+            }
+          }
+        ],
+        "Summoning": [
+          {
+            "$": {
+              "MaxSummons": "1",
+              "KillLowestHPOnOversummoning": "0",
+              "SummonsSuicideWhenMasterDies": "1"
+            }
+          }
+        ]
+      },
+      {
+        "$": {
+          "UID": "player_summon_ranged_variant_9",
+          "ESkill": "default_variant"
+        },
+        "HUD": [
+          {
+            "$": {
+              "UIName": "@ui_Variant_SummonRanged_variant_9",
+              "Lore": "",
+              "HUDPictureVariant_Normal": "../u_resources/spells/variants/normal_activation_003.png",
+              "HUDPictureVariant_Hover": "../u_resources/spells/variants/normal_hover_003.png",
+              "HUDPictureVariant_Selected": "../u_resources/spells/variants/normal_clicked_003.png",
+              "HUDPictureVariant_NotEnoughPoints": "../u_resources/spells/variants/locked_points_003.png",
+              "HUDPictureVariant_InvalidLevel": "../u_resources/spells/variants/locked_levels_003.png",
+              "ShowParamsInTooltip": "SpecificSummon,MaxSummon"
+            }
+          }
+        ],
+        "Summoning": [
+          {
+            "$": {
+              "MaxSummons": "-1",
+              "KillLowestHPOnOversummoning": "0",
+              "SummonsSuicideWhenMasterDies": "1"
+            }
+          }
+        ],
+        "Specific_Summon": [
+          {
+            "PermanentBuffs": [
+              {
+                "$": {
+                  "Name": "SummonBuff_Damage_Ranged_1"
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "$": {
+          "UID": "player_summon_ranged_variant_10",
+          "ESkill": "default_variant"
+        },
+        "HUD": [
+          {
+            "$": {
+              "UIName": "@ui_Variant_SummonRanged_variant_10",
+              "Lore": "",
+              "HUDPictureVariant_Normal": "../u_resources/spells/variants/normal_activation_001.png",
+              "HUDPictureVariant_Hover": "../u_resources/spells/variants/normal_hover_001.png",
+              "HUDPictureVariant_Selected": "../u_resources/spells/variants/normal_clicked_001.png",
+              "HUDPictureVariant_NotEnoughPoints": "../u_resources/spells/variants/locked_points_001.png",
+              "HUDPictureVariant_InvalidLevel": "../u_resources/spells/variants/locked_levels_001.png",
+              "ShowParamsInTooltip": "SpecificSummon"
+            }
+          }
+        ],
+        "Specific_Summon": [
+          {
+            "PermanentBuffs": [
+              {
+                "$": {
+                  "Name": "SummonBuff_Damage_Ranged_2"
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "$": {
+          "UID": "player_summon_ranged_variant_11",
+          "ESkill": "default_variant"
+        },
+        "HUD": [
+          {
+            "$": {
+              "UIName": "@ui_Variant_SummonRanged_variant_11",
+              "Lore": "",
+              "HUDPictureVariant_Normal": "../u_resources/spells/variants/normal_activation_001.png",
+              "HUDPictureVariant_Hover": "../u_resources/spells/variants/normal_hover_001.png",
+              "HUDPictureVariant_Selected": "../u_resources/spells/variants/normal_clicked_001.png",
+              "HUDPictureVariant_NotEnoughPoints": "../u_resources/spells/variants/locked_points_001.png",
+              "HUDPictureVariant_InvalidLevel": "../u_resources/spells/variants/locked_levels_001.png",
+              "ShowParamsInTooltip": "SpecificSummon"
+            }
+          }
+        ],
+        "Specific_Summon": [
+          {
+            "PermanentBuffs": [
+              {
+                "$": {
+                  "Name": "SummonBuff_Damage_Ranged_3"
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "$": {
+          "UID": "player_summon_ranged_variant_12",
+          "ESkill": "default_variant"
+        },
+        "HUD": [
+          {
+            "$": {
+              "UIName": "@ui_Variant_SummonRanged_variant_12",
+              "Lore": "",
+              "HUDPictureVariant_Normal": "../u_resources/spells/variants/normal_activation_003.png",
+              "HUDPictureVariant_Hover": "../u_resources/spells/variants/normal_hover_003.png",
+              "HUDPictureVariant_Selected": "../u_resources/spells/variants/normal_clicked_003.png",
+              "HUDPictureVariant_NotEnoughPoints": "../u_resources/spells/variants/locked_points_003.png",
+              "HUDPictureVariant_InvalidLevel": "../u_resources/spells/variants/locked_levels_003.png",
+              "ShowParamsInTooltip": "SpecificSummon"
+            }
+          }
+        ],
+        "Specific_Summon": [
+          {
+            "PermanentBuffs": [
+              {
+                "$": {
+                  "Name": "SummonBuff_Damage_Ranged_4"
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "$": {
+          "UID": "player_summon_ranged_variant_13",
+          "ESkill": "default_variant"
+        },
+        "HUD": [
+          {
+            "$": {
+              "UIName": "@ui_Variant_SummonRanged_variant_13",
+              "Lore": "",
+              "HUDPictureVariant_Normal": "../u_resources/spells/variants/normal_activation_001.png",
+              "HUDPictureVariant_Hover": "../u_resources/spells/variants/normal_hover_001.png",
+              "HUDPictureVariant_Selected": "../u_resources/spells/variants/normal_clicked_001.png",
+              "HUDPictureVariant_NotEnoughPoints": "../u_resources/spells/variants/locked_points_001.png",
+              "HUDPictureVariant_InvalidLevel": "../u_resources/spells/variants/locked_levels_001.png",
+              "ShowParamsInTooltip": "SpecificSummon"
+            }
+          }
+        ],
+        "Specific_Summon": [
+          {
+            "PermanentBuffs": [
+              {
+                "$": {
+                  "Name": "SummonBuff_Life_Ranged_1"
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "$": {
+          "UID": "player_summon_ranged_variant_14",
+          "ESkill": "default_variant"
+        },
+        "HUD": [
+          {
+            "$": {
+              "UIName": "@ui_Variant_SummonRanged_variant_14",
+              "Lore": "",
+              "HUDPictureVariant_Normal": "../u_resources/spells/variants/normal_activation_001.png",
+              "HUDPictureVariant_Hover": "../u_resources/spells/variants/normal_hover_001.png",
+              "HUDPictureVariant_Selected": "../u_resources/spells/variants/normal_clicked_001.png",
+              "HUDPictureVariant_NotEnoughPoints": "../u_resources/spells/variants/locked_points_001.png",
+              "HUDPictureVariant_InvalidLevel": "../u_resources/spells/variants/locked_levels_001.png",
+              "ShowParamsInTooltip": "SpecificSummon"
+            }
+          }
+        ],
+        "Specific_Summon": [
+          {
+            "PermanentBuffs": [
+              {
+                "$": {
+                  "Name": "SummonBuff_Life_Ranged_2"
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "$": {
+          "UID": "player_summon_ranged_variant_15",
+          "ESkill": "default_variant"
+        },
+        "HUD": [
+          {
+            "$": {
+              "UIName": "@ui_Variant_SummonRanged_variant_15",
+              "Lore": "",
+              "HUDPictureVariant_Normal": "../u_resources/spells/variants/normal_activation_003.png",
+              "HUDPictureVariant_Hover": "../u_resources/spells/variants/normal_hover_003.png",
+              "HUDPictureVariant_Selected": "../u_resources/spells/variants/normal_clicked_003.png",
+              "HUDPictureVariant_NotEnoughPoints": "../u_resources/spells/variants/locked_points_003.png",
+              "HUDPictureVariant_InvalidLevel": "../u_resources/spells/variants/locked_levels_003.png",
+              "ShowParamsInTooltip": "SpecificSummon"
+            }
+          }
+        ],
+        "Specific_Summon": [
+          {
+            "PermanentBuffs": [
+              {
+                "$": {
+                  "Name": "SummonBuff_MovementSpeed_Ranged_1"
+                }
+              },
+              {
+                "$": {
+                  "Name": "SummonBuff_Life_Ranged_3"
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "$": {
+          "UID": "player_summon_ranged_variant_16",
+          "ESkill": "default_variant"
+        },
+        "HUD": [
+          {
+            "$": {
+              "UIName": "@ui_Variant_SummonRanged_variant_16",
+              "Lore": "",
+              "HUDPictureVariant_Normal": "../u_resources/spells/variants/normal_activation_001.png",
+              "HUDPictureVariant_Hover": "../u_resources/spells/variants/normal_hover_001.png",
+              "HUDPictureVariant_Selected": "../u_resources/spells/variants/normal_clicked_001.png",
+              "HUDPictureVariant_NotEnoughPoints": "../u_resources/spells/variants/locked_points_001.png",
+              "HUDPictureVariant_InvalidLevel": "../u_resources/spells/variants/locked_levels_001.png",
+              "ShowParamsInTooltip": "SpecificSummon"
+            }
+          }
+        ],
+        "Specific_Summon": [
+          {
+            "PermanentBuffs": [
+              {
+                "$": {
+                  "Name": "SummonBuff_MovementSpeed_Ranged_2"
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "$": {
+          "UID": "player_summon_ranged_variant_1,player_summon_ranged_variant_5",
+          "ESkill": "default_variant_combo"
+        },
+        "Summoning": [
+          {
+            "$": {
+              "MaxSummons": "0",
+              "KillLowestHPOnOversummoning": "0",
+              "SummonsSuicideWhenMasterDies": "1"
+            },
+            "SummonedSpawnClass": [
+              {
+                "$": {
+                  "Key": "Base",
+                  "Name": "SC_SkillSummon_Ranged_Explosive_v01"
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "$": {
+          "UID": "player_summon_ranged_variant_1,player_summon_ranged_variant_6",
+          "ESkill": "default_variant_combo"
+        },
+        "Summoning": [
+          {
+            "$": {
+              "MaxSummons": "0",
+              "KillLowestHPOnOversummoning": "0",
+              "SummonsSuicideWhenMasterDies": "1"
+            },
+            "SummonedSpawnClass": [
+              {
+                "$": {
+                  "Key": "Base",
+                  "Name": "SC_SkillSummon_Ranged_Explosive_v02"
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "$": {
+          "UID": "player_summon_ranged_variant_1,player_summon_ranged_variant_7",
+          "ESkill": "default_variant_combo"
+        },
+        "Summoning": [
+          {
+            "$": {
+              "MaxSummons": "0",
+              "KillLowestHPOnOversummoning": "0",
+              "SummonsSuicideWhenMasterDies": "1"
+            },
+            "SummonedSpawnClass": [
+              {
+                "$": {
+                  "Key": "Base",
+                  "Name": "SC_SkillSummon_Ranged_Explosive_v03"
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

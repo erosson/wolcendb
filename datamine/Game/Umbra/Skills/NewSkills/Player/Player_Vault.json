@@ -1,0 +1,856 @@
+{
+  "MetaData": {
+    "Skill": [
+      {
+        "$": {
+          "UID": "player_vault",
+          "ESkill": "player_vault",
+          "Keywords": "attack_skill,projectile"
+        },
+        "VisualFeedback": [
+          {
+            "$": {
+              "TrailPresetBase": "default",
+              "FeedbackPresetBase": "Player_skill_vault",
+              "BloodDecalOrientation": "forward"
+            }
+          }
+        ],
+        "WeaponRequirements": [
+          {
+            "$": {
+              "Requirements": "rogue"
+            }
+          }
+        ],
+        "Animation": [
+          {
+            "$": {
+              "ActionString": "player_skill_vault",
+              "AnimationDrivenMovement": "1"
+            }
+          }
+        ],
+        "CastingParams": [
+          {
+            "$": {
+              "CastBone": "R_weapon_bone",
+              "CasterImmobilizationTime": "0",
+              "CanCastWhileMoving": "0",
+              "MaximumTurnRate": "0",
+              "ShouldMoveInRange": "0"
+            }
+          }
+        ],
+        "HUD": [
+          {
+            "$": {
+              "HUDPicture": "../u_resources/spells/Active_Skills/Evasion.png",
+              "UIName": "@ui_AST_Vault",
+              "Lore": "@ui_AST_Vault_Lore",
+              "ActiveEffectTitle": "",
+              "ActiveEffectDesc": "",
+              "ASTTreeNumber": "8",
+              "ShowParamsInAST": "Cost,ROSTime,Cooldown,Range,Projectiles,DamageDetail,DamageWeapon,DamageCritical,StatusAilmentsChance,Explosion,Slow,SpecificVault",
+              "ShowParamsInTooltip": "Cost,Cooldown,DamageOverview,StatusAilmentsChance,Slow,SpecificVault"
+            }
+          }
+        ],
+        "Enneract": [
+          {
+            "$": {
+              "PickableParticle_MoveToGround": "U_CommonVFX_02.Esseract.Esseract_Projectile.Shadow",
+              "PickableParticle_OnGround_Shape": "U_CommonVFX_02.Esseract.Esseract_Shape.Circle_Shadow",
+              "PickableParticle_OnGround_Damage": "U_CommonVFX_02.Esseract.Esseract_Color.Shadow",
+              "PickableParticle_OnGround_Symbol": "U_CommonVFX_02.Esseract.Esseract_Symbol.MOROS",
+              "PickableParticle_OnGround_Indicator": "U_CommonVFX_02.Esseract.Esseract_Indicator.Shadow",
+              "PickableParticle_OnGround_Pickup": "U_CommonVFX_02.Esseract.Esseract_Loot.Shadow",
+              "SkillLearningParticle": "U_CommonVFX.Skill_Learn.Skill_Learn_Shadow",
+              "Inventory_HUDPicture": "../u_resources/enneracts/Evasion.png",
+              "Inventory_LoreDesc": "@ui_enneract_lore"
+            }
+          }
+        ],
+        "Aggression": [
+          {
+            "$": {
+              "TargetValueOnHit": "20"
+            }
+          }
+        ],
+        "Cooldown": [
+          {
+            "$": {
+              "Cooldown": "6",
+              "CooldownPerLevel": "0"
+            }
+          }
+        ],
+        "ResourceCost": [
+          {
+            "$": {
+              "RageCost": "-100",
+              "RageCostPerLevel": "0",
+              "ROSTransfertDuration": "2.0"
+            }
+          }
+        ],
+        "SoundTrigger": [
+          {
+            "$": {
+              "OnAnimStart": "Play_Skill_Vault_Start"
+            }
+          }
+        ],
+        "Range": [
+          {
+            "$": {
+              "AttackRange": "2"
+            }
+          }
+        ],
+        "Projectile": [
+          {
+            "$": {
+              "Name": "player_vault_proj",
+              "ProjectileCount": "1",
+              "PenetrationLimit": "1",
+              "AngleBetweenProjectiles": "90"
+            }
+          }
+        ],
+        "Explosion": [
+          {
+            "$": {
+              "ExplosionRadius": "3"
+            }
+          }
+        ],
+        "Collisions": [
+          {
+            "$": {
+              "IgnoreTerrainCollisions": "1",
+              "IgnoreEntityCollisions": "1"
+            }
+          }
+        ],
+        "DamageWeapon": [
+          {
+            "$": {
+              "PercentMin": "100",
+              "PercentMinPerLevel": "0",
+              "PercentMax": "100",
+              "PercentMaxPerLevel": "0"
+            }
+          }
+        ],
+        "Damage_Conversion": [
+          {
+            "Entry": [
+              {
+                "$": {
+                  "From": "physical",
+                  "To": "shadow",
+                  "ConversionRate": "100"
+                }
+              }
+            ]
+          }
+        ],
+        "ParticleList": [
+          {
+            "Particle": [
+              {
+                "$": {
+                  "Key": "Explosion",
+                  "Name": "U_Character_02.Vault.Vault_Explosion_01",
+                  "Direction": "0,0,1"
+                }
+              },
+              {
+                "$": {
+                  "Key": "Dash",
+                  "Name": "U_Character_02.Vault.Vault_Trail_01",
+                  "Direction": "0,1,0",
+                  "Bone": "Bip01 Spine2"
+                }
+              },
+              {
+                "$": {
+                  "Key": "Mine",
+                  "Name": "U_Character_02.Vault.Vault_Mine_01",
+                  "Direction": "0,0,1"
+                }
+              }
+            ]
+          }
+        ],
+        "StatusEffect_MovementSpeed": [
+          {
+            "$": {
+              "SlowPercent": "35",
+              "Duration": "2"
+            }
+          }
+        ],
+        "Specific_Vault": [
+          {
+            "$": {
+              "DashMaxDistance": "8",
+              "TrapName": "trap_player_vault",
+              "DoDamage": "1"
+            }
+          }
+        ]
+      },
+      {
+        "$": {
+          "UID": "player_Vault_variant_1",
+          "ESkill": "default_variant"
+        },
+        "HUD": [
+          {
+            "$": {
+              "UIName": "@ui_Variant_Vault_variant_1",
+              "Lore": "",
+              "HUDPictureVariant_Normal": "../u_resources/spells/variants/normal_activation_003.png",
+              "HUDPictureVariant_Hover": "../u_resources/spells/variants/normal_hover_003.png",
+              "HUDPictureVariant_Selected": "../u_resources/spells/variants/normal_clicked_003.png",
+              "HUDPictureVariant_NotEnoughPoints": "../u_resources/spells/variants/locked_points_003.png",
+              "HUDPictureVariant_InvalidLevel": "../u_resources/spells/variants/locked_levels_003.png",
+              "ShowParamsInTooltip": "SpecificVault,Cooldown"
+            }
+          }
+        ],
+        "Specific_Vault": [
+          {
+            "$": {
+              "StunDuration": "1.5"
+            }
+          }
+        ],
+        "Cooldown": [
+          {
+            "$": {
+              "Cooldown": "4",
+              "CooldownPerLevel": "0"
+            }
+          }
+        ]
+      },
+      {
+        "$": {
+          "UID": "player_Vault_variant_2",
+          "ESkill": "default_variant"
+        },
+        "HUD": [
+          {
+            "$": {
+              "UIName": "@ui_Variant_Vault_variant_2",
+              "Lore": "",
+              "HUDPictureVariant_Normal": "../u_resources/spells/variants/normal_activation_003.png",
+              "HUDPictureVariant_Hover": "../u_resources/spells/variants/normal_hover_003.png",
+              "HUDPictureVariant_Selected": "../u_resources/spells/variants/normal_clicked_003.png",
+              "HUDPictureVariant_NotEnoughPoints": "../u_resources/spells/variants/locked_points_003.png",
+              "HUDPictureVariant_InvalidLevel": "../u_resources/spells/variants/locked_levels_003.png",
+              "ShowParamsInTooltip": "SpecificVault,Projectiles"
+            }
+          }
+        ],
+        "Projectile": [
+          {
+            "$": {
+              "ProjectileCount": "1"
+            }
+          }
+        ]
+      },
+      {
+        "$": {
+          "UID": "player_Vault_variant_3",
+          "ESkill": "default_variant"
+        },
+        "HUD": [
+          {
+            "$": {
+              "UIName": "@ui_Variant_Vault_variant_3",
+              "Lore": "",
+              "HUDPictureVariant_Normal": "../u_resources/spells/variants/normal_activation_003.png",
+              "HUDPictureVariant_Hover": "../u_resources/spells/variants/normal_hover_003.png",
+              "HUDPictureVariant_Selected": "../u_resources/spells/variants/normal_clicked_003.png",
+              "HUDPictureVariant_NotEnoughPoints": "../u_resources/spells/variants/locked_points_003.png",
+              "HUDPictureVariant_InvalidLevel": "../u_resources/spells/variants/locked_levels_003.png",
+              "ShowParamsInTooltip": "SpecificVault,DamageWeapon"
+            }
+          }
+        ],
+        "DamageWeapon": [
+          {
+            "$": {
+              "Type": "shadow",
+              "PercentMin": "50",
+              "PercentMinPerLevel": "0",
+              "PercentMax": "50",
+              "PercentMaxPerLevel": "0"
+            }
+          }
+        ]
+      },
+      {
+        "$": {
+          "UID": "player_Vault_variant_4",
+          "ESkill": "default_variant"
+        },
+        "HUD": [
+          {
+            "$": {
+              "UIName": "@ui_Variant_Vault_variant_4",
+              "Lore": "",
+              "HUDPictureVariant_Normal": "../u_resources/spells/variants/normal_activation_001.png",
+              "HUDPictureVariant_Hover": "../u_resources/spells/variants/normal_hover_001.png",
+              "HUDPictureVariant_Selected": "../u_resources/spells/variants/normal_clicked_001.png",
+              "HUDPictureVariant_NotEnoughPoints": "../u_resources/spells/variants/locked_points_001.png",
+              "HUDPictureVariant_InvalidLevel": "../u_resources/spells/variants/locked_levels_001.png",
+              "ShowParamsInTooltip": "SpecificVault,Range"
+            }
+          }
+        ],
+        "Range": [
+          {
+            "$": {
+              "AttackRange": "5"
+            }
+          }
+        ]
+      },
+      {
+        "$": {
+          "UID": "player_Vault_variant_5",
+          "ESkill": "default_variant"
+        },
+        "HUD": [
+          {
+            "$": {
+              "UIName": "@ui_Variant_Vault_variant_5",
+              "Lore": "",
+              "HUDPictureVariant_Normal": "../u_resources/spells/variants/normal_activation_001.png",
+              "HUDPictureVariant_Hover": "../u_resources/spells/variants/normal_hover_001.png",
+              "HUDPictureVariant_Selected": "../u_resources/spells/variants/normal_clicked_001.png",
+              "HUDPictureVariant_NotEnoughPoints": "../u_resources/spells/variants/locked_points_001.png",
+              "HUDPictureVariant_InvalidLevel": "../u_resources/spells/variants/locked_levels_001.png",
+              "ShowParamsInTooltip": "SpecificVault,CastingParams"
+            }
+          }
+        ],
+        "CastingParams": [
+          {
+            "$": {
+              "CanCastEvenUnderCrowdControl": "1"
+            }
+          }
+        ],
+        "Specific_Vault": [
+          {
+            "$": {
+              "BreakCC": "1"
+            }
+          }
+        ]
+      },
+      {
+        "$": {
+          "UID": "player_Vault_variant_6",
+          "ESkill": "default_variant"
+        },
+        "HUD": [
+          {
+            "$": {
+              "UIName": "@ui_Variant_Vault_variant_6",
+              "Lore": "",
+              "HUDPictureVariant_Normal": "../u_resources/spells/variants/normal_activation_001.png",
+              "HUDPictureVariant_Hover": "../u_resources/spells/variants/normal_hover_001.png",
+              "HUDPictureVariant_Selected": "../u_resources/spells/variants/normal_clicked_001.png",
+              "HUDPictureVariant_NotEnoughPoints": "../u_resources/spells/variants/locked_points_001.png",
+              "HUDPictureVariant_InvalidLevel": "../u_resources/spells/variants/locked_levels_001.png",
+              "ShowParamsInTooltip": "SpecificVault"
+            }
+          }
+        ],
+        "ParticleList": [
+          {
+            "Particle": [
+              {
+                "$": {
+                  "Key": "DecoyStart",
+                  "Name": "U_Character_02.Vault.Vault_Decoy_Start_01",
+                  "Direction": "0,0,1",
+                  "Scale": "0.5"
+                }
+              },
+              {
+                "$": {
+                  "Key": "DecoyAura",
+                  "Name": "U_Character.Skills.Teleport_Decoy_BodyAura_White",
+                  "Direction": "0,1,0",
+                  "Bone": "Bip01_Spine2"
+                }
+              },
+              {
+                "$": {
+                  "Key": "DecoyAuraGround",
+                  "Name": "U_Character.Skills.Teleport_Decoy_Aura_White",
+                  "Direction": "0,0,1"
+                }
+              }
+            ]
+          }
+        ],
+        "Specific_Vault": [
+          {
+            "$": {
+              "UseDecoy": "1",
+              "DecoyTTL": "5",
+              "DecoyCharacterFilepath": "Objects/characters/players/Male/Male_Hollywood_clone_02.cdf",
+              "DecoyAnim": "cmb_h1_melee_idle_01"
+            }
+          }
+        ]
+      },
+      {
+        "$": {
+          "UID": "player_Vault_variant_7",
+          "ESkill": "default_variant"
+        },
+        "HUD": [
+          {
+            "$": {
+              "UIName": "@ui_Variant_Vault_variant_7",
+              "Lore": "",
+              "HUDPictureVariant_Normal": "../u_resources/spells/variants/normal_activation_003.png",
+              "HUDPictureVariant_Hover": "../u_resources/spells/variants/normal_hover_003.png",
+              "HUDPictureVariant_Selected": "../u_resources/spells/variants/normal_clicked_003.png",
+              "HUDPictureVariant_NotEnoughPoints": "../u_resources/spells/variants/locked_points_003.png",
+              "HUDPictureVariant_InvalidLevel": "../u_resources/spells/variants/locked_levels_003.png",
+              "ShowParamsInTooltip": "SpecificVault"
+            }
+          }
+        ],
+        "GhostDamage": [
+          {
+            "$": {
+              "ChanceToHit": "10",
+              "ChanceToHitPerLevel": "0",
+              "MaxHit": "50",
+              "MinDelay": "0.1",
+              "MaxDelay": "0.5",
+              "DamageMultiplier": "1"
+            }
+          }
+        ]
+      },
+      {
+        "$": {
+          "UID": "player_Vault_variant_8",
+          "ESkill": "default_variant"
+        },
+        "HUD": [
+          {
+            "$": {
+              "UIName": "@ui_Variant_Vault_variant_8",
+              "Lore": "",
+              "HUDPictureVariant_Normal": "../u_resources/spells/variants/normal_activation_003.png",
+              "HUDPictureVariant_Hover": "../u_resources/spells/variants/normal_hover_003.png",
+              "HUDPictureVariant_Selected": "../u_resources/spells/variants/normal_clicked_003.png",
+              "HUDPictureVariant_NotEnoughPoints": "../u_resources/spells/variants/locked_points_003.png",
+              "HUDPictureVariant_InvalidLevel": "../u_resources/spells/variants/locked_levels_003.png",
+              "ShowParamsInTooltip": "SpecificVault"
+            }
+          }
+        ],
+        "Projectile": [
+          {
+            "$": {
+              "Name": "player_vault_proj_mine"
+            }
+          }
+        ],
+        "Specific_Vault": [
+          {
+            "$": {
+              "ConvertToMines": "1"
+            }
+          }
+        ]
+      },
+      {
+        "$": {
+          "UID": "player_Vault_variant_9",
+          "ESkill": "default_variant"
+        },
+        "HUD": [
+          {
+            "$": {
+              "UIName": "@ui_Variant_Vault_variant_9",
+              "Lore": "",
+              "HUDPictureVariant_Normal": "../u_resources/spells/variants/normal_activation_001.png",
+              "HUDPictureVariant_Hover": "../u_resources/spells/variants/normal_hover_001.png",
+              "HUDPictureVariant_Selected": "../u_resources/spells/variants/normal_clicked_001.png",
+              "HUDPictureVariant_NotEnoughPoints": "../u_resources/spells/variants/locked_points_001.png",
+              "HUDPictureVariant_InvalidLevel": "../u_resources/spells/variants/locked_levels_001.png",
+              "ShowParamsInTooltip": "SpecificVault"
+            }
+          }
+        ],
+        "Specific_Vault": [
+          {
+            "$": {
+              "RagePerHit": "20"
+            }
+          }
+        ]
+      },
+      {
+        "$": {
+          "UID": "player_Vault_variant_10",
+          "ESkill": "default_variant"
+        },
+        "HUD": [
+          {
+            "$": {
+              "UIName": "@ui_Variant_Vault_variant_10",
+              "Lore": "@ui_Variant_Vault_variant_10_lore",
+              "HUDPictureVariant_Normal": "../u_resources/spells/variants/normal_activation_005.png",
+              "HUDPictureVariant_Hover": "../u_resources/spells/variants/normal_hover_005.png",
+              "HUDPictureVariant_Selected": "../u_resources/spells/variants/normal_clicked_005.png",
+              "HUDPictureVariant_NotEnoughPoints": "../u_resources/spells/variants/locked_points_005.png",
+              "HUDPictureVariant_InvalidLevel": "../u_resources/spells/variants/locked_levels_005.png",
+              "ShowParamsInTooltip": "SpecificVault"
+            }
+          }
+        ],
+        "Specific_Vault": [
+          {
+            "$": {
+              "TriggerForceShieldRegen": "1"
+            }
+          }
+        ]
+      },
+      {
+        "$": {
+          "UID": "player_Vault_variant_11",
+          "ESkill": "default_variant"
+        },
+        "HUD": [
+          {
+            "$": {
+              "UIName": "@ui_Variant_Vault_variant_11",
+              "Lore": "@ui_Variant_Vault_variant_11_lore",
+              "HUDPictureVariant_Normal": "../u_resources/spells/variants/normal_activation_005.png",
+              "HUDPictureVariant_Hover": "../u_resources/spells/variants/normal_hover_005.png",
+              "HUDPictureVariant_Selected": "../u_resources/spells/variants/normal_clicked_005.png",
+              "HUDPictureVariant_NotEnoughPoints": "../u_resources/spells/variants/locked_points_005.png",
+              "HUDPictureVariant_InvalidLevel": "../u_resources/spells/variants/locked_levels_005.png",
+              "ShowParamsInTooltip": "SpecificVault,Slow"
+            }
+          }
+        ],
+        "ParticleList": [
+          {
+            "Particle": [
+              {
+                "$": {
+                  "Key": "Explosion",
+                  "Name": "U_Character_02.Vault.Vault_Explosion_01_Loop",
+                  "Direction": "0,0,1"
+                }
+              }
+            ]
+          }
+        ],
+        "DamageZone": [
+          {
+            "$": {
+              "RateOfFire": "0.5",
+              "Duration": "5"
+            }
+          }
+        ],
+        "Specific_Vault": [
+          {
+            "$": {
+              "UseAOE": "1"
+            }
+          }
+        ],
+        "StatusEffect_MovementSpeed": [
+          {
+            "$": {
+              "SlowPercent": "-35",
+              "Duration": "-2"
+            }
+          }
+        ]
+      },
+      {
+        "$": {
+          "UID": "player_Vault_variant_12",
+          "ESkill": "default_variant"
+        },
+        "HUD": [
+          {
+            "$": {
+              "UIName": "@ui_Variant_Vault_variant_12",
+              "Lore": "",
+              "HUDPictureVariant_Normal": "../u_resources/spells/variants/normal_activation_003.png",
+              "HUDPictureVariant_Hover": "../u_resources/spells/variants/normal_hover_003.png",
+              "HUDPictureVariant_Selected": "../u_resources/spells/variants/normal_clicked_003.png",
+              "HUDPictureVariant_NotEnoughPoints": "../u_resources/spells/variants/locked_points_003.png",
+              "HUDPictureVariant_InvalidLevel": "../u_resources/spells/variants/locked_levels_003.png",
+              "ShowParamsInTooltip": "SpecificVault"
+            }
+          }
+        ],
+        "Specific_Vault": [
+          {
+            "$": {
+              "GenericBuffName": "AST_Vault_Buff",
+              "BuffDuration": "10"
+            }
+          }
+        ]
+      },
+      {
+        "$": {
+          "UID": "player_Vault_variant_13",
+          "ESkill": "default_variant"
+        },
+        "HUD": [
+          {
+            "$": {
+              "UIName": "@ui_Variant_Vault_variant_13",
+              "Lore": "",
+              "HUDPictureVariant_Normal": "../u_resources/spells/variants/normal_activation_001.png",
+              "HUDPictureVariant_Hover": "../u_resources/spells/variants/normal_hover_001.png",
+              "HUDPictureVariant_Selected": "../u_resources/spells/variants/normal_clicked_001.png",
+              "HUDPictureVariant_NotEnoughPoints": "../u_resources/spells/variants/locked_points_001.png",
+              "HUDPictureVariant_InvalidLevel": "../u_resources/spells/variants/locked_levels_001.png",
+              "ShowParamsInTooltip": "SpecificVault"
+            }
+          }
+        ],
+        "Specific_Vault": [
+          {
+            "$": {
+              "DashMaxDistance": "2"
+            }
+          }
+        ]
+      },
+      {
+        "$": {
+          "UID": "player_Vault_variant_14",
+          "ESkill": "default_variant"
+        },
+        "HUD": [
+          {
+            "$": {
+              "UIName": "@ui_Variant_Vault_variant_14",
+              "Lore": "",
+              "HUDPictureVariant_Normal": "../u_resources/spells/variants/normal_activation_001.png",
+              "HUDPictureVariant_Hover": "../u_resources/spells/variants/normal_hover_001.png",
+              "HUDPictureVariant_Selected": "../u_resources/spells/variants/normal_clicked_001.png",
+              "HUDPictureVariant_NotEnoughPoints": "../u_resources/spells/variants/locked_points_001.png",
+              "HUDPictureVariant_InvalidLevel": "../u_resources/spells/variants/locked_levels_001.png",
+              "ShowParamsInTooltip": "SpecificVault,Blownaway"
+            }
+          }
+        ],
+        "Blownaway": [
+          {
+            "$": {
+              "Height": "0.5",
+              "Distance": "2"
+            }
+          }
+        ],
+        "Specific_Vault": [
+          {
+            "$": {
+              "BlownAwayRadius": "4"
+            }
+          }
+        ]
+      },
+      {
+        "$": {
+          "UID": "player_Vault_variant_15",
+          "ESkill": "default_variant"
+        },
+        "HUD": [
+          {
+            "$": {
+              "UIName": "@ui_Variant_Vault_variant_15",
+              "Lore": "@ui_Variant_Vault_variant_3_Lore",
+              "HUDPictureVariant_Normal": "../u_resources/spells/variants/normal_activation_005.png",
+              "HUDPictureVariant_Hover": "../u_resources/spells/variants/normal_hover_005.png",
+              "HUDPictureVariant_Selected": "../u_resources/spells/variants/normal_clicked_005.png",
+              "HUDPictureVariant_NotEnoughPoints": "../u_resources/spells/variants/locked_points_005.png",
+              "HUDPictureVariant_InvalidLevel": "../u_resources/spells/variants/locked_levels_005.png",
+              "ShowParamsInTooltip": "SpecificVault,StatusAilmentsChance"
+            }
+          }
+        ],
+        "ParticleList": [
+          {
+            "Particle": [
+              {
+                "$": {
+                  "Key": "Explosion",
+                  "Name": "U_Character_02.Vault.Vault_Explosion_01_Poison",
+                  "Direction": "0,0,1"
+                }
+              },
+              {
+                "$": {
+                  "Key": "Dash",
+                  "Name": "U_Character_02.Vault.Vault_Trail_01_Poison",
+                  "Direction": "0,1,0",
+                  "Bone": "Bip01 Spine2"
+                }
+              },
+              {
+                "$": {
+                  "Key": "DecoyStart",
+                  "Name": "U_Character_02.Vault.Vault_Decoy_Start_01_Poison",
+                  "Direction": "0,0,1",
+                  "Scale": "0.5"
+                }
+              },
+              {
+                "$": {
+                  "Key": "Mine",
+                  "Name": "U_Character_02.Vault.Vault_Mine_01_Poison",
+                  "Direction": "0,0,1"
+                }
+              }
+            ]
+          }
+        ],
+        "Specific_Vault": [
+          {
+            "$": {
+              "TrapName": "trap_player_vault_poison"
+            }
+          }
+        ],
+        "Damage_Conversion": [
+          {
+            "Entry": [
+              {
+                "$": {
+                  "From": "physical",
+                  "To": "shadow",
+                  "ConversionRate": "-100"
+                }
+              },
+              {
+                "$": {
+                  "From": "physical",
+                  "To": "poison",
+                  "ConversionRate": "100"
+                }
+              }
+            ]
+          }
+        ],
+        "StatusAilment": [
+          {
+            "poison": [
+              {
+                "$": {
+                  "Stacks": "1",
+                  "StacksMode": "AddToBase"
+                }
+              }
+            ]
+          }
+        ],
+        "WeaponRequirements": [
+          {
+            "$": {
+              "Requirements": "rogue,poison"
+            }
+          }
+        ],
+        "Projectile": [
+          {
+            "$": {
+              "Name": "player_vault_proj_poison"
+            }
+          }
+        ]
+      },
+      {
+        "$": {
+          "UID": "player_Vault_variant_16",
+          "ESkill": "default_variant"
+        },
+        "HUD": [
+          {
+            "$": {
+              "UIName": "@ui_Variant_Vault_variant_16",
+              "Lore": "",
+              "HUDPictureVariant_Normal": "../u_resources/spells/variants/normal_activation_001.png",
+              "HUDPictureVariant_Hover": "../u_resources/spells/variants/normal_hover_001.png",
+              "HUDPictureVariant_Selected": "../u_resources/spells/variants/normal_clicked_001.png",
+              "HUDPictureVariant_NotEnoughPoints": "../u_resources/spells/variants/locked_points_001.png",
+              "HUDPictureVariant_InvalidLevel": "../u_resources/spells/variants/locked_levels_001.png",
+              "ShowParamsInTooltip": "SpecificVault,Cooldown"
+            }
+          }
+        ],
+        "Cooldown": [
+          {
+            "$": {
+              "Cooldown": "-2",
+              "CooldownPerLevel": "0"
+            }
+          }
+        ]
+      },
+      {
+        "$": {
+          "UID": "player_Vault_variant_11,player_Vault_variant_15",
+          "ESkill": "default_variant_combo"
+        },
+        "ParticleList": [
+          {
+            "Particle": [
+              {
+                "$": {
+                  "Key": "Explosion",
+                  "Name": "U_Character_02.Vault.Vault_Explosion_01_Loop_Poison",
+                  "Direction": "0,0,1"
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "$": {
+          "UID": "player_Vault_variant_8,player_Vault_variant_15",
+          "ESkill": "default_variant_combo"
+        },
+        "Projectile": [
+          {
+            "$": {
+              "Name": "player_vault_proj_poison_mine"
+            }
+          }
+        ]
+      }
+    ]
+  }
+}
