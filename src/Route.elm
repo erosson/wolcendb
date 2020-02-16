@@ -13,6 +13,10 @@ type Route
     | Shields
     | Armors
     | Accessories
+    | Weapon String
+    | Shield String
+    | Armor String
+    | Accessory String
     | UniqueWeapons
     | UniqueShields
     | UniqueArmors
@@ -38,6 +42,10 @@ parser =
         , P.map Shields <| P.s "loot" </> P.s "shield"
         , P.map Armors <| P.s "loot" </> P.s "armor"
         , P.map Accessories <| P.s "loot" </> P.s "accessory"
+        , P.map Weapon <| P.s "loot" </> P.s "weapon" </> P.string
+        , P.map Shield <| P.s "loot" </> P.s "shield" </> P.string
+        , P.map Armor <| P.s "loot" </> P.s "armor" </> P.string
+        , P.map Accessory <| P.s "loot" </> P.s "accessory" </> P.string
         , P.map UniqueWeapons <| P.s "loot" </> P.s "unique" </> P.s "weapon"
         , P.map UniqueShields <| P.s "loot" </> P.s "unique" </> P.s "shield"
         , P.map UniqueArmors <| P.s "loot" </> P.s "unique" </> P.s "armor"
@@ -68,6 +76,18 @@ toString r =
 
         Accessories ->
             "/loot/accessory"
+
+        Weapon id ->
+            "/loot/weapon/" ++ id
+
+        Shield id ->
+            "/loot/shield/" ++ id
+
+        Armor id ->
+            "/loot/armor/" ++ id
+
+        Accessory id ->
+            "/loot/accessory/" ++ id
 
         UniqueWeapons ->
             "/loot/unique/weapon"

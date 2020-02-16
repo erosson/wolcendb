@@ -9,8 +9,11 @@ import Html.Attributes as A exposing (..)
 import Html.Events as E exposing (..)
 import Maybe.Extra
 import Page.Accessories
+import Page.Accessory
+import Page.Armor
 import Page.Armors
 import Page.Home
+import Page.Shield
 import Page.Shields
 import Page.Skill
 import Page.Skills
@@ -22,6 +25,7 @@ import Page.UniqueShield
 import Page.UniqueShields
 import Page.UniqueWeapon
 import Page.UniqueWeapons
+import Page.Weapon
 import Page.Weapons
 import Route exposing (Route)
 import Url exposing (Url)
@@ -132,6 +136,22 @@ viewBody mmodel =
 
                         Route.Accessories ->
                             Page.Accessories.view model.datamine
+
+                        Route.Weapon name ->
+                            Page.Weapon.view model.datamine name
+                                |> Maybe.withDefault viewNotFound
+
+                        Route.Shield name ->
+                            Page.Shield.view model.datamine name
+                                |> Maybe.withDefault viewNotFound
+
+                        Route.Armor name ->
+                            Page.Armor.view model.datamine name
+                                |> Maybe.withDefault viewNotFound
+
+                        Route.Accessory name ->
+                            Page.Accessory.view model.datamine name
+                                |> Maybe.withDefault viewNotFound
 
                         Route.UniqueWeapons ->
                             Page.UniqueWeapons.view model.datamine

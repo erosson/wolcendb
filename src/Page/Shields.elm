@@ -22,7 +22,6 @@ view dm =
             [ thead []
                 [ tr []
                     [ th [] [ text "name" ]
-                    , th [] [ text "id" ]
                     , th [] [ text "keywords" ]
                     ]
                 ]
@@ -32,8 +31,9 @@ view dm =
                         (\w ->
                             tr []
                                 [ td []
-                                    [ Datamine.lang dm w.uiName |> Maybe.withDefault "???" |> text ]
-                                , td [] [ text w.name ]
+                                    [ a [ Route.href <| Route.Shield w.name ]
+                                        [ Datamine.lang dm w.uiName |> Maybe.withDefault "???" |> text ]
+                                    ]
                                 , td [] [ text <| String.join ", " w.keywords ]
                                 ]
                         )
