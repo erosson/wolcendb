@@ -27,6 +27,7 @@ type Route
     | UniqueAccessory String
     | Skills
     | Skill String
+    | Affixes
 
 
 parse : Url -> Maybe Route
@@ -56,6 +57,7 @@ parser =
         , P.map UniqueAccessory <| P.s "loot" </> P.s "unique" </> P.s "accessory" </> P.string
         , P.map Skills <| P.s "skill"
         , P.map Skill <| P.s "skill" </> P.string
+        , P.map Affixes <| P.s "affix"
         ]
 
 
@@ -118,6 +120,9 @@ toString r =
 
         Skill s ->
             "/skill/" ++ s
+
+        Affixes ->
+            "/affix"
 
 
 href : Route -> Html.Attribute msg

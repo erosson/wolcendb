@@ -1,19 +1,47 @@
-module View.Affix exposing (viewAffixIds, viewAffixes)
+module View.Affix exposing
+    ( viewAffix
+    , viewAffixes
+    , viewItem
+    , viewMagicId
+    , viewMagicIds
+    , viewNonmagicId
+    , viewNonmagicIds
+    )
 
-import Datamine exposing (Affix, Datamine, MagicEffect, Range)
+import Datamine exposing (Affix, Datamine, MagicAffix, MagicEffect, Range)
 import Html as H exposing (..)
 import Html.Attributes as A exposing (..)
 import Html.Events as E exposing (..)
 
 
-viewAffixIds : Datamine -> List String -> List (Html msg)
-viewAffixIds dm =
-    Datamine.affixes dm >> viewAffixes dm
+viewNonmagicIds : Datamine -> List String -> List (Html msg)
+viewNonmagicIds dm =
+    Datamine.nonmagicAffixes dm >> viewAffixes dm
 
 
-viewAffixes : Datamine -> List Affix -> List (Html msg)
+viewMagicIds : Datamine -> List String -> List (Html msg)
+viewMagicIds dm =
+    Datamine.magicAffixes dm >> viewAffixes dm
+
+
+viewAffixes : Datamine -> List (Affix a) -> List (Html msg)
 viewAffixes dm =
     List.concatMap .effects >> List.map (viewEffect dm >> li [ class "list-group-item" ])
+
+
+viewNonmagicId : Datamine -> String -> List (Html msg)
+viewNonmagicId dm a =
+    viewNonmagicIds dm [ a ]
+
+
+viewMagicId : Datamine -> String -> List (Html msg)
+viewMagicId dm a =
+    viewMagicIds dm [ a ]
+
+
+viewAffix : Datamine -> Affix a -> List (Html msg)
+viewAffix dm a =
+    viewAffixes dm [ a ]
 
 
 formatEffect : Datamine -> MagicEffect -> Maybe String
@@ -78,3 +106,119 @@ viewEffect dm effect =
         -- , text <| Debug.toString effect
         ]
     ]
+
+
+viewItem : Datamine -> List MagicAffix -> List (Html msg)
+viewItem dm affixes =
+    let
+        -- ( craftables, naturals ) =
+        ( craftables, affixes1 ) =
+            affixes
+                |> List.partition (\a -> a.drop.craftOnly)
+
+        ( sarisels, naturals ) =
+            affixes1
+                |> List.partition (\a -> a.drop.sarisel)
+
+        -- sarisels =
+        -- []
+        nTotal =
+            naturals
+                |> List.map (\a -> a.drop.frequency)
+                |> List.sum
+                |> Basics.max 1
+
+        sTotal =
+            sarisels
+                |> List.map (\a -> a.drop.frequency)
+                |> List.sum
+                |> Basics.max 1
+    in
+    [ div [ class "alert alert-warning" ]
+        [ text "Beware: affix possibilities below might be wrong - the developer isn't completely sure how they work yet. "
+        , a [ href "https://gitlab.com/erosson/wolcendb/issues" ] [ text "Please file an issue if these are wrong!" ]
+        ]
+    , table [ class "table" ]
+        [ thead []
+            [ tr []
+                [ th [] [ text "Possible magic affixes" ]
+                , th [] [ text "class" ]
+                , th [] [ text "tier" ]
+                , th [] [ text "weight" ]
+                , th [] [ text "type" ]
+                ]
+            ]
+        , tbody []
+            (naturals
+                |> List.map
+                    (\affix ->
+                        tr []
+                            [ td [] [ ul [ class "affixes nowrap" ] <| viewAffix dm affix ]
+                            , td [] [ text <| Maybe.withDefault "???" affix.class ]
+                            , td [] [ text <| String.fromInt affix.tier ]
+                            , td [] [ viewWeight nTotal affix ]
+                            , td [] [ text affix.type_ ]
+                            ]
+                    )
+            )
+        ]
+    , if sarisels /= [] then
+        table [ class "table" ]
+            [ thead []
+                [ tr []
+                    [ th [] [ text "Possible Sarisel affixes" ]
+                    , th [] [ text "tier" ]
+                    , th [] [ text "weight" ]
+                    , th [] [ text "type" ]
+                    ]
+                ]
+            , tbody []
+                (sarisels
+                    |> List.map
+                        (\affix ->
+                            tr []
+                                [ td [] [ ul [ class "affixes nowrap" ] <| viewAffix dm affix ]
+                                , td [] [ text <| String.fromInt affix.tier ]
+                                , td [] [ viewWeight sTotal affix ]
+                                , td [] [ text affix.type_ ]
+                                ]
+                        )
+                )
+            ]
+
+      else
+        div [] []
+    , table [ class "table" ]
+        [ thead []
+            [ tr []
+                [ th [] [ text "Craftable magic affixes" ]
+                , th [] [ text "class" ]
+                , th [] [ text "tier" ]
+                , th [] [ text "type" ]
+                ]
+            ]
+        , tbody []
+            (craftables
+                |> List.map
+                    (\affix ->
+                        tr []
+                            [ td [] [ ul [ class "affixes nowrap" ] <| viewAffix dm affix ]
+                            , td [] [ text <| Maybe.withDefault "???" affix.class ]
+                            , td [] [ text <| String.fromInt affix.tier ]
+                            , td [] [ text affix.type_ ]
+                            ]
+                    )
+            )
+        ]
+    ]
+
+
+viewWeight : Int -> MagicAffix -> Html msg
+viewWeight totalWeight affix =
+    span [ title <| String.fromInt affix.drop.frequency ++ "/" ++ String.fromInt totalWeight ]
+        [ text <| percent <| toFloat affix.drop.frequency / toFloat totalWeight ]
+
+
+percent : Float -> String
+percent p =
+    (p * 100 |> String.fromFloat |> String.left 5) ++ "%"

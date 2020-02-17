@@ -10,6 +10,7 @@ import Html.Events as E exposing (..)
 import Maybe.Extra
 import Page.Accessories
 import Page.Accessory
+import Page.Affixes
 import Page.Armor
 import Page.Armors
 import Page.Home
@@ -187,6 +188,9 @@ viewBody mmodel =
                         Route.Skill s ->
                             Page.Skill.view model.datamine s
                                 |> Maybe.withDefault viewNotFound
+
+                        Route.Affixes ->
+                            Page.Affixes.view model.datamine
 
 
 viewNotFound =

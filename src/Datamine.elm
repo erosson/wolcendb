@@ -2,12 +2,17 @@ module Datamine exposing
     ( Affix
     , Datamine
     , Flag
+    , Item
+    , MagicAffix
     , MagicEffect
+    , NonmagicAffix
     , Range
-    , affixes
     , decode
+    , itemAffixes
     , lang
+    , magicAffixes
     , mlang
+    , nonmagicAffixes
     )
 
 {-| Import JSON files from the `datamine` directory.
@@ -26,6 +31,7 @@ import Dict.Extra
 import Json.Decode as D
 import Json.Decode.Pipeline as P
 import Result.Extra
+import Set exposing (Set)
 
 
 type alias Flag =
@@ -36,8 +42,14 @@ type alias Datamine =
     { loot : Loot
     , skills : List Skill
     , skillASTs : List SkillAST
-    , affixes : List Affix
+    , affixes : Affixes
     , en : Dict String String
+    }
+
+
+type alias Affixes =
+    { magic : List MagicAffix
+    , nonmagic : List NonmagicAffix
     }
 
 
@@ -87,6 +99,16 @@ type alias Accessory =
     , levelPrereq : Maybe Int
     , keywords : List String
     , implicitAffixes : List String
+    }
+
+
+type alias Item i =
+    { i
+        | name : String
+        , uiName : String
+        , levelPrereq : Maybe Int
+        , keywords : List String
+        , implicitAffixes : List String
     }
 
 
@@ -168,9 +190,43 @@ type alias SkillASTVariant =
     }
 
 
-type alias Affix =
+type alias MagicAffix =
     { affixId : String
+    , filename : String
+    , class : Maybe String
+    , type_ : String
+    , tier : Int
     , effects : List MagicEffect
+    , drop : DropParams
+    }
+
+
+type alias DropParams =
+    { frequency : Int
+    , craftOnly : Bool
+
+    -- what the hell is this one?
+    , sarisel : Bool
+    , itemLevel : Range Int
+    , optionalKeywords : List String
+    , mandatoryKeywords : List String
+    }
+
+
+{-| Implicit or unique affixes are much simplier
+-}
+type alias NonmagicAffix =
+    { affixId : String
+    , filename : String
+    , effects : List MagicEffect
+    }
+
+
+type alias Affix a =
+    { a
+        | affixId : String
+        , filename : String
+        , effects : List MagicEffect
     }
 
 
@@ -190,15 +246,58 @@ mlang dm =
     Maybe.andThen (lang dm)
 
 
+{-| Get all random magic affixes that this item can spawn.
+
+Includes craftable and sarisel affixes.
+
+TODO: I'm probably doing this wrong. Open questions:
+
+  - What are optional keywords and how do they work?
+      - I've assumed they do nothing, and only use mandatory keywords. This is probably wrong, but I'm not sure where to start with them!
+  - What are Sarisel affixes?
+      - I've assumed they're limited to a boss I haven't seen yet, and not part of the natural drop pool. They have much higher weights than other mods.
+  - How do affix level bounds work - do they interact with item.levelPrereq, or the ilvl of dropped items?
+      - Do Wolcen items even have ilvls? I have no idea, and need to play more to find out
+      - I've assumed they interact with item.levelPrereq, but this is likely wrong; an ilvl-ish system is very likely. Haven't played enough to disprove it though.
+  - What's item.class? Probably like poe modgroups where you can only spawn one mod from each group, right?
+
+-}
+itemAffixes : Datamine -> Item i -> List MagicAffix
+itemAffixes dm item =
+    let
+        keywordSet =
+            Set.fromList item.keywords
+
+        levelPrereq =
+            item.levelPrereq |> Maybe.withDefault 1
+    in
+    dm.affixes.magic
+        |> List.filter
+            (\a ->
+                (levelPrereq >= a.drop.itemLevel.min)
+                    && (levelPrereq <= a.drop.itemLevel.max)
+                    && List.all (\k -> Set.member k keywordSet) a.drop.mandatoryKeywords
+            )
+
+
+
+--- DECODING
+
+
 decode : Flag -> Result String Datamine
 decode =
     D.decodeValue jsonDecoder
         >> Result.mapError D.errorToString
 
 
-affixes : Datamine -> List String -> List Affix
-affixes dm =
-    List.filterMap (\id -> dm.affixes |> List.filter (\a -> a.affixId == id) |> List.head)
+nonmagicAffixes : Datamine -> List String -> List NonmagicAffix
+nonmagicAffixes dm =
+    List.filterMap (\id -> dm.affixes.nonmagic |> List.filter (\a -> a.affixId == id) |> List.head)
+
+
+magicAffixes : Datamine -> List String -> List MagicAffix
+magicAffixes dm =
+    List.filterMap (\id -> dm.affixes.magic |> List.filter (\a -> a.affixId == id) |> List.head)
 
 
 jsonDecoder : D.Decoder Datamine
@@ -230,23 +329,83 @@ jsonDecoder =
         rootLangDecoder
 
 
-rootAffixesDecoder : D.Decoder (List Affix)
+rootAffixesDecoder : D.Decoder Affixes
 rootAffixesDecoder =
-    D.keyValuePairs D.value
-        |> D.map (List.filter (Tuple.first >> String.contains "/Loot/MagicEffects/Affixes/"))
-        |> D.map (List.map (Tuple.second >> D.decodeValue affixesDecoder))
-        |> D.map (Result.Extra.combine >> Result.mapError D.errorToString)
-        |> resultDecoder
-        |> D.map List.concat
+    D.map2 Affixes
+        (D.keyValuePairs D.value
+            |> D.map
+                (List.filter
+                    (Tuple.first
+                        >> (\f ->
+                                String.contains "/Loot/MagicEffects/Affixes/Armors_Weapons/AffixesArmors" f
+                                    || String.contains "/Loot/MagicEffects/Affixes/Armors_Weapons/AffixesWeapons" f
+                                    || String.contains "/Loot/MagicEffects/Affixes/Armors_Weapons/AffixesAccessories" f
+                           )
+                    )
+                    >> Debug.log "magicaffixes"
+                )
+            |> D.map (List.map (\( filename, json ) -> D.decodeValue (magicAffixesDecoder filename) json))
+            |> D.map (Result.Extra.combine >> Result.mapError D.errorToString)
+            |> resultDecoder
+            |> D.map List.concat
+        )
+        (D.keyValuePairs D.value
+            |> D.map
+                (List.filter
+                    (Tuple.first
+                        >> (\f ->
+                                String.contains "/Loot/MagicEffects/Affixes/Armors_Weapons/AffixesImplicit" f
+                                    || String.contains "/Loot/MagicEffects/Affixes/Armors_Weapons/AffixesUniques" f
+                           )
+                    )
+                )
+            |> D.map (List.map (\( filename, json ) -> D.decodeValue (nonmagicAffixesDecoder filename) json))
+            |> D.map (Result.Extra.combine >> Result.mapError D.errorToString)
+            |> resultDecoder
+            |> D.map List.concat
+        )
 
 
-affixesDecoder : D.Decoder (List Affix)
-affixesDecoder =
-    D.succeed Affix
+nonmagicAffixesDecoder : String -> D.Decoder (List NonmagicAffix)
+nonmagicAffixesDecoder filename =
+    D.succeed NonmagicAffix
         |> P.requiredAt [ "$", "AffixId" ] D.string
+        |> P.custom (D.succeed filename)
         |> P.custom (magicEffectDecoder |> D.list |> D.at [ "MagicEffect" ])
         |> D.list
         |> D.at [ "MetaData", "Affix" ]
+
+
+magicAffixesDecoder : String -> D.Decoder (List MagicAffix)
+magicAffixesDecoder filename =
+    D.succeed MagicAffix
+        |> P.requiredAt [ "$", "AffixId" ] D.string
+        |> P.custom (D.succeed filename)
+        -- |> P.requiredAt [ "$", "Class" ] D.string
+        |> P.optionalAt [ "$", "Class" ] (D.string |> D.map Just) Nothing
+        |> P.requiredAt [ "$", "AffixType" ] D.string
+        -- |> P.optionalAt [ "$", "Tier" ] (intString |> D.map Just) Nothing
+        |> P.requiredAt [ "$", "Tier" ] intString
+        -- |> P.optionalAt [ "$", "AffixType" ] (D.string |> D.map Just) Nothing
+        |> P.custom (magicEffectDecoder |> D.list |> D.at [ "MagicEffect" ])
+        |> P.custom (dropParamsDecoder |> single |> D.at [ "DropParams" ])
+        |> D.list
+        |> D.at [ "MetaData", "Affix" ]
+
+
+dropParamsDecoder : D.Decoder DropParams
+dropParamsDecoder =
+    D.succeed DropParams
+        |> P.requiredAt [ "$", "Frequency" ] intString
+        |> P.optionalAt [ "$", "CraftOnly" ] boolString False
+        |> P.optionalAt [ "$", "Sarisel" ] boolString False
+        |> P.custom
+            (D.map2 Range
+                (D.at [ "ItemLevel", "0", "$", "LevelMin" ] intString)
+                (D.at [ "ItemLevel", "0", "$", "LevelMax" ] intString)
+            )
+        |> P.optionalAt [ "Keywords", "0", "$", "MandatoryKeywords" ] csStrings []
+        |> P.optionalAt [ "Keywords", "0", "$", "OptionalKeywords" ] csStrings []
 
 
 magicEffectDecoder : D.Decoder MagicEffect
@@ -573,6 +732,11 @@ floatString =
                     Just i ->
                         D.succeed i
             )
+
+
+boolString : D.Decoder Bool
+boolString =
+    D.string |> D.andThen (\s -> s /= "0" && s /= "" |> D.succeed)
 
 
 {-| Decode a list with exactly one item.

@@ -33,7 +33,8 @@ view dm name =
                     , p [] [ label ]
                     , p [] [ text "Level: ", text <| Maybe.Extra.unwrap "-" String.fromInt item.levelPrereq ]
                     , p [] [ text "Keywords: ", text <| String.join ", " item.keywords ]
-                    , ul [ class "list-group affixes" ] <| View.Affix.viewAffixIds dm item.implicitAffixes
+                    , ul [ class "list-group affixes" ] <| View.Affix.viewNonmagicIds dm item.implicitAffixes
+                    , div [] <| View.Affix.viewItem dm <| Datamine.itemAffixes dm item
                     ]
                 ]
             )
