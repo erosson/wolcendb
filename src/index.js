@@ -2,9 +2,6 @@ import '!!style-loader!css-loader!sass-loader!./main.scss';
 import { Elm } from './Main.elm';
 import * as serviceWorker from './serviceWorker';
 import datamine from '../datamine/imports'
-// import enLoot from '!!raw-loader!../datamine/localization/text_ui_Loot.xml'
-import enLoot from '!!json-loader!@erosson/xlsx-loader!../datamine/localization/text_ui_Loot.xml'
-// import Passives from '../datamine/Game/Umbra/Skills/Trees/PassivesSkills/'
 console.dir(datamine)
 
 Elm.Main.init({
