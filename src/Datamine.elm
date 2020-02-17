@@ -7,6 +7,7 @@ module Datamine exposing
     , MagicEffect
     , NonmagicAffix
     , Range
+    , Rarity
     , decode
     , itemAffixes
     , lang
@@ -233,6 +234,15 @@ type alias DropParams =
     , itemLevel : Range Int
     , optionalKeywords : List String
     , mandatoryKeywords : List String
+    , rarity : Rarity
+    }
+
+
+type alias Rarity =
+    { magic : Bool
+    , rare : Bool
+    , set : Bool
+    , legendary : Bool
     }
 
 
@@ -460,6 +470,16 @@ dropParamsDecoder =
             )
         |> P.optionalAt [ "Keywords", "0", "$", "MandatoryKeywords" ] csStrings []
         |> P.optionalAt [ "Keywords", "0", "$", "OptionalKeywords" ] csStrings []
+        |> P.requiredAt [ "ItemRarity", "0" ] rarityDecoder
+
+
+rarityDecoder : D.Decoder Rarity
+rarityDecoder =
+    D.succeed Rarity
+        |> P.optionalAt [ "$", "Magic" ] boolString False
+        |> P.optionalAt [ "$", "Rare" ] boolString False
+        |> P.optionalAt [ "$", "Set" ] boolString False
+        |> P.optionalAt [ "$", "Legendary" ] boolString False
 
 
 magicEffectDecoder : D.Decoder MagicEffect

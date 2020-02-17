@@ -42,7 +42,8 @@ view dm =
                     , th [ class "sticky" ] [ text "mandatoryKeywords" ]
                     , th [ class "sticky" ] [ text "optionalKeywords" ]
                     , th [ class "sticky" ] [ text "frequency" ]
-                    , th [ class "sticky" ] [ text "craftOnly" ]
+                    , th [ class "sticky" ] [ text "rarity" ]
+                    , th [ class "sticky" ] [ text "craftOnly?" ]
                     , th [ class "sticky" ] [ text "sarisel?" ]
                     , th [ class "sticky" ] [ text "type" ]
                     ]
@@ -64,22 +65,9 @@ view dm =
                                 , td [] [ text <| String.join ", " a.drop.mandatoryKeywords ]
                                 , td [] [ text <| String.join ", " a.drop.optionalKeywords ]
                                 , td [] [ text <| String.fromInt a.drop.frequency ]
-                                , td []
-                                    [ text <|
-                                        if a.drop.craftOnly then
-                                            "CraftOnly"
-
-                                        else
-                                            "-"
-                                    ]
-                                , td []
-                                    [ text <|
-                                        if a.drop.sarisel then
-                                            "Sarisel?"
-
-                                        else
-                                            "-"
-                                    ]
+                                , td [] [ text <| View.Affix.formatRarity a.drop.rarity ]
+                                , td [] [ text <| ifval a.drop.craftOnly "CraftOnly" "-" ]
+                                , td [] [ text <| ifval a.drop.sarisel "Sarisel" "-" ]
                                 , td [] [ text a.type_ ]
                                 ]
                         )
@@ -87,3 +75,12 @@ view dm =
             ]
         ]
     ]
+
+
+ifval : Bool -> a -> a -> a
+ifval pred t f =
+    if pred then
+        t
+
+    else
+        f

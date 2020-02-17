@@ -1,5 +1,6 @@
 module View.Affix exposing
-    ( viewAffix
+    ( formatRarity
+    , viewAffix
     , viewAffixes
     , viewItem
     , viewMagicId
@@ -8,7 +9,7 @@ module View.Affix exposing
     , viewNonmagicIds
     )
 
-import Datamine exposing (Affix, Datamine, MagicAffix, MagicEffect, Range)
+import Datamine exposing (Affix, Datamine, MagicAffix, MagicEffect, Range, Rarity)
 import Html as H exposing (..)
 import Html.Attributes as A exposing (..)
 import Html.Events as E exposing (..)
@@ -146,6 +147,7 @@ viewItem dm affixes =
                 , th [] [ text "tier" ]
                 , th [] [ text "weight" ]
                 , th [] [ text "type" ]
+                , th [] [ text "rarity" ]
                 ]
             ]
         , tbody []
@@ -158,6 +160,7 @@ viewItem dm affixes =
                             , td [] [ text <| String.fromInt affix.tier ]
                             , td [] [ viewWeight nTotal affix ]
                             , td [] [ text affix.type_ ]
+                            , td [] [ text <| formatRarity affix.drop.rarity ]
                             ]
                     )
             )
@@ -170,6 +173,8 @@ viewItem dm affixes =
                     , th [] [ text "tier" ]
                     , th [] [ text "weight" ]
                     , th [] [ text "type" ]
+
+                    -- , th [] [ text "rarity" ]
                     ]
                 ]
             , tbody []
@@ -181,6 +186,8 @@ viewItem dm affixes =
                                 , td [] [ text <| String.fromInt affix.tier ]
                                 , td [] [ viewWeight sTotal affix ]
                                 , td [] [ text affix.type_ ]
+
+                                -- , td [] [ text <| formatRarity affix.drop.rarity ]
                                 ]
                         )
                 )
@@ -222,3 +229,19 @@ viewWeight totalWeight affix =
 percent : Float -> String
 percent p =
     (p * 100 |> String.fromFloat |> String.left 5) ++ "%"
+
+
+formatRarity : Rarity -> String
+formatRarity r =
+    [ ( r.magic, "Magic" )
+    , ( r.rare, "Rare" )
+    , ( r.set, "Set" )
+    , ( r.legendary, "Legendary" )
+    ]
+        |> List.filter Tuple.first
+        |> List.map Tuple.second
+        |> String.join ", "
+
+
+
+-- |> (++) (Debug.toString r)
