@@ -11,9 +11,9 @@ const dest = "datamine/"
 function main() {
   Promise.all([
     glob(prefix + "localization/text_ui_{Loot,Activeskills,EIM}.xml", null),
-    glob(prefix + "Game/Umbra/Loot/Armors/{Armors,Accessories,Armors_unique,UniquesAccessories}*", null),
+    glob(prefix + "Game/Umbra/Loot/Armors/{Armors,Accessories,Armors_unique,UniquesAccessories,UniqueArmors}*", null),
     glob(prefix + "Game/Umbra/Loot/Weapons/{Unique,}{Weapons,Shields}*", null),
-    glob(prefix + "Game/Umbra/Loot/MagicEffects/Affixes/Armors_Weapons/Affixes{Implicit,Uniques}.xml", null),
+    glob(prefix + "Game/Umbra/Loot/MagicEffects/Affixes/Armors_Weapons/Affixes{Implicit,Uniques,Armors,Weapons\.,Accessories}*", null),
     glob(prefix + "Game/Umbra/Skills/NewSkills/Player/Player_*", null),
     glob(prefix + "Game/Umbra/Skills/Trees/ActiveSkills/*.xml", null),
   ])
