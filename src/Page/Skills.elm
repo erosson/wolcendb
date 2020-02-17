@@ -9,6 +9,7 @@ import Maybe.Extra
 import Route exposing (Route)
 import View.Desc
 import View.Nav
+import View.Skill
 
 
 view : Datamine -> List (Html msg)
@@ -22,9 +23,11 @@ view dm =
         , table [ class "table" ]
             [ thead []
                 [ tr []
-                    [ th [] [ text "name" ]
+                    [ th [] [ text "icon" ]
+                    , th [] [ text "name" ]
                     , th [] [ text "desc" ]
-                    , th [] [ text "lore" ]
+
+                    -- , th [] [ text "lore" ]
                     ]
                 ]
             , tbody []
@@ -32,12 +35,21 @@ view dm =
                     |> List.map
                         (\s ->
                             tr []
-                                [ td [ title s.uiName ]
-                                    [ a [ Route.href <| Route.Skill s.uid ] [ Datamine.lang dm s.uiName |> Maybe.withDefault "???" |> text ] ]
+                                [ td []
+                                    [ a [ Route.href <| Route.Skill s.uid ]
+                                        [ img [ class "skill-icon", View.Skill.img s ] []
+                                        ]
+                                    ]
+                                , td [ title s.uiName ]
+                                    [ a [ Route.href <| Route.Skill s.uid ]
+                                        [ Datamine.lang dm s.uiName |> Maybe.withDefault "???" |> text
+                                        ]
+                                    ]
                                 , td [ title <| s.uiName ++ "_desc" ]
                                     (View.Desc.desc dm (s.uiName ++ "_desc") |> Maybe.withDefault [ text "???" ])
-                                , td [ title <| Maybe.withDefault "" s.lore ]
-                                    (View.Desc.mdesc dm s.lore |> Maybe.withDefault [ text "???" ])
+
+                                -- , td [ title <| Maybe.withDefault "" s.lore ]
+                                -- (View.Desc.mdesc dm s.lore |> Maybe.withDefault [ text "???" ])
                                 ]
                         )
                 )

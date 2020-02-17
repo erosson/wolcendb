@@ -9,6 +9,7 @@ import Maybe.Extra
 import Route exposing (Route)
 import View.Desc
 import View.Nav
+import View.Skill
 
 
 view : Datamine -> String -> Maybe (List (Html msg))
@@ -46,6 +47,7 @@ view dm uid =
                         , a [ class "breadcrumb-item active", Route.href Route.Skills ] [ text "Skills" ]
                         , a [ class "breadcrumb-item active", Route.href <| Route.Skill skill.uid ] [ text label ]
                         ]
+                    , img [ class "skill", View.Skill.img skill ] []
                     , p [] <| (View.Desc.desc dm (skill.uiName ++ "_desc") |> Maybe.withDefault [ text "???" ])
                     , p [] <| (View.Desc.mdesc dm skill.lore |> Maybe.withDefault [ text "???" ])
                     , table [ class "table" ]

@@ -58,6 +58,7 @@ function pngMain() {
     // from Libs_UI_*.pak
     glob(prefix + "Game/Libs/UI/u_resources/armors/**/*.png", null),
     glob(prefix + "Game/Libs/UI/u_resources/weapons/**/*.png", null),
+    glob(prefix + "Game/Libs/UI/u_resources/spells/Active_Skills/**/*.png", null),
   ])
   .then(flatten)
   .then(paths => paths.map(path => path.replace(/^datamine.tmp\//, '')))

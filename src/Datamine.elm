@@ -186,6 +186,7 @@ type alias Range a =
 type alias Skill =
     { uid : String
     , uiName : String
+    , hudPicture : String
     , lore : Maybe String
     , keywords : List String
     , variants : List SkillVariant
@@ -545,6 +546,7 @@ skillsDecoder =
 type alias SkillDecoder =
     { uid : String
     , uiName : Maybe String
+    , hudPicture : Maybe String
     , lore : Maybe String
     , keywords : Maybe (List String)
     }
@@ -558,6 +560,7 @@ skillDecoder =
     D.succeed SkillDecoder
         |> P.requiredAt [ "$", "UID" ] D.string
         |> P.optionalAt [ "HUD", "0", "$", "UIName" ] (D.string |> D.map Just) Nothing
+        |> P.optionalAt [ "HUD", "0", "$", "HUDPicture" ] (D.string |> D.map Just) Nothing
         |> P.optionalAt [ "HUD", "0", "$", "Lore" ] (D.string |> D.map Just) Nothing
         |> P.optionalAt [ "HUD", "0", "$", "Keywords" ] (csStrings |> D.map Just) Nothing
         |> D.list
@@ -566,15 +569,13 @@ skillDecoder =
             (\els ->
                 case els of
                     s :: vs ->
-                        case s.uiName of
-                            Nothing ->
-                                D.fail <| "no skill.uiname for skill: " ++ s.uid
-
-                            Just uiName ->
+                        case ( s.uiName, s.hudPicture ) of
+                            ( Just uiName, Just hudPicture ) ->
                                 D.succeed
                                     { uid = s.uid
                                     , uiName = uiName
                                     , lore = s.lore
+                                    , hudPicture = hudPicture
                                     , keywords = s.keywords |> Maybe.withDefault []
                                     , variants =
                                         vs
@@ -590,6 +591,12 @@ skillDecoder =
                                                         v.uiName
                                                 )
                                     }
+
+                            ( Nothing, _ ) ->
+                                D.fail <| "no skill.uiname for skill: " ++ s.uid
+
+                            ( _, Nothing ) ->
+                                D.fail <| "no skill.hudPicture for skill: " ++ s.uid
 
                     [] ->
                         D.fail "skill has no instances"
