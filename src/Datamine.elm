@@ -342,7 +342,6 @@ rootAffixesDecoder =
                                     || String.contains "/Loot/MagicEffects/Affixes/Armors_Weapons/AffixesAccessories" f
                            )
                     )
-                    >> Debug.log "magicaffixes"
                 )
             |> D.map (List.map (\( filename, json ) -> D.decodeValue (magicAffixesDecoder filename) json))
             |> D.map (Result.Extra.combine >> Result.mapError D.errorToString)
