@@ -31,6 +31,7 @@ view dm name =
                         , a [ class "breadcrumb-item active", Route.href <| Route.UniqueWeapon item.name ] [ label ]
                         ]
                     , p [] [ label ]
+                    , p [] [ text "Level: ", text <| Maybe.Extra.unwrap "-" String.fromInt item.levelPrereq ]
                     , p []
                         [ text "Damage: "
                         , Maybe.Extra.unwrap "?" String.fromInt item.damage.min

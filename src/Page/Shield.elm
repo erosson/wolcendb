@@ -31,6 +31,7 @@ view dm name =
                         , a [ class "breadcrumb-item active", Route.href <| Route.Shield item.name ] [ label ]
                         ]
                     , p [] [ label ]
+                    , p [] [ text "Level: ", text <| Maybe.Extra.unwrap "-" String.fromInt item.levelPrereq ]
                     , p [] [ text "Keywords: ", text <| String.join ", " item.keywords ]
                     , ul [ class "list-group affixes" ] <| View.Affix.viewAffixIds dm item.implicitAffixes
                     ]

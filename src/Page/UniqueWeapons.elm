@@ -24,6 +24,7 @@ view dm =
             [ thead []
                 [ tr []
                     [ th [] [ text "name" ]
+                    , th [] [ text "level" ]
                     , th [] [ text "damage" ]
                     , th [] [ text "keywords" ]
                     ]
@@ -38,6 +39,7 @@ view dm =
                                     [ a [ Route.href <| Route.UniqueWeapon w.name ]
                                         [ Datamine.lang dm w.uiName |> Maybe.withDefault "???" |> text ]
                                     ]
+                                , td [] [ text <| Maybe.Extra.unwrap "-" String.fromInt w.levelPrereq ]
                                 , td []
                                     [ Maybe.Extra.unwrap "?" String.fromInt w.damage.min
                                         ++ "-"

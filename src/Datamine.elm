@@ -56,6 +56,7 @@ type alias Loot =
 type alias Weapon =
     { name : String
     , uiName : String
+    , levelPrereq : Maybe Int
     , keywords : List String
     , implicitAffixes : List String
     , damage : Range (Maybe Int)
@@ -65,6 +66,7 @@ type alias Weapon =
 type alias Shield =
     { name : String
     , uiName : String
+    , levelPrereq : Maybe Int
     , keywords : List String
     , implicitAffixes : List String
     }
@@ -73,6 +75,7 @@ type alias Shield =
 type alias Armor =
     { name : String
     , uiName : String
+    , levelPrereq : Maybe Int
     , keywords : List String
     , implicitAffixes : List String
     }
@@ -81,6 +84,7 @@ type alias Armor =
 type alias Accessory =
     { name : String
     , uiName : String
+    , levelPrereq : Maybe Int
     , keywords : List String
     , implicitAffixes : List String
     }
@@ -89,6 +93,7 @@ type alias Accessory =
 type alias UniqueWeapon =
     { name : String
     , uiName : String
+    , levelPrereq : Maybe Int
     , keywords : List String
     , implicitAffixes : List String
     , defaultAffixes : List String
@@ -100,6 +105,7 @@ type alias UniqueWeapon =
 type alias UniqueShield =
     { name : String
     , uiName : String
+    , levelPrereq : Maybe Int
     , keywords : List String
     , implicitAffixes : List String
     , defaultAffixes : List String
@@ -110,6 +116,7 @@ type alias UniqueShield =
 type alias UniqueArmor =
     { name : String
     , uiName : String
+    , levelPrereq : Maybe Int
     , keywords : List String
     , implicitAffixes : List String
     , defaultAffixes : List String
@@ -120,6 +127,7 @@ type alias UniqueArmor =
 type alias UniqueAccessory =
     { name : String
     , uiName : String
+    , levelPrereq : Maybe Int
     , keywords : List String
     , implicitAffixes : List String
     , defaultAffixes : List String
@@ -202,8 +210,20 @@ jsonDecoder =
             (D.field "Game/Umbra/Loot/Armors/Armors.json" armorsDecoder)
             (D.field "Game/Umbra/Loot/Armors/Accessories.json" accessoriesDecoder)
             (D.field "Game/Umbra/Loot/Weapons/UniqueWeapons.json" uniqueWeaponsDecoder)
+            --(D.map3 (\u um umm -> u ++ um ++ umm)
+            --    (D.field "Game/Umbra/Loot/Weapons/UniqueWeapons.json" uniqueWeaponsDecoder)
+            --    (D.field "Game/Umbra/Loot/Weapons/UniqueWeaponsMax.json" uniqueWeaponsDecoder)
+            --    (D.field "Game/Umbra/Loot/Weapons/UniqueWeaponsMaxMax.json" uniqueWeaponsDecoder)
+            --)
+            -- no max versions for shields
             (D.field "Game/Umbra/Loot/Weapons/UniqueShields.json" uniqueShieldsDecoder)
             (D.field "Game/Umbra/Loot/Armors/Armors_uniques.json" uniqueArmorsDecoder)
+            --(D.map3 (\u um umm -> u ++ um ++ umm)
+            --    (D.field "Game/Umbra/Loot/Armors/Armors_uniques.json" uniqueArmorsDecoder)
+            --    (D.field "Game/Umbra/Loot/Armors/UniqueArmorsMax.json" uniqueArmorsDecoder)
+            --    (D.field "Game/Umbra/Loot/Armors/UniqueArmorsMaxMax.json" uniqueArmorsDecoder)
+            --)
+            -- no max versions for accessories
             (D.field "Game/Umbra/Loot/Armors/UniquesAccessories.json" uniqueAccessoriesDecoder)
         )
         skillsDecoder
@@ -497,6 +517,7 @@ uniqueAccessoriesDecoder =
 commonLootDecoder =
     P.requiredAt [ "$", "Name" ] D.string
         >> P.requiredAt [ "$", "UIName" ] D.string
+        >> P.optionalAt [ "$", "LevelPrereq" ] (intString |> D.map Just) Nothing
         >> P.requiredAt [ "$", "Keywords" ] csStrings
         >> P.optionalAt [ "$", "ImplicitAffixes" ] csStrings []
 

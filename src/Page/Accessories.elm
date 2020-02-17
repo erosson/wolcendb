@@ -22,6 +22,7 @@ view dm =
             [ thead []
                 [ tr []
                     [ th [] [ text "name" ]
+                    , th [] [ text "level" ]
                     , th [] [ text "keywords" ]
                     ]
                 ]
@@ -34,6 +35,7 @@ view dm =
                                     [ a [ Route.href <| Route.Accessory w.name ]
                                         [ Datamine.lang dm w.uiName |> Maybe.withDefault "???" |> text ]
                                     ]
+                                , td [] [ text <| Maybe.Extra.unwrap "-" String.fromInt w.levelPrereq ]
                                 , td [] [ text <| String.join ", " w.keywords ]
                                 ]
                         )
