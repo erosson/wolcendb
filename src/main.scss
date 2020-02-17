@@ -63,3 +63,14 @@ th.sticky {
 .nowrap {
   white-space: nowrap;
 }
+.item {
+  display: inline-block;
+}
+.item img {
+  // transform: scale(0.3);
+  width: 30%;
+}
+.item-icon {
+  height: 1em;
+  max-width: 1.5em;
+}

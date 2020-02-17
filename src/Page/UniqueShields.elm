@@ -9,6 +9,7 @@ import Maybe.Extra
 import Route exposing (Route)
 import View.Affix
 import View.Desc
+import View.Item
 import View.Nav
 
 
@@ -36,7 +37,9 @@ view dm =
                             tr []
                                 [ td []
                                     [ a [ Route.href <| Route.UniqueShield w.name ]
-                                        [ Datamine.lang dm w.uiName |> Maybe.withDefault "???" |> text ]
+                                        [ img [ class "item-icon", View.Item.imgWeapon dm w ] []
+                                        , Datamine.lang dm w.uiName |> Maybe.withDefault "???" |> text
+                                        ]
                                     ]
                                 , td [] [ text <| Maybe.Extra.unwrap "-" String.fromInt w.levelPrereq ]
                                 , td [] [ text <| String.join ", " w.keywords ]

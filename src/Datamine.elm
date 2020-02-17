@@ -43,6 +43,8 @@ type alias Datamine =
     , skills : List Skill
     , skillASTs : List SkillAST
     , affixes : Affixes
+    , cosmeticTransferTemplates : Dict String CCosmeticTransferTemplate
+    , cosmeticWeaponDescriptors : Dict String CCosmeticWeaponDescriptor
     , en : Dict String String
     }
 
@@ -90,6 +92,7 @@ type alias Armor =
     , levelPrereq : Maybe Int
     , keywords : List String
     , implicitAffixes : List String
+    , attachmentName : String
     }
 
 
@@ -99,6 +102,7 @@ type alias Accessory =
     , levelPrereq : Maybe Int
     , keywords : List String
     , implicitAffixes : List String
+    , hudPicture : String
     }
 
 
@@ -143,6 +147,7 @@ type alias UniqueArmor =
     , implicitAffixes : List String
     , defaultAffixes : List String
     , lore : Maybe String
+    , attachmentName : Maybe String
     }
 
 
@@ -154,6 +159,23 @@ type alias UniqueAccessory =
     , implicitAffixes : List String
     , defaultAffixes : List String
     , lore : Maybe String
+    , hudPicture : String
+    }
+
+
+{-| where weapon icons come from
+-}
+type alias CCosmeticWeaponDescriptor =
+    { name : String
+    , hudPicture : String
+    }
+
+
+{-| where armor icons come from
+-}
+type alias CCosmeticTransferTemplate =
+    { name : String
+    , hudPicture : String
     }
 
 
@@ -302,7 +324,7 @@ magicAffixes dm =
 
 jsonDecoder : D.Decoder Datamine
 jsonDecoder =
-    D.map5 Datamine
+    D.map7 Datamine
         (D.map8 Loot
             (D.field "Game/Umbra/Loot/Weapons/Weapons.json" weaponsDecoder)
             (D.field "Game/Umbra/Loot/Weapons/Shields.json" shieldsDecoder)
@@ -326,7 +348,39 @@ jsonDecoder =
         skillsDecoder
         skillASTsDecoder
         rootAffixesDecoder
+        cosmeticTransferTemplateDecoder
+        cosmeticWeaponDescriptorDecoder
         rootLangDecoder
+
+
+cosmeticTransferTemplateDecoder : D.Decoder (Dict String CCosmeticTransferTemplate)
+cosmeticTransferTemplateDecoder =
+    D.map2 CCosmeticTransferTemplate
+        (D.at [ "$", "name" ] D.string)
+        (D.at [ "$", "hud_picture" ] D.string)
+        |> D.maybe
+        |> D.list
+        |> D.map (List.filterMap identity)
+        |> D.at
+            [ "Game/Umbra/SkinParams/TransferTemplate/TransferTemplateBank.json"
+            , "CCosmeticTransferTemplateBank"
+            , "CCosmeticTransferTemplate"
+            ]
+        |> D.map (Dict.Extra.fromListBy .name)
+
+
+cosmeticWeaponDescriptorDecoder : D.Decoder (Dict String CCosmeticWeaponDescriptor)
+cosmeticWeaponDescriptorDecoder =
+    D.map2 CCosmeticWeaponDescriptor
+        (D.at [ "$", "name" ] D.string)
+        (D.at [ "$", "hud_picture" ] D.string)
+        |> D.list
+        |> D.at
+            [ "Game/Umbra/SkinParams/WeaponSkins/CosmeticWeaponDescriptorBankGameplay.json"
+            , "CCosmeticWeaponDescriptorBank"
+            , "CCosmeticWeaponDescriptor"
+            ]
+        |> D.map (Dict.Extra.fromListBy .name)
 
 
 rootAffixesDecoder : D.Decoder Affixes
@@ -609,6 +663,7 @@ armorsDecoder : D.Decoder (List Armor)
 armorsDecoder =
     D.succeed Armor
         |> commonLootDecoder
+        |> P.requiredAt [ "$", "AttachmentName" ] D.string
         |> D.list
         |> D.field "Item"
         |> single
@@ -619,6 +674,7 @@ accessoriesDecoder : D.Decoder (List Accessory)
 accessoriesDecoder =
     D.succeed Accessory
         |> commonLootDecoder
+        |> P.requiredAt [ "$", "HUDPicture" ] D.string
         |> D.list
         |> D.field "Item"
         |> single
@@ -654,6 +710,7 @@ uniqueArmorsDecoder : D.Decoder (List UniqueArmor)
 uniqueArmorsDecoder =
     D.succeed UniqueArmor
         |> uniqueLootDecoder
+        |> P.optionalAt [ "$", "AttachmentName" ] (D.string |> D.map Just) Nothing
         |> D.list
         |> D.field "Item"
         |> single
@@ -664,6 +721,7 @@ uniqueAccessoriesDecoder : D.Decoder (List UniqueAccessory)
 uniqueAccessoriesDecoder =
     D.succeed UniqueAccessory
         |> uniqueLootDecoder
+        |> P.requiredAt [ "$", "HUDPicture" ] D.string
         |> D.list
         |> D.field "Item"
         |> single

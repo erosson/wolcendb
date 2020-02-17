@@ -7,15 +7,28 @@ const xml2js = require('xml2js')
 
 const prefix = "datamine.tmp/"
 const dest = "datamine/"
+const pngdest = "public/static/datamine/"
 
 function main() {
-  Promise.all([
+  return Promise.all([
+    xmlMain(),
+    pngMain(),
+  ])
+  .catch(err => {
+    console.error(err)
+    process.exit(1)
+  })
+}
+function xmlMain() {
+  return Promise.all([
     glob(prefix + "localization/text_ui_{Loot,Activeskills,EIM}.xml", null),
     glob(prefix + "Game/Umbra/Loot/Armors/{Armors,Accessories,Armors_unique,UniquesAccessories,UniqueArmors}*", null),
     glob(prefix + "Game/Umbra/Loot/Weapons/{Unique,}{Weapons,Shields}*", null),
     glob(prefix + "Game/Umbra/Loot/MagicEffects/Affixes/Armors_Weapons/Affixes{Implicit,Uniques,Armors,Weapons\.,Accessories}*", null),
     glob(prefix + "Game/Umbra/Skills/NewSkills/Player/Player_*", null),
     glob(prefix + "Game/Umbra/Skills/Trees/ActiveSkills/*.xml", null),
+    glob(prefix + "Game/Umbra/SkinParams/WeaponSkins/CosmeticWeaponDescriptorBankGameplay.xml", null),
+    glob(prefix + "Game/Umbra/SkinParams/TransferTemplate/TransferTemplateBank.xml", null),
   ])
   .then(groups => groups.map(group => group.map(path => path.replace(/^datamine.tmp\//, ''))))
   .then(groups => {
@@ -39,9 +52,20 @@ function main() {
       generateImports(groups),
     ]))
   })
-  .catch(err => {
-    console.error(err)
-    process.exit(1)
+}
+function pngMain() {
+  return Promise.all([
+    // from Libs_UI_*.pak
+    glob(prefix + "Game/Libs/UI/u_resources/armors/**/*.png", null),
+    glob(prefix + "Game/Libs/UI/u_resources/weapons/**/*.png", null),
+  ])
+  .then(flatten)
+  .then(paths => paths.map(path => path.replace(/^datamine.tmp\//, '')))
+  .then(paths => {
+    return Promise.all(paths.map(p =>
+      mkdirp(path.dirname(pngdest + p))
+    ))
+    .then(() => Promise.all(paths.map(p => fs.copyFile(prefix + p, pngdest + p))))
   })
 }
 function generateImports(groups) {

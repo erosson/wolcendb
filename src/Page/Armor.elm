@@ -9,6 +9,7 @@ import Maybe.Extra
 import Route exposing (Route)
 import View.Affix
 import View.Desc
+import View.Item
 import View.Nav
 
 
@@ -30,6 +31,7 @@ view dm name =
                         , a [ class "breadcrumb-item active", Route.href Route.Armors ] [ text "Armors" ]
                         , a [ class "breadcrumb-item active", Route.href <| Route.Armor item.name ] [ label ]
                         ]
+                    , span [ class "item" ] [ img [ View.Item.imgArmor dm item ] [] ]
                     , p [] [ label ]
                     , p [] [ text "Level: ", text <| Maybe.Extra.unwrap "-" String.fromInt item.levelPrereq ]
                     , p [] [ text "Keywords: ", text <| String.join ", " item.keywords ]

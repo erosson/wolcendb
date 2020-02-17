@@ -7,6 +7,7 @@ import Html.Attributes as A exposing (..)
 import Html.Events as E exposing (..)
 import Maybe.Extra
 import Route exposing (Route)
+import View.Item
 import View.Nav
 
 
@@ -33,7 +34,9 @@ view dm =
                             tr []
                                 [ td []
                                     [ a [ Route.href <| Route.Accessory w.name ]
-                                        [ Datamine.lang dm w.uiName |> Maybe.withDefault "???" |> text ]
+                                        [ img [ class "item-icon", View.Item.imgAccessory w ] []
+                                        , Datamine.lang dm w.uiName |> Maybe.withDefault "???" |> text
+                                        ]
                                     ]
                                 , td [] [ text <| Maybe.Extra.unwrap "-" String.fromInt w.levelPrereq ]
                                 , td [] [ text <| String.join ", " w.keywords ]

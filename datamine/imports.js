@@ -107,6 +107,8 @@ import game_103 from "../datamine/Game/Umbra/Skills/Trees/ActiveSkills/AST_Vault
 import game_104 from "../datamine/Game/Umbra/Skills/Trees/ActiveSkills/AST_Vortex.json"
 import game_105 from "../datamine/Game/Umbra/Skills/Trees/ActiveSkills/AST_WarCry.json"
 import game_106 from "../datamine/Game/Umbra/Skills/Trees/ActiveSkills/AST_WhirlWind.json"
+import game_107 from "../datamine/Game/Umbra/SkinParams/WeaponSkins/CosmeticWeaponDescriptorBankGameplay.json"
+import game_108 from "../datamine/Game/Umbra/SkinParams/TransferTemplate/TransferTemplateBank.json"
 import localization_0 from "!!json-loader!@erosson/xlsx-loader!../datamine/localization/text_ui_Activeskills.xml"
 import localization_1 from "!!json-loader!@erosson/xlsx-loader!../datamine/localization/text_ui_EIM.xml"
 import localization_2 from "!!json-loader!@erosson/xlsx-loader!../datamine/localization/text_ui_Loot.xml"
@@ -219,6 +221,8 @@ export default {
   "Game/Umbra/Skills/Trees/ActiveSkills/AST_Vortex.json": game_104,
   "Game/Umbra/Skills/Trees/ActiveSkills/AST_WarCry.json": game_105,
   "Game/Umbra/Skills/Trees/ActiveSkills/AST_WhirlWind.json": game_106,
+  "Game/Umbra/SkinParams/WeaponSkins/CosmeticWeaponDescriptorBankGameplay.json": game_107,
+  "Game/Umbra/SkinParams/TransferTemplate/TransferTemplateBank.json": game_108,
   "localization/text_ui_Activeskills.json": localization_0,
   "localization/text_ui_EIM.json": localization_1,
   "localization/text_ui_Loot.json": localization_2,
