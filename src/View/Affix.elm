@@ -130,11 +130,11 @@ viewItem dm expandeds affixes =
             affixes1
                 |> List.partition (\a -> a.drop.sarisel)
     in
-    [ div [ class "alert alert-warning" ]
-        [ text "Beware: affix possibilities below might be wrong - the developer isn't completely sure how they work yet. "
-        , a [ href "https://gitlab.com/erosson/wolcendb/issues" ] [ text "Please file an issue if these are wrong!" ]
-        ]
-    , div [ class "row" ]
+    --[ div [ class "alert alert-warning" ]
+    --    [ text "Beware: affix possibilities below might be wrong - the developer isn't completely sure how they work yet. "
+    --    , a [ href "https://gitlab.com/erosson/wolcendb/issues" ] [ text "Please file an issue if these are wrong!" ]
+    --    ]
+    [ div [ class "row" ]
         [ div [ class "col-sm" ]
             [ viewItemAffixes "Magic affixes" dm expandeds naturals
             , viewItemAffixes "Sarisel affixes" dm expandeds sarisels
