@@ -283,33 +283,40 @@ mlang dm =
 
 Includes craftable and sarisel affixes.
 
-TODO: I'm probably doing this wrong. Open questions:
+I have no source for how this works, but the rules below seem to yield decent results, and I haven't disproven them yet:
 
-  - What are optional keywords and how do they work?
-      - I've assumed they do nothing, and only use mandatory keywords. This is probably wrong, but I'm not sure where to start with them!
-  - What are Sarisel affixes?
+  - All of an affix's optional keywords must be present on an item. (Great name for this one, yes?)
+
+  - If an affix has any mandatory keywords, at least one of them must be present on an item
+
+  - Item level, like poe and diablo, depends on the monster level that drops the item.
+    (Confirmed this by viewing my save file during offline play.) This is what
+    an affix's level bounds are applied. Not done in this function.
+
+  - At most one affix spawns for affixes with the same class, like poe modgroups.
+
+  - TODO: what are Sarisel affixes?
       - I've assumed they're limited to a boss I haven't seen yet, and not part of the natural drop pool. They have much higher weights than other mods.
-  - How do affix level bounds work - do they interact with item.levelPrereq, or the ilvl of dropped items?
-      - Do Wolcen items even have ilvls? I have no idea, and need to play more to find out
-      - I've assumed they interact with item.levelPrereq, but this is likely wrong; an ilvl-ish system is very likely. Haven't played enough to disprove it though.
-  - What's item.class? Probably like poe modgroups where you can only spawn one mod from each group, right?
 
 -}
 itemAffixes : Datamine -> Item i -> List MagicAffix
 itemAffixes dm item =
     let
-        keywordSet =
+        itemKeywords : Set String
+        itemKeywords =
             Set.fromList item.keywords
 
-        levelPrereq =
-            item.levelPrereq |> Maybe.withDefault 1
+        isItemKeyword : String -> Bool
+        isItemKeyword k =
+            Set.member k itemKeywords
     in
     dm.affixes.magic
         |> List.filter
-            (\a ->
-                (levelPrereq >= a.drop.itemLevel.min)
-                    && (levelPrereq <= a.drop.itemLevel.max)
-                    && List.all (\k -> Set.member k keywordSet) a.drop.mandatoryKeywords
+            (\affix ->
+                List.all isItemKeyword affix.drop.optionalKeywords
+                    && (List.any isItemKeyword affix.drop.mandatoryKeywords
+                            || (affix.drop.mandatoryKeywords == [])
+                       )
             )
 
 
