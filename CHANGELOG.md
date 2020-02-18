@@ -3,6 +3,9 @@ Changelog
 
 ---
 
+#### 2020-02-18
+- Fixed a bug that caused missing images for some armors.
+
 #### 2020-02-17
 - This changelog is now visible on the website.
 - Nicer item layouts.

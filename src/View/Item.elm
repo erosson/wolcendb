@@ -14,7 +14,7 @@ imgAccessory item =
 
 imgArmor : Datamine -> { item | attachmentName : String } -> H.Attribute msg
 imgArmor dm item =
-    case Dict.get item.attachmentName dm.cosmeticTransferTemplates of
+    case Dict.get (String.toLower item.attachmentName) dm.cosmeticTransferTemplates of
         Nothing ->
             style "display" "none"
 
@@ -24,7 +24,7 @@ imgArmor dm item =
 
 imgUArmor : Datamine -> { item | attachmentName : Maybe String } -> H.Attribute msg
 imgUArmor dm item =
-    case Dict.get (Maybe.withDefault "" item.attachmentName) dm.cosmeticTransferTemplates of
+    case Dict.get (Maybe.withDefault "" item.attachmentName |> String.toLower) dm.cosmeticTransferTemplates of
         Nothing ->
             style "display" "none"
 
@@ -39,7 +39,7 @@ imgWeapon dm item =
 
 imgShield : Datamine -> { item | name : String } -> H.Attribute msg
 imgShield dm item =
-    case Dict.get item.name dm.cosmeticWeaponDescriptors of
+    case Dict.get (String.toLower item.name) dm.cosmeticWeaponDescriptors of
         Nothing ->
             style "display" "none"
 

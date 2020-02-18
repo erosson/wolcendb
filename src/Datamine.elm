@@ -385,7 +385,7 @@ cosmeticTransferTemplateDecoder =
             , "CCosmeticTransferTemplateBank"
             , "CCosmeticTransferTemplate"
             ]
-        |> D.map (Dict.Extra.fromListBy .name)
+        |> D.map (Dict.Extra.fromListBy (.name >> String.toLower))
 
 
 cosmeticWeaponDescriptorDecoder : D.Decoder (Dict String CCosmeticWeaponDescriptor)
@@ -399,7 +399,7 @@ cosmeticWeaponDescriptorDecoder =
             , "CCosmeticWeaponDescriptorBank"
             , "CCosmeticWeaponDescriptor"
             ]
-        |> D.map (Dict.Extra.fromListBy .name)
+        |> D.map (Dict.Extra.fromListBy (.name >> String.toLower))
 
 
 rootAffixesDecoder : D.Decoder Affixes
