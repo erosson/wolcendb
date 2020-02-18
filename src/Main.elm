@@ -15,6 +15,7 @@ import Page.Armor
 import Page.Armors
 import Page.Changelog
 import Page.Home
+import Page.Privacy
 import Page.Shield
 import Page.Shields
 import Page.Skill
@@ -221,6 +222,9 @@ viewBody mmodel =
 
                         Route.Changelog ->
                             Page.Changelog.view model
+
+                        Route.Privacy ->
+                            Page.Privacy.view
 
 
 viewNotFound =

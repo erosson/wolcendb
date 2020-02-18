@@ -58,13 +58,29 @@ view =
             ]
         , div [ class "row" ]
             [ div [ class "col-sm" ]
-                [ p []
-                    [ a [ target "_blank", href "https://gitlab.com/erosson/wolcendb" ]
-                        [ text "WolcenDB is open-source" ]
-                    ]
-                , p []
-                    [ a [ Route.href Route.Changelog ]
-                        [ text "WolcenDB changelog" ]
+                [ ul [ class "nav nav-horizontal" ]
+                    [ li [ class "nav-item" ]
+                        [ a
+                            [ class "nav-link"
+                            , target "_blank"
+                            , href "https://gitlab.com/erosson/wolcendb"
+                            ]
+                            [ text "WolcenDB is open-source" ]
+                        ]
+                    , li [ class "nav-item" ]
+                        [ a
+                            [ class "nav-link"
+                            , Route.href Route.Changelog
+                            ]
+                            [ text "WolcenDB changelog" ]
+                        ]
+                    , li [ class "nav-item" ]
+                        [ a
+                            [ class "nav-link"
+                            , Route.href Route.Privacy
+                            ]
+                            [ text "Privacy" ]
+                        ]
                     ]
                 , small []
                     [ p []

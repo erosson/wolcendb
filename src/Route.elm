@@ -29,6 +29,7 @@ type Route
     | Skill String
     | Affixes
     | Changelog
+    | Privacy
 
 
 parse : Url -> Maybe Route
@@ -60,6 +61,7 @@ parser =
         , P.map Skill <| P.s "skill" </> P.string
         , P.map Affixes <| P.s "affix"
         , P.map Changelog <| P.s "changelog"
+        , P.map Privacy <| P.s "privacy"
         ]
 
 
@@ -128,6 +130,9 @@ toString r =
 
         Changelog ->
             "/changelog"
+
+        Privacy ->
+            "/privacy"
 
 
 href : Route -> Html.Attribute msg
