@@ -31,20 +31,24 @@ view dm name =
                         , a [ class "breadcrumb-item active", Route.href Route.UniqueWeapons ] [ text "Unique Weapons" ]
                         , a [ class "breadcrumb-item active", Route.href <| Route.UniqueWeapon item.name ] [ label ]
                         ]
-                    , span [ class "item" ] [ img [ View.Item.imgWeapon dm item ] [] ]
-                    , p [] [ label ]
-                    , p [] [ text "Level: ", text <| Maybe.Extra.unwrap "-" String.fromInt item.levelPrereq ]
-                    , p []
-                        [ text "Damage: "
-                        , Maybe.Extra.unwrap "?" String.fromInt item.damage.min
-                            ++ "-"
-                            ++ Maybe.Extra.unwrap "?" String.fromInt item.damage.max
-                            |> text
+                    , div [ class "card" ]
+                        [ div [ class "card-header" ] [ label ]
+                        , div [ class "card-body" ]
+                            [ span [ class "item float-right" ] [ img [ View.Item.imgWeapon dm item ] [] ]
+                            , p [] [ text "Level: ", text <| Maybe.Extra.unwrap "-" String.fromInt item.levelPrereq ]
+                            , p []
+                                [ text "Damage: "
+                                , Maybe.Extra.unwrap "?" String.fromInt item.damage.min
+                                    ++ "-"
+                                    ++ Maybe.Extra.unwrap "?" String.fromInt item.damage.max
+                                    |> text
+                                ]
+                            , ul [ class "list-group affixes" ] <| View.Affix.viewNonmagicIds dm item.implicitAffixes
+                            , ul [ class "list-group affixes" ] <| View.Affix.viewNonmagicIds dm item.defaultAffixes
+                            , small [ class "text-muted" ] [ text "Keywords: ", text <| String.join ", " item.keywords ]
+                            , p [] <| (View.Desc.mdesc dm item.lore |> Maybe.withDefault [ text "???" ])
+                            ]
                         ]
-                    , p [] [ text "Keywords: ", text <| String.join ", " item.keywords ]
-                    , ul [ class "list-group affixes" ] <| View.Affix.viewNonmagicIds dm item.implicitAffixes
-                    , ul [ class "list-group affixes" ] <| View.Affix.viewNonmagicIds dm item.defaultAffixes
-                    , p [] <| (View.Desc.mdesc dm item.lore |> Maybe.withDefault [ text "???" ])
                     ]
                 ]
             )

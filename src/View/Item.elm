@@ -1,4 +1,4 @@
-module View.Item exposing (imgAccessory, imgArmor, imgUArmor, imgWeapon)
+module View.Item exposing (imgAccessory, imgArmor, imgShield, imgUArmor, imgWeapon)
 
 import Datamine exposing (Datamine)
 import Dict exposing (Dict)
@@ -32,8 +32,13 @@ imgUArmor dm item =
             src <| "/static/datamine/Game/Libs/UI/u_resources/armors/" ++ t.hudPicture
 
 
-imgWeapon : Datamine -> { item | name : String } -> H.Attribute msg
+imgWeapon : Datamine -> { item | name : String, damage : Datamine.Range (Maybe Int) } -> H.Attribute msg
 imgWeapon dm item =
+    imgShield dm item
+
+
+imgShield : Datamine -> { item | name : String } -> H.Attribute msg
+imgShield dm item =
     case Dict.get item.name dm.cosmeticWeaponDescriptors of
         Nothing ->
             style "display" "none"

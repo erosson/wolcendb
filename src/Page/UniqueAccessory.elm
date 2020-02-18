@@ -31,13 +31,17 @@ view dm name =
                         , a [ class "breadcrumb-item active", Route.href Route.UniqueAccessories ] [ text "Unique Accessories" ]
                         , a [ class "breadcrumb-item active", Route.href <| Route.UniqueAccessory item.name ] [ label ]
                         ]
-                    , span [ class "item" ] [ img [ View.Item.imgAccessory item ] [] ]
-                    , p [] [ label ]
-                    , p [] [ text "Level: ", text <| Maybe.Extra.unwrap "-" String.fromInt item.levelPrereq ]
-                    , p [] [ text "Keywords: ", text <| String.join ", " item.keywords ]
-                    , ul [ class "list-group affixes" ] <| View.Affix.viewNonmagicIds dm item.implicitAffixes
-                    , ul [ class "list-group affixes" ] <| View.Affix.viewNonmagicIds dm item.defaultAffixes
-                    , p [] <| (View.Desc.mdesc dm item.lore |> Maybe.withDefault [ text "???" ])
+                    , div [ class "card" ]
+                        [ div [ class "card-header" ] [ label ]
+                        , div [ class "card-body" ]
+                            [ span [ class "item float-right" ] [ img [ View.Item.imgAccessory item ] [] ]
+                            , p [] [ text "Level: ", text <| Maybe.Extra.unwrap "-" String.fromInt item.levelPrereq ]
+                            , ul [ class "list-group affixes" ] <| View.Affix.viewNonmagicIds dm item.implicitAffixes
+                            , ul [ class "list-group affixes" ] <| View.Affix.viewNonmagicIds dm item.defaultAffixes
+                            , small [ class "text-muted" ] [ text "Keywords: ", text <| String.join ", " item.keywords ]
+                            , p [] <| (View.Desc.mdesc dm item.lore |> Maybe.withDefault [ text "???" ])
+                            ]
+                        ]
                     ]
                 ]
             )

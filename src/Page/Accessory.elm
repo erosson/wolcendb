@@ -36,11 +36,15 @@ view m name =
                         , a [ class "breadcrumb-item active", Route.href Route.Accessories ] [ text "Accessories" ]
                         , a [ class "breadcrumb-item active", Route.href <| Route.Accessory item.name ] [ label ]
                         ]
-                    , span [ class "item" ] [ img [ View.Item.imgAccessory item ] [] ]
-                    , p [] [ label ]
-                    , p [] [ text "Level: ", text <| Maybe.Extra.unwrap "-" String.fromInt item.levelPrereq ]
-                    , p [] [ text "Keywords: ", text <| String.join ", " item.keywords ]
-                    , ul [ class "list-group affixes" ] <| View.Affix.viewNonmagicIds dm item.implicitAffixes
+                    , div [ class "card" ]
+                        [ div [ class "card-header" ] [ label ]
+                        , div [ class "card-body" ]
+                            [ span [ class "item float-right" ] [ img [ View.Item.imgAccessory item ] [] ]
+                            , p [] [ text "Level: ", text <| Maybe.Extra.unwrap "-" String.fromInt item.levelPrereq ]
+                            , ul [ class "list-group affixes" ] <| View.Affix.viewNonmagicIds dm item.implicitAffixes
+                            , small [ class "text-muted" ] [ text "Keywords: ", text <| String.join ", " item.keywords ]
+                            ]
+                        ]
                     , div [] <| View.Affix.viewItem dm m.expandedAffixClasses <| Datamine.itemAffixes dm item
                     ]
                 ]

@@ -34,7 +34,7 @@ view dm =
                             tr []
                                 [ td []
                                     [ a [ Route.href <| Route.Shield w.name ]
-                                        [ img [ class "item-icon", View.Item.imgWeapon dm w ] []
+                                        [ img [ class "item-icon", View.Item.imgShield dm w ] []
                                         , Datamine.lang dm w.uiName |> Maybe.withDefault "???" |> text
                                         ]
                                     ]
