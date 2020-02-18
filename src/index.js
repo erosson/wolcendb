@@ -2,10 +2,12 @@ import '!!style-loader!css-loader!sass-loader!./main.scss';
 import { Elm } from './Main.elm';
 import * as serviceWorker from './serviceWorker';
 import datamine from '../datamine/imports'
-console.dir(datamine)
+import changelog from '!!raw-loader!../CHANGELOG.md'
+// console.dir(changelog)
+// console.dir(datamine)
 
 Elm.Main.init({
-  flags: {datamine},
+  flags: {changelog, datamine},
   node: document.getElementById('root')
 });
 

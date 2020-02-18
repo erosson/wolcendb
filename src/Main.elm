@@ -13,6 +13,7 @@ import Page.Accessory
 import Page.Affixes
 import Page.Armor
 import Page.Armors
+import Page.Changelog
 import Page.Home
 import Page.Shield
 import Page.Shields
@@ -45,6 +46,7 @@ type alias Model =
 type alias OkModel =
     { nav : Nav.Key
     , datamine : Datamine
+    , changelog : String
     , route : Maybe Route
 
     -- TODO: this really belongs in a per-page model
@@ -54,6 +56,7 @@ type alias OkModel =
 
 type alias Flags =
     { datamine : Datamine.Flag
+    , changelog : String
     }
 
 
@@ -67,6 +70,7 @@ init flags url nav =
             ( Ok
                 { nav = nav
                 , datamine = datamine
+                , changelog = flags.changelog
                 , route = Route.parse url
                 , expandedAffixClasses = Set.empty
                 }
@@ -214,6 +218,9 @@ viewBody mmodel =
 
                         Route.Affixes ->
                             Page.Affixes.view model.datamine
+
+                        Route.Changelog ->
+                            Page.Changelog.view model
 
 
 viewNotFound =

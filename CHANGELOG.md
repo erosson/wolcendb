@@ -4,6 +4,7 @@ Changelog
 ---
 
 #### 2020-02-17
+- This changelog is now visible on the website.
 - Nicer item layouts.
 - Magic affixes for each item are now grouped by class.
   - Only one mod from each affix-class may spawn on an item.

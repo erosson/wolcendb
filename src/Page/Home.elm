@@ -62,6 +62,10 @@ view =
                     [ a [ target "_blank", href "https://gitlab.com/erosson/wolcendb" ]
                         [ text "WolcenDB is open-source" ]
                     ]
+                , p []
+                    [ a [ Route.href Route.Changelog ]
+                        [ text "WolcenDB changelog" ]
+                    ]
                 , small []
                     [ p []
                         [ text "This site is fan-made and not affiliated with "
