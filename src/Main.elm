@@ -29,7 +29,9 @@ import Page.UniqueWeapons
 import Page.Weapon
 import Page.Weapons
 import Route exposing (Route)
+import Set exposing (Set)
 import Url exposing (Url)
+import View.Affix
 
 
 
@@ -44,6 +46,9 @@ type alias OkModel =
     { nav : Nav.Key
     , datamine : Datamine
     , route : Maybe Route
+
+    -- TODO: this really belongs in a per-page model
+    , expandedAffixClasses : Set String
     }
 
 
@@ -63,6 +68,7 @@ init flags url nav =
                 { nav = nav
                 , datamine = datamine
                 , route = Route.parse url
+                , expandedAffixClasses = Set.empty
                 }
             , Cmd.none
             )
@@ -75,6 +81,7 @@ init flags url nav =
 type Msg
     = OnUrlChange Url
     | OnUrlRequest Browser.UrlRequest
+    | AffixMsg View.Affix.ItemMsg
 
 
 update : Msg -> Model -> ( Model, Cmd Msg )
@@ -99,6 +106,18 @@ updateOk msg model =
 
         OnUrlRequest (Browser.External url) ->
             ( model, Nav.load url )
+
+        AffixMsg (View.Affix.Expand class) ->
+            ( { model | expandedAffixClasses = model.expandedAffixClasses |> toggleSet class }, Cmd.none )
+
+
+toggleSet : comparable -> Set comparable -> Set comparable
+toggleSet k ks =
+    if Set.member k ks then
+        Set.remove k ks
+
+    else
+        Set.insert k ks
 
 
 
@@ -139,19 +158,23 @@ viewBody mmodel =
                             Page.Accessories.view model.datamine
 
                         Route.Weapon name ->
-                            Page.Weapon.view model.datamine name
+                            Page.Weapon.view model name
+                                |> Maybe.map (List.map (H.map AffixMsg))
                                 |> Maybe.withDefault viewNotFound
 
                         Route.Shield name ->
-                            Page.Shield.view model.datamine name
+                            Page.Shield.view model name
+                                |> Maybe.map (List.map (H.map AffixMsg))
                                 |> Maybe.withDefault viewNotFound
 
                         Route.Armor name ->
-                            Page.Armor.view model.datamine name
+                            Page.Armor.view model name
+                                |> Maybe.map (List.map (H.map AffixMsg))
                                 |> Maybe.withDefault viewNotFound
 
                         Route.Accessory name ->
-                            Page.Accessory.view model.datamine name
+                            Page.Accessory.view model name
+                                |> Maybe.map (List.map (H.map AffixMsg))
                                 |> Maybe.withDefault viewNotFound
 
                         Route.UniqueWeapons ->

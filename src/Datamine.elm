@@ -283,7 +283,8 @@ mlang dm =
 
 Includes craftable and sarisel affixes.
 
-I have no source for how this works, but the rules below seem to yield decent results, and I haven't disproven them yet:
+I have no authoritative source for how this works. Below I've implemented my own theory -
+seems to yield decent results, and I'm not aware of any counterexamples:
 
   - All of an affix's optional keywords must be present on an item. (Great name for this one, yes?)
 
