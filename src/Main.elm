@@ -8,28 +8,16 @@ import Html as H exposing (..)
 import Html.Attributes as A exposing (..)
 import Html.Events as E exposing (..)
 import Maybe.Extra
-import Page.Accessories
-import Page.Accessory
 import Page.Affixes
-import Page.Armor
-import Page.Armors
 import Page.Changelog
 import Page.Home
+import Page.NormalItem
+import Page.NormalItems
 import Page.Privacy
-import Page.Shield
-import Page.Shields
 import Page.Skill
 import Page.Skills
-import Page.UniqueAccessories
-import Page.UniqueAccessory
-import Page.UniqueArmor
-import Page.UniqueArmors
-import Page.UniqueShield
-import Page.UniqueShields
-import Page.UniqueWeapon
-import Page.UniqueWeapons
-import Page.Weapon
-import Page.Weapons
+import Page.UniqueItem
+import Page.UniqueItems
 import Route exposing (Route)
 import Set exposing (Set)
 import Url exposing (Url)
@@ -151,63 +139,63 @@ viewBody mmodel =
                             Page.Home.view
 
                         Route.Weapons ->
-                            Page.Weapons.view model.datamine
+                            Page.NormalItems.viewWeapons model.datamine
 
                         Route.Shields ->
-                            Page.Shields.view model.datamine
+                            Page.NormalItems.viewShields model.datamine
 
                         Route.Armors ->
-                            Page.Armors.view model.datamine
+                            Page.NormalItems.viewArmors model.datamine
 
                         Route.Accessories ->
-                            Page.Accessories.view model.datamine
+                            Page.NormalItems.viewAccessories model.datamine
 
                         Route.Weapon name ->
-                            Page.Weapon.view model name
+                            Page.NormalItem.viewWeapon model name
                                 |> Maybe.map (List.map (H.map AffixMsg))
                                 |> Maybe.withDefault viewNotFound
 
                         Route.Shield name ->
-                            Page.Shield.view model name
+                            Page.NormalItem.viewShield model name
                                 |> Maybe.map (List.map (H.map AffixMsg))
                                 |> Maybe.withDefault viewNotFound
 
                         Route.Armor name ->
-                            Page.Armor.view model name
+                            Page.NormalItem.viewArmor model name
                                 |> Maybe.map (List.map (H.map AffixMsg))
                                 |> Maybe.withDefault viewNotFound
 
                         Route.Accessory name ->
-                            Page.Accessory.view model name
+                            Page.NormalItem.viewAccessory model name
                                 |> Maybe.map (List.map (H.map AffixMsg))
                                 |> Maybe.withDefault viewNotFound
 
                         Route.UniqueWeapons ->
-                            Page.UniqueWeapons.view model.datamine
+                            Page.UniqueItems.viewWeapons model.datamine
 
                         Route.UniqueShields ->
-                            Page.UniqueShields.view model.datamine
+                            Page.UniqueItems.viewShields model.datamine
 
                         Route.UniqueArmors ->
-                            Page.UniqueArmors.view model.datamine
+                            Page.UniqueItems.viewArmors model.datamine
 
                         Route.UniqueAccessories ->
-                            Page.UniqueAccessories.view model.datamine
+                            Page.UniqueItems.viewAccessories model.datamine
 
                         Route.UniqueWeapon name ->
-                            Page.UniqueWeapon.view model.datamine name
+                            Page.UniqueItem.viewWeapon model.datamine name
                                 |> Maybe.withDefault viewNotFound
 
                         Route.UniqueShield name ->
-                            Page.UniqueShield.view model.datamine name
+                            Page.UniqueItem.viewShield model.datamine name
                                 |> Maybe.withDefault viewNotFound
 
                         Route.UniqueArmor name ->
-                            Page.UniqueArmor.view model.datamine name
+                            Page.UniqueItem.viewArmor model.datamine name
                                 |> Maybe.withDefault viewNotFound
 
                         Route.UniqueAccessory name ->
-                            Page.UniqueAccessory.view model.datamine name
+                            Page.UniqueItem.viewAccessory model.datamine name
                                 |> Maybe.withDefault viewNotFound
 
                         Route.Skills ->

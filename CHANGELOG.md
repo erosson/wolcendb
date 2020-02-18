@@ -4,7 +4,8 @@ Changelog
 ---
 
 #### 2020-02-18
-- Fixed a bug that caused missing images for some armors.
+- Unique armors and accessories are now categorized correctly.
+- Fixed a bug that caused missing images for ~~some~~ all armors.
 
 #### 2020-02-17
 - This changelog is now visible on the website.
