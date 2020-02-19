@@ -18,6 +18,7 @@ import Html as H exposing (..)
 import Html.Attributes as A exposing (..)
 import Html.Events as E exposing (..)
 import List.Extra
+import Route exposing (Route)
 import Set exposing (Set)
 
 
@@ -222,10 +223,12 @@ viewItemAffixRow dm totalWeight affix =
     in
     (affix.effects |> List.concatMap (viewEffect dm))
         ++ (if affix.drop.craftOnly then
-                []
+                [ small [ class "badge badge-outline-light float-right" ] [ text "[", a [ Route.href <| Route.Source "magic-affix" affix.affixId ] [ text "s" ], text "]" ]
+                ]
 
             else
-                [ span
+                [ small [ class "badge badge-outline-light float-right" ] [ text "[", a [ Route.href <| Route.Source "magic-affix" affix.affixId ] [ text "s" ], text "]" ]
+                , span
                     [ class "badge badge-outline-light float-right"
                     , title <| "Monsters between levels " ++ ilvl ++ " can drop items with this affix"
                     ]

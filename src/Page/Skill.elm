@@ -5,6 +5,7 @@ import Dict exposing (Dict)
 import Html as H exposing (..)
 import Html.Attributes as A exposing (..)
 import Html.Events as E exposing (..)
+import Json.Encode
 import Maybe.Extra
 import Route exposing (Route)
 import View.Desc
@@ -14,16 +15,12 @@ import View.Skill
 
 view : Datamine -> String -> Maybe (List (Html msg))
 view dm uid =
-    dm.skills
-        |> List.filter (\s -> s.uid == uid)
-        |> List.head
+    Dict.get (String.toLower uid) dm.skillsByUid
         |> Maybe.map
             (\skill ->
                 let
                     ast =
-                        dm.skillASTs
-                            |> List.filter (\a -> String.toLower a.name == String.toLower skill.uid)
-                            |> List.head
+                        Dict.get uid dm.skillASTsByName
 
                     vas =
                         ast
@@ -47,35 +44,45 @@ view dm uid =
                         , a [ class "breadcrumb-item active", Route.href Route.Skills ] [ text "Skills" ]
                         , a [ class "breadcrumb-item active", Route.href <| Route.Skill skill.uid ] [ text label ]
                         ]
-                    , img [ class "skill", View.Skill.img skill ] []
-                    , p [] <| (View.Desc.desc dm (skill.uiName ++ "_desc") |> Maybe.withDefault [ text "???" ])
-                    , p [] <| (View.Desc.mdesc dm skill.lore |> Maybe.withDefault [ text "???" ])
-                    , table [ class "table" ]
-                        [ thead []
-                            [ tr []
-                                [ th [] [ text "name" ]
-                                , th [] [ text "desc" ]
-                                , th [] [ text "level" ]
-                                , th [] [ text "cost" ]
-                                , th [] [ text "lore" ]
+                    , div [ class "card" ]
+                        [ div [ class "card-header" ] [ text label ]
+                        , div [ class "card-body" ]
+                            [ span [ class "float-right" ]
+                                [ img [ class "skill", View.Skill.img skill ] []
+                                , div [] [ text "[", a [ Route.href <| Route.Source "skill" uid ] [ text "Source" ], text "]" ]
+                                ]
+                            , p [] <| (View.Desc.desc dm (skill.uiName ++ "_desc") |> Maybe.withDefault [ text "???" ])
+                            , p [] <| (View.Desc.mdesc dm skill.lore |> Maybe.withDefault [ text "???" ])
+                            , table [ class "table" ]
+                                [ thead []
+                                    [ tr []
+                                        [ th [] [ text "name" ]
+                                        , th [] [ text "desc" ]
+                                        , th [] [ text "level" ]
+                                        , th [] [ text "cost" ]
+                                        , th [] [ text "lore" ]
+                                        ]
+                                    ]
+                                , tbody []
+                                    (vas
+                                        |> List.map
+                                            (\( va, v ) ->
+                                                tr []
+                                                    [ td []
+                                                        [ span [ title v.uiName ] [ Datamine.lang dm v.uiName |> Maybe.withDefault "???" |> text ]
+                                                        , div [] [ text "[", a [ Route.href <| Route.Source "skill-variant" v.uid ] [ text "Source" ], text "]" ]
+                                                        ]
+                                                    , td [ title <| v.uiName ++ "_desc" ]
+                                                        (View.Desc.desc dm (v.uiName ++ "_desc") |> Maybe.withDefault [ text "???" ])
+                                                    , td [] [ text <| String.fromInt va.level ]
+                                                    , td [] [ text <| String.fromInt va.cost ]
+                                                    , td [ title <| Maybe.withDefault "" v.lore ]
+                                                        (View.Desc.mdesc dm v.lore |> Maybe.withDefault [ text "" ])
+                                                    ]
+                                            )
+                                    )
                                 ]
                             ]
-                        , tbody []
-                            (vas
-                                |> List.map
-                                    (\( va, v ) ->
-                                        tr []
-                                            [ td [ title v.uiName ]
-                                                [ Datamine.lang dm v.uiName |> Maybe.withDefault "???" |> text ]
-                                            , td [ title <| v.uiName ++ "_desc" ]
-                                                (View.Desc.desc dm (v.uiName ++ "_desc") |> Maybe.withDefault [ text "???" ])
-                                            , td [] [ text <| String.fromInt va.level ]
-                                            , td [] [ text <| String.fromInt va.cost ]
-                                            , td [ title <| Maybe.withDefault "" v.lore ]
-                                                (View.Desc.mdesc dm v.lore |> Maybe.withDefault [ text "" ])
-                                            ]
-                                    )
-                            )
                         ]
                     ]
                 ]

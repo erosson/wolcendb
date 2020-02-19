@@ -84,22 +84,22 @@ viewBreadcrumb dm nitem label =
         a [ class "breadcrumb-item active", Route.href Route.Home ] [ text "Home" ]
             :: (case nitem of
                     NWeapon item ->
-                        [ a [ class "breadcrumb-item active", Route.href Route.Weapons ] [ text "Unique Weapons" ]
+                        [ a [ class "breadcrumb-item active", Route.href Route.Weapons ] [ text "Normal Weapons" ]
                         , a [ class "breadcrumb-item active", Route.href <| Route.Weapon item.name ] [ label ]
                         ]
 
                     NShield item ->
-                        [ a [ class "breadcrumb-item active", Route.href Route.Shields ] [ text "Unique Shields" ]
+                        [ a [ class "breadcrumb-item active", Route.href Route.Shields ] [ text "Normal Shields" ]
                         , a [ class "breadcrumb-item active", Route.href <| Route.Shield item.name ] [ label ]
                         ]
 
                     NArmor item ->
-                        [ a [ class "breadcrumb-item active", Route.href Route.Armors ] [ text "Unique Armors" ]
+                        [ a [ class "breadcrumb-item active", Route.href Route.Armors ] [ text "Normal Armors" ]
                         , a [ class "breadcrumb-item active", Route.href <| Route.Armor item.name ] [ label ]
                         ]
 
                     NAccessory item ->
-                        [ a [ class "breadcrumb-item active", Route.href Route.Accessories ] [ text "Unique Accessories" ]
+                        [ a [ class "breadcrumb-item active", Route.href Route.Accessories ] [ text "Normal Accessories" ]
                         , a [ class "breadcrumb-item active", Route.href <| Route.Accessory item.name ] [ label ]
                         ]
                )
@@ -120,7 +120,10 @@ viewMain m nitem item =
         , div [ class "card" ]
             [ div [ class "card-header" ] [ label ]
             , div [ class "card-body" ]
-                [ span [ class "item float-right" ] [ img [ View.Item.imgNormal dm nitem ] [] ]
+                [ span [ class "item float-right" ]
+                    [ img [ View.Item.imgNormal dm nitem ] []
+                    , div [] [ text "[", a [ Route.href <| Route.Source "normal-loot" item.name ] [ text "Source" ], text "]" ]
+                    ]
                 , p [] [ text "Level: ", text <| Maybe.Extra.unwrap "-" String.fromInt item.levelPrereq ]
                 , div [] <|
                     case nitem of

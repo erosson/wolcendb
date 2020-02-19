@@ -3,6 +3,10 @@ Changelog
 
 ---
 
+#### 2020-02-19
+- Added `[source]` links throughout the site. These link to excerpts from the Wolcen game files that WolcenDB gets its data from.
+  - This is useful if Wolcen and WolcenDB are still missing data you're interested in (ex. many skill variants), or for tool developers.
+
 #### 2020-02-18
 - Added gems.
 - Unique armors and accessories are now categorized correctly.

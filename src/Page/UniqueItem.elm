@@ -108,7 +108,10 @@ viewMain dm uitem item =
         , div [ class "card" ]
             [ div [ class "card-header" ] [ label ]
             , div [ class "card-body" ]
-                [ span [ class "item float-right" ] [ img [ View.Item.imgUnique dm uitem ] [] ]
+                [ span [ class "item float-right" ]
+                    [ img [ View.Item.imgUnique dm uitem ] []
+                    , div [] [ text "[", a [ Route.href <| Route.Source "unique-loot" item.name ] [ text "Source" ], text "]" ]
+                    ]
                 , p [] [ text "Level: ", text <| Maybe.Extra.unwrap "-" String.fromInt item.levelPrereq ]
                 , div [] <|
                     case uitem of

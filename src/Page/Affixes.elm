@@ -46,6 +46,7 @@ view dm =
                     , th [ class "sticky" ] [ text "craftOnly?" ]
                     , th [ class "sticky" ] [ text "sarisel?" ]
                     , th [ class "sticky" ] [ text "type" ]
+                    , th [ class "sticky" ] [ text "source" ]
                     ]
                 ]
             , tbody []
@@ -69,6 +70,7 @@ view dm =
                                 , td [] [ text <| ifval a.drop.craftOnly "CraftOnly" "-" ]
                                 , td [] [ text <| ifval a.drop.sarisel "Sarisel" "-" ]
                                 , td [] [ text a.type_ ]
+                                , td [] [ text "[", H.a [ Route.href <| Route.Source "magic-affix" a.affixId ] [ text "Source" ], text "]" ]
                                 ]
                         )
                 )

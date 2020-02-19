@@ -35,6 +35,7 @@ view dm =
                                 [ td [ title gem.uiName ]
                                     [ div [] [ img [ class "skill-icon", View.Item.imgGem gem ] [] ]
                                     , Datamine.lang dm gem.uiName |> Maybe.withDefault "???" |> text
+                                    , div [] [ text "[", a [ Route.href <| Route.Source "gem" gem.name ] [ text "Source" ], text "]" ]
                                     ]
                                 , td []
                                     [ ul [ class "list-group affixes nowrap" ]

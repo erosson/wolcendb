@@ -17,6 +17,7 @@ import Page.NormalItems
 import Page.Privacy
 import Page.Skill
 import Page.Skills
+import Page.Source
 import Page.UniqueItem
 import Page.UniqueItems
 import Route exposing (Route)
@@ -211,6 +212,10 @@ viewBody mmodel =
 
                         Route.Gems ->
                             Page.Gems.view model.datamine
+
+                        Route.Source type_ id ->
+                            Page.Source.view model.datamine type_ id
+                                |> Maybe.withDefault viewNotFound
 
                         Route.Changelog ->
                             Page.Changelog.view model

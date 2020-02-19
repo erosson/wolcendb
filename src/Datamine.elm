@@ -10,6 +10,9 @@ module Datamine exposing
     , Range
     , Rarity
     , Socket(..)
+    , Source
+    , SourceNode
+    , SourceNodeChildren(..)
     , UItem
     , UniqueItem(..)
     , decode
@@ -57,6 +60,11 @@ type alias Datamine =
     , uniqueLootByName : Dict String UniqueItem
     , skillsByUid : Dict String Skill
     , skillASTsByName : Dict String SkillAST
+    , skillVariantsByUid : Dict String SkillVariant
+    , skillASTVariantsByUid : Dict String SkillASTVariant
+    , gemsByName : Dict String Gem
+    , nonmagicAffixesById : Dict String NonmagicAffix
+    , magicAffixesById : Dict String MagicAffix
     }
 
 
@@ -88,6 +96,11 @@ index raw =
     , uniqueLootByName = raw.uniqueLoot |> Dict.Extra.fromListBy (uitemName >> String.toLower)
     , skillsByUid = raw.skills |> Dict.Extra.fromListBy (.uid >> String.toLower)
     , skillASTsByName = raw.skillASTs |> Dict.Extra.fromListBy (.name >> String.toLower)
+    , skillVariantsByUid = raw.skills |> List.concatMap .variants |> Dict.Extra.fromListBy (.uid >> String.toLower)
+    , skillASTVariantsByUid = raw.skillASTs |> List.concatMap .variants |> Dict.Extra.fromListBy (.uid >> String.toLower)
+    , gemsByName = raw.gems |> Dict.Extra.fromListBy (.name >> String.toLower)
+    , nonmagicAffixesById = raw.affixes.nonmagic |> Dict.Extra.fromListBy (.affixId >> String.toLower)
+    , magicAffixesById = raw.affixes.magic |> Dict.Extra.fromListBy (.affixId >> String.toLower)
     }
 
 
@@ -111,8 +124,24 @@ type UniqueItem
     | UAccessory UniqueAccessory
 
 
+type alias Source =
+    { file : String, node : SourceNode }
+
+
+type alias SourceNode =
+    { attrs : List ( String, String )
+    , children : SourceNodeChildren
+    , tag : String
+    }
+
+
+type SourceNodeChildren
+    = SourceNodeChildren (List SourceNode)
+
+
 type alias Weapon =
-    { name : String
+    { source : Source
+    , name : String
     , uiName : String
     , levelPrereq : Maybe Int
     , keywords : List String
@@ -122,7 +151,8 @@ type alias Weapon =
 
 
 type alias Shield =
-    { name : String
+    { source : Source
+    , name : String
     , uiName : String
     , levelPrereq : Maybe Int
     , keywords : List String
@@ -131,7 +161,8 @@ type alias Shield =
 
 
 type alias Armor =
-    { name : String
+    { source : Source
+    , name : String
     , uiName : String
     , levelPrereq : Maybe Int
     , keywords : List String
@@ -141,7 +172,8 @@ type alias Armor =
 
 
 type alias Accessory =
-    { name : String
+    { source : Source
+    , name : String
     , uiName : String
     , levelPrereq : Maybe Int
     , keywords : List String
@@ -152,7 +184,8 @@ type alias Accessory =
 
 type alias Item i =
     { i
-        | name : String
+        | source : Source
+        , name : String
         , uiName : String
         , levelPrereq : Maybe Int
         , keywords : List String
@@ -169,7 +202,8 @@ type alias UItem i =
 
 
 type alias UniqueWeapon =
-    { name : String
+    { source : Source
+    , name : String
     , uiName : String
     , levelPrereq : Maybe Int
     , keywords : List String
@@ -181,7 +215,8 @@ type alias UniqueWeapon =
 
 
 type alias UniqueShield =
-    { name : String
+    { source : Source
+    , name : String
     , uiName : String
     , levelPrereq : Maybe Int
     , keywords : List String
@@ -192,7 +227,8 @@ type alias UniqueShield =
 
 
 type alias UniqueArmor =
-    { name : String
+    { source : Source
+    , name : String
     , uiName : String
     , levelPrereq : Maybe Int
     , keywords : List String
@@ -204,7 +240,8 @@ type alias UniqueArmor =
 
 
 type alias UniqueAccessory =
-    { name : String
+    { source : Source
+    , name : String
     , uiName : String
     , levelPrereq : Maybe Int
     , keywords : List String
@@ -236,7 +273,8 @@ type alias Range a =
 
 
 type alias Skill =
-    { uid : String
+    { source : Source
+    , uid : String
     , uiName : String
     , hudPicture : String
     , lore : Maybe String
@@ -246,28 +284,31 @@ type alias Skill =
 
 
 type alias SkillVariant =
-    { uid : String
+    { source : Source
+    , uid : String
     , uiName : String
     , lore : Maybe String
     }
 
 
 type alias SkillAST =
-    { name : String
+    { source : Source
+    , name : String
     , variants : List SkillASTVariant
     }
 
 
 type alias SkillASTVariant =
-    { uid : String
+    { source : Source
+    , uid : String
     , level : Int
     , cost : Int
     }
 
 
 type alias MagicAffix =
-    { affixId : String
-    , filename : String
+    { source : Source
+    , affixId : String
     , class : Maybe String
     , type_ : String
     , tier : Int
@@ -298,16 +339,16 @@ type alias Rarity =
 {-| Implicit or unique affixes are much simplier
 -}
 type alias NonmagicAffix =
-    { affixId : String
-    , filename : String
+    { source : Source
+    , affixId : String
     , effects : List MagicEffect
     }
 
 
 type alias Affix a =
     { a
-        | affixId : String
-        , filename : String
+        | source : Source
+        , affixId : String
         , effects : List MagicEffect
     }
 
@@ -319,7 +360,8 @@ type alias MagicEffect =
 
 
 type alias Gem =
-    { name : String
+    { source : Source
+    , name : String
     , uiName : String
     , hudPicture : String
     , levelPrereq : Int
@@ -432,12 +474,12 @@ decode =
 
 nonmagicAffixes : Datamine -> List String -> List NonmagicAffix
 nonmagicAffixes dm =
-    List.filterMap (\id -> dm.affixes.nonmagic |> List.filter (\a -> a.affixId == id) |> List.head)
+    List.filterMap (\id -> Dict.get id dm.nonmagicAffixesById)
 
 
 magicAffixes : Datamine -> List String -> List MagicAffix
 magicAffixes dm =
-    List.filterMap (\id -> dm.affixes.magic |> List.filter (\a -> a.affixId == id) |> List.head)
+    List.filterMap (\id -> Dict.get id dm.magicAffixesById)
 
 
 jsonDecoder : D.Decoder Datamine
@@ -455,22 +497,14 @@ jsonDecoder =
         |> D.map index
 
 
-
---type alias Gem =
---    { name : String
---    , uiName : String
---    , hudPicture : String
---    , levelPrereq : Int
---    , gemTier : Int
---    , dropLevel : Range Int
---    , keywords : List String
---    , effects : List ( Socket, String )
---    }
-
-
 gemsDecoder : D.Decoder (List Gem)
 gemsDecoder =
+    let
+        file =
+            "Game/Umbra/Loot/Gems/gems.json"
+    in
     D.succeed Gem
+        |> P.custom (sourceDecoder file "Gem")
         |> P.requiredAt [ "$", "Name" ] D.string
         |> P.requiredAt [ "$", "UIName" ] D.string
         |> P.requiredAt [ "$", "HUDPicture" ] D.string
@@ -484,7 +518,7 @@ gemsDecoder =
         |> P.requiredAt [ "$", "Keywords" ] csStrings
         |> P.requiredAt [ "SupportedMagicEffects" ] gemEffectsDecoder
         |> D.list
-        |> D.at [ "Game/Umbra/Loot/Gems/gems.json", "Gems", "Gem" ]
+        |> D.at [ file, "Gems", "Gem" ]
 
 
 gemEffectsDecoder : D.Decoder (List ( Socket, String ))
@@ -526,26 +560,28 @@ normalItemsDecoder : D.Decoder (List NormalItem)
 normalItemsDecoder =
     List.foldl (\di -> D.map (++) >> P.custom di)
         (D.succeed [])
-        [ D.field "Game/Umbra/Loot/Weapons/Weapons.json" normalWeaponsDecoder
-        , D.field "Game/Umbra/Loot/Weapons/Shields.json" normalWeaponsDecoder
-        , D.field "Game/Umbra/Loot/Armors/Armors.json" normalArmorsDecoder
-        , D.field "Game/Umbra/Loot/Armors/Accessories.json" normalArmorsDecoder
+        [ normalWeaponsDecoder "Game/Umbra/Loot/Weapons/Weapons.json"
+        , normalWeaponsDecoder "Game/Umbra/Loot/Weapons/Shields.json"
+        , normalArmorsDecoder "Game/Umbra/Loot/Armors/Armors.json"
+        , normalArmorsDecoder "Game/Umbra/Loot/Armors/Accessories.json"
         ]
 
 
-normalWeaponsDecoder : D.Decoder (List NormalItem)
-normalWeaponsDecoder =
+normalWeaponsDecoder : String -> D.Decoder (List NormalItem)
+normalWeaponsDecoder file =
     D.at [ "$", "Keywords" ] csStrings
         |> D.map Set.fromList
         |> D.andThen
             (\keywords ->
                 if Set.member "shield" keywords then
                     D.succeed Shield
+                        |> P.custom (sourceDecoder file "Item")
                         |> commonLootDecoder
                         |> D.map NShield
 
                 else
                     D.succeed Weapon
+                        |> P.custom (sourceDecoder file "Item")
                         |> commonLootDecoder
                         |> P.custom
                             (D.succeed Range
@@ -557,23 +593,25 @@ normalWeaponsDecoder =
         |> D.list
         |> D.field "Item"
         |> single
-        |> D.at [ "MetaData", "Weapons" ]
+        |> D.at [ file, "MetaData", "Weapons" ]
 
 
-normalArmorsDecoder : D.Decoder (List NormalItem)
-normalArmorsDecoder =
+normalArmorsDecoder : String -> D.Decoder (List NormalItem)
+normalArmorsDecoder file =
     D.at [ "$", "Keywords" ] csStrings
         |> D.map Set.fromList
         |> D.andThen
             (\keywords ->
                 if Set.member "accessory" keywords then
                     D.succeed Accessory
+                        |> P.custom (sourceDecoder file "Item")
                         |> commonLootDecoder
                         |> P.requiredAt [ "$", "HUDPicture" ] D.string
                         |> D.map NAccessory
 
                 else
                     D.succeed Armor
+                        |> P.custom (sourceDecoder file "Item")
                         |> commonLootDecoder
                         |> P.requiredAt [ "$", "AttachmentName" ] D.string
                         |> D.map NArmor
@@ -581,37 +619,39 @@ normalArmorsDecoder =
         |> D.list
         |> D.field "Item"
         |> single
-        |> D.at [ "MetaData", "Armors" ]
+        |> D.at [ file, "MetaData", "Armors" ]
 
 
 uniqueItemsDecoder : D.Decoder (List UniqueItem)
 uniqueItemsDecoder =
     List.foldl (\di -> D.map (++) >> P.custom di)
         (D.succeed [])
-        [ D.field "Game/Umbra/Loot/Weapons/UniqueWeapons.json" uniqueWeaponsDecoder
-        , D.field "Game/Umbra/Loot/Weapons/UniqueWeaponsMax.json" uniqueWeaponsDecoder
-        , D.field "Game/Umbra/Loot/Weapons/UniqueWeaponsMaxMax.json" uniqueWeaponsDecoder
-        , D.field "Game/Umbra/Loot/Weapons/UniqueShields.json" uniqueWeaponsDecoder
-        , D.field "Game/Umbra/Loot/Armors/Armors_uniques.json" uniqueArmorsDecoder
-        , D.field "Game/Umbra/Loot/Armors/UniqueArmorsMax.json" uniqueArmorsDecoder
-        , D.field "Game/Umbra/Loot/Armors/UniqueArmorsMaxMax.json" uniqueArmorsDecoder
-        , D.field "Game/Umbra/Loot/Armors/UniquesAccessories.json" uniqueArmorsDecoder
+        [ uniqueWeaponsDecoder "Game/Umbra/Loot/Weapons/UniqueWeapons.json"
+        , uniqueWeaponsDecoder "Game/Umbra/Loot/Weapons/UniqueWeaponsMax.json"
+        , uniqueWeaponsDecoder "Game/Umbra/Loot/Weapons/UniqueWeaponsMaxMax.json"
+        , uniqueWeaponsDecoder "Game/Umbra/Loot/Weapons/UniqueShields.json"
+        , uniqueArmorsDecoder "Game/Umbra/Loot/Armors/Armors_uniques.json"
+        , uniqueArmorsDecoder "Game/Umbra/Loot/Armors/UniqueArmorsMax.json"
+        , uniqueArmorsDecoder "Game/Umbra/Loot/Armors/UniqueArmorsMaxMax.json"
+        , uniqueArmorsDecoder "Game/Umbra/Loot/Armors/UniquesAccessories.json"
         ]
 
 
-uniqueWeaponsDecoder : D.Decoder (List UniqueItem)
-uniqueWeaponsDecoder =
+uniqueWeaponsDecoder : String -> D.Decoder (List UniqueItem)
+uniqueWeaponsDecoder file =
     D.at [ "$", "Keywords" ] csStrings
         |> D.map Set.fromList
         |> D.andThen
             (\keywords ->
                 if Set.member "shield" keywords then
                     D.succeed UniqueShield
+                        |> P.custom (sourceDecoder file "Item")
                         |> uniqueLootDecoder
                         |> D.map UShield
 
                 else
                     D.succeed UniqueWeapon
+                        |> P.custom (sourceDecoder file "Item")
                         |> uniqueLootDecoder
                         |> P.custom
                             (D.succeed Range
@@ -623,23 +663,25 @@ uniqueWeaponsDecoder =
         |> D.list
         |> D.field "Item"
         |> single
-        |> D.at [ "MetaData", "Weapons" ]
+        |> D.at [ file, "MetaData", "Weapons" ]
 
 
-uniqueArmorsDecoder : D.Decoder (List UniqueItem)
-uniqueArmorsDecoder =
+uniqueArmorsDecoder : String -> D.Decoder (List UniqueItem)
+uniqueArmorsDecoder file =
     D.at [ "$", "Keywords" ] csStrings
         |> D.map Set.fromList
         |> D.andThen
             (\keywords ->
                 if Set.member "accessory" keywords then
                     D.succeed UniqueAccessory
+                        |> P.custom (sourceDecoder file "Item")
                         |> uniqueLootDecoder
                         |> P.requiredAt [ "$", "HUDPicture" ] D.string
                         |> D.map UAccessory
 
                 else
                     D.succeed UniqueArmor
+                        |> P.custom (sourceDecoder file "Item")
                         |> uniqueLootDecoder
                         |> P.optionalAt [ "$", "AttachmentName" ] (D.string |> D.map Just) Nothing
                         |> D.map UArmor
@@ -647,7 +689,7 @@ uniqueArmorsDecoder =
         |> D.list
         |> D.field "Item"
         |> single
-        |> D.at [ "MetaData", "Armors" ]
+        |> D.at [ file, "MetaData", "Armors" ]
 
 
 cosmeticTransferTemplateDecoder : D.Decoder (Dict String CCosmeticTransferTemplate)
@@ -714,20 +756,20 @@ filteredJsons pred =
 
 
 nonmagicAffixesDecoder : String -> D.Decoder (List NonmagicAffix)
-nonmagicAffixesDecoder filename =
+nonmagicAffixesDecoder file =
     D.succeed NonmagicAffix
+        |> P.custom (sourceDecoder file "Affix")
         |> P.requiredAt [ "$", "AffixId" ] D.string
-        |> P.custom (D.succeed filename)
         |> P.custom (magicEffectDecoder |> D.list |> D.at [ "MagicEffect" ])
         |> D.list
         |> D.at [ "MetaData", "Affix" ]
 
 
 magicAffixesDecoder : String -> D.Decoder (List MagicAffix)
-magicAffixesDecoder filename =
+magicAffixesDecoder file =
     D.succeed MagicAffix
+        |> P.custom (sourceDecoder file "Affix")
         |> P.requiredAt [ "$", "AffixId" ] D.string
-        |> P.custom (D.succeed filename)
         -- |> P.requiredAt [ "$", "Class" ] D.string
         |> P.optionalAt [ "$", "Class" ] (D.string |> D.map Just) Nothing
         |> P.requiredAt [ "$", "AffixType" ] D.string
@@ -802,18 +844,20 @@ magicEffectStatsDecoder =
 skillASTsDecoder : D.Decoder (List SkillAST)
 skillASTsDecoder =
     filteredJsons (String.contains "/Skills/Trees/ActiveSkills/")
-        |> D.map (List.map (Tuple.second >> D.decodeValue skillASTDecoder))
+        |> D.map (List.map (\( f, d ) -> D.decodeValue (skillASTDecoder f) d))
         -- |> D.map (List.filterMap Result.toMaybe)
         |> D.map (Result.Extra.combine >> Result.mapError D.errorToString)
         |> resultDecoder
 
 
-skillASTDecoder : D.Decoder SkillAST
-skillASTDecoder =
+skillASTDecoder : String -> D.Decoder SkillAST
+skillASTDecoder file =
     D.succeed SkillAST
+        |> P.custom (sourceDecoder file "AST")
         |> P.requiredAt [ "$", "Name" ] D.string
         |> P.custom
             (D.succeed SkillASTVariant
+                |> P.custom (sourceDecoder file "SkillVariant")
                 |> P.requiredAt [ "$", "UID" ] D.string
                 |> P.requiredAt [ "$", "Level" ] intString
                 |> P.requiredAt [ "$", "Cost" ] intString
@@ -838,13 +882,14 @@ ignoredSkills =
 skillsDecoder : D.Decoder (List Skill)
 skillsDecoder =
     filteredJsons (\s -> String.contains "/Skills/NewSkills/Player/" s && not (List.any (\c -> String.contains c s) ignoredSkills))
-        |> D.map (List.map (Tuple.second >> D.decodeValue skillDecoder))
+        |> D.map (List.map (\( f, d ) -> D.decodeValue (skillDecoder f) d))
         |> D.map (Result.Extra.combine >> Result.mapError D.errorToString)
         |> resultDecoder
 
 
 type alias SkillDecoder =
-    { uid : String
+    { source : Source
+    , uid : String
     , uiName : Maybe String
     , hudPicture : Maybe String
     , lore : Maybe String
@@ -852,12 +897,13 @@ type alias SkillDecoder =
     }
 
 
-skillDecoder : D.Decoder Skill
-skillDecoder =
+skillDecoder : String -> D.Decoder Skill
+skillDecoder file =
     -- The first skill entry is the skill itself; all following entries are its variants (d3 "runes").
     -- The XML decoding is a bit awkward because lists must be homogeneous. Decode them as an
     -- intermediate structure, SkillDecoder, and transform them to Skills/SkillVariants later.
     D.succeed SkillDecoder
+        |> P.custom (sourceDecoder file "Skill")
         |> P.requiredAt [ "$", "UID" ] D.string
         |> P.optionalAt [ "HUD", "0", "$", "UIName" ] (D.string |> D.map Just) Nothing
         |> P.optionalAt [ "HUD", "0", "$", "HUDPicture" ] (D.string |> D.map Just) Nothing
@@ -872,7 +918,8 @@ skillDecoder =
                         case ( s.uiName, s.hudPicture ) of
                             ( Just uiName, Just hudPicture ) ->
                                 D.succeed
-                                    { uid = s.uid
+                                    { source = s.source
+                                    , uid = s.uid
                                     , uiName = uiName
                                     , lore = s.lore
                                     , hudPicture = hudPicture
@@ -883,7 +930,8 @@ skillDecoder =
                                                 (\v ->
                                                     Maybe.map
                                                         (\vUiName ->
-                                                            { uid = v.uid
+                                                            { source = v.source
+                                                            , uid = v.uid
                                                             , uiName = vUiName
                                                             , lore = v.lore
                                                             }
@@ -901,6 +949,68 @@ skillDecoder =
                     [] ->
                         D.fail "skill has no instances"
             )
+
+
+sourceDecoder : String -> String -> D.Decoder Source
+sourceDecoder file tag =
+    D.map (Source file)
+        (sourceNodeDecoder |> D.map (\n -> n tag))
+
+
+{-| Intermediate data structure for decoding source nodes, as used in `/source/xxx` urls
+
+Game files are originally in xml.
+We convert that to json, and `Datamine` parses the json - Elm's much faster at parsing json than xml.
+We convert the json back to xml-ish nodes for presentation.
+
+Seems needlessly complex - but Elm xml parsing really was slow, and source excerpts are a pretty cool feature!
+
+-}
+type
+    DecodingSourceNode
+    -- Child nodes; most keys. Tag names are the json key, added afterward
+    = DecodingSourceNode (List (String -> SourceNode))
+      -- Attributes, the "$"
+    | DecodingAttrs (List ( String, String ))
+      -- a single <TAG /> has json {... TAG: [""] ...}, and decodes to this. Not sure what's going on here.
+    | DecodingEmptyNode String
+
+
+sourceNodeDecoder : D.Decoder (String -> SourceNode)
+sourceNodeDecoder =
+    D.map2 SourceNode
+        (D.keyValuePairs D.string |> D.field "$" |> D.maybe |> D.map (Maybe.withDefault []))
+        (D.keyValuePairs
+            (D.lazy
+                (\_ ->
+                    D.oneOf
+                        [ D.list sourceNodeDecoder |> D.map DecodingSourceNode
+                        , single D.string |> D.map DecodingEmptyNode
+
+                        -- this should only run once, for the "$" key - attributes
+                        , D.keyValuePairs D.string |> D.map DecodingAttrs
+                        ]
+                )
+            )
+            |> D.map
+                (List.filter (\( k, v ) -> k /= "$")
+                    >> List.map
+                        (\( k, mv ) ->
+                            case mv of
+                                DecodingSourceNode nodes ->
+                                    nodes |> List.map (\n -> n k) |> Ok
+
+                                DecodingEmptyNode "" ->
+                                    Ok []
+
+                                _ ->
+                                    Err "decodeSourceNode fail"
+                        )
+                    >> Result.Extra.combine
+                    >> Result.map (List.concat >> SourceNodeChildren)
+                )
+            |> resultDecoder
+        )
 
 
 rootLangDecoder : D.Decoder (Dict String String)
