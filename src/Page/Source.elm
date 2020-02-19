@@ -202,15 +202,35 @@ viewSourceNode indentN node =
         indent =
             String.repeat indentN " "
 
+        openTag : String -> List ( String, String ) -> String
+        openTag tag attrs0 =
+            let
+                attrs =
+                    attrs0 |> List.map (\( k, v ) -> k ++ "=\"" ++ v ++ "\"")
+
+                line =
+                    String.join " " <| tag :: attrs
+            in
+            if String.length line <= 80 then
+                line
+
+            else
+                (tag
+                    :: List.map ((++) (indent ++ "    ")) attrs
+                    |> String.join "\n"
+                )
+                    ++ "\n"
+                    ++ indent
+
         ( open, children, close ) =
             if childNodes == [] then
-                ( indent ++ "<" ++ String.join " " (node.tag :: List.map (\( k, v ) -> k ++ "=\"" ++ v ++ "\"") node.attrs) ++ " />"
+                ( indent ++ "<" ++ openTag node.tag node.attrs ++ " />"
                 , ""
                 , ""
                 )
 
             else
-                ( indent ++ "<" ++ String.join " " (node.tag :: List.map (\( k, v ) -> k ++ "=\"" ++ v ++ "\"") node.attrs) ++ ">"
+                ( indent ++ "<" ++ openTag node.tag node.attrs ++ ">"
                 , "\n" ++ String.join "\n" (List.map (viewSourceNode (indentN + 2)) childNodes) ++ "\n" ++ indent
                 , "</" ++ node.tag ++ ">"
                 )
