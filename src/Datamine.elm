@@ -47,7 +47,8 @@ type alias Flag =
 
 
 type alias Datamine =
-    { loot : List NormalItem
+    { revision : Revision
+    , loot : List NormalItem
     , uniqueLoot : List UniqueItem
     , skills : List Skill
     , skillASTs : List SkillAST
@@ -69,7 +70,8 @@ type alias Datamine =
 
 
 type alias RawDatamine =
-    { loot : List NormalItem
+    { revision : Revision
+    , loot : List NormalItem
     , uniqueLoot : List UniqueItem
     , skills : List Skill
     , skillASTs : List SkillAST
@@ -83,7 +85,8 @@ type alias RawDatamine =
 
 index : RawDatamine -> Datamine
 index raw =
-    { loot = raw.loot
+    { revision = raw.revision
+    , loot = raw.loot
     , uniqueLoot = raw.uniqueLoot
     , skills = raw.skills
     , skillASTs = raw.skillASTs
@@ -101,6 +104,12 @@ index raw =
     , gemsByName = raw.gems |> Dict.Extra.fromListBy (.name >> String.toLower)
     , nonmagicAffixesById = raw.affixes.nonmagic |> Dict.Extra.fromListBy (.affixId >> String.toLower)
     , magicAffixesById = raw.affixes.magic |> Dict.Extra.fromListBy (.affixId >> String.toLower)
+    }
+
+
+type alias Revision =
+    { buildRevision : String
+    , date : String
     }
 
 
@@ -485,6 +494,7 @@ magicAffixes dm =
 jsonDecoder : D.Decoder Datamine
 jsonDecoder =
     D.succeed RawDatamine
+        |> P.custom revisionDecoder
         |> P.custom normalItemsDecoder
         |> P.custom uniqueItemsDecoder
         |> P.custom skillsDecoder
@@ -495,6 +505,13 @@ jsonDecoder =
         |> P.custom gemsDecoder
         |> P.custom rootLangDecoder
         |> D.map index
+
+
+revisionDecoder : D.Decoder Revision
+revisionDecoder =
+    D.map2 Revision
+        (D.at [ "revision.json", "build-revision" ] D.string)
+        (D.at [ "revision.json", "date" ] D.string)
 
 
 gemsDecoder : D.Decoder (List Gem)

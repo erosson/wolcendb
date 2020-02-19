@@ -6,6 +6,7 @@ Changelog
 #### 2020-02-19
 - Added `[source]` links throughout the site. These link to excerpts from the Wolcen game files that WolcenDB gets its data from.
   - This is useful if Wolcen and WolcenDB are still missing data you're interested in (ex. many skill variants), or for tool developers.
+- This changelog page now says which Wolcen version WolcenDB was built from.
 
 #### 2020-02-18
 - Added gems.
