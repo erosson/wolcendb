@@ -3,6 +3,7 @@ module View.Affix exposing
     , formatRarity
     , viewAffix
     , viewAffixes
+    , viewEffect
     , viewItem
     , viewMagicId
     , viewMagicIds

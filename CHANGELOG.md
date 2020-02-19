@@ -4,6 +4,7 @@ Changelog
 ---
 
 #### 2020-02-18
+- Added gems.
 - Unique armors and accessories are now categorized correctly.
 - Fixed a bug that caused missing images for ~~some~~ all armors.
 

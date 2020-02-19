@@ -10,6 +10,7 @@ import Html.Events as E exposing (..)
 import Maybe.Extra
 import Page.Affixes
 import Page.Changelog
+import Page.Gems
 import Page.Home
 import Page.NormalItem
 import Page.NormalItems
@@ -207,6 +208,9 @@ viewBody mmodel =
 
                         Route.Affixes ->
                             Page.Affixes.view model.datamine
+
+                        Route.Gems ->
+                            Page.Gems.view model.datamine
 
                         Route.Changelog ->
                             Page.Changelog.view model

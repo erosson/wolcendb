@@ -14,101 +14,103 @@ import game_10 from "../datamine/Game/Umbra/Loot/Weapons/UniqueWeaponsMaxMax.jso
 import game_11 from "../datamine/Game/Umbra/Loot/Weapons/Weapons.json"
 import game_12 from "../datamine/Game/Umbra/Loot/MagicEffects/Affixes/Armors_Weapons/AffixesAccessories.json"
 import game_13 from "../datamine/Game/Umbra/Loot/MagicEffects/Affixes/Armors_Weapons/AffixesArmors.json"
-import game_14 from "../datamine/Game/Umbra/Loot/MagicEffects/Affixes/Armors_Weapons/AffixesImplicit.json"
-import game_15 from "../datamine/Game/Umbra/Loot/MagicEffects/Affixes/Armors_Weapons/AffixesUniques.json"
-import game_16 from "../datamine/Game/Umbra/Loot/MagicEffects/Affixes/Armors_Weapons/AffixesUniquesMax.json"
-import game_17 from "../datamine/Game/Umbra/Loot/MagicEffects/Affixes/Armors_Weapons/AffixesUniquesMaxMax.json"
-import game_18 from "../datamine/Game/Umbra/Loot/MagicEffects/Affixes/Armors_Weapons/AffixesWeapons.json"
-import game_19 from "../datamine/Game/Umbra/Skills/NewSkills/Player/Player_ActiveDodge.json"
-import game_20 from "../datamine/Game/Umbra/Skills/NewSkills/Player/Player_AetherBlade.json"
-import game_21 from "../datamine/Game/Umbra/Skills/NewSkills/Player/Player_AetherBlast.json"
-import game_22 from "../datamine/Game/Umbra/Skills/NewSkills/Player/Player_ArrowsRain.json"
-import game_23 from "../datamine/Game/Umbra/Skills/NewSkills/Player/Player_AutoDash.json"
-import game_24 from "../datamine/Game/Umbra/Skills/NewSkills/Player/Player_Bladeslinger.json"
-import game_25 from "../datamine/Game/Umbra/Skills/NewSkills/Player/Player_Bomb.json"
-import game_26 from "../datamine/Game/Umbra/Skills/NewSkills/Player/Player_BrutalStrike.json"
-import game_27 from "../datamine/Game/Umbra/Skills/NewSkills/Player/Player_BullEye.json"
-import game_28 from "../datamine/Game/Umbra/Skills/NewSkills/Player/Player_ChainLightning.json"
-import game_29 from "../datamine/Game/Umbra/Skills/NewSkills/Player/Player_Charge.json"
-import game_30 from "../datamine/Game/Umbra/Skills/NewSkills/Player/Player_CorpseExplosion.json"
-import game_31 from "../datamine/Game/Umbra/Skills/NewSkills/Player/Player_DeathMark_Explosion.json"
-import game_32 from "../datamine/Game/Umbra/Skills/NewSkills/Player/Player_DeathMark.json"
-import game_33 from "../datamine/Game/Umbra/Skills/NewSkills/Player/Player_DualStrike.json"
-import game_34 from "../datamine/Game/Umbra/Skills/NewSkills/Player/Player_Fire_Fireball.json"
-import game_35 from "../datamine/Game/Umbra/Skills/NewSkills/Player/Player_Frost_FrostComet.json"
-import game_36 from "../datamine/Game/Umbra/Skills/NewSkills/Player/Player_Frost_FrostLance_Explosion.json"
-import game_37 from "../datamine/Game/Umbra/Skills/NewSkills/Player/Player_Frost_FrostLance.json"
-import game_38 from "../datamine/Game/Umbra/Skills/NewSkills/Player/Player_Frost_FrostNova.json"
-import game_39 from "../datamine/Game/Umbra/Skills/NewSkills/Player/Player_FrostNova_Zone_Shadow.json"
-import game_40 from "../datamine/Game/Umbra/Skills/NewSkills/Player/Player_FrostNova_Zone.json"
-import game_41 from "../datamine/Game/Umbra/Skills/NewSkills/Player/Player_Hammer.json"
-import game_42 from "../datamine/Game/Umbra/Skills/NewSkills/Player/Player_HolyDive.json"
-import game_43 from "../datamine/Game/Umbra/Skills/NewSkills/Player/Player_Hook.json"
-import game_44 from "../datamine/Game/Umbra/Skills/NewSkills/Player/Player_Introduction_LightningAttack.json"
-import game_45 from "../datamine/Game/Umbra/Skills/NewSkills/Player/Player_Ironguard.json"
-import game_46 from "../datamine/Game/Umbra/Skills/NewSkills/Player/Player_Laceration.json"
-import game_47 from "../datamine/Game/Umbra/Skills/NewSkills/Player/Player_Laser.json"
-import game_48 from "../datamine/Game/Umbra/Skills/NewSkills/Player/Player_Leap.json"
-import game_49 from "../datamine/Game/Umbra/Skills/NewSkills/Player/Player_Possession.json"
-import game_50 from "../datamine/Game/Umbra/Skills/NewSkills/Player/Player_Reave.json"
-import game_51 from "../datamine/Game/Umbra/Skills/NewSkills/Player/Player_RingOfPain.json"
-import game_52 from "../datamine/Game/Umbra/Skills/NewSkills/Player/Player_SacredGround.json"
-import game_53 from "../datamine/Game/Umbra/Skills/NewSkills/Player/Player_SmokeBomb.json"
-import game_54 from "../datamine/Game/Umbra/Skills/NewSkills/Player/Player_Sniper.json"
-import game_55 from "../datamine/Game/Umbra/Skills/NewSkills/Player/Player_Solarfall.json"
-import game_56 from "../datamine/Game/Umbra/Skills/NewSkills/Player/Player_SpreadShot.json"
-import game_57 from "../datamine/Game/Umbra/Skills/NewSkills/Player/Player_Summon_Champion.json"
-import game_58 from "../datamine/Game/Umbra/Skills/NewSkills/Player/Player_Summon_Melee.json"
-import game_59 from "../datamine/Game/Umbra/Skills/NewSkills/Player/Player_Summon_Ranged.json"
-import game_60 from "../datamine/Game/Umbra/Skills/NewSkills/Player/Player_Teleport.json"
-import game_61 from "../datamine/Game/Umbra/Skills/NewSkills/Player/Player_Turret.json"
-import game_62 from "../datamine/Game/Umbra/Skills/NewSkills/Player/Player_UsePotion.json"
-import game_63 from "../datamine/Game/Umbra/Skills/NewSkills/Player/Player_Vault.json"
-import game_64 from "../datamine/Game/Umbra/Skills/NewSkills/Player/Player_Vortex.json"
-import game_65 from "../datamine/Game/Umbra/Skills/NewSkills/Player/Player_WarCry.json"
-import game_66 from "../datamine/Game/Umbra/Skills/NewSkills/Player/Player_WhirlWind.json"
-import game_67 from "../datamine/Game/Umbra/Skills/Trees/ActiveSkills/AST_AetherBlade.json"
-import game_68 from "../datamine/Game/Umbra/Skills/Trees/ActiveSkills/AST_AetherBlast.json"
-import game_69 from "../datamine/Game/Umbra/Skills/Trees/ActiveSkills/AST_ArrowsRain.json"
-import game_70 from "../datamine/Game/Umbra/Skills/Trees/ActiveSkills/AST_Bladeslinger.json"
-import game_71 from "../datamine/Game/Umbra/Skills/Trees/ActiveSkills/AST_Bomb.json"
-import game_72 from "../datamine/Game/Umbra/Skills/Trees/ActiveSkills/AST_Brutal_Strike.json"
-import game_73 from "../datamine/Game/Umbra/Skills/Trees/ActiveSkills/AST_BullEye.json"
-import game_74 from "../datamine/Game/Umbra/Skills/Trees/ActiveSkills/AST_ChainLightning.json"
-import game_75 from "../datamine/Game/Umbra/Skills/Trees/ActiveSkills/AST_Charge.json"
-import game_76 from "../datamine/Game/Umbra/Skills/Trees/ActiveSkills/AST_CorpseExplosion.json"
-import game_77 from "../datamine/Game/Umbra/Skills/Trees/ActiveSkills/AST_DeathMark.json"
-import game_78 from "../datamine/Game/Umbra/Skills/Trees/ActiveSkills/AST_DualStrike.json"
-import game_79 from "../datamine/Game/Umbra/Skills/Trees/ActiveSkills/AST_FireBall.json"
-import game_80 from "../datamine/Game/Umbra/Skills/Trees/ActiveSkills/AST_Frost_Nova.json"
-import game_81 from "../datamine/Game/Umbra/Skills/Trees/ActiveSkills/AST_FrostComet.json"
-import game_82 from "../datamine/Game/Umbra/Skills/Trees/ActiveSkills/AST_FrostLance.json"
-import game_83 from "../datamine/Game/Umbra/Skills/Trees/ActiveSkills/AST_Hammer.json"
-import game_84 from "../datamine/Game/Umbra/Skills/Trees/ActiveSkills/AST_HolyDive.json"
-import game_85 from "../datamine/Game/Umbra/Skills/Trees/ActiveSkills/AST_Hook.json"
-import game_86 from "../datamine/Game/Umbra/Skills/Trees/ActiveSkills/AST_Ironguard.json"
-import game_87 from "../datamine/Game/Umbra/Skills/Trees/ActiveSkills/AST_Laceration.json"
-import game_88 from "../datamine/Game/Umbra/Skills/Trees/ActiveSkills/AST_Laser.json"
-import game_89 from "../datamine/Game/Umbra/Skills/Trees/ActiveSkills/AST_Leap.json"
-import game_90 from "../datamine/Game/Umbra/Skills/Trees/ActiveSkills/AST_Possession.json"
-import game_91 from "../datamine/Game/Umbra/Skills/Trees/ActiveSkills/AST_Reave.json"
-import game_92 from "../datamine/Game/Umbra/Skills/Trees/ActiveSkills/AST_RingOfPain.json"
-import game_93 from "../datamine/Game/Umbra/Skills/Trees/ActiveSkills/AST_SacredGround.json"
-import game_94 from "../datamine/Game/Umbra/Skills/Trees/ActiveSkills/AST_SmokeBomb.json"
-import game_95 from "../datamine/Game/Umbra/Skills/Trees/ActiveSkills/AST_Sniper.json"
-import game_96 from "../datamine/Game/Umbra/Skills/Trees/ActiveSkills/AST_Solarfall.json"
-import game_97 from "../datamine/Game/Umbra/Skills/Trees/ActiveSkills/AST_SpreadShot.json"
-import game_98 from "../datamine/Game/Umbra/Skills/Trees/ActiveSkills/AST_SummonChampion.json"
-import game_99 from "../datamine/Game/Umbra/Skills/Trees/ActiveSkills/AST_SummonMelee.json"
-import game_100 from "../datamine/Game/Umbra/Skills/Trees/ActiveSkills/AST_SummonRanged.json"
-import game_101 from "../datamine/Game/Umbra/Skills/Trees/ActiveSkills/AST_Teleport.json"
-import game_102 from "../datamine/Game/Umbra/Skills/Trees/ActiveSkills/AST_Turret.json"
-import game_103 from "../datamine/Game/Umbra/Skills/Trees/ActiveSkills/AST_Vault.json"
-import game_104 from "../datamine/Game/Umbra/Skills/Trees/ActiveSkills/AST_Vortex.json"
-import game_105 from "../datamine/Game/Umbra/Skills/Trees/ActiveSkills/AST_WarCry.json"
-import game_106 from "../datamine/Game/Umbra/Skills/Trees/ActiveSkills/AST_WhirlWind.json"
-import game_107 from "../datamine/Game/Umbra/SkinParams/WeaponSkins/CosmeticWeaponDescriptorBankGameplay.json"
-import game_108 from "../datamine/Game/Umbra/SkinParams/TransferTemplate/TransferTemplateBank.json"
+import game_14 from "../datamine/Game/Umbra/Loot/MagicEffects/Affixes/Armors_Weapons/AffixesGems.json"
+import game_15 from "../datamine/Game/Umbra/Loot/MagicEffects/Affixes/Armors_Weapons/AffixesImplicit.json"
+import game_16 from "../datamine/Game/Umbra/Loot/MagicEffects/Affixes/Armors_Weapons/AffixesUniques.json"
+import game_17 from "../datamine/Game/Umbra/Loot/MagicEffects/Affixes/Armors_Weapons/AffixesUniquesMax.json"
+import game_18 from "../datamine/Game/Umbra/Loot/MagicEffects/Affixes/Armors_Weapons/AffixesUniquesMaxMax.json"
+import game_19 from "../datamine/Game/Umbra/Loot/MagicEffects/Affixes/Armors_Weapons/AffixesWeapons.json"
+import game_20 from "../datamine/Game/Umbra/Skills/NewSkills/Player/Player_ActiveDodge.json"
+import game_21 from "../datamine/Game/Umbra/Skills/NewSkills/Player/Player_AetherBlade.json"
+import game_22 from "../datamine/Game/Umbra/Skills/NewSkills/Player/Player_AetherBlast.json"
+import game_23 from "../datamine/Game/Umbra/Skills/NewSkills/Player/Player_ArrowsRain.json"
+import game_24 from "../datamine/Game/Umbra/Skills/NewSkills/Player/Player_AutoDash.json"
+import game_25 from "../datamine/Game/Umbra/Skills/NewSkills/Player/Player_Bladeslinger.json"
+import game_26 from "../datamine/Game/Umbra/Skills/NewSkills/Player/Player_Bomb.json"
+import game_27 from "../datamine/Game/Umbra/Skills/NewSkills/Player/Player_BrutalStrike.json"
+import game_28 from "../datamine/Game/Umbra/Skills/NewSkills/Player/Player_BullEye.json"
+import game_29 from "../datamine/Game/Umbra/Skills/NewSkills/Player/Player_ChainLightning.json"
+import game_30 from "../datamine/Game/Umbra/Skills/NewSkills/Player/Player_Charge.json"
+import game_31 from "../datamine/Game/Umbra/Skills/NewSkills/Player/Player_CorpseExplosion.json"
+import game_32 from "../datamine/Game/Umbra/Skills/NewSkills/Player/Player_DeathMark_Explosion.json"
+import game_33 from "../datamine/Game/Umbra/Skills/NewSkills/Player/Player_DeathMark.json"
+import game_34 from "../datamine/Game/Umbra/Skills/NewSkills/Player/Player_DualStrike.json"
+import game_35 from "../datamine/Game/Umbra/Skills/NewSkills/Player/Player_Fire_Fireball.json"
+import game_36 from "../datamine/Game/Umbra/Skills/NewSkills/Player/Player_Frost_FrostComet.json"
+import game_37 from "../datamine/Game/Umbra/Skills/NewSkills/Player/Player_Frost_FrostLance_Explosion.json"
+import game_38 from "../datamine/Game/Umbra/Skills/NewSkills/Player/Player_Frost_FrostLance.json"
+import game_39 from "../datamine/Game/Umbra/Skills/NewSkills/Player/Player_Frost_FrostNova.json"
+import game_40 from "../datamine/Game/Umbra/Skills/NewSkills/Player/Player_FrostNova_Zone_Shadow.json"
+import game_41 from "../datamine/Game/Umbra/Skills/NewSkills/Player/Player_FrostNova_Zone.json"
+import game_42 from "../datamine/Game/Umbra/Skills/NewSkills/Player/Player_Hammer.json"
+import game_43 from "../datamine/Game/Umbra/Skills/NewSkills/Player/Player_HolyDive.json"
+import game_44 from "../datamine/Game/Umbra/Skills/NewSkills/Player/Player_Hook.json"
+import game_45 from "../datamine/Game/Umbra/Skills/NewSkills/Player/Player_Introduction_LightningAttack.json"
+import game_46 from "../datamine/Game/Umbra/Skills/NewSkills/Player/Player_Ironguard.json"
+import game_47 from "../datamine/Game/Umbra/Skills/NewSkills/Player/Player_Laceration.json"
+import game_48 from "../datamine/Game/Umbra/Skills/NewSkills/Player/Player_Laser.json"
+import game_49 from "../datamine/Game/Umbra/Skills/NewSkills/Player/Player_Leap.json"
+import game_50 from "../datamine/Game/Umbra/Skills/NewSkills/Player/Player_Possession.json"
+import game_51 from "../datamine/Game/Umbra/Skills/NewSkills/Player/Player_Reave.json"
+import game_52 from "../datamine/Game/Umbra/Skills/NewSkills/Player/Player_RingOfPain.json"
+import game_53 from "../datamine/Game/Umbra/Skills/NewSkills/Player/Player_SacredGround.json"
+import game_54 from "../datamine/Game/Umbra/Skills/NewSkills/Player/Player_SmokeBomb.json"
+import game_55 from "../datamine/Game/Umbra/Skills/NewSkills/Player/Player_Sniper.json"
+import game_56 from "../datamine/Game/Umbra/Skills/NewSkills/Player/Player_Solarfall.json"
+import game_57 from "../datamine/Game/Umbra/Skills/NewSkills/Player/Player_SpreadShot.json"
+import game_58 from "../datamine/Game/Umbra/Skills/NewSkills/Player/Player_Summon_Champion.json"
+import game_59 from "../datamine/Game/Umbra/Skills/NewSkills/Player/Player_Summon_Melee.json"
+import game_60 from "../datamine/Game/Umbra/Skills/NewSkills/Player/Player_Summon_Ranged.json"
+import game_61 from "../datamine/Game/Umbra/Skills/NewSkills/Player/Player_Teleport.json"
+import game_62 from "../datamine/Game/Umbra/Skills/NewSkills/Player/Player_Turret.json"
+import game_63 from "../datamine/Game/Umbra/Skills/NewSkills/Player/Player_UsePotion.json"
+import game_64 from "../datamine/Game/Umbra/Skills/NewSkills/Player/Player_Vault.json"
+import game_65 from "../datamine/Game/Umbra/Skills/NewSkills/Player/Player_Vortex.json"
+import game_66 from "../datamine/Game/Umbra/Skills/NewSkills/Player/Player_WarCry.json"
+import game_67 from "../datamine/Game/Umbra/Skills/NewSkills/Player/Player_WhirlWind.json"
+import game_68 from "../datamine/Game/Umbra/Skills/Trees/ActiveSkills/AST_AetherBlade.json"
+import game_69 from "../datamine/Game/Umbra/Skills/Trees/ActiveSkills/AST_AetherBlast.json"
+import game_70 from "../datamine/Game/Umbra/Skills/Trees/ActiveSkills/AST_ArrowsRain.json"
+import game_71 from "../datamine/Game/Umbra/Skills/Trees/ActiveSkills/AST_Bladeslinger.json"
+import game_72 from "../datamine/Game/Umbra/Skills/Trees/ActiveSkills/AST_Bomb.json"
+import game_73 from "../datamine/Game/Umbra/Skills/Trees/ActiveSkills/AST_Brutal_Strike.json"
+import game_74 from "../datamine/Game/Umbra/Skills/Trees/ActiveSkills/AST_BullEye.json"
+import game_75 from "../datamine/Game/Umbra/Skills/Trees/ActiveSkills/AST_ChainLightning.json"
+import game_76 from "../datamine/Game/Umbra/Skills/Trees/ActiveSkills/AST_Charge.json"
+import game_77 from "../datamine/Game/Umbra/Skills/Trees/ActiveSkills/AST_CorpseExplosion.json"
+import game_78 from "../datamine/Game/Umbra/Skills/Trees/ActiveSkills/AST_DeathMark.json"
+import game_79 from "../datamine/Game/Umbra/Skills/Trees/ActiveSkills/AST_DualStrike.json"
+import game_80 from "../datamine/Game/Umbra/Skills/Trees/ActiveSkills/AST_FireBall.json"
+import game_81 from "../datamine/Game/Umbra/Skills/Trees/ActiveSkills/AST_Frost_Nova.json"
+import game_82 from "../datamine/Game/Umbra/Skills/Trees/ActiveSkills/AST_FrostComet.json"
+import game_83 from "../datamine/Game/Umbra/Skills/Trees/ActiveSkills/AST_FrostLance.json"
+import game_84 from "../datamine/Game/Umbra/Skills/Trees/ActiveSkills/AST_Hammer.json"
+import game_85 from "../datamine/Game/Umbra/Skills/Trees/ActiveSkills/AST_HolyDive.json"
+import game_86 from "../datamine/Game/Umbra/Skills/Trees/ActiveSkills/AST_Hook.json"
+import game_87 from "../datamine/Game/Umbra/Skills/Trees/ActiveSkills/AST_Ironguard.json"
+import game_88 from "../datamine/Game/Umbra/Skills/Trees/ActiveSkills/AST_Laceration.json"
+import game_89 from "../datamine/Game/Umbra/Skills/Trees/ActiveSkills/AST_Laser.json"
+import game_90 from "../datamine/Game/Umbra/Skills/Trees/ActiveSkills/AST_Leap.json"
+import game_91 from "../datamine/Game/Umbra/Skills/Trees/ActiveSkills/AST_Possession.json"
+import game_92 from "../datamine/Game/Umbra/Skills/Trees/ActiveSkills/AST_Reave.json"
+import game_93 from "../datamine/Game/Umbra/Skills/Trees/ActiveSkills/AST_RingOfPain.json"
+import game_94 from "../datamine/Game/Umbra/Skills/Trees/ActiveSkills/AST_SacredGround.json"
+import game_95 from "../datamine/Game/Umbra/Skills/Trees/ActiveSkills/AST_SmokeBomb.json"
+import game_96 from "../datamine/Game/Umbra/Skills/Trees/ActiveSkills/AST_Sniper.json"
+import game_97 from "../datamine/Game/Umbra/Skills/Trees/ActiveSkills/AST_Solarfall.json"
+import game_98 from "../datamine/Game/Umbra/Skills/Trees/ActiveSkills/AST_SpreadShot.json"
+import game_99 from "../datamine/Game/Umbra/Skills/Trees/ActiveSkills/AST_SummonChampion.json"
+import game_100 from "../datamine/Game/Umbra/Skills/Trees/ActiveSkills/AST_SummonMelee.json"
+import game_101 from "../datamine/Game/Umbra/Skills/Trees/ActiveSkills/AST_SummonRanged.json"
+import game_102 from "../datamine/Game/Umbra/Skills/Trees/ActiveSkills/AST_Teleport.json"
+import game_103 from "../datamine/Game/Umbra/Skills/Trees/ActiveSkills/AST_Turret.json"
+import game_104 from "../datamine/Game/Umbra/Skills/Trees/ActiveSkills/AST_Vault.json"
+import game_105 from "../datamine/Game/Umbra/Skills/Trees/ActiveSkills/AST_Vortex.json"
+import game_106 from "../datamine/Game/Umbra/Skills/Trees/ActiveSkills/AST_WarCry.json"
+import game_107 from "../datamine/Game/Umbra/Skills/Trees/ActiveSkills/AST_WhirlWind.json"
+import game_108 from "../datamine/Game/Umbra/SkinParams/WeaponSkins/CosmeticWeaponDescriptorBankGameplay.json"
+import game_109 from "../datamine/Game/Umbra/SkinParams/TransferTemplate/TransferTemplateBank.json"
+import game_110 from "../datamine/Game/Umbra/Loot/Gems/gems.json"
 import localization_0 from "!!json-loader!@erosson/xlsx-loader!../datamine/localization/text_ui_Activeskills.xml"
 import localization_1 from "!!json-loader!@erosson/xlsx-loader!../datamine/localization/text_ui_EIM.xml"
 import localization_2 from "!!json-loader!@erosson/xlsx-loader!../datamine/localization/text_ui_Loot.xml"
@@ -128,101 +130,103 @@ export default {
   "Game/Umbra/Loot/Weapons/Weapons.json": game_11,
   "Game/Umbra/Loot/MagicEffects/Affixes/Armors_Weapons/AffixesAccessories.json": game_12,
   "Game/Umbra/Loot/MagicEffects/Affixes/Armors_Weapons/AffixesArmors.json": game_13,
-  "Game/Umbra/Loot/MagicEffects/Affixes/Armors_Weapons/AffixesImplicit.json": game_14,
-  "Game/Umbra/Loot/MagicEffects/Affixes/Armors_Weapons/AffixesUniques.json": game_15,
-  "Game/Umbra/Loot/MagicEffects/Affixes/Armors_Weapons/AffixesUniquesMax.json": game_16,
-  "Game/Umbra/Loot/MagicEffects/Affixes/Armors_Weapons/AffixesUniquesMaxMax.json": game_17,
-  "Game/Umbra/Loot/MagicEffects/Affixes/Armors_Weapons/AffixesWeapons.json": game_18,
-  "Game/Umbra/Skills/NewSkills/Player/Player_ActiveDodge.json": game_19,
-  "Game/Umbra/Skills/NewSkills/Player/Player_AetherBlade.json": game_20,
-  "Game/Umbra/Skills/NewSkills/Player/Player_AetherBlast.json": game_21,
-  "Game/Umbra/Skills/NewSkills/Player/Player_ArrowsRain.json": game_22,
-  "Game/Umbra/Skills/NewSkills/Player/Player_AutoDash.json": game_23,
-  "Game/Umbra/Skills/NewSkills/Player/Player_Bladeslinger.json": game_24,
-  "Game/Umbra/Skills/NewSkills/Player/Player_Bomb.json": game_25,
-  "Game/Umbra/Skills/NewSkills/Player/Player_BrutalStrike.json": game_26,
-  "Game/Umbra/Skills/NewSkills/Player/Player_BullEye.json": game_27,
-  "Game/Umbra/Skills/NewSkills/Player/Player_ChainLightning.json": game_28,
-  "Game/Umbra/Skills/NewSkills/Player/Player_Charge.json": game_29,
-  "Game/Umbra/Skills/NewSkills/Player/Player_CorpseExplosion.json": game_30,
-  "Game/Umbra/Skills/NewSkills/Player/Player_DeathMark_Explosion.json": game_31,
-  "Game/Umbra/Skills/NewSkills/Player/Player_DeathMark.json": game_32,
-  "Game/Umbra/Skills/NewSkills/Player/Player_DualStrike.json": game_33,
-  "Game/Umbra/Skills/NewSkills/Player/Player_Fire_Fireball.json": game_34,
-  "Game/Umbra/Skills/NewSkills/Player/Player_Frost_FrostComet.json": game_35,
-  "Game/Umbra/Skills/NewSkills/Player/Player_Frost_FrostLance_Explosion.json": game_36,
-  "Game/Umbra/Skills/NewSkills/Player/Player_Frost_FrostLance.json": game_37,
-  "Game/Umbra/Skills/NewSkills/Player/Player_Frost_FrostNova.json": game_38,
-  "Game/Umbra/Skills/NewSkills/Player/Player_FrostNova_Zone_Shadow.json": game_39,
-  "Game/Umbra/Skills/NewSkills/Player/Player_FrostNova_Zone.json": game_40,
-  "Game/Umbra/Skills/NewSkills/Player/Player_Hammer.json": game_41,
-  "Game/Umbra/Skills/NewSkills/Player/Player_HolyDive.json": game_42,
-  "Game/Umbra/Skills/NewSkills/Player/Player_Hook.json": game_43,
-  "Game/Umbra/Skills/NewSkills/Player/Player_Introduction_LightningAttack.json": game_44,
-  "Game/Umbra/Skills/NewSkills/Player/Player_Ironguard.json": game_45,
-  "Game/Umbra/Skills/NewSkills/Player/Player_Laceration.json": game_46,
-  "Game/Umbra/Skills/NewSkills/Player/Player_Laser.json": game_47,
-  "Game/Umbra/Skills/NewSkills/Player/Player_Leap.json": game_48,
-  "Game/Umbra/Skills/NewSkills/Player/Player_Possession.json": game_49,
-  "Game/Umbra/Skills/NewSkills/Player/Player_Reave.json": game_50,
-  "Game/Umbra/Skills/NewSkills/Player/Player_RingOfPain.json": game_51,
-  "Game/Umbra/Skills/NewSkills/Player/Player_SacredGround.json": game_52,
-  "Game/Umbra/Skills/NewSkills/Player/Player_SmokeBomb.json": game_53,
-  "Game/Umbra/Skills/NewSkills/Player/Player_Sniper.json": game_54,
-  "Game/Umbra/Skills/NewSkills/Player/Player_Solarfall.json": game_55,
-  "Game/Umbra/Skills/NewSkills/Player/Player_SpreadShot.json": game_56,
-  "Game/Umbra/Skills/NewSkills/Player/Player_Summon_Champion.json": game_57,
-  "Game/Umbra/Skills/NewSkills/Player/Player_Summon_Melee.json": game_58,
-  "Game/Umbra/Skills/NewSkills/Player/Player_Summon_Ranged.json": game_59,
-  "Game/Umbra/Skills/NewSkills/Player/Player_Teleport.json": game_60,
-  "Game/Umbra/Skills/NewSkills/Player/Player_Turret.json": game_61,
-  "Game/Umbra/Skills/NewSkills/Player/Player_UsePotion.json": game_62,
-  "Game/Umbra/Skills/NewSkills/Player/Player_Vault.json": game_63,
-  "Game/Umbra/Skills/NewSkills/Player/Player_Vortex.json": game_64,
-  "Game/Umbra/Skills/NewSkills/Player/Player_WarCry.json": game_65,
-  "Game/Umbra/Skills/NewSkills/Player/Player_WhirlWind.json": game_66,
-  "Game/Umbra/Skills/Trees/ActiveSkills/AST_AetherBlade.json": game_67,
-  "Game/Umbra/Skills/Trees/ActiveSkills/AST_AetherBlast.json": game_68,
-  "Game/Umbra/Skills/Trees/ActiveSkills/AST_ArrowsRain.json": game_69,
-  "Game/Umbra/Skills/Trees/ActiveSkills/AST_Bladeslinger.json": game_70,
-  "Game/Umbra/Skills/Trees/ActiveSkills/AST_Bomb.json": game_71,
-  "Game/Umbra/Skills/Trees/ActiveSkills/AST_Brutal_Strike.json": game_72,
-  "Game/Umbra/Skills/Trees/ActiveSkills/AST_BullEye.json": game_73,
-  "Game/Umbra/Skills/Trees/ActiveSkills/AST_ChainLightning.json": game_74,
-  "Game/Umbra/Skills/Trees/ActiveSkills/AST_Charge.json": game_75,
-  "Game/Umbra/Skills/Trees/ActiveSkills/AST_CorpseExplosion.json": game_76,
-  "Game/Umbra/Skills/Trees/ActiveSkills/AST_DeathMark.json": game_77,
-  "Game/Umbra/Skills/Trees/ActiveSkills/AST_DualStrike.json": game_78,
-  "Game/Umbra/Skills/Trees/ActiveSkills/AST_FireBall.json": game_79,
-  "Game/Umbra/Skills/Trees/ActiveSkills/AST_Frost_Nova.json": game_80,
-  "Game/Umbra/Skills/Trees/ActiveSkills/AST_FrostComet.json": game_81,
-  "Game/Umbra/Skills/Trees/ActiveSkills/AST_FrostLance.json": game_82,
-  "Game/Umbra/Skills/Trees/ActiveSkills/AST_Hammer.json": game_83,
-  "Game/Umbra/Skills/Trees/ActiveSkills/AST_HolyDive.json": game_84,
-  "Game/Umbra/Skills/Trees/ActiveSkills/AST_Hook.json": game_85,
-  "Game/Umbra/Skills/Trees/ActiveSkills/AST_Ironguard.json": game_86,
-  "Game/Umbra/Skills/Trees/ActiveSkills/AST_Laceration.json": game_87,
-  "Game/Umbra/Skills/Trees/ActiveSkills/AST_Laser.json": game_88,
-  "Game/Umbra/Skills/Trees/ActiveSkills/AST_Leap.json": game_89,
-  "Game/Umbra/Skills/Trees/ActiveSkills/AST_Possession.json": game_90,
-  "Game/Umbra/Skills/Trees/ActiveSkills/AST_Reave.json": game_91,
-  "Game/Umbra/Skills/Trees/ActiveSkills/AST_RingOfPain.json": game_92,
-  "Game/Umbra/Skills/Trees/ActiveSkills/AST_SacredGround.json": game_93,
-  "Game/Umbra/Skills/Trees/ActiveSkills/AST_SmokeBomb.json": game_94,
-  "Game/Umbra/Skills/Trees/ActiveSkills/AST_Sniper.json": game_95,
-  "Game/Umbra/Skills/Trees/ActiveSkills/AST_Solarfall.json": game_96,
-  "Game/Umbra/Skills/Trees/ActiveSkills/AST_SpreadShot.json": game_97,
-  "Game/Umbra/Skills/Trees/ActiveSkills/AST_SummonChampion.json": game_98,
-  "Game/Umbra/Skills/Trees/ActiveSkills/AST_SummonMelee.json": game_99,
-  "Game/Umbra/Skills/Trees/ActiveSkills/AST_SummonRanged.json": game_100,
-  "Game/Umbra/Skills/Trees/ActiveSkills/AST_Teleport.json": game_101,
-  "Game/Umbra/Skills/Trees/ActiveSkills/AST_Turret.json": game_102,
-  "Game/Umbra/Skills/Trees/ActiveSkills/AST_Vault.json": game_103,
-  "Game/Umbra/Skills/Trees/ActiveSkills/AST_Vortex.json": game_104,
-  "Game/Umbra/Skills/Trees/ActiveSkills/AST_WarCry.json": game_105,
-  "Game/Umbra/Skills/Trees/ActiveSkills/AST_WhirlWind.json": game_106,
-  "Game/Umbra/SkinParams/WeaponSkins/CosmeticWeaponDescriptorBankGameplay.json": game_107,
-  "Game/Umbra/SkinParams/TransferTemplate/TransferTemplateBank.json": game_108,
+  "Game/Umbra/Loot/MagicEffects/Affixes/Armors_Weapons/AffixesGems.json": game_14,
+  "Game/Umbra/Loot/MagicEffects/Affixes/Armors_Weapons/AffixesImplicit.json": game_15,
+  "Game/Umbra/Loot/MagicEffects/Affixes/Armors_Weapons/AffixesUniques.json": game_16,
+  "Game/Umbra/Loot/MagicEffects/Affixes/Armors_Weapons/AffixesUniquesMax.json": game_17,
+  "Game/Umbra/Loot/MagicEffects/Affixes/Armors_Weapons/AffixesUniquesMaxMax.json": game_18,
+  "Game/Umbra/Loot/MagicEffects/Affixes/Armors_Weapons/AffixesWeapons.json": game_19,
+  "Game/Umbra/Skills/NewSkills/Player/Player_ActiveDodge.json": game_20,
+  "Game/Umbra/Skills/NewSkills/Player/Player_AetherBlade.json": game_21,
+  "Game/Umbra/Skills/NewSkills/Player/Player_AetherBlast.json": game_22,
+  "Game/Umbra/Skills/NewSkills/Player/Player_ArrowsRain.json": game_23,
+  "Game/Umbra/Skills/NewSkills/Player/Player_AutoDash.json": game_24,
+  "Game/Umbra/Skills/NewSkills/Player/Player_Bladeslinger.json": game_25,
+  "Game/Umbra/Skills/NewSkills/Player/Player_Bomb.json": game_26,
+  "Game/Umbra/Skills/NewSkills/Player/Player_BrutalStrike.json": game_27,
+  "Game/Umbra/Skills/NewSkills/Player/Player_BullEye.json": game_28,
+  "Game/Umbra/Skills/NewSkills/Player/Player_ChainLightning.json": game_29,
+  "Game/Umbra/Skills/NewSkills/Player/Player_Charge.json": game_30,
+  "Game/Umbra/Skills/NewSkills/Player/Player_CorpseExplosion.json": game_31,
+  "Game/Umbra/Skills/NewSkills/Player/Player_DeathMark_Explosion.json": game_32,
+  "Game/Umbra/Skills/NewSkills/Player/Player_DeathMark.json": game_33,
+  "Game/Umbra/Skills/NewSkills/Player/Player_DualStrike.json": game_34,
+  "Game/Umbra/Skills/NewSkills/Player/Player_Fire_Fireball.json": game_35,
+  "Game/Umbra/Skills/NewSkills/Player/Player_Frost_FrostComet.json": game_36,
+  "Game/Umbra/Skills/NewSkills/Player/Player_Frost_FrostLance_Explosion.json": game_37,
+  "Game/Umbra/Skills/NewSkills/Player/Player_Frost_FrostLance.json": game_38,
+  "Game/Umbra/Skills/NewSkills/Player/Player_Frost_FrostNova.json": game_39,
+  "Game/Umbra/Skills/NewSkills/Player/Player_FrostNova_Zone_Shadow.json": game_40,
+  "Game/Umbra/Skills/NewSkills/Player/Player_FrostNova_Zone.json": game_41,
+  "Game/Umbra/Skills/NewSkills/Player/Player_Hammer.json": game_42,
+  "Game/Umbra/Skills/NewSkills/Player/Player_HolyDive.json": game_43,
+  "Game/Umbra/Skills/NewSkills/Player/Player_Hook.json": game_44,
+  "Game/Umbra/Skills/NewSkills/Player/Player_Introduction_LightningAttack.json": game_45,
+  "Game/Umbra/Skills/NewSkills/Player/Player_Ironguard.json": game_46,
+  "Game/Umbra/Skills/NewSkills/Player/Player_Laceration.json": game_47,
+  "Game/Umbra/Skills/NewSkills/Player/Player_Laser.json": game_48,
+  "Game/Umbra/Skills/NewSkills/Player/Player_Leap.json": game_49,
+  "Game/Umbra/Skills/NewSkills/Player/Player_Possession.json": game_50,
+  "Game/Umbra/Skills/NewSkills/Player/Player_Reave.json": game_51,
+  "Game/Umbra/Skills/NewSkills/Player/Player_RingOfPain.json": game_52,
+  "Game/Umbra/Skills/NewSkills/Player/Player_SacredGround.json": game_53,
+  "Game/Umbra/Skills/NewSkills/Player/Player_SmokeBomb.json": game_54,
+  "Game/Umbra/Skills/NewSkills/Player/Player_Sniper.json": game_55,
+  "Game/Umbra/Skills/NewSkills/Player/Player_Solarfall.json": game_56,
+  "Game/Umbra/Skills/NewSkills/Player/Player_SpreadShot.json": game_57,
+  "Game/Umbra/Skills/NewSkills/Player/Player_Summon_Champion.json": game_58,
+  "Game/Umbra/Skills/NewSkills/Player/Player_Summon_Melee.json": game_59,
+  "Game/Umbra/Skills/NewSkills/Player/Player_Summon_Ranged.json": game_60,
+  "Game/Umbra/Skills/NewSkills/Player/Player_Teleport.json": game_61,
+  "Game/Umbra/Skills/NewSkills/Player/Player_Turret.json": game_62,
+  "Game/Umbra/Skills/NewSkills/Player/Player_UsePotion.json": game_63,
+  "Game/Umbra/Skills/NewSkills/Player/Player_Vault.json": game_64,
+  "Game/Umbra/Skills/NewSkills/Player/Player_Vortex.json": game_65,
+  "Game/Umbra/Skills/NewSkills/Player/Player_WarCry.json": game_66,
+  "Game/Umbra/Skills/NewSkills/Player/Player_WhirlWind.json": game_67,
+  "Game/Umbra/Skills/Trees/ActiveSkills/AST_AetherBlade.json": game_68,
+  "Game/Umbra/Skills/Trees/ActiveSkills/AST_AetherBlast.json": game_69,
+  "Game/Umbra/Skills/Trees/ActiveSkills/AST_ArrowsRain.json": game_70,
+  "Game/Umbra/Skills/Trees/ActiveSkills/AST_Bladeslinger.json": game_71,
+  "Game/Umbra/Skills/Trees/ActiveSkills/AST_Bomb.json": game_72,
+  "Game/Umbra/Skills/Trees/ActiveSkills/AST_Brutal_Strike.json": game_73,
+  "Game/Umbra/Skills/Trees/ActiveSkills/AST_BullEye.json": game_74,
+  "Game/Umbra/Skills/Trees/ActiveSkills/AST_ChainLightning.json": game_75,
+  "Game/Umbra/Skills/Trees/ActiveSkills/AST_Charge.json": game_76,
+  "Game/Umbra/Skills/Trees/ActiveSkills/AST_CorpseExplosion.json": game_77,
+  "Game/Umbra/Skills/Trees/ActiveSkills/AST_DeathMark.json": game_78,
+  "Game/Umbra/Skills/Trees/ActiveSkills/AST_DualStrike.json": game_79,
+  "Game/Umbra/Skills/Trees/ActiveSkills/AST_FireBall.json": game_80,
+  "Game/Umbra/Skills/Trees/ActiveSkills/AST_Frost_Nova.json": game_81,
+  "Game/Umbra/Skills/Trees/ActiveSkills/AST_FrostComet.json": game_82,
+  "Game/Umbra/Skills/Trees/ActiveSkills/AST_FrostLance.json": game_83,
+  "Game/Umbra/Skills/Trees/ActiveSkills/AST_Hammer.json": game_84,
+  "Game/Umbra/Skills/Trees/ActiveSkills/AST_HolyDive.json": game_85,
+  "Game/Umbra/Skills/Trees/ActiveSkills/AST_Hook.json": game_86,
+  "Game/Umbra/Skills/Trees/ActiveSkills/AST_Ironguard.json": game_87,
+  "Game/Umbra/Skills/Trees/ActiveSkills/AST_Laceration.json": game_88,
+  "Game/Umbra/Skills/Trees/ActiveSkills/AST_Laser.json": game_89,
+  "Game/Umbra/Skills/Trees/ActiveSkills/AST_Leap.json": game_90,
+  "Game/Umbra/Skills/Trees/ActiveSkills/AST_Possession.json": game_91,
+  "Game/Umbra/Skills/Trees/ActiveSkills/AST_Reave.json": game_92,
+  "Game/Umbra/Skills/Trees/ActiveSkills/AST_RingOfPain.json": game_93,
+  "Game/Umbra/Skills/Trees/ActiveSkills/AST_SacredGround.json": game_94,
+  "Game/Umbra/Skills/Trees/ActiveSkills/AST_SmokeBomb.json": game_95,
+  "Game/Umbra/Skills/Trees/ActiveSkills/AST_Sniper.json": game_96,
+  "Game/Umbra/Skills/Trees/ActiveSkills/AST_Solarfall.json": game_97,
+  "Game/Umbra/Skills/Trees/ActiveSkills/AST_SpreadShot.json": game_98,
+  "Game/Umbra/Skills/Trees/ActiveSkills/AST_SummonChampion.json": game_99,
+  "Game/Umbra/Skills/Trees/ActiveSkills/AST_SummonMelee.json": game_100,
+  "Game/Umbra/Skills/Trees/ActiveSkills/AST_SummonRanged.json": game_101,
+  "Game/Umbra/Skills/Trees/ActiveSkills/AST_Teleport.json": game_102,
+  "Game/Umbra/Skills/Trees/ActiveSkills/AST_Turret.json": game_103,
+  "Game/Umbra/Skills/Trees/ActiveSkills/AST_Vault.json": game_104,
+  "Game/Umbra/Skills/Trees/ActiveSkills/AST_Vortex.json": game_105,
+  "Game/Umbra/Skills/Trees/ActiveSkills/AST_WarCry.json": game_106,
+  "Game/Umbra/Skills/Trees/ActiveSkills/AST_WhirlWind.json": game_107,
+  "Game/Umbra/SkinParams/WeaponSkins/CosmeticWeaponDescriptorBankGameplay.json": game_108,
+  "Game/Umbra/SkinParams/TransferTemplate/TransferTemplateBank.json": game_109,
+  "Game/Umbra/Loot/Gems/gems.json": game_110,
   "localization/text_ui_Activeskills.json": localization_0,
   "localization/text_ui_EIM.json": localization_1,
   "localization/text_ui_Loot.json": localization_2,

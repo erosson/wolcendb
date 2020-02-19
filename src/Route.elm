@@ -28,6 +28,7 @@ type Route
     | Skills
     | Skill String
     | Affixes
+    | Gems
     | Changelog
     | Privacy
 
@@ -60,6 +61,7 @@ parser =
         , P.map Skills <| P.s "skill"
         , P.map Skill <| P.s "skill" </> P.string
         , P.map Affixes <| P.s "affix"
+        , P.map Gems <| P.s "gem"
         , P.map Changelog <| P.s "changelog"
         , P.map Privacy <| P.s "privacy"
         ]
@@ -127,6 +129,9 @@ toString r =
 
         Affixes ->
             "/affix"
+
+        Gems ->
+            "/gem"
 
         Changelog ->
             "/changelog"

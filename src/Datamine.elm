@@ -9,6 +9,7 @@ module Datamine exposing
     , NormalItem(..)
     , Range
     , Rarity
+    , Socket(..)
     , UItem
     , UniqueItem(..)
     , decode
@@ -50,6 +51,7 @@ type alias Datamine =
     , affixes : Affixes
     , cosmeticTransferTemplates : Dict String CCosmeticTransferTemplate
     , cosmeticWeaponDescriptors : Dict String CCosmeticWeaponDescriptor
+    , gems : List Gem
     , en : Dict String String
     , lootByName : Dict String NormalItem
     , uniqueLootByName : Dict String UniqueItem
@@ -66,6 +68,7 @@ type alias RawDatamine =
     , affixes : Affixes
     , cosmeticTransferTemplates : Dict String CCosmeticTransferTemplate
     , cosmeticWeaponDescriptors : Dict String CCosmeticWeaponDescriptor
+    , gems : List Gem
     , en : Dict String String
     }
 
@@ -79,6 +82,7 @@ index raw =
     , affixes = raw.affixes
     , cosmeticTransferTemplates = raw.cosmeticTransferTemplates
     , cosmeticWeaponDescriptors = raw.cosmeticWeaponDescriptors
+    , gems = raw.gems
     , en = raw.en
     , lootByName = raw.loot |> Dict.Extra.fromListBy (nitemName >> String.toLower)
     , uniqueLootByName = raw.uniqueLoot |> Dict.Extra.fromListBy (uitemName >> String.toLower)
@@ -314,6 +318,24 @@ type alias MagicEffect =
     }
 
 
+type alias Gem =
+    { name : String
+    , uiName : String
+    , hudPicture : String
+    , levelPrereq : Int
+    , gemTier : Int
+    , dropLevel : Range Int
+    , keywords : List String
+    , effects : List ( Socket, String )
+    }
+
+
+type Socket
+    = Offensive Int
+    | Defensive Int
+    | Support Int
+
+
 lang : Datamine -> String -> Maybe String
 lang dm key =
     Dict.get (String.toLower key) dm.en
@@ -428,8 +450,76 @@ jsonDecoder =
         |> P.custom rootAffixesDecoder
         |> P.custom cosmeticTransferTemplateDecoder
         |> P.custom cosmeticWeaponDescriptorDecoder
+        |> P.custom gemsDecoder
         |> P.custom rootLangDecoder
         |> D.map index
+
+
+
+--type alias Gem =
+--    { name : String
+--    , uiName : String
+--    , hudPicture : String
+--    , levelPrereq : Int
+--    , gemTier : Int
+--    , dropLevel : Range Int
+--    , keywords : List String
+--    , effects : List ( Socket, String )
+--    }
+
+
+gemsDecoder : D.Decoder (List Gem)
+gemsDecoder =
+    D.succeed Gem
+        |> P.requiredAt [ "$", "Name" ] D.string
+        |> P.requiredAt [ "$", "UIName" ] D.string
+        |> P.requiredAt [ "$", "HUDPicture" ] D.string
+        |> P.requiredAt [ "$", "LevelPrereq" ] intString
+        |> P.requiredAt [ "$", "GemTier" ] intString
+        |> P.custom
+            (D.succeed Range
+                |> P.requiredAt [ "$", "MinDropLevel" ] intString
+                |> P.requiredAt [ "$", "MaxDropLevel" ] intString
+            )
+        |> P.requiredAt [ "$", "Keywords" ] csStrings
+        |> P.requiredAt [ "SupportedMagicEffects" ] gemEffectsDecoder
+        |> D.list
+        |> D.at [ "Game/Umbra/Loot/Gems/gems.json", "Gems", "Gem" ]
+
+
+gemEffectsDecoder : D.Decoder (List ( Socket, String ))
+gemEffectsDecoder =
+    D.keyValuePairs (D.at [ "$", "Id" ] D.string |> single)
+        -- |> D.andThen single_
+        |> D.map
+            (List.map
+                (\( key, id ) ->
+                    case key |> String.split "_" of
+                        [ type_, index_ ] ->
+                            case ( type_, String.toInt index_ ) of
+                                ( "Offensive", Just i ) ->
+                                    Ok ( Offensive i, id )
+
+                                ( "Defensive", Just i ) ->
+                                    Ok ( Defensive i, id )
+
+                                ( "Support", Just i ) ->
+                                    Ok ( Support i, id )
+
+                                _ ->
+                                    Err <| "unknown gem-effect key: " ++ key
+
+                        _ ->
+                            Err <| "unknown gem-effect key: " ++ key
+                )
+                >> Result.Extra.combine
+            )
+        |> resultDecoder
+        |> single
+
+
+
+-- |> D.list
 
 
 normalItemsDecoder : D.Decoder (List NormalItem)
@@ -608,6 +698,7 @@ rootAffixesDecoder =
             (\f ->
                 String.contains "/Loot/MagicEffects/Affixes/Armors_Weapons/AffixesImplicit" f
                     || String.contains "/Loot/MagicEffects/Affixes/Armors_Weapons/AffixesUniques" f
+                    || String.contains "/Loot/MagicEffects/Affixes/Armors_Weapons/AffixesGems" f
             )
             |> D.map (List.map (\( filename, json ) -> D.decodeValue (nonmagicAffixesDecoder filename) json))
             |> D.map (Result.Extra.combine >> Result.mapError D.errorToString)

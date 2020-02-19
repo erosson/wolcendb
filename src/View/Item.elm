@@ -1,4 +1,4 @@
-module View.Item exposing (imgAccessory, imgArmor, imgNormal, imgShield, imgUArmor, imgUnique, imgWeapon)
+module View.Item exposing (imgAccessory, imgArmor, imgGem, imgNormal, imgShield, imgUArmor, imgUnique, imgWeapon)
 
 import Datamine exposing (Datamine, NormalItem(..), UniqueItem(..))
 import Dict exposing (Dict)
@@ -10,6 +10,11 @@ import Html.Events as E exposing (..)
 imgAccessory : { item | hudPicture : String } -> H.Attribute msg
 imgAccessory item =
     src <| "/static/datamine/Game/Libs/UI/u_resources/armors/" ++ item.hudPicture
+
+
+imgGem : { item | hudPicture : String } -> H.Attribute msg
+imgGem item =
+    src <| "/static/datamine/Game/Libs/UI/u_resources/gems/" ++ item.hudPicture
 
 
 imgArmor : Datamine -> { item | attachmentName : String } -> H.Attribute msg
