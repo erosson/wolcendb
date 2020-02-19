@@ -19,6 +19,7 @@ view dm type_ id =
                     , ol [ class "breadcrumb" ]
                         (a [ class "breadcrumb-item active", Route.href Route.Home ] [ text "Home" ] :: breadcrumb)
                     , h4 [] [ text label, text ": ", code [] [ text id ] ]
+                    , p [] [ text "This is the raw data we've exported from the Wolcen game files. It's not very pretty, but it might be useful if Wolcen and other WolcenDB pages don't yet have the information you're looking for, or if you're programming something." ]
                     , ul [ class "list-group" ] <| List.map (viewSource >> li [ class "list-group-item" ]) sources
                     ]
                 ]
