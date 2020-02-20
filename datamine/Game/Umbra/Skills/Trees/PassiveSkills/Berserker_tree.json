@@ -1,0 +1,235 @@
+{
+  "MetaData": {
+    "Tree": [
+      {
+        "$": {
+          "Name": "Berserker",
+          "UIName": "@ui_Section_Berserker",
+          "Category": "melee"
+        },
+        "Skill": [
+          {
+            "$": {
+              "Name": "BSRK_1",
+              "Rarity": "1",
+              "Category": "melee",
+              "MaxLevel": "1",
+              "Angle": "0.50",
+              "Pos": "0.15",
+              "Unlock": "begin,BSRK_2,BSRK_4,BSRK_12,BSRK_10"
+            }
+          },
+          {
+            "$": {
+              "Name": "BSRK_2",
+              "Rarity": "1",
+              "Category": "melee",
+              "MaxLevel": "1",
+              "Angle": "0.60",
+              "Pos": "0.15",
+              "Unlock": "BSRK_3,BSRK_4"
+            }
+          },
+          {
+            "$": {
+              "Name": "BSRK_3",
+              "Rarity": "1",
+              "Category": "melee",
+              "MaxLevel": "1",
+              "Angle": "0.72",
+              "Pos": "0.35",
+              "Unlock": "BSRK_5,BSRK_8"
+            }
+          },
+          {
+            "$": {
+              "Name": "BSRK_4",
+              "Rarity": "1",
+              "Category": "melee",
+              "MaxLevel": "1",
+              "Angle": "0.60",
+              "Pos": "0.35",
+              "Unlock": "BSRK_5,BSRK_6,BSRK_7,BSRK_14"
+            }
+          },
+          {
+            "$": {
+              "Name": "BSRK_5",
+              "Rarity": "1",
+              "Category": "melee",
+              "MaxLevel": "1",
+              "Angle": "0.72",
+              "Pos": "0.55",
+              "Unlock": "BSRK_7,BSRK_8"
+            }
+          },
+          {
+            "$": {
+              "Name": "BSRK_6",
+              "Rarity": "1",
+              "Category": "melee",
+              "MaxLevel": "1",
+              "Angle": "0.60",
+              "Pos": "0.75",
+              "Unlock": "BSRK_7,BSRK_14,BSRK_19"
+            }
+          },
+          {
+            "$": {
+              "Name": "BSRK_7",
+              "Rarity": "1",
+              "Category": "melee",
+              "MaxLevel": "1",
+              "Angle": "0.72",
+              "Pos": "0.75",
+              "Unlock": "BSRK_8"
+            }
+          },
+          {
+            "$": {
+              "Name": "BSRK_8",
+              "Rarity": "3",
+              "Category": "melee",
+              "MaxLevel": "1",
+              "Angle": "0.85",
+              "Pos": "0.55",
+              "Unlock": "BSRK_9"
+            }
+          },
+          {
+            "$": {
+              "Name": "BSRK_9",
+              "Rarity": "1",
+              "Category": "melee",
+              "MaxLevel": "1",
+              "Angle": "0.85",
+              "Pos": "0.35",
+              "Unlock": ""
+            }
+          },
+          {
+            "$": {
+              "Name": "BSRK_10",
+              "Rarity": "1",
+              "Category": "melee",
+              "MaxLevel": "1",
+              "Angle": "0.40",
+              "Pos": "0.15",
+              "Unlock": "BSRK_11,BSRK_12"
+            }
+          },
+          {
+            "$": {
+              "Name": "BSRK_11",
+              "Rarity": "1",
+              "Category": "melee",
+              "MaxLevel": "1",
+              "Angle": "0.28",
+              "Pos": "0.35",
+              "Unlock": "BSRK_13,BSRK_17"
+            }
+          },
+          {
+            "$": {
+              "Name": "BSRK_12",
+              "Rarity": "1",
+              "Category": "melee",
+              "MaxLevel": "1",
+              "Angle": "0.40",
+              "Pos": "0.35",
+              "Unlock": "BSRK_13,BSRK_14,BSRK_15,BSRK_16"
+            }
+          },
+          {
+            "$": {
+              "Name": "BSRK_13",
+              "Rarity": "1",
+              "Category": "melee",
+              "MaxLevel": "1",
+              "Angle": "0.28",
+              "Pos": "0.55",
+              "Unlock": "BSRK_16,BSRK_17"
+            }
+          },
+          {
+            "$": {
+              "Name": "BSRK_14",
+              "Rarity": "1",
+              "Category": "melee",
+              "MaxLevel": "1",
+              "Angle": "0.50",
+              "Pos": "0.55",
+              "Unlock": "BSRK_15,BSRK_19"
+            }
+          },
+          {
+            "$": {
+              "Name": "BSRK_15",
+              "Rarity": "1",
+              "Category": "melee",
+              "MaxLevel": "1",
+              "Angle": "0.40",
+              "Pos": "0.75",
+              "Unlock": "BSRK_16,BSRK_19"
+            }
+          },
+          {
+            "$": {
+              "Name": "BSRK_16",
+              "Rarity": "1",
+              "Category": "melee",
+              "MaxLevel": "1",
+              "Angle": "0.28",
+              "Pos": "0.75",
+              "Unlock": "BSRK_17"
+            }
+          },
+          {
+            "$": {
+              "Name": "BSRK_17",
+              "Rarity": "3",
+              "Category": "melee",
+              "MaxLevel": "1",
+              "Angle": "0.15",
+              "Pos": "0.55",
+              "Unlock": "BSRK_18"
+            }
+          },
+          {
+            "$": {
+              "Name": "BSRK_18",
+              "Rarity": "1",
+              "Category": "melee",
+              "MaxLevel": "1",
+              "Angle": "0.15",
+              "Pos": "0.35",
+              "Unlock": ""
+            }
+          },
+          {
+            "$": {
+              "Name": "BSRK_19",
+              "Rarity": "3",
+              "Category": "melee",
+              "MaxLevel": "1",
+              "Angle": "0.50",
+              "Pos": "0.75",
+              "Unlock": "BSRK_20"
+            }
+          },
+          {
+            "$": {
+              "Name": "BSRK_20",
+              "Rarity": "1",
+              "Category": "melee",
+              "MaxLevel": "1",
+              "Angle": "0.50",
+              "Pos": "0.95",
+              "Unlock": ""
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

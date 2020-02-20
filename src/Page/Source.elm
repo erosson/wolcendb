@@ -176,6 +176,23 @@ getSource dm type_ id =
                         )
                     )
 
+        "passive" ->
+            Dict.get (String.toLower id) dm.passiveTreeEntriesByName
+                |> Maybe.map
+                    (\( entry, passive, tree ) ->
+                        let
+                            label =
+                                Datamine.lang dm passive.uiName |> Maybe.withDefault "???"
+                        in
+                        ( label
+                        , [ passive.source, entry.source ]
+                        , [ a [ class "breadcrumb-item active", Route.href Route.Passives ] [ text "Passives" ]
+                          , a [ class "breadcrumb-item active" ] [ text label ]
+                          , a [ class "breadcrumb-item active", Route.href <| Route.Source type_ id ] [ text "Source" ]
+                          ]
+                        )
+                    )
+
         _ ->
             Nothing
 

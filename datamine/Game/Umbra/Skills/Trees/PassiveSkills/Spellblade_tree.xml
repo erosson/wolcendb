@@ -1,0 +1,24 @@
+<MetaData>
+  <Tree Name="Spellblade" UIName="@ui_Section_Spellblade" Category="magic">
+    <Skill Name="SPBD_1" Rarity="1" Category="magic" MaxLevel="1" Angle="0.50" Pos="0.15" Unlock="begin,SPBD_2,SPBD_4,SPBD_12,SPBD_10" />
+    <Skill Name="SPBD_2" Rarity="1" Category="magic" MaxLevel="1" Angle="0.60" Pos="0.15" Unlock="SPBD_3,SPBD_4" />
+    <Skill Name="SPBD_3" Rarity="1" Category="magic" MaxLevel="1" Angle="0.85" Pos="0.15" Unlock="SPBD_5,SPBD_8" />
+    <Skill Name="SPBD_4" Rarity="1" Category="magic" MaxLevel="1" Angle="0.65" Pos="0.35" Unlock="SPBD_5,SPBD_6,SPBD_7,SPBD_14" />
+    <Skill Name="SPBD_5" Rarity="1" Category="magic" MaxLevel="1" Angle="0.75" Pos="0.35" Unlock="SPBD_7,SPBD_8" />
+    <Skill Name="SPBD_6" Rarity="1" Category="magic" MaxLevel="1" Angle="0.60" Pos="0.55" Unlock="SPBD_7,SPBD_14,SPBD_19" />
+    <Skill Name="SPBD_7" Rarity="1" Category="magic" MaxLevel="1" Angle="0.72" Pos="0.80" Unlock="SPBD_8" />
+    <Skill Name="SPBD_8" Rarity="3" Category="magic" MaxLevel="1" Angle="0.85" Pos="0.55" Unlock="SPBD_9" />
+    <Skill Name="SPBD_9" Rarity="1" Category="magic" MaxLevel="1" Angle="0.90" Pos="0.70" Unlock="" />
+    <Skill Name="SPBD_10" Rarity="1" Category="magic" MaxLevel="1" Angle="0.40" Pos="0.15" Unlock="SPBD_11,SPBD_12" />
+    <Skill Name="SPBD_11" Rarity="1" Category="magic" MaxLevel="1" Angle="0.15" Pos="0.15" Unlock="SPBD_13,SPBD_17" />
+    <Skill Name="SPBD_12" Rarity="1" Category="magic" MaxLevel="1" Angle="0.35" Pos="0.35" Unlock="SPBD_13,SPBD_14,SPBD_15,SPBD_16" />
+    <Skill Name="SPBD_13" Rarity="1" Category="magic" MaxLevel="1" Angle="0.25" Pos="0.35" Unlock="SPBD_16,SPBD_17" />
+    <Skill Name="SPBD_14" Rarity="1" Category="magic" MaxLevel="1" Angle="0.50" Pos="0.35" Unlock="SPBD_15,SPBD_19" />
+    <Skill Name="SPBD_15" Rarity="1" Category="magic" MaxLevel="1" Angle="0.40" Pos="0.55" Unlock="SPBD_16,SPBD_19" />
+    <Skill Name="SPBD_16" Rarity="1" Category="magic" MaxLevel="1" Angle="0.28" Pos="0.80" Unlock="SPBD_17" />
+    <Skill Name="SPBD_17" Rarity="3" Category="magic" MaxLevel="1" Angle="0.15" Pos="0.55" Unlock="SPBD_18" />
+    <Skill Name="SPBD_18" Rarity="1" Category="magic" MaxLevel="1" Angle="0.10" Pos="0.70" Unlock="" />
+    <Skill Name="SPBD_19" Rarity="3" Category="magic" MaxLevel="1" Angle="0.50" Pos="0.75" Unlock="SPBD_20" />
+    <Skill Name="SPBD_20" Rarity="1" Category="magic" MaxLevel="1" Angle="0.50" Pos="0.95" Unlock="" />
+  </Tree>
+</MetaData>

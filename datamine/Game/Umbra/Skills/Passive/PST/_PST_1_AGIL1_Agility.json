@@ -1,0 +1,846 @@
+{
+  "MetaData": {
+    "Spell": [
+      {
+        "$": {
+          "Name": "AGIL_1",
+          "UIName": "@ui_AGIL_1_name",
+          "HUDLoreDesc": "",
+          "GameplayDesc": ""
+        },
+        "MagicEffects": [
+          {
+            "EIM": [
+              {
+                "$": {
+                  "Name": "damage_percent_projectiles",
+                  "HUDDesc": "@ui_eim_damage_percent_projectiles",
+                  "Permanent": "1"
+                },
+                "Semantics": [
+                  {
+                    "$": {
+                      "DamagePercentInt": "15"
+                    }
+                  }
+                ]
+              },
+              {
+                "$": {
+                  "Name": "damage_percent_melee_weapon",
+                  "HUDDesc": "@ui_eim_damage_percent_melee_weapon",
+                  "Permanent": "1"
+                },
+                "Semantics": [
+                  {
+                    "$": {
+                      "DamagePercentInt": "15"
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "$": {
+          "Name": "AGIL_2",
+          "UIName": "@ui_AGIL_2_name",
+          "HUDLoreDesc": "",
+          "GameplayDesc": ""
+        },
+        "MagicEffects": [
+          {
+            "EIM": [
+              {
+                "$": {
+                  "Name": "damage_percent_projectiles",
+                  "HUDDesc": "@ui_eim_damage_percent_projectiles",
+                  "Permanent": "1"
+                },
+                "Semantics": [
+                  {
+                    "$": {
+                      "DamagePercentInt": "15"
+                    }
+                  }
+                ]
+              },
+              {
+                "$": {
+                  "Name": "damage_percent_melee_weapon",
+                  "HUDDesc": "@ui_eim_damage_percent_melee_weapon",
+                  "Permanent": "1"
+                },
+                "Semantics": [
+                  {
+                    "$": {
+                      "DamagePercentInt": "15"
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "$": {
+          "Name": "AGIL_3",
+          "UIName": "@ui_AGIL_3_name",
+          "HUDLoreDesc": "",
+          "GameplayDesc": ""
+        },
+        "MagicEffects": [
+          {
+            "EIM": [
+              {
+                "$": {
+                  "Name": "agility_pts",
+                  "HUDDesc": "@ui_eim_agility_pts",
+                  "Permanent": "1"
+                },
+                "Semantics": [
+                  {
+                    "$": {
+                      "AttributeFlatInt": "25"
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "$": {
+          "Name": "AGIL_4",
+          "UIName": "@ui_AGIL_4_name",
+          "HUDLoreDesc": "",
+          "GameplayDesc": ""
+        },
+        "MagicEffects": [
+          {
+            "EIM": [
+              {
+                "$": {
+                  "Name": "damage_percent_attack",
+                  "HUDDesc": "@ui_eim_damage_percent_attack",
+                  "Permanent": "1"
+                },
+                "Semantics": [
+                  {
+                    "$": {
+                      "DamagePercentInt": "8"
+                    }
+                  }
+                ]
+              },
+              {
+                "$": {
+                  "Name": "criticalchance_score_percent",
+                  "HUDDesc": "@ui_eim_criticalchance_score_percent",
+                  "Permanent": "1"
+                },
+                "Semantics": [
+                  {
+                    "$": {
+                      "CharacteristicScorePercentInt": "9"
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "$": {
+          "Name": "AGIL_5",
+          "UIName": "@ui_AGIL_5_name",
+          "HUDLoreDesc": "",
+          "GameplayDesc": ""
+        },
+        "MagicEffects": [
+          {
+            "EIM": [
+              {
+                "$": {
+                  "Name": "damage_percent_attack",
+                  "HUDDesc": "@ui_eim_damage_percent_attack",
+                  "Permanent": "1"
+                },
+                "Semantics": [
+                  {
+                    "$": {
+                      "DamagePercentInt": "8"
+                    }
+                  }
+                ]
+              },
+              {
+                "$": {
+                  "Name": "criticalchance_score_percent",
+                  "HUDDesc": "@ui_eim_criticalchance_score_percent",
+                  "Permanent": "1"
+                },
+                "Semantics": [
+                  {
+                    "$": {
+                      "CharacteristicScorePercentInt": "9"
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "$": {
+          "Name": "AGIL_6",
+          "UIName": "@ui_AGIL_6_name",
+          "HUDLoreDesc": "",
+          "GameplayDesc": ""
+        },
+        "MagicEffects": [
+          {
+            "EIM": [
+              {
+                "$": {
+                  "Name": "movespeed",
+                  "HUDDesc": "@ui_eim_movespeed",
+                  "Permanent": "1"
+                },
+                "Semantics": [
+                  {
+                    "$": {
+                      "SpeedPercentInt": "6"
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "$": {
+          "Name": "AGIL_7",
+          "UIName": "@ui_AGIL_7_name",
+          "HUDLoreDesc": "",
+          "GameplayDesc": ""
+        },
+        "MagicEffects": [
+          {
+            "EIM": [
+              {
+                "$": {
+                  "Name": "spellcastingspeed_score_percent",
+                  "HUDDesc": "@ui_eim_spellcastingspeed_score_percent",
+                  "Permanent": "1"
+                },
+                "Semantics": [
+                  {
+                    "$": {
+                      "CharacteristicScorePercentInt": "18"
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "$": {
+          "Name": "AGIL_8",
+          "UIName": "@ui_AGIL_8_name",
+          "HUDLoreDesc": "",
+          "GameplayDesc": ""
+        },
+        "MagicEffects": [
+          {
+            "EIM": [
+              {
+                "$": {
+                  "Name": "attackspeed_score_percent",
+                  "HUDDesc": "@ui_eim_attackspeed_score_percent",
+                  "Permanent": "1"
+                },
+                "Semantics": [
+                  {
+                    "$": {
+                      "CharacteristicScorePercentInt": "18"
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "$": {
+          "Name": "AGIL_9",
+          "UIName": "@ui_AGIL_9_name",
+          "HUDLoreDesc": "@ui_AGIL_9_lore",
+          "GameplayDesc": "@ui_AGIL_9_desc"
+        },
+        "MagicEffects": [
+          {
+            "EIM": [
+              {
+                "$": {
+                  "Name": "attackspeed_score_percent",
+                  "HUDDesc": "@ui_eim_attackspeed_score_percent",
+                  "Permanent": "1"
+                },
+                "Semantics": [
+                  {
+                    "$": {
+                      "CharacteristicScorePercentInt": "50"
+                    }
+                  }
+                ]
+              },
+              {
+                "$": {
+                  "Name": "spellcastingspeed_score_percent",
+                  "HUDDesc": "@ui_eim_spellcastingspeed_score_percent",
+                  "Permanent": "1"
+                },
+                "Semantics": [
+                  {
+                    "$": {
+                      "CharacteristicScorePercentInt": "50"
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "$": {
+          "Name": "AGIL_10",
+          "UIName": "@ui_AGIL_10_name",
+          "HUDLoreDesc": "",
+          "GameplayDesc": ""
+        },
+        "MagicEffects": [
+          {
+            "EIM": [
+              {
+                "$": {
+                  "Name": "skill_cooldownreduction_percent",
+                  "HUDDesc": "@ui_eim_skill_cooldownreduction_percent",
+                  "Permanent": "1"
+                },
+                "Semantics": [
+                  {
+                    "$": {
+                      "DurationPercentFloat": "10"
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "$": {
+          "Name": "AGIL_11",
+          "UIName": "@ui_AGIL_11_name",
+          "HUDLoreDesc": "",
+          "GameplayDesc": ""
+        },
+        "MagicEffects": [
+          {
+            "EIM": [
+              {
+                "$": {
+                  "Name": "additional_stamina_pts",
+                  "HUDDesc": "@ui_eim_additional_stamina_pts",
+                  "Permanent": "1"
+                },
+                "Semantics": [
+                  {
+                    "$": {
+                      "ResourceFlatInt": "1"
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "$": {
+          "Name": "AGIL_12",
+          "UIName": "@ui_AGIL_12_name",
+          "HUDLoreDesc": "",
+          "GameplayDesc": ""
+        },
+        "MagicEffects": [
+          {
+            "EIM": [
+              {
+                "$": {
+                  "Name": "stamina_regeneration_percent",
+                  "HUDDesc": "@ui_eim_stamina_regeneration_percent",
+                  "Permanent": "1"
+                },
+                "Semantics": [
+                  {
+                    "$": {
+                      "ResourcePercentFloat": "15"
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "$": {
+          "Name": "AGIL_13",
+          "UIName": "@ui_AGIL_13_name",
+          "HUDLoreDesc": "",
+          "GameplayDesc": ""
+        },
+        "MagicEffects": [
+          {
+            "EIM": [
+              {
+                "$": {
+                  "Name": "damage_percent_full_stamina",
+                  "HUDDesc": "@ui_eim_damage_percent_full_stamina",
+                  "Permanent": "1"
+                },
+                "Semantics": [
+                  {
+                    "$": {
+                      "DamagePercentFloat": "20"
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "$": {
+          "Name": "AGIL_14",
+          "UIName": "@ui_AGIL_14_name",
+          "HUDLoreDesc": "@ui_AGIL_14_lore",
+          "GameplayDesc": "@ui_AGIL_14_desc"
+        },
+        "MagicEffects": [
+          {
+            "EIM": [
+              {
+                "$": {
+                  "Name": "refill_stamina_on_low_health",
+                  "HUDDesc": "@ui_eim_refill_stamina_on_low_health",
+                  "Permanent": "1"
+                },
+                "Semantics": [
+                  {
+                    "$": {
+                      "TriggerGainStaminaFloat": "3"
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "$": {
+          "Name": "AGIL_15",
+          "UIName": "@ui_AGIL_15_name",
+          "HUDLoreDesc": "",
+          "GameplayDesc": ""
+        },
+        "MagicEffects": [
+          {
+            "EIM": [
+              {
+                "$": {
+                  "Name": "damage_percent_per_missing_stamina",
+                  "HUDDesc": "@ui_eim_damage_percent_per_missing_stamina",
+                  "Permanent": "1"
+                },
+                "Semantics": [
+                  {
+                    "$": {
+                      "DamagePercentFloat": "4"
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "$": {
+          "Name": "AGIL_16",
+          "UIName": "@ui_AGIL_16_name",
+          "HUDLoreDesc": "",
+          "GameplayDesc": ""
+        },
+        "MagicEffects": [
+          {
+            "EIM": [
+              {
+                "$": {
+                  "Name": "health_percent",
+                  "HUDDesc": "@ui_eim_health_percent",
+                  "Permanent": "1"
+                },
+                "Semantics": [
+                  {
+                    "$": {
+                      "HealthPercentInt": "10"
+                    }
+                  }
+                ]
+              },
+              {
+                "$": {
+                  "Name": "forceshield_percent",
+                  "HUDDesc": "@ui_eim_forceshield_percent",
+                  "Permanent": "1"
+                },
+                "Semantics": [
+                  {
+                    "$": {
+                      "ArmorPercentFloat": "8"
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "$": {
+          "Name": "AGIL_17",
+          "UIName": "@ui_AGIL_17_name",
+          "HUDLoreDesc": "",
+          "GameplayDesc": ""
+        },
+        "MagicEffects": [
+          {
+            "EIM": [
+              {
+                "$": {
+                  "Name": "health_percent",
+                  "HUDDesc": "@ui_eim_health_percent",
+                  "Permanent": "1"
+                },
+                "Semantics": [
+                  {
+                    "$": {
+                      "HealthPercentInt": "10"
+                    }
+                  }
+                ]
+              },
+              {
+                "$": {
+                  "Name": "forceshield_percent",
+                  "HUDDesc": "@ui_eim_forceshield_percent",
+                  "Permanent": "1"
+                },
+                "Semantics": [
+                  {
+                    "$": {
+                      "ArmorPercentFloat": "8"
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "$": {
+          "Name": "AGIL_18",
+          "UIName": "@ui_AGIL_18_name",
+          "HUDLoreDesc": "",
+          "GameplayDesc": ""
+        },
+        "MagicEffects": [
+          {
+            "EIM": [
+              {
+                "$": {
+                  "Name": "health_percent",
+                  "HUDDesc": "@ui_eim_health_percent",
+                  "Permanent": "1"
+                },
+                "Semantics": [
+                  {
+                    "$": {
+                      "HealthPercentInt": "10"
+                    }
+                  }
+                ]
+              },
+              {
+                "$": {
+                  "Name": "health_regen_true_percent",
+                  "HUDDesc": "@ui_eim_health_regen_true_percent",
+                  "Permanent": "1"
+                },
+                "Semantics": [
+                  {
+                    "$": {
+                      "ResourcePercentInt": "12"
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "$": {
+          "Name": "AGIL_19",
+          "UIName": "@ui_AGIL_19_name",
+          "HUDLoreDesc": "",
+          "GameplayDesc": ""
+        },
+        "MagicEffects": [
+          {
+            "EIM": [
+              {
+                "$": {
+                  "Name": "dodgechance_score_percent",
+                  "HUDDesc": "@ui_eim_dodgechance_score_percent",
+                  "Permanent": "1"
+                },
+                "Semantics": [
+                  {
+                    "$": {
+                      "CharacteristicScorePercentInt": "12"
+                    }
+                  }
+                ]
+              },
+              {
+                "$": {
+                  "Name": "all_resistance_score_percent",
+                  "HUDDesc": "@ui_eim_all_resistance_score_percent",
+                  "Permanent": "1"
+                },
+                "Semantics": [
+                  {
+                    "$": {
+                      "CharacteristicScorePercentInt": "9"
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "$": {
+          "Name": "AGIL_20",
+          "UIName": "@ui_AGIL_20_name",
+          "HUDLoreDesc": "",
+          "GameplayDesc": ""
+        },
+        "MagicEffects": [
+          {
+            "EIM": [
+              {
+                "$": {
+                  "Name": "dodgechance_score_percent",
+                  "HUDDesc": "@ui_eim_dodgechance_score_percent",
+                  "Permanent": "1"
+                },
+                "Semantics": [
+                  {
+                    "$": {
+                      "CharacteristicScorePercentInt": "12"
+                    }
+                  }
+                ]
+              },
+              {
+                "$": {
+                  "Name": "forceshield_percent",
+                  "HUDDesc": "@ui_eim_forceshield_percent",
+                  "Permanent": "1"
+                },
+                "Semantics": [
+                  {
+                    "$": {
+                      "ArmorPercentFloat": "8"
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "$": {
+          "Name": "AGIL_21",
+          "UIName": "@ui_AGIL_21_name",
+          "HUDLoreDesc": "",
+          "GameplayDesc": ""
+        },
+        "MagicEffects": [
+          {
+            "EIM": [
+              {
+                "$": {
+                  "Name": "dodgechance_score_percent",
+                  "HUDDesc": "@ui_eim_dodgechance_score_percent",
+                  "Permanent": "1"
+                },
+                "Semantics": [
+                  {
+                    "$": {
+                      "CharacteristicScorePercentInt": "12"
+                    }
+                  }
+                ]
+              },
+              {
+                "$": {
+                  "Name": "health_percent",
+                  "HUDDesc": "@ui_eim_health_percent",
+                  "Permanent": "1"
+                },
+                "Semantics": [
+                  {
+                    "$": {
+                      "HealthPercentInt": "8"
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "$": {
+          "Name": "AGIL_22",
+          "UIName": "@ui_AGIL_22_name",
+          "HUDLoreDesc": "@ui_AGIL_22_lore",
+          "GameplayDesc": "@ui_AGIL_22_desc"
+        },
+        "MagicEffects": [
+          {
+            "EIM": [
+              {
+                "$": {
+                  "Name": "dodgechance_on_being_hit",
+                  "HUDDesc": "@ui_eim_dodgechance_on_being_hit",
+                  "Permanent": "1"
+                },
+                "Semantics": [
+                  {
+                    "$": {
+                      "CharacteristicScorePercentInt": "100"
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "$": {
+          "Name": "AGIL_23",
+          "UIName": "@ui_AGIL_23_name",
+          "HUDLoreDesc": "",
+          "GameplayDesc": ""
+        },
+        "MagicEffects": [
+          {
+            "EIM": [
+              {
+                "$": {
+                  "Name": "toughness_pts",
+                  "HUDDesc": "@ui_eim_toughness_pts",
+                  "Permanent": "1"
+                },
+                "Semantics": [
+                  {
+                    "$": {
+                      "AttributeFlatInt": "25"
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "$": {
+          "Name": "AGIL_24",
+          "UIName": "@ui_AGIL_24_name",
+          "HUDLoreDesc": "",
+          "GameplayDesc": ""
+        },
+        "MagicEffects": [
+          {
+            "EIM": [
+              {
+                "$": {
+                  "Name": "health_percent",
+                  "HUDDesc": "@ui_eim_health_percent",
+                  "Permanent": "1"
+                },
+                "Semantics": [
+                  {
+                    "$": {
+                      "HealthPercentInt": "10"
+                    }
+                  }
+                ]
+              },
+              {
+                "$": {
+                  "Name": "health_regen_true_percent",
+                  "HUDDesc": "@ui_eim_health_regen_true_percent",
+                  "Permanent": "1"
+                },
+                "Semantics": [
+                  {
+                    "$": {
+                      "ResourcePercentInt": "12"
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

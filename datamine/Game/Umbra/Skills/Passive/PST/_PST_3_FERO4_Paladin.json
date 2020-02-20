@@ -1,0 +1,652 @@
+{
+  "MetaData": {
+    "Spell": [
+      {
+        "$": {
+          "Name": "PALA_1",
+          "UIName": "@ui_PALA_1_name",
+          "HUDLoreDesc": "",
+          "GameplayDesc": ""
+        },
+        "MagicEffects": [
+          {
+            "EIM": [
+              {
+                "$": {
+                  "Name": "damage_percent_attack",
+                  "HUDDesc": "@ui_eim_damage_percent_attack",
+                  "Permanent": "1"
+                },
+                "Semantics": [
+                  {
+                    "$": {
+                      "DamagePercentInt": "8"
+                    }
+                  }
+                ]
+              },
+              {
+                "$": {
+                  "Name": "damage_percent_spell",
+                  "HUDDesc": "@ui_eim_damage_percent_spell",
+                  "Permanent": "1"
+                },
+                "Semantics": [
+                  {
+                    "$": {
+                      "DamagePercentInt": "8"
+                    }
+                  }
+                ]
+              },
+              {
+                "$": {
+                  "Name": "forceshield_percent",
+                  "HUDDesc": "@ui_eim_forceshield_percent",
+                  "Permanent": "1"
+                },
+                "Semantics": [
+                  {
+                    "$": {
+                      "ArmorPercentFloat": "8"
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "$": {
+          "Name": "PALA_2",
+          "UIName": "@ui_PALA_2_name",
+          "HUDLoreDesc": "",
+          "GameplayDesc": ""
+        },
+        "MagicEffects": [
+          {
+            "EIM": [
+              {
+                "$": {
+                  "Name": "damage_percent_attack",
+                  "HUDDesc": "@ui_eim_damage_percent_attack",
+                  "Permanent": "1"
+                },
+                "Semantics": [
+                  {
+                    "$": {
+                      "DamagePercentInt": "12"
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "$": {
+          "Name": "PALA_3",
+          "UIName": "@ui_PALA_3_name",
+          "HUDLoreDesc": "",
+          "GameplayDesc": ""
+        },
+        "MagicEffects": [
+          {
+            "EIM": [
+              {
+                "$": {
+                  "Name": "damage_percent_attack",
+                  "HUDDesc": "@ui_eim_damage_percent_attack",
+                  "Permanent": "1"
+                },
+                "Semantics": [
+                  {
+                    "$": {
+                      "DamagePercentInt": "12"
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "$": {
+          "Name": "PALA_4",
+          "UIName": "@ui_PALA_4_name",
+          "HUDLoreDesc": "",
+          "GameplayDesc": ""
+        },
+        "MagicEffects": [
+          {
+            "EIM": [
+              {
+                "$": {
+                  "Name": "damage_percent_spell",
+                  "HUDDesc": "@ui_eim_damage_percent_spell",
+                  "Permanent": "1"
+                },
+                "Semantics": [
+                  {
+                    "$": {
+                      "DamagePercentInt": "8"
+                    }
+                  }
+                ]
+              },
+              {
+                "$": {
+                  "Name": "sacred_damage_percent",
+                  "HUDDesc": "@ui_eim_sacred_damage_percent",
+                  "Permanent": "1"
+                },
+                "Semantics": [
+                  {
+                    "$": {
+                      "DamagePercentInt": "10"
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "$": {
+          "Name": "PALA_5",
+          "UIName": "@ui_PALA_5_name",
+          "HUDLoreDesc": "",
+          "GameplayDesc": ""
+        },
+        "MagicEffects": [
+          {
+            "EIM": [
+              {
+                "$": {
+                  "Name": "sacred_damage_percent",
+                  "HUDDesc": "@ui_eim_sacred_damage_percent",
+                  "Permanent": "1"
+                },
+                "Semantics": [
+                  {
+                    "$": {
+                      "DamagePercentInt": "15"
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "$": {
+          "Name": "PALA_6",
+          "UIName": "@ui_PALA_6_name",
+          "HUDLoreDesc": "",
+          "GameplayDesc": ""
+        },
+        "MagicEffects": [
+          {
+            "EIM": [
+              {
+                "$": {
+                  "Name": "forceshield_percent",
+                  "HUDDesc": "@ui_eim_forceshield_percent",
+                  "Permanent": "1"
+                },
+                "Semantics": [
+                  {
+                    "$": {
+                      "ArmorPercentFloat": "15"
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "$": {
+          "Name": "PALA_7",
+          "UIName": "@ui_PALA_7_name",
+          "HUDLoreDesc": "",
+          "GameplayDesc": ""
+        },
+        "MagicEffects": [
+          {
+            "EIM": [
+              {
+                "$": {
+                  "Name": "health_gain_percent",
+                  "HUDDesc": "@ui_eim_health_gain_percent",
+                  "Permanent": "1"
+                },
+                "Semantics": [
+                  {
+                    "$": {
+                      "ResourcePercentFloat": "10"
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "$": {
+          "Name": "PALA_8",
+          "UIName": "@ui_PALA_8_name",
+          "HUDLoreDesc": "@ui_PALA_8_loredesc",
+          "GameplayDesc": "@ui_PALA_8_gameplaydesc"
+        },
+        "MagicEffects": [
+          {
+            "EIM": [
+              {
+                "$": {
+                  "Name": "smite_wounded_on_sacred_damage",
+                  "HUDDesc": "@ui_eim_smite_wounded_on_sacred_damage",
+                  "Permanent": "1"
+                },
+                "Semantics": [
+                  {
+                    "$": {
+                      "HealthPercentInt": "15"
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "$": {
+          "Name": "PALA_9",
+          "UIName": "@ui_PALA_9_name",
+          "HUDLoreDesc": "",
+          "GameplayDesc": ""
+        },
+        "MagicEffects": [
+          {
+            "EIM": [
+              {
+                "$": {
+                  "Name": "smite_wounded_on_sacred_damage",
+                  "HUDDesc": "@ui_eim_smite_elites",
+                  "Permanent": "1"
+                },
+                "Semantics": [
+                  {
+                    "$": {
+                      "CountInt": "1"
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "$": {
+          "Name": "PALA_10",
+          "UIName": "@ui_PALA_10_name",
+          "HUDLoreDesc": "",
+          "GameplayDesc": ""
+        },
+        "MagicEffects": [
+          {
+            "EIM": [
+              {
+                "$": {
+                  "Name": "damage_percent_spell",
+                  "HUDDesc": "@ui_eim_damage_percent_spell",
+                  "Permanent": "1"
+                },
+                "Semantics": [
+                  {
+                    "$": {
+                      "DamagePercentInt": "12"
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "$": {
+          "Name": "PALA_11",
+          "UIName": "@ui_PALA_11_name",
+          "HUDLoreDesc": "",
+          "GameplayDesc": ""
+        },
+        "MagicEffects": [
+          {
+            "EIM": [
+              {
+                "$": {
+                  "Name": "damage_percent_spell",
+                  "HUDDesc": "@ui_eim_damage_percent_spell",
+                  "Permanent": "1"
+                },
+                "Semantics": [
+                  {
+                    "$": {
+                      "DamagePercentInt": "12"
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "$": {
+          "Name": "PALA_12",
+          "UIName": "@ui_PALA_12_name",
+          "HUDLoreDesc": "",
+          "GameplayDesc": ""
+        },
+        "MagicEffects": [
+          {
+            "EIM": [
+              {
+                "$": {
+                  "Name": "damage_percent_attack",
+                  "HUDDesc": "@ui_eim_damage_percent_attack",
+                  "Permanent": "1"
+                },
+                "Semantics": [
+                  {
+                    "$": {
+                      "DamagePercentInt": "8"
+                    }
+                  }
+                ]
+              },
+              {
+                "$": {
+                  "Name": "sacred_damage_percent",
+                  "HUDDesc": "@ui_eim_sacred_damage_percent",
+                  "Permanent": "1"
+                },
+                "Semantics": [
+                  {
+                    "$": {
+                      "DamagePercentInt": "10"
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "$": {
+          "Name": "PALA_13",
+          "UIName": "@ui_PALA_13_name",
+          "HUDLoreDesc": "",
+          "GameplayDesc": ""
+        },
+        "MagicEffects": [
+          {
+            "EIM": [
+              {
+                "$": {
+                  "Name": "sacred_damage_percent",
+                  "HUDDesc": "@ui_eim_sacred_damage_percent",
+                  "Permanent": "1"
+                },
+                "Semantics": [
+                  {
+                    "$": {
+                      "DamagePercentInt": "15"
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "$": {
+          "Name": "PALA_14",
+          "UIName": "@ui_PALA_14_name",
+          "HUDLoreDesc": "",
+          "GameplayDesc": ""
+        },
+        "MagicEffects": [
+          {
+            "EIM": [
+              {
+                "$": {
+                  "Name": "forceshield_percent",
+                  "HUDDesc": "@ui_eim_forceshield_percent",
+                  "Permanent": "1"
+                },
+                "Semantics": [
+                  {
+                    "$": {
+                      "ArmorPercentFloat": "10"
+                    }
+                  }
+                ]
+              },
+              {
+                "$": {
+                  "Name": "all_resistance_score_percent",
+                  "HUDDesc": "@ui_eim_all_resistance_score_percent",
+                  "Permanent": "1"
+                },
+                "Semantics": [
+                  {
+                    "$": {
+                      "CharacteristicScorePercentInt": "9"
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "$": {
+          "Name": "PALA_15",
+          "UIName": "@ui_PALA_15_name",
+          "HUDLoreDesc": "",
+          "GameplayDesc": ""
+        },
+        "MagicEffects": [
+          {
+            "EIM": [
+              {
+                "$": {
+                  "Name": "all_resistance_score_percent",
+                  "HUDDesc": "@ui_eim_all_resistance_score_percent",
+                  "Permanent": "1"
+                },
+                "Semantics": [
+                  {
+                    "$": {
+                      "CharacteristicScorePercentInt": "9"
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "$": {
+          "Name": "PALA_16",
+          "UIName": "@ui_PALA_16_name",
+          "HUDLoreDesc": "",
+          "GameplayDesc": ""
+        },
+        "MagicEffects": [
+          {
+            "EIM": [
+              {
+                "$": {
+                  "Name": "healing_from_spells_percent",
+                  "HUDDesc": "@ui_eim_healing_from_spells_percent",
+                  "Permanent": "1"
+                },
+                "Semantics": [
+                  {
+                    "$": {
+                      "HealingPercentFloat": "10"
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "$": {
+          "Name": "PALA_17",
+          "UIName": "@ui_PALA_17_name",
+          "HUDLoreDesc": "@ui_PALA_17_loredesc",
+          "GameplayDesc": "@ui_PALA_17_gameplaydesc"
+        },
+        "MagicEffects": [
+          {
+            "EIM": [
+              {
+                "$": {
+                  "Name": "pray_on_low_health",
+                  "HUDDesc": "@ui_eim_pray_on_low_health",
+                  "Permanent": "1"
+                },
+                "Semantics": [
+                  {
+                    "$": {
+                      "PossibilityInt": "1",
+                      "TriggeredSkillSelector": "0"
+                    }
+                  }
+                ]
+              },
+              {
+                "$": {
+                  "Name": "pray_on_low_health_all_resistances",
+                  "HUDDesc": "@ui_eim_pray_on_low_health_all_resistances",
+                  "Permanent": "1"
+                },
+                "Semantics": [
+                  {
+                    "$": {
+                      "CharacteristicScorePercentInt": "30"
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "$": {
+          "Name": "PALA_18",
+          "UIName": "@ui_PALA_18_name",
+          "HUDLoreDesc": "",
+          "GameplayDesc": ""
+        },
+        "MagicEffects": [
+          {
+            "EIM": [
+              {
+                "$": {
+                  "Name": "pray_on_low_health_all_resistances",
+                  "HUDDesc": "@ui_eim_pray_on_low_health_all_resistances_added",
+                  "Permanent": "1"
+                },
+                "Semantics": [
+                  {
+                    "$": {
+                      "CharacteristicScorePercentInt": "20"
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "$": {
+          "Name": "PALA_19",
+          "UIName": "@ui_PALA_19_name",
+          "HUDLoreDesc": "@ui_PALA_19_loredesc",
+          "GameplayDesc": "@ui_PALA_19_gameplaydesc"
+        },
+        "MagicEffects": [
+          {
+            "EIM": [
+              {
+                "$": {
+                  "Name": "dawn_stat_bonus_from_force_shield",
+                  "HUDDesc": "@ui_eim_dawn_stat_bonus_from_force_shield_state",
+                  "Permanent": "1"
+                },
+                "Semantics": [
+                  {
+                    "$": {
+                      "DamagePercentFloat": "25",
+                      "ResourcePercentFloat": "50"
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "$": {
+          "Name": "PALA_20",
+          "UIName": "@ui_PALA_20_name",
+          "HUDLoreDesc": "",
+          "GameplayDesc": ""
+        },
+        "MagicEffects": [
+          {
+            "EIM": [
+              {
+                "$": {
+                  "Name": "dawn_stat_bonus_from_force_shield",
+                  "HUDDesc": "@ui_eim_dawn_stat_bonus_from_force_shield_state_bonus",
+                  "Permanent": "1"
+                },
+                "Semantics": [
+                  {
+                    "$": {
+                      "DamagePercentFloat": "10"
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -29,6 +29,7 @@ type Route
     | Skill String
     | Affixes
     | Gems
+    | Passives
     | Source String String
     | Changelog
     | Privacy
@@ -63,6 +64,7 @@ parser =
         , P.map Skill <| P.s "skill" </> P.string
         , P.map Affixes <| P.s "affix"
         , P.map Gems <| P.s "gem"
+        , P.map Passives <| P.s "passive"
         , P.map Source <| P.s "source" </> P.string </> P.string
         , P.map Changelog <| P.s "changelog"
         , P.map Privacy <| P.s "privacy"
@@ -134,6 +136,9 @@ toString r =
 
         Gems ->
             "/gem"
+
+        Passives ->
+            "/passive"
 
         Source type_ id ->
             "/source/" ++ type_ ++ "/" ++ id

@@ -1,0 +1,178 @@
+<MetaData>
+  <Spell Name="REPU_1" UIName="@ui_REPU_1_name" HUDLoreDesc="" GameplayDesc="">
+    <MagicEffects>
+      <EIM Name="damage_percent_melee_weapon" HUDDesc="@ui_eim_damage_percent_melee_weapon" Permanent="1">
+        <Semantics DamagePercentInt="8" />
+      </EIM>
+      <EIM Name="damage_percent_projectiles" HUDDesc="@ui_eim_damage_percent_projectiles" Permanent="1">
+        <Semantics DamagePercentInt="8" />
+      </EIM>
+      <EIM Name="dodgechance_score_percent" HUDDesc="@ui_eim_dodgechance_score_percent" Permanent="1">
+        <Semantics CharacteristicScorePercentInt="9" />
+      </EIM>
+    </MagicEffects>
+  </Spell>
+  <Spell Name="REPU_2" UIName="@ui_REPU_2_name" HUDLoreDesc="" GameplayDesc="">
+    <MagicEffects>
+      <EIM Name="material_damage_percent" HUDDesc="@ui_eim_material_damage_percent" Permanent="1">
+        <Semantics DamagePercentInt="15" />
+      </EIM>
+    </MagicEffects>
+  </Spell>
+  <Spell Name="REPU_3" UIName="@ui_REPU_3_name" HUDLoreDesc="" GameplayDesc="">
+    <MagicEffects>
+      <EIM Name="material_damage_percent" HUDDesc="@ui_eim_material_damage_percent" Permanent="1">
+        <Semantics DamagePercentInt="15" />
+      </EIM>
+    </MagicEffects>
+  </Spell>
+  <Spell Name="REPU_4" UIName="@ui_REPU_4_name" HUDLoreDesc="" GameplayDesc="">
+    <MagicEffects>
+      <EIM Name="dodgechance_score_percent" HUDDesc="@ui_eim_dodgechance_score_percent" Permanent="1">
+        <Semantics CharacteristicScorePercentInt="12" />
+      </EIM>
+      <EIM Name="movespeed" HUDDesc="@ui_eim_movespeed" Permanent="1">
+        <Semantics SpeedPercentInt="5" />
+      </EIM>
+    </MagicEffects>
+  </Spell>
+  <Spell Name="REPU_5" UIName="@ui_REPU_5_name" HUDLoreDesc="" GameplayDesc="">
+    <MagicEffects>
+      <EIM Name="material_damage_percent" HUDDesc="@ui_eim_material_damage_percent" Permanent="1">
+        <Semantics DamagePercentInt="15" />
+      </EIM>
+      <EIM Name="criticalchance_score_percent" HUDDesc="@ui_eim_criticalchance_score_percent" Permanent="1">
+        <Semantics CharacteristicScorePercentInt="9" />
+      </EIM>
+    </MagicEffects>
+  </Spell>
+  <Spell Name="REPU_6" UIName="@ui_REPU_6_name" HUDLoreDesc="" GameplayDesc="">
+    <MagicEffects>
+      <EIM Name="damage_percent_melee_weapon" HUDDesc="@ui_eim_damage_percent_melee_weapon" Permanent="1">
+        <Semantics DamagePercentInt="12" />
+      </EIM>
+    </MagicEffects>
+  </Spell>
+  <Spell Name="REPU_7" UIName="@ui_REPU_7_name" HUDLoreDesc="" GameplayDesc="">
+    <MagicEffects>
+      <EIM Name="material_resistance_score_percent" HUDDesc="@ui_eim_material_resistance_score_percent" Permanent="1">
+        <Semantics CharacteristicScorePercentInt="10" />
+      </EIM>
+      <EIM Name="health_percent" HUDDesc="@ui_eim_health_percent" Permanent="1">
+        <Semantics HealthPercentInt="8" />
+      </EIM>
+    </MagicEffects>
+  </Spell>
+  <Spell Name="REPU_8" UIName="@ui_REPU_8_name" HUDLoreDesc="@ui_REPU_8_loredesc" GameplayDesc="@ui_REPU_8_gameplaydesc">
+    <MagicEffects>
+      <EIM Name="stack_tatoo_use_mechanic" HUDDesc="@ui_eim_stack_tatoo_use_mechanic" Permanent="1">
+        <Semantics PSTStackTickrateFloat="2.5" PSTStackMaxCountInt="5" />
+      </EIM>
+      <EIM Name="stack_tatoo_damage_reduction" HUDDesc="@ui_eim_stack_tatoo_damage_reduction" Permanent="1">
+        <Semantics DamagePercentFloat="15" />
+      </EIM>
+    </MagicEffects>
+  </Spell>
+  <Spell Name="REPU_9" UIName="@ui_REPU_9_name" HUDLoreDesc="" GameplayDesc="">
+    <MagicEffects>
+      <EIM Name="stack_tatoo_damage_reduction" HUDDesc="@ui_eim_stack_tatoo_damage_reduction" Permanent="1">
+        <Semantics DamagePercentFloat="5" />
+      </EIM>
+    </MagicEffects>
+  </Spell>
+  <Spell Name="REPU_10" UIName="@ui_REPU_10_name" HUDLoreDesc="" GameplayDesc="">
+    <MagicEffects>
+      <EIM Name="damage_percent_projectiles" HUDDesc="@ui_eim_damage_percent_projectiles" Permanent="1">
+        <Semantics DamagePercentInt="12" />
+      </EIM>
+    </MagicEffects>
+  </Spell>
+  <Spell Name="REPU_11" UIName="@ui_REPU_11_name" HUDLoreDesc="" GameplayDesc="">
+    <MagicEffects>
+      <EIM Name="damage_percent_projectiles" HUDDesc="@ui_eim_damage_percent_projectiles" Permanent="1">
+        <Semantics DamagePercentInt="12" />
+      </EIM>
+    </MagicEffects>
+  </Spell>
+  <Spell Name="REPU_12" UIName="@ui_REPU_12_name" HUDLoreDesc="" GameplayDesc="">
+    <MagicEffects>
+      <EIM Name="dodgechance_score_percent" HUDDesc="@ui_eim_dodgechance_score_percent" Permanent="1">
+        <Semantics CharacteristicScorePercentInt="12" />
+      </EIM>
+      <EIM Name="movespeed" HUDDesc="@ui_eim_movespeed" Permanent="1">
+        <Semantics SpeedPercentInt="5" />
+      </EIM>
+    </MagicEffects>
+  </Spell>
+  <Spell Name="REPU_13" UIName="@ui_REPU_13_name" HUDLoreDesc="" GameplayDesc="">
+    <MagicEffects>
+      <EIM Name="damage_percent_projectiles" HUDDesc="@ui_eim_damage_percent_projectiles" Permanent="1">
+        <Semantics DamagePercentInt="8" />
+      </EIM>
+      <EIM Name="damage_percent_melee_weapon" HUDDesc="@ui_eim_damage_percent_melee_weapon" Permanent="1">
+        <Semantics DamagePercentInt="8" />
+      </EIM>
+    </MagicEffects>
+  </Spell>
+  <Spell Name="REPU_14" UIName="@ui_REPU_14_name" HUDLoreDesc="" GameplayDesc="">
+    <MagicEffects>
+      <EIM Name="material_resistance_score_percent" HUDDesc="@ui_eim_material_resistance_score_percent" Permanent="1">
+        <Semantics CharacteristicScorePercentInt="10" />
+      </EIM>
+    </MagicEffects>
+  </Spell>
+  <Spell Name="REPU_15" UIName="@ui_REPU_15_name" HUDLoreDesc="" GameplayDesc="">
+    <MagicEffects>
+      <EIM Name="damage_percent_melee_weapon" HUDDesc="@ui_eim_damage_percent_melee_weapon" Permanent="1">
+        <Semantics DamagePercentInt="12" />
+      </EIM>
+    </MagicEffects>
+  </Spell>
+  <Spell Name="REPU_16" UIName="@ui_REPU_16_name" HUDLoreDesc="" GameplayDesc="">
+    <MagicEffects>
+      <EIM Name="material_resistance_score_percent" HUDDesc="@ui_eim_material_resistance_score_percent" Permanent="1">
+        <Semantics CharacteristicScorePercentInt="10" />
+      </EIM>
+      <EIM Name="health_percent" HUDDesc="@ui_eim_health_percent" Permanent="1">
+        <Semantics HealthPercentInt="8" />
+      </EIM>
+    </MagicEffects>
+  </Spell>
+  <Spell Name="REPU_17" UIName="@ui_REPU_17_name" HUDLoreDesc="@ui_REPU_17_loredesc" GameplayDesc="@ui_REPU_17_gameplaydesc">
+    <MagicEffects>
+      <EIM Name="stack_bullet_uses_mechanic" HUDDesc="@ui_eim_stack_bullet_uses_mechanic" Permanent="1">
+        <Semantics PSTStackTickrateFloat="2" PSTStackMaxCountInt="5" />
+      </EIM>
+      <EIM Name="stack_bullet_proj_damage" HUDDesc="@ui_eim_stack_bullet_proj_damage" Permanent="1">
+        <Semantics DamagePercentFloat="10" />
+      </EIM>
+      <EIM Name="stack_bullet_melee_damage" HUDDesc="@ui_eim_stack_bullet_melee_damage" Permanent="1">
+        <Semantics DamagePercentFloat="10" />
+      </EIM>
+      <EIM Name="stack_bullet_charges_on_dodge_roll" HUDDesc="@ui_eim_stack_bullet_charges_on_dodge_roll" Permanent="1">
+        <Semantics StackCountInt="1" />
+      </EIM>
+    </MagicEffects>
+  </Spell>
+  <Spell Name="REPU_18" UIName="@ui_REPU_18_name" HUDLoreDesc="" GameplayDesc="">
+    <MagicEffects>
+      <EIM Name="stack_bullet_charges_on_critical" HUDDesc="@ui_eim_stack_bullet_charges_on_critical" Permanent="1">
+        <Semantics StackCountInt="1" />
+      </EIM>
+    </MagicEffects>
+  </Spell>
+  <Spell Name="REPU_19" UIName="@ui_REPU_19_name" HUDLoreDesc="@ui_REPU_19_loredesc" GameplayDesc="@ui_REPU_19_gameplaydesc">
+    <MagicEffects>
+      <EIM Name="material_damage_on_elites" HUDDesc="@ui_eim_material_damage_on_elites" Permanent="1">
+        <Semantics PSTStackResetTimer="30" PSTStackMaxCountInt="5" DamagePercentFloat="15" />
+      </EIM>
+    </MagicEffects>
+  </Spell>
+  <Spell Name="REPU_20" UIName="@ui_REPU_20_name" HUDLoreDesc="" GameplayDesc="">
+    <MagicEffects>
+      <EIM Name="material_damage_on_elites" HUDDesc="@ui_eim_material_damage_on_elites_timer" Permanent="1">
+        <Semantics PSTStackResetTimer="50" />
+      </EIM>
+    </MagicEffects>
+  </Spell>
+</MetaData>

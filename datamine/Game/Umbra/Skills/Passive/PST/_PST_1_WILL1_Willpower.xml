@@ -1,0 +1,203 @@
+<MetaData>
+  <Spell Name="WILL_1" UIName="@ui_WILL_1_name" HUDLoreDesc="" GameplayDesc="">
+    <MagicEffects>
+      <EIM Name="damage_percent_spell" HUDDesc="@ui_eim_damage_percent_spell" Permanent="1">
+        <Semantics DamagePercentInt="12" />
+      </EIM>
+      <EIM Name="dotdamage_percent_global" HUDDesc="@ui_eim_dotdamage_percent_global" Permanent="1">
+        <Semantics DamagePercentFloat="12" />
+      </EIM>
+    </MagicEffects>
+  </Spell>
+  <Spell Name="WILL_2" UIName="@ui_WILL_2_name" HUDLoreDesc="" GameplayDesc="">
+    <MagicEffects>
+      <EIM Name="damage_percent_spell" HUDDesc="@ui_eim_damage_percent_spell" Permanent="1">
+        <Semantics DamagePercentInt="12" />
+      </EIM>
+      <EIM Name="dotdamage_percent_global" HUDDesc="@ui_eim_dotdamage_percent_global" Permanent="1">
+        <Semantics DamagePercentFloat="12" />
+      </EIM>
+    </MagicEffects>
+  </Spell>
+  <Spell Name="WILL_3" UIName="@ui_WILL_3_name" HUDLoreDesc="" GameplayDesc="">
+    <MagicEffects>
+      <EIM Name="willpower_pts" HUDDesc="@ui_eim_willpower_pts" Permanent="1">
+        <Semantics AttributeFlatInt="25" />
+      </EIM>
+    </MagicEffects>
+  </Spell>
+  <Spell Name="WILL_4" UIName="@ui_WILL_4_name" HUDLoreDesc="" GameplayDesc="">
+    <MagicEffects>
+      <EIM Name="spellcastingspeed_score_percent" HUDDesc="@ui_eim_spellcastingspeed_score_percent" Permanent="1">
+        <Semantics CharacteristicScorePercentInt="12" />
+      </EIM>
+      <EIM Name="damage_percent" HUDDesc="@ui_eim_damage_percent" Permanent="1">
+        <Semantics DamagePercentInt="8" />
+      </EIM>
+    </MagicEffects>
+  </Spell>
+  <Spell Name="WILL_5" UIName="@ui_WILL_5_name" HUDLoreDesc="" GameplayDesc="">
+    <MagicEffects>
+      <EIM Name="spellcastingspeed_score_percent" HUDDesc="@ui_eim_spellcastingspeed_score_percent" Permanent="1">
+        <Semantics CharacteristicScorePercentInt="12" />
+      </EIM>
+      <EIM Name="damage_percent" HUDDesc="@ui_eim_damage_percent" Permanent="1">
+        <Semantics DamagePercentInt="8" />
+      </EIM>
+    </MagicEffects>
+  </Spell>
+  <Spell Name="WILL_6" UIName="@ui_WILL_6_name" HUDLoreDesc="" GameplayDesc="">
+    <MagicEffects>
+      <EIM Name="statusailment_inflict_score_percent_elemental" HUDDesc="@ui_eim_statusailment_inflict_score_percent_elemental" Permanent="1">
+        <Semantics CharacteristicScorePercentInt="25" />
+      </EIM>
+    </MagicEffects>
+  </Spell>
+  <Spell Name="WILL_7" UIName="@ui_WILL_7_name" HUDLoreDesc="" GameplayDesc="">
+    <MagicEffects>
+      <EIM Name="statusailment_inflict_score_percent_occult" HUDDesc="@ui_eim_statusailment_inflict_score_percent_occult" Permanent="1">
+        <Semantics CharacteristicScorePercentInt="25" />
+      </EIM>
+    </MagicEffects>
+  </Spell>
+  <Spell Name="WILL_8" UIName="@ui_WILL_8_name" HUDLoreDesc="" GameplayDesc="">
+    <MagicEffects>
+      <EIM Name="statusailment_inflict_score_percent_material" HUDDesc="@ui_eim_statusailment_inflict_score_percent_material" Permanent="1">
+        <Semantics CharacteristicScorePercentInt="25" />
+      </EIM>
+    </MagicEffects>
+  </Spell>
+  <Spell Name="WILL_9" UIName="@ui_WILL_9_name" HUDLoreDesc="@ui_WILL_9_lore" GameplayDesc="@ui_WILL_9_desc">
+    <MagicEffects>
+      <EIM Name="statusailment_inflict_score_percent" HUDDesc="@ui_eim_statusailment_inflict_score_percent" Permanent="1">
+        <Semantics CharacteristicScorePercentInt="60" />
+      </EIM>
+    </MagicEffects>
+  </Spell>
+  <Spell Name="WILL_10" UIName="@ui_WILL_10_name" HUDLoreDesc="" GameplayDesc="">
+    <MagicEffects>
+      <EIM Name="skill_cooldownreduction_percent" HUDDesc="@ui_eim_skill_cooldownreduction_percent" Permanent="1">
+        <Semantics DurationPercentFloat="10" />
+      </EIM>
+    </MagicEffects>
+  </Spell>
+  <Spell Name="WILL_11" UIName="@ui_WILL_11_name" HUDLoreDesc="" GameplayDesc="">
+    <MagicEffects>
+      <EIM Name="resource_points" HUDDesc="@ui_eim_resource_points" Permanent="1">
+        <Semantics ResourceFlatInt="150" />
+      </EIM>
+    </MagicEffects>
+  </Spell>
+  <Spell Name="WILL_12" UIName="@ui_WILL_12_name" HUDLoreDesc="" GameplayDesc="">
+    <MagicEffects>
+      <EIM Name="globes_pickup_radius" HUDDesc="@ui_eim_globes_pickup_radius" Permanent="1">
+        <Semantics RadiusFloat="15" />
+      </EIM>
+    </MagicEffects>
+  </Spell>
+  <Spell Name="WILL_13" UIName="@ui_WILL_13_name" HUDLoreDesc="" GameplayDesc="">
+    <MagicEffects>
+      <EIM Name="healing_from_globes_bonus_percent" HUDDesc="@ui_eim_healing_from_globes_bonus_percent" Permanent="1">
+        <Semantics HealingPercentFloat="10" />
+      </EIM>
+    </MagicEffects>
+  </Spell>
+  <Spell Name="WILL_14" UIName="@ui_WILL_14_name" HUDLoreDesc="@ui_WILL_14_lore" GameplayDesc="@ui_WILL_14_desc">
+    <MagicEffects>
+      <EIM Name="shield_regeneration_from_health_globes" HUDDesc="@ui_eim_shield_regeneration_from_health_globes" Permanent="1">
+        <Semantics HealingPercentFloat="25" />
+      </EIM>
+    </MagicEffects>
+  </Spell>
+  <Spell Name="WILL_15" UIName="@ui_WILL_15_name" HUDLoreDesc="" GameplayDesc="">
+    <MagicEffects>
+      <EIM Name="healing_from_globes_bonus_percent" HUDDesc="@ui_eim_healing_from_globes_bonus_percent" Permanent="1">
+        <Semantics HealingPercentFloat="10" />
+      </EIM>
+    </MagicEffects>
+  </Spell>
+  <Spell Name="WILL_16" UIName="@ui_WILL_16_name" HUDLoreDesc="" GameplayDesc="">
+    <MagicEffects>
+      <EIM Name="forceshield_percent" HUDDesc="@ui_eim_forceshield_percent" Permanent="1">
+        <Semantics ArmorPercentFloat="10" />
+      </EIM>
+      <EIM Name="statusailment_resist_score_percent" HUDDesc="@ui_eim_statusailment_resist_score_percent" Permanent="1">
+        <Semantics CharacteristicScorePercentInt="12" />
+      </EIM>
+    </MagicEffects>
+  </Spell>
+  <Spell Name="WILL_17" UIName="@ui_WILL_17_name" HUDLoreDesc="" GameplayDesc="">
+    <MagicEffects>
+      <EIM Name="forceshield_percent" HUDDesc="@ui_eim_forceshield_percent" Permanent="1">
+        <Semantics ArmorPercentFloat="10" />
+      </EIM>
+      <EIM Name="statusailment_resist_score_percent" HUDDesc="@ui_eim_statusailment_resist_score_percent" Permanent="1">
+        <Semantics CharacteristicScorePercentInt="5" />
+      </EIM>
+    </MagicEffects>
+  </Spell>
+  <Spell Name="WILL_18" UIName="@ui_WILL_18_name" HUDLoreDesc="" GameplayDesc="">
+    <MagicEffects>
+      <EIM Name="ragecosts_percent" HUDDesc="@ui_eim_ragecosts_percent" Permanent="1">
+        <Semantics ResourcePercentFloat="5" />
+      </EIM>
+      <EIM Name="umbracosts_percent" HUDDesc="@ui_eim_umbracosts_percent" Permanent="1">
+        <Semantics ResourcePercentFloat="5" />
+      </EIM>
+      <EIM Name="all_resistance_score_percent" HUDDesc="@ui_eim_all_resistance_score_percent" Permanent="1">
+        <Semantics CharacteristicScorePercentInt="9" />
+      </EIM>
+    </MagicEffects>
+  </Spell>
+  <Spell Name="WILL_19" UIName="@ui_WILL_19_name" HUDLoreDesc="" GameplayDesc="">
+    <MagicEffects>
+      <EIM Name="forceshield_regeneration_percent" HUDDesc="@ui_eim_forceshield_regeneration_percent" Permanent="1">
+        <Semantics DefenseRegenerationPercentFloat="25" />
+      </EIM>
+    </MagicEffects>
+  </Spell>
+  <Spell Name="WILL_20" UIName="@ui_WILL_20_name" HUDLoreDesc="" GameplayDesc="">
+    <MagicEffects>
+      <EIM Name="forceshield_regeneration_percent" HUDDesc="@ui_eim_forceshield_regeneration_percent" Permanent="1">
+        <Semantics DefenseRegenerationPercentFloat="17" />
+      </EIM>
+      <EIM Name="forceshield_lock_timer_percent" HUDDesc="@ui_eim_forceshield_lock_timer_percent" Permanent="1">
+        <Semantics DurationPercentFloat="10" />
+      </EIM>
+    </MagicEffects>
+  </Spell>
+  <Spell Name="WILL_21" UIName="@ui_WILL_21_name" HUDLoreDesc="" GameplayDesc="">
+    <MagicEffects>
+      <EIM Name="forceshield_lock_timer_percent" HUDDesc="@ui_eim_forceshield_lock_timer_percent" Permanent="1">
+        <Semantics DurationPercentFloat="20" />
+      </EIM>
+    </MagicEffects>
+  </Spell>
+  <Spell Name="WILL_22" UIName="@ui_WILL_22_name" HUDLoreDesc="@ui_WILL_22_lore" GameplayDesc="@ui_WILL_22_desc">
+    <MagicEffects>
+      <EIM Name="damage_reduction_on_full_force_shield" HUDDesc="@ui_eim_damage_reduction_on_full_force_shield" Permanent="1">
+        <Semantics DamagePercentFloat="30" />
+      </EIM>
+    </MagicEffects>
+  </Spell>
+  <Spell Name="WILL_23" UIName="@ui_WILL_23_name" HUDLoreDesc="" GameplayDesc="">
+    <MagicEffects>
+      <EIM Name="toughness_pts" HUDDesc="@ui_eim_toughness_pts" Permanent="1">
+        <Semantics AttributeFlatInt="25" />
+      </EIM>
+    </MagicEffects>
+  </Spell>
+  <Spell Name="WILL_24" UIName="@ui_WILL_24_name" HUDLoreDesc="" GameplayDesc="">
+    <MagicEffects>
+      <EIM Name="ragecosts_percent" HUDDesc="@ui_eim_ragecosts_percent" Permanent="1">
+        <Semantics ResourcePercentFloat="5" />
+      </EIM>
+      <EIM Name="umbracosts_percent" HUDDesc="@ui_eim_umbracosts_percent" Permanent="1">
+        <Semantics ResourcePercentFloat="5" />
+      </EIM>
+      <EIM Name="all_resistance_score_percent" HUDDesc="@ui_eim_all_resistance_score_percent" Permanent="1">
+        <Semantics CharacteristicScorePercentInt="9" />
+      </EIM>
+    </MagicEffects>
+  </Spell>
+</MetaData>

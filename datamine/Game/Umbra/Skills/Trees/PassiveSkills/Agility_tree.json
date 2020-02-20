@@ -1,0 +1,279 @@
+{
+  "MetaData": {
+    "Tree": [
+      {
+        "$": {
+          "Name": "Agility",
+          "UIName": "@ui_Section_Agility",
+          "Category": "range"
+        },
+        "Skill": [
+          {
+            "$": {
+              "Name": "AGIL_1",
+              "Rarity": "1",
+              "Category": "range",
+              "MaxLevel": "1",
+              "Angle": "0.75",
+              "Pos": "0.25",
+              "Unlock": "begin,AGIL_2,AGIL_10"
+            }
+          },
+          {
+            "$": {
+              "Name": "AGIL_2",
+              "Rarity": "1",
+              "Category": "range",
+              "MaxLevel": "1",
+              "Angle": "0.68",
+              "Pos": "0.35",
+              "Unlock": "AGIL_3,AGIL_5"
+            }
+          },
+          {
+            "$": {
+              "Name": "AGIL_3",
+              "Rarity": "1",
+              "Category": "range",
+              "MaxLevel": "1",
+              "Angle": "0.92",
+              "Pos": "0.51",
+              "Unlock": "AGIL_4,rightDown"
+            }
+          },
+          {
+            "$": {
+              "Name": "AGIL_4",
+              "Rarity": "1",
+              "Category": "range",
+              "MaxLevel": "1",
+              "Angle": "0.75",
+              "Pos": "0.90",
+              "Unlock": "AGIL_5,endRight,rightUp"
+            }
+          },
+          {
+            "$": {
+              "Name": "AGIL_5",
+              "Rarity": "1",
+              "Category": "range",
+              "MaxLevel": "1",
+              "Angle": "0.61",
+              "Pos": "0.60",
+              "Unlock": "AGIL_6"
+            }
+          },
+          {
+            "$": {
+              "Name": "AGIL_6",
+              "Rarity": "1",
+              "Category": "range",
+              "MaxLevel": "1",
+              "Angle": "0.70",
+              "Pos": "0.58",
+              "Unlock": "AGIL_7,AGIL_9"
+            }
+          },
+          {
+            "$": {
+              "Name": "AGIL_7",
+              "Rarity": "1",
+              "Category": "range",
+              "MaxLevel": "1",
+              "Angle": "0.75",
+              "Pos": "0.48",
+              "Unlock": ""
+            }
+          },
+          {
+            "$": {
+              "Name": "AGIL_8",
+              "Rarity": "1",
+              "Category": "range",
+              "MaxLevel": "1",
+              "Angle": "0.78",
+              "Pos": "0.60",
+              "Unlock": "AGIL_7,AGIL_9"
+            }
+          },
+          {
+            "$": {
+              "Name": "AGIL_9",
+              "Rarity": "3",
+              "Category": "range",
+              "MaxLevel": "1",
+              "Angle": "0.75",
+              "Pos": "0.72",
+              "Unlock": ""
+            }
+          },
+          {
+            "$": {
+              "Name": "AGIL_16",
+              "Rarity": "1",
+              "Category": "range",
+              "MaxLevel": "1",
+              "Angle": "0.25",
+              "Pos": "0.25",
+              "Unlock": "begin,AGIL_17,AGIL_10"
+            }
+          },
+          {
+            "$": {
+              "Name": "AGIL_17",
+              "Rarity": "1",
+              "Category": "range",
+              "MaxLevel": "1",
+              "Angle": "0.32",
+              "Pos": "0.35",
+              "Unlock": "AGIL_18,AGIL_23"
+            }
+          },
+          {
+            "$": {
+              "Name": "AGIL_23",
+              "Rarity": "1",
+              "Category": "range",
+              "MaxLevel": "1",
+              "Angle": "0.08",
+              "Pos": "0.51",
+              "Unlock": "AGIL_24,leftDown"
+            }
+          },
+          {
+            "$": {
+              "Name": "AGIL_24",
+              "Rarity": "1",
+              "Category": "range",
+              "MaxLevel": "1",
+              "Angle": "0.25",
+              "Pos": "0.90",
+              "Unlock": "AGIL_18,endLeft,leftUp"
+            }
+          },
+          {
+            "$": {
+              "Name": "AGIL_18",
+              "Rarity": "1",
+              "Category": "range",
+              "MaxLevel": "1",
+              "Angle": "0.39",
+              "Pos": "0.60",
+              "Unlock": "AGIL_19"
+            }
+          },
+          {
+            "$": {
+              "Name": "AGIL_19",
+              "Rarity": "1",
+              "Category": "range",
+              "MaxLevel": "1",
+              "Angle": "0.30",
+              "Pos": "0.58",
+              "Unlock": "AGIL_22,AGIL_20"
+            }
+          },
+          {
+            "$": {
+              "Name": "AGIL_20",
+              "Rarity": "1",
+              "Category": "range",
+              "MaxLevel": "1",
+              "Angle": "0.25",
+              "Pos": "0.48",
+              "Unlock": ""
+            }
+          },
+          {
+            "$": {
+              "Name": "AGIL_21",
+              "Rarity": "1",
+              "Category": "range",
+              "MaxLevel": "1",
+              "Angle": "0.22",
+              "Pos": "0.60",
+              "Unlock": "AGIL_22,AGIL_20"
+            }
+          },
+          {
+            "$": {
+              "Name": "AGIL_22",
+              "Rarity": "3",
+              "Category": "range",
+              "MaxLevel": "1",
+              "Angle": "0.25",
+              "Pos": "0.72",
+              "Unlock": ""
+            }
+          },
+          {
+            "$": {
+              "Name": "AGIL_10",
+              "Rarity": "1",
+              "Category": "range",
+              "MaxLevel": "1",
+              "Angle": "0.5",
+              "Pos": "0.5",
+              "Unlock": "AGIL_5,AGIL_18,AGIL_11"
+            }
+          },
+          {
+            "$": {
+              "Name": "AGIL_11",
+              "Rarity": "1",
+              "Category": "range",
+              "MaxLevel": "1",
+              "Angle": "0.5",
+              "Pos": "0.70",
+              "Unlock": "AGIL_5,AGIL_18,AGIL_12"
+            }
+          },
+          {
+            "$": {
+              "Name": "AGIL_12",
+              "Rarity": "1",
+              "Category": "range",
+              "MaxLevel": "1",
+              "Angle": "0.5",
+              "Pos": "0.80",
+              "Unlock": "AGIL_13,AGIL_14,AGIL_15"
+            }
+          },
+          {
+            "$": {
+              "Name": "AGIL_13",
+              "Rarity": "1",
+              "Category": "range",
+              "MaxLevel": "1",
+              "Angle": "0.6",
+              "Pos": "0.86",
+              "Unlock": ""
+            }
+          },
+          {
+            "$": {
+              "Name": "AGIL_14",
+              "Rarity": "3",
+              "Category": "range",
+              "MaxLevel": "1",
+              "Angle": "0.5",
+              "Pos": "0.91",
+              "Unlock": "AGIL_13,AGIL_15"
+            }
+          },
+          {
+            "$": {
+              "Name": "AGIL_15",
+              "Rarity": "1",
+              "Category": "range",
+              "MaxLevel": "1",
+              "Angle": "0.4",
+              "Pos": "0.86",
+              "Unlock": ""
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -14,6 +14,7 @@ import Page.Gems
 import Page.Home
 import Page.NormalItem
 import Page.NormalItems
+import Page.Passives
 import Page.Privacy
 import Page.Skill
 import Page.Skills
@@ -212,6 +213,9 @@ viewBody mmodel =
 
                         Route.Gems ->
                             Page.Gems.view model.datamine
+
+                        Route.Passives ->
+                            Page.Passives.view model.datamine
 
                         Route.Source type_ id ->
                             Page.Source.view model.datamine type_ id

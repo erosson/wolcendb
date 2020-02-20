@@ -23,7 +23,7 @@ function main() {
 }
 function xmlMain() {
   return Promise.all([
-    glob(prefix + "localization/text_ui_{Loot,Activeskills,EIM}.xml", null),
+    glob(prefix + "localization/text_ui_{Loot,Activeskills,EIM,passiveskills}.xml", null),
     glob(prefix + "Game/Umbra/Loot/Armors/{Armors,Accessories,Armors_unique,UniquesAccessories,UniqueArmors}*", null),
     glob(prefix + "Game/Umbra/Loot/Weapons/{Unique,}{Weapons,Shields}*", null),
     glob(prefix + "Game/Umbra/Loot/MagicEffects/Affixes/Armors_Weapons/Affixes{Implicit,Uniques,Armors,Weapons\.,Accessories,Gems}*", null),
@@ -32,6 +32,8 @@ function xmlMain() {
     glob(prefix + "Game/Umbra/SkinParams/WeaponSkins/CosmeticWeaponDescriptorBankGameplay.xml", null),
     glob(prefix + "Game/Umbra/SkinParams/TransferTemplate/TransferTemplateBank.xml", null),
     glob(prefix + "Game/Umbra/Loot/Gems/*", null),
+    glob(prefix + "Game/Umbra/Skills/Passive/PST/*", null),
+    glob(prefix + "Game/Umbra/Skills/Trees/PassiveSkills/*", null),
   ])
   .then(groups => groups.map(group => group.map(path => path.replace(/^datamine.tmp\//, ''))))
   .then(groups => {
@@ -86,7 +88,6 @@ function revisionMain() {
         .map(line => line.split(':').map(s => s.trim()))
       )
     )
-    .then(json => {console.log(json); return json})
     .then(json =>
       fs.writeFile(
         dest + p.replace(/\.txt$/, '.json'),

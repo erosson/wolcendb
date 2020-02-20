@@ -1,0 +1,710 @@
+{
+  "MetaData": {
+    "Spell": [
+      {
+        "$": {
+          "Name": "ASSA_1",
+          "UIName": "@ui_ASSA_1_name",
+          "HUDLoreDesc": "",
+          "GameplayDesc": ""
+        },
+        "MagicEffects": [
+          {
+            "EIM": [
+              {
+                "$": {
+                  "Name": "damage_percent",
+                  "HUDDesc": "@ui_eim_damage_percent",
+                  "Permanent": "1"
+                },
+                "Semantics": [
+                  {
+                    "$": {
+                      "DamagePercentInt": "10"
+                    }
+                  }
+                ]
+              },
+              {
+                "$": {
+                  "Name": "criticalchance_score_percent",
+                  "HUDDesc": "@ui_eim_criticalchance_score_percent",
+                  "Permanent": "1"
+                },
+                "Semantics": [
+                  {
+                    "$": {
+                      "CharacteristicScorePercentInt": "12"
+                    }
+                  }
+                ]
+              },
+              {
+                "$": {
+                  "Name": "forceshield_percent",
+                  "HUDDesc": "@ui_eim_forceshield_percent",
+                  "Permanent": "1"
+                },
+                "Semantics": [
+                  {
+                    "$": {
+                      "ArmorPercentFloat": "8"
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "$": {
+          "Name": "ASSA_2",
+          "UIName": "@ui_ASSA_2_name",
+          "HUDLoreDesc": "",
+          "GameplayDesc": ""
+        },
+        "MagicEffects": [
+          {
+            "EIM": [
+              {
+                "$": {
+                  "Name": "attackspeed_score_percent",
+                  "HUDDesc": "@ui_eim_attackspeed_score_percent",
+                  "Permanent": "1"
+                },
+                "Semantics": [
+                  {
+                    "$": {
+                      "CharacteristicScorePercentInt": "15"
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "$": {
+          "Name": "ASSA_3",
+          "UIName": "@ui_ASSA_3_name",
+          "HUDLoreDesc": "",
+          "GameplayDesc": ""
+        },
+        "MagicEffects": [
+          {
+            "EIM": [
+              {
+                "$": {
+                  "Name": "attackspeed_score_percent",
+                  "HUDDesc": "@ui_eim_attackspeed_score_percent",
+                  "Permanent": "1"
+                },
+                "Semantics": [
+                  {
+                    "$": {
+                      "CharacteristicScorePercentInt": "15"
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "$": {
+          "Name": "ASSA_4",
+          "UIName": "@ui_ASSA_4_name",
+          "HUDLoreDesc": "",
+          "GameplayDesc": ""
+        },
+        "MagicEffects": [
+          {
+            "EIM": [
+              {
+                "$": {
+                  "Name": "dodgechance_score_percent",
+                  "HUDDesc": "@ui_eim_dodgechance_score_percent",
+                  "Permanent": "1"
+                },
+                "Semantics": [
+                  {
+                    "$": {
+                      "CharacteristicScorePercentInt": "12"
+                    }
+                  }
+                ]
+              },
+              {
+                "$": {
+                  "Name": "stamina_regeneration_percent",
+                  "HUDDesc": "@ui_eim_stamina_regeneration_percent",
+                  "Permanent": "1"
+                },
+                "Semantics": [
+                  {
+                    "$": {
+                      "ResourcePercentFloat": "8"
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "$": {
+          "Name": "ASSA_5",
+          "UIName": "@ui_ASSA_5_name",
+          "HUDLoreDesc": "",
+          "GameplayDesc": ""
+        },
+        "MagicEffects": [
+          {
+            "EIM": [
+              {
+                "$": {
+                  "Name": "attackspeed_score_percent",
+                  "HUDDesc": "@ui_eim_attackspeed_score_percent",
+                  "Permanent": "1"
+                },
+                "Semantics": [
+                  {
+                    "$": {
+                      "CharacteristicScorePercentInt": "15"
+                    }
+                  }
+                ]
+              },
+              {
+                "$": {
+                  "Name": "damage_percent",
+                  "HUDDesc": "@ui_eim_damage_percent",
+                  "Permanent": "1"
+                },
+                "Semantics": [
+                  {
+                    "$": {
+                      "DamagePercentInt": "8"
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "$": {
+          "Name": "ASSA_6",
+          "UIName": "@ui_ASSA_6_name",
+          "HUDLoreDesc": "",
+          "GameplayDesc": ""
+        },
+        "MagicEffects": [
+          {
+            "EIM": [
+              {
+                "$": {
+                  "Name": "lightning_damage_percent",
+                  "HUDDesc": "@ui_eim_lightning_damage_percent",
+                  "Permanent": "1"
+                },
+                "Semantics": [
+                  {
+                    "$": {
+                      "DamagePercentInt": "15"
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "$": {
+          "Name": "ASSA_7",
+          "UIName": "@ui_ASSA_7_name",
+          "HUDLoreDesc": "",
+          "GameplayDesc": ""
+        },
+        "MagicEffects": [
+          {
+            "EIM": [
+              {
+                "$": {
+                  "Name": "forceshield_percent",
+                  "HUDDesc": "@ui_eim_forceshield_percent",
+                  "Permanent": "1"
+                },
+                "Semantics": [
+                  {
+                    "$": {
+                      "ArmorPercentFloat": "10"
+                    }
+                  }
+                ]
+              },
+              {
+                "$": {
+                  "Name": "health_percent",
+                  "HUDDesc": "@ui_eim_health_percent",
+                  "Permanent": "1"
+                },
+                "Semantics": [
+                  {
+                    "$": {
+                      "HealthPercentInt": "8"
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "$": {
+          "Name": "ASSA_8",
+          "UIName": "@ui_ASSA_8_name",
+          "HUDLoreDesc": "@ui_ASSA_8_loredesc",
+          "GameplayDesc": "@ui_ASSA_8_gameplaydesc"
+        },
+        "MagicEffects": [
+          {
+            "EIM": [
+              {
+                "$": {
+                  "Name": "stack_focus_damage",
+                  "HUDDesc": "@ui_eim_stack_focus_damage",
+                  "Permanent": "1"
+                },
+                "Semantics": [
+                  {
+                    "$": {
+                      "PSTStackMaxCountInt": "6",
+                      "DamagePercentFloat": "6"
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "$": {
+          "Name": "ASSA_9",
+          "UIName": "@ui_ASSA_9_name",
+          "HUDLoreDesc": "",
+          "GameplayDesc": ""
+        },
+        "MagicEffects": [
+          {
+            "EIM": [
+              {
+                "$": {
+                  "Name": "stack_focus_damage",
+                  "HUDDesc": "@ui_eim_stack_focus_half",
+                  "Permanent": "1"
+                },
+                "Semantics": [
+                  {
+                    "$": {
+                      "PossibilityInt": "1"
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "$": {
+          "Name": "ASSA_10",
+          "UIName": "@ui_ASSA_10_name",
+          "HUDLoreDesc": "",
+          "GameplayDesc": ""
+        },
+        "MagicEffects": [
+          {
+            "EIM": [
+              {
+                "$": {
+                  "Name": "criticalchance_score_percent",
+                  "HUDDesc": "@ui_eim_criticalchance_score_percent",
+                  "Permanent": "1"
+                },
+                "Semantics": [
+                  {
+                    "$": {
+                      "CharacteristicScorePercentInt": "18"
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "$": {
+          "Name": "ASSA_11",
+          "UIName": "@ui_ASSA_11_name",
+          "HUDLoreDesc": "",
+          "GameplayDesc": ""
+        },
+        "MagicEffects": [
+          {
+            "EIM": [
+              {
+                "$": {
+                  "Name": "criticalchance_score_percent",
+                  "HUDDesc": "@ui_eim_criticalchance_score_percent",
+                  "Permanent": "1"
+                },
+                "Semantics": [
+                  {
+                    "$": {
+                      "CharacteristicScorePercentInt": "18"
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "$": {
+          "Name": "ASSA_12",
+          "UIName": "@ui_ASSA_12_name",
+          "HUDLoreDesc": "",
+          "GameplayDesc": ""
+        },
+        "MagicEffects": [
+          {
+            "EIM": [
+              {
+                "$": {
+                  "Name": "dodgechance_score_percent",
+                  "HUDDesc": "@ui_eim_dodgechance_score_percent",
+                  "Permanent": "1"
+                },
+                "Semantics": [
+                  {
+                    "$": {
+                      "CharacteristicScorePercentInt": "12"
+                    }
+                  }
+                ]
+              },
+              {
+                "$": {
+                  "Name": "stamina_regeneration_percent",
+                  "HUDDesc": "@ui_eim_stamina_regeneration_percent",
+                  "Permanent": "1"
+                },
+                "Semantics": [
+                  {
+                    "$": {
+                      "ResourcePercentFloat": "8"
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "$": {
+          "Name": "ASSA_13",
+          "UIName": "@ui_ASSA_13_name",
+          "HUDLoreDesc": "",
+          "GameplayDesc": ""
+        },
+        "MagicEffects": [
+          {
+            "EIM": [
+              {
+                "$": {
+                  "Name": "criticalchance_score_percent",
+                  "HUDDesc": "@ui_eim_criticalchance_score_percent",
+                  "Permanent": "1"
+                },
+                "Semantics": [
+                  {
+                    "$": {
+                      "CharacteristicScorePercentInt": "12"
+                    }
+                  }
+                ]
+              },
+              {
+                "$": {
+                  "Name": "criticaldamage_pts",
+                  "HUDDesc": "@ui_eim_criticaldamage_pts",
+                  "Permanent": "1"
+                },
+                "Semantics": [
+                  {
+                    "$": {
+                      "DamagePercentInt": "10"
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "$": {
+          "Name": "ASSA_14",
+          "UIName": "@ui_ASSA_14_name",
+          "HUDLoreDesc": "",
+          "GameplayDesc": ""
+        },
+        "MagicEffects": [
+          {
+            "EIM": [
+              {
+                "$": {
+                  "Name": "forceshield_percent",
+                  "HUDDesc": "@ui_eim_forceshield_percent",
+                  "Permanent": "1"
+                },
+                "Semantics": [
+                  {
+                    "$": {
+                      "ArmorPercentFloat": "10"
+                    }
+                  }
+                ]
+              },
+              {
+                "$": {
+                  "Name": "health_percent",
+                  "HUDDesc": "@ui_eim_health_percent",
+                  "Permanent": "1"
+                },
+                "Semantics": [
+                  {
+                    "$": {
+                      "HealthPercentInt": "8"
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "$": {
+          "Name": "ASSA_15",
+          "UIName": "@ui_ASSA_15_name",
+          "HUDLoreDesc": "",
+          "GameplayDesc": ""
+        },
+        "MagicEffects": [
+          {
+            "EIM": [
+              {
+                "$": {
+                  "Name": "lightning_damage_percent",
+                  "HUDDesc": "@ui_eim_lightning_damage_percent",
+                  "Permanent": "1"
+                },
+                "Semantics": [
+                  {
+                    "$": {
+                      "DamagePercentInt": "15"
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "$": {
+          "Name": "ASSA_16",
+          "UIName": "@ui_ASSA_16_name",
+          "HUDLoreDesc": "",
+          "GameplayDesc": ""
+        },
+        "MagicEffects": [
+          {
+            "EIM": [
+              {
+                "$": {
+                  "Name": "forceshield_percent",
+                  "HUDDesc": "@ui_eim_forceshield_percent",
+                  "Permanent": "1"
+                },
+                "Semantics": [
+                  {
+                    "$": {
+                      "ArmorPercentFloat": "10"
+                    }
+                  }
+                ]
+              },
+              {
+                "$": {
+                  "Name": "health_percent",
+                  "HUDDesc": "@ui_eim_health_percent",
+                  "Permanent": "1"
+                },
+                "Semantics": [
+                  {
+                    "$": {
+                      "HealthPercentInt": "8"
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "$": {
+          "Name": "ASSA_17",
+          "UIName": "@ui_ASSA_17_name",
+          "HUDLoreDesc": "@ui_ASSA_17_loredesc",
+          "GameplayDesc": "@ui_ASSA_17_gameplaydesc"
+        },
+        "MagicEffects": [
+          {
+            "EIM": [
+              {
+                "$": {
+                  "Name": "attack_speed_on_critical_hit",
+                  "HUDDesc": "@ui_eim_attack_speed_on_critical_hit",
+                  "Permanent": "1"
+                },
+                "Semantics": [
+                  {
+                    "$": {
+                      "CharacteristicScorePercentInt": "75"
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "$": {
+          "Name": "ASSA_18",
+          "UIName": "@ui_ASSA_18_name",
+          "HUDLoreDesc": "",
+          "GameplayDesc": ""
+        },
+        "MagicEffects": [
+          {
+            "EIM": [
+              {
+                "$": {
+                  "Name": "attack_speed_on_critical_hit",
+                  "HUDDesc": "@ui_eim_attack_speed_on_critical_hit",
+                  "Permanent": "1"
+                },
+                "Semantics": [
+                  {
+                    "$": {
+                      "CharacteristicScorePercentInt": "25"
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "$": {
+          "Name": "ASSA_19",
+          "UIName": "@ui_ASSA_19_name",
+          "HUDLoreDesc": "@ui_ASSA_19_loredesc",
+          "GameplayDesc": "@ui_ASSA_19_gameplaydesc"
+        },
+        "MagicEffects": [
+          {
+            "EIM": [
+              {
+                "$": {
+                  "Name": "stack_gadget_uses_mechanic",
+                  "HUDDesc": "@ui_eim_stack_gadget_uses_mechanic",
+                  "Permanent": "1"
+                },
+                "Semantics": [
+                  {
+                    "$": {
+                      "PSTStackGainPerSecondInt": "4",
+                      "PSTStackGainOnEvent": "4",
+                      "PSTStackLossOnEvent": "10",
+                      "PSTStackMaxCountInt": "100"
+                    }
+                  }
+                ]
+              },
+              {
+                "$": {
+                  "Name": "stack_gadget_damage",
+                  "HUDDesc": "@ui_eim_stack_gadget_damage",
+                  "Permanent": "1"
+                },
+                "Semantics": [
+                  {
+                    "$": {
+                      "DamagePercentFloat": "200"
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "$": {
+          "Name": "ASSA_20",
+          "UIName": "@ui_ASSA_20_name",
+          "HUDLoreDesc": "",
+          "GameplayDesc": ""
+        },
+        "MagicEffects": [
+          {
+            "EIM": [
+              {
+                "$": {
+                  "Name": "stack_gadget_costs",
+                  "HUDDesc": "@ui_eim_stack_gadget_costs",
+                  "Permanent": "1"
+                },
+                "Semantics": [
+                  {
+                    "$": {
+                      "ResourcePercentFloat": "30"
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

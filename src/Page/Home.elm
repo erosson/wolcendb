@@ -29,6 +29,7 @@ view =
                     [ div [ class "card-header" ] [ text "Player" ]
                     , ul [ class "list-group list-group-flush" ]
                         [ li [ class "list-group-item" ] [ a [ Route.href Route.Skills ] [ text "Skills" ] ]
+                        , li [ class "list-group-item" ] [ a [ Route.href Route.Passives ] [ text "Passives" ] ]
                         ]
                     ]
                 ]

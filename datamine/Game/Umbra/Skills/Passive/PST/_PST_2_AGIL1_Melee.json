@@ -1,0 +1,963 @@
+{
+  "MetaData": {
+    "Spell": [
+      {
+        "$": {
+          "Name": "MELEE_1",
+          "UIName": "@ui_MELEE_1_name",
+          "HUDLoreDesc": "",
+          "GameplayDesc": ""
+        },
+        "MagicEffects": [
+          {
+            "EIM": [
+              {
+                "$": {
+                  "Name": "attackspeed_score_percent",
+                  "HUDDesc": "@ui_eim_attackspeed_score_percent",
+                  "Permanent": "1"
+                },
+                "Semantics": [
+                  {
+                    "$": {
+                      "CharacteristicScorePercentInt": "15"
+                    }
+                  }
+                ]
+              },
+              {
+                "$": {
+                  "Name": "forceshield_percent",
+                  "HUDDesc": "@ui_eim_forceshield_percent",
+                  "Permanent": "1"
+                },
+                "Semantics": [
+                  {
+                    "$": {
+                      "ArmorPercentFloat": "8"
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "$": {
+          "Name": "MELEE_2",
+          "UIName": "@ui_MELEE_2_name",
+          "HUDLoreDesc": "",
+          "GameplayDesc": ""
+        },
+        "MagicEffects": [
+          {
+            "EIM": [
+              {
+                "$": {
+                  "Name": "material_damage_percent",
+                  "HUDDesc": "@ui_eim_material_damage_percent",
+                  "Permanent": "1"
+                },
+                "Semantics": [
+                  {
+                    "$": {
+                      "DamagePercentInt": "15"
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "$": {
+          "Name": "MELEE_3",
+          "UIName": "@ui_MELEE_3_name",
+          "HUDLoreDesc": "",
+          "GameplayDesc": ""
+        },
+        "MagicEffects": [
+          {
+            "EIM": [
+              {
+                "$": {
+                  "Name": "poisonstack_duration_increase",
+                  "HUDDesc": "@ui_eim_poisonstack_duration_increase",
+                  "Permanent": "1"
+                },
+                "Semantics": [
+                  {
+                    "$": {
+                      "DurationPercentInt": "50"
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "$": {
+          "Name": "MELEE_4",
+          "UIName": "@ui_MELEE_4_name",
+          "HUDLoreDesc": "",
+          "GameplayDesc": ""
+        },
+        "MagicEffects": [
+          {
+            "EIM": [
+              {
+                "$": {
+                  "Name": "dotdamage_percent_poison",
+                  "HUDDesc": "@ui_eim_dotdamage_percent_poison",
+                  "Permanent": "1"
+                },
+                "Semantics": [
+                  {
+                    "$": {
+                      "DamagePercentFloat": "15"
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "$": {
+          "Name": "MELEE_5",
+          "UIName": "@ui_MELEE_5_name",
+          "HUDLoreDesc": "@ui_MELEE_5_lore",
+          "GameplayDesc": "@ui_MELEE_5_desc"
+        },
+        "MagicEffects": [
+          {
+            "EIM": [
+              {
+                "$": {
+                  "Name": "convert_physical_to_toxic",
+                  "HUDDesc": "@ui_eim_convert_physical_to_toxic",
+                  "Permanent": "1"
+                },
+                "Semantics": [
+                  {
+                    "$": {
+                      "DamagePercentFloat": "50"
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "$": {
+          "Name": "MELEE_6",
+          "UIName": "@ui_MELEE_6_name",
+          "HUDLoreDesc": "",
+          "GameplayDesc": ""
+        },
+        "MagicEffects": [
+          {
+            "EIM": [
+              {
+                "$": {
+                  "Name": "health_pts",
+                  "HUDDesc": "@ui_eim_health_pts",
+                  "Permanent": "1"
+                },
+                "Semantics": [
+                  {
+                    "$": {
+                      "HealthFlatInt": "100"
+                    }
+                  }
+                ]
+              },
+              {
+                "$": {
+                  "Name": "health_percent",
+                  "HUDDesc": "@ui_eim_health_percent",
+                  "Permanent": "1"
+                },
+                "Semantics": [
+                  {
+                    "$": {
+                      "HealthPercentInt": "8"
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "$": {
+          "Name": "MELEE_7",
+          "UIName": "@ui_MELEE_7_name",
+          "HUDLoreDesc": "@ui_MELEE_7_lore",
+          "GameplayDesc": "@ui_MELEE_7_desc"
+        },
+        "MagicEffects": [
+          {
+            "EIM": [
+              {
+                "$": {
+                  "Name": "canrollthroughennemies",
+                  "HUDDesc": "@ui_eim_canrollthroughennemies",
+                  "Permanent": "1"
+                },
+                "Semantics": [
+                  {
+                    "$": {
+                      "PossibilityInt": "1"
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "$": {
+          "Name": "MELEE_8",
+          "UIName": "@ui_MELEE_8_name",
+          "HUDLoreDesc": "",
+          "GameplayDesc": ""
+        },
+        "MagicEffects": [
+          {
+            "EIM": [
+              {
+                "$": {
+                  "Name": "additional_stamina_pts",
+                  "HUDDesc": "@ui_eim_additional_stamina_pts",
+                  "Permanent": "1"
+                },
+                "Semantics": [
+                  {
+                    "$": {
+                      "ResourceFlatInt": "1"
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "$": {
+          "Name": "MELEE_9",
+          "UIName": "@ui_MELEE_9_name",
+          "HUDLoreDesc": "",
+          "GameplayDesc": ""
+        },
+        "MagicEffects": [
+          {
+            "EIM": [
+              {
+                "$": {
+                  "Name": "stamina_regeneration_percent",
+                  "HUDDesc": "@ui_eim_stamina_regeneration_percent",
+                  "Permanent": "1"
+                },
+                "Semantics": [
+                  {
+                    "$": {
+                      "ResourcePercentFloat": "15"
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "$": {
+          "Name": "MELEE_10",
+          "UIName": "@ui_MELEE_10_name",
+          "HUDLoreDesc": "",
+          "GameplayDesc": ""
+        },
+        "MagicEffects": [
+          {
+            "EIM": [
+              {
+                "$": {
+                  "Name": "health_percent",
+                  "HUDDesc": "@ui_eim_health_percent",
+                  "Permanent": "1"
+                },
+                "Semantics": [
+                  {
+                    "$": {
+                      "HealthPercentInt": "10"
+                    }
+                  }
+                ]
+              },
+              {
+                "$": {
+                  "Name": "forceshield_percent",
+                  "HUDDesc": "@ui_eim_forceshield_percent",
+                  "Permanent": "1"
+                },
+                "Semantics": [
+                  {
+                    "$": {
+                      "ArmorPercentFloat": "8"
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "$": {
+          "Name": "MELEE_11",
+          "UIName": "@ui_MELEE_11_name",
+          "HUDLoreDesc": "",
+          "GameplayDesc": ""
+        },
+        "MagicEffects": [
+          {
+            "EIM": [
+              {
+                "$": {
+                  "Name": "dodgechance_score_percent",
+                  "HUDDesc": "@ui_eim_dodgechance_score_percent",
+                  "Permanent": "1"
+                },
+                "Semantics": [
+                  {
+                    "$": {
+                      "CharacteristicScorePercentInt": "15"
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "$": {
+          "Name": "MELEE_12",
+          "UIName": "@ui_MELEE_11_name",
+          "HUDLoreDesc": "",
+          "GameplayDesc": ""
+        },
+        "MagicEffects": [
+          {
+            "EIM": [
+              {
+                "$": {
+                  "Name": "dodgechance_score_percent",
+                  "HUDDesc": "@ui_eim_dodgechance_score_percent",
+                  "Permanent": "1"
+                },
+                "Semantics": [
+                  {
+                    "$": {
+                      "CharacteristicScorePercentInt": "25"
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "$": {
+          "Name": "MELEE_13",
+          "UIName": "@ui_MELEE_11_name",
+          "HUDLoreDesc": "",
+          "GameplayDesc": ""
+        },
+        "MagicEffects": [
+          {
+            "EIM": [
+              {
+                "$": {
+                  "Name": "dodgechance_score_percent",
+                  "HUDDesc": "@ui_eim_dodgechance_score_percent",
+                  "Permanent": "1"
+                },
+                "Semantics": [
+                  {
+                    "$": {
+                      "CharacteristicScorePercentInt": "15"
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "$": {
+          "Name": "MELEE_14",
+          "UIName": "@ui_MELEE_14_name",
+          "HUDLoreDesc": "",
+          "GameplayDesc": ""
+        },
+        "MagicEffects": [
+          {
+            "EIM": [
+              {
+                "$": {
+                  "Name": "movespeed",
+                  "HUDDesc": "@ui_eim_movespeed",
+                  "Permanent": "1"
+                },
+                "Semantics": [
+                  {
+                    "$": {
+                      "SpeedPercentInt": "5"
+                    }
+                  }
+                ]
+              },
+              {
+                "$": {
+                  "Name": "attackspeed_score_percent",
+                  "HUDDesc": "@ui_eim_attackspeed_score_percent",
+                  "Permanent": "1"
+                },
+                "Semantics": [
+                  {
+                    "$": {
+                      "CharacteristicScorePercentInt": "5"
+                    }
+                  }
+                ]
+              },
+              {
+                "$": {
+                  "Name": "spellcastingspeed_score_percent",
+                  "HUDDesc": "@ui_eim_spellcastingspeed_score_percent",
+                  "Permanent": "1"
+                },
+                "Semantics": [
+                  {
+                    "$": {
+                      "CharacteristicScorePercentInt": "9"
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "$": {
+          "Name": "MELEE_15",
+          "UIName": "@ui_MELEE_15_name",
+          "HUDLoreDesc": "",
+          "GameplayDesc": ""
+        },
+        "MagicEffects": [
+          {
+            "EIM": [
+              {
+                "$": {
+                  "Name": "agility_pts",
+                  "HUDDesc": "@ui_eim_agility_pts",
+                  "Permanent": "1"
+                },
+                "Semantics": [
+                  {
+                    "$": {
+                      "AttributeFlatInt": "25"
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "$": {
+          "Name": "MELEE_16",
+          "UIName": "@ui_MELEE_16_name",
+          "HUDLoreDesc": "@ui_MELEE_16_lore",
+          "GameplayDesc": "@ui_MELEE_16_desc"
+        },
+        "MagicEffects": [
+          {
+            "EIM": [
+              {
+                "$": {
+                  "Name": "damage_percent_if_only_one_nearby_enemy",
+                  "HUDDesc": "@ui_eim_damage_percent_if_only_one_nearby_enemy",
+                  "Permanent": "1"
+                },
+                "Semantics": [
+                  {
+                    "$": {
+                      "DamagePercentFloat": "25",
+                      "RadiusFloat": "7"
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "$": {
+          "Name": "MELEE_17",
+          "UIName": "@ui_MELEE_17_name",
+          "HUDLoreDesc": "",
+          "GameplayDesc": ""
+        },
+        "MagicEffects": [
+          {
+            "EIM": [
+              {
+                "$": {
+                  "Name": "damage_percent_if_only_one_nearby_enemy",
+                  "HUDDesc": "@ui_eim_damage_percent_if_only_one_nearby_enemy_damage",
+                  "Permanent": "1"
+                },
+                "Semantics": [
+                  {
+                    "$": {
+                      "DamagePercentFloat": "5",
+                      "RadiusFloat": "0"
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "$": {
+          "Name": "MELEE_18",
+          "UIName": "@ui_MELEE_18_name",
+          "HUDLoreDesc": "",
+          "GameplayDesc": ""
+        },
+        "MagicEffects": [
+          {
+            "EIM": [
+              {
+                "$": {
+                  "Name": "damage_percent_if_only_one_nearby_enemy",
+                  "HUDDesc": "@ui_eim_damage_percent_if_only_one_nearby_enemy_range",
+                  "Permanent": "1"
+                },
+                "Semantics": [
+                  {
+                    "$": {
+                      "DamagePercentFloat": "0",
+                      "RadiusFloat": "-3"
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "$": {
+          "Name": "MELEE_19",
+          "UIName": "@ui_MELEE_19_name",
+          "HUDLoreDesc": "",
+          "GameplayDesc": ""
+        },
+        "MagicEffects": [
+          {
+            "EIM": [
+              {
+                "$": {
+                  "Name": "attackspeed_score_percent",
+                  "HUDDesc": "@ui_eim_attackspeed_score_percent",
+                  "Permanent": "1"
+                },
+                "Semantics": [
+                  {
+                    "$": {
+                      "CharacteristicScorePercentInt": "15"
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "$": {
+          "Name": "MELEE_20",
+          "UIName": "@ui_MELEE_20_name",
+          "HUDLoreDesc": "",
+          "GameplayDesc": ""
+        },
+        "MagicEffects": [
+          {
+            "EIM": [
+              {
+                "$": {
+                  "Name": "attackspeed_score_percent",
+                  "HUDDesc": "@ui_eim_attackspeed_score_percent",
+                  "Permanent": "1"
+                },
+                "Semantics": [
+                  {
+                    "$": {
+                      "CharacteristicScorePercentInt": "15"
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "$": {
+          "Name": "MELEE_21",
+          "UIName": "@ui_MELEE_21_name",
+          "HUDLoreDesc": "",
+          "GameplayDesc": ""
+        },
+        "MagicEffects": [
+          {
+            "EIM": [
+              {
+                "$": {
+                  "Name": "attackspeed_score_percent",
+                  "HUDDesc": "@ui_eim_attackspeed_score_percent",
+                  "Permanent": "1"
+                },
+                "Semantics": [
+                  {
+                    "$": {
+                      "CharacteristicScorePercentInt": "15"
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "$": {
+          "Name": "MELEE_22",
+          "UIName": "@ui_MELEE_22_name",
+          "HUDLoreDesc": "",
+          "GameplayDesc": ""
+        },
+        "MagicEffects": [
+          {
+            "EIM": [
+              {
+                "$": {
+                  "Name": "criticalchance_score_percent",
+                  "HUDDesc": "@ui_eim_criticalchance_score_percent",
+                  "Permanent": "1"
+                },
+                "Semantics": [
+                  {
+                    "$": {
+                      "CharacteristicScorePercentInt": "18"
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "$": {
+          "Name": "MELEE_23",
+          "UIName": "@ui_MELEE_23_name",
+          "HUDLoreDesc": "",
+          "GameplayDesc": ""
+        },
+        "MagicEffects": [
+          {
+            "EIM": [
+              {
+                "$": {
+                  "Name": "forceshield_pts",
+                  "HUDDesc": "@ui_eim_forceshield_pts",
+                  "Permanent": "1"
+                },
+                "Semantics": [
+                  {
+                    "$": {
+                      "ArmorFlatInt": "100"
+                    }
+                  }
+                ]
+              },
+              {
+                "$": {
+                  "Name": "forceshield_percent",
+                  "HUDDesc": "@ui_eim_forceshield_percent",
+                  "Permanent": "1"
+                },
+                "Semantics": [
+                  {
+                    "$": {
+                      "ArmorPercentFloat": "8"
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "$": {
+          "Name": "MELEE_24",
+          "UIName": "@ui_MELEE_24_name",
+          "HUDLoreDesc": "@ui_MELEE_24_lore",
+          "GameplayDesc": "@ui_MELEE_24_desc"
+        },
+        "MagicEffects": [
+          {
+            "EIM": [
+              {
+                "$": {
+                  "Name": "critchance_doubled_on_dash",
+                  "HUDDesc": "@ui_eim_critchance_doubled_on_dash",
+                  "Permanent": "1"
+                },
+                "Semantics": [
+                  {
+                    "$": {
+                      "PossibilityInt": "1"
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "$": {
+          "Name": "MELEE_25",
+          "UIName": "@ui_MELEE_25_name",
+          "HUDLoreDesc": "",
+          "GameplayDesc": ""
+        },
+        "MagicEffects": [
+          {
+            "EIM": [
+              {
+                "$": {
+                  "Name": "autodash_cdr_percent",
+                  "HUDDesc": "@ui_eim_autodash_cdr_percent",
+                  "strParam": "",
+                  "Permanent": "1"
+                },
+                "Semantics": [
+                  {
+                    "$": {
+                      "DurationPercentFloat": "20"
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "$": {
+          "Name": "MELEE_26",
+          "UIName": "@ui_MELEE_26_name",
+          "HUDLoreDesc": "",
+          "GameplayDesc": ""
+        },
+        "MagicEffects": [
+          {
+            "EIM": [
+              {
+                "$": {
+                  "Name": "autodash_range_flat",
+                  "HUDDesc": "@ui_eim_autodash_range_flat",
+                  "strParam": "",
+                  "Permanent": "1"
+                },
+                "Semantics": [
+                  {
+                    "$": {
+                      "RadiusFloat": "2"
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "$": {
+          "Name": "MELEE_27",
+          "UIName": "@ui_MELEE_27_name",
+          "HUDLoreDesc": "",
+          "GameplayDesc": ""
+        },
+        "MagicEffects": [
+          {
+            "EIM": [
+              {
+                "$": {
+                  "Name": "material_damage_percent",
+                  "HUDDesc": "@ui_eim_material_damage_percent",
+                  "Permanent": "1"
+                },
+                "Semantics": [
+                  {
+                    "$": {
+                      "DamagePercentInt": "10"
+                    }
+                  }
+                ]
+              },
+              {
+                "$": {
+                  "Name": "criticalchance_score_percent",
+                  "HUDDesc": "@ui_eim_criticalchance_score_percent",
+                  "Permanent": "1"
+                },
+                "Semantics": [
+                  {
+                    "$": {
+                      "CharacteristicScorePercentInt": "9"
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "$": {
+          "Name": "MELEE_28",
+          "UIName": "@ui_MELEE_28_name",
+          "HUDLoreDesc": "",
+          "GameplayDesc": ""
+        },
+        "MagicEffects": [
+          {
+            "EIM": [
+              {
+                "$": {
+                  "Name": "criticalchance_score_percent",
+                  "HUDDesc": "@ui_eim_criticalchance_score_percent",
+                  "Permanent": "1"
+                },
+                "Semantics": [
+                  {
+                    "$": {
+                      "CharacteristicScorePercentInt": "18"
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "$": {
+          "Name": "MELEE_29",
+          "UIName": "@ui_MELEE_29_name",
+          "HUDLoreDesc": "",
+          "GameplayDesc": ""
+        },
+        "MagicEffects": [
+          {
+            "EIM": [
+              {
+                "$": {
+                  "Name": "criticalchance_score_percent",
+                  "HUDDesc": "@ui_eim_criticalchance_score_percent",
+                  "Permanent": "1"
+                },
+                "Semantics": [
+                  {
+                    "$": {
+                      "CharacteristicScorePercentInt": "18"
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "$": {
+          "Name": "MELEE_30",
+          "UIName": "@ui_MELEE_30_name",
+          "HUDLoreDesc": "@ui_MELEE_30_lore",
+          "GameplayDesc": "@ui_MELEE_30_desc"
+        },
+        "MagicEffects": [
+          {
+            "EIM": [
+              {
+                "$": {
+                  "Name": "criticaldamage_pts",
+                  "HUDDesc": "@ui_eim_criticaldamage_pts",
+                  "Permanent": "1"
+                },
+                "Semantics": [
+                  {
+                    "$": {
+                      "DamagePercentInt": "100"
+                    }
+                  }
+                ]
+              },
+              {
+                "$": {
+                  "Name": "damage_percent",
+                  "HUDDesc": "@ui_eim_damage_percent",
+                  "Permanent": "1"
+                },
+                "Semantics": [
+                  {
+                    "$": {
+                      "DamagePercentInt": "-30"
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

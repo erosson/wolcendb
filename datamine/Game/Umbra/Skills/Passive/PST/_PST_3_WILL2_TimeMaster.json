@@ -1,0 +1,753 @@
+{
+  "MetaData": {
+    "Spell": [
+      {
+        "$": {
+          "Name": "TIME_1",
+          "UIName": "@ui_TIME_1_name",
+          "HUDLoreDesc": "",
+          "GameplayDesc": ""
+        },
+        "MagicEffects": [
+          {
+            "EIM": [
+              {
+                "$": {
+                  "Name": "umbra_damage_percent",
+                  "HUDDesc": "@ui_eim_umbra_damage_percent",
+                  "Permanent": "1"
+                },
+                "Semantics": [
+                  {
+                    "$": {
+                      "DamagePercentInt": "10"
+                    }
+                  }
+                ]
+              },
+              {
+                "$": {
+                  "Name": "statusailment_inflict_score_percent",
+                  "HUDDesc": "@ui_eim_statusailment_inflict_score_percent",
+                  "Permanent": "1"
+                },
+                "Semantics": [
+                  {
+                    "$": {
+                      "CharacteristicScorePercentInt": "12"
+                    }
+                  }
+                ]
+              },
+              {
+                "$": {
+                  "Name": "dodgechance_score_percent",
+                  "HUDDesc": "@ui_eim_dodgechance_score_percent",
+                  "Permanent": "1"
+                },
+                "Semantics": [
+                  {
+                    "$": {
+                      "CharacteristicScorePercentInt": "9"
+                    }
+                  }
+                ]
+              },
+              {
+                "$": {
+                  "Name": "forceshield_percent",
+                  "HUDDesc": "@ui_eim_forceshield_percent",
+                  "Permanent": "1"
+                },
+                "Semantics": [
+                  {
+                    "$": {
+                      "ArmorPercentFloat": "8"
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "$": {
+          "Name": "TIME_2",
+          "UIName": "@ui_TIME_2_name",
+          "HUDLoreDesc": "",
+          "GameplayDesc": ""
+        },
+        "MagicEffects": [
+          {
+            "EIM": [
+              {
+                "$": {
+                  "Name": "umbra_damage_percent",
+                  "HUDDesc": "@ui_eim_umbra_damage_percent",
+                  "Permanent": "1"
+                },
+                "Semantics": [
+                  {
+                    "$": {
+                      "DamagePercentInt": "15"
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "$": {
+          "Name": "TIME_3",
+          "UIName": "@ui_TIME_3_name",
+          "HUDLoreDesc": "",
+          "GameplayDesc": ""
+        },
+        "MagicEffects": [
+          {
+            "EIM": [
+              {
+                "$": {
+                  "Name": "umbra_damage_percent",
+                  "HUDDesc": "@ui_eim_umbra_damage_percent",
+                  "Permanent": "1"
+                },
+                "Semantics": [
+                  {
+                    "$": {
+                      "DamagePercentInt": "15"
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "$": {
+          "Name": "TIME_4",
+          "UIName": "@ui_TIME_4_name",
+          "HUDLoreDesc": "",
+          "GameplayDesc": ""
+        },
+        "MagicEffects": [
+          {
+            "EIM": [
+              {
+                "$": {
+                  "Name": "dodgechance_score_percent",
+                  "HUDDesc": "@ui_eim_dodgechance_score_percent",
+                  "Permanent": "1"
+                },
+                "Semantics": [
+                  {
+                    "$": {
+                      "CharacteristicScorePercentInt": "12"
+                    }
+                  }
+                ]
+              },
+              {
+                "$": {
+                  "Name": "forceshield_percent",
+                  "HUDDesc": "@ui_eim_forceshield_percent",
+                  "Permanent": "1"
+                },
+                "Semantics": [
+                  {
+                    "$": {
+                      "ArmorPercentFloat": "8"
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "$": {
+          "Name": "TIME_5",
+          "UIName": "@ui_TIME_5_name",
+          "HUDLoreDesc": "",
+          "GameplayDesc": ""
+        },
+        "MagicEffects": [
+          {
+            "EIM": [
+              {
+                "$": {
+                  "Name": "umbra_damage_percent",
+                  "HUDDesc": "@ui_eim_umbra_damage_percent",
+                  "Permanent": "1"
+                },
+                "Semantics": [
+                  {
+                    "$": {
+                      "DamagePercentInt": "15"
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "$": {
+          "Name": "TIME_6",
+          "UIName": "@ui_TIME_6_name",
+          "HUDLoreDesc": "",
+          "GameplayDesc": ""
+        },
+        "MagicEffects": [
+          {
+            "EIM": [
+              {
+                "$": {
+                  "Name": "max_stacks_capacity",
+                  "HUDDesc": "@ui_eim_max_stacks_capacity",
+                  "Permanent": "1"
+                },
+                "Semantics": [
+                  {
+                    "$": {
+                      "StackCountInt": "5"
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "$": {
+          "Name": "TIME_7",
+          "UIName": "@ui_TIME_7_name",
+          "HUDLoreDesc": "",
+          "GameplayDesc": ""
+        },
+        "MagicEffects": [
+          {
+            "EIM": [
+              {
+                "$": {
+                  "Name": "forceshield_lock_timer_percent",
+                  "HUDDesc": "@ui_eim_forceshield_lock_timer_percent",
+                  "Permanent": "1"
+                },
+                "Semantics": [
+                  {
+                    "$": {
+                      "DurationPercentFloat": "14"
+                    }
+                  }
+                ]
+              },
+              {
+                "$": {
+                  "Name": "forceshield_percent",
+                  "HUDDesc": "@ui_eim_forceshield_percent",
+                  "Permanent": "1"
+                },
+                "Semantics": [
+                  {
+                    "$": {
+                      "ArmorPercentFloat": "8"
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "$": {
+          "Name": "TIME_8",
+          "UIName": "@ui_TIME_8_name",
+          "HUDLoreDesc": "@ui_TIME_8_loredesc",
+          "GameplayDesc": "@ui_TIME_8_gameplaydesc"
+        },
+        "MagicEffects": [
+          {
+            "EIM": [
+              {
+                "$": {
+                  "Name": "stasis_afflicted_enemies_take_damage_twice",
+                  "HUDDesc": "@ui_eim_stasis_afflicted_enemies_take_damage_twice",
+                  "Permanent": "1"
+                },
+                "Semantics": [
+                  {
+                    "$": {
+                      "DurationFlatFloat": "1.5",
+                      "DamagePercentFloat": "100"
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "$": {
+          "Name": "TIME_9",
+          "UIName": "@ui_TIME_9_name",
+          "HUDLoreDesc": "",
+          "GameplayDesc": ""
+        },
+        "MagicEffects": [
+          {
+            "EIM": [
+              {
+                "$": {
+                  "Name": "stasis_afflicted_enemies_take_damage_twice",
+                  "HUDDesc": "@ui_eim_stasis_afflicted_enemies_take_damage_twice_increase",
+                  "Permanent": "1"
+                },
+                "Semantics": [
+                  {
+                    "$": {
+                      "DamageIncreasePercentFloat": "20"
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "$": {
+          "Name": "TIME_10",
+          "UIName": "@ui_TIME_10_name",
+          "HUDLoreDesc": "",
+          "GameplayDesc": ""
+        },
+        "MagicEffects": [
+          {
+            "EIM": [
+              {
+                "$": {
+                  "Name": "statusailment_inflict_score_percent",
+                  "HUDDesc": "@ui_eim_statusailment_inflict_score_percent",
+                  "Permanent": "1"
+                },
+                "Semantics": [
+                  {
+                    "$": {
+                      "CharacteristicScorePercentInt": "12"
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "$": {
+          "Name": "TIME_11",
+          "UIName": "@ui_TIME_11_name",
+          "HUDLoreDesc": "",
+          "GameplayDesc": ""
+        },
+        "MagicEffects": [
+          {
+            "EIM": [
+              {
+                "$": {
+                  "Name": "statusailment_inflict_score_percent",
+                  "HUDDesc": "@ui_eim_statusailment_inflict_score_percent",
+                  "Permanent": "1"
+                },
+                "Semantics": [
+                  {
+                    "$": {
+                      "CharacteristicScorePercentInt": "12"
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "$": {
+          "Name": "TIME_12",
+          "UIName": "@ui_TIME_12_name",
+          "HUDLoreDesc": "",
+          "GameplayDesc": ""
+        },
+        "MagicEffects": [
+          {
+            "EIM": [
+              {
+                "$": {
+                  "Name": "dodgechance_score_percent",
+                  "HUDDesc": "@ui_eim_dodgechance_score_percent",
+                  "Permanent": "1"
+                },
+                "Semantics": [
+                  {
+                    "$": {
+                      "CharacteristicScorePercentInt": "12"
+                    }
+                  }
+                ]
+              },
+              {
+                "$": {
+                  "Name": "forceshield_percent",
+                  "HUDDesc": "@ui_eim_forceshield_percent",
+                  "Permanent": "1"
+                },
+                "Semantics": [
+                  {
+                    "$": {
+                      "ArmorPercentFloat": "8"
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "$": {
+          "Name": "TIME_13",
+          "UIName": "@ui_TIME_13_name",
+          "HUDLoreDesc": "",
+          "GameplayDesc": ""
+        },
+        "MagicEffects": [
+          {
+            "EIM": [
+              {
+                "$": {
+                  "Name": "statusailment_inflict_score_percent",
+                  "HUDDesc": "@ui_eim_statusailment_inflict_score_percent",
+                  "Permanent": "1"
+                },
+                "Semantics": [
+                  {
+                    "$": {
+                      "CharacteristicScorePercentInt": "12"
+                    }
+                  }
+                ]
+              },
+              {
+                "$": {
+                  "Name": "attackspeed_score_percent",
+                  "HUDDesc": "@ui_eim_attackspeed_score_percent",
+                  "Permanent": "1"
+                },
+                "Semantics": [
+                  {
+                    "$": {
+                      "CharacteristicScorePercentInt": "10"
+                    }
+                  }
+                ]
+              },
+              {
+                "$": {
+                  "Name": "spellcastingspeed_score_percent",
+                  "HUDDesc": "@ui_eim_spellcastingspeed_score_percent",
+                  "Permanent": "1"
+                },
+                "Semantics": [
+                  {
+                    "$": {
+                      "CharacteristicScorePercentInt": "18"
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "$": {
+          "Name": "TIME_14",
+          "UIName": "@ui_TIME_14_name",
+          "HUDLoreDesc": "",
+          "GameplayDesc": ""
+        },
+        "MagicEffects": [
+          {
+            "EIM": [
+              {
+                "$": {
+                  "Name": "forceshield_lock_timer_percent",
+                  "HUDDesc": "@ui_eim_forceshield_lock_timer_percent",
+                  "Permanent": "1"
+                },
+                "Semantics": [
+                  {
+                    "$": {
+                      "DurationPercentFloat": "20"
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "$": {
+          "Name": "TIME_15",
+          "UIName": "@ui_TIME_15_name",
+          "HUDLoreDesc": "",
+          "GameplayDesc": ""
+        },
+        "MagicEffects": [
+          {
+            "EIM": [
+              {
+                "$": {
+                  "Name": "max_stacks_capacity",
+                  "HUDDesc": "@ui_eim_max_stacks_capacity",
+                  "Permanent": "1"
+                },
+                "Semantics": [
+                  {
+                    "$": {
+                      "StackCountInt": "5"
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "$": {
+          "Name": "TIME_16",
+          "UIName": "@ui_TIME_16_name",
+          "HUDLoreDesc": "",
+          "GameplayDesc": ""
+        },
+        "MagicEffects": [
+          {
+            "EIM": [
+              {
+                "$": {
+                  "Name": "forceshield_lock_timer_percent",
+                  "HUDDesc": "@ui_eim_forceshield_lock_timer_percent",
+                  "Permanent": "1"
+                },
+                "Semantics": [
+                  {
+                    "$": {
+                      "DurationPercentFloat": "14"
+                    }
+                  }
+                ]
+              },
+              {
+                "$": {
+                  "Name": "forceshield_percent",
+                  "HUDDesc": "@ui_eim_forceshield_percent",
+                  "Permanent": "1"
+                },
+                "Semantics": [
+                  {
+                    "$": {
+                      "ArmorPercentFloat": "8"
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "$": {
+          "Name": "TIME_17",
+          "UIName": "@ui_TIME_17_name",
+          "HUDLoreDesc": "@ui_TIME_17_loredesc",
+          "GameplayDesc": "@ui_TIME_17_gameplaydesc"
+        },
+        "MagicEffects": [
+          {
+            "EIM": [
+              {
+                "$": {
+                  "Name": "stack_hybrid_uses_mechanic",
+                  "HUDDesc": "@ui_eim_stack_hybrid_uses_mechanic",
+                  "Permanent": "1"
+                },
+                "Semantics": [
+                  {
+                    "$": {
+                      "PSTStackResetTimer": "5",
+                      "PSTStackMaxCountInt": "5"
+                    }
+                  }
+                ]
+              },
+              {
+                "$": {
+                  "Name": "stack_hybrid_cast_speed",
+                  "HUDDesc": "@ui_eim_stack_hybrid_cast_speed",
+                  "Permanent": "1"
+                },
+                "Semantics": [
+                  {
+                    "$": {
+                      "CharacteristicScorePercentInt": "10"
+                    }
+                  }
+                ]
+              },
+              {
+                "$": {
+                  "Name": "stack_hybrid_attack_speed",
+                  "HUDDesc": "@ui_eim_stack_hybrid_attack_speed",
+                  "Permanent": "1"
+                },
+                "Semantics": [
+                  {
+                    "$": {
+                      "CharacteristicScorePercentInt": "10"
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "$": {
+          "Name": "TIME_18",
+          "UIName": "@ui_TIME_18_name",
+          "HUDLoreDesc": "",
+          "GameplayDesc": ""
+        },
+        "MagicEffects": [
+          {
+            "EIM": [
+              {
+                "$": {
+                  "Name": "stack_hybrid_cast_speed",
+                  "HUDDesc": "@ui_eim_stack_hybrid_cast_speed",
+                  "Permanent": "1"
+                },
+                "Semantics": [
+                  {
+                    "$": {
+                      "CharacteristicScorePercentInt": "5"
+                    }
+                  }
+                ]
+              },
+              {
+                "$": {
+                  "Name": "stack_hybrid_attack_speed",
+                  "HUDDesc": "@ui_eim_stack_hybrid_attack_speed",
+                  "Permanent": "1"
+                },
+                "Semantics": [
+                  {
+                    "$": {
+                      "CharacteristicScorePercentInt": "5"
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "$": {
+          "Name": "TIME_19",
+          "UIName": "@ui_TIME_19_name",
+          "HUDLoreDesc": "@ui_TIME_19_loredesc",
+          "GameplayDesc": "@ui_TIME_19_gameplaydesc"
+        },
+        "MagicEffects": [
+          {
+            "EIM": [
+              {
+                "$": {
+                  "Name": "take_delayed_damage",
+                  "HUDDesc": "@ui_eim_take_delayed_damage",
+                  "Permanent": "1"
+                },
+                "Semantics": [
+                  {
+                    "$": {
+                      "DurationFlatFloat": "1",
+                      "DamagePercentFloat": "40"
+                    }
+                  }
+                ]
+              },
+              {
+                "$": {
+                  "Name": "cap_max_health_and_force_shield",
+                  "HUDDesc": "@ui_eim_cap_max_health_and_force_shield",
+                  "Permanent": "1"
+                },
+                "Semantics": [
+                  {
+                    "$": {
+                      "HealthPercentInt": "85",
+                      "ArmorPercentFloat": "85"
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "$": {
+          "Name": "TIME_20",
+          "UIName": "@ui_TIME_20_name",
+          "HUDLoreDesc": "",
+          "GameplayDesc": ""
+        },
+        "MagicEffects": [
+          {
+            "EIM": [
+              {
+                "$": {
+                  "Name": "cap_max_health_and_force_shield",
+                  "HUDDesc": "@ui_eim_cap_max_health_and_force_shield_increase",
+                  "Permanent": "1"
+                },
+                "Semantics": [
+                  {
+                    "$": {
+                      "HealthPercentInt": "5",
+                      "ArmorPercentFloat": "5"
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

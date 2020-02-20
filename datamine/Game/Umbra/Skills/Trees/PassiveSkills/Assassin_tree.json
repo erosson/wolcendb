@@ -1,0 +1,235 @@
+{
+  "MetaData": {
+    "Tree": [
+      {
+        "$": {
+          "Name": "Assassin",
+          "UIName": "@ui_Section_Assassin",
+          "Category": "range"
+        },
+        "Skill": [
+          {
+            "$": {
+              "Name": "ASSA_1",
+              "Rarity": "1",
+              "Category": "range",
+              "MaxLevel": "1",
+              "Angle": "0.50",
+              "Pos": "0.15",
+              "Unlock": "begin,ASSA_2,ASSA_4,ASSA_12,ASSA_10"
+            }
+          },
+          {
+            "$": {
+              "Name": "ASSA_2",
+              "Rarity": "1",
+              "Category": "range",
+              "MaxLevel": "1",
+              "Angle": "0.60",
+              "Pos": "0.15",
+              "Unlock": "ASSA_3,ASSA_4"
+            }
+          },
+          {
+            "$": {
+              "Name": "ASSA_3",
+              "Rarity": "1",
+              "Category": "range",
+              "MaxLevel": "1",
+              "Angle": "0.72",
+              "Pos": "0.15",
+              "Unlock": "ASSA_5,ASSA_8"
+            }
+          },
+          {
+            "$": {
+              "Name": "ASSA_4",
+              "Rarity": "1",
+              "Category": "range",
+              "MaxLevel": "1",
+              "Angle": "0.60",
+              "Pos": "0.35",
+              "Unlock": "ASSA_5,ASSA_6,ASSA_7,ASSA_14"
+            }
+          },
+          {
+            "$": {
+              "Name": "ASSA_5",
+              "Rarity": "1",
+              "Category": "range",
+              "MaxLevel": "1",
+              "Angle": "0.72",
+              "Pos": "0.35",
+              "Unlock": "ASSA_7,ASSA_8"
+            }
+          },
+          {
+            "$": {
+              "Name": "ASSA_6",
+              "Rarity": "1",
+              "Category": "range",
+              "MaxLevel": "1",
+              "Angle": "0.60",
+              "Pos": "0.75",
+              "Unlock": "ASSA_7,ASSA_14,ASSA_19"
+            }
+          },
+          {
+            "$": {
+              "Name": "ASSA_7",
+              "Rarity": "1",
+              "Category": "range",
+              "MaxLevel": "1",
+              "Angle": "0.72",
+              "Pos": "0.55",
+              "Unlock": "ASSA_8"
+            }
+          },
+          {
+            "$": {
+              "Name": "ASSA_8",
+              "Rarity": "3",
+              "Category": "range",
+              "MaxLevel": "1",
+              "Angle": "0.85",
+              "Pos": "0.35",
+              "Unlock": "ASSA_9"
+            }
+          },
+          {
+            "$": {
+              "Name": "ASSA_9",
+              "Rarity": "1",
+              "Category": "range",
+              "MaxLevel": "1",
+              "Angle": "0.95",
+              "Pos": "0.35",
+              "Unlock": ""
+            }
+          },
+          {
+            "$": {
+              "Name": "ASSA_10",
+              "Rarity": "1",
+              "Category": "range",
+              "MaxLevel": "1",
+              "Angle": "0.40",
+              "Pos": "0.15",
+              "Unlock": "ASSA_11,ASSA_12"
+            }
+          },
+          {
+            "$": {
+              "Name": "ASSA_11",
+              "Rarity": "1",
+              "Category": "range",
+              "MaxLevel": "1",
+              "Angle": "0.28",
+              "Pos": "0.15",
+              "Unlock": "ASSA_13,ASSA_17"
+            }
+          },
+          {
+            "$": {
+              "Name": "ASSA_12",
+              "Rarity": "1",
+              "Category": "range",
+              "MaxLevel": "1",
+              "Angle": "0.40",
+              "Pos": "0.35",
+              "Unlock": "ASSA_13,ASSA_14,ASSA_15,ASSA_16"
+            }
+          },
+          {
+            "$": {
+              "Name": "ASSA_13",
+              "Rarity": "1",
+              "Category": "range",
+              "MaxLevel": "1",
+              "Angle": "0.28",
+              "Pos": "0.35",
+              "Unlock": "ASSA_16,ASSA_17"
+            }
+          },
+          {
+            "$": {
+              "Name": "ASSA_14",
+              "Rarity": "1",
+              "Category": "range",
+              "MaxLevel": "1",
+              "Angle": "0.50",
+              "Pos": "0.55",
+              "Unlock": "ASSA_15,ASSA_19"
+            }
+          },
+          {
+            "$": {
+              "Name": "ASSA_15",
+              "Rarity": "1",
+              "Category": "range",
+              "MaxLevel": "1",
+              "Angle": "0.40",
+              "Pos": "0.75",
+              "Unlock": "ASSA_16,ASSA_19"
+            }
+          },
+          {
+            "$": {
+              "Name": "ASSA_16",
+              "Rarity": "1",
+              "Category": "range",
+              "MaxLevel": "1",
+              "Angle": "0.28",
+              "Pos": "0.55",
+              "Unlock": "ASSA_17"
+            }
+          },
+          {
+            "$": {
+              "Name": "ASSA_17",
+              "Rarity": "3",
+              "Category": "range",
+              "MaxLevel": "1",
+              "Angle": "0.15",
+              "Pos": "0.35",
+              "Unlock": "ASSA_18"
+            }
+          },
+          {
+            "$": {
+              "Name": "ASSA_18",
+              "Rarity": "1",
+              "Category": "range",
+              "MaxLevel": "1",
+              "Angle": "0.05",
+              "Pos": "0.35",
+              "Unlock": ""
+            }
+          },
+          {
+            "$": {
+              "Name": "ASSA_19",
+              "Rarity": "3",
+              "Category": "range",
+              "MaxLevel": "1",
+              "Angle": "0.50",
+              "Pos": "0.75",
+              "Unlock": "ASSA_20"
+            }
+          },
+          {
+            "$": {
+              "Name": "ASSA_20",
+              "Rarity": "1",
+              "Category": "range",
+              "MaxLevel": "1",
+              "Angle": "0.50",
+              "Pos": "0.95",
+              "Unlock": ""
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

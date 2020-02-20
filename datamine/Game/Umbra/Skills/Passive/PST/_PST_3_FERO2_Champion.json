@@ -1,0 +1,756 @@
+{
+  "MetaData": {
+    "Spell": [
+      {
+        "$": {
+          "Name": "CHAMP_1",
+          "UIName": "@ui_CHAMP_1_name",
+          "HUDLoreDesc": "",
+          "GameplayDesc": ""
+        },
+        "MagicEffects": [
+          {
+            "EIM": [
+              {
+                "$": {
+                  "Name": "damage_percent_any_weapon",
+                  "HUDDesc": "@ui_eim_damage_percent_any_weapon",
+                  "Permanent": "1"
+                },
+                "Semantics": [
+                  {
+                    "$": {
+                      "DamagePercentInt": "8"
+                    }
+                  }
+                ]
+              },
+              {
+                "$": {
+                  "Name": "damage_percent_onehanded",
+                  "HUDDesc": "@ui_eim_damage_percent_onehanded",
+                  "Permanent": "1"
+                },
+                "Semantics": [
+                  {
+                    "$": {
+                      "DamagePercentInt": "10"
+                    }
+                  }
+                ]
+              },
+              {
+                "$": {
+                  "Name": "damage_percent_twohanded",
+                  "HUDDesc": "@ui_eim_damage_percent_twohanded",
+                  "Permanent": "1"
+                },
+                "Semantics": [
+                  {
+                    "$": {
+                      "DamagePercentInt": "10"
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "$": {
+          "Name": "CHAMP_2",
+          "UIName": "@ui_CHAMP_2_name",
+          "HUDLoreDesc": "",
+          "GameplayDesc": ""
+        },
+        "MagicEffects": [
+          {
+            "EIM": [
+              {
+                "$": {
+                  "Name": "damage_percent_onehanded",
+                  "HUDDesc": "@ui_eim_damage_percent_onehanded",
+                  "Permanent": "1"
+                },
+                "Semantics": [
+                  {
+                    "$": {
+                      "DamagePercentInt": "12"
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "$": {
+          "Name": "CHAMP_3",
+          "UIName": "@ui_CHAMP_3_name",
+          "HUDLoreDesc": "",
+          "GameplayDesc": ""
+        },
+        "MagicEffects": [
+          {
+            "EIM": [
+              {
+                "$": {
+                  "Name": "damage_percent_onehanded",
+                  "HUDDesc": "@ui_eim_damage_percent_onehanded",
+                  "Permanent": "1"
+                },
+                "Semantics": [
+                  {
+                    "$": {
+                      "DamagePercentInt": "8"
+                    }
+                  }
+                ]
+              },
+              {
+                "$": {
+                  "Name": "attackspeed_score_percent",
+                  "HUDDesc": "@ui_eim_attackspeed_score_percent",
+                  "Permanent": "1"
+                },
+                "Semantics": [
+                  {
+                    "$": {
+                      "CharacteristicScorePercentInt": "10"
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "$": {
+          "Name": "CHAMP_4",
+          "UIName": "@ui_CHAMP_4_name",
+          "HUDLoreDesc": "",
+          "GameplayDesc": ""
+        },
+        "MagicEffects": [
+          {
+            "EIM": [
+              {
+                "$": {
+                  "Name": "blockefficiency_percent",
+                  "HUDDesc": "@ui_eim_blockefficiency_percent",
+                  "Permanent": "1"
+                },
+                "Semantics": [
+                  {
+                    "$": {
+                      "ResourcePercentFloat": "14"
+                    }
+                  }
+                ]
+              },
+              {
+                "$": {
+                  "Name": "health_percent",
+                  "HUDDesc": "@ui_eim_health_percent",
+                  "Permanent": "1"
+                },
+                "Semantics": [
+                  {
+                    "$": {
+                      "HealthPercentInt": "8"
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "$": {
+          "Name": "CHAMP_5",
+          "UIName": "@ui_CHAMP_5_name",
+          "HUDLoreDesc": "",
+          "GameplayDesc": ""
+        },
+        "MagicEffects": [
+          {
+            "EIM": [
+              {
+                "$": {
+                  "Name": "rend_damage_percent",
+                  "HUDDesc": "@ui_eim_rend_damage_percent",
+                  "Permanent": "1"
+                },
+                "Semantics": [
+                  {
+                    "$": {
+                      "DamagePercentInt": "12"
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "$": {
+          "Name": "CHAMP_6",
+          "UIName": "@ui_CHAMP_6_name",
+          "HUDLoreDesc": "",
+          "GameplayDesc": ""
+        },
+        "MagicEffects": [
+          {
+            "EIM": [
+              {
+                "$": {
+                  "Name": "damage_percent_onehanded",
+                  "HUDDesc": "@ui_eim_damage_percent_onehanded",
+                  "Permanent": "1"
+                },
+                "Semantics": [
+                  {
+                    "$": {
+                      "DamagePercentInt": "12"
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "$": {
+          "Name": "CHAMP_7",
+          "UIName": "@ui_CHAMP_7_name",
+          "HUDLoreDesc": "",
+          "GameplayDesc": ""
+        },
+        "MagicEffects": [
+          {
+            "EIM": [
+              {
+                "$": {
+                  "Name": "twohanded_blockchance_flat",
+                  "HUDDesc": "@ui_eim_twohanded_blockchance_flat",
+                  "Permanent": "1"
+                },
+                "Semantics": [
+                  {
+                    "$": {
+                      "ChanceFlatFloat": "10"
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "$": {
+          "Name": "CHAMP_8",
+          "UIName": "@ui_CHAMP_8_name",
+          "HUDLoreDesc": "@ui_CHAMP_8_loredesc",
+          "GameplayDesc": "@ui_CHAMP_8_gameplaydesc"
+        },
+        "MagicEffects": [
+          {
+            "EIM": [
+              {
+                "$": {
+                  "Name": "can_change_stances_with_dodgeroll",
+                  "HUDDesc": "@ui_eim_can_change_stances_with_dodgeroll",
+                  "Permanent": "1"
+                },
+                "Semantics": [
+                  {
+                    "$": {
+                      "PossibilityInt": "1"
+                    }
+                  }
+                ]
+              },
+              {
+                "$": {
+                  "Name": "stance_offensive_stats",
+                  "HUDDesc": "@ui_eim_stance_offensive_stats",
+                  "Permanent": "1"
+                },
+                "Semantics": [
+                  {
+                    "$": {
+                      "ChancePercentInt": "10",
+                      "CharacteristicScorePercentInt": "25"
+                    }
+                  }
+                ]
+              },
+              {
+                "$": {
+                  "Name": "stance_defensive_stats",
+                  "HUDDesc": "@ui_eim_stance_defensive_stats",
+                  "Permanent": "1"
+                },
+                "Semantics": [
+                  {
+                    "$": {
+                      "ChancePercentInt": "10",
+                      "ResourcePercentFloat": "25",
+                      "CharacteristicScorePercentInt": "25"
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "$": {
+          "Name": "CHAMP_9",
+          "UIName": "@ui_CHAMP_9_name",
+          "HUDLoreDesc": "",
+          "GameplayDesc": ""
+        },
+        "MagicEffects": [
+          {
+            "EIM": [
+              {
+                "$": {
+                  "Name": "stance_offensive_stats",
+                  "HUDDesc": "@ui_eim_stance_offensive_stats_bonus",
+                  "Permanent": "1"
+                },
+                "Semantics": [
+                  {
+                    "$": {
+                      "ChancePercentInt": "5",
+                      "CharacteristicScorePercentInt": "0"
+                    }
+                  }
+                ]
+              },
+              {
+                "$": {
+                  "Name": "stance_defensive_stats",
+                  "HUDDesc": "@ui_eim_stance_defensive_stats_bonus",
+                  "Permanent": "1"
+                },
+                "Semantics": [
+                  {
+                    "$": {
+                      "ChancePercentInt": "5",
+                      "ResourcePercentFloat": "0",
+                      "CharacteristicScorePercentInt": "0"
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "$": {
+          "Name": "CHAMP_10",
+          "UIName": "@ui_CHAMP_10_name",
+          "HUDLoreDesc": "",
+          "GameplayDesc": ""
+        },
+        "MagicEffects": [
+          {
+            "EIM": [
+              {
+                "$": {
+                  "Name": "damage_percent_twohanded",
+                  "HUDDesc": "@ui_eim_damage_percent_twohanded",
+                  "Permanent": "1"
+                },
+                "Semantics": [
+                  {
+                    "$": {
+                      "DamagePercentInt": "12"
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "$": {
+          "Name": "CHAMP_11",
+          "UIName": "@ui_CHAMP_11_name",
+          "HUDLoreDesc": "",
+          "GameplayDesc": ""
+        },
+        "MagicEffects": [
+          {
+            "EIM": [
+              {
+                "$": {
+                  "Name": "damage_percent_twohanded",
+                  "HUDDesc": "@ui_eim_damage_percent_twohanded",
+                  "Permanent": "1"
+                },
+                "Semantics": [
+                  {
+                    "$": {
+                      "DamagePercentInt": "8"
+                    }
+                  }
+                ]
+              },
+              {
+                "$": {
+                  "Name": "criticaldamage_pts",
+                  "HUDDesc": "@ui_eim_criticaldamage_pts",
+                  "Permanent": "1"
+                },
+                "Semantics": [
+                  {
+                    "$": {
+                      "DamagePercentInt": "10"
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "$": {
+          "Name": "CHAMP_12",
+          "UIName": "@ui_CHAMP_12_name",
+          "HUDLoreDesc": "",
+          "GameplayDesc": ""
+        },
+        "MagicEffects": [
+          {
+            "EIM": [
+              {
+                "$": {
+                  "Name": "blockefficiency_percent",
+                  "HUDDesc": "@ui_eim_blockefficiency_percent",
+                  "Permanent": "1"
+                },
+                "Semantics": [
+                  {
+                    "$": {
+                      "ResourcePercentFloat": "14"
+                    }
+                  }
+                ]
+              },
+              {
+                "$": {
+                  "Name": "health_percent",
+                  "HUDDesc": "@ui_eim_health_percent",
+                  "Permanent": "1"
+                },
+                "Semantics": [
+                  {
+                    "$": {
+                      "HealthPercentInt": "8"
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "$": {
+          "Name": "CHAMP_13",
+          "UIName": "@ui_CHAMP_13_name",
+          "HUDLoreDesc": "",
+          "GameplayDesc": ""
+        },
+        "MagicEffects": [
+          {
+            "EIM": [
+              {
+                "$": {
+                  "Name": "rend_damage_percent",
+                  "HUDDesc": "@ui_eim_rend_damage_percent",
+                  "Permanent": "1"
+                },
+                "Semantics": [
+                  {
+                    "$": {
+                      "DamagePercentInt": "12"
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "$": {
+          "Name": "CHAMP_14",
+          "UIName": "@ui_CHAMP_14_name",
+          "HUDLoreDesc": "",
+          "GameplayDesc": ""
+        },
+        "MagicEffects": [
+          {
+            "EIM": [
+              {
+                "$": {
+                  "Name": "blockchance_unconditional_flat",
+                  "HUDDesc": "@ui_eim_blockchance_unconditional_flat",
+                  "Permanent": "1"
+                },
+                "Semantics": [
+                  {
+                    "$": {
+                      "ChanceFlatFloat": "6"
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "$": {
+          "Name": "CHAMP_15",
+          "UIName": "@ui_CHAMP_15_name",
+          "HUDLoreDesc": "",
+          "GameplayDesc": ""
+        },
+        "MagicEffects": [
+          {
+            "EIM": [
+              {
+                "$": {
+                  "Name": "damage_percent_twohanded",
+                  "HUDDesc": "@ui_eim_damage_percent_twohanded",
+                  "Permanent": "1"
+                },
+                "Semantics": [
+                  {
+                    "$": {
+                      "DamagePercentInt": "12"
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "$": {
+          "Name": "CHAMP_16",
+          "UIName": "@ui_CHAMP_16_name",
+          "HUDLoreDesc": "",
+          "GameplayDesc": ""
+        },
+        "MagicEffects": [
+          {
+            "EIM": [
+              {
+                "$": {
+                  "Name": "twohanded_blockchance_flat",
+                  "HUDDesc": "@ui_eim_twohanded_blockchance_flat",
+                  "Permanent": "1"
+                },
+                "Semantics": [
+                  {
+                    "$": {
+                      "ChanceFlatFloat": "10"
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "$": {
+          "Name": "CHAMP_17",
+          "UIName": "@ui_CHAMP_17_name",
+          "HUDLoreDesc": "@ui_CHAMP_17_loredesc",
+          "GameplayDesc": "@ui_CHAMP_17_gameplaydesc"
+        },
+        "MagicEffects": [
+          {
+            "EIM": [
+              {
+                "$": {
+                  "Name": "damage_on_block",
+                  "HUDDesc": "@ui_eim_damage_on_block",
+                  "Permanent": "1"
+                },
+                "Semantics": [
+                  {
+                    "$": {
+                      "PossibilityInt": "1",
+                      "DamagePercentFloat": "100",
+                      "TriggeredSkillSelector": "0"
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "$": {
+          "Name": "CHAMP_18",
+          "UIName": "@ui_CHAMP_18_name",
+          "HUDLoreDesc": "",
+          "GameplayDesc": ""
+        },
+        "MagicEffects": [
+          {
+            "EIM": [
+              {
+                "$": {
+                  "Name": "damage_on_block",
+                  "HUDDesc": "@ui_eim_damage_on_block_rend",
+                  "Permanent": "1"
+                },
+                "Semantics": [
+                  {
+                    "$": {
+                      "TriggeredSkillSelector": "1"
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "$": {
+          "Name": "CHAMP_19",
+          "UIName": "@ui_CHAMP_19_name",
+          "HUDLoreDesc": "@ui_CHAMP_19_loredesc",
+          "GameplayDesc": "@ui_CHAMP_19_gameplaydesc"
+        },
+        "MagicEffects": [
+          {
+            "EIM": [
+              {
+                "$": {
+                  "Name": "final_weapon_combos",
+                  "HUDDesc": "@ui_eim_final_weapon_combos",
+                  "Permanent": "1"
+                },
+                "Semantics": [
+                  {
+                    "$": {
+                      "DamageIncreasePercentFloat": "0"
+                    }
+                  }
+                ]
+              },
+              {
+                "$": {
+                  "Name": "final_weapon_combos_bows",
+                  "HUDDesc": "@ui_eim_final_weapon_combos_bows",
+                  "Permanent": "1"
+                },
+                "Semantics": [
+                  {
+                    "$": {
+                      "PossibilityInt": "1"
+                    }
+                  }
+                ]
+              },
+              {
+                "$": {
+                  "Name": "final_weapon_combos_staves",
+                  "HUDDesc": "@ui_eim_final_weapon_combos_staves",
+                  "Permanent": "1"
+                },
+                "Semantics": [
+                  {
+                    "$": {
+                      "PossibilityInt": "1"
+                    }
+                  }
+                ]
+              },
+              {
+                "$": {
+                  "Name": "final_weapon_combos_two_handed",
+                  "HUDDesc": "@ui_eim_final_weapon_combos_two_handed",
+                  "Permanent": "1"
+                },
+                "Semantics": [
+                  {
+                    "$": {
+                      "PossibilityInt": "1"
+                    }
+                  }
+                ]
+              },
+              {
+                "$": {
+                  "Name": "final_weapon_combos_misc",
+                  "HUDDesc": "@ui_eim_final_weapon_combos_other",
+                  "Permanent": "1"
+                },
+                "Semantics": [
+                  {
+                    "$": {
+                      "PossibilityInt": "1"
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "$": {
+          "Name": "CHAMP_20",
+          "UIName": "@ui_CHAMP_20_name",
+          "HUDLoreDesc": "",
+          "GameplayDesc": ""
+        },
+        "MagicEffects": [
+          {
+            "EIM": [
+              {
+                "$": {
+                  "Name": "final_weapon_combos",
+                  "HUDDesc": "@ui_eim_final_weapon_combos_damage",
+                  "Permanent": "1"
+                },
+                "Semantics": [
+                  {
+                    "$": {
+                      "DamageIncreasePercentFloat": "50"
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

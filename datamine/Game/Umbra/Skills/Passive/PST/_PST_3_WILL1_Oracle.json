@@ -1,0 +1,754 @@
+{
+  "MetaData": {
+    "Spell": [
+      {
+        "$": {
+          "Name": "ORAC_1",
+          "UIName": "@ui_ORAC_1_name",
+          "HUDLoreDesc": "",
+          "GameplayDesc": ""
+        },
+        "MagicEffects": [
+          {
+            "EIM": [
+              {
+                "$": {
+                  "Name": "elemental_damage_percent",
+                  "HUDDesc": "@ui_eim_elemental_damage_percent",
+                  "Permanent": "1"
+                },
+                "Semantics": [
+                  {
+                    "$": {
+                      "DamagePercentInt": "10"
+                    }
+                  }
+                ]
+              },
+              {
+                "$": {
+                  "Name": "elemental_resistance_score_percent",
+                  "HUDDesc": "@ui_eim_elemental_resistance_score_percent",
+                  "Permanent": "1"
+                },
+                "Semantics": [
+                  {
+                    "$": {
+                      "CharacteristicScorePercentInt": "10"
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "$": {
+          "Name": "ORAC_2",
+          "UIName": "@ui_ORAC_2_name",
+          "HUDLoreDesc": "",
+          "GameplayDesc": ""
+        },
+        "MagicEffects": [
+          {
+            "EIM": [
+              {
+                "$": {
+                  "Name": "forceshield_regeneration_percent",
+                  "HUDDesc": "@ui_eim_forceshield_regeneration_percent",
+                  "Permanent": "1"
+                },
+                "Semantics": [
+                  {
+                    "$": {
+                      "DefenseRegenerationPercentFloat": "17"
+                    }
+                  }
+                ]
+              },
+              {
+                "$": {
+                  "Name": "forceshield_percent",
+                  "HUDDesc": "@ui_eim_forceshield_percent",
+                  "Permanent": "1"
+                },
+                "Semantics": [
+                  {
+                    "$": {
+                      "ArmorPercentFloat": "8"
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "$": {
+          "Name": "ORAC_3",
+          "UIName": "@ui_ORAC_3_name",
+          "HUDLoreDesc": "",
+          "GameplayDesc": ""
+        },
+        "MagicEffects": [
+          {
+            "EIM": [
+              {
+                "$": {
+                  "Name": "lightning_damage_percent",
+                  "HUDDesc": "@ui_eim_lightning_damage_percent",
+                  "Permanent": "1"
+                },
+                "Semantics": [
+                  {
+                    "$": {
+                      "DamagePercentInt": "15"
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "$": {
+          "Name": "ORAC_4",
+          "UIName": "@ui_ORAC_4_name",
+          "HUDLoreDesc": "",
+          "GameplayDesc": ""
+        },
+        "MagicEffects": [
+          {
+            "EIM": [
+              {
+                "$": {
+                  "Name": "elemental_resistance_score_percent",
+                  "HUDDesc": "@ui_eim_elemental_resistance_score_percent",
+                  "Permanent": "1"
+                },
+                "Semantics": [
+                  {
+                    "$": {
+                      "CharacteristicScorePercentInt": "10"
+                    }
+                  }
+                ]
+              },
+              {
+                "$": {
+                  "Name": "health_percent",
+                  "HUDDesc": "@ui_eim_health_percent",
+                  "Permanent": "1"
+                },
+                "Semantics": [
+                  {
+                    "$": {
+                      "HealthPercentInt": "-10"
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "$": {
+          "Name": "ORAC_5",
+          "UIName": "@ui_ORAC_5_name",
+          "HUDLoreDesc": "",
+          "GameplayDesc": ""
+        },
+        "MagicEffects": [
+          {
+            "EIM": [
+              {
+                "$": {
+                  "Name": "frost_damage_percent",
+                  "HUDDesc": "@ui_eim_frost_damage_percent",
+                  "Permanent": "1"
+                },
+                "Semantics": [
+                  {
+                    "$": {
+                      "DamagePercentInt": "15"
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "$": {
+          "Name": "ORAC_6",
+          "UIName": "@ui_ORAC_6_name",
+          "HUDLoreDesc": "",
+          "GameplayDesc": ""
+        },
+        "MagicEffects": [
+          {
+            "EIM": [
+              {
+                "$": {
+                  "Name": "spellcastingspeed_score_percent",
+                  "HUDDesc": "@ui_eim_spellcastingspeed_score_percent",
+                  "Permanent": "1"
+                },
+                "Semantics": [
+                  {
+                    "$": {
+                      "CharacteristicScorePercentInt": "18"
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "$": {
+          "Name": "ORAC_7",
+          "UIName": "@ui_ORAC_7_name",
+          "HUDLoreDesc": "",
+          "GameplayDesc": ""
+        },
+        "MagicEffects": [
+          {
+            "EIM": [
+              {
+                "$": {
+                  "Name": "fire_damage_percent",
+                  "HUDDesc": "@ui_eim_fire_damage_percent",
+                  "Permanent": "1"
+                },
+                "Semantics": [
+                  {
+                    "$": {
+                      "DamagePercentInt": "15"
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "$": {
+          "Name": "ORAC_8",
+          "UIName": "@ui_ORAC_8_name",
+          "HUDLoreDesc": "@ui_ORAC_8_loredesc",
+          "GameplayDesc": "@ui_ORAC_8_gameplaydesc"
+        },
+        "MagicEffects": [
+          {
+            "EIM": [
+              {
+                "$": {
+                  "Name": "can_proc_attunements",
+                  "HUDDesc": "@ui_eim_can_proc_attunements",
+                  "Permanent": "1"
+                },
+                "Semantics": [
+                  {
+                    "$": {
+                      "CountInt": "1",
+                      "DurationFlatFloat": "1"
+                    }
+                  }
+                ]
+              },
+              {
+                "$": {
+                  "Name": "attunement_fire",
+                  "HUDDesc": "@ui_eim_attunement_fire",
+                  "Permanent": "1"
+                },
+                "Semantics": [
+                  {
+                    "$": {
+                      "DamagePercentInt": "20"
+                    }
+                  }
+                ]
+              },
+              {
+                "$": {
+                  "Name": "attunement_frost",
+                  "HUDDesc": "@ui_eim_attunement_frost",
+                  "Permanent": "1"
+                },
+                "Semantics": [
+                  {
+                    "$": {
+                      "CharacteristicScorePercentInt": "50"
+                    }
+                  }
+                ]
+              },
+              {
+                "$": {
+                  "Name": "attunement_lightning",
+                  "HUDDesc": "@ui_eim_attunement_lightning",
+                  "Permanent": "1"
+                },
+                "Semantics": [
+                  {
+                    "$": {
+                      "CharacteristicScorePercentInt": "50"
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "$": {
+          "Name": "ORAC_9",
+          "UIName": "@ui_ORAC_9_name",
+          "HUDLoreDesc": "",
+          "GameplayDesc": ""
+        },
+        "MagicEffects": [
+          {
+            "EIM": [
+              {
+                "$": {
+                  "Name": "can_proc_attunements",
+                  "HUDDesc": "@ui_eim_attunements_simulaneous",
+                  "Permanent": "1"
+                },
+                "Semantics": [
+                  {
+                    "$": {
+                      "CountInt": "1"
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "$": {
+          "Name": "ORAC_10",
+          "UIName": "@ui_ORAC_10_name",
+          "HUDLoreDesc": "",
+          "GameplayDesc": ""
+        },
+        "MagicEffects": [
+          {
+            "EIM": [
+              {
+                "$": {
+                  "Name": "umbracosts_percent",
+                  "HUDDesc": "@ui_eim_umbracosts_percent",
+                  "Permanent": "1"
+                },
+                "Semantics": [
+                  {
+                    "$": {
+                      "ResourcePercentFloat": "8"
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "$": {
+          "Name": "ORAC_11",
+          "UIName": "@ui_ORAC_11_name",
+          "HUDLoreDesc": "",
+          "GameplayDesc": ""
+        },
+        "MagicEffects": [
+          {
+            "EIM": [
+              {
+                "$": {
+                  "Name": "umbracosts_percent",
+                  "HUDDesc": "@ui_eim_umbracosts_percent",
+                  "Permanent": "1"
+                },
+                "Semantics": [
+                  {
+                    "$": {
+                      "ResourcePercentFloat": "8"
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "$": {
+          "Name": "ORAC_12",
+          "UIName": "@ui_ORAC_12_name",
+          "HUDLoreDesc": "",
+          "GameplayDesc": ""
+        },
+        "MagicEffects": [
+          {
+            "EIM": [
+              {
+                "$": {
+                  "Name": "elemental_resistance_score_percent",
+                  "HUDDesc": "@ui_eim_elemental_resistance_score_percent",
+                  "Permanent": "1"
+                },
+                "Semantics": [
+                  {
+                    "$": {
+                      "CharacteristicScorePercentInt": "10"
+                    }
+                  }
+                ]
+              },
+              {
+                "$": {
+                  "Name": "health_percent",
+                  "HUDDesc": "@ui_eim_health_percent",
+                  "Permanent": "1"
+                },
+                "Semantics": [
+                  {
+                    "$": {
+                      "HealthPercentInt": "-10"
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "$": {
+          "Name": "ORAC_13",
+          "UIName": "@ui_ORAC_13_name",
+          "HUDLoreDesc": "",
+          "GameplayDesc": ""
+        },
+        "MagicEffects": [
+          {
+            "EIM": [
+              {
+                "$": {
+                  "Name": "umbracosts_percent",
+                  "HUDDesc": "@ui_eim_umbracosts_percent",
+                  "Permanent": "1"
+                },
+                "Semantics": [
+                  {
+                    "$": {
+                      "ResourcePercentFloat": "5"
+                    }
+                  }
+                ]
+              },
+              {
+                "$": {
+                  "Name": "transfer_time_percent",
+                  "HUDDesc": "@ui_eim_transfer_time_percent",
+                  "Permanent": "1"
+                },
+                "Semantics": [
+                  {
+                    "$": {
+                      "DurationPercentInt": "10"
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "$": {
+          "Name": "ORAC_14",
+          "UIName": "@ui_ORAC_14_name",
+          "HUDLoreDesc": "",
+          "GameplayDesc": ""
+        },
+        "MagicEffects": [
+          {
+            "EIM": [
+              {
+                "$": {
+                  "Name": "forceshield_regeneration_percent",
+                  "HUDDesc": "@ui_eim_forceshield_regeneration_percent",
+                  "Permanent": "1"
+                },
+                "Semantics": [
+                  {
+                    "$": {
+                      "DefenseRegenerationPercentFloat": "25"
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "$": {
+          "Name": "ORAC_15",
+          "UIName": "@ui_ORAC_15_name",
+          "HUDLoreDesc": "",
+          "GameplayDesc": ""
+        },
+        "MagicEffects": [
+          {
+            "EIM": [
+              {
+                "$": {
+                  "Name": "spellcastingspeed_score_percent",
+                  "HUDDesc": "@ui_eim_spellcastingspeed_score_percent",
+                  "Permanent": "1"
+                },
+                "Semantics": [
+                  {
+                    "$": {
+                      "CharacteristicScorePercentInt": "18"
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "$": {
+          "Name": "ORAC_16",
+          "UIName": "@ui_ORAC_16_name",
+          "HUDLoreDesc": "",
+          "GameplayDesc": ""
+        },
+        "MagicEffects": [
+          {
+            "EIM": [
+              {
+                "$": {
+                  "Name": "forceshield_regeneration_percent",
+                  "HUDDesc": "@ui_eim_forceshield_regeneration_percent",
+                  "Permanent": "1"
+                },
+                "Semantics": [
+                  {
+                    "$": {
+                      "DefenseRegenerationPercentFloat": "17"
+                    }
+                  }
+                ]
+              },
+              {
+                "$": {
+                  "Name": "forceshield_percent",
+                  "HUDDesc": "@ui_eim_forceshield_percent",
+                  "Permanent": "1"
+                },
+                "Semantics": [
+                  {
+                    "$": {
+                      "ArmorPercentFloat": "8"
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "$": {
+          "Name": "ORAC_17",
+          "UIName": "@ui_ORAC_17_name",
+          "HUDLoreDesc": "@ui_ORAC_17_loredesc",
+          "GameplayDesc": "@ui_ORAC_17_gameplaydesc"
+        },
+        "MagicEffects": [
+          {
+            "EIM": [
+              {
+                "$": {
+                  "Name": "explosion_on_low_willpower",
+                  "HUDDesc": "@ui_eim_explosion_on_low_willpower",
+                  "Permanent": "1"
+                },
+                "Semantics": [
+                  {
+                    "$": {
+                      "PossibilityInt": "1",
+                      "ResourcePercentFloat": "25",
+                      "TriggeredSkillSelector": "0"
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "$": {
+          "Name": "ORAC_18",
+          "UIName": "@ui_ORAC_18_name",
+          "HUDLoreDesc": "",
+          "GameplayDesc": ""
+        },
+        "MagicEffects": [
+          {
+            "EIM": [
+              {
+                "$": {
+                  "Name": "explosion_on_low_willpower",
+                  "HUDDesc": "@ui_eim_explosion_on_low_willpower_damage",
+                  "Permanent": "1"
+                },
+                "Semantics": [
+                  {
+                    "$": {
+                      "TriggeredSkillSelector": "3"
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "$": {
+          "Name": "ORAC_19",
+          "UIName": "@ui_ORAC_19_name",
+          "HUDLoreDesc": "@ui_ORAC_19_loredesc",
+          "GameplayDesc": "@ui_ORAC_19_gameplaydesc"
+        },
+        "MagicEffects": [
+          {
+            "EIM": [
+              {
+                "$": {
+                  "Name": "meteor_on_casting_fire_skill",
+                  "HUDDesc": "@ui_eim_meteor_on_casting_fire_skill",
+                  "Permanent": "1"
+                },
+                "Semantics": [
+                  {
+                    "$": {
+                      "PossibilityInt": "1",
+                      "TriggeredSkillSelector": "0"
+                    }
+                  }
+                ]
+              },
+              {
+                "$": {
+                  "Name": "frost_lance_on_casting_frost_skill",
+                  "HUDDesc": "@ui_eim_frost_lance_on_casting_frost_skill",
+                  "Permanent": "1"
+                },
+                "Semantics": [
+                  {
+                    "$": {
+                      "PossibilityInt": "1",
+                      "TriggeredSkillSelector": "0"
+                    }
+                  }
+                ]
+              },
+              {
+                "$": {
+                  "Name": "thunderstrike_on_casting_lightning_skill",
+                  "HUDDesc": "@ui_eim_thunderstrike_on_casting_lightning_skill",
+                  "Permanent": "1"
+                },
+                "Semantics": [
+                  {
+                    "$": {
+                      "PossibilityInt": "1",
+                      "TriggeredSkillSelector": "0"
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "$": {
+          "Name": "ORAC_20",
+          "UIName": "@ui_ORAC_20_name",
+          "HUDLoreDesc": "",
+          "GameplayDesc": ""
+        },
+        "MagicEffects": [
+          {
+            "EIM": [
+              {
+                "$": {
+                  "Name": "meteor_on_casting_fire_skill",
+                  "HUDDesc": "@ui_eim_meteor_on_casting_fire_skill",
+                  "Permanent": "1"
+                },
+                "Semantics": [
+                  {
+                    "$": {
+                      "TriggeredSkillSelector": "1"
+                    }
+                  }
+                ]
+              },
+              {
+                "$": {
+                  "Name": "frost_lance_on_casting_frost_skill",
+                  "HUDDesc": "@ui_eim_frost_lance_on_casting_frost_skill",
+                  "Permanent": "1"
+                },
+                "Semantics": [
+                  {
+                    "$": {
+                      "TriggeredSkillSelector": "1"
+                    }
+                  }
+                ]
+              },
+              {
+                "$": {
+                  "Name": "thunderstrike_on_casting_lightning_skill",
+                  "HUDDesc": "@ui_eim_thunderstrike_on_casting_lightning_skill",
+                  "Permanent": "1"
+                },
+                "Semantics": [
+                  {
+                    "$": {
+                      "TriggeredSkillSelector": "1"
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

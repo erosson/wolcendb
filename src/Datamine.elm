@@ -7,6 +7,8 @@ module Datamine exposing
     , MagicEffect
     , NonmagicAffix
     , NormalItem(..)
+    , PassiveEffect
+    , PassiveTreeEntry
     , Range
     , Rarity
     , Socket(..)
@@ -56,7 +58,11 @@ type alias Datamine =
     , cosmeticTransferTemplates : Dict String CCosmeticTransferTemplate
     , cosmeticWeaponDescriptors : Dict String CCosmeticWeaponDescriptor
     , gems : List Gem
+    , passives : List Passive
+    , passiveTrees : List PassiveTree
     , en : Dict String String
+
+    -- indexes
     , lootByName : Dict String NormalItem
     , uniqueLootByName : Dict String UniqueItem
     , skillsByUid : Dict String Skill
@@ -66,6 +72,10 @@ type alias Datamine =
     , gemsByName : Dict String Gem
     , nonmagicAffixesById : Dict String NonmagicAffix
     , magicAffixesById : Dict String MagicAffix
+    , passivesByName : Dict String Passive
+    , passiveTreesByName : Dict String PassiveTree
+    , passiveTreeEntries : List ( PassiveTreeEntry, Passive, PassiveTree )
+    , passiveTreeEntriesByName : Dict String ( PassiveTreeEntry, Passive, PassiveTree )
     }
 
 
@@ -79,12 +89,32 @@ type alias RawDatamine =
     , cosmeticTransferTemplates : Dict String CCosmeticTransferTemplate
     , cosmeticWeaponDescriptors : Dict String CCosmeticWeaponDescriptor
     , gems : List Gem
+    , passives : List Passive
+    , passiveTrees : List PassiveTree
     , en : Dict String String
     }
 
 
 index : RawDatamine -> Datamine
 index raw =
+    let
+        passivesByName =
+            raw.passives |> Dict.Extra.fromListBy (.name >> String.toLower)
+
+        passiveTreeEntries : List ( PassiveTreeEntry, Passive, PassiveTree )
+        passiveTreeEntries =
+            raw.passiveTrees
+                |> List.concatMap
+                    (\t ->
+                        t.entries
+                            |> List.filterMap
+                                (\e ->
+                                    Dict.get (String.toLower e.name) passivesByName
+                                        |> Maybe.map (\p -> ( e, p, t ))
+                                )
+                    )
+    in
+    -- raw copies
     { revision = raw.revision
     , loot = raw.loot
     , uniqueLoot = raw.uniqueLoot
@@ -94,7 +124,11 @@ index raw =
     , cosmeticTransferTemplates = raw.cosmeticTransferTemplates
     , cosmeticWeaponDescriptors = raw.cosmeticWeaponDescriptors
     , gems = raw.gems
+    , passives = raw.passives
+    , passiveTrees = raw.passiveTrees
     , en = raw.en
+
+    -- indexes
     , lootByName = raw.loot |> Dict.Extra.fromListBy (nitemName >> String.toLower)
     , uniqueLootByName = raw.uniqueLoot |> Dict.Extra.fromListBy (uitemName >> String.toLower)
     , skillsByUid = raw.skills |> Dict.Extra.fromListBy (.uid >> String.toLower)
@@ -104,6 +138,46 @@ index raw =
     , gemsByName = raw.gems |> Dict.Extra.fromListBy (.name >> String.toLower)
     , nonmagicAffixesById = raw.affixes.nonmagic |> Dict.Extra.fromListBy (.affixId >> String.toLower)
     , magicAffixesById = raw.affixes.magic |> Dict.Extra.fromListBy (.affixId >> String.toLower)
+    , passivesByName = passivesByName
+    , passiveTreesByName = raw.passiveTrees |> Dict.Extra.fromListBy (.name >> String.toLower)
+    , passiveTreeEntries = passiveTreeEntries
+    , passiveTreeEntriesByName =
+        passiveTreeEntries
+            |> Dict.Extra.fromListBy (\( e, p, t ) -> e.name |> String.toLower)
+    }
+
+
+type alias Passive =
+    { source : Source
+    , name : String
+    , uiName : String
+    , hudLoreDesc : Maybe String
+    , gameplayDesc : Maybe String
+    , effects : List PassiveEffect
+    }
+
+
+type alias PassiveEffect =
+    { name : String
+    , hudDesc : Maybe String
+    , semantics : List ( String, Float )
+    }
+
+
+type alias PassiveTree =
+    { source : Source
+    , name : String
+    , uiName : String
+    , category : String
+    , entries : List PassiveTreeEntry
+    }
+
+
+type alias PassiveTreeEntry =
+    { source : Source
+    , name : String
+    , rarity : Int
+    , category : String
     }
 
 
@@ -503,6 +577,8 @@ jsonDecoder =
         |> P.custom cosmeticTransferTemplateDecoder
         |> P.custom cosmeticWeaponDescriptorDecoder
         |> P.custom gemsDecoder
+        |> P.custom rootPassivesDecoder
+        |> P.custom rootPassiveTreesDecoder
         |> P.custom rootLangDecoder
         |> D.map index
 
@@ -512,6 +588,86 @@ revisionDecoder =
     D.map2 Revision
         (D.at [ "revision.json", "build-revision" ] D.string)
         (D.at [ "revision.json", "date" ] D.string)
+
+
+rootPassiveTreesDecoder : D.Decoder (List PassiveTree)
+rootPassiveTreesDecoder =
+    filteredJsons
+        (String.contains "Skills/Trees/PassiveSkills")
+        |> D.map (List.map (\( filename, json ) -> D.decodeValue (passiveTreesDecoder filename) json))
+        |> D.map (Result.Extra.combine >> Result.mapError D.errorToString)
+        |> resultDecoder
+
+
+passiveTreesDecoder : String -> D.Decoder PassiveTree
+passiveTreesDecoder file =
+    D.succeed PassiveTree
+        |> P.custom (sourceDecoder file "Tree")
+        |> P.requiredAt [ "$", "Name" ] D.string
+        |> P.requiredAt [ "$", "UIName" ] D.string
+        |> P.requiredAt [ "$", "Category" ] D.string
+        |> P.custom (passiveTreeEntriesDecoder file)
+        |> single
+        |> D.at [ "MetaData", "Tree" ]
+
+
+passiveTreeEntriesDecoder : String -> D.Decoder (List PassiveTreeEntry)
+passiveTreeEntriesDecoder file =
+    D.succeed PassiveTreeEntry
+        |> P.custom (sourceDecoder file "Skill")
+        |> P.requiredAt [ "$", "Name" ] D.string
+        |> P.requiredAt [ "$", "Rarity" ] intString
+        |> P.requiredAt [ "$", "Category" ] D.string
+        |> D.list
+        |> D.at [ "Skill" ]
+
+
+rootPassivesDecoder : D.Decoder (List Passive)
+rootPassivesDecoder =
+    filteredJsons
+        (String.contains "Skills/Passive/PST")
+        |> D.map (List.map (\( filename, json ) -> D.decodeValue (passivesDecoder filename) json))
+        |> D.map (Result.Extra.combine >> Result.mapError D.errorToString)
+        |> resultDecoder
+        |> D.map List.concat
+
+
+passivesDecoder : String -> D.Decoder (List Passive)
+passivesDecoder file =
+    D.succeed Passive
+        |> P.custom (sourceDecoder file "Spell")
+        |> P.requiredAt [ "$", "Name" ] D.string
+        |> P.requiredAt [ "$", "UIName" ] D.string
+        |> P.requiredAt [ "$", "HUDLoreDesc" ] nonemptyString
+        |> P.requiredAt [ "$", "GameplayDesc" ] nonemptyString
+        |> P.custom passiveEffectsDecoder
+        |> D.list
+        |> D.at [ "MetaData", "Spell" ]
+
+
+passiveEffectsDecoder : D.Decoder (List PassiveEffect)
+passiveEffectsDecoder =
+    D.map3 PassiveEffect
+        (D.at [ "$", "Name" ] D.string)
+        (D.at [ "$", "HUDDesc" ] nonemptyString)
+        (D.at [ "Semantics", "0", "$" ] <| D.keyValuePairs floatString)
+        |> D.list
+        |> D.at [ "EIM" ]
+        |> single
+        |> D.at [ "MagicEffects" ]
+
+
+nonemptyString : D.Decoder (Maybe String)
+nonemptyString =
+    D.string
+        |> D.map
+            (\s ->
+                if s == "" then
+                    Nothing
+
+                else
+                    Just s
+            )
 
 
 gemsDecoder : D.Decoder (List Gem)

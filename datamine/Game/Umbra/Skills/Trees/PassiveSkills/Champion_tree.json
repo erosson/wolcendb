@@ -1,0 +1,235 @@
+{
+  "MetaData": {
+    "Tree": [
+      {
+        "$": {
+          "Name": "Champion",
+          "UIName": "@ui_Section_Champion",
+          "Category": "melee"
+        },
+        "Skill": [
+          {
+            "$": {
+              "Name": "CHAMP_1",
+              "Rarity": "1",
+              "Category": "melee",
+              "MaxLevel": "1",
+              "Angle": "0.50",
+              "Pos": "0.15",
+              "Unlock": "begin,CHAMP_2,CHAMP_4,CHAMP_12,CHAMP_10"
+            }
+          },
+          {
+            "$": {
+              "Name": "CHAMP_2",
+              "Rarity": "1",
+              "Category": "melee",
+              "MaxLevel": "1",
+              "Angle": "0.60",
+              "Pos": "0.15",
+              "Unlock": "CHAMP_3,CHAMP_4"
+            }
+          },
+          {
+            "$": {
+              "Name": "CHAMP_3",
+              "Rarity": "1",
+              "Category": "melee",
+              "MaxLevel": "1",
+              "Angle": "0.72",
+              "Pos": "0.35",
+              "Unlock": "CHAMP_5,CHAMP_8"
+            }
+          },
+          {
+            "$": {
+              "Name": "CHAMP_4",
+              "Rarity": "1",
+              "Category": "melee",
+              "MaxLevel": "1",
+              "Angle": "0.60",
+              "Pos": "0.35",
+              "Unlock": "CHAMP_5,CHAMP_6,CHAMP_7,CHAMP_14"
+            }
+          },
+          {
+            "$": {
+              "Name": "CHAMP_5",
+              "Rarity": "1",
+              "Category": "melee",
+              "MaxLevel": "1",
+              "Angle": "0.72",
+              "Pos": "0.55",
+              "Unlock": "CHAMP_7,CHAMP_8"
+            }
+          },
+          {
+            "$": {
+              "Name": "CHAMP_6",
+              "Rarity": "1",
+              "Category": "melee",
+              "MaxLevel": "1",
+              "Angle": "0.60",
+              "Pos": "0.75",
+              "Unlock": "CHAMP_7,CHAMP_14,CHAMP_19"
+            }
+          },
+          {
+            "$": {
+              "Name": "CHAMP_7",
+              "Rarity": "1",
+              "Category": "melee",
+              "MaxLevel": "1",
+              "Angle": "0.72",
+              "Pos": "0.75",
+              "Unlock": "CHAMP_8"
+            }
+          },
+          {
+            "$": {
+              "Name": "CHAMP_8",
+              "Rarity": "3",
+              "Category": "melee",
+              "MaxLevel": "1",
+              "Angle": "0.85",
+              "Pos": "0.55",
+              "Unlock": "CHAMP_9"
+            }
+          },
+          {
+            "$": {
+              "Name": "CHAMP_9",
+              "Rarity": "1",
+              "Category": "melee",
+              "MaxLevel": "1",
+              "Angle": "0.85",
+              "Pos": "0.35",
+              "Unlock": ""
+            }
+          },
+          {
+            "$": {
+              "Name": "CHAMP_10",
+              "Rarity": "1",
+              "Category": "melee",
+              "MaxLevel": "1",
+              "Angle": "0.40",
+              "Pos": "0.15",
+              "Unlock": "CHAMP_11,CHAMP_12"
+            }
+          },
+          {
+            "$": {
+              "Name": "CHAMP_11",
+              "Rarity": "1",
+              "Category": "melee",
+              "MaxLevel": "1",
+              "Angle": "0.28",
+              "Pos": "0.35",
+              "Unlock": "CHAMP_13,CHAMP_17"
+            }
+          },
+          {
+            "$": {
+              "Name": "CHAMP_12",
+              "Rarity": "1",
+              "Category": "melee",
+              "MaxLevel": "1",
+              "Angle": "0.40",
+              "Pos": "0.35",
+              "Unlock": "CHAMP_13,CHAMP_14,CHAMP_15,CHAMP_16"
+            }
+          },
+          {
+            "$": {
+              "Name": "CHAMP_13",
+              "Rarity": "1",
+              "Category": "melee",
+              "MaxLevel": "1",
+              "Angle": "0.28",
+              "Pos": "0.55",
+              "Unlock": "CHAMP_16,CHAMP_17"
+            }
+          },
+          {
+            "$": {
+              "Name": "CHAMP_14",
+              "Rarity": "1",
+              "Category": "melee",
+              "MaxLevel": "1",
+              "Angle": "0.50",
+              "Pos": "0.55",
+              "Unlock": "CHAMP_15,CHAMP_19"
+            }
+          },
+          {
+            "$": {
+              "Name": "CHAMP_15",
+              "Rarity": "1",
+              "Category": "melee",
+              "MaxLevel": "1",
+              "Angle": "0.40",
+              "Pos": "0.75",
+              "Unlock": "CHAMP_16,CHAMP_19"
+            }
+          },
+          {
+            "$": {
+              "Name": "CHAMP_16",
+              "Rarity": "1",
+              "Category": "melee",
+              "MaxLevel": "1",
+              "Angle": "0.28",
+              "Pos": "0.75",
+              "Unlock": "CHAMP_17"
+            }
+          },
+          {
+            "$": {
+              "Name": "CHAMP_17",
+              "Rarity": "3",
+              "Category": "melee",
+              "MaxLevel": "1",
+              "Angle": "0.15",
+              "Pos": "0.55",
+              "Unlock": "CHAMP_18"
+            }
+          },
+          {
+            "$": {
+              "Name": "CHAMP_18",
+              "Rarity": "1",
+              "Category": "melee",
+              "MaxLevel": "1",
+              "Angle": "0.15",
+              "Pos": "0.35",
+              "Unlock": ""
+            }
+          },
+          {
+            "$": {
+              "Name": "CHAMP_19",
+              "Rarity": "3",
+              "Category": "melee",
+              "MaxLevel": "1",
+              "Angle": "0.50",
+              "Pos": "0.75",
+              "Unlock": "CHAMP_20"
+            }
+          },
+          {
+            "$": {
+              "Name": "CHAMP_20",
+              "Rarity": "1",
+              "Category": "melee",
+              "MaxLevel": "1",
+              "Angle": "0.50",
+              "Pos": "0.95",
+              "Unlock": ""
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

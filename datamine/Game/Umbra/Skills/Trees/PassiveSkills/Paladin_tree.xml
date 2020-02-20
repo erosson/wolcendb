@@ -1,0 +1,24 @@
+<MetaData>
+  <Tree Name="Paladin" UIName="@ui_Section_Paladin" Category="melee">
+    <Skill Name="PALA_1" Rarity="1" Category="melee" MaxLevel="1" Angle="0.50" Pos="0.15" Unlock="begin,PALA_2,PALA_4,PALA_12,PALA_10" />
+    <Skill Name="PALA_2" Rarity="1" Category="melee" MaxLevel="1" Angle="0.60" Pos="0.15" Unlock="PALA_3,PALA_4" />
+    <Skill Name="PALA_3" Rarity="1" Category="melee" MaxLevel="1" Angle="0.72" Pos="0.35" Unlock="PALA_5,PALA_8" />
+    <Skill Name="PALA_4" Rarity="1" Category="melee" MaxLevel="1" Angle="0.60" Pos="0.35" Unlock="PALA_5,PALA_6,PALA_7,PALA_14" />
+    <Skill Name="PALA_5" Rarity="1" Category="melee" MaxLevel="1" Angle="0.72" Pos="0.55" Unlock="PALA_7,PALA_8" />
+    <Skill Name="PALA_6" Rarity="1" Category="melee" MaxLevel="1" Angle="0.60" Pos="0.75" Unlock="PALA_7,PALA_14,PALA_19" />
+    <Skill Name="PALA_7" Rarity="1" Category="melee" MaxLevel="1" Angle="0.72" Pos="0.75" Unlock="PALA_8" />
+    <Skill Name="PALA_8" Rarity="3" Category="melee" MaxLevel="1" Angle="0.85" Pos="0.55" Unlock="PALA_9" />
+    <Skill Name="PALA_9" Rarity="1" Category="melee" MaxLevel="1" Angle="0.85" Pos="0.35" Unlock="" />
+    <Skill Name="PALA_10" Rarity="1" Category="melee" MaxLevel="1" Angle="0.40" Pos="0.15" Unlock="PALA_11,PALA_12" />
+    <Skill Name="PALA_11" Rarity="1" Category="melee" MaxLevel="1" Angle="0.28" Pos="0.35" Unlock="PALA_13,PALA_17" />
+    <Skill Name="PALA_12" Rarity="1" Category="melee" MaxLevel="1" Angle="0.40" Pos="0.35" Unlock="PALA_13,PALA_14,PALA_15,PALA_16" />
+    <Skill Name="PALA_13" Rarity="1" Category="melee" MaxLevel="1" Angle="0.28" Pos="0.55" Unlock="PALA_16,PALA_17" />
+    <Skill Name="PALA_14" Rarity="1" Category="melee" MaxLevel="1" Angle="0.50" Pos="0.55" Unlock="PALA_15,PALA_19" />
+    <Skill Name="PALA_15" Rarity="1" Category="melee" MaxLevel="1" Angle="0.40" Pos="0.75" Unlock="PALA_16,PALA_19" />
+    <Skill Name="PALA_16" Rarity="1" Category="melee" MaxLevel="1" Angle="0.28" Pos="0.75" Unlock="PALA_17" />
+    <Skill Name="PALA_17" Rarity="3" Category="melee" MaxLevel="1" Angle="0.15" Pos="0.55" Unlock="PALA_18" />
+    <Skill Name="PALA_18" Rarity="1" Category="melee" MaxLevel="1" Angle="0.15" Pos="0.35" Unlock="" />
+    <Skill Name="PALA_19" Rarity="3" Category="melee" MaxLevel="1" Angle="0.50" Pos="0.75" Unlock="PALA_20" />
+    <Skill Name="PALA_20" Rarity="1" Category="melee" MaxLevel="1" Angle="0.50" Pos="0.95" Unlock="" />
+  </Tree>
+</MetaData>

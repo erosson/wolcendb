@@ -1,0 +1,181 @@
+<MetaData>
+  <Spell Name="SPBD_1" UIName="@ui_SPBD_1_name" HUDLoreDesc="" GameplayDesc="">
+    <MagicEffects>
+      <EIM Name="statusailment_inflict_score_percent" HUDDesc="@ui_eim_statusailment_inflict_score_percent" Permanent="1">
+        <Semantics CharacteristicScorePercentInt="12" />
+      </EIM>
+      <EIM Name="occult_resistance" HUDDesc="@ui_eim_occult_resistance" Permanent="1">
+        <Semantics CharacteristicScoreInt="10" />
+      </EIM>
+      <EIM Name="forceshield_regeneration_percent" HUDDesc="@ui_eim_forceshield_regeneration_percent" Permanent="1">
+        <Semantics DefenseRegenerationPercentFloat="12" />
+      </EIM>
+    </MagicEffects>
+  </Spell>
+  <Spell Name="SPBD_2" UIName="@ui_SPBD_2_name" HUDLoreDesc="" GameplayDesc="">
+    <MagicEffects>
+      <EIM Name="occult_damage_percent" HUDDesc="@ui_eim_occult_damage_percent" Permanent="1">
+        <Semantics DamagePercentInt="15" />
+      </EIM>
+    </MagicEffects>
+  </Spell>
+  <Spell Name="SPBD_3" UIName="@ui_SPBD_3_name" HUDLoreDesc="" GameplayDesc="">
+    <MagicEffects>
+      <EIM Name="occult_damage_percent" HUDDesc="@ui_eim_occult_damage_percent" Permanent="1">
+        <Semantics DamagePercentInt="15" />
+      </EIM>
+    </MagicEffects>
+  </Spell>
+  <Spell Name="SPBD_4" UIName="@ui_SPBD_4_name" HUDLoreDesc="" GameplayDesc="">
+    <MagicEffects>
+      <EIM Name="occult_resistance" HUDDesc="@ui_eim_occult_resistance" Permanent="1">
+        <Semantics CharacteristicScoreInt="10" />
+      </EIM>
+      <EIM Name="health_regen_true_percent" HUDDesc="@ui_eim_health_regen_true_percent" Permanent="1">
+        <Semantics ResourcePercentInt="-17" />
+      </EIM>
+    </MagicEffects>
+  </Spell>
+  <Spell Name="SPBD_5" UIName="@ui_SPBD_5_name" HUDLoreDesc="" GameplayDesc="">
+    <MagicEffects>
+      <EIM Name="occult_damage_percent" HUDDesc="@ui_eim_occult_damage_percent" Permanent="1">
+        <Semantics DamagePercentInt="15" />
+      </EIM>
+    </MagicEffects>
+  </Spell>
+  <Spell Name="SPBD_6" UIName="@ui_SPBD_6_name" HUDLoreDesc="" GameplayDesc="">
+    <MagicEffects>
+      <EIM Name="dotdamage_percent_global" HUDDesc="@ui_eim_dotdamage_percent_global" Permanent="1">
+        <Semantics DamagePercentFloat="12" />
+      </EIM>
+    </MagicEffects>
+  </Spell>
+  <Spell Name="SPBD_7" UIName="@ui_SPBD_7_name" HUDLoreDesc="" GameplayDesc="">
+    <MagicEffects>
+      <EIM Name="forceshield_lock_timer_percent" HUDDesc="@ui_eim_forceshield_lock_timer_percent" Permanent="1">
+        <Semantics DurationPercentFloat="14" />
+      </EIM>
+      <EIM Name="forceshield_percent" HUDDesc="@ui_eim_forceshield_percent" Permanent="1">
+        <Semantics ArmorPercentFloat="8" />
+      </EIM>
+    </MagicEffects>
+  </Spell>
+  <Spell Name="SPBD_8" UIName="@ui_SPBD_8_name" HUDLoreDesc="@ui_SPBD_8_loredesc" GameplayDesc="@ui_SPBD_8_gameplaydesc">
+    <MagicEffects>
+      <EIM Name="cursed_enemies_take_additional_occult_damage" HUDDesc="@ui_eim_cursed_enemies_take_additional_occult_damage" Permanent="1">
+        <Semantics DamageIncreasePercentFloat="5" />
+      </EIM>
+    </MagicEffects>
+  </Spell>
+  <Spell Name="SPBD_9" UIName="@ui_SPBD_9_name" HUDLoreDesc="" GameplayDesc="">
+    <MagicEffects>
+      <EIM Name="cursed_enemies_take_additional_occult_damage" HUDDesc="@ui_eim_cursed_enemies_take_additional_occult_damage" Permanent="1">
+        <Semantics DamageIncreasePercentFloat="2" />
+      </EIM>
+    </MagicEffects>
+  </Spell>
+  <Spell Name="SPBD_10" UIName="@ui_SPBD_10_name" HUDLoreDesc="" GameplayDesc="">
+    <MagicEffects>
+      <EIM Name="statusailment_inflict_score_flat_occult" HUDDesc="@ui_eim_statusailment_inflict_score_flat_occult" Permanent="1">
+        <Semantics CharacteristicScoreInt="25" />
+      </EIM>
+    </MagicEffects>
+  </Spell>
+  <Spell Name="SPBD_11" UIName="@ui_SPBD_11_name" HUDLoreDesc="" GameplayDesc="">
+    <MagicEffects>
+      <EIM Name="statusailment_inflict_score_flat_occult" HUDDesc="@ui_eim_statusailment_inflict_score_flat_occult" Permanent="1">
+        <Semantics CharacteristicScoreInt="25" />
+      </EIM>
+    </MagicEffects>
+  </Spell>
+  <Spell Name="SPBD_12" UIName="@ui_SPBD_12_name" HUDLoreDesc="" GameplayDesc="">
+    <MagicEffects>
+      <EIM Name="occult_resistance" HUDDesc="@ui_eim_occult_resistance" Permanent="1">
+        <Semantics CharacteristicScoreInt="10" />
+      </EIM>
+      <EIM Name="health_regen_true_percent" HUDDesc="@ui_eim_health_regen_true_percent" Permanent="1">
+        <Semantics ResourcePercentInt="-17" />
+      </EIM>
+    </MagicEffects>
+  </Spell>
+  <Spell Name="SPBD_13" UIName="@ui_SPBD_13_name" HUDLoreDesc="" GameplayDesc="">
+    <MagicEffects>
+      <EIM Name="statusailment_inflict_score_flat_occult" HUDDesc="@ui_eim_statusailment_inflict_score_flat_occult" Permanent="1">
+        <Semantics CharacteristicScoreInt="25" />
+      </EIM>
+    </MagicEffects>
+  </Spell>
+  <Spell Name="SPBD_14" UIName="@ui_SPBD_14_name" HUDLoreDesc="" GameplayDesc="">
+    <MagicEffects>
+      <EIM Name="forceshield_lock_timer_percent" HUDDesc="@ui_eim_forceshield_lock_timer_percent" Permanent="1">
+        <Semantics DurationPercentFloat="14" />
+      </EIM>
+      <EIM Name="statusailment_inflict_score_percent" HUDDesc="@ui_eim_statusailment_inflict_score_percent" Permanent="1">
+        <Semantics CharacteristicScorePercentInt="9" />
+      </EIM>
+    </MagicEffects>
+  </Spell>
+  <Spell Name="SPBD_15" UIName="@ui_SPBD_15_name" HUDLoreDesc="" GameplayDesc="">
+    <MagicEffects>
+      <EIM Name="dotdamage_percent_global" HUDDesc="@ui_eim_dotdamage_percent_global" Permanent="1">
+        <Semantics DamagePercentFloat="12" />
+      </EIM>
+    </MagicEffects>
+  </Spell>
+  <Spell Name="SPBD_16" UIName="@ui_SPBD_16_name" HUDLoreDesc="" GameplayDesc="">
+    <MagicEffects>
+      <EIM Name="forceshield_lock_timer_percent" HUDDesc="@ui_eim_forceshield_lock_timer_percent" Permanent="1">
+        <Semantics DurationPercentFloat="14" />
+      </EIM>
+      <EIM Name="forceshield_percent" HUDDesc="@ui_eim_forceshield_percent" Permanent="1">
+        <Semantics ArmorPercentFloat="8" />
+      </EIM>
+    </MagicEffects>
+  </Spell>
+  <Spell Name="SPBD_17" UIName="@ui_SPBD_17_name" HUDLoreDesc="@ui_SPBD_17_loredesc" GameplayDesc="@ui_SPBD_17_gameplaydesc">
+    <MagicEffects>
+      <EIM Name="self_ailments" HUDDesc="@ui_eim_self_ailments" Permanent="1">
+        <Semantics PossibilityInt="1" />
+      </EIM>
+      <EIM Name="purge_ailment_stacks" HUDDesc="@ui_eim_purge_ailment_stacks" Permanent="1">
+        <Semantics StackCountInt="10" />
+      </EIM>
+      <EIM Name="movement_speed_on_purged_stasis_stacks" HUDDesc="@ui_eim_movement_speed_on_purged_stasis_stacks" Permanent="1">
+        <Semantics SpeedPercentInt="25" />
+      </EIM>
+      <EIM Name="all_resistances_score_on_purged_curse_stacks" HUDDesc="@ui_eim_all_resistances_score_on_purged_curse_stacks" Permanent="1">
+        <Semantics CharacteristicScorePercentInt="30" />
+      </EIM>
+      <EIM Name="damage_on_purged_weakness_stacks" HUDDesc="@ui_eim_damage_on_purged_weakness_stacks" Permanent="1">
+        <Semantics DamagePercentInt="30" />
+      </EIM>
+      <EIM Name="heal_on_purged_dot_stacks" HUDDesc="@ui_eim_heal_on_purged_dot_stacks" Permanent="1">
+        <Semantics TriggerGainHealthPercentFloat="30" />
+      </EIM>
+    </MagicEffects>
+  </Spell>
+  <Spell Name="SPBD_18" UIName="@ui_SPBD_18_name" HUDLoreDesc="" GameplayDesc="">
+    <MagicEffects>
+      <EIM Name="self_ailment_stacks_added_chance" HUDDesc="@ui_eim_self_ailment_stacks_added_chance" Permanent="1">
+        <Semantics StackCountInt="1" ChanceFlatFloat="30" />
+      </EIM>
+    </MagicEffects>
+  </Spell>
+  <Spell Name="SPBD_19" UIName="@ui_SPBD_19_name" HUDLoreDesc="@ui_SPBD_19_loredesc" GameplayDesc="@ui_SPBD_19_gameplaydesc">
+    <MagicEffects>
+      <EIM Name="double_force_shield_capacity" HUDDesc="@ui_eim_double_force_shield_capacity" Permanent="1">
+        <Semantics PossibilityInt="1" />
+      </EIM>
+      <EIM Name="life_ceil_from_force_shield" HUDDesc="@ui_eim_life_ceil_from_force_shield" Permanent="1">
+        <Semantics ArmorPercentFloat="5" />
+      </EIM>
+    </MagicEffects>
+  </Spell>
+  <Spell Name="SPBD_20" UIName="@ui_SPBD_20_name" HUDLoreDesc="" GameplayDesc="">
+    <MagicEffects>
+      <EIM Name="life_ceil_from_force_shield" HUDDesc="@ui_eim_life_ceil_from_force_shield" Permanent="1">
+        <Semantics ArmorPercentFloat="15" />
+      </EIM>
+    </MagicEffects>
+  </Spell>
+</MetaData>

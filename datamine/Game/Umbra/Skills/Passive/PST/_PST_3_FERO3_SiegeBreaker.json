@@ -1,0 +1,849 @@
+{
+  "MetaData": {
+    "Spell": [
+      {
+        "$": {
+          "Name": "SIEGE_1",
+          "UIName": "@ui_SIEGE_1_name",
+          "HUDLoreDesc": "",
+          "GameplayDesc": ""
+        },
+        "MagicEffects": [
+          {
+            "EIM": [
+              {
+                "$": {
+                  "Name": "all_resistance_score_percent",
+                  "HUDDesc": "@ui_eim_all_resistance_score_percent",
+                  "Permanent": "1"
+                },
+                "Semantics": [
+                  {
+                    "$": {
+                      "CharacteristicScorePercentInt": "12"
+                    }
+                  }
+                ]
+              },
+              {
+                "$": {
+                  "Name": "health_percent",
+                  "HUDDesc": "@ui_eim_health_percent",
+                  "Permanent": "1"
+                },
+                "Semantics": [
+                  {
+                    "$": {
+                      "HealthPercentInt": "8"
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "$": {
+          "Name": "SIEGE_2",
+          "UIName": "@ui_SIEGE_2_name",
+          "HUDLoreDesc": "",
+          "GameplayDesc": ""
+        },
+        "MagicEffects": [
+          {
+            "EIM": [
+              {
+                "$": {
+                  "Name": "physical_damage_percent",
+                  "HUDDesc": "@ui_eim_physical_damage_percent",
+                  "Permanent": "1"
+                },
+                "Semantics": [
+                  {
+                    "$": {
+                      "DamagePercentInt": "25"
+                    }
+                  }
+                ]
+              },
+              {
+                "$": {
+                  "Name": "elemental_damage_percent",
+                  "HUDDesc": "@ui_eim_elemental_damage_percent",
+                  "Permanent": "1"
+                },
+                "Semantics": [
+                  {
+                    "$": {
+                      "DamagePercentInt": "-10"
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "$": {
+          "Name": "SIEGE_3",
+          "UIName": "@ui_SIEGE_3_name",
+          "HUDLoreDesc": "",
+          "GameplayDesc": ""
+        },
+        "MagicEffects": [
+          {
+            "EIM": [
+              {
+                "$": {
+                  "Name": "physical_damage_percent",
+                  "HUDDesc": "@ui_eim_physical_damage_percent",
+                  "Permanent": "1"
+                },
+                "Semantics": [
+                  {
+                    "$": {
+                      "DamagePercentInt": "25"
+                    }
+                  }
+                ]
+              },
+              {
+                "$": {
+                  "Name": "occult_damage_percent",
+                  "HUDDesc": "@ui_eim_occult_damage_percent",
+                  "Permanent": "1"
+                },
+                "Semantics": [
+                  {
+                    "$": {
+                      "DamagePercentInt": "-10"
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "$": {
+          "Name": "SIEGE_4",
+          "UIName": "@ui_SIEGE_4_name",
+          "HUDLoreDesc": "",
+          "GameplayDesc": ""
+        },
+        "MagicEffects": [
+          {
+            "EIM": [
+              {
+                "$": {
+                  "Name": "blockefficiency_percent",
+                  "HUDDesc": "@ui_eim_blockefficiency_percent",
+                  "Permanent": "1"
+                },
+                "Semantics": [
+                  {
+                    "$": {
+                      "ResourcePercentFloat": "20"
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "$": {
+          "Name": "SIEGE_5",
+          "UIName": "@ui_SIEGE_5_name",
+          "HUDLoreDesc": "",
+          "GameplayDesc": ""
+        },
+        "MagicEffects": [
+          {
+            "EIM": [
+              {
+                "$": {
+                  "Name": "physical_damage_percent",
+                  "HUDDesc": "@ui_eim_physical_damage_percent",
+                  "Permanent": "1"
+                },
+                "Semantics": [
+                  {
+                    "$": {
+                      "DamagePercentInt": "15"
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "$": {
+          "Name": "SIEGE_6",
+          "UIName": "@ui_SIEGE_6_name",
+          "HUDLoreDesc": "",
+          "GameplayDesc": ""
+        },
+        "MagicEffects": [
+          {
+            "EIM": [
+              {
+                "$": {
+                  "Name": "criticaldamage_pts",
+                  "HUDDesc": "@ui_eim_criticaldamage_pts",
+                  "Permanent": "1"
+                },
+                "Semantics": [
+                  {
+                    "$": {
+                      "DamagePercentInt": "14"
+                    }
+                  }
+                ]
+              },
+              {
+                "$": {
+                  "Name": "health_percent",
+                  "HUDDesc": "@ui_eim_health_percent",
+                  "Permanent": "1"
+                },
+                "Semantics": [
+                  {
+                    "$": {
+                      "HealthPercentInt": "8"
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "$": {
+          "Name": "SIEGE_7",
+          "UIName": "@ui_SIEGE_7_name",
+          "HUDLoreDesc": "",
+          "GameplayDesc": ""
+        },
+        "MagicEffects": [
+          {
+            "EIM": [
+              {
+                "$": {
+                  "Name": "all_resistance_score_percent",
+                  "HUDDesc": "@ui_eim_all_resistance_score_percent",
+                  "Permanent": "1"
+                },
+                "Semantics": [
+                  {
+                    "$": {
+                      "CharacteristicScorePercentInt": "20"
+                    }
+                  }
+                ]
+              },
+              {
+                "$": {
+                  "Name": "dodgechance_score_percent",
+                  "HUDDesc": "@ui_eim_dodgechance_score_percent",
+                  "Permanent": "1"
+                },
+                "Semantics": [
+                  {
+                    "$": {
+                      "CharacteristicScorePercentInt": "-15"
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "$": {
+          "Name": "SIEGE_8",
+          "UIName": "@ui_SIEGE_8_name",
+          "HUDLoreDesc": "@ui_SIEGE_8_loredesc",
+          "GameplayDesc": "@ui_SIEGE_8_gameplaydesc"
+        },
+        "MagicEffects": [
+          {
+            "EIM": [
+              {
+                "$": {
+                  "Name": "stat_bonus_from_chest_armor",
+                  "HUDDesc": "@ui_eim_stat_bonus_from_chest_armor",
+                  "Permanent": "1"
+                },
+                "Semantics": [
+                  {
+                    "$": {
+                      "PossibilityInt": "1"
+                    }
+                  }
+                ]
+              },
+              {
+                "$": {
+                  "Name": "stat_bonus_from_chest_armor_warrior",
+                  "HUDDesc": "@ui_eim_stat_bonus_from_chest_armor_warrior",
+                  "Permanent": "1"
+                },
+                "Semantics": [
+                  {
+                    "$": {
+                      "MultiplierFloat": "0.5"
+                    }
+                  }
+                ]
+              },
+              {
+                "$": {
+                  "Name": "stat_bonus_from_chest_armor_tank",
+                  "HUDDesc": "@ui_eim_stat_bonus_from_chest_armor_tank",
+                  "Permanent": "1"
+                },
+                "Semantics": [
+                  {
+                    "$": {
+                      "MultiplierFloat": "1"
+                    }
+                  }
+                ]
+              },
+              {
+                "$": {
+                  "Name": "stat_bonus_from_chest_armor_rogue",
+                  "HUDDesc": "@ui_eim_stat_bonus_from_chest_armor_rogue",
+                  "Permanent": "1"
+                },
+                "Semantics": [
+                  {
+                    "$": {
+                      "MultiplierFloat": "2"
+                    }
+                  }
+                ]
+              },
+              {
+                "$": {
+                  "Name": "stat_bonus_from_chest_armor_mage",
+                  "HUDDesc": "@ui_eim_stat_bonus_from_chest_armor_mage",
+                  "Permanent": "1"
+                },
+                "Semantics": [
+                  {
+                    "$": {
+                      "MultiplierFloat": "0.01"
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "$": {
+          "Name": "SIEGE_9",
+          "UIName": "@ui_SIEGE_9_name",
+          "HUDLoreDesc": "",
+          "GameplayDesc": ""
+        },
+        "MagicEffects": [
+          {
+            "EIM": [
+              {
+                "$": {
+                  "Name": "stat_bonus_from_helmet",
+                  "HUDDesc": "@ui_eim_stat_bonus_from_helmet",
+                  "Permanent": "1"
+                },
+                "Semantics": [
+                  {
+                    "$": {
+                      "PossibilityInt": "1"
+                    }
+                  }
+                ]
+              },
+              {
+                "$": {
+                  "Name": "stat_bonus_from_helmet_warrior",
+                  "HUDDesc": "@ui_eim_stat_bonus_from_helmet_warrior",
+                  "Permanent": "1"
+                },
+                "Semantics": [
+                  {
+                    "$": {
+                      "MultiplierFloat": "0.5"
+                    }
+                  }
+                ]
+              },
+              {
+                "$": {
+                  "Name": "stat_bonus_from_helmet_tank",
+                  "HUDDesc": "@ui_eim_stat_bonus_from_helmet_tank",
+                  "Permanent": "1"
+                },
+                "Semantics": [
+                  {
+                    "$": {
+                      "MultiplierFloat": "1"
+                    }
+                  }
+                ]
+              },
+              {
+                "$": {
+                  "Name": "stat_bonus_from_helmet_rogue",
+                  "HUDDesc": "@ui_eim_stat_bonus_from_helmet_rogue",
+                  "Permanent": "1"
+                },
+                "Semantics": [
+                  {
+                    "$": {
+                      "MultiplierFloat": "2"
+                    }
+                  }
+                ]
+              },
+              {
+                "$": {
+                  "Name": "stat_bonus_from_helmet_mage",
+                  "HUDDesc": "@ui_eim_stat_bonus_from_helmet_mage",
+                  "Permanent": "1"
+                },
+                "Semantics": [
+                  {
+                    "$": {
+                      "MultiplierFloat": "0.01"
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "$": {
+          "Name": "SIEGE_10",
+          "UIName": "@ui_SIEGE_10_name",
+          "HUDLoreDesc": "",
+          "GameplayDesc": ""
+        },
+        "MagicEffects": [
+          {
+            "EIM": [
+              {
+                "$": {
+                  "Name": "damage_from_shield_block_chance",
+                  "HUDDesc": "@ui_eim_damage_from_shield_block_chance",
+                  "Permanent": "1"
+                },
+                "Semantics": [
+                  {
+                    "$": {
+                      "MultiplierFloat": "0.5"
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "$": {
+          "Name": "SIEGE_11",
+          "UIName": "@ui_SIEGE_11_name",
+          "HUDLoreDesc": "",
+          "GameplayDesc": ""
+        },
+        "MagicEffects": [
+          {
+            "EIM": [
+              {
+                "$": {
+                  "Name": "damage_from_shield_block_chance",
+                  "HUDDesc": "@ui_eim_damage_from_shield_block_chance",
+                  "Permanent": "1"
+                },
+                "Semantics": [
+                  {
+                    "$": {
+                      "MultiplierFloat": "0.5"
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "$": {
+          "Name": "SIEGE_12",
+          "UIName": "@ui_SIEGE_12_name",
+          "HUDLoreDesc": "",
+          "GameplayDesc": ""
+        },
+        "MagicEffects": [
+          {
+            "EIM": [
+              {
+                "$": {
+                  "Name": "blockefficiency_percent",
+                  "HUDDesc": "@ui_eim_blockefficiency_percent",
+                  "Permanent": "1"
+                },
+                "Semantics": [
+                  {
+                    "$": {
+                      "ResourcePercentFloat": "14"
+                    }
+                  }
+                ]
+              },
+              {
+                "$": {
+                  "Name": "dodgechance_score_percent",
+                  "HUDDesc": "@ui_eim_dodgechance_score_percent",
+                  "Permanent": "1"
+                },
+                "Semantics": [
+                  {
+                    "$": {
+                      "CharacteristicScorePercentInt": "-15"
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "$": {
+          "Name": "SIEGE_13",
+          "UIName": "@ui_SIEGE_13_name",
+          "HUDLoreDesc": "",
+          "GameplayDesc": ""
+        },
+        "MagicEffects": [
+          {
+            "EIM": [
+              {
+                "$": {
+                  "Name": "damage_from_shield_block_chance",
+                  "HUDDesc": "@ui_eim_damage_from_shield_block_chance",
+                  "Permanent": "1"
+                },
+                "Semantics": [
+                  {
+                    "$": {
+                      "MultiplierFloat": "50"
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "$": {
+          "Name": "SIEGE_14",
+          "UIName": "@ui_SIEGE_14_name",
+          "HUDLoreDesc": "",
+          "GameplayDesc": ""
+        },
+        "MagicEffects": [
+          {
+            "EIM": [
+              {
+                "$": {
+                  "Name": "all_resistance_score_percent",
+                  "HUDDesc": "@ui_eim_all_resistance_score_percent",
+                  "Permanent": "1"
+                },
+                "Semantics": [
+                  {
+                    "$": {
+                      "CharacteristicScorePercentInt": "18"
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "$": {
+          "Name": "SIEGE_15",
+          "UIName": "@ui_SIEGE_15_name",
+          "HUDLoreDesc": "",
+          "GameplayDesc": ""
+        },
+        "MagicEffects": [
+          {
+            "EIM": [
+              {
+                "$": {
+                  "Name": "criticaldamage_pts",
+                  "HUDDesc": "@ui_eim_criticaldamage_pts",
+                  "Permanent": "1"
+                },
+                "Semantics": [
+                  {
+                    "$": {
+                      "DamagePercentInt": "14"
+                    }
+                  }
+                ]
+              },
+              {
+                "$": {
+                  "Name": "health_percent",
+                  "HUDDesc": "@ui_eim_health_percent",
+                  "Permanent": "1"
+                },
+                "Semantics": [
+                  {
+                    "$": {
+                      "HealthPercentInt": "8"
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "$": {
+          "Name": "SIEGE_16",
+          "UIName": "@ui_SIEGE_16_name",
+          "HUDLoreDesc": "",
+          "GameplayDesc": ""
+        },
+        "MagicEffects": [
+          {
+            "EIM": [
+              {
+                "$": {
+                  "Name": "all_resistance_score_percent",
+                  "HUDDesc": "@ui_eim_all_resistance_score_percent",
+                  "Permanent": "1"
+                },
+                "Semantics": [
+                  {
+                    "$": {
+                      "CharacteristicScorePercentInt": "20"
+                    }
+                  }
+                ]
+              },
+              {
+                "$": {
+                  "Name": "dodgechance_score_percent",
+                  "HUDDesc": "@ui_eim_dodgechance_score_percent",
+                  "Permanent": "1"
+                },
+                "Semantics": [
+                  {
+                    "$": {
+                      "CharacteristicScorePercentInt": "-15"
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "$": {
+          "Name": "SIEGE_17",
+          "UIName": "@ui_SIEGE_17_name",
+          "HUDLoreDesc": "@ui_SIEGE_17_loredesc",
+          "GameplayDesc": "@ui_SIEGE_17_gameplaydesc"
+        },
+        "MagicEffects": [
+          {
+            "EIM": [
+              {
+                "$": {
+                  "Name": "stack_block_uses_mechanic",
+                  "HUDDesc": "@ui_eim_stack_block_uses_mechanic",
+                  "Permanent": "1"
+                },
+                "Semantics": [
+                  {
+                    "$": {
+                      "PSTStackGainOnTickInt": "1",
+                      "PSTStackTickrateFloat": "1.5",
+                      "PSTStackMaxCountInt": "10"
+                    }
+                  }
+                ]
+              },
+              {
+                "$": {
+                  "Name": "block_chance_per_block_stack",
+                  "HUDDesc": "@ui_eim_block_chance_per_block_stack",
+                  "Permanent": "1"
+                },
+                "Semantics": [
+                  {
+                    "$": {
+                      "ChancePercentInt": "4"
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "$": {
+          "Name": "SIEGE_18",
+          "UIName": "@ui_SIEGE_18_name",
+          "HUDLoreDesc": "",
+          "GameplayDesc": ""
+        },
+        "MagicEffects": [
+          {
+            "EIM": [
+              {
+                "$": {
+                  "Name": "block_chance_per_block_stack",
+                  "HUDDesc": "@ui_eim_block_chance_per_block_stack",
+                  "Permanent": "1"
+                },
+                "Semantics": [
+                  {
+                    "$": {
+                      "ChancePercentInt": "1"
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "$": {
+          "Name": "SIEGE_19",
+          "UIName": "@ui_SIEGE_19_name",
+          "HUDLoreDesc": "@ui_SIEGE_19_loredesc",
+          "GameplayDesc": "@ui_SIEGE_19_gameplaydesc"
+        },
+        "MagicEffects": [
+          {
+            "EIM": [
+              {
+                "$": {
+                  "Name": "uses_fortress_mechanic",
+                  "HUDDesc": "@ui_eim_uses_fortress_mechanic",
+                  "Permanent": "1"
+                },
+                "Semantics": [
+                  {
+                    "$": {
+                      "PSTStackTickrateFloat": "1",
+                      "PSTStackMaxCountInt": "10"
+                    }
+                  }
+                ]
+              },
+              {
+                "$": {
+                  "Name": "fortress_movement_speed",
+                  "HUDDesc": "@ui_eim_fortress_movement_speed",
+                  "Permanent": "1"
+                },
+                "Semantics": [
+                  {
+                    "$": {
+                      "SpeedPercentInt": "-5"
+                    }
+                  }
+                ]
+              },
+              {
+                "$": {
+                  "Name": "fortress_damage_percent",
+                  "HUDDesc": "@ui_eim_fortress_damage_percent",
+                  "Permanent": "1"
+                },
+                "Semantics": [
+                  {
+                    "$": {
+                      "DamagePercentFloat": "6"
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "$": {
+          "Name": "SIEGE_20",
+          "UIName": "@ui_SIEGE_20_name",
+          "HUDLoreDesc": "",
+          "GameplayDesc": ""
+        },
+        "MagicEffects": [
+          {
+            "EIM": [
+              {
+                "$": {
+                  "Name": "fortress_health_regeneration",
+                  "HUDDesc": "@ui_eim_fortress_health_regeneration",
+                  "Permanent": "1"
+                },
+                "Semantics": [
+                  {
+                    "$": {
+                      "ResourcePercentFloat": "10"
+                    }
+                  }
+                ]
+              },
+              {
+                "$": {
+                  "Name": "fortress_all_resistances",
+                  "HUDDesc": "@ui_eim_fortress_all_resistances",
+                  "Permanent": "1"
+                },
+                "Semantics": [
+                  {
+                    "$": {
+                      "CharacteristicScorePercentInt": "10"
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

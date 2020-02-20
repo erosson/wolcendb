@@ -1,0 +1,279 @@
+{
+  "MetaData": {
+    "Tree": [
+      {
+        "$": {
+          "Name": "Willpower",
+          "UIName": "@ui_Section_Willpower",
+          "Category": "magic"
+        },
+        "Skill": [
+          {
+            "$": {
+              "Name": "WILL_1",
+              "Rarity": "1",
+              "Category": "magic",
+              "MaxLevel": "1",
+              "Angle": "0.75",
+              "Pos": "0.25",
+              "Unlock": "begin,WILL_2,WILL_10"
+            }
+          },
+          {
+            "$": {
+              "Name": "WILL_2",
+              "Rarity": "1",
+              "Category": "magic",
+              "MaxLevel": "1",
+              "Angle": "0.68",
+              "Pos": "0.35",
+              "Unlock": "WILL_3,WILL_5"
+            }
+          },
+          {
+            "$": {
+              "Name": "WILL_3",
+              "Rarity": "1",
+              "Category": "magic",
+              "MaxLevel": "1",
+              "Angle": "0.92",
+              "Pos": "0.51",
+              "Unlock": "WILL_4,rightDown"
+            }
+          },
+          {
+            "$": {
+              "Name": "WILL_4",
+              "Rarity": "1",
+              "Category": "magic",
+              "MaxLevel": "1",
+              "Angle": "0.75",
+              "Pos": "0.90",
+              "Unlock": "WILL_5,endRight,rightUp"
+            }
+          },
+          {
+            "$": {
+              "Name": "WILL_5",
+              "Rarity": "1",
+              "Category": "magic",
+              "MaxLevel": "1",
+              "Angle": "0.61",
+              "Pos": "0.60",
+              "Unlock": "WILL_6,WILL_7,WILL_8"
+            }
+          },
+          {
+            "$": {
+              "Name": "WILL_6",
+              "Rarity": "1",
+              "Category": "magic",
+              "MaxLevel": "1",
+              "Angle": "0.70",
+              "Pos": "0.59",
+              "Unlock": ""
+            }
+          },
+          {
+            "$": {
+              "Name": "WILL_7",
+              "Rarity": "1",
+              "Category": "magic",
+              "MaxLevel": "1",
+              "Angle": "0.75",
+              "Pos": "0.48",
+              "Unlock": ""
+            }
+          },
+          {
+            "$": {
+              "Name": "WILL_8",
+              "Rarity": "1",
+              "Category": "magic",
+              "MaxLevel": "1",
+              "Angle": "0.75",
+              "Pos": "0.72",
+              "Unlock": ""
+            }
+          },
+          {
+            "$": {
+              "Name": "WILL_9",
+              "Rarity": "3",
+              "Category": "magic",
+              "MaxLevel": "1",
+              "Angle": "0.78",
+              "Pos": "0.60",
+              "Unlock": "WILL_6,WILL_7,WILL_8"
+            }
+          },
+          {
+            "$": {
+              "Name": "WILL_16",
+              "Rarity": "1",
+              "Category": "magic",
+              "MaxLevel": "1",
+              "Angle": "0.25",
+              "Pos": "0.25",
+              "Unlock": "begin,WILL_17,WILL_10"
+            }
+          },
+          {
+            "$": {
+              "Name": "WILL_17",
+              "Rarity": "1",
+              "Category": "magic",
+              "MaxLevel": "1",
+              "Angle": "0.32",
+              "Pos": "0.35",
+              "Unlock": "WILL_18,WILL_23"
+            }
+          },
+          {
+            "$": {
+              "Name": "WILL_23",
+              "Rarity": "1",
+              "Category": "magic",
+              "MaxLevel": "1",
+              "Angle": "0.08",
+              "Pos": "0.51",
+              "Unlock": "WILL_24,leftDown"
+            }
+          },
+          {
+            "$": {
+              "Name": "WILL_24",
+              "Rarity": "1",
+              "Category": "magic",
+              "MaxLevel": "1",
+              "Angle": "0.25",
+              "Pos": "0.90",
+              "Unlock": "WILL_18,endLeft,leftUp"
+            }
+          },
+          {
+            "$": {
+              "Name": "WILL_18",
+              "Rarity": "1",
+              "Category": "magic",
+              "MaxLevel": "1",
+              "Angle": "0.39",
+              "Pos": "0.60",
+              "Unlock": "WILL_19"
+            }
+          },
+          {
+            "$": {
+              "Name": "WILL_19",
+              "Rarity": "1",
+              "Category": "magic",
+              "MaxLevel": "1",
+              "Angle": "0.30",
+              "Pos": "0.58",
+              "Unlock": "WILL_22,WILL_20"
+            }
+          },
+          {
+            "$": {
+              "Name": "WILL_20",
+              "Rarity": "1",
+              "Category": "magic",
+              "MaxLevel": "1",
+              "Angle": "0.25",
+              "Pos": "0.48",
+              "Unlock": ""
+            }
+          },
+          {
+            "$": {
+              "Name": "WILL_21",
+              "Rarity": "1",
+              "Category": "magic",
+              "MaxLevel": "1",
+              "Angle": "0.22",
+              "Pos": "0.60",
+              "Unlock": "WILL_22,WILL_20"
+            }
+          },
+          {
+            "$": {
+              "Name": "WILL_22",
+              "Rarity": "3",
+              "Category": "magic",
+              "MaxLevel": "1",
+              "Angle": "0.25",
+              "Pos": "0.72",
+              "Unlock": ""
+            }
+          },
+          {
+            "$": {
+              "Name": "WILL_10",
+              "Rarity": "1",
+              "Category": "magic",
+              "MaxLevel": "1",
+              "Angle": "0.5",
+              "Pos": "0.5",
+              "Unlock": "WILL_5,WILL_18,WILL_11"
+            }
+          },
+          {
+            "$": {
+              "Name": "WILL_11",
+              "Rarity": "1",
+              "Category": "magic",
+              "MaxLevel": "1",
+              "Angle": "0.5",
+              "Pos": "0.70",
+              "Unlock": "WILL_5,WILL_18,WILL_12"
+            }
+          },
+          {
+            "$": {
+              "Name": "WILL_12",
+              "Rarity": "1",
+              "Category": "magic",
+              "MaxLevel": "1",
+              "Angle": "0.5",
+              "Pos": "0.80",
+              "Unlock": "WILL_13,WILL_14,WILL_15"
+            }
+          },
+          {
+            "$": {
+              "Name": "WILL_13",
+              "Rarity": "1",
+              "Category": "magic",
+              "MaxLevel": "1",
+              "Angle": "0.6",
+              "Pos": "0.86",
+              "Unlock": ""
+            }
+          },
+          {
+            "$": {
+              "Name": "WILL_14",
+              "Rarity": "3",
+              "Category": "magic",
+              "MaxLevel": "1",
+              "Angle": "0.5",
+              "Pos": "0.91",
+              "Unlock": "WILL_13,WILL_15"
+            }
+          },
+          {
+            "$": {
+              "Name": "WILL_15",
+              "Rarity": "1",
+              "Category": "magic",
+              "MaxLevel": "1",
+              "Angle": "0.4",
+              "Pos": "0.86",
+              "Unlock": ""
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

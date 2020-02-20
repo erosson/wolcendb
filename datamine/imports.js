@@ -112,9 +112,52 @@ import game_107 from "../datamine/Game/Umbra/Skills/Trees/ActiveSkills/AST_Whirl
 import game_108 from "../datamine/Game/Umbra/SkinParams/WeaponSkins/CosmeticWeaponDescriptorBankGameplay.json"
 import game_109 from "../datamine/Game/Umbra/SkinParams/TransferTemplate/TransferTemplateBank.json"
 import game_110 from "../datamine/Game/Umbra/Loot/Gems/gems.json"
+import game_111 from "../datamine/Game/Umbra/Skills/Passive/PST/_PST_1_AGIL1_Agility.json"
+import game_112 from "../datamine/Game/Umbra/Skills/Passive/PST/_PST_1_FERO1_Ferocity.json"
+import game_113 from "../datamine/Game/Umbra/Skills/Passive/PST/_PST_1_WILL1_Willpower.json"
+import game_114 from "../datamine/Game/Umbra/Skills/Passive/PST/_PST_2_AGIL1_Melee.json"
+import game_115 from "../datamine/Game/Umbra/Skills/Passive/PST/_PST_2_AGIL2_Distance.json"
+import game_116 from "../datamine/Game/Umbra/Skills/Passive/PST/_PST_2_FERO1_Warrior.json"
+import game_117 from "../datamine/Game/Umbra/Skills/Passive/PST/_PST_2_FERO2_Tank.json"
+import game_118 from "../datamine/Game/Umbra/Skills/Passive/PST/_PST_2_WILL1_Elementalist.json"
+import game_119 from "../datamine/Game/Umbra/Skills/Passive/PST/_PST_2_WILL2_Master.json"
+import game_120 from "../datamine/Game/Umbra/Skills/Passive/PST/_PST_3_AGIL1_Repurgator.json"
+import game_121 from "../datamine/Game/Umbra/Skills/Passive/PST/_PST_3_AGIL2_Sniper.json"
+import game_122 from "../datamine/Game/Umbra/Skills/Passive/PST/_PST_3_AGIL3_Assassin.json"
+import game_123 from "../datamine/Game/Umbra/Skills/Passive/PST/_PST_3_AGIL4_Shadow.json"
+import game_124 from "../datamine/Game/Umbra/Skills/Passive/PST/_PST_3_FERO1_Berserker.json"
+import game_125 from "../datamine/Game/Umbra/Skills/Passive/PST/_PST_3_FERO2_Champion.json"
+import game_126 from "../datamine/Game/Umbra/Skills/Passive/PST/_PST_3_FERO3_SiegeBreaker.json"
+import game_127 from "../datamine/Game/Umbra/Skills/Passive/PST/_PST_3_FERO4_Paladin.json"
+import game_128 from "../datamine/Game/Umbra/Skills/Passive/PST/_PST_3_WILL1_Oracle.json"
+import game_129 from "../datamine/Game/Umbra/Skills/Passive/PST/_PST_3_WILL2_TimeMaster.json"
+import game_130 from "../datamine/Game/Umbra/Skills/Passive/PST/_PST_3_WILL3_Necromancer.json"
+import game_131 from "../datamine/Game/Umbra/Skills/Passive/PST/_PST_3_WILL4_SpellBlade.json"
+import game_132 from "../datamine/Game/Umbra/Skills/Trees/PassiveSkills/Agility_tree.json"
+import game_133 from "../datamine/Game/Umbra/Skills/Trees/PassiveSkills/Assassin_tree.json"
+import game_134 from "../datamine/Game/Umbra/Skills/Trees/PassiveSkills/Berserker_tree.json"
+import game_135 from "../datamine/Game/Umbra/Skills/Trees/PassiveSkills/Champion_tree.json"
+import game_136 from "../datamine/Game/Umbra/Skills/Trees/PassiveSkills/Distance_tree.json"
+import game_137 from "../datamine/Game/Umbra/Skills/Trees/PassiveSkills/Elementalist_tree.json"
+import game_138 from "../datamine/Game/Umbra/Skills/Trees/PassiveSkills/Ferocity_tree.json"
+import game_139 from "../datamine/Game/Umbra/Skills/Trees/PassiveSkills/Master_tree.json"
+import game_140 from "../datamine/Game/Umbra/Skills/Trees/PassiveSkills/Melee_tree.json"
+import game_141 from "../datamine/Game/Umbra/Skills/Trees/PassiveSkills/Necromancer_tree.json"
+import game_142 from "../datamine/Game/Umbra/Skills/Trees/PassiveSkills/Oracle_tree.json"
+import game_143 from "../datamine/Game/Umbra/Skills/Trees/PassiveSkills/Paladin_tree.json"
+import game_144 from "../datamine/Game/Umbra/Skills/Trees/PassiveSkills/Repurgator_tree.json"
+import game_145 from "../datamine/Game/Umbra/Skills/Trees/PassiveSkills/Shadow_tree.json"
+import game_146 from "../datamine/Game/Umbra/Skills/Trees/PassiveSkills/Siegebreaker_tree.json"
+import game_147 from "../datamine/Game/Umbra/Skills/Trees/PassiveSkills/Sniper_tree.json"
+import game_148 from "../datamine/Game/Umbra/Skills/Trees/PassiveSkills/Spellblade_tree.json"
+import game_149 from "../datamine/Game/Umbra/Skills/Trees/PassiveSkills/Tank_tree.json"
+import game_150 from "../datamine/Game/Umbra/Skills/Trees/PassiveSkills/TimeMaster_tree.json"
+import game_151 from "../datamine/Game/Umbra/Skills/Trees/PassiveSkills/Warrior_tree.json"
+import game_152 from "../datamine/Game/Umbra/Skills/Trees/PassiveSkills/Willpower_tree.json"
 import localization_0 from "!!json-loader!@erosson/xlsx-loader!../datamine/localization/text_ui_Activeskills.xml"
 import localization_1 from "!!json-loader!@erosson/xlsx-loader!../datamine/localization/text_ui_EIM.xml"
 import localization_2 from "!!json-loader!@erosson/xlsx-loader!../datamine/localization/text_ui_Loot.xml"
+import localization_3 from "!!json-loader!@erosson/xlsx-loader!../datamine/localization/text_ui_passiveskills.xml"
 
 export default {
   "revision.json": revision,
@@ -229,7 +272,50 @@ export default {
   "Game/Umbra/SkinParams/WeaponSkins/CosmeticWeaponDescriptorBankGameplay.json": game_108,
   "Game/Umbra/SkinParams/TransferTemplate/TransferTemplateBank.json": game_109,
   "Game/Umbra/Loot/Gems/gems.json": game_110,
+  "Game/Umbra/Skills/Passive/PST/_PST_1_AGIL1_Agility.json": game_111,
+  "Game/Umbra/Skills/Passive/PST/_PST_1_FERO1_Ferocity.json": game_112,
+  "Game/Umbra/Skills/Passive/PST/_PST_1_WILL1_Willpower.json": game_113,
+  "Game/Umbra/Skills/Passive/PST/_PST_2_AGIL1_Melee.json": game_114,
+  "Game/Umbra/Skills/Passive/PST/_PST_2_AGIL2_Distance.json": game_115,
+  "Game/Umbra/Skills/Passive/PST/_PST_2_FERO1_Warrior.json": game_116,
+  "Game/Umbra/Skills/Passive/PST/_PST_2_FERO2_Tank.json": game_117,
+  "Game/Umbra/Skills/Passive/PST/_PST_2_WILL1_Elementalist.json": game_118,
+  "Game/Umbra/Skills/Passive/PST/_PST_2_WILL2_Master.json": game_119,
+  "Game/Umbra/Skills/Passive/PST/_PST_3_AGIL1_Repurgator.json": game_120,
+  "Game/Umbra/Skills/Passive/PST/_PST_3_AGIL2_Sniper.json": game_121,
+  "Game/Umbra/Skills/Passive/PST/_PST_3_AGIL3_Assassin.json": game_122,
+  "Game/Umbra/Skills/Passive/PST/_PST_3_AGIL4_Shadow.json": game_123,
+  "Game/Umbra/Skills/Passive/PST/_PST_3_FERO1_Berserker.json": game_124,
+  "Game/Umbra/Skills/Passive/PST/_PST_3_FERO2_Champion.json": game_125,
+  "Game/Umbra/Skills/Passive/PST/_PST_3_FERO3_SiegeBreaker.json": game_126,
+  "Game/Umbra/Skills/Passive/PST/_PST_3_FERO4_Paladin.json": game_127,
+  "Game/Umbra/Skills/Passive/PST/_PST_3_WILL1_Oracle.json": game_128,
+  "Game/Umbra/Skills/Passive/PST/_PST_3_WILL2_TimeMaster.json": game_129,
+  "Game/Umbra/Skills/Passive/PST/_PST_3_WILL3_Necromancer.json": game_130,
+  "Game/Umbra/Skills/Passive/PST/_PST_3_WILL4_SpellBlade.json": game_131,
+  "Game/Umbra/Skills/Trees/PassiveSkills/Agility_tree.json": game_132,
+  "Game/Umbra/Skills/Trees/PassiveSkills/Assassin_tree.json": game_133,
+  "Game/Umbra/Skills/Trees/PassiveSkills/Berserker_tree.json": game_134,
+  "Game/Umbra/Skills/Trees/PassiveSkills/Champion_tree.json": game_135,
+  "Game/Umbra/Skills/Trees/PassiveSkills/Distance_tree.json": game_136,
+  "Game/Umbra/Skills/Trees/PassiveSkills/Elementalist_tree.json": game_137,
+  "Game/Umbra/Skills/Trees/PassiveSkills/Ferocity_tree.json": game_138,
+  "Game/Umbra/Skills/Trees/PassiveSkills/Master_tree.json": game_139,
+  "Game/Umbra/Skills/Trees/PassiveSkills/Melee_tree.json": game_140,
+  "Game/Umbra/Skills/Trees/PassiveSkills/Necromancer_tree.json": game_141,
+  "Game/Umbra/Skills/Trees/PassiveSkills/Oracle_tree.json": game_142,
+  "Game/Umbra/Skills/Trees/PassiveSkills/Paladin_tree.json": game_143,
+  "Game/Umbra/Skills/Trees/PassiveSkills/Repurgator_tree.json": game_144,
+  "Game/Umbra/Skills/Trees/PassiveSkills/Shadow_tree.json": game_145,
+  "Game/Umbra/Skills/Trees/PassiveSkills/Siegebreaker_tree.json": game_146,
+  "Game/Umbra/Skills/Trees/PassiveSkills/Sniper_tree.json": game_147,
+  "Game/Umbra/Skills/Trees/PassiveSkills/Spellblade_tree.json": game_148,
+  "Game/Umbra/Skills/Trees/PassiveSkills/Tank_tree.json": game_149,
+  "Game/Umbra/Skills/Trees/PassiveSkills/TimeMaster_tree.json": game_150,
+  "Game/Umbra/Skills/Trees/PassiveSkills/Warrior_tree.json": game_151,
+  "Game/Umbra/Skills/Trees/PassiveSkills/Willpower_tree.json": game_152,
   "localization/text_ui_Activeskills.json": localization_0,
   "localization/text_ui_EIM.json": localization_1,
   "localization/text_ui_Loot.json": localization_2,
+  "localization/text_ui_passiveskills.json": localization_3,
 }

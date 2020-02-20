@@ -1,5 +1,6 @@
 module View.Affix exposing
     ( ItemMsg(..)
+    , formatPassiveEffect
     , formatRarity
     , viewAffix
     , viewAffixes
@@ -11,7 +12,7 @@ module View.Affix exposing
     , viewNonmagicIds
     )
 
-import Datamine exposing (Affix, Datamine, MagicAffix, MagicEffect, Range, Rarity)
+import Datamine exposing (Affix, Datamine, MagicAffix, MagicEffect, PassiveEffect, Range, Rarity)
 import Dict exposing (Dict)
 import Dict.Extra
 import Html as H exposing (..)
@@ -69,6 +70,19 @@ formatEffect dm effect =
         |> Maybe.map
             (\template ->
                 stats
+                    |> List.indexedMap Tuple.pair
+                    |> List.foldl formatEffectStat template
+            )
+
+
+formatPassiveEffect : Datamine -> PassiveEffect -> Maybe String
+formatPassiveEffect dm effect =
+    effect.hudDesc
+        |> Maybe.andThen (Datamine.lang dm)
+        |> Maybe.map
+            (\template ->
+                effect.semantics
+                    |> List.map (Tuple.mapSecond (\v -> Range v v))
                     |> List.indexedMap Tuple.pair
                     |> List.foldl formatEffectStat template
             )
