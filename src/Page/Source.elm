@@ -12,7 +12,6 @@ import Html as H exposing (..)
 import Html.Attributes as A exposing (..)
 import Html.Events as E exposing (..)
 import Route exposing (Route)
-import View.Nav
 
 
 view : Datamine -> String -> String -> Maybe (List (Html msg))
@@ -20,14 +19,11 @@ view dm type_ id =
     getSource dm type_ id
         |> Maybe.map
             (\( label, sources, breadcrumb ) ->
-                [ div [ class "container" ]
-                    [ View.Nav.view
-                    , ol [ class "breadcrumb" ]
-                        (a [ class "breadcrumb-item active", Route.href Route.Home ] [ text "Home" ] :: breadcrumb)
-                    , h4 [] [ text label, text ": ", code [] [ text id ] ]
-                    , p [] [ text "This is the raw data we've exported from the Wolcen game files. It's not very pretty, but it might be useful if Wolcen and other WolcenDB pages don't yet have the information you're looking for, or if you're programming something." ]
-                    , ul [ class "list-group" ] <| List.map (viewSource >> li [ class "list-group-item" ]) sources
-                    ]
+                [ ol [ class "breadcrumb" ]
+                    (a [ class "breadcrumb-item active", Route.href Route.Home ] [ text "Home" ] :: breadcrumb)
+                , h4 [] [ text label, text ": ", code [] [ text id ] ]
+                , p [] [ text "This is the raw data we've exported from the Wolcen game files. It's not very pretty, but it might be useful if Wolcen and other WolcenDB pages don't yet have the information you're looking for, or if you're programming something." ]
+                , ul [ class "list-group" ] <| List.map (viewSource >> li [ class "list-group-item" ]) sources
                 ]
             )
 
@@ -59,17 +55,17 @@ getSource dm type_ id =
         "skill-variant" ->
             Dict.get (String.toLower id) dm.skillVariantsByUid
                 |> Maybe.map
-                    (\s ->
+                    (\( v, _ ) ->
                         let
                             label =
-                                Skill.label dm s |> Maybe.withDefault "???"
+                                Skill.label dm v |> Maybe.withDefault "???"
 
                             ast =
                                 Dict.get (String.toLower id) dm.skillASTVariantsByUid
                                     |> Maybe.map .source
                         in
                         ( label
-                        , [ Just s.source, ast ] |> List.filterMap identity
+                        , [ Just v.source, ast ] |> List.filterMap identity
                         , [ a [ class "breadcrumb-item active", Route.href Route.Skills ] [ text "Skill Variants" ]
                           , a [ class "breadcrumb-item active" ] [ text label ]
                           , a [ class "breadcrumb-item active", Route.href <| Route.Source type_ id ] [ text "Source" ]

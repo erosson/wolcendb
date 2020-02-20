@@ -57,7 +57,7 @@ type alias Datamine =
     , uniqueLootByName : Dict String UniqueItem
     , skillsByUid : Dict String Skill
     , skillASTsByName : Dict String SkillAST
-    , skillVariantsByUid : Dict String SkillVariant
+    , skillVariantsByUid : Dict String ( SkillVariant, Skill )
     , skillASTVariantsByUid : Dict String SkillASTVariant
     , gemsByName : Dict String Gem
     , nonmagicAffixesById : Dict String NonmagicAffix
@@ -109,6 +109,10 @@ index raw =
                                         |> Maybe.map (\p -> ( e, p, t ))
                                 )
                     )
+
+        skillVariants : List ( SkillVariant, Skill )
+        skillVariants =
+            raw.skills |> List.concatMap (\s -> s.variants |> List.map (\v -> ( v, s )))
     in
     -- raw copies
     { revision = raw.revision
@@ -129,7 +133,7 @@ index raw =
     , uniqueLootByName = raw.uniqueLoot |> Dict.Extra.fromListBy (UniqueItem.name >> String.toLower)
     , skillsByUid = raw.skills |> Dict.Extra.fromListBy (.uid >> String.toLower)
     , skillASTsByName = raw.skillASTs |> Dict.Extra.fromListBy (.name >> String.toLower)
-    , skillVariantsByUid = raw.skills |> List.concatMap .variants |> Dict.Extra.fromListBy (.uid >> String.toLower)
+    , skillVariantsByUid = skillVariants |> Dict.Extra.fromListBy (Tuple.first >> .uid >> String.toLower)
     , skillASTVariantsByUid = raw.skillASTs |> List.concatMap .variants |> Dict.Extra.fromListBy (.uid >> String.toLower)
     , gemsByName = raw.gems |> Dict.Extra.fromListBy (.name >> String.toLower)
     , nonmagicAffixesById = raw.affixes.nonmagic |> Dict.Extra.fromListBy (.affixId >> String.toLower)

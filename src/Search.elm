@@ -1,10 +1,20 @@
-module Search exposing (Doc, Index, createIndex, decodeIndex, search)
+module Search exposing
+    ( Doc
+    , Index
+    , SearchResult
+    , createIndex
+    , decodeIndex
+    , search
+    )
 
 import Datamine exposing (Datamine)
 import Datamine.Affix as Affix
 import Datamine.Gem as Gem exposing (Gem)
+import Datamine.Skill as Skill exposing (Skill)
+import Dict exposing (Dict)
 import ElmTextSearch exposing (Index)
 import Json.Decode as D
+import Route exposing (Route)
 import View.Affix
 
 
@@ -34,6 +44,7 @@ config =
         ]
     , listFields =
         [ ( .keywords, 3.0 )
+        , ( .effects, 2.0 )
         ]
     }
 
@@ -50,15 +61,91 @@ docs dm =
             (\gem ->
                 { id = "gem/" ++ gem.name
                 , localId = gem.name
-                , title = Gem.label dm gem |> Maybe.withDefault "???"
+                , title = Gem.label dm gem |> Maybe.withDefault ""
                 , body = ""
                 , effects = Gem.effects dm gem
                 , keywords = gem.keywords
                 , lore = ""
                 }
             )
+    , dm.skills
+        |> List.map
+            (\skill ->
+                { id = "skill/" ++ skill.uid
+                , localId = skill.uid
+                , title = Skill.label dm skill |> Maybe.withDefault ""
+                , body = Skill.desc dm skill |> Maybe.withDefault ""
+                , effects = []
+                , keywords = skill.keywords
+                , lore = Skill.lore dm skill |> Maybe.withDefault ""
+                }
+            )
+    , dm.skills
+        |> List.concatMap .variants
+        |> List.map
+            (\var ->
+                { id = "skill-variant/" ++ var.uid
+                , localId = var.uid
+                , title = Skill.label dm var |> Maybe.withDefault ""
+                , body = Skill.desc dm var |> Maybe.withDefault ""
+                , effects = []
+                , keywords = []
+                , lore = Skill.lore dm var |> Maybe.withDefault ""
+                }
+            )
     ]
         |> List.concat
+
+
+type alias SearchResult =
+    { id : String
+    , score : Float
+    , category : List String
+    , route : Route
+    , label : String
+    }
+
+
+toSearchResult : Datamine -> ( String, Float ) -> Maybe SearchResult
+toSearchResult dm ( docId, score ) =
+    let
+        result =
+            SearchResult docId score
+    in
+    case String.split "/" docId of
+        [ "gem", id ] ->
+            Dict.get (String.toLower id) dm.gemsByName
+                |> Maybe.map
+                    (\gem ->
+                        gem
+                            |> Gem.label dm
+                            |> Maybe.withDefault "???"
+                            |> result [ "Gem" ] Route.Gems
+                    )
+
+        [ "skill", id ] ->
+            Dict.get (String.toLower id) dm.skillsByUid
+                |> Maybe.map
+                    (\skill ->
+                        skill
+                            |> Skill.label dm
+                            |> Maybe.withDefault "???"
+                            |> result [ "Skill" ] (Route.Skill id)
+                    )
+
+        [ "skill-variant", id ] ->
+            Dict.get (String.toLower id) dm.skillVariantsByUid
+                |> Maybe.map
+                    (\( var, skill ) ->
+                        var
+                            |> Skill.label dm
+                            |> Maybe.withDefault "???"
+                            |> result [ "Skill Variant", Skill.label dm skill |> Maybe.withDefault "???" ]
+                                (Route.Skill skill.uid)
+                    )
+
+        _ ->
+            Nothing
 
 
 createIndex : Datamine -> Result (List ( Int, String )) Index
@@ -77,6 +164,6 @@ decodeIndex =
         >> Result.mapError D.errorToString
 
 
-search : String -> Index -> Result String ( Index, List ( String, Float ) )
-search =
-    ElmTextSearch.search
+search : Datamine -> String -> Index -> Result String ( Index, List SearchResult )
+search dm q =
+    ElmTextSearch.search q >> Result.map (Tuple.mapSecond (List.filterMap (toSearchResult dm)))

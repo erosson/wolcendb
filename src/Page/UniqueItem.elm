@@ -11,7 +11,6 @@ import Route exposing (Route)
 import View.Affix
 import View.Desc
 import View.Item
-import View.Nav
 
 
 viewWeapon : Datamine -> String -> Maybe (List (Html msg))
@@ -103,36 +102,33 @@ viewMain dm uitem item =
         label =
             UniqueItem.label dm uitem |> Maybe.withDefault "???" |> text
     in
-    [ div [ class "container" ]
-        [ View.Nav.view
-        , viewBreadcrumb dm uitem label
-        , div [ class "card" ]
-            [ div [ class "card-header" ] [ label ]
-            , div [ class "card-body" ]
-                [ span [ class "item float-right" ]
-                    [ img [ View.Item.imgUnique dm uitem ] []
-                    , div [] [ text "[", a [ Route.href <| Route.Source "unique-loot" item.name ] [ text "Source" ], text "]" ]
-                    ]
-                , p [] [ text "Level: ", text <| Maybe.Extra.unwrap "-" String.fromInt item.levelPrereq ]
-                , div [] <|
-                    case uitem of
-                        UWeapon w ->
-                            [ p []
-                                [ text "Damage: "
-                                , Maybe.Extra.unwrap "?" String.fromInt w.damage.min
-                                    ++ "-"
-                                    ++ Maybe.Extra.unwrap "?" String.fromInt w.damage.max
-                                    |> text
-                                ]
-                            ]
-
-                        _ ->
-                            []
-                , ul [ class "list-group affixes" ] <| View.Affix.viewNonmagicIds dm item.implicitAffixes
-                , ul [ class "list-group affixes" ] <| View.Affix.viewNonmagicIds dm item.defaultAffixes
-                , small [ class "text-muted" ] [ text "Keywords: ", text <| String.join ", " item.keywords ]
-                , p [] <| (View.Desc.mdesc dm item.lore |> Maybe.withDefault [ text "???" ])
+    [ viewBreadcrumb dm uitem label
+    , div [ class "card" ]
+        [ div [ class "card-header" ] [ label ]
+        , div [ class "card-body" ]
+            [ span [ class "item float-right" ]
+                [ img [ View.Item.imgUnique dm uitem ] []
+                , div [] [ text "[", a [ Route.href <| Route.Source "unique-loot" item.name ] [ text "Source" ], text "]" ]
                 ]
+            , p [] [ text "Level: ", text <| Maybe.Extra.unwrap "-" String.fromInt item.levelPrereq ]
+            , div [] <|
+                case uitem of
+                    UWeapon w ->
+                        [ p []
+                            [ text "Damage: "
+                            , Maybe.Extra.unwrap "?" String.fromInt w.damage.min
+                                ++ "-"
+                                ++ Maybe.Extra.unwrap "?" String.fromInt w.damage.max
+                                |> text
+                            ]
+                        ]
+
+                    _ ->
+                        []
+            , ul [ class "list-group affixes" ] <| View.Affix.viewNonmagicIds dm item.implicitAffixes
+            , ul [ class "list-group affixes" ] <| View.Affix.viewNonmagicIds dm item.defaultAffixes
+            , small [ class "text-muted" ] [ text "Keywords: ", text <| String.join ", " item.keywords ]
+            , p [] <| (View.Desc.mdesc dm item.lore |> Maybe.withDefault [ text "???" ])
             ]
         ]
     ]

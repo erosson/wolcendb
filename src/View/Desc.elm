@@ -1,4 +1,4 @@
-module View.Desc exposing (desc, mdesc)
+module View.Desc exposing (desc, format, mdesc, mformat)
 
 {-| datamined Wolcen descriptions have embedded html. Interpret it as html.
 
@@ -22,15 +22,22 @@ mdesc dm =
 
 desc : Datamine -> String -> Maybe (List (Html msg))
 desc dm key =
-    Lang.get dm key
-        |> Maybe.map
-            (String.replace "\\n" "<br />"
-                >> (\raw ->
-                        case Html.Parser.run raw of
-                            Ok nodes ->
-                                [ Html.Parser.Util.toVirtualDom nodes |> p [ class "desc", title raw ] ]
+    Lang.get dm key |> mformat
 
-                            Err err ->
-                                [ p [ class "desc" ] [ text raw ] ]
-                   )
-            )
+
+format : String -> List (Html msg)
+format =
+    String.replace "\\n" "<br />"
+        >> (\raw ->
+                case Html.Parser.run raw of
+                    Ok nodes ->
+                        [ Html.Parser.Util.toVirtualDom nodes |> p [ class "desc", title raw ] ]
+
+                    Err err ->
+                        [ p [ class "desc" ] [ text raw ] ]
+           )
+
+
+mformat : Maybe String -> Maybe (List (Html msg))
+mformat =
+    Maybe.map format

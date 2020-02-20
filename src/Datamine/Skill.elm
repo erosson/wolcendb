@@ -1,4 +1,14 @@
-module Datamine.Skill exposing (Skill, SkillAST, SkillASTVariant, SkillVariant, astsDecoder, decoder, label)
+module Datamine.Skill exposing
+    ( Skill
+    , SkillAST
+    , SkillASTVariant
+    , SkillVariant
+    , astsDecoder
+    , decoder
+    , desc
+    , label
+    , lore
+    )
 
 import Datamine.Lang as Lang
 import Datamine.Source as Source exposing (Source)
@@ -45,6 +55,16 @@ type alias SkillASTVariant =
 label : Lang.Datamine d -> { s | uiName : String } -> Maybe String
 label dm s =
     Lang.get dm s.uiName
+
+
+desc : Lang.Datamine d -> { s | uiName : String } -> Maybe String
+desc dm s =
+    Lang.get dm (s.uiName ++ "_desc")
+
+
+lore : Lang.Datamine d -> { s | lore : Maybe String } -> Maybe String
+lore dm s =
+    Lang.mget dm s.lore
 
 
 astsDecoder : D.Decoder (List SkillAST)

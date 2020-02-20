@@ -8,9 +8,9 @@
   "scripts": {
     "export:pull": "bash -c \"git subtree pull --squash --prefix third-party/WolcenExtractor git@github.com:gabriel-dehan/WolcenExtractor.git master && yarn export:install\"",
     "export:install": "bash -c \"gem install bundler && cd third-party/WolcenExtractor && bundle install\"",
-    "export:cp": "bash -c \"rm -rf datamine && mkdir datamine && cp \\\"`cat GAMEPATH`\\\"/revision.txt datamine.tmp/revision.txt && node ./src/import_datamine.js\"",
-    "export": "bash -c \"cd third-party/WolcenExtractor && ruby src/main.rb extract --source \\\"`cat ../../GAMEPATH`\\\" --dest ../../datamine.tmp --only english_xml.pak,umbra.pak,Libs_UI_ && yarn export:cp\"",
+    "export:cp": "bash -c \"rm -rf datamine && mkdir datamine && cp \\\"`cat GAMEPATH`\\\"/revision.txt datamine.tmp/revision.txt && node ./src/import_datamine.js && yarn build-search-index\"",
     "build-search-index": "bash -c \"elm make src/BuildSearchIndexCLI.elm --output datamine.tmp/BuildSearchIndexCLI.elm.js && node --experimental-modules src/build-search-index-cli.mjs\"",
+    "export": "bash -c \"cd third-party/WolcenExtractor && ruby src/main.rb extract --source \\\"`cat ../../GAMEPATH`\\\" --dest ../../datamine.tmp --only english_xml.pak,umbra.pak,Libs_UI_ && yarn export:cp\"",
     "start": "bash -c \"ELM_DEBUGGER=false elm-app start\"",
     "build": "bash -c \"elm-app build\"",
     "build:ci": "bash -c \"yarn test && yarn build\"",

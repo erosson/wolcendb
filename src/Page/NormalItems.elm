@@ -9,7 +9,6 @@ import Html.Events as E exposing (..)
 import Maybe.Extra
 import Route exposing (Route)
 import View.Item
-import View.Nav
 
 
 viewWeapons : Datamine -> List (Html msg)
@@ -135,42 +134,39 @@ itemRoute nitem =
 
 viewMain : Datamine -> { breadcrumb : List (Html msg), headers : List (Html msg) } -> List ( NormalItem, Item i ) -> List (Html msg)
 viewMain dm { breadcrumb, headers } items =
-    [ div [ class "container" ]
-        [ View.Nav.view
-        , ol [ class "breadcrumb" ] breadcrumb
-        , table [ class "table" ]
-            [ thead [] [ tr [] headers ]
-            , tbody []
-                (items
-                    |> List.map
-                        (\( nitem, item ) ->
-                            tr []
-                                ([ td []
-                                    [ a [ Route.href <| itemRoute nitem ]
-                                        [ img [ class "item-icon", View.Item.imgNormal dm nitem ] []
-                                        , NormalItem.label dm nitem |> Maybe.withDefault "???" |> text
-                                        ]
+    [ ol [ class "breadcrumb" ] breadcrumb
+    , table [ class "table" ]
+        [ thead [] [ tr [] headers ]
+        , tbody []
+            (items
+                |> List.map
+                    (\( nitem, item ) ->
+                        tr []
+                            ([ td []
+                                [ a [ Route.href <| itemRoute nitem ]
+                                    [ img [ class "item-icon", View.Item.imgNormal dm nitem ] []
+                                    , NormalItem.label dm nitem |> Maybe.withDefault "???" |> text
                                     ]
-                                 , td [] [ text <| Maybe.Extra.unwrap "-" String.fromInt item.levelPrereq ]
-                                 ]
-                                    ++ (case nitem of
-                                            NWeapon w ->
-                                                [ td []
-                                                    [ Maybe.Extra.unwrap "?" String.fromInt w.damage.min
-                                                        ++ "-"
-                                                        ++ Maybe.Extra.unwrap "?" String.fromInt w.damage.max
-                                                        |> text
-                                                    ]
+                                ]
+                             , td [] [ text <| Maybe.Extra.unwrap "-" String.fromInt item.levelPrereq ]
+                             ]
+                                ++ (case nitem of
+                                        NWeapon w ->
+                                            [ td []
+                                                [ Maybe.Extra.unwrap "?" String.fromInt w.damage.min
+                                                    ++ "-"
+                                                    ++ Maybe.Extra.unwrap "?" String.fromInt w.damage.max
+                                                    |> text
                                                 ]
+                                            ]
 
-                                            _ ->
-                                                []
-                                       )
-                                    ++ [ td [] [ text <| String.join ", " item.keywords ]
-                                       ]
-                                )
-                        )
-                )
-            ]
+                                        _ ->
+                                            []
+                                   )
+                                ++ [ td [] [ text <| String.join ", " item.keywords ]
+                                   ]
+                            )
+                    )
+            )
         ]
     ]

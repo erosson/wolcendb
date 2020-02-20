@@ -25,10 +25,11 @@ import Page.Source
 import Page.UniqueItem
 import Page.UniqueItems
 import Route exposing (Route)
-import Search
+import Search exposing (SearchResult)
 import Set exposing (Set)
 import Url exposing (Url)
 import View.Affix
+import View.Nav
 
 
 
@@ -49,7 +50,7 @@ type alias OkModel =
     -- TODO: these really belong in a per-page model
     , expandedAffixClasses : Set String
     , globalSearch : String
-    , globalSearchResults : Result String (List ( String, Float ))
+    , globalSearchResults : Result String (List SearchResult)
     }
 
 
@@ -108,6 +109,7 @@ type Msg
     | OnUrlRequest Browser.UrlRequest
     | AffixMsg View.Affix.ItemMsg
     | SearchMsg Page.Search.Msg
+    | NavMsg View.Nav.Msg
 
 
 update : Msg -> Model -> ( Model, Cmd Msg )
@@ -140,6 +142,10 @@ updateOk msg model =
             Page.Search.update msg_ model
                 |> Tuple.mapSecond (Cmd.map SearchMsg)
 
+        NavMsg msg_ ->
+            View.Nav.update msg_ model
+                |> Tuple.mapSecond (Cmd.map NavMsg)
+
 
 toggleSet : comparable -> Set comparable -> Set comparable
 toggleSet k ks =
@@ -166,104 +172,112 @@ viewBody mmodel =
             [ code [] [ text err ] ]
 
         Ok model ->
-            case model.route of
-                Nothing ->
-                    viewNotFound
+            let
+                content =
+                    case model.route of
+                        Nothing ->
+                            viewNotFound
 
-                Just route ->
-                    case route of
-                        Route.Home ->
-                            Page.Home.view
+                        Just route ->
+                            case route of
+                                Route.Home ->
+                                    Page.Home.view
 
-                        Route.Weapons ->
-                            Page.NormalItems.viewWeapons model.datamine
+                                Route.Weapons ->
+                                    Page.NormalItems.viewWeapons model.datamine
 
-                        Route.Shields ->
-                            Page.NormalItems.viewShields model.datamine
+                                Route.Shields ->
+                                    Page.NormalItems.viewShields model.datamine
 
-                        Route.Armors ->
-                            Page.NormalItems.viewArmors model.datamine
+                                Route.Armors ->
+                                    Page.NormalItems.viewArmors model.datamine
 
-                        Route.Accessories ->
-                            Page.NormalItems.viewAccessories model.datamine
+                                Route.Accessories ->
+                                    Page.NormalItems.viewAccessories model.datamine
 
-                        Route.Weapon name ->
-                            Page.NormalItem.viewWeapon model name
-                                |> Maybe.map (List.map (H.map AffixMsg))
-                                |> Maybe.withDefault viewNotFound
+                                Route.Weapon name ->
+                                    Page.NormalItem.viewWeapon model name
+                                        |> Maybe.map (List.map (H.map AffixMsg))
+                                        |> Maybe.withDefault viewNotFound
 
-                        Route.Shield name ->
-                            Page.NormalItem.viewShield model name
-                                |> Maybe.map (List.map (H.map AffixMsg))
-                                |> Maybe.withDefault viewNotFound
+                                Route.Shield name ->
+                                    Page.NormalItem.viewShield model name
+                                        |> Maybe.map (List.map (H.map AffixMsg))
+                                        |> Maybe.withDefault viewNotFound
 
-                        Route.Armor name ->
-                            Page.NormalItem.viewArmor model name
-                                |> Maybe.map (List.map (H.map AffixMsg))
-                                |> Maybe.withDefault viewNotFound
+                                Route.Armor name ->
+                                    Page.NormalItem.viewArmor model name
+                                        |> Maybe.map (List.map (H.map AffixMsg))
+                                        |> Maybe.withDefault viewNotFound
 
-                        Route.Accessory name ->
-                            Page.NormalItem.viewAccessory model name
-                                |> Maybe.map (List.map (H.map AffixMsg))
-                                |> Maybe.withDefault viewNotFound
+                                Route.Accessory name ->
+                                    Page.NormalItem.viewAccessory model name
+                                        |> Maybe.map (List.map (H.map AffixMsg))
+                                        |> Maybe.withDefault viewNotFound
 
-                        Route.UniqueWeapons ->
-                            Page.UniqueItems.viewWeapons model.datamine
+                                Route.UniqueWeapons ->
+                                    Page.UniqueItems.viewWeapons model.datamine
 
-                        Route.UniqueShields ->
-                            Page.UniqueItems.viewShields model.datamine
+                                Route.UniqueShields ->
+                                    Page.UniqueItems.viewShields model.datamine
 
-                        Route.UniqueArmors ->
-                            Page.UniqueItems.viewArmors model.datamine
+                                Route.UniqueArmors ->
+                                    Page.UniqueItems.viewArmors model.datamine
 
-                        Route.UniqueAccessories ->
-                            Page.UniqueItems.viewAccessories model.datamine
+                                Route.UniqueAccessories ->
+                                    Page.UniqueItems.viewAccessories model.datamine
 
-                        Route.UniqueWeapon name ->
-                            Page.UniqueItem.viewWeapon model.datamine name
-                                |> Maybe.withDefault viewNotFound
+                                Route.UniqueWeapon name ->
+                                    Page.UniqueItem.viewWeapon model.datamine name
+                                        |> Maybe.withDefault viewNotFound
 
-                        Route.UniqueShield name ->
-                            Page.UniqueItem.viewShield model.datamine name
-                                |> Maybe.withDefault viewNotFound
+                                Route.UniqueShield name ->
+                                    Page.UniqueItem.viewShield model.datamine name
+                                        |> Maybe.withDefault viewNotFound
 
-                        Route.UniqueArmor name ->
-                            Page.UniqueItem.viewArmor model.datamine name
-                                |> Maybe.withDefault viewNotFound
+                                Route.UniqueArmor name ->
+                                    Page.UniqueItem.viewArmor model.datamine name
+                                        |> Maybe.withDefault viewNotFound
 
-                        Route.UniqueAccessory name ->
-                            Page.UniqueItem.viewAccessory model.datamine name
-                                |> Maybe.withDefault viewNotFound
+                                Route.UniqueAccessory name ->
+                                    Page.UniqueItem.viewAccessory model.datamine name
+                                        |> Maybe.withDefault viewNotFound
 
-                        Route.Skills ->
-                            Page.Skills.view model.datamine
+                                Route.Skills ->
+                                    Page.Skills.view model.datamine
 
-                        Route.Skill s ->
-                            Page.Skill.view model.datamine s
-                                |> Maybe.withDefault viewNotFound
+                                Route.Skill s ->
+                                    Page.Skill.view model.datamine s
+                                        |> Maybe.withDefault viewNotFound
 
-                        Route.Affixes ->
-                            Page.Affixes.view model.datamine
+                                Route.Affixes ->
+                                    Page.Affixes.view model.datamine
 
-                        Route.Gems ->
-                            Page.Gems.view model.datamine
+                                Route.Gems ->
+                                    Page.Gems.view model.datamine
 
-                        Route.Passives ->
-                            Page.Passives.view model.datamine
+                                Route.Passives ->
+                                    Page.Passives.view model.datamine
 
-                        Route.Source type_ id ->
-                            Page.Source.view model.datamine type_ id
-                                |> Maybe.withDefault viewNotFound
+                                Route.Source type_ id ->
+                                    Page.Source.view model.datamine type_ id
+                                        |> Maybe.withDefault viewNotFound
 
-                        Route.Search query ->
-                            Page.Search.view model
-                                |> List.map (H.map SearchMsg)
+                                Route.Search query ->
+                                    Page.Search.view model
+                                        |> List.map (H.map SearchMsg)
 
-                        Route.Changelog ->
-                            Page.Changelog.view model
+                                Route.Changelog ->
+                                    Page.Changelog.view model
 
-                        Route.Privacy ->
-                            Page.Privacy.view
+                                Route.Privacy ->
+                                    Page.Privacy.view
+            in
+            [ div [ class "container" ]
+                ((View.Nav.view model |> H.map NavMsg)
+                    :: content
+                )
+            ]
 
 
 viewNotFound =

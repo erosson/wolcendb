@@ -12,7 +12,6 @@ import Set exposing (Set)
 import View.Affix
 import View.Desc
 import View.Item
-import View.Nav
 
 
 type alias Model m =
@@ -115,35 +114,32 @@ viewMain m nitem item =
         label =
             NormalItem.label dm nitem |> Maybe.withDefault "???" |> text
     in
-    [ div [ class "container" ]
-        [ View.Nav.view
-        , viewBreadcrumb dm nitem label
-        , div [ class "card" ]
-            [ div [ class "card-header" ] [ label ]
-            , div [ class "card-body" ]
-                [ span [ class "item float-right" ]
-                    [ img [ View.Item.imgNormal dm nitem ] []
-                    , div [] [ text "[", a [ Route.href <| Route.Source "normal-loot" item.name ] [ text "Source" ], text "]" ]
-                    ]
-                , p [] [ text "Level: ", text <| Maybe.Extra.unwrap "-" String.fromInt item.levelPrereq ]
-                , div [] <|
-                    case nitem of
-                        NWeapon w ->
-                            [ p []
-                                [ text "Damage: "
-                                , Maybe.Extra.unwrap "?" String.fromInt w.damage.min
-                                    ++ "-"
-                                    ++ Maybe.Extra.unwrap "?" String.fromInt w.damage.max
-                                    |> text
-                                ]
-                            ]
-
-                        _ ->
-                            []
-                , ul [ class "list-group affixes" ] <| View.Affix.viewNonmagicIds dm item.implicitAffixes
-                , small [ class "text-muted" ] [ text "Keywords: ", text <| String.join ", " item.keywords ]
+    [ viewBreadcrumb dm nitem label
+    , div [ class "card" ]
+        [ div [ class "card-header" ] [ label ]
+        , div [ class "card-body" ]
+            [ span [ class "item float-right" ]
+                [ img [ View.Item.imgNormal dm nitem ] []
+                , div [] [ text "[", a [ Route.href <| Route.Source "normal-loot" item.name ] [ text "Source" ], text "]" ]
                 ]
+            , p [] [ text "Level: ", text <| Maybe.Extra.unwrap "-" String.fromInt item.levelPrereq ]
+            , div [] <|
+                case nitem of
+                    NWeapon w ->
+                        [ p []
+                            [ text "Damage: "
+                            , Maybe.Extra.unwrap "?" String.fromInt w.damage.min
+                                ++ "-"
+                                ++ Maybe.Extra.unwrap "?" String.fromInt w.damage.max
+                                |> text
+                            ]
+                        ]
+
+                    _ ->
+                        []
+            , ul [ class "list-group affixes" ] <| View.Affix.viewNonmagicIds dm item.implicitAffixes
+            , small [ class "text-muted" ] [ text "Keywords: ", text <| String.join ", " item.keywords ]
             ]
-        , div [] <| View.Affix.viewItem dm m.expandedAffixClasses <| NormalItem.possibleAffixes dm item
         ]
+    , div [] <| View.Affix.viewItem dm m.expandedAffixClasses <| NormalItem.possibleAffixes dm item
     ]
