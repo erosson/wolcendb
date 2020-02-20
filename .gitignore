@@ -23,3 +23,6 @@ node_modules
 # extracted game data. These are way too big, and I'm not sure how wolcen devs are about copyright yet anyway, so don't commit by default.
 # A small subset of these are committed, in `datamine` - only those required for ci and production builds
 /datamine.tmp
+
+# Test fixtures; datamine imports as an elm string, created by fixture.js
+tests/Fixture/Json.elm

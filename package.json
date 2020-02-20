@@ -13,7 +13,7 @@
     "start": "bash -c \"ELM_DEBUGGER=false elm-app start\"",
     "build": "bash -c \"elm-app build\"",
     "build:ci": "bash -c \"yarn test && yarn build\"",
-    "test": "bash -c \"elm-app test\""
+    "test": "node --experimental-modules tests/fixture.mjs && elm-app test"
   },
   "devDependencies": {
     "@erosson/xlsx-loader": "^1.0.3",

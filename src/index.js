@@ -1,7 +1,7 @@
 import '!!style-loader!css-loader!sass-loader!./main.scss';
 import { Elm } from './Main.elm';
 import * as serviceWorker from './serviceWorker';
-import datamine from '../datamine/imports'
+import datamine from '../datamine/imports.js'
 import changelog from '!!raw-loader!../CHANGELOG.md'
 // console.dir(changelog)
 // console.dir(datamine)

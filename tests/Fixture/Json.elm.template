@@ -1,0 +1,14 @@
+module Fixture.Json exposing (datamine)
+
+{-| Json files accessible by Elm tests. See fixture.js.
+
+Why not use this in prod? - Because forcing the separation is useful. I don't
+want to end up relying on this as a global variable; json forces me to carry it
+around in the model. Also, this isn't integrated with Babel, while the
+spreadsheet is - instant page reload upon saving the spreadsheet.
+
+-}
+
+datamine : String
+datamine =
+    %(datamine)s

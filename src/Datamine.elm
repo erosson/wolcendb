@@ -18,6 +18,7 @@ module Datamine exposing
     , UItem
     , UniqueItem(..)
     , decode
+    , decoder
     , itemAffixes
     , lang
     , magicAffixes
@@ -551,7 +552,7 @@ itemAffixes dm item =
 
 decode : Flag -> Result String Datamine
 decode =
-    D.decodeValue jsonDecoder
+    D.decodeValue decoder
         >> Result.mapError D.errorToString
 
 
@@ -565,8 +566,8 @@ magicAffixes dm =
     List.filterMap (\id -> Dict.get id dm.magicAffixesById)
 
 
-jsonDecoder : D.Decoder Datamine
-jsonDecoder =
+decoder : D.Decoder Datamine
+decoder =
     D.succeed RawDatamine
         |> P.custom revisionDecoder
         |> P.custom normalItemsDecoder
