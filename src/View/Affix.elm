@@ -1,5 +1,6 @@
 module View.Affix exposing
     ( ItemMsg(..)
+    , formatEffect
     , formatPassiveEffect
     , formatRarity
     , viewAffix

@@ -3,6 +3,7 @@ module Tests exposing (..)
 import Dict exposing (Dict)
 import Expect
 import Fixture exposing (datamine)
+import Search
 import Test exposing (..)
 
 
@@ -22,6 +23,23 @@ all =
         , test "datamine decoded" <|
             \_ ->
                 Expect.equal True <| Dict.member (String.toLower "1H_Axe_Tier1") datamine.lootByName
+        , test "build search index" <|
+            \_ ->
+                Expect.ok <| Search.createIndex datamine
+        , test "use search index title" <|
+            \_ ->
+                Search.createIndex datamine
+                    |> Result.mapError Debug.toString
+                    |> Result.andThen (Search.search "topaz")
+                    |> Result.map (Tuple.second >> List.length)
+                    |> Expect.equal (Ok 12)
+        , test "use search index id" <|
+            \_ ->
+                Search.createIndex datamine
+                    |> Result.mapError Debug.toString
+                    |> Result.andThen (Search.search "fire_gem_tier_")
+                    |> Result.map (Tuple.second >> List.length)
+                    |> Expect.equal (Ok 12)
 
         -- , test "This test should fail" <|
         -- \_ ->

@@ -4,9 +4,11 @@ import Browser
 import Browser.Navigation as Nav
 import Datamine exposing (Datamine)
 import Dict exposing (Dict)
+import ElmTextSearch
 import Html as H exposing (..)
 import Html.Attributes as A exposing (..)
 import Html.Events as E exposing (..)
+import Json.Decode as D
 import Maybe.Extra
 import Page.Affixes
 import Page.Changelog
@@ -16,12 +18,14 @@ import Page.NormalItem
 import Page.NormalItems
 import Page.Passives
 import Page.Privacy
+import Page.Search
 import Page.Skill
 import Page.Skills
 import Page.Source
 import Page.UniqueItem
 import Page.UniqueItems
 import Route exposing (Route)
+import Search
 import Set exposing (Set)
 import Url exposing (Url)
 import View.Affix
@@ -38,6 +42,7 @@ type alias Model =
 type alias OkModel =
     { nav : Nav.Key
     , datamine : Datamine
+    , searchIndex : ElmTextSearch.Index Search.Doc
     , changelog : String
     , route : Maybe Route
 
@@ -49,6 +54,7 @@ type alias OkModel =
 type alias Flags =
     { datamine : Datamine.Flag
     , changelog : String
+    , searchIndex : D.Value
     }
 
 
@@ -59,15 +65,21 @@ init flags url nav =
             ( Err err, Cmd.none )
 
         Ok datamine ->
-            ( Ok
-                { nav = nav
-                , datamine = datamine
-                , changelog = flags.changelog
-                , route = Route.parse url
-                , expandedAffixClasses = Set.empty
-                }
-            , Cmd.none
-            )
+            case Search.decodeIndex flags.searchIndex of
+                Err err ->
+                    ( Err err, Cmd.none )
+
+                Ok searchIndex ->
+                    ( Ok
+                        { nav = nav
+                        , datamine = datamine
+                        , searchIndex = searchIndex
+                        , changelog = flags.changelog
+                        , route = Route.parse url
+                        , expandedAffixClasses = Set.empty
+                        }
+                    , Cmd.none
+                    )
 
 
 
@@ -78,6 +90,7 @@ type Msg
     = OnUrlChange Url
     | OnUrlRequest Browser.UrlRequest
     | AffixMsg View.Affix.ItemMsg
+    | SearchMsg Page.Search.Msg
 
 
 update : Msg -> Model -> ( Model, Cmd Msg )
@@ -105,6 +118,10 @@ updateOk msg model =
 
         AffixMsg (View.Affix.Expand class) ->
             ( { model | expandedAffixClasses = model.expandedAffixClasses |> toggleSet class }, Cmd.none )
+
+        SearchMsg msg_ ->
+            Page.Search.update msg_ model
+                |> Tuple.mapSecond (Cmd.map SearchMsg)
 
 
 toggleSet : comparable -> Set comparable -> Set comparable
@@ -220,6 +237,10 @@ viewBody mmodel =
                         Route.Source type_ id ->
                             Page.Source.view model.datamine type_ id
                                 |> Maybe.withDefault viewNotFound
+
+                        Route.Search query ->
+                            Page.Search.view model query
+                                |> List.map (H.map SearchMsg)
 
                         Route.Changelog ->
                             Page.Changelog.view model

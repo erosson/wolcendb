@@ -4,7 +4,9 @@ import Browser.Navigation as Nav
 import Html
 import Html.Attributes
 import Url exposing (Url)
+import Url.Builder as B
 import Url.Parser as P exposing ((</>), (<?>))
+import Url.Parser.Query as Q
 
 
 type Route
@@ -31,6 +33,7 @@ type Route
     | Gems
     | Passives
     | Source String String
+    | Search (Maybe String)
     | Changelog
     | Privacy
 
@@ -66,6 +69,7 @@ parser =
         , P.map Gems <| P.s "gem"
         , P.map Passives <| P.s "passive"
         , P.map Source <| P.s "source" </> P.string </> P.string
+        , P.map Search <| P.s "search" <?> Q.string "q"
         , P.map Changelog <| P.s "changelog"
         , P.map Privacy <| P.s "privacy"
         ]
@@ -142,6 +146,9 @@ toString r =
 
         Source type_ id ->
             "/source/" ++ type_ ++ "/" ++ id
+
+        Search query ->
+            "/search" ++ ([ query |> Maybe.map (B.string "q") ] |> List.filterMap identity |> B.toQuery)
 
         Changelog ->
             "/changelog"

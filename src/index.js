@@ -3,11 +3,10 @@ import { Elm } from './Main.elm';
 import * as serviceWorker from './serviceWorker';
 import datamine from '../datamine/imports.js'
 import changelog from '!!raw-loader!../CHANGELOG.md'
-// console.dir(changelog)
-// console.dir(datamine)
+import searchIndex from '../datamine/searchIndex.json'
 
 Elm.Main.init({
-  flags: {changelog, datamine},
+  flags: {changelog, datamine, searchIndex},
   node: document.getElementById('root')
 });
 
