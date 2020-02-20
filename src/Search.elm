@@ -1,6 +1,8 @@
 module Search exposing (Doc, Index, createIndex, decodeIndex, search)
 
 import Datamine exposing (Datamine)
+import Datamine.Affix as Affix
+import Datamine.Gem as Gem exposing (Gem)
 import ElmTextSearch exposing (Index)
 import Json.Decode as D
 import View.Affix
@@ -48,14 +50,14 @@ docs dm =
             (\gem ->
                 { id = "gem/" ++ gem.name
                 , localId = gem.name
-                , title = gem.uiName |> Datamine.lang dm |> Maybe.withDefault "???"
+                , title = Gem.label dm gem |> Maybe.withDefault "???"
                 , body = ""
                 , effects =
                     gem.effects
                         |> List.map Tuple.second
-                        |> List.concatMap (\affixId -> Datamine.nonmagicAffixes dm [ affixId ])
+                        |> List.concatMap (\affixId -> Affix.getNonmagicIds dm [ affixId ])
                         |> List.concatMap .effects
-                        |> List.filterMap (View.Affix.formatEffect dm)
+                        |> List.filterMap (Affix.formatEffect dm)
                 , keywords = gem.keywords
                 , lore = ""
                 }

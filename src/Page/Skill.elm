@@ -1,6 +1,7 @@
 module Page.Skill exposing (view)
 
 import Datamine exposing (Datamine)
+import Datamine.Skill as Skill exposing (Skill)
 import Dict exposing (Dict)
 import Html as H exposing (..)
 import Html.Attributes as A exposing (..)
@@ -35,7 +36,7 @@ view dm uid =
 
                     label : String
                     label =
-                        Datamine.lang dm skill.uiName |> Maybe.withDefault "???"
+                        Skill.label dm skill |> Maybe.withDefault "???"
                 in
                 [ div [ class "container" ]
                     [ View.Nav.view
@@ -69,7 +70,7 @@ view dm uid =
                                             (\( va, v ) ->
                                                 tr []
                                                     [ td []
-                                                        [ span [ title v.uiName ] [ Datamine.lang dm v.uiName |> Maybe.withDefault "???" |> text ]
+                                                        [ span [ title v.uiName ] [ Skill.label dm v |> Maybe.withDefault "???" |> text ]
                                                         , div [] [ text "[", a [ Route.href <| Route.Source "skill-variant" v.uid ] [ text "Source" ], text "]" ]
                                                         ]
                                                     , td [ title <| v.uiName ++ "_desc" ]

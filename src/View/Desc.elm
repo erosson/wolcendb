@@ -7,6 +7,7 @@ Beware XSS when trusting someone else's HTML - but we trust the datamined string
 -}
 
 import Datamine exposing (Datamine)
+import Datamine.Lang as Lang
 import Html as H exposing (..)
 import Html.Attributes as A exposing (..)
 import Html.Events as E exposing (..)
@@ -21,7 +22,7 @@ mdesc dm =
 
 desc : Datamine -> String -> Maybe (List (Html msg))
 desc dm key =
-    Datamine.lang dm key
+    Lang.get dm key
         |> Maybe.map
             (String.replace "\\n" "<br />"
                 >> (\raw ->

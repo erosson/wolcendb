@@ -1,6 +1,7 @@
 module Page.NormalItems exposing (viewAccessories, viewArmors, viewShields, viewWeapons)
 
-import Datamine exposing (Datamine, Item, NormalItem(..))
+import Datamine exposing (Datamine)
+import Datamine.NormalItem as NormalItem exposing (Item, NormalItem(..))
 import Dict exposing (Dict)
 import Html as H exposing (..)
 import Html.Attributes as A exposing (..)
@@ -147,7 +148,7 @@ viewMain dm { breadcrumb, headers } items =
                                 ([ td []
                                     [ a [ Route.href <| itemRoute nitem ]
                                         [ img [ class "item-icon", View.Item.imgNormal dm nitem ] []
-                                        , Datamine.lang dm item.uiName |> Maybe.withDefault "???" |> text
+                                        , NormalItem.label dm nitem |> Maybe.withDefault "???" |> text
                                         ]
                                     ]
                                  , td [] [ text <| Maybe.Extra.unwrap "-" String.fromInt item.levelPrereq ]

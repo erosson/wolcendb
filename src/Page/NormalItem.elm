@@ -1,6 +1,7 @@
 module Page.NormalItem exposing (viewAccessory, viewArmor, viewShield, viewWeapon)
 
-import Datamine exposing (Datamine, Item, NormalItem(..))
+import Datamine exposing (Datamine)
+import Datamine.NormalItem as NormalItem exposing (Item, NormalItem(..))
 import Dict exposing (Dict)
 import Html as H exposing (..)
 import Html.Attributes as A exposing (..)
@@ -112,7 +113,7 @@ viewMain m nitem item =
             m.datamine
 
         label =
-            Datamine.lang dm item.uiName |> Maybe.withDefault "???" |> text
+            NormalItem.label dm nitem |> Maybe.withDefault "???" |> text
     in
     [ div [ class "container" ]
         [ View.Nav.view
@@ -143,6 +144,6 @@ viewMain m nitem item =
                 , small [ class "text-muted" ] [ text "Keywords: ", text <| String.join ", " item.keywords ]
                 ]
             ]
-        , div [] <| View.Affix.viewItem dm m.expandedAffixClasses <| Datamine.itemAffixes dm item
+        , div [] <| View.Affix.viewItem dm m.expandedAffixClasses <| NormalItem.possibleAffixes dm item
         ]
     ]

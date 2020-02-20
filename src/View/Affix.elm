@@ -1,7 +1,5 @@
 module View.Affix exposing
     ( ItemMsg(..)
-    , formatEffect
-    , formatPassiveEffect
     , formatRarity
     , viewAffix
     , viewAffixes
@@ -13,7 +11,10 @@ module View.Affix exposing
     , viewNonmagicIds
     )
 
-import Datamine exposing (Affix, Datamine, MagicAffix, MagicEffect, PassiveEffect, Range, Rarity)
+import Datamine exposing (Datamine)
+import Datamine.Affix as Affix exposing (Affix, MagicAffix, MagicEffect, Rarity)
+import Datamine.Passive as Passive exposing (Passive, PassiveEffect)
+import Datamine.Util exposing (Range)
 import Dict exposing (Dict)
 import Dict.Extra
 import Html as H exposing (..)
@@ -26,12 +27,12 @@ import Set exposing (Set)
 
 viewNonmagicIds : Datamine -> List String -> List (Html msg)
 viewNonmagicIds dm =
-    Datamine.nonmagicAffixes dm >> viewAffixes dm
+    Affix.getNonmagicIds dm >> viewAffixes dm
 
 
 viewMagicIds : Datamine -> List String -> List (Html msg)
 viewMagicIds dm =
-    Datamine.magicAffixes dm >> viewAffixes dm
+    Affix.getMagicIds dm >> viewAffixes dm
 
 
 viewAffixes : Datamine -> List (Affix a) -> List (Html msg)
@@ -54,68 +55,6 @@ viewAffix dm a =
     viewAffixes dm [ a ]
 
 
-formatEffect : Datamine -> MagicEffect -> Maybe String
-formatEffect dm effect =
-    let
-        stats =
-            -- TODO: sometimes stats are out of order, but I haven't been able to find a pattern. JSON decoding seems fine.
-            if effect.effectId == "default_attacks_chain" then
-                effect.stats |> List.reverse
-
-            else
-                effect.stats
-    in
-    "@ui_eim_"
-        ++ effect.effectId
-        |> Datamine.lang dm
-        |> Maybe.map
-            (\template ->
-                stats
-                    |> List.indexedMap Tuple.pair
-                    |> List.foldl formatEffectStat template
-            )
-
-
-formatPassiveEffect : Datamine -> PassiveEffect -> Maybe String
-formatPassiveEffect dm effect =
-    effect.hudDesc
-        |> Maybe.andThen (Datamine.lang dm)
-        |> Maybe.map
-            (\template ->
-                effect.semantics
-                    |> List.map (Tuple.mapSecond (\v -> Range v v))
-                    |> List.indexedMap Tuple.pair
-                    |> List.foldl formatEffectStat template
-            )
-
-
-formatEffectStat : ( Int, ( String, Range Float ) ) -> String -> String
-formatEffectStat ( index, ( name, stat ) ) =
-    let
-        val =
-            --(if stat.min > 0 && stat.max > 0 then
-            --    "+"
-            --
-            -- else
-            --    ""
-            --)
-            -- ++
-            if stat.min == stat.max then
-                String.fromFloat stat.min
-
-            else
-                "(" ++ String.fromFloat stat.min ++ "-" ++ String.fromFloat stat.max ++ ")"
-
-        suffix =
-            if String.contains "percent" (String.toLower name) then
-                "%"
-
-            else
-                ""
-    in
-    String.replace ("%" ++ String.fromInt (index + 1)) <| val ++ suffix
-
-
 
 -- >> String.replace "-+" "-"
 
@@ -124,7 +63,7 @@ viewEffect : Datamine -> MagicEffect -> List (Html msg)
 viewEffect dm effect =
     -- [ text effect.effectId
     [ span [ title <| "@ui_eim_" ++ effect.effectId ++ "; " ++ (effect.stats |> List.map Tuple.first |> String.join ", ") ]
-        [ text <| Maybe.withDefault "???" <| formatEffect dm effect
+        [ text <| Maybe.withDefault "???" <| Affix.formatEffect dm effect
 
         -- , text <| Debug.toString effect
         ]
@@ -318,7 +257,7 @@ viewItemAffixClassSummary dm totalWeight expanded effects =
         []
     , effects
         |> summarizeEffects
-        |> List.filterMap (formatEffect dm)
+        |> List.filterMap (Affix.formatEffect dm)
         |> List.map (\s -> div [] [ text s ])
         |> div []
     ]

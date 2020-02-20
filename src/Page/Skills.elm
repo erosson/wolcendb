@@ -1,6 +1,7 @@
 module Page.Skills exposing (view)
 
 import Datamine exposing (Datamine)
+import Datamine.Skill as Skill exposing (Skill)
 import Dict exposing (Dict)
 import Html as H exposing (..)
 import Html.Attributes as A exposing (..)
@@ -42,7 +43,7 @@ view dm =
                                     ]
                                 , td [ title s.uiName ]
                                     [ a [ Route.href <| Route.Skill s.uid ]
-                                        [ Datamine.lang dm s.uiName |> Maybe.withDefault "???" |> text
+                                        [ Skill.label dm s |> Maybe.withDefault "???" |> text
                                         ]
                                     ]
                                 , td [ title <| s.uiName ++ "_desc" ]

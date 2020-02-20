@@ -1,6 +1,12 @@
 module Page.Source exposing (view)
 
-import Datamine exposing (Datamine, Source, SourceNode, SourceNodeChildren(..))
+import Datamine exposing (Datamine)
+import Datamine.Gem as Gem
+import Datamine.NormalItem as NormalItem
+import Datamine.Passive as Passive
+import Datamine.Skill as Skill
+import Datamine.Source exposing (Source, SourceNode, SourceNodeChildren(..))
+import Datamine.UniqueItem as UniqueItem
 import Dict exposing (Dict)
 import Html as H exposing (..)
 import Html.Attributes as A exposing (..)
@@ -35,7 +41,7 @@ getSource dm type_ id =
                     (\s ->
                         let
                             label =
-                                Datamine.lang dm s.uiName |> Maybe.withDefault "???"
+                                Skill.label dm s |> Maybe.withDefault "???"
 
                             ast =
                                 Dict.get s.uid dm.skillASTsByName
@@ -56,7 +62,7 @@ getSource dm type_ id =
                     (\s ->
                         let
                             label =
-                                Datamine.lang dm s.uiName |> Maybe.withDefault "???"
+                                Skill.label dm s |> Maybe.withDefault "???"
 
                             ast =
                                 Dict.get (String.toLower id) dm.skillASTVariantsByUid
@@ -77,7 +83,7 @@ getSource dm type_ id =
                     (\gem ->
                         let
                             label =
-                                Datamine.lang dm gem.uiName |> Maybe.withDefault "???"
+                                Gem.label dm gem |> Maybe.withDefault "???"
                         in
                         ( label
                         , [ gem.source ]
@@ -93,25 +99,11 @@ getSource dm type_ id =
                 |> Maybe.map
                     (\nitem ->
                         let
-                            ( source, uiName, affixes ) =
-                                case nitem of
-                                    Datamine.NWeapon i ->
-                                        ( i.source, i.uiName, i.implicitAffixes )
-
-                                    Datamine.NShield i ->
-                                        ( i.source, i.uiName, i.implicitAffixes )
-
-                                    Datamine.NArmor i ->
-                                        ( i.source, i.uiName, i.implicitAffixes )
-
-                                    Datamine.NAccessory i ->
-                                        ( i.source, i.uiName, i.implicitAffixes )
-
                             label =
-                                Datamine.lang dm uiName |> Maybe.withDefault "???"
+                                NormalItem.label dm nitem |> Maybe.withDefault "???"
                         in
                         ( label
-                        , source :: List.filterMap (\a -> Dict.get a dm.nonmagicAffixesById |> Maybe.map .source) affixes
+                        , NormalItem.source nitem :: List.filterMap (\a -> Dict.get a dm.nonmagicAffixesById |> Maybe.map .source) (NormalItem.affixes nitem)
                         , [ a [ class "breadcrumb-item active" ] [ text "Normal Loot" ]
                           , a [ class "breadcrumb-item active" ] [ text label ]
                           , a [ class "breadcrumb-item active", Route.href <| Route.Source type_ id ] [ text "Source" ]
@@ -124,25 +116,11 @@ getSource dm type_ id =
                 |> Maybe.map
                     (\uitem ->
                         let
-                            ( source, uiName, affixes ) =
-                                case uitem of
-                                    Datamine.UWeapon i ->
-                                        ( i.source, i.uiName, i.implicitAffixes ++ i.defaultAffixes )
-
-                                    Datamine.UShield i ->
-                                        ( i.source, i.uiName, i.implicitAffixes ++ i.defaultAffixes )
-
-                                    Datamine.UArmor i ->
-                                        ( i.source, i.uiName, i.implicitAffixes ++ i.defaultAffixes )
-
-                                    Datamine.UAccessory i ->
-                                        ( i.source, i.uiName, i.implicitAffixes ++ i.defaultAffixes )
-
                             label =
-                                Datamine.lang dm uiName |> Maybe.withDefault "???"
+                                UniqueItem.label dm uitem |> Maybe.withDefault "???"
                         in
                         ( label
-                        , source :: List.filterMap (\a -> Dict.get a dm.nonmagicAffixesById |> Maybe.map .source) affixes
+                        , UniqueItem.source uitem :: List.filterMap (\a -> Dict.get a dm.nonmagicAffixesById |> Maybe.map .source) (UniqueItem.affixes uitem)
                         , [ a [ class "breadcrumb-item active" ] [ text "Unique Loot" ]
                           , a [ class "breadcrumb-item active" ] [ text label ]
                           , a [ class "breadcrumb-item active", Route.href <| Route.Source type_ id ] [ text "Source" ]
@@ -182,7 +160,7 @@ getSource dm type_ id =
                     (\( entry, passive, tree ) ->
                         let
                             label =
-                                Datamine.lang dm passive.uiName |> Maybe.withDefault "???"
+                                Passive.label dm passive |> Maybe.withDefault "???"
                         in
                         ( label
                         , [ passive.source, entry.source ]

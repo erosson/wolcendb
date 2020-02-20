@@ -1,6 +1,8 @@
 module Page.Gems exposing (view)
 
-import Datamine exposing (Datamine, Socket(..))
+import Datamine exposing (Datamine)
+import Datamine.Affix as Affix
+import Datamine.Gem as Gem exposing (Socket(..))
 import Dict exposing (Dict)
 import Html as H exposing (..)
 import Html.Attributes as A exposing (..)
@@ -34,7 +36,7 @@ view dm =
                             tr []
                                 [ td [ title gem.uiName ]
                                     [ div [] [ img [ class "skill-icon", View.Item.imgGem gem ] [] ]
-                                    , Datamine.lang dm gem.uiName |> Maybe.withDefault "???" |> text
+                                    , Gem.label dm gem |> Maybe.withDefault "???" |> text
                                     , div [] [ text "[", a [ Route.href <| Route.Source "gem" gem.name ] [ text "Source" ], text "]" ]
                                     ]
                                 , td []
@@ -45,7 +47,7 @@ view dm =
                                                     li [ class "list-group-item", style "display" "inline" ]
                                                         -- (viewSocket socket :: View.Affix.viewNonmagicId dm affixId)
                                                         (viewSocket socket
-                                                            :: (Datamine.nonmagicAffixes dm [ affixId ]
+                                                            :: (Affix.getNonmagicIds dm [ affixId ]
                                                                     |> List.concatMap .effects
                                                                     |> List.concatMap (View.Affix.viewEffect dm)
                                                                )

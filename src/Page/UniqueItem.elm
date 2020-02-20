@@ -1,6 +1,7 @@
 module Page.UniqueItem exposing (viewAccessory, viewArmor, viewShield, viewWeapon)
 
-import Datamine exposing (Datamine, UItem, UniqueItem(..))
+import Datamine exposing (Datamine)
+import Datamine.UniqueItem as UniqueItem exposing (UItem, UniqueItem(..))
 import Dict exposing (Dict)
 import Html as H exposing (..)
 import Html.Attributes as A exposing (..)
@@ -100,7 +101,7 @@ viewMain : Datamine -> UniqueItem -> UItem i -> List (Html msg)
 viewMain dm uitem item =
     let
         label =
-            Datamine.lang dm item.uiName |> Maybe.withDefault "???" |> text
+            UniqueItem.label dm uitem |> Maybe.withDefault "???" |> text
     in
     [ div [ class "container" ]
         [ View.Nav.view

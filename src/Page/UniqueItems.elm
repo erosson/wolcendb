@@ -1,6 +1,7 @@
 module Page.UniqueItems exposing (viewAccessories, viewArmors, viewShields, viewWeapons)
 
-import Datamine exposing (Datamine, UItem, UniqueItem(..))
+import Datamine exposing (Datamine)
+import Datamine.UniqueItem as UniqueItem exposing (UItem, UniqueItem(..))
 import Dict exposing (Dict)
 import Html as H exposing (..)
 import Html.Attributes as A exposing (..)
@@ -143,14 +144,14 @@ viewMain dm { breadcrumb, headers } items =
             [ thead [] [ tr [] headers ]
             , tbody []
                 (items
-                    |> List.filter (\( _, item ) -> Datamine.lang dm item.uiName |> Maybe.Extra.isJust)
+                    |> List.filter (\( uitem, _ ) -> UniqueItem.label dm uitem |> Maybe.Extra.isJust)
                     |> List.map
                         (\( uitem, item ) ->
                             tr []
                                 ([ td []
                                     [ a [ Route.href <| itemRoute uitem ]
                                         [ img [ class "item-icon", View.Item.imgUnique dm uitem ] []
-                                        , Datamine.lang dm item.uiName |> Maybe.withDefault "???" |> text
+                                        , UniqueItem.label dm uitem |> Maybe.withDefault "???" |> text
                                         ]
                                     ]
                                  , td [] [ text <| Maybe.Extra.unwrap "-" String.fromInt item.levelPrereq ]

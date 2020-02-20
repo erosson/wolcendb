@@ -2,6 +2,7 @@ module Page.Search exposing (Msg, update, view)
 
 import Browser.Navigation as Nav
 import Datamine exposing (Datamine)
+import Datamine.Gem as Gem exposing (Gem)
 import Dict exposing (Dict)
 import Html as H exposing (..)
 import Html.Attributes as A exposing (..)
@@ -68,7 +69,7 @@ toResult : Datamine -> String -> Maybe ( Route, String )
 toResult dm docId =
     case String.split "/" docId of
         [ "gem", id ] ->
-            Dict.get (String.toLower id) dm.gemsByName |> Maybe.map (\gem -> ( Route.Gems, Datamine.lang dm gem.uiName |> Maybe.withDefault "???" ))
+            Dict.get (String.toLower id) dm.gemsByName |> Maybe.map (\gem -> ( Route.Gems, Gem.label dm gem |> Maybe.withDefault "???" ))
 
         _ ->
             Nothing

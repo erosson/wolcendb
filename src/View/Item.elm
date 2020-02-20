@@ -1,6 +1,9 @@
 module View.Item exposing (imgAccessory, imgArmor, imgGem, imgNormal, imgShield, imgUArmor, imgUnique, imgWeapon)
 
-import Datamine exposing (Datamine, NormalItem(..), UniqueItem(..))
+import Datamine exposing (Datamine)
+import Datamine.NormalItem as NormalItem exposing (NormalItem(..))
+import Datamine.UniqueItem as UniqueItem exposing (UniqueItem(..))
+import Datamine.Util exposing (Range)
 import Dict exposing (Dict)
 import Html as H exposing (..)
 import Html.Attributes as A exposing (..)
@@ -37,7 +40,7 @@ imgUArmor dm item =
             src <| "/static/datamine/Game/Libs/UI/u_resources/armors/" ++ t.hudPicture
 
 
-imgWeapon : Datamine -> { item | name : String, damage : Datamine.Range (Maybe Int) } -> H.Attribute msg
+imgWeapon : Datamine -> { item | name : String, damage : Range (Maybe Int) } -> H.Attribute msg
 imgWeapon dm item =
     imgShield dm item
 
