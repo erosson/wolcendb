@@ -46,8 +46,10 @@ type alias OkModel =
     , changelog : String
     , route : Maybe Route
 
-    -- TODO: this really belongs in a per-page model
+    -- TODO: these really belong in a per-page model
     , expandedAffixClasses : Set String
+    , globalSearch : String
+    , globalSearchResults : Result String (List ( String, Float ))
     }
 
 
@@ -70,16 +72,31 @@ init flags url nav =
                     ( Err err, Cmd.none )
 
                 Ok searchIndex ->
-                    ( Ok
-                        { nav = nav
-                        , datamine = datamine
-                        , searchIndex = searchIndex
-                        , changelog = flags.changelog
-                        , route = Route.parse url
-                        , expandedAffixClasses = Set.empty
-                        }
-                    , Cmd.none
-                    )
+                    { nav = nav
+                    , datamine = datamine
+                    , searchIndex = searchIndex
+                    , changelog = flags.changelog
+                    , route = Nothing
+                    , expandedAffixClasses = Set.empty
+                    , globalSearch = ""
+                    , globalSearchResults = Ok []
+                    }
+                        |> routeTo (Route.parse url)
+                        |> Tuple.mapFirst Ok
+
+
+routeTo : Maybe Route -> OkModel -> ( OkModel, Cmd Msg )
+routeTo mroute model0 =
+    let
+        model =
+            { model0 | route = mroute }
+    in
+    case mroute of
+        Just (Route.Search q) ->
+            ( Page.Search.init q model, Cmd.none )
+
+        _ ->
+            ( model, Cmd.none )
 
 
 
@@ -108,7 +125,7 @@ updateOk : Msg -> OkModel -> ( OkModel, Cmd Msg )
 updateOk msg model =
     case msg of
         OnUrlChange url ->
-            ( { model | route = Route.parse url }, Cmd.none )
+            routeTo (Route.parse url) model
 
         OnUrlRequest (Browser.Internal url) ->
             ( model, url |> Url.toString |> Nav.pushUrl model.nav )
@@ -239,7 +256,7 @@ viewBody mmodel =
                                 |> Maybe.withDefault viewNotFound
 
                         Route.Search query ->
-                            Page.Search.view model query
+                            Page.Search.view model
                                 |> List.map (H.map SearchMsg)
 
                         Route.Changelog ->

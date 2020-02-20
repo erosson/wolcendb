@@ -1,6 +1,7 @@
 module Datamine.Affix exposing
     ( Affix
     , Affixes
+    , Datamine
     , MagicAffix
     , MagicEffect
     , NonmagicAffix

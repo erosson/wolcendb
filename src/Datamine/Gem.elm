@@ -1,5 +1,6 @@
-module Datamine.Gem exposing (Gem, Socket(..), decoder, label)
+module Datamine.Gem exposing (Gem, Socket(..), decoder, effects, label)
 
+import Datamine.Affix as Affix
 import Datamine.Lang as Lang
 import Datamine.Source as Source exposing (Source)
 import Datamine.Util as Util
@@ -30,6 +31,53 @@ type Socket
 label : Lang.Datamine d -> Gem -> Maybe String
 label dm s =
     Lang.get dm s.uiName
+
+
+formatSocket : Socket -> String
+formatSocket socket =
+    case socket of
+        Offensive 1 ->
+            "Offensive I: "
+
+        Offensive 2 ->
+            "Offensive II: "
+
+        Offensive 3 ->
+            "Offensive III: "
+
+        Defensive 1 ->
+            "Defensive I: "
+
+        Defensive 2 ->
+            "Defensive II: "
+
+        Defensive 3 ->
+            "Defensive III: "
+
+        Support 1 ->
+            "Support I: "
+
+        Support 2 ->
+            "Support II: "
+
+        Support 3 ->
+            "Support III: "
+
+        _ ->
+            "???SOCKET???: "
+
+
+effects : Affix.Datamine d -> Gem -> List String
+effects dm =
+    .effects
+        >> List.map
+            (\( socket, affixId ) ->
+                Affix.getNonmagicIds dm [ affixId ]
+                    |> List.concatMap .effects
+                    |> List.filterMap (Affix.formatEffect dm)
+                    |> List.map ((++) (formatSocket socket))
+            )
+        >> List.concat
 
 
 decoder : D.Decoder (List Gem)

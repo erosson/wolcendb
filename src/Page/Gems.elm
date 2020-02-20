@@ -41,19 +41,7 @@ view dm =
                                     ]
                                 , td []
                                     [ ul [ class "list-group affixes nowrap" ]
-                                        (gem.effects
-                                            |> List.map
-                                                (\( socket, affixId ) ->
-                                                    li [ class "list-group-item", style "display" "inline" ]
-                                                        -- (viewSocket socket :: View.Affix.viewNonmagicId dm affixId)
-                                                        (viewSocket socket
-                                                            :: (Affix.getNonmagicIds dm [ affixId ]
-                                                                    |> List.concatMap .effects
-                                                                    |> List.concatMap (View.Affix.viewEffect dm)
-                                                               )
-                                                        )
-                                                )
-                                        )
+                                        (Gem.effects dm gem |> List.map (\s -> li [ class "list-group-item", style "display" "inline" ] [ text s ]))
                                     ]
                                 ]
                         )
@@ -61,38 +49,3 @@ view dm =
             ]
         ]
     ]
-
-
-viewSocket : Socket -> Html msg
-viewSocket socket =
-    text <|
-        case socket of
-            Offensive 1 ->
-                "Offensive I: "
-
-            Offensive 2 ->
-                "Offensive II: "
-
-            Offensive 3 ->
-                "Offensive III: "
-
-            Defensive 1 ->
-                "Defensive I: "
-
-            Defensive 2 ->
-                "Defensive II: "
-
-            Defensive 3 ->
-                "Defensive III: "
-
-            Support 1 ->
-                "Support I: "
-
-            Support 2 ->
-                "Support II: "
-
-            Support 3 ->
-                "Support III: "
-
-            _ ->
-                "???SOCKET???"

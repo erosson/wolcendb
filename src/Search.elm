@@ -52,12 +52,7 @@ docs dm =
                 , localId = gem.name
                 , title = Gem.label dm gem |> Maybe.withDefault "???"
                 , body = ""
-                , effects =
-                    gem.effects
-                        |> List.map Tuple.second
-                        |> List.concatMap (\affixId -> Affix.getNonmagicIds dm [ affixId ])
-                        |> List.concatMap .effects
-                        |> List.filterMap (Affix.formatEffect dm)
+                , effects = Gem.effects dm gem
                 , keywords = gem.keywords
                 , lore = ""
                 }
