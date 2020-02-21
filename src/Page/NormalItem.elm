@@ -137,7 +137,7 @@ viewMain m nitem item =
 
                     _ ->
                         []
-            , ul [ class "list-group affixes" ] <| View.Affix.viewNonmagicIds dm item.implicitAffixes
+            , ul [ class "list-group affixes" ] (NormalItem.implicitEffects dm nitem |> List.map (\s -> li [ class "list-group-item" ] [ text s ]))
             , small [ class "text-muted" ] [ text "Keywords: ", text <| String.join ", " item.keywords ]
             ]
         ]

@@ -50,7 +50,6 @@ view m =
 
         Ok results ->
             results
-                |> List.take 25
                 |> List.map (viewResult >> li [ class "list-group-item" ])
                 |> ul [ class "list-group" ]
     ]

@@ -99,7 +99,7 @@ getSource dm type_ id =
                                 NormalItem.label dm nitem |> Maybe.withDefault "???"
                         in
                         ( label
-                        , NormalItem.source nitem :: List.filterMap (\a -> Dict.get a dm.nonmagicAffixesById |> Maybe.map .source) (NormalItem.affixes nitem)
+                        , NormalItem.source nitem :: List.filterMap (\a -> Dict.get a dm.nonmagicAffixesById |> Maybe.map .source) (NormalItem.implicitAffixes nitem)
                         , [ a [ class "breadcrumb-item active" ] [ text "Normal Loot" ]
                           , a [ class "breadcrumb-item active" ] [ text label ]
                           , a [ class "breadcrumb-item active", Route.href <| Route.Source type_ id ] [ text "Source" ]
@@ -116,7 +116,9 @@ getSource dm type_ id =
                                 UniqueItem.label dm uitem |> Maybe.withDefault "???"
                         in
                         ( label
-                        , UniqueItem.source uitem :: List.filterMap (\a -> Dict.get a dm.nonmagicAffixesById |> Maybe.map .source) (UniqueItem.affixes uitem)
+                        , UniqueItem.source uitem
+                            :: List.filterMap (\a -> Dict.get a dm.nonmagicAffixesById |> Maybe.map .source)
+                                (UniqueItem.implicitAffixes uitem ++ UniqueItem.defaultAffixes uitem)
                         , [ a [ class "breadcrumb-item active" ] [ text "Unique Loot" ]
                           , a [ class "breadcrumb-item active" ] [ text label ]
                           , a [ class "breadcrumb-item active", Route.href <| Route.Source type_ id ] [ text "Source" ]

@@ -4,11 +4,15 @@ module Datamine.Passive exposing
     , PassiveTree
     , PassiveTreeEntry
     , decoder
-    , format
+    , desc
+    , effects
     , label
+    , lore
+    , nodeTypeLabel
     , treesDecoder
     )
 
+import Datamine.Affix as Affix
 import Datamine.Lang as Lang
 import Datamine.Source as Source exposing (Source)
 import Datamine.Util as Util
@@ -56,8 +60,38 @@ label dm s =
     Lang.get dm s.uiName
 
 
-format : Lang.Datamine d -> PassiveEffect -> Maybe String
-format dm effect =
+desc : Lang.Datamine d -> Passive -> Maybe String
+desc dm s =
+    Lang.mget dm s.gameplayDesc
+
+
+lore : Lang.Datamine d -> Passive -> Maybe String
+lore dm s =
+    Lang.mget dm s.hudLoreDesc
+
+
+nodeTypeLabel : Lang.Datamine d -> PassiveTreeEntry -> PassiveTree -> String
+nodeTypeLabel dm entry tree =
+    (label dm tree |> Maybe.withDefault "Unknown")
+        ++ (case entry.rarity of
+                2 ->
+                    " Notable"
+
+                3 ->
+                    " Keystone"
+
+                _ ->
+                    ""
+           )
+
+
+effects : Affix.Datamine d -> Passive -> List String
+effects dm =
+    .effects >> List.filterMap (formatEffect dm)
+
+
+formatEffect : Lang.Datamine d -> PassiveEffect -> Maybe String
+formatEffect dm effect =
     Lang.mget dm effect.hudDesc
         |> Maybe.map
             (\template ->

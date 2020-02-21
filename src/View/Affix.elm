@@ -55,17 +55,10 @@ viewAffix dm a =
     viewAffixes dm [ a ]
 
 
-
--- >> String.replace "-+" "-"
-
-
 viewEffect : Datamine -> MagicEffect -> List (Html msg)
 viewEffect dm effect =
-    -- [ text effect.effectId
     [ span [ title <| "@ui_eim_" ++ effect.effectId ++ "; " ++ (effect.stats |> List.map Tuple.first |> String.join ", ") ]
         [ text <| Maybe.withDefault "???" <| Affix.formatEffect dm effect
-
-        -- , text <| Debug.toString effect
         ]
     ]
 

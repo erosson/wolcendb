@@ -1,9 +1,10 @@
 module Datamine.NormalItem exposing
     ( Item
     , NormalItem(..)
-    , affixes
     , commonLootDecoder
     , decoder
+    , implicitAffixes
+    , implicitEffects
     , keywords
     , label
     , name
@@ -135,8 +136,8 @@ source nitem =
             i.source
 
 
-affixes : NormalItem -> List String
-affixes nitem =
+implicitAffixes : NormalItem -> List String
+implicitAffixes nitem =
     case nitem of
         NWeapon i ->
             i.implicitAffixes
@@ -149,6 +150,14 @@ affixes nitem =
 
         NAccessory i ->
             i.implicitAffixes
+
+
+implicitEffects : Affix.Datamine d -> NormalItem -> List String
+implicitEffects dm =
+    implicitAffixes
+        >> Affix.getNonmagicIds dm
+        >> List.concatMap .effects
+        >> List.filterMap (Affix.formatEffect dm)
 
 
 name : NormalItem -> String

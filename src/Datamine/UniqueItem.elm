@@ -1,14 +1,19 @@
 module Datamine.UniqueItem exposing
     ( UItem
     , UniqueItem(..)
-    , affixes
     , decoder
+    , defaultAffixes
+    , defaultEffects
+    , implicitAffixes
+    , implicitEffects
     , keywords
     , label
+    , lore
     , name
     , source
     )
 
+import Datamine.Affix as Affix exposing (Affixes, MagicAffix)
 import Datamine.Lang as Lang
 import Datamine.NormalItem as NormalItem exposing (Item)
 import Datamine.Source as Source exposing (Source)
@@ -138,8 +143,25 @@ source uitem =
             i.source
 
 
-affixes : UniqueItem -> List String
-affixes uitem =
+lore : Lang.Datamine d -> UniqueItem -> Maybe String
+lore dm n =
+    Lang.mget dm <|
+        case n of
+            UWeapon i ->
+                i.lore
+
+            UShield i ->
+                i.lore
+
+            UArmor i ->
+                i.lore
+
+            UAccessory i ->
+                i.lore
+
+
+implicitAffixes : UniqueItem -> List String
+implicitAffixes uitem =
     case uitem of
         UWeapon i ->
             i.implicitAffixes
@@ -152,6 +174,38 @@ affixes uitem =
 
         UAccessory i ->
             i.implicitAffixes
+
+
+implicitEffects : Affix.Datamine d -> UniqueItem -> List String
+implicitEffects dm =
+    implicitAffixes
+        >> Affix.getNonmagicIds dm
+        >> List.concatMap .effects
+        >> List.filterMap (Affix.formatEffect dm)
+
+
+defaultAffixes : UniqueItem -> List String
+defaultAffixes uitem =
+    case uitem of
+        UWeapon i ->
+            i.defaultAffixes
+
+        UShield i ->
+            i.defaultAffixes
+
+        UArmor i ->
+            i.defaultAffixes
+
+        UAccessory i ->
+            i.defaultAffixes
+
+
+defaultEffects : Affix.Datamine d -> UniqueItem -> List String
+defaultEffects dm =
+    defaultAffixes
+        >> Affix.getNonmagicIds dm
+        >> List.concatMap .effects
+        >> List.filterMap (Affix.formatEffect dm)
 
 
 name : UniqueItem -> String

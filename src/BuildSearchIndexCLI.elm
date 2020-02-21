@@ -36,7 +36,7 @@ init flags =
             case Search.createIndex dm of
                 Err errList ->
                     errList
-                        |> E.list (\( i, err ) -> E.list identity [ E.int i, E.string err ])
+                        |> E.list (\( i, id, err ) -> E.list identity [ E.int i, E.string id, E.string err ])
                         |> stderr
 
                 Ok index ->
