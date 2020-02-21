@@ -30,14 +30,14 @@ all =
             \_ ->
                 Search.createIndex datamine
                     |> Result.mapError Debug.toString
-                    |> Result.andThen (Search.search "topaz")
+                    |> Result.andThen (Search.search datamine "topaz")
                     |> Result.map (Tuple.second >> List.length)
-                    |> Expect.equal (Ok 12)
+                    |> Expect.equal (Ok 18)
         , test "use search index id" <|
             \_ ->
                 Search.createIndex datamine
                     |> Result.mapError Debug.toString
-                    |> Result.andThen (Search.search "fire_gem_tier_")
+                    |> Result.andThen (Search.search datamine "fire_gem_tier_")
                     |> Result.map (Tuple.second >> List.length)
                     |> Expect.equal (Ok 12)
 
