@@ -43,8 +43,8 @@ type alias DropParams =
     , craftOnly : Bool
     , sarisel : Bool
     , itemLevel : Util.Range Int
-    , optionalKeywords : List String
     , mandatoryKeywords : List String
+    , optionalKeywords : List String
     , rarity : Rarity
     }
 

@@ -187,9 +187,9 @@ Includes craftable and sarisel affixes.
 I have no authoritative source for how this works. Below I've implemented my own theory -
 seems to yield decent results, and I'm not aware of any counterexamples:
 
-  - All of an affix's optional keywords must be present on an item. (Great name for this one, yes?)
+  - All of an affix's mandatory keywords must be present on an item.
 
-  - If an affix has any mandatory keywords, at least one of them must be present on an item
+  - If an affix has any optional keywords, at least one of them must be present on an item
 
   - Item level, like poe and diablo, depends on the monster level that drops the item.
     (Confirmed this by viewing my save file during offline play.) This is what
@@ -215,9 +215,9 @@ possibleAffixes dm item =
     dm.affixes.magic
         |> List.filter
             (\affix ->
-                List.all isItemKeyword affix.drop.optionalKeywords
-                    && (List.any isItemKeyword affix.drop.mandatoryKeywords
-                            || (affix.drop.mandatoryKeywords == [])
+                List.all isItemKeyword affix.drop.mandatoryKeywords
+                    && (List.any isItemKeyword affix.drop.optionalKeywords
+                            || (affix.drop.optionalKeywords == [])
                        )
             )
 

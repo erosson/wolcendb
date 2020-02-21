@@ -3,7 +3,11 @@ Changelog
 
 ---
 
-#### 2020-02-19
+#### 2020-02-21
+- Fixed a bug with affixes that reversed their mandatory keywords and optional keywords.
+  - Possible affixes per item have not changed.
+
+#### 2020-02-20
 - Added a sitewide search bar.
 - Extracted files from the latest Wolcen version, v1.0.4.
 
