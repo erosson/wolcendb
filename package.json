@@ -12,7 +12,7 @@
     "build-search-index": "bash -c \"elm make src/BuildSearchIndexCLI.elm --output datamine.tmp/BuildSearchIndexCLI.elm.js && node --experimental-modules src/build-search-index-cli.mjs\"",
     "export": "bash -c \"cd third-party/WolcenExtractor && ruby src/main.rb extract --source \\\"`cat ../../GAMEPATH`\\\" --dest ../../datamine.tmp --only english_xml.pak,umbra.pak,Libs_UI_ && cp \\\"`cat GAMEPATH`\\\"/revision.txt datamine.tmp/revision.txt && yarn export:cp\"",
     "start": "bash -c \"ELM_DEBUGGER=false elm-app start\"",
-    "build": "bash -c \"elm-app build\"",
+    "build": "bash -c \"yarn build-search-index && elm-app build\"",
     "build:ci": "bash -c \"yarn test && yarn build\"",
     "test": "node --experimental-modules tests/fixture.mjs && elm-app test"
   },
