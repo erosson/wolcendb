@@ -24,6 +24,7 @@ import Page.Skills
 import Page.Source
 import Page.UniqueItem
 import Page.UniqueItems
+import Ports
 import Route exposing (Route)
 import Search exposing (SearchResult)
 import Set exposing (Set)
@@ -128,6 +129,7 @@ updateOk msg model =
     case msg of
         OnUrlChange url ->
             routeTo (Route.parse url) model
+                |> Tuple.mapSecond (\cmd -> Cmd.batch [ cmd, Ports.urlChange { path = url.path, query = url.query } ])
 
         OnUrlRequest (Browser.Internal url) ->
             ( model, url |> Url.toString |> Nav.pushUrl model.nav )
