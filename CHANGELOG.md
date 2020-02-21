@@ -5,6 +5,7 @@ Changelog
 
 #### 2020-02-19
 - Added a sitewide search bar.
+- Extracted files from the latest Wolcen version, v1.0.4.
 
 #### 2020-02-19
 - Added `[source]` links throughout the site. These link to excerpts from the Wolcen game files that WolcenDB gets its data from.
