@@ -14,6 +14,8 @@ To get started, from the root of the repository:
 * `yarn && yarn export:install` sets up the website and WolcenExtractor, respectively
 * `echo $PATH_TO_YOUR_WOLCEN_INSTALL > GAMEPATH`, replacing the path appropriately, so we know where to extract files from
 * `yarn export` extracts Wolcen files. This will break if you haven't written the `GAMEPATH` file above
+  * It runs `yarn export:cp` to rebuild things in `/datamine/`
+  * It runs `yarn build-search-index` to rebuild the data used for fast sitewide search
 
 The everyday workflow:
 
