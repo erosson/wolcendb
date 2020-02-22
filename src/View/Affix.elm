@@ -108,7 +108,7 @@ viewItemAffixes title dm expandeds affixes =
             affixes |> List.map classOrId |> List.Extra.unique
 
         totalWeight =
-            affixes |> List.map (.drop >> .frequency) |> List.sum
+            affixes |> List.filter (\a -> not a.drop.sarisel) |> List.map (\a -> a.drop.frequency) |> List.sum
     in
     if affixes == [] then
         div [] []
@@ -138,13 +138,8 @@ viewItemAffixClass dm totalWeight expandeds ( name, affixes ) =
                 expanded =
                     Set.member name expandeds
             in
-            (if not head.drop.craftOnly then
-                [ span [ class "badge badge-outline-light float-right" ] [ viewWeights totalWeight affixes ] ]
-
-             else
-                []
-            )
-                ++ [ affixes
+            span [ class "badge badge-outline-light float-right" ] [ viewWeights totalWeight affixes ]
+                :: [ affixes
                         |> List.concatMap .effects
                         |> viewItemAffixClassSummary dm totalWeight expanded
                         |> div
@@ -171,6 +166,7 @@ viewItemAffixRow dm totalWeight affix =
     (affix.effects |> List.concatMap (viewEffect dm))
         ++ (if affix.drop.craftOnly then
                 [ small [ class "badge badge-outline-light float-right" ] [ text "[", a [ Route.href <| Route.Source "magic-affix" affix.affixId ] [ text "s" ], text "]" ]
+                , span [ class "badge badge-outline-light float-right" ] [ viewWeight totalWeight affix ]
                 ]
 
             else
@@ -265,10 +261,14 @@ viewWeights : Int -> List MagicAffix -> Html msg
 viewWeights totalWeight affixes =
     let
         w =
-            affixes |> List.map (\a -> a.drop.frequency) |> List.sum
+            affixes |> List.filter (\a -> not a.drop.sarisel) |> List.map (\a -> a.drop.frequency) |> List.sum
     in
-    span [ title <| String.fromInt w ++ "/" ++ String.fromInt totalWeight ]
-        [ text <| percent <| toFloat w / toFloat totalWeight ]
+    if totalWeight == 0 || w == 0 then
+        span [] []
+
+    else
+        span [ title <| String.fromInt w ++ "/" ++ String.fromInt totalWeight ]
+            [ text <| percent <| toFloat w / toFloat totalWeight ]
 
 
 percent : Float -> String
