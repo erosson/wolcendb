@@ -40,7 +40,7 @@ imgUArmor dm item =
             src <| "/static/datamine/Game/Libs/UI/u_resources/armors/" ++ t.hudPicture
 
 
-imgWeapon : Datamine -> { item | name : String, damage : Range (Maybe Int) } -> H.Attribute msg
+imgWeapon : Datamine -> { item | name : String, damage : Maybe (Range Int) } -> H.Attribute msg
 imgWeapon dm item =
     imgShield dm item
 

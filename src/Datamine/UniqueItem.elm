@@ -1,6 +1,7 @@
 module Datamine.UniqueItem exposing
     ( UItem
     , UniqueItem(..)
+    , baseEffects
     , decoder
     , defaultAffixes
     , defaultEffects
@@ -48,7 +49,7 @@ type alias UniqueWeapon =
     , implicitAffixes : List String
     , defaultAffixes : List String
     , lore : Maybe String
-    , damage : Util.Range (Maybe Int)
+    , damage : Maybe (Util.Range Int)
     }
 
 
@@ -61,6 +62,9 @@ type alias UniqueShield =
     , implicitAffixes : List String
     , defaultAffixes : List String
     , lore : Maybe String
+    , shieldResistance : Maybe (Util.Range Int)
+    , shieldBlockChance : Maybe (Util.Range Int)
+    , shieldBlockEfficiency : Maybe (Util.Range Int)
     }
 
 
@@ -74,6 +78,9 @@ type alias UniqueArmor =
     , defaultAffixes : List String
     , lore : Maybe String
     , attachmentName : Maybe String
+    , healthBonus : Maybe (Util.Range Int)
+    , forceShield : Maybe (Util.Range Int)
+    , allResistance : Maybe (Util.Range Int)
     }
 
 
@@ -208,6 +215,45 @@ defaultEffects dm =
         >> List.filterMap (Affix.formatEffect dm)
 
 
+baseEffects : Affix.Datamine d -> UniqueItem -> List String
+baseEffects dm uitem =
+    case uitem of
+        UWeapon w ->
+            [ w.damage |> Maybe.andThen formatStat |> Maybe.map (\s -> "Damage: " ++ s)
+            ]
+                |> List.filterMap identity
+
+        UShield w ->
+            [ w.shieldResistance |> Maybe.andThen formatStat |> Maybe.map (\s -> s ++ " All Resistance")
+            , w.shieldBlockChance |> Maybe.andThen formatStat |> Maybe.map (\s -> s ++ "% Block Chance")
+            , w.shieldBlockEfficiency |> Maybe.andThen formatStat |> Maybe.map (\s -> s ++ "% Block Efficiency")
+            ]
+                |> List.filterMap identity
+
+        UArmor a ->
+            [ a.healthBonus |> Maybe.andThen formatStat |> Maybe.map (\s -> s ++ " Health")
+            , a.forceShield |> Maybe.andThen formatStat |> Maybe.map (\s -> s ++ " Force Shield")
+            , a.allResistance |> Maybe.andThen formatStat |> Maybe.map (\s -> s ++ " All Resistance")
+            ]
+                |> List.filterMap identity
+
+        _ ->
+            []
+
+
+formatStat : Util.Range Int -> Maybe String
+formatStat r =
+    if r.min == r.max then
+        if r.min == 0 then
+            Nothing
+
+        else
+            Just <| String.fromInt r.min
+
+    else
+        Just <| String.fromInt r.min ++ "-" ++ String.fromInt r.max
+
+
 name : UniqueItem -> String
 name n =
     case n of
@@ -249,6 +295,21 @@ uniqueWeaponsDecoder file =
                     D.succeed UniqueShield
                         |> P.custom (Source.decoder file "Item")
                         |> uniqueLootDecoder
+                        |> P.custom
+                            (D.map2 (Maybe.map2 Util.Range)
+                                (D.maybe <| D.at [ "$", "ShieldResistanceMin" ] Util.intString)
+                                (D.maybe <| D.at [ "$", "ShieldResistanceMax" ] Util.intString)
+                            )
+                        |> P.custom
+                            (D.map2 (Maybe.map2 Util.Range)
+                                (D.maybe <| D.at [ "$", "ShieldBlockChanceMin" ] Util.intString)
+                                (D.maybe <| D.at [ "$", "ShieldBlockChanceMax" ] Util.intString)
+                            )
+                        |> P.custom
+                            (D.map2 (Maybe.map2 Util.Range)
+                                (D.maybe <| D.at [ "$", "ShieldBlockEfficiencyMin" ] Util.intString)
+                                (D.maybe <| D.at [ "$", "ShieldBlockEfficiencyMax" ] Util.intString)
+                            )
                         |> D.map UShield
 
                 else
@@ -256,9 +317,9 @@ uniqueWeaponsDecoder file =
                         |> P.custom (Source.decoder file "Item")
                         |> uniqueLootDecoder
                         |> P.custom
-                            (D.succeed Util.Range
-                                |> P.optionalAt [ "$", "LowDamage_Max" ] (Util.intString |> D.map Just) Nothing
-                                |> P.optionalAt [ "$", "HighDamage_Max" ] (Util.intString |> D.map Just) Nothing
+                            (D.map2 (Maybe.map2 Util.Range)
+                                (D.maybe <| D.at [ "$", "LowDamage_Max" ] Util.intString)
+                                (D.maybe <| D.at [ "$", "HighDamage_Max" ] Util.intString)
                             )
                         |> D.map UWeapon
             )
@@ -286,6 +347,21 @@ uniqueArmorsDecoder file =
                         |> P.custom (Source.decoder file "Item")
                         |> uniqueLootDecoder
                         |> P.optionalAt [ "$", "AttachmentName" ] (D.string |> D.map Just) Nothing
+                        |> P.custom
+                            (D.map2 (Maybe.map2 Util.Range)
+                                (D.maybe <| D.at [ "$", "HealthBonusMin" ] Util.intString)
+                                (D.maybe <| D.at [ "$", "HealthBonusMax" ] Util.intString)
+                            )
+                        |> P.custom
+                            (D.map2 (Maybe.map2 Util.Range)
+                                (D.maybe <| D.at [ "$", "ForceShieldMin" ] Util.intString)
+                                (D.maybe <| D.at [ "$", "ForceShieldMax" ] Util.intString)
+                            )
+                        |> P.custom
+                            (D.map2 (Maybe.map2 Util.Range)
+                                (D.maybe <| D.at [ "$", "AllResistanceMin" ] Util.intString)
+                                (D.maybe <| D.at [ "$", "AllResistanceMax" ] Util.intString)
+                            )
                         |> D.map UArmor
             )
         |> D.list

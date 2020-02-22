@@ -4,7 +4,8 @@ Changelog
 ---
 
 #### 2020-02-22
-- Add a list of reagents.
+- Added a list of reagents.
+- Added armor and shield properties.
 
 #### 2020-02-21
 - Fixed a bug with affixes that reversed their mandatory keywords and optional keywords.

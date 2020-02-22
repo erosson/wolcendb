@@ -48,6 +48,7 @@ viewShields dm =
         , headers =
             [ th [] [ text "name" ]
             , th [] [ text "level" ]
+            , th [] [ text "properties" ]
             , th [] [ text "keywords" ]
             ]
         }
@@ -74,6 +75,7 @@ viewArmors dm =
         , headers =
             [ th [] [ text "name" ]
             , th [] [ text "level" ]
+            , th [] [ text "properties" ]
             , th [] [ text "keywords" ]
             ]
         }
@@ -100,6 +102,7 @@ viewAccessories dm =
         , headers =
             [ th [] [ text "name" ]
             , th [] [ text "level" ]
+            , th [] [ text "" ]
             , th [] [ text "keywords" ]
             ]
         }
@@ -142,30 +145,16 @@ viewMain dm { breadcrumb, headers } items =
                 |> List.map
                     (\( nitem, item ) ->
                         tr []
-                            ([ td []
+                            [ td []
                                 [ a [ Route.href <| itemRoute nitem ]
                                     [ img [ class "item-icon", View.Item.imgNormal dm nitem ] []
                                     , NormalItem.label dm nitem |> Maybe.withDefault "???" |> text
                                     ]
                                 ]
-                             , td [] [ text <| Maybe.Extra.unwrap "-" String.fromInt item.levelPrereq ]
-                             ]
-                                ++ (case nitem of
-                                        NWeapon w ->
-                                            [ td []
-                                                [ Maybe.Extra.unwrap "?" String.fromInt w.damage.min
-                                                    ++ "-"
-                                                    ++ Maybe.Extra.unwrap "?" String.fromInt w.damage.max
-                                                    |> text
-                                                ]
-                                            ]
-
-                                        _ ->
-                                            []
-                                   )
-                                ++ [ td [] [ text <| String.join ", " item.keywords ]
-                                   ]
-                            )
+                            , td [] [ text <| Maybe.Extra.unwrap "-" String.fromInt item.levelPrereq ]
+                            , td [] (nitem |> NormalItem.baseEffects dm |> List.map (\s -> div [] [ text s ]))
+                            , td [] [ text <| String.join ", " item.keywords ]
+                            ]
                     )
             )
         ]

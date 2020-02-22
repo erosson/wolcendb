@@ -111,20 +111,7 @@ viewMain dm uitem item =
                 , div [] [ text "[", a [ Route.href <| Route.Source "unique-loot" item.name ] [ text "Source" ], text "]" ]
                 ]
             , p [] [ text "Level: ", text <| Maybe.Extra.unwrap "-" String.fromInt item.levelPrereq ]
-            , div [] <|
-                case uitem of
-                    UWeapon w ->
-                        [ p []
-                            [ text "Damage: "
-                            , Maybe.Extra.unwrap "?" String.fromInt w.damage.min
-                                ++ "-"
-                                ++ Maybe.Extra.unwrap "?" String.fromInt w.damage.max
-                                |> text
-                            ]
-                        ]
-
-                    _ ->
-                        []
+            , ul [ class "list-group affixes" ] (uitem |> UniqueItem.baseEffects dm |> List.map (\s -> li [ class "list-group-item" ] [ text s ]))
             , ul [ class "list-group affixes" ] <| View.Affix.viewNonmagicIds dm item.implicitAffixes
             , ul [ class "list-group affixes" ] <| View.Affix.viewNonmagicIds dm item.defaultAffixes
             , small [ class "text-muted" ] [ text "Keywords: ", text <| String.join ", " item.keywords ]

@@ -2,6 +2,7 @@ module Page.NormalItem exposing (viewAccessory, viewArmor, viewShield, viewWeapo
 
 import Datamine exposing (Datamine)
 import Datamine.NormalItem as NormalItem exposing (Item, NormalItem(..))
+import Datamine.Util exposing (Range)
 import Dict exposing (Dict)
 import Html as H exposing (..)
 import Html.Attributes as A exposing (..)
@@ -123,20 +124,7 @@ viewMain m nitem item =
                 , div [] [ text "[", a [ Route.href <| Route.Source "normal-loot" item.name ] [ text "Source" ], text "]" ]
                 ]
             , p [] [ text "Level: ", text <| Maybe.Extra.unwrap "-" String.fromInt item.levelPrereq ]
-            , div [] <|
-                case nitem of
-                    NWeapon w ->
-                        [ p []
-                            [ text "Damage: "
-                            , Maybe.Extra.unwrap "?" String.fromInt w.damage.min
-                                ++ "-"
-                                ++ Maybe.Extra.unwrap "?" String.fromInt w.damage.max
-                                |> text
-                            ]
-                        ]
-
-                    _ ->
-                        []
+            , ul [ class "list-group affixes" ] (nitem |> NormalItem.baseEffects dm |> List.map (\s -> li [ class "list-group-item" ] [ text s ]))
             , ul [ class "list-group affixes" ] (NormalItem.implicitEffects dm nitem |> List.map (\s -> li [ class "list-group-item" ] [ text s ]))
             , small [ class "text-muted" ] [ text "Keywords: ", text <| String.join ", " item.keywords ]
             ]
