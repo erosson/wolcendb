@@ -1,0 +1,196 @@
+{
+  "MetaData": {
+    "Reward": [
+      {
+        "$": {
+          "Name": "gold_to_pa_transfer_1_reward",
+          "UITitle": "@ui_gold_to_pa_transfer_reward",
+          "UILore": "@ui_gold_to_pa_transfer_reward_lore"
+        },
+        "CustomMessages": [
+          {
+            "Message": [
+              {
+                "$": {
+                  "UIDesc": "@ui_gold_to_pa_transfer_reward_summary"
+                }
+              }
+            ]
+          }
+        ],
+        "Currency": [
+          {
+            "$": {
+              "Gold_Min": "0",
+              "Gold_Max": "0",
+              "Gold_PerPlayerLevel": "0",
+              "PA_Min": "1000",
+              "PA_Max": "1000",
+              "PA_PerPlayerLevel": "0"
+            }
+          }
+        ],
+        "ContextualSoundTrigger": [
+          {
+            "$": {
+              "ToPlay": "Endgame_PAToGold_ConversionProjectCompleted",
+              "ToResume": "EndgameIdle"
+            }
+          }
+        ]
+      },
+      {
+        "$": {
+          "Name": "gold_to_pa_transfer_2_reward",
+          "UITitle": "@ui_gold_to_pa_transfer_reward",
+          "UILore": "@ui_gold_to_pa_transfer_reward_lore"
+        },
+        "CustomMessages": [
+          {
+            "Message": [
+              {
+                "$": {
+                  "UIDesc": "@ui_gold_to_pa_transfer_reward_summary"
+                }
+              }
+            ]
+          }
+        ],
+        "Currency": [
+          {
+            "$": {
+              "Gold_Min": "0",
+              "Gold_Max": "0",
+              "Gold_PerPlayerLevel": "0",
+              "PA_Min": "5000",
+              "PA_Max": "5000",
+              "PA_PerPlayerLevel": "0"
+            }
+          }
+        ],
+        "ContextualSoundTrigger": [
+          {
+            "$": {
+              "ToPlay": "Endgame_PAToGold_ConversionProjectCompleted",
+              "ToResume": "EndgameIdle"
+            }
+          }
+        ]
+      },
+      {
+        "$": {
+          "Name": "gold_to_pa_transfer_3_reward",
+          "UITitle": "@ui_gold_to_pa_transfer_reward",
+          "UILore": "@ui_gold_to_pa_transfer_reward_lore"
+        },
+        "CustomMessages": [
+          {
+            "Message": [
+              {
+                "$": {
+                  "UIDesc": "@ui_gold_to_pa_transfer_reward_summary"
+                }
+              }
+            ]
+          }
+        ],
+        "Currency": [
+          {
+            "$": {
+              "Gold_Min": "0",
+              "Gold_Max": "0",
+              "Gold_PerPlayerLevel": "0",
+              "PA_Min": "10000",
+              "PA_Max": "10000",
+              "PA_PerPlayerLevel": "0"
+            }
+          }
+        ],
+        "ContextualSoundTrigger": [
+          {
+            "$": {
+              "ToPlay": "Endgame_PAToGold_ConversionProjectCompleted",
+              "ToResume": "EndgameIdle"
+            }
+          }
+        ]
+      },
+      {
+        "$": {
+          "Name": "gold_to_pa_transfer_4_reward",
+          "UITitle": "@ui_gold_to_pa_transfer_reward",
+          "UILore": "@ui_gold_to_pa_transfer_reward_lore"
+        },
+        "CustomMessages": [
+          {
+            "Message": [
+              {
+                "$": {
+                  "UIDesc": "@ui_gold_to_pa_transfer_reward_summary"
+                }
+              }
+            ]
+          }
+        ],
+        "Currency": [
+          {
+            "$": {
+              "Gold_Min": "0",
+              "Gold_Max": "0",
+              "Gold_PerPlayerLevel": "0",
+              "PA_Min": "50000",
+              "PA_Max": "50000",
+              "PA_PerPlayerLevel": "0"
+            }
+          }
+        ],
+        "ContextualSoundTrigger": [
+          {
+            "$": {
+              "ToPlay": "Endgame_PAToGold_ConversionProjectCompleted",
+              "ToResume": "EndgameIdle"
+            }
+          }
+        ]
+      },
+      {
+        "$": {
+          "Name": "gold_to_pa_transfer_5_reward",
+          "UITitle": "@ui_gold_to_pa_transfer_reward",
+          "UILore": "@ui_gold_to_pa_transfer_reward_lore"
+        },
+        "CustomMessages": [
+          {
+            "Message": [
+              {
+                "$": {
+                  "UIDesc": "@ui_gold_to_pa_transfer_reward_summary"
+                }
+              }
+            ]
+          }
+        ],
+        "Currency": [
+          {
+            "$": {
+              "Gold_Min": "0",
+              "Gold_Max": "0",
+              "Gold_PerPlayerLevel": "0",
+              "PA_Min": "100000",
+              "PA_Max": "100000",
+              "PA_PerPlayerLevel": "0"
+            }
+          }
+        ],
+        "ContextualSoundTrigger": [
+          {
+            "$": {
+              "ToPlay": "Endgame_PAToGold_ConversionProjectCompleted",
+              "ToResume": "EndgameIdle"
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,233 @@
+<MetaData>
+  <Reward Name="laibon_diplomats_reward" UITitle="@ui_laibon_diplomats_expedition_reward" UILore="@ui_laibon_diplomats_expedition_reward_lore">
+    <CustomMessages>
+      <Message UIDesc="@ui_laibon_diplomats_expedition_reward_summary" />
+    </CustomMessages>
+    <Currency Gold_Min="2000" Gold_Max="3000" Gold_PerPlayerLevel="143" PA_Min="200" PA_Max="300" PA_PerPlayerLevel="2.9" />
+    <ScalingTables Gold="Gold_scale" PA="PA_Scale" ItemLevelOffset="Item_level_offset_scale" />
+    <ContextualSoundTrigger ToPlay="Endgame_DiplomatsGuild_ExpeditionSuccess" ToResume="EndgameIdle" />
+  </Reward>
+  <Reward Name="tesserine_diplomats_reward" UITitle="@ui_tesserine_diplomats_reward" UILore="@ui_tesserine_diplomats_reward_lore">
+    <CustomMessages>
+      <Message UIDesc="@ui_tesserine_diplomats_reward_summary" />
+    </CustomMessages>
+    <Currency Gold_Min="120" Gold_Max="480" Gold_PerPlayerLevel="17" PA_Min="0" PA_Max="0" PA_PerPlayerLevel="0" />
+    <FixedItems Name="Endgame_EveryArmor" MinItemNumber="3" MaxItemNumber="5" SortByRarity="0" />
+    <ScalingTables Gold="Gold_scale" PA="PA_Scale" ItemLevelOffset="Item_level_offset_scale" />
+    <ContextualSoundTrigger ToPlay="Endgame_DiplomatsGuild_ExpeditionSuccess" ToResume="EndgameIdle" />
+  </Reward>
+  <Reward Name="vulkain_diplomats_reward" UITitle="@ui_vulkain_diplomats_reward" UILore="@ui_vulkain_diplomats_reward_lore">
+    <CustomMessages>
+      <Message UIDesc="@ui_vulkain_diplomats_reward_summary" />
+    </CustomMessages>
+    <Currency Gold_Min="1200" Gold_Max="2000" Gold_PerPlayerLevel="91" PA_Min="0" PA_Max="0" PA_PerPlayerLevel="0" />
+    <FixedItems Name="Endgame_1HMelee" MinItemNumber="3" MaxItemNumber="5" SortByRarity="0" />
+    <ScalingTables Gold="Gold_scale" PA="PA_Scale" ItemLevelOffset="Item_level_offset_scale" />
+    <ContextualSoundTrigger ToPlay="Endgame_DiplomatsGuild_ExpeditionSuccess" ToResume="EndgameIdle" />
+  </Reward>
+  <Reward Name="greyharbour_diplomats_reward" UITitle="@ui_greyharbour_diplomats_reward" UILore="@ui_greyharbour_diplomats_reward_lore">
+    <CustomMessages>
+      <Message UIDesc="@ui_greyharbour_diplomats_reward_summary" />
+    </CustomMessages>
+    <Currency Gold_Min="1200" Gold_Max="2000" Gold_PerPlayerLevel="0" PA_Min="0" PA_Max="0" PA_PerPlayerLevel="0" />
+    <Production ProductionFactor="25" ProductionFactorDuration="3" />
+    <ScalingTables Gold="Gold_scale" PA="PA_Scale" ItemLevelOffset="Item_level_offset_scale" />
+    <ContextualSoundTrigger ToPlay="Endgame_DiplomatsGuild_ExpeditionSuccess" ToResume="EndgameIdle" />
+  </Reward>
+  <Reward Name="archion_diplomats_reward" UITitle="@ui_archion_diplomats_reward" UILore="@ui_archion_diplomats_reward_lore">
+    <CustomMessages>
+      <Message UIDesc="@ui_archion_diplomats_reward_summary" />
+    </CustomMessages>
+    <Currency Gold_Min="1200" Gold_Max="2000" Gold_PerPlayerLevel="91" PA_Min="0" PA_Max="0" PA_PerPlayerLevel="0" />
+    <FixedItems Name="Endgame_2HBow" MinItemNumber="3" MaxItemNumber="5" SortByRarity="0" />
+    <ScalingTables Gold="Gold_scale" PA="PA_Scale" ItemLevelOffset="Item_level_offset_scale" />
+    <ContextualSoundTrigger ToPlay="Endgame_DiplomatsGuild_ExpeditionSuccess" ToResume="EndgameIdle" />
+  </Reward>
+  <Reward Name="ctul_diplomats_reward" UITitle="@ui_ctul_diplomats_reward" UILore="@ui_ctul_diplomats_reward_lore">
+    <CustomMessages>
+      <Message UIDesc="@ui_ctul_diplomats_reward_summary" />
+    </CustomMessages>
+    <Currency Gold_Min="1200" Gold_Max="2000" Gold_PerPlayerLevel="91" PA_Min="0" PA_Max="0" PA_PerPlayerLevel="0" />
+    <FixedItems Name="Endgame_1HDagger" MinItemNumber="3" MaxItemNumber="5" SortByRarity="0" />
+    <ScalingTables Gold="Gold_scale" PA="PA_Scale" ItemLevelOffset="Item_level_offset_scale" />
+    <ContextualSoundTrigger ToPlay="Endgame_DiplomatsGuild_ExpeditionSuccess" ToResume="EndgameIdle" />
+  </Reward>
+  <Reward Name="salander_diplomats_reward" UITitle="@ui_salander_diplomats_reward" UILore="@ui_salander_diplomats_reward_lore">
+    <CustomMessages>
+      <Message UIDesc="@ui_salander_diplomats_reward_summary" />
+    </CustomMessages>
+    <Currency Gold_Min="4000" Gold_Max="6000" Gold_PerPlayerLevel="285" PA_Min="2000" PA_Max="3000" PA_PerPlayerLevel="28.6" />
+    <ScalingTables Gold="Gold_scale" PA="PA_Scale" ItemLevelOffset="Item_level_offset_scale" />
+    <ContextualSoundTrigger ToPlay="Endgame_DiplomatsGuild_ExpeditionSuccess" ToResume="EndgameIdle" />
+  </Reward>
+  <Reward Name="three_peaks_diplomats_reward" UITitle="@ui_three_peaks_diplomats_reward" UILore="@ui_three_peaks_diplomats_reward_lore">
+    <CustomMessages>
+      <Message UIDesc="@ui_three_peaks_diplomats_reward_summary" />
+    </CustomMessages>
+    <Currency Gold_Min="10000" Gold_Max="40000" Gold_PerPlayerLevel="0" PA_Min="0" PA_Max="0" PA_PerPlayerLevel="0" />
+    <FixedItems Name="Items_elite" MinItemNumber="3" MaxItemNumber="5" SortByRarity="0" />
+    <ScalingTables Gold="Gold_scale" PA="PA_Scale" ItemLevelOffset="Item_level_offset_scale" />
+    <ContextualSoundTrigger ToPlay="Endgame_DiplomatsGuild_ExpeditionSuccess" ToResume="EndgameIdle" />
+  </Reward>
+  <Reward Name="gomora_diplomats_reward" UITitle="@ui_gomora_diplomats_reward" UILore="@ui_gomora_diplomats_reward_lore">
+    <CustomMessages>
+      <Message UIDesc="@ui_gomora_diplomats_reward_summary" />
+    </CustomMessages>
+    <Currency Gold_Min="0" Gold_Max="0" Gold_PerPlayerLevel="0" PA_Min="4000" PA_Max="6000" PA_PerPlayerLevel="57.1" />
+    <ScalingTables Gold="Gold_scale" PA="PA_Scale" ItemLevelOffset="Item_level_offset_scale" />
+    <ContextualSoundTrigger ToPlay="Endgame_DiplomatsGuild_ExpeditionSuccess" ToResume="EndgameIdle" />
+  </Reward>
+  <Reward Name="republic_diplomats_reward" UITitle="@ui_republic_diplomats_reward" UILore="@ui_republic_diplomats_reward_lore">
+    <CustomMessages>
+      <Message UIDesc="@ui_republic_diplomats_reward_summary" />
+    </CustomMessages>
+    <Currency Gold_Min="1200" Gold_Max="1800" Gold_PerPlayerLevel="85" PA_Min="0" PA_Max="0" PA_PerPlayerLevel="0" />
+    <ScalingTables Gold="Gold_scale" PA="PA_Scale" ItemLevelOffset="Item_level_offset_scale" />
+    <ContextualSoundTrigger ToPlay="Endgame_DiplomatsGuild_ExpeditionSuccess" ToResume="EndgameIdle" />
+  </Reward>
+  <Reward Name="kuei_diplomats_reward" UITitle="@ui_kuei_diplomats_reward" UILore="@ui_kuei_diplomats_reward_lore">
+    <CustomMessages>
+      <Message UIDesc="@ui_kuei_diplomats_reward_summary" />
+    </CustomMessages>
+    <Currency Gold_Min="2400" Gold_Max="4000" Gold_PerPlayerLevel="0" PA_Min="0" PA_Max="0" PA_PerPlayerLevel="0" />
+    <Production ProductionFactor="100" ProductionFactorDuration="3" />
+    <ScalingTables Gold="Gold_scale" PA="PA_Scale" ItemLevelOffset="Item_level_offset_scale" />
+    <ContextualSoundTrigger ToPlay="Endgame_DiplomatsGuild_ExpeditionSuccess" ToResume="EndgameIdle" />
+  </Reward>
+  <Reward Name="varg_diplomats_reward" UITitle="@ui_varg_diplomats_reward" UILore="@ui_varg_diplomats_reward_lore">
+    <CustomMessages>
+      <Message UIDesc="@ui_varg_diplomats_reward_summary" />
+    </CustomMessages>
+    <Currency Gold_Min="8000" Gold_Max="12000" Gold_PerPlayerLevel="570" PA_Min="0" PA_Max="0" PA_PerPlayerLevel="0" />
+    <ContextualSoundTrigger ToPlay="Endgame_DiplomatsGuild_ExpeditionSuccess" ToResume="EndgameIdle" />
+    <ScalingTables Gold="Gold_scale" PA="PA_Scale" ItemLevelOffset="Item_level_offset_scale" />
+  </Reward>
+  <Reward Name="bro_dawn_diplomats_reward" UITitle="@ui_bro_dawn_diplomats_reward" UILore="@ui_bro_dawn_diplomats_reward_lore">
+    <CustomMessages>
+      <Message UIDesc="@ui_bro_dawn_diplomats_reward_summary" />
+    </CustomMessages>
+    <Currency Gold_Min="0" Gold_Max="0" Gold_PerPlayerLevel="0" PA_Min="400" PA_Max="600" PA_PerPlayerLevel="5.7" />
+    <ContextualSoundTrigger ToPlay="Endgame_DiplomatsGuild_ExpeditionSuccess" ToResume="EndgameIdle" />
+    <ScalingTables Gold="Gold_scale" PA="PA_Scale" ItemLevelOffset="Item_level_offset_scale" />
+  </Reward>
+  <Reward Name="morkai_mines_diplomats_reward" UITitle="@ui_morkai_mines_diplomats_reward" UILore="@ui_morkai_mines_diplomats_reward_lore">
+    <CustomMessages>
+      <Message UIDesc="@ui_morkai_mines_diplomats_reward_summary" />
+    </CustomMessages>
+    <Currency Gold_Min="120" Gold_Max="140" Gold_PerPlayerLevel="17" PA_Min="0" PA_Max="0" PA_PerPlayerLevel="0" />
+    <FixedItems Name="Endgame_Gems" MinItemNumber="3" MaxItemNumber="5" SortByRarity="0" />
+    <ScalingTables Gold="Gold_scale" PA="PA_Scale" ItemLevelOffset="Item_level_offset_scale" />
+    <ContextualSoundTrigger ToPlay="Endgame_DiplomatsGuild_ExpeditionSuccess" ToResume="EndgameIdle" />
+  </Reward>
+  <Reward Name="abyssal_herald_diplomats_reward" UITitle="@ui_abyssal_herald_diplomats_reward" UILore="@ui_abyssal_herald_diplomats_reward_lore">
+    <CustomMessages>
+      <Message UIDesc="@ui_abyssal_herald_diplomats_reward_summary" />
+    </CustomMessages>
+    <Currency Gold_Min="0" Gold_Max="0" Gold_PerPlayerLevel="0" PA_Min="0" PA_Max="0" PA_PerPlayerLevel="0" />
+    <FixedItems Name="Endgame_LegendaryReagent" MinItemNumber="1" MaxItemNumber="1" SortByRarity="0" />
+    <ScalingTables Gold="Gold_scale" PA="PA_Scale" ItemLevelOffset="Item_level_offset_scale" />
+    <ContextualSoundTrigger ToPlay="Endgame_DiplomatsGuild_ExpeditionSuccess" ToResume="EndgameIdle" />
+  </Reward>
+  <Reward Name="misc_diplomats_land_reward_1" UITitle="@ui_misc_diplomats_land_reward_1" UILore="@ui_misc_diplomats_land_reward_1_lore">
+    <CustomMessages>
+      <Message UIDesc="@ui_misc_diplomats_land_reward_1_summary" />
+    </CustomMessages>
+    <Currency Gold_Min="500" Gold_Max="1500" Gold_PerPlayerLevel="10" PA_Min="5" PA_Max="15" PA_PerPlayerLevel="0.1" />
+    <FixedItems Name="Endgame_alternative_reward" MinItemNumber="3" MaxItemNumber="5" SortByRarity="0" />
+    <ScalingTables Gold="Gold_scale" PA="PA_Scale" ItemLevelOffset="Item_level_offset_scale" />
+    <ContextualSoundTrigger ToPlay="Endgame_DiplomatsGuild_ExpeditionSuccess" ToResume="EndgameIdle" />
+  </Reward>
+  <Reward Name="misc_diplomats_land_reward_2" UITitle="@ui_misc_diplomats_land_reward_2" UILore="@ui_misc_diplomats_land_reward_2_lore">
+    <CustomMessages>
+      <Message UIDesc="@ui_misc_diplomats_reward_2_summary" />
+    </CustomMessages>
+    <Currency Gold_Min="1000" Gold_Max="5000" Gold_PerPlayerLevel="30" PA_Min="15" PA_Max="45" PA_PerPlayerLevel="0.3" />
+    <FixedItems Name="Endgame_alternative_reward" MinItemNumber="3" MaxItemNumber="5" SortByRarity="0" />
+    <ScalingTables Gold="Gold_scale" PA="PA_Scale" ItemLevelOffset="Item_level_offset_scale" />
+    <ContextualSoundTrigger ToPlay="Endgame_DiplomatsGuild_ExpeditionSuccess" ToResume="EndgameIdle" />
+  </Reward>
+  <Reward Name="misc_diplomats_land_reward_3" UITitle="@ui_misc_diplomats_land_reward_3" UILore="@ui_misc_diplomats_land_reward_3_lore">
+    <CustomMessages>
+      <Message UIDesc="@ui_misc_diplomats_land_reward_3_summary" />
+    </CustomMessages>
+    <Currency Gold_Min="5000" Gold_Max="15000" Gold_PerPlayerLevel="50" PA_Min="15" PA_Max="45" PA_PerPlayerLevel="1" />
+    <FixedItems Name="Endgame_alternative_reward" MinItemNumber="3" MaxItemNumber="5" SortByRarity="0" />
+    <ScalingTables Gold="Gold_scale" PA="PA_Scale" ItemLevelOffset="Item_level_offset_scale" />
+    <ContextualSoundTrigger ToPlay="Endgame_DiplomatsGuild_ExpeditionSuccess" ToResume="EndgameIdle" />
+  </Reward>
+  <Reward Name="misc_diplomats_land_reward_4" UITitle="@ui_misc_diplomats_land_reward_4" UILore="@ui_misc_diplomats_land_reward_4_lore">
+    <CustomMessages>
+      <Message UIDesc="@ui_misc_diplomats_land_reward_4_summary" />
+    </CustomMessages>
+    <Currency Gold_Min="10000" Gold_Max="30000" Gold_PerPlayerLevel="200" PA_Min="100" PA_Max="300" PA_PerPlayerLevel="2" />
+    <FixedItems Name="Endgame_alternative_reward" MinItemNumber="3" MaxItemNumber="5" SortByRarity="0" />
+    <ScalingTables Gold="Gold_scale" PA="PA_Scale" ItemLevelOffset="Item_level_offset_scale" />
+    <ContextualSoundTrigger ToPlay="Endgame_DiplomatsGuild_ExpeditionSuccess" ToResume="EndgameIdle" />
+  </Reward>
+  <Reward Name="misc_diplomats_ship_reward_1" UITitle="@ui_misc_diplomats_ship_reward_1" UILore="@ui_misc_diplomats_ship_reward_1_lore">
+    <CustomMessages>
+      <Message UIDesc="@ui_misc_diplomats_ship_reward_1_summary" />
+    </CustomMessages>
+    <Currency Gold_Min="500" Gold_Max="1500" Gold_PerPlayerLevel="10" PA_Min="5" PA_Max="15" PA_PerPlayerLevel="0.1" />
+    <FixedItems Name="Endgame_alternative_reward" MinItemNumber="3" MaxItemNumber="5" SortByRarity="0" />
+    <ScalingTables Gold="Gold_scale" PA="PA_Scale" ItemLevelOffset="Item_level_offset_scale" />
+    <ContextualSoundTrigger ToPlay="Endgame_DiplomatsGuild_ExpeditionSuccess" ToResume="EndgameIdle" />
+  </Reward>
+  <Reward Name="misc_diplomats_ship_reward_2" UITitle="@ui_misc_diplomats_ship_reward_2" UILore="@ui_misc_diplomats_ship_reward_2_lore">
+    <CustomMessages>
+      <Message UIDesc="@ui_misc_diplomats_ship_reward_2_summary" />
+    </CustomMessages>
+    <Currency Gold_Min="1000" Gold_Max="5000" Gold_PerPlayerLevel="30" PA_Min="15" PA_Max="45" PA_PerPlayerLevel="0.3" />
+    <FixedItems Name="Endgame_alternative_reward" MinItemNumber="3" MaxItemNumber="5" SortByRarity="0" />
+    <ScalingTables Gold="Gold_scale" PA="PA_Scale" ItemLevelOffset="Item_level_offset_scale" />
+    <ContextualSoundTrigger ToPlay="Endgame_DiplomatsGuild_ExpeditionSuccess" ToResume="EndgameIdle" />
+  </Reward>
+  <Reward Name="misc_diplomats_ship_reward_3" UITitle="@ui_misc_diplomats_ship_reward_3" UILore="@ui_misc_diplomats_ship_reward_3_lore">
+    <CustomMessages>
+      <Message UIDesc="@ui_misc_diplomats_ship_reward_3_summary" />
+    </CustomMessages>
+    <Currency Gold_Min="5000" Gold_Max="15000" Gold_PerPlayerLevel="50" PA_Min="15" PA_Max="45" PA_PerPlayerLevel="1" />
+    <FixedItems Name="Endgame_alternative_reward" MinItemNumber="3" MaxItemNumber="5" SortByRarity="0" />
+    <ScalingTables Gold="Gold_scale" PA="PA_Scale" ItemLevelOffset="Item_level_offset_scale" />
+    <ContextualSoundTrigger ToPlay="Endgame_DiplomatsGuild_ExpeditionSuccess" ToResume="EndgameIdle" />
+  </Reward>
+  <Reward Name="misc_diplomats_ship_reward_4" UITitle="@ui_misc_diplomats_ship_reward_4" UILore="@ui_misc_diplomats_ship_reward_4_lore">
+    <CustomMessages>
+      <Message UIDesc="@ui_misc_diplomats_ship_reward_4_summary" />
+    </CustomMessages>
+    <Currency Gold_Min="10000" Gold_Max="30000" Gold_PerPlayerLevel="200" PA_Min="100" PA_Max="300" PA_PerPlayerLevel="2" />
+    <FixedItems Name="Endgame_alternative_reward" MinItemNumber="3" MaxItemNumber="5" SortByRarity="0" />
+    <ScalingTables Gold="Gold_scale" PA="PA_Scale" ItemLevelOffset="Item_level_offset_scale" />
+    <ContextualSoundTrigger ToPlay="Endgame_DiplomatsGuild_ExpeditionSuccess" ToResume="EndgameIdle" />
+  </Reward>
+  <Reward Name="misc_diplomats_general_fail_reward_1" UITitle="@ui_misc_diplomats_general_fail_reward_1" UILore="@ui_misc_diplomats_general_fail_reward_1_lore">
+    <CustomMessages>
+      <Message UIDesc="@ui_misc_diplomats_general_fail_reward_1_summary" />
+    </CustomMessages>
+    <ContextualSoundTrigger ToPlay="Endgame_DiplomatsGuild_ExpeditionFailure" ToResume="EndgameIdle" />
+  </Reward>
+  <Reward Name="misc_diplomats_land_fail_reward_1" UITitle="@ui_misc_diplomats_general_land_fail_reward_1" UILore="@ui_misc_diplomats_general_land_fail_reward_1_lore">
+    <CustomMessages>
+      <Message UIDesc="@ui_misc_diplomats_general_land_fail_reward_1_summary" />
+    </CustomMessages>
+    <ContextualSoundTrigger ToPlay="Endgame_DiplomatsGuild_ExpeditionFailure" ToResume="EndgameIdle" />
+  </Reward>
+  <Reward Name="misc_diplomats_general_land_fail_reward_2" UITitle="@ui_misc_diplomats_general_land_fail_reward_2" UILore="@ui_misc_diplomats_general_land_fail_reward_2_lore">
+    <CustomMessages>
+      <Message UIDesc="@ui_misc_diplomats_land_fail_reward_2_summary" />
+    </CustomMessages>
+    <ContextualSoundTrigger ToPlay="Endgame_DiplomatsGuild_ExpeditionFailure" ToResume="EndgameIdle" />
+  </Reward>
+  <Reward Name="misc_diplomats_ship_fail_reward_1" UITitle="@ui_misc_diplomats__ship_fail_reward_1" UILore="@ui_misc_diplomats_ship_fail_reward_1_lore">
+    <CustomMessages>
+      <Message UIDesc="@ui_misc_diplomats_ship_fail_reward_1_summary" />
+    </CustomMessages>
+    <ContextualSoundTrigger ToPlay="Endgame_DiplomatsGuild_ExpeditionFailure" ToResume="EndgameIdle" />
+  </Reward>
+  <Reward Name="misc_diplomats_ship_fail_reward_2" UITitle="@ui_misc_diplomats__ship_fail_reward_2" UILore="@ui_misc_diplomats_ship_fail_reward_2_lore">
+    <CustomMessages>
+      <Message UIDesc="@ui_misc_diplomats_ship_fail_reward_2_summary" />
+    </CustomMessages>
+    <ContextualSoundTrigger ToPlay="Endgame_DiplomatsGuild_ExpeditionFailure" ToResume="EndgameIdle" />
+  </Reward>
+</MetaData>

@@ -1,0 +1,915 @@
+{
+  "MetaData": {
+    "Building": [
+      {
+        "$": {
+          "Name": "building_city_stormfall_palace",
+          "BaseProduction": "10"
+        },
+        "UIParams": [
+          {
+            "$": {
+              "UIName": "@ui_building_stormfall_palace",
+              "UILore": "@ui_building_stormfall_palace_desc",
+              "ImagePath": "city_building\\building_illustrations\\palace.png"
+            }
+          }
+        ],
+        "ProjectList": [
+          {
+            "ProjectParams": [
+              {
+                "$": {
+                  "ProjectName": "city_hall_training_equipment"
+                }
+              },
+              {
+                "$": {
+                  "ProjectName": "city_hall_roadworks"
+                }
+              },
+              {
+                "$": {
+                  "ProjectName": "city_hall_aqueduct"
+                }
+              },
+              {
+                "$": {
+                  "ProjectName": "city_hall_sewers"
+                }
+              },
+              {
+                "$": {
+                  "ProjectName": "city_hall_irrigation"
+                }
+              },
+              {
+                "$": {
+                  "ProjectName": "city_hall_crop_rotation"
+                }
+              },
+              {
+                "$": {
+                  "ProjectName": "city_hall_windmill"
+                }
+              },
+              {
+                "$": {
+                  "ProjectName": "city_hall_trauma_center"
+                }
+              },
+              {
+                "$": {
+                  "ProjectName": "city_hall_working_conditions"
+                }
+              },
+              {
+                "$": {
+                  "ProjectName": "city_hall_batch_one_dependency"
+                }
+              },
+              {
+                "$": {
+                  "ProjectName": "city_hall_batch_two_dependency"
+                }
+              },
+              {
+                "$": {
+                  "ProjectName": "city_hall_batch_three_dependency"
+                }
+              },
+              {
+                "$": {
+                  "ProjectName": "city_hall_education"
+                }
+              },
+              {
+                "$": {
+                  "ProjectName": "city_hall_sawmill"
+                }
+              },
+              {
+                "$": {
+                  "ProjectName": "city_hall_iron_mines"
+                }
+              },
+              {
+                "$": {
+                  "ProjectName": "city_hall_quarry"
+                }
+              },
+              {
+                "$": {
+                  "ProjectName": "city_hall_housing"
+                }
+              },
+              {
+                "$": {
+                  "ProjectName": "city_hall_lighthouse"
+                }
+              },
+              {
+                "$": {
+                  "ProjectName": "city_hall_theater"
+                }
+              },
+              {
+                "$": {
+                  "ProjectName": "city_hall_rift_initiative"
+                }
+              },
+              {
+                "$": {
+                  "ProjectName": "city_hall_supply_stockpiles"
+                }
+              },
+              {
+                "$": {
+                  "ProjectName": "city_hall_checkpoints"
+                }
+              },
+              {
+                "$": {
+                  "ProjectName": "city_hall_crystal_excavation"
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "$": {
+          "Name": "building_seekers_garrison",
+          "BaseProduction": "5"
+        },
+        "UIParams": [
+          {
+            "$": {
+              "UIName": "@ui_building_seekers_garrison",
+              "UILore": "@ui_building_seekers_garrison_desc",
+              "ImagePath": "city_building\\building_illustrations\\seekers_guild.png"
+            }
+          }
+        ],
+        "ProjectList": [
+          {
+            "ProjectParams": [
+              {
+                "$": {
+                  "ProjectName": "seekers_garrison_construct"
+                }
+              }
+            ]
+          }
+        ],
+        "RolledProjects": [
+          {
+            "$": {
+              "Pick": "3",
+              "MinPick_Easy": "1",
+              "MinPick_Hard": "1"
+            },
+            "RolledProjectParams": [
+              {
+                "$": {
+                  "ProjectName": "ruins_cordanon_seekers_expedition",
+                  "Weight": "200",
+                  "Difficulty": "easy"
+                }
+              },
+              {
+                "$": {
+                  "ProjectName": "baktorai_seekers_expedition",
+                  "Weight": "100",
+                  "Difficulty": "medium"
+                }
+              },
+              {
+                "$": {
+                  "ProjectName": "coast_of_wrecks_seekers_expedition",
+                  "Weight": "100",
+                  "Difficulty": "medium"
+                }
+              },
+              {
+                "$": {
+                  "ProjectName": "ezaneal_shrine_seekers_expedition",
+                  "Weight": "100",
+                  "Difficulty": "medium"
+                }
+              },
+              {
+                "$": {
+                  "ProjectName": "ctul_hunting_grounds_seekers_expedition",
+                  "Weight": "50",
+                  "Difficulty": "hard"
+                }
+              },
+              {
+                "$": {
+                  "ProjectName": "red_wastes_seekers_expedition",
+                  "Weight": "50",
+                  "Difficulty": "hard"
+                }
+              },
+              {
+                "$": {
+                  "ProjectName": "anankis_seekers_expedition",
+                  "Weight": "50",
+                  "Difficulty": "hard"
+                }
+              },
+              {
+                "$": {
+                  "ProjectName": "urhan_necrop_seekers_expedition",
+                  "Weight": "10",
+                  "Difficulty": "hard"
+                }
+              },
+              {
+                "$": {
+                  "ProjectName": "laibon_desert_seekers_expedition",
+                  "Weight": "10",
+                  "Difficulty": "hard"
+                }
+              },
+              {
+                "$": {
+                  "ProjectName": "carrion_keep_seekers_expedition",
+                  "Weight": "10",
+                  "Difficulty": "hard"
+                }
+              },
+              {
+                "$": {
+                  "ProjectName": "unknown_shores_seekers_expedition",
+                  "Weight": "1",
+                  "Difficulty": "hard"
+                }
+              },
+              {
+                "$": {
+                  "ProjectName": "regicide_research_seekers_expedition",
+                  "Weight": "10",
+                  "Difficulty": "hard"
+                }
+              },
+              {
+                "$": {
+                  "ProjectName": "blood_tear_burial_seekers_expedition",
+                  "Weight": "50",
+                  "Difficulty": "hard"
+                }
+              },
+              {
+                "$": {
+                  "ProjectName": "abyssal_rift_seekers_expedition",
+                  "Weight": "100",
+                  "Difficulty": "hard"
+                }
+              },
+              {
+                "$": {
+                  "ProjectName": "flayers_home_seekers_expedition",
+                  "Weight": "10",
+                  "Difficulty": "hard"
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "$": {
+          "Name": "building_trade_assembly",
+          "BaseProduction": "10"
+        },
+        "UIParams": [
+          {
+            "$": {
+              "UIName": "@ui_building_trade_assembly",
+              "UILore": "@ui_building_trade_assembly_desc",
+              "ImagePath": "city_building\\building_illustrations\\diplomat_guild.png"
+            }
+          }
+        ],
+        "ProjectList": [
+          {
+            "ProjectParams": [
+              {
+                "$": {
+                  "ProjectName": "trade_assembly_construct"
+                }
+              }
+            ]
+          }
+        ],
+        "RolledProjects": [
+          {
+            "$": {
+              "Pick": "3",
+              "MinPick_Easy": "1",
+              "MinPick_Hard": "1"
+            },
+            "RolledProjectParams": [
+              {
+                "$": {
+                  "ProjectName": "laibon_diplomats_expedition",
+                  "Weight": "100",
+                  "Difficulty": "easy"
+                }
+              },
+              {
+                "$": {
+                  "ProjectName": "greyharbour_diplomats_expedition",
+                  "Weight": "100",
+                  "Difficulty": "easy"
+                }
+              },
+              {
+                "$": {
+                  "ProjectName": "bro_dawn_diplomats_expedition",
+                  "Weight": "100",
+                  "Difficulty": "easy"
+                }
+              },
+              {
+                "$": {
+                  "ProjectName": "tesserine_diplomats_expedition",
+                  "Weight": "50",
+                  "Difficulty": "medium"
+                }
+              },
+              {
+                "$": {
+                  "ProjectName": "republic_diplomats_expedition",
+                  "Weight": "50",
+                  "Difficulty": "medium"
+                }
+              },
+              {
+                "$": {
+                  "ProjectName": "morkai_mines_diplomats_expedition",
+                  "Weight": "20",
+                  "Difficulty": "medium"
+                }
+              },
+              {
+                "$": {
+                  "ProjectName": "abyssal_herald_diplomats_expedition",
+                  "Weight": "1",
+                  "Difficulty": "medium"
+                }
+              },
+              {
+                "$": {
+                  "ProjectName": "vulkain_diplomats_expedition",
+                  "Weight": "8",
+                  "Difficulty": "hard"
+                }
+              },
+              {
+                "$": {
+                  "ProjectName": "archion_diplomats_expedition",
+                  "Weight": "8",
+                  "Difficulty": "hard"
+                }
+              },
+              {
+                "$": {
+                  "ProjectName": "ctul_diplomats_expedition",
+                  "Weight": "8",
+                  "Difficulty": "hard"
+                }
+              },
+              {
+                "$": {
+                  "ProjectName": "salander_diplomats_expedition",
+                  "Weight": "50",
+                  "Difficulty": "hard"
+                }
+              },
+              {
+                "$": {
+                  "ProjectName": "three_peaks_diplomats_expedition",
+                  "Weight": "2",
+                  "Difficulty": "hard"
+                }
+              },
+              {
+                "$": {
+                  "ProjectName": "gomora_diplomats_expedition",
+                  "Weight": "75",
+                  "Difficulty": "hard"
+                }
+              },
+              {
+                "$": {
+                  "ProjectName": "kuei_diplomats_expedition",
+                  "Weight": "75",
+                  "Difficulty": "hard"
+                }
+              },
+              {
+                "$": {
+                  "ProjectName": "varg_diplomats_expedition",
+                  "Weight": "50",
+                  "Difficulty": "hard"
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "$": {
+          "Name": "building_dark_market",
+          "BaseProduction": "20"
+        },
+        "UIParams": [
+          {
+            "$": {
+              "UIName": "@ui_building_dark_market",
+              "UILore": "@ui_building_dark_market_desc",
+              "ImagePath": "city_building\\building_illustrations\\black_market.png"
+            }
+          }
+        ],
+        "ProjectList": [
+          {
+            "ProjectParams": [
+              {
+                "$": {
+                  "ProjectName": "dark_market_construct"
+                }
+              },
+              {
+                "$": {
+                  "ProjectName": "dark_market_buy_reagent"
+                }
+              },
+              {
+                "$": {
+                  "ProjectName": "dark_market_item_quality_upgrade"
+                }
+              },
+              {
+                "$": {
+                  "ProjectName": "dark_market_item_rarity_upgrade"
+                }
+              },
+              {
+                "$": {
+                  "ProjectName": "dark_market_leg_reagent_upgrade"
+                }
+              },
+              {
+                "$": {
+                  "ProjectName": "dark_market_item_quality_transform"
+                }
+              },
+              {
+                "$": {
+                  "ProjectName": "dark_market_item_rarity_transform"
+                }
+              },
+              {
+                "$": {
+                  "ProjectName": "dark_market_leg_reagent_transform"
+                }
+              },
+              {
+                "$": {
+                  "ProjectName": "dark_market_buy_uberboss_1"
+                }
+              },
+              {
+                "$": {
+                  "ProjectName": "dark_market_buy_uberboss_2"
+                }
+              },
+              {
+                "$": {
+                  "ProjectName": "dark_market_buy_uberboss_3"
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "$": {
+          "Name": "building_transmutation_forge",
+          "BaseProduction": "20"
+        },
+        "UIParams": [
+          {
+            "$": {
+              "UIName": "@ui_building_transmutation_forge",
+              "UILore": "@ui_building_transmutation_forge_desc",
+              "ImagePath": "city_building\\building_illustrations\\transmutation_forge.png"
+            }
+          }
+        ],
+        "ProjectList": [
+          {
+            "ProjectParams": [
+              {
+                "$": {
+                  "ProjectName": "transmutation_forge_construct"
+                }
+              },
+              {
+                "$": {
+                  "ProjectName": "transmutation_forge_upgrade"
+                }
+              },
+              {
+                "$": {
+                  "ProjectName": "transmutation_project"
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "$": {
+          "Name": "building_bank",
+          "BaseProduction": "5"
+        },
+        "UIParams": [
+          {
+            "$": {
+              "UIName": "@ui_building_bank",
+              "UILore": "@ui_building_bank_desc",
+              "ImagePath": "city_building\\building_illustrations\\diamond_bank.png"
+            }
+          }
+        ],
+        "ProjectList": [
+          {
+            "ProjectParams": [
+              {
+                "$": {
+                  "ProjectName": "bank_construct"
+                }
+              },
+              {
+                "$": {
+                  "ProjectName": "buy_stash_1"
+                }
+              },
+              {
+                "$": {
+                  "ProjectName": "buy_stash_2"
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "$": {
+          "Name": "building_anankis_artifact",
+          "BaseProduction": "5"
+        },
+        "UIParams": [
+          {
+            "$": {
+              "UIName": "@ui_building_anankis_artifact",
+              "UILore": "@ui_building_anankis_artifact_desc",
+              "ImagePath": "city_building\\building_illustrations\\chamber_of_anankis.png"
+            }
+          }
+        ],
+        "ProjectList": [
+          {
+            "ProjectParams": [
+              {
+                "$": {
+                  "ProjectName": "anankis_artifact_construct"
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "$": {
+          "Name": "building_enneract_lab",
+          "BaseProduction": "5"
+        },
+        "UIParams": [
+          {
+            "$": {
+              "UIName": "@ui_building_enneract_lab",
+              "UILore": "@ui_building_enneract_lab_desc",
+              "ImagePath": "city_building\\building_illustrations\\enneract_lab.png"
+            }
+          }
+        ],
+        "ProjectList": [
+          {
+            "ProjectParams": [
+              {
+                "$": {
+                  "ProjectName": "enneract_lab_construct"
+                }
+              },
+              {
+                "$": {
+                  "ProjectName": "enneract_lab_skillcopy_1"
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "$": {
+          "Name": "building_siphon_chamber",
+          "BaseProduction": "10"
+        },
+        "UIParams": [
+          {
+            "$": {
+              "UIName": "@ui_building_siphon_chamber",
+              "UILore": "@ui_building_siphon_chamber_desc",
+              "ImagePath": "city_building\\building_illustrations\\extraction_chamber.png"
+            }
+          }
+        ],
+        "ProjectList": [
+          {
+            "ProjectParams": [
+              {
+                "$": {
+                  "ProjectName": "siphon_chamber_construct"
+                }
+              },
+              {
+                "$": {
+                  "ProjectName": "pa_to_gold_transfer_1"
+                }
+              },
+              {
+                "$": {
+                  "ProjectName": "pa_to_gold_transfer_2"
+                }
+              },
+              {
+                "$": {
+                  "ProjectName": "pa_to_gold_transfer_3"
+                }
+              },
+              {
+                "$": {
+                  "ProjectName": "pa_to_gold_transfer_4"
+                }
+              },
+              {
+                "$": {
+                  "ProjectName": "pa_to_gold_transfer_5"
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "$": {
+          "Name": "building_injector_seat",
+          "BaseProduction": "10"
+        },
+        "UIParams": [
+          {
+            "$": {
+              "UIName": "@ui_building_injector_seat",
+              "UILore": "@ui_building_injector_seat_desc",
+              "ImagePath": "city_building\\building_illustrations\\injector_seat.png"
+            }
+          }
+        ],
+        "ProjectList": [
+          {
+            "ProjectParams": [
+              {
+                "$": {
+                  "ProjectName": "injector_seat_construct"
+                }
+              },
+              {
+                "$": {
+                  "ProjectName": "gold_to_pa_transfer_1"
+                }
+              },
+              {
+                "$": {
+                  "ProjectName": "gold_to_pa_transfer_2"
+                }
+              },
+              {
+                "$": {
+                  "ProjectName": "gold_to_pa_transfer_3"
+                }
+              },
+              {
+                "$": {
+                  "ProjectName": "gold_to_pa_transfer_4"
+                }
+              },
+              {
+                "$": {
+                  "ProjectName": "gold_to_pa_transfer_5"
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "$": {
+          "Name": "building_shipyard",
+          "BaseProduction": "20"
+        },
+        "UIParams": [
+          {
+            "$": {
+              "UIName": "@ui_building_shipyard",
+              "UILore": "@ui_building_shipyard_desc",
+              "ImagePath": "city_building\\building_illustrations\\shipyard.png"
+            }
+          }
+        ],
+        "ProjectList": [
+          {
+            "ProjectParams": [
+              {
+                "$": {
+                  "ProjectName": "shipyard_construct"
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "$": {
+          "Name": "building_wonder_1",
+          "BaseProduction": "20"
+        },
+        "UIParams": [
+          {
+            "$": {
+              "UIName": "@ui_building_wonder_1",
+              "UILore": "@ui_building_wonder_1_desc",
+              "ImagePath": "city_building\\building_illustrations\\The_cartographical_archives.png"
+            }
+          }
+        ],
+        "ProjectList": [
+          {
+            "ProjectParams": [
+              {
+                "$": {
+                  "ProjectName": "wonder_1_construct"
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "$": {
+          "Name": "building_wonder_2",
+          "BaseProduction": "20"
+        },
+        "UIParams": [
+          {
+            "$": {
+              "UIName": "@ui_building_wonder_2",
+              "UILore": "@ui_building_wonder_2_desc",
+              "ImagePath": "city_building\\building_illustrations\\the_stormfall_institute_of_primordial_research_west_wing.png"
+            }
+          }
+        ],
+        "ProjectList": [
+          {
+            "ProjectParams": [
+              {
+                "$": {
+                  "ProjectName": "wonder_2_construct"
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "$": {
+          "Name": "building_wonder_3",
+          "BaseProduction": "20"
+        },
+        "UIParams": [
+          {
+            "$": {
+              "UIName": "@ui_building_wonder_3",
+              "UILore": "@ui_building_wonder_3_desc",
+              "ImagePath": "city_building\\building_illustrations\\the_stormfall_institute_of_primordial_research_main_exhibition.png"
+            }
+          }
+        ],
+        "ProjectList": [
+          {
+            "ProjectParams": [
+              {
+                "$": {
+                  "ProjectName": "wonder_3_construct"
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "$": {
+          "Name": "building_wonder_4",
+          "BaseProduction": "20"
+        },
+        "UIParams": [
+          {
+            "$": {
+              "UIName": "@ui_building_wonder_4",
+              "UILore": "@ui_building_wonder_4_desc",
+              "ImagePath": "city_building\\building_illustrations\\the_stormfall_institute_of_primordial_research_east_wing.png"
+            }
+          }
+        ],
+        "ProjectList": [
+          {
+            "ProjectParams": [
+              {
+                "$": {
+                  "ProjectName": "wonder_4_construct"
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "$": {
+          "Name": "building_wonder_5",
+          "BaseProduction": "20"
+        },
+        "UIParams": [
+          {
+            "$": {
+              "UIName": "@ui_building_wonder_5",
+              "UILore": "@ui_building_wonder_5_desc",
+              "ImagePath": "city_building\\building_illustrations\\salt_bath.png"
+            }
+          }
+        ],
+        "ProjectList": [
+          {
+            "ProjectParams": [
+              {
+                "$": {
+                  "ProjectName": "wonder_5_construct"
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "$": {
+          "Name": "building_wonder_6",
+          "BaseProduction": "20"
+        },
+        "UIParams": [
+          {
+            "$": {
+              "UIName": "@ui_building_wonder_6",
+              "UILore": "@ui_building_wonder_6_desc",
+              "ImagePath": "city_building\\building_illustrations\\refuge_for_the_blind.png"
+            }
+          }
+        ],
+        "ProjectList": [
+          {
+            "ProjectParams": [
+              {
+                "$": {
+                  "ProjectName": "wonder_6_construct"
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

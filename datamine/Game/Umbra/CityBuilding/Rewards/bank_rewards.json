@@ -1,0 +1,58 @@
+{
+  "MetaData": {
+    "Reward": [
+      {
+        "$": {
+          "Name": "buy_stash_reward_1",
+          "UITitle": "@ui_buy_stash_reward",
+          "UILore": "@ui_buy_stash_reward_lore"
+        },
+        "CustomMessages": [
+          {
+            "Message": [
+              {
+                "$": {
+                  "UIDesc": "@ui_buy_stash_reward_summary"
+                }
+              }
+            ]
+          }
+        ],
+        "ContextualSoundTrigger": [
+          {
+            "$": {
+              "ToPlay": "Endgame_Bank_UpgradeCompleted",
+              "ToResume": "EndgameIdle"
+            }
+          }
+        ]
+      },
+      {
+        "$": {
+          "Name": "buy_stash_reward_2",
+          "UITitle": "@ui_buy_stash_reward",
+          "UILore": "@ui_buy_stash_reward_lore"
+        },
+        "CustomMessages": [
+          {
+            "Message": [
+              {
+                "$": {
+                  "UIDesc": "@ui_buy_stash_reward_summary"
+                }
+              }
+            ]
+          }
+        ],
+        "ContextualSoundTrigger": [
+          {
+            "$": {
+              "ToPlay": "Endgame_Bank_UpgradeCompleted",
+              "ToResume": "EndgameIdle"
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

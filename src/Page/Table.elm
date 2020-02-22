@@ -1,5 +1,6 @@
 module Page.Table exposing (view)
 
+import Array exposing (Array)
 import Datamine exposing (Datamine)
 import Datamine.City as City
 import Datamine.NormalItem as NormalItem exposing (NormalItem(..))
@@ -138,6 +139,11 @@ datas =
     , ( "passive", dataPassive )
     , ( "reagent", dataReagent )
     , ( "city-project", dataCityProject )
+    , ( "city-project-scaling", dataCityProjectScaling )
+    , ( "city-reward", dataCityReward )
+    , ( "city-building", dataCityBuilding )
+    , ( "city-category", dataCityCategory )
+    , ( "city-level", dataCityLevel )
     ]
 
 
@@ -281,6 +287,109 @@ dataCityProject dm =
                     , maybeCell StringCell <| City.label dm proj
                     , StringCell proj.uiLore
                     , maybeCell DescCell <| City.lore dm proj
+                    ]
+                )
+    }
+
+
+dataCityProjectScaling : Datamine -> Data
+dataCityProjectScaling dm =
+    { cols =
+        [ "name"
+        , "factor"
+        ]
+    , rows =
+        dm.cityProjectScaling
+            |> List.map
+                (\scale ->
+                    [ StringCell scale.name
+                    , LinesCell <| List.map String.fromInt <| Array.toList scale.factor
+                    ]
+                )
+    }
+
+
+dataCityReward : Datamine -> Data
+dataCityReward dm =
+    { cols =
+        [ "name"
+        , "uiTitle"
+        , "uiLore"
+        , "label"
+        , "lore"
+        ]
+    , rows =
+        dm.cityRewards
+            |> List.map
+                (\reward ->
+                    [ StringCell reward.name
+                    , StringCell reward.uiName
+                    , StringCell reward.uiLore
+                    , maybeCell DescCell <| City.label dm reward
+                    , maybeCell DescCell <| City.lore dm reward
+                    ]
+                )
+    }
+
+
+dataCityBuilding : Datamine -> Data
+dataCityBuilding dm =
+    { cols =
+        [ "name"
+        , "uiTitle"
+        , "uiLore"
+        , "project.name"
+        , "label"
+        , "lore"
+        , "project.label"
+        ]
+    , rows =
+        dm.cityBuildings
+            |> List.map
+                (\building ->
+                    [ StringCell building.name
+                    , StringCell building.uiName
+                    , StringCell building.uiLore
+                    , LinesCell <| building.projects
+                    , maybeCell DescCell <| City.label dm building
+                    , maybeCell DescCell <| City.lore dm building
+                    , LinesCell <| List.map (Maybe.withDefault "???" << City.label dm) <| City.projects dm building
+                    ]
+                )
+    }
+
+
+dataCityCategory : Datamine -> Data
+dataCityCategory dm =
+    { cols =
+        [ "name"
+        , "uiTitle"
+        , "order"
+        ]
+    , rows =
+        dm.cityCategories
+            |> List.map
+                (\cat ->
+                    [ StringCell cat.name
+                    , StringCell cat.uiName
+                    , IntCell cat.order
+                    ]
+                )
+    }
+
+
+dataCityLevel : Datamine -> Data
+dataCityLevel dm =
+    { cols =
+        [ "level"
+        , "productionThreshold"
+        ]
+    , rows =
+        dm.cityLevels
+            |> List.map
+                (\level ->
+                    [ IntCell level.level
+                    , IntCell level.pptThreshold
                     ]
                 )
     }

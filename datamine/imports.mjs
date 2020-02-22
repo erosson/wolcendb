@@ -155,16 +155,31 @@ import game_150 from "../datamine/Game/Umbra/Skills/Trees/PassiveSkills/TimeMast
 import game_151 from "../datamine/Game/Umbra/Skills/Trees/PassiveSkills/Warrior_tree.json"
 import game_152 from "../datamine/Game/Umbra/Skills/Trees/PassiveSkills/Willpower_tree.json"
 import game_153 from "../datamine/Game/Umbra/Loot/Reagents/Reagents.json"
-import game_154 from "../datamine/Game/Umbra/CityBuilding/Projects/bank_projects.json"
-import game_155 from "../datamine/Game/Umbra/CityBuilding/Projects/building_construction_projects.json"
-import game_156 from "../datamine/Game/Umbra/CityBuilding/Projects/cityhall_projects.json"
-import game_157 from "../datamine/Game/Umbra/CityBuilding/Projects/dark_market_projects.json"
-import game_158 from "../datamine/Game/Umbra/CityBuilding/Projects/diplomats_expeditions.json"
-import game_159 from "../datamine/Game/Umbra/CityBuilding/Projects/enneract_lab_projects.json"
-import game_160 from "../datamine/Game/Umbra/CityBuilding/Projects/instillator_projects.json"
-import game_161 from "../datamine/Game/Umbra/CityBuilding/Projects/seekers_expeditions.json"
-import game_162 from "../datamine/Game/Umbra/CityBuilding/Projects/siphon_chamber_projects.json"
-import game_163 from "../datamine/Game/Umbra/CityBuilding/Projects/transmutation_forge_projects.json"
+import game_154 from "../datamine/Game/Umbra/CityBuilding/Buildings/buildings.json"
+import game_155 from "../datamine/Game/Umbra/CityBuilding/Categories/categories.json"
+import game_156 from "../datamine/Game/Umbra/CityBuilding/City/city.json"
+import game_157 from "../datamine/Game/Umbra/CityBuilding/default_city_state.json"
+import game_158 from "../datamine/Game/Umbra/CityBuilding/Projects/bank_projects.json"
+import game_159 from "../datamine/Game/Umbra/CityBuilding/Projects/building_construction_projects.json"
+import game_160 from "../datamine/Game/Umbra/CityBuilding/Projects/cityhall_projects.json"
+import game_161 from "../datamine/Game/Umbra/CityBuilding/Projects/dark_market_projects.json"
+import game_162 from "../datamine/Game/Umbra/CityBuilding/Projects/diplomats_expeditions.json"
+import game_163 from "../datamine/Game/Umbra/CityBuilding/Projects/enneract_lab_projects.json"
+import game_164 from "../datamine/Game/Umbra/CityBuilding/Projects/instillator_projects.json"
+import game_165 from "../datamine/Game/Umbra/CityBuilding/Projects/seekers_expeditions.json"
+import game_166 from "../datamine/Game/Umbra/CityBuilding/Projects/siphon_chamber_projects.json"
+import game_167 from "../datamine/Game/Umbra/CityBuilding/Projects/transmutation_forge_projects.json"
+import game_168 from "../datamine/Game/Umbra/CityBuilding/Rewards/bank_rewards.json"
+import game_169 from "../datamine/Game/Umbra/CityBuilding/Rewards/building_construction_project_rewards.json"
+import game_170 from "../datamine/Game/Umbra/CityBuilding/Rewards/city_hall_rewards.json"
+import game_171 from "../datamine/Game/Umbra/CityBuilding/Rewards/dark_market_rewards.json"
+import game_172 from "../datamine/Game/Umbra/CityBuilding/Rewards/diplomats_expeditions_rewards.json"
+import game_173 from "../datamine/Game/Umbra/CityBuilding/Rewards/enneract_lab_rewards.json"
+import game_174 from "../datamine/Game/Umbra/CityBuilding/Rewards/injector_seat_rewards.json"
+import game_175 from "../datamine/Game/Umbra/CityBuilding/Rewards/seekers_expeditions_rewards.json"
+import game_176 from "../datamine/Game/Umbra/CityBuilding/Rewards/siphon_chamber_rewards.json"
+import game_177 from "../datamine/Game/Umbra/CityBuilding/Rewards/transmutation_forge_rewards.json"
+import game_178 from "../datamine/Game/Umbra/CityBuilding/ScalingTables/project_tables.json"
 import localization_0 from "../datamine/localization/text_ui_Activeskills.json"
 import localization_1 from "../datamine/localization/text_ui_EIM.json"
 import localization_2 from "../datamine/localization/text_ui_Endgame.json"
@@ -327,16 +342,31 @@ export default {
   "Game/Umbra/Skills/Trees/PassiveSkills/Warrior_tree.json": game_151,
   "Game/Umbra/Skills/Trees/PassiveSkills/Willpower_tree.json": game_152,
   "Game/Umbra/Loot/Reagents/Reagents.json": game_153,
-  "Game/Umbra/CityBuilding/Projects/bank_projects.json": game_154,
-  "Game/Umbra/CityBuilding/Projects/building_construction_projects.json": game_155,
-  "Game/Umbra/CityBuilding/Projects/cityhall_projects.json": game_156,
-  "Game/Umbra/CityBuilding/Projects/dark_market_projects.json": game_157,
-  "Game/Umbra/CityBuilding/Projects/diplomats_expeditions.json": game_158,
-  "Game/Umbra/CityBuilding/Projects/enneract_lab_projects.json": game_159,
-  "Game/Umbra/CityBuilding/Projects/instillator_projects.json": game_160,
-  "Game/Umbra/CityBuilding/Projects/seekers_expeditions.json": game_161,
-  "Game/Umbra/CityBuilding/Projects/siphon_chamber_projects.json": game_162,
-  "Game/Umbra/CityBuilding/Projects/transmutation_forge_projects.json": game_163,
+  "Game/Umbra/CityBuilding/Buildings/buildings.json": game_154,
+  "Game/Umbra/CityBuilding/Categories/categories.json": game_155,
+  "Game/Umbra/CityBuilding/City/city.json": game_156,
+  "Game/Umbra/CityBuilding/default_city_state.json": game_157,
+  "Game/Umbra/CityBuilding/Projects/bank_projects.json": game_158,
+  "Game/Umbra/CityBuilding/Projects/building_construction_projects.json": game_159,
+  "Game/Umbra/CityBuilding/Projects/cityhall_projects.json": game_160,
+  "Game/Umbra/CityBuilding/Projects/dark_market_projects.json": game_161,
+  "Game/Umbra/CityBuilding/Projects/diplomats_expeditions.json": game_162,
+  "Game/Umbra/CityBuilding/Projects/enneract_lab_projects.json": game_163,
+  "Game/Umbra/CityBuilding/Projects/instillator_projects.json": game_164,
+  "Game/Umbra/CityBuilding/Projects/seekers_expeditions.json": game_165,
+  "Game/Umbra/CityBuilding/Projects/siphon_chamber_projects.json": game_166,
+  "Game/Umbra/CityBuilding/Projects/transmutation_forge_projects.json": game_167,
+  "Game/Umbra/CityBuilding/Rewards/bank_rewards.json": game_168,
+  "Game/Umbra/CityBuilding/Rewards/building_construction_project_rewards.json": game_169,
+  "Game/Umbra/CityBuilding/Rewards/city_hall_rewards.json": game_170,
+  "Game/Umbra/CityBuilding/Rewards/dark_market_rewards.json": game_171,
+  "Game/Umbra/CityBuilding/Rewards/diplomats_expeditions_rewards.json": game_172,
+  "Game/Umbra/CityBuilding/Rewards/enneract_lab_rewards.json": game_173,
+  "Game/Umbra/CityBuilding/Rewards/injector_seat_rewards.json": game_174,
+  "Game/Umbra/CityBuilding/Rewards/seekers_expeditions_rewards.json": game_175,
+  "Game/Umbra/CityBuilding/Rewards/siphon_chamber_rewards.json": game_176,
+  "Game/Umbra/CityBuilding/Rewards/transmutation_forge_rewards.json": game_177,
+  "Game/Umbra/CityBuilding/ScalingTables/project_tables.json": game_178,
   "localization/text_ui_Activeskills.json": localization_0,
   "localization/text_ui_EIM.json": localization_1,
   "localization/text_ui_Endgame.json": localization_2,

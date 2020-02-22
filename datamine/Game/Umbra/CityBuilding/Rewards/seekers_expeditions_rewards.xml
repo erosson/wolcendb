@@ -1,0 +1,238 @@
+<MetaData>
+  <Reward Name="baktorai_seekers_reward" UITitle="@ui_baktorai_seekers_expedition_reward" UILore="@ui_baktorai_seekers_expedition_reward_lore">
+    <CustomMessages>
+      <Message UIDesc="@ui_baktorai_seekers_expedition_reward_summary" />
+    </CustomMessages>
+    <Currency Gold_Min="360" Gold_Max="600" Gold_PerPlayerLevel="27" PA_Min="0" PA_Max="0" PA_PerPlayerLevel="0" />
+    <FixedItems Name="Endgame_Accessories" MinItemNumber="3" MaxItemNumber="5" SortByRarity="0" />
+    <ContextualSoundTrigger ToPlay="Endgame_AdventurersGuild_ExpeditionSuccess" ToResume="EndgameIdle" />
+    <ScalingTables Gold="Gold_scale" PA="PA_Scale" ItemLevelOffset="Item_level_offset_scale" />
+  </Reward>
+  <Reward Name="ctul_hunting_grounds_seekers_reward" UITitle="@ui_ctul_hunting_grounds_seekers_reward" UILore="@ui_ctul_hunting_grounds_seekers_reward_lore">
+    <CustomMessages>
+      <Message UIDesc="@ui_ctul_hunting_grounds_seekers_reward_summary" />
+    </CustomMessages>
+    <Currency Gold_Min="1200" Gold_Max="2000" Gold_PerPlayerLevel="91" PA_Min="0" PA_Max="0" PA_PerPlayerLevel="0" />
+    <FixedItems Name="Endgame_RogueArmor" MinItemNumber="3" MaxItemNumber="5" SortByRarity="0" />
+    <ContextualSoundTrigger ToPlay="Endgame_AdventurersGuild_ExpeditionSuccess" ToResume="EndgameIdle" />
+    <ScalingTables Gold="Gold_scale" PA="PA_Scale" ItemLevelOffset="Item_level_offset_scale" />
+  </Reward>
+  <Reward Name="red_wastes_seekers_reward" UITitle="@ui_red_wastes_seekers_reward" UILore="@ui_red_wastes_seekers_reward_lore">
+    <CustomMessages>
+      <Message UIDesc="@ui_red_wastes_seekers_reward_summary" />
+    </CustomMessages>
+    <Currency Gold_Min="1200" Gold_Max="2000" Gold_PerPlayerLevel="91" PA_Min="0" PA_Max="0" PA_PerPlayerLevel="0" />
+    <FixedItems Name="Endgame_HeavyArmor" MinItemNumber="3" MaxItemNumber="5" SortByRarity="0" />
+    <ContextualSoundTrigger ToPlay="Endgame_AdventurersGuild_ExpeditionSuccess" ToResume="EndgameIdle" />
+    <ScalingTables Gold="Gold_scale" PA="PA_Scale" ItemLevelOffset="Item_level_offset_scale" />
+  </Reward>
+  <Reward Name="ruins_cordanon_seekers_reward" UITitle="@ui_ruins_cordanon_seekers_reward" UILore="@ui_ruins_cordanon_seekers_reward_lore">
+    <CustomMessages>
+      <Message UIDesc="@ui_ruins_cordanon_seekers_reward_summary" />
+    </CustomMessages>
+    <Currency Gold_Min="600" Gold_Max="800" Gold_PerPlayerLevel="28" PA_Min="0" PA_Max="0" PA_PerPlayerLevel="0" />
+    <ScalingTables Gold="Gold_scale" PA="PA_Scale" ItemLevelOffset="Item_level_offset_scale" />
+    <ContextualSoundTrigger ToPlay="Endgame_AdventurersGuild_ExpeditionSuccess" ToResume="EndgameIdle" />
+  </Reward>
+  <Reward Name="anankis_seekers_reward" UITitle="@ui_anankis_seekers_reward" UILore="@ui_anankis_seekers_reward_lore">
+    <CustomMessages>
+      <Message UIDesc="@ui_anankis_seekers_reward_summary" />
+    </CustomMessages>
+    <Currency Gold_Min="1200" Gold_Max="2000" Gold_PerPlayerLevel="91" PA_Min="0" PA_Max="0" PA_PerPlayerLevel="0" />
+    <FixedItems Name="Endgame_MageArmor" MinItemNumber="3" MaxItemNumber="5" SortByRarity="0" />
+    <ScalingTables Gold="Gold_scale" PA="PA_Scale" ItemLevelOffset="Item_level_offset_scale" />
+    <ContextualSoundTrigger ToPlay="Endgame_AdventurersGuild_ExpeditionSuccess" ToResume="EndgameIdle" />
+  </Reward>
+  <Reward Name="urhan_necrop_seekers_reward" UITitle="@ui_urhan_necrop_seekers_reward" UILore="@ui_urhan_necrop_seekers_reward_lore">
+    <CustomMessages>
+      <Message UIDesc="@ui_urhan_necrop_seekers_reward_summary" />
+    </CustomMessages>
+    <Currency Gold_Min="1200" Gold_Max="2000" Gold_PerPlayerLevel="91" PA_Min="0" PA_Max="0" PA_PerPlayerLevel="0" />
+    <FixedItems Name="Endgame_1HOffhand" MinItemNumber="3" MaxItemNumber="5" SortByRarity="0" />
+    <ScalingTables Gold="Gold_scale" PA="PA_Scale" ItemLevelOffset="Item_level_offset_scale" />
+    <ContextualSoundTrigger ToPlay="Endgame_AdventurersGuild_ExpeditionSuccess" ToResume="EndgameIdle" />
+  </Reward>
+  <Reward Name="laibon_desert_seekers_reward" UITitle="@ui_laibon_desert_seekers_reward" UILore="@ui_laibon_desert_seekers_reward_lore">
+    <CustomMessages>
+      <Message UIDesc="@ui_laibon_desert_seekers_reward_summary" />
+    </CustomMessages>
+    <Currency Gold_Min="1200" Gold_Max="2000" Gold_PerPlayerLevel="91" PA_Min="0" PA_Max="0" PA_PerPlayerLevel="0" />
+    <FixedItems Name="Endgame_1HShield" MinItemNumber="3" MaxItemNumber="5" SortByRarity="0" />
+    <ContextualSoundTrigger ToPlay="Endgame_AdventurersGuild_ExpeditionSuccess" ToResume="EndgameIdle" />
+    <ScalingTables Gold="Gold_scale" PA="PA_Scale" ItemLevelOffset="Item_level_offset_scale" />
+  </Reward>
+  <Reward Name="carrion_keep_seekers_reward" UITitle="@ui_carrion_keep_seekers_reward" UILore="@ui_carrion_keep_seekers_reward_lore">
+    <CustomMessages>
+      <Message UIDesc="@ui_carrion_keep_seekers_reward_summary" />
+    </CustomMessages>
+    <Currency Gold_Min="1200" Gold_Max="2000" Gold_PerPlayerLevel="91" PA_Min="0" PA_Max="0" PA_PerPlayerLevel="0" />
+    <FixedItems Name="Endgame_2HStaff" MinItemNumber="3" MaxItemNumber="5" SortByRarity="0" />
+    <ContextualSoundTrigger ToPlay="Endgame_AdventurersGuild_ExpeditionSuccess" ToResume="EndgameIdle" />
+    <ScalingTables Gold="Gold_scale" PA="PA_Scale" ItemLevelOffset="Item_level_offset_scale" />
+  </Reward>
+  <Reward Name="coast_of_wrecks_seekers_reward" UITitle="@ui_coast_of_wrecks_seekers_reward" UILore="@ui_coast_of_wrecks_seekers_reward_lore">
+    <CustomMessages>
+      <Message UIDesc="@ui_coast_of_wrecks_seekers_reward_summary" />
+    </CustomMessages>
+    <Currency Gold_Min="1800" Gold_Max="3000" Gold_PerPlayerLevel="0" PA_Min="0" PA_Max="0" PA_PerPlayerLevel="0" />
+    <Production ProductionFactor="50" ProductionFactorDuration="3" />
+    <ContextualSoundTrigger ToPlay="Endgame_AdventurersGuild_ExpeditionSuccess" ToResume="EndgameIdle" />
+    <ScalingTables Gold="Gold_scale" PA="PA_Scale" ItemLevelOffset="Item_level_offset_scale" />
+  </Reward>
+  <Reward Name="unknown_shores_seekers_reward" UITitle="@ui_unknown_shores_seekers_reward" UILore="@ui_unknown_shores_seekers_reward_lore">
+    <CustomMessages>
+      <Message UIDesc="@ui_unknown_shores_seekers_reward_summary" />
+    </CustomMessages>
+    <Currency Gold_Min="1200" Gold_Max="2000" Gold_PerPlayerLevel="91" PA_Min="0" PA_Max="0" PA_PerPlayerLevel="0" />
+    <FixedItems Name="Endgame_uberbundle" MinItemNumber="5" MaxItemNumber="5" SortByRarity="1" />
+    <ContextualSoundTrigger ToPlay="Endgame_AdventurersGuild_ExpeditionSuccess" ToResume="EndgameIdle" />
+    <ScalingTables Gold="Gold_scale" PA="PA_Scale" ItemLevelOffset="Item_level_offset_scale" />
+  </Reward>
+  <Reward Name="regicide_research_seekers_reward" UITitle="@ui_regicide_research_seekers_reward" UILore="@ui_regicide_research_seekers_reward_lore">
+    <CustomMessages>
+      <Message UIDesc="@ui_regicide_research_seekers_reward_summary" />
+    </CustomMessages>
+    <Currency Gold_Min="1200" Gold_Max="2000" Gold_PerPlayerLevel="91" PA_Min="0" PA_Max="0" PA_PerPlayerLevel="0" />
+    <FixedItems Name="Endgame_1HPistol" MinItemNumber="3" MaxItemNumber="5" SortByRarity="0" />
+    <ContextualSoundTrigger ToPlay="Endgame_AdventurersGuild_ExpeditionSuccess" ToResume="EndgameIdle" />
+    <ScalingTables Gold="Gold_scale" PA="PA_Scale" ItemLevelOffset="Item_level_offset_scale" />
+  </Reward>
+  <Reward Name="blood_tear_burial_seekers_reward" UITitle="@ui_blood_tear_burial_seekers_reward" UILore="@ui_blood_tear_burial_seekers_reward_lore">
+    <CustomMessages>
+      <Message UIDesc="@ui_blood_tear_burial_seekers_reward_summary" />
+    </CustomMessages>
+    <Currency Gold_Min="1200" Gold_Max="2000" Gold_PerPlayerLevel="91" PA_Min="0" PA_Max="0" PA_PerPlayerLevel="0" />
+    <FixedItems Name="Endgame_WarriorArmor" MinItemNumber="3" MaxItemNumber="5" SortByRarity="0" />
+    <ContextualSoundTrigger ToPlay="Endgame_AdventurersGuild_ExpeditionSuccess" ToResume="EndgameIdle" />
+    <ScalingTables Gold="Gold_scale" PA="PA_Scale" ItemLevelOffset="Item_level_offset_scale" />
+  </Reward>
+  <Reward Name="abyssal_rift_seekers_reward" UITitle="@ui_abyssal_rift_seekers_reward" UILore="@ui_abyssal_rift_seekers_reward_lore">
+    <CustomMessages>
+      <Message UIDesc="@ui_abyssal_rift_seekers_reward_summary" />
+    </CustomMessages>
+    <Currency Gold_Min="1800" Gold_Max="3000" Gold_PerPlayerLevel="0" PA_Min="0" PA_Max="0" PA_PerPlayerLevel="0" />
+    <FixedItems Name="Endgame_LegendaryReagent" MinItemNumber="1" MaxItemNumber="1" SortByRarity="0" />
+    <ContextualSoundTrigger ToPlay="Endgame_AdventurersGuild_ExpeditionSuccess" ToResume="EndgameIdle" />
+    <ScalingTables Gold="Gold_scale" PA="PA_Scale" ItemLevelOffset="Item_level_offset_scale" />
+  </Reward>
+  <Reward Name="ezaneal_shrine_seekers_reward" UITitle="@ui_ezaneal_shrine_seekers_reward" UILore="@ui_ezaneal_shrine_seekers_reward_lore">
+    <CustomMessages>
+      <Message UIDesc="@ui_ezaneal_shrine_seekers_reward_summary" />
+    </CustomMessages>
+    <Currency Gold_Min="360" Gold_Max="600" Gold_PerPlayerLevel="17" PA_Min="0" PA_Max="0" PA_PerPlayerLevel="0" />
+    <FixedItems Name="Endgame_EveryWeapon" MinItemNumber="3" MaxItemNumber="5" SortByRarity="0" />
+    <ContextualSoundTrigger ToPlay="Endgame_AdventurersGuild_ExpeditionSuccess" ToResume="EndgameIdle" />
+    <ScalingTables Gold="Gold_scale" PA="PA_Scale" ItemLevelOffset="Item_level_offset_scale" />
+  </Reward>
+  <Reward Name="flayers_home_seekers_reward" UITitle="@ui_flayers_home_seekers_reward" UILore="@ui_flayers_home_seekers_reward_lore">
+    <CustomMessages>
+      <Message UIDesc="@ui_flayers_home_seekers_reward_summary" />
+    </CustomMessages>
+    <Currency Gold_Min="1200" Gold_Max="2000" Gold_PerPlayerLevel="91" PA_Min="0" PA_Max="0" PA_PerPlayerLevel="0" />
+    <FixedItems Name="Endgame_2HMelee" MinItemNumber="3" MaxItemNumber="5" SortByRarity="0" />
+    <ContextualSoundTrigger ToPlay="Endgame_AdventurersGuild_ExpeditionSuccess" ToResume="EndgameIdle" />
+    <ScalingTables Gold="Gold_scale" PA="PA_Scale" ItemLevelOffset="Item_level_offset_scale" />
+  </Reward>
+  <Reward Name="misc_seekers_land_reward_1" UITitle="@ui_misc_seekers_land_reward_1" UILore="@ui_misc_seekers_land_reward_1_lore">
+    <CustomMessages>
+      <Message UIDesc="@ui_misc_seekers_land_reward_1_summary" />
+    </CustomMessages>
+    <Currency Gold_Min="500" Gold_Max="1500" Gold_PerPlayerLevel="10" PA_Min="5" PA_Max="15" PA_PerPlayerLevel="0.1" />
+    <FixedItems Name="Endgame_alternative_reward" MinItemNumber="3" MaxItemNumber="5" SortByRarity="0" />
+    <ContextualSoundTrigger ToPlay="Endgame_AdventurersGuild_ExpeditionSuccess" ToResume="EndgameIdle" />
+    <ScalingTables Gold="Gold_scale" PA="PA_Scale" ItemLevelOffset="Item_level_offset_scale" />
+  </Reward>
+  <Reward Name="misc_seekers_land_reward_2" UITitle="@ui_misc_seekers_land_reward_2" UILore="@ui_misc_seekers_land_reward_2_lore">
+    <CustomMessages>
+      <Message UIDesc="@ui_misc_home_seekers_reward_2_summary" />
+    </CustomMessages>
+    <Currency Gold_Min="1000" Gold_Max="5000" Gold_PerPlayerLevel="30" PA_Min="15" PA_Max="45" PA_PerPlayerLevel="0.3" />
+    <FixedItems Name="Endgame_alternative_reward" MinItemNumber="3" MaxItemNumber="5" SortByRarity="0" />
+    <ContextualSoundTrigger ToPlay="Endgame_AdventurersGuild_ExpeditionSuccess" ToResume="EndgameIdle" />
+    <ScalingTables Gold="Gold_scale" PA="PA_Scale" ItemLevelOffset="Item_level_offset_scale" />
+  </Reward>
+  <Reward Name="misc_seekers_land_reward_3" UITitle="@ui_misc_seekers_land_reward_3" UILore="@ui_misc_seekers_land_reward_3_lore">
+    <CustomMessages>
+      <Message UIDesc="@ui_misc_seekers_land_reward_3_summary" />
+    </CustomMessages>
+    <Currency Gold_Min="5000" Gold_Max="15000" Gold_PerPlayerLevel="50" PA_Min="15" PA_Max="45" PA_PerPlayerLevel="1" />
+    <FixedItems Name="Endgame_alternative_reward" MinItemNumber="3" MaxItemNumber="5" SortByRarity="0" />
+    <ContextualSoundTrigger ToPlay="Endgame_AdventurersGuild_ExpeditionSuccess" ToResume="EndgameIdle" />
+    <ScalingTables Gold="Gold_scale" PA="PA_Scale" ItemLevelOffset="Item_level_offset_scale" />
+  </Reward>
+  <Reward Name="misc_seekers_land_reward_4" UITitle="@ui_misc_seekers_land_reward_4" UILore="@ui_misc_seekers_land_reward_4_lore">
+    <CustomMessages>
+      <Message UIDesc="@ui_misc_seekers_land_reward_4_summary" />
+    </CustomMessages>
+    <Currency Gold_Min="10000" Gold_Max="30000" Gold_PerPlayerLevel="200" PA_Min="100" PA_Max="300" PA_PerPlayerLevel="2" />
+    <FixedItems Name="Endgame_alternative_reward" MinItemNumber="3" MaxItemNumber="5" SortByRarity="0" />
+    <ContextualSoundTrigger ToPlay="Endgame_AdventurersGuild_ExpeditionSuccess" ToResume="EndgameIdle" />
+    <ScalingTables Gold="Gold_scale" PA="PA_Scale" ItemLevelOffset="Item_level_offset_scale" />
+  </Reward>
+  <Reward Name="misc_seekers_ship_reward_1" UITitle="@ui_misc_seekers_ship_reward_1" UILore="@ui_misc_seekers_ship_reward_1_lore">
+    <CustomMessages>
+      <Message UIDesc="@ui_misc_seekers_ship_reward_1_summary" />
+    </CustomMessages>
+    <Currency Gold_Min="500" Gold_Max="1500" Gold_PerPlayerLevel="10" PA_Min="5" PA_Max="15" PA_PerPlayerLevel="0.1" />
+    <FixedItems Name="Endgame_alternative_reward" MinItemNumber="3" MaxItemNumber="5" SortByRarity="0" />
+    <ContextualSoundTrigger ToPlay="Endgame_AdventurersGuild_ExpeditionSuccess" ToResume="EndgameIdle" />
+    <ScalingTables Gold="Gold_scale" PA="PA_Scale" ItemLevelOffset="Item_level_offset_scale" />
+  </Reward>
+  <Reward Name="misc_seekers_ship_reward_2" UITitle="@ui_misc_seekers_ship_reward_2" UILore="@ui_misc_seekers_ship_reward_2_lore">
+    <CustomMessages>
+      <Message UIDesc="@ui_misc_seekers_ship_reward_2_summary" />
+    </CustomMessages>
+    <Currency Gold_Min="1000" Gold_Max="5000" Gold_PerPlayerLevel="30" PA_Min="15" PA_Max="45" PA_PerPlayerLevel="0.3" />
+    <FixedItems Name="Endgame_alternative_reward" MinItemNumber="3" MaxItemNumber="5" SortByRarity="0" />
+    <ContextualSoundTrigger ToPlay="Endgame_AdventurersGuild_ExpeditionSuccess" ToResume="EndgameIdle" />
+    <ScalingTables Gold="Gold_scale" PA="PA_Scale" ItemLevelOffset="Item_level_offset_scale" />
+  </Reward>
+  <Reward Name="misc_seekers_ship_reward_3" UITitle="@ui_misc_seekers_ship_reward_3" UILore="@ui_misc_seekers_ship_reward_3_lore">
+    <CustomMessages>
+      <Message UIDesc="@ui_misc_seekers_ship_reward_3_summary" />
+    </CustomMessages>
+    <Currency Gold_Min="5000" Gold_Max="15000" Gold_PerPlayerLevel="50" PA_Min="15" PA_Max="45" PA_PerPlayerLevel="1" />
+    <FixedItems Name="Endgame_alternative_reward" MinItemNumber="3" MaxItemNumber="5" SortByRarity="0" />
+    <ContextualSoundTrigger ToPlay="Endgame_AdventurersGuild_ExpeditionSuccess" ToResume="EndgameIdle" />
+    <ScalingTables Gold="Gold_scale" PA="PA_Scale" ItemLevelOffset="Item_level_offset_scale" />
+  </Reward>
+  <Reward Name="misc_seekers_ship_reward_4" UITitle="@ui_misc_seekers_ship_reward_4" UILore="@ui_misc_seekers_ship_reward_4_lore">
+    <CustomMessages>
+      <Message UIDesc="@ui_misc_seekers_ship_reward_4_summary" />
+    </CustomMessages>
+    <Currency Gold_Min="10000" Gold_Max="30000" Gold_PerPlayerLevel="200" PA_Min="100" PA_Max="300" PA_PerPlayerLevel="2" />
+    <FixedItems Name="Endgame_uberbundle" MinItemNumber="5" MaxItemNumber="5" SortByRarity="1" />
+    <ContextualSoundTrigger ToPlay="Endgame_AdventurersGuild_ExpeditionSuccess" ToResume="EndgameIdle" />
+    <ScalingTables Gold="Gold_scale" PA="PA_Scale" ItemLevelOffset="Item_level_offset_scale" />
+  </Reward>
+  <Reward Name="misc_seekers_general_fail_reward_1" UITitle="@ui_misc_seekers_general_fail_reward_1" UILore="@ui_misc_seekers_general_fail_reward_1_lore">
+    <CustomMessages>
+      <Message UIDesc="@ui_misc_seekers_general_fail_reward_1_summary" />
+    </CustomMessages>
+    <ContextualSoundTrigger ToPlay="Endgame_AdventurersGuild_ExpeditionFailure" ToResume="EndgameIdle" />
+  </Reward>
+  <Reward Name="misc_seekers_land_fail_reward_1" UITitle="@ui_misc_seekers_land_fail_reward_1" UILore="@ui_misc_seekers_land_fail_reward_1_lore">
+    <CustomMessages>
+      <Message UIDesc="@ui_misc_seekers_land_fail_reward_1_summary" />
+    </CustomMessages>
+    <ContextualSoundTrigger ToPlay="Endgame_AdventurersGuild_ExpeditionFailure" ToResume="EndgameIdle" />
+  </Reward>
+  <Reward Name="misc_seekers_land_fail_reward_2" UITitle="@ui_misc_seekers_land_fail_reward_2" UILore="@ui_misc_seekers_land_fail_reward_2_lore">
+    <CustomMessages>
+      <Message UIDesc="@ui_misc_seekers_land_fail_reward_2_summary" />
+    </CustomMessages>
+    <ContextualSoundTrigger ToPlay="Endgame_AdventurersGuild_ExpeditionFailure" ToResume="EndgameIdle" />
+  </Reward>
+  <Reward Name="misc_seekers_ship_fail_reward_1" UITitle="@ui_misc_seekers__ship_fail_reward_1" UILore="@ui_misc_seekers_ship_fail_reward_1_lore">
+    <CustomMessages>
+      <Message UIDesc="@ui_misc_seekers_ship_fail_reward_1_summary" />
+    </CustomMessages>
+    <ContextualSoundTrigger ToPlay="Endgame_AdventurersGuild_ExpeditionFailure" ToResume="EndgameIdle" />
+  </Reward>
+  <Reward Name="misc_seekers_ship_fail_reward_2" UITitle="@ui_misc_seekers__ship_fail_reward_2" UILore="@ui_misc_seekers_ship_fail_reward_2_lore">
+    <CustomMessages>
+      <Message UIDesc="@ui_misc_seekers_ship_fail_reward_2_summary" />
+    </CustomMessages>
+    <ContextualSoundTrigger ToPlay="Endgame_AdventurersGuild_ExpeditionFailure" ToResume="EndgameIdle" />
+  </Reward>
+</MetaData>

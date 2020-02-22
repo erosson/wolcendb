@@ -1,0 +1,453 @@
+{
+  "MetaData": {
+    "Reward": [
+      {
+        "$": {
+          "Name": "buy_reagent_reward",
+          "UITitle": "@ui_buy_reagent_reward",
+          "UILore": "@ui_buy_reagent_reward_lore"
+        },
+        "CustomMessages": [
+          {
+            "Message": [
+              {
+                "$": {
+                  "UIDesc": "@ui_buy_reagent_reward_summary"
+                }
+              }
+            ]
+          }
+        ],
+        "Currency": [
+          {
+            "$": {
+              "Gold_Min": "0",
+              "Gold_Max": "0",
+              "Gold_PerPlayerLevel": "0",
+              "PA_Min": "0",
+              "PA_Max": "0",
+              "PA_PerPlayerLevel": "0"
+            }
+          }
+        ],
+        "ChoiceItems": [
+          {
+            "$": {
+              "Name": "Endgame_Reagent",
+              "MinItemNumber": "2",
+              "MaxItemNumber": "2",
+              "SortByRarity": "1"
+            }
+          }
+        ],
+        "ContextualSoundTrigger": [
+          {
+            "$": {
+              "ToPlay": "Endgame_Crafting_ReagentAquisitionProjectCompleted",
+              "ToResume": "EndgameIdle"
+            }
+          }
+        ]
+      },
+      {
+        "$": {
+          "Name": "buy_uberboss_1_reward",
+          "UITitle": "@ui_buy_uberboss_1_reward",
+          "UILore": "@ui_buy_uberboss_1_reward_lore"
+        },
+        "CustomMessages": [
+          {
+            "Message": [
+              {
+                "$": {
+                  "UIDesc": "@ui_buy_uberboss_1_reward_summary"
+                }
+              }
+            ]
+          }
+        ],
+        "Currency": [
+          {
+            "$": {
+              "Gold_Min": "0",
+              "Gold_Max": "0",
+              "Gold_PerPlayerLevel": "0",
+              "PA_Min": "0",
+              "PA_Max": "0",
+              "PA_PerPlayerLevel": "0"
+            }
+          }
+        ],
+        "FixedItems": [
+          {
+            "$": {
+              "Name": "Endgame_UberBoss_consumable_1",
+              "MinItemNumber": "1",
+              "MaxItemNumber": "1",
+              "SortByRarity": "1"
+            }
+          }
+        ],
+        "ContextualSoundTrigger": [
+          {
+            "$": {
+              "ToPlay": "Endgame_Crafting_ReagentAquisitionProjectCompleted",
+              "ToResume": "EndgameIdle"
+            }
+          }
+        ]
+      },
+      {
+        "$": {
+          "Name": "buy_uberboss_2_reward",
+          "UITitle": "@ui_buy_uberboss_1_reward",
+          "UILore": "@ui_buy_uberboss_1_reward_lore"
+        },
+        "CustomMessages": [
+          {
+            "Message": [
+              {
+                "$": {
+                  "UIDesc": "@ui_buy_uberboss_1_reward_summary"
+                }
+              }
+            ]
+          }
+        ],
+        "Currency": [
+          {
+            "$": {
+              "Gold_Min": "0",
+              "Gold_Max": "0",
+              "Gold_PerPlayerLevel": "0",
+              "PA_Min": "0",
+              "PA_Max": "0",
+              "PA_PerPlayerLevel": "0"
+            }
+          }
+        ],
+        "FixedItems": [
+          {
+            "$": {
+              "Name": "Endgame_UberBoss_consumable_2",
+              "MinItemNumber": "1",
+              "MaxItemNumber": "1",
+              "SortByRarity": "1"
+            }
+          }
+        ],
+        "ContextualSoundTrigger": [
+          {
+            "$": {
+              "ToPlay": "Endgame_Crafting_ReagentAquisitionProjectCompleted",
+              "ToResume": "EndgameIdle"
+            }
+          }
+        ]
+      },
+      {
+        "$": {
+          "Name": "buy_uberboss_3_reward",
+          "UITitle": "@ui_buy_uberboss_1_reward",
+          "UILore": "@ui_buy_uberboss_1_reward_lore"
+        },
+        "CustomMessages": [
+          {
+            "Message": [
+              {
+                "$": {
+                  "UIDesc": "@ui_buy_uberboss_1_reward_summary"
+                }
+              }
+            ]
+          }
+        ],
+        "Currency": [
+          {
+            "$": {
+              "Gold_Min": "0",
+              "Gold_Max": "0",
+              "Gold_PerPlayerLevel": "0",
+              "PA_Min": "0",
+              "PA_Max": "0",
+              "PA_PerPlayerLevel": "0"
+            }
+          }
+        ],
+        "FixedItems": [
+          {
+            "$": {
+              "Name": "Endgame_UberBoss_consumable_3",
+              "MinItemNumber": "1",
+              "MaxItemNumber": "1",
+              "SortByRarity": "1"
+            }
+          }
+        ],
+        "ContextualSoundTrigger": [
+          {
+            "$": {
+              "ToPlay": "Endgame_Crafting_ReagentAquisitionProjectCompleted",
+              "ToResume": "EndgameIdle"
+            }
+          }
+        ]
+      },
+      {
+        "$": {
+          "Name": "dark_market_item_quality_upgrade_reward",
+          "UITitle": "@ui_dark_market_item_quality_upgrade_reward",
+          "UILore": "@ui_dark_market_item_quality_upgrade_reward_lore"
+        },
+        "CustomMessages": [
+          {
+            "Message": [
+              {
+                "$": {
+                  "UIDesc": "@ui_dark_market_item_quality_upgrade_reward_summary"
+                }
+              }
+            ]
+          }
+        ],
+        "Currency": [
+          {
+            "$": {
+              "Gold_Min": "0",
+              "Gold_Max": "0",
+              "Gold_PerPlayerLevel": "0",
+              "PA_Min": "0",
+              "PA_Max": "0",
+              "PA_PerPlayerLevel": "0"
+            }
+          }
+        ],
+        "ContextualSoundTrigger": [
+          {
+            "$": {
+              "ToPlay": "Endgame_Crafting_QualityUpgradeUnlocked",
+              "ToResume": "EndgameIdle"
+            }
+          }
+        ]
+      },
+      {
+        "$": {
+          "Name": "dark_market_item_rarity_upgrade_reward",
+          "UITitle": "@ui_dark_market_item_rarity_upgrade_reward",
+          "UILore": "@ui_dark_market_item_rarity_upgrade_reward_lore"
+        },
+        "CustomMessages": [
+          {
+            "Message": [
+              {
+                "$": {
+                  "UIDesc": "@ui_dark_market_item_rarity_upgrade_reward_summary"
+                }
+              }
+            ]
+          }
+        ],
+        "Currency": [
+          {
+            "$": {
+              "Gold_Min": "0",
+              "Gold_Max": "0",
+              "Gold_PerPlayerLevel": "0",
+              "PA_Min": "0",
+              "PA_Max": "0",
+              "PA_PerPlayerLevel": "0"
+            }
+          }
+        ],
+        "ContextualSoundTrigger": [
+          {
+            "$": {
+              "ToPlay": "Endgame_Crafting_RarityUpgradeUnlocked",
+              "ToResume": "EndgameIdle"
+            }
+          }
+        ]
+      },
+      {
+        "$": {
+          "Name": "dark_market_leg_reagent_upgrade_reward",
+          "UITitle": "@ui_dark_market_leg_reagent_upgrade_reward",
+          "UILore": "@ui_dark_market_leg_reagent_upgrade_reward_lore"
+        },
+        "CustomMessages": [
+          {
+            "Message": [
+              {
+                "$": {
+                  "UIDesc": "@ui_dark_market_leg_reagent_upgrade_reward_summary"
+                }
+              }
+            ]
+          }
+        ],
+        "Currency": [
+          {
+            "$": {
+              "Gold_Min": "0",
+              "Gold_Max": "0",
+              "Gold_PerPlayerLevel": "0",
+              "PA_Min": "0",
+              "PA_Max": "0",
+              "PA_PerPlayerLevel": "0"
+            }
+          }
+        ],
+        "ContextualSoundTrigger": [
+          {
+            "$": {
+              "ToPlay": "Endgame_Crafting_ReagentUpgradeUnlocked",
+              "ToResume": "EndgameIdle"
+            }
+          }
+        ]
+      },
+      {
+        "$": {
+          "Name": "dark_market_item_quality_transform_reward",
+          "UITitle": "@ui_dark_market_item_quality_transform_reward",
+          "UILore": "@ui_dark_market_item_quality_transform_reward_lore"
+        },
+        "CustomMessages": [
+          {
+            "Message": [
+              {
+                "$": {
+                  "UIDesc": "@ui_dark_market_item_quality_transform_reward_summary"
+                }
+              }
+            ]
+          }
+        ],
+        "Currency": [
+          {
+            "$": {
+              "Gold_Min": "0",
+              "Gold_Max": "0",
+              "Gold_PerPlayerLevel": "0",
+              "PA_Min": "0",
+              "PA_Max": "0",
+              "PA_PerPlayerLevel": "0"
+            }
+          }
+        ],
+        "ItemModification": [
+          {
+            "$": {
+              "Type": "Craft",
+              "RarityIncreaseChancePercent": "0",
+              "QualityIncreaseChancePercent": "100"
+            }
+          }
+        ],
+        "ContextualSoundTrigger": [
+          {
+            "$": {
+              "ToPlay": "Endgame_Crafting_QualityUpgradeProjectCompleted",
+              "ToResume": "EndgameIdle"
+            }
+          }
+        ]
+      },
+      {
+        "$": {
+          "Name": "dark_market_item_rarity_transform_reward",
+          "UITitle": "@ui_dark_market_item_rarity_transform_reward",
+          "UILore": "@ui_dark_market_item_rarity_transform_reward_lore"
+        },
+        "CustomMessages": [
+          {
+            "Message": [
+              {
+                "$": {
+                  "UIDesc": "@ui_dark_market_item_rarity_transform_reward_summary"
+                }
+              }
+            ]
+          }
+        ],
+        "Currency": [
+          {
+            "$": {
+              "Gold_Min": "0",
+              "Gold_Max": "0",
+              "Gold_PerPlayerLevel": "0",
+              "PA_Min": "0",
+              "PA_Max": "0",
+              "PA_PerPlayerLevel": "0"
+            }
+          }
+        ],
+        "ItemModification": [
+          {
+            "$": {
+              "Type": "Craft",
+              "RarityIncreaseChancePercent": "100",
+              "QualityIncreaseChancePercent": "0"
+            }
+          }
+        ],
+        "ContextualSoundTrigger": [
+          {
+            "$": {
+              "ToPlay": "Endgame_Crafting_RarityUpgradeProjectCompleted",
+              "ToResume": "EndgameIdle"
+            }
+          }
+        ]
+      },
+      {
+        "$": {
+          "Name": "dark_market_leg_reagent_transform_reward",
+          "UITitle": "@ui_dark_market_leg_reagent_transform_reward",
+          "UILore": "@ui_dark_market_leg_reagent_transform_reward_lore"
+        },
+        "CustomMessages": [
+          {
+            "Message": [
+              {
+                "$": {
+                  "UIDesc": "@ui_dark_market_leg_reagent_transform_reward_summary"
+                }
+              }
+            ]
+          }
+        ],
+        "Currency": [
+          {
+            "$": {
+              "Gold_Min": "0",
+              "Gold_Max": "0",
+              "Gold_PerPlayerLevel": "0",
+              "PA_Min": "0",
+              "PA_Max": "0",
+              "PA_PerPlayerLevel": "0"
+            }
+          }
+        ],
+        "ContextualSoundTrigger": [
+          {
+            "$": {
+              "ToPlay": "Endgame_Crafting_ReagentUpgradeProjectCompleted",
+              "ToResume": "EndgameIdle"
+            }
+          }
+        ],
+        "ItemModification": [
+          {
+            "$": {
+              "Type": "Reagent",
+              "RarityIncreaseChancePercent": "100",
+              "QualityIncreaseChancePercent": "0"
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

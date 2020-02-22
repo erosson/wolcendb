@@ -1,0 +1,102 @@
+{
+  "MetaData": {
+    "Reward": [
+      {
+        "$": {
+          "Name": "transmutation_project_reward",
+          "UITitle": "@ui_transmutation_project_reward",
+          "UILore": "@ui_transmutation_project_reward_lore"
+        },
+        "CustomMessages": [
+          {
+            "Message": [
+              {
+                "$": {
+                  "UIDesc": "@ui_transmutation_project_reward_desc"
+                }
+              }
+            ]
+          }
+        ],
+        "ItemModification": [
+          {
+            "$": {
+              "Type": "Alchesmith",
+              "RarityIncreaseChancePercent": "0",
+              "QualityIncreaseChancePercent": "0"
+            }
+          }
+        ],
+        "ContextualSoundTrigger": [
+          {
+            "$": {
+              "ToPlay": "Endgame_Alchesmith_TransmutationProjectCompleted",
+              "ToResume": "EndgameIdle"
+            }
+          }
+        ]
+      },
+      {
+        "$": {
+          "Name": "transmutation_project_with_rarity_increase_reward",
+          "UITitle": "@ui_transmutation_project_reward",
+          "UILore": "@ui_transmutation_project_reward_lore"
+        },
+        "CustomMessages": [
+          {
+            "Message": [
+              {
+                "$": {
+                  "UIDesc": "@ui_transmutation_project_reward_desc"
+                }
+              }
+            ]
+          }
+        ],
+        "ItemModification": [
+          {
+            "$": {
+              "Type": "Alchesmith",
+              "RarityIncreaseChancePercent": "2",
+              "QualityIncreaseChancePercent": "10"
+            }
+          }
+        ],
+        "ContextualSoundTrigger": [
+          {
+            "$": {
+              "ToPlay": "Endgame_Alchesmith_TransmutationProjectCompleted",
+              "ToResume": "EndgameIdle"
+            }
+          }
+        ]
+      },
+      {
+        "$": {
+          "Name": "transmutation_forge_upgrade_reward",
+          "UITitle": "@ui_transmutation_forge_upgrade_reward",
+          "UILore": "@ui_transmutation_forge_upgrade_reward_lore"
+        },
+        "CustomMessages": [
+          {
+            "Message": [
+              {
+                "$": {
+                  "UIDesc": "@ui_transmutation_forge_upgrade_reward_desc"
+                }
+              }
+            ]
+          }
+        ],
+        "ContextualSoundTrigger": [
+          {
+            "$": {
+              "ToPlay": "Endgame_Alchesmith_UpgradeProjectCompleted",
+              "ToResume": "EndgameIdle"
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -177,7 +177,7 @@ viewBody : Model -> List (Html Msg)
 viewBody mmodel =
     case mmodel of
         Err err ->
-            [ code [] [ text err ] ]
+            [ code [] [ text <| String.right 10000 err ] ]
 
         Ok model ->
             let

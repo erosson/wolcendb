@@ -1,0 +1,263 @@
+{
+  "MetaData": {
+    "City": [
+      {
+        "$": {
+          "MaxActiveProjects": "2",
+          "MaxForcedProjects": "3"
+        },
+        "Buildings": [
+          {
+            "city_hall": [
+              {
+                "$": {
+                  "BuildingName": "building_city_stormfall_palace"
+                }
+              }
+            ],
+            "explorers_guild": [
+              {
+                "$": {
+                  "BuildingName": "building_seekers_garrison"
+                }
+              }
+            ],
+            "diplomats_guild": [
+              {
+                "$": {
+                  "BuildingName": "building_trade_assembly"
+                }
+              }
+            ],
+            "crafting_building": [
+              {
+                "$": {
+                  "BuildingName": "building_dark_market"
+                }
+              }
+            ],
+            "alchesmith": [
+              {
+                "$": {
+                  "BuildingName": "building_transmutation_forge"
+                }
+              }
+            ],
+            "bankers_guild": [
+              {
+                "$": {
+                  "BuildingName": "building_bank"
+                }
+              }
+            ],
+            "apocalyptic_building": [
+              {
+                "$": {
+                  "BuildingName": "building_anankis_artifact"
+                }
+              }
+            ],
+            "skills_building": [
+              {
+                "$": {
+                  "BuildingName": "building_enneract_lab"
+                }
+              }
+            ],
+            "pa_to_gold_converter": [
+              {
+                "$": {
+                  "BuildingName": "building_siphon_chamber"
+                }
+              }
+            ],
+            "gold_to_pa_converter": [
+              {
+                "$": {
+                  "BuildingName": "building_injector_seat"
+                }
+              }
+            ],
+            "shipyard": [
+              {
+                "$": {
+                  "BuildingName": "building_shipyard"
+                }
+              }
+            ],
+            "wonder_1": [
+              {
+                "$": {
+                  "BuildingName": "building_wonder_1"
+                }
+              }
+            ],
+            "wonder_2": [
+              {
+                "$": {
+                  "BuildingName": "building_wonder_2"
+                }
+              }
+            ],
+            "wonder_3": [
+              {
+                "$": {
+                  "BuildingName": "building_wonder_3"
+                }
+              }
+            ],
+            "wonder_4": [
+              {
+                "$": {
+                  "BuildingName": "building_wonder_4"
+                }
+              }
+            ],
+            "wonder_5": [
+              {
+                "$": {
+                  "BuildingName": "building_wonder_5"
+                }
+              }
+            ],
+            "wonder_6": [
+              {
+                "$": {
+                  "BuildingName": "building_wonder_6"
+                }
+              }
+            ]
+          }
+        ],
+        "CourierEvents": [
+          {
+            "$": {
+              "Frequency_Min": "5",
+              "Frequency_Max": "8"
+            },
+            "Event": [
+              {
+                "$": {
+                  "Name": "courier_1",
+                  "RewardName": "courier_reward_1",
+                  "Weight": "1",
+                  "Cooldown": "0",
+                  "RequiredPlayerLevel": "0",
+                  "RequiredCityLevel": "3",
+                  "RequiredProjects": ""
+                }
+              }
+            ]
+          }
+        ],
+        "Levels": [
+          {
+            "Level": [
+              {
+                "$": {
+                  "Level": "1",
+                  "PPTThreshold": "10"
+                }
+              },
+              {
+                "$": {
+                  "Level": "2",
+                  "PPTThreshold": "50"
+                }
+              },
+              {
+                "$": {
+                  "Level": "3",
+                  "PPTThreshold": "100"
+                }
+              },
+              {
+                "$": {
+                  "Level": "4",
+                  "PPTThreshold": "150"
+                }
+              },
+              {
+                "$": {
+                  "Level": "5",
+                  "PPTThreshold": "200"
+                }
+              },
+              {
+                "$": {
+                  "Level": "6",
+                  "PPTThreshold": "300"
+                }
+              },
+              {
+                "$": {
+                  "Level": "7",
+                  "PPTThreshold": "350"
+                }
+              },
+              {
+                "$": {
+                  "Level": "8",
+                  "PPTThreshold": "400"
+                }
+              },
+              {
+                "$": {
+                  "Level": "9",
+                  "PPTThreshold": "500"
+                }
+              },
+              {
+                "$": {
+                  "Level": "10",
+                  "PPTThreshold": "1000"
+                }
+              }
+            ]
+          }
+        ],
+        "Help": [
+          {
+            "Entry": [
+              {
+                "$": {
+                  "Title": "@ui_cmuihelp_1_title",
+                  "SubTitle": "@ui_cmuihelp_1_subtitle",
+                  "Content": "@ui_cmuihelp_1_content"
+                }
+              },
+              {
+                "$": {
+                  "Title": "@ui_cmuihelp_2_title",
+                  "SubTitle": "@ui_cmuihelp_2_subtitle",
+                  "Content": "@ui_cmuihelp_2_content"
+                }
+              },
+              {
+                "$": {
+                  "Title": "@ui_cmuihelp_3_title",
+                  "SubTitle": "@ui_cmuihelp_3_subtitle",
+                  "Content": "@ui_cmuihelp_3_content"
+                }
+              },
+              {
+                "$": {
+                  "Title": "@ui_cmuihelp_4_title",
+                  "SubTitle": "@ui_cmuihelp_4_subtitle",
+                  "Content": "@ui_cmuihelp_4_content"
+                }
+              },
+              {
+                "$": {
+                  "Title": "@ui_cmuihelp_5_title",
+                  "SubTitle": "@ui_cmuihelp_5_subtitle",
+                  "Content": "@ui_cmuihelp_5_content"
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

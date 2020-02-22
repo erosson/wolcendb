@@ -1,0 +1,110 @@
+<MetaData>
+  <Reward Name="city_hall_construct_reward" UITitle="@ui_city_hall_construct_reward" UILore="@ui_city_hall_construct_reward_lore">
+    <CustomMessages>
+      <Message UIDesc="@ui_city_hall_construct_reward_desc" />
+    </CustomMessages>
+    <ContextualSoundTrigger ToPlay="Endgame_CityHall_ProjectCompleted" ToResume="EndgameIdle" />
+  </Reward>
+  <Reward Name="city_hall_upgrade_reward" UITitle="@ui_city_hall_upgrade_reward" UILore="@ui_city_hall_upgrade_reward_lore">
+    <CustomMessages>
+      <Message UIDesc="@ui_city_hall_upgrade_reward_desc" />
+    </CustomMessages>
+    <ContextualSoundTrigger ToPlay="Endgame_CityHall_ProjectCompleted" ToResume="EndgameIdle" />
+  </Reward>
+  <Reward Name="seekers_garrison_construct_reward" UITitle="@ui_seekers_garrison_construct_reward" UILore="@ui_seekers_garrison_construct_reward_lore">
+    <CustomMessages>
+      <Message UIDesc="@ui_seekers_garrison_construct_reward_desc" />
+    </CustomMessages>
+    <ContextualSoundTrigger ToPlay="Endgame_AdventurersGuild_ConstructionCompleted" ToResume="EndgameIdle" />
+  </Reward>
+  <Reward Name="trade_assembly_construct_reward" UITitle="@ui_trade_assembly_construct_reward" UILore="@ui_trade_assembly_construct_reward_lore">
+    <CustomMessages>
+      <Message UIDesc="@ui_trade_assembly_construct_reward_desc" />
+    </CustomMessages>
+    <ContextualSoundTrigger ToPlay="Endgame_DiplomatsGuild_ConstructionCompleted" ToResume="EndgameIdle" />
+  </Reward>
+  <Reward Name="dark_market_construct_reward" UITitle="@ui_dark_market_construct_reward" UILore="@ui_dark_market_construct_reward_lore">
+    <CustomMessages>
+      <Message UIDesc="@ui_dark_market_construct_reward_desc" />
+    </CustomMessages>
+    <ContextualSoundTrigger ToPlay="Endgame_Crafting_ConstructionCompleted" ToResume="EndgameIdle" />
+  </Reward>
+  <Reward Name="transmutation_forge_construct_reward" UITitle="@ui_transmutation_forge_construct_reward" UILore="@ui_transmutation_forge_construct_reward_lore">
+    <CustomMessages>
+      <Message UIDesc="@ui_transmutation_forge_construct_reward_desc" />
+    </CustomMessages>
+    <ContextualSoundTrigger ToPlay="Endgame_Alchesmith_ConstructionCompleted" ToResume="EndgameIdle" />
+  </Reward>
+  <Reward Name="bank_construct_reward" UITitle="@ui_bank_construct_reward" UILore="@ui_bank_construct_reward_lore">
+    <CustomMessages>
+      <Message UIDesc="@ui_bank_construct_reward_desc" />
+    </CustomMessages>
+    <ContextualSoundTrigger ToPlay="Endgame_Bank_ConstructionCompleted" ToResume="EndgameIdle" />
+  </Reward>
+  <Reward Name="anankis_artifact_construct_reward" UITitle="@ui_anankis_artifact_construct_reward" UILore="@ui_anankis_artifact_construct_reward_lore">
+    <CustomMessages>
+      <Message UIDesc="@ui_anankis_artifact_construct_reward_desc" />
+    </CustomMessages>
+    <ContextualSoundTrigger ToPlay="Endgame_Apo_ConstructionCompleted" ToResume="EndgameIdle" />
+  </Reward>
+  <Reward Name="enneract_lab_construct_reward" UITitle="@ui_enneract_lab_construct_reward" UILore="@ui_enneract_lab_construct_reward_lore">
+    <CustomMessages>
+      <Message UIDesc="@ui_enneract_lab_construct_reward_desc" />
+    </CustomMessages>
+    <ContextualSoundTrigger ToPlay="Endgame_Skills_ConstructionCompleted" ToResume="EndgameIdle" />
+  </Reward>
+  <Reward Name="siphon_chamber_construct_reward" UITitle="@ui_siphon_chamber_construct_reward" UILore="@ui_siphon_chamber_construct_reward_lore">
+    <CustomMessages>
+      <Message UIDesc="@ui_siphon_chamber_construct_reward_desc" />
+    </CustomMessages>
+    <ContextualSoundTrigger ToPlay="Endgame_PAToGold_ConstructionCompleted" ToResume="EndgameIdle" />
+  </Reward>
+  <Reward Name="injector_seat_construct_reward" UITitle="@ui_injector_seat_construct_reward" UILore="@ui_injector_seat_construct_reward_lore">
+    <CustomMessages>
+      <Message UIDesc="@ui_injector_seat_construct_reward_desc" />
+    </CustomMessages>
+    <ContextualSoundTrigger ToPlay="Endgame_GoldToPA_ConstructionCompleted" ToResume="EndgameIdle" />
+  </Reward>
+  <Reward Name="shipyard_construct_reward" UITitle="@ui_shipyard_construct_reward" UILore="@ui_shipyard_construct_reward_lore">
+    <CustomMessages>
+      <Message UIDesc="@ui_shipyard_construct_reward_desc" />
+    </CustomMessages>
+    <ContextualSoundTrigger ToPlay="Endgame_Shipyard_ConstructionCompleted" ToResume="EndgameIdle" />
+  </Reward>
+  <Reward Name="wonder_1_construct_reward" UITitle="@ui_wonder_1_construct_reward" UILore="@ui_wonder_1_construct_reward_lore">
+    <CustomMessages>
+      <Message UIDesc="@ui_wonder_1_construct_reward_desc" />
+    </CustomMessages>
+    <ContextualSoundTrigger ToPlay="Endgame_Wonders_SkillPoint" ToResume="EndgameIdle" />
+  </Reward>
+  <Reward Name="wonder_2_construct_reward" UITitle="@ui_wonder_2_construct_reward" UILore="@ui_wonder_2_construct_reward_lore">
+    <CustomMessages>
+      <Message UIDesc="@ui_wonder_2_construct_reward_desc" />
+    </CustomMessages>
+    <ContextualSoundTrigger ToPlay="Endgame_Wonders_SkillSlot" ToResume="EndgameIdle" />
+  </Reward>
+  <Reward Name="wonder_3_construct_reward" UITitle="@ui_wonder_3_construct_reward" UILore="@ui_wonder_3_construct_reward_lore">
+    <CustomMessages>
+      <Message UIDesc="@ui_wonder_3_construct_reward_desc" />
+    </CustomMessages>
+    <ContextualSoundTrigger ToPlay="Endgame_Wonders_DecreaseBuyingPrice" ToResume="EndgameIdle" />
+  </Reward>
+  <Reward Name="wonder_4_construct_reward" UITitle="@ui_wonder_4_construct_reward" UILore="@ui_wonder_4_construct_reward_lore">
+    <CustomMessages>
+      <Message UIDesc="@ui_wonder_4_construct_reward_desc" />
+    </CustomMessages>
+    <ContextualSoundTrigger ToPlay="Endgame_Wonders_GoldFindBoost" ToResume="EndgameIdle" />
+  </Reward>
+  <Reward Name="wonder_5_construct_reward" UITitle="@ui_wonder_5_construct_reward" UILore="@ui_wonder_5_construct_reward_lore">
+    <CustomMessages>
+      <Message UIDesc="@ui_wonder_5_construct_reward_desc" />
+    </CustomMessages>
+    <ContextualSoundTrigger ToPlay="Endgame_Wonders_MagicFindBoost" ToResume="EndgameIdle" />
+  </Reward>
+  <Reward Name="wonder_6_construct_reward" UITitle="@ui_wonder_6_construct_reward" UILore="@ui_wonder_6_construct_reward_lore">
+    <CustomMessages>
+      <Message UIDesc="@ui_wonder_6_construct_reward_desc" />
+    </CustomMessages>
+    <ContextualSoundTrigger ToPlay="Endgame_Wonders_ApoResourceBoost" ToResume="EndgameIdle" />
+  </Reward>
+</MetaData>

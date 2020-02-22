@@ -54,6 +54,11 @@ type alias Datamine =
     , passiveTrees : List PassiveTree
     , reagents : List Reagent
     , cityProjects : List City.Project
+    , cityProjectScaling : List City.ProjectScaling
+    , cityRewards : List City.Reward
+    , cityBuildings : List City.Building
+    , cityCategories : List City.Category
+    , cityLevels : List City.Level
     , en : Dict String String
 
     -- indexes
@@ -72,6 +77,10 @@ type alias Datamine =
     , passiveTreeEntriesByName : Dict String ( PassiveTreeEntry, Passive, PassiveTree )
     , reagentsByName : Dict String Reagent
     , cityProjectsByName : Dict String City.Project
+    , cityProjectScalingByName : Dict String City.ProjectScaling
+    , cityRewardsByName : Dict String City.Reward
+    , cityBuildingsByName : Dict String City.Building
+    , cityCategoriesByName : Dict String City.Category
     }
 
 
@@ -89,6 +98,11 @@ type alias RawDatamine =
     , passiveTrees : List PassiveTree
     , reagents : List Reagent
     , cityProjects : List City.Project
+    , cityProjectScaling : List City.ProjectScaling
+    , cityRewards : List City.Reward
+    , cityBuildings : List City.Building
+    , cityCategories : List City.Category
+    , cityLevels : List City.Level
     , en : Dict String String
     }
 
@@ -134,8 +148,13 @@ index raw =
     , gems = raw.gems
     , passives = raw.passives
     , passiveTrees = raw.passiveTrees
-    , cityProjects = raw.cityProjects
     , reagents = raw.reagents
+    , cityProjects = raw.cityProjects
+    , cityProjectScaling = raw.cityProjectScaling
+    , cityRewards = raw.cityRewards
+    , cityBuildings = raw.cityBuildings
+    , cityCategories = raw.cityCategories
+    , cityLevels = raw.cityLevels
     , en = raw.en
 
     -- indexes
@@ -156,6 +175,10 @@ index raw =
             |> Dict.Extra.fromListBy (\( e, p, t ) -> e.name |> String.toLower)
     , reagentsByName = raw.reagents |> Dict.Extra.fromListBy (.name >> String.toLower)
     , cityProjectsByName = raw.cityProjects |> Dict.Extra.fromListBy (.name >> String.toLower)
+    , cityProjectScalingByName = raw.cityProjectScaling |> Dict.Extra.fromListBy (.name >> String.toLower)
+    , cityRewardsByName = raw.cityRewards |> Dict.Extra.fromListBy (.name >> String.toLower)
+    , cityBuildingsByName = raw.cityBuildings |> Dict.Extra.fromListBy (.name >> String.toLower)
+    , cityCategoriesByName = raw.cityCategories |> Dict.Extra.fromListBy (.name >> String.toLower)
     }
 
 
@@ -181,6 +204,11 @@ decoder =
         |> P.custom Passive.treesDecoder
         |> P.custom Reagent.decoder
         |> P.custom City.projectsDecoder
+        |> P.custom City.projectScalingDecoder
+        |> P.custom City.rewardsDecoder
+        |> P.custom City.buildingsDecoder
+        |> P.custom City.categoriesDecoder
+        |> P.custom City.levelsDecoder
         |> P.custom Lang.decoder
         |> D.map index
 

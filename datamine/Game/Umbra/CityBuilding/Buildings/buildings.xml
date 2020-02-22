@@ -1,0 +1,185 @@
+<MetaData>
+  <Building Name="building_city_stormfall_palace" BaseProduction="10">
+    <UIParams UIName="@ui_building_stormfall_palace" UILore="@ui_building_stormfall_palace_desc" ImagePath="city_building\building_illustrations\palace.png" />
+    <ProjectList>
+      <ProjectParams ProjectName="city_hall_training_equipment" />
+      <ProjectParams ProjectName="city_hall_roadworks" />
+      <ProjectParams ProjectName="city_hall_aqueduct" />
+      <ProjectParams ProjectName="city_hall_sewers" />
+      <ProjectParams ProjectName="city_hall_irrigation" />
+      <ProjectParams ProjectName="city_hall_crop_rotation" />
+      <ProjectParams ProjectName="city_hall_windmill" />
+      <ProjectParams ProjectName="city_hall_trauma_center" />
+      <ProjectParams ProjectName="city_hall_working_conditions" />
+      <ProjectParams ProjectName="city_hall_batch_one_dependency" />
+      <ProjectParams ProjectName="city_hall_batch_two_dependency" />
+      <ProjectParams ProjectName="city_hall_batch_three_dependency" />
+      <ProjectParams ProjectName="city_hall_education" />
+      <ProjectParams ProjectName="city_hall_sawmill" />
+      <ProjectParams ProjectName="city_hall_iron_mines" />
+      <ProjectParams ProjectName="city_hall_quarry" />
+      <ProjectParams ProjectName="city_hall_housing" />
+      <ProjectParams ProjectName="city_hall_lighthouse" />
+      <ProjectParams ProjectName="city_hall_theater" />
+      <ProjectParams ProjectName="city_hall_rift_initiative" />
+      <ProjectParams ProjectName="city_hall_supply_stockpiles" />
+      <ProjectParams ProjectName="city_hall_checkpoints" />
+      <ProjectParams ProjectName="city_hall_crystal_excavation" />
+    </ProjectList>
+  </Building>
+  <Building Name="building_seekers_garrison" BaseProduction="5">
+    <UIParams UIName="@ui_building_seekers_garrison" UILore="@ui_building_seekers_garrison_desc" ImagePath="city_building\building_illustrations\seekers_guild.png" />
+    <ProjectList>
+      <ProjectParams ProjectName="seekers_garrison_construct" />
+    </ProjectList>
+    <RolledProjects Pick="3" MinPick_Easy="1" MinPick_Hard="1">
+      <RolledProjectParams ProjectName="ruins_cordanon_seekers_expedition" Weight="200" Difficulty="easy" />
+      <RolledProjectParams ProjectName="baktorai_seekers_expedition" Weight="100" Difficulty="medium" />
+      <RolledProjectParams ProjectName="coast_of_wrecks_seekers_expedition" Weight="100" Difficulty="medium" />
+      <RolledProjectParams ProjectName="ezaneal_shrine_seekers_expedition" Weight="100" Difficulty="medium" />
+      <RolledProjectParams ProjectName="ctul_hunting_grounds_seekers_expedition" Weight="50" Difficulty="hard" />
+      <RolledProjectParams ProjectName="red_wastes_seekers_expedition" Weight="50" Difficulty="hard" />
+      <RolledProjectParams ProjectName="anankis_seekers_expedition" Weight="50" Difficulty="hard" />
+      <RolledProjectParams ProjectName="urhan_necrop_seekers_expedition" Weight="10" Difficulty="hard" />
+      <RolledProjectParams ProjectName="laibon_desert_seekers_expedition" Weight="10" Difficulty="hard" />
+      <RolledProjectParams ProjectName="carrion_keep_seekers_expedition" Weight="10" Difficulty="hard" />
+      <RolledProjectParams ProjectName="unknown_shores_seekers_expedition" Weight="1" Difficulty="hard" />
+      <RolledProjectParams ProjectName="regicide_research_seekers_expedition" Weight="10" Difficulty="hard" />
+      <RolledProjectParams ProjectName="blood_tear_burial_seekers_expedition" Weight="50" Difficulty="hard" />
+      <RolledProjectParams ProjectName="abyssal_rift_seekers_expedition" Weight="100" Difficulty="hard" />
+      <RolledProjectParams ProjectName="flayers_home_seekers_expedition" Weight="10" Difficulty="hard" />
+    </RolledProjects>
+  </Building>
+  <Building Name="building_trade_assembly" BaseProduction="10">
+    <UIParams UIName="@ui_building_trade_assembly" UILore="@ui_building_trade_assembly_desc" ImagePath="city_building\building_illustrations\diplomat_guild.png" />
+    <ProjectList>
+      <ProjectParams ProjectName="trade_assembly_construct" />
+    </ProjectList>
+    <RolledProjects Pick="3" MinPick_Easy="1" MinPick_Hard="1">
+      <RolledProjectParams ProjectName="laibon_diplomats_expedition" Weight="100" Difficulty="easy" />
+      <RolledProjectParams ProjectName="greyharbour_diplomats_expedition" Weight="100" Difficulty="easy" />
+      <RolledProjectParams ProjectName="bro_dawn_diplomats_expedition" Weight="100" Difficulty="easy" />
+      <RolledProjectParams ProjectName="tesserine_diplomats_expedition" Weight="50" Difficulty="medium" />
+      <RolledProjectParams ProjectName="republic_diplomats_expedition" Weight="50" Difficulty="medium" />
+      <RolledProjectParams ProjectName="morkai_mines_diplomats_expedition" Weight="20" Difficulty="medium" />
+      <RolledProjectParams ProjectName="abyssal_herald_diplomats_expedition" Weight="1" Difficulty="medium" />
+      <RolledProjectParams ProjectName="vulkain_diplomats_expedition" Weight="8" Difficulty="hard" />
+      <RolledProjectParams ProjectName="archion_diplomats_expedition" Weight="8" Difficulty="hard" />
+      <RolledProjectParams ProjectName="ctul_diplomats_expedition" Weight="8" Difficulty="hard" />
+      <RolledProjectParams ProjectName="salander_diplomats_expedition" Weight="50" Difficulty="hard" />
+      <RolledProjectParams ProjectName="three_peaks_diplomats_expedition" Weight="2" Difficulty="hard" />
+      <RolledProjectParams ProjectName="gomora_diplomats_expedition" Weight="75" Difficulty="hard" />
+      <RolledProjectParams ProjectName="kuei_diplomats_expedition" Weight="75" Difficulty="hard" />
+      <RolledProjectParams ProjectName="varg_diplomats_expedition" Weight="50" Difficulty="hard" />
+    </RolledProjects>
+  </Building>
+  <Building Name="building_dark_market" BaseProduction="20">
+    <UIParams UIName="@ui_building_dark_market" UILore="@ui_building_dark_market_desc" ImagePath="city_building\building_illustrations\black_market.png" />
+    <ProjectList>
+      <ProjectParams ProjectName="dark_market_construct" />
+      <ProjectParams ProjectName="dark_market_buy_reagent" />
+      <ProjectParams ProjectName="dark_market_item_quality_upgrade" />
+      <ProjectParams ProjectName="dark_market_item_rarity_upgrade" />
+      <ProjectParams ProjectName="dark_market_leg_reagent_upgrade" />
+      <ProjectParams ProjectName="dark_market_item_quality_transform" />
+      <ProjectParams ProjectName="dark_market_item_rarity_transform" />
+      <ProjectParams ProjectName="dark_market_leg_reagent_transform" />
+      <ProjectParams ProjectName="dark_market_buy_uberboss_1" />
+      <ProjectParams ProjectName="dark_market_buy_uberboss_2" />
+      <ProjectParams ProjectName="dark_market_buy_uberboss_3" />
+    </ProjectList>
+  </Building>
+  <Building Name="building_transmutation_forge" BaseProduction="20">
+    <UIParams UIName="@ui_building_transmutation_forge" UILore="@ui_building_transmutation_forge_desc" ImagePath="city_building\building_illustrations\transmutation_forge.png" />
+    <ProjectList>
+      <ProjectParams ProjectName="transmutation_forge_construct" />
+      <ProjectParams ProjectName="transmutation_forge_upgrade" />
+      <ProjectParams ProjectName="transmutation_project" />
+    </ProjectList>
+  </Building>
+  <Building Name="building_bank" BaseProduction="5">
+    <UIParams UIName="@ui_building_bank" UILore="@ui_building_bank_desc" ImagePath="city_building\building_illustrations\diamond_bank.png" />
+    <ProjectList>
+      <ProjectParams ProjectName="bank_construct" />
+      <ProjectParams ProjectName="buy_stash_1" />
+      <ProjectParams ProjectName="buy_stash_2" />
+    </ProjectList>
+  </Building>
+  <Building Name="building_anankis_artifact" BaseProduction="5">
+    <UIParams UIName="@ui_building_anankis_artifact" UILore="@ui_building_anankis_artifact_desc" ImagePath="city_building\building_illustrations\chamber_of_anankis.png" />
+    <ProjectList>
+      <ProjectParams ProjectName="anankis_artifact_construct" />
+    </ProjectList>
+  </Building>
+  <Building Name="building_enneract_lab" BaseProduction="5">
+    <UIParams UIName="@ui_building_enneract_lab" UILore="@ui_building_enneract_lab_desc" ImagePath="city_building\building_illustrations\enneract_lab.png" />
+    <ProjectList>
+      <ProjectParams ProjectName="enneract_lab_construct" />
+      <ProjectParams ProjectName="enneract_lab_skillcopy_1" />
+    </ProjectList>
+  </Building>
+  <Building Name="building_siphon_chamber" BaseProduction="10">
+    <UIParams UIName="@ui_building_siphon_chamber" UILore="@ui_building_siphon_chamber_desc" ImagePath="city_building\building_illustrations\extraction_chamber.png" />
+    <ProjectList>
+      <ProjectParams ProjectName="siphon_chamber_construct" />
+      <ProjectParams ProjectName="pa_to_gold_transfer_1" />
+      <ProjectParams ProjectName="pa_to_gold_transfer_2" />
+      <ProjectParams ProjectName="pa_to_gold_transfer_3" />
+      <ProjectParams ProjectName="pa_to_gold_transfer_4" />
+      <ProjectParams ProjectName="pa_to_gold_transfer_5" />
+    </ProjectList>
+  </Building>
+  <Building Name="building_injector_seat" BaseProduction="10">
+    <UIParams UIName="@ui_building_injector_seat" UILore="@ui_building_injector_seat_desc" ImagePath="city_building\building_illustrations\injector_seat.png" />
+    <ProjectList>
+      <ProjectParams ProjectName="injector_seat_construct" />
+      <ProjectParams ProjectName="gold_to_pa_transfer_1" />
+      <ProjectParams ProjectName="gold_to_pa_transfer_2" />
+      <ProjectParams ProjectName="gold_to_pa_transfer_3" />
+      <ProjectParams ProjectName="gold_to_pa_transfer_4" />
+      <ProjectParams ProjectName="gold_to_pa_transfer_5" />
+    </ProjectList>
+  </Building>
+  <Building Name="building_shipyard" BaseProduction="20">
+    <UIParams UIName="@ui_building_shipyard" UILore="@ui_building_shipyard_desc" ImagePath="city_building\building_illustrations\shipyard.png" />
+    <ProjectList>
+      <ProjectParams ProjectName="shipyard_construct" />
+    </ProjectList>
+  </Building>
+  <Building Name="building_wonder_1" BaseProduction="20">
+    <UIParams UIName="@ui_building_wonder_1" UILore="@ui_building_wonder_1_desc" ImagePath="city_building\building_illustrations\The_cartographical_archives.png" />
+    <ProjectList>
+      <ProjectParams ProjectName="wonder_1_construct" />
+    </ProjectList>
+  </Building>
+  <Building Name="building_wonder_2" BaseProduction="20">
+    <UIParams UIName="@ui_building_wonder_2" UILore="@ui_building_wonder_2_desc" ImagePath="city_building\building_illustrations\the_stormfall_institute_of_primordial_research_west_wing.png" />
+    <ProjectList>
+      <ProjectParams ProjectName="wonder_2_construct" />
+    </ProjectList>
+  </Building>
+  <Building Name="building_wonder_3" BaseProduction="20">
+    <UIParams UIName="@ui_building_wonder_3" UILore="@ui_building_wonder_3_desc" ImagePath="city_building\building_illustrations\the_stormfall_institute_of_primordial_research_main_exhibition.png" />
+    <ProjectList>
+      <ProjectParams ProjectName="wonder_3_construct" />
+    </ProjectList>
+  </Building>
+  <Building Name="building_wonder_4" BaseProduction="20">
+    <UIParams UIName="@ui_building_wonder_4" UILore="@ui_building_wonder_4_desc" ImagePath="city_building\building_illustrations\the_stormfall_institute_of_primordial_research_east_wing.png" />
+    <ProjectList>
+      <ProjectParams ProjectName="wonder_4_construct" />
+    </ProjectList>
+  </Building>
+  <Building Name="building_wonder_5" BaseProduction="20">
+    <UIParams UIName="@ui_building_wonder_5" UILore="@ui_building_wonder_5_desc" ImagePath="city_building\building_illustrations\salt_bath.png" />
+    <ProjectList>
+      <ProjectParams ProjectName="wonder_5_construct" />
+    </ProjectList>
+  </Building>
+  <Building Name="building_wonder_6" BaseProduction="20">
+    <UIParams UIName="@ui_building_wonder_6" UILore="@ui_building_wonder_6_desc" ImagePath="city_building\building_illustrations\refuge_for_the_blind.png" />
+    <ProjectList>
+      <ProjectParams ProjectName="wonder_6_construct" />
+    </ProjectList>
+  </Building>
+</MetaData>
