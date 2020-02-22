@@ -4,6 +4,7 @@ module View.Affix exposing
     , viewAffix
     , viewAffixes
     , viewEffect
+    , viewGemFamilies
     , viewItem
     , viewMagicId
     , viewMagicIds
@@ -13,6 +14,7 @@ module View.Affix exposing
 
 import Datamine exposing (Datamine)
 import Datamine.Affix as Affix exposing (Affix, MagicAffix, MagicEffect, Rarity)
+import Datamine.GemFamily as GemFamily exposing (GemFamily)
 import Datamine.Passive as Passive exposing (Passive, PassiveEffect)
 import Datamine.Util exposing (Range)
 import Dict exposing (Dict)
@@ -61,6 +63,20 @@ viewEffect dm effect =
         [ text <| Maybe.withDefault "???" <| Affix.formatEffect dm effect
         ]
     ]
+
+
+viewGemFamilies : Datamine -> Affix a -> List (Html msg)
+viewGemFamilies dm affix =
+    GemFamily.fromAffix dm affix
+        |> List.map
+            (\fam ->
+                img
+                    [ class "gem-icon"
+                    , title <| GemFamily.label dm fam ++ " (" ++ fam.gemFamilyId ++ ") in a socket makes this affix more likely to appear with crafting reagents"
+                    , src <| GemFamily.img dm fam
+                    ]
+                    []
+            )
 
 
 type ItemMsg
@@ -167,6 +183,7 @@ viewItemAffixRow dm totalWeight affix =
         ++ (if affix.drop.craftOnly then
                 [ small [ class "badge badge-outline-light float-right" ] [ text "[", a [ Route.href <| Route.Source "magic-affix" affix.affixId ] [ text "s" ], text "]" ]
                 , span [ class "badge badge-outline-light float-right" ] [ viewWeight totalWeight affix ]
+                , span [ class "badge badge-outline-light float-right" ] (viewGemFamilies dm affix)
                 ]
 
             else
@@ -177,6 +194,7 @@ viewItemAffixRow dm totalWeight affix =
                     ]
                     [ text <| "ilvl" ++ ilvl ]
                 , span [ class "badge badge-outline-light float-right" ] [ viewWeight totalWeight affix ]
+                , span [ class "badge badge-outline-light float-right" ] (viewGemFamilies dm affix)
                 ]
            )
 

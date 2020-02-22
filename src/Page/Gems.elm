@@ -32,8 +32,9 @@ view dm =
                     (\gem ->
                         tr []
                             [ td [ title gem.uiName ]
-                                [ div [] [ img [ class "skill-icon", View.Item.imgGem gem ] [] ]
+                                [ div [] [ img [ class "skill-icon", src <| Gem.img gem ] [] ]
                                 , Gem.label dm gem |> Maybe.withDefault "???" |> text
+                                , div [] [ text "Keywords: ", gem.keywords |> String.join ", " |> text ]
                                 , div [] [ text "[", a [ Route.href <| Route.Source "gem" gem.name ] [ text "Source" ], text "]" ]
                                 ]
                             , td []

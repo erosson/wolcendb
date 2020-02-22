@@ -3,6 +3,7 @@ module Page.Table exposing (view)
 import Array exposing (Array)
 import Datamine exposing (Datamine)
 import Datamine.City as City
+import Datamine.GemFamily as GemFamily exposing (GemFamily)
 import Datamine.NormalItem as NormalItem exposing (NormalItem(..))
 import Datamine.Passive as Passive exposing (Passive)
 import Datamine.Reagent as Reagent exposing (Reagent)
@@ -138,6 +139,7 @@ datas =
     , ( "unique-loot", dataUniqueItem )
     , ( "passive", dataPassive )
     , ( "reagent", dataReagent )
+    , ( "gem-family", dataGemFamily )
     , ( "city-project", dataCityProject )
     , ( "city-project-scaling", dataCityProjectScaling )
     , ( "city-reward", dataCityReward )
@@ -264,6 +266,29 @@ dataReagent dm =
                     , maybeCell DescCell <| Reagent.desc dm reagent
                     , maybeCell DescCell <| Reagent.lore dm reagent
                     , ImgCell <| Reagent.img reagent
+                    ]
+                )
+    }
+
+
+dataGemFamily : Datamine -> Data
+dataGemFamily dm =
+    { cols =
+        [ "gemFamilyId"
+        , "relatedGems"
+        , "craftRelatedAffixes"
+        , "label"
+        , "img"
+        ]
+    , rows =
+        dm.gemFamilies
+            |> List.map
+                (\fam ->
+                    [ StringCell fam.gemFamilyId
+                    , LinesCell <| List.map .gemId fam.relatedGems
+                    , LinesCell fam.craftRelatedAffixes
+                    , StringCell <| GemFamily.label dm fam
+                    , ImgCell <| GemFamily.img dm fam
                     ]
                 )
     }

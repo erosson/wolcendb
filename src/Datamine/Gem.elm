@@ -1,6 +1,6 @@
-module Datamine.Gem exposing (Gem, Socket(..), decoder, effects, label)
+module Datamine.Gem exposing (Gem, Socket(..), affixes, decoder, effects, img, label)
 
-import Datamine.Affix as Affix
+import Datamine.Affix as Affix exposing (NonmagicAffix)
 import Datamine.Lang as Lang
 import Datamine.Source as Source exposing (Source)
 import Datamine.Util as Util
@@ -31,6 +31,11 @@ type Socket
 label : Lang.Datamine d -> Gem -> Maybe String
 label dm s =
     Lang.get dm s.uiName
+
+
+img : Gem -> String
+img gem =
+    "/static/datamine/Game/Libs/UI/u_resources/gems/" ++ gem.hudPicture
 
 
 formatSocket : Socket -> String
@@ -67,12 +72,23 @@ formatSocket socket =
             "???SOCKET???: "
 
 
-effects : Affix.Datamine d -> Gem -> List String
-effects dm =
+affixes : Affix.Datamine d -> Gem -> List ( Socket, List NonmagicAffix )
+affixes dm =
     .effects
         >> List.map
-            (\( socket, affixId ) ->
-                Affix.getNonmagicIds dm [ affixId ]
+            (Tuple.mapSecond
+                (\affixId ->
+                    Affix.getNonmagicIds dm [ affixId ]
+                )
+            )
+
+
+effects : Affix.Datamine d -> Gem -> List String
+effects dm =
+    affixes dm
+        >> List.map
+            (\( socket, affs ) ->
+                affs
                     |> List.concatMap .effects
                     |> List.filterMap (Affix.formatEffect dm)
                     |> List.map ((++) (formatSocket socket))

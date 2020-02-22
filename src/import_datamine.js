@@ -39,6 +39,7 @@ function xmlMain() {
     glob(prefix + "Game/Umbra/Skills/Trees/PassiveSkills/*", null),
     glob(prefix + "Game/Umbra/Loot/Reagents/Reagents.xml", null),
     glob(prefix + "Game/Umbra/CityBuilding/**/*.xml", null),
+    glob(prefix + "Game/Umbra/Loot/MagicEffects/Affixes/Craft/GemFamiliesAndCoveredEffectIDs.xml", null),
   ])
   .then(groups => groups.map(group => group.map(path => path.replace(/^datamine.tmp\//, ''))))
   .then(groups => {

@@ -4,6 +4,9 @@ Changelog
 ---
 
 #### 2020-02-22
+- Added gem icons for each affix. When crafting, socketed gems influence the odds of each chosen affix - these *gem families* indicate which gems go with each affix.
+  - There's no data suggesting that socket type matters
+  - Beware: I haven't actually done much crafting yet, so this work isn't well-tested. It's based on [ZiggyD's crafting video](https://www.youtube.com/watch?v=0_u8sCgpSBE) (thanks ZiggyD!), [crafting reagant descriptions](/reagent), and [datamined gem families](https://gitlab.com/erosson/wolcendb/-/tree/master/datamine/Game/Umbra/Loot/MagicEffects/Affixes/Craft/GemFamiliesAndCoveredEffectIDs.xml). Please report any bugs!
 - Added a list of reagents.
 - Added armor and shield properties.
 - Fixed a bug that hid an affix for several uniques: The Trial, Driftwood Miracle, Gaälnazek, Expurgation, Maelström, Paradox.

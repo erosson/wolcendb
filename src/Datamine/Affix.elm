@@ -7,6 +7,7 @@ module Datamine.Affix exposing
     , NonmagicAffix
     , Rarity
     , decoder
+    , effectIds
     , formatEffect
     , getMagicIds
     , getNonmagicIds
@@ -78,6 +79,11 @@ type alias MagicEffect =
     { effectId : String
     , stats : List ( String, Util.Range Float )
     }
+
+
+effectIds : Affix a -> List String
+effectIds =
+    .effects >> List.map .effectId
 
 
 formatEffect : Lang.Datamine d -> MagicEffect -> Maybe String

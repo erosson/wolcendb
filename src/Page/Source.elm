@@ -2,6 +2,7 @@ module Page.Source exposing (view)
 
 import Datamine exposing (Datamine)
 import Datamine.Gem as Gem
+import Datamine.GemFamily as GemFamily exposing (GemFamily)
 import Datamine.NormalItem as NormalItem
 import Datamine.Passive as Passive
 import Datamine.Reagent as Reagent
@@ -83,7 +84,10 @@ getSource dm type_ id =
                                 Gem.label dm gem |> Maybe.withDefault "???"
                         in
                         ( label
-                        , [ gem.source ]
+                        , [ Just gem.source
+                          , Dict.get (String.toLower id) dm.gemFamiliesByGemId |> Maybe.map .source
+                          ]
+                            |> List.filterMap identity
                         , [ a [ class "breadcrumb-item active", Route.href Route.Gems ] [ text "Gems" ]
                           , a [ class "breadcrumb-item active" ] [ text label ]
                           , a [ class "breadcrumb-item active", Route.href <| Route.Source type_ id ] [ text "Source" ]
@@ -149,7 +153,7 @@ getSource dm type_ id =
                 |> Maybe.map
                     (\affix ->
                         ( "Magic Affix"
-                        , [ affix.source ]
+                        , affix.source :: (affix |> GemFamily.fromAffix dm |> List.map .source)
                         , [ a [ class "breadcrumb-item active", Route.href Route.Affixes ] [ text "Affixes" ]
                           , a [ class "breadcrumb-item active" ] [ text affix.affixId ]
                           , a [ class "breadcrumb-item active", Route.href <| Route.Source type_ id ] [ text "Source" ]

@@ -20,6 +20,7 @@ import Datamine.Affix as Affix exposing (Affixes, MagicAffix, NonmagicAffix)
 import Datamine.City as City
 import Datamine.Cosmetic as Cosmetic exposing (CCosmeticTransferTemplate, CCosmeticWeaponDescriptor)
 import Datamine.Gem as Gem exposing (Gem)
+import Datamine.GemFamily as GemFamily exposing (GemFamily)
 import Datamine.Lang as Lang
 import Datamine.NormalItem as NormalItem exposing (Item, NormalItem(..))
 import Datamine.Passive as Passive exposing (Passive, PassiveTree, PassiveTreeEntry)
@@ -32,6 +33,7 @@ import Dict exposing (Dict)
 import Dict.Extra
 import Json.Decode as D
 import Json.Decode.Pipeline as P
+import List.Extra
 import Result.Extra
 import Set exposing (Set)
 
@@ -53,6 +55,7 @@ type alias Datamine =
     , passives : List Passive
     , passiveTrees : List PassiveTree
     , reagents : List Reagent
+    , gemFamilies : List GemFamily
     , cityProjects : List City.Project
     , cityProjectScaling : List City.ProjectScaling
     , cityRewards : List City.Reward
@@ -76,6 +79,10 @@ type alias Datamine =
     , passiveTreeEntries : List ( PassiveTreeEntry, Passive, PassiveTree )
     , passiveTreeEntriesByName : Dict String ( PassiveTreeEntry, Passive, PassiveTree )
     , reagentsByName : Dict String Reagent
+    , gemFamiliesById : Dict String GemFamily
+    , gemFamiliesByGemId : Dict String GemFamily
+    , gemFamiliesByEffectId : Dict String (List GemFamily)
+    , gemFamiliesByAffixId : Dict String (List GemFamily)
     , cityProjectsByName : Dict String City.Project
     , cityProjectScalingByName : Dict String City.ProjectScaling
     , cityRewardsByName : Dict String City.Reward
@@ -97,6 +104,7 @@ type alias RawDatamine =
     , passives : List Passive
     , passiveTrees : List PassiveTree
     , reagents : List Reagent
+    , gemFamilies : List GemFamily
     , cityProjects : List City.Project
     , cityProjectScaling : List City.ProjectScaling
     , cityRewards : List City.Reward
@@ -135,6 +143,12 @@ index raw =
         skillVariants : List ( SkillVariant, Skill )
         skillVariants =
             raw.skills |> List.concatMap (\s -> s.variants |> List.map (\v -> ( v, s )))
+
+        gemFamiliesByEffectId =
+            raw.gemFamilies
+                |> List.concatMap (\fam -> fam.craftRelatedAffixes |> List.map (\eff -> ( eff, fam )))
+                |> Dict.Extra.groupBy (Tuple.first >> String.toLower)
+                |> Dict.map (always <| List.map Tuple.second)
     in
     -- raw copies
     { revision = raw.revision
@@ -149,6 +163,7 @@ index raw =
     , passives = raw.passives
     , passiveTrees = raw.passiveTrees
     , reagents = raw.reagents
+    , gemFamilies = raw.gemFamilies
     , cityProjects = raw.cityProjects
     , cityProjectScaling = raw.cityProjectScaling
     , cityRewards = raw.cityRewards
@@ -174,6 +189,25 @@ index raw =
         passiveTreeEntries
             |> Dict.Extra.fromListBy (\( e, p, t ) -> e.name |> String.toLower)
     , reagentsByName = raw.reagents |> Dict.Extra.fromListBy (.name >> String.toLower)
+    , gemFamiliesById = raw.gemFamilies |> Dict.Extra.fromListBy (.gemFamilyId >> String.toLower)
+    , gemFamiliesByGemId =
+        raw.gemFamilies
+            |> List.concatMap (\fam -> fam.relatedGems |> List.map (\r -> ( String.toLower r.gemId, fam )))
+            |> Dict.fromList
+    , gemFamiliesByEffectId = gemFamiliesByEffectId
+    , gemFamiliesByAffixId =
+        (List.map (\a -> ( a.affixId, Affix.effectIds a )) raw.affixes.magic
+            ++ List.map (\a -> ( a.affixId, Affix.effectIds a )) raw.affixes.nonmagic
+        )
+            |> List.map
+                (Tuple.mapBoth
+                    String.toLower
+                    (List.filterMap (\effectId -> Dict.get (String.toLower effectId) gemFamiliesByEffectId)
+                        >> List.concat
+                        >> List.Extra.uniqueBy .gemFamilyId
+                    )
+                )
+            |> Dict.fromList
     , cityProjectsByName = raw.cityProjects |> Dict.Extra.fromListBy (.name >> String.toLower)
     , cityProjectScalingByName = raw.cityProjectScaling |> Dict.Extra.fromListBy (.name >> String.toLower)
     , cityRewardsByName = raw.cityRewards |> Dict.Extra.fromListBy (.name >> String.toLower)
@@ -203,6 +237,7 @@ decoder =
         |> P.custom Passive.decoder
         |> P.custom Passive.treesDecoder
         |> P.custom Reagent.decoder
+        |> P.custom GemFamily.decoder
         |> P.custom City.projectsDecoder
         |> P.custom City.projectScalingDecoder
         |> P.custom City.rewardsDecoder

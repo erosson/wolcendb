@@ -180,6 +180,7 @@ import game_175 from "../datamine/Game/Umbra/CityBuilding/Rewards/seekers_expedi
 import game_176 from "../datamine/Game/Umbra/CityBuilding/Rewards/siphon_chamber_rewards.json"
 import game_177 from "../datamine/Game/Umbra/CityBuilding/Rewards/transmutation_forge_rewards.json"
 import game_178 from "../datamine/Game/Umbra/CityBuilding/ScalingTables/project_tables.json"
+import game_179 from "../datamine/Game/Umbra/Loot/MagicEffects/Affixes/Craft/GemFamiliesAndCoveredEffectIDs.json"
 import localization_0 from "../datamine/localization/text_ui_Activeskills.json"
 import localization_1 from "../datamine/localization/text_ui_EIM.json"
 import localization_2 from "../datamine/localization/text_ui_Endgame.json"
@@ -367,6 +368,7 @@ export default {
   "Game/Umbra/CityBuilding/Rewards/siphon_chamber_rewards.json": game_176,
   "Game/Umbra/CityBuilding/Rewards/transmutation_forge_rewards.json": game_177,
   "Game/Umbra/CityBuilding/ScalingTables/project_tables.json": game_178,
+  "Game/Umbra/Loot/MagicEffects/Affixes/Craft/GemFamiliesAndCoveredEffectIDs.json": game_179,
   "localization/text_ui_Activeskills.json": localization_0,
   "localization/text_ui_EIM.json": localization_1,
   "localization/text_ui_Endgame.json": localization_2,
