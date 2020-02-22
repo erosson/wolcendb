@@ -22,6 +22,7 @@ import Page.Search
 import Page.Skill
 import Page.Skills
 import Page.Source
+import Page.Table
 import Page.UniqueItem
 import Page.UniqueItems
 import Ports
@@ -268,6 +269,10 @@ viewBody mmodel =
                                 Route.Search query ->
                                     Page.Search.view model
                                         |> List.map (H.map SearchMsg)
+
+                                Route.Table t ->
+                                    Page.Table.view model.datamine t
+                                        |> Maybe.withDefault viewNotFound
 
                                 Route.Changelog ->
                                     Page.Changelog.view model

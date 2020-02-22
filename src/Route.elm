@@ -34,6 +34,7 @@ type Route
     | Passives
     | Source String String
     | Search (Maybe String)
+    | Table String
     | Changelog
     | Privacy
 
@@ -70,6 +71,7 @@ parser =
         , P.map Passives <| P.s "passive"
         , P.map Source <| P.s "source" </> P.string </> P.string
         , P.map Search <| P.s "search" <?> Q.string "q"
+        , P.map Table <| P.s "table" </> P.string
         , P.map Changelog <| P.s "changelog"
         , P.map Privacy <| P.s "privacy"
         ]
@@ -149,6 +151,9 @@ toString r =
 
         Search query ->
             "/search" ++ ([ query |> Maybe.map (B.string "q") ] |> List.filterMap identity |> B.toQuery)
+
+        Table t ->
+            "/table/" ++ t
 
         Changelog ->
             "/changelog"
