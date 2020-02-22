@@ -3,6 +3,9 @@ Changelog
 
 ---
 
+#### 2020-02-22
+- Add a list of reagents.
+
 #### 2020-02-21
 - Fixed a bug with affixes that reversed their mandatory keywords and optional keywords.
   - Possible affixes per item have not changed.

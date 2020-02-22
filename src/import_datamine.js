@@ -26,7 +26,7 @@ function main() {
 }
 function xmlMain() {
   return Promise.all([
-    glob(prefix + "localization/text_ui_{Loot,Activeskills,EIM,passiveskills}.xml", null),
+    glob(prefix + "localization/text_ui_{Loot,Activeskills,EIM,passiveskills,Endgame}.xml", null),
     glob(prefix + "Game/Umbra/Loot/Armors/{Armors,Accessories,Armors_unique,UniquesAccessories,UniqueArmors}*", null),
     glob(prefix + "Game/Umbra/Loot/Weapons/{Unique,}{Weapons,Shields}*", null),
     glob(prefix + "Game/Umbra/Loot/MagicEffects/Affixes/Armors_Weapons/Affixes{Implicit,Uniques,Armors,Weapons\.,Accessories,Gems}*", null),
@@ -37,6 +37,8 @@ function xmlMain() {
     glob(prefix + "Game/Umbra/Loot/Gems/*", null),
     glob(prefix + "Game/Umbra/Skills/Passive/PST/*", null),
     glob(prefix + "Game/Umbra/Skills/Trees/PassiveSkills/*", null),
+    glob(prefix + "Game/Umbra/Loot/Reagents/Reagents.xml", null),
+    glob(prefix + "Game/Umbra/CityBuilding/Projects/*", null),
   ])
   .then(groups => groups.map(group => group.map(path => path.replace(/^datamine.tmp\//, ''))))
   .then(groups => {
@@ -76,6 +78,7 @@ function pngMain() {
     glob(prefix + "Game/Libs/UI/u_resources/weapons/**/*.png", null),
     glob(prefix + "Game/Libs/UI/u_resources/spells/Active_Skills/**/*.png", null),
     glob(prefix + "Game/Libs/UI/u_resources/gems/**/*.png", null),
+    glob(prefix + "Game/Libs/UI/u_resources/reagents/**/*.png", null),
   ])
   .then(flatten)
   .then(paths => paths.map(path => path.replace(/^datamine.tmp\//, '')))

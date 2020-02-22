@@ -9,14 +9,16 @@ const __dirname = dirname(fileURLToPath(import.meta.url))
 
 const app = Elm.Elm.BuildSearchIndexCLI.init({flags: {datamine}})
 app.ports.stderr.subscribe(err => {
-  console.error(err)
+    // console.error(err)
+  console.error(err.slice(-10000))
   process.exit(1)
 })
 app.ports.stdout.subscribe(out => {
   promisify(fs.writeFile)(__dirname + '/../datamine/searchIndex.json', JSON.stringify(out))
   .then(() => process.exit(0))
   .catch(err => {
-    console.error(err)
+    // console.error(err)
+    console.error(err.slice(-10000))
     process.exit(2)
   })
 })

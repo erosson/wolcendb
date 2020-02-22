@@ -40,6 +40,7 @@ view =
                     , li [ class "list-group-item" ] [ a [ Route.href Route.Accessories ] [ text "Accessories" ] ]
                     , li [ class "list-group-item" ] [ a [ Route.href Route.Affixes ] [ text "Affixes" ] ]
                     , li [ class "list-group-item" ] [ a [ Route.href Route.Gems ] [ text "Gems" ] ]
+                    , li [ class "list-group-item" ] [ a [ Route.href Route.Reagents ] [ text "Reagents" ] ]
                     ]
                 ]
             ]

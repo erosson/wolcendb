@@ -39,6 +39,7 @@ type Route
     | Affixes
     | Gems
     | Passives
+    | Reagents
     | Source String String
     | Search (Maybe String)
     | Table String
@@ -76,6 +77,7 @@ parser =
         , P.map Affixes <| P.s "affix"
         , P.map Gems <| P.s "gem"
         , P.map Passives <| P.s "passive"
+        , P.map Reagents <| P.s "reagent"
         , P.map Source <| P.s "source" </> P.string </> P.string
         , P.map Search <| P.s "search" <?> Q.string "q"
         , P.map Table <| P.s "table" </> P.string
@@ -152,6 +154,9 @@ toPath r =
 
         Passives ->
             "/passive"
+
+        Reagents ->
+            "/reagent"
 
         Source type_ id ->
             "/source/" ++ type_ ++ "/" ++ id

@@ -4,6 +4,7 @@ import Datamine exposing (Datamine)
 import Datamine.Gem as Gem
 import Datamine.NormalItem as NormalItem
 import Datamine.Passive as Passive
+import Datamine.Reagent as Reagent
 import Datamine.Skill as Skill
 import Datamine.Source exposing (Source, SourceNode, SourceNodeChildren(..))
 import Datamine.UniqueItem as UniqueItem
@@ -84,6 +85,23 @@ getSource dm type_ id =
                         ( label
                         , [ gem.source ]
                         , [ a [ class "breadcrumb-item active", Route.href Route.Gems ] [ text "Gems" ]
+                          , a [ class "breadcrumb-item active" ] [ text label ]
+                          , a [ class "breadcrumb-item active", Route.href <| Route.Source type_ id ] [ text "Source" ]
+                          ]
+                        )
+                    )
+
+        "reagent" ->
+            Dict.get (String.toLower id) dm.reagentsByName
+                |> Maybe.map
+                    (\reagent ->
+                        let
+                            label =
+                                Reagent.label dm reagent |> Maybe.withDefault "???"
+                        in
+                        ( label
+                        , [ reagent.source ]
+                        , [ a [ class "breadcrumb-item active", Route.href Route.Reagents ] [ text "Reagents" ]
                           , a [ class "breadcrumb-item active" ] [ text label ]
                           , a [ class "breadcrumb-item active", Route.href <| Route.Source type_ id ] [ text "Source" ]
                           ]

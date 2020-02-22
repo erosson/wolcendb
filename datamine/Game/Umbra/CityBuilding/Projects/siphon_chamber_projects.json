@@ -1,0 +1,236 @@
+{
+  "MetaData": {
+    "Project": [
+      {
+        "$": {
+          "Name": "pa_to_gold_transfer_1",
+          "CategoryName": "currency_transfer",
+          "Repeatable": "1"
+        },
+        "UIParams": [
+          {
+            "$": {
+              "UIName": "@ui_pa_to_gold_transfer_1",
+              "UILore": "@ui_pa_to_gold_transfer_lore",
+              "IconType": "pa"
+            }
+          }
+        ],
+        "Requirements": [
+          {
+            "$": {
+              "PlayerLevel": "0",
+              "Projects": "siphon_chamber_construct"
+            },
+            "ResourceCost": [
+              {
+                "$": {
+                  "ComputationMethod": "Static",
+                  "Gold": "0",
+                  "PA": "1000",
+                  "ProductionToComplete": "500"
+                }
+              }
+            ]
+          }
+        ],
+        "RewardList": [
+          {
+            "Reward": [
+              {
+                "$": {
+                  "RewardName": "pa_to_gold_transfer_1_reward",
+                  "Weight": "1"
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "$": {
+          "Name": "pa_to_gold_transfer_2",
+          "CategoryName": "currency_transfer",
+          "Repeatable": "1"
+        },
+        "UIParams": [
+          {
+            "$": {
+              "UIName": "@ui_pa_to_gold_transfer_2",
+              "UILore": "@ui_pa_to_gold_transfer_lore",
+              "IconType": "pa"
+            }
+          }
+        ],
+        "Requirements": [
+          {
+            "$": {
+              "PlayerLevel": "0",
+              "Projects": "siphon_chamber_construct"
+            },
+            "ResourceCost": [
+              {
+                "$": {
+                  "ComputationMethod": "Static",
+                  "Gold": "0",
+                  "PA": "5000",
+                  "ProductionToComplete": "1000"
+                }
+              }
+            ]
+          }
+        ],
+        "RewardList": [
+          {
+            "Reward": [
+              {
+                "$": {
+                  "RewardName": "pa_to_gold_transfer_2_reward",
+                  "Weight": "1"
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "$": {
+          "Name": "pa_to_gold_transfer_3",
+          "CategoryName": "currency_transfer",
+          "Repeatable": "1"
+        },
+        "UIParams": [
+          {
+            "$": {
+              "UIName": "@ui_pa_to_gold_transfer_3",
+              "UILore": "@ui_pa_to_gold_transfer_lore",
+              "IconType": "pa"
+            }
+          }
+        ],
+        "Requirements": [
+          {
+            "$": {
+              "PlayerLevel": "0",
+              "Projects": "siphon_chamber_construct"
+            },
+            "ResourceCost": [
+              {
+                "$": {
+                  "ComputationMethod": "Static",
+                  "Gold": "0",
+                  "PA": "10000",
+                  "ProductionToComplete": "2000"
+                }
+              }
+            ]
+          }
+        ],
+        "RewardList": [
+          {
+            "Reward": [
+              {
+                "$": {
+                  "RewardName": "pa_to_gold_transfer_3_reward",
+                  "Weight": "1"
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "$": {
+          "Name": "pa_to_gold_transfer_4",
+          "CategoryName": "currency_transfer",
+          "Repeatable": "1"
+        },
+        "UIParams": [
+          {
+            "$": {
+              "UIName": "@ui_pa_to_gold_transfer_4",
+              "UILore": "@ui_pa_to_gold_transfer_lore",
+              "IconType": "pa"
+            }
+          }
+        ],
+        "Requirements": [
+          {
+            "$": {
+              "PlayerLevel": "0",
+              "Projects": "siphon_chamber_construct"
+            },
+            "ResourceCost": [
+              {
+                "$": {
+                  "ComputationMethod": "Static",
+                  "Gold": "0",
+                  "PA": "50000",
+                  "ProductionToComplete": "5000"
+                }
+              }
+            ]
+          }
+        ],
+        "RewardList": [
+          {
+            "Reward": [
+              {
+                "$": {
+                  "RewardName": "pa_to_gold_transfer_4_reward",
+                  "Weight": "1"
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "$": {
+          "Name": "pa_to_gold_transfer_5",
+          "CategoryName": "currency_transfer",
+          "Repeatable": "1"
+        },
+        "UIParams": [
+          {
+            "$": {
+              "UIName": "@ui_pa_to_gold_transfer_5",
+              "UILore": "@ui_pa_to_gold_transfer_lore",
+              "IconType": "pa"
+            }
+          }
+        ],
+        "Requirements": [
+          {
+            "$": {
+              "PlayerLevel": "0",
+              "Projects": "siphon_chamber_construct"
+            },
+            "ResourceCost": [
+              {
+                "$": {
+                  "ComputationMethod": "Static",
+                  "Gold": "0",
+                  "PA": "100000",
+                  "ProductionToComplete": "10000"
+                }
+              }
+            ]
+          }
+        ],
+        "RewardList": [
+          {
+            "Reward": [
+              {
+                "$": {
+                  "RewardName": "pa_to_gold_transfer_5_reward",
+                  "Weight": "1"
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

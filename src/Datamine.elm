@@ -17,11 +17,13 @@ some features we need (ex. `Json.Decode.keyValuePairs`).
 -}
 
 import Datamine.Affix as Affix exposing (Affixes, MagicAffix, NonmagicAffix)
+import Datamine.City as City
 import Datamine.Cosmetic as Cosmetic exposing (CCosmeticTransferTemplate, CCosmeticWeaponDescriptor)
 import Datamine.Gem as Gem exposing (Gem)
 import Datamine.Lang as Lang
 import Datamine.NormalItem as NormalItem exposing (Item, NormalItem(..))
 import Datamine.Passive as Passive exposing (Passive, PassiveTree, PassiveTreeEntry)
+import Datamine.Reagent as Reagent exposing (Reagent)
 import Datamine.Skill as Skill exposing (Skill, SkillAST, SkillASTVariant, SkillVariant)
 import Datamine.Source as Source exposing (Source)
 import Datamine.UniqueItem as UniqueItem exposing (UItem, UniqueItem(..))
@@ -50,6 +52,8 @@ type alias Datamine =
     , gems : List Gem
     , passives : List Passive
     , passiveTrees : List PassiveTree
+    , reagents : List Reagent
+    , cityProjects : List City.Project
     , en : Dict String String
 
     -- indexes
@@ -66,6 +70,8 @@ type alias Datamine =
     , passiveTreesByName : Dict String PassiveTree
     , passiveTreeEntries : List ( PassiveTreeEntry, Passive, PassiveTree )
     , passiveTreeEntriesByName : Dict String ( PassiveTreeEntry, Passive, PassiveTree )
+    , reagentsByName : Dict String Reagent
+    , cityProjectsByName : Dict String City.Project
     }
 
 
@@ -81,6 +87,8 @@ type alias RawDatamine =
     , gems : List Gem
     , passives : List Passive
     , passiveTrees : List PassiveTree
+    , reagents : List Reagent
+    , cityProjects : List City.Project
     , en : Dict String String
     }
 
@@ -126,6 +134,8 @@ index raw =
     , gems = raw.gems
     , passives = raw.passives
     , passiveTrees = raw.passiveTrees
+    , cityProjects = raw.cityProjects
+    , reagents = raw.reagents
     , en = raw.en
 
     -- indexes
@@ -144,6 +154,8 @@ index raw =
     , passiveTreeEntriesByName =
         passiveTreeEntries
             |> Dict.Extra.fromListBy (\( e, p, t ) -> e.name |> String.toLower)
+    , reagentsByName = raw.reagents |> Dict.Extra.fromListBy (.name >> String.toLower)
+    , cityProjectsByName = raw.cityProjects |> Dict.Extra.fromListBy (.name >> String.toLower)
     }
 
 
@@ -167,6 +179,8 @@ decoder =
         |> P.custom Gem.decoder
         |> P.custom Passive.decoder
         |> P.custom Passive.treesDecoder
+        |> P.custom Reagent.decoder
+        |> P.custom City.projectsDecoder
         |> P.custom Lang.decoder
         |> D.map index
 

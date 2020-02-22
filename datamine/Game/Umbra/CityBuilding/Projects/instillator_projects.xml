@@ -1,0 +1,47 @@
+<MetaData>
+  <Project Name="gold_to_pa_transfer_1" CategoryName="currency_transfer" Repeatable="1">
+    <UIParams UIName="@ui_gold_to_pa_transfer_1" UILore="@ui_gold_to_pa_transfer_lore" IconType="gold" />
+    <Requirements PlayerLevel="0" Projects="injector_seat_construct">
+      <ResourceCost ComputationMethod="Static" Gold="10000" Gold_PerPlayerLevel="0" PA="0" PA_PerPlayerLevel="0" ProductionToComplete="500" />
+    </Requirements>
+    <RewardList>
+      <Reward RewardName="gold_to_pa_transfer_1_reward" Weight="1" />
+    </RewardList>
+  </Project>
+  <Project Name="gold_to_pa_transfer_2" CategoryName="currency_transfer" Repeatable="1">
+    <UIParams UIName="@ui_gold_to_pa_transfer_2" UILore="@ui_gold_to_pa_transfer_lore" IconType="gold" />
+    <Requirements PlayerLevel="0" Projects="injector_seat_construct">
+      <ResourceCost ComputationMethod="Static" Gold="50000" PA="0" ProductionToComplete="1000" />
+    </Requirements>
+    <RewardList>
+      <Reward RewardName="gold_to_pa_transfer_2_reward" Weight="1" />
+    </RewardList>
+  </Project>
+  <Project Name="gold_to_pa_transfer_3" CategoryName="currency_transfer" Repeatable="1">
+    <UIParams UIName="@ui_gold_to_pa_transfer_3" UILore="@ui_gold_to_pa_transfer_lore" IconType="gold" />
+    <Requirements PlayerLevel="0" Projects="injector_seat_construct">
+      <ResourceCost ComputationMethod="Static" Gold="100000" PA="0" ProductionToComplete="2000" />
+    </Requirements>
+    <RewardList>
+      <Reward RewardName="gold_to_pa_transfer_3_reward" Weight="1" />
+    </RewardList>
+  </Project>
+  <Project Name="gold_to_pa_transfer_4" CategoryName="currency_transfer" Repeatable="1">
+    <UIParams UIName="@ui_gold_to_pa_transfer_4" UILore="@ui_gold_to_pa_transfer_lore" IconType="gold" />
+    <Requirements PlayerLevel="0" Projects="injector_seat_construct">
+      <ResourceCost ComputationMethod="Static" Gold="500000" PA="0" ProductionToComplete="5000" />
+    </Requirements>
+    <RewardList>
+      <Reward RewardName="gold_to_pa_transfer_4_reward" Weight="1" />
+    </RewardList>
+  </Project>
+  <Project Name="gold_to_pa_transfer_5" CategoryName="currency_transfer" Repeatable="1">
+    <UIParams UIName="@ui_gold_to_pa_transfer_5" UILore="@ui_gold_to_pa_transfer_lore" IconType="gold" />
+    <Requirements PlayerLevel="0" Projects="injector_seat_construct">
+      <ResourceCost ComputationMethod="Static" Gold="1000000" PA="0" ProductionToComplete="10000" />
+    </Requirements>
+    <RewardList>
+      <Reward RewardName="gold_to_pa_transfer_5_reward" Weight="1" />
+    </RewardList>
+  </Project>
+</MetaData>

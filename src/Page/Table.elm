@@ -1,7 +1,9 @@
 module Page.Table exposing (view)
 
 import Datamine exposing (Datamine)
+import Datamine.City as City
 import Datamine.Passive as Passive exposing (Passive)
+import Datamine.Reagent as Reagent exposing (Reagent)
 import Dict exposing (Dict)
 import Html as H exposing (..)
 import Html.Attributes as A exposing (..)
@@ -10,6 +12,7 @@ import Json.Encode as E
 import Maybe.Extra
 import Route exposing (Route)
 import Url exposing (Url)
+import View.Desc
 
 
 view : Datamine -> String -> Maybe (List (Html msg))
@@ -108,6 +111,8 @@ type alias Row =
 type Cell
     = StringCell String
     | LinesCell (List String)
+    | DescCell String
+    | ImgCell String
     | RouteCell Route String
     | IntCell Int
     | FloatCell Float
@@ -127,6 +132,8 @@ maybeCell =
 datas : List ( String, Datamine -> Data )
 datas =
     [ ( "passive", dataPassive )
+    , ( "reagent", dataReagent )
+    , ( "city-project", dataCityProject )
     ]
 
 
@@ -165,9 +172,65 @@ dataPassive dm =
                     , IntCell entry.rarity
                     , StringCell entry.category
                     , maybeCell StringCell <| Passive.label dm passive
-                    , maybeCell StringCell <| Passive.desc dm passive
-                    , maybeCell StringCell <| Passive.lore dm passive
+                    , maybeCell DescCell <| Passive.desc dm passive
+                    , maybeCell DescCell <| Passive.lore dm passive
                     , LinesCell <| Passive.effects dm passive
+                    ]
+                )
+    }
+
+
+dataReagent : Datamine -> Data
+dataReagent dm =
+    { cols =
+        [ "name"
+        , "uiName"
+        , "gameplayDesc"
+        , "hudLoreDesc"
+        , "hudPicture"
+        , "reagentType"
+        , "label"
+        , "desc"
+        , "lore"
+        , "img"
+        ]
+    , rows =
+        dm.reagents
+            |> List.map
+                (\reagent ->
+                    [ StringCell reagent.name
+                    , StringCell reagent.uiName
+                    , StringCell reagent.gameplayDesc
+                    , StringCell reagent.lore
+                    , StringCell reagent.hudPicture
+                    , StringCell reagent.reagentType
+                    , maybeCell StringCell <| Reagent.label dm reagent
+                    , maybeCell DescCell <| Reagent.desc dm reagent
+                    , maybeCell DescCell <| Reagent.lore dm reagent
+                    , ImgCell <| Reagent.img reagent
+                    ]
+                )
+    }
+
+
+dataCityProject : Datamine -> Data
+dataCityProject dm =
+    { cols =
+        [ "name"
+        , "uiName"
+        , "label"
+        , "uiLore"
+        , "lore"
+        ]
+    , rows =
+        dm.cityProjects
+            |> List.map
+                (\proj ->
+                    [ StringCell proj.name
+                    , StringCell proj.uiName
+                    , maybeCell StringCell <| City.label dm proj
+                    , StringCell proj.uiLore
+                    , maybeCell DescCell <| City.lore dm proj
                     ]
                 )
     }
@@ -212,6 +275,12 @@ viewHtml d =
 
                             LinesCell ls ->
                                 [ ul [] (ls |> List.map (\l -> li [] [ text l ])) ]
+
+                            DescCell s ->
+                                [ div [ style "min-width" "20em" ] (View.Desc.format s) ]
+
+                            ImgCell s ->
+                                [ img [ src s ] [] ]
 
                             RouteCell r s ->
                                 [ a [ Route.href r ] [ text s ] ]
@@ -308,6 +377,12 @@ toStringCell cell =
         LinesCell ls ->
             String.join "\n" ls
 
+        DescCell s ->
+            s
+
+        ImgCell s ->
+            s
+
         RouteCell r s ->
             s
 
@@ -372,6 +447,12 @@ toJsonCell cell =
 
         LinesCell ls ->
             E.list E.string ls
+
+        DescCell s ->
+            E.string s
+
+        ImgCell s ->
+            E.string s
 
         RouteCell r s ->
             E.string s
