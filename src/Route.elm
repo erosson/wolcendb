@@ -4,6 +4,7 @@ module Route exposing
     , parse
     , pushUrl
     , replaceUrl
+    , toAnalytics
     , toUrl
     )
 
@@ -143,8 +144,8 @@ toPath r =
         Skills ->
             "/skill"
 
-        Skill s ->
-            "/skill/" ++ s
+        Skill id ->
+            "/skill/" ++ id
 
         Affixes ->
             "/affix"
@@ -187,6 +188,51 @@ toQuery route =
 toString : Route -> String
 toString route =
     toPath route ++ (route |> toQuery |> B.toQuery)
+
+
+toAnalytics : Maybe Route -> String
+toAnalytics mroute =
+    case mroute of
+        Nothing ->
+            "/404"
+
+        Just route ->
+            case route of
+                Weapon _ ->
+                    toPath <| Weapon "ID"
+
+                Shield _ ->
+                    toPath <| Shield "ID"
+
+                Armor _ ->
+                    toPath <| Armor "ID"
+
+                Accessory _ ->
+                    toPath <| Accessory "ID"
+
+                UniqueWeapon _ ->
+                    toPath <| UniqueWeapon "ID"
+
+                UniqueShield _ ->
+                    toPath <| UniqueShield "ID"
+
+                UniqueArmor _ ->
+                    toPath <| UniqueArmor "ID"
+
+                UniqueAccessory _ ->
+                    toPath <| UniqueAccessory "ID"
+
+                Skill _ ->
+                    toPath <| Skill "ID"
+
+                Source _ _ ->
+                    toPath <| Source "TYPE" "ID"
+
+                Table _ ->
+                    toPath <| Table "ID"
+
+                _ ->
+                    toPath route
 
 
 href : Route -> Html.Attribute msg

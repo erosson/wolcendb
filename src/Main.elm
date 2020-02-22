@@ -130,8 +130,12 @@ updateOk : Msg -> OkModel -> ( OkModel, Cmd Msg )
 updateOk msg model =
     case msg of
         OnUrlChange url ->
-            routeTo (Route.parse url) model
-                |> Tuple.mapSecond (\cmd -> Cmd.batch [ cmd, Ports.urlChange { path = url.path, query = url.query } ])
+            let
+                route =
+                    Route.parse url
+            in
+            routeTo route model
+                |> Tuple.mapSecond (\cmd -> Cmd.batch [ cmd, Ports.urlChange { route = Route.toAnalytics route, path = url.path, query = url.query } ])
 
         OnUrlRequest (Browser.Internal url) ->
             ( model, url |> Url.toString |> Nav.pushUrl model.nav )

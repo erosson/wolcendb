@@ -6,10 +6,10 @@ gtag('js', new Date())
 gtag('config', GA_ID, {anonymize_ip: true})
 
 export default function connect(app) {
-  app.ports.urlChange.subscribe(({path}) => {
+  app.ports.urlChange.subscribe(({route}) => {
     // https://developers.google.com/analytics/devguides/collection/gtagjs/pages
     gtag('config', GA_ID, {
-      // page_path: path,
+      page_path: route,
       page_location: document.location.href,
     })
   })
