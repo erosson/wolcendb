@@ -182,7 +182,8 @@ type alias Datamine d =
 
 {-| Get all random magic affixes that this item can spawn.
 
-Includes craftable and sarisel affixes.
+Includes craftable and Sarisel affixes. These aren't part of the usual drop pool;
+the caller's responsible for filtering them out.
 
 I have no authoritative source for how this works. Below I've implemented my own theory -
 seems to yield decent results, and I'm not aware of any counterexamples:
@@ -196,9 +197,6 @@ seems to yield decent results, and I'm not aware of any counterexamples:
     an affix's level bounds are applied. Not done in this function.
 
   - At most one affix spawns for affixes with the same class, like poe modgroups.
-
-  - TODO: what are Sarisel affixes?
-      - I've assumed they're limited to a boss I haven't seen yet, and not part of the natural drop pool. They have much higher weights than other mods.
 
 -}
 possibleAffixes : Datamine d -> Item i -> List MagicAffix
