@@ -161,8 +161,8 @@ toPath r =
         Source type_ id ->
             "/source/" ++ type_ ++ "/" ++ id
 
-        Search query ->
-            "/search" ++ ([ query |> Maybe.map (B.string "q") ] |> List.filterMap identity |> B.toQuery)
+        Search _ ->
+            "/search"
 
         Table t ->
             "/table/" ++ t
