@@ -1,4 +1,5 @@
 import '!!style-loader!css-loader!sass-loader!./main.scss';
+import 'bootstrap'
 import { Elm } from './Main.elm';
 import * as serviceWorker from './serviceWorker';
 import datamine from '../datamine/imports.js'

@@ -1,4 +1,11 @@
-module Route exposing (Route(..), href, parse, pushUrl, replaceUrl)
+module Route exposing
+    ( Route(..)
+    , href
+    , parse
+    , pushUrl
+    , replaceUrl
+    , toUrl
+    )
 
 import Browser.Navigation as Nav
 import Html
@@ -77,8 +84,8 @@ parser =
         ]
 
 
-toString : Route -> String
-toString r =
+toPath : Route -> String
+toPath r =
     case r of
         Home ->
             "/"
@@ -162,6 +169,21 @@ toString r =
             "/privacy"
 
 
+toQuery : Route -> List B.QueryParameter
+toQuery route =
+    case route of
+        Search query ->
+            [ query |> Maybe.map (B.string "q") ] |> List.filterMap identity
+
+        _ ->
+            []
+
+
+toString : Route -> String
+toString route =
+    toPath route ++ (route |> toQuery |> B.toQuery)
+
+
 href : Route -> Html.Attribute msg
 href =
     toString >> Html.Attributes.href
@@ -175,3 +197,20 @@ pushUrl nav =
 replaceUrl : Nav.Key -> Route -> Cmd msg
 replaceUrl nav =
     toString >> Nav.replaceUrl nav
+
+
+toUrl : Route -> Url
+toUrl route =
+    { protocol = Url.Https
+    , host = "wolcendb.erosson.org"
+    , port_ = Nothing
+    , path = toPath route
+    , query =
+        case toQuery route of
+            [] ->
+                Nothing
+
+            qs ->
+                qs |> B.toQuery |> Just
+    , fragment = Nothing
+    }
