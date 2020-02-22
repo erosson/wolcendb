@@ -2,8 +2,10 @@ module Page.Table exposing (view)
 
 import Datamine exposing (Datamine)
 import Datamine.City as City
+import Datamine.NormalItem as NormalItem exposing (NormalItem(..))
 import Datamine.Passive as Passive exposing (Passive)
 import Datamine.Reagent as Reagent exposing (Reagent)
+import Datamine.UniqueItem as UniqueItem exposing (UniqueItem(..))
 import Dict exposing (Dict)
 import Html as H exposing (..)
 import Html.Attributes as A exposing (..)
@@ -131,7 +133,9 @@ maybeCell =
 
 datas : List ( String, Datamine -> Data )
 datas =
-    [ ( "passive", dataPassive )
+    [ ( "normal-loot", dataNormalItem )
+    , ( "unique-loot", dataUniqueItem )
+    , ( "passive", dataPassive )
     , ( "reagent", dataReagent )
     , ( "city-project", dataCityProject )
     ]
@@ -145,6 +149,52 @@ dataFromString : Datamine -> String -> Maybe Data
 dataFromString dm s =
     Dict.get (String.toLower s) dataByKey
         |> Maybe.map (\fn -> fn dm)
+
+
+dataNormalItem : Datamine -> Data
+dataNormalItem dm =
+    { cols =
+        [ "name"
+        , "label"
+        , "baseEffects"
+        , "implicitEffects"
+        ]
+    , rows =
+        dm.loot
+            |> List.map
+                (\nitem ->
+                    [ StringCell <| NormalItem.name nitem
+                    , maybeCell StringCell <| NormalItem.label dm nitem
+                    , LinesCell <| NormalItem.baseEffects dm nitem
+                    , LinesCell <| NormalItem.implicitEffects dm nitem
+                    ]
+                )
+    }
+
+
+dataUniqueItem : Datamine -> Data
+dataUniqueItem dm =
+    { cols =
+        [ "name"
+        , "label"
+        , "lore"
+        , "baseEffects"
+        , "implicitEffects"
+        , "defaultEffects"
+        ]
+    , rows =
+        dm.uniqueLoot
+            |> List.map
+                (\uitem ->
+                    [ StringCell <| UniqueItem.name uitem
+                    , maybeCell StringCell <| UniqueItem.label dm uitem
+                    , maybeCell DescCell <| UniqueItem.lore dm uitem
+                    , LinesCell <| UniqueItem.baseEffects dm uitem
+                    , LinesCell <| UniqueItem.implicitEffects dm uitem
+                    , LinesCell <| UniqueItem.defaultEffects dm uitem
+                    ]
+                )
+    }
 
 
 dataPassive : Datamine -> Data
@@ -274,7 +324,7 @@ viewHtml d =
                                 [ text s ]
 
                             LinesCell ls ->
-                                [ ul [] (ls |> List.map (\l -> li [] [ text l ])) ]
+                                [ ul [ style "min-width" "15em" ] (ls |> List.map (\l -> li [] [ text l ])) ]
 
                             DescCell s ->
                                 [ div [ style "min-width" "20em" ] (View.Desc.format s) ]

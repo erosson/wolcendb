@@ -92,7 +92,8 @@ formatEffect dm effect =
                 effect.stats
 
         key =
-            "@ui_eim_" ++ effect.effectId
+            Dict.get effect.effectId formatEffectOverrides
+                |> Maybe.withDefault ("@ui_eim_" ++ effect.effectId)
     in
     Lang.get dm key
         |> Maybe.map
@@ -101,6 +102,23 @@ formatEffect dm effect =
                     |> List.indexedMap Tuple.pair
                     |> List.foldl Util.formatEffectStat template
             )
+
+
+{-| These deviate from the usual effect naming pattern. No idea how they work in-game.
+
+Discovered via scanning <http://localhost:3000/table/unique-loot.html> for "???"
+
+TODO check in a unit test, or with the type system
+
+-}
+formatEffectOverrides : Dict String String
+formatEffectOverrides =
+    Dict.fromList
+        [ ( "cast_deathmark_on_hit", "@ui_eim_deathmark_on_hit" )
+        , ( "umbracosts_percent_elemental", "@ui_eim_umbracost_percent_elemental" )
+        , ( "criticaldamage_on_bleeding", "@ui_eim_criticaldamage_on_bleeding_pts" )
+        , ( "convert_physical_to_frost", "@ui_eim_convert_physcial_to_frost" )
+        ]
 
 
 type alias Datamine d =

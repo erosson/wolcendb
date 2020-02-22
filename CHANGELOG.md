@@ -6,6 +6,7 @@ Changelog
 #### 2020-02-22
 - Added a list of reagents.
 - Added armor and shield properties.
+- Fixed a bug that hid an affix for several uniques: The Trial, Driftwood Miracle, Gaälnazek, Expurgation, Maelström, Paradox.
 
 #### 2020-02-21
 - Fixed a bug with affixes that reversed their mandatory keywords and optional keywords.

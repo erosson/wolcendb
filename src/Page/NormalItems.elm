@@ -21,7 +21,7 @@ viewWeapons dm =
         , headers =
             [ th [] [ text "name" ]
             , th [] [ text "level" ]
-            , th [] [ text "damage" ]
+            , th [] [ text "properties" ]
             , th [] [ text "keywords" ]
             ]
         }

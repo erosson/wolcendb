@@ -188,7 +188,8 @@ implicitEffects dm =
     implicitAffixes
         >> Affix.getNonmagicIds dm
         >> List.concatMap .effects
-        >> List.filterMap (Affix.formatEffect dm)
+        -- >> List.filterMap (Affix.formatEffect dm)
+        >> List.map (Affix.formatEffect dm >> Maybe.withDefault "???")
 
 
 defaultAffixes : UniqueItem -> List String
@@ -212,7 +213,8 @@ defaultEffects dm =
     defaultAffixes
         >> Affix.getNonmagicIds dm
         >> List.concatMap .effects
-        >> List.filterMap (Affix.formatEffect dm)
+        -- >> List.filterMap (Affix.formatEffect dm)
+        >> List.map (Affix.formatEffect dm >> Maybe.withDefault "???")
 
 
 baseEffects : Affix.Datamine d -> UniqueItem -> List String
