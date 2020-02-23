@@ -162,17 +162,19 @@ viewItemAffixClass dm totalWeight expandeds ( name, affixes ) =
                 expanded =
                     Set.member name expandeds
             in
-            span [ class "badge badge-outline-light float-right" ] [ viewWeights totalWeight affixes ]
-                :: span [ class "badge badge-outline-light float-right" ] (viewGemFamiliesList dm affixes)
-                :: [ affixes
-                        |> List.concatMap .effects
-                        |> viewItemAffixClassSummary dm totalWeight expanded
-                        |> div
-                            [ title <| "Affix class: " ++ name
-                            , onClick <| Expand name
-                            ]
-                   ]
-                ++ (if expanded then
+            div []
+                [ span [ class "badge badge-outline-light float-right" ] [ viewWeights totalWeight affixes ]
+                , span [ class "badge badge-outline-light float-right" ] (viewGemFamiliesList dm affixes)
+                , affixes
+                    |> List.concatMap .effects
+                    |> viewItemAffixClassSummary dm totalWeight expanded
+                    |> div
+                        [ title <| "Affix class: " ++ name
+                        , onClick <| Expand name
+                        ]
+                , div [ style "clear" "right" ] []
+                ]
+                :: (if expanded then
                         [ ul [ class "list-group" ] (affixes |> List.map (viewItemAffixRow dm totalWeight >> li [ class "list-group-item py-1" ])) ]
 
                     else
