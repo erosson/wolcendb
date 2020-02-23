@@ -12,6 +12,7 @@ Changelog
 - Added armor and shield properties.
 - Fixed a bug that hid an affix for several uniques: The Trial, Driftwood Miracle, Gaälnazek, Expurgation, Maelström, Paradox.
 - Added weights for craftable affixes.
+- Changed the "Craftable affixes" label to "Craft-only affixes", for clarity.
 
 #### 2020-02-21
 - Fixed a bug with affixes that reversed their mandatory keywords and optional keywords.

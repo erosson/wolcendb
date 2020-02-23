@@ -126,7 +126,7 @@ viewItem dm expandeds affixes =
             , viewItemAffixes "Sarisel affixes" dm expandeds sarisels
             ]
         , div [ class "col-sm" ]
-            [ viewItemAffixes "Craftable affixes" dm expandeds craftables ]
+            [ viewItemAffixes "Craft-only affixes" dm expandeds craftables ]
         ]
     ]
 
