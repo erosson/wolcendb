@@ -5,6 +5,7 @@ module View.Affix exposing
     , viewAffixes
     , viewEffect
     , viewGemFamilies
+    , viewGemFamiliesList
     , viewItem
     , viewMagicId
     , viewMagicIds
@@ -67,7 +68,14 @@ viewEffect dm effect =
 
 viewGemFamilies : Datamine -> Affix a -> List (Html msg)
 viewGemFamilies dm affix =
-    GemFamily.fromAffix dm affix
+    viewGemFamiliesList dm [ affix ]
+
+
+{-| Show gem families that all these affixes have in common
+-}
+viewGemFamiliesList : Datamine -> List (Affix a) -> List (Html msg)
+viewGemFamiliesList dm affixes =
+    GemFamily.fromAffixes dm affixes
         |> List.map
             (\fam ->
                 img
@@ -155,6 +163,7 @@ viewItemAffixClass dm totalWeight expandeds ( name, affixes ) =
                     Set.member name expandeds
             in
             span [ class "badge badge-outline-light float-right" ] [ viewWeights totalWeight affixes ]
+                :: span [ class "badge badge-outline-light float-right" ] (viewGemFamiliesList dm affixes)
                 :: [ affixes
                         |> List.concatMap .effects
                         |> viewItemAffixClassSummary dm totalWeight expanded

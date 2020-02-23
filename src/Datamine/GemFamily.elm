@@ -2,6 +2,7 @@ module Datamine.GemFamily exposing
     ( GemFamily
     , decoder
     , fromAffix
+    , fromAffixes
     , img
     , label
     )
@@ -18,6 +19,7 @@ import Dict exposing (Dict)
 import Json.Decode as D
 import Json.Decode.Pipeline as P
 import Result.Extra
+import Set exposing (Set)
 
 
 type alias GemFamily =
@@ -58,6 +60,36 @@ fromAffix : Datamine d -> Affix a -> List GemFamily
 fromAffix dm affix =
     Dict.get (String.toLower affix.affixId) dm.gemFamiliesByAffixId
         |> Maybe.withDefault []
+
+
+fromAffixes : Datamine d -> List (Affix a) -> List GemFamily
+fromAffixes dm =
+    List.map (fromAffix dm) >> intersectBy .gemFamilyId
+
+
+{-| Return items present in all lists; the intersection of all lists
+-}
+intersectBy : (a -> comparable) -> List (List a) -> List a
+intersectBy fn lists =
+    case lists of
+        [] ->
+            []
+
+        headList :: tailLists ->
+            let
+                toSet =
+                    List.map fn >> Set.fromList
+
+                headSet =
+                    toSet headList
+
+                tailSets =
+                    List.map toSet tailLists
+
+                intersection =
+                    List.foldl Set.intersect headSet tailSets
+            in
+            headList |> List.filter (\item -> Set.member (fn item) intersection)
 
 
 {-| The gem in this family with the shortest name
