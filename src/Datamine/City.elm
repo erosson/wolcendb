@@ -10,6 +10,7 @@ module Datamine.City exposing
     , label
     , levelsDecoder
     , lore
+    , projectRewards
     , projectScalingDecoder
     , projects
     , projectsDecoder
@@ -34,6 +35,7 @@ type alias Project =
     , uiName : String
     , uiLore : String
     , iconType : Maybe String
+    , rewards : List ProjectReward
     }
 
 
@@ -41,6 +43,12 @@ type alias ProjectScaling =
     { source : Source
     , name : String
     , factor : Array Int
+    }
+
+
+type alias ProjectReward =
+    { rewardName : String
+    , weight : Int
     }
 
 
@@ -96,12 +104,23 @@ type alias Datamine d =
     Lang.Datamine
         { d
             | cityProjectsByName : Dict String Project
+            , cityRewardsByName : Dict String Reward
         }
 
 
 projects : Datamine d -> Building -> List Project
 projects dm =
     .projects >> List.filterMap (\name -> Dict.get (String.toLower name) dm.cityProjectsByName)
+
+
+projectRewards : Datamine d -> Project -> List { weight : Int, reward : Reward }
+projectRewards dm =
+    .rewards
+        >> List.filterMap
+            (\{ rewardName, weight } ->
+                Dict.get (String.toLower rewardName) dm.cityRewardsByName
+                    |> Maybe.map (\r -> { reward = r, weight = weight })
+            )
 
 
 projectsDecoder : D.Decoder (List Project)
@@ -123,6 +142,12 @@ projectsDecoder_ file =
         |> P.requiredAt [ "UIParams", "0", "$", "UIName" ] D.string
         |> P.requiredAt [ "UIParams", "0", "$", "UILore" ] D.string
         |> P.optionalAt [ "UIParams", "0", "$", "IconType" ] (D.string |> D.map Just) Nothing
+        |> P.requiredAt [ "RewardList", "0", "Reward" ]
+            (D.succeed ProjectReward
+                |> P.requiredAt [ "$", "RewardName" ] D.string
+                |> P.requiredAt [ "$", "Weight" ] Util.intString
+                |> D.list
+            )
         |> D.list
         |> D.at [ "MetaData", "Project" ]
 

@@ -118,6 +118,7 @@ type Cell
     | DescCell String
     | ImgCell String
     | RouteCell Route String
+    | SourceCell String String
     | IntCell Int
     | FloatCell Float
     | BoolCell Bool
@@ -298,6 +299,7 @@ dataCityProject : Datamine -> Data
 dataCityProject dm =
     { cols =
         [ "name"
+        , "source"
         , "uiName"
         , "label"
         , "uiLore"
@@ -308,10 +310,14 @@ dataCityProject dm =
             |> List.map
                 (\proj ->
                     [ StringCell proj.name
+                    , SourceCell "city-project" proj.name
                     , StringCell proj.uiName
                     , maybeCell StringCell <| City.label dm proj
                     , StringCell proj.uiLore
                     , maybeCell DescCell <| City.lore dm proj
+                    , LinesCell <| List.map (String.fromInt << .weight) proj.rewards
+                    , LinesCell <| List.map .rewardName proj.rewards
+                    , LinesCell <| List.map (Maybe.withDefault "???" << City.label dm << .reward) <| City.projectRewards dm proj
                     ]
                 )
     }
@@ -469,6 +475,9 @@ viewHtml d =
                             RouteCell r s ->
                                 [ a [ Route.href r ] [ text s ] ]
 
+                            SourceCell type_ id ->
+                                [ text "[", a [ Route.href <| Route.Source type_ id ] [ text "Source" ], text "]" ]
+
                             IntCell i ->
                                 [ text <| String.fromInt i ]
 
@@ -570,6 +579,9 @@ toStringCell cell =
         RouteCell r s ->
             s
 
+        SourceCell type_ id ->
+            ""
+
         IntCell i ->
             String.fromInt i
 
@@ -640,6 +652,9 @@ toJsonCell cell =
 
         RouteCell r s ->
             E.string s
+
+        SourceCell type_ id ->
+            E.null
 
         IntCell i ->
             E.int i

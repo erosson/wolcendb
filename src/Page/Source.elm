@@ -1,6 +1,7 @@
 module Page.Source exposing (view)
 
 import Datamine exposing (Datamine)
+import Datamine.City as City
 import Datamine.Gem as Gem
 import Datamine.GemFamily as GemFamily exposing (GemFamily)
 import Datamine.NormalItem as NormalItem
@@ -185,6 +186,24 @@ getSource dm type_ id =
                         ( label
                         , [ passive.source, entry.source ]
                         , [ a [ class "breadcrumb-item active", Route.href Route.Passives ] [ text "Passives" ]
+                          , a [ class "breadcrumb-item active" ] [ text label ]
+                          , a [ class "breadcrumb-item active", Route.href <| Route.Source type_ id ] [ text "Source" ]
+                          ]
+                        )
+                    )
+
+        "city-project" ->
+            Dict.get (String.toLower id) dm.cityProjectsByName
+                |> Maybe.map
+                    (\proj ->
+                        let
+                            label =
+                                City.label dm proj |> Maybe.withDefault "???"
+                        in
+                        ( label
+                        , [ proj.source ]
+                        , [ a [ class "breadcrumb-item active" ] [ text "City" ]
+                          , a [ class "breadcrumb-item active" ] [ text "Projects" ]
                           , a [ class "breadcrumb-item active" ] [ text label ]
                           , a [ class "breadcrumb-item active", Route.href <| Route.Source type_ id ] [ text "Source" ]
                           ]
