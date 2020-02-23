@@ -54,6 +54,8 @@ type alias OkModel =
     , expandedAffixClasses : Set String
     , globalSearch : String
     , globalSearchResults : Result String (List SearchResult)
+    , filterItemLevel : Int
+    , filterGemFamilies : Set String
     }
 
 
@@ -84,6 +86,8 @@ init flags url nav =
                     , expandedAffixClasses = Set.empty
                     , globalSearch = ""
                     , globalSearchResults = Ok []
+                    , filterItemLevel = 0
+                    , filterGemFamilies = Set.empty
                     }
                         |> routeTo (Route.parse url)
                         |> Tuple.mapFirst Ok
@@ -110,6 +114,7 @@ routeTo mroute model0 =
 type Msg
     = OnUrlChange Url
     | OnUrlRequest Browser.UrlRequest
+    | NormalItemMsg Page.NormalItem.Msg
     | AffixMsg View.Affix.ItemMsg
     | SearchMsg Page.Search.Msg
     | NavMsg View.Nav.Msg
@@ -143,8 +148,11 @@ updateOk msg model =
         OnUrlRequest (Browser.External url) ->
             ( model, Nav.load url )
 
-        AffixMsg (View.Affix.Expand class) ->
-            ( { model | expandedAffixClasses = model.expandedAffixClasses |> toggleSet class }, Cmd.none )
+        NormalItemMsg msg_ ->
+            ( Page.NormalItem.update msg_ model, Cmd.none )
+
+        AffixMsg msg_ ->
+            ( View.Affix.update msg_ model, Cmd.none )
 
         SearchMsg msg_ ->
             Page.Search.update msg_ model
@@ -153,15 +161,6 @@ updateOk msg model =
         NavMsg msg_ ->
             View.Nav.update msg_ model
                 |> Tuple.mapSecond (Cmd.map NavMsg)
-
-
-toggleSet : comparable -> Set comparable -> Set comparable
-toggleSet k ks =
-    if Set.member k ks then
-        Set.remove k ks
-
-    else
-        Set.insert k ks
 
 
 
@@ -205,22 +204,22 @@ viewBody mmodel =
 
                                 Route.Weapon name ->
                                     Page.NormalItem.viewWeapon model name
-                                        |> Maybe.map (List.map (H.map AffixMsg))
+                                        |> Maybe.map (List.map (H.map NormalItemMsg))
                                         |> Maybe.withDefault viewNotFound
 
                                 Route.Shield name ->
                                     Page.NormalItem.viewShield model name
-                                        |> Maybe.map (List.map (H.map AffixMsg))
+                                        |> Maybe.map (List.map (H.map NormalItemMsg))
                                         |> Maybe.withDefault viewNotFound
 
                                 Route.Armor name ->
                                     Page.NormalItem.viewArmor model name
-                                        |> Maybe.map (List.map (H.map AffixMsg))
+                                        |> Maybe.map (List.map (H.map NormalItemMsg))
                                         |> Maybe.withDefault viewNotFound
 
                                 Route.Accessory name ->
                                     Page.NormalItem.viewAccessory model name
-                                        |> Maybe.map (List.map (H.map AffixMsg))
+                                        |> Maybe.map (List.map (H.map NormalItemMsg))
                                         |> Maybe.withDefault viewNotFound
 
                                 Route.UniqueWeapons ->

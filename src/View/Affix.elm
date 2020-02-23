@@ -1,6 +1,7 @@
 module View.Affix exposing
     ( ItemMsg(..)
     , formatRarity
+    , update
     , viewAffix
     , viewAffixes
     , viewEffect
@@ -26,6 +27,7 @@ import Html.Events as E exposing (..)
 import List.Extra
 import Route exposing (Route)
 import Set exposing (Set)
+import Util
 
 
 viewNonmagicIds : Datamine -> List String -> List (Html msg)
@@ -89,6 +91,17 @@ viewGemFamiliesList dm affixes =
 
 type ItemMsg
     = Expand String
+
+
+type alias Model m =
+    { m | expandedAffixClasses : Set String }
+
+
+update : ItemMsg -> Model m -> Model m
+update msg model =
+    case msg of
+        Expand class ->
+            { model | expandedAffixClasses = model.expandedAffixClasses |> Util.toggleSet class }
 
 
 viewItem : Datamine -> Set String -> List MagicAffix -> List (Html ItemMsg)

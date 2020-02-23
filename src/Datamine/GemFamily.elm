@@ -1,6 +1,7 @@
 module Datamine.GemFamily exposing
     ( GemFamily
     , decoder
+    , filterAffix
     , fromAffix
     , fromAffixes
     , img
@@ -60,6 +61,21 @@ fromAffix : Datamine d -> Affix a -> List GemFamily
 fromAffix dm affix =
     Dict.get (String.toLower affix.affixId) dm.gemFamiliesByAffixId
         |> Maybe.withDefault []
+
+
+filterAffix : Datamine d -> Set String -> Affix a -> Bool
+filterAffix dm famIds =
+    if famIds == Set.empty then
+        always True
+
+    else
+        -- does this affix have any of the given gem family ids?
+        fromAffix dm
+            >> List.map .gemFamilyId
+            >> Set.fromList
+            >> Set.intersect famIds
+            >> Set.isEmpty
+            >> not
 
 
 fromAffixes : Datamine d -> List (Affix a) -> List GemFamily
