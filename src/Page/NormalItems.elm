@@ -1,4 +1,4 @@
-module Page.NormalItems exposing (viewAccessories, viewArmors, viewShields, viewTags, viewWeapons)
+module Page.NormalItems exposing (view)
 
 import Datamine exposing (Datamine)
 import Datamine.NormalItem as NormalItem exposing (Item, NormalItem(..))
@@ -6,178 +6,180 @@ import Dict exposing (Dict)
 import Html as H exposing (..)
 import Html.Attributes as A exposing (..)
 import Html.Events as E exposing (..)
+import List.Extra
 import Maybe.Extra
 import Route exposing (Route)
 import Set exposing (Set)
 import View.Item
 
 
-viewTags : Datamine -> Maybe String -> List (Html msg)
-viewTags dm tagStr =
+view : Datamine -> Maybe String -> List (Html msg)
+view dm tagStr =
     let
+        tagList =
+            tagStr |> Maybe.withDefault "" |> String.toLower |> String.split ","
+
         tagSet =
-            tagStr |> Maybe.withDefault "" |> String.split "," |> Set.fromList
+            Set.fromList tagList
     in
     viewMain dm
-        { breadcrumb =
-            [ a [ class "breadcrumb-item active", Route.href Route.Home ] [ text "Home" ]
-            , a [ class "breadcrumb-item active", Route.href <| Route.NormalItems tagStr ] [ text "Loot" ]
-            ]
-        , headers =
-            [ th [] [ text "name" ]
-            , th [] [ text "level" ]
-            , th [] [ text "properties" ]
-            , th [] [ text "keywords" ]
-            ]
-        }
-        (dm.loot |> List.filter (NormalItem.keywords >> Set.fromList >> Set.diff tagSet >> Set.isEmpty))
+        tagList
+        (dm.loot |> List.filter (NormalItem.keywords >> List.map String.toLower >> Set.fromList >> Set.diff tagSet >> Set.isEmpty))
 
 
-viewWeapons : Datamine -> List (Html msg)
-viewWeapons dm =
-    viewMain dm
-        { breadcrumb =
-            [ a [ class "breadcrumb-item active", Route.href Route.Home ] [ text "Home" ]
-            , a [ class "breadcrumb-item active", Route.href Route.Weapons ] [ text "Weapons" ]
-            ]
-        , headers =
-            [ th [] [ text "name" ]
-            , th [] [ text "level" ]
-            , th [] [ text "properties" ]
-            , th [] [ text "keywords" ]
-            ]
-        }
-        (dm.loot
-            |> List.filterMap
+viewMain : Datamine -> List String -> List NormalItem -> List (Html msg)
+viewMain dm keywords items =
+    [ ol [ class "breadcrumb" ]
+        [ a [ class "breadcrumb-item active", Route.href Route.Home ] [ text "Home" ]
+        , a [ class "breadcrumb-item active", Route.href <| Route.NormalItems <| Just <| String.join "," keywords ] [ text "Loot" ]
+        ]
+    , div [] <| viewKeywordGroups keywords weaponKeywordGroups
+    , div [] <| viewKeywordGroups keywords armorKeywordGroups
+    , div [] <| viewKeywordGroups keywords otherKeywordGroups
+    , ul [ class "list-group" ]
+        (items
+            |> List.map
                 (\nitem ->
-                    case nitem of
-                        NWeapon i ->
-                            Just nitem
-
-                        _ ->
-                            Nothing
-                )
-        )
-
-
-viewShields : Datamine -> List (Html msg)
-viewShields dm =
-    viewMain dm
-        { breadcrumb =
-            [ a [ class "breadcrumb-item active", Route.href Route.Home ] [ text "Home" ]
-            , a [ class "breadcrumb-item active", Route.href Route.Shields ] [ text "Shields" ]
-            ]
-        , headers =
-            [ th [] [ text "name" ]
-            , th [] [ text "level" ]
-            , th [] [ text "properties" ]
-            , th [] [ text "keywords" ]
-            ]
-        }
-        (dm.loot
-            |> List.filterMap
-                (\nitem ->
-                    case nitem of
-                        NShield i ->
-                            Just nitem
-
-                        _ ->
-                            Nothing
-                )
-        )
-
-
-viewArmors : Datamine -> List (Html msg)
-viewArmors dm =
-    viewMain dm
-        { breadcrumb =
-            [ a [ class "breadcrumb-item active", Route.href Route.Home ] [ text "Home" ]
-            , a [ class "breadcrumb-item active", Route.href Route.Armors ] [ text "Armors" ]
-            ]
-        , headers =
-            [ th [] [ text "name" ]
-            , th [] [ text "level" ]
-            , th [] [ text "properties" ]
-            , th [] [ text "keywords" ]
-            ]
-        }
-        (dm.loot
-            |> List.filterMap
-                (\nitem ->
-                    case nitem of
-                        NArmor i ->
-                            Just nitem
-
-                        _ ->
-                            Nothing
-                )
-        )
-
-
-viewAccessories : Datamine -> List (Html msg)
-viewAccessories dm =
-    viewMain dm
-        { breadcrumb =
-            [ a [ class "breadcrumb-item active", Route.href Route.Home ] [ text "Home" ]
-            , a [ class "breadcrumb-item active", Route.href Route.Accessories ] [ text "Accessories" ]
-            ]
-        , headers =
-            [ th [] [ text "name" ]
-            , th [] [ text "level" ]
-            , th [] [ text "" ]
-            , th [] [ text "keywords" ]
-            ]
-        }
-        (dm.loot
-            |> List.filterMap
-                (\nitem ->
-                    case nitem of
-                        NAccessory i ->
-                            Just nitem
-
-                        _ ->
-                            Nothing
-                )
-        )
-
-
-itemRoute : NormalItem -> Route
-itemRoute nitem =
-    case nitem of
-        NWeapon i ->
-            Route.Weapon i.name
-
-        NArmor i ->
-            Route.Armor i.name
-
-        NShield i ->
-            Route.Shield i.name
-
-        NAccessory i ->
-            Route.Accessory i.name
-
-
-viewMain : Datamine -> { breadcrumb : List (Html msg), headers : List (Html msg) } -> List NormalItem -> List (Html msg)
-viewMain dm { breadcrumb, headers } items =
-    [ ol [ class "breadcrumb" ] breadcrumb
-    , table [ class "table" ]
-        [ thead [] [ tr [] headers ]
-        , tbody []
-            (items
-                |> List.map
-                    (\nitem ->
-                        tr []
-                            [ td []
-                                [ a [ Route.href <| itemRoute nitem ]
-                                    [ img [ class "item-icon", View.Item.imgNormal dm nitem ] []
-                                    , NormalItem.label dm nitem |> Maybe.withDefault "???" |> text
+                    li [ class "list-group-item" ]
+                        [ div [ class "row" ]
+                            [ div [ class "col-sm-2" ]
+                                [ a [ Route.href <| Route.NormalItem <| NormalItem.name nitem ]
+                                    [ img [ class "item-list-img", View.Item.imgNormal dm nitem ] []
                                     ]
                                 ]
-                            , td [] [ text <| Maybe.Extra.unwrap "-" String.fromInt <| NormalItem.levelPrereq nitem ]
-                            , td [] (nitem |> NormalItem.baseEffects dm |> List.map (\s -> div [] [ text s ]))
-                            , td [] [ text <| String.join ", " <| NormalItem.keywords nitem ]
+                            , div [ class "col-sm-10" ]
+                                [ a [ Route.href <| Route.NormalItem <| NormalItem.name nitem ] [ NormalItem.label dm nitem |> Maybe.withDefault "???" |> text ]
+                                , nitem |> NormalItem.levelPrereq |> Maybe.Extra.unwrap (p [] []) (\lvl -> p [] [ text <| "Level: " ++ String.fromInt lvl ])
+                                , nitem |> NormalItem.baseEffects dm |> List.map (\s -> li [ class "list-group-item" ] [ text s ]) |> ul [ class "list-group affixes" ]
+                                , nitem |> NormalItem.implicitEffects dm |> List.map (\s -> li [ class "list-group-item" ] [ text s ]) |> ul [ class "list-group affixes" ]
+                                , small [ class "text-muted" ] [ text "Keywords: ", text <| String.join ", " <| NormalItem.keywords nitem ]
+                                ]
                             ]
-                    )
-            )
-        ]
+                        ]
+                )
+        )
     ]
+
+
+type alias KeywordGroup =
+    ( ( List String, String ), List ( List String, String ) )
+
+
+weaponKeywordGroups : List KeywordGroup
+weaponKeywordGroups =
+    [ ( ( [ "1h", "melee" ], "One-handed melee" )
+      , [ ( [ "1h", "melee", "axe" ], "Axe" )
+        , ( [ "1h", "melee", "mace" ], "Mace" )
+        , ( [ "1h", "melee", "sword" ], "Sword" )
+        , ( [ "1h", "melee", "dagger" ], "Dagger" )
+        , ( [ "shield" ], "Shield" )
+        ]
+      )
+    , ( ( [ "2h", "melee" ], "Two-handed melee" )
+      , [ ( [ "2h", "melee", "axe" ], "Axe" )
+        , ( [ "2h", "melee", "mace" ], "Mace" )
+        , ( [ "2h", "melee", "sword" ], "Sword" )
+        ]
+      )
+    , ( ( [ "magic" ], "Magic weapons" )
+      , [ ( [ "1h", "magic" ], "Catalyst" )
+        , ( [ "2h", "magic" ], "Staff" )
+        ]
+      )
+    , ( ( [ "ranged" ], "Ranged weapons" )
+      , [ ( [ "1h", "ranged" ], "Pistol" )
+        , ( [ "2h", "ranged" ], "Bow" )
+        ]
+      )
+    ]
+
+
+armorKeywordGroups : List ( ( List String, String ), List ( List String, String ) )
+armorKeywordGroups =
+    [ ( ( [ "armor", "heavy" ], "Heavy Armor" )
+      , [ ( [ "armor", "heavy", "chest" ], "Chest" )
+        , ( [ "armor", "heavy", "head" ], "Head" )
+        , ( [ "armor", "heavy", "legs" ], "Legs" )
+        , ( [ "armor", "heavy", "feet" ], "Feet" )
+        , ( [ "armor", "heavy", "shoulder" ], "Shoulder" )
+        , ( [ "armor", "heavy", "hand" ], "Hand" )
+        ]
+      )
+    , ( ( [ "armor", "warrior" ], "Brawler Armor" )
+      , [ ( [ "armor", "warrior", "chest" ], "Chest" )
+        , ( [ "armor", "warrior", "head" ], "Head" )
+        , ( [ "armor", "warrior", "legs" ], "Legs" )
+        , ( [ "armor", "warrior", "feet" ], "Feet" )
+        , ( [ "armor", "warrior", "shoulder" ], "Shoulder" )
+        , ( [ "armor", "warrior", "hand" ], "Hand" )
+        ]
+      )
+    , ( ( [ "armor", "rogue" ], "Rogue Armor" )
+      , [ ( [ "armor", "rogue", "chest" ], "Chest" )
+        , ( [ "armor", "rogue", "head" ], "Head" )
+        , ( [ "armor", "rogue", "legs" ], "Legs" )
+        , ( [ "armor", "rogue", "feet" ], "Feet" )
+        , ( [ "armor", "rogue", "shoulder" ], "Shoulder" )
+        , ( [ "armor", "rogue", "hand" ], "Hand" )
+        ]
+      )
+    , ( ( [ "armor", "mage" ], "Mage Armor" )
+      , [ ( [ "armor", "mage", "chest" ], "Chest" )
+        , ( [ "armor", "mage", "head" ], "Head" )
+        , ( [ "armor", "mage", "legs" ], "Legs" )
+        , ( [ "armor", "mage", "feet" ], "Feet" )
+        , ( [ "armor", "mage", "shoulder" ], "Shoulder" )
+        , ( [ "armor", "mage", "hand" ], "Hand" )
+        ]
+      )
+    ]
+
+
+otherKeywordGroups : List ( ( List String, String ), List ( List String, String ) )
+otherKeywordGroups =
+    [ ( ( [ "armor" ], "All Armor" )
+      , [ ( [ "armor", "chest" ], "Chest" )
+        , ( [ "armor", "head" ], "Head" )
+        , ( [ "armor", "legs" ], "Legs" )
+        , ( [ "armor", "feet" ], "Feet" )
+        , ( [ "armor", "shoulder" ], "Shoulder" )
+        , ( [ "armor", "hand" ], "Hand" )
+        , ( [ "armor", "shield" ], "Shield" )
+        , ( [ "trinket" ], "Catalyst" )
+        ]
+      )
+    , ( ( [ "accessory" ], "Accessories" )
+      , [ ( [ "accessory", "ring" ], "Ring" )
+        , ( [ "accessory", "amulet" ], "Amulet" )
+        , ( [ "accessory", "belt" ], "Belt" )
+        ]
+      )
+    ]
+
+
+viewKeywordGroups : List String -> List KeywordGroup -> List (Html msg)
+viewKeywordGroups activeKw =
+    List.map
+        (\( ( mainkw, mainlabel ), entries ) ->
+            div [ class "card d-inline-flex", style "max-width" "15em" ]
+                [ div [ class "card-header p-2" ]
+                    [ a
+                        [ Route.href <| Route.NormalItems <| Just <| String.join "," mainkw
+                        , classList [ ( "btn btn-link btn-outline-primary m-0", mainkw == activeKw ) ]
+                        ]
+                        [ text mainlabel ]
+                    ]
+                , div [ class "card-body p-0" ]
+                    (entries
+                        |> List.map
+                            (\( kw, label ) ->
+                                a
+                                    [ class "btn btn-link"
+                                    , Route.href <| Route.NormalItems <| Just <| String.join "," kw
+                                    , classList [ ( "btn-outline-primary", kw == activeKw ) ]
+                                    ]
+                                    [ text label ]
+                            )
+                    )
+                ]
+        )

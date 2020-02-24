@@ -262,12 +262,12 @@ seems to yield decent results, and I'm not aware of any counterexamples:
   - At most one affix spawns for affixes with the same class, like poe modgroups.
 
 -}
-possibleAffixes : Datamine d -> Item i -> List MagicAffix
+possibleAffixes : Datamine d -> NormalItem -> List MagicAffix
 possibleAffixes dm item =
     let
         itemKeywords : Set String
         itemKeywords =
-            Set.fromList item.keywords
+            Set.fromList <| keywords item
 
         isItemKeyword : String -> Bool
         isItemKeyword k =

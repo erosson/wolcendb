@@ -209,20 +209,8 @@ toSearchResult dm ( docId, score ) =
                     (\nitem ->
                         result
                             [ "Normal Loot" ]
-                            (case nitem of
-                                NormalItem.NWeapon _ ->
-                                    Route.Weapon id
-
-                                NormalItem.NShield _ ->
-                                    Route.Shield id
-
-                                NormalItem.NArmor _ ->
-                                    Route.Armor id
-
-                                NormalItem.NAccessory _ ->
-                                    Route.Accessory id
-                            )
-                            (NormalItem.label dm nitem |> Maybe.withDefault "???")
+                            (nitem |> NormalItem.name |> Route.NormalItem)
+                            (nitem |> NormalItem.label dm |> Maybe.withDefault "???")
                     )
 
         [ "unique-loot", id ] ->
@@ -231,20 +219,8 @@ toSearchResult dm ( docId, score ) =
                     (\uitem ->
                         result
                             [ "Unique Loot" ]
-                            (case uitem of
-                                UniqueItem.UWeapon _ ->
-                                    Route.UniqueWeapon id
-
-                                UniqueItem.UShield _ ->
-                                    Route.UniqueShield id
-
-                                UniqueItem.UArmor _ ->
-                                    Route.UniqueArmor id
-
-                                UniqueItem.UAccessory _ ->
-                                    Route.UniqueAccessory id
-                            )
-                            (UniqueItem.label dm uitem |> Maybe.withDefault "???")
+                            (uitem |> UniqueItem.name |> Route.UniqueItem)
+                            (uitem |> UniqueItem.label dm |> Maybe.withDefault "???")
                     )
 
         _ ->

@@ -1,6 +1,7 @@
 module Main exposing (..)
 
 import Browser
+import Browser.Dom
 import Browser.Navigation as Nav
 import Datamine exposing (Datamine)
 import Dict exposing (Dict)
@@ -30,6 +31,7 @@ import Ports
 import Route exposing (Route)
 import Search exposing (SearchResult)
 import Set exposing (Set)
+import Task
 import Url exposing (Url)
 import View.Affix
 import View.Nav
@@ -103,6 +105,9 @@ routeTo mroute model0 =
         Just (Route.Search q) ->
             ( Page.Search.init q model, Cmd.none )
 
+        Just (Route.Redirect route) ->
+            ( model0, Route.replaceUrl model.nav route )
+
         _ ->
             ( model, Cmd.none )
 
@@ -114,6 +119,7 @@ routeTo mroute model0 =
 type Msg
     = OnUrlChange Url
     | OnUrlRequest Browser.UrlRequest
+    | Noop
     | NormalItemMsg Page.NormalItem.Msg
     | AffixMsg View.Affix.ItemMsg
     | SearchMsg Page.Search.Msg
@@ -134,16 +140,35 @@ update msg mmodel =
 updateOk : Msg -> OkModel -> ( OkModel, Cmd Msg )
 updateOk msg model =
     case msg of
+        Noop ->
+            ( model, Cmd.none )
+
         OnUrlChange url ->
             let
                 route =
                     Route.parse url
             in
             routeTo route model
-                |> Tuple.mapSecond (\cmd -> Cmd.batch [ cmd, Ports.urlChange { route = Route.toAnalytics route, path = url.path, query = url.query } ])
+                |> Tuple.mapSecond
+                    (\cmd ->
+                        Cmd.batch
+                            [ cmd
+                            , case route of
+                                Just (Route.Redirect _) ->
+                                    Cmd.none
+
+                                _ ->
+                                    Ports.urlChange { route = Route.toAnalytics route, path = url.path, query = url.query }
+                            ]
+                    )
 
         OnUrlRequest (Browser.Internal url) ->
-            ( model, url |> Url.toString |> Nav.pushUrl model.nav )
+            ( model
+            , Cmd.batch
+                [ url |> Url.toString |> Nav.pushUrl model.nav
+                , Task.perform (always Noop) (Browser.Dom.setViewport 0 0)
+                ]
+            )
 
         OnUrlRequest (Browser.External url) ->
             ( model, Nav.load url )
@@ -187,73 +212,26 @@ viewBody mmodel =
 
                         Just route ->
                             case route of
+                                Route.Redirect _ ->
+                                    -- should never be here, we should've performed the redirect in update/init
+                                    viewNotFound
+
                                 Route.Home ->
                                     Page.Home.view
 
-                                Route.Weapons ->
-                                    Page.NormalItems.viewWeapons model.datamine
-
-                                Route.Shields ->
-                                    Page.NormalItems.viewShields model.datamine
-
-                                Route.Armors ->
-                                    Page.NormalItems.viewArmors model.datamine
-
-                                Route.Accessories ->
-                                    Page.NormalItems.viewAccessories model.datamine
-
                                 Route.NormalItems tags ->
-                                    Page.NormalItems.viewTags model.datamine tags
+                                    Page.NormalItems.view model.datamine tags
 
-                                Route.Weapon name ->
-                                    Page.NormalItem.viewWeapon model name
+                                Route.NormalItem name ->
+                                    Page.NormalItem.view model name
                                         |> Maybe.map (List.map (H.map NormalItemMsg))
                                         |> Maybe.withDefault viewNotFound
-
-                                Route.Shield name ->
-                                    Page.NormalItem.viewShield model name
-                                        |> Maybe.map (List.map (H.map NormalItemMsg))
-                                        |> Maybe.withDefault viewNotFound
-
-                                Route.Armor name ->
-                                    Page.NormalItem.viewArmor model name
-                                        |> Maybe.map (List.map (H.map NormalItemMsg))
-                                        |> Maybe.withDefault viewNotFound
-
-                                Route.Accessory name ->
-                                    Page.NormalItem.viewAccessory model name
-                                        |> Maybe.map (List.map (H.map NormalItemMsg))
-                                        |> Maybe.withDefault viewNotFound
-
-                                Route.UniqueWeapons ->
-                                    Page.UniqueItems.viewWeapons model.datamine
-
-                                Route.UniqueShields ->
-                                    Page.UniqueItems.viewShields model.datamine
-
-                                Route.UniqueArmors ->
-                                    Page.UniqueItems.viewArmors model.datamine
-
-                                Route.UniqueAccessories ->
-                                    Page.UniqueItems.viewAccessories model.datamine
 
                                 Route.UniqueItems tags ->
-                                    Page.UniqueItems.viewTags model.datamine tags
+                                    Page.UniqueItems.view model.datamine tags
 
-                                Route.UniqueWeapon name ->
-                                    Page.UniqueItem.viewWeapon model.datamine name
-                                        |> Maybe.withDefault viewNotFound
-
-                                Route.UniqueShield name ->
-                                    Page.UniqueItem.viewShield model.datamine name
-                                        |> Maybe.withDefault viewNotFound
-
-                                Route.UniqueArmor name ->
-                                    Page.UniqueItem.viewArmor model.datamine name
-                                        |> Maybe.withDefault viewNotFound
-
-                                Route.UniqueAccessory name ->
-                                    Page.UniqueItem.viewAccessory model.datamine name
+                                Route.UniqueItem name ->
+                                    Page.UniqueItem.view model.datamine name
                                         |> Maybe.withDefault viewNotFound
 
                                 Route.Skills ->

@@ -19,24 +19,10 @@ import Url.Parser.Query as Q
 
 type Route
     = Home
-    | Weapons
-    | Shields
-    | Armors
-    | Accessories
     | NormalItems (Maybe String)
-    | Weapon String
-    | Shield String
-    | Armor String
-    | Accessory String
-    | UniqueWeapons
-    | UniqueShields
-    | UniqueArmors
-    | UniqueAccessories
+    | NormalItem String
     | UniqueItems (Maybe String)
-    | UniqueWeapon String
-    | UniqueShield String
-    | UniqueArmor String
-    | UniqueAccessory String
+    | UniqueItem String
     | Skills
     | Skill String
     | Affixes
@@ -48,6 +34,7 @@ type Route
     | Table String
     | Changelog
     | Privacy
+    | Redirect Route
 
 
 parse : Url -> Maybe Route
@@ -59,24 +46,6 @@ parser : P.Parser (Route -> a) a
 parser =
     P.oneOf
         [ P.map Home <| P.top
-        , P.map Weapons <| P.s "loot" </> P.s "weapon"
-        , P.map Shields <| P.s "loot" </> P.s "shield"
-        , P.map Armors <| P.s "loot" </> P.s "armor"
-        , P.map Accessories <| P.s "loot" </> P.s "accessory"
-        , P.map Weapon <| P.s "loot" </> P.s "weapon" </> P.string
-        , P.map Shield <| P.s "loot" </> P.s "shield" </> P.string
-        , P.map Armor <| P.s "loot" </> P.s "armor" </> P.string
-        , P.map Accessory <| P.s "loot" </> P.s "accessory" </> P.string
-        , P.map NormalItems <| P.s "loot" <?> Q.string "keywords"
-        , P.map UniqueWeapons <| P.s "loot" </> P.s "unique" </> P.s "weapon"
-        , P.map UniqueShields <| P.s "loot" </> P.s "unique" </> P.s "shield"
-        , P.map UniqueArmors <| P.s "loot" </> P.s "unique" </> P.s "armor"
-        , P.map UniqueAccessories <| P.s "loot" </> P.s "unique" </> P.s "accessory"
-        , P.map UniqueItems <| P.s "loot" </> P.s "unique" <?> Q.string "keywords"
-        , P.map UniqueWeapon <| P.s "loot" </> P.s "unique" </> P.s "weapon" </> P.string
-        , P.map UniqueShield <| P.s "loot" </> P.s "unique" </> P.s "shield" </> P.string
-        , P.map UniqueArmor <| P.s "loot" </> P.s "unique" </> P.s "armor" </> P.string
-        , P.map UniqueAccessory <| P.s "loot" </> P.s "unique" </> P.s "accessory" </> P.string
         , P.map Skills <| P.s "skill"
         , P.map Skill <| P.s "skill" </> P.string
         , P.map Affixes <| P.s "affix"
@@ -88,68 +57,53 @@ parser =
         , P.map Table <| P.s "table" </> P.string
         , P.map Changelog <| P.s "changelog"
         , P.map Privacy <| P.s "privacy"
+
+        -- legacy routes
+        , P.map (Redirect (NormalItems (Just "weapon"))) <| P.s "loot" </> P.s "weapon"
+        , P.map (Redirect (NormalItems (Just "shield"))) <| P.s "loot" </> P.s "shield"
+        , P.map (Redirect (NormalItems (Just "armor"))) <| P.s "loot" </> P.s "armor"
+        , P.map (Redirect (NormalItems (Just "accessory"))) <| P.s "loot" </> P.s "accessory"
+        , P.map (Redirect << NormalItem) <| P.s "loot" </> P.s "weapon" </> P.string
+        , P.map (Redirect << NormalItem) <| P.s "loot" </> P.s "shield" </> P.string
+        , P.map (Redirect << NormalItem) <| P.s "loot" </> P.s "armor" </> P.string
+        , P.map (Redirect << NormalItem) <| P.s "loot" </> P.s "accessory" </> P.string
+        , P.map (Redirect (UniqueItems (Just "weapon"))) <| P.s "loot" </> P.s "unique" </> P.s "weapon"
+        , P.map (Redirect (UniqueItems (Just "shield"))) <| P.s "loot" </> P.s "unique" </> P.s "shield"
+        , P.map (Redirect (UniqueItems (Just "armor"))) <| P.s "loot" </> P.s "unique" </> P.s "armor"
+        , P.map (Redirect (UniqueItems (Just "accessory"))) <| P.s "loot" </> P.s "unique" </> P.s "accessory"
+        , P.map (Redirect << UniqueItem) <| P.s "loot" </> P.s "unique" </> P.s "weapon" </> P.string
+        , P.map (Redirect << UniqueItem) <| P.s "loot" </> P.s "unique" </> P.s "shield" </> P.string
+        , P.map (Redirect << UniqueItem) <| P.s "loot" </> P.s "unique" </> P.s "armor" </> P.string
+        , P.map (Redirect << UniqueItem) <| P.s "loot" </> P.s "unique" </> P.s "accessory" </> P.string
+
+        -- modern item routes
+        , P.map UniqueItems <| P.s "loot" </> P.s "unique" <?> Q.string "keywords"
+        , P.map UniqueItem <| P.s "loot" </> P.s "unique" </> P.string
+        , P.map NormalItems <| P.s "loot" <?> Q.string "keywords"
+        , P.map NormalItem <| P.s "loot" </> P.string
         ]
 
 
 toPath : Route -> String
 toPath r =
     case r of
+        Redirect next ->
+            toPath next
+
         Home ->
             "/"
-
-        Weapons ->
-            "/loot/weapon"
-
-        Shields ->
-            "/loot/shield"
-
-        Armors ->
-            "/loot/armor"
-
-        Accessories ->
-            "/loot/accessory"
 
         NormalItems _ ->
             "/loot"
 
-        Weapon id ->
-            "/loot/weapon/" ++ id
-
-        Shield id ->
-            "/loot/shield/" ++ id
-
-        Armor id ->
-            "/loot/armor/" ++ id
-
-        Accessory id ->
-            "/loot/accessory/" ++ id
-
-        UniqueWeapons ->
-            "/loot/unique/weapon"
-
-        UniqueShields ->
-            "/loot/unique/shield"
-
-        UniqueArmors ->
-            "/loot/unique/armor"
-
-        UniqueAccessories ->
-            "/loot/unique/accessory"
+        NormalItem id ->
+            "/loot/" ++ id
 
         UniqueItems _ ->
             "/loot/unique"
 
-        UniqueWeapon id ->
-            "/loot/unique/weapon/" ++ id
-
-        UniqueShield id ->
-            "/loot/unique/shield/" ++ id
-
-        UniqueArmor id ->
-            "/loot/unique/armor/" ++ id
-
-        UniqueAccessory id ->
-            "/loot/unique/accessory/" ++ id
+        UniqueItem id ->
+            "/loot/unique/" ++ id
 
         Skills ->
             "/skill"
@@ -214,29 +168,11 @@ toAnalytics mroute =
 
         Just route ->
             case route of
-                Weapon _ ->
-                    toPath <| Weapon "ID"
+                NormalItem _ ->
+                    toPath <| NormalItem "ID"
 
-                Shield _ ->
-                    toPath <| Shield "ID"
-
-                Armor _ ->
-                    toPath <| Armor "ID"
-
-                Accessory _ ->
-                    toPath <| Accessory "ID"
-
-                UniqueWeapon _ ->
-                    toPath <| UniqueWeapon "ID"
-
-                UniqueShield _ ->
-                    toPath <| UniqueShield "ID"
-
-                UniqueArmor _ ->
-                    toPath <| UniqueArmor "ID"
-
-                UniqueAccessory _ ->
-                    toPath <| UniqueAccessory "ID"
+                UniqueItem _ ->
+                    toPath <| UniqueItem "ID"
 
                 Skill _ ->
                     toPath <| Skill "ID"

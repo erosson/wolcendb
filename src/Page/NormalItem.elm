@@ -1,4 +1,4 @@
-module Page.NormalItem exposing (Msg, update, viewAccessory, viewArmor, viewShield, viewWeapon)
+module Page.NormalItem exposing (Msg, update, view)
 
 import Datamine exposing (Datamine)
 import Datamine.GemFamily as GemFamily exposing (GemFamily)
@@ -50,91 +50,14 @@ update msg model =
             { model | filterGemFamilies = model.filterGemFamilies |> Util.toggleSet name }
 
 
-viewWeapon : Model m -> String -> Maybe (List (Html Msg))
-viewWeapon model name =
+view : Model m -> String -> Maybe (List (Html Msg))
+view model name =
     Dict.get (String.toLower name) model.datamine.lootByName
-        |> Maybe.andThen
-            (\item ->
-                case item of
-                    NWeapon i ->
-                        Just <| viewMain model item i
-
-                    _ ->
-                        Nothing
-            )
+        |> Maybe.map (viewMain model)
 
 
-viewShield : Model m -> String -> Maybe (List (Html Msg))
-viewShield model name =
-    Dict.get (String.toLower name) model.datamine.lootByName
-        |> Maybe.andThen
-            (\item ->
-                case item of
-                    NShield i ->
-                        Just <| viewMain model item i
-
-                    _ ->
-                        Nothing
-            )
-
-
-viewArmor : Model m -> String -> Maybe (List (Html Msg))
-viewArmor model name =
-    Dict.get (String.toLower name) model.datamine.lootByName
-        |> Maybe.andThen
-            (\item ->
-                case item of
-                    NArmor i ->
-                        Just <| viewMain model item i
-
-                    _ ->
-                        Nothing
-            )
-
-
-viewAccessory : Model m -> String -> Maybe (List (Html Msg))
-viewAccessory model name =
-    Dict.get (String.toLower name) model.datamine.lootByName
-        |> Maybe.andThen
-            (\item ->
-                case item of
-                    NAccessory i ->
-                        Just <| viewMain model item i
-
-                    _ ->
-                        Nothing
-            )
-
-
-viewBreadcrumb : Datamine -> NormalItem -> Html msg -> Html msg
-viewBreadcrumb dm nitem label =
-    ol [ class "breadcrumb" ] <|
-        a [ class "breadcrumb-item active", Route.href Route.Home ] [ text "Home" ]
-            :: (case nitem of
-                    NWeapon item ->
-                        [ a [ class "breadcrumb-item active", Route.href Route.Weapons ] [ text "Normal Weapons" ]
-                        , a [ class "breadcrumb-item active", Route.href <| Route.Weapon item.name ] [ label ]
-                        ]
-
-                    NShield item ->
-                        [ a [ class "breadcrumb-item active", Route.href Route.Shields ] [ text "Normal Shields" ]
-                        , a [ class "breadcrumb-item active", Route.href <| Route.Shield item.name ] [ label ]
-                        ]
-
-                    NArmor item ->
-                        [ a [ class "breadcrumb-item active", Route.href Route.Armors ] [ text "Normal Armors" ]
-                        , a [ class "breadcrumb-item active", Route.href <| Route.Armor item.name ] [ label ]
-                        ]
-
-                    NAccessory item ->
-                        [ a [ class "breadcrumb-item active", Route.href Route.Accessories ] [ text "Normal Accessories" ]
-                        , a [ class "breadcrumb-item active", Route.href <| Route.Accessory item.name ] [ label ]
-                        ]
-               )
-
-
-viewMain : Model m -> NormalItem -> Item i -> List (Html Msg)
-viewMain m nitem item =
+viewMain : Model m -> NormalItem -> List (Html Msg)
+viewMain m nitem =
     let
         dm =
             m.datamine
@@ -142,18 +65,22 @@ viewMain m nitem item =
         label =
             NormalItem.label dm nitem |> Maybe.withDefault "???" |> text
     in
-    [ viewBreadcrumb dm nitem label
+    [ ol [ class "breadcrumb" ]
+        [ a [ class "breadcrumb-item active", Route.href Route.Home ] [ text "Home" ]
+        , a [ class "breadcrumb-item active", Route.href <| Route.NormalItems Nothing ] [ text "Normal Items" ]
+        , a [ class "breadcrumb-item active", Route.href <| Route.NormalItem <| NormalItem.name nitem ] [ label ]
+        ]
     , div [ class "card" ]
         [ div [ class "card-header" ] [ label ]
         , div [ class "card-body" ]
             [ span [ class "item float-right" ]
                 [ img [ View.Item.imgNormal dm nitem ] []
-                , div [] [ text "[", a [ Route.href <| Route.Source "normal-loot" item.name ] [ text "Source" ], text "]" ]
+                , div [] [ text "[", a [ Route.href <| Route.Source "normal-loot" <| NormalItem.name nitem ] [ text "Source" ], text "]" ]
                 ]
-            , p [] [ text "Level: ", text <| Maybe.Extra.unwrap "-" String.fromInt item.levelPrereq ]
+            , p [] [ text "Level: ", text <| Maybe.Extra.unwrap "-" String.fromInt <| NormalItem.levelPrereq nitem ]
             , ul [ class "list-group affixes" ] (nitem |> NormalItem.baseEffects dm |> List.map (\s -> li [ class "list-group-item" ] [ text s ]))
             , ul [ class "list-group affixes" ] (NormalItem.implicitEffects dm nitem |> List.map (\s -> li [ class "list-group-item" ] [ text s ]))
-            , small [ class "text-muted" ] [ text "Keywords: ", text <| String.join ", " item.keywords ]
+            , small [ class "text-muted" ] [ text "Keywords: ", text <| String.join ", " <| NormalItem.keywords nitem ]
             ]
         ]
     , H.form []
@@ -219,7 +146,7 @@ viewMain m nitem item =
                 )
             ]
         ]
-    , NormalItem.possibleAffixes dm item
+    , NormalItem.possibleAffixes dm nitem
         |> List.filter (\aff -> m.filterItemLevel <= 0 || (m.filterItemLevel >= aff.drop.itemLevel.min && m.filterItemLevel <= aff.drop.itemLevel.max))
         |> List.filter (GemFamily.filterAffix dm m.filterGemFamilies)
         |> View.Affix.viewItem dm m.expandedAffixClasses

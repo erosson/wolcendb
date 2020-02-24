@@ -3,6 +3,18 @@ Changelog
 
 ---
 
+#### 2020-02-24
+- Redesigned the normal loot list.
+  - You can filter the loot list by keyword. There's many links to filtered lists at the top - for example, "two-handed axes" or "heavy helmets".
+  - Each list entry is larger, and shows the item image with its implicit stats.
+  - Weapons, shields, armor, and accessories now have the same URL format. (Old links still work.)
+- Redesigned the unique loot list.
+  - High-level versions of uniques are now grouped with their low-level counterparts.
+  - Changes similar to the normal loot list:
+    - You can filter the loot list by keyword. There's many links to filtered lists at the top - for example, "two-handed axes" or "heavy helmets".
+    - Each list entry is larger, and shows the item image with its implicit stats.
+    - Weapons, shields, armor, and accessories now have the same URL format. (Old links still work.)
+
 #### 2020-02-22
 - Added gem icons for each affix. When crafting, socketed gems influence the odds of each chosen affix - these *gem families* indicate which gems go with each affix.
   - There's no data suggesting that socket type matters
