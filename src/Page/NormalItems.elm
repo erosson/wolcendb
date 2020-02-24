@@ -1,4 +1,4 @@
-module Page.NormalItems exposing (viewAccessories, viewArmors, viewShields, viewWeapons)
+module Page.NormalItems exposing (viewAccessories, viewArmors, viewShields, viewTags, viewWeapons)
 
 import Datamine exposing (Datamine)
 import Datamine.NormalItem as NormalItem exposing (Item, NormalItem(..))
@@ -8,7 +8,29 @@ import Html.Attributes as A exposing (..)
 import Html.Events as E exposing (..)
 import Maybe.Extra
 import Route exposing (Route)
+import Set exposing (Set)
 import View.Item
+
+
+viewTags : Datamine -> Maybe String -> List (Html msg)
+viewTags dm tagStr =
+    let
+        tagSet =
+            tagStr |> Maybe.withDefault "" |> String.split "," |> Set.fromList
+    in
+    viewMain dm
+        { breadcrumb =
+            [ a [ class "breadcrumb-item active", Route.href Route.Home ] [ text "Home" ]
+            , a [ class "breadcrumb-item active", Route.href <| Route.NormalItems tagStr ] [ text "Loot" ]
+            ]
+        , headers =
+            [ th [] [ text "name" ]
+            , th [] [ text "level" ]
+            , th [] [ text "properties" ]
+            , th [] [ text "keywords" ]
+            ]
+        }
+        (dm.loot |> List.filter (NormalItem.keywords >> Set.fromList >> Set.diff tagSet >> Set.isEmpty))
 
 
 viewWeapons : Datamine -> List (Html msg)
@@ -30,7 +52,7 @@ viewWeapons dm =
                 (\nitem ->
                     case nitem of
                         NWeapon i ->
-                            Just ( nitem, i )
+                            Just nitem
 
                         _ ->
                             Nothing
@@ -57,7 +79,7 @@ viewShields dm =
                 (\nitem ->
                     case nitem of
                         NShield i ->
-                            Just ( nitem, i )
+                            Just nitem
 
                         _ ->
                             Nothing
@@ -84,7 +106,7 @@ viewArmors dm =
                 (\nitem ->
                     case nitem of
                         NArmor i ->
-                            Just ( nitem, i )
+                            Just nitem
 
                         _ ->
                             Nothing
@@ -111,7 +133,7 @@ viewAccessories dm =
                 (\nitem ->
                     case nitem of
                         NAccessory i ->
-                            Just ( nitem, i )
+                            Just nitem
 
                         _ ->
                             Nothing
@@ -135,7 +157,7 @@ itemRoute nitem =
             Route.Accessory i.name
 
 
-viewMain : Datamine -> { breadcrumb : List (Html msg), headers : List (Html msg) } -> List ( NormalItem, Item i ) -> List (Html msg)
+viewMain : Datamine -> { breadcrumb : List (Html msg), headers : List (Html msg) } -> List NormalItem -> List (Html msg)
 viewMain dm { breadcrumb, headers } items =
     [ ol [ class "breadcrumb" ] breadcrumb
     , table [ class "table" ]
@@ -143,7 +165,7 @@ viewMain dm { breadcrumb, headers } items =
         , tbody []
             (items
                 |> List.map
-                    (\( nitem, item ) ->
+                    (\nitem ->
                         tr []
                             [ td []
                                 [ a [ Route.href <| itemRoute nitem ]
@@ -151,9 +173,9 @@ viewMain dm { breadcrumb, headers } items =
                                     , NormalItem.label dm nitem |> Maybe.withDefault "???" |> text
                                     ]
                                 ]
-                            , td [] [ text <| Maybe.Extra.unwrap "-" String.fromInt item.levelPrereq ]
+                            , td [] [ text <| Maybe.Extra.unwrap "-" String.fromInt <| NormalItem.levelPrereq nitem ]
                             , td [] (nitem |> NormalItem.baseEffects dm |> List.map (\s -> div [] [ text s ]))
-                            , td [] [ text <| String.join ", " item.keywords ]
+                            , td [] [ text <| String.join ", " <| NormalItem.keywords nitem ]
                             ]
                     )
             )

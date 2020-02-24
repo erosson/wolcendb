@@ -67,6 +67,7 @@ type alias Datamine =
     -- indexes
     , lootByName : Dict String NormalItem
     , uniqueLootByName : Dict String UniqueItem
+    , uniqueLootByNonmaxName : Dict String (List UniqueItem)
     , skillsByUid : Dict String Skill
     , skillASTsByName : Dict String SkillAST
     , skillVariantsByUid : Dict String ( SkillVariant, Skill )
@@ -175,6 +176,10 @@ index raw =
     -- indexes
     , lootByName = raw.loot |> Dict.Extra.fromListBy (NormalItem.name >> String.toLower)
     , uniqueLootByName = raw.uniqueLoot |> Dict.Extra.fromListBy (UniqueItem.name >> String.toLower)
+    , uniqueLootByNonmaxName =
+        raw.uniqueLoot
+            |> Dict.Extra.groupBy (UniqueItem.nonmaxName >> String.toLower)
+            |> Dict.map (\_ -> List.sortBy (UniqueItem.levelPrereq >> Maybe.withDefault 0))
     , skillsByUid = raw.skills |> Dict.Extra.fromListBy (.uid >> String.toLower)
     , skillASTsByName = raw.skillASTs |> Dict.Extra.fromListBy (.name >> String.toLower)
     , skillVariantsByUid = skillVariants |> Dict.Extra.fromListBy (Tuple.first >> .uid >> String.toLower)

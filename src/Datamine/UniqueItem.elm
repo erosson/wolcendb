@@ -7,10 +7,13 @@ module Datamine.UniqueItem exposing
     , defaultEffects
     , implicitAffixes
     , implicitEffects
+    , isNonmax
     , keywords
     , label
+    , levelPrereq
     , lore
     , name
+    , nonmaxName
     , source
     )
 
@@ -95,6 +98,18 @@ type alias UniqueAccessory =
     , lore : Maybe String
     , hudPicture : String
     }
+
+
+{-| High-level uniques are named after the original, with "\_max" at the end
+-}
+nonmaxName : UniqueItem -> String
+nonmaxName =
+    name >> String.replace "_max" ""
+
+
+isNonmax : UniqueItem -> Bool
+isNonmax uitem =
+    name uitem == nonmaxName uitem
 
 
 label : Lang.Datamine d -> UniqueItem -> Maybe String
@@ -270,6 +285,22 @@ name n =
 
         UAccessory i ->
             i.name
+
+
+levelPrereq : UniqueItem -> Maybe Int
+levelPrereq n =
+    case n of
+        UWeapon i ->
+            i.levelPrereq
+
+        UShield i ->
+            i.levelPrereq
+
+        UArmor i ->
+            i.levelPrereq
+
+        UAccessory i ->
+            i.levelPrereq
 
 
 decoder : D.Decoder (List UniqueItem)

@@ -23,6 +23,7 @@ type Route
     | Shields
     | Armors
     | Accessories
+    | NormalItems (Maybe String)
     | Weapon String
     | Shield String
     | Armor String
@@ -31,6 +32,7 @@ type Route
     | UniqueShields
     | UniqueArmors
     | UniqueAccessories
+    | UniqueItems (Maybe String)
     | UniqueWeapon String
     | UniqueShield String
     | UniqueArmor String
@@ -65,10 +67,12 @@ parser =
         , P.map Shield <| P.s "loot" </> P.s "shield" </> P.string
         , P.map Armor <| P.s "loot" </> P.s "armor" </> P.string
         , P.map Accessory <| P.s "loot" </> P.s "accessory" </> P.string
+        , P.map NormalItems <| P.s "loot" <?> Q.string "keywords"
         , P.map UniqueWeapons <| P.s "loot" </> P.s "unique" </> P.s "weapon"
         , P.map UniqueShields <| P.s "loot" </> P.s "unique" </> P.s "shield"
         , P.map UniqueArmors <| P.s "loot" </> P.s "unique" </> P.s "armor"
         , P.map UniqueAccessories <| P.s "loot" </> P.s "unique" </> P.s "accessory"
+        , P.map UniqueItems <| P.s "loot" </> P.s "unique" <?> Q.string "keywords"
         , P.map UniqueWeapon <| P.s "loot" </> P.s "unique" </> P.s "weapon" </> P.string
         , P.map UniqueShield <| P.s "loot" </> P.s "unique" </> P.s "shield" </> P.string
         , P.map UniqueArmor <| P.s "loot" </> P.s "unique" </> P.s "armor" </> P.string
@@ -105,6 +109,9 @@ toPath r =
         Accessories ->
             "/loot/accessory"
 
+        NormalItems _ ->
+            "/loot"
+
         Weapon id ->
             "/loot/weapon/" ++ id
 
@@ -128,6 +135,9 @@ toPath r =
 
         UniqueAccessories ->
             "/loot/unique/accessory"
+
+        UniqueItems _ ->
+            "/loot/unique"
 
         UniqueWeapon id ->
             "/loot/unique/weapon/" ++ id
@@ -180,6 +190,12 @@ toQuery route =
     case route of
         Search query ->
             [ query |> Maybe.map (B.string "q") ] |> List.filterMap identity
+
+        UniqueItems tags ->
+            [ tags |> Maybe.map (B.string "keywords") ] |> List.filterMap identity
+
+        NormalItems tags ->
+            [ tags |> Maybe.map (B.string "keywords") ] |> List.filterMap identity
 
         _ ->
             []

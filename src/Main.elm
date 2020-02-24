@@ -202,6 +202,9 @@ viewBody mmodel =
                                 Route.Accessories ->
                                     Page.NormalItems.viewAccessories model.datamine
 
+                                Route.NormalItems tags ->
+                                    Page.NormalItems.viewTags model.datamine tags
+
                                 Route.Weapon name ->
                                     Page.NormalItem.viewWeapon model name
                                         |> Maybe.map (List.map (H.map NormalItemMsg))
@@ -233,6 +236,9 @@ viewBody mmodel =
 
                                 Route.UniqueAccessories ->
                                     Page.UniqueItems.viewAccessories model.datamine
+
+                                Route.UniqueItems tags ->
+                                    Page.UniqueItems.viewTags model.datamine tags
 
                                 Route.UniqueWeapon name ->
                                     Page.UniqueItem.viewWeapon model.datamine name

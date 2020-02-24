@@ -8,6 +8,7 @@ module Datamine.NormalItem exposing
     , implicitEffects
     , keywords
     , label
+    , levelPrereq
     , name
     , possibleAffixes
     , source
@@ -220,6 +221,22 @@ name n =
 
         NAccessory i ->
             i.name
+
+
+levelPrereq : NormalItem -> Maybe Int
+levelPrereq n =
+    case n of
+        NWeapon i ->
+            i.levelPrereq
+
+        NShield i ->
+            i.levelPrereq
+
+        NArmor i ->
+            i.levelPrereq
+
+        NAccessory i ->
+            i.levelPrereq
 
 
 type alias Datamine d =
