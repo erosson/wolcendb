@@ -13,6 +13,7 @@ import Json.Decode as D
 import Maybe.Extra
 import Page.Affixes
 import Page.Changelog
+import Page.City
 import Page.Gems
 import Page.Home
 import Page.NormalItem
@@ -259,6 +260,10 @@ viewBody mmodel =
 
                                 Route.Reagents ->
                                     Page.Reagents.view model.datamine
+
+                                Route.City name ->
+                                    Page.City.view model.datamine name
+                                        |> Maybe.withDefault viewNotFound
 
                                 Route.Source type_ id ->
                                     Page.Source.view model.datamine type_ id

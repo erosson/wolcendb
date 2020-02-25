@@ -210,6 +210,24 @@ getSource dm type_ id =
                         )
                     )
 
+        "city-reward" ->
+            Dict.get (String.toLower id) dm.cityRewardsByName
+                |> Maybe.map
+                    (\reward ->
+                        let
+                            label =
+                                City.label dm reward |> Maybe.withDefault "???"
+                        in
+                        ( label
+                        , [ reward.source ]
+                        , [ a [ class "breadcrumb-item active" ] [ text "City" ]
+                          , a [ class "breadcrumb-item active" ] [ text "Rewards" ]
+                          , a [ class "breadcrumb-item active" ] [ text label ]
+                          , a [ class "breadcrumb-item active", Route.href <| Route.Source type_ id ] [ text "Source" ]
+                          ]
+                        )
+                    )
+
         _ ->
             Nothing
 

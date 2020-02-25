@@ -304,6 +304,7 @@ dataCityProject dm =
         , "label"
         , "uiLore"
         , "lore"
+        , "outcomes"
         ]
     , rows =
         dm.cityProjects
@@ -318,6 +319,7 @@ dataCityProject dm =
                     , LinesCell <| List.map (String.fromInt << .weight) proj.rewards
                     , LinesCell <| List.map .rewardName proj.rewards
                     , LinesCell <| List.map (Maybe.withDefault "???" << City.label dm << .reward) <| City.projectRewards dm proj
+                    , maybeCell StringCell <| City.projectOutcomes dm proj
                     ]
                 )
     }
@@ -354,10 +356,12 @@ dataCityReward dm =
             |> List.map
                 (\reward ->
                     [ StringCell reward.name
+                    , SourceCell "city-reward" reward.name
                     , StringCell reward.uiName
                     , StringCell reward.uiLore
                     , maybeCell DescCell <| City.label dm reward
                     , maybeCell DescCell <| City.lore dm reward
+                    , LinesCell <| City.rewardToString reward
                     ]
                 )
     }
@@ -370,9 +374,11 @@ dataCityBuilding dm =
         , "uiTitle"
         , "uiLore"
         , "project.name"
+        , "rolledProject.name"
         , "label"
         , "lore"
         , "project.label"
+        , "rolledProject.label"
         ]
     , rows =
         dm.cityBuildings
@@ -382,9 +388,11 @@ dataCityBuilding dm =
                     , StringCell building.uiName
                     , StringCell building.uiLore
                     , LinesCell <| building.projects
+                    , LinesCell <| List.map .projectName building.rolledProjects
                     , maybeCell DescCell <| City.label dm building
                     , maybeCell DescCell <| City.lore dm building
                     , LinesCell <| List.map (Maybe.withDefault "???" << City.label dm) <| City.projects dm building
+                    , LinesCell <| List.map (Maybe.withDefault "???" << City.label dm << .project) <| City.rolledProjects dm building
                     ]
                 )
     }

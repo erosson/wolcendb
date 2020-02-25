@@ -3,6 +3,7 @@ module Datamine.City exposing
     , Category
     , Level
     , Project
+    , ProjectReward
     , ProjectScaling
     , Reward
     , buildingsDecoder
@@ -10,11 +11,14 @@ module Datamine.City exposing
     , label
     , levelsDecoder
     , lore
+    , projectOutcomes
     , projectRewards
     , projectScalingDecoder
     , projects
     , projectsDecoder
+    , rewardToString
     , rewardsDecoder
+    , rolledProjects
     )
 
 import Array exposing (Array)
@@ -24,6 +28,7 @@ import Datamine.Util as Util
 import Dict exposing (Dict)
 import Json.Decode as D
 import Json.Decode.Pipeline as P
+import Regex exposing (Regex)
 import Result.Extra
 
 
@@ -57,6 +62,23 @@ type alias Reward =
     , name : String
     , uiName : String
     , uiLore : String
+    , gold : Maybe RewardCurrency
+    , pa : Maybe RewardCurrency
+    , fixedItems : List RewardFixedItems
+    }
+
+
+type alias RewardCurrency =
+    { min : Int
+    , max : Int
+    , perPlayerLevel : Float
+    }
+
+
+type alias RewardFixedItems =
+    { name : String
+    , min : Int
+    , max : Int
     }
 
 
@@ -113,6 +135,16 @@ projects dm =
     .projects >> List.filterMap (\name -> Dict.get (String.toLower name) dm.cityProjectsByName)
 
 
+rolledProjects : Datamine d -> Building -> List { project : Project, weight : Int, difficulty : String }
+rolledProjects dm =
+    .rolledProjects
+        >> List.filterMap
+            (\r ->
+                Dict.get (String.toLower r.projectName) dm.cityProjectsByName
+                    |> Maybe.map (\p -> { project = p, weight = r.weight, difficulty = r.difficulty })
+            )
+
+
 projectRewards : Datamine d -> Project -> List { weight : Int, reward : Reward }
 projectRewards dm =
     .rewards
@@ -121,6 +153,77 @@ projectRewards dm =
                 Dict.get (String.toLower rewardName) dm.cityRewardsByName
                     |> Maybe.map (\r -> { reward = r, weight = weight })
             )
+
+
+{-| Extract the "outcomes" section of the lore text.
+
+Awkward string processing, but this is the part most folks pay attention to
+
+-}
+projectOutcomes : Datamine d -> Project -> Maybe String
+projectOutcomes dm proj =
+    lore dm proj
+        |> Maybe.andThen
+            (\lore_ ->
+                case String.split "Outcomes:" lore_ of
+                    [ head, tail ] ->
+                        let
+                            out =
+                                tail
+                                    |> Regex.replace htmlTagRegex (always "")
+                                    |> String.replace "\\n" ""
+
+                            -- |> Debug.log proj.name
+                        in
+                        if out == "" then
+                            Nothing
+
+                        else
+                            Just out
+
+                    _ ->
+                        Nothing
+            )
+
+
+htmlTagRegex =
+    Regex.fromString "<[^>]*>" |> Maybe.withDefault Regex.never
+
+
+rewardToString : Reward -> List String
+rewardToString reward =
+    List.filterMap identity
+        [ reward.gold |> Maybe.andThen (rewardCurrencyToString "gold")
+        , reward.pa |> Maybe.andThen (rewardCurrencyToString "primordial affinity")
+        ]
+        ++ (reward.fixedItems |> List.map (\f -> rangeToString f ++ " items: " ++ f.name))
+
+
+rangeToString : { a | min : Int, max : Int } -> String
+rangeToString r =
+    if r.min == r.max then
+        String.fromInt r.min
+
+    else
+        "("
+            ++ String.fromInt r.min
+            ++ " to "
+            ++ String.fromInt r.max
+            ++ ")"
+
+
+rewardCurrencyToString : String -> RewardCurrency -> Maybe String
+rewardCurrencyToString label_ curr =
+    if curr.min == 0 && curr.max == 0 && curr.perPlayerLevel == 0 then
+        Nothing
+
+    else
+        Just <|
+            rangeToString curr
+                ++ " + (playerLevel * "
+                ++ String.fromFloat curr.perPlayerLevel
+                ++ ") "
+                ++ label_
 
 
 projectsDecoder : D.Decoder (List Project)
@@ -182,6 +285,28 @@ rewardsDecoder_ file =
         |> P.requiredAt [ "$", "Name" ] D.string
         |> P.requiredAt [ "$", "UITitle" ] D.string
         |> P.requiredAt [ "$", "UILore" ] D.string
+        |> P.custom
+            (D.succeed RewardCurrency
+                |> P.requiredAt [ "Currency", "0", "$", "Gold_Min" ] Util.intString
+                |> P.requiredAt [ "Currency", "0", "$", "Gold_Max" ] Util.intString
+                |> P.requiredAt [ "Currency", "0", "$", "Gold_PerPlayerLevel" ] Util.floatString
+                |> D.maybe
+            )
+        |> P.custom
+            (D.succeed RewardCurrency
+                |> P.requiredAt [ "Currency", "0", "$", "PA_Min" ] Util.intString
+                |> P.requiredAt [ "Currency", "0", "$", "PA_Max" ] Util.intString
+                |> P.requiredAt [ "Currency", "0", "$", "PA_PerPlayerLevel" ] Util.floatString
+                |> D.maybe
+            )
+        |> P.optionalAt [ "FixedItems" ]
+            (D.succeed RewardFixedItems
+                |> P.requiredAt [ "$", "Name" ] D.string
+                |> P.requiredAt [ "$", "MinItemNumber" ] Util.intString
+                |> P.requiredAt [ "$", "MaxItemNumber" ] Util.intString
+                |> D.list
+            )
+            []
         |> D.list
         |> D.at [ "MetaData", "Reward" ]
 

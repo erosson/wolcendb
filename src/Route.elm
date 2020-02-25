@@ -29,6 +29,7 @@ type Route
     | Gems
     | Passives
     | Reagents
+    | City String
     | Source String String
     | Search (Maybe String)
     | Table String
@@ -52,6 +53,7 @@ parser =
         , P.map Gems <| P.s "gem"
         , P.map Passives <| P.s "passive"
         , P.map Reagents <| P.s "reagent"
+        , P.map City <| P.s "city" </> P.string
         , P.map Source <| P.s "source" </> P.string </> P.string
         , P.map Search <| P.s "search" <?> Q.string "q"
         , P.map Table <| P.s "table" </> P.string
@@ -123,6 +125,9 @@ toPath r =
         Reagents ->
             "/reagent"
 
+        City name ->
+            "/city/" ++ name
+
         Source type_ id ->
             "/source/" ++ type_ ++ "/" ++ id
 
@@ -176,6 +181,9 @@ toAnalytics mroute =
 
                 Skill _ ->
                     toPath <| Skill "ID"
+
+                City _ ->
+                    toPath <| City "ID"
 
                 Source _ _ ->
                     toPath <| Source "TYPE" "ID"
