@@ -58,6 +58,7 @@ type alias OkModel =
     , globalSearchResults : Result String (List SearchResult)
     , filterItemLevel : Int
     , filterGemFamilies : Set String
+    , filterKeywords : Set String
     }
 
 
@@ -90,6 +91,7 @@ init flags url nav =
                     , globalSearchResults = Ok []
                     , filterItemLevel = 0
                     , filterGemFamilies = Set.empty
+                    , filterKeywords = Set.empty
                     }
                         |> routeTo (Route.parse url)
                         |> Tuple.mapFirst Ok
@@ -121,7 +123,8 @@ type Msg
     | OnUrlRequest Browser.UrlRequest
     | Noop
     | NormalItemMsg Page.NormalItem.Msg
-    | AffixMsg View.Affix.ItemMsg
+    | PageAffixesMsg Page.Affixes.Msg
+    | ViewAffixMsg View.Affix.ItemMsg
     | SearchMsg Page.Search.Msg
     | NavMsg View.Nav.Msg
 
@@ -176,7 +179,10 @@ updateOk msg model =
         NormalItemMsg msg_ ->
             ( Page.NormalItem.update msg_ model, Cmd.none )
 
-        AffixMsg msg_ ->
+        PageAffixesMsg msg_ ->
+            ( Page.Affixes.update msg_ model, Cmd.none )
+
+        ViewAffixMsg msg_ ->
             ( View.Affix.update msg_ model, Cmd.none )
 
         SearchMsg msg_ ->
@@ -242,7 +248,8 @@ viewBody mmodel =
                                         |> Maybe.withDefault viewNotFound
 
                                 Route.Affixes ->
-                                    Page.Affixes.view model.datamine
+                                    Page.Affixes.view model
+                                        |> List.map (H.map PageAffixesMsg)
 
                                 Route.Gems ->
                                     Page.Gems.view model.datamine

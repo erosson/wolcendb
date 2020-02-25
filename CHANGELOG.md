@@ -3,6 +3,11 @@ Changelog
 
 ---
 
+#### 2020-02-25
+- Redesigned the affix list.
+  - You can filter affixes by level, gem, or keyword.
+  - Keywords, Sarisel, CraftOnly, and prefix/suffix take up less space.
+
 #### 2020-02-24
 - Redesigned the normal loot list.
   - You can filter the loot list by keyword. There's many links to filtered lists at the top - for example, "two-handed axes" or "heavy helmets".

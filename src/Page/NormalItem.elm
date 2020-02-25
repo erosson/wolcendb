@@ -13,23 +13,18 @@ import Route exposing (Route)
 import Set exposing (Set)
 import Util
 import View.Affix
+import View.AffixFilterForm
 import View.Desc
 import View.Item
 
 
 type alias Model m =
-    { m
-        | datamine : Datamine
-        , expandedAffixClasses : Set String
-        , filterItemLevel : Int
-        , filterGemFamilies : Set String
-    }
+    View.AffixFilterForm.Model m
 
 
 type Msg
     = ItemMsg View.Affix.ItemMsg
-    | InputItemLevel String
-    | InputGemFamily String
+    | FormMsg View.AffixFilterForm.Msg
 
 
 update : Msg -> Model m -> Model m
@@ -38,16 +33,8 @@ update msg model =
         ItemMsg msg_ ->
             View.Affix.update msg_ model
 
-        InputItemLevel s ->
-            case String.toInt s of
-                Nothing ->
-                    model
-
-                Just i ->
-                    { model | filterItemLevel = i }
-
-        InputGemFamily name ->
-            { model | filterGemFamilies = model.filterGemFamilies |> Util.toggleSet name }
+        FormMsg msg_ ->
+            View.AffixFilterForm.update msg_ model
 
 
 view : Model m -> String -> Maybe (List (Html Msg))
@@ -83,72 +70,10 @@ viewMain m nitem =
             , small [ class "text-muted" ] [ text "Keywords: ", text <| String.join ", " <| NormalItem.keywords nitem ]
             ]
         ]
-    , H.form []
-        [ div [ class "form-group form-row" ]
-            [ H.label
-                [ class "col-sm-3"
-                , style "text-align" "right"
-                , for "affix-filter-itemlevel"
-                ]
-                [ text "Show only affixes for item level " ]
-            , input
-                [ id "affix-filter-itemlevel"
-                , type_ "number"
-                , class "col-sm-2 form-control"
-                , A.min "0"
-                , A.max "200"
-                , value <|
-                    if m.filterItemLevel == 0 then
-                        ""
-
-                    else
-                        String.fromInt m.filterItemLevel
-                , onInput InputItemLevel
-                ]
-                []
-            , div [ class "col", classList [ ( "invisible", m.filterItemLevel == 0 ) ] ]
-                [ text ", or "
-                , button
-                    [ type_ "button"
-                    , class "btn btn-outline-dark"
-                    , onClick <| InputItemLevel "0"
-                    ]
-                    [ text "Show affixes for all item levels" ]
-                ]
-            ]
-        , div [ class "form-group form-row" ]
-            [ div
-                [ class "col-sm-3"
-                , style "text-align" "right"
-                ]
-                [ text "Show only affixes of gem families " ]
-            , div [ class "col" ]
-                (dm.gemFamilies
-                    |> List.map
-                        (\fam ->
-                            let
-                                id =
-                                    "affix-filter-" ++ fam.gemFamilyId
-                            in
-                            div [ class "form-check form-check-inline" ]
-                                [ input
-                                    [ class "form-check-input"
-                                    , A.id id
-                                    , type_ "checkbox"
-                                    , onCheck <| always <| InputGemFamily fam.gemFamilyId
-                                    ]
-                                    []
-                                , H.label [ class "form-check-label", for id ]
-                                    [ img [ class "gem-icon", src <| GemFamily.img dm fam ] []
-                                    ]
-                                ]
-                        )
-                )
-            ]
-        ]
+    , View.AffixFilterForm.viewLevelForm m |> H.map FormMsg
+    , View.AffixFilterForm.viewGemForm m |> H.map FormMsg
     , NormalItem.possibleAffixes dm nitem
-        |> List.filter (\aff -> m.filterItemLevel <= 0 || (m.filterItemLevel >= aff.drop.itemLevel.min && m.filterItemLevel <= aff.drop.itemLevel.max))
-        |> List.filter (GemFamily.filterAffix dm m.filterGemFamilies)
+        |> List.filter (View.AffixFilterForm.isVisible m)
         |> View.Affix.viewItem dm m.expandedAffixClasses
         |> div []
         |> H.map ItemMsg

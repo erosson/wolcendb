@@ -6,6 +6,7 @@ module Datamine.NormalItem exposing
     , decoder
     , implicitAffixes
     , implicitEffects
+    , isKeywordAffix
     , keywords
     , label
     , levelPrereq
@@ -265,22 +266,23 @@ seems to yield decent results, and I'm not aware of any counterexamples:
 possibleAffixes : Datamine d -> NormalItem -> List MagicAffix
 possibleAffixes dm item =
     let
-        itemKeywords : Set String
         itemKeywords =
             Set.fromList <| keywords item
+    in
+    dm.affixes.magic |> List.filter (isKeywordAffix itemKeywords)
 
+
+isKeywordAffix : Set String -> MagicAffix -> Bool
+isKeywordAffix itemKeywords affix =
+    let
         isItemKeyword : String -> Bool
         isItemKeyword k =
             Set.member k itemKeywords
     in
-    dm.affixes.magic
-        |> List.filter
-            (\affix ->
-                List.all isItemKeyword affix.drop.mandatoryKeywords
-                    && (List.any isItemKeyword affix.drop.optionalKeywords
-                            || (affix.drop.optionalKeywords == [])
-                       )
-            )
+    List.all isItemKeyword affix.drop.mandatoryKeywords
+        && (List.any isItemKeyword affix.drop.optionalKeywords
+                || (affix.drop.optionalKeywords == [])
+           )
 
 
 decoder : D.Decoder (List NormalItem)

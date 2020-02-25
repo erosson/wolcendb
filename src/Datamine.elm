@@ -75,6 +75,7 @@ type alias Datamine =
     , gemsByName : Dict String Gem
     , nonmagicAffixesById : Dict String NonmagicAffix
     , magicAffixesById : Dict String MagicAffix
+    , magicAffixesKeywords : List String
     , passivesByName : Dict String Passive
     , passiveTreesByName : Dict String PassiveTree
     , passiveTreeEntries : List ( PassiveTreeEntry, Passive, PassiveTree )
@@ -187,6 +188,10 @@ index raw =
     , gemsByName = raw.gems |> Dict.Extra.fromListBy (.name >> String.toLower)
     , nonmagicAffixesById = raw.affixes.nonmagic |> Dict.Extra.fromListBy (.affixId >> String.toLower)
     , magicAffixesById = raw.affixes.magic |> Dict.Extra.fromListBy (.affixId >> String.toLower)
+    , magicAffixesKeywords =
+        raw.affixes.magic
+            |> List.concatMap (\a -> a.drop.mandatoryKeywords ++ a.drop.optionalKeywords)
+            |> List.Extra.unique
     , passivesByName = passivesByName
     , passiveTreesByName = raw.passiveTrees |> Dict.Extra.fromListBy (.name >> String.toLower)
     , passiveTreeEntries = passiveTreeEntries

@@ -122,7 +122,7 @@ viewItem dm expandeds affixes =
     --    ]
     [ div [ class "row" ]
         [ div [ class "col-sm" ]
-            [ viewItemAffixes "Magic affixes" dm expandeds naturals
+            [ viewItemAffixes "Magic affixes [click to expand]" dm expandeds naturals
             , viewItemAffixes "Sarisel affixes" dm expandeds sarisels
             ]
         , div [ class "col-sm" ]
@@ -182,7 +182,8 @@ viewItemAffixClass dm totalWeight expandeds ( name, affixes ) =
                     |> List.concatMap .effects
                     |> viewItemAffixClassSummary dm totalWeight expanded
                     |> div
-                        [ title <| "Affix class: " ++ name
+                        [ class "expand-affix-class"
+                        , title <| "Affix class: " ++ name ++ " \nNo more than one affix from the same class may appear on an item"
                         , onClick <| Expand name
                         ]
                 , div [ style "clear" "right" ] []
