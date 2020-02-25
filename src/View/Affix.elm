@@ -1,6 +1,8 @@
 module View.Affix exposing
     ( ItemMsg(..)
+    , affixesByClass
     , formatRarity
+    , summarizeEffects
     , update
     , viewAffix
     , viewAffixes
@@ -131,8 +133,10 @@ viewItem dm expandeds affixes =
     ]
 
 
-viewItemAffixes : String -> Datamine -> Set String -> List MagicAffix -> Html ItemMsg
-viewItemAffixes title dm expandeds affixes =
+{-| Group affixes by affix-class, with minimal order changes
+-}
+affixesByClass : List MagicAffix -> List ( String, List MagicAffix )
+affixesByClass affixes =
     let
         classOrId : MagicAffix -> String
         classOrId a =
@@ -141,23 +145,30 @@ viewItemAffixes title dm expandeds affixes =
         byClass =
             affixes |> Dict.Extra.groupBy classOrId
 
+        classOrder : List String
         classOrder =
             affixes |> List.map classOrId |> List.Extra.unique
-
-        totalWeight =
-            affixes |> List.filter (\a -> not a.drop.sarisel) |> List.map (\a -> a.drop.frequency) |> List.sum
     in
+    classOrder |> List.filterMap (\c -> Dict.get c byClass |> Maybe.map (Tuple.pair c))
+
+
+viewItemAffixes : String -> Datamine -> Set String -> List MagicAffix -> Html ItemMsg
+viewItemAffixes title dm expandeds affixes =
     if affixes == [] then
         div [] []
 
     else
+        let
+            classes =
+                affixesByClass affixes
+
+            totalWeight =
+                affixes |> List.filter (\a -> not a.drop.sarisel) |> List.map (\a -> a.drop.frequency) |> List.sum
+        in
         div [ class "card" ]
             [ div [ class "card-header" ] [ text title ]
             , ul [ class "list-group list-group-flush" ]
-                (classOrder
-                    |> List.filterMap (\c -> Dict.get c byClass |> Maybe.map (Tuple.pair c))
-                    |> List.map (viewItemAffixClass dm totalWeight expandeds >> li [ class "list-group-item py-1" ])
-                )
+                (classes |> List.map (viewItemAffixClass dm totalWeight expandeds >> li [ class "list-group-item py-1" ]))
             ]
 
 

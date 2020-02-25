@@ -5,6 +5,7 @@ Changelog
 
 #### 2020-02-25
 - Redesigned the affix list.
+  - Affixes are now grouped by class.
   - You can filter affixes by level, gem, or keyword.
   - Keywords, Sarisel, CraftOnly, and prefix/suffix take up less space.
 
