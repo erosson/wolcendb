@@ -1,4 +1,4 @@
-module Page.Skill exposing (view)
+module Page.Skill exposing (view, viewTitle)
 
 import Datamine exposing (Datamine)
 import Datamine.Skill as Skill exposing (Skill)
@@ -11,6 +11,13 @@ import Maybe.Extra
 import Route exposing (Route)
 import View.Desc
 import View.Skill
+
+
+viewTitle : Datamine -> String -> String
+viewTitle dm name =
+    Dict.get (String.toLower name) dm.skillsByUid
+        |> Maybe.andThen (Skill.label dm)
+        |> Maybe.withDefault ""
 
 
 view : Datamine -> String -> Maybe (List (Html msg))

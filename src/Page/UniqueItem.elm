@@ -1,4 +1,4 @@
-module Page.UniqueItem exposing (view)
+module Page.UniqueItem exposing (view, viewTitle)
 
 import Datamine exposing (Datamine)
 import Datamine.UniqueItem as UniqueItem exposing (UItem, UniqueItem(..))
@@ -11,6 +11,13 @@ import Route exposing (Route)
 import View.Affix
 import View.Desc
 import View.Item
+
+
+viewTitle : Datamine -> String -> String
+viewTitle dm name =
+    Dict.get (String.toLower name) dm.uniqueLootByName
+        |> Maybe.andThen (UniqueItem.label dm)
+        |> Maybe.withDefault ""
 
 
 view : Datamine -> String -> Maybe (List (Html msg))

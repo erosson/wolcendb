@@ -207,7 +207,75 @@ updateOk msg model =
 
 view : Model -> Browser.Document Msg
 view model =
-    { title = "WolcenDB", body = viewBody model }
+    { title = viewTitle model, body = viewBody model }
+
+
+viewTitle : Model -> String
+viewTitle mmodel =
+    case mmodel of
+        Err err ->
+            "WolcenDB"
+
+        Ok model ->
+            case model.route of
+                Nothing ->
+                    "WolcenDB"
+
+                Just route ->
+                    case route of
+                        Route.Redirect _ ->
+                            "WolcenDB"
+
+                        Route.Home ->
+                            "WolcenDB: a Wolcen item, skill, and magic affix open-source database"
+
+                        Route.NormalItems _ ->
+                            "WolcenDB: normal item list"
+
+                        Route.NormalItem name ->
+                            "WolcenDB: normal item: " ++ Page.NormalItem.viewTitle model.datamine name
+
+                        Route.UniqueItems _ ->
+                            "WolcenDB: unique item list"
+
+                        Route.UniqueItem name ->
+                            "WolcenDB: unique item: " ++ Page.UniqueItem.viewTitle model.datamine name
+
+                        Route.Skills ->
+                            "WolcenDB: skill list"
+
+                        Route.Skill name ->
+                            "WolcenDB: skill: " ++ Page.Skill.viewTitle model.datamine name
+
+                        Route.Affixes ->
+                            "WolcenDB: magic affix modifier list"
+
+                        Route.Gems ->
+                            "WolcenDB: gem list"
+
+                        Route.Passives ->
+                            "WolcenDB: passive skill tree node list"
+
+                        Route.Reagents ->
+                            "WolcenDB: crafting reagents list"
+
+                        Route.City _ ->
+                            "WolcenDB: endgame city rewards list"
+
+                        Route.Source _ _ ->
+                            "WolcenDB: view xml source file"
+
+                        Route.Search _ ->
+                            "WolcenDB: search"
+
+                        Route.Table _ ->
+                            "WolcenDB: raw tabular data"
+
+                        Route.Changelog ->
+                            "WolcenDB: changelog"
+
+                        Route.Privacy ->
+                            "WolcenDB: privacy"
 
 
 viewBody : Model -> List (Html Msg)

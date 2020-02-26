@@ -1,4 +1,4 @@
-module Page.NormalItem exposing (Msg, update, view)
+module Page.NormalItem exposing (Msg, update, view, viewTitle)
 
 import Datamine exposing (Datamine)
 import Datamine.GemFamily as GemFamily exposing (GemFamily)
@@ -35,6 +35,13 @@ update msg model =
 
         FormMsg msg_ ->
             View.AffixFilterForm.update msg_ model
+
+
+viewTitle : Datamine -> String -> String
+viewTitle dm name =
+    Dict.get (String.toLower name) dm.lootByName
+        |> Maybe.andThen (NormalItem.label dm)
+        |> Maybe.withDefault ""
 
 
 view : Model m -> String -> Maybe (List (Html Msg))
