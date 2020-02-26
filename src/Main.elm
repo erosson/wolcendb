@@ -60,6 +60,7 @@ type alias OkModel =
     , filterItemLevel : Int
     , filterGemFamilies : Set String
     , filterKeywords : Set String
+    , cityPlayerLevel : Int
     }
 
 
@@ -93,6 +94,7 @@ init flags url nav =
                     , filterItemLevel = 0
                     , filterGemFamilies = Set.empty
                     , filterKeywords = Set.empty
+                    , cityPlayerLevel = 0
                     }
                         |> routeTo (Route.parse url)
                         |> Tuple.mapFirst Ok
@@ -127,6 +129,7 @@ type Msg
     | PageAffixesMsg Page.Affixes.Msg
     | ViewAffixMsg View.Affix.ItemMsg
     | SearchMsg Page.Search.Msg
+    | CityMsg Page.City.Msg
     | NavMsg View.Nav.Msg
 
 
@@ -189,6 +192,9 @@ updateOk msg model =
         SearchMsg msg_ ->
             Page.Search.update msg_ model
                 |> Tuple.mapSecond (Cmd.map SearchMsg)
+
+        CityMsg msg_ ->
+            ( Page.City.update msg_ model, Cmd.none )
 
         NavMsg msg_ ->
             View.Nav.update msg_ model
@@ -262,8 +268,9 @@ viewBody mmodel =
                                     Page.Reagents.view model.datamine
 
                                 Route.City name ->
-                                    Page.City.view model.datamine name
+                                    Page.City.view model name
                                         |> Maybe.withDefault viewNotFound
+                                        |> List.map (H.map CityMsg)
 
                                 Route.Source type_ id ->
                                     Page.Source.view model.datamine type_ id

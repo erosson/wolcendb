@@ -8,6 +8,7 @@ Changelog
   - Affixes are now grouped by class.
   - You can filter affixes by level, gem, or keyword.
   - Keywords, Sarisel, CraftOnly, and prefix/suffix take up less space.
+- Added Seeker and Diplomat city mission rewards.
 
 #### 2020-02-24
 - Redesigned the normal loot list.

@@ -201,7 +201,7 @@ getSource dm type_ id =
                                 City.label dm proj |> Maybe.withDefault "???"
                         in
                         ( label
-                        , [ proj.source ]
+                        , proj.source :: (City.projectRewards dm proj |> List.map (.reward >> .source))
                         , [ a [ class "breadcrumb-item active" ] [ text "City" ]
                           , a [ class "breadcrumb-item active" ] [ text "Projects" ]
                           , a [ class "breadcrumb-item active" ] [ text label ]

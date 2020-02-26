@@ -1,4 +1,4 @@
-module Page.City exposing (view)
+module Page.City exposing (Msg, update, view)
 
 import Datamine exposing (Datamine)
 import Datamine.City as City
@@ -13,15 +13,42 @@ import View.Desc
 import View.Item
 
 
-view : Datamine -> String -> Maybe (List (Html msg))
-view dm name =
-    Dict.get name dm.cityBuildingsByName
-        |> Maybe.map (viewMain dm)
+type Msg
+    = InputPlayerLevel String
 
 
-viewMain : Datamine -> City.Building -> List (Html msg)
-viewMain dm building =
+type alias Model m =
+    { m | datamine : Datamine, cityPlayerLevel : Int }
+
+
+update : Msg -> Model m -> Model m
+update msg model =
+    case msg of
+        InputPlayerLevel str ->
+            if str == "" then
+                { model | cityPlayerLevel = 0 }
+
+            else
+                case String.toInt str of
+                    Nothing ->
+                        model
+
+                    Just n ->
+                        { model | cityPlayerLevel = clamp 0 90 n }
+
+
+view : Model m -> String -> Maybe (List (Html Msg))
+view model name =
+    Dict.get name model.datamine.cityBuildingsByName
+        |> Maybe.map (viewMain model)
+
+
+viewMain : Model m -> City.Building -> List (Html Msg)
+viewMain model building =
     let
+        dm =
+            model.datamine
+
         label =
             City.label dm building |> Maybe.withDefault "???"
     in
@@ -33,7 +60,22 @@ viewMain dm building =
     , H.form []
         [ div [ class "form-group row" ]
             [ H.label [ class "col-sm-3" ] [ text "Player level" ]
-            , div [ class "col-sm-9" ] [ input [ class "form-control", type_ "number" ] [] ]
+            , div [ class "col-sm-9" ]
+                [ input
+                    [ class "form-control"
+                    , type_ "number"
+                    , A.min "0"
+                    , A.max "90"
+                    , value <|
+                        if model.cityPlayerLevel == 0 then
+                            ""
+
+                        else
+                            String.fromInt model.cityPlayerLevel
+                    , onInput InputPlayerLevel
+                    ]
+                    []
+                ]
             ]
         ]
     , ul [ class "list-group" ]
@@ -50,16 +92,19 @@ viewMain dm building =
                                 ]
                             ]
                         , div [ class "mx-2" ] [ City.projectOutcomes dm r.project |> Maybe.withDefault "???" |> text ]
-                        , ul [ class "card-body" ] (viewRewards dm <| City.projectRewards dm r.project)
+                        , ul [ class "card-body" ] (viewRewards model <| City.projectRewards dm r.project)
                         ]
                 )
         )
     ]
 
 
-viewRewards : Datamine -> List { weight : Int, reward : City.Reward } -> List (Html msg)
-viewRewards dm rolls =
+viewRewards : Model m -> List { weight : Int, reward : City.Reward } -> List (Html msg)
+viewRewards model rolls =
     let
+        dm =
+            model.datamine
+
         totalWeight =
             rolls |> List.map .weight |> List.sum
     in
@@ -68,12 +113,13 @@ viewRewards dm rolls =
             (\roll ->
                 li [ class "list-group-item card p-0" ]
                     [ div [ class "card-header p-1" ]
-                        [ text <| Maybe.withDefault "???" <| City.label dm roll.reward
-                        , span [ class "badge float-right" ] [ text "[", a [ Route.href <| Route.Source "city-reward" roll.reward.name ] [ text "Source" ], text "]" ]
+                        [ span [ title roll.reward.name ] [ text <| Maybe.withDefault "???" <| City.label dm roll.reward ]
+
+                        -- , span [ class "badge float-right" ] [ text "[", a [ Route.href <| Route.Source "city-reward" roll.reward.name ] [ text "Source" ], text "]" ]
                         , viewWeight totalWeight roll
                         ]
                     , div [ class "card-body p-1" ]
-                        (case City.rewardToString roll.reward of
+                        (case City.rewardFormat { playerLevel = model.cityPlayerLevel } roll.reward of
                             [] ->
                                 [ text "No rewards" ]
 

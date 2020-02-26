@@ -46,7 +46,7 @@ update msg model =
                         model
 
                     Just i ->
-                        { model | filterItemLevel = i }
+                        { model | filterItemLevel = clamp 0 200 i }
 
         InputGemFamily name ->
             { model | filterGemFamilies = model.filterGemFamilies |> Util.toggleSet name }

@@ -16,6 +16,7 @@ module Datamine.City exposing
     , projectScalingDecoder
     , projects
     , projectsDecoder
+    , rewardFormat
     , rewardToString
     , rewardsDecoder
     , rolledProjects
@@ -190,26 +191,59 @@ htmlTagRegex =
     Regex.fromString "<[^>]*>" |> Maybe.withDefault Regex.never
 
 
+rewardFormat : { playerLevel : Int } -> Reward -> List String
+rewardFormat { playerLevel } reward =
+    if playerLevel == 0 then
+        rewardToString reward
+
+    else
+        List.filterMap identity
+            [ reward.gold |> Maybe.andThen (rewardCurrencyFormat "Gold" playerLevel)
+            , reward.pa |> Maybe.andThen (rewardCurrencyFormat "Primordial affinity" playerLevel)
+            ]
+            ++ (reward.fixedItems |> List.map (\f -> rangeToString { parens = False } f ++ " items: " ++ f.name))
+
+
+rewardCurrencyFormat : String -> Int -> RewardCurrency -> Maybe String
+rewardCurrencyFormat label_ playerLevel curr =
+    if curr.min == 0 && curr.max == 0 && curr.perPlayerLevel == 0 then
+        Nothing
+
+    else
+        Just <|
+            label_
+                ++ ": "
+                ++ rangeToString { parens = False }
+                    { min = curr.min + round (toFloat playerLevel * curr.perPlayerLevel)
+                    , max = curr.max + round (toFloat playerLevel * curr.perPlayerLevel)
+                    }
+
+
 rewardToString : Reward -> List String
 rewardToString reward =
     List.filterMap identity
-        [ reward.gold |> Maybe.andThen (rewardCurrencyToString "gold")
-        , reward.pa |> Maybe.andThen (rewardCurrencyToString "primordial affinity")
+        [ reward.gold |> Maybe.andThen (rewardCurrencyToString "Gold")
+        , reward.pa |> Maybe.andThen (rewardCurrencyToString "Primordial affinity")
         ]
-        ++ (reward.fixedItems |> List.map (\f -> rangeToString f ++ " items: " ++ f.name))
+        ++ (reward.fixedItems |> List.map (\f -> "Items: " ++ rangeToString { parens = False } f ++ " (" ++ f.name ++ ")"))
 
 
-rangeToString : { a | min : Int, max : Int } -> String
-rangeToString r =
+rangeToString : { parens : Bool } -> { a | min : Int, max : Int } -> String
+rangeToString { parens } r =
     if r.min == r.max then
         String.fromInt r.min
 
-    else
+    else if parens then
         "("
             ++ String.fromInt r.min
             ++ " to "
             ++ String.fromInt r.max
             ++ ")"
+
+    else
+        String.fromInt r.min
+            ++ " to "
+            ++ String.fromInt r.max
 
 
 rewardCurrencyToString : String -> RewardCurrency -> Maybe String
@@ -219,11 +253,12 @@ rewardCurrencyToString label_ curr =
 
     else
         Just <|
-            rangeToString curr
+            label_
+                ++ ": "
+                ++ rangeToString { parens = True } curr
                 ++ " + (playerLevel * "
                 ++ String.fromFloat curr.perPlayerLevel
-                ++ ") "
-                ++ label_
+                ++ ")"
 
 
 projectsDecoder : D.Decoder (List Project)
