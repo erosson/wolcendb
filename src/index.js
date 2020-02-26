@@ -14,17 +14,43 @@ const app = Elm.Main.init({
 analytics(app)
 
 Promise.all([
-  fetch('/all.json'),
-  fetch('/searchIndex.json').then(res => res.json()),
+  fetch('/all.json').then(res => ProgressResponse(res, {onProgress: console.log}).json()),
+  fetch('/searchIndex.json').then(res => ProgressResponse(res, {onProgress: console.log}).json()),
 ])
 .then(([datamine, searchIndex]) => {
-  const [d1, d2] = datamine.body.tee()
-  console.log(d1, d2)
   app.ports.loadAssets.send({datamine, searchIndex})
 })
 
-function ProgressResponse(response, onProgress) {
+function ProgressResponse(response, {onProgress}) {
   // thanks, https://github.com/AnthumChris/fetch-progress-indicators/blob/master/fetch-basic/supported-browser.js
+  const contentLength = response.headers.get('content-length')
+  console.log([...response.headers.keys()], contentLength)
+  let total = parseInt(contentLength, 10)
+  let loaded = 0
+  return new Response(
+    new ReadableStream({
+      start(controller) {
+        const reader = response.body.getReader()
+        read()
+
+        function read() {
+          reader.read().then(({done, value}) => {
+            if (done) {
+              return controller.close()
+            }
+            loaded += value.byteLength;
+            onProgress({loaded, total})
+            controller.enqueue(value)
+            read()
+          })
+          .catch(error => {
+            console.error(error)
+            controller.error(error)
+          })
+        }
+      }
+    })
+  )
 }
 
 // If you want your app to work offline and load faster, you can change
