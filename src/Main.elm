@@ -227,16 +227,16 @@ viewTitle mmodel =
                             "WolcenDB"
 
                         Route.Home ->
-                            "WolcenDB: a Wolcen item, skill, and magic affix open-source database"
+                            "WolcenDB: a Wolcen item, skill, and magic affix database"
 
-                        Route.NormalItems _ ->
-                            "WolcenDB: normal item list"
+                        Route.NormalItems kws ->
+                            "WolcenDB: normal item list" ++ Maybe.Extra.unwrap "" ((++) ": ") kws
 
                         Route.NormalItem name ->
                             "WolcenDB: normal item: " ++ Page.NormalItem.viewTitle model.datamine name
 
-                        Route.UniqueItems _ ->
-                            "WolcenDB: unique item list"
+                        Route.UniqueItems kws ->
+                            "WolcenDB: unique item list" ++ Maybe.Extra.unwrap "" ((++) ": ") kws
 
                         Route.UniqueItem name ->
                             "WolcenDB: unique item: " ++ Page.UniqueItem.viewTitle model.datamine name
@@ -248,19 +248,19 @@ viewTitle mmodel =
                             "WolcenDB: skill: " ++ Page.Skill.viewTitle model.datamine name
 
                         Route.Affixes ->
-                            "WolcenDB: magic affix modifier list"
+                            "WolcenDB: magic affixes and modifiers"
 
                         Route.Gems ->
-                            "WolcenDB: gem list"
+                            "WolcenDB: gems"
 
                         Route.Passives ->
-                            "WolcenDB: passive skill tree node list"
+                            "WolcenDB: passive skill tree nodes"
 
                         Route.Reagents ->
-                            "WolcenDB: crafting reagents list"
+                            "WolcenDB: crafting reagents"
 
                         Route.City _ ->
-                            "WolcenDB: endgame city rewards list"
+                            "WolcenDB: endgame city rewards"
 
                         Route.Source _ _ ->
                             "WolcenDB: view xml source file"
