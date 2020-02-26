@@ -13,10 +13,17 @@ app.ports.stderr.subscribe(err => {
   console.error(err.slice(-10000))
   process.exit(1)
 })
-app.ports.stdout.subscribe(out => {
+app.ports.stdout.subscribe(searchIndex => {
+  const searchIndexStr = JSON.stringify(searchIndex)
+  const datamineStr = JSON.stringify(datamine)
+  const sizes = {
+    searchIndex: searchIndexStr.length,
+    datamine: datamineStr.length,
+  }
   Promise.all([
-    promisify(fs.writeFile)(__dirname + '/../public/searchIndex.json', JSON.stringify(out)),
-    promisify(fs.writeFile)(__dirname + '/../public/all.json', JSON.stringify(datamine)),
+    promisify(fs.writeFile)(__dirname + '/../public/searchIndex.json', searchIndexStr),
+    promisify(fs.writeFile)(__dirname + '/../public/datamine.json', datamineStr),
+    promisify(fs.writeFile)(__dirname + '/../datamine/sizes.json', JSON.stringify(sizes)),
   ])
   .then(() => process.exit(0))
   .catch(err => {

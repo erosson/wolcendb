@@ -322,12 +322,7 @@ viewWeights totalWeight affixes =
 
     else
         span [ title <| String.fromInt w ++ "/" ++ String.fromInt totalWeight ]
-            [ text <| percent <| toFloat w / toFloat totalWeight ]
-
-
-percent : Float -> String
-percent p =
-    (p * 100 |> String.fromFloat |> String.left 5) ++ "%"
+            [ text <| Util.percent <| toFloat w / toFloat totalWeight ]
 
 
 formatRarity : Rarity -> String

@@ -8,6 +8,7 @@ import Html.Attributes as A exposing (..)
 import Html.Events as E exposing (..)
 import Maybe.Extra
 import Route exposing (Route)
+import Util
 import View.Affix
 import View.Desc
 import View.Item
@@ -131,9 +132,4 @@ viewWeight totalWeight roll =
 
     else
         span [ class "badge float-right", title <| String.fromInt roll.weight ++ "/" ++ String.fromInt totalWeight ]
-            [ text <| percent <| toFloat roll.weight / toFloat totalWeight ]
-
-
-percent : Float -> String
-percent p =
-    (p * 100 |> String.fromFloat |> String.left 5) ++ "%"
+            [ text <| Util.percent <| toFloat roll.weight / toFloat totalWeight ]

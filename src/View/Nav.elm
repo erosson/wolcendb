@@ -1,4 +1,4 @@
-module View.Nav exposing (Msg, update, view)
+module View.Nav exposing (Msg, update, view, viewNoSearchbar)
 
 import Browser.Navigation as Nav
 import Datamine exposing (Datamine)
@@ -33,6 +33,16 @@ type alias Model m =
 
 view : Model m -> Html Msg
 view m =
+    viewMain (viewSearchbar m)
+
+
+viewNoSearchbar : Html msg
+viewNoSearchbar =
+    viewMain (span [] [])
+
+
+viewMain : Html msg -> Html msg
+viewMain searchbar =
     -- https://getbootstrap.com/docs/4.4/components/navbar/
     div [ class "navbar navbar-expand-sm navbar-light bg-light" ]
         [ a [ class "navbar-brand", href "/" ] [ text "WolcenDB" ]
@@ -45,22 +55,24 @@ view m =
             [ span [ class "navbar-toggler-icon" ] [] ]
         , div [ id "navbarLinks", class "collapse navbar-collapse" ]
             -- "mr-auto" maximizes the margin, effectively right-aligning the search bar
-            [ ul [ class "navbar-nav mr-auto" ]
-                []
-            , H.form [ class "form-inline", onSubmit SearchSubmit ]
-                [ input
-                    [ class "form-control"
-                    , type_ "search"
-                    , placeholder "Search"
-                    , value m.globalSearch
-                    , onInput SearchInput
-                    ]
-                    []
-                , button [ class "btn btn-outline-primary", type_ "submit" ] [ text "Search" ]
-                ]
-
-            -- [ li [ class "nav-item" ] [ a [ class "nav-link", href "/#TODO" ] [ text "Simulator" ] ]
+            [ ul [ class "navbar-nav mr-auto" ] []
+            , searchbar
             ]
+        ]
+
+
+viewSearchbar : Model m -> Html Msg
+viewSearchbar m =
+    H.form [ class "form-inline", onSubmit SearchSubmit ]
+        [ input
+            [ class "form-control"
+            , type_ "search"
+            , placeholder "Search"
+            , value m.globalSearch
+            , onInput SearchInput
+            ]
+            []
+        , button [ class "btn btn-outline-primary", type_ "submit" ] [ text "Search" ]
         ]
 
 

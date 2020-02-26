@@ -3,6 +3,9 @@ Changelog
 
 ---
 
+#### 2020-02-26
+- Added a loading indicator.
+
 #### 2020-02-25
 - Redesigned the affix list.
   - Affixes are now grouped by class.

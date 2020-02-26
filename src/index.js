@@ -6,6 +6,7 @@ import * as serviceWorker from './serviceWorker';
 import changelog from '!!raw-loader!../CHANGELOG.md'
 // import searchIndex from '../datamine/searchIndex.json'
 import analytics from './analytics'
+import sizes from '../datamine/sizes.json'
 
 const app = Elm.Main.init({
   flags: {changelog},
@@ -13,19 +14,24 @@ const app = Elm.Main.init({
 })
 analytics(app)
 
+onProgress('datamine')(0)
+onProgress('searchIndex')(0)
 Promise.all([
-  fetch('/all.json').then(res => ProgressResponse(res, {onProgress: console.log}).json()),
-  fetch('/searchIndex.json').then(res => ProgressResponse(res, {onProgress: console.log}).json()),
+  fetch('/datamine.json').then(res => ProgressResponse(res, {onProgress: onProgress('datamine')}).json()),
+  fetch('/searchIndex.json').then(res => ProgressResponse(res, {onProgress: onProgress('searchIndex')}).json()),
 ])
 .then(([datamine, searchIndex]) => {
   app.ports.loadAssets.send({datamine, searchIndex})
 })
 
+function onProgress(label) {
+  return progress => {
+    app.ports.loadAssetsProgress.send({label, progress, size: sizes[label]})
+  }
+}
 function ProgressResponse(response, {onProgress}) {
   // thanks, https://github.com/AnthumChris/fetch-progress-indicators/blob/master/fetch-basic/supported-browser.js
-  const contentLength = response.headers.get('content-length')
-  console.log([...response.headers.keys()], contentLength)
-  let total = parseInt(contentLength, 10)
+  // don't trust content-length, it fails with gzip. sizes.json tells expected unzipped sizes.
   let loaded = 0
   return new Response(
     new ReadableStream({
@@ -39,7 +45,7 @@ function ProgressResponse(response, {onProgress}) {
               return controller.close()
             }
             loaded += value.byteLength;
-            onProgress({loaded, total})
+            onProgress(loaded)
             controller.enqueue(value)
             read()
           })

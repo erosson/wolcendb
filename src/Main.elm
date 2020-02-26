@@ -35,6 +35,7 @@ import Search exposing (SearchResult)
 import Set exposing (Set)
 import Task
 import Url exposing (Url)
+import Util
 import View.Affix
 import View.Nav
 
@@ -58,6 +59,7 @@ type alias Model =
     , filterGemFamilies : Set String
     , filterKeywords : Set String
     , cityPlayerLevel : Int
+    , progress : Dict String ( Int, Int )
     }
 
 
@@ -87,6 +89,7 @@ init flags url nav =
     , filterGemFamilies = Set.empty
     , filterKeywords = Set.empty
     , cityPlayerLevel = 0
+    , progress = Dict.empty
     }
         |> routeTo (Route.parse url)
 
@@ -126,6 +129,7 @@ routeTo mroute model0 =
 type Msg
     = Noop
     | LoadAssets Ports.LoadAssets
+    | LoadAssetsProgress Ports.LoadAssetsProgress
     | OnUrlChange Url
     | OnUrlRequest Browser.UrlRequest
     | NormalItemMsg Page.NormalItem.Msg
@@ -140,6 +144,7 @@ subscriptions : Model -> Sub Msg
 subscriptions _ =
     Sub.batch
         [ Ports.loadAssets LoadAssets
+        , Ports.loadAssetsProgress LoadAssetsProgress
         ]
 
 
@@ -158,6 +163,9 @@ update msg model =
                     }
                         |> routeTo model.route
 
+                LoadAssetsProgress res ->
+                    ( { model | progress = model.progress |> Dict.insert res.label ( res.progress, res.size ) }, Cmd.none )
+
                 _ ->
                     ( model, Cmd.none )
 
@@ -169,6 +177,9 @@ updateOk msg ok model =
             ( model, Cmd.none )
 
         LoadAssets res ->
+            ( model, Cmd.none )
+
+        LoadAssetsProgress res ->
             ( model, Cmd.none )
 
         OnUrlChange url ->
@@ -303,12 +314,38 @@ viewTitle model =
                     "WolcenDB: privacy"
 
 
-viewLoading =
-    [ div [ style "width" "100%", style "text-align" "center", style "font-size" "200%" ]
-        [ code []
+viewLoading model =
+    [ div [ class "container" ]
+        [ View.Nav.viewNoSearchbar
+        , p []
+            [ text "Loot, skill, city, and magic affix lists for the action RPG "
+            , a [ target "_blank", href "https://wolcengame.com/" ] [ text "Wolcen: Lords of Mayhem" ]
+            , text "."
+            ]
+        , div []
             [ div [ class "fas fa-spinner fa-spin" ] []
-            , div [] [ text "Loading WolcenDB..." ]
-            , div [ style "font-size" "50%" ] [ text "Thanks for waiting!" ]
+            , text " Loading..."
+            , div []
+                (model.progress
+                    |> Dict.toList
+                    |> List.sortBy Tuple.first
+                    |> List.map
+                        (\( key, ( val, max ) ) ->
+                            let
+                                pct =
+                                    Util.percent <| clamp 0 1 <| toFloat val / toFloat max
+                            in
+                            div [ class "loading progress" ]
+                                [ div
+                                    [ class "progress-bar bg-info"
+                                    , style "width" pct
+                                    , style "text-align" "left"
+                                    ]
+                                    [ text <| key ++ ": " ++ String.fromInt val ++ "/" ++ String.fromInt max ++ " - " ++ pct ]
+                                ]
+                        )
+                )
+            , div [ style "font-size" "60%" ] [ text "Thanks for waiting!" ]
             ]
         ]
     ]
@@ -325,10 +362,10 @@ viewBody model =
             viewErr err
 
         RemoteData.NotAsked ->
-            viewLoading
+            viewLoading model
 
         RemoteData.Loading ->
-            viewLoading
+            viewLoading model
 
         RemoteData.Success ok ->
             let

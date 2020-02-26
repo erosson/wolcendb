@@ -14,6 +14,13 @@ type alias LoadAssets =
 port loadAssets : (LoadAssets -> msg) -> Sub msg
 
 
+type alias LoadAssetsProgress =
+    { label : String, progress : Int, size : Int }
+
+
+port loadAssetsProgress : (LoadAssetsProgress -> msg) -> Sub msg
+
+
 {-| Tell analytics when the url changes
 -}
 port urlChange : { route : String, path : String, query : Maybe String } -> Cmd msg

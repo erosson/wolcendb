@@ -10,3 +10,8 @@ toggleSet k ks =
 
     else
         Set.insert k ks
+
+
+percent : Float -> String
+percent p =
+    (p * 100 |> String.fromFloat |> String.left 5) ++ "%"

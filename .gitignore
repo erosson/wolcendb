@@ -31,4 +31,7 @@ tests/Fixture/Json.elm
 /public/searchIndex.json
 
 # Wolcen data. Fetch separately from webpack/js because it's really big.
-/public/all.json
+/public/datamine.json
+
+# Sizes of those big files above, for a loading indicator
+/datamine/sizes.json
