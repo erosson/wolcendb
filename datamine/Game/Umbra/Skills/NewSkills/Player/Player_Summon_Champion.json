@@ -95,7 +95,8 @@
           {
             "$": {
               "Type": "toxic",
-              "SummonSoundTrigger": "Play_Skill_Summon_SpawnScream"
+              "SummonSoundTrigger": "Play_Skill_Summon_SpawnScream",
+              "OrderSoundTrigger": "Play_Skill_Summon_Command"
             },
             "SummonedSkills": [
               {
@@ -252,7 +253,9 @@
         "Specific_Summon": [
           {
             "$": {
-              "Type": "shadow"
+              "Type": "shadow",
+              "SummonSoundTrigger": "Play_Skill_Summon_ChampionShadow_Spawn",
+              "OrderSoundTrigger": "Play_Skill_Summon_Command"
             },
             "SummonedSkills": [
               {
@@ -262,6 +265,13 @@
                 }
               }
             ]
+          }
+        ],
+        "SoundTrigger": [
+          {
+            "$": {
+              "OnAnimStart": "Play_Skill_Summon_SpawnScream"
+            }
           }
         ]
       },
@@ -304,7 +314,9 @@
         "Specific_Summon": [
           {
             "$": {
-              "Type": "lightning"
+              "Type": "lightning",
+              "SummonSoundTrigger": "Play_Skill_Summon_ChampionElec_Spawn",
+              "OrderSoundTrigger": "Play_Skill_Summon_ChampionElec_Command"
             },
             "SummonedSkills": [
               {
@@ -314,6 +326,13 @@
                 }
               }
             ]
+          }
+        ],
+        "SoundTrigger": [
+          {
+            "$": {
+              "OnAnimStart": "Play_Skill_Summon_SpawnScream"
+            }
           }
         ]
       },

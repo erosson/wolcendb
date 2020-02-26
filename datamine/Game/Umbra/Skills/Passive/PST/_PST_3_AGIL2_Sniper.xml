@@ -52,7 +52,7 @@
   <Spell Name="SNIP_6" UIName="@ui_SNIP_6_name" HUDLoreDesc="" GameplayDesc="">
     <MagicEffects>
       <EIM Name="criticaldamage_pts" HUDDesc="@ui_eim_criticaldamage_pts" Permanent="1">
-        <Semantics DamagePercentInt="14" />
+        <Semantics DamagePercentInt="10" />
       </EIM>
     </MagicEffects>
   </Spell>
@@ -130,7 +130,7 @@
   <Spell Name="SNIP_15" UIName="@ui_SNIP_15_name" HUDLoreDesc="" GameplayDesc="">
     <MagicEffects>
       <EIM Name="criticaldamage_pts" HUDDesc="@ui_eim_criticaldamage_pts" Permanent="1">
-        <Semantics DamagePercentInt="14" />
+        <Semantics DamagePercentInt="10" />
       </EIM>
     </MagicEffects>
   </Spell>
@@ -164,17 +164,17 @@
   <Spell Name="SNIP_19" UIName="@ui_SNIP_19_name" HUDLoreDesc="@ui_SNIP_19_loredesc" GameplayDesc="@ui_SNIP_19_gameplaydesc">
     <MagicEffects>
       <EIM Name="stacks_hunter_uses_mechanic" HUDDesc="@ui_eim_stacks_hunter_uses_mechanic" Permanent="1">
-        <Semantics PSTStackTickrateFloat="2" PSTStackMaxCountInt="5" />
+        <Semantics PSTStackTickrateFloat="2" PSTStackMaxCountInt="10" />
       </EIM>
       <EIM Name="stacks_hunter_damage" HUDDesc="@ui_eim_stacks_hunter_damage" Permanent="1">
-        <Semantics DamagePercentFloat="10" />
+        <Semantics DamagePercentFloat="6" />
       </EIM>
     </MagicEffects>
   </Spell>
   <Spell Name="SNIP_20" UIName="@ui_SNIP_20_name" HUDLoreDesc="" GameplayDesc="">
     <MagicEffects>
       <EIM Name="stacks_hunter_uses_mechanic" HUDDesc="@ui_eim_stacks_hunter_tickrate" Permanent="1">
-        <Semantics PSTStackTickrateFloat="1.5" />
+        <Semantics PSTStackTickrateFloat="-0.5" />
       </EIM>
     </MagicEffects>
   </Spell>

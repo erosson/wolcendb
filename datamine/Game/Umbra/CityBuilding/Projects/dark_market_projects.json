@@ -75,7 +75,7 @@
                   "ComputationMethod": "Static",
                   "Gold": "0",
                   "Gold_PerPlayerLevel": "0",
-                  "PA": "10000",
+                  "PA": "2000",
                   "PA_PerPlayerLevel": "0",
                   "ProductionToComplete": "5000"
                 }
@@ -123,7 +123,7 @@
                   "ComputationMethod": "Static",
                   "Gold": "0",
                   "Gold_PerPlayerLevel": "0",
-                  "PA": "20000",
+                  "PA": "5000",
                   "PA_PerPlayerLevel": "0",
                   "ProductionToComplete": "10000"
                 }
@@ -171,7 +171,7 @@
                   "ComputationMethod": "Static",
                   "Gold": "0",
                   "Gold_PerPlayerLevel": "0",
-                  "PA": "30000",
+                  "PA": "10000",
                   "PA_PerPlayerLevel": "0",
                   "ProductionToComplete": "15000"
                 }
@@ -263,8 +263,8 @@
               "Projects": "dark_market_item_quality_upgrade",
               "RequiresItem": "1",
               "AuthorizedItemKeywords": "accessory,armor,weapon,shield",
-              "MaxRarity": "",
-              "MaxQuality": ""
+              "MaxRarity": "legendary",
+              "MaxQuality": "exceptional"
             },
             "ResourceCost": [
               {
@@ -365,7 +365,7 @@
               "Projects": "dark_market_item_rarity_upgrade",
               "RequiresItem": "1",
               "AuthorizedItemKeywords": "accessory,armor,weapon,shield",
-              "MaxRarity": "",
+              "MaxRarity": "legendary",
               "MaxQuality": ""
             },
             "ResourceCost": [

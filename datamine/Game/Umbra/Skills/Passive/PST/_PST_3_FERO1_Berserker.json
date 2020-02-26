@@ -567,8 +567,10 @@
                 "Semantics": [
                   {
                     "$": {
-                      "ChancePercentInt": "10",
+                      "PossibilityInt": "1",
+                      "TriggeredSkillSelector": "0",
                       "StackCountInt": "5",
+                      "ChancePercentInt": "10",
                       "DamagePercentFloat": "10"
                     }
                   }
@@ -597,9 +599,9 @@
                 "Semantics": [
                   {
                     "$": {
-                      "StackCountInt": "5",
+                      "PossibilityInt": "1",
                       "TriggeredSkillSelector": "0",
-                      "PossibilityInt": "1"
+                      "StackCountInt": "5"
                     }
                   }
                 ]

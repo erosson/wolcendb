@@ -164,7 +164,7 @@
   <Spell Name="TANK_22" UIName="@ui_TANK_22_name" HUDLoreDesc="" GameplayDesc="">
     <MagicEffects>
       <EIM Name="criticaldamage_pts" HUDDesc="@ui_eim_criticaldamage_pts" Permanent="1">
-        <Semantics DamagePercentInt="12" />
+        <Semantics DamagePercentInt="10" />
       </EIM>
     </MagicEffects>
   </Spell>
@@ -202,7 +202,7 @@
         <Semantics DamagePercentInt="12" />
       </EIM>
       <EIM Name="criticaldamage_pts" HUDDesc="@ui_eim_criticaldamage_pts" Permanent="1">
-        <Semantics DamagePercentInt="12" />
+        <Semantics DamagePercentInt="10" />
       </EIM>
     </MagicEffects>
   </Spell>

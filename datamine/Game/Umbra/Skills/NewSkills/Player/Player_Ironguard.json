@@ -183,9 +183,8 @@
               "MaxAbsorption": "100",
               "MaxAbsorptionPerLevel": "0",
               "MinDamageMultiplier": "0.2",
-              "BreakDamageMultiplier": "0.6",
-              "BreakDamageMultiplierPerLevel": "0",
-              "ExplodeOrExpireDamageMultiplier": "0.3",
+              "MaxDamageMultiplier": "0.6",
+              "DamageMultiplierPerLevel": "0",
               "DamageRadius": "3.5",
               "EndingSoundTrigger": "Play_Skill_IronGuard_End",
               "BlockSoundTrigger": "Play_Skill_IronGuard_Block",
@@ -596,8 +595,7 @@
             "$": {
               "EndingSoundTrigger": "Play_Skill_IronGuard_End_FireSweet",
               "MinDamageMultiplier": "0",
-              "BreakDamageMultiplier": "0.2",
-              "ExplodeOrExpireDamageMultiplier": "0.1"
+              "MaxDamageMultiplier": "0.2"
             }
           }
         ],

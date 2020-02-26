@@ -287,7 +287,7 @@
                   {
                     "$": {
                       "ChancePercentInt": "10",
-                      "CharacteristicScorePercentInt": "25"
+                      "CharacteristicScorePercentInt": "-25"
                     }
                   }
                 ]
@@ -303,7 +303,7 @@
                     "$": {
                       "ChancePercentInt": "10",
                       "ResourcePercentFloat": "25",
-                      "CharacteristicScorePercentInt": "25"
+                      "CharacteristicScorePercentInt": "-25"
                     }
                   }
                 ]
@@ -418,7 +418,7 @@
                 "Semantics": [
                   {
                     "$": {
-                      "DamagePercentInt": "10"
+                      "DamagePercentInt": "5"
                     }
                   }
                 ]

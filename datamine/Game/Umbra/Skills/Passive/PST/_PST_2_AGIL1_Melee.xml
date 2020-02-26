@@ -226,7 +226,7 @@
   <Spell Name="MELEE_30" UIName="@ui_MELEE_30_name" HUDLoreDesc="@ui_MELEE_30_lore" GameplayDesc="@ui_MELEE_30_desc">
     <MagicEffects>
       <EIM Name="criticaldamage_pts" HUDDesc="@ui_eim_criticaldamage_pts" Permanent="1">
-        <Semantics DamagePercentInt="100" />
+        <Semantics DamagePercentInt="60" />
       </EIM>
       <EIM Name="damage_percent" HUDDesc="@ui_eim_damage_percent" Permanent="1">
         <Semantics DamagePercentInt="-30" />

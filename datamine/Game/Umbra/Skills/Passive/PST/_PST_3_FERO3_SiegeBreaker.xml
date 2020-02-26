@@ -32,7 +32,7 @@
   <Spell Name="SIEGE_4" UIName="@ui_SIEGE_4_name" HUDLoreDesc="" GameplayDesc="">
     <MagicEffects>
       <EIM Name="blockefficiency_percent" HUDDesc="@ui_eim_blockefficiency_percent" Permanent="1">
-        <Semantics ResourcePercentFloat="20" />
+        <Semantics ResourcePercentFloat="15" />
       </EIM>
     </MagicEffects>
   </Spell>
@@ -46,7 +46,7 @@
   <Spell Name="SIEGE_6" UIName="@ui_SIEGE_6_name" HUDLoreDesc="" GameplayDesc="">
     <MagicEffects>
       <EIM Name="criticaldamage_pts" HUDDesc="@ui_eim_criticaldamage_pts" Permanent="1">
-        <Semantics DamagePercentInt="14" />
+        <Semantics DamagePercentInt="10" />
       </EIM>
       <EIM Name="health_percent" HUDDesc="@ui_eim_health_percent" Permanent="1">
         <Semantics HealthPercentInt="8" />
@@ -118,7 +118,7 @@
   <Spell Name="SIEGE_12" UIName="@ui_SIEGE_12_name" HUDLoreDesc="" GameplayDesc="">
     <MagicEffects>
       <EIM Name="blockefficiency_percent" HUDDesc="@ui_eim_blockefficiency_percent" Permanent="1">
-        <Semantics ResourcePercentFloat="14" />
+        <Semantics ResourcePercentFloat="20" />
       </EIM>
       <EIM Name="dodgechance_score_percent" HUDDesc="@ui_eim_dodgechance_score_percent" Permanent="1">
         <Semantics CharacteristicScorePercentInt="-15" />
@@ -128,7 +128,7 @@
   <Spell Name="SIEGE_13" UIName="@ui_SIEGE_13_name" HUDLoreDesc="" GameplayDesc="">
     <MagicEffects>
       <EIM Name="damage_from_shield_block_chance" HUDDesc="@ui_eim_damage_from_shield_block_chance" Permanent="1">
-        <Semantics MultiplierFloat="50" />
+        <Semantics MultiplierFloat="0.5" />
       </EIM>
     </MagicEffects>
   </Spell>
@@ -142,7 +142,7 @@
   <Spell Name="SIEGE_15" UIName="@ui_SIEGE_15_name" HUDLoreDesc="" GameplayDesc="">
     <MagicEffects>
       <EIM Name="criticaldamage_pts" HUDDesc="@ui_eim_criticaldamage_pts" Permanent="1">
-        <Semantics DamagePercentInt="14" />
+        <Semantics DamagePercentInt="10" />
       </EIM>
       <EIM Name="health_percent" HUDDesc="@ui_eim_health_percent" Permanent="1">
         <Semantics HealthPercentInt="8" />
@@ -192,7 +192,7 @@
   <Spell Name="SIEGE_20" UIName="@ui_SIEGE_20_name" HUDLoreDesc="" GameplayDesc="">
     <MagicEffects>
       <EIM Name="fortress_health_regeneration" HUDDesc="@ui_eim_fortress_health_regeneration" Permanent="1">
-        <Semantics ResourcePercentFloat="10" />
+        <Semantics ResourcePercentFloat="0.1" />
       </EIM>
       <EIM Name="fortress_all_resistances" HUDDesc="@ui_eim_fortress_all_resistances" Permanent="1">
         <Semantics CharacteristicScorePercentInt="10" />

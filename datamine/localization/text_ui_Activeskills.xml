@@ -11,7 +11,7 @@
   <LastAuthor>Wolcen_James</LastAuthor>
   <LastPrinted>2003-10-30T09:38:41Z</LastPrinted>
   <Created>2002-06-17T19:14:00Z</Created>
-  <LastSaved>2020-02-10T10:17:56Z</LastSaved>
+  <LastSaved>2020-02-21T08:59:58Z</LastSaved>
   <Company>Electronic Arts</Company>
   <Version>16.00</Version>
  </DocumentProperties>
@@ -85,8 +85,8 @@
     </Crn>
    </Xct>
   </SupBook>
-  <WindowHeight>10365</WindowHeight>
-  <WindowWidth>28800</WindowWidth>
+  <WindowHeight>15765</WindowHeight>
+  <WindowWidth>32767</WindowWidth>
   <WindowTopX>32767</WindowTopX>
   <WindowTopY>32767</WindowTopY>
   <TabRatio>274</TabRatio>
@@ -127,7 +127,7 @@
    <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="11" ss:Color="#008000"/>
    <Interior ss:Color="#C6EFCE" ss:Pattern="Solid"/>
   </Style>
-  <Style ss:ID="m451316752" ss:Parent="s40">
+  <Style ss:ID="m228279736" ss:Parent="s40">
    <Alignment ss:Horizontal="Center" ss:Vertical="Bottom" ss:WrapText="1"/>
    <Borders>
     <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="2"/>
@@ -138,7 +138,7 @@
    <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="11" ss:Color="#000000"
     ss:Bold="1"/>
   </Style>
-  <Style ss:ID="m451316772" ss:Parent="s40">
+  <Style ss:ID="m228279756" ss:Parent="s40">
    <Alignment ss:Horizontal="Center" ss:Vertical="Bottom" ss:WrapText="1"/>
    <Borders>
     <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="2"/>
@@ -149,7 +149,7 @@
    <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="11" ss:Color="#000000"
     ss:Bold="1"/>
   </Style>
-  <Style ss:ID="m451316792" ss:Parent="s40">
+  <Style ss:ID="m228279776" ss:Parent="s40">
    <Alignment ss:Horizontal="Center" ss:Vertical="Bottom" ss:WrapText="1"/>
    <Borders>
     <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="2"/>
@@ -160,7 +160,7 @@
    <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="11" ss:Color="#000000"
     ss:Bold="1"/>
   </Style>
-  <Style ss:ID="m451317168" ss:Parent="s40">
+  <Style ss:ID="m228278488" ss:Parent="s40">
    <Alignment ss:Horizontal="Center" ss:Vertical="Bottom" ss:WrapText="1"/>
    <Borders>
     <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="2"/>
@@ -171,7 +171,7 @@
    <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="11" ss:Color="#000000"
     ss:Bold="1"/>
   </Style>
-  <Style ss:ID="m451317188" ss:Parent="s40">
+  <Style ss:ID="m228278508" ss:Parent="s40">
    <Alignment ss:Horizontal="Center" ss:Vertical="Bottom" ss:WrapText="1"/>
    <Borders>
     <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="2"/>
@@ -182,7 +182,7 @@
    <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="11" ss:Color="#000000"
     ss:Bold="1"/>
   </Style>
-  <Style ss:ID="m451317208" ss:Parent="s40">
+  <Style ss:ID="m228278528" ss:Parent="s40">
    <Alignment ss:Horizontal="Center" ss:Vertical="Bottom" ss:WrapText="1"/>
    <Borders>
     <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="2"/>
@@ -193,7 +193,7 @@
    <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="11" ss:Color="#000000"
     ss:Bold="1"/>
   </Style>
-  <Style ss:ID="m451317228" ss:Parent="s40">
+  <Style ss:ID="m228278548" ss:Parent="s40">
    <Alignment ss:Horizontal="Center" ss:Vertical="Bottom" ss:WrapText="1"/>
    <Borders>
     <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="2"/>
@@ -204,7 +204,7 @@
    <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="11" ss:Color="#000000"
     ss:Bold="1"/>
   </Style>
-  <Style ss:ID="m451317248" ss:Parent="s40">
+  <Style ss:ID="m228278568" ss:Parent="s40">
    <Alignment ss:Horizontal="Center" ss:Vertical="Bottom" ss:WrapText="1"/>
    <Borders>
     <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="2"/>
@@ -215,7 +215,7 @@
    <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="11" ss:Color="#000000"
     ss:Bold="1"/>
   </Style>
-  <Style ss:ID="m451317268" ss:Parent="s40">
+  <Style ss:ID="m228278588" ss:Parent="s40">
    <Alignment ss:Horizontal="Center" ss:Vertical="Bottom" ss:WrapText="1"/>
    <Borders>
     <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="2"/>
@@ -364,7 +364,7 @@
       ss:Name="Print_Area"/></Cell>
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="14.25" ss:StyleID="s64">
-    <Cell ss:MergeAcross="2" ss:StyleID="m451317168"><Data ss:Type="String">AST INTERFACE</Data></Cell>
+    <Cell ss:MergeAcross="2" ss:StyleID="m228278488"><Data ss:Type="String">AST INTERFACE</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15">
     <Cell><Data ss:Type="String">ui_ast_title</Data></Cell>
@@ -427,7 +427,7 @@
     <Cell ss:StyleID="s26"><Data ss:Type="String">Duplicated Skill</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15">
-    <Cell ss:MergeAcross="2" ss:StyleID="m451317188"><Data ss:Type="String">ACTIVE SKILLS</Data></Cell>
+    <Cell ss:MergeAcross="2" ss:StyleID="m228278508"><Data ss:Type="String">ACTIVE SKILLS</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15">
     <Cell><Data ss:Type="String">ui_enneract_of</Data></Cell>
@@ -1102,7 +1102,7 @@
     <Cell ss:StyleID="s62"><Data ss:Type="String">&lt;Font Size=&quot;15&quot; Color=&quot;#ccb270&quot;&gt;&lt;i&gt;Moros, Primordial of Dusk, wielded great clouds of darkness to turn the tide of battle when his forces seemed surrounded.&lt;/i&gt;&lt;/Font&gt;</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
-    <Cell ss:MergeAcross="2" ss:StyleID="m451317208"><Data ss:Type="String">SKILLS VARIANTS  &lt;font color=&quot;#cb5316&quot;&gt; Rage  &lt;font color=&quot;#948ec6&quot;&gt; Willpower</Data></Cell>
+    <Cell ss:MergeAcross="2" ss:StyleID="m228278528"><Data ss:Type="String">SKILLS VARIANTS  &lt;font color=&quot;#cb5316&quot;&gt; Rage  &lt;font color=&quot;#948ec6&quot;&gt; Willpower</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell><Data ss:Type="String">ui_Variant_ArrowsRain_variant_1</Data></Cell>
@@ -1162,7 +1162,7 @@
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell><Data ss:Type="String">ui_Variant_ArrowsRain_variant_7_desc</Data></Cell>
-    <Cell ss:StyleID="s28"><Data ss:Type="String">Increases critical hit chance.</Data></Cell>
+    <Cell ss:StyleID="s28"><Data ss:Type="String">Increases critical chance.</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell><Data ss:Type="String">ui_Variant_ArrowsRain_variant_8</Data></Cell>
@@ -1642,7 +1642,7 @@
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell><Data ss:Type="String">ui_Variant_BrutalStrike_variant_9_desc</Data></Cell>
-    <Cell ss:StyleID="s40"><Data ss:Type="String">Creates a chain of explosions in front of the you.</Data></Cell>
+    <Cell ss:StyleID="s40"><Data ss:Type="String">Creates a chain of explosions in front of you.</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell><Data ss:Type="String">ui_Variant_BrutalStrike_variant_9_Lore</Data></Cell>
@@ -3462,7 +3462,7 @@
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell><Data ss:Type="String">ui_Variant_Leap_variant_8_desc</Data></Cell>
-    <Cell ss:StyleID="s26"><Data ss:Type="String">Skill loses its cooldown and costss one Stamina Point to use instead.</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">Skill loses its cooldown and costs one Stamina Point to use instead.</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell><Data ss:Type="String">ui_Variant_Leap_variant_8_Lore</Data></Cell>
@@ -3614,7 +3614,7 @@
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell><Data ss:Type="String">ui_Variant_Reave_variant_9_desc</Data></Cell>
-    <Cell ss:StyleID="s40"><Data ss:Type="String">Grants a life leech buf to yourself and allies.</Data></Cell>
+    <Cell ss:StyleID="s40"><Data ss:Type="String">Grants a life leech buff to yourself and allies.</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell><Data ss:Type="String">ui_Variant_Reave_variant_10</Data></Cell>
@@ -4126,7 +4126,7 @@
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell><Data ss:Type="String">ui_Variant_Turret_variant_4</Data></Cell>
-    <Cell ss:StyleID="s26"><Data ss:Type="String">Autonomous Sensors</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">Flak Launcher</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell><Data ss:Type="String">ui_Variant_Turret_variant_4_desc</Data></Cell>
@@ -4166,7 +4166,7 @@
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell><Data ss:Type="String">ui_Variant_Turret_variant_8</Data></Cell>
-    <Cell ss:StyleID="s26"><Data ss:Type="String">Flak Launcher</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">Autonomous Sensors</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell><Data ss:Type="String">ui_Variant_Turret_variant_8_desc</Data></Cell>
@@ -6794,7 +6794,7 @@
     <Cell ss:StyleID="s40"><Data ss:Type="String">Reduces cooldown.</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15">
-    <Cell ss:MergeAcross="2" ss:StyleID="m451317228"><Data ss:Type="String">AST BUFF VARIANTS</Data></Cell>
+    <Cell ss:MergeAcross="2" ss:StyleID="m228278548"><Data ss:Type="String">AST BUFF VARIANTS</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15">
     <Cell><Data ss:Type="String">ui_FireballFiredamageBoost_Desc</Data></Cell>
@@ -6909,7 +6909,7 @@
     <Cell ss:StyleID="s28"><Data ss:Type="String">Stamina Regeneration buff</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15">
-    <Cell ss:MergeAcross="2" ss:StyleID="m451317248"><Data ss:Type="String">Aspect of Apocalypse SKILLS</Data></Cell>
+    <Cell ss:MergeAcross="2" ss:StyleID="m228278568"><Data ss:Type="String">Aspect of Apocalypse SKILLS</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15">
     <Cell><Data ss:Type="String">ui_APO_Menu_Title</Data></Cell>
@@ -7188,7 +7188,7 @@
     <Cell ss:StyleID="s63"><Data ss:Type="String">&lt;Font Size=&quot;15&quot; Color=&quot;#ccb270&quot;&gt;&lt;i&gt;As the First Warrior, Baäpheth understands the true value of patience; strength is worthless if one knows not when to strike.&lt;/i&gt;&lt;/Font&gt;</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15">
-    <Cell ss:MergeAcross="2" ss:StyleID="m451317268"><Data ss:Type="String">SKILLS INFORMATION (ESP)</Data></Cell>
+    <Cell ss:MergeAcross="2" ss:StyleID="m228278588"><Data ss:Type="String">SKILLS INFORMATION (ESP)</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15">
     <Cell ss:StyleID="s98"><Data ss:Type="String">ui_AST_Param_Averagedamage</Data></Cell>
@@ -7324,11 +7324,11 @@
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15">
     <Cell ss:StyleID="s98"><Data ss:Type="String">ui_AST_Param_SlowDuration</Data></Cell>
-    <Cell ss:StyleID="s80"><Data ss:Type="String">Slow duration: %1</Data></Cell>
+    <Cell ss:StyleID="s80"><Data ss:Type="String">Slow Duration: %1</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15">
     <Cell ss:StyleID="s98"><Data ss:Type="String">ui_AST_Param_ExplosionRadius</Data></Cell>
-    <Cell ss:StyleID="s80"><Data ss:Type="String">Effect radius: %1</Data></Cell>
+    <Cell ss:StyleID="s80"><Data ss:Type="String">Effect Radius: %1</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15">
     <Cell ss:StyleID="s98"><Data ss:Type="String">ui_AST_Param_SharpShooterdamage</Data></Cell>
@@ -7340,15 +7340,15 @@
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15">
     <Cell ss:StyleID="s98"><Data ss:Type="String">ui_AST_Param_SharpShooterDecayTime</Data></Cell>
-    <Cell ss:StyleID="s80"><Data ss:Type="String">Duration before Stacks decay: %1</Data></Cell>
+    <Cell ss:StyleID="s80"><Data ss:Type="String">Duration before Stack Decays: %1</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15">
     <Cell ss:StyleID="s98"><Data ss:Type="String">ui_AST_Param_FrostLanceExplosiondamage</Data></Cell>
-    <Cell ss:StyleID="s80"><Data ss:Type="String">Shatter damage: %1 &lt;Font Color=&quot;#ffffff&quot;&gt;of spear damage&lt;/Font&gt;</Data></Cell>
+    <Cell ss:StyleID="s80"><Data ss:Type="String">Shatter Damage: %1 &lt;Font Color=&quot;#ffffff&quot;&gt;of spear damage&lt;/Font&gt;</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15">
     <Cell ss:StyleID="s98"><Data ss:Type="String">ui_AST_Param_LifeLeech</Data></Cell>
-    <Cell ss:StyleID="s80"><Data ss:Type="String">Health regeneration: %1 &lt;Font Color=&quot;#ffffff&quot;&gt;of damage dealt over&lt;/Font&gt; %2</Data></Cell>
+    <Cell ss:StyleID="s80"><Data ss:Type="String">Health Regeneration: %1 &lt;Font Color=&quot;#ffffff&quot;&gt;of damage dealt over&lt;/Font&gt; %2</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15">
     <Cell ss:StyleID="s98"><Data ss:Type="String">ui_AST_Param_CastDelay</Data></Cell>
@@ -7356,7 +7356,7 @@
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15">
     <Cell ss:StyleID="s98"><Data ss:Type="String">ui_AST_Param_ChargeMax</Data></Cell>
-    <Cell ss:StyleID="s99"><Data ss:Type="String">Maximum charges: %1</Data></Cell>
+    <Cell ss:StyleID="s99"><Data ss:Type="String">Maximum Charges: %1</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15">
     <Cell ss:StyleID="s98"><Data ss:Type="String">ui_AST_Param_Cooldown</Data></Cell>
@@ -7420,7 +7420,7 @@
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15">
     <Cell ss:StyleID="s98"><Data ss:Type="String">ui_AST_Param_ROSTime</Data></Cell>
-    <Cell ss:StyleID="s99"><Data ss:Type="String">Resource consuming time: %1</Data></Cell>
+    <Cell ss:StyleID="s99"><Data ss:Type="String">Resource consumption time: %1</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15">
     <Cell ss:StyleID="s98"><Data ss:Type="String">ui_AST_Param_Sacreddamage</Data></Cell>
@@ -7440,7 +7440,7 @@
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15">
     <Cell ss:StyleID="s98"><Data ss:Type="String">ui_AST_Param_Umbradamage</Data></Cell>
-    <Cell ss:StyleID="s80"><Data ss:Type="String">Aether damage: %1 - %2</Data></Cell>
+    <Cell ss:StyleID="s80"><Data ss:Type="String">Aether Damage: %1 - %2</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15">
     <Cell ss:StyleID="s98"><Data ss:Type="String">ui_AST_Param_UmbRageneration</Data></Cell>
@@ -7480,7 +7480,7 @@
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15">
     <Cell ss:StyleID="s98"><Data ss:Type="String">ui_AST_Param_CriticalInflictScore</Data></Cell>
-    <Cell ss:StyleID="s99"><Data ss:Type="String" x:Ticked="1">Critical Hit Chance Score: %1</Data></Cell>
+    <Cell ss:StyleID="s99"><Data ss:Type="String" x:Ticked="1">Critical Chance Score: %1</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15">
     <Cell ss:StyleID="s98"><Data ss:Type="String">ui_AST_Param_ForceShieldOnHit</Data></Cell>
@@ -7488,15 +7488,15 @@
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15">
     <Cell ss:StyleID="s98"><Data ss:Type="String">ui_AST_Param_WillpowerOnKill</Data></Cell>
-    <Cell ss:StyleID="s99"><Data ss:Type="String" x:Ticked="1">Willpower on Kill: %1</Data></Cell>
+    <Cell ss:StyleID="s99"><Data ss:Type="String" x:Ticked="1">Willpower generated on Kill: %1</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15">
     <Cell ss:StyleID="s98"><Data ss:Type="String">ui_AST_Param_WillpowerOnHit</Data></Cell>
-    <Cell ss:StyleID="s99"><Data ss:Type="String" x:Ticked="1">Willpower on Hit: %1</Data></Cell>
+    <Cell ss:StyleID="s99"><Data ss:Type="String" x:Ticked="1">Willpower generated on Hit: %1</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15">
     <Cell ss:StyleID="s98"><Data ss:Type="String">ui_AST_Param_WillpowerOnCriticalHit</Data></Cell>
-    <Cell ss:StyleID="s99"><Data ss:Type="String" x:Ticked="1">Willpower on Critical Hit: %1</Data></Cell>
+    <Cell ss:StyleID="s99"><Data ss:Type="String" x:Ticked="1">Willpower generated on Critical Hit: %1</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15">
     <Cell ss:StyleID="s98"><Data ss:Type="String">ui_AST_Param_NumberOfTargets</Data></Cell>
@@ -7520,41 +7520,41 @@
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15">
     <Cell ss:StyleID="s98"><Data ss:Type="String">ui_AST_Param_BlownAwayDistance</Data></Cell>
-    <Cell ss:StyleID="s99"><Data ss:Type="String">Knock-back Distance: %1m</Data></Cell>
+    <Cell ss:StyleID="s99"><Data ss:Type="String">Knockback Distance: %1m</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15">
-    <Cell ss:MergeAcross="2" ss:StyleID="m451316752"><Data ss:Type="String">SKILLS LEVELLING BONUS (EASTM)</Data></Cell>
+    <Cell ss:MergeAcross="2" ss:StyleID="m228279736"><Data ss:Type="String">SKILLS LEVELLING BONUS (EASTM)</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15">
     <Cell ss:StyleID="s101"><Data ss:Type="String">ui_AST_ParamBonus_damage</Data></Cell>
-    <Cell ss:StyleID="s102"><Data ss:Type="String">%1 Damage Increase Bonus</Data></Cell>
+    <Cell ss:StyleID="s102"><Data ss:Type="String">%1 Damage increase Bonus</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15">
     <Cell ss:StyleID="s101"><Data ss:Type="String">ui_AST_ParamBonus_Cooldown</Data></Cell>
-    <Cell ss:StyleID="s26"><Data ss:Type="String">%1 Cooldown Reduction</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">%1 Cooldown decrease</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15">
     <Cell ss:StyleID="s101"><Data ss:Type="String">ui_AST_ParamBonus_RageCostReduction</Data></Cell>
-    <Cell ss:StyleID="s102"><Data ss:Type="String">%1 Rage Cost Reduction</Data></Cell>
+    <Cell ss:StyleID="s102"><Data ss:Type="String">%1 Rage Cost decrease</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15">
     <Cell ss:StyleID="s101"><Data ss:Type="String">ui_AST_ParamBonus_RageGenerationAugmentation</Data></Cell>
-    <Cell ss:StyleID="s102"><Data ss:Type="String">%1 Rage Generation Increase</Data></Cell>
+    <Cell ss:StyleID="s102"><Data ss:Type="String">%1 Rage Generation increase</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15">
     <Cell ss:StyleID="s101"><Data ss:Type="String">ui_AST_ParamBonus_umbraCostReduction</Data></Cell>
-    <Cell ss:StyleID="s102"><Data ss:Type="String">%1 Willpower Reduction</Data></Cell>
+    <Cell ss:StyleID="s102"><Data ss:Type="String">%1 Willpower decrease</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15">
     <Cell ss:StyleID="s101"><Data ss:Type="String">ui_AST_ParamBonus_Weapondamage</Data></Cell>
-    <Cell ss:StyleID="s103"><Data ss:Type="String">%1 Attack Damage Increase</Data></Cell>
+    <Cell ss:StyleID="s103"><Data ss:Type="String">%1 Attack Damage increase</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15">
     <Cell><Data ss:Type="String">ui_AST_ParamBonus_FrozenTime</Data></Cell>
     <Cell ss:StyleID="s102"><Data ss:Type="String">%1 Freeze Duration Bonus</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15">
-    <Cell ss:MergeAcross="2" ss:StyleID="m451316772"><Data ss:Type="String">SUMMONS</Data></Cell>
+    <Cell ss:MergeAcross="2" ss:StyleID="m228279756"><Data ss:Type="String">SUMMONS</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15">
     <Cell ss:StyleID="s104"><Data ss:Type="String">UI_AIName_Summon_Melee</Data></Cell>
@@ -7577,7 +7577,7 @@
     <Cell ss:StyleID="s105"><Data ss:Type="String">Duskshade</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15">
-    <Cell ss:MergeAcross="2" ss:StyleID="m451316792"><Data ss:Type="String">ACTIVE SKILL BUFFS</Data></Cell>
+    <Cell ss:MergeAcross="2" ss:StyleID="m228279776"><Data ss:Type="String">ACTIVE SKILL BUFFS</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15">
     <Cell ss:StyleID="s104"><Data ss:Type="String">ui_Aetherblade_buff_title</Data></Cell>
@@ -7765,7 +7765,7 @@
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15">
     <Cell ss:StyleID="s104"><Data ss:Type="String">ui_shadow_damage_per_health_percent_missing_buff_skill</Data></Cell>
-    <Cell ss:StyleID="s105"><Data ss:Type="String">Shadow damage is dealt based upon missing Health</Data></Cell>
+    <Cell ss:StyleID="s105"><Data ss:Type="String">Shadow Damage is dealt based upon missing Health</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15">
     <Cell ss:StyleID="s104"><Data ss:Type="String">ui_skillrequirement_keyword_melee_buff_skill</Data></Cell>
@@ -7963,11 +7963,10 @@
     <VerticalResolution>600</VerticalResolution>
    </Print>
    <Selected/>
-   <TopRowVisible>1053</TopRowVisible>
    <Panes>
     <Pane>
      <Number>3</Number>
-     <ActiveRow>1072</ActiveRow>
+     <ActiveRow>184</ActiveRow>
      <ActiveCol>1</ActiveCol>
     </Pane>
    </Panes>

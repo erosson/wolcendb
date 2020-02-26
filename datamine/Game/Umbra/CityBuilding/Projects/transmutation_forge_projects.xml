@@ -1,7 +1,7 @@
 <MetaData>
   <Project Name="transmutation_project" CategoryName="transmutation_project" Repeatable="1">
     <UIParams UIName="@ui_transmute_item" UILore="@ui_transmute_item_lore" IconType="transform_item" />
-    <Requirements PlayerLevel="0" Projects="transmutation_forge_construct" RequiresItem="1" AuthorizedItemKeywords="accessory,armor,weapon,shield" MaxRarity="" MaxQuality="">
+    <Requirements PlayerLevel="0" Projects="transmutation_forge_construct" RequiresItem="1" AuthorizedItemKeywords="accessory,armor,weapon,shield" MaxRarity="legendary" MaxQuality="">
       <ResourceCost ComputationMethod="ItemBased" Gold="200" PA="40" ProductionToComplete="100" ItemLevelIncreasePercent="15" ItemRarityIncreasePercent="0" ItemQualityIncreasePercent="0" />
     </Requirements>
     <RewardList>

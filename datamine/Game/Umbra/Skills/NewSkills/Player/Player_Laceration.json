@@ -226,7 +226,7 @@
         "Specific_Laceration": [
           {
             "$": {
-              "ProjectileSpeedMultiplier": "1.75"
+              "ProjectileSpeedMultiplier": "1.30"
             }
           }
         ],
@@ -337,7 +337,7 @@
               "HUDPictureVariant_Selected": "../u_resources/spells/variants/normal_clicked_005.png",
               "HUDPictureVariant_NotEnoughPoints": "../u_resources/spells/variants/locked_points_005.png",
               "HUDPictureVariant_InvalidLevel": "../u_resources/spells/variants/locked_levels_005.png",
-              "ShowParamsInTooltip": "SpecificLaceration,Cost,ROSTime,DamageWeapon"
+              "ShowParamsInTooltip": "SpecificLaceration,Cost,ROSTime,DamageWeapon,Cooldown"
             }
           }
         ],
@@ -378,10 +378,18 @@
           {
             "$": {
               "Type": "rend",
-              "PercentMin": "-100",
-              "PercentMinPerLevel": "1",
-              "PercentMax": "-100",
-              "PercentMaxPerLevel": "1"
+              "PercentMin": "-150",
+              "PercentMinPerLevel": "0",
+              "PercentMax": "-150",
+              "PercentMaxPerLevel": "0"
+            }
+          }
+        ],
+        "Cooldown": [
+          {
+            "$": {
+              "Cooldown": "10",
+              "CooldownPerLevel": "0"
             }
           }
         ]
@@ -625,7 +633,7 @@
         "Specific_Laceration": [
           {
             "$": {
-              "DamageMultiplierPerAilmentStack": "0.2"
+              "DamageMultiplierPerAilmentStack": "0.01"
             }
           }
         ]
@@ -653,7 +661,7 @@
         "DamageCritical": [
           {
             "$": {
-              "CriticalDamageModifier": "30"
+              "CriticalDamageModifier": "25"
             }
           }
         ]

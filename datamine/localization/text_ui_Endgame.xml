@@ -230,11 +230,12 @@
    x:FullRows="1" ss:DefaultColumnWidth="60" ss:DefaultRowHeight="13.3125">
    <Column ss:Width="336.75"/>
    <Column ss:AutoFitWidth="0" ss:Width="441.75"/>
-   <Column ss:AutoFitWidth="0" ss:Width="160.5"/>
+   <Column ss:AutoFitWidth="0" ss:Width="216"/>
    <Row ss:AutoFitHeight="0" ss:Height="15" ss:StyleID="s62">
     <Cell ss:StyleID="s63"><Data ss:Type="String">KEY</Data></Cell>
     <Cell ss:StyleID="s64"><Data ss:Type="String">ORIGINAL TEXT</Data><NamedCell
       ss:Name="Print_Area"/></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">TRANSLATED TEXT</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15">
     <Cell ss:MergeAcross="1" ss:StyleID="s67"><Data ss:Type="String">CITYBUILDER UI</Data></Cell>
@@ -735,7 +736,7 @@
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="72">
     <Cell><Data ss:Type="String">ui_wonder_4_construct_lore</Data></Cell>
-    <Cell ss:StyleID="s26"><Data ss:Type="String">Renovations are ready to be carried out on the West Wing of the Institute. Aside from the rebuilding efforts, a number of Stormfall’s scientists are eager to begin studying anything found in the depths of Anankis. To this end, they implore you to send another expedition into Anankis to provide them with new ancient machinery to study. Without this influx of new artifacts to study, the scientists fear that the new Institute will lose all credibility.\n\n&lt;font size=&quot;20&quot; font face=&quot;Wolcen&quot; color=&quot;#509FFF&quot;&gt;Outcomes:&lt;/font&gt;&lt;br&gt;&lt;/br&gt;\n&lt;font color=&quot;#509FFF&quot;&gt;You will receive +1 Passive Skill Point.&lt;/font&gt;&lt;br&gt;&lt;/br&gt;</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">Renovations are ready to be carried out on the East Wing of the Institute. Aside from the rebuilding efforts, a number of Stormfall’s scientists are eager to begin studying anything found in the depths of Anankis. To this end, they implore you to send another expedition into Anankis to provide them with new ancient machinery to study. Without this influx of new artifacts to study, the scientists fear that the new Institute will lose all credibility.\n\n&lt;font size=&quot;20&quot; font face=&quot;Wolcen&quot; color=&quot;#509FFF&quot;&gt;Outcomes:&lt;/font&gt;&lt;br&gt;&lt;/br&gt;\n&lt;font color=&quot;#509FFF&quot;&gt;You will receive +1 Passive Skill Point.&lt;/font&gt;&lt;br&gt;&lt;/br&gt;</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15">
     <Cell><Data ss:Type="String">ui_wonder_4_construct_reward</Data></Cell>
@@ -3258,12 +3259,10 @@
    </Print>
    <Zoom>85</Zoom>
    <Selected/>
-   <TopRowVisible>298</TopRowVisible>
    <Panes>
     <Pane>
      <Number>3</Number>
-     <ActiveRow>330</ActiveRow>
-     <ActiveCol>1</ActiveCol>
+     <ActiveCol>2</ActiveCol>
     </Pane>
    </Panes>
    <ProtectObjects>False</ProtectObjects>

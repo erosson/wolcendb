@@ -66,10 +66,10 @@
         <Semantics PossibilityInt="1" />
       </EIM>
       <EIM Name="stance_offensive_stats" HUDDesc="@ui_eim_stance_offensive_stats" Permanent="1">
-        <Semantics ChancePercentInt="10" CharacteristicScorePercentInt="25" />
+        <Semantics ChancePercentInt="10" CharacteristicScorePercentInt="-25" />
       </EIM>
       <EIM Name="stance_defensive_stats" HUDDesc="@ui_eim_stance_defensive_stats" Permanent="1">
-        <Semantics ChancePercentInt="10" ResourcePercentFloat="25" CharacteristicScorePercentInt="25" />
+        <Semantics ChancePercentInt="10" ResourcePercentFloat="25" CharacteristicScorePercentInt="-25" />
       </EIM>
     </MagicEffects>
   </Spell>
@@ -96,7 +96,7 @@
         <Semantics DamagePercentInt="8" />
       </EIM>
       <EIM Name="criticaldamage_pts" HUDDesc="@ui_eim_criticaldamage_pts" Permanent="1">
-        <Semantics DamagePercentInt="10" />
+        <Semantics DamagePercentInt="5" />
       </EIM>
     </MagicEffects>
   </Spell>

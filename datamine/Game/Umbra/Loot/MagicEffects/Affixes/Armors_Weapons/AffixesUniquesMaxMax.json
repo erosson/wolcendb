@@ -9258,7 +9258,7 @@
       },
       {
         "$": {
-          "AffixId": "unique_purifier_shoulder_local_health_percent_3",
+          "AffixId": "unique_purifier_shoulder_health_pts_3",
           "Class": "",
           "AffixType": "default"
         },
@@ -9298,19 +9298,19 @@
         "MagicEffect": [
           {
             "$": {
-              "EffectId": "local_health_percent"
+              "EffectId": "health_pts"
             },
             "LoRoll": [
               {
                 "$": {
-                  "LocalPercentFloat": "200"
+                  "HealthFlatInt": "60"
                 }
               }
             ],
             "HiRoll": [
               {
                 "$": {
-                  "LocalPercentFloat": "300"
+                  "HealthFlatInt": "100"
                 }
               }
             ]
@@ -13947,14 +13947,14 @@
             "LoRoll": [
               {
                 "$": {
-                  "CharacteristicScoreInt": "15"
+                  "CharacteristicScoreInt": "80"
                 }
               }
             ],
             "HiRoll": [
               {
                 "$": {
-                  "CharacteristicScoreInt": "20"
+                  "CharacteristicScoreInt": "100"
                 }
               }
             ]
@@ -14008,14 +14008,14 @@
             "LoRoll": [
               {
                 "$": {
-                  "DamagePercentInt": "15"
+                  "DamagePercentInt": "35"
                 }
               }
             ],
             "HiRoll": [
               {
                 "$": {
-                  "DamagePercentInt": "20"
+                  "DamagePercentInt": "40"
                 }
               }
             ]
@@ -14069,14 +14069,14 @@
             "LoRoll": [
               {
                 "$": {
-                  "ResourceFlatFloat": "15"
+                  "ResourceFlatFloat": "30"
                 }
               }
             ],
             "HiRoll": [
               {
                 "$": {
-                  "ResourceFlatFloat": "20"
+                  "ResourceFlatFloat": "35"
                 }
               }
             ]
@@ -14130,14 +14130,14 @@
             "LoRoll": [
               {
                 "$": {
-                  "AttributeFlatInt": "15"
+                  "AttributeFlatInt": "40"
                 }
               }
             ],
             "HiRoll": [
               {
                 "$": {
-                  "AttributeFlatInt": "20"
+                  "AttributeFlatInt": "60"
                 }
               }
             ]
@@ -14560,14 +14560,14 @@
             "LoRoll": [
               {
                 "$": {
-                  "DamagePercentInt": "20"
+                  "DamagePercentInt": "80"
                 }
               }
             ],
             "HiRoll": [
               {
                 "$": {
-                  "DamagePercentInt": "40"
+                  "DamagePercentInt": "100"
                 }
               }
             ]
@@ -14621,14 +14621,14 @@
             "LoRoll": [
               {
                 "$": {
-                  "CharacteristicScorePercentInt": "15"
+                  "CharacteristicScorePercentInt": "36"
                 }
               }
             ],
             "HiRoll": [
               {
                 "$": {
-                  "CharacteristicScorePercentInt": "20"
+                  "CharacteristicScorePercentInt": "38"
                 }
               }
             ]
@@ -14682,14 +14682,14 @@
             "LoRoll": [
               {
                 "$": {
-                  "CharacteristicScorePercentInt": "15"
+                  "CharacteristicScorePercentInt": "36"
                 }
               }
             ],
             "HiRoll": [
               {
                 "$": {
-                  "CharacteristicScorePercentInt": "20"
+                  "CharacteristicScorePercentInt": "38"
                 }
               }
             ]
@@ -14743,7 +14743,7 @@
             "LoRoll": [
               {
                 "$": {
-                  "CharacteristicScorePercentInt": "30"
+                  "CharacteristicScorePercentInt": "45"
                 }
               }
             ],
@@ -14804,14 +14804,14 @@
             "LoRoll": [
               {
                 "$": {
-                  "CharacteristicScorePercentInt": "15"
+                  "CharacteristicScorePercentInt": "45"
                 }
               }
             ],
             "HiRoll": [
               {
                 "$": {
-                  "CharacteristicScorePercentInt": "17"
+                  "CharacteristicScorePercentInt": "50"
                 }
               }
             ]
@@ -14865,14 +14865,14 @@
             "LoRoll": [
               {
                 "$": {
-                  "CharacteristicScoreInt": "20"
+                  "CharacteristicScoreInt": "36"
                 }
               }
             ],
             "HiRoll": [
               {
                 "$": {
-                  "CharacteristicScoreInt": "40"
+                  "CharacteristicScoreInt": "38"
                 }
               }
             ]
@@ -14926,16 +14926,16 @@
             "LoRoll": [
               {
                 "$": {
-                  "DamagesFlatInt_Min": "92",
-                  "DamagesFlatInt_Max": "156"
+                  "DamagesFlatInt_Min": "76",
+                  "DamagesFlatInt_Max": "132"
                 }
               }
             ],
             "HiRoll": [
               {
                 "$": {
-                  "DamagesFlatInt_Min": "112",
-                  "DamagesFlatInt_Max": "176"
+                  "DamagesFlatInt_Min": "90",
+                  "DamagesFlatInt_Max": "146"
                 }
               }
             ]
@@ -14989,14 +14989,14 @@
             "LoRoll": [
               {
                 "$": {
-                  "DamagePercentFloat": "40"
+                  "DamagePercentFloat": "35"
                 }
               }
             ],
             "HiRoll": [
               {
                 "$": {
-                  "DamagePercentFloat": "44"
+                  "DamagePercentFloat": "40"
                 }
               }
             ]
@@ -15050,14 +15050,14 @@
             "LoRoll": [
               {
                 "$": {
-                  "DamagePercentFloat": "5"
+                  "DamagePercentFloat": "8"
                 }
               }
             ],
             "HiRoll": [
               {
                 "$": {
-                  "DamagePercentFloat": "5"
+                  "DamagePercentFloat": "8"
                 }
               }
             ]
@@ -15111,14 +15111,14 @@
             "LoRoll": [
               {
                 "$": {
-                  "LocalFlatFloat": "5"
+                  "LocalFlatFloat": "19"
                 }
               }
             ],
             "HiRoll": [
               {
                 "$": {
-                  "LocalFlatFloat": "6"
+                  "LocalFlatFloat": "20"
                 }
               }
             ]
@@ -15172,14 +15172,14 @@
             "LoRoll": [
               {
                 "$": {
-                  "AttributeFlatInt": "15"
+                  "AttributeFlatInt": "40"
                 }
               }
             ],
             "HiRoll": [
               {
                 "$": {
-                  "AttributeFlatInt": "25"
+                  "AttributeFlatInt": "60"
                 }
               }
             ]

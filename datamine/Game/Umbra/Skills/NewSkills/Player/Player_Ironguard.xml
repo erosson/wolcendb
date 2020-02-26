@@ -20,7 +20,7 @@
     </ParticleList>
     <SpecialShield ShieldAngle="360" />
     <Recast Cooldown="0.5" RageCost="75" />
-    <Specific_Ironguard MaxDuration="10" MaxAbsorption="100" MaxAbsorptionPerLevel="0" MinDamageMultiplier="0.2" BreakDamageMultiplier="0.6" BreakDamageMultiplierPerLevel="0" ExplodeOrExpireDamageMultiplier="0.3" DamageRadius="3.5" EndingSoundTrigger="Play_Skill_IronGuard_End" BlockSoundTrigger="Play_Skill_IronGuard_Block" CastSoundTrigger="Play_Skill_IronGuard_Start" />
+    <Specific_Ironguard MaxDuration="10" MaxAbsorption="100" MaxAbsorptionPerLevel="0" MinDamageMultiplier="0.2" MaxDamageMultiplier="0.6" DamageMultiplierPerLevel="0" DamageRadius="3.5" EndingSoundTrigger="Play_Skill_IronGuard_End" BlockSoundTrigger="Play_Skill_IronGuard_Block" CastSoundTrigger="Play_Skill_IronGuard_Start" />
   </Skill>
   <Skill UID="player_Ironguard_variant_1" ESkill="default_variant">
     <HUD UIName="@ui_Variant_Ironguard_variant_1" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_003.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_003.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_003.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_003.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_003.png" ShowParamsInTooltip="SpecificIronguard,BlownAway" />
@@ -80,7 +80,7 @@
   <Skill UID="player_Ironguard_variant_13" ESkill="default_variant">
     <HUD UIName="@ui_Variant_Ironguard_variant_13" Lore="@ui_Variant_Ironguard_variant_13_lore" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_005.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_005.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_005.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_005.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_005.png" ShowParamsInTooltip="SpecificIronguard" />
     <SoundTrigger OnAnimCast="Play_Skill_IronGuard_Start_FireSweet" />
-    <Specific_Ironguard EndingSoundTrigger="Play_Skill_IronGuard_End_FireSweet" MinDamageMultiplier="0" BreakDamageMultiplier="0.2" ExplodeOrExpireDamageMultiplier="0.1" />
+    <Specific_Ironguard EndingSoundTrigger="Play_Skill_IronGuard_End_FireSweet" MinDamageMultiplier="0" MaxDamageMultiplier="0.2" />
     <Damage_Conversion>
       <Entry From="physical" To="fire" ConversionRate="100" />
     </Damage_Conversion>

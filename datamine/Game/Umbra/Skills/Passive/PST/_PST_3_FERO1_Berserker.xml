@@ -135,14 +135,14 @@
   <Spell Name="BSRK_17" UIName="@ui_BSRK_17_name" HUDLoreDesc="@ui_BSRK_17_loredesc" GameplayDesc="@ui_BSRK_17_gameplaydesc">
     <MagicEffects>
       <EIM Name="burn_stacks_consumption_chance_for_instant_damage" HUDDesc="@ui_eim_burn_stacks_consumption_chance_for_instant_damage" Permanent="1">
-        <Semantics ChancePercentInt="10" StackCountInt="5" DamagePercentFloat="10" />
+        <Semantics PossibilityInt="1" TriggeredSkillSelector="0" StackCountInt="5" ChancePercentInt="10" DamagePercentFloat="10" />
       </EIM>
     </MagicEffects>
   </Spell>
   <Spell Name="BSRK_18" UIName="@ui_BSRK_18_name" HUDLoreDesc="" GameplayDesc="">
     <MagicEffects>
       <EIM Name="burn_stacks_consumption_propagate_stacks_on_kill" HUDDesc="@ui_eim_burn_stacks_consumption_propagate_stacks_on_kill" Permanent="1">
-        <Semantics StackCountInt="5" TriggeredSkillSelector="0" PossibilityInt="1" />
+        <Semantics PossibilityInt="1" TriggeredSkillSelector="0" StackCountInt="5" />
       </EIM>
     </MagicEffects>
   </Spell>

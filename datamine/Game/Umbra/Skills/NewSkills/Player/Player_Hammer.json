@@ -242,9 +242,9 @@
           {
             "$": {
               "PercentMin": "-50",
-              "PercentMinPerLevel": "1",
+              "PercentMinPerLevel": "0",
               "PercentMax": "-50",
-              "PercentMaxPerLevel": "1"
+              "PercentMaxPerLevel": "0"
             }
           }
         ],
@@ -252,7 +252,7 @@
           {
             "$": {
               "AOERadius": "2.5",
-              "AOEDamageMultiplier": "0.25",
+              "AOEDamageMultiplier": "0.2",
               "AOETime": "0.9"
             }
           }
@@ -316,10 +316,10 @@
         "DamageWeapon": [
           {
             "$": {
-              "PercentMin": "-100",
-              "PercentMinPerLevel": "1",
-              "PercentMax": "-100",
-              "PercentMaxPerLevel": "1"
+              "PercentMin": "-150",
+              "PercentMinPerLevel": "-0",
+              "PercentMax": "-150",
+              "PercentMaxPerLevel": "-0"
             }
           }
         ]
@@ -490,7 +490,7 @@
         "DamageCritical": [
           {
             "$": {
-              "CriticalChanceFromBlockChance": "50"
+              "CriticalChanceFromBlockChance": "0.5"
             }
           }
         ]
@@ -678,7 +678,7 @@
         "DamageCritical": [
           {
             "$": {
-              "CriticalDamageModifier": "30"
+              "CriticalDamageModifier": "25"
             }
           }
         ]

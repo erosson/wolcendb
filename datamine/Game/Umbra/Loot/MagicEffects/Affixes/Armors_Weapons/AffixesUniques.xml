@@ -2045,15 +2045,15 @@
       <HiRoll LocalPercentFloat="60" />
     </MagicEffect>
   </Affix>
-  <Affix AffixId="unique_purifier_shoulder_local_health_percent" Class="" AffixType="default">
+  <Affix AffixId="unique_purifier_shoulder_health_pts" Class="" AffixType="default">
     <DropParams Frequency="1">
       <ItemLevel LevelMin="1" LevelMax="90" />
       <Keywords OptionalKeywords="" MandatoryKeywords="unique" />
       <ItemRarity Magic="0" Rare="0" Set="1" Legendary="0" />
     </DropParams>
-    <MagicEffect EffectId="local_health_percent">
-      <LoRoll LocalPercentFloat="200" />
-      <HiRoll LocalPercentFloat="300" />
+    <MagicEffect EffectId="health_pts">
+      <LoRoll HealthFlatInt="60" />
+      <HiRoll HealthFlatInt="100" />
     </MagicEffect>
   </Affix>
   <Affix AffixId="unique_purifier_shoulder_blockchance_unconditional_flat" Class="" AffixType="default">

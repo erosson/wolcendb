@@ -11405,7 +11405,7 @@
       },
       {
         "$": {
-          "AffixId": "unique_purifier_shoulder_local_health_percent",
+          "AffixId": "unique_purifier_shoulder_health_pts",
           "Class": "",
           "AffixType": "default"
         },
@@ -11445,19 +11445,19 @@
         "MagicEffect": [
           {
             "$": {
-              "EffectId": "local_health_percent"
+              "EffectId": "health_pts"
             },
             "LoRoll": [
               {
                 "$": {
-                  "LocalPercentFloat": "200"
+                  "HealthFlatInt": "60"
                 }
               }
             ],
             "HiRoll": [
               {
                 "$": {
-                  "LocalPercentFloat": "300"
+                  "HealthFlatInt": "100"
                 }
               }
             ]
