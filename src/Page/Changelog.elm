@@ -7,14 +7,14 @@ import Html.Events as E exposing (..)
 import Markdown
 
 
-view : { m | datamine : Datamine, changelog : String } -> List (Html msg)
-view m =
+view : Datamine -> { m | changelog : String } -> List (Html msg)
+view dm m =
     [ small []
         [ p []
             [ text "WolcenDB based on Wolcen build revision "
-            , code [] [ text m.datamine.revision.buildRevision ]
+            , code [] [ text dm.revision.buildRevision ]
             , text ", created at "
-            , code [] [ text m.datamine.revision.date ]
+            , code [] [ text dm.revision.date ]
             ]
         ]
     , m.changelog

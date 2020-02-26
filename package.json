@@ -14,6 +14,7 @@
     "start": "bash -c \"ELM_DEBUGGER=false elm-app start\"",
     "build": "bash -c \"yarn build-search-index && elm-app build\"",
     "build:ci": "bash -c \"yarn test && yarn build\"",
+    "build:serve": "bash -c \"serve build\"",
     "test": "node --experimental-modules tests/fixture.mjs && elm-app test"
   },
   "devDependencies": {
@@ -27,6 +28,7 @@
     "node-sass": "^4.13.1",
     "raw-loader": "^4.0.0",
     "sass-loader": "^8.0.2",
+    "serve": "^11.3.0",
     "style-loader": "^1.1.3",
     "xml2js": "^0.4.23"
   },

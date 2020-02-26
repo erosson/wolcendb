@@ -5,6 +5,7 @@ import Datamine exposing (Datamine)
 import Html as H exposing (..)
 import Html.Attributes as A exposing (..)
 import Html.Events as E exposing (..)
+import RemoteData exposing (RemoteData)
 import Route exposing (Route)
 import Search exposing (Index, SearchResult)
 
@@ -14,13 +15,19 @@ type Msg
     | SearchSubmit
 
 
-type alias Model m =
+type alias ReadyModel m =
     { m
         | datamine : Datamine
-        , nav : Nav.Key
-        , searchIndex : Index
+        , searchIndex : Search.Index
+    }
+
+
+type alias Model m =
+    { m
+        | nav : Nav.Key
         , globalSearch : String
         , globalSearchResults : Result String (List SearchResult)
+        , searchIndex : RemoteData String Search.Index
     }
 
 
@@ -57,21 +64,21 @@ view m =
         ]
 
 
-update : Msg -> Model m -> ( Model m, Cmd Msg )
-update msg model =
+update : Msg -> ReadyModel r -> Model m -> ( Model m, Cmd Msg )
+update msg ok model =
     case msg of
         SearchInput q ->
-            ( model |> search q, Cmd.none )
+            ( model |> search q ok, Cmd.none )
 
         SearchSubmit ->
             ( model, Just model.globalSearch |> Route.Search |> Route.pushUrl model.nav )
 
 
-search : String -> Model m -> Model m
-search q model =
-    case Search.search model.datamine q model.searchIndex of
+search : String -> ReadyModel r -> Model m -> Model m
+search q ok model =
+    case Search.search ok.datamine q ok.searchIndex of
         Err err ->
             { model | globalSearch = q, globalSearchResults = Err err }
 
         Ok ( index, res ) ->
-            { model | globalSearch = q, globalSearchResults = Ok res, searchIndex = index }
+            { model | globalSearch = q, globalSearchResults = Ok res, searchIndex = RemoteData.Success index }

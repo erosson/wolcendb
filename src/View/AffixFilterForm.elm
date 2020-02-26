@@ -13,8 +13,7 @@ import View.Affix
 
 type alias Model m =
     { m
-        | datamine : Datamine
-        , expandedAffixClasses : Set String
+        | expandedAffixClasses : Set String
         , filterItemLevel : Int
         , filterGemFamilies : Set String
         , filterKeywords : Set String
@@ -27,14 +26,14 @@ type Msg
     | InputKeywordFilter String
 
 
-isVisible : Model m -> MagicAffix -> Bool
-isVisible model aff =
+isVisible : Datamine -> Model m -> MagicAffix -> Bool
+isVisible dm model aff =
     (model.filterItemLevel <= 0 || (model.filterItemLevel >= aff.drop.itemLevel.min && model.filterItemLevel <= aff.drop.itemLevel.max))
-        && GemFamily.filterAffix model.datamine model.filterGemFamilies aff
+        && GemFamily.filterAffix dm model.filterGemFamilies aff
 
 
-update : Msg -> Model m -> Model m
-update msg model =
+update : Msg -> Datamine -> Model m -> Model m
+update msg dm model =
     case msg of
         InputItemLevel s ->
             if s == "" then
@@ -93,8 +92,8 @@ viewLevelForm model =
         ]
 
 
-viewGemForm : Model m -> Html Msg
-viewGemForm model =
+viewGemForm : Datamine -> Model m -> Html Msg
+viewGemForm dm model =
     H.form []
         [ div [ class "form-group form-row" ]
             [ div
@@ -103,7 +102,7 @@ viewGemForm model =
                 ]
                 [ text "Show only affixes of gem families " ]
             , div [ class "col" ]
-                (model.datamine.gemFamilies
+                (dm.gemFamilies
                     |> List.map
                         (\fam ->
                             let
@@ -119,7 +118,7 @@ viewGemForm model =
                                     ]
                                     []
                                 , H.label [ class "form-check-label", for id ]
-                                    [ img [ class "gem-icon", src <| GemFamily.img model.datamine fam ] []
+                                    [ img [ class "gem-icon", src <| GemFamily.img dm fam ] []
                                     ]
                                 ]
                         )
@@ -128,8 +127,8 @@ viewGemForm model =
         ]
 
 
-viewKeywordForm : Model m -> Html Msg
-viewKeywordForm model =
+viewKeywordForm : Datamine -> Model m -> Html Msg
+viewKeywordForm dm model =
     H.form []
         [ div [ class "form-group form-row" ]
             [ div
@@ -138,7 +137,7 @@ viewKeywordForm model =
                 ]
                 [ text "Show only affixes with keyword" ]
             , div [ class "col" ]
-                (model.datamine.magicAffixesKeywords
+                (dm.magicAffixesKeywords
                     |> List.map
                         (\kw ->
                             let

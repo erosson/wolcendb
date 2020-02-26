@@ -27,14 +27,14 @@ type Msg
     | FormMsg View.AffixFilterForm.Msg
 
 
-update : Msg -> Model m -> Model m
-update msg model =
+update : Msg -> Datamine -> Model m -> Model m
+update msg dm model =
     case msg of
         ItemMsg msg_ ->
             View.Affix.update msg_ model
 
         FormMsg msg_ ->
-            View.AffixFilterForm.update msg_ model
+            View.AffixFilterForm.update msg_ dm model
 
 
 viewTitle : Datamine -> String -> String
@@ -44,18 +44,15 @@ viewTitle dm name =
         |> Maybe.withDefault ""
 
 
-view : Model m -> String -> Maybe (List (Html Msg))
-view model name =
-    Dict.get (String.toLower name) model.datamine.lootByName
-        |> Maybe.map (viewMain model)
+view : Datamine -> Model m -> String -> Maybe (List (Html Msg))
+view dm model name =
+    Dict.get (String.toLower name) dm.lootByName
+        |> Maybe.map (viewMain dm model)
 
 
-viewMain : Model m -> NormalItem -> List (Html Msg)
-viewMain m nitem =
+viewMain : Datamine -> Model m -> NormalItem -> List (Html Msg)
+viewMain dm m nitem =
     let
-        dm =
-            m.datamine
-
         label =
             NormalItem.label dm nitem |> Maybe.withDefault "???" |> text
     in
@@ -78,9 +75,9 @@ viewMain m nitem =
             ]
         ]
     , View.AffixFilterForm.viewLevelForm m |> H.map FormMsg
-    , View.AffixFilterForm.viewGemForm m |> H.map FormMsg
+    , View.AffixFilterForm.viewGemForm dm m |> H.map FormMsg
     , NormalItem.possibleAffixes dm nitem
-        |> List.filter (View.AffixFilterForm.isVisible m)
+        |> List.filter (View.AffixFilterForm.isVisible dm m)
         |> View.Affix.viewItem dm m.expandedAffixClasses
         |> div []
         |> H.map ItemMsg

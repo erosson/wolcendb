@@ -28,4 +28,7 @@ node_modules
 tests/Fixture/Json.elm
 
 # search index. Can be derived from other stuff in /datamine using `yarn build-search-index`, no need to commit
-/datamine/searchIndex.json
+/public/searchIndex.json
+
+# Wolcen data. Fetch separately from webpack/js because it's really big.
+/public/all.json

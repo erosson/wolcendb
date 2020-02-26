@@ -14,7 +14,10 @@ app.ports.stderr.subscribe(err => {
   process.exit(1)
 })
 app.ports.stdout.subscribe(out => {
-  promisify(fs.writeFile)(__dirname + '/../datamine/searchIndex.json', JSON.stringify(out))
+  Promise.all([
+    promisify(fs.writeFile)(__dirname + '/../public/searchIndex.json', JSON.stringify(out)),
+    promisify(fs.writeFile)(__dirname + '/../public/all.json', JSON.stringify(datamine)),
+  ])
   .then(() => process.exit(0))
   .catch(err => {
     // console.error(err)

@@ -18,7 +18,7 @@ type Msg
 
 
 type alias Model m =
-    { m | datamine : Datamine, cityPlayerLevel : Int }
+    { m | cityPlayerLevel : Int }
 
 
 update : Msg -> Model m -> Model m
@@ -37,18 +37,15 @@ update msg model =
                         { model | cityPlayerLevel = clamp 0 90 n }
 
 
-view : Model m -> String -> Maybe (List (Html Msg))
-view model name =
-    Dict.get name model.datamine.cityBuildingsByName
-        |> Maybe.map (viewMain model)
+view : Datamine -> Model m -> String -> Maybe (List (Html Msg))
+view dm model name =
+    Dict.get name dm.cityBuildingsByName
+        |> Maybe.map (viewMain dm model)
 
 
-viewMain : Model m -> City.Building -> List (Html Msg)
-viewMain model building =
+viewMain : Datamine -> Model m -> City.Building -> List (Html Msg)
+viewMain dm model building =
     let
-        dm =
-            model.datamine
-
         label =
             City.label dm building |> Maybe.withDefault "???"
     in
@@ -92,19 +89,16 @@ viewMain model building =
                                 ]
                             ]
                         , div [ class "mx-2" ] [ City.projectOutcomes dm r.project |> Maybe.withDefault "???" |> text ]
-                        , ul [ class "card-body" ] (viewRewards model <| City.projectRewards dm r.project)
+                        , ul [ class "card-body" ] (viewRewards dm model <| City.projectRewards dm r.project)
                         ]
                 )
         )
     ]
 
 
-viewRewards : Model m -> List { weight : Int, reward : City.Reward } -> List (Html msg)
-viewRewards model rolls =
+viewRewards : Datamine -> Model m -> List { weight : Int, reward : City.Reward } -> List (Html msg)
+viewRewards dm model rolls =
     let
-        dm =
-            model.datamine
-
         totalWeight =
             rolls |> List.map .weight |> List.sum
     in

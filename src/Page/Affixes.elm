@@ -26,25 +26,25 @@ type Msg
     | FormMsg View.AffixFilterForm.Msg
 
 
-update : Msg -> Model m -> Model m
-update msg model =
+update : Msg -> Datamine -> Model m -> Model m
+update msg dm model =
     case msg of
         ExpandClass cls ->
             { model | expandedAffixClasses = model.expandedAffixClasses |> Util.toggleSet cls }
 
         FormMsg msg_ ->
-            View.AffixFilterForm.update msg_ model
+            View.AffixFilterForm.update msg_ dm model
 
 
-view : Model m -> List (Html Msg)
-view model =
+view : Datamine -> Model m -> List (Html Msg)
+view dm model =
     [ ol [ class "breadcrumb" ]
         [ a [ class "breadcrumb-item active", Route.href Route.Home ] [ text "Home" ]
         , a [ class "breadcrumb-item active", Route.href Route.Affixes ] [ text "Affixes" ]
         ]
     , View.AffixFilterForm.viewLevelForm model |> H.map FormMsg
-    , View.AffixFilterForm.viewGemForm model |> H.map FormMsg
-    , View.AffixFilterForm.viewKeywordForm model |> H.map FormMsg
+    , View.AffixFilterForm.viewGemForm dm model |> H.map FormMsg
+    , View.AffixFilterForm.viewKeywordForm dm model |> H.map FormMsg
     , table [ class "table affixes" ]
         [ thead []
             [ tr []
@@ -59,7 +59,7 @@ view model =
                 ]
             ]
         , tbody []
-            (model.datamine.affixes.magic
+            (dm.affixes.magic
                 |> (if Set.isEmpty model.filterKeywords then
                         identity
 
@@ -68,39 +68,39 @@ view model =
                         -- List.filter (NormalItem.isKeywordAffix model.filterKeywords)
                         List.filter (\a -> a.drop.mandatoryKeywords ++ a.drop.optionalKeywords |> List.any (\k -> Set.member k model.filterKeywords))
                    )
-                |> List.filter (View.AffixFilterForm.isVisible model)
+                |> List.filter (View.AffixFilterForm.isVisible dm model)
                 |> View.Affix.affixesByClass
-                |> List.concatMap (viewAffixClass model)
+                |> List.concatMap (viewAffixClass dm model)
             )
         ]
     ]
 
 
-viewAffixClass : Model m -> ( String, List MagicAffix ) -> List (Html Msg)
-viewAffixClass model ( cls, affixes ) =
+viewAffixClass : Datamine -> Model m -> ( String, List MagicAffix ) -> List (Html Msg)
+viewAffixClass dm model ( cls, affixes ) =
     case affixes of
         [] ->
             []
 
         [ affix ] ->
-            [ viewAffixRow model affix ]
+            [ viewAffixRow dm model affix ]
 
         head :: _ ->
             let
                 isExpanded =
                     Set.member cls model.expandedAffixClasses
             in
-            viewAffixClassRow model ( cls, affixes )
+            viewAffixClassRow dm model ( cls, affixes )
                 :: (if isExpanded then
-                        List.map (viewAffixRow model) affixes
+                        List.map (viewAffixRow dm model) affixes
 
                     else
                         []
                    )
 
 
-viewAffixClassRow : Model m -> ( String, List MagicAffix ) -> Html Msg
-viewAffixClassRow model ( cls, affixes ) =
+viewAffixClassRow : Datamine -> Model m -> ( String, List MagicAffix ) -> Html Msg
+viewAffixClassRow dm model ( cls, affixes ) =
     let
         isExpanded =
             Set.member cls model.expandedAffixClasses
@@ -110,7 +110,7 @@ viewAffixClassRow model ( cls, affixes ) =
             affixes
                 |> List.concatMap .effects
                 |> View.Affix.summarizeEffects
-                |> List.filterMap (Affix.formatEffect model.datamine)
+                |> List.filterMap (Affix.formatEffect dm)
 
         keywords : List String
         keywords =
@@ -160,11 +160,11 @@ viewAffixClassRow model ( cls, affixes ) =
         ]
 
 
-viewAffixRow : Model m -> MagicAffix -> Html msg
-viewAffixRow model a =
+viewAffixRow : Datamine -> Model m -> MagicAffix -> Html msg
+viewAffixRow dm model a =
     tr []
         [ td [] []
-        , td [] [ ul [ title a.affixId, class "affixes" ] <| View.Affix.viewAffix model.datamine a ]
+        , td [] [ ul [ title a.affixId, class "affixes" ] <| View.Affix.viewAffix dm a ]
 
         -- , td [] [ text <| Maybe.withDefault "???CLASS???" a.class ]
         , td [] [ text <| String.fromInt a.tier ]
@@ -212,6 +212,6 @@ viewAffixRow model a =
              ]
                 |> List.concat
             )
-        , td [ class "nowrap" ] (View.Affix.viewGemFamilies model.datamine a)
+        , td [ class "nowrap" ] (View.Affix.viewGemFamilies dm a)
         , td [] [ text "[", H.a [ Route.href <| Route.Source "magic-affix" a.affixId ] [ text "Source" ], text "]" ]
         ]
