@@ -69,17 +69,16 @@ type alias ReadyModel =
 
 type alias Flags =
     { changelog : String
-
-    -- , datamine : Datamine.Flag
-    -- , searchIndex : D.Value
+    , datamine : Maybe D.Value
+    , searchIndex : Maybe D.Value
     }
 
 
 init : Flags -> Url -> Nav.Key -> ( Model, Cmd Msg )
 init flags url nav =
     { nav = nav
-    , datamine = RemoteData.NotAsked
-    , searchIndex = RemoteData.NotAsked
+    , datamine = flags.datamine |> maybeDecode Datamine.decode
+    , searchIndex = flags.searchIndex |> maybeDecode Search.decodeIndex
     , changelog = flags.changelog
     , route = Nothing
     , expandedAffixClasses = Set.empty
@@ -92,6 +91,19 @@ init flags url nav =
     , progress = Dict.empty
     }
         |> routeTo (Route.parse url)
+
+
+maybeDecode : (D.Value -> Result String a) -> Maybe D.Value -> RemoteData String a
+maybeDecode decoder mjson =
+    case mjson |> Maybe.map decoder of
+        Nothing ->
+            RemoteData.NotAsked
+
+        Just (Err err) ->
+            RemoteData.Failure err
+
+        Just (Ok ok) ->
+            RemoteData.Success ok
 
 
 readyModel : Model -> RemoteData String ReadyModel

@@ -2,14 +2,15 @@ import '!!style-loader!css-loader!sass-loader!./main.scss';
 import 'bootstrap'
 import { Elm } from './Main.elm';
 import * as serviceWorker from './serviceWorker';
-// import datamine from '../datamine/imports.js'
 import changelog from '!!raw-loader!../CHANGELOG.md'
-// import searchIndex from '../datamine/searchIndex.json'
 import analytics from './analytics'
 import sizes from '../datamine/sizes.json'
+// import datamine from '../datamine/imports.js'
+// import searchIndex from '../public/searchIndex.json'
 
 const app = Elm.Main.init({
-  flags: {changelog},
+  // flags: {changelog, datamine, searchIndex},
+  flags: {changelog, datamine: null, searchIndex: null},
   node: document.getElementById('root')
 })
 analytics(app)
