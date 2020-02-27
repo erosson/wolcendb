@@ -15,15 +15,29 @@ const app = Elm.Main.init({
 })
 analytics(app)
 
-onProgress('datamine')(0)
-onProgress('searchIndex')(0)
-Promise.all([
-  fetch('/datamine.json').then(res => ProgressResponse(res, {onProgress: onProgress('datamine')}).json()),
-  fetch('/searchIndex.json').then(res => ProgressResponse(res, {onProgress: onProgress('searchIndex')}).json()),
-])
+fetchAssets(app)
 .then(([datamine, searchIndex]) => {
   app.ports.loadAssets.send({datamine, searchIndex})
 })
+.catch(err => console.log('fetch error', err))
+function fetchAssets(app) {
+  const isProgressSupported = window.Response && window.ReadableStream
+  if (isProgressSupported) {
+    onProgress('datamine')(0)
+    onProgress('searchIndex')(0)
+    return Promise.all([
+      fetch('/datamine.json').then(res => ProgressResponse(res, {onProgress: onProgress('datamine')}).json()),
+      fetch('/searchIndex.json').then(res => ProgressResponse(res, {onProgress: onProgress('searchIndex')}).json()),
+    ])
+  }
+  else {
+    console.warn('loading progressbar unsupported by this browser, trying to load without it')
+    return Promise.all([
+      fetch('/datamine.json').then(res => res.json()),
+      fetch('/searchIndex.json').then(res => res.json()),
+    ])
+  }
+}
 
 function onProgress(label) {
   return progress => {
@@ -34,8 +48,8 @@ function ProgressResponse(response, {onProgress}) {
   // thanks, https://github.com/AnthumChris/fetch-progress-indicators/blob/master/fetch-basic/supported-browser.js
   // don't trust content-length, it fails with gzip. sizes.json tells expected unzipped sizes.
   let loaded = 0
-  return new Response(
-    new ReadableStream({
+  try {
+    const stream = new ReadableStream({
       start(controller) {
         const reader = response.body.getReader()
         read()
@@ -51,13 +65,22 @@ function ProgressResponse(response, {onProgress}) {
             read()
           })
           .catch(error => {
-            console.error(error)
+            console.error('ReadableStream error', error)
             controller.error(error)
           })
         }
-      }
+      },
+      pull(controller){},
+      cancel(){},
     })
-  )
+    return new Response(stream)
+  }
+  catch (e) {
+    // Edge, I thought you were supposed to be better than IE. C'mon.
+    // https://stackoverflow.com/questions/55294816/how-do-i-create-a-readablestream-in-microsoft-edge
+    console.warn('ProgressResponse failed, trying original response.', e)
+    return response
+  }
 }
 
 // If you want your app to work offline and load faster, you can change
