@@ -6,6 +6,7 @@ module Datamine.Skill exposing
     , astsDecoder
     , decoder
     , desc
+    , effects
     , label
     , lore
     , modDesc
@@ -15,9 +16,11 @@ module Datamine.Skill exposing
 import Datamine.Lang as Lang
 import Datamine.Source as Source exposing (Source)
 import Datamine.Util as Util
+import Dict exposing (Dict)
 import Json.Decode as D
 import Json.Decode.Pipeline as P
 import Result.Extra
+import Set exposing (Set)
 
 
 type alias Skill =
@@ -35,6 +38,7 @@ type alias SkillVariant =
     { source : Source
     , uid : String
     , uiName : String
+    , hudPicture : String
     , lore : Maybe String
     }
 
@@ -100,6 +104,71 @@ modTotals ast =
                     loop param1 param2 ({ head | param1 = param1, param2 = param2 } :: accum) tail
     in
     loop 0 0 [] ast.modifiers
+
+
+{-| Try to get the numbers associated with skills and skill-variants.
+
+There are so many different keys with no UI representation. Listing them all is
+painful - instead, just examine the source (already parsed, conveniently) and
+pick out interesting-looking values with a reasonable heuristic.
+
+-}
+effects : { s | source : Source } -> List ( String, Float )
+effects s =
+    Source.children s.source.node.children
+        |> List.filter (\n -> Set.member n.tag ignoredEffects |> not)
+        |> List.concatMap
+            (\node ->
+                case node.tag of
+                    "Damage_Conversion" ->
+                        Source.children node.children
+                            |> List.filter (\n -> n.tag == "Entry")
+                            |> List.filterMap
+                                (\entry ->
+                                    let
+                                        attrs =
+                                            Dict.fromList entry.attrs
+                                    in
+                                    Maybe.map3
+                                        (\from to rate ->
+                                            ( [ node.tag, from, to, "ConversionRate" ], rate )
+                                        )
+                                        (Dict.get "From" attrs)
+                                        (Dict.get "To" attrs)
+                                        (Dict.get "ConversionRate" attrs |> Maybe.andThen String.toFloat)
+                                )
+
+                    "StatusAilment" ->
+                        Source.children node.children
+                            |> List.filterMap
+                                (\entry ->
+                                    let
+                                        attrs =
+                                            Dict.fromList entry.attrs
+                                    in
+                                    Maybe.map2
+                                        (\chance mode ->
+                                            ( [ node.tag, entry.tag, "Chance", mode ], chance )
+                                        )
+                                        (Dict.get "Chance" attrs |> Maybe.andThen String.toFloat)
+                                        (Dict.get "ChanceMode" attrs)
+                                )
+                            |> (++) (commonSkillEffect node)
+
+                    _ ->
+                        commonSkillEffect node
+            )
+        |> List.map (Tuple.mapFirst (String.join "."))
+
+
+commonSkillEffect node =
+    -- general number-ish attributes; the common case
+    node.attrs |> List.filterMap (\( attr, val ) -> String.toFloat val |> Maybe.map (Tuple.pair [ node.tag, attr ]))
+
+
+ignoredEffects : Set String
+ignoredEffects =
+    Set.fromList [ "HUD", "Animation", "SoundTrigger" ]
 
 
 lore : Lang.Datamine d -> { s | lore : Maybe String } -> Maybe String
@@ -170,8 +239,11 @@ type alias SkillDecoder =
     , uid : String
     , uiName : Maybe String
     , hudPicture : Maybe String
+    , hudPictureVariant : Maybe String
     , lore : Maybe String
     , keywords : Maybe (List String)
+
+    -- , effects : List ( String, List ( String, Maybe String ) )
     }
 
 
@@ -185,8 +257,10 @@ skillDecoder file =
         |> P.requiredAt [ "$", "UID" ] D.string
         |> P.optionalAt [ "HUD", "0", "$", "UIName" ] (D.string |> D.map Just) Nothing
         |> P.optionalAt [ "HUD", "0", "$", "HUDPicture" ] (D.string |> D.map Just) Nothing
+        |> P.optionalAt [ "HUD", "0", "$", "HUDPictureVariant_Normal" ] (D.string |> D.map Just) Nothing
         |> P.optionalAt [ "HUD", "0", "$", "Lore" ] (D.string |> D.map Just) Nothing
         |> P.optionalAt [ "HUD", "0", "$", "Keywords" ] (Util.csStrings |> D.map Just) Nothing
+        -- |> P.custom (D.keyValuePairs (D.keyValuePairs (D.maybe D.string)))
         |> D.list
         |> D.at [ "MetaData", "Skill" ]
         |> D.andThen
@@ -206,15 +280,17 @@ skillDecoder file =
                                         vs
                                             |> List.filterMap
                                                 (\v ->
-                                                    Maybe.map
-                                                        (\vUiName ->
+                                                    Maybe.map2
+                                                        (\vUiName vHudPicture ->
                                                             { source = v.source
                                                             , uid = v.uid
                                                             , uiName = vUiName
+                                                            , hudPicture = vHudPicture
                                                             , lore = v.lore
                                                             }
                                                         )
                                                         v.uiName
+                                                        v.hudPictureVariant
                                                 )
                                     }
 

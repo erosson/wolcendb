@@ -61,32 +61,41 @@ view dm uid =
                             , div [] [ text "[", a [ Route.href <| Route.Source "skill" uid ] [ text "Source" ], text "]" ]
                             ]
                         , Skill.desc dm skill |> View.Desc.mformat |> Maybe.withDefault [ text "???" ] |> p []
+
+                        -- showing base skill effects just isn't very useful
+                        -- , div [] (viewSkillEffects <| Skill.effects skill)
                         , Skill.lore dm skill |> View.Desc.mformat |> Maybe.withDefault [] |> p []
                         , table [ class "table" ]
                             [ thead []
                                 [ tr []
-                                    [ th [] [ text "name" ]
-                                    , th [] [ text "desc" ]
+                                    [ th [] [ text "" ]
+                                    , th [] [ text "" ]
+                                    , th [] [ text "name" ]
                                     , th [] [ text "level" ]
                                     , th [] [ text "cost" ]
-                                    , th [] [ text "lore" ]
+                                    , th [] [ text "desc" ]
                                     ]
                                 ]
                             , tbody []
                                 (vas
-                                    |> List.map
-                                        (\( va, v ) ->
+                                    |> List.indexedMap
+                                        (\i ( va, v ) ->
                                             tr []
-                                                [ td []
+                                                [ td [] [ text <| String.fromInt <| i + 1 ]
+                                                , td [] [ img [ class "skill-variant", View.Skill.img v ] [] ]
+                                                , td []
                                                     [ span [ title v.uiName ] [ Skill.label dm v |> Maybe.withDefault "???" |> text ]
                                                     , div [] [ text "[", a [ Route.href <| Route.Source "skill-variant" v.uid ] [ text "Source" ], text "]" ]
                                                     ]
-                                                , td [ title <| v.uiName ++ "_desc" ]
-                                                    (Skill.desc dm v |> View.Desc.mformat |> Maybe.withDefault [ text "???" ])
                                                 , td [] [ text <| String.fromInt va.level ]
                                                 , td [] [ text <| String.fromInt va.cost ]
-                                                , td [ title <| Maybe.withDefault "" v.lore ]
-                                                    (Skill.lore dm v |> View.Desc.mformat |> Maybe.withDefault [])
+                                                , td []
+                                                    [ div [ title <| v.uiName ++ "_desc" ]
+                                                        (Skill.desc dm v |> View.Desc.mformat |> Maybe.withDefault [ text "???" ])
+                                                    , div [ class "card" ] (viewSkillEffects <| Skill.effects v)
+                                                    , div [ title <| Maybe.withDefault "" v.lore ]
+                                                        (Skill.lore dm v |> View.Desc.mformat |> Maybe.withDefault [])
+                                                    ]
                                                 ]
                                         )
                                 )
@@ -116,3 +125,14 @@ view dm uid =
                     ]
                 ]
             )
+
+
+viewSkillEffects : List ( String, Float ) -> List (Html msg)
+viewSkillEffects =
+    List.map
+        (\( name, val ) ->
+            div [ class "row" ]
+                [ div [ class "col-8 text-monospace", style "text-align" "right" ] [ text name ]
+                , div [ class "col-4 text-monospace" ] [ text <| Util.formatFloat 5 val ]
+                ]
+        )

@@ -78,6 +78,7 @@ function pngMain() {
     glob(prefix + "Game/Libs/UI/u_resources/armors/**/*.png", null),
     glob(prefix + "Game/Libs/UI/u_resources/weapons/**/*.png", null),
     glob(prefix + "Game/Libs/UI/u_resources/spells/Active_Skills/**/*.png", null),
+    glob(prefix + "Game/Libs/UI/u_resources/spells/variants/**/*.png", null),
     glob(prefix + "Game/Libs/UI/u_resources/gems/**/*.png", null),
     glob(prefix + "Game/Libs/UI/u_resources/reagents/**/*.png", null),
   ])

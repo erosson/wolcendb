@@ -1,4 +1,4 @@
-module Datamine.Source exposing (Source, SourceNode, SourceNodeChildren(..), decoder)
+module Datamine.Source exposing (Source, SourceNode, SourceNodeChildren(..), children, decoder)
 
 import Datamine.Util as Util
 import Json.Decode as D
@@ -19,6 +19,11 @@ type alias SourceNode =
 
 type SourceNodeChildren
     = SourceNodeChildren (List SourceNode)
+
+
+children : SourceNodeChildren -> List SourceNode
+children (SourceNodeChildren ns) =
+    ns
 
 
 decoder : String -> String -> D.Decoder Source
