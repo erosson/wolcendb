@@ -4,6 +4,8 @@ Changelog
 ---
 
 #### 2020-02-27
+- Item affixes are now grouped by prefix/suffix, instead of a single list with all possible affixes.
+  - [Thanks to Wujido](https://youtu.be/jcYnamTR4f8) for teaching me that prefix/suffix matter! Previously I assumed they were an old code artifact and made no difference.
 - Weapons now show rage per hit.
 - Added an [Offline] link to unique items.
 

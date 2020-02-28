@@ -117,18 +117,31 @@ viewItem dm expandeds affixes =
         ( sarisels, naturals ) =
             affixes1
                 |> List.partition (\a -> a.drop.sarisel)
+
+        ( naturalPre, naturalSuf ) =
+            naturals |> List.partition (\a -> a.type_ == "prefix")
+
+        ( sariselPre, sariselSuf ) =
+            sarisels |> List.partition (\a -> a.type_ == "prefix")
+
+        ( craftablePre, craftableSuf ) =
+            craftables |> List.partition (\a -> a.type_ == "prefix")
     in
     --[ div [ class "alert alert-warning" ]
     --    [ text "Beware: affix possibilities below might be wrong - the developer isn't completely sure how they work yet. "
     --    , a [ href "https://gitlab.com/erosson/wolcendb/issues" ] [ text "Please file an issue if these are wrong!" ]
     --    ]
     [ div [ class "row" ]
-        [ div [ class "col-sm" ]
-            [ viewItemAffixes "Magic affixes [click to expand]" dm expandeds naturals
-            , viewItemAffixes "Sarisel affixes" dm expandeds sarisels
-            ]
-        , div [ class "col-sm" ]
-            [ viewItemAffixes "Craft-only affixes" dm expandeds craftables ]
+        [ div [ class "col-sm" ] [ viewItemAffixes "Magic prefixes [click to expand]" dm expandeds naturalPre ]
+        , div [ class "col-sm" ] [ viewItemAffixes "Magic suffixes" dm expandeds naturalSuf ]
+        ]
+    , div [ class "row" ]
+        [ div [ class "col-sm" ] [ viewItemAffixes "Sarisel prefixes" dm expandeds sariselPre ]
+        , div [ class "col-sm" ] [ viewItemAffixes "Sarisel suffixes" dm expandeds sariselSuf ]
+        ]
+    , div [ class "row" ]
+        [ div [ class "col-sm" ] [ viewItemAffixes "Craft-only prefixes" dm expandeds craftablePre ]
+        , div [ class "col-sm" ] [ viewItemAffixes "Craft-only suffixes" dm expandeds craftableSuf ]
         ]
     ]
 
