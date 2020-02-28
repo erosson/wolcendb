@@ -9,6 +9,7 @@ import Html.Attributes as A exposing (..)
 import Html.Events as E exposing (..)
 import Json.Encode
 import Maybe.Extra
+import Page.SkillVariant exposing (viewSkillEffects)
 import Route exposing (Route)
 import Util
 import View.Desc
@@ -56,15 +57,17 @@ view dm uid =
                 , div [ class "card" ]
                     [ div [ class "card-header" ] [ text label ]
                     , div [ class "card-body" ]
-                        [ span [ class "float-right" ]
-                            [ img [ class "skill", View.Skill.img skill ] []
-                            , div [] [ text "[", a [ Route.href <| Route.Source "skill" uid ] [ text "Source" ], text "]" ]
+                        [ div [ class "media" ]
+                            [ div [ class "media-body" ]
+                                [ Skill.desc dm skill |> View.Desc.mformat |> Maybe.withDefault [ text "???" ] |> p []
+                                , Skill.lore dm skill |> View.Desc.mformat |> Maybe.withDefault [] |> p []
+                                , div [] (viewSkillEffects <| Skill.effects skill)
+                                ]
+                            , div []
+                                [ img [ class "skill", View.Skill.img skill ] []
+                                , div [] [ text "[", a [ Route.href <| Route.Source "skill" uid ] [ text "Source" ], text "]" ]
+                                ]
                             ]
-                        , Skill.desc dm skill |> View.Desc.mformat |> Maybe.withDefault [ text "???" ] |> p []
-
-                        -- showing base skill effects just isn't very useful
-                        -- , div [] (viewSkillEffects <| Skill.effects skill)
-                        , Skill.lore dm skill |> View.Desc.mformat |> Maybe.withDefault [] |> p []
                         , table [ class "table" ]
                             [ thead []
                                 [ tr []
@@ -125,14 +128,3 @@ view dm uid =
                     ]
                 ]
             )
-
-
-viewSkillEffects : List ( String, Float ) -> List (Html msg)
-viewSkillEffects =
-    List.map
-        (\( name, val ) ->
-            div [ class "row" ]
-                [ div [ class "col-8 text-monospace", style "text-align" "right" ] [ text name ]
-                , div [ class "col-4 text-monospace" ] [ text <| Util.formatFloat 5 val ]
-                ]
-        )

@@ -1,4 +1,4 @@
-module Page.SkillVariant exposing (view, viewTitle)
+module Page.SkillVariant exposing (view, viewSkillEffects, viewTitle)
 
 import Datamine exposing (Datamine)
 import Datamine.Skill as Skill exposing (Skill, SkillAST, SkillASTVariant, SkillVariant)
@@ -64,21 +64,25 @@ view dm uid =
                 , div [ class "card" ]
                     [ div [ class "card-header" ] [ text slabel, text ": ", text vlabel ]
                     , div [ class "card-body" ]
-                        [ span [ class "float-right" ]
-                            [ img [ class "skill", View.Skill.img skill ] []
-                            , div [] [ text "[", a [ Route.href <| Route.Source "skill-variant" uid ] [ text "Source" ], text "]" ]
+                        [ div [ class "media" ]
+                            [ div [ class "media-body" ]
+                                [ span [ class "float-left" ]
+                                    [ img [ class "skill-variant", View.Skill.img variant ] [] ]
+                                , div [] [ text "Variant #", index |> Maybe.Extra.unwrap "???" String.fromInt |> text ]
+                                , div [] [ text "Level: ", vast |> Maybe.Extra.unwrap "???" (.level >> String.fromInt) |> text ]
+                                , div [] [ text "Cost: ", vast |> Maybe.Extra.unwrap "???" (.cost >> String.fromInt) |> text ]
+                                , br [] []
+                                , div [ title <| variant.uiName ++ "_desc" ]
+                                    (Skill.desc dm variant |> View.Desc.mformat |> Maybe.withDefault [ text "???" ])
+                                , div [ title <| Maybe.withDefault "" variant.lore ]
+                                    (Skill.lore dm variant |> View.Desc.mformat |> Maybe.withDefault [])
+                                , div [ class "card" ] (viewSkillEffects <| Skill.effects variant)
+                                ]
+                            , div []
+                                [ img [ class "skill", View.Skill.img skill ] []
+                                , div [] [ text "[", a [ Route.href <| Route.Source "skill-variant" uid ] [ text "Source" ], text "]" ]
+                                ]
                             ]
-                        , span [ class "float-left" ]
-                            [ img [ class "skill-variant", View.Skill.img variant ] [] ]
-                        , div [] [ text "Variant #", index |> Maybe.Extra.unwrap "???" String.fromInt |> text ]
-                        , div [] [ text "Level: ", vast |> Maybe.Extra.unwrap "???" (.level >> String.fromInt) |> text ]
-                        , div [] [ text "Cost: ", vast |> Maybe.Extra.unwrap "???" (.cost >> String.fromInt) |> text ]
-                        , br [] []
-                        , div [ title <| variant.uiName ++ "_desc" ]
-                            (Skill.desc dm variant |> View.Desc.mformat |> Maybe.withDefault [ text "???" ])
-                        , div [ class "card" ] (viewSkillEffects <| Skill.effects variant)
-                        , div [ title <| Maybe.withDefault "" variant.lore ]
-                            (Skill.lore dm variant |> View.Desc.mformat |> Maybe.withDefault [])
                         ]
                     ]
                 ]
