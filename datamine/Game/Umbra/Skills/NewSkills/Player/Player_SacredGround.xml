@@ -84,7 +84,7 @@
   <Skill UID="player_sacredground_variant_10" ESkill="default_variant" Keywords="magic_spell">
     <HUD UIName="@ui_Variant_SacredGround_variant_10" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_001.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_001.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_001.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_001.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_001.png" ShowParamsInTooltip="SpecificSacredGround,DamageDetail" />
     <DamageBase Type="sacred" Min="3" MinPerLevel="1" Max="3" MaxPerLevel="1" />
-    <Specific_SacredGround DamageTickrate="0.5" />
+    <Specific_SacredGround DamageTickrate="1" />
   </Skill>
   <Skill UID="player_sacredground_variant_11" ESkill="default_variant" Keywords="magic_spell">
     <HUD UIName="@ui_Variant_SacredGround_variant_11" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_003.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_003.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_003.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_003.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_003.png" ShowParamsInTooltip="SpecificSacredGround" />

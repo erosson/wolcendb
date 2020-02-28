@@ -4,7 +4,7 @@
     <VisualFeedback TrailPresetBase="default" FeedbackPresetBase="Player_skill_frostnova" BloodDecalOrientation="forward" />
     <Animation ActionString="player_skill_frostnova" SkipAnimationWhileMoving="1" />
     <Collisions IgnoreEntityCollisions="1" />
-    <Cooldown Cooldown="10" CooldownPerLevel="-0.1" />
+    <Cooldown Cooldown="10" CooldownPerLevel="0" />
     <ResourceCost ManaCost="-100" ManaCostPerLevel="0" ROSTransfertDuration="1.0" />
     <Explosion ExplosionRadius="3" />
     <CastingParams CanMultiCast="1" />
