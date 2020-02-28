@@ -53,6 +53,7 @@ type alias UniqueWeapon =
     , defaultAffixes : List String
     , lore : Maybe String
     , damage : Maybe (Util.Range Int)
+    , resourceGain : Maybe (Util.Range Int)
     }
 
 
@@ -237,6 +238,7 @@ baseEffects dm uitem =
     case uitem of
         UWeapon w ->
             [ w.damage |> Maybe.andThen formatStat |> Maybe.map (\s -> "Damage: " ++ s)
+            , w.resourceGain |> Maybe.andThen formatStat |> Maybe.map (\s -> "Resource: " ++ s)
             ]
                 |> List.filterMap identity
 
@@ -353,6 +355,11 @@ uniqueWeaponsDecoder file =
                             (D.map2 (Maybe.map2 Util.Range)
                                 (D.maybe <| D.at [ "$", "LowDamage_Max" ] Util.intString)
                                 (D.maybe <| D.at [ "$", "HighDamage_Max" ] Util.intString)
+                            )
+                        |> P.custom
+                            (D.map2 (Maybe.map2 Util.Range)
+                                (D.maybe <| D.at [ "$", "ResourceGain_Min" ] Util.intString)
+                                (D.maybe <| D.at [ "$", "ResourceGain_Max" ] Util.intString)
                             )
                         |> D.map UWeapon
             )

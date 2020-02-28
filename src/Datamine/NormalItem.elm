@@ -40,6 +40,7 @@ type alias Weapon =
     , keywords : List String
     , implicitAffixes : List String
     , damage : Maybe (Util.Range Int)
+    , resourceGain : Maybe (Util.Range Int)
     }
 
 
@@ -174,6 +175,7 @@ baseEffects dm nitem =
     case nitem of
         NWeapon w ->
             [ w.damage |> Maybe.andThen formatStat |> Maybe.map (\s -> "Damage: " ++ s)
+            , w.resourceGain |> Maybe.andThen formatStat |> Maybe.map (\s -> "Resource: " ++ s)
             ]
                 |> List.filterMap identity
 
@@ -331,6 +333,11 @@ normalWeaponsDecoder file =
                             (D.map2 (Maybe.map2 Util.Range)
                                 (D.maybe <| D.at [ "$", "LowDamage_Max" ] Util.intString)
                                 (D.maybe <| D.at [ "$", "HighDamage_Max" ] Util.intString)
+                            )
+                        |> P.custom
+                            (D.map2 (Maybe.map2 Util.Range)
+                                (D.maybe <| D.at [ "$", "ResourceGain_Min" ] Util.intString)
+                                (D.maybe <| D.at [ "$", "ResourceGain_Max" ] Util.intString)
                             )
                         |> D.map NWeapon
             )

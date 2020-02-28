@@ -31,6 +31,7 @@ type Route
     | Reagents
     | City String
     | Source String String
+    | Offline String String
     | Search (Maybe String)
     | Table String
     | Changelog
@@ -55,6 +56,7 @@ parser =
         , P.map Reagents <| P.s "reagent"
         , P.map City <| P.s "city" </> P.string
         , P.map Source <| P.s "source" </> P.string </> P.string
+        , P.map Offline <| P.s "offline" </> P.string </> P.string
         , P.map Search <| P.s "search" <?> Q.string "q"
         , P.map Table <| P.s "table" </> P.string
         , P.map Changelog <| P.s "changelog"
@@ -131,6 +133,9 @@ toPath r =
         Source type_ id ->
             "/source/" ++ type_ ++ "/" ++ id
 
+        Offline type_ id ->
+            "/offline/" ++ type_ ++ "/" ++ id
+
         Search _ ->
             "/search"
 
@@ -187,6 +192,9 @@ toAnalytics mroute =
 
                 Source _ _ ->
                     toPath <| Source "TYPE" "ID"
+
+                Offline _ _ ->
+                    toPath <| Offline "TYPE" "ID"
 
                 Table _ ->
                     toPath <| Table "ID"

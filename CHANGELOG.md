@@ -3,6 +3,10 @@ Changelog
 
 ---
 
+#### 2020-02-27
+- Weapons now show rage per hit.
+- Added an [Offline] link to unique items.
+
 #### 2020-02-26
 - Updated to Wolcen v1.0.6.0. [Wolcen v1.0.4.0 to v1.0.6.0 source differences.](https://gitlab.com/erosson/wolcendb/-/commit/c7a8fd560914493c6ee8538a53791159040e6f3f)
 - Added a loading indicator.

@@ -18,6 +18,7 @@ import Page.Gems
 import Page.Home
 import Page.NormalItem
 import Page.NormalItems
+import Page.Offline
 import Page.Passives
 import Page.Privacy
 import Page.Reagents
@@ -313,6 +314,9 @@ viewTitle model =
                 ( Route.Source _ _, _ ) ->
                     "WolcenDB: view xml source file"
 
+                ( Route.Offline _ _, _ ) ->
+                    "WolcenDB: view offline save file code (you dirty cheater, you)"
+
                 ( Route.Search _, _ ) ->
                     "WolcenDB: search"
 
@@ -437,6 +441,10 @@ viewBody model =
 
                                 Route.Source type_ id ->
                                     Page.Source.view ok.datamine type_ id
+                                        |> Maybe.withDefault viewNotFound
+
+                                Route.Offline type_ id ->
+                                    Page.Offline.view ok.datamine type_ id
                                         |> Maybe.withDefault viewNotFound
 
                                 Route.Search query ->

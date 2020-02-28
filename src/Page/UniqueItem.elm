@@ -43,6 +43,7 @@ viewMain dm uitem =
             [ span [ class "item float-right" ]
                 [ img [ View.Item.imgUnique dm uitem ] []
                 , div [] [ text "[", a [ Route.href <| Route.Source "unique-loot" <| UniqueItem.name uitem ] [ text "Source" ], text "]" ]
+                , div [] [ text "[", a [ Route.href <| Route.Offline "unique-loot" <| UniqueItem.name uitem ] [ text "Offline" ], text "]" ]
                 ]
             , p [] [ text "Level: ", text <| Maybe.Extra.unwrap "-" String.fromInt <| UniqueItem.levelPrereq uitem ]
             , ul [ class "list-group affixes" ] (uitem |> UniqueItem.baseEffects dm |> List.map (\s -> li [ class "list-group-item" ] [ text s ]))
