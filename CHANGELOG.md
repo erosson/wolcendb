@@ -4,6 +4,7 @@ Changelog
 ---
 
 #### 2020-02-28
+- Updated to Wolcen v1.0.7.0. [Wolcen v1.0.6.0 to v1.0.7.0 source differences.](https://gitlab.com/erosson/wolcendb/-/commit/8dd1940849aa9db35ab69f689b24c630a1a63031)
 - Skill variants now try to display interesting numbers.
   - This isn't very pretty, but it's now the easiest way I know of to see numbers for things like [Bleeding Edge: Despotic Perseverence's damage per ailment, for example](/skill/player_laceration).
   - I'm sure this needs more work. Let me know which skill-variants are still missing numbers you'd like to see!
