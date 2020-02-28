@@ -2,6 +2,7 @@ module Datamine.Util exposing (..)
 
 import Json.Decode as D
 import Json.Decode.Pipeline as P
+import Util
 
 
 type alias Range a =
@@ -127,10 +128,10 @@ formatEffectStat ( index, ( name, stat ) ) =
             --)
             -- ++
             if stat.min == stat.max then
-                String.fromFloat stat.min
+                Util.formatFloat 5 stat.min
 
             else
-                "(" ++ String.fromFloat stat.min ++ "-" ++ String.fromFloat stat.max ++ ")"
+                "(" ++ Util.formatFloat 5 stat.min ++ "-" ++ Util.formatFloat 5 stat.max ++ ")"
 
         suffix =
             if String.contains "percent" (String.toLower name) then

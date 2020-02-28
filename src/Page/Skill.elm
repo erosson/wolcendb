@@ -1,7 +1,8 @@
 module Page.Skill exposing (view, viewTitle)
 
 import Datamine exposing (Datamine)
-import Datamine.Skill as Skill exposing (Skill)
+import Datamine.Skill as Skill exposing (Skill, SkillAST, SkillASTVariant, SkillVariant)
+import Datamine.Util
 import Dict exposing (Dict)
 import Html as H exposing (..)
 import Html.Attributes as A exposing (..)
@@ -9,6 +10,7 @@ import Html.Events as E exposing (..)
 import Json.Encode
 import Maybe.Extra
 import Route exposing (Route)
+import Util
 import View.Desc
 import View.Skill
 
@@ -26,9 +28,11 @@ view dm uid =
         |> Maybe.map
             (\skill ->
                 let
+                    ast : Maybe SkillAST
                     ast =
                         Dict.get uid dm.skillASTsByName
 
+                    vas : List ( SkillASTVariant, SkillVariant )
                     vas =
                         ast
                             |> Maybe.Extra.unwrap [] .variants
@@ -83,6 +87,27 @@ view dm uid =
                                                 , td [] [ text <| String.fromInt va.cost ]
                                                 , td [ title <| Maybe.withDefault "" v.lore ]
                                                     (Skill.lore dm v |> View.Desc.mformat |> Maybe.withDefault [])
+                                                ]
+                                        )
+                                )
+                            ]
+                        , table [ class "table" ]
+                            [ thead []
+                                [ tr []
+                                    [ th [] [ text "level" ]
+                                    , th [] [ text "effect" ]
+                                    , th [] [ text "xp" ]
+                                    ]
+                                ]
+                            , tbody []
+                                (ast
+                                    |> Maybe.Extra.unwrap [] Skill.modTotals
+                                    |> List.map
+                                        (\mod ->
+                                            tr []
+                                                [ td [] [ text <| String.fromInt mod.level ]
+                                                , td [ title mod.uiDesc ] [ Skill.modDesc dm mod |> Maybe.withDefault "???" |> text ]
+                                                , td [] [ text <| String.fromInt mod.xp ]
                                                 ]
                                         )
                                 )

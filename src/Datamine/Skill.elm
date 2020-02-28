@@ -8,6 +8,8 @@ module Datamine.Skill exposing
     , desc
     , label
     , lore
+    , modDesc
+    , modTotals
     )
 
 import Datamine.Lang as Lang
@@ -41,6 +43,7 @@ type alias SkillAST =
     { source : Source
     , name : String
     , variants : List SkillASTVariant
+    , modifiers : List SkillModifier
     }
 
 
@@ -52,6 +55,16 @@ type alias SkillASTVariant =
     }
 
 
+type alias SkillModifier =
+    { xp : Int
+    , level : Int
+    , effect : String
+    , param1 : Float
+    , param2 : Float
+    , uiDesc : String
+    }
+
+
 label : Lang.Datamine d -> { s | uiName : String } -> Maybe String
 label dm s =
     Lang.get dm s.uiName
@@ -60,6 +73,33 @@ label dm s =
 desc : Lang.Datamine d -> { s | uiName : String } -> Maybe String
 desc dm s =
     Lang.get dm (s.uiName ++ "_desc")
+
+
+modDesc : Lang.Datamine d -> SkillModifier -> Maybe String
+modDesc dm mod =
+    Lang.get dm mod.uiDesc |> Maybe.map (Util.formatEffectStat ( 0, ( mod.effect, Util.Range mod.param1 mod.param2 ) ))
+
+
+modTotals : SkillAST -> List SkillModifier
+modTotals ast =
+    let
+        loop : Float -> Float -> List SkillModifier -> List SkillModifier -> List SkillModifier
+        loop param1_0 param2_0 accum items =
+            case items of
+                [] ->
+                    List.reverse accum
+
+                head :: tail ->
+                    let
+                        param1 =
+                            param1_0 + head.param1
+
+                        param2 =
+                            param2_0 + head.param2
+                    in
+                    loop param1 param2 ({ head | param1 = param1, param2 = param2 } :: accum) tail
+    in
+    loop 0 0 [] ast.modifiers
 
 
 lore : Lang.Datamine d -> { s | lore : Maybe String } -> Maybe String
@@ -89,6 +129,18 @@ skillASTDecoder file =
                 |> P.requiredAt [ "$", "Cost" ] Util.intString
                 |> D.list
                 |> D.at [ "SkillVariant" ]
+            )
+        |> P.custom
+            (D.succeed SkillModifier
+                -- |> P.custom (Source.decoder file "SkillModifier")
+                |> P.requiredAt [ "$", "XP" ] Util.intString
+                |> P.requiredAt [ "$", "Level" ] Util.intString
+                |> P.requiredAt [ "$", "Effect" ] D.string
+                |> P.requiredAt [ "$", "Param1" ] Util.floatString
+                |> P.requiredAt [ "$", "Param2" ] Util.floatString
+                |> P.requiredAt [ "$", "UIDesc" ] D.string
+                |> D.list
+                |> D.at [ "SkillModifier" ]
             )
         |> Util.single
         |> D.at [ "MetaData", "AST" ]

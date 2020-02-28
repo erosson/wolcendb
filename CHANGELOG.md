@@ -8,6 +8,7 @@ Changelog
   - [Thanks to Wujido](https://youtu.be/jcYnamTR4f8) for teaching me that prefix/suffix matter! Previously I assumed they were an old code artifact and made no difference.
 - Weapons now show rage per hit.
 - Added an [Offline] link to unique items.
+- Added leveling effects to each skill.
 
 #### 2020-02-26
 - Updated to Wolcen v1.0.6.0. [Wolcen v1.0.4.0 to v1.0.6.0 source differences.](https://gitlab.com/erosson/wolcendb/-/commit/c7a8fd560914493c6ee8538a53791159040e6f3f)
