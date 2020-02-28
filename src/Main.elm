@@ -24,6 +24,7 @@ import Page.Privacy
 import Page.Reagents
 import Page.Search
 import Page.Skill
+import Page.SkillVariant
 import Page.Skills
 import Page.Source
 import Page.Table
@@ -296,6 +297,12 @@ viewTitle model =
                 ( Route.Skill name, _ ) ->
                     "WolcenDB: skill"
 
+                ( Route.SkillVariant id, RemoteData.Success ok ) ->
+                    "WolcenDB: skill-variant: " ++ Page.SkillVariant.viewTitle ok.datamine id
+
+                ( Route.SkillVariant _, _ ) ->
+                    "WolcenDB: skill-variant"
+
                 ( Route.Affixes, _ ) ->
                     "WolcenDB: magic affixes and modifiers"
 
@@ -419,6 +426,10 @@ viewBody model =
 
                                 Route.Skill s ->
                                     Page.Skill.view ok.datamine s
+                                        |> Maybe.withDefault viewNotFound
+
+                                Route.SkillVariant v ->
+                                    Page.SkillVariant.view ok.datamine v
                                         |> Maybe.withDefault viewNotFound
 
                                 Route.Affixes ->

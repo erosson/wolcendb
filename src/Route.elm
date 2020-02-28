@@ -25,6 +25,7 @@ type Route
     | UniqueItem String
     | Skills
     | Skill String
+    | SkillVariant String
     | Affixes
     | Gems
     | Passives
@@ -50,6 +51,7 @@ parser =
         [ P.map Home <| P.top
         , P.map Skills <| P.s "skill"
         , P.map Skill <| P.s "skill" </> P.string
+        , P.map SkillVariant <| P.s "skill-variant" </> P.string
         , P.map Affixes <| P.s "affix"
         , P.map Gems <| P.s "gem"
         , P.map Passives <| P.s "passive"
@@ -114,6 +116,9 @@ toPath r =
 
         Skill id ->
             "/skill/" ++ id
+
+        SkillVariant id ->
+            "/skill-variant/" ++ id
 
         Affixes ->
             "/affix"
@@ -186,6 +191,9 @@ toAnalytics mroute =
 
                 Skill _ ->
                     toPath <| Skill "ID"
+
+                SkillVariant _ ->
+                    toPath <| SkillVariant "ID"
 
                 City _ ->
                     toPath <| City "ID"

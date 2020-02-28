@@ -84,8 +84,7 @@ view dm uid =
                                                 [ td [] [ text <| String.fromInt <| i + 1 ]
                                                 , td [] [ img [ class "skill-variant", View.Skill.img v ] [] ]
                                                 , td []
-                                                    [ span [ title v.uiName ] [ Skill.label dm v |> Maybe.withDefault "???" |> text ]
-                                                    , div [] [ text "[", a [ Route.href <| Route.Source "skill-variant" v.uid ] [ text "Source" ], text "]" ]
+                                                    [ a [ title v.uiName, Route.href <| Route.SkillVariant v.uid ] [ Skill.label dm v |> Maybe.withDefault "???" |> text ]
                                                     ]
                                                 , td [] [ text <| String.fromInt va.level ]
                                                 , td [] [ text <| String.fromInt va.cost ]
@@ -93,8 +92,9 @@ view dm uid =
                                                     [ div [ title <| v.uiName ++ "_desc" ]
                                                         (Skill.desc dm v |> View.Desc.mformat |> Maybe.withDefault [ text "???" ])
                                                     , div [ class "card" ] (viewSkillEffects <| Skill.effects v)
-                                                    , div [ title <| Maybe.withDefault "" v.lore ]
-                                                        (Skill.lore dm v |> View.Desc.mformat |> Maybe.withDefault [])
+
+                                                    -- , div [ title <| Maybe.withDefault "" v.lore ]
+                                                    -- (Skill.lore dm v |> View.Desc.mformat |> Maybe.withDefault [])
                                                     ]
                                                 ]
                                         )
