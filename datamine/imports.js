@@ -181,6 +181,15 @@ import game_176 from "../datamine/Game/Umbra/CityBuilding/Rewards/siphon_chamber
 import game_177 from "../datamine/Game/Umbra/CityBuilding/Rewards/transmutation_forge_rewards.json"
 import game_178 from "../datamine/Game/Umbra/CityBuilding/ScalingTables/project_tables.json"
 import game_179 from "../datamine/Game/Umbra/Loot/MagicEffects/Affixes/Craft/GemFamiliesAndCoveredEffectIDs.json"
+import game_180 from "../datamine/Game/Umbra/Gameplay/Curve_StatusAilments/Bleed.json"
+import game_181 from "../datamine/Game/Umbra/Gameplay/Curve_StatusAilments/Burn.json"
+import game_182 from "../datamine/Game/Umbra/Gameplay/Curve_StatusAilments/Curse.json"
+import game_183 from "../datamine/Game/Umbra/Gameplay/Curve_StatusAilments/Frailty.json"
+import game_184 from "../datamine/Game/Umbra/Gameplay/Curve_StatusAilments/Poison.json"
+import game_185 from "../datamine/Game/Umbra/Gameplay/Curve_StatusAilments/Shock.json"
+import game_186 from "../datamine/Game/Umbra/Gameplay/Curve_StatusAilments/Stasis.json"
+import game_187 from "../datamine/Game/Umbra/Gameplay/Curve_StatusAilments/Stun.json"
+import game_188 from "../datamine/Game/Umbra/Gameplay/Curve_StatusAilments/Weakness.json"
 import localization_0 from "../datamine/localization/text_ui_Activeskills.json"
 import localization_1 from "../datamine/localization/text_ui_EIM.json"
 import localization_2 from "../datamine/localization/text_ui_Endgame.json"
@@ -369,6 +378,15 @@ export default {
   "Game/Umbra/CityBuilding/Rewards/transmutation_forge_rewards.json": game_177,
   "Game/Umbra/CityBuilding/ScalingTables/project_tables.json": game_178,
   "Game/Umbra/Loot/MagicEffects/Affixes/Craft/GemFamiliesAndCoveredEffectIDs.json": game_179,
+  "Game/Umbra/Gameplay/Curve_StatusAilments/Bleed.json": game_180,
+  "Game/Umbra/Gameplay/Curve_StatusAilments/Burn.json": game_181,
+  "Game/Umbra/Gameplay/Curve_StatusAilments/Curse.json": game_182,
+  "Game/Umbra/Gameplay/Curve_StatusAilments/Frailty.json": game_183,
+  "Game/Umbra/Gameplay/Curve_StatusAilments/Poison.json": game_184,
+  "Game/Umbra/Gameplay/Curve_StatusAilments/Shock.json": game_185,
+  "Game/Umbra/Gameplay/Curve_StatusAilments/Stasis.json": game_186,
+  "Game/Umbra/Gameplay/Curve_StatusAilments/Stun.json": game_187,
+  "Game/Umbra/Gameplay/Curve_StatusAilments/Weakness.json": game_188,
   "localization/text_ui_Activeskills.json": localization_0,
   "localization/text_ui_EIM.json": localization_1,
   "localization/text_ui_Endgame.json": localization_2,

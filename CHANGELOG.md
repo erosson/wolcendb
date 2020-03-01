@@ -3,6 +3,9 @@ Changelog
 
 ---
 
+#### 2020-03-01
+- Added ailment base-damage data.
+
 #### 2020-02-28
 - Updated to Wolcen v1.0.7.0. [Wolcen v1.0.6.0 to v1.0.7.0 source differences.](https://gitlab.com/erosson/wolcendb/-/commit/8dd1940849aa9db35ab69f689b24c630a1a63031)
 - Skill variants now try to display interesting numbers.

@@ -17,6 +17,7 @@ some features we need (ex. `Json.Decode.keyValuePairs`).
 -}
 
 import Datamine.Affix as Affix exposing (Affixes, MagicAffix, NonmagicAffix)
+import Datamine.Ailment as Ailment exposing (Ailment)
 import Datamine.City as City
 import Datamine.Cosmetic as Cosmetic exposing (CCosmeticTransferTemplate, CCosmeticWeaponDescriptor)
 import Datamine.Gem as Gem exposing (Gem)
@@ -62,6 +63,7 @@ type alias Datamine =
     , cityBuildings : List City.Building
     , cityCategories : List City.Category
     , cityLevels : List City.Level
+    , ailments : List Ailment
     , en : Dict String String
 
     -- indexes
@@ -90,6 +92,7 @@ type alias Datamine =
     , cityRewardsByName : Dict String City.Reward
     , cityBuildingsByName : Dict String City.Building
     , cityCategoriesByName : Dict String City.Category
+    , ailmentsByName : Dict String Ailment
     }
 
 
@@ -113,6 +116,7 @@ type alias RawDatamine =
     , cityBuildings : List City.Building
     , cityCategories : List City.Category
     , cityLevels : List City.Level
+    , ailments : List Ailment
     , en : Dict String String
     }
 
@@ -172,6 +176,7 @@ index raw =
     , cityBuildings = raw.cityBuildings
     , cityCategories = raw.cityCategories
     , cityLevels = raw.cityLevels
+    , ailments = raw.ailments
     , en = raw.en
 
     -- indexes
@@ -223,6 +228,7 @@ index raw =
     , cityRewardsByName = raw.cityRewards |> Dict.Extra.fromListBy (.name >> String.toLower)
     , cityBuildingsByName = raw.cityBuildings |> Dict.Extra.fromListBy (.name >> String.toLower)
     , cityCategoriesByName = raw.cityCategories |> Dict.Extra.fromListBy (.name >> String.toLower)
+    , ailmentsByName = raw.ailments |> Dict.Extra.fromListBy (.name >> String.toLower)
     }
 
 
@@ -254,6 +260,7 @@ decoder =
         |> P.custom City.buildingsDecoder
         |> P.custom City.categoriesDecoder
         |> P.custom City.levelsDecoder
+        |> P.custom Ailment.decoder
         |> P.custom Lang.decoder
         |> D.map index
 

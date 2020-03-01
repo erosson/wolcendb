@@ -31,6 +31,7 @@ type Route
     | Passives
     | Reagents
     | City String
+    | Ailments
     | Source String String
     | Offline String String
     | Search (Maybe String)
@@ -57,6 +58,7 @@ parser =
         , P.map Passives <| P.s "passive"
         , P.map Reagents <| P.s "reagent"
         , P.map City <| P.s "city" </> P.string
+        , P.map Ailments <| P.s "ailment"
         , P.map Source <| P.s "source" </> P.string </> P.string
         , P.map Offline <| P.s "offline" </> P.string </> P.string
         , P.map Search <| P.s "search" <?> Q.string "q"
@@ -134,6 +136,9 @@ toPath r =
 
         City name ->
             "/city/" ++ name
+
+        Ailments ->
+            "/ailment"
 
         Source type_ id ->
             "/source/" ++ type_ ++ "/" ++ id

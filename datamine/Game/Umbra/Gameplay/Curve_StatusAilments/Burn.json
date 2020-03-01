@@ -1,0 +1,996 @@
+{
+  "MetaData": {
+    "Params": [
+      {
+        "$": {
+          "Level": "1",
+          "Damage_Base": "3",
+          "Damage_PerStack": "3",
+          "Radius_Base": "5",
+          "Radius_PerStack": "0",
+          "DamageSecondary_Base": "2",
+          "DamageSecondary_PerStack": "2"
+        }
+      },
+      {
+        "$": {
+          "Level": "2",
+          "Damage_Base": "3",
+          "Damage_PerStack": "3",
+          "Radius_Base": "5",
+          "Radius_PerStack": "0",
+          "DamageSecondary_Base": "2",
+          "DamageSecondary_PerStack": "2"
+        }
+      },
+      {
+        "$": {
+          "Level": "3",
+          "Damage_Base": "4",
+          "Damage_PerStack": "4",
+          "Radius_Base": "5",
+          "Radius_PerStack": "0",
+          "DamageSecondary_Base": "2",
+          "DamageSecondary_PerStack": "2"
+        }
+      },
+      {
+        "$": {
+          "Level": "4",
+          "Damage_Base": "4",
+          "Damage_PerStack": "4",
+          "Radius_Base": "5",
+          "Radius_PerStack": "0",
+          "DamageSecondary_Base": "2",
+          "DamageSecondary_PerStack": "2"
+        }
+      },
+      {
+        "$": {
+          "Level": "5",
+          "Damage_Base": "5",
+          "Damage_PerStack": "5",
+          "Radius_Base": "5",
+          "Radius_PerStack": "0",
+          "DamageSecondary_Base": "3",
+          "DamageSecondary_PerStack": "3"
+        }
+      },
+      {
+        "$": {
+          "Level": "6",
+          "Damage_Base": "5",
+          "Damage_PerStack": "5",
+          "Radius_Base": "5",
+          "Radius_PerStack": "0",
+          "DamageSecondary_Base": "3",
+          "DamageSecondary_PerStack": "3"
+        }
+      },
+      {
+        "$": {
+          "Level": "7",
+          "Damage_Base": "6",
+          "Damage_PerStack": "6",
+          "Radius_Base": "5",
+          "Radius_PerStack": "0",
+          "DamageSecondary_Base": "3",
+          "DamageSecondary_PerStack": "3"
+        }
+      },
+      {
+        "$": {
+          "Level": "8",
+          "Damage_Base": "6",
+          "Damage_PerStack": "6",
+          "Radius_Base": "5",
+          "Radius_PerStack": "0",
+          "DamageSecondary_Base": "3",
+          "DamageSecondary_PerStack": "3"
+        }
+      },
+      {
+        "$": {
+          "Level": "9",
+          "Damage_Base": "7",
+          "Damage_PerStack": "7",
+          "Radius_Base": "5",
+          "Radius_PerStack": "0",
+          "DamageSecondary_Base": "4",
+          "DamageSecondary_PerStack": "4"
+        }
+      },
+      {
+        "$": {
+          "Level": "10",
+          "Damage_Base": "7",
+          "Damage_PerStack": "7",
+          "Radius_Base": "5",
+          "Radius_PerStack": "0",
+          "DamageSecondary_Base": "4",
+          "DamageSecondary_PerStack": "4"
+        }
+      },
+      {
+        "$": {
+          "Level": "11",
+          "Damage_Base": "8",
+          "Damage_PerStack": "8",
+          "Radius_Base": "5",
+          "Radius_PerStack": "0",
+          "DamageSecondary_Base": "4",
+          "DamageSecondary_PerStack": "4"
+        }
+      },
+      {
+        "$": {
+          "Level": "12",
+          "Damage_Base": "8",
+          "Damage_PerStack": "8",
+          "Radius_Base": "5",
+          "Radius_PerStack": "0",
+          "DamageSecondary_Base": "4",
+          "DamageSecondary_PerStack": "4"
+        }
+      },
+      {
+        "$": {
+          "Level": "13",
+          "Damage_Base": "9",
+          "Damage_PerStack": "9",
+          "Radius_Base": "5",
+          "Radius_PerStack": "0",
+          "DamageSecondary_Base": "5",
+          "DamageSecondary_PerStack": "5"
+        }
+      },
+      {
+        "$": {
+          "Level": "14",
+          "Damage_Base": "9",
+          "Damage_PerStack": "9",
+          "Radius_Base": "5",
+          "Radius_PerStack": "0",
+          "DamageSecondary_Base": "5",
+          "DamageSecondary_PerStack": "5"
+        }
+      },
+      {
+        "$": {
+          "Level": "15",
+          "Damage_Base": "10",
+          "Damage_PerStack": "10",
+          "Radius_Base": "5",
+          "Radius_PerStack": "0",
+          "DamageSecondary_Base": "5",
+          "DamageSecondary_PerStack": "5"
+        }
+      },
+      {
+        "$": {
+          "Level": "16",
+          "Damage_Base": "10",
+          "Damage_PerStack": "10",
+          "Radius_Base": "5",
+          "Radius_PerStack": "0",
+          "DamageSecondary_Base": "5",
+          "DamageSecondary_PerStack": "5"
+        }
+      },
+      {
+        "$": {
+          "Level": "17",
+          "Damage_Base": "10",
+          "Damage_PerStack": "10",
+          "Radius_Base": "5",
+          "Radius_PerStack": "0",
+          "DamageSecondary_Base": "5",
+          "DamageSecondary_PerStack": "5"
+        }
+      },
+      {
+        "$": {
+          "Level": "18",
+          "Damage_Base": "11",
+          "Damage_PerStack": "11",
+          "Radius_Base": "5",
+          "Radius_PerStack": "0",
+          "DamageSecondary_Base": "6",
+          "DamageSecondary_PerStack": "6"
+        }
+      },
+      {
+        "$": {
+          "Level": "19",
+          "Damage_Base": "11",
+          "Damage_PerStack": "11",
+          "Radius_Base": "5",
+          "Radius_PerStack": "0",
+          "DamageSecondary_Base": "6",
+          "DamageSecondary_PerStack": "6"
+        }
+      },
+      {
+        "$": {
+          "Level": "20",
+          "Damage_Base": "11",
+          "Damage_PerStack": "11",
+          "Radius_Base": "5",
+          "Radius_PerStack": "0",
+          "DamageSecondary_Base": "6",
+          "DamageSecondary_PerStack": "6"
+        }
+      },
+      {
+        "$": {
+          "Level": "21",
+          "Damage_Base": "12",
+          "Damage_PerStack": "12",
+          "Radius_Base": "5",
+          "Radius_PerStack": "0",
+          "DamageSecondary_Base": "6",
+          "DamageSecondary_PerStack": "6"
+        }
+      },
+      {
+        "$": {
+          "Level": "22",
+          "Damage_Base": "12",
+          "Damage_PerStack": "12",
+          "Radius_Base": "5",
+          "Radius_PerStack": "0",
+          "DamageSecondary_Base": "6",
+          "DamageSecondary_PerStack": "6"
+        }
+      },
+      {
+        "$": {
+          "Level": "23",
+          "Damage_Base": "12",
+          "Damage_PerStack": "12",
+          "Radius_Base": "5",
+          "Radius_PerStack": "0",
+          "DamageSecondary_Base": "6",
+          "DamageSecondary_PerStack": "6"
+        }
+      },
+      {
+        "$": {
+          "Level": "24",
+          "Damage_Base": "13",
+          "Damage_PerStack": "13",
+          "Radius_Base": "5",
+          "Radius_PerStack": "0",
+          "DamageSecondary_Base": "7",
+          "DamageSecondary_PerStack": "7"
+        }
+      },
+      {
+        "$": {
+          "Level": "25",
+          "Damage_Base": "13",
+          "Damage_PerStack": "13",
+          "Radius_Base": "5",
+          "Radius_PerStack": "0",
+          "DamageSecondary_Base": "7",
+          "DamageSecondary_PerStack": "7"
+        }
+      },
+      {
+        "$": {
+          "Level": "26",
+          "Damage_Base": "13",
+          "Damage_PerStack": "13",
+          "Radius_Base": "5",
+          "Radius_PerStack": "0",
+          "DamageSecondary_Base": "7",
+          "DamageSecondary_PerStack": "7"
+        }
+      },
+      {
+        "$": {
+          "Level": "27",
+          "Damage_Base": "14",
+          "Damage_PerStack": "14",
+          "Radius_Base": "5",
+          "Radius_PerStack": "0",
+          "DamageSecondary_Base": "7",
+          "DamageSecondary_PerStack": "7"
+        }
+      },
+      {
+        "$": {
+          "Level": "28",
+          "Damage_Base": "14",
+          "Damage_PerStack": "14",
+          "Radius_Base": "5",
+          "Radius_PerStack": "0",
+          "DamageSecondary_Base": "7",
+          "DamageSecondary_PerStack": "7"
+        }
+      },
+      {
+        "$": {
+          "Level": "29",
+          "Damage_Base": "14",
+          "Damage_PerStack": "14",
+          "Radius_Base": "5",
+          "Radius_PerStack": "0",
+          "DamageSecondary_Base": "7",
+          "DamageSecondary_PerStack": "7"
+        }
+      },
+      {
+        "$": {
+          "Level": "30",
+          "Damage_Base": "15",
+          "Damage_PerStack": "15",
+          "Radius_Base": "5",
+          "Radius_PerStack": "0",
+          "DamageSecondary_Base": "8",
+          "DamageSecondary_PerStack": "8"
+        }
+      },
+      {
+        "$": {
+          "Level": "31",
+          "Damage_Base": "15",
+          "Damage_PerStack": "15",
+          "Radius_Base": "5",
+          "Radius_PerStack": "0",
+          "DamageSecondary_Base": "8",
+          "DamageSecondary_PerStack": "8"
+        }
+      },
+      {
+        "$": {
+          "Level": "32",
+          "Damage_Base": "15",
+          "Damage_PerStack": "15",
+          "Radius_Base": "5",
+          "Radius_PerStack": "0",
+          "DamageSecondary_Base": "8",
+          "DamageSecondary_PerStack": "8"
+        }
+      },
+      {
+        "$": {
+          "Level": "33",
+          "Damage_Base": "16",
+          "Damage_PerStack": "16",
+          "Radius_Base": "5",
+          "Radius_PerStack": "0",
+          "DamageSecondary_Base": "8",
+          "DamageSecondary_PerStack": "8"
+        }
+      },
+      {
+        "$": {
+          "Level": "34",
+          "Damage_Base": "16",
+          "Damage_PerStack": "16",
+          "Radius_Base": "5",
+          "Radius_PerStack": "0",
+          "DamageSecondary_Base": "8",
+          "DamageSecondary_PerStack": "8"
+        }
+      },
+      {
+        "$": {
+          "Level": "35",
+          "Damage_Base": "16",
+          "Damage_PerStack": "16",
+          "Radius_Base": "5",
+          "Radius_PerStack": "0",
+          "DamageSecondary_Base": "8",
+          "DamageSecondary_PerStack": "8"
+        }
+      },
+      {
+        "$": {
+          "Level": "36",
+          "Damage_Base": "17",
+          "Damage_PerStack": "17",
+          "Radius_Base": "5",
+          "Radius_PerStack": "0",
+          "DamageSecondary_Base": "9",
+          "DamageSecondary_PerStack": "9"
+        }
+      },
+      {
+        "$": {
+          "Level": "37",
+          "Damage_Base": "17",
+          "Damage_PerStack": "17",
+          "Radius_Base": "5",
+          "Radius_PerStack": "0",
+          "DamageSecondary_Base": "9",
+          "DamageSecondary_PerStack": "9"
+        }
+      },
+      {
+        "$": {
+          "Level": "38",
+          "Damage_Base": "17",
+          "Damage_PerStack": "17",
+          "Radius_Base": "5",
+          "Radius_PerStack": "0",
+          "DamageSecondary_Base": "9",
+          "DamageSecondary_PerStack": "9"
+        }
+      },
+      {
+        "$": {
+          "Level": "39",
+          "Damage_Base": "18",
+          "Damage_PerStack": "18",
+          "Radius_Base": "5",
+          "Radius_PerStack": "0",
+          "DamageSecondary_Base": "9",
+          "DamageSecondary_PerStack": "9"
+        }
+      },
+      {
+        "$": {
+          "Level": "40",
+          "Damage_Base": "18",
+          "Damage_PerStack": "18",
+          "Radius_Base": "5",
+          "Radius_PerStack": "0",
+          "DamageSecondary_Base": "9",
+          "DamageSecondary_PerStack": "9"
+        }
+      },
+      {
+        "$": {
+          "Level": "41",
+          "Damage_Base": "18",
+          "Damage_PerStack": "18",
+          "Radius_Base": "5",
+          "Radius_PerStack": "0",
+          "DamageSecondary_Base": "9",
+          "DamageSecondary_PerStack": "9"
+        }
+      },
+      {
+        "$": {
+          "Level": "42",
+          "Damage_Base": "19",
+          "Damage_PerStack": "19",
+          "Radius_Base": "5",
+          "Radius_PerStack": "0",
+          "DamageSecondary_Base": "10",
+          "DamageSecondary_PerStack": "10"
+        }
+      },
+      {
+        "$": {
+          "Level": "43",
+          "Damage_Base": "19",
+          "Damage_PerStack": "19",
+          "Radius_Base": "5",
+          "Radius_PerStack": "0",
+          "DamageSecondary_Base": "10",
+          "DamageSecondary_PerStack": "10"
+        }
+      },
+      {
+        "$": {
+          "Level": "44",
+          "Damage_Base": "19",
+          "Damage_PerStack": "19",
+          "Radius_Base": "5",
+          "Radius_PerStack": "0",
+          "DamageSecondary_Base": "10",
+          "DamageSecondary_PerStack": "10"
+        }
+      },
+      {
+        "$": {
+          "Level": "45",
+          "Damage_Base": "20",
+          "Damage_PerStack": "20",
+          "Radius_Base": "5",
+          "Radius_PerStack": "0",
+          "DamageSecondary_Base": "10",
+          "DamageSecondary_PerStack": "10"
+        }
+      },
+      {
+        "$": {
+          "Level": "46",
+          "Damage_Base": "20",
+          "Damage_PerStack": "20",
+          "Radius_Base": "5",
+          "Radius_PerStack": "0",
+          "DamageSecondary_Base": "10",
+          "DamageSecondary_PerStack": "10"
+        }
+      },
+      {
+        "$": {
+          "Level": "47",
+          "Damage_Base": "20",
+          "Damage_PerStack": "20",
+          "Radius_Base": "5",
+          "Radius_PerStack": "0",
+          "DamageSecondary_Base": "10",
+          "DamageSecondary_PerStack": "10"
+        }
+      },
+      {
+        "$": {
+          "Level": "48",
+          "Damage_Base": "21",
+          "Damage_PerStack": "21",
+          "Radius_Base": "5",
+          "Radius_PerStack": "0",
+          "DamageSecondary_Base": "11",
+          "DamageSecondary_PerStack": "11"
+        }
+      },
+      {
+        "$": {
+          "Level": "49",
+          "Damage_Base": "21",
+          "Damage_PerStack": "21",
+          "Radius_Base": "5",
+          "Radius_PerStack": "0",
+          "DamageSecondary_Base": "11",
+          "DamageSecondary_PerStack": "11"
+        }
+      },
+      {
+        "$": {
+          "Level": "50",
+          "Damage_Base": "21",
+          "Damage_PerStack": "21",
+          "Radius_Base": "5",
+          "Radius_PerStack": "0",
+          "DamageSecondary_Base": "11",
+          "DamageSecondary_PerStack": "11"
+        }
+      },
+      {
+        "$": {
+          "Level": "51",
+          "Damage_Base": "22",
+          "Damage_PerStack": "22",
+          "Radius_Base": "5",
+          "Radius_PerStack": "0",
+          "DamageSecondary_Base": "11",
+          "DamageSecondary_PerStack": "11"
+        }
+      },
+      {
+        "$": {
+          "Level": "52",
+          "Damage_Base": "22",
+          "Damage_PerStack": "22",
+          "Radius_Base": "5",
+          "Radius_PerStack": "0",
+          "DamageSecondary_Base": "11",
+          "DamageSecondary_PerStack": "11"
+        }
+      },
+      {
+        "$": {
+          "Level": "53",
+          "Damage_Base": "22",
+          "Damage_PerStack": "22",
+          "Radius_Base": "5",
+          "Radius_PerStack": "0",
+          "DamageSecondary_Base": "11",
+          "DamageSecondary_PerStack": "11"
+        }
+      },
+      {
+        "$": {
+          "Level": "54",
+          "Damage_Base": "23",
+          "Damage_PerStack": "23",
+          "Radius_Base": "5",
+          "Radius_PerStack": "0",
+          "DamageSecondary_Base": "12",
+          "DamageSecondary_PerStack": "12"
+        }
+      },
+      {
+        "$": {
+          "Level": "55",
+          "Damage_Base": "23",
+          "Damage_PerStack": "23",
+          "Radius_Base": "5",
+          "Radius_PerStack": "0",
+          "DamageSecondary_Base": "12",
+          "DamageSecondary_PerStack": "12"
+        }
+      },
+      {
+        "$": {
+          "Level": "56",
+          "Damage_Base": "23",
+          "Damage_PerStack": "23",
+          "Radius_Base": "5",
+          "Radius_PerStack": "0",
+          "DamageSecondary_Base": "12",
+          "DamageSecondary_PerStack": "12"
+        }
+      },
+      {
+        "$": {
+          "Level": "57",
+          "Damage_Base": "24",
+          "Damage_PerStack": "24",
+          "Radius_Base": "5",
+          "Radius_PerStack": "0",
+          "DamageSecondary_Base": "12",
+          "DamageSecondary_PerStack": "12"
+        }
+      },
+      {
+        "$": {
+          "Level": "58",
+          "Damage_Base": "24",
+          "Damage_PerStack": "24",
+          "Radius_Base": "5",
+          "Radius_PerStack": "0",
+          "DamageSecondary_Base": "12",
+          "DamageSecondary_PerStack": "12"
+        }
+      },
+      {
+        "$": {
+          "Level": "59",
+          "Damage_Base": "24",
+          "Damage_PerStack": "24",
+          "Radius_Base": "5",
+          "Radius_PerStack": "0",
+          "DamageSecondary_Base": "12",
+          "DamageSecondary_PerStack": "12"
+        }
+      },
+      {
+        "$": {
+          "Level": "60",
+          "Damage_Base": "24",
+          "Damage_PerStack": "24",
+          "Radius_Base": "5",
+          "Radius_PerStack": "0",
+          "DamageSecondary_Base": "12",
+          "DamageSecondary_PerStack": "12"
+        }
+      },
+      {
+        "$": {
+          "Level": "61",
+          "Damage_Base": "25",
+          "Damage_PerStack": "25",
+          "Radius_Base": "5",
+          "Radius_PerStack": "0",
+          "DamageSecondary_Base": "13",
+          "DamageSecondary_PerStack": "13"
+        }
+      },
+      {
+        "$": {
+          "Level": "62",
+          "Damage_Base": "25",
+          "Damage_PerStack": "25",
+          "Radius_Base": "5",
+          "Radius_PerStack": "0",
+          "DamageSecondary_Base": "13",
+          "DamageSecondary_PerStack": "13"
+        }
+      },
+      {
+        "$": {
+          "Level": "63",
+          "Damage_Base": "25",
+          "Damage_PerStack": "25",
+          "Radius_Base": "5",
+          "Radius_PerStack": "0",
+          "DamageSecondary_Base": "13",
+          "DamageSecondary_PerStack": "13"
+        }
+      },
+      {
+        "$": {
+          "Level": "64",
+          "Damage_Base": "25",
+          "Damage_PerStack": "25",
+          "Radius_Base": "5",
+          "Radius_PerStack": "0",
+          "DamageSecondary_Base": "13",
+          "DamageSecondary_PerStack": "13"
+        }
+      },
+      {
+        "$": {
+          "Level": "65",
+          "Damage_Base": "26",
+          "Damage_PerStack": "26",
+          "Radius_Base": "5",
+          "Radius_PerStack": "0",
+          "DamageSecondary_Base": "13",
+          "DamageSecondary_PerStack": "13"
+        }
+      },
+      {
+        "$": {
+          "Level": "66",
+          "Damage_Base": "26",
+          "Damage_PerStack": "26",
+          "Radius_Base": "5",
+          "Radius_PerStack": "0",
+          "DamageSecondary_Base": "13",
+          "DamageSecondary_PerStack": "13"
+        }
+      },
+      {
+        "$": {
+          "Level": "67",
+          "Damage_Base": "26",
+          "Damage_PerStack": "26",
+          "Radius_Base": "5",
+          "Radius_PerStack": "0",
+          "DamageSecondary_Base": "13",
+          "DamageSecondary_PerStack": "13"
+        }
+      },
+      {
+        "$": {
+          "Level": "68",
+          "Damage_Base": "26",
+          "Damage_PerStack": "26",
+          "Radius_Base": "5",
+          "Radius_PerStack": "0",
+          "DamageSecondary_Base": "13",
+          "DamageSecondary_PerStack": "13"
+        }
+      },
+      {
+        "$": {
+          "Level": "69",
+          "Damage_Base": "27",
+          "Damage_PerStack": "27",
+          "Radius_Base": "5",
+          "Radius_PerStack": "0",
+          "DamageSecondary_Base": "14",
+          "DamageSecondary_PerStack": "14"
+        }
+      },
+      {
+        "$": {
+          "Level": "70",
+          "Damage_Base": "27",
+          "Damage_PerStack": "27",
+          "Radius_Base": "5",
+          "Radius_PerStack": "0",
+          "DamageSecondary_Base": "14",
+          "DamageSecondary_PerStack": "14"
+        }
+      },
+      {
+        "$": {
+          "Level": "71",
+          "Damage_Base": "27",
+          "Damage_PerStack": "27",
+          "Radius_Base": "5",
+          "Radius_PerStack": "0",
+          "DamageSecondary_Base": "14",
+          "DamageSecondary_PerStack": "14"
+        }
+      },
+      {
+        "$": {
+          "Level": "72",
+          "Damage_Base": "27",
+          "Damage_PerStack": "27",
+          "Radius_Base": "5",
+          "Radius_PerStack": "0",
+          "DamageSecondary_Base": "14",
+          "DamageSecondary_PerStack": "14"
+        }
+      },
+      {
+        "$": {
+          "Level": "73",
+          "Damage_Base": "28",
+          "Damage_PerStack": "28",
+          "Radius_Base": "5",
+          "Radius_PerStack": "0",
+          "DamageSecondary_Base": "14",
+          "DamageSecondary_PerStack": "14"
+        }
+      },
+      {
+        "$": {
+          "Level": "74",
+          "Damage_Base": "28",
+          "Damage_PerStack": "28",
+          "Radius_Base": "5",
+          "Radius_PerStack": "0",
+          "DamageSecondary_Base": "14",
+          "DamageSecondary_PerStack": "14"
+        }
+      },
+      {
+        "$": {
+          "Level": "75",
+          "Damage_Base": "28",
+          "Damage_PerStack": "28",
+          "Radius_Base": "5",
+          "Radius_PerStack": "0",
+          "DamageSecondary_Base": "14",
+          "DamageSecondary_PerStack": "14"
+        }
+      },
+      {
+        "$": {
+          "Level": "76",
+          "Damage_Base": "28",
+          "Damage_PerStack": "28",
+          "Radius_Base": "5",
+          "Radius_PerStack": "0",
+          "DamageSecondary_Base": "14",
+          "DamageSecondary_PerStack": "14"
+        }
+      },
+      {
+        "$": {
+          "Level": "77",
+          "Damage_Base": "29",
+          "Damage_PerStack": "29",
+          "Radius_Base": "5",
+          "Radius_PerStack": "0",
+          "DamageSecondary_Base": "15",
+          "DamageSecondary_PerStack": "15"
+        }
+      },
+      {
+        "$": {
+          "Level": "78",
+          "Damage_Base": "29",
+          "Damage_PerStack": "29",
+          "Radius_Base": "5",
+          "Radius_PerStack": "0",
+          "DamageSecondary_Base": "15",
+          "DamageSecondary_PerStack": "15"
+        }
+      },
+      {
+        "$": {
+          "Level": "79",
+          "Damage_Base": "29",
+          "Damage_PerStack": "29",
+          "Radius_Base": "5",
+          "Radius_PerStack": "0",
+          "DamageSecondary_Base": "15",
+          "DamageSecondary_PerStack": "15"
+        }
+      },
+      {
+        "$": {
+          "Level": "80",
+          "Damage_Base": "29",
+          "Damage_PerStack": "29",
+          "Radius_Base": "5",
+          "Radius_PerStack": "0",
+          "DamageSecondary_Base": "15",
+          "DamageSecondary_PerStack": "15"
+        }
+      },
+      {
+        "$": {
+          "Level": "81",
+          "Damage_Base": "30",
+          "Damage_PerStack": "30",
+          "Radius_Base": "5",
+          "Radius_PerStack": "0",
+          "DamageSecondary_Base": "15",
+          "DamageSecondary_PerStack": "15"
+        }
+      },
+      {
+        "$": {
+          "Level": "82",
+          "Damage_Base": "30",
+          "Damage_PerStack": "30",
+          "Radius_Base": "5",
+          "Radius_PerStack": "0",
+          "DamageSecondary_Base": "15",
+          "DamageSecondary_PerStack": "15"
+        }
+      },
+      {
+        "$": {
+          "Level": "83",
+          "Damage_Base": "30",
+          "Damage_PerStack": "30",
+          "Radius_Base": "5",
+          "Radius_PerStack": "0",
+          "DamageSecondary_Base": "15",
+          "DamageSecondary_PerStack": "15"
+        }
+      },
+      {
+        "$": {
+          "Level": "84",
+          "Damage_Base": "30",
+          "Damage_PerStack": "30",
+          "Radius_Base": "5",
+          "Radius_PerStack": "0",
+          "DamageSecondary_Base": "15",
+          "DamageSecondary_PerStack": "15"
+        }
+      },
+      {
+        "$": {
+          "Level": "85",
+          "Damage_Base": "31",
+          "Damage_PerStack": "31",
+          "Radius_Base": "5",
+          "Radius_PerStack": "0",
+          "DamageSecondary_Base": "16",
+          "DamageSecondary_PerStack": "16"
+        }
+      },
+      {
+        "$": {
+          "Level": "86",
+          "Damage_Base": "31",
+          "Damage_PerStack": "31",
+          "Radius_Base": "5",
+          "Radius_PerStack": "0",
+          "DamageSecondary_Base": "16",
+          "DamageSecondary_PerStack": "16"
+        }
+      },
+      {
+        "$": {
+          "Level": "87",
+          "Damage_Base": "31",
+          "Damage_PerStack": "31",
+          "Radius_Base": "5",
+          "Radius_PerStack": "0",
+          "DamageSecondary_Base": "16",
+          "DamageSecondary_PerStack": "16"
+        }
+      },
+      {
+        "$": {
+          "Level": "88",
+          "Damage_Base": "31",
+          "Damage_PerStack": "31",
+          "Radius_Base": "5",
+          "Radius_PerStack": "0",
+          "DamageSecondary_Base": "16",
+          "DamageSecondary_PerStack": "16"
+        }
+      },
+      {
+        "$": {
+          "Level": "89",
+          "Damage_Base": "32",
+          "Damage_PerStack": "32",
+          "Radius_Base": "5",
+          "Radius_PerStack": "0",
+          "DamageSecondary_Base": "16",
+          "DamageSecondary_PerStack": "16"
+        }
+      },
+      {
+        "$": {
+          "Level": "90",
+          "Damage_Base": "32",
+          "Damage_PerStack": "32",
+          "Radius_Base": "5",
+          "Radius_PerStack": "0",
+          "DamageSecondary_Base": "16",
+          "DamageSecondary_PerStack": "16"
+        }
+      }
+    ]
+  }
+}

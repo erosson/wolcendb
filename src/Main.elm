@@ -12,6 +12,7 @@ import Html.Events as E exposing (..)
 import Json.Decode as D
 import Maybe.Extra
 import Page.Affixes
+import Page.Ailments
 import Page.Changelog
 import Page.City
 import Page.Gems
@@ -162,6 +163,7 @@ type Msg
     | ViewAffixMsg View.Affix.ItemMsg
     | SearchMsg Page.Search.Msg
     | CityMsg Page.City.Msg
+    | AilmentsMsg Page.Ailments.Msg
     | NavMsg View.Nav.Msg
 
 
@@ -258,6 +260,9 @@ updateOk msg ok model =
         CityMsg msg_ ->
             ( Page.City.update msg_ model, Cmd.none )
 
+        AilmentsMsg msg_ ->
+            ( Page.Ailments.update msg_ ok.datamine model, Cmd.none )
+
         NavMsg msg_ ->
             View.Nav.update msg_ ok model
                 |> Tuple.mapSecond (Cmd.map NavMsg)
@@ -334,6 +339,9 @@ viewTitle model =
                 ( Route.City _, _ ) ->
                     "WolcenDB: endgame city rewards"
 
+                ( Route.Ailments, _ ) ->
+                    "WolcenDB: ailments"
+
                 ( Route.Source _ _, _ ) ->
                     "WolcenDB: view xml source file"
 
@@ -391,7 +399,7 @@ viewLoading model =
 
 
 viewErr err =
-    [ code [] [ text <| String.right 10000 err ] ]
+    [ code [] [ text <| String.right 100000 err ] ]
 
 
 viewBody : Model -> List (Html Msg)
@@ -465,6 +473,10 @@ viewBody model =
                                     Page.City.view ok.datamine model name
                                         |> Maybe.withDefault viewNotFound
                                         |> List.map (H.map CityMsg)
+
+                                Route.Ailments ->
+                                    Page.Ailments.view ok.datamine model
+                                        |> List.map (H.map AilmentsMsg)
 
                                 Route.Source type_ id ->
                                     Page.Source.view ok.datamine type_ id
