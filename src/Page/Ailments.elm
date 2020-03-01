@@ -67,7 +67,11 @@ view dm model =
             |> List.map
                 (\ail ->
                     div [ class "card" ]
-                        [ div [ class "card-header" ] [ text ail.name ]
+                        [ div [ class "card-header" ]
+                            [ span [ class "float-right" ] [ text "[", a [ Route.href <| Route.Source "ailment" ail.name ] [ text "Source" ], text "]" ]
+                            , span [ style "clear" "right" ] []
+                            , text ail.name
+                            ]
                         , table [ class "card-body" ]
                             [ thead []
                                 (th [] [ text "level" ]

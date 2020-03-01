@@ -228,6 +228,19 @@ getSource dm type_ id =
                         )
                     )
 
+        "ailment" ->
+            Dict.get (String.toLower id) dm.ailmentsByName
+                |> Maybe.map
+                    (\ail ->
+                        ( ail.name
+                        , [ ail.source ]
+                        , [ a [ class "breadcrumb-item active", Route.href Route.Ailments ] [ text "Ailments" ]
+                          , a [ class "breadcrumb-item active" ] [ text ail.name ]
+                          , a [ class "breadcrumb-item active", Route.href <| Route.Source type_ id ] [ text "Source" ]
+                          ]
+                        )
+                    )
+
         _ ->
             Nothing
 

@@ -38,7 +38,7 @@ decoder =
 ailmentDecoder : String -> String -> D.Decoder Ailment
 ailmentDecoder file name =
     D.succeed (Ailment name)
-        |> P.custom (Source.decoder file name)
+        |> P.custom (Source.decoder file "MetaData")
         |> P.required "Params"
             (D.succeed AilmentParam
                 |> P.requiredAt [ "$", "Level" ] Util.intString
