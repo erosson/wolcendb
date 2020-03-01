@@ -47,7 +47,7 @@ import View.Nav
 
 
 type alias Model =
-    { nav : Nav.Key
+    { nav : Maybe Nav.Key
     , datamine : RemoteData String Datamine
     , searchIndex : RemoteData String Search.Index
     , changelog : String
@@ -69,15 +69,21 @@ type alias ReadyModel =
     { datamine : Datamine, searchIndex : Search.Index }
 
 
-type alias Flags =
-    { changelog : String
-    , datamine : Maybe D.Value
-    , searchIndex : Maybe D.Value
+type alias Flags f =
+    { f
+        | changelog : String
+        , datamine : Maybe D.Value
+        , searchIndex : Maybe D.Value
     }
 
 
-init : Flags -> Url -> Nav.Key -> ( Model, Cmd Msg )
+init : Flags {} -> Url -> Nav.Key -> ( Model, Cmd Msg )
 init flags url nav =
+    init_ flags (Route.parse url) (Just nav)
+
+
+init_ : Flags f -> Maybe Route -> Maybe Nav.Key -> ( Model, Cmd Msg )
+init_ flags route nav =
     { nav = nav
     , datamine = flags.datamine |> maybeDecode Datamine.decode
     , searchIndex = flags.searchIndex |> maybeDecode Search.decodeIndex
@@ -92,7 +98,12 @@ init flags url nav =
     , cityPlayerLevel = 0
     , progress = Dict.empty
     }
-        |> routeTo (Route.parse url)
+        |> routeTo route
+
+
+initStatic : Flags { url : String } -> ( Model, Cmd Msg )
+initStatic flags =
+    init_ flags (flags.url |> Url.fromString |> Maybe.andThen Route.parse) Nothing
 
 
 maybeDecode : (D.Value -> Result String a) -> Maybe D.Value -> RemoteData String a
@@ -218,7 +229,12 @@ updateOk msg ok model =
         OnUrlRequest (Browser.Internal url) ->
             ( model
             , Cmd.batch
-                [ url |> Url.toString |> Nav.pushUrl model.nav
+                [ case model.nav of
+                    Nothing ->
+                        Cmd.none
+
+                    Just nav ->
+                        url |> Url.toString |> Nav.pushUrl nav
                 , Task.perform (always Noop) (Browser.Dom.setViewport 0 0)
                 ]
             )
@@ -487,7 +503,7 @@ viewNotFound =
 ---- PROGRAM ----
 
 
-main : Program Flags Model Msg
+main : Program (Flags {}) Model Msg
 main =
     Browser.application
         { view = view

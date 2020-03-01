@@ -24,7 +24,7 @@ type alias ReadyModel m =
 
 type alias Model m =
     { m
-        | nav : Nav.Key
+        | nav : Maybe Nav.Key
         , globalSearch : String
         , globalSearchResults : Result String (List SearchResult)
         , searchIndex : RemoteData String Search.Index

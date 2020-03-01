@@ -216,14 +216,26 @@ href =
     toString >> Html.Attributes.href
 
 
-pushUrl : Nav.Key -> Route -> Cmd msg
-pushUrl nav =
-    toString >> Nav.pushUrl nav
+pushUrl : Maybe Nav.Key -> Route -> Cmd msg
+pushUrl mnav =
+    case mnav of
+        Nothing ->
+            -- Unit tests or statichtmlgen
+            always Cmd.none
+
+        Just nav ->
+            toString >> Nav.pushUrl nav
 
 
-replaceUrl : Nav.Key -> Route -> Cmd msg
-replaceUrl nav =
-    toString >> Nav.replaceUrl nav
+replaceUrl : Maybe Nav.Key -> Route -> Cmd msg
+replaceUrl mnav =
+    case mnav of
+        Nothing ->
+            -- Unit tests or statichtmlgen
+            always Cmd.none
+
+        Just nav ->
+            toString >> Nav.replaceUrl nav
 
 
 toUrl : Route -> Url
