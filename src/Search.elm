@@ -187,7 +187,7 @@ toSearchResult dm ( docId, score ) =
                             [ "Skill Variant"
                             , Skill.label dm skill |> Maybe.withDefault "???"
                             ]
-                            (Route.Skill skill.uid)
+                            (Route.SkillVariant var.uid)
                             (Skill.label dm var |> Maybe.withDefault "???")
                     )
 

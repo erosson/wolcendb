@@ -3,6 +3,9 @@ Changelog
 
 ---
 
+#### 2020-03-02
+- Search results for skill-variants now link to the skill-variant's page, instead of the skill's page.
+
 #### 2020-03-01
 - Added ailment base-damage data.
 
