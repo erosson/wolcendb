@@ -9,6 +9,11 @@ type alias LoadAssets =
     { searchIndex : D.Value, datamine : D.Value }
 
 
+{-| JS should replace this element-id with SSR content, if any
+-}
+port ssr : String -> Cmd msg
+
+
 {-| Load searchindex and datamine asynchronously
 -}
 port loadAssets : (LoadAssets -> msg) -> Sub msg

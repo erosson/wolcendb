@@ -8,12 +8,21 @@ import sizes from '../datamine/sizes.json'
 // import datamine from '../datamine/imports.js'
 // import searchIndex from '../public/searchIndex.json'
 
+// Elm will overwrite this node. For SSR'ed pages (see `yarn build:ssr`), this
+// also contains the pre-rendered page content.
+const root = document.getElementById('root')
+const ssrHTML = root.innerHTML
+
 const app = Elm.Main.init({
   // flags: {changelog, datamine, searchIndex},
   flags: {changelog, datamine: null, searchIndex: null},
   node: document.getElementById('root')
 })
 analytics(app)
+app.ports.ssr.subscribe(id => {
+  // console.log('ssr', id, ssrHTML)
+  document.getElementById(id).innerHTML = ssrHTML
+})
 
 fetchAssets(app)
 .then(([datamine, searchIndex]) => {

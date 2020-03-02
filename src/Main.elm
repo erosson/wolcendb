@@ -81,6 +81,12 @@ type alias Flags f =
 init : Flags {} -> Url -> Nav.Key -> ( Model, Cmd Msg )
 init flags url nav =
     init_ flags (Route.parse url) (Just nav)
+        |> Tuple.mapSecond (\cmd -> Cmd.batch [ cmd, Ports.ssr ssrRootId ])
+
+
+ssrRootId : String
+ssrRootId =
+    "ssr-root"
 
 
 init_ : Flags f -> Maybe Route -> Maybe Nav.Key -> ( Model, Cmd Msg )
@@ -274,7 +280,7 @@ updateOk msg ok model =
 
 view : Model -> Browser.Document Msg
 view model =
-    { title = viewTitle model, body = viewBody model }
+    { title = viewTitle model, body = viewBody { ssr = False } model }
 
 
 viewTitle : Model -> String
@@ -364,12 +370,7 @@ viewTitle model =
 viewLoading model =
     [ div [ class "container" ]
         [ View.Nav.viewNoSearchbar
-        , p []
-            [ text "Loot, skill, city, and magic affix lists for the action RPG "
-            , a [ target "_blank", href "https://wolcengame.com/" ] [ text "Wolcen: Lords of Mayhem" ]
-            , text "."
-            ]
-        , div []
+        , div [ class "alert alert-info" ]
             [ div [ class "fas fa-spinner fa-spin" ] []
             , text " Loading..."
             , div []
@@ -394,6 +395,26 @@ viewLoading model =
                 )
             , div [ style "font-size" "60%" ] [ text "Thanks for waiting!" ]
             ]
+        , div []
+            [ div []
+                [ div []
+                    [ div []
+                        [ div []
+                            [ div []
+                                [ div []
+                                    [ div []
+                                        [ div [ id ssrRootId ]
+                                            [-- `Ports:ssr` replaces this with SSR'ed content while loading.
+                                             -- Nested divs force Elm's dom-diffing to remove, not modify, this element when loading's done.
+                                            ]
+                                        ]
+                                    ]
+                                ]
+                            ]
+                        ]
+                    ]
+                ]
+            ]
         ]
     ]
 
@@ -402,8 +423,8 @@ viewErr err =
     [ code [] [ text <| String.right 100000 err ] ]
 
 
-viewBody : Model -> List (Html Msg)
-viewBody model =
+viewBody : { ssr : Bool } -> Model -> List (Html Msg)
+viewBody { ssr } model =
     case readyModel model of
         RemoteData.Failure err ->
             viewErr err
@@ -500,11 +521,16 @@ viewBody model =
                                 Route.Privacy ->
                                     Page.Privacy.view
             in
-            [ div [ class "container" ]
-                ((View.Nav.view model |> H.map NavMsg)
-                    :: content
-                )
-            ]
+            -- no navbar for statically rendered pages, it's added by the loading page
+            if ssr then
+                content
+
+            else
+                [ div [ class "container" ]
+                    ((View.Nav.view model |> H.map NavMsg)
+                        :: content
+                    )
+                ]
 
 
 viewNotFound =
