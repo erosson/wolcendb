@@ -7,6 +7,7 @@ import Datamine.GemFamily as GemFamily exposing (GemFamily)
 import Datamine.NormalItem as NormalItem exposing (NormalItem(..))
 import Datamine.Passive as Passive exposing (Passive)
 import Datamine.Reagent as Reagent exposing (Reagent)
+import Datamine.Skill as Skill exposing (Skill)
 import Datamine.UniqueItem as UniqueItem exposing (UniqueItem(..))
 import Dict exposing (Dict)
 import Html as H exposing (..)
@@ -147,6 +148,7 @@ datas =
     , ( "city-building", dataCityBuilding )
     , ( "city-category", dataCityCategory )
     , ( "city-level", dataCityLevel )
+    , ( "skill-effect-popularity", dataSkillEffectPopularity )
     ]
 
 
@@ -429,6 +431,23 @@ dataCityLevel dm =
                 (\level ->
                     [ IntCell level.level
                     , IntCell level.pptThreshold
+                    ]
+                )
+    }
+
+
+dataSkillEffectPopularity : Datamine -> Data
+dataSkillEffectPopularity dm =
+    { cols =
+        [ "effect"
+        , "count"
+        ]
+    , rows =
+        Skill.popularEffects dm
+            |> List.map
+                (\( effect, count ) ->
+                    [ StringCell effect
+                    , IntCell count
                     ]
                 )
     }

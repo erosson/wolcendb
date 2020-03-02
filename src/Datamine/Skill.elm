@@ -11,12 +11,14 @@ module Datamine.Skill exposing
     , lore
     , modDesc
     , modTotals
+    , popularEffects
     )
 
 import Datamine.Lang as Lang
 import Datamine.Source as Source exposing (Source)
 import Datamine.Util as Util
 import Dict exposing (Dict)
+import Dict.Extra
 import Json.Decode as D
 import Json.Decode.Pipeline as P
 import Result.Extra
@@ -169,6 +171,17 @@ commonSkillEffect node =
 ignoredEffects : Set String
 ignoredEffects =
     Set.fromList [ "HUD", "Animation", "SoundTrigger" ]
+
+
+popularEffects : Lang.Datamine { d | skills : List Skill } -> List ( String, Int )
+popularEffects dm =
+    List.concatMap effects dm.skills
+        ++ List.concatMap effects (dm.skills |> List.concatMap .variants)
+        |> List.map Tuple.first
+        |> Dict.Extra.frequencies
+        |> Dict.toList
+        |> List.sortBy Tuple.second
+        |> List.reverse
 
 
 lore : Lang.Datamine d -> { s | lore : Maybe String } -> Maybe String
