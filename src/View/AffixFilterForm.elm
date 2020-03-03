@@ -6,6 +6,7 @@ import Datamine.GemFamily as GemFamily exposing (GemFamily)
 import Html as H exposing (..)
 import Html.Attributes as A exposing (..)
 import Html.Events as E exposing (..)
+import List.Extra
 import Set exposing (Set)
 import Util
 import View.Affix
@@ -17,6 +18,7 @@ type alias Model m =
         , filterItemLevel : Int
         , filterGemFamilies : Set String
         , filterKeywords : Set String
+        , filterGentypes : Set String
     }
 
 
@@ -24,6 +26,7 @@ type Msg
     = InputItemLevel String
     | InputGemFamily String
     | InputKeywordFilter String
+    | InputGentypeFilter String
 
 
 isVisible : Datamine -> Model m -> MagicAffix -> Bool
@@ -52,6 +55,9 @@ update msg dm model =
 
         InputKeywordFilter kw ->
             { model | filterKeywords = model.filterKeywords |> Util.toggleSet kw }
+
+        InputGentypeFilter kw ->
+            { model | filterGentypes = model.filterGentypes |> Util.toggleSet kw }
 
 
 viewLevelForm : Model m -> Html Msg
@@ -137,24 +143,49 @@ viewKeywordForm dm model =
                 ]
                 [ text "Show only affixes with keyword" ]
             , div [ class "col" ]
-                (dm.magicAffixesKeywords
-                    |> List.map
-                        (\kw ->
-                            let
-                                id =
-                                    "affix-filter-keyword-" ++ kw
-                            in
-                            div [ class "form-check form-check-inline" ]
-                                [ input
-                                    [ class "form-check-input"
-                                    , A.id id
-                                    , type_ "checkbox"
-                                    , onCheck <| always <| InputKeywordFilter kw
+                [ div []
+                    (dm.magicAffixesKeywords
+                        |> List.map
+                            (\kw ->
+                                let
+                                    id =
+                                        "affix-filter-keyword-" ++ kw
+                                in
+                                div [ class "form-check form-check-inline" ]
+                                    [ input
+                                        [ class "form-check-input"
+                                        , A.id id
+                                        , type_ "checkbox"
+                                        , onCheck <| always <| InputKeywordFilter kw
+                                        ]
+                                        []
+                                    , H.label [ class "form-check-label badge", for id ] [ text kw ]
                                     ]
-                                    []
-                                , H.label [ class "form-check-label badge", for id ] [ text kw ]
-                                ]
-                        )
-                )
+                            )
+                    )
+                , div []
+                    -- (List.map .type_ dm.affixes.magic
+                    -- |> List.Extra.unique
+                    -- same thing, but faster
+                    ([ "prefix", "suffix" ]
+                        |> List.map
+                            (\kw ->
+                                let
+                                    id =
+                                        "affix-filter-gentype-" ++ kw
+                                in
+                                div [ class "form-check form-check-inline" ]
+                                    [ input
+                                        [ class "form-check-input"
+                                        , A.id id
+                                        , type_ "checkbox"
+                                        , onCheck <| always <| InputGentypeFilter kw
+                                        ]
+                                        []
+                                    , H.label [ class "form-check-label badge", for id ] [ text kw ]
+                                    ]
+                            )
+                    )
+                ]
             ]
         ]

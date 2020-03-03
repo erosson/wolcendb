@@ -68,6 +68,12 @@ view dm model =
                         -- List.filter (NormalItem.isKeywordAffix model.filterKeywords)
                         List.filter (\a -> a.drop.mandatoryKeywords ++ a.drop.optionalKeywords |> List.any (\k -> Set.member k model.filterKeywords))
                    )
+                |> (if Set.isEmpty model.filterGentypes then
+                        identity
+
+                    else
+                        List.filter (\a -> Set.member a.type_ model.filterGentypes)
+                   )
                 |> List.filter (View.AffixFilterForm.isVisible dm model)
                 |> View.Affix.affixesByClass
                 |> List.concatMap (viewAffixClass dm model)
@@ -124,6 +130,31 @@ viewAffixClassRow dm model ( cls, affixes ) =
                             List.foldl (Set.fromList >> Set.intersect) (Set.fromList head) tail
                     in
                     head |> List.filter (\k -> Set.member k all)
+
+        gentypes : List String
+        gentypes =
+            case affixes |> List.map .type_ |> List.Extra.unique of
+                [] ->
+                    []
+
+                [ a ] ->
+                    [ a ]
+
+                _ ->
+                    []
+
+        -- everything's 1-200, not useful
+        --level =
+        --    case affixes |> List.map (.drop >> .itemLevel) of
+        --        [] ->
+        --            Nothing
+        --
+        --        head :: tail ->
+        --            let
+        --                range =
+        --                    List.foldl (\a b -> { a | min = Basics.min a.min b.min, max = Basics.max a.max b.max }) head tail
+        --            in
+        --            String.fromInt range.min ++ "-" ++ String.fromInt range.max |> Just
     in
     tr
         [ class "expand-affix-class"
@@ -142,11 +173,12 @@ viewAffixClassRow dm model ( cls, affixes ) =
             ]
         , td [] (effects |> List.map (\e -> div [] [ text e ]))
         , td [] []
-        , td [] [{- level -}]
 
-        -- , td [] (keywords |> List.map (\k -> span [ class "badge" ] [ text k ]))
+        -- , td [ class "nowrap" ] (Maybe.Extra.unwrap [] (\l -> [ text l ]) level)
+        , td [] [{- level -}]
+        , td [] (keywords ++ gentypes |> List.map (\k -> span [ class "badge" ] [ text k ]))
+
         -- , td [ class "nowrap" ] (View.Affix.viewGemFamiliesList model.datamine affixes)
-        , td [] [{- keywords -}]
         , td [] [{- gems -}]
         , td []
             [ button [ class "btn btn-outline-secondary p-1 nowrap" ]
