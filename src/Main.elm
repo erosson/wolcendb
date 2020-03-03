@@ -127,6 +127,8 @@ initSSRPages flags =
                 RemoteData.Success dm ->
                     [ dm.loot |> List.map (NormalItem.name >> Route.NormalItem)
                     , dm.uniqueLoot |> List.map (UniqueItem.name >> Route.UniqueItem)
+                    , dm.skills |> List.map (.uid >> Route.Skill)
+                    , dm.skills |> List.concatMap .variants |> List.map (.uid >> Route.SkillVariant)
                     ]
                         |> List.concat
 

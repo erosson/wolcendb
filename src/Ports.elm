@@ -34,3 +34,8 @@ port urlChange : { route : String, path : String, query : Maybe String } -> Cmd 
 {-| Send the server-side renderer a list of pages to prerender
 -}
 port ssrCliPages : List String -> Cmd msg
+
+
+{-| Receive a render request for one page from the server-side renderer
+-}
+port ssrCliRender : (String -> msg) -> Sub msg

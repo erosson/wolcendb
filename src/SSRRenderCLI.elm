@@ -17,6 +17,13 @@ import Browser
 import Html as H exposing (..)
 import Html.Attributes as A exposing (..)
 import Main
+import Ports
+import Url exposing (Url)
+
+
+notFound : Url
+notFound =
+    Url Url.Https "" Nothing "" Nothing Nothing
 
 
 main =
@@ -24,5 +31,7 @@ main =
         { view = Main.viewBody { ssr = True } >> div [ id "root", style "display" "none" ]
         , init = Main.initSSRRender
         , update = Main.update
-        , subscriptions = always Sub.none
+        , subscriptions =
+            \_ ->
+                Ports.ssrCliRender (Url.fromString >> Maybe.withDefault notFound >> Main.OnUrlChange)
         }
