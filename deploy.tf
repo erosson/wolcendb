@@ -27,11 +27,18 @@ provider "gitlab" {
 provider "netlify" {
   version = "~> 0.4"
 }
+provider "aws" {
+  version = "~> 2.51"
+  region  = "us-east-1"
+}
 
 locals {
-  project            = "wolcendb"
-  hostdomain         = "erosson.org"
-  fulldomain         = "${local.project}.${local.hostdomain}"
+  project    = "wolcendb"
+  hostdomain = "erosson.org"
+  fulldomain = "${local.project}.${local.hostdomain}"
+  # img.wolcendb.erosson.org would be nice instead of img-wolcendb.erosson.org, but cloudflare's ssl cert doesn't cover nested subdomains
+  img_subdomain      = "img-${local.project}"
+  imgdomain          = "${local.img_subdomain}.${local.hostdomain}"
   cloudflare_zone_id = "7c06b35c2392935ebb0653eaf94a3e70" # erosson.org
 }
 
@@ -72,4 +79,37 @@ resource "cloudflare_record" "www" {
   type    = "CNAME"
   value   = module.webhost.dns
   proxied = false # netlify does its own proxying
+}
+
+# image hosting
+resource "aws_s3_bucket" "img" {
+  bucket = local.imgdomain
+  acl    = "private" # avoid root directory listing; policy overrides this for image hosting
+  policy = <<EOF
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Effect": "Allow",
+            "Principal": "*",
+            "Action": [
+                "s3:GetObject"
+            ],
+            "Resource": [
+                "arn:aws:s3:::${local.imgdomain}/*"
+            ]
+        }
+    ]
+}
+EOF
+  #                "arn:aws:s3:::${local.imgdomain}/*",
+  #                "arn:aws:s3:::${local.imgdomain}"
+}
+
+resource "cloudflare_record" "img" {
+  zone_id = local.cloudflare_zone_id
+  name    = local.img_subdomain
+  type    = "CNAME"
+  value   = aws_s3_bucket.img.bucket_domain_name
+  proxied = true
 }

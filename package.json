@@ -17,6 +17,7 @@
     "_build:ssr": "bash -c \"rm -rf build-ssr && elm make src/SSRRenderCLI.elm --optimize --output datamine.tmp/SSRRenderCLI.elm.js && elm make src/SSRPagesCLI.elm --optimize --output datamine.tmp/SSRPagesCLI.elm.js && node ./src/ssr-cli.js && mv build-ssr build/ssr\"",
     "build:ci": "bash -c \"yarn test && yarn build\"",
     "build:serve": "bash -c \"serve build\"",
+    "deploy:img": "bash -c \"aws s3 sync --delete ./public/static/datamine/ s3://img-wolcendb.erosson.org\"",
     "test": "node --experimental-modules tests/fixture.mjs && elm-app test"
   },
   "devDependencies": {
