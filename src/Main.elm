@@ -404,7 +404,7 @@ viewTitle model =
 viewLoading model =
     [ div [ class "container" ]
         [ View.Nav.viewNoSearchbar
-        , div [ class "alert alert-info" ]
+        , div [ class "alert alert-info loading-alert" ]
             [ div [ class "fas fa-spinner fa-spin" ] []
             , text " Loading..."
             , div []
