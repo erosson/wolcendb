@@ -29,3 +29,8 @@ port loadAssetsProgress : (LoadAssetsProgress -> msg) -> Sub msg
 {-| Tell analytics when the url changes
 -}
 port urlChange : { route : String, path : String, query : Maybe String } -> Cmd msg
+
+
+{-| Send the server-side renderer a list of pages to prerender
+-}
+port ssrCliPages : List String -> Cmd msg

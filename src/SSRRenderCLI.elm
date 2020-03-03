@@ -1,4 +1,4 @@
-module SSR_CLI exposing (main)
+module SSRRenderCLI exposing (main)
 
 {-| Prerender a single WolcenDB page.
 
@@ -22,7 +22,7 @@ import Main
 main =
     Browser.element
         { view = Main.viewBody { ssr = True } >> div [ id "root", style "display" "none" ]
-        , init = Main.initStatic
+        , init = Main.initSSRRender
         , update = Main.update
         , subscriptions = always Sub.none
         }

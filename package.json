@@ -14,7 +14,7 @@
     "build": "bash -c \"yarn _build:search-index && yarn _build && yarn _build:ssr\"",
     "_build": "bash -c \"rm -rf build && elm-app build\"",
     "_build:search-index": "bash -c \"elm make src/BuildSearchIndexCLI.elm --output datamine.tmp/BuildSearchIndexCLI.elm.js && node --experimental-modules src/build-search-index-cli.mjs\"",
-    "_build:ssr": "bash -c \"rm -rf build-ssr && elm make src/SSR_CLI.elm --optimize --output datamine.tmp/SSR_CLI.elm.js && node ./src/ssr-cli.js && mv build-ssr build/ssr\"",
+    "_build:ssr": "bash -c \"rm -rf build-ssr && elm make src/SSRRenderCLI.elm --optimize --output datamine.tmp/SSRRenderCLI.elm.js && elm make src/SSRPagesCLI.elm --optimize --output datamine.tmp/SSRPagesCLI.elm.js && node ./src/ssr-cli.js && mv build-ssr build/ssr\"",
     "build:ci": "bash -c \"yarn test && yarn build\"",
     "build:serve": "bash -c \"serve build\"",
     "test": "node --experimental-modules tests/fixture.mjs && elm-app test"
@@ -27,6 +27,7 @@
     "glob": "^7.1.6",
     "jsdom": "^16.2.0",
     "json-loader": "^0.5.7",
+    "lodash": "^4.17.15",
     "mkdirp": "^1.0.3",
     "ncp": "^2.0.0",
     "node-sass": "^4.13.1",

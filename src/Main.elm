@@ -4,6 +4,8 @@ import Browser
 import Browser.Dom
 import Browser.Navigation as Nav
 import Datamine exposing (Datamine)
+import Datamine.NormalItem as NormalItem exposing (NormalItem)
+import Datamine.UniqueItem as UniqueItem exposing (UniqueItem)
 import Dict exposing (Dict)
 import ElmTextSearch
 import Html as H exposing (..)
@@ -108,9 +110,37 @@ init_ flags route nav =
         |> routeTo route
 
 
-initStatic : Flags { url : String } -> ( Model, Cmd Msg )
-initStatic flags =
+initSSRRender : Flags { url : String } -> ( Model, Cmd Msg )
+initSSRRender flags =
     init_ flags (flags.url |> Url.fromString |> Maybe.andThen Route.parse) Nothing
+
+
+initSSRPages : Flags {} -> ( Model, Cmd Msg )
+initSSRPages flags =
+    let
+        ( model, cmd ) =
+            init_ flags ("/" |> Url.fromString |> Maybe.andThen Route.parse) Nothing
+
+        routes : List Route
+        routes =
+            case model.datamine of
+                RemoteData.Success dm ->
+                    [ dm.loot |> List.map (NormalItem.name >> Route.NormalItem)
+                    , dm.uniqueLoot |> List.map (UniqueItem.name >> Route.UniqueItem)
+                    ]
+                        |> List.concat
+
+                _ ->
+                    []
+    in
+    ( model
+    , Cmd.batch
+        [ cmd
+        , routes
+            |> List.map (Route.toUrl >> .path)
+            |> Ports.ssrCliPages
+        ]
+    )
 
 
 maybeDecode : (D.Value -> Result String a) -> Maybe D.Value -> RemoteData String a
