@@ -5,6 +5,8 @@ const path = require('path')
 const mkdirp = require('mkdirp')
 const xml2js = require('xml2js')
 const _ = require('lodash/fp')
+const imagemin = require('imagemin')
+const imageminPngquant = require('imagemin-pngquant')
 
 // const jsonLoader = require('json-loader').default
 const xlsxLoader = require('@erosson/xlsx-loader').default
@@ -89,7 +91,14 @@ function pngMain() {
     return Promise.all(paths.map(p =>
       mkdirp(path.dirname(pngdest + p))
     ))
-    .then(() => Promise.all(paths.map(p => fs.copyFile(prefix + p, pngdest + p))))
+    // .then(() => Promise.all(paths.map(p => fs.copyFile(prefix + p, pngdest + p))))
+    .then(() => Promise.all(paths.map(p => imagemin([prefix + p], {
+      destination: path.dirname(pngdest + p),
+      plugins: [imageminPngquant({
+        quality: [0.3, 0.7],
+        strip: true,
+      })]
+    }))))
   })
 }
 function revisionMain() {
