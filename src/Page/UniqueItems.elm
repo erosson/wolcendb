@@ -60,25 +60,28 @@ viewMain dm keywords items =
                     in
                     li [ class "list-group-item" ]
                         [ div [ class "row" ]
-                            (div [ class "col-sm-3" ]
-                                [ a [ Route.href <| Route.UniqueItem <| UniqueItem.name mainitem ]
-                                    [ img [ class "unique-list-img", View.Item.imgUnique dm mainitem ] []
-                                    ]
-                                ]
-                                :: (group
-                                        |> List.map
-                                            (\uitem ->
-                                                div [ class "col-sm-3" ]
-                                                    [ a [ Route.href <| Route.UniqueItem <| UniqueItem.name uitem ] [ UniqueItem.label dm uitem |> Maybe.withDefault "???" |> text ]
-                                                    , uitem |> UniqueItem.levelPrereq |> Maybe.Extra.unwrap (p [] []) (\lvl -> p [] [ text <| "Level: " ++ String.fromInt lvl ])
-                                                    , uitem |> UniqueItem.baseEffects dm |> List.map (\s -> li [ class "list-group-item" ] [ text s ]) |> ul [ class "list-group affixes" ]
-                                                    , uitem |> UniqueItem.implicitEffects dm |> List.map (\s -> li [ class "list-group-item" ] [ text s ]) |> ul [ class "list-group affixes" ]
-                                                    , uitem |> UniqueItem.defaultEffects dm |> List.map (\s -> li [ class "list-group-item" ] [ text s ]) |> ul [ class "list-group affixes" ]
-                                                    , small [ class "text-muted" ] [ text "Keywords: ", text <| String.join ", " <| UniqueItem.keywords uitem ]
-                                                    ]
-                                            )
-                                   )
+                            --(div [ class "col-sm-3" ]
+                            --    [ a [ Route.href <| Route.UniqueItem <| UniqueItem.name mainitem ]
+                            --        [ img [ class "unique-list-img", View.Item.imgUnique dm mainitem ] []
+                            --        ]
+                            --    ]
+                            --    :: (group
+                            (group
+                                |> List.map
+                                    (\uitem ->
+                                        -- div [ class "col-sm-3" ]
+                                        div [ class "col-sm-4" ]
+                                            [ a [ Route.href <| Route.UniqueItem <| UniqueItem.name uitem ] [ UniqueItem.label dm uitem |> Maybe.withDefault "???" |> text ]
+                                            , uitem |> UniqueItem.levelPrereq |> Maybe.Extra.unwrap (p [] []) (\lvl -> p [] [ text <| "Level: " ++ String.fromInt lvl ])
+                                            , uitem |> UniqueItem.baseEffects dm |> List.map (\s -> li [ class "list-group-item" ] [ text s ]) |> ul [ class "list-group affixes" ]
+                                            , uitem |> UniqueItem.implicitEffects dm |> List.map (\s -> li [ class "list-group-item" ] [ text s ]) |> ul [ class "list-group affixes" ]
+                                            , uitem |> UniqueItem.defaultEffects dm |> List.map (\s -> li [ class "list-group-item" ] [ text s ]) |> ul [ class "list-group affixes" ]
+                                            , small [ class "text-muted" ] [ text "Keywords: ", text <| String.join ", " <| UniqueItem.keywords uitem ]
+                                            ]
+                                    )
                             )
+
+                        -- )
                         ]
                 )
         )

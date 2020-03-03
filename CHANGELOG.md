@@ -3,6 +3,10 @@ Changelog
 
 ---
 
+#### 2020-03-03
+- Images removed from loot/unique/skill lists. They're still visible when viewing only a single item/unique/skill.
+  - Site bandwidth has been too high; oops. This is a quick fix. I'd like to bring these images back once I've had time to explore other solutions. Sorry!
+
 #### 2020-03-02
 - Search results for skill-variants now link to the skill-variant's page, instead of the skill's page.
 - [`/affix`](/affix) now displays keywords for collapsed rows.
