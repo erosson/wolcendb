@@ -11,7 +11,6 @@ import Route exposing (Route)
 import Util
 import View.Affix
 import View.Desc
-import View.Item
 
 
 type Msg

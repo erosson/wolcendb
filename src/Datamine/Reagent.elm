@@ -44,7 +44,7 @@ lore dm s =
 
 img : Reagent -> String
 img item =
-    "/static/datamine/Game/Libs/UI/u_resources/" ++ item.hudPicture
+    Util.imghost ++ "/" ++ item.hudPicture
 
 
 decoder : D.Decoder (List Reagent)

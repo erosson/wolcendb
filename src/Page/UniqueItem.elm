@@ -10,7 +10,6 @@ import Maybe.Extra
 import Route exposing (Route)
 import View.Affix
 import View.Desc
-import View.Item
 
 
 viewTitle : Datamine -> String -> String
@@ -41,7 +40,7 @@ viewMain dm uitem =
         [ div [ class "card-header" ] [ label ]
         , div [ class "card-body" ]
             [ span [ class "item float-right" ]
-                [ img [ View.Item.imgUnique dm uitem ] []
+                [ img [ src <| Maybe.withDefault "" <| UniqueItem.img dm uitem ] []
                 , div [] [ text "[", a [ Route.href <| Route.Source "unique-loot" <| UniqueItem.name uitem ] [ text "Source" ], text "]" ]
                 , div [] [ text "[", a [ Route.href <| Route.Offline "unique-loot" <| UniqueItem.name uitem ] [ text "Offline" ], text "]" ]
                 ]

@@ -8,7 +8,8 @@
   "scripts": {
     "export:pull": "bash -c \"git subtree pull --squash --prefix third-party/WolcenExtractor git@github.com:gabriel-dehan/WolcenExtractor.git master && yarn export:install\"",
     "export:install": "bash -c \"gem install bundler && cd third-party/WolcenExtractor && bundle install\"",
-    "export:cp": "bash -c \"rm -rf datamine && mkdir datamine && node ./src/import_datamine.js && yarn _build:search-index\"",
+    "export:datamine": "bash -c \"rm -rf datamine && mkdir datamine && node ./src/import_datamine.js\"",
+    "export:cp": "bash -c \"yarn export:datamine && yarn _build:search-index\"",
     "export": "bash -c \"echo 'deleting datamine.tmp in 3...' && sleep 3 && rm -rf datamine.tmp && cd third-party/WolcenExtractor && ruby src/main.rb extract --source \\\"`cat ../../GAMEPATH`\\\" --dest ../../datamine.tmp --only english_xml.pak,umbra.pak,Libs_UI_ && cd - && cp \\\"`cat GAMEPATH`\\\"/revision.txt datamine.tmp/revision.txt && yarn export:cp\"",
     "start": "bash -c \"ELM_DEBUGGER=false elm-app start\"",
     "build": "bash -c \"yarn _build:search-index && yarn _build && yarn _build:ssr\"",
@@ -17,7 +18,7 @@
     "_build:ssr": "bash -c \"rm -rf build-ssr && elm make src/SSRRenderCLI.elm --optimize --output datamine.tmp/SSRRenderCLI.elm.js && elm make src/SSRPagesCLI.elm --optimize --output datamine.tmp/SSRPagesCLI.elm.js && node ./src/ssr-cli.js && mv build-ssr build/ssr\"",
     "build:ci": "bash -c \"yarn test && yarn build\"",
     "build:serve": "bash -c \"serve build\"",
-    "deploy:img": "bash -c \"aws s3 sync --delete ./public/static/datamine/ s3://img-wolcendb.erosson.org\"",
+    "deploy:img": "bash -c \"aws s3 sync --delete ./build-img/ s3://img-wolcendb.erosson.org\"",
     "test": "node --experimental-modules tests/fixture.mjs && elm-app test"
   },
   "devDependencies": {

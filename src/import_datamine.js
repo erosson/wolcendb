@@ -13,7 +13,7 @@ const xlsxLoader = require('@erosson/xlsx-loader').default
 
 const prefix = "datamine.tmp/"
 const dest = "datamine/"
-const pngdest = "public/static/datamine/"
+const pngdest = "build-img/"
 
 function main() {
   return Promise.all([
@@ -89,16 +89,22 @@ function pngMain() {
   .then(paths => paths.map(path => path.replace(/^datamine.tmp\//, '')))
   .then(paths => {
     return Promise.all(paths.map(p =>
-      mkdirp(path.dirname(pngdest + p))
+      mkdirp(path.dirname(pngdest + p.toLowerCase()))
     ))
-    // .then(() => Promise.all(paths.map(p => fs.copyFile(prefix + p, pngdest + p))))
+    // .then(() => Promise.all(paths.map(p => fs.copyFile(prefix + p, pngdest + p.toLowerCase()))))
     .then(() => Promise.all(paths.map(p => imagemin([prefix + p], {
-      destination: path.dirname(pngdest + p),
+      destination: path.dirname(pngdest + p.toLowerCase()),
       plugins: [imageminPngquant({
         quality: [0.3, 0.7],
         strip: true,
       })]
     }))))
+    // imagemin destination must be a directory. Lowercasing the file basename is a separate step.
+    .then(() => Promise.all(
+      paths
+      .filter(p => path.basename(p) !== path.basename(p).toLowerCase())
+      .map(p => fs.rename(pngdest + path.dirname(p).toLowerCase() + "/" + path.basename(p), pngdest + p.toLowerCase()))
+    ))
   })
 }
 function revisionMain() {

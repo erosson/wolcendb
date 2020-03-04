@@ -15,7 +15,6 @@ import Util
 import View.Affix
 import View.AffixFilterForm
 import View.Desc
-import View.Item
 
 
 type alias Model m =
@@ -65,7 +64,7 @@ viewMain dm m nitem =
         [ div [ class "card-header" ] [ label ]
         , div [ class "card-body" ]
             [ span [ class "item float-right" ]
-                [ img [ View.Item.imgNormal dm nitem ] []
+                [ img [ src <| Maybe.withDefault "" <| NormalItem.img dm nitem ] []
                 , div [] [ text "[", a [ Route.href <| Route.Source "normal-loot" <| NormalItem.name nitem ] [ text "Source" ], text "]" ]
                 ]
             , p [] [ text "Level: ", text <| Maybe.Extra.unwrap "-" String.fromInt <| NormalItem.levelPrereq nitem ]

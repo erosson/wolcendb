@@ -141,3 +141,8 @@ formatEffectStat ( index, ( name, stat ) ) =
                 ""
     in
     String.replace ("%" ++ String.fromInt (index + 1)) <| val ++ suffix
+
+
+imghost : String
+imghost =
+    String.toLower "https://img-wolcendb.erosson.org/Game/Libs/UI/u_resources"

@@ -7,6 +7,7 @@ module Datamine.Skill exposing
     , decoder
     , desc
     , effects
+    , img
     , label
     , lore
     , modDesc
@@ -69,6 +70,11 @@ type alias SkillModifier =
     , param2 : Float
     , uiDesc : String
     }
+
+
+img : { s | hudPicture : String } -> String
+img skill =
+    Util.imghost ++ "/" ++ String.toLower skill.hudPicture
 
 
 label : Lang.Datamine d -> { s | uiName : String } -> Maybe String

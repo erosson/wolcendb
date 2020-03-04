@@ -35,7 +35,7 @@ label dm s =
 
 img : Gem -> String
 img gem =
-    "/static/datamine/Game/Libs/UI/u_resources/gems/" ++ gem.hudPicture
+    Util.imghost ++ "/gems/" ++ String.toLower gem.hudPicture
 
 
 formatSocket : Socket -> String

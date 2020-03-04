@@ -4,6 +4,7 @@ module Datamine.NormalItem exposing
     , baseEffects
     , commonLootDecoder
     , decoder
+    , img
     , implicitAffixes
     , implicitEffects
     , isKeywordAffix
@@ -16,9 +17,11 @@ module Datamine.NormalItem exposing
     )
 
 import Datamine.Affix as Affix exposing (Affixes, MagicAffix)
+import Datamine.Cosmetic as Cosmetic
 import Datamine.Lang as Lang
 import Datamine.Source as Source exposing (Source)
 import Datamine.Util as Util
+import Dict exposing (Dict)
 import Json.Decode as D
 import Json.Decode.Pipeline as P
 import Result.Extra
@@ -91,6 +94,31 @@ type alias Item i =
         , keywords : List String
         , implicitAffixes : List String
     }
+
+
+type alias Datamine d =
+    Lang.Datamine
+        { d
+            | affixes : Affixes
+            , cosmeticWeaponDescriptors : Dict String Cosmetic.CCosmeticWeaponDescriptor
+            , cosmeticTransferTemplates : Dict String Cosmetic.CCosmeticTransferTemplate
+        }
+
+
+img : Datamine d -> NormalItem -> Maybe String
+img dm nitem =
+    Maybe.map String.toLower <|
+        case nitem of
+            NAccessory item ->
+                Util.imghost ++ "/armors/" ++ item.hudPicture |> Just
+
+            NArmor item ->
+                Dict.get (String.toLower item.attachmentName) dm.cosmeticTransferTemplates
+                    |> Maybe.map (\t -> Util.imghost ++ "/armors/" ++ t.hudPicture)
+
+            _ ->
+                Dict.get (name nitem |> String.toLower) dm.cosmeticWeaponDescriptors
+                    |> Maybe.map (\t -> Util.imghost ++ "/weapons/" ++ t.hudPicture)
 
 
 label : Lang.Datamine d -> NormalItem -> Maybe String
@@ -240,10 +268,6 @@ levelPrereq n =
 
         NAccessory i ->
             i.levelPrereq
-
-
-type alias Datamine d =
-    Lang.Datamine { d | affixes : Affixes }
 
 
 {-| Get all random magic affixes that this item can spawn.

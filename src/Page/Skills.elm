@@ -9,7 +9,6 @@ import Html.Events as E exposing (..)
 import Maybe.Extra
 import Route exposing (Route)
 import View.Desc
-import View.Skill
 
 
 view : Datamine -> List (Html msg)
@@ -21,8 +20,8 @@ view dm =
     , table [ class "table" ]
         [ thead []
             [ tr []
-                -- [ th [] [ text "icon" ]
-                [ th [] [ text "name" ]
+                [ th [] [ text "icon" ]
+                , th [] [ text "name" ]
                 , th [] [ text "desc" ]
 
                 -- , th [] [ text "lore" ]
@@ -33,12 +32,12 @@ view dm =
                 |> List.map
                     (\s ->
                         tr []
-                            --[ td []
-                            --    [ a [ Route.href <| Route.Skill s.uid ]
-                            --        [ img [ class "skill-icon", View.Skill.img s ] []
-                            --        ]
-                            --    ]
-                            [ td [ title s.uiName ]
+                            [ td []
+                                [ a [ Route.href <| Route.Skill s.uid ]
+                                    [ img [ class "skill-icon", src <| Skill.img s ] []
+                                    ]
+                                ]
+                            , td [ title s.uiName ]
                                 [ a [ Route.href <| Route.Skill s.uid ]
                                     [ Skill.label dm s |> Maybe.withDefault "???" |> text
                                     ]

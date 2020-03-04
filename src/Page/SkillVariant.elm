@@ -13,7 +13,6 @@ import Maybe.Extra
 import Route exposing (Route)
 import Util
 import View.Desc
-import View.Skill
 
 
 viewTitle : Datamine -> String -> String
@@ -67,7 +66,7 @@ view dm uid =
                         [ div [ class "media" ]
                             [ div [ class "media-body" ]
                                 [ span [ class "float-left" ]
-                                    [ img [ class "skill-variant", View.Skill.img variant ] [] ]
+                                    [ img [ class "skill-variant", src <| Skill.img variant ] [] ]
                                 , div [] [ text "Variant #", index |> Maybe.Extra.unwrap "???" String.fromInt |> text ]
                                 , div [] [ text "Level: ", vast |> Maybe.Extra.unwrap "???" (.level >> String.fromInt) |> text ]
                                 , div [] [ text "Cost: ", vast |> Maybe.Extra.unwrap "???" (.cost >> String.fromInt) |> text ]
@@ -79,7 +78,7 @@ view dm uid =
                                 , div [ class "card" ] (viewSkillEffects <| Skill.effects variant)
                                 ]
                             , div []
-                                [ img [ class "skill", View.Skill.img skill ] []
+                                [ img [ class "skill", src <| Skill.img skill ] []
                                 , div [] [ text "[", a [ Route.href <| Route.Source "skill-variant" uid ] [ text "Source" ], text "]" ]
                                 ]
                             ]

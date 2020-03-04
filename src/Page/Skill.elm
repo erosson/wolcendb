@@ -13,7 +13,6 @@ import Page.SkillVariant exposing (viewSkillEffects)
 import Route exposing (Route)
 import Util
 import View.Desc
-import View.Skill
 
 
 viewTitle : Datamine -> String -> String
@@ -64,7 +63,7 @@ view dm uid =
                                 , div [] (viewSkillEffects <| Skill.effects skill)
                                 ]
                             , div []
-                                [ img [ class "skill", View.Skill.img skill ] []
+                                [ img [ class "skill", src <| Skill.img skill ] []
                                 , div [] [ text "[", a [ Route.href <| Route.Source "skill" uid ] [ text "Source" ], text "]" ]
                                 ]
                             ]
@@ -85,7 +84,7 @@ view dm uid =
                                         (\i ( va, v ) ->
                                             tr []
                                                 [ td [] [ text <| String.fromInt <| i + 1 ]
-                                                , td [] [ img [ class "skill-variant", View.Skill.img v ] [] ]
+                                                , td [] [ img [ class "skill-variant", src <| Skill.img v ] [] ]
                                                 , td []
                                                     [ a [ title v.uiName, Route.href <| Route.SkillVariant v.uid ] [ Skill.label dm v |> Maybe.withDefault "???" |> text ]
                                                     ]

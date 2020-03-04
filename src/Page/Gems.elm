@@ -10,7 +10,6 @@ import Html.Events as E exposing (..)
 import Maybe.Extra
 import Route exposing (Route)
 import View.Affix
-import View.Item
 
 
 view : Datamine -> List (Html msg)

@@ -5,6 +5,7 @@ module Datamine.UniqueItem exposing
     , decoder
     , defaultAffixes
     , defaultEffects
+    , img
     , implicitAffixes
     , implicitEffects
     , isNonmax
@@ -18,10 +19,12 @@ module Datamine.UniqueItem exposing
     )
 
 import Datamine.Affix as Affix exposing (Affixes, MagicAffix)
+import Datamine.Cosmetic as Cosmetic
 import Datamine.Lang as Lang
 import Datamine.NormalItem as NormalItem exposing (Item)
 import Datamine.Source as Source exposing (Source)
 import Datamine.Util as Util
+import Dict exposing (Dict)
 import Json.Decode as D
 import Json.Decode.Pipeline as P
 import Result.Extra
@@ -99,6 +102,30 @@ type alias UniqueAccessory =
     , lore : Maybe String
     , hudPicture : String
     }
+
+
+type alias Datamine d =
+    Lang.Datamine
+        { d
+            | cosmeticWeaponDescriptors : Dict String Cosmetic.CCosmeticWeaponDescriptor
+            , cosmeticTransferTemplates : Dict String Cosmetic.CCosmeticTransferTemplate
+        }
+
+
+img : Datamine d -> UniqueItem -> Maybe String
+img dm uitem =
+    Maybe.map String.toLower <|
+        case uitem of
+            UAccessory item ->
+                Util.imghost ++ "/armors/" ++ item.hudPicture |> Just
+
+            UArmor item ->
+                Dict.get (Maybe.withDefault "" item.attachmentName |> String.toLower) dm.cosmeticTransferTemplates
+                    |> Maybe.map (\t -> Util.imghost ++ "/armors/" ++ t.hudPicture)
+
+            _ ->
+                Dict.get (name uitem |> String.toLower) dm.cosmeticWeaponDescriptors
+                    |> Maybe.map (\t -> Util.imghost ++ "/weapons/" ++ t.hudPicture)
 
 
 {-| High-level uniques are named after the original, with "\_max" at the end
