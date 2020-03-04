@@ -3,6 +3,9 @@ Changelog
 
 ---
 
+#### 2020-03-04
+- Images have been restored to loot/unique/skill lists.
+
 #### 2020-03-03
 - Images removed from loot/unique/skill lists. They're still visible when viewing only a single item/unique/skill.
   - Site bandwidth has been too high; oops. This is a quick fix. I'd like to bring these images back once I've had time to explore other solutions. Sorry!
