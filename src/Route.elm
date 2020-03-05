@@ -19,7 +19,7 @@ import Url.Parser.Query as Q
 
 type Route
     = Home
-    | NormalItems (Maybe String)
+    | NormalItems (Maybe Int) (Maybe String)
     | NormalItem String
     | UniqueItems (Maybe String)
     | UniqueItem String
@@ -67,10 +67,10 @@ parser =
         , P.map Privacy <| P.s "privacy"
 
         -- legacy routes
-        , P.map (Redirect (NormalItems (Just "weapon"))) <| P.s "loot" </> P.s "weapon"
-        , P.map (Redirect (NormalItems (Just "shield"))) <| P.s "loot" </> P.s "shield"
-        , P.map (Redirect (NormalItems (Just "armor"))) <| P.s "loot" </> P.s "armor"
-        , P.map (Redirect (NormalItems (Just "accessory"))) <| P.s "loot" </> P.s "accessory"
+        , P.map (Redirect (NormalItems Nothing (Just "weapon"))) <| P.s "loot" </> P.s "weapon"
+        , P.map (Redirect (NormalItems Nothing (Just "shield"))) <| P.s "loot" </> P.s "shield"
+        , P.map (Redirect (NormalItems Nothing (Just "armor"))) <| P.s "loot" </> P.s "armor"
+        , P.map (Redirect (NormalItems Nothing (Just "accessory"))) <| P.s "loot" </> P.s "accessory"
         , P.map (Redirect << NormalItem) <| P.s "loot" </> P.s "weapon" </> P.string
         , P.map (Redirect << NormalItem) <| P.s "loot" </> P.s "shield" </> P.string
         , P.map (Redirect << NormalItem) <| P.s "loot" </> P.s "armor" </> P.string
@@ -87,7 +87,7 @@ parser =
         -- modern item routes
         , P.map UniqueItems <| P.s "loot" </> P.s "unique" <?> Q.string "keywords"
         , P.map UniqueItem <| P.s "loot" </> P.s "unique" </> P.string
-        , P.map NormalItems <| P.s "loot" <?> Q.string "keywords"
+        , P.map NormalItems <| P.s "loot" <?> Q.int "tier" <?> Q.string "keywords"
         , P.map NormalItem <| P.s "loot" </> P.string
         ]
 
@@ -101,7 +101,7 @@ toPath r =
         Home ->
             "/"
 
-        NormalItems _ ->
+        NormalItems _ _ ->
             "/loot"
 
         NormalItem id ->
@@ -168,8 +168,11 @@ toQuery route =
         UniqueItems tags ->
             [ tags |> Maybe.map (B.string "keywords") ] |> List.filterMap identity
 
-        NormalItems tags ->
-            [ tags |> Maybe.map (B.string "keywords") ] |> List.filterMap identity
+        NormalItems tier tags ->
+            [ tags |> Maybe.map (B.string "keywords")
+            , tier |> Maybe.map (B.int "tier")
+            ]
+                |> List.filterMap identity
 
         _ ->
             []

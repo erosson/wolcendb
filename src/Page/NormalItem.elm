@@ -57,7 +57,7 @@ viewMain dm m nitem =
     in
     [ ol [ class "breadcrumb" ]
         [ a [ class "breadcrumb-item active", Route.href Route.Home ] [ text "Home" ]
-        , a [ class "breadcrumb-item active", Route.href <| Route.NormalItems Nothing ] [ text "Normal Items" ]
+        , a [ class "breadcrumb-item active", Route.href <| Route.NormalItems Nothing Nothing ] [ text "Normal Items" ]
         , a [ class "breadcrumb-item active", Route.href <| Route.NormalItem <| NormalItem.name nitem ] [ label ]
         ]
     , div [ class "card" ]

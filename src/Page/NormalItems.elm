@@ -12,29 +12,95 @@ import Route exposing (Route)
 import Set exposing (Set)
 
 
-view : Datamine -> Maybe String -> List (Html msg)
-view dm tagStr =
+view : Datamine -> Maybe Int -> Maybe String -> List (Html msg)
+view dm mtier tagStr =
     let
         tagList =
             tagStr |> Maybe.withDefault "" |> String.toLower |> String.split ","
 
         tagSet =
             Set.fromList tagList
+
+        tier_ =
+            mtier |> tier |> tierTag
+
+        allTiers =
+            not <| Set.member tier_ tierTags
     in
     viewMain dm
+        mtier
         tagList
-        (dm.loot |> List.filter (NormalItem.keywords >> List.map String.toLower >> Set.fromList >> Set.diff tagSet >> Set.isEmpty))
+        (dm.loot
+            |> List.filter
+                (NormalItem.keywords
+                    >> List.map String.toLower
+                    >> Set.fromList
+                    >> (\kw ->
+                            (Set.diff tagSet kw |> Set.isEmpty)
+                                && (allTiers || Set.member tier_ kw)
+                       )
+                )
+        )
 
 
-viewMain : Datamine -> List String -> List NormalItem -> List (Html msg)
-viewMain dm keywords items =
+tier : Maybe Int -> Int
+tier =
+    Maybe.withDefault 16
+
+
+tierTag : Int -> String
+tierTag i =
+    "tier_" ++ String.fromInt i
+
+
+visibleTiers : List Int
+visibleTiers =
+    List.range 1 16
+
+
+tiers : List Int
+tiers =
+    List.range 1 18
+
+
+tierTags : Set String
+tierTags =
+    tiers |> List.map tierTag |> Set.fromList
+
+
+viewMain : Datamine -> Maybe Int -> List String -> List NormalItem -> List (Html msg)
+viewMain dm mtier keywords items =
     [ ol [ class "breadcrumb" ]
         [ a [ class "breadcrumb-item active", Route.href Route.Home ] [ text "Home" ]
-        , a [ class "breadcrumb-item active", Route.href <| Route.NormalItems <| Just <| String.join "," keywords ] [ text "Loot" ]
+        , a [ class "breadcrumb-item active", Route.href <| Route.NormalItems mtier <| Just <| String.join "," keywords ] [ text "Loot" ]
         ]
-    , div [] <| viewKeywordGroups keywords weaponKeywordGroups
-    , div [] <| viewKeywordGroups keywords armorKeywordGroups
-    , div [] <| viewKeywordGroups keywords otherKeywordGroups
+    , div [] <| viewKeywordGroups mtier keywords weaponKeywordGroups
+    , div [] <| viewKeywordGroups mtier keywords armorKeywordGroups
+    , div [] <| viewKeywordGroups mtier keywords otherKeywordGroups
+    , div [ class "card" ]
+        [ div [ class "card-header p-2" ] [ text "Tier" ]
+        , div [ class "card-body p-0" ]
+            ((visibleTiers
+                |> List.map
+                    (\t ->
+                        a
+                            [ class "btn"
+                            , classList [ ( "btn-outline-primary", t == tier mtier ) ]
+                            , Route.href <| Route.NormalItems (Just t) <| Just <| String.join "," keywords
+                            ]
+                            [ text <| "T" ++ String.fromInt t ]
+                    )
+             )
+                -- an all-tiers list is okay, just not as the default!
+                ++ [ a
+                        [ class "btn"
+                        , classList [ ( "btn-outline-primary", 0 == tier mtier ) ]
+                        , Route.href <| Route.NormalItems (Just 0) <| Just <| String.join "," keywords
+                        ]
+                        [ text "All" ]
+                   ]
+            )
+        ]
     , ul [ class "list-group" ]
         (items
             |> List.map
@@ -156,14 +222,14 @@ otherKeywordGroups =
     ]
 
 
-viewKeywordGroups : List String -> List KeywordGroup -> List (Html msg)
-viewKeywordGroups activeKw =
+viewKeywordGroups : Maybe Int -> List String -> List KeywordGroup -> List (Html msg)
+viewKeywordGroups mtier activeKw =
     List.map
         (\( ( mainkw, mainlabel ), entries ) ->
             div [ class "card d-inline-flex", style "max-width" "15em" ]
                 [ div [ class "card-header p-2" ]
                     [ a
-                        [ Route.href <| Route.NormalItems <| Just <| String.join "," mainkw
+                        [ Route.href <| Route.NormalItems mtier <| Just <| String.join "," mainkw
                         , classList [ ( "btn btn-link btn-outline-primary m-0", mainkw == activeKw ) ]
                         ]
                         [ text mainlabel ]
@@ -174,7 +240,7 @@ viewKeywordGroups activeKw =
                             (\( kw, label ) ->
                                 a
                                     [ class "btn btn-link"
-                                    , Route.href <| Route.NormalItems <| Just <| String.join "," kw
+                                    , Route.href <| Route.NormalItems mtier <| Just <| String.join "," kw
                                     , classList [ ( "btn-outline-primary", kw == activeKw ) ]
                                     ]
                                     [ text label ]

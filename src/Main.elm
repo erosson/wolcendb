@@ -331,8 +331,10 @@ viewTitle model =
                 ( Route.Home, _ ) ->
                     "WolcenDB: a Wolcen item, skill, and magic affix database"
 
-                ( Route.NormalItems kws, _ ) ->
-                    "WolcenDB: normal item list" ++ Maybe.Extra.unwrap "" ((++) ": ") kws
+                ( Route.NormalItems tier kws, _ ) ->
+                    "WolcenDB: normal item list"
+                        ++ Maybe.Extra.unwrap "" (String.fromInt >> (++) ": Tier ") tier
+                        ++ Maybe.Extra.unwrap "" ((++) ": ") kws
 
                 ( Route.NormalItem name, RemoteData.Success ok ) ->
                     "WolcenDB: normal item: " ++ Page.NormalItem.viewTitle ok.datamine name
@@ -485,8 +487,8 @@ viewBody { ssr } model =
                                 Route.Home ->
                                     Page.Home.view
 
-                                Route.NormalItems tags ->
-                                    Page.NormalItems.view ok.datamine tags
+                                Route.NormalItems tier tags ->
+                                    Page.NormalItems.view ok.datamine tier tags
 
                                 Route.NormalItem name ->
                                     Page.NormalItem.view ok.datamine model name
