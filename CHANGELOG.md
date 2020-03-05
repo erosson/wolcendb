@@ -7,6 +7,8 @@ Changelog
 - Images have been restored to loot/unique/skill lists.
 - Normal loot now has a "tier" filter, set to tier 16 by default. (You can still select "all tiers" if you like long lists.)
 - Wolcen version is now shown on the home page.
+- Created a subreddit
+- Slightly redesigned some homepage links
 
 #### 2020-03-03
 - Images removed from loot/unique/skill lists. They're still visible when viewing only a single item/unique/skill.

@@ -66,21 +66,30 @@ view dm =
         ]
     , div [ class "row" ]
         [ div [ class "col-sm" ]
-            [ ul [ class "nav nav-horizontal" ]
+            -- [ ul [ class "nav nav-horizontal" ]
+            [ ul [ class "nav flex-column" ]
                 [ li [ class "nav-item" ]
+                    [ a
+                        [ class "nav-link"
+                        , Route.href Route.Changelog
+                        ]
+                        [ text "Changelog" ]
+                    ]
+                , li [ class "nav-item" ]
+                    [ a
+                        [ class "nav-link"
+                        , target "_blank"
+                        , href "https://www.reddit.com/r/wolcendb"
+                        ]
+                        [ text "Reddit: /r/wolcendb" ]
+                    ]
+                , li [ class "nav-item" ]
                     [ a
                         [ class "nav-link"
                         , target "_blank"
                         , href "https://gitlab.com/erosson/wolcendb"
                         ]
-                        [ text "WolcenDB is open-source" ]
-                    ]
-                , li [ class "nav-item" ]
-                    [ a
-                        [ class "nav-link"
-                        , Route.href Route.Changelog
-                        ]
-                        [ text "WolcenDB changelog" ]
+                        [ text "Source code" ]
                     ]
                 , li [ class "nav-item" ]
                     [ a
