@@ -113,3 +113,19 @@ resource "cloudflare_record" "img" {
   value   = aws_s3_bucket.img.bucket_domain_name
   proxied = true
 }
+
+# https://community.cloudflare.com/t/firewall-rule-to-block-referers-other-than-the-sites-domain/72115/7
+resource "cloudflare_filter" "img" {
+  zone_id     = local.cloudflare_zone_id
+  description = "img-wolcendb hotlink protection"
+  expression  = <<EOF
+(http.host eq "img-wolcendb.erosson.org" and http.referer ne "" and not http.referer contains "wolcendb.erosson.org" and not http.referer contains "localhost")
+EOF
+}
+
+resource "cloudflare_firewall_rule" "img" {
+  zone_id     = local.cloudflare_zone_id
+  description = "img-wolcendb hotlink protection"
+  filter_id   = cloudflare_filter.img.id
+  action      = "block"
+}
