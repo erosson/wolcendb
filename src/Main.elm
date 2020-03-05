@@ -485,7 +485,7 @@ viewBody { ssr } model =
                                     viewNotFound
 
                                 Route.Home ->
-                                    Page.Home.view
+                                    Page.Home.view ok.datamine
 
                                 Route.NormalItems tier tags ->
                                     Page.NormalItems.view ok.datamine tier tags
@@ -552,7 +552,7 @@ viewBody { ssr } model =
                                         |> Maybe.withDefault viewNotFound
 
                                 Route.Changelog ->
-                                    Page.Changelog.view ok.datamine model
+                                    Page.Changelog.view model
 
                                 Route.Privacy ->
                                     Page.Privacy.view

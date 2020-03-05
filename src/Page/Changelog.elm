@@ -7,8 +7,8 @@ import Html.Events as E exposing (..)
 import Markdown
 
 
-view : Datamine -> { m | changelog : String } -> List (Html msg)
-view dm m =
+view : { m | changelog : String } -> List (Html msg)
+view m =
     [ small []
         [ p []
             [ text "Contact the developer: "
@@ -18,14 +18,6 @@ view dm m =
             , text ", or "
             , a [ href "https://www.reddit.com/message/compose/?to=kawaritai&subject=WolcenDB", target "_blank" ] [ text "Reddit" ]
             , text "."
-            ]
-        ]
-    , small []
-        [ p []
-            [ text "Wolcen build revision "
-            , code [] [ text dm.revision.buildRevision ]
-            , text ", created at "
-            , code [] [ text dm.revision.date ]
             ]
         ]
     , m.changelog

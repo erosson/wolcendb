@@ -9,8 +9,8 @@ import Maybe.Extra
 import Route exposing (Route)
 
 
-view : List (Html msg)
-view =
+view : Datamine -> List (Html msg)
+view dm =
     [ div [ class "row" ]
         [ div [ class "col-sm" ]
             [ p []
@@ -88,6 +88,14 @@ view =
                         , Route.href Route.Privacy
                         ]
                         [ text "Privacy" ]
+                    ]
+                ]
+            , small []
+                [ p []
+                    [ text "Wolcen build revision "
+                    , code [] [ text dm.revision.buildRevision ]
+                    , text ", created at "
+                    , code [] [ text dm.revision.date ]
                     ]
                 ]
             , small []
