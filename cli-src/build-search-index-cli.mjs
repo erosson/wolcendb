@@ -39,6 +39,11 @@ app.ports.stdout.subscribe(searchIndex => {
       // Using a fake file extension is recommended by some guy here:
       // https://community.cloudflare.com/t/which-file-extensions-does-cloudflare-cache-in-pro-paid-plan/40234/2
       // It's very silly-looking, but the alternative is using up Cloudflare page rules for custom caching. Page rules are expensive and scarce; let's not.
+      //
+      // Redbot tests cacheability of our stuff. For example:
+      // https://redbot.org/?uri=https%3A%2F%2Fimg-wolcendb.erosson.org%2Fdatamine%2F1.0.8.2_ER%2Fdatamine.json.js%3Ft%3D12345
+      // https://redbot.org/?uri=https%3A%2F%2Fimg-wolcendb.erosson.org%2Fdatamine%2F1.0.8.2_ER%2Fdatamine.json%3Ft%3D12345
+      // The `CF-Cache-Status` header is important. "Dynamic" is bad, that's completely uncached
       promisify(fs.writeFile)(__dirname + '/../build-img/datamine/' + buildRevision + '/searchIndex.json.js', searchIndexStr),
       promisify(fs.writeFile)(__dirname + '/../build-img/datamine/' + buildRevision + '/datamine.json.js', datamineStr),
     ])

@@ -4,6 +4,7 @@ Changelog
 ---
 
 #### 2020-03-06
+- Updated to Wolcen v1.0.8.0. [Wolcen v1.0.7.0 to v1.0.8.0 source differences.](https://gitlab.com/erosson/wolcendb/-/commit/7774750ece265015b1360ad62bbaf5efeba987d7)
 - You can now load WolcenDB with data from old versions of Wolcen. For example, take a look at [overpowered Bleeding Edge](/skill-variant/player_laceration_variant_11?build_revision=1.0.4.3_ER) or [zero-cooldown Winter's Grasp](/skill/player_frostnova?build_revision=1.0.6.0_ER).
 
 #### 2020-03-04
