@@ -196,6 +196,7 @@ type Msg
     = Noop
     | LoadAssets Ports.LoadAssets
     | LoadAssetsProgress Ports.LoadAssetsProgress
+    | LoadAssetsFailure String
     | OnUrlChange Url
     | OnUrlRequest Browser.UrlRequest
     | NormalItemMsg Page.NormalItem.Msg
@@ -212,6 +213,7 @@ subscriptions _ =
     Sub.batch
         [ Ports.loadAssets LoadAssets
         , Ports.loadAssetsProgress LoadAssetsProgress
+        , Ports.loadAssetsFailure LoadAssetsFailure
         ]
 
 
@@ -233,6 +235,9 @@ update msg model =
                 LoadAssetsProgress res ->
                     ( { model | progress = model.progress |> Dict.insert res.label ( res.progress, res.size ) }, Cmd.none )
 
+                LoadAssetsFailure err ->
+                    ( { model | datamine = RemoteData.Failure <| "Couldn't fetch Wolcen data. Something is very wrong.\n\n" ++ err }, Cmd.none )
+
                 _ ->
                     ( model, Cmd.none )
 
@@ -247,6 +252,9 @@ updateOk msg ok model =
             ( model, Cmd.none )
 
         LoadAssetsProgress res ->
+            ( model, Cmd.none )
+
+        LoadAssetsFailure res ->
             ( model, Cmd.none )
 
         OnUrlChange url ->
@@ -456,7 +464,12 @@ viewLoading model =
 
 
 viewErr err =
-    [ code [] [ text <| String.right 100000 err ] ]
+    [ div [ class "container" ]
+        [ View.Nav.viewNoSearchbar
+        , pre [ class "alert alert-danger" ]
+            [ text <| String.right 100000 err ]
+        ]
+    ]
 
 
 viewBody : { ssr : Bool } -> Model -> List (Html Msg)

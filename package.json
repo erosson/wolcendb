@@ -8,7 +8,7 @@
   "scripts": {
     "export:pull": "bash -c \"git subtree pull --squash --prefix third-party/WolcenExtractor git@github.com:gabriel-dehan/WolcenExtractor.git master && yarn export:install\"",
     "export:install": "bash -c \"gem install bundler && cd third-party/WolcenExtractor && bundle install\"",
-    "export:datamine": "bash -c \"rm -rf datamine && mkdir datamine && node ./cli-src/import_datamine.js\"",
+    "export:datamine": "bash -c \"rm -rf datamine build-img && mkdir datamine && node ./cli-src/import_datamine.js\"",
     "export:cp": "bash -c \"yarn export:datamine && yarn _build:search-index\"",
     "export": "bash -c \"echo 'deleting datamine.tmp in 3...' && sleep 3 && rm -rf datamine.tmp && cd third-party/WolcenExtractor && ruby src/main.rb extract --source \\\"`cat ../../GAMEPATH`\\\" --dest ../../datamine.tmp --only english_xml.pak,umbra.pak,Libs_UI_ && cd - && cp \\\"`cat GAMEPATH`\\\"/revision.txt datamine.tmp/revision.txt && yarn export:cp\"",
     "start": "bash -c \"ELM_DEBUGGER=false elm-app start\"",
@@ -18,7 +18,10 @@
     "_build:ssr": "bash -c \"rm -rf build-ssr && elm make cli-src/SSRRenderCLI.elm --optimize --output datamine.tmp/SSRRenderCLI.elm.js && elm make cli-src/SSRPagesCLI.elm --optimize --output datamine.tmp/SSRPagesCLI.elm.js && node ./cli-src/ssr-cli.js && rm -rf build-nossr && mv build build-nossr && mv build-ssr build\"",
     "build:ci": "bash -c \"yarn test && yarn build\"",
     "build:serve": "bash -c \"serve build\"",
-    "deploy:img": "bash -c \"aws s3 sync --delete ./build-img/ s3://img-wolcendb.erosson.org --cache-control max-age=86400\"",
+    "//deploy:img": "--size-only avoids re-uploading on timestamp change",
+    "deploy:img": "bash -c \"aws s3 sync --size-only ./build-img/game/ s3://img-wolcendb.erosson.org/game --cache-control max-age=86400 && yarn deploy:img:datamine\"",
+    "//deploy:img:datamine": "old versions remain accessible and are uploaded one at a time, so don't --delete.",
+    "deploy:img:datamine": "bash -c \"aws s3 sync ./build-img/datamine/ s3://img-wolcendb.erosson.org/datamine --cache-control max-age=86400\"",
     "test": "node --experimental-modules tests/fixture.mjs && elm-app test"
   },
   "devDependencies": {

@@ -32,22 +32,28 @@ fetchAssets(app)
 .then(([datamine, searchIndex]) => {
   app.ports.loadAssets.send({datamine, searchIndex})
 })
-.catch(err => console.log('fetch error', err))
+.catch(err => {
+  console.error('fetch error', err)
+  app.ports.loadAssetsFailure.send(err+'')
+})
 function fetchAssets(app) {
+  // const assetPath = f => f
+  const buildRevision = query.build_revision || sizes.buildRevision
+  const assetPath = f => 'https://img-wolcendb.erosson.org/datamine/' + buildRevision + f + '?t=' + sizes.slug
   const isProgressSupported = window.Response && window.ReadableStream
   if (isProgressSupported) {
     onProgress('datamine')(0)
     onProgress('searchIndex')(0)
     return Promise.all([
-      fetch('/datamine.json').then(res => ProgressResponse(res, {onProgress: onProgress('datamine')}).json()),
-      fetch('/searchIndex.json').then(res => ProgressResponse(res, {onProgress: onProgress('searchIndex')}).json()),
+      fetch(assetPath('/datamine.json')).then(res => ProgressResponse(res, {onProgress: onProgress('datamine')}).json()),
+      fetch(assetPath('/searchIndex.json')).then(res => ProgressResponse(res, {onProgress: onProgress('searchIndex')}).json()),
     ])
   }
   else {
     console.warn('loading progressbar unsupported by this browser, trying to load without it')
     return Promise.all([
-      fetch('/datamine.json').then(res => res.json()),
-      fetch('/searchIndex.json').then(res => res.json()),
+      fetch(assetPath('/datamine.json')).then(res => res.json()),
+      fetch(assetPath('/searchIndex.json')).then(res => res.json()),
     ])
   }
 }
@@ -60,6 +66,7 @@ function onProgress(label) {
 function ProgressResponse(response, {onProgress}) {
   // thanks, https://github.com/AnthumChris/fetch-progress-indicators/blob/master/fetch-basic/supported-browser.js
   // don't trust content-length, it fails with gzip. sizes.json tells expected unzipped sizes.
+  // const contentLength = response.headers.get('content-length')
   let loaded = 0
   try {
     const stream = new ReadableStream({

@@ -102,8 +102,13 @@ resource "aws_s3_bucket" "img" {
     ]
 }
 EOF
-  #                "arn:aws:s3:::${local.imgdomain}/*",
-  #                "arn:aws:s3:::${local.imgdomain}"
+  cors_rule {
+    # allowed_headers = ["*"]
+    allowed_methods = ["GET"]
+    allowed_origins = ["https://wolcendb.erosson.org", "http://localhost:3000", "http://localhost:5000"]
+    # expose_headers  = ["ETag"]
+    max_age_seconds = 86400
+  }
 }
 
 resource "cloudflare_record" "img" {
