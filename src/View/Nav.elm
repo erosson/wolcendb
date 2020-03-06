@@ -64,15 +64,18 @@ viewMain searchbar =
 viewSearchbar : Model m -> Html Msg
 viewSearchbar m =
     H.form [ class "form-inline", onSubmit SearchSubmit ]
-        [ input
-            [ class "form-control"
-            , type_ "search"
-            , placeholder "Search"
-            , value m.globalSearch
-            , onInput SearchInput
+        [ div [ class "input-group" ]
+            [ input
+                [ class "form-control"
+                , type_ "search"
+
+                -- , placeholder "Search"
+                , value m.globalSearch
+                , onInput SearchInput
+                ]
+                []
+            , div [ class "input-group-append" ] [ button [ class "btn btn-outline-primary", type_ "submit" ] [ text "Search" ] ]
             ]
-            []
-        , button [ class "btn btn-outline-primary", type_ "submit" ] [ text "Search" ]
         ]
 
 
