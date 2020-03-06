@@ -15,7 +15,7 @@
     "build": "bash -c \"yarn _build:search-index && yarn _build && yarn _build:ssr\"",
     "_build": "bash -c \"rm -rf build && elm-app build\"",
     "_build:search-index": "bash -c \"elm make cli-src/BuildSearchIndexCLI.elm --output datamine.tmp/BuildSearchIndexCLI.elm.js && node --experimental-modules cli-src/build-search-index-cli.mjs\"",
-    "_build:ssr": "bash -c \"rm -rf build-ssr && elm make cli-src/SSRRenderCLI.elm --optimize --output datamine.tmp/SSRRenderCLI.elm.js && elm make cli-src/SSRPagesCLI.elm --optimize --output datamine.tmp/SSRPagesCLI.elm.js && node ./cli-src/ssr-cli.js && mv build-ssr build/ssr\"",
+    "_build:ssr": "bash -c \"rm -rf build-ssr && elm make cli-src/SSRRenderCLI.elm --optimize --output datamine.tmp/SSRRenderCLI.elm.js && elm make cli-src/SSRPagesCLI.elm --optimize --output datamine.tmp/SSRPagesCLI.elm.js && node ./cli-src/ssr-cli.js && rm -rf build-nossr && mv build build-nossr && mv build-ssr build\"",
     "build:ci": "bash -c \"yarn test && yarn build\"",
     "build:serve": "bash -c \"serve build\"",
     "deploy:img": "bash -c \"aws s3 sync --delete ./build-img/ s3://img-wolcendb.erosson.org --cache-control max-age=86400\"",

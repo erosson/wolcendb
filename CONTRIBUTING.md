@@ -20,7 +20,7 @@ directories:
 
 * `datamine.tmp` is everything exported by the WolcenExtractor tool. All Wolcen files. Big, not committed to git.
 * `datamine` is everything WolcenDB cares about, copied and transformed from datamine.tmp. xml converted to json. Committed to git, so the website builds/runs on checkout without installing Wolcen.
-* `public/static` is exported Wolcen images used on the website.
+* `build-img` is exported Wolcen images used on the website.
 
 commands:
 

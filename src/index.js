@@ -8,6 +8,7 @@ import sizes from '../datamine/sizes.json'
 // import datamine from '../datamine/imports.js'
 // import searchIndex from '../public/searchIndex.json'
 
+const query = parseQuery(document.location.search)
 // Elm will overwrite this node. For SSR'ed pages (see `yarn build:ssr`), this
 // also contains the pre-rendered page content.
 const root = document.getElementById('root')
@@ -20,8 +21,11 @@ const app = Elm.Main.init({
 })
 analytics(app)
 app.ports.ssr.subscribe(id => {
-  // console.log('ssr', id, ssrHTML)
-  document.getElementById(id).innerHTML = ssrHTML
+  // ssr off by default, unless set to a non-falsy value.
+  // I want to prove invisibly serving from these files doesn't break stuff first
+  if ('ssr' in query && !/^(|0|false)$/.test(query.ssr)) {
+    document.getElementById(id).innerHTML = ssrHTML
+  }
 })
 
 fetchAssets(app)
@@ -90,6 +94,15 @@ function ProgressResponse(response, {onProgress}) {
     console.warn('ProgressResponse failed, trying original response.', e)
     return response
   }
+}
+function parseQuery(qs) {
+  return qs
+    .replace(/^\?/, '')
+    .split('&')
+    .filter(s => s !== "")
+    .map(s => s.split('=').map(decodeURIComponent))
+    .filter(s => s.length === 2 && s[0] !== "")
+    .reduce((accum, [k,v]) => {accum[k] = v; return accum}, {})
 }
 
 // If you want your app to work offline and load faster, you can change
