@@ -206,7 +206,7 @@
   <Project Name="abyssal_rift_seekers_expedition" CategoryName="seekers_expeditions_hard" Repeatable="1" IsExpedition="1">
     <UIParams UIName="@ui_abyssal_rift_seekers_expedition" UILore="@ui_abyssal_rift_seekers_expedition_lore" IconType="exploration" />
     <Requirements PlayerLevel="0" Projects="shipyard_construct">
-      <ResourceCost ComputationMethod="Static" Gold="3000" Gold_PerPlayerLevel="0" PA="0" PA_PerPlayerLevel="0" ProductionToComplete="40" ProductionScalingTable="Production_scale" />
+      <ResourceCost ComputationMethod="Static" Gold="30000" Gold_PerPlayerLevel="0" PA="0" PA_PerPlayerLevel="0" ProductionToComplete="20000" />
     </Requirements>
     <RewardList>
       <Reward RewardName="abyssal_rift_seekers_reward" Weight="56" />

@@ -46,7 +46,7 @@
   </Project>
   <Project Name="dark_market_item_quality_transform" CategoryName="dark_market_buy_item" Repeatable="1">
     <UIParams UIName="@ui_dark_market_item_quality_transform" UILore="@ui_dark_market_item_quality_transform_lore" IconType="transform_item" />
-    <Requirements PlayerLevel="0" Projects="dark_market_item_quality_upgrade" RequiresItem="1" AuthorizedItemKeywords="accessory,armor,weapon,shield" MaxRarity="legendary" MaxQuality="exceptional">
+    <Requirements PlayerLevel="0" Projects="dark_market_item_quality_upgrade" RequiresItem="1" AuthorizedItemKeywords="accessory,armor,weapon,shield" MaxRarity="rare" MaxQuality="exceptional">
       <ResourceCost ComputationMethod="ItemBased" Gold="1500" PA="200" ProductionToComplete="200" ItemLevelIncreasePercent="15" ItemRarityIncreasePercent="0" ItemQualityIncreasePercent="0" />
     </Requirements>
     <RewardList>
@@ -82,7 +82,7 @@
   </Project>
   <Project Name="dark_market_leg_reagent_transform" CategoryName="dark_market_buy_item" Repeatable="1">
     <UIParams UIName="@ui_dark_market_leg_reagent_transform" UILore="@ui_dark_market_leg_reagent_transform_lore" IconType="transform_item" />
-    <Requirements PlayerLevel="0" Projects="dark_market_leg_reagent_upgrade" RequiresItem="1" AuthorizedItemKeywords="reagent" MaxRarity="" MaxQuality="">
+    <Requirements PlayerLevel="0" Projects="dark_market_leg_reagent_upgrade" RequiresItem="1" AuthorizedItemKeywords="reagent" MaxRarity="rare" MaxQuality="">
       <ResourceCost ComputationMethod="Static" Gold="30000" Gold_PerPlayerLevel="0" PA="0" PA_PerPlayerLevel="0" ProductionToComplete="20000" />
     </Requirements>
     <RewardList>

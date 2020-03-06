@@ -87,7 +87,8 @@
   </Skill>
   <Skill UID="player_bomb_variant_10" ESkill="player_bomb_variant" Keywords="projectile,attack_skill">
     <HUD UIName="@ui_Variant_Bomb_variant_10" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_003.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_003.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_003.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_003.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_003.png" ShowParamsInTooltip="SpecificBomb,DamageWeapon" />
-    <Specific_Bomb MultiShotAnimation="player_skill_bomb_multishot" MultiShotRandomRadius="5" MultiShotBulletCount="5" MultiShotTiming="0.3" />
+    <Animation ActionString_FollowUp="invalid_no_assert" ActionString_In="player_skill_bomb_multishot_In" ActionString_Loop="player_skill_bomb_multishot_Loop" ActionString_Out="player_skill_bomb_multishot_Out" />
+    <Specific_Bomb MultiShotRandomRadius="5" MultiShotBulletCount="5" MultiShotTiming="0.3" />
     <DamageWeapon PercentMin="-200" PercentMax="-200" />
   </Skill>
   <Skill UID="player_bomb_variant_11" ESkill="player_bomb_variant" Keywords="projectile,attack_skill">

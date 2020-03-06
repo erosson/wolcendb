@@ -11,7 +11,7 @@
   <LastAuthor>Wolcen_James</LastAuthor>
   <LastPrinted>2019-12-30T14:20:14Z</LastPrinted>
   <Created>2002-06-17T19:14:00Z</Created>
-  <LastSaved>2020-02-20T16:15:58Z</LastSaved>
+  <LastSaved>2020-02-24T14:35:06Z</LastSaved>
   <Company>Electronic Arts</Company>
   <Version>16.00</Version>
  </DocumentProperties>
@@ -85,8 +85,8 @@
     </Crn>
    </Xct>
   </SupBook>
-  <WindowHeight>15765</WindowHeight>
-  <WindowWidth>32767</WindowWidth>
+  <WindowHeight>3930</WindowHeight>
+  <WindowWidth>23625</WindowWidth>
   <WindowTopX>32767</WindowTopX>
   <WindowTopY>32767</WindowTopY>
   <TabRatio>274</TabRatio>
@@ -264,17 +264,17 @@
    <Borders/>
    <Interior ss:Color="#FFFFFF" ss:Pattern="Solid"/>
   </Style>
-  <Style ss:ID="s103" ss:Parent="s28">
-   <Alignment ss:Vertical="Bottom"/>
-   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="11" ss:Color="#FF0000"/>
-   <Interior ss:Color="#C6EFCE" ss:Pattern="Solid"/>
-  </Style>
   <Style ss:ID="s104">
    <Alignment ss:Vertical="Center"/>
    <Font ss:FontName="Arial" x:Family="Swiss" ss:Color="#000000"/>
   </Style>
   <Style ss:ID="s105" ss:Parent="s28">
    <Alignment ss:Vertical="Bottom" ss:WrapText="1"/>
+  </Style>
+  <Style ss:ID="s108" ss:Parent="s28">
+   <Alignment ss:Vertical="Bottom"/>
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="11" ss:Color="#008000"/>
+   <Interior ss:Color="#C6EFCE" ss:Pattern="Solid"/>
   </Style>
  </Styles>
  <Names>
@@ -1830,7 +1830,7 @@
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s76"><Data ss:Type="String">ui_eim_sacred_ground_on_cursed_stacks</Data></Cell>
-    <Cell ss:StyleID="s87"><Data ss:Type="String">When an enemy is afflicted with 5 Stacks of Curse, Bulwark of Dawn is Cast on their location, provide Healing in an area-of-effect for you and your allies</Data></Cell>
+    <Cell ss:StyleID="s87"><Data ss:Type="String">When an enemy is afflicted with 5 Stacks of Curse, Bulwark of Dawn is Cast on their location, provide Healing in an Area-of-Effect for you and your Allies</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell><Data ss:Type="String">ui_eim_sacred_protection</Data></Cell>
@@ -1874,7 +1874,7 @@
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s76"><Data ss:Type="String">ui_eim_shadow_nova_on_weakness_stacks</Data></Cell>
-    <Cell ss:StyleID="s87"><Data ss:Type="String">When an Enemy is afflicted with 5 Stacks of Weakness, an area-of-effect that deals Shadow Damage is Cast on their location</Data></Cell>
+    <Cell ss:StyleID="s87"><Data ss:Type="String">When an Enemy is afflicted with 5 Stacks of Weakness, an Area-of-Effect that deals Shadow Damage is Cast on their location</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell><Data ss:Type="String">ui_eim_shadow_protection</Data></Cell>
@@ -2101,8 +2101,12 @@
     <Cell ss:StyleID="s89"><Data ss:Type="String">%1 Transfer Time decrease between Willpower and Rage</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s76"><Data ss:Type="String">ui_eim_onehanded_blockchance_flat</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="String">%1 Block Chance while a One-handed Weapon is equipped</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s76"><Data ss:Type="String">ui_eim_twohanded_blockchance_flat</Data></Cell>
-    <Cell ss:StyleID="s78"><Data ss:Type="String">%1 Block Chance</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="String">%1 Block Chance while a Two-handed Weapon is equipped</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s76"><Data ss:Type="String">ui_eim_umbra_damage_percent</Data></Cell>
@@ -2337,7 +2341,7 @@
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell><Data ss:Type="String">ui_eim_minion_offensive_speed_percent</Data></Cell>
-    <Cell ss:StyleID="s81"><Data ss:Type="String" x:Ticked="1">Each time you Hit an Enemy, you receive an &quot;Unleashed Fury&quot; point. Each &quot;Unleashed Fury&quot; point increases your Attack Speed, your life leech, and reduces your all resistance score.</Data></Cell>
+    <Cell ss:StyleID="s81"><Data ss:Type="String" x:Ticked="1">%1 to Attack and Spell Casting Speed for Summons</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s97"><Data ss:Type="String">ui_eim_increased_rage_costs_double_skill_damage_on_high_rage</Data></Cell>
@@ -2774,7 +2778,7 @@
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s99"><Data ss:Type="String">ui_eim_active_dodge_makes_invisible</Data></Cell>
-    <Cell ss:StyleID="s103"><Data ss:Type="String" x:Ticked="1">Completing an Active Dodge turns you Invisible for %1s. While Invisible, the Damage of your next Skill Cast is increased by %2. Using a Skill breaks Invisibility. This has a Cooldown of %3s.  </Data></Cell>
+    <Cell ss:StyleID="s108"><Data ss:Type="String" x:Ticked="1">Completing an Active Dodge turns you Invisible for %1s. While Invisible, the Damage of your next Skill Cast is increased by %2. Using a Skill breaks Invisibility. This has a Cooldown of %3s.  </Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell><Data ss:Type="String">ui_eim_active_dodge_makes_invisible_duration</Data></Cell>
@@ -2783,10 +2787,6 @@
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s99"><Data ss:Type="String">ui_eim_damage_percent_onehanded</Data></Cell>
     <Cell ss:StyleID="s81"><Data ss:Type="String" x:Ticked="1">%1 Damage with One-Handed Weapons</Data></Cell>
-   </Row>
-   <Row ss:AutoFitHeight="0" ss:Height="15.75">
-    <Cell ss:StyleID="s99"><Data ss:Type="String">ui_eim_onehanded_blockchance_flat</Data></Cell>
-    <Cell ss:StyleID="s81"><Data ss:Type="String" x:Ticked="1">%1 Block Chance while One-Handed Weapon equipped</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s99"><Data ss:Type="String">ui_eim_damage_from_shield_block_chance</Data></Cell>
@@ -2817,7 +2817,7 @@
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell><Data ss:Type="String">ui_eim_all_resistance_score_percent_on_full_stamina</Data></Cell>
-    <Cell ss:StyleID="s103"><Data ss:Type="String" x:Ticked="1">%1 to All Resistances Score while at full Stamina</Data></Cell>
+    <Cell ss:StyleID="s108"><Data ss:Type="String" x:Ticked="1">%1 to All Resistances Score while at full Stamina</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell><Data ss:Type="String">ui_summon_life</Data></Cell>
@@ -2845,7 +2845,7 @@
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15">
     <Cell><Data ss:Type="String">ui_elemental_rotation_buff</Data></Cell>
-    <Cell ss:StyleID="s103"><Data ss:Type="String" x:Ticked="1">Using an Elemental Spell applies a Buff to the other two Elemental Damage Types</Data></Cell>
+    <Cell ss:StyleID="s108"><Data ss:Type="String" x:Ticked="1">Using an Spell that deals an Elemental Damage Type applies a Buff to the other two Elemental Damage Types</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell><Data ss:Type="String">ui_eim_ailment_spread</Data></Cell>
@@ -3046,11 +3046,11 @@
    </Print>
    <Zoom>85</Zoom>
    <Selected/>
-   <TopRowVisible>7</TopRowVisible>
+   <TopRowVisible>426</TopRowVisible>
    <Panes>
     <Pane>
      <Number>3</Number>
-     <ActiveRow>313</ActiveRow>
+     <ActiveRow>453</ActiveRow>
      <ActiveCol>1</ActiveCol>
     </Pane>
    </Panes>

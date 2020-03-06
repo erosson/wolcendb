@@ -623,10 +623,19 @@
             }
           }
         ],
+        "Animation": [
+          {
+            "$": {
+              "ActionString_FollowUp": "invalid_no_assert",
+              "ActionString_In": "player_skill_bomb_multishot_In",
+              "ActionString_Loop": "player_skill_bomb_multishot_Loop",
+              "ActionString_Out": "player_skill_bomb_multishot_Out"
+            }
+          }
+        ],
         "Specific_Bomb": [
           {
             "$": {
-              "MultiShotAnimation": "player_skill_bomb_multishot",
               "MultiShotRandomRadius": "5",
               "MultiShotBulletCount": "5",
               "MultiShotTiming": "0.3"
