@@ -240,29 +240,32 @@ decode =
 
 decoder : D.Decoder Datamine
 decoder =
-    D.succeed RawDatamine
-        |> P.custom revisionDecoder
-        |> P.custom NormalItem.decoder
-        |> P.custom UniqueItem.decoder
-        |> P.custom Skill.decoder
-        |> P.custom Skill.astsDecoder
-        |> P.custom Affix.decoder
-        |> P.custom Cosmetic.transferTemplateDecoder
-        |> P.custom Cosmetic.weaponDescriptorDecoder
-        |> P.custom Gem.decoder
-        |> P.custom Passive.decoder
-        |> P.custom Passive.treesDecoder
-        |> P.custom Reagent.decoder
-        |> P.custom GemFamily.decoder
-        |> P.custom City.projectsDecoder
-        |> P.custom City.projectScalingDecoder
-        |> P.custom City.rewardsDecoder
-        |> P.custom City.buildingsDecoder
-        |> P.custom City.categoriesDecoder
-        |> P.custom City.levelsDecoder
-        |> P.custom Ailment.decoder
-        |> P.custom Lang.decoder
-        |> D.map index
+    D.andThen
+        (\revision ->
+            D.succeed (RawDatamine revision)
+                |> P.custom NormalItem.decoder
+                |> P.custom UniqueItem.decoder
+                |> P.custom Skill.decoder
+                |> P.custom Skill.astsDecoder
+                |> P.custom Affix.decoder
+                |> P.custom Cosmetic.transferTemplateDecoder
+                |> P.custom Cosmetic.weaponDescriptorDecoder
+                |> P.custom Gem.decoder
+                |> P.custom Passive.decoder
+                |> P.custom Passive.treesDecoder
+                |> P.custom Reagent.decoder
+                |> P.custom GemFamily.decoder
+                |> P.custom City.projectsDecoder
+                |> P.custom City.projectScalingDecoder
+                |> P.custom City.rewardsDecoder
+                |> P.custom City.buildingsDecoder
+                |> P.custom City.categoriesDecoder
+                |> P.custom City.levelsDecoder
+                |> P.custom (Ailment.decoder revision.buildRevision)
+                |> P.custom Lang.decoder
+                |> D.map index
+        )
+        revisionDecoder
 
 
 revisionDecoder : D.Decoder Revision

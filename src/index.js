@@ -5,6 +5,7 @@ import * as serviceWorker from './serviceWorker';
 import changelog from '!!raw-loader!../CHANGELOG.md'
 import analytics from './analytics'
 import sizes from '../datamine/sizes.json'
+import buildRevisions from '../datamine/buildRevisions.json'
 // import datamine from '../datamine/imports.js'
 // import searchIndex from '../public/searchIndex.json'
 
@@ -15,8 +16,8 @@ const root = document.getElementById('root')
 const ssrHTML = root.innerHTML
 
 const app = Elm.Main.init({
-  // flags: {changelog, datamine, searchIndex},
-  flags: {changelog, datamine: null, searchIndex: null},
+  // flags: {changelog, buildRevisions, datamine, searchIndex},
+  flags: {changelog, buildRevisions, datamine: null, searchIndex: null},
   node: document.getElementById('root')
 })
 analytics(app)

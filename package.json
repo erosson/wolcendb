@@ -19,9 +19,10 @@
     "build:ci": "bash -c \"yarn test && yarn build\"",
     "build:serve": "bash -c \"serve build\"",
     "//deploy:img": "--size-only avoids re-uploading on timestamp change",
-    "deploy:img": "bash -c \"aws s3 sync --size-only ./build-img/game/ s3://img-wolcendb.erosson.org/game --cache-control max-age=86400 && yarn deploy:img:datamine\"",
+    "deploy:img": "bash -c \"aws s3 sync --size-only ./build-img/game/ s3://img-wolcendb.erosson.org/game --cache-control max-age=86400 && yarn deploy:img:datamine && yarn deploy:img:ls\"",
     "//deploy:img:datamine": "old versions remain accessible and are uploaded one at a time, so don't --delete.",
-    "deploy:img:datamine": "bash -c \"aws s3 sync ./build-img/datamine/ s3://img-wolcendb.erosson.org/datamine --cache-control max-age=86400\"",
+    "deploy:img:datamine": "aws s3 sync ./build-img/datamine/ s3://img-wolcendb.erosson.org/datamine --cache-control max-age=86400",
+    "deploy:img:ls": "aws s3 ls s3://img-wolcendb.erosson.org/datamine/ | node ./cli-src/buildRevisions.js > datamine/buildRevisions.json",
     "test": "node --experimental-modules tests/fixture.mjs && elm-app test"
   },
   "devDependencies": {
