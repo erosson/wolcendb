@@ -68,13 +68,12 @@ viewSearchbar m =
             [ input
                 [ class "form-control"
                 , type_ "search"
-
-                -- , placeholder "Search"
+                , placeholder "Search"
                 , value m.globalSearch
                 , onInput SearchInput
                 ]
                 []
-            , div [ class "input-group-append" ] [ button [ class "btn btn-outline-primary", type_ "submit" ] [ text "Search" ] ]
+            , div [ class "input-group-append" ] [ button [ class "btn btn-outline-primary", type_ "submit" ] [ span [ class "fas fa-search" ] [] ] ]
             ]
         ]
 
