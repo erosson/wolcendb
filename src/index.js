@@ -40,7 +40,7 @@ fetchAssets(app)
 function fetchAssets(app) {
   // const assetPath = f => f
   const buildRevision = query.build_revision || sizes.buildRevision
-  const assetPath = f => 'https://img-wolcendb.erosson.org/datamine/' + buildRevision + f + '?t=' + sizes.slug
+  const assetPath = f => 'https://img-wolcendb.erosson.org/datamine/' + buildRevision + f + '.js?t=' + sizes.slug
   const isProgressSupported = window.Response && window.ReadableStream
   if (isProgressSupported) {
     onProgress('datamine')(0)

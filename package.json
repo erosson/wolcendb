@@ -21,7 +21,8 @@
     "//deploy:img": "--size-only avoids re-uploading on timestamp change",
     "deploy:img": "bash -c \"aws s3 sync --size-only ./build-img/game/ s3://img-wolcendb.erosson.org/game --cache-control max-age=86400 && yarn deploy:img:datamine && yarn deploy:img:ls\"",
     "//deploy:img:datamine": "old versions remain accessible and are uploaded one at a time, so don't --delete.",
-    "deploy:img:datamine": "aws s3 sync ./build-img/datamine/ s3://img-wolcendb.erosson.org/datamine --cache-control max-age=86400",
+    "deploy:img:datamine": "aws s3 sync ./build-img/datamine/ s3://img-wolcendb.erosson.org/datamine --cache-control public,max-age=86400 --content-type application/json",
+    "deploy:img:datamine:pull": "aws s3 sync s3://img-wolcendb.erosson.org/datamine ./build-img/datamine/",
     "deploy:img:ls": "aws s3 ls s3://img-wolcendb.erosson.org/datamine/ | node ./cli-src/buildRevisions.js > public/buildRevisions.json",
     "test": "node --experimental-modules tests/fixture.mjs && elm-app test"
   },

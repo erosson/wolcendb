@@ -31,9 +31,16 @@ app.ports.stdout.subscribe(searchIndex => {
     Promise.all([
       promisify(fs.writeFile)(__dirname + '/../public/searchIndex.json', searchIndexStr),
       promisify(fs.writeFile)(__dirname + '/../public/datamine.json', datamineStr),
-      promisify(fs.writeFile)(__dirname + '/../build-img/datamine/' + buildRevision + '/searchIndex.json', searchIndexStr),
-      promisify(fs.writeFile)(__dirname + '/../build-img/datamine/' + buildRevision + '/datamine.json', datamineStr),
       promisify(fs.writeFile)(__dirname + '/../datamine/sizes.json', JSON.stringify(sizes)),
+
+      // Cloudflare caches based on file extension. It doesn't cache `.json` and does cache `.js`.
+      // https://support.cloudflare.com/hc/en-us/articles/200172516-Understanding-Cloudflare-s-CDN
+      //
+      // Using a fake file extension is recommended by some guy here:
+      // https://community.cloudflare.com/t/which-file-extensions-does-cloudflare-cache-in-pro-paid-plan/40234/2
+      // It's very silly-looking, but the alternative is using up Cloudflare page rules for custom caching. Page rules are expensive and scarce; let's not.
+      promisify(fs.writeFile)(__dirname + '/../build-img/datamine/' + buildRevision + '/searchIndex.json.js', searchIndexStr),
+      promisify(fs.writeFile)(__dirname + '/../build-img/datamine/' + buildRevision + '/datamine.json.js', datamineStr),
     ])
   )
   .then(() => process.exit(0))
