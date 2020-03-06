@@ -9,6 +9,7 @@ const ncp = require('ncp')
 const {promisify} = require('util')
 const {Elm} = require('../datamine.tmp/SSRPagesCLI.elm.js')
 const _ = require('lodash/fp')
+const buildRevisions = require('../public/buildRevisions.json')
 
 const SSR_BUILD_DIR = './build-ssr'
 
@@ -26,7 +27,7 @@ function main() {
     return Promise.all([
       // fetch a list of pages from SSRPagesCLI
       new Promise((resolve, reject) => {
-        const flags = {datamine, searchIndex, changelog}
+        const flags = {buildRevisions, datamine, searchIndex, changelog}
         const pagesApp = Elm.SSRPagesCLI.init({flags})
         pagesApp.ports.ssrCliPages.subscribe(resolve)
       }),
@@ -36,7 +37,7 @@ function main() {
       fs.readFile('./datamine.tmp/SSRRenderCLI.elm.js')
       .then(elm => elm.toString())
       .then(elm => {
-        const flags = {datamine, searchIndex, changelog, url: ''}
+        const flags = {buildRevisions, datamine, searchIndex, changelog, url: ''}
         const renderDom = new jsdom.JSDOM(template, {runScripts: 'outside-only'})
         renderDom.window.eval(`${elm}\n\nwindow.app = Elm.SSRRenderCLI.init({node: document.getElementById('root'), flags: ${JSON.stringify(flags)}})`)
         return renderDom
@@ -70,7 +71,7 @@ function main() {
     )(pages)
   })
   .catch(err => {
-    console.error(err)
+    console.error(err && err.slice ? err.slice(-10000) : err)
     process.exit(1)
   })
 }

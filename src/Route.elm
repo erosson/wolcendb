@@ -36,6 +36,7 @@ type Route
     | Offline String String
     | Search (Maybe String)
     | Table String
+    | BuildRevisions
     | Changelog
     | Privacy
     | Redirect Route
@@ -63,6 +64,7 @@ parser =
         , P.map Offline <| P.s "offline" </> P.string </> P.string
         , P.map Search <| P.s "search" <?> Q.string "q"
         , P.map Table <| P.s "table" </> P.string
+        , P.map BuildRevisions <| P.s "build-revisions"
         , P.map Changelog <| P.s "changelog"
         , P.map Privacy <| P.s "privacy"
 
@@ -151,6 +153,9 @@ toPath r =
 
         Table t ->
             "/table/" ++ t
+
+        BuildRevisions ->
+            "/build-revisions"
 
         Changelog ->
             "/changelog"

@@ -3,6 +3,9 @@ Changelog
 
 ---
 
+#### 2020-03-06
+- You can now load WolcenDB with data from old versions of Wolcen. For example, take a look at [overpowered Bleeding Edge](/skill-variant/player_laceration_variant_11?build_revision=1.0.4.3_ER) or [zero-cooldown Winter's Grasp](/skill/player_frostnova?build_revision=1.0.6.0_ER).
+
 #### 2020-03-04
 - Images have been restored to loot/unique/skill lists.
 - Normal loot now has a "tier" filter, set to tier 16 by default. (You can still select "all tiers" if you like long lists.)

@@ -15,6 +15,7 @@ import Json.Decode as D
 import Maybe.Extra
 import Page.Affixes
 import Page.Ailments
+import Page.BuildRevisions
 import Page.Changelog
 import Page.City
 import Page.Gems
@@ -51,6 +52,7 @@ import View.Nav
 
 type alias Model =
     { nav : Maybe Nav.Key
+    , buildRevisions : List String
     , datamine : RemoteData String Datamine
     , searchIndex : RemoteData String Search.Index
     , changelog : String
@@ -76,6 +78,7 @@ type alias ReadyModel =
 type alias Flags f =
     { f
         | changelog : String
+        , buildRevisions : List String
         , datamine : Maybe D.Value
         , searchIndex : Maybe D.Value
     }
@@ -95,6 +98,7 @@ ssrRootId =
 init_ : Flags f -> Maybe Route -> Maybe Nav.Key -> ( Model, Cmd Msg )
 init_ flags route nav =
     { nav = nav
+    , buildRevisions = flags.buildRevisions
     , datamine = flags.datamine |> maybeDecode Datamine.decode
     , searchIndex = flags.searchIndex |> maybeDecode Search.decodeIndex
     , changelog = flags.changelog
@@ -404,6 +408,9 @@ viewTitle model =
                 ( Route.Table _, _ ) ->
                     "WolcenDB: raw tabular data"
 
+                ( Route.BuildRevisions, _ ) ->
+                    "WolcenDB: build revisions"
+
                 ( Route.Changelog, _ ) ->
                     "WolcenDB: changelog"
 
@@ -563,6 +570,9 @@ viewBody { ssr } model =
                                 Route.Table t ->
                                     Page.Table.view ok.datamine t
                                         |> Maybe.withDefault viewNotFound
+
+                                Route.BuildRevisions ->
+                                    Page.BuildRevisions.view ok.datamine model
 
                                 Route.Changelog ->
                                     Page.Changelog.view model

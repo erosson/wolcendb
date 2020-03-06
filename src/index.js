@@ -5,7 +5,7 @@ import * as serviceWorker from './serviceWorker';
 import changelog from '!!raw-loader!../CHANGELOG.md'
 import analytics from './analytics'
 import sizes from '../datamine/sizes.json'
-import buildRevisions from '../datamine/buildRevisions.json'
+import buildRevisions from '../public/buildRevisions.json'
 // import datamine from '../datamine/imports.js'
 // import searchIndex from '../public/searchIndex.json'
 

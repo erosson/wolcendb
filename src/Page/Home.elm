@@ -105,6 +105,8 @@ view dm =
                     , code [] [ text dm.revision.buildRevision ]
                     , text ", created at "
                     , code [] [ text dm.revision.date ]
+                    , text ". See data for "
+                    , a [ Route.href Route.BuildRevisions ] [ text "other Wolcen versions" ]
                     ]
                 ]
             , small []
