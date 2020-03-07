@@ -10,7 +10,7 @@ const {promisify} = require('util')
 const {Elm} = require('../datamine.tmp/SSRPagesCLI.elm.js')
 const _ = require('lodash/fp')
 const buildRevisions = require('../public/buildRevisions.json')
-const langs = require('../public/langs.json')
+const langs = require('../datamine/lang.json')
 
 const SSR_BUILD_DIR = './build-ssr'
 
@@ -25,10 +25,11 @@ function main() {
     fs.readFile('./CHANGELOG.md').then(f => f.toString()),
   ]))
   .then(([template, changelog]) => {
+    const baseFlags = {buildRevisions, langs, datamine, searchIndex, changelog}
     return Promise.all([
       // fetch a list of pages from SSRPagesCLI
       new Promise((resolve, reject) => {
-        const flags = {buildRevisions, langs, datamine, searchIndex, changelog}
+        const flags = baseFlags
         const pagesApp = Elm.SSRPagesCLI.init({flags})
         pagesApp.ports.ssrCliPages.subscribe(resolve)
       }),
@@ -38,7 +39,7 @@ function main() {
       fs.readFile('./datamine.tmp/SSRRenderCLI.elm.js')
       .then(elm => elm.toString())
       .then(elm => {
-        const flags = {buildRevisions, datamine, searchIndex, changelog, url: ''}
+        const flags = {...baseFlags, url: ''}
         const renderDom = new jsdom.JSDOM(template, {runScripts: 'outside-only'})
         renderDom.window.eval(`${elm}\n\nwindow.app = Elm.SSRRenderCLI.init({node: document.getElementById('root'), flags: ${JSON.stringify(flags)}})`)
         return renderDom
