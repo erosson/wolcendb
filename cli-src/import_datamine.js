@@ -92,7 +92,7 @@ function localizationMain() {
           xlsxLoader.apply({resourcePath: p}),
         ])
       )))
-      .then(jsons => jsons.reduce((accum, [path_, json]) => {accum[path.basename(path_)] = json; return accum}, {}))
+      .then(jsons => jsons.reduce((accum, [path_, json]) => {accum[path.basename(path_)] = JSON.parse(json); return accum}, {}))
       // .then(json => console.log(lang, Object.keys(json)))
       .then(json => {
         const p = dest + 'lang/' + path.basename(lang).replace(/\.pak$/, '.json')

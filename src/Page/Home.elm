@@ -71,6 +71,13 @@ view dm =
                 [ li [ class "nav-item" ]
                     [ a
                         [ class "nav-link"
+                        , Route.href Route.Langs
+                        ]
+                        [ text "Choose Language ", span [ class "badge" ] [ text "(BETA)" ] ]
+                    ]
+                , li [ class "nav-item" ]
+                    [ a
+                        [ class "nav-link"
                         , Route.href Route.Changelog
                         ]
                         [ text "Changelog" ]

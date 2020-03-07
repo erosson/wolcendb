@@ -15,6 +15,16 @@ const query = parseQuery(document.location.search)
 // also contains the pre-rendered page content.
 const root = document.getElementById('root')
 const ssrHTML = root.innerHTML
+const langAssets = langs.reduce((accum, lang) => {
+  const _name = lang.toLowerCase()
+    .replace(/^datamine\/lang\//, '')
+    .replace(/_xml\.json$/, '')
+  const name = _name.replace(/^chineses$/, 'chinese') // wtf, wolcen devs?
+  const asset = 'lang/' + _name + '_xml'
+  accum[name] = asset
+  return accum
+}, {})
+console.log(langAssets)
 
 const app = Elm.Main.init({
   // flags: {changelog, buildRevisions, datamine, searchIndex},
@@ -31,8 +41,16 @@ app.ports.ssr.subscribe(id => {
 })
 
 fetchAsset(app, 'datamine')
+.then(() => query.lang ? fetchLang(app, query.lang) : Promise.resolve())
 .then(() => fetchAsset(app, 'searchIndex'))
 
+function fetchLang(app, name) {
+  const asset = langAssets[name]
+  if (asset) {
+    // console.log('langs', name, asset)
+    fetchAsset(app, asset)
+  }
+}
 function fetchAsset(app, name) {
   const buildRevision = query.build_revision || sizes.buildRevision
   // const assetPath = '/' + name + '.json'
@@ -60,7 +78,7 @@ function fetchAsset(app, name) {
 
 function onProgress(name) {
   return progress => {
-    app.ports.loadAssetsProgress.send({name, progress, size: sizes[name]})
+    app.ports.loadAssetsProgress.send({name, progress, size: sizes[name] || 0})
   }
 }
 function ProgressResponse(response, {onProgress}) {

@@ -9,6 +9,7 @@ Changelog
   - For example, take a look at [v1.0.4.0's overpowered Bleeding Edge](/skill-variant/player_laceration_variant_11?build_revision=1.0.4.3_ER) or [v1.0.6.0's zero-cooldown Winter's Grasp](/skill/player_frostnova?build_revision=1.0.6.0_ER).
 - Most pages don't need to wait for `searchIndex` to finish loading any more.
 - A limited, non-interactive version of some pages is now shown before `datamine` has finished loading. This will be most visible if you're on mobile or on a slow network.
+- Added language selection. Still beta-quality; expect bugs.
 
 #### 2020-03-04
 - Images have been restored to loot/unique/skill lists.

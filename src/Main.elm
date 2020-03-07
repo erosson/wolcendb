@@ -4,6 +4,7 @@ import Browser
 import Browser.Dom
 import Browser.Navigation as Nav
 import Datamine exposing (Datamine)
+import Datamine.Lang
 import Datamine.NormalItem as NormalItem exposing (NormalItem)
 import Datamine.UniqueItem as UniqueItem exposing (UniqueItem)
 import Dict exposing (Dict)
@@ -20,6 +21,7 @@ import Page.Changelog
 import Page.City
 import Page.Gems
 import Page.Home
+import Page.Langs
 import Page.NormalItem
 import Page.NormalItems
 import Page.Offline
@@ -224,7 +226,25 @@ update msg model =
                     { model | searchIndex = Search.decodeIndex res.json |> RemoteData.fromResult }
 
                 _ ->
-                    model
+                    if String.startsWith "lang/" res.name then
+                        case D.decodeValue Datamine.Lang.secondLangDecoder res.json of
+                            Ok lang ->
+                                let
+                                    _ =
+                                        Debug.log res.name lang
+                                in
+                                -- this is super hacky
+                                { model | datamine = model.datamine |> RemoteData.map (\dm -> { dm | en = lang }) }
+
+                            Err err ->
+                                let
+                                    _ =
+                                        Debug.log "lang: err" err
+                                in
+                                model
+
+                    else
+                        model
             )
                 |> routeTo model.route
 
@@ -429,6 +449,9 @@ viewTitle model =
                 ( Route.BuildRevisions, _ ) ->
                     "WolcenDB: build revisions"
 
+                ( Route.Langs, _ ) ->
+                    "WolcenDB: languages"
+
                 ( Route.Changelog, _ ) ->
                     "WolcenDB: changelog"
 
@@ -523,6 +546,9 @@ viewBody { ssr } model =
 
                                 Route.BuildRevisions ->
                                     Page.BuildRevisions.view dm model
+
+                                Route.Langs ->
+                                    Page.Langs.view model
 
                                 Route.Changelog ->
                                     Page.Changelog.view model

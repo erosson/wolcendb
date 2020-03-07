@@ -37,6 +37,7 @@ type Route
     | Search (Maybe String)
     | Table String
     | BuildRevisions
+    | Langs
     | Changelog
     | Privacy
     | Redirect Route
@@ -65,6 +66,7 @@ parser =
         , P.map Search <| P.s "search" <?> Q.string "q"
         , P.map Table <| P.s "table" </> P.string
         , P.map BuildRevisions <| P.s "build-revisions"
+        , P.map Langs <| P.s "language"
         , P.map Changelog <| P.s "changelog"
         , P.map Privacy <| P.s "privacy"
 
@@ -156,6 +158,9 @@ toPath r =
 
         BuildRevisions ->
             "/build-revisions"
+
+        Langs ->
+            "/language"
 
         Changelog ->
             "/changelog"
