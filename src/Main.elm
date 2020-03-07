@@ -55,6 +55,7 @@ type alias Model =
     { nav : Maybe Nav.Key
     , buildRevisions : List String
     , datamine : RemoteData String Datamine
+    , langs : List String
     , searchIndex : RemoteData String Search.Index
     , changelog : String
     , route : Maybe Route
@@ -76,6 +77,7 @@ type alias Flags f =
     { f
         | changelog : String
         , buildRevisions : List String
+        , langs : List String
         , datamine : Maybe D.Value
         , searchIndex : Maybe D.Value
     }
@@ -91,6 +93,7 @@ init_ : Flags f -> Maybe Route -> Maybe Nav.Key -> ( Model, Cmd Msg )
 init_ flags route nav =
     { nav = nav
     , buildRevisions = flags.buildRevisions
+    , langs = flags.langs
     , datamine = flags.datamine |> maybeDecode Datamine.decode
     , searchIndex = flags.searchIndex |> maybeDecode Search.decodeIndex
     , changelog = flags.changelog

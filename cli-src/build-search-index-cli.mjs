@@ -3,8 +3,9 @@ import Elm from '../datamine.tmp/BuildSearchIndexCLI.elm.js'
 import fs from 'fs'
 import mkdirp from 'mkdirp'
 import {promisify} from 'util'
+import glob from 'glob'
 // https://stackoverflow.com/questions/46745014/alternative-for-dirname-in-node-when-using-the-experimental-modules-flag
-import {dirname} from 'path'
+import {dirname, basename} from 'path'
 import {fileURLToPath} from 'url'
 import revision from '../datamine/revision.json'
 const __dirname = dirname(fileURLToPath(import.meta.url))
@@ -26,26 +27,31 @@ app.ports.stdout.subscribe(searchIndex => {
     searchIndex: searchIndexStr.length,
     datamine: datamineStr.length,
   }
-  mkdirp(__dirname + '/../build-img/datamine/' + buildRevision)
+  mkdirp(__dirname + '/../build-img/datamine/' + buildRevision + '/lang')
   .then(() =>
     Promise.all([
       promisify(fs.writeFile)(__dirname + '/../public/searchIndex.json', searchIndexStr),
       promisify(fs.writeFile)(__dirname + '/../public/datamine.json', datamineStr),
       promisify(fs.writeFile)(__dirname + '/../datamine/sizes.json', JSON.stringify(sizes)),
 
-      // Cloudflare caches based on file extension. It doesn't cache `.json` and does cache `.js`.
+      // Cloudflare caches based on file extension. It doesn't cache `.json` and does cache `.js`, so we use the name `.json.js` to force caching.
       // https://support.cloudflare.com/hc/en-us/articles/200172516-Understanding-Cloudflare-s-CDN
       //
       // Using a fake file extension is recommended by some guy here:
       // https://community.cloudflare.com/t/which-file-extensions-does-cloudflare-cache-in-pro-paid-plan/40234/2
       // It's very silly-looking, but the alternative is using up Cloudflare page rules for custom caching. Page rules are expensive and scarce; let's not.
       //
-      // Redbot tests cacheability of our stuff. For example:
+      // Redbot is useful to (manually) test cacheability of our stuff. For example:
       // https://redbot.org/?uri=https%3A%2F%2Fimg-wolcendb.erosson.org%2Fdatamine%2F1.0.8.2_ER%2Fdatamine.json.js%3Ft%3D12345
       // https://redbot.org/?uri=https%3A%2F%2Fimg-wolcendb.erosson.org%2Fdatamine%2F1.0.8.2_ER%2Fdatamine.json%3Ft%3D12345
       // The `CF-Cache-Status` header is important. "Dynamic" is bad, that's completely uncached
       promisify(fs.writeFile)(__dirname + '/../build-img/datamine/' + buildRevision + '/searchIndex.json.js', searchIndexStr),
       promisify(fs.writeFile)(__dirname + '/../build-img/datamine/' + buildRevision + '/datamine.json.js', datamineStr),
+
+      promisify(glob)(__dirname + '/../datamine/lang/*.json')
+      .then(srcs => Promise.all(srcs.map(src =>
+        promisify(fs.copyFile)(src, __dirname + '/../build-img/datamine/' + buildRevision + '/lang/' + basename(src).replace(/\.json$/, '.json.js').toLowerCase())
+      )))
     ])
   )
   .then(() => process.exit(0))

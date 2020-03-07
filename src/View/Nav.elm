@@ -17,7 +17,7 @@ type Msg
 
 
 type alias Model m =
-    View.Search.Model m
+    View.Search.Model { m | langs : List String }
 
 
 view : Model m -> Html Msg
@@ -53,7 +53,8 @@ viewMain searchbar =
 viewSearchbar : Model m -> Html Msg
 viewSearchbar m =
     H.form [ class "form-inline", onSubmit SearchSubmit ]
-        [ div [ class "input-group" ]
+        [ viewLangSelector m.langs
+        , div [ class "input-group" ]
             [ input
                 [ class "form-control"
                 , type_ "search"
@@ -65,6 +66,11 @@ viewSearchbar m =
             , div [ class "input-group-append" ] [ button [ class "btn btn-outline-primary", type_ "submit" ] [ span [ class "fas fa-search" ] [] ] ]
             ]
         ]
+
+
+viewLangSelector : List String -> Html msg
+viewLangSelector langs =
+    span [] []
 
 
 update : Msg -> Datamine -> Model m -> ( Model m, Cmd Msg )

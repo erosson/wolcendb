@@ -16,19 +16,23 @@ const dest = "datamine/"
 const pngdest = "build-img/"
 
 function main() {
-  return Promise.all([
+  return Promise.resolve()
+  .then(() => localizationMain())
+  .then(() => Promise.all([
     xmlMain(),
     pngMain(),
     revisionMain(),
-  ])
+  ]))
   .catch(err => {
     console.error(err)
     process.exit(1)
   })
 }
+
+const LANG_GLOB = "text_ui_{Loot,Activeskills,EIM,passiveskills,Endgame}.xml"
 function xmlMain() {
   return Promise.all([
-    glob(prefix + "localization/text_ui_{Loot,Activeskills,EIM,passiveskills,Endgame}.xml", null),
+    glob(prefix + "localization/" + LANG_GLOB, null),
     glob(prefix + "Game/Umbra/Loot/Armors/{Armors,Accessories,Armors_unique,UniquesAccessories,UniqueArmors}*", null),
     glob(prefix + "Game/Umbra/Loot/Weapons/{Unique,}{Weapons,Shields}*", null),
     glob(prefix + "Game/Umbra/Loot/MagicEffects/Affixes/Armors_Weapons/Affixes{Implicit,Uniques,Armors,Weapons\.,Accessories,Gems}*", null),
@@ -74,6 +78,31 @@ function xmlMain() {
       generateImports(groups),
     ]))
   })
+}
+function localizationMain() {
+  glob(prefix + "lang/*", null)
+  // .then(lang => console.log('lang', lang))
+  .then(langs =>
+    // Write a json file for each language
+    Promise.all(langs.map(lang =>
+      glob(lang + "/" + LANG_GLOB, null)
+      .then(paths => Promise.all(paths.map(p =>
+        Promise.all([
+          Promise.resolve(p),
+          xlsxLoader.apply({resourcePath: p}),
+        ])
+      )))
+      .then(jsons => jsons.reduce((accum, [path_, json]) => {accum[path.basename(path_)] = json; return accum}, {}))
+      // .then(json => console.log(lang, Object.keys(json)))
+      .then(json => {
+        const p = dest + 'lang/' + path.basename(lang).replace(/\.pak$/, '.json')
+        return mkdirp(path.dirname(p))
+        .then(() => fs.writeFile(p, JSON.stringify(json)).then(() => p))
+      })
+    ))
+    // write a json file listing all language files
+    .then(ps => fs.writeFile(dest + 'lang.json', JSON.stringify(ps)))
+  )
 }
 function pngMain() {
   return Promise.all([

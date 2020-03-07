@@ -27,6 +27,10 @@ main =
 
 init : Flags -> ( (), Cmd () )
 init flags =
+    --if True then
+    --    ( (), stdout <| E.object [] )
+    --
+    --else
     ( ()
     , case Datamine.decode flags.datamine of
         Err err ->

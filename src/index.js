@@ -8,6 +8,7 @@ import sizes from '../datamine/sizes.json'
 import buildRevisions from '../public/buildRevisions.json'
 // import datamine from '../datamine/imports.js'
 // import searchIndex from '../public/searchIndex.json'
+import langs from '../datamine/lang.json'
 
 const query = parseQuery(document.location.search)
 // Elm will overwrite this node. For SSR'ed pages (see `yarn build:ssr`), this
@@ -17,7 +18,7 @@ const ssrHTML = root.innerHTML
 
 const app = Elm.Main.init({
   // flags: {changelog, buildRevisions, datamine, searchIndex},
-  flags: {changelog, buildRevisions, datamine: null, searchIndex: null},
+  flags: {changelog, buildRevisions, langs, datamine: null, searchIndex: null},
   node: document.getElementById('root')
 })
 analytics(app)

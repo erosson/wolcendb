@@ -10,6 +10,7 @@ const {promisify} = require('util')
 const {Elm} = require('../datamine.tmp/SSRPagesCLI.elm.js')
 const _ = require('lodash/fp')
 const buildRevisions = require('../public/buildRevisions.json')
+const langs = require('../public/langs.json')
 
 const SSR_BUILD_DIR = './build-ssr'
 
@@ -27,7 +28,7 @@ function main() {
     return Promise.all([
       // fetch a list of pages from SSRPagesCLI
       new Promise((resolve, reject) => {
-        const flags = {buildRevisions, datamine, searchIndex, changelog}
+        const flags = {buildRevisions, langs, datamine, searchIndex, changelog}
         const pagesApp = Elm.SSRPagesCLI.init({flags})
         pagesApp.ports.ssrCliPages.subscribe(resolve)
       }),

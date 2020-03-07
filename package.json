@@ -10,7 +10,7 @@
     "export:install": "bash -c \"gem install bundler && cd third-party/WolcenExtractor && bundle install\"",
     "export:datamine": "bash -c \"rm -rf datamine build-img && mkdir datamine && node ./cli-src/import_datamine.js\"",
     "export:cp": "bash -c \"yarn export:datamine && yarn _build:search-index\"",
-    "export": "bash -c \"echo 'deleting datamine.tmp in 3...' && sleep 3 && rm -rf datamine* build* && cd third-party/WolcenExtractor && ruby src/main.rb extract --source \\\"`cat ../../GAMEPATH`\\\" --dest ../../datamine.tmp --only english_xml.pak,umbra.pak,Libs_UI_ && cd - && cp \\\"`cat GAMEPATH`\\\"/revision.txt datamine.tmp/revision.txt && yarn export:cp\" && echo && echo && echo \"Done! Don't forget to run `yarn deploy:img:datamine` with the right credentials.\"",
+    "export": "bash ./cli-src/export.sh",
     "start": "bash -c \"ELM_DEBUGGER=false elm-app start\"",
     "build": "bash -c \"yarn _build:search-index && yarn _build && yarn _build:ssr\"",
     "_build": "bash -c \"rm -rf build && elm-app build\"",
