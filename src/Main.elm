@@ -43,6 +43,7 @@ import Task
 import Url exposing (Url)
 import Util
 import View.Affix
+import View.Loading
 import View.Nav
 
 
@@ -71,10 +72,6 @@ type alias Model =
     }
 
 
-type alias ReadyModel =
-    { datamine : Datamine, searchIndex : Search.Index }
-
-
 type alias Flags f =
     { f
         | changelog : String
@@ -87,12 +84,7 @@ type alias Flags f =
 init : Flags {} -> Url -> Nav.Key -> ( Model, Cmd Msg )
 init flags url nav =
     init_ flags (Route.parse url) (Just nav)
-        |> Tuple.mapSecond (\cmd -> Cmd.batch [ cmd, Ports.ssr ssrRootId ])
-
-
-ssrRootId : String
-ssrRootId =
-    "ssr-root"
+        |> Tuple.mapSecond (\cmd -> Cmd.batch [ cmd, Ports.ssr View.Loading.ssrRootId ])
 
 
 init_ : Flags f -> Maybe Route -> Maybe Nav.Key -> ( Model, Cmd Msg )
@@ -164,22 +156,17 @@ maybeDecode decoder mjson =
             RemoteData.Success ok
 
 
-readyModel : Model -> RemoteData String ReadyModel
-readyModel model =
-    RemoteData.map2 ReadyModel model.datamine model.searchIndex
-
-
 routeTo : Maybe Route -> Model -> ( Model, Cmd Msg )
 routeTo mroute model0 =
-    case readyModel model0 of
-        RemoteData.Success ok ->
+    case model0.datamine of
+        RemoteData.Success dm ->
             let
                 model =
                     { model0 | route = mroute }
             in
             case mroute of
                 Just (Route.Search q) ->
-                    ( Page.Search.init q ok model, Cmd.none )
+                    ( Page.Search.init q dm model, Cmd.none )
 
                 Just (Route.Redirect route) ->
                     ( model0, Route.replaceUrl model.nav route )
@@ -200,7 +187,7 @@ type Msg
     = Noop
     | LoadAssets Ports.LoadAssets
     | LoadAssetsProgress Ports.LoadAssetsProgress
-    | LoadAssetsFailure String
+    | LoadAssetsFailure Ports.LoadAssetsFailure
     | OnUrlChange Url
     | OnUrlRequest Browser.UrlRequest
     | NormalItemMsg Page.NormalItem.Msg
@@ -223,31 +210,59 @@ subscriptions _ =
 
 update : Msg -> Model -> ( Model, Cmd Msg )
 update msg model =
-    case readyModel model of
-        RemoteData.Success ready ->
-            updateOk msg ready model
+    -- loadassets stuff always runs, regardless of datamine state
+    case msg of
+        LoadAssets res ->
+            (case res.name of
+                "datamine" ->
+                    { model | datamine = Datamine.decode res.json |> RemoteData.fromResult }
+
+                "searchIndex" ->
+                    { model | searchIndex = Search.decodeIndex res.json |> RemoteData.fromResult }
+
+                _ ->
+                    model
+            )
+                |> routeTo model.route
+
+        LoadAssetsProgress res ->
+            ( { model | progress = model.progress |> Dict.insert res.name ( res.progress, res.size ) }, Cmd.none )
+
+        LoadAssetsFailure err ->
+            ( case err.name of
+                "datamine" ->
+                    { model | datamine = remoteDataOr model.datamine <| RemoteData.Failure <| "Couldn't fetch datamine. Something is very wrong.\n\n" ++ err.err }
+
+                "searchIndex" ->
+                    { model | searchIndex = remoteDataOr model.searchIndex <| RemoteData.Failure <| "Couldn't fetch searchIndex. Something is very wrong.\n\n" ++ err.err }
+
+                _ ->
+                    model
+            , Cmd.none
+            )
 
         _ ->
-            case msg of
-                LoadAssets res ->
-                    { model
-                        | datamine = Datamine.decode res.datamine |> RemoteData.fromResult
-                        , searchIndex = Search.decodeIndex res.searchIndex |> RemoteData.fromResult
-                    }
-                        |> routeTo model.route
-
-                LoadAssetsProgress res ->
-                    ( { model | progress = model.progress |> Dict.insert res.label ( res.progress, res.size ) }, Cmd.none )
-
-                LoadAssetsFailure err ->
-                    ( { model | datamine = RemoteData.Failure <| "Couldn't fetch Wolcen data. Something is very wrong.\n\n" ++ err }, Cmd.none )
+            -- most msgs require datamine to be productive
+            case model.datamine of
+                RemoteData.Success dm ->
+                    updateOk msg dm model
 
                 _ ->
                     ( model, Cmd.none )
 
 
-updateOk : Msg -> ReadyModel -> Model -> ( Model, Cmd Msg )
-updateOk msg ok model =
+remoteDataOr : RemoteData e a -> RemoteData e a -> RemoteData e a
+remoteDataOr a b =
+    case a of
+        RemoteData.Success _ ->
+            a
+
+        _ ->
+            b
+
+
+updateOk : Msg -> Datamine -> Model -> ( Model, Cmd Msg )
+updateOk msg dm model =
     case msg of
         Noop ->
             ( model, Cmd.none )
@@ -297,26 +312,26 @@ updateOk msg ok model =
             ( model, Nav.load url )
 
         NormalItemMsg msg_ ->
-            ( Page.NormalItem.update msg_ ok.datamine model, Cmd.none )
+            ( Page.NormalItem.update msg_ dm model, Cmd.none )
 
         PageAffixesMsg msg_ ->
-            ( Page.Affixes.update msg_ ok.datamine model, Cmd.none )
+            ( Page.Affixes.update msg_ dm model, Cmd.none )
 
         ViewAffixMsg msg_ ->
             ( View.Affix.update msg_ model, Cmd.none )
 
         SearchMsg msg_ ->
-            Page.Search.update msg_ ok model
+            Page.Search.update msg_ dm model
                 |> Tuple.mapSecond (Cmd.map SearchMsg)
 
         CityMsg msg_ ->
             ( Page.City.update msg_ model, Cmd.none )
 
         AilmentsMsg msg_ ->
-            ( Page.Ailments.update msg_ ok.datamine model, Cmd.none )
+            ( Page.Ailments.update msg_ dm model, Cmd.none )
 
         NavMsg msg_ ->
-            View.Nav.update msg_ ok model
+            View.Nav.update msg_ dm model
                 |> Tuple.mapSecond (Cmd.map NavMsg)
 
 
@@ -336,7 +351,7 @@ viewTitle model =
             "WolcenDB"
 
         Just route ->
-            case ( route, readyModel model ) of
+            case ( route, model.datamine ) of
                 ( Route.Redirect _, _ ) ->
                     "WolcenDB"
 
@@ -348,8 +363,8 @@ viewTitle model =
                         ++ Maybe.Extra.unwrap "" (String.fromInt >> (++) ": Tier ") tier
                         ++ Maybe.Extra.unwrap "" ((++) ": ") kws
 
-                ( Route.NormalItem name, RemoteData.Success ok ) ->
-                    "WolcenDB: normal item: " ++ Page.NormalItem.viewTitle ok.datamine name
+                ( Route.NormalItem name, RemoteData.Success dm ) ->
+                    "WolcenDB: normal item: " ++ Page.NormalItem.viewTitle dm name
 
                 ( Route.NormalItem name, _ ) ->
                     "WolcenDB: normal item"
@@ -357,8 +372,8 @@ viewTitle model =
                 ( Route.UniqueItems kws, _ ) ->
                     "WolcenDB: unique item list" ++ Maybe.Extra.unwrap "" ((++) ": ") kws
 
-                ( Route.UniqueItem name, RemoteData.Success ok ) ->
-                    "WolcenDB: unique item: " ++ Page.UniqueItem.viewTitle ok.datamine name
+                ( Route.UniqueItem name, RemoteData.Success dm ) ->
+                    "WolcenDB: unique item: " ++ Page.UniqueItem.viewTitle dm name
 
                 ( Route.UniqueItem name, _ ) ->
                     "WolcenDB: unique item"
@@ -366,14 +381,14 @@ viewTitle model =
                 ( Route.Skills, _ ) ->
                     "WolcenDB: skill list"
 
-                ( Route.Skill name, RemoteData.Success ok ) ->
-                    "WolcenDB: skill: " ++ Page.Skill.viewTitle ok.datamine name
+                ( Route.Skill name, RemoteData.Success dm ) ->
+                    "WolcenDB: skill: " ++ Page.Skill.viewTitle dm name
 
                 ( Route.Skill name, _ ) ->
                     "WolcenDB: skill"
 
-                ( Route.SkillVariant id, RemoteData.Success ok ) ->
-                    "WolcenDB: skill-variant: " ++ Page.SkillVariant.viewTitle ok.datamine id
+                ( Route.SkillVariant id, RemoteData.Success dm ) ->
+                    "WolcenDB: skill-variant: " ++ Page.SkillVariant.viewTitle dm id
 
                 ( Route.SkillVariant _, _ ) ->
                     "WolcenDB: skill-variant"
@@ -418,80 +433,12 @@ viewTitle model =
                     "WolcenDB: privacy"
 
 
-viewLoading model =
-    [ div [ class "container" ]
-        [ View.Nav.viewNoSearchbar
-        , div [ class "alert alert-info loading-alert" ]
-            [ div [ class "fas fa-spinner fa-spin" ] []
-            , text " Loading..."
-            , div []
-                (model.progress
-                    |> Dict.toList
-                    |> List.sortBy Tuple.first
-                    |> List.map
-                        (\( key, ( val, max ) ) ->
-                            let
-                                pct =
-                                    Util.percent <| clamp 0 1 <| toFloat val / toFloat max
-                            in
-                            div [ class "loading progress" ]
-                                [ div
-                                    [ class "progress-bar bg-info"
-                                    , style "width" pct
-                                    , style "text-align" "left"
-                                    ]
-                                    [ text <| key ++ ": " ++ String.fromInt val ++ "/" ++ String.fromInt max ++ " - " ++ pct ]
-                                ]
-                        )
-                )
-            , div [ style "font-size" "60%" ] [ text "Thanks for waiting!" ]
-            ]
-        , div []
-            [ div []
-                [ div []
-                    [ div []
-                        [ div []
-                            [ div []
-                                [ div []
-                                    [ div []
-                                        [ div [ id ssrRootId ]
-                                            [-- `Ports:ssr` replaces this with SSR'ed content while loading.
-                                             -- Nested divs force Elm's dom-diffing to remove, not modify, this element when loading's done.
-                                            ]
-                                        ]
-                                    ]
-                                ]
-                            ]
-                        ]
-                    ]
-                ]
-            ]
-        ]
-    ]
-
-
-viewErr err =
-    [ div [ class "container" ]
-        [ View.Nav.viewNoSearchbar
-        , pre [ class "alert alert-danger" ]
-            [ text <| String.right 100000 err ]
-        ]
-    ]
-
-
 viewBody : { ssr : Bool } -> Model -> List (Html Msg)
 viewBody { ssr } model =
-    case readyModel model of
-        RemoteData.Failure err ->
-            viewErr err
-
-        RemoteData.NotAsked ->
-            viewLoading model
-
-        RemoteData.Loading ->
-            viewLoading model
-
-        RemoteData.Success ok ->
+    View.Loading.view { navbar = True }
+        model
+        model.datamine
+        (\dm ->
             let
                 content =
                     case model.route of
@@ -505,62 +452,62 @@ viewBody { ssr } model =
                                     viewNotFound
 
                                 Route.Home ->
-                                    Page.Home.view ok.datamine
+                                    Page.Home.view dm
 
                                 Route.NormalItems tier tags ->
-                                    Page.NormalItems.view ok.datamine tier tags
+                                    Page.NormalItems.view dm tier tags
 
                                 Route.NormalItem name ->
-                                    Page.NormalItem.view ok.datamine model name
+                                    Page.NormalItem.view dm model name
                                         |> Maybe.map (List.map (H.map NormalItemMsg))
                                         |> Maybe.withDefault viewNotFound
 
                                 Route.UniqueItems tags ->
-                                    Page.UniqueItems.view ok.datamine tags
+                                    Page.UniqueItems.view dm tags
 
                                 Route.UniqueItem name ->
-                                    Page.UniqueItem.view ok.datamine name
+                                    Page.UniqueItem.view dm name
                                         |> Maybe.withDefault viewNotFound
 
                                 Route.Skills ->
-                                    Page.Skills.view ok.datamine
+                                    Page.Skills.view dm
 
                                 Route.Skill s ->
-                                    Page.Skill.view ok.datamine s
+                                    Page.Skill.view dm s
                                         |> Maybe.withDefault viewNotFound
 
                                 Route.SkillVariant v ->
-                                    Page.SkillVariant.view ok.datamine v
+                                    Page.SkillVariant.view dm v
                                         |> Maybe.withDefault viewNotFound
 
                                 Route.Affixes ->
-                                    Page.Affixes.view ok.datamine model
+                                    Page.Affixes.view dm model
                                         |> List.map (H.map PageAffixesMsg)
 
                                 Route.Gems ->
-                                    Page.Gems.view ok.datamine
+                                    Page.Gems.view dm
 
                                 Route.Passives ->
-                                    Page.Passives.view ok.datamine
+                                    Page.Passives.view dm
 
                                 Route.Reagents ->
-                                    Page.Reagents.view ok.datamine
+                                    Page.Reagents.view dm
 
                                 Route.City name ->
-                                    Page.City.view ok.datamine model name
+                                    Page.City.view dm model name
                                         |> Maybe.withDefault viewNotFound
                                         |> List.map (H.map CityMsg)
 
                                 Route.Ailments ->
-                                    Page.Ailments.view ok.datamine model
+                                    Page.Ailments.view dm model
                                         |> List.map (H.map AilmentsMsg)
 
                                 Route.Source type_ id ->
-                                    Page.Source.view ok.datamine type_ id
+                                    Page.Source.view dm type_ id
                                         |> Maybe.withDefault viewNotFound
 
                                 Route.Offline type_ id ->
-                                    Page.Offline.view ok.datamine type_ id
+                                    Page.Offline.view dm type_ id
                                         |> Maybe.withDefault viewNotFound
 
                                 Route.Search query ->
@@ -568,11 +515,11 @@ viewBody { ssr } model =
                                         |> List.map (H.map SearchMsg)
 
                                 Route.Table t ->
-                                    Page.Table.view ok.datamine t
+                                    Page.Table.view dm t
                                         |> Maybe.withDefault viewNotFound
 
                                 Route.BuildRevisions ->
-                                    Page.BuildRevisions.view ok.datamine model
+                                    Page.BuildRevisions.view dm model
 
                                 Route.Changelog ->
                                     Page.Changelog.view model
@@ -590,6 +537,7 @@ viewBody { ssr } model =
                         :: content
                     )
                 ]
+        )
 
 
 viewNotFound =

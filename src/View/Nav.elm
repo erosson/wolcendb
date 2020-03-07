@@ -8,6 +8,7 @@ import Html.Events as E exposing (..)
 import RemoteData exposing (RemoteData)
 import Route exposing (Route)
 import Search exposing (Index, SearchResult)
+import View.Search
 
 
 type Msg
@@ -15,20 +16,8 @@ type Msg
     | SearchSubmit
 
 
-type alias ReadyModel m =
-    { m
-        | datamine : Datamine
-        , searchIndex : Search.Index
-    }
-
-
 type alias Model m =
-    { m
-        | nav : Maybe Nav.Key
-        , globalSearch : String
-        , globalSearchResults : Result String (List SearchResult)
-        , searchIndex : RemoteData String Search.Index
-    }
+    View.Search.Model m
 
 
 view : Model m -> Html Msg
@@ -78,21 +67,11 @@ viewSearchbar m =
         ]
 
 
-update : Msg -> ReadyModel r -> Model m -> ( Model m, Cmd Msg )
-update msg ok model =
+update : Msg -> Datamine -> Model m -> ( Model m, Cmd Msg )
+update msg dm model =
     case msg of
         SearchInput q ->
-            ( model |> search q ok, Cmd.none )
+            ( model |> View.Search.search q dm, Cmd.none )
 
         SearchSubmit ->
             ( model, Just model.globalSearch |> Route.Search |> Route.pushUrl model.nav )
-
-
-search : String -> ReadyModel r -> Model m -> Model m
-search q ok model =
-    case Search.search ok.datamine q ok.searchIndex of
-        Err err ->
-            { model | globalSearch = q, globalSearchResults = Err err }
-
-        Ok ( index, res ) ->
-            { model | globalSearch = q, globalSearchResults = Ok res, searchIndex = RemoteData.Success index }

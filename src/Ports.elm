@@ -6,7 +6,7 @@ import Json.Decode as D
 
 
 type alias LoadAssets =
-    { searchIndex : D.Value, datamine : D.Value }
+    { name : String, json : D.Value }
 
 
 {-| JS should replace this element-id with SSR content, if any
@@ -20,13 +20,17 @@ port loadAssets : (LoadAssets -> msg) -> Sub msg
 
 
 type alias LoadAssetsProgress =
-    { label : String, progress : Int, size : Int }
+    { name : String, progress : Int, size : Int }
 
 
 port loadAssetsProgress : (LoadAssetsProgress -> msg) -> Sub msg
 
 
-port loadAssetsFailure : (String -> msg) -> Sub msg
+type alias LoadAssetsFailure =
+    { name : String, err : String }
+
+
+port loadAssetsFailure : (LoadAssetsFailure -> msg) -> Sub msg
 
 
 {-| Tell analytics when the url changes

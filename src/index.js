@@ -29,39 +29,37 @@ app.ports.ssr.subscribe(id => {
   }
 })
 
-fetchAssets(app)
-.then(([datamine, searchIndex]) => {
-  app.ports.loadAssets.send({datamine, searchIndex})
-})
-.catch(err => {
-  console.error('fetch error', err)
-  app.ports.loadAssetsFailure.send(err+'')
-})
-function fetchAssets(app) {
-  // const assetPath = f => f
+fetchAsset(app, 'datamine')
+.then(() => fetchAsset(app, 'searchIndex'))
+
+function fetchAsset(app, name) {
   const buildRevision = query.build_revision || sizes.buildRevision
-  const assetPath = f => 'https://img-wolcendb.erosson.org/datamine/' + buildRevision + f + '.js?t=' + sizes.slug
+  // const assetPath = '/' + name + '.json'
+  const assetPath = 'https://img-wolcendb.erosson.org/datamine/' + buildRevision + '/' + name + '.json.js?t=' + sizes.slug
   const isProgressSupported = window.Response && window.ReadableStream
-  if (isProgressSupported) {
-    onProgress('datamine')(0)
-    onProgress('searchIndex')(0)
-    return Promise.all([
-      fetch(assetPath('/datamine.json')).then(res => ProgressResponse(res, {onProgress: onProgress('datamine')}).json()),
-      fetch(assetPath('/searchIndex.json')).then(res => ProgressResponse(res, {onProgress: onProgress('searchIndex')}).json()),
-    ])
-  }
-  else {
-    console.warn('loading progressbar unsupported by this browser, trying to load without it')
-    return Promise.all([
-      fetch(assetPath('/datamine.json')).then(res => res.json()),
-      fetch(assetPath('/searchIndex.json')).then(res => res.json()),
-    ])
-  }
+  return (() => {
+    if (isProgressSupported) {
+      onProgress(name)(0)
+      return fetch(assetPath).then(res => ProgressResponse(res, {onProgress: onProgress(name)}))
+    }
+    else {
+      console.warn('loading progressbar unsupported by this browser, trying to load without it')
+      return fetch(assetPath)
+    }
+  })()
+  .then(res => res.json())
+  .then(json => {
+    app.ports.loadAssets.send({name, json})
+    return json
+  })
+  .catch(err => {
+    app.ports.loadAssetsFailure.send({name, err: err+''})
+  })
 }
 
-function onProgress(label) {
+function onProgress(name) {
   return progress => {
-    app.ports.loadAssetsProgress.send({label, progress, size: sizes[label]})
+    app.ports.loadAssetsProgress.send({name, progress, size: sizes[name]})
   }
 }
 function ProgressResponse(response, {onProgress}) {
