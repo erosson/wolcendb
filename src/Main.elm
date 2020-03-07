@@ -229,18 +229,13 @@ update msg model =
                     if String.startsWith "lang/" res.name then
                         case D.decodeValue Datamine.Lang.secondLangDecoder res.json of
                             Ok lang ->
-                                let
-                                    _ =
-                                        Debug.log res.name lang
-                                in
-                                -- this is super hacky
+                                -- TODO: this is incredibly hacky! Datamine is supposed to be read-only,
+                                -- and localization is conceptually independent of it anyway:
+                                -- lang and datamine are often needed in very different places.
+                                -- Refactor things to pass lang around independently!
                                 { model | datamine = model.datamine |> RemoteData.map (\dm -> { dm | en = lang }) }
 
                             Err err ->
-                                let
-                                    _ =
-                                        Debug.log "lang: err" err
-                                in
                                 model
 
                     else
