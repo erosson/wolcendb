@@ -24,7 +24,6 @@ const langAssets = langs.reduce((accum, lang) => {
   accum[name] = asset
   return accum
 }, {})
-console.log(langAssets)
 
 const app = Elm.Main.init({
   // flags: {changelog, buildRevisions, datamine, searchIndex},
