@@ -67,7 +67,6 @@ viewLoading args model =
     if args.navbar then
         [ div [ class "container" ]
             [ View.Nav.viewNoSearchbar
-            , alert
             , div []
                 [ div []
                     [ div []
@@ -89,6 +88,7 @@ viewLoading args model =
                     ]
                 ]
             ]
+        , div [ class "container fixed-top", style "top" "3.5em" ] [ alert ]
         ]
 
     else

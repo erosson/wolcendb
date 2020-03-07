@@ -22,9 +22,9 @@ const app = Elm.Main.init({
 })
 analytics(app)
 app.ports.ssr.subscribe(id => {
-  // ssr off by default, unless set to a non-falsy value.
-  // I want to prove invisibly serving from these files doesn't break stuff first
-  if ('ssr' in query && !/^(|0|false)$/.test(query.ssr)) {
+  // ssr on by default, unless set to a falsy value.
+  // Enable by default, but let folks turn it off if it's broken
+  if (!('ssr' in query && !/^(|0|false)$/.test(query.ssr))) {
     document.getElementById(id).innerHTML = ssrHTML
   }
 })
