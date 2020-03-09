@@ -23,7 +23,7 @@
     "deploy:img:pull": "bash ./scripts/build-img/pull.sh",
     "deploy:img:buildRevisions": "bash ./scripts/public/buildRevisions.sh",
 
-    "build:ci": "bash -c \"yarn test && yarn build\"",
+    "build:ci": "bash -c \"yarn build && yarn test\"",
     "test": "node tests/fixture.js && elm-app test"
   },
   "devDependencies": {
