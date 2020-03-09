@@ -10,7 +10,7 @@ PATH.DATAMINE_TMP = path.join(PATH.ROOT, "datamine.tmp")
 PATH.DATAMINE = path.join(PATH.ROOT, "datamine")
 PATH.DATAMINE_BUILD = path.join(PATH.ROOT, "build-datamine")
 PATH.BUILD_IMG = path.join(PATH.ROOT, "build-img")
-PATH.BUILD_SSR = path.join(PATH.ROOT, "build-ssr2")
+PATH.BUILD_SSR = path.join(PATH.ROOT, "build-ssr")
 PATH.PUBLIC = path.join(PATH.ROOT, "public")
 
 async function copyGlobs({src, dest, patterns}) {
