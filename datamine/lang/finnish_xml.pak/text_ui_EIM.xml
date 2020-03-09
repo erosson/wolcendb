@@ -1,0 +1,732 @@
+<?xml version="1.0"?>
+<?mso-application progid="Excel.Sheet"?>
+<Workbook xmlns="urn:schemas-microsoft-com:office:spreadsheet"
+ xmlns:o="urn:schemas-microsoft-com:office:office"
+ xmlns:x="urn:schemas-microsoft-com:office:excel"
+ xmlns:ss="urn:schemas-microsoft-com:office:spreadsheet"
+ xmlns:html="http://www.w3.org/TR/REC-html40">
+ <DocumentProperties xmlns="urn:schemas-microsoft-com:office:office">
+  <Title>Audio script template</Title>
+  <Author>Maëlenn Lumineau</Author>
+  <LastAuthor>Yidhra</LastAuthor>
+  <LastPrinted>2003-10-30T09:38:41Z</LastPrinted>
+  <Created>2002-06-17T19:14:00Z</Created>
+  <LastSaved>2018-10-15T15:09:24Z</LastSaved>
+  <Company>Electronic Arts</Company>
+  <Version>16.00</Version>
+ </DocumentProperties>
+ <OfficeDocumentSettings xmlns="urn:schemas-microsoft-com:office:office">
+  <AllowPNG/>
+ </OfficeDocumentSettings>
+ <ExcelWorkbook xmlns="urn:schemas-microsoft-com:office:excel">
+  <SupBook>
+   <Path>\DOCUME~1\jack\LOCALS~1\Temp\p4v\PC025 perforce 1666\data\Game02\Game\Languages\Copy of Dialog_Asset_List_Final_edit.xls</Path>
+   <SheetName>DropDown</SheetName>
+   <SheetName>Conversations</SheetName>
+   <Xct>
+    <Count>2</Count>
+    <SheetIndex>0</SheetIndex>
+    <Crn>
+     <Row>6</Row>
+     <ColFirst>0</ColFirst>
+     <ColLast>4</ColLast>
+     <Text>clean</Text>
+     <Text>TV</Text>
+     <Text>radio (disturbed) </Text>
+     <Text>radio (low)</Text>
+     <Text>radio (heavy)</Text>
+    </Crn>
+    <Crn>
+     <Row>9</Row>
+     <ColFirst>0</ColFirst>
+     <ColLast>41</ColLast>
+     <Text>Player</Text>
+     <Text>Barnes</Text>
+     <Text>Hawker</Text>
+     <Text>Sykes</Text>
+     <Text>Johnson</Text>
+     <Text>Cortez</Text>
+     <Text>Beck</Text>
+     <Text>Miller</Text>
+     <Text>Baxter</Text>
+     <Text>American scientist</Text>
+     <Text>Shark</Text>
+     <Text>Chia</Text>
+     <Text>Kirovski</Text>
+     <Text>Michaels</Text>
+     <Text>Chang</Text>
+     <Text>Marine Soldier a</Text>
+     <Text>Marine Soldier b</Text>
+     <Text>Chinese Soldier a</Text>
+     <Text>Chinese Soldier b</Text>
+     <Text>Chinese Soldier c</Text>
+     <Text>Chinese Soldier d</Text>
+     <Text>Chinese Soldier e</Text>
+     <Text>Chinese Soldier f</Text>
+     <Text>Chinese Officer a</Text>
+     <Text>Chinese Officer b</Text>
+     <Text>Chinese Scientist a</Text>
+     <Text>Chinese Scientist b</Text>
+     <Text>Chinese Scientist Female a</Text>
+     <Text>Chinese Scientist Female b</Text>
+     <Text>Filmcrew Member</Text>
+     <Text>Morrison</Text>
+     <Text>C17 Pilot a</Text>
+     <Text>C17 Pilot b</Text>
+     <Text>Submarine Commander Davis</Text>
+     <Text>Pilot (camera)</Text>
+     <Text>Bridge officer 1</Text>
+     <Text>Bridge officer 2</Text>
+     <Text>Carrier deck guide</Text>
+     <Text>Jet Pilot</Text>
+     <Text>VTOL Pilot</Text>
+     <Text>Commander (camera)</Text>
+     <Text>Team Two (camera)</Text>
+    </Crn>
+   </Xct>
+  </SupBook>
+  <WindowHeight>11860</WindowHeight>
+  <WindowWidth>28520</WindowWidth>
+  <WindowTopX>32767</WindowTopX>
+  <WindowTopY>32767</WindowTopY>
+  <TabRatio>274</TabRatio>
+  <RefModeR1C1/>
+  <ProtectStructure>False</ProtectStructure>
+  <ProtectWindows>False</ProtectWindows>
+ </ExcelWorkbook>
+ <Styles>
+  <Style ss:ID="Default" ss:Name="Normal">
+   <Alignment ss:Vertical="Bottom"/>
+   <Borders/>
+   <Font ss:FontName="Arial" x:Family="Swiss"/>
+   <Interior/>
+   <NumberFormat/>
+   <Protection/>
+  </Style>
+  <Style ss:ID="s62" ss:Name="40&#160;% - Accent1">
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="11" ss:Color="#000000"/>
+   <Interior ss:Color="#BDD7EE" ss:Pattern="Solid"/>
+  </Style>
+  <Style ss:ID="s63" ss:Name="Insatisfaisant">
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="11" ss:Color="#800000"/>
+   <Interior ss:Color="#FFC7CE" ss:Pattern="Solid"/>
+  </Style>
+  <Style ss:ID="s64" ss:Name="Neutre">
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="11" ss:Color="#993300"/>
+   <Interior ss:Color="#FFEB9C" ss:Pattern="Solid"/>
+  </Style>
+  <Style ss:ID="s65" ss:Name="Satisfaisant">
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="11" ss:Color="#008000"/>
+   <Interior ss:Color="#C6EFCE" ss:Pattern="Solid"/>
+  </Style>
+  <Style ss:ID="m537447048" ss:Parent="s62">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Bottom" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="2"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="2"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="2"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="2"/>
+   </Borders>
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="11" ss:Color="#000000"
+    ss:Bold="1"/>
+  </Style>
+  <Style ss:ID="m537447068" ss:Parent="s62">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Bottom" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="2"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="2"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="2"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="2"/>
+   </Borders>
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="11" ss:Color="#000000"
+    ss:Bold="1"/>
+  </Style>
+  <Style ss:ID="s66">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Top" ss:WrapText="1"/>
+   <Borders/>
+  </Style>
+  <Style ss:ID="s67">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Top" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Courier New" x:Family="Modern" ss:Color="#FFFFFF" ss:Bold="1"/>
+   <Interior ss:Color="#FFCC00" ss:Pattern="Solid"/>
+  </Style>
+  <Style ss:ID="s68">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Top" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Courier New" x:Family="Modern" ss:Color="#FFFFFF" ss:Bold="1"/>
+   <Interior ss:Color="#FF0000" ss:Pattern="Solid"/>
+  </Style>
+  <Style ss:ID="s85" ss:Parent="s63">
+   <Alignment ss:Vertical="Bottom"/>
+   <Borders/>
+   <NumberFormat/>
+   <Protection/>
+  </Style>
+  <Style ss:ID="s87">
+   <Borders/>
+  </Style>
+ </Styles>
+ <Names>
+  <NamedRange ss:Name="characters"
+   ss:RefersTo="='\DOCUME~1\jack\LOCALS~1\Temp\p4v\PC025 perforce 1666\data\Game02\Game\Languages\[Copy of Dialog_Asset_List_Final_edit.xls]DropDown'!R10C1:R10C42"/>
+  <NamedRange ss:Name="type"
+   ss:RefersTo="='\DOCUME~1\jack\LOCALS~1\Temp\p4v\PC025 perforce 1666\data\Game02\Game\Languages\[Copy of Dialog_Asset_List_Final_edit.xls]DropDown'!R7C1:R7C5"/>
+ </Names>
+ <Worksheet ss:Name="Sheet1">
+  <Names>
+   <NamedRange ss:Name="Print_Area" ss:RefersTo="=Sheet1!R1C2:R1C3"/>
+  </Names>
+  <Table ss:ExpandedColumnCount="4" ss:ExpandedRowCount="1395" x:FullColumns="1"
+   x:FullRows="1" ss:DefaultColumnWidth="60" ss:DefaultRowHeight="12.5">
+   <Column ss:AutoFitWidth="0" ss:Width="257.5"/>
+   <Column ss:AutoFitWidth="0" ss:Width="349.5"/>
+   <Column ss:AutoFitWidth="0" ss:Width="329.5"/>
+   <Column ss:AutoFitWidth="0" ss:Width="160.5"/>
+   <Row ss:AutoFitHeight="0" ss:Height="15" ss:StyleID="s66">
+    <Cell ss:StyleID="s67"><Data ss:Type="String">KEY</Data></Cell>
+    <Cell ss:StyleID="s68"><Data ss:Type="String">ORIGINAL TEXT</Data><NamedCell
+      ss:Name="Print_Area"/></Cell>
+    <Cell ss:StyleID="s68"><Data ss:Type="String">TRANSLATED TEXT</Data><NamedCell
+      ss:Name="Print_Area"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15" ss:StyleID="s66">
+    <Cell ss:MergeAcross="2" ss:StyleID="m537447048"><Data ss:Type="String">Units EIM</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15" ss:StyleID="s66">
+    <Cell ss:StyleID="Default"><Data ss:Type="String">ui_UnitSymbols_Seconds</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">s</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">s</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15" ss:StyleID="s66">
+    <Cell ss:StyleID="Default"><Data ss:Type="String">ui_UnitSymbols_Meter</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">m</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">m</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15" ss:StyleID="s66">
+    <Cell ss:StyleID="Default"><Data ss:Type="String">ui_UnitSymbols_Position</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">th</Data></Cell>
+    <Cell ss:StyleID="s85"><Data ss:Type="String"> </Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15" ss:StyleID="s66">
+    <Cell ss:MergeAcross="2" ss:StyleID="m537447068"><Data ss:Type="String">AST INTERFACE</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_eim_additional_projectile</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">%1 Additional Projectile(s)</Data></Cell>
+    <Cell><Data ss:Type="String">%1 lisä ammuksia</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_eim_agility_pts</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">%1 Agility</Data></Cell>
+    <Cell><Data ss:Type="String">%1 ketteryyttä</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_eim_all_attribute_pts</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">%1 to All Attributes</Data></Cell>
+    <Cell><Data ss:Type="String">%1 kaikkiin ominaisuuksiin</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_eim_all_resistance</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">%1 All Resistance</Data></Cell>
+    <Cell><Data ss:Type="String">%1 kakkiin vastustuskykyihin</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_eim_defense_pts</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">%1 Defense</Data></Cell>
+    <Cell><Data ss:Type="String">%1 suojaukseen</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_eim_armor_pts</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">%1 Defense</Data></Cell>
+    <Cell><Data ss:Type="String">%1 suojaukseen</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_eim_attackspeed</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">%1 Attack Speed</Data></Cell>
+    <Cell><Data ss:Type="String">%1 hyökkäysnopeuteen</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_eim_bleedchance_on_bleed_damage_flat</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">%1 Rend Chance on Bleed Damage</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">%1 repivänvaurion mahdollisuus veren vuodon aikana</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_eim_bleed_damage_percent</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">%1 Bleed Damage</Data></Cell>
+    <Cell><Data ss:Type="String">%1 verenvuoto vaurioon</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15" ss:StyleID="s87">
+    <Cell ss:StyleID="Default"><Data ss:Type="String">ui_eim_bleed_damage_spell</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">%1-%2 Bleed Damage added to Spells</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">%1-%2 lisättyä verenvuoto vauriota taikoihin</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_eim_bleed_damage_weapon</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">%1-%2 Bleed Damage added to Attacks</Data></Cell>
+    <Cell><Data ss:Type="String">%1-%2 lisättyä verenvuoto vauriota hyökkäkseen</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_eim_bleed_resistance</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">%1 Bleed Resistance</Data></Cell>
+    <Cell><Data ss:Type="String">%1 verenvuodon vastustuskykyyn</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_eim_criticalchance_attackskill_pts</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">%1 Attacks Critical Hit Chance</Data></Cell>
+    <Cell><Data ss:Type="String">%1 hyökkäyksen kriittisen iskun mahdollisuuteen</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_eim_criticalchance_magicspell_pts</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">%1 Spells Critical Hit Chance</Data></Cell>
+    <Cell><Data ss:Type="String">%1 taikojen kriittisen iskun mahdollisuuteen</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_eim_criticalchance_pts</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">%1 Global Critical Hit Chance</Data></Cell>
+    <Cell><Data ss:Type="String">%1 yleiseen kriittisen iskun mahdollisuuteen</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_eim_criticaldamage_magicspell_pts</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">%1 Spells Critical Hit Damage</Data></Cell>
+    <Cell><Data ss:Type="String">%1 taikojen kriittisen iskun vaurioon</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15" ss:StyleID="s66">
+    <Cell ss:StyleID="Default"><Data ss:Type="String">ui_eim_criticaldamage_attackskill_pts</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">%1 Attacks Critical Hit Damage</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">%1 hyökkäyksen kriittisen iskun vaurioon</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15" ss:StyleID="s87">
+    <Cell ss:StyleID="Default"><Data ss:Type="String">ui_eim_criticaldamage_pts</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">%1 Global Critical Hit Damage</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">%1 yleiseen kriittisen iskun vaurioon</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15" ss:StyleID="s87">
+    <Cell ss:StyleID="Default"><Data ss:Type="String">ui_eim_damage_percent_any_weapon</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">%1 Attacks Damage</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">%1 hyökkäyksen vaurioon</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_eim_damage_percent_melee_weapon</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">%1 Melee Weapon Damage</Data></Cell>
+    <Cell ss:StyleID="s85"><Data ss:Type="String">%1 lähistaistelu aseen vaurioon</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_eim_damage_percent_spell</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">%1 Spell Damage</Data></Cell>
+    <Cell><Data ss:Type="String">%1 taian vaurioon</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_eim_ferocity_pts</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">%1 Ferocity</Data></Cell>
+    <Cell><Data ss:Type="String">%1 julmuuteen</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_eim_firechance_on_fire_damage_flat</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">%1 Burn Chance on Fire Damage</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">%1 polttomahdollisuus kun teet tulivauriota</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_eim_fire_damage_percent</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">%1 Fire Damage</Data></Cell>
+    <Cell><Data ss:Type="String">%1 tuli vaurioon</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_eim_fire_damage_spell</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">%1-%2 Fire Damage added to Spells</Data></Cell>
+    <Cell><Data ss:Type="String">%1-%2 lisättyä tulivauriota taikoihin</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_eim_fire_damage_weapon</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">%1-%2 &#160;Fire Damage added to Attacks</Data></Cell>
+    <Cell><Data ss:Type="String">%1-%2 lisättyä tulivauriota hyökkäyksiin</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_eim_fire_resistance</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">%1 Fire Resistance</Data></Cell>
+    <Cell><Data ss:Type="String">%1 tulen vastustuskykyyn</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_eim_frostchance_on_frost_damage_flat</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">%1 Freeze Chance on Frost Damage</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">%1 jäätymisen mahdollisuus kun teet jäävauriota</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_eim_frost_damage_percent</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">%1 Frost Damage</Data></Cell>
+    <Cell><Data ss:Type="String">%1 jäävaurioon</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15" ss:StyleID="s66">
+    <Cell ss:StyleID="Default"><Data ss:Type="String">ui_eim_frost_damage_spell</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">%1-%2 Frost Damage added to Spells</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">%1-%2 lisättyä jäävauriota taikoihin</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_eim_frost_damage_weapon</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">%1-%2 Frost Damage added to Attacks</Data></Cell>
+    <Cell><Data ss:Type="String">%1-%2 lisättyä jäävauriota hyökkäyksiin</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_eim_frost_resistance</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">%1 Frost Resistance</Data></Cell>
+    <Cell><Data ss:Type="String">%1 jäätymisen vastustuskykyyn</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_eim_health_percent</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">%1 Health</Data></Cell>
+    <Cell><Data ss:Type="String">%1 elinvoimaan</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_eim_health_pts</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">%1 Health</Data></Cell>
+    <Cell><Data ss:Type="String">%1 elinvoimaan</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_eim_health_regen_percent</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">%1 Health Regeneration</Data></Cell>
+    <Cell><Data ss:Type="String">%1 elinvoiman palautumiseen</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_eim_health_regen_pts</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">%1 Health Regeneration</Data></Cell>
+    <Cell><Data ss:Type="String">%1 elinvoiman palautumiseen</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_eim_health_regen_true_percent</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">%1 Global Health Regeneration</Data></Cell>
+    <Cell><Data ss:Type="String">%1 yleiseen elinvoiman palautumiseen</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_eim_lightningchance_on_lightning_damage_flat</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">%1 Shock Chance on Lightning Damage</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">%1 sähköistyksen mahdollisuus kun teet salamavauriota</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_eim_lightning_damage_percent</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">%1 Lightning Damage</Data></Cell>
+    <Cell><Data ss:Type="String">%1 salamavaurioon</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_eim_lightning_damage_spell</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">%1-%2 Lightning Damage added to Spells</Data></Cell>
+    <Cell><Data ss:Type="String">%1-%2 lisättyä salamavauriota taikoihin</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_eim_lightning_damage_weapon</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">%1-%2 Lightning Damage added to Attacks</Data></Cell>
+    <Cell><Data ss:Type="String">%1-%2 lisättyä salamavauriota hyökkäyksiin</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_eim_lightning_resistance</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">%1 Lightning Resistance</Data></Cell>
+    <Cell><Data ss:Type="String">%1 salaman vastustuskykyyn</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_eim_umbra_to_rage_transfer_percent</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">%1 Transfer Time from Umbra to Rage+LC:L(22)C</Data></Cell>
+    <Cell><Data ss:Type="String">%1 muutos aika Umbrasta raivoon</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_eim_umbra_to_rage_transfer_pts</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">%1-%2 Transfer Time from Umbra to Rage</Data></Cell>
+    <Cell><Data ss:Type="String">%1-%2 muutos aika Umbrasta raivoon</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_eim_physicalchance_on_physical_damage_flat</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">%1 Stun Chance on Physical Damage</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">%1 tainnutksen mahdollisuus kun teet fyysistä vauriota</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_eim_physical_damage_percent</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">%1 Physical Damage</Data></Cell>
+    <Cell><Data ss:Type="String">%1 fyysiseen vaurioon</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_eim_physical_damage_spell</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">%1-%2 Physical Damage added to Spells</Data></Cell>
+    <Cell><Data ss:Type="String">%1-%2 lisättyä fyysistä vauriota taikoihin</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_eim_physical_damage_weapon</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">%1-%2 Physical Damage added to Attacks</Data></Cell>
+    <Cell><Data ss:Type="String">%1-%2 lisättyä fyysistä vauriota hyökkäyksiin</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_eim_physical_resistance</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">%1 Physical Resistance</Data></Cell>
+    <Cell><Data ss:Type="String">%1 fyysisen vaurion vastustuskykyyn</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_eim_poisonchance_on_poison_damage_flat</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">%1 Poison Chance on Toxic Damage</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">%1 myrkytyksen mahdollisuus kun teet myrkkyvauriota</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_eim_poison_damage_percent</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">%1 Toxic Damage</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">%1 myrkkyvaurioon</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_eim_poison_damage_spell</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">%1-%2 Toxic Damage added to Spells</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">%1-%2 lisättyä myrkkyvauriota taikoihin</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_eim_poison_damage_weapon</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">%1-%2 Toxic Damage added to Attacks</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">%1-%2 lisättyä myrkkyvauriota hyökkäyksiin</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_eim_poison_resistance</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">%1 Toxic Resistance</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">%1 myrkyn vastustuskykyyn</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_eim_rage_conservation_time</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">%1 Rage Conservation Time</Data></Cell>
+    <Cell><Data ss:Type="String">%1 raivon ylläpitämisaika</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_eim_rage_per_strike_percent</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">%1 Rage per Strike</Data></Cell>
+    <Cell><Data ss:Type="String">%1 raivoa / isku</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_eim_rage_per_strike_pts</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">%1 Rage per Strike</Data></Cell>
+    <Cell><Data ss:Type="String">%1 raivoa / isku</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_eim_rage_per_strike_when_empty</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">%1 Rage per Strike when your Rage is Empty</Data></Cell>
+    <Cell><Data ss:Type="String">%1 raivoa / isku kun raivosi on tyhjä</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_eim_rage_to_umbra_transfer_percent</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">%1 Transfer Time from Rage to Umbra</Data></Cell>
+    <Cell><Data ss:Type="String">%1 muutos aika raivosta Umbraan</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_eim_rage_to_umbra_transfer_pts</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">%1-%2 Transfer Time from Rage to Umbra</Data></Cell>
+    <Cell><Data ss:Type="String">%1-%2 muutos aika raivosta Umbraan</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_eim_sacredchance_on_sacred_damage_flat</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">%1 Weakness Chance on Sacred Damage</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">%1 heikkouden mahdollisuus kun teet siunattua vauriota</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_eim_sacred_damage_percent_spell</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">%1 Sacred Damage</Data></Cell>
+    <Cell><Data ss:Type="String">%1 f vaurioon</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_eim_sacred_damage_spell</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">%1-%2 Sacred Damage added to Spells</Data></Cell>
+    <Cell><Data ss:Type="String">%1-%2 lisättyä vauriota taikoihin</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_eim_sacred_damage_weapon</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">%1-%2&#160;Sacred Damage added to Attacks</Data></Cell>
+    <Cell><Data ss:Type="String">%1-%2 lisättyä vauriota hyökkäyksiin</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_eim_sacred_resistance</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">%1 Sacred Resistance</Data></Cell>
+    <Cell><Data ss:Type="String">%1 siunatun vaurion vastustyskykyyn</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_eim_shadowchance_on_shadow_damage_flat</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">%1 Shaded Chance on Shadow Damage</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">%1 kirouksen mahdollisuus kun teet varjovauriota</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_eim_shadow_damage_percent</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">%1 Shadows Damage</Data></Cell>
+    <Cell><Data ss:Type="String">%1 varjovaurioon</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_eim_shadow_damage_spell</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">%1-%2 Shadows Damage added to Spells</Data></Cell>
+    <Cell><Data ss:Type="String">%1-%2 lisättyä varjovauriota taikoihin</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_eim_shadow_damage_weapon</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">%1-%2 Shadow Damage added to Attacks</Data></Cell>
+    <Cell><Data ss:Type="String">%1-%2 lisättyä varjovauriota hyökkäyksiin</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_eim_shadow_resistance</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">%1 Shadow Resistance</Data></Cell>
+    <Cell><Data ss:Type="String">%1 varjovaurion vastustuskykyyn</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_eim_spellcastingspeed</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">%1 Spell Casting Speed</Data></Cell>
+    <Cell><Data ss:Type="String">%1 taikomisnopeuteen</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_eim_skillrequirement_keyword_sacred</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">Allows the Bearer to Cast Sacred Spells</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">Salli kantajan taikoa siunattuja taikoja</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_eim_toughness_pts</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">%1 Toughness</Data></Cell>
+    <Cell><Data ss:Type="String">%1 sitkeyteen</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_eim_umbrachance_on_umbra_damage_flat</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">%1 Stasis Chance on Umbra Damage</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">%1 hitauden mahdollisuus kun teet Umbra vauriota</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_eim_umbra_damage_percent</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">%1 Umbra Damage</Data></Cell>
+    <Cell><Data ss:Type="String">%1 f vaurioon</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">ui_eim_umbra_damage_spell</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">%1-%2 Umbra Damage added to Spells</Data></Cell>
+    <Cell><Data ss:Type="String">%1-%2 lisättyä vauriota taikoihin</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">ui_eim_umbra_damage_weapon</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">%1-%2 Umbra Damage added to Attacks</Data></Cell>
+    <Cell><Data ss:Type="String">%1-%2 lisättyä vauriota hyökkäyksiin</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">ui_eim_umbra_regen_percent</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">%1 Umbra Regeneration</Data></Cell>
+    <Cell><Data ss:Type="String">%1 Umbran palautumisnopeuteen</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">ui_eim_umbra_resistance</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">%1 Umbra Resistance</Data></Cell>
+    <Cell><Data ss:Type="String">%1 Umbra vaurion vastustuskykyyn</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">ui_eim_willpower_pts</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">%1 Willpower</Data></Cell>
+    <Cell><Data ss:Type="String">%1 tahdonvoimaan</Data></Cell>
+   </Row>
+   <Row ss:Index="98" ss:AutoFitHeight="0" ss:Height="20" ss:Span="31"/>
+   <Row ss:Index="133" ss:AutoFitHeight="0" ss:Height="15.75" ss:Span="8"/>
+   <Row ss:Index="142" ss:AutoFitHeight="0" ss:Height="15" ss:Span="2"/>
+   <Row ss:Index="145" ss:AutoFitHeight="0" ss:Height="15.75" ss:Span="5"/>
+   <Row ss:Index="151" ss:AutoFitHeight="0" ss:Height="15" ss:Span="2"/>
+   <Row ss:Index="154" ss:AutoFitHeight="0" ss:Height="15.75" ss:Span="505"/>
+   <Row ss:Index="660" ss:AutoFitHeight="0" ss:Height="15" ss:Span="405"/>
+   <Row ss:Index="1094" ss:AutoFitHeight="0" ss:Height="25.5"/>
+   <Row ss:AutoFitHeight="0" ss:Height="15" ss:Span="2"/>
+   <Row ss:Index="1098" ss:AutoFitHeight="0" ss:Height="25.5" ss:Span="78"/>
+   <Row ss:Index="1177" ss:AutoFitHeight="0" ss:Height="18"/>
+   <Row ss:AutoFitHeight="0" ss:Height="25.5"/>
+   <Row ss:AutoFitHeight="0" ss:Height="15" ss:Span="2"/>
+   <Row ss:Index="1182" ss:AutoFitHeight="0" ss:Height="25.5" ss:Span="2"/>
+   <Row ss:Index="1185" ss:AutoFitHeight="0" ss:Height="15" ss:Span="3"/>
+   <Row ss:Index="1189" ss:AutoFitHeight="0" ss:Height="25.5" ss:Span="2"/>
+   <Row ss:Index="1192" ss:AutoFitHeight="0" ss:Height="15" ss:Span="3"/>
+   <Row ss:Index="1196" ss:AutoFitHeight="0" ss:Height="25.5" ss:Span="2"/>
+   <Row ss:Index="1199" ss:AutoFitHeight="0" ss:Height="15" ss:Span="13"/>
+   <Row ss:Index="1213" ss:AutoFitHeight="0" ss:Height="38.25"/>
+   <Row ss:AutoFitHeight="0" ss:Height="51"/>
+   <Row ss:AutoFitHeight="0" ss:Height="25.5"/>
+   <Row ss:AutoFitHeight="0" ss:Height="38.25" ss:Span="1"/>
+   <Row ss:Index="1218" ss:AutoFitHeight="0" ss:Height="15"/>
+   <Row ss:AutoFitHeight="0" ss:Height="25.5" ss:Span="2"/>
+   <Row ss:Index="1222" ss:AutoFitHeight="0" ss:Height="15" ss:Span="3"/>
+   <Row ss:Index="1226" ss:AutoFitHeight="0" ss:Height="25.5"/>
+   <Row ss:AutoFitHeight="0" ss:Height="63.75"/>
+   <Row ss:AutoFitHeight="0" ss:Height="47.25"/>
+   <Row ss:AutoFitHeight="0" ss:Height="51"/>
+   <Row ss:AutoFitHeight="0" ss:Height="45"/>
+   <Row ss:AutoFitHeight="0" ss:Height="38.25"/>
+   <Row ss:AutoFitHeight="0" ss:Height="25.5"/>
+   <Row ss:AutoFitHeight="0" ss:Height="15" ss:Span="1"/>
+   <Row ss:Index="1235" ss:AutoFitHeight="0" ss:Height="25.5"/>
+   <Row ss:AutoFitHeight="0" ss:Height="15" ss:Span="1"/>
+   <Row ss:Index="1238" ss:AutoFitHeight="0" ss:Height="25.5"/>
+   <Row ss:AutoFitHeight="0" ss:Height="15" ss:Span="2"/>
+   <Row ss:Index="1242" ss:AutoFitHeight="0" ss:Height="25.5"/>
+   <Row ss:AutoFitHeight="0" ss:Height="75.75"/>
+   <Row ss:AutoFitHeight="0" ss:Height="15"/>
+   <Row ss:AutoFitHeight="0" ss:Height="85.5"/>
+   <Row ss:AutoFitHeight="0" ss:Height="25.5"/>
+   <Row ss:AutoFitHeight="0" ss:Height="38.25"/>
+   <Row ss:AutoFitHeight="0" ss:Height="15"/>
+   <Row ss:AutoFitHeight="0" ss:Height="25.5"/>
+   <Row ss:AutoFitHeight="0" ss:Height="15"/>
+   <Row ss:AutoFitHeight="0" ss:Height="25.5"/>
+   <Row ss:AutoFitHeight="0" ss:Height="15" ss:Span="3"/>
+   <Row ss:Index="1256" ss:AutoFitHeight="0" ss:Height="25.5" ss:Span="1"/>
+   <Row ss:Index="1258" ss:AutoFitHeight="0" ss:Height="15"/>
+   <Row ss:AutoFitHeight="0" ss:Height="25.5"/>
+   <Row ss:AutoFitHeight="0" ss:Height="15"/>
+   <Row ss:AutoFitHeight="0" ss:Height="25.5"/>
+   <Row ss:AutoFitHeight="0" ss:Height="15" ss:Span="2"/>
+   <Row ss:Index="1265" ss:AutoFitHeight="0" ss:Height="25.5" ss:Span="4"/>
+   <Row ss:Index="1270" ss:AutoFitHeight="0" ss:Height="15"/>
+   <Row ss:AutoFitHeight="0" ss:Height="25.5"/>
+   <Row ss:AutoFitHeight="0" ss:Height="15" ss:Span="1"/>
+   <Row ss:Index="1274" ss:AutoFitHeight="0" ss:Height="25.5" ss:Span="3"/>
+   <Row ss:Index="1278" ss:AutoFitHeight="0" ss:Height="15" ss:Span="1"/>
+   <Row ss:Index="1280" ss:AutoFitHeight="0" ss:Height="25.5" ss:Span="2"/>
+   <Row ss:Index="1283" ss:AutoFitHeight="0" ss:Height="15" ss:Span="3"/>
+   <Row ss:Index="1287" ss:AutoFitHeight="0" ss:Height="25.5" ss:Span="1"/>
+   <Row ss:Index="1289" ss:AutoFitHeight="0" ss:Height="15"/>
+   <Row ss:AutoFitHeight="0" ss:Height="25.5"/>
+   <Row ss:AutoFitHeight="0" ss:Height="38.25" ss:Span="1"/>
+   <Row ss:Index="1293" ss:AutoFitHeight="0" ss:Height="15" ss:Span="2"/>
+   <Row ss:Index="1296" ss:AutoFitHeight="0" ss:Height="25.5" ss:Span="6"/>
+   <Row ss:Index="1303" ss:AutoFitHeight="0" ss:Height="38.25"/>
+   <Row ss:AutoFitHeight="0" ss:Height="25.5" ss:Span="1"/>
+   <Row ss:Index="1306" ss:AutoFitHeight="0" ss:Height="38.25"/>
+   <Row ss:AutoFitHeight="0" ss:Height="25.5"/>
+   <Row ss:AutoFitHeight="0" ss:Height="15" ss:Span="6"/>
+   <Row ss:Index="1315" ss:AutoFitHeight="0" ss:Height="25.5" ss:Span="6"/>
+   <Row ss:Index="1322" ss:AutoFitHeight="0" ss:Height="15" ss:Span="73"/>
+  </Table>
+  <WorksheetOptions xmlns="urn:schemas-microsoft-com:office:excel">
+   <PageSetup>
+    <Layout x:Orientation="Landscape"/>
+    <Header x:Margin="0.51181102362204722"
+     x:Data="&amp;LTime restriction sample script"/>
+    <Footer x:Margin="0.51181102362204722" x:Data="Page &amp;P"/>
+    <PageMargins x:Bottom="0.98425196850393704" x:Left="0" x:Right="0"
+     x:Top="0.98425196850393704"/>
+   </PageSetup>
+   <Unsynced/>
+   <Print>
+    <ValidPrinterInfo/>
+    <PaperSizeIndex>9</PaperSizeIndex>
+    <Scale>70</Scale>
+    <HorizontalResolution>600</HorizontalResolution>
+    <VerticalResolution>600</VerticalResolution>
+   </Print>
+   <Zoom>85</Zoom>
+   <Selected/>
+   <TopRowVisible>45</TopRowVisible>
+   <Panes>
+    <Pane>
+     <Number>3</Number>
+     <ActiveRow>80</ActiveRow>
+     <ActiveCol>2</ActiveCol>
+    </Pane>
+   </Panes>
+   <ProtectObjects>False</ProtectObjects>
+   <ProtectScenarios>False</ProtectScenarios>
+  </WorksheetOptions>
+ </Worksheet>
+</Workbook>

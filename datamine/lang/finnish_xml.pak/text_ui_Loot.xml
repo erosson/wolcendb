@@ -1,0 +1,3055 @@
+<?xml version="1.0"?>
+<?mso-application progid="Excel.Sheet"?>
+<Workbook xmlns="urn:schemas-microsoft-com:office:spreadsheet"
+ xmlns:o="urn:schemas-microsoft-com:office:office"
+ xmlns:x="urn:schemas-microsoft-com:office:excel"
+ xmlns:ss="urn:schemas-microsoft-com:office:spreadsheet"
+ xmlns:html="http://www.w3.org/TR/REC-html40">
+ <DocumentProperties xmlns="urn:schemas-microsoft-com:office:office">
+  <Title>Audio script template</Title>
+  <Author>Maëlenn Lumineau</Author>
+  <LastAuthor>Jarkko Vatjus-Anttila</LastAuthor>
+  <LastPrinted>2003-10-30T09:38:41Z</LastPrinted>
+  <Created>2002-06-17T19:14:00Z</Created>
+  <LastSaved>2018-11-09T16:52:03Z</LastSaved>
+  <Company>Electronic Arts</Company>
+  <Version>16.00</Version>
+ </DocumentProperties>
+ <OfficeDocumentSettings xmlns="urn:schemas-microsoft-com:office:office">
+  <AllowPNG/>
+ </OfficeDocumentSettings>
+ <ExcelWorkbook xmlns="urn:schemas-microsoft-com:office:excel">
+  <SupBook>
+   <Path>\DOCUME~1\jack\LOCALS~1\Temp\p4v\PC025 perforce 1666\data\Game02\Game\Languages\Copy of Dialog_Asset_List_Final_edit.xls</Path>
+   <SheetName>DropDown</SheetName>
+   <SheetName>Conversations</SheetName>
+   <Xct>
+    <Count>2</Count>
+    <SheetIndex>0</SheetIndex>
+    <Crn>
+     <Row>6</Row>
+     <ColFirst>0</ColFirst>
+     <ColLast>4</ColLast>
+     <Text>clean</Text>
+     <Text>TV</Text>
+     <Text>radio (disturbed) </Text>
+     <Text>radio (low)</Text>
+     <Text>radio (heavy)</Text>
+    </Crn>
+    <Crn>
+     <Row>9</Row>
+     <ColFirst>0</ColFirst>
+     <ColLast>41</ColLast>
+     <Text>Player</Text>
+     <Text>Barnes</Text>
+     <Text>Hawker</Text>
+     <Text>Sykes</Text>
+     <Text>Johnson</Text>
+     <Text>Cortez</Text>
+     <Text>Beck</Text>
+     <Text>Miller</Text>
+     <Text>Baxter</Text>
+     <Text>American scientist</Text>
+     <Text>Shark</Text>
+     <Text>Chia</Text>
+     <Text>Kirovski</Text>
+     <Text>Michaels</Text>
+     <Text>Chang</Text>
+     <Text>Marine Soldier a</Text>
+     <Text>Marine Soldier b</Text>
+     <Text>Chinese Soldier a</Text>
+     <Text>Chinese Soldier b</Text>
+     <Text>Chinese Soldier c</Text>
+     <Text>Chinese Soldier d</Text>
+     <Text>Chinese Soldier e</Text>
+     <Text>Chinese Soldier f</Text>
+     <Text>Chinese Officer a</Text>
+     <Text>Chinese Officer b</Text>
+     <Text>Chinese Scientist a</Text>
+     <Text>Chinese Scientist b</Text>
+     <Text>Chinese Scientist Female a</Text>
+     <Text>Chinese Scientist Female b</Text>
+     <Text>Filmcrew Member</Text>
+     <Text>Morrison</Text>
+     <Text>C17 Pilot a</Text>
+     <Text>C17 Pilot b</Text>
+     <Text>Submarine Commander Davis</Text>
+     <Text>Pilot (camera)</Text>
+     <Text>Bridge officer 1</Text>
+     <Text>Bridge officer 2</Text>
+     <Text>Carrier deck guide</Text>
+     <Text>Jet Pilot</Text>
+     <Text>VTOL Pilot</Text>
+     <Text>Commander (camera)</Text>
+     <Text>Team Two (camera)</Text>
+    </Crn>
+   </Xct>
+  </SupBook>
+  <WindowHeight>14565</WindowHeight>
+  <WindowWidth>28800</WindowWidth>
+  <WindowTopX>32767</WindowTopX>
+  <WindowTopY>32767</WindowTopY>
+  <TabRatio>274</TabRatio>
+  <RefModeR1C1/>
+  <ProtectStructure>False</ProtectStructure>
+  <ProtectWindows>False</ProtectWindows>
+ </ExcelWorkbook>
+ <Styles>
+  <Style ss:ID="Default" ss:Name="Normal">
+   <Alignment ss:Vertical="Bottom"/>
+   <Borders/>
+   <Font ss:FontName="Arial" x:Family="Swiss"/>
+   <Interior/>
+   <NumberFormat/>
+   <Protection/>
+  </Style>
+  <Style ss:ID="s40" ss:Name="40&#160;% - Accent1">
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="11" ss:Color="#000000"/>
+   <Interior ss:Color="#BDD7EE" ss:Pattern="Solid"/>
+  </Style>
+  <Style ss:ID="s27" ss:Name="Insatisfaisant">
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="11" ss:Color="#800000"/>
+   <Interior ss:Color="#FFC7CE" ss:Pattern="Solid"/>
+  </Style>
+  <Style ss:ID="s28" ss:Name="Neutre">
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="11" ss:Color="#993300"/>
+   <Interior ss:Color="#FFEB9C" ss:Pattern="Solid"/>
+  </Style>
+  <Style ss:ID="s26" ss:Name="Satisfaisant">
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="11" ss:Color="#008000"/>
+   <Interior ss:Color="#C6EFCE" ss:Pattern="Solid"/>
+  </Style>
+  <Style ss:ID="m545143016" ss:Parent="s40">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Bottom" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="2"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="2"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="2"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="2"/>
+   </Borders>
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="11" ss:Color="#000000"
+    ss:Bold="1"/>
+  </Style>
+  <Style ss:ID="m545143036" ss:Parent="s40">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Bottom" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="2"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="2"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="2"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="2"/>
+   </Borders>
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="11" ss:Color="#000000"
+    ss:Bold="1"/>
+  </Style>
+  <Style ss:ID="m545143056" ss:Parent="s40">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Bottom" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="2"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="2"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="2"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="2"/>
+   </Borders>
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="11" ss:Color="#000000"
+    ss:Bold="1"/>
+  </Style>
+  <Style ss:ID="m545143076" ss:Parent="s40">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Bottom" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="2"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="2"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="2"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="2"/>
+   </Borders>
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="11" ss:Color="#000000"
+    ss:Bold="1"/>
+  </Style>
+  <Style ss:ID="m545143096" ss:Parent="s40">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Bottom" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="2"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="2"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="2"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="2"/>
+   </Borders>
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="11" ss:Color="#000000"
+    ss:Bold="1"/>
+  </Style>
+  <Style ss:ID="m545143116" ss:Parent="s40">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Bottom" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="2"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="2"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="2"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="2"/>
+   </Borders>
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="11" ss:Color="#000000"
+    ss:Bold="1"/>
+  </Style>
+  <Style ss:ID="m545148216" ss:Parent="s40">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Bottom" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="2"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="2"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="2"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="2"/>
+   </Borders>
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="11" ss:Color="#000000"
+    ss:Bold="1"/>
+  </Style>
+  <Style ss:ID="m545148236" ss:Parent="s40">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Bottom" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="2"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="2"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="2"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="2"/>
+   </Borders>
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="11" ss:Color="#000000"
+    ss:Bold="1"/>
+  </Style>
+  <Style ss:ID="m545148256" ss:Parent="s40">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Bottom" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="2"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="2"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="2"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="2"/>
+   </Borders>
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="11" ss:Color="#000000"
+    ss:Bold="1"/>
+  </Style>
+  <Style ss:ID="m545148276" ss:Parent="s40">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Bottom" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="2"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="2"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="2"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="2"/>
+   </Borders>
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="11" ss:Color="#000000"
+    ss:Bold="1"/>
+  </Style>
+  <Style ss:ID="m545148296" ss:Parent="s40">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Bottom" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="2"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="2"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="2"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="2"/>
+   </Borders>
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="11" ss:Color="#000000"
+    ss:Bold="1"/>
+  </Style>
+  <Style ss:ID="m545148316" ss:Parent="s40">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Bottom" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="2"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="2"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="2"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="2"/>
+   </Borders>
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="11" ss:Color="#000000"
+    ss:Bold="1"/>
+  </Style>
+  <Style ss:ID="s62">
+   <Font ss:FontName="Arial" x:Family="Swiss"/>
+  </Style>
+  <Style ss:ID="s63">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Top" ss:WrapText="1"/>
+   <Borders/>
+   <Font ss:FontName="Arial" x:Family="Swiss"/>
+  </Style>
+  <Style ss:ID="s64">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Top" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Courier New" x:Family="Modern" ss:Color="#FFFFFF" ss:Bold="1"/>
+   <Interior ss:Color="#FFCC00" ss:Pattern="Solid"/>
+  </Style>
+  <Style ss:ID="s65">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Top" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Courier New" x:Family="Modern" ss:Color="#FFFFFF" ss:Bold="1"/>
+   <Interior ss:Color="#FF0000" ss:Pattern="Solid"/>
+  </Style>
+  <Style ss:ID="s77" ss:Parent="s40">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Bottom" ss:WrapText="1"/>
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="11" ss:Color="#000000"
+    ss:Italic="1"/>
+  </Style>
+  <Style ss:ID="s78" ss:Parent="s40">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Bottom" ss:WrapText="1"/>
+  </Style>
+  <Style ss:ID="s85" ss:Parent="s27">
+   <Alignment ss:Vertical="Bottom"/>
+   <Borders/>
+   <NumberFormat/>
+   <Protection/>
+  </Style>
+  <Style ss:ID="s86" ss:Parent="s40">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Bottom" ss:WrapText="1"/>
+   <Borders/>
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="11" ss:Color="#000000"
+    ss:Bold="1"/>
+  </Style>
+  <Style ss:ID="s87" ss:Parent="s28">
+   <Alignment ss:Vertical="Bottom" ss:WrapText="1"/>
+  </Style>
+  <Style ss:ID="s88" ss:Parent="s40">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Bottom" ss:WrapText="1"/>
+   <NumberFormat ss:Format="Short Time"/>
+  </Style>
+  <Style ss:ID="s89" ss:Parent="s40">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Bottom" ss:WrapText="1"/>
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="11" ss:Color="#000000"/>
+  </Style>
+  <Style ss:ID="s90" ss:Parent="s26">
+   <Borders/>
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="11" ss:Color="#008000"/>
+  </Style>
+  <Style ss:ID="s91" ss:Parent="s27">
+   <Borders/>
+  </Style>
+  <Style ss:ID="s92" ss:Parent="s26">
+   <Borders/>
+  </Style>
+  <Style ss:ID="s93" ss:Parent="s28">
+   <Borders/>
+  </Style>
+  <Style ss:ID="s95" ss:Parent="s26">
+   <NumberFormat ss:Format="0%"/>
+  </Style>
+ </Styles>
+ <Names>
+  <NamedRange ss:Name="characters"
+   ss:RefersTo="='\DOCUME~1\jack\LOCALS~1\Temp\p4v\PC025 perforce 1666\data\Game02\Game\Languages\[Copy of Dialog_Asset_List_Final_edit.xls]DropDown'!R10C1:R10C42"/>
+  <NamedRange ss:Name="type"
+   ss:RefersTo="='\DOCUME~1\jack\LOCALS~1\Temp\p4v\PC025 perforce 1666\data\Game02\Game\Languages\[Copy of Dialog_Asset_List_Final_edit.xls]DropDown'!R7C1:R7C5"/>
+ </Names>
+ <Worksheet ss:Name="Sheet1">
+  <Names>
+   <NamedRange ss:Name="Print_Area" ss:RefersTo="=Sheet1!R1C2:R1C3"/>
+  </Names>
+  <Table ss:ExpandedColumnCount="4" ss:ExpandedRowCount="540" x:FullColumns="1"
+   x:FullRows="1" ss:StyleID="s62" ss:DefaultColumnWidth="60"
+   ss:DefaultRowHeight="12.5625">
+   <Column ss:StyleID="s62" ss:AutoFitWidth="0" ss:Width="243"/>
+   <Column ss:StyleID="s62" ss:Width="291.75"/>
+   <Column ss:StyleID="s62" ss:AutoFitWidth="0" ss:Width="369.75"/>
+   <Column ss:StyleID="s62" ss:AutoFitWidth="0" ss:Width="160.5"/>
+   <Row ss:AutoFitHeight="0" ss:Height="14.25" ss:StyleID="s63">
+    <Cell ss:StyleID="s64"><Data ss:Type="String">KEY</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">ORIGINAL TEXT</Data><NamedCell
+      ss:Name="Print_Area"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">TRANSLATED TEXT</Data><NamedCell
+      ss:Name="Print_Area"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:MergeAcross="2" ss:StyleID="m545148216"><Data ss:Type="String">WEAPONS </Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15" ss:StyleID="Default">
+    <Cell ss:StyleID="s77"><Data ss:Type="String">Shields</Data></Cell>
+    <Cell ss:StyleID="s78"/>
+    <Cell ss:StyleID="s78" ss:Formula="=IF(RC[-1]&lt;&gt;&quot;&quot;,RC[-1],&quot;&quot;)"><Data
+      ss:Type="String"></Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15" ss:StyleID="Default">
+    <Cell><Data ss:Type="String">ui_Weapon_Shield_T1</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">Wooden Shield</Data></Cell>
+    <Cell><Data ss:Type="String">Puinen kilpi</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15" ss:StyleID="Default">
+    <Cell><Data ss:Type="String">ui_Weapon_Shield_T2</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">Targe</Data></Cell>
+    <Cell><Data ss:Type="String">Targe</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15" ss:StyleID="Default">
+    <Cell ss:StyleID="s77"><Data ss:Type="String">2H Axes</Data></Cell>
+    <Cell ss:StyleID="s78"/>
+    <Cell ss:StyleID="s78"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15" ss:StyleID="Default">
+    <Cell><Data ss:Type="String">ui_Weapon_2HAxe_T1</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">Broad Axe</Data></Cell>
+    <Cell><Data ss:Type="String">Leveä kirves</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15" ss:StyleID="Default">
+    <Cell><Data ss:Type="String">ui_Weapon_2HAxe_T2</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">Great Axe</Data></Cell>
+    <Cell><Data ss:Type="String">Suurkirves</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15" ss:StyleID="Default">
+    <Cell ss:StyleID="s77"><Data ss:Type="String">1H Axes</Data></Cell>
+    <Cell ss:StyleID="s78"/>
+    <Cell ss:StyleID="s78"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15" ss:StyleID="Default">
+    <Cell><Data ss:Type="String">ui_Weapon_1HAxe_T1</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">Axe</Data></Cell>
+    <Cell><Data ss:Type="String">Kirves</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15" ss:StyleID="Default">
+    <Cell><Data ss:Type="String">ui_Weapon_1HAxe_T2</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">War Axe</Data></Cell>
+    <Cell><Data ss:Type="String">Sotakirves</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15" ss:StyleID="Default">
+    <Cell ss:StyleID="s77"><Data ss:Type="String">Crossbows</Data></Cell>
+    <Cell ss:StyleID="s78"/>
+    <Cell ss:StyleID="s78"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15" ss:StyleID="Default">
+    <Cell ss:Index="2" ss:StyleID="s27"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15" ss:StyleID="Default">
+    <Cell ss:StyleID="s77"><Data ss:Type="String">Bows</Data></Cell>
+    <Cell ss:StyleID="s78"/>
+    <Cell ss:StyleID="s78"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15" ss:StyleID="Default">
+    <Cell><Data ss:Type="String">ui_Weapon_Bow_T1</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">Longbow</Data></Cell>
+    <Cell><Data ss:Type="String">Pitkä jousi</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15" ss:StyleID="Default">
+    <Cell><Data ss:Type="String">ui_Weapon_Bow_T2</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">Skirmish Bow</Data></Cell>
+    <Cell><Data ss:Type="String">Kahakka jousi</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15" ss:StyleID="Default">
+    <Cell ss:StyleID="s77"><Data ss:Type="String">Daggers</Data></Cell>
+    <Cell ss:StyleID="s78"/>
+    <Cell ss:StyleID="s78"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15" ss:StyleID="Default">
+    <Cell><Data ss:Type="String">ui_Weapon_1HDagger_T1</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">Gutting Knife</Data></Cell>
+    <Cell><Data ss:Type="String">Nylkypuukko</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15" ss:StyleID="Default">
+    <Cell><Data ss:Type="String">ui_Weapon_1HDagger_T2</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">Poignard</Data></Cell>
+    <Cell><Data ss:Type="String">Tikari</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15" ss:StyleID="Default">
+    <Cell ss:StyleID="s77"><Data ss:Type="String">2H Hammers</Data></Cell>
+    <Cell ss:StyleID="s78"/>
+    <Cell ss:StyleID="s78"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15" ss:StyleID="Default">
+    <Cell><Data ss:Type="String">ui_Weapon_2HHammer_T1</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">Warhammer</Data></Cell>
+    <Cell><Data ss:Type="String">Sotakirves</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15" ss:StyleID="Default">
+    <Cell><Data ss:Type="String">ui_Weapon_2HHammer_T2</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">Great Mace</Data></Cell>
+    <Cell><Data ss:Type="String">Suurnuija</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15" ss:StyleID="Default">
+    <Cell ss:StyleID="s77"><Data ss:Type="String">1H Hammers</Data></Cell>
+    <Cell ss:StyleID="s78"/>
+    <Cell ss:StyleID="s78"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15" ss:StyleID="Default">
+    <Cell><Data ss:Type="String">ui_Weapon_1HHammer_T1</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">Morningstar</Data></Cell>
+    <Cell><Data ss:Type="String">Aamutähti</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15" ss:StyleID="Default">
+    <Cell><Data ss:Type="String">ui_Weapon_1HHammer_T2</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">Jagged Star</Data></Cell>
+    <Cell><Data ss:Type="String">Lovettu tähti</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15" ss:StyleID="Default">
+    <Cell ss:StyleID="s77"><Data ss:Type="String">1H Swords</Data></Cell>
+    <Cell ss:StyleID="s78"/>
+    <Cell ss:StyleID="s78"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15" ss:StyleID="Default">
+    <Cell><Data ss:Type="String">ui_Weapon_1HSword_T1</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">Longsword</Data></Cell>
+    <Cell><Data ss:Type="String">Pitkämiekka</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15" ss:StyleID="Default">
+    <Cell><Data ss:Type="String">ui_Weapon_1HSword_T2</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">Gladius</Data></Cell>
+    <Cell><Data ss:Type="String">Keihäs</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15" ss:StyleID="Default">
+    <Cell ss:StyleID="s77"><Data ss:Type="String">2H Swords</Data></Cell>
+    <Cell ss:StyleID="s78"/>
+    <Cell ss:StyleID="s78"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15" ss:StyleID="Default">
+    <Cell><Data ss:Type="String">ui_Weapon_2HSword_T1</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">Claymore</Data></Cell>
+    <Cell><Data ss:Type="String">Lyömämiekka</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15" ss:StyleID="Default">
+    <Cell><Data ss:Type="String">ui_Weapon_2HSword_T2</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">Great Sword</Data></Cell>
+    <Cell><Data ss:Type="String">Suurmiekka</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15" ss:StyleID="Default">
+    <Cell ss:StyleID="s77"><Data ss:Type="String">Uniques</Data></Cell>
+    <Cell ss:StyleID="s78"/>
+    <Cell ss:StyleID="s78"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15" ss:StyleID="Default">
+    <Cell><Data ss:Type="String">ui_unique_bow_projectile</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">Saegath's Obsession</Data></Cell>
+    <Cell><Data ss:Type="String">Seagath:n pakkomielle</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15" ss:StyleID="Default">
+    <Cell><Data ss:Type="String">ui_unique_bow_projectile_lore</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">&lt;Font Size=&quot;15&quot; Color=&quot;#ccb270&quot;&gt;&lt;i&gt;&quot;The bow handle is engraved with a harrowing symbol, a seal of purity and zeal. Closer inspection reveals thirteen small markings on the bow wings, like if the previous owner was keeping track of a grim score. Whoever it was, its legacy is not meant to end here: time to start big game hunting and keep the death toll rolling.&quot;&lt;/i&gt;&lt;/Font&gt;</Data></Cell>
+    <Cell ss:StyleID="s27"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15" ss:StyleID="Default">
+    <Cell><Data ss:Type="String">ui_unique_shield_sacred</Data></Cell>
+    <Cell ss:StyleID="s28"><Data ss:Type="String">Quintet of Sundowns</Data></Cell>
+    <Cell ss:StyleID="s27"><Data ss:Type="String">Auringonlaskujen kvintetti</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15" ss:StyleID="Default">
+    <Cell><Data ss:Type="String">ui_unique_shield_sacred_lore</Data></Cell>
+    <Cell ss:StyleID="s28"><Data ss:Type="String">&lt;Font Size=&quot;15&quot; Color=&quot;#ccb270&quot;&gt;&lt;i&gt;&quot;The combat was fierce, but Brother Amren eventually met his end, crushed by the demon as his lifeless body was thrown across Greyharbour’s street. Yet, hope was not to die with the battle-priest.\n\nOne of the four fishermen he was defending stepped forward and picked-up his shield to continue the fight. With him, the three other common-men charged the wounded demon while shouting their fear away. Neither the fishermen nor the demon survived the battle.\n\nAn ode to these men’s sacrifice was engraved by the Brotherhood of Dawn on the edges of Amren’s aegis. This beacon of hope now awaits a new bearer worthy to keep up the fight against evil.&quot;&lt;/i&gt;&lt;/Font&gt;</Data></Cell>
+    <Cell ss:StyleID="s27"><Data ss:Type="String">&lt;Font Size=&quot;15&quot; Color=&quot;#ccb270&quot;&gt;&lt;i&gt;&quot;Taistelu oli raju, mutta Veli Amren lopulta kohtasi loppunsa. Demonin murskaamana hänen eloton ruumiinsa heitettiin yli Greyharbourin katujen. Siitä huolimatta, toivo ei kuollut tämän taistelupapin mukana.\n\nYksi hänen puolustamistaan kalastajista otti hänen kilpensä ja jatkoi taistelua. Hänen tukenaan, kolme muuta kansalaista hyökkäsivät demonin kimppuun huutaen pelkonsa pois. Sen paremmin kalastajat kuin demonikaan eivät selvinneet taistelusta.\n\nOodi näiden miesten uhraukselle kaiverrettiin Aamun ritarikunnan toimesta Amren:n keitaan laidalle. Tämä toivon majakka odottaa kantajaansa, jotta taistelu pahaa vastaan voi jatkua.&quot;&lt;/i&gt;&lt;/Font&gt;</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15" ss:StyleID="Default">
+    <Cell><Data ss:Type="String">ui_unique_fire_sword</Data></Cell>
+    <Cell ss:StyleID="s28"><Data ss:Type="String">Vulcaïn Steel Sword</Data></Cell>
+    <Cell ss:StyleID="s27"><Data ss:Type="String">Vulcaïn Teräsmiekka</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15" ss:StyleID="Default">
+    <Cell><Data ss:Type="String">ui_unique_fire_sword_lore</Data></Cell>
+    <Cell ss:StyleID="s28"><Data ss:Type="String">&lt;Font Size=&quot;15&quot; Color=&quot;#ccb270&quot;&gt;&lt;i&gt;There is one city that makes the best steel in the four realms: Vulcaïn’s deep forge. This city-state is nested inside a Volcano. It grants their deepest forge a temperature so hot that it can melt, blend and purify the best metals. The resulting steel is pure, strong, and extremely sharp. To defend the city, their elite infantry are given rough jagged versions which captured some of the lava they were forged in. &lt;/i&gt;&lt;/Font&gt;</Data></Cell>
+    <Cell ss:StyleID="s27"><Data ss:Type="String">&lt;Font Size=&quot;15&quot; Color=&quot;#ccb270&quot;&gt;&lt;i&gt;Vain yhdessä kaupungissa tehdään parasta terästä kaikista neljästä maailmasta: Vulcaïn syvä ahjo. Tämä kaupungin osa on tulivuoren sisällä. Sen syvä ahjo tarjoaa niin suuren kuumuuden että se sulattaa, sekoittaa ja puhdistaa parhaimmatkin metallit. Lopputuloksena teräs on puhdasta, vahvaa ja erittäin terävää. Puolustaaksen kaupunkia, vartioille on annettu näistä aseista karkealaitaisimmat, joissa on vielä jälkellä syvyyksystä mukana tullutta laavaa, jossa ne taottiin.&lt;/i&gt;&lt;/Font&gt;</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15" ss:StyleID="Default">
+    <Cell><Data ss:Type="String">ui_unique_stasis_staff</Data></Cell>
+    <Cell ss:StyleID="s28"><Data ss:Type="String">Time Seal</Data></Cell>
+    <Cell ss:StyleID="s27"><Data ss:Type="String">Aikasinetti</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15" ss:StyleID="Default">
+    <Cell><Data ss:Type="String">ui_unique_stasis_staff_lore</Data></Cell>
+    <Cell ss:StyleID="s28"><Data ss:Type="String">&lt;Font Size=&quot;15&quot; Color=&quot;#ccb270&quot;&gt;&lt;i&gt;Those who made a pact with Anulaï-Taï, Fallen Duke of Infinity, may rise inside the cult’s hierarchy and become a dreaded Time Devourer. Those sorcerers phase through space motionlessly while using their Time Seal to harness and destroy the normal continuum around them.&lt;/i&gt;&lt;/Font&gt;</Data></Cell>
+    <Cell ss:StyleID="s27"><Data ss:Type="String">&lt;Font Size=&quot;15&quot; Color=&quot;#ccb270&quot;&gt;&lt;i&gt;Ne, jotka taittavat matkaa Anulaï-Taï:n, langenneen äärettömyyden herttuan kanssa, voivat nousta kultin hierarkiassa ja tulla &quot;Ajan ahmijaksi&quot;. Nämä taikurit etenevät ajassa liikkumatta käyttäen aikasinettiiään tuhoten normaalin aikajakumon ympäriltään.&lt;/i&gt;&lt;/Font&gt;</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15" ss:StyleID="Default">
+    <Cell><Data ss:Type="String">ui_unique_rend_dagger</Data></Cell>
+    <Cell ss:StyleID="s28"><Data ss:Type="String">Goremaker, Shard of the Red Mountain</Data></Cell>
+    <Cell ss:StyleID="s27"><Data ss:Type="String">Goremaker, Punaisen vuoren sirpale</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15" ss:StyleID="Default">
+    <Cell><Data ss:Type="String">ui_unique_rend_dagger_lore</Data></Cell>
+    <Cell ss:StyleID="s28"><Data ss:Type="String">&lt;Font Size=&quot;15&quot; Color=&quot;#ccb270&quot;&gt;&lt;i&gt;During the war of the Primordials, the eternal lovers Anathëa and Moros organized an assault on the Red Mountain, throne of Ashtaroth the lord of Flesh. Amidst the raging battle, the ground quaked as they realized the landscape itself was alive and about to engulf everything. They had no other choice than to obliterate the whole organic mountain to survive. This, could very well be one of its shards that survived through the eons.&lt;/i&gt;&lt;/Font&gt;</Data></Cell>
+    <Cell ss:StyleID="s27"><Data ss:Type="String">&lt;Font Size=&quot;15&quot; Color=&quot;#ccb270&quot;&gt;&lt;i&gt;Muinaisten sodan aikana, ikuiset rakastajat: Anathëa ja Moros järjestivät salaiskun punaisella vuorella, joka oli Ashtaroth:n, lihan herran, valtaistuin. Huolimatta, maa järisi kun he huomasivat että maa itsessään oli elävä ja aikeissa nielaista kaikki sisälleen. Heillä ei ollut muuta mahdollisuutta kuin tuhota koko vuori selviytyäkseen. Tämä voi olla eräs ainokaisista sirpaleista jotka ovat selvinneet ikuisuuden läpi.&lt;/i&gt;&lt;/Font&gt;</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15" ss:StyleID="Default">
+    <Cell><Data ss:Type="String">ui_unique_2h_axe</Data></Cell>
+    <Cell ss:StyleID="s28"><Data ss:Type="String">Edgy</Data></Cell>
+    <Cell ss:StyleID="s85"><Data ss:Type="String">Teräkäs</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15" ss:StyleID="Default">
+    <Cell><Data ss:Type="String">ui_unique_2h_axe_lore</Data></Cell>
+    <Cell ss:StyleID="s28"><Data ss:Type="String">&lt;Font Size=&quot;15&quot; Color=&quot;#ccb270&quot;&gt;&lt;i&gt;Big Bill was a blacksmith apprentice. But repairing horses’ irons was boring for him, he dreamed himself as an evil-slashing hero with the sharpest axe the world had ever known. The blacksmithing prodigy got to work, every night he would hammer hard at the anvil, shaping his lethal ambitions into an axe he would call ‘Edgy’.\n\nRumor has it that Big Bill accidentally beheaded himself at night while training in the backyard. Yet, Edgy still remains a deadly work of art.&lt;/i&gt;&lt;/Font&gt;</Data></Cell>
+    <Cell ss:StyleID="s27"><Data ss:Type="String">&lt;Font Size=&quot;15&quot; Color=&quot;#ccb270&quot;&gt;&lt;i&gt;Iso-Bill oli sepän oppipoika. Hevosten vermeiden korjaaminen oli työsää hänenmielestään ja hän kuvittelikin itsensä pahaa vastaan taistelevaksi soturiksi, jolla oli terävin kirves mikä ikinä on ollut olemassa. Oppipoika kävi työhön: joka yö hän takoi vasten alasinta, valaen osaamisensa kirveeseen jota hän kutsui &quot;Teräkkääksi&quot;.\n\nHuhu kertoo, että Iso-Bill menetti päänsä eräänä yönä harjoitellessaan takapihallaan. Teräkäs on kuitenkin edellen erittäin terävä kappale taidetta.&lt;/i&gt;&lt;/Font&gt;</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15" ss:StyleID="Default">
+    <Cell ss:StyleID="s77"><Data ss:Type="String">Staves</Data></Cell>
+    <Cell ss:StyleID="s78"/>
+    <Cell ss:StyleID="s78"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15" ss:StyleID="Default">
+    <Cell><Data ss:Type="String">ui_Weapon_Staff_T1</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">Apprentice Staff</Data></Cell>
+    <Cell><Data ss:Type="String">Oppipojan sauva</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15" ss:StyleID="Default">
+    <Cell><Data ss:Type="String">ui_Weapon_Staff_T2</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">Tribal Staff</Data></Cell>
+    <Cell><Data ss:Type="String">Heimosauva</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15" ss:StyleID="Default">
+    <Cell ss:StyleID="s77"><Data ss:Type="String">Catalyst</Data></Cell>
+    <Cell ss:StyleID="s78"/>
+    <Cell ss:StyleID="s78"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15" ss:StyleID="Default">
+    <Cell><Data ss:Type="String">ui_Weapon_Catalyst_T1</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">Gris-Gris</Data></Cell>
+    <Cell><Data ss:Type="String">Gris-Gris</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15" ss:StyleID="Default">
+    <Cell><Data ss:Type="String">ui_Weapon_Catalyst_T2</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">Crystal Catalyst</Data></Cell>
+    <Cell><Data ss:Type="String">Kristalli katalyytti</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15" ss:StyleID="Default">
+    <Cell ss:StyleID="s77"><Data ss:Type="String">Pistols</Data></Cell>
+    <Cell ss:StyleID="s78"/>
+    <Cell ss:StyleID="s78"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15" ss:StyleID="Default">
+    <Cell><Data ss:Type="String">ui_Weapon_Pistol_T1</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">Pistol</Data></Cell>
+    <Cell><Data ss:Type="String">Pistooli</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75" ss:StyleID="Default">
+    <Cell><Data ss:Type="String">ui_Weapon_Pistol_T2</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">Dark Iron Pistol</Data></Cell>
+    <Cell><Data ss:Type="String">Musta rauta pistooli</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15" ss:StyleID="Default">
+    <Cell ss:MergeAcross="2" ss:StyleID="m545148236"><Data ss:Type="String">ARMOR TYPES</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15" ss:StyleID="Default">
+    <Cell><Data ss:Type="String">ui_ArmorTypePrisoner</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">Rags</Data></Cell>
+    <Cell><Data ss:Type="String">Riepu</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15" ss:StyleID="Default">
+    <Cell><Data ss:Type="String">ui_ArmorTypeTank</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">Heavy</Data></Cell>
+    <Cell><Data ss:Type="String">Raskas</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15" ss:StyleID="Default">
+    <Cell><Data ss:Type="String">ui_ArmorTypeWarrior</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">Bruiser</Data></Cell>
+    <Cell><Data ss:Type="String">Murskaaja</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15" ss:StyleID="Default">
+    <Cell><Data ss:Type="String">ui_ArmorTypeRogue</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">Rogue</Data></Cell>
+    <Cell><Data ss:Type="String">Varas</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15" ss:StyleID="Default">
+    <Cell><Data ss:Type="String">ui_ArmorTypeMage</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">Sorcerer</Data></Cell>
+    <Cell><Data ss:Type="String">Noita</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15" ss:StyleID="Default">
+    <Cell><Data ss:Type="String">ui_ArmorTypeAccessory</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">Accessory</Data></Cell>
+    <Cell><Data ss:Type="String">Lisävaruste</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15" ss:StyleID="Default">
+    <Cell ss:MergeAcross="2" ss:StyleID="m545148256"><Data ss:Type="String">ARMORS</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15" ss:StyleID="Default">
+    <Cell ss:StyleID="s77"><Data ss:Type="String">Uniques</Data></Cell>
+    <Cell ss:StyleID="s86"/>
+    <Cell ss:StyleID="s86"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15" ss:StyleID="Default">
+    <Cell><Data ss:Type="String">ui_Armor_Unique_Prisoner_Cuirass</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">Tattered Jerkin</Data></Cell>
+    <Cell><Data ss:Type="String">Rutteinen nahkanuttu</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15" ss:StyleID="Default">
+    <Cell><Data ss:Type="String">ui_Armor_Unique_Prisoner_Armguard</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">Broken Shackle</Data></Cell>
+    <Cell><Data ss:Type="String">Rikkoutunut kahle</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15" ss:StyleID="Default">
+    <Cell><Data ss:Type="String">ui_Armor_Unique_Prisoner_Greaves</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">Seedy Pants</Data></Cell>
+    <Cell><Data ss:Type="String">Rähjäiset housut</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15" ss:StyleID="Default">
+    <Cell><Data ss:Type="String">ui_Armor_Unique_Prisoner_Sollerets</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">Battered Boots</Data></Cell>
+    <Cell><Data ss:Type="String">Kolhiintuneet saappaat</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15" ss:StyleID="Default">
+    <Cell><Data ss:Type="String">ui_unique_poison</Data></Cell>
+    <Cell ss:StyleID="s28"><Data ss:Type="String">Sagarnäris</Data></Cell>
+    <Cell ss:StyleID="s27"><Data ss:Type="String">Sagarnäris</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15" ss:StyleID="Default">
+    <Cell><Data ss:Type="String">ui_unique_poison_lore</Data></Cell>
+    <Cell ss:StyleID="s87"><Data ss:Type="String">&lt;Font Size=&quot;15&quot; Color=&quot;#ccb270&quot;&gt;&lt;i&gt;Bezeriel grew fond of observing a young beautiful maiden, incarnating all there is to love about youth. Taking the shape of a swann, he offered her this ring to show his admiration for her.\n\nShe smiled as she put the ring to her finger, but it was not to last: she soon withered in a matter of seconds, her lifeforce consumed and absorbed within the ring’s gem until it was full. No body was ever found for only dusts remained of her. Only the song of the “Lost maiden” that bards sing about, serves as a testimony of her doom.&lt;/i&gt;&lt;/Font&gt;</Data></Cell>
+    <Cell ss:StyleID="s27"><Data ss:Type="String">&lt;Font Size=&quot;15&quot; Color=&quot;#ccb270&quot;&gt;&lt;i&gt;Bezeriel tykästyi kovin tarkkailemaan nuorta ja kaunista palvelijatartaan, jossa ruumiillistui kaikki nuoruuden kauneus. Ottaen joutsenen muodon, hän tarjosi tytölle sormustaan näyttääkseen ihailunsa määrän.\n\nHän hymyili kun laittoi sormuksen sormeensa, mutta se ei kestänyt kauaa: hän kuihtui nopeasti pois muutamassa sekunnissa, hänen elinvoimansa vangittuna sormuksen jalokiveen kunnes se oli täynnä.  Kukaan ei koskaan löytänyt hänestä tomua kummempaa. Vain laulu &quot;kadonneesta palveliattaresta&quot; jäi hänen jälkeensä bardien laulamana, muistuttamaan hänen tuhostaan.&lt;/i&gt;&lt;/Font&gt;</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15" ss:StyleID="Default">
+    <Cell><Data ss:Type="String">ui_unique_hit_hard</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">Seal of the Arbiter</Data></Cell>
+    <Cell><Data ss:Type="String">Sovittelijan sinetti</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15" ss:StyleID="Default">
+    <Cell><Data ss:Type="String">ui_unique_hit_hard_lore</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">&lt;Font Size=&quot;15&quot; Color=&quot;#ccb270&quot;&gt;&lt;i&gt;&quot;Isolated far east of the Four Realms of Men, the frontier city-state of Gomora is unfamously known for being the only settlement that openly welcomes evil worshippers. The champions in charge of keeping them in check are known as Arbiters, and receive such powerful onyx ring as a symbol of their absolute judgements.&quot;&lt;/i&gt;&lt;/Font&gt;</Data></Cell>
+    <Cell><Data ss:Type="String">&lt;Font Size=&quot;15&quot; Color=&quot;#ccb270&quot;&gt;&lt;i&gt;&quot;Kaukana idässä, ihmisten neljän maailman mailla, on saarroksissa kaupunki alue Gomora joka on kuuluisa sen tavasta toivottaa tervetulleeksi kaikki pahan palvojat. Mestarit, jotka pitävät väkeä aisoissa kutsutaan sovittelijoiksi ja he saavat merkikseen jykevän onyksi sormuksen joka kuvastaa kykyä langettaa absoluuttisia tuomioita.&quot;&lt;/i&gt;&lt;/Font&gt;</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15" ss:StyleID="Default">
+    <Cell><Data ss:Type="String">ui_unique_glass_canon</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">Thirst</Data></Cell>
+    <Cell><Data ss:Type="String">Jano</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15" ss:StyleID="Default">
+    <Cell><Data ss:Type="String">ui_unique_glass_canon_lore</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">&lt;Font Size=&quot;15&quot; Color=&quot;#ccb270&quot;&gt;&lt;i&gt;&quot;It would be impossible to determine who or what this uncanny tooth belonged to. When you first picked-it up, the ivory was of a pristine white. But now a faint coating of blood started to redden the canine by its base. Where is that blood coming from? Could it be yours? Only one thing is sure: it’s hungry, hungry for more.&quot;&lt;/i&gt;&lt;/Font&gt;</Data></Cell>
+    <Cell><Data ss:Type="String">&lt;Font Size=&quot;15&quot; Color=&quot;#ccb270&quot;&gt;&lt;i&gt;&quot;On mahdotonta sanoa kenelle tai mille tämä kammottava hammas on joskus kuulunut. Kun ensimmäisen kerran nostit sen käteesi sen norsunluu oli helmen valkeaa. Mutta nyt veri on mustannut sen juurta myöten. Mistä se veri on tulllut? Onko se omaasi? Yksi asia on varmaa, se haluaa lisää.&quot;&lt;/i&gt;&lt;/Font&gt;</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15" ss:StyleID="Default">
+    <Cell><Data ss:Type="String">ui_unique_all_mighty</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">Belt of the Owl Mighty Tester</Data></Cell>
+    <Cell><Data ss:Type="String">Pöllömestarin vyö</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15" ss:StyleID="Default">
+    <Cell><Data ss:Type="String">ui_unique_all_mighty_lore</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">&lt;Font Size=&quot;15&quot; Color=&quot;#ccb270&quot;&gt;&lt;i&gt;Looks like Owlcen hid a little present for you!&lt;/i&gt;&lt;/Font&gt;</Data></Cell>
+    <Cell><Data ss:Type="String">&lt;Font Size=&quot;15&quot; Color=&quot;#ccb270&quot;&gt;&lt;i&gt;Näyttää kuin Owlcen:lla olisi pieni lahja sinulle!&lt;/i&gt;&lt;/Font&gt;</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15" ss:StyleID="Default">
+    <Cell ss:StyleID="s77"><Data ss:Type="String">Heavy</Data></Cell>
+    <Cell ss:StyleID="s78"/>
+    <Cell ss:StyleID="s88"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15" ss:StyleID="Default">
+    <Cell><Data ss:Type="String">ui_Armor_Heavy_Helmet_T1</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">Sallet</Data></Cell>
+    <Cell><Data ss:Type="String">Kypärä</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15" ss:StyleID="Default">
+    <Cell><Data ss:Type="String">ui_Armor_Heavy_Pauldron_T1</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">Plate Pauldron</Data></Cell>
+    <Cell><Data ss:Type="String">Levyolkapanssari</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15" ss:StyleID="Default">
+    <Cell><Data ss:Type="String">ui_Armor_Heavy_Armguard_T1</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">Armplates</Data></Cell>
+    <Cell><Data ss:Type="String">Käsivarsisuojat</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15" ss:StyleID="Default">
+    <Cell><Data ss:Type="String">ui_Armor_Heavy_Cuirass_T1</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">Padded Hauberk</Data></Cell>
+    <Cell><Data ss:Type="String">Tikattu Hauperki</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15" ss:StyleID="Default">
+    <Cell><Data ss:Type="String">ui_Armor_Heavy_Greaves_T1</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">Faulds</Data></Cell>
+    <Cell><Data ss:Type="String">Lannesuoja</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15" ss:StyleID="Default">
+    <Cell><Data ss:Type="String">ui_Armor_Heavy_Sollerets_T1</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">Greaves</Data></Cell>
+    <Cell><Data ss:Type="String">Säärisuojat</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15" ss:StyleID="Default">
+    <Cell><Data ss:Type="String">ui_Armor_Heavy_Helmet_T2</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">Masterwork Sallet</Data></Cell>
+    <Cell><Data ss:Type="String">Mestarin Kypärä</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15" ss:StyleID="Default">
+    <Cell><Data ss:Type="String">ui_Armor_Heavy_Pauldron_T2</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">Masterwork Plate Pauldron</Data></Cell>
+    <Cell><Data ss:Type="String">Mestarin Levyolkapanssari</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15" ss:StyleID="Default">
+    <Cell><Data ss:Type="String">ui_Armor_Heavy_Armguard_T2</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">Masterwork Armplates</Data></Cell>
+    <Cell><Data ss:Type="String">Mestarin Käsivarsisuojat</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15" ss:StyleID="Default">
+    <Cell><Data ss:Type="String">ui_Armor_Heavy_Cuirass_T2</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">Masterwork Padded Hauberk</Data></Cell>
+    <Cell><Data ss:Type="String">Mestarin Tikattu Hauperki</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15" ss:StyleID="Default">
+    <Cell><Data ss:Type="String">ui_Armor_Heavy_Greaves_T2</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">Masterwork Faulds</Data></Cell>
+    <Cell><Data ss:Type="String">Mestarin Lannesuoja</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15" ss:StyleID="Default">
+    <Cell><Data ss:Type="String">ui_Armor_Heavy_Sollerets_T2</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">Masterwork Greaves</Data></Cell>
+    <Cell><Data ss:Type="String">Mestarin Säärisuojat</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15" ss:StyleID="Default">
+    <Cell ss:StyleID="s77"><Data ss:Type="String">Warrior</Data></Cell>
+    <Cell ss:StyleID="s78"/>
+    <Cell ss:StyleID="s78"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15" ss:StyleID="Default">
+    <Cell><Data ss:Type="String">ui_Armor_Warrior_Helmet_T1</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">Cerveliere</Data></Cell>
+    <Cell><Data ss:Type="String">Teräskypärä</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15" ss:StyleID="Default">
+    <Cell><Data ss:Type="String">ui_Armor_Warrior_Pauldron_T1</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">Lamellar Spaulder</Data></Cell>
+    <Cell><Data ss:Type="String">Lamelli olkapanssari</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15" ss:StyleID="Default">
+    <Cell><Data ss:Type="String">ui_Armor_Warrior_Armguard_T1</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">Wristguard</Data></Cell>
+    <Cell><Data ss:Type="String">Rannesuojat</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15" ss:StyleID="Default">
+    <Cell><Data ss:Type="String">ui_Armor_Warrior_Cuirass_T1</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">Barbarian Defender</Data></Cell>
+    <Cell><Data ss:Type="String">Barbaarin rintapanssari</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15" ss:StyleID="Default">
+    <Cell><Data ss:Type="String">ui_Armor_Warrior_Greaves_T1</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">Leather Tasset</Data></Cell>
+    <Cell><Data ss:Type="String">Nahkainen lannesuoja</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15" ss:StyleID="Default">
+    <Cell><Data ss:Type="String">ui_Armor_Warrior_Sollerets_T1</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">Poleyns</Data></Cell>
+    <Cell><Data ss:Type="String">Soturin säärisuojat</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15" ss:StyleID="Default">
+    <Cell><Data ss:Type="String">ui_Armor_Warrior_Helmet_T2</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">Masterwork Cerveliere</Data></Cell>
+    <Cell><Data ss:Type="String">Mestarin Teräskypärä</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15" ss:StyleID="Default">
+    <Cell><Data ss:Type="String">ui_Armor_Warrior_Pauldron_T2</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">Masterwork Lamellar Spaulder</Data></Cell>
+    <Cell><Data ss:Type="String">Mestarin Lamelli olkapanssari</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15" ss:StyleID="Default">
+    <Cell><Data ss:Type="String">ui_Armor_Warrior_Armguard_T2</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">Masterwork Wristguard</Data></Cell>
+    <Cell><Data ss:Type="String">Mestarin  Rannesuojat</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15" ss:StyleID="Default">
+    <Cell><Data ss:Type="String">ui_Armor_Warrior_Cuirass_T2</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">Masterwork Barbarian Defender</Data></Cell>
+    <Cell><Data ss:Type="String">Mestari Barbaarin rintapanssari</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15" ss:StyleID="Default">
+    <Cell><Data ss:Type="String">ui_Armor_Warrior_Greaves_T2</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">Masterwork Leather Tasset</Data></Cell>
+    <Cell><Data ss:Type="String">Mestarin Nahkainen lannesuoja</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15" ss:StyleID="Default">
+    <Cell><Data ss:Type="String">ui_Armor_Warrior_Sollerets_T2</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">Masterwork Poleyns</Data></Cell>
+    <Cell><Data ss:Type="String">Mestarisoturin säärisuojat</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15" ss:StyleID="Default">
+    <Cell ss:StyleID="s77"><Data ss:Type="String">Rogue</Data></Cell>
+    <Cell ss:StyleID="s78"/>
+    <Cell ss:StyleID="s78"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15" ss:StyleID="Default">
+    <Cell><Data ss:Type="String">ui_Armor_Rogue_Helmet_T1</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">Bandana</Data></Cell>
+    <Cell><Data ss:Type="String">Huivi</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15" ss:StyleID="Default">
+    <Cell><Data ss:Type="String">ui_Armor_Rogue_Pauldron_T1</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">Studded Leather Epaulet</Data></Cell>
+    <Cell><Data ss:Type="String">Tikattu olkapanssari</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15" ss:StyleID="Default">
+    <Cell><Data ss:Type="String">ui_Armor_Rogue_Armguard_T1</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">Gauntlet</Data></Cell>
+    <Cell><Data ss:Type="String">Rautakinnas</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15" ss:StyleID="Default">
+    <Cell><Data ss:Type="String">ui_Armor_Rogue_Cuirass_T1</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">Quilted Armor</Data></Cell>
+    <Cell><Data ss:Type="String">Toppapanssari</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15" ss:StyleID="Default">
+    <Cell><Data ss:Type="String">ui_Armor_Rogue_Greaves_T1</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">Burlap Trousers</Data></Cell>
+    <Cell><Data ss:Type="String">Juuttihousut</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15" ss:StyleID="Default">
+    <Cell><Data ss:Type="String">ui_Armor_Rogue_Sollerets_T1</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">Leather Boots</Data></Cell>
+    <Cell><Data ss:Type="String">Nahkasaappaat</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15" ss:StyleID="Default">
+    <Cell><Data ss:Type="String">ui_Armor_Rogue_Helmet_T2</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">Masterwork Bandana</Data></Cell>
+    <Cell><Data ss:Type="String">Mestarin Huivi</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15" ss:StyleID="Default">
+    <Cell><Data ss:Type="String">ui_Armor_Rogue_Pauldron_T2</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">Masterwork Studded Leather Epaulet</Data></Cell>
+    <Cell><Data ss:Type="String">Mestarin Tikattu olkapanssari</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15" ss:StyleID="Default">
+    <Cell><Data ss:Type="String">ui_Armor_Rogue_Armguard_T2</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">Masterwork Gauntlet</Data></Cell>
+    <Cell><Data ss:Type="String">Mestarin Rautakinnas</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15" ss:StyleID="Default">
+    <Cell><Data ss:Type="String">ui_Armor_Rogue_Cuirass_T2</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">Masterwork Quilted Armor</Data></Cell>
+    <Cell><Data ss:Type="String">Mestarin Toppapanssari</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15" ss:StyleID="Default">
+    <Cell><Data ss:Type="String">ui_Armor_Rogue_Greaves_T2</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">Masterwork Burlap Trousers</Data></Cell>
+    <Cell><Data ss:Type="String">Mestarin Juuttihousut</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15" ss:StyleID="Default">
+    <Cell><Data ss:Type="String">ui_Armor_Rogue_Sollerets_T2</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">Masterwork Leather Boots</Data></Cell>
+    <Cell><Data ss:Type="String">Mestarin Nahkasaappaat</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15" ss:StyleID="Default">
+    <Cell ss:StyleID="s77"><Data ss:Type="String">Mage</Data></Cell>
+    <Cell ss:StyleID="s78"/>
+    <Cell ss:StyleID="s78"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15" ss:StyleID="Default">
+    <Cell><Data ss:Type="String">ui_Armor_Mage_Helmet_T1</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">Hood</Data></Cell>
+    <Cell><Data ss:Type="String">Huppu</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15" ss:StyleID="Default">
+    <Cell><Data ss:Type="String">ui_Armor_Mage_Pauldron_T1</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">Lamellar Cloth Epaulet</Data></Cell>
+    <Cell><Data ss:Type="String">Lamelli olkaepoletti</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15" ss:StyleID="Default">
+    <Cell><Data ss:Type="String">ui_Armor_Mage_Armguard_T1</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">Glove</Data></Cell>
+    <Cell><Data ss:Type="String">Hanskat</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15" ss:StyleID="Default">
+    <Cell><Data ss:Type="String">ui_Armor_Mage_Cuirass_T1</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">Waistcoat</Data></Cell>
+    <Cell><Data ss:Type="String">Lannevaate</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15" ss:StyleID="Default">
+    <Cell><Data ss:Type="String">ui_Armor_Mage_Greaves_T1</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">Breeches</Data></Cell>
+    <Cell><Data ss:Type="String">Polvihousut</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15" ss:StyleID="Default">
+    <Cell><Data ss:Type="String">ui_Armor_Mage_Sollerets_T1</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">Laced Boots</Data></Cell>
+    <Cell><Data ss:Type="String">Nyöritetyt saappaat</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15" ss:StyleID="Default">
+    <Cell><Data ss:Type="String">ui_Armor_Mage_Helmet_T2</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">Masterwork Hood</Data></Cell>
+    <Cell><Data ss:Type="String">Mestarin Huppu</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15" ss:StyleID="Default">
+    <Cell><Data ss:Type="String">ui_Armor_Mage_Pauldron_T2</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">Masterwork Lamellar Cloth Epaulet</Data></Cell>
+    <Cell><Data ss:Type="String">Mestarin Lamelli olkaepoletti</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15" ss:StyleID="Default">
+    <Cell><Data ss:Type="String">ui_Armor_Mage_Armguard_T2</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">Masterwork Glove</Data></Cell>
+    <Cell><Data ss:Type="String">Mestarin Hanskat</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15" ss:StyleID="Default">
+    <Cell><Data ss:Type="String">ui_Armor_Mage_Cuirass_T2</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">Masterwork Waistcoat</Data></Cell>
+    <Cell><Data ss:Type="String">Mestarin Lannevaate</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15" ss:StyleID="Default">
+    <Cell><Data ss:Type="String">ui_Armor_Mage_Greaves_T2</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">Masterwork Breeches</Data></Cell>
+    <Cell><Data ss:Type="String">Mestarin Polvihousut</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15" ss:StyleID="Default">
+    <Cell><Data ss:Type="String">ui_Armor_Mage_Sollerets_T2</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">Masterwork Laced Boots</Data></Cell>
+    <Cell><Data ss:Type="String">Mestarin Nyöritetyt saappaat</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="s77"><Data ss:Type="String">Accessories</Data></Cell>
+    <Cell ss:StyleID="s89"/>
+    <Cell ss:StyleID="s89"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="s27"><Data ss:Type="String">ui_Cape_AdventurerCape</Data></Cell>
+    <Cell ss:StyleID="s27"><Data ss:Type="String">Adventurer Cloak</Data></Cell>
+    <Cell><Data ss:Type="String">Seikkailijan viitta</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="s27"><Data ss:Type="String">ui_Cape_GothicLongCape</Data></Cell>
+    <Cell ss:StyleID="s27"><Data ss:Type="String">Long Cloak</Data></Cell>
+    <Cell><Data ss:Type="String">Pitkäviitta</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="s27"><Data ss:Type="String">ui_Cape_TemplarCape_Black</Data></Cell>
+    <Cell ss:StyleID="s27"><Data ss:Type="String">Templar Magister Cape</Data></Cell>
+    <Cell><Data ss:Type="String">Temppelivelhon viitta</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="s27"><Data ss:Type="String">ui_Cape_TemplarCape</Data></Cell>
+    <Cell ss:StyleID="s27"><Data ss:Type="String">Templar Cape</Data></Cell>
+    <Cell><Data ss:Type="String">Temppeliritarin viitta</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="Default"><Data ss:Type="String">ui_Ring_Topaz</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">Topaz Ring</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">Topaasi sormus</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="Default"><Data ss:Type="String">ui_Ring_Aquamarine</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">Aquamarine Ring</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">Akvamariini sormus</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="Default"><Data ss:Type="String">ui_Ring_Sapphire</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">Sapphire Ring</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">Safiiri sormus</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="Default"><Data ss:Type="String">ui_Ring_Emerald</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">Emerald Ring</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">Smaragdi sormus</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="Default"><Data ss:Type="String">ui_Ring_Ruby</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">Ruby Ring</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">Rubiini sormus</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="Default"><Data ss:Type="String">ui_Ring_Bloodstar</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">Bloodstar Ring</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">Verikivi sormus</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="Default"><Data ss:Type="String">ui_Ring_Steel</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">Steel Ring</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">Teräs sormus</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="Default"><Data ss:Type="String">ui_Amulet_Goldstone</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">Goldstone Amulet</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">Kultakivi amuletti</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="Default"><Data ss:Type="String">ui_Amulet_Amethyst</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">Amethyst Amulet</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">Ametisti amuletti</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="Default"><Data ss:Type="String">ui_Amulet_Emerald</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">Emerald Amulet</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">Smaragdi amuletti</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="Default"><Data ss:Type="String">ui_Amulet_Omnistar</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">Omnistar Amulet</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">Yksikivi amuletti</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="Default"><Data ss:Type="String">ui_Amulet_Ruby</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">Ruby Amulet</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">Rubiini amuletti</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="Default"><Data ss:Type="String">ui_Belt_Alchemist</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">Utility Belt</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">Työkaluvyö</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="Default"><Data ss:Type="String">ui_Belt_Warrior</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">Steel Belt</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">Teräsvyö</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="Default"><Data ss:Type="String">ui_Belt_Assassin</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">Quickdraw Leather Strand</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">Pikanahkavyö</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="Default"><Data ss:Type="String">ui_Belt_Gladiator</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">Champion Girdle</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">Mestarin vyö</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="Default"><Data ss:Type="String">ui_Belt_Templar</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">Catalystic Strap</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">Katalyyttinaru</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:MergeAcross="2" ss:StyleID="m545148276"><Data ss:Type="String">ITEMS COMPARATOR</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_ic_reqLevel</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">Required Level</Data></Cell>
+    <Cell><Data ss:Type="String">Tarvittava taso</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_ic_reqStrength</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">Required Strength</Data></Cell>
+    <Cell><Data ss:Type="String">Tarvittava vahvuus</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_ic_reqDexterity</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">Required Dexterity</Data></Cell>
+    <Cell><Data ss:Type="String">Tarvittava ketteryys</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_ic_reqConstitution</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">Required Constitution</Data></Cell>
+    <Cell><Data ss:Type="String">Tarvittava yleiskunto</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_ic_reqPower</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">Required Power</Data></Cell>
+    <Cell><Data ss:Type="String">Tarvittava voima</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="Default"><Data ss:Type="String">ui_ic_itemReqLevel</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">Item required level</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">Esineen tarvitsema taso</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_ic_durability</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">Durability</Data></Cell>
+    <Cell><Data ss:Type="String">Kestävyys</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_ic_sellvalue</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">Value</Data></Cell>
+    <Cell><Data ss:Type="String">Arvo</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_ic_equipped</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">Equipped</Data></Cell>
+    <Cell><Data ss:Type="String">Puettu</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_ic_charges</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">Charges</Data></Cell>
+    <Cell><Data ss:Type="String">Latausta</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_ic_refreshtime</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">%1 Cooldown</Data></Cell>
+    <Cell><Data ss:Type="String">%1 uudelleenkäyttö</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_ic_rechargetime</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">%1 Refill time</Data></Cell>
+    <Cell><Data ss:Type="String">%1 täyttöviive</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_ic_hold</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">Hold SHIFT to switch between left and right item comparison</Data></Cell>
+    <Cell><Data ss:Type="String">Paina SHIFT näppäin pohjaan vertaillaksesi oikea ja vasenta esinettiä</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_merchant_title</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">Merchant</Data></Cell>
+    <Cell><Data ss:Type="String">Kauppuas</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_merchant_restockin</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">Merchant Inventory will restock in : %1 h %2</Data></Cell>
+    <Cell><Data ss:Type="String">Uusia esineitä saapuu kauppaan : %1 h %2 kuluessa</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_ic_PotionHealthGain</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">%1 Restored Health</Data></Cell>
+    <Cell><Data ss:Type="String">%1 palautettua elinvoimaa</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_ic_PotionUmbraGain</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">%1 Restored Umbra</Data></Cell>
+    <Cell><Data ss:Type="String">%1 palautettua Umbraa</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_ic_PotionRageGain</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">%1 Restored Rage</Data></Cell>
+    <Cell><Data ss:Type="String">%1 palautettua raivoa</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_ic_PotionStaminaGain</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">%1 Restored Stamina</Data></Cell>
+    <Cell><Data ss:Type="String">%1 palautettua kestävyyttä</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_ic_PotionActiveEffect</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">%1 (on use)</Data></Cell>
+    <Cell><Data ss:Type="String">%1 (käytössä)</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_ic_PotionPassiveEffect</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">%1 (on use, lasts %2)</Data></Cell>
+    <Cell><Data ss:Type="String">%1 (käytössä, kestää %2)</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_ic_PotionPassiveEffect_stack</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">%1 (on use, lasts %2, stackable up to %3 times)</Data></Cell>
+    <Cell><Data ss:Type="String">%1 (käytössä, kestää %2, voi olla voimassa %3 kertaa yhtäaikaa)</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="Default"><Data ss:Type="String">ui_ic_PotionPermanentEffect</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">%1 (permanent when equipped)</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">%1 (pysyvästi kun puettuna)</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_ic_level</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">Level</Data></Cell>
+    <Cell><Data ss:Type="String">Taso</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="Default"><Data ss:Type="String">ui_ic_deprecated</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">This item comes from an old version of the game and may be unbalanced or malfunctioning</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">Tämä esine tulee vanhasta peliversiosta ja voi olla epäkunnossa tai -balansissa</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:MergeAcross="2" ss:StyleID="m545148296"><Data ss:Type="String">LOOT RARITY</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_loot_rarity_normal</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">Common</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">Common</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_loot_rarity_magic</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">Magic</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">Magic</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_loot_rarity_rare</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">Rare</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">Rare</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_loot_rarity_legendary</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">Legendary</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">Legendary</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_loot_rarity_unique</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">Unique</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">Unique</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_loot_rarity_quest</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">Quest item</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">Quest item</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:MergeAcross="2" ss:StyleID="m545148316"><Data ss:Type="String">LOOT QUALITY</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_loot_quality_broken</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">Broken</Data></Cell>
+    <Cell><Data ss:Type="String">Rikkoutunut</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_loot_quality_used</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">Used</Data></Cell>
+    <Cell><Data ss:Type="String">Käytetty</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_loot_quality_normal</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">Normal</Data></Cell>
+    <Cell><Data ss:Type="String">Normaali</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_loot_quality_reinforced</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">Reinforced</Data></Cell>
+    <Cell><Data ss:Type="String">Parannettu</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_loot_quality_superior</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">Superior</Data></Cell>
+    <Cell><Data ss:Type="String">Erinomainen</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_loot_quality_exceptional</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">Exceptional</Data></Cell>
+    <Cell><Data ss:Type="String">Poikkeuksellinen</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_loot_quality_epic</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">Epic</Data></Cell>
+    <Cell><Data ss:Type="String">Eeppinen</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:MergeAcross="2" ss:StyleID="m545143016"><Data ss:Type="String">POTIONS</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_loot_potiontype_health</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">Health potion</Data></Cell>
+    <Cell><Data ss:Type="String">Parannusjuoma</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_loot_potiontype_poison</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">Poison</Data></Cell>
+    <Cell><Data ss:Type="String">Myrkky</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_loot_potiontype_rage</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">Rage potion</Data></Cell>
+    <Cell><Data ss:Type="String">Raivojuoma</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_loot_potiontype_stamina</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">Stamina potion</Data></Cell>
+    <Cell><Data ss:Type="String">Kestävyysjuoma</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_loot_potiontype_umbra</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">Umbra potion</Data></Cell>
+    <Cell><Data ss:Type="String">Umbra juoma</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell><Data ss:Type="String">ui_loot_potiontype_misc</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">Utility potion</Data></Cell>
+    <Cell><Data ss:Type="String">Hyötyjuoma</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell><Data ss:Type="String">ui_Potion_S_Health</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">Small Health Potion</Data></Cell>
+    <Cell><Data ss:Type="String">Pieni parannusjuoma</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell><Data ss:Type="String">ui_Potion_M_Health</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">Medium Health Potion</Data></Cell>
+    <Cell><Data ss:Type="String">Keskikokoinen parannusjuoma</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell><Data ss:Type="String">ui_Potion_L_Health</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">Large Health Potion</Data></Cell>
+    <Cell><Data ss:Type="String">Suuri parannusjuoma</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell><Data ss:Type="String">ui_Potion_XL_Health</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">Great Health Potion</Data></Cell>
+    <Cell><Data ss:Type="String">Mahtava parannusjuoma</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell><Data ss:Type="String">ui_Potion_S_Rage</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">Small Rage Potion</Data></Cell>
+    <Cell><Data ss:Type="String">Pieni raivojuoma</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell><Data ss:Type="String">ui_Potion_M_Rage</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">Medium Rage Potion</Data></Cell>
+    <Cell><Data ss:Type="String">Keskikokoinen raivojuoma</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell><Data ss:Type="String">ui_Potion_L_Rage</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">Large Rage Potion</Data></Cell>
+    <Cell><Data ss:Type="String">Suuri raivojuoma</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell><Data ss:Type="String">ui_Potion_XL_Rage</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">Great Rage Potion</Data></Cell>
+    <Cell><Data ss:Type="String">Mahtava raivojuoma</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell><Data ss:Type="String">ui_Potion_S_Umbra</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">Small Umbra Potion</Data></Cell>
+    <Cell><Data ss:Type="String">Pieni Umbra juoma</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell><Data ss:Type="String">ui_Potion_M_Umbra</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">Medium Umbra Potion</Data></Cell>
+    <Cell><Data ss:Type="String">Keskikokoinen Umbra juoma</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell><Data ss:Type="String">ui_Potion_L_Umbra</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">Large Umbra Potion</Data></Cell>
+    <Cell><Data ss:Type="String">Suuri Umbra juoma</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell><Data ss:Type="String">ui_Potion_XL_Umbra</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">Great Umbra Potion</Data></Cell>
+    <Cell><Data ss:Type="String">Mahtava Umbrajuoma</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell><Data ss:Type="String">ui_Potion_S_Stamina</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">Small Stamina Potion</Data></Cell>
+    <Cell><Data ss:Type="String">Pieni kestävyysjuoma</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell><Data ss:Type="String">ui_Potion_M_Stamina</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">Medium Stamina Potion</Data></Cell>
+    <Cell><Data ss:Type="String">Keskikokoinen kestävyysjuoma</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell><Data ss:Type="String">ui_Potion_L_Stamina</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">Large Stamina Potion</Data></Cell>
+    <Cell><Data ss:Type="String">Suuri kestävyysjuoma</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell><Data ss:Type="String">ui_Potion_XL_Stamina</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">Great Stamina Potion</Data></Cell>
+    <Cell><Data ss:Type="String">Mahtava kestävyysjuoma</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell><Data ss:Type="String">ui_Potion_M_PoisonVenom</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">Venom Phial</Data></Cell>
+    <Cell><Data ss:Type="String">Myrkkyampulli</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell><Data ss:Type="String">ui_Potion_M_PoisonCurse</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">Cursing Phial</Data></Cell>
+    <Cell><Data ss:Type="String">Kirousampulli</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell><Data ss:Type="String">ui_Potion_M_PoisonBleed</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">Bleeding Phial</Data></Cell>
+    <Cell><Data ss:Type="String">Verenvuotoampulli</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell><Data ss:Type="String">ui_Potion_M_PoisonBurn</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">Burning Phial</Data></Cell>
+    <Cell><Data ss:Type="String">Polttava-ampulli</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell><Data ss:Type="String">ui_Potion_M_PoisonShock</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">Shocking Phial</Data></Cell>
+    <Cell><Data ss:Type="String">Sähköistävä ampulli</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell><Data ss:Type="String">ui_Potion_M_PoisonFreeze</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">Freezing Phial</Data></Cell>
+    <Cell><Data ss:Type="String">Jäätävä ampulli</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell><Data ss:Type="String">ui_Potion_M_PoisonWeakness</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">Weakening Phial</Data></Cell>
+    <Cell><Data ss:Type="String">Heikentävä ampulli</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:MergeAcross="2" ss:StyleID="m545143036"><Data ss:Type="String">WEAPON TYPES</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_WeaponType_1HSword</Data></Cell>
+    <Cell ss:StyleID="s90"><Data ss:Type="String">Sword</Data></Cell>
+    <Cell><Data ss:Type="String">Miekka</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_WeaponType_2HSword</Data></Cell>
+    <Cell ss:StyleID="s90"><Data ss:Type="String">Greatsword</Data></Cell>
+    <Cell><Data ss:Type="String">Suurmiekka</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_WeaponType_1HMace</Data></Cell>
+    <Cell ss:StyleID="s90"><Data ss:Type="String">Mace</Data></Cell>
+    <Cell><Data ss:Type="String">Nuija</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_WeaponType_2HMace</Data></Cell>
+    <Cell ss:StyleID="s90"><Data ss:Type="String">Warhammer</Data></Cell>
+    <Cell><Data ss:Type="String">Sotavasara</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_WeaponType_1HAxe</Data></Cell>
+    <Cell ss:StyleID="s90"><Data ss:Type="String">Axe</Data></Cell>
+    <Cell><Data ss:Type="String">Kirves</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_WeaponType_2HAxe</Data></Cell>
+    <Cell ss:StyleID="s90"><Data ss:Type="String">Battleaxe</Data></Cell>
+    <Cell><Data ss:Type="String">Taistelukirves</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_WeaponType_Dagger</Data></Cell>
+    <Cell ss:StyleID="s90"><Data ss:Type="String">Dagger</Data></Cell>
+    <Cell><Data ss:Type="String">Tikari</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_WeaponType_Crossbow</Data></Cell>
+    <Cell ss:StyleID="s91"><Data ss:Type="String">Crossbow</Data></Cell>
+    <Cell><Data ss:Type="String">Varsijousi</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_WeaponType_SmallShield</Data></Cell>
+    <Cell ss:StyleID="s90"><Data ss:Type="String">Shield</Data></Cell>
+    <Cell><Data ss:Type="String">Kilpi</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_WeaponType_Staff</Data></Cell>
+    <Cell ss:StyleID="s90"><Data ss:Type="String">Staff</Data></Cell>
+    <Cell><Data ss:Type="String">Sauva</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="Default"><Data ss:Type="String">ui_WeaponType_Gun</Data></Cell>
+    <Cell ss:StyleID="s92"><Data ss:Type="String">Pistol</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">Pistooli</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="Default"><Data ss:Type="String">ui_WeaponType_Bow</Data></Cell>
+    <Cell ss:StyleID="s92"><Data ss:Type="String">Bow</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">Jousi</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="Default"><Data ss:Type="String">ui_WeaponType_Trinket</Data></Cell>
+    <Cell ss:StyleID="s92"><Data ss:Type="String">Catalyst</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">Katalyytti</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:MergeAcross="2" ss:StyleID="m545143056"><Data ss:Type="String">INGREDIENTS</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell><Data ss:Type="String">ui_loot_Ingredient</Data></Cell>
+    <Cell ss:StyleID="s90"><Data ss:Type="String">Ingredient</Data></Cell>
+    <Cell><Data ss:Type="String">Raaka-aine</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_Ingredients_Fern</Data></Cell>
+    <Cell ss:StyleID="s90"><Data ss:Type="String">Fern</Data></Cell>
+    <Cell><Data ss:Type="String">Saniainen</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_Ingredients_Mushroom</Data></Cell>
+    <Cell ss:StyleID="s90"><Data ss:Type="String">Mushroom</Data></Cell>
+    <Cell><Data ss:Type="String">Sieni</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:MergeAcross="2" ss:StyleID="m545143076"><Data ss:Type="String">WEAPON SPEED</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_speed_slowest</Data></Cell>
+    <Cell ss:StyleID="s90"><Data ss:Type="String">Slowest</Data></Cell>
+    <Cell><Data ss:Type="String">Hitain</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_speed_veryslow</Data></Cell>
+    <Cell ss:StyleID="s90"><Data ss:Type="String">Very slow</Data></Cell>
+    <Cell><Data ss:Type="String">Erittäin hidas</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_speed_slow</Data></Cell>
+    <Cell ss:StyleID="s90"><Data ss:Type="String">Slow</Data></Cell>
+    <Cell><Data ss:Type="String">Hidas</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_speed_belownormal</Data></Cell>
+    <Cell ss:StyleID="s90"><Data ss:Type="String">Below average speed</Data></Cell>
+    <Cell><Data ss:Type="String">Alle normaalin nopeuden</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_speed_normal</Data></Cell>
+    <Cell ss:StyleID="s90"><Data ss:Type="String">Medium speed</Data></Cell>
+    <Cell><Data ss:Type="String">Normaali nopeus</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_speed_abovenormal</Data></Cell>
+    <Cell ss:StyleID="s90"><Data ss:Type="String">Above average speed</Data></Cell>
+    <Cell><Data ss:Type="String">Yli normaalin nopeuden</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_speed_fast</Data></Cell>
+    <Cell ss:StyleID="s90"><Data ss:Type="String">Fast</Data></Cell>
+    <Cell><Data ss:Type="String">Nopea</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_speed_veryfast</Data></Cell>
+    <Cell ss:StyleID="s90"><Data ss:Type="String">Very fast</Data></Cell>
+    <Cell><Data ss:Type="String">Erittäin nopea</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_speed_fastest</Data></Cell>
+    <Cell ss:StyleID="s90"><Data ss:Type="String">Fastest</Data></Cell>
+    <Cell><Data ss:Type="String">Nopein</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:MergeAcross="2" ss:StyleID="m545143096"><Data ss:Type="String">QUEST ITEMS</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="Default"><Data ss:Type="String">ui_QuestItem_SirkisSkull</Data></Cell>
+    <Cell ss:StyleID="s93"><Data ss:Type="String">Sirkis’ skull</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">Sirkiksen kallo</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="Default"><Data ss:Type="String">ui_QuestItem_StolenChest</Data></Cell>
+    <Cell ss:StyleID="s93"><Data ss:Type="String">Stolen chest</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">Varastettu kirstu</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:MergeAcross="2" ss:StyleID="m545143116"><Data ss:Type="String">SOCKETS AND GEMS</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="Default"><Data ss:Type="String">ui_ic_offensive</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">Offensive</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">Hyökkäävä</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="Default"><Data ss:Type="String">ui_ic_defensive</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">Defensive</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">Puolustava</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="Default"><Data ss:Type="String">ui_ic_support</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">Support</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">Tuki</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="Default"><Data ss:Type="String">ui_ic_offensivesocket</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">Offensive</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">Hyökkäävä</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="Default"><Data ss:Type="String">ui_ic_defensivesocket</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">Defensive</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">Puolustava</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="Default"><Data ss:Type="String">ui_ic_supportsocket</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">Support</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">Tuki</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="Default"><Data ss:Type="String">ui_ic_uniquesocket</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">Unique</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">Uniikki</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="Default"><Data ss:Type="String">ui_ic_gem</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">Gem</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">Jalokivi</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="Default"><Data ss:Type="String">ui_ic_gemTier</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">Tier</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">Taso</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="Default"><Data ss:Type="String">ui_gem_firegem_tier01</Data></Cell>
+    <Cell ss:StyleID="s95"><Data ss:Type="String" x:Ticked="1">Chipped Topaz</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">Säröinen Topaasi</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="Default"><Data ss:Type="String">ui_gem_firegem_tier02</Data></Cell>
+    <Cell ss:StyleID="s95"><Data ss:Type="String" x:Ticked="1">Crude Topaz</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">Rujo Topaasi</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="Default"><Data ss:Type="String">ui_gem_firegem_tier03</Data></Cell>
+    <Cell ss:StyleID="s95"><Data ss:Type="String" x:Ticked="1">Raw Topaz</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">Raaka Topaasi</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="Default"><Data ss:Type="String">ui_gem_firegem_tier04</Data></Cell>
+    <Cell ss:StyleID="s95"><Data ss:Type="String" x:Ticked="1">Flawed Topaz</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">Viallinen Topaasi</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="Default"><Data ss:Type="String">ui_gem_firegem_tier05</Data></Cell>
+    <Cell ss:StyleID="s95"><Data ss:Type="String" x:Ticked="1">Topaz</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">Topaasi</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="Default"><Data ss:Type="String">ui_gem_firegem_tier06</Data></Cell>
+    <Cell ss:StyleID="s95"><Data ss:Type="String" x:Ticked="1">Polished Topaz</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">Kiilotettu Topaasi</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="Default"><Data ss:Type="String">ui_gem_firegem_tier07</Data></Cell>
+    <Cell ss:StyleID="s95"><Data ss:Type="String" x:Ticked="1">Pristine Topaz</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">Hieno Topaasi</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="Default"><Data ss:Type="String">ui_gem_firegem_tier08</Data></Cell>
+    <Cell ss:StyleID="s95"><Data ss:Type="String" x:Ticked="1">Polished Pristine Topaz</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">Kiilotettu hieno Topaasi</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="Default"><Data ss:Type="String">ui_gem_firegem_tier09</Data></Cell>
+    <Cell ss:StyleID="s95"><Data ss:Type="String" x:Ticked="1">Precious Topaz</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">Arvokas Topaasi</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="Default"><Data ss:Type="String">ui_gem_firegem_tier10</Data></Cell>
+    <Cell ss:StyleID="s95"><Data ss:Type="String" x:Ticked="1">Polished Precious Topaz</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">Kiillotettu arvokas Topaasi</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="Default"><Data ss:Type="String">ui_gem_firegem_tier11</Data></Cell>
+    <Cell ss:StyleID="s95"><Data ss:Type="String" x:Ticked="1">Perfect Topaz</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">Täydellinen Topaasi</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="Default"><Data ss:Type="String">ui_gem_firegem_tier12</Data></Cell>
+    <Cell ss:StyleID="s95"><Data ss:Type="String" x:Ticked="1">Polished Perfect Topaz</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">Kiillotettu täydellinen Topaasi</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="Default"><Data ss:Type="String">ui_gem_firegem_tier13</Data></Cell>
+    <Cell ss:StyleID="s95"><Data ss:Type="String" x:Ticked="1">Royal Topaz</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">Kuninkaallinen Topaasi</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="Default"><Data ss:Type="String">ui_gem_firegem_tier14</Data></Cell>
+    <Cell ss:StyleID="s95"><Data ss:Type="String" x:Ticked="1">Polished Royal Topaz</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">Kiillotettu kuninkaallinen Topaasi</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="Default"><Data ss:Type="String">ui_gem_firegem_tier15</Data></Cell>
+    <Cell ss:StyleID="s95"><Data ss:Type="String" x:Ticked="1">Celestial Topaz</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">Jumalallinen Topaasi</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="Default"><Data ss:Type="String">ui_gem_firegem_tier16</Data></Cell>
+    <Cell ss:StyleID="s95"><Data ss:Type="String" x:Ticked="1">Polished Celestial Topaz</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">Kiillotettu jumalallinen Topaasi</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="Default"><Data ss:Type="String">ui_gem_firegem_tier17</Data></Cell>
+    <Cell ss:StyleID="s95"><Data ss:Type="String" x:Ticked="1">Fallen Topaz</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">Lagennut Topaasi</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="Default"><Data ss:Type="String">ui_gem_firegem_tier18</Data></Cell>
+    <Cell ss:StyleID="s95"><Data ss:Type="String" x:Ticked="1">Polished Fallen Topaz</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">Kiillotettu langennut Topaasi</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="Default"><Data ss:Type="String">ui_gem_firegem_tier19</Data></Cell>
+    <Cell ss:StyleID="s95"><Data ss:Type="String" x:Ticked="1">Divine Topaz</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">Pyhä Topaasi</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="Default"><Data ss:Type="String">ui_gem_firegem_tier20</Data></Cell>
+    <Cell ss:StyleID="s95"><Data ss:Type="String" x:Ticked="1">Polished Divine Topaz</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">Kiillotettu pyhä Topaasi</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="Default"><Data ss:Type="String">ui_gem_lightninggem_tier01</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">Chipped Lapis-Lazuli</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">Säröinen Lapis-Lazuli</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="Default"><Data ss:Type="String">ui_gem_lightninggem_tier02</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">Crude Lapis-Lazuli</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">Rujo Lapis-Lazuli</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="Default"><Data ss:Type="String">ui_gem_lightninggem_tier03</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">Raw Lapis-Lazuli</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">Raaka Lapis-Lazuli</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="Default"><Data ss:Type="String">ui_gem_lightninggem_tier04</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">Flawed Lapis-Lazuli</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">Viallinen Lapis-Lazuli</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="Default"><Data ss:Type="String">ui_gem_lightninggem_tier05</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">Lapis-Lazuli</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">Lapis-Lazuli</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="Default"><Data ss:Type="String">ui_gem_lightninggem_tier06</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">Polished Lapis-Lazuli</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">Kiilotettu Lapis-Lazuli</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="Default"><Data ss:Type="String">ui_gem_lightninggem_tier07</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">Pristine Lapis-Lazuli</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">Hieno Lapis-Lazuli</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="Default"><Data ss:Type="String">ui_gem_lightninggem_tier08</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">Polished Pristine Lapis-Lazuli</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">Kiilotettu hieno Lapis-Lazuli</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="Default"><Data ss:Type="String">ui_gem_lightninggem_tier09</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">Precious Lapis-Lazuli</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">Arvokas Lapis-Lazuli</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="Default"><Data ss:Type="String">ui_gem_lightninggem_tier10</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">Polished Precious Lapis-Lazuli</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">Kiillotettu arvokas Lapis-Lazuli</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="Default"><Data ss:Type="String">ui_gem_lightninggem_tier11</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">Perfect Lapis-Lazuli</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">Täydellinen Lapis-Lazuli</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="Default"><Data ss:Type="String">ui_gem_lightninggem_tier12</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">Polished Perfect Lapis-Lazuli</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">Kiillotettu täydellinen Lapis-Lazuli</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="Default"><Data ss:Type="String">ui_gem_lightninggem_tier13</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">Royal Lapis-Lazuli</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">Kuninkaallinen Lapis-Lazuli</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="Default"><Data ss:Type="String">ui_gem_lightninggem_tier14</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">Polished Royal Lapis-Lazuli</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">Kiillotettu kuninkaallinen Lapis-Lazuli</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="Default"><Data ss:Type="String">ui_gem_lightninggem_tier15</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">Celestial Lapis-Lazuli</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">Jumalallinen Lapis-Lazuli</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="Default"><Data ss:Type="String">ui_gem_lightninggem_tier16</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">Polished Celestial Lapis-Lazuli</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">Kiillotettu jumalallinen Lapis-Lazuli</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="Default"><Data ss:Type="String">ui_gem_lightninggem_tier17</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">Fallen Lapis-Lazuli</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">Lagennut Lapis-Lazuli</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="Default"><Data ss:Type="String">ui_gem_lightninggem_tier18</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">Polished Fallen Lapis-Lazuli</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">Kiillotettu langennut Lapis-Lazuli</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="Default"><Data ss:Type="String">ui_gem_lightninggem_tier19</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">Divine Lapis-Lazuli</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">Pyhä Lapis-Lazuli</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="Default"><Data ss:Type="String">ui_gem_lightninggem_tier20</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">Polished Divine Lapis-Lazuli</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">Kiillotettu pyhä Lapis-Lazuli</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="Default"><Data ss:Type="String">ui_gem_frostgem_tier01</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">Chipped Diamond</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">Säröinen Timantti</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="Default"><Data ss:Type="String">ui_gem_frostgem_tier02</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">Crude Diamond</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">Rujo Timantti</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="Default"><Data ss:Type="String">ui_gem_frostgem_tier03</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">Raw Diamond</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">Raaka Timantti</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="Default"><Data ss:Type="String">ui_gem_frostgem_tier04</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">Flawed Diamond</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">Viallinen Timantti</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="Default"><Data ss:Type="String">ui_gem_frostgem_tier05</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">Diamond</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">Timantti</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="Default"><Data ss:Type="String">ui_gem_frostgem_tier06</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">Polished Diamond</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">Kiilotettu Timantti</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="Default"><Data ss:Type="String">ui_gem_frostgem_tier07</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">Pristine Diamond</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">Hieno Timantti</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="Default"><Data ss:Type="String">ui_gem_frostgem_tier08</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">Polished Pristine Diamond</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">Kiilotettu hieno Timantti</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="Default"><Data ss:Type="String">ui_gem_frostgem_tier09</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">Precious Diamond</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">ArvokasTimantti</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="Default"><Data ss:Type="String">ui_gem_frostgem_tier10</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">Polished Precious Diamond</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">Kiillotettu arvokas Timantti</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="Default"><Data ss:Type="String">ui_gem_frostgem_tier11</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">Perfect Diamond</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">Täydellinen Timantti</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="Default"><Data ss:Type="String">ui_gem_frostgem_tier12</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">Polished Perfect Diamond</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">Kiillotettu täydellinen Timantti</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="Default"><Data ss:Type="String">ui_gem_frostgem_tier13</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">Royal Diamond</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">Kuninkaallinen Timantti</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="Default"><Data ss:Type="String">ui_gem_frostgem_tier14</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">Polished Royal Diamond</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">Kiillotettu kuninkaallinen Timantti</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="Default"><Data ss:Type="String">ui_gem_frostgem_tier15</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">Celestial Diamond</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">Jumalallinen Timantti</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="Default"><Data ss:Type="String">ui_gem_frostgem_tier16</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">Polished Celestial Diamond</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">Kiillotettu jumalallinen Timantti</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="Default"><Data ss:Type="String">ui_gem_frostgem_tier17</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">Fallen Diamond</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">Lagennut Timantti</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="Default"><Data ss:Type="String">ui_gem_frostgem_tier18</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">Polished Fallen Diamond</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">Kiillotettu langennut Timantti</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="Default"><Data ss:Type="String">ui_gem_frostgem_tier19</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">Divine Diamond</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">Pyhä Timantti</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="Default"><Data ss:Type="String">ui_gem_frostgem_tier20</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">Polished Divine Diamond</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">Kiillotettu pyhä Timantti</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="Default"><Data ss:Type="String">ui_gem_umbragem_tier01</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">Chipped Amber</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">Säröinen Meripihka</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="Default"><Data ss:Type="String">ui_gem_umbragem_tier02</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">Crude Amber</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">Rujo Meripihka</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="Default"><Data ss:Type="String">ui_gem_umbragem_tier03</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">Raw Amber</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">Raaka Meripihka</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="Default"><Data ss:Type="String">ui_gem_umbragem_tier04</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">Flawed Amber</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">Viallinen Meripihka</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="Default"><Data ss:Type="String">ui_gem_umbragem_tier05</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">Amber</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">Meripihka</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="Default"><Data ss:Type="String">ui_gem_umbragem_tier06</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">Polished Amber</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">Kiilotettu Meripihka</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="Default"><Data ss:Type="String">ui_gem_umbragem_tier07</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">Pristine Amber</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">Hieno Meripihka</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="Default"><Data ss:Type="String">ui_gem_umbragem_tier08</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">Polished Pristine Amber</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">Kiilotettu hieno Meripihka</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="Default"><Data ss:Type="String">ui_gem_umbragem_tier09</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">Precious Amber</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">Arvokas Meripihka</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="Default"><Data ss:Type="String">ui_gem_umbragem_tier10</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">Polished Precious Amber</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">Kiillotettu arvokas Meripihka</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="Default"><Data ss:Type="String">ui_gem_umbragem_tier11</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">Perfect Amber</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">Täydellinen Meripihka</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="Default"><Data ss:Type="String">ui_gem_umbragem_tier12</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">Polished Perfect Amber</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">Kiillotettu täydellinen Meripihka</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="Default"><Data ss:Type="String">ui_gem_umbragem_tier13</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">Royal Amber</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">Kuninkaallinen Meripihka</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="Default"><Data ss:Type="String">ui_gem_umbragem_tier14</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">Polished Royal Amber</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">Kiillotettu kuninkaallinen Meripihka</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="Default"><Data ss:Type="String">ui_gem_umbragem_tier15</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">Celestial Amber</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">Jumalallinen Meripihka</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="Default"><Data ss:Type="String">ui_gem_umbragem_tier16</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">Polished Celestial Amber</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">Kiillotettu jumalallinen Meripihka</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="Default"><Data ss:Type="String">ui_gem_umbragem_tier17</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">Fallen Amber</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">Lagennut Meripihka</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="Default"><Data ss:Type="String">ui_gem_umbragem_tier18</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">Polished Fallen Amber</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">Kiillotettu langennut Meripihka</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="Default"><Data ss:Type="String">ui_gem_umbragem_tier19</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">Divine Amber</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">Pyhä Meripihka</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="Default"><Data ss:Type="String">ui_gem_umbragem_tier20</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">Polished Divine Amber</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">Kiillotettu pyhä Meripihka</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="Default"><Data ss:Type="String">ui_gem_sacredgem_tier01</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">Chipped Silverstone</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">Säröinen Hopeakivi</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="Default"><Data ss:Type="String">ui_gem_sacredgem_tier02</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">Crude Silverstone</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">Rujo Hopeakivi</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="Default"><Data ss:Type="String">ui_gem_sacredgem_tier03</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">Raw Silverstone</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">Raaka Hopeakivi</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="Default"><Data ss:Type="String">ui_gem_sacredgem_tier04</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">Flawed Silverstone</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">Viallinen Hopeakivi</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="Default"><Data ss:Type="String">ui_gem_sacredgem_tier05</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">Silverstone</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">Hopeakivi</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="Default"><Data ss:Type="String">ui_gem_sacredgem_tier06</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">Polished Silverstone</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">Kiilotettu Hopeakivi</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="Default"><Data ss:Type="String">ui_gem_sacredgem_tier07</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">Pristine Silverstone</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">Hieno Hopeakivi</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="Default"><Data ss:Type="String">ui_gem_sacredgem_tier08</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">Polished Pristine Silverstone</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">Kiilotettu hieno Hopeakivi</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="Default"><Data ss:Type="String">ui_gem_sacredgem_tier09</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">Precious Silverstone</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">Arvokas Hopeakivi</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="Default"><Data ss:Type="String">ui_gem_sacredgem_tier10</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">Polished Precious Silverstone</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">Kiillotettu arvokas Hopeakivi</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="Default"><Data ss:Type="String">ui_gem_sacredgem_tier11</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">Perfect Silverstone</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">Täydellinen Hopeakivi</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="Default"><Data ss:Type="String">ui_gem_sacredgem_tier12</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">Polished Perfect Silverstone</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">Kiillotettu täydellinen Hopeakivi</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="Default"><Data ss:Type="String">ui_gem_sacredgem_tier13</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">Royal Silverstone</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">Kuninkaallinen Hopeakivi</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="Default"><Data ss:Type="String">ui_gem_sacredgem_tier14</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">Polished Royal Silverstone</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">Kiillotettu kuninkaallinen Hopeakivi</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="Default"><Data ss:Type="String">ui_gem_sacredgem_tier15</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">Celestial Silverstone</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">Jumalallinen Hopeakivi</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="Default"><Data ss:Type="String">ui_gem_sacredgem_tier16</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">Polished Celestial Silverstone</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">Kiillotettu jumalallinen Hopeakivi</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="Default"><Data ss:Type="String">ui_gem_sacredgem_tier17</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">Fallen Silverstone</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">Lagennut Hopeakivi</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="Default"><Data ss:Type="String">ui_gem_sacredgem_tier18</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">Polished Fallen Silverstone</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">Kiillotettu langennut Hopeakivi</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="Default"><Data ss:Type="String">ui_gem_sacredgem_tier19</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">Divine Silverstone</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">Pyhä Hopeakivi</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="Default"><Data ss:Type="String">ui_gem_sacredgem_tier20</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">Polished Divine Silverstone</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">Kiillotettu pyhä Hopeakivi</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="Default"><Data ss:Type="String">ui_gem_shadowgem_tier01</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">Chipped Sapphire</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">Säröinen Safiiri</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="Default"><Data ss:Type="String">ui_gem_shadowgem_tier02</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">Crude Sapphire</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">Rujo Safiiri</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="Default"><Data ss:Type="String">ui_gem_shadowgem_tier03</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">Raw Sapphire</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">Raaka Safiiri</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="Default"><Data ss:Type="String">ui_gem_shadowgem_tier04</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">Flawed Sapphire</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">Viallinen Safiiri</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="Default"><Data ss:Type="String">ui_gem_shadowgem_tier05</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">Sapphire</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">Safiiri</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="Default"><Data ss:Type="String">ui_gem_shadowgem_tier06</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">Polished Sapphire</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">Kiilotettu Safiiri</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="Default"><Data ss:Type="String">ui_gem_shadowgem_tier07</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">Pristine Sapphire</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">Hieno Safiiri</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="Default"><Data ss:Type="String">ui_gem_shadowgem_tier08</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">Polished Pristine Sapphire</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">Kiilotettu hieno Safiiri</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="Default"><Data ss:Type="String">ui_gem_shadowgem_tier09</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">Precious Sapphire</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">Arvokas Safiiri</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="Default"><Data ss:Type="String">ui_gem_shadowgem_tier10</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">Polished Precious Sapphire</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">Kiillotettu arvokas Safiiri</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="Default"><Data ss:Type="String">ui_gem_shadowgem_tier11</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">Perfect Sapphire</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">Täydellinen Safiiri</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="Default"><Data ss:Type="String">ui_gem_shadowgem_tier12</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">Polished Perfect Sapphire</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">Kiillotettu täydellinen Safiiri</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="Default"><Data ss:Type="String">ui_gem_shadowgem_tier13</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">Royal Sapphire</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">Kuninkaallinen Safiiri</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="Default"><Data ss:Type="String">ui_gem_shadowgem_tier14</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">Polished Royal Sapphire</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">Kiillotettu kuninkaallinen Safiiri</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="Default"><Data ss:Type="String">ui_gem_shadowgem_tier15</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">Celestial Sapphire</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">Jumalallinen Safiiri</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="Default"><Data ss:Type="String">ui_gem_shadowgem_tier16</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">Polished Celestial Sapphire</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">Kiillotettu jumalallinen Safiiri</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="Default"><Data ss:Type="String">ui_gem_shadowgem_tier17</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">Fallen Sapphire</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">Lagennut Safiiri</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="Default"><Data ss:Type="String">ui_gem_shadowgem_tier18</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">Polished Fallen Sapphire</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">Kiillotettu langennut Safiiri</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="Default"><Data ss:Type="String">ui_gem_shadowgem_tier19</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">Divine Sapphire</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">Pyhä Safiiri</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="Default"><Data ss:Type="String">ui_gem_shadowgem_tier20</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">Polished Divine Sapphire</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">Kiillotettu pyhä Safiiri</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="Default"><Data ss:Type="String">ui_gem_poisongem_tier01</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">Chipped Emerald</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">Säröinen Smaragdi</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="Default"><Data ss:Type="String">ui_gem_poisongem_tier02</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">Crude Emerald</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">Rujo Smaragdi</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="Default"><Data ss:Type="String">ui_gem_poisongem_tier03</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">Raw Emerald</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">Raaka Smaragdi</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="Default"><Data ss:Type="String">ui_gem_poisongem_tier04</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">Flawed Emerald</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">Viallinen Smaragdi</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="Default"><Data ss:Type="String">ui_gem_poisongem_tier05</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">Emerald</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">Smaragdi</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="Default"><Data ss:Type="String">ui_gem_poisongem_tier06</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">Polished Emerald</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">Kiilotettu Smaragdi</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="Default"><Data ss:Type="String">ui_gem_poisongem_tier07</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">Pristine Emerald</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">Hieno Smaragdi</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="Default"><Data ss:Type="String">ui_gem_poisongem_tier08</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">Polished Pristine Emerald</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">Kiilotettu hieno Smaragdi</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="Default"><Data ss:Type="String">ui_gem_poisongem_tier09</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">Precious Emerald</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">Arvokas Smaragdi</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="Default"><Data ss:Type="String">ui_gem_poisongem_tier10</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">Polished Precious Emerald</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">Kiillotettu arvokas Smaragdi</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="Default"><Data ss:Type="String">ui_gem_poisongem_tier11</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">Perfect Emerald</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">Täydellinen Smaragdi</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="Default"><Data ss:Type="String">ui_gem_poisongem_tier12</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">Polished Perfect Emerald</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">Kiillotettu täydellinen Smaragdi</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="Default"><Data ss:Type="String">ui_gem_poisongem_tier13</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">Royal Emerald</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">Kuninkaallinen Smaragdi</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="Default"><Data ss:Type="String">ui_gem_poisongem_tier14</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">Polished Royal Emerald</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">Kiillotettu kuninkaallinen Smaragdi</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="Default"><Data ss:Type="String">ui_gem_poisongem_tier15</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">Celestial Emerald</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">Jumalallinen Smaragdi</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="Default"><Data ss:Type="String">ui_gem_poisongem_tier16</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">Polished Celestial Emerald</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">Kiillotettu jumalallinen Smaragdi</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="Default"><Data ss:Type="String">ui_gem_poisongem_tier17</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">Fallen Emerald</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">Lagennut Smaragdi</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="Default"><Data ss:Type="String">ui_gem_poisongem_tier18</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">Polished Fallen Emerald</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">Kiillotettu langennut Smaragdi</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="Default"><Data ss:Type="String">ui_gem_poisongem_tier19</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">Divine Emerald</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">Pyhä Smaragdi</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="Default"><Data ss:Type="String">ui_gem_poisongem_tier20</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">Polished Divine Emerald</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">Kiillotettu pyhä Smaragdi</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="Default"><Data ss:Type="String">ui_gem_bleedgem_tier01</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">Chipped Ruby</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">Säröinen Rubiini</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="Default"><Data ss:Type="String">ui_gem_bleedgem_tier02</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">Crude Ruby</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">Rujo Rubiini</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="Default"><Data ss:Type="String">ui_gem_bleedgem_tier03</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">Raw Ruby</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">Raaka Rubiini</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="Default"><Data ss:Type="String">ui_gem_bleedgem_tier04</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">Flawed Ruby</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">Viallinen Rubiini</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="Default"><Data ss:Type="String">ui_gem_bleedgem_tier05</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">Ruby</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">Rubiini</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="Default"><Data ss:Type="String">ui_gem_bleedgem_tier06</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">Polished Ruby</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">Kiilotettu Rubiini</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="Default"><Data ss:Type="String">ui_gem_bleedgem_tier07</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">Pristine Ruby</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">Hieno Rubiini</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="Default"><Data ss:Type="String">ui_gem_bleedgem_tier08</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">Polished Pristine Ruby</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">Kiilotettu hieno Rubiini</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="Default"><Data ss:Type="String">ui_gem_bleedgem_tier09</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">Precious Ruby</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">Arvokas Rubiini</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="Default"><Data ss:Type="String">ui_gem_bleedgem_tier10</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">Polished Precious Ruby</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">Kiillotettu arvokas Rubiini</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="Default"><Data ss:Type="String">ui_gem_bleedgem_tier11</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">Perfect Ruby</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">Täydellinen Rubiini</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="Default"><Data ss:Type="String">ui_gem_bleedgem_tier12</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">Polished Perfect Ruby</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">Kiillotettu täydellinen Rubiini</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="Default"><Data ss:Type="String">ui_gem_bleedgem_tier13</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">Royal Ruby</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">Kuninkaallinen Rubiini</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="Default"><Data ss:Type="String">ui_gem_bleedgem_tier14</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">Polished Royal Ruby</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">Kiillotettu kuninkaallinen Rubiini</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="Default"><Data ss:Type="String">ui_gem_bleedgem_tier15</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">Celestial Ruby</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">Jumalallinen Rubiini</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="Default"><Data ss:Type="String">ui_gem_bleedgem_tier16</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">Polished Celestial Ruby</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">Kiillotettu jumalallinen Rubiini</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="Default"><Data ss:Type="String">ui_gem_bleedgem_tier17</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">Fallen Ruby</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">Lagennut Rubiini</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="Default"><Data ss:Type="String">ui_gem_bleedgem_tier18</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">Polished Fallen Ruby</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">Kiillotettu langennut Rubiini</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="Default"><Data ss:Type="String">ui_gem_bleedgem_tier19</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">Divine Ruby</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">Pyhä Rubiini</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="Default"><Data ss:Type="String">ui_gem_bleedgem_tier20</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">Polished Divine Ruby</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">Kiillotettu pyhä Rubiini</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="Default"><Data ss:Type="String">ui_gem_physicalgem_tier01</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">Chipped Copperstone</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">Säröinen Kuparikivi</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="Default"><Data ss:Type="String">ui_gem_physicalgem_tier02</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">Crude Copperstone</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">Rujo Kuparikivi</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="Default"><Data ss:Type="String">ui_gem_physicalgem_tier03</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">Raw Copperstone</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">Raaka Kuparikivi</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="Default"><Data ss:Type="String">ui_gem_physicalgem_tier04</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">Flawed Copperstone</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">Viallinen Kuparikivi</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="Default"><Data ss:Type="String">ui_gem_physicalgem_tier05</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">Copperstone</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">Kuparikivi</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="Default"><Data ss:Type="String">ui_gem_physicalgem_tier06</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">Polished Copperstone</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">Kiilotettu Kuparikivi</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="Default"><Data ss:Type="String">ui_gem_physicalgem_tier07</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">Pristine Copperstone</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">Hieno Kuparikivi</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="Default"><Data ss:Type="String">ui_gem_physicalgem_tier08</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">Polished Pristine Copperstone</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">Kiilotettu hieno Kuparikivi</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="Default"><Data ss:Type="String">ui_gem_physicalgem_tier09</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">Precious Copperstone</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">Arvokas Kuparikivi</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="Default"><Data ss:Type="String">ui_gem_physicalgem_tier10</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">Polished Precious Copperstone</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">Kiillotettu arvokas Kuparikivi</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="Default"><Data ss:Type="String">ui_gem_physicalgem_tier11</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">Perfect Copperstone</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">Täydellinen Kuparikivi</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="Default"><Data ss:Type="String">ui_gem_physicalgem_tier12</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">Polished Perfect Copperstone</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">Kiillotettu täydellinen Kuparikivi</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="Default"><Data ss:Type="String">ui_gem_physicalgem_tier13</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">Royal Copperstone</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">Kuninkaallinen Kuparikivi</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="Default"><Data ss:Type="String">ui_gem_physicalgem_tier14</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">Polished Royal Copperstone</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">Kiillotettu kuninkaallinen Kuparikivi</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="Default"><Data ss:Type="String">ui_gem_physicalgem_tier15</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">Celestial Copperstone</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">Jumalallinen Kuparikivi</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="Default"><Data ss:Type="String">ui_gem_physicalgem_tier16</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">Polished Celestial Copperstone</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">Kiillotettu jumalallinen Kuparikivi</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="Default"><Data ss:Type="String">ui_gem_physicalgem_tier17</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">Fallen Copperstone</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">Lagennut Kuparikivi</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="Default"><Data ss:Type="String">ui_gem_physicalgem_tier18</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">Polished Fallen Copperstone</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">Kiillotettu langennut Kuparikivi</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="Default"><Data ss:Type="String">ui_gem_physicalgem_tier19</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">Divine Copperstone</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">Pyhä Kuparikivi</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="Default"><Data ss:Type="String">ui_gem_physicalgem_tier20</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">Polished Divine Copperstone</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">Kiillotettu pyhä Kuparikivi</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="Default"><Data ss:Type="String">ui_gem_ferocitygem_tier01</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">Chipped Goldstone</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">Säröinen Kultakivi</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="Default"><Data ss:Type="String">ui_gem_ferocitygem_tier02</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">Crude Goldstone</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">Rujo Kultakivi</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="Default"><Data ss:Type="String">ui_gem_ferocitygem_tier03</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">Raw Goldstone</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">Raaka Kultakivi</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="Default"><Data ss:Type="String">ui_gem_ferocitygem_tier04</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">Flawed Goldstone</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">Viallinen Kultakivi</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="Default"><Data ss:Type="String">ui_gem_ferocitygem_tier05</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">Goldstone</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">Kultakivi</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="Default"><Data ss:Type="String">ui_gem_ferocitygem_tier06</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">Polished Goldstone</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">Kiilotettu Kultakivi</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="Default"><Data ss:Type="String">ui_gem_ferocitygem_tier07</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">Pristine Goldstone</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">Hieno Kultakivi</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="Default"><Data ss:Type="String">ui_gem_ferocitygem_tier08</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">Polished Pristine Goldstone</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">Kiilotettu hieno Kultakivi</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="Default"><Data ss:Type="String">ui_gem_ferocitygem_tier09</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">Precious Goldstone</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">ArvokasKultakivi</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="Default"><Data ss:Type="String">ui_gem_ferocitygem_tier10</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">Polished Precious Goldstone</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">Kiillotettu arvokas Kultakivi</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="Default"><Data ss:Type="String">ui_gem_ferocitygem_tier11</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">Perfect Goldstone</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">Täydellinen Kultakivi</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="Default"><Data ss:Type="String">ui_gem_ferocitygem_tier12</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">Polished Perfect Goldstone</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">Kiillotettu täydellinen Kultakivi</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="Default"><Data ss:Type="String">ui_gem_ferocitygem_tier13</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">Royal Goldstone</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">Kuninkaallinen Kultakivi</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="Default"><Data ss:Type="String">ui_gem_ferocitygem_tier14</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">Polished Royal Goldstone</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">Kiillotettu kuninkaallinen Kultakivi</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="Default"><Data ss:Type="String">ui_gem_ferocitygem_tier15</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">Celestial Goldstone</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">Jumalallinen Kultakivi</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="Default"><Data ss:Type="String">ui_gem_ferocitygem_tier16</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">Polished Celestial Goldstone</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">Kiillotettu jumalallinen Kultakivi</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="Default"><Data ss:Type="String">ui_gem_ferocitygem_tier17</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">Fallen Goldstone</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">Lagennut Kultakivi</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="Default"><Data ss:Type="String">ui_gem_ferocitygem_tier18</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">Polished Fallen Goldstone</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">Kiillotettu langennut Kultakivi</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="Default"><Data ss:Type="String">ui_gem_ferocitygem_tier19</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">Divine Goldstone</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">Pyhä Kultakivi</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="Default"><Data ss:Type="String">ui_gem_ferocitygem_tier20</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">Polished Divine Goldstone</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">Kiillotettu pyhä Kultakivi</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="Default"><Data ss:Type="String">ui_gem_agilitygem_tier01</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">Chipped Beryl</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">Säröinen Berylli</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="Default"><Data ss:Type="String">ui_gem_agilitygem_tier02</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">Crude Beryl</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">Rujo Berylli</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="Default"><Data ss:Type="String">ui_gem_agilitygem_tier03</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">Raw Beryl</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">Raaka Berylli</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="Default"><Data ss:Type="String">ui_gem_agilitygem_tier04</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">Flawed Beryl</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">Viallinen Berylli</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="Default"><Data ss:Type="String">ui_gem_agilitygem_tier05</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">Beryl</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">Berylli</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="Default"><Data ss:Type="String">ui_gem_agilitygem_tier06</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">Polished Beryl</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">Kiilotettu Berylli</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="Default"><Data ss:Type="String">ui_gem_agilitygem_tier07</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">Pristine Beryl</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">Hieno Berylli</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="Default"><Data ss:Type="String">ui_gem_agilitygem_tier08</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">Polished Pristine Beryl</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">Kiilotettu hieno Berylli</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="Default"><Data ss:Type="String">ui_gem_agilitygem_tier09</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">Precious Beryl</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">Arvokas Berylli</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="Default"><Data ss:Type="String">ui_gem_agilitygem_tier10</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">Polished Precious Beryl</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">Kiillotettu arvokas Berylli</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="Default"><Data ss:Type="String">ui_gem_agilitygem_tier11</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">Perfect Beryl</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">Täydellinen Berylli</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="Default"><Data ss:Type="String">ui_gem_agilitygem_tier12</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">Polished Perfect Beryl</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">Kiillotettu täydellinen Berylli</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="Default"><Data ss:Type="String">ui_gem_agilitygem_tier13</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">Royal Beryl</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">Kuninkaallinen Berylli</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="Default"><Data ss:Type="String">ui_gem_agilitygem_tier14</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">Polished Royal Beryl</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">Kiillotettu kuninkaallinen Berylli</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="Default"><Data ss:Type="String">ui_gem_agilitygem_tier15</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">Celestial Beryl</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">Jumalallinen Berylli</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="Default"><Data ss:Type="String">ui_gem_agilitygem_tier16</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">Polished Celestial Beryl</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">Kiillotettu jumalallinen Berylli</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="Default"><Data ss:Type="String">ui_gem_agilitygem_tier17</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">Fallen Beryl</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">Lagennut Berylli</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="Default"><Data ss:Type="String">ui_gem_agilitygem_tier18</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">Polished Fallen Beryl</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">Kiillotettu langennut Berylli</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="Default"><Data ss:Type="String">ui_gem_agilitygem_tier19</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">Divine Beryl</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">Pyhä Berylli</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="Default"><Data ss:Type="String">ui_gem_agilitygem_tier20</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">Polished Divine Beryl</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">Kiillotettu pyhä Berylli</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="Default"><Data ss:Type="String">ui_gem_willpowergem_tier01</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">Chipped Cyanite</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">Säröinen Berylli</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="Default"><Data ss:Type="String">ui_gem_willpowergem_tier02</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">Crude Cyanite</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">Rujo Kyaniitti</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="Default"><Data ss:Type="String">ui_gem_willpowergem_tier03</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">Raw Cyanite</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">Raaka Kyaniitti</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="Default"><Data ss:Type="String">ui_gem_willpowergem_tier04</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">Flawed Cyanite</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">Viallinen Kyaniitti</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="Default"><Data ss:Type="String">ui_gem_willpowergem_tier05</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">Cyanite</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">Kyaniitti</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="Default"><Data ss:Type="String">ui_gem_willpowergem_tier06</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">Polished Cyanite</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">Kiilotettu Kyaniitti</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="Default"><Data ss:Type="String">ui_gem_willpowergem_tier07</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">Pristine Cyanite</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">Hieno Kyaniitti</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="Default"><Data ss:Type="String">ui_gem_willpowergem_tier08</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">Polished Pristine Cyanite</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">Kiilotettu hieno Kyaniitti</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="Default"><Data ss:Type="String">ui_gem_willpowergem_tier09</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">Precious Cyanite</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">Arvokas Kyaniitti</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="Default"><Data ss:Type="String">ui_gem_willpowergem_tier10</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">Polished Precious Cyanite</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">Kiillotettu arvokas Kyaniitti</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="Default"><Data ss:Type="String">ui_gem_willpowergem_tier11</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">Perfect Cyanite</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">Täydellinen Kyaniitti</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="Default"><Data ss:Type="String">ui_gem_willpowergem_tier12</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">Polished Perfect Cyanite</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">Kiillotettu täydellinen Kyaniitti</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="Default"><Data ss:Type="String">ui_gem_willpowergem_tier13</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">Royal Cyanite</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">Kuninkaallinen Kyaniitti</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="Default"><Data ss:Type="String">ui_gem_willpowergem_tier14</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">Polished Royal Cyanite</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">Kiillotettu kuninkaallinen Kyaniitti</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="Default"><Data ss:Type="String">ui_gem_willpowergem_tier15</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">Celestial Cyanite</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">Jumalallinen Kyaniitti</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="Default"><Data ss:Type="String">ui_gem_willpowergem_tier16</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">Polished Celestial Cyanite</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">Kiillotettu jumalallinen Kyaniitti</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="Default"><Data ss:Type="String">ui_gem_willpowergem_tier17</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">Fallen Cyanite</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">Lagennut Kyaniitti</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="Default"><Data ss:Type="String">ui_gem_willpowergem_tier18</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">Polished Fallen Cyanite</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">Kiillotettu langennut Kyaniitti</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="Default"><Data ss:Type="String">ui_gem_willpowergem_tier19</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">Divine Cyanite</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">Pyhä Kyaniitti</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="Default"><Data ss:Type="String">ui_gem_willpowergem_tier20</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">Polished Divine Cyanite</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">Kiillotettu pyhä Kyaniitti</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="Default"><Data ss:Type="String">ui_gem_toughnessgem_tier01</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">Chipped Amethyste</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">Säröinen Kyaniitti</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="Default"><Data ss:Type="String">ui_gem_toughnessgem_tier02</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">Crude Amethyste</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">Rujo Ametisti</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="Default"><Data ss:Type="String">ui_gem_toughnessgem_tier03</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">Raw Amethyste</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">Raaka Ametisti</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="Default"><Data ss:Type="String">ui_gem_toughnessgem_tier04</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">Flawed Amethyste</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">Viallinen Ametisti</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="Default"><Data ss:Type="String">ui_gem_toughnessgem_tier05</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">Amethyste</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">Ametisti</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="Default"><Data ss:Type="String">ui_gem_toughnessgem_tier06</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">Polished Amethyste</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">Kiilotettu Ametisti</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="Default"><Data ss:Type="String">ui_gem_toughnessgem_tier07</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">Pristine Amethyste</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">Hieno Ametisti</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="Default"><Data ss:Type="String">ui_gem_toughnessgem_tier08</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">Polished Pristine Amethyste</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">Kiilotettu hieno Ametisti</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="Default"><Data ss:Type="String">ui_gem_toughnessgem_tier09</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">Precious Amethyste</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">Arvokas Ametisti</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="Default"><Data ss:Type="String">ui_gem_toughnessgem_tier10</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">Polished Precious Amethyste</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">Kiillotettu arvokas Ametisti</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="Default"><Data ss:Type="String">ui_gem_toughnessgem_tier11</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">Perfect Amethyste</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">Täydellinen Ametisti</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="Default"><Data ss:Type="String">ui_gem_toughnessgem_tier12</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">Polished Perfect Amethyste</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">Kiillotettu täydellinen Ametisti</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="Default"><Data ss:Type="String">ui_gem_toughnessgem_tier13</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">Royal Amethyste</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">Kuninkaallinen Ametisti</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="Default"><Data ss:Type="String">ui_gem_toughnessgem_tier14</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">Polished Royal Amethyste</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">Kiillotettu kuninkaallinen Ametisti</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="Default"><Data ss:Type="String">ui_gem_toughnessgem_tier15</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">Celestial Amethyste</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">Jumalallinen Ametisti</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="Default"><Data ss:Type="String">ui_gem_toughnessgem_tier16</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">Polished Celestial Amethyste</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">Kiillotettu jumalallinen Ametisti</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="Default"><Data ss:Type="String">ui_gem_toughnessgem_tier17</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">Fallen Amethyste</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">Lagennut Ametisti</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="Default"><Data ss:Type="String">ui_gem_toughnessgem_tier18</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">Polished Fallen Amethyste</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">Kiillotettu langennut Ametisti</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="Default"><Data ss:Type="String">ui_gem_toughnessgem_tier19</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">Divine Amethyste</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">Pyhä Ametisti</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="Default"><Data ss:Type="String">ui_gem_toughnessgem_tier20</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">Polished Divine Amethyste</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">Kiillotettu pyhä Ametisti</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="Default"><Data ss:Type="String">ui_gem_chancegem_tier01</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">Chipped Alexandrite</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">Säröinen Aleksandriitti</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="Default"><Data ss:Type="String">ui_gem_chancegem_tier02</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">Crude Alexandrite</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">Rujo Aleksandriitti</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="Default"><Data ss:Type="String">ui_gem_chancegem_tier03</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">Raw Alexandrite</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">Raaka Aleksandriitti</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="Default"><Data ss:Type="String">ui_gem_chancegem_tier04</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">Flawed Alexandrite</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">Viallinen Aleksandriitti</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="Default"><Data ss:Type="String">ui_gem_chancegem_tier05</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">Alexandrite</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">Aleksandriitti</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="Default"><Data ss:Type="String">ui_gem_chancegem_tier06</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">Polished Alexandrite</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">Kiilotettu Aleksandriitti</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="Default"><Data ss:Type="String">ui_gem_chancegem_tier07</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">Pristine Alexandrite</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">Hieno Aleksandriitti</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="Default"><Data ss:Type="String">ui_gem_chancegem_tier08</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">Polished Pristine Alexandrite</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">Kiilotettu hieno Aleksandriitti</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="Default"><Data ss:Type="String">ui_gem_chancegem_tier09</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">Precious Alexandrite</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">Arvokas Aleksandriitti</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="Default"><Data ss:Type="String">ui_gem_chancegem_tier10</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">Polished Precious Alexandrite</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">Kiillotettu arvokas Aleksandriitti</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="Default"><Data ss:Type="String">ui_gem_chancegem_tier11</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">Perfect Alexandrite</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">Täydellinen Aleksandriitti</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="Default"><Data ss:Type="String">ui_gem_chancegem_tier12</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">Polished Perfect Alexandrite</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">Kiillotettu täydellinen Aleksandriitti</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="Default"><Data ss:Type="String">ui_gem_chancegem_tier13</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">Royal Alexandrite</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">Kuninkaallinen Aleksandriitti</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="Default"><Data ss:Type="String">ui_gem_chancegem_tier14</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">Polished Royal Alexandrite</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">Kiillotettu kuninkaallinen Aleksandriitti</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="Default"><Data ss:Type="String">ui_gem_chancegem_tier15</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">Celestial Alexandrite</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">Jumalallinen Aleksandriitti</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="Default"><Data ss:Type="String">ui_gem_chancegem_tier16</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">Polished Celestial Alexandrite</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">Kiillotettu jumalallinen Aleksandriitti</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="Default"><Data ss:Type="String">ui_gem_chancegem_tier17</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">Fallen Alexandrite</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">Lagennut Aleksandriitti</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="Default"><Data ss:Type="String">ui_gem_chancegem_tier18</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">Polished Fallen Alexandrite</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">Kiillotettu langennut Aleksandriitti</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="Default"><Data ss:Type="String">ui_gem_chancegem_tier19</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">Divine Alexandrite</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">Pyhä Aleksandriitti</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="Default"><Data ss:Type="String">ui_gem_chancegem_tier20</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">Polished Divine Alexandrite</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">Kiillotettu pyhä Aleksandriitti</Data></Cell>
+   </Row>
+  </Table>
+  <WorksheetOptions xmlns="urn:schemas-microsoft-com:office:excel">
+   <PageSetup>
+    <Layout x:Orientation="Landscape"/>
+    <Header x:Margin="0.51181102362204722"
+     x:Data="&amp;LTime restriction sample script"/>
+    <Footer x:Margin="0.51181102362204722" x:Data="Page &amp;P"/>
+    <PageMargins x:Bottom="0.98425196850393704" x:Left="0" x:Right="0"
+     x:Top="0.98425196850393704"/>
+   </PageSetup>
+   <Unsynced/>
+   <Print>
+    <ValidPrinterInfo/>
+    <PaperSizeIndex>9</PaperSizeIndex>
+    <Scale>70</Scale>
+    <HorizontalResolution>600</HorizontalResolution>
+    <VerticalResolution>600</VerticalResolution>
+   </Print>
+   <Selected/>
+   <TopRowVisible>46</TopRowVisible>
+   <Panes>
+    <Pane>
+     <Number>3</Number>
+     <ActiveRow>75</ActiveRow>
+     <RangeSelection>R76C1:R87C1</RangeSelection>
+    </Pane>
+   </Panes>
+   <ProtectObjects>False</ProtectObjects>
+   <ProtectScenarios>False</ProtectScenarios>
+  </WorksheetOptions>
+ </Worksheet>
+</Workbook>

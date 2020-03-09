@@ -1,0 +1,726 @@
+<?xml version="1.0"?>
+<?mso-application progid="Excel.Sheet"?>
+<Workbook xmlns="urn:schemas-microsoft-com:office:spreadsheet"
+ xmlns:o="urn:schemas-microsoft-com:office:office"
+ xmlns:x="urn:schemas-microsoft-com:office:excel"
+ xmlns:ss="urn:schemas-microsoft-com:office:spreadsheet"
+ xmlns:html="http://www.w3.org/TR/REC-html40">
+ <DocumentProperties xmlns="urn:schemas-microsoft-com:office:office">
+  <Title>Audio script template</Title>
+  <Author>Maëlenn Lumineau</Author>
+  <LastAuthor>Yidhra</LastAuthor>
+  <LastPrinted>2003-10-30T09:38:41Z</LastPrinted>
+  <Created>2002-06-17T19:14:00Z</Created>
+  <LastSaved>2018-10-15T15:09:24Z</LastSaved>
+  <Company>Electronic Arts</Company>
+  <Version>16.00</Version>
+ </DocumentProperties>
+ <OfficeDocumentSettings xmlns="urn:schemas-microsoft-com:office:office">
+  <AllowPNG/>
+ </OfficeDocumentSettings>
+ <ExcelWorkbook xmlns="urn:schemas-microsoft-com:office:excel">
+  <SupBook>
+   <Path>\DOCUME~1\jack\LOCALS~1\Temp\p4v\PC025 perforce 1666\data\Game02\Game\Languages\Copy of Dialog_Asset_List_Final_edit.xls</Path>
+   <SheetName>DropDown</SheetName>
+   <SheetName>Conversations</SheetName>
+   <Xct>
+    <Count>2</Count>
+    <SheetIndex>0</SheetIndex>
+    <Crn>
+     <Row>6</Row>
+     <ColFirst>0</ColFirst>
+     <ColLast>4</ColLast>
+     <Text>clean</Text>
+     <Text>TV</Text>
+     <Text>radio (disturbed) </Text>
+     <Text>radio (low)</Text>
+     <Text>radio (heavy)</Text>
+    </Crn>
+    <Crn>
+     <Row>9</Row>
+     <ColFirst>0</ColFirst>
+     <ColLast>41</ColLast>
+     <Text>Player</Text>
+     <Text>Barnes</Text>
+     <Text>Hawker</Text>
+     <Text>Sykes</Text>
+     <Text>Johnson</Text>
+     <Text>Cortez</Text>
+     <Text>Beck</Text>
+     <Text>Miller</Text>
+     <Text>Baxter</Text>
+     <Text>American scientist</Text>
+     <Text>Shark</Text>
+     <Text>Chia</Text>
+     <Text>Kirovski</Text>
+     <Text>Michaels</Text>
+     <Text>Chang</Text>
+     <Text>Marine Soldier a</Text>
+     <Text>Marine Soldier b</Text>
+     <Text>Chinese Soldier a</Text>
+     <Text>Chinese Soldier b</Text>
+     <Text>Chinese Soldier c</Text>
+     <Text>Chinese Soldier d</Text>
+     <Text>Chinese Soldier e</Text>
+     <Text>Chinese Soldier f</Text>
+     <Text>Chinese Officer a</Text>
+     <Text>Chinese Officer b</Text>
+     <Text>Chinese Scientist a</Text>
+     <Text>Chinese Scientist b</Text>
+     <Text>Chinese Scientist Female a</Text>
+     <Text>Chinese Scientist Female b</Text>
+     <Text>Filmcrew Member</Text>
+     <Text>Morrison</Text>
+     <Text>C17 Pilot a</Text>
+     <Text>C17 Pilot b</Text>
+     <Text>Submarine Commander Davis</Text>
+     <Text>Pilot (camera)</Text>
+     <Text>Bridge officer 1</Text>
+     <Text>Bridge officer 2</Text>
+     <Text>Carrier deck guide</Text>
+     <Text>Jet Pilot</Text>
+     <Text>VTOL Pilot</Text>
+     <Text>Commander (camera)</Text>
+     <Text>Team Two (camera)</Text>
+    </Crn>
+   </Xct>
+  </SupBook>
+  <WindowHeight>14565</WindowHeight>
+  <WindowWidth>28800</WindowWidth>
+  <WindowTopX>32767</WindowTopX>
+  <WindowTopY>32767</WindowTopY>
+  <TabRatio>274</TabRatio>
+  <RefModeR1C1/>
+  <ProtectStructure>False</ProtectStructure>
+  <ProtectWindows>False</ProtectWindows>
+ </ExcelWorkbook>
+ <Styles>
+  <Style ss:ID="Default" ss:Name="Normal">
+   <Alignment ss:Vertical="Bottom"/>
+   <Borders/>
+   <Font ss:FontName="Arial" x:Family="Swiss"/>
+   <Interior/>
+   <NumberFormat/>
+   <Protection/>
+  </Style>
+  <Style ss:ID="s40" ss:Name="40&#160;% - Accent1">
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="11" ss:Color="#000000"/>
+   <Interior ss:Color="#BDD7EE" ss:Pattern="Solid"/>
+  </Style>
+  <Style ss:ID="s27" ss:Name="Insatisfaisant">
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="11" ss:Color="#800000"/>
+   <Interior ss:Color="#FFC7CE" ss:Pattern="Solid"/>
+  </Style>
+  <Style ss:ID="s28" ss:Name="Neutre">
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="11" ss:Color="#993300"/>
+   <Interior ss:Color="#FFEB9C" ss:Pattern="Solid"/>
+  </Style>
+  <Style ss:ID="s26" ss:Name="Satisfaisant">
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="11" ss:Color="#008000"/>
+   <Interior ss:Color="#C6EFCE" ss:Pattern="Solid"/>
+  </Style>
+  <Style ss:ID="m537447728" ss:Parent="s40">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Bottom" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="2"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="2"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="2"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="2"/>
+   </Borders>
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="11" ss:Color="#000000"
+    ss:Bold="1"/>
+  </Style>
+  <Style ss:ID="m537447748" ss:Parent="s40">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Bottom" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="2"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="2"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="2"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="2"/>
+   </Borders>
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="11" ss:Color="#000000"
+    ss:Bold="1"/>
+  </Style>
+  <Style ss:ID="s62">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Top" ss:WrapText="1"/>
+   <Borders/>
+  </Style>
+  <Style ss:ID="s63">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Top" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Courier New" x:Family="Modern" ss:Color="#FFFFFF" ss:Bold="1"/>
+   <Interior ss:Color="#FFCC00" ss:Pattern="Solid"/>
+  </Style>
+  <Style ss:ID="s64">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Top" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Courier New" x:Family="Modern" ss:Color="#FFFFFF" ss:Bold="1"/>
+   <Interior ss:Color="#FF0000" ss:Pattern="Solid"/>
+  </Style>
+  <Style ss:ID="s78">
+   <Borders/>
+  </Style>
+ </Styles>
+ <Names>
+  <NamedRange ss:Name="characters"
+   ss:RefersTo="='\DOCUME~1\jack\LOCALS~1\Temp\p4v\PC025 perforce 1666\data\Game02\Game\Languages\[Copy of Dialog_Asset_List_Final_edit.xls]DropDown'!R10C1:R10C42"/>
+  <NamedRange ss:Name="type"
+   ss:RefersTo="='\DOCUME~1\jack\LOCALS~1\Temp\p4v\PC025 perforce 1666\data\Game02\Game\Languages\[Copy of Dialog_Asset_List_Final_edit.xls]DropDown'!R7C1:R7C5"/>
+ </Names>
+ <Worksheet ss:Name="Sheet1">
+  <Names>
+   <NamedRange ss:Name="Print_Area" ss:RefersTo="=Sheet1!R1C2:R1C3"/>
+  </Names>
+  <Table ss:ExpandedColumnCount="4" ss:ExpandedRowCount="1402" x:FullColumns="1"
+   x:FullRows="1" ss:DefaultColumnWidth="60">
+   <Column ss:AutoFitWidth="0" ss:Width="257.25"/>
+   <Column ss:AutoFitWidth="0" ss:Width="349.5"/>
+   <Column ss:AutoFitWidth="0" ss:Width="329.25"/>
+   <Column ss:AutoFitWidth="0" ss:Width="160.5"/>
+   <Row ss:AutoFitHeight="0" ss:Height="14.25" ss:StyleID="s62">
+    <Cell ss:StyleID="s63"><Data ss:Type="String">KEY</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">ORIGINAL TEXT</Data><NamedCell
+      ss:Name="Print_Area"/></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">TRANSLATED TEXT</Data><NamedCell
+      ss:Name="Print_Area"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="14.25" ss:StyleID="s62">
+    <Cell ss:MergeAcross="2" ss:StyleID="m537447728"><Data ss:Type="String">Units EIM</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="14.25" ss:StyleID="s62">
+    <Cell ss:StyleID="Default"><Data ss:Type="String">ui_UnitSymbols_Seconds</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">s</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">秒</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="14.25" ss:StyleID="s62">
+    <Cell ss:StyleID="Default"><Data ss:Type="String">ui_UnitSymbols_Meter</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">m</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">s</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="14.25" ss:StyleID="s62">
+    <Cell ss:StyleID="Default"><Data ss:Type="String">ui_UnitSymbols_Position</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">th</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">th</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="14.25" ss:StyleID="s62">
+    <Cell ss:MergeAcross="2" ss:StyleID="m537447748"><Data ss:Type="String">AST INTERFACE</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_eim_additional_projectile</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">%1 Additional Projectile(s)</Data></Cell>
+    <Cell><Data ss:Type="String">%1 砲弾追加</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_eim_agility_pts</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">%1 Agility</Data></Cell>
+    <Cell><Data ss:Type="String">%1 敏捷性</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_eim_all_attribute_pts</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">%1 to All Attributes</Data></Cell>
+    <Cell><Data ss:Type="String">%1 全属性</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_eim_all_resistance</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">%1 All Resistance</Data></Cell>
+    <Cell><Data ss:Type="String">%1 全耐性</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_eim_defense_pts</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">%1 Defense</Data></Cell>
+    <Cell><Data ss:Type="String">%1 防御</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_eim_armor_pts</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">%1 Defense</Data></Cell>
+    <Cell><Data ss:Type="String">%1 装甲</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_eim_attackspeed</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">%1 Attack Speed</Data></Cell>
+    <Cell><Data ss:Type="String">%1 攻撃速度</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_eim_bleedchance_on_bleed_damage_flat</Data></Cell>
+    <Cell ss:StyleID="s28"><Data ss:Type="String">%1 Rend Chance on Bleed Damage</Data></Cell>
+    <Cell ss:StyleID="s27"><Data ss:Type="String">%1 出血ダメージで引裂かれる確率</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_eim_bleed_damage_percent</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">%1 Bleed Damage</Data></Cell>
+    <Cell><Data ss:Type="String">%1 出血ダメージ</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_eim_bleed_damage_spell</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">%1-%2 Bleed Damage added to Spells</Data></Cell>
+    <Cell><Data ss:Type="String">%1-%2 出血ダメージを呪文に追加</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15" ss:StyleID="s78">
+    <Cell ss:StyleID="Default"><Data ss:Type="String">ui_eim_bleed_damage_weapon</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">%1-%2 Bleed Damage added to Attacks</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">%1-%2 出血ダメージを攻撃に追加</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_eim_bleed_resistance</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">%1 Bleed Resistance</Data></Cell>
+    <Cell><Data ss:Type="String">%1 出血耐性</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_eim_criticalchance_attackskill_pts</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">%1 Attacks Critical Hit Chance</Data></Cell>
+    <Cell><Data ss:Type="String">%1 攻撃のクリティカル確率</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_eim_criticalchance_magicspell_pts</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">%1 Spells Critical Hit Chance</Data></Cell>
+    <Cell><Data ss:Type="String">%1 呪文のクリティカル確率</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_eim_criticalchance_pts</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">%1 Global Critical Hit Chance</Data></Cell>
+    <Cell><Data ss:Type="String">%1 全クリティカル確率</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_eim_criticaldamage_magicspell_pts</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">%1 Spells Critical Hit Damage</Data></Cell>
+    <Cell><Data ss:Type="String">%1 呪文のクリティカルダメージ</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_eim_criticaldamage_attackskill_pts</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">%1 Attacks Critical Hit Damage</Data></Cell>
+    <Cell><Data ss:Type="String">%1 攻撃のクリティカルダメージ</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15" ss:StyleID="s62">
+    <Cell ss:StyleID="Default"><Data ss:Type="String">ui_eim_criticaldamage_pts</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">%1 Global Critical Hit Damage</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">%1 全クリティカルダメージ</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15" ss:StyleID="s78">
+    <Cell ss:StyleID="Default"><Data ss:Type="String">ui_eim_damage_percent_any_weapon</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">%1 Attacks Damage</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">%1 攻撃ダメージ</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15" ss:StyleID="s78">
+    <Cell ss:StyleID="Default"><Data ss:Type="String">ui_eim_damage_percent_melee_weapon</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">%1 Melee Weapon Damage</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">%1 近接武器ダメージ</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_eim_damage_percent_spell</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">%1 Spell Damage</Data></Cell>
+    <Cell><Data ss:Type="String">%1 呪文ダメージ</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_eim_ferocity_pts</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">%1 Ferocity</Data></Cell>
+    <Cell><Data ss:Type="String">%1 獰猛性</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_eim_firechance_on_fire_damage_flat</Data></Cell>
+    <Cell ss:StyleID="s28"><Data ss:Type="String">%1 Burn Chance on Fire Damage</Data></Cell>
+    <Cell ss:StyleID="s27"><Data ss:Type="String">%1 火炎ダメージで燃焼する確率</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_eim_fire_damage_percent</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">%1 Fire Damage</Data></Cell>
+    <Cell><Data ss:Type="String">%1 火炎ダメージ</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_eim_fire_damage_spell</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">%1-%2 Fire Damage added to Spells</Data></Cell>
+    <Cell><Data ss:Type="String">%1-%2 火炎ダメージを呪文に追加</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_eim_fire_damage_weapon</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">%1-%2 &#160;Fire Damage added to Attacks</Data></Cell>
+    <Cell><Data ss:Type="String">%1-%2 &#160;火炎ダメージを攻撃に追加</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_eim_fire_resistance</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">%1 Fire Resistance</Data></Cell>
+    <Cell><Data ss:Type="String">%1 火炎耐性</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_eim_frostchance_on_frost_damage_flat</Data></Cell>
+    <Cell ss:StyleID="s28"><Data ss:Type="String">%1 Freeze Chance on Frost Damage</Data></Cell>
+    <Cell ss:StyleID="s27"><Data ss:Type="String">%1 冷気ダメージで凍結する確率</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_eim_frost_damage_percent</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">%1 Frost Damage</Data></Cell>
+    <Cell><Data ss:Type="String">%1 冷気ダメージ</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_eim_frost_damage_spell</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">%1-%2 Frost Damage added to Spells</Data></Cell>
+    <Cell><Data ss:Type="String">%1-%2 冷気ダメージを呪文に追加</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_eim_frost_damage_weapon</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">%1-%2 Frost Damage added to Attacks</Data></Cell>
+    <Cell><Data ss:Type="String">%1-%2 冷気ダメージを攻撃に追加</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_eim_frost_resistance</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">%1 Frost Resistance</Data></Cell>
+    <Cell><Data ss:Type="String">%1 冷気耐性</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15" ss:StyleID="s62">
+    <Cell ss:StyleID="Default"><Data ss:Type="String">ui_eim_health_percent</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">%1 Health</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">%1 ヘルス</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_eim_health_pts</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">%1 Health</Data></Cell>
+    <Cell><Data ss:Type="String">%1 ヘルス</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_eim_health_regen_percent</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">%1 Health Regeneration</Data></Cell>
+    <Cell><Data ss:Type="String">%1 ヘルス再生</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_eim_health_regen_pts</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">%1 Health Regeneration</Data></Cell>
+    <Cell><Data ss:Type="String">%1 ヘルス再生</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_eim_health_regen_true_percent</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">%1 Global Health Regeneration</Data></Cell>
+    <Cell><Data ss:Type="String">%1 全ヘルス再生</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_eim_lightningchance_on_lightning_damage_flat</Data></Cell>
+    <Cell ss:StyleID="s28"><Data ss:Type="String">%1 Shock Chance on Lightning Damage</Data></Cell>
+    <Cell ss:StyleID="s27"><Data ss:Type="String">%1 雷ダメージでショックを受ける確率</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_eim_lightning_damage_percent</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">%1 Lightning Damage</Data></Cell>
+    <Cell><Data ss:Type="String">%1 雷ダメージ</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_eim_lightning_damage_spell</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">%1-%2 Lightning Damage added to Spells</Data></Cell>
+    <Cell><Data ss:Type="String">%1-%2 雷ダメージを呪文に追加</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_eim_lightning_damage_weapon</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">%1-%2 Lightning Damage added to Attacks</Data></Cell>
+    <Cell><Data ss:Type="String">%1-%2 雷ダメージを攻撃に追加</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_eim_lightning_resistance</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">%1 Lightning Resistance</Data></Cell>
+    <Cell><Data ss:Type="String">%1 雷耐性</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_eim_umbra_to_rage_transfer_percent</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">%1 Transfer Time from Willpower to Rage</Data></Cell>
+    <Cell><Data ss:Type="String">%1 念力からレイジに移行する時間</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_eim_umbra_to_rage_transfer_pts</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">%1-%2 Transfer Time from Willpower to Rage</Data></Cell>
+    <Cell><Data ss:Type="String">%1-%2 念力からレイジに移行する時間</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_eim_physicalchance_on_physical_damage_flat</Data></Cell>
+    <Cell ss:StyleID="s28"><Data ss:Type="String">%1 Stun Chance on Physical Damage</Data></Cell>
+    <Cell ss:StyleID="s27"><Data ss:Type="String">%1 物理ダメージでスタンする確率</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_eim_physical_damage_percent</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">%1 Physical Damage</Data></Cell>
+    <Cell><Data ss:Type="String">%1 物理ダメージ</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_eim_physical_damage_spell</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">%1-%2 Physical Damage added to Spells</Data></Cell>
+    <Cell><Data ss:Type="String">%1-%2 物理ダメージを呪文に追加</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_eim_physical_damage_weapon</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">%1-%2 Physical Damage added to Attacks</Data></Cell>
+    <Cell><Data ss:Type="String">%1-%2 物理ダメージを攻撃に追加</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_eim_physical_resistance</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">%1 Physical Resistance</Data></Cell>
+    <Cell><Data ss:Type="String">%1 物理耐性</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_eim_poisonchance_on_poison_damage_flat</Data></Cell>
+    <Cell ss:StyleID="s28"><Data ss:Type="String">%1 Poison Chance on Toxic Damage</Data></Cell>
+    <Cell ss:StyleID="s27"><Data ss:Type="String">%1 毒ダメージで中毒にかかる確率</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_eim_poison_damage_percent</Data></Cell>
+    <Cell ss:StyleID="s28"><Data ss:Type="String">%1 Toxic Damage</Data></Cell>
+    <Cell ss:StyleID="s27"><Data ss:Type="String">%1 毒ダメージ</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_eim_poison_damage_spell</Data></Cell>
+    <Cell ss:StyleID="s28"><Data ss:Type="String">%1-%2 Toxic Damage added to Spells</Data></Cell>
+    <Cell ss:StyleID="s27"><Data ss:Type="String">%1-%2 毒メージを呪文に追加</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_eim_poison_damage_weapon</Data></Cell>
+    <Cell ss:StyleID="s28"><Data ss:Type="String">%1-%2 Toxic Damage added to Attacks</Data></Cell>
+    <Cell ss:StyleID="s27"><Data ss:Type="String">%1-%2 毒ダメージを攻撃に追加</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_eim_poison_resistance</Data></Cell>
+    <Cell ss:StyleID="s28"><Data ss:Type="String">%1 Toxic Resistance</Data></Cell>
+    <Cell ss:StyleID="s27"><Data ss:Type="String">%1 毒耐性</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_eim_rage_conservation_time</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">%1 Rage Conservation Time</Data></Cell>
+    <Cell><Data ss:Type="String">%1 レイジの維持時間</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_eim_rage_per_strike_percent</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">%1 Rage per Strike</Data></Cell>
+    <Cell><Data ss:Type="String">%1 攻撃ごとのレイジ</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_eim_rage_per_strike_pts</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">%1 Rage per Strike</Data></Cell>
+    <Cell><Data ss:Type="String">%1 攻撃ごとのレイジ</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_eim_rage_per_strike_when_empty</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">%1 Rage per Strike when your Rage is Empty</Data></Cell>
+    <Cell><Data ss:Type="String">%1 レイジが空のときの攻撃ごとのレイジ</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_eim_rage_to_umbra_transfer_percent</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">%1 Transfer Time from Rage to Willpower</Data></Cell>
+    <Cell><Data ss:Type="String">%1 レイジから念力に移行する時間</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_eim_rage_to_umbra_transfer_pts</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">%1-%2 Transfer Time from Rage to Willpower</Data></Cell>
+    <Cell><Data ss:Type="String">%1-%2 レイジから念力に移行する時間</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_eim_sacredchance_on_sacred_damage_flat</Data></Cell>
+    <Cell ss:StyleID="s28"><Data ss:Type="String">%1 Weakness Chance on Sacred Damage</Data></Cell>
+    <Cell><Data ss:Type="String">%1 神聖ダメージで弱体化する確率</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_eim_sacred_damage_percent_spell</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">%1 Sacred Damage</Data></Cell>
+    <Cell><Data ss:Type="String">%1 神聖ダメージ</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_eim_sacred_damage_spell</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">%1-%2 Sacred Damage added to Spells</Data></Cell>
+    <Cell><Data ss:Type="String">%1-%2 神聖ダメージを呪文に追加</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_eim_sacred_damage_weapon</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">%1-%2&#160;Sacred Damage added to Attacks</Data></Cell>
+    <Cell><Data ss:Type="String">%1-%2 神聖ダメージを攻撃に追加</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_eim_sacred_resistance</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">%1 Sacred Resistance</Data></Cell>
+    <Cell><Data ss:Type="String">%1 神聖耐性</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_eim_shadowchance_on_shadow_damage_flat</Data></Cell>
+    <Cell ss:StyleID="s28"><Data ss:Type="String">%1 Shaded Chance on Shadow Damage</Data></Cell>
+    <Cell ss:StyleID="s27"><Data ss:Type="String">%1 シャドウダメージで隠れる確率</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_eim_shadow_damage_percent</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">%1 Shadows Damage</Data></Cell>
+    <Cell><Data ss:Type="String">%1 シャドウダメージ</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_eim_shadow_damage_spell</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">%1-%2 Shadows Damage added to Spells</Data></Cell>
+    <Cell><Data ss:Type="String">%1-%2 シャドウダメージを呪文に追加</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_eim_shadow_damage_weapon</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">%1-%2 Shadow Damage added to Attacks</Data></Cell>
+    <Cell><Data ss:Type="String">%1-%2 シャドウダメージを攻撃に追加</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_eim_shadow_resistance</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">%1 Shadow Resistance</Data></Cell>
+    <Cell><Data ss:Type="String">%1 シャドウ耐性</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_eim_skillrequirement_keyword_sacred</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">Allows the Bearer to Cast Sacred Spells</Data></Cell>
+    <Cell><Data ss:Type="String">%1 詠唱速度</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_eim_spellcastingspeed</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">%1 Spell Casting Speed</Data></Cell>
+    <Cell ss:StyleID="s27"><Data ss:Type="String">%1 呪文詠唱速度</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_eim_toughness_pts</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">%1 Toughness</Data></Cell>
+    <Cell><Data ss:Type="String">%1 強靭性</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_eim_umbrachance_on_umbra_damage_flat</Data></Cell>
+    <Cell ss:StyleID="s28"><Data ss:Type="String">%1 Stasis Chance on Aether Damage</Data></Cell>
+    <Cell ss:StyleID="s27"><Data ss:Type="String">%1 イーサーダメージで停滞する確率</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_eim_umbra_damage_percent</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">%1 Aether Damage</Data></Cell>
+    <Cell><Data ss:Type="String">%1 イーサーダメージ</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_eim_umbra_damage_spell</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">%1-%2 Aether Damage added to Spells</Data></Cell>
+    <Cell><Data ss:Type="String">%1-%2 イーサーダメージを呪文に追加</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_eim_umbra_damage_weapon</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">%1-%2 Aether Damage added to Attacks</Data></Cell>
+    <Cell><Data ss:Type="String">%1-%2 イーサーダメージを攻撃に追加</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_eim_umbra_regen_percent</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">%1 Willpower Regeneration</Data></Cell>
+    <Cell><Data ss:Type="String">%1 念力再生</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_eim_umbra_resistance</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">%1 Aether Resistance</Data></Cell>
+    <Cell><Data ss:Type="String">%1 イーサー耐性</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_eim_willpower_pts</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">%1 Wisdom</Data></Cell>
+    <Cell><Data ss:Type="String">%1 賢明</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15"/>
+   <Row ss:Index="105" ss:AutoFitHeight="0" ss:Height="20.0625" ss:Span="31"/>
+   <Row ss:Index="140" ss:AutoFitHeight="0" ss:Height="15.75" ss:Span="8"/>
+   <Row ss:Index="149" ss:AutoFitHeight="0" ss:Height="15" ss:Span="2"/>
+   <Row ss:Index="152" ss:AutoFitHeight="0" ss:Height="15.75" ss:Span="5"/>
+   <Row ss:Index="158" ss:AutoFitHeight="0" ss:Height="15" ss:Span="2"/>
+   <Row ss:Index="161" ss:AutoFitHeight="0" ss:Height="15.75" ss:Span="505"/>
+   <Row ss:Index="667" ss:AutoFitHeight="0" ss:Height="15" ss:Span="405"/>
+   <Row ss:Index="1101" ss:AutoFitHeight="0" ss:Height="25.5"/>
+   <Row ss:AutoFitHeight="0" ss:Height="15" ss:Span="2"/>
+   <Row ss:Index="1105" ss:AutoFitHeight="0" ss:Height="25.5" ss:Span="78"/>
+   <Row ss:Index="1184" ss:AutoFitHeight="0" ss:Height="18"/>
+   <Row ss:AutoFitHeight="0" ss:Height="25.5"/>
+   <Row ss:AutoFitHeight="0" ss:Height="15" ss:Span="2"/>
+   <Row ss:Index="1189" ss:AutoFitHeight="0" ss:Height="25.5" ss:Span="2"/>
+   <Row ss:Index="1192" ss:AutoFitHeight="0" ss:Height="15" ss:Span="3"/>
+   <Row ss:Index="1196" ss:AutoFitHeight="0" ss:Height="25.5" ss:Span="2"/>
+   <Row ss:Index="1199" ss:AutoFitHeight="0" ss:Height="15" ss:Span="3"/>
+   <Row ss:Index="1203" ss:AutoFitHeight="0" ss:Height="25.5" ss:Span="2"/>
+   <Row ss:Index="1206" ss:AutoFitHeight="0" ss:Height="15" ss:Span="13"/>
+   <Row ss:Index="1220" ss:AutoFitHeight="0" ss:Height="38.25"/>
+   <Row ss:AutoFitHeight="0" ss:Height="51"/>
+   <Row ss:AutoFitHeight="0" ss:Height="25.5"/>
+   <Row ss:AutoFitHeight="0" ss:Height="38.25" ss:Span="1"/>
+   <Row ss:Index="1225" ss:AutoFitHeight="0" ss:Height="15"/>
+   <Row ss:AutoFitHeight="0" ss:Height="25.5" ss:Span="2"/>
+   <Row ss:Index="1229" ss:AutoFitHeight="0" ss:Height="15" ss:Span="3"/>
+   <Row ss:Index="1233" ss:AutoFitHeight="0" ss:Height="25.5"/>
+   <Row ss:AutoFitHeight="0" ss:Height="63.75"/>
+   <Row ss:AutoFitHeight="0" ss:Height="47.25"/>
+   <Row ss:AutoFitHeight="0" ss:Height="51"/>
+   <Row ss:AutoFitHeight="0" ss:Height="45"/>
+   <Row ss:AutoFitHeight="0" ss:Height="38.25"/>
+   <Row ss:AutoFitHeight="0" ss:Height="25.5"/>
+   <Row ss:AutoFitHeight="0" ss:Height="15" ss:Span="1"/>
+   <Row ss:Index="1242" ss:AutoFitHeight="0" ss:Height="25.5"/>
+   <Row ss:AutoFitHeight="0" ss:Height="15" ss:Span="1"/>
+   <Row ss:Index="1245" ss:AutoFitHeight="0" ss:Height="25.5"/>
+   <Row ss:AutoFitHeight="0" ss:Height="15" ss:Span="2"/>
+   <Row ss:Index="1249" ss:AutoFitHeight="0" ss:Height="25.5"/>
+   <Row ss:AutoFitHeight="0" ss:Height="75.75"/>
+   <Row ss:AutoFitHeight="0" ss:Height="15"/>
+   <Row ss:AutoFitHeight="0" ss:Height="85.5"/>
+   <Row ss:AutoFitHeight="0" ss:Height="25.5"/>
+   <Row ss:AutoFitHeight="0" ss:Height="38.25"/>
+   <Row ss:AutoFitHeight="0" ss:Height="15"/>
+   <Row ss:AutoFitHeight="0" ss:Height="25.5"/>
+   <Row ss:AutoFitHeight="0" ss:Height="15"/>
+   <Row ss:AutoFitHeight="0" ss:Height="25.5"/>
+   <Row ss:AutoFitHeight="0" ss:Height="15" ss:Span="3"/>
+   <Row ss:Index="1263" ss:AutoFitHeight="0" ss:Height="25.5" ss:Span="1"/>
+   <Row ss:Index="1265" ss:AutoFitHeight="0" ss:Height="15"/>
+   <Row ss:AutoFitHeight="0" ss:Height="25.5"/>
+   <Row ss:AutoFitHeight="0" ss:Height="15"/>
+   <Row ss:AutoFitHeight="0" ss:Height="25.5"/>
+   <Row ss:AutoFitHeight="0" ss:Height="15" ss:Span="2"/>
+   <Row ss:Index="1272" ss:AutoFitHeight="0" ss:Height="25.5" ss:Span="4"/>
+   <Row ss:Index="1277" ss:AutoFitHeight="0" ss:Height="15"/>
+   <Row ss:AutoFitHeight="0" ss:Height="25.5"/>
+   <Row ss:AutoFitHeight="0" ss:Height="15" ss:Span="1"/>
+   <Row ss:Index="1281" ss:AutoFitHeight="0" ss:Height="25.5" ss:Span="3"/>
+   <Row ss:Index="1285" ss:AutoFitHeight="0" ss:Height="15" ss:Span="1"/>
+   <Row ss:Index="1287" ss:AutoFitHeight="0" ss:Height="25.5" ss:Span="2"/>
+   <Row ss:Index="1290" ss:AutoFitHeight="0" ss:Height="15" ss:Span="3"/>
+   <Row ss:Index="1294" ss:AutoFitHeight="0" ss:Height="25.5" ss:Span="1"/>
+   <Row ss:Index="1296" ss:AutoFitHeight="0" ss:Height="15"/>
+   <Row ss:AutoFitHeight="0" ss:Height="25.5"/>
+   <Row ss:AutoFitHeight="0" ss:Height="38.25" ss:Span="1"/>
+   <Row ss:Index="1300" ss:AutoFitHeight="0" ss:Height="15" ss:Span="2"/>
+   <Row ss:Index="1303" ss:AutoFitHeight="0" ss:Height="25.5" ss:Span="6"/>
+   <Row ss:Index="1310" ss:AutoFitHeight="0" ss:Height="38.25"/>
+   <Row ss:AutoFitHeight="0" ss:Height="25.5" ss:Span="1"/>
+   <Row ss:Index="1313" ss:AutoFitHeight="0" ss:Height="38.25"/>
+   <Row ss:AutoFitHeight="0" ss:Height="25.5"/>
+   <Row ss:AutoFitHeight="0" ss:Height="15" ss:Span="6"/>
+   <Row ss:Index="1322" ss:AutoFitHeight="0" ss:Height="25.5" ss:Span="6"/>
+   <Row ss:Index="1329" ss:AutoFitHeight="0" ss:Height="15" ss:Span="73"/>
+  </Table>
+  <WorksheetOptions xmlns="urn:schemas-microsoft-com:office:excel">
+   <PageSetup>
+    <Layout x:Orientation="Landscape"/>
+    <Header x:Margin="0.51181102362204722"
+     x:Data="&amp;LTime restriction sample script"/>
+    <Footer x:Margin="0.51181102362204722" x:Data="Page &amp;P"/>
+    <PageMargins x:Bottom="0.98425196850393704" x:Left="0" x:Right="0"
+     x:Top="0.98425196850393704"/>
+   </PageSetup>
+   <Print>
+    <ValidPrinterInfo/>
+    <PaperSizeIndex>9</PaperSizeIndex>
+    <Scale>70</Scale>
+    <HorizontalResolution>600</HorizontalResolution>
+    <VerticalResolution>600</VerticalResolution>
+   </Print>
+   <Zoom>85</Zoom>
+   <Selected/>
+   <TopRowVisible>9</TopRowVisible>
+   <Panes>
+    <Pane>
+     <Number>3</Number>
+     <ActiveRow>22</ActiveRow>
+     <ActiveCol>4</ActiveCol>
+    </Pane>
+   </Panes>
+   <ProtectObjects>False</ProtectObjects>
+   <ProtectScenarios>False</ProtectScenarios>
+  </WorksheetOptions>
+ </Worksheet>
+</Workbook>

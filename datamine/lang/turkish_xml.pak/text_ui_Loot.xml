@@ -1,0 +1,3036 @@
+﻿<?xml version="1.0"?>
+<?mso-application progid="Excel.Sheet"?>
+<Workbook xmlns="urn:schemas-microsoft-com:office:spreadsheet"
+ xmlns:o="urn:schemas-microsoft-com:office:office"
+ xmlns:x="urn:schemas-microsoft-com:office:excel"
+ xmlns:ss="urn:schemas-microsoft-com:office:spreadsheet"
+ xmlns:html="http://www.w3.org/TR/REC-html40">
+ <DocumentProperties xmlns="urn:schemas-microsoft-com:office:office">
+  <Title>Audio script template</Title>
+  <Author>Maëlenn Lumineau</Author>
+  <LastAuthor>Cihan Hizlikan</LastAuthor>
+  <LastPrinted>2003-10-30T09:38:41Z</LastPrinted>
+  <Created>2002-06-17T19:14:00Z</Created>
+  <LastSaved>2018-11-30T08:23:20Z</LastSaved>
+  <Company>Electronic Arts</Company>
+  <Version>16.00</Version>
+ </DocumentProperties>
+ <OfficeDocumentSettings xmlns="urn:schemas-microsoft-com:office:office">
+  <AllowPNG/>
+ </OfficeDocumentSettings>
+ <ExcelWorkbook xmlns="urn:schemas-microsoft-com:office:excel">
+  <SupBook>
+   <Path>\DOCUME~1\jack\LOCALS~1\Temp\p4v\PC025 perforce 1666\data\Game02\Game\Languages\Copy of Dialog_Asset_List_Final_edit.xls</Path>
+   <SheetName>DropDown</SheetName>
+   <SheetName>Conversations</SheetName>
+   <Xct>
+    <Count>2</Count>
+    <SheetIndex>0</SheetIndex>
+    <Crn>
+     <Row>6</Row>
+     <ColFirst>0</ColFirst>
+     <ColLast>4</ColLast>
+     <Text>clean</Text>
+     <Text>TV</Text>
+     <Text>radio (disturbed) </Text>
+     <Text>radio (low)</Text>
+     <Text>radio (heavy)</Text>
+    </Crn>
+    <Crn>
+     <Row>9</Row>
+     <ColFirst>0</ColFirst>
+     <ColLast>41</ColLast>
+     <Text>Player</Text>
+     <Text>Barnes</Text>
+     <Text>Hawker</Text>
+     <Text>Sykes</Text>
+     <Text>Johnson</Text>
+     <Text>Cortez</Text>
+     <Text>Beck</Text>
+     <Text>Miller</Text>
+     <Text>Baxter</Text>
+     <Text>American scientist</Text>
+     <Text>Shark</Text>
+     <Text>Chia</Text>
+     <Text>Kirovski</Text>
+     <Text>Michaels</Text>
+     <Text>Chang</Text>
+     <Text>Marine Soldier a</Text>
+     <Text>Marine Soldier b</Text>
+     <Text>Chinese Soldier a</Text>
+     <Text>Chinese Soldier b</Text>
+     <Text>Chinese Soldier c</Text>
+     <Text>Chinese Soldier d</Text>
+     <Text>Chinese Soldier e</Text>
+     <Text>Chinese Soldier f</Text>
+     <Text>Chinese Officer a</Text>
+     <Text>Chinese Officer b</Text>
+     <Text>Chinese Scientist a</Text>
+     <Text>Chinese Scientist b</Text>
+     <Text>Chinese Scientist Female a</Text>
+     <Text>Chinese Scientist Female b</Text>
+     <Text>Filmcrew Member</Text>
+     <Text>Morrison</Text>
+     <Text>C17 Pilot a</Text>
+     <Text>C17 Pilot b</Text>
+     <Text>Submarine Commander Davis</Text>
+     <Text>Pilot (camera)</Text>
+     <Text>Bridge officer 1</Text>
+     <Text>Bridge officer 2</Text>
+     <Text>Carrier deck guide</Text>
+     <Text>Jet Pilot</Text>
+     <Text>VTOL Pilot</Text>
+     <Text>Commander (camera)</Text>
+     <Text>Team Two (camera)</Text>
+    </Crn>
+   </Xct>
+  </SupBook>
+  <WindowHeight>16980</WindowHeight>
+  <WindowWidth>-27136</WindowWidth>
+  <WindowTopX>0</WindowTopX>
+  <WindowTopY>0</WindowTopY>
+  <TabRatio>274</TabRatio>
+  <RefModeR1C1/>
+  <ProtectStructure>False</ProtectStructure>
+  <ProtectWindows>False</ProtectWindows>
+ </ExcelWorkbook>
+ <Styles>
+  <Style ss:ID="Default" ss:Name="Normal">
+   <Alignment ss:Vertical="Bottom"/>
+   <Borders/>
+   <Font ss:FontName="Arial" x:Family="Swiss"/>
+   <Interior/>
+   <NumberFormat/>
+   <Protection/>
+  </Style>
+  <Style ss:ID="s62" ss:Name="40&#160;% - Accent1">
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="11" ss:Color="#000000"/>
+   <Interior ss:Color="#BDD7EE" ss:Pattern="Solid"/>
+  </Style>
+  <Style ss:ID="s63" ss:Name="Insatisfaisant">
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="11" ss:Color="#800000"/>
+   <Interior ss:Color="#FFC7CE" ss:Pattern="Solid"/>
+  </Style>
+  <Style ss:ID="s64" ss:Name="Neutre">
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="11" ss:Color="#993300"/>
+   <Interior ss:Color="#FFEB9C" ss:Pattern="Solid"/>
+  </Style>
+  <Style ss:ID="s65" ss:Name="Satisfaisant">
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="11" ss:Color="#008000"/>
+   <Interior ss:Color="#C6EFCE" ss:Pattern="Solid"/>
+  </Style>
+  <Style ss:ID="m1576303967024" ss:Parent="s62">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Bottom" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="2"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="2"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="2"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="2"/>
+   </Borders>
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="11" ss:Color="#000000"
+    ss:Bold="1"/>
+  </Style>
+  <Style ss:ID="m1576303967044" ss:Parent="s62">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Bottom" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="2"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="2"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="2"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="2"/>
+   </Borders>
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="11" ss:Color="#000000"
+    ss:Bold="1"/>
+  </Style>
+  <Style ss:ID="m1576303967064" ss:Parent="s62">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Bottom" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="2"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="2"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="2"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="2"/>
+   </Borders>
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="11" ss:Color="#000000"
+    ss:Bold="1"/>
+  </Style>
+  <Style ss:ID="m1576303967084" ss:Parent="s62">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Bottom" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="2"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="2"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="2"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="2"/>
+   </Borders>
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="11" ss:Color="#000000"
+    ss:Bold="1"/>
+  </Style>
+  <Style ss:ID="m1576303967104" ss:Parent="s62">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Bottom" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="2"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="2"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="2"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="2"/>
+   </Borders>
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="11" ss:Color="#000000"
+    ss:Bold="1"/>
+  </Style>
+  <Style ss:ID="m1576303967124" ss:Parent="s62">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Bottom" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="2"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="2"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="2"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="2"/>
+   </Borders>
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="11" ss:Color="#000000"
+    ss:Bold="1"/>
+  </Style>
+  <Style ss:ID="m1576303960784" ss:Parent="s62">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Bottom" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="2"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="2"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="2"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="2"/>
+   </Borders>
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="11" ss:Color="#000000"
+    ss:Bold="1"/>
+  </Style>
+  <Style ss:ID="m1576303960804" ss:Parent="s62">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Bottom" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="2"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="2"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="2"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="2"/>
+   </Borders>
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="11" ss:Color="#000000"
+    ss:Bold="1"/>
+  </Style>
+  <Style ss:ID="m1576303960824" ss:Parent="s62">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Bottom" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="2"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="2"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="2"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="2"/>
+   </Borders>
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="11" ss:Color="#000000"
+    ss:Bold="1"/>
+  </Style>
+  <Style ss:ID="m1576303960844" ss:Parent="s62">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Bottom" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="2"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="2"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="2"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="2"/>
+   </Borders>
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="11" ss:Color="#000000"
+    ss:Bold="1"/>
+  </Style>
+  <Style ss:ID="m1576303960864" ss:Parent="s62">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Bottom" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="2"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="2"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="2"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="2"/>
+   </Borders>
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="11" ss:Color="#000000"
+    ss:Bold="1"/>
+  </Style>
+  <Style ss:ID="m1576303960884" ss:Parent="s62">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Bottom" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="2"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="2"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="2"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="2"/>
+   </Borders>
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="11" ss:Color="#000000"
+    ss:Bold="1"/>
+  </Style>
+  <Style ss:ID="s66">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Top" ss:WrapText="1"/>
+   <Borders/>
+  </Style>
+  <Style ss:ID="s67">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Top" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Courier New" x:Family="Modern" ss:Color="#FFFFFF" ss:Bold="1"/>
+   <Interior ss:Color="#FFCC00" ss:Pattern="Solid"/>
+  </Style>
+  <Style ss:ID="s68">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Top" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Courier New" x:Family="Modern" ss:Color="#FFFFFF" ss:Bold="1"/>
+   <Interior ss:Color="#FF0000" ss:Pattern="Solid"/>
+  </Style>
+  <Style ss:ID="s79" ss:Parent="s62">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Bottom" ss:WrapText="1"/>
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="11" ss:Color="#000000"
+    ss:Italic="1"/>
+  </Style>
+  <Style ss:ID="s80" ss:Parent="s62">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Bottom" ss:WrapText="1"/>
+  </Style>
+  <Style ss:ID="s87" ss:Parent="s62">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Bottom" ss:WrapText="1"/>
+   <Borders/>
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="11" ss:Color="#000000"
+    ss:Bold="1"/>
+  </Style>
+  <Style ss:ID="s88" ss:Parent="s64">
+   <Alignment ss:Vertical="Bottom" ss:WrapText="1"/>
+  </Style>
+  <Style ss:ID="s89" ss:Parent="s62">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Bottom" ss:WrapText="1"/>
+   <NumberFormat ss:Format="Short Time"/>
+  </Style>
+  <Style ss:ID="s90" ss:Parent="s65">
+   <Borders/>
+  </Style>
+  <Style ss:ID="s91" ss:Parent="s63">
+   <Borders/>
+  </Style>
+  <Style ss:ID="s92" ss:Parent="s64">
+   <Borders/>
+  </Style>
+  <Style ss:ID="s94" ss:Parent="s65">
+   <NumberFormat ss:Format="0%"/>
+  </Style>
+ </Styles>
+ <Names>
+  <NamedRange ss:Name="characters"
+   ss:RefersTo="='\DOCUME~1\jack\LOCALS~1\Temp\p4v\PC025 perforce 1666\data\Game02\Game\Languages\[Copy of Dialog_Asset_List_Final_edit.xls]DropDown'!R10C1:R10C42"/>
+  <NamedRange ss:Name="type"
+   ss:RefersTo="='\DOCUME~1\jack\LOCALS~1\Temp\p4v\PC025 perforce 1666\data\Game02\Game\Languages\[Copy of Dialog_Asset_List_Final_edit.xls]DropDown'!R7C1:R7C5"/>
+ </Names>
+ <Worksheet ss:Name="Sheet1">
+  <Names>
+   <NamedRange ss:Name="Print_Area" ss:RefersTo="=Sheet1!R1C2:R1C3"/>
+  </Names>
+  <Table ss:ExpandedColumnCount="4" ss:ExpandedRowCount="540" x:FullColumns="1"
+   x:FullRows="1" ss:DefaultColumnWidth="60" ss:DefaultRowHeight="12.5">
+   <Column ss:Width="172"/>
+   <Column ss:AutoFitWidth="0" ss:Width="265"/>
+   <Column ss:AutoFitWidth="0" ss:Width="370"/>
+   <Column ss:AutoFitWidth="0" ss:Width="160.5"/>
+   <Row ss:AutoFitHeight="0" ss:Height="14.25" ss:StyleID="s66">
+    <Cell ss:StyleID="s67"><Data ss:Type="String">KEY</Data></Cell>
+    <Cell ss:StyleID="s68"><Data ss:Type="String">ORIGINAL TEXT</Data><NamedCell
+      ss:Name="Print_Area"/></Cell>
+    <Cell ss:StyleID="s68"><Data ss:Type="String">TRANSLATED TEXT</Data><NamedCell
+      ss:Name="Print_Area"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:MergeAcross="2" ss:StyleID="m1576303960784"><Data ss:Type="String">WEAPONS </Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="s79"><Data ss:Type="String">Shields</Data></Cell>
+    <Cell ss:StyleID="s80"/>
+    <Cell ss:StyleID="s80" ss:Formula="=IF(RC[-1]&lt;&gt;&quot;&quot;,RC[-1],&quot;&quot;)"><Data
+      ss:Type="String"></Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_Weapon_Shield_T1</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Wooden Shield</Data></Cell>
+    <Cell><Data ss:Type="String">Tahta Kalkan</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_Weapon_Shield_T2</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Targe</Data></Cell>
+    <Cell><Data ss:Type="String">Küçük Kalkan</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="s79"><Data ss:Type="String">2H Axes</Data></Cell>
+    <Cell ss:StyleID="s80"/>
+    <Cell ss:StyleID="s80"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_Weapon_2HAxe_T1</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Broad Axe</Data></Cell>
+    <Cell><Data ss:Type="String">Enli Balta</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_Weapon_2HAxe_T2</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Great Axe</Data></Cell>
+    <Cell><Data ss:Type="String">Büyük Balta</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="s79"><Data ss:Type="String">1H Axes</Data></Cell>
+    <Cell ss:StyleID="s80"/>
+    <Cell ss:StyleID="s80"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_Weapon_1HAxe_T1</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Axe</Data></Cell>
+    <Cell><Data ss:Type="String">Balta</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_Weapon_1HAxe_T2</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">War Axe</Data></Cell>
+    <Cell><Data ss:Type="String">Savaş Baltası</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="s79"><Data ss:Type="String">Crossbows</Data></Cell>
+    <Cell ss:StyleID="s80"/>
+    <Cell ss:StyleID="s80"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:Index="2" ss:StyleID="s63"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="s79"><Data ss:Type="String">Bows</Data></Cell>
+    <Cell ss:StyleID="s80"/>
+    <Cell ss:StyleID="s80"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_Weapon_Bow_T1</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Longbow</Data></Cell>
+    <Cell><Data ss:Type="String">Uzun Yay</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_Weapon_Bow_T2</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Skirmish Bow</Data></Cell>
+    <Cell><Data ss:Type="String">Çatışma Yayı</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="s79"><Data ss:Type="String">Daggers</Data></Cell>
+    <Cell ss:StyleID="s80"/>
+    <Cell ss:StyleID="s80"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_Weapon_1HDagger_T1</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Gutting Knife</Data></Cell>
+    <Cell><Data ss:Type="String">Deşme Bıçağı</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_Weapon_1HDagger_T2</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Poniard</Data></Cell>
+    <Cell><Data ss:Type="String">Sivri Hançer</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="s79"><Data ss:Type="String">2H Hammers</Data></Cell>
+    <Cell ss:StyleID="s80"/>
+    <Cell ss:StyleID="s80"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_Weapon_2HHammer_T1</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Warhammer</Data></Cell>
+    <Cell><Data ss:Type="String">Savaş Çekici</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_Weapon_2HHammer_T2</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Great Mace</Data></Cell>
+    <Cell><Data ss:Type="String">Büyük Topuz</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="s79"><Data ss:Type="String">1H Hammers</Data></Cell>
+    <Cell ss:StyleID="s80"/>
+    <Cell ss:StyleID="s80"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_Weapon_1HHammer_T1</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Morningstar</Data></Cell>
+    <Cell><Data ss:Type="String">Sabah Yıldızı</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_Weapon_1HHammer_T2</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Jagged Star</Data></Cell>
+    <Cell><Data ss:Type="String">Dikenli Yıldız</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="s79"><Data ss:Type="String">1H Swords</Data></Cell>
+    <Cell ss:StyleID="s80"/>
+    <Cell ss:StyleID="s80"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_Weapon_1HSword_T1</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Longsword</Data></Cell>
+    <Cell><Data ss:Type="String">Uzun Kılıç</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_Weapon_1HSword_T2</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Gladius</Data></Cell>
+    <Cell><Data ss:Type="String">Gladyatör Kılıcı</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="s79"><Data ss:Type="String">2H Swords</Data></Cell>
+    <Cell ss:StyleID="s80"/>
+    <Cell ss:StyleID="s80"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_Weapon_2HSword_T1</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Claymore</Data></Cell>
+    <Cell><Data ss:Type="String">İki Ağızlı Kılıç</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_Weapon_2HSword_T2</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Great Sword</Data></Cell>
+    <Cell><Data ss:Type="String">Büyük Kılıç</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="s79"><Data ss:Type="String">Uniques</Data></Cell>
+    <Cell ss:StyleID="s80"/>
+    <Cell ss:StyleID="s80"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_unique_bow_projectile</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Saegath's Obsession</Data></Cell>
+    <Cell><Data ss:Type="String">Saegath'ın Takıntısı</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_unique_bow_projectile_lore</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">&lt;Font Size=&quot;15&quot; Color=&quot;#ccb270&quot;&gt;&lt;i&gt;&quot;The bow handle is engraved with a harrowing symbol, a seal of purity and zeal. Closer inspection reveals thirteen small markings on the bow wings, like if the previous owner was keeping track of a grim score. Whoever it was, its legacy is not meant to end here: time to start big game hunting and keep the death toll rolling.&quot;&lt;/i&gt;&lt;/Font&gt;</Data></Cell>
+    <Cell><Data ss:Type="String">&lt;Font Size=&quot;15&quot; Color=&quot;#ccb270&quot;&gt;&lt;i&gt;&quot;Bu yayın gövdesine ürpertici bir saflık ve heves simgesi yontulmuş. Daha yakından incelediğinde yay kanatalarının, sanki yayın bir önceki sahibi acımasız bir çetele tutuyormuşçasına on üç küçük çentiği sakladığını fark ediyorsun. Eski sahibi her kimse, mirası burada sona ermemeli. Şimdi avlanma ve ölümlerin devamını getirme zamanı.&quot;&lt;/i&gt;&lt;/Font&gt;</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_unique_shield_sacred</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">Quintet of Sundowns</Data></Cell>
+    <Cell><Data ss:Type="String">Günbatımlarının Beşlemesi</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_unique_shield_sacred_lore</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">&lt;Font Size=&quot;15&quot; Color=&quot;#ccb270&quot;&gt;&lt;i&gt;&quot;The combat was fierce, but Brother Amren eventually met his end, crushed by the demon as his lifeless body was thrown across Greyharbour’s street. Yet, hope was not to die with the battle-priest.\n\nOne of the four fishermen he was defending stepped forward and picked-up his shield to continue the fight. With him, the three other common-men charged the wounded demon while shouting their fear away. Neither the fishermen nor the demon survived the battle.\n\nAn ode to these men’s sacrifice was engraved by the Brotherhood of Dawn on the edges of Amren’s aegis. This beacon of hope now awaits a new bearer worthy to keep up the fight against evil.&quot;&lt;/i&gt;&lt;/Font&gt;</Data></Cell>
+    <Cell><Data ss:Type="String">&lt;Font Size=&quot;15&quot; Color=&quot;#ccb270&quot;&gt;&lt;i&gt;&quot;Şiddetli muharebenin sonunda Kardeş Amren'in bir şeytan tarafından ezilmiş, cansız vücudu Gri Liman sokağında yatıyordu. Oysaki umut savaş rahibiyle beraber sönmemişti.\n\nDört balıkçıdan bir tanesi savunmaya devam etmek için koştu ve Amren'in kalkanını elini aldı. Diğer üç balıkçı da korkularını yenmiş haykırarak yaralı şeytana hamle yaptılar. Ne o balıkçılar ne de şeytan savaştan sağ kurtuldu.\n\nBu balıkçılara adanan bir kaside, Şafak Kardeşliği tarafından Amren'in kalkanının kenarlarına oyuldu. Şimdi bu umut ışığı, kötülüğe karşı mücadeleyi sürdürmeyi bekliyor. ”&lt;/i&gt;&lt;/Font&gt;</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_unique_fire_sword</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">Vulcaïn Steel Sword</Data></Cell>
+    <Cell><Data ss:Type="String">Vulcaïn Çeliği Kılıç</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_unique_fire_sword_lore</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">&lt;Font Size=&quot;15&quot; Color=&quot;#ccb270&quot;&gt;&lt;i&gt;There is one city that makes the best steel in the four realms: Vulcaïn. This city-state is nested inside a Volcano which grants their deepest forge the temperature needed to melt, blend and purify the best metals. The resulting steel becomes pure, strong, and extremely sharp. To defend the city, their elite infantry are given rough jagged versions which captured some of the lava they were forged in.&lt;/i&gt;&lt;/Font&gt;</Data></Cell>
+    <Cell><Data ss:Type="String">&lt;Font Size=&quot;15&quot; Color=&quot;#ccb270&quot;&gt;&lt;i&gt;Dört âlemde en iyi çeliği yapan şehir Vulcaïn'dir. Bu şehir devleti, en iyi metalleri eritmek, harmanlamak ve arıtmak için gerekli olan sıcaklıklara sahip bir volkanın içine kurulmuştur. Ortaya çıkan çelik saf, güçlü ve son derece keskindir. Kenti savunmak için, seçkin piyadelerine, içinde dövüldükleri lavın bir kısmını muhafaza eden çentikli sivri kılıçlar verilir.&lt;/i&gt;&lt;/Font&gt;</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_unique_stasis_staff</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">Chrono Cell</Data></Cell>
+    <Cell><Data ss:Type="String">Zaman Mührü</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_unique_stasis_staff_lore</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">&lt;Font Size=&quot;15&quot; Color=&quot;#ccb270&quot;&gt;&lt;i&gt;Those who made a pact with Anulaï-Taï, Fallen Duke of Infinity, may rise inside the cult’s hierarchy and become a dreaded Time Devourer. Those sorcerers phase through space motionlessly while using their Time Seal to harness and destroy the normal continuum around them.&lt;/i&gt;&lt;/Font&gt;</Data></Cell>
+    <Cell><Data ss:Type="String">&lt;Font Size=&quot;15&quot; Color=&quot;#ccb270&quot;&gt;&lt;i&gt;Sonsuzluğun düşmüş Dükü Anulaï-Taï ile anlaşma yapanlar, tarikatın hiyerarşisinde yükselebilir ve korkunç bir Zaman Yutucusu olabilirler. Bu büyücüler, bir Zaman Mührü kullanarak hareketsiz bir şekilde uzayda kayar ve etraflarındaki doğal sürekliliği yok ederler.&lt;/i&gt;&lt;/Font&gt;</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_unique_rend_dagger</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">Goremaker, Shard of the Red Mountain</Data></Cell>
+    <Cell><Data ss:Type="String">Süsen, Kızıl Dağın Kırığı</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_unique_rend_dagger_lore</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">&lt;Font Size=&quot;15&quot; Color=&quot;#ccb270&quot;&gt;&lt;i&gt;During the war of the Primordials, the eternal lovers Anathëa and Moros organized an assault on the Red Mountain, throne of Ashtaroth the lord of Flesh. Amidst the raging battle, the ground quaked as they realized the landscape itself was alive and about to engulf everything. They had no other choice than to obliterate the whole organic mountain to survive. This, could very well be one of its shards that survived through the eons.&lt;/i&gt;&lt;/Font&gt;</Data></Cell>
+    <Cell><Data ss:Type="String">&lt;Font Size=&quot;15&quot; Color=&quot;#ccb270&quot;&gt;&lt;i&gt;Ezellerin savaşı sırasında, ebedi sevgili Anathea ve Moros, Kızıl Dağ'a, Etin Efendisi Ashtaroth'un tahtına bir saldırı düzenlediler. Şiddetli savaşın ortasında, arazinin kendisinin canlı olduğunu ve her şeyi yutmak üzere titrediğini fark ettiler. Hayatta kalmaları için etten dağın tamamını parçalamaktan başka seçenekleri yoktu. Bu dağın, geçen asırlardan bu yana kurtulan parçalarından birisi olabilir.&lt;/i&gt;&lt;/Font&gt;</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_unique_2h_axe</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">Edgy</Data></Cell>
+    <Cell><Data ss:Type="String">Kenarlım</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_unique_2h_axe_lore</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">&lt;Font Size=&quot;15&quot; Color=&quot;#ccb270&quot;&gt;&lt;i&gt;Big Bill was a blacksmith apprentice. But repairing horses’ irons was boring for him, he dreamed himself as an evil-slashing hero with the sharpest axe the world had ever known. The blacksmithing prodigy got to work, every night he would hammer hard at the anvil, shaping his lethal ambitions into an axe he would call ‘Edgy’.\n\nRumor has it that Big Bill accidentally beheaded himself at night while training in the backyard. Yet, Edgy still remains a deadly work of art.&lt;/i&gt;&lt;/Font&gt;</Data></Cell>
+    <Cell><Data ss:Type="String">&lt;Font Size=&quot;15&quot; Color=&quot;#ccb270&quot;&gt;&lt;i&gt;Büyük Bill bir demirci çırağıydı. Atların nallarını tamir etmekten sıkılmıştı ve kendisini dünyanın bilinen en keskin baltasıyla şeytanları kesen bir kahraman olarak görmek istiyordu. İşe koyuldu, her gece örsünü sertçe dövdü ve hırsını Kenarlım diye adlandırdığı bir baltaya dönüştürdü.\n\nDenilir ki Büyük Bill kafasını kazara bu balta ile arka bahçesinde idman yaparken kopardı. Yine de, Kenarlım hala ölümcül bir sanat eseri olmaya devam ediyor.&lt;/i&gt;&lt;/Font&gt;</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="s79"><Data ss:Type="String">Staves</Data></Cell>
+    <Cell ss:StyleID="s80"/>
+    <Cell ss:StyleID="s80"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_Weapon_Staff_T1</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Apprentice Staff</Data></Cell>
+    <Cell><Data ss:Type="String">Çırak Asası</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_Weapon_Staff_T2</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Tribal Staff</Data></Cell>
+    <Cell><Data ss:Type="String">Kabile Asası</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="s79"><Data ss:Type="String">Catalyst</Data></Cell>
+    <Cell ss:StyleID="s80"/>
+    <Cell ss:StyleID="s80"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_Weapon_Catalyst_T1</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Gris-Gris</Data></Cell>
+    <Cell><Data ss:Type="String">Totem Tezgen</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_Weapon_Catalyst_T2</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Crystal Catalyst</Data></Cell>
+    <Cell><Data ss:Type="String">Kristal Tezgen</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s79"><Data ss:Type="String">Pistols</Data></Cell>
+    <Cell ss:StyleID="s80"/>
+    <Cell ss:StyleID="s80"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_Weapon_Pistol_T1</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Pistol</Data></Cell>
+    <Cell><Data ss:Type="String">Tabanca</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_Weapon_Pistol_T2</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Dark Iron Pistol</Data></Cell>
+    <Cell><Data ss:Type="String">Kara Demir Tabanca</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:MergeAcross="2" ss:StyleID="m1576303960804"><Data ss:Type="String">ARMOR TYPES</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_ArmorTypePrisoner</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Rags</Data></Cell>
+    <Cell><Data ss:Type="String">Paçavralar</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_ArmorTypeHeavy</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Heavy</Data></Cell>
+    <Cell><Data ss:Type="String">Ağır</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_ArmorTypeWarrior</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Bruiser</Data></Cell>
+    <Cell><Data ss:Type="String">Dövüşçü</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_ArmorTypeRogue</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Rogue</Data></Cell>
+    <Cell><Data ss:Type="String">Serseri</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_ArmorTypeMage</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Sorcerer</Data></Cell>
+    <Cell><Data ss:Type="String">Büyücü</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_ArmorTypeAccessory</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Accessory</Data></Cell>
+    <Cell><Data ss:Type="String">Mücevherat</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:MergeAcross="2" ss:StyleID="m1576303960824"><Data ss:Type="String">ARMORS</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="s79"><Data ss:Type="String">Uniques</Data></Cell>
+    <Cell ss:StyleID="s87"/>
+    <Cell ss:StyleID="s87"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_Armor_Unique_Prisoner_Cuirass</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Tattered Jerkin</Data></Cell>
+    <Cell><Data ss:Type="String">Paramparça Deri Yelek</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_Armor_Unique_Prisoner_Armguard</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Broken Shackle</Data></Cell>
+    <Cell><Data ss:Type="String">Kırık Kelepçe</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_Armor_Unique_Prisoner_Greaves</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Seedy Pants</Data></Cell>
+    <Cell><Data ss:Type="String">Perişan Olmuş Paçalı Don</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_Armor_Unique_Prisoner_Sollerets</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Battered Boots</Data></Cell>
+    <Cell><Data ss:Type="String">Yıllanmış Botlar</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_unique_poison</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">Sagarnäris</Data></Cell>
+    <Cell><Data ss:Type="String">Sagarnäris</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_unique_poison_lore</Data></Cell>
+    <Cell ss:StyleID="s88"><Data ss:Type="String">&lt;Font Size=&quot;15&quot; Color=&quot;#ccb270&quot;&gt;&lt;i&gt;Bezeriel grew fond of observing a young beautiful maiden, incarnating all there is to love about youth. Taking the shape of a pale charming man, he offered her this ring to show his admiration for her.\n\nShe smiled as she put the ring to her finger, but it was not to last: Her skin started to wither, her lifeforce consumed and absorbed within the ring’s gem in a matter of seconds. Her body was never found for only dusts remained of her. The song of the “Lost maiden” that bards sing about, serve as the sole testimony of her doom.&lt;/i&gt;&lt;/Font&gt;</Data></Cell>
+    <Cell><Data ss:Type="String">&lt;Font Size=&quot;15&quot; Color=&quot;#ccb270&quot;&gt;&lt;i&gt;Bezeriel, gençlik namına âşık olunacak ne varsa hepsini bünyesinde barındıran bir kızı gözlemekten hoşlanıyordu. Solgun, büyüleyici bir adamın şeklini aldı ve yüzüğünü ona olan hayranlığını göstermek için bir armağan olarak sundu.\n\nKızın yüzüğü parmağına sokarkenki gülümsemesi kalıcı değildi: Cildi kuruyup büzüşmeye başladı, hayat gücü göz açıp kapayıncaya kadar yüzüğün içine emilerek tükendi ve ondan geriye sadece toz kaldı. Ozanların söylediği Kayıp Bakire şarkısı, onun hazin sonunun tek hatırasıdır.&lt;/i&gt;&lt;/Font&gt;</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_unique_hit_hard</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Seal of the Arbiter</Data></Cell>
+    <Cell><Data ss:Type="String">Hâkim'in Mührü</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_unique_hit_hard_lore</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">&lt;Font Size=&quot;15&quot; Color=&quot;#ccb270&quot;&gt;&lt;i&gt;Isolated far east of the Four Realms of Men, the frontier city-state of Gomora is unfamously known for being the only settlement that openly welcomes evil worshippers. The champions in charge of keeping them in check are known as Arbiters, and receive such powerful onyx ring as a symbol of their absolute judgements.&quot;&lt;/i&gt;&lt;/Font&gt;</Data></Cell>
+    <Cell><Data ss:Type="String">&lt;Font Size=&quot;15&quot; Color=&quot;#ccb270&quot;&gt;&lt;i&gt;&quot;İnsanların Dört Diyarı'nın uzak doğusunda tecrit edilmiş, öncü şehir devlet Gomora, kem inananları tek alenen kabul eden yerleşke olmasıyla tanınır. Bu şehirde düzeni sağlamakla sorumlu şampiyonlara Hâkimler denir ve mutlak yargılarının bir simgesi olarak efsunlu oniks yüzüklerle ödüllendirilirler.&quot;&lt;/i&gt;&lt;/Font&gt;</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_unique_glass_canon</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Thirst</Data></Cell>
+    <Cell><Data ss:Type="String">Açlık</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_unique_glass_canon_lore</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">&lt;Font Size=&quot;15&quot; Color=&quot;#ccb270&quot;&gt;&lt;i&gt;&quot;It would be impossible to determine who or what this uncanny tooth belonged to. When you first picked-it up, the ivory was of a pristine white. But now a faint coating of blood started to redden the canine by its base. Where is that blood coming from? Could it be yours? Only one thing is sure: it’s hungry, hungry for more.&quot;&lt;/i&gt;&lt;/Font&gt;</Data></Cell>
+    <Cell><Data ss:Type="String">&lt;Font Size=&quot;15&quot; Color=&quot;#ccb270&quot;&gt;&lt;i&gt;&quot;Bu esrarengiz dişin kime yahut neye ait olduğunu söylemek pek mümkün değil. Eline ilk aldığında minesi bembeyazdı ama şimdi kökünü cılız bir miktar kurumuş kan kırmızılaştırmış. Bu kan acaba nereden geliyor? Sana ait olabilir mi? Emin olduğun tek şey var: bu diş aç, daha fazlası için aç.&quot;&lt;/i&gt;&lt;/Font&gt;</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_unique_all_mighty</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Belt of the Owl Mighty Tester</Data></Cell>
+    <Cell><Data ss:Type="String">Ulu Baykuş Testçisi'nin Kemeri</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_unique_all_mighty_lore</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">&lt;Font Size=&quot;15&quot; Color=&quot;#ccb270&quot;&gt;&lt;i&gt;Looks like Owlcen hid a little present for you!&lt;/i&gt;&lt;/Font&gt;</Data></Cell>
+    <Cell><Data ss:Type="String">&lt;Font Size=&quot;15&quot; Color=&quot;#ccb270&quot;&gt;&lt;i&gt;Owlcen senin için bir hediye bırakmışa benziyor!&lt;/i&gt;&lt;/Font&gt;</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="s79"><Data ss:Type="String">Heavy</Data></Cell>
+    <Cell ss:StyleID="s80"/>
+    <Cell ss:StyleID="s89"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="s64"><Data ss:Type="String">ui_Armor_Heavy_Helmet_T1</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Sallet</Data></Cell>
+    <Cell><Data ss:Type="String">Miğfer</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="s64"><Data ss:Type="String">ui_Armor_Heavy_Pauldron_T1</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Plate Pauldron</Data></Cell>
+    <Cell><Data ss:Type="String">Plaka Zırh Omuzluğu</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="s64"><Data ss:Type="String">ui_Armor_Heavy_Armguard_T1</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Armplates</Data></Cell>
+    <Cell><Data ss:Type="String">Plaka Zırh Kolluğu</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="s64"><Data ss:Type="String">ui_Armor_Heavy_Cuirass_T1</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Padded Hauberk</Data></Cell>
+    <Cell><Data ss:Type="String">Yastıklı Zırh Yeleği</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="s64"><Data ss:Type="String">ui_Armor_Heavy_Greaves_T1</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Faulds</Data></Cell>
+    <Cell><Data ss:Type="String">Plaka Zırh Kalçalığı</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="s64"><Data ss:Type="String">ui_Armor_Heavy_Sollerets_T1</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Greaves</Data></Cell>
+    <Cell><Data ss:Type="String">Plaka Zırh Bacaklıkları</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="s64"><Data ss:Type="String">ui_Armor_Heavy_Helmet_T2</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Masterwork Sallet</Data></Cell>
+    <Cell><Data ss:Type="String">Şaheser Miğfer</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="s64"><Data ss:Type="String">ui_Armor_Heavy_Pauldron_T2</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Masterwork Plate Pauldron</Data></Cell>
+    <Cell><Data ss:Type="String">Şaheser Plaka Zırh Omuzluğu</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="s64"><Data ss:Type="String">ui_Armor_Heavy_Armguard_T2</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Masterwork Armplates</Data></Cell>
+    <Cell><Data ss:Type="String">Şaheser Plaka Zırh Kollukları</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="s64"><Data ss:Type="String">ui_Armor_Heavy_Cuirass_T2</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Masterwork Padded Hauberk</Data></Cell>
+    <Cell><Data ss:Type="String">Şaheser Yastıklı Zırh Yeleği</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="s64"><Data ss:Type="String">ui_Armor_Heavy_Greaves_T2</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Masterwork Faulds</Data></Cell>
+    <Cell><Data ss:Type="String">Şaheser Plaka Zırh Kalçalığı</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="s64"><Data ss:Type="String">ui_Armor_Heavy_Sollerets_T2</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Masterwork Greaves</Data></Cell>
+    <Cell><Data ss:Type="String">Şaheser Plaka Zırh Bacaklıkları</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="s79"><Data ss:Type="String">Warrior</Data></Cell>
+    <Cell ss:StyleID="s80"/>
+    <Cell ss:StyleID="s80"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_Armor_Warrior_Helmet_T1</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Cerveliere</Data></Cell>
+    <Cell><Data ss:Type="String">Çelik Kask</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_Armor_Warrior_Pauldron_T1</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Lamellar Spaulder</Data></Cell>
+    <Cell><Data ss:Type="String">Tabaka Omuzluk</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_Armor_Warrior_Armguard_T1</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Wristguard</Data></Cell>
+    <Cell><Data ss:Type="String">Bileklik</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_Armor_Warrior_Cuirass_T1</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Barbarian Defender</Data></Cell>
+    <Cell><Data ss:Type="String">Barbar Koruyucusu</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_Armor_Warrior_Greaves_T1</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Leather Tasset</Data></Cell>
+    <Cell><Data ss:Type="String">Deri Kalçalık</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_Armor_Warrior_Sollerets_T1</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Poleyns</Data></Cell>
+    <Cell><Data ss:Type="String">Çelik Dizlik</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_Armor_Warrior_Helmet_T2</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Masterwork Cerveliere</Data></Cell>
+    <Cell><Data ss:Type="String">Şaheser Çelik Kask</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_Armor_Warrior_Pauldron_T2</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Masterwork Lamellar Spaulder</Data></Cell>
+    <Cell><Data ss:Type="String">Şaheser Tabaka Omuzluk</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_Armor_Warrior_Armguard_T2</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Masterwork Wristguard</Data></Cell>
+    <Cell><Data ss:Type="String">Şaheser Bileklik</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_Armor_Warrior_Cuirass_T2</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Masterwork Barbarian Defender</Data></Cell>
+    <Cell><Data ss:Type="String">Şaheser Barbar Koruyucusu</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_Armor_Warrior_Greaves_T2</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Masterwork Leather Tasset</Data></Cell>
+    <Cell><Data ss:Type="String">Şaheser Deri Kalçalık</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_Armor_Warrior_Sollerets_T2</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Masterwork Poleyns</Data></Cell>
+    <Cell><Data ss:Type="String">Şaheser Çelik Dizlik</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="s79"><Data ss:Type="String">Rogue</Data></Cell>
+    <Cell ss:StyleID="s80"/>
+    <Cell ss:StyleID="s80"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_Armor_Rogue_Helmet_T1</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Bandana</Data></Cell>
+    <Cell><Data ss:Type="String">Bandana</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_Armor_Rogue_Pauldron_T1</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Studded Leather Epaulet</Data></Cell>
+    <Cell><Data ss:Type="String">Çivili Deri Omuzluk</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_Armor_Rogue_Armguard_T1</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Gauntlet</Data></Cell>
+    <Cell><Data ss:Type="String">Zırh Eldiveni</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_Armor_Rogue_Cuirass_T1</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Quilted Armor</Data></Cell>
+    <Cell><Data ss:Type="String">Kapitone Zırh</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_Armor_Rogue_Greaves_T1</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Burlap Trousers</Data></Cell>
+    <Cell><Data ss:Type="String">Çuval Bezi Pantolon</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_Armor_Rogue_Sollerets_T1</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Leather Boots</Data></Cell>
+    <Cell><Data ss:Type="String">Deri Botlar</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_Armor_Rogue_Helmet_T2</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Masterwork Bandana</Data></Cell>
+    <Cell><Data ss:Type="String">Şaheser Bandana</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_Armor_Rogue_Pauldron_T2</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Masterwork Studded Leather Epaulet</Data></Cell>
+    <Cell><Data ss:Type="String">Şaheser Çivili Deri Omuzluk</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_Armor_Rogue_Armguard_T2</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Masterwork Gauntlet</Data></Cell>
+    <Cell><Data ss:Type="String">Şaheser Zırh Eldiveni</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_Armor_Rogue_Cuirass_T2</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Masterwork Quilted Armor</Data></Cell>
+    <Cell><Data ss:Type="String">Şaheser Kapitone Zırh</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_Armor_Rogue_Greaves_T2</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Masterwork Burlap Trousers</Data></Cell>
+    <Cell><Data ss:Type="String">Şaheser Çuval Bezi Pantolon</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_Armor_Rogue_Sollerets_T2</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Masterwork Leather Boots</Data></Cell>
+    <Cell><Data ss:Type="String">Şaheser Deri Botlar</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="s79"><Data ss:Type="String">Mage</Data></Cell>
+    <Cell ss:StyleID="s80"/>
+    <Cell ss:StyleID="s80"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_Armor_Mage_Helmet_T1</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Hood</Data></Cell>
+    <Cell><Data ss:Type="String">Kapüşon</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_Armor_Mage_Pauldron_T1</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Lamellar Cloth Epaulet</Data></Cell>
+    <Cell><Data ss:Type="String">Bez Tabaka Omuzluk</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_Armor_Mage_Armguard_T1</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Glove</Data></Cell>
+    <Cell><Data ss:Type="String">Eldiven</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_Armor_Mage_Cuirass_T1</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Waistcoat</Data></Cell>
+    <Cell><Data ss:Type="String">Yelek</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_Armor_Mage_Greaves_T1</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Breeches</Data></Cell>
+    <Cell><Data ss:Type="String">Pantolon</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_Armor_Mage_Sollerets_T1</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Laced Boots</Data></Cell>
+    <Cell><Data ss:Type="String">Bağcıklı Botlar</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_Armor_Mage_Helmet_T2</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Masterwork Hood</Data></Cell>
+    <Cell><Data ss:Type="String">Şaheser Kapüşon</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_Armor_Mage_Pauldron_T2</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Masterwork Lamellar Cloth Epaulet</Data></Cell>
+    <Cell><Data ss:Type="String">Şaheser Bez Tabaka Omuzluk</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_Armor_Mage_Armguard_T2</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Masterwork Glove</Data></Cell>
+    <Cell><Data ss:Type="String">Şaheser Eldiven</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_Armor_Mage_Cuirass_T2</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Masterwork Waistcoat</Data></Cell>
+    <Cell><Data ss:Type="String">Şaheser Yelek</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_Armor_Mage_Greaves_T2</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Masterwork Breeches</Data></Cell>
+    <Cell><Data ss:Type="String">Şaheser Pantolon</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_Armor_Mage_Sollerets_T2</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Masterwork Laced Boots</Data></Cell>
+    <Cell><Data ss:Type="String">Şaheser Bağcıklı Botlar</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="s79"><Data ss:Type="String">Accessories</Data></Cell>
+    <Cell ss:StyleID="s80"/>
+    <Cell ss:StyleID="s80"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="s63"><Data ss:Type="String">ui_Cape_AdventurerCape</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">Adventurer Cloak</Data></Cell>
+    <Cell><Data ss:Type="String">Serüvenci Pelerini</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="s63"><Data ss:Type="String">ui_Cape_GothicLongCape</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">Long Cloak</Data></Cell>
+    <Cell><Data ss:Type="String">Uzun Pelerin</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="s63"><Data ss:Type="String">ui_Cape_TemplarCape_Black</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">Templar Magister Cape</Data></Cell>
+    <Cell><Data ss:Type="String">Tapınak Şövalyesi Hakim Pelerini</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="s63"><Data ss:Type="String">ui_Cape_TemplarCape</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">Templar Cape</Data></Cell>
+    <Cell><Data ss:Type="String">Tapınak Şövalyesi Pelerini</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_Ring_Topaz</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Topaz Ring</Data></Cell>
+    <Cell><Data ss:Type="String">Topaz Yüzük</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_Ring_Aquamarine</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Aquamarine Ring</Data></Cell>
+    <Cell><Data ss:Type="String">Akuamarin Yüzük</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell><Data ss:Type="String">ui_Ring_Sapphire</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Sapphire Ring</Data></Cell>
+    <Cell><Data ss:Type="String">Safir Yüzük</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell><Data ss:Type="String">ui_Ring_Emerald</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Emerald Ring</Data></Cell>
+    <Cell><Data ss:Type="String">Zümrüt Yüzük</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell><Data ss:Type="String">ui_Ring_Ruby</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Ruby Ring</Data></Cell>
+    <Cell><Data ss:Type="String">Yakut Yüzük</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_Ring_Bloodstar</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Bloodstar Ring</Data></Cell>
+    <Cell><Data ss:Type="String">Lal Yüzük</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_Ring_Steel</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Steel Ring</Data></Cell>
+    <Cell><Data ss:Type="String">Çelik Yüzük</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_Amulet_Goldstone</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Goldstone Amulet</Data></Cell>
+    <Cell><Data ss:Type="String">Sitrin Tılsım</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_Amulet_Amethyst</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Amethyst Amulet</Data></Cell>
+    <Cell><Data ss:Type="String">Ametist Tılsım</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_Amulet_Emerald</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Emerald Amulet</Data></Cell>
+    <Cell><Data ss:Type="String">Zümrüt Tılsım</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_Amulet_Omnistar</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Omnistar Amulet</Data></Cell>
+    <Cell><Data ss:Type="String">Tourmalin Tılsım</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_Amulet_Ruby</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Ruby Amulet</Data></Cell>
+    <Cell><Data ss:Type="String">Yakut Tılsım</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_Belt_Alchemist</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Utility Belt</Data></Cell>
+    <Cell><Data ss:Type="String">Edevat Kemeri</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_Belt_Warrior</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Steel Belt</Data></Cell>
+    <Cell><Data ss:Type="String">Çelik Kemer</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_Belt_Assassin</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Quickdraw Leather Strand</Data></Cell>
+    <Cell><Data ss:Type="String">Hızlı Çekim Deri Kuşağı</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell><Data ss:Type="String">ui_Belt_Gladiator</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Champion Girdle</Data></Cell>
+    <Cell><Data ss:Type="String">Şampiyon Kemeri</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_Belt_Templar</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Catalystic Strap</Data></Cell>
+    <Cell><Data ss:Type="String">Tezgen Kayışı</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:MergeAcross="2" ss:StyleID="m1576303960844"><Data ss:Type="String">ITEMS COMPARATOR</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_ic_reqLevel</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Required Level</Data></Cell>
+    <Cell><Data ss:Type="String">Gerekli Seviye</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_ic_reqStrength</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Required Ferocity</Data></Cell>
+    <Cell><Data ss:Type="String">Gerekli Vahşilik</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_ic_reqDexterity</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Required Agility</Data></Cell>
+    <Cell><Data ss:Type="String">Gerekli Çeviklik</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_ic_reqConstitution</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Required Toughness</Data></Cell>
+    <Cell><Data ss:Type="String">Gerekli Dayanıklılık</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_ic_reqPower</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">Required Wisdom</Data></Cell>
+    <Cell><Data ss:Type="String">Gerekli Bilgelik</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_ic_itemReqLevel</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Item required level</Data></Cell>
+    <Cell><Data ss:Type="String">Gerekli seviye</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_ic_durability</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Durability</Data></Cell>
+    <Cell><Data ss:Type="String">Sağlamlık</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_ic_sellvalue</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Value</Data></Cell>
+    <Cell><Data ss:Type="String">Kıymet</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_ic_equipped</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Equipped</Data></Cell>
+    <Cell><Data ss:Type="String">Kuşanılmış</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_ic_charges</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Charges</Data></Cell>
+    <Cell><Data ss:Type="String">Kullanım Adedi</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_ic_refreshtime</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">%1 Cooldown</Data></Cell>
+    <Cell><Data ss:Type="String">%1 Soğuma</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_ic_rechargetime</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">%1 Refill time</Data></Cell>
+    <Cell><Data ss:Type="String">%1 Dolma süresi</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_ic_hold</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Hold SHIFT to switch between left and right item comparison</Data></Cell>
+    <Cell><Data ss:Type="String">Sağ ve sol eşyaların mukayesesi arasında geçiş yapmak için SHIFT'e basılı tutun</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_merchant_title</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Merchant</Data></Cell>
+    <Cell><Data ss:Type="String">Tüccar</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_merchant_restockin</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Merchant Inventory will restock in: %1 : %2</Data></Cell>
+    <Cell><Data ss:Type="String">Tüccar Envanteri %1:%2 de yenilenecek</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_ic_PotionHealthGain</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">%1 Restored Health</Data></Cell>
+    <Cell><Data ss:Type="String">%1 Can İyileştirir</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_ic_PotionUmbraGain</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">%1 Restored Willpower</Data></Cell>
+    <Cell><Data ss:Type="String">%1 İrade Verir</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_ic_PotionRageGain</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">%1 Restored Rage</Data></Cell>
+    <Cell><Data ss:Type="String">%1 Öfke Verir</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_ic_PotionStaminaGain</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">%1 Restored Stamina</Data></Cell>
+    <Cell><Data ss:Type="String">%1 Takat Tazeler</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_ic_PotionActiveEffect</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">%1 (on use)</Data></Cell>
+    <Cell><Data ss:Type="String">%1 (kullanıldığında)</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_ic_PotionPassiveEffect</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">%1 (on use, lasts %2)</Data></Cell>
+    <Cell><Data ss:Type="String">%1 (kullanıldığında, %2 kadar sürer)</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_ic_PotionPassiveEffect_stack</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">%1 (on use, lasts %2, stackable up to %3 times)</Data></Cell>
+    <Cell><Data ss:Type="String">%1 (kullanıldığında, %2 kadar sürer, %3 kere biriktirilebilir)</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_ic_PotionPermanentEffect</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">%1 (permanent when equipped)</Data></Cell>
+    <Cell><Data ss:Type="String">%1 (kuşanıldığında kalıcı olarak)</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_ic_level</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Level</Data></Cell>
+    <Cell><Data ss:Type="String">Seviye</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_ic_deprecated</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">This item comes from an old version of the game and may be unbalanced or malfunctioning</Data></Cell>
+    <Cell><Data ss:Type="String">Bu eşya oyunun eski bir sürümünden geliyor. Dengesiz veya çalışmıyor olabilir.</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:MergeAcross="2" ss:StyleID="m1576303960864"><Data ss:Type="String">LOOT RARITY</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_loot_rarity_normal</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Common</Data></Cell>
+    <Cell><Data ss:Type="String">Sıradan</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_loot_rarity_magic</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Magic</Data></Cell>
+    <Cell><Data ss:Type="String">Büyülü</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_loot_rarity_rare</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Rare</Data></Cell>
+    <Cell><Data ss:Type="String">Nadir</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_loot_rarity_legendary</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Legendary</Data></Cell>
+    <Cell><Data ss:Type="String">Efsanevi</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_loot_rarity_unique</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Unique</Data></Cell>
+    <Cell><Data ss:Type="String">Yegâne</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_loot_rarity_quest</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Quest item</Data></Cell>
+    <Cell><Data ss:Type="String">Görev Eşyası</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:MergeAcross="2" ss:StyleID="m1576303960884"><Data ss:Type="String">LOOT QUALITY</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_loot_quality_broken</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Broken</Data></Cell>
+    <Cell><Data ss:Type="String">Kırık</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_loot_quality_used</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Used</Data></Cell>
+    <Cell><Data ss:Type="String">Kullanılmış</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_loot_quality_normal</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Normal</Data></Cell>
+    <Cell><Data ss:Type="String">Sıradan</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_loot_quality_reinforced</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Reinforced</Data></Cell>
+    <Cell><Data ss:Type="String">Destekli</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_loot_quality_superior</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Superior</Data></Cell>
+    <Cell><Data ss:Type="String">Üstün</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell><Data ss:Type="String">ui_loot_quality_exceptional</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Exceptional</Data></Cell>
+    <Cell><Data ss:Type="String">Olağanüstü</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_loot_quality_epic</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Epic</Data></Cell>
+    <Cell><Data ss:Type="String">Destansı</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:MergeAcross="2" ss:StyleID="m1576303967024"><Data ss:Type="String">POTIONS</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_loot_potiontype_health</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Health potion</Data></Cell>
+    <Cell><Data ss:Type="String">Can İksiri</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_loot_potiontype_poison</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Poison</Data></Cell>
+    <Cell><Data ss:Type="String">Zehir</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_loot_potiontype_rage</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Rage potion</Data></Cell>
+    <Cell><Data ss:Type="String">Öfke İksiri</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell><Data ss:Type="String">ui_loot_potiontype_stamina</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Stamina potion</Data></Cell>
+    <Cell><Data ss:Type="String">Takat İksiri</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell><Data ss:Type="String">ui_loot_potiontype_umbra</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">Willpower potion</Data></Cell>
+    <Cell><Data ss:Type="String">İrade İksiri</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell><Data ss:Type="String">ui_loot_potiontype_misc</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Utility potion</Data></Cell>
+    <Cell><Data ss:Type="String">Edevat İksiri</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell><Data ss:Type="String">ui_Potion_S_Health</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Small Health Potion</Data></Cell>
+    <Cell><Data ss:Type="String">Küçük Can İksiri</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell><Data ss:Type="String">ui_Potion_M_Health</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Medium Health Potion</Data></Cell>
+    <Cell><Data ss:Type="String">Orta Can İksiri</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell><Data ss:Type="String">ui_Potion_L_Health</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Large Health Potion</Data></Cell>
+    <Cell><Data ss:Type="String">Büyük Can İksiri</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell><Data ss:Type="String">ui_Potion_XL_Health</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Great Health Potion</Data></Cell>
+    <Cell><Data ss:Type="String">Muazzam Can İksiri</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell><Data ss:Type="String">ui_Potion_S_Rage</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Small Rage Potion</Data></Cell>
+    <Cell><Data ss:Type="String">Küçük Öfke İksiri</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell><Data ss:Type="String">ui_Potion_M_Rage</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Medium Rage Potion</Data></Cell>
+    <Cell><Data ss:Type="String">Orta Öfke İksiri</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell><Data ss:Type="String">ui_Potion_L_Rage</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Large Rage Potion</Data></Cell>
+    <Cell><Data ss:Type="String">Büyük Öfke İksiri</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell><Data ss:Type="String">ui_Potion_XL_Rage</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Great Rage Potion</Data></Cell>
+    <Cell><Data ss:Type="String">Muazzam Öfke İksiri</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell><Data ss:Type="String">ui_Potion_S_Umbra</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">Small Willpower Potion</Data></Cell>
+    <Cell><Data ss:Type="String">Küçük İrade İksiri</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell><Data ss:Type="String">ui_Potion_M_Umbra</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">Medium Willpower Potion</Data></Cell>
+    <Cell><Data ss:Type="String">Orta İrade İksiri</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell><Data ss:Type="String">ui_Potion_L_Umbra</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">Large Willpower Potion</Data></Cell>
+    <Cell><Data ss:Type="String">Büyük İrade İksiri</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell><Data ss:Type="String">ui_Potion_XL_Umbra</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">Great Willpower Potion</Data></Cell>
+    <Cell><Data ss:Type="String">Muazzam İrade İksiri</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell><Data ss:Type="String">ui_Potion_S_Stamina</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Small Stamina Potion</Data></Cell>
+    <Cell><Data ss:Type="String">Küçük Takat İksiri</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell><Data ss:Type="String">ui_Potion_M_Stamina</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Medium Stamina Potion</Data></Cell>
+    <Cell><Data ss:Type="String">Orta Takat İksiri</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell><Data ss:Type="String">ui_Potion_L_Stamina</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Large Stamina Potion</Data></Cell>
+    <Cell><Data ss:Type="String">Büyük Takat İksiri</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell><Data ss:Type="String">ui_Potion_XL_Stamina</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Great Stamina Potion</Data></Cell>
+    <Cell><Data ss:Type="String">Muazzam Takat İksiri</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell><Data ss:Type="String">ui_Potion_M_PoisonVenom</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Poisoning Phial</Data></Cell>
+    <Cell><Data ss:Type="String">Zehirleyen İksir</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell><Data ss:Type="String">ui_Potion_M_PoisonCurse</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Cursing Phial</Data></Cell>
+    <Cell><Data ss:Type="String">Lanetleyen İksir</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell><Data ss:Type="String">ui_Potion_M_PoisonBleed</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Bleeding Phial</Data></Cell>
+    <Cell><Data ss:Type="String">Kanatan İksir</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell><Data ss:Type="String">ui_Potion_M_PoisonBurn</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Burning Phial</Data></Cell>
+    <Cell><Data ss:Type="String">Yakan İksir</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell><Data ss:Type="String">ui_Potion_M_PoisonShock</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Shocking Phial</Data></Cell>
+    <Cell><Data ss:Type="String">Şok İksiri</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell><Data ss:Type="String">ui_Potion_M_PoisonFreeze</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Freezing Phial</Data></Cell>
+    <Cell><Data ss:Type="String">Donduran İksir</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_Potion_M_PoisonWeakness</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Weakening Phial</Data></Cell>
+    <Cell><Data ss:Type="String">Halsizleştiren İksir</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:MergeAcross="2" ss:StyleID="m1576303967044"><Data ss:Type="String">WEAPON TYPES</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_WeaponType_1HSword</Data></Cell>
+    <Cell ss:StyleID="s90"><Data ss:Type="String">Sword</Data></Cell>
+    <Cell><Data ss:Type="String">Kılıç</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_WeaponType_2HSword</Data></Cell>
+    <Cell ss:StyleID="s90"><Data ss:Type="String">Greatsword</Data></Cell>
+    <Cell><Data ss:Type="String">Büyük Kılıç</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_WeaponType_1HMace</Data></Cell>
+    <Cell ss:StyleID="s90"><Data ss:Type="String">Mace</Data></Cell>
+    <Cell><Data ss:Type="String">Topuz</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_WeaponType_2HMace</Data></Cell>
+    <Cell ss:StyleID="s90"><Data ss:Type="String">Warhammer</Data></Cell>
+    <Cell><Data ss:Type="String">Savaş Çekici</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_WeaponType_1HAxe</Data></Cell>
+    <Cell ss:StyleID="s90"><Data ss:Type="String">Axe</Data></Cell>
+    <Cell><Data ss:Type="String">Balta</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_WeaponType_2HAxe</Data></Cell>
+    <Cell ss:StyleID="s90"><Data ss:Type="String">Battleaxe</Data></Cell>
+    <Cell><Data ss:Type="String">Savaş Baltası</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_WeaponType_Dagger</Data></Cell>
+    <Cell ss:StyleID="s90"><Data ss:Type="String">Dagger</Data></Cell>
+    <Cell><Data ss:Type="String">Hançer</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_WeaponType_Crossbow</Data></Cell>
+    <Cell ss:StyleID="s91"><Data ss:Type="String">Crossbow</Data></Cell>
+    <Cell><Data ss:Type="String">Arbalet</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_WeaponType_SmallShield</Data></Cell>
+    <Cell ss:StyleID="s90"><Data ss:Type="String">Shield</Data></Cell>
+    <Cell><Data ss:Type="String">Kalkan</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_WeaponType_Staff</Data></Cell>
+    <Cell ss:StyleID="s90"><Data ss:Type="String">Staff</Data></Cell>
+    <Cell><Data ss:Type="String">Asa</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell><Data ss:Type="String">ui_WeaponType_Gun</Data></Cell>
+    <Cell ss:StyleID="s90"><Data ss:Type="String">Pistol</Data></Cell>
+    <Cell><Data ss:Type="String">Tabanca</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell><Data ss:Type="String">ui_WeaponType_Bow</Data></Cell>
+    <Cell ss:StyleID="s90"><Data ss:Type="String">Bow</Data></Cell>
+    <Cell><Data ss:Type="String">Yay</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_WeaponType_Trinket</Data></Cell>
+    <Cell ss:StyleID="s90"><Data ss:Type="String">Catalyst</Data></Cell>
+    <Cell><Data ss:Type="String">Tezgen</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:MergeAcross="2" ss:StyleID="m1576303967064"><Data ss:Type="String">INGREDIENTS</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s63"><Data ss:Type="String">ui_loot_Ingredient</Data></Cell>
+    <Cell ss:StyleID="s91"><Data ss:Type="String">Ingredient</Data></Cell>
+    <Cell><Data ss:Type="String">Malzeme</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="s63"><Data ss:Type="String">ui_Ingredients_Fern</Data></Cell>
+    <Cell ss:StyleID="s91"><Data ss:Type="String">Fern</Data></Cell>
+    <Cell><Data ss:Type="String">Ot</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="s63"><Data ss:Type="String">ui_Ingredients_Mushroom</Data></Cell>
+    <Cell ss:StyleID="s91"><Data ss:Type="String">Mushroom</Data></Cell>
+    <Cell><Data ss:Type="String">Mantar</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:MergeAcross="2" ss:StyleID="m1576303967084"><Data ss:Type="String">WEAPON SPEED</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_speed_slowest</Data></Cell>
+    <Cell ss:StyleID="s90"><Data ss:Type="String">Slowest</Data></Cell>
+    <Cell><Data ss:Type="String">En yavaş</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_speed_veryslow</Data></Cell>
+    <Cell ss:StyleID="s90"><Data ss:Type="String">Very slow</Data></Cell>
+    <Cell><Data ss:Type="String">Çok yavaş</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_speed_slow</Data></Cell>
+    <Cell ss:StyleID="s90"><Data ss:Type="String">Slow</Data></Cell>
+    <Cell><Data ss:Type="String">Yavaş</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_speed_belownormal</Data></Cell>
+    <Cell ss:StyleID="s90"><Data ss:Type="String">Below average speed</Data></Cell>
+    <Cell><Data ss:Type="String">Ortalamanın altı hızda</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_speed_normal</Data></Cell>
+    <Cell ss:StyleID="s90"><Data ss:Type="String">Medium speed</Data></Cell>
+    <Cell><Data ss:Type="String">Ortalama hızda</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_speed_abovenormal</Data></Cell>
+    <Cell ss:StyleID="s90"><Data ss:Type="String">Above average speed</Data></Cell>
+    <Cell><Data ss:Type="String">Ortalamanın üstü hızda</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell><Data ss:Type="String">ui_speed_fast</Data></Cell>
+    <Cell ss:StyleID="s90"><Data ss:Type="String">Fast</Data></Cell>
+    <Cell><Data ss:Type="String">Hızlı</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell><Data ss:Type="String">ui_speed_veryfast</Data></Cell>
+    <Cell ss:StyleID="s90"><Data ss:Type="String">Very fast</Data></Cell>
+    <Cell><Data ss:Type="String">Çok hızlı</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_speed_fastest</Data></Cell>
+    <Cell ss:StyleID="s90"><Data ss:Type="String">Fastest</Data></Cell>
+    <Cell><Data ss:Type="String">En hızlı</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:MergeAcross="2" ss:StyleID="m1576303967104"><Data ss:Type="String">QUEST ITEMS</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_QuestItem_SirkisSkull</Data></Cell>
+    <Cell ss:StyleID="s92"><Data ss:Type="String">Sirkis’ skull</Data></Cell>
+    <Cell><Data ss:Type="String">Sirkis'in Kafatası</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_QuestItem_StolenChest</Data></Cell>
+    <Cell ss:StyleID="s92"><Data ss:Type="String">Stolen chest</Data></Cell>
+    <Cell><Data ss:Type="String">Çalıntı Sandık</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:MergeAcross="2" ss:StyleID="m1576303967124"><Data ss:Type="String">SOCKETS AND GEMS</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_ic_offensive</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Offensive</Data></Cell>
+    <Cell><Data ss:Type="String">Saldırı</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_ic_defensive</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Defensive</Data></Cell>
+    <Cell><Data ss:Type="String">Savunma</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_ic_support</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Support</Data></Cell>
+    <Cell><Data ss:Type="String">Destek</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_ic_offensivesocket</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Offensive</Data></Cell>
+    <Cell><Data ss:Type="String">Saldırı</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_ic_defensivesocket</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Defensive</Data></Cell>
+    <Cell><Data ss:Type="String">Savunma</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_ic_supportsocket</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Support</Data></Cell>
+    <Cell><Data ss:Type="String">Destek</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_ic_uniquesocket</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Unique</Data></Cell>
+    <Cell><Data ss:Type="String">Yegâne</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_ic_gem</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Gem</Data></Cell>
+    <Cell><Data ss:Type="String">Mücevher</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_ic_gemTier</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Tier</Data></Cell>
+    <Cell><Data ss:Type="String">Kalite</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_firegem_tier01</Data></Cell>
+    <Cell ss:StyleID="s94"><Data ss:Type="String" x:Ticked="1">Chipped Topaz</Data></Cell>
+    <Cell><Data ss:Type="String">Kırık Topaz</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_firegem_tier02</Data></Cell>
+    <Cell ss:StyleID="s94"><Data ss:Type="String" x:Ticked="1">Crude Topaz</Data></Cell>
+    <Cell><Data ss:Type="String">Kaba Topaz</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_firegem_tier03</Data></Cell>
+    <Cell ss:StyleID="s94"><Data ss:Type="String" x:Ticked="1">Raw Topaz</Data></Cell>
+    <Cell><Data ss:Type="String">Ham Topaz</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_firegem_tier04</Data></Cell>
+    <Cell ss:StyleID="s94"><Data ss:Type="String" x:Ticked="1">Flawed Topaz</Data></Cell>
+    <Cell><Data ss:Type="String">Kusurlu Topaz</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_firegem_tier05</Data></Cell>
+    <Cell ss:StyleID="s94"><Data ss:Type="String" x:Ticked="1">Topaz</Data></Cell>
+    <Cell><Data ss:Type="String">Topaz</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_firegem_tier06</Data></Cell>
+    <Cell ss:StyleID="s94"><Data ss:Type="String" x:Ticked="1">Polished Topaz</Data></Cell>
+    <Cell><Data ss:Type="String">Perdahlı Topaz</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_firegem_tier07</Data></Cell>
+    <Cell ss:StyleID="s94"><Data ss:Type="String" x:Ticked="1">Pristine Topaz</Data></Cell>
+    <Cell><Data ss:Type="String">Saf Topaz</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_firegem_tier08</Data></Cell>
+    <Cell ss:StyleID="s94"><Data ss:Type="String" x:Ticked="1">Polished Pristine Topaz</Data></Cell>
+    <Cell><Data ss:Type="String">Perdahlı Saf Topaz</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_firegem_tier09</Data></Cell>
+    <Cell ss:StyleID="s94"><Data ss:Type="String" x:Ticked="1">Precious Topaz</Data></Cell>
+    <Cell><Data ss:Type="String">Kıymetli Topaz</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_firegem_tier10</Data></Cell>
+    <Cell ss:StyleID="s94"><Data ss:Type="String" x:Ticked="1">Polished Precious Topaz</Data></Cell>
+    <Cell><Data ss:Type="String">Perdahlı Kıymetli Topaz</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_firegem_tier11</Data></Cell>
+    <Cell ss:StyleID="s94"><Data ss:Type="String" x:Ticked="1">Perfect Topaz</Data></Cell>
+    <Cell><Data ss:Type="String">Mükemmel Topaz</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_firegem_tier12</Data></Cell>
+    <Cell ss:StyleID="s94"><Data ss:Type="String" x:Ticked="1">Polished Perfect Topaz</Data></Cell>
+    <Cell><Data ss:Type="String">Perdahlı Mükemmel Topaz</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_firegem_tier13</Data></Cell>
+    <Cell ss:StyleID="s94"><Data ss:Type="String" x:Ticked="1">Royal Topaz</Data></Cell>
+    <Cell><Data ss:Type="String">Muhteşem Topaz</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_firegem_tier14</Data></Cell>
+    <Cell ss:StyleID="s94"><Data ss:Type="String" x:Ticked="1">Polished Royal Topaz</Data></Cell>
+    <Cell><Data ss:Type="String">Perdahlı Muhteşem Topaz</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_firegem_tier15</Data></Cell>
+    <Cell ss:StyleID="s94"><Data ss:Type="String" x:Ticked="1">Celestial Topaz</Data></Cell>
+    <Cell><Data ss:Type="String">Semavi Topaz</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_firegem_tier16</Data></Cell>
+    <Cell ss:StyleID="s94"><Data ss:Type="String" x:Ticked="1">Polished Celestial Topaz</Data></Cell>
+    <Cell><Data ss:Type="String">Perdahlı Semavi Topaz</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_firegem_tier17</Data></Cell>
+    <Cell ss:StyleID="s94"><Data ss:Type="String" x:Ticked="1">Fallen Topaz</Data></Cell>
+    <Cell><Data ss:Type="String">Günahkâr Topaz</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_firegem_tier18</Data></Cell>
+    <Cell ss:StyleID="s94"><Data ss:Type="String" x:Ticked="1">Polished Fallen Topaz</Data></Cell>
+    <Cell><Data ss:Type="String">Perdahlı Günahkâr Topaz</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_firegem_tier19</Data></Cell>
+    <Cell ss:StyleID="s94"><Data ss:Type="String" x:Ticked="1">Divine Topaz</Data></Cell>
+    <Cell><Data ss:Type="String">İlahi Topaz</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_firegem_tier20</Data></Cell>
+    <Cell ss:StyleID="s94"><Data ss:Type="String" x:Ticked="1">Polished Divine Topaz</Data></Cell>
+    <Cell><Data ss:Type="String">Perdahlı İlahi Topaz</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_lightninggem_tier01</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Chipped Lapis-Lazuli</Data></Cell>
+    <Cell><Data ss:Type="String">Kırık Lapis Lazuli</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_lightninggem_tier02</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Crude Lapis-Lazuli</Data></Cell>
+    <Cell><Data ss:Type="String">Kaba Lapis Lazuli</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_lightninggem_tier03</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Raw Lapis-Lazuli</Data></Cell>
+    <Cell><Data ss:Type="String">Ham Lapis Lazuli</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_lightninggem_tier04</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Flawed Lapis-Lazuli</Data></Cell>
+    <Cell><Data ss:Type="String">Kusurlu Lapis Lazuli</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_lightninggem_tier05</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Lapis-Lazuli</Data></Cell>
+    <Cell><Data ss:Type="String">Lapis Lazuli</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_lightninggem_tier06</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Polished Lapis-Lazuli</Data></Cell>
+    <Cell><Data ss:Type="String">Perdahlı Lapis Lazuli</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_lightninggem_tier07</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Pristine Lapis-Lazuli</Data></Cell>
+    <Cell><Data ss:Type="String">Saf Lapis Lazuli</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_lightninggem_tier08</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Polished Pristine Lapis-Lazuli</Data></Cell>
+    <Cell><Data ss:Type="String">Perdahlı Saf Lapis Lazuli</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_lightninggem_tier09</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Precious Lapis-Lazuli</Data></Cell>
+    <Cell><Data ss:Type="String">Kıymetli Lapis Lazuli</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_lightninggem_tier10</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Polished Precious Lapis-Lazuli</Data></Cell>
+    <Cell><Data ss:Type="String">Perdahlı Kıymetli Lapis Lazuli</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_lightninggem_tier11</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Perfect Lapis-Lazuli</Data></Cell>
+    <Cell><Data ss:Type="String">Mükemmel Lapis Lazuli</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_lightninggem_tier12</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Polished Perfect Lapis-Lazuli</Data></Cell>
+    <Cell><Data ss:Type="String">Perdahlı Mükemmel Lapis Lazuli</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_lightninggem_tier13</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Royal Lapis-Lazuli</Data></Cell>
+    <Cell><Data ss:Type="String">Muhteşem Lapis Lazuli</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_lightninggem_tier14</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Polished Royal Lapis-Lazuli</Data></Cell>
+    <Cell><Data ss:Type="String">Perdahlı Muhteşem Lapis Lazuli</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_lightninggem_tier15</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Celestial Lapis-Lazuli</Data></Cell>
+    <Cell><Data ss:Type="String">Semavi Lapis Lazuli</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_lightninggem_tier16</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Polished Celestial Lapis-Lazuli</Data></Cell>
+    <Cell><Data ss:Type="String">Perdahlı Semavi Lapis Lazuli</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_lightninggem_tier17</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Fallen Lapis-Lazuli</Data></Cell>
+    <Cell><Data ss:Type="String">Günahkâr Lapis Lazuli</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_lightninggem_tier18</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Polished Fallen Lapis-Lazuli</Data></Cell>
+    <Cell><Data ss:Type="String">Perdahlı Günahkâr Lapis Lazuli</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_lightninggem_tier19</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Divine Lapis-Lazuli</Data></Cell>
+    <Cell><Data ss:Type="String">İlahi Lapis Lazuli</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_lightninggem_tier20</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Polished Divine Lapis-Lazuli</Data></Cell>
+    <Cell><Data ss:Type="String">Perdahlı İlahi Lapis Lazuli</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_frostgem_tier01</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Chipped Diamond</Data></Cell>
+    <Cell><Data ss:Type="String">Kırık Elmas</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_frostgem_tier02</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Crude Diamond</Data></Cell>
+    <Cell><Data ss:Type="String">Kaba Elmas</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_frostgem_tier03</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Raw Diamond</Data></Cell>
+    <Cell><Data ss:Type="String">Ham Elmas</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_frostgem_tier04</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Flawed Diamond</Data></Cell>
+    <Cell><Data ss:Type="String">Kusurlu Elmas</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_frostgem_tier05</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Diamond</Data></Cell>
+    <Cell><Data ss:Type="String">Elmas</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_frostgem_tier06</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Polished Diamond</Data></Cell>
+    <Cell><Data ss:Type="String">Perdahlı Elmas</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_frostgem_tier07</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Pristine Diamond</Data></Cell>
+    <Cell><Data ss:Type="String">Saf Elmas</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_frostgem_tier08</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Polished Pristine Diamond</Data></Cell>
+    <Cell><Data ss:Type="String">Perdahlı Saf Elmas</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_frostgem_tier09</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Precious Diamond</Data></Cell>
+    <Cell><Data ss:Type="String">Kıymetli Elmas</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_frostgem_tier10</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Polished Precious Diamond</Data></Cell>
+    <Cell><Data ss:Type="String">Perdahlı Kıymetli Elmas</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_frostgem_tier11</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Perfect Diamond</Data></Cell>
+    <Cell><Data ss:Type="String">Mükemmel Elmas</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_frostgem_tier12</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Polished Perfect Diamond</Data></Cell>
+    <Cell><Data ss:Type="String">Perdahlı Mükemmel Elmas</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_frostgem_tier13</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Royal Diamond</Data></Cell>
+    <Cell><Data ss:Type="String">Muhteşem Elmas</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_frostgem_tier14</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Polished Royal Diamond</Data></Cell>
+    <Cell><Data ss:Type="String">Perdahlı Muhteşem Elmas</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_frostgem_tier15</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Celestial Diamond</Data></Cell>
+    <Cell><Data ss:Type="String">Semavi Elmas</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_frostgem_tier16</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Polished Celestial Diamond</Data></Cell>
+    <Cell><Data ss:Type="String">Perdahlı Semavi Elmas</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_frostgem_tier17</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Fallen Diamond</Data></Cell>
+    <Cell><Data ss:Type="String">Günahkâr Elmas</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_frostgem_tier18</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Polished Fallen Diamond</Data></Cell>
+    <Cell><Data ss:Type="String">Perdahlı Günahkâr Elmas</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_frostgem_tier19</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Divine Diamond</Data></Cell>
+    <Cell><Data ss:Type="String">İlahi Elmas</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_frostgem_tier20</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Polished Divine Diamond</Data></Cell>
+    <Cell><Data ss:Type="String">Perdahlı İlahi Elmas</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_umbragem_tier01</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Chipped Amber</Data></Cell>
+    <Cell><Data ss:Type="String">Kırık Kehribar</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_umbragem_tier02</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Crude Amber</Data></Cell>
+    <Cell><Data ss:Type="String">Kaba Kehribar</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_umbragem_tier03</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Raw Amber</Data></Cell>
+    <Cell><Data ss:Type="String">Ham Kehribar</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_umbragem_tier04</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Flawed Amber</Data></Cell>
+    <Cell><Data ss:Type="String">Kusurlu Kehribar</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_umbragem_tier05</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Amber</Data></Cell>
+    <Cell><Data ss:Type="String">Kehribar</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_umbragem_tier06</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Polished Amber</Data></Cell>
+    <Cell><Data ss:Type="String">Perdahlı Kehribar</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_umbragem_tier07</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Pristine Amber</Data></Cell>
+    <Cell><Data ss:Type="String">Saf Kehribar</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_umbragem_tier08</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Polished Pristine Amber</Data></Cell>
+    <Cell><Data ss:Type="String">Perdahlı Saf Kehribar</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_umbragem_tier09</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Precious Amber</Data></Cell>
+    <Cell><Data ss:Type="String">Kıymetli Kehribar</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_umbragem_tier10</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Polished Precious Amber</Data></Cell>
+    <Cell><Data ss:Type="String">Perdahlı Kıymetli Kehribar</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_umbragem_tier11</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Perfect Amber</Data></Cell>
+    <Cell><Data ss:Type="String">Mükemmel Kehribar</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_umbragem_tier12</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Polished Perfect Amber</Data></Cell>
+    <Cell><Data ss:Type="String">Perdahlı Mükemmel Kehribar</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_umbragem_tier13</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Royal Amber</Data></Cell>
+    <Cell><Data ss:Type="String">Muhteşem Kehribar</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_umbragem_tier14</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Polished Royal Amber</Data></Cell>
+    <Cell><Data ss:Type="String">Perdahlı Muhteşem Kehribar</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_umbragem_tier15</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Celestial Amber</Data></Cell>
+    <Cell><Data ss:Type="String">Semavi Kehribar</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_umbragem_tier16</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Polished Celestial Amber</Data></Cell>
+    <Cell><Data ss:Type="String">Perdahlı Semavi Kehribar</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_umbragem_tier17</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Fallen Amber</Data></Cell>
+    <Cell><Data ss:Type="String">Günahkâr Kehribar</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_umbragem_tier18</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Polished Fallen Amber</Data></Cell>
+    <Cell><Data ss:Type="String">Perdahlı Günahkâr Kehribar</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_umbragem_tier19</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Divine Amber</Data></Cell>
+    <Cell><Data ss:Type="String">İlahi Kehribar</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_umbragem_tier20</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Polished Divine Amber</Data></Cell>
+    <Cell><Data ss:Type="String">Perdahlı İlahi Kehribar</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_sacredgem_tier01</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Chipped Silverstone</Data></Cell>
+    <Cell><Data ss:Type="String">Kırık Petalit</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_sacredgem_tier02</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Crude Silverstone</Data></Cell>
+    <Cell><Data ss:Type="String">Kaba Petalit</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_sacredgem_tier03</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Raw Silverstone</Data></Cell>
+    <Cell><Data ss:Type="String">Ham Petalit</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_sacredgem_tier04</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Flawed Silverstone</Data></Cell>
+    <Cell><Data ss:Type="String">Kusurlu Petalit</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_sacredgem_tier05</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Silverstone</Data></Cell>
+    <Cell><Data ss:Type="String">Petalit</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_sacredgem_tier06</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Polished Silverstone</Data></Cell>
+    <Cell><Data ss:Type="String">Perdahlı Petalit</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_sacredgem_tier07</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Pristine Silverstone</Data></Cell>
+    <Cell><Data ss:Type="String">Saf Petalit</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_sacredgem_tier08</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Polished Pristine Silverstone</Data></Cell>
+    <Cell><Data ss:Type="String">Perdahlı Saf Petalit</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_sacredgem_tier09</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Precious Silverstone</Data></Cell>
+    <Cell><Data ss:Type="String">Kıymetli Petalit</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_sacredgem_tier10</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Polished Precious Silverstone</Data></Cell>
+    <Cell><Data ss:Type="String">Perdahlı Kıymetli Petalit</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_sacredgem_tier11</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Perfect Silverstone</Data></Cell>
+    <Cell><Data ss:Type="String">Mükemmel Petalit</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_sacredgem_tier12</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Polished Perfect Silverstone</Data></Cell>
+    <Cell><Data ss:Type="String">Perdahlı Mükemmel Petalit</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_sacredgem_tier13</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Royal Silverstone</Data></Cell>
+    <Cell><Data ss:Type="String">Muhteşem Petalit</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_sacredgem_tier14</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Polished Royal Silverstone</Data></Cell>
+    <Cell><Data ss:Type="String">Perdahlı Muhteşem Petalit</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_sacredgem_tier15</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Celestial Silverstone</Data></Cell>
+    <Cell><Data ss:Type="String">Semavi Petalit</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_sacredgem_tier16</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Polished Celestial Silverstone</Data></Cell>
+    <Cell><Data ss:Type="String">Perdahlı Semavi Petalit</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_sacredgem_tier17</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Fallen Silverstone</Data></Cell>
+    <Cell><Data ss:Type="String">Günahkâr Petalit</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_sacredgem_tier18</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Polished Fallen Silverstone</Data></Cell>
+    <Cell><Data ss:Type="String">Perdahlı Günahkâr Petalit</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_sacredgem_tier19</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Divine Silverstone</Data></Cell>
+    <Cell><Data ss:Type="String">İlahi Petalit</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_sacredgem_tier20</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Polished Divine Silverstone</Data></Cell>
+    <Cell><Data ss:Type="String">Perdahlı İlahi Petalit</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_shadowgem_tier01</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Chipped Sapphire</Data></Cell>
+    <Cell><Data ss:Type="String">Kırık Safir</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_shadowgem_tier02</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Crude Sapphire</Data></Cell>
+    <Cell><Data ss:Type="String">Kaba Safir</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_shadowgem_tier03</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Raw Sapphire</Data></Cell>
+    <Cell><Data ss:Type="String">Ham Safir</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_shadowgem_tier04</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Flawed Sapphire</Data></Cell>
+    <Cell><Data ss:Type="String">Kusurlu Safir</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_shadowgem_tier05</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Sapphire</Data></Cell>
+    <Cell><Data ss:Type="String">Safir</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_shadowgem_tier06</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Polished Sapphire</Data></Cell>
+    <Cell><Data ss:Type="String">Perdahlı Safir</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_shadowgem_tier07</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Pristine Sapphire</Data></Cell>
+    <Cell><Data ss:Type="String">Saf Safir</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_shadowgem_tier08</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Polished Pristine Sapphire</Data></Cell>
+    <Cell><Data ss:Type="String">Perdahlı Saf Safir</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_shadowgem_tier09</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Precious Sapphire</Data></Cell>
+    <Cell><Data ss:Type="String">Kıymetli Safir</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_shadowgem_tier10</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Polished Precious Sapphire</Data></Cell>
+    <Cell><Data ss:Type="String">Perdahlı Kıymetli Safir</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_shadowgem_tier11</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Perfect Sapphire</Data></Cell>
+    <Cell><Data ss:Type="String">Mükemmel Safir</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_shadowgem_tier12</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Polished Perfect Sapphire</Data></Cell>
+    <Cell><Data ss:Type="String">Perdahlı Mükemmel Safir</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_shadowgem_tier13</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Royal Sapphire</Data></Cell>
+    <Cell><Data ss:Type="String">Muhteşem Safir</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_shadowgem_tier14</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Polished Royal Sapphire</Data></Cell>
+    <Cell><Data ss:Type="String">Perdahlı Muhteşem Safir</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_shadowgem_tier15</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Celestial Sapphire</Data></Cell>
+    <Cell><Data ss:Type="String">Semavi Safir</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_shadowgem_tier16</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Polished Celestial Sapphire</Data></Cell>
+    <Cell><Data ss:Type="String">Perdahlı Semavi Safir</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_shadowgem_tier17</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Fallen Sapphire</Data></Cell>
+    <Cell><Data ss:Type="String">Günahkâr Safir</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_shadowgem_tier18</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Polished Fallen Sapphire</Data></Cell>
+    <Cell><Data ss:Type="String">Perdahlı Günahkâr Safir</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_shadowgem_tier19</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Divine Sapphire</Data></Cell>
+    <Cell><Data ss:Type="String">İlahi Safir</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_shadowgem_tier20</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Polished Divine Sapphire</Data></Cell>
+    <Cell><Data ss:Type="String">Perdahlı İlahi Safir</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_poisongem_tier01</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Chipped Emerald</Data></Cell>
+    <Cell><Data ss:Type="String">Kırık Zümrüt</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_poisongem_tier02</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Crude Emerald</Data></Cell>
+    <Cell><Data ss:Type="String">Kaba Zümrüt</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_poisongem_tier03</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Raw Emerald</Data></Cell>
+    <Cell><Data ss:Type="String">Ham Zümrüt</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_poisongem_tier04</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Flawed Emerald</Data></Cell>
+    <Cell><Data ss:Type="String">Kusurlu Zümrüt</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_poisongem_tier05</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Emerald</Data></Cell>
+    <Cell><Data ss:Type="String">Zümrüt</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_poisongem_tier06</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Polished Emerald</Data></Cell>
+    <Cell><Data ss:Type="String">Perdahlı Zümrüt</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_poisongem_tier07</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Pristine Emerald</Data></Cell>
+    <Cell><Data ss:Type="String">Saf Zümrüt</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_poisongem_tier08</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Polished Pristine Emerald</Data></Cell>
+    <Cell><Data ss:Type="String">Perdahlı Saf Zümrüt</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_poisongem_tier09</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Precious Emerald</Data></Cell>
+    <Cell><Data ss:Type="String">Kıymetli Zümrüt</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_poisongem_tier10</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Polished Precious Emerald</Data></Cell>
+    <Cell><Data ss:Type="String">Perdahlı Kıymetli Zümrüt</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_poisongem_tier11</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Perfect Emerald</Data></Cell>
+    <Cell><Data ss:Type="String">Mükemmel Zümrüt</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_poisongem_tier12</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Polished Perfect Emerald</Data></Cell>
+    <Cell><Data ss:Type="String">Perdahlı Mükemmel Zümrüt</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_poisongem_tier13</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Royal Emerald</Data></Cell>
+    <Cell><Data ss:Type="String">Muhteşem Zümrüt</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_poisongem_tier14</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Polished Royal Emerald</Data></Cell>
+    <Cell><Data ss:Type="String">Perdahlı Muhteşem Zümrüt</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_poisongem_tier15</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Celestial Emerald</Data></Cell>
+    <Cell><Data ss:Type="String">Semavi Zümrüt</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_poisongem_tier16</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Polished Celestial Emerald</Data></Cell>
+    <Cell><Data ss:Type="String">Perdahlı Semavi Zümrüt</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_poisongem_tier17</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Fallen Emerald</Data></Cell>
+    <Cell><Data ss:Type="String">Günahkâr Zümrüt</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_poisongem_tier18</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Polished Fallen Emerald</Data></Cell>
+    <Cell><Data ss:Type="String">Perdahlı Günahkâr Zümrüt</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_poisongem_tier19</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Divine Emerald</Data></Cell>
+    <Cell><Data ss:Type="String">İlahi Zümrüt</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_poisongem_tier20</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Polished Divine Emerald</Data></Cell>
+    <Cell><Data ss:Type="String">Perdahlı İlahi Zümrüt</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_bleedgem_tier01</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Chipped Ruby</Data></Cell>
+    <Cell><Data ss:Type="String">Kırık Yakut</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_bleedgem_tier02</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Crude Ruby</Data></Cell>
+    <Cell><Data ss:Type="String">Kaba Yakut</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_bleedgem_tier03</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Raw Ruby</Data></Cell>
+    <Cell><Data ss:Type="String">Ham Yakut</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_bleedgem_tier04</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Flawed Ruby</Data></Cell>
+    <Cell><Data ss:Type="String">Kusurlu Yakut</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_bleedgem_tier05</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Ruby</Data></Cell>
+    <Cell><Data ss:Type="String">Yakut</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_bleedgem_tier06</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Polished Ruby</Data></Cell>
+    <Cell><Data ss:Type="String">Perdahlı Yakut</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_bleedgem_tier07</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Pristine Ruby</Data></Cell>
+    <Cell><Data ss:Type="String">Saf Yakut</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_bleedgem_tier08</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Polished Pristine Ruby</Data></Cell>
+    <Cell><Data ss:Type="String">Perdahlı Saf Yakut</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_bleedgem_tier09</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Precious Ruby</Data></Cell>
+    <Cell><Data ss:Type="String">Kıymetli Yakut</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_bleedgem_tier10</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Polished Precious Ruby</Data></Cell>
+    <Cell><Data ss:Type="String">Perdahlı Kıymetli Yakut</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_bleedgem_tier11</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Perfect Ruby</Data></Cell>
+    <Cell><Data ss:Type="String">Mükemmel Yakut</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_bleedgem_tier12</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Polished Perfect Ruby</Data></Cell>
+    <Cell><Data ss:Type="String">Perdahlı Mükemmel Yakut</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_bleedgem_tier13</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Royal Ruby</Data></Cell>
+    <Cell><Data ss:Type="String">Muhteşem Yakut</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_bleedgem_tier14</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Polished Royal Ruby</Data></Cell>
+    <Cell><Data ss:Type="String">Perdahlı Muhteşem Yakut</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_bleedgem_tier15</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Celestial Ruby</Data></Cell>
+    <Cell><Data ss:Type="String">Semavi Yakut</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_bleedgem_tier16</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Polished Celestial Ruby</Data></Cell>
+    <Cell><Data ss:Type="String">Perdahlı Semavi Yakut</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_bleedgem_tier17</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Fallen Ruby</Data></Cell>
+    <Cell><Data ss:Type="String">Günahkâr Yakut</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_bleedgem_tier18</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Polished Fallen Ruby</Data></Cell>
+    <Cell><Data ss:Type="String">Perdahlı Günahkâr Yakut</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_bleedgem_tier19</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Divine Ruby</Data></Cell>
+    <Cell><Data ss:Type="String">İlahi Yakut</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_bleedgem_tier20</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Polished Divine Ruby</Data></Cell>
+    <Cell><Data ss:Type="String">Perdahlı İlahi Yakut</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_physicalgem_tier01</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Chipped Copperstone</Data></Cell>
+    <Cell><Data ss:Type="String">Kırık Morganit</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_physicalgem_tier02</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Crude Copperstone</Data></Cell>
+    <Cell><Data ss:Type="String">Kaba Morganit</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_physicalgem_tier03</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Raw Copperstone</Data></Cell>
+    <Cell><Data ss:Type="String">Ham Morganit</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_physicalgem_tier04</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Flawed Copperstone</Data></Cell>
+    <Cell><Data ss:Type="String">Kusurlu Morganit</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_physicalgem_tier05</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Copperstone</Data></Cell>
+    <Cell><Data ss:Type="String">Morganit</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_physicalgem_tier06</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Polished Copperstone</Data></Cell>
+    <Cell><Data ss:Type="String">Perdahlı Morganit</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_physicalgem_tier07</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Pristine Copperstone</Data></Cell>
+    <Cell><Data ss:Type="String">Saf Morganit</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_physicalgem_tier08</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Polished Pristine Copperstone</Data></Cell>
+    <Cell><Data ss:Type="String">Perdahlı Saf Morganit</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_physicalgem_tier09</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Precious Copperstone</Data></Cell>
+    <Cell><Data ss:Type="String">Kıymetli Morganit</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_physicalgem_tier10</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Polished Precious Copperstone</Data></Cell>
+    <Cell><Data ss:Type="String">Perdahlı Kıymetli Morganit</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_physicalgem_tier11</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Perfect Copperstone</Data></Cell>
+    <Cell><Data ss:Type="String">Mükemmel Morganit</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_physicalgem_tier12</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Polished Perfect Copperstone</Data></Cell>
+    <Cell><Data ss:Type="String">Perdahlı Mükemmel Morganit</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_physicalgem_tier13</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Royal Copperstone</Data></Cell>
+    <Cell><Data ss:Type="String">Muhteşem Morganit</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_physicalgem_tier14</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Polished Royal Copperstone</Data></Cell>
+    <Cell><Data ss:Type="String">Perdahlı Muhteşem Morganit</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_physicalgem_tier15</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Celestial Copperstone</Data></Cell>
+    <Cell><Data ss:Type="String">Semavi Morganit</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_physicalgem_tier16</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Polished Celestial Copperstone</Data></Cell>
+    <Cell><Data ss:Type="String">Perdahlı Semavi Morganit</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_physicalgem_tier17</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Fallen Copperstone</Data></Cell>
+    <Cell><Data ss:Type="String">Günahkâr Morganit</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_physicalgem_tier18</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Polished Fallen Copperstone</Data></Cell>
+    <Cell><Data ss:Type="String">Perdahlı Günahkâr Morganit</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_physicalgem_tier19</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Divine Copperstone</Data></Cell>
+    <Cell><Data ss:Type="String">İlahi Morganit</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_physicalgem_tier20</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Polished Divine Copperstone</Data></Cell>
+    <Cell><Data ss:Type="String">Perdahlı İlahi Morganit</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_ferocitygem_tier01</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Chipped Goldstone</Data></Cell>
+    <Cell><Data ss:Type="String">Kırık Sitrin</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_ferocitygem_tier02</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Crude Goldstone</Data></Cell>
+    <Cell><Data ss:Type="String">Kaba Sitrin</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_ferocitygem_tier03</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Raw Goldstone</Data></Cell>
+    <Cell><Data ss:Type="String">Ham Sitrin</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_ferocitygem_tier04</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Flawed Goldstone</Data></Cell>
+    <Cell><Data ss:Type="String">Kusurlu Sitrin</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_ferocitygem_tier05</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Goldstone</Data></Cell>
+    <Cell><Data ss:Type="String">Sitrin</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_ferocitygem_tier06</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Polished Goldstone</Data></Cell>
+    <Cell><Data ss:Type="String">Perdahlı Sitrin</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_ferocitygem_tier07</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Pristine Goldstone</Data></Cell>
+    <Cell><Data ss:Type="String">Saf Sitrin</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_ferocitygem_tier08</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Polished Pristine Goldstone</Data></Cell>
+    <Cell><Data ss:Type="String">Perdahlı Saf Sitrin</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_ferocitygem_tier09</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Precious Goldstone</Data></Cell>
+    <Cell><Data ss:Type="String">Kıymetli Sitrin</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_ferocitygem_tier10</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Polished Precious Goldstone</Data></Cell>
+    <Cell><Data ss:Type="String">Perdahlı Kıymetli Sitrin</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_ferocitygem_tier11</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Perfect Goldstone</Data></Cell>
+    <Cell><Data ss:Type="String">Mükemmel Sitrin</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_ferocitygem_tier12</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Polished Perfect Goldstone</Data></Cell>
+    <Cell><Data ss:Type="String">Perdahlı Mükemmel Sitrin</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_ferocitygem_tier13</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Royal Goldstone</Data></Cell>
+    <Cell><Data ss:Type="String">Muhteşem Sitrin</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_ferocitygem_tier14</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Polished Royal Goldstone</Data></Cell>
+    <Cell><Data ss:Type="String">Perdahlı Muhteşem Sitrin</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_ferocitygem_tier15</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Celestial Goldstone</Data></Cell>
+    <Cell><Data ss:Type="String">Semavi Sitrin</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_ferocitygem_tier16</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Polished Celestial Goldstone</Data></Cell>
+    <Cell><Data ss:Type="String">Perdahlı Semavi Sitrin</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_ferocitygem_tier17</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Fallen Goldstone</Data></Cell>
+    <Cell><Data ss:Type="String">Günahkâr Sitrin</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_ferocitygem_tier18</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Polished Fallen Goldstone</Data></Cell>
+    <Cell><Data ss:Type="String">Perdahlı Günahkâr Sitrin</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_ferocitygem_tier19</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Divine Goldstone</Data></Cell>
+    <Cell><Data ss:Type="String">İlahi Sitrin</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_ferocitygem_tier20</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Polished Divine Goldstone</Data></Cell>
+    <Cell><Data ss:Type="String">Perdahlı İlahi Sitrin</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_agilitygem_tier01</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Chipped Beryl</Data></Cell>
+    <Cell><Data ss:Type="String">Kırık Beril</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_agilitygem_tier02</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Crude Beryl</Data></Cell>
+    <Cell><Data ss:Type="String">Kaba Beril</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_agilitygem_tier03</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Raw Beryl</Data></Cell>
+    <Cell><Data ss:Type="String">Ham Beril</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_agilitygem_tier04</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Flawed Beryl</Data></Cell>
+    <Cell><Data ss:Type="String">Kusurlu Beril</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_agilitygem_tier05</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Beryl</Data></Cell>
+    <Cell><Data ss:Type="String">Beril</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_agilitygem_tier06</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Polished Beryl</Data></Cell>
+    <Cell><Data ss:Type="String">Perdahlı Beril</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_agilitygem_tier07</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Pristine Beryl</Data></Cell>
+    <Cell><Data ss:Type="String">Saf Beril</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_agilitygem_tier08</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Polished Pristine Beryl</Data></Cell>
+    <Cell><Data ss:Type="String">Perdahlı Saf Beril</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_agilitygem_tier09</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Precious Beryl</Data></Cell>
+    <Cell><Data ss:Type="String">Kıymetli Beril</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_agilitygem_tier10</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Polished Precious Beryl</Data></Cell>
+    <Cell><Data ss:Type="String">Perdahlı Kıymetli Beril</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_agilitygem_tier11</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Perfect Beryl</Data></Cell>
+    <Cell><Data ss:Type="String">Mükemmel Beril</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_agilitygem_tier12</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Polished Perfect Beryl</Data></Cell>
+    <Cell><Data ss:Type="String">Perdahlı Mükemmel Beril</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_agilitygem_tier13</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Royal Beryl</Data></Cell>
+    <Cell><Data ss:Type="String">Muhteşem Beril</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_agilitygem_tier14</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Polished Royal Beryl</Data></Cell>
+    <Cell><Data ss:Type="String">Perdahlı Muhteşem Beril</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_agilitygem_tier15</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Celestial Beryl</Data></Cell>
+    <Cell><Data ss:Type="String">Semavi Beril</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_agilitygem_tier16</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Polished Celestial Beryl</Data></Cell>
+    <Cell><Data ss:Type="String">Perdahlı Semavi Beril</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_agilitygem_tier17</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Fallen Beryl</Data></Cell>
+    <Cell><Data ss:Type="String">Günahkâr Beril</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_agilitygem_tier18</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Polished Fallen Beryl</Data></Cell>
+    <Cell><Data ss:Type="String">Perdahlı Günahkâr Beril</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_agilitygem_tier19</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Divine Beryl</Data></Cell>
+    <Cell><Data ss:Type="String">İlahi Beril</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_agilitygem_tier20</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Polished Divine Beryl</Data></Cell>
+    <Cell><Data ss:Type="String">Perdahlı İlahi Beril</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_willpowergem_tier01</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Chipped Cyanite</Data></Cell>
+    <Cell><Data ss:Type="String">Kırık Kyanit</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_willpowergem_tier02</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Crude Cyanite</Data></Cell>
+    <Cell><Data ss:Type="String">Kaba Kyanit</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_willpowergem_tier03</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Raw Cyanite</Data></Cell>
+    <Cell><Data ss:Type="String">Ham Kyanit</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_willpowergem_tier04</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Flawed Cyanite</Data></Cell>
+    <Cell><Data ss:Type="String">Kusurlu Kyanit</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_willpowergem_tier05</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Cyanite</Data></Cell>
+    <Cell><Data ss:Type="String">Kyanit</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_willpowergem_tier06</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Polished Cyanite</Data></Cell>
+    <Cell><Data ss:Type="String">Perdahlı Kyanit</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_willpowergem_tier07</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Pristine Cyanite</Data></Cell>
+    <Cell><Data ss:Type="String">Saf Kyanit</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_willpowergem_tier08</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Polished Pristine Cyanite</Data></Cell>
+    <Cell><Data ss:Type="String">Perdahlı Saf Kyanit</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_willpowergem_tier09</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Precious Cyanite</Data></Cell>
+    <Cell><Data ss:Type="String">Kıymetli Kyanit</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_willpowergem_tier10</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Polished Precious Cyanite</Data></Cell>
+    <Cell><Data ss:Type="String">Perdahlı Kıymetli Kyanit</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_willpowergem_tier11</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Perfect Cyanite</Data></Cell>
+    <Cell><Data ss:Type="String">Mükemmel Kyanit</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_willpowergem_tier12</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Polished Perfect Cyanite</Data></Cell>
+    <Cell><Data ss:Type="String">Perdahlı Mükemmel Kyanit</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_willpowergem_tier13</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Royal Cyanite</Data></Cell>
+    <Cell><Data ss:Type="String">Muhteşem Kyanit</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_willpowergem_tier14</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Polished Royal Cyanite</Data></Cell>
+    <Cell><Data ss:Type="String">Perdahlı Muhteşem Kyanit</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_willpowergem_tier15</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Celestial Cyanite</Data></Cell>
+    <Cell><Data ss:Type="String">Semavi Kyanit</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_willpowergem_tier16</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Polished Celestial Cyanite</Data></Cell>
+    <Cell><Data ss:Type="String">Perdahlı Semavi Kyanit</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_willpowergem_tier17</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Fallen Cyanite</Data></Cell>
+    <Cell><Data ss:Type="String">Günahkâr Kyanit</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_willpowergem_tier18</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Polished Fallen Cyanite</Data></Cell>
+    <Cell><Data ss:Type="String">Perdahlı Günahkâr Kyanit</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_willpowergem_tier19</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Divine Cyanite</Data></Cell>
+    <Cell><Data ss:Type="String">İlahi Kyanit</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_willpowergem_tier20</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Polished Divine Cyanite</Data></Cell>
+    <Cell><Data ss:Type="String">Perdahlı İlahi Kyanit</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_toughnessgem_tier01</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Chipped Amethyste</Data></Cell>
+    <Cell><Data ss:Type="String">Kırık Ametist</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_toughnessgem_tier02</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Crude Amethyste</Data></Cell>
+    <Cell><Data ss:Type="String">Kaba Ametist</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_toughnessgem_tier03</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Raw Amethyste</Data></Cell>
+    <Cell><Data ss:Type="String">Ham Ametist</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_toughnessgem_tier04</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Flawed Amethyste</Data></Cell>
+    <Cell><Data ss:Type="String">Kusurlu Ametist</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_toughnessgem_tier05</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Amethyste</Data></Cell>
+    <Cell><Data ss:Type="String">Ametist</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_toughnessgem_tier06</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Polished Amethyste</Data></Cell>
+    <Cell><Data ss:Type="String">Perdahlı Ametist</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_toughnessgem_tier07</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Pristine Amethyste</Data></Cell>
+    <Cell><Data ss:Type="String">Saf Ametist</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_toughnessgem_tier08</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Polished Pristine Amethyste</Data></Cell>
+    <Cell><Data ss:Type="String">Perdahlı Saf Ametist</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_toughnessgem_tier09</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Precious Amethyste</Data></Cell>
+    <Cell><Data ss:Type="String">Kıymetli Ametist</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_toughnessgem_tier10</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Polished Precious Amethyste</Data></Cell>
+    <Cell><Data ss:Type="String">Perdahlı Kıymetli Ametist</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_toughnessgem_tier11</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Perfect Amethyste</Data></Cell>
+    <Cell><Data ss:Type="String">Mükemmel Ametist</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_toughnessgem_tier12</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Polished Perfect Amethyste</Data></Cell>
+    <Cell><Data ss:Type="String">Perdahlı Mükemmel Ametist</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_toughnessgem_tier13</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Royal Amethyste</Data></Cell>
+    <Cell><Data ss:Type="String">Muhteşem Ametist</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_toughnessgem_tier14</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Polished Royal Amethyste</Data></Cell>
+    <Cell><Data ss:Type="String">Perdahlı Muhteşem Ametist</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_toughnessgem_tier15</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Celestial Amethyste</Data></Cell>
+    <Cell><Data ss:Type="String">Semavi Ametist</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_toughnessgem_tier16</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Polished Celestial Amethyste</Data></Cell>
+    <Cell><Data ss:Type="String">Perdahlı Semavi Ametist</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_toughnessgem_tier17</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Fallen Amethyste</Data></Cell>
+    <Cell><Data ss:Type="String">Günahkâr Ametist</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_toughnessgem_tier18</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Polished Fallen Amethyste</Data></Cell>
+    <Cell><Data ss:Type="String">Perdahlı Günahkâr Ametist</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_toughnessgem_tier19</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Divine Amethyste</Data></Cell>
+    <Cell><Data ss:Type="String">İlahi Ametist</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_toughnessgem_tier20</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Polished Divine Amethyste</Data></Cell>
+    <Cell><Data ss:Type="String">Perdahlı İlahi Ametist</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_chancegem_tier01</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Chipped Alexandrite</Data></Cell>
+    <Cell><Data ss:Type="String">Kırık Aleksandrit</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_chancegem_tier02</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Crude Alexandrite</Data></Cell>
+    <Cell><Data ss:Type="String">Kaba Aleksandrit</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_chancegem_tier03</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Raw Alexandrite</Data></Cell>
+    <Cell><Data ss:Type="String">Ham Aleksandrit</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_chancegem_tier04</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Flawed Alexandrite</Data></Cell>
+    <Cell><Data ss:Type="String">Kusurlu Aleksandrit</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_chancegem_tier05</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Alexandrite</Data></Cell>
+    <Cell><Data ss:Type="String">Aleksandrit</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_chancegem_tier06</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Polished Alexandrite</Data></Cell>
+    <Cell><Data ss:Type="String">Perdahlı Aleksandrit</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_chancegem_tier07</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Pristine Alexandrite</Data></Cell>
+    <Cell><Data ss:Type="String">Saf Aleksandrit</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_chancegem_tier08</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Polished Pristine Alexandrite</Data></Cell>
+    <Cell><Data ss:Type="String">Perdahlı Saf Aleksandrit</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_chancegem_tier09</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Precious Alexandrite</Data></Cell>
+    <Cell><Data ss:Type="String">Kıymetli Aleksandrit</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_chancegem_tier10</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Polished Precious Alexandrite</Data></Cell>
+    <Cell><Data ss:Type="String">Perdahlı Kıymetli Aleksandrit</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_chancegem_tier11</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Perfect Alexandrite</Data></Cell>
+    <Cell><Data ss:Type="String">Mükemmel Aleksandrit</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_chancegem_tier12</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Polished Perfect Alexandrite</Data></Cell>
+    <Cell><Data ss:Type="String">Perdahlı Mükemmel Aleksandrit</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_chancegem_tier13</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Royal Alexandrite</Data></Cell>
+    <Cell><Data ss:Type="String">Muhteşem Aleksandrit</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_chancegem_tier14</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Polished Royal Alexandrite</Data></Cell>
+    <Cell><Data ss:Type="String">Perdahlı Muhteşem Aleksandrit</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_chancegem_tier15</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Celestial Alexandrite</Data></Cell>
+    <Cell><Data ss:Type="String">Semavi Aleksandrit</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_chancegem_tier16</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Polished Celestial Alexandrite</Data></Cell>
+    <Cell><Data ss:Type="String">Perdahlı Semavi Aleksandrit</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_chancegem_tier17</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Fallen Alexandrite</Data></Cell>
+    <Cell><Data ss:Type="String">Günahkâr Aleksandrit</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_chancegem_tier18</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Polished Fallen Alexandrite</Data></Cell>
+    <Cell><Data ss:Type="String">Perdahlı Günahkâr Aleksandrit</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_chancegem_tier19</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Divine Alexandrite</Data></Cell>
+    <Cell><Data ss:Type="String">İlahi Aleksandrit</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_chancegem_tier20</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Polished Divine Alexandrite</Data></Cell>
+    <Cell><Data ss:Type="String">Perdahlı İlahi Aleksandrit</Data></Cell>
+   </Row>
+  </Table>
+  <WorksheetOptions xmlns="urn:schemas-microsoft-com:office:excel">
+   <PageSetup>
+    <Layout x:Orientation="Landscape"/>
+    <Header x:Margin="0.51181102362204722"
+     x:Data="&amp;LTime restriction sample script"/>
+    <Footer x:Margin="0.51181102362204722" x:Data="Page &amp;P"/>
+    <PageMargins x:Bottom="0.98425196850393704" x:Left="0" x:Right="0"
+     x:Top="0.98425196850393704"/>
+   </PageSetup>
+   <Unsynced/>
+   <Print>
+    <ValidPrinterInfo/>
+    <PaperSizeIndex>9</PaperSizeIndex>
+    <Scale>70</Scale>
+    <HorizontalResolution>600</HorizontalResolution>
+    <VerticalResolution>600</VerticalResolution>
+   </Print>
+   <Selected/>
+   <TopRowVisible>140</TopRowVisible>
+   <Panes>
+    <Pane>
+     <Number>3</Number>
+     <ActiveRow>159</ActiveRow>
+     <ActiveCol>2</ActiveCol>
+    </Pane>
+   </Panes>
+   <ProtectObjects>False</ProtectObjects>
+   <ProtectScenarios>False</ProtectScenarios>
+  </WorksheetOptions>
+ </Worksheet>
+</Workbook>

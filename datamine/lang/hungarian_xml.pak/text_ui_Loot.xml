@@ -1,0 +1,3073 @@
+<?xml version="1.0"?>
+<?mso-application progid="Excel.Sheet"?>
+<Workbook xmlns="urn:schemas-microsoft-com:office:spreadsheet"
+ xmlns:o="urn:schemas-microsoft-com:office:office"
+ xmlns:x="urn:schemas-microsoft-com:office:excel"
+ xmlns:ss="urn:schemas-microsoft-com:office:spreadsheet"
+ xmlns:html="http://www.w3.org/TR/REC-html40">
+ <DocumentProperties xmlns="urn:schemas-microsoft-com:office:office">
+  <Title>Audio script template</Title>
+  <Author>Maëlenn Lumineau</Author>
+  <LastAuthor>Yidhra</LastAuthor>
+  <LastPrinted>2003-10-30T09:38:41Z</LastPrinted>
+  <Created>2002-06-17T19:14:00Z</Created>
+  <LastSaved>2018-10-10T07:29:15Z</LastSaved>
+  <Company>Electronic Arts</Company>
+  <Version>16.00</Version>
+ </DocumentProperties>
+ <OfficeDocumentSettings xmlns="urn:schemas-microsoft-com:office:office">
+  <AllowPNG/>
+ </OfficeDocumentSettings>
+ <ExcelWorkbook xmlns="urn:schemas-microsoft-com:office:excel">
+  <SupBook>
+   <Path>\DOCUME~1\jack\LOCALS~1\Temp\p4v\PC025 perforce 1666\data\Game02\Game\Languages\Copy of Dialog_Asset_List_Final_edit.xls</Path>
+   <SheetName>DropDown</SheetName>
+   <SheetName>Conversations</SheetName>
+   <Xct>
+    <Count>2</Count>
+    <SheetIndex>0</SheetIndex>
+    <Crn>
+     <Row>6</Row>
+     <ColFirst>0</ColFirst>
+     <ColLast>4</ColLast>
+     <Text>clean</Text>
+     <Text>TV</Text>
+     <Text>radio (disturbed) </Text>
+     <Text>radio (low)</Text>
+     <Text>radio (heavy)</Text>
+    </Crn>
+    <Crn>
+     <Row>9</Row>
+     <ColFirst>0</ColFirst>
+     <ColLast>41</ColLast>
+     <Text>Player</Text>
+     <Text>Barnes</Text>
+     <Text>Hawker</Text>
+     <Text>Sykes</Text>
+     <Text>Johnson</Text>
+     <Text>Cortez</Text>
+     <Text>Beck</Text>
+     <Text>Miller</Text>
+     <Text>Baxter</Text>
+     <Text>American scientist</Text>
+     <Text>Shark</Text>
+     <Text>Chia</Text>
+     <Text>Kirovski</Text>
+     <Text>Michaels</Text>
+     <Text>Chang</Text>
+     <Text>Marine Soldier a</Text>
+     <Text>Marine Soldier b</Text>
+     <Text>Chinese Soldier a</Text>
+     <Text>Chinese Soldier b</Text>
+     <Text>Chinese Soldier c</Text>
+     <Text>Chinese Soldier d</Text>
+     <Text>Chinese Soldier e</Text>
+     <Text>Chinese Soldier f</Text>
+     <Text>Chinese Officer a</Text>
+     <Text>Chinese Officer b</Text>
+     <Text>Chinese Scientist a</Text>
+     <Text>Chinese Scientist b</Text>
+     <Text>Chinese Scientist Female a</Text>
+     <Text>Chinese Scientist Female b</Text>
+     <Text>Filmcrew Member</Text>
+     <Text>Morrison</Text>
+     <Text>C17 Pilot a</Text>
+     <Text>C17 Pilot b</Text>
+     <Text>Submarine Commander Davis</Text>
+     <Text>Pilot (camera)</Text>
+     <Text>Bridge officer 1</Text>
+     <Text>Bridge officer 2</Text>
+     <Text>Carrier deck guide</Text>
+     <Text>Jet Pilot</Text>
+     <Text>VTOL Pilot</Text>
+     <Text>Commander (camera)</Text>
+     <Text>Team Two (camera)</Text>
+    </Crn>
+   </Xct>
+  </SupBook>
+  <WindowHeight>12225</WindowHeight>
+  <WindowWidth>32767</WindowWidth>
+  <WindowTopX>32767</WindowTopX>
+  <WindowTopY>32767</WindowTopY>
+  <TabRatio>274</TabRatio>
+  <RefModeR1C1/>
+  <ProtectStructure>False</ProtectStructure>
+  <ProtectWindows>False</ProtectWindows>
+ </ExcelWorkbook>
+ <Styles>
+  <Style ss:ID="Default" ss:Name="Normal">
+   <Alignment ss:Vertical="Bottom"/>
+   <Borders/>
+   <Font ss:FontName="Arial" x:Family="Swiss"/>
+   <Interior/>
+   <NumberFormat/>
+   <Protection/>
+  </Style>
+  <Style ss:ID="s62" ss:Name="40&#160;% - Accent1">
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="11" ss:Color="#000000"/>
+   <Interior ss:Color="#BDD7EE" ss:Pattern="Solid"/>
+  </Style>
+  <Style ss:ID="s63" ss:Name="Insatisfaisant">
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="11" ss:Color="#800000"/>
+   <Interior ss:Color="#FFC7CE" ss:Pattern="Solid"/>
+  </Style>
+  <Style ss:ID="s64" ss:Name="Neutre">
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="11" ss:Color="#993300"/>
+   <Interior ss:Color="#FFEB9C" ss:Pattern="Solid"/>
+  </Style>
+  <Style ss:ID="s65" ss:Name="Satisfaisant">
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="11" ss:Color="#008000"/>
+   <Interior ss:Color="#C6EFCE" ss:Pattern="Solid"/>
+  </Style>
+  <Style ss:ID="m456286912" ss:Parent="s62">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Bottom" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="2"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="2"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="2"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="2"/>
+   </Borders>
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="11" ss:Color="#000000"
+    ss:Bold="1"/>
+  </Style>
+  <Style ss:ID="m456286932" ss:Parent="s62">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Bottom" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="2"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="2"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="2"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="2"/>
+   </Borders>
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="11" ss:Color="#000000"
+    ss:Bold="1"/>
+  </Style>
+  <Style ss:ID="m456286952" ss:Parent="s62">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Bottom" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="2"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="2"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="2"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="2"/>
+   </Borders>
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="11" ss:Color="#000000"
+    ss:Bold="1"/>
+  </Style>
+  <Style ss:ID="m456286972" ss:Parent="s62">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Bottom" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="2"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="2"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="2"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="2"/>
+   </Borders>
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="11" ss:Color="#000000"
+    ss:Bold="1"/>
+  </Style>
+  <Style ss:ID="m456286992" ss:Parent="s62">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Bottom" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="2"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="2"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="2"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="2"/>
+   </Borders>
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="11" ss:Color="#000000"
+    ss:Bold="1"/>
+  </Style>
+  <Style ss:ID="m456287012" ss:Parent="s62">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Bottom" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="2"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="2"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="2"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="2"/>
+   </Borders>
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="11" ss:Color="#000000"
+    ss:Bold="1"/>
+  </Style>
+  <Style ss:ID="m456288992" ss:Parent="s62">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Bottom" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="2"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="2"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="2"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="2"/>
+   </Borders>
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="11" ss:Color="#000000"
+    ss:Bold="1"/>
+  </Style>
+  <Style ss:ID="m456289012" ss:Parent="s62">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Bottom" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="2"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="2"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="2"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="2"/>
+   </Borders>
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="11" ss:Color="#000000"
+    ss:Bold="1"/>
+  </Style>
+  <Style ss:ID="m456289032" ss:Parent="s62">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Bottom" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="2"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="2"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="2"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="2"/>
+   </Borders>
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="11" ss:Color="#000000"
+    ss:Bold="1"/>
+  </Style>
+  <Style ss:ID="m456289052" ss:Parent="s62">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Bottom" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="2"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="2"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="2"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="2"/>
+   </Borders>
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="11" ss:Color="#000000"
+    ss:Bold="1"/>
+  </Style>
+  <Style ss:ID="m456289072" ss:Parent="s62">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Bottom" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="2"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="2"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="2"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="2"/>
+   </Borders>
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="11" ss:Color="#000000"
+    ss:Bold="1"/>
+  </Style>
+  <Style ss:ID="m456289092" ss:Parent="s62">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Bottom" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="2"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="2"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="2"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="2"/>
+   </Borders>
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="11" ss:Color="#000000"
+    ss:Bold="1"/>
+  </Style>
+  <Style ss:ID="s66">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Top" ss:WrapText="1"/>
+   <Borders/>
+  </Style>
+  <Style ss:ID="s67">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Top" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Courier New" x:Family="Modern" ss:Color="#FFFFFF" ss:Bold="1"/>
+   <Interior ss:Color="#FFCC00" ss:Pattern="Solid"/>
+  </Style>
+  <Style ss:ID="s68">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Top" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Courier New" x:Family="Modern" ss:Color="#FFFFFF" ss:Bold="1"/>
+   <Interior ss:Color="#FF0000" ss:Pattern="Solid"/>
+  </Style>
+  <Style ss:ID="s79" ss:Parent="s62">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Bottom" ss:WrapText="1"/>
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="11" ss:Color="#000000"
+    ss:Italic="1"/>
+  </Style>
+  <Style ss:ID="s80" ss:Parent="s62">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Bottom" ss:WrapText="1"/>
+  </Style>
+  <Style ss:ID="s87" ss:Parent="s62">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Bottom" ss:WrapText="1"/>
+   <Borders/>
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="11" ss:Color="#000000"
+    ss:Bold="1"/>
+  </Style>
+  <Style ss:ID="s89" ss:Parent="s62">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Bottom" ss:WrapText="1"/>
+   <NumberFormat ss:Format="Short Time"/>
+  </Style>
+  <Style ss:ID="s95" ss:Parent="s63">
+   <Alignment ss:Vertical="Bottom" ss:WrapText="1"/>
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="11"/>
+   <Interior ss:Color="#FFFFFF" ss:Pattern="Solid"/>
+  </Style>
+  <Style ss:ID="s96" ss:Parent="s64">
+   <Alignment ss:Vertical="Bottom" ss:WrapText="1"/>
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="11"/>
+   <Interior ss:Color="#FFFFFF" ss:Pattern="Solid"/>
+  </Style>
+  <Style ss:ID="s97" ss:Parent="s65">
+   <Alignment ss:Vertical="Bottom" ss:WrapText="1"/>
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="11"/>
+   <Interior ss:Color="#FFFFFF" ss:Pattern="Solid"/>
+  </Style>
+  <Style ss:ID="s98" ss:Parent="s65">
+   <Alignment ss:Vertical="Bottom" ss:WrapText="1"/>
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="11" ss:Color="#008000"/>
+   <Interior ss:Color="#C6EFCE" ss:Pattern="Solid"/>
+  </Style>
+  <Style ss:ID="s99" ss:Parent="s63">
+   <Alignment ss:Vertical="Bottom" ss:WrapText="1"/>
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="11" ss:Color="#800000"/>
+   <Interior ss:Color="#FFC7CE" ss:Pattern="Solid"/>
+  </Style>
+  <Style ss:ID="s101" ss:Parent="s65">
+   <Alignment ss:Vertical="Bottom" ss:WrapText="1"/>
+   <Borders/>
+  </Style>
+  <Style ss:ID="s104" ss:Parent="s65">
+   <Alignment ss:Vertical="Bottom" ss:WrapText="1"/>
+   <NumberFormat ss:Format="0%"/>
+  </Style>
+  <Style ss:ID="s105">
+   <Alignment ss:Vertical="Bottom" ss:WrapText="1"/>
+  </Style>
+  <Style ss:ID="s107" ss:Parent="s64">
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="11" ss:Color="#000000"/>
+   <Interior ss:Color="#FFFFFF" ss:Pattern="Solid"/>
+  </Style>
+  <Style ss:ID="s108">
+   <Alignment ss:Vertical="Top" ss:WrapText="1"/>
+   <Borders/>
+  </Style>
+  <Style ss:ID="s110" ss:Parent="s63">
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="11" ss:Color="#000000"/>
+   <Interior ss:Color="#FFFFFF" ss:Pattern="Solid"/>
+  </Style>
+  <Style ss:ID="s111" ss:Parent="s64">
+   <Alignment ss:Vertical="Bottom" ss:WrapText="1"/>
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="11" ss:Color="#000000"/>
+   <Interior ss:Color="#FFFFFF" ss:Pattern="Solid"/>
+  </Style>
+ </Styles>
+ <Names>
+  <NamedRange ss:Name="characters"
+   ss:RefersTo="='\DOCUME~1\jack\LOCALS~1\Temp\p4v\PC025 perforce 1666\data\Game02\Game\Languages\[Copy of Dialog_Asset_List_Final_edit.xls]DropDown'!R10C1:R10C42"/>
+  <NamedRange ss:Name="type"
+   ss:RefersTo="='\DOCUME~1\jack\LOCALS~1\Temp\p4v\PC025 perforce 1666\data\Game02\Game\Languages\[Copy of Dialog_Asset_List_Final_edit.xls]DropDown'!R7C1:R7C5"/>
+ </Names>
+ <Worksheet ss:Name="Sheet1">
+  <Names>
+   <NamedRange ss:Name="Print_Area" ss:RefersTo="=Sheet1!R1C2:R1C3"/>
+  </Names>
+  <Table ss:ExpandedColumnCount="4" ss:ExpandedRowCount="540" x:FullColumns="1"
+   x:FullRows="1" ss:DefaultColumnWidth="60">
+   <Column ss:AutoFitWidth="0" ss:Width="243"/>
+   <Column ss:StyleID="s105" ss:Width="291.75"/>
+   <Column ss:AutoFitWidth="0" ss:Width="369.75"/>
+   <Column ss:AutoFitWidth="0" ss:Width="160.5"/>
+   <Row ss:AutoFitHeight="0" ss:Height="14.25" ss:StyleID="s66">
+    <Cell ss:StyleID="s67"><Data ss:Type="String">KEY</Data></Cell>
+    <Cell ss:StyleID="s68"><Data ss:Type="String">ORIGINAL TEXT</Data><NamedCell
+      ss:Name="Print_Area"/></Cell>
+    <Cell ss:StyleID="s68"><Data ss:Type="String">TRANSLATED TEXT</Data><NamedCell
+      ss:Name="Print_Area"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:MergeAcross="2" ss:StyleID="m456288992"><Data ss:Type="String">WEAPONS </Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="s79"><Data ss:Type="String">Shields</Data></Cell>
+    <Cell ss:StyleID="s80"/>
+    <Cell ss:StyleID="s80" ss:Formula="=IF(RC[-1]&lt;&gt;&quot;&quot;,RC[-1],&quot;&quot;)"><Data
+      ss:Type="String"></Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_Weapon_Shield_T1</Data></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Wooden Shield</Data></Cell>
+    <Cell ss:StyleID="s95"><Data ss:Type="String">Fa pajzs</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_Weapon_Shield_T2</Data></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Targe</Data></Cell>
+    <Cell ss:StyleID="s95"><Data ss:Type="String">Tányérpajzs</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="s79"><Data ss:Type="String">2H Axes</Data></Cell>
+    <Cell ss:StyleID="s80"/>
+    <Cell ss:StyleID="s80"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_Weapon_2HAxe_T1</Data></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Broad Axe</Data></Cell>
+    <Cell ss:StyleID="s95"><Data ss:Type="String">Széles fejsze</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_Weapon_2HAxe_T2</Data></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Great Axe</Data></Cell>
+    <Cell ss:StyleID="s95"><Data ss:Type="String">Kétkezes fejsze</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="s79"><Data ss:Type="String">1H Axes</Data></Cell>
+    <Cell ss:StyleID="s80"/>
+    <Cell ss:StyleID="s80"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_Weapon_1HAxe_T1</Data></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Axe</Data></Cell>
+    <Cell ss:StyleID="s95"><Data ss:Type="String">Fejsze</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_Weapon_1HAxe_T2</Data></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">War Axe</Data></Cell>
+    <Cell ss:StyleID="s95"><Data ss:Type="String">Harci fejsze</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="s79"><Data ss:Type="String">Crossbows</Data></Cell>
+    <Cell ss:StyleID="s80"/>
+    <Cell ss:StyleID="s80"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:Index="2" ss:StyleID="s99"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="s79"><Data ss:Type="String">Bows</Data></Cell>
+    <Cell ss:StyleID="s80"/>
+    <Cell ss:StyleID="s80"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_Weapon_Bow_T1</Data></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Longbow</Data></Cell>
+    <Cell ss:StyleID="s95"><Data ss:Type="String">Hosszúíj</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_Weapon_Bow_T2</Data></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Skirmish Bow</Data></Cell>
+    <Cell ss:StyleID="s95"><Data ss:Type="String">Csataíj</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="s79"><Data ss:Type="String">Daggers</Data></Cell>
+    <Cell ss:StyleID="s80"/>
+    <Cell ss:StyleID="s80"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_Weapon_1HDagger_T1</Data></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Gutting Knife</Data></Cell>
+    <Cell ss:StyleID="s95"><Data ss:Type="String">Belezőkés</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_Weapon_1HDagger_T2</Data></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Poniard</Data></Cell>
+    <Cell ss:StyleID="s95"><Data ss:Type="String">Tőr</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="s79"><Data ss:Type="String">2H Hammers</Data></Cell>
+    <Cell ss:StyleID="s80"/>
+    <Cell ss:StyleID="s80"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_Weapon_2HHammer_T1</Data></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Warhammer</Data></Cell>
+    <Cell ss:StyleID="s95"><Data ss:Type="String">Harci kalapács</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_Weapon_2HHammer_T2</Data></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Great Mace</Data></Cell>
+    <Cell ss:StyleID="s95"><Data ss:Type="String">Kétkezes buzogány</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="s79"><Data ss:Type="String">1H Hammers</Data></Cell>
+    <Cell ss:StyleID="s80"/>
+    <Cell ss:StyleID="s80"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_Weapon_1HHammer_T1</Data></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Morningstar</Data></Cell>
+    <Cell ss:StyleID="s95"><Data ss:Type="String">Tüskés buzogány</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_Weapon_1HHammer_T2</Data></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Jagged Star</Data></Cell>
+    <Cell ss:StyleID="s95"><Data ss:Type="String">Recés buzogány</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="s79"><Data ss:Type="String">1H Swords</Data></Cell>
+    <Cell ss:StyleID="s80"/>
+    <Cell ss:StyleID="s80"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_Weapon_1HSword_T1</Data></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Longsword</Data></Cell>
+    <Cell ss:StyleID="s95"><Data ss:Type="String">Hosszúkard</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_Weapon_1HSword_T2</Data></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Gladius</Data></Cell>
+    <Cell ss:StyleID="s95"><Data ss:Type="String">Vadásztőr</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="s79"><Data ss:Type="String">2H Swords</Data></Cell>
+    <Cell ss:StyleID="s80"/>
+    <Cell ss:StyleID="s80"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_Weapon_2HSword_T1</Data></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Claymore</Data></Cell>
+    <Cell ss:StyleID="s95"><Data ss:Type="String">Klémór</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_Weapon_2HSword_T2</Data></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Great Sword</Data></Cell>
+    <Cell ss:StyleID="s95"><Data ss:Type="String">Kétkezes kard</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="s79"><Data ss:Type="String">Uniques</Data></Cell>
+    <Cell ss:StyleID="s80"/>
+    <Cell ss:StyleID="s80"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_unique_bow_projectile</Data></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Saegath's Obsession</Data></Cell>
+    <Cell ss:StyleID="s95"><Data ss:Type="String">Saegath rögeszméje</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_unique_bow_projectile_lore</Data></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">&lt;Font Size=&quot;15&quot; Color=&quot;#ccb270&quot;&gt;&lt;i&gt;&quot;The bow handle is engraved with a harrowing symbol, a seal of purity and zeal. Closer inspection reveals thirteen small markings on the bow wings, like if the previous owner was keeping track of a grim score. Whoever it was, its legacy is not meant to end here: time to start big game hunting and keep the death toll rolling.&quot;&lt;/i&gt;&lt;/Font&gt;</Data></Cell>
+    <Cell ss:StyleID="s95"><Data ss:Type="String">&lt;Font Size=&quot;15&quot; Color=&quot;#ccb270&quot;&gt;&lt;i&gt;&quot;Az íj markolatát egy szívszaggató szimbólummal, az érintetlenség és buzgalom pecsétjével látták el. Az alaposabb vizsgálat további tizenhárom apró jelölést fed fel az íjkarokon, mintha az előző tulajdonos kegyetlenül számon tartotta volna valamit. Bárki is volt az, az öröksége nem érhetett véget: ideje nagy vadra vadászni, és folytatni a halálos áldozatok számának növelését.&quot;&lt;/i&gt;&lt;/Font&gt;</Data></Cell>
+   </Row>
+   <Row ss:Height="15">
+    <Cell><Data ss:Type="String">ui_unique_shield_sacred</Data></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Quintet of Sundowns</Data></Cell>
+    <Cell ss:StyleID="s95"><Data ss:Type="String">A napnyugta kvintettje</Data></Cell>
+   </Row>
+   <Row ss:Height="195">
+    <Cell><Data ss:Type="String">ui_unique_shield_sacred_lore</Data></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">&lt;Font Size=&quot;15&quot; Color=&quot;#ccb270&quot;&gt;&lt;i&gt;&quot;The combat was fierce, but Brother Amren eventually met his end, crushed by the demon as his lifeless body was thrown across Greyharbour’s street. Yet, hope was not to die with the battle-priest.\n\nOne of the four fishermen he was defending stepped forward and picked-up his shield to continue the fight. With him, the three other common-men charged the wounded demon while shouting their fear away. Neither the fishermen nor the demon survived the battle.\n\nAn ode to these men’s sacrifice was engraved by the Brotherhood of Dawn on the edges of Amren’s aegis. This beacon of hope now awaits a new bearer worthy to keep up the fight against evil.&quot;&lt;/i&gt;&lt;/Font&gt;</Data></Cell>
+    <Cell ss:StyleID="s95"><Data ss:Type="String">&lt;Font Size=&quot;15&quot; Color=&quot;#ccb270&quot;&gt;&lt;i&gt;&quot;A harc vad volt, de Amren testvér végzete végül beteljesült: egy démon zúzta össze, és Greyharbour utcáira dobta az élettelen testét. A remény azonban nem halhatott meg a csatapappal.\n\nAz általa védett négy halász egyike előrelépett, és felkapta a pajzsát, hogy folytassa a harcot. Vele együtt három másik ember rohamozta meg a sérült démont, közben kiáltásaikkal próbálták a félelmüket elmulasztani. Se a halászok, se a démon nem élte túl a csatát.\n\nA férfiak áldozatát éltető ódát a Hajnal testvérisége belevéste Amren égiszének szélébe. Ez a reménysugár most az új hordozójára vár, aki méltó felvenni a harcot a gonosz ellen.&quot;&lt;/i&gt;&lt;/Font&gt;</Data></Cell>
+   </Row>
+   <Row ss:Height="15">
+    <Cell><Data ss:Type="String">ui_unique_fire_sword</Data></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Vulcaïn Steel Sword</Data></Cell>
+    <Cell ss:StyleID="s96"><Data ss:Type="String">Vulcaïn acél kard</Data></Cell>
+   </Row>
+   <Row ss:Height="120">
+    <Cell><Data ss:Type="String">ui_unique_fire_sword_lore</Data></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">&lt;Font Size=&quot;15&quot; Color=&quot;#ccb270&quot;&gt;&lt;i&gt;There is one city that makes the best steel in the four realms: Vulcaïn. This city-state is nested inside a Volcano which grants their deepest forge the temperature needed to melt, blend and purify the best metals. The resulting steel becomes pure, strong, and extremely sharp. To defend the city, their elite infantry are given rough jagged versions which captured some of the lava they were forged in.&lt;/i&gt;&lt;/Font&gt;</Data></Cell>
+    <Cell ss:StyleID="s95"><Data ss:Type="String">&lt;Font Size=&quot;15&quot; Color=&quot;#ccb270&quot;&gt;&lt;i&gt;Létezik egy város, amely a legjobb acélt állítja elő a négy birodalomban: Vulcaïn. Ez a városállam egy vulkánban helyezkedik el, ahol ellátja a kovácsműhelyüket a legjobb fémek olvasztásához, vegyítéséhez és megtisztításához szükséges hőmérséklettel. Az így készült acél tiszta, erős és hihetetlenül éles lesz. A város védelméhez az elit gyalogságuk egy durva, recés változatot használ, mely elnyelte a láva egy részét, amiben megalkották a fegyvert.&lt;/i&gt;&lt;/Font&gt;</Data></Cell>
+   </Row>
+   <Row ss:Height="15">
+    <Cell><Data ss:Type="String">ui_unique_stasis_staff</Data></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Time Seal</Data></Cell>
+    <Cell ss:StyleID="s95"><Data ss:Type="String">Időpecsét</Data></Cell>
+   </Row>
+   <Row ss:Height="90">
+    <Cell><Data ss:Type="String">ui_unique_stasis_staff_lore</Data></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">&lt;Font Size=&quot;15&quot; Color=&quot;#ccb270&quot;&gt;&lt;i&gt;Those who made a pact with Anulaï-Taï, Fallen Duke of Infinity, may rise inside the cult’s hierarchy and become a dreaded Time Devourer. Those sorcerers phase through space motionlessly while using their Time Seal to harness and destroy the normal continuum around them.&lt;/i&gt;&lt;/Font&gt;</Data></Cell>
+    <Cell ss:StyleID="s95"><Data ss:Type="String">&lt;Font Size=&quot;15&quot; Color=&quot;#ccb270&quot;&gt;&lt;i&gt;Azok, akik egyezséget kötöttek Anulaï-Taïval, a Végtelenség elesett hercegével, feljebb léphetnek a szekta hierarchiájában, és rettegett Időfalóvá válhatnak. A szóban forgó varázslók mozdulatlanul utazhatnak a térben, mialatt az Időpecsétet használva kihasználják, és elpusztítják a természetes folytonosságot maguk körül.&lt;/i&gt;&lt;/Font&gt;</Data></Cell>
+   </Row>
+   <Row ss:Height="15">
+    <Cell><Data ss:Type="String">ui_unique_rend_dagger</Data></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Goremaker, Shard of the Red Mountain</Data></Cell>
+    <Cell ss:StyleID="s95"><Data ss:Type="String">Vérteremtő, a Vörös-hegység szilánkja</Data></Cell>
+   </Row>
+   <Row ss:Height="135">
+    <Cell><Data ss:Type="String">ui_unique_rend_dagger_lore</Data></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">&lt;Font Size=&quot;15&quot; Color=&quot;#ccb270&quot;&gt;&lt;i&gt;During the war of the Primordials, the eternal lovers Anathëa and Moros organized an assault on the Red Mountain, throne of Ashtaroth the lord of Flesh. Amidst the raging battle, the ground quaked as they realized the landscape itself was alive and about to engulf everything. They had no other choice than to obliterate the whole organic mountain to survive. This, could very well be one of its shards that survived through the eons.&lt;/i&gt;&lt;/Font&gt;</Data></Cell>
+    <Cell ss:StyleID="s95"><Data ss:Type="String">&lt;Font Size=&quot;15&quot; Color=&quot;#ccb270&quot;&gt;&lt;i&gt;During the war of the Primordials, the eternal lovers Anathëa and Moros organized an assault on the Red Mountain, throne of Ashtaroth the lord of Flesh. Amidst the raging battle, the ground quaked as they realized the landscape itself was alive and about to engulf everything. They had no other choice than to obliterate the whole organic mountain to survive. This, could very well be one of its shards that survived through the eons.&lt;/i&gt;&lt;/Font&gt;</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_unique_2h_axe</Data></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Edgy</Data></Cell>
+    <Cell ss:StyleID="s95"><Data ss:Type="String">Éleske</Data></Cell>
+   </Row>
+   <Row ss:Height="150">
+    <Cell><Data ss:Type="String">ui_unique_2h_axe_lore</Data></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">&lt;Font Size=&quot;15&quot; Color=&quot;#ccb270&quot;&gt;&lt;i&gt;Big Bill was a blacksmith apprentice. But repairing horses’ irons was boring for him, he dreamed himself as an evil-slashing hero with the sharpest axe the world had ever known. The blacksmithing prodigy got to work, every night he would hammer hard at the anvil, shaping his lethal ambitions into an axe he would call ‘Edgy’.\n\nRumor has it that Big Bill accidentally beheaded himself at night while training in the backyard. Yet, Edgy still remains a deadly work of art.&lt;/i&gt;&lt;/Font&gt;</Data></Cell>
+    <Cell ss:StyleID="s97"><Data ss:Type="String">&lt;Font Size=&quot;15&quot; Color=&quot;#ccb270&quot;&gt;&lt;i&gt;Nagy Bill egy kovácstanonc volt, a lópatkók készítése azonban túl unalmasnak bizonyult számára. Gonoszpusztító hőssé akart válni a legélesebb fejszével, amit a világ valaha látott. A kovácstehetség munkához látott, minden éjjel keményen kalapált az üllőjénél, és gyilkos ambícióit egy fejszébe öntötte, melyet &quot;Éleskének&quot; nevezett el.\n\nA szóbeszéd szerint Nagy Bill véletlenül lefejezte saját magát, miközben éjszaka a hátsó kertben gyakorolt. Ettől függetlenül Éleske továbbra is halálos műalkotás marad.&lt;/i&gt;&lt;/Font&gt;</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="s79"><Data ss:Type="String">Staves</Data></Cell>
+    <Cell ss:StyleID="s80"/>
+    <Cell ss:StyleID="s80"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_Weapon_Staff_T1</Data></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Apprentice Staff</Data></Cell>
+    <Cell ss:StyleID="s95"><Data ss:Type="String">Tanonc bot</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_Weapon_Staff_T2</Data></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Tribal Staff</Data></Cell>
+    <Cell ss:StyleID="s95"><Data ss:Type="String">Törzsi bot</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="s79"><Data ss:Type="String">Catalyst</Data></Cell>
+    <Cell ss:StyleID="s80"/>
+    <Cell ss:StyleID="s80"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_Weapon_Catalyst_T1</Data></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Gris-Gris</Data></Cell>
+    <Cell ss:StyleID="s95"><Data ss:Type="String">Gris-Gris</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_Weapon_Catalyst_T2</Data></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Crystal Catalyst</Data></Cell>
+    <Cell ss:StyleID="s95"><Data ss:Type="String">Kristály katalizátor</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s79"><Data ss:Type="String">Pistols</Data></Cell>
+    <Cell ss:StyleID="s80"/>
+    <Cell ss:StyleID="s80"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_Weapon_Pistol_T1</Data></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Pistol</Data></Cell>
+    <Cell ss:StyleID="s95"><Data ss:Type="String">Pisztoly</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_Weapon_Pistol_T2</Data></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Dark Iron Pistol</Data></Cell>
+    <Cell ss:StyleID="s95"><Data ss:Type="String">Sötét vas pisztoly</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:MergeAcross="2" ss:StyleID="m456289012"><Data ss:Type="String">ARMOR TYPES</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_ArmorTypePrisoner</Data></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Rags</Data></Cell>
+    <Cell ss:StyleID="s95"><Data ss:Type="String">Rongy</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_ArmorTypeHeavy</Data></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Heavy</Data></Cell>
+    <Cell ss:StyleID="s95"><Data ss:Type="String">Nehéz</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_ArmorTypeWarrior</Data></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Bruiser</Data></Cell>
+    <Cell ss:StyleID="s95"><Data ss:Type="String">Zúzógép</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_ArmorTypeRogue</Data></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Rogue</Data></Cell>
+    <Cell ss:StyleID="s95"><Data ss:Type="String">Tolvaj</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_ArmorTypeMage</Data></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Sorcerer</Data></Cell>
+    <Cell ss:StyleID="s95"><Data ss:Type="String">Varázsló</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_ArmorTypeAccessory</Data></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Accessory</Data></Cell>
+    <Cell ss:StyleID="s95"><Data ss:Type="String">Kiegészítő</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:MergeAcross="2" ss:StyleID="m456289032"><Data ss:Type="String">ARMORS</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="s79"><Data ss:Type="String">Uniques</Data></Cell>
+    <Cell ss:StyleID="s87"/>
+    <Cell ss:StyleID="s87"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_Armor_Unique_Prisoner_Cuirass</Data></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Tattered Jerkin</Data></Cell>
+    <Cell ss:StyleID="s95"><Data ss:Type="String">Rongyos bőrmellény</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_Armor_Unique_Prisoner_Armguard</Data></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Broken Shackle</Data></Cell>
+    <Cell ss:StyleID="s95"><Data ss:Type="String">Törött bilincs</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_Armor_Unique_Prisoner_Greaves</Data></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Seedy Pants</Data></Cell>
+    <Cell ss:StyleID="s95"><Data ss:Type="String">Kopottas nadrág</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_Armor_Unique_Prisoner_Sollerets</Data></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Battered Boots</Data></Cell>
+    <Cell ss:StyleID="s95"><Data ss:Type="String">Elnyűtt csizmák</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_unique_poison</Data></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Sagarnäris</Data></Cell>
+    <Cell ss:StyleID="s95"><Data ss:Type="String">Sagarnäris</Data></Cell>
+   </Row>
+   <Row ss:Height="150">
+    <Cell><Data ss:Type="String">ui_unique_poison_lore</Data></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">&lt;Font Size=&quot;15&quot; Color=&quot;#ccb270&quot;&gt;&lt;i&gt;Bezeriel grew fond of observing a young beautiful maiden, incarnating all there is to love about youth. Taking the shape of a pale charming man, he offered her this ring to show his admiration for her.\n\nShe smiled as she put the ring to her finger, but it was not to last: Her skin started to wither, her lifeforce consumed and absorbed within the ring’s gem in a matter of seconds. Her body was never found for only dusts remained of her. The song of the “Lost maiden” that bards sing about, serve as the sole testimony of her doom.&lt;/i&gt;&lt;/Font&gt;</Data></Cell>
+    <Cell ss:StyleID="s95"><Data ss:Type="String">&lt;Font Size=&quot;15&quot; Color=&quot;#ccb270&quot;&gt;&lt;i&gt;Bezeriel szívesen figyelemmel követett egy gyönyörű, fiatal hölgyet, aki megtestesített mindent, amit imádni lehet a fiatalságban. Miután felvette egy jóképű, sápadt férfi alakját, csodálatában felajánlotta neki ezt a gyűrűt.\n\nElmosolyodott, ahogy az ujjára húzta a gyűrűt, de nem tartott sokáig: a bőre sorvadni kezdett, életerejét másodpercek alatt elnyelte a gyűrű köve. A testére sosem bukkantak rá, mert csak hamu maradt utána. Az &quot;Elveszett hölgy&quot; dala, amit a bárdok dalolnak, szolgál egyedül a végzete bizonyítékául.&lt;/i&gt;&lt;/Font&gt;</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_unique_hit_hard</Data></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Seal of the Arbiter</Data></Cell>
+    <Cell ss:StyleID="s95"><Data ss:Type="String">A bíró pecsétje</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_unique_hit_hard_lore</Data></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">&lt;Font Size=&quot;15&quot; Color=&quot;#ccb270&quot;&gt;&lt;i&gt;Isolated far east of the Four Realms of Men, the frontier city-state of Gomora is unfamously known for being the only settlement that openly welcomes evil worshippers. The champions in charge of keeping them in check are known as Arbiters, and receive such powerful onyx ring as a symbol of their absolute judgements.&quot;&lt;/i&gt;&lt;/Font&gt;</Data></Cell>
+    <Cell ss:StyleID="s95"><Data ss:Type="String">&lt;Font Size=&quot;15&quot; Color=&quot;#ccb270&quot;&gt;&lt;i&gt;&quot;Az emberek négy birodalmától messze keleten elzárva áll Gomora városállama, mely hírhedten befogadó a gonosz imádókkal. Az őket visszatartó bajnokokat bíróknak nevezik, és korlátlan ítélethozásukért, szimbólumként egy efféle, hatalmas erejű ónix gyűrűt kapnak.&quot;&lt;/i&gt;&lt;/Font&gt;</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_unique_glass_canon</Data></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Thirst</Data></Cell>
+    <Cell ss:StyleID="s95"><Data ss:Type="String">Szomj</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_unique_glass_canon_lore</Data></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">&lt;Font Size=&quot;15&quot; Color=&quot;#ccb270&quot;&gt;&lt;i&gt;&quot;It would be impossible to determine who or what this uncanny tooth belonged to. When you first picked-it up, the ivory was of a pristine white. But now a faint coating of blood started to redden the canine by its base. Where is that blood coming from? Could it be yours? Only one thing is sure: it’s hungry, hungry for more.&quot;&lt;/i&gt;&lt;/Font&gt;</Data></Cell>
+    <Cell ss:StyleID="s95"><Data ss:Type="String">&lt;Font Size=&quot;15&quot; Color=&quot;#ccb270&quot;&gt;&lt;i&gt;&quot;Lehetetlen lenne megállapítani, kiből vagy miből származik ez a rejtélyes fog. Amikor először a kezedbe vetted, a csont eredeti fehér színben pompázott. De mostanra már enyhe véres réteg kezdte beszennyezni a fogat az alapjánál. Honnan került rá a vér? A tiéd lenne? Csak egyetlen dolog biztos: szomjas, és még többet akar.&quot;&lt;/i&gt;&lt;/Font&gt;</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_unique_all_mighty</Data></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Belt of the Owl Mighty Tester</Data></Cell>
+    <Cell ss:StyleID="s95"><Data ss:Type="String">A mindenbaglyos próbatevő öve</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_unique_all_mighty_lore</Data></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">&lt;Font Size=&quot;15&quot; Color=&quot;#ccb270&quot;&gt;&lt;i&gt;Looks like Owlcen hid a little present for you!&lt;/i&gt;&lt;/Font&gt;</Data></Cell>
+    <Cell ss:StyleID="s95"><Data ss:Type="String">&lt;Font Size=&quot;15&quot; Color=&quot;#ccb270&quot;&gt;&lt;i&gt;Úgy tűnik Owlcen elrejtett neked egy kis ajándékot.&lt;/i&gt;&lt;/Font&gt;</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="s79"><Data ss:Type="String">Heavy</Data></Cell>
+    <Cell ss:StyleID="s80"/>
+    <Cell ss:StyleID="s89"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="s107"><Data ss:Type="String">ui_Armor_Heavy_Helmet_T1</Data></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Sallet</Data></Cell>
+    <Cell ss:StyleID="s95"><Data ss:Type="String">Saller</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="s107"><Data ss:Type="String">ui_Armor_Heavy_Pauldron_T1</Data></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Plate Pauldron</Data></Cell>
+    <Cell ss:StyleID="s95"><Data ss:Type="String">Lemez vállvédők</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="s107"><Data ss:Type="String">ui_Armor_Heavy_Armguard_T1</Data></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Armplates</Data></Cell>
+    <Cell ss:StyleID="s95"><Data ss:Type="String">Karvédők</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="s107"><Data ss:Type="String">ui_Armor_Heavy_Cuirass_T1</Data></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Padded Hauberk</Data></Cell>
+    <Cell ss:StyleID="s95"><Data ss:Type="String">Tömött páncéling</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="s107"><Data ss:Type="String">ui_Armor_Heavy_Greaves_T1</Data></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Faulds</Data></Cell>
+    <Cell ss:StyleID="s95"><Data ss:Type="String">Combvért</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="s107"><Data ss:Type="String">ui_Armor_Heavy_Sollerets_T1</Data></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Greaves</Data></Cell>
+    <Cell ss:StyleID="s95"><Data ss:Type="String">Lábvért</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="s107"><Data ss:Type="String">ui_Armor_Heavy_Helmet_T2</Data></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Masterwork Sallet</Data></Cell>
+    <Cell ss:StyleID="s95"><Data ss:Type="String">Mestermunka saller</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="s107"><Data ss:Type="String">ui_Armor_Heavy_Pauldron_T2</Data></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Masterwork Plate Pauldron</Data></Cell>
+    <Cell ss:StyleID="s95"><Data ss:Type="String">Mestermunka lemez vállvédők</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="s107"><Data ss:Type="String">ui_Armor_Heavy_Armguard_T2</Data></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Masterwork Armplates</Data></Cell>
+    <Cell ss:StyleID="s95"><Data ss:Type="String">Mestermunka karvédők</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="s107"><Data ss:Type="String">ui_Armor_Heavy_Cuirass_T2</Data></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Masterwork Padded Hauberk</Data></Cell>
+    <Cell ss:StyleID="s95"><Data ss:Type="String">Mestermunka tömött páncéling</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="s107"><Data ss:Type="String">ui_Armor_Heavy_Greaves_T2</Data></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Masterwork Faulds</Data></Cell>
+    <Cell ss:StyleID="s95"><Data ss:Type="String">Mestermunka combvért</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="s107"><Data ss:Type="String">ui_Armor_Heavy_Sollerets_T2</Data></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Masterwork Greaves</Data></Cell>
+    <Cell ss:StyleID="s95"><Data ss:Type="String">Mestermunka lábvért</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="s79"><Data ss:Type="String">Warrior</Data></Cell>
+    <Cell ss:StyleID="s80"/>
+    <Cell ss:StyleID="s80"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_Armor_Warrior_Helmet_T1</Data></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Cerveliere</Data></Cell>
+    <Cell ss:StyleID="s95"><Data ss:Type="String">Cerveliere sisak</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_Armor_Warrior_Pauldron_T1</Data></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Lamellar Spaulder</Data></Cell>
+    <Cell ss:StyleID="s95"><Data ss:Type="String">Lamellás vállpáncél</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_Armor_Warrior_Armguard_T1</Data></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Wristguard</Data></Cell>
+    <Cell ss:StyleID="s95"><Data ss:Type="String">Csuklóvédő</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_Armor_Warrior_Cuirass_T1</Data></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Barbarian Defender</Data></Cell>
+    <Cell ss:StyleID="s95"><Data ss:Type="String">Barbár védelmező</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_Armor_Warrior_Greaves_T1</Data></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Leather Tasset</Data></Cell>
+    <Cell ss:StyleID="s95"><Data ss:Type="String">Bőr combvért</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_Armor_Warrior_Sollerets_T1</Data></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Poleyns</Data></Cell>
+    <Cell ss:StyleID="s95"><Data ss:Type="String">Poleyn térdvédő</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_Armor_Warrior_Helmet_T2</Data></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Masterwork Cerveliere</Data></Cell>
+    <Cell ss:StyleID="s95"><Data ss:Type="String">Mestermunka cerveliere sisak</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_Armor_Warrior_Pauldron_T2</Data></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Masterwork Lamellar Spaulder</Data></Cell>
+    <Cell ss:StyleID="s95"><Data ss:Type="String">Mestermunka lamellás vállpáncél</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_Armor_Warrior_Armguard_T2</Data></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Masterwork Wristguard</Data></Cell>
+    <Cell ss:StyleID="s95"><Data ss:Type="String">Mestermunka csuklóvédő</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_Armor_Warrior_Cuirass_T2</Data></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Masterwork Barbarian Defender</Data></Cell>
+    <Cell ss:StyleID="s95"><Data ss:Type="String">Mestermunka barbár védelmező</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_Armor_Warrior_Greaves_T2</Data></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Masterwork Leather Tasset</Data></Cell>
+    <Cell ss:StyleID="s95"><Data ss:Type="String">Mestermunka bőr combvért</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_Armor_Warrior_Sollerets_T2</Data></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Masterwork Poleyns</Data></Cell>
+    <Cell ss:StyleID="s95"><Data ss:Type="String">Mestermunka poleyn térdvédő</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="s79"><Data ss:Type="String">Rogue</Data></Cell>
+    <Cell ss:StyleID="s80"/>
+    <Cell ss:StyleID="s80"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_Armor_Rogue_Helmet_T1</Data></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Bandana</Data></Cell>
+    <Cell ss:StyleID="s95"><Data ss:Type="String">Kendő</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_Armor_Rogue_Pauldron_T1</Data></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Studded Leather Epaulet</Data></Cell>
+    <Cell ss:StyleID="s95"><Data ss:Type="String">Kivert bőr vállpáncél</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_Armor_Rogue_Armguard_T1</Data></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Gauntlet</Data></Cell>
+    <Cell ss:StyleID="s95"><Data ss:Type="String">Bőrkesztyű</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_Armor_Rogue_Cuirass_T1</Data></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Quilted Armor</Data></Cell>
+    <Cell ss:StyleID="s95"><Data ss:Type="String">Tűzött páncél</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_Armor_Rogue_Greaves_T1</Data></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Burlap Trousers</Data></Cell>
+    <Cell ss:StyleID="s95"><Data ss:Type="String">Vászon nadrág</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_Armor_Rogue_Sollerets_T1</Data></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Leather Boots</Data></Cell>
+    <Cell ss:StyleID="s95"><Data ss:Type="String">Bőrcsizmák</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_Armor_Rogue_Helmet_T2</Data></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Masterwork Bandana</Data></Cell>
+    <Cell ss:StyleID="s95"><Data ss:Type="String">Mestermunka kendő</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_Armor_Rogue_Pauldron_T2</Data></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Masterwork Studded Leather Epaulet</Data></Cell>
+    <Cell ss:StyleID="s95"><Data ss:Type="String">Mestermunka kivert bőr vállpáncél</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_Armor_Rogue_Armguard_T2</Data></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Masterwork Gauntlet</Data></Cell>
+    <Cell ss:StyleID="s95"><Data ss:Type="String">Mestermunka bőrkesztyű</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_Armor_Rogue_Cuirass_T2</Data></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Masterwork Quilted Armor</Data></Cell>
+    <Cell ss:StyleID="s95"><Data ss:Type="String">Mestermunka tűzött páncél</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_Armor_Rogue_Greaves_T2</Data></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Masterwork Burlap Trousers</Data></Cell>
+    <Cell ss:StyleID="s95"><Data ss:Type="String">Mestermunka vászon nadrág</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_Armor_Rogue_Sollerets_T2</Data></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Masterwork Leather Boots</Data></Cell>
+    <Cell ss:StyleID="s95"><Data ss:Type="String">Mestermunka bőrcsizmák</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="s79"><Data ss:Type="String">Mage</Data></Cell>
+    <Cell ss:StyleID="s80"/>
+    <Cell ss:StyleID="s80"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_Armor_Mage_Helmet_T1</Data></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Hood</Data></Cell>
+    <Cell ss:StyleID="s95"><Data ss:Type="String">Csuklya</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_Armor_Mage_Pauldron_T1</Data></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Lamellar Cloth Epaulet</Data></Cell>
+    <Cell ss:StyleID="s95"><Data ss:Type="String">Lamellás szövet vállpánt</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_Armor_Mage_Armguard_T1</Data></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Glove</Data></Cell>
+    <Cell ss:StyleID="s95"><Data ss:Type="String">Kesztyű</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_Armor_Mage_Cuirass_T1</Data></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Waistcoat</Data></Cell>
+    <Cell ss:StyleID="s95"><Data ss:Type="String">Mellény</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_Armor_Mage_Greaves_T1</Data></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Breeches</Data></Cell>
+    <Cell ss:StyleID="s95"><Data ss:Type="String">Térdnadrág</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_Armor_Mage_Sollerets_T1</Data></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Laced Boots</Data></Cell>
+    <Cell ss:StyleID="s95"><Data ss:Type="String">Díszes csizmák</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_Armor_Mage_Helmet_T2</Data></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Masterwork Hood</Data></Cell>
+    <Cell ss:StyleID="s95"><Data ss:Type="String">Mestermunka csuklya</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_Armor_Mage_Pauldron_T2</Data></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Masterwork Lamellar Cloth Epaulet</Data></Cell>
+    <Cell ss:StyleID="s95"><Data ss:Type="String">Mestermunka lamellás szövet vállpánt</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_Armor_Mage_Armguard_T2</Data></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Masterwork Glove</Data></Cell>
+    <Cell ss:StyleID="s95"><Data ss:Type="String">Mestermunka kesztyű</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_Armor_Mage_Cuirass_T2</Data></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Masterwork Waistcoat</Data></Cell>
+    <Cell ss:StyleID="s95"><Data ss:Type="String">Mestermunka mellény</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_Armor_Mage_Greaves_T2</Data></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Masterwork Breeches</Data></Cell>
+    <Cell ss:StyleID="s95"><Data ss:Type="String">Mestermunka térdnadrág</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_Armor_Mage_Sollerets_T2</Data></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Masterwork Laced Boots</Data></Cell>
+    <Cell ss:StyleID="s95"><Data ss:Type="String">Mestermunka díszes csizmák</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="s79"><Data ss:Type="String">Accessories</Data></Cell>
+    <Cell ss:StyleID="s80"/>
+    <Cell ss:StyleID="s80"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="s110"><Data ss:Type="String">ui_Cape_AdventurerCape</Data></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Adventurer Cloak</Data></Cell>
+    <Cell ss:StyleID="s108"><Data ss:Type="String">Kalandor köpeny</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="s110"><Data ss:Type="String">ui_Cape_GothicLongCape</Data></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Long Cloak</Data></Cell>
+    <Cell ss:StyleID="s105"><Data ss:Type="String">Hosszú köpeny</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="s110"><Data ss:Type="String">ui_Cape_TemplarCape_Black</Data></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Templar Magister Cape</Data></Cell>
+    <Cell ss:StyleID="s105"><Data ss:Type="String">Templomos magiszter köpeny</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="s110"><Data ss:Type="String">ui_Cape_TemplarCape</Data></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Templar Cape</Data></Cell>
+    <Cell ss:StyleID="s108"><Data ss:Type="String">Templomos köpeny</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_Ring_Topaz</Data></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Topaz Ring</Data></Cell>
+    <Cell ss:StyleID="s95"><Data ss:Type="String">Topáz gyűrű</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_Ring_Aquamarine</Data></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Aquamarine Ring</Data></Cell>
+    <Cell ss:StyleID="s95"><Data ss:Type="String">Akvamarin gyűrű</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell><Data ss:Type="String">ui_Ring_Sapphire</Data></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Sapphire Ring</Data></Cell>
+    <Cell ss:StyleID="s95"><Data ss:Type="String">Zafír gyűrű</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell><Data ss:Type="String">ui_Ring_Emerald</Data></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Emerald Ring</Data></Cell>
+    <Cell ss:StyleID="s95"><Data ss:Type="String">Smaragd gyűrű</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell><Data ss:Type="String">ui_Ring_Ruby</Data></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Ruby Ring</Data></Cell>
+    <Cell ss:StyleID="s95"><Data ss:Type="String">Rubin gyűrű</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_Ring_Bloodstar</Data></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Bloodstar Ring</Data></Cell>
+    <Cell ss:StyleID="s95"><Data ss:Type="String">Vércsillag gyűrű</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_Ring_Steel</Data></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Steel Ring</Data></Cell>
+    <Cell ss:StyleID="s95"><Data ss:Type="String">Acél gyűrű</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_Amulet_Goldstone</Data></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Goldstone Amulet</Data></Cell>
+    <Cell ss:StyleID="s95"><Data ss:Type="String">Aranykő amulett</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_Amulet_Amethyst</Data></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Amethyst Amulet</Data></Cell>
+    <Cell ss:StyleID="s95"><Data ss:Type="String">Ametiszt amulett</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_Amulet_Emerald</Data></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Emerald Amulet</Data></Cell>
+    <Cell ss:StyleID="s95"><Data ss:Type="String">Smaragd gyűrű</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_Amulet_Omnistar</Data></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Omnistar Amulet</Data></Cell>
+    <Cell ss:StyleID="s95"><Data ss:Type="String">Omnicsillag amulett</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_Amulet_Ruby</Data></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Ruby Amulet</Data></Cell>
+    <Cell ss:StyleID="s95"><Data ss:Type="String">Rubin amulett</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_Belt_Alchemist</Data></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Utility Belt</Data></Cell>
+    <Cell ss:StyleID="s95"><Data ss:Type="String">Eszköz öv</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_Belt_Warrior</Data></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Steel Belt</Data></Cell>
+    <Cell ss:StyleID="s95"><Data ss:Type="String">Acél öv</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_Belt_Assassin</Data></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Quickdraw Leather Strand</Data></Cell>
+    <Cell ss:StyleID="s95"><Data ss:Type="String">Fürge bőr öv</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell><Data ss:Type="String">ui_Belt_Gladiator</Data></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Champion Girdle</Data></Cell>
+    <Cell ss:StyleID="s95"><Data ss:Type="String">Bajnoki öv</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_Belt_Templar</Data></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Catalystic Strap</Data></Cell>
+    <Cell ss:StyleID="s95"><Data ss:Type="String">Katalizátor pánt</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:MergeAcross="2" ss:StyleID="m456289052"><Data ss:Type="String">ITEMS COMPARATOR</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_ic_reqLevel</Data></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Required Level</Data></Cell>
+    <Cell ss:StyleID="s105"><Data ss:Type="String">Szükséges szint</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_ic_reqStrength</Data></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Required Ferocity</Data></Cell>
+    <Cell ss:StyleID="s105"><Data ss:Type="String">Szükséges Vadság</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_ic_reqDexterity</Data></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Required Agility</Data></Cell>
+    <Cell ss:StyleID="s105"><Data ss:Type="String">Szükséges Ügyesség</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_ic_reqConstitution</Data></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Required Toughness</Data></Cell>
+    <Cell ss:StyleID="s105"><Data ss:Type="String">Szükséges Szívósság</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_ic_reqPower</Data></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Required Wisdom</Data></Cell>
+    <Cell ss:StyleID="s105"><Data ss:Type="String">Szükséges Bölcsesség</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_ic_itemReqLevel</Data></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Item required level</Data></Cell>
+    <Cell ss:StyleID="s105"><Data ss:Type="String">Szükséges szint</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_ic_durability</Data></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Durability</Data></Cell>
+    <Cell ss:StyleID="s105"><Data ss:Type="String">Tartósság</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_ic_sellvalue</Data></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Value</Data></Cell>
+    <Cell ss:StyleID="s105"><Data ss:Type="String">Érték</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_ic_equipped</Data></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Equipped</Data></Cell>
+    <Cell ss:StyleID="s105"><Data ss:Type="String">Felszerelve</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_ic_charges</Data></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Charges</Data></Cell>
+    <Cell ss:StyleID="s105"><Data ss:Type="String">Töltetek</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_ic_refreshtime</Data></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">%1 Cooldown</Data></Cell>
+    <Cell ss:StyleID="s105"><Data ss:Type="String">%1 lehűlési idő</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_ic_rechargetime</Data></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">%1 Refill time</Data></Cell>
+    <Cell ss:StyleID="s105"><Data ss:Type="String">%1 újratöltődési idő</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_ic_hold</Data></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Hold SHIFT to switch between left and right item comparison</Data></Cell>
+    <Cell ss:StyleID="s105"><Data ss:Type="String">A Shift nyomva tartásával összehasonlíthatod a bal és jobb tárgyat</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_merchant_title</Data></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Merchant</Data></Cell>
+    <Cell ss:StyleID="s105"><Data ss:Type="String">Kereskedő</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_merchant_restockin</Data></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Merchant Inventory will restock in: %1 : %2</Data></Cell>
+    <Cell ss:StyleID="s105"><Data ss:Type="String">A kereskedő készlete %1 ó %2 perc múlva megújul</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_ic_PotionHealthGain</Data></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">%1 Restored Health</Data></Cell>
+    <Cell ss:StyleID="s105"><Data ss:Type="String">%1 helyreállított Életerő</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_ic_PotionUmbraGain</Data></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">%1 Restored Willpower</Data></Cell>
+    <Cell ss:StyleID="s105"><Data ss:Type="String">%1 helyreállított Akaraterő</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_ic_PotionRageGain</Data></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">%1 Restored Rage</Data></Cell>
+    <Cell ss:StyleID="s105"><Data ss:Type="String">%1 helyreállított Düh</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_ic_PotionStaminaGain</Data></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">%1 Restored Stamina</Data></Cell>
+    <Cell ss:StyleID="s105"><Data ss:Type="String">%1 helyreállított Kitartás</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_ic_PotionActiveEffect</Data></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">%1 (on use)</Data></Cell>
+    <Cell ss:StyleID="s105"><Data ss:Type="String">%1 (használatkor)</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_ic_PotionPassiveEffect</Data></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">%1 (on use, lasts %2)</Data></Cell>
+    <Cell ss:StyleID="s105"><Data ss:Type="String">%1 (használatkor, hatódidő: %2)</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_ic_PotionPassiveEffect_stack</Data></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">%1 (on use, lasts %2, stackable up to %3 times)</Data></Cell>
+    <Cell ss:StyleID="s105"><Data ss:Type="String">%1 (használatkor, hatódidő: %2, max. %3 alkalommal halmozható)</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_ic_PotionPermanentEffect</Data></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">%1 (permanent when equipped)</Data></Cell>
+    <Cell ss:StyleID="s111"><Data ss:Type="String">%1 (felszerelés után végleges)</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_ic_level</Data></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Level</Data></Cell>
+    <Cell ss:StyleID="s105"><Data ss:Type="String">Szint:</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_ic_deprecated</Data></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">This item comes from an old version of the game and may be unbalanced or malfunctioning</Data></Cell>
+    <Cell ss:StyleID="s105"><Data ss:Type="String">Ez a tárgy a játék egy korábbi verziójából származik,és kiegyensúlyozatlan, vagy hibás lehet</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:MergeAcross="2" ss:StyleID="m456289072"><Data ss:Type="String">LOOT RARITY</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_loot_rarity_normal</Data></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Common</Data></Cell>
+    <Cell ss:StyleID="s105"><Data ss:Type="String">Átlagos</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_loot_rarity_magic</Data></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Magic</Data></Cell>
+    <Cell ss:StyleID="s105"><Data ss:Type="String">Mágikus</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_loot_rarity_rare</Data></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Rare</Data></Cell>
+    <Cell ss:StyleID="s105"><Data ss:Type="String">Ritka</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_loot_rarity_legendary</Data></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Legendary</Data></Cell>
+    <Cell ss:StyleID="s105"><Data ss:Type="String">Legendás</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_loot_rarity_unique</Data></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Unique</Data></Cell>
+    <Cell ss:StyleID="s105"><Data ss:Type="String">Egyedi</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_loot_rarity_quest</Data></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Quest item</Data></Cell>
+    <Cell ss:StyleID="s105"><Data ss:Type="String">Küldetéstárgy</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:MergeAcross="2" ss:StyleID="m456289092"><Data ss:Type="String">LOOT QUALITY</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_loot_quality_broken</Data></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Broken</Data></Cell>
+    <Cell ss:StyleID="s105"><Data ss:Type="String">Törött</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_loot_quality_used</Data></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Used</Data></Cell>
+    <Cell ss:StyleID="s105"><Data ss:Type="String">Használt</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_loot_quality_normal</Data></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Normal</Data></Cell>
+    <Cell ss:StyleID="s105"><Data ss:Type="String">Átlagos</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_loot_quality_reinforced</Data></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Reinforced</Data></Cell>
+    <Cell ss:StyleID="s105"><Data ss:Type="String">Megerősített</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_loot_quality_superior</Data></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Superior</Data></Cell>
+    <Cell ss:StyleID="s105"><Data ss:Type="String">Kitűnő</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell><Data ss:Type="String">ui_loot_quality_exceptional</Data></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Exceptional</Data></Cell>
+    <Cell ss:StyleID="s105"><Data ss:Type="String">Kivételes</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_loot_quality_epic</Data></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Epic</Data></Cell>
+    <Cell ss:StyleID="s105"><Data ss:Type="String">Epikus</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:MergeAcross="2" ss:StyleID="m456286912"><Data ss:Type="String">POTIONS</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_loot_potiontype_health</Data></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Health potion</Data></Cell>
+    <Cell ss:StyleID="s105"><Data ss:Type="String">Gyógyital</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_loot_potiontype_poison</Data></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Poison</Data></Cell>
+    <Cell ss:StyleID="s105"><Data ss:Type="String">Méreg</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_loot_potiontype_rage</Data></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Rage potion</Data></Cell>
+    <Cell ss:StyleID="s105"><Data ss:Type="String">Düh ital</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell><Data ss:Type="String">ui_loot_potiontype_stamina</Data></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Stamina potion</Data></Cell>
+    <Cell ss:StyleID="s105"><Data ss:Type="String">Kitartás ital</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell><Data ss:Type="String">ui_loot_potiontype_umbra</Data></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Willpower potion</Data></Cell>
+    <Cell ss:StyleID="s105"><Data ss:Type="String">Akaraterő ital</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell><Data ss:Type="String">ui_loot_potiontype_misc</Data></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Utility potion</Data></Cell>
+    <Cell ss:StyleID="s105"><Data ss:Type="String">Eszköz ital</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell><Data ss:Type="String">ui_Potion_S_Health</Data></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Small Health Potion</Data></Cell>
+    <Cell ss:StyleID="s105"><Data ss:Type="String">Kicsi életerő ital</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell><Data ss:Type="String">ui_Potion_M_Health</Data></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Medium Health Potion</Data></Cell>
+    <Cell ss:StyleID="s105"><Data ss:Type="String">Közepes életerő ital</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell><Data ss:Type="String">ui_Potion_L_Health</Data></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Large Health Potion</Data></Cell>
+    <Cell ss:StyleID="s105"><Data ss:Type="String">Nagy életerő ital</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell><Data ss:Type="String">ui_Potion_XL_Health</Data></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Great Health Potion</Data></Cell>
+    <Cell ss:StyleID="s105"><Data ss:Type="String">Óriás életerő ital</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell><Data ss:Type="String">ui_Potion_S_Rage</Data></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Small Rage Potion</Data></Cell>
+    <Cell ss:StyleID="s105"><Data ss:Type="String">Kicsi düh ital</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell><Data ss:Type="String">ui_Potion_M_Rage</Data></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Medium Rage Potion</Data></Cell>
+    <Cell ss:StyleID="s105"><Data ss:Type="String">Közepes düh ital</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell><Data ss:Type="String">ui_Potion_L_Rage</Data></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Large Rage Potion</Data></Cell>
+    <Cell ss:StyleID="s105"><Data ss:Type="String">Nagy düh ital</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell><Data ss:Type="String">ui_Potion_XL_Rage</Data></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Great Rage Potion</Data></Cell>
+    <Cell ss:StyleID="s105"><Data ss:Type="String">Óriás düh ital</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell><Data ss:Type="String">ui_Potion_S_Umbra</Data></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Small Willpower Potion</Data></Cell>
+    <Cell ss:StyleID="s105"><Data ss:Type="String">Kicsi akaraterő ital</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell><Data ss:Type="String">ui_Potion_M_Umbra</Data></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Medium Willpower Potion</Data></Cell>
+    <Cell ss:StyleID="s105"><Data ss:Type="String">Közepes akaraterő ital</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell><Data ss:Type="String">ui_Potion_L_Umbra</Data></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Large Willpower Potion</Data></Cell>
+    <Cell ss:StyleID="s105"><Data ss:Type="String">Nagy akaraterő ital</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell><Data ss:Type="String">ui_Potion_XL_Umbra</Data></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Great Willpower Potion</Data></Cell>
+    <Cell ss:StyleID="s105"><Data ss:Type="String">Óriás akaraterő ital</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell><Data ss:Type="String">ui_Potion_S_Stamina</Data></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Small Stamina Potion</Data></Cell>
+    <Cell ss:StyleID="s105"><Data ss:Type="String">Kicsi kitartás ital</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell><Data ss:Type="String">ui_Potion_M_Stamina</Data></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Medium Stamina Potion</Data></Cell>
+    <Cell ss:StyleID="s105"><Data ss:Type="String">Közepes kitartás ital</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell><Data ss:Type="String">ui_Potion_L_Stamina</Data></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Large Stamina Potion</Data></Cell>
+    <Cell ss:StyleID="s105"><Data ss:Type="String">Nagy kitartás ital</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell><Data ss:Type="String">ui_Potion_XL_Stamina</Data></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Great Stamina Potion</Data></Cell>
+    <Cell ss:StyleID="s105"><Data ss:Type="String">Óriás kitartás ital</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell><Data ss:Type="String">ui_Potion_M_PoisonVenom</Data></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Poisoning Phial</Data></Cell>
+    <Cell ss:StyleID="s105"><Data ss:Type="String">Mérgező fiola</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell><Data ss:Type="String">ui_Potion_M_PoisonCurse</Data></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Cursing Phial</Data></Cell>
+    <Cell ss:StyleID="s105"><Data ss:Type="String">Átkos fiola</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell><Data ss:Type="String">ui_Potion_M_PoisonBleed</Data></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Bleeding Phial</Data></Cell>
+    <Cell ss:StyleID="s105"><Data ss:Type="String">Véreztető fiola</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell><Data ss:Type="String">ui_Potion_M_PoisonBurn</Data></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Burning Phial</Data></Cell>
+    <Cell ss:StyleID="s105"><Data ss:Type="String">Égető fiola</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell><Data ss:Type="String">ui_Potion_M_PoisonShock</Data></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Shocking Phial</Data></Cell>
+    <Cell ss:StyleID="s105"><Data ss:Type="String">Sokkoló fiola</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell><Data ss:Type="String">ui_Potion_M_PoisonFreeze</Data></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Freezing Phial</Data></Cell>
+    <Cell ss:StyleID="s105"><Data ss:Type="String">Fagyasztó fiola</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_Potion_M_PoisonWeakness</Data></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Weakening Phial</Data></Cell>
+    <Cell ss:StyleID="s105"><Data ss:Type="String">Gyengítő fiola</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:MergeAcross="2" ss:StyleID="m456286932"><Data ss:Type="String">WEAPON TYPES</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_WeaponType_1HSword</Data></Cell>
+    <Cell ss:StyleID="s101"><Data ss:Type="String">Sword</Data></Cell>
+    <Cell ss:StyleID="s105"><Data ss:Type="String">Kard</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_WeaponType_2HSword</Data></Cell>
+    <Cell ss:StyleID="s101"><Data ss:Type="String">Greatsword</Data></Cell>
+    <Cell ss:StyleID="s105"><Data ss:Type="String">Kétkezes kard</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_WeaponType_1HMace</Data></Cell>
+    <Cell ss:StyleID="s101"><Data ss:Type="String">Mace</Data></Cell>
+    <Cell ss:StyleID="s105"><Data ss:Type="String">Buzogány</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_WeaponType_2HMace</Data></Cell>
+    <Cell ss:StyleID="s101"><Data ss:Type="String">Warhammer</Data></Cell>
+    <Cell ss:StyleID="s105"><Data ss:Type="String">Harci kalapács</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_WeaponType_1HAxe</Data></Cell>
+    <Cell ss:StyleID="s101"><Data ss:Type="String">Axe</Data></Cell>
+    <Cell ss:StyleID="s105"><Data ss:Type="String">Fejsze</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_WeaponType_2HAxe</Data></Cell>
+    <Cell ss:StyleID="s101"><Data ss:Type="String">Battleaxe</Data></Cell>
+    <Cell ss:StyleID="s105"><Data ss:Type="String">Harci fejsze</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_WeaponType_Dagger</Data></Cell>
+    <Cell ss:StyleID="s101"><Data ss:Type="String">Dagger</Data></Cell>
+    <Cell ss:StyleID="s105"><Data ss:Type="String">Tőr</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_WeaponType_Crossbow</Data></Cell>
+    <Cell ss:StyleID="s101"><Data ss:Type="String">Crossbow</Data></Cell>
+    <Cell ss:StyleID="s105"><Data ss:Type="String">Számszeríj</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_WeaponType_SmallShield</Data></Cell>
+    <Cell ss:StyleID="s101"><Data ss:Type="String">Shield</Data></Cell>
+    <Cell ss:StyleID="s105"><Data ss:Type="String">Pajzs</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_WeaponType_Staff</Data></Cell>
+    <Cell ss:StyleID="s101"><Data ss:Type="String">Staff</Data></Cell>
+    <Cell ss:StyleID="s105"><Data ss:Type="String">Bot</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell><Data ss:Type="String">ui_WeaponType_Gun</Data></Cell>
+    <Cell ss:StyleID="s101"><Data ss:Type="String">Pistol</Data></Cell>
+    <Cell ss:StyleID="s105"><Data ss:Type="String">Pisztoly</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell><Data ss:Type="String">ui_WeaponType_Bow</Data></Cell>
+    <Cell ss:StyleID="s101"><Data ss:Type="String">Bow</Data></Cell>
+    <Cell ss:StyleID="s105"><Data ss:Type="String">Íj</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_WeaponType_Trinket</Data></Cell>
+    <Cell ss:StyleID="s101"><Data ss:Type="String">Catalyst</Data></Cell>
+    <Cell ss:StyleID="s105"><Data ss:Type="String">Katalizátor</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:MergeAcross="2" ss:StyleID="m456286952"><Data ss:Type="String">INGREDIENTS</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s110"><Data ss:Type="String">ui_loot_Ingredient</Data></Cell>
+    <Cell ss:StyleID="s101"><Data ss:Type="String">Ingredient</Data></Cell>
+    <Cell ss:StyleID="s105"><Data ss:Type="String">Alapanyag</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="s110"><Data ss:Type="String">ui_Ingredients_Fern</Data></Cell>
+    <Cell ss:StyleID="s101"><Data ss:Type="String">Fern</Data></Cell>
+    <Cell ss:StyleID="s105"><Data ss:Type="String">Páfrány</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="s110"><Data ss:Type="String">ui_Ingredients_Mushroom</Data></Cell>
+    <Cell ss:StyleID="s101"><Data ss:Type="String">Mushroom</Data></Cell>
+    <Cell ss:StyleID="s105"><Data ss:Type="String">Gomba</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:MergeAcross="2" ss:StyleID="m456286972"><Data ss:Type="String">WEAPON SPEED</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_speed_slowest</Data></Cell>
+    <Cell ss:StyleID="s101"><Data ss:Type="String">Slowest</Data></Cell>
+    <Cell ss:StyleID="s105"><Data ss:Type="String">Leglassabb</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_speed_veryslow</Data></Cell>
+    <Cell ss:StyleID="s101"><Data ss:Type="String">Very slow</Data></Cell>
+    <Cell ss:StyleID="s105"><Data ss:Type="String">Nagyon lassú</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_speed_slow</Data></Cell>
+    <Cell ss:StyleID="s101"><Data ss:Type="String">Slow</Data></Cell>
+    <Cell ss:StyleID="s105"><Data ss:Type="String">Lassú</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_speed_belownormal</Data></Cell>
+    <Cell ss:StyleID="s101"><Data ss:Type="String">Below average speed</Data></Cell>
+    <Cell ss:StyleID="s105"><Data ss:Type="String">Átlagosnál lassabb</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_speed_normal</Data></Cell>
+    <Cell ss:StyleID="s101"><Data ss:Type="String">Medium speed</Data></Cell>
+    <Cell ss:StyleID="s105"><Data ss:Type="String">Közepes gyorsaságú</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_speed_abovenormal</Data></Cell>
+    <Cell ss:StyleID="s101"><Data ss:Type="String">Above average speed</Data></Cell>
+    <Cell ss:StyleID="s105"><Data ss:Type="String">Átlagosnál gyorsabb</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell><Data ss:Type="String">ui_speed_fast</Data></Cell>
+    <Cell ss:StyleID="s101"><Data ss:Type="String">Fast</Data></Cell>
+    <Cell ss:StyleID="s105"><Data ss:Type="String">Gyors</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell><Data ss:Type="String">ui_speed_veryfast</Data></Cell>
+    <Cell ss:StyleID="s101"><Data ss:Type="String">Very fast</Data></Cell>
+    <Cell ss:StyleID="s105"><Data ss:Type="String">Nagyon gyors</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_speed_fastest</Data></Cell>
+    <Cell ss:StyleID="s101"><Data ss:Type="String">Fastest</Data></Cell>
+    <Cell ss:StyleID="s105"><Data ss:Type="String">Leggyorsabb</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:MergeAcross="2" ss:StyleID="m456286992"><Data ss:Type="String">QUEST ITEMS</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_QuestItem_SirkisSkull</Data></Cell>
+    <Cell ss:StyleID="s101"><Data ss:Type="String">Sirkis’ skull</Data></Cell>
+    <Cell ss:StyleID="s105"><Data ss:Type="String">Sirkis koponyája</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_QuestItem_StolenChest</Data></Cell>
+    <Cell ss:StyleID="s101"><Data ss:Type="String">Stolen chest</Data></Cell>
+    <Cell ss:StyleID="s105"><Data ss:Type="String">Ellopott láda</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:MergeAcross="2" ss:StyleID="m456287012"><Data ss:Type="String">SOCKETS AND GEMS</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_ic_offensive</Data></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Offensive</Data></Cell>
+    <Cell ss:StyleID="s105"><Data ss:Type="String">Támadó</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_ic_defensive</Data></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Defensive</Data></Cell>
+    <Cell ss:StyleID="s105"><Data ss:Type="String">Védekező</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_ic_support</Data></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Support</Data></Cell>
+    <Cell ss:StyleID="s105"><Data ss:Type="String">Támogató</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_ic_offensivesocket</Data></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Offensive</Data></Cell>
+    <Cell ss:StyleID="s105"><Data ss:Type="String">Támadó</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_ic_defensivesocket</Data></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Defensive</Data></Cell>
+    <Cell ss:StyleID="s105"><Data ss:Type="String">Védekező</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_ic_supportsocket</Data></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Support</Data></Cell>
+    <Cell ss:StyleID="s105"><Data ss:Type="String">Támogató</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_ic_uniquesocket</Data></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Unique</Data></Cell>
+    <Cell ss:StyleID="s105"><Data ss:Type="String">Egyedi</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_ic_gem</Data></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Gem</Data></Cell>
+    <Cell ss:StyleID="s105"><Data ss:Type="String">Ékkő</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_ic_gemTier</Data></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Tier</Data></Cell>
+    <Cell ss:StyleID="s105"><Data ss:Type="String">Szint</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_firegem_tier01</Data></Cell>
+    <Cell ss:StyleID="s104"><Data ss:Type="String" x:Ticked="1">Chipped Topaz</Data></Cell>
+    <Cell ss:StyleID="s105"><Data ss:Type="String" x:Ticked="1">Csorba topáz</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_firegem_tier02</Data></Cell>
+    <Cell ss:StyleID="s104"><Data ss:Type="String" x:Ticked="1">Crude Topaz</Data></Cell>
+    <Cell ss:StyleID="s105"><Data ss:Type="String" x:Ticked="1">Durva topáz</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_firegem_tier03</Data></Cell>
+    <Cell ss:StyleID="s104"><Data ss:Type="String" x:Ticked="1">Raw Topaz</Data></Cell>
+    <Cell ss:StyleID="s105"><Data ss:Type="String" x:Ticked="1">Nyers topáz</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_firegem_tier04</Data></Cell>
+    <Cell ss:StyleID="s104"><Data ss:Type="String" x:Ticked="1">Flawed Topaz</Data></Cell>
+    <Cell ss:StyleID="s105"><Data ss:Type="String" x:Ticked="1">Hibás topáz</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_firegem_tier05</Data></Cell>
+    <Cell ss:StyleID="s104"><Data ss:Type="String" x:Ticked="1">Topaz</Data></Cell>
+    <Cell ss:StyleID="s105"><Data ss:Type="String" x:Ticked="1">Topáz</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_firegem_tier06</Data></Cell>
+    <Cell ss:StyleID="s104"><Data ss:Type="String" x:Ticked="1">Polished Topaz</Data></Cell>
+    <Cell ss:StyleID="s105"><Data ss:Type="String" x:Ticked="1">Csiszolt topáz</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_firegem_tier07</Data></Cell>
+    <Cell ss:StyleID="s104"><Data ss:Type="String" x:Ticked="1">Pristine Topaz</Data></Cell>
+    <Cell ss:StyleID="s105"><Data ss:Type="String" x:Ticked="1">Érintetlen topáz</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_firegem_tier08</Data></Cell>
+    <Cell ss:StyleID="s104"><Data ss:Type="String" x:Ticked="1">Polished Pristine Topaz</Data></Cell>
+    <Cell ss:StyleID="s105"><Data ss:Type="String" x:Ticked="1">Csiszolt érintetlen topáz</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_firegem_tier09</Data></Cell>
+    <Cell ss:StyleID="s104"><Data ss:Type="String" x:Ticked="1">Precious Topaz</Data></Cell>
+    <Cell ss:StyleID="s105"><Data ss:Type="String" x:Ticked="1">Értékes topáz</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_firegem_tier10</Data></Cell>
+    <Cell ss:StyleID="s104"><Data ss:Type="String" x:Ticked="1">Polished Precious Topaz</Data></Cell>
+    <Cell ss:StyleID="s105"><Data ss:Type="String" x:Ticked="1">Csiszolt értékes topáz</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_firegem_tier11</Data></Cell>
+    <Cell ss:StyleID="s104"><Data ss:Type="String" x:Ticked="1">Perfect Topaz</Data></Cell>
+    <Cell ss:StyleID="s105"><Data ss:Type="String" x:Ticked="1">Tökéletes topáz</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_firegem_tier12</Data></Cell>
+    <Cell ss:StyleID="s104"><Data ss:Type="String" x:Ticked="1">Polished Perfect Topaz</Data></Cell>
+    <Cell ss:StyleID="s105"><Data ss:Type="String" x:Ticked="1">Csiszolt tökéletes topáz</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_firegem_tier13</Data></Cell>
+    <Cell ss:StyleID="s104"><Data ss:Type="String" x:Ticked="1">Royal Topaz</Data></Cell>
+    <Cell ss:StyleID="s105"><Data ss:Type="String" x:Ticked="1">Nemes topáz</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_firegem_tier14</Data></Cell>
+    <Cell ss:StyleID="s104"><Data ss:Type="String" x:Ticked="1">Polished Royal Topaz</Data></Cell>
+    <Cell ss:StyleID="s105"><Data ss:Type="String" x:Ticked="1">Csiszolt nemes topáz</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_firegem_tier15</Data></Cell>
+    <Cell ss:StyleID="s104"><Data ss:Type="String" x:Ticked="1">Celestial Topaz</Data></Cell>
+    <Cell ss:StyleID="s105"><Data ss:Type="String" x:Ticked="1">Mennyei topáz</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_firegem_tier16</Data></Cell>
+    <Cell ss:StyleID="s104"><Data ss:Type="String" x:Ticked="1">Polished Celestial Topaz</Data></Cell>
+    <Cell ss:StyleID="s105"><Data ss:Type="String" x:Ticked="1">Csiszolt mennyei topáz</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_firegem_tier17</Data></Cell>
+    <Cell ss:StyleID="s104"><Data ss:Type="String" x:Ticked="1">Fallen Topaz</Data></Cell>
+    <Cell ss:StyleID="s105"><Data ss:Type="String" x:Ticked="1">Elhullott topáz</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_firegem_tier18</Data></Cell>
+    <Cell ss:StyleID="s104"><Data ss:Type="String" x:Ticked="1">Polished Fallen Topaz</Data></Cell>
+    <Cell ss:StyleID="s105"><Data ss:Type="String" x:Ticked="1">Csiszolt elhullott topáz</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_firegem_tier19</Data></Cell>
+    <Cell ss:StyleID="s104"><Data ss:Type="String" x:Ticked="1">Divine Topaz</Data></Cell>
+    <Cell ss:StyleID="s105"><Data ss:Type="String" x:Ticked="1">Isteni topáz</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_firegem_tier20</Data></Cell>
+    <Cell ss:StyleID="s104"><Data ss:Type="String" x:Ticked="1">Polished Divine Topaz</Data></Cell>
+    <Cell ss:StyleID="s105"><Data ss:Type="String" x:Ticked="1">Csiszolt isteni topáz</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_lightninggem_tier01</Data></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Chipped Lapis-Lazuli</Data></Cell>
+    <Cell ss:StyleID="s105"><Data ss:Type="String">Csorba lazurit</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_lightninggem_tier02</Data></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Crude Lapis-Lazuli</Data></Cell>
+    <Cell ss:StyleID="s105"><Data ss:Type="String">Durva lazurit</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_lightninggem_tier03</Data></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Raw Lapis-Lazuli</Data></Cell>
+    <Cell ss:StyleID="s105"><Data ss:Type="String">Nyers lazurit</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_lightninggem_tier04</Data></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Flawed Lapis-Lazuli</Data></Cell>
+    <Cell ss:StyleID="s105"><Data ss:Type="String">Hibás lazurit</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_lightninggem_tier05</Data></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Lapis-Lazuli</Data></Cell>
+    <Cell ss:StyleID="s105"><Data ss:Type="String">Lazurit</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_lightninggem_tier06</Data></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Polished Lapis-Lazuli</Data></Cell>
+    <Cell ss:StyleID="s105"><Data ss:Type="String">Csiszolt lazurit</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_lightninggem_tier07</Data></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Pristine Lapis-Lazuli</Data></Cell>
+    <Cell ss:StyleID="s105"><Data ss:Type="String">Érintetlen lazurit</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_lightninggem_tier08</Data></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Polished Pristine Lapis-Lazuli</Data></Cell>
+    <Cell ss:StyleID="s105"><Data ss:Type="String">Csiszolt érintetlen lazurit</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_lightninggem_tier09</Data></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Precious Lapis-Lazuli</Data></Cell>
+    <Cell ss:StyleID="s105"><Data ss:Type="String">Értékes lazurit</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_lightninggem_tier10</Data></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Polished Precious Lapis-Lazuli</Data></Cell>
+    <Cell ss:StyleID="s105"><Data ss:Type="String">Csiszolt értékes lazurit</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_lightninggem_tier11</Data></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Perfect Lapis-Lazuli</Data></Cell>
+    <Cell ss:StyleID="s105"><Data ss:Type="String">Tökéletes lazurit</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_lightninggem_tier12</Data></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Polished Perfect Lapis-Lazuli</Data></Cell>
+    <Cell ss:StyleID="s105"><Data ss:Type="String">Csiszolt tökéletes lazurit</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_lightninggem_tier13</Data></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Royal Lapis-Lazuli</Data></Cell>
+    <Cell ss:StyleID="s105"><Data ss:Type="String">Nemes lazurit</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_lightninggem_tier14</Data></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Polished Royal Lapis-Lazuli</Data></Cell>
+    <Cell ss:StyleID="s105"><Data ss:Type="String">Csiszolt nemes lazurit</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_lightninggem_tier15</Data></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Celestial Lapis-Lazuli</Data></Cell>
+    <Cell ss:StyleID="s105"><Data ss:Type="String">Mennyei lazurit</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_lightninggem_tier16</Data></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Polished Celestial Lapis-Lazuli</Data></Cell>
+    <Cell ss:StyleID="s105"><Data ss:Type="String">Csiszolt mennyei lazurit</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_lightninggem_tier17</Data></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Fallen Lapis-Lazuli</Data></Cell>
+    <Cell ss:StyleID="s105"><Data ss:Type="String">Elhullott lazurit</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_lightninggem_tier18</Data></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Polished Fallen Lapis-Lazuli</Data></Cell>
+    <Cell ss:StyleID="s105"><Data ss:Type="String">Csiszolt elhullott lazurit</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_lightninggem_tier19</Data></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Divine Lapis-Lazuli</Data></Cell>
+    <Cell ss:StyleID="s105"><Data ss:Type="String">Isteni lazurit</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_lightninggem_tier20</Data></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Polished Divine Lapis-Lazuli</Data></Cell>
+    <Cell ss:StyleID="s105"><Data ss:Type="String">Csiszolt isteni lazurit</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_frostgem_tier01</Data></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Chipped Diamond</Data></Cell>
+    <Cell ss:StyleID="s105"><Data ss:Type="String">Csorba gyémánt</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_frostgem_tier02</Data></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Crude Diamond</Data></Cell>
+    <Cell ss:StyleID="s105"><Data ss:Type="String">Durva gyémánt</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_frostgem_tier03</Data></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Raw Diamond</Data></Cell>
+    <Cell ss:StyleID="s105"><Data ss:Type="String">Nyers gyémánt</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_frostgem_tier04</Data></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Flawed Diamond</Data></Cell>
+    <Cell ss:StyleID="s105"><Data ss:Type="String">Hibás gyémánt</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_frostgem_tier05</Data></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Diamond</Data></Cell>
+    <Cell ss:StyleID="s105"><Data ss:Type="String">Gyémánt</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_frostgem_tier06</Data></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Polished Diamond</Data></Cell>
+    <Cell ss:StyleID="s105"><Data ss:Type="String">Csiszolt gyémánt</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_frostgem_tier07</Data></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Pristine Diamond</Data></Cell>
+    <Cell ss:StyleID="s105"><Data ss:Type="String">Érintetlen gyémánt</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_frostgem_tier08</Data></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Polished Pristine Diamond</Data></Cell>
+    <Cell ss:StyleID="s105"><Data ss:Type="String">Csiszolt érintetlen gyémánt</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_frostgem_tier09</Data></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Precious Diamond</Data></Cell>
+    <Cell ss:StyleID="s105"><Data ss:Type="String">Értékes gyémánt</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_frostgem_tier10</Data></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Polished Precious Diamond</Data></Cell>
+    <Cell ss:StyleID="s105"><Data ss:Type="String">Csiszolt értékes gyémánt</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_frostgem_tier11</Data></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Perfect Diamond</Data></Cell>
+    <Cell ss:StyleID="s105"><Data ss:Type="String">Tökéletes gyémánt</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_frostgem_tier12</Data></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Polished Perfect Diamond</Data></Cell>
+    <Cell ss:StyleID="s105"><Data ss:Type="String">Csiszolt tökéletes gyémánt</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_frostgem_tier13</Data></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Royal Diamond</Data></Cell>
+    <Cell ss:StyleID="s105"><Data ss:Type="String">Nemes gyémánt</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_frostgem_tier14</Data></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Polished Royal Diamond</Data></Cell>
+    <Cell ss:StyleID="s105"><Data ss:Type="String">Csiszolt nemes gyémánt</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_frostgem_tier15</Data></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Celestial Diamond</Data></Cell>
+    <Cell ss:StyleID="s105"><Data ss:Type="String">Mennyei gyémánt</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_frostgem_tier16</Data></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Polished Celestial Diamond</Data></Cell>
+    <Cell ss:StyleID="s105"><Data ss:Type="String">Csiszolt mennyei gyémánt</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_frostgem_tier17</Data></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Fallen Diamond</Data></Cell>
+    <Cell ss:StyleID="s105"><Data ss:Type="String">Elhullott gyémánt</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_frostgem_tier18</Data></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Polished Fallen Diamond</Data></Cell>
+    <Cell ss:StyleID="s105"><Data ss:Type="String">Csiszolt elhullott gyémánt</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_frostgem_tier19</Data></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Divine Diamond</Data></Cell>
+    <Cell ss:StyleID="s105"><Data ss:Type="String">Isteni gyémánt</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_frostgem_tier20</Data></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Polished Divine Diamond</Data></Cell>
+    <Cell ss:StyleID="s105"><Data ss:Type="String">Csiszolt isteni gyémánt</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_umbragem_tier01</Data></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Chipped Amber</Data></Cell>
+    <Cell ss:StyleID="s105"><Data ss:Type="String">Csorba borostyán</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_umbragem_tier02</Data></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Crude Amber</Data></Cell>
+    <Cell ss:StyleID="s105"><Data ss:Type="String">Durva borostyán</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_umbragem_tier03</Data></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Raw Amber</Data></Cell>
+    <Cell ss:StyleID="s105"><Data ss:Type="String">Nyers borostyán</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_umbragem_tier04</Data></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Flawed Amber</Data></Cell>
+    <Cell ss:StyleID="s105"><Data ss:Type="String">Hibás borostyán</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_umbragem_tier05</Data></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Amber</Data></Cell>
+    <Cell ss:StyleID="s105"><Data ss:Type="String">Borostyán</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_umbragem_tier06</Data></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Polished Amber</Data></Cell>
+    <Cell ss:StyleID="s105"><Data ss:Type="String">Csiszolt borostyán</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_umbragem_tier07</Data></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Pristine Amber</Data></Cell>
+    <Cell ss:StyleID="s105"><Data ss:Type="String">Érintetlen borostyán</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_umbragem_tier08</Data></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Polished Pristine Amber</Data></Cell>
+    <Cell ss:StyleID="s105"><Data ss:Type="String">Csiszolt érintetlen borostyán</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_umbragem_tier09</Data></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Precious Amber</Data></Cell>
+    <Cell ss:StyleID="s105"><Data ss:Type="String">Értékes borostyán</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_umbragem_tier10</Data></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Polished Precious Amber</Data></Cell>
+    <Cell ss:StyleID="s105"><Data ss:Type="String">Csiszolt értékes borostyán</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_umbragem_tier11</Data></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Perfect Amber</Data></Cell>
+    <Cell ss:StyleID="s105"><Data ss:Type="String">Tökéletes borostyán</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_umbragem_tier12</Data></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Polished Perfect Amber</Data></Cell>
+    <Cell ss:StyleID="s105"><Data ss:Type="String">Csiszolt tökéletes borostyán</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_umbragem_tier13</Data></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Royal Amber</Data></Cell>
+    <Cell ss:StyleID="s105"><Data ss:Type="String">Nemes borostyán</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_umbragem_tier14</Data></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Polished Royal Amber</Data></Cell>
+    <Cell ss:StyleID="s105"><Data ss:Type="String">Csiszolt nemes borostyán</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_umbragem_tier15</Data></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Celestial Amber</Data></Cell>
+    <Cell ss:StyleID="s105"><Data ss:Type="String">Mennyei borostyán</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_umbragem_tier16</Data></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Polished Celestial Amber</Data></Cell>
+    <Cell ss:StyleID="s105"><Data ss:Type="String">Csiszolt mennyei borostyán</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_umbragem_tier17</Data></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Fallen Amber</Data></Cell>
+    <Cell ss:StyleID="s105"><Data ss:Type="String">Elhullott borostyán</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_umbragem_tier18</Data></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Polished Fallen Amber</Data></Cell>
+    <Cell ss:StyleID="s105"><Data ss:Type="String">Csiszolt elhullott borostyán</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_umbragem_tier19</Data></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Divine Amber</Data></Cell>
+    <Cell ss:StyleID="s105"><Data ss:Type="String">Isteni borostyán</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_umbragem_tier20</Data></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Polished Divine Amber</Data></Cell>
+    <Cell ss:StyleID="s105"><Data ss:Type="String">Csiszolt isteni borostyán</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_sacredgem_tier01</Data></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Chipped Silverstone</Data></Cell>
+    <Cell ss:StyleID="s105"><Data ss:Type="String">Csorba ezüstkő</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_sacredgem_tier02</Data></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Crude Silverstone</Data></Cell>
+    <Cell ss:StyleID="s105"><Data ss:Type="String">Durva ezüstkő</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_sacredgem_tier03</Data></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Raw Silverstone</Data></Cell>
+    <Cell ss:StyleID="s105"><Data ss:Type="String">Nyers ezüstkő</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_sacredgem_tier04</Data></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Flawed Silverstone</Data></Cell>
+    <Cell ss:StyleID="s105"><Data ss:Type="String">Hibás ezüstkő</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_sacredgem_tier05</Data></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Silverstone</Data></Cell>
+    <Cell ss:StyleID="s105"><Data ss:Type="String">Ezüstkő</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_sacredgem_tier06</Data></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Polished Silverstone</Data></Cell>
+    <Cell ss:StyleID="s105"><Data ss:Type="String">Csiszolt ezüstkő</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_sacredgem_tier07</Data></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Pristine Silverstone</Data></Cell>
+    <Cell ss:StyleID="s105"><Data ss:Type="String">Érintetlen ezüstkő</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_sacredgem_tier08</Data></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Polished Pristine Silverstone</Data></Cell>
+    <Cell ss:StyleID="s105"><Data ss:Type="String">Csiszolt érintetlen ezüstkő</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_sacredgem_tier09</Data></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Precious Silverstone</Data></Cell>
+    <Cell ss:StyleID="s105"><Data ss:Type="String">Értékes ezüstkő</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_sacredgem_tier10</Data></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Polished Precious Silverstone</Data></Cell>
+    <Cell ss:StyleID="s105"><Data ss:Type="String">Csiszolt értékes ezüstkő</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_sacredgem_tier11</Data></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Perfect Silverstone</Data></Cell>
+    <Cell ss:StyleID="s105"><Data ss:Type="String">Tökéletes ezüstkő</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_sacredgem_tier12</Data></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Polished Perfect Silverstone</Data></Cell>
+    <Cell ss:StyleID="s105"><Data ss:Type="String">Csiszolt tökéletes ezüstkő</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_sacredgem_tier13</Data></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Royal Silverstone</Data></Cell>
+    <Cell ss:StyleID="s105"><Data ss:Type="String">Nemes ezüstkő</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_sacredgem_tier14</Data></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Polished Royal Silverstone</Data></Cell>
+    <Cell ss:StyleID="s105"><Data ss:Type="String">Csiszolt nemes ezüstkő</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_sacredgem_tier15</Data></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Celestial Silverstone</Data></Cell>
+    <Cell ss:StyleID="s105"><Data ss:Type="String">Mennyei ezüstkő</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_sacredgem_tier16</Data></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Polished Celestial Silverstone</Data></Cell>
+    <Cell ss:StyleID="s105"><Data ss:Type="String">Csiszolt mennyei ezüstkő</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_sacredgem_tier17</Data></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Fallen Silverstone</Data></Cell>
+    <Cell ss:StyleID="s105"><Data ss:Type="String">Elhullott ezüstkő</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_sacredgem_tier18</Data></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Polished Fallen Silverstone</Data></Cell>
+    <Cell ss:StyleID="s105"><Data ss:Type="String">Csiszolt elhullott ezüstkő</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_sacredgem_tier19</Data></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Divine Silverstone</Data></Cell>
+    <Cell ss:StyleID="s105"><Data ss:Type="String">Isteni ezüstkő</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_sacredgem_tier20</Data></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Polished Divine Silverstone</Data></Cell>
+    <Cell ss:StyleID="s105"><Data ss:Type="String">Csiszolt isteni ezüstkő</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_shadowgem_tier01</Data></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Chipped Sapphire</Data></Cell>
+    <Cell ss:StyleID="s105"><Data ss:Type="String">Csorba zafír</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_shadowgem_tier02</Data></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Crude Sapphire</Data></Cell>
+    <Cell ss:StyleID="s105"><Data ss:Type="String">Durva zafír</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_shadowgem_tier03</Data></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Raw Sapphire</Data></Cell>
+    <Cell ss:StyleID="s105"><Data ss:Type="String">Nyers zafír</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_shadowgem_tier04</Data></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Flawed Sapphire</Data></Cell>
+    <Cell ss:StyleID="s105"><Data ss:Type="String">Hibás zafír</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_shadowgem_tier05</Data></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Sapphire</Data></Cell>
+    <Cell ss:StyleID="s105"><Data ss:Type="String">Zafír</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_shadowgem_tier06</Data></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Polished Sapphire</Data></Cell>
+    <Cell ss:StyleID="s105"><Data ss:Type="String">Csiszolt zafír</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_shadowgem_tier07</Data></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Pristine Sapphire</Data></Cell>
+    <Cell ss:StyleID="s105"><Data ss:Type="String">Érintetlen zafír</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_shadowgem_tier08</Data></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Polished Pristine Sapphire</Data></Cell>
+    <Cell ss:StyleID="s105"><Data ss:Type="String">Csiszolt érintetlen zafír</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_shadowgem_tier09</Data></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Precious Sapphire</Data></Cell>
+    <Cell ss:StyleID="s105"><Data ss:Type="String">Értékes zafír</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_shadowgem_tier10</Data></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Polished Precious Sapphire</Data></Cell>
+    <Cell ss:StyleID="s105"><Data ss:Type="String">Csiszolt értékes zafír</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_shadowgem_tier11</Data></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Perfect Sapphire</Data></Cell>
+    <Cell ss:StyleID="s105"><Data ss:Type="String">Tökéletes zafír</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_shadowgem_tier12</Data></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Polished Perfect Sapphire</Data></Cell>
+    <Cell ss:StyleID="s105"><Data ss:Type="String">Csiszolt tökéletes zafír</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_shadowgem_tier13</Data></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Royal Sapphire</Data></Cell>
+    <Cell ss:StyleID="s105"><Data ss:Type="String">Nemes zafír</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_shadowgem_tier14</Data></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Polished Royal Sapphire</Data></Cell>
+    <Cell ss:StyleID="s105"><Data ss:Type="String">Csiszolt nemes zafír</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_shadowgem_tier15</Data></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Celestial Sapphire</Data></Cell>
+    <Cell ss:StyleID="s105"><Data ss:Type="String">Mennyei zafír</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_shadowgem_tier16</Data></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Polished Celestial Sapphire</Data></Cell>
+    <Cell ss:StyleID="s105"><Data ss:Type="String">Csiszolt mennyei zafír</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_shadowgem_tier17</Data></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Fallen Sapphire</Data></Cell>
+    <Cell ss:StyleID="s105"><Data ss:Type="String">Elhullott zafír</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_shadowgem_tier18</Data></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Polished Fallen Sapphire</Data></Cell>
+    <Cell ss:StyleID="s105"><Data ss:Type="String">Csiszolt elhullott zafír</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_shadowgem_tier19</Data></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Divine Sapphire</Data></Cell>
+    <Cell ss:StyleID="s105"><Data ss:Type="String">Isteni zafír</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_shadowgem_tier20</Data></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Polished Divine Sapphire</Data></Cell>
+    <Cell ss:StyleID="s105"><Data ss:Type="String">Csiszolt isteni zafír</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_poisongem_tier01</Data></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Chipped Emerald</Data></Cell>
+    <Cell ss:StyleID="s105"><Data ss:Type="String">Csorba smaragd</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_poisongem_tier02</Data></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Crude Emerald</Data></Cell>
+    <Cell ss:StyleID="s105"><Data ss:Type="String">Durva smaragd</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_poisongem_tier03</Data></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Raw Emerald</Data></Cell>
+    <Cell ss:StyleID="s105"><Data ss:Type="String">Nyers smaragd</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_poisongem_tier04</Data></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Flawed Emerald</Data></Cell>
+    <Cell ss:StyleID="s105"><Data ss:Type="String">Hibás smaragd</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_poisongem_tier05</Data></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Emerald</Data></Cell>
+    <Cell ss:StyleID="s105"><Data ss:Type="String">Smaragd</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_poisongem_tier06</Data></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Polished Emerald</Data></Cell>
+    <Cell ss:StyleID="s105"><Data ss:Type="String">Csiszolt smaragd</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_poisongem_tier07</Data></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Pristine Emerald</Data></Cell>
+    <Cell ss:StyleID="s105"><Data ss:Type="String">Érintetlen smaragd</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_poisongem_tier08</Data></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Polished Pristine Emerald</Data></Cell>
+    <Cell ss:StyleID="s105"><Data ss:Type="String">Csiszolt érintetlen smaragd</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_poisongem_tier09</Data></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Precious Emerald</Data></Cell>
+    <Cell ss:StyleID="s105"><Data ss:Type="String">Értékes smaragd</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_poisongem_tier10</Data></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Polished Precious Emerald</Data></Cell>
+    <Cell ss:StyleID="s105"><Data ss:Type="String">Csiszolt értékes smaragd</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_poisongem_tier11</Data></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Perfect Emerald</Data></Cell>
+    <Cell ss:StyleID="s105"><Data ss:Type="String">Tökéletes smaragd</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_poisongem_tier12</Data></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Polished Perfect Emerald</Data></Cell>
+    <Cell ss:StyleID="s105"><Data ss:Type="String">Csiszolt tökéletes smaragd</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_poisongem_tier13</Data></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Royal Emerald</Data></Cell>
+    <Cell ss:StyleID="s105"><Data ss:Type="String">Nemes smaragd</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_poisongem_tier14</Data></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Polished Royal Emerald</Data></Cell>
+    <Cell ss:StyleID="s105"><Data ss:Type="String">Csiszolt nemes smaragd</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_poisongem_tier15</Data></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Celestial Emerald</Data></Cell>
+    <Cell ss:StyleID="s105"><Data ss:Type="String">Mennyei smaragd</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_poisongem_tier16</Data></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Polished Celestial Emerald</Data></Cell>
+    <Cell ss:StyleID="s105"><Data ss:Type="String">Csiszolt mennyei smaragd</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_poisongem_tier17</Data></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Fallen Emerald</Data></Cell>
+    <Cell ss:StyleID="s105"><Data ss:Type="String">Elhullott smaragd</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_poisongem_tier18</Data></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Polished Fallen Emerald</Data></Cell>
+    <Cell ss:StyleID="s105"><Data ss:Type="String">Csiszolt elhullott smaragd</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_poisongem_tier19</Data></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Divine Emerald</Data></Cell>
+    <Cell ss:StyleID="s105"><Data ss:Type="String">Isteni smaragd</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_poisongem_tier20</Data></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Polished Divine Emerald</Data></Cell>
+    <Cell ss:StyleID="s105"><Data ss:Type="String">Csiszolt isteni smaragd</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_bleedgem_tier01</Data></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Chipped Ruby</Data></Cell>
+    <Cell ss:StyleID="s105"><Data ss:Type="String">Csorba rubin</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_bleedgem_tier02</Data></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Crude Ruby</Data></Cell>
+    <Cell ss:StyleID="s105"><Data ss:Type="String">Durva rubin</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_bleedgem_tier03</Data></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Raw Ruby</Data></Cell>
+    <Cell ss:StyleID="s105"><Data ss:Type="String">Nyers rubin</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_bleedgem_tier04</Data></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Flawed Ruby</Data></Cell>
+    <Cell ss:StyleID="s105"><Data ss:Type="String">Hibás rubin</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_bleedgem_tier05</Data></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Ruby</Data></Cell>
+    <Cell ss:StyleID="s105"><Data ss:Type="String">Rubin</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_bleedgem_tier06</Data></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Polished Ruby</Data></Cell>
+    <Cell ss:StyleID="s105"><Data ss:Type="String">Csiszolt rubin</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_bleedgem_tier07</Data></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Pristine Ruby</Data></Cell>
+    <Cell ss:StyleID="s105"><Data ss:Type="String">Érintetlen rubin</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_bleedgem_tier08</Data></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Polished Pristine Ruby</Data></Cell>
+    <Cell ss:StyleID="s105"><Data ss:Type="String">Csiszolt érintetlen rubin</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_bleedgem_tier09</Data></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Precious Ruby</Data></Cell>
+    <Cell ss:StyleID="s105"><Data ss:Type="String">Értékes rubin</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_bleedgem_tier10</Data></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Polished Precious Ruby</Data></Cell>
+    <Cell ss:StyleID="s105"><Data ss:Type="String">Csiszolt értékes rubin</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_bleedgem_tier11</Data></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Perfect Ruby</Data></Cell>
+    <Cell ss:StyleID="s105"><Data ss:Type="String">Tökéletes rubin</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_bleedgem_tier12</Data></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Polished Perfect Ruby</Data></Cell>
+    <Cell ss:StyleID="s105"><Data ss:Type="String">Csiszolt tökéletes rubin</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_bleedgem_tier13</Data></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Royal Ruby</Data></Cell>
+    <Cell ss:StyleID="s105"><Data ss:Type="String">Nemes rubin</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_bleedgem_tier14</Data></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Polished Royal Ruby</Data></Cell>
+    <Cell ss:StyleID="s105"><Data ss:Type="String">Csiszolt nemes rubin</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_bleedgem_tier15</Data></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Celestial Ruby</Data></Cell>
+    <Cell ss:StyleID="s105"><Data ss:Type="String">Mennyei rubin</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_bleedgem_tier16</Data></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Polished Celestial Ruby</Data></Cell>
+    <Cell ss:StyleID="s105"><Data ss:Type="String">Csiszolt mennyei rubin</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_bleedgem_tier17</Data></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Fallen Ruby</Data></Cell>
+    <Cell ss:StyleID="s105"><Data ss:Type="String">Elhullott rubin</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_bleedgem_tier18</Data></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Polished Fallen Ruby</Data></Cell>
+    <Cell ss:StyleID="s105"><Data ss:Type="String">Csiszolt elhullott rubin</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_bleedgem_tier19</Data></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Divine Ruby</Data></Cell>
+    <Cell ss:StyleID="s105"><Data ss:Type="String">Isteni rubin</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_bleedgem_tier20</Data></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Polished Divine Ruby</Data></Cell>
+    <Cell ss:StyleID="s105"><Data ss:Type="String">Csiszolt isteni rubin</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_physicalgem_tier01</Data></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Chipped Copperstone</Data></Cell>
+    <Cell ss:StyleID="s105"><Data ss:Type="String">Csorba rézkő</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_physicalgem_tier02</Data></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Crude Copperstone</Data></Cell>
+    <Cell ss:StyleID="s105"><Data ss:Type="String">Durva rézkő</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_physicalgem_tier03</Data></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Raw Copperstone</Data></Cell>
+    <Cell ss:StyleID="s105"><Data ss:Type="String">Nyers rézkő</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_physicalgem_tier04</Data></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Flawed Copperstone</Data></Cell>
+    <Cell ss:StyleID="s105"><Data ss:Type="String">Hibás rézkő</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_physicalgem_tier05</Data></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Copperstone</Data></Cell>
+    <Cell ss:StyleID="s105"><Data ss:Type="String">Rézkő</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_physicalgem_tier06</Data></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Polished Copperstone</Data></Cell>
+    <Cell ss:StyleID="s105"><Data ss:Type="String">Csiszolt rézkő</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_physicalgem_tier07</Data></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Pristine Copperstone</Data></Cell>
+    <Cell ss:StyleID="s105"><Data ss:Type="String">Érintetlen rézkő</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_physicalgem_tier08</Data></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Polished Pristine Copperstone</Data></Cell>
+    <Cell ss:StyleID="s105"><Data ss:Type="String">Csiszolt érintetlen rézkő</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_physicalgem_tier09</Data></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Precious Copperstone</Data></Cell>
+    <Cell ss:StyleID="s105"><Data ss:Type="String">Értékes rézkő</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_physicalgem_tier10</Data></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Polished Precious Copperstone</Data></Cell>
+    <Cell ss:StyleID="s105"><Data ss:Type="String">Csiszolt értékes rézkő</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_physicalgem_tier11</Data></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Perfect Copperstone</Data></Cell>
+    <Cell ss:StyleID="s105"><Data ss:Type="String">Tökéletes rézkő</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_physicalgem_tier12</Data></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Polished Perfect Copperstone</Data></Cell>
+    <Cell ss:StyleID="s105"><Data ss:Type="String">Csiszolt tökéletes rézkő</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_physicalgem_tier13</Data></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Royal Copperstone</Data></Cell>
+    <Cell ss:StyleID="s105"><Data ss:Type="String">Nemes rézkő</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_physicalgem_tier14</Data></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Polished Royal Copperstone</Data></Cell>
+    <Cell ss:StyleID="s105"><Data ss:Type="String">Csiszolt nemes rézkő</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_physicalgem_tier15</Data></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Celestial Copperstone</Data></Cell>
+    <Cell ss:StyleID="s105"><Data ss:Type="String">Mennyei rézkő</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_physicalgem_tier16</Data></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Polished Celestial Copperstone</Data></Cell>
+    <Cell ss:StyleID="s105"><Data ss:Type="String">Csiszolt mennyei rézkő</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_physicalgem_tier17</Data></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Fallen Copperstone</Data></Cell>
+    <Cell ss:StyleID="s105"><Data ss:Type="String">Elhullott rézkő</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_physicalgem_tier18</Data></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Polished Fallen Copperstone</Data></Cell>
+    <Cell ss:StyleID="s105"><Data ss:Type="String">Csiszolt elhullott rézkő</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_physicalgem_tier19</Data></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Divine Copperstone</Data></Cell>
+    <Cell ss:StyleID="s105"><Data ss:Type="String">Isteni rézkő</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_physicalgem_tier20</Data></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Polished Divine Copperstone</Data></Cell>
+    <Cell ss:StyleID="s105"><Data ss:Type="String">Csiszolt isteni rézkő</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_ferocitygem_tier01</Data></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Chipped Goldstone</Data></Cell>
+    <Cell ss:StyleID="s105"><Data ss:Type="String">Csorba aranykő</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_ferocitygem_tier02</Data></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Crude Goldstone</Data></Cell>
+    <Cell ss:StyleID="s105"><Data ss:Type="String">Durva aranykő</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_ferocitygem_tier03</Data></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Raw Goldstone</Data></Cell>
+    <Cell ss:StyleID="s105"><Data ss:Type="String">Nyers aranykő</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_ferocitygem_tier04</Data></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Flawed Goldstone</Data></Cell>
+    <Cell ss:StyleID="s105"><Data ss:Type="String">Hibás aranykő</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_ferocitygem_tier05</Data></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Goldstone</Data></Cell>
+    <Cell ss:StyleID="s105"><Data ss:Type="String">Aranykő</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_ferocitygem_tier06</Data></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Polished Goldstone</Data></Cell>
+    <Cell ss:StyleID="s105"><Data ss:Type="String">Csiszolt aranykő</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_ferocitygem_tier07</Data></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Pristine Goldstone</Data></Cell>
+    <Cell ss:StyleID="s105"><Data ss:Type="String">Érintetlen aranykő</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_ferocitygem_tier08</Data></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Polished Pristine Goldstone</Data></Cell>
+    <Cell ss:StyleID="s105"><Data ss:Type="String">Csiszolt érintetlen aranykő</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_ferocitygem_tier09</Data></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Precious Goldstone</Data></Cell>
+    <Cell ss:StyleID="s105"><Data ss:Type="String">Értékes aranykő</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_ferocitygem_tier10</Data></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Polished Precious Goldstone</Data></Cell>
+    <Cell ss:StyleID="s105"><Data ss:Type="String">Csiszolt értékes aranykő</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_ferocitygem_tier11</Data></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Perfect Goldstone</Data></Cell>
+    <Cell ss:StyleID="s105"><Data ss:Type="String">Tökéletes aranykő</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_ferocitygem_tier12</Data></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Polished Perfect Goldstone</Data></Cell>
+    <Cell ss:StyleID="s105"><Data ss:Type="String">Csiszolt tökéletes aranykő</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_ferocitygem_tier13</Data></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Royal Goldstone</Data></Cell>
+    <Cell ss:StyleID="s105"><Data ss:Type="String">Nemes aranykő</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_ferocitygem_tier14</Data></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Polished Royal Goldstone</Data></Cell>
+    <Cell ss:StyleID="s105"><Data ss:Type="String">Csiszolt nemes aranykő</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_ferocitygem_tier15</Data></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Celestial Goldstone</Data></Cell>
+    <Cell ss:StyleID="s105"><Data ss:Type="String">Mennyei aranykő</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_ferocitygem_tier16</Data></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Polished Celestial Goldstone</Data></Cell>
+    <Cell ss:StyleID="s105"><Data ss:Type="String">Csiszolt mennyei aranykő</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_ferocitygem_tier17</Data></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Fallen Goldstone</Data></Cell>
+    <Cell ss:StyleID="s105"><Data ss:Type="String">Elhullott aranykő</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_ferocitygem_tier18</Data></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Polished Fallen Goldstone</Data></Cell>
+    <Cell ss:StyleID="s105"><Data ss:Type="String">Csiszolt elhullott aranykő</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_ferocitygem_tier19</Data></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Divine Goldstone</Data></Cell>
+    <Cell ss:StyleID="s105"><Data ss:Type="String">Isteni aranykő</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_ferocitygem_tier20</Data></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Polished Divine Goldstone</Data></Cell>
+    <Cell ss:StyleID="s105"><Data ss:Type="String">Csiszolt isteni aranykő</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_agilitygem_tier01</Data></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Chipped Beryl</Data></Cell>
+    <Cell ss:StyleID="s105"><Data ss:Type="String">Csorba berill</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_agilitygem_tier02</Data></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Crude Beryl</Data></Cell>
+    <Cell ss:StyleID="s105"><Data ss:Type="String">Durva berill</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_agilitygem_tier03</Data></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Raw Beryl</Data></Cell>
+    <Cell ss:StyleID="s105"><Data ss:Type="String">Nyers berill</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_agilitygem_tier04</Data></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Flawed Beryl</Data></Cell>
+    <Cell ss:StyleID="s105"><Data ss:Type="String">Hibás berill</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_agilitygem_tier05</Data></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Beryl</Data></Cell>
+    <Cell ss:StyleID="s105"><Data ss:Type="String">Berill</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_agilitygem_tier06</Data></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Polished Beryl</Data></Cell>
+    <Cell ss:StyleID="s105"><Data ss:Type="String">Csiszolt berill</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_agilitygem_tier07</Data></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Pristine Beryl</Data></Cell>
+    <Cell ss:StyleID="s105"><Data ss:Type="String">Érintetlen berill</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_agilitygem_tier08</Data></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Polished Pristine Beryl</Data></Cell>
+    <Cell ss:StyleID="s105"><Data ss:Type="String">Csiszolt érintetlen berill</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_agilitygem_tier09</Data></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Precious Beryl</Data></Cell>
+    <Cell ss:StyleID="s105"><Data ss:Type="String">Értékes berill</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_agilitygem_tier10</Data></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Polished Precious Beryl</Data></Cell>
+    <Cell ss:StyleID="s105"><Data ss:Type="String">Csiszolt értékes berill</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_agilitygem_tier11</Data></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Perfect Beryl</Data></Cell>
+    <Cell ss:StyleID="s105"><Data ss:Type="String">Tökéletes berill</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_agilitygem_tier12</Data></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Polished Perfect Beryl</Data></Cell>
+    <Cell ss:StyleID="s105"><Data ss:Type="String">Csiszolt tökéletes berill</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_agilitygem_tier13</Data></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Royal Beryl</Data></Cell>
+    <Cell ss:StyleID="s105"><Data ss:Type="String">Nemes berill</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_agilitygem_tier14</Data></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Polished Royal Beryl</Data></Cell>
+    <Cell ss:StyleID="s105"><Data ss:Type="String">Csiszolt nemes berill</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_agilitygem_tier15</Data></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Celestial Beryl</Data></Cell>
+    <Cell ss:StyleID="s105"><Data ss:Type="String">Mennyei berill</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_agilitygem_tier16</Data></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Polished Celestial Beryl</Data></Cell>
+    <Cell ss:StyleID="s105"><Data ss:Type="String">Csiszolt mennyei berill</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_agilitygem_tier17</Data></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Fallen Beryl</Data></Cell>
+    <Cell ss:StyleID="s105"><Data ss:Type="String">Elhullott berill</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_agilitygem_tier18</Data></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Polished Fallen Beryl</Data></Cell>
+    <Cell ss:StyleID="s105"><Data ss:Type="String">Csiszolt elhullott berill</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_agilitygem_tier19</Data></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Divine Beryl</Data></Cell>
+    <Cell ss:StyleID="s105"><Data ss:Type="String">Isteni berill</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_agilitygem_tier20</Data></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Polished Divine Beryl</Data></Cell>
+    <Cell ss:StyleID="s105"><Data ss:Type="String">Csiszolt isteni berill</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_willpowergem_tier01</Data></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Chipped Cyanite</Data></Cell>
+    <Cell ss:StyleID="s105"><Data ss:Type="String">Csorba kianit</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_willpowergem_tier02</Data></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Crude Cyanite</Data></Cell>
+    <Cell ss:StyleID="s105"><Data ss:Type="String">Durva kianit</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_willpowergem_tier03</Data></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Raw Cyanite</Data></Cell>
+    <Cell ss:StyleID="s105"><Data ss:Type="String">Nyers kianit</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_willpowergem_tier04</Data></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Flawed Cyanite</Data></Cell>
+    <Cell ss:StyleID="s105"><Data ss:Type="String">Hibás kianit</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_willpowergem_tier05</Data></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Cyanite</Data></Cell>
+    <Cell ss:StyleID="s105"><Data ss:Type="String">Kianit</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_willpowergem_tier06</Data></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Polished Cyanite</Data></Cell>
+    <Cell ss:StyleID="s105"><Data ss:Type="String">Csiszolt kianit</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_willpowergem_tier07</Data></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Pristine Cyanite</Data></Cell>
+    <Cell ss:StyleID="s105"><Data ss:Type="String">Érintetlen kianit</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_willpowergem_tier08</Data></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Polished Pristine Cyanite</Data></Cell>
+    <Cell ss:StyleID="s105"><Data ss:Type="String">Csiszolt érintetlen kianit</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_willpowergem_tier09</Data></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Precious Cyanite</Data></Cell>
+    <Cell ss:StyleID="s105"><Data ss:Type="String">Értékes kianit</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_willpowergem_tier10</Data></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Polished Precious Cyanite</Data></Cell>
+    <Cell ss:StyleID="s105"><Data ss:Type="String">Csiszolt értékes kianit</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_willpowergem_tier11</Data></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Perfect Cyanite</Data></Cell>
+    <Cell ss:StyleID="s105"><Data ss:Type="String">Tökéletes kianit</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_willpowergem_tier12</Data></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Polished Perfect Cyanite</Data></Cell>
+    <Cell ss:StyleID="s105"><Data ss:Type="String">Csiszolt tökéletes kianit</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_willpowergem_tier13</Data></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Royal Cyanite</Data></Cell>
+    <Cell ss:StyleID="s105"><Data ss:Type="String">Nemes kianit</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_willpowergem_tier14</Data></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Polished Royal Cyanite</Data></Cell>
+    <Cell ss:StyleID="s105"><Data ss:Type="String">Csiszolt nemes kianit</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_willpowergem_tier15</Data></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Celestial Cyanite</Data></Cell>
+    <Cell ss:StyleID="s105"><Data ss:Type="String">Mennyei kianit</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_willpowergem_tier16</Data></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Polished Celestial Cyanite</Data></Cell>
+    <Cell ss:StyleID="s105"><Data ss:Type="String">Csiszolt mennyei kianit</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_willpowergem_tier17</Data></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Fallen Cyanite</Data></Cell>
+    <Cell ss:StyleID="s105"><Data ss:Type="String">Elhullott kianit</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_willpowergem_tier18</Data></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Polished Fallen Cyanite</Data></Cell>
+    <Cell ss:StyleID="s105"><Data ss:Type="String">Csiszolt elhullott kianit</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_willpowergem_tier19</Data></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Divine Cyanite</Data></Cell>
+    <Cell ss:StyleID="s105"><Data ss:Type="String">Isteni kianit</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_willpowergem_tier20</Data></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Polished Divine Cyanite</Data></Cell>
+    <Cell ss:StyleID="s105"><Data ss:Type="String">Csiszolt isteni kianit</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_toughnessgem_tier01</Data></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Chipped Amethyste</Data></Cell>
+    <Cell ss:StyleID="s105"><Data ss:Type="String">Csorba ametiszt</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_toughnessgem_tier02</Data></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Crude Amethyste</Data></Cell>
+    <Cell ss:StyleID="s105"><Data ss:Type="String">Durva ametiszt</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_toughnessgem_tier03</Data></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Raw Amethyste</Data></Cell>
+    <Cell ss:StyleID="s105"><Data ss:Type="String">Nyers ametiszt</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_toughnessgem_tier04</Data></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Flawed Amethyste</Data></Cell>
+    <Cell ss:StyleID="s105"><Data ss:Type="String">Hibás ametiszt</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_toughnessgem_tier05</Data></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Amethyste</Data></Cell>
+    <Cell ss:StyleID="s105"><Data ss:Type="String">Ametiszt</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_toughnessgem_tier06</Data></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Polished Amethyste</Data></Cell>
+    <Cell ss:StyleID="s105"><Data ss:Type="String">Csiszolt ametiszt</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_toughnessgem_tier07</Data></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Pristine Amethyste</Data></Cell>
+    <Cell ss:StyleID="s105"><Data ss:Type="String">Érintetlen ametiszt</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_toughnessgem_tier08</Data></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Polished Pristine Amethyste</Data></Cell>
+    <Cell ss:StyleID="s105"><Data ss:Type="String">Csiszolt érintetlen ametiszt</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_toughnessgem_tier09</Data></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Precious Amethyste</Data></Cell>
+    <Cell ss:StyleID="s105"><Data ss:Type="String">Értékes ametiszt</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_toughnessgem_tier10</Data></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Polished Precious Amethyste</Data></Cell>
+    <Cell ss:StyleID="s105"><Data ss:Type="String">Csiszolt értékes ametiszt</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_toughnessgem_tier11</Data></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Perfect Amethyste</Data></Cell>
+    <Cell ss:StyleID="s105"><Data ss:Type="String">Tökéletes ametiszt</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_toughnessgem_tier12</Data></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Polished Perfect Amethyste</Data></Cell>
+    <Cell ss:StyleID="s105"><Data ss:Type="String">Csiszolt tökéletes ametiszt</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_toughnessgem_tier13</Data></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Royal Amethyste</Data></Cell>
+    <Cell ss:StyleID="s105"><Data ss:Type="String">Nemes ametiszt</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_toughnessgem_tier14</Data></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Polished Royal Amethyste</Data></Cell>
+    <Cell ss:StyleID="s105"><Data ss:Type="String">Csiszolt nemes ametiszt</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_toughnessgem_tier15</Data></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Celestial Amethyste</Data></Cell>
+    <Cell ss:StyleID="s105"><Data ss:Type="String">Mennyei ametiszt</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_toughnessgem_tier16</Data></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Polished Celestial Amethyste</Data></Cell>
+    <Cell ss:StyleID="s105"><Data ss:Type="String">Csiszolt mennyei ametiszt</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_toughnessgem_tier17</Data></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Fallen Amethyste</Data></Cell>
+    <Cell ss:StyleID="s105"><Data ss:Type="String">Elhullott ametiszt</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_toughnessgem_tier18</Data></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Polished Fallen Amethyste</Data></Cell>
+    <Cell ss:StyleID="s105"><Data ss:Type="String">Csiszolt elhullott ametiszt</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_toughnessgem_tier19</Data></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Divine Amethyste</Data></Cell>
+    <Cell ss:StyleID="s105"><Data ss:Type="String">Isteni ametiszt</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_toughnessgem_tier20</Data></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Polished Divine Amethyste</Data></Cell>
+    <Cell ss:StyleID="s105"><Data ss:Type="String">Csiszolt isteni ametiszt</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_chancegem_tier01</Data></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Chipped Alexandrite</Data></Cell>
+    <Cell ss:StyleID="s105"><Data ss:Type="String">Csorba alexandrit</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_chancegem_tier02</Data></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Crude Alexandrite</Data></Cell>
+    <Cell ss:StyleID="s105"><Data ss:Type="String">Durva alexandrit</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_chancegem_tier03</Data></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Raw Alexandrite</Data></Cell>
+    <Cell ss:StyleID="s105"><Data ss:Type="String">Nyers alexandrit</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_chancegem_tier04</Data></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Flawed Alexandrite</Data></Cell>
+    <Cell ss:StyleID="s105"><Data ss:Type="String">Hibás alexandrit</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_chancegem_tier05</Data></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Alexandrite</Data></Cell>
+    <Cell ss:StyleID="s105"><Data ss:Type="String">Alexandrit</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_chancegem_tier06</Data></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Polished Alexandrite</Data></Cell>
+    <Cell ss:StyleID="s105"><Data ss:Type="String">Csiszolt alexandrit</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_chancegem_tier07</Data></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Pristine Alexandrite</Data></Cell>
+    <Cell ss:StyleID="s105"><Data ss:Type="String">Érintetlen alexandrit</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_chancegem_tier08</Data></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Polished Pristine Alexandrite</Data></Cell>
+    <Cell ss:StyleID="s105"><Data ss:Type="String">Csiszolt érintetlen alexandrit</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_chancegem_tier09</Data></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Precious Alexandrite</Data></Cell>
+    <Cell ss:StyleID="s105"><Data ss:Type="String">Értékes alexandrit</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_chancegem_tier10</Data></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Polished Precious Alexandrite</Data></Cell>
+    <Cell ss:StyleID="s105"><Data ss:Type="String">Csiszolt értékes alexandrit</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_chancegem_tier11</Data></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Perfect Alexandrite</Data></Cell>
+    <Cell ss:StyleID="s105"><Data ss:Type="String">Tökéletes alexandrit</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_chancegem_tier12</Data></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Polished Perfect Alexandrite</Data></Cell>
+    <Cell ss:StyleID="s105"><Data ss:Type="String">Csiszolt tökéletes alexandrit</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_chancegem_tier13</Data></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Royal Alexandrite</Data></Cell>
+    <Cell ss:StyleID="s105"><Data ss:Type="String">Nemes alexandrit</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_chancegem_tier14</Data></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Polished Royal Alexandrite</Data></Cell>
+    <Cell ss:StyleID="s105"><Data ss:Type="String">Csiszolt nemes alexandrit</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_chancegem_tier15</Data></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Celestial Alexandrite</Data></Cell>
+    <Cell ss:StyleID="s105"><Data ss:Type="String">Mennyei alexandrit</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_chancegem_tier16</Data></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Polished Celestial Alexandrite</Data></Cell>
+    <Cell ss:StyleID="s105"><Data ss:Type="String">Csiszolt mennyei alexandrit</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_chancegem_tier17</Data></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Fallen Alexandrite</Data></Cell>
+    <Cell ss:StyleID="s105"><Data ss:Type="String">Elhullott alexandrit</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_chancegem_tier18</Data></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Polished Fallen Alexandrite</Data></Cell>
+    <Cell ss:StyleID="s105"><Data ss:Type="String">Csiszolt elhullott alexandrit</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_chancegem_tier19</Data></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Divine Alexandrite</Data></Cell>
+    <Cell ss:StyleID="s105"><Data ss:Type="String">Isteni alexandrit</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_gem_chancegem_tier20</Data></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Polished Divine Alexandrite</Data></Cell>
+    <Cell ss:StyleID="s105"><Data ss:Type="String">Csiszolt isteni alexandrit</Data></Cell>
+   </Row>
+  </Table>
+  <WorksheetOptions xmlns="urn:schemas-microsoft-com:office:excel">
+   <PageSetup>
+    <Layout x:Orientation="Landscape"/>
+    <Header x:Margin="0.51181102362204722"
+     x:Data="&amp;LTime restriction sample script"/>
+    <Footer x:Margin="0.51181102362204722" x:Data="Page &amp;P"/>
+    <PageMargins x:Bottom="0.98425196850393704" x:Left="0" x:Right="0"
+     x:Top="0.98425196850393704"/>
+   </PageSetup>
+   <Print>
+    <ValidPrinterInfo/>
+    <PaperSizeIndex>9</PaperSizeIndex>
+    <Scale>70</Scale>
+    <HorizontalResolution>600</HorizontalResolution>
+    <VerticalResolution>600</VerticalResolution>
+   </Print>
+   <Selected/>
+   <TopRowVisible>533</TopRowVisible>
+   <Panes>
+    <Pane>
+     <Number>3</Number>
+     <ActiveRow>540</ActiveRow>
+     <ActiveCol>1</ActiveCol>
+    </Pane>
+   </Panes>
+   <ProtectObjects>False</ProtectObjects>
+   <ProtectScenarios>False</ProtectScenarios>
+  </WorksheetOptions>
+ </Worksheet>
+</Workbook>
