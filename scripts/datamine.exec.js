@@ -8,8 +8,9 @@ const rimraf = promisify(require('rimraf'))
 const glob = promisify(require('glob'))
 
 async function main() {
+  await fs.access(util.PATH.DATAMINE_TMP)
   await rimraf(util.PATH.DATAMINE)
-  return copyGlobs({
+  return util.copyGlobs({
     src: util.PATH.DATAMINE_TMP,
     dest: util.PATH.DATAMINE,
     patterns: [
@@ -31,16 +32,6 @@ async function main() {
       "Game/Umbra/Gameplay/Curve_StatusAilments/*.xml",
     ],
   })
-}
-async function copyGlobs({src, dest, patterns}) {
-  const groups = await Promise.all(patterns.map(pattern => glob(pattern, {cwd: src})))
-  const paths = util.flatten(groups)
-  const pairs = paths.map(p => [path.join(src, p), path.join(dest, p)])
-  await Promise.all(pairs.map(async ([s,d]) => {
-    await mkdirp(path.dirname(d))
-    return fs.copyFile(s, d)
-  }))
-  return pairs
 }
 if (require.main == module) {
   main().catch(err => {

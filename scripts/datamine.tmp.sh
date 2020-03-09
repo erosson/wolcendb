@@ -1,5 +1,5 @@
 #!/bin/bash
-set -eux
+set -eu
 echo 'I extract data from your Wolcen game files into ./datamine.tmp'
 echo 'deleting datamine.tmp in 3...'
 sleep 3
