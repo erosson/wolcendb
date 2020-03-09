@@ -16,10 +16,8 @@ const query = parseQuery(document.location.search)
 const root = document.getElementById('root')
 const ssrHTML = root.innerHTML
 const langAssets = langs.reduce((accum, lang) => {
-  const _name = lang.toLowerCase()
-    .replace(/^datamine\/lang\//, '')
-    .replace(/_xml\.json$/, '')
-  const name = _name.replace(/^chineses$/, 'chinese') // wtf, wolcen devs?
+  const _name = lang.toLowerCase().replace(/_xml\.pak$/, '')
+  const name = _name.replace(/^chineses$/, 'chinese')
   const asset = 'lang/' + _name + '_xml'
   accum[name] = asset
   return accum

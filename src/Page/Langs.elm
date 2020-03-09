@@ -21,8 +21,7 @@ view m =
             |> List.reverse
             |> List.map
                 (String.toLower
-                    >> String.replace "datamine/lang/" ""
-                    >> String.replace "_xml.json" ""
+                    >> String.replace "_xml.pak" ""
                     >> String.replace "chineses" "chinese"
                 )
             |> List.reverse
