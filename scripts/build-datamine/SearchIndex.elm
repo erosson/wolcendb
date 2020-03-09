@@ -2,7 +2,9 @@ port module SearchIndex exposing (main)
 
 import Datamine exposing (Datamine)
 import ElmTextSearch.Json.Encoder
+import Json.Decode as D
 import Json.Encode as E
+import Lang exposing (Lang)
 import Search
 
 
@@ -32,12 +34,16 @@ init flags =
     --
     --else
     ( ()
-    , case Datamine.decode flags.datamine of
+    , case
+        Result.map2 Tuple.pair
+            (D.decodeValue Lang.decoder flags.datamine |> Result.mapError D.errorToString)
+            (Datamine.decode flags.datamine)
+      of
         Err err ->
             stderr <| E.string err
 
-        Ok dm ->
-            case Search.createIndex dm of
+        Ok ( lang, dm ) ->
+            case Search.createIndex lang dm of
                 Err errList ->
                     errList
                         |> E.list (\( i, id, err ) -> E.list identity [ E.int i, E.string id, E.string err ])
