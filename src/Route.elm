@@ -1,6 +1,8 @@
 module Route exposing
     ( Route(..)
     , href
+    , keywords
+    , normalItems
     , parse
     , pushUrl
     , replaceUrl
@@ -19,7 +21,7 @@ import Url.Parser.Query as Q
 
 type Route
     = Home
-    | NormalItems (Maybe Int) (Maybe String)
+    | NormalItems (Maybe Int) (Maybe String) (Maybe String)
     | NormalItem String
     | UniqueItems (Maybe String)
     | UniqueItem String
@@ -71,10 +73,10 @@ parser =
         , P.map Privacy <| P.s "privacy"
 
         -- legacy routes
-        , P.map (Redirect (NormalItems Nothing (Just "weapon"))) <| P.s "loot" </> P.s "weapon"
-        , P.map (Redirect (NormalItems Nothing (Just "shield"))) <| P.s "loot" </> P.s "shield"
-        , P.map (Redirect (NormalItems Nothing (Just "armor"))) <| P.s "loot" </> P.s "armor"
-        , P.map (Redirect (NormalItems Nothing (Just "accessory"))) <| P.s "loot" </> P.s "accessory"
+        , P.map (Redirect (NormalItems Nothing (Just "weapon") Nothing)) <| P.s "loot" </> P.s "weapon"
+        , P.map (Redirect (NormalItems Nothing (Just "shield") Nothing)) <| P.s "loot" </> P.s "shield"
+        , P.map (Redirect (NormalItems Nothing (Just "armor") Nothing)) <| P.s "loot" </> P.s "armor"
+        , P.map (Redirect (NormalItems Nothing (Just "accessory") Nothing)) <| P.s "loot" </> P.s "accessory"
         , P.map (Redirect << NormalItem) <| P.s "loot" </> P.s "weapon" </> P.string
         , P.map (Redirect << NormalItem) <| P.s "loot" </> P.s "shield" </> P.string
         , P.map (Redirect << NormalItem) <| P.s "loot" </> P.s "armor" </> P.string
@@ -91,7 +93,7 @@ parser =
         -- modern item routes
         , P.map UniqueItems <| P.s "loot" </> P.s "unique" <?> Q.string "keywords"
         , P.map UniqueItem <| P.s "loot" </> P.s "unique" </> P.string
-        , P.map NormalItems <| P.s "loot" <?> Q.int "tier" <?> Q.string "keywords"
+        , P.map NormalItems <| P.s "loot" <?> Q.int "tier" <?> Q.string "keywords" <?> Q.string "optional_keywords"
         , P.map NormalItem <| P.s "loot" </> P.string
         ]
 
@@ -105,7 +107,7 @@ toPath r =
         Home ->
             "/"
 
-        NormalItems _ _ ->
+        NormalItems _ _ _ ->
             "/loot"
 
         NormalItem id ->
@@ -178,8 +180,9 @@ toQuery route =
         UniqueItems tags ->
             [ tags |> Maybe.map (B.string "keywords") ] |> List.filterMap identity
 
-        NormalItems tier tags ->
-            [ tags |> Maybe.map (B.string "keywords")
+        NormalItems tier kws okws ->
+            [ kws |> Maybe.map (B.string "keywords")
+            , okws |> Maybe.map (B.string "optional_keywords")
             , tier |> Maybe.map (B.int "tier")
             ]
                 |> List.filterMap identity
@@ -271,3 +274,18 @@ toUrl route =
                 qs |> B.toQuery |> Just
     , fragment = Nothing
     }
+
+
+keywords : List String -> Maybe String
+keywords kws =
+    case kws of
+        [] ->
+            Nothing
+
+        _ ->
+            Just <| String.join "," kws
+
+
+normalItems : Maybe Int -> List String -> List String -> Route
+normalItems tier kws okws =
+    NormalItems tier (keywords kws) (keywords okws)

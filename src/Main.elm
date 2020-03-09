@@ -385,7 +385,7 @@ viewTitle model =
                 ( Route.Home, _, _ ) ->
                     "WolcenDB: a Wolcen item, skill, and magic affix database"
 
-                ( Route.NormalItems tier kws, _, _ ) ->
+                ( Route.NormalItems tier kws okws, _, _ ) ->
                     "WolcenDB: normal item list"
                         ++ Maybe.Extra.unwrap "" (String.fromInt >> (++) ": Tier ") tier
                         ++ Maybe.Extra.unwrap "" ((++) ": ") kws
@@ -484,8 +484,8 @@ viewBody { ssr } model =
                                 Route.Home ->
                                     Page.Home.view dm
 
-                                Route.NormalItems tier tags ->
-                                    Page.NormalItems.view lang dm tier tags
+                                Route.NormalItems tier kws okws ->
+                                    Page.NormalItems.view lang dm tier kws okws
 
                                 Route.NormalItem name ->
                                     Page.NormalItem.view lang dm model name

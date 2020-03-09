@@ -246,5 +246,17 @@ viewAffixRow lang dm model a =
                 |> List.concat
             )
         , td [ class "nowrap" ] (View.Affix.viewGemFamilies lang dm a)
-        , td [] [ text "[", H.a [ Route.href <| Route.Source "magic-affix" a.affixId ] [ text "Source" ], text "]" ]
+        , td []
+            [ span []
+                [ text "["
+                , H.a [ Route.href <| Route.Source "magic-affix" a.affixId ] [ text "Source" ]
+                , text "|"
+                , H.a
+                    [ title "List all items that can spawn this affix"
+                    , Route.href <| Route.normalItems Nothing a.drop.mandatoryKeywords a.drop.optionalKeywords
+                    ]
+                    [ text "Items" ]
+                , text "]"
+                ]
+            ]
         ]
