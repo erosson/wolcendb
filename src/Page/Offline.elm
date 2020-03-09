@@ -11,14 +11,15 @@ import Dict exposing (Dict)
 import Html as H exposing (..)
 import Html.Attributes as A exposing (..)
 import Json.Encode as E
+import Lang exposing (Lang)
 import Maybe.Extra
 import Route exposing (Route)
 import Url exposing (Url)
 
 
-view : Datamine -> String -> String -> Maybe (List (Html msg))
-view dm type_ id =
-    getOffline dm type_ id
+view : Lang -> Datamine -> String -> String -> Maybe (List (Html msg))
+view lang dm type_ id =
+    getOffline lang dm type_ id
         |> Maybe.map
             (\( label, sources, breadcrumb ) ->
                 [ ol [ class "breadcrumb" ]
@@ -70,8 +71,8 @@ view dm type_ id =
             )
 
 
-getOffline : Datamine -> String -> String -> Maybe ( String, List E.Value, List (Html msg) )
-getOffline dm type_ id =
+getOffline : Lang -> Datamine -> String -> String -> Maybe ( String, List E.Value, List (Html msg) )
+getOffline lang dm type_ id =
     case type_ of
         "unique-loot" ->
             Dict.get (String.toLower id) dm.uniqueLootByName
@@ -79,7 +80,7 @@ getOffline dm type_ id =
                     (\uitem ->
                         let
                             label =
-                                UniqueItem.label dm uitem |> Maybe.withDefault "???"
+                                UniqueItem.label lang uitem |> Maybe.withDefault "???"
                         in
                         ( label
                         , [ E.object

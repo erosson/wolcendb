@@ -6,13 +6,14 @@ import Dict exposing (Dict)
 import Html as H exposing (..)
 import Html.Attributes as A exposing (..)
 import Html.Events as E exposing (..)
+import Lang exposing (Lang)
 import Maybe.Extra
 import Route exposing (Route)
 import View.Desc
 
 
-view : Datamine -> List (Html msg)
-view dm =
+view : Lang -> Datamine -> List (Html msg)
+view lang dm =
     [ ol [ class "breadcrumb" ]
         [ a [ class "breadcrumb-item active", Route.href Route.Home ] [ text "Home" ]
         , a [ class "breadcrumb-item active", Route.href Route.Skills ] [ text "Skills" ]
@@ -39,11 +40,11 @@ view dm =
                                 ]
                             , td [ title s.uiName ]
                                 [ a [ Route.href <| Route.Skill s.uid ]
-                                    [ Skill.label dm s |> Maybe.withDefault "???" |> text
+                                    [ Skill.label lang s |> Maybe.withDefault "???" |> text
                                     ]
                                 ]
                             , td [ title <| s.uiName ++ "_desc" ]
-                                (View.Desc.desc dm (s.uiName ++ "_desc") |> Maybe.withDefault [ text "???" ])
+                                (Skill.desc lang s |> View.Desc.mformat |> Maybe.withDefault [ text "???" ])
 
                             -- , td [ title <| Maybe.withDefault "" s.lore ]
                             -- (View.Desc.mdesc dm s.lore |> Maybe.withDefault [ text "???" ])

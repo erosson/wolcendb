@@ -8,6 +8,7 @@ import Dict.Extra
 import Html as H exposing (..)
 import Html.Attributes as A exposing (..)
 import Html.Events as E exposing (..)
+import Lang exposing (Lang)
 import List.Extra
 import Maybe.Extra
 import Route exposing (Route)
@@ -36,8 +37,8 @@ update msg dm model =
             View.AffixFilterForm.update msg_ dm model
 
 
-view : Datamine -> Model m -> List (Html Msg)
-view dm model =
+view : Lang -> Datamine -> Model m -> List (Html Msg)
+view lang dm model =
     [ ol [ class "breadcrumb" ]
         [ a [ class "breadcrumb-item active", Route.href Route.Home ] [ text "Home" ]
         , a [ class "breadcrumb-item active", Route.href Route.Affixes ] [ text "Affixes" ]
@@ -76,37 +77,37 @@ view dm model =
                    )
                 |> List.filter (View.AffixFilterForm.isVisible dm model)
                 |> View.Affix.affixesByClass
-                |> List.concatMap (viewAffixClass dm model)
+                |> List.concatMap (viewAffixClass lang dm model)
             )
         ]
     ]
 
 
-viewAffixClass : Datamine -> Model m -> ( String, List MagicAffix ) -> List (Html Msg)
-viewAffixClass dm model ( cls, affixes ) =
+viewAffixClass : Lang -> Datamine -> Model m -> ( String, List MagicAffix ) -> List (Html Msg)
+viewAffixClass lang dm model ( cls, affixes ) =
     case affixes of
         [] ->
             []
 
         [ affix ] ->
-            [ viewAffixRow dm model affix ]
+            [ viewAffixRow lang dm model affix ]
 
         head :: _ ->
             let
                 isExpanded =
                     Set.member cls model.expandedAffixClasses
             in
-            viewAffixClassRow dm model ( cls, affixes )
+            viewAffixClassRow lang dm model ( cls, affixes )
                 :: (if isExpanded then
-                        List.map (viewAffixRow dm model) affixes
+                        List.map (viewAffixRow lang dm model) affixes
 
                     else
                         []
                    )
 
 
-viewAffixClassRow : Datamine -> Model m -> ( String, List MagicAffix ) -> Html Msg
-viewAffixClassRow dm model ( cls, affixes ) =
+viewAffixClassRow : Lang -> Datamine -> Model m -> ( String, List MagicAffix ) -> Html Msg
+viewAffixClassRow lang dm model ( cls, affixes ) =
     let
         isExpanded =
             Set.member cls model.expandedAffixClasses
@@ -116,7 +117,7 @@ viewAffixClassRow dm model ( cls, affixes ) =
             affixes
                 |> List.concatMap .effects
                 |> View.Affix.summarizeEffects
-                |> List.filterMap (Affix.formatEffect dm)
+                |> List.filterMap (Affix.formatEffect lang)
 
         keywords : List String
         keywords =
@@ -192,11 +193,11 @@ viewAffixClassRow dm model ( cls, affixes ) =
         ]
 
 
-viewAffixRow : Datamine -> Model m -> MagicAffix -> Html msg
-viewAffixRow dm model a =
+viewAffixRow : Lang -> Datamine -> Model m -> MagicAffix -> Html msg
+viewAffixRow lang dm model a =
     tr []
         [ td [] []
-        , td [] [ ul [ title a.affixId, class "affixes" ] <| View.Affix.viewAffix dm a ]
+        , td [] [ ul [ title a.affixId, class "affixes" ] <| View.Affix.viewAffix lang a ]
 
         -- , td [] [ text <| Maybe.withDefault "???CLASS???" a.class ]
         , td [] [ text <| String.fromInt a.tier ]
@@ -244,6 +245,6 @@ viewAffixRow dm model a =
              ]
                 |> List.concat
             )
-        , td [ class "nowrap" ] (View.Affix.viewGemFamilies dm a)
+        , td [ class "nowrap" ] (View.Affix.viewGemFamilies lang dm a)
         , td [] [ text "[", H.a [ Route.href <| Route.Source "magic-affix" a.affixId ] [ text "Source" ], text "]" ]
         ]

@@ -1,7 +1,6 @@
 module Datamine.Ailment exposing (Ailment, decoder)
 
 import Datamine.Affix as Affix exposing (NonmagicAffix)
-import Datamine.Lang as Lang
 import Datamine.Source as Source exposing (Source)
 import Datamine.Util as Util
 import Json.Decode as D

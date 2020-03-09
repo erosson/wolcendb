@@ -13,12 +13,12 @@ module Datamine.Affix exposing
     , getNonmagicIds
     )
 
-import Datamine.Lang as Lang
 import Datamine.Source as Source exposing (Source)
 import Datamine.Util as Util
 import Dict exposing (Dict)
 import Json.Decode as D
 import Json.Decode.Pipeline as P
+import Lang exposing (Lang)
 import Result.Extra
 
 
@@ -86,8 +86,8 @@ effectIds =
     .effects >> List.map .effectId
 
 
-formatEffect : Lang.Datamine d -> MagicEffect -> Maybe String
-formatEffect dm effect =
+formatEffect : Lang -> MagicEffect -> Maybe String
+formatEffect lang effect =
     let
         stats =
             -- TODO: sometimes stats are out of order, but I haven't been able to find a pattern. JSON decoding seems fine.
@@ -101,7 +101,7 @@ formatEffect dm effect =
             Dict.get effect.effectId formatEffectOverrides
                 |> Maybe.withDefault ("@ui_eim_" ++ effect.effectId)
     in
-    Lang.get dm key
+    Lang.get lang key
         |> Maybe.map
             (\template ->
                 stats
@@ -128,11 +128,10 @@ formatEffectOverrides =
 
 
 type alias Datamine d =
-    Lang.Datamine
-        { d
-            | nonmagicAffixesById : Dict String NonmagicAffix
-            , magicAffixesById : Dict String MagicAffix
-        }
+    { d
+        | nonmagicAffixesById : Dict String NonmagicAffix
+        , magicAffixesById : Dict String MagicAffix
+    }
 
 
 getNonmagicIds : Datamine d -> List String -> List NonmagicAffix

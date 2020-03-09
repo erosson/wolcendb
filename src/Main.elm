@@ -4,7 +4,6 @@ import Browser
 import Browser.Dom
 import Browser.Navigation as Nav
 import Datamine exposing (Datamine)
-import Datamine.Lang
 import Datamine.NormalItem as NormalItem exposing (NormalItem)
 import Datamine.UniqueItem as UniqueItem exposing (UniqueItem)
 import Dict exposing (Dict)
@@ -13,6 +12,7 @@ import Html as H exposing (..)
 import Html.Attributes as A exposing (..)
 import Html.Events as E exposing (..)
 import Json.Decode as D
+import Lang exposing (Lang)
 import Maybe.Extra
 import Page.Affixes
 import Page.Ailments
@@ -39,7 +39,7 @@ import Page.UniqueItems
 import Ports
 import RemoteData exposing (RemoteData)
 import Route exposing (Route)
-import Search exposing (SearchResult)
+import Search exposing (SearchScore)
 import Set exposing (Set)
 import Task
 import Url exposing (Url)
@@ -57,6 +57,7 @@ type alias Model =
     { nav : Maybe Nav.Key
     , buildRevisions : List String
     , datamine : RemoteData String Datamine
+    , lang : RemoteData String Lang
     , langs : List String
     , searchIndex : RemoteData String Search.Index
     , changelog : String
@@ -65,7 +66,7 @@ type alias Model =
     -- TODO: these really belong in a per-page model
     , expandedAffixClasses : Set String
     , globalSearch : String
-    , globalSearchResults : Result String (List SearchResult)
+    , globalSearchResults : Result String (List SearchScore)
     , filterItemLevel : Int
     , filterGemFamilies : Set String
     , filterKeywords : Set String
@@ -97,6 +98,7 @@ init_ flags route nav =
     , buildRevisions = flags.buildRevisions
     , langs = flags.langs
     , datamine = flags.datamine |> maybeDecode Datamine.decode
+    , lang = flags.datamine |> maybeDecode (D.decodeValue Lang.decoder >> Result.mapError D.errorToString)
     , searchIndex = flags.searchIndex |> maybeDecode Search.decodeIndex
     , changelog = flags.changelog
     , route = Nothing
@@ -220,20 +222,27 @@ update msg model =
         LoadAssets res ->
             (case res.name of
                 "datamine" ->
-                    { model | datamine = Datamine.decode res.json |> RemoteData.fromResult }
+                    { model
+                        | datamine = Datamine.decode res.json |> RemoteData.fromResult
+                        , lang =
+                            case model.lang of
+                                RemoteData.Success _ ->
+                                    model.lang
+
+                                _ ->
+                                    D.decodeValue Lang.decoder res.json
+                                        |> Result.mapError D.errorToString
+                                        |> RemoteData.fromResult
+                    }
 
                 "searchIndex" ->
                     { model | searchIndex = Search.decodeIndex res.json |> RemoteData.fromResult }
 
                 _ ->
                     if String.startsWith "lang/" res.name then
-                        case D.decodeValue Datamine.Lang.secondLangDecoder res.json of
+                        case D.decodeValue Lang.decoder res.json of
                             Ok lang ->
-                                -- TODO: this is incredibly hacky! Datamine is supposed to be read-only,
-                                -- and localization is conceptually independent of it anyway:
-                                -- lang and datamine are often needed in very different places.
-                                -- Refactor things to pass lang around independently!
-                                { model | datamine = model.datamine |> RemoteData.map (\dm -> { dm | en = lang }) }
+                                { model | lang = RemoteData.Success lang }
 
                             Err err ->
                                 model
@@ -369,88 +378,88 @@ viewTitle model =
             "WolcenDB"
 
         Just route ->
-            case ( route, model.datamine ) of
-                ( Route.Redirect _, _ ) ->
+            case ( route, model.lang, model.datamine ) of
+                ( Route.Redirect _, _, _ ) ->
                     "WolcenDB"
 
-                ( Route.Home, _ ) ->
+                ( Route.Home, _, _ ) ->
                     "WolcenDB: a Wolcen item, skill, and magic affix database"
 
-                ( Route.NormalItems tier kws, _ ) ->
+                ( Route.NormalItems tier kws, _, _ ) ->
                     "WolcenDB: normal item list"
                         ++ Maybe.Extra.unwrap "" (String.fromInt >> (++) ": Tier ") tier
                         ++ Maybe.Extra.unwrap "" ((++) ": ") kws
 
-                ( Route.NormalItem name, RemoteData.Success dm ) ->
-                    "WolcenDB: normal item: " ++ Page.NormalItem.viewTitle dm name
+                ( Route.NormalItem name, RemoteData.Success lang, RemoteData.Success dm ) ->
+                    "WolcenDB: normal item: " ++ Page.NormalItem.viewTitle lang dm name
 
-                ( Route.NormalItem name, _ ) ->
+                ( Route.NormalItem name, _, _ ) ->
                     "WolcenDB: normal item"
 
-                ( Route.UniqueItems kws, _ ) ->
+                ( Route.UniqueItems kws, _, _ ) ->
                     "WolcenDB: unique item list" ++ Maybe.Extra.unwrap "" ((++) ": ") kws
 
-                ( Route.UniqueItem name, RemoteData.Success dm ) ->
-                    "WolcenDB: unique item: " ++ Page.UniqueItem.viewTitle dm name
+                ( Route.UniqueItem name, RemoteData.Success lang, RemoteData.Success dm ) ->
+                    "WolcenDB: unique item: " ++ Page.UniqueItem.viewTitle lang dm name
 
-                ( Route.UniqueItem name, _ ) ->
+                ( Route.UniqueItem name, _, _ ) ->
                     "WolcenDB: unique item"
 
-                ( Route.Skills, _ ) ->
+                ( Route.Skills, _, _ ) ->
                     "WolcenDB: skill list"
 
-                ( Route.Skill name, RemoteData.Success dm ) ->
-                    "WolcenDB: skill: " ++ Page.Skill.viewTitle dm name
+                ( Route.Skill name, RemoteData.Success lang, RemoteData.Success dm ) ->
+                    "WolcenDB: skill: " ++ Page.Skill.viewTitle lang dm name
 
-                ( Route.Skill name, _ ) ->
+                ( Route.Skill name, _, _ ) ->
                     "WolcenDB: skill"
 
-                ( Route.SkillVariant id, RemoteData.Success dm ) ->
-                    "WolcenDB: skill-variant: " ++ Page.SkillVariant.viewTitle dm id
+                ( Route.SkillVariant id, RemoteData.Success lang, RemoteData.Success dm ) ->
+                    "WolcenDB: skill-variant: " ++ Page.SkillVariant.viewTitle lang dm id
 
-                ( Route.SkillVariant _, _ ) ->
+                ( Route.SkillVariant _, _, _ ) ->
                     "WolcenDB: skill-variant"
 
-                ( Route.Affixes, _ ) ->
+                ( Route.Affixes, _, _ ) ->
                     "WolcenDB: magic affixes and modifiers"
 
-                ( Route.Gems, _ ) ->
+                ( Route.Gems, _, _ ) ->
                     "WolcenDB: gems"
 
-                ( Route.Passives, _ ) ->
+                ( Route.Passives, _, _ ) ->
                     "WolcenDB: passive skill tree nodes"
 
-                ( Route.Reagents, _ ) ->
+                ( Route.Reagents, _, _ ) ->
                     "WolcenDB: crafting reagents"
 
-                ( Route.City _, _ ) ->
+                ( Route.City _, _, _ ) ->
                     "WolcenDB: endgame city rewards"
 
-                ( Route.Ailments, _ ) ->
+                ( Route.Ailments, _, _ ) ->
                     "WolcenDB: ailments"
 
-                ( Route.Source _ _, _ ) ->
+                ( Route.Source _ _, _, _ ) ->
                     "WolcenDB: view xml source file"
 
-                ( Route.Offline _ _, _ ) ->
+                ( Route.Offline _ _, _, _ ) ->
                     "WolcenDB: view offline save file code (you dirty cheater, you)"
 
-                ( Route.Search _, _ ) ->
+                ( Route.Search _, _, _ ) ->
                     "WolcenDB: search"
 
-                ( Route.Table _, _ ) ->
+                ( Route.Table _, _, _ ) ->
                     "WolcenDB: raw tabular data"
 
-                ( Route.BuildRevisions, _ ) ->
+                ( Route.BuildRevisions, _, _ ) ->
                     "WolcenDB: build revisions"
 
-                ( Route.Langs, _ ) ->
+                ( Route.Langs, _, _ ) ->
                     "WolcenDB: languages"
 
-                ( Route.Changelog, _ ) ->
+                ( Route.Changelog, _, _ ) ->
                     "WolcenDB: changelog"
 
-                ( Route.Privacy, _ ) ->
+                ( Route.Privacy, _, _ ) ->
                     "WolcenDB: privacy"
 
 
@@ -458,8 +467,8 @@ viewBody : { ssr : Bool } -> Model -> List (Html Msg)
 viewBody { ssr } model =
     View.Loading.view { navbar = True }
         model
-        model.datamine
-        (\dm ->
+        (RemoteData.map2 Tuple.pair model.lang model.datamine)
+        (\( lang, dm ) ->
             let
                 content =
                     case model.route of
@@ -476,46 +485,46 @@ viewBody { ssr } model =
                                     Page.Home.view dm
 
                                 Route.NormalItems tier tags ->
-                                    Page.NormalItems.view dm tier tags
+                                    Page.NormalItems.view lang dm tier tags
 
                                 Route.NormalItem name ->
-                                    Page.NormalItem.view dm model name
+                                    Page.NormalItem.view lang dm model name
                                         |> Maybe.map (List.map (H.map NormalItemMsg))
                                         |> Maybe.withDefault viewNotFound
 
                                 Route.UniqueItems tags ->
-                                    Page.UniqueItems.view dm tags
+                                    Page.UniqueItems.view lang dm tags
 
                                 Route.UniqueItem name ->
-                                    Page.UniqueItem.view dm name
+                                    Page.UniqueItem.view lang dm name
                                         |> Maybe.withDefault viewNotFound
 
                                 Route.Skills ->
-                                    Page.Skills.view dm
+                                    Page.Skills.view lang dm
 
                                 Route.Skill s ->
-                                    Page.Skill.view dm s
+                                    Page.Skill.view lang dm s
                                         |> Maybe.withDefault viewNotFound
 
                                 Route.SkillVariant v ->
-                                    Page.SkillVariant.view dm v
+                                    Page.SkillVariant.view lang dm v
                                         |> Maybe.withDefault viewNotFound
 
                                 Route.Affixes ->
-                                    Page.Affixes.view dm model
+                                    Page.Affixes.view lang dm model
                                         |> List.map (H.map PageAffixesMsg)
 
                                 Route.Gems ->
-                                    Page.Gems.view dm
+                                    Page.Gems.view lang dm
 
                                 Route.Passives ->
-                                    Page.Passives.view dm
+                                    Page.Passives.view lang dm
 
                                 Route.Reagents ->
-                                    Page.Reagents.view dm
+                                    Page.Reagents.view lang dm
 
                                 Route.City name ->
-                                    Page.City.view dm model name
+                                    Page.City.view lang dm model name
                                         |> Maybe.withDefault viewNotFound
                                         |> List.map (H.map CityMsg)
 
@@ -524,19 +533,19 @@ viewBody { ssr } model =
                                         |> List.map (H.map AilmentsMsg)
 
                                 Route.Source type_ id ->
-                                    Page.Source.view dm type_ id
+                                    Page.Source.view lang dm type_ id
                                         |> Maybe.withDefault viewNotFound
 
                                 Route.Offline type_ id ->
-                                    Page.Offline.view dm type_ id
+                                    Page.Offline.view lang dm type_ id
                                         |> Maybe.withDefault viewNotFound
 
                                 Route.Search query ->
-                                    Page.Search.view model
+                                    Page.Search.view lang dm model
                                         |> List.map (H.map SearchMsg)
 
                                 Route.Table t ->
-                                    Page.Table.view dm t
+                                    Page.Table.view lang dm t
                                         |> Maybe.withDefault viewNotFound
 
                                 Route.BuildRevisions ->

@@ -8,6 +8,7 @@ import Html as H exposing (..)
 import Html.Attributes as A exposing (..)
 import Html.Events as E exposing (..)
 import Json.Encode
+import Lang exposing (Lang)
 import Maybe.Extra
 import Page.SkillVariant exposing (viewSkillEffects)
 import Route exposing (Route)
@@ -15,15 +16,15 @@ import Util
 import View.Desc
 
 
-viewTitle : Datamine -> String -> String
-viewTitle dm name =
+viewTitle : Lang -> Datamine -> String -> String
+viewTitle lang dm name =
     Dict.get (String.toLower name) dm.skillsByUid
-        |> Maybe.andThen (Skill.label dm)
+        |> Maybe.andThen (Skill.label lang)
         |> Maybe.withDefault ""
 
 
-view : Datamine -> String -> Maybe (List (Html msg))
-view dm uid =
+view : Lang -> Datamine -> String -> Maybe (List (Html msg))
+view lang dm uid =
     Dict.get (String.toLower uid) dm.skillsByUid
         |> Maybe.map
             (\skill ->
@@ -46,7 +47,7 @@ view dm uid =
 
                     label : String
                     label =
-                        Skill.label dm skill |> Maybe.withDefault "???"
+                        Skill.label lang skill |> Maybe.withDefault "???"
                 in
                 [ ol [ class "breadcrumb" ]
                     [ a [ class "breadcrumb-item active", Route.href Route.Home ] [ text "Home" ]
@@ -58,8 +59,8 @@ view dm uid =
                     , div [ class "card-body" ]
                         [ div [ class "media" ]
                             [ div [ class "media-body" ]
-                                [ Skill.desc dm skill |> View.Desc.mformat |> Maybe.withDefault [ text "???" ] |> p []
-                                , Skill.lore dm skill |> View.Desc.mformat |> Maybe.withDefault [] |> p []
+                                [ Skill.desc lang skill |> View.Desc.mformat |> Maybe.withDefault [ text "???" ] |> p []
+                                , Skill.lore lang skill |> View.Desc.mformat |> Maybe.withDefault [] |> p []
                                 , div [] (viewSkillEffects <| Skill.effects skill)
                                 ]
                             , div []
@@ -86,13 +87,13 @@ view dm uid =
                                                 [ td [] [ text <| String.fromInt <| i + 1 ]
                                                 , td [] [ img [ class "skill-variant", src <| Skill.img v ] [] ]
                                                 , td []
-                                                    [ a [ title v.uiName, Route.href <| Route.SkillVariant v.uid ] [ Skill.label dm v |> Maybe.withDefault "???" |> text ]
+                                                    [ a [ title v.uiName, Route.href <| Route.SkillVariant v.uid ] [ Skill.label lang v |> Maybe.withDefault "???" |> text ]
                                                     ]
                                                 , td [] [ text <| String.fromInt va.level ]
                                                 , td [] [ text <| String.fromInt va.cost ]
                                                 , td []
                                                     [ div [ title <| v.uiName ++ "_desc" ]
-                                                        (Skill.desc dm v |> View.Desc.mformat |> Maybe.withDefault [ text "???" ])
+                                                        (Skill.desc lang v |> View.Desc.mformat |> Maybe.withDefault [ text "???" ])
                                                     , div [ class "card" ] (viewSkillEffects <| Skill.effects v)
 
                                                     -- , div [ title <| Maybe.withDefault "" v.lore ]
@@ -117,7 +118,7 @@ view dm uid =
                                         (\mod ->
                                             tr []
                                                 [ td [] [ text <| String.fromInt mod.level ]
-                                                , td [ title mod.uiDesc ] [ Skill.modDesc dm mod |> Maybe.withDefault "???" |> text ]
+                                                , td [ title mod.uiDesc ] [ Skill.modDesc lang mod |> Maybe.withDefault "???" |> text ]
                                                 , td [] [ text <| String.fromInt mod.xp ]
                                                 ]
                                         )

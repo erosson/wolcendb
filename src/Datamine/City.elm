@@ -23,12 +23,12 @@ module Datamine.City exposing
     )
 
 import Array exposing (Array)
-import Datamine.Lang as Lang
 import Datamine.Source as Source exposing (Source)
 import Datamine.Util as Util
 import Dict exposing (Dict)
 import Json.Decode as D
 import Json.Decode.Pipeline as P
+import Lang exposing (Lang)
 import Regex exposing (Regex)
 import Result.Extra
 
@@ -113,22 +113,21 @@ type alias Level =
     }
 
 
-label : Lang.Datamine d -> { s | uiName : String } -> Maybe String
-label dm s =
-    Lang.get dm s.uiName
+label : Lang -> { s | uiName : String } -> Maybe String
+label lang s =
+    Lang.get lang s.uiName
 
 
-lore : Lang.Datamine d -> { s | uiLore : String } -> Maybe String
-lore dm s =
-    Lang.get dm s.uiLore
+lore : Lang -> { s | uiLore : String } -> Maybe String
+lore lang s =
+    Lang.get lang s.uiLore
 
 
 type alias Datamine d =
-    Lang.Datamine
-        { d
-            | cityProjectsByName : Dict String Project
-            , cityRewardsByName : Dict String Reward
-        }
+    { d
+        | cityProjectsByName : Dict String Project
+        , cityRewardsByName : Dict String Reward
+    }
 
 
 projects : Datamine d -> Building -> List Project
@@ -161,9 +160,9 @@ projectRewards dm =
 Awkward string processing, but this is the part most folks pay attention to
 
 -}
-projectOutcomes : Datamine d -> Project -> Maybe String
-projectOutcomes dm proj =
-    lore dm proj
+projectOutcomes : Lang -> Project -> Maybe String
+projectOutcomes lang proj =
+    lore lang proj
         |> Maybe.andThen
             (\lore_ ->
                 case String.split "Outcomes:" lore_ of

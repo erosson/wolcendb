@@ -6,14 +6,15 @@ import Dict exposing (Dict)
 import Html as H exposing (..)
 import Html.Attributes as A exposing (..)
 import Html.Events as E exposing (..)
+import Lang exposing (Lang)
 import List.Extra
 import Maybe.Extra
 import Route exposing (Route)
 import Set exposing (Set)
 
 
-view : Datamine -> Maybe Int -> Maybe String -> List (Html msg)
-view dm mtier tagStr =
+view : Lang -> Datamine -> Maybe Int -> Maybe String -> List (Html msg)
+view lang dm mtier tagStr =
     let
         tagList =
             tagStr |> Maybe.withDefault "" |> String.toLower |> String.split ","
@@ -26,21 +27,20 @@ view dm mtier tagStr =
 
         allTiers =
             not <| Set.member tier_ tierTags
+
+        loot =
+            dm.loot
+                |> List.filter
+                    (NormalItem.keywords
+                        >> List.map String.toLower
+                        >> Set.fromList
+                        >> (\kw ->
+                                (Set.diff tagSet kw |> Set.isEmpty)
+                                    && (allTiers || Set.member tier_ kw)
+                           )
+                    )
     in
-    viewMain dm
-        mtier
-        tagList
-        (dm.loot
-            |> List.filter
-                (NormalItem.keywords
-                    >> List.map String.toLower
-                    >> Set.fromList
-                    >> (\kw ->
-                            (Set.diff tagSet kw |> Set.isEmpty)
-                                && (allTiers || Set.member tier_ kw)
-                       )
-                )
-        )
+    viewMain lang dm mtier tagList loot
 
 
 tier : Maybe Int -> Int
@@ -68,8 +68,8 @@ tierTags =
     tiers |> List.map tierTag |> Set.fromList
 
 
-viewMain : Datamine -> Maybe Int -> List String -> List NormalItem -> List (Html msg)
-viewMain dm mtier keywords items =
+viewMain : Lang -> Datamine -> Maybe Int -> List String -> List NormalItem -> List (Html msg)
+viewMain lang dm mtier keywords items =
     [ ol [ class "breadcrumb" ]
         [ a [ class "breadcrumb-item active", Route.href Route.Home ] [ text "Home" ]
         , a [ class "breadcrumb-item active", Route.href <| Route.NormalItems mtier <| Just <| String.join "," keywords ] [ text "Loot" ]
@@ -113,10 +113,10 @@ viewMain dm mtier keywords items =
                                     ]
                                 ]
                             , div [ class "col-sm-10" ]
-                                [ a [ Route.href <| Route.NormalItem <| NormalItem.name nitem ] [ NormalItem.label dm nitem |> Maybe.withDefault "???" |> text ]
+                                [ a [ Route.href <| Route.NormalItem <| NormalItem.name nitem ] [ NormalItem.label lang nitem |> Maybe.withDefault "???" |> text ]
                                 , nitem |> NormalItem.levelPrereq |> Maybe.Extra.unwrap (p [] []) (\lvl -> p [] [ text <| "Level: " ++ String.fromInt lvl ])
                                 , nitem |> NormalItem.baseEffects dm |> List.map (\s -> li [ class "list-group-item" ] [ text s ]) |> ul [ class "list-group affixes" ]
-                                , nitem |> NormalItem.implicitEffects dm |> List.map (\s -> li [ class "list-group-item" ] [ text s ]) |> ul [ class "list-group affixes" ]
+                                , nitem |> NormalItem.implicitEffects lang dm |> List.map (\s -> li [ class "list-group-item" ] [ text s ]) |> ul [ class "list-group affixes" ]
                                 , small [ class "text-muted" ] [ text "Keywords: ", text <| String.join ", " <| NormalItem.keywords nitem ]
                                 ]
                             ]

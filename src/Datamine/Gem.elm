@@ -1,11 +1,11 @@
 module Datamine.Gem exposing (Gem, Socket(..), affixes, decoder, effects, img, label)
 
 import Datamine.Affix as Affix exposing (NonmagicAffix)
-import Datamine.Lang as Lang
 import Datamine.Source as Source exposing (Source)
 import Datamine.Util as Util
 import Json.Decode as D
 import Json.Decode.Pipeline as P
+import Lang exposing (Lang)
 import Result.Extra
 
 
@@ -28,9 +28,9 @@ type Socket
     | Support Int
 
 
-label : Lang.Datamine d -> Gem -> Maybe String
-label dm s =
-    Lang.get dm s.uiName
+label : Lang -> Gem -> Maybe String
+label lang =
+    .uiName >> Lang.get lang
 
 
 img : Gem -> String
@@ -83,14 +83,14 @@ affixes dm =
             )
 
 
-effects : Affix.Datamine d -> Gem -> List String
-effects dm =
+effects : Lang -> Affix.Datamine d -> Gem -> List String
+effects lang dm =
     affixes dm
         >> List.map
             (\( socket, affs ) ->
                 affs
                     |> List.concatMap .effects
-                    |> List.filterMap (Affix.formatEffect dm)
+                    |> List.filterMap (Affix.formatEffect lang)
                     |> List.map ((++) (formatSocket socket))
             )
         >> List.concat

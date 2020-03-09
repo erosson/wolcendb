@@ -13,11 +13,11 @@ module Datamine.Passive exposing
     )
 
 import Datamine.Affix as Affix
-import Datamine.Lang as Lang
 import Datamine.Source as Source exposing (Source)
 import Datamine.Util as Util
 import Json.Decode as D
 import Json.Decode.Pipeline as P
+import Lang exposing (Lang)
 import Result.Extra
 
 
@@ -55,24 +55,24 @@ type alias PassiveTreeEntry =
     }
 
 
-label : Lang.Datamine d -> { s | uiName : String } -> Maybe String
-label dm s =
-    Lang.get dm s.uiName
+label : Lang -> { s | uiName : String } -> Maybe String
+label lang s =
+    Lang.get lang s.uiName
 
 
-desc : Lang.Datamine d -> Passive -> Maybe String
-desc dm s =
-    Lang.mget dm s.gameplayDesc
+desc : Lang -> Passive -> Maybe String
+desc lang s =
+    Lang.mget lang s.gameplayDesc
 
 
-lore : Lang.Datamine d -> Passive -> Maybe String
-lore dm s =
-    Lang.mget dm s.hudLoreDesc
+lore : Lang -> Passive -> Maybe String
+lore lang s =
+    Lang.mget lang s.hudLoreDesc
 
 
-nodeTypeLabel : Lang.Datamine d -> PassiveTreeEntry -> PassiveTree -> String
-nodeTypeLabel dm entry tree =
-    (label dm tree |> Maybe.withDefault "Unknown")
+nodeTypeLabel : Lang -> PassiveTreeEntry -> PassiveTree -> String
+nodeTypeLabel lang entry tree =
+    (label lang tree |> Maybe.withDefault "Unknown")
         ++ (case entry.rarity of
                 2 ->
                     " Notable"
@@ -85,14 +85,14 @@ nodeTypeLabel dm entry tree =
            )
 
 
-effects : Affix.Datamine d -> Passive -> List String
-effects dm =
-    .effects >> List.filterMap (formatEffect dm)
+effects : Lang -> Passive -> List String
+effects lang =
+    .effects >> List.filterMap (formatEffect lang)
 
 
-formatEffect : Lang.Datamine d -> PassiveEffect -> Maybe String
-formatEffect dm effect =
-    Lang.mget dm effect.hudDesc
+formatEffect : Lang -> PassiveEffect -> Maybe String
+formatEffect lang effect =
+    Lang.mget lang effect.hudDesc
         |> Maybe.map
             (\template ->
                 effect.semantics

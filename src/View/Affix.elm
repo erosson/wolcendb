@@ -26,65 +26,66 @@ import Dict.Extra
 import Html as H exposing (..)
 import Html.Attributes as A exposing (..)
 import Html.Events as E exposing (..)
+import Lang exposing (Lang)
 import List.Extra
 import Route exposing (Route)
 import Set exposing (Set)
 import Util
 
 
-viewNonmagicIds : Datamine -> List String -> List (Html msg)
-viewNonmagicIds dm =
-    Affix.getNonmagicIds dm >> viewAffixes dm
+viewNonmagicIds : Lang -> Datamine -> List String -> List (Html msg)
+viewNonmagicIds lang dm =
+    Affix.getNonmagicIds dm >> viewAffixes lang
 
 
-viewMagicIds : Datamine -> List String -> List (Html msg)
-viewMagicIds dm =
-    Affix.getMagicIds dm >> viewAffixes dm
+viewMagicIds : Lang -> Datamine -> List String -> List (Html msg)
+viewMagicIds lang dm =
+    Affix.getMagicIds dm >> viewAffixes lang
 
 
-viewAffixes : Datamine -> List (Affix a) -> List (Html msg)
-viewAffixes dm =
-    List.concatMap .effects >> List.map (viewEffect dm >> li [ class "list-group-item" ])
+viewAffixes : Lang -> List (Affix a) -> List (Html msg)
+viewAffixes lang =
+    List.concatMap .effects >> List.map (viewEffect lang >> li [ class "list-group-item" ])
 
 
-viewNonmagicId : Datamine -> String -> List (Html msg)
-viewNonmagicId dm a =
-    viewNonmagicIds dm [ a ]
+viewNonmagicId : Lang -> Datamine -> String -> List (Html msg)
+viewNonmagicId lang dm a =
+    viewNonmagicIds lang dm [ a ]
 
 
-viewMagicId : Datamine -> String -> List (Html msg)
-viewMagicId dm a =
-    viewMagicIds dm [ a ]
+viewMagicId : Lang -> Datamine -> String -> List (Html msg)
+viewMagicId lang dm a =
+    viewMagicIds lang dm [ a ]
 
 
-viewAffix : Datamine -> Affix a -> List (Html msg)
-viewAffix dm a =
-    viewAffixes dm [ a ]
+viewAffix : Lang -> Affix a -> List (Html msg)
+viewAffix lang a =
+    viewAffixes lang [ a ]
 
 
-viewEffect : Datamine -> MagicEffect -> List (Html msg)
-viewEffect dm effect =
+viewEffect : Lang -> MagicEffect -> List (Html msg)
+viewEffect lang effect =
     [ span [ title <| "@ui_eim_" ++ effect.effectId ++ "; " ++ (effect.stats |> List.map Tuple.first |> String.join ", ") ]
-        [ text <| Maybe.withDefault "???" <| Affix.formatEffect dm effect
+        [ text <| Maybe.withDefault "???" <| Affix.formatEffect lang effect
         ]
     ]
 
 
-viewGemFamilies : Datamine -> Affix a -> List (Html msg)
-viewGemFamilies dm affix =
-    viewGemFamiliesList dm [ affix ]
+viewGemFamilies : Lang -> Datamine -> Affix a -> List (Html msg)
+viewGemFamilies lang dm affix =
+    viewGemFamiliesList lang dm [ affix ]
 
 
 {-| Show gem families that all these affixes have in common
 -}
-viewGemFamiliesList : Datamine -> List (Affix a) -> List (Html msg)
-viewGemFamiliesList dm affixes =
+viewGemFamiliesList : Lang -> Datamine -> List (Affix a) -> List (Html msg)
+viewGemFamiliesList lang dm affixes =
     GemFamily.fromAffixes dm affixes
         |> List.map
             (\fam ->
                 img
                     [ class "gem-icon"
-                    , title <| GemFamily.label dm fam ++ " (" ++ fam.gemFamilyId ++ ") in a socket makes this affix more likely to appear with crafting reagents"
+                    , title <| GemFamily.label lang dm fam ++ " (" ++ fam.gemFamilyId ++ ") in a socket makes this affix more likely to appear with crafting reagents"
                     , src <| GemFamily.img dm fam
                     ]
                     []
@@ -106,8 +107,8 @@ update msg model =
             { model | expandedAffixClasses = model.expandedAffixClasses |> Util.toggleSet class }
 
 
-viewItem : Datamine -> Set String -> List MagicAffix -> List (Html ItemMsg)
-viewItem dm expandeds affixes =
+viewItem : Lang -> Datamine -> Set String -> List MagicAffix -> List (Html ItemMsg)
+viewItem lang dm expandeds affixes =
     let
         -- ( craftables, naturals ) =
         ( craftables, affixes1 ) =
@@ -132,16 +133,16 @@ viewItem dm expandeds affixes =
     --    , a [ href "https://gitlab.com/erosson/wolcendb/issues" ] [ text "Please file an issue if these are wrong!" ]
     --    ]
     [ div [ class "row" ]
-        [ div [ class "col-sm" ] [ viewItemAffixes "Magic prefixes [click to expand]" dm expandeds naturalPre ]
-        , div [ class "col-sm" ] [ viewItemAffixes "Magic suffixes" dm expandeds naturalSuf ]
+        [ div [ class "col-sm" ] [ viewItemAffixes "Magic prefixes [click to expand]" lang dm expandeds naturalPre ]
+        , div [ class "col-sm" ] [ viewItemAffixes "Magic suffixes" lang dm expandeds naturalSuf ]
         ]
     , div [ class "row" ]
-        [ div [ class "col-sm" ] [ viewItemAffixes "Sarisel prefixes" dm expandeds sariselPre ]
-        , div [ class "col-sm" ] [ viewItemAffixes "Sarisel suffixes" dm expandeds sariselSuf ]
+        [ div [ class "col-sm" ] [ viewItemAffixes "Sarisel prefixes" lang dm expandeds sariselPre ]
+        , div [ class "col-sm" ] [ viewItemAffixes "Sarisel suffixes" lang dm expandeds sariselSuf ]
         ]
     , div [ class "row" ]
-        [ div [ class "col-sm" ] [ viewItemAffixes "Craft-only prefixes" dm expandeds craftablePre ]
-        , div [ class "col-sm" ] [ viewItemAffixes "Craft-only suffixes" dm expandeds craftableSuf ]
+        [ div [ class "col-sm" ] [ viewItemAffixes "Craft-only prefixes" lang dm expandeds craftablePre ]
+        , div [ class "col-sm" ] [ viewItemAffixes "Craft-only suffixes" lang dm expandeds craftableSuf ]
         ]
     ]
 
@@ -165,8 +166,8 @@ affixesByClass affixes =
     classOrder |> List.filterMap (\c -> Dict.get c byClass |> Maybe.map (Tuple.pair c))
 
 
-viewItemAffixes : String -> Datamine -> Set String -> List MagicAffix -> Html ItemMsg
-viewItemAffixes title dm expandeds affixes =
+viewItemAffixes : String -> Lang -> Datamine -> Set String -> List MagicAffix -> Html ItemMsg
+viewItemAffixes title lang dm expandeds affixes =
     if affixes == [] then
         div [] []
 
@@ -181,18 +182,18 @@ viewItemAffixes title dm expandeds affixes =
         div [ class "card" ]
             [ div [ class "card-header" ] [ text title ]
             , ul [ class "list-group list-group-flush" ]
-                (classes |> List.map (viewItemAffixClass dm totalWeight expandeds >> li [ class "list-group-item py-1" ]))
+                (classes |> List.map (viewItemAffixClass lang dm totalWeight expandeds >> li [ class "list-group-item py-1" ]))
             ]
 
 
-viewItemAffixClass : Datamine -> Int -> Set String -> ( String, List MagicAffix ) -> List (Html ItemMsg)
-viewItemAffixClass dm totalWeight expandeds ( name, affixes ) =
+viewItemAffixClass : Lang -> Datamine -> Int -> Set String -> ( String, List MagicAffix ) -> List (Html ItemMsg)
+viewItemAffixClass lang dm totalWeight expandeds ( name, affixes ) =
     case affixes of
         [] ->
             []
 
         [ affix ] ->
-            viewItemAffixRow dm totalWeight affix
+            viewItemAffixRow lang dm totalWeight affix
 
         head :: _ ->
             let
@@ -201,10 +202,10 @@ viewItemAffixClass dm totalWeight expandeds ( name, affixes ) =
             in
             div []
                 [ span [ class "badge badge-outline-light float-right" ] [ viewWeights totalWeight affixes ]
-                , span [ class "badge badge-outline-light float-right" ] (viewGemFamiliesList dm affixes)
+                , span [ class "badge badge-outline-light float-right" ] (viewGemFamiliesList lang dm affixes)
                 , affixes
                     |> List.concatMap .effects
-                    |> viewItemAffixClassSummary dm totalWeight expanded
+                    |> viewItemAffixClassSummary lang totalWeight expanded
                     |> div
                         [ class "expand-affix-class"
                         , title <| "Affix class: " ++ name ++ " \nNo more than one affix from the same class may appear on an item"
@@ -213,26 +214,26 @@ viewItemAffixClass dm totalWeight expandeds ( name, affixes ) =
                 , div [ style "clear" "right" ] []
                 ]
                 :: (if expanded then
-                        [ ul [ class "list-group" ] (affixes |> List.map (viewItemAffixRow dm totalWeight >> li [ class "list-group-item py-1" ])) ]
+                        [ ul [ class "list-group" ] (affixes |> List.map (viewItemAffixRow lang dm totalWeight >> li [ class "list-group-item py-1" ])) ]
 
                     else
                         []
                    )
 
 
-viewItemAffixRow : Datamine -> Int -> MagicAffix -> List (Html msg)
-viewItemAffixRow dm totalWeight affix =
+viewItemAffixRow : Lang -> Datamine -> Int -> MagicAffix -> List (Html msg)
+viewItemAffixRow lang dm totalWeight affix =
     let
         ilvl =
             String.fromInt affix.drop.itemLevel.min
                 ++ "-"
                 ++ String.fromInt affix.drop.itemLevel.max
     in
-    (affix.effects |> List.concatMap (viewEffect dm))
+    (affix.effects |> List.concatMap (viewEffect lang))
         ++ (if affix.drop.craftOnly then
                 [ small [ class "badge badge-outline-light float-right" ] [ text "[", a [ Route.href <| Route.Source "magic-affix" affix.affixId ] [ text "s" ], text "]" ]
                 , span [ class "badge badge-outline-light float-right" ] [ viewWeight totalWeight affix ]
-                , span [ class "badge badge-outline-light float-right" ] (viewGemFamilies dm affix)
+                , span [ class "badge badge-outline-light float-right" ] (viewGemFamilies lang dm affix)
                 ]
 
             else
@@ -243,7 +244,7 @@ viewItemAffixRow dm totalWeight affix =
                     ]
                     [ text <| "ilvl" ++ ilvl ]
                 , span [ class "badge badge-outline-light float-right" ] [ viewWeight totalWeight affix ]
-                , span [ class "badge badge-outline-light float-right" ] (viewGemFamilies dm affix)
+                , span [ class "badge badge-outline-light float-right" ] (viewGemFamilies lang dm affix)
                 ]
            )
 
@@ -299,10 +300,8 @@ summarizeEffects effects =
         |> List.filterMap (\e -> Dict.get e byId)
 
 
-viewItemAffixClassSummary : Datamine -> Int -> Bool -> List MagicEffect -> List (Html msg)
-viewItemAffixClassSummary dm totalWeight expanded effects =
-    -- List.Extra.uniqueBy .effectId
-    -- >> List.filterMap (\effect -> "@ui_eim_" ++ effect.effectId |> Datamine.lang dm)
+viewItemAffixClassSummary : Lang -> Int -> Bool -> List MagicEffect -> List (Html msg)
+viewItemAffixClassSummary lang totalWeight expanded effects =
     [ span
         [ class "fas collapse-caret"
         , classList
@@ -313,7 +312,7 @@ viewItemAffixClassSummary dm totalWeight expanded effects =
         []
     , effects
         |> summarizeEffects
-        |> List.filterMap (Affix.formatEffect dm)
+        |> List.filterMap (Affix.formatEffect lang)
         |> List.map (\s -> div [] [ text s ])
         |> div []
     ]

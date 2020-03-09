@@ -14,14 +14,15 @@ import Html as H exposing (..)
 import Html.Attributes as A exposing (..)
 import Json.Decode as D
 import Json.Encode as E
+import Lang exposing (Lang)
 import Maybe.Extra
 import Route exposing (Route)
 import Url exposing (Url)
 import View.Desc
 
 
-view : Datamine -> String -> Maybe (List (Html msg))
-view dm tableId =
+view : Lang -> Datamine -> String -> Maybe (List (Html msg))
+view lang dm tableId =
     case tableId |> String.toLower |> String.split "." of
         dataId :: viewIds ->
             let
@@ -35,7 +36,7 @@ view dm tableId =
                         :: viewer (Route.Table tableId) data
                 )
                 (viewFromString viewId)
-                (dataFromString dm dataId)
+                (dataFromString lang dm dataId)
 
         _ ->
             Nothing
@@ -135,7 +136,7 @@ maybeCell =
 -- DATAS
 
 
-datas : List ( String, Datamine -> Data )
+datas : List ( String, Lang -> Datamine -> Data )
 datas =
     [ ( "normal-loot", dataNormalItem )
     , ( "unique-loot", dataUniqueItem )
@@ -143,12 +144,12 @@ datas =
     , ( "reagent", dataReagent )
     , ( "gem-family", dataGemFamily )
     , ( "city-project", dataCityProject )
-    , ( "city-project-scaling", dataCityProjectScaling )
+    , ( "city-project-scaling", always dataCityProjectScaling )
     , ( "city-reward", dataCityReward )
     , ( "city-building", dataCityBuilding )
-    , ( "city-category", dataCityCategory )
-    , ( "city-level", dataCityLevel )
-    , ( "skill-effect-popularity", dataSkillEffectPopularity )
+    , ( "city-category", always dataCityCategory )
+    , ( "city-level", always dataCityLevel )
+    , ( "skill-effect-popularity", always dataSkillEffectPopularity )
     ]
 
 
@@ -156,14 +157,14 @@ dataByKey =
     Dict.fromList datas
 
 
-dataFromString : Datamine -> String -> Maybe Data
-dataFromString dm s =
+dataFromString : Lang -> Datamine -> String -> Maybe Data
+dataFromString lang dm s =
     Dict.get (String.toLower s) dataByKey
-        |> Maybe.map (\fn -> fn dm)
+        |> Maybe.map (\fn -> fn lang dm)
 
 
-dataNormalItem : Datamine -> Data
-dataNormalItem dm =
+dataNormalItem : Lang -> Datamine -> Data
+dataNormalItem lang dm =
     { cols =
         [ "name"
         , "label"
@@ -175,16 +176,16 @@ dataNormalItem dm =
             |> List.map
                 (\nitem ->
                     [ StringCell <| NormalItem.name nitem
-                    , maybeCell StringCell <| NormalItem.label dm nitem
+                    , maybeCell StringCell <| NormalItem.label lang nitem
                     , LinesCell <| NormalItem.baseEffects dm nitem
-                    , LinesCell <| NormalItem.implicitEffects dm nitem
+                    , LinesCell <| NormalItem.implicitEffects lang dm nitem
                     ]
                 )
     }
 
 
-dataUniqueItem : Datamine -> Data
-dataUniqueItem dm =
+dataUniqueItem : Lang -> Datamine -> Data
+dataUniqueItem lang dm =
     { cols =
         [ "name"
         , "label"
@@ -198,18 +199,18 @@ dataUniqueItem dm =
             |> List.map
                 (\uitem ->
                     [ StringCell <| UniqueItem.name uitem
-                    , maybeCell StringCell <| UniqueItem.label dm uitem
-                    , maybeCell DescCell <| UniqueItem.lore dm uitem
+                    , maybeCell StringCell <| UniqueItem.label lang uitem
+                    , maybeCell DescCell <| UniqueItem.lore lang uitem
                     , LinesCell <| UniqueItem.baseEffects dm uitem
-                    , LinesCell <| UniqueItem.implicitEffects dm uitem
-                    , LinesCell <| UniqueItem.defaultEffects dm uitem
+                    , LinesCell <| UniqueItem.implicitEffects lang dm uitem
+                    , LinesCell <| UniqueItem.defaultEffects lang dm uitem
                     ]
                 )
     }
 
 
-dataPassive : Datamine -> Data
-dataPassive dm =
+dataPassive : Lang -> Datamine -> Data
+dataPassive lang dm =
     { cols =
         [ "name"
         , "uiName"
@@ -232,17 +233,17 @@ dataPassive dm =
                     , maybeCell StringCell passive.gameplayDesc
                     , IntCell entry.rarity
                     , StringCell entry.category
-                    , maybeCell StringCell <| Passive.label dm passive
-                    , maybeCell DescCell <| Passive.desc dm passive
-                    , maybeCell DescCell <| Passive.lore dm passive
-                    , LinesCell <| Passive.effects dm passive
+                    , maybeCell StringCell <| Passive.label lang passive
+                    , maybeCell DescCell <| Passive.desc lang passive
+                    , maybeCell DescCell <| Passive.lore lang passive
+                    , LinesCell <| Passive.effects lang passive
                     ]
                 )
     }
 
 
-dataReagent : Datamine -> Data
-dataReagent dm =
+dataReagent : Lang -> Datamine -> Data
+dataReagent lang dm =
     { cols =
         [ "name"
         , "uiName"
@@ -265,17 +266,17 @@ dataReagent dm =
                     , StringCell reagent.lore
                     , StringCell reagent.hudPicture
                     , StringCell reagent.reagentType
-                    , maybeCell StringCell <| Reagent.label dm reagent
-                    , maybeCell DescCell <| Reagent.desc dm reagent
-                    , maybeCell DescCell <| Reagent.lore dm reagent
+                    , maybeCell StringCell <| Reagent.label lang reagent
+                    , maybeCell DescCell <| Reagent.desc lang reagent
+                    , maybeCell DescCell <| Reagent.lore lang reagent
                     , ImgCell <| Reagent.img reagent
                     ]
                 )
     }
 
 
-dataGemFamily : Datamine -> Data
-dataGemFamily dm =
+dataGemFamily : Lang -> Datamine -> Data
+dataGemFamily lang dm =
     { cols =
         [ "gemFamilyId"
         , "relatedGems"
@@ -290,15 +291,15 @@ dataGemFamily dm =
                     [ StringCell fam.gemFamilyId
                     , LinesCell <| List.map .gemId fam.relatedGems
                     , LinesCell fam.craftRelatedAffixes
-                    , StringCell <| GemFamily.label dm fam
+                    , StringCell <| GemFamily.label lang dm fam
                     , ImgCell <| GemFamily.img dm fam
                     ]
                 )
     }
 
 
-dataCityProject : Datamine -> Data
-dataCityProject dm =
+dataCityProject : Lang -> Datamine -> Data
+dataCityProject lang dm =
     { cols =
         [ "name"
         , "source"
@@ -315,13 +316,13 @@ dataCityProject dm =
                     [ StringCell proj.name
                     , SourceCell "city-project" proj.name
                     , StringCell proj.uiName
-                    , maybeCell StringCell <| City.label dm proj
+                    , maybeCell StringCell <| City.label lang proj
                     , StringCell proj.uiLore
-                    , maybeCell DescCell <| City.lore dm proj
+                    , maybeCell DescCell <| City.lore lang proj
                     , LinesCell <| List.map (String.fromInt << .weight) proj.rewards
                     , LinesCell <| List.map .rewardName proj.rewards
-                    , LinesCell <| List.map (Maybe.withDefault "???" << City.label dm << .reward) <| City.projectRewards dm proj
-                    , maybeCell StringCell <| City.projectOutcomes dm proj
+                    , LinesCell <| List.map (Maybe.withDefault "???" << City.label lang << .reward) <| City.projectRewards dm proj
+                    , maybeCell StringCell <| City.projectOutcomes lang proj
                     ]
                 )
     }
@@ -344,8 +345,8 @@ dataCityProjectScaling dm =
     }
 
 
-dataCityReward : Datamine -> Data
-dataCityReward dm =
+dataCityReward : Lang -> Datamine -> Data
+dataCityReward lang dm =
     { cols =
         [ "name"
         , "uiTitle"
@@ -361,16 +362,16 @@ dataCityReward dm =
                     , SourceCell "city-reward" reward.name
                     , StringCell reward.uiName
                     , StringCell reward.uiLore
-                    , maybeCell DescCell <| City.label dm reward
-                    , maybeCell DescCell <| City.lore dm reward
+                    , maybeCell DescCell <| City.label lang reward
+                    , maybeCell DescCell <| City.lore lang reward
                     , LinesCell <| City.rewardToString reward
                     ]
                 )
     }
 
 
-dataCityBuilding : Datamine -> Data
-dataCityBuilding dm =
+dataCityBuilding : Lang -> Datamine -> Data
+dataCityBuilding lang dm =
     { cols =
         [ "name"
         , "uiTitle"
@@ -391,10 +392,10 @@ dataCityBuilding dm =
                     , StringCell building.uiLore
                     , LinesCell <| building.projects
                     , LinesCell <| List.map .projectName building.rolledProjects
-                    , maybeCell DescCell <| City.label dm building
-                    , maybeCell DescCell <| City.lore dm building
-                    , LinesCell <| List.map (Maybe.withDefault "???" << City.label dm) <| City.projects dm building
-                    , LinesCell <| List.map (Maybe.withDefault "???" << City.label dm << .project) <| City.rolledProjects dm building
+                    , maybeCell DescCell <| City.label lang building
+                    , maybeCell DescCell <| City.lore lang building
+                    , LinesCell <| List.map (Maybe.withDefault "???" << City.label lang) <| City.projects dm building
+                    , LinesCell <| List.map (Maybe.withDefault "???" << City.label lang << .project) <| City.rolledProjects dm building
                     ]
                 )
     }

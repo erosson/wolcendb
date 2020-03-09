@@ -2,9 +2,11 @@ module Search exposing
     ( Doc
     , Index
     , SearchResult
+    , SearchScore
     , createIndex
     , decodeIndex
     , search
+    , toResults
     )
 
 import Datamine exposing (Datamine)
@@ -17,6 +19,7 @@ import Datamine.UniqueItem as UniqueItem
 import Dict exposing (Dict)
 import ElmTextSearch exposing (Index)
 import Json.Decode as D
+import Lang exposing (Lang)
 import List.Extra
 import Route exposing (Route)
 import View.Affix
@@ -58,16 +61,16 @@ empty =
     ElmTextSearch.new config
 
 
-docs : Datamine -> List Doc
-docs dm =
+docs : Lang -> Datamine -> List Doc
+docs lang dm =
     [ dm.gems
         |> List.map
             (\gem ->
                 { id = "gem/" ++ gem.name
                 , localId = gem.name
-                , title = Gem.label dm gem |> Maybe.withDefault ""
+                , title = Gem.label lang gem |> Maybe.withDefault ""
                 , body = ""
-                , effects = Gem.effects dm gem
+                , effects = Gem.effects lang dm gem
                 , keywords = gem.keywords
                 , lore = ""
                 }
@@ -77,11 +80,11 @@ docs dm =
             (\skill ->
                 { id = "skill/" ++ skill.uid
                 , localId = skill.uid
-                , title = Skill.label dm skill |> Maybe.withDefault ""
-                , body = Skill.desc dm skill |> Maybe.withDefault ""
+                , title = Skill.label lang skill |> Maybe.withDefault ""
+                , body = Skill.desc lang skill |> Maybe.withDefault ""
                 , effects = []
                 , keywords = skill.keywords
-                , lore = Skill.lore dm skill |> Maybe.withDefault ""
+                , lore = Skill.lore lang skill |> Maybe.withDefault ""
                 }
             )
     , dm.skills
@@ -90,11 +93,11 @@ docs dm =
             (\var ->
                 { id = "skill-variant/" ++ var.uid
                 , localId = var.uid
-                , title = Skill.label dm var |> Maybe.withDefault ""
-                , body = Skill.desc dm var |> Maybe.withDefault ""
+                , title = Skill.label lang var |> Maybe.withDefault ""
+                , body = Skill.desc lang var |> Maybe.withDefault ""
                 , effects = []
                 , keywords = []
-                , lore = Skill.lore dm var |> Maybe.withDefault ""
+                , lore = Skill.lore lang var |> Maybe.withDefault ""
                 }
             )
     , dm.passiveTreeEntries
@@ -102,14 +105,14 @@ docs dm =
             (\( entry, passive, tree ) ->
                 { id = "passive/" ++ entry.name
                 , localId = entry.name
-                , title = Passive.label dm passive |> Maybe.withDefault ""
-                , body = Passive.desc dm passive |> Maybe.withDefault ""
-                , effects = Passive.effects dm passive
+                , title = Passive.label lang passive |> Maybe.withDefault ""
+                , body = Passive.desc lang passive |> Maybe.withDefault ""
+                , effects = Passive.effects lang passive
                 , keywords =
                     [ entry.category
-                    , Passive.nodeTypeLabel dm entry tree
+                    , Passive.nodeTypeLabel lang entry tree
                     ]
-                , lore = Passive.lore dm passive |> Maybe.withDefault ""
+                , lore = Passive.lore lang passive |> Maybe.withDefault ""
                 }
             )
     , dm.loot
@@ -117,30 +120,34 @@ docs dm =
             (\nitem ->
                 { id = "normal-loot/" ++ NormalItem.name nitem
                 , localId = NormalItem.name nitem
-                , title = NormalItem.label dm nitem |> Maybe.withDefault ""
+                , title = NormalItem.label lang nitem |> Maybe.withDefault ""
                 , body = ""
-                , effects = NormalItem.implicitEffects dm nitem
+                , effects = NormalItem.implicitEffects lang dm nitem
                 , keywords = NormalItem.keywords nitem
                 , lore = ""
                 }
             )
     , dm.uniqueLoot
-        |> List.filter (\uitem -> UniqueItem.label dm uitem /= Nothing)
+        |> List.filter (\uitem -> UniqueItem.label lang uitem /= Nothing)
         |> List.map
             (\uitem ->
                 { id = "unique-loot/" ++ UniqueItem.name uitem
                 , localId = UniqueItem.name uitem
-                , title = UniqueItem.label dm uitem |> Maybe.withDefault ""
+                , title = UniqueItem.label lang uitem |> Maybe.withDefault ""
                 , body = ""
                 , effects =
-                    UniqueItem.implicitEffects dm uitem
-                        ++ UniqueItem.defaultEffects dm uitem
+                    UniqueItem.implicitEffects lang dm uitem
+                        ++ UniqueItem.defaultEffects lang dm uitem
                 , keywords = UniqueItem.keywords uitem
-                , lore = UniqueItem.lore dm uitem |> Maybe.withDefault ""
+                , lore = UniqueItem.lore lang uitem |> Maybe.withDefault ""
                 }
             )
     ]
         |> List.concat
+
+
+type alias SearchScore =
+    ( String, Float )
 
 
 type alias SearchResult =
@@ -152,10 +159,15 @@ type alias SearchResult =
     }
 
 
+toResults : Lang -> Datamine -> List SearchScore -> List SearchResult
+toResults lang dm =
+    List.filterMap (toResult lang dm)
+
+
 {-| Search results are document ids. Instead of indexing/regenerating the whole document, convert the id to a result.
 -}
-toSearchResult : Datamine -> ( String, Float ) -> Maybe SearchResult
-toSearchResult dm ( docId, score ) =
+toResult : Lang -> Datamine -> SearchScore -> Maybe SearchResult
+toResult lang dm ( docId, score ) =
     let
         result =
             SearchResult docId score
@@ -167,7 +179,7 @@ toSearchResult dm ( docId, score ) =
                     (\gem ->
                         result [ "Gem" ]
                             Route.Gems
-                            (Gem.label dm gem |> Maybe.withDefault "???")
+                            (Gem.label lang gem |> Maybe.withDefault "???")
                     )
 
         [ "skill", id ] ->
@@ -176,7 +188,7 @@ toSearchResult dm ( docId, score ) =
                     (\skill ->
                         result [ "Skill" ]
                             (Route.Skill id)
-                            (Skill.label dm skill |> Maybe.withDefault "???")
+                            (Skill.label lang skill |> Maybe.withDefault "???")
                     )
 
         [ "skill-variant", id ] ->
@@ -185,10 +197,10 @@ toSearchResult dm ( docId, score ) =
                     (\( var, skill ) ->
                         result
                             [ "Skill Variant"
-                            , Skill.label dm skill |> Maybe.withDefault "???"
+                            , Skill.label lang skill |> Maybe.withDefault "???"
                             ]
                             (Route.SkillVariant var.uid)
-                            (Skill.label dm var |> Maybe.withDefault "???")
+                            (Skill.label lang var |> Maybe.withDefault "???")
                     )
 
         [ "passive", id ] ->
@@ -197,10 +209,10 @@ toSearchResult dm ( docId, score ) =
                     (\( entry, passive, tree ) ->
                         result
                             [ "Passive"
-                            , Passive.label dm tree |> Maybe.withDefault "???"
+                            , Passive.label lang tree |> Maybe.withDefault "???"
                             ]
                             Route.Passives
-                            (Passive.label dm passive |> Maybe.withDefault "???")
+                            (Passive.label lang passive |> Maybe.withDefault "???")
                     )
 
         [ "normal-loot", id ] ->
@@ -210,7 +222,7 @@ toSearchResult dm ( docId, score ) =
                         result
                             [ "Normal Loot" ]
                             (nitem |> NormalItem.name |> Route.NormalItem)
-                            (nitem |> NormalItem.label dm |> Maybe.withDefault "???")
+                            (nitem |> NormalItem.label lang |> Maybe.withDefault "???")
                     )
 
         [ "unique-loot", id ] ->
@@ -220,18 +232,18 @@ toSearchResult dm ( docId, score ) =
                         result
                             [ "Unique Loot" ]
                             (uitem |> UniqueItem.name |> Route.UniqueItem)
-                            (uitem |> UniqueItem.label dm |> Maybe.withDefault "???")
+                            (uitem |> UniqueItem.label lang |> Maybe.withDefault "???")
                     )
 
         _ ->
             Nothing
 
 
-createIndex : Datamine -> Result (List ( Int, String, String )) Index
-createIndex dm =
+createIndex : Lang -> Datamine -> Result (List ( Int, String, String )) Index
+createIndex lang dm =
     let
         docs_ =
-            docs dm
+            docs lang dm
     in
     case ElmTextSearch.addDocs docs_ empty of
         ( index, [] ) ->
@@ -252,10 +264,10 @@ decodeIndex =
         >> Result.mapError D.errorToString
 
 
-search : Datamine -> String -> Index -> Result String ( Index, List SearchResult )
+search : Datamine -> String -> Index -> Result String ( Index, List SearchScore )
 search dm q =
     if String.length q <= 2 then
         always <| Err "Search too short"
 
     else
-        ElmTextSearch.search q >> Result.map (Tuple.mapSecond (List.take 25 >> List.filterMap (toSearchResult dm)))
+        ElmTextSearch.search q >> Result.map (Tuple.mapSecond (List.take 25))

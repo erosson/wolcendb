@@ -8,11 +8,11 @@ module Datamine.Reagent exposing
     )
 
 import Datamine.Affix as Affix
-import Datamine.Lang as Lang
 import Datamine.Source as Source exposing (Source)
 import Datamine.Util as Util
 import Json.Decode as D
 import Json.Decode.Pipeline as P
+import Lang exposing (Lang)
 import Result.Extra
 
 
@@ -27,19 +27,19 @@ type alias Reagent =
     }
 
 
-label : Lang.Datamine d -> Reagent -> Maybe String
-label dm s =
-    Lang.get dm s.uiName
+label : Lang -> Reagent -> Maybe String
+label lang s =
+    Lang.get lang s.uiName
 
 
-desc : Lang.Datamine d -> Reagent -> Maybe String
-desc dm s =
-    Lang.get dm s.gameplayDesc
+desc : Lang -> Reagent -> Maybe String
+desc lang s =
+    Lang.get lang s.gameplayDesc
 
 
-lore : Lang.Datamine d -> Reagent -> Maybe String
-lore dm s =
-    Lang.get dm s.lore
+lore : Lang -> Reagent -> Maybe String
+lore lang s =
+    Lang.get lang s.lore
 
 
 img : Reagent -> String

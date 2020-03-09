@@ -1,4 +1,4 @@
-module Datamine.Lang exposing (Datamine, decoder, get, mget, secondLangDecoder)
+module Lang exposing (Lang, decoder, get, mget)
 
 import Datamine.Util as Util
 import Dict exposing (Dict)
@@ -7,35 +7,22 @@ import Json.Decode.Pipeline as P
 import Result.Extra
 
 
-type alias Datamine d =
-    { d | en : Dict String String }
+type Lang
+    = Lang (Dict String String)
 
 
-get : Datamine d -> String -> Maybe String
-get dm key =
-    Dict.get (String.toLower key) dm.en
+get : Lang -> String -> Maybe String
+get (Lang d) key =
+    Dict.get (String.toLower key) d
 
 
-mget : Datamine d -> Maybe String -> Maybe String
-mget dm =
-    Maybe.andThen (get dm)
+mget : Lang -> Maybe String -> Maybe String
+mget lang =
+    Maybe.andThen (get lang)
 
 
-decoder : D.Decoder (Dict String String)
+decoder : D.Decoder Lang
 decoder =
-    Util.filteredJsons (String.contains "localization/text_ui_")
-        |> D.map (List.map (Tuple.second >> D.decodeValue langDecoder))
-        |> D.map (Result.Extra.combine >> Result.mapError D.errorToString)
-        |> Util.resultDecoder
-        |> D.map
-            (List.concat
-                >> List.map (Tuple.mapFirst (\k -> "@" ++ String.toLower k))
-                >> Dict.fromList
-            )
-
-
-secondLangDecoder : D.Decoder (Dict String String)
-secondLangDecoder =
     Util.filteredJsons (String.contains "text_ui_")
         |> D.map (List.map (Tuple.second >> D.decodeValue langDecoder))
         |> D.map (Result.Extra.combine >> Result.mapError D.errorToString)
@@ -44,6 +31,7 @@ secondLangDecoder =
             (List.concat
                 >> List.map (Tuple.mapFirst (\k -> "@" ++ String.toLower k))
                 >> Dict.fromList
+                >> Lang
             )
 
 

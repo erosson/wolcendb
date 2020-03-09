@@ -8,6 +8,7 @@ import Dict exposing (Dict)
 import Html as H exposing (..)
 import Html.Attributes as A exposing (..)
 import Html.Events as E exposing (..)
+import Lang exposing (Lang)
 import Maybe.Extra
 import Route exposing (Route)
 import Set exposing (Set)
@@ -36,24 +37,24 @@ update msg dm model =
             View.AffixFilterForm.update msg_ dm model
 
 
-viewTitle : Datamine -> String -> String
-viewTitle dm name =
+viewTitle : Lang -> Datamine -> String -> String
+viewTitle lang dm name =
     Dict.get (String.toLower name) dm.lootByName
-        |> Maybe.andThen (NormalItem.label dm)
+        |> Maybe.andThen (NormalItem.label lang)
         |> Maybe.withDefault ""
 
 
-view : Datamine -> Model m -> String -> Maybe (List (Html Msg))
-view dm model name =
+view : Lang -> Datamine -> Model m -> String -> Maybe (List (Html Msg))
+view lang dm model name =
     Dict.get (String.toLower name) dm.lootByName
-        |> Maybe.map (viewMain dm model)
+        |> Maybe.map (viewMain lang dm model)
 
 
-viewMain : Datamine -> Model m -> NormalItem -> List (Html Msg)
-viewMain dm m nitem =
+viewMain : Lang -> Datamine -> Model m -> NormalItem -> List (Html Msg)
+viewMain lang dm m nitem =
     let
         label =
-            NormalItem.label dm nitem |> Maybe.withDefault "???" |> text
+            NormalItem.label lang nitem |> Maybe.withDefault "???" |> text
     in
     [ ol [ class "breadcrumb" ]
         [ a [ class "breadcrumb-item active", Route.href Route.Home ] [ text "Home" ]
@@ -69,7 +70,7 @@ viewMain dm m nitem =
                 ]
             , p [] [ text "Level: ", text <| Maybe.Extra.unwrap "-" String.fromInt <| NormalItem.levelPrereq nitem ]
             , ul [ class "list-group affixes" ] (nitem |> NormalItem.baseEffects dm |> List.map (\s -> li [ class "list-group-item" ] [ text s ]))
-            , ul [ class "list-group affixes" ] (NormalItem.implicitEffects dm nitem |> List.map (\s -> li [ class "list-group-item" ] [ text s ]))
+            , ul [ class "list-group affixes" ] (NormalItem.implicitEffects lang dm nitem |> List.map (\s -> li [ class "list-group-item" ] [ text s ]))
             , small [ class "text-muted" ] [ text "Keywords: ", text <| String.join ", " <| NormalItem.keywords nitem ]
             ]
         ]
@@ -77,7 +78,7 @@ viewMain dm m nitem =
     , View.AffixFilterForm.viewGemForm dm m |> H.map FormMsg
     , NormalItem.possibleAffixes dm nitem
         |> List.filter (View.AffixFilterForm.isVisible dm m)
-        |> View.Affix.viewItem dm m.expandedAffixClasses
+        |> View.Affix.viewItem lang dm m.expandedAffixClasses
         |> div []
         |> H.map ItemMsg
     ]

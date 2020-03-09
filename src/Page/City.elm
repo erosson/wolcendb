@@ -6,6 +6,7 @@ import Dict exposing (Dict)
 import Html as H exposing (..)
 import Html.Attributes as A exposing (..)
 import Html.Events as E exposing (..)
+import Lang exposing (Lang)
 import Maybe.Extra
 import Route exposing (Route)
 import Util
@@ -37,17 +38,17 @@ update msg model =
                         { model | cityPlayerLevel = clamp 0 90 n }
 
 
-view : Datamine -> Model m -> String -> Maybe (List (Html Msg))
-view dm model name =
+view : Lang -> Datamine -> Model m -> String -> Maybe (List (Html Msg))
+view lang dm model name =
     Dict.get name dm.cityBuildingsByName
-        |> Maybe.map (viewMain dm model)
+        |> Maybe.map (viewMain lang dm model)
 
 
-viewMain : Datamine -> Model m -> City.Building -> List (Html Msg)
-viewMain dm model building =
+viewMain : Lang -> Datamine -> Model m -> City.Building -> List (Html Msg)
+viewMain lang dm model building =
     let
         label =
-            City.label dm building |> Maybe.withDefault "???"
+            City.label lang building |> Maybe.withDefault "???"
     in
     [ ul [ class "breadcrumb" ]
         [ a [ class "breadcrumb-item active", Route.href Route.Home ] [ text "Home" ]
@@ -85,19 +86,19 @@ viewMain dm model building =
                             [ span [ class "float-right" ] [ text "[", a [ Route.href <| Route.Source "city-project" r.project.name ] [ text "Source" ], text "]" ]
                             , span [ style "clear" "right" ] []
                             , div [ title r.project.uiName, style "white-space" "nowrap" ]
-                                [ City.label dm r.project |> Maybe.withDefault "???" |> text
+                                [ City.label lang r.project |> Maybe.withDefault "???" |> text
                                 ]
                             ]
-                        , div [ class "mx-2" ] [ City.projectOutcomes dm r.project |> Maybe.withDefault "???" |> text ]
-                        , ul [ class "card-body" ] (viewRewards dm model <| City.projectRewards dm r.project)
+                        , div [ class "mx-2" ] [ City.projectOutcomes lang r.project |> Maybe.withDefault "???" |> text ]
+                        , ul [ class "card-body" ] (viewRewards lang model <| City.projectRewards dm r.project)
                         ]
                 )
         )
     ]
 
 
-viewRewards : Datamine -> Model m -> List { weight : Int, reward : City.Reward } -> List (Html msg)
-viewRewards dm model rolls =
+viewRewards : Lang -> { m | cityPlayerLevel : Int } -> List { weight : Int, reward : City.Reward } -> List (Html msg)
+viewRewards lang model rolls =
     let
         totalWeight =
             rolls |> List.map .weight |> List.sum
@@ -107,7 +108,7 @@ viewRewards dm model rolls =
             (\roll ->
                 li [ class "list-group-item card p-0" ]
                     [ div [ class "card-header p-1" ]
-                        [ span [ title roll.reward.name ] [ text <| Maybe.withDefault "???" <| City.label dm roll.reward ]
+                        [ span [ title roll.reward.name ] [ text <| Maybe.withDefault "???" <| City.label lang roll.reward ]
 
                         -- , span [ class "badge float-right" ] [ text "[", a [ Route.href <| Route.Source "city-reward" roll.reward.name ] [ text "Source" ], text "]" ]
                         , viewWeight totalWeight roll

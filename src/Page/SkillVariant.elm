@@ -8,6 +8,7 @@ import Html as H exposing (..)
 import Html.Attributes as A exposing (..)
 import Html.Events as E exposing (..)
 import Json.Encode
+import Lang exposing (Lang)
 import List.Extra
 import Maybe.Extra
 import Route exposing (Route)
@@ -15,16 +16,16 @@ import Util
 import View.Desc
 
 
-viewTitle : Datamine -> String -> String
-viewTitle dm id =
+viewTitle : Lang -> Datamine -> String -> String
+viewTitle lang dm id =
     Dict.get (String.toLower id) dm.skillVariantsByUid
-        |> Maybe.andThen (\( v, s ) -> Maybe.map2 Tuple.pair (Skill.label dm v) (Skill.label dm s))
+        |> Maybe.andThen (\( v, s ) -> Maybe.map2 Tuple.pair (Skill.label lang v) (Skill.label lang s))
         |> Maybe.map (\( v, s ) -> s ++ ": " ++ v)
         |> Maybe.withDefault ""
 
 
-view : Datamine -> String -> Maybe (List (Html msg))
-view dm uid =
+view : Lang -> Datamine -> String -> Maybe (List (Html msg))
+view lang dm uid =
     Dict.get (String.toLower uid) dm.skillVariantsByUid
         |> Maybe.map
             (\( variant, skill ) ->
@@ -41,11 +42,11 @@ view dm uid =
 
                     slabel : String
                     slabel =
-                        Skill.label dm skill |> Maybe.withDefault "???"
+                        Skill.label lang skill |> Maybe.withDefault "???"
 
                     vlabel : String
                     vlabel =
-                        Skill.label dm variant |> Maybe.withDefault "???"
+                        Skill.label lang variant |> Maybe.withDefault "???"
 
                     index : Maybe Int
                     index =
@@ -72,9 +73,9 @@ view dm uid =
                                 , div [] [ text "Cost: ", vast |> Maybe.Extra.unwrap "???" (.cost >> String.fromInt) |> text ]
                                 , br [] []
                                 , div [ title <| variant.uiName ++ "_desc" ]
-                                    (Skill.desc dm variant |> View.Desc.mformat |> Maybe.withDefault [ text "???" ])
+                                    (Skill.desc lang variant |> View.Desc.mformat |> Maybe.withDefault [ text "???" ])
                                 , div [ title <| Maybe.withDefault "" variant.lore ]
-                                    (Skill.lore dm variant |> View.Desc.mformat |> Maybe.withDefault [])
+                                    (Skill.lore lang variant |> View.Desc.mformat |> Maybe.withDefault [])
                                 , div [ class "card" ] (viewSkillEffects <| Skill.effects variant)
                                 ]
                             , div []

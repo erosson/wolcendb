@@ -14,12 +14,13 @@ import Dict exposing (Dict)
 import Html as H exposing (..)
 import Html.Attributes as A exposing (..)
 import Html.Events as E exposing (..)
+import Lang exposing (Lang)
 import Route exposing (Route)
 
 
-view : Datamine -> String -> String -> Maybe (List (Html msg))
-view dm type_ id =
-    getSource dm type_ id
+view : Lang -> Datamine -> String -> String -> Maybe (List (Html msg))
+view lang dm type_ id =
+    getSource lang dm type_ id
         |> Maybe.map
             (\( label, sources, breadcrumb ) ->
                 [ ol [ class "breadcrumb" ]
@@ -31,8 +32,8 @@ view dm type_ id =
             )
 
 
-getSource : Datamine -> String -> String -> Maybe ( String, List Source, List (Html msg) )
-getSource dm type_ id =
+getSource : Lang -> Datamine -> String -> String -> Maybe ( String, List Source, List (Html msg) )
+getSource lang dm type_ id =
     case type_ of
         "skill" ->
             Dict.get (String.toLower id) dm.skillsByUid
@@ -40,7 +41,7 @@ getSource dm type_ id =
                     (\s ->
                         let
                             label =
-                                Skill.label dm s |> Maybe.withDefault "???"
+                                Skill.label lang s |> Maybe.withDefault "???"
 
                             ast =
                                 Dict.get s.uid dm.skillASTsByName
@@ -61,7 +62,7 @@ getSource dm type_ id =
                     (\( v, _ ) ->
                         let
                             label =
-                                Skill.label dm v |> Maybe.withDefault "???"
+                                Skill.label lang v |> Maybe.withDefault "???"
 
                             ast =
                                 Dict.get (String.toLower id) dm.skillASTVariantsByUid
@@ -82,7 +83,7 @@ getSource dm type_ id =
                     (\gem ->
                         let
                             label =
-                                Gem.label dm gem |> Maybe.withDefault "???"
+                                Gem.label lang gem |> Maybe.withDefault "???"
                         in
                         ( label
                         , [ Just gem.source
@@ -102,7 +103,7 @@ getSource dm type_ id =
                     (\reagent ->
                         let
                             label =
-                                Reagent.label dm reagent |> Maybe.withDefault "???"
+                                Reagent.label lang reagent |> Maybe.withDefault "???"
                         in
                         ( label
                         , [ reagent.source ]
@@ -119,7 +120,7 @@ getSource dm type_ id =
                     (\nitem ->
                         let
                             label =
-                                NormalItem.label dm nitem |> Maybe.withDefault "???"
+                                NormalItem.label lang nitem |> Maybe.withDefault "???"
                         in
                         ( label
                         , NormalItem.source nitem :: List.filterMap (\a -> Dict.get a dm.nonmagicAffixesById |> Maybe.map .source) (NormalItem.implicitAffixes nitem)
@@ -136,7 +137,7 @@ getSource dm type_ id =
                     (\uitem ->
                         let
                             label =
-                                UniqueItem.label dm uitem |> Maybe.withDefault "???"
+                                UniqueItem.label lang uitem |> Maybe.withDefault "???"
                         in
                         ( label
                         , UniqueItem.source uitem
@@ -181,7 +182,7 @@ getSource dm type_ id =
                     (\( entry, passive, tree ) ->
                         let
                             label =
-                                Passive.label dm passive |> Maybe.withDefault "???"
+                                Passive.label lang passive |> Maybe.withDefault "???"
                         in
                         ( label
                         , [ passive.source, entry.source ]
@@ -198,7 +199,7 @@ getSource dm type_ id =
                     (\proj ->
                         let
                             label =
-                                City.label dm proj |> Maybe.withDefault "???"
+                                City.label lang proj |> Maybe.withDefault "???"
                         in
                         ( label
                         , proj.source :: (City.projectRewards dm proj |> List.map (.reward >> .source))
@@ -216,7 +217,7 @@ getSource dm type_ id =
                     (\reward ->
                         let
                             label =
-                                City.label dm reward |> Maybe.withDefault "???"
+                                City.label lang reward |> Maybe.withDefault "???"
                         in
                         ( label
                         , [ reward.source ]

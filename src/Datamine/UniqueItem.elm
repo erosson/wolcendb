@@ -20,13 +20,13 @@ module Datamine.UniqueItem exposing
 
 import Datamine.Affix as Affix exposing (Affixes, MagicAffix)
 import Datamine.Cosmetic as Cosmetic
-import Datamine.Lang as Lang
 import Datamine.NormalItem as NormalItem exposing (Item)
 import Datamine.Source as Source exposing (Source)
 import Datamine.Util as Util
 import Dict exposing (Dict)
 import Json.Decode as D
 import Json.Decode.Pipeline as P
+import Lang exposing (Lang)
 import Result.Extra
 import Set exposing (Set)
 
@@ -105,11 +105,10 @@ type alias UniqueAccessory =
 
 
 type alias Datamine d =
-    Lang.Datamine
-        { d
-            | cosmeticWeaponDescriptors : Dict String Cosmetic.CCosmeticWeaponDescriptor
-            , cosmeticTransferTemplates : Dict String Cosmetic.CCosmeticTransferTemplate
-        }
+    { d
+        | cosmeticWeaponDescriptors : Dict String Cosmetic.CCosmeticWeaponDescriptor
+        , cosmeticTransferTemplates : Dict String Cosmetic.CCosmeticTransferTemplate
+    }
 
 
 img : Datamine d -> UniqueItem -> Maybe String
@@ -140,9 +139,9 @@ isNonmax uitem =
     name uitem == nonmaxName uitem
 
 
-label : Lang.Datamine d -> UniqueItem -> Maybe String
-label dm =
-    uiName >> Lang.get dm
+label : Lang -> UniqueItem -> Maybe String
+label lang =
+    uiName >> Lang.get lang
 
 
 uiName : UniqueItem -> String
@@ -193,9 +192,9 @@ source uitem =
             i.source
 
 
-lore : Lang.Datamine d -> UniqueItem -> Maybe String
-lore dm n =
-    Lang.mget dm <|
+lore : Lang -> UniqueItem -> Maybe String
+lore lang n =
+    Lang.mget lang <|
         case n of
             UWeapon i ->
                 i.lore
@@ -226,13 +225,13 @@ implicitAffixes uitem =
             i.implicitAffixes
 
 
-implicitEffects : Affix.Datamine d -> UniqueItem -> List String
-implicitEffects dm =
+implicitEffects : Lang -> Affix.Datamine d -> UniqueItem -> List String
+implicitEffects lang dm =
     implicitAffixes
         >> Affix.getNonmagicIds dm
         >> List.concatMap .effects
         -- >> List.filterMap (Affix.formatEffect dm)
-        >> List.map (Affix.formatEffect dm >> Maybe.withDefault "???")
+        >> List.map (Affix.formatEffect lang >> Maybe.withDefault "???")
 
 
 defaultAffixes : UniqueItem -> List String
@@ -251,13 +250,13 @@ defaultAffixes uitem =
             i.defaultAffixes
 
 
-defaultEffects : Affix.Datamine d -> UniqueItem -> List String
-defaultEffects dm =
+defaultEffects : Lang -> Affix.Datamine d -> UniqueItem -> List String
+defaultEffects lang dm =
     defaultAffixes
         >> Affix.getNonmagicIds dm
         >> List.concatMap .effects
         -- >> List.filterMap (Affix.formatEffect dm)
-        >> List.map (Affix.formatEffect dm >> Maybe.withDefault "???")
+        >> List.map (Affix.formatEffect lang >> Maybe.withDefault "???")
 
 
 baseEffects : Affix.Datamine d -> UniqueItem -> List String

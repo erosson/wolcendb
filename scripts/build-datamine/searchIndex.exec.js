@@ -10,6 +10,7 @@ const child_process = require('child_process')
 const dest = path.join(util.PATH.DATAMINE_BUILD, 'searchIndex.json')
 const dest2 = path.join(util.PATH.PUBLIC, 'searchIndex.json')
 
+// TODO one search-index per language. Right now we can only search english!
 async function main() {
   const datamine = JSON.parse(await (await fs.readFile(path.join(util.PATH.DATAMINE_BUILD, 'datamine.json'))).toString())
   const app = Elm.SearchIndex.init({flags: {datamine}})

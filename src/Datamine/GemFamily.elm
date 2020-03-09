@@ -13,12 +13,12 @@ module Datamine.GemFamily exposing
 
 import Datamine.Affix as Affix exposing (Affix, NonmagicAffix)
 import Datamine.Gem as Gem exposing (Gem)
-import Datamine.Lang as Lang
 import Datamine.Source as Source exposing (Source)
 import Datamine.Util as Util
 import Dict exposing (Dict)
 import Json.Decode as D
 import Json.Decode.Pipeline as P
+import Lang exposing (Lang)
 import Result.Extra
 import Set exposing (Set)
 
@@ -36,11 +36,10 @@ type alias RelatedGem =
 
 
 type alias Datamine d =
-    Lang.Datamine
-        { d
-            | gemsByName : Dict String Gem
-            , gemFamiliesByAffixId : Dict String (List GemFamily)
-        }
+    { d
+        | gemsByName : Dict String Gem
+        , gemFamiliesByAffixId : Dict String (List GemFamily)
+    }
 
 
 gems : Datamine d -> GemFamily -> List Gem
@@ -113,10 +112,10 @@ intersectBy fn lists =
 Gem families don't appear in the UI, but the shortest gem name works well for it
 
 -}
-label : Datamine d -> GemFamily -> String
-label dm =
+label : Lang -> Datamine d -> GemFamily -> String
+label lang dm =
     gems dm
-        >> List.filterMap (Gem.label dm)
+        >> List.filterMap (Gem.label lang)
         >> List.sortBy String.length
         >> List.head
         >> Maybe.withDefault ""

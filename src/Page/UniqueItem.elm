@@ -6,30 +6,31 @@ import Dict exposing (Dict)
 import Html as H exposing (..)
 import Html.Attributes as A exposing (..)
 import Html.Events as E exposing (..)
+import Lang exposing (Lang)
 import Maybe.Extra
 import Route exposing (Route)
 import View.Affix
 import View.Desc
 
 
-viewTitle : Datamine -> String -> String
-viewTitle dm name =
+viewTitle : Lang -> Datamine -> String -> String
+viewTitle lang dm name =
     Dict.get (String.toLower name) dm.uniqueLootByName
-        |> Maybe.andThen (UniqueItem.label dm)
+        |> Maybe.andThen (UniqueItem.label lang)
         |> Maybe.withDefault ""
 
 
-view : Datamine -> String -> Maybe (List (Html msg))
-view dm name =
+view : Lang -> Datamine -> String -> Maybe (List (Html msg))
+view lang dm name =
     Dict.get (String.toLower name) dm.uniqueLootByName
-        |> Maybe.map (viewMain dm)
+        |> Maybe.map (viewMain lang dm)
 
 
-viewMain : Datamine -> UniqueItem -> List (Html msg)
-viewMain dm uitem =
+viewMain : Lang -> Datamine -> UniqueItem -> List (Html msg)
+viewMain lang dm uitem =
     let
         label =
-            UniqueItem.label dm uitem |> Maybe.withDefault "???" |> text
+            UniqueItem.label lang uitem |> Maybe.withDefault "???" |> text
     in
     [ ol [ class "breadcrumb" ]
         [ a [ class "breadcrumb-item active", Route.href Route.Home ] [ text "Home" ]
@@ -46,10 +47,10 @@ viewMain dm uitem =
                 ]
             , p [] [ text "Level: ", text <| Maybe.Extra.unwrap "-" String.fromInt <| UniqueItem.levelPrereq uitem ]
             , ul [ class "list-group affixes" ] (uitem |> UniqueItem.baseEffects dm |> List.map (\s -> li [ class "list-group-item" ] [ text s ]))
-            , ul [ class "list-group affixes" ] <| View.Affix.viewNonmagicIds dm <| UniqueItem.implicitAffixes uitem
-            , ul [ class "list-group affixes" ] <| View.Affix.viewNonmagicIds dm <| UniqueItem.defaultAffixes uitem
+            , ul [ class "list-group affixes" ] (uitem |> UniqueItem.implicitAffixes |> View.Affix.viewNonmagicIds lang dm)
+            , ul [ class "list-group affixes" ] (uitem |> UniqueItem.defaultAffixes |> View.Affix.viewNonmagicIds lang dm)
             , small [ class "text-muted" ] [ text "Keywords: ", text <| String.join ", " <| UniqueItem.keywords uitem ]
-            , UniqueItem.lore dm uitem |> View.Desc.mformat |> Maybe.withDefault [] |> p []
+            , UniqueItem.lore lang uitem |> View.Desc.mformat |> Maybe.withDefault [] |> p []
             ]
         ]
     ]

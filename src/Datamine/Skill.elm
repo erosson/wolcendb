@@ -15,13 +15,13 @@ module Datamine.Skill exposing
     , popularEffects
     )
 
-import Datamine.Lang as Lang
 import Datamine.Source as Source exposing (Source)
 import Datamine.Util as Util
 import Dict exposing (Dict)
 import Dict.Extra
 import Json.Decode as D
 import Json.Decode.Pipeline as P
+import Lang exposing (Lang)
 import Result.Extra
 import Set exposing (Set)
 
@@ -77,19 +77,19 @@ img skill =
     Util.imghost ++ "/" ++ String.toLower skill.hudPicture
 
 
-label : Lang.Datamine d -> { s | uiName : String } -> Maybe String
-label dm s =
-    Lang.get dm s.uiName
+label : Lang -> { s | uiName : String } -> Maybe String
+label lang s =
+    Lang.get lang s.uiName
 
 
-desc : Lang.Datamine d -> { s | uiName : String } -> Maybe String
-desc dm s =
-    Lang.get dm (s.uiName ++ "_desc")
+desc : Lang -> { s | uiName : String } -> Maybe String
+desc lang s =
+    Lang.get lang (s.uiName ++ "_desc")
 
 
-modDesc : Lang.Datamine d -> SkillModifier -> Maybe String
-modDesc dm mod =
-    Lang.get dm mod.uiDesc |> Maybe.map (Util.formatEffectStat ( 0, ( mod.effect, Util.Range mod.param1 mod.param2 ) ))
+modDesc : Lang -> SkillModifier -> Maybe String
+modDesc lang mod =
+    Lang.get lang mod.uiDesc |> Maybe.map (Util.formatEffectStat ( 0, ( mod.effect, Util.Range mod.param1 mod.param2 ) ))
 
 
 modTotals : SkillAST -> List SkillModifier
@@ -179,7 +179,7 @@ ignoredEffects =
     Set.fromList [ "HUD", "Animation", "SoundTrigger" ]
 
 
-popularEffects : Lang.Datamine { d | skills : List Skill } -> List ( String, Int )
+popularEffects : { d | skills : List Skill } -> List ( String, Int )
 popularEffects dm =
     List.concatMap effects dm.skills
         ++ List.concatMap effects (dm.skills |> List.concatMap .variants)
@@ -190,9 +190,9 @@ popularEffects dm =
         |> List.reverse
 
 
-lore : Lang.Datamine d -> { s | lore : Maybe String } -> Maybe String
-lore dm s =
-    Lang.mget dm s.lore
+lore : Lang -> { s | lore : Maybe String } -> Maybe String
+lore lang s =
+    Lang.mget lang s.lore
 
 
 astsDecoder : D.Decoder (List SkillAST)

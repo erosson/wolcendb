@@ -22,7 +22,6 @@ import Datamine.City as City
 import Datamine.Cosmetic as Cosmetic exposing (CCosmeticTransferTemplate, CCosmeticWeaponDescriptor)
 import Datamine.Gem as Gem exposing (Gem)
 import Datamine.GemFamily as GemFamily exposing (GemFamily)
-import Datamine.Lang as Lang
 import Datamine.NormalItem as NormalItem exposing (Item, NormalItem(..))
 import Datamine.Passive as Passive exposing (Passive, PassiveTree, PassiveTreeEntry)
 import Datamine.Reagent as Reagent exposing (Reagent)
@@ -64,7 +63,6 @@ type alias Datamine =
     , cityCategories : List City.Category
     , cityLevels : List City.Level
     , ailments : List Ailment
-    , en : Dict String String
 
     -- indexes
     , lootByName : Dict String NormalItem
@@ -117,7 +115,6 @@ type alias RawDatamine =
     , cityCategories : List City.Category
     , cityLevels : List City.Level
     , ailments : List Ailment
-    , en : Dict String String
     }
 
 
@@ -177,7 +174,6 @@ index raw =
     , cityCategories = raw.cityCategories
     , cityLevels = raw.cityLevels
     , ailments = raw.ailments
-    , en = raw.en
 
     -- indexes
     , lootByName = raw.loot |> Dict.Extra.fromListBy (NormalItem.name >> String.toLower)
@@ -262,7 +258,6 @@ decoder =
                 |> P.custom City.categoriesDecoder
                 |> P.custom City.levelsDecoder
                 |> P.custom (Ailment.decoder revision.buildRevision)
-                |> P.custom Lang.decoder
                 |> D.map index
         )
         revisionDecoder

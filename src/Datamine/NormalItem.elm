@@ -18,12 +18,12 @@ module Datamine.NormalItem exposing
 
 import Datamine.Affix as Affix exposing (Affixes, MagicAffix)
 import Datamine.Cosmetic as Cosmetic
-import Datamine.Lang as Lang
 import Datamine.Source as Source exposing (Source)
 import Datamine.Util as Util
 import Dict exposing (Dict)
 import Json.Decode as D
 import Json.Decode.Pipeline as P
+import Lang exposing (Lang)
 import Result.Extra
 import Set exposing (Set)
 
@@ -97,12 +97,11 @@ type alias Item i =
 
 
 type alias Datamine d =
-    Lang.Datamine
-        { d
-            | affixes : Affixes
-            , cosmeticWeaponDescriptors : Dict String Cosmetic.CCosmeticWeaponDescriptor
-            , cosmeticTransferTemplates : Dict String Cosmetic.CCosmeticTransferTemplate
-        }
+    { d
+        | affixes : Affixes
+        , cosmeticWeaponDescriptors : Dict String Cosmetic.CCosmeticWeaponDescriptor
+        , cosmeticTransferTemplates : Dict String Cosmetic.CCosmeticTransferTemplate
+    }
 
 
 img : Datamine d -> NormalItem -> Maybe String
@@ -121,9 +120,9 @@ img dm nitem =
                     |> Maybe.map (\t -> Util.imghost ++ "/weapons/" ++ t.hudPicture)
 
 
-label : Lang.Datamine d -> NormalItem -> Maybe String
-label dm =
-    uiName >> Lang.get dm
+label : Lang -> NormalItem -> Maybe String
+label lang =
+    uiName >> Lang.get lang
 
 
 uiName : NormalItem -> String
@@ -190,12 +189,12 @@ implicitAffixes nitem =
             i.implicitAffixes
 
 
-implicitEffects : Affix.Datamine d -> NormalItem -> List String
-implicitEffects dm =
+implicitEffects : Lang -> Affix.Datamine d -> NormalItem -> List String
+implicitEffects lang dm =
     implicitAffixes
         >> Affix.getNonmagicIds dm
         >> List.concatMap .effects
-        >> List.filterMap (Affix.formatEffect dm)
+        >> List.filterMap (Affix.formatEffect lang)
 
 
 baseEffects : Affix.Datamine d -> NormalItem -> List String

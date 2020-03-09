@@ -6,6 +6,7 @@ import Datamine.Gem as Gem exposing (Gem)
 import Html as H exposing (..)
 import Html.Attributes as A exposing (..)
 import Html.Events as E exposing (..)
+import Lang exposing (Lang)
 import RemoteData exposing (RemoteData)
 import Route exposing (Route)
 import Search exposing (Index, SearchResult)
@@ -22,8 +23,8 @@ type alias Model m =
     View.Search.Model m
 
 
-view : Model m -> List (Html Msg)
-view m =
+view : Lang -> Datamine -> Model m -> List (Html Msg)
+view lang dm m =
     View.Loading.view { navbar = False }
         m
         m.searchIndex
@@ -42,7 +43,7 @@ view m =
                     ]
                     []
                 ]
-            , case m.globalSearchResults of
+            , case m.globalSearchResults |> Result.map (Search.toResults lang dm) of
                 Err err ->
                     code [] [ text err ]
 
