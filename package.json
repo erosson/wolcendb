@@ -24,7 +24,7 @@
     "deploy:img:buildRevisions": "bash ./scripts/public/buildRevisions.sh",
 
     "build:ci": "bash -c \"yarn test && yarn build\"",
-    "test": "node --experimental-modules tests/fixture.mjs && elm-app test"
+    "test": "node tests/fixture.js && elm-app test"
   },
   "devDependencies": {
     "@erosson/xlsx-loader": "^1.0.3",
