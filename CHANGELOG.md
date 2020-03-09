@@ -3,6 +3,9 @@ Changelog
 
 ---
 
+#### 2020-03-09
+- Fixed a bug with language switching.
+
 #### 2020-03-06
 - Updated to Wolcen v1.0.8.0. [Wolcen v1.0.7.0 to v1.0.8.0 source differences.](https://gitlab.com/erosson/wolcendb/-/commit/7774750ece265015b1360ad62bbaf5efeba987d7)
 - You can now load WolcenDB with data from old versions of Wolcen.
