@@ -1,5 +1,6 @@
 #!/bin/bash
 set -eux
+echo 'I extract data from your Wolcen game files into ./datamine.tmp'
 echo 'deleting datamine.tmp in 3...'
 sleep 3
 rm -rf datamine* build*
@@ -19,9 +20,9 @@ ruby src/main.rb extract --source "$GAMEPATH" --dest ../../datamine.tmp --only e
 cd -
 
 cp "$GAMEPATH"/revision.txt datamine.tmp/revision.txt
-yarn export:cp
+yarn export:datamine
 
 set +x
 echo
 echo
-echo "Done! Don't forget to run \`yarn deploy:img:datamine\` with the right credentials."
+echo "Done! Don't forget to run \`yarn deploy:img\` with the right credentials, to deploy this new version to `img-datamine.erosson.org`"

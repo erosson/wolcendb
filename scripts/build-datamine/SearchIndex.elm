@@ -1,4 +1,4 @@
-port module BuildSearchIndexCLI exposing (main)
+port module SearchIndex exposing (main)
 
 import Datamine exposing (Datamine)
 import ElmTextSearch.Json.Encoder

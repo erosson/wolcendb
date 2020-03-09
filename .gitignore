@@ -1,8 +1,9 @@
 # Distribution
-build/
-build-ssr/
-build-nossr/
-build-img/
+/build/
+/build-ssr/
+/build-nossr/
+/build-img/
+/build-datamine/
 
 # elm-package generated files
 elm-stuff
@@ -38,3 +39,5 @@ tests/Fixture/Json.elm
 
 # Sizes of those big files above, for a loading indicator
 /datamine/sizes.json
+
+/scripts/**/*.elm.js

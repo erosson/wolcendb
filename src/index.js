@@ -4,11 +4,11 @@ import { Elm } from './Main.elm';
 import * as serviceWorker from './serviceWorker';
 import changelog from '!!raw-loader!../CHANGELOG.md'
 import analytics from './analytics'
-import sizes from '../datamine/sizes.json'
+import sizes from '../build-datamine/sizes.json'
+import langs from '../build-datamine/lang.json'
 import buildRevisions from '../public/buildRevisions.json'
-// import datamine from '../datamine/imports.js'
-// import searchIndex from '../public/searchIndex.json'
-import langs from '../datamine/lang.json'
+// import datamine from '../build-datamine/imports.js'
+// import searchIndex from '../build-datamine/searchIndex.json'
 
 const query = parseQuery(document.location.search)
 // Elm will overwrite this node. For SSR'ed pages (see `yarn build:ssr`), this

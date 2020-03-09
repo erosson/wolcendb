@@ -8,23 +8,22 @@
   "scripts": {
     "export:pull": "bash -c \"git subtree pull --squash --prefix third-party/WolcenExtractor git@github.com:gabriel-dehan/WolcenExtractor.git master && yarn export:install\"",
     "export:install": "bash -c \"gem install bundler && cd third-party/WolcenExtractor && bundle install\"",
-    "export:datamine": "bash -c \"rm -rf datamine build-img && mkdir datamine && node ./cli-src/import_datamine.js\"",
-    "export:cp": "bash -c \"yarn export:datamine && yarn _build:search-index\"",
-    "export": "bash ./cli-src/export.sh",
+
+    "export": "bash ./scripts/datamine.tmp.sh",
+    "export:datamine": "node ./scripts/datamine.exec.js && yarn build:datamine",
+    "build:datamine": "bash ./scripts/build-datamine.sh",
+
     "start": "bash -c \"ELM_DEBUGGER=false elm-app start\"",
-    "build": "bash -c \"yarn _build:search-index && yarn _build && yarn _build:ssr\"",
-    "_build": "bash -c \"rm -rf build && elm-app build\"",
-    "_build:search-index": "bash -c \"elm make cli-src/BuildSearchIndexCLI.elm --output datamine.tmp/BuildSearchIndexCLI.elm.js && node --experimental-modules cli-src/build-search-index-cli.mjs\"",
-    "_build:ssr": "bash -c \"rm -rf build-ssr && elm make cli-src/SSRRenderCLI.elm --optimize --output datamine.tmp/SSRRenderCLI.elm.js && elm make cli-src/SSRPagesCLI.elm --optimize --output datamine.tmp/SSRPagesCLI.elm.js && node ./cli-src/ssr-cli.js && rm -rf build-nossr && mv build build-nossr && mv build-ssr build\"",
-    "build:ci": "bash -c \"yarn test && yarn build\"",
+
+    "build": "bash ./scripts/build.sh",
     "build:serve": "bash -c \"serve build\"",
-    "//deploy:img": "--size-only avoids re-uploading on timestamp change",
-    "deploy:img": "bash -c \"aws s3 sync --size-only ./build-img/game/ s3://img-wolcendb.erosson.org/game --cache-control max-age=86400 && yarn deploy:img:datamine\"",
-    "//deploy:img:datamine": "old versions remain accessible and are uploaded one at a time, so don't --delete.",
-    "deploy:img:datamine": "yarn _deploy:img:datamine && yarn deploy:img:ls",
-    "_deploy:img:datamine": "aws s3 sync ./build-img/datamine/ s3://img-wolcendb.erosson.org/datamine --cache-control public,max-age=86400 --content-type application/json",
-    "deploy:img:datamine:pull": "aws s3 sync s3://img-wolcendb.erosson.org/datamine ./build-img/datamine/",
-    "deploy:img:ls": "aws s3 ls s3://img-wolcendb.erosson.org/datamine/ | node ./cli-src/buildRevisions.js > public/buildRevisions.json",
+
+    "build:img": "bash ./scripts/build-img.sh",
+    "deploy:img": "bash ./scripts/build-img/deploy.sh",
+    "deploy:img:pull": "bash ./scripts/build-img/pull.sh",
+    "deploy:img:buildRevisions": "bash ./scripts/public/buildRevisions.sh",
+
+    "build:ci": "bash -c \"yarn test && yarn build\"",
     "test": "node --experimental-modules tests/fixture.mjs && elm-app test"
   },
   "devDependencies": {
