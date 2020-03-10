@@ -54,9 +54,12 @@ function fetchAsset(app, name, revision0) {
   // special case: we didn't parse non-english language data in wolcendb's early days; that data is no longer available.
   // Instead, request the oldest version where that data *is* available.
   const revision = langlessRevisions[revision0] ? "1.0.8.2_ER" : (revision0 || sizes.buildRevision)
-  console.log('fetchAsset', name, revision0, revision)
-  // const assetPath = '/' + name + '.json'
-  const assetPath = 'https://img-wolcendb.erosson.org/datamine/' + revision + '/' + name + '.json.js?t=' + sizes.slug
+  // Test using local not-yet-deployed Wolcen data. Only works in development; /scripts/build-datamine.sh disables it in production.
+  const assetPath = revision === '__local__'
+    ? '/datamine/' + name + '.json?t=' + sizes.slug
+    : 'https://img-wolcendb.erosson.org/datamine/' + revision + '/' + name + '.json.js?t=' + sizes.slug
+  console.log('fetchAsset', {name, revision0, assetPath})
+
   const isProgressSupported = window.Response && window.ReadableStream
   return (() => {
     if (isProgressSupported) {

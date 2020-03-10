@@ -12,15 +12,11 @@ const xml2js = require('xml2js')
 const xml2json = promisify((new xml2js.Parser()).parseString)
 
 const dest = path.join(util.PATH.DATAMINE_BUILD, 'datamine.json')
-const dest2 = path.join(util.PATH.PUBLIC, 'datamine.json')
 
 async function main() {
   const json = await buildJson()
   await mkdirp(path.dirname(dest))
-  return Promise.all([
-    fs.writeFile(dest, JSON.stringify(json)),
-    fs.writeFile(dest2, JSON.stringify(json)),
-  ])
+  return fs.writeFile(dest, JSON.stringify(json))
 }
 async function buildJson() {
   const revision = JSON.parse(await (await fs.readFile(path.join(util.PATH.DATAMINE_BUILD, 'revision.json'))).toString())

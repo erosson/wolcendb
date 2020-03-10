@@ -12,6 +12,7 @@ PATH.DATAMINE_BUILD = path.join(PATH.ROOT, "build-datamine")
 PATH.BUILD_IMG = path.join(PATH.ROOT, "build-img")
 PATH.BUILD_SSR = path.join(PATH.ROOT, "build-ssr")
 PATH.PUBLIC = path.join(PATH.ROOT, "public")
+PATH.PUBLIC_DATAMINE = path.join(PATH.PUBLIC, "datamine")
 
 async function copyGlobs({src, dest, patterns}) {
   const groups = await Promise.all(patterns.map(pattern => glob(pattern, {cwd: src})))

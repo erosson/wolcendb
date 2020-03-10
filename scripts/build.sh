@@ -1,5 +1,5 @@
 #!/bin/bash
-set -eux
+set -eu
 cd "`dirname "$0"`/.."
 rm -rf build
 bash ./scripts/build-datamine.sh
