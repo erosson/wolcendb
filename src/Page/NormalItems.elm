@@ -17,10 +17,10 @@ view : Lang -> Datamine -> Maybe Int -> Maybe String -> Maybe String -> List (Ht
 view lang dm mtier kwStr okwStr =
     let
         kwList =
-            kwStr |> Maybe.withDefault "" |> String.toLower |> String.split ","
+            kwStr |> Maybe.withDefault "" |> String.toLower |> String.split "," |> List.map String.trim |> List.filter ((/=) "")
 
         okwList =
-            okwStr |> Maybe.withDefault "" |> String.toLower |> String.split ","
+            okwStr |> Maybe.withDefault "" |> String.toLower |> String.split "," |> List.map String.trim |> List.filter ((/=) "")
 
         isItemKeyword itemKws kw =
             Set.member kw itemKws
