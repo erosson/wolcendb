@@ -151,6 +151,7 @@ initSSRPages flags =
         [ cmd
         , routes
             |> List.map (Route.toUrl >> .path)
+            |> List.map ((++) "/")
             |> Ports.ssrCliPages
         ]
     )

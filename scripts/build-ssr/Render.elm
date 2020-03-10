@@ -28,7 +28,7 @@ notFound =
 
 main =
     Browser.element
-        { view = Main.viewBody { ssr = True } >> div [ id "root", style "display" "none" ]
+        { view = \m -> Main.viewBody { ssr = True } m m.route |> div [ id "root", style "display" "none" ]
         , init = Main.initSSRRender
         , update = Main.update
         , subscriptions =
