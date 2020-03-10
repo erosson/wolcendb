@@ -3,6 +3,9 @@ Changelog
 
 ---
 
+#### 2020-03-10
+- Updated to Wolcen v1.0.9.0. [Wolcen v1.0.8.0 to v1.0.9.0 source differences: no changes.](https://gitlab.com/erosson/wolcendb/-/commit/3b8b0f24b87a7e8b1822d2e8f29799deb7574693)
+
 #### 2020-03-09
 - Fixed a bug with language switching.
 - Each affix on the [affixes page](/affix) now links to a list of all items that can spawn it.
