@@ -7,8 +7,13 @@ import Html.Events as E exposing (..)
 import Route exposing (Route)
 
 
-view : Datamine -> { m | buildRevisions : List String } -> List (Html msg)
+view : Datamine -> { m | route : Maybe Route, buildRevisions : List String } -> List (Html msg)
 view dm m =
+    let
+        options : Route.Options
+        options =
+            Route.toMOptions m.route
+    in
     [ ol [ class "breadcrumb" ]
         [ a [ class "breadcrumb-item active", Route.href Route.Home ] [ text "Home" ]
         , a [ class "breadcrumb-item active", Route.href Route.BuildRevisions ] [ text "Build Revisions" ]
@@ -21,11 +26,18 @@ view dm m =
                 (\r ->
                     a
                         [ class "list-group-item list-group-item-action"
-                        , classList [ ( "active", r == dm.revision.buildRevision ) ]
-                        , target "_blank"
-                        , href <| "/?build_revision=" ++ r
+                        , classList [ ( "active", Just r == options.revision ) ]
+                        , Route.hrefOptions { options | revision = Just r } Route.Home
                         ]
                         [ text r ]
+                )
+            |> (::)
+                (a
+                    [ class "list-group-item list-group-item-action"
+                    , classList [ ( "active", Nothing == options.revision ) ]
+                    , Route.hrefOptions { options | revision = Nothing } Route.Home
+                    ]
+                    [ i [] [ text "Latest revision" ] ]
                 )
         )
     ]

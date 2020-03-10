@@ -36,27 +36,32 @@ app.ports.ssr.subscribe(id => {
     document.getElementById(id).innerHTML = ssrHTML
   }
 })
+app.ports.langRequest.subscribe(({lang, revision}) => {
+  lang = lang.toLowerCase()
+  if (lang === 'chinese') lang = "chineses"
+  fetchAsset(app, 'lang/' + lang + '_xml', revision)
+})
+app.ports.revisionRequest.subscribe(revision => {
+  fetchAsset(app, 'datamine', revision)
+  .then(() => fetchAsset(app, 'searchIndex', revision))
+})
 
-fetchAsset(app, 'datamine')
-.then(() => query.lang ? fetchLang(app, query.lang) : Promise.resolve())
-.then(() => fetchAsset(app, 'searchIndex'))
+fetchAsset(app, 'datamine', null)
+.then(() => fetchAsset(app, 'searchIndex', null))
 
-function fetchLang(app, name) {
-  const asset = langAssets[name]
-  if (asset) {
-    // console.log('langs', name, asset)
-    fetchAsset(app, asset)
-  }
-}
-function fetchAsset(app, name) {
-  const buildRevision = query.build_revision || sizes.buildRevision
+function fetchAsset(app, name, revision0) {
+  const langlessRevisions = {"1.0.4.3_ER": true, "1.0.6.0_ER": true, "1.0.7.0_ER": true}
+  // special case: we didn't parse non-english language data in wolcendb's early days; that data is no longer available.
+  // Instead, request the oldest version where that data *is* available.
+  const revision = langlessRevisions[revision0] ? "1.0.8.2_ER" : (revision0 || sizes.buildRevision)
+  console.log('fetchAsset', name, revision0, revision)
   // const assetPath = '/' + name + '.json'
-  const assetPath = 'https://img-wolcendb.erosson.org/datamine/' + buildRevision + '/' + name + '.json.js?t=' + sizes.slug
+  const assetPath = 'https://img-wolcendb.erosson.org/datamine/' + revision + '/' + name + '.json.js?t=' + sizes.slug
   const isProgressSupported = window.Response && window.ReadableStream
   return (() => {
     if (isProgressSupported) {
-      onProgress(name)(0)
-      return fetch(assetPath).then(res => ProgressResponse(res, {onProgress: onProgress(name)}))
+      onProgress(name, revision0)(0)
+      return fetch(assetPath).then(res => ProgressResponse(res, {onProgress: onProgress(name, revision0)}))
     }
     else {
       console.warn('loading progressbar unsupported by this browser, trying to load without it')
@@ -65,17 +70,18 @@ function fetchAsset(app, name) {
   })()
   .then(res => res.json())
   .then(json => {
-    app.ports.loadAssets.send({name, json})
+    app.ports.loadAssets.send({name, revision: revision0, json})
     return json
   })
   .catch(err => {
-    app.ports.loadAssetsFailure.send({name, err: err+''})
+    // console.error('fetchAsset', err)
+    app.ports.loadAssetsFailure.send({name, revision: revision0, err: err+''})
   })
 }
 
-function onProgress(name) {
+function onProgress(name, revision) {
   return progress => {
-    app.ports.loadAssetsProgress.send({name, progress, size: sizes[name] || 0})
+    app.ports.loadAssetsProgress.send({name, revision, progress, size: sizes[name] || 0})
   }
 }
 function ProgressResponse(response, {onProgress}) {

@@ -34,7 +34,7 @@ viewMain : Html msg -> Html msg
 viewMain searchbar =
     -- https://getbootstrap.com/docs/4.4/components/navbar/
     div [ class "navbar navbar-expand-sm navbar-light bg-light" ]
-        [ a [ class "navbar-brand", href "/" ] [ text "WolcenDB" ]
+        [ a [ class "navbar-brand", Route.href Route.Home ] [ text "WolcenDB" ]
         , button
             [ type_ "button"
             , class "navbar-toggler"
@@ -53,8 +53,7 @@ viewMain searchbar =
 viewSearchbar : Model m -> Html Msg
 viewSearchbar m =
     H.form [ class "form-inline", onSubmit SearchSubmit ]
-        [ viewLangSelector m.langs
-        , div [ class "input-group" ]
+        [ div [ class "input-group" ]
             [ input
                 [ class "form-control"
                 , type_ "search"
@@ -66,11 +65,6 @@ viewSearchbar m =
             , div [ class "input-group-append" ] [ button [ class "btn btn-outline-primary", type_ "submit" ] [ span [ class "fas fa-search" ] [] ] ]
             ]
         ]
-
-
-viewLangSelector : List String -> Html msg
-viewLangSelector langs =
-    span [] []
 
 
 update : Msg -> Datamine -> Model m -> ( Model m, Cmd Msg )

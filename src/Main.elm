@@ -58,6 +58,7 @@ type alias Model =
     , buildRevisions : List String
     , datamine : RemoteData String Datamine
     , lang : RemoteData String Lang
+    , defaultLang : RemoteData String Lang
     , langs : List String
     , searchIndex : RemoteData String Search.Index
     , changelog : String
@@ -94,11 +95,16 @@ init flags url nav =
 
 init_ : Flags f -> Maybe Route -> Maybe Nav.Key -> ( Model, Cmd Msg )
 init_ flags route nav =
+    let
+        defaultLang =
+            flags.datamine |> maybeDecode (D.decodeValue Lang.decoder >> Result.mapError D.errorToString)
+    in
     { nav = nav
     , buildRevisions = flags.buildRevisions
     , langs = flags.langs
     , datamine = flags.datamine |> maybeDecode Datamine.decode
-    , lang = flags.datamine |> maybeDecode (D.decodeValue Lang.decoder >> Result.mapError D.errorToString)
+    , lang = defaultLang
+    , defaultLang = defaultLang
     , searchIndex = flags.searchIndex |> maybeDecode Search.decodeIndex
     , changelog = flags.changelog
     , route = Nothing
@@ -165,25 +171,64 @@ maybeDecode decoder mjson =
 
 routeTo : Maybe Route -> Model -> ( Model, Cmd Msg )
 routeTo mroute model0 =
-    case model0.datamine of
-        RemoteData.Success dm ->
+    case mroute of
+        Just (Route.Redirect route) ->
+            ( model0, Route.replaceUrl model0.nav route )
+
+        Just (Route.WithOptions opts route) ->
             let
-                model =
-                    { model0 | route = mroute }
+                ( model1, cmd1 ) =
+                    routeTo (Just route) model0
+
+                opts0 =
+                    Route.toMOptions model0.route
+
+                opts1 =
+                    Route.toMOptions mroute
             in
-            case mroute of
-                Just (Route.Search q) ->
-                    ( Page.Search.init q dm model, Cmd.none )
+            ( { model1 | route = mroute }, [ cmd1 ] )
+                |> (\( m, cmd ) ->
+                        if opts0.lang == opts1.lang then
+                            ( m, cmd )
 
-                Just (Route.Redirect route) ->
-                    ( model0, Route.replaceUrl model.nav route )
+                        else
+                            case opts1.lang of
+                                Nothing ->
+                                    ( { m | lang = m.defaultLang }, cmd )
 
-                _ ->
-                    ( model, Cmd.none )
+                                Just lang ->
+                                    ( { m | lang = RemoteData.Loading }
+                                    , Ports.langRequest { lang = lang, revision = opts1.revision } :: cmd
+                                    )
+                   )
+                |> (\( m, cmd ) ->
+                        if opts0.revision == opts1.revision then
+                            ( m, cmd )
+
+                        else
+                            ( { m | datamine = RemoteData.Loading }
+                            , Ports.revisionRequest opts1.revision :: cmd
+                            )
+                   )
+                |> Tuple.mapSecond Cmd.batch
 
         _ ->
-            -- caller must retry when loaded
-            ( { model0 | route = mroute }, Cmd.none )
+            case model0.datamine of
+                RemoteData.Success dm ->
+                    let
+                        model =
+                            { model0 | route = mroute }
+                    in
+                    case mroute of
+                        Just (Route.Search q) ->
+                            ( Page.Search.init q dm model, Cmd.none )
+
+                        _ ->
+                            ( model, Cmd.none )
+
+                _ ->
+                    -- caller must retry when loaded
+                    ( { model0 | route = mroute }, Cmd.none )
 
 
 
@@ -220,51 +265,98 @@ update msg model =
     -- loadassets stuff always runs, regardless of datamine state
     case msg of
         LoadAssets res ->
-            (case res.name of
-                "datamine" ->
-                    { model
-                        | datamine = Datamine.decode res.json |> RemoteData.fromResult
-                        , lang =
-                            case model.lang of
-                                RemoteData.Success _ ->
-                                    model.lang
+            let
+                opts =
+                    Route.toMOptions model.route
 
-                                _ ->
-                                    D.decodeValue Lang.decoder res.json
-                                        |> Result.mapError D.errorToString
-                                        |> RemoteData.fromResult
-                    }
+                name =
+                    res.name ++ Maybe.Extra.unwrap "" ((++) "/") res.revision
+            in
+            (if opts.revision == res.revision then
+                case res.name of
+                    "datamine" ->
+                        let
+                            defaultLang =
+                                D.decodeValue Lang.decoder res.json
+                                    |> Result.mapError D.errorToString
+                                    |> RemoteData.fromResult
+                        in
+                        { model
+                            | datamine = Datamine.decode res.json |> RemoteData.fromResult
+                            , defaultLang = defaultLang
+                            , lang =
+                                case model.lang of
+                                    RemoteData.Success _ ->
+                                        model.lang
 
-                "searchIndex" ->
-                    { model | searchIndex = Search.decodeIndex res.json |> RemoteData.fromResult }
+                                    RemoteData.Failure _ ->
+                                        model.lang
 
-                _ ->
-                    if String.startsWith "lang/" res.name then
-                        case D.decodeValue Lang.decoder res.json of
-                            Ok lang ->
-                                { model | lang = RemoteData.Success lang }
+                                    _ ->
+                                        defaultLang
+                        }
 
-                            Err err ->
-                                model
+                    "searchIndex" ->
+                        { model | searchIndex = Search.decodeIndex res.json |> RemoteData.fromResult }
 
-                    else
-                        model
+                    _ ->
+                        if String.startsWith "lang/" res.name then
+                            case D.decodeValue Lang.decoder res.json of
+                                Ok lang ->
+                                    { model | lang = RemoteData.Success lang }
+
+                                Err err ->
+                                    model
+
+                        else
+                            model
+
+             else
+                model
             )
+                -- |> (\m -> {m|progress=model.progress |> Dict.remove name)
                 |> routeTo model.route
 
         LoadAssetsProgress res ->
-            ( { model | progress = model.progress |> Dict.insert res.name ( res.progress, res.size ) }, Cmd.none )
+            let
+                opts =
+                    Route.toMOptions model.route
+
+                name =
+                    res.name ++ Maybe.Extra.unwrap "" ((++) "/") res.revision
+            in
+            ( { model | progress = model.progress |> Dict.insert name ( res.progress, res.size ) }, Cmd.none )
 
         LoadAssetsFailure err ->
-            ( case err.name of
-                "datamine" ->
-                    { model | datamine = remoteDataOr model.datamine <| RemoteData.Failure <| "Couldn't fetch datamine. Something is very wrong.\n\n" ++ err.err }
+            let
+                opts =
+                    Route.toMOptions model.route
 
-                "searchIndex" ->
-                    { model | searchIndex = remoteDataOr model.searchIndex <| RemoteData.Failure <| "Couldn't fetch searchIndex. Something is very wrong.\n\n" ++ err.err }
+                name =
+                    err.name ++ Maybe.Extra.unwrap "" ((++) "/") err.revision
+            in
+            ( if opts.revision == err.revision then
+                case err.name of
+                    "datamine" ->
+                        { model | datamine = remoteDataOr model.datamine <| RemoteData.Failure <| "Couldn't fetch datamine. Something is very wrong.\n\n" ++ err.err }
 
-                _ ->
-                    model
+                    "searchIndex" ->
+                        { model | searchIndex = remoteDataOr model.searchIndex <| RemoteData.Failure <| "Couldn't fetch searchIndex. Something is very wrong.\n\n" ++ err.err }
+
+                    _ ->
+                        case opts.lang of
+                            Just lang ->
+                                if err.name == "lang/" ++ lang ++ "_xml" then
+                                    { model | lang = RemoteData.Failure <| "Couldn't fetch lang/" ++ lang ++ ". Something is very wrong.\n\n" ++ err.err }
+
+                                else
+                                    model
+
+                            Nothing ->
+                                model
+
+              else
+                model
             , Cmd.none
             )
 
@@ -368,7 +460,9 @@ updateOk msg dm model =
 
 view : Model -> Browser.Document Msg
 view model =
-    { title = viewTitle model, body = viewBody { ssr = False } model }
+    { title = viewTitle model
+    , body = viewBody { ssr = False } model model.route
+    }
 
 
 viewTitle : Model -> String
@@ -381,6 +475,9 @@ viewTitle model =
             case ( route, model.lang, model.datamine ) of
                 ( Route.Redirect _, _, _ ) ->
                     "WolcenDB"
+
+                ( Route.WithOptions _ next, _, _ ) ->
+                    viewTitle { model | route = Just next }
 
                 ( Route.Home, _, _ ) ->
                     "WolcenDB: a Wolcen item, skill, and magic affix database"
@@ -463,15 +560,15 @@ viewTitle model =
                     "WolcenDB: privacy"
 
 
-viewBody : { ssr : Bool } -> Model -> List (Html Msg)
-viewBody { ssr } model =
+viewBody : { ssr : Bool } -> Model -> Maybe Route -> List (Html Msg)
+viewBody { ssr } model mroute =
     View.Loading.view { navbar = True }
         model
         (RemoteData.map2 Tuple.pair model.lang model.datamine)
         (\( lang, dm ) ->
             let
                 content =
-                    case model.route of
+                    case mroute of
                         Nothing ->
                             viewNotFound
 
@@ -480,6 +577,9 @@ viewBody { ssr } model =
                                 Route.Redirect _ ->
                                     -- should never be here, we should've performed the redirect in update/init
                                     viewNotFound
+
+                                Route.WithOptions _ next ->
+                                    viewBody { ssr = True } model (Just next)
 
                                 Route.Home ->
                                     Page.Home.view dm
@@ -565,7 +665,8 @@ viewBody { ssr } model =
                 content
 
             else
-                [ div [ class "container" ]
+                [ Route.base <| Route.toMOptions model.route
+                , div [ class "container" ]
                     ((View.Nav.view model |> H.map NavMsg)
                         :: content
                     )

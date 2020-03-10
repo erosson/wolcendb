@@ -8,6 +8,7 @@ Changelog
 - Each affix on the [affixes page](/affix) now links to a list of all items that can spawn it.
 - Fixed a short-lived bug with normal item listings.
 - On the front page, links at the bottom are now only as wide as they appear. Previously they were the width of the entire page, very easy to accidentally click.
+- [Language](/language) and [Wolcen version](/build-revision) URLs have changed. They also now remain part of the URL as you move around the site, and refreshing the page will no longer reset them.
 
 #### 2020-03-06
 - Updated to Wolcen v1.0.8.0. [Wolcen v1.0.7.0 to v1.0.8.0 source differences.](https://gitlab.com/erosson/wolcendb/-/commit/7774750ece265015b1360ad62bbaf5efeba987d7)

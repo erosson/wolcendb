@@ -6,12 +6,18 @@ import Json.Decode as D
 
 
 type alias LoadAssets =
-    { name : String, json : D.Value }
+    { name : String, revision : Maybe String, json : D.Value }
 
 
 {-| JS should replace this element-id with SSR content, if any
 -}
 port ssr : String -> Cmd msg
+
+
+port langRequest : { lang : String, revision : Maybe String } -> Cmd msg
+
+
+port revisionRequest : Maybe String -> Cmd msg
 
 
 {-| Load searchindex and datamine asynchronously
@@ -20,14 +26,14 @@ port loadAssets : (LoadAssets -> msg) -> Sub msg
 
 
 type alias LoadAssetsProgress =
-    { name : String, progress : Int, size : Int }
+    { name : String, revision : Maybe String, progress : Int, size : Int }
 
 
 port loadAssetsProgress : (LoadAssetsProgress -> msg) -> Sub msg
 
 
 type alias LoadAssetsFailure =
-    { name : String, err : String }
+    { name : String, revision : Maybe String, err : String }
 
 
 port loadAssetsFailure : (LoadAssetsFailure -> msg) -> Sub msg

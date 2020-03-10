@@ -8,8 +8,13 @@ import Markdown
 import Route exposing (Route)
 
 
-view : { m | langs : List String } -> List (Html msg)
+view : { m | route : Maybe Route, langs : List String } -> List (Html msg)
 view m =
+    let
+        options : Route.Options
+        options =
+            Route.toMOptions m.route
+    in
     [ ol [ class "breadcrumb" ]
         [ a [ class "breadcrumb-item active", Route.href Route.Home ] [ text "Home" ]
         , a [ class "breadcrumb-item active", Route.href Route.Langs ] [ text "Select Language" ]
@@ -29,10 +34,18 @@ view m =
                 (\r ->
                     a
                         [ class "list-group-item list-group-item-action"
-                        , target "_blank"
-                        , href <| "/?lang=" ++ r
+                        , classList [ ( "active", Just r == options.lang ) ]
+                        , Route.hrefOptions { options | lang = Just r } Route.Home
                         ]
                         [ text r ]
+                )
+            |> (::)
+                (a
+                    [ class "list-group-item list-group-item-action"
+                    , classList [ ( "active", Nothing == options.lang ) ]
+                    , Route.hrefOptions { options | lang = Nothing } Route.Home
+                    ]
+                    [ i [] [ text "Default language" ] ]
                 )
         )
     ]

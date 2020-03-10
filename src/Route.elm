@@ -1,18 +1,26 @@
 module Route exposing
-    ( Route(..)
+    ( Options
+    , Route(..)
+    , base
+    , emptyOptions
     , href
+    , hrefOptions
     , keywords
+    , mapOptions
     , normalItems
     , parse
     , pushUrl
     , replaceUrl
     , toAnalytics
+    , toMOptions
+    , toOptions
     , toUrl
     )
 
 import Browser.Navigation as Nav
 import Html
 import Html.Attributes
+import Maybe.Extra
 import Url exposing (Url)
 import Url.Builder as B
 import Url.Parser as P exposing ((</>), (<?>))
@@ -43,15 +51,58 @@ type Route
     | Changelog
     | Privacy
     | Redirect Route
+    | WithOptions Options Route
+
+
+type alias Options =
+    { lang : Maybe String
+    , revision : Maybe String
+    , features : Maybe String
+    }
+
+
+emptyOptions : Options
+emptyOptions =
+    Options Nothing Nothing Nothing
 
 
 parse : Url -> Maybe Route
 parse =
     P.parse parser
+        >> Maybe.andThen
+            (\( o, route ) ->
+                if o == emptyOptions then
+                    route
+
+                else
+                    route |> Maybe.map (WithOptions o)
+            )
 
 
-parser : P.Parser (Route -> a) a
+parser : P.Parser (( Options, Maybe Route ) -> a) a
 parser =
+    P.map Tuple.pair <| optionsParser </> P.oneOf [ P.map Just baseParser, P.map Nothing P.top ]
+
+
+optionsParser : P.Parser (Options -> a) a
+optionsParser =
+    P.map Options <|
+        P.top
+            </> maybeStringParser "l"
+            </> maybeStringParser "v"
+            </> maybeStringParser "f"
+
+
+maybeStringParser : String -> P.Parser (Maybe String -> a) a
+maybeStringParser path =
+    P.oneOf
+        [ P.map Just <| P.s path </> P.string
+        , P.map Nothing P.top
+        ]
+
+
+baseParser : P.Parser (Route -> a) a
+baseParser =
     P.oneOf
         [ P.map Home <| P.top
         , P.map Skills <| P.s "skill"
@@ -67,7 +118,7 @@ parser =
         , P.map Offline <| P.s "offline" </> P.string </> P.string
         , P.map Search <| P.s "search" <?> Q.string "q"
         , P.map Table <| P.s "table" </> P.string
-        , P.map BuildRevisions <| P.s "build-revisions"
+        , P.map BuildRevisions <| P.s "build-revision"
         , P.map Langs <| P.s "language"
         , P.map Changelog <| P.s "changelog"
         , P.map Privacy <| P.s "privacy"
@@ -104,76 +155,85 @@ toPath r =
         Redirect next ->
             toPath next
 
+        WithOptions _ next ->
+            toPath next
+
         Home ->
-            "/"
+            ""
 
         NormalItems _ _ _ ->
-            "/loot"
+            "loot"
 
         NormalItem id ->
-            "/loot/" ++ id
+            "loot/" ++ id
 
         UniqueItems _ ->
-            "/loot/unique"
+            "loot/unique"
 
         UniqueItem id ->
-            "/loot/unique/" ++ id
+            "loot/unique/" ++ id
 
         Skills ->
-            "/skill"
+            "skill"
 
         Skill id ->
-            "/skill/" ++ id
+            "skill/" ++ id
 
         SkillVariant id ->
-            "/skill-variant/" ++ id
+            "skill-variant/" ++ id
 
         Affixes ->
-            "/affix"
+            "affix"
 
         Gems ->
-            "/gem"
+            "gem"
 
         Passives ->
-            "/passive"
+            "passive"
 
         Reagents ->
-            "/reagent"
+            "reagent"
 
         City name ->
-            "/city/" ++ name
+            "city/" ++ name
 
         Ailments ->
-            "/ailment"
+            "ailment"
 
         Source type_ id ->
-            "/source/" ++ type_ ++ "/" ++ id
+            "source/" ++ type_ ++ "/" ++ id
 
         Offline type_ id ->
-            "/offline/" ++ type_ ++ "/" ++ id
+            "offline/" ++ type_ ++ "/" ++ id
 
         Search _ ->
-            "/search"
+            "search"
 
         Table t ->
-            "/table/" ++ t
+            "table/" ++ t
 
         BuildRevisions ->
-            "/build-revisions"
+            "build-revision"
 
         Langs ->
-            "/language"
+            "language"
 
         Changelog ->
-            "/changelog"
+            "changelog"
 
         Privacy ->
-            "/privacy"
+            "privacy"
 
 
 toQuery : Route -> List B.QueryParameter
 toQuery route =
     case route of
+        Redirect next ->
+            toQuery next
+
+        WithOptions o next ->
+            toQuery next
+
         Search query ->
             [ query |> Maybe.map (B.string "q") ] |> List.filterMap identity
 
@@ -204,6 +264,9 @@ toAnalytics mroute =
 
         Just route ->
             case route of
+                WithOptions _ next ->
+                    toAnalytics <| Just next
+
                 NormalItem _ ->
                     toPath <| NormalItem "ID"
 
@@ -235,6 +298,11 @@ toAnalytics mroute =
 href : Route -> Html.Attribute msg
 href =
     toString >> Html.Attributes.href
+
+
+hrefOptions : Options -> Route -> Html.Attribute msg
+hrefOptions o =
+    toString >> (++) (optionsPath o) >> Html.Attributes.href
 
 
 pushUrl : Maybe Nav.Key -> Route -> Cmd msg
@@ -289,3 +357,71 @@ keywords kws =
 normalItems : Maybe Int -> List String -> List String -> Route
 normalItems tier kws okws =
     NormalItems tier (keywords kws) (keywords okws)
+
+
+toOptions : Route -> Options
+toOptions route =
+    case route of
+        WithOptions o _ ->
+            o
+
+        _ ->
+            emptyOptions
+
+
+toMOptions : Maybe Route -> Options
+toMOptions =
+    Maybe.Extra.unwrap emptyOptions toOptions
+
+
+mapOptions : (Options -> Options) -> Route -> Route
+mapOptions fn route0 =
+    let
+        apply opts route =
+            if opts == emptyOptions then
+                route
+
+            else
+                WithOptions opts route
+    in
+    case route0 of
+        WithOptions opts0 next ->
+            apply (fn opts0) next
+
+        _ ->
+            apply (fn emptyOptions) route0
+
+
+{-| Turn Options from a withOptions url into a <base> tag, defining the leading path.
+
+I want every url to accept a set of possible options - language, Wolcen version,
+feature switches. But I _don't_ want to have to pass those options through every
+view to every possible href; an extra parameter literally everywhere would be messy.
+The rarely-seen <base> solves this problem - it affects all links in my program,
+without requiring that I parameterize this context throughout the rest of my program!
+
+<https://developer.mozilla.org/en-US/docs/Web/HTML/Element/base>
+
+Technically this is only allowed in <head>, but it seems to work just fine in <body>.
+If it stops working there, this approach is still possible with ports, which can
+update <head> just fine - but this is easier to implement.
+
+I have not seen this technique used in any other programs; I made it up myself.
+It's unproven, so it might be an awful idea? Be careful about copying it!
+
+-}
+base : Options -> Html.Html msg
+base o =
+    Html.node "base" [ Html.Attributes.href <| optionsPath o ] []
+
+
+optionsPath : Options -> String
+optionsPath o =
+    [ [ "" ]
+    , o.lang |> Maybe.Extra.unwrap [] (\l -> [ "l", l ])
+    , o.revision |> Maybe.Extra.unwrap [] (\v -> [ "v", v ])
+    , o.features |> Maybe.Extra.unwrap [] (\f -> [ "f", f ])
+    , [ "" ]
+    ]
+        |> List.concat
+        |> String.join "/"
