@@ -16,7 +16,7 @@ const dest = path.join(util.PATH.DATAMINE_BUILD, 'datamine.json')
 async function main() {
   const json = await buildJson()
   await mkdirp(path.dirname(dest))
-  return fs.writeFile(dest, JSON.stringify(json, null, 2))
+  return fs.writeFile(dest, JSON.stringify(json))
 }
 async function buildJson() {
   const revisionF = await fs.readFile(path.join(util.PATH.DATAMINE_BUILD, 'revision.json'))
@@ -29,7 +29,6 @@ async function buildJson() {
   }))
 
   const gameXmls = await glob(path.join('Game', '**', '*.xml'), {cwd: util.PATH.DATAMINE})
-  console.log(JSON.stringify(gameXmls, null, 2))
   const gameJsons = await Promise.all(gameXmls.map(async src => {
     const f = await fs.readFile(path.join(util.PATH.DATAMINE, src))
     const xml = await f.toString()
