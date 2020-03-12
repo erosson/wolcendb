@@ -51,7 +51,7 @@ view lang dm uid =
                 in
                 [ ol [ class "breadcrumb" ]
                     [ a [ class "breadcrumb-item active", Route.href Route.Home ] [ text "Home" ]
-                    , a [ class "breadcrumb-item active", Route.href Route.Skills ] [ text "Skills" ]
+                    , a [ class "breadcrumb-item active", Route.href <| Route.Skills <| Skill.apocForm skill ] [ text "Skills" ]
                     , a [ class "breadcrumb-item active", Route.href <| Route.Skill skill.uid ] [ text label ]
                     ]
                 , div [ class "card" ]

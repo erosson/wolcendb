@@ -30,6 +30,7 @@ async function main() {
       "Game/Umbra/CityBuilding/**/*.xml",
       "Game/Umbra/Loot/MagicEffects/Affixes/Craft/GemFamiliesAndCoveredEffectIDs.xml",
       "Game/Umbra/Gameplay/Curve_StatusAilments/*.xml",
+      "Game/Umbra/Skills/NewSkills/Apocalyptic/**/*.xml",
     ],
   })
 }

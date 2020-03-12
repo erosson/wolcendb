@@ -1,0 +1,42 @@
+<MetaData>
+  <Skill UID="apo_rogue_multihit" ESkill="apo_rogue_multihit" Keywords="magic_spell">
+    <VisualFeedback TrailPresetBase="apo" FeedbackPresetBase="Player_Apo_rogue" BloodDecalOrientation="forward" />
+    <Animation AnimationDrivenMovement="0" ActionString_In="apo_skill_04_in" ActionString_Loop="apo_skill_04_loop" ActionString_Out="apo_skill_04_out" />
+    <CastingParams RequiresApocalypticForm="1" CastBone="R_Weapon_Bone" MinimumCastDuration="0.3" MaintainedCast="1" KeepAliveAfterReleasing="1" />
+    <HUD HUDPicture="../u_resources/spells/Active_Skills/rogue_clones.png" UIName="@ui_APO_Rogue_Skill03" Lore="@ui_APO_Rogue_Skill03_Lore" ActiveEffectTitle="" ActiveEffectDesc="" ASTTreeNumber="1" ShowParamsInAST="Cost,ROSTime,Cooldown,Range,DamageDetail,StatusAilmentsChance,Explosion" ShowParamsInTooltip="Cost,Cooldown,DamageOverview,StatusAilmentsChance" />
+    <Aggression TargetValueOnHit="20" />
+    <DamagePreset DamagePreset="Apo_Rogue_Strong" Multiplier="0.5" Type="rend" />
+    <Cooldown Cooldown="10.0" CooldownTrigger="OnEnd" CooldownPerLevel="0" />
+    <ResourceCostMaintained ApoResourceCostPerSecond="-50" />
+    <ParticleList>
+      <Particle Key="trail" Name="U_ApocalypticForm.Rogue_ApocalypticForm.Movement_Projectile" Offset="0,0,1.5" Direction="0,1,0" Scale="1" Bone="Bip01" InstantKill="0" />
+      <Particle Key="charging_blink" Name="U_ApocalypticForm.Rogue_ApocalypticForm.Ult_Trigger_01" Offset="0,0,0" Direction="0,0,1" Scale="1" Bone="Bip01 Head" InstantKill="0" />
+      <Particle Key="charging_blink_final_target" Name="U_ApocalypticForm.Rogue_ApocalypticForm.Ult_Impact_Ready_01" Offset="0,0,0" Direction="0,0,1" Scale="1.5" Bone="Bip01 Head" InstantKill="0" />
+      <Particle Key="charging_blink_final_caster" Name="U_ApocalypticForm.Rogue_ApocalypticForm.Ult_Impact_Ready_01" Offset="0,0,0" Direction="0,0,1" Scale="1.5" Bone="Bip01 Head" InstantKill="0" />
+      <Particle Key="clone_aura" Name="U_ApocalypticForm.Rogue_ApocalypticForm.Skill2_Projectile_Short_03" Offset="0,0,1" Direction="0,1,0" Scale="1.25" Bone="" InstantKill="0" />
+      <Particle Key="blood" Name="U_ApocalypticForm.Rogue_ApocalypticForm.Ult_Blood_01" Offset="0,0,1" Direction="0,1,0" Scale="1.25" Bone="Bip01 Spine2" InstantKill="0" Delay="0.2" />
+      <Particle Key="final_impact_1" Name="U_ApocalypticForm.Rogue_ApocalypticForm.Ult_Impact_Main" Offset="0,0,0" Direction="0,0,1" Scale="1.8" Bone="" InstantKill="0" Delay="0.25" />
+      <Particle Key="final_impact_2" Name="U_ApocalypticForm.Rogue_ApocalypticForm.Ult_Impact_01" Offset="0,0,0" Direction="0,1,0" Scale="1.4" Bone="" InstantKill="0" Delay="0.25" />
+      <Particle Key="camera_charge" Name="U_ApocalypticForm.Rogue_ApocalypticForm.Ult_Carging_Camera_01" Offset="0,0,0" Direction="0,1,0" Scale="1" Bone="" Delay="0" />
+    </ParticleList>
+    <Shapes>
+      <Entry Key="target_update" ShapeName="aporogue_multihit_target_update_shape" />
+    </Shapes>
+    <Specific_ApoRogue_Multihit FinalHitSkillUID="apo_rogue_multihit_final" DashDuration="0.1" DamageTickRate="0.2" CloneSpawnDelay="0.1" ForceStun="0" MaxDuration="4">
+      <SpecificSoundTrigger OnDashOutEnd="Play_Skill_APO_Rogue_Multihit_Main" />
+      <CloneAnim CloneCdf="Objects/characters/players/Apocalyptic/APO_Rogue/apo_rogue_clone.cdf" CloneAnimIn="apo_rogue_skill_multihit_01_in" CloneAnimLoop="apo_rogue_skill_multihit_01_loop" CloneAnimOutSuccess="apo_rogue_skill_multihit_01_out_clone" CloneAnimOutFailure="apo_rogue_skill_multihit_01_out_fail" />
+      <PlayerAnim PlayerAnimTagIn="apo_skill_03_in" PlayerAnimTagLoop="apo_skill_03_loop" PlayerAnimTagOutSuccess="apo_skill_03_success" PlayerAnimTagOutFailure="apo_skill_03_fail" />
+      <ChargeSteps>
+        <Step TimeToReachStep="1.0" DamagePercentBonus="75" CloneSpawnRadius="4" CloneSpawnAngle="60" />
+        <Step TimeToReachStep="1.0" DamagePercentBonus="100" CloneSpawnRadius="4" CloneSpawnAngle="-60" />
+        <Step TimeToReachStep="1.0" DamagePercentBonus="150" />
+      </ChargeSteps>
+    </Specific_ApoRogue_Multihit>
+    <SoundTrigger OnAnimStart="Play_Skill_APO_Rogue_Multihit_StartDash" OnAnimLoopIn="" OnHit="" OnAnimLoopOut="Stop_Skill_APO_Rogue_Multihit_Main" />
+  </Skill>
+  <Skill UID="apo_rogue_multihit_final" ESkill="default_empty" Keywords="magic_spell">
+    <VisualFeedback TrailPresetBase="apo" FeedbackPresetBase="Player_Apo_rogue" BloodDecalOrientation="forward" />
+    <Aggression TargetValueOnHit="20" />
+    <DamagePreset DamagePreset="Apo_Rogue_Strong" Multiplier="3" Type="rend" />
+  </Skill>
+</MetaData>

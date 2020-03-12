@@ -503,7 +503,7 @@ viewTitle model =
                 ( Route.UniqueItem name, _, _ ) ->
                     "WolcenDB: unique item"
 
-                ( Route.Skills, _, _ ) ->
+                ( Route.Skills _, _, _ ) ->
                     "WolcenDB: skill list"
 
                 ( Route.Skill name, RemoteData.Success lang, RemoteData.Success dm ) ->
@@ -600,8 +600,9 @@ viewBody { ssr } model mroute =
                                     Page.UniqueItem.view lang dm name
                                         |> Maybe.withDefault viewNotFound
 
-                                Route.Skills ->
-                                    Page.Skills.view lang dm
+                                Route.Skills form ->
+                                    Page.Skills.view lang dm form
+                                        |> Maybe.withDefault viewNotFound
 
                                 Route.Skill s ->
                                     Page.Skill.view lang dm s

@@ -3,6 +3,9 @@ Changelog
 
 ---
 
+#### 2020-03-12
+- Added skill data for apocalypse forms.
+
 #### 2020-03-10
 - Updated to Wolcen v1.0.9.0. [Wolcen v1.0.8.0 to v1.0.9.0 source differences: no changes.](https://gitlab.com/erosson/wolcendb/-/commit/3b8b0f24b87a7e8b1822d2e8f29799deb7574693)
 

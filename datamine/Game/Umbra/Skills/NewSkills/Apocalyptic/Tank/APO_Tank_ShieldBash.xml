@@ -1,0 +1,22 @@
+<MetaData>
+  <Skill UID="apo_tank_shieldbash" ESkill="apo_tank_shieldbash" Keywords="">
+    <VisualFeedback TrailPresetBase="apo" BloodDecalOrientation="forward" />
+    <Animation AnimationDrivenMovement="1" ActionString="apo_skill_01" />
+    <CastingParams CastBone="R_weapon_bone" RequiresApocalypticForm="1" />
+    <HUD HUDPicture="../u_resources/spells/Active_Skills/apo_tank_shieldbash.png" UIName="@ui_APO_Tank_Skill01" Lore="@ui_APO_Tank_Skill01_Lore" ActiveEffectTitle="" ActiveEffectDesc="" ASTTreeNumber="8" ShowParamsInAST="Cost,ROSTime,DamageDetail,Cooldown,Range" ShowParamsInTooltip="Cost,DamageOverview,Cooldown,Range" />
+    <Enneract PickableParticle_MoveToGround="U_CommonVFX_02.Esseract.Esseract_Projectile.Fire" PickableParticle_OnGround_Shape="U_CommonVFX_02.Esseract.Esseract_Shape.Circle_Fire" PickableParticle_OnGround_Damage="U_CommonVFX_02.Esseract.Esseract_Color.Fire" PickableParticle_OnGround_Symbol="U_CommonVFX_02.Esseract.Esseract_Symbol.ABANAZAR" PickableParticle_OnGround_Indicator="U_CommonVFX_02.Esseract.Esseract_Indicator.Fire" PickableParticle_OnGround_Pickup="U_CommonVFX_02.Esseract.Esseract_Loot.Fire" SkillLearningParticle="U_CommonVFX.Skill_Learn.Skill_Learn_Fire" Inventory_HUDPicture="../u_resources/enneracts/fireball.png" Inventory_LoreDesc="@ui_enneract_lore" />
+    <Aggression TargetValueOnHit="20" />
+    <DamagePreset DamagePreset="Apo_Tank_Strong" Multiplier="2" Type="sacred" />
+    <Cooldown Cooldown="5.0" CooldownTrigger="OnEnd" />
+    <SoundTrigger OnAnimStart="Play_Skill_APO_Tank_ShieldBash_HammerGround" OnHit="Play_Skill_APO_Tank_ShieldBash_Impact" />
+    <Range AttackRange="20" />
+    <ResourceCost ApoResourceCost="-60" ROSTransfertDuration="1.5" />
+    <DamageZone Duration="10" RateOfFire="0.33" MaxEntityHits="20" />
+    <Shapes>
+      <Entry Key="pull" ShapeName="ApoTank_ShieldBash_PullShape" />
+      <Entry Key="bash" ShapeName="ApoTank_ShieldBash_DamageShape" />
+      <Entry Key="wave" ShapeName="ApoTank_ShieldBash_EnergyWave" />
+    </Shapes>
+    <Specific_ApoTank_ShieldBash PullCenterOffset="3" PullDuration="0.4" PullDistance="10" PullHeight=".4" WaveDamageMultiplier=".2" SoundTriggerOnBash="Play_Skill_APO_Tank_ShieldBash_ShieldSwing" AlternativeHitSound="Play_skill_BrutalStrike_Impact" />
+  </Skill>
+</MetaData>

@@ -1,0 +1,52 @@
+<MetaData>
+  <Skill UID="apo_warrior_brutalstrike" ESkill="player_brutalstrike" Keywords="explosion,magic_spell">
+    <Animation ActionString="player_brutalstrike_charge_windup" />
+    <CastingParams CastBone="Bip01 Spine" RequiresApocalypticForm="1" />
+    <HUD HUDPicture="../u_resources/spells/Active_Skills/warrior_brutal_sword.png" UIName="@ui_APO_Warrior_Skill03" Lore="@ui_APO_Warrior_Skill03_Lore" ActiveEffectTitle="" ActiveEffectDesc="" ASTTreeNumber="1" ShowParamsInAST="Cost,ROSTime,Cooldown,Range,DamageDetail,StatusAilmentsChance,Explosion" ShowParamsInTooltip="Cost,Cooldown,DamageOverview,StatusAilmentsChance" />
+    <Enneract PickableParticle_MoveToGround="U_CommonVFX_02.Esseract.Esseract_Projectile.Physical" PickableParticle_OnGround_Shape="U_CommonVFX_02.Esseract.Esseract_Shape.Circle_Physical" PickableParticle_OnGround_Damage="U_CommonVFX_02.Esseract.Esseract_Color.Physical" PickableParticle_OnGround_Symbol="U_CommonVFX_02.Esseract.Esseract_Symbol.HEPHAARON" PickableParticle_OnGround_Indicator="U_CommonVFX_02.Esseract.Esseract_Indicator.Physical" PickableParticle_OnGround_Pickup="U_CommonVFX_02.Esseract.Esseract_Loot.Physical" SkillLearningParticle="U_CommonVFX.Skill_Learn.Skill_Learn_Physical" Inventory_HUDPicture="../u_resources/enneracts/warrior_brutal_sword.png" Inventory_LoreDesc="@ui_enneract_lore" />
+    <Aggression TargetValueOnHit="20" />
+    <DamagePreset DamagePreset="Apo_Warrior_Strong" Multiplier="1" Type="fire" />
+    <StatusAilment>
+      <burn Chance="100" ChanceMode="override" Stacks="1" StacksMode="override" />
+    </StatusAilment>
+    <PostProcess CameraZoomStartTime=".2" CameraZoomDuration="0.5" CameraUnzoomDuration="1" CameraZoomFov="50" ChromaShiftStartTime="0.4" ChromaShiftLerpDuration="0.2" ChromaShiftRestoreLerpDuration="0.15" ChromaShiftMaxAmount=".65" />
+    <Cooldown Cooldown="20" CooldownTrigger="OnEnd" CooldownPerLevel="0" />
+    <ResourceCost ApoResourceCost="-200" />
+    <ParticleList>
+      <Particle Key="sword1" Name="U_ApocalypticForm.Worrior_ApocalypticFrom.Ulti_Sword_01" Bone="Bip01 R Weapon_Bone" Direction="0,1,0" />
+      <Particle Key="sword2" Name="U_ApocalypticForm.Worrior_ApocalypticFrom.Ulti_Sword_02" Bone="Bip01 R Weapon_Bone" Delay="0" Direction="0,1,0" />
+      <Particle Key="sword3" Name="U_ApocalypticForm.Worrior_ApocalypticFrom.Ulti_Sword_03" Bone="Bip01 R Weapon_Bone" Delay="0" Direction="0,1,0" />
+      <Particle Key="disappear1" Name="U_ApocalypticForm.Worrior_ApocalypticFrom.Ulti_Sword_01_Disappear" Direction="0,1,0" Bone="Bip01 R Weapon_Bone" />
+      <Particle Key="disappear2" Name="U_ApocalypticForm.Worrior_ApocalypticFrom.Ulti_Sword_02_Disappear" Direction="0,1,0" Bone="Bip01 R Weapon_Bone" />
+      <Particle Key="disappear3" Name="U_ApocalypticForm.Worrior_ApocalypticFrom.Ulti_Sword_03_Disappear" Direction="0,1,0" Bone="Bip01 R Weapon_Bone" />
+      <Particle Key="swipe1" Name="U_ApocalypticForm.Worrior_ApocalypticFrom.Ulti_Swipe_03" OffSet="0,1.5,1" Scale="2.4" Delay="0.45" Direction="0,1,0" />
+      <Particle Key="swipe2" Name="U_ApocalypticForm.Worrior_ApocalypticFrom.Ulti_Swipe_03" OffSet="0,2.4,1" Scale="3.35" Delay="0.45" Direction="0,1,0" />
+      <Particle Key="swipe3" Name="U_ApocalypticForm.Worrior_ApocalypticFrom.Ulti_Swipe_03" OffSet="0,3,1" Scale="4.15" Delay="0.45" Direction="0,1,0" />
+      <Particle Key="impact1" Name="U_ApocalypticForm.Worrior_ApocalypticFrom.Ulti_Impact_01" Scale="1.5" Direction="0,1,0" />
+      <Particle Key="impact2" Name="U_ApocalypticForm.Worrior_ApocalypticFrom.Ulti_Impact_02" Scale="1.5" Direction="0,1,0" />
+      <Particle Key="impact3" Name="U_ApocalypticForm.Worrior_ApocalypticFrom.Ulti_Impact_03" Scale="1.5" Direction="0,1,0" />
+      <Particle Key="body_gain" Name="U_ApocalypticForm.Worrior_ApocalypticFrom.Frenzy_Consumtion_Body_03" Bone="Bip01 Spine2" Direction="0,-1,0" />
+      <Particle Key="body_gain_final" Name="U_ApocalypticForm.Worrior_ApocalypticFrom.Frenzy_Consumtion_Body_04" Bone="Bip01 Spine2" Scale="1.5" Direction="1,0,0" />
+      <Particle Key="ground_gain" Name="U_ApocalypticForm.Worrior_ApocalypticFrom.Ulti_Charging_Ground" Direction="0,0,1" Scale="1" />
+      <Particle Key="camera1" Name="U_ApocalypticForm.Worrior_ApocalypticFrom.Charging_Camera" />
+      <Particle Key="camera2" Name="U_ApocalypticForm.Worrior_ApocalypticFrom.Charging_Camera1" />
+      <Particle Key="camera3" Name="U_ApocalypticForm.Worrior_ApocalypticFrom.Charging_Camera2" />
+      <Particle Key="camera_out" Name="U_ApocalypticForm.Worrior_ApocalypticFrom.Charging_Camera_Final" />
+      <Particle Key="attack_body" Name="U_ApocalypticForm.Worrior_ApocalypticFrom.Frenzy_Consumtion_Body_02" Bone="Bip01" Scale="1.5" OffSet="0,0.5,0" Direction="0,0,1" />
+    </ParticleList>
+    <Shapes>
+      <Entry Key="small" ShapeName="apowarrior_brutalstrike_shape_small" />
+      <Entry Key="medium" ShapeName="apowarrior_brutalstrike_shape_medium" />
+      <Entry Key="large" ShapeName="apowarrior_brutalstrike_shape_large" />
+    </Shapes>
+    <Specific_BrutalStrike HitForwardOffset="3.4" DamagePercentPerApoCharge="200" IsApo="1" SoundTrigger_ChargeLevelReached_1="Play_Skill_APO_Warrior_BrutalStrike_Charge_Point_01" SoundTrigger_ChargeLevelReached_2="Play_Skill_APO_Warrior_BrutalStrike_Charge_Point_02" SoundTrigger_ChargeLevelReached_3="Play_Skill_APO_Warrior_BrutalStrike_Charge_Point_03" SoundTrigger_ChargeLevelReached_4="Play_Skill_APO_Warrior_BrutalStrike_Charge_Point_04" />
+    <Explosion ExplosionRadius="2" />
+    <VisualFeedback TrailPresetBase="apo" FeedbackPresetBase="Player_skill_brutalstrike" BloodDecalOrientation="forward" />
+    <ChargedSkill WindupAnim="player_brutalstrike_charge_windup" FollowupAnim="player_brutalstrike_charge_followup">
+      <Step TimeToReachStep="0.4" AssociatedAnim="player_brutalstrike_charge_loop_01" SpellDamagePercent="2" />
+      <Step TimeToReachStep="0.8" AssociatedAnim="player_brutalstrike_charge_loop_02" SpellDamagePercent="4" />
+      <Step TimeToReachStep="1.2" AssociatedAnim="player_brutalstrike_charge_loop_03" SpellDamagePercent="8" />
+    </ChargedSkill>
+    <SoundTrigger OnAnimLoopIn="Play_Skill_APO_Warrior_BrutalStrike_Charge_Base" OnAnimStart="Play_Skill_APO_Warrior_BrutalStrike_Charge_Point_Start" OnAnimLoopOut="Play_Skill_APO_Warrior_BrutalStrike_Swing" OnAnimCast="Play_Skill_APO_Warrior_BrutalStrike_Impact" OnHit="Play_Skill_APO_Warrior_BrutalStrike_Lightning_Damage" OnInterrupt="Stop_Skill_APO_Warrior_BrutalStrike_Charge_Sound" />
+  </Skill>
+</MetaData>

@@ -1,0 +1,16 @@
+<MetaData>
+  <Skill UID="apo_rogue_airstrike" ESkill="apo_rogue_airstrike" Keywords="explosion,magic_spell">
+    <VisualFeedback TrailPresetBase="apo" FeedbackPresetBase="Player_Apo_rogue" BloodDecalOrientation="forward" />
+    <Animation ActionString="apo_skill_02" />
+    <CastingParams RequiresApocalypticForm="1" />
+    <HUD HUDPicture="../u_resources/spells/Active_Skills/rogue_multidash.png" UIName="@ui_APO_Rogue_Skill02" Lore="@ui_APO_Rogue_Skill02_Lore" ActiveEffectTitle="" ActiveEffectDesc="" ASTTreeNumber="1" ShowParamsInAST="Cost,ROSTime,Cooldown,Range,DamageDetail,StatusAilmentsChance,Explosion" ShowParamsInTooltip="Cost,Cooldown,DamageOverview,StatusAilmentsChance" />
+    <Aggression TargetValueOnHit="20" />
+    <DamagePreset DamagePreset="Apo_Rogue_Strong" Multiplier="1" Type="rend" />
+    <Cooldown Cooldown="5.0" CooldownTrigger="OnEnd" CooldownPerLevel="0" />
+    <ResourceCost ApoResourceCost="-50" />
+    <DamageZone UseDamageZoneList="1">
+      <Entry DamageZoneName="Apo_Rogue_AirStrike_DZ" />
+    </DamageZone>
+    <SoundTrigger OnAnimStart="Play_Skill_APO_Rogue_Airstrike" OnHit="Play_LambachP1_MeleeAttack_Impact" />
+  </Skill>
+</MetaData>

@@ -3,6 +3,9 @@ module Datamine.Skill exposing
     , SkillAST
     , SkillASTVariant
     , SkillVariant
+    , apocForm
+    , apocFormNone
+    , apocForms
     , astsDecoder
     , decoder
     , desc
@@ -22,6 +25,7 @@ import Dict.Extra
 import Json.Decode as D
 import Json.Decode.Pipeline as P
 import Lang exposing (Lang)
+import List.Extra
 import Result.Extra
 import Set exposing (Set)
 
@@ -70,6 +74,25 @@ type alias SkillModifier =
     , param2 : Float
     , uiDesc : String
     }
+
+
+apocForms =
+    [ "mage", "rogue", "tank", "warrior" ]
+
+
+apocFormNone =
+    "player"
+
+
+{-| Skill apocalypse form isn't encoded anywhere, but uids look consistent
+-}
+apocForm : { s | uid : String } -> Maybe String
+apocForm s =
+    let
+        uid =
+            String.toLower s.uid
+    in
+    apocForms |> List.Extra.find (\f -> String.startsWith ("apo_" ++ f) uid || String.startsWith ("apo" ++ f) uid)
 
 
 img : { s | hudPicture : String } -> String
@@ -242,12 +265,13 @@ ignoredSkills =
     , "FrostNova_Zone_Shadow"
     , "FrostNova_Zone"
     , "UsePotion"
+    , "Introduction_LightningAttack"
     ]
 
 
 decoder : D.Decoder (List Skill)
 decoder =
-    Util.filteredJsons (\s -> String.contains "/Skills/NewSkills/Player/" s && not (List.any (\c -> String.contains c s) ignoredSkills))
+    Util.filteredJsons (\s -> String.contains "/Skills/NewSkills/" s && not (List.any (\c -> String.contains c s) ignoredSkills))
         |> D.map (List.map (\( f, d ) -> D.decodeValue (skillDecoder f) d))
         |> D.map (Result.Extra.combine >> Result.mapError D.errorToString)
         |> Util.resultDecoder

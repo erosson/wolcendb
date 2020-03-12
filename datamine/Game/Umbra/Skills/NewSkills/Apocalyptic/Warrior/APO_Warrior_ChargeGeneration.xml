@@ -1,0 +1,21 @@
+<MetaData>
+  <Skill ESkill="apo_warrior_chargegeneration" Keywords="" UID="apo_warrior_chargegeneration">
+    <CastingParams RequiresApocalypticForm="1" />
+    <Animation ActionString="apo_skill_01" />
+    <HUD HUDPicture="../u_resources/spells/Active_Skills/warrior_slam.png" UIName="@ui_APO_Warrior_Skill01" Lore="@ui_APO_Warrior_Skill01_Lore" ActiveEffectTitle="" ActiveEffectDesc="" ASTTreeNumber="1" ShowParamsInAST="Cost,ROSTime,Cooldown,Range,Projectiles,DamageDetail,StatusAilmentsChance,Explosion,Slow" ShowParamsInTooltip="Cost,Cooldown,DamageOverview,StatusAilmentsChance" />
+    <Enneract PickableParticle_MoveToGround="U_CommonVFX_02.Esseract.Esseract_Projectile.Fire" PickableParticle_OnGround_Shape="U_CommonVFX_02.Esseract.Esseract_Shape.Circle_Fire" PickableParticle_OnGround_Damage="U_CommonVFX_02.Esseract.Esseract_Color.Fire" PickableParticle_OnGround_Symbol="U_CommonVFX_02.Esseract.Esseract_Symbol.EZANEAL" PickableParticle_OnGround_Indicator="U_CommonVFX_02.Esseract.Esseract_Indicator.Fire" PickableParticle_OnGround_Pickup="U_CommonVFX_02.Esseract.Esseract_Loot.Fire" SkillLearningParticle="U_CommonVFX.Skill_Learn.Skill_Learn_Fire" Inventory_HUDPicture="../u_resources/enneracts/warrior_slam.png" Inventory_LoreDesc="@ui_enneract_lore" />
+    <Aggression TargetValueOnHit="60" />
+    <DamagePreset DamagePreset="Apo_Warrior_Strong" Multiplier="0.5" Type="fire" />
+    <Cooldown Cooldown="0" CooldownPerLevel="0" />
+    <ResourceCost ApoResourceCost="-20" />
+    <ParticleList>
+      <Particle Key="impact_gain" Name="U_ApocalypticForm.Worrior_ApocalypticFrom.Frenzy_Gain_Impact" Direction="0,1,0" Scale="1.2" />
+      <Particle Key="impact_wind" Name="U_ApocalypticForm.Worrior_ApocalypticFrom.Frenzy_Gain_Impact_Wnd_01" Direction="0,1,0" Scale="1" />
+    </ParticleList>
+    <Specific_ApoWarrior_ChargeGeneration AnimationScaleSpeedPerCharge="30" ChargesGeneratedPerUse="1" AlternativeAnimationTagId="apo_skill_01_loop" ImpactVFXAngle="5" DamageShapeForwardOffset="5" />
+    <Shapes>
+      <Entry Key="Basic" ShapeName="apowarrior_chargegeneration_shape" />
+    </Shapes>
+    <SoundTrigger OnAnimStart="Play_Skill_APO_Warrior_ChargeGeneration_Start" OnAnimCast="Play_Skill_APO_Warrior_ChargeGeneration_Slam" OnCriticalHit="Play_Skill_APO_Warrior_DefaultAttack_Impact" OnHit="Play_Skill_APO_Warrior_DefaultAttack_Impact" />
+  </Skill>
+</MetaData>

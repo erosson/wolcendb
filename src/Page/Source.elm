@@ -49,7 +49,7 @@ getSource lang dm type_ id =
                         in
                         ( label
                         , [ Just s.source, ast ] |> List.filterMap identity
-                        , [ a [ class "breadcrumb-item active", Route.href Route.Skills ] [ text "Skills" ]
+                        , [ a [ class "breadcrumb-item active", Route.href <| Route.Skills <| Skill.apocForm s ] [ text "Skills" ]
                           , a [ class "breadcrumb-item active", Route.href <| Route.Skill id ] [ text label ]
                           , a [ class "breadcrumb-item active", Route.href <| Route.Source type_ id ] [ text "Source" ]
                           ]
@@ -59,7 +59,7 @@ getSource lang dm type_ id =
         "skill-variant" ->
             Dict.get (String.toLower id) dm.skillVariantsByUid
                 |> Maybe.map
-                    (\( v, _ ) ->
+                    (\( v, s ) ->
                         let
                             label =
                                 Skill.label lang v |> Maybe.withDefault "???"
@@ -70,7 +70,7 @@ getSource lang dm type_ id =
                         in
                         ( label
                         , [ Just v.source, ast ] |> List.filterMap identity
-                        , [ a [ class "breadcrumb-item active", Route.href Route.Skills ] [ text "Skill Variants" ]
+                        , [ a [ class "breadcrumb-item active", Route.href <| Route.Skills <| Skill.apocForm s ] [ text "Skill Variants" ]
                           , a [ class "breadcrumb-item active" ] [ text label ]
                           , a [ class "breadcrumb-item active", Route.href <| Route.Source type_ id ] [ text "Source" ]
                           ]

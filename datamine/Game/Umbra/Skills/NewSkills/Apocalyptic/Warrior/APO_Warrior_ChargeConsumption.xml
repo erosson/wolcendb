@@ -1,0 +1,24 @@
+<MetaData>
+  <Skill ESkill="apo_warrior_chargeconsumption" Keywords="" UID="apo_warrior_chargeconsumption">
+    <CastingParams RequiresApocalypticForm="1" />
+    <Animation ActionString="apo_skill_02" />
+    <HUD HUDPicture="../u_resources/spells/Active_Skills/warrior_explosion.png" UIName="@ui_APO_Warrior_Skill02" Lore="@ui_APO_Warrior_Skill02_Lore" ActiveEffectTitle="" ActiveEffectDesc="" ASTTreeNumber="1" ShowParamsInAST="Cost,ROSTime,Cooldown,Range,Projectiles,DamageDetail,StatusAilmentsChance,Explosion,Slow" ShowParamsInTooltip="Cost,Cooldown,DamageOverview,StatusAilmentsChance" />
+    <Enneract PickableParticle_MoveToGround="U_CommonVFX_02.Esseract.Esseract_Projectile.Fire" PickableParticle_OnGround_Shape="U_CommonVFX_02.Esseract.Esseract_Shape.Circle_Fire" PickableParticle_OnGround_Damage="U_CommonVFX_02.Esseract.Esseract_Color.Fire" PickableParticle_OnGround_Symbol="U_CommonVFX_02.Esseract.Esseract_Symbol.EZANEAL" PickableParticle_OnGround_Indicator="U_CommonVFX_02.Esseract.Esseract_Indicator.Fire" PickableParticle_OnGround_Pickup="U_CommonVFX_02.Esseract.Esseract_Loot.Fire" SkillLearningParticle="U_CommonVFX.Skill_Learn.Skill_Learn_Fire" Inventory_HUDPicture="../u_resources/enneracts/warrior_explosion.png" Inventory_LoreDesc="@ui_enneract_lore" />
+    <Aggression TargetValueOnHit="80" />
+    <DamagePreset DamagePreset="Apo_Warrior_Strong" Multiplier="2" Type="fire" />
+    <StatusAilment>
+      <burn Chance="100" ChanceMode="override" Stacks="5" StacksMode="override" />
+    </StatusAilment>
+    <Cooldown Cooldown="5" CooldownTrigger="OnEnd" CooldownPerLevel="0" />
+    <ResourceCost ApoResourceCost="-100" />
+    <ParticleList>
+      <Particle Key="indicator" Name="U_ApocalypticForm.Worrior_ApocalypticFrom.Frenzy_Consumtion_Indicator" Direction="0,1,0" Scale="2" />
+      <Particle Key="impact" Name="U_ApocalypticForm.Worrior_ApocalypticFrom.Frenzy_Consumtion_Impact" Scale="1.5" />
+    </ParticleList>
+    <Specific_ApoWarrior_ChargeConsumption DamageShapeForwardOffset="5" DamageGainPercentPerCharge="100" />
+    <Shapes>
+      <Entry Key="Basic" ShapeName="apowarrior_chargeconsumption_shape" />
+    </Shapes>
+    <SoundTrigger OnAnimStart="Play_Skill_APO_Warrior_ChargeConsumption_Roar" OnAnimCast="Play_Skill_APO_Warrior_ChargeConsumption_Explode" OnCriticalHit="Play_Skill_APO_Warrior_DefaultAttack_Impact" OnHit="Play_Skill_APO_Warrior_DefaultAttack_Impact" />
+  </Skill>
+</MetaData>

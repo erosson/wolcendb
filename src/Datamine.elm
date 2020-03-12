@@ -72,6 +72,7 @@ type alias Datamine =
     , skillASTsByName : Dict String SkillAST
     , skillVariantsByUid : Dict String ( SkillVariant, Skill )
     , skillASTVariantsByUid : Dict String SkillASTVariant
+    , skillsByApocForm : Dict String (List Skill)
     , gemsByName : Dict String Gem
     , nonmagicAffixesById : Dict String NonmagicAffix
     , magicAffixesById : Dict String MagicAffix
@@ -186,6 +187,7 @@ index raw =
     , skillASTsByName = raw.skillASTs |> Dict.Extra.fromListBy (.name >> String.toLower)
     , skillVariantsByUid = skillVariants |> Dict.Extra.fromListBy (Tuple.first >> .uid >> String.toLower)
     , skillASTVariantsByUid = raw.skillASTs |> List.concatMap .variants |> Dict.Extra.fromListBy (.uid >> String.toLower)
+    , skillsByApocForm = raw.skills |> Dict.Extra.groupBy (Skill.apocForm >> Maybe.withDefault Skill.apocFormNone)
     , gemsByName = raw.gems |> Dict.Extra.fromListBy (.name >> String.toLower)
     , nonmagicAffixesById = raw.affixes.nonmagic |> Dict.Extra.fromListBy (.affixId >> String.toLower)
     , magicAffixesById = raw.affixes.magic |> Dict.Extra.fromListBy (.affixId >> String.toLower)

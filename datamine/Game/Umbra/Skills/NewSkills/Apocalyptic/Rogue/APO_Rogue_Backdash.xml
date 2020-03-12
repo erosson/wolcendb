@@ -1,0 +1,15 @@
+<MetaData>
+  <Skill UID="apo_rogue_backdash" ESkill="apo_rogue_backdash" Keywords="magic_spell">
+    <VisualFeedback TrailPresetBase="apo" FeedbackPresetBase="Player_Apo_rogue" BloodDecalOrientation="forward" />
+    <Animation ActionString="apo_skill_01" />
+    <CastingParams CastBone="Bip01 Pelvis" RequiresApocalypticForm="1" />
+    <HUD HUDPicture="../u_resources/spells/Active_Skills/rogue_vault.png" UIName="@ui_APO_Rogue_Skill01" Lore="@ui_APO_Rogue_Skill01_Lore" ActiveEffectTitle="" ActiveEffectDesc="" ASTTreeNumber="1" ShowParamsInAST="Cost,ROSTime,Cooldown,Range,DamageDetail,StatusAilmentsChance,Explosion" ShowParamsInTooltip="Cost,Cooldown,DamageOverview,StatusAilmentsChance" />
+    <Aggression TargetValueOnHit="20" />
+    <DamagePreset DamagePreset="Apo_Rogue_Strong" Multiplier="2" Type="rend" />
+    <Cooldown Cooldown="0.0" CooldownPerLevel="0" />
+    <ResourceCost ApoResourceCost="-40" />
+    <Projectile Name="apo_rogue_backdash_projectile" ProjectileCount="5" AngleBetweenProjectiles="15" />
+    <Specific_ApoRogue_Backdash DashSpeed="12" DashDistance="4" DamagePercentBonusPerChargeUsed="10" />
+    <SoundTrigger OnAnimStart="Play_Skill_APO_Rogue_Backdash" />
+  </Skill>
+</MetaData>

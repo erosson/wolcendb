@@ -1,0 +1,13 @@
+<MetaData>
+  <Skill ESkill="default_melee" Keywords="default_melee,attack_skill" UID="apo_mage_apotransform">
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="Player_Apo_mage" TrailPresetBase="apo" />
+    <HUD HUDPicture="../u_resources/spells/Active_Skills/warrior_autoattack.png" UIName="@ui_APO_Mage_DefaultSkill" Lore="@ui_APO_Mage_DefaultSkill_Lore" />
+    <Aggression TargetValueOnHit="10" />
+    <ResourceCost ApoResourceCost="-50" />
+    <DamagePreset DamagePreset="Apo_Mage_Strong" Multiplier="3" Type="umbra" />
+    <Shapes>
+      <Entry ShapeName="apo_mage_apotransform_shape" />
+    </Shapes>
+    <CastingParams RequiresApocalypticForm="1" />
+  </Skill>
+</MetaData>

@@ -1,0 +1,26 @@
+<MetaData>
+  <Skill UID="apo_rogue_moveattack" ESkill="apo_rogue_moveattack" Keywords="magic_spell">
+    <VisualFeedback TrailPresetBase="apo" FeedbackPresetBase="Player_Apo_rogue" BloodDecalOrientation="forward" />
+    <Animation AnimationDrivenMovement="0" ActionString_In="apo_skill_move_in" ActionString_Loop="apo_skill_move_loop" ActionString_Out="apo_skill_move_out" />
+    <CastingParams RequiresApocalypticForm="1" />
+    <HUD HUDPicture="../u_resources/spells/Active_Skills/rogue_dash.png" UIName="@ui_APO_Rogue_MoveSkill" Lore="@ui_APO_Rogue_MoveSkill_Lore" ActiveEffectTitle="" ActiveEffectDesc="" ASTTreeNumber="1" ShowParamsInAST="Cost,ROSTime,Cooldown,Range,DamageDetail,StatusAilmentsChance,Explosion" ShowParamsInTooltip="Cost,Cooldown,DamageOverview,StatusAilmentsChance" />
+    <Aggression TargetValueOnHit="20" />
+    <DamagePreset DamagePreset="Apo_Rogue_Strong" Multiplier="0.5" Type="rend" />
+    <Cooldown Cooldown="0.5" CooldownTrigger="OnEnd" CooldownPerLevel="0" />
+    <ResourceCost ApoResourceCost="-10" />
+    <Shapes>
+      <Entry Key="impact" ShapeName="aporogue_moveattack_impact_shape" />
+    </Shapes>
+    <ParticleList>
+      <Particle Key="trail" Name="U_ApocalypticForm.Rogue_ApocalypticForm.Movement_Projectile" Offset="0,0,1.5" Direction="0,1,0" Scale="1" InstantKill="0" />
+    </ParticleList>
+    <Specific_ApoRogue_MoveAttack CollisionDamageSkill="apo_rogue_moveattack_collision" CollisionShapeWidth="2.5" DashSpeed="180" DashDistance="14" />
+    <SoundTrigger OnAnimStart="Play_Skill_APO_Rogue_MoveAttack" OnHit="Play_Skill_BladeSlinger_Impact" PlayAttackVoice="1" />
+  </Skill>
+  <Skill UID="apo_rogue_moveattack_collision" ESkill="default_empty" Keywords="magic_spell">
+    <VisualFeedback TrailPresetBase="apo" FeedbackPresetBase="Player_Apo_rogue" BloodDecalOrientation="forward" />
+    <Aggression TargetValueOnHit="20" />
+    <DamagePreset DamagePreset="Apo_Rogue_Strong" Multiplier="0.5" Type="rend" />
+    <SoundTrigger OnHit="Play_Skill_BladeSlinger_Impact" />
+  </Skill>
+</MetaData>

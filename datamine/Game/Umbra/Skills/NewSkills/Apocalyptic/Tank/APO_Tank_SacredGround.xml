@@ -1,0 +1,30 @@
+<MetaData>
+  <Skill UID="apo_tank_sacredground" ESkill="player_sacredground" Keywords="magic_spell">
+    <Animation ActionString="apo_skill_03" ScaleWithSpellCastingSpeed="1" AnimationDrivenMovement="1" />
+    <CastingParams RequiresApocalypticForm="1" />
+    <HUD HUDPicture="../u_resources/spells/Active_Skills/apo_tank_sacredground.png" UIName="@ui_APO_Tank_Skill03" Lore="@ui_APO_Tank_Skill03_Lore" ActiveEffectTitle="" ActiveEffectDesc="" ASTTreeNumber="3" ShowParamsInAST="Cost,ROSTime,DamageDetail,Cooldown,Range" ShowParamsInTooltip="Cost,DamageOverview,Cooldown" />
+    <Enneract PickableParticle_MoveToGround="U_CommonVFX_02.Esseract.Esseract_Projectile.Sacred" PickableParticle_OnGround_Shape="U_CommonVFX_02.Esseract.Esseract_Shape.Circle_Sacred" PickableParticle_OnGround_Damage="U_CommonVFX_02.Esseract.Esseract_Color.Sacred" PickableParticle_OnGround_Symbol="U_CommonVFX_02.Esseract.Esseract_Symbol.ANATHEA" PickableParticle_OnGround_Indicator="U_CommonVFX_02.Esseract.Esseract_Indicator.Sacred" PickableParticle_OnGround_Pickup="U_CommonVFX_02.Esseract.Esseract_Loot.Sacred" SkillLearningParticle="U_CommonVFX.Skill_Learn.Skill_Learn_Sacred" Inventory_HUDPicture="../u_resources/enneracts/sacred_ground.png" Inventory_LoreDesc="@ui_enneract_lore" />
+    <Aggression TargetValueOnHit="0" />
+    <Cooldown Cooldown="20" CooldownTrigger="OnEnd" CooldownPerLevel="0" />
+    <Shapes>
+      <Entry ShapeName="apo_sacredground_shape" />
+    </Shapes>
+    <ResourceCost ApoResourceCost="-200" />
+    <ParticleList>
+      <Particle Key="Area" Name="U_ApocalypticForm.Heavy_ApocalypticForm.Shield_Area_01" Direction="0,1,0" Scale="1" />
+      <Particle Key="AreaDisappear" Name="U_ApocalypticForm.Heavy_ApocalypticForm.Shield_Area_01_Finish" Direction="0,0,0" Scale="1" />
+      <Particle Key="Heal" Name="U_Buff.Heal.Usage_HolyHeal_Loop_01" Direction="0,0,1" Offset="0,0,1" Scale="1" />
+      <Particle Key="SacredLightning" Name="U_ApocalypticForm.Heavy_ApocalypticForm.Ult_Lightning_Impact_01" Direction="0,0,1" Offset="0,0,1" Scale="1" />
+      <Particle Key="Camera_In" Name="U_ApocalypticForm.Heavy_ApocalypticForm.Ult_Camera_Fadeout" Direction="0,0,1" />
+      <Particle Key="Camera_Out" Name="U_ApocalypticForm.Heavy_ApocalypticForm.Ult_Camera" Direction="0,0,1" Delay="1.41" />
+    </ParticleList>
+    <HealthTransfer Value="10" Timer="0" ValuePerLevel="5" />
+    <Specific_SacredGround HealCaster="1" HealthRegenUpdateTick="1" TimeToLive="6" AttachToTarget="1" CameraFollowBone="Bip01 Spine" DamageVFXCount="3" ApoLightningVFXDelay="0.1" SoundTrigger_Lightning="Play_Skill_APO_Tank_SacredGround_Lightning" SoundTrigger_ZoneSpawn="Play_Skill_APO_Tank_SacredGround_Aura_Loop" SoundTrigger_ZoneDeleted="Stop_Skill_APO_Tank_SacredGround_Aura_Loop" DamageTickrate="2.0">
+      <Buff PassiveSkillName="AST_ApoSacredGround_Buff" Targets="Allies" />
+      <Buff PassiveSkillName="AST_ApoSacredGround_Debuff" Targets="Enemies" />
+    </Specific_SacredGround>
+    <DamagePreset DamagePreset="Apo_Tank_Strong" Multiplier="1" Type="sacred" />
+    <SoundTrigger OnAnimStart="Play_Skill_APO_Tank_SacredGround" />
+    <Targeting TargetingType="self" />
+  </Skill>
+</MetaData>

@@ -1,0 +1,24 @@
+<MetaData>
+  <Skill ESkill="apo_warrior_moveattack" Keywords="" UID="apo_warrior_moveattack">
+    <CastingParams RequiresApocalypticForm="1" />
+    <Animation AnimationDrivenMovement="1" ActionString_In="apo_skill_move_in" ActionString_Loop="apo_skill_move_loop" ActionString_Out="apo_skill_move_out" />
+    <HUD HUDPicture="../u_resources/spells/Active_Skills/warrior_dash.png" UIName="@ui_APO_Warrior_MoveSkill" Lore="@ui_APO_Warrior_MoveSkill_Lore" ActiveEffectTitle="" ActiveEffectDesc="" ASTTreeNumber="1" ShowParamsInAST="Cost,ROSTime,Cooldown,Range,Projectiles,DamageDetail,StatusAilmentsChance,Explosion,Slow" ShowParamsInTooltip="Cost,Cooldown,DamageOverview,StatusAilmentsChance" />
+    <Enneract PickableParticle_MoveToGround="U_CommonVFX_02.Esseract.Esseract_Projectile.Fire" PickableParticle_OnGround_Shape="U_CommonVFX_02.Esseract.Esseract_Shape.Circle_Fire" PickableParticle_OnGround_Damage="U_CommonVFX_02.Esseract.Esseract_Color.Fire" PickableParticle_OnGround_Symbol="U_CommonVFX_02.Esseract.Esseract_Symbol.EZANEAL" PickableParticle_OnGround_Indicator="U_CommonVFX_02.Esseract.Esseract_Indicator.Fire" PickableParticle_OnGround_Pickup="U_CommonVFX_02.Esseract.Esseract_Loot.Fire" SkillLearningParticle="U_CommonVFX.Skill_Learn.Skill_Learn_Fire" Inventory_HUDPicture="../u_resources/enneracts/bomb.png" Inventory_LoreDesc="@ui_enneract_lore" />
+    <Aggression TargetValueOnHit="60" />
+    <DamagePreset DamagePreset="Apo_Warrior_Strong" Multiplier="1.5" Type="fire" />
+    <Cooldown Cooldown="0" CooldownTrigger="OnEnd" CooldownPerLevel="0" />
+    <ResourceCost ApoResourceCost="-60" />
+    <ParticleList>
+      <Particle Key="wind" Name="U_ApocalypticForm.Worrior_ApocalypticFrom.MovementSkill_Wind_01" Offset="0,0,2" Direction="0,1,0" Scale="1.25" Bone="Bip01" />
+      <Particle Key="dust" Name="U_CommonVFX.Dust.Dust_dash_Loop_01_1" Direction="0,-1,0" Scale="1.25" Bone="Bip01" />
+      <Particle Key="start" Name="U_ApocalypticForm.Worrior_ApocalypticFrom.MovementSkill_Start_01" Offset="0,0.5,2" Direction="0,1,0" Scale="1.25" Bone="Bip01" />
+    </ParticleList>
+    <Specific_ApoWarrior_MoveAttack MaxTravelDistance="250" TravelSpeed="20" CollisionDamageFactor="0.1" TrashBlownAwayDistance="3.5" />
+    <Blownaway Height="0.3" Distance="3.5" StunDuration="0.0" />
+    <Shapes>
+      <Entry Key="collision" ShapeName="apowarrior_moveattack_collision_shape" />
+      <Entry Key="impact" ShapeName="apowarrior_moveattack_impact_shape" />
+    </Shapes>
+    <SoundTrigger OnAnimStart="Play_Skill_APO_Warrior_MoveAttack_Start" OnAnimCast="Play_Skill_APO_Warrior_MoveAttack_Explosion" />
+  </Skill>
+</MetaData>

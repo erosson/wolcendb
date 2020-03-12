@@ -1,0 +1,30 @@
+<MetaData>
+  <Skill ESkill="player_bulleye" Keywords="default_melee,attack_skill" UID="apo_mage_multitarget">
+    <Animation AnimationDrivenMovement="0" ActionString_In="apo_skill_01_in" ActionString_Loop="apo_skill_01_loop" ActionString_Out="apo_skill_01_out" />
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="Player_Apo_mage" TrailPresetBase="apo" />
+    <HUD HUDPicture="../u_resources/spells/Active_Skills/apo_mage_multitarget.png" UIName="@ui_APO_Mage_Skill02" Lore="@ui_APO_Mage_Skill02_Lore" ShowParamsInAST="Cost,ROSTime,DamageDetail,Cooldown,Range" ShowParamsInTooltip="Cost,DamageOverview,Cooldown" />
+    <CastingParams RequiresApocalypticForm="1" CastBone="Bip01 BackFX" MaintainedCast="1" KeepAliveAfterReleasing="1" CanCastWhileMoving="0" />
+    <Range AttackRange="50" />
+    <Aggression TargetValueOnHit="10" />
+    <ResourceCost ApoResourceCost="-100" />
+    <Cooldown Cooldown="5" CooldownTrigger="OnEnd" CooldownPerLevel="0" />
+    <DamagePreset DamagePreset="Apo_Mage_Strong" Multiplier="0.4" Type="umbra" />
+    <ParticleList>
+      <Particle Key="TargetMark" Name="U_ApocalypticForm.Mage_ApocalypticFrom.Skill2_Gaining" Direction="0,1,0" Scale="0.8" Bone="Bip01 Spine" />
+      <Particle Key="TargetBase" Name="U_ApocalypticForm.Mage_ApocalypticFrom.Skill2_Target_Under_01" Direction="0,1,0" Scale="1" Bone="Bip01" />
+      <Particle Key="Gun" Name="U_ApocalypticForm.Mage_ApocalypticFrom.Skill2_Gaining" Direction="0,1,0" Scale="1" Bone="Bip01 BackFX" />
+      <Particle Key="Beam" Name="U_ApocalypticForm.Mage_ApocalypticFrom.Skill2_Beam_01" Direction="0,1,0" Scale="1" Bone="Bip01 BackFX" />
+      <Particle Key="InstantDamageImpact" Name="U_ApocalypticForm.Mage_ApocalypticFrom.Skill2_Impact" Direction="0,1,0" Scale="1.2" Bone="Bip01 Spine" />
+    </ParticleList>
+    <Specific_BullEye Shot="15" MaxTime="5" ShotAnimationScale="1" UseExplodingBullet="0" UseAlternativeSelection="1" InitialDamage="1.0" FinalDamage="1.0" MarkSizeMultiplier="0.30" MarkHeightMultiplier="0" ShotAllAtOnce="1" AllAtOnceDelay="0.1" LookAtTargetOnClick="1" LookAtTargetOnClickTurnRate="800" KillTargetMarkParticleOnCast="1" InstantDamageShapeWidth="1.2">
+      <OnClickAnim Tag="apo_alt_cast_01" />
+      <OnClickAnim Tag="apo_alt_cast_02" />
+      <Pose Tag="apo_alt_cast_03" />
+      <Pose Tag="apo_alt_cast_04" />
+    </Specific_BullEye>
+    <StatusAilment>
+      <stasis Chance="100" ChanceMode="override" Stacks="10" StacksMode="override" />
+    </StatusAilment>
+    <SoundTrigger OnHit="Play_APO_Mage_MultipleTarget_Impact" />
+  </Skill>
+</MetaData>

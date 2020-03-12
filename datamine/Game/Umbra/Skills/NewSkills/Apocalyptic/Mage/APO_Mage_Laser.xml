@@ -1,0 +1,122 @@
+<MetaData>
+  <Skill ESkill="apo_mage_laser" Keywords="default_melee,attack_skill" UID="apo_mage_laser">
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="Player_Apo_mage" TrailPresetBase="apo" />
+    <Animation ActionString="apo_skill_ult_in_01" ScaleWithAttackSpeed="1" AnimationDrivenMovement="0" />
+    <AnimationList>
+      <Animation Key="in_01" ActionString="apo_skill_ult_in_01" />
+      <Animation Key="loop_01" ActionString="apo_skill_ult_loop_01" />
+      <Animation Key="in_02" ActionString="apo_skill_ult_in_02" />
+      <Animation Key="loop_02" ActionString="apo_skill_ult_loop_02" />
+      <Animation Key="in_03" ActionString="apo_skill_ult_in_03" />
+      <Animation Key="loop_03" ActionString="apo_skill_ult_loop_03" />
+      <Animation Key="out" ActionString="apo_skill_ult_out" />
+    </AnimationList>
+    <HUD HUDPicture="../u_resources/spells/Active_Skills/apo_mage_laser.png" UIName="@ui_APO_Mage_Skill03" Lore="@ui_APO_Mage_Skill03_Lore" ShowParamsInAST="Cost,ROSTime,DamageDetail,Cooldown,Range" ShowParamsInTooltip="Cost,DamageOverview,Cooldown" />
+    <CastingParams RequiresApocalypticForm="1" MinimumCastDuration="0.7" MaintainedCast="1" KeepAliveAfterReleasing="1" MaximumTurnRate="30" />
+    <Aggression TargetValueOnHit="10" />
+    <DamagePreset DamagePreset="Apo_Mage_Strong" Multiplier="0.2" Type="umbra" />
+    <ResourceCostMaintained ApoResourceCostPerSecond="-40" />
+    <Cooldown Cooldown="10" CooldownTrigger="OnEnd" CooldownPerLevel="0" />
+    <ParticleList>
+      <Particle Key="beam_01" Name="U_ApocalypticForm.Mage_ApocalypticFrom.Ult_Beam_01_Loop" Offset="0,-1,2.5" Direction="0,0,-1" Scale="1.2" InstantKill="0" />
+      <Particle Key="beam_02" Name="U_ApocalypticForm.Mage_ApocalypticFrom.Ult_Beam_02_Loop" Offset="0,-1,2.5" Direction="0,0,-1" Scale="1.5" InstantKill="0" />
+      <Particle Key="beam_03" Name="U_ApocalypticForm.Mage_ApocalypticFrom.Ult_Beam_03_Loop" Offset="0,-1,2.5" Direction="0,0,-1" Scale="1.9" InstantKill="0" />
+      <Particle Key="camera_01" Name="U_ApocalypticForm.Mage_ApocalypticFrom.Ult_Camera_01" />
+      <Particle Key="camera_02" Name="U_ApocalypticForm.Mage_ApocalypticFrom.Ult_Camera_02" />
+      <Particle Key="camera_03" Name="U_ApocalypticForm.Mage_ApocalypticFrom.Ult_Camera_Final" />
+      <Particle Key="camera_fadeout_02" Name="U_ApocalypticForm.Mage_ApocalypticFrom.Ult_Camera_Fadeout" />
+      <Particle Key="camera_fadeout_03" Name="U_ApocalypticForm.Mage_ApocalypticFrom.Ult_Camera_Fadeout_Final" />
+    </ParticleList>
+    <SoundTrigger OnAnimLoopOut="Play_APO_Mage_Laser_Fire_ReturnPosition" />
+    <Shapes>
+      <Entry Key="beam_01" ShapeName="apo_mage_beam_shape_1" />
+      <Entry Key="circle_01" ShapeName="apo_mage_circle_shape_1" />
+      <Entry Key="beam_02" ShapeName="apo_mage_beam_shape_2" />
+      <Entry Key="circle_02" ShapeName="apo_mage_circle_shape_2" />
+      <Entry Key="beam_03" ShapeName="apo_mage_beam_shape_3" />
+      <Entry Key="circle_03" ShapeName="apo_mage_circle_shape_3" />
+    </Shapes>
+    <Specific_ApoMage_Laser DamageTickRate="0.20" DisableTurnDuringChargeStep="0">
+      <ChargeSteps>
+        <Step>
+          <Sound OnAnimStart="Play_APO_Mage_Laser_Fire" />
+          <Duration Value="1.2" />
+          <Damages BeamDamageSkill="apo_mage_laser_beam_01" CircleDamageSkill="apo_mage_laser_impact_01" />
+          <Anim In="in_01" Loop="loop_01" />
+          <VFX Beam="beam_01" Camera="camera_01" CameraFadeout="" />
+          <Shapes Beam="beam_01" Circle="circle_01" />
+        </Step>
+        <Step>
+          <Sound OnAnimStart="Play_APO_Mage_Laser_Fire_Step_2" />
+          <Duration Value="1.5" />
+          <Damages BeamDamageSkill="apo_mage_laser_beam_02" CircleDamageSkill="apo_mage_laser_impact_02" />
+          <Anim In="in_02" Loop="loop_02" />
+          <VFX Beam="beam_02" Camera="camera_02" CameraFadeout="camera_fadeout_02" />
+          <Shapes Beam="beam_02" Circle="circle_02" />
+        </Step>
+        <Step>
+          <Sound OnAnimStart="Play_APO_Mage_Laser_Fire_Step_3" OnAnimEnd="Play_APO_Mage_Laser_Fire_Step_3_Loop_End" OnBeamSpawn="Play_APO_Mage_Laser_Fire_Step_3_Loop" OnBeamDisappear="Stop_APO_Mage_Laser_Fire_Step_3_Loop" />
+          <Duration Value="3" />
+          <Damages BeamDamageSkill="apo_mage_laser_beam_03" CircleDamageSkill="apo_mage_laser_impact_03" />
+          <Anim In="in_03" Loop="loop_03" />
+          <VFX Beam="beam_03" Camera="camera_03" CameraFadeout="camera_fadeout_03" />
+          <Shapes Beam="beam_03" Circle="circle_03" />
+        </Step>
+      </ChargeSteps>
+    </Specific_ApoMage_Laser>
+  </Skill>
+  <Skill UID="apo_mage_laser_beam_01" Keywords="default_melee,attack_skill" ESkill="default_empty">
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="Player_Apo_mage" TrailPresetBase="apo" />
+    <Aggression TargetValueOnHit="10" />
+    <DamagePreset DamagePreset="Apo_Mage_Strong" Multiplier="0.2" Type="umbra" />
+    <StatusAilment>
+      <stasis Chance="100" ChanceMode="override" Stacks="10" StacksMode="override" />
+    </StatusAilment>
+    <SoundTrigger OnHit="Play_APO_Mage_BigProjectile_Hit" OnKill="Play_OnKill_Impact_Lethal_Spell" />
+  </Skill>
+  <Skill UID="apo_mage_laser_beam_02" Keywords="default_melee,attack_skill" ESkill="default_empty">
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="Player_Apo_mage" TrailPresetBase="apo" />
+    <Aggression TargetValueOnHit="10" />
+    <DamagePreset DamagePreset="Apo_Mage_Strong" Multiplier="0.4" Type="umbra" />
+    <StatusAilment>
+      <stasis Chance="100" ChanceMode="override" Stacks="10" StacksMode="override" />
+    </StatusAilment>
+    <SoundTrigger OnHit="Play_APO_Mage_BigProjectile_Hit" OnKill="Play_OnKill_Impact_Lethal_Spell" />
+  </Skill>
+  <Skill UID="apo_mage_laser_beam_03" Keywords="default_melee,attack_skill" ESkill="default_empty">
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="Player_Apo_mage" TrailPresetBase="apo" />
+    <Aggression TargetValueOnHit="10" />
+    <DamagePreset DamagePreset="Apo_Mage_Strong" Multiplier="0.6" Type="umbra" />
+    <StatusAilment>
+      <stasis Chance="100" ChanceMode="override" Stacks="10" StacksMode="override" />
+    </StatusAilment>
+    <SoundTrigger OnHit="Play_APO_Mage_BigProjectile_Hit" OnKill="Play_OnKill_Impact_Lethal_Spell" />
+  </Skill>
+  <Skill UID="apo_mage_laser_impact_01" Keywords="default_melee,attack_skill" ESkill="default_empty">
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="Player_Apo_mage" TrailPresetBase="apo" />
+    <Aggression TargetValueOnHit="10" />
+    <DamagePreset DamagePreset="Apo_Mage_Strong" Multiplier="0.5" Type="umbra" />
+    <StatusAilment>
+      <stasis Chance="100" ChanceMode="override" Stacks="10" StacksMode="override" />
+    </StatusAilment>
+    <SoundTrigger OnHit="Play_APO_Mage_BigProjectile_Hit" OnKill="Play_OnKill_Impact_Lethal_Spell" />
+  </Skill>
+  <Skill UID="apo_mage_laser_impact_02" Keywords="default_melee,attack_skill" ESkill="default_empty">
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="Player_Apo_mage" TrailPresetBase="apo" />
+    <Aggression TargetValueOnHit="10" />
+    <DamagePreset DamagePreset="Apo_Mage_Strong" Multiplier="1" Type="umbra" />
+    <StatusAilment>
+      <stasis Chance="100" ChanceMode="override" Stacks="10" StacksMode="override" />
+    </StatusAilment>
+    <SoundTrigger OnHit="Play_APO_Mage_BigProjectile_Hit" OnKill="Play_OnKill_Impact_Lethal_Spell" />
+  </Skill>
+  <Skill UID="apo_mage_laser_impact_03" Keywords="default_melee,attack_skill" ESkill="default_empty">
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="Player_Apo_mage" TrailPresetBase="apo" />
+    <Aggression TargetValueOnHit="10" />
+    <DamagePreset DamagePreset="Apo_Mage_Strong" Multiplier="1.5" Type="umbra" />
+    <StatusAilment>
+      <stasis Chance="100" ChanceMode="override" Stacks="10" StacksMode="override" />
+    </StatusAilment>
+    <SoundTrigger OnHit="Play_APO_Mage_BigProjectile_Hit" OnKill="Play_OnKill_Impact_Lethal_Spell" />
+  </Skill>
+</MetaData>

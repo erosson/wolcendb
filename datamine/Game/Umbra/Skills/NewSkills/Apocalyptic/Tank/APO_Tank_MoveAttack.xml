@@ -1,0 +1,23 @@
+<MetaData>
+  <Skill UID="apo_tank_moveattack" ESkill="apo_tank_moveattack" Keywords="">
+    <VisualFeedback TrailPresetBase="apo" BloodDecalOrientation="forward" />
+    <Animation AnimationDrivenMovement="1" ActionString_In="apo_skill_move_in" ActionString_Loop="apo_skill_move_loop" ActionString_Out="apo_skill_move_out" />
+    <CastingParams CastBone="R_weapon_bone" RequiresApocalypticForm="1" />
+    <HUD HUDPicture="../u_resources/spells/Active_Skills/apo_tank_moveattack.png" UIName="@ui_APO_Tank_MoveSkill" Lore="@ui_APO_Tank_MoveSkill_Lore" ActiveEffectTitle="" ActiveEffectDesc="" ASTTreeNumber="8" ShowParamsInAST="Cost,ROSTime,DamageDetail,Cooldown,Range" ShowParamsInTooltip="Cost,DamageOverview,Cooldown" />
+    <Enneract PickableParticle_MoveToGround="U_CommonVFX_02.Esseract.Esseract_Projectile.Fire" PickableParticle_OnGround_Shape="U_CommonVFX_02.Esseract.Esseract_Shape.Circle_Fire" PickableParticle_OnGround_Damage="U_CommonVFX_02.Esseract.Esseract_Color.Fire" PickableParticle_OnGround_Symbol="U_CommonVFX_02.Esseract.Esseract_Symbol.ABANAZAR" PickableParticle_OnGround_Indicator="U_CommonVFX_02.Esseract.Esseract_Indicator.Fire" PickableParticle_OnGround_Pickup="U_CommonVFX_02.Esseract.Esseract_Loot.Fire" SkillLearningParticle="U_CommonVFX.Skill_Learn.Skill_Learn_Fire" Inventory_HUDPicture="../u_resources/enneracts/fireball.png" Inventory_LoreDesc="@ui_enneract_lore" />
+    <Aggression TargetValueOnHit="20" />
+    <DamagePreset DamagePreset="Apo_Tank_Strong" Multiplier="2" Type="sacred" />
+    <Cooldown Cooldown="3.5" CooldownTrigger="OnEnd" />
+    <SoundTrigger OnAnimStart="Play_Skill_APO_Tank_MoveAttack_Jump" OnAnimCast="Play_Skill_APO_Tank_MoveAttack_Land" />
+    <Range AttackRange="20" />
+    <ResourceCost ApoResourceCost="-10" ROSTransfertDuration="1.2" />
+    <Shapes>
+      <Entry Key="impact" ShapeName="ApoTank_movement_ImpactShape" />
+    </Shapes>
+    <Specific_ApoTank_MoveAttack FlightDuration="0.05" DamageGainPercentPerApoStack="10" LateralToleranceArrivalPos="10" HorizontalToleranceArrivalPos="8" FallbackPositionsAmount="4" />
+    <ParticleList>
+      <Particle Key="Impact" Name="U_ApocalypticForm.Heavy_ApocalypticForm.Apo_Jump_Impact_01" Delay="0.25" />
+      <Particle Key="Lightning" Name="U_CinematicVFX_01.Intro_End.Sacred_Hit_01" Scale="2" Delay="0.25" />
+    </ParticleList>
+  </Skill>
+</MetaData>

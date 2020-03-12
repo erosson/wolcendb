@@ -33,7 +33,7 @@ type Route
     | NormalItem String
     | UniqueItems (Maybe String)
     | UniqueItem String
-    | Skills
+    | Skills (Maybe String)
     | Skill String
     | SkillVariant String
     | Affixes
@@ -105,7 +105,7 @@ baseParser : P.Parser (Route -> a) a
 baseParser =
     P.oneOf
         [ P.map Home <| P.top
-        , P.map Skills <| P.s "skill"
+        , P.map Skills <| P.s "skill" <?> Q.string "form"
         , P.map Skill <| P.s "skill" </> P.string
         , P.map SkillVariant <| P.s "skill-variant" </> P.string
         , P.map Affixes <| P.s "affix"
@@ -173,7 +173,7 @@ toPath r =
         UniqueItem id ->
             "loot/unique/" ++ id
 
-        Skills ->
+        Skills form ->
             "skill"
 
         Skill id ->
@@ -246,6 +246,9 @@ toQuery route =
             , tier |> Maybe.map (B.int "tier")
             ]
                 |> List.filterMap identity
+
+        Skills form ->
+            [ form |> Maybe.map (B.string "form") ] |> List.filterMap identity
 
         _ ->
             []

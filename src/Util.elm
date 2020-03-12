@@ -39,3 +39,8 @@ formatFloat digits f =
         _ ->
             -- TODO french decimals? 1.234.567,89 vs 1,234,567.89
             s
+
+
+titleCase : String -> String
+titleCase =
+    String.split " " >> List.map (\w -> String.toUpper (String.left 1 w) ++ String.dropLeft 1 w) >> String.join " "

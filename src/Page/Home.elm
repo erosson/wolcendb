@@ -1,12 +1,14 @@
 module Page.Home exposing (view)
 
 import Datamine exposing (Datamine)
+import Datamine.Skill as Skill exposing (Skill)
 import Dict exposing (Dict)
 import Html as H exposing (..)
 import Html.Attributes as A exposing (..)
 import Html.Events as E exposing (..)
 import Maybe.Extra
 import Route exposing (Route)
+import Util
 
 
 view : Datamine -> List (Html msg)
@@ -25,16 +27,14 @@ view dm =
             [ div [ class "card" ]
                 [ div [ class "card-header" ] [ text "Player" ]
                 , ul [ class "list-group list-group-flush" ]
-                    [ li [ class "list-group-item" ] [ a [ Route.href Route.Skills ] [ text "Skills" ] ]
+                    [ li [ class "list-group-item" ] [ a [ Route.href <| Route.Skills Nothing ] [ text "Skills" ] ]
                     , li [ class "list-group-item" ] [ a [ Route.href Route.Passives ] [ text "Passives" ] ]
                     , li [ class "list-group-item" ] [ a [ Route.href Route.Ailments ] [ text "Ailments" ] ]
                     ]
-                ]
-            , div [ class "card" ]
-                [ div [ class "card-header" ] [ text "City" ]
-                , ul [ class "list-group list-group-flush" ]
-                    [ li [ class "list-group-item" ] [ a [ Route.href <| Route.City "building_seekers_garrison" ] [ text "Seekers" ] ]
-                    , li [ class "list-group-item" ] [ a [ Route.href <| Route.City "building_trade_assembly" ] [ text "Trade Assembly" ] ]
+                , div [ class "card" ]
+                    [ div [ class "card-header" ] [ text "Apocalypse Forms" ]
+                    , ul [ class "list-group list-group-flush" ]
+                        (Skill.apocForms |> List.map (\form -> li [ class "list-group-item" ] [ a [ Route.href <| Route.Skills <| Just form ] [ text <| Util.titleCase form ] ]))
                     ]
                 ]
             ]
@@ -60,6 +60,13 @@ view dm =
                     , li [ class "list-group-item" ] [ a [ Route.href <| Route.UniqueItems <| Just "shield" ] [ text "Shields" ] ]
                     , li [ class "list-group-item" ] [ a [ Route.href <| Route.UniqueItems <| Just "armor" ] [ text "Armors" ] ]
                     , li [ class "list-group-item" ] [ a [ Route.href <| Route.UniqueItems <| Just "accessory" ] [ text "Accessories" ] ]
+                    ]
+                ]
+            , div [ class "card" ]
+                [ div [ class "card-header" ] [ text "City" ]
+                , ul [ class "list-group list-group-flush" ]
+                    [ li [ class "list-group-item" ] [ a [ Route.href <| Route.City "building_seekers_garrison" ] [ text "Seekers" ] ]
+                    , li [ class "list-group-item" ] [ a [ Route.href <| Route.City "building_trade_assembly" ] [ text "Trade Assembly" ] ]
                     ]
                 ]
             ]

@@ -1,0 +1,26 @@
+<MetaData>
+  <Skill ESkill="apo_mage_projectile" Keywords="default_ranged,attack_skill" UID="apo_mage_projectile">
+    <Animation ActionString="apo_skill_02" ScaleWithAttackSpeed="1" AnimationDrivenMovement="1" />
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="Player_Apo_mage" TrailPresetBase="apo" />
+    <HUD HUDPicture="../u_resources/spells/Active_Skills/apo_mage_projectile.png" UIName="@ui_APO_Mage_Skill01" Lore="@ui_APO_Mage_Skill01_Lore" ShowParamsInAST="Cost,ROSTime,DamageDetail,Cooldown,Range" ShowParamsInTooltip="Cost,DamageOverview,Cooldown" />
+    <Aggression TargetValueOnHit="10" />
+    <DamagePreset DamagePreset="Apo_Mage_Strong" Multiplier="2" Type="umbra" />
+    <Cooldown Cooldown="10" CooldownPerLevel="0" />
+    <CastingParams CastBone="Bip01 L Weapon_Bone" RequiresApocalypticForm="1" />
+    <Projectile Name="apo_mage_projectile_proj" ProjectileCount="1" PenetrationLimit="999" />
+    <Collisions IgnoreTerrainCollisions="1" />
+    <Range AttackRange="30" />
+    <ResourceCost ApoResourceCost="-20" />
+    <Recast Cooldown="5" CooldownTrigger="OnEnd" ApoResourceCost="-150" />
+    <Explosion ExplosionRadius="6" />
+    <Targeting TargetingType="entity" ComputeTargetPosAtCast="1" />
+    <ParticleList>
+      <Particle Key="Explosion" Name="U_ApocalypticForm.Mage_ApocalypticFrom.Explosion_Projectile_Impact_01" Direction="0,0,1" />
+    </ParticleList>
+    <Specific_ApoMage_Projectile ExplodeProjectileOnDecoyHit="1" ExplosionDamageMultiplier="2.5" DamagePercentBonusPerChargeUsed="3" />
+    <StatusAilment>
+      <stasis Chance="100" ChanceMode="override" Stacks="10" StacksMode="override" />
+    </StatusAilment>
+    <SoundTrigger OnAnimStart="Play_APO_Mage_BigProjectile_PreCast" OnAnimCast="Play_APO_Mage_BigProjectile_Cast" />
+  </Skill>
+</MetaData>
