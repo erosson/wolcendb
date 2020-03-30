@@ -3,6 +3,9 @@ Changelog
 
 ---
 
+#### 2020-03-30
+- Updated to Wolcen v1.0.11.0. [Wolcen v1.0.9.0 to v1.0.11.0 source differences.](https://gitlab.com/erosson/wolcendb/-/commit/1943f2be9b4b29820fce77da5136a3c61d1024ad) (I missed v1.0.10.0, sorry!)
+
 #### 2020-03-12
 - Added skill data for apocalypse forms.
 - Removed the tutorial attack skill from the skill list.
