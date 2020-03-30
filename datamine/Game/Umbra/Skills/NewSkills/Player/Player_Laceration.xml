@@ -85,7 +85,7 @@
   </Skill>
   <Skill UID="player_laceration_variant_11" ESkill="player_laceration_variant" Keywords="attack_skill">
     <HUD UIName="@ui_Variant_Laceration_variant_11" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_003.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_003.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_003.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_003.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_003.png" ShowParamsInTooltip="SpecificLaceration" />
-    <Specific_Laceration DamageMultiplierPerAilmentStack="0.01" />
+    <BaseDamageMultiplier AdditionalMultiplierFactorPerAilmentStack="0.01" MaxAdditionalMultiplierFactorFromAilmentStacks="0.3" />
   </Skill>
   <Skill UID="player_laceration_variant_12" ESkill="player_laceration_variant" Keywords="attack_skill">
     <HUD UIName="@ui_Variant_Laceration_variant_12" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_001.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_001.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_001.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_001.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_001.png" ShowParamsInTooltip="SpecificLaceration,DamageCritical" />

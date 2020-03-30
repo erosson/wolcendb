@@ -10,7 +10,7 @@
     <Cooldown Cooldown="5" CooldownPerLevel="0" />
     <ResourceCost ManaCost="-100" ManaCostPerLevel="0" ROSTransfertDuration="1" />
     <SoundTrigger OnAnimStart="Play_Skill_AetherBlast_Blast" />
-    <Blownaway Height="0.5" Distance="3.5" />
+    <Blownaway Height="0.5" Distance="3.5" StunDuration="1" />
     <DamageBase Type="shadow" Min="8" MinPerLevel="0" Max="9" MaxPerLevel="0" />
     <Shapes>
       <Entry ShapeName="Player_AetherBlast_Shape" />
@@ -25,7 +25,7 @@
   </Skill>
   <Skill UID="player_AetherBlast_variant_1" ESkill="default_variant">
     <HUD UIName="@ui_Variant_AetherBlast_variant_1" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_003.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_003.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_003.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_003.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_003.png" ShowParamsInTooltip="SpecificAetherBlast" />
-    <Blownaway StunDuration="1" />
+    <Blownaway StunDuration="0.5" />
   </Skill>
   <Skill UID="player_AetherBlast_variant_2" ESkill="default_variant">
     <HUD UIName="@ui_Variant_AetherBlast_variant_2" Lore="@ui_Variant_AetherBlast_variant_2_Lore" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_005.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_005.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_005.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_005.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_005.png" ShowParamsInTooltip="SpecificAetherBlast" />

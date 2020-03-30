@@ -9,8 +9,8 @@
   <Title>Untitled Spreadsheet</Title>
   <Author>Unknown Creator</Author>
   <LastAuthor>Alk0zAuruS Alk0zAuruS</LastAuthor>
-  <Created>2020-03-05T11:43:53Z</Created>
-  <LastSaved>2020-03-05T11:43:53Z</LastSaved>
+  <Created>2020-03-17T18:29:42Z</Created>
+  <LastSaved>2020-03-17T18:29:42Z</LastSaved>
   <Company>Microsoft Corporation</Company>
   <Version>16.00</Version>
  </DocumentProperties>
@@ -18,8 +18,8 @@
   <AllowPNG/>
  </OfficeDocumentSettings>
  <ExcelWorkbook xmlns="urn:schemas-microsoft-com:office:excel">
-  <WindowHeight>17625</WindowHeight>
-  <WindowWidth>32767</WindowWidth>
+  <WindowHeight>7980</WindowHeight>
+  <WindowWidth>21570</WindowWidth>
   <WindowTopX>32767</WindowTopX>
   <WindowTopY>32767</WindowTopY>
   <RefModeR1C1/>
@@ -2837,7 +2837,7 @@
    <Row ss:AutoFitHeight="0" ss:Height="15">
     <Cell ss:StyleID="s75"><Data ss:Type="String">ui_PALA_19_gameplaydesc</Data></Cell>
     <Cell ss:StyleID="s77"><Data ss:Type="String">When your Force Shield is above a certain percentage, your Spells that deal Sacred Damage deal increased Damage.\n\nWhen your Force Shield is below a certain threshold, your Attacks that deal Sacred Damage deal increased Damage.\n\nThis ability only works if your Force Shield is above 0.</Data></Cell>
-    <Cell ss:StyleID="s65"><Data ss:Type="String">Если уровень силового щита выше определённого значения, урон святых заклинаний увеличен.\n\nЕсли уровень силового щита выше определённого значения, урон святых атак увеличен.\n\nСпособность работает только если силовой щит выше 0.</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Если уровень силового щита выше определённого значения, урон святых заклинаний увеличен.\n\nЕсли уровень силового щита ниже определённого значения, урон святых атак увеличен.\n\nСпособность работает только если силовой щит выше 0.</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15">
     <Cell ss:StyleID="s75"><Data ss:Type="String">ui_PALA_20_name</Data></Cell>
@@ -3532,12 +3532,12 @@
    <Row ss:AutoFitHeight="0" ss:Height="15">
     <Cell ss:StyleID="s75"><Data ss:Type="String">ui_ASSA_19_loredesc</Data></Cell>
     <Cell ss:StyleID="s76"><Data ss:Type="String">&lt;font color=&quot;#c5b14d&quot;&gt;&lt;i&gt;“Performance: Good. Race from rallying point to target location accomplished in three seconds less than predicted. Target’s vitals dropped after a single strike.”&lt;/i&gt;&lt;/font&gt;\n\n&lt;font size=&quot;24&quot; color=&quot;#c5b14d&quot;&gt;&lt;b&gt;Alastor #273&lt;/b&gt;&lt;/font&gt;\n_________________________________________________________ \n &lt;font color=&quot;#c5b14d&quot;&gt;All Alastor #273 knew was service to the Republic. But when his Ascended abilities manifested, he realized his life would become forfeit in his masters’ eyes should they find out. He sought a lord who’d value his skills.\n\nThe Cult of Ezaneal required a hand to test the engines of chaos. They plugged metal and wire into him, neutralized hunger and pain, armed him with turrets and electric gauntlets. Empowered, he returned to the Republic\n\nDisposing of any witnesses to his powers, he rose to fame by executing an Edict for the Prince of Vulkaïn. Scholars would debate the ripples of this assassination, but Alastor #273 only felt the satisfaction of a target eliminated.&lt;/font&gt;</Data></Cell>
-    <Cell ss:StyleID="s65"><Data ss:Type="String">&lt;font color=&quot;#c5b14d&quot;&gt;&lt;i&gt;&quot;Производительность: Норма. На перемещение от исходной до целевой точки был затрачено за три секунды меньше, чем ожидалось. Жизненные показатели цели остановились после одного удара.&quot;&lt;/i&gt;&lt;/font&gt;\n\n&lt;font size=&quot;24&quot; color=&quot;#c5b14d&quot;&gt;&lt;b&gt;Аластор #273&lt;/b&gt;&lt;/font&gt;\n_________________________________________________________ \n &lt;font color=&quot;#c5b14d&quot;&gt;Всё, что знал Аластор №273 - это служение Республике. Но когда у него проявились способности Вознесённого, он осознал, что если хозяева узнают о них, его жизнь утратит смысл. Он начал искать лорда, который оценил бы его мастерство.\n\nКульту Эзанила требовался кто-то для испытания двигателей хаоса. Они напичкали его металлом и проводами, нейтрализовали голод и боль, вооружили турелями и электрическими перчатками. В Республику он вернулся уже основательно усиленным.\n\nИзбавившись от всех свидетелей своих способностей, он возвысился, выполнив Эдикт Сената против Принца Вулкайна. Ученые долго вели дебаты о последствиях этого убийства, но Аластор #273 чувствовал лишь удовлетворение от того, что цель уничтожена.&lt;/font&gt;</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">&lt;font color=&quot;#c5b14d&quot;&gt;&lt;i&gt;&quot;Производительность: Норма. На перемещение от исходной до целевой точки был затрачено на три секунды меньше ожидаемого. Жизненные показатели цели остановились после одного удара.&quot;&lt;/i&gt;&lt;/font&gt;\n\n&lt;font size=&quot;24&quot; color=&quot;#c5b14d&quot;&gt;&lt;b&gt;Аластор #273&lt;/b&gt;&lt;/font&gt;\n_________________________________________________________ \n &lt;font color=&quot;#c5b14d&quot;&gt;Всё, что знал Аластор №273 - это служение Республике. Но когда у него проявились способности Вознесённого, он осознал, что если хозяева узнают о них, его жизнь утратит смысл. Он начал искать лорда, который оценил бы его мастерство.\n\nКульту Эзанила требовался кто-то для испытания двигателей хаоса. Они напичкали его металлом и проводами, нейтрализовали голод и боль, вооружили турелями и электрическими перчатками. В Республику он вернулся уже основательно усиленным.\n\nИзбавившись от всех свидетелей своих способностей, он возвысился, выполнив Эдикт Сената против Принца Вулкайна. Ученые долго вели дебаты о последствиях этого убийства, но Аластор #273 чувствовал лишь удовлетворение от того, что цель уничтожена.&lt;/font&gt;</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15">
     <Cell ss:StyleID="s75"><Data ss:Type="String">ui_ASSA_19_gameplaydesc</Data></Cell>
-    <Cell ss:StyleID="s76"><Data ss:Type="String">You have &quot;Power Charge&quot; points. This resource is now used to activate any Device Skills or Skills that deal the Lightning Damage Type. The resource can have any value between -100 and 100. When Power Charge is a positive number, your Damage will be increased, and when it is a negative number, your Damage will be decreased.\n\nPower Charge is regenerated over time, and by using your Basic Attacks.\n\nThese Skills still consume their dedicated Resource in addition to &quot;Power Charge&quot;.</Data></Cell>
-    <Cell ss:StyleID="s65"><Data ss:Type="String">Вы получаете очки &quot;Энергозаряда&quot;. Этот ресурс теперь используется для активации устройств и молниевых умений. Ресурс может иметь значения от -100 до 100. Когда Энергозаряд положительный, ваш урон увеличивается, а когда отрицательный - снижается.\n\nЭнергозаряд восстанавливается со временем и при использовании Базовых атак.\n\nУстройства и молниевые умения всё ещё используют энергию в дополнение к Энергозаряду.</Data></Cell>
+    <Cell ss:StyleID="s76"><Data ss:Type="String">You have &quot;Power Charge&quot; points. This Resource is now used to activate any Device Skills or Skills that deal the Lightning Damage Type. The Resource can have any value between -100 and 100. When Power Charge is a positive number, your Damage will be increased, and when it is a negative number, your Damage will be decreased.\n\nPower Charge is regenerated over time, and by using your Basic Attacks.\n\nThese Skills still consume their dedicated Resource in addition to &quot;Power Charge&quot;.</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Вы получаете очки &quot;Энергозаряда&quot;. Этот ресурс теперь используется для активации устройств и молниевых умений. Ресурс может иметь значения от -100 до 100. Когда Энергозаряд положительный, ваш урон увеличивается, а когда отрицательный - снижается.\n\nЭнергозаряд восстанавливается со временем и при использовании Базовых атак.\n\nУстройства и молниевые умения в дополнение к Энергозаряду расходуют свой основной ресурс.</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15">
     <Cell ss:StyleID="s75"><Data ss:Type="String">ui_ASSA_20_name</Data></Cell>
@@ -3789,6 +3789,7 @@
     <VerticalResolution>600</VerticalResolution>
    </Print>
    <Selected/>
+   <LeftColumnVisible>1</LeftColumnVisible>
    <Panes>
     <Pane>
      <Number>3</Number>

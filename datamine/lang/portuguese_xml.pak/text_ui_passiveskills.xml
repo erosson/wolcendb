@@ -8,9 +8,9 @@
  <DocumentProperties xmlns="urn:schemas-microsoft-com:office:office">
   <Title>Untitled Spreadsheet</Title>
   <Author>Unknown Creator</Author>
-  <LastAuthor>Cthylla</LastAuthor>
-  <Created>2020-03-05T08:54:45Z</Created>
-  <LastSaved>2020-03-05T08:54:45Z</LastSaved>
+  <LastAuthor>Christopher</LastAuthor>
+  <Created>2020-03-17T16:49:25Z</Created>
+  <LastSaved>2020-03-17T16:49:25Z</LastSaved>
   <Company>Microsoft Corporation</Company>
   <Version>16.00</Version>
  </DocumentProperties>
@@ -18,10 +18,11 @@
   <AllowPNG/>
  </OfficeDocumentSettings>
  <ExcelWorkbook xmlns="urn:schemas-microsoft-com:office:excel">
-  <WindowHeight>17625</WindowHeight>
-  <WindowWidth>32767</WindowWidth>
+  <WindowHeight>7980</WindowHeight>
+  <WindowWidth>21570</WindowWidth>
   <WindowTopX>32767</WindowTopX>
   <WindowTopY>32767</WindowTopY>
+  <RefModeR1C1/>
   <ProtectStructure>False</ProtectStructure>
   <ProtectWindows>False</ProtectWindows>
  </ExcelWorkbook>
@@ -3535,8 +3536,8 @@
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s75"><Data ss:Type="String">ui_ASSA_19_gameplaydesc</Data></Cell>
-    <Cell ss:StyleID="s76"><Data ss:Type="String">You have &quot;Power Charge&quot; points. This resource is now used to activate any Device Skills or Skills that deal the Lightning Damage Type. The resource can have any value between -100 and 100. When Power Charge is a positive number, your Damage will be increased, and when it is a negative number, your Damage will be decreased.\n\nPower Charge is regenerated over time, and by using your Basic Attacks.\n\nThese Skills still consume their dedicated Resource in addition to &quot;Power Charge&quot;.</Data></Cell>
-    <Cell ss:StyleID="s65"><Data ss:Type="String">Você possui pontos de &lt;font color=&quot;#efd373&quot;&gt;Carga de Energia&lt;/font&gt;. Esse recurso é usado para ativar Habilidades Elétricas e de Dispositivos. O recurso pode ter qualquer valor entre -100 e 100. Quando a &lt;font color=&quot;#efd373&quot;&gt;Carga de Energia&lt;/font&gt; é um número positivo, seu dano é aumentado, e quando é um número negativo, seu dano é reduzido.\n\n&lt;font color=&quot;#efd373&quot;&gt;Carga de Energia&lt;/font&gt; é regenerada com o tempo e ao usa seu ataque básico.\n\nHabilidades Elétricas e de Dispositivos ainda usam seus recursos dedicados, além da &lt;font color=&quot;#efd373&quot;&gt;Carga de Energia&lt;/font&gt;.</Data></Cell>
+    <Cell ss:StyleID="s76"><Data ss:Type="String">You have &quot;Power Charge&quot; points. This Resource is now used to activate any Device Skills or Skills that deal the Lightning Damage Type. The Resource can have any value between -100 and 100. When Power Charge is a positive number, your Damage will be increased, and when it is a negative number, your Damage will be decreased.\n\nPower Charge is regenerated over time, and by using your Basic Attacks.\n\nThese Skills still consume their dedicated Resource in addition to &quot;Power Charge&quot;.</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Você possui pontos de &lt;font color=&quot;#efd373&quot;&gt;Carga de Energia&lt;/font&gt;. Esse recurso é usado para ativar Habilidades de Dispositivo ou que causem Dano Elétrico. O recurso pode ter qualquer valor entre -100 e 100. Quando a &lt;font color=&quot;#efd373&quot;&gt;Carga de Energia&lt;/font&gt; é um número positivo, seu dano é aumentado, e quando é um número negativo, seu dano é reduzido.\n\n&lt;font color=&quot;#efd373&quot;&gt;Carga de Energia&lt;/font&gt; é regenerada com o tempo e ao usar seu ataque básico.\n\nAs Habilidades ainda usam seus recursos dedicados, além da &lt;font color=&quot;#efd373&quot;&gt;Carga de Energia&lt;/font&gt;.</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s75"><Data ss:Type="String">ui_ASSA_20_name</Data></Cell>
@@ -3788,6 +3789,7 @@
     <VerticalResolution>600</VerticalResolution>
    </Print>
    <Selected/>
+   <LeftColumnVisible>1</LeftColumnVisible>
    <Panes>
     <Pane>
      <Number>3</Number>

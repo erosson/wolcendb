@@ -886,8 +886,8 @@
       <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
     </DropParams>
     <MagicEffect EffectId="health_regen_frequency">
-      <LoRoll ResourcePercentFloat="3" />
-      <HiRoll ResourcePercentFloat="10" />
+      <LoRoll ResourcePercentFloat="20" />
+      <HiRoll ResourcePercentFloat="22" />
     </MagicEffect>
   </Affix>
   <Affix AffixId="unique_the_thing_health_regen_pts_2" Class="" AffixType="default">

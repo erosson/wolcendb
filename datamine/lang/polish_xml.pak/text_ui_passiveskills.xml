@@ -8,9 +8,9 @@
  <DocumentProperties xmlns="urn:schemas-microsoft-com:office:office">
   <Title>Untitled Spreadsheet</Title>
   <Author>Unknown Creator</Author>
-  <LastAuthor>Cthylla</LastAuthor>
-  <Created>2020-03-05T08:48:50Z</Created>
-  <LastSaved>2020-03-05T08:48:50Z</LastSaved>
+  <LastAuthor>Christopher</LastAuthor>
+  <Created>2020-03-17T16:47:16Z</Created>
+  <LastSaved>2020-03-17T16:47:16Z</LastSaved>
   <Company>Microsoft Corporation</Company>
   <Version>16.00</Version>
  </DocumentProperties>
@@ -18,10 +18,11 @@
   <AllowPNG/>
  </OfficeDocumentSettings>
  <ExcelWorkbook xmlns="urn:schemas-microsoft-com:office:excel">
-  <WindowHeight>17625</WindowHeight>
-  <WindowWidth>32767</WindowWidth>
+  <WindowHeight>7980</WindowHeight>
+  <WindowWidth>21570</WindowWidth>
   <WindowTopX>32767</WindowTopX>
   <WindowTopY>32767</WindowTopY>
+  <RefModeR1C1/>
   <ProtectStructure>False</ProtectStructure>
   <ProtectWindows>False</ProtectWindows>
  </ExcelWorkbook>
@@ -3535,7 +3536,7 @@
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s75"><Data ss:Type="String">ui_ASSA_19_gameplaydesc</Data></Cell>
-    <Cell ss:StyleID="s76"><Data ss:Type="String">You have &quot;Power Charge&quot; points. This resource is now used to activate any Device Skills or Skills that deal the Lightning Damage Type. The resource can have any value between -100 and 100. When Power Charge is a positive number, your Damage will be increased, and when it is a negative number, your Damage will be decreased.\n\nPower Charge is regenerated over time, and by using your Basic Attacks.\n\nThese Skills still consume their dedicated Resource in addition to &quot;Power Charge&quot;.</Data></Cell>
+    <Cell ss:StyleID="s76"><Data ss:Type="String">You have &quot;Power Charge&quot; points. This Resource is now used to activate any Device Skills or Skills that deal the Lightning Damage Type. The Resource can have any value between -100 and 100. When Power Charge is a positive number, your Damage will be increased, and when it is a negative number, your Damage will be decreased.\n\nPower Charge is regenerated over time, and by using your Basic Attacks.\n\nThese Skills still consume their dedicated Resource in addition to &quot;Power Charge&quot;.</Data></Cell>
     <Cell ss:StyleID="s65"><Data ss:Type="String">Masz punkty &quot;Ładowania Energii&quot;. Ten zasób służy teraz do aktywacji dowolnych umiejętności urządzenia lub umiejętności zadających obrażenia od błyskawic. Zasób może mieć dowolną wartość z przedziału od -100 do 100. Kiedy &quot;Ładowanie Energii&quot; jest liczbą dodatnią, twoje obrażenia zostaną zwiększone, a gdy będzie to liczba ujemna, twoje obrażenia zostaną zmniejszone.\n\n&quot;Ładowanie Energii&quot; regeneruje się z czasem, a także za pomocą ataków podstawowych.\n\nTe umiejętności nadal zużywają swoje dedykowane zasoby oprócz &quot;Ładowania Energii&quot;.</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
@@ -3788,6 +3789,7 @@
     <VerticalResolution>600</VerticalResolution>
    </Print>
    <Selected/>
+   <LeftColumnVisible>1</LeftColumnVisible>
    <Panes>
     <Pane>
      <Number>3</Number>

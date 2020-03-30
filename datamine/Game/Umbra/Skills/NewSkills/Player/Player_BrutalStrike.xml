@@ -6,7 +6,7 @@
     <HUD HUDPicture="../u_resources/spells/Active_Skills/brutal_strike.png" UIName="@ui_AST_BrutalStrike" Lore="@ui_AST_BrutalStrike_Lore" ActiveEffectTitle="" ActiveEffectDesc="" ASTTreeNumber="1" ShowParamsInAST="Cost,ROSTime,Cooldown,Range,DamageDetail,DamageWeapon,DamageCritical,StatusAilmentsChance,Explosion,SpecificBrutalStrike" ShowParamsInTooltip="Cost,Cooldown,DamageOverview,StatusAilmentsChance" />
     <Enneract PickableParticle_MoveToGround="U_CommonVFX_02.Esseract.Esseract_Projectile.Physical" PickableParticle_OnGround_Shape="U_CommonVFX_02.Esseract.Esseract_Shape.Circle_Physical" PickableParticle_OnGround_Damage="U_CommonVFX_02.Esseract.Esseract_Color.Physical" PickableParticle_OnGround_Symbol="U_CommonVFX_02.Esseract.Esseract_Symbol.HEPHAARON" PickableParticle_OnGround_Indicator="U_CommonVFX_02.Esseract.Esseract_Indicator.Physical" PickableParticle_OnGround_Pickup="U_CommonVFX_02.Esseract.Esseract_Loot.Physical" SkillLearningParticle="U_CommonVFX.Skill_Learn.Skill_Learn_Physical" Inventory_HUDPicture="../u_resources/enneracts/brutal_strike.png" Inventory_LoreDesc="@ui_enneract_lore" />
     <Aggression TargetValueOnHit="20" />
-    <DamageWeapon PercentMin="210" PercentMinPerLevel="0" PercentMax="230" PercentMaxPerLevel="0" />
+    <DamageWeapon PercentMin="240" PercentMinPerLevel="0" PercentMax="240" PercentMaxPerLevel="0" />
     <PostProcess CameraZoomStartTime=".2" CameraZoomDuration="0.5" CameraUnzoomDuration="0.08" CameraZoomFov="32" ChromaShiftStartTime="0.4" ChromaShiftLerpDuration="0.2" ChromaShiftRestoreLerpDuration="0.15" ChromaShiftMaxAmount=".65" />
     <Cooldown Cooldown="0" CooldownPerLevel="0" />
     <ResourceCost RageCost="-150" ROSTransfertDuration="2.2" />
@@ -20,7 +20,7 @@
   </Skill>
   <Skill UID="player_brutalstrike_step_1" ESkill="default_variant">
     <HUD UIName="@ui_Variant_BrutalStrike_variant_1" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_001.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_001.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_001.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_001.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_001.png" ShowParamsInTooltip="SpecificBrutalStrike,DamageWeapon" />
-    <DamageWeapon PercentMin="25" PercentMinPerLevel="0" PercentMax="25" PercentMaxPerLevel="0" />
+    <DamageWeapon PercentMin="30" PercentMinPerLevel="0" PercentMax="30" PercentMaxPerLevel="0" />
   </Skill>
   <Skill UID="player_brutalstrike_step_2" ESkill="default_variant">
     <HUD UIName="@ui_Variant_BrutalStrike_variant_2" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_001.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_001.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_001.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_001.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_001.png" ShowParamsInTooltip="SpecificBrutalStrike,Cost" />
@@ -54,7 +54,7 @@
       <Entry From="physical" To="lightning" ConversionRate="100" />
     </Damage_Conversion>
     <WeaponRequirements Requirements="melee,lightning" />
-    <DamageWeapon PercentMin="25" PercentMinPerLevel="0" PercentMax="25" PercentMaxPerLevel="0" />
+    <DamageWeapon PercentMin="30" PercentMinPerLevel="0" PercentMax="30" PercentMaxPerLevel="0" />
     <ParticleList>
       <Particle Key="appear_lightning" Name="U_Character.Skills.BrutalStrike_Hammer_Appear_01_Lightning" Bone="R_Weapon_Bone" Scale="1" Direction="0,1,0" />
       <Particle Key="loop_lightning" Name="U_Character.Skills.BrutalStrike_Hammer_Looping_01_Lightning" Bone="R_Weapon_Bone" Scale="1" Direction="0,1,0" />
@@ -147,7 +147,7 @@
   <Skill UID="player_brutalstrike_step_12" ESkill="default_variant">
     <HUD UIName="@ui_Variant_BrutalStrike_variant_12" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_003.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_003.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_003.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_003.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_003.png" ShowParamsInTooltip="SpecificBrutalStrike,Cooldown" />
     <Specific_BrutalStrike CriticalStunDuration="2" />
-    <Cooldown Cooldown="5" CooldownPerLevel="0" />
+    <Cooldown Cooldown="4" CooldownPerLevel="0" />
   </Skill>
   <Skill UID="player_brutalstrike_step_13" ESkill="default_variant">
     <HUD UIName="@ui_Variant_BrutalStrike_variant_13" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_003.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_003.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_003.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_003.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_003.png" ShowParamsInTooltip="SpecificBrutalStrike" />
@@ -163,6 +163,6 @@
   </Skill>
   <Skill UID="player_brutalstrike_step_16" ESkill="default_variant">
     <HUD UIName="@ui_Variant_BrutalStrike_variant_16" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_003.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_003.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_003.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_003.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_003.png" ShowParamsInTooltip="SpecificBrutalStrike,DamageWeapon" />
-    <DamageWeapon PercentMin="50" PercentMinPerLevel="0" PercentMax="50" PercentMaxPerLevel="0" />
+    <DamageWeapon PercentMin="60" PercentMinPerLevel="0" PercentMax="60" PercentMaxPerLevel="0" />
   </Skill>
 </MetaData>

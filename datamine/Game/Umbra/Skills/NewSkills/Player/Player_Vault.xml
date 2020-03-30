@@ -8,13 +8,13 @@
     <Enneract PickableParticle_MoveToGround="U_CommonVFX_02.Esseract.Esseract_Projectile.Shadow" PickableParticle_OnGround_Shape="U_CommonVFX_02.Esseract.Esseract_Shape.Circle_Shadow" PickableParticle_OnGround_Damage="U_CommonVFX_02.Esseract.Esseract_Color.Shadow" PickableParticle_OnGround_Symbol="U_CommonVFX_02.Esseract.Esseract_Symbol.MOROS" PickableParticle_OnGround_Indicator="U_CommonVFX_02.Esseract.Esseract_Indicator.Shadow" PickableParticle_OnGround_Pickup="U_CommonVFX_02.Esseract.Esseract_Loot.Shadow" SkillLearningParticle="U_CommonVFX.Skill_Learn.Skill_Learn_Shadow" Inventory_HUDPicture="../u_resources/enneracts/Evasion.png" Inventory_LoreDesc="@ui_enneract_lore" />
     <Aggression TargetValueOnHit="20" />
     <Cooldown Cooldown="6" CooldownPerLevel="0" />
-    <ResourceCost RageCost="-100" RageCostPerLevel="0" ROSTransfertDuration="2.0" />
+    <ResourceCost RageCost="-90" RageCostPerLevel="0" ROSTransfertDuration="2.0" />
     <SoundTrigger OnAnimStart="Play_Skill_Vault_Start" />
     <Range AttackRange="2" />
     <Projectile Name="player_vault_proj" ProjectileCount="1" PenetrationLimit="1" AngleBetweenProjectiles="90" />
     <Explosion ExplosionRadius="3" />
     <Collisions IgnoreTerrainCollisions="1" IgnoreEntityCollisions="1" />
-    <DamageWeapon PercentMin="100" PercentMinPerLevel="0" PercentMax="100" PercentMaxPerLevel="0" />
+    <DamageWeapon PercentMin="120" PercentMinPerLevel="0" PercentMax="120" PercentMaxPerLevel="0" />
     <Damage_Conversion>
       <Entry From="physical" To="shadow" ConversionRate="100" />
     </Damage_Conversion>

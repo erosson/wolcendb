@@ -6,7 +6,7 @@
     <Animation ScaleWithAttackSpeed="1" AnimationDrivenMovement="1" ActionString="player_skill_reave_atk_01" IgnoreAnimationMovementWhenHoldingShift="1" />
     <HUD HUDPicture="../u_resources/spells/Active_Skills/reave.png" UIName="@ui_AST_Reave" Lore="@ui_AST_Reave_Lore" ActiveEffectTitle="" ActiveEffectDesc="" ASTTreeNumber="1" ShowParamsInAST="Cost,ROSTime,Cooldown,DamageDetail,DamageWeapon,DamageCritical,StatusAilmentsChance,SpecificReave" ShowParamsInTooltip="Cost,Cooldown,DamageOverview,StatusAilmentsChance,SpecificReave" />
     <Enneract PickableParticle_MoveToGround="U_CommonVFX_02.Esseract.Esseract_Projectile.Physical" PickableParticle_OnGround_Shape="U_CommonVFX_02.Esseract.Esseract_Shape.Circle_Physical" PickableParticle_OnGround_Damage="U_CommonVFX_02.Esseract.Esseract_Color.Physical" PickableParticle_OnGround_Symbol="U_CommonVFX_02.Esseract.Esseract_Symbol.HEPHAARON" PickableParticle_OnGround_Indicator="U_CommonVFX_02.Esseract.Esseract_Indicator.Physical" PickableParticle_OnGround_Pickup="U_CommonVFX_02.Esseract.Esseract_Loot.Physical" SkillLearningParticle="U_CommonVFX.Skill_Learn.Skill_Learn_Physical" Inventory_HUDPicture="../u_resources/enneracts/reave.png" Inventory_LoreDesc="@ui_enneract_lore" />
-    <DamageWeapon PercentMin="160" PercentMax="175" />
+    <DamageWeapon PercentMin="180" PercentMax="180" />
     <Shapes>
       <Entry ShapeName="Player_Reave_Shape_1" />
       <Entry ShapeName="Player_Reave_Shape_2" />
@@ -42,7 +42,7 @@
   </Skill>
   <Skill UID="player_Reave_variant_2" ESkill="default_variant">
     <HUD UIName="@ui_Variant_Reave_variant_2" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_003.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_003.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_003.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_003.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_003.png" ShowParamsInTooltip="SpecificReave,DamageWeapon" />
-    <DamageWeapon PercentMax="35" PercentMin="35" />
+    <DamageWeapon PercentMax="50" PercentMin="50" />
   </Skill>
   <Skill UID="player_Reave_variant_3" ESkill="default_variant">
     <HUD UIName="@ui_Variant_Reave_variant_3" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_003.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_003.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_003.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_003.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_003.png" ShowParamsInTooltip="SpecificReave" />
@@ -136,6 +136,6 @@
   <Skill UID="player_Reave_variant_16" ESkill="default_variant">
     <HUD UIName="@ui_Variant_Reave_variant_16" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_003.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_003.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_003.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_003.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_003.png" ShowParamsInTooltip="SpecificReave,DamageCritical,DamageWeapon" />
     <DamageCritical CriticalInflictScoreModifier="-60" />
-    <DamageWeapon PercentMin="50" PercentMinPerLevel="0" PercentMax="50" PercentMaxPerLevel="0" />
+    <DamageWeapon PercentMin="100" PercentMinPerLevel="0" PercentMax="100" PercentMaxPerLevel="0" />
   </Skill>
 </MetaData>

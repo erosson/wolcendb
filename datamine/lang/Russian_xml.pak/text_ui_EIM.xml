@@ -9,8 +9,8 @@
   <Title>Untitled Spreadsheet</Title>
   <Author>Unknown Creator</Author>
   <LastAuthor>Alk0zAuruS Alk0zAuruS</LastAuthor>
-  <Created>2020-03-05T11:43:34Z</Created>
-  <LastSaved>2020-03-05T11:43:34Z</LastSaved>
+  <Created>2020-03-23T12:56:14Z</Created>
+  <LastSaved>2020-03-23T12:56:14Z</LastSaved>
   <Company>Microsoft Corporation</Company>
   <Version>16.00</Version>
  </DocumentProperties>
@@ -18,8 +18,8 @@
   <AllowPNG/>
  </OfficeDocumentSettings>
  <ExcelWorkbook xmlns="urn:schemas-microsoft-com:office:excel">
-  <WindowHeight>17625</WindowHeight>
-  <WindowWidth>32767</WindowWidth>
+  <WindowHeight>7980</WindowHeight>
+  <WindowWidth>21570</WindowWidth>
   <WindowTopX>32767</WindowTopX>
   <WindowTopY>32767</WindowTopY>
   <RefModeR1C1/>
@@ -117,7 +117,7 @@
   </Style>
  </Styles>
  <Worksheet ss:Name="Sheet1">
-  <Table ss:ExpandedColumnCount="3" ss:ExpandedRowCount="673" x:FullColumns="1"
+  <Table ss:ExpandedColumnCount="3" ss:ExpandedRowCount="672" x:FullColumns="1"
    x:FullRows="1" ss:DefaultColumnWidth="60" ss:DefaultRowHeight="14.4375">
    <Column ss:AutoFitWidth="0" ss:Width="366.75"/>
    <Column ss:AutoFitWidth="0" ss:Width="424.5"/>
@@ -1048,11 +1048,6 @@
     <Cell ss:StyleID="s65"><Data ss:Type="String">%1 урона</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
-    <Cell ss:StyleID="s67"><Data ss:Type="String">ui_eim_damage_percent_against_burning</Data></Cell>
-    <Cell ss:StyleID="s68"><Data ss:Type="String">%1 Additional Damage against Burning Targets</Data></Cell>
-    <Cell ss:StyleID="s65"><Data ss:Type="String">%1 дополнительного урона по горящей цели</Data></Cell>
-   </Row>
-   <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s67"><Data ss:Type="String">ui_eim_damage_percent_against_frozen</Data></Cell>
     <Cell ss:StyleID="s68"><Data ss:Type="String">%1 Additional Damage against Frozen Targets</Data></Cell>
     <Cell ss:StyleID="s65"><Data ss:Type="String">%1 дополнительного урона по замороженной цели</Data></Cell>
@@ -1860,7 +1855,7 @@
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s67"><Data ss:Type="String">ui_eim_piercing</Data></Cell>
     <Cell ss:StyleID="s68"><Data ss:Type="String">%1 Pierce to All Projectiles</Data></Cell>
-    <Cell ss:StyleID="s65"><Data ss:Type="String">%1 пробивания снарядами</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">%1 цель к пробиванию снарядами</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s67"><Data ss:Type="String">ui_eim_pinflicted_freeze_duration_percent</Data></Cell>
@@ -2380,7 +2375,7 @@
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s67"><Data ss:Type="String">ui_eim_transfer_time_percent</Data></Cell>
     <Cell ss:StyleID="s74"><Data ss:Type="String">%1 Transfer Time decrease between Willpower and Rage</Data></Cell>
-    <Cell ss:StyleID="s65"><Data ss:Type="String">%1 снижения времени перевода энергии в ярость</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">%1 снижения времени перевода между энергией и яростью</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s67"><Data ss:Type="String">ui_eim_onehanded_blockchance_flat</Data></Cell>
@@ -2910,7 +2905,7 @@
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s76"><Data ss:Type="String">ui_eim_dawn_stat_bonus_from_force_shield_state</Data></Cell>
     <Cell ss:StyleID="s66"><Data ss:Type="String">%1 Spell Damage when Force Shield is above %2 and %1 Attack Damage when Force Shield is below %2</Data></Cell>
-    <Cell ss:StyleID="s65"><Data ss:Type="String">%1 урона заклинаниями, когда силовой щит выше уровня %2 и %1 урона, когда силовой щит ниже уровня %2</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">%1 урона заклинаниями, когда силовой щит выше уровня %2\n\n%1 урона атаками, когда силовой щит ниже уровня %2</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s65"><Data ss:Type="String">ui_eim_dawn_stat_bonus_from_force_shield_state_bonus</Data></Cell>
@@ -2950,7 +2945,7 @@
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s76"><Data ss:Type="String">ui_eim_frost_lance_on_casting_frost_skill</Data></Cell>
     <Cell ss:StyleID="s66"><Data ss:Type="String">%1 Chance to Cast a Frost Lance at cursor location when Frost Skill is Cast. Has a Cooldown of %4s</Data></Cell>
-    <Cell ss:StyleID="s65"><Data ss:Type="String">%1 шанс создать ледяную пику под курсором при использовании холодного заклинания.\nПерезарядка %4 сек</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">%1 шанс создать Ледяную пику под курсором при использовании холодного заклинания.\nПерезарядка %4 сек</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s76"><Data ss:Type="String">ui_eim_thunderstrike_on_casting_lightning_skill</Data></Cell>
@@ -3185,7 +3180,7 @@
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s76"><Data ss:Type="String">ui_eim_stack_gadget_damage</Data></Cell>
     <Cell ss:StyleID="s66"><Data ss:Type="String">Device Skills and Skills with base Lightning Damage have their Damage increased by %1 multiplied by your current number of &quot;Power Charge&quot; Points</Data></Cell>
-    <Cell ss:StyleID="s65"><Data ss:Type="String">Устройства и умения с базовым уроном молнией наносят урон, увеличенный в %1 раз от текущего числа очков &quot;Энергозаряда&quot;</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Урон устройств и умений с базовым уроном молнией увеличивается за каждое имеющееся очко &quot;Энергозаряда&quot; вплоть до %1</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s76"><Data ss:Type="String">ui_eim_stack_focus_damage</Data></Cell>

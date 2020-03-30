@@ -11,7 +11,6 @@
     <Cooldown Cooldown="0.5" CooldownPerLevel="0" />
     <CastingParams CanCastWhileMoving="0" MaintainedCast="1" MinimumCastDuration="0.5" />
     <ResourceCostMaintained ManaCostPerSecond="-150" ManaCostPerSecondPerLevel="0" ROSTransfertDuration="1.0" />
-    <SoundTrigger OnHit="Play_Skill_Solarfall_Beam_Impact" />
     <ParticleList>
       <Particle Key="Beam" Name="U_Character_02.SolarFall.SolarFall_Impact_Loop_01" Direction="0,1,0" Offset="0,0,-1.1" />
       <Particle Key="WarmUp" Name="U_Character_02.SolarFall.SolarFall_Gaining_01_Short" Direction="0,1,0" Offset="0,0,-1.1" />

@@ -7,7 +7,7 @@
     <HUD HUDPicture="../u_resources/spells/Active_Skills/dualstrike.png" UIName="@ui_AST_DualStrike" Lore="@ui_AST_DualStrike_Lore" ActiveEffectTitle="" ActiveEffectDesc="" ASTTreeNumber="1" ShowParamsInAST="Cost,ROSTime,Cooldown,Range,DamageDetail,DamageWeapon,DamageCritical,StatusAilmentsChance,SpecificDualStrike,BlownAway" ShowParamsInTooltip="Cost,Cooldown,DamageOverview,StatusAilmentsChance,SpecificDualStrike" />
     <Enneract PickableParticle_MoveToGround="U_CommonVFX_02.Esseract.Esseract_Projectile.Physical" PickableParticle_OnGround_Shape="U_CommonVFX_02.Esseract.Esseract_Shape.Circle_Physical" PickableParticle_OnGround_Damage="U_CommonVFX_02.Esseract.Esseract_Color.Physical" PickableParticle_OnGround_Symbol="U_CommonVFX_02.Esseract.Esseract_Symbol.HEPHAARON" PickableParticle_OnGround_Indicator="U_CommonVFX_02.Esseract.Esseract_Indicator.Physical" PickableParticle_OnGround_Pickup="U_CommonVFX_02.Esseract.Esseract_Loot.Physical" SkillLearningParticle="U_CommonVFX.Skill_Learn.Skill_Learn_Physical" Inventory_HUDPicture="../u_resources/enneracts/dualstrike.png" Inventory_LoreDesc="@ui_enneract_lore" />
     <Aggression TargetValueOnHit="5" />
-    <DamageWeapon PercentMin="60" PercentMinPerLevel="0" PercentMax="60" PercentMaxPerLevel="0" />
+    <DamageWeapon PercentMin="70" PercentMinPerLevel="0" PercentMax="70" PercentMaxPerLevel="0" />
     <Shapes>
       <Entry ShapeName="player_dualstrike_shape" />
     </Shapes>
@@ -40,12 +40,12 @@
   </Skill>
   <Skill UID="player_dualstrike_variant_3" ESkill="default_variant">
     <HUD UIName="@ui_Variant_DualStrike_variant_3" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_001.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_001.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_001.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_001.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_001.png" ShowParamsInTooltip="SpecificDualStrike,DamageWeapon" />
-    <DamageWeapon PercentMin="6" PercentMinPerLevel="0" PercentMax="6" PercentMaxPerLevel="0" />
+    <DamageWeapon PercentMin="8" PercentMinPerLevel="0" PercentMax="8" PercentMaxPerLevel="0" />
   </Skill>
   <Skill UID="player_dualstrike_variant_4" ESkill="default_variant">
     <HUD UIName="@ui_Variant_DualStrike_variant_4" Lore="@ui_Variant_DualStrike_variant_4_Lore" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_005.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_005.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_005.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_005.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_005.png" ShowParamsInTooltip="SpecificDualStrike,DamageWeapon" />
     <Specific_DualStrike TeleportBehindTarget="1" TeleportMeleeRangeMultiplier="0.8" TeleportDuration=".05" TeleportPositionToleranceXY=".5" TeleportPositionToleranceZ="3" />
-    <DamageWeapon PercentMin="10" PercentMinPerLevel="0" PercentMax="10" PercentMaxPerLevel="0" />
+    <DamageWeapon PercentMin="15" PercentMinPerLevel="0" PercentMax="15" PercentMaxPerLevel="0" />
   </Skill>
   <Skill UID="player_dualstrike_variant_5" ESkill="default_variant">
     <HUD UIName="@ui_Variant_DualStrike_variant_5" Lore="@ui_Variant_DualStrike_variant_5_Lore" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_005.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_005.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_005.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_005.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_005.png" ShowParamsInTooltip="SpecificDualStrike,StatusAilmentsChance" />
@@ -85,7 +85,7 @@
   </Skill>
   <Skill UID="player_dualstrike_variant_10" ESkill="default_variant">
     <HUD UIName="@ui_Variant_DualStrike_variant_10" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_003.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_003.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_003.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_003.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_003.png" ShowParamsInTooltip="SpecificDualStrike" />
-    <GhostDamage ChanceToHit="3" MinDelay="0.1" MaxDelay="0.2" MaxHit="1" DamageMultiplier="1" />
+    <GhostDamage ChanceToHit="5" MinDelay="0.1" MaxDelay="0.2" MaxHit="1" DamageMultiplier="1" />
     <Specific_DualStrike GhostRadius="4" />
   </Skill>
   <Skill UID="player_dualstrike_variant_11" ESkill="default_variant">

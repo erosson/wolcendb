@@ -8,9 +8,9 @@
  <DocumentProperties xmlns="urn:schemas-microsoft-com:office:office">
   <Title>Untitled Spreadsheet</Title>
   <Author>Unknown Creator</Author>
-  <LastAuthor>Cthylla</LastAuthor>
-  <Created>2020-03-05T08:40:47Z</Created>
-  <LastSaved>2020-03-05T08:40:47Z</LastSaved>
+  <LastAuthor>Christopher</LastAuthor>
+  <Created>2020-03-17T16:45:03Z</Created>
+  <LastSaved>2020-03-17T16:45:03Z</LastSaved>
   <Company>Microsoft Corporation</Company>
   <Version>16.00</Version>
  </DocumentProperties>
@@ -18,10 +18,10 @@
   <AllowPNG/>
  </OfficeDocumentSettings>
  <ExcelWorkbook xmlns="urn:schemas-microsoft-com:office:excel">
-  <WindowHeight>2835</WindowHeight>
-  <WindowWidth>11715</WindowWidth>
-  <WindowTopX>32767</WindowTopX>
-  <WindowTopY>32767</WindowTopY>
+  <WindowHeight>11475</WindowHeight>
+  <WindowWidth>22050</WindowWidth>
+  <WindowTopX>0</WindowTopX>
+  <WindowTopY>0</WindowTopY>
   <ProtectStructure>False</ProtectStructure>
   <ProtectWindows>False</ProtectWindows>
  </ExcelWorkbook>
@@ -2956,7 +2956,7 @@
    <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s22"><Data ss:Type="String">ui_ORAC_17_gameplaydesc</Data></Cell>
     <Cell ss:StyleID="s31"><Data ss:Type="String">Whenever your Willpower is below a certain percentage, each time you use a Skill there is a Chance that you will cause an explosion. You and Enemies take a percentage of your maximum Health OR Force Shield (whichever is highest) as Damage, and a percentage of your Willpower is regenerated.\n\nThe Damage type of the Damage dealt is selected randomly between Lightning, Fire, and Frost.</Data></Cell>
-    <Cell ss:StyleID="s20"><Data ss:Type="String">Siempre que tu Voluntad esté por debajo de un cierto porcentaje, cada vez que uses una Habilidad hay una Pprobabilidad de que provoques una explosión. Tú y tus Enemigos tomáis un porcentaje de tu máximo de Vida o Escudo de Fuerza (lo que sea más alto) como Daño y un porcentaje de tu Voluntad es regenerado.\n\nEl Tipo de Daño causado se selecciona al azar entre Electrico, Fuego y Hielo.</Data></Cell>
+    <Cell ss:StyleID="s20"><Data ss:Type="String">Siempre que tu Voluntad esté por debajo de un cierto porcentaje, cada vez que uses una Habilidad hay una Probabilidad de que provoques una explosión. Tú y tus Enemigos tomáis un porcentaje de tu máximo de Vida o Escudo de Fuerza (lo que sea más alto) como Daño y un porcentaje de tu Voluntad es regenerado.\n\nEl Tipo de Daño infligido se selecciona al azar entre Electrico, Fuego y Hielo.</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s22"><Data ss:Type="String">ui_ORAC_18_name</Data></Cell>
@@ -3535,7 +3535,7 @@
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s22"><Data ss:Type="String">ui_ASSA_19_gameplaydesc</Data></Cell>
-    <Cell ss:StyleID="s30"><Data ss:Type="String">You have &quot;Power Charge&quot; points. This resource is now used to activate any Device Skills or Skills that deal the Lightning Damage Type. The resource can have any value between -100 and 100. When Power Charge is a positive number, your Damage will be increased, and when it is a negative number, your Damage will be decreased.\n\nPower Charge is regenerated over time, and by using your Basic Attacks.\n\nThese Skills still consume their dedicated Resource in addition to &quot;Power Charge&quot;.</Data></Cell>
+    <Cell ss:StyleID="s30"><Data ss:Type="String">You have &quot;Power Charge&quot; points. This Resource is now used to activate any Device Skills or Skills that deal the Lightning Damage Type. The Resource can have any value between -100 and 100. When Power Charge is a positive number, your Damage will be increased, and when it is a negative number, your Damage will be decreased.\n\nPower Charge is regenerated over time, and by using your Basic Attacks.\n\nThese Skills still consume their dedicated Resource in addition to &quot;Power Charge&quot;.</Data></Cell>
     <Cell ss:StyleID="s20"><Data ss:Type="String">Tienes Puntos de &quot;Carga de Energía&quot;. Este recurso se utiliza ahora para activar cualquier Habilidad de Dispositivo o habilidad con Tipo de Daño Eléctrico. El recurso puede tener cualquier valor entre -100 y 100. Cuando la &quot;Carga de Energía&quot; es un número positivo, tu daño se incrementará y cuando es un número negativo, tu daño se reducirá.\n\nLa Carga de Energía se regenera con el tiempo y mediante el uso de tus Ataques Básicos.\n\nEstas habilidades siguen utilizando su Recurso dedicado además de &quot;Carga de Energía&quot;.</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">

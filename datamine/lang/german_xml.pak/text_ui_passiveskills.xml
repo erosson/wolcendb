@@ -8,9 +8,9 @@
  <DocumentProperties xmlns="urn:schemas-microsoft-com:office:office">
   <Title>Untitled Spreadsheet</Title>
   <Author>Unknown Creator</Author>
-  <LastAuthor>Cthylla</LastAuthor>
-  <Created>2020-03-05T08:42:48Z</Created>
-  <LastSaved>2020-03-05T08:42:48Z</LastSaved>
+  <LastAuthor>Christopher</LastAuthor>
+  <Created>2020-03-17T16:45:36Z</Created>
+  <LastSaved>2020-03-17T16:45:36Z</LastSaved>
   <Company>Microsoft Corporation</Company>
   <Version>16.00</Version>
  </DocumentProperties>
@@ -18,10 +18,10 @@
   <AllowPNG/>
  </OfficeDocumentSettings>
  <ExcelWorkbook xmlns="urn:schemas-microsoft-com:office:excel">
-  <WindowHeight>2835</WindowHeight>
-  <WindowWidth>11715</WindowWidth>
-  <WindowTopX>32767</WindowTopX>
-  <WindowTopY>32767</WindowTopY>
+  <WindowHeight>11475</WindowHeight>
+  <WindowWidth>22050</WindowWidth>
+  <WindowTopX>0</WindowTopX>
+  <WindowTopY>0</WindowTopY>
   <ProtectStructure>False</ProtectStructure>
   <ProtectWindows>False</ProtectWindows>
  </ExcelWorkbook>
@@ -1806,7 +1806,7 @@
    <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s20"><Data ss:Type="String">ui_MAST_16_desc</Data></Cell>
     <Cell ss:StyleID="s26"><Data ss:Type="String">Your Spell Critical Chance Score is increased when your Willpower is above a certain threshold.</Data></Cell>
-    <Cell ss:StyleID="s20"><Data ss:Type="String">Dein Gesamtwert der kritischen Chance auf Zauber wird erhöht, sobald deine Willenskraft eine bestimmte Schwelle unterschritten hat.</Data></Cell>
+    <Cell ss:StyleID="s20"><Data ss:Type="String">Dein Gesamtwert der kritischen Chance auf Zauber wird erhöht, sobald deine Willenskraft eine bestimmte Schwelle überschritten hat.</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s20"><Data ss:Type="String">ui_MAST_17_name</Data></Cell>
@@ -3535,7 +3535,7 @@
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s22"><Data ss:Type="String">ui_ASSA_19_gameplaydesc</Data></Cell>
-    <Cell ss:StyleID="s30"><Data ss:Type="String">You have &quot;Power Charge&quot; points. This resource is now used to activate any Device Skills or Skills that deal the Lightning Damage Type. The resource can have any value between -100 and 100. When Power Charge is a positive number, your Damage will be increased, and when it is a negative number, your Damage will be decreased.\n\nPower Charge is regenerated over time, and by using your Basic Attacks.\n\nThese Skills still consume their dedicated Resource in addition to &quot;Power Charge&quot;.</Data></Cell>
+    <Cell ss:StyleID="s30"><Data ss:Type="String">You have &quot;Power Charge&quot; points. This Resource is now used to activate any Device Skills or Skills that deal the Lightning Damage Type. The Resource can have any value between -100 and 100. When Power Charge is a positive number, your Damage will be increased, and when it is a negative number, your Damage will be decreased.\n\nPower Charge is regenerated over time, and by using your Basic Attacks.\n\nThese Skills still consume their dedicated Resource in addition to &quot;Power Charge&quot;.</Data></Cell>
     <Cell ss:StyleID="s20"><Data ss:Type="String">Du hast Energieladungs-Punkte. Diese Ressource wird dafür verwendet, um Blitz- und Gegenstands-Fähigkeiten zu aktivieren. Die Ressource kann einen beliebigen Wert zwischen -100 und 100 haben. Wenn die Energieladung eine positive Zahl ist, wird dein Schaden erhöht, und wenn sie eine negative Zahl ist, wird dein Schaden verringert.\n\nEnergieladungen werden im Laufe der Zeit regeneriert und durch Verwendung deines Basis Angriffes.\n\nDiese Fähigkeiten verbrauchen neben der Energieladung auch noch Willenskraft.</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">

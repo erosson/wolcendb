@@ -8,7 +8,7 @@
     <Enneract PickableParticle_MoveToGround="U_CommonVFX_02.Esseract.Esseract_Projectile.Physical" PickableParticle_OnGround_Shape="U_CommonVFX_02.Esseract.Esseract_Shape.Circle_Physical" PickableParticle_OnGround_Damage="U_CommonVFX_02.Esseract.Esseract_Color.Physical" PickableParticle_OnGround_Symbol="U_CommonVFX_02.Esseract.Esseract_Symbol.HEPHAARON" PickableParticle_OnGround_Indicator="U_CommonVFX_02.Esseract.Esseract_Indicator.Physical" PickableParticle_OnGround_Pickup="U_CommonVFX_02.Esseract.Esseract_Loot.Physical" SkillLearningParticle="U_CommonVFX.Skill_Learn.Skill_Learn_Physical" Inventory_HUDPicture="../u_resources/enneracts/multishot2.png" Inventory_LoreDesc="@ui_enneract_lore" />
     <Cooldown Cooldown="0.0" CooldownPerLevel="0" />
     <Aggression TargetValueOnHit="4" />
-    <DamageWeapon PercentMin="75" PercentMinPerLevel="0" PercentMax="75" PercentMaxPerLevel="0" />
+    <DamageWeapon PercentMin="90" PercentMinPerLevel="0" PercentMax="90" PercentMaxPerLevel="0" />
     <ResourceCost RageCost="-150" ROSTransfertDuration="1.2" />
     <Range AttackRange="20" />
     <Projectile Name="player_spreadshot_proj" ProjectileCount="5" AngleBetweenProjectiles="10" PenetrationLimit="2">
@@ -18,7 +18,7 @@
   </Skill>
   <Skill UID="player_spreadshot_step_1" ESkill="default_variant" Keywords="projectile">
     <HUD UIName="@ui_Variant_SpreadShot_variant_1" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_001.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_001.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_001.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_001.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_001.png" ShowParamsInTooltip="SpecificSpreadShot,DamageWeapon" />
-    <DamageWeapon PercentMin="10" PercentMax="10" />
+    <DamageWeapon PercentMin="15" PercentMax="15" />
   </Skill>
   <Skill UID="player_spreadshot_step_2" ESkill="default_variant" Keywords="projectile">
     <HUD UIName="@ui_Variant_SpreadShot_variant_2" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_001.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_001.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_001.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_001.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_001.png" ShowParamsInTooltip="SpecificSpreadShot,Cost" />
@@ -26,7 +26,7 @@
   </Skill>
   <Skill UID="player_spreadshot_step_3" ESkill="default_variant" Keywords="projectile">
     <HUD UIName="@ui_Variant_SpreadShot_variant_3" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_003.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_003.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_003.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_003.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_003.png" ShowParamsInTooltip="SpecificSpreadShot,DamageWeapon,Projectiles" />
-    <DamageWeapon PercentMin="35" PercentMax="35" />
+    <DamageWeapon PercentMin="45" PercentMax="45" />
     <Projectile ProjectileCount="-2" />
   </Skill>
   <Skill UID="player_spreadshot_step_4" ESkill="default_variant" Keywords="projectile">
@@ -67,7 +67,7 @@
   </Skill>
   <Skill UID="player_spreadshot_step_9" ESkill="default_variant" Keywords="projectile">
     <HUD UIName="@ui_Variant_SpreadShot_variant_9" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_003.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_003.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_003.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_003.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_003.png" ShowParamsInTooltip="SpecificSpreadShot" />
-    <GhostDamage ChanceToHit="5" ChanceToHitPerLevel="0" MinDelay="0.1" MaxDelay="0.5" DamageMultiplier="1" />
+    <GhostDamage ChanceToHit="15" ChanceToHitPerLevel="0" MinDelay="0.1" MaxDelay="0.5" DamageMultiplier="1" />
   </Skill>
   <Skill UID="player_spreadshot_step_10" ESkill="default_variant" Keywords="projectile">
     <HUD UIName="@ui_Variant_SpreadShot_variant_10" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_003.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_003.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_003.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_003.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_003.png" ShowParamsInTooltip="SpecificSpreadShot" />
@@ -106,7 +106,7 @@
     <Damage_Conversion>
       <Entry From="physical" To="frost" ConversionRate="100" />
     </Damage_Conversion>
-    <DamageWeapon PercentMin="10" PercentMinPerLevel="0" PercentMax="10" PercentMaxPerLevel="0" />
+    <DamageWeapon PercentMin="15" PercentMinPerLevel="0" PercentMax="15" PercentMaxPerLevel="0" />
   </Skill>
   <Skill UID="player_spreadshot_step_14" ESkill="default_variant" Keywords="projectile">
     <HUD UIName="@ui_Variant_SpreadShot_variant_14" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_001.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_001.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_001.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_001.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_001.png" ShowParamsInTooltip="SpecificSpreadShot,StatusAilmentsChance" />

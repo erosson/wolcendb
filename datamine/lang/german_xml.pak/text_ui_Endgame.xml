@@ -8,9 +8,9 @@
  <DocumentProperties xmlns="urn:schemas-microsoft-com:office:office">
   <Title>Untitled Spreadsheet</Title>
   <Author>Unknown Creator</Author>
-  <LastAuthor>Cthylla</LastAuthor>
-  <Created>2020-03-05T08:43:03Z</Created>
-  <LastSaved>2020-03-05T08:43:03Z</LastSaved>
+  <LastAuthor>Christopher</LastAuthor>
+  <Created>2020-03-17T16:45:49Z</Created>
+  <LastSaved>2020-03-17T16:45:49Z</LastSaved>
   <Company>Microsoft Corporation</Company>
   <Version>16.00</Version>
  </DocumentProperties>
@@ -18,10 +18,11 @@
   <AllowPNG/>
  </OfficeDocumentSettings>
  <ExcelWorkbook xmlns="urn:schemas-microsoft-com:office:excel">
-  <WindowHeight>17625</WindowHeight>
-  <WindowWidth>32767</WindowWidth>
+  <WindowHeight>7980</WindowHeight>
+  <WindowWidth>21570</WindowWidth>
   <WindowTopX>32767</WindowTopX>
   <WindowTopY>32767</WindowTopY>
+  <RefModeR1C1/>
   <ProtectStructure>False</ProtectStructure>
   <ProtectWindows>False</ProtectWindows>
  </ExcelWorkbook>
@@ -81,15 +82,19 @@
    <Interior ss:Color="#C6EFCE" ss:Pattern="Solid"/>
   </Style>
   <Style ss:ID="s73">
+   <Font ss:FontName="Calibri" ss:Size="11" ss:Color="#008000"/>
+   <Interior ss:Color="#FFE699" ss:Pattern="Solid"/>
+  </Style>
+  <Style ss:ID="s74">
    <Alignment ss:Horizontal="Left" ss:Vertical="Center"/>
    <Font ss:FontName="Arial" ss:Color="#000000"/>
   </Style>
-  <Style ss:ID="s74">
+  <Style ss:ID="s75">
    <Alignment ss:Horizontal="Justify" ss:Vertical="Bottom"/>
    <Font ss:FontName="Calibri" ss:Size="11" ss:Color="#008000"/>
    <Interior ss:Color="#C6EFCE" ss:Pattern="Solid"/>
   </Style>
-  <Style ss:ID="s75">
+  <Style ss:ID="s76">
    <Alignment ss:Vertical="Top" ss:WrapText="1"/>
    <Font ss:FontName="Calibri" ss:Size="11" ss:Color="#008000"/>
    <Interior ss:Color="#C6EFCE" ss:Pattern="Solid"/>
@@ -1214,7 +1219,7 @@
    <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s66"><Data ss:Type="String">ui_dark_market_leg_reagent_upgrade_lore</Data></Cell>
     <Cell ss:StyleID="s67"><Data ss:Type="String">Mohabi has heard whispers of the one they call the ‘The Etherean’, someone in the Dark market who straddles the worlds of the living and the dead. Apparently, they can increase the potency of Ethereal Reagents through aritual, the details of which are speculated upon wildly. No ordinary merchant would dare lay their eyes upon these Ethereal Reagents, never mind improve them through some accursed ritual. But, if it is what you desire, and provided you invest the appropriate resources, Mohabi will secure a line of communication with this ‘The Etherean’.\n\nHave Mohabi establish contact with the ‘The Etherean’.\n\n&lt;font size=&quot;20&quot; font face=&quot;Wolcen&quot; color=&quot;#509FFF&quot;&gt;Outcomes:&lt;/font&gt;&lt;br&gt;&lt;/br&gt;\n&lt;font color=&quot;#509FFF&quot;&gt;The Project &quot;Increase Reagent Rarity&quot; will become available.&lt;/font&gt;&lt;br&gt;&lt;/br&gt;</Data></Cell>
-    <Cell ss:StyleID="s65"><Data ss:Type="String">Mohabi hat Geflüster von dem gehört, den sie &quot;Der Ätherische&quot; nennen, jemanden auf dem Schwarzmarkt, der die Welten der Lebenden und der Toten beschreitet. Offensichtlich können sie die Wirksamkeit von Reagenzien durch ein Ritual steigern, über dessen Details wild spekuliert wird. Kein gewöhnlicher Kaufmann würde es wagen, ihre Augen auf diese Reagenzien zu richten, und sie würden die Reagenzien niemals durch ein verfluchtes Ritual verbessern. Aber wenn es das ist, was du willst, vorausgesetzt du investierst in die entsprechenden Ressourcen, wird Mohabi eine Kommunikation mit diesem &quot;Ätherischen&quot; sicherstellen.\n\nLass Mohabi Kontakt mit dem &quot;Ätherischen&quot; aufnehmen.\n\nLass Mohabi Kontakt mit dem &quot;Ätherischen&quot; aufnehmen.\n\n&lt;font size=&quot;20&quot; font face=&quot;Wolcen&quot; color=&quot;#509FFF&quot;&gt;Ergebnisse:&lt;/font&gt;&lt;br&gt;&lt;/br&gt;\n&lt;font color=&quot;#509FFF&quot;&gt;Das Projekt &quot;Seltenheit von Reagenzien erhöhen&quot; wird verfügbar sein.&lt;/font&gt;&lt;br&gt;&lt;/br&gt;</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Mohabi hat Geflüster von dem gehört, den sie &quot;Der Ätherische&quot; nennen, jemanden auf dem Schwarzmarkt, der die Welten der Lebenden und der Toten beschreitet. Offensichtlich können sie die Wirksamkeit von Reagenzien durch ein Ritual steigern, über dessen Details wild spekuliert wird. Kein gewöhnlicher Kaufmann würde es wagen, ihre Augen auf diese Reagenzien zu richten, und sie würden die Reagenzien niemals durch ein verfluchtes Ritual verbessern. Aber wenn es das ist, was du willst, vorausgesetzt du investierst in die entsprechenden Ressourcen, wird Mohabi eine Kommunikation mit diesem &quot;Ätherischen&quot; sicherstellen.\n\nLass Mohabi Kontakt mit dem &quot;Ätherischen&quot; aufnehmen.\n\n&lt;font size=&quot;20&quot; font face=&quot;Wolcen&quot; color=&quot;#509FFF&quot;&gt;Ergebnisse:&lt;/font&gt;&lt;br&gt;&lt;/br&gt;\n&lt;font color=&quot;#509FFF&quot;&gt;Das Projekt &quot;Seltenheit von Reagenzien erhöhen&quot; wird verfügbar sein.&lt;/font&gt;&lt;br&gt;&lt;/br&gt;</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s66"><Data ss:Type="String">ui_dark_market_leg_reagent_upgrade_reward</Data></Cell>
@@ -1608,8 +1613,8 @@
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s69"><Data ss:Type="String">ui_regicide_research_seekers_reward_summary</Data></Cell>
-    <Cell ss:StyleID="s67"><Data ss:Type="String">Your Seekers have returned from the Regicide Facility with a Legendary Gun.</Data></Cell>
-    <Cell ss:StyleID="s65"><Data ss:Type="String">Deine Sucher sind mit einer legendären Waffe aus der Königsmord Einrichtung zurückgekehrt.</Data></Cell>
+    <Cell ss:StyleID="s73"><Data ss:Type="String">Your Seekers have returned from the Regicide Facility with Pistols.</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Deine Sucher sind mit Pistolen aus der Königsmord Einrichtung zurückgekehrt.</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s69"><Data ss:Type="String">ui_blood_tear_burial_seekers_expedition</Data></Cell>
@@ -1633,8 +1638,8 @@
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s69"><Data ss:Type="String">ui_blood_tear_burial_seekers_reward_summary</Data></Cell>
-    <Cell ss:StyleID="s67"><Data ss:Type="String">Your Seekers have returned from a Burial Site with Legendary Bruiser Armor(s) </Data></Cell>
-    <Cell ss:StyleID="s65"><Data ss:Type="String">Deine Sucher sind von einer Begräbnisstätte mit legendären Räuber-Rüstungen zurückgekehrt.</Data></Cell>
+    <Cell ss:StyleID="s73"><Data ss:Type="String">Your Seekers have returned from a Burial Site with Bruiser Armors. </Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Deine Sucher sind von einer Begräbnisstätte mit Räuber-Rüstungen zurückgekehrt.</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s69"><Data ss:Type="String">ui_abyssal_rift_seekers_expedition</Data></Cell>
@@ -1658,8 +1663,8 @@
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s69"><Data ss:Type="String">ui_abyssal_rift_seekers_reward_summary</Data></Cell>
-    <Cell ss:StyleID="s67"><Data ss:Type="String">Your Seekers have returned from the Abyssal rift with Legendary Ethereal Reagents.</Data></Cell>
-    <Cell ss:StyleID="s65"><Data ss:Type="String">Deine Sucher sind mit legendären Reagenzien aus dem Abgrund zurückgekehrt.</Data></Cell>
+    <Cell ss:StyleID="s73"><Data ss:Type="String">Your Seekers have returned from the Abyssal rift with Ethereal Reagents.</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Deine Sucher sind mit Reagenzien aus dem Abgrund zurückgekehrt.</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s69"><Data ss:Type="String">ui_ezaneal_shrine_seekers_expedition</Data></Cell>
@@ -1917,33 +1922,33 @@
     <Cell ss:StyleID="s65"/>
    </Row>
    <Row ss:AutoFitHeight="0">
-    <Cell ss:StyleID="s73"><Data ss:Type="String">ui_laibon_diplomats_expedition</Data></Cell>
-    <Cell ss:StyleID="s74"><Data ss:Type="String">Kingdom of Laibon</Data></Cell>
+    <Cell ss:StyleID="s74"><Data ss:Type="String">ui_laibon_diplomats_expedition</Data></Cell>
+    <Cell ss:StyleID="s75"><Data ss:Type="String">Kingdom of Laibon</Data></Cell>
     <Cell ss:StyleID="s65"><Data ss:Type="String">Laibon</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
-    <Cell ss:StyleID="s73"><Data ss:Type="String">ui_laibon_diplomats_expedition_lore</Data></Cell>
+    <Cell ss:StyleID="s74"><Data ss:Type="String">ui_laibon_diplomats_expedition_lore</Data></Cell>
     <Cell ss:StyleID="s67"><Data ss:Type="String">Stormfall citizens discuss Laibon with a flair of exoticism: they’ll talk overlong about the disappeared god-king who abandoned the kingdom to anarchy and his famed praetorian guard.\n\nThe truth is that Laibon is a nation like any other, exhausted by the Republican Liberators bringing war to their door. Their civilian militias have done well in protecting trade, but it would be best to make a short journey across the Sea of Torment to avoid crossing the frontier battlelines.\n\n&lt;font size=&quot;20&quot; font face=&quot;Wolcen&quot; color=&quot;#509FFF&quot;&gt;Potential Outcomes:&lt;/font&gt;&lt;br&gt;&lt;/br&gt;\n&lt;font color=&quot;#509FFF&quot;&gt;Loot received: Gold and Primordial Affinity.&lt;/font&gt;&lt;br&gt;&lt;/br&gt;</Data></Cell>
     <Cell ss:StyleID="s65"><Data ss:Type="String">Die Bürger von Sturmfall diskutieren über Laïbon mit einem Hauch der Exotik: Sie werden viel über den verschwundenen Gottkönig sprechen, der das Königreich der Anarchie und seiner berühmten Prätorianergarde überließ. Die Wahrheit ist ein wenig langweiliger.\n\nWeit entfernt von den erwarteten Unruhen haben sich die Menschen in Laïbon der Selbstkontrolle zugewandt. Ihre zivilen Milizen haben beim Schutz des Handels gute Arbeit geleistet, aber es wäre am besten, eine kurze Reise über das Meer der Qual zu unternehmen, um die Kriegslinien nicht zu überschreiten.\n\n&lt;font size=&quot;20&quot; font face=&quot;Wolcen&quot; color=&quot;#509FFF&quot;&gt;Mögliche Ergebnisse:&lt;/font&gt;&lt;br&gt;&lt;/br&gt;\n&lt;font color=&quot;#509FFF&quot;&gt;Erhaltene Beute: Gold und Urzeitliche Affinität.&lt;/font&gt;&lt;br&gt;&lt;/br&gt;</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
-    <Cell ss:StyleID="s73"><Data ss:Type="String">ui_laibon_diplomats_expedition_reward</Data></Cell>
-    <Cell ss:StyleID="s74"><Data ss:Type="String">Laibon Mission</Data></Cell>
+    <Cell ss:StyleID="s74"><Data ss:Type="String">ui_laibon_diplomats_expedition_reward</Data></Cell>
+    <Cell ss:StyleID="s75"><Data ss:Type="String">Laibon Mission</Data></Cell>
     <Cell ss:StyleID="s65"><Data ss:Type="String">Laibon Mission</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
-    <Cell ss:StyleID="s73"><Data ss:Type="String">ui_laibon_diplomats_expedition_reward_lore</Data></Cell>
-    <Cell ss:StyleID="s74"><Data ss:Type="String">Your representatives were welcomed with open arms by the people of Laibon. Although there is no government to conduct trade with, there were plenty of merchants and citizens willing to take what Stormfall had to offer. After a number of transactions with the local populace, the wagons were full of gold and energy crystals ready to be returned to Stormfall.</Data></Cell>
+    <Cell ss:StyleID="s74"><Data ss:Type="String">ui_laibon_diplomats_expedition_reward_lore</Data></Cell>
+    <Cell ss:StyleID="s75"><Data ss:Type="String">Your representatives were welcomed with open arms by the people of Laibon. Although there is no government to conduct trade with, there were plenty of merchants and citizens willing to take what Stormfall had to offer. After a number of transactions with the local populace, the wagons were full of gold and energy crystals ready to be returned to Stormfall.</Data></Cell>
     <Cell ss:StyleID="s65"><Data ss:Type="String">Deine Vertreter wurden vom Volk der Laibonier mit offenen Armen empfangen. Obwohl es keine Regierung gibt, mit der man Handel treiben kann, gibt es doch viele Kaufleute und Bürger, die bereit waren, das zu handeln, was Sturmfall zu bieten hatte. Nach einer Reihe von Transaktionen mit der örtlichen Bevölkerung waren die Wagen voller Gold und Energiekristalle, die bereit waren, nach Sturmfall zurückgebracht zu werden.</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
-    <Cell ss:StyleID="s73"><Data ss:Type="String">ui_laibon_diplomats_expedition_reward_summary</Data></Cell>
-    <Cell ss:StyleID="s74"><Data ss:Type="String">Your diplomats have returned from Laibon with Gold and Primordial Affinity.</Data></Cell>
+    <Cell ss:StyleID="s74"><Data ss:Type="String">ui_laibon_diplomats_expedition_reward_summary</Data></Cell>
+    <Cell ss:StyleID="s75"><Data ss:Type="String">Your diplomats have returned from Laibon with Gold and Primordial Affinity.</Data></Cell>
     <Cell ss:StyleID="s65"><Data ss:Type="String">Deine Diplomaten sind mit Gold und Urzeitlicher Affinität aus Laibon zurückgekehrt.</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s69"><Data ss:Type="String">ui_tesserine_diplomats_expedition</Data></Cell>
-    <Cell ss:StyleID="s74"><Data ss:Type="String">City of Tissarine</Data></Cell>
+    <Cell ss:StyleID="s75"><Data ss:Type="String">City of Tissarine</Data></Cell>
     <Cell ss:StyleID="s65"><Data ss:Type="String">Tissarine</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
@@ -1953,22 +1958,22 @@
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s69"><Data ss:Type="String">ui_tesserine_diplomats_reward</Data></Cell>
-    <Cell ss:StyleID="s74"><Data ss:Type="String">Tissarine Expedition</Data></Cell>
+    <Cell ss:StyleID="s75"><Data ss:Type="String">Tissarine Expedition</Data></Cell>
     <Cell ss:StyleID="s65"><Data ss:Type="String">Tissarine Expedition</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s69"><Data ss:Type="String">ui_tesserine_diplomats_reward_lore</Data></Cell>
-    <Cell ss:StyleID="s74"><Data ss:Type="String">The diplomatic mission to Tissarine was a success. After welcoming your diplomats into their home, the ruler of Tissarine accepted Stormfall’s tribute, and in return, had one of their most prized armor pieces brought from their personal armory. </Data></Cell>
+    <Cell ss:StyleID="s75"><Data ss:Type="String">The diplomatic mission to Tissarine was a success. After welcoming your diplomats into their home, the ruler of Tissarine accepted Stormfall’s tribute, and in return, had one of their most prized armor pieces brought from their personal armory. </Data></Cell>
     <Cell ss:StyleID="s65"><Data ss:Type="String">Die diplomatische Mission in Tissarine war ein Erfolg. Nachdem die Herrscherin von Tissarine deine Diplomaten zu sich nach Hause eingeladen hatte, akzeptierte sie Sturmfalls Tribut und ließ sich eines ihrer wertvollsten Rüstungsstücke aus ihrer persönlichen Waffenkammer holen.</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s69"><Data ss:Type="String">ui_tesserine_diplomats_reward_summary</Data></Cell>
-    <Cell ss:StyleID="s74"><Data ss:Type="String">Your diplomats have returned from Tisserine with Armor Pieces.</Data></Cell>
+    <Cell ss:StyleID="s75"><Data ss:Type="String">Your diplomats have returned from Tisserine with Armor Pieces.</Data></Cell>
     <Cell ss:StyleID="s65"><Data ss:Type="String">Deine Diplomaten sind mit Rüstungsteilen aus Tisserine zurückgekehrt.</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s69"><Data ss:Type="String">ui_vulkain_diplomats_expedition</Data></Cell>
-    <Cell ss:StyleID="s74"><Data ss:Type="String">Vulkaïn, Jewel of Steel</Data></Cell>
+    <Cell ss:StyleID="s75"><Data ss:Type="String">Vulkaïn, Jewel of Steel</Data></Cell>
     <Cell ss:StyleID="s65"><Data ss:Type="String">Vulkaïn</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
@@ -1978,22 +1983,22 @@
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s69"><Data ss:Type="String">ui_vulkain_diplomats_reward</Data></Cell>
-    <Cell ss:StyleID="s74"><Data ss:Type="String">Vulkain Mission</Data></Cell>
+    <Cell ss:StyleID="s75"><Data ss:Type="String">Vulkain Mission</Data></Cell>
     <Cell ss:StyleID="s65"><Data ss:Type="String">Vulkain Mission</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s69"><Data ss:Type="String">ui_vulkain_diplomats_reward_lore</Data></Cell>
-    <Cell ss:StyleID="s74"><Data ss:Type="String">Your diplomats have returned from Vulkain, the city’s expertly crafted weapons in tow. As a city of the Jeweled Concordat, Vulkain was more than happy to trade with Stormfall, although your diplomats have returned a little flustered by the entire ordeal.  Perhaps it goes without saying, but the smoldering depths of Vulkain are not the most pleasant of places to conduct business.</Data></Cell>
+    <Cell ss:StyleID="s75"><Data ss:Type="String">Your diplomats have returned from Vulkain, the city’s expertly crafted weapons in tow. As a city of the Jeweled Concordat, Vulkain was more than happy to trade with Stormfall, although your diplomats have returned a little flustered by the entire ordeal.  Perhaps it goes without saying, but the smoldering depths of Vulkain are not the most pleasant of places to conduct business.</Data></Cell>
     <Cell ss:StyleID="s65"><Data ss:Type="String">Deine Diplomaten sind aus Vulkain zurückgekehrt, der Stadt, in der Waffen am Band hergestellt wurden. Als Stadt des Juwelenkonkordats war Vulkain mehr als glücklich, mit Sturmfall handeln zu können, obwohl deren Diplomaten von der ganzen Tortur ein wenig verunsichert zurückgekehrt sind. Vielleicht versteht es sich von selbst, aber die glühenden Tiefen von Vulkain sind nicht die angenehmsten Orte, an denen Geschäfte getätigt werden können.</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s69"><Data ss:Type="String">ui_vulkain_diplomats_reward_summary</Data></Cell>
-    <Cell ss:StyleID="s74"><Data ss:Type="String">Your diplomats have returned from Vulkain with One-Handed Melee Weapons.</Data></Cell>
+    <Cell ss:StyleID="s75"><Data ss:Type="String">Your diplomats have returned from Vulkain with One-Handed Melee Weapons.</Data></Cell>
     <Cell ss:StyleID="s65"><Data ss:Type="String">Deine Diplomaten sind mit einhändigen Nahkampfwaffen aus Vulkain zurückgekehrt.</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s69"><Data ss:Type="String">ui_greyharbour_diplomats_expedition</Data></Cell>
-    <Cell ss:StyleID="s74"><Data ss:Type="String">Town of Greyharbour</Data></Cell>
+    <Cell ss:StyleID="s75"><Data ss:Type="String">Town of Greyharbour</Data></Cell>
     <Cell ss:StyleID="s65"><Data ss:Type="String">Grauhafen</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
@@ -2003,22 +2008,22 @@
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s69"><Data ss:Type="String">ui_greyharbour_diplomats_reward</Data></Cell>
-    <Cell ss:StyleID="s74"><Data ss:Type="String">Greyharbour Mission</Data></Cell>
+    <Cell ss:StyleID="s75"><Data ss:Type="String">Greyharbour Mission</Data></Cell>
     <Cell ss:StyleID="s65"><Data ss:Type="String">Grauhafen Mission</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s69"><Data ss:Type="String">ui_greyharbour_diplomats_reward_lore</Data></Cell>
-    <Cell ss:StyleID="s74"><Data ss:Type="String">Your diplomats were able to navigate the forests of Greyharbour without too much difficulty. They were welcomed by the townsfolk, who were delighted that Stormfall had taken such an interest in their modest little town. A feast was held, and afterward, Greyharbour was more than happy to supply Stormfall with wood.</Data></Cell>
+    <Cell ss:StyleID="s75"><Data ss:Type="String">Your diplomats were able to navigate the forests of Greyharbour without too much difficulty. They were welcomed by the townsfolk, who were delighted that Stormfall had taken such an interest in their modest little town. A feast was held, and afterward, Greyharbour was more than happy to supply Stormfall with wood.</Data></Cell>
     <Cell ss:StyleID="s65"><Data ss:Type="String">Deine Diplomaten konnten ohne allzu große Schwierigkeiten durch die Wälder von Grauhafen navigieren. Sie wurden von den Bürgern begrüßt, die sich darüber freuten, dass Sturmfall sich so für ihre Bescheidene kleine Stadt interessiert hatte. Ein Fest wurde abgehalten, und Grauhafen war mehr als glücklich, Sturmfall ab jetzt mit Holz zu versorgen.</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s69"><Data ss:Type="String">ui_greyharbour_diplomats_reward_summary</Data></Cell>
-    <Cell ss:StyleID="s74"><Data ss:Type="String">Your diplomats have returned from Greyharbour with materials, boosting Productivity. </Data></Cell>
+    <Cell ss:StyleID="s75"><Data ss:Type="String">Your diplomats have returned from Greyharbour with materials, boosting Productivity. </Data></Cell>
     <Cell ss:StyleID="s65"><Data ss:Type="String">Deine Diplomaten sind mit Materialien aus Grauhafen zurückgekehrt, sodass die Produktivität gesteigert werden kann.</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s69"><Data ss:Type="String">ui_archion_diplomats_expedition</Data></Cell>
-    <Cell ss:StyleID="s74"><Data ss:Type="String">Archion, Jewel of the Clouds</Data></Cell>
+    <Cell ss:StyleID="s75"><Data ss:Type="String">Archion, Jewel of the Clouds</Data></Cell>
     <Cell ss:StyleID="s65"><Data ss:Type="String">Archion</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
@@ -2028,22 +2033,22 @@
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s69"><Data ss:Type="String">ui_archion_diplomats_reward</Data></Cell>
-    <Cell ss:StyleID="s74"><Data ss:Type="String">Archion Mission</Data></Cell>
+    <Cell ss:StyleID="s75"><Data ss:Type="String">Archion Mission</Data></Cell>
     <Cell ss:StyleID="s65"><Data ss:Type="String">Archion Mission</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s69"><Data ss:Type="String">ui_archion_diplomats_reward_lore</Data></Cell>
-    <Cell ss:StyleID="s74"><Data ss:Type="String">The caravan has returned safely from Archion. They reached the floating city just in time; in fact, it was mere hours before it was due to take flight again. They met with some of the Departed’s rangers and managed to trade for some exceptional bows.</Data></Cell>
+    <Cell ss:StyleID="s75"><Data ss:Type="String">The caravan has returned safely from Archion. They reached the floating city just in time; in fact, it was mere hours before it was due to take flight again. They met with some of the Departed’s rangers and managed to trade for some exceptional bows.</Data></Cell>
     <Cell ss:StyleID="s65"><Data ss:Type="String">Die Karawane ist sicher aus Archion zurückgekehrt. Sie erreichten die schwimmende Stadt gerade noch rechtzeitig; Tatsächlich dauerte es nur wenige Stunden, bis sie wieder flog. Sie trafen sich mit einigen ausgeschiedenen Waldläufern und konnten einige außergewöhnliche Bögen eintauschen.</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s69"><Data ss:Type="String">ui_archion_diplomats_reward_summary</Data></Cell>
-    <Cell ss:StyleID="s74"><Data ss:Type="String">Your diplomats have returned from Archion with Bows.</Data></Cell>
+    <Cell ss:StyleID="s75"><Data ss:Type="String">Your diplomats have returned from Archion with Bows.</Data></Cell>
     <Cell ss:StyleID="s65"><Data ss:Type="String">Deine Diplomaten sind mit Bögen von Archion zurückgekehrt.</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s69"><Data ss:Type="String">ui_ctul_diplomats_expedition</Data></Cell>
-    <Cell ss:StyleID="s74"><Data ss:Type="String">C'tul, Jewel of the Hunt</Data></Cell>
+    <Cell ss:StyleID="s75"><Data ss:Type="String">C'tul, Jewel of the Hunt</Data></Cell>
     <Cell ss:StyleID="s65"><Data ss:Type="String">C'tul</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
@@ -2053,22 +2058,22 @@
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s69"><Data ss:Type="String">ui_ctul_diplomats_reward</Data></Cell>
-    <Cell ss:StyleID="s74"><Data ss:Type="String">C'tul Mission</Data></Cell>
+    <Cell ss:StyleID="s75"><Data ss:Type="String">C'tul Mission</Data></Cell>
     <Cell ss:StyleID="s65"><Data ss:Type="String">C'tul Mission</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s69"><Data ss:Type="String">ui_ctul_diplomats_reward_lore</Data></Cell>
-    <Cell ss:StyleID="s74"><Data ss:Type="String">The mission to C’tul was a success. After being welcomed aboard the hulking beasts of C’tul, your diplomats were invited on a hunt. When they returned, the hunters gave their daggers as gifts to your diplomats, the blood from their kills dried upon the blades: a reminder of the life given to strengthen the bond between Stormfall and C’tul.</Data></Cell>
+    <Cell ss:StyleID="s75"><Data ss:Type="String">The mission to C’tul was a success. After being welcomed aboard the hulking beasts of C’tul, your diplomats were invited on a hunt. When they returned, the hunters gave their daggers as gifts to your diplomats, the blood from their kills dried upon the blades: a reminder of the life given to strengthen the bond between Stormfall and C’tul.</Data></Cell>
     <Cell ss:StyleID="s65"><Data ss:Type="String">Die Mission nach C’tul war ein Erfolg. Nachdem  man an Bord der riesigen Tiere von C’tul begrüßt wurden, wurden die Diplomaten zu einer Jagd eingeladen. Als sie zurückkamen, gaben die Jäger den Diplomaten ihre Dolche als Geschenke, auf denen das Blut der Jagd trocknete. Eine Erinnerung an das Leben, das genommen wurde, um die Verbindung zwischen Sturmfall und C’tul zu stärken.</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s69"><Data ss:Type="String">ui_ctul_diplomats_reward_summary</Data></Cell>
-    <Cell ss:StyleID="s74"><Data ss:Type="String">Your diplomats have returned from C’tul with Daggers.</Data></Cell>
+    <Cell ss:StyleID="s75"><Data ss:Type="String">Your diplomats have returned from C’tul with Daggers.</Data></Cell>
     <Cell ss:StyleID="s65"><Data ss:Type="String">Deine Diplomaten sind mit Dolchen aus C’tul zurückgekehrt.</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s69"><Data ss:Type="String">ui_salander_diplomats_expedition</Data></Cell>
-    <Cell ss:StyleID="s74"><Data ss:Type="String">Salander, Jewel of the Earth</Data></Cell>
+    <Cell ss:StyleID="s75"><Data ss:Type="String">Salander, Jewel of the Earth</Data></Cell>
     <Cell ss:StyleID="s65"><Data ss:Type="String">Salander</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
@@ -2078,22 +2083,22 @@
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s69"><Data ss:Type="String">ui_salander_diplomats_reward</Data></Cell>
-    <Cell ss:StyleID="s74"><Data ss:Type="String">Salander Mission</Data></Cell>
+    <Cell ss:StyleID="s75"><Data ss:Type="String">Salander Mission</Data></Cell>
     <Cell ss:StyleID="s65"><Data ss:Type="String">Salander Mission</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s69"><Data ss:Type="String">ui_salander_diplomats_reward_lore</Data></Cell>
-    <Cell ss:StyleID="s74"><Data ss:Type="String">The mission to Salander was a success. Your representatives visited the Cabal of Illumination, meeting the Augur who resides over its operations. They talked at length about the Cabal’s experiments with magic, and, happy with the conduct of your representatives, the Augur gave them gold and energy crystals for the return journey.</Data></Cell>
+    <Cell ss:StyleID="s75"><Data ss:Type="String">The mission to Salander was a success. Your representatives visited the Cabal of Illumination, meeting the Augur who resides over its operations. They talked at length about the Cabal’s experiments with magic, and, happy with the conduct of your representatives, the Augur gave them gold and energy crystals for the return journey.</Data></Cell>
     <Cell ss:StyleID="s65"><Data ss:Type="String">Die Mission nach Salander war ein Erfolg. Ihre Repräsentanten besuchten die Kabbala der Erleuchtung und trafen dort auf Augur, der über seine Geschäftstätigkeiten achtete. Sie sprachen ausführlich über die Zauberexperimente der Kaballa, sodass Augur, zufrieden mit dem Verhalten Ihrer Vertreter, ihnen Gold- und Energiekristalle für die Rückreise schenkte.</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s69"><Data ss:Type="String">ui_salander_diplomats_reward_summary</Data></Cell>
-    <Cell ss:StyleID="s74"><Data ss:Type="String">Your diplomats have returned from Salander with Gold and Primordial Affinity.</Data></Cell>
+    <Cell ss:StyleID="s75"><Data ss:Type="String">Your diplomats have returned from Salander with Gold and Primordial Affinity.</Data></Cell>
     <Cell ss:StyleID="s65"><Data ss:Type="String">Deine Diplomaten sind mit Gold und Urzeitlicher Affinität von Salander zurückgekehrt.</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s69"><Data ss:Type="String">ui_three_peaks_diplomats_expedition</Data></Cell>
-    <Cell ss:StyleID="s74"><Data ss:Type="String">Three-Peaks, Jewel of the Mountains</Data></Cell>
+    <Cell ss:StyleID="s75"><Data ss:Type="String">Three-Peaks, Jewel of the Mountains</Data></Cell>
     <Cell ss:StyleID="s65"><Data ss:Type="String">Drei Spitzen</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
@@ -2103,32 +2108,32 @@
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s69"><Data ss:Type="String">ui_three_peaks_diplomats_reward</Data></Cell>
-    <Cell ss:StyleID="s74"><Data ss:Type="String">Three-Peaks Mission</Data></Cell>
+    <Cell ss:StyleID="s75"><Data ss:Type="String">Three-Peaks Mission</Data></Cell>
     <Cell ss:StyleID="s65"><Data ss:Type="String">Drei Spitzen Mission</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s69"><Data ss:Type="String">ui_three_peaks_diplomats_reward_lore</Data></Cell>
-    <Cell ss:StyleID="s74"><Data ss:Type="String">Your diplomats were successful on their trip to Three-Peaks. The ascent was difficult, but at the summit, they were invited to enjoy the pleasures that the city had to offer. After indulging in the various opiates provided by the city’s leaders, so pleased were they by the antics of your diplomats, the leaders of Three-Peaks insisted that some be taken back to Stormfall’s regent. </Data></Cell>
+    <Cell ss:StyleID="s75"><Data ss:Type="String">Your diplomats were successful on their trip to Three-Peaks. The ascent was difficult, but at the summit, they were invited to enjoy the pleasures that the city had to offer. After indulging in the various opiates provided by the city’s leaders, so pleased were they by the antics of your diplomats, the leaders of Three-Peaks insisted that some be taken back to Stormfall’s regent. </Data></Cell>
     <Cell ss:StyleID="s65"><Data ss:Type="String">Deine Diplomaten waren auf ihrer Reise nach Drei Spitzen erfolgreich. Der Aufstieg war schwierig, aber auf dem Gipfel wurden sie eingeladen, die Freuden zu genießen, die die Stadt zu bieten hatte. Nachdem sie sich den verschiedenen Opiaten hingegeben hatten, die von den Führern der Stadt zur Verfügung gestellt wurden, bestanden die Führer von Drei Spitzen darauf, einige von ihnen an Sturmfalls Regenten zurückzugeben.</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s69"><Data ss:Type="String">ui_three_peaks_diplomats_reward_summary</Data></Cell>
-    <Cell ss:StyleID="s74"><Data ss:Type="String">Your diplomats have returned from Three-Peaks with Spices.</Data></Cell>
+    <Cell ss:StyleID="s75"><Data ss:Type="String">Your diplomats have returned from Three-Peaks with Spices.</Data></Cell>
     <Cell ss:StyleID="s65"><Data ss:Type="String">Deine Diplomaten sind mit Gewürzen von den Drei Spitzen zurückgekehrt.</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s69"><Data ss:Type="String">ui_gomora_diplomats_expedition</Data></Cell>
-    <Cell ss:StyleID="s74"><Data ss:Type="String">Gomora, Jewel of the Pariahs</Data></Cell>
+    <Cell ss:StyleID="s75"><Data ss:Type="String">Gomora, Jewel of the Pariahs</Data></Cell>
     <Cell ss:StyleID="s65"><Data ss:Type="String">Gomora</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s69"><Data ss:Type="String">ui_gomora_diplomats_expedition_lore</Data></Cell>
-    <Cell ss:StyleID="s74"><Data ss:Type="String">Of all the city states in the Concordat, Gomora has the greatest reason for desiring independence from the Republic. They don’t criminalize the practice of magic as others do, and an occult commerce has developed there.\n\nThe journey from Stormfall to Gomora takes one across the deathly Sea of Torment. The island is lost in the middle of nowhere, almost impossible to find, but no other place practices Primordial magic so freely.\n\n&lt;font size=&quot;20&quot; font face=&quot;Wolcen&quot; color=&quot;#509FFF&quot;&gt;Potential Outcomes:&lt;/font&gt;&lt;br&gt;&lt;/br&gt;\n&lt;font color=&quot;#509FFF&quot;&gt;Loot received: Primordial Affinity (Large Quantity).&lt;/font&gt;&lt;br&gt;&lt;/br&gt;</Data></Cell>
+    <Cell ss:StyleID="s75"><Data ss:Type="String">Of all the city states in the Concordat, Gomora has the greatest reason for desiring independence from the Republic. They don’t criminalize the practice of magic as others do, and an occult commerce has developed there.\n\nThe journey from Stormfall to Gomora takes one across the deathly Sea of Torment. The island is lost in the middle of nowhere, almost impossible to find, but no other place practices Primordial magic so freely.\n\n&lt;font size=&quot;20&quot; font face=&quot;Wolcen&quot; color=&quot;#509FFF&quot;&gt;Potential Outcomes:&lt;/font&gt;&lt;br&gt;&lt;/br&gt;\n&lt;font color=&quot;#509FFF&quot;&gt;Loot received: Primordial Affinity (Large Quantity).&lt;/font&gt;&lt;br&gt;&lt;/br&gt;</Data></Cell>
     <Cell ss:StyleID="s65"><Data ss:Type="String">Von allen Stadtstaaten im Konkordat hat Gomora den besten Grund, die Unabhängigkeit von der Republik anzustreben. Sie kriminalisieren die Ausübung von Magie nicht wie viele andere, wodurch sich ein okkulter Handel entwickelt hat.\n\nDie Reise von Sturmfall nach Gomora führt über das tödliche Meer der Qual. Die Insel ist mitten im Nirgendwo, fast unmöglich zu finden, jedoch der einzige Ort an dem die Urzeitliche Magie weiterhin genutzt wird.\n\n&lt;font size=&quot;20&quot; font face=&quot;Wolcen&quot; color=&quot;#509FFF&quot;&gt;Mögliche Ergebnisse:&lt;/font&gt;&lt;br&gt;&lt;/br&gt;\n&lt;font color=&quot;#509FFF&quot;&gt;Erhaltene Beute: Urzeitliche Affinität (große Menge).</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s69"><Data ss:Type="String">ui_gomora_diplomats_reward</Data></Cell>
-    <Cell ss:StyleID="s74"><Data ss:Type="String">Gomora Mission</Data></Cell>
+    <Cell ss:StyleID="s75"><Data ss:Type="String">Gomora Mission</Data></Cell>
     <Cell ss:StyleID="s65"><Data ss:Type="String">Gomora Mission</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
@@ -2138,12 +2143,12 @@
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s69"><Data ss:Type="String">ui_gomora_diplomats_reward_summary</Data></Cell>
-    <Cell ss:StyleID="s74"><Data ss:Type="String">Your diplomats have returned from Gomora with Primordial Affinity.</Data></Cell>
+    <Cell ss:StyleID="s75"><Data ss:Type="String">Your diplomats have returned from Gomora with Primordial Affinity.</Data></Cell>
     <Cell ss:StyleID="s65"><Data ss:Type="String">Deine Diplomaten sind mit Urzeitlicher Affinität aus Gomora zurückgekehrt.</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s69"><Data ss:Type="String">ui_republic_diplomats_expedition</Data></Cell>
-    <Cell ss:StyleID="s74"><Data ss:Type="String">United Republic of Mankind</Data></Cell>
+    <Cell ss:StyleID="s75"><Data ss:Type="String">United Republic of Mankind</Data></Cell>
     <Cell ss:StyleID="s65"><Data ss:Type="String">Republik der Menschheit</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
@@ -2153,22 +2158,22 @@
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s69"><Data ss:Type="String">ui_republic_diplomats_reward</Data></Cell>
-    <Cell ss:StyleID="s74"><Data ss:Type="String">Republic Mission</Data></Cell>
+    <Cell ss:StyleID="s75"><Data ss:Type="String">Republic Mission</Data></Cell>
     <Cell ss:StyleID="s65"><Data ss:Type="String">Republik Mission</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s69"><Data ss:Type="String">ui_republic_diplomats_reward_lore</Data></Cell>
-    <Cell ss:StyleID="s74"><Data ss:Type="String">Although they did not receive the warmest of welcomes, your diplomats’ mission to the Republic was a success. The transaction was curt. They went in, said some words, traded what they had, and returned with gold on the wagons. The Republic did not seem very eager to prolong the interaction.</Data></Cell>
+    <Cell ss:StyleID="s75"><Data ss:Type="String">Although they did not receive the warmest of welcomes, your diplomats’ mission to the Republic was a success. The transaction was curt. They went in, said some words, traded what they had, and returned with gold on the wagons. The Republic did not seem very eager to prolong the interaction.</Data></Cell>
     <Cell ss:StyleID="s65"><Data ss:Type="String">Obwohl die Diplomaten nicht die herzlichste Begrüßung erhielten, war die Mission in der Republik ein Erfolg. Die Transaktion war knapp. Sie gingen hinein, sagten ein paar Worte, tauschten das, was sie hatten, und kehrten mit Gold auf den Wagen zurück. Die Republik schien nicht sehr bestrebt zu sein, die Interaktion länger am laufen zu halten, als es nötig ist.</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s69"><Data ss:Type="String">ui_republic_diplomats_reward_summary</Data></Cell>
-    <Cell ss:StyleID="s74"><Data ss:Type="String">Your diplomats have returned from the URM with Gold.</Data></Cell>
+    <Cell ss:StyleID="s75"><Data ss:Type="String">Your diplomats have returned from the URM with Gold.</Data></Cell>
     <Cell ss:StyleID="s65"><Data ss:Type="String">Deine Diplomaten sind mit Gold von der Vereinigten Republik der Menschheit zurückgekehrt.</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s69"><Data ss:Type="String">ui_kuei_diplomats_expedition</Data></Cell>
-    <Cell ss:StyleID="s74"><Data ss:Type="String">Kuei Empire</Data></Cell>
+    <Cell ss:StyleID="s75"><Data ss:Type="String">Kuei Empire</Data></Cell>
     <Cell ss:StyleID="s65"><Data ss:Type="String">Kuei Imperium</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
@@ -2178,22 +2183,22 @@
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s69"><Data ss:Type="String">ui_kuei_diplomats_reward</Data></Cell>
-    <Cell ss:StyleID="s74"><Data ss:Type="String">Kuei Mission</Data></Cell>
+    <Cell ss:StyleID="s75"><Data ss:Type="String">Kuei Mission</Data></Cell>
     <Cell ss:StyleID="s65"><Data ss:Type="String">Kuei Mission</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s69"><Data ss:Type="String">ui_kuei_diplomats_reward_lore</Data></Cell>
-    <Cell ss:StyleID="s74"><Data ss:Type="String">Your diplomats reached Kuei safe and sound, their ships managing to navigate the seas and reach Kuei’s shores. After meeting with the Empire’s dignitaries, an agreement was made and materials were exchanged for Stormfall’s gold. Kuei’s dignitaries seemed a little surprised that your diplomats had managed to reach there in one piece; the Jade Legion is an ever-looming threat, after all.</Data></Cell>
+    <Cell ss:StyleID="s75"><Data ss:Type="String">Your diplomats reached Kuei safe and sound, their ships managing to navigate the seas and reach Kuei’s shores. After meeting with the Empire’s dignitaries, an agreement was made and materials were exchanged for Stormfall’s gold. Kuei’s dignitaries seemed a little surprised that your diplomats had managed to reach there in one piece; the Jade Legion is an ever-looming threat, after all.</Data></Cell>
     <Cell ss:StyleID="s65"><Data ss:Type="String">Deine Diplomaten erreichten Kuei gesund und sicher und ihre Schiffe schafften es, unbeschadet durch die Meere zu navigieren sodass Kueis Ufer erreicht werden konnte. Nach einem Treffen mit den Würdenträgern des Imperiums wurde eine Vereinbarung getroffen sodass Material gegen Gold aus Sturmfall getauscht wurde. Kueis Würdenträger schienen ein wenig überrascht zu sein, dass die Diplomaten es geschafft hatten, in einem Stück dorthin zu gelangen. Immerhin ist die Jadelegion eine immer größer werdende Bedrohung.</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s69"><Data ss:Type="String">ui_kuei_diplomats_reward_summary</Data></Cell>
-    <Cell ss:StyleID="s74"><Data ss:Type="String">Your diplomats have returned from Kuei with materials, boosting Stormfall’s Productivity.</Data></Cell>
+    <Cell ss:StyleID="s75"><Data ss:Type="String">Your diplomats have returned from Kuei with materials, boosting Stormfall’s Productivity.</Data></Cell>
     <Cell ss:StyleID="s65"><Data ss:Type="String">Deine Diplomaten sind mit Materialien aus Kuei zurückgekehrt, sodass Sturmfalls Produktivität gesteigert werden kann.</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s69"><Data ss:Type="String">ui_varg_diplomats_expedition</Data></Cell>
-    <Cell ss:StyleID="s74"><Data ss:Type="String">Kingdom of Varg</Data></Cell>
+    <Cell ss:StyleID="s75"><Data ss:Type="String">Kingdom of Varg</Data></Cell>
     <Cell ss:StyleID="s65"><Data ss:Type="String">Varg</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
@@ -2203,22 +2208,22 @@
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s69"><Data ss:Type="String">ui_varg_diplomats_reward</Data></Cell>
-    <Cell ss:StyleID="s74"><Data ss:Type="String">Varg Mission</Data></Cell>
+    <Cell ss:StyleID="s75"><Data ss:Type="String">Varg Mission</Data></Cell>
     <Cell ss:StyleID="s65"><Data ss:Type="String">Varg Mission</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s69"><Data ss:Type="String">ui_varg_diplomats_reward_lore</Data></Cell>
-    <Cell ss:StyleID="s74"><Data ss:Type="String">The journey through Varg was tense, but in the end, your diplomats managed to make the trip a profitable one. In the ancestral homes of each clan, they were met with hostility, but after seeing the supplies that Stormfall had on offer, the Vargians could not refuse the opportunity to trade. As a result, the wagons were laden with gold upon the diplomats' return.</Data></Cell>
+    <Cell ss:StyleID="s75"><Data ss:Type="String">The journey through Varg was tense, but in the end, your diplomats managed to make the trip a profitable one. In the ancestral homes of each clan, they were met with hostility, but after seeing the supplies that Stormfall had on offer, the Vargians could not refuse the opportunity to trade. As a result, the wagons were laden with gold upon the diplomats' return.</Data></Cell>
     <Cell ss:StyleID="s65"><Data ss:Type="String">Die Reise durch Varg war angespannt, aber am Ende haben es deine Diplomaten geschafft, die Reise rentabel zu beenden. In den Häusern der Ahnen jedes Clans wurden sie angefeindet, aber nachdem sie die Vorräte gesehen hatten, die Sturmfall anbot, konnten die Vargianer die Gelegenheit zum Handel nicht verweigern. Infolgedessen waren die Wagen bei der Rückkehr der Diplomaten mit Gold beladen.</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s69"><Data ss:Type="String">ui_varg_diplomats_reward_summary</Data></Cell>
-    <Cell ss:StyleID="s74"><Data ss:Type="String">Your diplomats have returned from Varg with Gold.</Data></Cell>
+    <Cell ss:StyleID="s75"><Data ss:Type="String">Your diplomats have returned from Varg with Gold.</Data></Cell>
     <Cell ss:StyleID="s65"><Data ss:Type="String">Deine Diplomaten sind mit Gold aus Varg zurückgekehrt.</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s69"><Data ss:Type="String">ui_bro_dawn_diplomats_expedition</Data></Cell>
-    <Cell ss:StyleID="s74"><Data ss:Type="String">Daybreakers' Stronghold</Data></Cell>
+    <Cell ss:StyleID="s75"><Data ss:Type="String">Daybreakers' Stronghold</Data></Cell>
     <Cell ss:StyleID="s65"><Data ss:Type="String">Hochburg der Morgenrötler</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
@@ -2228,22 +2233,22 @@
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s69"><Data ss:Type="String">ui_bro_dawn_diplomats_reward</Data></Cell>
-    <Cell ss:StyleID="s74"><Data ss:Type="String">Brotherhood Mission</Data></Cell>
+    <Cell ss:StyleID="s75"><Data ss:Type="String">Brotherhood Mission</Data></Cell>
     <Cell ss:StyleID="s65"><Data ss:Type="String">Bruderschaft Mission</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s69"><Data ss:Type="String">ui_bro_dawn_diplomats_reward_lore</Data></Cell>
-    <Cell ss:StyleID="s74"><Data ss:Type="String">The Brotherhood of Dawn was happy to receive your diplomats, making them feel right at home amongst the devotees of Anathëa. Knowing of your abilities and the magical energy required for you to continue serving the people of the continent as you have, the Brotherhood provided your diplomats with numerous energy crystals to bring back to Stormfall.</Data></Cell>
+    <Cell ss:StyleID="s75"><Data ss:Type="String">The Brotherhood of Dawn was happy to receive your diplomats, making them feel right at home amongst the devotees of Anathëa. Knowing of your abilities and the magical energy required for you to continue serving the people of the continent as you have, the Brotherhood provided your diplomats with numerous energy crystals to bring back to Stormfall.</Data></Cell>
     <Cell ss:StyleID="s65"><Data ss:Type="String">Die Bruderschaft der Morgenröte freute sich, deine Diplomaten zu empfangen, sodass sie sich unter den Anathëa-Anhängern wie zu Hause fühlten. Die Bruderschaft war sich deiner Fähigkeiten und der magischen Energie bewusst, die du benötigst, um den Menschen in Wolcen weiterhin zu dienen. Somit versorgen sie deine Diplomaten mit zahlreichen Energiekristallen, um sie nach Sturmfall zurückzubringen.</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s69"><Data ss:Type="String">ui_bro_dawn_diplomats_reward_summary</Data></Cell>
-    <Cell ss:StyleID="s74"><Data ss:Type="String">Your diplomats have returned from the Brotherhood of Dawn with Primordial Affinity.</Data></Cell>
+    <Cell ss:StyleID="s75"><Data ss:Type="String">Your diplomats have returned from the Brotherhood of Dawn with Primordial Affinity.</Data></Cell>
     <Cell ss:StyleID="s65"><Data ss:Type="String">Deine Diplomaten sind von der Bruderschaft der Morgenröte mit Urzeitlicher Affinität zurückgekehrt.</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s69"><Data ss:Type="String">ui_morkai_mines_diplomats_expedition</Data></Cell>
-    <Cell ss:StyleID="s74"><Data ss:Type="String">Diamond Mines of Morkaï</Data></Cell>
+    <Cell ss:StyleID="s75"><Data ss:Type="String">Diamond Mines of Morkaï</Data></Cell>
     <Cell ss:StyleID="s65"><Data ss:Type="String">Diamantminen von Morkaï</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
@@ -2253,22 +2258,22 @@
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s69"><Data ss:Type="String">ui_morkai_mines_diplomats_reward</Data></Cell>
-    <Cell ss:StyleID="s74"><Data ss:Type="String">Diamond Mines Mission</Data></Cell>
+    <Cell ss:StyleID="s75"><Data ss:Type="String">Diamond Mines Mission</Data></Cell>
     <Cell ss:StyleID="s65"><Data ss:Type="String">Diamantminen Mission</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s69"><Data ss:Type="String">ui_morkai_mines_diplomats_reward_lore</Data></Cell>
-    <Cell ss:StyleID="s74"><Data ss:Type="String">Your diplomats were met by a group of Monks on the edge of the Salt Desert. They provided escort, using their walking sticks to check for any unusual vibrations. A number of detours had to be taken, to avoid the legendary creature worming below the surface. When questioned, they would not utter its name, for doing so is akin to summoning a demon, they said. They reached the Diamond Mines without further incident and brought back a wealth of gems.</Data></Cell>
+    <Cell ss:StyleID="s75"><Data ss:Type="String">Your diplomats were met by a group of Monks on the edge of the Salt Desert. They provided escort, using their walking sticks to check for any unusual vibrations. A number of detours had to be taken, to avoid the legendary creature worming below the surface. When questioned, they would not utter its name, for doing so is akin to summoning a demon, they said. They reached the Diamond Mines without further incident and brought back a wealth of gems.</Data></Cell>
     <Cell ss:StyleID="s65"><Data ss:Type="String">Deine Diplomaten wurden von einer Gruppe Mönche am Rande der Salzwüste empfangen. Sie stellten die Begleitung zur Verfügung und überprüften mit ihren Spazierstöcken, ob ungewöhnliche Vibrationen auftraten. Es mussten einige Umwege gemacht werden, um zu vermeiden, dass die legendäre Kreatur unter der Oberfläche erscheint. Wenn sie gefragt würden, würden sie den Namen nicht aussprechen, da dies der Beschwörung eines Dämons gleicht, jedenfalls sagen sie das. Sie erreichten die Diamantenminen ohne weitere Zwischenfälle und brachten eine Fülle von Edelsteinen zurück.</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s69"><Data ss:Type="String">ui_morkai_mines_diplomats_reward_summary</Data></Cell>
-    <Cell ss:StyleID="s74"><Data ss:Type="String">Your diplomats returned from the Diamond Mines with Gems.</Data></Cell>
+    <Cell ss:StyleID="s75"><Data ss:Type="String">Your diplomats returned from the Diamond Mines with Gems.</Data></Cell>
     <Cell ss:StyleID="s65"><Data ss:Type="String">Deine Diplomaten sind mit Edelsteinen von den Diamantenminen zurückgekehrt.</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s69"><Data ss:Type="String">ui_abyssal_herald_diplomats_expedition</Data></Cell>
-    <Cell ss:StyleID="s74"><Data ss:Type="String">Whisper’s Rest Inn</Data></Cell>
+    <Cell ss:StyleID="s75"><Data ss:Type="String">Whisper’s Rest Inn</Data></Cell>
     <Cell ss:StyleID="s65"><Data ss:Type="String">Des Flüsterers Rast</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
@@ -2278,17 +2283,17 @@
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s69"><Data ss:Type="String">ui_abyssal_herald_diplomats_reward</Data></Cell>
-    <Cell ss:StyleID="s74"><Data ss:Type="String">Whisper's Rest Mission</Data></Cell>
+    <Cell ss:StyleID="s75"><Data ss:Type="String">Whisper's Rest Mission</Data></Cell>
     <Cell ss:StyleID="s65"><Data ss:Type="String">Des Flüsterers Rast Mission</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s69"><Data ss:Type="String">ui_abyssal_herald_diplomats_reward_lore</Data></Cell>
-    <Cell ss:StyleID="s74"><Data ss:Type="String">Your representatives have returned safely from their journey to the Whisper’s Rest Inn. The landlady welcomed them with open arms; she knew what they were there for. Once pleasantries were exchanged, she led them down to the cellar. She conducted some ritual, and at one point your diplomats swore they were about to be sacrificed to the monsters of the abyss. Alas, they needn’t have worried. Once the ritual was complete, the lady of the Inn gave them Ethereal Reagents as an offering to the regent of Stormfall.</Data></Cell>
+    <Cell ss:StyleID="s75"><Data ss:Type="String">Your representatives have returned safely from their journey to the Whisper’s Rest Inn. The landlady welcomed them with open arms; she knew what they were there for. Once pleasantries were exchanged, she led them down to the cellar. She conducted some ritual, and at one point your diplomats swore they were about to be sacrificed to the monsters of the abyss. Alas, they needn’t have worried. Once the ritual was complete, the lady of the Inn gave them Ethereal Reagents as an offering to the regent of Stormfall.</Data></Cell>
     <Cell ss:StyleID="s65"><Data ss:Type="String">Deine Vertreter sind sicher von ihrer Reise vom Gasthaus &quot;des Flüsterers Rast&quot; zurückgekehrt. Die Wirtin begrüßte sie mit offenen Armen; Sie wusste, weswegen sie da waren. Nachdem die Höflichkeiten ausgetauscht worden waren, führte sie sie in den Keller. Sie führte ein Ritual durch, und deine Diplomaten schworen, dass sie den Monstern des Abgrunds geopfert werden sollten. Sie hätten sich jedoch keine Sorgen machen müssen, denn sobald das Ritual abgeschlossen war, gab die Dame des Gasthauses dem Regenten von Sturmfall die Reagenzien als Opfergabe.</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s69"><Data ss:Type="String">ui_abyssal_herald_diplomats_reward_summary</Data></Cell>
-    <Cell ss:StyleID="s74"><Data ss:Type="String">Your diplomats have returned from Whisper’s Rest Inn with Ethereal Reagents.</Data></Cell>
+    <Cell ss:StyleID="s75"><Data ss:Type="String">Your diplomats have returned from Whisper’s Rest Inn with Ethereal Reagents.</Data></Cell>
     <Cell ss:StyleID="s65"><Data ss:Type="String">Deine Diplomaten sind aus dem Wirtshaus, &quot;Des Flüsterers Rast&quot;, mit Ätherischen Reagenzien zurückgekehrt.</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
@@ -2298,197 +2303,197 @@
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s69"><Data ss:Type="String">ui_misc_diplomats_land_reward_1</Data></Cell>
-    <Cell ss:StyleID="s74"><Data ss:Type="String">Diplomats have returned</Data></Cell>
+    <Cell ss:StyleID="s75"><Data ss:Type="String">Diplomats have returned</Data></Cell>
     <Cell ss:StyleID="s65"><Data ss:Type="String">Deine Diplomaten sind zurückgekehrt</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s69"><Data ss:Type="String">ui_misc_diplomats_land_reward_1_lore</Data></Cell>
-    <Cell ss:StyleID="s74"><Data ss:Type="String">Your diplomats have returned from their mission. In the end, they were unable to make it to their destination. They did, however, come upon another wandering caravan while out on the roads, and were able to make a small trade, so the journey was not a complete waste.</Data></Cell>
+    <Cell ss:StyleID="s75"><Data ss:Type="String">Your diplomats have returned from their mission. In the end, they were unable to make it to their destination. They did, however, come upon another wandering caravan while out on the roads, and were able to make a small trade, so the journey was not a complete waste.</Data></Cell>
     <Cell ss:StyleID="s65"><Data ss:Type="String">Deine Diplomaten sind von ihrer Mission zurückgekehrt. Am Ende konnten sie es nicht bis zu ihrem Ziel schaffen. Sie stießen jedoch auf einer Straße auf eine andere umherziehende Karawane und konnten ein kleines Geschäft abschließen, so dass die Reise keine völlige Verschwendung war.</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s69"><Data ss:Type="String">ui_misc_diplomats_land_reward_1_summary</Data></Cell>
-    <Cell ss:StyleID="s74"><Data ss:Type="String">Your diplomats did not reach their destination, but still managed to conduct some trade.</Data></Cell>
+    <Cell ss:StyleID="s75"><Data ss:Type="String">Your diplomats did not reach their destination, but still managed to conduct some trade.</Data></Cell>
     <Cell ss:StyleID="s65"><Data ss:Type="String">Deine Diplomaten haben ihr Ziel nicht erreicht, aber es ist ihnen dennoch gelungen, etwas Handel zu betreiben.</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s69"><Data ss:Type="String">ui_misc_diplomats_land_reward_2</Data></Cell>
-    <Cell ss:StyleID="s74"><Data ss:Type="String">Diplomats have returned</Data></Cell>
+    <Cell ss:StyleID="s75"><Data ss:Type="String">Diplomats have returned</Data></Cell>
     <Cell ss:StyleID="s65"><Data ss:Type="String">Deine Diplomaten sind zurückgekehrt</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s69"><Data ss:Type="String">ui_misc_diplomats_land_reward_2_lore</Data></Cell>
-    <Cell ss:StyleID="s74"><Data ss:Type="String">Your diplomats were unable to reach their intended destination. After torrential rainfall, the wagons drove straight into a thick mire. Despite their best efforts, the wagons had to be left behind. They managed to recover a fraction of what they had taken with them, loaded onto the horses, and were able to make some smaller trades with the villages they passed through on the way home.</Data></Cell>
+    <Cell ss:StyleID="s75"><Data ss:Type="String">Your diplomats were unable to reach their intended destination. After torrential rainfall, the wagons drove straight into a thick mire. Despite their best efforts, the wagons had to be left behind. They managed to recover a fraction of what they had taken with them, loaded onto the horses, and were able to make some smaller trades with the villages they passed through on the way home.</Data></Cell>
     <Cell ss:StyleID="s65"><Data ss:Type="String">Deine Diplomaten konnten ihren Bestimmungsort nicht erreichen. Nach heftigen Regenfällen fuhren die Wagen direkt in einen dichten Sumpf. Trotz aller Bemühungen mussten die Wagen zurückgelassen werden. Sie schafften es, einen Bruchteil von dem, was sie mitgenommen hatten, auf die Pferde zu bringen und konnten mit den Dörfern, durch die sie auf dem Heimweg gingen, kleinere Geschäfte machen.</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s69"><Data ss:Type="String">ui_misc_diplomats_reward_2_summary</Data></Cell>
-    <Cell ss:StyleID="s74"><Data ss:Type="String">Your diplomats did not reach their destination, but still managed to conduct some trade.</Data></Cell>
+    <Cell ss:StyleID="s75"><Data ss:Type="String">Your diplomats did not reach their destination, but still managed to conduct some trade.</Data></Cell>
     <Cell ss:StyleID="s65"><Data ss:Type="String">Deine Diplomaten haben ihr Ziel nicht erreicht, aber es ist ihnen dennoch gelungen, etwas Handel zu betreiben.</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s69"><Data ss:Type="String">ui_misc_diplomats_land_reward_3</Data></Cell>
-    <Cell ss:StyleID="s74"><Data ss:Type="String">Diplomats have returned</Data></Cell>
+    <Cell ss:StyleID="s75"><Data ss:Type="String">Diplomats have returned</Data></Cell>
     <Cell ss:StyleID="s65"><Data ss:Type="String">Deine Diplomaten sind zurückgekehrt</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s69"><Data ss:Type="String">ui_misc_diplomats_land_reward_3_lore</Data></Cell>
-    <Cell ss:StyleID="s74"><Data ss:Type="String">After reaching their destination and parking their wagons, the local leaders approached your diplomats, excessively apologetic. Apparently, even though they valued their ties with Stormfall dearly, they found themselves unable to give as much as they would have liked to your diplomats. Little could be done to change their minds, and so the diplomats returned, not with what they had hoped, but something to show nonetheless. </Data></Cell>
+    <Cell ss:StyleID="s75"><Data ss:Type="String">After reaching their destination and parking their wagons, the local leaders approached your diplomats, excessively apologetic. Apparently, even though they valued their ties with Stormfall dearly, they found themselves unable to give as much as they would have liked to your diplomats. Little could be done to change their minds, and so the diplomats returned, not with what they had hoped, but something to show nonetheless. </Data></Cell>
     <Cell ss:StyleID="s65"><Data ss:Type="String">Nachdem sie ihr Ziel erreicht und ihre Wagen abgestellt hatten, gingen die örtlichen Führer zu deinen Diplomaten und entschuldigten sich überschwänglich. Anscheinend waren sie nicht in der Lage, deinen Diplomaten so viel zu geben, wie sie wollten, obwohl sie die Verbindungen zu Sturmfall sehr schätzten. Es konnte jedoch nur wenig getan werden, um ihre Meinung zu ändern, und so kehrten die Diplomaten zurück, nicht mit dem, was sie gehofft hatten, aber mit etwas, das sie dennoch vorzeigen konnten.</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s69"><Data ss:Type="String">ui_misc_diplomats_land_reward_3_summary</Data></Cell>
-    <Cell ss:StyleID="s74"><Data ss:Type="String">Your diplomats did not reach their destination, but still managed to conduct some trade.</Data></Cell>
+    <Cell ss:StyleID="s75"><Data ss:Type="String">Your diplomats did not reach their destination, but still managed to conduct some trade.</Data></Cell>
     <Cell ss:StyleID="s65"><Data ss:Type="String">Deine Diplomaten haben ihr Ziel nicht erreicht, aber es ist ihnen dennoch gelungen, etwas Handel zu betreiben.</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s69"><Data ss:Type="String">ui_misc_diplomats_land_reward_4</Data></Cell>
-    <Cell ss:StyleID="s74"><Data ss:Type="String">Diplomats have returned</Data></Cell>
+    <Cell ss:StyleID="s75"><Data ss:Type="String">Diplomats have returned</Data></Cell>
     <Cell ss:StyleID="s65"><Data ss:Type="String">Deine Diplomaten sind zurückgekehrt</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s69"><Data ss:Type="String">ui_misc_diplomats_land_reward_4_lore</Data></Cell>
-    <Cell ss:StyleID="s74"><Data ss:Type="String">While en route to their destination, your diplomats were chased off the beaten track by bandits. After finding a suitable spot to lay low, the Thunderblades escorting the caravan set up an ambush. They were swift and ruthless and managed to take a number of the bandits as hostages, including, they discerned, the son of a bandit chieftain. After being escorted to the bandit camp, your diplomats were able to trade the son for a hefty ransom.</Data></Cell>
+    <Cell ss:StyleID="s75"><Data ss:Type="String">While en route to their destination, your diplomats were chased off the beaten track by bandits. After finding a suitable spot to lay low, the Thunderblades escorting the caravan set up an ambush. They were swift and ruthless and managed to take a number of the bandits as hostages, including, they discerned, the son of a bandit chieftain. After being escorted to the bandit camp, your diplomats were able to trade the son for a hefty ransom.</Data></Cell>
     <Cell ss:StyleID="s65"><Data ss:Type="String">Auf dem Weg zu ihrem Ziel wurden deine Diplomaten von Banditen überrascht. Nachdem die Donnerklingen, die die Karawane begleiteten, einen geeigneten Ort gefunden hatten, um sich niederzulassen, begannen sie mit einen Hinterhalt. Sie waren schnell und rücksichtslos und schafften es, einige der Banditen als Geiseln zu nehmen, darunter, wie sie erkannten, den Sohn eines Banditenhäuptlings. Nachdem deine Diplomaten in das Banditenlager gebracht worden waren, konnten sie den Sohn gegen ein großes Lösegeld eintauschen.</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s69"><Data ss:Type="String">ui_misc_diplomats_land_reward_4_summary</Data></Cell>
-    <Cell ss:StyleID="s74"><Data ss:Type="String">Your diplomats did not reach their destination, but still managed to conduct some trade.</Data></Cell>
+    <Cell ss:StyleID="s75"><Data ss:Type="String">Your diplomats did not reach their destination, but still managed to conduct some trade.</Data></Cell>
     <Cell ss:StyleID="s65"><Data ss:Type="String">Deine Diplomaten haben ihr Ziel nicht erreicht, aber es ist ihnen dennoch gelungen, etwas Handel zu betreiben.</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s69"><Data ss:Type="String">ui_misc_diplomats_ship_reward_1</Data></Cell>
-    <Cell ss:StyleID="s74"><Data ss:Type="String">Diplomats have returned</Data></Cell>
+    <Cell ss:StyleID="s75"><Data ss:Type="String">Diplomats have returned</Data></Cell>
     <Cell ss:StyleID="s65"><Data ss:Type="String">Deine Diplomaten sind zurückgekehrt</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s69"><Data ss:Type="String">ui_misc_diplomats_ship_reward_1_lore</Data></Cell>
-    <Cell ss:StyleID="s74"><Data ss:Type="String">Your diplomats were buffeted off course by tempestuous winds and the wrathful waves of the open ocean. Despite their misfortune, they ran aground on an island, encountering a small commune. They were not quite used to visitors; and seeing the strange, alien objects owned by the diplomats, they were eager to trade some of their own belongings. </Data></Cell>
+    <Cell ss:StyleID="s75"><Data ss:Type="String">Your diplomats were buffeted off course by tempestuous winds and the wrathful waves of the open ocean. Despite their misfortune, they ran aground on an island, encountering a small commune. They were not quite used to visitors; and seeing the strange, alien objects owned by the diplomats, they were eager to trade some of their own belongings. </Data></Cell>
     <Cell ss:StyleID="s65"><Data ss:Type="String">Deine Diplomaten wurden von stürmischen Winden und den zornigen Wellen des offenen Ozeans vom Kurs abgehalten. Trotz ihres Unglücks liefen sie auf einer Insel auf Grund und stießen auf eine kleine Gemeinde. Sie waren nicht an Besucher gewöhnt; und als sie die seltsamen, fremden Gegenstände sahen, die den Diplomaten gehörten, waren sie bestrebt, einige ihrer eigenen Habseligkeiten zu tauschen.</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s69"><Data ss:Type="String">ui_misc_diplomats_ship_reward_1_summary</Data></Cell>
-    <Cell ss:StyleID="s74"><Data ss:Type="String">Your diplomats did not reach their destination, but still managed to conduct some trade.</Data></Cell>
+    <Cell ss:StyleID="s75"><Data ss:Type="String">Your diplomats did not reach their destination, but still managed to conduct some trade.</Data></Cell>
     <Cell ss:StyleID="s65"><Data ss:Type="String">Deine Diplomaten haben ihr Ziel nicht erreicht, aber es ist ihnen dennoch gelungen, etwas Handel zu betreiben.</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s69"><Data ss:Type="String">ui_misc_diplomats_ship_reward_2</Data></Cell>
-    <Cell ss:StyleID="s74"><Data ss:Type="String">Diplomats have returned</Data></Cell>
+    <Cell ss:StyleID="s75"><Data ss:Type="String">Diplomats have returned</Data></Cell>
     <Cell ss:StyleID="s65"><Data ss:Type="String">Deine Diplomaten sind zurückgekehrt</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s69"><Data ss:Type="String">ui_misc_diplomats_ship_reward_2_lore</Data></Cell>
-    <Cell ss:StyleID="s74"><Data ss:Type="String">Your diplomats have returned, but not from their intended destination. After sailing for a number of days, they were intercepted by a small fleet of Republic ships. Your diplomats were led to a nearby Republican outpost, where they were questioned on their cargo and their destination. After discerning the contents of the ships, the Republic demanded a trade, albeit at a reduced rate to what your diplomats were expecting. </Data></Cell>
+    <Cell ss:StyleID="s75"><Data ss:Type="String">Your diplomats have returned, but not from their intended destination. After sailing for a number of days, they were intercepted by a small fleet of Republic ships. Your diplomats were led to a nearby Republican outpost, where they were questioned on their cargo and their destination. After discerning the contents of the ships, the Republic demanded a trade, albeit at a reduced rate to what your diplomats were expecting. </Data></Cell>
     <Cell ss:StyleID="s65"><Data ss:Type="String">Deine Diplomaten sind zurückgekehrt, allerdings nicht von ihrem Bestimmungsort. Nachdem sie einige Tage gesegelt waren, wurden sie von einer kleinen Flotte republikanischer Schiffe abgefangen. Deine Diplomaten wurden zu einem nahe gelegenen republikanischen Außenposten geführt, wo sie nach ihrer Fracht und ihrem Bestimmungsort befragt wurden. Nachdem die Republik den Inhalt der Schiffe erkannt hatte, verlangte sie einen Handel, allerdings zu einem niedrigeren Satz als von deinen Diplomaten erwartet.</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s69"><Data ss:Type="String">ui_misc_diplomats_ship_reward_2_summary</Data></Cell>
-    <Cell ss:StyleID="s74"><Data ss:Type="String">Your diplomats did not reach their destination, but still managed to conduct some trade.</Data></Cell>
+    <Cell ss:StyleID="s75"><Data ss:Type="String">Your diplomats did not reach their destination, but still managed to conduct some trade.</Data></Cell>
     <Cell ss:StyleID="s65"><Data ss:Type="String">Deine Diplomaten haben ihr Ziel nicht erreicht, aber es ist ihnen dennoch gelungen, etwas Handel zu betreiben.</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s69"><Data ss:Type="String">ui_misc_diplomats_ship_reward_3</Data></Cell>
-    <Cell ss:StyleID="s74"><Data ss:Type="String">Diplomats have returned</Data></Cell>
+    <Cell ss:StyleID="s75"><Data ss:Type="String">Diplomats have returned</Data></Cell>
     <Cell ss:StyleID="s65"><Data ss:Type="String">Deine Diplomaten sind zurückgekehrt</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s69"><Data ss:Type="String">ui_misc_diplomats_ship_reward_3_lore</Data></Cell>
-    <Cell ss:StyleID="s74"><Data ss:Type="String">While out on the open seas, your diplomats came across a small merchant convoy, traveling in the same direction. After signaling, your diplomats had their ship anchored alongside the merchants, and after a short discussion, realized that they were carrying valuable cargo. They proved willing to trade it to, leaving the diplomats happy enough to return to Stormfall without reaching their intended destination.</Data></Cell>
+    <Cell ss:StyleID="s75"><Data ss:Type="String">While out on the open seas, your diplomats came across a small merchant convoy, traveling in the same direction. After signaling, your diplomats had their ship anchored alongside the merchants, and after a short discussion, realized that they were carrying valuable cargo. They proved willing to trade it to, leaving the diplomats happy enough to return to Stormfall without reaching their intended destination.</Data></Cell>
     <Cell ss:StyleID="s65"><Data ss:Type="String">Während sie auf hoher See unterwegs waren, stießen deine Diplomaten auf einen kleinen Handelskonvoi, der in die gleiche Richtung segelten. Nach der Signalisierung ließen deine Diplomaten ihr Schiff neben den Händlern ankern und stellten nach einer kurzen Diskussion fest, dass sie wertvolle Fracht transportierten. Sie erwiesen sich bereit, zu handeln, und ließen die Diplomaten glücklich nach Sturmfall zurückzukehren, ohne ihr beabsichtigtes Ziel zu erreichen.</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s69"><Data ss:Type="String">ui_misc_diplomats_ship_reward_3_summary</Data></Cell>
-    <Cell ss:StyleID="s74"><Data ss:Type="String">Your diplomats did not reach their destination, but still managed to conduct some trade.</Data></Cell>
+    <Cell ss:StyleID="s75"><Data ss:Type="String">Your diplomats did not reach their destination, but still managed to conduct some trade.</Data></Cell>
     <Cell ss:StyleID="s65"><Data ss:Type="String">Deine Diplomaten haben ihr Ziel nicht erreicht, aber es ist ihnen dennoch gelungen, etwas Handel zu betreiben.</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s69"><Data ss:Type="String">ui_misc_diplomats_ship_reward_4</Data></Cell>
-    <Cell ss:StyleID="s74"><Data ss:Type="String">Diplomats have returned</Data></Cell>
+    <Cell ss:StyleID="s75"><Data ss:Type="String">Diplomats have returned</Data></Cell>
     <Cell ss:StyleID="s65"><Data ss:Type="String">Deine Diplomaten sind zurückgekehrt</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s69"><Data ss:Type="String">ui_misc_diplomats_ship_reward_4_lore</Data></Cell>
-    <Cell ss:StyleID="s74"><Data ss:Type="String">Part-way to their destination, a pirate ship emerged from a cove to pursue your diplomats. Desperate to escape, they had to abandon their current course and turn around for Stormfall. They were followed into a storm, and when they emerged, they noticed the pirate ship sinking. Unable to believe their luck, your diplomats turned the ship around, allowing a couple of survivors to be brought on board as captives. In exchange for their lives, the pirates led the diplomats to their buried treasure.</Data></Cell>
+    <Cell ss:StyleID="s75"><Data ss:Type="String">Part-way to their destination, a pirate ship emerged from a cove to pursue your diplomats. Desperate to escape, they had to abandon their current course and turn around for Stormfall. They were followed into a storm, and when they emerged, they noticed the pirate ship sinking. Unable to believe their luck, your diplomats turned the ship around, allowing a couple of survivors to be brought on board as captives. In exchange for their lives, the pirates led the diplomats to their buried treasure.</Data></Cell>
     <Cell ss:StyleID="s65"><Data ss:Type="String">Auf dem Weg zu ihrem Ziel tauchte ein Piratenschiff aus einer Bucht auf, und verfolgte deine Diplomaten. Um zu entkommen, mussten sie ihren derzeitigen Kurs aufgeben und steuerten das Schiff wieder Richtung Sturmfall. Sie segelten in einem Sturm um den Piraten zu entkommen, doch sie wurden weiter verfolgt, und als sie es bemerkten, sahen sie, dass das Piratenschiff sank. Deine Diplomaten konnten ihr Glück nicht fassen und drehten das Schiff um, sodass ein paar Überlebende als Gefangene an Bord gebracht werden konnten. Im Austausch für ihr Leben führten die Piraten die Diplomaten zu ihrem vergrabenen Schatz.</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s69"><Data ss:Type="String">ui_misc_diplomats_ship_reward_4_summary</Data></Cell>
-    <Cell ss:StyleID="s74"><Data ss:Type="String">Your diplomats did not reach their destination, but still managed to conduct some trade.</Data></Cell>
+    <Cell ss:StyleID="s75"><Data ss:Type="String">Your diplomats did not reach their destination, but still managed to conduct some trade.</Data></Cell>
     <Cell ss:StyleID="s65"><Data ss:Type="String">Deine Diplomaten haben ihr Ziel nicht erreicht, aber es ist ihnen dennoch gelungen, etwas Handel zu betreiben.</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s69"><Data ss:Type="String">ui_misc_diplomats_general_fail_reward_1</Data></Cell>
-    <Cell ss:StyleID="s74"><Data ss:Type="String">Diplomats have returned</Data></Cell>
+    <Cell ss:StyleID="s75"><Data ss:Type="String">Diplomats have returned</Data></Cell>
     <Cell ss:StyleID="s65"><Data ss:Type="String">Deine Diplomaten sind zurückgekehrt</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s69"><Data ss:Type="String">ui_misc_diplomats_general_fail_reward_1_lore</Data></Cell>
-    <Cell ss:StyleID="s74"><Data ss:Type="String">The time has long passed for your diplomats’ return. They should have been back in Stormfall weeks ago. With no news from them at this point in time, it is safe to assume that they are never coming back</Data></Cell>
+    <Cell ss:StyleID="s75"><Data ss:Type="String">The time has long passed for your diplomats’ return. They should have been back in Stormfall weeks ago. With no news from them at this point in time, it is safe to assume that they are never coming back</Data></Cell>
     <Cell ss:StyleID="s65"><Data ss:Type="String">Die Zeit für die Rückkehr deiner Diplomaten ist längst vorbei. Sie hätten vor Wochen wieder in Sturmfall sein sollen. Da zu diesem Zeitpunkt noch keine Nachrichten von ihnen vorliegen, kann davon ausgegangen werden, dass sie niemals zurückkehren werden.</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s69"><Data ss:Type="String">ui_misc_diplomats_general_fail_reward_1_summary</Data></Cell>
-    <Cell ss:StyleID="s74"><Data ss:Type="String">Your diplomats did not returned from their mission.</Data></Cell>
+    <Cell ss:StyleID="s75"><Data ss:Type="String">Your diplomats did not returned from their mission.</Data></Cell>
     <Cell ss:StyleID="s65"><Data ss:Type="String">Deine Diplomaten sind nicht von ihrer Mission zurückgekehrt.</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s69"><Data ss:Type="String">ui_misc_diplomats_general_land_fail_reward_1</Data></Cell>
-    <Cell ss:StyleID="s74"><Data ss:Type="String">Diplomats have returned</Data></Cell>
+    <Cell ss:StyleID="s75"><Data ss:Type="String">Diplomats have returned</Data></Cell>
     <Cell ss:StyleID="s65"><Data ss:Type="String">Deine Diplomaten sind zurückgekehrt</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s69"><Data ss:Type="String">ui_misc_diplomats_general_land_fail_reward_1_lore</Data></Cell>
-    <Cell ss:StyleID="s74"><Data ss:Type="String">After arriving at their destination, feet weary and dust scratching at their lungs, your diplomats entered negotiations. Unfortunately for them, negotiations were long and protracted, and no consensus could be reached with the local leaders. In the end, your diplomats were forced to return to Stormfall with nothing to show for their troubles.</Data></Cell>
+    <Cell ss:StyleID="s75"><Data ss:Type="String">After arriving at their destination, feet weary and dust scratching at their lungs, your diplomats entered negotiations. Unfortunately for them, negotiations were long and protracted, and no consensus could be reached with the local leaders. In the end, your diplomats were forced to return to Stormfall with nothing to show for their troubles.</Data></Cell>
     <Cell ss:StyleID="s65"><Data ss:Type="String">Nachdem deine Diplomaten mit müden Füßen und Staub in der Lunge am Ziel angekommen waren, begannen sie die Verhandlungen. Leider waren die Verhandlungen langwierig und schwer, und es konnte kein Konsens mit den lokalen Führern erzielt werden. Am Ende waren deine Diplomaten gezwungen, nach Sturmfall zurückzukehren, ohne etwas vorzeigen zu können.</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s69"><Data ss:Type="String">ui_misc_diplomats_general_land_fail_reward_1_summary</Data></Cell>
-    <Cell ss:StyleID="s74"><Data ss:Type="String">Your diplomats have returned empty-handed.</Data></Cell>
+    <Cell ss:StyleID="s75"><Data ss:Type="String">Your diplomats have returned empty-handed.</Data></Cell>
     <Cell ss:StyleID="s65"><Data ss:Type="String">Deine Diplomaten sind mit leeren Händen zurückgekehrt.</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s69"><Data ss:Type="String">ui_misc_diplomats_general_land_fail_reward_2</Data></Cell>
-    <Cell ss:StyleID="s74"><Data ss:Type="String">Diplomats have returned</Data></Cell>
+    <Cell ss:StyleID="s75"><Data ss:Type="String">Diplomats have returned</Data></Cell>
     <Cell ss:StyleID="s65"><Data ss:Type="String">Deine Diplomaten sind zurückgekehrt</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s69"><Data ss:Type="String">ui_misc_diplomats_general_land_fail_reward_2_lore</Data></Cell>
-    <Cell ss:StyleID="s74"><Data ss:Type="String">Despite arriving at their destination in good time, negotiations with the local leaders did not go as well as your diplomats would have hoped. One of your diplomats, perhaps who had missed the briefing before departure, made some gesture or other that offended the sensibilities of the locals. Consequently, no trade was made, and your diplomats returned empty-handed.</Data></Cell>
+    <Cell ss:StyleID="s75"><Data ss:Type="String">Despite arriving at their destination in good time, negotiations with the local leaders did not go as well as your diplomats would have hoped. One of your diplomats, perhaps who had missed the briefing before departure, made some gesture or other that offended the sensibilities of the locals. Consequently, no trade was made, and your diplomats returned empty-handed.</Data></Cell>
     <Cell ss:StyleID="s65"><Data ss:Type="String">Trotz der rechtzeitigen Ankunft am Bestimmungsort verliefen die Verhandlungen mit den örtlichen Staats- und Regierungschefs nicht so, wie deine Diplomaten es sich erhofft hatten. Einer deiner Diplomaten, der vielleicht die Besprechung vor der Abreise verpasst hatte, machte eine Geste, die die Sensibilität der Einheimischen verletzte. Infolgedessen wurde kein Handel getätigt, und deine Diplomaten kehrten mit leeren Händen zurück.</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s69"><Data ss:Type="String">ui_misc_diplomats_land_fail_reward_2_summary</Data></Cell>
-    <Cell ss:StyleID="s74"><Data ss:Type="String">Your diplomats have returned empty-handed.</Data></Cell>
+    <Cell ss:StyleID="s75"><Data ss:Type="String">Your diplomats have returned empty-handed.</Data></Cell>
     <Cell ss:StyleID="s65"><Data ss:Type="String">Deine Diplomaten sind mit leeren Händen zurückgekehrt.</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s69"><Data ss:Type="String">ui_misc_diplomats__ship_fail_reward_1</Data></Cell>
-    <Cell ss:StyleID="s74"><Data ss:Type="String">Diplomats have returned</Data></Cell>
+    <Cell ss:StyleID="s75"><Data ss:Type="String">Diplomats have returned</Data></Cell>
     <Cell ss:StyleID="s65"><Data ss:Type="String">Deine Diplomaten sind zurückgekehrt</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s69"><Data ss:Type="String">ui_misc_diplomats_ship_fail_reward_1_lore</Data></Cell>
-    <Cell ss:StyleID="s74"><Data ss:Type="String">After mooring their ship at their intended destination, your diplomats met with the local leaders. Talks went on for hours, beginning in the morning and stretching to the early hours of the following morning. Realizing that no consensus could be reached, your diplomats made the return journey to Stormfall, their ship lighter than they would have liked.</Data></Cell>
+    <Cell ss:StyleID="s75"><Data ss:Type="String">After mooring their ship at their intended destination, your diplomats met with the local leaders. Talks went on for hours, beginning in the morning and stretching to the early hours of the following morning. Realizing that no consensus could be reached, your diplomats made the return journey to Stormfall, their ship lighter than they would have liked.</Data></Cell>
     <Cell ss:StyleID="s65"><Data ss:Type="String">Nachdem sie ihr Schiff am vorgesehenen Bestimmungsort festgemacht hatten, trafen sich deine Diplomaten mit den örtlichen Führern. Die Gespräche dauerten stundenlang, angefangen am Morgen bis in die frühen Morgenstunden des nächsten Tages. Als deine Diplomaten erkannten, dass kein Konsens erzielt werden konnte, machten sie sich auf den Rückweg nach Sturmfall. Ihr Schiff war leichter, als sie es gerne hätten.</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s69"><Data ss:Type="String">ui_misc_diplomats_ship_fail_reward_1_summary</Data></Cell>
-    <Cell ss:StyleID="s74"><Data ss:Type="String">Your diplomats have returned empty-handed.</Data></Cell>
+    <Cell ss:StyleID="s75"><Data ss:Type="String">Your diplomats have returned empty-handed.</Data></Cell>
     <Cell ss:StyleID="s65"><Data ss:Type="String">Deine Diplomaten sind mit leeren Händen zurückgekehrt.</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s69"><Data ss:Type="String">ui_misc_diplomats__ship_fail_reward_2</Data></Cell>
-    <Cell ss:StyleID="s74"><Data ss:Type="String">Diplomats have returned</Data></Cell>
+    <Cell ss:StyleID="s75"><Data ss:Type="String">Diplomats have returned</Data></Cell>
     <Cell ss:StyleID="s65"><Data ss:Type="String">Deine Diplomaten sind zurückgekehrt</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s69"><Data ss:Type="String">ui_misc_diplomats_ship_fail_reward_2_lore</Data></Cell>
-    <Cell ss:StyleID="s74"><Data ss:Type="String">The sailing had been hard-going for your diplomats, meaning that they arrived at their destination much later than intended. The local leaders, offended by this tardiness, decided to not be forthcoming with the goods they could offer. Consequently, your diplomats were forced to sail home empty-handed. </Data></Cell>
+    <Cell ss:StyleID="s75"><Data ss:Type="String">The sailing had been hard-going for your diplomats, meaning that they arrived at their destination much later than intended. The local leaders, offended by this tardiness, decided to not be forthcoming with the goods they could offer. Consequently, your diplomats were forced to sail home empty-handed. </Data></Cell>
     <Cell ss:StyleID="s65"><Data ss:Type="String">Die Reise auf dem Meer war für deine Diplomaten sehr anstrengend gewesen, was bedeutete, dass sie viel später als beabsichtigt an ihrem Ziel ankamen. Die lokalen Führer, die von dieser Verspätung beleidigt waren, beschlossen, nicht mit den Gütern zu kommen, die sie anbieten wollten. Folglich mussten deine Diplomaten mit leeren Händen nach Hause segeln.</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s69"><Data ss:Type="String">ui_misc_diplomats_ship_fail_reward_2_summary</Data></Cell>
-    <Cell ss:StyleID="s74"><Data ss:Type="String">Your diplomats have returned empty-handed.</Data></Cell>
+    <Cell ss:StyleID="s75"><Data ss:Type="String">Your diplomats have returned empty-handed.</Data></Cell>
     <Cell ss:StyleID="s65"><Data ss:Type="String">Deine Diplomaten sind mit leeren Händen zurückgekehrt.</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
@@ -3228,12 +3233,12 @@
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="25.5">
     <Cell ss:StyleID="s65"><Data ss:Type="String">ui_courier_reward</Data></Cell>
-    <Cell ss:StyleID="s75"><Data ss:Type="String">News From Abroad</Data></Cell>
+    <Cell ss:StyleID="s76"><Data ss:Type="String">News From Abroad</Data></Cell>
     <Cell ss:StyleID="s65"><Data ss:Type="String">Nachrichten aus dem Ausland</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="25.5">
     <Cell ss:StyleID="s65"><Data ss:Type="String">ui_courier_reward_desc</Data></Cell>
-    <Cell ss:StyleID="s75"><Data ss:Type="String">Stormfall’s representatives in foreign states have returned to report on current affairs. They have leads, and sometimes, offerings, to bring to your attention. They invite you to have a look at what they have.</Data></Cell>
+    <Cell ss:StyleID="s76"><Data ss:Type="String">Stormfall’s representatives in foreign states have returned to report on current affairs. They have leads, and sometimes, offerings, to bring to your attention. They invite you to have a look at what they have.</Data></Cell>
     <Cell ss:StyleID="s65"><Data ss:Type="String">Die Vertreter von Sturmfall welche sich im Ausland befanden, sind zurückgekehrt, um über die aktuellen Ereignisse zu berichten. Sie haben Hinweise und als auch Opfergaben, um deine Aufmerksamkeit zu erregen. Sie laden dich ein, dir anzusehen, was sie haben.</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="25.5">
@@ -3348,7 +3353,7 @@
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="38.25">
     <Cell ss:StyleID="s65"/>
-    <Cell ss:StyleID="s75"/>
+    <Cell ss:StyleID="s76"/>
     <Cell ss:StyleID="s65"/>
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="51">
@@ -3373,12 +3378,12 @@
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s65"/>
-    <Cell ss:StyleID="s75"/>
+    <Cell ss:StyleID="s76"/>
     <Cell ss:StyleID="s65"/>
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="25.5">
     <Cell ss:StyleID="s65"/>
-    <Cell ss:StyleID="s75"/>
+    <Cell ss:StyleID="s76"/>
     <Cell ss:StyleID="s65"/>
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="25.5">
@@ -3493,7 +3498,7 @@
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="25.5">
     <Cell ss:StyleID="s65"/>
-    <Cell ss:StyleID="s75"/>
+    <Cell ss:StyleID="s76"/>
     <Cell ss:StyleID="s65"/>
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="75.75">
@@ -3518,22 +3523,12 @@
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="38.25">
     <Cell ss:StyleID="s65"/>
-    <Cell ss:StyleID="s75"/>
+    <Cell ss:StyleID="s76"/>
     <Cell ss:StyleID="s65"/>
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s65"/>
-    <Cell ss:StyleID="s75"/>
-    <Cell ss:StyleID="s65"/>
-   </Row>
-   <Row ss:AutoFitHeight="0" ss:Height="25.5">
-    <Cell ss:StyleID="s65"/>
-    <Cell ss:StyleID="s67"/>
-    <Cell ss:StyleID="s65"/>
-   </Row>
-   <Row ss:AutoFitHeight="0">
-    <Cell ss:StyleID="s65"/>
-    <Cell ss:StyleID="s67"/>
+    <Cell ss:StyleID="s76"/>
     <Cell ss:StyleID="s65"/>
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="25.5">
@@ -3542,151 +3537,6 @@
     <Cell ss:StyleID="s65"/>
    </Row>
    <Row ss:AutoFitHeight="0">
-    <Cell ss:StyleID="s65"/>
-    <Cell ss:StyleID="s67"/>
-    <Cell ss:StyleID="s65"/>
-   </Row>
-   <Row ss:AutoFitHeight="0">
-    <Cell ss:StyleID="s65"/>
-    <Cell ss:StyleID="s67"/>
-    <Cell ss:StyleID="s65"/>
-   </Row>
-   <Row ss:AutoFitHeight="0">
-    <Cell ss:StyleID="s65"/>
-    <Cell ss:StyleID="s67"/>
-    <Cell ss:StyleID="s65"/>
-   </Row>
-   <Row ss:AutoFitHeight="0">
-    <Cell ss:StyleID="s65"/>
-    <Cell ss:StyleID="s67"/>
-    <Cell ss:StyleID="s65"/>
-   </Row>
-   <Row ss:AutoFitHeight="0" ss:Height="25.5">
-    <Cell ss:StyleID="s65"/>
-    <Cell ss:StyleID="s67"/>
-    <Cell ss:StyleID="s65"/>
-   </Row>
-   <Row ss:AutoFitHeight="0" ss:Height="25.5">
-    <Cell ss:StyleID="s65"/>
-    <Cell ss:StyleID="s67"/>
-    <Cell ss:StyleID="s65"/>
-   </Row>
-   <Row ss:AutoFitHeight="0">
-    <Cell ss:StyleID="s65"/>
-    <Cell ss:StyleID="s67"/>
-    <Cell ss:StyleID="s65"/>
-   </Row>
-   <Row ss:AutoFitHeight="0" ss:Height="25.5">
-    <Cell ss:StyleID="s65"/>
-    <Cell ss:StyleID="s67"/>
-    <Cell ss:StyleID="s65"/>
-   </Row>
-   <Row ss:AutoFitHeight="0">
-    <Cell ss:StyleID="s65"/>
-    <Cell ss:StyleID="s67"/>
-    <Cell ss:StyleID="s65"/>
-   </Row>
-   <Row ss:AutoFitHeight="0" ss:Height="25.5">
-    <Cell ss:StyleID="s65"/>
-    <Cell ss:StyleID="s67"/>
-    <Cell ss:StyleID="s65"/>
-   </Row>
-   <Row ss:AutoFitHeight="0">
-    <Cell ss:StyleID="s65"/>
-    <Cell ss:StyleID="s67"/>
-    <Cell ss:StyleID="s65"/>
-   </Row>
-   <Row ss:AutoFitHeight="0">
-    <Cell ss:StyleID="s65"/>
-    <Cell ss:StyleID="s67"/>
-    <Cell ss:StyleID="s65"/>
-   </Row>
-   <Row ss:AutoFitHeight="0">
-    <Cell ss:StyleID="s65"/>
-    <Cell ss:StyleID="s67"/>
-    <Cell ss:StyleID="s65"/>
-   </Row>
-   <Row ss:AutoFitHeight="0" ss:Height="25.5">
-    <Cell ss:StyleID="s65"/>
-    <Cell ss:StyleID="s67"/>
-    <Cell ss:StyleID="s65"/>
-   </Row>
-   <Row ss:AutoFitHeight="0" ss:Height="25.5">
-    <Cell ss:StyleID="s65"/>
-    <Cell ss:StyleID="s67"/>
-    <Cell ss:StyleID="s65"/>
-   </Row>
-   <Row ss:AutoFitHeight="0" ss:Height="25.5">
-    <Cell ss:StyleID="s65"/>
-    <Cell ss:StyleID="s67"/>
-    <Cell ss:StyleID="s65"/>
-   </Row>
-   <Row ss:AutoFitHeight="0" ss:Height="25.5">
-    <Cell ss:StyleID="s65"/>
-    <Cell ss:StyleID="s67"/>
-    <Cell ss:StyleID="s65"/>
-   </Row>
-   <Row ss:AutoFitHeight="0" ss:Height="25.5">
-    <Cell ss:StyleID="s65"/>
-    <Cell ss:StyleID="s67"/>
-    <Cell ss:StyleID="s65"/>
-   </Row>
-   <Row ss:AutoFitHeight="0">
-    <Cell ss:StyleID="s65"/>
-    <Cell ss:StyleID="s67"/>
-    <Cell ss:StyleID="s65"/>
-   </Row>
-   <Row ss:AutoFitHeight="0" ss:Height="25.5">
-    <Cell ss:StyleID="s65"/>
-    <Cell ss:StyleID="s75"/>
-    <Cell ss:StyleID="s65"/>
-   </Row>
-   <Row ss:AutoFitHeight="0">
-    <Cell ss:StyleID="s65"/>
-    <Cell ss:StyleID="s67"/>
-    <Cell ss:StyleID="s65"/>
-   </Row>
-   <Row ss:AutoFitHeight="0">
-    <Cell ss:StyleID="s65"/>
-    <Cell ss:StyleID="s67"/>
-    <Cell ss:StyleID="s65"/>
-   </Row>
-   <Row ss:AutoFitHeight="0" ss:Height="25.5">
-    <Cell ss:StyleID="s65"/>
-    <Cell ss:StyleID="s67"/>
-    <Cell ss:StyleID="s65"/>
-   </Row>
-   <Row ss:AutoFitHeight="0" ss:Height="25.5">
-    <Cell ss:StyleID="s65"/>
-    <Cell ss:StyleID="s67"/>
-    <Cell ss:StyleID="s65"/>
-   </Row>
-   <Row ss:AutoFitHeight="0" ss:Height="25.5">
-    <Cell ss:StyleID="s65"/>
-    <Cell ss:StyleID="s75"/>
-    <Cell ss:StyleID="s65"/>
-   </Row>
-   <Row ss:AutoFitHeight="0" ss:Height="25.5">
-    <Cell ss:StyleID="s65"/>
-    <Cell ss:StyleID="s75"/>
-    <Cell ss:StyleID="s65"/>
-   </Row>
-   <Row ss:AutoFitHeight="0">
-    <Cell ss:StyleID="s65"/>
-    <Cell ss:StyleID="s67"/>
-    <Cell ss:StyleID="s65"/>
-   </Row>
-   <Row ss:AutoFitHeight="0">
-    <Cell ss:StyleID="s65"/>
-    <Cell ss:StyleID="s67"/>
-    <Cell ss:StyleID="s65"/>
-   </Row>
-   <Row ss:AutoFitHeight="0" ss:Height="25.5">
-    <Cell ss:StyleID="s65"/>
-    <Cell ss:StyleID="s67"/>
-    <Cell ss:StyleID="s65"/>
-   </Row>
-   <Row ss:AutoFitHeight="0" ss:Height="25.5">
     <Cell ss:StyleID="s65"/>
     <Cell ss:StyleID="s67"/>
     <Cell ss:StyleID="s65"/>
@@ -3736,12 +3586,12 @@
     <Cell ss:StyleID="s67"/>
     <Cell ss:StyleID="s65"/>
    </Row>
-   <Row ss:AutoFitHeight="0" ss:Height="38.25">
+   <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s65"/>
     <Cell ss:StyleID="s67"/>
     <Cell ss:StyleID="s65"/>
    </Row>
-   <Row ss:AutoFitHeight="0" ss:Height="38.25">
+   <Row ss:AutoFitHeight="0" ss:Height="25.5">
     <Cell ss:StyleID="s65"/>
     <Cell ss:StyleID="s67"/>
     <Cell ss:StyleID="s65"/>
@@ -3783,10 +3633,105 @@
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="25.5">
     <Cell ss:StyleID="s65"/>
-    <Cell ss:StyleID="s75"/>
+    <Cell ss:StyleID="s67"/>
+    <Cell ss:StyleID="s65"/>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s65"/>
+    <Cell ss:StyleID="s67"/>
     <Cell ss:StyleID="s65"/>
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="25.5">
+    <Cell ss:StyleID="s65"/>
+    <Cell ss:StyleID="s76"/>
+    <Cell ss:StyleID="s65"/>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s65"/>
+    <Cell ss:StyleID="s67"/>
+    <Cell ss:StyleID="s65"/>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s65"/>
+    <Cell ss:StyleID="s67"/>
+    <Cell ss:StyleID="s65"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="25.5">
+    <Cell ss:StyleID="s65"/>
+    <Cell ss:StyleID="s67"/>
+    <Cell ss:StyleID="s65"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="25.5">
+    <Cell ss:StyleID="s65"/>
+    <Cell ss:StyleID="s67"/>
+    <Cell ss:StyleID="s65"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="25.5">
+    <Cell ss:StyleID="s65"/>
+    <Cell ss:StyleID="s76"/>
+    <Cell ss:StyleID="s65"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="25.5">
+    <Cell ss:StyleID="s65"/>
+    <Cell ss:StyleID="s76"/>
+    <Cell ss:StyleID="s65"/>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s65"/>
+    <Cell ss:StyleID="s67"/>
+    <Cell ss:StyleID="s65"/>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s65"/>
+    <Cell ss:StyleID="s67"/>
+    <Cell ss:StyleID="s65"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="25.5">
+    <Cell ss:StyleID="s65"/>
+    <Cell ss:StyleID="s67"/>
+    <Cell ss:StyleID="s65"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="25.5">
+    <Cell ss:StyleID="s65"/>
+    <Cell ss:StyleID="s67"/>
+    <Cell ss:StyleID="s65"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="25.5">
+    <Cell ss:StyleID="s65"/>
+    <Cell ss:StyleID="s67"/>
+    <Cell ss:StyleID="s65"/>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s65"/>
+    <Cell ss:StyleID="s67"/>
+    <Cell ss:StyleID="s65"/>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s65"/>
+    <Cell ss:StyleID="s67"/>
+    <Cell ss:StyleID="s65"/>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s65"/>
+    <Cell ss:StyleID="s67"/>
+    <Cell ss:StyleID="s65"/>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s65"/>
+    <Cell ss:StyleID="s67"/>
+    <Cell ss:StyleID="s65"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="25.5">
+    <Cell ss:StyleID="s65"/>
+    <Cell ss:StyleID="s67"/>
+    <Cell ss:StyleID="s65"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="25.5">
+    <Cell ss:StyleID="s65"/>
+    <Cell ss:StyleID="s67"/>
+    <Cell ss:StyleID="s65"/>
+   </Row>
+   <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s65"/>
     <Cell ss:StyleID="s67"/>
     <Cell ss:StyleID="s65"/>
@@ -3801,6 +3746,26 @@
     <Cell ss:StyleID="s67"/>
     <Cell ss:StyleID="s65"/>
    </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="38.25">
+    <Cell ss:StyleID="s65"/>
+    <Cell ss:StyleID="s67"/>
+    <Cell ss:StyleID="s65"/>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s65"/>
+    <Cell ss:StyleID="s67"/>
+    <Cell ss:StyleID="s65"/>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s65"/>
+    <Cell ss:StyleID="s67"/>
+    <Cell ss:StyleID="s65"/>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s65"/>
+    <Cell ss:StyleID="s67"/>
+    <Cell ss:StyleID="s65"/>
+   </Row>
    <Row ss:AutoFitHeight="0" ss:Height="25.5">
     <Cell ss:StyleID="s65"/>
     <Cell ss:StyleID="s67"/>
@@ -3808,12 +3773,52 @@
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="25.5">
     <Cell ss:StyleID="s65"/>
-    <Cell ss:StyleID="s75"/>
+    <Cell ss:StyleID="s67"/>
+    <Cell ss:StyleID="s65"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="25.5">
+    <Cell ss:StyleID="s65"/>
+    <Cell ss:StyleID="s67"/>
+    <Cell ss:StyleID="s65"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="25.5">
+    <Cell ss:StyleID="s65"/>
+    <Cell ss:StyleID="s67"/>
+    <Cell ss:StyleID="s65"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="25.5">
+    <Cell ss:StyleID="s65"/>
+    <Cell ss:StyleID="s76"/>
+    <Cell ss:StyleID="s65"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="25.5">
+    <Cell ss:StyleID="s65"/>
+    <Cell ss:StyleID="s67"/>
+    <Cell ss:StyleID="s65"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="25.5">
+    <Cell ss:StyleID="s65"/>
+    <Cell ss:StyleID="s67"/>
     <Cell ss:StyleID="s65"/>
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="38.25">
     <Cell ss:StyleID="s65"/>
-    <Cell ss:StyleID="s75"/>
+    <Cell ss:StyleID="s67"/>
+    <Cell ss:StyleID="s65"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="25.5">
+    <Cell ss:StyleID="s65"/>
+    <Cell ss:StyleID="s67"/>
+    <Cell ss:StyleID="s65"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="25.5">
+    <Cell ss:StyleID="s65"/>
+    <Cell ss:StyleID="s76"/>
+    <Cell ss:StyleID="s65"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="38.25">
+    <Cell ss:StyleID="s65"/>
+    <Cell ss:StyleID="s76"/>
     <Cell ss:StyleID="s65"/>
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="25.5">
@@ -3928,7 +3933,7 @@
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s65"/>
-    <Cell ss:StyleID="s75"/>
+    <Cell ss:StyleID="s76"/>
     <Cell ss:StyleID="s65"/>
    </Row>
    <Row ss:AutoFitHeight="0">
@@ -3953,37 +3958,12 @@
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s65"/>
-    <Cell ss:StyleID="s75"/>
+    <Cell ss:StyleID="s76"/>
     <Cell ss:StyleID="s65"/>
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s65"/>
-    <Cell ss:StyleID="s75"/>
-    <Cell ss:StyleID="s65"/>
-   </Row>
-   <Row ss:AutoFitHeight="0">
-    <Cell ss:StyleID="s65"/>
-    <Cell ss:StyleID="s67"/>
-    <Cell ss:StyleID="s65"/>
-   </Row>
-   <Row ss:AutoFitHeight="0">
-    <Cell ss:StyleID="s65"/>
-    <Cell ss:StyleID="s67"/>
-    <Cell ss:StyleID="s65"/>
-   </Row>
-   <Row ss:AutoFitHeight="0">
-    <Cell ss:StyleID="s65"/>
-    <Cell ss:StyleID="s67"/>
-    <Cell ss:StyleID="s65"/>
-   </Row>
-   <Row ss:AutoFitHeight="0">
-    <Cell ss:StyleID="s65"/>
-    <Cell ss:StyleID="s67"/>
-    <Cell ss:StyleID="s65"/>
-   </Row>
-   <Row ss:AutoFitHeight="0">
-    <Cell ss:StyleID="s65"/>
-    <Cell ss:StyleID="s67"/>
+    <Cell ss:StyleID="s76"/>
     <Cell ss:StyleID="s65"/>
    </Row>
    <Row ss:AutoFitHeight="0">
@@ -4073,7 +4053,32 @@
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s65"/>
-    <Cell ss:StyleID="s75"/>
+    <Cell ss:StyleID="s67"/>
+    <Cell ss:StyleID="s65"/>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s65"/>
+    <Cell ss:StyleID="s67"/>
+    <Cell ss:StyleID="s65"/>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s65"/>
+    <Cell ss:StyleID="s67"/>
+    <Cell ss:StyleID="s65"/>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s65"/>
+    <Cell ss:StyleID="s67"/>
+    <Cell ss:StyleID="s65"/>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s65"/>
+    <Cell ss:StyleID="s67"/>
+    <Cell ss:StyleID="s65"/>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s65"/>
+    <Cell ss:StyleID="s76"/>
     <Cell ss:StyleID="s65"/>
    </Row>
    <Row ss:AutoFitHeight="0">
@@ -4098,7 +4103,7 @@
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s65"/>
-    <Cell ss:StyleID="s75"/>
+    <Cell ss:StyleID="s76"/>
     <Cell ss:StyleID="s65"/>
    </Row>
   </Table>

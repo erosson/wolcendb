@@ -8,9 +8,9 @@
  <DocumentProperties xmlns="urn:schemas-microsoft-com:office:office">
   <Title>Untitled Spreadsheet</Title>
   <Author>Unknown Creator</Author>
-  <LastAuthor>Cthylla</LastAuthor>
-  <Created>2020-03-05T08:53:30Z</Created>
-  <LastSaved>2020-03-05T08:53:30Z</LastSaved>
+  <LastAuthor>Christopher</LastAuthor>
+  <Created>2020-03-17T16:48:55Z</Created>
+  <LastSaved>2020-03-17T16:48:55Z</LastSaved>
   <Company>Microsoft Corporation</Company>
   <Version>16.00</Version>
  </DocumentProperties>
@@ -18,10 +18,11 @@
   <AllowPNG/>
  </OfficeDocumentSettings>
  <ExcelWorkbook xmlns="urn:schemas-microsoft-com:office:excel">
-  <WindowHeight>17625</WindowHeight>
-  <WindowWidth>32767</WindowWidth>
+  <WindowHeight>7980</WindowHeight>
+  <WindowWidth>21570</WindowWidth>
   <WindowTopX>32767</WindowTopX>
   <WindowTopY>32767</WindowTopY>
+  <RefModeR1C1/>
   <ProtectStructure>False</ProtectStructure>
   <ProtectWindows>False</ProtectWindows>
  </ExcelWorkbook>
@@ -2356,7 +2357,7 @@
    <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s75"><Data ss:Type="String">ui_SIEGE_8_gameplaydesc</Data></Cell>
     <Cell ss:StyleID="s77"><Data ss:Type="String">You will receive a Buff depending on which archetype your equipped Chest-piece belongs to.\n\nIf you have a Bruiser Chest-piece, you receive Health Regeneration for each Health point on the Armor.\n\nIf you have a Heavy Chest-piece, its All Resistances Score is doubled.\n\nIf you have a Rogue Chest-piece, you regenerate Health and Force Shield each time you complete a Passive Dodge. The amount that you regenerate is determined by the Health points given by the Armor.\n\nIf you have a Sorcerer Chest-piece you regenerate Force Shield based on the amount of Force Shield on the Armor.</Data></Cell>
-    <Cell ss:StyleID="s65"><Data ss:Type="String">根据所穿胸甲的类型，你将会得到一个增益效果。\n\n如果装备战士胸甲，则根据其提供的生命值获得生命回复奖励。\n\n如果装备重型胸甲，其提供的全抗性将翻倍。\n\n如果装备游侠胸甲，每次成功被动闪避都将回复生命值和护盾。回复的量取决于胸甲提供的生命值和护盾。\n\n如果装备法师胸甲，根据其提供的护盾量获得一定的护盾回复。</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">根据所穿胸甲的类型，你将会得到一个增益效果。\n\n如果装备斗士胸甲，则根据其提供的生命值获得生命回复奖励。\n\n如果装备重型胸甲，其提供的全抗性将翻倍。\n\n如果装备游侠胸甲，每次成功被动闪避都将回复生命值和护盾。回复的量取决于胸甲提供的生命值和护盾。\n\n如果装备巫师胸甲，根据其提供的护盾量获得一定的护盾回复。</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s75"><Data ss:Type="String">ui_SIEGE_9_name</Data></Cell>
@@ -3535,8 +3536,8 @@
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s75"><Data ss:Type="String">ui_ASSA_19_gameplaydesc</Data></Cell>
-    <Cell ss:StyleID="s76"><Data ss:Type="String">You have &quot;Power Charge&quot; points. This resource is now used to activate any Device Skills or Skills that deal the Lightning Damage Type. The resource can have any value between -100 and 100. When Power Charge is a positive number, your Damage will be increased, and when it is a negative number, your Damage will be decreased.\n\nPower Charge is regenerated over time, and by using your Basic Attacks.\n\nThese Skills still consume their dedicated Resource in addition to &quot;Power Charge&quot;.</Data></Cell>
-    <Cell ss:StyleID="s65"><Data ss:Type="String">让你具有“电荷”点数。该点数可以作用于任何装置技能和闪电基础伤害技能。其取值范围在-100到100之间。当电荷数值为正时，提高你的伤害加成，值为负时，降低你的伤害加成。\n\n电荷点数随时间再生，也可以通过普攻增长。\n\n装置和闪电技能在消耗魔力的同时也会消耗电荷点数。</Data></Cell>
+    <Cell ss:StyleID="s76"><Data ss:Type="String">You have &quot;Power Charge&quot; points. This Resource is now used to activate any Device Skills or Skills that deal the Lightning Damage Type. The Resource can have any value between -100 and 100. When Power Charge is a positive number, your Damage will be increased, and when it is a negative number, your Damage will be decreased.\n\nPower Charge is regenerated over time, and by using your Basic Attacks.\n\nThese Skills still consume their dedicated Resource in addition to &quot;Power Charge&quot;.</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">让你具有“电荷”点数。该点数可以作用于任何装置技能和闪电基础伤害技能。其取值范围在-100到100之间。当电荷数值为正时，提高你的伤害加成，值为负时，降低你的伤害加成。\n\n电荷点数随时间再生，也可以通过普攻增长。\n\n装置和闪电技能在消耗“电荷”点数的同时仍会消耗它们本身需要的资源。</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s75"><Data ss:Type="String">ui_ASSA_20_name</Data></Cell>
@@ -3788,6 +3789,7 @@
     <VerticalResolution>600</VerticalResolution>
    </Print>
    <Selected/>
+   <LeftColumnVisible>1</LeftColumnVisible>
    <Panes>
     <Pane>
      <Number>3</Number>

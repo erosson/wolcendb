@@ -8,9 +8,9 @@
  <DocumentProperties xmlns="urn:schemas-microsoft-com:office:office">
   <Title>Untitled Spreadsheet</Title>
   <Author>Unknown Creator</Author>
-  <LastAuthor>Cthylla</LastAuthor>
-  <Created>2020-03-05T08:54:51Z</Created>
-  <LastSaved>2020-03-05T08:54:51Z</LastSaved>
+  <LastAuthor>Christopher</LastAuthor>
+  <Created>2020-03-17T16:49:31Z</Created>
+  <LastSaved>2020-03-17T16:49:31Z</LastSaved>
   <Company>Microsoft Corporation</Company>
   <Version>16.00</Version>
  </DocumentProperties>
@@ -18,10 +18,11 @@
   <AllowPNG/>
  </OfficeDocumentSettings>
  <ExcelWorkbook xmlns="urn:schemas-microsoft-com:office:excel">
-  <WindowHeight>17625</WindowHeight>
-  <WindowWidth>32767</WindowWidth>
+  <WindowHeight>7980</WindowHeight>
+  <WindowWidth>21570</WindowWidth>
   <WindowTopX>32767</WindowTopX>
   <WindowTopY>32767</WindowTopY>
+  <RefModeR1C1/>
   <ProtectStructure>False</ProtectStructure>
   <ProtectWindows>False</ProtectWindows>
  </ExcelWorkbook>
@@ -116,7 +117,7 @@
   </Style>
  </Styles>
  <Worksheet ss:Name="Sheet1">
-  <Table ss:ExpandedColumnCount="3" ss:ExpandedRowCount="673" x:FullColumns="1"
+  <Table ss:ExpandedColumnCount="3" ss:ExpandedRowCount="672" x:FullColumns="1"
    x:FullRows="1" ss:DefaultColumnWidth="60" ss:DefaultRowHeight="15">
    <Column ss:AutoFitWidth="0" ss:Width="356.25"/>
    <Column ss:AutoFitWidth="0" ss:Width="413.25"/>
@@ -1045,11 +1046,6 @@
     <Cell ss:StyleID="s67"><Data ss:Type="String">ui_eim_damage_percent</Data></Cell>
     <Cell ss:StyleID="s68"><Data ss:Type="String">%1 Damage</Data></Cell>
     <Cell ss:StyleID="s65"><Data ss:Type="String">%1 de Dano</Data></Cell>
-   </Row>
-   <Row ss:AutoFitHeight="0" ss:Height="15.75">
-    <Cell ss:StyleID="s67"><Data ss:Type="String">ui_eim_damage_percent_against_burning</Data></Cell>
-    <Cell ss:StyleID="s68"><Data ss:Type="String">%1 Additional Damage against Burning Targets</Data></Cell>
-    <Cell ss:StyleID="s65"><Data ss:Type="String">%1 de Dano adicional contra inimigos Incendiados</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s67"><Data ss:Type="String">ui_eim_damage_percent_against_frozen</Data></Cell>

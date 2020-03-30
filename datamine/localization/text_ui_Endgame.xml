@@ -215,6 +215,14 @@
   <Style ss:ID="s89" ss:Parent="s26">
    <Alignment ss:Vertical="Top" ss:WrapText="1"/>
   </Style>
+  <Style ss:ID="s93" ss:Parent="s26">
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="11" ss:Color="#008000"/>
+   <Interior ss:Color="#FFE699" ss:Pattern="Solid"/>
+  </Style>
+  <Style ss:ID="s94" ss:Parent="s26">
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="11" ss:Color="#008000"/>
+   <Interior ss:Color="#FFE699" ss:Pattern="Solid"/>
+  </Style>
  </Styles>
  <Names>
   <NamedRange ss:Name="characters"
@@ -1427,7 +1435,7 @@
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15">
     <Cell ss:StyleID="s83"><Data ss:Type="String">ui_regicide_research_seekers_reward_summary</Data></Cell>
-    <Cell ss:StyleID="s26"><Data ss:Type="String">Your Seekers have returned from the Regicide Facility with a Legendary Gun.</Data></Cell>
+    <Cell ss:StyleID="s94"><Data ss:Type="String">Your Seekers have returned from the Regicide Facility with Pistols.</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15">
     <Cell ss:StyleID="s83"><Data ss:Type="String">ui_blood_tear_burial_seekers_expedition</Data></Cell>
@@ -1447,7 +1455,7 @@
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15">
     <Cell ss:StyleID="s83"><Data ss:Type="String">ui_blood_tear_burial_seekers_reward_summary</Data></Cell>
-    <Cell ss:StyleID="s26"><Data ss:Type="String">Your Seekers have returned from a Burial Site with Legendary Bruiser Armor(s) </Data></Cell>
+    <Cell ss:StyleID="s93"><Data ss:Type="String">Your Seekers have returned from a Burial Site with Bruiser Armors. </Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15">
     <Cell ss:StyleID="s83"><Data ss:Type="String">ui_abyssal_rift_seekers_expedition</Data></Cell>
@@ -1467,7 +1475,7 @@
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15">
     <Cell ss:StyleID="s83"><Data ss:Type="String">ui_abyssal_rift_seekers_reward_summary</Data></Cell>
-    <Cell ss:StyleID="s26"><Data ss:Type="String">Your Seekers have returned from the Abyssal rift with Legendary Ethereal Reagents.</Data></Cell>
+    <Cell ss:StyleID="s94"><Data ss:Type="String">Your Seekers have returned from the Abyssal rift with Ethereal Reagents.</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15">
     <Cell ss:StyleID="s83"><Data ss:Type="String">ui_ezaneal_shrine_seekers_expedition</Data></Cell>
@@ -3263,10 +3271,11 @@
    </Print>
    <Zoom>85</Zoom>
    <Selected/>
+   <TopRowVisible>268</TopRowVisible>
    <Panes>
     <Pane>
      <Number>3</Number>
-     <ActiveRow>16</ActiveRow>
+     <ActiveRow>307</ActiveRow>
      <ActiveCol>1</ActiveCol>
     </Pane>
    </Panes>

@@ -8,9 +8,9 @@
  <DocumentProperties xmlns="urn:schemas-microsoft-com:office:office">
   <Title>Untitled Spreadsheet</Title>
   <Author>Unknown Creator</Author>
-  <LastAuthor>Cthylla</LastAuthor>
-  <Created>2020-03-05T08:53:37Z</Created>
-  <LastSaved>2020-03-05T08:53:37Z</LastSaved>
+  <LastAuthor>Christopher</LastAuthor>
+  <Created>2020-03-17T16:49:01Z</Created>
+  <LastSaved>2020-03-17T16:49:01Z</LastSaved>
   <Company>Microsoft Corporation</Company>
   <Version>16.00</Version>
  </DocumentProperties>
@@ -18,10 +18,11 @@
   <AllowPNG/>
  </OfficeDocumentSettings>
  <ExcelWorkbook xmlns="urn:schemas-microsoft-com:office:excel">
-  <WindowHeight>17625</WindowHeight>
-  <WindowWidth>32767</WindowWidth>
+  <WindowHeight>7980</WindowHeight>
+  <WindowWidth>21570</WindowWidth>
   <WindowTopX>32767</WindowTopX>
   <WindowTopY>32767</WindowTopY>
+  <RefModeR1C1/>
   <ProtectStructure>False</ProtectStructure>
   <ProtectWindows>False</ProtectWindows>
  </ExcelWorkbook>
@@ -116,7 +117,7 @@
   </Style>
  </Styles>
  <Worksheet ss:Name="Sheet1">
-  <Table ss:ExpandedColumnCount="3" ss:ExpandedRowCount="673" x:FullColumns="1"
+  <Table ss:ExpandedColumnCount="3" ss:ExpandedRowCount="672" x:FullColumns="1"
    x:FullRows="1" ss:DefaultColumnWidth="60" ss:DefaultRowHeight="15">
    <Column ss:AutoFitWidth="0" ss:Width="356.25"/>
    <Column ss:AutoFitWidth="0" ss:Width="413.25"/>
@@ -1048,8 +1049,8 @@
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s67"><Data ss:Type="String">ui_eim_damage_percent_against_burning</Data></Cell>
-    <Cell ss:StyleID="s68"><Data ss:Type="String">%1 Additional Damage against Burning Targets</Data></Cell>
-    <Cell ss:StyleID="s65"><Data ss:Type="String">%1额外伤害对燃烧目标</Data></Cell>
+    <Cell ss:StyleID="s68"><Data ss:Type="String">%1 Damage against Burning Enemies</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">对燃烧目标伤害加成%1</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s67"><Data ss:Type="String">ui_eim_damage_percent_against_frozen</Data></Cell>
@@ -2824,7 +2825,7 @@
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s76"><Data ss:Type="String">ui_eim_stat_bonus_from_chest_armor_warrior</Data></Cell>
     <Cell ss:StyleID="s66"><Data ss:Type="String">%1 Health Regeneration for every Health point on equipped Bruiser Chest-piece</Data></Cell>
-    <Cell ss:StyleID="s65"><Data ss:Type="String">若装备战士胸甲，获得其提供的生命值%1的生命回复</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">若装备斗士胸甲，获得其提供的生命值乘以%1的生命回复</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s76"><Data ss:Type="String">ui_eim_stat_bonus_from_chest_armor_tank</Data></Cell>
@@ -2834,12 +2835,12 @@
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s76"><Data ss:Type="String">ui_eim_stat_bonus_from_chest_armor_rogue</Data></Cell>
     <Cell ss:StyleID="s66"><Data ss:Type="String">You regenerate Health and Force Shield equivalent to %1 times the Health given by your equipped Rogue Chest-piece each time you complete a successful Passive Dodge. </Data></Cell>
-    <Cell ss:StyleID="s65"><Data ss:Type="String">若装备游侠胸甲，每次成功被动闪避后回复等于胸甲给予的生命值%1倍的生命值和护盾 </Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">若装备游侠胸甲，每次成功被动闪避后回复等于胸甲给予的生命值乘以%1的生命值和护盾 </Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s76"><Data ss:Type="String">ui_eim_stat_bonus_from_chest_armor_mage</Data></Cell>
     <Cell ss:StyleID="s66"><Data ss:Type="String">%1 Force Shield Regeneration for every Force Shield point on equipped Sorcerer Chest-piece</Data></Cell>
-    <Cell ss:StyleID="s65"><Data ss:Type="String">若装备法师胸甲，获得其提供的护盾%1的护盾回复</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">若装备巫师胸甲，获得其提供的护盾乘以%1的护盾回复</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s76"><Data ss:Type="String">ui_eim_stat_bonus_from_helmet</Data></Cell>
@@ -2849,7 +2850,7 @@
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s76"><Data ss:Type="String">ui_eim_stat_bonus_from_helmet_warrior</Data></Cell>
     <Cell ss:StyleID="s66"><Data ss:Type="String">%1 Health Regeneration for every Health point on equipped Bruiser Helmet</Data></Cell>
-    <Cell ss:StyleID="s65"><Data ss:Type="String">若装备战士头盔，获得其提供的生命值%1的生命回复</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">若装备斗士头盔，获得其提供的生命值乘以%1的生命回复</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s76"><Data ss:Type="String">ui_eim_stat_bonus_from_helmet_tank</Data></Cell>
@@ -2859,12 +2860,12 @@
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s76"><Data ss:Type="String">ui_eim_stat_bonus_from_helmet_rogue</Data></Cell>
     <Cell ss:StyleID="s66"><Data ss:Type="String">You regenerate Health and Force Shield equivalent to %1 times the Health given by your equipped Rogue Helmet each time you complete a successful Passive Dodge. </Data></Cell>
-    <Cell ss:StyleID="s65"><Data ss:Type="String">若装备游侠头盔，每次成功被动闪避后回复等于头盔给予的生命值%1倍的生命值和护盾 </Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">若装备游侠头盔，每次成功被动闪避后回复等于头盔给予的生命值乘以%1的生命值和护盾 </Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s76"><Data ss:Type="String">ui_eim_stat_bonus_from_helmet_mage</Data></Cell>
     <Cell ss:StyleID="s66"><Data ss:Type="String">%1 Force Shield Regeneration for every Force Shield point on equipped Sorcerer Helmet</Data></Cell>
-    <Cell ss:StyleID="s65"><Data ss:Type="String">若装备法师头盔，获得其提供的护盾%1的护盾回复</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">若装备巫师头盔，获得其提供的护盾乘以%1的护盾回复</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s65"><Data ss:Type="String">ui_eim_stack_block_uses_mechanic</Data></Cell>
@@ -3265,11 +3266,6 @@
     <Cell ss:StyleID="s77"><Data ss:Type="String">ui_eim_freeze_chance_to_crit</Data></Cell>
     <Cell ss:StyleID="s66"><Data ss:Type="String">If your Hits have Freeze Chance, %1 of your Freeze Chance is added to your Critical Chance. These Hits do not inflcit Freeze anymore.</Data></Cell>
     <Cell ss:StyleID="s65"><Data ss:Type="String">若你的打击有几率造成冻结，则冻结几率的%1将被附加到暴击几率。这些打击不再造成冻结。</Data></Cell>
-   </Row>
-   <Row ss:AutoFitHeight="0" ss:Height="15.75">
-    <Cell ss:StyleID="s73"><Data ss:Type="String">ui_eim_damage_percent_against_burning</Data></Cell>
-    <Cell ss:StyleID="s66"><Data ss:Type="String">%1 Damage against Burning Enemies</Data></Cell>
-    <Cell ss:StyleID="s65"><Data ss:Type="String">对燃烧目标伤害加成%1</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s65"><Data ss:Type="String">ui_eim_damage_taken_percent_from_burning_enemies</Data></Cell>
