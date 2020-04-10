@@ -8,9 +8,9 @@
  <DocumentProperties xmlns="urn:schemas-microsoft-com:office:office">
   <Title>Untitled Spreadsheet</Title>
   <Author>Unknown Creator</Author>
-  <LastAuthor>Christopher</LastAuthor>
-  <Created>2020-03-17T16:45:36Z</Created>
-  <LastSaved>2020-03-17T16:45:36Z</LastSaved>
+  <LastAuthor>Cthylla</LastAuthor>
+  <Created>2020-04-02T08:53:06Z</Created>
+  <LastSaved>2020-04-02T08:53:06Z</LastSaved>
   <Company>Microsoft Corporation</Company>
   <Version>16.00</Version>
  </DocumentProperties>
@@ -18,10 +18,10 @@
   <AllowPNG/>
  </OfficeDocumentSettings>
  <ExcelWorkbook xmlns="urn:schemas-microsoft-com:office:excel">
-  <WindowHeight>11475</WindowHeight>
-  <WindowWidth>22050</WindowWidth>
-  <WindowTopX>0</WindowTopX>
-  <WindowTopY>0</WindowTopY>
+  <WindowHeight>7890</WindowHeight>
+  <WindowWidth>17745</WindowWidth>
+  <WindowTopX>32767</WindowTopX>
+  <WindowTopY>32767</WindowTopY>
   <ProtectStructure>False</ProtectStructure>
   <ProtectWindows>False</ProtectWindows>
  </ExcelWorkbook>
@@ -2141,7 +2141,7 @@
    <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s22"><Data ss:Type="String">ui_SPBD_17_gameplaydesc</Data></Cell>
     <Cell ss:StyleID="s29"><Data ss:Type="String">Every Ailment that Stacks which you inflict is also inflicted on you. Each time you reach 10 Stacks of one Ailment Type, that Ailment Type is removed completely, giving you and your Allies a Buff for a short time depending on which Ailment type is removed.\n\nIf Stasis Stacks were removed, Movement Speed is increased.\n\nIf Curse Stacks were removed, All Resistances Score is increased.\n\nIf Weakness Stacks were removed, Damage is increased.\n\nIf any other stacks were removed, Health and Force Shield are regenerated.</Data></Cell>
-    <Cell ss:StyleID="s20"><Data ss:Type="String">Jeder von dir verursachte Status Effekt wird auch dir zugefügt. Jedes Mal, wenn du 10 Stapel eines Status Effektes erreichst, wird dieser Status Effekt vollständig beseitigt, wodurch du und deine Verbündeten für kurze Zeit einen Bonus erhalten, in Abhängigkeit davon, welcher Status Effekt beseitigt wird.\n\nWenn Stasis Stapel entfernt wurden, wird die Bewegungsgeschwindigkeit erhöht.\n\nWenn Fluch Stapel entfernt wurden, werden alle Widerstände erhöht.\n\nWenn Schwäche-Stapel entfernt wurden, wird der Schaden erhöht.\n\nWenn andere Stapel entfernt wurden, werden Gesundheit und Kraftschild regeneriert.</Data></Cell>
+    <Cell ss:StyleID="s20"><Data ss:Type="String">Jeder von dir verursachte Status Effekt wird auch dir zugefügt. Wenn 10 Stapel eines Status Effektes erreicht werden, wird dieser Status Effekt vollständig beseitigt. Du und deine Verbündeten erhalten für kurze Zeit einen Buff, in Abhängigkeit des entfernten Status Effekts.\n\nStasis Stapel erhöhen die Bewegungsgeschwindigkeit.\n\nFluch Stapel erhöhen alle Widerstände.\n\nSchwäche-Stapel erhöhen den Schaden.\n\nAlle anderen Stapel, regenerieren Gesundheit und Kraftschild.</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s22"><Data ss:Type="String">ui_SPBD_18_name</Data></Cell>
@@ -2356,7 +2356,7 @@
    <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s22"><Data ss:Type="String">ui_SIEGE_8_gameplaydesc</Data></Cell>
     <Cell ss:StyleID="s31"><Data ss:Type="String">You will receive a Buff depending on which archetype your equipped Chest-piece belongs to.\n\nIf you have a Bruiser Chest-piece, you receive Health Regeneration for each Health point on the Armor.\n\nIf you have a Heavy Chest-piece, its All Resistances Score is doubled.\n\nIf you have a Rogue Chest-piece, you regenerate Health and Force Shield each time you complete a Passive Dodge. The amount that you regenerate is determined by the Health points given by the Armor.\n\nIf you have a Sorcerer Chest-piece you regenerate Force Shield based on the amount of Force Shield on the Armor.</Data></Cell>
-    <Cell ss:StyleID="s20"><Data ss:Type="String">Du erhälst einen Bonus, abhängig davon, zu welchem Archetyp deine ausgerüstete Brustpanzerung gehört.\n\nWenn du eine Krieger-Brustrüstung trägst, erhälst du für jeden Lebenspunkt auf der Rüstung eine zusätzliche Lebensregeneration.\n\nWenn du einen Panzer-Brustpanzer trägst, verdoppelt sich der Bonus auf alle Widerstände.\n\nWenn du einen Schurken-Brustschutz trägst, regenerierst du jedes Mal, wenn du einen Ausweichmanöver abschließt, Gesundheit und dein Kraftschild. Die Menge, die du regenerierst, wird durch die Lebenspunkte bestimmt, die die Rüstung gewährt.\n\nWenn du einen Magier-Brustschutz trägst, regenerierst du das Kraftschild basierend auf der Stärke des Kraftschilds auf der Rüstung.</Data></Cell>
+    <Cell ss:StyleID="s20"><Data ss:Type="String">Du erhälst einen Bonus, abhängig vom Archetyp deines ausgerüsteten Brustschutzes.\n\nKrieger-Brustschutz: Du erhälst für jeden Lebenspunkt auf der Rüstung eine zusätzliche Lebensregeneration.\n\nSchwerer Brustschutz: Verdoppelter Bonus aller Widerstände.\n\nSchurken-Brustschutz: Gesundheit und  Kraftschildregeneration beim erfolgreichen ausweichen. Die Regeneration wird durch die Lebenspunkte bestimmt, die die Rüstung gewährt.\n\nWenn du einen Magier-Brustschutz trägst, regenerierst du das Kraftschild basierend auf der Stärke des Kraftschilds auf der Rüstung.</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s22"><Data ss:Type="String">ui_SIEGE_9_name</Data></Cell>
@@ -3561,7 +3561,7 @@
    <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s20"><Data ss:Type="String">ui_AilmentsStacks_FireBuff_desc</Data></Cell>
     <Cell ss:StyleID="s24"><Data ss:Type="String">Fire Damage (Burned enemy killed)</Data></Cell>
-    <Cell ss:StyleID="s20"><Data ss:Type="String">&lt;font size =&quot;11&quot;&gt;Feuerschaden (Verbrannte Gegner getötet)&lt;/font&gt;</Data></Cell>
+    <Cell ss:StyleID="s20"><Data ss:Type="String">&lt;font size =&quot;12&quot;&gt;Feuerschaden (Verbrannte Gegner getötet)&lt;/font&gt;</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s20"><Data ss:Type="String">ui_AilmentsStacks_FrostBuff_title</Data></Cell>
@@ -3571,7 +3571,7 @@
    <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s20"><Data ss:Type="String">ui_AilmentsStacks_FrostBuff_desc</Data></Cell>
     <Cell ss:StyleID="s24"><Data ss:Type="String">Frost Damage (Frozen enemy killed)</Data></Cell>
-    <Cell ss:StyleID="s20"><Data ss:Type="String">&lt;font size =&quot;11&quot;&gt;Frostschaden (Eingefrorene Gegner getötet)&lt;/font&gt;</Data></Cell>
+    <Cell ss:StyleID="s20"><Data ss:Type="String">&lt;font size =&quot;12&quot;&gt;Frostschaden (Eingefrorene Gegner getötet)&lt;/font&gt;</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s20"><Data ss:Type="String">ui_AilmentsStacks_LightningBuff_title</Data></Cell>
@@ -3581,7 +3581,7 @@
    <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s20"><Data ss:Type="String">ui_AilmentsStacks_LightningBuff_desc</Data></Cell>
     <Cell ss:StyleID="s24"><Data ss:Type="String">Lightning Damage (Shocked enemy killed)</Data></Cell>
-    <Cell ss:StyleID="s20"><Data ss:Type="String">&lt;font size =&quot;11&quot;&gt;Blitzschaden (Geschockte Gegner getötet)&lt;/font&gt;</Data></Cell>
+    <Cell ss:StyleID="s20"><Data ss:Type="String">&lt;font size =&quot;12&quot;&gt;Blitzschaden (Geschockte Gegner getötet)&lt;/font&gt;</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s20"><Data ss:Type="String">ui_AilmentsStacks_PhysicalBuff_title</Data></Cell>
@@ -3621,7 +3621,7 @@
    <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s20"><Data ss:Type="String">ui_AilmentsStacks_ShadowBuff_desc</Data></Cell>
     <Cell ss:StyleID="s24"><Data ss:Type="String">Shadow Damage (Cursed enemy killed)</Data></Cell>
-    <Cell ss:StyleID="s20"><Data ss:Type="String">&lt;font size =&quot;11&quot;&gt;Schattenschaden (Verfluchte Gegner getötet)&lt;/font&gt;</Data></Cell>
+    <Cell ss:StyleID="s20"><Data ss:Type="String">&lt;font size =&quot;12&quot;&gt;Schattenschaden (Verfluchte Gegner getötet)&lt;/font&gt;</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s20"><Data ss:Type="String">ui_AilmentsStacks_ToxicBuff_title</Data></Cell>
@@ -3631,7 +3631,7 @@
    <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s20"><Data ss:Type="String">ui_AilmentsStacks_ToxicBuff_desc</Data></Cell>
     <Cell ss:StyleID="s24"><Data ss:Type="String">Toxic Damage (Poisoned enemy killed)</Data></Cell>
-    <Cell ss:StyleID="s20"><Data ss:Type="String">&lt;font size =&quot;11&quot;&gt;Giftschaden (Vergiftete Gegner getötet)&lt;/font&gt;</Data></Cell>
+    <Cell ss:StyleID="s20"><Data ss:Type="String">&lt;font size =&quot;12&quot;&gt;Giftschaden (Vergiftete Gegner getötet)&lt;/font&gt;</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s20"><Data ss:Type="String">ui_AilmentsStacks_UmbraBuff_title</Data></Cell>
@@ -3641,7 +3641,7 @@
    <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s20"><Data ss:Type="String">ui_AilmentsStacks_UmbraBuff_desc</Data></Cell>
     <Cell ss:StyleID="s24"><Data ss:Type="String">Aether Damage (enemy in Stasis killed)</Data></Cell>
-    <Cell ss:StyleID="s20"><Data ss:Type="String">&lt;font size =&quot;11&quot;&gt;Ätherschaden (In Stasis getötete Gegner)&lt;/font&gt;</Data></Cell>
+    <Cell ss:StyleID="s20"><Data ss:Type="String">&lt;font size =&quot;12&quot;&gt;Ätherschaden (In Stasis getötete Gegner)&lt;/font&gt;</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s20"><Data ss:Type="String">ui_Attunement_Fire_title</Data></Cell>
@@ -3686,7 +3686,7 @@
    <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s20"><Data ss:Type="String">ui_Offensive_Stance_title</Data></Cell>
     <Cell ss:StyleID="s24"><Data ss:Type="String">Probing Weakness Stance</Data></Cell>
-    <Cell ss:StyleID="s20"><Data ss:Type="String">Sondierung der Schwäche Haltung</Data></Cell>
+    <Cell ss:StyleID="s20"><Data ss:Type="String">Sondierung der Schwäche</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s20"><Data ss:Type="String">ui_Offensive_Stance_desc</Data></Cell>

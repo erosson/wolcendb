@@ -2074,8 +2074,8 @@
       <ItemRarity Magic="0" Rare="0" Set="1" Legendary="0" />
     </DropParams>
     <MagicEffect EffectId="dodgechance_score_to_allres_score">
-      <LoRoll ConversionRateFloat="1" />
-      <HiRoll ConversionRateFloat="1" />
+      <LoRoll ConversionRateFloat="100" />
+      <HiRoll ConversionRateFloat="100" />
     </MagicEffect>
   </Affix>
   <Affix AffixId="unique_vanity_local_allresistances_score_percent" Class="" AffixType="default">
@@ -2095,9 +2095,9 @@
       <Keywords OptionalKeywords="" MandatoryKeywords="unique" />
       <ItemRarity Magic="0" Rare="0" Set="1" Legendary="0" />
     </DropParams>
-    <MagicEffect EffectId="local_health_percent">
-      <LoRoll LocalPercentFloat="50" />
-      <HiRoll LocalPercentFloat="80" />
+    <MagicEffect EffectId="health_pts">
+      <LoRoll HealthFlatInt="280" />
+      <HiRoll HealthFlatInt="350" />
     </MagicEffect>
   </Affix>
   <Affix AffixId="unique_vanity_freeze_received_duration_percent_bonus" Class="" AffixType="default">

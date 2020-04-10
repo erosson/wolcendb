@@ -8,9 +8,9 @@
  <DocumentProperties xmlns="urn:schemas-microsoft-com:office:office">
   <Title>Untitled Spreadsheet</Title>
   <Author>Unknown Creator</Author>
-  <LastAuthor>Christopher</LastAuthor>
-  <Created>2020-03-17T16:47:22Z</Created>
-  <LastSaved>2020-03-17T16:47:22Z</LastSaved>
+  <LastAuthor>Cthylla</LastAuthor>
+  <Created>2020-03-31T09:04:01Z</Created>
+  <LastSaved>2020-03-31T09:04:01Z</LastSaved>
   <Company>Microsoft Corporation</Company>
   <Version>16.00</Version>
  </DocumentProperties>
@@ -18,11 +18,10 @@
   <AllowPNG/>
  </OfficeDocumentSettings>
  <ExcelWorkbook xmlns="urn:schemas-microsoft-com:office:excel">
-  <WindowHeight>7980</WindowHeight>
-  <WindowWidth>21570</WindowWidth>
+  <WindowHeight>5655</WindowHeight>
+  <WindowWidth>17745</WindowWidth>
   <WindowTopX>32767</WindowTopX>
   <WindowTopY>32767</WindowTopY>
-  <RefModeR1C1/>
   <ProtectStructure>False</ProtectStructure>
   <ProtectWindows>False</ProtectWindows>
  </ExcelWorkbook>
@@ -1048,9 +1047,14 @@
     <Cell ss:StyleID="s65"><Data ss:Type="String">%1 do obrażeń</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s67"><Data ss:Type="String">ui_eim_damage_percent_against_burning</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="String">%1 Damage against Burning Enemies</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">%1 obrażeń przeciwko podpalonym wrogów</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s67"><Data ss:Type="String">ui_eim_damage_percent_against_frozen</Data></Cell>
-    <Cell ss:StyleID="s68"><Data ss:Type="String">%1 Additional Damage against Frozen Targets</Data></Cell>
-    <Cell ss:StyleID="s65"><Data ss:Type="String">%1 dodatkowych obrażeń przeciwko zamrożonemu celowi</Data></Cell>
+    <Cell ss:StyleID="s68"><Data ss:Type="String">%1 Damage against Frozen Enemies</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">%1 obrażeń przeciwko zamrożonym wrogom</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s67"><Data ss:Type="String">ui_eim_damage_percent_any_weapon</Data></Cell>
@@ -1395,7 +1399,7 @@
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s67"><Data ss:Type="String">ui_eim_forceshield_lock_timer_percent</Data></Cell>
     <Cell ss:StyleID="s68"><Data ss:Type="String">%1 Force Shield Regeneration Delay decrease</Data></Cell>
-    <Cell ss:StyleID="s65"><Data ss:Type="String">%1 do redukcji opóźnienia regeneracji osłony</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">%1 zmniejszenia opóźnienie regeneracji osłony</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s67"><Data ss:Type="String">ui_eim_forceshield_percent</Data></Cell>
@@ -1874,8 +1878,8 @@
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s67"><Data ss:Type="String">ui_eim_poisonchance_on_toxic_damage_score_percent</Data></Cell>
-    <Cell ss:StyleID="s68"><Data ss:Type="String">%1 Poison Chance Score on daling Toxic Damage</Data></Cell>
-    <Cell ss:StyleID="s65"><Data ss:Type="String">%1 do wartości szansy na zatrucie od obrażeń toksycznych</Data></Cell>
+    <Cell ss:StyleID="s68"><Data ss:Type="String">%1 Poison Chance Score on dealing Toxic Damage</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">%1 do wartości szansy na zatrucie przy zadawaniu obrażeń toksycznych</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s67"><Data ss:Type="String">ui_eim_poisonstack_duration_increase</Data></Cell>
@@ -3262,11 +3266,6 @@
     <Cell ss:StyleID="s66"><Data ss:Type="String">If your Hits have Freeze Chance, %1 of your Freeze Chance is added to your Critical Chance. These Hits do not inflcit Freeze anymore.</Data></Cell>
     <Cell ss:StyleID="s65"><Data ss:Type="String">Jeśli twoje trafienia mają szansę na zamrożenie, %1 twojej szansy na zamrożenie jest dodawane do twojej szansy na trafienie krytyczne. Te trafienia nie powodują już zamrożenia.</Data></Cell>
    </Row>
-   <Row ss:AutoFitHeight="0" ss:Height="15.75">
-    <Cell ss:StyleID="s73"><Data ss:Type="String">ui_eim_damage_percent_against_burning</Data></Cell>
-    <Cell ss:StyleID="s66"><Data ss:Type="String">%1 Damage against Burning Enemies</Data></Cell>
-    <Cell ss:StyleID="s65"><Data ss:Type="String">%1 obrażeń przeciwko podpalonym wrogów</Data></Cell>
-   </Row>
    <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s65"><Data ss:Type="String">ui_eim_damage_taken_percent_from_burning_enemies</Data></Cell>
     <Cell ss:StyleID="s66"><Data ss:Type="String">%1 Damage from Burning Enemies</Data></Cell>
@@ -3497,6 +3496,7 @@
     <VerticalResolution>600</VerticalResolution>
    </Print>
    <Selected/>
+   <LeftColumnVisible>1</LeftColumnVisible>
    <Panes>
     <Pane>
      <Number>3</Number>

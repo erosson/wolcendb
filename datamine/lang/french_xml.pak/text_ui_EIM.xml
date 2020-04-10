@@ -8,9 +8,9 @@
  <DocumentProperties xmlns="urn:schemas-microsoft-com:office:office">
   <Title>Untitled Spreadsheet</Title>
   <Author>Unknown Creator</Author>
-  <LastAuthor>Christopher</LastAuthor>
-  <Created>2020-03-17T16:44:38Z</Created>
-  <LastSaved>2020-03-17T16:44:38Z</LastSaved>
+  <LastAuthor>Cthylla</LastAuthor>
+  <Created>2020-03-31T09:00:21Z</Created>
+  <LastSaved>2020-03-31T09:00:21Z</LastSaved>
   <Company>Microsoft Corporation</Company>
   <Version>16.00</Version>
  </DocumentProperties>
@@ -18,11 +18,10 @@
   <AllowPNG/>
  </OfficeDocumentSettings>
  <ExcelWorkbook xmlns="urn:schemas-microsoft-com:office:excel">
-  <WindowHeight>7980</WindowHeight>
-  <WindowWidth>21570</WindowWidth>
+  <WindowHeight>5655</WindowHeight>
+  <WindowWidth>17745</WindowWidth>
   <WindowTopX>32767</WindowTopX>
   <WindowTopY>32767</WindowTopY>
-  <RefModeR1C1/>
   <ProtectStructure>False</ProtectStructure>
   <ProtectWindows>False</ProtectWindows>
  </ExcelWorkbook>
@@ -1048,8 +1047,13 @@
     <Cell ss:StyleID="s65"><Data ss:Type="String">%1 Dégâts</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s67"><Data ss:Type="String">ui_eim_damage_percent_against_burning</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="String">%1 Damage against Burning Enemies</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">%1 dégâts contre les ennemis affectés par Brûlure</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s67"><Data ss:Type="String">ui_eim_damage_percent_against_frozen</Data></Cell>
-    <Cell ss:StyleID="s68"><Data ss:Type="String">%1 Additional Damage against Frozen Targets</Data></Cell>
+    <Cell ss:StyleID="s68"><Data ss:Type="String">%1 Damage against Frozen Enemies</Data></Cell>
     <Cell ss:StyleID="s65"><Data ss:Type="String">%1 dégâts supplémentaires aux cibles affectées par Gel</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
@@ -1874,7 +1878,7 @@
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s67"><Data ss:Type="String">ui_eim_poisonchance_on_toxic_damage_score_percent</Data></Cell>
-    <Cell ss:StyleID="s68"><Data ss:Type="String">%1 Poison Chance Score on daling Toxic Damage</Data></Cell>
+    <Cell ss:StyleID="s68"><Data ss:Type="String">%1 Poison Chance Score on dealing Toxic Damage</Data></Cell>
     <Cell ss:StyleID="s65"><Data ss:Type="String">%1 Score d'Empoisonnement avec des dégâts Toxiques</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
@@ -3262,11 +3266,6 @@
     <Cell ss:StyleID="s66"><Data ss:Type="String">If your Hits have Freeze Chance, %1 of your Freeze Chance is added to your Critical Chance. These Hits do not inflcit Freeze anymore.</Data></Cell>
     <Cell ss:StyleID="s65"><Data ss:Type="String">Si vous avez des chances de Geler, %1 de ces chances sont ajoutées à vos chances de Coup Critique. Ces coups ne peuvent plus geler les ennemis.</Data></Cell>
    </Row>
-   <Row ss:AutoFitHeight="0" ss:Height="15.75">
-    <Cell ss:StyleID="s73"><Data ss:Type="String">ui_eim_damage_percent_against_burning</Data></Cell>
-    <Cell ss:StyleID="s66"><Data ss:Type="String">%1 Damage against Burning Enemies</Data></Cell>
-    <Cell ss:StyleID="s65"><Data ss:Type="String">%1 dégâts contre les ennemis affectés par Brûlure</Data></Cell>
-   </Row>
    <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s65"><Data ss:Type="String">ui_eim_damage_taken_percent_from_burning_enemies</Data></Cell>
     <Cell ss:StyleID="s66"><Data ss:Type="String">%1 Damage from Burning Enemies</Data></Cell>
@@ -3497,6 +3496,7 @@
     <VerticalResolution>600</VerticalResolution>
    </Print>
    <Selected/>
+   <LeftColumnVisible>1</LeftColumnVisible>
    <Panes>
     <Pane>
      <Number>3</Number>

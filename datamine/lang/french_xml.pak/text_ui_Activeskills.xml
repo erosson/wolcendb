@@ -8,9 +8,9 @@
  <DocumentProperties xmlns="urn:schemas-microsoft-com:office:office">
   <Title>Untitled Spreadsheet</Title>
   <Author>Unknown Creator</Author>
-  <LastAuthor>Christopher</LastAuthor>
-  <Created>2020-03-17T16:44:19Z</Created>
-  <LastSaved>2020-03-17T16:44:19Z</LastSaved>
+  <LastAuthor>Cthylla</LastAuthor>
+  <Created>2020-03-31T09:00:15Z</Created>
+  <LastSaved>2020-03-31T09:00:15Z</LastSaved>
   <Company>Microsoft Corporation</Company>
   <Version>16.00</Version>
  </DocumentProperties>
@@ -18,11 +18,10 @@
   <AllowPNG/>
  </OfficeDocumentSettings>
  <ExcelWorkbook xmlns="urn:schemas-microsoft-com:office:excel">
-  <WindowHeight>7980</WindowHeight>
-  <WindowWidth>21570</WindowWidth>
+  <WindowHeight>5655</WindowHeight>
+  <WindowWidth>17745</WindowWidth>
   <WindowTopX>32767</WindowTopX>
   <WindowTopY>32767</WindowTopY>
-  <RefModeR1C1/>
   <ProtectStructure>False</ProtectStructure>
   <ProtectWindows>False</ProtectWindows>
  </ExcelWorkbook>
@@ -442,7 +441,7 @@
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s65"><Data ss:Type="String">ui_AST_ArrowsRain_desc</Data></Cell>
     <Cell ss:StyleID="s68"><Data ss:Type="String">Launch a volley of arrows to the cursor’s location that deals Damage in an Area-of-Effect over time.\n\n&lt;font color=&quot;#cb5316&quot;&gt;Attack:&lt;/font&gt; Only usable with bows and pistols.\n\n&lt;font color=&quot;#509FFF&quot;&gt;Skill Tags&lt;/font&gt;: &lt;b&gt;Attack&lt;/b&gt;.</Data></Cell>
-    <Cell ss:StyleID="s65"><Data ss:Type="String">Libère une volée de flèches dans une zone circulaire qui inflige des dégâts aux ennemis qui s'y trouvent.\n\n&lt;font color=&quot;#cb5316&quot;&gt;Attaque :&lt;/font&gt; Seulement utilisable avec un arc ou un pistolet.\n\n&lt;font color=&quot;#509FFF&quot;&gt;Type&lt;/font&gt; : &lt;b&gt;Attaque&lt;/b&gt;.</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Libère une volée de flèches à l'emplacement de votre curseur qui inflige des Dégâts de Zone sur la durée.\n\n&lt;font color=&quot;#cb5316&quot;&gt;Attaque :&lt;/font&gt; Seulement utilisable avec un arc ou un pistolet.\n\n&lt;font color=&quot;#509FFF&quot;&gt;Type&lt;/font&gt; : &lt;b&gt;Attaque&lt;/b&gt;.</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s65"><Data ss:Type="String">ui_AST_ArrowsRain_Lore</Data></Cell>
@@ -457,7 +456,7 @@
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s65"><Data ss:Type="String">ui_AST_Bladeslinger_desc</Data></Cell>
     <Cell ss:StyleID="s68"><Data ss:Type="String">Launch a dual-blade Projectile in the cursor’s direction that deals Damage to Enemies in its path.\n\n&lt;font color=&quot;#cb5316&quot;&gt;Attack:&lt;/font&gt; Only usable with daggers, bows and pistols.\n\n&lt;font color=&quot;#509FFF&quot;&gt;Skill Tags&lt;/font&gt;: &lt;b&gt;Attack&lt;/b&gt;, &lt;b&gt;Projectile&lt;/b&gt;, &lt;b&gt;Rogue&lt;/b&gt;.</Data></Cell>
-    <Cell ss:StyleID="s65"><Data ss:Type="String">Lance une double-lame tournoyante en ligne droite, et inflige des dégâts aux ennemis sur son passage.\n\n&lt;font color=&quot;#cb5316&quot;&gt;Attaque :&lt;/font&gt; Utilisable avec une dague, un arc, ou un pistolet.\n\n&lt;font color=&quot;#509FFF&quot;&gt;Type&lt;/font&gt; : &lt;b&gt;Attaque&lt;/b&gt;, &lt;b&gt;Projectile&lt;/b&gt;, &lt;b&gt;Roublard&lt;/b&gt;.</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Lance une double-lame tournoyante en direction du curseur, et inflige des dégâts aux ennemis sur son passage.\n\n&lt;font color=&quot;#cb5316&quot;&gt;Attaque :&lt;/font&gt; Utilisable avec une dague, un arc, ou un pistolet.\n\n&lt;font color=&quot;#509FFF&quot;&gt;Type&lt;/font&gt; : &lt;b&gt;Attaque&lt;/b&gt;, &lt;b&gt;Projectile&lt;/b&gt;, &lt;b&gt;Roublard&lt;/b&gt;.</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s65"><Data ss:Type="String">ui_AST_Bladeslinger_Lore</Data></Cell>
@@ -472,7 +471,7 @@
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s65"><Data ss:Type="String">ui_AST_Bomb_desc</Data></Cell>
     <Cell ss:StyleID="s68"><Data ss:Type="String">Launch a Projectile to the cursor’s location that explodes, dealing Damage to Enemies in an Area-of-Effect.\n\n&lt;font color=&quot;#cb5316&quot;&gt;Attack:&lt;/font&gt; Only usable with daggers, bows and pistols.\n\n&lt;font color=&quot;#509FFF&quot;&gt;Skill Tags&lt;/font&gt;: &lt;b&gt;Attack&lt;/b&gt;, &lt;b&gt;Projectile&lt;/b&gt;, &lt;b&gt;Rogue&lt;/b&gt;, &lt;b&gt;Device&lt;/b&gt;.</Data></Cell>
-    <Cell ss:StyleID="s65"><Data ss:Type="String">Lance un engin explosif qui inflige des dégâts de feu sur une zone.\n\n&lt;font color=&quot;#cb5316&quot;&gt;Attaque :&lt;/font&gt; Seulement utilisable avec une dague, un arc, ou un pistolet.\n\n&lt;font color=&quot;#509FFF&quot;&gt;Type&lt;/font&gt; : &lt;b&gt;Attaque&lt;/b&gt;, &lt;b&gt;Projectile&lt;/b&gt;, &lt;b&gt;Roublard&lt;/b&gt;, &lt;b&gt;Utilitaire&lt;/b&gt;.</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Lance un Projectile explosif à l'emplacement du curseur qui inflige des Dégâts de Zone.\n\n&lt;font color=&quot;#cb5316&quot;&gt;Attaque :&lt;/font&gt; Seulement utilisable avec une dague, un arc, ou un pistolet.\n\n&lt;font color=&quot;#509FFF&quot;&gt;Type&lt;/font&gt; : &lt;b&gt;Attaque&lt;/b&gt;, &lt;b&gt;Projectile&lt;/b&gt;, &lt;b&gt;Roublard&lt;/b&gt;, &lt;b&gt;Utilitaire&lt;/b&gt;.</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s65"><Data ss:Type="String">ui_AST_Bomb_Lore</Data></Cell>
@@ -487,7 +486,7 @@
    <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s65"><Data ss:Type="String">ui_AST_BrutalStrike_desc</Data></Cell>
     <Cell ss:StyleID="s68"><Data ss:Type="String">Summon a hammer and bring it down in front of you, dealing Damage to Enemies in an Area-of-Effect.\n\n&lt;font color=&quot;#cb5316&quot;&gt;Attack:&lt;/font&gt; Only usable with melee weapons.\n\n&lt;font color=&quot;#509FFF&quot;&gt;Skill Tags&lt;/font&gt;: &lt;b&gt;Attack&lt;/b&gt;, &lt;b&gt;Warrior&lt;/b&gt;.</Data></Cell>
-    <Cell ss:StyleID="s65"><Data ss:Type="String">Invoque un marteau colossal et l'abat sur vos ennemis, infligeant des dégâts de zone.\n\n&lt;font color=&quot;#cb5316&quot;&gt;Attaque :&lt;/font&gt; Seulement utilisable avec des armes de mêlée.\n\n&lt;font color=&quot;#509FFF&quot;&gt;Type&lt;/font&gt; : &lt;b&gt;Attaque&lt;/b&gt;, &lt;b&gt;Guerrier&lt;/b&gt;.</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Invoque un marteau colossal et l'abat sur vos ennemis, infligeant des Dégâts de Zone.\n\n&lt;font color=&quot;#cb5316&quot;&gt;Attaque :&lt;/font&gt; Seulement utilisable avec des armes de mêlée.\n\n&lt;font color=&quot;#509FFF&quot;&gt;Type&lt;/font&gt; : &lt;b&gt;Attaque&lt;/b&gt;, &lt;b&gt;Guerrier&lt;/b&gt;.</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s65"><Data ss:Type="String">ui_AST_BrutalStrike_Lore</Data></Cell>
@@ -502,7 +501,7 @@
    <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s65"><Data ss:Type="String">ui_AST_BullEye_desc</Data></Cell>
     <Cell ss:StyleID="s68"><Data ss:Type="String">Channel multiple shots and hover or click on Enemies to target them. Projectiles are launched at the Targets when the channeling ends or the maximum Targets are selected.\n\n&lt;font color=&quot;#cb5316&quot;&gt;Attack:&lt;/font&gt; Only usable with bows and pistols.\n\n&lt;font color=&quot;#509FFF&quot;&gt;Skill Tags&lt;/font&gt;: &lt;b&gt;Attack&lt;/b&gt;, &lt;b&gt;Projectile&lt;/b&gt;, &lt;b&gt;Device&lt;/b&gt;.</Data></Cell>
-    <Cell ss:StyleID="s65"><Data ss:Type="String">Visez plusieurs ennemis en passant le curseur dessus ou en les cliquant. Les tirs se déclenchent quand vous arrêtez de viser ou en atteignez le nombre maximum de tirs.\n&lt;font color=&quot;#cb5316&quot;&gt;Attaque&#160;:&lt;/font&gt; utilisable seulement avec arcs et pistolets.\n\n&lt;font color=&quot;#509FFF&quot;&gt;Type&lt;/font&gt; : &lt;b&gt;Attaque&lt;/b&gt;, &lt;b&gt;Projectile&lt;/b&gt;, &lt;b&gt;Utilitaire&lt;/b&gt;.</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Canalise un tir multiple en passant le curseur sur vos ennemis ou en cliquant sur eux. Les Projectiles visent vos cibles lorsque la canalisation s'arrête ou que vous atteignez le nombre maximum de cibles.\n&lt;font color=&quot;#cb5316&quot;&gt;Attaque&#160;:&lt;/font&gt; utilisable seulement avec arcs et pistolets.\n\n&lt;font color=&quot;#509FFF&quot;&gt;Type&lt;/font&gt; : &lt;b&gt;Attaque&lt;/b&gt;, &lt;b&gt;Projectile&lt;/b&gt;, &lt;b&gt;Utilitaire&lt;/b&gt;.</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s65"><Data ss:Type="String">ui_AST_BullEye_Lore</Data></Cell>
@@ -517,7 +516,7 @@
    <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s65"><Data ss:Type="String">ui_AST_ChainLightning_desc</Data></Cell>
     <Cell ss:StyleID="s68"><Data ss:Type="String">Cast a chain lightning Spell that bounces lightning between multiple Enemies, dealing decreased Lightning Damage for each subsequent Enemy it hits.\n\n&lt;font color=&quot;#948ec6&quot;&gt;Spell:&lt;/font&gt; Only usable with staves or catalysts.\n\n&lt;font color=&quot;#509FFF&quot;&gt;Skill Tags&lt;/font&gt;: &lt;b&gt;Spell&lt;/b&gt;.</Data></Cell>
-    <Cell ss:StyleID="s65"><Data ss:Type="String">Envoie des décharges de foudre qui rebondissent entre les ennemis. Chaque rebond inflige moins de dégât que le précédent.\n\n&lt;font color=&quot;#948ec6&quot;&gt;Sort :&lt;/font&gt; Seulement utilisable avec un bâton ou un catalyseur.\n\n&lt;font color=&quot;#509FFF&quot;&gt;Type&lt;/font&gt; : &lt;b&gt;Sort&lt;/b&gt;.</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Envoie des décharges de Foudre qui rebondissent entre les ennemis. Chaque rebond inflige moins de dégât que le précédent.\n\n&lt;font color=&quot;#948ec6&quot;&gt;Sort :&lt;/font&gt; Seulement utilisable avec un bâton ou un catalyseur.\n\n&lt;font color=&quot;#509FFF&quot;&gt;Type&lt;/font&gt; : &lt;b&gt;Sort&lt;/b&gt;.</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s65"><Data ss:Type="String">ui_AST_ChainLightning_Lore</Data></Cell>
@@ -9499,7 +9498,7 @@
     <VerticalResolution>600</VerticalResolution>
    </Print>
    <Selected/>
-   <LeftColumnVisible>1</LeftColumnVisible>
+   <LeftColumnVisible>2</LeftColumnVisible>
    <Panes>
     <Pane>
      <Number>3</Number>

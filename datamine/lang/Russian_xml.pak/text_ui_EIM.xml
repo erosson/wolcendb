@@ -8,9 +8,9 @@
  <DocumentProperties xmlns="urn:schemas-microsoft-com:office:office">
   <Title>Untitled Spreadsheet</Title>
   <Author>Unknown Creator</Author>
-  <LastAuthor>Alk0zAuruS Alk0zAuruS</LastAuthor>
-  <Created>2020-03-23T12:56:14Z</Created>
-  <LastSaved>2020-03-23T12:56:14Z</LastSaved>
+  <LastAuthor>Cthylla</LastAuthor>
+  <Created>2020-04-01T05:39:00Z</Created>
+  <LastSaved>2020-04-01T05:39:00Z</LastSaved>
   <Company>Microsoft Corporation</Company>
   <Version>16.00</Version>
  </DocumentProperties>
@@ -18,11 +18,10 @@
   <AllowPNG/>
  </OfficeDocumentSettings>
  <ExcelWorkbook xmlns="urn:schemas-microsoft-com:office:excel">
-  <WindowHeight>7980</WindowHeight>
-  <WindowWidth>21570</WindowWidth>
+  <WindowHeight>5655</WindowHeight>
+  <WindowWidth>17745</WindowWidth>
   <WindowTopX>32767</WindowTopX>
   <WindowTopY>32767</WindowTopY>
-  <RefModeR1C1/>
   <ProtectStructure>False</ProtectStructure>
   <ProtectWindows>False</ProtectWindows>
  </ExcelWorkbook>
@@ -118,10 +117,10 @@
  </Styles>
  <Worksheet ss:Name="Sheet1">
   <Table ss:ExpandedColumnCount="3" ss:ExpandedRowCount="672" x:FullColumns="1"
-   x:FullRows="1" ss:DefaultColumnWidth="60" ss:DefaultRowHeight="14.4375">
-   <Column ss:AutoFitWidth="0" ss:Width="366.75"/>
-   <Column ss:AutoFitWidth="0" ss:Width="424.5"/>
-   <Column ss:AutoFitWidth="0" ss:Width="237"/>
+   x:FullRows="1" ss:DefaultColumnWidth="60" ss:DefaultRowHeight="15">
+   <Column ss:AutoFitWidth="0" ss:Width="356.25"/>
+   <Column ss:AutoFitWidth="0" ss:Width="413.25"/>
+   <Column ss:AutoFitWidth="0" ss:Width="230.25"/>
    <Row ss:AutoFitHeight="0" ss:Height="14.25">
     <Cell ss:StyleID="s62"><Data ss:Type="String">KEY</Data></Cell>
     <Cell ss:StyleID="s63"><Data ss:Type="String">ORIGINAL TEXT</Data></Cell>
@@ -147,7 +146,7 @@
     <Cell ss:StyleID="s64"/>
     <Cell ss:StyleID="s65"/>
    </Row>
-   <Row ss:AutoFitHeight="0" ss:Height="15">
+   <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s67"><Data ss:Type="String">ui_eim_ailment_stacks_multiplier_chance</Data></Cell>
     <Cell ss:StyleID="s68"><Data ss:Type="String">%1 Chance to multiply the number of Ailment Stacks</Data></Cell>
     <Cell ss:StyleID="s65"><Data ss:Type="String">%1 шанс увеличить количество накладываемых негативных эффектов</Data></Cell>
@@ -162,27 +161,27 @@
     <Cell ss:StyleID="s69"><Data ss:Type="String">Can now apply %1 Additional Ailment(s)</Data></Cell>
     <Cell ss:StyleID="s65"><Data ss:Type="String">Теперь можно наложить %1 дополнительное(ых) негативное(ых) состояние(й)</Data></Cell>
    </Row>
-   <Row ss:AutoFitHeight="0" ss:Height="15">
+   <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s67"><Data ss:Type="String">ui_eim_additional_projectile</Data></Cell>
     <Cell ss:StyleID="s68"><Data ss:Type="String">%1 Projectile(s) to all Projectile Skills (Attacks and Spells)</Data></Cell>
     <Cell ss:StyleID="s65"><Data ss:Type="String">%1 дополнительный снаряд(ов) для атак и заклинаний снарядами</Data></Cell>
    </Row>
-   <Row ss:AutoFitHeight="0" ss:Height="15">
+   <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s67"><Data ss:Type="String">ui_eim_additional_stacks_chance_pts</Data></Cell>
     <Cell ss:StyleID="s68"><Data ss:Type="String">%1 Chance to double the number of Ailment Stacks inflicted</Data></Cell>
     <Cell ss:StyleID="s65"><Data ss:Type="String">%1 шанс наложения удвоенного количества негативных эффектов</Data></Cell>
    </Row>
-   <Row ss:AutoFitHeight="0" ss:Height="15">
+   <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s67"><Data ss:Type="String">ui_eim_additional_stamina_pts</Data></Cell>
     <Cell ss:StyleID="s68"><Data ss:Type="String">%1 Stamina Point</Data></Cell>
     <Cell ss:StyleID="s65"><Data ss:Type="String">%1 очко выносливости</Data></Cell>
    </Row>
-   <Row ss:AutoFitHeight="0" ss:Height="15">
+   <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s67"><Data ss:Type="String">ui_eim_agility_pts</Data></Cell>
     <Cell ss:StyleID="s68"><Data ss:Type="String">%1 Agility</Data></Cell>
     <Cell ss:StyleID="s65"><Data ss:Type="String">%1 Проворства</Data></Cell>
    </Row>
-   <Row ss:AutoFitHeight="0" ss:Height="15">
+   <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s67"><Data ss:Type="String">ui_eim_ailment_damage_resistance_percent</Data></Cell>
     <Cell ss:StyleID="s68"><Data ss:Type="String">%1 Ailment Damage Resistance</Data></Cell>
     <Cell ss:StyleID="s65"><Data ss:Type="String">%1 сопротивления урону от негативных состояний</Data></Cell>
@@ -197,652 +196,652 @@
     <Cell ss:StyleID="s68"><Data ss:Type="String">%1 Chance to multiply the number of Ailment Stacks inflicted</Data></Cell>
     <Cell ss:StyleID="s65"><Data ss:Type="String">%1 шанс увеличить количество накладываемых негативных эффектов</Data></Cell>
    </Row>
-   <Row ss:AutoFitHeight="0" ss:Height="15">
+   <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s67"><Data ss:Type="String">ui_eim_anystack_duration_percent</Data></Cell>
     <Cell ss:StyleID="s68"><Data ss:Type="String">%1 Ailment Stack Duration</Data></Cell>
     <Cell ss:StyleID="s65"><Data ss:Type="String">%1 продолжительности негативных эффектов</Data></Cell>
    </Row>
-   <Row ss:AutoFitHeight="0" ss:Height="15">
+   <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s67"><Data ss:Type="String">ui_eim_all_attribute_pts</Data></Cell>
     <Cell ss:StyleID="s68"><Data ss:Type="String">%1 to All Attributes</Data></Cell>
     <Cell ss:StyleID="s65"><Data ss:Type="String">%1 ко всем атрибутам</Data></Cell>
    </Row>
-   <Row ss:AutoFitHeight="0" ss:Height="15">
+   <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s67"><Data ss:Type="String">ui_eim_all_resistance</Data></Cell>
     <Cell ss:StyleID="s68"><Data ss:Type="String">%1 to All Resistances Score</Data></Cell>
     <Cell ss:StyleID="s65"><Data ss:Type="String">%1 к рейтингу всех сопротивлений</Data></Cell>
    </Row>
-   <Row ss:AutoFitHeight="0" ss:Height="15">
+   <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s67"><Data ss:Type="String">ui_eim_all_resistance_final_percent</Data></Cell>
     <Cell ss:StyleID="s68"><Data ss:Type="String">%1 to All Resistances</Data></Cell>
     <Cell ss:StyleID="s65"><Data ss:Type="String">%1 ко всем сопротивлениям</Data></Cell>
    </Row>
-   <Row ss:AutoFitHeight="0" ss:Height="15">
+   <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s67"><Data ss:Type="String">ui_eim_all_resistance_percent</Data></Cell>
     <Cell ss:StyleID="s68"><Data ss:Type="String">%1 to All Resistances Score</Data></Cell>
     <Cell ss:StyleID="s65"><Data ss:Type="String">%1 к рейтингу всех сопротивлений</Data></Cell>
    </Row>
-   <Row ss:AutoFitHeight="0" ss:Height="15">
+   <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s67"><Data ss:Type="String">ui_eim_all_resistance_score_percent</Data></Cell>
     <Cell ss:StyleID="s68"><Data ss:Type="String">%1 to All Resistances Score</Data></Cell>
     <Cell ss:StyleID="s65"><Data ss:Type="String">%1 к рейтингу всех сопротивлений</Data></Cell>
    </Row>
-   <Row ss:AutoFitHeight="0" ss:Height="15">
+   <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s67"><Data ss:Type="String">ui_eim_anystack_duration_increase</Data></Cell>
     <Cell ss:StyleID="s68"><Data ss:Type="String">%1 Ailment Stack Duration</Data></Cell>
     <Cell ss:StyleID="s65"><Data ss:Type="String">%1 продолжительности негативных эффектов</Data></Cell>
    </Row>
-   <Row ss:AutoFitHeight="0" ss:Height="15">
+   <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s67"><Data ss:Type="String">ui_eim_attack_damage_bonus_from_last_spell</Data></Cell>
     <Cell ss:StyleID="s66"><Data ss:Type="String">Attacks gain %1 Damage from the last Spell Cast. The Damage Type is the same as the last Spell Cast</Data></Cell>
     <Cell ss:StyleID="s65"><Data ss:Type="String">Атаки получают %1 урона от последнего заклинания, тип урона соответствует урону заклинания</Data></Cell>
    </Row>
-   <Row ss:AutoFitHeight="0" ss:Height="15">
+   <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s67"><Data ss:Type="String">ui_eim_attackspeed_final_percent</Data></Cell>
     <Cell ss:StyleID="s68"><Data ss:Type="String">%1 Attack Speed</Data></Cell>
     <Cell ss:StyleID="s65"><Data ss:Type="String">%1 скорости атаки</Data></Cell>
    </Row>
-   <Row ss:AutoFitHeight="0" ss:Height="15">
+   <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s67"><Data ss:Type="String">ui_eim_attackspeed_score</Data></Cell>
     <Cell ss:StyleID="s68"><Data ss:Type="String">%1 Attack Speed Score</Data></Cell>
     <Cell ss:StyleID="s65"><Data ss:Type="String">%1 к рейтингу скорости атаки</Data></Cell>
    </Row>
-   <Row ss:AutoFitHeight="0" ss:Height="15">
+   <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s67"><Data ss:Type="String">ui_eim_attackspeed_score_percent</Data></Cell>
     <Cell ss:StyleID="s68"><Data ss:Type="String">%1 Attack Speed Score</Data></Cell>
     <Cell ss:StyleID="s65"><Data ss:Type="String">%1 к рейтингу скорости атаки</Data></Cell>
    </Row>
-   <Row ss:AutoFitHeight="0" ss:Height="15">
+   <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s67"><Data ss:Type="String">ui_eim_autodash_cdr_percent</Data></Cell>
     <Cell ss:StyleID="s68"><Data ss:Type="String">%1 Dash Attack Cooldown decrease</Data></Cell>
     <Cell ss:StyleID="s65"><Data ss:Type="String">%1 снижения перезарядки атаки рывком</Data></Cell>
    </Row>
-   <Row ss:AutoFitHeight="0" ss:Height="15">
+   <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s67"><Data ss:Type="String">ui_eim_autodash_range_flat</Data></Cell>
     <Cell ss:StyleID="s68"><Data ss:Type="String">%1m Dash Attack Range</Data></Cell>
     <Cell ss:StyleID="s65"><Data ss:Type="String">%1 м дальности атаки рывком</Data></Cell>
    </Row>
-   <Row ss:AutoFitHeight="0" ss:Height="15">
+   <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s67"><Data ss:Type="String">ui_eim_autopierce_radius</Data></Cell>
     <Cell ss:StyleID="s70"><Data ss:Type="String">%1m of All Projectiles Pierce Range</Data></Cell>
     <Cell ss:StyleID="s65"><Data ss:Type="String">%1м дальности пробития снаряда</Data></Cell>
    </Row>
-   <Row ss:AutoFitHeight="0" ss:Height="15">
+   <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s67"><Data ss:Type="String">ui_eim_autopierce_radius_detail</Data></Cell>
     <Cell ss:StyleID="s70"><Data ss:Type="String">All Projectiles pierce every Target within a %1m radius</Data></Cell>
     <Cell ss:StyleID="s65"><Data ss:Type="String">Снаряды пробивают каждую цель в радиусе %1 м</Data></Cell>
    </Row>
-   <Row ss:AutoFitHeight="0" ss:Height="15">
+   <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s67"><Data ss:Type="String">ui_eim_bleed_on_hit_percent</Data></Cell>
     <Cell ss:StyleID="s68"><Data ss:Type="String">%1 Bleed Chance Score when dealing all Damage Types</Data></Cell>
     <Cell ss:StyleID="s65"><Data ss:Type="String">%1 к рейтингу кровотечения любым типом урона</Data></Cell>
    </Row>
-   <Row ss:AutoFitHeight="0" ss:Height="15">
+   <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s67"><Data ss:Type="String">ui_eim_bleedchance_on_rend_damage_score_percent</Data></Cell>
     <Cell ss:StyleID="s68"><Data ss:Type="String">%1 Bleed Chance Score when dealing Rend Damage</Data></Cell>
     <Cell ss:StyleID="s65"><Data ss:Type="String">%1 к рейтингу кровотечения уроном рваными ранами</Data></Cell>
    </Row>
-   <Row ss:AutoFitHeight="0" ss:Height="15">
+   <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s67"><Data ss:Type="String">ui_eim_blockchance_ifcanblock_flat</Data></Cell>
     <Cell ss:StyleID="s71"><Data ss:Type="String">%1 Block Chance</Data></Cell>
     <Cell ss:StyleID="s65"><Data ss:Type="String">%1 шанса блокирования</Data></Cell>
    </Row>
-   <Row ss:AutoFitHeight="0" ss:Height="15">
+   <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s67"><Data ss:Type="String">ui_eim_blockchance_unconditional_flat</Data></Cell>
     <Cell ss:StyleID="s72"><Data ss:Type="String">%1 Added Block Chance and allow any weapon to block</Data></Cell>
     <Cell ss:StyleID="s65"><Data ss:Type="String">%1 шанса блокирования и возможность блокировать любым оружием</Data></Cell>
    </Row>
-   <Row ss:AutoFitHeight="0" ss:Height="15">
+   <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s67"><Data ss:Type="String">ui_eim_blockefficiency_percent</Data></Cell>
     <Cell ss:StyleID="s68"><Data ss:Type="String">%1 Block Efficiency</Data></Cell>
     <Cell ss:StyleID="s65"><Data ss:Type="String">%1 к эффективности блокирования</Data></Cell>
    </Row>
-   <Row ss:AutoFitHeight="0" ss:Height="15">
+   <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s67"><Data ss:Type="String">ui_eim_burn_on_hit_percent</Data></Cell>
     <Cell ss:StyleID="s68"><Data ss:Type="String">%1 Burn Chance Score when dealing all Damage Types</Data></Cell>
     <Cell ss:StyleID="s65"><Data ss:Type="String">%1 к рейтингу поджога любым типом урона</Data></Cell>
    </Row>
-   <Row ss:AutoFitHeight="0" ss:Height="15">
+   <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s67"><Data ss:Type="String">ui_eim_burnchance_on_fire_damage_score_flat</Data></Cell>
     <Cell ss:StyleID="s68"><Data ss:Type="String">%1 Burn Chance Score when dealing Fire Damage</Data></Cell>
     <Cell ss:StyleID="s65"><Data ss:Type="String">%1 к рейтингу поджога уроном огнём</Data></Cell>
    </Row>
-   <Row ss:AutoFitHeight="0" ss:Height="15">
+   <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s67"><Data ss:Type="String">ui_eim_burnchance_on_fire_damage_score_percent</Data></Cell>
     <Cell ss:StyleID="s68"><Data ss:Type="String">%1 Burn Chance Score when dealing Fire Damage</Data></Cell>
     <Cell ss:StyleID="s65"><Data ss:Type="String">%1 к рейтингу поджога уроном огнём</Data></Cell>
    </Row>
-   <Row ss:AutoFitHeight="0" ss:Height="15">
+   <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s73"><Data ss:Type="String">ui_eim_can_cast_arrowsrain</Data></Cell>
     <Cell ss:StyleID="s68"><Data ss:Type="String">Allows the Bearer to Cast Wailing Arrows</Data></Cell>
     <Cell ss:StyleID="s65"><Data ss:Type="String">Позволяет использовать &quot;Стенания стрел&quot;</Data></Cell>
    </Row>
-   <Row ss:AutoFitHeight="0" ss:Height="15">
+   <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s73"><Data ss:Type="String">ui_eim_can_cast_bladeslinger</Data></Cell>
     <Cell ss:StyleID="s68"><Data ss:Type="String">Allows the Bearer to Cast Phantom Blades</Data></Cell>
     <Cell ss:StyleID="s65"><Data ss:Type="String">Позволяет использовать &quot;Призрачные клинки&quot;</Data></Cell>
    </Row>
-   <Row ss:AutoFitHeight="0" ss:Height="15">
+   <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s73"><Data ss:Type="String">ui_eim_can_cast_bomb</Data></Cell>
     <Cell ss:StyleID="s68"><Data ss:Type="String">Allows the Bearer to Cast Havoc Orb</Data></Cell>
     <Cell ss:StyleID="s65"><Data ss:Type="String">Позволяет использовать &quot;Сферу разрушения&quot;</Data></Cell>
    </Row>
-   <Row ss:AutoFitHeight="0" ss:Height="15">
+   <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s73"><Data ss:Type="String">ui_eim_can_cast_brutalstrike</Data></Cell>
     <Cell ss:StyleID="s68"><Data ss:Type="String">Allows the Bearer to Cast Anvil's Woe</Data></Cell>
     <Cell ss:StyleID="s65"><Data ss:Type="String">Позволяет использовать &quot;Наковальню горестей&quot;</Data></Cell>
    </Row>
-   <Row ss:AutoFitHeight="0" ss:Height="15">
+   <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s73"><Data ss:Type="String">ui_eim_can_cast_bullseye</Data></Cell>
     <Cell ss:StyleID="s68"><Data ss:Type="String">Allows the Bearer to Cast Gunslinger's Brand</Data></Cell>
     <Cell ss:StyleID="s65"><Data ss:Type="String">Позволяет использовать &quot;Метку стрелка&quot;</Data></Cell>
    </Row>
-   <Row ss:AutoFitHeight="0" ss:Height="15">
+   <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s73"><Data ss:Type="String">ui_eim_can_cast_chainlightning</Data></Cell>
     <Cell ss:StyleID="s68"><Data ss:Type="String">Allows the Bearer to Cast Thunderstrike</Data></Cell>
     <Cell ss:StyleID="s65"><Data ss:Type="String">Позволяет использовать &quot;Раскат грома&quot;</Data></Cell>
    </Row>
-   <Row ss:AutoFitHeight="0" ss:Height="15">
+   <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s73"><Data ss:Type="String">ui_eim_can_cast_charge</Data></Cell>
     <Cell ss:StyleID="s68"><Data ss:Type="String">Allows the Bearer to Cast Warpath</Data></Cell>
     <Cell ss:StyleID="s65"><Data ss:Type="String">Позволяет использовать &quot;Тропу войны&quot;</Data></Cell>
    </Row>
-   <Row ss:AutoFitHeight="0" ss:Height="15">
+   <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s73"><Data ss:Type="String">ui_eim_can_cast_deathmark</Data></Cell>
     <Cell ss:StyleID="s68"><Data ss:Type="String">Allows the Bearer to Cast Mark of Impurity</Data></Cell>
     <Cell ss:StyleID="s65"><Data ss:Type="String">Позволяет использовать &quot;Знак скверны&quot;</Data></Cell>
    </Row>
-   <Row ss:AutoFitHeight="0" ss:Height="15">
+   <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s73"><Data ss:Type="String">ui_eim_can_cast_dualstrike</Data></Cell>
     <Cell ss:StyleID="s68"><Data ss:Type="String">Allows the Bearer to Cast Slayer's Flurry</Data></Cell>
     <Cell ss:StyleID="s65"><Data ss:Type="String">Позволяет использовать &quot;Шквал убийцы&quot;</Data></Cell>
    </Row>
-   <Row ss:AutoFitHeight="0" ss:Height="15">
+   <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s73"><Data ss:Type="String">ui_eim_can_cast_fireball</Data></Cell>
     <Cell ss:StyleID="s68"><Data ss:Type="String">Allows the Bearer to Cast Consuming Embers</Data></Cell>
     <Cell ss:StyleID="s65"><Data ss:Type="String">Позволяет использовать &quot;Пожирающие угли&quot;</Data></Cell>
    </Row>
-   <Row ss:AutoFitHeight="0" ss:Height="15">
+   <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s73"><Data ss:Type="String">ui_eim_can_cast_frostcomet</Data></Cell>
     <Cell ss:StyleID="s68"><Data ss:Type="String">Allows the Bearer to Cast Tear of Etheliel</Data></Cell>
     <Cell ss:StyleID="s65"><Data ss:Type="String">Позволяет использовать &quot;Слезу Этелиэль&quot;</Data></Cell>
    </Row>
-   <Row ss:AutoFitHeight="0" ss:Height="15">
+   <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s73"><Data ss:Type="String">ui_eim_can_cast_frostlance</Data></Cell>
     <Cell ss:StyleID="s68"><Data ss:Type="String">Allows the Bearer to Cast Arctic Spear</Data></Cell>
     <Cell ss:StyleID="s65"><Data ss:Type="String">Позволяет использовать &quot;Арктическое копьё&quot;</Data></Cell>
    </Row>
-   <Row ss:AutoFitHeight="0" ss:Height="15">
+   <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s73"><Data ss:Type="String">ui_eim_can_cast_frostnova</Data></Cell>
     <Cell ss:StyleID="s68"><Data ss:Type="String">Allows the Bearer to Cast Winter's Grasp</Data></Cell>
     <Cell ss:StyleID="s65"><Data ss:Type="String">Позволяет использовать &quot;Хватку зимы&quot;</Data></Cell>
    </Row>
-   <Row ss:AutoFitHeight="0" ss:Height="15">
+   <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s73"><Data ss:Type="String">ui_eim_can_cast_hook</Data></Cell>
     <Cell ss:StyleID="s68"><Data ss:Type="String">Allows the Bearer to Cast Tracker's Reach</Data></Cell>
     <Cell ss:StyleID="s65"><Data ss:Type="String">Позволяет использовать &quot;Крюк следопыта&quot;</Data></Cell>
    </Row>
-   <Row ss:AutoFitHeight="0" ss:Height="15">
+   <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s73"><Data ss:Type="String">ui_eim_can_cast_laceration</Data></Cell>
     <Cell ss:StyleID="s68"><Data ss:Type="String">Allows the Bearer to Cast Bleeding Edge</Data></Cell>
     <Cell ss:StyleID="s65"><Data ss:Type="String">Позволяет использовать &quot;Кровавые лезвия&quot;</Data></Cell>
    </Row>
-   <Row ss:AutoFitHeight="0" ss:Height="15">
+   <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s73"><Data ss:Type="String">ui_eim_can_cast_laser</Data></Cell>
     <Cell ss:StyleID="s68"><Data ss:Type="String">Allows the Bearer to Cast Annihilation</Data></Cell>
     <Cell ss:StyleID="s65"><Data ss:Type="String">Позволяет использовать &quot;Аннигиляцию&quot;</Data></Cell>
    </Row>
-   <Row ss:AutoFitHeight="0" ss:Height="15">
+   <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s73"><Data ss:Type="String">ui_eim_can_cast_leap</Data></Cell>
     <Cell ss:StyleID="s68"><Data ss:Type="String">Allows the Bearer to Cast Wings of Ishmir</Data></Cell>
     <Cell ss:StyleID="s65"><Data ss:Type="String">Позволяет использовать &quot;Крылья Ишмира&quot;</Data></Cell>
    </Row>
-   <Row ss:AutoFitHeight="0" ss:Height="15">
+   <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s73"><Data ss:Type="String">ui_eim_can_cast_reave</Data></Cell>
     <Cell ss:StyleID="s68"><Data ss:Type="String">Allows the Bearer to Cast Wrath of Baäpheth</Data></Cell>
     <Cell ss:StyleID="s65"><Data ss:Type="String">Позволяет использовать &quot;Гнев Баафета&quot;</Data></Cell>
    </Row>
-   <Row ss:AutoFitHeight="0" ss:Height="15">
+   <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s73"><Data ss:Type="String">ui_eim_can_cast_sacredground</Data></Cell>
     <Cell ss:StyleID="s68"><Data ss:Type="String">Allows the Bearer to Cast Bulwark of Dawn</Data></Cell>
     <Cell ss:StyleID="s65"><Data ss:Type="String">Позволяет использовать &quot;Оплот Зари&quot;</Data></Cell>
    </Row>
-   <Row ss:AutoFitHeight="0" ss:Height="15">
+   <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s73"><Data ss:Type="String">ui_eim_can_cast_spreadshot</Data></Cell>
     <Cell ss:StyleID="s68"><Data ss:Type="String">Allows the Bearer to Cast Stings of Krearion</Data></Cell>
     <Cell ss:StyleID="s65"><Data ss:Type="String">Позволяет использовать &quot;Жала Креариона&quot;</Data></Cell>
    </Row>
-   <Row ss:AutoFitHeight="0" ss:Height="15">
+   <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s73"><Data ss:Type="String">ui_eim_can_cast_teleport</Data></Cell>
     <Cell ss:StyleID="s68"><Data ss:Type="String">Allows the Bearer to Cast Aether Jump</Data></Cell>
     <Cell ss:StyleID="s65"><Data ss:Type="String">Позволяет использовать &quot;Эфирный прыжок&quot;</Data></Cell>
    </Row>
-   <Row ss:AutoFitHeight="0" ss:Height="15">
+   <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s73"><Data ss:Type="String">ui_eim_can_cast_turret</Data></Cell>
     <Cell ss:StyleID="s68"><Data ss:Type="String">Allows the Bearer to Cast 'Avenger' Autoturret</Data></Cell>
     <Cell ss:StyleID="s65"><Data ss:Type="String">Позволяет использовать &quot;Автотурель &quot;Мститель&quot;&quot;</Data></Cell>
    </Row>
-   <Row ss:AutoFitHeight="0" ss:Height="15">
+   <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s73"><Data ss:Type="String">ui_eim_can_cast_warcry</Data></Cell>
     <Cell ss:StyleID="s68"><Data ss:Type="String">Allows the Bearer to Cast Sovereign Shout</Data></Cell>
     <Cell ss:StyleID="s65"><Data ss:Type="String">Позволяет использовать &quot;Монарший возглас&quot;</Data></Cell>
    </Row>
-   <Row ss:AutoFitHeight="0" ss:Height="15">
+   <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s73"><Data ss:Type="String">ui_eim_can_cast_whirlwind</Data></Cell>
     <Cell ss:StyleID="s68"><Data ss:Type="String">Allows the Bearer to Cast Bladestorm</Data></Cell>
     <Cell ss:StyleID="s65"><Data ss:Type="String">Позволяет использовать &quot;Бурю клинков&quot;</Data></Cell>
    </Row>
-   <Row ss:AutoFitHeight="0" ss:Height="15">
+   <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s73"><Data ss:Type="String">ui_eim_can_cast_aetherblade</Data></Cell>
     <Cell ss:StyleID="s68"><Data ss:Type="String">Allows the Bearer to Cast Infinity Blades</Data></Cell>
     <Cell ss:StyleID="s65"><Data ss:Type="String">Позволяет использовать &quot;Бесконечные клинки&quot;</Data></Cell>
    </Row>
-   <Row ss:AutoFitHeight="0" ss:Height="15">
+   <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s73"><Data ss:Type="String">ui_eim_can_cast_aetherblast</Data></Cell>
     <Cell ss:StyleID="s68"><Data ss:Type="String">Allows the Bearer to Cast Eclipse</Data></Cell>
     <Cell ss:StyleID="s65"><Data ss:Type="String">Позволяет использовать &quot;Затмение&quot;</Data></Cell>
    </Row>
-   <Row ss:AutoFitHeight="0" ss:Height="15">
+   <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s73"><Data ss:Type="String">ui_eim_can_cast_corpse_explosion</Data></Cell>
     <Cell ss:StyleID="s68"><Data ss:Type="String">Allows the Bearer to Cast Plagueburst</Data></Cell>
     <Cell ss:StyleID="s65"><Data ss:Type="String">Позволяет использовать &quot;Чумной взрыв&quot;</Data></Cell>
    </Row>
-   <Row ss:AutoFitHeight="0" ss:Height="15">
+   <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s73"><Data ss:Type="String">ui_eim_can_cast_hammer</Data></Cell>
     <Cell ss:StyleID="s68"><Data ss:Type="String">Allows the Bearer to Cast Flight of Gaavanir</Data></Cell>
     <Cell ss:StyleID="s65"><Data ss:Type="String">Позволяет использовать &quot;Полёт Гааванира&quot;</Data></Cell>
    </Row>
-   <Row ss:AutoFitHeight="0" ss:Height="15">
+   <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s73"><Data ss:Type="String">ui_eim_can_cast_holydive</Data></Cell>
     <Cell ss:StyleID="s68"><Data ss:Type="String">Allows the Bearer to Cast Light-bringer</Data></Cell>
     <Cell ss:StyleID="s65"><Data ss:Type="String">Позволяет использовать &quot;Светоносца&quot;</Data></Cell>
    </Row>
-   <Row ss:AutoFitHeight="0" ss:Height="15">
+   <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s73"><Data ss:Type="String">ui_eim_can_cast_ironguard</Data></Cell>
     <Cell ss:StyleID="s68"><Data ss:Type="String">Allows the Bearer to Cast Juggernaut</Data></Cell>
     <Cell ss:StyleID="s65"><Data ss:Type="String">Позволяет использовать &quot;Джаггернаут&quot;</Data></Cell>
    </Row>
-   <Row ss:AutoFitHeight="0" ss:Height="15">
+   <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s73"><Data ss:Type="String">ui_eim_can_cast_possession</Data></Cell>
     <Cell ss:StyleID="s68"><Data ss:Type="String">Allows the Bearer to Cast Parasite</Data></Cell>
     <Cell ss:StyleID="s65"><Data ss:Type="String">Позволяет использовать &quot;Паразита&quot;</Data></Cell>
    </Row>
-   <Row ss:AutoFitHeight="0" ss:Height="15">
+   <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s73"><Data ss:Type="String">ui_eim_can_cast_ringofpain</Data></Cell>
     <Cell ss:StyleID="s68"><Data ss:Type="String">Allows the Bearer to Cast Blood for Blood</Data></Cell>
     <Cell ss:StyleID="s65"><Data ss:Type="String">Позволяет использовать &quot;Кровь за кровь&quot;</Data></Cell>
    </Row>
-   <Row ss:AutoFitHeight="0" ss:Height="15">
+   <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s73"><Data ss:Type="String">ui_eim_can_cast_smokebomb</Data></Cell>
     <Cell ss:StyleID="s68"><Data ss:Type="String">Allows the Bearer to Cast Duskshroud</Data></Cell>
     <Cell ss:StyleID="s65"><Data ss:Type="String">Позволяет использовать &quot;Сумеречную плащаницу&quot;</Data></Cell>
    </Row>
-   <Row ss:AutoFitHeight="0" ss:Height="15">
+   <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s73"><Data ss:Type="String">ui_eim_can_cast_sniper</Data></Cell>
     <Cell ss:StyleID="s68"><Data ss:Type="String">Allows the Bearer to Cast “Deathgazer” Railgun</Data></Cell>
     <Cell ss:StyleID="s65"><Data ss:Type="String">Позволяет использовать &quot;Винтовку &quot;Наблюдатель смерти&quot;&quot;</Data></Cell>
    </Row>
-   <Row ss:AutoFitHeight="0" ss:Height="15">
+   <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s73"><Data ss:Type="String">ui_eim_can_cast_solarfall</Data></Cell>
     <Cell ss:StyleID="s68"><Data ss:Type="String">Allows the Bearer to Cast Solarfall</Data></Cell>
     <Cell ss:StyleID="s65"><Data ss:Type="String">Позволяет использовать &quot;Солнечный удар&quot;</Data></Cell>
    </Row>
-   <Row ss:AutoFitHeight="0" ss:Height="15">
+   <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s73"><Data ss:Type="String">ui_eim_can_cast_summon_champion</Data></Cell>
     <Cell ss:StyleID="s68"><Data ss:Type="String">Allows the Bearer to Cast Livor Mortis</Data></Cell>
     <Cell ss:StyleID="s65"><Data ss:Type="String">Позволяет использовать &quot;Трупное пятно&quot;</Data></Cell>
    </Row>
-   <Row ss:AutoFitHeight="0" ss:Height="15">
+   <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s73"><Data ss:Type="String">ui_eim_can_cast_summon_melee</Data></Cell>
     <Cell ss:StyleID="s68"><Data ss:Type="String">Allows the Bearer to Cast Feeding Swarm</Data></Cell>
     <Cell ss:StyleID="s65"><Data ss:Type="String">Позволяет использовать &quot;Пасущийся рой&quot;</Data></Cell>
    </Row>
-   <Row ss:AutoFitHeight="0" ss:Height="15">
+   <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s73"><Data ss:Type="String">ui_eim_can_cast_summon_ranged</Data></Cell>
     <Cell ss:StyleID="s68"><Data ss:Type="String">Allows the Bearer to Cast Hunting Swarm</Data></Cell>
     <Cell ss:StyleID="s65"><Data ss:Type="String">Позволяет использовать &quot;Охотничий Рой&quot;</Data></Cell>
    </Row>
-   <Row ss:AutoFitHeight="0" ss:Height="15">
+   <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s73"><Data ss:Type="String">ui_eim_can_cast_vault</Data></Cell>
     <Cell ss:StyleID="s68"><Data ss:Type="String">Allows the Bearer to Cast Evasion</Data></Cell>
     <Cell ss:StyleID="s65"><Data ss:Type="String">Позволяет использовать &quot;Бегство&quot;</Data></Cell>
    </Row>
-   <Row ss:AutoFitHeight="0" ss:Height="15">
+   <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s73"><Data ss:Type="String">ui_eim_can_cast_vortex</Data></Cell>
     <Cell ss:StyleID="s68"><Data ss:Type="String">Allows the Bearer to Cast Anomaly</Data></Cell>
     <Cell ss:StyleID="s65"><Data ss:Type="String">Позволяет использовать &quot;Аномалию&quot;</Data></Cell>
    </Row>
-   <Row ss:AutoFitHeight="0" ss:Height="15">
+   <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s73"><Data ss:Type="String">ui_eim_can_not_dodge</Data></Cell>
     <Cell ss:StyleID="s68"><Data ss:Type="String">You are unable to Passive Dodge</Data></Cell>
     <Cell ss:StyleID="s65"><Data ss:Type="String">Вы теряете возможность пассивного уклонения</Data></Cell>
    </Row>
-   <Row ss:AutoFitHeight="0" ss:Height="15">
+   <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s67"><Data ss:Type="String">ui_eim_canrollthroughennemies</Data></Cell>
     <Cell ss:StyleID="s68"><Data ss:Type="String">Active dodge can go through Enemies</Data></Cell>
     <Cell ss:StyleID="s65"><Data ss:Type="String">Перекат может проходить сквозь врагов</Data></Cell>
    </Row>
-   <Row ss:AutoFitHeight="0" ss:Height="15">
+   <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s67"><Data ss:Type="String">ui_eim_cc_immunity</Data></Cell>
     <Cell ss:StyleID="s68"><Data ss:Type="String">Crowd Control Immunity</Data></Cell>
     <Cell ss:StyleID="s65"><Data ss:Type="String">Иммунитет к эффектам контроля</Data></Cell>
    </Row>
-   <Row ss:AutoFitHeight="0" ss:Height="15">
+   <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s67"><Data ss:Type="String">ui_eim_convert_fire_to_frost</Data></Cell>
     <Cell ss:StyleID="s68"><Data ss:Type="String">%1 Fire Damage converted into Frost Damage</Data></Cell>
     <Cell ss:StyleID="s65"><Data ss:Type="String">%1 урона огнём конвертируется в урон холодом</Data></Cell>
    </Row>
-   <Row ss:AutoFitHeight="0" ss:Height="15">
+   <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s67"><Data ss:Type="String">ui_eim_convert_fire_to_lightning</Data></Cell>
     <Cell ss:StyleID="s68"><Data ss:Type="String">%1 Fire Damage converted into Lightning Damage</Data></Cell>
     <Cell ss:StyleID="s65"><Data ss:Type="String">%1 урона огнём конвертируется в урон молнией</Data></Cell>
    </Row>
-   <Row ss:AutoFitHeight="0" ss:Height="15">
+   <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s67"><Data ss:Type="String">ui_eim_convert_fire_to_physical</Data></Cell>
     <Cell ss:StyleID="s68"><Data ss:Type="String">%1 Fire Damage converted into Physical Damage</Data></Cell>
     <Cell ss:StyleID="s65"><Data ss:Type="String">%1 урона огнём конвертируется в физический урон</Data></Cell>
    </Row>
-   <Row ss:AutoFitHeight="0" ss:Height="15">
+   <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s67"><Data ss:Type="String">ui_eim_convert_fire_to_rend</Data></Cell>
     <Cell ss:StyleID="s68"><Data ss:Type="String">%1 Fire Damage converted into Rend Damage</Data></Cell>
     <Cell ss:StyleID="s65"><Data ss:Type="String">%1 урона огнём конвертируется в урон рваными ранами</Data></Cell>
    </Row>
-   <Row ss:AutoFitHeight="0" ss:Height="15">
+   <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s67"><Data ss:Type="String">ui_eim_convert_fire_to_sacred</Data></Cell>
     <Cell ss:StyleID="s68"><Data ss:Type="String">%1 Fire Damage converted into Sacred Damage</Data></Cell>
     <Cell ss:StyleID="s65"><Data ss:Type="String">%1 урона огнём конвертируется в святой урон</Data></Cell>
    </Row>
-   <Row ss:AutoFitHeight="0" ss:Height="15">
+   <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s67"><Data ss:Type="String">ui_eim_convert_fire_to_shadow</Data></Cell>
     <Cell ss:StyleID="s68"><Data ss:Type="String">%1 Fire Damage converted into Shadow Damage</Data></Cell>
     <Cell ss:StyleID="s65"><Data ss:Type="String">%1 урона огнём конвертируется в урон тенью</Data></Cell>
    </Row>
-   <Row ss:AutoFitHeight="0" ss:Height="15">
+   <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s67"><Data ss:Type="String">ui_eim_convert_fire_to_toxic</Data></Cell>
     <Cell ss:StyleID="s68"><Data ss:Type="String">%1 Fire Damage converted into Toxic Damage</Data></Cell>
     <Cell ss:StyleID="s65"><Data ss:Type="String">%1 урона огнём конвертируется в урон ядом</Data></Cell>
    </Row>
-   <Row ss:AutoFitHeight="0" ss:Height="15">
+   <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s67"><Data ss:Type="String">ui_eim_convert_fire_to_umbra</Data></Cell>
     <Cell ss:StyleID="s68"><Data ss:Type="String">%1 Fire Damage converted into Aether Damage</Data></Cell>
     <Cell ss:StyleID="s65"><Data ss:Type="String">%1 урона огнём конвертируется в урон эфиром</Data></Cell>
    </Row>
-   <Row ss:AutoFitHeight="0" ss:Height="15">
+   <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s67"><Data ss:Type="String">ui_eim_convert_frost_to_fire</Data></Cell>
     <Cell ss:StyleID="s68"><Data ss:Type="String">%1 Frost Damage converted into Fire Damage</Data></Cell>
     <Cell ss:StyleID="s65"><Data ss:Type="String">%1 урона холодом конвертируется в урон огнём</Data></Cell>
    </Row>
-   <Row ss:AutoFitHeight="0" ss:Height="15">
+   <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s67"><Data ss:Type="String">ui_eim_convert_frost_to_lightning</Data></Cell>
     <Cell ss:StyleID="s68"><Data ss:Type="String">%1 Frost Damage converted into Lightning Damage</Data></Cell>
     <Cell ss:StyleID="s65"><Data ss:Type="String">%1 урона холодом конвертируется в урон молнией</Data></Cell>
    </Row>
-   <Row ss:AutoFitHeight="0" ss:Height="15">
+   <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s67"><Data ss:Type="String">ui_eim_convert_frost_to_physical</Data></Cell>
     <Cell ss:StyleID="s68"><Data ss:Type="String">%1 Frost Damage converted into Physical Damage</Data></Cell>
     <Cell ss:StyleID="s65"><Data ss:Type="String">%1 урона холодом конвертируется в физический урон</Data></Cell>
    </Row>
-   <Row ss:AutoFitHeight="0" ss:Height="15">
+   <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s67"><Data ss:Type="String">ui_eim_convert_frost_to_rend</Data></Cell>
     <Cell ss:StyleID="s68"><Data ss:Type="String">%1 Frost Damage converted into Rend Damage</Data></Cell>
     <Cell ss:StyleID="s65"><Data ss:Type="String">%1 урона холодом конвертируется в урон рваными ранами</Data></Cell>
    </Row>
-   <Row ss:AutoFitHeight="0" ss:Height="15">
+   <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s67"><Data ss:Type="String">ui_eim_convert_frost_to_sacred</Data></Cell>
     <Cell ss:StyleID="s68"><Data ss:Type="String">%1 Frost Damage converted into Sacred Damage</Data></Cell>
     <Cell ss:StyleID="s65"><Data ss:Type="String">%1 урона холодом конвертируется в святой урон</Data></Cell>
    </Row>
-   <Row ss:AutoFitHeight="0" ss:Height="15">
+   <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s67"><Data ss:Type="String">ui_eim_convert_frost_to_shadow</Data></Cell>
     <Cell ss:StyleID="s68"><Data ss:Type="String">%1 Frost Damage converted into Shadow Damage</Data></Cell>
     <Cell ss:StyleID="s65"><Data ss:Type="String">%1 урона холодом конвертируется в урон тенью</Data></Cell>
    </Row>
-   <Row ss:AutoFitHeight="0" ss:Height="15">
+   <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s67"><Data ss:Type="String">ui_eim_convert_frost_to_toxic</Data></Cell>
     <Cell ss:StyleID="s68"><Data ss:Type="String">%1 Frost Damage converted into Toxic Damage</Data></Cell>
     <Cell ss:StyleID="s65"><Data ss:Type="String">%1 урона холодом конвертируется в урон ядом</Data></Cell>
    </Row>
-   <Row ss:AutoFitHeight="0" ss:Height="15">
+   <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s67"><Data ss:Type="String">ui_eim_convert_frost_to_umbra</Data></Cell>
     <Cell ss:StyleID="s68"><Data ss:Type="String">%1 Frost Damage converted into Aether Damage</Data></Cell>
     <Cell ss:StyleID="s65"><Data ss:Type="String">%1 урона холодом конвертируется в урон эфиром</Data></Cell>
    </Row>
-   <Row ss:AutoFitHeight="0" ss:Height="15">
+   <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s67"><Data ss:Type="String">ui_eim_convert_lightning_to_fire</Data></Cell>
     <Cell ss:StyleID="s68"><Data ss:Type="String">%1 Lightning Damage converted into Fire Damage</Data></Cell>
     <Cell ss:StyleID="s65"><Data ss:Type="String">%1 урона молнией конвертируется в урон огнём</Data></Cell>
    </Row>
-   <Row ss:AutoFitHeight="0" ss:Height="15">
+   <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s67"><Data ss:Type="String">ui_eim_convert_lightning_to_frost</Data></Cell>
     <Cell ss:StyleID="s68"><Data ss:Type="String">%1 Lightning Damage converted into Frost Damage</Data></Cell>
     <Cell ss:StyleID="s65"><Data ss:Type="String">%1 урона молнией конвертируется в урон холодом</Data></Cell>
    </Row>
-   <Row ss:AutoFitHeight="0" ss:Height="15">
+   <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s67"><Data ss:Type="String">ui_eim_convert_lightning_to_physical</Data></Cell>
     <Cell ss:StyleID="s68"><Data ss:Type="String">%1 Lightning Damage converted into Physical Damage</Data></Cell>
     <Cell ss:StyleID="s65"><Data ss:Type="String">%1 урона молнией конвертируется в физический урон</Data></Cell>
    </Row>
-   <Row ss:AutoFitHeight="0" ss:Height="15">
+   <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s67"><Data ss:Type="String">ui_eim_convert_lightning_to_rebd</Data></Cell>
     <Cell ss:StyleID="s68"><Data ss:Type="String">%1 Lightning Damage converted into Rend Damage</Data></Cell>
     <Cell ss:StyleID="s65"><Data ss:Type="String">%1 урона молнией конвертируется в урон рваными ранами</Data></Cell>
    </Row>
-   <Row ss:AutoFitHeight="0" ss:Height="15">
+   <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s67"><Data ss:Type="String">ui_eim_convert_lightning_to_sacred</Data></Cell>
     <Cell ss:StyleID="s68"><Data ss:Type="String">%1 Lightning Damage converted into Sacred Damage</Data></Cell>
     <Cell ss:StyleID="s65"><Data ss:Type="String">%1 урона молнией конвертируется в святой урон</Data></Cell>
    </Row>
-   <Row ss:AutoFitHeight="0" ss:Height="15">
+   <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s67"><Data ss:Type="String">ui_eim_convert_lightning_to_shadow</Data></Cell>
     <Cell ss:StyleID="s68"><Data ss:Type="String">%1 Lightning Damage converted into Shadow Damage</Data></Cell>
     <Cell ss:StyleID="s65"><Data ss:Type="String">%1 урона молнией конвертируется в урон тенью</Data></Cell>
    </Row>
-   <Row ss:AutoFitHeight="0" ss:Height="15">
+   <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s67"><Data ss:Type="String">ui_eim_convert_lightning_to_toxic</Data></Cell>
     <Cell ss:StyleID="s68"><Data ss:Type="String">%1 Lightning Damage converted into Toxic Damage</Data></Cell>
     <Cell ss:StyleID="s65"><Data ss:Type="String">%1 урона молнией конвертируется в урон ядом</Data></Cell>
    </Row>
-   <Row ss:AutoFitHeight="0" ss:Height="15">
+   <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s67"><Data ss:Type="String">ui_eim_convert_lightning_to_umbra</Data></Cell>
     <Cell ss:StyleID="s68"><Data ss:Type="String">%1 Lightning Damage converted into Aether Damage</Data></Cell>
     <Cell ss:StyleID="s65"><Data ss:Type="String">%1 урона молнией конвертируется в урон эфиром</Data></Cell>
    </Row>
-   <Row ss:AutoFitHeight="0" ss:Height="15">
+   <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s67"><Data ss:Type="String">ui_eim_convert_physcial_to_frost</Data></Cell>
     <Cell ss:StyleID="s68"><Data ss:Type="String">%1 Physical Damage converted into Frost Damage</Data></Cell>
     <Cell ss:StyleID="s65"><Data ss:Type="String">%1 физического урона конвертируется в урон холодом</Data></Cell>
    </Row>
-   <Row ss:AutoFitHeight="0" ss:Height="15">
+   <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s67"><Data ss:Type="String">ui_eim_convert_physical_to_fire</Data></Cell>
     <Cell ss:StyleID="s68"><Data ss:Type="String">%1 Physical Damage converted into Fire Damage</Data></Cell>
     <Cell ss:StyleID="s65"><Data ss:Type="String">%1 физического урона конвертируется в урон огнём</Data></Cell>
    </Row>
-   <Row ss:AutoFitHeight="0" ss:Height="15">
+   <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s67"><Data ss:Type="String">ui_eim_convert_physical_to_lightning</Data></Cell>
     <Cell ss:StyleID="s68"><Data ss:Type="String">%1 Physical Damage converted into Lightning Damage</Data></Cell>
     <Cell ss:StyleID="s65"><Data ss:Type="String">%1 физического урона конвертируется в урон молнией</Data></Cell>
    </Row>
-   <Row ss:AutoFitHeight="0" ss:Height="15">
+   <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s67"><Data ss:Type="String">ui_eim_convert_physical_to_rend</Data></Cell>
     <Cell ss:StyleID="s68"><Data ss:Type="String">%1 Physical Damage converted into Rend Damage</Data></Cell>
     <Cell ss:StyleID="s65"><Data ss:Type="String">%1 физического урона конвертируется в урон рваными ранами</Data></Cell>
    </Row>
-   <Row ss:AutoFitHeight="0" ss:Height="15">
+   <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s67"><Data ss:Type="String">ui_eim_convert_physical_to_sacred</Data></Cell>
     <Cell ss:StyleID="s68"><Data ss:Type="String">%1 Physical Damage converted into Sacred Damage</Data></Cell>
     <Cell ss:StyleID="s65"><Data ss:Type="String">%1 физического урона конвертируется в святой урон</Data></Cell>
    </Row>
-   <Row ss:AutoFitHeight="0" ss:Height="15">
+   <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s67"><Data ss:Type="String">ui_eim_convert_physical_to_shadow</Data></Cell>
     <Cell ss:StyleID="s68"><Data ss:Type="String">%1 Physical Damage converted into Shadow Damage</Data></Cell>
     <Cell ss:StyleID="s65"><Data ss:Type="String">%1 физического урона конвертируется в урон тенью</Data></Cell>
    </Row>
-   <Row ss:AutoFitHeight="0" ss:Height="15">
+   <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s67"><Data ss:Type="String">ui_eim_convert_physical_to_toxic</Data></Cell>
     <Cell ss:StyleID="s68"><Data ss:Type="String">%1 Physical Damage converted into Toxic Damage</Data></Cell>
     <Cell ss:StyleID="s65"><Data ss:Type="String">%1 физического урона конвертируется в урон ядом</Data></Cell>
    </Row>
-   <Row ss:AutoFitHeight="0" ss:Height="15">
+   <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s67"><Data ss:Type="String">ui_eim_convert_physical_to_umbra</Data></Cell>
     <Cell ss:StyleID="s68"><Data ss:Type="String">%1 Physical Damage converted into Aether Damage</Data></Cell>
     <Cell ss:StyleID="s65"><Data ss:Type="String">%1 физического урона конвертируется в урон эфиром</Data></Cell>
    </Row>
-   <Row ss:AutoFitHeight="0" ss:Height="15">
+   <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s67"><Data ss:Type="String">ui_eim_convert_rend_to_fire</Data></Cell>
     <Cell ss:StyleID="s68"><Data ss:Type="String">%1 Rend Damage converted into Fire Damage</Data></Cell>
     <Cell ss:StyleID="s65"><Data ss:Type="String">%1 урона рваными ранами конвертируется в урон огнём</Data></Cell>
    </Row>
-   <Row ss:AutoFitHeight="0" ss:Height="15">
+   <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s67"><Data ss:Type="String">ui_eim_convert_rend_to_frost</Data></Cell>
     <Cell ss:StyleID="s68"><Data ss:Type="String">%1 Rend Damage converted into Frost Damage</Data></Cell>
     <Cell ss:StyleID="s65"><Data ss:Type="String">%1 урона рваными ранами конвертируется в урон холодом</Data></Cell>
    </Row>
-   <Row ss:AutoFitHeight="0" ss:Height="15">
+   <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s67"><Data ss:Type="String">ui_eim_convert_rend_to_lightning</Data></Cell>
     <Cell ss:StyleID="s68"><Data ss:Type="String">%1 Rend Damage converted into Lightning Damage</Data></Cell>
     <Cell ss:StyleID="s65"><Data ss:Type="String">%1 урона рваными ранами конвертируется в урон молнией</Data></Cell>
    </Row>
-   <Row ss:AutoFitHeight="0" ss:Height="15">
+   <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s67"><Data ss:Type="String">ui_eim_convert_rend_to_physical</Data></Cell>
     <Cell ss:StyleID="s68"><Data ss:Type="String">%1 Rend Damage converted into Physical Damage</Data></Cell>
     <Cell ss:StyleID="s65"><Data ss:Type="String">%1 урона рваными ранами конвертируется в физический урон</Data></Cell>
    </Row>
-   <Row ss:AutoFitHeight="0" ss:Height="15">
+   <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s67"><Data ss:Type="String">ui_eim_convert_rend_to_sacred</Data></Cell>
     <Cell ss:StyleID="s68"><Data ss:Type="String">%1 Rend Damage converted into Sacred Damage</Data></Cell>
     <Cell ss:StyleID="s65"><Data ss:Type="String">%1 урона рваными ранами конвертируется в святой урон</Data></Cell>
    </Row>
-   <Row ss:AutoFitHeight="0" ss:Height="15">
+   <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s67"><Data ss:Type="String">ui_eim_convert_rend_to_shadow</Data></Cell>
     <Cell ss:StyleID="s68"><Data ss:Type="String">%1 Rend Damage converted into Shadow Damage</Data></Cell>
     <Cell ss:StyleID="s65"><Data ss:Type="String">%1 урона рваными ранами конвертируется в урон тенью</Data></Cell>
    </Row>
-   <Row ss:AutoFitHeight="0" ss:Height="15">
+   <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s67"><Data ss:Type="String">ui_eim_convert_rend_to_toxic</Data></Cell>
     <Cell ss:StyleID="s68"><Data ss:Type="String">%1 Rend Damage converted into Toxic Damage</Data></Cell>
     <Cell ss:StyleID="s65"><Data ss:Type="String">%1 урона рваными ранами конвертируется в урон ядом</Data></Cell>
    </Row>
-   <Row ss:AutoFitHeight="0" ss:Height="15">
+   <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s67"><Data ss:Type="String">ui_eim_convert_rend_to_umbra</Data></Cell>
     <Cell ss:StyleID="s68"><Data ss:Type="String">%1 Rend Damage converted into Aether Damage</Data></Cell>
     <Cell ss:StyleID="s65"><Data ss:Type="String">%1 урона рваными ранами конвертируется в урон эфиром</Data></Cell>
    </Row>
-   <Row ss:AutoFitHeight="0" ss:Height="15">
+   <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s67"><Data ss:Type="String">ui_eim_convert_sacred_to_fire</Data></Cell>
     <Cell ss:StyleID="s68"><Data ss:Type="String">%1 Sacred Damage converted into Fire Damage</Data></Cell>
     <Cell ss:StyleID="s65"><Data ss:Type="String">%1 святого урона конвертируется в урон огнём</Data></Cell>
    </Row>
-   <Row ss:AutoFitHeight="0" ss:Height="15">
+   <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s67"><Data ss:Type="String">ui_eim_convert_sacred_to_frost</Data></Cell>
     <Cell ss:StyleID="s68"><Data ss:Type="String">%1 Sacred Damage converted into Frost Damage</Data></Cell>
     <Cell ss:StyleID="s65"><Data ss:Type="String">%1 святого урона конвертируется в урон холодом</Data></Cell>
    </Row>
-   <Row ss:AutoFitHeight="0" ss:Height="15">
+   <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s67"><Data ss:Type="String">ui_eim_convert_sacred_to_lightning</Data></Cell>
     <Cell ss:StyleID="s68"><Data ss:Type="String">%1 Sacred Damage converted into Lightning Damage</Data></Cell>
     <Cell ss:StyleID="s65"><Data ss:Type="String">%1 святого урона конвертируется в урон молнией</Data></Cell>
    </Row>
-   <Row ss:AutoFitHeight="0" ss:Height="15">
+   <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s67"><Data ss:Type="String">ui_eim_convert_sacred_to_physical</Data></Cell>
     <Cell ss:StyleID="s68"><Data ss:Type="String">%1 Sacred Damage converted into Physical Damage</Data></Cell>
     <Cell ss:StyleID="s65"><Data ss:Type="String">%1 святого урона конвертируется в физический урон</Data></Cell>
    </Row>
-   <Row ss:AutoFitHeight="0" ss:Height="15">
+   <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s67"><Data ss:Type="String">ui_eim_convert_sacred_to_rend</Data></Cell>
     <Cell ss:StyleID="s68"><Data ss:Type="String">%1 Sacred Damage converted into Rend Damage</Data></Cell>
     <Cell ss:StyleID="s65"><Data ss:Type="String">%1 святого урона конвертируется в урон рваными ранами</Data></Cell>
    </Row>
-   <Row ss:AutoFitHeight="0" ss:Height="15">
+   <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s67"><Data ss:Type="String">ui_eim_convert_sacred_to_shadow</Data></Cell>
     <Cell ss:StyleID="s68"><Data ss:Type="String">%1 Sacred Damage converted into Shadow Damage</Data></Cell>
     <Cell ss:StyleID="s65"><Data ss:Type="String">%1 святого урона конвертируется в урон тенью</Data></Cell>
    </Row>
-   <Row ss:AutoFitHeight="0" ss:Height="15">
+   <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s67"><Data ss:Type="String">ui_eim_convert_sacred_to_toxic</Data></Cell>
     <Cell ss:StyleID="s68"><Data ss:Type="String">%1 Sacred Damage converted into Toxic Damage</Data></Cell>
     <Cell ss:StyleID="s65"><Data ss:Type="String">%1 святого урона конвертируется в урон ядом</Data></Cell>
    </Row>
-   <Row ss:AutoFitHeight="0" ss:Height="15">
+   <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s67"><Data ss:Type="String">ui_eim_convert_sacred_to_umbra</Data></Cell>
     <Cell ss:StyleID="s68"><Data ss:Type="String">%1 Sacred Damage converted into Aether Damage</Data></Cell>
     <Cell ss:StyleID="s65"><Data ss:Type="String">%1 святого урона конвертируется в урон эфиром</Data></Cell>
    </Row>
-   <Row ss:AutoFitHeight="0" ss:Height="15">
+   <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s67"><Data ss:Type="String">ui_eim_convert_shadow_to_fire</Data></Cell>
     <Cell ss:StyleID="s68"><Data ss:Type="String">%1 Shadow Damage converted into Fire Damage</Data></Cell>
     <Cell ss:StyleID="s65"><Data ss:Type="String">%1 урона тенью конвертируется в урон огнём</Data></Cell>
    </Row>
-   <Row ss:AutoFitHeight="0" ss:Height="15">
+   <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s67"><Data ss:Type="String">ui_eim_convert_shadow_to_frost</Data></Cell>
     <Cell ss:StyleID="s68"><Data ss:Type="String">%1 Shadow Damage converted into Frost Damage</Data></Cell>
     <Cell ss:StyleID="s65"><Data ss:Type="String">%1 урона тенью конвертируется в урон холодом</Data></Cell>
    </Row>
-   <Row ss:AutoFitHeight="0" ss:Height="15">
+   <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s67"><Data ss:Type="String">ui_eim_convert_shadow_to_lightning</Data></Cell>
     <Cell ss:StyleID="s68"><Data ss:Type="String">%1 Shadow Damage converted into Lightning Damage</Data></Cell>
     <Cell ss:StyleID="s65"><Data ss:Type="String">%1 урона тенью конвертируется в урон молнией</Data></Cell>
    </Row>
-   <Row ss:AutoFitHeight="0" ss:Height="15">
+   <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s67"><Data ss:Type="String">ui_eim_convert_shadow_to_physical</Data></Cell>
     <Cell ss:StyleID="s68"><Data ss:Type="String">%1 Shadow Damage converted into Physical Damage</Data></Cell>
     <Cell ss:StyleID="s65"><Data ss:Type="String">%1 урона тенью конвертируется в физический урон</Data></Cell>
    </Row>
-   <Row ss:AutoFitHeight="0" ss:Height="15">
+   <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s67"><Data ss:Type="String">ui_eim_convert_shadow_to_rend</Data></Cell>
     <Cell ss:StyleID="s68"><Data ss:Type="String">%1 Shadow Damage converted into Rend Damage</Data></Cell>
     <Cell ss:StyleID="s65"><Data ss:Type="String">%1 урона тенью конвертируется в урон рваными ранами</Data></Cell>
    </Row>
-   <Row ss:AutoFitHeight="0" ss:Height="15">
+   <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s67"><Data ss:Type="String">ui_eim_convert_shadow_to_sacred</Data></Cell>
     <Cell ss:StyleID="s68"><Data ss:Type="String">%1 Shadow Damage converted into Sacred Damage</Data></Cell>
     <Cell ss:StyleID="s65"><Data ss:Type="String">%1 урона тенью конвертируется в святой урон</Data></Cell>
    </Row>
-   <Row ss:AutoFitHeight="0" ss:Height="15">
+   <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s67"><Data ss:Type="String">ui_eim_convert_shadow_to_toxic</Data></Cell>
     <Cell ss:StyleID="s68"><Data ss:Type="String">%1 Shadow Damage converted into Toxic Damage</Data></Cell>
     <Cell ss:StyleID="s65"><Data ss:Type="String">%1 урона тенью конвертируется в урон ядом</Data></Cell>
    </Row>
-   <Row ss:AutoFitHeight="0" ss:Height="15">
+   <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s67"><Data ss:Type="String">ui_eim_convert_shadow_to_umbra</Data></Cell>
     <Cell ss:StyleID="s68"><Data ss:Type="String">%1 Shadow Damage converted into Aether Damage</Data></Cell>
     <Cell ss:StyleID="s65"><Data ss:Type="String">%1 урона тенью конвертируется в урон эфиром</Data></Cell>
    </Row>
-   <Row ss:AutoFitHeight="0" ss:Height="15">
+   <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s67"><Data ss:Type="String">ui_eim_convert_toxic_to_fire</Data></Cell>
     <Cell ss:StyleID="s68"><Data ss:Type="String">%1 Toxic Damage converted into Fire Damage</Data></Cell>
     <Cell ss:StyleID="s65"><Data ss:Type="String">%1 урона ядом конвертируется в урон огнём</Data></Cell>
    </Row>
-   <Row ss:AutoFitHeight="0" ss:Height="15">
+   <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s67"><Data ss:Type="String">ui_eim_convert_toxic_to_frost</Data></Cell>
     <Cell ss:StyleID="s68"><Data ss:Type="String">%1 Toxic Damage converted into Frost Damage</Data></Cell>
     <Cell ss:StyleID="s65"><Data ss:Type="String">%1 урона ядом конвертируется в урон холодом</Data></Cell>
    </Row>
-   <Row ss:AutoFitHeight="0" ss:Height="15">
+   <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s67"><Data ss:Type="String">ui_eim_convert_toxic_to_lightning</Data></Cell>
     <Cell ss:StyleID="s68"><Data ss:Type="String">%1 Toxic Damage converted into Lightning Damage</Data></Cell>
     <Cell ss:StyleID="s65"><Data ss:Type="String">%1 урона ядом конвертируется в урон молнией</Data></Cell>
    </Row>
-   <Row ss:AutoFitHeight="0" ss:Height="15">
+   <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s67"><Data ss:Type="String">ui_eim_convert_toxic_to_physical</Data></Cell>
     <Cell ss:StyleID="s68"><Data ss:Type="String">%1 Toxic Damage converted into Physical Damage</Data></Cell>
     <Cell ss:StyleID="s65"><Data ss:Type="String">%1 урона ядом конвертируется в физический урон</Data></Cell>
    </Row>
-   <Row ss:AutoFitHeight="0" ss:Height="15">
+   <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s67"><Data ss:Type="String">ui_eim_convert_toxic_to_rend</Data></Cell>
     <Cell ss:StyleID="s68"><Data ss:Type="String">%1 Toxic Damage converted into Rend Damage</Data></Cell>
     <Cell ss:StyleID="s65"><Data ss:Type="String">%1 урона ядом конвертируется в урон рваными ранами</Data></Cell>
    </Row>
-   <Row ss:AutoFitHeight="0" ss:Height="15">
+   <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s67"><Data ss:Type="String">ui_eim_convert_toxic_to_sacred</Data></Cell>
     <Cell ss:StyleID="s68"><Data ss:Type="String">%1 Toxic Damage converted into Sacred Damage</Data></Cell>
     <Cell ss:StyleID="s65"><Data ss:Type="String">%1 урона ядом конвертируется в святой урон</Data></Cell>
    </Row>
-   <Row ss:AutoFitHeight="0" ss:Height="15">
+   <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s67"><Data ss:Type="String">ui_eim_convert_toxic_to_shadow</Data></Cell>
     <Cell ss:StyleID="s68"><Data ss:Type="String">%1 Toxic Damage converted into Shadow Damage</Data></Cell>
     <Cell ss:StyleID="s65"><Data ss:Type="String">%1 урона ядом конвертируется в урон тенью</Data></Cell>
    </Row>
-   <Row ss:AutoFitHeight="0" ss:Height="15">
+   <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s67"><Data ss:Type="String">ui_eim_convert_toxic_to_umbra</Data></Cell>
     <Cell ss:StyleID="s68"><Data ss:Type="String">%1 Toxic Damage converted into Aether Damage</Data></Cell>
     <Cell ss:StyleID="s65"><Data ss:Type="String">%1 урона ядом конвертируется в урон эфиром</Data></Cell>
@@ -1032,7 +1031,7 @@
     <Cell ss:StyleID="s68"><Data ss:Type="String">%1 Curse Chance Score when dealing Shadow Damage</Data></Cell>
     <Cell ss:StyleID="s65"><Data ss:Type="String">%1 к рейтингу проклятия уроном тенью</Data></Cell>
    </Row>
-   <Row ss:AutoFitHeight="0" ss:Height="15">
+   <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s67"><Data ss:Type="String">ui_eim_curse_on_dash</Data></Cell>
     <Cell ss:StyleID="s68"><Data ss:Type="String">Dash Attacks inflict the Curse Ailments</Data></Cell>
     <Cell ss:StyleID="s65"><Data ss:Type="String">Атака рывком проклинает цель</Data></Cell>
@@ -1048,9 +1047,14 @@
     <Cell ss:StyleID="s65"><Data ss:Type="String">%1 урона</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s67"><Data ss:Type="String">ui_eim_damage_percent_against_burning</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="String">%1 Damage against Burning Enemies</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">%1 урона по горящим врагам</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s67"><Data ss:Type="String">ui_eim_damage_percent_against_frozen</Data></Cell>
-    <Cell ss:StyleID="s68"><Data ss:Type="String">%1 Additional Damage against Frozen Targets</Data></Cell>
-    <Cell ss:StyleID="s65"><Data ss:Type="String">%1 дополнительного урона по замороженной цели</Data></Cell>
+    <Cell ss:StyleID="s68"><Data ss:Type="String">%1 Damage against Frozen Enemies</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">%1 урона по замороженным врагам</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s67"><Data ss:Type="String">ui_eim_damage_percent_any_weapon</Data></Cell>
@@ -1067,17 +1071,17 @@
     <Cell ss:StyleID="s68"><Data ss:Type="String">%1 additional Damage dealt as Frost Damage</Data></Cell>
     <Cell ss:StyleID="s65"><Data ss:Type="String">%1 урона, как урон холодом</Data></Cell>
    </Row>
-   <Row ss:AutoFitHeight="0" ss:Height="15">
+   <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s67"><Data ss:Type="String">ui_eim_damage_percent_as_lightning</Data></Cell>
     <Cell ss:StyleID="s68"><Data ss:Type="String">%1 additional Damage dealt as Lightning Damage</Data></Cell>
     <Cell ss:StyleID="s65"><Data ss:Type="String">%1 урона, как урон молнией</Data></Cell>
    </Row>
-   <Row ss:AutoFitHeight="0" ss:Height="15">
+   <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s67"><Data ss:Type="String">ui_eim_damage_percent_as_physical</Data></Cell>
     <Cell ss:StyleID="s68"><Data ss:Type="String">%1 additional Damage dealt as Physical Damage</Data></Cell>
     <Cell ss:StyleID="s65"><Data ss:Type="String">%1 урона, как физический урон</Data></Cell>
    </Row>
-   <Row ss:AutoFitHeight="0" ss:Height="15">
+   <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s67"><Data ss:Type="String">ui_eim_damage_percent_as_rend</Data></Cell>
     <Cell ss:StyleID="s68"><Data ss:Type="String">%1 additional Damage dealt as Rend Damage</Data></Cell>
     <Cell ss:StyleID="s65"><Data ss:Type="String">%1 урона, как урон рваными ранами</Data></Cell>
@@ -1162,17 +1166,17 @@
     <Cell ss:StyleID="s68"><Data ss:Type="String">%1 Damage per missing Stamina Point</Data></Cell>
     <Cell ss:StyleID="s65"><Data ss:Type="String">%1 урона за каждое потраченное очко выносливости</Data></Cell>
    </Row>
-   <Row ss:AutoFitHeight="0" ss:Height="15">
+   <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s67"><Data ss:Type="String">ui_eim_damage_percent_per_rage_point</Data></Cell>
     <Cell ss:StyleID="s68"><Data ss:Type="String">%1 Damage per 100 unconsumed Rage Points</Data></Cell>
     <Cell ss:StyleID="s65"><Data ss:Type="String">%1 урона за каждые 100 нерасходованных очков ярости</Data></Cell>
    </Row>
-   <Row ss:AutoFitHeight="0" ss:Height="15">
+   <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s67"><Data ss:Type="String">ui_eim_damage_percent_projectiles</Data></Cell>
     <Cell ss:StyleID="s68"><Data ss:Type="String">%1 All Projectiles Damage</Data></Cell>
     <Cell ss:StyleID="s65"><Data ss:Type="String">%1 урона снарядами</Data></Cell>
    </Row>
-   <Row ss:AutoFitHeight="0" ss:Height="15">
+   <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s67"><Data ss:Type="String">ui_eim_damage_percent_ranged_weapon</Data></Cell>
     <Cell ss:StyleID="s68"><Data ss:Type="String">%1 Ranged Weapon Damage</Data></Cell>
     <Cell ss:StyleID="s65"><Data ss:Type="String">%1 урона стрелковым оружием</Data></Cell>
@@ -1874,7 +1878,7 @@
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s67"><Data ss:Type="String">ui_eim_poisonchance_on_toxic_damage_score_percent</Data></Cell>
-    <Cell ss:StyleID="s68"><Data ss:Type="String">%1 Poison Chance Score on daling Toxic Damage</Data></Cell>
+    <Cell ss:StyleID="s68"><Data ss:Type="String">%1 Poison Chance Score on dealing Toxic Damage</Data></Cell>
     <Cell ss:StyleID="s65"><Data ss:Type="String">%1 к рейтингу отравления уроном ядом</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
@@ -3030,7 +3034,7 @@
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s76"><Data ss:Type="String">ui_eim_poisonous_aura_slow</Data></Cell>
     <Cell ss:StyleID="s66"><Data ss:Type="String">Enemies are Slowed by %1 for %2s when they are within the radius</Data></Cell>
-    <Cell ss:StyleID="s65"><Data ss:Type="String">Враги получают замедление на %1 на %2s когда находятся в радиусе действия</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Враги получают замедление на %1 на %2 сек когда находятся в радиусе действия</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s76"><Data ss:Type="String">ui_eim_cursed_enemies_take_additional_occult_damage</Data></Cell>
@@ -3262,12 +3266,7 @@
     <Cell ss:StyleID="s66"><Data ss:Type="String">If your Hits have Freeze Chance, %1 of your Freeze Chance is added to your Critical Chance. These Hits do not inflcit Freeze anymore.</Data></Cell>
     <Cell ss:StyleID="s65"><Data ss:Type="String">Если у ваших атак есть шанс заморозить, то %1 от шанса заморозки прибавляется к шансу критического урона. Такие атаки не замораживают врагов.</Data></Cell>
    </Row>
-   <Row ss:AutoFitHeight="0" ss:Height="15.75">
-    <Cell ss:StyleID="s73"><Data ss:Type="String">ui_eim_damage_percent_against_burning</Data></Cell>
-    <Cell ss:StyleID="s66"><Data ss:Type="String">%1 Damage against Burning Enemies</Data></Cell>
-    <Cell ss:StyleID="s65"><Data ss:Type="String">%1 урона по горящим врагам</Data></Cell>
-   </Row>
-   <Row ss:AutoFitHeight="0" ss:Height="15">
+   <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s65"><Data ss:Type="String">ui_eim_damage_taken_percent_from_burning_enemies</Data></Cell>
     <Cell ss:StyleID="s66"><Data ss:Type="String">%1 Damage from Burning Enemies</Data></Cell>
     <Cell ss:StyleID="s65"><Data ss:Type="String">%1 урона от горящих врагов</Data></Cell>
@@ -3302,12 +3301,12 @@
     <Cell ss:StyleID="s66"><Data ss:Type="String">Using a Movement Skill cleanses you of Crowd Control effects. Has a Cooldown of %1s</Data></Cell>
     <Cell ss:StyleID="s65"><Data ss:Type="String">Использование умений Перемещения снимает эффекты контроля. Перезарядка %1 сек</Data></Cell>
    </Row>
-   <Row ss:AutoFitHeight="0" ss:Height="15">
+   <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s65"><Data ss:Type="String">ui_eim_forceshield_leech_percent_lightning</Data></Cell>
     <Cell ss:StyleID="s66"><Data ss:Type="String">%1 Lightning Damage Leeched as Force Shield</Data></Cell>
     <Cell ss:StyleID="s65"><Data ss:Type="String">%1 урона молнией пополняет силовой щит</Data></Cell>
    </Row>
-   <Row ss:AutoFitHeight="0" ss:Height="15">
+   <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s65"><Data ss:Type="String">ui_elemental_rotation_buff</Data></Cell>
     <Cell ss:StyleID="s66"><Data ss:Type="String">Using an Spell that deals an Elemental Damage Type applies a Buff to the other two Elemental Damage Types</Data></Cell>
     <Cell ss:StyleID="s65"><Data ss:Type="String">Использование стихийных заклинаний предоставляет усиление для двух оставшихся стихийных типов урона</Data></Cell>
@@ -3497,6 +3496,7 @@
     <VerticalResolution>600</VerticalResolution>
    </Print>
    <Selected/>
+   <LeftColumnVisible>1</LeftColumnVisible>
    <Panes>
     <Pane>
      <Number>3</Number>
