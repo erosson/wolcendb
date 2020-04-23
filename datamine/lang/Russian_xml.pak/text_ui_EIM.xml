@@ -9,8 +9,8 @@
   <Title>Untitled Spreadsheet</Title>
   <Author>Unknown Creator</Author>
   <LastAuthor>Cthylla</LastAuthor>
-  <Created>2020-04-01T05:39:00Z</Created>
-  <LastSaved>2020-04-01T05:39:00Z</LastSaved>
+  <Created>2020-04-14T10:17:31Z</Created>
+  <LastSaved>2020-04-14T10:17:31Z</LastSaved>
   <Company>Microsoft Corporation</Company>
   <Version>16.00</Version>
  </DocumentProperties>
@@ -22,6 +22,7 @@
   <WindowWidth>17745</WindowWidth>
   <WindowTopX>32767</WindowTopX>
   <WindowTopY>32767</WindowTopY>
+  <RefModeR1C1/>
   <ProtectStructure>False</ProtectStructure>
   <ProtectWindows>False</ProtectWindows>
  </ExcelWorkbook>
@@ -174,7 +175,7 @@
    <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s67"><Data ss:Type="String">ui_eim_additional_stamina_pts</Data></Cell>
     <Cell ss:StyleID="s68"><Data ss:Type="String">%1 Stamina Point</Data></Cell>
-    <Cell ss:StyleID="s65"><Data ss:Type="String">%1 очко выносливости</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">%1 очко(а) выносливости</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s67"><Data ss:Type="String">ui_eim_agility_pts</Data></Cell>
@@ -274,12 +275,12 @@
    <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s67"><Data ss:Type="String">ui_eim_bleed_on_hit_percent</Data></Cell>
     <Cell ss:StyleID="s68"><Data ss:Type="String">%1 Bleed Chance Score when dealing all Damage Types</Data></Cell>
-    <Cell ss:StyleID="s65"><Data ss:Type="String">%1 к рейтингу кровотечения любым типом урона</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">%1 к рейтингу шанса наложения кровотечения любым типом урона</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s67"><Data ss:Type="String">ui_eim_bleedchance_on_rend_damage_score_percent</Data></Cell>
     <Cell ss:StyleID="s68"><Data ss:Type="String">%1 Bleed Chance Score when dealing Rend Damage</Data></Cell>
-    <Cell ss:StyleID="s65"><Data ss:Type="String">%1 к рейтингу кровотечения уроном рваными ранами</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">%1 к рейтингу шанса кровотечения уроном рваными ранами</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s67"><Data ss:Type="String">ui_eim_blockchance_ifcanblock_flat</Data></Cell>
@@ -299,17 +300,17 @@
    <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s67"><Data ss:Type="String">ui_eim_burn_on_hit_percent</Data></Cell>
     <Cell ss:StyleID="s68"><Data ss:Type="String">%1 Burn Chance Score when dealing all Damage Types</Data></Cell>
-    <Cell ss:StyleID="s65"><Data ss:Type="String">%1 к рейтингу поджога любым типом урона</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">%1 к рейтингу шанса поджога любым типом урона</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s67"><Data ss:Type="String">ui_eim_burnchance_on_fire_damage_score_flat</Data></Cell>
     <Cell ss:StyleID="s68"><Data ss:Type="String">%1 Burn Chance Score when dealing Fire Damage</Data></Cell>
-    <Cell ss:StyleID="s65"><Data ss:Type="String">%1 к рейтингу поджога уроном огнём</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">%1 к рейтингу шанса поджога уроном огнём</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s67"><Data ss:Type="String">ui_eim_burnchance_on_fire_damage_score_percent</Data></Cell>
     <Cell ss:StyleID="s68"><Data ss:Type="String">%1 Burn Chance Score when dealing Fire Damage</Data></Cell>
-    <Cell ss:StyleID="s65"><Data ss:Type="String">%1 к рейтингу поджога уроном огнём</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">%1 к рейтингу шанса поджога уроном огнём</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s73"><Data ss:Type="String">ui_eim_can_cast_arrowsrain</Data></Cell>
@@ -899,7 +900,7 @@
    <Row ss:AutoFitHeight="0" ss:Height="20.0625">
     <Cell ss:StyleID="s67"><Data ss:Type="String">ui_eim_criticalchance_attackskill_score_percent</Data></Cell>
     <Cell ss:StyleID="s68"><Data ss:Type="String">%1 Attack Critical Chance Score</Data></Cell>
-    <Cell ss:StyleID="s65"><Data ss:Type="String">%1 к рейтингу критического урона атаками</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">%1 к рейтингу шанса нанесения критического урона атаками</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="20.0625">
     <Cell ss:StyleID="s67"><Data ss:Type="String">ui_eim_criticalchance_attackskill_final_percent</Data></Cell>
@@ -909,7 +910,7 @@
    <Row ss:AutoFitHeight="0" ss:Height="20.0625">
     <Cell ss:StyleID="s67"><Data ss:Type="String">ui_eim_criticalchance_attackskill_score</Data></Cell>
     <Cell ss:StyleID="s68"><Data ss:Type="String">%1 Attack Critical Chance Score</Data></Cell>
-    <Cell ss:StyleID="s65"><Data ss:Type="String">%1 к рейтингу критического урона атаками</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">%1 к рейтингу шанса нанесения критического урона атаками</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="20.0625">
     <Cell ss:StyleID="s67"><Data ss:Type="String">ui_eim_criticalchance_final_percent</Data></Cell>
@@ -924,12 +925,12 @@
    <Row ss:AutoFitHeight="0" ss:Height="20.0625">
     <Cell ss:StyleID="s67"><Data ss:Type="String">ui_eim_criticalchance_magicspell_score</Data></Cell>
     <Cell ss:StyleID="s68"><Data ss:Type="String">%1 Spell Critical Chance Score</Data></Cell>
-    <Cell ss:StyleID="s65"><Data ss:Type="String">%1 к рейтингу критического урона заклинаниями</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">%1 к рейтингу шанса нанесения критического урона заклинаниями</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="20.0625">
     <Cell ss:StyleID="s67"><Data ss:Type="String">ui_eim_criticalchance_magicspell_score_percent</Data></Cell>
     <Cell ss:StyleID="s68"><Data ss:Type="String">%1 Spell Critical Chance Score</Data></Cell>
-    <Cell ss:StyleID="s65"><Data ss:Type="String">%1 к рейтингу критического урона заклинаниями</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">%1 к рейтингу шанса нанесения критического урона заклинаниями</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="20.0625">
     <Cell ss:StyleID="s67"><Data ss:Type="String">ui_eim_criticalchance_on_ailment_final_percent</Data></Cell>
@@ -939,12 +940,12 @@
    <Row ss:AutoFitHeight="0" ss:Height="20.0625">
     <Cell ss:StyleID="s67"><Data ss:Type="String">ui_eim_criticalchance_on_ailment_score</Data></Cell>
     <Cell ss:StyleID="s68"><Data ss:Type="String">%1 Ailment Critical Chance Score</Data></Cell>
-    <Cell ss:StyleID="s65"><Data ss:Type="String">%1 к рейтингу критического урона негативными эффектами</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">%1 к рейтингу шанса нанесения критического урона негативными эффектами</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="20.0625">
     <Cell ss:StyleID="s67"><Data ss:Type="String">ui_eim_criticalchance_on_ailment_score_percent</Data></Cell>
     <Cell ss:StyleID="s68"><Data ss:Type="String">%1 Ailment Critical Chance Score</Data></Cell>
-    <Cell ss:StyleID="s65"><Data ss:Type="String">%1 к рейтингу критического урона негативными эффектами</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">%1 к рейтингу шанса нанесения критического урона негативными эффектами</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="20.0625">
     <Cell ss:StyleID="s67"><Data ss:Type="String">ui_eim_criticalchance_projectiles_final_percent</Data></Cell>
@@ -954,22 +955,22 @@
    <Row ss:AutoFitHeight="0" ss:Height="20.0625">
     <Cell ss:StyleID="s67"><Data ss:Type="String">ui_eim_criticalchance_projectiles_score</Data></Cell>
     <Cell ss:StyleID="s68"><Data ss:Type="String">%1 All Projectiles Critical Chance Score</Data></Cell>
-    <Cell ss:StyleID="s65"><Data ss:Type="String">%1 к рейтингу критического урона снарядами</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">%1 к рейтингу шанса нанесения критического урона снарядами</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="20.0625">
     <Cell ss:StyleID="s67"><Data ss:Type="String">ui_eim_criticalchance_projectiles_score_percent</Data></Cell>
     <Cell ss:StyleID="s68"><Data ss:Type="String">%1 All Projectiles Critical Chance Score</Data></Cell>
-    <Cell ss:StyleID="s65"><Data ss:Type="String">%1 к рейтингу критического урона снарядами</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">%1 к рейтингу шанса нанесения критического урона снарядами</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="20.0625">
     <Cell ss:StyleID="s67"><Data ss:Type="String">ui_eim_criticalchance_score</Data></Cell>
     <Cell ss:StyleID="s68"><Data ss:Type="String">%1 Critical Chance Score</Data></Cell>
-    <Cell ss:StyleID="s65"><Data ss:Type="String">%1 к рейтингу критического урона</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">%1 к рейтингу шанса нанесения критического урона</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="20.0625">
     <Cell ss:StyleID="s67"><Data ss:Type="String">ui_eim_criticalchance_score_percent</Data></Cell>
     <Cell ss:StyleID="s68"><Data ss:Type="String">%1 Critical Chance Score</Data></Cell>
-    <Cell ss:StyleID="s65"><Data ss:Type="String">%1 к рейтингу критического урона</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">%1 к рейтингу шанса нанесения критического урона</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="20.0625">
     <Cell ss:StyleID="s67"><Data ss:Type="String">ui_eim_criticaldamage_attackskill_pts</Data></Cell>
@@ -1009,12 +1010,12 @@
    <Row ss:AutoFitHeight="0" ss:Height="20.0625">
     <Cell ss:StyleID="s67"><Data ss:Type="String">ui_eim_criticalscore_percent_lightning_damage</Data></Cell>
     <Cell ss:StyleID="s68"><Data ss:Type="String">%1 Critical Chance Score when dealing Lightning Damage</Data></Cell>
-    <Cell ss:StyleID="s65"><Data ss:Type="String">%1 к рейтингу критического урона уроном молнией</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">%1 к рейтингу шанса нанесения критического урона уроном молнией</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="20.0625">
     <Cell ss:StyleID="s67"><Data ss:Type="String">ui_eim_criticalscore_percent_spell_when_above_ceil</Data></Cell>
     <Cell ss:StyleID="s68"><Data ss:Type="String">%1 Spells Critical Chance Score while willpower is above %2</Data></Cell>
-    <Cell ss:StyleID="s65"><Data ss:Type="String">%1 к рейтингу критического урона заклинаниями, когда энергия выше %2</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">%1 к рейтингу шанса нанесения критического урона заклинаниями, когда энергия выше %2</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="20.0625">
     <Cell ss:StyleID="s67"><Data ss:Type="String">ui_eim_crowd_control_duration_percent</Data></Cell>
@@ -1029,7 +1030,7 @@
    <Row ss:AutoFitHeight="0" ss:Height="20.0625">
     <Cell ss:StyleID="s67"><Data ss:Type="String">ui_eim_curesechance_on_shadow_damage_score_percent</Data></Cell>
     <Cell ss:StyleID="s68"><Data ss:Type="String">%1 Curse Chance Score when dealing Shadow Damage</Data></Cell>
-    <Cell ss:StyleID="s65"><Data ss:Type="String">%1 к рейтингу проклятия уроном тенью</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">%1 к рейтингу шанса наложения проклятия уроном тенью</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s67"><Data ss:Type="String">ui_eim_curse_on_dash</Data></Cell>
@@ -1239,22 +1240,22 @@
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s67"><Data ss:Type="String">ui_eim_dodgechance_on_being_hit</Data></Cell>
     <Cell ss:StyleID="s68"><Data ss:Type="String">%1 Passive Dodge Chance Score after being Hit</Data></Cell>
-    <Cell ss:StyleID="s65"><Data ss:Type="String">%1 к рейтингу уклонения после получения удара</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">%1 к рейтингу шанса уклонения после получения удара</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s67"><Data ss:Type="String">ui_eim_dodgechance_score</Data></Cell>
     <Cell ss:StyleID="s68"><Data ss:Type="String">%1 Passive Dodge Chance Score</Data></Cell>
-    <Cell ss:StyleID="s65"><Data ss:Type="String">%1 к рейтингу уклонения</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">%1 к рейтингу шанса уклонения</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s67"><Data ss:Type="String">ui_eim_dodgechance_score_percent</Data></Cell>
     <Cell ss:StyleID="s68"><Data ss:Type="String">%1 Passive Dodge Chance Score</Data></Cell>
-    <Cell ss:StyleID="s65"><Data ss:Type="String">%1 к рейтингу уклонения</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">%1 к рейтингу шанса уклонения</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s67"><Data ss:Type="String">ui_eim_dodgechance_score_to_allres_score</Data></Cell>
     <Cell ss:StyleID="s68"><Data ss:Type="String">%1 of Passive Dodge Chance Score is converted to All Resistances Score</Data></Cell>
-    <Cell ss:StyleID="s65"><Data ss:Type="String">%1 рейтинга уклонения преобразуется в рейтинг всех сопротивлений</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">%1 рейтинга шанса уклонения преобразуется в рейтинг всех сопротивлений</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s67"><Data ss:Type="String">ui_eim_dodgechance_final_percent</Data></Cell>
@@ -1439,12 +1440,12 @@
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s67"><Data ss:Type="String">ui_eim_freezechance_on_frost_damage_score_flat</Data></Cell>
     <Cell ss:StyleID="s68"><Data ss:Type="String">%1 Freeze Chance Score when dealing Frost Damage</Data></Cell>
-    <Cell ss:StyleID="s65"><Data ss:Type="String">%1 рейтинга заморозки от урона холодом</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">%1 рейтинга шанса наложения заморозки уроном холодом</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s67"><Data ss:Type="String">ui_eim_freezechance_on_frost_damage_score_percent</Data></Cell>
     <Cell ss:StyleID="s68"><Data ss:Type="String">%1 Freeze Chance Score when dealing Frost Damage</Data></Cell>
-    <Cell ss:StyleID="s65"><Data ss:Type="String">%1 рейтинга заморозки от урона холодом</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">%1 рейтинга шанса наложения заморозки уроном холодом</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s67"><Data ss:Type="String">ui_eim_frost_damage_percent</Data></Cell>
@@ -1879,7 +1880,7 @@
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s67"><Data ss:Type="String">ui_eim_poisonchance_on_toxic_damage_score_percent</Data></Cell>
     <Cell ss:StyleID="s68"><Data ss:Type="String">%1 Poison Chance Score on dealing Toxic Damage</Data></Cell>
-    <Cell ss:StyleID="s65"><Data ss:Type="String">%1 к рейтингу отравления уроном ядом</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">%1 к рейтингу шанса наложения отравления уроном ядом</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s67"><Data ss:Type="String">ui_eim_poisonstack_duration_increase</Data></Cell>
@@ -1959,7 +1960,7 @@
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s67"><Data ss:Type="String">ui_eim_refill_stamina_on_low_health</Data></Cell>
     <Cell ss:StyleID="s68"><Data ss:Type="String">Gain %1 Stamina Point(s) when at %2 of Max Health or lower</Data></Cell>
-    <Cell ss:StyleID="s65"><Data ss:Type="String">Добавляет %1 очко(в) выносливости при %2 от максимального здоровья</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Добавляет %1 очко(а) выносливости при %2 от максимального здоровья</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s67"><Data ss:Type="String">ui_eim_rend_damage_percent</Data></Cell>
@@ -2139,12 +2140,12 @@
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s67"><Data ss:Type="String">ui_eim_shockchance_on_lightning_damage_score_flat</Data></Cell>
     <Cell ss:StyleID="s68"><Data ss:Type="String">%1 Shock Chance Score on Lightning Damage</Data></Cell>
-    <Cell ss:StyleID="s65"><Data ss:Type="String">%1 к рейтингу ошеломления уроном молнией</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">%1 к рейтингу шанса наложения ошеломления уроном молнией</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s67"><Data ss:Type="String">ui_eim_shockchance_on_lightning_damage_score_percent</Data></Cell>
     <Cell ss:StyleID="s68"><Data ss:Type="String">%1 Shock Chance Score on Lightning Damage</Data></Cell>
-    <Cell ss:StyleID="s65"><Data ss:Type="String">%1 к рейтингу ошеломления уроном молнией</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">%1 к рейтингу шанса наложения ошеломления уроном молнией</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s67"><Data ss:Type="String">ui_eim_skill_cooldownreduction_percent</Data></Cell>
@@ -2239,12 +2240,12 @@
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s67"><Data ss:Type="String">ui_eim_stasischance_on_umbra_damage_score_flat</Data></Cell>
     <Cell ss:StyleID="s68"><Data ss:Type="String">%1 Stasis Chance Score on Aether Damage</Data></Cell>
-    <Cell ss:StyleID="s65"><Data ss:Type="String">%1 к рейтингу стазиса уроном эфиром</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">%1 к рейтингу шанса наложения стазиса уроном эфиром</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s67"><Data ss:Type="String">ui_eim_stasischance_on_umbra_damage_score_percent</Data></Cell>
     <Cell ss:StyleID="s68"><Data ss:Type="String">%1 Stasis Chance Score on Aether Damage</Data></Cell>
-    <Cell ss:StyleID="s65"><Data ss:Type="String">%1 к рейтингу стазиса уроном эфиром</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">%1 к рейтингу шанса наложения стазиса уроном эфиром</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s67"><Data ss:Type="String">ui_eim_statusailment_inflict_chance_final_percent</Data></Cell>
@@ -2254,42 +2255,42 @@
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s67"><Data ss:Type="String">ui_eim_statusailment_inflict_score_flat_elemental</Data></Cell>
     <Cell ss:StyleID="s68"><Data ss:Type="String">%1 Elemental Ailment Chance Score</Data></Cell>
-    <Cell ss:StyleID="s65"><Data ss:Type="String">%1 к рейтингу наложения стихийных негативных эффектов</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">%1 к рейтингу шанса наложения стихийных негативных эффектов</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s67"><Data ss:Type="String">ui_eim_statusailment_inflict_score_flat_material</Data></Cell>
     <Cell ss:StyleID="s68"><Data ss:Type="String">%1 Material Ailment Chance Score</Data></Cell>
-    <Cell ss:StyleID="s65"><Data ss:Type="String">%1 к рейтингу наложения материальных негативных эффектов</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">%1 к рейтингу шанса наложения материальных негативных эффектов</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s67"><Data ss:Type="String">ui_eim_statusailment_inflict_score_flat_occult</Data></Cell>
     <Cell ss:StyleID="s68"><Data ss:Type="String">%1 Occult Ailment Chance Score</Data></Cell>
-    <Cell ss:StyleID="s65"><Data ss:Type="String">%1 к рейтингу наложения оккультных негативных эффектов</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">%1 к рейтингу шанса наложения оккультных негативных эффектов</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s67"><Data ss:Type="String">ui_eim_statusailment_inflict_score_percent</Data></Cell>
     <Cell ss:StyleID="s68"><Data ss:Type="String">%1 Ailment Chance Score</Data></Cell>
-    <Cell ss:StyleID="s65"><Data ss:Type="String">%1 к рейтингу наложения негативных эффектов</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">%1 к рейтингу шанса наложения негативных эффектов</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s67"><Data ss:Type="String">ui_eim_statusailment_inflict_chance_score</Data></Cell>
     <Cell ss:StyleID="s68"><Data ss:Type="String">%1 Ailment Chance Score</Data></Cell>
-    <Cell ss:StyleID="s65"><Data ss:Type="String">%1 к рейтингу наложения негативных эффектов</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">%1 к рейтингу шанса наложения негативных эффектов</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s67"><Data ss:Type="String">ui_eim_statusailment_inflict_score_percent_elemental</Data></Cell>
     <Cell ss:StyleID="s68"><Data ss:Type="String">%1 Elemental Ailment Chance Score</Data></Cell>
-    <Cell ss:StyleID="s65"><Data ss:Type="String">%1 к рейтингу наложения стихийных негативных эффектов</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">%1 к рейтингу шанса наложения стихийных негативных эффектов</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s67"><Data ss:Type="String">ui_eim_statusailment_inflict_score_percent_material</Data></Cell>
     <Cell ss:StyleID="s68"><Data ss:Type="String">%1 Material Ailment Chance Score</Data></Cell>
-    <Cell ss:StyleID="s65"><Data ss:Type="String">%1 к рейтингу наложения материальных негативных эффектов</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">%1 к рейтингу шанса наложения материальных негативных эффектов</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s67"><Data ss:Type="String">ui_eim_statusailment_inflict_score_percent_occult</Data></Cell>
     <Cell ss:StyleID="s68"><Data ss:Type="String">%1 Occult Ailment Chance Score</Data></Cell>
-    <Cell ss:StyleID="s65"><Data ss:Type="String">%1 к рейтингу наложения оккультных негативных эффектов</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">%1 к рейтингу шанса наложения оккультных негативных эффектов</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s67"><Data ss:Type="String">ui_eim_statusailment_resist_score</Data></Cell>
@@ -2319,12 +2320,12 @@
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s67"><Data ss:Type="String">ui_eim_stunchance_on_physical_damage_score_flat</Data></Cell>
     <Cell ss:StyleID="s74"><Data ss:Type="String">%1 Stun Chance Score on Physical Damage</Data></Cell>
-    <Cell ss:StyleID="s65"><Data ss:Type="String">%1 к рейтингу оглушения физическим уроном</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">%1 к рейтингу шанса наложения оглушения физическим уроном</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s67"><Data ss:Type="String">ui_eim_stunchance_on_physical_damage_score_percent</Data></Cell>
     <Cell ss:StyleID="s74"><Data ss:Type="String">%1 Stun Chance Score on Physical Damage</Data></Cell>
-    <Cell ss:StyleID="s65"><Data ss:Type="String">%1 к рейтингу оглушения физическим уроном</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">%1 к рейтингу шанса наложения оглушения физическим уроном</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s67"><Data ss:Type="String">ui_eim_toughness_pts</Data></Cell>
@@ -2499,12 +2500,12 @@
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s67"><Data ss:Type="String">ui_eim_weaknesschance_on_sacred_damage_score_flat</Data></Cell>
     <Cell ss:StyleID="s74"><Data ss:Type="String">%1 Weakness Chance Score on Sacred Damage</Data></Cell>
-    <Cell ss:StyleID="s65"><Data ss:Type="String">%1 к рейтингу ослабления святым уроном</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">%1 к рейтингу шанса наложения ослабления святым уроном</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s67"><Data ss:Type="String">ui_eim_weaknesschance_on_sacred_damage_score_percent</Data></Cell>
     <Cell ss:StyleID="s74"><Data ss:Type="String">%1 Weakness Chance Score on Sacred Damage</Data></Cell>
-    <Cell ss:StyleID="s65"><Data ss:Type="String">%1 к рейтингу ослабления святым уроном</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">%1 к рейтингу шанса наложения ослабления святым уроном</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s67"><Data ss:Type="String">ui_eim_force_weakness_roll_on_attack_skills</Data></Cell>
@@ -2929,7 +2930,7 @@
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s76"><Data ss:Type="String">ui_eim_attunement_frost</Data></Cell>
     <Cell ss:StyleID="s66"><Data ss:Type="String">&quot;Etheliel's Accord&quot; is active for %3s unless it is triggered again. You have %1 Ailment Chance Score when &quot;Etheliel's Accord&quot; is active.</Data></Cell>
-    <Cell ss:StyleID="s65"><Data ss:Type="String">&quot;Аккорд Этелиэль&quot; активен %3 сек, если не получен снова. Вы получаете %1 рейтинга наложения негативных эффектов пока он активен.</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">&quot;Аккорд Этелиэль&quot; активен %3 сек, если не получен снова. Вы получаете %1 рейтинга шанса наложения негативных эффектов пока он активен.</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s76"><Data ss:Type="String">ui_eim_attunement_fire</Data></Cell>
@@ -2939,7 +2940,7 @@
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s76"><Data ss:Type="String">ui_eim_attunement_lightning</Data></Cell>
     <Cell ss:StyleID="s66"><Data ss:Type="String">'&quot;Beelmalik's Accord&quot; is active for %3s unless it is triggered again. You have %1 Critical Chance Score when &quot;Beelmalik's Accord&quot; is active.</Data></Cell>
-    <Cell ss:StyleID="s65"><Data ss:Type="String">&quot;Аккорд Билмалика&quot; активен %3 сек, если не получен снова. Вы получаете %1 шанса критического урона пока он активен.</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">&quot;Аккорд Билмалика&quot; активен %3 сек, если не получен снова. Вы получаете %1 рейтинга шанса нанесения критического урона пока он активен.</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s65"><Data ss:Type="String">ui_eim_meteor_on_casting_fire_skill</Data></Cell>
@@ -3263,7 +3264,7 @@
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s77"><Data ss:Type="String">ui_eim_freeze_chance_to_crit</Data></Cell>
-    <Cell ss:StyleID="s66"><Data ss:Type="String">If your Hits have Freeze Chance, %1 of your Freeze Chance is added to your Critical Chance. These Hits do not inflcit Freeze anymore.</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="String">If your Hits have Freeze Chance, %1 of your Freeze Chance is added to your Critical Chance. These Hits do not inflict Freeze anymore.</Data></Cell>
     <Cell ss:StyleID="s65"><Data ss:Type="String">Если у ваших атак есть шанс заморозить, то %1 от шанса заморозки прибавляется к шансу критического урона. Такие атаки не замораживают врагов.</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
@@ -3294,7 +3295,7 @@
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s65"><Data ss:Type="String">ui_eim_criticalchance_on_poisoned_score</Data></Cell>
     <Cell ss:StyleID="s66"><Data ss:Type="String">%1 Critical Chance Score when Hitting a Poisoned target</Data></Cell>
-    <Cell ss:StyleID="s65"><Data ss:Type="String">%1 к рейтингу критического урона по отравленным врагам</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">%1 к рейтингу шанса нанесения критического урона по отравленным врагам</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s65"><Data ss:Type="String">ui_eim_dodge_roll_breaks_cc</Data></Cell>

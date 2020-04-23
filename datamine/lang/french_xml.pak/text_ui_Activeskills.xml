@@ -9,8 +9,8 @@
   <Title>Untitled Spreadsheet</Title>
   <Author>Unknown Creator</Author>
   <LastAuthor>Cthylla</LastAuthor>
-  <Created>2020-03-31T09:00:15Z</Created>
-  <LastSaved>2020-03-31T09:00:15Z</LastSaved>
+  <Created>2020-04-09T09:40:52Z</Created>
+  <LastSaved>2020-04-09T09:40:52Z</LastSaved>
   <Company>Microsoft Corporation</Company>
   <Version>16.00</Version>
  </DocumentProperties>
@@ -22,6 +22,7 @@
   <WindowWidth>17745</WindowWidth>
   <WindowTopX>32767</WindowTopX>
   <WindowTopY>32767</WindowTopY>
+  <RefModeR1C1/>
   <ProtectStructure>False</ProtectStructure>
   <ProtectWindows>False</ProtectWindows>
  </ExcelWorkbook>
@@ -965,7 +966,7 @@
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s65"><Data ss:Type="String">ui_AST_SummonMelee_desc</Data></Cell>
-    <Cell ss:StyleID="s68"><Data ss:Type="String">Summon a zombie at the cursor’s location that hits Enemies with Melee Attacks. If the Maximum Summons is reached, the zombies charge in the direction of the cursor.\n\n&lt;font color=&quot;#948ec6&quot;&gt;Spell:&lt;/font&gt; Only usable with staves or catalysts.\n\n&lt;font color=&quot;#509FFF&quot;&gt;Skill Tags&lt;/font&gt;: &lt;b&gt;Spell&lt;/b&gt;, &lt;b&gt;Summon&lt;/b&gt;.</Data></Cell>
+    <Cell ss:StyleID="s68"><Data ss:Type="String">Summon a zombie at the cursor’s location that hits Enemies with Melee Attacks. If Maximum Summons is reached, zombies charge in the direction of the cursor.\n\n&lt;font color=&quot;#948ec6&quot;&gt;Spell:&lt;/font&gt; Only usable with staves or catalysts.\n\n&lt;font color=&quot;#509FFF&quot;&gt;Skill Tags&lt;/font&gt;: &lt;b&gt;Spell&lt;/b&gt;, &lt;b&gt;Summon&lt;/b&gt;.</Data></Cell>
     <Cell ss:StyleID="s65"><Data ss:Type="String">Invoque un zombie qui attaque au corps à corps. Si vous avez déjà atteint le maximum de zombies, ils chargent en direction de votre curseur à l'utilisation de la compétence.\n\n&lt;font color=&quot;#948ec6&quot;&gt;Sort:&lt;/font&gt; Seulement utilisable avec un bâton ou un catalyseur.\n\n&lt;font color=&quot;#509FFF&quot;&gt;Type&lt;/font&gt; : &lt;b&gt;Sort&lt;/b&gt;, &lt;b&gt;Invocation&lt;/b&gt;.</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
@@ -980,7 +981,7 @@
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s65"><Data ss:Type="String">ui_AST_SummonRanged_desc</Data></Cell>
-    <Cell ss:StyleID="s68"><Data ss:Type="String">Summon a zombie at the cursor’s location that launches Projectiles at Enemies. If the Maximum Summons is reached, the zombies launch Projectiles at the cursor’s location.\n\n&lt;font color=&quot;#948ec6&quot;&gt;Spell:&lt;/font&gt; Only usable with staves or catalysts.\n\n&lt;font color=&quot;#509FFF&quot;&gt;Skill Tags&lt;/font&gt;: &lt;b&gt;Spell&lt;/b&gt;, &lt;b&gt;Summon&lt;/b&gt;.</Data></Cell>
+    <Cell ss:StyleID="s68"><Data ss:Type="String">Summon a zombie at the cursor’s location that launches Projectiles. If Maximum Summons is reached, zombies launch Projectiles at the cursor’s location.\n\n&lt;font color=&quot;#948ec6&quot;&gt;Spell:&lt;/font&gt; Only usable with staves or catalysts.\n\n&lt;font color=&quot;#509FFF&quot;&gt;Skill Tags&lt;/font&gt;: &lt;b&gt;Spell&lt;/b&gt;, &lt;b&gt;Summon&lt;/b&gt;.</Data></Cell>
     <Cell ss:StyleID="s65"><Data ss:Type="String">Invoque un zombie qui attaque à distance. Si vous avez atteint le maximum de zombies, ils focaliseront leurs tirs sur la cible du curseur.\n\n&lt;font color=&quot;#948ec6&quot;&gt;Sort:&lt;/font&gt; Utilisable avec un bâton ou un catalyseur.\n\n&lt;font color=&quot;#509FFF&quot;&gt;Type&lt;/font&gt; : &lt;b&gt;Sort&lt;/b&gt;, &lt;b&gt;Invocation&lt;/b&gt;.</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
@@ -995,7 +996,7 @@
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s65"><Data ss:Type="String">ui_AST_SummonChampion_desc</Data></Cell>
-    <Cell ss:StyleID="s68"><Data ss:Type="String">Summon a zombie at the cursor’s location that generates Threat and deals Toxic Damage to Enemies with Melee Attacks. The zombie generates Threat with a warcry if Cast again.\n\n&lt;font color=&quot;#948ec6&quot;&gt;Spell:&lt;/font&gt; Only usable with staves or catalysts.\n\n&lt;font color=&quot;#509FFF&quot;&gt;Skill Tags&lt;/font&gt;: &lt;b&gt;Spell&lt;/b&gt;, &lt;b&gt;Summon&lt;/b&gt;.</Data></Cell>
+    <Cell ss:StyleID="s68"><Data ss:Type="String">Summon a zombie at the cursor’s location that generates Threat and deals Toxic Damage to Enemies with Melee Attacks. Zombie generates Threat if Cast again.\n\n&lt;font color=&quot;#948ec6&quot;&gt;Spell:&lt;/font&gt; Only usable with staves or catalysts.\n\n&lt;font color=&quot;#509FFF&quot;&gt;Skill Tags&lt;/font&gt;: &lt;b&gt;Spell&lt;/b&gt;, &lt;b&gt;Summon&lt;/b&gt;.</Data></Cell>
     <Cell ss:StyleID="s65"><Data ss:Type="String">Invoque un grand golem de Poison qui inflige des dégâts en arc. Si la compétence est utilisée une nouvelle fois, le golem lance un cri qui génère de la Menace.\n\n&lt;font color=&quot;#948ec6&quot;&gt;Sort:&lt;/font&gt; Seulement utilisable avec un bâton ou un catalyseur.\n\n&lt;font color=&quot;#509FFF&quot;&gt;Type&lt;/font&gt; : &lt;b&gt;Sort&lt;/b&gt;, &lt;b&gt;Invocation&lt;/b&gt;.</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
@@ -2015,8 +2016,8 @@
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s65"><Data ss:Type="String">ui_Variant_ChainLightning_variant_8_desc</Data></Cell>
-    <Cell ss:StyleID="s70"><Data ss:Type="String">When Cast, this Skill grants a Buff to the Damage you and your Allies deal with the base Damage Type used by this Skill.</Data></Cell>
-    <Cell ss:StyleID="s65"><Data ss:Type="String">Octroie un bonus qui vous permet d'infliger des dégâts supplémentaires basés sur l'élément de cette compétence. La foudre peut également rebondir sur les alliés, ils disposent alors du bonus à leur tour.</Data></Cell>
+    <Cell ss:StyleID="s70"><Data ss:Type="String">When Cast, this Skill grants a Buff to the Damage you deal with the base Damage Type used by this Skill. The Lighting can now also bounce between Allies, and when they are Hit, they also receive the Damage Buff. </Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Octroie un bonus qui vous permet d'infliger des dégâts supplémentaires basés sur l'élément de cette compétence lorsque vous l'utilisez. La compétence peut également rebondir sur les alliés, ils disposent alors du bonus à leur tour.</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s65"><Data ss:Type="String">ui_Variant_ChainLightning_variant_8_Lore</Data></Cell>
@@ -2246,7 +2247,7 @@
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s65"><Data ss:Type="String">ui_Variant_Charge_variant_13_desc</Data></Cell>
     <Cell ss:StyleID="s70"><Data ss:Type="String">While charging, this Skill grants a Buff that increases you and your Allies' All Resistances Score.</Data></Cell>
-    <Cell ss:StyleID="s65"><Data ss:Type="String">Octroie un bonus à vous et à vos alliés lorsque vous utilisez la compétence.</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Lorsque vous chargez la compétence, elle octroie à vous et à vos alliés un Bonus à toutes les Résistances.</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s65"><Data ss:Type="String">ui_Variant_Charge_variant_14</Data></Cell>
@@ -2721,7 +2722,7 @@
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s65"><Data ss:Type="String">ui_Variant_Fireball_variant_8_desc</Data></Cell>
     <Cell ss:StyleID="s70"><Data ss:Type="String">When Cast, this Skill grants a Buff to the Damage you deal with the base Damage Type of this Skill. Allies within this Skill's Area-of-Effect also receive this Buff.</Data></Cell>
-    <Cell ss:StyleID="s65"><Data ss:Type="String">Octroie un bonus qui vous permet d'infliger des dégâts supplémentaires basés sur l'élément de cette compétence. Les alliés touchés par la zone d'effet du sort disposent alors du bonus à leur tour.</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Octroie un bonus qui vous permet d'infliger des dégâts supplémentaires basés sur l'élément de cette compétence. Les alliés touchés par la zone d'effet du sort disposent du bonus à leur tour.</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s65"><Data ss:Type="String">ui_Variant_Fireball_variant_8_Lore</Data></Cell>
@@ -3256,7 +3257,7 @@
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s65"><Data ss:Type="String">ui_Variant_FrostNova_variant_8_desc</Data></Cell>
     <Cell ss:StyleID="s70"><Data ss:Type="String">When Cast, this Skill grants a Buff to the Damage you deal with the base Damage Type of this Skill. Allies within this Skill's Area-of-Effect also receive this Buff.</Data></Cell>
-    <Cell ss:StyleID="s65"><Data ss:Type="String">Octroie un bonus qui vous permet d'infliger des dégâts supplémentaires basés sur l'élément de cette compétence. Les alliés touchés par la zone d'effet du sort disposent alors du bonus à leur tour.</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Octroie un bonus qui vous permet d'infliger des dégâts supplémentaires basés sur l'élément de cette compétence lorsque vous l'utilisez. Les alliés touchés par la zone d'effet du sort disposent alors du bonus à leur tour.</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s65"><Data ss:Type="String">ui_Variant_FrostNova_variant_8_Lore</Data></Cell>
@@ -4006,7 +4007,7 @@
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s65"><Data ss:Type="String">ui_Variant_Leap_variant_12_desc</Data></Cell>
     <Cell ss:StyleID="s70"><Data ss:Type="String">Grants a Buff to the Damage you deal with the base Damage Type of this Skill per Enemy hit when the leap lands.</Data></Cell>
-    <Cell ss:StyleID="s65"><Data ss:Type="String">Octroie un bonus pour chaque ennemi touché à l'atterrissage.</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Octroie un bonus qui vous permet d'infliger des dégâts supplémentaires basés sur l'élément de cette compétence lorsque vous atterrissez. La puissance du bonus dépend du nombre d'ennemis touchés.</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s65"><Data ss:Type="String">ui_Variant_Leap_variant_13</Data></Cell>
@@ -4016,7 +4017,7 @@
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s65"><Data ss:Type="String">ui_Variant_Leap_variant_13_desc</Data></Cell>
     <Cell ss:StyleID="s70"><Data ss:Type="String">When Cast, this Skill grants a Buff to the Damage you deal per Enemy hit. Allies within this Skill's Area-of-Effect when the leap lands also receive this Buff.</Data></Cell>
-    <Cell ss:StyleID="s65"><Data ss:Type="String">Octroie un bonus à vous et à vos alliés à l'atterrissage.</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Cette compétence octroie à vous et à vos alliés un Bonus aux dégâts infligés en fonction du nombre d'ennemis touchés. Les alliés présents dans la zone d'effet à l'atterrissage bénéficient également du bonus.</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s65"><Data ss:Type="String">ui_Variant_Leap_variant_14</Data></Cell>
@@ -4146,7 +4147,7 @@
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s65"><Data ss:Type="String">ui_Variant_Reave_variant_9_desc</Data></Cell>
     <Cell ss:StyleID="s70"><Data ss:Type="String">When Cast, this Skill grants Life Leech Buff to you and Nearby Allies.</Data></Cell>
-    <Cell ss:StyleID="s65"><Data ss:Type="String">Octroie à vous et à vos alliés un bonus d'absorption de vie.</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Octroie à vous et à vos alliés un bonus d'absorption de vie lorsque vous utilisez la compétence.</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s65"><Data ss:Type="String">ui_Variant_Reave_variant_10</Data></Cell>
@@ -4326,7 +4327,7 @@
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s65"><Data ss:Type="String">ui_Variant_SacredGround_variant_9_desc</Data></Cell>
     <Cell ss:StyleID="s70"><Data ss:Type="String">While inside this Skill's Area-of-Effect, your Ailment Chance Score is increased.</Data></Cell>
-    <Cell ss:StyleID="s65"><Data ss:Type="String">Octroie un bonus offensif.</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Vos chances d'appliquer des Afflictions est augmenté lorsque vous êtes dans la zone d'effet.</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s65"><Data ss:Type="String">ui_Variant_SacredGround_variant_10</Data></Cell>
@@ -4866,7 +4867,7 @@
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s65"><Data ss:Type="String">ui_Variant_Turret_variant_10_desc</Data></Cell>
     <Cell ss:StyleID="s70"><Data ss:Type="String">Increases the Movement Speed of your allies in an Area-of-Effect around the turret.</Data></Cell>
-    <Cell ss:StyleID="s65"><Data ss:Type="String">Octroie un bonus aux alliés présents dans la zone d'effet autour de la tourelle.</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Octroie un bonus à la Vitesse de Déplacement aux alliés présents dans la zone d'effet autour de la tourelle.</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s65"><Data ss:Type="String">ui_Variant_Turret_variant_11</Data></Cell>
@@ -5031,7 +5032,7 @@
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s65"><Data ss:Type="String">ui_Variant_WarCry_variant_9_desc</Data></Cell>
     <Cell ss:StyleID="s70"><Data ss:Type="String">The warcry grants a Buff to your Life Leech.</Data></Cell>
-    <Cell ss:StyleID="s65"><Data ss:Type="String">Octroie un bonus temporaire d'absorption de vie.</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Octroie un bonus temporaire d'Absorption de Vie.</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s65"><Data ss:Type="String">ui_Variant_WarCry_variant_10</Data></Cell>
@@ -5041,7 +5042,7 @@
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s65"><Data ss:Type="String">ui_Variant_WarCry_variant_10_desc</Data></Cell>
     <Cell ss:StyleID="s70"><Data ss:Type="String">The warcry grants a Buff to your Block Chance.</Data></Cell>
-    <Cell ss:StyleID="s65"><Data ss:Type="String">Octroie un bonus temporaire de blocage.</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Octroie un bonus aux Chances de Blocage.</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s65"><Data ss:Type="String">ui_Variant_WarCry_variant_11</Data></Cell>
@@ -5051,7 +5052,7 @@
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s65"><Data ss:Type="String">ui_Variant_WarCry_variant_11_desc</Data></Cell>
     <Cell ss:StyleID="s70"><Data ss:Type="String">The warcry grants a Buff to your Critical Chance Score.</Data></Cell>
-    <Cell ss:StyleID="s65"><Data ss:Type="String">Octroie un bonus temporaire de chances de critiques.</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Octroie un Bonus au Score de Coup Critique.</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s65"><Data ss:Type="String">ui_Variant_WarCry_variant_12</Data></Cell>
@@ -5061,7 +5062,7 @@
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s65"><Data ss:Type="String">ui_Variant_WarCry_variant_12_desc</Data></Cell>
     <Cell ss:StyleID="s70"><Data ss:Type="String">The warcry grants a Buff to your Movement Speed.</Data></Cell>
-    <Cell ss:StyleID="s65"><Data ss:Type="String">Octroie un bonus temporaire de vitesse de déplacement.</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Octroie un Bonus de Vitesse de Déplacement.</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s65"><Data ss:Type="String">ui_Variant_WarCry_variant_13</Data></Cell>
@@ -5246,7 +5247,7 @@
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s65"><Data ss:Type="String">ui_Variant_WhirlWind_variant_13_desc</Data></Cell>
     <Cell ss:StyleID="s70"><Data ss:Type="String">Increases your Critical Chance Score when an Enemy is killed with this Skill.</Data></Cell>
-    <Cell ss:StyleID="s65"><Data ss:Type="String">Octroie un bonus aux chances de coup critique lorsque vous tuez un ennemi avec la compétence.</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Octroie un Bonus au Score de Coup Critique lorsqu'un ennemi est tué avec cette Compétence.</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s65"><Data ss:Type="String">ui_Variant_WhirlWind_variant_14</Data></Cell>
@@ -5290,8 +5291,8 @@
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s65"><Data ss:Type="String">ui_Variant_AetherBlade_variant_1_desc</Data></Cell>
-    <Cell ss:StyleID="s70"><Data ss:Type="String">Adds an additional attack to this Skill's combo that deals Damage in an Area-of-Effect around the player.</Data></Cell>
-    <Cell ss:StyleID="s65"><Data ss:Type="String">Ajoute une attaque supplémentaire à la compétence.</Data></Cell>
+    <Cell ss:StyleID="s70"><Data ss:Type="String">Adds an additional attack to this Skill's combo.</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Adds an additional attack to this Skill's combo.</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s65"><Data ss:Type="String">ui_Variant_AetherBlade_variant_2</Data></Cell>
@@ -5366,7 +5367,7 @@
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s65"><Data ss:Type="String">ui_Variant_AetherBlade_variant_8_desc</Data></Cell>
     <Cell ss:StyleID="s70"><Data ss:Type="String">When Cast, this Skill grants a Buff to the Damage Nearby Allies deal with the base Damage Type of this Skill.</Data></Cell>
-    <Cell ss:StyleID="s65"><Data ss:Type="String">Octroie un bonus aux dégâts d'Éther ou d'Ombre aux alliés proches. Le bonus octroyé dépend des dégâts de base de la compétence.</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Octroie un Bonus aux dégâts d'Éther ou d'Ombre aux alliés proches lorsque vous utilisez la Compétence. Le Bonus octroyé dépend du Type de dégât de la Compétence.</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s65"><Data ss:Type="String">ui_Variant_AetherBlade_variant_9</Data></Cell>
@@ -6216,7 +6217,7 @@
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s65"><Data ss:Type="String">ui_Variant_Vortex_variant_3_desc</Data></Cell>
     <Cell ss:StyleID="s70"><Data ss:Type="String">Increases your Movement Speed while you are within this Skill's Area-of-Effect.</Data></Cell>
-    <Cell ss:StyleID="s65"><Data ss:Type="String">Octroie un bonus à la vitesse de déplacement dans la zone d'effet.</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Octroie un Bonus à la Vitesse de Déplacement dans la Zone d'Effet de la Compétence.</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s65"><Data ss:Type="String">ui_Variant_Vortex_variant_4</Data></Cell>
@@ -6395,8 +6396,8 @@
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s65"><Data ss:Type="String">ui_Variant_CorpseExplosion_variant_4</Data></Cell>
-    <Cell ss:StyleID="s66"><Data ss:Type="String">Noxious Smog</Data></Cell>
-    <Cell ss:StyleID="s65"><Data ss:Type="String">Brouillard Néfaste</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="String">Foul Guardian</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Foul Guardian</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s65"><Data ss:Type="String">ui_Variant_CorpseExplosion_variant_4_desc</Data></Cell>
@@ -6410,8 +6411,8 @@
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s65"><Data ss:Type="String">ui_Variant_CorpseExplosion_variant_5_desc</Data></Cell>
-    <Cell ss:StyleID="s70"><Data ss:Type="String">When this Skill's Area-of-Effect explodes, there is a Chance that Allies  within its Area-of-Effect will receive a Buff that will increase their Ailment Chance Score.</Data></Cell>
-    <Cell ss:StyleID="s65"><Data ss:Type="String">Octroie un bonus à vous et à vos alliés dans la zone d'effet.</Data></Cell>
+    <Cell ss:StyleID="s70"><Data ss:Type="String">When Cast, you and Allies within this Skill's Area-of-Effect will receive a Buff that increases Ailment Chance Score.</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">When Cast, you and Allies within this Skill's Area-of-Effect will receive a Buff that increases Ailment Chance Score.</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s65"><Data ss:Type="String">ui_Variant_CorpseExplosion_variant_6</Data></Cell>
@@ -6596,7 +6597,7 @@
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s65"><Data ss:Type="String">ui_Variant_Solarfall_variant_6_desc</Data></Cell>
     <Cell ss:StyleID="s70"><Data ss:Type="String">While inside this Skill's Area-of-Effect, you and your Allies are granted an All Resistances Score Buff.</Data></Cell>
-    <Cell ss:StyleID="s65"><Data ss:Type="String">Octroie un bonus à toutes vos Résistances et à celles de vos alliés si vous êtes dans la zone d'effet du sort.</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Augmente toutes vos Résistances et celles de vos alliés si vous êtes dans la Zone d'Effet de la Compétence.</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s65"><Data ss:Type="String">ui_Variant_Solarfall_variant_7</Data></Cell>
@@ -6760,7 +6761,7 @@
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s65"><Data ss:Type="String">ui_Variant_Vault_variant_5_desc</Data></Cell>
-    <Cell ss:StyleID="s70"><Data ss:Type="String">When Cats. this Skill breaks any Crowd Control Effects you are affected by.</Data></Cell>
+    <Cell ss:StyleID="s70"><Data ss:Type="String">When Cast, this Skill breaks any Crowd Control Effects you are affected by.</Data></Cell>
     <Cell ss:StyleID="s65"><Data ss:Type="String">Annule les effets de contrôle qui vous affectent.</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
@@ -7151,7 +7152,7 @@
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s65"><Data ss:Type="String">ui_Variant_Hammer_variant_8_desc</Data></Cell>
     <Cell ss:StyleID="s70"><Data ss:Type="String">You are granted a Buff to your Movement Speed per Enemy hit by this Skill.</Data></Cell>
-    <Cell ss:StyleID="s65"><Data ss:Type="String">Octroie un bonus temporaire à la vitesse de déplacement.</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Octroie un Bonus à la Vitesse de Déplacement dépendant du nombre d'ennemis tués avec la Compétence.</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s65"><Data ss:Type="String">ui_Variant_Hammer_variant_9</Data></Cell>
@@ -7511,7 +7512,7 @@
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s65"><Data ss:Type="String">ui_Variant_HolyDive_variant_9_desc</Data></Cell>
     <Cell ss:StyleID="s70"><Data ss:Type="String">You are granted a Buff to your All Resistances Score per Enemy hit by this Skill.</Data></Cell>
-    <Cell ss:StyleID="s65"><Data ss:Type="String">Octroie un bonus de résistance pour chaque ennemi touché à l'atterrissage.</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Octroie un Bonus à toutes les Résistances en fonction du nombre d'ennemis touchés à l'atterrissage.</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s65"><Data ss:Type="String">ui_Variant_HolyDive_variant_10</Data></Cell>

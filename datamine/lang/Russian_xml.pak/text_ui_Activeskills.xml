@@ -9,8 +9,8 @@
   <Title>Untitled Spreadsheet</Title>
   <Author>Unknown Creator</Author>
   <LastAuthor>Cthylla</LastAuthor>
-  <Created>2020-04-01T05:38:57Z</Created>
-  <LastSaved>2020-04-01T05:38:57Z</LastSaved>
+  <Created>2020-04-14T10:17:30Z</Created>
+  <LastSaved>2020-04-14T10:17:30Z</LastSaved>
   <Company>Microsoft Corporation</Company>
   <Version>16.00</Version>
  </DocumentProperties>
@@ -22,6 +22,7 @@
   <WindowWidth>17745</WindowWidth>
   <WindowTopX>32767</WindowTopX>
   <WindowTopY>32767</WindowTopY>
+  <RefModeR1C1/>
   <ProtectStructure>False</ProtectStructure>
   <ProtectWindows>False</ProtectWindows>
  </ExcelWorkbook>
@@ -965,7 +966,7 @@
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s65"><Data ss:Type="String">ui_AST_SummonMelee_desc</Data></Cell>
-    <Cell ss:StyleID="s68"><Data ss:Type="String">Summon a zombie at the cursor’s location that hits Enemies with Melee Attacks. If the Maximum Summons is reached, the zombies charge in the direction of the cursor.\n\n&lt;font color=&quot;#948ec6&quot;&gt;Spell:&lt;/font&gt; Only usable with staves or catalysts.\n\n&lt;font color=&quot;#509FFF&quot;&gt;Skill Tags&lt;/font&gt;: &lt;b&gt;Spell&lt;/b&gt;, &lt;b&gt;Summon&lt;/b&gt;.</Data></Cell>
+    <Cell ss:StyleID="s68"><Data ss:Type="String">Summon a zombie at the cursor’s location that hits Enemies with Melee Attacks. If Maximum Summons is reached, zombies charge in the direction of the cursor.\n\n&lt;font color=&quot;#948ec6&quot;&gt;Spell:&lt;/font&gt; Only usable with staves or catalysts.\n\n&lt;font color=&quot;#509FFF&quot;&gt;Skill Tags&lt;/font&gt;: &lt;b&gt;Spell&lt;/b&gt;, &lt;b&gt;Summon&lt;/b&gt;.</Data></Cell>
     <Cell ss:StyleID="s65"><Data ss:Type="String">Призовите в указанную точку зомби, атакующих врагов в ближнем бою. Если количество зомби максимально, они совершают рывок в указанную точку.\n\n&lt;font color=&quot;#948ec6&quot;&gt;Заклинание:&lt;/font&gt; Работает только с посохом или катализатором.\n\n&lt;font color=&quot;#509FFF&quot;&gt;Метки умения&lt;/font&gt;: &lt;b&gt;Заклинание&lt;/b&gt;, &lt;b&gt;Призыв&lt;/b&gt;.</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
@@ -980,8 +981,8 @@
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s65"><Data ss:Type="String">ui_AST_SummonRanged_desc</Data></Cell>
-    <Cell ss:StyleID="s68"><Data ss:Type="String">Summon a zombie at the cursor’s location that launches Projectiles at Enemies. If the Maximum Summons is reached, the zombies launch Projectiles at the cursor’s location.\n\n&lt;font color=&quot;#948ec6&quot;&gt;Spell:&lt;/font&gt; Only usable with staves or catalysts.\n\n&lt;font color=&quot;#509FFF&quot;&gt;Skill Tags&lt;/font&gt;: &lt;b&gt;Spell&lt;/b&gt;, &lt;b&gt;Summon&lt;/b&gt;.</Data></Cell>
-    <Cell ss:StyleID="s65"><Data ss:Type="String">Призовите в указанную точку зомби, выпускающих снаряды во врагов. Если количество зомби максимально, они концентрируют огонь в указанной точке.\n\n&lt;font color=&quot;#948ec6&quot;&gt;Заклинание:&lt;/font&gt; Работает только с посохом или катализатором.\n\n&lt;font color=&quot;#509FFF&quot;&gt;Метки умения&lt;/font&gt;: &lt;b&gt;Заклинание&lt;/b&gt;, &lt;b&gt;Призыв&lt;/b&gt;.</Data></Cell>
+    <Cell ss:StyleID="s68"><Data ss:Type="String">Summon a zombie at the cursor’s location that launches Projectiles. If Maximum Summons is reached, zombies launch Projectiles at the cursor’s location.\n\n&lt;font color=&quot;#948ec6&quot;&gt;Spell:&lt;/font&gt; Only usable with staves or catalysts.\n\n&lt;font color=&quot;#509FFF&quot;&gt;Skill Tags&lt;/font&gt;: &lt;b&gt;Spell&lt;/b&gt;, &lt;b&gt;Summon&lt;/b&gt;.</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Призовите в указанную точку зомби, выпускающих снаряды. Если количество зомби максимально, они концентрируют огонь в указанной точке.\n\n&lt;font color=&quot;#948ec6&quot;&gt;Заклинание:&lt;/font&gt; Работает только с посохом или катализатором.\n\n&lt;font color=&quot;#509FFF&quot;&gt;Метки умения&lt;/font&gt;: &lt;b&gt;Заклинание&lt;/b&gt;, &lt;b&gt;Призыв&lt;/b&gt;.</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s65"><Data ss:Type="String">ui_AST_SummonRanged_Lore</Data></Cell>
@@ -995,8 +996,8 @@
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s65"><Data ss:Type="String">ui_AST_SummonChampion_desc</Data></Cell>
-    <Cell ss:StyleID="s68"><Data ss:Type="String">Summon a zombie at the cursor’s location that generates Threat and deals Toxic Damage to Enemies with Melee Attacks. The zombie generates Threat with a warcry if Cast again.\n\n&lt;font color=&quot;#948ec6&quot;&gt;Spell:&lt;/font&gt; Only usable with staves or catalysts.\n\n&lt;font color=&quot;#509FFF&quot;&gt;Skill Tags&lt;/font&gt;: &lt;b&gt;Spell&lt;/b&gt;, &lt;b&gt;Summon&lt;/b&gt;.</Data></Cell>
-    <Cell ss:StyleID="s65"><Data ss:Type="String">Призовите в указанную точку зомби, создающего угрозу и наносящего врагам урон ядом в ближнем бою. При повторном применении умения, зомби издаёт боевой клич, создающий угрозу.\n\n&lt;font color=&quot;#948ec6&quot;&gt;Заклинание:&lt;/font&gt; Работает только с посохом или катализатором.\n\n&lt;font color=&quot;#509FFF&quot;&gt;Метки умения&lt;/font&gt;: &lt;b&gt;Заклинание&lt;/b&gt;, &lt;b&gt;Призыв&lt;/b&gt;.</Data></Cell>
+    <Cell ss:StyleID="s68"><Data ss:Type="String">Summon a zombie at the cursor’s location that generates Threat and deals Toxic Damage to Enemies with Melee Attacks. Zombie generates Threat if Cast again.\n\n&lt;font color=&quot;#948ec6&quot;&gt;Spell:&lt;/font&gt; Only usable with staves or catalysts.\n\n&lt;font color=&quot;#509FFF&quot;&gt;Skill Tags&lt;/font&gt;: &lt;b&gt;Spell&lt;/b&gt;, &lt;b&gt;Summon&lt;/b&gt;.</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Призовите в указанную точку зомби, создающего угрозу и наносящего врагам урон ядом в ближнем бою. При повторном применении умения, зомби создаёт угрозу.\n\n&lt;font color=&quot;#948ec6&quot;&gt;Заклинание:&lt;/font&gt; Работает только с посохом или катализатором.\n\n&lt;font color=&quot;#509FFF&quot;&gt;Метки умения&lt;/font&gt;: &lt;b&gt;Заклинание&lt;/b&gt;, &lt;b&gt;Призыв&lt;/b&gt;.</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s65"><Data ss:Type="String">ui_AST_SummonChampion_Lore</Data></Cell>
@@ -1116,7 +1117,7 @@
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s65"><Data ss:Type="String">ui_Variant_ArrowsRain_variant_6_desc</Data></Cell>
     <Cell ss:StyleID="s70"><Data ss:Type="String">Increases the Ailment Chance Score of this Skill.</Data></Cell>
-    <Cell ss:StyleID="s65"><Data ss:Type="String">Увеличивает рейтинг наложения негативных состояний данным умением.</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Увеличивает рейтинг шанса наложения негативных состояний данным умением.</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s65"><Data ss:Type="String">ui_Variant_ArrowsRain_variant_7</Data></Cell>
@@ -1126,7 +1127,7 @@
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s65"><Data ss:Type="String">ui_Variant_ArrowsRain_variant_7_desc</Data></Cell>
     <Cell ss:StyleID="s70"><Data ss:Type="String">Increases the Critical Chance Score of this Skill.</Data></Cell>
-    <Cell ss:StyleID="s65"><Data ss:Type="String">Увеличивает рейтинг критического урона данного умения.</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Увеличивает рейтинг шанса нанесения критического урона данным умением.</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s65"><Data ss:Type="String">ui_Variant_ArrowsRain_variant_8</Data></Cell>
@@ -1161,7 +1162,7 @@
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s65"><Data ss:Type="String">ui_Variant_ArrowsRain_variant_10_desc</Data></Cell>
     <Cell ss:StyleID="s70"><Data ss:Type="String">Increases the Critical Chance Score for yourself and Nearby Allies when you Cast this Skill.</Data></Cell>
-    <Cell ss:StyleID="s65"><Data ss:Type="String">Увеличивает рейтинг критического урона для вас и ваших союзников при применении умения.</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Увеличивает рейтинг шанса нанесения критического урона для вас и ваших союзников при применении умения.</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s65"><Data ss:Type="String">ui_Variant_ArrowsRain_variant_11</Data></Cell>
@@ -1386,7 +1387,7 @@
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s65"><Data ss:Type="String">ui_Variant_Bladeslinger_variant_14_desc</Data></Cell>
     <Cell ss:StyleID="s70"><Data ss:Type="String">Increases the Critical Chance Score of this Skill.</Data></Cell>
-    <Cell ss:StyleID="s65"><Data ss:Type="String">Увеличивает рейтинг критического урона данного умения.</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Увеличивает рейтинг шанса нанесения критического урона данным умением.</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s65"><Data ss:Type="String">ui_Variant_Bladeslinger_variant_15</Data></Cell>
@@ -1541,7 +1542,7 @@
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s65"><Data ss:Type="String">ui_Variant_Bomb_variant_12_desc</Data></Cell>
     <Cell ss:StyleID="s70"><Data ss:Type="String">Increases the Ailment Chance Score of this Skill.</Data></Cell>
-    <Cell ss:StyleID="s65"><Data ss:Type="String">Увеличивает рейтинг наложения негативных состояний данным умением.</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Увеличивает рейтинг шанса наложения негативных состояний данным умением.</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s65"><Data ss:Type="String">ui_Variant_Bomb_variant_13</Data></Cell>
@@ -1561,7 +1562,7 @@
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s65"><Data ss:Type="String">ui_Variant_Bomb_variant_14_desc</Data></Cell>
     <Cell ss:StyleID="s70"><Data ss:Type="String">Increases the Critical Chance Score of this Skill.</Data></Cell>
-    <Cell ss:StyleID="s65"><Data ss:Type="String">Увеличивает рейтинг критического урона данного умения.</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Увеличивает рейтинг шанса нанесения критического урона данным умением.</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s65"><Data ss:Type="String">ui_Variant_Bomb_variant_15</Data></Cell>
@@ -1621,7 +1622,7 @@
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s65"><Data ss:Type="String">ui_Variant_BrutalStrike_variant_4_desc</Data></Cell>
     <Cell ss:StyleID="s70"><Data ss:Type="String">Increases the Critical Chance Score of this Skill when it hits Enemies that are Stunned.</Data></Cell>
-    <Cell ss:StyleID="s65"><Data ss:Type="String">Увеличивает рейтинг критического урона данным умением по оглушённым врагам.</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Увеличивает рейтинг шанса нанесения критического урона данным умением по оглушённым врагам.</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s65"><Data ss:Type="String">ui_Variant_BrutalStrike_variant_5</Data></Cell>
@@ -1646,7 +1647,7 @@
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s65"><Data ss:Type="String">ui_Variant_BrutalStrike_variant_6_desc</Data></Cell>
     <Cell ss:StyleID="s70"><Data ss:Type="String">Increases the Ailment Chance Score of this Skill.</Data></Cell>
-    <Cell ss:StyleID="s65"><Data ss:Type="String">Увеличивает рейтинг наложения негативных состояний данным умением.</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Увеличивает рейтинг шанса наложения негативных состояний данным умением.</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s65"><Data ss:Type="String">ui_Variant_BrutalStrike_variant_7</Data></Cell>
@@ -1746,7 +1747,7 @@
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s65"><Data ss:Type="String">ui_Variant_BrutalStrike_variant_15_desc</Data></Cell>
     <Cell ss:StyleID="s70"><Data ss:Type="String">Increases the Critical Chance Score of this Skill.</Data></Cell>
-    <Cell ss:StyleID="s65"><Data ss:Type="String">Увеличивает рейтинг критического урона данного умения.</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Увеличивает рейтинг шанса нанесения критического урона данным умением.</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s65"><Data ss:Type="String">ui_Variant_BrutalStrike_variant_16</Data></Cell>
@@ -1816,7 +1817,7 @@
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s65"><Data ss:Type="String">ui_Variant_BullEye_variant_5_desc</Data></Cell>
     <Cell ss:StyleID="s72"><Data ss:Type="String">Increases the Ailment Chance Score of this Skill.</Data></Cell>
-    <Cell ss:StyleID="s65"><Data ss:Type="String">Увеличивает рейтинг наложения негативных состояний данным умением.</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Увеличивает рейтинг шанса наложения негативных состояний данным умением.</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s65"><Data ss:Type="String">ui_Variant_BullEye_variant_6</Data></Cell>
@@ -1881,7 +1882,7 @@
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s65"><Data ss:Type="String">ui_Variant_BullEye_variant_11_desc</Data></Cell>
     <Cell ss:StyleID="s70"><Data ss:Type="String">Increases the Critical Chance Score and Critical Damage of this Skill for each Ailment stack an Enemy has.</Data></Cell>
-    <Cell ss:StyleID="s65"><Data ss:Type="String">Увеличивает рейтинг критического урона и критический урон умения за каждый негативный эффект на враге.</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Увеличивает рейтинг шанса нанесения критического урона и критический урон умения за каждый негативный эффект на враге.</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s65"><Data ss:Type="String">ui_Variant_BullEye_variant_12</Data></Cell>
@@ -1911,7 +1912,7 @@
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s65"><Data ss:Type="String">ui_Variant_BullEye_variant_14_desc</Data></Cell>
     <Cell ss:StyleID="s70"><Data ss:Type="String">All Projectiles are now launched whenever this Skill is Cast. Projectiles that do not have a Target are launched in the direction of the cursor, but deal decreased Damage and have a decreased Critical Chance Score.</Data></Cell>
-    <Cell ss:StyleID="s65"><Data ss:Type="String">При использовании умения, выстреливает все доступные снаряды. Снаряды, не имеющие целей, выпускаются в направлении курсора.\nУрон и рейтинг критического урона снижен.</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">При использовании умения, выстреливает все доступные снаряды. Снаряды, не имеющие целей, выпускаются в направлении курсора.\nУрон и рейтинг шанса нанесения критического урона снижаются.</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s65"><Data ss:Type="String">ui_Variant_BullEye_variant_15</Data></Cell>
@@ -1981,7 +1982,7 @@
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s65"><Data ss:Type="String">ui_Variant_ChainLightning_variant_5_desc</Data></Cell>
     <Cell ss:StyleID="s70"><Data ss:Type="String">Converts base Lightning Damage to Shadow Damage.\n\nIncreases the Curse Chance Score of this Skill.</Data></Cell>
-    <Cell ss:StyleID="s65"><Data ss:Type="String">Конвертирует базовый урон молнией в урон тенью.\n\nУвеличивает рейтинг проклятия данным умением.</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Конвертирует базовый урон молнией в урон тенью.\n\nУвеличивает рейтинг шанса наложения проклятия данным умением.</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s65"><Data ss:Type="String">ui_Variant_ChainLightning_variant_5_Lore</Data></Cell>
@@ -1996,7 +1997,7 @@
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s65"><Data ss:Type="String">ui_Variant_ChainLightning_variant_6_desc</Data></Cell>
     <Cell ss:StyleID="s70"><Data ss:Type="String">Increases the Ailment Chance Score of this Skill.</Data></Cell>
-    <Cell ss:StyleID="s65"><Data ss:Type="String">Увеличивает рейтинг наложения негативных состояний данным умением.</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Увеличивает рейтинг шанса наложения негативных состояний данным умением.</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s65"><Data ss:Type="String">ui_Variant_ChainLightning_variant_7</Data></Cell>
@@ -2006,7 +2007,7 @@
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s65"><Data ss:Type="String">ui_Variant_ChainLightning_variant_7_desc</Data></Cell>
     <Cell ss:StyleID="s70"><Data ss:Type="String">Increases the Critical Chance Score of this Skill.</Data></Cell>
-    <Cell ss:StyleID="s65"><Data ss:Type="String">Увеличивает рейтинг критического урона данного умения.</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Увеличивает рейтинг шанса нанесения критического урона данным умением.</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s65"><Data ss:Type="String">ui_Variant_ChainLightning_variant_8</Data></Cell>
@@ -2015,8 +2016,8 @@
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s65"><Data ss:Type="String">ui_Variant_ChainLightning_variant_8_desc</Data></Cell>
-    <Cell ss:StyleID="s70"><Data ss:Type="String">When Cast, this Skill grants a Buff to the Damage you and your Allies deal with the base Damage Type used by this Skill.</Data></Cell>
-    <Cell ss:StyleID="s65"><Data ss:Type="String">Применение умения даёт вам и вашим ближайшим союзникам усиление базового типа урона данного умения.</Data></Cell>
+    <Cell ss:StyleID="s70"><Data ss:Type="String">When Cast, this Skill grants a Buff to the Damage you deal with the base Damage Type used by this Skill. The Lighting can now also bounce between Allies, and when they are Hit, they also receive the Damage Buff. </Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Применение умения даёт вам усиление базового типа урона данного умения. Молния может перескакивать между союзниками и при этом они также получают усиление.</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s65"><Data ss:Type="String">ui_Variant_ChainLightning_variant_8_Lore</Data></Cell>
@@ -2246,7 +2247,7 @@
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s65"><Data ss:Type="String">ui_Variant_Charge_variant_13_desc</Data></Cell>
     <Cell ss:StyleID="s70"><Data ss:Type="String">While charging, this Skill grants a Buff that increases you and your Allies' All Resistances Score.</Data></Cell>
-    <Cell ss:StyleID="s65"><Data ss:Type="String">Во время рывка, данное умение даёт увеличение рейтинга всех сопротивлений для вас и ваших союзников.</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Во время рывка данное умение даёт увеличение рейтинга всех сопротивлений для вас и ваших союзников.</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s65"><Data ss:Type="String">ui_Variant_Charge_variant_14</Data></Cell>
@@ -2256,7 +2257,7 @@
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s65"><Data ss:Type="String">ui_Variant_Charge_variant_14_desc</Data></Cell>
     <Cell ss:StyleID="s70"><Data ss:Type="String">Increases the Critical Chance Score of this Skill.</Data></Cell>
-    <Cell ss:StyleID="s65"><Data ss:Type="String">Увеличивает рейтинг критического урона данного умения.</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Увеличивает рейтинг шанса нанесения критического урона данным умением.</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s65"><Data ss:Type="String">ui_Variant_Charge_variant_15</Data></Cell>
@@ -2511,7 +2512,7 @@
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s65"><Data ss:Type="String">ui_Variant_DualStrike_variant_5_desc</Data></Cell>
     <Cell ss:StyleID="s70"><Data ss:Type="String">Converts base Physical Damage to Shadow Damage.\n\nIncreases the Curse Chance Score of this Skill.</Data></Cell>
-    <Cell ss:StyleID="s65"><Data ss:Type="String">Конвертирует базовый физический урон в урон тенью.\n\nУвеличивает рейтинг проклятия данным умением.</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Конвертирует базовый физический урон в урон тенью.\n\nУвеличивает рейтинг шанса наложения проклятия данным умением.</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s65"><Data ss:Type="String">ui_Variant_DualStrike_variant_5_Lore</Data></Cell>
@@ -2536,7 +2537,7 @@
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s65"><Data ss:Type="String">ui_Variant_DualStrike_variant_7_desc</Data></Cell>
     <Cell ss:StyleID="s70"><Data ss:Type="String">Increases the Critical Chance Score of this Skill.</Data></Cell>
-    <Cell ss:StyleID="s65"><Data ss:Type="String">Увеличивает рейтинг критического урона данного умения.</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Увеличивает рейтинг шанса нанесения критического урона данным умением.</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s65"><Data ss:Type="String">ui_Variant_DualStrike_variant_8</Data></Cell>
@@ -2611,7 +2612,7 @@
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s65"><Data ss:Type="String">ui_Variant_DualStrike_variant_14_desc</Data></Cell>
     <Cell ss:StyleID="s70"><Data ss:Type="String">Increases the Ailment Chance Score of this Skill.</Data></Cell>
-    <Cell ss:StyleID="s65"><Data ss:Type="String">Увеличивает рейтинг наложения негативных состояний данным умением.</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Увеличивает рейтинг шанса наложения негативных состояний данным умением.</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s65"><Data ss:Type="String">ui_Variant_DualStrike_variant_15</Data></Cell>
@@ -2701,7 +2702,7 @@
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s65"><Data ss:Type="String">ui_Variant_Fireball_variant_6_desc</Data></Cell>
     <Cell ss:StyleID="s70"><Data ss:Type="String">Increases the Ailment Chance Score of this Skill.</Data></Cell>
-    <Cell ss:StyleID="s65"><Data ss:Type="String">Увеличивает рейтинг наложения негативных состояний данным умением.</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Увеличивает рейтинг шанса наложения негативных состояний данным умением.</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s65"><Data ss:Type="String">ui_Variant_Fireball_variant_7</Data></Cell>
@@ -2711,7 +2712,7 @@
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s65"><Data ss:Type="String">ui_Variant_Fireball_variant_7_desc</Data></Cell>
     <Cell ss:StyleID="s70"><Data ss:Type="String">Increases the Critical Chance Score of this Skill.</Data></Cell>
-    <Cell ss:StyleID="s65"><Data ss:Type="String">Увеличивает рейтинг критического урона данного умения.</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Увеличивает рейтинг шанса нанесения критического урона данным умением.</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s65"><Data ss:Type="String">ui_Variant_Fireball_variant_8</Data></Cell>
@@ -2876,7 +2877,7 @@
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s65"><Data ss:Type="String">ui_Variant_FrostComet_variant_6_desc</Data></Cell>
     <Cell ss:StyleID="s70"><Data ss:Type="String">Increases the Ailment Chance Score of this Skill.</Data></Cell>
-    <Cell ss:StyleID="s65"><Data ss:Type="String">Увеличивает рейтинг наложения негативных состояний данным умением.</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Увеличивает рейтинг шанса наложения негативных состояний данным умением.</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s65"><Data ss:Type="String">ui_Variant_FrostComet_variant_7</Data></Cell>
@@ -2886,7 +2887,7 @@
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s65"><Data ss:Type="String">ui_Variant_FrostComet_variant_7_desc</Data></Cell>
     <Cell ss:StyleID="s70"><Data ss:Type="String">Increases the Critical Chance Score of this Skill.</Data></Cell>
-    <Cell ss:StyleID="s65"><Data ss:Type="String">Увеличивает рейтинг критического урона данного умения.</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Увеличивает рейтинг шанса нанесения критического урона данным умением.</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s65"><Data ss:Type="String">ui_Variant_FrostComet_variant_8</Data></Cell>
@@ -3046,7 +3047,7 @@
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s65"><Data ss:Type="String">ui_Variant_FrostLance_variant_5_desc</Data></Cell>
     <Cell ss:StyleID="s70"><Data ss:Type="String">Converts base Frost Damage to Sacred Damage.\n\nIncreases the Weakness Chance Score of this Skill.</Data></Cell>
-    <Cell ss:StyleID="s65"><Data ss:Type="String">Конвертирует базовый урон холодом в святой урон.\n\nУвеличивает рейтинг ослабления данным умением.</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Конвертирует базовый урон холодом в святой урон.\n\nУвеличивает рейтинг шанса наложения ослабления данным умением.</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s65"><Data ss:Type="String">ui_Variant_FrostLance_variant_5_Lore</Data></Cell>
@@ -3061,7 +3062,7 @@
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s65"><Data ss:Type="String">ui_Variant_FrostLance_variant_6_desc</Data></Cell>
     <Cell ss:StyleID="s70"><Data ss:Type="String">Increases the Ailment Chance Score of this Skill.</Data></Cell>
-    <Cell ss:StyleID="s65"><Data ss:Type="String">Увеличивает рейтинг наложения негативных состояний данным умением.</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Увеличивает рейтинг шанса наложения негативных состояний данным умением.</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s65"><Data ss:Type="String">ui_Variant_FrostLance_variant_7</Data></Cell>
@@ -3071,7 +3072,7 @@
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s65"><Data ss:Type="String">ui_Variant_FrostLance_variant_7_desc</Data></Cell>
     <Cell ss:StyleID="s70"><Data ss:Type="String">Increases the Critical Chance Score of this Skill.</Data></Cell>
-    <Cell ss:StyleID="s65"><Data ss:Type="String">Увеличивает рейтинг критического урона данного умения.</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Увеличивает рейтинг шанса нанесения критического урона данным умением.</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s65"><Data ss:Type="String">ui_Variant_FrostLance_variant_8</Data></Cell>
@@ -3221,7 +3222,7 @@
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s65"><Data ss:Type="String">ui_Variant_FrostNova_variant_5_desc</Data></Cell>
     <Cell ss:StyleID="s70"><Data ss:Type="String">Converts base Frost Damage to Shadow Damage.\n\nIncreases the Curse Chance Score of this Skill.</Data></Cell>
-    <Cell ss:StyleID="s65"><Data ss:Type="String">Конвертирует базовый урон холодом в урон тенью.\n\nУвеличивает рейтинг проклятия данным умением.</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Конвертирует базовый урон холодом в урон тенью.\n\nУвеличивает рейтинг шанса наложения проклятия данным умением.</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s65"><Data ss:Type="String">ui_Variant_FrostNova_variant_5_Lore</Data></Cell>
@@ -3291,7 +3292,7 @@
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s65"><Data ss:Type="String">ui_Variant_FrostNova_variant_11_desc</Data></Cell>
     <Cell ss:StyleID="s70"><Data ss:Type="String">Increases the Critical Chance Score of this Skill.</Data></Cell>
-    <Cell ss:StyleID="s65"><Data ss:Type="String">Увеличивает рейтинг критического урона данного умения.</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Увеличивает рейтинг шанса нанесения критического урона данным умением.</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s65"><Data ss:Type="String">ui_Variant_FrostNova_variant_12</Data></Cell>
@@ -3311,7 +3312,7 @@
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s65"><Data ss:Type="String">ui_Variant_FrostNova_variant_13_desc</Data></Cell>
     <Cell ss:StyleID="s70"><Data ss:Type="String">Increases the Ailment Chance Score of this Skill.</Data></Cell>
-    <Cell ss:StyleID="s65"><Data ss:Type="String">Увеличивает рейтинг наложения негативных состояний данным умением.</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Увеличивает рейтинг шанса наложения негативных состояний данным умением.</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s65"><Data ss:Type="String">ui_Variant_FrostNova_variant_14</Data></Cell>
@@ -3546,7 +3547,7 @@
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s65"><Data ss:Type="String">ui_Variant_Laceration_variant_3_desc</Data></Cell>
     <Cell ss:StyleID="s70"><Data ss:Type="String">Increases the Bleed Chance Score of this Skill.</Data></Cell>
-    <Cell ss:StyleID="s65"><Data ss:Type="String">Увеличивает рейтинг наложения кровотечения данным умением.</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Увеличивает рейтинг шанса наложения кровотечения данным умением.</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s65"><Data ss:Type="String">ui_Variant_Laceration_variant_4</Data></Cell>
@@ -3596,7 +3597,7 @@
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s65"><Data ss:Type="String">ui_Variant_Laceration_variant_7_desc</Data></Cell>
     <Cell ss:StyleID="s70"><Data ss:Type="String">Increases the Critical Chance Score of this Skill.</Data></Cell>
-    <Cell ss:StyleID="s65"><Data ss:Type="String">Увеличивает рейтинг критического урона данного умения.</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Увеличивает рейтинг шанса нанесения критического урона данным умением.</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s65"><Data ss:Type="String">ui_Variant_Laceration_variant_8</Data></Cell>
@@ -3816,7 +3817,7 @@
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s65"><Data ss:Type="String">ui_Variant_Laser_variant_11_desc</Data></Cell>
     <Cell ss:StyleID="s70"><Data ss:Type="String">Increases the Critical Chance Score of this Skill.</Data></Cell>
-    <Cell ss:StyleID="s65"><Data ss:Type="String">Увеличивает рейтинг критического урона данного умения.</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Увеличивает рейтинг шанса нанесения критического урона данным умением.</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s65"><Data ss:Type="String">ui_Variant_Laser_variant_12</Data></Cell>
@@ -3826,7 +3827,7 @@
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s65"><Data ss:Type="String">ui_Variant_Laser_variant_12_desc</Data></Cell>
     <Cell ss:StyleID="s70"><Data ss:Type="String">Increases the Ailment Chance Score of this Skill.</Data></Cell>
-    <Cell ss:StyleID="s65"><Data ss:Type="String">Увеличивает рейтинг наложения негативных состояний данным умением.</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Увеличивает рейтинг шанса наложения негативных состояний данным умением.</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s65"><Data ss:Type="String">ui_Variant_Laser_variant_13</Data></Cell>
@@ -3921,7 +3922,7 @@
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s65"><Data ss:Type="String">ui_Variant_Leap_variant_5_desc</Data></Cell>
     <Cell ss:StyleID="s70"><Data ss:Type="String">Converts base Physical Damage to Sacred Damage.\n\nIncreases the Weakness Chance Score of this Skill.</Data></Cell>
-    <Cell ss:StyleID="s65"><Data ss:Type="String">Конвертирует базовый физический урон в святой урон\n\nУвеличивает рейтинг наложения ослабления данным умением.</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Конвертирует базовый физический урон в святой урон\n\nУвеличивает рейтинг шанса наложения ослабления данным умением.</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s65"><Data ss:Type="String">ui_Variant_Leap_variant_5_Lore</Data></Cell>
@@ -4036,7 +4037,7 @@
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s65"><Data ss:Type="String">ui_Variant_Leap_variant_15_desc</Data></Cell>
     <Cell ss:StyleID="s70"><Data ss:Type="String">Increases the Ailment Chance Score of this Skill.</Data></Cell>
-    <Cell ss:StyleID="s65"><Data ss:Type="String">Увеличивает рейтинг наложения негативных состояний данным умением.</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Увеличивает рейтинг шанса наложения негативных состояний данным умением.</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s65"><Data ss:Type="String">ui_Variant_Leap_variant_16</Data></Cell>
@@ -4101,7 +4102,7 @@
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s65"><Data ss:Type="String">ui_Variant_Reave_variant_5_desc</Data></Cell>
     <Cell ss:StyleID="s70"><Data ss:Type="String">Converts base Physical Damage to Sacred Damage.\n\nIncreases the Weakness Chance Score of this Skill.</Data></Cell>
-    <Cell ss:StyleID="s65"><Data ss:Type="String">Конвертирует базовый физический урон в святой урон.\n\nУвеличивает рейтинг ослабления данным умением.</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Конвертирует базовый физический урон в святой урон.\n\nУвеличивает рейтинг шанса наложения ослабления данным умением.</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s65"><Data ss:Type="String">ui_Variant_Reave_variant_5_Lore</Data></Cell>
@@ -4116,7 +4117,7 @@
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s65"><Data ss:Type="String">ui_Variant_Reave_variant_6_desc</Data></Cell>
     <Cell ss:StyleID="s70"><Data ss:Type="String">Increases the Ailment Chance Score of this Skill.</Data></Cell>
-    <Cell ss:StyleID="s65"><Data ss:Type="String">Увеличивает рейтинг наложения негативных состояний данным умением.</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Увеличивает рейтинг шанса наложения негативных состояний данным умением.</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s65"><Data ss:Type="String">ui_Variant_Reave_variant_7</Data></Cell>
@@ -4181,7 +4182,7 @@
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s65"><Data ss:Type="String">ui_Variant_Reave_variant_12_desc</Data></Cell>
     <Cell ss:StyleID="s70"><Data ss:Type="String">Increases the Critical Chance Score of this Skill.</Data></Cell>
-    <Cell ss:StyleID="s65"><Data ss:Type="String">Увеличивает рейтинг критического урона данного умения.</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Увеличивает рейтинг шанса нанесения критического урона данным умением.</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s65"><Data ss:Type="String">ui_Variant_Reave_variant_13</Data></Cell>
@@ -4221,7 +4222,7 @@
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s65"><Data ss:Type="String">ui_Variant_Reave_variant_16_desc</Data></Cell>
     <Cell ss:StyleID="s70"><Data ss:Type="String">Increases the Damage dealt with this Skill.\n\nDecreases the Critical Chance Score of this Skill.</Data></Cell>
-    <Cell ss:StyleID="s65"><Data ss:Type="String">Увеличивает урон, наносимый умением.\n\nСнижает рейтинг критического урона данного умения.</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Увеличивает урон, наносимый умением.\n\nСнижает рейтинг шанса нанесения критического урона данным умением.</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s65"><Data ss:Type="String">ui_Variant_SacredGround_variant_1</Data></Cell>
@@ -4326,7 +4327,7 @@
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s65"><Data ss:Type="String">ui_Variant_SacredGround_variant_9_desc</Data></Cell>
     <Cell ss:StyleID="s70"><Data ss:Type="String">While inside this Skill's Area-of-Effect, your Ailment Chance Score is increased.</Data></Cell>
-    <Cell ss:StyleID="s65"><Data ss:Type="String">Увеличивает ваш рейтинг наложения негативных состояний, пока вы внутри области действия умения.</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Увеличивает рейтинг шанса наложения негативных состояний, пока вы внутри области действия умения.</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s65"><Data ss:Type="String">ui_Variant_SacredGround_variant_10</Data></Cell>
@@ -4466,7 +4467,7 @@
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s65"><Data ss:Type="String">ui_Variant_SpreadShot_variant_6_desc</Data></Cell>
     <Cell ss:StyleID="s70"><Data ss:Type="String">Increases the Ailment Chance Score of this Skill.</Data></Cell>
-    <Cell ss:StyleID="s65"><Data ss:Type="String">Увеличивает рейтинг наложения негативных состояний данным умением.</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Увеличивает рейтинг шанса наложения негативных состояний данным умением.</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s65"><Data ss:Type="String">ui_Variant_SpreadShot_variant_7</Data></Cell>
@@ -4566,7 +4567,7 @@
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s65"><Data ss:Type="String">ui_Variant_SpreadShot_variant_15_desc</Data></Cell>
     <Cell ss:StyleID="s70"><Data ss:Type="String">Increases the Critical Chance Score of this Skill.</Data></Cell>
-    <Cell ss:StyleID="s65"><Data ss:Type="String">Увеличивает рейтинг критического урона данного умения.</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Увеличивает рейтинг шанса нанесения критического урона данным умением.</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s65"><Data ss:Type="String">ui_Variant_SpreadShot_variant_16</Data></Cell>
@@ -4641,7 +4642,7 @@
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s65"><Data ss:Type="String">ui_Variant_Teleport_variant_6_desc</Data></Cell>
     <Cell ss:StyleID="s70"><Data ss:Type="String">Aether Damage is dealt to Enemies between the start and end points of the teleport. \n\nIncreases the Stasis Chance Score of this Skill.</Data></Cell>
-    <Cell ss:StyleID="s65"><Data ss:Type="String">Урон эфиром наносится всем врагам между начальной и конечной точками телепорта.\n\nУвеличивает рейтинг наложения стазиса данным умением.</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Урон эфиром наносится всем врагам между начальной и конечной точками телепорта.\n\nУвеличивает рейтинг шанса наложения стазиса данным умением.</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s65"><Data ss:Type="String">ui_Variant_Teleport_variant_7</Data></Cell>
@@ -4891,7 +4892,7 @@
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s65"><Data ss:Type="String">ui_Variant_Turret_variant_12_desc</Data></Cell>
     <Cell ss:StyleID="s70"><Data ss:Type="String">Increases the Ailment Chance Score of this Skill.</Data></Cell>
-    <Cell ss:StyleID="s65"><Data ss:Type="String">Увеличивает рейтинг наложения негативных состояний данным умением.</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Увеличивает рейтинг шанса наложения негативных состояний данным умением.</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s65"><Data ss:Type="String">ui_Variant_Turret_variant_13</Data></Cell>
@@ -4921,7 +4922,7 @@
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s65"><Data ss:Type="String">ui_Variant_Turret_variant_15_desc</Data></Cell>
     <Cell ss:StyleID="s70"><Data ss:Type="String">Increases the Critical Chance Score of this Skill.</Data></Cell>
-    <Cell ss:StyleID="s65"><Data ss:Type="String">Увеличивает рейтинг критического урона данного умения.</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Увеличивает рейтинг шанса нанесения критического урона данным умением.</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s65"><Data ss:Type="String">ui_Variant_Turret_variant_16</Data></Cell>
@@ -5051,7 +5052,7 @@
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s65"><Data ss:Type="String">ui_Variant_WarCry_variant_11_desc</Data></Cell>
     <Cell ss:StyleID="s70"><Data ss:Type="String">The warcry grants a Buff to your Critical Chance Score.</Data></Cell>
-    <Cell ss:StyleID="s65"><Data ss:Type="String">Возглас даёт увеличение рейтинга критического урона.</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Возглас даёт увеличение рейтинга шанса нанесения критического урона.</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s65"><Data ss:Type="String">ui_Variant_WarCry_variant_12</Data></Cell>
@@ -5166,7 +5167,7 @@
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s65"><Data ss:Type="String">ui_Variant_WhirlWind_variant_5_desc</Data></Cell>
     <Cell ss:StyleID="s70"><Data ss:Type="String">Increases the Ailment Chance Score of this Skill.</Data></Cell>
-    <Cell ss:StyleID="s65"><Data ss:Type="String">Увеличивает рейтинг наложения негативных состояний данным умением.</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Увеличивает рейтинг шанса наложения негативных состояний данным умением.</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s65"><Data ss:Type="String">ui_Variant_WhirlWind_variant_6</Data></Cell>
@@ -5246,7 +5247,7 @@
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s65"><Data ss:Type="String">ui_Variant_WhirlWind_variant_13_desc</Data></Cell>
     <Cell ss:StyleID="s70"><Data ss:Type="String">Increases your Critical Chance Score when an Enemy is killed with this Skill.</Data></Cell>
-    <Cell ss:StyleID="s65"><Data ss:Type="String">Увеличивает ваш рейтинг критического урона при убийстве врага данным умением.</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Увеличивает рейтинг шанса нанесения критического урона при убийстве врага данным умением.</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s65"><Data ss:Type="String">ui_Variant_WhirlWind_variant_14</Data></Cell>
@@ -5290,8 +5291,8 @@
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s65"><Data ss:Type="String">ui_Variant_AetherBlade_variant_1_desc</Data></Cell>
-    <Cell ss:StyleID="s70"><Data ss:Type="String">Adds an additional attack to this Skill's combo that deals Damage in an Area-of-Effect around the player.</Data></Cell>
-    <Cell ss:StyleID="s65"><Data ss:Type="String">К серии атак добавляется ещё одна атака, наносящая урон в области вокруг игрока.</Data></Cell>
+    <Cell ss:StyleID="s70"><Data ss:Type="String">Adds an additional attack to this Skill's combo.</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">К серии атак добавляется ещё одна атака.</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s65"><Data ss:Type="String">ui_Variant_AetherBlade_variant_2</Data></Cell>
@@ -5431,7 +5432,7 @@
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s65"><Data ss:Type="String">ui_Variant_AetherBlade_variant_14_desc</Data></Cell>
     <Cell ss:StyleID="s70"><Data ss:Type="String">Converts base Aether Damage into Shadow Damage.\n\nIncreases the Curse Chance Score of this Skill.</Data></Cell>
-    <Cell ss:StyleID="s65"><Data ss:Type="String">Конвертирует базовый урон эфиром в урон тенью.\n\nУвеличивает рейтинг проклятия данным умением.</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Конвертирует базовый урон эфиром в урон тенью.\n\nУвеличивает рейтинг шанса наложения проклятия данным умением.</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s65"><Data ss:Type="String">ui_Variant_AetherBlade_variant_14_lore</Data></Cell>
@@ -5501,7 +5502,7 @@
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s65"><Data ss:Type="String">ui_Variant_Possession_variant_4_desc</Data></Cell>
     <Cell ss:StyleID="s70"><Data ss:Type="String">Increases the Ailment Chance Score of this Skill.</Data></Cell>
-    <Cell ss:StyleID="s65"><Data ss:Type="String">Увеличивает рейтинг наложения негативных состояний данным умением.</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Увеличивает рейтинг шанса наложения негативных состояний данным умением.</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s65"><Data ss:Type="String">ui_Variant_Possession_variant_5</Data></Cell>
@@ -5566,7 +5567,7 @@
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s65"><Data ss:Type="String">ui_Variant_Possession_variant_10_desc</Data></Cell>
     <Cell ss:StyleID="s70"><Data ss:Type="String">Converts base Toxic Damage to Shadow Damage.\n\nIncreases the Curse Chance Score of this Skill.</Data></Cell>
-    <Cell ss:StyleID="s65"><Data ss:Type="String">Конвертирует базовый урон ядом в урон тенью.\n\nУвеличивает рейтинг проклятия данным умением.</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Конвертирует базовый урон ядом в урон тенью.\n\nУвеличивает рейтинг шанса наложения проклятия данным умением.</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s65"><Data ss:Type="String">ui_Variant_Possession_variant_10_lore</Data></Cell>
@@ -5611,7 +5612,7 @@
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s65"><Data ss:Type="String">ui_Variant_Possession_variant_14_desc</Data></Cell>
     <Cell ss:StyleID="s70"><Data ss:Type="String">Increases the Critical Chance Score of this Skill.</Data></Cell>
-    <Cell ss:StyleID="s65"><Data ss:Type="String">Увеличивает рейтинг критического урона данного умения.</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Увеличивает рейтинг шанса нанесения критического урона данным умением.</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s65"><Data ss:Type="String">ui_Variant_Possession_variant_15</Data></Cell>
@@ -6081,7 +6082,7 @@
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s65"><Data ss:Type="String">ui_Variant_SummonChampion_variant_6_desc</Data></Cell>
     <Cell ss:StyleID="s70"><Data ss:Type="String">Increases Summons' Ailment Chance Score.</Data></Cell>
-    <Cell ss:StyleID="s65"><Data ss:Type="String">Увеличивает рейтинг наложения негативных состояний призванными существами.</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Увеличивает рейтинг шанса наложения негативных состояний призванными существами.</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s65"><Data ss:Type="String">ui_Variant_SummonChampion_variant_7</Data></Cell>
@@ -6326,7 +6327,7 @@
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s65"><Data ss:Type="String">ui_Variant_Vortex_variant_13_desc</Data></Cell>
     <Cell ss:StyleID="s70"><Data ss:Type="String">Increases the Ailment Chance Score of this Skill.</Data></Cell>
-    <Cell ss:StyleID="s65"><Data ss:Type="String">Увеличивает рейтинг наложения негативных состояний данным умением.</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Увеличивает рейтинг шанса наложения негативных состояний данным умением.</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s65"><Data ss:Type="String">ui_Variant_Vortex_variant_14</Data></Cell>
@@ -6346,7 +6347,7 @@
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s65"><Data ss:Type="String">ui_Variant_Vortex_variant_15_desc</Data></Cell>
     <Cell ss:StyleID="s70"><Data ss:Type="String">Increases the Critical Chance Score of this Skill.</Data></Cell>
-    <Cell ss:StyleID="s65"><Data ss:Type="String">Увеличивает рейтинг критического урона данного умения.</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Увеличивает рейтинг шанса нанесения критического урона данным умением.</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s65"><Data ss:Type="String">ui_Variant_Vortex_variant_16</Data></Cell>
@@ -6395,8 +6396,8 @@
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s65"><Data ss:Type="String">ui_Variant_CorpseExplosion_variant_4</Data></Cell>
-    <Cell ss:StyleID="s66"><Data ss:Type="String">Noxious Smog</Data></Cell>
-    <Cell ss:StyleID="s65"><Data ss:Type="String">Пагубный смог</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="String">Foul Guardian</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Заразный Страж</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s65"><Data ss:Type="String">ui_Variant_CorpseExplosion_variant_4_desc</Data></Cell>
@@ -6410,8 +6411,8 @@
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s65"><Data ss:Type="String">ui_Variant_CorpseExplosion_variant_5_desc</Data></Cell>
-    <Cell ss:StyleID="s70"><Data ss:Type="String">When this Skill's Area-of-Effect explodes, there is a Chance that Allies  within its Area-of-Effect will receive a Buff that will increase their Ailment Chance Score.</Data></Cell>
-    <Cell ss:StyleID="s65"><Data ss:Type="String">При взрыве области действия умения, даёт шанс получения усиления рейтинга негативных эффектов для союзников внутри области действия.</Data></Cell>
+    <Cell ss:StyleID="s70"><Data ss:Type="String">When Cast, you and Allies within this Skill's Area-of-Effect will receive a Buff that increases Ailment Chance Score.</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">При использовании умение даёт вам и союзникам в области действия умения усиление, увеличивающее рейтинг шанса наложения негативных состояний.</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s65"><Data ss:Type="String">ui_Variant_CorpseExplosion_variant_6</Data></Cell>
@@ -6501,7 +6502,7 @@
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s65"><Data ss:Type="String">ui_Variant_CorpseExplosion_variant_13_desc</Data></Cell>
     <Cell ss:StyleID="s70"><Data ss:Type="String">Increases the Ailment Chance Score of this Skill.</Data></Cell>
-    <Cell ss:StyleID="s65"><Data ss:Type="String">Увеличивает рейтинг наложения негативных состояний данным умением.</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Увеличивает рейтинг шанса наложения негативных состояний данным умением.</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s65"><Data ss:Type="String">ui_Variant_CorpseExplosion_variant_14</Data></Cell>
@@ -6521,7 +6522,7 @@
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s65"><Data ss:Type="String">ui_Variant_CorpseExplosion_variant_15_desc</Data></Cell>
     <Cell ss:StyleID="s70"><Data ss:Type="String">Increases the Critical Chance Score of this Skill.</Data></Cell>
-    <Cell ss:StyleID="s65"><Data ss:Type="String">Увеличивает рейтинг критического урона данного умения.</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Увеличивает рейтинг шанса нанесения критического урона данным умением.</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s65"><Data ss:Type="String">ui_Variant_CorpseExplosion_variant_16</Data></Cell>
@@ -6626,7 +6627,7 @@
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s65"><Data ss:Type="String">ui_Variant_Solarfall_variant_9_desc</Data></Cell>
     <Cell ss:StyleID="s70"><Data ss:Type="String">Increases the Ailment Chance Score of this Skill.</Data></Cell>
-    <Cell ss:StyleID="s65"><Data ss:Type="String">Увеличивает рейтинг наложения негативных состояний данным умением.</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Увеличивает рейтинг шанса наложения негативных состояний данным умением.</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s65"><Data ss:Type="String">ui_Variant_Solarfall_variant_10</Data></Cell>
@@ -6696,7 +6697,7 @@
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s65"><Data ss:Type="String">ui_Variant_Solarfall_variant_15_desc</Data></Cell>
     <Cell ss:StyleID="s70"><Data ss:Type="String">Increases the Critical Chance Score of this Skill.</Data></Cell>
-    <Cell ss:StyleID="s65"><Data ss:Type="String">Увеличивает рейтинг критического урона данного умения.</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Увеличивает рейтинг шанса нанесения критического урона данным умением.</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s65"><Data ss:Type="String">ui_Variant_Solarfall_variant_16</Data></Cell>
@@ -6760,7 +6761,7 @@
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s65"><Data ss:Type="String">ui_Variant_Vault_variant_5_desc</Data></Cell>
-    <Cell ss:StyleID="s70"><Data ss:Type="String">When Cats. this Skill breaks any Crowd Control Effects you are affected by.</Data></Cell>
+    <Cell ss:StyleID="s70"><Data ss:Type="String">When Cast, this Skill breaks any Crowd Control Effects you are affected by.</Data></Cell>
     <Cell ss:StyleID="s65"><Data ss:Type="String">При применении умение снимает с вас все эффекты контроля.</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
@@ -6996,7 +6997,7 @@
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s65"><Data ss:Type="String">ui_Variant_Sniper_variant_10_desc</Data></Cell>
     <Cell ss:StyleID="s70"><Data ss:Type="String">Increases the Critical Chance Score of this Skill for each charge level reached.</Data></Cell>
-    <Cell ss:StyleID="s65"><Data ss:Type="String">Увеличивает рейтинг критического урона умения за каждый уровень заряда.</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Увеличивает рейтинг шанса нанесения критического урона данным умением за каждый уровень заряда.</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s65"><Data ss:Type="String">ui_Variant_Sniper_variant_11</Data></Cell>
@@ -7041,7 +7042,7 @@
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s65"><Data ss:Type="String">ui_Variant_Sniper_variant_14_desc</Data></Cell>
     <Cell ss:StyleID="s70"><Data ss:Type="String">Increases the Ailment Chance Score of this Skill.</Data></Cell>
-    <Cell ss:StyleID="s65"><Data ss:Type="String">Увеличивает рейтинг наложения негативных состояний данным умением.</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Увеличивает рейтинг шанса наложения негативных состояний данным умением.</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s65"><Data ss:Type="String">ui_Variant_Sniper_variant_15</Data></Cell>
@@ -7171,7 +7172,7 @@
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s65"><Data ss:Type="String">ui_Variant_Hammer_variant_10_desc</Data></Cell>
     <Cell ss:StyleID="s70"><Data ss:Type="String">Increases the Critical Chance Score of this Skill based on your Block Chance.</Data></Cell>
-    <Cell ss:StyleID="s65"><Data ss:Type="String">Увеличивает рейтинг критического урона данного умения пропорционально вашему шансу блокирования.</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Увеличивает рейтинг шанса нанесения критического урона данным умением пропорционально вашему шансу блокирования.</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s65"><Data ss:Type="String">ui_Variant_Hammer_variant_11</Data></Cell>
@@ -7226,7 +7227,7 @@
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s65"><Data ss:Type="String">ui_Variant_Hammer_variant_15_desc</Data></Cell>
     <Cell ss:StyleID="s70"><Data ss:Type="String">Increases the Ailment Chance Score of this Skill.</Data></Cell>
-    <Cell ss:StyleID="s65"><Data ss:Type="String">Увеличивает рейтинг наложения негативных состояний данным умением.</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Увеличивает рейтинг шанса наложения негативных состояний данным умением.</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s65"><Data ss:Type="String">ui_Variant_Hammer_variant_16</Data></Cell>
@@ -7341,7 +7342,7 @@
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s65"><Data ss:Type="String">ui_Variant_RingOfPain_variant_10_desc</Data></Cell>
     <Cell ss:StyleID="s70"><Data ss:Type="String">Increases the Ailment Chance Score of this Skill.</Data></Cell>
-    <Cell ss:StyleID="s65"><Data ss:Type="String">Увеличивает рейтинг наложения негативных состояний данным умением.</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Увеличивает рейтинг шанса наложения негативных состояний данным умением.</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s65"><Data ss:Type="String">ui_Variant_RingOfPain_variant_11</Data></Cell>
@@ -7396,7 +7397,7 @@
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s65"><Data ss:Type="String">ui_Variant_RingOfPain_variant_15_desc</Data></Cell>
     <Cell ss:StyleID="s70"><Data ss:Type="String">Converts base Rend Damage to Shadow Damage.\n\nIncreases the Curse Chance Score of this Skill.</Data></Cell>
-    <Cell ss:StyleID="s65"><Data ss:Type="String">Конвертирует базовый урон рваными ранами в урон тенью.\n\nУвеличивает рейтинг проклятия данным умением.</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Конвертирует базовый урон рваными ранами в урон тенью.\n\nУвеличивает рейтинг шанса наложения проклятия данным умением.</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s65"><Data ss:Type="String">ui_Variant_RingOfPain_variant_15_Lore</Data></Cell>
@@ -7491,7 +7492,7 @@
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s65"><Data ss:Type="String">ui_Variant_HolyDive_variant_7_desc</Data></Cell>
     <Cell ss:StyleID="s70"><Data ss:Type="String">Adds a Weakness Chance Score to this Skill.</Data></Cell>
-    <Cell ss:StyleID="s65"><Data ss:Type="String">Добавляет рейтинг ослабления данному умению.</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Добавляет рейтинг шанса наложения ослабления данному умению.</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s65"><Data ss:Type="String">ui_Variant_HolyDive_variant_8</Data></Cell>
@@ -7541,7 +7542,7 @@
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s65"><Data ss:Type="String">ui_Variant_HolyDive_variant_12_desc</Data></Cell>
     <Cell ss:StyleID="s70"><Data ss:Type="String">Converts base Sacred Damage to Aether Damage.\n\nIncreases the Stasis Chance Score of this Skill.</Data></Cell>
-    <Cell ss:StyleID="s65"><Data ss:Type="String">Конвертирует базовый святой урон в урон эфиром.\n\nУвеличивает рейтинг наложения стазиса данным умением.</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Конвертирует базовый святой урон в урон эфиром.\n\nУвеличивает рейтинг шанса наложения стазиса данным умением.</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s65"><Data ss:Type="String">ui_Variant_HolyDive_variant_12_Lore</Data></Cell>
@@ -7566,7 +7567,7 @@
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s65"><Data ss:Type="String">ui_Variant_HolyDive_variant_14_desc</Data></Cell>
     <Cell ss:StyleID="s70"><Data ss:Type="String">Increases the Ailment Chance Score of this Skill.</Data></Cell>
-    <Cell ss:StyleID="s65"><Data ss:Type="String">Увеличивает рейтинг наложения негативных состояний данным умением.</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Увеличивает рейтинг шанса наложения негативных состояний данным умением.</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s65"><Data ss:Type="String">ui_Variant_HolyDive_variant_15</Data></Cell>
@@ -7576,7 +7577,7 @@
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s65"><Data ss:Type="String">ui_Variant_HolyDive_variant_15_desc</Data></Cell>
     <Cell ss:StyleID="s70"><Data ss:Type="String">Increases the Critical Chance Score of this Skill.</Data></Cell>
-    <Cell ss:StyleID="s65"><Data ss:Type="String">Увеличивает рейтинг критического урона данного умения.</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Увеличивает рейтинг шанса нанесения критического урона данным умением.</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s65"><Data ss:Type="String">ui_Variant_HolyDive_variant_16</Data></Cell>
@@ -8046,7 +8047,7 @@
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s65"><Data ss:Type="String">ui_Variant_AetherBlast_variant_10_desc</Data></Cell>
     <Cell ss:StyleID="s70"><Data ss:Type="String">Increases the Ailment Chance Score of this Skill.</Data></Cell>
-    <Cell ss:StyleID="s65"><Data ss:Type="String">Увеличивает рейтинг наложения негативных состояний данным умением.</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Увеличивает рейтинг шанса наложения негативных состояний данным умением.</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s65"><Data ss:Type="String">ui_Variant_AetherBlast_variant_11</Data></Cell>
@@ -8076,7 +8077,7 @@
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s65"><Data ss:Type="String">ui_Variant_AetherBlast_variant_13_desc</Data></Cell>
     <Cell ss:StyleID="s70"><Data ss:Type="String">Converts base Shadow Damage to Sacred Damage.\n\nIncreases the Weakness Chance Score of this Skill.</Data></Cell>
-    <Cell ss:StyleID="s65"><Data ss:Type="String">Конвертирует базовый урон тенью в святой урон.\n\nУвеличивает рейтинг ослабления данным умением.</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Конвертирует базовый урон тенью в святой урон.\n\nУвеличивает рейтинг шанса наложения ослабления данным умением.</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s65"><Data ss:Type="String">ui_Variant_AetherBlast_variant_13_Lore</Data></Cell>
@@ -8976,7 +8977,7 @@
    <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s73"><Data ss:Type="String">ui_AST_Param_CriticalInflictScore</Data></Cell>
     <Cell ss:StyleID="s67"><Data ss:Type="String">Critical Chance Score: %1</Data></Cell>
-    <Cell ss:StyleID="s65"><Data ss:Type="String">Рейтинг критического урона: %1</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Рейтинг шанса критического урона: %1</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s73"><Data ss:Type="String">ui_AST_Param_ForceShieldOnHit</Data></Cell>
@@ -9226,12 +9227,12 @@
    <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s75"><Data ss:Type="String">ui_criticalchance_attackskill_score_buff_skill</Data></Cell>
     <Cell ss:StyleID="s76"><Data ss:Type="String">Increased Critical Chance on Attacks</Data></Cell>
-    <Cell ss:StyleID="s77"><Data ss:Type="String">Увеличивает шанс критического урона атаками</Data></Cell>
+    <Cell ss:StyleID="s77"><Data ss:Type="String">Увеличивает шанс нанесения критического урона атаками</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s75"><Data ss:Type="String">ui_criticalchance_score_percent_buff_skill</Data></Cell>
     <Cell ss:StyleID="s76"><Data ss:Type="String">Increased Critical Chance</Data></Cell>
-    <Cell ss:StyleID="s77"><Data ss:Type="String">Увеличивает шанс критического урона</Data></Cell>
+    <Cell ss:StyleID="s77"><Data ss:Type="String">Увеличивает шанс нанесения критического урона</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s75"><Data ss:Type="String">ui_criticaldamage_projectiles_pts_buff_skill</Data></Cell>
