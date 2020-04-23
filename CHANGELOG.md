@@ -2,6 +2,10 @@ Changelog
 =========
 
 ---
+
+#### 2020-04-23
+- Updated to Wolcen v1.0.13.0. [Wolcen v1.0.12.0 to v1.0.13.0 source differences.](https://gitlab.com/erosson/wolcendb/-/commit/9ad79454d22621acc16f42f1644b98b078af3a06)
+
 #### 2020-04-10
 - Updated to Wolcen v1.0.12.0. [Wolcen v1.0.11.0 to v1.0.12.0 source differences.](https://gitlab.com/erosson/wolcendb/-/commit/ab4c67e338c4016a5fa44a09dcb0960b6b20bf5b)
 
