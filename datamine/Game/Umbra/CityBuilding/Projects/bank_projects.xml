@@ -19,4 +19,22 @@
     </RewardList>
     <PermanentRewards ChestPanel="1" />
   </Project>
+  <Project Name="restock_merchant_mohabi" CategoryName="restock_merchants" Repeatable="1">
+    <UIParams UIName="@ui_bank_restock_merchants_mohabi" UILore="@ui_bank_restock_merchants_mohabi_lore" IconType="stash" />
+    <Requirements PlayerLevel="0" Projects="bank_construct">
+      <ResourceCost ComputationMethod="Static" Gold="10" Gold_PerPlayerLevel="0" PA="0" PA_PerPlayerLevel="0" ProductionToComplete="10" />
+    </Requirements>
+    <RewardList>
+      <Reward RewardName="restock_merchant_mohabi" Weight="1" />
+    </RewardList>
+  </Project>
+  <Project Name="restock_merchant_zanafer" CategoryName="restock_merchants" Repeatable="1">
+    <UIParams UIName="@ui_bank_restock_merchants_zanafer" UILore="@ui_bank_restock_merchants_zanafer_lore" IconType="stash" />
+    <Requirements PlayerLevel="0" Projects="bank_construct">
+      <ResourceCost ComputationMethod="Static" Gold="10" Gold_PerPlayerLevel="0" PA="0" PA_PerPlayerLevel="0" ProductionToComplete="10" />
+    </Requirements>
+    <RewardList>
+      <Reward RewardName="restock_merchant_zanafer" Weight="1" />
+    </RewardList>
+  </Project>
 </MetaData>

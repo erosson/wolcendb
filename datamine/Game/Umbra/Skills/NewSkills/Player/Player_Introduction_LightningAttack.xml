@@ -4,7 +4,7 @@
     <VisualFeedback FeedbackPresetBase="Player_weapon_1h_shield" TrailPresetBase="shield_swipe" BloodDecalOrientation="left" ForceTrailDamageType="lightning" />
     <HUD HUDPicture="../u_resources/spells/Active_Skills/electrifying_slash.png" UIName="@ui_AST_IntroductionLightningAttack" Lore="@ui_AST_IntroductionLightningAttack_lore" />
     <Aggression TargetValueOnHit="20" />
-    <DamageWeapon PercentMin="170" PercentMinPerLevel="0" PercentMax="190" PercentMaxPerLevel="0" Type="lightning" />
+    <DamageWeapon WeaponMultiplier="1.7" Type="lightning" />
     <Shapes>
       <Entry ShapeName="Shield_1" />
     </Shapes>

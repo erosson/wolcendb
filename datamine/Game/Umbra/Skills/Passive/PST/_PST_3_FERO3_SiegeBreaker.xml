@@ -2,37 +2,31 @@
   <Spell Name="SIEGE_1" UIName="@ui_SIEGE_1_name" HUDLoreDesc="" GameplayDesc="">
     <MagicEffects>
       <EIM Name="all_resistance_score_percent" HUDDesc="@ui_eim_all_resistance_score_percent" Permanent="1">
-        <Semantics CharacteristicScorePercentInt="12" />
+        <Semantics CharacteristicScorePercentInt="5" />
       </EIM>
       <EIM Name="health_percent" HUDDesc="@ui_eim_health_percent" Permanent="1">
-        <Semantics HealthPercentInt="8" />
+        <Semantics HealthPercentInt="5" />
       </EIM>
     </MagicEffects>
   </Spell>
   <Spell Name="SIEGE_2" UIName="@ui_SIEGE_2_name" HUDLoreDesc="" GameplayDesc="">
     <MagicEffects>
       <EIM Name="physical_damage_percent" HUDDesc="@ui_eim_physical_damage_percent" Permanent="1">
-        <Semantics DamagePercentInt="25" />
-      </EIM>
-      <EIM Name="elemental_damage_percent" HUDDesc="@ui_eim_elemental_damage_percent" Permanent="1">
-        <Semantics DamagePercentInt="-10" />
+        <Semantics DamagePercentInt="15" />
       </EIM>
     </MagicEffects>
   </Spell>
   <Spell Name="SIEGE_3" UIName="@ui_SIEGE_3_name" HUDLoreDesc="" GameplayDesc="">
     <MagicEffects>
       <EIM Name="physical_damage_percent" HUDDesc="@ui_eim_physical_damage_percent" Permanent="1">
-        <Semantics DamagePercentInt="25" />
-      </EIM>
-      <EIM Name="occult_damage_percent" HUDDesc="@ui_eim_occult_damage_percent" Permanent="1">
-        <Semantics DamagePercentInt="-10" />
+        <Semantics DamagePercentInt="15" />
       </EIM>
     </MagicEffects>
   </Spell>
   <Spell Name="SIEGE_4" UIName="@ui_SIEGE_4_name" HUDLoreDesc="" GameplayDesc="">
     <MagicEffects>
-      <EIM Name="blockefficiency_percent" HUDDesc="@ui_eim_blockefficiency_percent" Permanent="1">
-        <Semantics ResourcePercentFloat="15" />
+      <EIM Name="blockefficiency_flat" HUDDesc="@ui_eim_blockefficiency_flat" Permanent="1">
+        <Semantics ResourcePercentFloat="2" />
       </EIM>
     </MagicEffects>
   </Spell>
@@ -46,20 +40,20 @@
   <Spell Name="SIEGE_6" UIName="@ui_SIEGE_6_name" HUDLoreDesc="" GameplayDesc="">
     <MagicEffects>
       <EIM Name="criticaldamage_pts" HUDDesc="@ui_eim_criticaldamage_pts" Permanent="1">
-        <Semantics DamagePercentInt="10" />
+        <Semantics DamagePercentInt="5" />
       </EIM>
       <EIM Name="health_percent" HUDDesc="@ui_eim_health_percent" Permanent="1">
-        <Semantics HealthPercentInt="8" />
+        <Semantics HealthPercentInt="5" />
       </EIM>
     </MagicEffects>
   </Spell>
   <Spell Name="SIEGE_7" UIName="@ui_SIEGE_7_name" HUDLoreDesc="" GameplayDesc="">
     <MagicEffects>
       <EIM Name="all_resistance_score_percent" HUDDesc="@ui_eim_all_resistance_score_percent" Permanent="1">
-        <Semantics CharacteristicScorePercentInt="20" />
+        <Semantics CharacteristicScorePercentInt="15" />
       </EIM>
       <EIM Name="dodgechance_score_percent" HUDDesc="@ui_eim_dodgechance_score_percent" Permanent="1">
-        <Semantics CharacteristicScorePercentInt="-15" />
+        <Semantics CharacteristicScorePercentInt="-10" />
       </EIM>
     </MagicEffects>
   </Spell>
@@ -69,10 +63,10 @@
         <Semantics PossibilityInt="1" />
       </EIM>
       <EIM Name="stat_bonus_from_chest_armor_warrior" HUDDesc="@ui_eim_stat_bonus_from_chest_armor_warrior" Permanent="1">
-        <Semantics MultiplierFloat="0.5" />
+        <Semantics MultiplierFloat="0.3" />
       </EIM>
       <EIM Name="stat_bonus_from_chest_armor_tank" HUDDesc="@ui_eim_stat_bonus_from_chest_armor_tank" Permanent="1">
-        <Semantics MultiplierFloat="1" />
+        <Semantics MultiplierFloat="0.5" />
       </EIM>
       <EIM Name="stat_bonus_from_chest_armor_rogue" HUDDesc="@ui_eim_stat_bonus_from_chest_armor_rogue" Permanent="1">
         <Semantics MultiplierFloat="2" />
@@ -88,10 +82,10 @@
         <Semantics PossibilityInt="1" />
       </EIM>
       <EIM Name="stat_bonus_from_helmet_warrior" HUDDesc="@ui_eim_stat_bonus_from_helmet_warrior" Permanent="1">
-        <Semantics MultiplierFloat="0.5" />
+        <Semantics MultiplierFloat="0.3" />
       </EIM>
       <EIM Name="stat_bonus_from_helmet_tank" HUDDesc="@ui_eim_stat_bonus_from_helmet_tank" Permanent="1">
-        <Semantics MultiplierFloat="1" />
+        <Semantics MultiplierFloat="0.5" />
       </EIM>
       <EIM Name="stat_bonus_from_helmet_rogue" HUDDesc="@ui_eim_stat_bonus_from_helmet_rogue" Permanent="1">
         <Semantics MultiplierFloat="2" />
@@ -104,58 +98,58 @@
   <Spell Name="SIEGE_10" UIName="@ui_SIEGE_10_name" HUDLoreDesc="" GameplayDesc="">
     <MagicEffects>
       <EIM Name="damage_from_shield_block_chance" HUDDesc="@ui_eim_damage_from_shield_block_chance" Permanent="1">
-        <Semantics MultiplierFloat="0.5" />
+        <Semantics MultiplierFloat="0.15" />
       </EIM>
     </MagicEffects>
   </Spell>
   <Spell Name="SIEGE_11" UIName="@ui_SIEGE_11_name" HUDLoreDesc="" GameplayDesc="">
     <MagicEffects>
       <EIM Name="damage_from_shield_block_chance" HUDDesc="@ui_eim_damage_from_shield_block_chance" Permanent="1">
-        <Semantics MultiplierFloat="0.5" />
+        <Semantics MultiplierFloat="0.15" />
       </EIM>
     </MagicEffects>
   </Spell>
   <Spell Name="SIEGE_12" UIName="@ui_SIEGE_12_name" HUDLoreDesc="" GameplayDesc="">
     <MagicEffects>
-      <EIM Name="blockefficiency_percent" HUDDesc="@ui_eim_blockefficiency_percent" Permanent="1">
-        <Semantics ResourcePercentFloat="20" />
+      <EIM Name="blockefficiency_flat" HUDDesc="@ui_eim_blockefficiency_flat" Permanent="1">
+        <Semantics ResourcePercentFloat="3" />
       </EIM>
       <EIM Name="dodgechance_score_percent" HUDDesc="@ui_eim_dodgechance_score_percent" Permanent="1">
-        <Semantics CharacteristicScorePercentInt="-15" />
+        <Semantics CharacteristicScorePercentInt="-10" />
       </EIM>
     </MagicEffects>
   </Spell>
   <Spell Name="SIEGE_13" UIName="@ui_SIEGE_13_name" HUDLoreDesc="" GameplayDesc="">
     <MagicEffects>
       <EIM Name="damage_from_shield_block_chance" HUDDesc="@ui_eim_damage_from_shield_block_chance" Permanent="1">
-        <Semantics MultiplierFloat="0.5" />
+        <Semantics MultiplierFloat="0.15" />
       </EIM>
     </MagicEffects>
   </Spell>
   <Spell Name="SIEGE_14" UIName="@ui_SIEGE_14_name" HUDLoreDesc="" GameplayDesc="">
     <MagicEffects>
       <EIM Name="all_resistance_score_percent" HUDDesc="@ui_eim_all_resistance_score_percent" Permanent="1">
-        <Semantics CharacteristicScorePercentInt="18" />
+        <Semantics CharacteristicScorePercentInt="10" />
       </EIM>
     </MagicEffects>
   </Spell>
   <Spell Name="SIEGE_15" UIName="@ui_SIEGE_15_name" HUDLoreDesc="" GameplayDesc="">
     <MagicEffects>
       <EIM Name="criticaldamage_pts" HUDDesc="@ui_eim_criticaldamage_pts" Permanent="1">
-        <Semantics DamagePercentInt="10" />
+        <Semantics DamagePercentInt="5" />
       </EIM>
       <EIM Name="health_percent" HUDDesc="@ui_eim_health_percent" Permanent="1">
-        <Semantics HealthPercentInt="8" />
+        <Semantics HealthPercentInt="5" />
       </EIM>
     </MagicEffects>
   </Spell>
   <Spell Name="SIEGE_16" UIName="@ui_SIEGE_16_name" HUDLoreDesc="" GameplayDesc="">
     <MagicEffects>
       <EIM Name="all_resistance_score_percent" HUDDesc="@ui_eim_all_resistance_score_percent" Permanent="1">
-        <Semantics CharacteristicScorePercentInt="20" />
+        <Semantics CharacteristicScorePercentInt="15" />
       </EIM>
       <EIM Name="dodgechance_score_percent" HUDDesc="@ui_eim_dodgechance_score_percent" Permanent="1">
-        <Semantics CharacteristicScorePercentInt="-15" />
+        <Semantics CharacteristicScorePercentInt="-10" />
       </EIM>
     </MagicEffects>
   </Spell>
@@ -185,16 +179,44 @@
         <Semantics SpeedPercentInt="-5" />
       </EIM>
       <EIM Name="fortress_damage_percent" HUDDesc="@ui_eim_fortress_damage_percent" Permanent="1">
-        <Semantics DamagePercentFloat="6" />
+        <Semantics DamagePercentFloat="3" />
       </EIM>
     </MagicEffects>
   </Spell>
   <Spell Name="SIEGE_20" UIName="@ui_SIEGE_20_name" HUDLoreDesc="" GameplayDesc="">
     <MagicEffects>
       <EIM Name="fortress_health_regeneration" HUDDesc="@ui_eim_fortress_health_regeneration" Permanent="1">
-        <Semantics ResourcePercentFloat="0.1" />
+        <Semantics ResourcePercentFloat="0.2" />
       </EIM>
       <EIM Name="fortress_all_resistances" HUDDesc="@ui_eim_fortress_all_resistances" Permanent="1">
+        <Semantics CharacteristicScorePercentInt="5" />
+      </EIM>
+    </MagicEffects>
+  </Spell>
+  <Spell Name="SIEGE_21" UIName="@ui_SIEGE_21_name" HUDLoreDesc="" GameplayDesc="">
+    <MagicEffects>
+      <EIM Name="physical_damage_percent" HUDDesc="@ui_eim_physical_damage_percent" Permanent="1">
+        <Semantics DamagePercentInt="15" />
+      </EIM>
+    </MagicEffects>
+  </Spell>
+  <Spell Name="SIEGE_22" UIName="@ui_SIEGE_22_name" HUDLoreDesc="" GameplayDesc="">
+    <MagicEffects>
+      <EIM Name="all_resistance_score_percent" HUDDesc="@ui_eim_all_resistance_score_percent" Permanent="1">
+        <Semantics CharacteristicScorePercentInt="10" />
+      </EIM>
+    </MagicEffects>
+  </Spell>
+  <Spell Name="SIEGE_23" UIName="@ui_SIEGE_23_name" HUDLoreDesc="" GameplayDesc="">
+    <MagicEffects>
+      <EIM Name="physical_damage_percent" HUDDesc="@ui_eim_physical_damage_percent" Permanent="1">
+        <Semantics DamagePercentInt="15" />
+      </EIM>
+    </MagicEffects>
+  </Spell>
+  <Spell Name="SIEGE_24" UIName="@ui_SIEGE_24_name" HUDLoreDesc="" GameplayDesc="">
+    <MagicEffects>
+      <EIM Name="all_resistance_score_percent" HUDDesc="@ui_eim_all_resistance_score_percent" Permanent="1">
         <Semantics CharacteristicScorePercentInt="10" />
       </EIM>
     </MagicEffects>

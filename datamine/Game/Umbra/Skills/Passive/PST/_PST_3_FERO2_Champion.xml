@@ -1,13 +1,7 @@
 <MetaData>
   <Spell Name="CHAMP_1" UIName="@ui_CHAMP_1_name" HUDLoreDesc="" GameplayDesc="">
     <MagicEffects>
-      <EIM Name="damage_percent_any_weapon" HUDDesc="@ui_eim_damage_percent_any_weapon" Permanent="1">
-        <Semantics DamagePercentInt="8" />
-      </EIM>
-      <EIM Name="damage_percent_onehanded" HUDDesc="@ui_eim_damage_percent_onehanded" Permanent="1">
-        <Semantics DamagePercentInt="10" />
-      </EIM>
-      <EIM Name="damage_percent_twohanded" HUDDesc="@ui_eim_damage_percent_twohanded" Permanent="1">
+      <EIM Name="damage_percent_attack" HUDDesc="@ui_eim_damage_percent_attack" Permanent="1">
         <Semantics DamagePercentInt="10" />
       </EIM>
     </MagicEffects>
@@ -15,41 +9,41 @@
   <Spell Name="CHAMP_2" UIName="@ui_CHAMP_2_name" HUDLoreDesc="" GameplayDesc="">
     <MagicEffects>
       <EIM Name="damage_percent_onehanded" HUDDesc="@ui_eim_damage_percent_onehanded" Permanent="1">
-        <Semantics DamagePercentInt="12" />
+        <Semantics DamagePercentInt="8" />
       </EIM>
     </MagicEffects>
   </Spell>
   <Spell Name="CHAMP_3" UIName="@ui_CHAMP_3_name" HUDLoreDesc="" GameplayDesc="">
     <MagicEffects>
       <EIM Name="damage_percent_onehanded" HUDDesc="@ui_eim_damage_percent_onehanded" Permanent="1">
-        <Semantics DamagePercentInt="8" />
+        <Semantics DamagePercentInt="5" />
       </EIM>
-      <EIM Name="attackspeed_score_percent" HUDDesc="@ui_eim_attackspeed_score_percent" Permanent="1">
-        <Semantics CharacteristicScorePercentInt="10" />
+      <EIM Name="attackspeed_final_percent" HUDDesc="@ui_eim_attackspeed_final_percent" Permanent="1">
+        <Semantics CharacteristicFinalPercentFloat="2" />
       </EIM>
     </MagicEffects>
   </Spell>
   <Spell Name="CHAMP_4" UIName="@ui_CHAMP_4_name" HUDLoreDesc="" GameplayDesc="">
     <MagicEffects>
-      <EIM Name="blockefficiency_percent" HUDDesc="@ui_eim_blockefficiency_percent" Permanent="1">
-        <Semantics ResourcePercentFloat="14" />
+      <EIM Name="blockefficiency_flat" HUDDesc="@ui_eim_blockefficiency_flat" Permanent="1">
+        <Semantics ResourcePercentFloat="2" />
       </EIM>
       <EIM Name="health_percent" HUDDesc="@ui_eim_health_percent" Permanent="1">
-        <Semantics HealthPercentInt="8" />
+        <Semantics HealthPercentInt="5" />
       </EIM>
     </MagicEffects>
   </Spell>
   <Spell Name="CHAMP_5" UIName="@ui_CHAMP_5_name" HUDLoreDesc="" GameplayDesc="">
     <MagicEffects>
       <EIM Name="rend_damage_percent" HUDDesc="@ui_eim_rend_damage_percent" Permanent="1">
-        <Semantics DamagePercentInt="12" />
+        <Semantics DamagePercentInt="15" />
       </EIM>
     </MagicEffects>
   </Spell>
   <Spell Name="CHAMP_6" UIName="@ui_CHAMP_6_name" HUDLoreDesc="" GameplayDesc="">
     <MagicEffects>
       <EIM Name="damage_percent_onehanded" HUDDesc="@ui_eim_damage_percent_onehanded" Permanent="1">
-        <Semantics DamagePercentInt="12" />
+        <Semantics DamagePercentInt="8" />
       </EIM>
     </MagicEffects>
   </Spell>
@@ -66,34 +60,34 @@
         <Semantics PossibilityInt="1" />
       </EIM>
       <EIM Name="stance_offensive_stats" HUDDesc="@ui_eim_stance_offensive_stats" Permanent="1">
-        <Semantics ChancePercentInt="10" CharacteristicScorePercentInt="-25" />
+        <Semantics ChancePercentInt="75" CharacteristicScorePercentInt="-25" />
       </EIM>
       <EIM Name="stance_defensive_stats" HUDDesc="@ui_eim_stance_defensive_stats" Permanent="1">
-        <Semantics ChancePercentInt="10" ResourcePercentFloat="25" CharacteristicScorePercentInt="-25" />
+        <Semantics ChancePercentInt="15" ResourcePercentFloat="10" CharacteristicFinalPercentFloat="-15" />
       </EIM>
     </MagicEffects>
   </Spell>
   <Spell Name="CHAMP_9" UIName="@ui_CHAMP_9_name" HUDLoreDesc="" GameplayDesc="">
     <MagicEffects>
       <EIM Name="stance_offensive_stats" HUDDesc="@ui_eim_stance_offensive_stats_bonus" Permanent="1">
-        <Semantics ChancePercentInt="5" CharacteristicScorePercentInt="0" />
+        <Semantics ChancePercentInt="25" CharacteristicScorePercentInt="0" />
       </EIM>
       <EIM Name="stance_defensive_stats" HUDDesc="@ui_eim_stance_defensive_stats_bonus" Permanent="1">
-        <Semantics ChancePercentInt="5" ResourcePercentFloat="0" CharacteristicScorePercentInt="0" />
+        <Semantics ChancePercentInt="5" ResourcePercentFloat="0" CharacteristicFinalPercentFloat="0" />
       </EIM>
     </MagicEffects>
   </Spell>
   <Spell Name="CHAMP_10" UIName="@ui_CHAMP_10_name" HUDLoreDesc="" GameplayDesc="">
     <MagicEffects>
       <EIM Name="damage_percent_twohanded" HUDDesc="@ui_eim_damage_percent_twohanded" Permanent="1">
-        <Semantics DamagePercentInt="12" />
+        <Semantics DamagePercentInt="8" />
       </EIM>
     </MagicEffects>
   </Spell>
   <Spell Name="CHAMP_11" UIName="@ui_CHAMP_11_name" HUDLoreDesc="" GameplayDesc="">
     <MagicEffects>
       <EIM Name="damage_percent_twohanded" HUDDesc="@ui_eim_damage_percent_twohanded" Permanent="1">
-        <Semantics DamagePercentInt="8" />
+        <Semantics DamagePercentInt="5" />
       </EIM>
       <EIM Name="criticaldamage_pts" HUDDesc="@ui_eim_criticaldamage_pts" Permanent="1">
         <Semantics DamagePercentInt="5" />
@@ -102,18 +96,18 @@
   </Spell>
   <Spell Name="CHAMP_12" UIName="@ui_CHAMP_12_name" HUDLoreDesc="" GameplayDesc="">
     <MagicEffects>
-      <EIM Name="blockefficiency_percent" HUDDesc="@ui_eim_blockefficiency_percent" Permanent="1">
-        <Semantics ResourcePercentFloat="14" />
+      <EIM Name="blockefficiency_flat" HUDDesc="@ui_eim_blockefficiency_flat" Permanent="1">
+        <Semantics ResourcePercentFloat="2" />
       </EIM>
       <EIM Name="health_percent" HUDDesc="@ui_eim_health_percent" Permanent="1">
-        <Semantics HealthPercentInt="8" />
+        <Semantics HealthPercentInt="5" />
       </EIM>
     </MagicEffects>
   </Spell>
   <Spell Name="CHAMP_13" UIName="@ui_CHAMP_13_name" HUDLoreDesc="" GameplayDesc="">
     <MagicEffects>
       <EIM Name="rend_damage_percent" HUDDesc="@ui_eim_rend_damage_percent" Permanent="1">
-        <Semantics DamagePercentInt="12" />
+        <Semantics DamagePercentInt="15" />
       </EIM>
     </MagicEffects>
   </Spell>
@@ -127,7 +121,7 @@
   <Spell Name="CHAMP_15" UIName="@ui_CHAMP_15_name" HUDLoreDesc="" GameplayDesc="">
     <MagicEffects>
       <EIM Name="damage_percent_twohanded" HUDDesc="@ui_eim_damage_percent_twohanded" Permanent="1">
-        <Semantics DamagePercentInt="12" />
+        <Semantics DamagePercentInt="8" />
       </EIM>
     </MagicEffects>
   </Spell>
@@ -141,7 +135,7 @@
   <Spell Name="CHAMP_17" UIName="@ui_CHAMP_17_name" HUDLoreDesc="@ui_CHAMP_17_loredesc" GameplayDesc="@ui_CHAMP_17_gameplaydesc">
     <MagicEffects>
       <EIM Name="damage_on_block" HUDDesc="@ui_eim_damage_on_block" Permanent="1">
-        <Semantics PossibilityInt="1" DamagePercentFloat="100" TriggeredSkillSelector="0" />
+        <Semantics PossibilityInt="1" DamagePercentFloat="300" TriggeredSkillSelector="0" />
       </EIM>
     </MagicEffects>
   </Spell>
@@ -174,7 +168,35 @@
   <Spell Name="CHAMP_20" UIName="@ui_CHAMP_20_name" HUDLoreDesc="" GameplayDesc="">
     <MagicEffects>
       <EIM Name="final_weapon_combos" HUDDesc="@ui_eim_final_weapon_combos_damage" Permanent="1">
-        <Semantics DamageIncreasePercentFloat="50" />
+        <Semantics DamageIncreasePercentFloat="500" />
+      </EIM>
+    </MagicEffects>
+  </Spell>
+  <Spell Name="CHAMP_21" UIName="@ui_CHAMP_21_name" HUDLoreDesc="" GameplayDesc="">
+    <MagicEffects>
+      <EIM Name="rend_damage_percent" HUDDesc="@ui_eim_rend_damage_percent" Permanent="1">
+        <Semantics DamagePercentInt="15" />
+      </EIM>
+    </MagicEffects>
+  </Spell>
+  <Spell Name="CHAMP_22" UIName="@ui_CHAMP_22_name" HUDLoreDesc="" GameplayDesc="">
+    <MagicEffects>
+      <EIM Name="health_percent" HUDDesc="@ui_eim_health_percent" Permanent="1">
+        <Semantics HealthPercentInt="8" />
+      </EIM>
+    </MagicEffects>
+  </Spell>
+  <Spell Name="CHAMP_23" UIName="@ui_CHAMP_23_name" HUDLoreDesc="" GameplayDesc="">
+    <MagicEffects>
+      <EIM Name="rend_damage_percent" HUDDesc="@ui_eim_rend_damage_percent" Permanent="1">
+        <Semantics DamagePercentInt="15" />
+      </EIM>
+    </MagicEffects>
+  </Spell>
+  <Spell Name="CHAMP_24" UIName="@ui_CHAMP_24_name" HUDLoreDesc="" GameplayDesc="">
+    <MagicEffects>
+      <EIM Name="health_percent" HUDDesc="@ui_eim_health_percent" Permanent="1">
+        <Semantics HealthPercentInt="8" />
       </EIM>
     </MagicEffects>
   </Spell>

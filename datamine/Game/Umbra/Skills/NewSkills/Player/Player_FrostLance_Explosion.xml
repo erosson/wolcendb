@@ -1,0 +1,42 @@
+<MetaData>
+  <Skill ESkill="player_frostlance_explosion" Keywords="magic_spell," UID="player_frostlance_explosion">
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="Player_skill_frostlanceexplosion" TrailPresetBase="default" />
+    <DamageAsPercentageOfParent Percentage="200" />
+    <SoundTrigger OnAnimCast="PLAY_Skill_FrostLance_Explosion" />
+    <Explosion ExplosionRadius="3" />
+    <ParticleList>
+      <Particle Key="AOE" Name="U_Character.Skills.IceSpear_AOE_01" OffSet="0,0,0.75" Direction="0,0,1" />
+    </ParticleList>
+    <Specific_Frostlance />
+  </Skill>
+  <Skill ESkill="player_frostlance_explosion" Keywords="magic_spell," UID="player_frostlance_explosion_sacred">
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="Player_skill_frostlanceexplosion" TrailPresetBase="default" />
+    <DamageAsPercentageOfParent Percentage="200" />
+    <SoundTrigger OnAnimCast="PLAY_Skill_FrostLance_Explosion" />
+    <Explosion ExplosionRadius="3" />
+    <ParticleList>
+      <Particle Key="AOE" Name="U_Character.Skills.IceSpear_AOE_01_Sacred" OffSet="0,0,0.75" Direction="0,0,1" />
+    </ParticleList>
+    <Specific_Frostlance />
+  </Skill>
+  <Skill ESkill="player_frostlance_explosion" Keywords="magic_spell," UID="player_frostlance_explosion_bleed">
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="Player_skill_frostlanceexplosion" TrailPresetBase="default" />
+    <DamageAsPercentageOfParent Percentage="200" />
+    <SoundTrigger OnAnimCast="PLAY_Skill_FrostLance_Explosion" />
+    <Explosion ExplosionRadius="3" />
+    <ParticleList>
+      <Particle Key="AOE" Name="U_Character.Skills.IceSpear_AOE_01_Rend" OffSet="0,0,0.75" Direction="0,0,1" />
+    </ParticleList>
+    <Specific_Frostlance />
+  </Skill>
+  <Skill ESkill="player_frostlance_explosion" Keywords="magic_spell," UID="player_frostlance_explosion_aether">
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="Player_skill_frostlanceexplosion" TrailPresetBase="default" />
+    <DamageAsPercentageOfParent Percentage="200" />
+    <SoundTrigger OnAnimCast="PLAY_Skill_FrostLance_Explosion" />
+    <Explosion ExplosionRadius="3" />
+    <ParticleList>
+      <Particle Key="AOE" Name="U_Character.Skills.IceSpear_AOE_01_Aether" OffSet="0,0,0.75" Direction="0,0,1" />
+    </ParticleList>
+    <Specific_Frostlance />
+  </Skill>
+</MetaData>

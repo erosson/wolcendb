@@ -4,12 +4,15 @@
     <WeaponRequirements Requirements="magic,poison" />
     <Animation ActionString="player_skill_corpsexplosion" ScaleWithSpellCastingSpeed="1" />
     <CastingParams CastBone="R_weapon_bone" CasterImmobilizationTime="0" CanCastWhileMoving="0" MaximumTurnRate="0" ShouldMoveInRange="0" />
-    <HUD HUDPicture="../u_resources/spells/Active_Skills/Plagueburst.png" UIName="@ui_AST_CorpseExplosion" Lore="@ui_AST_CorpseExplosion_Lore" ActiveEffectTitle="" ActiveEffectDesc="" ASTTreeNumber="8" ShowParamsInAST="Cost,ROSTime,Cooldown,Range,Projectiles,DamageDetail,DamageCritical,StatusAilmentsChance,Explosion,SpecificCorpseExplosion,MaxSummon" ShowParamsInTooltip="Cost,Cooldown,DamageOverview,StatusAilmentsChance,SpecificCorpseExplosion" />
+    <HUD HUDPicture="../u_resources/spells/Active_Skills/Plagueburst_Toxic.png" UIName="@ui_AST_CorpseExplosion" Lore="@ui_AST_CorpseExplosion_Lore" ActiveEffectTitle="" ActiveEffectDesc="" ASTTreeNumber="8" ShowParamsInAST="DamageWeapon,Cost,ROSTime,Cooldown,Range,Projectiles,DamageDetail,DamageCritical,StatusAilmentsChance,Explosion,SpecificCorpseExplosion,MaxSummon" ShowParamsInTooltip="Cost,Cooldown,DamageOverview,StatusAilmentsChance,SpecificCorpseExplosion" />
     <Enneract PickableParticle_MoveToGround="U_CommonVFX_02.Esseract.Esseract_Projectile.Toxic" PickableParticle_OnGround_Shape="U_CommonVFX_02.Esseract.Esseract_Shape.Circle_Toxic" PickableParticle_OnGround_Damage="U_CommonVFX_02.Esseract.Esseract_Color.Toxic" PickableParticle_OnGround_Symbol="U_CommonVFX_02.Esseract.Esseract_Symbol.BEZERIEL" PickableParticle_OnGround_Indicator="U_CommonVFX_02.Esseract.Esseract_Indicator.Toxic" PickableParticle_OnGround_Pickup="U_CommonVFX_02.Esseract.Esseract_Loot.Toxic" SkillLearningParticle="U_CommonVFX.Skill_Learn.Skill_Learn_Toxic" Inventory_HUDPicture="../u_resources/enneracts/Plagueburst.png" Inventory_LoreDesc="@ui_enneract_lore" />
     <Aggression TargetValueOnHit="20" />
-    <DamageBase Type="poison" Min="7" MinPerLevel="0" Max="8" MaxPerLevel="0" />
+    <DamageWeapon WeaponMultiplier="1.7" />
+    <Damage_Conversion>
+      <Entry From="physical" To="toxic" ConversionRate="100" />
+    </Damage_Conversion>
     <Cooldown Cooldown="10" CooldownPerLevel="0" />
-    <ResourceCost ManaCost="-100" ManaCostPerLevel="0" ROSTransfertDuration="1.0" />
+    <ResourceCost ManaCost="-200" ManaCostPerLevel="0" ROSTransfertDuration="2.0" />
     <SoundTrigger OnAnimStart="Play_Skill_CorpseExplosion_Cast" />
     <DamageZone Duration="15" RateOfFire="1" />
     <Explosion ExplosionRadius="2" />
@@ -24,6 +27,9 @@
       <Particle Key="Summon" Name="U_Character_02.CorpseExplosion.CorpseExplosion_Summon_Ring_01" Direction="0,1,0" Bone="Bip01" />
     </ParticleList>
     <Specific_CorpseExplosion Radius="6.5" ChanceToSummonAlly="0" CanBeCastedAway="0" CloudRadius="0" CloudDamageMultiplier="0" TTL="10" ExplosionTimer="0.01" CloudLoopSoundTrigger="Play_Skill_CorpseExplosion_Cloud_Loop" CloudEndSoundTrigger="Stop_Skill_CorpseExplosion_Cloud_Loop" />
+  </Skill>
+  <Skill UID="player_CorpseExplosion_variant_default_damage_type" ESkill="default_variant">
+    <HUD UIName="@ui_AST_CorpseExplosion" Lore="@ui_AST_CorpseExplosion_Lore" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_Alpha.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_Alpha.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_Alpha.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_Alpha.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_Alpha.png" HUDPictureVariant_InnerIcon="../u_resources/spells/Active_Skills/Plagueburst_Toxic.png" VariantBottomPanel="1" />
   </Skill>
   <Skill UID="player_CorpseExplosion_variant_1" ESkill="default_variant">
     <HUD UIName="@ui_Variant_CorpseExplosion_variant_1" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_001.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_001.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_001.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_001.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_001.png" ShowParamsInTooltip="SpecificCorpseExplosion" />
@@ -68,16 +74,37 @@
     <Specific_CorpseExplosion MinionExplosionDamageMutiplier="0.5" />
   </Skill>
   <Skill UID="player_CorpseExplosion_variant_10" ESkill="default_variant">
-    <HUD UIName="@ui_Variant_CorpseExplosion_variant_10" Lore="@ui_Variant_CorpseExplosion_variant_10_lore" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_005.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_005.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_005.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_005.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_005.png" ShowParamsInTooltip="SpecificCorpseExplosion,DamageBase,DamageDetail" />
-    <DamageBase BonusPercent="-10" />
+    <HUD UIName="@ui_Variant_CorpseExplosion_variant_10" Lore="@ui_Variant_CorpseExplosion_variant_10_lore" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_005.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_005.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_005.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_005.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_005.png" ShowParamsInTooltip="SpecificCorpseExplosion,DamageWeapon,DamageDetail" />
+    <DamageWeapon WeaponMultiplier="0.75" />
     <Specific_CorpseExplosion SpawnGlobeChance="10" />
   </Skill>
+  <Skill UID="player_CorpseExplosion_variant_12" ESkill="default_variant">
+    <HUD UIName="@ui_Variant_CorpseExplosion_variant_12" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_001.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_001.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_001.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_001.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_001.png" ShowParamsInTooltip="SpecificCorpseExplosion,DamageWeapon" />
+    <DamageWeapon WeaponMultiplier="1.15" />
+  </Skill>
+  <Skill UID="player_CorpseExplosion_variant_13" ESkill="default_variant">
+    <HUD UIName="@ui_Variant_CorpseExplosion_variant_13" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_001.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_001.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_001.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_001.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_001.png" ShowParamsInTooltip="SpecificCorpseExplosion,StatusAilmentsChance" />
+    <StatusAilment AilmentEffectiveness="125" />
+  </Skill>
+  <Skill UID="player_CorpseExplosion_variant_14" ESkill="default_variant">
+    <HUD UIName="@ui_Variant_CorpseExplosion_variant_14" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_001.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_001.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_001.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_001.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_001.png" ShowParamsInTooltip="SpecificCorpseExplosion,StatusAilmentsChance" />
+    <StatusAilment AllAilmentsInflictDamageIncreasePercent="40" />
+  </Skill>
+  <Skill UID="player_CorpseExplosion_variant_15" ESkill="default_variant">
+    <HUD UIName="@ui_Variant_CorpseExplosion_variant_15" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_001.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_001.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_001.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_001.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_001.png" ShowParamsInTooltip="SpecificCorpseExplosion,DamageCritical" />
+    <DamageCritical CriticalInflictScoreModifier="40" />
+  </Skill>
+  <Skill UID="player_CorpseExplosion_variant_16" ESkill="default_variant">
+    <HUD UIName="@ui_Variant_CorpseExplosion_variant_16" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_001.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_001.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_001.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_001.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_001.png" ShowParamsInTooltip="SpecificCorpseExplosion,DamageCritical" />
+    <DamageCritical CriticalDamageModifier="25" />
+  </Skill>
   <Skill UID="player_CorpseExplosion_variant_11" ESkill="default_variant">
-    <HUD UIName="@ui_Variant_CorpseExplosion_variant_11" Lore="@ui_Variant_CorpseExplosion_variant_11_lore" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_005.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_005.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_005.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_005.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_005.png" ShowParamsInTooltip="SpecificCorpseExplosion,DamageBase,DamageDetail" />
+    <HUD UIName="@ui_Variant_CorpseExplosion_variant_11" Lore="@ui_Variant_CorpseExplosion_variant_11_lore" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_Alpha.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_Alpha.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_Alpha.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_Alpha.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_Alpha.png" HUDPictureVariant_InnerIcon="../u_resources/spells/Active_Skills/Plagueburst_Fire.png" ShowParamsInTooltip="SpecificCorpseExplosion,DamageWeapon" HUDPicture="../u_resources/spells/Active_Skills/Plagueburst_Fire.png" VariantBottomPanel="1" />
     <Damage_Conversion>
-      <Entry From="poison" To="fire" ConversionRate="100" />
+      <Entry From="physical" To="toxic" ConversionRate="-100" />
+      <Entry From="physical" To="fire" ConversionRate="100" />
     </Damage_Conversion>
-    <DamageBase BonusPercent="10" />
+    <DamageWeapon WeaponMultiplier="1.25" />
     <WeaponRequirements Requirements="magic,fire" />
     <ParticleList>
       <Particle Key="Area" Name="U_Character_02.CorpseExplosion.CorpseExplosion_Indicator_01_Fire" Direction="0,1,0" Bone="Bip01" />
@@ -91,24 +118,48 @@
     <SoundTrigger OnAnimStart="Play_Skill_CorpseExplosion_Cast_Fire" />
     <Specific_CorpseExplosion CloudLoopSoundTrigger="Play_Skill_CorpseExplosion_CloudFire_Loop" CloudEndSoundTrigger="Stop_Skill_CorpseExplosion_CloudFire_Loop" />
   </Skill>
-  <Skill UID="player_CorpseExplosion_variant_12" ESkill="default_variant">
-    <HUD UIName="@ui_Variant_CorpseExplosion_variant_12" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_001.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_001.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_001.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_001.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_001.png" ShowParamsInTooltip="SpecificCorpseExplosion,DamageBase" />
-    <DamageBase BonusPercent="10" />
+  <Skill UID="player_CorpseExplosion_variant_17" ESkill="default_variant">
+    <HUD UIName="@ui_Variant_CorpseExplosion_variant_17" Lore="@ui_Variant_CorpseExplosion_variant_17_lore" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_Alpha.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_Alpha.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_Alpha.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_Alpha.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_Alpha.png" HUDPictureVariant_InnerIcon="../u_resources/spells/Active_Skills/Plagueburst_Rend.png" ShowParamsInTooltip="SpecificCorpseExplosion,DamageWeapon" HUDPicture="../u_resources/spells/Active_Skills/Plagueburst_Rend.png" VariantBottomPanel="1" />
+    <Damage_Conversion>
+      <Entry From="physical" To="toxic" ConversionRate="-100" />
+      <Entry From="physical" To="rend" ConversionRate="100" />
+    </Damage_Conversion>
+    <DamageWeapon WeaponMultiplier="1.25" />
+    <WeaponRequirements Requirements="magic,bleed" />
+    <ParticleList>
+      <Particle Key="Area" Name="U_Character_02.CorpseExplosion.CorpseExplosion_Indicator_01_Rend" Direction="0,1,0" Bone="Bip01" />
+      <Particle Key="AreaDisappear" Name="U_Character_02.CorpseExplosion.CorpseExplosion_Indicator_End_01_Rend" Direction="0,1,0" Bone="Bip01" />
+      <Particle Key="Explosion_flesh" Name="U_Explosions.corpse.OverKill_Rend" Direction="0,0,1" />
+      <Particle Key="Explosion_metal" Name="U_Explosions.corpse.OverKill_Rend_Robot" Direction="0,0,1" />
+      <Particle Key="Explosion_ghost" Name="U_Explosions.corpse.OverKill_Rend_Ghost" Direction="0,0,1" />
+      <Particle Key="Explosion_ground" Name="U_Character_02.CorpseExplosion.CorpseExplosion_Impact_01_Rend" Direction="0,1,0" />
+      <Particle Key="Cloud" Name="U_Character_02.CorpseExplosion.CorpseExplosion_Smoke_01_Rend" Direction="0,1,0" Bone="Bip01" />
+    </ParticleList>
+    <SoundTrigger OnAnimStart="Play_Skill_CorpseExplosion_Cast_Rend" />
+    <Specific_CorpseExplosion CloudLoopSoundTrigger="Play_Skill_CorpseExplosion_CloudFire_Loop" CloudEndSoundTrigger="Stop_Skill_CorpseExplosion_CloudFire_Loop" />
   </Skill>
-  <Skill UID="player_CorpseExplosion_variant_13" ESkill="default_variant">
-    <HUD UIName="@ui_Variant_CorpseExplosion_variant_13" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_001.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_001.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_001.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_001.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_001.png" ShowParamsInTooltip="SpecificCorpseExplosion,StatusAilmentsChance" />
-    <StatusAilment AllAilmentsInflictScoreIncreasePercent="40" />
+  <Skill UID="player_CorpseExplosion_variant_18" ESkill="default_variant">
+    <HUD UIName="@ui_Variant_CorpseExplosion_variant_18" Lore="@ui_Variant_CorpseExplosion_variant_18_lore" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_Alpha.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_Alpha.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_Alpha.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_Alpha.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_Alpha.png" HUDPictureVariant_InnerIcon="../u_resources/spells/Active_Skills/Plagueburst_Aether.png" ShowParamsInTooltip="SpecificCorpseExplosion,DamageWeapon" HUDPicture="../u_resources/spells/Active_Skills/Plagueburst_Aether.png" VariantBottomPanel="1" />
+    <Damage_Conversion>
+      <Entry From="physical" To="toxic" ConversionRate="-100" />
+      <Entry From="physical" To="umbra" ConversionRate="100" />
+    </Damage_Conversion>
+    <DamageWeapon WeaponMultiplier="1.25" />
+    <WeaponRequirements Requirements="magic,umbra" />
+    <ParticleList>
+      <Particle Key="Area" Name="U_Character_02.CorpseExplosion.CorpseExplosion_Indicator_01_Aether" Direction="0,1,0" Bone="Bip01" />
+      <Particle Key="AreaDisappear" Name="U_Character_02.CorpseExplosion.CorpseExplosion_Indicator_End_01_Aether" Direction="0,1,0" Bone="Bip01" />
+      <Particle Key="Explosion_flesh" Name="U_Explosions.corpse.OverKill_Umbra" Direction="0,0,1" />
+      <Particle Key="Explosion_metal" Name="U_Explosions.corpse.OverKill_Umbra_Robot" Direction="0,0,1" />
+      <Particle Key="Explosion_ghost" Name="U_Explosions.corpse.OverKill_Umbra_Ghost" Direction="0,0,1" />
+      <Particle Key="Explosion_ground" Name="U_Character_02.CorpseExplosion.CorpseExplosion_Impact_01_Aether" Direction="0,1,0" />
+      <Particle Key="Cloud" Name="U_Character_02.CorpseExplosion.CorpseExplosion_Smoke_01_Aether" Direction="0,1,0" Bone="Bip01" />
+    </ParticleList>
+    <SoundTrigger OnAnimStart="Play_Skill_CorpseExplosion_Cast_Aether" />
+    <Specific_CorpseExplosion CloudLoopSoundTrigger="Play_Skill_CorpseExplosion_CloudFire_Loop" CloudEndSoundTrigger="Stop_Skill_CorpseExplosion_CloudFire_Loop" />
   </Skill>
-  <Skill UID="player_CorpseExplosion_variant_14" ESkill="default_variant">
-    <HUD UIName="@ui_Variant_CorpseExplosion_variant_14" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_001.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_001.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_001.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_001.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_001.png" ShowParamsInTooltip="SpecificCorpseExplosion,StatusAilmentsChance" />
-    <StatusAilment AllAilmentsInflictDamageIncreasePercent="40" />
-  </Skill>
-  <Skill UID="player_CorpseExplosion_variant_15" ESkill="default_variant">
-    <HUD UIName="@ui_Variant_CorpseExplosion_variant_15" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_001.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_001.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_001.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_001.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_001.png" ShowParamsInTooltip="SpecificCorpseExplosion,DamageCritical" />
-    <DamageCritical CriticalInflictScoreModifier="40" />
-  </Skill>
-  <Skill UID="player_CorpseExplosion_variant_16" ESkill="default_variant">
-    <HUD UIName="@ui_Variant_CorpseExplosion_variant_16" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_001.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_001.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_001.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_001.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_001.png" ShowParamsInTooltip="SpecificCorpseExplosion,DamageCritical" />
-    <DamageCritical CriticalDamageModifier="25" />
+  <Skill UID="Player_CorpseExplosion_variant_19" ESkill="default_variant">
+    <HUD UIName="@ui_variant_Player_CorpseExplosion_variant_19" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_003.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_003.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_003.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_003.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_003.png" ShowParamsInTooltip="DamageWeapon" />
+    <DamageWeapon WeaponMultiplier="1.15" />
   </Skill>
 </MetaData>

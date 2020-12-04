@@ -18,6 +18,8 @@
       <wonder_4 BuildingName="building_wonder_4" />
       <wonder_5 BuildingName="building_wonder_5" />
       <wonder_6 BuildingName="building_wonder_6" />
+      <hunt BuildingName="building_hunt" HideInLegacy="1" HideInStandard="1" HideInChronicle="0" RequiredQuest="C1_EG_SF_Q1" />
+      <expert_forge BuildingName="building_expert_forge" />
     </Buildings>
     <CourierEvents Frequency_Min="5" Frequency_Max="8">
       <Event Name="courier_1" RewardName="courier_reward_1" Weight="1" Cooldown="0" RequiredPlayerLevel="0" RequiredCityLevel="3" RequiredProjects="" />

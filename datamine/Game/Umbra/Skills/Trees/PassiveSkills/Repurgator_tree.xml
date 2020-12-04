@@ -3,22 +3,26 @@
     <Skill Name="REPU_1" Rarity="1" Category="range" MaxLevel="1" Angle="0.50" Pos="0.15" Unlock="begin,REPU_2,REPU_4,REPU_12,REPU_10" />
     <Skill Name="REPU_2" Rarity="1" Category="range" MaxLevel="1" Angle="0.60" Pos="0.15" Unlock="REPU_3,REPU_4" />
     <Skill Name="REPU_3" Rarity="1" Category="range" MaxLevel="1" Angle="0.72" Pos="0.15" Unlock="REPU_5,REPU_8" />
-    <Skill Name="REPU_4" Rarity="1" Category="range" MaxLevel="1" Angle="0.60" Pos="0.35" Unlock="REPU_5,REPU_6,REPU_7,REPU_14" />
+    <Skill Name="REPU_4" Rarity="1" Category="range" MaxLevel="1" Angle="0.60" Pos="0.35" Unlock="REPU_5,REPU_7,REPU_14,REPU_21" />
     <Skill Name="REPU_5" Rarity="1" Category="range" MaxLevel="1" Angle="0.72" Pos="0.35" Unlock="REPU_7,REPU_8" />
-    <Skill Name="REPU_6" Rarity="1" Category="range" MaxLevel="1" Angle="0.60" Pos="0.75" Unlock="REPU_7,REPU_14,REPU_19" />
-    <Skill Name="REPU_7" Rarity="1" Category="range" MaxLevel="1" Angle="0.72" Pos="0.55" Unlock="REPU_8" />
+    <Skill Name="REPU_6" Rarity="1" Category="range" MaxLevel="1" Angle="0.60" Pos="0.75" Unlock="REPU_14,REPU_19,REPU_21,REPU_22" />
+    <Skill Name="REPU_7" Rarity="1" Category="range" MaxLevel="1" Angle="0.72" Pos="0.55" Unlock="REPU_8,REPU_22" />
     <Skill Name="REPU_8" Rarity="3" Category="range" MaxLevel="1" Angle="0.85" Pos="0.35" Unlock="REPU_9" />
     <Skill Name="REPU_9" Rarity="1" Category="range" MaxLevel="1" Angle="0.95" Pos="0.35" Unlock="" />
     <Skill Name="REPU_10" Rarity="1" Category="range" MaxLevel="1" Angle="0.40" Pos="0.15" Unlock="REPU_11,REPU_12" />
     <Skill Name="REPU_11" Rarity="1" Category="range" MaxLevel="1" Angle="0.28" Pos="0.15" Unlock="REPU_13,REPU_17" />
-    <Skill Name="REPU_12" Rarity="1" Category="range" MaxLevel="1" Angle="0.40" Pos="0.35" Unlock="REPU_13,REPU_14,REPU_15,REPU_16" />
+    <Skill Name="REPU_12" Rarity="1" Category="range" MaxLevel="1" Angle="0.40" Pos="0.35" Unlock="REPU_13,REPU_14,REPU_16,REPU_23" />
     <Skill Name="REPU_13" Rarity="1" Category="range" MaxLevel="1" Angle="0.28" Pos="0.35" Unlock="REPU_16,REPU_17" />
     <Skill Name="REPU_14" Rarity="1" Category="range" MaxLevel="1" Angle="0.50" Pos="0.55" Unlock="REPU_15,REPU_19" />
-    <Skill Name="REPU_15" Rarity="1" Category="range" MaxLevel="1" Angle="0.40" Pos="0.75" Unlock="REPU_16,REPU_19" />
-    <Skill Name="REPU_16" Rarity="1" Category="range" MaxLevel="1" Angle="0.28" Pos="0.55" Unlock="REPU_17" />
+    <Skill Name="REPU_15" Rarity="1" Category="range" MaxLevel="1" Angle="0.40" Pos="0.75" Unlock="REPU_19,REPU_23,REPU_24" />
+    <Skill Name="REPU_16" Rarity="1" Category="range" MaxLevel="1" Angle="0.28" Pos="0.55" Unlock="REPU_17,REPU_24" />
     <Skill Name="REPU_17" Rarity="3" Category="range" MaxLevel="1" Angle="0.15" Pos="0.35" Unlock="REPU_18" />
     <Skill Name="REPU_18" Rarity="1" Category="range" MaxLevel="1" Angle="0.05" Pos="0.35" Unlock="" />
     <Skill Name="REPU_19" Rarity="3" Category="range" MaxLevel="1" Angle="0.50" Pos="0.75" Unlock="REPU_20" />
     <Skill Name="REPU_20" Rarity="1" Category="range" MaxLevel="1" Angle="0.50" Pos="0.95" Unlock="" />
+    <Skill Name="REPU_21" Rarity="1" Category="range" MaxLevel="1" Angle="0.60" Pos="0.55" Unlock="" />
+    <Skill Name="REPU_22" Rarity="1" Category="range" MaxLevel="1" Angle="0.66" Pos="0.65" Unlock="" />
+    <Skill Name="REPU_23" Rarity="1" Category="range" MaxLevel="1" Angle="0.40" Pos="0.55" Unlock="" />
+    <Skill Name="REPU_24" Rarity="1" Category="range" MaxLevel="1" Angle="0.34" Pos="0.65" Unlock="" />
   </Tree>
 </MetaData>

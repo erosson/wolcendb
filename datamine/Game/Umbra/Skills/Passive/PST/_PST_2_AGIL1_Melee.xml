@@ -1,18 +1,18 @@
 <MetaData>
   <Spell Name="MELEE_1" UIName="@ui_MELEE_1_name" HUDLoreDesc="" GameplayDesc="">
     <MagicEffects>
-      <EIM Name="attackspeed_score_percent" HUDDesc="@ui_eim_attackspeed_score_percent" Permanent="1">
-        <Semantics CharacteristicScorePercentInt="15" />
+      <EIM Name="attackspeed_final_percent" HUDDesc="@ui_eim_attackspeed_final_percent" Permanent="1">
+        <Semantics CharacteristicFinalPercentFloat="2" />
       </EIM>
       <EIM Name="forceshield_percent" HUDDesc="@ui_eim_forceshield_percent" Permanent="1">
-        <Semantics ArmorPercentFloat="8" />
+        <Semantics ArmorPercentFloat="5" />
       </EIM>
     </MagicEffects>
   </Spell>
   <Spell Name="MELEE_2" UIName="@ui_MELEE_2_name" HUDLoreDesc="" GameplayDesc="">
     <MagicEffects>
       <EIM Name="material_damage_percent" HUDDesc="@ui_eim_material_damage_percent" Permanent="1">
-        <Semantics DamagePercentInt="15" />
+        <Semantics DamagePercentInt="10" />
       </EIM>
     </MagicEffects>
   </Spell>
@@ -43,7 +43,7 @@
         <Semantics HealthFlatInt="100" />
       </EIM>
       <EIM Name="health_percent" HUDDesc="@ui_eim_health_percent" Permanent="1">
-        <Semantics HealthPercentInt="8" />
+        <Semantics HealthPercentInt="5" />
       </EIM>
     </MagicEffects>
   </Spell>
@@ -71,31 +71,31 @@
   <Spell Name="MELEE_10" UIName="@ui_MELEE_10_name" HUDLoreDesc="" GameplayDesc="">
     <MagicEffects>
       <EIM Name="health_percent" HUDDesc="@ui_eim_health_percent" Permanent="1">
-        <Semantics HealthPercentInt="10" />
+        <Semantics HealthPercentInt="5" />
       </EIM>
       <EIM Name="forceshield_percent" HUDDesc="@ui_eim_forceshield_percent" Permanent="1">
-        <Semantics ArmorPercentFloat="8" />
+        <Semantics ArmorPercentFloat="5" />
       </EIM>
     </MagicEffects>
   </Spell>
   <Spell Name="MELEE_11" UIName="@ui_MELEE_11_name" HUDLoreDesc="" GameplayDesc="">
     <MagicEffects>
       <EIM Name="dodgechance_score_percent" HUDDesc="@ui_eim_dodgechance_score_percent" Permanent="1">
-        <Semantics CharacteristicScorePercentInt="15" />
+        <Semantics CharacteristicScorePercentInt="8" />
       </EIM>
     </MagicEffects>
   </Spell>
   <Spell Name="MELEE_12" UIName="@ui_MELEE_11_name" HUDLoreDesc="" GameplayDesc="">
     <MagicEffects>
       <EIM Name="dodgechance_score_percent" HUDDesc="@ui_eim_dodgechance_score_percent" Permanent="1">
-        <Semantics CharacteristicScorePercentInt="25" />
+        <Semantics CharacteristicScorePercentInt="12" />
       </EIM>
     </MagicEffects>
   </Spell>
   <Spell Name="MELEE_13" UIName="@ui_MELEE_11_name" HUDLoreDesc="" GameplayDesc="">
     <MagicEffects>
       <EIM Name="dodgechance_score_percent" HUDDesc="@ui_eim_dodgechance_score_percent" Permanent="1">
-        <Semantics CharacteristicScorePercentInt="15" />
+        <Semantics CharacteristicScorePercentInt="8" />
       </EIM>
     </MagicEffects>
   </Spell>
@@ -104,32 +104,32 @@
       <EIM Name="movespeed" HUDDesc="@ui_eim_movespeed" Permanent="1">
         <Semantics SpeedPercentInt="5" />
       </EIM>
-      <EIM Name="attackspeed_score_percent" HUDDesc="@ui_eim_attackspeed_score_percent" Permanent="1">
-        <Semantics CharacteristicScorePercentInt="5" />
+      <EIM Name="attackspeed_final_percent" HUDDesc="@ui_eim_attackspeed_final_percent" Permanent="1">
+        <Semantics CharacteristicFinalPercentFloat="2" />
       </EIM>
-      <EIM Name="spellcastingspeed_score_percent" HUDDesc="@ui_eim_spellcastingspeed_score_percent" Permanent="1">
-        <Semantics CharacteristicScorePercentInt="9" />
+      <EIM Name="spellcastingspeed_final_percent" HUDDesc="@ui_eim_spellcastingspeed_final_percent" Permanent="1">
+        <Semantics CharacteristicFinalPercentFloat="2" />
       </EIM>
     </MagicEffects>
   </Spell>
   <Spell Name="MELEE_15" UIName="@ui_MELEE_15_name" HUDLoreDesc="" GameplayDesc="">
     <MagicEffects>
       <EIM Name="agility_pts" HUDDesc="@ui_eim_agility_pts" Permanent="1">
-        <Semantics AttributeFlatInt="25" />
+        <Semantics AttributeFlatInt="15" />
       </EIM>
     </MagicEffects>
   </Spell>
   <Spell Name="MELEE_16" UIName="@ui_MELEE_16_name" HUDLoreDesc="@ui_MELEE_16_lore" GameplayDesc="@ui_MELEE_16_desc">
     <MagicEffects>
       <EIM Name="damage_percent_if_only_one_nearby_enemy" HUDDesc="@ui_eim_damage_percent_if_only_one_nearby_enemy" Permanent="1">
-        <Semantics DamagePercentFloat="25" RadiusFloat="7" />
+        <Semantics DamagePercentFloat="20" RadiusFloat="7" />
       </EIM>
     </MagicEffects>
   </Spell>
   <Spell Name="MELEE_17" UIName="@ui_MELEE_17_name" HUDLoreDesc="" GameplayDesc="">
     <MagicEffects>
       <EIM Name="damage_percent_if_only_one_nearby_enemy" HUDDesc="@ui_eim_damage_percent_if_only_one_nearby_enemy_damage" Permanent="1">
-        <Semantics DamagePercentFloat="5" RadiusFloat="0" />
+        <Semantics DamagePercentFloat="10" RadiusFloat="0" />
       </EIM>
     </MagicEffects>
   </Spell>
@@ -142,29 +142,29 @@
   </Spell>
   <Spell Name="MELEE_19" UIName="@ui_MELEE_19_name" HUDLoreDesc="" GameplayDesc="">
     <MagicEffects>
-      <EIM Name="attackspeed_score_percent" HUDDesc="@ui_eim_attackspeed_score_percent" Permanent="1">
-        <Semantics CharacteristicScorePercentInt="15" />
+      <EIM Name="attackspeed_final_percent" HUDDesc="@ui_eim_attackspeed_final_percent" Permanent="1">
+        <Semantics CharacteristicFinalPercentFloat="3" />
       </EIM>
     </MagicEffects>
   </Spell>
   <Spell Name="MELEE_20" UIName="@ui_MELEE_20_name" HUDLoreDesc="" GameplayDesc="">
     <MagicEffects>
-      <EIM Name="attackspeed_score_percent" HUDDesc="@ui_eim_attackspeed_score_percent" Permanent="1">
-        <Semantics CharacteristicScorePercentInt="15" />
+      <EIM Name="attackspeed_final_percent" HUDDesc="@ui_eim_attackspeed_final_percent" Permanent="1">
+        <Semantics CharacteristicFinalPercentFloat="3" />
       </EIM>
     </MagicEffects>
   </Spell>
   <Spell Name="MELEE_21" UIName="@ui_MELEE_21_name" HUDLoreDesc="" GameplayDesc="">
     <MagicEffects>
-      <EIM Name="attackspeed_score_percent" HUDDesc="@ui_eim_attackspeed_score_percent" Permanent="1">
-        <Semantics CharacteristicScorePercentInt="15" />
+      <EIM Name="attackspeed_final_percent" HUDDesc="@ui_eim_attackspeed_final_percent" Permanent="1">
+        <Semantics CharacteristicFinalPercentFloat="3" />
       </EIM>
     </MagicEffects>
   </Spell>
   <Spell Name="MELEE_22" UIName="@ui_MELEE_22_name" HUDLoreDesc="" GameplayDesc="">
     <MagicEffects>
       <EIM Name="criticalchance_score_percent" HUDDesc="@ui_eim_criticalchance_score_percent" Permanent="1">
-        <Semantics CharacteristicScorePercentInt="18" />
+        <Semantics CharacteristicScorePercentInt="10" />
       </EIM>
     </MagicEffects>
   </Spell>
@@ -174,7 +174,7 @@
         <Semantics ArmorFlatInt="100" />
       </EIM>
       <EIM Name="forceshield_percent" HUDDesc="@ui_eim_forceshield_percent" Permanent="1">
-        <Semantics ArmorPercentFloat="8" />
+        <Semantics ArmorPercentFloat="5" />
       </EIM>
     </MagicEffects>
   </Spell>
@@ -202,34 +202,113 @@
   <Spell Name="MELEE_27" UIName="@ui_MELEE_27_name" HUDLoreDesc="" GameplayDesc="">
     <MagicEffects>
       <EIM Name="material_damage_percent" HUDDesc="@ui_eim_material_damage_percent" Permanent="1">
-        <Semantics DamagePercentInt="10" />
+        <Semantics DamagePercentInt="7" />
       </EIM>
       <EIM Name="criticalchance_score_percent" HUDDesc="@ui_eim_criticalchance_score_percent" Permanent="1">
-        <Semantics CharacteristicScorePercentInt="9" />
+        <Semantics CharacteristicScorePercentInt="5" />
       </EIM>
     </MagicEffects>
   </Spell>
   <Spell Name="MELEE_28" UIName="@ui_MELEE_28_name" HUDLoreDesc="" GameplayDesc="">
     <MagicEffects>
       <EIM Name="criticalchance_score_percent" HUDDesc="@ui_eim_criticalchance_score_percent" Permanent="1">
-        <Semantics CharacteristicScorePercentInt="18" />
+        <Semantics CharacteristicScorePercentInt="10" />
       </EIM>
     </MagicEffects>
   </Spell>
   <Spell Name="MELEE_29" UIName="@ui_MELEE_29_name" HUDLoreDesc="" GameplayDesc="">
     <MagicEffects>
       <EIM Name="criticalchance_score_percent" HUDDesc="@ui_eim_criticalchance_score_percent" Permanent="1">
-        <Semantics CharacteristicScorePercentInt="18" />
+        <Semantics CharacteristicScorePercentInt="10" />
       </EIM>
     </MagicEffects>
   </Spell>
   <Spell Name="MELEE_30" UIName="@ui_MELEE_30_name" HUDLoreDesc="@ui_MELEE_30_lore" GameplayDesc="@ui_MELEE_30_desc">
     <MagicEffects>
-      <EIM Name="criticaldamage_pts" HUDDesc="@ui_eim_criticaldamage_pts" Permanent="1">
-        <Semantics DamagePercentInt="60" />
+      <EIM Name="critical_damage_final_multiplier" HUDDesc="@ui_eim_critical_damage_final_multiplier" Permanent="1">
+        <Semantics MajorDamageMultiplier="1.3" />
       </EIM>
-      <EIM Name="damage_percent" HUDDesc="@ui_eim_damage_percent" Permanent="1">
-        <Semantics DamagePercentInt="-30" />
+    </MagicEffects>
+  </Spell>
+  <Spell Name="MELEE_31" UIName="@ui_MELEE_31_name" HUDLoreDesc="" GameplayDesc="">
+    <MagicEffects>
+      <EIM Name="health_pts" HUDDesc="@ui_eim_health_pts" Permanent="1">
+        <Semantics HealthFlatInt="100" />
+      </EIM>
+      <EIM Name="health_percent" HUDDesc="@ui_eim_health_percent" Permanent="1">
+        <Semantics HealthPercentInt="5" />
+      </EIM>
+    </MagicEffects>
+  </Spell>
+  <Spell Name="MELEE_32" UIName="@ui_MELEE_32_name" HUDLoreDesc="" GameplayDesc="">
+    <MagicEffects>
+      <EIM Name="dodgechance_score_percent" HUDDesc="@ui_eim_dodgechance_score_percent" Permanent="1">
+        <Semantics CharacteristicScorePercentInt="8" />
+      </EIM>
+    </MagicEffects>
+  </Spell>
+  <Spell Name="MELEE_33" UIName="@ui_MELEE_33_name" HUDLoreDesc="" GameplayDesc="">
+    <MagicEffects>
+      <EIM Name="dodgechance_score_percent" HUDDesc="@ui_eim_dodgechance_score_percent" Permanent="1">
+        <Semantics CharacteristicScorePercentInt="8" />
+      </EIM>
+    </MagicEffects>
+  </Spell>
+  <Spell Name="MELEE_34" UIName="@ui_MELEE_34_name" HUDLoreDesc="" GameplayDesc="">
+    <MagicEffects>
+      <EIM Name="stamina_regeneration_percent" HUDDesc="@ui_eim_stamina_regeneration_percent" Permanent="1">
+        <Semantics ResourcePercentFloat="15" />
+      </EIM>
+    </MagicEffects>
+  </Spell>
+  <Spell Name="MELEE_35" UIName="@ui_MELEE_35_name" HUDLoreDesc="" GameplayDesc="">
+    <MagicEffects>
+      <EIM Name="health_percent" HUDDesc="@ui_eim_health_percent" Permanent="1">
+        <Semantics HealthPercentInt="5" />
+      </EIM>
+      <EIM Name="forceshield_percent" HUDDesc="@ui_eim_forceshield_percent" Permanent="1">
+        <Semantics ArmorPercentFloat="5" />
+      </EIM>
+    </MagicEffects>
+  </Spell>
+  <Spell Name="MELEE_36" UIName="@ui_MELEE_36_name" HUDLoreDesc="" GameplayDesc="">
+    <MagicEffects>
+      <EIM Name="forceshield_pts" HUDDesc="@ui_eim_forceshield_pts" Permanent="1">
+        <Semantics ArmorFlatInt="100" />
+      </EIM>
+      <EIM Name="forceshield_percent" HUDDesc="@ui_eim_forceshield_percent" Permanent="1">
+        <Semantics ArmorPercentFloat="5" />
+      </EIM>
+    </MagicEffects>
+  </Spell>
+  <Spell Name="MELEE_37" UIName="@ui_MELEE_37_name" HUDLoreDesc="" GameplayDesc="">
+    <MagicEffects>
+      <EIM Name="attackspeed_final_percent" HUDDesc="@ui_eim_attackspeed_final_percent" Permanent="1">
+        <Semantics CharacteristicFinalPercentFloat="3" />
+      </EIM>
+    </MagicEffects>
+  </Spell>
+  <Spell Name="MELEE_38" UIName="@ui_MELEE_38_name" HUDLoreDesc="" GameplayDesc="">
+    <MagicEffects>
+      <EIM Name="attackspeed_final_percent" HUDDesc="@ui_eim_attackspeed_final_percent" Permanent="1">
+        <Semantics CharacteristicFinalPercentFloat="3" />
+      </EIM>
+    </MagicEffects>
+  </Spell>
+  <Spell Name="MELEE_39" UIName="@ui_MELEE_39_name" HUDLoreDesc="" GameplayDesc="">
+    <MagicEffects>
+      <EIM Name="criticaldamage_pts" HUDDesc="@ui_eim_criticaldamage_pts" Permanent="1">
+        <Semantics DamagePercentInt="7" />
+      </EIM>
+    </MagicEffects>
+  </Spell>
+  <Spell Name="MELEE_40" UIName="@ui_MELEE_40_name" HUDLoreDesc="" GameplayDesc="">
+    <MagicEffects>
+      <EIM Name="material_damage_percent" HUDDesc="@ui_eim_material_damage_percent" Permanent="1">
+        <Semantics DamagePercentInt="7" />
+      </EIM>
+      <EIM Name="criticalchance_score_percent" HUDDesc="@ui_eim_criticalchance_score_percent" Permanent="1">
+        <Semantics CharacteristicScorePercentInt="5" />
       </EIM>
     </MagicEffects>
   </Spell>

@@ -4,10 +4,10 @@
     <CastingParams CastBone="R_Weapon_Bone" CanCastWhileMoving="0" MaximumTurnRate="0" ShouldMoveInRange="0" />
     <CastingImmunity IgnoreCrowdControlDuringCast="1" />
     <Animation ActionString="player_skill_laceration" ScaleWithAttackSpeed="1" AnimationDrivenMovement="1" />
-    <HUD HUDPicture="../u_resources/spells/Active_Skills/laceration.png" UIName="@ui_AST_Laceration" Lore="@ui_AST_Laceration_Lore" ActiveEffectTitle="" ActiveEffectDesc="" ASTTreeNumber="1" ShowParamsInAST="Cost,ROSTime,Cooldown,Range,DamageDetail,DamageWeapon,DamageCritical,StatusAilmentsChance,LifeLeech,SpecificLaceration" ShowParamsInTooltip="Cost,Cooldown,DamageOverview,DamageWeapon,StatusAilmentsChance,SpecificLaceration" />
+    <HUD HUDPicture="../u_resources/spells/Active_Skills/laceration_Rend.png" UIName="@ui_AST_Laceration" Lore="@ui_AST_Laceration_Lore" ActiveEffectTitle="" ActiveEffectDesc="" ASTTreeNumber="1" ShowParamsInAST="Cost,ROSTime,Cooldown,Range,DamageDetail,DamageWeapon,DamageCritical,StatusAilmentsChance,LifeLeech,SpecificLaceration" ShowParamsInTooltip="Cost,Cooldown,DamageOverview,DamageWeapon,StatusAilmentsChance,SpecificLaceration" />
     <Enneract PickableParticle_MoveToGround="U_CommonVFX_02.Esseract.Esseract_Projectile.Rend" PickableParticle_OnGround_Shape="U_CommonVFX_02.Esseract.Esseract_Shape.Circle_Rend" PickableParticle_OnGround_Damage="U_CommonVFX_02.Esseract.Esseract_Color.Rend" PickableParticle_OnGround_Symbol="U_CommonVFX_02.Esseract.Esseract_Symbol.HEPHAARON" PickableParticle_OnGround_Indicator="U_CommonVFX_02.Esseract.Esseract_Indicator.Rend" PickableParticle_OnGround_Pickup="U_CommonVFX_02.Esseract.Esseract_Loot.Rend" SkillLearningParticle="U_CommonVFX.Skill_Learn.Skill_Learn_Rend" Inventory_HUDPicture="../u_resources/enneracts/laceration.png" Inventory_LoreDesc="@ui_enneract_lore" />
     <Aggression TargetValueOnHit="40" />
-    <DamageWeapon PercentMin="280" PercentMinPerLevel="0" PercentMax="300" PercentMaxPerLevel="0" />
+    <DamageWeapon WeaponMultiplier="2.1" />
     <Damage_Conversion>
       <Entry From="physical" To="rend" ConversionRate="100" />
     </Damage_Conversion>
@@ -15,33 +15,44 @@
       <bleed Chance="20" ChanceMode="AddToBase" Duration="6" DurationMode="override" />
     </StatusAilment>
     <Cooldown Cooldown="0" CooldownPerLevel="0" />
-    <ResourceCost RageCost="-160" RageCostPerLevel="0" ROSTransfertDuration="2.0" />
+    <ResourceCost RageCost="-160" RageCostPerLevel="0" ROSTransfertDuration="1.5" />
     <DamageZone RateOfFire="0.5" />
     <ParticleList>
-      <Particle Key="appear" Name="U_Character.Skills.Laceration_Axe_Summon_01" />
-      <Particle Key="disappear" Name="U_Character.Skills.Laceration_Axe_Disappear_01" />
-      <Particle Key="wind" Name="U_Character.Skills.Laceration_Wind" Direction="0,0,1" />
-      <Particle Key="loop" Name="U_Character.Skills.Laceration_Axe_Loop_01" Direction="0,0,1" Offset="0,0,1.35" />
+      <Particle Key="appear" Name="U_Character.Skills.Laceration_Axe_Summon_01_Blood" Direction="0,0,1" />
+      <Particle Key="disappear" Name="U_Character.Skills.Laceration_Axe_Disappear_01_Blood" Direction="0,0,1" />
+      <Particle Key="wind" Name="U_Character.Skills.Laceration_Wind_Blood" Direction="0,0,1" />
+      <Particle Key="loop" Name="U_Character.Skills.Laceration_Axe_Loop_01_Blood" Direction="0,0,1" Offset="0,0,1.35" />
     </ParticleList>
     <VisualFeedback TrailPresetBase="default" FeedbackPresetBase="Player_skill_laceration" BloodDecalOrientation="forward" />
     <SoundTrigger OnAnimStart="Play_Skill_Laceration_Summon" OnAnimCast="Play_Skill_Laceration" OnCrticalHit="Play_Skill_Laceration_Impact" OnHit="Play_Skill_Laceration_Impact" />
     <Specific_Laceration BladeStartDistanceFromCaster="2.5" BladeEndDistanceFromCaster="2.5" ProjectileSpeedMultiplier="1.8" ProjectileLifeTime=".45" DamageZoneRadius="1.5" DamageZoneHeightOffset="1.35" SoundTriggerOnVFXKill="" />
   </Skill>
+  <Skill UID="player_laceration_variant_default_damage_type" ESkill="default_variant">
+    <HUD UIName="@ui_AST_Laceration" Lore="@ui_AST_Laceration_Lore" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_Alpha.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_Alpha.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_Alpha.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_Alpha.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_Alpha.png" HUDPictureVariant_InnerIcon="../u_resources/spells/Active_Skills/laceration_Rend.png" VariantBottomPanel="1" />
+  </Skill>
   <Skill UID="player_laceration_variant_1" ESkill="player_laceration_variant" Keywords="attack_skill">
-    <HUD UIName="@ui_Variant_Laceration_variant_1" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_003.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_003.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_003.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_003.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_003.png" ShowParamsInTooltip="SpecificLaceration" />
+    <HUD UIName="@ui_Variant_Laceration_variant_1" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_003.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_003.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_003.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_003.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_003.png" ShowParamsInTooltip="SpecificLaceration,DamageWeapon" />
     <Specific_Laceration ProjectileSpeedMultiplier="1.30" />
     <Aggression TargetValueOnHit="-10" />
     <Animation Scale="1.3" />
+    <DamageWeapon WeaponMultiplier="0.8" />
+    <StatusAilment AilmentEffectiveness="75" />
     <SoundTrigger OnAnimStart="Play_Skill_Laceration_Summon" OnAnimCast="Play_Skill_Laceration_Short" OnCriticalHit="Play_Skill_Laceration_Impact" OnHit="Play_Skill_Laceration_Impact" />
   </Skill>
   <Skill UID="player_laceration_variant_2" ESkill="player_laceration_variant" Keywords="attack_skill">
     <HUD UIName="@ui_Variant_Laceration_variant_2" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_003.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_003.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_003.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_003.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_003.png" ShowParamsInTooltip="SpecificLaceration" />
-    <Specific_Laceration IsBig="1" DamageZoneRadius="1" BladeStartDistanceFromCaster="1" BladeEndDistanceFromCaster="1" />
+    <ParticleList>
+      <Particle Key="wind" Name="U_Character.Skills.Laceration_Wind_Blood_Big" Direction="0,0,1" />
+      <Particle Key="loop" Name="U_Character.Skills.Laceration_Axe_Loop_01_Blood_Big" Direction="0,0,1" Offset="0,0,1.35" />
+    </ParticleList>
+    <Specific_Laceration DamageZoneRadius="1" BladeStartDistanceFromCaster="1" BladeEndDistanceFromCaster="1" />
   </Skill>
   <Skill UID="player_laceration_variant_3" ESkill="player_laceration_variant" Keywords="attack_skill">
     <HUD UIName="@ui_Variant_Laceration_variant_3" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_001.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_001.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_001.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_001.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_001.png" ShowParamsInTooltip="SpecificLaceration,StatusAilmentsChance" />
-    <StatusAilment AllAilmentsInflictScoreIncreasePercent="40" />
-    <Specific_Laceration IsBleed="1" />
+    <StatusAilment AilmentEffectiveness="125" />
+    <ParticleList>
+      <Particle Key="loop" Name="U_Character.Skills.Laceration_Axe_Loop_01_Blood_Bleed" Direction="0,0,1" Offset="0,0,1.35" />
+    </ParticleList>
   </Skill>
   <Skill UID="player_laceration_variant_4" ESkill="player_laceration_variant" Keywords="attack_skill">
     <HUD UIName="@ui_Variant_Laceration_variant_4" Lore="@ui_Variant_Laceration_variant_4_Lore" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_005.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_005.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_005.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_005.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_005.png" ShowParamsInTooltip="SpecificLaceration,Cost,ROSTime,DamageWeapon,Cooldown" />
@@ -49,35 +60,29 @@
     <Specific_Laceration ProjectileLifeTime="4" IsLoop="1" ProjectileSpeedMultiplier="0.7" />
     <ResourceCost RageCost="-200" RageCostPerLevel="0" ROSTransfertDuration="2.0" />
     <Aggression TargetValueOnHit="-20" />
-    <DamageWeapon Type="rend" PercentMin="-150" PercentMinPerLevel="0" PercentMax="-150" PercentMaxPerLevel="0" />
+    <ParticleList>
+      <Particle Key="wind" Name="U_Character.Skills.Laceration_Wind_Blood_Loop" Direction="0,0,1" />
+    </ParticleList>
     <Cooldown Cooldown="10" CooldownPerLevel="0" />
-  </Skill>
-  <Skill UID="player_laceration_variant_5" ESkill="player_laceration_variant" Keywords="attack_skill">
-    <HUD UIName="@ui_Variant_Laceration_variant_5" Lore="@ui_Variant_Laceration_variant_5_Lore" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_005.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_005.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_005.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_005.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_005.png" ShowParamsInTooltip="SpecificLaceration,DamageWeapon" />
-    <Specific_Laceration IsFire="1" />
-    <DamageWeapon PercentMin="30" PercentMinPerLevel="0" PercentMax="30" PercentMaxPerLevel="0" />
-    <Damage_Conversion>
-      <Entry From="physical" To="rend" ConversionRate="-100" />
-      <Entry From="physical" To="fire" ConversionRate="100" />
-    </Damage_Conversion>
-    <WeaponRequirements Requirements="melee,fire" />
   </Skill>
   <Skill UID="player_laceration_variant_6" ESkill="player_laceration_variant" Keywords="attack_skill">
     <HUD UIName="@ui_Variant_Laceration_variant_6" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_001.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_001.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_001.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_001.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_001.png" ShowParamsInTooltip="SpecificLaceration,LifeLeech" />
-    <LifeLeech TransferPercent="5" TransferDuration="1" />
+    <LifeLeech TransferPercent="1" TransferDuration="1" />
   </Skill>
   <Skill UID="player_laceration_variant_7" ESkill="player_laceration_variant" Keywords="attack_skill">
     <HUD UIName="@ui_Variant_Laceration_variant_7" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_001.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_001.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_001.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_001.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_001.png" ShowParamsInTooltip="SpecificLaceration,DamageCritical" />
     <DamageCritical CriticalInflictScoreModifier="40" />
   </Skill>
   <Skill UID="player_laceration_variant_8" ESkill="player_laceration_variant" Keywords="attack_skill">
-    <HUD UIName="@ui_Variant_Laceration_variant_8" Lore="@ui_Variant_Laceration_variant_8_Lore" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_005.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_005.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_005.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_005.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_005.png" ShowParamsInTooltip="SpecificLaceration" />
+    <HUD UIName="@ui_Variant_Laceration_variant_8" Lore="@ui_Variant_Laceration_variant_8_Lore" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_005.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_005.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_005.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_005.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_005.png" ShowParamsInTooltip="SpecificLaceration,DamageWeapon" />
     <Animation ActionString="player_skill_laceration_02" ScaleWithAttackSpeed="1" />
     <Specific_Laceration FollowsCaster="1" ProjectileLifeTime="1" />
+    <DamageWeapon WeaponMultiplier="0.85" />
   </Skill>
   <Skill UID="player_laceration_variant_9" ESkill="player_laceration_variant" Keywords="attack_skill">
-    <HUD UIName="@ui_Variant_Laceration_variant_9" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_003.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_003.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_003.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_003.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_003.png" ShowParamsInTooltip="SpecificLaceration" />
+    <HUD UIName="@ui_Variant_Laceration_variant_9" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_003.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_003.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_003.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_003.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_003.png" ShowParamsInTooltip="SpecificLaceration,DamageWeapon" />
     <Specific_Laceration BladeStartDistanceFromCaster="0" BladeEndDistanceFromCaster="5" />
+    <DamageWeapon WeaponMultiplier="1.5" />
   </Skill>
   <Skill UID="player_laceration_variant_10" ESkill="player_laceration_variant" Keywords="attack_skill">
     <HUD UIName="@ui_Variant_Laceration_variant_10" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_003.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_003.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_003.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_003.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_003.png" ShowParamsInTooltip="SpecificLaceration" />
@@ -97,14 +102,145 @@
   </Skill>
   <Skill UID="player_laceration_variant_14" ESkill="player_laceration_variant" Keywords="attack_skill">
     <HUD UIName="@ui_Variant_Laceration_variant_14" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_001.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_001.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_001.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_001.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_001.png" ShowParamsInTooltip="SpecificLaceration,DamageWeapon" />
-    <DamageWeapon PercentMin="30" PercentMinPerLevel="0" PercentMax="30" PercentMaxPerLevel="0" />
+    <DamageWeapon WeaponMultiplier="1.15" />
   </Skill>
   <Skill UID="player_laceration_variant_15" ESkill="player_laceration_variant" Keywords="attack_skill">
     <HUD UIName="@ui_Variant_Laceration_variant_15" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_003.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_003.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_003.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_003.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_003.png" ShowParamsInTooltip="SpecificLaceration,DamageWeapon" />
-    <DamageWeapon PercentMin="60" PercentMinPerLevel="0" PercentMax="60" PercentMaxPerLevel="0" />
+    <DamageWeapon WeaponMultiplier="1.3" />
   </Skill>
   <Skill UID="player_laceration_variant_16" ESkill="player_laceration_variant" Keywords="attack_skill">
     <HUD UIName="@ui_Variant_Laceration_variant_16" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_001.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_001.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_001.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_001.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_001.png" ShowParamsInTooltip="SpecificLaceration,Cost" />
     <ResourceCost RageCost="30" />
+  </Skill>
+  <Skill UID="player_laceration_variant_5" ESkill="player_laceration_variant" Keywords="attack_skill">
+    <HUD UIName="@ui_Variant_Laceration_variant_5" Lore="@ui_Variant_Laceration_variant_5_Lore" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_Alpha.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_Alpha.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_Alpha.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_Alpha.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_Alpha.png" HUDPictureVariant_InnerIcon="../u_resources/spells/Active_Skills/laceration_Fire.png" ShowParamsInTooltip="SpecificLaceration,DamageWeapon" HUDPicture="../u_resources/spells/Active_Skills/laceration_Fire.png" VariantBottomPanel="1" />
+    <DamageWeapon WeaponMultiplier="1.25" />
+    <Damage_Conversion>
+      <Entry From="physical" To="rend" ConversionRate="-100" />
+      <Entry From="physical" To="fire" ConversionRate="100" />
+    </Damage_Conversion>
+    <WeaponRequirements Requirements="melee,fire" />
+    <ParticleList>
+      <Particle Key="appear" Name="U_Character.Skills.Laceration_Axe_Summon_01_Fire" Direction="0,0,1" />
+      <Particle Key="disappear" Name="U_Character.Skills.Laceration_Axe_Disappear_01_Fire" Direction="0,0,1" />
+      <Particle Key="wind" Name="U_Character.Skills.Laceration_Wind_Fire" Direction="0,0,1" />
+      <Particle Key="loop" Name="U_Character.Skills.Laceration_Axe_Loop_01_Fire" Direction="0,0,1" Offset="0,0,1.35" />
+    </ParticleList>
+    <SoundTrigger OnAnimStart="Play_Skill_Laceration_Summon_Fire" OnAnimCast="Play_Skill_Laceration" OnCrticalHit="Play_Skill_Laceration_Impact_Fire" OnHit="Play_Skill_Laceration_Impact_Fire" />
+  </Skill>
+  <Skill UID="player_laceration_variant_17" ESkill="player_laceration_variant" Keywords="attack_skill">
+    <HUD UIName="@ui_Variant_Laceration_variant_17" Lore="@ui_Variant_Laceration_variant_17_Lore" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_Alpha.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_Alpha.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_Alpha.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_Alpha.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_Alpha.png" HUDPictureVariant_InnerIcon="../u_resources/spells/Active_Skills/laceration_Sacred.png" ShowParamsInTooltip="SpecificLaceration,DamageWeapon" HUDPicture="../u_resources/spells/Active_Skills/laceration_Sacred.png" VariantBottomPanel="1" />
+    <DamageWeapon WeaponMultiplier="1.25" />
+    <Damage_Conversion>
+      <Entry From="physical" To="rend" ConversionRate="-100" />
+      <Entry From="physical" To="sacred" ConversionRate="100" />
+    </Damage_Conversion>
+    <ParticleList>
+      <Particle Key="appear" Name="U_Character.Skills.Laceration_Axe_Summon_01_Sacred" Direction="0,0,1" />
+      <Particle Key="disappear" Name="U_Character.Skills.Laceration_Axe_Disappear_01_Sacred" Direction="0,0,1" />
+      <Particle Key="wind" Name="U_Character.Skills.Laceration_Wind_Sacred" Direction="0,0,1" />
+      <Particle Key="loop" Name="U_Character.Skills.Laceration_Axe_Loop_01_Sacred" Direction="0,0,1" Offset="0,0,1.35" />
+    </ParticleList>
+    <WeaponRequirements Requirements="melee,sacred" />
+    <SoundTrigger OnAnimStart="Play_Skill_Laceration_Summon_Sacred" OnAnimCast="Play_Skill_Laceration" OnCrticalHit="Play_Skill_Laceration_Impact_Sacred" OnHit="Play_Skill_Laceration_Impact_Sacred" />
+  </Skill>
+  <Skill UID="player_laceration_variant_18" ESkill="player_laceration_variant" Keywords="attack_skill">
+    <HUD UIName="@ui_Variant_Laceration_variant_18" Lore="@ui_Variant_Laceration_variant_18_Lore" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_Alpha.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_Alpha.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_Alpha.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_Alpha.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_Alpha.png" HUDPictureVariant_InnerIcon="../u_resources/spells/Active_Skills/laceration_Shadow.png" ShowParamsInTooltip="SpecificLaceration,DamageWeapon" HUDPicture="../u_resources/spells/Active_Skills/laceration_Shadow.png" VariantBottomPanel="1" />
+    <DamageWeapon WeaponMultiplier="1.25" />
+    <Damage_Conversion>
+      <Entry From="physical" To="rend" ConversionRate="-100" />
+      <Entry From="physical" To="shadow" ConversionRate="100" />
+    </Damage_Conversion>
+    <ParticleList>
+      <Particle Key="appear" Name="U_Character.Skills.Laceration_Axe_Summon_01_Shadow" Direction="0,0,1" />
+      <Particle Key="disappear" Name="U_Character.Skills.Laceration_Axe_Disappear_01_Shadow" Direction="0,0,1" />
+      <Particle Key="wind" Name="U_Character.Skills.Laceration_Wind_Shadow" Direction="0,0,1" />
+      <Particle Key="loop" Name="U_Character.Skills.Laceration_Axe_Loop_01_Shadow" Direction="0,0,1" Offset="0,0,1.35" />
+    </ParticleList>
+    <WeaponRequirements Requirements="melee,shadow" />
+    <SoundTrigger OnAnimStart="Play_Skill_Laceration_Summon_Shadow" OnAnimCast="Play_Skill_Laceration" OnCrticalHit="Play_Skill_Laceration_Impact_Shadow" OnHit="Play_Skill_Laceration_Impact_Shadow" />
+  </Skill>
+  <Skill UID="Player_Laceration_variant_19" ESkill="default_variant">
+    <HUD UIName="@ui_variant_Player_Laceration_variant_19" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_003.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_003.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_003.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_003.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_003.png" ShowParamsInTooltip="DamageWeapon" />
+    <DamageWeapon WeaponMultiplier="1.15" />
+  </Skill>
+  <Skill UID="player_laceration_variant_2,player_laceration_variant_3" ESkill="default_variant_combo">
+    <ParticleList>
+      <Particle Key="loop" Name="U_Character.Skills.Laceration_Axe_Loop_01_Blood_Big_Bleed" Direction="0,0,1" Offset="0,0,1.35" />
+    </ParticleList>
+  </Skill>
+  <Skill UID="player_laceration_variant_2,player_laceration_variant_4" ESkill="default_variant_combo">
+    <ParticleList>
+      <Particle Key="wind" Name="U_Character.Skills.Laceration_Wind_Blood_Loop_Big" Direction="0,0,1" />
+    </ParticleList>
+  </Skill>
+  <Skill UID="player_laceration_variant_5,player_laceration_variant_2" ESkill="default_variant_combo">
+    <ParticleList>
+      <Particle Key="loop" Name="U_Character.Skills.Laceration_Axe_Loop_01_Fire_Big" Direction="0,0,1" Offset="0,0,1.35" />
+    </ParticleList>
+  </Skill>
+  <Skill UID="player_laceration_variant_5,player_laceration_variant_3" ESkill="default_variant_combo">
+    <ParticleList>
+      <Particle Key="loop" Name="U_Character.Skills.Laceration_Axe_Loop_01_Fire_Bleed" Direction="0,0,1" Offset="0,0,1.35" />
+    </ParticleList>
+  </Skill>
+  <Skill UID="player_laceration_variant_5,player_laceration_variant_2,player_laceration_variant_3" ESkill="default_variant_combo">
+    <ParticleList>
+      <Particle Key="loop" Name="U_Character.Skills.Laceration_Axe_Loop_01_Fire_Big_Bleed" Direction="0,0,1" Offset="0,0,1.35" />
+    </ParticleList>
+  </Skill>
+  <Skill UID="player_laceration_variant_5,player_laceration_variant_2,player_laceration_variant_4" ESkill="default_variant_combo">
+    <ParticleList>
+      <Particle Key="wind" Name="U_Character.Skills.Laceration_Wind_Fire_Loop_Big" Direction="0,0,1" />
+    </ParticleList>
+  </Skill>
+  <Skill UID="player_laceration_variant_5,player_laceration_variant_1" ESkill="default_variant_combo">
+    <SoundTrigger OnAnimCast="Play_Skill_Laceration_Short_Fire" />
+  </Skill>
+  <Skill UID="player_laceration_variant_17,player_laceration_variant_2" ESkill="default_variant_combo">
+    <ParticleList>
+      <Particle Key="loop" Name="U_Character.Skills.Laceration_Axe_Loop_01_Sacred_Big" Direction="0,0,1" Offset="0,0,1.35" />
+    </ParticleList>
+  </Skill>
+  <Skill UID="player_laceration_variant_17,player_laceration_variant_3" ESkill="default_variant_combo">
+    <ParticleList>
+      <Particle Key="loop" Name="U_Character.Skills.Laceration_Axe_Loop_01_Sacred_Bleed" Direction="0,0,1" Offset="0,0,1.35" />
+    </ParticleList>
+  </Skill>
+  <Skill UID="player_laceration_variant_17,player_laceration_variant_2,player_laceration_variant_3" ESkill="default_variant_combo">
+    <ParticleList>
+      <Particle Key="loop" Name="U_Character.Skills.Laceration_Axe_Loop_01_Sacred_Big_Bleed" Direction="0,0,1" Offset="0,0,1.35" />
+    </ParticleList>
+  </Skill>
+  <Skill UID="player_laceration_variant_17,player_laceration_variant_2,player_laceration_variant_4" ESkill="default_variant_combo">
+    <ParticleList>
+      <Particle Key="wind" Name="U_Character.Skills.Laceration_Wind_Sacred_Loop_Big" Direction="0,0,1" />
+    </ParticleList>
+  </Skill>
+  <Skill UID="player_laceration_variant_17,player_laceration_variant_1" ESkill="default_variant_combo">
+    <SoundTrigger OnAnimCast="Play_Skill_Laceration_Short_Sacred" />
+  </Skill>
+  <Skill UID="player_laceration_variant_18,player_laceration_variant_2" ESkill="default_variant_combo">
+    <ParticleList>
+      <Particle Key="loop" Name="U_Character.Skills.Laceration_Axe_Loop_01_Shadow_Big" Direction="0,0,1" Offset="0,0,1.35" />
+    </ParticleList>
+  </Skill>
+  <Skill UID="player_laceration_variant_18,player_laceration_variant_3" ESkill="default_variant_combo">
+    <ParticleList>
+      <Particle Key="loop" Name="U_Character.Skills.Laceration_Axe_Loop_01_Shadow_Bleed" Direction="0,0,1" Offset="0,0,1.35" />
+    </ParticleList>
+  </Skill>
+  <Skill UID="player_laceration_variant_18,player_laceration_variant_2,player_laceration_variant_3" ESkill="default_variant_combo">
+    <ParticleList>
+      <Particle Key="loop" Name="U_Character.Skills.Laceration_Axe_Loop_01_Shadow_Big_Bleed" Direction="0,0,1" Offset="0,0,1.35" />
+    </ParticleList>
+  </Skill>
+  <Skill UID="player_laceration_variant_18,player_laceration_variant_2,player_laceration_variant_4" ESkill="default_variant_combo">
+    <ParticleList>
+      <Particle Key="wind" Name="U_Character.Skills.Laceration_Wind_Shadow_Loop_Big" Direction="0,0,1" />
+    </ParticleList>
+  </Skill>
+  <Skill UID="player_laceration_variant_18,player_laceration_variant_1" ESkill="default_variant_combo">
+    <SoundTrigger OnAnimCast="Play_Skill_Laceration_Short_Shadow" />
   </Skill>
 </MetaData>

@@ -13,7 +13,7 @@
     <ResourceCost ApoResourceCost="-100" />
     <ParticleList>
       <Particle Key="indicator" Name="U_ApocalypticForm.Worrior_ApocalypticFrom.Frenzy_Consumtion_Indicator" Direction="0,1,0" Scale="2" />
-      <Particle Key="impact" Name="U_ApocalypticForm.Worrior_ApocalypticFrom.Frenzy_Consumtion_Impact" Scale="1.5" />
+      <Particle Key="impact" Name="U_ApocalypticForm.Worrior_ApocalypticFrom.Frenzy_Consumtion_Impact" Direction="0,0,1" Scale="1.5" />
     </ParticleList>
     <Specific_ApoWarrior_ChargeConsumption DamageShapeForwardOffset="5" DamageGainPercentPerCharge="100" />
     <Shapes>

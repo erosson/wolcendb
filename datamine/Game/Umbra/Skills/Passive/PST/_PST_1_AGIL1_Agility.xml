@@ -2,47 +2,47 @@
   <Spell Name="AGIL_1" UIName="@ui_AGIL_1_name" HUDLoreDesc="" GameplayDesc="">
     <MagicEffects>
       <EIM Name="damage_percent_projectiles" HUDDesc="@ui_eim_damage_percent_projectiles" Permanent="1">
-        <Semantics DamagePercentInt="15" />
+        <Semantics DamagePercentInt="7" />
       </EIM>
       <EIM Name="damage_percent_melee_weapon" HUDDesc="@ui_eim_damage_percent_melee_weapon" Permanent="1">
-        <Semantics DamagePercentInt="15" />
+        <Semantics DamagePercentInt="7" />
       </EIM>
     </MagicEffects>
   </Spell>
   <Spell Name="AGIL_2" UIName="@ui_AGIL_2_name" HUDLoreDesc="" GameplayDesc="">
     <MagicEffects>
       <EIM Name="damage_percent_projectiles" HUDDesc="@ui_eim_damage_percent_projectiles" Permanent="1">
-        <Semantics DamagePercentInt="15" />
+        <Semantics DamagePercentInt="7" />
       </EIM>
       <EIM Name="damage_percent_melee_weapon" HUDDesc="@ui_eim_damage_percent_melee_weapon" Permanent="1">
-        <Semantics DamagePercentInt="15" />
+        <Semantics DamagePercentInt="7" />
       </EIM>
     </MagicEffects>
   </Spell>
   <Spell Name="AGIL_3" UIName="@ui_AGIL_3_name" HUDLoreDesc="" GameplayDesc="">
     <MagicEffects>
       <EIM Name="agility_pts" HUDDesc="@ui_eim_agility_pts" Permanent="1">
-        <Semantics AttributeFlatInt="25" />
+        <Semantics AttributeFlatInt="15" />
       </EIM>
     </MagicEffects>
   </Spell>
   <Spell Name="AGIL_4" UIName="@ui_AGIL_4_name" HUDLoreDesc="" GameplayDesc="">
     <MagicEffects>
       <EIM Name="damage_percent_attack" HUDDesc="@ui_eim_damage_percent_attack" Permanent="1">
-        <Semantics DamagePercentInt="8" />
+        <Semantics DamagePercentInt="5" />
       </EIM>
       <EIM Name="criticalchance_score_percent" HUDDesc="@ui_eim_criticalchance_score_percent" Permanent="1">
-        <Semantics CharacteristicScorePercentInt="9" />
+        <Semantics CharacteristicScorePercentInt="5" />
       </EIM>
     </MagicEffects>
   </Spell>
   <Spell Name="AGIL_5" UIName="@ui_AGIL_5_name" HUDLoreDesc="" GameplayDesc="">
     <MagicEffects>
       <EIM Name="damage_percent_attack" HUDDesc="@ui_eim_damage_percent_attack" Permanent="1">
-        <Semantics DamagePercentInt="8" />
+        <Semantics DamagePercentInt="5" />
       </EIM>
       <EIM Name="criticalchance_score_percent" HUDDesc="@ui_eim_criticalchance_score_percent" Permanent="1">
-        <Semantics CharacteristicScorePercentInt="9" />
+        <Semantics CharacteristicScorePercentInt="5" />
       </EIM>
     </MagicEffects>
   </Spell>
@@ -55,25 +55,25 @@
   </Spell>
   <Spell Name="AGIL_7" UIName="@ui_AGIL_7_name" HUDLoreDesc="" GameplayDesc="">
     <MagicEffects>
-      <EIM Name="spellcastingspeed_score_percent" HUDDesc="@ui_eim_spellcastingspeed_score_percent" Permanent="1">
-        <Semantics CharacteristicScorePercentInt="18" />
+      <EIM Name="spellcastingspeed_final_percent" HUDDesc="@ui_eim_spellcastingspeed_final_percent" Permanent="1">
+        <Semantics CharacteristicFinalPercentFloat="3" />
       </EIM>
     </MagicEffects>
   </Spell>
   <Spell Name="AGIL_8" UIName="@ui_AGIL_8_name" HUDLoreDesc="" GameplayDesc="">
     <MagicEffects>
-      <EIM Name="attackspeed_score_percent" HUDDesc="@ui_eim_attackspeed_score_percent" Permanent="1">
-        <Semantics CharacteristicScorePercentInt="18" />
+      <EIM Name="attackspeed_final_percent" HUDDesc="@ui_eim_attackspeed_final_percent" Permanent="1">
+        <Semantics CharacteristicFinalPercentFloat="3" />
       </EIM>
     </MagicEffects>
   </Spell>
   <Spell Name="AGIL_9" UIName="@ui_AGIL_9_name" HUDLoreDesc="@ui_AGIL_9_lore" GameplayDesc="@ui_AGIL_9_desc">
     <MagicEffects>
-      <EIM Name="attackspeed_score_percent" HUDDesc="@ui_eim_attackspeed_score_percent" Permanent="1">
-        <Semantics CharacteristicScorePercentInt="50" />
+      <EIM Name="attackspeed_final_percent" HUDDesc="@ui_eim_attackspeed_final_percent" Permanent="1">
+        <Semantics CharacteristicFinalPercentFloat="6" />
       </EIM>
-      <EIM Name="spellcastingspeed_score_percent" HUDDesc="@ui_eim_spellcastingspeed_score_percent" Permanent="1">
-        <Semantics CharacteristicScorePercentInt="50" />
+      <EIM Name="spellcastingspeed_final_percent" HUDDesc="@ui_eim_spellcastingspeed_final_percent" Permanent="1">
+        <Semantics CharacteristicFinalPercentFloat="6" />
       </EIM>
     </MagicEffects>
   </Spell>
@@ -101,7 +101,7 @@
   <Spell Name="AGIL_13" UIName="@ui_AGIL_13_name" HUDLoreDesc="" GameplayDesc="">
     <MagicEffects>
       <EIM Name="damage_percent_full_stamina" HUDDesc="@ui_eim_damage_percent_full_stamina" Permanent="1">
-        <Semantics DamagePercentFloat="20" />
+        <Semantics DamagePercentFloat="10" />
       </EIM>
     </MagicEffects>
   </Spell>
@@ -115,67 +115,67 @@
   <Spell Name="AGIL_15" UIName="@ui_AGIL_15_name" HUDLoreDesc="" GameplayDesc="">
     <MagicEffects>
       <EIM Name="damage_percent_per_missing_stamina" HUDDesc="@ui_eim_damage_percent_per_missing_stamina" Permanent="1">
-        <Semantics DamagePercentFloat="4" />
+        <Semantics DamagePercentFloat="3" />
       </EIM>
     </MagicEffects>
   </Spell>
   <Spell Name="AGIL_16" UIName="@ui_AGIL_16_name" HUDLoreDesc="" GameplayDesc="">
     <MagicEffects>
       <EIM Name="health_percent" HUDDesc="@ui_eim_health_percent" Permanent="1">
-        <Semantics HealthPercentInt="10" />
+        <Semantics HealthPercentInt="5" />
       </EIM>
       <EIM Name="forceshield_percent" HUDDesc="@ui_eim_forceshield_percent" Permanent="1">
-        <Semantics ArmorPercentFloat="8" />
+        <Semantics ArmorPercentFloat="5" />
       </EIM>
     </MagicEffects>
   </Spell>
   <Spell Name="AGIL_17" UIName="@ui_AGIL_17_name" HUDLoreDesc="" GameplayDesc="">
     <MagicEffects>
       <EIM Name="health_percent" HUDDesc="@ui_eim_health_percent" Permanent="1">
-        <Semantics HealthPercentInt="10" />
+        <Semantics HealthPercentInt="5" />
       </EIM>
       <EIM Name="forceshield_percent" HUDDesc="@ui_eim_forceshield_percent" Permanent="1">
-        <Semantics ArmorPercentFloat="8" />
+        <Semantics ArmorPercentFloat="5" />
       </EIM>
     </MagicEffects>
   </Spell>
   <Spell Name="AGIL_18" UIName="@ui_AGIL_18_name" HUDLoreDesc="" GameplayDesc="">
     <MagicEffects>
       <EIM Name="health_percent" HUDDesc="@ui_eim_health_percent" Permanent="1">
-        <Semantics HealthPercentInt="10" />
+        <Semantics HealthPercentInt="5" />
       </EIM>
       <EIM Name="health_regen_true_percent" HUDDesc="@ui_eim_health_regen_true_percent" Permanent="1">
-        <Semantics ResourcePercentInt="12" />
+        <Semantics ResourcePercentInt="10" />
       </EIM>
     </MagicEffects>
   </Spell>
   <Spell Name="AGIL_19" UIName="@ui_AGIL_19_name" HUDLoreDesc="" GameplayDesc="">
     <MagicEffects>
       <EIM Name="dodgechance_score_percent" HUDDesc="@ui_eim_dodgechance_score_percent" Permanent="1">
-        <Semantics CharacteristicScorePercentInt="12" />
+        <Semantics CharacteristicScorePercentInt="6" />
       </EIM>
       <EIM Name="all_resistance_score_percent" HUDDesc="@ui_eim_all_resistance_score_percent" Permanent="1">
-        <Semantics CharacteristicScorePercentInt="9" />
+        <Semantics CharacteristicScorePercentInt="5" />
       </EIM>
     </MagicEffects>
   </Spell>
   <Spell Name="AGIL_20" UIName="@ui_AGIL_20_name" HUDLoreDesc="" GameplayDesc="">
     <MagicEffects>
       <EIM Name="dodgechance_score_percent" HUDDesc="@ui_eim_dodgechance_score_percent" Permanent="1">
-        <Semantics CharacteristicScorePercentInt="12" />
+        <Semantics CharacteristicScorePercentInt="6" />
       </EIM>
       <EIM Name="forceshield_percent" HUDDesc="@ui_eim_forceshield_percent" Permanent="1">
-        <Semantics ArmorPercentFloat="8" />
+        <Semantics ArmorPercentFloat="5" />
       </EIM>
     </MagicEffects>
   </Spell>
   <Spell Name="AGIL_21" UIName="@ui_AGIL_21_name" HUDLoreDesc="" GameplayDesc="">
     <MagicEffects>
       <EIM Name="dodgechance_score_percent" HUDDesc="@ui_eim_dodgechance_score_percent" Permanent="1">
-        <Semantics CharacteristicScorePercentInt="12" />
+        <Semantics CharacteristicScorePercentInt="6" />
       </EIM>
       <EIM Name="health_percent" HUDDesc="@ui_eim_health_percent" Permanent="1">
-        <Semantics HealthPercentInt="8" />
+        <Semantics HealthPercentInt="5" />
       </EIM>
     </MagicEffects>
   </Spell>
@@ -189,17 +189,71 @@
   <Spell Name="AGIL_23" UIName="@ui_AGIL_23_name" HUDLoreDesc="" GameplayDesc="">
     <MagicEffects>
       <EIM Name="toughness_pts" HUDDesc="@ui_eim_toughness_pts" Permanent="1">
-        <Semantics AttributeFlatInt="25" />
+        <Semantics AttributeFlatInt="15" />
       </EIM>
     </MagicEffects>
   </Spell>
   <Spell Name="AGIL_24" UIName="@ui_AGIL_24_name" HUDLoreDesc="" GameplayDesc="">
     <MagicEffects>
       <EIM Name="health_percent" HUDDesc="@ui_eim_health_percent" Permanent="1">
-        <Semantics HealthPercentInt="10" />
+        <Semantics HealthPercentInt="5" />
       </EIM>
       <EIM Name="health_regen_true_percent" HUDDesc="@ui_eim_health_regen_true_percent" Permanent="1">
-        <Semantics ResourcePercentInt="12" />
+        <Semantics ResourcePercentInt="10" />
+      </EIM>
+    </MagicEffects>
+  </Spell>
+  <Spell Name="AGIL_25" UIName="@ui_AGIL_25_name" HUDLoreDesc="" GameplayDesc="">
+    <MagicEffects>
+      <EIM Name="damage_percent_projectiles" HUDDesc="@ui_eim_damage_percent_projectiles" Permanent="1">
+        <Semantics DamagePercentInt="5" />
+      </EIM>
+      <EIM Name="agility_pts" HUDDesc="@ui_eim_agility_pts" Permanent="1">
+        <Semantics AttributeFlatInt="10" />
+      </EIM>
+    </MagicEffects>
+  </Spell>
+  <Spell Name="AGIL_26" UIName="@ui_AGIL_26_name" HUDLoreDesc="" GameplayDesc="">
+    <MagicEffects>
+      <EIM Name="damage_percent_projectiles" HUDDesc="@ui_eim_damage_percent_projectiles" Permanent="1">
+        <Semantics DamagePercentInt="5" />
+      </EIM>
+      <EIM Name="agility_pts" HUDDesc="@ui_eim_agility_pts" Permanent="1">
+        <Semantics AttributeFlatInt="10" />
+      </EIM>
+    </MagicEffects>
+  </Spell>
+  <Spell Name="AGIL_27" UIName="@ui_AGIL_27_name" HUDLoreDesc="" GameplayDesc="">
+    <MagicEffects>
+      <EIM Name="attackspeed_final_percent" HUDDesc="@ui_eim_attackspeed_final_percent" Permanent="1">
+        <Semantics CharacteristicFinalPercentFloat="2" />
+      </EIM>
+      <EIM Name="ferocity_pts" HUDDesc="@ui_eim_ferocity_pts" Permanent="1">
+        <Semantics AttributeFlatInt="10" />
+      </EIM>
+    </MagicEffects>
+  </Spell>
+  <Spell Name="AGIL_28" UIName="@ui_AGIL_28_name" HUDLoreDesc="" GameplayDesc="">
+    <MagicEffects>
+      <EIM Name="dodgechance_score_percent" HUDDesc="@ui_eim_dodgechance_score_percent" Permanent="1">
+        <Semantics CharacteristicScorePercentInt="5" />
+      </EIM>
+    </MagicEffects>
+  </Spell>
+  <Spell Name="AGIL_29" UIName="@ui_AGIL_29_name" HUDLoreDesc="" GameplayDesc="">
+    <MagicEffects>
+      <EIM Name="dodgechance_score_percent" HUDDesc="@ui_eim_dodgechance_score_percent" Permanent="1">
+        <Semantics CharacteristicScorePercentInt="5" />
+      </EIM>
+    </MagicEffects>
+  </Spell>
+  <Spell Name="AGIL_30" UIName="@ui_AGIL_30_name" HUDLoreDesc="" GameplayDesc="">
+    <MagicEffects>
+      <EIM Name="dodgechance_score_percent" HUDDesc="@ui_eim_dodgechance_score_percent" Permanent="1">
+        <Semantics CharacteristicScorePercentInt="5" />
+      </EIM>
+      <EIM Name="forceshield_percent" HUDDesc="@ui_eim_forceshield_percent" Permanent="1">
+        <Semantics ArmorPercentFloat="5" />
       </EIM>
     </MagicEffects>
   </Spell>

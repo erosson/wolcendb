@@ -2,7 +2,7 @@
   <Project Name="laibon_diplomats_expedition" CategoryName="diplomats_expeditions_easy" Repeatable="1" IsExpedition="1">
     <UIParams UIName="@ui_laibon_diplomats_expedition" UILore="@ui_laibon_diplomats_expedition_lore" IconType="diplomat" />
     <Requirements PlayerLevel="0" Projects="shipyard_construct">
-      <ResourceCost ComputationMethod="Static" Gold="1000" Gold_PerPlayerLevel="57" PA="20" PA_PerPlayerLevel="1.1" ProductionToComplete="40" ProductionScalingTable="Production_scale" />
+      <ResourceCost ComputationMethod="Static" Gold="1000" Gold_PerPlayerLevel="57" PA="20" PA_PerPlayerLevel="2.3" ProductionToComplete="40" ProductionScalingTable="Production_scale" />
     </Requirements>
     <RewardList>
       <Reward RewardName="laibon_diplomats_reward" Weight="56" />
@@ -104,7 +104,7 @@
   <Project Name="salander_diplomats_expedition" CategoryName="diplomats_expeditions_hard" Repeatable="1" IsExpedition="1">
     <UIParams UIName="@ui_salander_diplomats_expedition" UILore="@ui_salander_diplomats_expedition_lore" IconType="diplomat" />
     <Requirements PlayerLevel="0" Projects="trade_assembly_construct">
-      <ResourceCost ComputationMethod="Static" Gold="2000" Gold_PerPlayerLevel="114" PA="200" PA_PerPlayerLevel="11.4" ProductionToComplete="120" ProductionScalingTable="Production_scale" />
+      <ResourceCost ComputationMethod="Static" Gold="2000" Gold_PerPlayerLevel="114" PA="200" PA_PerPlayerLevel="23" ProductionToComplete="120" ProductionScalingTable="Production_scale" />
     </Requirements>
     <RewardList>
       <Reward RewardName="salander_diplomats_reward" Weight="30" />
@@ -138,7 +138,7 @@
   <Project Name="gomora_diplomats_expedition" CategoryName="diplomats_expeditions_hard" Repeatable="1" IsExpedition="1">
     <UIParams UIName="@ui_gomora_diplomats_expedition" UILore="@ui_gomora_diplomats_expedition_lore" IconType="diplomat" />
     <Requirements PlayerLevel="0" Projects="shipyard_construct">
-      <ResourceCost ComputationMethod="Static" Gold="0" Gold_PerPlayerLevel="0" PA="2000" PA_PerPlayerLevel="22.9" ProductionToComplete="300" ProductionScalingTable="Production_scale" />
+      <ResourceCost ComputationMethod="Static" Gold="0" Gold_PerPlayerLevel="0" PA="2000" PA_PerPlayerLevel="45" ProductionToComplete="300" ProductionScalingTable="Production_scale" />
     </Requirements>
     <RewardList>
       <Reward RewardName="gomora_diplomats_reward" Weight="30" />
@@ -206,7 +206,7 @@
   <Project Name="bro_dawn_diplomats_expedition" CategoryName="diplomats_expeditions_easy" Repeatable="1" IsExpedition="1">
     <UIParams UIName="@ui_bro_dawn_diplomats_expedition" UILore="@ui_bro_dawn_diplomats_expedition_lore" IconType="diplomat" />
     <Requirements PlayerLevel="0" Projects="trade_assembly_construct">
-      <ResourceCost ComputationMethod="Static" Gold="0" Gold_PerPlayerLevel="0" PA="40" PA_PerPlayerLevel="2.3" ProductionToComplete="40" ProductionScalingTable="Production_scale" />
+      <ResourceCost ComputationMethod="Static" Gold="0" Gold_PerPlayerLevel="0" PA="40" PA_PerPlayerLevel="4.5" ProductionToComplete="40" ProductionScalingTable="Production_scale" />
     </Requirements>
     <RewardList>
       <Reward RewardName="bro_dawn_diplomats_reward" Weight="56" />

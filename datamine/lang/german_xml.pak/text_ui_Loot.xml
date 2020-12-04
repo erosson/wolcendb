@@ -8,9 +8,9 @@
  <DocumentProperties xmlns="urn:schemas-microsoft-com:office:office">
   <Title>Untitled Spreadsheet</Title>
   <Author>Unknown Creator</Author>
-  <LastAuthor>Cthylla</LastAuthor>
-  <Created>2020-04-14T10:17:27Z</Created>
-  <LastSaved>2020-04-14T10:17:27Z</LastSaved>
+  <LastAuthor>Pierre Techoueyres</LastAuthor>
+  <Created>2020-11-24T09:43:07Z</Created>
+  <LastSaved>2020-11-24T09:43:07Z</LastSaved>
   <Company>Microsoft Corporation</Company>
   <Version>16.00</Version>
  </DocumentProperties>
@@ -18,8 +18,8 @@
   <AllowPNG/>
  </OfficeDocumentSettings>
  <ExcelWorkbook xmlns="urn:schemas-microsoft-com:office:excel">
-  <WindowHeight>7890</WindowHeight>
-  <WindowWidth>17745</WindowWidth>
+  <WindowHeight>13065</WindowHeight>
+  <WindowWidth>28770</WindowWidth>
   <WindowTopX>32767</WindowTopX>
   <WindowTopY>32767</WindowTopY>
   <ProtectStructure>False</ProtectStructure>
@@ -109,10 +109,10 @@
   </Style>
  </Styles>
  <Worksheet ss:Name="Sheet1">
-  <Table ss:ExpandedColumnCount="3" ss:ExpandedRowCount="1328" x:FullColumns="1"
+  <Table ss:ExpandedColumnCount="3" ss:ExpandedRowCount="1354" x:FullColumns="1"
    x:FullRows="1" ss:DefaultRowHeight="15">
-   <Column ss:AutoFitWidth="0" ss:Width="243"/>
-   <Column ss:AutoFitWidth="0" ss:Width="483"/>
+   <Column ss:AutoFitWidth="0" ss:Width="232.5"/>
+   <Column ss:AutoFitWidth="0" ss:Width="270"/>
    <Column ss:AutoFitWidth="0" ss:Width="160.5"/>
    <Row ss:AutoFitHeight="0" ss:Height="14.25">
     <Cell ss:StyleID="s16"><Data ss:Type="String">KEY</Data></Cell>
@@ -792,7 +792,7 @@
    <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s21"><Data ss:Type="String">ui_Weapon_1HSword_T14</Data></Cell>
     <Cell ss:StyleID="s29"><Data ss:Type="String">Bardic Shortsword</Data></Cell>
-    <Cell ss:StyleID="s19"><Data ss:Type="String">Bardisches Kurzschwert</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Badisches Kurzschwert</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s21"><Data ss:Type="String">ui_Weapon_1HSword_T15</Data></Cell>
@@ -1057,7 +1057,7 @@
    <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s19"><Data ss:Type="String">ui_unique_1h_axe_lore</Data></Cell>
     <Cell ss:StyleID="s28"><Data ss:Type="String">&lt;Font Size=&quot;15&quot; Color=&quot;#ccb270&quot;&gt;&lt;i&gt;The handle of this axe looks like the spine of a human being, from which the blade has grown and mutated in a gruesome and disgusting way.\n\nThis axe used to have a name: Kelsir. A cultist that worshipped Ashtaroth, the Fallen Lord of Flesh, accepted the honor to mutate into a weapon in the name of his evil overseer. To be sure, lunatics find themselves at home within the cult of the Aberrant.&lt;/i&gt;&lt;/Font&gt;</Data></Cell>
-    <Cell ss:StyleID="s19"><Data ss:Type="String">&lt;Font Size=&quot;15&quot; Color=&quot;#ccb270&quot;&gt;&lt;i&gt;Der Griff dieser Axt sieht aus, als wäre es das Rückgrat eines Menschen, aus dem die Klinge auf grauenhafte und abscheuliche Weise entwachsen ist.\n\nEinst hatte sie einen Namen: Kelsir, ein Kultist, der Ashtaroth, den gefallenen Lord des Fleisches, anbetete. Er nahm die Ehre an, im Namen seines finsteren Aufsehers in eine Waffe zu mutieren. Zweifellos sind Fanatiker im Kult der Aberranten zu Hause.&lt;/i&gt;&lt;/Font&gt;</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">&lt;Font Size=&quot;15&quot; Color=&quot;#ccb270&quot;&gt;&lt;i&gt;Der Griff dieser Axt sieht aus, als wäre es das Rückgrat eines Menschen, aus dem die Klinge auf grauenhafte und abscheuliche Weise entwachsen ist.\n\nEinst hatte sie einen Namen: Kelsir, ein Kultist, der Ashtaroth, den gefallenen Lord des Fleisches, anbetete. Er nahm die Ehre an, im Namen seines finsteren Aufsehers in eine Waffe zu mutieren. Zweifellos sind Fanatiker im Kult des Aberranten zu Hause.&lt;/i&gt;&lt;/Font&gt;</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s19"><Data ss:Type="String">ui_unique_lightning_sword</Data></Cell>
@@ -1160,6 +1160,66 @@
     <Cell ss:StyleID="s19"><Data ss:Type="String">&lt;Font Size=&quot;15&quot; Color=&quot;#ccb270&quot;&gt;&lt;i&gt;Ebba von Varg erwachte eingewickelt in Seetang, zweihundert Fuß von ihrem Schiffswrack entfernt. Sie fand eine schmiedeeiserne Verbindung in den Trümmern: ein Wunder. Damit fertigte sie einen baufälligen, mit Pflanzenfasern bespannten Bogen an, um die Bestien der Baktorai-Inseln zu jagen.\n\n Als Macksfesten sie fand und sie an Bord seines Schiffes brachte, warf sie den Bogen über Bord und kündigte an: &quot;Hier ist ein Wunder für den nächsten Schiffbrüchigen.&quot;&lt;/i&gt;&lt;/font&gt;</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s19"><Data ss:Type="String">ui_unique_plague_mask</Data></Cell>
+    <Cell ss:StyleID="s28"><Data ss:Type="String">Worm-Tooth</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Wurmzahn</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s19"><Data ss:Type="String">ui_unique_plague_mask_lore</Data></Cell>
+    <Cell ss:StyleID="s28"><Data ss:Type="String">&lt;Font Size=&quot;15&quot; Color=&quot;#ccb270&quot;&gt;&lt;i&gt;Only the desperate enter a Temple of Bezeriel. Those who are sick, starving, displaced. Those with the dust and dirt of the wilderness lining their throats. Audelick, Plague-Priest of Bezeriel, would offer them food, clean water, and, most importantly, a warm bed to rest their bones. It was as they slept that Audelick honored her master. She walked by their bedsides, opened her beak, and like a mother bird feeding her hatchlings, funneled the Sweet Tooth Worms into their gaping, snoring mouths.&lt;/i&gt;&lt;/font&gt;</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">&lt;Font Size=&quot;15&quot; Color=&quot;#ccb270&quot;&gt;&lt;i&gt;Nur die Verzweifelten betreten einen Tempel von Bezeriel. Diejenigen, die krank sind, hungern oder vertrieben wurden. Jene, die den Staub und Schmutz der Wildnis in der Kehle haben. Audelick, der Pest-Priester von Bezeriel, würde ihnen Nahrung, sauberes Wasser und vor allem ein warmes Bett anbieten, sodass ihre Knochen ruhen können. Während sie schliefen, erwies Audelick ihrem Herrn die Ehre. Sie ging an den Betten vorbei, öffnete die Münder sodass sie die Süsszahnwürmer wie eine Vogelmutter, die ihre Jungen fütterte, in ihre klaffenden, schnarchenden Mäuler füllen konnte.&lt;/i&gt;&lt;/font&gt;</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s19"><Data ss:Type="String">ui_unique_skull_shoulders</Data></Cell>
+    <Cell ss:StyleID="s28"><Data ss:Type="String">Edayo’or’s Triumph</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Edayo'or's Triumph</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s19"><Data ss:Type="String">ui_unique_skull_shoulders_lore</Data></Cell>
+    <Cell ss:StyleID="s28"><Data ss:Type="String">&lt;Font Size=&quot;15&quot; Color=&quot;#ccb270&quot;&gt;&lt;i&gt;Every ten moons, C’tul’s head of state, the Kharlek, halts the city beast's and calls C’tul’s proudest hunters to the Kharlek Dowr: a hunt atop the the city that decides the appointment of the Kharlek’s apex hunter. The city’s legends detail one such hunt, when a two-headed bull - a hulking, monstrous thing - was anointed the Dowr’s prey. Arlesh Edayo’or emerged the last one standing: armor in tatters, blood streaking down each arm - holding the beast’s heads aloft.&lt;/i&gt;&lt;/font&gt;</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">&lt;Font Size=&quot;15&quot; Color=&quot;#ccb270&quot;&gt;&lt;i&gt;Alle zehn Monde hält das Staatsoberhaupt von C'tul, der Charlek, die Bestie der Stadt auf und ruft die stolzesten Jäger C'tuls zum Charlek Dowr: eine Jagd auf der Spitze der Stadt, die über die Ernennung des Spitzenjägers des Charlek entscheidet. Die Legenden der Stadt erzählen von einer solchen Jagd, bei der ein zweiköpfiger Stier - ein schwerfälliges, monströses Ding - zur Beute des Dowr gesalbt wurde. Arlesh Edayo'or tauchte als Letzter stehend wieder auf: die Rüstung war zerfetzt, das Blut lief an jedem Arm herunter und er hielt die Köpfe des Tieres hoch.&lt;/i&gt;&lt;/font&gt;</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s19"><Data ss:Type="String">ui_unique_brotherhood_chest</Data></Cell>
+    <Cell ss:StyleID="s28"><Data ss:Type="String">Discordant</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Zwietracht</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s19"><Data ss:Type="String">ui_unique_brotherhood_chest_lore</Data></Cell>
+    <Cell ss:StyleID="s28"><Data ss:Type="String">&lt;Font Size=&quot;15&quot; Color=&quot;#ccb270&quot;&gt;&lt;i&gt;Edo was once a Hierophant, leading his brothers in communion with the Searing Song. But as his life went on, the melody lost its meaning. He searched within himself, in the dark recesses of his mind, and discovered a new melody. He sang it to his brothers, and as they listened, Anathea’s light dimmed in their hearts. They were changed; rage and madness consumed them. Edo was exiled for his blasphemy, and his armor taken. Yet, if his brothers listened closely, they could still hear his armor hum with his discordant song. And so they locked it away, hoping it would stay buried forever.&lt;/i&gt;&lt;/font&gt;</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">&lt;Font Size=&quot;15&quot; Color=&quot;#ccb270&quot;&gt;&lt;i&gt;Edo war einst ein Hierophant, welcher gemeinsam mit seine Brüder das Sengenden Lied führte. Aber im Laufe seines Lebens verlor die Melodie ihre Bedeutung. Er suchte sie in sich selbst, in den dunklen Tiefen seines Geistes, und entdeckte eine neue Melodie. Er sang sie seinen Brüdern vor, und während sie zuhörten, verdunkelte sich das Licht von Anathea in ihren Herzen. Sie wurden verändert; Wut und Wahnsinn verzehrten sie. Edo wurde wegen seiner Blasphemie ins Exil geschickt und seine Rüstung wurde ihm abgenommen. Doch wenn seine Brüder aufmerksam zuhörten, konnten sie ihn immer noch hören; wie seine Rüstung mit seinem disharmonischen Gesang summte. Und so schlossen sie ihn weg, in der Hoffnung, dass er für immer begraben bleiben würde.&lt;/i&gt;&lt;/font&gt;</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s19"><Data ss:Type="String">ui_unique_explosive_glove</Data></Cell>
+    <Cell ss:StyleID="s28"><Data ss:Type="String">Fury’s Divergence</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Divergenz des Zorns</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s19"><Data ss:Type="String">ui_unique_explosive_glove_lore</Data></Cell>
+    <Cell ss:StyleID="s28"><Data ss:Type="String">&lt;Font Size=&quot;15&quot; Color=&quot;#ccb270&quot;&gt;&lt;i&gt;During the War of Atrocities, Ahriman sought an alliance with the Dragons. He urged Ashtaroth, their father, to lure them to the cause of the rebel Primordials. The Dragons, however, chose to abstain from the conflict, heeding Oshara’s call for peace. In response, Ahriman tasked Egregion, a Haithar of the First Men, with assassinating Oshara. He gave him a gauntlet that would absorb the fury in Oshara’s flames, and channel it into his weapon. At first, Egregion held his own, turning Oshara’s rage against her with explosive strikes. She learned quickly, however, and calmed herself. With one precision strike, she cleaved Egregion’s arm from his body. &lt;/i&gt;&lt;/font&gt;</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">&lt;Font Size=&quot;15&quot; Color=&quot;#ccb270&quot;&gt;&lt;i&gt;Während des Krieges der Gräueltaten suchte Ahriman ein Bündnis mit den Drachen. Er drängte Ashtaroth, seinen Vater, dazu, sie für die Sache der rebellischen Urzeitlichen zu gewinnen. Die Drachen verzichteten jedoch auf den Konflikt und folgten Osharas Ruf nach Frieden. Als Reaktion darauf beauftragte Ahriman Egregion, einen Haithar der Ersten Menschen, mit der Ermordung Osharas. Er gab ihm einen Fehdehandschuh, der die Wut in Osharas Flammen absorbieren und in seine Waffe lenken sollte. Zunächst behauptete sich Egregion und wandte Osharas Wut mit explosiven Schlägen gegen sie an. Sie lernte jedoch schnell und beruhigte sich. Mit einem Präzisionsschlag spaltete sie Egregions Arm von seinem Körper ab.&lt;/i&gt;&lt;/font&gt;</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s19"><Data ss:Type="String">ui_unique_oshara_amulet_fire</Data></Cell>
+    <Cell ss:StyleID="s28"><Data ss:Type="String">Mark of Naedre</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Mal von Naedre</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s19"><Data ss:Type="String">ui_unique_oshara_amulet_lore_fire</Data></Cell>
+    <Cell ss:StyleID="s28"><Data ss:Type="String">&lt;Font Size=&quot;15&quot; Color=&quot;#ccb270&quot;&gt;&lt;i&gt;A gem-like organ attached to Oshara’s brain. Left there by Naedre, through which the faint thrumming of her voice can be felt.\n\nDragons were designed to protect Wolcen, to safeguard the natural world, and to ensure a balance between its creatures. This is what they had intended, Ashtaroth and Naedre, when they had given their children tools to create and destroy. Ashtaroth betrayed this intent when he demanded the power of the Dragons be used against his Primordial kin.&lt;/i&gt;&lt;/font&gt;</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">&lt;Font Size=&quot;15&quot; Color=&quot;#ccb270&quot;&gt;&lt;i&gt;Ein juwelenartiges Organ, das an Osharas Gehirn befestigt ist. Es wurde von Naedre dort zurückgelassen, wodurch das leise Dröhnen ihrer Stimme zu spüren ist.\n\nDie Drachen sollten Wolcen beschützen, die Natur schützen und für ein Gleichgewicht zwischen ihren Geschöpfen sorgen. Dies hatten Ashtaroth und Naedre beabsichtigt, als sie ihren Kindern Werkzeuge zur Erschaffung und Zerstörung gegeben hatten. Ashtaroth verriet diese Absicht, als er verlangte, dass die Macht der Drachen gegen seine Urzeitlichen Verwandten eingesetzt werden sollte.&lt;/i&gt;&lt;/font&gt;</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s19"><Data ss:Type="String">ui_unique_oshara_amulet_rend</Data></Cell>
+    <Cell ss:StyleID="s28"><Data ss:Type="String">Mark of Ashtaroth</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Mal von Ashtaroth</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s19"><Data ss:Type="String">ui_unique_oshara_amulet_lore_rend</Data></Cell>
+    <Cell ss:StyleID="s28"><Data ss:Type="String">&lt;Font Size=&quot;15&quot; Color=&quot;#ccb270&quot;&gt;&lt;i&gt;A gem-like organ attached to Oshara’s brain. It flickers and crackles, reflecting the madness of its creator: Ashtaroth the Aberrant.\n\nAshtaroth’s gift to the Dragons, the ability to create and evolve life, became twisted. Within all of them, his Abbathu voice reaches out, encouraging reckless experimentation. Oshara herself has fought this voice, and even some of her creations have gone astray. It was Oshara that designed the Svriir. They were to be nature’s caretakers. Made highly adaptable for that purpose. She had not foreseen where these mutations would take them.&lt;/i&gt;&lt;/font&gt;</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">&lt;Font Size=&quot;15&quot; Color=&quot;#ccb270&quot;&gt;&lt;i&gt;Ein juwelenartiges Organ, das an Osharas Gehirn befestigt ist. Es flackert und knistert und spiegelt den Wahnsinn seines Schöpfers wider: Ashtaroth der Aberrante.\n\nAshtaroths Geschenk an die Drachen, die Fähigkeit, Leben zu erschaffen und zu entwickeln, wurde verdreht. In allen von ihnen streckt seine Abbathu-Stimme die Hand aus und ermutigt zu rücksichtslosen Experimenten. Oshara selbst hat gegen diese Stimme gekämpft, und sogar einige ihrer Schöpfungen sind in die Irre geführt worden. Es war Oshara, die den Svriir entwarf. Sie sollten die Hüter der Natur sein. Zu diesem Zweck wurden sie sehr anpassungsfähig gemacht. Sie hatte nicht vorhergesehen, wohin diese Mutationen führen würden.&lt;/i&gt;&lt;/font&gt;</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s18"><Data ss:Type="String">Staves</Data></Cell>
     <Cell ss:StyleID="s27"/>
     <Cell ss:StyleID="s19"/>
@@ -1192,7 +1252,7 @@
    <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s19"><Data ss:Type="String">ui_Weapon_Staff_T6</Data></Cell>
     <Cell ss:StyleID="s30"><Data ss:Type="String">Cabalist Staff</Data></Cell>
-    <Cell ss:StyleID="s19"><Data ss:Type="String">Kabbalistenstab</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Kabbalisten Stab</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s19"><Data ss:Type="String">ui_Weapon_Staff_T7</Data></Cell>
@@ -1372,7 +1432,7 @@
    <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s19"><Data ss:Type="String">ui_Weapon_Pistol_T8</Data></Cell>
     <Cell ss:StyleID="s30"><Data ss:Type="String">Tantarite Pistol</Data></Cell>
-    <Cell ss:StyleID="s19"><Data ss:Type="String">Tantarit Pistol</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Tantarit Pistole</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s19"><Data ss:Type="String">ui_Weapon_Pistol_T9</Data></Cell>
@@ -1397,7 +1457,7 @@
    <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s21"><Data ss:Type="String">ui_Weapon_Pistol_T13</Data></Cell>
     <Cell ss:StyleID="s29"><Data ss:Type="String">Brilliant Side Arm</Data></Cell>
-    <Cell ss:StyleID="s19"><Data ss:Type="String">Brilliante Flankenwaffe</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Brillante Flankenwaffe</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s21"><Data ss:Type="String">ui_Weapon_Pistol_T14</Data></Cell>
@@ -1432,7 +1492,7 @@
    <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s19"><Data ss:Type="String">ui_ArmorTypeWarrior</Data></Cell>
     <Cell ss:StyleID="s28"><Data ss:Type="String">Bruiser</Data></Cell>
-    <Cell ss:StyleID="s19"><Data ss:Type="String">Schläger</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Räuber</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s19"><Data ss:Type="String">ui_ArmorTypeRogue</Data></Cell>
@@ -1498,6 +1558,11 @@
     <Cell ss:StyleID="s24"><Data ss:Type="String">ui_itemtype_reagent</Data></Cell>
     <Cell ss:StyleID="s28"><Data ss:Type="String">Ethereal Reagent</Data></Cell>
     <Cell ss:StyleID="s19"><Data ss:Type="String">Ätherische Reagenzien</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s19"><Data ss:Type="String">ui_armor_drop</Data></Cell>
+    <Cell ss:StyleID="s28"><Data ss:Type="String">(%2) %1</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">(%2) %1</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s17"><Data ss:Type="String">ARMORS</Data></Cell>
@@ -1657,7 +1722,7 @@
    <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s19"><Data ss:Type="String">ui_unique_shoulder_envoywar_lore</Data></Cell>
     <Cell ss:StyleID="s28"><Data ss:Type="String">&lt;Font Size=&quot;15&quot; Color=&quot;#ccb270&quot;&gt;&lt;i&gt; “Power. Destruction. Conquest.\n\nI am A-dra-ma-lech.\nI bring war.\n\nAnd from now on, so do you.”\n\nSomething truly powerful and nefarious uses that spaulder as a relic: A demon sent by Baäpheth, the Fallen Archduke of War. Even if the entity wishes to assist you right now, no wise man would take his chances. The promise of power always has a dreadful cost.&lt;/i&gt;&lt;/Font&gt;</Data></Cell>
-    <Cell ss:StyleID="s19"><Data ss:Type="String">&lt;Font Size=&quot;15&quot; Color=&quot;#ccb270&quot;&gt;&lt;i&gt; “Macht. Zerstörung. Eroberung.\n\nIch bin A-dar-ma-lech.\nIch bringe den Krieg.\n\n Und fortan auch Du!”\n\Etwas wahrlich Mächtiges und Ruchloses verwendet diesen Schulterschutz als Relikt: Ein Dämon, der von Baäpheth, dem gefallenen Erz Fürst des Krieges gesandt wurde. Selbst wenn dieses Wesen jetzt wünscht dich zu unterstützen, würde kein weiser Mann diese Chancen nutzen; Versprechen von Macht haben immer einen furchtbaren Preis.&lt;/i&gt;&lt;/Font&gt;</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">&lt;Font Size=&quot;15&quot; Color=&quot;#ccb270&quot;&gt;&lt;i&gt; “Macht. Zerstörung. Eroberung.\n\nIch bin A-dar-ma-lech.\nIch bringe den Krieg.\n\n Und fortan auch Du!”\n\nEtwas wahrlich Mächtiges und Ruchloses verwendet diesen Schulterschutz als Relikt: Ein Dämon, der von Baäpheth, dem gefallenen Erz Fürst des Krieges gesandt wurde. Selbst wenn dieses Wesen jetzt wünscht dich zu unterstützen, würde kein weiser Mann diese Chancen nutzen; Versprechen von Macht haben immer einen furchtbaren Preis.&lt;/i&gt;&lt;/Font&gt;</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s19"><Data ss:Type="String">ui_unique_glove_argandsheart</Data></Cell>
@@ -1672,7 +1737,7 @@
    <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s19"><Data ss:Type="String">ui_unique_ring_sisters</Data></Cell>
     <Cell ss:StyleID="s28"><Data ss:Type="String">Seven Sisters' Pact</Data></Cell>
-    <Cell ss:StyleID="s19"><Data ss:Type="String">Sieben Schwestern</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Pakt der Sieben Schwestern</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s19"><Data ss:Type="String">ui_unique_ring_sisters_lore</Data></Cell>
@@ -1907,7 +1972,7 @@
    <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s19"><Data ss:Type="String">ui_unique_necromancer_shoulder_lore</Data></Cell>
     <Cell ss:StyleID="s28"><Data ss:Type="String">&lt;Font Size=&quot;15&quot; Color=&quot;#ccb270&quot;&gt;&lt;i&gt;As a boy, Kiraan the Plaguebringer visited the terminally ill in Prestwich. Under the guise of compassion, he would drape his overcoat over their plague-wracked bodies, and listen to their mundane stories as disease imbued the garment. He began his first experimentations on the nature of pestilence with those samples. Now, as a masterful necromancer, he wants to suspend the whole of humanity in that malady. Sustained with undead energy, the sick would live on in eternal torture as their bodies turn gangrenous. An endless source of desperation to feed Kiraan’s patron, the ever-hungering Bezeriel, Fallen Archduke of Doom.&lt;/i&gt;&lt;/Font&gt;</Data></Cell>
-    <Cell ss:StyleID="s19"><Data ss:Type="String">&lt;Font Size=&quot;15&quot; Color=&quot;#ccb270&quot;&gt;&lt;i&gt;Als Junge besuchte Kiraan - der Pestbringer - die unheilbar Kranken in Prestwich. Unter dem Deckmantel des Mitgefühls drapierte er seinen Mantel über ihre von der Pest befallenen Körper und hörte sich ihre profanen Geschichten an, während die Krankheit das Kleidungsstück durchtränkte. Mit diesen Proben begann er seine ersten Experimente über die Natur der Seuche. Jetzt, als meisterhafter Nekromant, will er die ganze Menschheit in dieser Krankheit aussetzen. Aufrechterhalten mit untoter Energie, würden die Kranken in ewiger Folter weiterleben, während ihre Körper bräunlich werden. Eine endlose Quelle der Verzweiflung, um Kiraans Gönner, den immer hungrigen Bezeriel, den gefallenen Erzherzog des Verderbens, zu ernähren.&lt;/i&gt;&lt;/Font&gt;</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">&lt;Font Size=&quot;15&quot; Color=&quot;#ccb270&quot;&gt;&lt;i&gt;Als Junge besuchte Kiraan - der Pestbringer - die unheilbar Kranken in Prestwich. Unter dem Deckmantel des Mitgefühls drapierte er seinen Mantel über ihre von der Pest befallenen Körper und hörte sich ihre profanen Geschichten an, während die Krankheit das Kleidungsstück durchtränkte. Mit diesen Proben begann er seine ersten Experimente über die Natur der Seuche. Jetzt, als meisterhafter Nekromant, will er die ganze Menschheit dieser Krankheit aussetzen. Aufrechterhalten mit Untoter Energie, würden die Kranken in ewiger Folter weiterleben, während ihre Körper bräunlich werden. Eine endlose Quelle der Verzweiflung, um Kiraans Gönner, den immer hungrigen Bezeriel, den gefallenen Erzherzog des Verderbens, zu ernähren.&lt;/i&gt;&lt;/Font&gt;</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s19"><Data ss:Type="String">ui_unique_expurgation_glove</Data></Cell>
@@ -1927,12 +1992,12 @@
    <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s19"><Data ss:Type="String">ui_unique_timemaster_belt_lore</Data></Cell>
     <Cell ss:StyleID="s28"><Data ss:Type="String">&lt;Font Size=&quot;15&quot; Color=&quot;#ccb270&quot;&gt;&lt;i&gt;“I know how you kill,\nI know where you worship,\nI know who you are,\nBecause you were me.”&lt;/i&gt;&lt;/Font&gt;</Data></Cell>
-    <Cell ss:StyleID="s19"><Data ss:Type="String">&lt;Font Size=&quot;15&quot; Color=&quot;#ccb270&quot;&gt;&lt;i&gt;&quot;Ich weiß, wie du tötest,\nich weiß, wo du betest,\nich weiß, wer du bist,\ndenn du warst ich.&quot;&lt;/Font&gt;</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">&lt;Font Size=&quot;15&quot; Color=&quot;#ccb270&quot;&gt;&lt;i&gt;&quot;Ich weiß, wie du tötest,\nIch weiß, wo du betest,\nIch weiß, wer du bist,\nDenn du warst ich.&quot;&lt;/Font&gt;</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s19"><Data ss:Type="String">ui_unique_alastor_amulet</Data></Cell>
     <Cell ss:StyleID="s28"><Data ss:Type="String">High Potency Neural Cord</Data></Cell>
-    <Cell ss:StyleID="s19"><Data ss:Type="String">Hochwirksames neuronales Kabel</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Hochwirksamer neuronaler Strang</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s19"><Data ss:Type="String">ui_unique_alastor_amulet_lore</Data></Cell>
@@ -1957,7 +2022,7 @@
    <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s19"><Data ss:Type="String">ui_unique_hierophant_amulet_lore</Data></Cell>
     <Cell ss:StyleID="s28"><Data ss:Type="String">&lt;Font Size=&quot;15&quot; Color=&quot;#ccb270&quot;&gt;&lt;i&gt;Squires among the Brotherhood of Dawn are eager to fight on behalf of the Lady. But when they sit among their brethren at home to hear the Hierophant’s hymns resonating from their torcs, they form a true bond to her. They recall their lessons telling how her Song, amplified by Hephaaron’s neck rings, granted her togetherness with Moros and bolstered the first movement of life. When they set their swords aside awhile, they do the work of healing themselves.&lt;/i&gt;&lt;/Font&gt;</Data></Cell>
-    <Cell ss:StyleID="s19"><Data ss:Type="String">&lt;Font Size=&quot;15&quot; Color=&quot;#ccb270&quot;&gt;&lt;i&gt;Die Knappen der Bruderschaft der Morgenröte sind begierig darauf, für die Lady zu kämpfen. Aber wenn sie zu Hause bei ihren Brüdern sitzen und die Hymnen des Hierophanten aus ihren Torcs erklingen hören, bilden sie ein wahres Band zu ihr. Sie erinnern sich an ihre Lektionen, in denen sie erzählen, wie ihr Gesang, verstärkt durch Hephaarons Halsringe, ihr die Zweisamkeit mit Moros gewährte und den ersten Satz des Lebens unterstützte. Wenn sie ihre Schwerter eine Weile beiseite legen, tun sie die Arbeit, sich selbst zu heilen.&lt;/i&gt;&lt;/Font&gt;</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">&lt;Font Size=&quot;15&quot; Color=&quot;#ccb270&quot;&gt;&lt;i&gt;Die Knappen der Bruderschaft der Morgenröte sind begierig darauf, für die Lady zu kämpfen. Aber wenn sie zu Hause bei ihren Brüdern sitzen und die Hymnen des Hierophanten aus ihren Torcs erklingen hören, bilden sie ein wahres Band zu ihr. Sie erinnern sich an ihre Lektionen, in denen sie erzählen, wie ihr Gesang, verstärkt durch Hephaärons Halsringe, ihr die Zweisamkeit mit Moros gewährte und den ersten Satz des Lebens unterstützte. Wenn sie ihre Schwerter eine Weile beiseite legen, tun sie die Arbeit, sich selbst zu heilen.&lt;/i&gt;&lt;/Font&gt;</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s19"><Data ss:Type="String">ui_unique_champion_helmet</Data></Cell>
@@ -2107,7 +2172,7 @@
    <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s19"><Data ss:Type="String">ui_Armor_Heavy_Greaves_T4</Data></Cell>
     <Cell ss:StyleID="s28"><Data ss:Type="String">Plated Chausses</Data></Cell>
-    <Cell ss:StyleID="s19"><Data ss:Type="String">Überzogene Chausses</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Überzogene Chaussee</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s19"><Data ss:Type="String">ui_Armor_Heavy_Sollerets_T4</Data></Cell>
@@ -2167,7 +2232,7 @@
    <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s19"><Data ss:Type="String">ui_Armor_Heavy_Greaves_T6</Data></Cell>
     <Cell ss:StyleID="s28"><Data ss:Type="String">Siege Chausses</Data></Cell>
-    <Cell ss:StyleID="s19"><Data ss:Type="String">Belagerung Chausses</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Belagerung Chaussee</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s19"><Data ss:Type="String">ui_Armor_Heavy_Sollerets_T6</Data></Cell>
@@ -2442,7 +2507,7 @@
    <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s20"><Data ss:Type="String">ui_Armor_Heavy_Sollerets_T15</Data></Cell>
     <Cell ss:StyleID="s29"><Data ss:Type="String">Priestly Chausses</Data></Cell>
-    <Cell ss:StyleID="s19"><Data ss:Type="String">Priesterliche Chausses</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Priesterliche Chaussee</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s20"><Data ss:Type="String">ui_Armor_Heavy_Helmet_T16</Data></Cell>
@@ -3162,7 +3227,7 @@
    <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s19"><Data ss:Type="String">ui_Armor_Rogue_Cuirass_T7</Data></Cell>
     <Cell ss:StyleID="s28"><Data ss:Type="String">Light C'tulian Garb</Data></Cell>
-    <Cell ss:StyleID="s19"><Data ss:Type="String">C'tulianische leichte Tracht</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Leichte C'tulianische Tracht</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s19"><Data ss:Type="String">ui_Armor_Rogue_Greaves_T7</Data></Cell>
@@ -3256,8 +3321,8 @@
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s19"><Data ss:Type="String">ui_Armor_Rogue_Greaves_T10</Data></Cell>
-    <Cell ss:StyleID="s28"><Data ss:Type="String">Cleital Greaves</Data></Cell>
-    <Cell ss:StyleID="s19"><Data ss:Type="String">Cleital Beinschienen</Data></Cell>
+    <Cell ss:StyleID="s28"><Data ss:Type="String">Clerical Greaves</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Kleriker Beinschienen</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s19"><Data ss:Type="String">ui_Armor_Rogue_Sollerets_T10</Data></Cell>
@@ -3677,7 +3742,7 @@
    <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s19"><Data ss:Type="String">ui_Armor_Mage_Cuirass_T8</Data></Cell>
     <Cell ss:StyleID="s30"><Data ss:Type="String">Argentrobe</Data></Cell>
-    <Cell ss:StyleID="s19"><Data ss:Type="String">Argent Robe</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Silberne Robe</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s19"><Data ss:Type="String">ui_Armor_Mage_Greaves_T8</Data></Cell>
@@ -6026,77 +6091,77 @@
    </Row>
    <Row>
     <Cell ss:StyleID="s19"><Data ss:Type="String">ui_loc_key_dye_51</Data></Cell>
-    <Cell ss:StyleID="s29"><Data ss:Type="String">Vibrant Kaki Dye</Data></Cell>
+    <Cell ss:StyleID="s29"><Data ss:Type="String">Vibrant Khaki Dye</Data></Cell>
     <Cell ss:StyleID="s19"><Data ss:Type="String">Farbe: Kräftiges Kaki</Data></Cell>
    </Row>
    <Row>
     <Cell ss:StyleID="s19"><Data ss:Type="String">ui_loc_key_dye_52</Data></Cell>
-    <Cell ss:StyleID="s29"><Data ss:Type="String">Bright Kaki Dye</Data></Cell>
+    <Cell ss:StyleID="s29"><Data ss:Type="String">Bright Khaki Dye</Data></Cell>
     <Cell ss:StyleID="s19"><Data ss:Type="String">Farbe: Helles Kaki</Data></Cell>
    </Row>
    <Row>
     <Cell ss:StyleID="s19"><Data ss:Type="String">ui_loc_key_dye_53</Data></Cell>
-    <Cell ss:StyleID="s29"><Data ss:Type="String">Soft Kaki Dye</Data></Cell>
+    <Cell ss:StyleID="s29"><Data ss:Type="String">Soft Khaki Dye</Data></Cell>
     <Cell ss:StyleID="s19"><Data ss:Type="String">Farbe: Zartes Kaki</Data></Cell>
    </Row>
    <Row>
     <Cell ss:StyleID="s19"><Data ss:Type="String">ui_loc_key_dye_54</Data></Cell>
-    <Cell ss:StyleID="s29"><Data ss:Type="String">Deep Kaki Dye</Data></Cell>
+    <Cell ss:StyleID="s29"><Data ss:Type="String">Deep Khaki Dye</Data></Cell>
     <Cell ss:StyleID="s19"><Data ss:Type="String">Farbe: Intensives Kaki</Data></Cell>
    </Row>
    <Row>
     <Cell ss:StyleID="s19"><Data ss:Type="String">ui_loc_key_dye_55</Data></Cell>
-    <Cell ss:StyleID="s29"><Data ss:Type="String">Dim Kaki Dye</Data></Cell>
+    <Cell ss:StyleID="s29"><Data ss:Type="String">Dim Khaki Dye</Data></Cell>
     <Cell ss:StyleID="s19"><Data ss:Type="String">Farbe: Gedämpftes Kaki</Data></Cell>
    </Row>
    <Row>
     <Cell ss:StyleID="s19"><Data ss:Type="String">ui_loc_key_dye_56</Data></Cell>
-    <Cell ss:StyleID="s29"><Data ss:Type="String">Brilliant Kaki Dye</Data></Cell>
+    <Cell ss:StyleID="s29"><Data ss:Type="String">Brilliant Khaki Dye</Data></Cell>
     <Cell ss:StyleID="s19"><Data ss:Type="String">Farbe: Leuchtendes Kaki</Data></Cell>
    </Row>
    <Row>
     <Cell ss:StyleID="s19"><Data ss:Type="String">ui_loc_key_dye_57</Data></Cell>
-    <Cell ss:StyleID="s29"><Data ss:Type="String">Neutral Kaki Dye</Data></Cell>
+    <Cell ss:StyleID="s29"><Data ss:Type="String">Neutral Khaki Dye</Data></Cell>
     <Cell ss:StyleID="s19"><Data ss:Type="String">Farbe: Neutrales Kaki</Data></Cell>
    </Row>
    <Row>
     <Cell ss:StyleID="s19"><Data ss:Type="String">ui_loc_key_dye_58</Data></Cell>
-    <Cell ss:StyleID="s29"><Data ss:Type="String">Faded Kaki Dye</Data></Cell>
+    <Cell ss:StyleID="s29"><Data ss:Type="String">Faded Khaki Dye</Data></Cell>
     <Cell ss:StyleID="s19"><Data ss:Type="String">Farbe: Verblasstes Kaki</Data></Cell>
    </Row>
    <Row>
     <Cell ss:StyleID="s19"><Data ss:Type="String">ui_loc_key_dye_59</Data></Cell>
-    <Cell ss:StyleID="s29"><Data ss:Type="String">Sedate Kaki Dye</Data></Cell>
+    <Cell ss:StyleID="s29"><Data ss:Type="String">Sedate Khaki Dye</Data></Cell>
     <Cell ss:StyleID="s19"><Data ss:Type="String">Farbe: Sediertes Kaki</Data></Cell>
    </Row>
    <Row>
     <Cell ss:StyleID="s19"><Data ss:Type="String">ui_loc_key_dye_60</Data></Cell>
-    <Cell ss:StyleID="s29"><Data ss:Type="String">Bleak Kaki Dye</Data></Cell>
+    <Cell ss:StyleID="s29"><Data ss:Type="String">Bleak Khaki Dye</Data></Cell>
     <Cell ss:StyleID="s19"><Data ss:Type="String">Farbe: Düsteres Kaki</Data></Cell>
    </Row>
    <Row>
     <Cell ss:StyleID="s19"><Data ss:Type="String">ui_loc_key_dye_61</Data></Cell>
-    <Cell ss:StyleID="s29"><Data ss:Type="String">Pale Kaki Dye</Data></Cell>
+    <Cell ss:StyleID="s29"><Data ss:Type="String">Pale Khaki Dye</Data></Cell>
     <Cell ss:StyleID="s19"><Data ss:Type="String">Farbe: Blasses Kaki</Data></Cell>
    </Row>
    <Row>
     <Cell ss:StyleID="s19"><Data ss:Type="String">ui_loc_key_dye_62</Data></Cell>
-    <Cell ss:StyleID="s29"><Data ss:Type="String">Pastel Kaki Dye</Data></Cell>
+    <Cell ss:StyleID="s29"><Data ss:Type="String">Pastel Khaki Dye</Data></Cell>
     <Cell ss:StyleID="s19"><Data ss:Type="String">Farbe: Pastellfarbenes Kaki</Data></Cell>
    </Row>
    <Row>
     <Cell ss:StyleID="s19"><Data ss:Type="String">ui_loc_key_dye_63</Data></Cell>
-    <Cell ss:StyleID="s29"><Data ss:Type="String">Dusty Kaki Dye</Data></Cell>
+    <Cell ss:StyleID="s29"><Data ss:Type="String">Dusty Khaki Dye</Data></Cell>
     <Cell ss:StyleID="s19"><Data ss:Type="String">Farbe: Staubiges Kaki</Data></Cell>
    </Row>
    <Row>
     <Cell ss:StyleID="s19"><Data ss:Type="String">ui_loc_key_dye_64</Data></Cell>
-    <Cell ss:StyleID="s29"><Data ss:Type="String">Murky Kaki Dye</Data></Cell>
-    <Cell ss:StyleID="s19"><Data ss:Type="String">Farbe: Trübes Pink</Data></Cell>
+    <Cell ss:StyleID="s29"><Data ss:Type="String">Murky Khaki Dye</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Farbe: Trübes Kaki</Data></Cell>
    </Row>
    <Row>
     <Cell ss:StyleID="s19"><Data ss:Type="String">ui_loc_key_dye_65</Data></Cell>
-    <Cell ss:StyleID="s29"><Data ss:Type="String">Dark Kaki Dye</Data></Cell>
+    <Cell ss:StyleID="s29"><Data ss:Type="String">Dark Khaki Dye</Data></Cell>
     <Cell ss:StyleID="s19"><Data ss:Type="String">Farbe: Dunkles Kaki</Data></Cell>
    </Row>
    <Row>
@@ -6486,8 +6551,8 @@
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="127.5">
     <Cell ss:StyleID="s19"><Data ss:Type="String">ui_reagent1_gameplaydesc</Data></Cell>
-    <Cell ss:StyleID="s32"><Data ss:Type="String">&lt;Font Size=&quot;15&quot;&gt;Rerolls all magic effects when used on an item. It will consume all socketed gems to guarantee a magic effect whose power depends on the gems' level, and whose type is chosen randomly among all the types of gems on the item.&#10;&#10;\n\nThis item cannot be applied on legendary and unique items.&lt;/Font&gt;</Data></Cell>
-    <Cell ss:StyleID="s19"><Data ss:Type="String">&lt;Font Size=&quot;15&quot;&gt;Würfelt alle magischen Effekte neu aus, welche auf diesem Gegenstand verwendet werden. Es werden alle gesockelten Edelsteine verbraucht, um einen magischen Effekt zu gewährleisten, dessen Stärke von der Stufe der Edelsteine abhängt und dessen Typ zufällig aus allen Edelsteintypen auf dem Gegenstand ausgewählt wird.&#10;&#10;\n\nDieser Gegenstand kann nicht auf legendäre Gegenstände angewendet werden.&lt;/Font&gt;</Data></Cell>
+    <Cell ss:StyleID="s32"><Data ss:Type="String">&lt;Font Size=&quot;15&quot;&gt;Rerolls all magic effects when used on an item.\nIt will consume all socketed gems to guarantee a magic effect whose power depends on the gems' level, and whose type is chosen randomly among all the types of gems on the item.\n\nThis item cannot be applied on legendary and unique items.&lt;/Font&gt;</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">&lt;Font Size=&quot;15&quot;&gt;Würfelt alle magischen Effekte neu aus, welche auf diesem Gegenstand verwendet werden. Es werden alle gesockelten Edelsteine verbraucht, um einen magischen Effekt zu gewährleisten, dessen Stärke von der Stufe der Edelsteine abhängt und dessen Typ zufällig aus allen Edelsteintypen auf dem Gegenstand ausgewählt wird.&#10;&#10;\n\nNur bessere Reagenzien können mit legendären Gegenständen interagieren.&lt;/Font&gt;</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="76.5">
     <Cell ss:StyleID="s19"><Data ss:Type="String">ui_reagent1_lore</Data></Cell>
@@ -6501,8 +6566,8 @@
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="76.5">
     <Cell ss:StyleID="s19"><Data ss:Type="String">ui_reagent2_gameplaydesc</Data></Cell>
-    <Cell ss:StyleID="s32"><Data ss:Type="String">&lt;Font Size=&quot;15&quot;&gt;Removes a random magic effect and adds another when used on an item. It will consume all socketed gems to guarantee a new magic effect whose power depends on the gems' level, and whose type is chosen randomly among all the types of gems on the item.&#10;&#10;\n\nThis item cannot be applied on legendary and unique items.&lt;/Font&gt;</Data></Cell>
-    <Cell ss:StyleID="s19"><Data ss:Type="String">&lt;Font Size=&quot;15&quot;&gt;Entfernt einen zufälligen magischen Effekt und fügt einen weiteren hinzu, sobald das Reagenz auf einen Gegenstand angewendet wird. Es werden alle gesockelten Edelsteine verbraucht, um einen neuen magischen Effekt zu gewährleisten, dessen Stärke von der Stufe der Edelsteine abhängt und dessen Typ zufällig aus allen Edelsteintypen auf dem Gegenstand ausgewählt wird.&#10;&#10;\n\nDieser Gegenstand kann nicht auf legendäre Gegenstände angewendet werden.&lt;/Font&gt;</Data></Cell>
+    <Cell ss:StyleID="s32"><Data ss:Type="String">&lt;Font Size=&quot;15&quot;&gt;Removes a random magic effect and adds another when used on an item.\nIt will consume all socketed gems to guarantee a new magic effect whose power depends on the gems' level, and whose type is chosen randomly among all the types of gems on the item.&#10;&#10;\n\nThis item cannot be applied on legendary and unique items.&lt;/Font&gt;</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">&lt;Font Size=&quot;15&quot;&gt;Entfernt einen zufälligen magischen Effekt und fügt einen weiteren hinzu, sobald das Reagenz auf einen Gegenstand angewendet wird.\nEs werden alle gesockelten Edelsteine verbraucht, um einen neuen magischen Effekt zu gewährleisten, dessen Stärke von der Stufe der Edelsteine abhängt und dessen Typ zufällig aus allen Edelsteintypen auf dem Gegenstand ausgewählt wird.\n\nDieser Gegenstand kann nicht auf legendäre Gegenstände angewendet werden.&lt;/Font&gt;</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="51">
     <Cell ss:StyleID="s19"><Data ss:Type="String">ui_reagent2_lore</Data></Cell>
@@ -6516,8 +6581,8 @@
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="76.5">
     <Cell ss:StyleID="s19"><Data ss:Type="String">ui_reagent3_gameplaydesc</Data></Cell>
-    <Cell ss:StyleID="s32"><Data ss:Type="String">&lt;Font Size=&quot;15&quot;&gt;Adds a new random magic effect when used on an item. It will consume all socketed gems to guarantee a new magic effect whose power depends on the gems' level, and whose type is chosen randomly among all the types of gems on the item.&#10;&#10;\n\nThis item cannot be applied on legendary and unique items.&lt;/Font&gt;</Data></Cell>
-    <Cell ss:StyleID="s19"><Data ss:Type="String">&lt;Font Size=&quot;15&quot;&gt;Fügt einen neuen zufälligen magischen Effekt hinzu, sobald das Reagenz auf einen Gegenstand angewendet wird. Es werden alle gesockelten Edelsteine verbraucht, um einen neuen magischen Effekt zu gewährleisten, dessen Stärke von der Stufe der Edelsteine abhängt und dessen Typ zufällig aus allen Edelsteintypen auf dem Gegenstand ausgewählt wird.&#10;&#10;\n\nDieser Gegenstand kann nicht auf legendäre Gegenstände angewendet werden.&lt;/Font&gt;</Data></Cell>
+    <Cell ss:StyleID="s32"><Data ss:Type="String">&lt;Font Size=&quot;15&quot;&gt;Adds a new random magic effect when used on an item.\nIt will consume all socketed gems to guarantee a new magic effect whose power depends on the gems' level, and whose type is chosen randomly among all the types of gems on the item.&#10;&#10;\n\nThis item cannot be applied on legendary and unique items.&lt;/Font&gt;</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">&lt;Font Size=&quot;15&quot;&gt;Fügt einen neuen zufälligen magischen Effekt hinzu, sobald das Reagenz auf einen Gegenstand angewendet wird.\nEs werden alle gesockelten Edelsteine verbraucht, um einen neuen magischen Effekt zu gewährleisten, dessen Stärke von der Stufe der Edelsteine abhängt und dessen Typ zufällig aus allen Edelsteintypen auf dem Gegenstand ausgewählt wird.\n\nDieser Gegenstand kann nicht auf legendäre Gegenstände angewendet werden.&lt;/Font&gt;</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="63.75">
     <Cell ss:StyleID="s19"><Data ss:Type="String">ui_reagent3_lore</Data></Cell>
@@ -6531,8 +6596,8 @@
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="76.5">
     <Cell ss:StyleID="s19"><Data ss:Type="String">ui_reagent4_gameplaydesc</Data></Cell>
-    <Cell ss:StyleID="s32"><Data ss:Type="String">&lt;Font Size=&quot;15&quot;&gt;Removes a random magic effect when used on an item. It will consume all socketed gems to guarantee keeping a magic effect whose type is chosen randomly among all the types of gems on the item. Greater gems power allow the keeping of higher level magic effects.&#10;\n\nThis item cannot be applied on legendary and unique items.&lt;/Font&gt;</Data></Cell>
-    <Cell ss:StyleID="s19"><Data ss:Type="String">&lt;Font Size=&quot;15&quot;&gt;Entfernt einen zufälligen magischen Effekt, sobald das Reagenz auf einen Gegenstand angewendet wird. Es werden alle gesockelten Edelsteine verbraucht, um sicherzustellen, dass ein Affix erhalten bleibt, deren Typ zufällig unter allen Edelsteintypen auf dem Gegenstand ausgewählt wird. Bessere Edelsteine ermöglichen die Aufbewahrung von höherstufigen Affixen.&#10;&#10;\n\nDieser Gegenstand kann nicht auf legendäre Gegenstände angewendet werden.&lt;/Font&gt;</Data></Cell>
+    <Cell ss:StyleID="s32"><Data ss:Type="String">&lt;Font Size=&quot;15&quot;&gt;Removes a random magic effect when used on an item.\nIt will consume all socketed gems to guarantee keeping a magic effect whose type is chosen randomly among all the types of gems on the item. Greater gems power allow the keeping of higher level magic effects.&#10;\n\nThis item cannot be applied on legendary and unique items.&lt;/Font&gt;</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">&lt;Font Size=&quot;15&quot;&gt;Entfernt einen zufälligen magischen Effekt, sobald das Reagenz auf einen Gegenstand angewendet wird.\nEs werden alle gesockelten Edelsteine verbraucht, um sicherzustellen, dass ein Affix erhalten bleibt, deren Typ zufällig unter allen Edelsteintypen auf dem Gegenstand ausgewählt wird. Bessere Edelsteine ermöglichen die Aufbewahrung von höherstufigen Affixen.\n\nDieser Gegenstand kann nicht auf legendäre Gegenstände angewendet werden.&lt;/Font&gt;</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="89.25">
     <Cell ss:StyleID="s19"><Data ss:Type="String">ui_reagent4_lore</Data></Cell>
@@ -6546,8 +6611,8 @@
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="63.75">
     <Cell ss:StyleID="s19"><Data ss:Type="String">ui_reagent1_leg_gameplaydesc</Data></Cell>
-    <Cell ss:StyleID="s32"><Data ss:Type="String">&lt;Font Size=&quot;15&quot;&gt;Rerolls all magic effects when used on an item. It will consume all socketed gems to guarantee a magic effect whose power depends on the gems' level, and whose type is chosen randomly among all the types of gems on the item.&#10;&#10;\n\nThis item can only be applied on legendary items.&lt;/Font&gt;</Data></Cell>
-    <Cell ss:StyleID="s19"><Data ss:Type="String">&lt;Font Size=&quot;15&quot;&gt;Würfelt alle magischen Effekte neu aus, welche auf diesem Gegenstand verwendet werden. Es werden alle gesockelten Edelsteine verbraucht, um einen magischen Effekt zu gewährleisten, dessen Stärke von der Stufe der Edelsteine abhängt und dessen Typ zufällig aus allen Edelsteintypen auf dem Gegenstand ausgewählt wird.&#10;&#10;\n\nDieser Gegenstand kann nur auf legendäre Gegenstände angewendet werden&lt;/Font&gt;</Data></Cell>
+    <Cell ss:StyleID="s32"><Data ss:Type="String">&lt;Font Size=&quot;15&quot;&gt;Rerolls all magic effects when used on an item.\nIt will consume all socketed gems to guarantee a magic effect whose power depends on the gems' level, and whose type is chosen randomly among all the types of gems on the item.\n\nThis item can only be applied on legendary items.&lt;/Font&gt;</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">&lt;Font Size=&quot;15&quot;&gt;Würfelt alle magischen Effekte neu aus, welche auf diesem Gegenstand verwendet werden.\nEs werden alle gesockelten Edelsteine verbraucht, um einen magischen Effekt zu gewährleisten, dessen Stärke von der Stufe der Edelsteine abhängt und dessen Typ zufällig aus allen Edelsteintypen auf dem Gegenstand ausgewählt wird.\n\nDieser Gegenstand kann nur auf legendäre Gegenstände angewendet werden&lt;/Font&gt;</Data></Cell>
    </Row>
    <Row>
     <Cell ss:StyleID="s19"><Data ss:Type="String">ui_reagent2_legendary_name</Data></Cell>
@@ -6556,8 +6621,8 @@
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="63.75">
     <Cell ss:StyleID="s19"><Data ss:Type="String">ui_reagent2_leg_gameplaydesc</Data></Cell>
-    <Cell ss:StyleID="s32"><Data ss:Type="String">&lt;Font Size=&quot;15&quot;&gt;Removes a random magic effect and adds another when used on an item. It will consume all socketed gems to guarantee a new magic effect whose power depends on the gems' level, and whose type is chosen randomly among all the types of gems on the item.&#10;&#10;\n\nThis item can only be applied on legendary items.&lt;/Font&gt;</Data></Cell>
-    <Cell ss:StyleID="s19"><Data ss:Type="String">&lt;Font Size=&quot;15&quot;&gt;Entfernt einen zufälligen magischen Effekt und fügt einen weiteren hinzu, sobald das Reagenz auf einen Gegenstand angewendet wird. Es werden alle gesockelten Edelsteine verbraucht, um einen magischen Effekt zu gewährleisten, dessen Stärke von der Stufe der Edelsteine abhängt und dessen Typ zufällig aus allen Edelsteintypen auf dem Gegenstand ausgewählt wird.&#10;&#10;\n\nDieser Gegenstand kann nur auf legendäre Gegenstände angewendet werden&lt;/Font&gt;</Data></Cell>
+    <Cell ss:StyleID="s32"><Data ss:Type="String">&lt;Font Size=&quot;15&quot;&gt;Removes a random magic effect and adds another when used on an item.\nIt will consume all socketed gems to guarantee a new magic effect whose power depends on the gems' level, and whose type is chosen randomly among all the types of gems on the item.&#10;&#10;\n\nThis item can only be applied on legendary items.&lt;/Font&gt;</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">&lt;Font Size=&quot;15&quot;&gt;Entfernt einen zufälligen magischen Effekt und fügt einen weiteren hinzu, sobald das Reagenz auf einen Gegenstand angewendet wird.\nEs werden alle gesockelten Edelsteine verbraucht, um einen magischen Effekt zu gewährleisten, dessen Stärke von der Stufe der Edelsteine abhängt und dessen Typ zufällig aus allen Edelsteintypen auf dem Gegenstand ausgewählt wird.\n\nDieser Gegenstand kann nur auf legendäre Gegenstände angewendet werden&lt;/Font&gt;</Data></Cell>
    </Row>
    <Row>
     <Cell ss:StyleID="s19"><Data ss:Type="String">ui_reagent3_legendary_name</Data></Cell>
@@ -6566,8 +6631,8 @@
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="63.75">
     <Cell ss:StyleID="s19"><Data ss:Type="String">ui_reagent3_leg_gameplaydesc</Data></Cell>
-    <Cell ss:StyleID="s32"><Data ss:Type="String">&lt;Font Size=&quot;15&quot;&gt;Adds a new random magic effect when used on an item. It will consume all socketed gems to guarantee a new magic effect whose power depends on the gems' level, and whose type is chosen randomly among all the types of gems on the item.&#10;&#10;\n\nThis item can only be applied on legendary items.&lt;/Font&gt;</Data></Cell>
-    <Cell ss:StyleID="s19"><Data ss:Type="String">&lt;Font Size=&quot;15&quot;&gt;Fügt einen neuen zufälligen magischen Effekt hinzu, sobald das Reagenz auf einen Gegenstand angewendet wird. Es werden alle gesockelten Edelsteine verbraucht, um einen magischen Effekt zu gewährleisten, dessen Stärke von der Stufe der Edelsteine abhängt und dessen Typ zufällig aus allen Edelsteintypen auf dem Gegenstand ausgewählt wird.&#10;&#10;\n\nDieser Gegenstand kann nur auf legendäre Gegenstände angewendet werden&lt;/Font&gt;</Data></Cell>
+    <Cell ss:StyleID="s32"><Data ss:Type="String">&lt;Font Size=&quot;15&quot;&gt;Adds a new random magic effect when used on an item.\nIt will consume all socketed gems to guarantee a new magic effect whose power depends on the gems' level, and whose type is chosen randomly among all the types of gems on the item.&#10;&#10;\n\nThis item can only be applied on legendary items.&lt;/Font&gt;</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">&lt;Font Size=&quot;15&quot;&gt;Fügt einen neuen zufälligen magischen Effekt hinzu, sobald das Reagenz auf einen Gegenstand angewendet wird.\nEs werden alle gesockelten Edelsteine verbraucht, um einen magischen Effekt zu gewährleisten, dessen Stärke von der Stufe der Edelsteine abhängt und dessen Typ zufällig aus allen Edelsteintypen auf dem Gegenstand ausgewählt wird.\n\nDieser Gegenstand kann nur auf legendäre Gegenstände angewendet werden&lt;/Font&gt;</Data></Cell>
    </Row>
    <Row>
     <Cell ss:StyleID="s19"><Data ss:Type="String">ui_reagent4_legendary_name</Data></Cell>
@@ -6576,8 +6641,8 @@
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="63.75">
     <Cell ss:StyleID="s19"><Data ss:Type="String">ui_reagent4_leg_gameplaydesc</Data></Cell>
-    <Cell ss:StyleID="s32"><Data ss:Type="String">&lt;Font Size=&quot;15&quot;&gt;Removes a random magic effect when used on an item. It will consume all socketed gems to guarantee keeping a magic effect whose type is chosen randomly among all the types of gems on the item. Greater gems power allow the keeping of higher level magic effects.&#10;&#10;\n\nThis item can only be applied on legendary items.&lt;/Font&gt;</Data></Cell>
-    <Cell ss:StyleID="s19"><Data ss:Type="String">&lt;Font Size=&quot;15&quot;&gt;Entfernt einen zufälligen magischen Effekt, sobald das Reagenz auf einen Gegenstand angewendet wird. Es werden alle gesockelten Edelsteine verbraucht, um sicherzustellen, dass ein Affix erhalten bleibt, deren Typ zufällig unter allen Edelsteintypen auf dem Gegenstand ausgewählt wird. Bessere Edelsteine ermöglichen die Aufbewahrung von höherstufigen Affixen.&#10;&#10;\n\nDieser Gegenstand kann nur auf legendäre Gegenstände angewendet werden.&lt;/Font&gt;</Data></Cell>
+    <Cell ss:StyleID="s32"><Data ss:Type="String">&lt;Font Size=&quot;15&quot;&gt;Removes a random magic effect when used on an item.\nIt will consume all socketed gems to guarantee keeping a magic effect whose type is chosen randomly among all the types of gems on the item. Greater gems power allow the keeping of higher level magic effects.&#10;&#10;\n\nThis item can only be applied on legendary items.&lt;/Font&gt;</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">&lt;Font Size=&quot;15&quot;&gt;Entfernt einen zufälligen magischen Effekt, sobald das Reagenz auf einen Gegenstand angewendet wird.\nEs werden alle gesockelten Edelsteine verbraucht, um sicherzustellen, dass ein Affix erhalten bleibt, deren Typ zufällig unter allen Edelsteintypen auf dem Gegenstand ausgewählt wird. Bessere Edelsteine ermöglichen die Aufbewahrung von höherstufigen Affixen.\n\nDieser Gegenstand kann nur auf legendäre Gegenstände angewendet werden.&lt;/Font&gt;</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s25"><Data ss:Type="String">Endgame Consumables</Data></Cell>
@@ -6609,12 +6674,12 @@
     <Cell ss:StyleID="s32"><Data ss:Type="String">&lt;Font Size=&quot;15&quot; Color=&quot;#ccb270&quot;&gt;&lt;i&gt;Wherever that map may lead you, the promise of riches is embedded into it.&lt;/i&gt;&lt;/Font&gt;</Data></Cell>
     <Cell ss:StyleID="s19"><Data ss:Type="String">&lt;Font Size=&quot;15&quot; Color=&quot;#ccb270&quot;&gt;&lt;i&gt;Wohin auch immer diese Karte dich führen mag, das Versprechen des Reichtums ist darin eingebettet.&lt;/i&gt;&lt;/Font&gt;</Data></Cell>
    </Row>
-   <Row>
+   <Row ss:AutoFitHeight="0" ss:Height="25.5">
     <Cell ss:StyleID="s21"><Data ss:Type="String">ui_endgame_map_name_BoostedGoblin</Data></Cell>
     <Cell ss:StyleID="s32"><Data ss:Type="String">Map: Wealth Omens location</Data></Cell>
     <Cell ss:StyleID="s19"><Data ss:Type="String">Karte: Schatz Omen Standort</Data></Cell>
    </Row>
-   <Row>
+   <Row ss:AutoFitHeight="0" ss:Height="25.5">
     <Cell ss:StyleID="s21"><Data ss:Type="String">ui_endgame_map_desc_BoostedGoblin</Data></Cell>
     <Cell ss:StyleID="s32"><Data ss:Type="String">Access a dungeon with an higher population of Wealth Omens.</Data></Cell>
     <Cell ss:StyleID="s19"><Data ss:Type="String">Betrete einen Dungeon mit einer größeren Anzahl von Schatz Omen</Data></Cell>
@@ -6622,14 +6687,14 @@
    <Row ss:AutoFitHeight="0" ss:Height="51">
     <Cell ss:StyleID="s19"><Data ss:Type="String">ui_endgame_map_lore_BoostedGoblin</Data></Cell>
     <Cell ss:StyleID="s32"><Data ss:Type="String">&lt;Font Size=&quot;15&quot; Color=&quot;#ccb270&quot;&gt;&lt;i&gt;Many believe that sighting a golden scarab is an event that predates success and wealth. It comes with no surprise that greedy entrepreneurs nicknamed &quot;Omen Hunters&quot; decided to capitalize on that popular belief to track these mysterious creatures and sell their location for an hefty profit.&lt;/i&gt;&lt;/Font&gt;</Data></Cell>
-    <Cell ss:StyleID="s19"><Data ss:Type="String">&lt;Font Size=&quot;15&quot; Color=&quot;#ccb270&quot;&gt;&lt;i&gt;Viele glauben, dass das Sehen eines goldenen Skarabäus ein Vorkommen ist, welches Erfolg und Reichtum hewährt. Es ist keine Überraschung, dass gierige Unternehmer mit dem Spitznamen &quot;Omen Jäger&quot; beschlossen, diesen populären Glauben zu nutzen, um diese mysteriösen Kreaturen aufzuspüren und ihren Standort für einen hohen Gewinn zu verkaufen.&lt;/i&gt;&lt;/Font&gt;</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">&lt;Font Size=&quot;15&quot; Color=&quot;#ccb270&quot;&gt;&lt;i&gt;Viele glauben, dass das Sehen eines goldenen Skarabäus ein Vorkommen ist, welches Erfolg und Reichtum gewährt. Es ist keine Überraschung, dass gierige Unternehmer mit dem Spitznamen &quot;Omen Jäger&quot; beschlossen, diesen populären Glauben zu nutzen, um diese mysteriösen Kreaturen aufzuspüren und ihren Standort für einen hohen Gewinn zu verkaufen.&lt;/i&gt;&lt;/Font&gt;</Data></Cell>
    </Row>
-   <Row>
+   <Row ss:AutoFitHeight="0" ss:Height="25.5">
     <Cell ss:StyleID="s21"><Data ss:Type="String">ui_endgame_map_name_EliteBossFight</Data></Cell>
     <Cell ss:StyleID="s32"><Data ss:Type="String">Map: Bounty hunt</Data></Cell>
     <Cell ss:StyleID="s19"><Data ss:Type="String">Karte: Kopfgeldjäger</Data></Cell>
    </Row>
-   <Row>
+   <Row ss:AutoFitHeight="0" ss:Height="25.5">
     <Cell ss:StyleID="s21"><Data ss:Type="String">ui_endgame_map_desc_EliteBossFight</Data></Cell>
     <Cell ss:StyleID="s32"><Data ss:Type="String">Access a dungeon guarded by its boss.</Data></Cell>
     <Cell ss:StyleID="s19"><Data ss:Type="String">Betrete einen Dungeon, der von seinem Boss bewacht wird</Data></Cell>
@@ -6639,12 +6704,12 @@
     <Cell ss:StyleID="s32"><Data ss:Type="String">&lt;Font Size=&quot;15&quot; Color=&quot;#ccb270&quot;&gt;&lt;i&gt;The four realms have no shortage of creatures, otherwordly entities, and devious humans to fill bounty hunting boards. The way of the sellsword guarantees never being in need for coins: successful ones have no shortage of it while unsuccessful ones don't last long enough to have any need for wealth.&lt;/i&gt;&lt;/Font&gt;</Data></Cell>
     <Cell ss:StyleID="s19"><Data ss:Type="String">&lt;Font Size=&quot;15&quot; Color=&quot;#ccb270&quot;&gt;&lt;i&gt;In den vier Reichen mangelt es nicht an Kreaturen, anderen Wesenheiten und hinterhältigen Menschen, um Tafeln für die Kopfgeldjagd füllen zu können. Der Weg des käuflichen Schwertes garantiert, dass man nie auf Münzen angewiesen ist: Erfolgreiche kennen keinen Mangel, während die Erfolglosen nicht lange genug überleben, um überhaupt irgendeinen Bedarf an Reichtum zu haben.&lt;/i&gt;&lt;/Font&gt;</Data></Cell>
    </Row>
-   <Row>
+   <Row ss:AutoFitHeight="0" ss:Height="25.5">
     <Cell ss:StyleID="s21"><Data ss:Type="String">ui_endgame_map_name_SummonerEliteBossFight</Data></Cell>
     <Cell ss:StyleID="s32"><Data ss:Type="String">Map: Call to arms!</Data></Cell>
     <Cell ss:StyleID="s19"><Data ss:Type="String">Karte: Ruf zu den Waffen!</Data></Cell>
    </Row>
-   <Row>
+   <Row ss:AutoFitHeight="0" ss:Height="25.5">
     <Cell ss:StyleID="s21"><Data ss:Type="String">ui_endgame_map_desc_SummonerEliteBossFight</Data></Cell>
     <Cell ss:StyleID="s32"><Data ss:Type="String">Access a dungeon guarded by its boss and his powerful guards.</Data></Cell>
     <Cell ss:StyleID="s19"><Data ss:Type="String">Betrete einen Dungeon, der von seinem Boss und seinen mächtigen Wachen bewacht wird</Data></Cell>
@@ -6699,12 +6764,12 @@
     <Cell ss:StyleID="s32"><Data ss:Type="String">&lt;Font Size=&quot;15&quot; Color=&quot;#ccb270&quot;&gt;&lt;i&gt;Popular belief is that the precious Goldroot is the favourite plant of creatures nicknamed &quot;Wealth Omens&quot;. So much so that the two seem to have a mystical connection. Failed alchemists have for a long time tried to transform that plant into a powerful incense that could reveal the bond between the two. Goldroot dust have recently surfaced on blackmarkets indicating that at least one of them has succeeded...  &lt;/i&gt;&lt;/Font&gt;</Data></Cell>
     <Cell ss:StyleID="s19"><Data ss:Type="String">&lt;Font Size=&quot;15&quot; Color=&quot;#ccb270&quot;&gt;&lt;i&gt;Der weit verbreitete Glaube ist, dass die kostbare Goldwurzel die Lieblingspflanze der Kreaturen ist, die den Spitznamen &quot;Schatz Omen&quot; tragen. So sehr, dass die beiden eine mystische Verbindung zu haben scheinen. Alchemisten haben lange Zeit versucht, diese Pflanze in einen kraftvollen Weihrauch zu verwandeln, der die Verbindung zwischen den beiden enthüllen sollte. Goldwurzelstaub ist kürzlich auf den Schwarzmärkten aufgetaucht und weist darauf hin, dass mindestens einer von ihnen erfolgreich war...&lt;/i&gt;&lt;/Font&gt;</Data></Cell>
    </Row>
-   <Row>
+   <Row ss:AutoFitHeight="0" ss:Height="25.5">
     <Cell ss:StyleID="s21"><Data ss:Type="String">ui_endgame_map_name_ChestRoom</Data></Cell>
     <Cell ss:StyleID="s32"><Data ss:Type="String">Map: Hidden Coffers</Data></Cell>
     <Cell ss:StyleID="s19"><Data ss:Type="String">Karte: Versteckte Kassen</Data></Cell>
    </Row>
-   <Row>
+   <Row ss:AutoFitHeight="0" ss:Height="25.5">
     <Cell ss:StyleID="s21"><Data ss:Type="String">ui_endgame_map_desc_ChestRoom</Data></Cell>
     <Cell ss:StyleID="s32"><Data ss:Type="String">Access a room full of chests and loot their reward.</Data></Cell>
     <Cell ss:StyleID="s19"><Data ss:Type="String">Betrete einen Raum voll mit Truhen und plündere diese</Data></Cell>
@@ -6714,12 +6779,12 @@
     <Cell ss:StyleID="s32"><Data ss:Type="String">&lt;Font Size=&quot;15&quot; Color=&quot;#ccb270&quot;&gt;&lt;i&gt;The existence of such maps is often a story of its own. An heirloom hidden away, a pirate's booty, a group of adventurers that murdered each other at the moment of sharing… for this peculiar one, its story was indeed lost, but its riches however are very much real. &lt;/i&gt;&lt;/Font&gt;</Data></Cell>
     <Cell ss:StyleID="s19"><Data ss:Type="String">&lt;Font Size=&quot;15&quot; Color=&quot;#ccb270&quot;&gt;&lt;i&gt;Die Existenz solcher Karten ist oft eine eigene Geschichte. Ein verstecktes Erbstück, Piratenbeute, eine Gruppe von Abenteurern, die sich im Moment des Teilens gegenseitig ermordet haben.&lt;/i&gt;&lt;/Font&gt;</Data></Cell>
    </Row>
-   <Row>
+   <Row ss:AutoFitHeight="0" ss:Height="25.5">
     <Cell ss:StyleID="s21"><Data ss:Type="String">ui_endgame_map_name_CursedChestRoom</Data></Cell>
     <Cell ss:StyleID="s32"><Data ss:Type="String">Map: Chamber of Trials</Data></Cell>
     <Cell ss:StyleID="s19"><Data ss:Type="String">Karte: Kammer der Prozesse</Data></Cell>
    </Row>
-   <Row>
+   <Row ss:AutoFitHeight="0" ss:Height="25.5">
     <Cell ss:StyleID="s21"><Data ss:Type="String">ui_endgame_map_desc_CursedChestRoom</Data></Cell>
     <Cell ss:StyleID="s32"><Data ss:Type="String">Access a room full of cursed chests and loot their reward.</Data></Cell>
     <Cell ss:StyleID="s19"><Data ss:Type="String">Betrete einen Raum voll mit verfluchten Truhen und plündere diese</Data></Cell>
@@ -6754,6 +6819,71 @@
     <Cell ss:StyleID="s32"><Data ss:Type="String">&lt;Font Size=&quot;15&quot; Color=&quot;#ccb270&quot;&gt;&lt;i&gt;An incense concocted in the wilderness surrounding Three Peaks. If listened to closely, the echoes of forgotten memories can be felt crawling into your ears, wiggling their way into your head and making room for their cursed remembrance. You can hear the familiar sucking of flesh, the looming redness of an unfathomable creature, and a name that you thought would never be uttered again: Lambach.&lt;/i&gt;&lt;/Font&gt;</Data></Cell>
     <Cell ss:StyleID="s19"><Data ss:Type="String">&lt;Font Size=&quot;15&quot; Color=&quot;#ccb270&quot;&gt;&lt;i&gt;Man kann einen intensiver Geruch von Weihrauch in der Wildnis rund um die Drei Spitzen wahrnehmen. Wenn du genau hinhörst, kannst du sogar das Echo vergessener Erinnerungen in deinen Ohren spüren, welche sich in deinem Kopf winden und Platz für ihre verfluchten Erinnerung schaffen. Du kannst das vertraute Geräusch des Fleisches hören, die sich abzeichnende Rötung einer unergründlichen Kreatur sehen und ein Namen, von dem du dachtest, dass er nie wieder ausgesprochen werden würde: Lambach.&lt;/i&gt;&lt;/Font&gt;</Data></Cell>
    </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s25"><Data ss:Type="String">C1 Consumables</Data></Cell>
+    <Cell ss:StyleID="s25"/>
+    <Cell ss:StyleID="s19"/>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">ui_consumable_narrative1_name</Data></Cell>
+    <Cell ss:StyleID="s32"><Data ss:Type="String">Reverie Incense: Bloodmoss</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Weihrauch Träumerei: Blutmoos</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">ui_consumable_narrative1_desc</Data></Cell>
+    <Cell ss:StyleID="s32"><Data ss:Type="String">Access a harder version of the Mission 'The Only Lead'.</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Zugang zu einer härteren Version der Mission &quot;Die einzige Spur&quot;.</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="89.25">
+    <Cell ss:StyleID="s19"><Data ss:Type="String">ui_consumable_narrative1_lore</Data></Cell>
+    <Cell ss:StyleID="s32"><Data ss:Type="String">&lt;Font Size=&quot;15&quot; Color=&quot;#ccb270&quot;&gt;&lt;i&gt;A drake-tooth concoction is said to invoke powerful memories when mixed with objects from a person’s past. This concoction has been mixed with a clump of Bloodmoss taken from the Stormfall Wilds. Globules of blood swirl around in the mixture, reminding you of the Republic dead you had left bloody in your wake…&lt;/i&gt;&lt;/Font&gt;</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">&lt;Font Size=&quot;15&quot; Color=&quot;#ccb270&quot;&gt;&lt;i&gt;Ein Drachenzahngebräu soll starke Erinnerungen hervorrufen, wenn es mit Gegenständen aus der Vergangenheit einer Person vermischt wird. Dieses Gebräu wurde mit einem Klumpen Blutmoos aus der Wildnis Sturmfalls vermischt. In der Mischung wirbeln Blutkugeln herum, die dich an den Tod der Republik erinnert, welchen du blutig hinterlassen hast...&lt;/i&gt;&lt;/Font&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">ui_consumable_narrative2_name</Data></Cell>
+    <Cell ss:StyleID="s32"><Data ss:Type="String">Reverie Incense: Bowelreed</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Weihrauch Träumerei: Eingeweide</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">ui_consumable_narrative2_desc</Data></Cell>
+    <Cell ss:StyleID="s32"><Data ss:Type="String">Access a harder version of the Mission 'What Lies Below'.</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Zugang zu einer härteren Version der Mission &quot;Was darunter liegt&quot;.</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="114.75">
+    <Cell ss:StyleID="s19"><Data ss:Type="String">ui_consumable_narrative2_lore</Data></Cell>
+    <Cell ss:StyleID="s32"><Data ss:Type="String">&lt;Font Size=&quot;15&quot; Color=&quot;#ccb270&quot;&gt;&lt;i&gt;A drake-tooth concoction is said to invoke powerful memories when mixed with objects from a person’s past. This concoction was mixed with a reed that lives in the Garadalug Bowels. Spores rise from its surface, and if listened to closely, a gurgling can be heard emanating from the substance. It is almost familiar, like the guttural speech of an old adversary, lurking in the murky waters of the Garadalug Bowels.&lt;/i&gt;&lt;/Font&gt;</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">&lt;Font Size=&quot;15&quot; Color=&quot;#ccb270&quot;&gt;&lt;i&gt;Ein Drachenzahngebräu soll starke Erinnerungen hervorrufen, wenn es mit Gegenständen aus der Vergangenheit einer Person vermischt wird. Dieses Gebräu wurde mit einem Schilfrohr vermischt, das in den Garadalug Eingeweide lebt. Von seiner Oberfläche steigen Sporen auf, und wenn man genau hinhört, kann man ein Gurgeln hören, das von der Substanz ausgeht. Es ist fast vertraut, wie die gutturale Rede eines alten Gegners, der im trüben Wasser der Garadalug Eingeweide lauert.&lt;/i&gt;&lt;/Font&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">ui_consumable_narrative3_name</Data></Cell>
+    <Cell ss:StyleID="s32"><Data ss:Type="String">Reverie Incense: Ashleaf</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Weihrauch Träumerei: Ascheblatt</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">ui_consumable_narrative3_desc</Data></Cell>
+    <Cell ss:StyleID="s32"><Data ss:Type="String">Access a harder version of the Mission 'Ashfall'.</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Zugang zu einer härteren Version der Mission &quot;Ascheregen&quot;.</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="89.25">
+    <Cell ss:StyleID="s19"><Data ss:Type="String">ui_consumable_narrative3_lore</Data></Cell>
+    <Cell ss:StyleID="s32"><Data ss:Type="String">&lt;Font Size=&quot;15&quot; Color=&quot;#ccb270&quot;&gt;&lt;i&gt;A drake-tooth concoction is said to invoke powerful memories when mixed with objects from a person’s past. This concoction has been mixed with an Ashleaf that has grown in the Sunken Lands.The substance crackles like a dying flame, and upon closer inspection, it emanates a potent heat, reminding you of a fire long extinguished.&lt;/i&gt;&lt;/Font&gt;</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">&lt;Font Size=&quot;15&quot; Color=&quot;#ccb270&quot;&gt;&lt;i&gt;Ein Drachenzahngebräu soll starke Erinnerungen hervorrufen, wenn es mit Gegenständen aus der Vergangenheit einer Person vermischt wird. Die Substanz knistert wie eine sterbende Flamme, und bei genauerem Hinsehen strahlt sie eine starke Hitze aus, die an ein längst erloschenes Feuer erinnert.&lt;/i&gt;&lt;/Font&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">ui_consumable_narrative_uber_oshara_name</Data></Cell>
+    <Cell ss:StyleID="s32"><Data ss:Type="String">Reverie Incense: Dragonheart</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Weihrauch Träumerei: Drachenherz</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">ui_consumable_narrative_uber_oshara_desc</Data></Cell>
+    <Cell ss:StyleID="s29"><Data ss:Type="String">Access a room to fight the empowered version of Oshara.</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Betrete einen Raum mit einer stärkeren Version von Oshara.</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="76.5">
+    <Cell ss:StyleID="s19"><Data ss:Type="String">ui_consumable_narrative4_lore</Data></Cell>
+    <Cell ss:StyleID="s32"><Data ss:Type="String">&lt;Font Size=&quot;15&quot; Color=&quot;#ccb270&quot;&gt;&lt;i&gt;A drake-tooth concoction is said to invoke powerful memories when mixed with objects from a person’s past. This one has been mixed with a bud from a Dragonheart plant, found near the spot where Oshara died. The substance is completely still, inert. But as you draw your ear closer, Oshara’s cries ring in your ears, her madness threatening to overwhelm you.&lt;/i&gt;&lt;/Font&gt;</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">&lt;Font Size=&quot;15&quot; Color=&quot;#ccb270&quot;&gt;&lt;i&gt;Ein Drachenzahngebräu soll starke Erinnerungen hervorrufen, wenn es mit Gegenständen aus der Vergangenheit einer Person vermischt wird. Dieser wurde mit einer Knospe einer Drachenherzpflanze vermischt, die in der Nähe der Stelle gefunden wurde, an der Oshara starb. Die Substanz ist völlig ruhig und inaktiv. Aber wenn du dein Ohr näher dran hältst, klingen Osharas Schreie in deinen Ohren und ihr Wahnsinn droht dich zu überwältigen.&lt;/i&gt;&lt;/Font&gt;</Data></Cell>
+   </Row>
   </Table>
   <WorksheetOptions xmlns="urn:schemas-microsoft-com:office:excel">
    <PageSetup>
@@ -6771,7 +6901,7 @@
    <Panes>
     <Pane>
      <Number>3</Number>
-     <ActiveRow>1327</ActiveRow>
+     <ActiveRow>1353</ActiveRow>
      <ActiveCol>2</ActiveCol>
     </Pane>
    </Panes>

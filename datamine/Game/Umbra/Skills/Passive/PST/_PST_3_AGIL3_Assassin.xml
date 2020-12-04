@@ -2,34 +2,34 @@
   <Spell Name="ASSA_1" UIName="@ui_ASSA_1_name" HUDLoreDesc="" GameplayDesc="">
     <MagicEffects>
       <EIM Name="damage_percent" HUDDesc="@ui_eim_damage_percent" Permanent="1">
-        <Semantics DamagePercentInt="10" />
+        <Semantics DamagePercentInt="5" />
       </EIM>
       <EIM Name="criticalchance_score_percent" HUDDesc="@ui_eim_criticalchance_score_percent" Permanent="1">
-        <Semantics CharacteristicScorePercentInt="12" />
+        <Semantics CharacteristicScorePercentInt="5" />
       </EIM>
       <EIM Name="forceshield_percent" HUDDesc="@ui_eim_forceshield_percent" Permanent="1">
-        <Semantics ArmorPercentFloat="8" />
+        <Semantics ArmorPercentFloat="5" />
       </EIM>
     </MagicEffects>
   </Spell>
   <Spell Name="ASSA_2" UIName="@ui_ASSA_2_name" HUDLoreDesc="" GameplayDesc="">
     <MagicEffects>
-      <EIM Name="attackspeed_score_percent" HUDDesc="@ui_eim_attackspeed_score_percent" Permanent="1">
-        <Semantics CharacteristicScorePercentInt="15" />
+      <EIM Name="attackspeed_final_percent" HUDDesc="@ui_eim_attackspeed_final_percent" Permanent="1">
+        <Semantics CharacteristicFinalPercentFloat="3" />
       </EIM>
     </MagicEffects>
   </Spell>
   <Spell Name="ASSA_3" UIName="@ui_ASSA_3_name" HUDLoreDesc="" GameplayDesc="">
     <MagicEffects>
-      <EIM Name="attackspeed_score_percent" HUDDesc="@ui_eim_attackspeed_score_percent" Permanent="1">
-        <Semantics CharacteristicScorePercentInt="15" />
+      <EIM Name="attackspeed_final_percent" HUDDesc="@ui_eim_attackspeed_final_percent" Permanent="1">
+        <Semantics CharacteristicFinalPercentFloat="3" />
       </EIM>
     </MagicEffects>
   </Spell>
   <Spell Name="ASSA_4" UIName="@ui_ASSA_4_name" HUDLoreDesc="" GameplayDesc="">
     <MagicEffects>
       <EIM Name="dodgechance_score_percent" HUDDesc="@ui_eim_dodgechance_score_percent" Permanent="1">
-        <Semantics CharacteristicScorePercentInt="12" />
+        <Semantics CharacteristicScorePercentInt="6" />
       </EIM>
       <EIM Name="stamina_regeneration_percent" HUDDesc="@ui_eim_stamina_regeneration_percent" Permanent="1">
         <Semantics ResourcePercentFloat="8" />
@@ -38,11 +38,11 @@
   </Spell>
   <Spell Name="ASSA_5" UIName="@ui_ASSA_5_name" HUDLoreDesc="" GameplayDesc="">
     <MagicEffects>
-      <EIM Name="attackspeed_score_percent" HUDDesc="@ui_eim_attackspeed_score_percent" Permanent="1">
-        <Semantics CharacteristicScorePercentInt="15" />
+      <EIM Name="attackspeed_final_percent" HUDDesc="@ui_eim_attackspeed_final_percent" Permanent="1">
+        <Semantics CharacteristicFinalPercentFloat="2" />
       </EIM>
       <EIM Name="damage_percent" HUDDesc="@ui_eim_damage_percent" Permanent="1">
-        <Semantics DamagePercentInt="8" />
+        <Semantics DamagePercentInt="4" />
       </EIM>
     </MagicEffects>
   </Spell>
@@ -56,17 +56,17 @@
   <Spell Name="ASSA_7" UIName="@ui_ASSA_7_name" HUDLoreDesc="" GameplayDesc="">
     <MagicEffects>
       <EIM Name="forceshield_percent" HUDDesc="@ui_eim_forceshield_percent" Permanent="1">
-        <Semantics ArmorPercentFloat="10" />
+        <Semantics ArmorPercentFloat="5" />
       </EIM>
       <EIM Name="health_percent" HUDDesc="@ui_eim_health_percent" Permanent="1">
-        <Semantics HealthPercentInt="8" />
+        <Semantics HealthPercentInt="5" />
       </EIM>
     </MagicEffects>
   </Spell>
   <Spell Name="ASSA_8" UIName="@ui_ASSA_8_name" HUDLoreDesc="@ui_ASSA_8_loredesc" GameplayDesc="@ui_ASSA_8_gameplaydesc">
     <MagicEffects>
       <EIM Name="stack_focus_damage" HUDDesc="@ui_eim_stack_focus_damage" Permanent="1">
-        <Semantics PSTStackMaxCountInt="6" DamagePercentFloat="6" />
+        <Semantics PSTStackMaxCountInt="6" DamagePercentFloat="5" />
       </EIM>
     </MagicEffects>
   </Spell>
@@ -80,21 +80,21 @@
   <Spell Name="ASSA_10" UIName="@ui_ASSA_10_name" HUDLoreDesc="" GameplayDesc="">
     <MagicEffects>
       <EIM Name="criticalchance_score_percent" HUDDesc="@ui_eim_criticalchance_score_percent" Permanent="1">
-        <Semantics CharacteristicScorePercentInt="18" />
+        <Semantics CharacteristicScorePercentInt="10" />
       </EIM>
     </MagicEffects>
   </Spell>
   <Spell Name="ASSA_11" UIName="@ui_ASSA_11_name" HUDLoreDesc="" GameplayDesc="">
     <MagicEffects>
       <EIM Name="criticalchance_score_percent" HUDDesc="@ui_eim_criticalchance_score_percent" Permanent="1">
-        <Semantics CharacteristicScorePercentInt="18" />
+        <Semantics CharacteristicScorePercentInt="10" />
       </EIM>
     </MagicEffects>
   </Spell>
   <Spell Name="ASSA_12" UIName="@ui_ASSA_12_name" HUDLoreDesc="" GameplayDesc="">
     <MagicEffects>
       <EIM Name="dodgechance_score_percent" HUDDesc="@ui_eim_dodgechance_score_percent" Permanent="1">
-        <Semantics CharacteristicScorePercentInt="12" />
+        <Semantics CharacteristicScorePercentInt="6" />
       </EIM>
       <EIM Name="stamina_regeneration_percent" HUDDesc="@ui_eim_stamina_regeneration_percent" Permanent="1">
         <Semantics ResourcePercentFloat="8" />
@@ -104,7 +104,7 @@
   <Spell Name="ASSA_13" UIName="@ui_ASSA_13_name" HUDLoreDesc="" GameplayDesc="">
     <MagicEffects>
       <EIM Name="criticalchance_score_percent" HUDDesc="@ui_eim_criticalchance_score_percent" Permanent="1">
-        <Semantics CharacteristicScorePercentInt="12" />
+        <Semantics CharacteristicScorePercentInt="6" />
       </EIM>
       <EIM Name="criticaldamage_pts" HUDDesc="@ui_eim_criticaldamage_pts" Permanent="1">
         <Semantics DamagePercentInt="5" />
@@ -114,10 +114,10 @@
   <Spell Name="ASSA_14" UIName="@ui_ASSA_14_name" HUDLoreDesc="" GameplayDesc="">
     <MagicEffects>
       <EIM Name="forceshield_percent" HUDDesc="@ui_eim_forceshield_percent" Permanent="1">
-        <Semantics ArmorPercentFloat="10" />
+        <Semantics ArmorPercentFloat="5" />
       </EIM>
       <EIM Name="health_percent" HUDDesc="@ui_eim_health_percent" Permanent="1">
-        <Semantics HealthPercentInt="8" />
+        <Semantics HealthPercentInt="5" />
       </EIM>
     </MagicEffects>
   </Spell>
@@ -131,24 +131,24 @@
   <Spell Name="ASSA_16" UIName="@ui_ASSA_16_name" HUDLoreDesc="" GameplayDesc="">
     <MagicEffects>
       <EIM Name="forceshield_percent" HUDDesc="@ui_eim_forceshield_percent" Permanent="1">
-        <Semantics ArmorPercentFloat="10" />
+        <Semantics ArmorPercentFloat="5" />
       </EIM>
       <EIM Name="health_percent" HUDDesc="@ui_eim_health_percent" Permanent="1">
-        <Semantics HealthPercentInt="8" />
+        <Semantics HealthPercentInt="5" />
       </EIM>
     </MagicEffects>
   </Spell>
   <Spell Name="ASSA_17" UIName="@ui_ASSA_17_name" HUDLoreDesc="@ui_ASSA_17_loredesc" GameplayDesc="@ui_ASSA_17_gameplaydesc">
     <MagicEffects>
       <EIM Name="attack_speed_on_critical_hit" HUDDesc="@ui_eim_attack_speed_on_critical_hit" Permanent="1">
-        <Semantics CharacteristicScorePercentInt="75" />
+        <Semantics MajorMultiplierFloat="1.1" />
       </EIM>
     </MagicEffects>
   </Spell>
   <Spell Name="ASSA_18" UIName="@ui_ASSA_18_name" HUDLoreDesc="" GameplayDesc="">
     <MagicEffects>
       <EIM Name="attack_speed_on_critical_hit" HUDDesc="@ui_eim_attack_speed_on_critical_hit" Permanent="1">
-        <Semantics CharacteristicScorePercentInt="25" />
+        <Semantics MajorMultiplierFloat="1.03" />
       </EIM>
     </MagicEffects>
   </Spell>
@@ -158,7 +158,7 @@
         <Semantics PSTStackGainPerSecondInt="4" PSTStackGainOnEvent="4" PSTStackLossOnEvent="10" PSTStackMaxCountInt="100" />
       </EIM>
       <EIM Name="stack_gadget_damage" HUDDesc="@ui_eim_stack_gadget_damage" Permanent="1">
-        <Semantics DamagePercentFloat="200" />
+        <Semantics DamagePercentFloat="0.5" />
       </EIM>
     </MagicEffects>
   </Spell>
@@ -166,6 +166,34 @@
     <MagicEffects>
       <EIM Name="stack_gadget_costs" HUDDesc="@ui_eim_stack_gadget_costs" Permanent="1">
         <Semantics ResourcePercentFloat="30" />
+      </EIM>
+    </MagicEffects>
+  </Spell>
+  <Spell Name="ASSA_21" UIName="@ui_ASSA_21_name" HUDLoreDesc="" GameplayDesc="">
+    <MagicEffects>
+      <EIM Name="lightning_damage_percent" HUDDesc="@ui_eim_lightning_damage_percent" Permanent="1">
+        <Semantics DamagePercentInt="15" />
+      </EIM>
+    </MagicEffects>
+  </Spell>
+  <Spell Name="ASSA_22" UIName="@ui_ASSA_22_name" HUDLoreDesc="" GameplayDesc="">
+    <MagicEffects>
+      <EIM Name="attackspeed_final_percent" HUDDesc="@ui_eim_attackspeed_final_percent" Permanent="1">
+        <Semantics CharacteristicFinalPercentFloat="3" />
+      </EIM>
+    </MagicEffects>
+  </Spell>
+  <Spell Name="ASSA_23" UIName="@ui_ASSA_23_name" HUDLoreDesc="" GameplayDesc="">
+    <MagicEffects>
+      <EIM Name="lightning_damage_percent" HUDDesc="@ui_eim_lightning_damage_percent" Permanent="1">
+        <Semantics DamagePercentInt="15" />
+      </EIM>
+    </MagicEffects>
+  </Spell>
+  <Spell Name="ASSA_24" UIName="@ui_ASSA_24_name" HUDLoreDesc="" GameplayDesc="">
+    <MagicEffects>
+      <EIM Name="criticaldamage_pts" HUDDesc="@ui_eim_criticaldamage_pts" Permanent="1">
+        <Semantics DamagePercentInt="7" />
       </EIM>
     </MagicEffects>
   </Spell>

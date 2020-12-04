@@ -2,34 +2,34 @@
   <Spell Name="REPU_1" UIName="@ui_REPU_1_name" HUDLoreDesc="" GameplayDesc="">
     <MagicEffects>
       <EIM Name="damage_percent_melee_weapon" HUDDesc="@ui_eim_damage_percent_melee_weapon" Permanent="1">
-        <Semantics DamagePercentInt="8" />
+        <Semantics DamagePercentInt="5" />
       </EIM>
       <EIM Name="damage_percent_projectiles" HUDDesc="@ui_eim_damage_percent_projectiles" Permanent="1">
-        <Semantics DamagePercentInt="8" />
+        <Semantics DamagePercentInt="5" />
       </EIM>
       <EIM Name="dodgechance_score_percent" HUDDesc="@ui_eim_dodgechance_score_percent" Permanent="1">
-        <Semantics CharacteristicScorePercentInt="9" />
+        <Semantics CharacteristicScorePercentInt="5" />
       </EIM>
     </MagicEffects>
   </Spell>
   <Spell Name="REPU_2" UIName="@ui_REPU_2_name" HUDLoreDesc="" GameplayDesc="">
     <MagicEffects>
       <EIM Name="material_damage_percent" HUDDesc="@ui_eim_material_damage_percent" Permanent="1">
-        <Semantics DamagePercentInt="15" />
+        <Semantics DamagePercentInt="10" />
       </EIM>
     </MagicEffects>
   </Spell>
   <Spell Name="REPU_3" UIName="@ui_REPU_3_name" HUDLoreDesc="" GameplayDesc="">
     <MagicEffects>
       <EIM Name="material_damage_percent" HUDDesc="@ui_eim_material_damage_percent" Permanent="1">
-        <Semantics DamagePercentInt="15" />
+        <Semantics DamagePercentInt="10" />
       </EIM>
     </MagicEffects>
   </Spell>
   <Spell Name="REPU_4" UIName="@ui_REPU_4_name" HUDLoreDesc="" GameplayDesc="">
     <MagicEffects>
       <EIM Name="dodgechance_score_percent" HUDDesc="@ui_eim_dodgechance_score_percent" Permanent="1">
-        <Semantics CharacteristicScorePercentInt="12" />
+        <Semantics CharacteristicScorePercentInt="6" />
       </EIM>
       <EIM Name="movespeed" HUDDesc="@ui_eim_movespeed" Permanent="1">
         <Semantics SpeedPercentInt="5" />
@@ -39,17 +39,17 @@
   <Spell Name="REPU_5" UIName="@ui_REPU_5_name" HUDLoreDesc="" GameplayDesc="">
     <MagicEffects>
       <EIM Name="material_damage_percent" HUDDesc="@ui_eim_material_damage_percent" Permanent="1">
-        <Semantics DamagePercentInt="15" />
+        <Semantics DamagePercentInt="10" />
       </EIM>
       <EIM Name="criticalchance_score_percent" HUDDesc="@ui_eim_criticalchance_score_percent" Permanent="1">
-        <Semantics CharacteristicScorePercentInt="9" />
+        <Semantics CharacteristicScorePercentInt="5" />
       </EIM>
     </MagicEffects>
   </Spell>
   <Spell Name="REPU_6" UIName="@ui_REPU_6_name" HUDLoreDesc="" GameplayDesc="">
     <MagicEffects>
       <EIM Name="damage_percent_melee_weapon" HUDDesc="@ui_eim_damage_percent_melee_weapon" Permanent="1">
-        <Semantics DamagePercentInt="12" />
+        <Semantics DamagePercentInt="6" />
       </EIM>
     </MagicEffects>
   </Spell>
@@ -59,7 +59,7 @@
         <Semantics CharacteristicScorePercentInt="10" />
       </EIM>
       <EIM Name="health_percent" HUDDesc="@ui_eim_health_percent" Permanent="1">
-        <Semantics HealthPercentInt="8" />
+        <Semantics HealthPercentInt="5" />
       </EIM>
     </MagicEffects>
   </Spell>
@@ -83,21 +83,21 @@
   <Spell Name="REPU_10" UIName="@ui_REPU_10_name" HUDLoreDesc="" GameplayDesc="">
     <MagicEffects>
       <EIM Name="damage_percent_projectiles" HUDDesc="@ui_eim_damage_percent_projectiles" Permanent="1">
-        <Semantics DamagePercentInt="12" />
+        <Semantics DamagePercentInt="6" />
       </EIM>
     </MagicEffects>
   </Spell>
   <Spell Name="REPU_11" UIName="@ui_REPU_11_name" HUDLoreDesc="" GameplayDesc="">
     <MagicEffects>
       <EIM Name="damage_percent_projectiles" HUDDesc="@ui_eim_damage_percent_projectiles" Permanent="1">
-        <Semantics DamagePercentInt="12" />
+        <Semantics DamagePercentInt="6" />
       </EIM>
     </MagicEffects>
   </Spell>
   <Spell Name="REPU_12" UIName="@ui_REPU_12_name" HUDLoreDesc="" GameplayDesc="">
     <MagicEffects>
       <EIM Name="dodgechance_score_percent" HUDDesc="@ui_eim_dodgechance_score_percent" Permanent="1">
-        <Semantics CharacteristicScorePercentInt="12" />
+        <Semantics CharacteristicScorePercentInt="6" />
       </EIM>
       <EIM Name="movespeed" HUDDesc="@ui_eim_movespeed" Permanent="1">
         <Semantics SpeedPercentInt="5" />
@@ -107,34 +107,34 @@
   <Spell Name="REPU_13" UIName="@ui_REPU_13_name" HUDLoreDesc="" GameplayDesc="">
     <MagicEffects>
       <EIM Name="damage_percent_projectiles" HUDDesc="@ui_eim_damage_percent_projectiles" Permanent="1">
-        <Semantics DamagePercentInt="8" />
+        <Semantics DamagePercentInt="5" />
       </EIM>
       <EIM Name="damage_percent_melee_weapon" HUDDesc="@ui_eim_damage_percent_melee_weapon" Permanent="1">
-        <Semantics DamagePercentInt="8" />
+        <Semantics DamagePercentInt="5" />
       </EIM>
     </MagicEffects>
   </Spell>
   <Spell Name="REPU_14" UIName="@ui_REPU_14_name" HUDLoreDesc="" GameplayDesc="">
     <MagicEffects>
       <EIM Name="material_resistance_score_percent" HUDDesc="@ui_eim_material_resistance_score_percent" Permanent="1">
-        <Semantics CharacteristicScorePercentInt="10" />
+        <Semantics CharacteristicScorePercentInt="15" />
       </EIM>
     </MagicEffects>
   </Spell>
   <Spell Name="REPU_15" UIName="@ui_REPU_15_name" HUDLoreDesc="" GameplayDesc="">
     <MagicEffects>
       <EIM Name="damage_percent_melee_weapon" HUDDesc="@ui_eim_damage_percent_melee_weapon" Permanent="1">
-        <Semantics DamagePercentInt="12" />
+        <Semantics DamagePercentInt="6" />
       </EIM>
     </MagicEffects>
   </Spell>
   <Spell Name="REPU_16" UIName="@ui_REPU_16_name" HUDLoreDesc="" GameplayDesc="">
     <MagicEffects>
       <EIM Name="material_resistance_score_percent" HUDDesc="@ui_eim_material_resistance_score_percent" Permanent="1">
-        <Semantics CharacteristicScorePercentInt="10" />
+        <Semantics CharacteristicScorePercentInt="15" />
       </EIM>
       <EIM Name="health_percent" HUDDesc="@ui_eim_health_percent" Permanent="1">
-        <Semantics HealthPercentInt="8" />
+        <Semantics HealthPercentInt="5" />
       </EIM>
     </MagicEffects>
   </Spell>
@@ -164,14 +164,42 @@
   <Spell Name="REPU_19" UIName="@ui_REPU_19_name" HUDLoreDesc="@ui_REPU_19_loredesc" GameplayDesc="@ui_REPU_19_gameplaydesc">
     <MagicEffects>
       <EIM Name="material_damage_on_elites" HUDDesc="@ui_eim_material_damage_on_elites" Permanent="1">
-        <Semantics PSTStackResetTimer="30" PSTStackMaxCountInt="5" DamagePercentFloat="15" />
+        <Semantics PSTStackResetTimer="90" PSTStackMaxCountInt="5" DamagePercentFloat="50" />
       </EIM>
     </MagicEffects>
   </Spell>
   <Spell Name="REPU_20" UIName="@ui_REPU_20_name" HUDLoreDesc="" GameplayDesc="">
     <MagicEffects>
       <EIM Name="material_damage_on_elites" HUDDesc="@ui_eim_material_damage_on_elites_timer" Permanent="1">
-        <Semantics PSTStackResetTimer="50" />
+        <Semantics PSTStackResetTimer="120" />
+      </EIM>
+    </MagicEffects>
+  </Spell>
+  <Spell Name="REPU_21" UIName="@ui_REPU_21_name" HUDLoreDesc="" GameplayDesc="">
+    <MagicEffects>
+      <EIM Name="damage_percent_projectiles" HUDDesc="@ui_eim_damage_percent_projectiles" Permanent="1">
+        <Semantics DamagePercentInt="5" />
+      </EIM>
+    </MagicEffects>
+  </Spell>
+  <Spell Name="REPU_22" UIName="@ui_REPU_22_name" HUDLoreDesc="" GameplayDesc="">
+    <MagicEffects>
+      <EIM Name="material_damage_percent" HUDDesc="@ui_eim_material_damage_percent" Permanent="1">
+        <Semantics DamagePercentInt="10" />
+      </EIM>
+    </MagicEffects>
+  </Spell>
+  <Spell Name="REPU_23" UIName="@ui_REPU_23_name" HUDLoreDesc="" GameplayDesc="">
+    <MagicEffects>
+      <EIM Name="damage_percent_projectiles" HUDDesc="@ui_eim_damage_percent_projectiles" Permanent="1">
+        <Semantics DamagePercentInt="5" />
+      </EIM>
+    </MagicEffects>
+  </Spell>
+  <Spell Name="REPU_24" UIName="@ui_REPU_24_name" HUDLoreDesc="" GameplayDesc="">
+    <MagicEffects>
+      <EIM Name="material_damage_percent" HUDDesc="@ui_eim_material_damage_percent" Permanent="1">
+        <Semantics DamagePercentInt="10" />
       </EIM>
     </MagicEffects>
   </Spell>

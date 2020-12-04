@@ -16,9 +16,9 @@
       <Keywords MandatoryKeywords="belt" />
       <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
     </DropParams>
-    <MagicEffect EffectId="health_pts">
-      <LoRoll HealthFlatInt="50" />
-      <HiRoll HealthFlatInt="100" />
+    <MagicEffect EffectId="health_percent">
+      <LoRoll HealthPercentInt="7" />
+      <HiRoll HealthPercentInt="10" />
     </MagicEffect>
   </Affix>
   <Affix AffixId="implicit_physical_damage_belt" Class="default" AffixType="default">
@@ -29,7 +29,7 @@
     </DropParams>
     <MagicEffect EffectId="damage_percent_any_weapon">
       <LoRoll DamagePercentInt="10" />
-      <HiRoll DamagePercentInt="30" />
+      <HiRoll DamagePercentInt="15" />
     </MagicEffect>
   </Affix>
   <Affix AffixId="implicit_spell_damage_belt" Class="default" AffixType="default">
@@ -40,7 +40,7 @@
     </DropParams>
     <MagicEffect EffectId="damage_percent_spell">
       <LoRoll DamagePercentInt="10" />
-      <HiRoll DamagePercentInt="30" />
+      <HiRoll DamagePercentInt="15" />
     </MagicEffect>
   </Affix>
   <Affix AffixId="implicit_glocal_critical_chance_belt" Class="default" AffixType="default">
@@ -51,7 +51,7 @@
     </DropParams>
     <MagicEffect EffectId="criticalchance_score_percent">
       <LoRoll CharacteristicScorePercentInt="10" />
-      <HiRoll CharacteristicScorePercentInt="30" />
+      <HiRoll CharacteristicScorePercentInt="15" />
     </MagicEffect>
   </Affix>
   <Affix AffixId="implicit_armor_belt" Class="default" AffixType="default">
@@ -60,9 +60,9 @@
       <Keywords MandatoryKeywords="belt" />
       <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
     </DropParams>
-    <MagicEffect EffectId="forceshield_pts">
-      <LoRoll ArmorFlatInt="50" />
-      <HiRoll ArmorFlatInt="100" />
+    <MagicEffect EffectId="forceshield_percent">
+      <LoRoll ArmorPercentFloat="7" />
+      <HiRoll ArmorPercentFloat="7" />
     </MagicEffect>
   </Affix>
   <Affix AffixId="implicit_ferocity_amulet" AffixType="default">
@@ -73,7 +73,7 @@
     </DropParams>
     <MagicEffect EffectId="ferocity_pts">
       <LoRoll AttributeFlatInt="10" />
-      <HiRoll AttributeFlatInt="25" />
+      <HiRoll AttributeFlatInt="15" />
     </MagicEffect>
   </Affix>
   <Affix AffixId="implicit_toughness_amulet" AffixType="default">
@@ -84,7 +84,7 @@
     </DropParams>
     <MagicEffect EffectId="toughness_pts">
       <LoRoll AttributeFlatInt="10" />
-      <HiRoll AttributeFlatInt="25" />
+      <HiRoll AttributeFlatInt="15" />
     </MagicEffect>
   </Affix>
   <Affix AffixId="implicit_agility_amulet" AffixType="default">
@@ -95,7 +95,7 @@
     </DropParams>
     <MagicEffect EffectId="agility_pts">
       <LoRoll AttributeFlatInt="10" />
-      <HiRoll AttributeFlatInt="25" />
+      <HiRoll AttributeFlatInt="15" />
     </MagicEffect>
   </Affix>
   <Affix AffixId="implicit_willpower_amulet" AffixType="default">
@@ -106,7 +106,7 @@
     </DropParams>
     <MagicEffect EffectId="willpower_pts">
       <LoRoll AttributeFlatInt="10" />
-      <HiRoll AttributeFlatInt="25" />
+      <HiRoll AttributeFlatInt="15" />
     </MagicEffect>
   </Affix>
   <Affix AffixId="implicit_all_attributes_amulet" AffixType="default">
@@ -116,8 +116,8 @@
       <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
     </DropParams>
     <MagicEffect EffectId="all_attribute_pts">
-      <LoRoll AttributeFlatInt="5" />
-      <HiRoll AttributeFlatInt="20" />
+      <LoRoll AttributeFlatInt="4" />
+      <HiRoll AttributeFlatInt="6" />
     </MagicEffect>
   </Affix>
   <Affix AffixId="implicit_fire_resistance_ring" AffixType="default">
@@ -127,8 +127,8 @@
       <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
     </DropParams>
     <MagicEffect EffectId="fire_resistance_score_percent">
-      <LoRoll CharacteristicScorePercentInt="10" />
-      <HiRoll CharacteristicScorePercentInt="30" />
+      <LoRoll CharacteristicScorePercentInt="15" />
+      <HiRoll CharacteristicScorePercentInt="20" />
     </MagicEffect>
   </Affix>
   <Affix AffixId="implicit_cold_resistance_ring" AffixType="default">
@@ -138,8 +138,8 @@
       <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
     </DropParams>
     <MagicEffect EffectId="frost_resistance_score_percent">
-      <LoRoll CharacteristicScorePercentInt="10" />
-      <HiRoll CharacteristicScorePercentInt="30" />
+      <LoRoll CharacteristicScorePercentInt="15" />
+      <HiRoll CharacteristicScorePercentInt="20" />
     </MagicEffect>
   </Affix>
   <Affix AffixId="implicit_lightning_resistance_ring" AffixType="default">
@@ -149,8 +149,8 @@
       <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
     </DropParams>
     <MagicEffect EffectId="lightning_resistance_score_percent">
-      <LoRoll CharacteristicScorePercentInt="10" />
-      <HiRoll CharacteristicScorePercentInt="30" />
+      <LoRoll CharacteristicScorePercentInt="15" />
+      <HiRoll CharacteristicScorePercentInt="20" />
     </MagicEffect>
   </Affix>
   <Affix AffixId="implicit_toxic_resistance_ring" AffixType="default">
@@ -160,8 +160,8 @@
       <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
     </DropParams>
     <MagicEffect EffectId="toxic_resistance_score_percent">
-      <LoRoll CharacteristicScorePercentInt="10" />
-      <HiRoll CharacteristicScorePercentInt="30" />
+      <LoRoll CharacteristicScorePercentInt="15" />
+      <HiRoll CharacteristicScorePercentInt="20" />
     </MagicEffect>
   </Affix>
   <Affix AffixId="implicit_rend_resistance_ring" AffixType="default">
@@ -171,8 +171,8 @@
       <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
     </DropParams>
     <MagicEffect EffectId="rend_resistance_score_percent">
-      <LoRoll CharacteristicScorePercentInt="10" />
-      <HiRoll CharacteristicScorePercentInt="30" />
+      <LoRoll CharacteristicScorePercentInt="15" />
+      <HiRoll CharacteristicScorePercentInt="20" />
     </MagicEffect>
   </Affix>
   <Affix AffixId="implicit_elemental_resistance_ring" AffixType="default">
@@ -182,8 +182,8 @@
       <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
     </DropParams>
     <MagicEffect EffectId="elemental_resistance_score_percent">
-      <LoRoll CharacteristicScorePercentInt="10" />
-      <HiRoll CharacteristicScorePercentInt="30" />
+      <LoRoll CharacteristicScorePercentInt="15" />
+      <HiRoll CharacteristicScorePercentInt="20" />
     </MagicEffect>
   </Affix>
   <Affix AffixId="implicit_occult_resistance_ring" AffixType="default">
@@ -193,8 +193,8 @@
       <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
     </DropParams>
     <MagicEffect EffectId="occult_resistance_score_percent">
-      <LoRoll CharacteristicScorePercentInt="10" />
-      <HiRoll CharacteristicScorePercentInt="30" />
+      <LoRoll CharacteristicScorePercentInt="15" />
+      <HiRoll CharacteristicScorePercentInt="20" />
     </MagicEffect>
   </Affix>
   <Affix AffixId="implicit_material_resistance_ring" AffixType="default">
@@ -204,8 +204,8 @@
       <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
     </DropParams>
     <MagicEffect EffectId="material_resistance_score_percent">
-      <LoRoll CharacteristicScorePercentInt="10" />
-      <HiRoll CharacteristicScorePercentInt="30" />
+      <LoRoll CharacteristicScorePercentInt="15" />
+      <HiRoll CharacteristicScorePercentInt="20" />
     </MagicEffect>
   </Affix>
   <Affix AffixId="implicit_global_critical_damage_ring" AffixType="default">
@@ -216,7 +216,7 @@
     </DropParams>
     <MagicEffect EffectId="criticaldamage_pts" Tier="1">
       <LoRoll DamagePercentInt="10" />
-      <HiRoll DamagePercentInt="30" />
+      <HiRoll DamagePercentInt="15" />
     </MagicEffect>
   </Affix>
   <Affix AffixId="implicit_dodgechance_score_percent_ring" AffixType="default">
@@ -227,7 +227,7 @@
     </DropParams>
     <MagicEffect EffectId="dodgechance_score_percent" Tier="1">
       <LoRoll CharacteristicScorePercentInt="10" />
-      <HiRoll CharacteristicScorePercentInt="30" />
+      <HiRoll CharacteristicScorePercentInt="15" />
     </MagicEffect>
   </Affix>
   <Affix AffixId="implicit_life_ring" AffixType="default">
@@ -236,9 +236,9 @@
       <Keywords MandatoryKeywords="ring" />
       <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
     </DropParams>
-    <MagicEffect EffectId="health_pts">
-      <LoRoll HealthFlatInt="30" />
-      <HiRoll HealthFlatInt="60" />
+    <MagicEffect EffectId="health_percent">
+      <LoRoll HealthPercentInt="5" />
+      <HiRoll HealthPercentInt="5" />
     </MagicEffect>
   </Affix>
   <Affix AffixId="implicit_forceshield_ring" Class="default" AffixType="default">
@@ -247,9 +247,9 @@
       <Keywords MandatoryKeywords="belt" />
       <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
     </DropParams>
-    <MagicEffect EffectId="forceshield_pts">
-      <LoRoll ArmorFlatInt="30" />
-      <HiRoll ArmorFlatInt="60" />
+    <MagicEffect EffectId="forceshield_percent">
+      <LoRoll ArmorPercentFloat="5" />
+      <HiRoll ArmorPercentFloat="5" />
     </MagicEffect>
   </Affix>
   <Affix AffixId="implicit_rage_conservation" AffixType="default">
@@ -259,7 +259,7 @@
       <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
     </DropParams>
     <MagicEffect EffectId="rage_conservation_time">
-      <LoRoll DurationFlatInt="2" />
+      <LoRoll DurationFlatInt="3" />
       <HiRoll DurationFlatInt="5" />
     </MagicEffect>
   </Affix>
@@ -304,7 +304,7 @@
     </DropParams>
     <MagicEffect EffectId="movespeed">
       <LoRoll SpeedPercentInt="5" />
-      <HiRoll SpeedPercentInt="10" />
+      <HiRoll SpeedPercentInt="8" />
     </MagicEffect>
   </Affix>
   <Affix AffixId="implicit_blockchance_unconditional_flat" AffixType="default">
@@ -326,7 +326,7 @@
     </DropParams>
     <MagicEffect EffectId="agility_pts">
       <LoRoll AttributeFlatInt="2" />
-      <HiRoll AttributeFlatInt="5" />
+      <HiRoll AttributeFlatInt="3" />
     </MagicEffect>
   </Affix>
   <Affix AffixId="implicit_ferocity_armor_1" AffixType="default">
@@ -337,7 +337,7 @@
     </DropParams>
     <MagicEffect EffectId="ferocity_pts">
       <LoRoll AttributeFlatInt="2" />
-      <HiRoll AttributeFlatInt="5" />
+      <HiRoll AttributeFlatInt="3" />
     </MagicEffect>
   </Affix>
   <Affix AffixId="implicit_toughness_armor_1" AffixType="default">
@@ -348,7 +348,7 @@
     </DropParams>
     <MagicEffect EffectId="toughness_pts">
       <LoRoll AttributeFlatInt="2" />
-      <HiRoll AttributeFlatInt="5" />
+      <HiRoll AttributeFlatInt="3" />
     </MagicEffect>
   </Affix>
   <Affix AffixId="implicit_willpower_armor_1" AffixType="default">
@@ -359,7 +359,7 @@
     </DropParams>
     <MagicEffect EffectId="willpower_pts">
       <LoRoll AttributeFlatInt="2" />
-      <HiRoll AttributeFlatInt="5" />
+      <HiRoll AttributeFlatInt="3" />
     </MagicEffect>
   </Affix>
   <Affix AffixId="implicit_agility_armor_2" AffixType="default">
@@ -369,8 +369,8 @@
       <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
     </DropParams>
     <MagicEffect EffectId="agility_pts">
-      <LoRoll AttributeFlatInt="3" />
-      <HiRoll AttributeFlatInt="6" />
+      <LoRoll AttributeFlatInt="2" />
+      <HiRoll AttributeFlatInt="3" />
     </MagicEffect>
   </Affix>
   <Affix AffixId="implicit_ferocity_armor_2" AffixType="default">
@@ -380,8 +380,8 @@
       <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
     </DropParams>
     <MagicEffect EffectId="ferocity_pts">
-      <LoRoll AttributeFlatInt="3" />
-      <HiRoll AttributeFlatInt="6" />
+      <LoRoll AttributeFlatInt="2" />
+      <HiRoll AttributeFlatInt="3" />
     </MagicEffect>
   </Affix>
   <Affix AffixId="implicit_toughness_armor_2" AffixType="default">
@@ -391,8 +391,8 @@
       <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
     </DropParams>
     <MagicEffect EffectId="toughness_pts">
-      <LoRoll AttributeFlatInt="3" />
-      <HiRoll AttributeFlatInt="6" />
+      <LoRoll AttributeFlatInt="2" />
+      <HiRoll AttributeFlatInt="3" />
     </MagicEffect>
   </Affix>
   <Affix AffixId="implicit_willpower_armor_2" AffixType="default">
@@ -402,8 +402,8 @@
       <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
     </DropParams>
     <MagicEffect EffectId="willpower_pts">
-      <LoRoll AttributeFlatInt="3" />
-      <HiRoll AttributeFlatInt="6" />
+      <LoRoll AttributeFlatInt="2" />
+      <HiRoll AttributeFlatInt="3" />
     </MagicEffect>
   </Affix>
   <Affix AffixId="implicit_agility_armor_3" AffixType="default">
@@ -413,8 +413,8 @@
       <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
     </DropParams>
     <MagicEffect EffectId="agility_pts">
-      <LoRoll AttributeFlatInt="4" />
-      <HiRoll AttributeFlatInt="7" />
+      <LoRoll AttributeFlatInt="3" />
+      <HiRoll AttributeFlatInt="4" />
     </MagicEffect>
   </Affix>
   <Affix AffixId="implicit_ferocity_armor_3" AffixType="default">
@@ -424,8 +424,8 @@
       <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
     </DropParams>
     <MagicEffect EffectId="ferocity_pts">
-      <LoRoll AttributeFlatInt="4" />
-      <HiRoll AttributeFlatInt="7" />
+      <LoRoll AttributeFlatInt="3" />
+      <HiRoll AttributeFlatInt="4" />
     </MagicEffect>
   </Affix>
   <Affix AffixId="implicit_toughness_armor_3" AffixType="default">
@@ -435,8 +435,8 @@
       <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
     </DropParams>
     <MagicEffect EffectId="toughness_pts">
-      <LoRoll AttributeFlatInt="4" />
-      <HiRoll AttributeFlatInt="7" />
+      <LoRoll AttributeFlatInt="3" />
+      <HiRoll AttributeFlatInt="4" />
     </MagicEffect>
   </Affix>
   <Affix AffixId="implicit_willpower_armor_3" AffixType="default">
@@ -446,8 +446,8 @@
       <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
     </DropParams>
     <MagicEffect EffectId="willpower_pts">
-      <LoRoll AttributeFlatInt="4" />
-      <HiRoll AttributeFlatInt="7" />
+      <LoRoll AttributeFlatInt="3" />
+      <HiRoll AttributeFlatInt="4" />
     </MagicEffect>
   </Affix>
   <Affix AffixId="implicit_agility_armor_4" AffixType="default">
@@ -457,8 +457,8 @@
       <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
     </DropParams>
     <MagicEffect EffectId="agility_pts">
-      <LoRoll AttributeFlatInt="5" />
-      <HiRoll AttributeFlatInt="8" />
+      <LoRoll AttributeFlatInt="3" />
+      <HiRoll AttributeFlatInt="4" />
     </MagicEffect>
   </Affix>
   <Affix AffixId="implicit_ferocity_armor_4" AffixType="default">
@@ -468,8 +468,8 @@
       <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
     </DropParams>
     <MagicEffect EffectId="ferocity_pts">
-      <LoRoll AttributeFlatInt="5" />
-      <HiRoll AttributeFlatInt="8" />
+      <LoRoll AttributeFlatInt="3" />
+      <HiRoll AttributeFlatInt="4" />
     </MagicEffect>
   </Affix>
   <Affix AffixId="implicit_toughness_armor_4" AffixType="default">
@@ -479,8 +479,8 @@
       <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
     </DropParams>
     <MagicEffect EffectId="toughness_pts">
-      <LoRoll AttributeFlatInt="5" />
-      <HiRoll AttributeFlatInt="8" />
+      <LoRoll AttributeFlatInt="3" />
+      <HiRoll AttributeFlatInt="4" />
     </MagicEffect>
   </Affix>
   <Affix AffixId="implicit_willpower_armor_4" AffixType="default">
@@ -490,8 +490,8 @@
       <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
     </DropParams>
     <MagicEffect EffectId="willpower_pts">
-      <LoRoll AttributeFlatInt="5" />
-      <HiRoll AttributeFlatInt="8" />
+      <LoRoll AttributeFlatInt="3" />
+      <HiRoll AttributeFlatInt="4" />
     </MagicEffect>
   </Affix>
   <Affix AffixId="implicit_agility_armor_5" AffixType="default">
@@ -501,8 +501,8 @@
       <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
     </DropParams>
     <MagicEffect EffectId="agility_pts">
-      <LoRoll AttributeFlatInt="6" />
-      <HiRoll AttributeFlatInt="9" />
+      <LoRoll AttributeFlatInt="4" />
+      <HiRoll AttributeFlatInt="5" />
     </MagicEffect>
   </Affix>
   <Affix AffixId="implicit_ferocity_armor_5" AffixType="default">
@@ -512,8 +512,8 @@
       <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
     </DropParams>
     <MagicEffect EffectId="ferocity_pts">
-      <LoRoll AttributeFlatInt="6" />
-      <HiRoll AttributeFlatInt="9" />
+      <LoRoll AttributeFlatInt="4" />
+      <HiRoll AttributeFlatInt="5" />
     </MagicEffect>
   </Affix>
   <Affix AffixId="implicit_toughness_armor_5" AffixType="default">
@@ -523,8 +523,8 @@
       <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
     </DropParams>
     <MagicEffect EffectId="toughness_pts">
-      <LoRoll AttributeFlatInt="6" />
-      <HiRoll AttributeFlatInt="9" />
+      <LoRoll AttributeFlatInt="4" />
+      <HiRoll AttributeFlatInt="5" />
     </MagicEffect>
   </Affix>
   <Affix AffixId="implicit_willpower_armor_5" AffixType="default">
@@ -534,8 +534,8 @@
       <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
     </DropParams>
     <MagicEffect EffectId="willpower_pts">
-      <LoRoll AttributeFlatInt="6" />
-      <HiRoll AttributeFlatInt="9" />
+      <LoRoll AttributeFlatInt="4" />
+      <HiRoll AttributeFlatInt="5" />
     </MagicEffect>
   </Affix>
   <Affix AffixId="implicit_agility_armor_6" AffixType="default">
@@ -545,8 +545,8 @@
       <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
     </DropParams>
     <MagicEffect EffectId="agility_pts">
-      <LoRoll AttributeFlatInt="7" />
-      <HiRoll AttributeFlatInt="10" />
+      <LoRoll AttributeFlatInt="4" />
+      <HiRoll AttributeFlatInt="5" />
     </MagicEffect>
   </Affix>
   <Affix AffixId="implicit_ferocity_armor_6" AffixType="default">
@@ -556,8 +556,8 @@
       <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
     </DropParams>
     <MagicEffect EffectId="ferocity_pts">
-      <LoRoll AttributeFlatInt="7" />
-      <HiRoll AttributeFlatInt="10" />
+      <LoRoll AttributeFlatInt="4" />
+      <HiRoll AttributeFlatInt="5" />
     </MagicEffect>
   </Affix>
   <Affix AffixId="implicit_toughness_armor_6" AffixType="default">
@@ -567,8 +567,8 @@
       <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
     </DropParams>
     <MagicEffect EffectId="toughness_pts">
-      <LoRoll AttributeFlatInt="7" />
-      <HiRoll AttributeFlatInt="10" />
+      <LoRoll AttributeFlatInt="4" />
+      <HiRoll AttributeFlatInt="5" />
     </MagicEffect>
   </Affix>
   <Affix AffixId="implicit_willpower_armor_6" AffixType="default">
@@ -578,8 +578,8 @@
       <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
     </DropParams>
     <MagicEffect EffectId="willpower_pts">
-      <LoRoll AttributeFlatInt="7" />
-      <HiRoll AttributeFlatInt="10" />
+      <LoRoll AttributeFlatInt="4" />
+      <HiRoll AttributeFlatInt="5" />
     </MagicEffect>
   </Affix>
   <Affix AffixId="implicit_agility_armor_7" AffixType="default">
@@ -589,8 +589,8 @@
       <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
     </DropParams>
     <MagicEffect EffectId="agility_pts">
-      <LoRoll AttributeFlatInt="8" />
-      <HiRoll AttributeFlatInt="11" />
+      <LoRoll AttributeFlatInt="5" />
+      <HiRoll AttributeFlatInt="6" />
     </MagicEffect>
   </Affix>
   <Affix AffixId="implicit_ferocity_armor_7" AffixType="default">
@@ -600,8 +600,8 @@
       <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
     </DropParams>
     <MagicEffect EffectId="ferocity_pts">
-      <LoRoll AttributeFlatInt="8" />
-      <HiRoll AttributeFlatInt="11" />
+      <LoRoll AttributeFlatInt="5" />
+      <HiRoll AttributeFlatInt="6" />
     </MagicEffect>
   </Affix>
   <Affix AffixId="implicit_toughness_armor_7" AffixType="default">
@@ -611,8 +611,8 @@
       <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
     </DropParams>
     <MagicEffect EffectId="toughness_pts">
-      <LoRoll AttributeFlatInt="8" />
-      <HiRoll AttributeFlatInt="11" />
+      <LoRoll AttributeFlatInt="5" />
+      <HiRoll AttributeFlatInt="6" />
     </MagicEffect>
   </Affix>
   <Affix AffixId="implicit_willpower_armor_7" AffixType="default">
@@ -622,8 +622,8 @@
       <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
     </DropParams>
     <MagicEffect EffectId="willpower_pts">
-      <LoRoll AttributeFlatInt="8" />
-      <HiRoll AttributeFlatInt="11" />
+      <LoRoll AttributeFlatInt="5" />
+      <HiRoll AttributeFlatInt="6" />
     </MagicEffect>
   </Affix>
   <Affix AffixId="implicit_agility_armor_8" AffixType="default">
@@ -633,8 +633,8 @@
       <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
     </DropParams>
     <MagicEffect EffectId="agility_pts">
-      <LoRoll AttributeFlatInt="9" />
-      <HiRoll AttributeFlatInt="12" />
+      <LoRoll AttributeFlatInt="5" />
+      <HiRoll AttributeFlatInt="6" />
     </MagicEffect>
   </Affix>
   <Affix AffixId="implicit_ferocity_armor_8" AffixType="default">
@@ -644,8 +644,8 @@
       <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
     </DropParams>
     <MagicEffect EffectId="ferocity_pts">
-      <LoRoll AttributeFlatInt="9" />
-      <HiRoll AttributeFlatInt="12" />
+      <LoRoll AttributeFlatInt="5" />
+      <HiRoll AttributeFlatInt="6" />
     </MagicEffect>
   </Affix>
   <Affix AffixId="implicit_toughness_armor_8" AffixType="default">
@@ -655,8 +655,8 @@
       <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
     </DropParams>
     <MagicEffect EffectId="toughness_pts">
-      <LoRoll AttributeFlatInt="9" />
-      <HiRoll AttributeFlatInt="12" />
+      <LoRoll AttributeFlatInt="5" />
+      <HiRoll AttributeFlatInt="6" />
     </MagicEffect>
   </Affix>
   <Affix AffixId="implicit_willpower_armor_8" AffixType="default">
@@ -666,8 +666,8 @@
       <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
     </DropParams>
     <MagicEffect EffectId="willpower_pts">
-      <LoRoll AttributeFlatInt="9" />
-      <HiRoll AttributeFlatInt="12" />
+      <LoRoll AttributeFlatInt="5" />
+      <HiRoll AttributeFlatInt="6" />
     </MagicEffect>
   </Affix>
   <Affix AffixId="implicit_agility_armor_9" AffixType="default">
@@ -677,8 +677,8 @@
       <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
     </DropParams>
     <MagicEffect EffectId="agility_pts">
-      <LoRoll AttributeFlatInt="10" />
-      <HiRoll AttributeFlatInt="13" />
+      <LoRoll AttributeFlatInt="6" />
+      <HiRoll AttributeFlatInt="7" />
     </MagicEffect>
   </Affix>
   <Affix AffixId="implicit_ferocity_armor_9" AffixType="default">
@@ -688,8 +688,8 @@
       <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
     </DropParams>
     <MagicEffect EffectId="ferocity_pts">
-      <LoRoll AttributeFlatInt="10" />
-      <HiRoll AttributeFlatInt="13" />
+      <LoRoll AttributeFlatInt="6" />
+      <HiRoll AttributeFlatInt="7" />
     </MagicEffect>
   </Affix>
   <Affix AffixId="implicit_toughness_armor_9" AffixType="default">
@@ -699,8 +699,8 @@
       <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
     </DropParams>
     <MagicEffect EffectId="toughness_pts">
-      <LoRoll AttributeFlatInt="10" />
-      <HiRoll AttributeFlatInt="13" />
+      <LoRoll AttributeFlatInt="6" />
+      <HiRoll AttributeFlatInt="7" />
     </MagicEffect>
   </Affix>
   <Affix AffixId="implicit_willpower_armor_9" AffixType="default">
@@ -710,8 +710,8 @@
       <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
     </DropParams>
     <MagicEffect EffectId="willpower_pts">
-      <LoRoll AttributeFlatInt="10" />
-      <HiRoll AttributeFlatInt="13" />
+      <LoRoll AttributeFlatInt="6" />
+      <HiRoll AttributeFlatInt="7" />
     </MagicEffect>
   </Affix>
   <Affix AffixId="implicit_agility_armor_10" AffixType="default">
@@ -721,8 +721,8 @@
       <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
     </DropParams>
     <MagicEffect EffectId="agility_pts">
-      <LoRoll AttributeFlatInt="11" />
-      <HiRoll AttributeFlatInt="14" />
+      <LoRoll AttributeFlatInt="6" />
+      <HiRoll AttributeFlatInt="7" />
     </MagicEffect>
   </Affix>
   <Affix AffixId="implicit_ferocity_armor_10" AffixType="default">
@@ -732,8 +732,8 @@
       <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
     </DropParams>
     <MagicEffect EffectId="ferocity_pts">
-      <LoRoll AttributeFlatInt="11" />
-      <HiRoll AttributeFlatInt="14" />
+      <LoRoll AttributeFlatInt="6" />
+      <HiRoll AttributeFlatInt="7" />
     </MagicEffect>
   </Affix>
   <Affix AffixId="implicit_toughness_armor_10" AffixType="default">
@@ -743,8 +743,8 @@
       <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
     </DropParams>
     <MagicEffect EffectId="toughness_pts">
-      <LoRoll AttributeFlatInt="11" />
-      <HiRoll AttributeFlatInt="14" />
+      <LoRoll AttributeFlatInt="6" />
+      <HiRoll AttributeFlatInt="7" />
     </MagicEffect>
   </Affix>
   <Affix AffixId="implicit_willpower_armor_10" AffixType="default">
@@ -754,8 +754,8 @@
       <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
     </DropParams>
     <MagicEffect EffectId="willpower_pts">
-      <LoRoll AttributeFlatInt="11" />
-      <HiRoll AttributeFlatInt="14" />
+      <LoRoll AttributeFlatInt="6" />
+      <HiRoll AttributeFlatInt="7" />
     </MagicEffect>
   </Affix>
   <Affix AffixId="implicit_agility_armor_11" AffixType="default">
@@ -765,8 +765,8 @@
       <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
     </DropParams>
     <MagicEffect EffectId="agility_pts">
-      <LoRoll AttributeFlatInt="12" />
-      <HiRoll AttributeFlatInt="15" />
+      <LoRoll AttributeFlatInt="7" />
+      <HiRoll AttributeFlatInt="8" />
     </MagicEffect>
   </Affix>
   <Affix AffixId="implicit_ferocity_armor_11" AffixType="default">
@@ -776,8 +776,8 @@
       <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
     </DropParams>
     <MagicEffect EffectId="ferocity_pts">
-      <LoRoll AttributeFlatInt="12" />
-      <HiRoll AttributeFlatInt="15" />
+      <LoRoll AttributeFlatInt="7" />
+      <HiRoll AttributeFlatInt="8" />
     </MagicEffect>
   </Affix>
   <Affix AffixId="implicit_toughness_armor_11" AffixType="default">
@@ -787,8 +787,8 @@
       <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
     </DropParams>
     <MagicEffect EffectId="toughness_pts">
-      <LoRoll AttributeFlatInt="12" />
-      <HiRoll AttributeFlatInt="15" />
+      <LoRoll AttributeFlatInt="7" />
+      <HiRoll AttributeFlatInt="8" />
     </MagicEffect>
   </Affix>
   <Affix AffixId="implicit_willpower_armor_11" AffixType="default">
@@ -798,8 +798,8 @@
       <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
     </DropParams>
     <MagicEffect EffectId="willpower_pts">
-      <LoRoll AttributeFlatInt="12" />
-      <HiRoll AttributeFlatInt="15" />
+      <LoRoll AttributeFlatInt="7" />
+      <HiRoll AttributeFlatInt="8" />
     </MagicEffect>
   </Affix>
   <Affix AffixId="implicit_agility_armor_12" AffixType="default">
@@ -809,8 +809,8 @@
       <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
     </DropParams>
     <MagicEffect EffectId="agility_pts">
-      <LoRoll AttributeFlatInt="13" />
-      <HiRoll AttributeFlatInt="16" />
+      <LoRoll AttributeFlatInt="7" />
+      <HiRoll AttributeFlatInt="8" />
     </MagicEffect>
   </Affix>
   <Affix AffixId="implicit_ferocity_armor_12" AffixType="default">
@@ -820,8 +820,8 @@
       <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
     </DropParams>
     <MagicEffect EffectId="ferocity_pts">
-      <LoRoll AttributeFlatInt="13" />
-      <HiRoll AttributeFlatInt="16" />
+      <LoRoll AttributeFlatInt="7" />
+      <HiRoll AttributeFlatInt="8" />
     </MagicEffect>
   </Affix>
   <Affix AffixId="implicit_toughness_armor_12" AffixType="default">
@@ -831,8 +831,8 @@
       <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
     </DropParams>
     <MagicEffect EffectId="toughness_pts">
-      <LoRoll AttributeFlatInt="13" />
-      <HiRoll AttributeFlatInt="16" />
+      <LoRoll AttributeFlatInt="7" />
+      <HiRoll AttributeFlatInt="8" />
     </MagicEffect>
   </Affix>
   <Affix AffixId="implicit_willpower_armor_12" AffixType="default">
@@ -842,8 +842,8 @@
       <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
     </DropParams>
     <MagicEffect EffectId="willpower_pts">
-      <LoRoll AttributeFlatInt="13" />
-      <HiRoll AttributeFlatInt="16" />
+      <LoRoll AttributeFlatInt="7" />
+      <HiRoll AttributeFlatInt="8" />
     </MagicEffect>
   </Affix>
   <Affix AffixId="implicit_agility_armor_13" AffixType="default">
@@ -853,8 +853,8 @@
       <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
     </DropParams>
     <MagicEffect EffectId="agility_pts">
-      <LoRoll AttributeFlatInt="14" />
-      <HiRoll AttributeFlatInt="17" />
+      <LoRoll AttributeFlatInt="8" />
+      <HiRoll AttributeFlatInt="9" />
     </MagicEffect>
   </Affix>
   <Affix AffixId="implicit_ferocity_armor_13" AffixType="default">
@@ -864,8 +864,8 @@
       <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
     </DropParams>
     <MagicEffect EffectId="ferocity_pts">
-      <LoRoll AttributeFlatInt="14" />
-      <HiRoll AttributeFlatInt="17" />
+      <LoRoll AttributeFlatInt="8" />
+      <HiRoll AttributeFlatInt="9" />
     </MagicEffect>
   </Affix>
   <Affix AffixId="implicit_toughness_armor_13" AffixType="default">
@@ -875,8 +875,8 @@
       <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
     </DropParams>
     <MagicEffect EffectId="toughness_pts">
-      <LoRoll AttributeFlatInt="14" />
-      <HiRoll AttributeFlatInt="17" />
+      <LoRoll AttributeFlatInt="8" />
+      <HiRoll AttributeFlatInt="9" />
     </MagicEffect>
   </Affix>
   <Affix AffixId="implicit_willpower_armor_13" AffixType="default">
@@ -886,8 +886,8 @@
       <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
     </DropParams>
     <MagicEffect EffectId="willpower_pts">
-      <LoRoll AttributeFlatInt="14" />
-      <HiRoll AttributeFlatInt="17" />
+      <LoRoll AttributeFlatInt="8" />
+      <HiRoll AttributeFlatInt="9" />
     </MagicEffect>
   </Affix>
   <Affix AffixId="implicit_agility_armor_14" AffixType="default">
@@ -897,8 +897,8 @@
       <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
     </DropParams>
     <MagicEffect EffectId="agility_pts">
-      <LoRoll AttributeFlatInt="15" />
-      <HiRoll AttributeFlatInt="18" />
+      <LoRoll AttributeFlatInt="8" />
+      <HiRoll AttributeFlatInt="9" />
     </MagicEffect>
   </Affix>
   <Affix AffixId="implicit_ferocity_armor_14" AffixType="default">
@@ -908,8 +908,8 @@
       <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
     </DropParams>
     <MagicEffect EffectId="ferocity_pts">
-      <LoRoll AttributeFlatInt="15" />
-      <HiRoll AttributeFlatInt="18" />
+      <LoRoll AttributeFlatInt="8" />
+      <HiRoll AttributeFlatInt="9" />
     </MagicEffect>
   </Affix>
   <Affix AffixId="implicit_toughness_armor_14" AffixType="default">
@@ -919,8 +919,8 @@
       <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
     </DropParams>
     <MagicEffect EffectId="toughness_pts">
-      <LoRoll AttributeFlatInt="15" />
-      <HiRoll AttributeFlatInt="18" />
+      <LoRoll AttributeFlatInt="8" />
+      <HiRoll AttributeFlatInt="9" />
     </MagicEffect>
   </Affix>
   <Affix AffixId="implicit_willpower_armor_14" AffixType="default">
@@ -930,8 +930,8 @@
       <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
     </DropParams>
     <MagicEffect EffectId="willpower_pts">
-      <LoRoll AttributeFlatInt="15" />
-      <HiRoll AttributeFlatInt="18" />
+      <LoRoll AttributeFlatInt="8" />
+      <HiRoll AttributeFlatInt="9" />
     </MagicEffect>
   </Affix>
   <Affix AffixId="implicit_agility_armor_15" AffixType="default">
@@ -941,8 +941,8 @@
       <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
     </DropParams>
     <MagicEffect EffectId="agility_pts">
-      <LoRoll AttributeFlatInt="16" />
-      <HiRoll AttributeFlatInt="19" />
+      <LoRoll AttributeFlatInt="9" />
+      <HiRoll AttributeFlatInt="10" />
     </MagicEffect>
   </Affix>
   <Affix AffixId="implicit_ferocity_armor_15" AffixType="default">
@@ -952,8 +952,8 @@
       <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
     </DropParams>
     <MagicEffect EffectId="ferocity_pts">
-      <LoRoll AttributeFlatInt="16" />
-      <HiRoll AttributeFlatInt="19" />
+      <LoRoll AttributeFlatInt="9" />
+      <HiRoll AttributeFlatInt="10" />
     </MagicEffect>
   </Affix>
   <Affix AffixId="implicit_toughness_armor_15" AffixType="default">
@@ -963,8 +963,8 @@
       <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
     </DropParams>
     <MagicEffect EffectId="toughness_pts">
-      <LoRoll AttributeFlatInt="16" />
-      <HiRoll AttributeFlatInt="19" />
+      <LoRoll AttributeFlatInt="9" />
+      <HiRoll AttributeFlatInt="10" />
     </MagicEffect>
   </Affix>
   <Affix AffixId="implicit_willpower_armor_15" AffixType="default">
@@ -974,8 +974,8 @@
       <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
     </DropParams>
     <MagicEffect EffectId="willpower_pts">
-      <LoRoll AttributeFlatInt="16" />
-      <HiRoll AttributeFlatInt="19" />
+      <LoRoll AttributeFlatInt="9" />
+      <HiRoll AttributeFlatInt="10" />
     </MagicEffect>
   </Affix>
   <Affix AffixId="implicit_agility_armor_16" AffixType="default">
@@ -985,8 +985,8 @@
       <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
     </DropParams>
     <MagicEffect EffectId="agility_pts">
-      <LoRoll AttributeFlatInt="17" />
-      <HiRoll AttributeFlatInt="20" />
+      <LoRoll AttributeFlatInt="9" />
+      <HiRoll AttributeFlatInt="10" />
     </MagicEffect>
   </Affix>
   <Affix AffixId="implicit_ferocity_armor_16" AffixType="default">
@@ -996,8 +996,8 @@
       <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
     </DropParams>
     <MagicEffect EffectId="ferocity_pts">
-      <LoRoll AttributeFlatInt="17" />
-      <HiRoll AttributeFlatInt="20" />
+      <LoRoll AttributeFlatInt="9" />
+      <HiRoll AttributeFlatInt="10" />
     </MagicEffect>
   </Affix>
   <Affix AffixId="implicit_toughness_armor_16" AffixType="default">
@@ -1007,8 +1007,8 @@
       <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
     </DropParams>
     <MagicEffect EffectId="toughness_pts">
-      <LoRoll AttributeFlatInt="17" />
-      <HiRoll AttributeFlatInt="20" />
+      <LoRoll AttributeFlatInt="9" />
+      <HiRoll AttributeFlatInt="10" />
     </MagicEffect>
   </Affix>
   <Affix AffixId="implicit_willpower_armor_16" AffixType="default">
@@ -1018,8 +1018,8 @@
       <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
     </DropParams>
     <MagicEffect EffectId="willpower_pts">
-      <LoRoll AttributeFlatInt="17" />
-      <HiRoll AttributeFlatInt="20" />
+      <LoRoll AttributeFlatInt="9" />
+      <HiRoll AttributeFlatInt="10" />
     </MagicEffect>
   </Affix>
   <Affix AffixId="attackspeed_final_percent_2H" AffixType="default">
@@ -1028,9 +1028,9 @@
       <Keywords />
       <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
     </DropParams>
-    <MagicEffect EffectId="attackspeed_final_percent">
-      <LoRoll CharacteristicFinalPercentInt="-25" />
-      <HiRoll CharacteristicFinalPercentInt="-25" />
+    <MagicEffect EffectId="offensivespeed_major">
+      <LoRoll MajorMultiplierFloat="0.75" />
+      <HiRoll MajorMultiplierFloat="0.75" />
     </MagicEffect>
   </Affix>
   <Affix AffixId="local_damage_2h" AffixType="default">
@@ -1053,6 +1053,72 @@
     <MagicEffect EffectId="default_attacks_chain">
       <LoRoll RadiusFloat="10" StackCountInt="2" />
       <HiRoll RadiusFloat="10" StackCountInt="2" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="implicit_block_efficiency_flat_dualwielding" AffixType="default">
+    <DropParams Frequency="1">
+      <ItemLevel LevelMin="1" LevelMax="200" />
+      <Keywords />
+      <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
+    </DropParams>
+    <MagicEffect EffectId="block_efficiency_flat_dualwielding">
+      <LoRoll ResourcePercentFloat="5" />
+      <HiRoll ResourcePercentFloat="5" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="implicit_crit_damage_percent_dualwielding" AffixType="default">
+    <DropParams Frequency="1">
+      <ItemLevel LevelMin="1" LevelMax="200" />
+      <Keywords />
+      <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
+    </DropParams>
+    <MagicEffect EffectId="crit_damage_dualwielding">
+      <LoRoll DamagePercentFloat="15" />
+      <HiRoll DamagePercentFloat="15" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="implicit_crit_chance_score_percent_dualwielding" AffixType="default">
+    <DropParams Frequency="1">
+      <ItemLevel LevelMin="1" LevelMax="200" />
+      <Keywords />
+      <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
+    </DropParams>
+    <MagicEffect EffectId="crit_chance_score_percent_dualwielding">
+      <LoRoll CharacteristicScorePercentInt="20" />
+      <HiRoll CharacteristicScorePercentInt="20" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="implicit_ailment_chance_score_percent_dualwielding" AffixType="default">
+    <DropParams Frequency="1">
+      <ItemLevel LevelMin="1" LevelMax="200" />
+      <Keywords />
+      <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
+    </DropParams>
+    <MagicEffect EffectId="ailment_chance_score_percent_dualwielding">
+      <LoRoll CharacteristicScorePercentInt="20" />
+      <HiRoll CharacteristicScorePercentInt="20" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="implicit_ailment_damage_dualwielding" AffixType="default">
+    <DropParams Frequency="1">
+      <ItemLevel LevelMin="1" LevelMax="200" />
+      <Keywords />
+      <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
+    </DropParams>
+    <MagicEffect EffectId="ailment_damage_dualwielding">
+      <LoRoll DamagePercentFloat="15" />
+      <HiRoll DamagePercentFloat="15" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="implicit_offensive_speed_dualwielding" AffixType="default">
+    <DropParams Frequency="1">
+      <ItemLevel LevelMin="1" LevelMax="200" />
+      <Keywords />
+      <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
+    </DropParams>
+    <MagicEffect EffectId="offensivespeed_major_dual_wielding">
+      <LoRoll MajorMultiplierFloat="1.05" />
+      <HiRoll MajorMultiplierFloat="1.05" />
     </MagicEffect>
   </Affix>
 </MetaData>

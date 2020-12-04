@@ -6,7 +6,7 @@
     <Range AttackRange="8" />
     <HUD HUDPicture="../u_resources/spells/Active_Skills/deathmark.png" UIName="@ui_AST_DeathMark" Lore="@ui_AST_DeathMark_Lore" ActiveEffectTitle="" ActiveEffectDesc="" ShowParamsInAST="Cost,ROSTime,Cooldown,Range,Slow,SpecificDeathMark" ShowParamsInTooltip="Cost,Cooldown,Slow,SpecificDeathMark" />
     <Enneract PickableParticle_MoveToGround="U_CommonVFX_02.Esseract.Esseract_Projectile.Nutral" PickableParticle_OnGround_Shape="U_CommonVFX_02.Esseract.Esseract_Shape.Circle_Nutral" PickableParticle_OnGround_Damage="U_CommonVFX_02.Esseract.Esseract_Color.Nutral" PickableParticle_OnGround_Symbol="U_CommonVFX_02.Esseract.Esseract_Symbol.SARISEL" PickableParticle_OnGround_Indicator="U_CommonVFX_02.Esseract.Esseract_Indicator.Nutral" PickableParticle_OnGround_Pickup="U_CommonVFX_02.Esseract.Esseract_Loot.Nutral" SkillLearningParticle="U_CommonVFX.Skill_Learn.Skill_Learn_Physical" Inventory_HUDPicture="../u_resources/enneracts/deathmark.png" Inventory_LoreDesc="@ui_enneract_lore" />
-    <DamageWeapon PercentMin="25" PercentMax="25" />
+    <DamageWeapon WeaponMultiplier=".25" />
     <ParticleList>
       <Particle Key="PlayerAura" Name="U_Buff.Debuff.Death_Mark_White_aura" Bone="Bip01 Spine2" Direction="0,0,1" />
     </ParticleList>
@@ -18,6 +18,9 @@
     <Mark PropagationChance="0" />
     <ResourceCost RageCost="-125" ROSTransfertDuration="1.0" RageCostPerLevel="0" />
     <Specific_DeathMark CastPlayerSound="Play_Skill_DeathMark_Cast" EnemyHitSound="Play_Skill_DeathMark_Enemy" OnSpreadHitSound="Play_Skill_DeathMark_Transfer" />
+  </Skill>
+  <Skill UID="player_deathmark_variant_default_damage_type" ESkill="default_variant">
+    <HUD UIName="@ui_AST_DeathMark" Lore="@ui_AST_DeathMark_Lore" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_Alpha.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_Alpha.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_Alpha.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_Alpha.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_Alpha.png" HUDPictureVariant_InnerIcon="../u_resources/spells/Active_Skills/deathmark.png" VariantBottomPanel="1" />
   </Skill>
   <Skill UID="player_deathmark_step_1" ESkill="default_variant">
     <HUD UIName="@ui_Variant_DeathMark_variant_1" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_001.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_001.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_001.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_001.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_001.png" ShowParamsInTooltip="SpecificDeathMark" />
@@ -35,7 +38,9 @@
   </Skill>
   <Skill UID="player_deathmark_step_4" ESkill="default_variant">
     <HUD UIName="@ui_Variant_DeathMark_variant_4" Lore="@ui_Variant_DeathMark_variant_4_Lore" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_005.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_005.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_005.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_005.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_005.png" ShowParamsInTooltip="SpecificDeathMark" />
-    <SecondarySkillToCast UID="player_deathmark_explosion" />
+    <SecondarySkillToCast>
+      <Entry Key="Default" UID="player_deathmark_explosion" />
+    </SecondarySkillToCast>
   </Skill>
   <Skill UID="player_deathmark_step_5" ESkill="default_variant">
     <HUD UIName="@ui_Variant_DeathMark_variant_5" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_001.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_001.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_001.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_001.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_001.png" ShowParamsInTooltip="SpecificDeathMark" />

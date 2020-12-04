@@ -1,0 +1,30 @@
+<MetaData>
+  <Reward Name="expert_forge_reward_0" UITitle="@ui_pillager_armor_reward" UILore="@ui_pillager_armor_reward_lore">
+    <CustomMessages>
+      <Message UIDesc="@ui_pillager_armor_summary" />
+    </CustomMessages>
+    <Cosmetics>
+      <Cosmetic Name="u_Pillager_Helmet" Weapon="0" />
+      <Cosmetic Name="u_Pillager_Arm" Weapon="0" />
+      <Cosmetic Name="u_Pillager_Chest" Weapon="0" />
+      <Cosmetic Name="u_Pillager_Shoulder" Weapon="0" />
+      <Cosmetic Name="u_Pillager_Pant" Weapon="0" />
+      <Cosmetic Name="u_Pillager_Boots" Weapon="0" />
+    </Cosmetics>
+    <ContextualSoundTrigger ToPlay="Endgame_ExpertForge_FinishProject_Pillager" ToResume="EndgameIdle" />
+  </Reward>
+  <Reward Name="expert_forge_reward_1" UITitle="@ui_liberator_armor_reward" UILore="@ui_liberator_armor_reward_lore">
+    <CustomMessages>
+      <Message UIDesc="@ui_liberator_armor_summary" />
+    </CustomMessages>
+    <Cosmetics>
+      <Cosmetic Name="u_Liberator_Helmet" Weapon="0" />
+      <Cosmetic Name="u_Liberator_Arm" Weapon="0" />
+      <Cosmetic Name="u_Liberator_Chest" Weapon="0" />
+      <Cosmetic Name="u_Liberator_Shoulder" Weapon="0" />
+      <Cosmetic Name="u_Liberator_Pant" Weapon="0" />
+      <Cosmetic Name="u_Liberator_Boots" Weapon="0" />
+    </Cosmetics>
+    <ContextualSoundTrigger ToPlay="Endgame_ExpertForge_FinishProject_Liberator" ToResume="EndgameIdle" />
+  </Reward>
+</MetaData>

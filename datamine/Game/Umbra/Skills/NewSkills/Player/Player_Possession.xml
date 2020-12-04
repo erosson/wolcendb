@@ -4,14 +4,18 @@
     <WeaponRequirements Requirements="magic,poison" />
     <Animation AnimationDrivenMovement="0" ActionString_In="player_skill_Posession_in" ActionString_Loop="player_skill_Posession_loop" ActionString_Out="player_skill_Posession_out" ScaleWithSpellCastingSpeed="0" />
     <CastingParams CastBone="R_Weapon_Bone" CanCastWhileMoving="0" MinimumCastDuration="0.1" MaintainedCast="1" MaximumTurnRate="120" ScaleTurnRateWithSpellCastingSpeed="1" />
-    <HUD HUDPicture="../u_resources/spells/Active_Skills/Parasite.png" UIName="@ui_AST_Possession" Lore="@ui_AST_Possession_Lore" ActiveEffectTitle="" ActiveEffectDesc="" ASTTreeNumber="8" ShowParamsInAST="Cost,ROSTime,Cooldown,Range,DamageDetail,LifeLeech,DamageCritical,StatusAilmentsChance,Explosion,SpecificPossession" ShowParamsInTooltip="Cost,Cooldown,DamageOverview,LifeLeech,StatusAilmentsChance,SpecificPossession" />
+    <HUD HUDPicture="../u_resources/spells/Active_Skills/Parasite_Toxic.png" UIName="@ui_AST_Possession" Lore="@ui_AST_Possession_Lore" ActiveEffectTitle="" ActiveEffectDesc="" ASTTreeNumber="8" ShowParamsInAST="DamageWeapon,Cost,ROSTime,Cooldown,Range,DamageDetail,LifeLeech,DamageCritical,StatusAilmentsChance,Explosion,SpecificPossession,Tickrate" ShowParamsInTooltip="Cost,Cooldown,DamageOverview,LifeLeech,StatusAilmentsChance,SpecificPossession" />
     <Enneract PickableParticle_MoveToGround="U_CommonVFX_02.Esseract.Esseract_Projectile.Toxic" PickableParticle_OnGround_Shape="U_CommonVFX_02.Esseract.Esseract_Shape.Circle_Toxic" PickableParticle_OnGround_Damage="U_CommonVFX_02.Esseract.Esseract_Color.Toxic" PickableParticle_OnGround_Symbol="U_CommonVFX_02.Esseract.Esseract_Symbol.BEZERIEL" PickableParticle_OnGround_Indicator="U_CommonVFX_02.Esseract.Esseract_Indicator.Toxic" PickableParticle_OnGround_Pickup="U_CommonVFX_02.Esseract.Esseract_Loot.Toxic" SkillLearningParticle="U_CommonVFX.Skill_Learn.Skill_Learn_Toxic" Inventory_HUDPicture="../u_resources/enneracts/Parasite.png" Inventory_LoreDesc="@ui_enneract_lore" />
     <Aggression TargetValueOnHit="15" />
-    <DamageBase Type="poison" Min="5" MinPerLevel="0" Max="7" MaxPerLevel="0" />
-    <Summoning MaxSummons="3" KillLowestHPOnOversummoning="0" SummonsSuicideWhenMasterDies="1" />
+    <DamageWeapon WeaponMultiplier="1.5" />
+    <StatusAilment AilmentEffectiveness="30" />
+    <Damage_Conversion>
+      <Entry From="physical" To="toxic" ConversionRate="100" />
+    </Damage_Conversion>
+    <Summoning MaxSummons="3" KillLowestHPOnOversummoning="0" SummonsSuicideWhenMasterDies="1" HUDPortraitIcon="../u_resources/spells/summon_portraits/PortraitInvocationParasite.png" />
     <Cooldown Cooldown="0.5" CooldownPerLevel="0" />
     <ResourceCostMaintained ManaCostPerSecond="-60" ManaCostPerSecondPerLevel="0" ROSTransfertDuration="1.0" />
-    <SoundTrigger OnAnimStart="Play_Skill_Possession_Chargeup" OnAnimCast="Play_Skill_Possession_Loop_Start" />
+    <SoundTrigger OnAnimStart="Play_Skill_Possession_Chargeup" OnAnimCast="Play_Skill_Possession_Loop_Start" OnInterrupt="Play_Skill_Possession_Loop_End" />
     <ParticleList>
       <Particle Key="BeamTrash" Name="U_Character_02.Possession.Possession_Trail_01" Direction="-1,0,0" Scale="1" Bone="R_Weapon_Bone" />
       <Particle Key="BeamLieutenant" Name="U_Character_02.Possession.Possession_Trail_02" Direction="-1,0,0" Scale="1" Bone="R_Weapon_Bone" />
@@ -25,8 +29,12 @@
       <Particle Key="ImpactHeal" Name="U_Character_02.Possession.Possession_HealImpact_01_Loop" Direction="0,1,0" Scale="0.3" />
       <Particle Key="Heal" Name="U_Buff.Heal.Usage_Heal_Loop_01_Green" Direction="0,0,1" Scale="1" />
     </ParticleList>
-    <LifeLeech TransferPercent="50" TransferDuration="1" />
-    <Specific_Possession LeechPercent="10" TickRate="0.33" MaxRange="18" MaxTrashs="3" MaxLieutenant="1" SummonScaleEffectName="AST_Possession_Scaling" SelfHealthPercentPerTick="5" SoundTriggerTurned="Play_Skill_Possession_TurnedEnemy" SoundTriggerEnd="Play_Skill_Possession_Loop_End" />
+    <LifeLeech TransferPercent="5" TransferDuration="1" />
+    <Specific_Possession LeechPercent="10" MaxRange="18" MaxTrashs="3" MaxLieutenant="1" SummonScaleEffectName="AST_Possession_Scaling" SelfHealthPercentPerTick="5" SoundTriggerTurned="Play_Skill_Possession_TurnedEnemy" SoundTriggerEnd="Play_Skill_Possession_Loop_End" />
+    <Tickrate BaseTickrate="3" MaxTickrate="5" SpeedScaleFactor="1" DamageOvercapFactor="1" />
+  </Skill>
+  <Skill UID="player_possession_variant_default_damage_type" ESkill="default_variant">
+    <HUD UIName="@ui_AST_Possession" Lore="@ui_AST_Possession_Lore" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_Alpha.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_Alpha.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_Alpha.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_Alpha.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_Alpha.png" HUDPictureVariant_InnerIcon="../u_resources/spells/Active_Skills/Parasite_Toxic.png" VariantBottomPanel="1" />
   </Skill>
   <Skill UID="player_Possession_variant_1" ESkill="default_variant">
     <HUD UIName="@ui_Variant_Possession_variant_1" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_003.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_003.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_003.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_003.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_003.png" ShowParamsInTooltip="SpecificPossession,LifeLeech" />
@@ -39,12 +47,12 @@
   </Skill>
   <Skill UID="player_Possession_variant_3" ESkill="default_variant">
     <HUD UIName="@ui_Variant_Possession_variant_3" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_001.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_001.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_001.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_001.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_001.png" ShowParamsInTooltip="SpecificPossession,LifeLeech" />
-    <LifeLeech TransferPercent="50" />
-    <Specific_Possession LeechPercent="5" />
+    <LifeLeech TransferPercent="5" />
+    <Specific_Possession LeechPercent="2.5" />
   </Skill>
   <Skill UID="player_Possession_variant_4" ESkill="default_variant">
     <HUD UIName="@ui_Variant_Possession_variant_4" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_001.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_001.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_001.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_001.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_001.png" ShowParamsInTooltip="SpecificPossession,StatusAilmentsChance" />
-    <StatusAilment AllAilmentsInflictScoreIncreasePercent="40" />
+    <StatusAilment AilmentEffectiveness="125" />
   </Skill>
   <Skill UID="player_Possession_variant_5" ESkill="default_variant">
     <HUD UIName="@ui_Variant_Possession_variant_5" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_001.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_001.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_001.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_001.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_001.png" ShowParamsInTooltip="SpecificPossession" />
@@ -53,7 +61,7 @@
   <Skill UID="player_Possession_variant_6" ESkill="default_variant">
     <HUD UIName="@ui_Variant_Possession_variant_6" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_001.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_001.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_001.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_001.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_001.png" ShowParamsInTooltip="SpecificPossession,LifeLeech" />
     <LifeLeech TransferPercent="-100" />
-    <Specific_Possession LifeToForceShieldMultiplier="5" />
+    <Specific_Possession LifeToForceShieldMultiplier="100" />
   </Skill>
   <Skill UID="player_Possession_variant_7" ESkill="default_variant">
     <HUD UIName="@ui_Variant_Possession_variant_7" Lore="@ui_Variant_Possession_variant_7_lore" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_005.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_005.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_005.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_005.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_005.png" ShowParamsInTooltip="SpecificPossession" />
@@ -67,35 +75,13 @@
     <HUD UIName="@ui_Variant_Possession_variant_9" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_003.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_003.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_003.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_003.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_003.png" ShowParamsInTooltip="SpecificPossession" />
     <Specific_Possession SummonScaleEffectName="AST_Possession_Scaling_Globes" />
   </Skill>
-  <Skill UID="player_Possession_variant_8,player_Possession_variant_9" ESkill="default_variant_combo">
-    <Specific_Possession SummonScaleEffectName="AST_Possession_Scaling_Tought_Globes" />
-  </Skill>
-  <Skill UID="player_Possession_variant_10" ESkill="default_variant">
-    <HUD UIName="@ui_Variant_Possession_variant_10" Lore="@ui_Variant_Possession_variant_10_lore" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_005.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_005.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_005.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_005.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_005.png" ShowParamsInTooltip="SpecificPossession,StatusAilmentsChance" />
-    <Damage_Conversion>
-      <Entry From="poison" To="shadow" ConversionRate="100" />
-    </Damage_Conversion>
-    <StatusAilment>
-      <curse Chance="20" ChanceMode="AddToBase" />
-    </StatusAilment>
-    <WeaponRequirements Requirements="magic,shadow" />
-    <ParticleList>
-      <Particle Key="BeamTrash" Name="U_Character_02.Possession.Possession_Trail_01_Shadow" Direction="-1,0,0" Bone="R_Weapon_Bone" />
-      <Particle Key="BeamLieutenant" Name="U_Character_02.Possession.Possession_Trail_02_Shadow" Direction="-1,0,0" Bone="R_Weapon_Bone" />
-      <Particle Key="BeamNotWorking" Name="U_Character_02.Possession.Possession_Trail_03_Shadow" Direction="-1,0,0" Bone="R_Weapon_Bone" />
-      <Particle Key="Conversion" Name="U_Character_02.Summon.SummonStart_01_Shadow" Direction="0,1,0" />
-      <Particle Key="ConversionImpact" Name="U_Character_02.Possession.Possession_Success_Shadow" Direction="0,1,0" Bone="Bip01_Spine2" />
-      <Particle Key="Hand" Name="U_Character_02.Possession.Possession_HandAura_01_Shadow" Direction="0,1,0" />
-      <Particle Key="Impact" Name="U_Character_02.Possession.Possession_Impact_01_Loop_Shadow" Direction="0,1,0" />
-    </ParticleList>
-  </Skill>
   <Skill UID="player_Possession_variant_11" ESkill="default_variant">
-    <HUD UIName="@ui_Variant_Possession_variant_11" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_001.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_001.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_001.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_001.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_001.png" ShowParamsInTooltip="SpecificPossession,DamageBase" />
-    <DamageBase BonusPercent="10" />
+    <HUD UIName="@ui_Variant_Possession_variant_11" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_001.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_001.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_001.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_001.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_001.png" ShowParamsInTooltip="SpecificPossession,DamageWeapon" />
+    <DamageWeapon WeaponMultiplier="1.15" />
   </Skill>
   <Skill UID="player_Possession_variant_12" ESkill="default_variant">
-    <HUD UIName="@ui_Variant_Possession_variant_12" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_003.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_003.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_003.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_003.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_003.png" ShowParamsInTooltip="SpecificPossession,DamageBase" />
-    <DamageBase BonusPercent="20" />
+    <HUD UIName="@ui_Variant_Possession_variant_12" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_003.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_003.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_003.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_003.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_003.png" ShowParamsInTooltip="SpecificPossession,DamageWeapon" />
+    <DamageWeapon WeaponMultiplier="1.3" />
   </Skill>
   <Skill UID="player_Possession_variant_13" ESkill="default_variant">
     <HUD UIName="@ui_Variant_Possession_variant_13" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_001.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_001.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_001.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_001.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_001.png" ShowParamsInTooltip="SpecificPossession,StatusAilmentsChance" />
@@ -110,8 +96,75 @@
     <DamageCritical CriticalDamageModifier="25" />
   </Skill>
   <Skill UID="player_Possession_variant_16" ESkill="default_variant">
-    <HUD UIName="@ui_Variant_Possession_variant_16" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_003.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_003.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_003.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_003.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_003.png" ShowParamsInTooltip="SpecificPossession,DamageBase" />
-    <DamageBase BonusPercent="100" />
-    <Specific_Possession Tickrate="0.67" />
+    <HUD UIName="@ui_Variant_Possession_variant_16" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_003.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_003.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_003.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_003.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_003.png" ShowParamsInTooltip="SpecificPossession,DamageWeapon,Tickrate" />
+    <DamageWeapon WeaponMultiplier="4.5" />
+    <Tickrate BaseTickrate="0.67" />
+  </Skill>
+  <Skill UID="player_Possession_variant_10" ESkill="default_variant">
+    <HUD UIName="@ui_Variant_Possession_variant_10" Lore="@ui_Variant_Possession_variant_10_lore" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_Alpha.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_Alpha.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_Alpha.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_Alpha.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_Alpha.png" HUDPictureVariant_InnerIcon="../u_resources/spells/Active_Skills/Parasite_Shadow.png" ShowParamsInTooltip="SpecificPossession,DamageWeapon" HUDPicture="../u_resources/spells/Active_Skills/Parasite_Shadow.png" VariantBottomPanel="1" />
+    <Damage_Conversion>
+      <Entry From="physical" To="toxic" ConversionRate="-100" />
+      <Entry From="physical" To="shadow" ConversionRate="100" />
+    </Damage_Conversion>
+    <DamageWeapon WeaponMultiplier="1.25" />
+    <WeaponRequirements Requirements="magic,shadow" />
+    <ParticleList>
+      <Particle Key="BeamTrash" Name="U_Character_02.Possession.Possession_Trail_01_Shadow" Direction="-1,0,0" Bone="R_Weapon_Bone" />
+      <Particle Key="BeamLieutenant" Name="U_Character_02.Possession.Possession_Trail_02_Shadow" Direction="-1,0,0" Bone="R_Weapon_Bone" />
+      <Particle Key="BeamNotWorking" Name="U_Character_02.Possession.Possession_Trail_03_Shadow" Direction="-1,0,0" Bone="R_Weapon_Bone" />
+      <Particle Key="Conversion" Name="U_Character_02.Summon.SummonStart_01_Shadow" Direction="0,1,0" Scale="0.3" />
+      <Particle Key="ConversionImpact" Name="U_Character_02.Possession.Possession_Success_Shadow" Direction="0,1,0" Scale="0.3" Bone="Bip01_Spine2" />
+      <Particle Key="Hand" Name="U_Character_02.Possession.Possession_HandAura_01_Shadow" Direction="0,1,0" />
+      <Particle Key="Impact" Name="U_Character_02.Possession.Possession_Impact_01_Loop_Shadow" Direction="0,1,0" Scale="0.3" />
+    </ParticleList>
+    <Specific_Possession SoundTriggerEnd="Play_Skill_Possession_Loop_End_Shadow" />
+    <SoundTrigger OnAnimStart="Play_Skill_Possession_Chargeup_Shadow" OnAnimCast="Play_Skill_Possession_Loop_Start_Shadow" OnInterrupt="Play_Skill_Possession_Loop_End_Shadow" />
+  </Skill>
+  <Skill UID="player_Possession_variant_17" ESkill="default_variant">
+    <HUD UIName="@ui_Variant_Possession_variant_17" Lore="@ui_Variant_Possession_variant_17_lore" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_Alpha.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_Alpha.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_Alpha.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_Alpha.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_Alpha.png" HUDPictureVariant_InnerIcon="../u_resources/spells/Active_Skills/Parasite_Rend.png" ShowParamsInTooltip="SpecificPossession,DamageWeapon" HUDPicture="../u_resources/spells/Active_Skills/Parasite_Rend.png" VariantBottomPanel="1" />
+    <Damage_Conversion>
+      <Entry From="physical" To="toxic" ConversionRate="-100" />
+      <Entry From="physical" To="rend" ConversionRate="100" />
+    </Damage_Conversion>
+    <DamageWeapon WeaponMultiplier="1.25" />
+    <WeaponRequirements Requirements="magic,bleed" />
+    <ParticleList>
+      <Particle Key="BeamTrash" Name="U_Character_02.Possession.Possession_Trail_01_Rend" Direction="-1,0,0" Bone="R_Weapon_Bone" />
+      <Particle Key="BeamLieutenant" Name="U_Character_02.Possession.Possession_Trail_02_Rend" Direction="-1,0,0" Bone="R_Weapon_Bone" />
+      <Particle Key="BeamNotWorking" Name="U_Character_02.Possession.Possession_Trail_03_Rend" Direction="-1,0,0" Bone="R_Weapon_Bone" />
+      <Particle Key="Conversion" Name="U_Character_02.Summon.SummonStart_01_Rend" Direction="0,1,0" Scale="0.3" />
+      <Particle Key="ConversionImpact" Name="U_Character_02.Possession.Possession_Success_Rend" Direction="0,1,0" Scale="0.3" Bone="Bip01_Spine2" />
+      <Particle Key="Hand" Name="U_Character_02.Possession.Possession_HandAura_01_Rend" Direction="0,1,0" />
+      <Particle Key="Impact" Name="U_Character_02.Possession.Possession_Impact_01_Loop_Rend" Direction="0,1,0" Scale="0.3" />
+    </ParticleList>
+    <Specific_Possession SoundTriggerEnd="Play_Skill_Possession_Loop_End_Rend" />
+    <SoundTrigger OnAnimStart="Play_Skill_Possession_Chargeup_Rend" OnAnimCast="Play_Skill_Possession_Loop_Start_Rend" OnInterrupt="Play_Skill_Possession_Loop_End_Rend" />
+  </Skill>
+  <Skill UID="Player_Possession_variant_19" ESkill="default_variant">
+    <HUD UIName="@ui_variant_Player_Possession_variant_19" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_003.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_003.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_003.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_003.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_003.png" ShowParamsInTooltip="DamageWeapon" />
+    <DamageWeapon WeaponMultiplier="1.15" />
+  </Skill>
+  <Skill UID="player_Possession_variant_18" ESkill="default_variant">
+    <HUD UIName="@ui_Variant_Possession_variant_18" Lore="@ui_Variant_Possession_variant_18_lore" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_Alpha.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_Alpha.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_Alpha.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_Alpha.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_Alpha.png" HUDPictureVariant_InnerIcon="../u_resources/spells/Active_Skills/Parasite_Frost.png" ShowParamsInTooltip="SpecificPossession,DamageWeapon" HUDPicture="../u_resources/spells/Active_Skills/Parasite_Frost.png" VariantBottomPanel="1" />
+    <Damage_Conversion>
+      <Entry From="physical" To="toxic" ConversionRate="-100" />
+      <Entry From="physical" To="frost" ConversionRate="100" />
+    </Damage_Conversion>
+    <DamageWeapon WeaponMultiplier="1.25" />
+    <WeaponRequirements Requirements="magic,frost" />
+    <ParticleList>
+      <Particle Key="BeamTrash" Name="U_Character_02.Possession.Possession_Trail_01_Frost" Direction="-1,0,0" Bone="R_Weapon_Bone" />
+      <Particle Key="BeamLieutenant" Name="U_Character_02.Possession.Possession_Trail_02_Frost" Direction="-1,0,0" Bone="R_Weapon_Bone" />
+      <Particle Key="BeamNotWorking" Name="U_Character_02.Possession.Possession_Trail_03_Frost" Direction="-1,0,0" Bone="R_Weapon_Bone" />
+      <Particle Key="Conversion" Name="U_Character_02.Summon.SummonStart_01_Frost" Direction="0,1,0" Scale="0.3" />
+      <Particle Key="ConversionImpact" Name="U_Character_02.Possession.Possession_Success_Frost" Direction="0,1,0" Scale="0.3" Bone="Bip01_Spine2" />
+      <Particle Key="Hand" Name="U_Character_02.Possession.Possession_HandAura_01_Frost" Direction="0,1,0" />
+      <Particle Key="Impact" Name="U_Character_02.Possession.Possession_Impact_01_Loop_Frost" Direction="0,1,0" Scale="0.3" />
+    </ParticleList>
+    <Specific_Possession SoundTriggerEnd="Play_Skill_Possession_Loop_End_Frost" />
+    <SoundTrigger OnAnimStart="Play_Skill_Possession_Chargeup_Frost" OnAnimCast="Play_Skill_Possession_Loop_Start_Frost" OnInterrupt="Play_Skill_Possession_Loop_End_Frost" />
+  </Skill>
+  <Skill UID="player_Possession_variant_8,player_Possession_variant_9" ESkill="default_variant_combo">
+    <Specific_Possession SummonScaleEffectName="AST_Possession_Scaling_Tought_Globes" />
   </Skill>
 </MetaData>

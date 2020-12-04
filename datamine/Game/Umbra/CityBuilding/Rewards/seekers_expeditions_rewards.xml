@@ -137,7 +137,7 @@
     <CustomMessages>
       <Message UIDesc="@ui_misc_seekers_land_reward_1_summary" />
     </CustomMessages>
-    <Currency Gold_Min="500" Gold_Max="1500" Gold_PerPlayerLevel="10" PA_Min="5" PA_Max="15" PA_PerPlayerLevel="0.1" />
+    <Currency Gold_Min="500" Gold_Max="1500" Gold_PerPlayerLevel="10" PA_Min="10" PA_Max="30" PA_PerPlayerLevel="0.2" />
     <FixedItems Name="Endgame_alternative_reward" MinItemNumber="3" MaxItemNumber="5" SortByRarity="0" />
     <ContextualSoundTrigger ToPlay="Endgame_AdventurersGuild_ExpeditionSuccess" ToResume="EndgameIdle" />
     <ScalingTables Gold="Gold_scale" PA="PA_Scale" ItemLevelOffset="Item_level_offset_scale" />
@@ -146,7 +146,7 @@
     <CustomMessages>
       <Message UIDesc="@ui_misc_home_seekers_reward_2_summary" />
     </CustomMessages>
-    <Currency Gold_Min="1000" Gold_Max="5000" Gold_PerPlayerLevel="30" PA_Min="15" PA_Max="45" PA_PerPlayerLevel="0.3" />
+    <Currency Gold_Min="1000" Gold_Max="5000" Gold_PerPlayerLevel="30" PA_Min="30" PA_Max="90" PA_PerPlayerLevel="0.6" />
     <FixedItems Name="Endgame_alternative_reward" MinItemNumber="3" MaxItemNumber="5" SortByRarity="0" />
     <ContextualSoundTrigger ToPlay="Endgame_AdventurersGuild_ExpeditionSuccess" ToResume="EndgameIdle" />
     <ScalingTables Gold="Gold_scale" PA="PA_Scale" ItemLevelOffset="Item_level_offset_scale" />
@@ -155,7 +155,7 @@
     <CustomMessages>
       <Message UIDesc="@ui_misc_seekers_land_reward_3_summary" />
     </CustomMessages>
-    <Currency Gold_Min="5000" Gold_Max="15000" Gold_PerPlayerLevel="50" PA_Min="15" PA_Max="45" PA_PerPlayerLevel="1" />
+    <Currency Gold_Min="5000" Gold_Max="15000" Gold_PerPlayerLevel="50" PA_Min="100" PA_Max="300" PA_PerPlayerLevel="2" />
     <FixedItems Name="Endgame_alternative_reward" MinItemNumber="3" MaxItemNumber="5" SortByRarity="0" />
     <ContextualSoundTrigger ToPlay="Endgame_AdventurersGuild_ExpeditionSuccess" ToResume="EndgameIdle" />
     <ScalingTables Gold="Gold_scale" PA="PA_Scale" ItemLevelOffset="Item_level_offset_scale" />
@@ -164,7 +164,7 @@
     <CustomMessages>
       <Message UIDesc="@ui_misc_seekers_land_reward_4_summary" />
     </CustomMessages>
-    <Currency Gold_Min="10000" Gold_Max="30000" Gold_PerPlayerLevel="200" PA_Min="100" PA_Max="300" PA_PerPlayerLevel="2" />
+    <Currency Gold_Min="10000" Gold_Max="30000" Gold_PerPlayerLevel="200" PA_Min="200" PA_Max="600" PA_PerPlayerLevel="4" />
     <FixedItems Name="Endgame_alternative_reward" MinItemNumber="3" MaxItemNumber="5" SortByRarity="0" />
     <ContextualSoundTrigger ToPlay="Endgame_AdventurersGuild_ExpeditionSuccess" ToResume="EndgameIdle" />
     <ScalingTables Gold="Gold_scale" PA="PA_Scale" ItemLevelOffset="Item_level_offset_scale" />
@@ -173,7 +173,7 @@
     <CustomMessages>
       <Message UIDesc="@ui_misc_seekers_ship_reward_1_summary" />
     </CustomMessages>
-    <Currency Gold_Min="500" Gold_Max="1500" Gold_PerPlayerLevel="10" PA_Min="5" PA_Max="15" PA_PerPlayerLevel="0.1" />
+    <Currency Gold_Min="500" Gold_Max="1500" Gold_PerPlayerLevel="10" PA_Min="10" PA_Max="30" PA_PerPlayerLevel="0.2" />
     <FixedItems Name="Endgame_alternative_reward" MinItemNumber="3" MaxItemNumber="5" SortByRarity="0" />
     <ContextualSoundTrigger ToPlay="Endgame_AdventurersGuild_ExpeditionSuccess" ToResume="EndgameIdle" />
     <ScalingTables Gold="Gold_scale" PA="PA_Scale" ItemLevelOffset="Item_level_offset_scale" />
@@ -182,7 +182,7 @@
     <CustomMessages>
       <Message UIDesc="@ui_misc_seekers_ship_reward_2_summary" />
     </CustomMessages>
-    <Currency Gold_Min="1000" Gold_Max="5000" Gold_PerPlayerLevel="30" PA_Min="15" PA_Max="45" PA_PerPlayerLevel="0.3" />
+    <Currency Gold_Min="1000" Gold_Max="5000" Gold_PerPlayerLevel="30" PA_Min="30" PA_Max="90" PA_PerPlayerLevel="0.6" />
     <FixedItems Name="Endgame_alternative_reward" MinItemNumber="3" MaxItemNumber="5" SortByRarity="0" />
     <ContextualSoundTrigger ToPlay="Endgame_AdventurersGuild_ExpeditionSuccess" ToResume="EndgameIdle" />
     <ScalingTables Gold="Gold_scale" PA="PA_Scale" ItemLevelOffset="Item_level_offset_scale" />
@@ -191,7 +191,7 @@
     <CustomMessages>
       <Message UIDesc="@ui_misc_seekers_ship_reward_3_summary" />
     </CustomMessages>
-    <Currency Gold_Min="5000" Gold_Max="15000" Gold_PerPlayerLevel="50" PA_Min="15" PA_Max="45" PA_PerPlayerLevel="1" />
+    <Currency Gold_Min="5000" Gold_Max="15000" Gold_PerPlayerLevel="50" PA_Min="100" PA_Max="300" PA_PerPlayerLevel="2" />
     <FixedItems Name="Endgame_alternative_reward" MinItemNumber="3" MaxItemNumber="5" SortByRarity="0" />
     <ContextualSoundTrigger ToPlay="Endgame_AdventurersGuild_ExpeditionSuccess" ToResume="EndgameIdle" />
     <ScalingTables Gold="Gold_scale" PA="PA_Scale" ItemLevelOffset="Item_level_offset_scale" />
@@ -200,7 +200,7 @@
     <CustomMessages>
       <Message UIDesc="@ui_misc_seekers_ship_reward_4_summary" />
     </CustomMessages>
-    <Currency Gold_Min="10000" Gold_Max="30000" Gold_PerPlayerLevel="200" PA_Min="100" PA_Max="300" PA_PerPlayerLevel="2" />
+    <Currency Gold_Min="10000" Gold_Max="30000" Gold_PerPlayerLevel="200" PA_Min="200" PA_Max="600" PA_PerPlayerLevel="4" />
     <FixedItems Name="Endgame_uberbundle" MinItemNumber="5" MaxItemNumber="5" SortByRarity="1" />
     <ContextualSoundTrigger ToPlay="Endgame_AdventurersGuild_ExpeditionSuccess" ToResume="EndgameIdle" />
     <ScalingTables Gold="Gold_scale" PA="PA_Scale" ItemLevelOffset="Item_level_offset_scale" />

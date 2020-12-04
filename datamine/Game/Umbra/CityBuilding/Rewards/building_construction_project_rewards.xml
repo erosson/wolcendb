@@ -107,4 +107,10 @@
     </CustomMessages>
     <ContextualSoundTrigger ToPlay="Endgame_Wonders_ApoResourceBoost" ToResume="EndgameIdle" />
   </Reward>
+  <Reward Name="expert_forge_construct_reward" UITitle="@ui_expert_forge_construct_reward" UILore="@ui_expert_forge_construct_reward_lore">
+    <CustomMessages>
+      <Message UIDesc="@ui_expert_forge_construct_reward_desc" />
+    </CustomMessages>
+    <ContextualSoundTrigger ToPlay="Endgame_ExpertForge_ConstructionCompleted" ToResume="EndgameIdle" />
+  </Reward>
 </MetaData>

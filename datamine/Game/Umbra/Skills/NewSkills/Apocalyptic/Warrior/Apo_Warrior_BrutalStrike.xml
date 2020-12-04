@@ -28,10 +28,10 @@
       <Particle Key="body_gain" Name="U_ApocalypticForm.Worrior_ApocalypticFrom.Frenzy_Consumtion_Body_03" Bone="Bip01 Spine2" Direction="0,-1,0" />
       <Particle Key="body_gain_final" Name="U_ApocalypticForm.Worrior_ApocalypticFrom.Frenzy_Consumtion_Body_04" Bone="Bip01 Spine2" Scale="1.5" Direction="1,0,0" />
       <Particle Key="ground_gain" Name="U_ApocalypticForm.Worrior_ApocalypticFrom.Ulti_Charging_Ground" Direction="0,0,1" Scale="1" />
-      <Particle Key="camera1" Name="U_ApocalypticForm.Worrior_ApocalypticFrom.Charging_Camera" />
-      <Particle Key="camera2" Name="U_ApocalypticForm.Worrior_ApocalypticFrom.Charging_Camera1" />
-      <Particle Key="camera3" Name="U_ApocalypticForm.Worrior_ApocalypticFrom.Charging_Camera2" />
-      <Particle Key="camera_out" Name="U_ApocalypticForm.Worrior_ApocalypticFrom.Charging_Camera_Final" />
+      <Particle Key="camera1" Name="U_ApocalypticForm.Worrior_ApocalypticFrom.Charging_Camera" Direction="0,0,1" />
+      <Particle Key="camera2" Name="U_ApocalypticForm.Worrior_ApocalypticFrom.Charging_Camera1" Direction="0,0,1" />
+      <Particle Key="camera3" Name="U_ApocalypticForm.Worrior_ApocalypticFrom.Charging_Camera2" Direction="0,0,1" />
+      <Particle Key="camera_out" Name="U_ApocalypticForm.Worrior_ApocalypticFrom.Charging_Camera_Final" Direction="0,0,1" />
       <Particle Key="attack_body" Name="U_ApocalypticForm.Worrior_ApocalypticFrom.Frenzy_Consumtion_Body_02" Bone="Bip01" Scale="1.5" OffSet="0,0.5,0" Direction="0,0,1" />
     </ParticleList>
     <Shapes>
@@ -43,9 +43,9 @@
     <Explosion ExplosionRadius="2" />
     <VisualFeedback TrailPresetBase="apo" FeedbackPresetBase="Player_skill_brutalstrike" BloodDecalOrientation="forward" />
     <ChargedSkill WindupAnim="player_brutalstrike_charge_windup" FollowupAnim="player_brutalstrike_charge_followup">
-      <Step TimeToReachStep="0.4" AssociatedAnim="player_brutalstrike_charge_loop_01" SpellDamagePercent="2" />
-      <Step TimeToReachStep="0.8" AssociatedAnim="player_brutalstrike_charge_loop_02" SpellDamagePercent="4" />
-      <Step TimeToReachStep="1.2" AssociatedAnim="player_brutalstrike_charge_loop_03" SpellDamagePercent="8" />
+      <Step TimeToReachStep="0.4" AssociatedAnim="player_brutalstrike_charge_loop_01" SpellDamagePercent="200" />
+      <Step TimeToReachStep="0.8" AssociatedAnim="player_brutalstrike_charge_loop_02" SpellDamagePercent="400" />
+      <Step TimeToReachStep="1.2" AssociatedAnim="player_brutalstrike_charge_loop_03" SpellDamagePercent="800" />
     </ChargedSkill>
     <SoundTrigger OnAnimLoopIn="Play_Skill_APO_Warrior_BrutalStrike_Charge_Base" OnAnimStart="Play_Skill_APO_Warrior_BrutalStrike_Charge_Point_Start" OnAnimLoopOut="Play_Skill_APO_Warrior_BrutalStrike_Swing" OnAnimCast="Play_Skill_APO_Warrior_BrutalStrike_Impact" OnHit="Play_Skill_APO_Warrior_BrutalStrike_Lightning_Damage" OnInterrupt="Stop_Skill_APO_Warrior_BrutalStrike_Charge_Sound" />
   </Skill>

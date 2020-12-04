@@ -1,12 +1,13 @@
 <MetaData>
   <Skill UID="player_sniper" ESkill="player_sniper" Keywords="attack_skill,gadget,projectile">
     <WeaponRequirements Requirements="ranged,lightning" />
+    <Projectile BaseDamageBonusPercentPerNonUsedProjectile="30" />
     <Animation ActionString="player_skill_sniper_in" AnimationDrivenMovement="1" />
     <CastingParams CastBone="R_Weapon_Bone" CanCastWhileMoving="0" MaximumTurnRate="30" ShouldMoveInRange="0" />
-    <HUD HUDPicture="../u_resources/spells/Active_Skills/sniper.png" UIName="@ui_AST_Sniper" Lore="@ui_AST_Sniper_Lore" ActiveEffectTitle="" ActiveEffectDesc="" ASTTreeNumber="8" ShowParamsInAST="Cost,ROSTime,Cooldown,Range,DamageDetail,DamageWeapon,DamageCritical,StatusAilmentsChance,Explosion,SpecificSniper" ShowParamsInTooltip="Cost,Cooldown,DamageOverview,StatusAilmentsChance,SpecificSniper" />
+    <HUD HUDPicture="../u_resources/spells/Active_Skills/sniper_Lightning.png" UIName="@ui_AST_Sniper" Lore="@ui_AST_Sniper_Lore" ActiveEffectTitle="" ActiveEffectDesc="" ASTTreeNumber="8" ShowParamsInAST="Cost,ROSTime,Cooldown,Range,DamageDetail,DamageWeapon,DamageCritical,StatusAilmentsChance,Explosion,SpecificSniper" ShowParamsInTooltip="Cost,Cooldown,DamageOverview,StatusAilmentsChance,SpecificSniper" />
     <Enneract PickableParticle_MoveToGround="U_CommonVFX_02.Esseract.Esseract_Projectile.Lightning" PickableParticle_OnGround_Shape="U_CommonVFX_02.Esseract.Esseract_Shape.Circle_Lightning" PickableParticle_OnGround_Damage="U_CommonVFX_02.Esseract.Esseract_Color.Lightning" PickableParticle_OnGround_Symbol="U_CommonVFX_02.Esseract.Esseract_Symbol.EZANEAL" PickableParticle_OnGround_Indicator="U_CommonVFX_02.Esseract.Esseract_Indicator.Lightning" PickableParticle_OnGround_Pickup="U_CommonVFX_02.Esseract.Esseract_Loot.Lightning" SkillLearningParticle="U_CommonVFX.Skill_Learn.Skill_Learn_Lightning" Inventory_HUDPicture="../u_resources/enneracts/sniper.png" Inventory_LoreDesc="@ui_enneract_lore" />
     <Aggression TargetValueOnHit="0" />
-    <DamageWeapon PercentMin="150" PercentMax="150" />
+    <DamageWeapon WeaponMultiplier="1.5" />
     <Damage_Conversion>
       <Entry From="physical" To="lightning" ConversionRate="100" />
     </Damage_Conversion>
@@ -46,7 +47,7 @@
       <Particle Key="FinalChargingPerfect" Name="U_Character_02.Sniper.Sniper_Charging_Trigger" Direction="0,1,0" Scale="1.3" Bone="R_Weapon_Bone" />
     </ParticleList>
     <VisualFeedback TrailPresetBase="default" FeedbackPresetBase="Player_skill_leap" BloodDecalOrientation="forward" />
-    <SoundTrigger OnAnimCast="Play_Skill_Sniper_Fire" OnInterrupt="Stop_Skill_Sniper_Charging_Loop" />
+    <SoundTrigger OnAnimCast="Play_Skill_Sniper_Shoot" OnHit="Play_Skill_Sniper_Impact_Lightning" OnInterrupt="Stop_Skill_Sniper_Charging_Loop" />
     <Specific_Sniper PerfectTimingThreshold="0.0" PerfectTimingDamageMultiplier="1.5" CanTriggerPerfectAtStartingStep="1" AntiSpamTimer="0.7">
       <ChargeSound Trigger="Play_Skill_Sniper_Charge_Phase1" />
       <ChargeSound Trigger="Play_Skill_Sniper_Charge_Phase2" />
@@ -55,12 +56,15 @@
       <ChargeSound Trigger="Play_Skill_Sniper_Charge_Phase5" />
     </Specific_Sniper>
     <ChargedSkill WindupAnim="player_skill_sniper_in" FollowupAnim="player_skill_sniper_out">
-      <Step TimeToReachStep="0.66" AssociatedAnim="player_skill_sniper_loop_01" WeaponDamagePercent="160" />
-      <Step TimeToReachStep="0.66" AssociatedAnim="player_skill_sniper_loop_02" WeaponDamagePercent="300" />
-      <Step TimeToReachStep="0.66" AssociatedAnim="player_skill_sniper_loop_03" WeaponDamagePercent="650" />
-      <Step TimeToReachStep="0.66" AssociatedAnim="player_skill_sniper_loop_03" WeaponDamagePercent="1000" />
+      <Step TimeToReachStep="0.66" AssociatedAnim="player_skill_sniper_loop_01" WeaponDamagePercent="100" />
+      <Step TimeToReachStep="0.66" AssociatedAnim="player_skill_sniper_loop_02" WeaponDamagePercent="200" />
+      <Step TimeToReachStep="0.66" AssociatedAnim="player_skill_sniper_loop_03" WeaponDamagePercent="400" />
+      <Step TimeToReachStep="0.66" AssociatedAnim="player_skill_sniper_loop_03" WeaponDamagePercent="700" />
     </ChargedSkill>
     <ResourceCost RageCost="-250" RageCostPerLevel="0" ROSTransfertDuration="2.0" />
+  </Skill>
+  <Skill UID="player_Sniper_variant_default_damage_type" ESkill="default_variant">
+    <HUD UIName="@ui_AST_Sniper" Lore="@ui_AST_Sniper_Lore" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_Alpha.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_Alpha.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_Alpha.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_Alpha.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_Alpha.png" HUDPictureVariant_InnerIcon="../u_resources/spells/Active_Skills/sniper_Lightning.png" VariantBottomPanel="1" />
   </Skill>
   <Skill UID="player_Sniper_variant_1" ESkill="default_variant">
     <HUD UIName="@ui_Variant_Sniper_variant_1" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_003.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_003.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_003.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_003.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_003.png" ShowParamsInTooltip="SpecificSniper" />
@@ -73,12 +77,13 @@
       <Step TimeToReachStep="0.001" AssociatedAnim="player_skill_sniper_loop_02" WeaponDamagePercent="0" />
       <Step TimeToReachStep="0.001" AssociatedAnim="player_skill_sniper_loop_03" WeaponDamagePercent="0" />
       <Step TimeToReachStep="0.001" AssociatedAnim="player_skill_sniper_loop_03" WeaponDamagePercent="0" />
-      <Step TimeToReachStep="0.66" AssociatedAnim="player_skill_sniper_loop_03" WeaponDamagePercent="1500" />
+      <Step TimeToReachStep="0.66" AssociatedAnim="player_skill_sniper_loop_03" WeaponDamagePercent="1100" />
     </ChargedSkill>
   </Skill>
   <Skill UID="player_Sniper_variant_3" ESkill="default_variant">
-    <HUD UIName="@ui_Variant_Sniper_variant_3" Lore="@ui_Variant_Sniper_variant_3_lore" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_005.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_005.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_005.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_005.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_005.png" ShowParamsInTooltip="SpecificSniper" />
-    <Specific_Sniper FireOnlyIfMax="1" DamageMultiplierIfMax="3" />
+    <HUD UIName="@ui_Variant_Sniper_variant_3" Lore="@ui_Variant_Sniper_variant_3_lore" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_005.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_005.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_005.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_005.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_005.png" ShowParamsInTooltip="SpecificSniper,DamageWeapon" />
+    <DamageWeapon WeaponMultiplier="2" />
+    <Specific_Sniper FireOnlyIfMax="1" />
   </Skill>
   <Skill UID="player_Sniper_variant_4" ESkill="default_variant">
     <HUD UIName="@ui_Variant_Sniper_variant_4" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_003.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_003.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_003.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_003.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_003.png" ShowParamsInTooltip="SpecificSniper" />
@@ -86,7 +91,8 @@
   </Skill>
   <Skill UID="player_Sniper_variant_5" ESkill="default_variant">
     <HUD UIName="@ui_Variant_Sniper_variant_5" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_003.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_003.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_003.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_003.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_003.png" ShowParamsInTooltip="SpecificSniper" />
-    <DamageZone Duration="5" RateOfFire="0.33" />
+    <DamageZone Duration="5" RateOfFire="0.3" />
+    <StatusAilment AilmentEffectiveness="33" />
     <Specific_Sniper AddTrail="1" TrailDamageMultiplier="0.3" />
   </Skill>
   <Skill UID="player_Sniper_variant_6" ESkill="default_variant">
@@ -101,8 +107,9 @@
     <Specific_Sniper ApplyPassive="1" PassiveSkillName="AST_Sniper_RegenStamina" />
   </Skill>
   <Skill UID="player_Sniper_variant_8" ESkill="default_variant">
-    <HUD UIName="@ui_Variant_Sniper_variant_8" Lore="@ui_Variant_Sniper_variant_8_lore" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_005.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_005.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_005.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_005.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_005.png" ShowParamsInTooltip="SpecificSniper" />
-    <Specific_Sniper DamageMultiplierModifier="-0.3" ReverseShapes="1" />
+    <HUD UIName="@ui_Variant_Sniper_variant_8" Lore="@ui_Variant_Sniper_variant_8_lore" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_005.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_005.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_005.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_005.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_005.png" ShowParamsInTooltip="SpecificSniper,DamageWeapon" />
+    <DamageWeapon WeaponMultiplier="0.9" />
+    <Specific_Sniper ReverseShapes="1" />
   </Skill>
   <Skill UID="player_Sniper_variant_9" ESkill="default_variant">
     <HUD UIName="@ui_Variant_Sniper_variant_9" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_003.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_003.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_003.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_003.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_003.png" ShowParamsInTooltip="SpecificSniper,DamageCritical" />
@@ -113,39 +120,9 @@
     <DamageCritical CriticalChanceModifierPerStep="20" />
   </Skill>
   <Skill UID="player_Sniper_variant_11" ESkill="default_variant">
-    <HUD UIName="@ui_Variant_Sniper_variant_11" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_001.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_001.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_001.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_001.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_001.png" ShowParamsInTooltip="SpecificSniper,DamageCritical" />
+    <HUD UIName="@ui_Variant_Sniper_variant_11" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_001.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_001.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_001.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_001.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_001.png" ShowParamsInTooltip="SpecificSniper,DamageCritical,DamageWeapon" />
     <DamageCritical CriticalDamageModifier="100" />
-    <Specific_Sniper DamageMultiplierModifier="-0.25" />
-  </Skill>
-  <Skill UID="player_Sniper_variant_12" ESkill="default_variant">
-    <HUD UIName="@ui_Variant_Sniper_variant_12" Lore="@ui_Variant_Sniper_variant_12_lore" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_005.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_005.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_005.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_005.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_005.png" ShowParamsInTooltip="SpecificSniper,DamageWeapon" />
-    <DamageWeapon PercentMin="15" PercentMax="15" />
-    <Damage_Conversion>
-      <Entry From="physical" To="lightning" ConversionRate="-100" />
-      <Entry From="physical" To="frost" ConversionRate="100" />
-    </Damage_Conversion>
-    <WeaponRequirements Requirements="ranged,frost" />
-    <ParticleList>
-      <Particle Key="ChargingStep1" Name="U_Character_02.Sniper.Sniper_Charging_01_Frost" Direction="0,1,0" Bone="R_Weapon_Bone" />
-      <Particle Key="ChargingStep2" Name="U_Character_02.Sniper.Sniper_Charging_02_Frost" Direction="0,1,0" Bone="R_Weapon_Bone" />
-      <Particle Key="ChargingStep3" Name="U_Character_02.Sniper.Sniper_Charging_02_Frost" Direction="0,1,0" Bone="R_Weapon_Bone" />
-      <Particle Key="ChargingStep4" Name="U_Character_02.Sniper.Sniper_Charging_03_Frost" Direction="0,1,0" Bone="R_Weapon_Bone" />
-      <Particle Key="ChargingStep5" Name="U_Character_02.Sniper.Sniper_Charging_03_Frost" Direction="0,1,0" Bone="R_Weapon_Bone" />
-      <Particle Key="FireStep1" Name="U_Character_02.Sniper.Sniper_Projectile_01_Frost" Direction="0,1,0" />
-      <Particle Key="FireStep2" Name="U_Character_02.Sniper.Sniper_Projectile_02_Frost" Direction="0,1,0" />
-      <Particle Key="FireStep3" Name="U_Character_02.Sniper.Sniper_Projectile_03_Frost" Direction="0,1,0" />
-      <Particle Key="FireStep4" Name="U_Character_02.Sniper.Sniper_Projectile_04_Frost" Direction="0,1,0" />
-      <Particle Key="FireStep5" Name="U_Character_02.Sniper.Sniper_Projectile_05_Frost" Direction="0,1,0" />
-      <Particle Key="Trail5" Name="U_Character_02.Sniper.Sniper_Projectile_05_Under_Damage_Frost" Direction="0,1,0" />
-      <Particle Key="Gun" Name="U_Character_02.Sniper.Summon_Sniper_01_Loop_Frost" Direction="0,1,0" Bone="R_Weapon_Bone" />
-      <Particle Key="GunDisapear" Name="U_Character_02.Sniper.Summon_Sniper_01_End_Frost" Direction="0,1,0" Bone="R_Weapon_Bone" />
-      <Particle Key="PerfectTimingGround" Name="U_Character_02.Sniper.Sniper_Projectile_05_Under_Frost" Direction="0,1,0" Bone="Bip01" />
-      <Particle Key="Aura" Name="U_Character_02.Sniper.Sniper_Charging_Aura_01_Frost" Direction="0,1,0" Bone="R_Weapon_Bone" />
-      <Particle Key="Muzzle" Name="U_Character_02.Sniper.Sniper_Muzzle_01_Frost" Direction="0,1,0" />
-      <Particle Key="Wind" Name="U_Character_02.Sniper.Sniper_Charging_Wind_01_Frost" Direction="0,0,1" Bone="Bip01" />
-      <Particle Key="FinalCharging" Name="U_Character_02.Sniper.Sniper_Charging_Trigger" Direction="0,1,0" Bone="R_Weapon_Bone" />
-      <Particle Key="FinalChargingPerfect" Name="U_Character_02.Sniper.Sniper_Charging_Trigger" Direction="0,1,0" Bone="R_Weapon_Bone" />
-    </ParticleList>
+    <DamageWeapon WeaponMultiplier="0.9" />
   </Skill>
   <Skill UID="player_Sniper_variant_13" ESkill="default_variant">
     <HUD UIName="@ui_Variant_Sniper_variant_13" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_001.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_001.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_001.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_001.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_001.png" ShowParamsInTooltip="SpecificSniper,StatusAilmentsChance" />
@@ -153,14 +130,132 @@
   </Skill>
   <Skill UID="player_Sniper_variant_14" ESkill="default_variant">
     <HUD UIName="@ui_Variant_Sniper_variant_14" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_001.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_001.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_001.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_001.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_001.png" ShowParamsInTooltip="SpecificSniper,StatusAilmentsChance" />
-    <StatusAilment AllAilmentsInflictScoreIncreasePercent="40" />
+    <StatusAilment AilmentEffectiveness="125" />
   </Skill>
   <Skill UID="player_Sniper_variant_15" ESkill="default_variant">
     <HUD UIName="@ui_Variant_Sniper_variant_15" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_001.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_001.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_001.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_001.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_001.png" ShowParamsInTooltip="SpecificSniper,DamageWeapon" />
-    <DamageWeapon PercentMin="15" PercentMinPerLevel="0" PercentMax="15" PercentMaxPerLevel="0" />
+    <DamageWeapon WeaponMultiplier="1.15" />
   </Skill>
   <Skill UID="player_Sniper_variant_16" ESkill="default_variant">
     <HUD UIName="@ui_Variant_Sniper_variant_16" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_001.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_001.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_001.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_001.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_001.png" ShowParamsInTooltip="SpecificSniper,Cost" />
     <ResourceCost RageCost="50" />
+  </Skill>
+  <Skill UID="player_Sniper_variant_12" ESkill="default_variant">
+    <HUD UIName="@ui_Variant_Sniper_variant_12" Lore="@ui_Variant_Sniper_variant_12_lore" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_Alpha.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_Alpha.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_Alpha.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_Alpha.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_Alpha.png" HUDPictureVariant_InnerIcon="../u_resources/spells/Active_Skills/sniper_Frost.png" ShowParamsInTooltip="SpecificSniper,DamageWeapon" HUDPicture="../u_resources/spells/Active_Skills/sniper_Frost.png" VariantBottomPanel="1" />
+    <DamageWeapon WeaponMultiplier="1.25" />
+    <Damage_Conversion>
+      <Entry From="physical" To="lightning" ConversionRate="-100" />
+      <Entry From="physical" To="frost" ConversionRate="100" />
+    </Damage_Conversion>
+    <WeaponRequirements Requirements="ranged,frost" />
+    <ParticleList>
+      <Particle Key="ChargingStep1" Name="U_Character_02.Sniper.Sniper_Charging_01_Frost" Direction="0,1,0" Scale="0.75" Bone="R_Weapon_Bone" />
+      <Particle Key="ChargingStep2" Name="U_Character_02.Sniper.Sniper_Charging_02_Frost" Direction="0,1,0" Scale="0.75" Bone="R_Weapon_Bone" />
+      <Particle Key="ChargingStep3" Name="U_Character_02.Sniper.Sniper_Charging_02_Frost" Direction="0,1,0" Scale="0.75" Bone="R_Weapon_Bone" />
+      <Particle Key="ChargingStep4" Name="U_Character_02.Sniper.Sniper_Charging_03_Frost" Direction="0,1,0" Scale="0.75" Bone="R_Weapon_Bone" />
+      <Particle Key="ChargingStep5" Name="U_Character_02.Sniper.Sniper_Charging_03_Frost" Direction="0,1,0" Scale="0.75" Bone="R_Weapon_Bone" />
+      <Particle Key="FireStep1" Name="U_Character_02.Sniper.Sniper_Projectile_01_Frost" Direction="0,1,0" Offset="0,0,1.25" />
+      <Particle Key="FireStep2" Name="U_Character_02.Sniper.Sniper_Projectile_02_Frost" Direction="0,1,0" Offset="0,0,1.25" />
+      <Particle Key="FireStep3" Name="U_Character_02.Sniper.Sniper_Projectile_03_Frost" Direction="0,1,0" Offset="0,0,1.25" />
+      <Particle Key="FireStep4" Name="U_Character_02.Sniper.Sniper_Projectile_04_Frost" Direction="0,1,0" Offset="0,0,1.25" />
+      <Particle Key="FireStep5" Name="U_Character_02.Sniper.Sniper_Projectile_05_Frost" Direction="0,1,0" Offset="0,0,1.25" />
+      <Particle Key="Trail5" Name="U_Character_02.Sniper.Sniper_Projectile_05_Under_Damage_Frost" Direction="0,1,0" />
+      <Particle Key="Gun" Name="U_Character_02.Sniper.Summon_Sniper_01_Loop_Frost" Direction="0,1,0" Bone="R_Weapon_Bone" />
+      <Particle Key="GunDisapear" Name="U_Character_02.Sniper.Summon_Sniper_01_End_Frost" Direction="0,1,0" Bone="R_Weapon_Bone" />
+      <Particle Key="PerfectTimingGround" Name="U_Character_02.Sniper.Sniper_Projectile_05_Under_Frost" Direction="0,1,0" Bone="Bip01" Offset="0,-1.5,0" />
+      <Particle Key="Aura" Name="U_Character_02.Sniper.Sniper_Charging_Aura_01_Frost" Direction="0,1,0" Bone="R_Weapon_Bone" />
+      <Particle Key="Muzzle" Name="U_Character_02.Sniper.Sniper_Muzzle_01_Frost" Direction="0,1,0" Scale="1.3" Offset="0,1.5,1.5" />
+      <Particle Key="Wind" Name="U_Character_02.Sniper.Sniper_Charging_Wind_01_Frost" Direction="0,0,1" Bone="Bip01" Scale="0.75" />
+      <Particle Key="FinalCharging" Name="U_Character_02.Sniper.Sniper_Charging_Trigger" Direction="0,1,0" Bone="R_Weapon_Bone" Scale="0.75" />
+      <Particle Key="FinalChargingPerfect" Name="U_Character_02.Sniper.Sniper_Charging_Trigger" Direction="0,1,0" Bone="R_Weapon_Bone" Scale="1.3" />
+    </ParticleList>
+    <Specific_Sniper>
+      <ChargeSound Trigger="Play_Skill_Sniper_Charge_Phase1_Frost" />
+      <ChargeSound Trigger="Play_Skill_Sniper_Charge_Phase2_Frost" />
+      <ChargeSound Trigger="Play_Skill_Sniper_Charge_Phase3_Frost" />
+      <ChargeSound Trigger="Play_Skill_Sniper_Charge_Phase4_Frost" />
+      <ChargeSound Trigger="Play_Skill_Sniper_Charge_Phase5_Frost" />
+    </Specific_Sniper>
+    <SoundTrigger OnAnimCast="Play_Skill_Sniper_Shoot_Frost" OnHit="Play_Skill_Sniper_Impact_Frost" />
+  </Skill>
+  <Skill UID="player_Sniper_variant_17" ESkill="default_variant">
+    <HUD UIName="@ui_Variant_Sniper_variant_17" Lore="@ui_Variant_Sniper_variant_17_lore" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_Alpha.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_Alpha.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_Alpha.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_Alpha.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_Alpha.png" HUDPictureVariant_InnerIcon="../u_resources/spells/Active_Skills/sniper_Rend.png" ShowParamsInTooltip="SpecificSniper,DamageWeapon" HUDPicture="../u_resources/spells/Active_Skills/sniper_Rend.png" VariantBottomPanel="1" />
+    <DamageWeapon WeaponMultiplier="1.25" />
+    <Damage_Conversion>
+      <Entry From="physical" To="lightning" ConversionRate="-100" />
+      <Entry From="physical" To="rend" ConversionRate="100" />
+    </Damage_Conversion>
+    <WeaponRequirements Requirements="ranged,bleed" />
+    <ParticleList>
+      <Particle Key="ChargingStep1" Name="U_Character_02.HolyDive.HolyDive_Charging_01_Rend" Direction="0,1,0" Scale="0.75" Bone="R_Weapon_Bone" />
+      <Particle Key="ChargingStep2" Name="U_Character_02.HolyDive.HolyDive_Charging_02_Rend" Direction="0,1,0" Scale="0.75" Bone="R_Weapon_Bone" />
+      <Particle Key="ChargingStep3" Name="U_Character_02.HolyDive.HolyDive_Charging_02_Rend" Direction="0,1,0" Scale="0.75" Bone="R_Weapon_Bone" />
+      <Particle Key="ChargingStep4" Name="U_Character_02.HolyDive.HolyDive_Charging_03_Rend" Direction="0,1,0" Scale="0.75" Bone="R_Weapon_Bone" />
+      <Particle Key="ChargingStep5" Name="U_Character_02.HolyDive.HolyDive_Charging_03_Rend" Direction="0,1,0" Scale="0.75" Bone="R_Weapon_Bone" />
+      <Particle Key="FireStep1" Name="U_Character_02.Sniper.Sniper_Projectile_01_Rend" Direction="0,1,0" Offset="0,0,1.25" />
+      <Particle Key="FireStep2" Name="U_Character_02.Sniper.Sniper_Projectile_02_Rend" Direction="0,1,0" Offset="0,0,1.25" />
+      <Particle Key="FireStep3" Name="U_Character_02.Sniper.Sniper_Projectile_03_Rend" Direction="0,1,0" Offset="0,0,1.25" />
+      <Particle Key="FireStep4" Name="U_Character_02.Sniper.Sniper_Projectile_04_Rend" Direction="0,1,0" Offset="0,0,1.25" />
+      <Particle Key="FireStep5" Name="U_Character_02.Sniper.Sniper_Projectile_05_Rend" Direction="0,1,0" Offset="0,0,1.25" />
+      <Particle Key="Trail5" Name="U_Character_02.Sniper.Sniper_Projectile_05_Under_Damage_Rend" Direction="0,1,0" />
+      <Particle Key="Gun" Name="U_Character_02.Sniper.Summon_Sniper_01_Loop_Rend" Direction="0,1,0" Bone="R_Weapon_Bone" />
+      <Particle Key="GunDisapear" Name="U_Character_02.Sniper.Summon_Sniper_01_End_Rend" Direction="0,1,0" Bone="R_Weapon_Bone" />
+      <Particle Key="PerfectTimingGround" Name="U_Character_02.Sniper.Sniper_Projectile_05_Under_Rend" Direction="0,1,0" Bone="Bip01" Offset="0,-1.5,0" />
+      <Particle Key="Aura" Name="U_Character_02.Sniper.Sniper_Charging_Aura_01_Rend" Direction="0,1,0" Bone="R_Weapon_Bone" />
+      <Particle Key="Muzzle" Name="U_Character_02.Sniper.Sniper_Muzzle_01_Rend" Direction="0,1,0" Scale="1.3" Offset="0,1.5,1.5" />
+      <Particle Key="Wind" Name="U_Character_02.Sniper.Sniper_Charging_Wind_01_Rend" Direction="0,0,1" Bone="Bip01" Scale="0.75" />
+      <Particle Key="FinalCharging" Name="U_Character_02.Sniper.Sniper_Charging_Trigger" Direction="0,1,0" Bone="R_Weapon_Bone" Scale="0.75" />
+      <Particle Key="FinalChargingPerfect" Name="U_Character_02.Sniper.Sniper_Charging_Trigger" Direction="0,1,0" Bone="R_Weapon_Bone" Scale="1.3" />
+    </ParticleList>
+    <SoundTrigger OnAnimCast="Play_Skill_Sniper_Shoot_Rend" OnHit="Play_Skill_Sniper_Impact_Rend" />
+    <Specific_Sniper>
+      <ChargeSound Trigger="Play_Skill_Sniper_Charge_Phase1_Rend" />
+      <ChargeSound Trigger="Play_Skill_Sniper_Charge_Phase2_Rend" />
+      <ChargeSound Trigger="Play_Skill_Sniper_Charge_Phase3_Rend" />
+      <ChargeSound Trigger="Play_Skill_Sniper_Charge_Phase4_Rend" />
+      <ChargeSound Trigger="Play_Skill_Sniper_Charge_Phase5_Rend" />
+    </Specific_Sniper>
+  </Skill>
+  <Skill UID="player_Sniper_variant_18" ESkill="default_variant">
+    <HUD UIName="@ui_Variant_Sniper_variant_18" Lore="@ui_Variant_Sniper_variant_18_lore" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_Alpha.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_Alpha.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_Alpha.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_Alpha.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_Alpha.png" HUDPictureVariant_InnerIcon="../u_resources/spells/Active_Skills/sniper_Shadow.png" ShowParamsInTooltip="SpecificSniper,DamageWeapon" HUDPicture="../u_resources/spells/Active_Skills/sniper_Shadow.png" VariantBottomPanel="1" />
+    <DamageWeapon WeaponMultiplier="1.25" />
+    <Damage_Conversion>
+      <Entry From="physical" To="lightning" ConversionRate="-100" />
+      <Entry From="physical" To="shadow" ConversionRate="100" />
+    </Damage_Conversion>
+    <WeaponRequirements Requirements="ranged,shadow" />
+    <ParticleList>
+      <Particle Key="ChargingStep1" Name="U_Character_02.Sniper.Sniper_Charging_01_Shadow" Direction="0,1,0" Scale="0.75" Bone="R_Weapon_Bone" />
+      <Particle Key="ChargingStep2" Name="U_Character_02.Sniper.Sniper_Charging_02_Shadow" Direction="0,1,0" Scale="0.75" Bone="R_Weapon_Bone" />
+      <Particle Key="ChargingStep3" Name="U_Character_02.Sniper.Sniper_Charging_02_Shadow" Direction="0,1,0" Scale="0.75" Bone="R_Weapon_Bone" />
+      <Particle Key="ChargingStep4" Name="U_Character_02.Sniper.Sniper_Charging_03_Shadow" Direction="0,1,0" Scale="0.75" Bone="R_Weapon_Bone" />
+      <Particle Key="ChargingStep5" Name="U_Character_02.Sniper.Sniper_Charging_03_Shadow" Direction="0,1,0" Scale="0.75" Bone="R_Weapon_Bone" />
+      <Particle Key="FireStep1" Name="U_Character_02.Sniper.Sniper_Projectile_01_Shadow" Direction="0,1,0" Offset="0,0,1.25" />
+      <Particle Key="FireStep2" Name="U_Character_02.Sniper.Sniper_Projectile_02_Shadow" Direction="0,1,0" Offset="0,0,1.25" />
+      <Particle Key="FireStep3" Name="U_Character_02.Sniper.Sniper_Projectile_03_Shadow" Direction="0,1,0" Offset="0,0,1.25" />
+      <Particle Key="FireStep4" Name="U_Character_02.Sniper.Sniper_Projectile_04_Shadow" Direction="0,1,0" Offset="0,0,1.25" />
+      <Particle Key="FireStep5" Name="U_Character_02.Sniper.Sniper_Projectile_05_Shadow" Direction="0,1,0" Offset="0,0,1.25" />
+      <Particle Key="Trail5" Name="U_Character_02.Sniper.Sniper_Projectile_05_Under_Damage_Shadow" Direction="0,1,0" />
+      <Particle Key="Gun" Name="U_Character_02.Sniper.Summon_Sniper_01_Loop_Shadow" Direction="0,1,0" Bone="R_Weapon_Bone" />
+      <Particle Key="GunDisapear" Name="U_Character_02.Sniper.Summon_Sniper_01_End_Shadow" Direction="0,1,0" Bone="R_Weapon_Bone" />
+      <Particle Key="PerfectTimingGround" Name="U_Character_02.Sniper.Sniper_Projectile_05_Under_Shadow" Direction="0,1,0" Bone="Bip01" Offset="0,-1.5,0" />
+      <Particle Key="Aura" Name="U_Character_02.Sniper.Sniper_Charging_Aura_01_Shadow" Direction="0,1,0" Bone="R_Weapon_Bone" />
+      <Particle Key="Muzzle" Name="U_Character_02.Sniper.Sniper_Muzzle_01_Shadow" Direction="0,1,0" Scale="1.3" Offset="0,1.5,1.5" />
+      <Particle Key="Wind" Name="U_Character_02.Sniper.Sniper_Charging_Wind_01_Shadow" Direction="0,0,1" Bone="Bip01" Scale="0.75" />
+      <Particle Key="FinalCharging" Name="U_Character_02.Sniper.Sniper_Charging_Trigger" Direction="0,1,0" Bone="R_Weapon_Bone" Scale="0.75" />
+      <Particle Key="FinalChargingPerfect" Name="U_Character_02.Sniper.Sniper_Charging_Trigger" Direction="0,1,0" Bone="R_Weapon_Bone" Scale="1.3" />
+    </ParticleList>
+    <SoundTrigger OnAnimCast="Play_Skill_Sniper_Shoot_Shadow" OnHit="Play_Skill_Sniper_Impact_Shadow" />
+    <Specific_Sniper>
+      <ChargeSound Trigger="Play_Skill_Sniper_Charge_Phase1_Shadow" />
+      <ChargeSound Trigger="Play_Skill_Sniper_Charge_Phase2_Shadow" />
+      <ChargeSound Trigger="Play_Skill_Sniper_Charge_Phase3_Shadow" />
+      <ChargeSound Trigger="Play_Skill_Sniper_Charge_Phase4_Shadow" />
+      <ChargeSound Trigger="Play_Skill_Sniper_Charge_Phase5_Shadow" />
+    </Specific_Sniper>
+  </Skill>
+  <Skill UID="Player_Sniper_variant_19" ESkill="default_variant">
+    <HUD UIName="@ui_variant_Player_Sniper_variant_19" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_003.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_003.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_003.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_003.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_003.png" ShowParamsInTooltip="DamageWeapon" />
+    <DamageCritical CriticalInflictScoreModifier="40" />
   </Skill>
 </MetaData>

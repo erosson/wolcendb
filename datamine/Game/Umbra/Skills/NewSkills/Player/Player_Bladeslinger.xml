@@ -2,18 +2,21 @@
   <Skill UID="player_bladeslinger" ESkill="player_bladeslinger" Keywords="projectile,attack_skill,additional_projectile">
     <WeaponRequirements Requirements="rogue," />
     <Animation ActionString="player_skill_bladeslinger" ScaleWithSpellCastingSpeed="1" AnimationDrivenMovement="1" IgnoreAnimationMovementWhenHoldingShift="1" />
-    <HUD HUDPicture="../u_resources/spells/Active_Skills/bladeslinger.png" UIName="@ui_AST_Bladeslinger" Lore="@ui_AST_Bladeslinger_Lore" ActiveEffectTitle="" ActiveEffectDesc="" ASTTreeNumber="0" ShowParamsInAST="Cost,ROSTime,Cooldown,Range,DamageWeapon,DamageDetail,StatusAilmentsChance,Slow,Charges" ShowParamsInTooltip="Cost,Cooldown,DamageOverview,StatusAilmentsChance,Slow,Charges" />
+    <HUD HUDPicture="../u_resources/spells/Active_Skills/bladeslinger_Physical.png" UIName="@ui_AST_Bladeslinger" Lore="@ui_AST_Bladeslinger_Lore" ActiveEffectTitle="" ActiveEffectDesc="" ASTTreeNumber="0" ShowParamsInAST="Cost,ROSTime,Cooldown,Range,DamageWeapon,DamageDetail,StatusAilmentsChance,Slow,Charges" ShowParamsInTooltip="Cost,Cooldown,DamageOverview,StatusAilmentsChance,Slow,Charges" />
     <Enneract PickableParticle_MoveToGround="U_CommonVFX_02.Esseract.Esseract_Projectile.Physical" PickableParticle_OnGround_Shape="U_CommonVFX_02.Esseract.Esseract_Shape.Circle_Physical" PickableParticle_OnGround_Damage="U_CommonVFX_02.Esseract.Esseract_Color.Physical" PickableParticle_OnGround_Symbol="U_CommonVFX_02.Esseract.Esseract_Symbol.HEPHAARON" PickableParticle_OnGround_Indicator="U_CommonVFX_02.Esseract.Esseract_Indicator.Physical" PickableParticle_OnGround_Pickup="U_CommonVFX_02.Esseract.Esseract_Loot.Physical" SkillLearningParticle="U_CommonVFX.Skill_Learn.Skill_Learn_Physical" Inventory_HUDPicture="../u_resources/enneracts/bladeslinger.png" Inventory_LoreDesc="@ui_enneract_lore" />
     <ParticleList>
-      <Particle Key="Impact" Name="U_Character.Skills.Bladeslinger_Stuck_Impact_01" Direction="0,1,0" />
+      <Particle Key="Impact" Name="U_Character.Skills.Bladeslinger_Stuck_Impact_01" Direction="0,1,0" Scale="1.67" />
       <Particle Key="Trail" Name="U_CommonVFX.Impact_Ground_Loop.Impact_01_3Sec_Physical" Direction="0,0,1" Scale="0.7" />
       <Particle Key="Explosion" Name="U_CommonVFX.Impact_Ground.Physical_01_Blue_3M" Direction="0,0,1" />
+      <Particle Key="Body" Name="U_Projectile.Summon.SpreadShot_Explosion_01" Direction="0,1,0" Scale="1.3" Bone="Bip01_Spine2" />
+      <Particle Key="Stuck" Name="U_Character.Skills.Bladeslinger_Stuck_Mesh_01" Direction="0,1,0" />
+      <Particle Key="Disappear" Name="U_Character.Skills.Bladeslinger_Summon_01_Short" Direction="0,0,1" Scale="1" />
     </ParticleList>
     <CastingParams CastBone="R_weapon_bone" />
     <Aggression TargetValueOnHit="20" />
-    <DamageWeapon PercentMin="200" PercentMinPerLevel="0" PercentMax="200" PercentMaxPerLevel="0" />
+    <DamageWeapon WeaponMultiplier="2" />
     <Cooldown Cooldown="0" CooldownPerLevel="0" />
-    <Range AttackRange="15" />
+    <Range AttackRange="25" />
     <Projectile Name="player_bladeslinger_proj" ProjectileCount="1" AngleBetweenProjectiles="20" PenetrationLimit="999">
       <AutomaticCastAngle distanceMin="2" distanceMax="7" totalAngleAtDistanceMin="120" totalAngleAtDistanceMax="120" projectileAngleAtDistanceMin="70" projectileAngleAtDistanceMax="15" />
     </Projectile>
@@ -23,9 +26,12 @@
     <VisualFeedback TrailPresetBase="default" FeedbackPresetBase="Player_skill_bladeslinger" BloodDecalOrientation="forward" />
     <Collisions IgnoreTerrainCollisions="1" />
   </Skill>
+  <Skill UID="player_bladeslinger_variant_default_damage_type" ESkill="default_variant">
+    <HUD UIName="@ui_AST_Bladeslinger" Lore="@ui_AST_Bladeslinger_Lore" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_Alpha.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_Alpha.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_Alpha.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_Alpha.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_Alpha.png" HUDPictureVariant_InnerIcon="../u_resources/spells/Active_Skills/bladeslinger_Physical.png" VariantBottomPanel="1" />
+  </Skill>
   <Skill UID="player_bladeslinger_variant_1" ESkill="default_variant">
     <HUD UIName="@ui_Variant_Bladeslinger_variant_1" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_001.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_001.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_001.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_001.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_001.png" ShowParamsInTooltip="SpecificBladeslinger,DamageWeapon" />
-    <DamageWeapon PercentMax="20" PercentMin="20" />
+    <DamageWeapon WeaponMultiplier="1.15" />
   </Skill>
   <Skill UID="player_bladeslinger_variant_2" ESkill="default_variant">
     <HUD UIName="@ui_Variant_Bladeslinger_variant_2" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_001.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_001.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_001.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_001.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_001.png" ShowParamsInTooltip="SpecificBladeslinger,Charges" />
@@ -33,37 +39,21 @@
   </Skill>
   <Skill UID="player_bladeslinger_variant_3" ESkill="default_variant">
     <HUD UIName="@ui_Variant_Bladeslinger_variant_3" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_003.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_003.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_003.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_003.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_003.png" ShowParamsInTooltip="SpecificBladeslinger" />
-    <Specific_Bladeslinger Big="1" />
+    <Projectile Name="player_bladeslinger_proj_big" />
+    <EventEffectOverride>
+      <AnimEvent Original="U_Character.Skills.Bladeslinger_Summon_01" OverrideScale="1.6" />
+      <AnimEvent Original="U_Character.Skills.Bladeslinger_Summon_01_Short" OverrideScale="1.6" />
+    </EventEffectOverride>
     <ParticleList>
-      <Particle Key="Explosion" Name="U_CommonVFX.Impact_Ground.Physical_01_Blue_3M" Direction="0,0,1" Scale="1.25" />
-      <Particle Key="Trail" Name="U_CommonVFX.Impact_Ground_Loop.Impact_01_3Sec_Physical" Direction="0,0,1" Scale="1.428" />
+      <Particle Key="Explosion" Name="U_CommonVFX.Impact_Ground.Physical_01_Blue_3M" Direction="0,0,1" Scale="2" />
+      <Particle Key="Trail" Name="U_CommonVFX.Impact_Ground_Loop.Impact_01_3Sec_Physical" Direction="0,0,1" Scale="1" />
+      <Particle Key="Disappear" Name="U_Character.Skills.Bladeslinger_Summon_01_Short" Direction="0,0,1" Scale="1.6" />
     </ParticleList>
-  </Skill>
-  <Skill UID="player_bladeslinger_variant_3,player_bladeslinger_variant_9" ESkill="default_variant_combo">
-    <Specific_Bladeslinger TrailRadius="0.75" />
-  </Skill>
-  <Skill UID="player_bladeslinger_variant_3,player_bladeslinger_variant_11" ESkill="default_variant_combo">
-    <Specific_Bladeslinger ExplosionRadius="1" />
   </Skill>
   <Skill UID="player_bladeslinger_variant_4" ESkill="default_variant">
     <HUD UIName="@ui_Variant_Bladeslinger_variant_4" Lore="@ui_Variant_Bladeslinger_variant_4_Lore" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_005.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_005.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_005.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_005.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_005.png" ShowParamsInTooltip="SpecificBladeslinger" />
-    <Specific_Bladeslinger Chakram="1" SetupProjectile_vTarget="1" />
-  </Skill>
-  <Skill UID="player_bladeslinger_variant_5" ESkill="default_variant">
-    <HUD UIName="@ui_Variant_Bladeslinger_variant_5" Lore="@ui_Variant_Bladeslinger_variant_5_Lore" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_005.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_005.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_005.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_005.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_005.png" ShowParamsInTooltip="SpecificBladeslinger,DamageDetail,StatusAilmentsChance" />
-    <ParticleList>
-      <Particle Key="Impact" Name="U_Character.Skills.Bladeslinger_Stuck_Impact_01_Poison" Direction="0,1,0" />
-      <Particle Key="Explosion" Name="U_Monster.Trapper.Explosion_Bomb_01_Poison_3m" Direction="0,0,1" />
-      <Particle Key="Trail" Name="U_CommonVFX.Impact_Ground_Loop.Impact_01_3Sec_Poison" Direction="0,0,1" />
-    </ParticleList>
-    <Specific_Bladeslinger Poison="1" />
-    <Damage_Conversion>
-      <Entry From="physical" To="toxic" ConversionRate="100" />
-    </Damage_Conversion>
-    <WeaponRequirements Requirements="rogue,poison" />
-    <StatusAilment>
-      <poison Stacks="1" StacksMode="AddToBase" />
-    </StatusAilment>
+    <Specific_Bladeslinger SetupProjectile_vTarget="1" />
+    <Projectile Name="player_bladeslinger_proj_chakram" />
   </Skill>
   <Skill UID="player_bladeslinger_variant_6" ESkill="default_variant">
     <HUD UIName="@ui_Variant_Bladeslinger_variant_6" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_003.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_003.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_003.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_003.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_003.png" ShowParamsInTooltip="SpecificBladeslinger,Charges" />
@@ -71,8 +61,12 @@
   </Skill>
   <Skill UID="player_bladeslinger_variant_7" ESkill="default_variant">
     <HUD UIName="@ui_Variant_Bladeslinger_variant_7" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_003.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_003.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_003.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_003.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_003.png" ShowParamsInTooltip="SpecificBladeslinger,Slow" />
-    <Specific_Bladeslinger Bolas="1" />
     <StatusEffect_MovementSpeed SlowPercent="100" Duration="2" />
+    <Projectile Name="player_bladeslinger_proj_bolas" />
+    <EventEffectOverride>
+      <AnimEvent Original="U_Character.Skills.Bladeslinger_Summon_01" Override="U_Character.Skills.Bladeslinger_Summon_01_Bola" />
+      <AnimEvent Original="U_Character.Skills.Bladeslinger_Summon_01_Short" Override="U_Character.Skills.Bladeslinger_Summon_01_Short_Bola" />
+    </EventEffectOverride>
   </Skill>
   <Skill UID="player_bladeslinger_variant_8" ESkill="default_variant">
     <HUD UIName="@ui_Variant_Bladeslinger_variant_8" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_003.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_003.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_003.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_003.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_003.png" ShowParamsInTooltip="SpecificBladeslinger" />
@@ -80,12 +74,14 @@
       <Particle Key="TeleportIndicator" Name="U_Character.Skills.Bladeslinger_Spining_02" Offset="0,0,0" Direction="0,1,0" />
       <Particle Key="TeleportTrail" Name="U_Character.Skills.Bladeslinger_Move_01" Bone="Bip01" Offset="0,0,1.5" Direction="0,1,0" />
     </ParticleList>
-    <Specific_Bladeslinger TeleportOnRecast="1" TeleportSpeed="10" TeleportActionString_In="player_skill_bladeslinger_tp_in" TeleportActionString_Loop="player_skill_bladeslinger_tp_loop" TeleportActionString_Out="player_skill_bladeslinger_tp_out" />
+    <Specific_Bladeslinger TeleportSpeed="20" TeleportActionString_In="player_skill_bladeslinger_tp_in" TeleportActionString_Loop="player_skill_bladeslinger_tp_loop" TeleportActionString_Out="player_skill_bladeslinger_tp_out" />
+    <Recast Cooldown="0" />
   </Skill>
   <Skill UID="player_bladeslinger_variant_9" ESkill="default_variant">
     <HUD UIName="@ui_Variant_Bladeslinger_variant_9" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_003.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_003.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_003.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_003.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_003.png" ShowParamsInTooltip="SpecificBladeslinger" />
     <DamageZone Duration="3" RateOfFire="0.33" />
     <Specific_Bladeslinger TrailRadius="1.5" TrailDamageMultiplier="0.25" />
+    <StatusAilment AilmentEffectiveness="33" />
   </Skill>
   <Skill UID="player_bladeslinger_variant_10" ESkill="default_variant">
     <HUD UIName="@ui_Variant_Bladeslinger_variant_10" Lore="@ui_Variant_Bladeslinger_variant_10_lore" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_005.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_005.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_005.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_005.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_005.png" ShowParamsInTooltip="SpecificBladeslinger" />
@@ -93,28 +89,11 @@
   </Skill>
   <Skill UID="player_bladeslinger_variant_11" ESkill="default_variant">
     <HUD UIName="@ui_Variant_Bladeslinger_variant_11" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_003.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_003.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_003.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_003.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_003.png" ShowParamsInTooltip="SpecificBladeslinger" />
-    <ParticleList>
-      <Particle Key="Stuck" Name="U_Character.Skills.Bladeslinger_Stuck_Mesh_01" Direction="0,1,0" />
-      <Particle Key="Body" Name="U_Projectile.Summon.SpreadShot_Explosion_01" Direction="0,1,0" Scale="1.3" Bone="Bip01_Spine2" />
-    </ParticleList>
-    <Specific_Bladeslinger PlantedExplosionTime="1.2" ExplosionDamageMultiplier="2.0" ExplosionRadius="3" />
-  </Skill>
-  <Skill UID="player_bladeslinger_variant_12" ESkill="default_variant">
-    <HUD UIName="@ui_Variant_Bladeslinger_variant_12" Lore="@ui_Variant_Bladeslinger_variant_12_Lore" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_005.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_005.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_005.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_005.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_005.png" ShowParamsInTooltip="SpecificBladeslinger,DamageWeapon" />
-    <ParticleList>
-      <Particle Key="Impact" Name="U_Character.Skills.Bladeslinger_Stuck_Impact_01_Frost" Direction="0,1,0" />
-      <Particle Key="Explosion" Name="U_VFX_Temp.Temp_Chaguk.IceNova_Medium" Direction="0,0,1" />
-      <Particle Key="Trail" Name="U_CommonVFX.Impact_Ground_Loop.Impact_01_3Sec_Frost" Direction="0,0,1" />
-    </ParticleList>
-    <Specific_Bladeslinger Frost="1" />
-    <Damage_Conversion>
-      <Entry From="physical" To="frost" ConversionRate="100" />
-    </Damage_Conversion>
-    <DamageWeapon PercentMin="20" PercentMinPerLevel="0" PercentMax="20" PercentMaxPerLevel="0" />
+    <Specific_Bladeslinger PlantedExplosionTime="0.5" ExplosionDamageMultiplier="3" ExplosionRadius="5" />
   </Skill>
   <Skill UID="player_bladeslinger_variant_13" ESkill="default_variant">
     <HUD UIName="@ui_Variant_Bladeslinger_variant_13" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_001.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_001.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_001.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_001.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_001.png" ShowParamsInTooltip="SpecificBladeslinger,DamageWeapon" />
-    <DamageWeapon PercentMin="10" PercentMinPerLevel="0" PercentMax="10" PercentMaxPerLevel="0" />
+    <DamageWeapon WeaponMultiplier="1.15" />
   </Skill>
   <Skill UID="player_bladeslinger_variant_14" ESkill="default_variant">
     <HUD UIName="@ui_Variant_Bladeslinger_variant_14" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_001.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_001.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_001.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_001.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_001.png" ShowParamsInTooltip="SpecificBladeslinger,DamageCritical" />
@@ -127,5 +106,379 @@
   <Skill UID="player_bladeslinger_variant_16" ESkill="default_variant">
     <HUD UIName="@ui_Variant_Bladeslinger_variant_16" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_001.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_001.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_001.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_001.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_001.png" ShowParamsInTooltip="SpecificBladeslinger,StatusAilmentsChance" />
     <StatusAilment AllAilmentsInflictDamageIncreasePercent="40" />
+  </Skill>
+  <Skill UID="player_bladeslinger_variant_5" ESkill="default_variant">
+    <HUD UIName="@ui_Variant_Bladeslinger_variant_5" Lore="@ui_Variant_Bladeslinger_variant_5_Lore" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_Alpha.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_Alpha.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_Alpha.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_Alpha.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_Alpha.png" HUDPictureVariant_InnerIcon="../u_resources/spells/Active_Skills/bladeslinger_Toxic.png" ShowParamsInTooltip="SpecificBladeslinger,DamageWeapon" HUDPicture="../u_resources/spells/Active_Skills/bladeslinger_Toxic.png" VariantBottomPanel="1" />
+    <ParticleList>
+      <Particle Key="Impact" Name="U_Character.Skills.Bladeslinger_Stuck_Impact_01_Poison" Direction="0,1,0" />
+      <Particle Key="Explosion" Name="U_Monster.Trapper.Explosion_Bomb_01_Poison_3m" Direction="0,0,1" Scale="1.67" />
+      <Particle Key="Trail" Name="U_CommonVFX.Impact_Ground_Loop.Impact_01_3Sec_Poison" Direction="0,0,1" Scale="0.7" />
+    </ParticleList>
+    <EventEffectOverride>
+      <AnimEvent Original="U_Character.Skills.Bladeslinger_Summon_01" Override="U_Character.Skills.Bladeslinger_Summon_01_Poison" />
+      <AnimEvent Original="U_Character.Skills.Bladeslinger_Summon_01_Short" Override="U_Character.Skills.Bladeslinger_Summon_01_Short_Poison" />
+    </EventEffectOverride>
+    <Damage_Conversion>
+      <Entry From="physical" To="toxic" ConversionRate="100" />
+    </Damage_Conversion>
+    <Projectile Name="player_bladeslinger_proj_poison" />
+    <WeaponRequirements Requirements="rogue,poison" />
+    <DamageWeapon WeaponMultiplier="1.25" />
+    <SoundTrigger OnAnimStart="Play_Skill_Bladeslinger_Summon_Toxic" OnAnimCast="Play_Skill_Bladeslinger_Throw_Toxic" />
+  </Skill>
+  <Skill UID="player_bladeslinger_variant_12" ESkill="default_variant">
+    <HUD UIName="@ui_Variant_Bladeslinger_variant_12" Lore="@ui_Variant_Bladeslinger_variant_12_Lore" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_Alpha.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_Alpha.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_Alpha.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_Alpha.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_Alpha.png" HUDPictureVariant_InnerIcon="../u_resources/spells/Active_Skills/bladeslinger_Frost.png" ShowParamsInTooltip="SpecificBladeslinger,DamageWeapon" HUDPicture="../u_resources/spells/Active_Skills/bladeslinger_Frost.png" VariantBottomPanel="1" />
+    <ParticleList>
+      <Particle Key="Impact" Name="U_Character.Skills.Bladeslinger_Stuck_Impact_01_Frost" Direction="0,1,0" />
+      <Particle Key="Explosion" Name="U_VFX_Temp.Temp_Chaguk.IceNova_Medium" Direction="0,0,1" Scale="1.67" />
+      <Particle Key="Trail" Name="U_CommonVFX.Impact_Ground_Loop.Impact_01_3Sec_Frost" Direction="0,0,1" Scale="0.7" />
+    </ParticleList>
+    <EventEffectOverride>
+      <AnimEvent Original="U_Character.Skills.Bladeslinger_Summon_01" Override="U_Character.Skills.Bladeslinger_Summon_01_Frost" />
+      <AnimEvent Original="U_Character.Skills.Bladeslinger_Summon_01_Short" Override="U_Character.Skills.Bladeslinger_Summon_01_Short_Frost" />
+    </EventEffectOverride>
+    <Damage_Conversion>
+      <Entry From="physical" To="frost" ConversionRate="100" />
+    </Damage_Conversion>
+    <Projectile Name="player_bladeslinger_proj_frost" />
+    <WeaponRequirements Requirements="rogue,frost" />
+    <DamageWeapon WeaponMultiplier="1.25" />
+    <SoundTrigger OnAnimStart="Play_Skill_Bladeslinger_Summon_Frost" OnAnimCast="Play_Skill_Bladeslinger_Throw_Frost" />
+  </Skill>
+  <Skill UID="player_bladeslinger_variant_17" ESkill="default_variant">
+    <HUD UIName="@ui_Variant_Bladeslinger_variant_17" Lore="@ui_Variant_Bladeslinger_variant_17_Lore" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_Alpha.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_Alpha.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_Alpha.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_Alpha.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_Alpha.png" HUDPictureVariant_InnerIcon="../u_resources/spells/Active_Skills/bladeslinger_Aether.png" ShowParamsInTooltip="SpecificBladeslinger,DamageWeapon" HUDPicture="../u_resources/spells/Active_Skills/bladeslinger_Aether.png" VariantBottomPanel="1" />
+    <ParticleList>
+      <Particle Key="Impact" Name="U_Character.Skills.Bladeslinger_Stuck_Impact_01_Aether" Direction="0,1,0" />
+      <Particle Key="Explosion" Name="U_Monster.Trapper.Explosion_Bomb_01_Aether_3M" Direction="0,0,1" Scale="1.67" />
+      <Particle Key="Trail" Name="U_CommonVFX.Impact_Ground_Loop.Impact_01_3Sec_Aether" Direction="0,0,1" Scale="0.7" />
+    </ParticleList>
+    <EventEffectOverride>
+      <AnimEvent Original="U_Character.Skills.Bladeslinger_Summon_01" Override="U_Character.Skills.Bladeslinger_Summon_01_Aether" />
+      <AnimEvent Original="U_Character.Skills.Bladeslinger_Summon_01_Short" Override="U_Character.Skills.Bladeslinger_Summon_01_Short_Aether" />
+    </EventEffectOverride>
+    <Damage_Conversion>
+      <Entry From="physical" To="umbra" ConversionRate="100" />
+    </Damage_Conversion>
+    <Projectile Name="player_bladeslinger_proj_aether" />
+    <WeaponRequirements Requirements="rogue,umbra" />
+    <DamageWeapon WeaponMultiplier="1.25" />
+    <SoundTrigger OnAnimStart="Play_Skill_BladeSlinger_Summon_Aether" OnAnimCast="Play_Skill_BladeSlinger_Throw_Aether" />
+  </Skill>
+  <Skill UID="player_bladeslinger_variant_18" ESkill="default_variant">
+    <HUD UIName="@ui_Variant_Bladeslinger_variant_18" Lore="@ui_Variant_Bladeslinger_variant_18_Lore" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_Alpha.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_Alpha.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_Alpha.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_Alpha.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_Alpha.png" HUDPictureVariant_InnerIcon="../u_resources/spells/Active_Skills/bladeslinger_Lightning.png" ShowParamsInTooltip="SpecificBladeslinger,DamageWeapon" HUDPicture="../u_resources/spells/Active_Skills/bladeslinger_Lightning.png" VariantBottomPanel="1" />
+    <ParticleList>
+      <Particle Key="Impact" Name="U_Character.Skills.Bladeslinger_Stuck_Impact_01_Lightning" Direction="0,1,0" />
+      <Particle Key="Explosion" Name="U_Monster.Trapper.Explosion_Bomb_01_Lightning_3M" Direction="0,0,1" Scale="1.67" />
+      <Particle Key="Trail" Name="U_CommonVFX.Impact_Ground_Loop.Impact_01_3Sec_Lightning" Direction="0,0,1" Scale="0.7" />
+    </ParticleList>
+    <EventEffectOverride>
+      <AnimEvent Original="U_Character.Skills.Bladeslinger_Summon_01" Override="U_Character.Skills.Bladeslinger_Summon_01_Lightning" />
+      <AnimEvent Original="U_Character.Skills.Bladeslinger_Summon_01_Short" Override="U_Character.Skills.Bladeslinger_Summon_01_Short_Lightning" />
+    </EventEffectOverride>
+    <Damage_Conversion>
+      <Entry From="physical" To="lightning" ConversionRate="100" />
+    </Damage_Conversion>
+    <Projectile Name="player_bladeslinger_proj_lightning" />
+    <WeaponRequirements Requirements="rogue,lightning" />
+    <DamageWeapon WeaponMultiplier="1.25" />
+    <SoundTrigger OnAnimStart="Play_Skill_Bladeslinger_Summon_Lightning" OnAnimCast="Play_Skill_BladeSlinger_Throw_Lightning" />
+  </Skill>
+  <Skill UID="Player_Bladeslinger_variant_19" ESkill="default_variant">
+    <HUD UIName="@ui_variant_player_bladeslinger_variant_19" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_003.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_003.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_003.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_003.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_003.png" ShowParamsInTooltip="DamageWeapon" />
+    <DamageWeapon WeaponMultiplier="1.15" />
+  </Skill>
+  <Skill UID="Player_Bladeslinger_variant_20" ESkill="default_variant">
+    <HUD UIName="@ui_variant_player_bladeslinger_variant_20" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_003.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_003.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_003.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_003.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_003.png" ShowParamsInTooltip="DamageWeapon" />
+    <StatusAilment AilmentEffectiveness="125" />
+  </Skill>
+  <Skill UID="player_bladeslinger_variant_3,player_bladeslinger_variant_9" ESkill="default_variant_combo">
+    <Specific_Bladeslinger TrailRadius="0.75" />
+  </Skill>
+  <Skill UID="player_bladeslinger_variant_3,player_bladeslinger_variant_11" ESkill="default_variant_combo">
+    <Specific_Bladeslinger ExplosionRadius="2" />
+  </Skill>
+  <Skill UID="player_bladeslinger_variant_3,player_bladeslinger_variant_4" ESkill="default_variant_combo">
+    <Projectile Name="player_bladeslinger_proj_big_chakram" />
+  </Skill>
+  <Skill UID="player_bladeslinger_variant_3,player_bladeslinger_variant_7" ESkill="default_variant_combo">
+    <Projectile Name="player_bladeslinger_proj_big_bolas" />
+    <EventEffectOverride>
+      <AnimEvent Original="U_Character.Skills.Bladeslinger_Summon_01" Override="U_Character.Skills.Bladeslinger_Summon_01_Bola" OverrideScale="1.6" />
+      <AnimEvent Original="U_Character.Skills.Bladeslinger_Summon_01_Short" Override="U_Character.Skills.Bladeslinger_Summon_01_Short_Bola" OverrideScale="1.6" />
+    </EventEffectOverride>
+  </Skill>
+  <Skill UID="player_bladeslinger_variant_3,player_bladeslinger_variant_5" ESkill="default_variant_combo">
+    <Projectile Name="player_bladeslinger_proj_big_poison" />
+    <EventEffectOverride>
+      <AnimEvent Original="U_Character.Skills.Bladeslinger_Summon_01" Override="U_Character.Skills.Bladeslinger_Summon_01_Poison" OverrideScale="1.6" />
+      <AnimEvent Original="U_Character.Skills.Bladeslinger_Summon_01_Short" Override="U_Character.Skills.Bladeslinger_Summon_01_Short_Poison" OverrideScale="1.6" />
+    </EventEffectOverride>
+  </Skill>
+  <Skill UID="player_bladeslinger_variant_3,player_bladeslinger_variant_12" ESkill="default_variant_combo">
+    <Projectile Name="player_bladeslinger_proj_big_frost" />
+    <EventEffectOverride>
+      <AnimEvent Original="U_Character.Skills.Bladeslinger_Summon_01" Override="U_Character.Skills.Bladeslinger_Summon_01_Frost" OverrideScale="1.6" />
+      <AnimEvent Original="U_Character.Skills.Bladeslinger_Summon_01_Short" Override="U_Character.Skills.Bladeslinger_Summon_01_Short_Frost" OverrideScale="1.6" />
+    </EventEffectOverride>
+  </Skill>
+  <Skill UID="player_bladeslinger_variant_3,player_bladeslinger_variant_17" ESkill="default_variant_combo">
+    <Projectile Name="player_bladeslinger_proj_big_aether" />
+    <EventEffectOverride>
+      <AnimEvent Original="U_Character.Skills.Bladeslinger_Summon_01" Override="U_Character.Skills.Bladeslinger_Summon_01_Aether" OverrideScale="1.6" />
+      <AnimEvent Original="U_Character.Skills.Bladeslinger_Summon_01_Short" Override="U_Character.Skills.Bladeslinger_Summon_01_Short_Aether" OverrideScale="1.6" />
+    </EventEffectOverride>
+  </Skill>
+  <Skill UID="player_bladeslinger_variant_3,player_bladeslinger_variant_18" ESkill="default_variant_combo">
+    <Projectile Name="player_bladeslinger_proj_big_lightning" />
+    <EventEffectOverride>
+      <AnimEvent Original="U_Character.Skills.Bladeslinger_Summon_01" Override="U_Character.Skills.Bladeslinger_Summon_01_Lightning" OverrideScale="1.6" />
+      <AnimEvent Original="U_Character.Skills.Bladeslinger_Summon_01_Short" Override="U_Character.Skills.Bladeslinger_Summon_01_Short_Lightning" OverrideScale="1.6" />
+    </EventEffectOverride>
+  </Skill>
+  <Skill UID="player_bladeslinger_variant_4,player_bladeslinger_variant_7" ESkill="default_variant_combo">
+    <Projectile Name="player_bladeslinger_proj_chakram_bolas" />
+    <EventEffectOverride>
+      <AnimEvent Original="U_Character.Skills.Bladeslinger_Summon_01" Override="U_Character.Skills.Bladeslinger_Summon_01_Bola" />
+      <AnimEvent Original="U_Character.Skills.Bladeslinger_Summon_01_Short" Override="U_Character.Skills.Bladeslinger_Summon_01_Short_Bola" />
+    </EventEffectOverride>
+  </Skill>
+  <Skill UID="player_bladeslinger_variant_4,player_bladeslinger_variant_5" ESkill="default_variant_combo">
+    <Projectile Name="player_bladeslinger_proj_chakram_poison" />
+  </Skill>
+  <Skill UID="player_bladeslinger_variant_4,player_bladeslinger_variant_12" ESkill="default_variant_combo">
+    <Projectile Name="player_bladeslinger_proj_chakram_frost" />
+  </Skill>
+  <Skill UID="player_bladeslinger_variant_4,player_bladeslinger_variant_17" ESkill="default_variant_combo">
+    <Projectile Name="player_bladeslinger_proj_chakram_aether" />
+  </Skill>
+  <Skill UID="player_bladeslinger_variant_4,player_bladeslinger_variant_18" ESkill="default_variant_combo">
+    <Projectile Name="player_bladeslinger_proj_chakram_lightning" />
+  </Skill>
+  <Skill UID="player_bladeslinger_variant_7,player_bladeslinger_variant_5" ESkill="default_variant_combo">
+    <Projectile Name="player_bladeslinger_proj_poison_bolas" />
+    <EventEffectOverride>
+      <AnimEvent Original="U_Character.Skills.Bladeslinger_Summon_01" Override="U_Character.Skills.Bladeslinger_Summon_01_Bola_Poison" />
+      <AnimEvent Original="U_Character.Skills.Bladeslinger_Summon_01_Short" Override="U_Character.Skills.Bladeslinger_Summon_01_Short_Bola_Poison" />
+    </EventEffectOverride>
+  </Skill>
+  <Skill UID="player_bladeslinger_variant_7,player_bladeslinger_variant_12" ESkill="default_variant_combo">
+    <Projectile Name="player_bladeslinger_proj_frost_bolas" />
+    <EventEffectOverride>
+      <AnimEvent Original="U_Character.Skills.Bladeslinger_Summon_01" Override="U_Character.Skills.Bladeslinger_Summon_01_Bola_Frost" />
+      <AnimEvent Original="U_Character.Skills.Bladeslinger_Summon_01_Short" Override="U_Character.Skills.Bladeslinger_Summon_01_Short_Bola_Frost" />
+    </EventEffectOverride>
+  </Skill>
+  <Skill UID="player_bladeslinger_variant_7,player_bladeslinger_variant_17" ESkill="default_variant_combo">
+    <Projectile Name="player_bladeslinger_proj_aether_bolas" />
+    <EventEffectOverride>
+      <AnimEvent Original="U_Character.Skills.Bladeslinger_Summon_01" Override="U_Character.Skills.Bladeslinger_Summon_01_Bola_Aether" />
+      <AnimEvent Original="U_Character.Skills.Bladeslinger_Summon_01_Short" Override="U_Character.Skills.Bladeslinger_Summon_01_Short_Bola_Aether" />
+    </EventEffectOverride>
+  </Skill>
+  <Skill UID="player_bladeslinger_variant_7,player_bladeslinger_variant_18" ESkill="default_variant_combo">
+    <Projectile Name="player_bladeslinger_proj_lightning_bolas" />
+    <EventEffectOverride>
+      <AnimEvent Original="U_Character.Skills.Bladeslinger_Summon_01" Override="U_Character.Skills.Bladeslinger_Summon_01_Bola_Lightning" />
+      <AnimEvent Original="U_Character.Skills.Bladeslinger_Summon_01_Short" Override="U_Character.Skills.Bladeslinger_Summon_01_Short_Bola_Lightning" />
+    </EventEffectOverride>
+  </Skill>
+  <Skill UID="player_bladeslinger_variant_3,player_bladeslinger_variant_4,player_bladeslinger_variant_5" ESkill="default_variant_combo">
+    <Projectile Name="player_bladeslinger_proj_big_chakram_poison" />
+    <EventEffectOverride>
+      <AnimEvent Original="U_Character.Skills.Bladeslinger_Summon_01" Override="U_Character.Skills.Bladeslinger_Summon_01_Bola_Poison" OverrideScale="1.6" />
+      <AnimEvent Original="U_Character.Skills.Bladeslinger_Summon_01_Short" Override="U_Character.Skills.Bladeslinger_Summon_01_Short_Bola_Poison" OverrideScale="1.6" />
+    </EventEffectOverride>
+    <ParticleList>
+      <Particle Key="Impact" Name="U_Character.Skills.Bladeslinger_Stuck_Impact_01_Poison" Direction="0,1,0" />
+      <Particle Key="Explosion" Name="U_Monster.Trapper.Explosion_Bomb_01_Poison_3m" Direction="0,0,1" Scale="2" />
+      <Particle Key="Trail" Name="U_CommonVFX.Impact_Ground_Loop.Impact_01_3Sec_Poison" Direction="0,0,1" Scale="1" />
+    </ParticleList>
+  </Skill>
+  <Skill UID="player_bladeslinger_variant_3,player_bladeslinger_variant_4,player_bladeslinger_variant_12" ESkill="default_variant_combo">
+    <Projectile Name="player_bladeslinger_proj_big_chakram_frost" />
+    <EventEffectOverride>
+      <AnimEvent Original="U_Character.Skills.Bladeslinger_Summon_01" Override="U_Character.Skills.Bladeslinger_Summon_01_Bola_Frost" OverrideScale="1.6" />
+      <AnimEvent Original="U_Character.Skills.Bladeslinger_Summon_01_Short" Override="U_Character.Skills.Bladeslinger_Summon_01_Short_Bola_Frost" OverrideScale="1.6" />
+    </EventEffectOverride>
+    <ParticleList>
+      <Particle Key="Impact" Name="U_Character.Skills.Bladeslinger_Stuck_Impact_01_Frost" Direction="0,1,0" />
+      <Particle Key="Explosion" Name="U_VFX_Temp.Temp_Chaguk.IceNova_Medium" Direction="0,0,1" Scale="2" />
+      <Particle Key="Trail" Name="U_CommonVFX.Impact_Ground_Loop.Impact_01_3Sec_Frost" Direction="0,0,1" Scale="1" />
+    </ParticleList>
+  </Skill>
+  <Skill UID="player_bladeslinger_variant_3,player_bladeslinger_variant_4,player_bladeslinger_variant_17" ESkill="default_variant_combo">
+    <Projectile Name="player_bladeslinger_proj_big_chakram_aether" />
+    <EventEffectOverride>
+      <AnimEvent Original="U_Character.Skills.Bladeslinger_Summon_01" Override="U_Character.Skills.Bladeslinger_Summon_01_Bola_Aether" OverrideScale="1.6" />
+      <AnimEvent Original="U_Character.Skills.Bladeslinger_Summon_01_Short" Override="U_Character.Skills.Bladeslinger_Summon_01_Short_Bola_Aether" OverrideScale="1.6" />
+    </EventEffectOverride>
+    <ParticleList>
+      <Particle Key="Impact" Name="U_Character.Skills.Bladeslinger_Stuck_Impact_01_Aether" Direction="0,1,0" />
+      <Particle Key="Explosion" Name="U_Monster.Trapper.Explosion_Bomb_01_Aether_3M" Direction="0,0,1" Scale="2" />
+      <Particle Key="Trail" Name="U_CommonVFX.Impact_Ground_Loop.Impact_01_3Sec_Aether" Direction="0,0,1" Scale="1" />
+    </ParticleList>
+  </Skill>
+  <Skill UID="player_bladeslinger_variant_3,player_bladeslinger_variant_4,player_bladeslinger_variant_18" ESkill="default_variant_combo">
+    <Projectile Name="player_bladeslinger_proj_big_chakram_lightning" />
+    <EventEffectOverride>
+      <AnimEvent Original="U_Character.Skills.Bladeslinger_Summon_01" Override="U_Character.Skills.Bladeslinger_Summon_01_Bola_Lightning" OverrideScale="1.6" />
+      <AnimEvent Original="U_Character.Skills.Bladeslinger_Summon_01_Short" Override="U_Character.Skills.Bladeslinger_Summon_01_Short_Bola_Lightning" OverrideScale="1.6" />
+    </EventEffectOverride>
+    <ParticleList>
+      <Particle Key="Impact" Name="U_Character.Skills.Bladeslinger_Stuck_Impact_01_Lightning" Direction="0,1,0" />
+      <Particle Key="Explosion" Name="U_Monster.Trapper.Explosion_Bomb_01_Lightning_3M" Direction="0,0,1" Scale="2" />
+      <Particle Key="Trail" Name="U_CommonVFX.Impact_Ground_Loop.Impact_01_3Sec_Lightning" Direction="0,0,1" Scale="1" />
+    </ParticleList>
+  </Skill>
+  <Skill UID="player_bladeslinger_variant_3,player_bladeslinger_variant_4,player_bladeslinger_variant_7" ESkill="default_variant_combo">
+    <Projectile Name="player_bladeslinger_proj_big_chakram_bolas" />
+    <EventEffectOverride>
+      <AnimEvent Original="U_Character.Skills.Bladeslinger_Summon_01" Override="U_Character.Skills.Bladeslinger_Summon_01_Bola" OverrideScale="1.6" />
+      <AnimEvent Original="U_Character.Skills.Bladeslinger_Summon_01_Short" Override="U_Character.Skills.Bladeslinger_Summon_01_Short_Bola" OverrideScale="1.6" />
+    </EventEffectOverride>
+  </Skill>
+  <Skill UID="player_bladeslinger_variant_3,player_bladeslinger_variant_7,player_bladeslinger_variant_5" ESkill="default_variant_combo">
+    <Projectile Name="player_bladeslinger_proj_big_poison_bolas" />
+    <EventEffectOverride>
+      <AnimEvent Original="U_Character.Skills.Bladeslinger_Summon_01" Override="U_Character.Skills.Bladeslinger_Summon_01_Bola_Poison" OverrideScale="1.6" />
+      <AnimEvent Original="U_Character.Skills.Bladeslinger_Summon_01_Short" Override="U_Character.Skills.Bladeslinger_Summon_01_Short_Bola_Poison" OverrideScale="1.6" />
+    </EventEffectOverride>
+    <ParticleList>
+      <Particle Key="Impact" Name="U_Character.Skills.Bladeslinger_Stuck_Impact_01_Poison" Direction="0,1,0" />
+      <Particle Key="Explosion" Name="U_Monster.Trapper.Explosion_Bomb_01_Poison_3m" Direction="0,0,1" Scale="2" />
+      <Particle Key="Trail" Name="U_CommonVFX.Impact_Ground_Loop.Impact_01_3Sec_Poison" Direction="0,0,1" Scale="1" />
+    </ParticleList>
+  </Skill>
+  <Skill UID="player_bladeslinger_variant_3,player_bladeslinger_variant_7,player_bladeslinger_variant_12" ESkill="default_variant_combo">
+    <Projectile Name="player_bladeslinger_proj_big_frost_bolas" />
+    <EventEffectOverride>
+      <AnimEvent Original="U_Character.Skills.Bladeslinger_Summon_01" Override="U_Character.Skills.Bladeslinger_Summon_01_Bola_Frost" OverrideScale="1.6" />
+      <AnimEvent Original="U_Character.Skills.Bladeslinger_Summon_01_Short" Override="U_Character.Skills.Bladeslinger_Summon_01_Short_Bola_Frost" OverrideScale="1.6" />
+    </EventEffectOverride>
+    <ParticleList>
+      <Particle Key="Impact" Name="U_Character.Skills.Bladeslinger_Stuck_Impact_01_Frost" Direction="0,1,0" />
+      <Particle Key="Explosion" Name="U_VFX_Temp.Temp_Chaguk.IceNova_Medium" Direction="0,0,1" Scale="2" />
+      <Particle Key="Trail" Name="U_CommonVFX.Impact_Ground_Loop.Impact_01_3Sec_Frost" Direction="0,0,1" Scale="1" />
+    </ParticleList>
+  </Skill>
+  <Skill UID="player_bladeslinger_variant_3,player_bladeslinger_variant_7,player_bladeslinger_variant_17" ESkill="default_variant_combo">
+    <Projectile Name="player_bladeslinger_proj_big_aether_bolas" />
+    <EventEffectOverride>
+      <AnimEvent Original="U_Character.Skills.Bladeslinger_Summon_01" Override="U_Character.Skills.Bladeslinger_Summon_01_Bola_Aether" OverrideScale="1.6" />
+      <AnimEvent Original="U_Character.Skills.Bladeslinger_Summon_01_Short" Override="U_Character.Skills.Bladeslinger_Summon_01_Short_Bola_Aether" OverrideScale="1.6" />
+    </EventEffectOverride>
+    <ParticleList>
+      <Particle Key="Impact" Name="U_Character.Skills.Bladeslinger_Stuck_Impact_01_Aether" Direction="0,1,0" />
+      <Particle Key="Explosion" Name="U_Monster.Trapper.Explosion_Bomb_01_Aether_3M" Direction="0,0,1" Scale="2" />
+      <Particle Key="Trail" Name="U_CommonVFX.Impact_Ground_Loop.Impact_01_3Sec_Aether" Direction="0,0,1" Scale="1" />
+    </ParticleList>
+  </Skill>
+  <Skill UID="player_bladeslinger_variant_3,player_bladeslinger_variant_7,player_bladeslinger_variant_18" ESkill="default_variant_combo">
+    <Projectile Name="player_bladeslinger_proj_big_lightning_bolas" />
+    <EventEffectOverride>
+      <AnimEvent Original="U_Character.Skills.Bladeslinger_Summon_01" Override="U_Character.Skills.Bladeslinger_Summon_01_Bola_Lightning" OverrideScale="1.6" />
+      <AnimEvent Original="U_Character.Skills.Bladeslinger_Summon_01_Short" Override="U_Character.Skills.Bladeslinger_Summon_01_Short_Bola_Lightning" OverrideScale="1.6" />
+    </EventEffectOverride>
+    <ParticleList>
+      <Particle Key="Impact" Name="U_Character.Skills.Bladeslinger_Stuck_Impact_01_Lightning" Direction="0,1,0" />
+      <Particle Key="Explosion" Name="U_Monster.Trapper.Explosion_Bomb_01_Lightning_3M" Direction="0,0,1" Scale="2" />
+      <Particle Key="Trail" Name="U_CommonVFX.Impact_Ground_Loop.Impact_01_3Sec_Lightning" Direction="0,0,1" Scale="1" />
+    </ParticleList>
+  </Skill>
+  <Skill UID="player_bladeslinger_variant_4,player_bladeslinger_variant_7,player_bladeslinger_variant_5" ESkill="default_variant_combo">
+    <Projectile Name="player_bladeslinger_proj_chakram_poison_bolas" />
+    <EventEffectOverride>
+      <AnimEvent Original="U_Character.Skills.Bladeslinger_Summon_01" Override="U_Character.Skills.Bladeslinger_Summon_01_Bola_Poison" />
+      <AnimEvent Original="U_Character.Skills.Bladeslinger_Summon_01_Short" Override="U_Character.Skills.Bladeslinger_Summon_01_Short_Bola_Poison" />
+    </EventEffectOverride>
+    <ParticleList>
+      <Particle Key="Impact" Name="U_Character.Skills.Bladeslinger_Stuck_Impact_01_Poison" Direction="0,1,0" />
+      <Particle Key="Explosion" Name="U_Monster.Trapper.Explosion_Bomb_01_Poison_3m" Direction="0,0,1" Scale="1.67" />
+      <Particle Key="Trail" Name="U_CommonVFX.Impact_Ground_Loop.Impact_01_3Sec_Poison" Direction="0,0,1" Scale="0.7" />
+    </ParticleList>
+  </Skill>
+  <Skill UID="player_bladeslinger_variant_4,player_bladeslinger_variant_7,player_bladeslinger_variant_12" ESkill="default_variant_combo">
+    <Projectile Name="player_bladeslinger_proj_chakram_frost_bolas" />
+    <EventEffectOverride>
+      <AnimEvent Original="U_Character.Skills.Bladeslinger_Summon_01" Override="U_Character.Skills.Bladeslinger_Summon_01_Bola_Frost" />
+      <AnimEvent Original="U_Character.Skills.Bladeslinger_Summon_01_Short" Override="U_Character.Skills.Bladeslinger_Summon_01_Short_Bola_Frost" />
+    </EventEffectOverride>
+    <ParticleList>
+      <Particle Key="Impact" Name="U_Character.Skills.Bladeslinger_Stuck_Impact_01_Frost" Direction="0,1,0" />
+      <Particle Key="Explosion" Name="U_VFX_Temp.Temp_Chaguk.IceNova_Medium" Direction="0,0,1" Scale="1.67" />
+      <Particle Key="Trail" Name="U_CommonVFX.Impact_Ground_Loop.Impact_01_3Sec_Frost" Direction="0,0,1" Scale="0.7" />
+    </ParticleList>
+  </Skill>
+  <Skill UID="player_bladeslinger_variant_4,player_bladeslinger_variant_7,player_bladeslinger_variant_17" ESkill="default_variant_combo">
+    <Projectile Name="player_bladeslinger_proj_chakram_aether_bolas" />
+    <EventEffectOverride>
+      <AnimEvent Original="U_Character.Skills.Bladeslinger_Summon_01" Override="U_Character.Skills.Bladeslinger_Summon_01_Bola_Aether" />
+      <AnimEvent Original="U_Character.Skills.Bladeslinger_Summon_01_Short" Override="U_Character.Skills.Bladeslinger_Summon_01_Short_Bola_Aether" />
+    </EventEffectOverride>
+    <ParticleList>
+      <Particle Key="Impact" Name="U_Character.Skills.Bladeslinger_Stuck_Impact_01_Aether" Direction="0,1,0" />
+      <Particle Key="Explosion" Name="U_Monster.Trapper.Explosion_Bomb_01_Aether_3M" Direction="0,0,1" Scale="1.67" />
+      <Particle Key="Trail" Name="U_CommonVFX.Impact_Ground_Loop.Impact_01_3Sec_Aether" Direction="0,0,1" Scale="0.7" />
+    </ParticleList>
+  </Skill>
+  <Skill UID="player_bladeslinger_variant_4,player_bladeslinger_variant_7,player_bladeslinger_variant_18" ESkill="default_variant_combo">
+    <Projectile Name="player_bladeslinger_proj_chakram_lightning_bolas" />
+    <EventEffectOverride>
+      <AnimEvent Original="U_Character.Skills.Bladeslinger_Summon_01" Override="U_Character.Skills.Bladeslinger_Summon_01_Bola_Lightning" />
+      <AnimEvent Original="U_Character.Skills.Bladeslinger_Summon_01_Short" Override="U_Character.Skills.Bladeslinger_Summon_01_Short_Bola_Lightning" />
+    </EventEffectOverride>
+    <ParticleList>
+      <Particle Key="Impact" Name="U_Character.Skills.Bladeslinger_Stuck_Impact_01_Lightning" Direction="0,1,0" />
+      <Particle Key="Explosion" Name="U_Monster.Trapper.Explosion_Bomb_01_Lightning_3M" Direction="0,0,1" Scale="2" />
+      <Particle Key="Trail" Name="U_CommonVFX.Impact_Ground_Loop.Impact_01_3Sec_Lightning" Direction="0,0,1" Scale="1" />
+    </ParticleList>
+  </Skill>
+  <Skill UID="player_bladeslinger_variant_3,player_bladeslinger_variant_4,player_bladeslinger_variant_7,player_bladeslinger_variant_5" ESkill="default_variant_combo">
+    <Projectile Name="player_bladeslinger_proj_big_chakram_poison_bolas" />
+    <EventEffectOverride>
+      <AnimEvent Original="U_Character.Skills.Bladeslinger_Summon_01" Override="U_Character.Skills.Bladeslinger_Summon_01_Bola_Poison" OverrideScale="1.6" />
+      <AnimEvent Original="U_Character.Skills.Bladeslinger_Summon_01_Short" Override="U_Character.Skills.Bladeslinger_Summon_01_Short_Bola_Poison" OverrideScale="1.6" />
+    </EventEffectOverride>
+    <ParticleList>
+      <Particle Key="Impact" Name="U_Character.Skills.Bladeslinger_Stuck_Impact_01_Poison" Direction="0,1,0" />
+      <Particle Key="Explosion" Name="U_Monster.Trapper.Explosion_Bomb_01_Poison_3m" Direction="0,0,1" Scale="2" />
+      <Particle Key="Trail" Name="U_CommonVFX.Impact_Ground_Loop.Impact_01_3Sec_Poison" Direction="0,0,1" Scale="1" />
+    </ParticleList>
+  </Skill>
+  <Skill UID="player_bladeslinger_variant_3,player_bladeslinger_variant_4,player_bladeslinger_variant_7,player_bladeslinger_variant_12" ESkill="default_variant_combo">
+    <Projectile Name="player_bladeslinger_proj_big_chakram_frost_bolas" />
+    <EventEffectOverride>
+      <AnimEvent Original="U_Character.Skills.Bladeslinger_Summon_01" Override="U_Character.Skills.Bladeslinger_Summon_01_Bola_Frost" OverrideScale="1.6" />
+      <AnimEvent Original="U_Character.Skills.Bladeslinger_Summon_01_Short" Override="U_Character.Skills.Bladeslinger_Summon_01_Short_Bola_Frost" OverrideScale="1.6" />
+    </EventEffectOverride>
+    <ParticleList>
+      <Particle Key="Impact" Name="U_Character.Skills.Bladeslinger_Stuck_Impact_01_Frost" Direction="0,1,0" />
+      <Particle Key="Explosion" Name="U_VFX_Temp.Temp_Chaguk.IceNova_Medium" Direction="0,0,1" Scale="2" />
+      <Particle Key="Trail" Name="U_CommonVFX.Impact_Ground_Loop.Impact_01_3Sec_Frost" Direction="0,0,1" Scale="1" />
+    </ParticleList>
+  </Skill>
+  <Skill UID="player_bladeslinger_variant_3,player_bladeslinger_variant_4,player_bladeslinger_variant_7,player_bladeslinger_variant_17" ESkill="default_variant_combo">
+    <Projectile Name="player_bladeslinger_proj_big_chakram_aether_bolas" />
+    <EventEffectOverride>
+      <AnimEvent Original="U_Character.Skills.Bladeslinger_Summon_01" Override="U_Character.Skills.Bladeslinger_Summon_01_Bola_Aether" OverrideScale="1.6" />
+      <AnimEvent Original="U_Character.Skills.Bladeslinger_Summon_01_Short" Override="U_Character.Skills.Bladeslinger_Summon_01_Short_Bola_Aether" OverrideScale="1.6" />
+    </EventEffectOverride>
+    <ParticleList>
+      <Particle Key="Impact" Name="U_Character.Skills.Bladeslinger_Stuck_Impact_01_Aether" Direction="0,1,0" />
+      <Particle Key="Explosion" Name="U_Monster.Trapper.Explosion_Bomb_01_Aether_3M" Direction="0,0,1" Scale="2" />
+      <Particle Key="Trail" Name="U_CommonVFX.Impact_Ground_Loop.Impact_01_3Sec_Aether" Direction="0,0,1" Scale="1" />
+    </ParticleList>
+  </Skill>
+  <Skill UID="player_bladeslinger_variant_3,player_bladeslinger_variant_4,player_bladeslinger_variant_7,player_bladeslinger_variant_18" ESkill="default_variant_combo">
+    <Projectile Name="player_bladeslinger_proj_big_chakram_lightning_bolas" />
+    <EventEffectOverride>
+      <AnimEvent Original="U_Character.Skills.Bladeslinger_Summon_01" Override="U_Character.Skills.Bladeslinger_Summon_01_Bola_Lightning" OverrideScale="1.6" />
+      <AnimEvent Original="U_Character.Skills.Bladeslinger_Summon_01_Short" Override="U_Character.Skills.Bladeslinger_Summon_01_Short_Bola_Lightning" OverrideScale="1.6" />
+    </EventEffectOverride>
+    <ParticleList>
+      <Particle Key="Impact" Name="U_Character.Skills.Bladeslinger_Stuck_Impact_01_Lightning" Direction="0,1,0" />
+      <Particle Key="Explosion" Name="U_Monster.Trapper.Explosion_Bomb_01_Lightning_3M" Direction="0,0,1" Scale="2" />
+      <Particle Key="Trail" Name="U_CommonVFX.Impact_Ground_Loop.Impact_01_3Sec_Lightning" Direction="0,0,1" Scale="1" />
+    </ParticleList>
   </Skill>
 </MetaData>

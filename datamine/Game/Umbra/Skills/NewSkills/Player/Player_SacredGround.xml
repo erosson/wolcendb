@@ -3,28 +3,32 @@
     <WeaponRequirements Requirements="magic,sacred" />
     <Animation ActionString="player_skill_sacredground" ScaleWithSpellCastingSpeed="1" />
     <VisualFeedback TrailPresetBase="default" BloodDecalOrientation="forward" FeedbackPresetBase="Player_skill_sacredground" />
-    <HUD HUDPicture="../u_resources/spells/Active_Skills/sacredground.png" UIName="@ui_AST_SacredGround" Lore="@ui_AST_SacredGround_Lore" ActiveEffectTitle="" ActiveEffectDesc="" ASTTreeNumber="3" ShowParamsInAST="Cost,ROSTime,Cooldown,Range,DamageDetail,StatusAilmentsChance,SpecificSacredGround" ShowParamsInTooltip="Cost,Cooldown,DamageOverview,StatusAilmentsChance,SpecificSacredGround" />
+    <HUD HUDPicture="../u_resources/spells/Active_Skills/sacredground_Sacred.png" UIName="@ui_AST_SacredGround" Lore="@ui_AST_SacredGround_Lore" ActiveEffectTitle="" ActiveEffectDesc="" ASTTreeNumber="3" ShowParamsInAST="DamageWeapon,Cost,ROSTime,Cooldown,Range,DamageDetail,StatusAilmentsChance,SpecificSacredGround" ShowParamsInTooltip="Cost,Cooldown,DamageOverview,StatusAilmentsChance,SpecificSacredGround" />
     <Enneract PickableParticle_MoveToGround="U_CommonVFX_02.Esseract.Esseract_Projectile.Sacred" PickableParticle_OnGround_Shape="U_CommonVFX_02.Esseract.Esseract_Shape.Circle_Sacred" PickableParticle_OnGround_Damage="U_CommonVFX_02.Esseract.Esseract_Color.Sacred" PickableParticle_OnGround_Symbol="U_CommonVFX_02.Esseract.Esseract_Symbol.ANATHEA" PickableParticle_OnGround_Indicator="U_CommonVFX_02.Esseract.Esseract_Indicator.Sacred" PickableParticle_OnGround_Pickup="U_CommonVFX_02.Esseract.Esseract_Loot.Sacred" SkillLearningParticle="U_CommonVFX.Skill_Learn.Skill_Learn_Sacred" Inventory_HUDPicture="../u_resources/enneracts/sacred_ground.png" Inventory_LoreDesc="@ui_enneract_lore" />
     <Aggression TargetValueOnHit="0" />
     <Cooldown Cooldown="15" CooldownPerLevel="0" />
     <Shapes>
       <Entry ShapeName="player_sacredground_shape" />
     </Shapes>
-    <ResourceCost ManaCost="-200" ROSTransfertDuration="1.0" />
+    <ResourceCost ManaCost="-200" ROSTransfertDuration="2.0" />
     <ParticleList>
       <Particle Key="Area" Name="U_Character.Skills.Sacred_Ground_01" Direction="0,0,1" Scale="1" />
       <Particle Key="AreaDefenseUp" Name="U_Character.Skills.Sacred_Ground_Shield" Direction="0,0,1" Scale="1" />
       <Particle Key="AreaDisappear" Name="U_Character.Skills.Sacred_Ground_Disappear_01" Direction="0,0,1" Scale="1" />
       <Particle Key="Heal" Name="U_Buff.Heal.Usage_HolyHeal_Loop_01" Direction="0,0,1" Offset="0,0,1" Scale="1" />
     </ParticleList>
-    <HealthTransfer Value="10" Timer="0" ValuePerLevel="0" ValuesAsPercent="10" />
+    <HealthTransfer Value="10" Timer="0" ValuePerLevel="0" ValuesAsPercent="1" />
     <Specific_SacredGround HealCaster="1" HealthRegenUpdateTick="1" HealForceShieldTickRate="1" TimeToLive="5" />
     <SoundTrigger OnAnimStart="PLAY_Skill_SacredGround" />
     <Targeting TargetingType="self" />
   </Skill>
+  <Skill UID="player_sacredground_variant_default_damage_type" ESkill="default_variant">
+    <HUD UIName="@ui_AST_SacredGround" Lore="@ui_AST_SacredGround_Lore" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_Alpha.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_Alpha.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_Alpha.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_Alpha.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_Alpha.png" HUDPictureVariant_InnerIcon="../u_resources/spells/Active_Skills/sacredground_Sacred.png" VariantBottomPanel="1" />
+  </Skill>
   <Skill UID="player_sacredground_variant_1" ESkill="default_variant" Keywords="magic_spell">
-    <HUD UIName="@ui_Variant_SacredGround_variant_1" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_001.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_001.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_001.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_001.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_001.png" ShowParamsInTooltip="SpecificSacredGround" />
+    <HUD UIName="@ui_Variant_SacredGround_variant_1" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_001.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_001.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_001.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_001.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_001.png" ShowParamsInTooltip="SpecificSacredGround,Cooldown,Cost" />
     <Specific_SacredGround TimeToLive="2" />
+    <ResourceCost ManaCost="-50" ROSTransfertDuration="1.0" />
   </Skill>
   <Skill UID="player_sacredground_variant_2" ESkill="default_variant" Keywords="magic_spell">
     <HUD UIName="@ui_Variant_SacredGround_variant_2" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_001.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_001.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_001.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_001.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_001.png" ShowParamsInTooltip="SpecificSacredGround" />
@@ -41,7 +45,7 @@
       <Particle Key="Area" Name="U_Character.Skills.Sacred_Ground_03" Direction="0,0,1" Scale="1" />
       <Particle Key="Sword" Name="U_Buff.Buff.Attack_Up_Buff.Sacred" Direction="0,0,1" Offset="0,0,3" Scale="1" />
     </ParticleList>
-    <Specific_SacredGround SacredDamage="1" OverrideWeaponTrailType="sacred" OverrideWeaponTrailTier="3">
+    <Specific_SacredGround OverrideWeaponTrailType="sacred" OverrideWeaponTrailTier="3">
       <Buff PassiveSkillName="AST_SacredGround_AddSacredDamageToWeapons" Targets="Allies" />
     </Specific_SacredGround>
   </Skill>
@@ -57,9 +61,6 @@
     <ParticleList>
       <Particle Key="Area" Name="U_Character.Skills.Sacred_Ground_01_Movable" Direction="0,0,1" Scale="1" />
     </ParticleList>
-  </Skill>
-  <Skill UID="player_sacredground_variant_5,player_sacredground_variant_3" ESkill="default_variant_combo">
-    <SoundTrigger OnAnimCast="U_Character.Skills.Sacred_Ground_03_Movable" />
   </Skill>
   <Skill UID="player_sacredground_variant_6" ESkill="default_variant" Keywords="magic_spell">
     <HUD UIName="@ui_Variant_SacredGround_variant_6" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_001.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_001.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_001.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_001.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_001.png" ShowParamsInTooltip="SpecificSacredGround" />
@@ -82,8 +83,8 @@
     </Specific_SacredGround>
   </Skill>
   <Skill UID="player_sacredground_variant_10" ESkill="default_variant" Keywords="magic_spell">
-    <HUD UIName="@ui_Variant_SacredGround_variant_10" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_001.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_001.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_001.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_001.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_001.png" ShowParamsInTooltip="SpecificSacredGround,DamageDetail" />
-    <DamageBase Type="sacred" Min="3" MinPerLevel="1" Max="3" MaxPerLevel="1" />
+    <HUD UIName="@ui_Variant_SacredGround_variant_10" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_001.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_001.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_001.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_001.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_001.png" ShowParamsInTooltip="SpecificSacredGround,DamageDetail,DamageWeapon" />
+    <DamageWeapon WeaponMultiplier="1.2" />
     <Specific_SacredGround DamageTickrate="1" />
   </Skill>
   <Skill UID="player_sacredground_variant_11" ESkill="default_variant" Keywords="magic_spell">
@@ -92,7 +93,7 @@
   </Skill>
   <Skill UID="player_sacredground_variant_12" ESkill="default_variant" Keywords="magic_spell">
     <HUD UIName="@ui_Variant_SacredGround_variant_12" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_001.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_001.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_001.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_001.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_001.png" ShowParamsInTooltip="SpecificSacredGround,Cooldown" />
-    <Cooldown Cooldown="-4" CooldownPerLevel="0" />
+    <Cooldown Cooldown="-2" CooldownPerLevel="0" />
   </Skill>
   <Skill UID="player_sacredground_variant_13" ESkill="default_variant" Keywords="magic_spell">
     <HUD UIName="@ui_Variant_SacredGround_variant_13" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_003.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_003.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_003.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_003.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_003.png" ShowParamsInTooltip="SpecificSacredGround" />
@@ -104,14 +105,93 @@
   </Skill>
   <Skill UID="player_sacredground_variant_15" ESkill="default_variant" Keywords="magic_spell">
     <HUD UIName="@ui_Variant_SacredGround_variant_15" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_001.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_001.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_001.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_001.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_001.png" ShowParamsInTooltip="SpecificSacredGround" />
-    <HealthTransfer Value="5" Timer="0" ValuePerLevel="5" />
+    <HealthTransfer Value="5" Timer="0" ValuePerLevel="0" />
   </Skill>
   <Skill UID="player_sacredground_variant_16" ESkill="default_variant" Keywords="magic_spell">
     <HUD UIName="@ui_Variant_SacredGround_variant_16" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_003.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_003.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_003.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_003.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_003.png" ShowParamsInTooltip="SpecificSacredGround" />
     <Specific_SacredGround TimeToLive="3" />
   </Skill>
-  <Skill UID="player_teleport_variant_11,player_teleport_variant_15" ESkill="default_variant_combo">
-    <HealthTransfer Value="10" Timer="0" ValuePerLevel="5" />
-    <Specific_SacredGround ForceShieldPerTick="50" />
+  <Skill UID="player_sacredground_variant_17" ESkill="default_variant" Keywords="magic_spell">
+    <HUD UIName="@ui_Variant_SacredGround_variant_17" Lore="@ui_Variant_SacredGround_variant_17_Lore" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_Alpha.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_Alpha.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_Alpha.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_Alpha.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_Alpha.png" HUDPictureVariant_InnerIcon="../u_resources/spells/Active_Skills/sacredground_Fire.png" ShowParamsInTooltip="SpecificSacredGround" HUDPicture="../u_resources/spells/Active_Skills/sacredground_Fire.png" VariantBottomPanel="1" />
+    <EventEffectOverride>
+      <AnimEvent Original="U_Character.Skills.Sacred_Ground_HandLight" Override="U_Character.Skills.Sacred_Ground_HandLight_Fire" />
+    </EventEffectOverride>
+    <ParticleList>
+      <Particle Key="Area" Name="U_Character.Skills.Sacred_Ground_01_Fire" Direction="0,0,1" Scale="1" />
+      <Particle Key="AreaDisappear" Name="U_Character.Skills.Sacred_Ground_Disappear_01_Fire" Direction="0,0,1" Scale="1" />
+    </ParticleList>
+    <WeaponRequirements Requirements="magic,fire" />
+    <DamageWeapon WeaponMultiplier="1" />
+    <Damage_Conversion>
+      <Entry From="physical" To="sacred" ConversionRate="-100" />
+      <Entry From="physical" To="fire" ConversionRate="100" />
+    </Damage_Conversion>
+    <Specific_SacredGround DamageTickrate="1" />
+    <SoundTrigger OnAnimStart="Play_Skill_SacredGround_Start_Fire" />
+  </Skill>
+  <Skill UID="player_sacredground_variant_18" ESkill="default_variant" Keywords="magic_spell">
+    <HUD UIName="@ui_Variant_SacredGround_variant_18" Lore="@ui_Variant_SacredGround_variant_18_Lore" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_Alpha.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_Alpha.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_Alpha.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_Alpha.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_Alpha.png" HUDPictureVariant_InnerIcon="../u_resources/spells/Active_Skills/sacredground_Shadow.png" ShowParamsInTooltip="SpecificSacredGround" HUDPicture="../u_resources/spells/Active_Skills/sacredground_Shadow.png" VariantBottomPanel="1" />
+    <EventEffectOverride>
+      <AnimEvent Original="U_Character.Skills.Sacred_Ground_HandLight" Override="U_Character.Skills.Sacred_Ground_HandLight_Shadow" />
+    </EventEffectOverride>
+    <ParticleList>
+      <Particle Key="Area" Name="U_Character.Skills.Sacred_Ground_01_Shadow" Direction="0,0,1" Scale="1" />
+      <Particle Key="AreaDisappear" Name="U_Character.Skills.Sacred_Ground_Disappear_01_Shadow" Direction="0,0,1" Scale="1" />
+    </ParticleList>
+    <WeaponRequirements Requirements="magic,shadow" />
+    <DamageWeapon WeaponMultiplier="1" />
+    <Damage_Conversion>
+      <Entry From="physical" To="sacred" ConversionRate="-100" />
+      <Entry From="physical" To="shadow" ConversionRate="100" />
+    </Damage_Conversion>
+    <Specific_SacredGround DamageTickrate="1" />
+    <SoundTrigger OnAnimStart="Play_Skill_SacredGround_Start_Shadow" />
+  </Skill>
+  <Skill UID="player_sacredground_variant_3,player_sacredground_variant_5" ESkill="default_variant_combo">
+    <ParticleList>
+      <Particle Key="Area" Name="U_Character.Skills.Sacred_Ground_03_Movable" Direction="0,0,1" Scale="1" />
+    </ParticleList>
+  </Skill>
+  <Skill UID="player_sacredground_variant_17,player_sacredground_variant_3" ESkill="default_variant_combo">
+    <ParticleList>
+      <Particle Key="Area" Name="U_Character.Skills.Sacred_Ground_03_Fire" Direction="0,0,1" Scale="1" />
+    </ParticleList>
+    <Specific_SacredGround OverrideWeaponTrailType="fire" OverrideWeaponTrailTier="3">
+      <Buff PassiveSkillName="AST_SacredGround_AddFireDamageToWeapons" Targets="Allies" />
+    </Specific_SacredGround>
+  </Skill>
+  <Skill UID="player_sacredground_variant_17,player_sacredground_variant_5" ESkill="default_variant_combo">
+    <ParticleList>
+      <Particle Key="Area" Name="U_Character.Skills.Sacred_Ground_01_Movable_Fire" Direction="0,0,1" Scale="1" />
+    </ParticleList>
+  </Skill>
+  <Skill UID="player_sacredground_variant_17,player_sacredground_variant_3,player_sacredground_variant_5" ESkill="default_variant_combo">
+    <ParticleList>
+      <Particle Key="Area" Name="U_Character.Skills.Sacred_Ground_03_Movable_Fire" Direction="0,0,1" Scale="1" />
+    </ParticleList>
+  </Skill>
+  <Skill UID="player_sacredground_variant_18,player_sacredground_variant_3" ESkill="default_variant_combo">
+    <ParticleList>
+      <Particle Key="Area" Name="U_Character.Skills.Sacred_Ground_03_Shadow" Direction="0,0,1" Scale="1" />
+    </ParticleList>
+    <Specific_SacredGround OverrideWeaponTrailType="shadow" OverrideWeaponTrailTier="3">
+      <Buff PassiveSkillName="AST_SacredGround_AddShadowDamageToWeapons" Targets="Allies" />
+    </Specific_SacredGround>
+  </Skill>
+  <Skill UID="player_sacredground_variant_18,player_sacredground_variant_5" ESkill="default_variant_combo">
+    <ParticleList>
+      <Particle Key="Area" Name="U_Character.Skills.Sacred_Ground_01_Movable_Shadow" Direction="0,0,1" Scale="1" />
+    </ParticleList>
+  </Skill>
+  <Skill UID="player_sacredground_variant_18,player_sacredground_variant_3,player_sacredground_variant_5" ESkill="default_variant_combo">
+    <ParticleList>
+      <Particle Key="Area" Name="U_Character.Skills.Sacred_Ground_03_Movable_Shadow" Direction="0,0,1" Scale="1" />
+    </ParticleList>
+  </Skill>
+  <Skill UID="player_sacredground_variant_10,player_sacredground_variant_17" ESkill="default_variant_combo">
+    <Specific_SacredGround DamageTickrate="-1" />
+  </Skill>
+  <Skill UID="player_sacredground_variant_10,player_sacredground_variant_18" ESkill="default_variant_combo">
+    <Specific_SacredGround DamageTickrate="-1" />
   </Skill>
 </MetaData>

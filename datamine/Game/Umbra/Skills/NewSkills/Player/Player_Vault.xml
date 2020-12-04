@@ -14,7 +14,7 @@
     <Projectile Name="player_vault_proj" ProjectileCount="1" PenetrationLimit="1" AngleBetweenProjectiles="90" />
     <Explosion ExplosionRadius="3" />
     <Collisions IgnoreTerrainCollisions="1" IgnoreEntityCollisions="1" />
-    <DamageWeapon PercentMin="120" PercentMinPerLevel="0" PercentMax="120" PercentMaxPerLevel="0" />
+    <DamageWeapon WeaponMultiplier="2.5" />
     <Damage_Conversion>
       <Entry From="physical" To="shadow" ConversionRate="100" />
     </Damage_Conversion>
@@ -23,13 +23,16 @@
       <Particle Key="Dash" Name="U_Character_02.Vault.Vault_Trail_01" Direction="0,1,0" Bone="Bip01 Spine2" />
       <Particle Key="Mine" Name="U_Character_02.Vault.Vault_Mine_01" Direction="0,0,1" />
     </ParticleList>
-    <StatusEffect_MovementSpeed SlowPercent="35" Duration="2" />
+    <StatusEffect_MovementSpeed SlowPercent="50" Duration="2" />
     <Specific_Vault DashMaxDistance="8" TrapName="trap_player_vault" DoDamage="1" />
+  </Skill>
+  <Skill UID="player_Vault_variant_default_damage_type" ESkill="default_variant">
+    <HUD UIName="@ui_AST_Vault" Lore="@ui_AST_Vault_Lore" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_Alpha.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_Alpha.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_Alpha.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_Alpha.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_Alpha.png" HUDPictureVariant_InnerIcon="../u_resources/spells/Active_Skills/Evasion.png" VariantBottomPanel="1" />
   </Skill>
   <Skill UID="player_Vault_variant_1" ESkill="default_variant">
     <HUD UIName="@ui_Variant_Vault_variant_1" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_003.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_003.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_003.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_003.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_003.png" ShowParamsInTooltip="SpecificVault,Cooldown" />
     <Specific_Vault StunDuration="1.5" />
-    <Cooldown Cooldown="4" CooldownPerLevel="0" />
+    <Cooldown Cooldown="3" CooldownPerLevel="0" />
   </Skill>
   <Skill UID="player_Vault_variant_2" ESkill="default_variant">
     <HUD UIName="@ui_Variant_Vault_variant_2" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_003.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_003.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_003.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_003.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_003.png" ShowParamsInTooltip="SpecificVault,Projectiles" />
@@ -37,7 +40,7 @@
   </Skill>
   <Skill UID="player_Vault_variant_3" ESkill="default_variant">
     <HUD UIName="@ui_Variant_Vault_variant_3" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_003.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_003.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_003.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_003.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_003.png" ShowParamsInTooltip="SpecificVault,DamageWeapon" />
-    <DamageWeapon Type="shadow" PercentMin="50" PercentMinPerLevel="0" PercentMax="50" PercentMaxPerLevel="0" />
+    <DamageWeapon Type="shadow" WeaponMultiplier="1.3" />
   </Skill>
   <Skill UID="player_Vault_variant_4" ESkill="default_variant">
     <HUD UIName="@ui_Variant_Vault_variant_4" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_001.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_001.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_001.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_001.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_001.png" ShowParamsInTooltip="SpecificVault,Range" />
@@ -59,12 +62,13 @@
   </Skill>
   <Skill UID="player_Vault_variant_7" ESkill="default_variant">
     <HUD UIName="@ui_Variant_Vault_variant_7" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_003.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_003.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_003.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_003.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_003.png" ShowParamsInTooltip="SpecificVault" />
-    <GhostDamage ChanceToHit="10" ChanceToHitPerLevel="0" MaxHit="50" MinDelay="0.1" MaxDelay="0.5" DamageMultiplier="1" />
+    <GhostDamage ChanceToHit="100" ChanceToHitPerLevel="0" MaxHit="50" MinDelay="0.1" MaxDelay="0.5" DamageMultiplier="0.5" />
   </Skill>
   <Skill UID="player_Vault_variant_8" ESkill="default_variant">
-    <HUD UIName="@ui_Variant_Vault_variant_8" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_003.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_003.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_003.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_003.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_003.png" ShowParamsInTooltip="SpecificVault" />
+    <HUD UIName="@ui_Variant_Vault_variant_8" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_003.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_003.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_003.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_003.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_003.png" ShowParamsInTooltip="SpecificVault,DamageWeapon" />
     <Projectile Name="player_vault_proj_mine" />
     <Specific_Vault ConvertToMines="1" />
+    <DamageWeapon WeaponMultiplier="1.5" />
   </Skill>
   <Skill UID="player_Vault_variant_9" ESkill="default_variant">
     <HUD UIName="@ui_Variant_Vault_variant_9" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_001.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_001.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_001.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_001.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_001.png" ShowParamsInTooltip="SpecificVault" />
@@ -79,9 +83,8 @@
     <ParticleList>
       <Particle Key="Explosion" Name="U_Character_02.Vault.Vault_Explosion_01_Loop" Direction="0,0,1" />
     </ParticleList>
-    <DamageZone RateOfFire="0.5" Duration="5" />
+    <DamageZone RateOfFire="1" Duration="5" />
     <Specific_Vault UseAOE="1" />
-    <StatusEffect_MovementSpeed SlowPercent="-35" Duration="-2" />
   </Skill>
   <Skill UID="player_Vault_variant_12" ESkill="default_variant">
     <HUD UIName="@ui_Variant_Vault_variant_12" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_003.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_003.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_003.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_003.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_003.png" ShowParamsInTooltip="SpecificVault" />
@@ -97,7 +100,7 @@
     <Specific_Vault BlownAwayRadius="4" />
   </Skill>
   <Skill UID="player_Vault_variant_15" ESkill="default_variant">
-    <HUD UIName="@ui_Variant_Vault_variant_15" Lore="@ui_Variant_Vault_variant_3_Lore" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_005.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_005.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_005.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_005.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_005.png" ShowParamsInTooltip="SpecificVault,StatusAilmentsChance" />
+    <HUD UIName="@ui_Variant_Vault_variant_15" Lore="@ui_Variant_Vault_variant_3_Lore" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_Alpha.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_Alpha.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_Alpha.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_Alpha.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_Alpha.png" HUDPictureVariant_InnerIcon="../u_resources/spells/Active_Skills/Evasion_toxic.png" ShowParamsInTooltip="SpecificVault,DamageWeapon" VariantBottomPanel="1" HUDPicture="../u_resources/spells/Active_Skills/Evasion_toxic.png" />
     <ParticleList>
       <Particle Key="Explosion" Name="U_Character_02.Vault.Vault_Explosion_01_Poison" Direction="0,0,1" />
       <Particle Key="Dash" Name="U_Character_02.Vault.Vault_Trail_01_Poison" Direction="0,1,0" Bone="Bip01 Spine2" />
@@ -107,17 +110,56 @@
     <Specific_Vault TrapName="trap_player_vault_poison" />
     <Damage_Conversion>
       <Entry From="physical" To="shadow" ConversionRate="-100" />
-      <Entry From="physical" To="poison" ConversionRate="100" />
+      <Entry From="physical" To="toxic" ConversionRate="100" />
     </Damage_Conversion>
-    <StatusAilment>
-      <poison Stacks="1" StacksMode="AddToBase" />
-    </StatusAilment>
+    <DamageWeapon WeaponMultiplier="1.25" />
     <WeaponRequirements Requirements="rogue,poison" />
     <Projectile Name="player_vault_proj_poison" />
+    <SoundTrigger OnAnimStart="Play_Skill_Vault_Start_Toxic" />
   </Skill>
   <Skill UID="player_Vault_variant_16" ESkill="default_variant">
     <HUD UIName="@ui_Variant_Vault_variant_16" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_001.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_001.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_001.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_001.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_001.png" ShowParamsInTooltip="SpecificVault,Cooldown" />
     <Cooldown Cooldown="-2" CooldownPerLevel="0" />
+  </Skill>
+  <Skill UID="player_Vault_variant_19" ESkill="default_variant">
+    <HUD UIName="@ui_Variant_Vault_variant_19" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_001.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_001.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_001.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_001.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_001.png" ShowParamsInTooltip="SpecificVault,Cooldown" />
+    <Cooldown Cooldown="-2" CooldownPerLevel="0" />
+  </Skill>
+  <Skill UID="player_Vault_variant_17" ESkill="default_variant">
+    <HUD UIName="@ui_Variant_Vault_variant_17" Lore="@ui_Variant_Vault_variant_17_Lore" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_Alpha.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_Alpha.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_Alpha.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_Alpha.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_Alpha.png" HUDPictureVariant_InnerIcon="../u_resources/spells/Active_Skills/Evasion_fire.png" ShowParamsInTooltip="SpecificVault,DamageWeapon" VariantBottomPanel="1" HUDPicture="../u_resources/spells/Active_Skills/Evasion_fire.png" />
+    <ParticleList>
+      <Particle Key="Explosion" Name="U_Character_02.Vault.Vault_Explosion_01_Fire" Direction="0,0,1" />
+      <Particle Key="Dash" Name="U_Character_02.Vault.Vault_Trail_01_Fire" Direction="0,1,0" Bone="Bip01 Spine2" />
+      <Particle Key="DecoyStart" Name="U_Character_02.Vault.Vault_Decoy_Start_01_Fire" Direction="0,0,1" Scale="0.5" />
+      <Particle Key="Mine" Name="U_Character_02.Vault.Vault_Mine_01_Fire" Direction="0,0,1" />
+    </ParticleList>
+    <Specific_Vault TrapName="trap_player_vault_fire" />
+    <Damage_Conversion>
+      <Entry From="physical" To="shadow" ConversionRate="-100" />
+      <Entry From="physical" To="fire" ConversionRate="100" />
+    </Damage_Conversion>
+    <DamageWeapon WeaponMultiplier="1.25" />
+    <WeaponRequirements Requirements="rogue,fire" />
+    <Projectile Name="player_vault_proj_fire" />
+    <SoundTrigger OnAnimStart="Play_Skill_Vault_Start_Fire" />
+  </Skill>
+  <Skill UID="player_Vault_variant_18" ESkill="default_variant">
+    <HUD UIName="@ui_Variant_Vault_variant_18" Lore="@ui_Variant_Vault_variant_18_Lore" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_Alpha.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_Alpha.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_Alpha.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_Alpha.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_Alpha.png" HUDPictureVariant_InnerIcon="../u_resources/spells/Active_Skills/Evasion_aether.png" ShowParamsInTooltip="SpecificVault,DamageWeapon" VariantBottomPanel="1" HUDPicture="../u_resources/spells/Active_Skills/Evasion_aether.png" />
+    <ParticleList>
+      <Particle Key="Explosion" Name="U_Character_02.Vault.Vault_Explosion_01_Aether" Direction="0,0,1" />
+      <Particle Key="Dash" Name="U_Character_02.Vault.Vault_Trail_01_Aether" Direction="0,1,0" Bone="Bip01 Spine2" />
+      <Particle Key="DecoyStart" Name="U_Character_02.Vault.Vault_Decoy_Start_01_Aether" Direction="0,0,1" Scale="0.5" />
+      <Particle Key="Mine" Name="U_Character_02.Vault.Vault_Mine_01_Aether" Direction="0,0,1" />
+    </ParticleList>
+    <Specific_Vault TrapName="trap_player_vault_aether" />
+    <Damage_Conversion>
+      <Entry From="physical" To="shadow" ConversionRate="-100" />
+      <Entry From="physical" To="umbra" ConversionRate="100" />
+    </Damage_Conversion>
+    <DamageWeapon WeaponMultiplier="1.25" />
+    <WeaponRequirements Requirements="rogue,umbra" />
+    <Projectile Name="player_vault_proj_aether" />
+    <SoundTrigger OnAnimStart="Play_Skill_Vault_Start_Aether" />
   </Skill>
   <Skill UID="player_Vault_variant_11,player_Vault_variant_15" ESkill="default_variant_combo">
     <ParticleList>
@@ -126,5 +168,21 @@
   </Skill>
   <Skill UID="player_Vault_variant_8,player_Vault_variant_15" ESkill="default_variant_combo">
     <Projectile Name="player_vault_proj_poison_mine" />
+  </Skill>
+  <Skill UID="player_Vault_variant_11,player_Vault_variant_17" ESkill="default_variant_combo">
+    <ParticleList>
+      <Particle Key="Explosion" Name="U_Character_02.Vault.Vault_Explosion_01_Loop_Fire" Direction="0,0,1" />
+    </ParticleList>
+  </Skill>
+  <Skill UID="player_Vault_variant_8,player_Vault_variant_17" ESkill="default_variant_combo">
+    <Projectile Name="player_vault_proj_fire_mine" />
+  </Skill>
+  <Skill UID="player_Vault_variant_11,player_Vault_variant_18" ESkill="default_variant_combo">
+    <ParticleList>
+      <Particle Key="Explosion" Name="U_Character_02.Vault.Vault_Explosion_01_Loop_Aether" Direction="0,0,1" />
+    </ParticleList>
+  </Skill>
+  <Skill UID="player_Vault_variant_8,player_Vault_variant_18" ESkill="default_variant_combo">
+    <Projectile Name="player_vault_proj_fire_mine" />
   </Skill>
 </MetaData>

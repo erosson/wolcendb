@@ -1,0 +1,265 @@
+<MetaData>
+  <Skill UID="player_fireball" ESkill="player_fireball" Keywords="projectile,magic_spell,additional_projectile">
+    <VisualFeedback TrailPresetBase="default" FeedbackPresetBase="Player_skill_fireball" BloodDecalOrientation="forward" />
+    <WeaponRequirements Requirements="fire,magic" />
+    <Animation ActionString="player_skill_fireball_windup" ActionString_FollowUp="player_skill_fireball_followup" />
+    <SkillLoop PresetID="skillloop_fireball" />
+    <Attachments HideEquippedItemsWhilecasting_Right="1" />
+    <CastingParams CastBone="R_weapon_bone" CasterImmobilizationTime="0.33" />
+    <HUD HUDPicture="../u_resources/spells/Active_Skills/Fireball_Fire.png" UIName="@ui_AST_Fireball" Lore="@ui_AST_Fireball_Lore" ActiveEffectTitle="" ActiveEffectDesc="" ASTTreeNumber="8" ShowParamsInAST="DamageWeapon,Cost,ROSTime,Cooldown,Range,Projectiles,DamageDetail,DamageCritical,StatusAilmentsChance,Explosion,SpecificFireball" ShowParamsInTooltip="Cost,Cooldown,DamageOverview,StatusAilmentsChance,SpecificFireball" />
+    <Enneract PickableParticle_MoveToGround="U_CommonVFX_02.Esseract.Esseract_Projectile.Fire" PickableParticle_OnGround_Shape="U_CommonVFX_02.Esseract.Esseract_Shape.Circle_Fire" PickableParticle_OnGround_Damage="U_CommonVFX_02.Esseract.Esseract_Color.Fire" PickableParticle_OnGround_Symbol="U_CommonVFX_02.Esseract.Esseract_Symbol.ABANAZAR" PickableParticle_OnGround_Indicator="U_CommonVFX_02.Esseract.Esseract_Indicator.Fire" PickableParticle_OnGround_Pickup="U_CommonVFX_02.Esseract.Esseract_Loot.Fire" SkillLearningParticle="U_CommonVFX.Skill_Learn.Skill_Learn_Fire" Inventory_HUDPicture="../u_resources/enneracts/fireball.png" Inventory_LoreDesc="@ui_enneract_lore" />
+    <Aggression TargetValueOnHit="20" />
+    <DamageWeapon WeaponMultiplier="1.5" />
+    <Damage_Conversion>
+      <Entry From="physical" To="fire" ConversionRate="100" />
+    </Damage_Conversion>
+    <Cooldown Cooldown="0" CooldownPerLevel="0" />
+    <ResourceCost ManaCost="-110" ManaCostPerLevel="0" ROSTransfertDuration="0.8" />
+    <SoundTrigger OnAnimCast="" />
+    <Range AttackRange="20" />
+    <Projectile Name="player_fireball_proj" ProjectileCount="1" AngleBetweenProjectiles="45" PenetrationLimit="0">
+      <AutomaticCastAngle distanceMin="2" distanceMax="7" totalAngleAtDistanceMin="120" totalAngleAtDistanceMax="120" projectileAngleAtDistanceMin="45" projectileAngleAtDistanceMax="10" />
+    </Projectile>
+    <Explosion ExplosionRadius="2" />
+    <ParticleList>
+      <Particle Key="FrontCircleSpark" Name="U_Magic_Sign.Fire.FrontCircle_Sign_01_Spark" Direction="0,0,1" />
+      <Particle Key="FrontCircleShot" Name="U_Magic_Sign.Fire.FrontCircle_Sign_01_Shot" Direction="0,0,1" />
+    </ParticleList>
+    <Specific_Fireball BuffName="" BuffDuration="0" Big="0" Lightning="0" UseDamageZone="0" DamageZoneTickrate="0" DamageZoneRadius="0" />
+    <StatusAilment AilmentEffectiveness="250" />
+  </Skill>
+  <Skill UID="player_fireball_variant_default_damage_type" ESkill="default_variant">
+    <HUD UIName="@ui_AST_Fireball" Lore="@ui_AST_Fireball_Lore" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_Alpha.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_Alpha.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_Alpha.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_Alpha.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_Alpha.png" HUDPictureVariant_InnerIcon="../u_resources/spells/Active_Skills/Fireball_Fire.png" VariantBottomPanel="1" />
+  </Skill>
+  <Skill UID="player_fireball_variant_1" ESkill="default_variant">
+    <HUD UIName="@ui_Variant_Fireball_variant_1" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_003.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_003.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_003.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_003.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_003.png" ShowParamsInTooltip="SpecificFireball,Explosion,StatusAilmentsChance" />
+    <Explosion ExplosionRadius="2.5" />
+    <Specific_Fireball DamageZoneRadius="1" />
+    <Projectile Name="player_fireball_proj_big" />
+  </Skill>
+  <Skill UID="player_fireball_variant_2" ESkill="default_variant">
+    <HUD UIName="@ui_Variant_Fireball_variant_2" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_001.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_001.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_001.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_001.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_001.png" ShowParamsInTooltip="SpecificFireball,DamageWeapon,StatusAilmentsChance" />
+    <DamageWeapon WeaponMultiplier="1.15" />
+  </Skill>
+  <Skill UID="player_fireball_variant_3" ESkill="default_variant">
+    <HUD UIName="@ui_Variant_Fireball_variant_3" Lore="@ui_Variant_Fireball_variant_3_Lore" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_005.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_005.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_005.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_005.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_005.png" ShowParamsInTooltip="SpecificFireball,Projectiles,DamageWeapon" />
+    <ParticleList>
+      <Particle Key="Disappear" Name="U_Projectile.Fire.FireBall_Pierce_01_end" Scale="0.7" Direction="0,0,1" />
+    </ParticleList>
+    <Projectile Name="player_fireball_proj_pierce" PenetrationLimit="999" />
+    <DamageWeapon WeaponMultiplier="0.75" />
+    <Specific_Fireball UseDamageZone="1" DamageZoneTickRate="0.5" DamageZoneRadius="1.5" />
+  </Skill>
+  <Skill UID="player_fireball_variant_4" ESkill="default_variant">
+    <HUD UIName="@ui_Variant_Fireball_variant_4" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_003.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_003.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_003.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_003.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_003.png" ShowParamsInTooltip="SpecificFireball,Projectiles,Cost" />
+    <Projectile ProjectileCount="1" />
+    <ResourceCost ManaCost="-90" />
+  </Skill>
+  <Skill UID="player_fireball_variant_6" ESkill="default_variant">
+    <HUD UIName="@ui_Variant_Fireball_variant_6" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_003.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_003.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_003.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_003.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_003.png" ShowParamsInTooltip="SpecificFireball,StatusAilmentsChance" />
+    <StatusAilment AilmentEffectiveness="125" />
+  </Skill>
+  <Skill UID="player_fireball_variant_7" ESkill="default_variant">
+    <HUD UIName="@ui_Variant_Fireball_variant_7" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_001.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_001.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_001.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_001.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_001.png" ShowParamsInTooltip="SpecificFireball,DamageCritical" />
+    <DamageCritical CriticalInflictScoreModifier="40" />
+  </Skill>
+  <Skill UID="player_fireball_variant_8" ESkill="default_variant">
+    <HUD UIName="@ui_Variant_Fireball_variant_8" Lore="@ui_Variant_Fireball_variant_8_Lore" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_005.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_005.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_005.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_005.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_005.png" ShowParamsInTooltip="SpecificFireball" />
+    <Specific_Fireball BuffDuration="10" BuffName="AST_Fireball_DamageBoost" />
+  </Skill>
+  <Skill UID="player_fireball_variant_9" ESkill="default_variant">
+    <HUD UIName="@ui_Variant_Fireball_variant_9" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_003.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_003.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_003.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_003.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_003.png" ShowParamsInTooltip="SpecificFireball,Projectiles,DamageWeapon" />
+    <Projectile ProjectileCount="1" />
+    <DamageWeapon WeaponMultiplier="0.85" />
+  </Skill>
+  <Skill UID="player_fireball_variant_10" ESkill="default_variant">
+    <HUD UIName="@ui_Variant_Fireball_variant_10" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_003.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_003.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_003.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_003.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_003.png" ShowParamsInTooltip="SpecificFireball,Cost,Cooldown" />
+    <ParticleList>
+      <Particle Key="AddImpact" Name="U_Projectile.Fire.FireBall_addimpact_01" Direction="0,1,0" Scale="1" />
+    </ParticleList>
+    <Recast Cooldown="0.1" UmbraCost="100" />
+    <Specific_Fireball RecastExplosionRadius="2" />
+    <Cooldown Cooldown="0" />
+  </Skill>
+  <Skill UID="player_fireball_variant_11" ESkill="default_variant">
+    <HUD UIName="@ui_Variant_Fireball_variant_11" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_001.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_001.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_001.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_001.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_001.png" ShowParamsInTooltip="SpecificFireball,DamageWeapon" />
+    <DamageWeapon WeaponMultiplier="1.15" />
+  </Skill>
+  <Skill UID="player_fireball_variant_12" ESkill="default_variant">
+    <HUD UIName="@ui_Variant_Fireball_variant_12" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_001.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_001.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_001.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_001.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_001.png" ShowParamsInTooltip="SpecificFireball,Cost,ROSTime" />
+    <ResourceCost ManaCost="25" ManaCostPerLevel="0" />
+  </Skill>
+  <Skill UID="player_fireball_variant_13" ESkill="default_variant">
+    <HUD UIName="@ui_Variant_Fireball_variant_13" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_001.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_001.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_001.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_001.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_001.png" ShowParamsInTooltip="SpecificFireball,StatusAilmentsChance" />
+    <StatusAilment AllAilmentsInflictDamageIncreasePercent="40" />
+  </Skill>
+  <Skill UID="player_fireball_variant_14" ESkill="default_variant">
+    <HUD UIName="@ui_Variant_Fireball_variant_14" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_001.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_001.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_001.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_001.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_001.png" ShowParamsInTooltip="SpecificFireball,DamageCritical" />
+    <DamageCritical CriticalDamageModifier="25" />
+  </Skill>
+  <Skill UID="player_fireball_variant_15" ESkill="default_variant">
+    <HUD UIName="@ui_Variant_Fireball_variant_15" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_001.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_001.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_001.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_001.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_001.png" ShowParamsInTooltip="SpecificFireball" />
+    <CastingSpeed SpellSpeedPercent="120" />
+  </Skill>
+  <Skill UID="player_fireball_variant_16" ESkill="default_variant">
+    <HUD UIName="@ui_Variant_Fireball_variant_16" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_003.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_003.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_003.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_003.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_003.png" ShowParamsInTooltip="SpecificFireball,DamageWeapon,Cooldown" />
+    <DamageWeapon WeaponMultiplier="2" />
+    <Cooldown Cooldown="4" CooldownPerLevel="0" />
+  </Skill>
+  <Skill UID="player_fireball_variant_5" ESkill="default_variant">
+    <HUD UIName="@ui_Variant_Fireball_variant_5" Lore="@ui_Variant_Fireball_variant_5_Lore" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_Alpha.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_Alpha.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_Alpha.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_Alpha.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_Alpha.png" HUDPictureVariant_InnerIcon="../u_resources/spells/Active_Skills/Fireball_Lightning.png" ShowParamsInTooltip="SpecificFireball,DamageWeapon" HUDPicture="../u_resources/spells/Active_Skills/Fireball_Lightning.png" VariantBottomPanel="1" />
+    <SkillLoop PresetID="skillloop_fireball_lightning" />
+    <DamageWeapon WeaponMultiplier="1.25" />
+    <Damage_Conversion>
+      <Entry From="physical" To="fire" ConversionRate="-100" />
+      <Entry From="physical" To="lightning" ConversionRate="100" />
+    </Damage_Conversion>
+    <WeaponRequirements Requirements="lightning,magic" />
+    <ParticleList>
+      <Particle Key="FrontCircleSpark" Name="U_Magic_Sign.Lightning.FrontCircle_Sign_01_Spark" Direction="0,0,1" />
+      <Particle Key="FrontCircleShot" Name="U_Magic_Sign.Lightning.FrontCircle_Sign_01_Shot" Direction="0,0,1" />
+    </ParticleList>
+    <Projectile Name="player_fireball_proj_lightning" />
+  </Skill>
+  <Skill UID="player_fireball_variant_17" ESkill="default_variant">
+    <HUD UIName="@ui_Variant_Fireball_variant_17" Lore="@ui_Variant_Fireball_variant_17_Lore" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_Alpha.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_Alpha.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_Alpha.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_Alpha.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_Alpha.png" HUDPictureVariant_InnerIcon="../u_resources/spells/Active_Skills/Fireball_Toxic.png" ShowParamsInTooltip="SpecificFireball,DamageWeapon" HUDPicture="../u_resources/spells/Active_Skills/Fireball_Toxic.png" VariantBottomPanel="1" />
+    <SkillLoop PresetID="skillloop_fireball_poison" />
+    <DamageWeapon WeaponMultiplier="1.25" />
+    <Damage_Conversion>
+      <Entry From="physical" To="fire" ConversionRate="-100" />
+      <Entry From="physical" To="toxic" ConversionRate="100" />
+    </Damage_Conversion>
+    <WeaponRequirements Requirements="poison,magic" />
+    <ParticleList>
+      <Particle Key="FrontCircleSpark" Name="U_Magic_Sign.Toxic.FrontCircle_Sign_01_Spark" Direction="0,0,1" />
+      <Particle Key="FrontCircleShot" Name="U_Magic_Sign.Toxic.FrontCircle_Sign_01_Shot" Direction="0,0,1" />
+    </ParticleList>
+    <Projectile Name="player_fireball_proj_poison" />
+  </Skill>
+  <Skill UID="player_fireball_variant_18" ESkill="default_variant">
+    <HUD UIName="@ui_Variant_Fireball_variant_18" Lore="@ui_Variant_Fireball_variant_18_Lore" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_Alpha.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_Alpha.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_Alpha.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_Alpha.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_Alpha.png" HUDPictureVariant_InnerIcon="../u_resources/spells/Active_Skills/Fireball_Shadow.png" ShowParamsInTooltip="SpecificFireball,DamageWeapon" HUDPicture="../u_resources/spells/Active_Skills/Fireball_Shadow.png" VariantBottomPanel="1" />
+    <SkillLoop PresetID="skillloop_fireball_shadow" />
+    <DamageWeapon WeaponMultiplier="1.25" />
+    <Damage_Conversion>
+      <Entry From="physical" To="fire" ConversionRate="-100" />
+      <Entry From="physical" To="shadow" ConversionRate="100" />
+    </Damage_Conversion>
+    <WeaponRequirements Requirements="shadow,magic" />
+    <ParticleList>
+      <Particle Key="FrontCircleSpark" Name="U_Magic_Sign.Shadow.FrontCircle_Sign_01_Spark" Direction="0,0,1" />
+      <Particle Key="FrontCircleShot" Name="U_Magic_Sign.Shadow.FrontCircle_Sign_01_Shot" Direction="0,0,1" />
+    </ParticleList>
+    <Projectile Name="player_fireball_proj_shadow" />
+  </Skill>
+  <Skill UID="Player_Fireball_variant_19" ESkill="default_variant">
+    <HUD UIName="@ui_variant_Player_Fireball_variant_19" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_003.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_003.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_003.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_003.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_003.png" ShowParamsInTooltip="DamageWeapon" />
+    <DamageWeapon WeaponMultiplier="1.15" />
+  </Skill>
+  <Skill UID="player_fireball_variant_4,player_fireball_variant_10" ESkill="default_variant_combo">
+    <Recast UmbraCost="100" />
+  </Skill>
+  <Skill UID="player_fireball_variant_default_damage_type,player_fireball_variant_1" ESkill="default_variant_combo">
+    <Projectile Name="player_fireball_proj_big" />
+  </Skill>
+  <Skill UID="player_fireball_variant_default_damage_type,player_fireball_variant_3" ESkill="default_variant_combo">
+    <ParticleList>
+      <Particle Key="Disappear" Name="U_Projectile.Fire.FireBall_Pierce_01_end" Scale="0.7" Direction="0,0,1" />
+    </ParticleList>
+    <Projectile Name="player_fireball_proj_pierce" />
+  </Skill>
+  <Skill UID="player_fireball_variant_1,player_fireball_variant_10" ESkill="default_variant_combo">
+    <ParticleList>
+      <Particle Key="AddImpact" Name="U_Projectile.Fire.FireBall_addimpact_01" Direction="0,1,0" Scale="1.5" />
+    </ParticleList>
+  </Skill>
+  <Skill UID="player_fireball_variant_default_damage_type,player_fireball_variant_1,player_fireball_variant_3" ESkill="default_variant_combo">
+    <ParticleList>
+      <Particle Key="Disappear" Name="U_Projectile.Fire.FireBall_Pierce_01_end" Scale="1.43" Direction="0,0,1" />
+    </ParticleList>
+    <Projectile Name="player_fireball_proj_big_pierce" />
+  </Skill>
+  <Skill UID="player_fireball_variant_5,player_fireball_variant_8" ESkill="default_variant_combo">
+    <Specific_Fireball BuffName="AST_Fireball_DamageBoost_Lightning" />
+  </Skill>
+  <Skill UID="player_fireball_variant_5,player_fireball_variant_10" ESkill="default_variant_combo">
+    <ParticleList>
+      <Particle Key="AddImpact" Name="U_Projectile.Lightning.Lightning_ball_addimpact_01" Direction="0,1,0" Scale="1" />
+    </ParticleList>
+  </Skill>
+  <Skill UID="player_fireball_variant_5,player_fireball_variant_3" ESkill="default_variant_combo">
+    <ParticleList>
+      <Particle Key="Disappear" Name="U_Projectile.Lightning.Lightning_Ball_pierce_01_end" Scale="0.7" Direction="0,0,1" />
+    </ParticleList>
+    <Projectile Name="player_fireball_proj_pierce_lightning" />
+  </Skill>
+  <Skill UID="player_fireball_variant_5,player_fireball_variant_1" ESkill="default_variant_combo">
+    <Projectile Name="player_fireball_proj_big_lightning" />
+  </Skill>
+  <Skill UID="player_fireball_variant_5,player_fireball_variant_1,player_fireball_variant_3" ESkill="default_variant_combo">
+    <ParticleList>
+      <Particle Key="Disappear" Name="U_Projectile.Lightning.Lightning_Ball_pierce_01_end" Scale="1.43" Direction="0,0,1" />
+    </ParticleList>
+    <Projectile Name="player_fireball_proj_big_pierce_lightning" />
+  </Skill>
+  <Skill UID="player_fireball_variant_5,player_fireball_variant_1,player_fireball_variant_10" ESkill="default_variant_combo">
+    <ParticleList>
+      <Particle Key="AddImpact" Name="U_Projectile.Lightning.Lightning_ball_addimpact_01" Direction="0,1,0" Scale="1.5" />
+    </ParticleList>
+  </Skill>
+  <Skill UID="player_fireball_variant_17,player_fireball_variant_8" ESkill="default_variant_combo">
+    <Specific_Fireball BuffName="AST_Fireball_DamageBoost_Poison" />
+  </Skill>
+  <Skill UID="player_fireball_variant_17,player_fireball_variant_10" ESkill="default_variant_combo">
+    <ParticleList>
+      <Particle Key="AddImpact" Name="U_Projectile.Poison.Poison_ball_addimpact_01" Direction="0,1,0" Scale="1" />
+    </ParticleList>
+  </Skill>
+  <Skill UID="player_fireball_variant_17,player_fireball_variant_3" ESkill="default_variant_combo">
+    <ParticleList>
+      <Particle Key="Disappear" Name="U_Projectile.Poison.Poison_Ball_pierce_01_end" Scale="0.7" Direction="0,0,1" />
+    </ParticleList>
+    <Projectile Name="player_fireball_proj_pierce_poison" />
+  </Skill>
+  <Skill UID="player_fireball_variant_17,player_fireball_variant_1" ESkill="default_variant_combo">
+    <Projectile Name="player_fireball_proj_big_poison" />
+  </Skill>
+  <Skill UID="player_fireball_variant_17,player_fireball_variant_1,player_fireball_variant_3" ESkill="default_variant_combo">
+    <ParticleList>
+      <Particle Key="Disappear" Name="U_Projectile.Poison.Poison_Ball_pierce_01_end" Scale="1.43" Direction="0,0,1" />
+    </ParticleList>
+    <Projectile Name="player_fireball_proj_big_pierce_poison" />
+  </Skill>
+  <Skill UID="player_fireball_variant_17,player_fireball_variant_1,player_fireball_variant_10" ESkill="default_variant_combo">
+    <ParticleList>
+      <Particle Key="AddImpact" Name="U_Projectile.Poison.Poison_ball_addimpact_01" Direction="0,1,0" Scale="1.5" />
+    </ParticleList>
+  </Skill>
+  <Skill UID="player_fireball_variant_18,player_fireball_variant_8" ESkill="default_variant_combo">
+    <Specific_Fireball BuffName="AST_Fireball_DamageBoost_Shadow" />
+  </Skill>
+  <Skill UID="player_fireball_variant_18,player_fireball_variant_10" ESkill="default_variant_combo">
+    <ParticleList>
+      <Particle Key="AddImpact" Name="U_Projectile.Shadow.Shadow_ball_addimpact_01" Direction="0,1,0" />
+    </ParticleList>
+  </Skill>
+  <Skill UID="player_fireball_variant_18,player_fireball_variant_3" ESkill="default_variant_combo">
+    <ParticleList>
+      <Particle Key="Disappear" Name="U_Projectile.Shadow.Shadow_Ball_pierce_01_end" Scale="0.7" Direction="0,0,1" />
+    </ParticleList>
+    <Projectile Name="player_fireball_proj_pierce_shadow" />
+  </Skill>
+  <Skill UID="player_fireball_variant_18,player_fireball_variant_1" ESkill="default_variant_combo">
+    <Projectile Name="player_fireball_proj_big_shadow" />
+  </Skill>
+  <Skill UID="player_fireball_variant_18,player_fireball_variant_1,player_fireball_variant_3" ESkill="default_variant_combo">
+    <ParticleList>
+      <Particle Key="Disappear" Name="U_Projectile.Shadow.Shadow_Ball_pierce_01_end" Scale="1.43" Direction="0,0,1" />
+    </ParticleList>
+    <Projectile Name="player_fireball_proj_big_pierce_shadow" />
+  </Skill>
+  <Skill UID="player_fireball_variant_18,player_fireball_variant_1,player_fireball_variant_10" ESkill="default_variant_combo">
+    <ParticleList>
+      <Particle Key="AddImpact" Name="U_Projectile.Shadow.Shadow_ball_addimpact_01" Direction="0,1,0" Scale="1.5" />
+    </ParticleList>
+  </Skill>
+</MetaData>

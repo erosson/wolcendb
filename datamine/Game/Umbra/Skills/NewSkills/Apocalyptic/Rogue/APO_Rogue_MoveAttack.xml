@@ -14,7 +14,7 @@
     <ParticleList>
       <Particle Key="trail" Name="U_ApocalypticForm.Rogue_ApocalypticForm.Movement_Projectile" Offset="0,0,1.5" Direction="0,1,0" Scale="1" InstantKill="0" />
     </ParticleList>
-    <Specific_ApoRogue_MoveAttack CollisionDamageSkill="apo_rogue_moveattack_collision" CollisionShapeWidth="2.5" DashSpeed="180" DashDistance="14" />
+    <Specific_ApoRogue_MoveAttack CollisionDamageSkill="apo_rogue_moveattack_collision" CollisionShapeWidth="4" DashSpeed="180" DashDistance="14" />
     <SoundTrigger OnAnimStart="Play_Skill_APO_Rogue_MoveAttack" OnHit="Play_Skill_BladeSlinger_Impact" PlayAttackVoice="1" />
   </Skill>
   <Skill UID="apo_rogue_moveattack_collision" ESkill="default_empty" Keywords="magic_spell">

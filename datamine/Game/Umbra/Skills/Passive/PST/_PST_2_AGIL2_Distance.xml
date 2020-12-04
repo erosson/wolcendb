@@ -2,31 +2,31 @@
   <Spell Name="DIST_1" UIName="@ui_DIST_1_name" HUDLoreDesc="" GameplayDesc="">
     <MagicEffects>
       <EIM Name="damage_percent_projectiles" HUDDesc="@ui_eim_damage_percent_projectiles" Permanent="1">
-        <Semantics DamagePercentInt="12" />
+        <Semantics DamagePercentInt="6" />
       </EIM>
-      <EIM Name="attackspeed_score_percent" HUDDesc="@ui_eim_attackspeed_score_percent" Permanent="1">
-        <Semantics CharacteristicScorePercentInt="10" />
+      <EIM Name="attackspeed_final_percent" HUDDesc="@ui_eim_attackspeed_final_percent" Permanent="1">
+        <Semantics CharacteristicFinalPercentFloat="2" />
       </EIM>
     </MagicEffects>
   </Spell>
   <Spell Name="DIST_2" UIName="@ui_DIST_2_name" HUDLoreDesc="" GameplayDesc="">
     <MagicEffects>
-      <EIM Name="attackspeed_score_percent" HUDDesc="@ui_eim_attackspeed_score_percent" Permanent="1">
-        <Semantics CharacteristicScorePercentInt="15" />
+      <EIM Name="attackspeed_final_percent" HUDDesc="@ui_eim_attackspeed_final_percent" Permanent="1">
+        <Semantics CharacteristicFinalPercentFloat="3" />
       </EIM>
     </MagicEffects>
   </Spell>
   <Spell Name="DIST_3" UIName="@ui_DIST_3_name" HUDLoreDesc="" GameplayDesc="">
     <MagicEffects>
       <EIM Name="criticalchance_projectiles_score_percent" HUDDesc="@ui_eim_criticalchance_projectiles_score_percent" Permanent="1">
-        <Semantics CharacteristicScorePercentInt="18" />
+        <Semantics CharacteristicScorePercentInt="10" />
       </EIM>
     </MagicEffects>
   </Spell>
   <Spell Name="DIST_4" UIName="@ui_DIST_4_name" HUDLoreDesc="" GameplayDesc="">
     <MagicEffects>
       <EIM Name="criticalchance_projectiles_score_percent" HUDDesc="@ui_eim_criticalchance_projectiles_score_percent" Permanent="1">
-        <Semantics CharacteristicScorePercentInt="18" />
+        <Semantics CharacteristicScorePercentInt="10" />
       </EIM>
     </MagicEffects>
   </Spell>
@@ -43,62 +43,62 @@
         <Semantics HealthFlatInt="100" />
       </EIM>
       <EIM Name="health_percent" HUDDesc="@ui_eim_health_percent" Permanent="1">
-        <Semantics HealthPercentInt="8" />
+        <Semantics HealthPercentInt="5" />
       </EIM>
     </MagicEffects>
   </Spell>
   <Spell Name="DIST_7" UIName="@ui_DIST_7_name" HUDLoreDesc="@ui_DIST_7_lore" GameplayDesc="@ui_DIST_7_desc">
     <MagicEffects>
       <EIM Name="damage_percent_impaired" HUDDesc="@ui_eim_damage_percent_impaired" Permanent="1">
-        <Semantics DamagePercentFloat="25" />
+        <Semantics DamagePercentFloat="10" />
       </EIM>
     </MagicEffects>
   </Spell>
   <Spell Name="DIST_8" UIName="@ui_DIST_8_name" HUDLoreDesc="" GameplayDesc="">
     <MagicEffects>
       <EIM Name="stasischance_on_umbra_damage_score_percent" HUDDesc="@ui_eim_stasischance_on_umbra_damage_score_percent" Permanent="1">
-        <Semantics CharacteristicScorePercentInt="25" />
+        <Semantics CharacteristicScorePercentInt="15" />
       </EIM>
     </MagicEffects>
   </Spell>
   <Spell Name="DIST_9" UIName="@ui_DIST_9_name" HUDLoreDesc="" GameplayDesc="">
     <MagicEffects>
       <EIM Name="stunchance_on_physical_damage_score_percent" HUDDesc="@ui_eim_stunchance_on_physical_damage_score_percent" Permanent="1">
-        <Semantics CharacteristicScorePercentInt="20" />
+        <Semantics CharacteristicScorePercentInt="15" />
       </EIM>
       <EIM Name="freezechance_on_frost_damage_score_percent" HUDDesc="@ui_eim_freezechance_on_frost_damage_score_percent" Permanent="1">
-        <Semantics CharacteristicScorePercentInt="20" />
+        <Semantics CharacteristicScorePercentInt="15" />
       </EIM>
     </MagicEffects>
   </Spell>
   <Spell Name="DIST_10" UIName="@ui_DIST_10_name" HUDLoreDesc="" GameplayDesc="">
     <MagicEffects>
       <EIM Name="health_percent" HUDDesc="@ui_eim_health_percent" Permanent="1">
-        <Semantics HealthPercentInt="10" />
+        <Semantics HealthPercentInt="5" />
       </EIM>
       <EIM Name="forceshield_percent" HUDDesc="@ui_eim_forceshield_percent" Permanent="1">
-        <Semantics ArmorPercentFloat="8" />
+        <Semantics ArmorPercentFloat="5" />
       </EIM>
     </MagicEffects>
   </Spell>
   <Spell Name="DIST_11" UIName="@ui_DIST_11_name" HUDLoreDesc="" GameplayDesc="">
     <MagicEffects>
       <EIM Name="dodgechance_score_percent" HUDDesc="@ui_eim_dodgechance_score_percent" Permanent="1">
-        <Semantics CharacteristicScorePercentInt="15" />
+        <Semantics CharacteristicScorePercentInt="8" />
       </EIM>
     </MagicEffects>
   </Spell>
   <Spell Name="DIST_12" UIName="@ui_DIST_12_name" HUDLoreDesc="" GameplayDesc="">
     <MagicEffects>
       <EIM Name="dodgechance_score_percent" HUDDesc="@ui_eim_dodgechance_score_percent" Permanent="1">
-        <Semantics CharacteristicScorePercentInt="25" />
+        <Semantics CharacteristicScorePercentInt="12" />
       </EIM>
     </MagicEffects>
   </Spell>
   <Spell Name="DIST_13" UIName="@ui_DIST_13_name" HUDLoreDesc="" GameplayDesc="">
     <MagicEffects>
       <EIM Name="dodgechance_score_percent" HUDDesc="@ui_eim_dodgechance_score_percent" Permanent="1">
-        <Semantics CharacteristicScorePercentInt="15" />
+        <Semantics CharacteristicScorePercentInt="8" />
       </EIM>
     </MagicEffects>
   </Spell>
@@ -107,18 +107,18 @@
       <EIM Name="movespeed" HUDDesc="@ui_eim_movespeed" Permanent="1">
         <Semantics SpeedPercentInt="5" />
       </EIM>
-      <EIM Name="attackspeed_score_percent" HUDDesc="@ui_eim_attackspeed_score_percent" Permanent="1">
-        <Semantics CharacteristicScorePercentInt="5" />
+      <EIM Name="attackspeed_final_percent" HUDDesc="@ui_eim_attackspeed_final_percent" Permanent="1">
+        <Semantics CharacteristicFinalPercentFloat="2" />
       </EIM>
-      <EIM Name="spellcastingspeed_score_percent" HUDDesc="@ui_eim_spellcastingspeed_score_percent" Permanent="1">
-        <Semantics CharacteristicScorePercentInt="9" />
+      <EIM Name="spellcastingspeed_final_percent" HUDDesc="@ui_eim_spellcastingspeed_final_percent" Permanent="1">
+        <Semantics CharacteristicFinalPercentFloat="2" />
       </EIM>
     </MagicEffects>
   </Spell>
   <Spell Name="DIST_15" UIName="@ui_DIST_15_name" HUDLoreDesc="" GameplayDesc="">
     <MagicEffects>
       <EIM Name="agility_pts" HUDDesc="@ui_eim_agility_pts" Permanent="1">
-        <Semantics AttributeFlatInt="25" />
+        <Semantics AttributeFlatInt="15" />
       </EIM>
     </MagicEffects>
   </Spell>
@@ -127,43 +127,43 @@
       <EIM Name="additional_projectile" HUDDesc="@ui_eim_additional_projectile" Permanent="1">
         <Semantics ProjectileCountInt="1" />
       </EIM>
-      <EIM Name="damage_percent_projectiles" HUDDesc="@ui_eim_damage_percent_projectiles" Permanent="1">
-        <Semantics DamagePercentInt="-50" />
+      <EIM Name="damage_percent_major_projectiles" HUDDesc="@ui_eim_damage_percent_major_projectiles" Permanent="1">
+        <Semantics MajorDamageMultiplier="0.8" />
       </EIM>
     </MagicEffects>
   </Spell>
   <Spell Name="DIST_17" UIName="@ui_DIST_17_name" HUDLoreDesc="" GameplayDesc="">
     <MagicEffects>
       <EIM Name="criticaldamage_projectiles_pts" HUDDesc="@ui_eim_criticaldamage_projectiles_pts" Permanent="1">
-        <Semantics DamagePercentInt="25" />
+        <Semantics DamagePercentInt="10" />
       </EIM>
     </MagicEffects>
   </Spell>
   <Spell Name="DIST_18" UIName="@ui_DIST_18_name" HUDLoreDesc="" GameplayDesc="">
     <MagicEffects>
       <EIM Name="criticalchance_projectiles_score_percent" HUDDesc="@ui_eim_criticalchance_projectiles_score_percent" Permanent="1">
-        <Semantics CharacteristicScorePercentInt="18" />
+        <Semantics CharacteristicScorePercentInt="10" />
       </EIM>
     </MagicEffects>
   </Spell>
   <Spell Name="DIST_19" UIName="@ui_DIST_19_name" HUDLoreDesc="" GameplayDesc="">
     <MagicEffects>
       <EIM Name="damage_percent_projectiles" HUDDesc="@ui_eim_damage_percent_projectiles" Permanent="1">
-        <Semantics DamagePercentInt="10" />
+        <Semantics DamagePercentInt="5" />
       </EIM>
     </MagicEffects>
   </Spell>
   <Spell Name="DIST_20" UIName="@ui_DIST_20_name" HUDLoreDesc="" GameplayDesc="">
     <MagicEffects>
       <EIM Name="damage_percent_projectiles" HUDDesc="@ui_eim_damage_percent_projectiles" Permanent="1">
-        <Semantics DamagePercentInt="16" />
+        <Semantics DamagePercentInt="8" />
       </EIM>
     </MagicEffects>
   </Spell>
   <Spell Name="DIST_21" UIName="@ui_DIST_21_name" HUDLoreDesc="" GameplayDesc="">
     <MagicEffects>
       <EIM Name="damage_percent_projectiles" HUDDesc="@ui_eim_damage_percent_projectiles" Permanent="1">
-        <Semantics DamagePercentInt="10" />
+        <Semantics DamagePercentInt="5" />
       </EIM>
     </MagicEffects>
   </Spell>
@@ -180,7 +180,7 @@
         <Semantics ArmorFlatInt="100" />
       </EIM>
       <EIM Name="forceshield_percent" HUDDesc="@ui_eim_forceshield_percent" Permanent="1">
-        <Semantics ArmorPercentFloat="8" />
+        <Semantics ArmorPercentFloat="5" />
       </EIM>
     </MagicEffects>
   </Spell>
@@ -194,7 +194,7 @@
   <Spell Name="DIST_25" UIName="@ui_DIST_25_name" HUDLoreDesc="" GameplayDesc="">
     <MagicEffects>
       <EIM Name="damage_percent_while_nobody_close" HUDDesc="@ui_eim_damage_percent_while_nobody_close_damage" Permanent="1">
-        <Semantics DamagePercentFloat="10" RadiusFloat="0" />
+        <Semantics DamagePercentFloat="15" RadiusFloat="0" />
       </EIM>
     </MagicEffects>
   </Spell>
@@ -207,8 +207,8 @@
   </Spell>
   <Spell Name="DIST_27" UIName="@ui_DIST_27_name" HUDLoreDesc="" GameplayDesc="">
     <MagicEffects>
-      <EIM Name="attackspeed_score_percent" HUDDesc="@ui_eim_attackspeed_score_percent" Permanent="1">
-        <Semantics CharacteristicScorePercentInt="20" />
+      <EIM Name="attackspeed_final_percent" HUDDesc="@ui_eim_attackspeed_final_percent" Permanent="1">
+        <Semantics CharacteristicFinalPercentFloat="3" />
       </EIM>
     </MagicEffects>
   </Spell>
@@ -229,7 +229,86 @@
   <Spell Name="DIST_30" UIName="@ui_DIST_30_name" HUDLoreDesc="@ui_DIST_30_lore" GameplayDesc="@ui_DIST_30_desc">
     <MagicEffects>
       <EIM Name="projectiles_damage_asdistance" HUDDesc="@ui_eim_projectiles_damage_asdistance" Permanent="1">
-        <Semantics DamagePercentFloat="175" RangeFloat_Min="8" RangeFloat_Max="15" />
+        <Semantics DamagePercentFloat="30" RangeFloat_Min="8" RangeFloat_Max="15" />
+      </EIM>
+    </MagicEffects>
+  </Spell>
+  <Spell Name="DIST_31" UIName="@ui_DIST_31_name" HUDLoreDesc="" GameplayDesc="">
+    <MagicEffects>
+      <EIM Name="health_pts" HUDDesc="@ui_eim_health_pts" Permanent="1">
+        <Semantics HealthFlatInt="100" />
+      </EIM>
+      <EIM Name="health_percent" HUDDesc="@ui_eim_health_percent" Permanent="1">
+        <Semantics HealthPercentInt="5" />
+      </EIM>
+    </MagicEffects>
+  </Spell>
+  <Spell Name="DIST_32" UIName="@ui_DIST_32_name" HUDLoreDesc="" GameplayDesc="">
+    <MagicEffects>
+      <EIM Name="dodgechance_score_percent" HUDDesc="@ui_eim_dodgechance_score_percent" Permanent="1">
+        <Semantics CharacteristicScorePercentInt="5" />
+      </EIM>
+    </MagicEffects>
+  </Spell>
+  <Spell Name="DIST_33" UIName="@ui_DIST_33_name" HUDLoreDesc="" GameplayDesc="">
+    <MagicEffects>
+      <EIM Name="dodgechance_score_percent" HUDDesc="@ui_eim_dodgechance_score_percent" Permanent="1">
+        <Semantics CharacteristicScorePercentInt="5" />
+      </EIM>
+    </MagicEffects>
+  </Spell>
+  <Spell Name="DIST_34" UIName="@ui_DIST_34_name" HUDLoreDesc="" GameplayDesc="">
+    <MagicEffects>
+      <EIM Name="health_regen_percent" HUDDesc="@ui_eim_health_regen_percent" Permanent="1">
+        <Semantics ResourcePercentFloat="15" />
+      </EIM>
+    </MagicEffects>
+  </Spell>
+  <Spell Name="DIST_35" UIName="@ui_DIST_35_name" HUDLoreDesc="" GameplayDesc="">
+    <MagicEffects>
+      <EIM Name="health_percent" HUDDesc="@ui_eim_health_percent" Permanent="1">
+        <Semantics HealthPercentInt="5" />
+      </EIM>
+      <EIM Name="forceshield_percent" HUDDesc="@ui_eim_forceshield_percent" Permanent="1">
+        <Semantics ArmorPercentFloat="5" />
+      </EIM>
+    </MagicEffects>
+  </Spell>
+  <Spell Name="DIST_36" UIName="@ui_DIST_36_name" HUDLoreDesc="" GameplayDesc="">
+    <MagicEffects>
+      <EIM Name="forceshield_pts" HUDDesc="@ui_eim_forceshield_pts" Permanent="1">
+        <Semantics ArmorFlatInt="100" />
+      </EIM>
+      <EIM Name="forceshield_percent" HUDDesc="@ui_eim_forceshield_percent" Permanent="1">
+        <Semantics ArmorPercentFloat="5" />
+      </EIM>
+    </MagicEffects>
+  </Spell>
+  <Spell Name="DIST_37" UIName="@ui_DIST_37_name" HUDLoreDesc="" GameplayDesc="">
+    <MagicEffects>
+      <EIM Name="damage_percent_projectiles" HUDDesc="@ui_eim_damage_percent_projectiles" Permanent="1">
+        <Semantics DamagePercentInt="5" />
+      </EIM>
+    </MagicEffects>
+  </Spell>
+  <Spell Name="DIST_38" UIName="@ui_DIST_38_name" HUDLoreDesc="" GameplayDesc="">
+    <MagicEffects>
+      <EIM Name="damage_percent_projectiles" HUDDesc="@ui_eim_damage_percent_projectiles" Permanent="1">
+        <Semantics DamagePercentInt="5" />
+      </EIM>
+    </MagicEffects>
+  </Spell>
+  <Spell Name="DIST_39" UIName="@ui_DIST_39_name" HUDLoreDesc="" GameplayDesc="">
+    <MagicEffects>
+      <EIM Name="forceshield_regeneration_percent" HUDDesc="@ui_eim_forceshield_regeneration_percent" Permanent="1">
+        <Semantics DefenseRegenerationPercentFloat="5" />
+      </EIM>
+    </MagicEffects>
+  </Spell>
+  <Spell Name="DIST_40" UIName="@ui_DIST_40_name" HUDLoreDesc="" GameplayDesc="">
+    <MagicEffects>
+      <EIM Name="attackspeed_final_percent" HUDDesc="@ui_eim_attackspeed_final_percent" Permanent="1">
+        <Semantics CharacteristicFinalPercentFloat="3" />
       </EIM>
     </MagicEffects>
   </Spell>

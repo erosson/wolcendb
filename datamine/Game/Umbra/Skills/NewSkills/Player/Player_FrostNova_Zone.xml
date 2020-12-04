@@ -7,4 +7,28 @@
     <DamageZone RateOfFire=".5" Duration="6" MaxEntityHits="0" MaxHitsTotal="0" />
     <SoundTrigger OnHit="Play_Skill_FrostNova_Frost_Zone_Impact_Small" />
   </Skill>
+  <Skill ESkill="frostnova_zone" Keywords="magic_spell" UID="frostnova_zone_shadow">
+    <StatusAilment>
+      <curse Chance="20" ChanceMode="override" Duration="2" DurationMode="override" />
+    </StatusAilment>
+    <DamageBase Type="shadow" Min="5" MinPerLevel="0" Max="7" MaxPerLevel="0" />
+    <DamageZone RateOfFire=".5" Duration="6" MaxEntityHits="0" MaxHitsTotal="0" />
+    <SoundTrigger OnHit="Play_Skill_FrostNova_Shadow_Zone_Impact_Small" />
+  </Skill>
+  <Skill ESkill="frostnova_zone" Keywords="magic_spell" UID="frostnova_zone_poison">
+    <StatusAilment>
+      <poison Chance="20" ChanceMode="override" Duration="2" DurationMode="override" />
+    </StatusAilment>
+    <DamageBase Type="toxic" Min="5" MinPerLevel="0" Max="7" MaxPerLevel="0" />
+    <DamageZone RateOfFire=".5" Duration="6" MaxEntityHits="0" MaxHitsTotal="0" />
+    <SoundTrigger OnHit="Play_Skill_FrostNova_Shadow_Zone_Impact_Small" />
+  </Skill>
+  <Skill ESkill="frostnova_zone" Keywords="magic_spell" UID="frostnova_zone_fire">
+    <StatusAilment>
+      <burn Chance="20" ChanceMode="override" Duration="2" DurationMode="override" />
+    </StatusAilment>
+    <DamageBase Type="fire" Min="5" MinPerLevel="0" Max="7" MaxPerLevel="0" />
+    <DamageZone RateOfFire=".5" Duration="6" MaxEntityHits="0" MaxHitsTotal="0" />
+    <SoundTrigger OnHit="Play_Skill_FrostNova_Shadow_Zone_Impact_Small" />
+  </Skill>
 </MetaData>

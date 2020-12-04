@@ -103,6 +103,8 @@
       <ProjectParams ProjectName="bank_construct" />
       <ProjectParams ProjectName="buy_stash_1" />
       <ProjectParams ProjectName="buy_stash_2" />
+      <ProjectParams ProjectName="restock_merchant_mohabi" />
+      <ProjectParams ProjectName="restock_merchant_zanafer" />
     </ProjectList>
   </Building>
   <Building Name="building_anankis_artifact" BaseProduction="5">
@@ -180,6 +182,31 @@
     <UIParams UIName="@ui_building_wonder_6" UILore="@ui_building_wonder_6_desc" ImagePath="city_building\building_illustrations\refuge_for_the_blind.png" />
     <ProjectList>
       <ProjectParams ProjectName="wonder_6_construct" />
+    </ProjectList>
+  </Building>
+  <Building Name="building_hunt" BaseProduction="20">
+    <UIParams UIName="@ui_building_hunt" UILore="@ui_building_hunt_desc" ImagePath="city_building\building_illustrations\OsharaCouncil_Building.png" />
+    <ProjectList>
+      <ProjectParams ProjectName="hunt_narrative1" />
+      <ProjectParams ProjectName="hunt_narrative2" />
+      <ProjectParams ProjectName="hunt_narrative3" />
+      <ProjectParams ProjectName="hunt_consumable1" />
+      <ProjectParams ProjectName="hunt_consumable2" />
+      <ProjectParams ProjectName="hunt_consumable3" />
+      <ProjectParams ProjectName="hunt_consumable_uber_oshara" />
+      <ProjectParams ProjectName="hunt_merchant_upgarde1" />
+      <ProjectParams ProjectName="hunt_merchant_upgarde2" />
+      <ProjectParams ProjectName="hunt_merchant_restock1" />
+      <ProjectParams ProjectName="hunt_merchant_restock2" />
+      <ProjectParams ProjectName="hunt_merchant_restock3" />
+    </ProjectList>
+  </Building>
+  <Building Name="building_expert_forge" BaseProduction="20">
+    <UIParams UIName="@ui_building_expert_forge" UILore="@ui_building_expert_forge_desc" ImagePath="city_building\building_illustrations\Armours.png" />
+    <ProjectList>
+      <ProjectParams ProjectName="expert_forge_construct" />
+      <ProjectParams ProjectName="expert_forge_project_0" />
+      <ProjectParams ProjectName="expert_forge_project_1" />
     </ProjectList>
   </Building>
 </MetaData>

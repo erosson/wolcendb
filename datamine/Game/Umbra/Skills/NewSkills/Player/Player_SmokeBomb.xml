@@ -4,7 +4,7 @@
     <WeaponRequirements Requirements="rogue" />
     <Animation ActionString="player_skill_shadowbomb" />
     <CastingParams CastBone="R_weapon_bone" CasterImmobilizationTime="0" CanCastWhileMoving="0" MaximumTurnRate="0" ShouldMoveInRange="0" />
-    <HUD HUDPicture="../u_resources/spells/Active_Skills/Duskshroud.png" UIName="@ui_AST_SmokeBomb" Lore="@ui_AST_SmokeBomb_Lore" ActiveEffectTitle="" ActiveEffectDesc="" ASTTreeNumber="8" ShowParamsInAST="Cost,ROSTime,Cooldown,Range,DamageDetail,StatusAilmentsChance,Explosion,SpecificSmokeBomb" ShowParamsInTooltip="Cost,Cooldown,DamageOverview,StatusAilmentsChance,SpecificSmokeBomb" />
+    <HUD HUDPicture="../u_resources/spells/Active_Skills/duskshroud.png" UIName="@ui_AST_SmokeBomb" Lore="@ui_AST_SmokeBomb_Lore" ActiveEffectTitle="" ActiveEffectDesc="" ASTTreeNumber="8" ShowParamsInAST="Cost,ROSTime,Cooldown,Range,DamageDetail,StatusAilmentsChance,Explosion,SpecificSmokeBomb" ShowParamsInTooltip="Cost,Cooldown,DamageOverview,StatusAilmentsChance,SpecificSmokeBomb" />
     <Enneract PickableParticle_MoveToGround="U_CommonVFX_02.Esseract.Esseract_Projectile.Nutral" PickableParticle_OnGround_Shape="U_CommonVFX_02.Esseract.Esseract_Shape.Circle_Nutral" PickableParticle_OnGround_Damage="U_CommonVFX_02.Esseract.Esseract_Color.Nutral" PickableParticle_OnGround_Symbol="U_CommonVFX_02.Esseract.Esseract_Symbol.MOROS" PickableParticle_OnGround_Indicator="U_CommonVFX_02.Esseract.Esseract_Indicator.Nutral" PickableParticle_OnGround_Pickup="U_CommonVFX_02.Esseract.Esseract_Loot.Nutral" SkillLearningParticle="U_CommonVFX.Skill_Learn.Skill_Learn_Nutral" Inventory_HUDPicture="../u_resources/enneracts/Duskshroud.png" Inventory_LoreDesc="@ui_enneract_lore" />
     <Aggression TargetValueOnHit="0" />
     <Cooldown Cooldown="12" CooldownPerLevel="0" />
@@ -17,6 +17,9 @@
       <Particle Key="Invisibility" Name="U_Character_02.SmokeBomb.SmokeBomb_Trail_01" Direction="0,0,1" Scale="1.2" Offset="0,1.3,0" Bone="Bip01" TimeScale="1" />
     </ParticleList>
     <Specific_SmokeBomb PassiveDamageName="AST_SmokeBomb_FirstHit" InvisibilityTime="2" DecreaseAggressionValue="80" SkillRadius="4" AOETime="6" InvisibilityMinTime="0.3" />
+  </Skill>
+  <Skill UID="player_SmokeBomb_variant_default_damage_type" ESkill="default_variant">
+    <HUD UIName="@ui_AST_SmokeBomb" Lore="@ui_AST_SmokeBomb_Lore" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_Alpha.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_Alpha.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_Alpha.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_Alpha.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_Alpha.png" HUDPictureVariant_InnerIcon="../u_resources/spells/Active_Skills/duskshroud.png" VariantBottomPanel="1" />
   </Skill>
   <Skill UID="player_SmokeBomb_variant_1" ESkill="default_variant">
     <HUD UIName="@ui_Variant_SmokeBomb_variant_1" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_003.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_003.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_003.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_003.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_003.png" ShowParamsInTooltip="SpecificSmokeBomb,Projectiles" />
@@ -50,7 +53,7 @@
   </Skill>
   <Skill UID="player_SmokeBomb_variant_7" ESkill="default_variant">
     <HUD UIName="@ui_Variant_SmokeBomb_variant_7" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_001.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_001.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_001.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_001.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_001.png" ShowParamsInTooltip="SpecificSmokeBomb" />
-    <Specific_SmokeBomb PostBuffTime="5" PostBuffName="AST_SmokeBomb_PostBuff" />
+    <Specific_SmokeBomb PostBuffTime="5" PostBuffName="AST_SmokeBomb_PostBuff_Shadow" />
   </Skill>
   <Skill UID="player_SmokeBomb_variant_8" ESkill="default_variant">
     <HUD UIName="@ui_Variant_SmokeBomb_variant_8" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_003.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_003.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_003.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_003.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_003.png" ShowParamsInTooltip="SpecificSmokeBomb,StatusAilmentsChance" />
@@ -88,5 +91,43 @@
   <Skill UID="player_SmokeBomb_variant_16" ESkill="default_variant">
     <HUD UIName="@ui_Variant_SmokeBomb_variant_16" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_001.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_001.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_001.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_001.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_001.png" ShowParamsInTooltip="SpecificSmokeBomb,Cost" />
     <ResourceCost RageCost="30" />
+  </Skill>
+  <Skill UID="player_SmokeBomb_variant_17" ESkill="default_variant">
+    <HUD UIName="@ui_Variant_SmokeBomb_variant_17" Lore="@ui_Variant_SmokeBomb_variant_17_Lore" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_Alpha.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_Alpha.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_Alpha.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_Alpha.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_Alpha.png" HUDPictureVariant_InnerIcon="../u_resources/spells/Active_Skills/duskshroud_fire.png" ShowParamsInTooltip="SpecificSmokeBomb" HUDPicture="../u_resources/spells/Active_Skills/duskshroud_fire.png" VariantBottomPanel="1" />
+    <ParticleList>
+      <Particle Key="Smoke" Name="U_Character_02.SmokeBomb.SmokeBomb_Smoke_Start_01_Fire" Direction="0,0,1" Scale="1.1" Offset="0,0.5,0" />
+      <Particle Key="AOE_Loop" Name="U_Character_02.SmokeBomb.SmokeBomb_Smoke_Loop_01_Fire" Direction="0,0,1" />
+      <Particle Key="AOE_Instant" Name="U_Character_02.SmokeBomb.SmokeBomb_Smoke_AoE_01_Fire" Direction="0,0,1" />
+      <Particle Key="Invisibility" Name="U_Character_02.SmokeBomb.SmokeBomb_Trail_01_Fire" Direction="0,0,1" Scale="1.2" Offset="0,1.3,0" Bone="Bip01" TimeScale="1" />
+    </ParticleList>
+    <SoundTrigger OnAnimStart="Play_Skill_SmokeBomb_Deploy_Fire" />
+  </Skill>
+  <Skill UID="player_SmokeBomb_variant_18" ESkill="default_variant">
+    <HUD UIName="@ui_Variant_SmokeBomb_variant_18" Lore="@ui_Variant_SmokeBomb_variant_18_Lore" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_Alpha.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_Alpha.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_Alpha.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_Alpha.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_Alpha.png" HUDPictureVariant_InnerIcon="../u_resources/spells/Active_Skills/duskshroud_aether.png" ShowParamsInTooltip="SpecificSmokeBomb" HUDPicture="../u_resources/spells/Active_Skills/duskshroud_aether.png" VariantBottomPanel="1" />
+    <ParticleList>
+      <Particle Key="Smoke" Name="U_Character_02.SmokeBomb.SmokeBomb_Smoke_Start_01_Aether" Direction="0,0,1" Scale="1.1" Offset="0,0.5,0" />
+      <Particle Key="AOE_Loop" Name="U_Character_02.SmokeBomb.SmokeBomb_Smoke_Loop_01_Aether" Direction="0,0,1" />
+      <Particle Key="AOE_Instant" Name="U_Character_02.SmokeBomb.SmokeBomb_Smoke_AoE_01_Aether" Direction="0,0,1" />
+      <Particle Key="Invisibility" Name="U_Character_02.SmokeBomb.SmokeBomb_Trail_01_Aether" Direction="0,0,1" Scale="1.2" Offset="0,1.3,0" Bone="Bip01" TimeScale="1" />
+    </ParticleList>
+    <SoundTrigger OnAnimStart="Play_Skill_SmokeBomb_Deploy_Aether" />
+  </Skill>
+  <Skill UID="player_SmokeBomb_variant_17,player_SmokeBomb_variant_1" ESkill="default_variant_combo">
+    <Projectile Name="player_smokebomb_proj_fire" />
+  </Skill>
+  <Skill UID="player_SmokeBomb_variant_17,player_SmokeBomb_variant_3" ESkill="default_variant_combo">
+    <StatusAilment>
+      <curse Chance="-100" ChanceMode="override" Duration="4" DurationMode="override" Stacks="1" StacksMode="override" />
+      <burn Chance="100" ChanceMode="override" Duration="4" DurationMode="override" Stacks="1" StacksMode="override" />
+    </StatusAilment>
+  </Skill>
+  <Skill UID="player_SmokeBomb_variant_18,player_SmokeBomb_variant_1" ESkill="default_variant_combo">
+    <Projectile Name="player_smokebomb_proj_aether" />
+  </Skill>
+  <Skill UID="player_SmokeBomb_variant_18,player_SmokeBomb_variant_3" ESkill="default_variant_combo">
+    <StatusAilment>
+      <curse Chance="-100" ChanceMode="override" Duration="4" DurationMode="override" Stacks="1" StacksMode="override" />
+      <stasis Chance="100" ChanceMode="override" Duration="4" DurationMode="override" Stacks="1" StacksMode="override" />
+    </StatusAilment>
   </Skill>
 </MetaData>

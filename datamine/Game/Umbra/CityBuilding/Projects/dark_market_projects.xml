@@ -11,7 +11,7 @@
   <Project Name="dark_market_buy_uberboss_1" CategoryName="dark_market_buy_uberboss" Repeatable="1">
     <UIParams UIName="@ui_dark_market_buy_uberboss_1" UILore="@ui_dark_market_buy_uberboss_1_lore" IconType="boss" />
     <Requirements PlayerLevel="60" Projects="dark_market_construct">
-      <ResourceCost ComputationMethod="Static" Gold="0" Gold_PerPlayerLevel="0" PA="2000" PA_PerPlayerLevel="0" ProductionToComplete="5000" />
+      <ResourceCost ComputationMethod="Static" Gold="0" Gold_PerPlayerLevel="0" PA="5000" PA_PerPlayerLevel="0" ProductionToComplete="5000" />
     </Requirements>
     <RewardList>
       <Reward RewardName="buy_uberboss_1_reward" Weight="1" />
@@ -20,7 +20,7 @@
   <Project Name="dark_market_buy_uberboss_2" CategoryName="dark_market_buy_uberboss" Repeatable="1">
     <UIParams UIName="@ui_dark_market_buy_uberboss_1" UILore="@ui_dark_market_buy_uberboss_1_lore" IconType="boss" />
     <Requirements PlayerLevel="70" Projects="dark_market_construct">
-      <ResourceCost ComputationMethod="Static" Gold="0" Gold_PerPlayerLevel="0" PA="5000" PA_PerPlayerLevel="0" ProductionToComplete="10000" />
+      <ResourceCost ComputationMethod="Static" Gold="0" Gold_PerPlayerLevel="0" PA="20000" PA_PerPlayerLevel="0" ProductionToComplete="10000" />
     </Requirements>
     <RewardList>
       <Reward RewardName="buy_uberboss_2_reward" Weight="1" />
@@ -29,7 +29,7 @@
   <Project Name="dark_market_buy_uberboss_3" CategoryName="dark_market_buy_uberboss" Repeatable="1">
     <UIParams UIName="@ui_dark_market_buy_uberboss_1" UILore="@ui_dark_market_buy_uberboss_1_lore" IconType="boss" />
     <Requirements PlayerLevel="80" Projects="dark_market_construct">
-      <ResourceCost ComputationMethod="Static" Gold="0" Gold_PerPlayerLevel="0" PA="10000" PA_PerPlayerLevel="0" ProductionToComplete="15000" />
+      <ResourceCost ComputationMethod="Static" Gold="0" Gold_PerPlayerLevel="0" PA="50000" PA_PerPlayerLevel="0" ProductionToComplete="15000" />
     </Requirements>
     <RewardList>
       <Reward RewardName="buy_uberboss_3_reward" Weight="1" />
@@ -46,8 +46,8 @@
   </Project>
   <Project Name="dark_market_item_quality_transform" CategoryName="dark_market_buy_item" Repeatable="1">
     <UIParams UIName="@ui_dark_market_item_quality_transform" UILore="@ui_dark_market_item_quality_transform_lore" IconType="transform_item" />
-    <Requirements PlayerLevel="0" Projects="dark_market_item_quality_upgrade" RequiresItem="1" AuthorizedItemKeywords="accessory,armor,weapon,shield" MaxRarity="legendary" MaxQuality="exceptional">
-      <ResourceCost ComputationMethod="ItemBased" Gold="1500" PA="200" ProductionToComplete="200" ItemLevelIncreasePercent="15" ItemRarityIncreasePercent="0" ItemQualityIncreasePercent="0" />
+    <Requirements PlayerLevel="0" Projects="dark_market_item_quality_upgrade" RequiresItem="1" AuthorizedItemKeywords="armor,weapon,shield" MaxRarity="legendary" MaxQuality="exceptional">
+      <ResourceCost ComputationMethod="ItemBased" Gold="1500" PA="500" ProductionToComplete="200" ItemLevelIncreasePercent="15" ItemRarityIncreasePercent="0" ItemQualityIncreasePercent="0" />
     </Requirements>
     <RewardList>
       <Reward RewardName="dark_market_item_quality_transform_reward" Weight="1" />
@@ -65,7 +65,7 @@
   <Project Name="dark_market_item_rarity_transform" CategoryName="dark_market_buy_item" Repeatable="1">
     <UIParams UIName="@ui_dark_market_item_rarity_transform" UILore="@ui_dark_market_item_rarity_transform_lore" IconType="transform_item" />
     <Requirements PlayerLevel="0" Projects="dark_market_item_rarity_upgrade" RequiresItem="1" AuthorizedItemKeywords="accessory,armor,weapon,shield" MaxRarity="rare" MaxQuality="">
-      <ResourceCost ComputationMethod="ItemBased" Gold="5000" PA="400" ProductionToComplete="500" ItemLevelIncreasePercent="15" ItemRarityIncreasePercent="0" ItemQualityIncreasePercent="0" />
+      <ResourceCost ComputationMethod="ItemBased" Gold="5000" PA="1500" ProductionToComplete="500" ItemLevelIncreasePercent="15" ItemRarityIncreasePercent="0" ItemQualityIncreasePercent="0" />
     </Requirements>
     <RewardList>
       <Reward RewardName="dark_market_item_rarity_transform_reward" Weight="1" />

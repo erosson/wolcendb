@@ -4,15 +4,16 @@
     <Animation ActionString="player_skill_dualstrike_narrow_windup" ActionString_FollowUp="player_skill_dualstrike_narrow_followup" AnimationDrivenMovement="0" />
     <CastingParams CastBone="" CanCastWhileMoving="0" MaximumTurnRate="0" ShouldMoveInRange="1" />
     <SkillLoop PresetID="skillloop_empty" />
-    <HUD HUDPicture="../u_resources/spells/Active_Skills/dualstrike.png" UIName="@ui_AST_DualStrike" Lore="@ui_AST_DualStrike_Lore" ActiveEffectTitle="" ActiveEffectDesc="" ASTTreeNumber="1" ShowParamsInAST="Cost,ROSTime,Cooldown,Range,DamageDetail,DamageWeapon,DamageCritical,StatusAilmentsChance,SpecificDualStrike,BlownAway" ShowParamsInTooltip="Cost,Cooldown,DamageOverview,StatusAilmentsChance,SpecificDualStrike" />
+    <HUD HUDPicture="../u_resources/spells/Active_Skills/dualstrike_Physical.png" UIName="@ui_AST_DualStrike" Lore="@ui_AST_DualStrike_Lore" ActiveEffectTitle="" ActiveEffectDesc="" ASTTreeNumber="1" ShowParamsInAST="Cost,ROSTime,Cooldown,Range,DamageDetail,DamageWeapon,DamageCritical,StatusAilmentsChance,SpecificDualStrike,BlownAway" ShowParamsInTooltip="Cost,Cooldown,DamageOverview,StatusAilmentsChance,SpecificDualStrike" />
     <Enneract PickableParticle_MoveToGround="U_CommonVFX_02.Esseract.Esseract_Projectile.Physical" PickableParticle_OnGround_Shape="U_CommonVFX_02.Esseract.Esseract_Shape.Circle_Physical" PickableParticle_OnGround_Damage="U_CommonVFX_02.Esseract.Esseract_Color.Physical" PickableParticle_OnGround_Symbol="U_CommonVFX_02.Esseract.Esseract_Symbol.HEPHAARON" PickableParticle_OnGround_Indicator="U_CommonVFX_02.Esseract.Esseract_Indicator.Physical" PickableParticle_OnGround_Pickup="U_CommonVFX_02.Esseract.Esseract_Loot.Physical" SkillLearningParticle="U_CommonVFX.Skill_Learn.Skill_Learn_Physical" Inventory_HUDPicture="../u_resources/enneracts/dualstrike.png" Inventory_LoreDesc="@ui_enneract_lore" />
     <Aggression TargetValueOnHit="5" />
-    <DamageWeapon PercentMin="70" PercentMinPerLevel="0" PercentMax="70" PercentMaxPerLevel="0" />
+    <DamageWeapon WeaponMultiplier="1.1" />
+    <StatusAilment AilmentEffectiveness="50" />
     <Shapes>
       <Entry ShapeName="player_dualstrike_shape" />
     </Shapes>
     <Cooldown Cooldown="0.0" CooldownPerLevel="0" />
-    <ResourceCost RageCost="-50" ROSTransfertDuration="0.5" />
+    <ResourceCost RageCost="-40" ROSTransfertDuration="0.40" />
     <VisualFeedback TrailPresetBase="player_skill_dualstrike" BloodDecalOrientation="forward" FeedbackPresetBase="Player_skill_dualstrike" />
     <Range AttackRange="10" DashIgnoresMidwaysCollisions="1" />
     <ParticleList>
@@ -24,11 +25,15 @@
       <Particle Key="Transfer" Name="U_Character.Skills.DualStrike_Transfer_Circle_01" offset="0,0,0" Direction="0,1,0" />
     </ParticleList>
     <Specific_DualStrike AutoTargetRadius="3" MultiTarget="1" WeaponAppearParticleDelay="0.08" RangeConsideredMelee="3.5" DashSpeed="60" DashActionString_In="player_skill_dualstrike_dash_narrow_in" DashActionString_Loop="player_skill_dualstrike_dash_narrow_loop" DashActionString_Out="player_skill_dualstrike_dash_narrow_out" TransferStackRadius="2.0" LoopStartSound="Play_Skill_DualStrike_Loop_Start" ShadowTrailPreset="U_Character.Skills.DualStrike_Stab_Attack_01_Shadow" />
-    <SoundTrigger OnAnimLoopIn="Play_Skill_DualStrike_Dash" OnAnimLoopOut="Play_Skill_DualStrike_Dash_Attack" OnAnimCast="Skill_DualStrike_Followup_Attack" OnInterrupt="" OnHit="Play_Skill_DualStrike_Attack_Impact" PlayAttackVoice="0" />
+    <SoundTrigger OnAnimLoopIn="Play_Skill_DualStrike_Dash" OnAnimLoopOut="Play_Skill_DualStrike_Dash_Attack" OnAnimCast="Play_Skill_DualStrike_Followup_Attack" OnInterrupt="" OnHit="Play_Skill_DualStrike_Attack_Impact" PlayAttackVoice="0" />
+  </Skill>
+  <Skill UID="player_dualstrike_variant_default_damage_type" ESkill="default_variant">
+    <HUD UIName="@ui_AST_DualStrike" Lore="@ui_AST_DualStrike_Lore" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_Alpha.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_Alpha.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_Alpha.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_Alpha.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_Alpha.png" HUDPictureVariant_InnerIcon="../u_resources/spells/Active_Skills/dualstrike_Physical.png" VariantBottomPanel="1" />
   </Skill>
   <Skill UID="player_dualstrike_variant_1" ESkill="default_variant">
     <HUD UIName="@ui_Variant_DualStrike_variant_1" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_003.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_003.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_003.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_003.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_003.png" ShowParamsInTooltip="SpecificDualStrike" />
     <Animation Scale="1.20" />
+    <Specific_DualStrike DashSpeed="12" />
   </Skill>
   <Skill UID="player_dualstrike_variant_2" ESkill="default_variant">
     <HUD UIName="@ui_Variant_DualStrike_variant_2" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_003.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_003.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_003.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_003.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_003.png" ShowParamsInTooltip="SpecificDualStrike" />
@@ -40,35 +45,16 @@
   </Skill>
   <Skill UID="player_dualstrike_variant_3" ESkill="default_variant">
     <HUD UIName="@ui_Variant_DualStrike_variant_3" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_001.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_001.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_001.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_001.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_001.png" ShowParamsInTooltip="SpecificDualStrike,DamageWeapon" />
-    <DamageWeapon PercentMin="8" PercentMinPerLevel="0" PercentMax="8" PercentMaxPerLevel="0" />
+    <DamageWeapon WeaponMultiplier="1.15" />
   </Skill>
   <Skill UID="player_dualstrike_variant_4" ESkill="default_variant">
     <HUD UIName="@ui_Variant_DualStrike_variant_4" Lore="@ui_Variant_DualStrike_variant_4_Lore" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_005.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_005.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_005.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_005.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_005.png" ShowParamsInTooltip="SpecificDualStrike,DamageWeapon" />
     <Specific_DualStrike TeleportBehindTarget="1" TeleportMeleeRangeMultiplier="0.8" TeleportDuration=".05" TeleportPositionToleranceXY=".5" TeleportPositionToleranceZ="3" />
-    <DamageWeapon PercentMin="15" PercentMinPerLevel="0" PercentMax="15" PercentMaxPerLevel="0" />
-  </Skill>
-  <Skill UID="player_dualstrike_variant_5" ESkill="default_variant">
-    <HUD UIName="@ui_Variant_DualStrike_variant_5" Lore="@ui_Variant_DualStrike_variant_5_Lore" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_005.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_005.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_005.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_005.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_005.png" ShowParamsInTooltip="SpecificDualStrike,StatusAilmentsChance" />
-    <Specific_DualStrike IsShadow="1" />
-    <Damage_Conversion>
-      <Entry From="physical" To="shadow" ConversionRate="100" />
-    </Damage_Conversion>
-    <WeaponRequirements Requirements="rogue,shadow" />
-    <StatusAilment>
-      <curse Chance="20" ChanceMode="AddToBase" />
-    </StatusAilment>
-    <ParticleList>
-      <Particle Key="WeaponAppearL" Name="U_Character.Skills.DualStrike_Summon_Appear_Shadow" Bone="L_Weapon_Bone" Direction="0,1,0" />
-      <Particle Key="WeaponAppearR" Name="U_Character.Skills.DualStrike_Summon_Appear_Shadow" Bone="R_Weapon_Bone" Direction="0,1,0" />
-      <Particle Key="WeaponDisappearL" Name="U_Character.Skills.DualStrike_Summon_Disappear_Shadow" Bone="L_Weapon_Bone" Direction="0,1,0" />
-      <Particle Key="WeaponDisappearR" Name="U_Character.Skills.DualStrike_Summon_Disappear_Shadow" Bone="R_Weapon_Bone" Direction="0,1,0" />
-      <Particle Key="Trail" Name="U_Character.Skills.DualStrike_Dash_01" Offset="0,0,1.5" Direction="0,1,0" />
-      <Particle Key="Transfer" Name="U_Character.Skills.DualStrike_Transfer_Circle_01_Shadow" offset="0,0,0" Direction="0,1,0" />
-    </ParticleList>
+    <DamageWeapon WeaponMultiplier="1.2" />
   </Skill>
   <Skill UID="player_dualstrike_variant_6" ESkill="default_variant">
     <HUD UIName="@ui_Variant_DualStrike_variant_6" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_003.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_003.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_003.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_003.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_003.png" ShowParamsInTooltip="SpecificDualStrike" />
-    <Specific_DualStrike IncreaseDamageOverRecast="1" DamagePercentIncreasePerRecast="50" DamagePercentIncreaseMaxCap="100" RecastDelayBeforeStacksDrop="5" />
+    <Specific_DualStrike IncreaseDamageOverRecast="1" DamagePercentIncreasePerRecast="2" MaxRecastStacks="50" RecastDelayBeforeStacksDrop="15" />
   </Skill>
   <Skill UID="player_dualstrike_variant_7" ESkill="default_variant">
     <HUD UIName="@ui_Variant_DualStrike_variant_7" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_001.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_001.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_001.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_001.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_001.png" ShowParamsInTooltip="SpecificDualStrike,DamageCritical" />
@@ -85,7 +71,7 @@
   </Skill>
   <Skill UID="player_dualstrike_variant_10" ESkill="default_variant">
     <HUD UIName="@ui_Variant_DualStrike_variant_10" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_003.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_003.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_003.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_003.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_003.png" ShowParamsInTooltip="SpecificDualStrike" />
-    <GhostDamage ChanceToHit="5" MinDelay="0.1" MaxDelay="0.2" MaxHit="1" DamageMultiplier="1" />
+    <GhostDamage ChanceToHit="20" MinDelay="0.1" MaxDelay="0.2" MaxHit="1" DamageMultiplier="1" />
     <Specific_DualStrike GhostRadius="4" />
   </Skill>
   <Skill UID="player_dualstrike_variant_11" ESkill="default_variant">
@@ -95,11 +81,8 @@
   <Skill UID="player_dualstrike_variant_12" ESkill="default_variant">
     <HUD UIName="@ui_Variant_DualStrike_variant_12" Lore="@ui_Variant_DualStrike_variant_12_lore" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_005.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_005.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_005.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_005.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_005.png" ShowParamsInTooltip="SpecificDualStrike,Projectiles,Range" />
     <Range AttackRange="5" />
-    <Projectile Name="dualstrike_proj" ProjectileCount="1" AngleBetweenProjectiles="20" />
+    <Projectile Name="dualstrike_proj" ProjectileCount="2" AngleBetweenProjectiles="20" />
     <Specific_DualStrike ProjectilesBackwardOffset="2" />
-  </Skill>
-  <Skill UID="player_dualstrike_variant_5,player_dualstrike_variant_12" ESkill="default_variant_combo">
-    <Projectile Name="dualstrike_shadow_proj" />
   </Skill>
   <Skill UID="player_dualstrike_variant_13" ESkill="default_variant">
     <HUD UIName="@ui_Variant_DualStrike_variant_13" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_001.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_001.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_001.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_001.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_001.png" ShowParamsInTooltip="SpecificDualStrike,DamageCritical" />
@@ -107,7 +90,7 @@
   </Skill>
   <Skill UID="player_dualstrike_variant_14" ESkill="default_variant">
     <HUD UIName="@ui_Variant_DualStrike_variant_14" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_001.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_001.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_001.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_001.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_001.png" ShowParamsInTooltip="SpecificDualStrike,StatusAilmentsChance" />
-    <StatusAilment AllAilmentsInflictScoreIncreasePercent="40" />
+    <StatusAilment AilmentEffectiveness="125" />
   </Skill>
   <Skill UID="player_dualstrike_variant_15" ESkill="default_variant">
     <HUD UIName="@ui_Variant_DualStrike_variant_15" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_001.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_001.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_001.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_001.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_001.png" ShowParamsInTooltip="SpecificDualStrike,StatusAilmentsChance" />
@@ -115,6 +98,86 @@
   </Skill>
   <Skill UID="player_dualstrike_variant_16" ESkill="default_variant">
     <HUD UIName="@ui_Variant_DualStrike_variant_16" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_001.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_001.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_001.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_001.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_001.png" ShowParamsInTooltip="SpecificDualStrike,DamageWeapon" />
-    <DamageWeapon PercentMin="6" PercentMinPerLevel="0" PercentMax="6" PercentMaxPerLevel="0" />
+    <DamageWeapon WeaponMultiplier="1.15" />
+  </Skill>
+  <Skill UID="player_dualstrike_variant_5" ESkill="elemental_variant">
+    <HUD UIName="@ui_Variant_DualStrike_variant_5" Lore="@ui_Variant_DualStrike_variant_5_Lore" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_Alpha.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_Alpha.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_Alpha.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_Alpha.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_Alpha.png" HUDPictureVariant_InnerIcon="../u_resources/spells/Active_Skills/dualstrike_Shadow.png" ShowParamsInTooltip="SpecificDualStrike,DamageWeapon" HUDPicture="../u_resources/spells/Active_Skills/dualstrike_Shadow.png" VariantBottomPanel="1" />
+    <Damage_Conversion>
+      <Entry From="physical" To="shadow" ConversionRate="100" />
+    </Damage_Conversion>
+    <WeaponRequirements Requirements="rogue,shadow" />
+    <DamageWeapon WeaponMultiplier="1.25" />
+    <ElementalParticleOverride>
+      <Particle Key="WeaponAppearL" Override="U_Character.Skills.DualStrike_Summon_Appear_Shadow" />
+      <Particle Key="WeaponAppearR" Override="U_Character.Skills.DualStrike_Summon_Appear_Shadow" />
+      <Particle Key="WeaponDisappearL" Override="U_Character.Skills.DualStrike_Summon_Disappear_Shadow" />
+      <Particle Key="WeaponDisappearR" Override="U_Character.Skills.DualStrike_Summon_Disappear_Shadow" />
+      <Particle Key="Transfer" Override="U_Character.Skills.DualStrike_Transfer_Circle_01_Shadow" />
+    </ElementalParticleOverride>
+    <EventEffectOverride>
+      <AnimEvent Original="U_Swipe.Swipe_Normal.Swipe_Summon_01" Override="U_Swipe.Swipe_Normal.Swipe_Shadow_01" />
+      <AnimEvent Original="U_Character.Skills.DualStrike_Stab_Attack_01" Override="U_Character.Skills.DualStrike_Stab_Attack_01_Shadow" />
+      <AnimEvent Original="U_Character.Skills.DualStrike_Stab_Attack_Wider_02" Override="U_Character.Skills.DualStrike_Stab_Attack_Wider_02_Shadow" />
+    </EventEffectOverride>
+    <SoundTrigger OnAnimLoopOut="Play_Skill_DualStrike_Shadow_Dash_Attack" OnHit="Play_Skill_DualStrike_Shadow_Attack_Impact" OnAnimCast="Play_Skill_DualStrike_Shadow_Followup_Attack" />
+  </Skill>
+  <Skill UID="player_dualstrike_variant_17" ESkill="elemental_variant">
+    <HUD UIName="@ui_Variant_DualStrike_variant_17" Lore="@ui_Variant_DualStrike_variant_17_Lore" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_Alpha.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_Alpha.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_Alpha.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_Alpha.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_Alpha.png" HUDPictureVariant_InnerIcon="../u_resources/spells/Active_Skills/dualstrike_Lightning.png" ShowParamsInTooltip="SpecificDualStrike,DamageWeapon" HUDPicture="../u_resources/spells/Active_Skills/dualstrike_Lightning.png" VariantBottomPanel="1" />
+    <Damage_Conversion>
+      <Entry From="physical" To="lightning" ConversionRate="100" />
+    </Damage_Conversion>
+    <WeaponRequirements Requirements="rogue,lightning" />
+    <DamageWeapon WeaponMultiplier="1.25" />
+    <ElementalParticleOverride>
+      <Particle Key="WeaponAppearL" Override="U_Character.Skills.DualStrike_Summon_Appear_Lightning" />
+      <Particle Key="WeaponAppearR" Override="U_Character.Skills.DualStrike_Summon_Appear_Lightning" />
+      <Particle Key="WeaponDisappearL" Override="U_Character.Skills.DualStrike_Summon_Disappear_Lightning" />
+      <Particle Key="WeaponDisappearR" Override="U_Character.Skills.DualStrike_Summon_Disappear_Lightning" />
+      <Particle Key="Transfer" Override="U_Character.Skills.DualStrike_Transfer_Circle_01_Lightning" />
+      <Particle Key="Trail" Override="U_Character.Skills.DualStrike_Dash_02_Lightning" />
+    </ElementalParticleOverride>
+    <EventEffectOverride>
+      <AnimEvent Original="U_Swipe.Swipe_Normal.Swipe_Summon_01" Override="U_Swipe.Swipe_Normal.Swipe_Lightning_01" />
+      <AnimEvent Original="U_Character.Skills.DualStrike_Stab_Attack_01" Override="U_Character.Skills.DualStrike_Stab_Attack_01_Lightning" />
+      <AnimEvent Original="U_Character.Skills.DualStrike_Stab_Attack_Wider_02" Override="U_Character.Skills.DualStrike_Stab_Attack_Wider_02_Lightning" />
+      <AnimEvent Original="U_Character.Skills.DualStrike_Dash_02" Override="U_Character.Skills.DualStrike_Dash_02_Lightning" />
+    </EventEffectOverride>
+    <SoundTrigger OnAnimLoopOut="Play_Skill_DualStrike_Lightning_Dash_Attack" OnHit="Play_Skill_DualStrike_Lightning_Attack_Impact" OnAnimCast="Play_Skill_DualStrike_Lightning_Followup_Attack" />
+  </Skill>
+  <Skill UID="player_dualstrike_variant_18" ESkill="elemental_variant">
+    <HUD UIName="@ui_Variant_DualStrike_variant_18" Lore="@ui_Variant_DualStrike_variant_18_Lore" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_Alpha.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_Alpha.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_Alpha.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_Alpha.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_Alpha.png" HUDPictureVariant_InnerIcon="../u_resources/spells/Active_Skills/dualstrike_Toxic.png" ShowParamsInTooltip="SpecificDualStrike,DamageWeapon" HUDPicture="../u_resources/spells/Active_Skills/dualstrike_Toxic.png" VariantBottomPanel="1" />
+    <Damage_Conversion>
+      <Entry From="physical" To="toxic" ConversionRate="100" />
+    </Damage_Conversion>
+    <WeaponRequirements Requirements="rogue,poison" />
+    <DamageWeapon WeaponMultiplier="1.25" />
+    <ElementalParticleOverride>
+      <Particle Key="WeaponAppearL" Override="U_Character.Skills.DualStrike_Summon_Appear_Poison" />
+      <Particle Key="WeaponAppearR" Override="U_Character.Skills.DualStrike_Summon_Appear_Poison" />
+      <Particle Key="WeaponDisappearL" Override="U_Character.Skills.DualStrike_Summon_Disappear_Poison" />
+      <Particle Key="WeaponDisappearR" Override="U_Character.Skills.DualStrike_Summon_Disappear_Poison" />
+      <Particle Key="Transfer" Override="U_Character.Skills.DualStrike_Transfer_Circle_01_Poison" />
+      <Particle Key="Trail" Override="U_Character.Skills.DualStrike_Dash_02_Poison" />
+    </ElementalParticleOverride>
+    <EventEffectOverride>
+      <AnimEvent Original="U_Swipe.Swipe_Normal.Swipe_Summon_01" Override="U_Swipe.Swipe_Normal.Swipe_Toxic_01" />
+      <AnimEvent Original="U_Character.Skills.DualStrike_Stab_Attack_01" Override="U_Character.Skills.DualStrike_Stab_Attack_01_Poison" />
+      <AnimEvent Original="U_Character.Skills.DualStrike_Stab_Attack_Wider_02" Override="U_Character.Skills.DualStrike_Stab_Attack_Wider_02_Poison" />
+      <AnimEvent Original="U_Character.Skills.DualStrike_Dash_02" Override="U_Character.Skills.DualStrike_Dash_02_Poison" />
+    </EventEffectOverride>
+    <SoundTrigger OnAnimLoopOut="Play_Skill_DualStrike_Toxic_Dash_Attack" OnHit="Play_Skill_DualStrike_Toxic_Attack_Impact" OnAnimCast="Play_Skill_DualStrike_Toxic_Followup_Attack" />
+  </Skill>
+  <Skill UID="Player_DualStrike_variant_19" ESkill="default_variant">
+    <HUD UIName="@ui_variant_Player_DualStrike_variant_19" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_003.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_003.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_003.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_003.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_003.png" ShowParamsInTooltip="DamageWeapon" />
+    <DamageWeapon WeaponMultiplier="1.15" />
+  </Skill>
+  <Skill UID="player_dualstrike_variant_5,player_dualstrike_variant_12" ESkill="default_variant_combo">
+    <Projectile Name="dualstrike_proj_shadow" />
+  </Skill>
+  <Skill UID="player_dualstrike_variant_17,player_dualstrike_variant_12" ESkill="default_variant_combo">
+    <Projectile Name="dualstrike_proj_lightning" />
+  </Skill>
+  <Skill UID="player_dualstrike_variant_18,player_dualstrike_variant_12" ESkill="default_variant_combo">
+    <Projectile Name="dualstrike_proj_poison" />
   </Skill>
 </MetaData>

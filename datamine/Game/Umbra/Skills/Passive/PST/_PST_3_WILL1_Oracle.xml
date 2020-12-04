@@ -2,7 +2,7 @@
   <Spell Name="ORAC_1" UIName="@ui_ORAC_1_name" HUDLoreDesc="" GameplayDesc="">
     <MagicEffects>
       <EIM Name="elemental_damage_percent" HUDDesc="@ui_eim_elemental_damage_percent" Permanent="1">
-        <Semantics DamagePercentInt="10" />
+        <Semantics DamagePercentInt="7" />
       </EIM>
       <EIM Name="elemental_resistance_score_percent" HUDDesc="@ui_eim_elemental_resistance_score_percent" Permanent="1">
         <Semantics CharacteristicScorePercentInt="10" />
@@ -12,48 +12,45 @@
   <Spell Name="ORAC_2" UIName="@ui_ORAC_2_name" HUDLoreDesc="" GameplayDesc="">
     <MagicEffects>
       <EIM Name="forceshield_regeneration_percent" HUDDesc="@ui_eim_forceshield_regeneration_percent" Permanent="1">
-        <Semantics DefenseRegenerationPercentFloat="17" />
+        <Semantics DefenseRegenerationPercentFloat="3" />
       </EIM>
       <EIM Name="forceshield_percent" HUDDesc="@ui_eim_forceshield_percent" Permanent="1">
-        <Semantics ArmorPercentFloat="8" />
+        <Semantics ArmorPercentFloat="5" />
       </EIM>
     </MagicEffects>
   </Spell>
   <Spell Name="ORAC_3" UIName="@ui_ORAC_3_name" HUDLoreDesc="" GameplayDesc="">
     <MagicEffects>
-      <EIM Name="lightning_damage_percent" HUDDesc="@ui_eim_lightning_damage_percent" Permanent="1">
-        <Semantics DamagePercentInt="15" />
+      <EIM Name="elemental_damage_percent" HUDDesc="@ui_eim_elemental_damage_percent" Permanent="1">
+        <Semantics DamagePercentInt="10" />
       </EIM>
     </MagicEffects>
   </Spell>
   <Spell Name="ORAC_4" UIName="@ui_ORAC_4_name" HUDLoreDesc="" GameplayDesc="">
     <MagicEffects>
       <EIM Name="elemental_resistance_score_percent" HUDDesc="@ui_eim_elemental_resistance_score_percent" Permanent="1">
-        <Semantics CharacteristicScorePercentInt="10" />
-      </EIM>
-      <EIM Name="health_percent" HUDDesc="@ui_eim_health_percent" Permanent="1">
-        <Semantics HealthPercentInt="-10" />
+        <Semantics CharacteristicScorePercentInt="15" />
       </EIM>
     </MagicEffects>
   </Spell>
   <Spell Name="ORAC_5" UIName="@ui_ORAC_5_name" HUDLoreDesc="" GameplayDesc="">
     <MagicEffects>
-      <EIM Name="frost_damage_percent" HUDDesc="@ui_eim_frost_damage_percent" Permanent="1">
-        <Semantics DamagePercentInt="15" />
+      <EIM Name="elemental_damage_percent" HUDDesc="@ui_eim_elemental_damage_percent" Permanent="1">
+        <Semantics DamagePercentInt="10" />
       </EIM>
     </MagicEffects>
   </Spell>
   <Spell Name="ORAC_6" UIName="@ui_ORAC_6_name" HUDLoreDesc="" GameplayDesc="">
     <MagicEffects>
-      <EIM Name="spellcastingspeed_score_percent" HUDDesc="@ui_eim_spellcastingspeed_score_percent" Permanent="1">
-        <Semantics CharacteristicScorePercentInt="18" />
+      <EIM Name="spellcastingspeed_final_percent" HUDDesc="@ui_eim_spellcastingspeed_final_percent" Permanent="1">
+        <Semantics CharacteristicFinalPercentFloat="3" />
       </EIM>
     </MagicEffects>
   </Spell>
   <Spell Name="ORAC_7" UIName="@ui_ORAC_7_name" HUDLoreDesc="" GameplayDesc="">
     <MagicEffects>
-      <EIM Name="fire_damage_percent" HUDDesc="@ui_eim_fire_damage_percent" Permanent="1">
-        <Semantics DamagePercentInt="15" />
+      <EIM Name="elemental_damage_percent" HUDDesc="@ui_eim_elemental_damage_percent" Permanent="1">
+        <Semantics DamagePercentInt="10" />
       </EIM>
     </MagicEffects>
   </Spell>
@@ -97,10 +94,7 @@
   <Spell Name="ORAC_12" UIName="@ui_ORAC_12_name" HUDLoreDesc="" GameplayDesc="">
     <MagicEffects>
       <EIM Name="elemental_resistance_score_percent" HUDDesc="@ui_eim_elemental_resistance_score_percent" Permanent="1">
-        <Semantics CharacteristicScorePercentInt="10" />
-      </EIM>
-      <EIM Name="health_percent" HUDDesc="@ui_eim_health_percent" Permanent="1">
-        <Semantics HealthPercentInt="-10" />
+        <Semantics CharacteristicScorePercentInt="15" />
       </EIM>
     </MagicEffects>
   </Spell>
@@ -117,24 +111,24 @@
   <Spell Name="ORAC_14" UIName="@ui_ORAC_14_name" HUDLoreDesc="" GameplayDesc="">
     <MagicEffects>
       <EIM Name="forceshield_regeneration_percent" HUDDesc="@ui_eim_forceshield_regeneration_percent" Permanent="1">
-        <Semantics DefenseRegenerationPercentFloat="25" />
+        <Semantics DefenseRegenerationPercentFloat="5" />
       </EIM>
     </MagicEffects>
   </Spell>
   <Spell Name="ORAC_15" UIName="@ui_ORAC_15_name" HUDLoreDesc="" GameplayDesc="">
     <MagicEffects>
-      <EIM Name="spellcastingspeed_score_percent" HUDDesc="@ui_eim_spellcastingspeed_score_percent" Permanent="1">
-        <Semantics CharacteristicScorePercentInt="18" />
+      <EIM Name="spellcastingspeed_final_percent" HUDDesc="@ui_eim_spellcastingspeed_final_percent" Permanent="1">
+        <Semantics CharacteristicFinalPercentFloat="3" />
       </EIM>
     </MagicEffects>
   </Spell>
   <Spell Name="ORAC_16" UIName="@ui_ORAC_16_name" HUDLoreDesc="" GameplayDesc="">
     <MagicEffects>
       <EIM Name="forceshield_regeneration_percent" HUDDesc="@ui_eim_forceshield_regeneration_percent" Permanent="1">
-        <Semantics DefenseRegenerationPercentFloat="17" />
+        <Semantics DefenseRegenerationPercentFloat="3" />
       </EIM>
       <EIM Name="forceshield_percent" HUDDesc="@ui_eim_forceshield_percent" Permanent="1">
-        <Semantics ArmorPercentFloat="8" />
+        <Semantics ArmorPercentFloat="5" />
       </EIM>
     </MagicEffects>
   </Spell>
@@ -175,6 +169,40 @@
       </EIM>
       <EIM Name="thunderstrike_on_casting_lightning_skill" HUDDesc="@ui_eim_thunderstrike_on_casting_lightning_skill" Permanent="1">
         <Semantics TriggeredSkillSelector="1" />
+      </EIM>
+    </MagicEffects>
+  </Spell>
+  <Spell Name="ORAC_21" UIName="@ui_ORAC_21_name" HUDLoreDesc="" GameplayDesc="">
+    <MagicEffects>
+      <EIM Name="elemental_damage_percent" HUDDesc="@ui_eim_elemental_damage_percent" Permanent="1">
+        <Semantics DamagePercentInt="7" />
+      </EIM>
+      <EIM Name="spellcastingspeed_final_percent" HUDDesc="@ui_eim_spellcastingspeed_final_percent" Permanent="1">
+        <Semantics CharacteristicFinalPercentFloat="2" />
+      </EIM>
+    </MagicEffects>
+  </Spell>
+  <Spell Name="ORAC_22" UIName="@ui_ORAC_22_name" HUDLoreDesc="" GameplayDesc="">
+    <MagicEffects>
+      <EIM Name="forceshield_regeneration_percent" HUDDesc="@ui_eim_forceshield_regeneration_percent" Permanent="1">
+        <Semantics DefenseRegenerationPercentFloat="5" />
+      </EIM>
+    </MagicEffects>
+  </Spell>
+  <Spell Name="ORAC_23" UIName="@ui_ORAC_23_name" HUDLoreDesc="" GameplayDesc="">
+    <MagicEffects>
+      <EIM Name="elemental_damage_percent" HUDDesc="@ui_eim_elemental_damage_percent" Permanent="1">
+        <Semantics DamagePercentInt="7" />
+      </EIM>
+      <EIM Name="spellcastingspeed_final_percent" HUDDesc="@ui_eim_spellcastingspeed_final_percent" Permanent="1">
+        <Semantics CharacteristicFinalPercentFloat="2" />
+      </EIM>
+    </MagicEffects>
+  </Spell>
+  <Spell Name="ORAC_24" UIName="@ui_ORAC_24_name" HUDLoreDesc="" GameplayDesc="">
+    <MagicEffects>
+      <EIM Name="forceshield_regeneration_percent" HUDDesc="@ui_eim_forceshield_regeneration_percent" Permanent="1">
+        <Semantics DefenseRegenerationPercentFloat="5" />
       </EIM>
     </MagicEffects>
   </Spell>

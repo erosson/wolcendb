@@ -1,0 +1,388 @@
+<MetaData>
+  <Skill ESkill="player_frostcomet" Keywords="projectile,magic_spell" UID="player_frostcomet">
+    <WeaponRequirements Requirements="magic,frost" />
+    <Projectile Name="player_frostcomet_proj" ProjectileCount="1" BaseDamageBonusPercentPerNonUsedProjectile="30" />
+    <Collisions IgnoreEntityCollisions="1" />
+    <Attachments HideEquippedItemsWhilecasting_Right="1" />
+    <Animation ActionString="player_skill_frostcomet" ActionString_FollowUp="player_skill_frostcomet" />
+    <SkillLoop PresetID="skillloop_frostcomet" SpawnAtSkillTargetPos="1" />
+    <CastingParams AnimationTrigger="1" CastBone="weapon_bone" CastDelay="1" />
+    <ResourceCost ManaCost="-250" ROSTransfertDuration="2" RageCost="0" />
+    <Cooldown Cooldown="8" CooldownPerLevel="0" />
+    <Targeting TargetOnGround="1" />
+    <HUD HUDPicture="../u_resources/spells/Active_Skills/frostcomet_Frost.png" UIName="@ui_AST_FrostComet" Lore="@ui_AST_FrostComet_Lore" ActiveEffectDesc="" ActiveEffectTitle="" ASTTreeNumber="2" ShowParamsInAST="DamageWeapon,Cost,ROSTime,Cooldown,Range,DamageDetail,DamageCritical,StatusAilmentsChance,Explosion,CastingParams,SpecificFrostComet" ShowParamsInTooltip="Cost,Cooldown,DamageOverview,StatusAilmentsChance,SpecificFrostComet" />
+    <Enneract PickableParticle_MoveToGround="U_CommonVFX_02.Esseract.Esseract_Projectile.Frost" PickableParticle_OnGround_Shape="U_CommonVFX_02.Esseract.Esseract_Shape.Circle_Frost" PickableParticle_OnGround_Damage="U_CommonVFX_02.Esseract.Esseract_Color.Frost" PickableParticle_OnGround_Symbol="U_CommonVFX_02.Esseract.Esseract_Symbol.ETHELIEL" PickableParticle_OnGround_Indicator="U_CommonVFX_02.Esseract.Esseract_Indicator.Frost" PickableParticle_OnGround_Pickup="U_CommonVFX_02.Esseract.Esseract_Loot.Frost" SkillLearningParticle="U_CommonVFX.Skill_Learn.Skill_Learn_Frost" Inventory_HUDPicture="../u_resources/enneracts/frostcomet.png" Inventory_LoreDesc="@ui_enneract_lore" />
+    <Explosion ExplosionRadius="3" />
+    <Aggression TargetValueOnHit="60" />
+    <DamageWeapon WeaponMultiplier="5" />
+    <StatusAilment AilmentEffectiveness="150" />
+    <Damage_Conversion>
+      <Entry From="physical" To="frost" ConversionRate="100" />
+    </Damage_Conversion>
+    <Range AttackRange="15" ProjectileMinDistance="0" />
+    <SoundTrigger OnAnimStart="PLAY_Skill_FrostMeteor_Summon" />
+    <Specific_FrostComet InitialProjectileHeight="7.5" ProjectileIndicatorTimeScale="1.1" />
+    <VisualFeedback TrailPresetBase="default" FeedbackPresetBase="Player_skill_frostcomet" BloodDecalOrientation="forward" />
+    <ParticleList>
+      <Particle Key="MagicCircleShot" Name="U_Magic_Sign.Frost.FrontCircle_Sign_01_Shot" Offset="0,0,0" Direction="0,0,1" />
+    </ParticleList>
+  </Skill>
+  <Skill UID="player_frostcomet_variant_default_damage_type" ESkill="default_variant">
+    <HUD UIName="@ui_AST_FrostComet" Lore="@ui_AST_FrostComet_Lore" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_Alpha.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_Alpha.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_Alpha.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_Alpha.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_Alpha.png" HUDPictureVariant_InnerIcon="../u_resources/spells/Active_Skills/frostcomet_Frost.png" VariantBottomPanel="1" />
+  </Skill>
+  <Skill ESkill="default_variant" UID="player_frostcomet_step_1">
+    <HUD UIName="@ui_Variant_FrostComet_variant_1" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_003.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_003.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_003.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_003.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_003.png" ShowParamsInTooltip="SpecificFrostComet,Explosion" />
+    <Projectile Name="player_frostcomet_proj_large" />
+    <Explosion ExplosionRadius="1" />
+    <Specific_FrostComet DOTCometBaseRadius="1.5" />
+  </Skill>
+  <Skill ESkill="default_variant" UID="player_frostcomet_step_2">
+    <HUD UIName="@ui_Variant_FrostComet_variant_2" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_001.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_001.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_001.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_001.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_001.png" ShowParamsInTooltip="SpecificFrostComet,Cost" />
+    <ResourceCost ManaCost="45" />
+  </Skill>
+  <Skill ESkill="default_variant" UID="player_frostcomet_step_3">
+    <HUD UIName="@ui_Variant_FrostComet_variant_3" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_003.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_003.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_003.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_003.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_003.png" ShowParamsInTooltip="SpecificFrostComet,CastingParams" />
+    <CastingParams CastDelay="-0.35" />
+    <Specific_FrostComet ProjectileIndicatorTimeScale="-0.35" />
+  </Skill>
+  <Skill ESkill="default_variant" UID="player_frostcomet_step_4">
+    <HUD UIName="@ui_Variant_FrostComet_variant_4" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_003.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_003.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_003.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_003.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_003.png" ShowParamsInTooltip="SpecificFrostComet,DamageWeapon" />
+    <DamageWeapon WeaponMultiplier="1.15" />
+  </Skill>
+  <Skill ESkill="default_variant" UID="player_frostcomet_step_6">
+    <HUD UIName="@ui_Variant_FrostComet_variant_6" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_001.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_001.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_001.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_001.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_001.png" ShowParamsInTooltip="SpecificFrostComet,StatusAilmentsChance" />
+    <StatusAilment AilmentEffectiveness="125" />
+  </Skill>
+  <Skill ESkill="default_variant" UID="player_frostcomet_step_7">
+    <HUD UIName="@ui_Variant_FrostComet_variant_7" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_001.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_001.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_001.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_001.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_001.png" ShowParamsInTooltip="SpecificFrostComet,DamageCritical" />
+    <DamageCritical CriticalInflictScoreModifier="40" />
+  </Skill>
+  <Skill ESkill="default_variant" UID="player_frostcomet_step_8">
+    <HUD UIName="@ui_Variant_FrostComet_variant_8" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_003.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_003.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_003.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_003.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_003.png" ShowParamsInTooltip="SpecificFrostComet,CastingParams,DamageWeapon" />
+    <CastingParams CastDelay="0.35" />
+    <DamageWeapon WeaponMultiplier="1.5" />
+    <Specific_FrostComet ProjectileIndicatorTimeScale="0.35" />
+  </Skill>
+  <Skill ESkill="default_variant" UID="player_frostcomet_step_9">
+    <HUD UIName="@ui_Variant_FrostComet_variant_9" Lore="@ui_Variant_FrostComet_variant_9_lore" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_005.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_005.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_005.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_005.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_005.png" ShowParamsInTooltip="SpecificFrostComet,CastingParams,DamageWeapon,Cost" />
+    <DamageZone Duration="3" RateOfFire="0.5" RemoveParticleWithShape="1" />
+    <CastingParams CastDelay="-2" />
+    <DamageWeapon WeaponMultiplier="0.1" />
+    <ParticleList>
+      <Particle Key="Loop" Name="U_Character.Skills.Frost_Meteor_MeteorShower_01" Direction="0,1,0" />
+      <Particle Key="LoopAdditional" Name="U_Character.Skills.Frost_Meteor_MeteorShower_02" Direction="0,1,0" />
+      <Particle Key="ChannelAura1" Name="U_Character_02.Sniper.Sniper_Charging_02_Frost" Direction="0,1,0" Bone="R_Weapon_Bone" />
+      <Particle Key="ChannelAura2" Name="U_Character_02.Sniper.Sniper_Charging_Aura_01_Frost" Direction="0,1,0" Bone="R_Weapon_Bone" />
+    </ParticleList>
+  </Skill>
+  <Skill ESkill="default_variant" UID="player_frostcomet_step_10">
+    <HUD UIName="@ui_Variant_FrostComet_variant_10" Lore="@ui_Variant_FrostComet_variant_10_lore" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_005.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_005.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_005.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_005.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_005.png" ShowParamsInTooltip="SpecificFrostComet,CastingParams" />
+    <Animation ActionString_In="player_skill_frostcomet_Channel_In" ActionString_Loop="player_skill_frostcomet_Channel_Loop" ActionString_Out="player_skill_frostcomet_Channel_Out" />
+    <Specific_FrostComet ChanneledMoveSpeed="5" SoundChargeLevel1="Play_Skill_Meteor_Chargelevel_1" SoundChargeLevel2="Play_Skill_Meteor_Chargelevel_2" SoundChargeLevel3="Play_Skill_Meteor_Chargelevel_3" />
+    <CastingParams CastDelay="-2" />
+    <ChargedSkill WindupAnim="player_skill_frostcomet_Charge_In" FollowupAnim="player_skill_frostcomet_Charge_Out">
+      <Step TimeToReachStep="0.5" AssociatedAnim="player_skill_frostcomet_Charge_Loop_01" SpellDamagePercent="100" />
+      <Step TimeToReachStep="0.75" AssociatedAnim="player_skill_frostcomet_Charge_Loop_02" SpellDamagePercent="300" />
+      <Step TimeToReachStep="1" AssociatedAnim="player_skill_frostcomet_Charge_Loop_03" SpellDamagePercent="700" />
+    </ChargedSkill>
+    <ParticleList>
+      <Particle Key="AdditionalExplosion" Name="U_CommonVFX.Icy_Soul.Icy_Soul_Impact_01" Direction="0,1,0" Offset="0,0,0.2" TimeScale="0.75" />
+      <Particle Key="Aura" Name="U_Character_02.Sniper.Sniper_Charging_Aura_01_Frost" Direction="0,1,0" Bone="R_Weapon_Bone" Scale="0.65" />
+      <Particle Key="Wind" Name="U_Character_02.Sniper.Sniper_Charging_Wind_01_Frost" Direction="0,0,1" Bone="Bip01" Scale="0.6" />
+      <Particle Key="Blink" Name="U_Character_02.Sniper.Sniper_Charging_01" Direction="0,0,1" Scale="0.8" />
+      <Particle Key="Indicator1" Name="U_Character_02.HolyDive.HolyDive_Indicator_01" Direction="0,1,0" Scale="0.62" />
+      <Particle Key="Indicator2" Name="U_Character_02.HolyDive.HolyDive_Indicator_02" Direction="0,1,0" Scale="0.62" />
+      <Particle Key="Indicator3" Name="U_Character_02.HolyDive.HolyDive_Indicator_03" Direction="0,1,0" Scale="0.62" />
+      <Particle Key="IndicatorF" Name="U_Character_02.HolyDive.HolyDive_Indicator_Activate_01" Direction="0,1,0" Scale="0.6" TimeScale="0.75" />
+      <Particle Key="Charging1" Name="U_Character_02.Sniper.Sniper_Charging_01_Frost" Direction="0,1,0" Bone="R_Weapon_Bone" Scale="0.6" />
+      <Particle Key="Charging2" Name="U_Character_02.Sniper.Sniper_Charging_02_Frost" Direction="0,1,0" Bone="R_Weapon_Bone" Scale="0.6" />
+      <Particle Key="Charging3" Name="U_Character_02.Sniper.Sniper_Charging_03_Frost" Direction="0,1,0" Bone="R_Weapon_Bone" Scale="0.6" />
+      <Particle Key="ChargingF" Name="U_Character_02.Sniper.Sniper_Charging_Trigger_Frost" Direction="0,1,0" Bone="R_Weapon_Bone" Scale="0.6" />
+      <Particle Key="ChargingComet1" Name="U_VFX_Temp.Temp_Chaguk.IceMeteor_Start_Charging_01" Direction="0,0,1" />
+      <Particle Key="ChargingComet2" Name="U_VFX_Temp.Temp_Chaguk.IceMeteor_Start_Charging_02" Direction="0,0,1" />
+      <Particle Key="ChargingComet3" Name="U_VFX_Temp.Temp_Chaguk.IceMeteor_Start_Charging_03" Direction="0,0,1" />
+      <Particle Key="ChargingCometF" Name="U_Magic_Sign.Frost.Ice_Meteor_Sign_01" Direction="0,0,1" />
+      <Particle Key="ChargingCircle1" Name="U_Magic_Sign.Frost.FrontCircle_Sign_01_End" Direction="0,0,1" Scale="0.8" />
+      <Particle Key="ChargingCircle2" Name="U_Magic_Sign.Frost.FrontCircle_Sign_01_End" Direction="0,0,1" Scale="1" />
+      <Particle Key="ChargingCircle3" Name="U_Magic_Sign.Frost.FrontCircle_Sign_01_End" Direction="0,0,1" Scale="1.5" />
+      <Particle Key="ChargingCircleF" Name="U_Magic_Sign.Frost.FrontCircle_Sign_01_Shot" Direction="0,0,1" Scale="1.5" />
+    </ParticleList>
+  </Skill>
+  <Skill ESkill="default_variant" UID="player_frostcomet_step_11">
+    <HUD UIName="@ui_Variant_FrostComet_variant_11" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_003.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_003.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_003.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_003.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_003.png" ShowParamsInTooltip="SpecificFrostComet,StatusAilmentsChance" />
+    <StatusAilment AllAilmentsInflictDamageIncreasePercent="40" />
+  </Skill>
+  <Skill ESkill="default_variant" UID="player_frostcomet_step_12">
+    <HUD UIName="@ui_Variant_FrostComet_variant_12" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_001.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_001.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_001.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_001.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_001.png" ShowParamsInTooltip="SpecificFrostComet,DamageCritical" />
+    <DamageCritical CriticalDamageModifier="25" />
+  </Skill>
+  <Skill ESkill="default_variant" UID="player_frostcomet_step_13">
+    <HUD UIName="@ui_Variant_FrostComet_variant_13" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_001.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_001.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_001.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_001.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_001.png" ShowParamsInTooltip="SpecificFrostComet,Cooldown" />
+    <Cooldown Cooldown="-2" CooldownPerLevel="0" />
+  </Skill>
+  <Skill ESkill="default_variant" UID="player_frostcomet_step_14">
+    <HUD UIName="@ui_Variant_FrostComet_variant_14" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_001.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_001.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_001.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_001.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_001.png" ShowParamsInTooltip="SpecificFrostComet,DamageWeapon" />
+    <DamageWeapon WeaponMultiplier="1.15" />
+  </Skill>
+  <Skill ESkill="default_variant" UID="player_frostcomet_step_15">
+    <HUD UIName="@ui_Variant_FrostComet_variant_15" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_001.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_001.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_001.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_001.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_001.png" ShowParamsInTooltip="SpecificFrostComet,Cooldown" />
+    <Cooldown Cooldown="-2" CooldownPerLevel="0" />
+  </Skill>
+  <Skill ESkill="default_variant" UID="player_frostcomet_step_16">
+    <HUD UIName="@ui_Variant_FrostComet_variant_16" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_003.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_003.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_003.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_003.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_003.png" ShowParamsInTooltip="SpecificFrostComet,DamageWeapon,Cost,ROSTime" />
+    <DamageWeapon WeaponMultiplier="1.3" />
+    <ResourceCost ManaCost="-150" ManaCostPerLevel="0" ROSTransfertDuration="1.0" />
+  </Skill>
+  <Skill ESkill="default_variant" UID="player_frostcomet_step_5">
+    <HUD UIName="@ui_Variant_FrostComet_variant_5" Lore="@ui_Variant_FrostComet_variant_5_Lore" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_Alpha.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_Alpha.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_Alpha.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_Alpha.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_Alpha.png" HUDPictureVariant_InnerIcon="../u_resources/spells/Active_Skills/frostcomet_Fire.png" ShowParamsInTooltip="SpecificFrostComet,DamageWeapon" HUDPicture="../u_resources/spells/Active_Skills/frostcomet_Fire.png" VariantBottomPanel="1" />
+    <SkillLoop PresetID="skillloop_frostcomet_fire" SpawnAtSkillTargetPos="1" />
+    <DamageWeapon WeaponMultiplier="1.25" />
+    <Projectile Name="player_frostcomet_proj_fire" />
+    <Damage_Conversion>
+      <Entry From="physical" To="frost" ConversionRate="-100" />
+      <Entry From="physical" To="fire" ConversionRate="100" />
+    </Damage_Conversion>
+    <WeaponRequirements Requirements="magic,fire" />
+    <ParticleList>
+      <Particle Key="MagicCircleShot" Name="U_Magic_Sign.Fire.FrontCircle_Sign_01_Shot" Offset="0,0,0" Direction="0,0,1" />
+    </ParticleList>
+    <EventEffectOverride>
+      <AnimEvent Original="U_Character.Skills.Frost_Meteor_HandLight" Override="U_Character.Skills.Frost_Meteor_HandLight_Fire" />
+      <AnimEvent Original="U_Character.Skills.Frost_Meteor_Aura_01" Override="U_Character.Skills.Frost_Meteor_Aura_01_Fire" />
+    </EventEffectOverride>
+  </Skill>
+  <Skill ESkill="default_variant" UID="player_frostcomet_step_17">
+    <HUD UIName="@ui_Variant_FrostComet_variant_17" Lore="@ui_Variant_FrostComet_variant_17_Lore" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_Alpha.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_Alpha.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_Alpha.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_Alpha.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_Alpha.png" HUDPictureVariant_InnerIcon="../u_resources/spells/Active_Skills/frostcomet_Rend.png" ShowParamsInTooltip="SpecificFrostComet,DamageWeapon" HUDPicture="../u_resources/spells/Active_Skills/frostcomet_Rend.png" VariantBottomPanel="1" />
+    <SkillLoop PresetID="skillloop_frostcomet_rend" SpawnAtSkillTargetPos="1" />
+    <DamageWeapon WeaponMultiplier="1.25" />
+    <Projectile Name="player_frostcomet_proj_rend" />
+    <Damage_Conversion>
+      <Entry From="physical" To="frost" ConversionRate="-100" />
+      <Entry From="physical" To="rend" ConversionRate="100" />
+    </Damage_Conversion>
+    <WeaponRequirements Requirements="magic,bleed" />
+    <ParticleList>
+      <Particle Key="MagicCircleShot" Name="U_Magic_Sign.Rend.FrontCircle_Sign_01_Shot" Offset="0,0,0" Direction="0,0,1" />
+    </ParticleList>
+    <EventEffectOverride>
+      <AnimEvent Original="U_Character.Skills.Frost_Meteor_HandLight" Override="U_Character.Skills.Frost_Meteor_HandLight_Rend" />
+      <AnimEvent Original="U_Character.Skills.Frost_Meteor_Aura_01" Override="U_Character.Skills.Frost_Meteor_Aura_01_Rend" />
+    </EventEffectOverride>
+  </Skill>
+  <Skill ESkill="default_variant" UID="player_frostcomet_step_18">
+    <HUD UIName="@ui_Variant_FrostComet_variant_18" Lore="@ui_Variant_FrostComet_variant_18_Lore" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_Alpha.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_Alpha.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_Alpha.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_Alpha.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_Alpha.png" HUDPictureVariant_InnerIcon="../u_resources/spells/Active_Skills/frostcomet_Sacred.png" ShowParamsInTooltip="SpecificFrostComet,DamageWeapon" HUDPicture="../u_resources/spells/Active_Skills/frostcomet_Sacred.png" VariantBottomPanel="1" />
+    <SkillLoop PresetID="skillloop_frostcomet_sacred" SpawnAtSkillTargetPos="1" />
+    <DamageWeapon WeaponMultiplier="1.25" />
+    <Projectile Name="player_frostcomet_proj_sacred" />
+    <Damage_Conversion>
+      <Entry From="physical" To="frost" ConversionRate="-100" />
+      <Entry From="physical" To="sacred" ConversionRate="100" />
+    </Damage_Conversion>
+    <WeaponRequirements Requirements="magic,sacred" />
+    <ParticleList>
+      <Particle Key="MagicCircleShot" Name="U_Magic_Sign.Sacred.FrontCircle_Sign_01_Shot" Offset="0,0,0" Direction="0,0,1" />
+    </ParticleList>
+    <EventEffectOverride>
+      <AnimEvent Original="U_Character.Skills.Frost_Meteor_HandLight" Override="U_Character.Skills.Frost_Meteor_HandLight_Sacred" />
+      <AnimEvent Original="U_Character.Skills.Frost_Meteor_Aura_01" Override="U_Character.Skills.Frost_Meteor_Aura_01_Sacred" />
+    </EventEffectOverride>
+  </Skill>
+  <Skill UID="player_frostcomet_step_9,player_frostcomet_step_1" ESkill="default_variant_combo">
+    <ParticleList>
+      <Particle Key="Loop" Name="U_Character.Skills.Frost_Meteor_MeteorShower_01" Direction="0,1,0" Scale="1.3" />
+      <Particle Key="LoopAdditional" Name="U_Character.Skills.Frost_Meteor_MeteorShower_02" Direction="0,1,0" Scale="1.3" />
+    </ParticleList>
+  </Skill>
+  <Skill UID="player_frostcomet_step_9,player_frostcomet_step_10" ESkill="default_variant_combo">
+    <CastingParams MaintainedCast="1" />
+    <ResourceCost ManaCost="0" ROSTransfertDuration="1.0" RageCost="0" />
+    <ResourceCostMaintained ManaCostPerSecond="-100" ManaCostPerSecondPerLevel="0" ROSTransfertDuration="1.0" />
+  </Skill>
+  <Skill UID="player_frostcomet_step_1,player_frostcomet_step_10" ESkill="default_variant_combo">
+    <ParticleList>
+      <Particle Key="AdditionalExplosion" Name="U_CommonVFX.Icy_Soul.Icy_Soul_Impact_01" Direction="0,1,0" Scale="1" />
+      <Particle Key="Blink" Name="U_Character_02.Sniper.Sniper_Charging_01" Direction="0,0,1" Scale="1" />
+      <Particle Key="Indicator1" Name="U_Character_02.HolyDive.HolyDive_Indicator_01" Direction="0,1,0" Scale="0.837" />
+      <Particle Key="Indicator2" Name="U_Character_02.HolyDive.HolyDive_Indicator_02" Direction="0,1,0" Scale="0.837" />
+      <Particle Key="Indicator3" Name="U_Character_02.HolyDive.HolyDive_Indicator_03" Direction="0,1,0" Scale="0.837" />
+      <Particle Key="IndicatorF" Name="U_Character_02.HolyDive.HolyDive_Indicator_Activate_01" Direction="0,1,0" Scale="0.837" />
+      <Particle Key="ChargingComet1" Name="U_VFX_Temp.Temp_Chaguk.IceMeteor_Start_Charging_01" Direction="0,0,1" Scale="1.25" />
+      <Particle Key="ChargingComet2" Name="U_VFX_Temp.Temp_Chaguk.IceMeteor_Start_Charging_02" Direction="0,0,1" Scale="1.25" />
+      <Particle Key="ChargingComet3" Name="U_VFX_Temp.Temp_Chaguk.IceMeteor_Start_Charging_03" Direction="0,0,1" Scale="1.25" />
+      <Particle Key="ChargingCometF" Name="U_Magic_Sign.Frost.Ice_Meteor_Sign_01" Direction="0,0,1" Scale="1.25" />
+      <Particle Key="ChargingCircle1" Name="U_Magic_Sign.Frost.FrontCircle_Sign_01_End" Direction="0,0,1" Scale="1" />
+      <Particle Key="ChargingCircle2" Name="U_Magic_Sign.Frost.FrontCircle_Sign_01_End" Direction="0,0,1" Scale="1.3" />
+      <Particle Key="ChargingCircle3" Name="U_Magic_Sign.Frost.FrontCircle_Sign_01_End" Direction="0,0,1" Scale="2" />
+      <Particle Key="ChargingCircleF" Name="U_Magic_Sign.Frost.FrontCircle_Sign_01_Shot" Direction="0,0,1" Scale="1.75" />
+    </ParticleList>
+  </Skill>
+  <Skill UID="Player_FrostComet_step_19" ESkill="default_variant">
+    <HUD UIName="@ui_variant_Player_FrostComet_step_19" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_003.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_003.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_003.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_003.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_003.png" ShowParamsInTooltip="DamageWeapon" />
+    <DamageWeapon WeaponMultiplier="1.15" />
+  </Skill>
+  <Skill UID="player_frostcomet_step_5,player_frostcomet_step_1" ESkill="default_variant_combo">
+    <Projectile Name="player_frostcomet_proj_large_fire" />
+  </Skill>
+  <Skill UID="player_frostcomet_step_5,player_frostcomet_step_9" ESkill="default_variant_combo">
+    <ParticleList>
+      <Particle Key="Loop" Name="U_Character.Skills.Frost_Meteor_MeteorShower_01_Fire" Direction="0,1,0" />
+      <Particle Key="LoopAdditional" Name="U_Character.Skills.Frost_Meteor_MeteorShower_02_Fire" Direction="0,1,0" />
+      <Particle Key="ChannelAura1" Name="U_Character_02.Sniper.Sniper_Charging_02_Fire" Direction="0,1,0" Bone="R_Weapon_Bone" />
+      <Particle Key="ChannelAura2" Name="U_Character_02.Sniper.Sniper_Charging_Aura_01_Fire" Direction="0,1,0" Bone="R_Weapon_Bone" />
+    </ParticleList>
+  </Skill>
+  <Skill UID="player_frostcomet_step_5,player_frostcomet_step_9,player_frostcomet_step_1" ESkill="default_variant_combo">
+    <ParticleList>
+      <Particle Key="Loop" Name="U_Character.Skills.Frost_Meteor_MeteorShower_01_Fire" Direction="0,1,0" Scale="1.3" />
+      <Particle Key="LoopAdditional" Name="U_Character.Skills.Frost_Meteor_MeteorShower_02_Fire" Direction="0,1,0" Scale="1.3" />
+    </ParticleList>
+  </Skill>
+  <Skill UID="player_frostcomet_step_5,player_frostcomet_step_10" ESkill="default_variant_combo">
+    <ParticleList>
+      <Particle Key="AdditionalExplosion" Name="U_CommonVFX.Icy_Soul.Icy_Soul_Impact_01_Fire" Direction="0,1,0" />
+      <Particle Key="Aura" Name="U_Character_02.Sniper.Sniper_Charging_Aura_01_Fire" Direction="0,1,0" Bone="R_Weapon_Bone" />
+      <Particle Key="Wind" Name="U_Character_02.Sniper.Sniper_Charging_Wind_01_Fire" Direction="0,0,1" Bone="Bip01" />
+      <Particle Key="Blink" Name="U_Character_02.Sniper.Sniper_Charging_01_Fire" Direction="0,0,1" Scale="1" />
+      <Particle Key="Charging1" Name="U_Character_02.Sniper.Sniper_Charging_01_Fire" Direction="0,1,0" Bone="R_Weapon_Bone" />
+      <Particle Key="Charging2" Name="U_Character_02.Sniper.Sniper_Charging_02_Fire" Direction="0,1,0" Bone="R_Weapon_Bone" />
+      <Particle Key="Charging3" Name="U_Character_02.Sniper.Sniper_Charging_03_Fire" Direction="0,1,0" Bone="R_Weapon_Bone" />
+      <Particle Key="ChargingF" Name="U_Character_02.Sniper.Sniper_Charging_Trigger_Fire" Direction="0,1,0" Bone="R_Weapon_Bone" />
+      <Particle Key="ChargingComet1" Name="U_VFX_Temp.Temp_Chaguk.IceMeteor_Start_Charging_01_Fire" Direction="0,0,1" />
+      <Particle Key="ChargingComet2" Name="U_VFX_Temp.Temp_Chaguk.IceMeteor_Start_Charging_02_Fire" Direction="0,0,1" />
+      <Particle Key="ChargingComet3" Name="U_VFX_Temp.Temp_Chaguk.IceMeteor_Start_Charging_03_Fire" Direction="0,0,1" />
+      <Particle Key="ChargingCometF" Name="U_Magic_Sign.Fire.Fire_Meteor_Sign_01" Direction="0,0,1" />
+      <Particle Key="ChargingCircle1" Name="U_Magic_Sign.Fire.FrontCircle_Sign_01_End" Direction="0,0,1" />
+      <Particle Key="ChargingCircle2" Name="U_Magic_Sign.Fire.FrontCircle_Sign_01_End" Direction="0,0,1" />
+      <Particle Key="ChargingCircle3" Name="U_Magic_Sign.Fire.FrontCircle_Sign_01_End" Direction="0,0,1" />
+      <Particle Key="ChargingCircleF" Name="U_Magic_Sign.Fire.FrontCircle_Sign_01_Shot" Direction="0,0,1" />
+    </ParticleList>
+  </Skill>
+  <Skill UID="player_frostcomet_step_5,player_frostcomet_step_1,player_frostcomet_step_10" ESkill="default_variant_combo">
+    <ParticleList>
+      <Particle Key="AdditionalExplosion" Name="U_CommonVFX.Icy_Soul.Icy_Soul_Impact_01_Fire" Direction="0,1,0" Scale="1" />
+      <Particle Key="Blink" Name="U_Character_02.Sniper.Sniper_Charging_01_Fire" Direction="0,0,1" Scale="1" />
+      <Particle Key="Indicator1" Name="U_Character_02.HolyDive.HolyDive_Indicator_01" Direction="0,1,0" Scale="0.837" />
+      <Particle Key="Indicator2" Name="U_Character_02.HolyDive.HolyDive_Indicator_02" Direction="0,1,0" Scale="0.837" />
+      <Particle Key="Indicator3" Name="U_Character_02.HolyDive.HolyDive_Indicator_03" Direction="0,1,0" Scale="0.837" />
+      <Particle Key="IndicatorF" Name="U_Character_02.HolyDive.HolyDive_Indicator_Activate_01" Direction="0,1,0" Scale="0.837" />
+      <Particle Key="ChargingComet1" Name="U_VFX_Temp.Temp_Chaguk.IceMeteor_Start_Charging_01_Fire" Direction="0,0,1" Scale="1.25" />
+      <Particle Key="ChargingComet2" Name="U_VFX_Temp.Temp_Chaguk.IceMeteor_Start_Charging_02_Fire" Direction="0,0,1" Scale="1.25" />
+      <Particle Key="ChargingComet3" Name="U_VFX_Temp.Temp_Chaguk.IceMeteor_Start_Charging_03_Fire" Direction="0,0,1" Scale="1.25" />
+      <Particle Key="ChargingCometF" Name="U_Magic_Sign.Fire.Fire_Meteor_Sign_01" Direction="0,0,1" Scale="1.25" />
+      <Particle Key="ChargingCircle1" Name="U_Magic_Sign.Fire.FrontCircle_Sign_01_End" Direction="0,0,1" Scale="1" />
+      <Particle Key="ChargingCircle2" Name="U_Magic_Sign.Fire.FrontCircle_Sign_01_End" Direction="0,0,1" Scale="1.3" />
+      <Particle Key="ChargingCircle3" Name="U_Magic_Sign.Fire.FrontCircle_Sign_01_End" Direction="0,0,1" Scale="2" />
+      <Particle Key="ChargingCircleF" Name="U_Magic_Sign.Fire.FrontCircle_Sign_01_Shot" Direction="0,0,1" Scale="1.75" />
+    </ParticleList>
+  </Skill>
+  <Skill UID="player_frostcomet_step_17,player_frostcomet_step_1" ESkill="default_variant_combo">
+    <Projectile Name="player_frostcomet_proj_large_rend" />
+  </Skill>
+  <Skill UID="player_frostcomet_step_17,player_frostcomet_step_9" ESkill="default_variant_combo">
+    <ParticleList>
+      <Particle Key="Loop" Name="U_Character.Skills.Frost_Meteor_MeteorShower_01_Rend" Direction="0,1,0" />
+      <Particle Key="LoopAdditional" Name="U_Character.Skills.Frost_Meteor_MeteorShower_02_Rend" Direction="0,1,0" />
+      <Particle Key="ChannelAura1" Name="U_Character_02.HolyDive.HolyDive_Charging_02_Rend" Direction="0,1,0" Bone="R_Weapon_Bone" />
+      <Particle Key="ChannelAura2" Name="U_Character_02.HolyDive.HolyDive_Charging_01_Rend" Direction="0,1,0" Bone="R_Weapon_Bone" />
+    </ParticleList>
+  </Skill>
+  <Skill UID="player_frostcomet_step_17,player_frostcomet_step_9,player_frostcomet_step_1" ESkill="default_variant_combo">
+    <ParticleList>
+      <Particle Key="Loop" Name="U_Character.Skills.Frost_Meteor_MeteorShower_01_Rend" Direction="0,1,0" Scale="1.3" />
+      <Particle Key="LoopAdditional" Name="U_Character.Skills.Frost_Meteor_MeteorShower_02_Rend" Direction="0,1,0" Scale="1.3" />
+    </ParticleList>
+  </Skill>
+  <Skill UID="player_frostcomet_step_17,player_frostcomet_step_10" ESkill="default_variant_combo">
+    <ParticleList>
+      <Particle Key="AdditionalExplosion" Name="U_CommonVFX.Icy_Soul.Icy_Soul_Impact_01_Rend" Direction="0,1,0" />
+      <Particle Key="Aura" Name="U_Character_02.HolyDive.HolyDive_Charging_Aura_Rend" Direction="0,1,0" Bone="R_Weapon_Bone" />
+      <Particle Key="Wind" Name="U_Character_02.HolyDive.HolyDive_Charging_Wind_Rend" Direction="0,0,1" Bone="Bip01" />
+      <Particle Key="Blink" Name="U_Character_02.HolyDive.HolyDive_Charging_01_Rend" Direction="0,0,1" Scale="1" />
+      <Particle Key="Charging1" Name="U_Character_02.HolyDive.HolyDive_Charging_01_Rend" Direction="0,1,0" Bone="R_Weapon_Bone" />
+      <Particle Key="Charging2" Name="U_Character_02.HolyDive.HolyDive_Charging_02_Rend" Direction="0,1,0" Bone="R_Weapon_Bone" />
+      <Particle Key="Charging3" Name="U_Character_02.HolyDive.HolyDive_Charging_03_Rend" Direction="0,1,0" Bone="R_Weapon_Bone" />
+      <Particle Key="ChargingF" Name="U_Character_02.HolyDive.HolyDive_Charging_Final_Rend" Direction="0,1,0" Bone="R_Weapon_Bone" />
+      <Particle Key="ChargingComet1" Name="U_VFX_Temp.Temp_Chaguk.IceMeteor_Start_Charging_01_Rend" Direction="0,0,1" />
+      <Particle Key="ChargingComet2" Name="U_VFX_Temp.Temp_Chaguk.IceMeteor_Start_Charging_02_Rend" Direction="0,0,1" />
+      <Particle Key="ChargingComet3" Name="U_VFX_Temp.Temp_Chaguk.IceMeteor_Start_Charging_03_Rend" Direction="0,0,1" />
+      <Particle Key="ChargingCometF" Name="U_Magic_Sign.Rend.Rend_Meteor_Sign_01" Direction="0,0,1" />
+      <Particle Key="ChargingCircle1" Name="U_Magic_Sign.Rend.FrontCircle_Sign_01_End" Direction="0,0,1" />
+      <Particle Key="ChargingCircle2" Name="U_Magic_Sign.Rend.FrontCircle_Sign_01_End" Direction="0,0,1" />
+      <Particle Key="ChargingCircle3" Name="U_Magic_Sign.Rend.FrontCircle_Sign_01_End" Direction="0,0,1" />
+      <Particle Key="ChargingCircleF" Name="U_Magic_Sign.Rend.FrontCircle_Sign_01_Shot" Direction="0,0,1" />
+    </ParticleList>
+  </Skill>
+  <Skill UID="player_frostcomet_step_17,player_frostcomet_step_1,player_frostcomet_step_10" ESkill="default_variant_combo">
+    <ParticleList>
+      <Particle Key="AdditionalExplosion" Name="U_CommonVFX.Icy_Soul.Icy_Soul_Impact_01_Rend" Direction="0,1,0" Scale="1" />
+      <Particle Key="Blink" Name="U_Character_02.Sniper.Sniper_Charging_01_Rend" Direction="0,0,1" Scale="1" />
+      <Particle Key="Indicator1" Name="U_Character_02.HolyDive.HolyDive_Indicator_01" Direction="0,1,0" Scale="0.837" />
+      <Particle Key="Indicator2" Name="U_Character_02.HolyDive.HolyDive_Indicator_02" Direction="0,1,0" Scale="0.837" />
+      <Particle Key="Indicator3" Name="U_Character_02.HolyDive.HolyDive_Indicator_03" Direction="0,1,0" Scale="0.837" />
+      <Particle Key="IndicatorF" Name="U_Character_02.HolyDive.HolyDive_Indicator_Activate_01" Direction="0,1,0" Scale="0.837" />
+      <Particle Key="ChargingComet1" Name="U_VFX_Temp.Temp_Chaguk.IceMeteor_Start_Charging_01_Rend" Direction="0,0,1" Scale="1.25" />
+      <Particle Key="ChargingComet2" Name="U_VFX_Temp.Temp_Chaguk.IceMeteor_Start_Charging_02_Rend" Direction="0,0,1" Scale="1.25" />
+      <Particle Key="ChargingComet3" Name="U_VFX_Temp.Temp_Chaguk.IceMeteor_Start_Charging_03_Rend" Direction="0,0,1" Scale="1.25" />
+      <Particle Key="ChargingCometF" Name="U_Magic_Sign.Rend.Frost_Meteor_Sign_01" Direction="0,0,1" Scale="1.25" />
+      <Particle Key="ChargingCircle1" Name="U_Magic_Sign.Rend.FrontCircle_Sign_01_End" Direction="0,0,1" Scale="1" />
+      <Particle Key="ChargingCircle2" Name="U_Magic_Sign.Rend.FrontCircle_Sign_01_End" Direction="0,0,1" Scale="1.3" />
+      <Particle Key="ChargingCircle3" Name="U_Magic_Sign.Rend.FrontCircle_Sign_01_End" Direction="0,0,1" Scale="2" />
+      <Particle Key="ChargingCircleF" Name="U_Magic_Sign.Rend.FrontCircle_Sign_01_Shot" Direction="0,0,1" Scale="1.75" />
+    </ParticleList>
+  </Skill>
+  <Skill UID="player_frostcomet_step_18,player_frostcomet_step_1" ESkill="default_variant_combo">
+    <Projectile Name="player_frostcomet_proj_large_sacred" />
+  </Skill>
+  <Skill UID="player_frostcomet_step_18,player_frostcomet_step_9" ESkill="default_variant_combo">
+    <ParticleList>
+      <Particle Key="Loop" Name="U_Character.Skills.Frost_Meteor_MeteorShower_01_Sacred" Direction="0,1,0" />
+      <Particle Key="LoopAdditional" Name="U_Character.Skills.Frost_Meteor_MeteorShower_02_Sacred" Direction="0,1,0" />
+      <Particle Key="ChannelAura1" Name="U_Character_02.HolyDive.HolyDive_Charging_02" Direction="0,1,0" Bone="R_Weapon_Bone" />
+      <Particle Key="ChannelAura2" Name="U_Character_02.HolyDive.HolyDive_Charging_01" Direction="0,1,0" Bone="R_Weapon_Bone" />
+    </ParticleList>
+  </Skill>
+  <Skill UID="player_frostcomet_step_18,player_frostcomet_step_9,player_frostcomet_step_1" ESkill="default_variant_combo">
+    <ParticleList>
+      <Particle Key="Loop" Name="U_Character.Skills.Frost_Meteor_MeteorShower_01_Sacred" Direction="0,1,0" Scale="1.3" />
+      <Particle Key="LoopAdditional" Name="U_Character.Skills.Frost_Meteor_MeteorShower_02_Sacred" Direction="0,1,0" Scale="1.3" />
+    </ParticleList>
+  </Skill>
+  <Skill UID="player_frostcomet_step_18,player_frostcomet_step_10" ESkill="default_variant_combo">
+    <ParticleList>
+      <Particle Key="AdditionalExplosion" Name="U_CommonVFX.Icy_Soul.Icy_Soul_Impact_01_Sacred" Direction="0,1,0" />
+      <Particle Key="Aura" Name="U_Character_02.HolyDive.HolyDive_Charging_Aura" Direction="0,1,0" Bone="R_Weapon_Bone" />
+      <Particle Key="Wind" Name="U_Character_02.HolyDive.HolyDive_Charging_Wind" Direction="0,0,1" Bone="Bip01" />
+      <Particle Key="Blink" Name="U_Character_02.HolyDive.HolyDive_Charging_01" Direction="0,0,1" Scale="1" />
+      <Particle Key="Charging1" Name="U_Character_02.HolyDive.HolyDive_Charging_01" Direction="0,1,0" Bone="R_Weapon_Bone" />
+      <Particle Key="Charging2" Name="U_Character_02.HolyDive.HolyDive_Charging_02" Direction="0,1,0" Bone="R_Weapon_Bone" />
+      <Particle Key="Charging3" Name="U_Character_02.HolyDive.HolyDive_Charging_03" Direction="0,1,0" Bone="R_Weapon_Bone" />
+      <Particle Key="ChargingF" Name="U_Character_02.HolyDive.HolyDive_Charging_Final" Direction="0,1,0" Bone="R_Weapon_Bone" />
+      <Particle Key="ChargingComet1" Name="U_VFX_Temp.Temp_Chaguk.IceMeteor_Start_Charging_01_Sacred" Direction="0,0,1" />
+      <Particle Key="ChargingComet2" Name="U_VFX_Temp.Temp_Chaguk.IceMeteor_Start_Charging_02_Sacred" Direction="0,0,1" />
+      <Particle Key="ChargingComet3" Name="U_VFX_Temp.Temp_Chaguk.IceMeteor_Start_Charging_03_Sacred" Direction="0,0,1" />
+      <Particle Key="ChargingCometF" Name="U_Magic_Sign.Sacred.Sacred_Meteor_Sign_01" Direction="0,0,1" />
+      <Particle Key="ChargingCircle1" Name="U_Magic_Sign.Sacred.FrontCircle_Sign_01_End" Direction="0,0,1" />
+      <Particle Key="ChargingCircle2" Name="U_Magic_Sign.Sacred.FrontCircle_Sign_01_End" Direction="0,0,1" />
+      <Particle Key="ChargingCircle3" Name="U_Magic_Sign.Sacred.FrontCircle_Sign_01_End" Direction="0,0,1" />
+      <Particle Key="ChargingCircleF" Name="U_Magic_Sign.Sacred.FrontCircle_Sign_01_Shot" Direction="0,0,1" />
+    </ParticleList>
+  </Skill>
+  <Skill UID="player_frostcomet_step_18,player_frostcomet_step_1,player_frostcomet_step_10" ESkill="default_variant_combo">
+    <ParticleList>
+      <Particle Key="AdditionalExplosion" Name="U_CommonVFX.Icy_Soul.Icy_Soul_Impact_01_Sacred" Direction="0,1,0" Scale="1" />
+      <Particle Key="Blink" Name="U_Character_02.Sniper.Sniper_Charging_01_Sacred" Direction="0,0,1" Scale="1" />
+      <Particle Key="Indicator1" Name="U_Character_02.HolyDive.HolyDive_Indicator_01" Direction="0,1,0" Scale="0.837" />
+      <Particle Key="Indicator2" Name="U_Character_02.HolyDive.HolyDive_Indicator_02" Direction="0,1,0" Scale="0.837" />
+      <Particle Key="Indicator3" Name="U_Character_02.HolyDive.HolyDive_Indicator_03" Direction="0,1,0" Scale="0.837" />
+      <Particle Key="IndicatorF" Name="U_Character_02.HolyDive.HolyDive_Indicator_Activate_01" Direction="0,1,0" Scale="0.837" />
+      <Particle Key="ChargingComet1" Name="U_VFX_Temp.Temp_Chaguk.IceMeteor_Start_Charging_01_Sacred" Direction="0,0,1" Scale="1.25" />
+      <Particle Key="ChargingComet2" Name="U_VFX_Temp.Temp_Chaguk.IceMeteor_Start_Charging_02_Sacred" Direction="0,0,1" Scale="1.25" />
+      <Particle Key="ChargingComet3" Name="U_VFX_Temp.Temp_Chaguk.IceMeteor_Start_Charging_03_Sacred" Direction="0,0,1" Scale="1.25" />
+      <Particle Key="ChargingCometF" Name="U_Magic_Sign.Sacred.Frost_Meteor_Sign_01" Direction="0,0,1" Scale="1.25" />
+      <Particle Key="ChargingCircle1" Name="U_Magic_Sign.Sacred.FrontCircle_Sign_01_End" Direction="0,0,1" Scale="1" />
+      <Particle Key="ChargingCircle2" Name="U_Magic_Sign.Sacred.FrontCircle_Sign_01_End" Direction="0,0,1" Scale="1.3" />
+      <Particle Key="ChargingCircle3" Name="U_Magic_Sign.Sacred.FrontCircle_Sign_01_End" Direction="0,0,1" Scale="2" />
+      <Particle Key="ChargingCircleF" Name="U_Magic_Sign.Sacred.FrontCircle_Sign_01_Shot" Direction="0,0,1" Scale="1.75" />
+    </ParticleList>
+  </Skill>
+</MetaData>

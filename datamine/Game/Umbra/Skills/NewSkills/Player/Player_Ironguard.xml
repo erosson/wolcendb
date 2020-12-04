@@ -4,10 +4,10 @@
     <WeaponRequirements Requirements="melee" />
     <Animation ActionString="player_skill_ironguard" SkipAnimationWhileMoving="1" />
     <CastingParams CastBone="R_weapon_bone" />
-    <HUD HUDPicture="../u_resources/spells/Active_Skills/juggernaut.png" UIName="@ui_AST_Ironguard" Lore="@ui_AST_Ironguard_Lore" ActiveEffectTitle="" ActiveEffectDesc="" ASTTreeNumber="8" ShowParamsInAST="Cost,ROSTime,Cooldown,Range,DamageDetail,DamageWeapon,DamageCritical,StatusAilmentsChance,Explosion,SpecificIronguard" ShowParamsInTooltip="Cost,Cooldown,DamageOverview,StatusAilmentsChance,SpecificIronguard" />
+    <HUD HUDPicture="../u_resources/spells/Active_Skills/juggernaut_Physical.png" UIName="@ui_AST_Ironguard" Lore="@ui_AST_Ironguard_Lore" ActiveEffectTitle="" ActiveEffectDesc="" ASTTreeNumber="8" ShowParamsInAST="Cost,ROSTime,Cooldown,Range,DamageDetail,DamageWeapon,DamageCritical,StatusAilmentsChance,Explosion,SpecificIronguard" ShowParamsInTooltip="Cost,Cooldown,DamageOverview,StatusAilmentsChance,SpecificIronguard" />
     <Enneract PickableParticle_MoveToGround="U_CommonVFX_02.Esseract.Esseract_Projectile.Physical" PickableParticle_OnGround_Shape="U_CommonVFX_02.Esseract.Esseract_Shape.Circle_Physical" PickableParticle_OnGround_Damage="U_CommonVFX_02.Esseract.Esseract_Color.Physical" PickableParticle_OnGround_Symbol="U_CommonVFX_02.Esseract.Esseract_Symbol.HEPHAARON" PickableParticle_OnGround_Indicator="U_CommonVFX_02.Esseract.Esseract_Indicator.Physical" PickableParticle_OnGround_Pickup="U_CommonVFX_02.Esseract.Esseract_Loot.Physical" SkillLearningParticle="U_CommonVFX.Skill_Learn.Skill_Learn_Physical" Inventory_HUDPicture="../u_resources/enneracts/juggernaut.png" Inventory_LoreDesc="@ui_enneract_lore" />
     <Aggression TargetValueOnHit="20" />
-    <DamageBase Type="physical" Min="1" Max="1" />
+    <DamageWeapon WeaponMultiplier="5" />
     <Cooldown Cooldown="25" CooldownPerLevel="0" />
     <ResourceCost RageCost="-140" RageCostPerLevel="0" ROSTransfertDuration="2.0" />
     <ParticleList>
@@ -18,9 +18,12 @@
       <Particle Key="ShieldAbsorb" Name="U_Character_02.IronGuard.IronGuard_Shield_Reaction_01" Direction="0,1,0" Offset="0,0,1.2" Bone="Bip01" Scale="1.15" />
       <Particle Key="MeshExplode" Name="U_Character_02.IronGuard.IronGuard_Explo_Mesh_01" Direction="0,1,0" Offset="0,0,1.2" Scale="1.2" />
     </ParticleList>
-    <SpecialShield ShieldAngle="360" />
+    <SpecialShield ShieldAngle="360" ProtectionType="ProjectilesOnly" />
     <Recast Cooldown="0.5" RageCost="75" />
-    <Specific_Ironguard MaxDuration="10" MaxAbsorption="100" MaxAbsorptionPerLevel="0" MinDamageMultiplier="0.2" MaxDamageMultiplier="0.6" DamageMultiplierPerLevel="0" DamageRadius="3.5" EndingSoundTrigger="Play_Skill_IronGuard_End" BlockSoundTrigger="Play_Skill_IronGuard_Block" CastSoundTrigger="Play_Skill_IronGuard_Start" />
+    <Specific_Ironguard MaxDuration="10" MaxAbsorption="100" MaxAbsorptionPerLevel="0" MinDamageMultiplier="1" MaxDamageMultiplier="2" DamageMultiplierPerLevel="0" DamageRadius="3.5" EndingSoundTrigger="Play_Skill_IronGuard_End" BlockSoundTrigger="Play_Skill_IronGuard_Block" CastSoundTrigger="Play_Skill_IronGuard_Start" />
+  </Skill>
+  <Skill UID="player_ironguard_variant_default_damage_type" ESkill="default_variant">
+    <HUD UIName="@ui_AST_Ironguard" Lore="@ui_AST_Ironguard_Lore" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_Alpha.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_Alpha.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_Alpha.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_Alpha.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_Alpha.png" HUDPictureVariant_InnerIcon="../u_resources/spells/Active_Skills/juggernaut_Physical.png" VariantBottomPanel="1" />
   </Skill>
   <Skill UID="player_Ironguard_variant_1" ESkill="default_variant">
     <HUD UIName="@ui_Variant_Ironguard_variant_1" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_003.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_003.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_003.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_003.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_003.png" ShowParamsInTooltip="SpecificIronguard,BlownAway" />
@@ -77,22 +80,22 @@
     <HUD UIName="@ui_Variant_Ironguard_variant_12" Lore="@ui_Variant_Ironguard_variant_12_lore" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_005.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_005.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_005.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_005.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_005.png" ShowParamsInTooltip="SpecificIronguard" />
     <Specific_Ironguard ForceFieldConversionMultiplier="0.6" />
   </Skill>
-  <Skill UID="player_Ironguard_variant_13" ESkill="default_variant">
-    <HUD UIName="@ui_Variant_Ironguard_variant_13" Lore="@ui_Variant_Ironguard_variant_13_lore" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_005.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_005.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_005.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_005.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_005.png" ShowParamsInTooltip="SpecificIronguard" />
-    <SoundTrigger OnAnimCast="Play_Skill_IronGuard_Start_FireSweet" />
-    <Specific_Ironguard EndingSoundTrigger="Play_Skill_IronGuard_End_FireSweet" MinDamageMultiplier="0" MaxDamageMultiplier="0.2" />
+  <Skill UID="player_Ironguard_variant_13" ESkill="elemental_variant">
+    <HUD UIName="@ui_Variant_Ironguard_variant_13" Lore="@ui_Variant_Ironguard_variant_13_lore" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_Alpha.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_Alpha.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_Alpha.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_Alpha.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_Alpha.png" HUDPictureVariant_InnerIcon="../u_resources/spells/Active_Skills/juggernaut_Fire.png" ShowParamsInTooltip="SpecificIronguard" HUDPicture="../u_resources/spells/Active_Skills/juggernaut_Fire.png" VariantBottomPanel="1" />
+    <SoundTrigger OnAnimCast="Play_Skill_IronGuard_Start_Fire" />
+    <Specific_Ironguard EndingSoundTrigger="Play_Skill_IronGuard_End_Fire" MinDamageMultiplier="0" MaxDamageMultiplier="0.2" />
     <Damage_Conversion>
       <Entry From="physical" To="fire" ConversionRate="100" />
     </Damage_Conversion>
     <WeaponRequirements Requirements="melee,fire" />
-    <ParticleList>
-      <Particle Key="Aura" Name="U_Character_02.IronGuard.IronGuard_Start_01_Fire" Direction="0,0,1" Bone="Bip01" />
-      <Particle Key="Shield" Name="U_Character_02.IronGuard.IronGuard_Shield_01_Fire" Direction="0,1,0" Bone="Bip01" />
-      <Particle Key="ShieldExplode" Name="U_Character_02.Charge.Charge_Impact_Fire_01" Direction="0,0,1" />
-      <Particle Key="ShieldBreak" Name="U_Character_02.IronGuard.IronGuard_Expire_01_Fire" Direction="0,1,0" />
-      <Particle Key="ShieldAbsorb" Name="U_Character_02.IronGuard.IronGuard_Shield_Reaction_01_Fire" Direction="0,1,0" Bone="Bip01" />
-      <Particle Key="MeshExplode" Name="U_Character_02.IronGuard.IronGuard_Explo_Mesh_01_Fire" Direction="0,1,0" />
-    </ParticleList>
+    <ElementalParticleOverride>
+      <Particle Key="Aura" Override="U_Character_02.IronGuard.IronGuard_Start_01_Fire" />
+      <Particle Key="Shield" Override="U_Character_02.IronGuard.IronGuard_Shield_01_Fire" />
+      <Particle Key="ShieldExplode" Override="U_Character_02.Charge.Charge_Impact_Fire_01" />
+      <Particle Key="ShieldBreak" Override="U_Character_02.IronGuard.IronGuard_Expire_01_Fire" />
+      <Particle Key="ShieldAbsorb" Override="U_Character_02.IronGuard.IronGuard_Shield_Reaction_01_Fire" />
+      <Particle Key="MeshExplode" Override="U_Character_02.IronGuard.IronGuard_Explo_Mesh_01_Fire" />
+    </ElementalParticleOverride>
   </Skill>
   <Skill UID="player_Ironguard_variant_14" ESkill="default_variant">
     <HUD UIName="@ui_Variant_Ironguard_variant_14" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_001.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_001.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_001.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_001.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_001.png" ShowParamsInTooltip="SpecificIronguard" />
@@ -105,5 +108,43 @@
   <Skill UID="player_Ironguard_variant_16" ESkill="default_variant">
     <HUD UIName="@ui_Variant_Ironguard_variant_16" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_001.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_001.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_001.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_001.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_001.png" ShowParamsInTooltip="SpecificIronguard,Cost" />
     <ResourceCost RageCost="30" />
+  </Skill>
+  <Skill UID="player_Ironguard_variant_17" ESkill="elemental_variant">
+    <HUD UIName="@ui_Variant_Ironguard_variant_17" Lore="@ui_Variant_Ironguard_variant_17_lore" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_Alpha.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_Alpha.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_Alpha.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_Alpha.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_Alpha.png" HUDPictureVariant_InnerIcon="../u_resources/spells/Active_Skills/juggernaut_Toxic.png" ShowParamsInTooltip="SpecificIronguard" HUDPicture="../u_resources/spells/Active_Skills/juggernaut_Toxic.png" VariantBottomPanel="1" />
+    <SoundTrigger OnAnimCast="Play_Skill_IronGuard_Start_Toxic" />
+    <Specific_Ironguard EndingSoundTrigger="Play_Skill_IronGuard_End_Toxic" MinDamageMultiplier="0" MaxDamageMultiplier="0.2" />
+    <Damage_Conversion>
+      <Entry From="physical" To="toxic" ConversionRate="100" />
+    </Damage_Conversion>
+    <WeaponRequirements Requirements="melee,poison" />
+    <ElementalParticleOverride>
+      <Particle Key="Aura" Override="U_Character_02.IronGuard.IronGuard_Start_01_Poison" />
+      <Particle Key="Shield" Override="U_Character_02.IronGuard.IronGuard_Shield_01_Poison" />
+      <Particle Key="ShieldExplode" Override="U_Character_02.Charge.Charge_Impact_Poison_01" />
+      <Particle Key="ShieldBreak" Override="U_Character_02.IronGuard.IronGuard_Expire_01_Poison" />
+      <Particle Key="ShieldAbsorb" Override="U_Character_02.IronGuard.IronGuard_Shield_Reaction_01_Poison" />
+      <Particle Key="MeshExplode" Override="U_Character_02.IronGuard.IronGuard_Explo_Mesh_01_Poison" />
+    </ElementalParticleOverride>
+  </Skill>
+  <Skill UID="player_Ironguard_variant_18" ESkill="elemental_variant">
+    <HUD UIName="@ui_Variant_Ironguard_variant_18" Lore="@ui_Variant_Ironguard_variant_18_lore" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_Alpha.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_Alpha.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_Alpha.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_Alpha.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_Alpha.png" HUDPictureVariant_InnerIcon="../u_resources/spells/Active_Skills/juggernaut_Sacred.png" ShowParamsInTooltip="SpecificIronguard" HUDPicture="../u_resources/spells/Active_Skills/juggernaut_Sacred.png" VariantBottomPanel="1" />
+    <SoundTrigger OnAnimCast="Play_Skill_IronGuard_Start_Sacred" />
+    <Specific_Ironguard EndingSoundTrigger="Play_Skill_IronGuard_End_Sacred" MinDamageMultiplier="0" MaxDamageMultiplier="0.2" />
+    <Damage_Conversion>
+      <Entry From="physical" To="sacred" ConversionRate="100" />
+    </Damage_Conversion>
+    <WeaponRequirements Requirements="melee,sacred" />
+    <ElementalParticleOverride>
+      <Particle Key="Aura" Override="U_Character_02.IronGuard.IronGuard_Start_01_Sacred" />
+      <Particle Key="Shield" Override="U_Character_02.IronGuard.IronGuard_Shield_01_Sacred" />
+      <Particle Key="ShieldExplode" Override="U_Character_02.Charge.Charge_Impact_Sacred_01" />
+      <Particle Key="ShieldBreak" Override="U_Character_02.IronGuard.IronGuard_Expire_01_Sacred" />
+      <Particle Key="ShieldAbsorb" Override="U_Character_02.IronGuard.IronGuard_Shield_Reaction_01_Sacred" />
+      <Particle Key="MeshExplode" Override="U_Character_02.IronGuard.IronGuard_Explo_Mesh_01_Sacred" />
+    </ElementalParticleOverride>
+  </Skill>
+  <Skill UID="player_Ironguard_variant_19" ESkill="default_variant">
+    <HUD UIName="@ui_Variant_Ironguard_variant_19" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_003.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_003.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_003.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_003.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_003.png" ShowParamsInTooltip="SpecificIronguard" />
+    <Specific_Ironguard MaxDuration="5" />
   </Skill>
 </MetaData>

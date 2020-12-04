@@ -8,8 +8,8 @@
   </Spell>
   <Spell Name="MAST_2" UIName="@ui_MAST_2_name" HUDLoreDesc="" GameplayDesc="">
     <MagicEffects>
-      <EIM Name="spellcastingspeed_score_percent" HUDDesc="@ui_eim_spellcastingspeed_score_percent" Permanent="1">
-        <Semantics CharacteristicScorePercentInt="18" />
+      <EIM Name="spellcastingspeed_final_percent" HUDDesc="@ui_eim_spellcastingspeed_final_percent" Permanent="1">
+        <Semantics CharacteristicFinalPercentFloat="3" />
       </EIM>
     </MagicEffects>
   </Spell>
@@ -30,14 +30,14 @@
   <Spell Name="MAST_5" UIName="@ui_MAST_5_name" HUDLoreDesc="@ui_MAST_5_lore" GameplayDesc="@ui_MAST_5_desc">
     <MagicEffects>
       <EIM Name="attack_damage_bonus_from_last_spell" HUDDesc="@ui_eim_attack_damage_bonus_from_last_spell" Permanent="1">
-        <Semantics DamagePercentFloat="30" DurationFloatMaxCombined="5" />
+        <Semantics DamagePercentFloat="15" DurationFloatMaxCombined="5" />
       </EIM>
     </MagicEffects>
   </Spell>
   <Spell Name="MAST_6" UIName="@ui_MAST_6_name" HUDLoreDesc="" GameplayDesc="">
     <MagicEffects>
       <EIM Name="forceshield_regeneration_percent" HUDDesc="@ui_eim_forceshield_regeneration_percent" Permanent="1">
-        <Semantics DefenseRegenerationPercentFloat="25" />
+        <Semantics DefenseRegenerationPercentFloat="5" />
       </EIM>
     </MagicEffects>
   </Spell>
@@ -65,7 +65,7 @@
   <Spell Name="MAST_10" UIName="@ui_MAST_10_name" HUDLoreDesc="" GameplayDesc="">
     <MagicEffects>
       <EIM Name="forceshield_regeneration_percent" HUDDesc="@ui_eim_forceshield_regeneration_percent" Permanent="1">
-        <Semantics DefenseRegenerationPercentFloat="17" />
+        <Semantics DefenseRegenerationPercentFloat="3" />
       </EIM>
       <EIM Name="forceshield_lock_timer_percent" HUDDesc="@ui_eim_forceshield_lock_timer_percent" Permanent="1">
         <Semantics DurationPercentFloat="10" />
@@ -75,21 +75,21 @@
   <Spell Name="MAST_11" UIName="@ui_MAST_11_name" HUDLoreDesc="" GameplayDesc="">
     <MagicEffects>
       <EIM Name="forceshield_percent" HUDDesc="@ui_eim_forceshield_percent" Permanent="1">
-        <Semantics ArmorPercentFloat="12" />
+        <Semantics ArmorPercentFloat="6" />
       </EIM>
     </MagicEffects>
   </Spell>
   <Spell Name="MAST_12" UIName="@ui_MAST_12_name" HUDLoreDesc="" GameplayDesc="">
     <MagicEffects>
       <EIM Name="forceshield_percent" HUDDesc="@ui_eim_forceshield_percent" Permanent="1">
-        <Semantics ArmorPercentFloat="20" />
+        <Semantics ArmorPercentFloat="10" />
       </EIM>
     </MagicEffects>
   </Spell>
   <Spell Name="MAST_13" UIName="@ui_MAST_13_name" HUDLoreDesc="" GameplayDesc="">
     <MagicEffects>
       <EIM Name="forceshield_percent" HUDDesc="@ui_eim_forceshield_percent" Permanent="1">
-        <Semantics ArmorPercentFloat="12" />
+        <Semantics ArmorPercentFloat="6" />
       </EIM>
     </MagicEffects>
   </Spell>
@@ -98,25 +98,25 @@
       <EIM Name="movespeed" HUDDesc="@ui_eim_movespeed" Permanent="1">
         <Semantics SpeedPercentInt="5" />
       </EIM>
-      <EIM Name="attackspeed_score_percent" HUDDesc="@ui_eim_attackspeed_score_percent" Permanent="1">
-        <Semantics CharacteristicScorePercentInt="5" />
+      <EIM Name="attackspeed_final_percent" HUDDesc="@ui_eim_attackspeed_final_percent" Permanent="1">
+        <Semantics CharacteristicFinalPercentFloat="2" />
       </EIM>
-      <EIM Name="spellcastingspeed_score_percent" HUDDesc="@ui_eim_spellcastingspeed_score_percent" Permanent="1">
-        <Semantics CharacteristicScorePercentInt="9" />
+      <EIM Name="spellcastingspeed_final_percent" HUDDesc="@ui_eim_spellcastingspeed_final_percent" Permanent="1">
+        <Semantics CharacteristicFinalPercentFloat="2" />
       </EIM>
     </MagicEffects>
   </Spell>
   <Spell Name="MAST_15" UIName="@ui_MAST_15_name" HUDLoreDesc="" GameplayDesc="">
     <MagicEffects>
       <EIM Name="willpower_pts" HUDDesc="@ui_eim_willpower_pts" Permanent="1">
-        <Semantics AttributeFlatInt="25" />
+        <Semantics AttributeFlatInt="15" />
       </EIM>
     </MagicEffects>
   </Spell>
   <Spell Name="MAST_16" UIName="@ui_MAST_16_name" HUDLoreDesc="@ui_MAST_16_lore" GameplayDesc="@ui_MAST_16_desc">
     <MagicEffects>
       <EIM Name="criticalscore_percent_spell_when_above_ceil" HUDDesc="@ui_eim_criticalscore_percent_spell_when_above_ceil" Permanent="1">
-        <Semantics CharacteristicScorePercentInt="100" />
+        <Semantics CharacteristicScorePercentInt="50" />
       </EIM>
     </MagicEffects>
   </Spell>
@@ -137,21 +137,21 @@
   <Spell Name="MAST_19" UIName="@ui_MAST_19_name" HUDLoreDesc="" GameplayDesc="">
     <MagicEffects>
       <EIM Name="damage_percent_spell" HUDDesc="@ui_eim_damage_percent_spell" Permanent="1">
-        <Semantics DamagePercentInt="10" />
+        <Semantics DamagePercentInt="5" />
       </EIM>
     </MagicEffects>
   </Spell>
   <Spell Name="MAST_20" UIName="@ui_MAST_20_name" HUDLoreDesc="" GameplayDesc="">
     <MagicEffects>
       <EIM Name="damage_percent_spell" HUDDesc="@ui_eim_damage_percent_spell" Permanent="1">
-        <Semantics DamagePercentInt="16" />
+        <Semantics DamagePercentInt="8" />
       </EIM>
     </MagicEffects>
   </Spell>
   <Spell Name="MAST_21" UIName="@ui_MAST_21_name" HUDLoreDesc="" GameplayDesc="">
     <MagicEffects>
       <EIM Name="damage_percent_spell" HUDDesc="@ui_eim_damage_percent_spell" Permanent="1">
-        <Semantics DamagePercentInt="10" />
+        <Semantics DamagePercentInt="5" />
       </EIM>
     </MagicEffects>
   </Spell>
@@ -178,22 +178,22 @@
   </Spell>
   <Spell Name="MAST_25" UIName="@ui_MAST_25_name" HUDLoreDesc="" GameplayDesc="">
     <MagicEffects>
-      <EIM Name="statusailment_resist_score_percent" HUDDesc="@ui_eim_statusailment_resist_score_percent" Permanent="1">
-        <Semantics CharacteristicScorePercentInt="18" />
+      <EIM Name="forceshield_percent" HUDDesc="@ui_eim_forceshield_percent" Permanent="1">
+        <Semantics ArmorPercentFloat="8" />
       </EIM>
     </MagicEffects>
   </Spell>
   <Spell Name="MAST_26" UIName="@ui_MAST_26_name" HUDLoreDesc="" GameplayDesc="">
     <MagicEffects>
       <EIM Name="all_resistance_score_percent" HUDDesc="@ui_eim_all_resistance_score_percent" Permanent="1">
-        <Semantics CharacteristicScorePercentInt="18" />
+        <Semantics CharacteristicScorePercentInt="10" />
       </EIM>
     </MagicEffects>
   </Spell>
   <Spell Name="MAST_27" UIName="@ui_MAST_27_name" HUDLoreDesc="" GameplayDesc="">
     <MagicEffects>
-      <EIM Name="spellcastingspeed_score_percent" HUDDesc="@ui_eim_spellcastingspeed_score_percent" Permanent="1">
-        <Semantics CharacteristicScorePercentInt="12" />
+      <EIM Name="spellcastingspeed_final_percent" HUDDesc="@ui_eim_spellcastingspeed_final_percent" Permanent="1">
+        <Semantics CharacteristicFinalPercentFloat="2" />
       </EIM>
       <EIM Name="umbracosts_percent" HUDDesc="@ui_eim_umbracost_percent" Permanent="1">
         <Semantics ResourcePercentFloat="4" />
@@ -203,14 +203,14 @@
   <Spell Name="MAST_28" UIName="@ui_MAST_28_name" HUDLoreDesc="" GameplayDesc="">
     <MagicEffects>
       <EIM Name="life_leech_percent_spell" HUDDesc="@ui_eim_life_leech_percent_spell" Permanent="1">
-        <Semantics DamagePercentFloat="2" />
+        <Semantics DamagePercentFloat="0.2" />
       </EIM>
     </MagicEffects>
   </Spell>
   <Spell Name="MAST_29" UIName="@ui_MAST_29_name" HUDLoreDesc="" GameplayDesc="">
     <MagicEffects>
       <EIM Name="life_leech_percent_spell" HUDDesc="@ui_eim_life_leech_percent_spell" Permanent="1">
-        <Semantics DamagePercentFloat="2" />
+        <Semantics DamagePercentFloat="0.2" />
       </EIM>
     </MagicEffects>
   </Spell>
@@ -218,6 +218,82 @@
     <MagicEffects>
       <EIM Name="lifeleech_toshields" HUDDesc="@ui_eim_lifeleech_toshields" Permanent="1">
         <Semantics PossibilityInt="1" />
+      </EIM>
+    </MagicEffects>
+  </Spell>
+  <Spell Name="MAST_31" UIName="@ui_MAST_31_name" HUDLoreDesc="" GameplayDesc="">
+    <MagicEffects>
+      <EIM Name="forceshield_regeneration_percent" HUDDesc="@ui_eim_forceshield_regeneration_percent" Permanent="1">
+        <Semantics DefenseRegenerationPercentFloat="5" />
+      </EIM>
+    </MagicEffects>
+  </Spell>
+  <Spell Name="MAST_32" UIName="@ui_MAST_32_name" HUDLoreDesc="" GameplayDesc="">
+    <MagicEffects>
+      <EIM Name="forceshield_percent" HUDDesc="@ui_eim_forceshield_percent" Permanent="1">
+        <Semantics ArmorPercentFloat="5" />
+      </EIM>
+    </MagicEffects>
+  </Spell>
+  <Spell Name="MAST_33" UIName="@ui_MAST_33_name" HUDLoreDesc="" GameplayDesc="">
+    <MagicEffects>
+      <EIM Name="forceshield_percent" HUDDesc="@ui_eim_forceshield_percent" Permanent="1">
+        <Semantics ArmorPercentFloat="5" />
+      </EIM>
+    </MagicEffects>
+  </Spell>
+  <Spell Name="MAST_34" UIName="@ui_MAST_34_name" HUDLoreDesc="" GameplayDesc="">
+    <MagicEffects>
+      <EIM Name="occult_damage_percent" HUDDesc="@ui_eim_occult_damage_percent" Permanent="1">
+        <Semantics DamagePercentInt="15" />
+      </EIM>
+    </MagicEffects>
+  </Spell>
+  <Spell Name="MAST_35" UIName="@ui_MAST_35_name" HUDLoreDesc="" GameplayDesc="">
+    <MagicEffects>
+      <EIM Name="forceshield_regeneration_percent" HUDDesc="@ui_eim_forceshield_regeneration_percent" Permanent="1">
+        <Semantics DefenseRegenerationPercentFloat="3" />
+      </EIM>
+      <EIM Name="forceshield_lock_timer_percent" HUDDesc="@ui_eim_forceshield_lock_timer_percent" Permanent="1">
+        <Semantics DurationPercentFloat="10" />
+      </EIM>
+    </MagicEffects>
+  </Spell>
+  <Spell Name="MAST_36" UIName="@ui_MAST_36_name" HUDLoreDesc="" GameplayDesc="">
+    <MagicEffects>
+      <EIM Name="forceshield_lock_timer_percent" HUDDesc="@ui_eim_forceshield_lock_timer_percent" Permanent="1">
+        <Semantics DurationPercentFloat="20" />
+      </EIM>
+    </MagicEffects>
+  </Spell>
+  <Spell Name="MAST_37" UIName="@ui_MAST_37_name" HUDLoreDesc="" GameplayDesc="">
+    <MagicEffects>
+      <EIM Name="spellcastingspeed_final_percent" HUDDesc="@ui_eim_spellcastingspeed_final_percent" Permanent="1">
+        <Semantics CharacteristicFinalPercentFloat="3" />
+      </EIM>
+    </MagicEffects>
+  </Spell>
+  <Spell Name="MAST_38" UIName="@ui_MAST_38_name" HUDLoreDesc="" GameplayDesc="">
+    <MagicEffects>
+      <EIM Name="spellcastingspeed_final_percent" HUDDesc="@ui_eim_spellcastingspeed_final_percent" Permanent="1">
+        <Semantics CharacteristicFinalPercentFloat="3" />
+      </EIM>
+    </MagicEffects>
+  </Spell>
+  <Spell Name="MAST_39" UIName="@ui_MAST_39_name" HUDLoreDesc="" GameplayDesc="">
+    <MagicEffects>
+      <EIM Name="elemental_damage_percent" HUDDesc="@ui_eim_elemental_damage_percent" Permanent="1">
+        <Semantics DamagePercentInt="15" />
+      </EIM>
+    </MagicEffects>
+  </Spell>
+  <Spell Name="MAST_40" UIName="@ui_MAST_40_name" HUDLoreDesc="" GameplayDesc="">
+    <MagicEffects>
+      <EIM Name="spellcastingspeed_final_percent" HUDDesc="@ui_eim_spellcastingspeed_final_percent" Permanent="1">
+        <Semantics CharacteristicFinalPercentFloat="2" />
+      </EIM>
+      <EIM Name="umbracosts_percent" HUDDesc="@ui_eim_umbracost_percent" Permanent="1">
+        <Semantics ResourcePercentFloat="5" />
       </EIM>
     </MagicEffects>
   </Spell>

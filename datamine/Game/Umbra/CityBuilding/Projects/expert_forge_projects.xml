@@ -1,0 +1,22 @@
+<MetaData>
+  <Project Name="expert_forge_project_0" CategoryName="expert_forge_category_0" Repeatable="0">
+    <UIParams UIName="@ui_pillager_armor_project" UILore="@ui_pillager_armor_project_lore" IconType="" BackgroundImage="../u_resources/city_building/project_backgrounds/BGArmorsPillager.png" />
+    <Requirements PlayerLevel="0" Projects="expert_forge_construct">
+      <ResourceCost ComputationMethod="Static" Gold="10" Gold_PerPlayerLevel="0" PA="0" PA_PerPlayerLevel="0" ProductionToComplete="10" />
+    </Requirements>
+    <RewardList>
+      <Reward RewardName="expert_forge_reward_0" Weight="1" />
+    </RewardList>
+    <ContextualSoundTrigger ToPlay="Endgame_ExpertForge_StartProject_Pillager" ToResume="Endgame_ExpertForge_Idle" />
+  </Project>
+  <Project Name="expert_forge_project_1" CategoryName="expert_forge_category_0" Repeatable="0">
+    <UIParams UIName="@ui_liberator_armor_project" UILore="@ui_liberator_armor_project_lore" IconType="" BackgroundImage="../u_resources/city_building/project_backgrounds/BGArmorsLiberator.png" />
+    <Requirements PlayerLevel="0" Projects="expert_forge_construct">
+      <ResourceCost ComputationMethod="Static" Gold="10" Gold_PerPlayerLevel="0" PA="0" PA_PerPlayerLevel="0" ProductionToComplete="10" />
+    </Requirements>
+    <RewardList>
+      <Reward RewardName="expert_forge_reward_1" Weight="1" />
+    </RewardList>
+    <ContextualSoundTrigger ToPlay="Endgame_ExpertForge_StartProject_Liberator" ToResume="Endgame_ExpertForge_Idle" />
+  </Project>
+</MetaData>

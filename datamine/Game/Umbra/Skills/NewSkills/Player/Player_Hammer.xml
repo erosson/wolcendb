@@ -3,32 +3,35 @@
     <WeaponRequirements Requirements="melee" />
     <CastingParams CastBone="R_Weapon_Bone" CanCastWhileMoving="0" MaximumTurnRate="0" ShouldMoveInRange="0" />
     <Animation AnimationDrivenMovement="1" ActionString_In="player_skill_hammer_recall_in" ActionString_Loop="player_skill_hammer_recall_loop" ActionString_Out="player_skill_hammer_recall_out" ScaleWithSpellCastingSpeed="1" />
-    <HUD HUDPicture="../u_resources/spells/Active_Skills/hammer.png" UIName="@ui_AST_Hammer" Lore="@ui_AST_Hammer_Lore" ActiveEffectTitle="" ActiveEffectDesc="" ASTTreeNumber="1" ShowParamsInAST="Cost,ROSTime,Cooldown,Range,Projectiles,DamageDetail,DamageWeapon,DamageCritical,StatusAilmentsChance,Explosion,SpecificHammer" ShowParamsInTooltip="Cost,Cooldown,DamageOverview,StatusAilmentsChance,SpecificHammer" />
+    <HUD HUDPicture="../u_resources/spells/Active_Skills/hammer_Physical.png" UIName="@ui_AST_Hammer" Lore="@ui_AST_Hammer_Lore" ActiveEffectTitle="" ActiveEffectDesc="" ASTTreeNumber="1" ShowParamsInAST="Cost,ROSTime,Cooldown,Range,Projectiles,DamageDetail,DamageWeapon,DamageCritical,StatusAilmentsChance,Explosion,SpecificHammer" ShowParamsInTooltip="Cost,Cooldown,DamageOverview,StatusAilmentsChance,SpecificHammer" />
     <Enneract PickableParticle_MoveToGround="U_CommonVFX_02.Esseract.Esseract_Projectile.Physical" PickableParticle_OnGround_Shape="U_CommonVFX_02.Esseract.Esseract_Shape.Circle_Physical" PickableParticle_OnGround_Damage="U_CommonVFX_02.Esseract.Esseract_Color.Physical" PickableParticle_OnGround_Symbol="U_CommonVFX_02.Esseract.Esseract_Symbol.HEPHAARON" PickableParticle_OnGround_Indicator="U_CommonVFX_02.Esseract.Esseract_Indicator.Physical" PickableParticle_OnGround_Pickup="U_CommonVFX_02.Esseract.Esseract_Loot.Physical" SkillLearningParticle="U_CommonVFX.Skill_Learn.Skill_Learn_Physical" Inventory_HUDPicture="../u_resources/enneracts/hammer.png" Inventory_LoreDesc="@ui_enneract_lore" />
     <Aggression TargetValueOnHit="40" />
     <Projectile ProjectileCount="1" AngleBetweenProjectiles="25" />
-    <DamageWeapon PercentMin="250" PercentMinPerLevel="0" PercentMax="270" PercentMaxPerLevel="0" />
-    <ResourceCost RageCost="-250" RageCostPerLevel="0" ROSTransfertDuration="2.0" CostMultiplierAfterCast="0" CostMultiplierAfterCastTimer="3" />
+    <DamageWeapon WeaponMultiplier="2.7" />
+    <ResourceCost RageCost="-200" RageCostPerLevel="0" ROSTransfertDuration="2.0" CostMultiplierAfterCast="0" CostMultiplierAfterCastTimer="3" />
     <DamageZone RateOfFire="0.3" />
     <ParticleList>
       <Particle Key="Hammer" Name="U_Character_02.Hammer.Hammer_Projectile_01" Direction="0,1,0" Scale="1.3" />
-      <Particle Key="Explosion" Name="U_Character_02.Charge.Charge_Impact_01" Direction="0,0,1" />
+      <Particle Key="Explosion" Name="U_Character_02.Hammer.Hammer_Explosion_01" Direction="0,0,1" Scale="1.6" />
       <Particle Key="AOE" Name="U_Character_02.Hammer.Hammer_Spining_Wind_01" Direction="0,1,0" Scale="0.85" />
       <Particle Key="ReturnAuraPlayer" Name="U_Character_02.Hammer.Hammer_Pulling_Aura_01" Direction="0,1,0" Bone="Bip01" Offset="0.1,0.85,1.5" Scale="0.6" />
       <Particle Key="ReturnAuraHammer" Name="U_Character_02.Hammer.Hammer_Pulling_Aura_01" Direction="0,1,0" />
     </ParticleList>
     <VisualFeedback TrailPresetBase="default" FeedbackPresetBase="Player_skill_laceration" BloodDecalOrientation="forward" />
     <SoundTrigger OnHit="Play_Skill_Hammer_Impact" />
-    <Specific_Hammer ForwardSpeed="15" BackwardSpeed="50" DamageRadius="2" CustomCooldown="6" HammerMaxDistance="25" PreCatchSoundTime="0.350" LaunchAnimation="player_skill_hammer_01" LoopHammerSound="Play_Skill_Hammer_Spin_Loop" EndLoopHammerSound="Stop_Skill_Hammer_Spin_Loop" HammerThrowSound="Play_Skill_Hammer_Throw" HammerCatchSound="Play_Skill_Hammer_Catch" HammerPreCatchSound="Play_Skill_Hammer_PreCatch" HammerReturnSound="Play_Skill_Hammer_Return" />
+    <Specific_Hammer ForwardSpeed="15" BackwardSpeed="50" DamageRadius="2" HammerMaxDistance="25" PreCatchSoundTime="0.350" LaunchAnimation="player_skill_hammer_01" LoopHammerSound="Play_Skill_Hammer_Spin_Loop" EndLoopHammerSound="Stop_Skill_Hammer_Spin_Loop" HammerThrowSound="Play_Skill_Hammer_Throw" HammerCatchSound="Play_Skill_Hammer_Catch" HammerPreCatchSound="Play_Skill_Hammer_PreCatch" HammerReturnSound="Play_Skill_Hammer_Return" />
+    <Cooldown Cooldown="6" CooldownPerLevel="0" MinimumCooldown="0.2" CooldownTrigger="Custom" />
+  </Skill>
+  <Skill UID="player_hammer_variant_default_damage_type" ESkill="default_variant">
+    <HUD UIName="@ui_AST_Hammer" Lore="@ui_AST_Hammer_Lore" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_Alpha.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_Alpha.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_Alpha.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_Alpha.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_Alpha.png" HUDPictureVariant_InnerIcon="../u_resources/spells/Active_Skills/hammer_Physical.png" VariantBottomPanel="1" />
   </Skill>
   <Skill UID="player_hammer_variant_1" ESkill="default_variant" Keywords="attack_skill">
     <HUD UIName="@ui_Variant_Hammer_variant_1" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_003.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_003.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_003.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_003.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_003.png" ShowParamsInTooltip="SpecificHammer" />
-    <Specific_Hammer ExplosionRadius="3" ExplosionDamageMultiplier="1" />
+    <Specific_Hammer ExplosionRadius="5" ExplosionDamageMultiplier="1.5" />
   </Skill>
   <Skill UID="player_hammer_variant_2" ESkill="default_variant" Keywords="attack_skill">
     <HUD UIName="@ui_Variant_Hammer_variant_2" Lore="@ui_Variant_Hammer_variant_2_lore" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_005.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_005.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_005.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_005.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_005.png" ShowParamsInTooltip="SpecificHammer,DamageWeapon" />
-    <DamageWeapon PercentMin="-50" PercentMinPerLevel="0" PercentMax="-50" PercentMaxPerLevel="0" />
-    <Specific_Hammer AOERadius="2.5" AOEDamageMultiplier="0.2" AOETime="0.9" />
+    <Specific_Hammer AOERadius="2.5" AOEDamageMultiplier="0.5" AOETime="0.9" />
   </Skill>
   <Skill UID="player_hammer_variant_3" ESkill="default_variant" Keywords="attack_skill">
     <HUD UIName="@ui_Variant_Hammer_variant_3" Lore="@ui_Variant_Hammer_variant_3_lore" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_005.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_005.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_005.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_005.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_005.png" ShowParamsInTooltip="SpecificHammer" />
@@ -37,7 +40,7 @@
   <Skill UID="player_hammer_variant_4" ESkill="default_variant" Keywords="attack_skill">
     <HUD UIName="@ui_Variant_Hammer_variant_4" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_003.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_003.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_003.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_003.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_003.png" ShowParamsInTooltip="SpecificHammer,DamageWeapon,Projectiles" />
     <Projectile ProjectileCount="1" />
-    <DamageWeapon PercentMin="-150" PercentMinPerLevel="-0" PercentMax="-150" PercentMaxPerLevel="-0" />
+    <DamageWeapon WeaponMultiplier="0.7" />
   </Skill>
   <Skill UID="player_hammer_variant_5" ESkill="default_variant" Keywords="attack_skill">
     <HUD UIName="@ui_Variant_Hammer_variant_5" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_003.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_003.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_003.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_003.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_003.png" ShowParamsInTooltip="SpecificHammer" />
@@ -67,25 +70,9 @@
     <HUD UIName="@ui_Variant_Hammer_variant_11" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_001.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_001.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_001.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_001.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_001.png" ShowParamsInTooltip="SpecificHammer" />
     <Specific_Hammer ForceFieldPerHit="10" />
   </Skill>
-  <Skill UID="player_hammer_variant_12" ESkill="default_variant" Keywords="attack_skill">
-    <HUD UIName="@ui_Variant_Hammer_variant_12" Lore="@ui_Variant_Hammer_variant_12_lore" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_005.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_005.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_005.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_005.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_005.png" ShowParamsInTooltip="SpecificHammer,DamageWeapon" />
-    <ParticleList>
-      <Particle Key="Hammer" Name="U_Character_02.Hammer.Hammer_Projectile_01_Fire" Direction="0,1,0" />
-      <Particle Key="Explosion" Name="U_Character_02.Charge.Charge_Impact_Fire_01" Direction="0,0,1" />
-      <Particle Key="AOE" Name="U_Character_02.Hammer.Hammer_Spining_Wind_01_Fire" Direction="0,1,0" />
-      <Particle Key="ReturnAuraPlayer" Name="U_Character_02.Hammer.Hammer_Pulling_Aura_01_Fire" Direction="0,1,0" Bone="Bip01" />
-      <Particle Key="ReturnAuraHammer" Name="U_Character_02.Hammer.Hammer_Pulling_Aura_01_Fire" Direction="0,1,0" />
-    </ParticleList>
-    <WeaponRequirements Requirements="melee,fire" />
-    <Damage_Conversion>
-      <Entry From="physical" To="fire" ConversionRate="100" />
-    </Damage_Conversion>
-    <DamageWeapon PercentMin="25" PercentMinPerLevel="0" PercentMax="25" PercentMaxPerLevel="0" />
-    <Specific_Hammer IsFire="1" BuffForAllies="AST_Hammer_Buff_Fire" />
-  </Skill>
   <Skill UID="player_hammer_variant_13" ESkill="default_variant" Keywords="attack_skill">
     <HUD UIName="@ui_Variant_Hammer_variant_13" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_001.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_001.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_001.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_001.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_001.png" ShowParamsInTooltip="SpecificHammer,DamageWeapon" />
-    <DamageWeapon PercentMin="30" PercentMinPerLevel="0" PercentMax="30" PercentMaxPerLevel="0" />
+    <DamageWeapon WeaponMultiplier="1.15" />
   </Skill>
   <Skill UID="player_hammer_variant_14" ESkill="default_variant" Keywords="attack_skill">
     <HUD UIName="@ui_Variant_Hammer_variant_14" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_001.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_001.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_001.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_001.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_001.png" ShowParamsInTooltip="SpecificHammer,DamageCritical" />
@@ -93,10 +80,83 @@
   </Skill>
   <Skill UID="player_hammer_variant_15" ESkill="default_variant" Keywords="attack_skill">
     <HUD UIName="@ui_Variant_Hammer_variant_15" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_001.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_001.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_001.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_001.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_001.png" ShowParamsInTooltip="SpecificHammer,StatusAilmentsChance" />
-    <StatusAilment AllAilmentsInflictScoreIncreasePercent="40" />
+    <StatusAilment AilmentEffectiveness="125" />
   </Skill>
   <Skill UID="player_hammer_variant_16" ESkill="default_variant" Keywords="attack_skill">
     <HUD UIName="@ui_Variant_Hammer_variant_16" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_001.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_001.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_001.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_001.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_001.png" ShowParamsInTooltip="SpecificHammer,StatusAilmentsChance" />
     <StatusAilment AllAilmentsInflictDamageIncreasePercent="40" />
+  </Skill>
+  <Skill UID="player_hammer_variant_12" ESkill="default_variant" Keywords="attack_skill">
+    <HUD UIName="@ui_Variant_Hammer_variant_12" Lore="@ui_Variant_Hammer_variant_12_lore" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_Alpha.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_Alpha.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_Alpha.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_Alpha.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_Alpha.png" HUDPictureVariant_InnerIcon="../u_resources/spells/Active_Skills/hammer_Fire.png" ShowParamsInTooltip="SpecificHammer,DamageWeapon" HUDPicture="../u_resources/spells/Active_Skills/hammer_Fire.png" VariantBottomPanel="1" />
+    <ParticleList>
+      <Particle Key="Hammer" Name="U_Character_02.Hammer.Hammer_Projectile_01_Fire" Direction="0,1,0" Scale="1.3" />
+      <Particle Key="Explosion" Name="U_Character_02.Hammer.Hammer_Explosion_Fire_01" Direction="0,0,1" Scale="1.6" />
+      <Particle Key="AOE" Name="U_Character_02.Hammer.Hammer_Spining_Wind_01_Fire" Direction="0,1,0" Scale="0.85" />
+      <Particle Key="ReturnAuraPlayer" Name="U_Character_02.Hammer.Hammer_Pulling_Aura_01_Fire" Direction="0,1,0" Bone="Bip01" Offset="0.1,0.85,1.5" Scale="0.6" />
+      <Particle Key="ReturnAuraHammer" Name="U_Character_02.Hammer.Hammer_Pulling_Aura_01_Fire" Direction="0,1,0" />
+    </ParticleList>
+    <WeaponRequirements Requirements="melee,fire" />
+    <Damage_Conversion>
+      <Entry From="physical" To="fire" ConversionRate="100" />
+    </Damage_Conversion>
+    <DamageWeapon WeaponMultiplier="1.25" />
+    <EventEffectOverride>
+      <AnimEvent Original="U_Character_02.Hammer.Hammer_Appear_01" Override="U_Character_02.Hammer.Hammer_Appear_01_Fire" />
+      <AnimEvent Original="U_Swipe.Swipe_Normal.Swipe_Summon_02" Override="U_Swipe.Swipe_Normal.Swipe_2H_Fire_01" />
+      <AnimEvent Original="U_Character_02.Hammer.Hammer_Disappear_01" Override="U_Character_02.Hammer.Hammer_Disappear_01_Fire" />
+      <AnimEvent Original="U_Character_02.Hammer.Hammer_Grab_01" Override="U_Character_02.Hammer.Hammer_Grab_01_Fire" />
+    </EventEffectOverride>
+    <SoundTrigger OnHit="Play_Skill_Hammer_Impact_Fire" />
+    <Specific_Hammer BuffForAllies="AST_Hammer_Buff_Fire" HammerThrowSound="Play_Skill_Hammer_Throw_Fire" HammerCatchSound="Play_Skill_Hammer_Catch_Fire" LoopHammerSound="Play_Skill_Hammer_Spin_Loop_Fire" />
+  </Skill>
+  <Skill UID="player_hammer_variant_17" ESkill="default_variant" Keywords="attack_skill">
+    <HUD UIName="@ui_Variant_Hammer_variant_17" Lore="@ui_Variant_Hammer_variant_17_lore" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_Alpha.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_Alpha.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_Alpha.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_Alpha.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_Alpha.png" HUDPictureVariant_InnerIcon="../u_resources/spells/Active_Skills/hammer_Frost.png" ShowParamsInTooltip="SpecificHammer,DamageWeapon" HUDPicture="../u_resources/spells/Active_Skills/hammer_Frost.png" VariantBottomPanel="1" />
+    <ParticleList>
+      <Particle Key="Hammer" Name="U_Character_02.Hammer.Hammer_Projectile_01_Frost" Direction="0,1,0" Scale="1.3" />
+      <Particle Key="Explosion" Name="U_Character_02.Hammer.Hammer_Explosion_Frost_01" Direction="0,0,1" Scale="1.6" />
+      <Particle Key="AOE" Name="U_Character_02.Hammer.Hammer_Spining_Wind_01_Frost" Direction="0,1,0" Scale="0.85" />
+      <Particle Key="ReturnAuraPlayer" Name="U_Character_02.Hammer.Hammer_Pulling_Aura_01_Frost" Direction="0,1,0" Bone="Bip01" Offset="0.1,0.85,1.5" Scale="0.6" />
+      <Particle Key="ReturnAuraHammer" Name="U_Character_02.Hammer.Hammer_Pulling_Aura_01_Frost" Direction="0,1,0" />
+    </ParticleList>
+    <WeaponRequirements Requirements="melee,frost" />
+    <Damage_Conversion>
+      <Entry From="physical" To="frost" ConversionRate="100" />
+    </Damage_Conversion>
+    <DamageWeapon WeaponMultiplier="1.25" />
+    <EventEffectOverride>
+      <AnimEvent Original="U_Character_02.Hammer.Hammer_Appear_01" Override="U_Character_02.Hammer.Hammer_Appear_01_Frost" />
+      <AnimEvent Original="U_Swipe.Swipe_Normal.Swipe_Summon_02" Override="U_Swipe.Swipe_Normal.Swipe_2H_Frost_01" />
+      <AnimEvent Original="U_Character_02.Hammer.Hammer_Disappear_01" Override="U_Character_02.Hammer.Hammer_Disappear_01_Frost" />
+      <AnimEvent Original="U_Character_02.Hammer.Hammer_Grab_01" Override="U_Character_02.Hammer.Hammer_Grab_01_Frost" />
+    </EventEffectOverride>
+    <SoundTrigger OnHit="Play_Skill_Hammer_Impact_Frost" />
+    <Specific_Hammer BuffForAllies="AST_Hammer_Buff_Fire" HammerThrowSound="Play_Skill_Hammer_Throw_Frost" HammerCatchSound="Play_Skill_Hammer_Catch_Frost" LoopHammerSound="Play_Skill_Hammer_Spin_Loop_Frost" />
+  </Skill>
+  <Skill UID="Player_Hammer_variant_19" ESkill="default_variant">
+    <HUD UIName="@ui_variant_Player_Hammer_variant_19" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_003.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_003.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_003.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_003.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_003.png" ShowParamsInTooltip="DamageWeapon" />
+    <DamageCritical CriticalInflictScoreModifier="40" />
+  </Skill>
+  <Skill UID="player_hammer_variant_18" ESkill="default_variant" Keywords="attack_skill">
+    <HUD UIName="@ui_Variant_Hammer_variant_18" Lore="@ui_Variant_Hammer_variant_18_lore" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_Alpha.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_Alpha.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_Alpha.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_Alpha.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_Alpha.png" HUDPictureVariant_InnerIcon="../u_resources/spells/Active_Skills/hammer_Shadow.png" ShowParamsInTooltip="SpecificHammer,DamageWeapon" HUDPicture="../u_resources/spells/Active_Skills/hammer_Shadow.png" VariantBottomPanel="1" />
+    <ParticleList>
+      <Particle Key="Hammer" Name="U_Character_02.Hammer.Hammer_Projectile_01_Shadow" Direction="0,1,0" Scale="1.3" />
+      <Particle Key="Explosion" Name="U_Character_02.Hammer.Hammer_Explosion_Shadow_01" Direction="0,0,1" Scale="1.6" />
+      <Particle Key="AOE" Name="U_Character_02.Hammer.Hammer_Spining_Wind_01_Shadow" Direction="0,1,0" Scale="0.85" />
+      <Particle Key="ReturnAuraPlayer" Name="U_Character_02.Hammer.Hammer_Pulling_Aura_01_Shadow" Direction="0,1,0" Bone="Bip01" Offset="0.1,0.85,1.5" Scale="0.6" />
+      <Particle Key="ReturnAuraHammer" Name="U_Character_02.Hammer.Hammer_Pulling_Aura_01_Shadow" Direction="0,1,0" />
+    </ParticleList>
+    <WeaponRequirements Requirements="melee,shadow" />
+    <Damage_Conversion>
+      <Entry From="physical" To="shadow" ConversionRate="100" />
+    </Damage_Conversion>
+    <DamageWeapon WeaponMultiplier="1.25" />
+    <EventEffectOverride>
+      <AnimEvent Original="U_Character_02.Hammer.Hammer_Appear_01" Override="U_Character_02.Hammer.Hammer_Appear_01_Shadow" />
+      <AnimEvent Original="U_Swipe.Swipe_Normal.Swipe_Summon_02" Override="U_Swipe.Swipe_Normal.Swipe_2H_Shadow_01" />
+      <AnimEvent Original="U_Character_02.Hammer.Hammer_Disappear_01" Override="U_Character_02.Hammer.Hammer_Disappear_01_Shadow" />
+      <AnimEvent Original="U_Character_02.Hammer.Hammer_Grab_01" Override="U_Character_02.Hammer.Hammer_Grab_01_Shadow" />
+    </EventEffectOverride>
+    <SoundTrigger OnHit="Play_Skill_Hammer_Impact_Shadow" />
+    <Specific_Hammer BuffForAllies="AST_Hammer_Buff_Fire" HammerThrowSound="Play_Skill_Hammer_Throw_Shadow" HammerCatchSound="Play_Skill_Hammer_Catch_Shadow" LoopHammerSound="Play_Skill_Hammer_Spin_Loop_Shadow" />
   </Skill>
 </MetaData>

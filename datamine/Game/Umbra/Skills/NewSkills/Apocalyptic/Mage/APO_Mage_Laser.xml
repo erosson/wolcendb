@@ -18,14 +18,14 @@
     <ResourceCostMaintained ApoResourceCostPerSecond="-40" />
     <Cooldown Cooldown="10" CooldownTrigger="OnEnd" CooldownPerLevel="0" />
     <ParticleList>
-      <Particle Key="beam_01" Name="U_ApocalypticForm.Mage_ApocalypticFrom.Ult_Beam_01_Loop" Offset="0,-1,2.5" Direction="0,0,-1" Scale="1.2" InstantKill="0" />
-      <Particle Key="beam_02" Name="U_ApocalypticForm.Mage_ApocalypticFrom.Ult_Beam_02_Loop" Offset="0,-1,2.5" Direction="0,0,-1" Scale="1.5" InstantKill="0" />
-      <Particle Key="beam_03" Name="U_ApocalypticForm.Mage_ApocalypticFrom.Ult_Beam_03_Loop" Offset="0,-1,2.5" Direction="0,0,-1" Scale="1.9" InstantKill="0" />
-      <Particle Key="camera_01" Name="U_ApocalypticForm.Mage_ApocalypticFrom.Ult_Camera_01" />
-      <Particle Key="camera_02" Name="U_ApocalypticForm.Mage_ApocalypticFrom.Ult_Camera_02" />
-      <Particle Key="camera_03" Name="U_ApocalypticForm.Mage_ApocalypticFrom.Ult_Camera_Final" />
-      <Particle Key="camera_fadeout_02" Name="U_ApocalypticForm.Mage_ApocalypticFrom.Ult_Camera_Fadeout" />
-      <Particle Key="camera_fadeout_03" Name="U_ApocalypticForm.Mage_ApocalypticFrom.Ult_Camera_Fadeout_Final" />
+      <Particle Key="beam_01" Name="U_ApocalypticForm.Mage_ApocalypticFrom.Ult_Beam_01_Loop" Offset="0,0,2.5" Direction="1,0,0" Scale="1.2" InstantKill="0" />
+      <Particle Key="beam_02" Name="U_ApocalypticForm.Mage_ApocalypticFrom.Ult_Beam_02_Loop" Offset="0,0,2.5" Direction="1,0,0" Scale="1.5" InstantKill="0" />
+      <Particle Key="beam_03" Name="U_ApocalypticForm.Mage_ApocalypticFrom.Ult_Beam_03_Loop" Offset="0,0,2.5" Direction="1,0,0" Scale="1.9" InstantKill="0" />
+      <Particle Key="camera_01" Name="U_ApocalypticForm.Mage_ApocalypticFrom.Ult_Camera_01" Direction="0,0,1" />
+      <Particle Key="camera_02" Name="U_ApocalypticForm.Mage_ApocalypticFrom.Ult_Camera_02" Direction="0,0,1" />
+      <Particle Key="camera_03" Name="U_ApocalypticForm.Mage_ApocalypticFrom.Ult_Camera_Final" Direction="0,0,1" />
+      <Particle Key="camera_fadeout_02" Name="U_ApocalypticForm.Mage_ApocalypticFrom.Ult_Camera_Fadeout" Direction="0,0,1" />
+      <Particle Key="camera_fadeout_03" Name="U_ApocalypticForm.Mage_ApocalypticFrom.Ult_Camera_Fadeout_Final" Direction="0,0,1" />
     </ParticleList>
     <SoundTrigger OnAnimLoopOut="Play_APO_Mage_Laser_Fire_ReturnPosition" />
     <Shapes>

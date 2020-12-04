@@ -16,8 +16,8 @@
     </Shapes>
     <Specific_ApoTank_MoveAttack FlightDuration="0.05" DamageGainPercentPerApoStack="10" LateralToleranceArrivalPos="10" HorizontalToleranceArrivalPos="8" FallbackPositionsAmount="4" />
     <ParticleList>
-      <Particle Key="Impact" Name="U_ApocalypticForm.Heavy_ApocalypticForm.Apo_Jump_Impact_01" Delay="0.25" />
-      <Particle Key="Lightning" Name="U_CinematicVFX_01.Intro_End.Sacred_Hit_01" Scale="2" Delay="0.25" />
+      <Particle Key="Impact" Name="U_ApocalypticForm.Heavy_ApocalypticForm.Apo_Jump_Impact_01" Delay="0.25" Direction="0,0,1" />
+      <Particle Key="Lightning" Name="U_CinematicVFX_01.Intro_End.Sacred_Hit_01" Scale="2" Delay="0.25" Direction="0,0,1" />
     </ParticleList>
   </Skill>
 </MetaData>

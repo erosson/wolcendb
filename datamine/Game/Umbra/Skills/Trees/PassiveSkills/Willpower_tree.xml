@@ -2,8 +2,8 @@
   <Tree Name="Willpower" UIName="@ui_Section_Willpower" Category="magic">
     <Skill Name="WILL_1" Rarity="1" Category="magic" MaxLevel="1" Angle="0.75" Pos="0.25" Unlock="begin,WILL_2,WILL_10" />
     <Skill Name="WILL_2" Rarity="1" Category="magic" MaxLevel="1" Angle="0.68" Pos="0.35" Unlock="WILL_3,WILL_5" />
-    <Skill Name="WILL_3" Rarity="1" Category="magic" MaxLevel="1" Angle="0.92" Pos="0.51" Unlock="WILL_4,rightDown" />
-    <Skill Name="WILL_4" Rarity="1" Category="magic" MaxLevel="1" Angle="0.75" Pos="0.90" Unlock="WILL_5,endRight,rightUp" />
+    <Skill Name="WILL_3" Rarity="1" Category="magic" MaxLevel="1" Angle="0.92" Pos="0.51" Unlock="" />
+    <Skill Name="WILL_4" Rarity="1" Category="magic" MaxLevel="1" Angle="0.75" Pos="0.90" Unlock="endRight" />
     <Skill Name="WILL_5" Rarity="1" Category="magic" MaxLevel="1" Angle="0.61" Pos="0.60" Unlock="WILL_6,WILL_7,WILL_8" />
     <Skill Name="WILL_6" Rarity="1" Category="magic" MaxLevel="1" Angle="0.70" Pos="0.59" Unlock="" />
     <Skill Name="WILL_7" Rarity="1" Category="magic" MaxLevel="1" Angle="0.75" Pos="0.48" Unlock="" />
@@ -11,8 +11,8 @@
     <Skill Name="WILL_9" Rarity="3" Category="magic" MaxLevel="1" Angle="0.78" Pos="0.60" Unlock="WILL_6,WILL_7,WILL_8" />
     <Skill Name="WILL_16" Rarity="1" Category="magic" MaxLevel="1" Angle="0.25" Pos="0.25" Unlock="begin,WILL_17,WILL_10" />
     <Skill Name="WILL_17" Rarity="1" Category="magic" MaxLevel="1" Angle="0.32" Pos="0.35" Unlock="WILL_18,WILL_23" />
-    <Skill Name="WILL_23" Rarity="1" Category="magic" MaxLevel="1" Angle="0.08" Pos="0.51" Unlock="WILL_24,leftDown" />
-    <Skill Name="WILL_24" Rarity="1" Category="magic" MaxLevel="1" Angle="0.25" Pos="0.90" Unlock="WILL_18,endLeft,leftUp" />
+    <Skill Name="WILL_23" Rarity="1" Category="magic" MaxLevel="1" Angle="0.08" Pos="0.51" Unlock="" />
+    <Skill Name="WILL_24" Rarity="1" Category="magic" MaxLevel="1" Angle="0.25" Pos="0.90" Unlock="endLeft" />
     <Skill Name="WILL_18" Rarity="1" Category="magic" MaxLevel="1" Angle="0.39" Pos="0.60" Unlock="WILL_19" />
     <Skill Name="WILL_19" Rarity="1" Category="magic" MaxLevel="1" Angle="0.30" Pos="0.58" Unlock="WILL_22,WILL_20" />
     <Skill Name="WILL_20" Rarity="1" Category="magic" MaxLevel="1" Angle="0.25" Pos="0.48" Unlock="" />
@@ -24,5 +24,11 @@
     <Skill Name="WILL_13" Rarity="1" Category="magic" MaxLevel="1" Angle="0.6" Pos="0.86" Unlock="" />
     <Skill Name="WILL_14" Rarity="3" Category="magic" MaxLevel="1" Angle="0.5" Pos="0.91" Unlock="WILL_13,WILL_15" />
     <Skill Name="WILL_15" Rarity="1" Category="magic" MaxLevel="1" Angle="0.4" Pos="0.86" Unlock="" />
+    <Skill Name="WILL_25" Rarity="1" Category="magic" MaxLevel="1" Angle="0.81" Pos="0.69" Unlock="WILL_3,WILL_4" />
+    <Skill Name="WILL_26" Rarity="1" Category="magic" MaxLevel="1" Angle="0.69" Pos="0.73" Unlock="WILL_4,WILL_5" />
+    <Skill Name="WILL_27" Rarity="1" Category="magic" MaxLevel="1" Angle="0.87" Pos="0.81" Unlock="WILL_4,rightUp" />
+    <Skill Name="WILL_28" Rarity="1" Category="magic" MaxLevel="1" Angle="0.19" Pos="0.69" Unlock="WILL_23,WILL_24" />
+    <Skill Name="WILL_29" Rarity="1" Category="magic" MaxLevel="1" Angle="0.31" Pos="0.73" Unlock="WILL_18,WILL_24" />
+    <Skill Name="WILL_30" Rarity="1" Category="magic" MaxLevel="1" Angle="0.13" Pos="0.81" Unlock="WILL_24,leftUp" />
   </Tree>
 </MetaData>

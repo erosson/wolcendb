@@ -4,11 +4,12 @@
     <CastingParams CastBone="L_Weapon_Bone" />
     <Animation ActionString="player_skill_bomb_windup" ActionString_FollowUp="player_skill_bomb_followup" ScaleWithAttackSpeed="1" AnimationDrivenMovement="1" />
     <SkillLoop PresetID="skillloop_bomb" TTL="0.1" />
-    <HUD HUDPicture="../u_resources/spells/Active_Skills/bomb.png" UIName="@ui_AST_Bomb" Lore="@ui_AST_Bomb_Lore" ActiveEffectTitle="" ActiveEffectDesc="" ASTTreeNumber="1" ShowParamsInAST="Cost,ROSTime,Cooldown,Range,Projectiles,DamageWeapon,DamageDetail,StatusAilmentsChance,Explosion,Slow,SpecificBomb" ShowParamsInTooltip="Cost,Cooldown,DamageOverview,StatusAilmentsChance,Slow,SpecificBomb" />
+    <HUD HUDPicture="../u_resources/spells/Active_Skills/bomb_Physical.png" UIName="@ui_AST_Bomb" Lore="@ui_AST_Bomb_Lore" ActiveEffectTitle="" ActiveEffectDesc="" ASTTreeNumber="1" ShowParamsInAST="Cost,ROSTime,Cooldown,Range,Projectiles,DamageWeapon,DamageDetail,StatusAilmentsChance,Explosion,Slow,SpecificBomb" ShowParamsInTooltip="Cost,Cooldown,DamageOverview,StatusAilmentsChance,Slow,SpecificBomb" />
     <Enneract PickableParticle_MoveToGround="U_CommonVFX_02.Esseract.Esseract_Projectile.Fire" PickableParticle_OnGround_Shape="U_CommonVFX_02.Esseract.Esseract_Shape.Circle_Fire" PickableParticle_OnGround_Damage="U_CommonVFX_02.Esseract.Esseract_Color.Fire" PickableParticle_OnGround_Symbol="U_CommonVFX_02.Esseract.Esseract_Symbol.EZANEAL" PickableParticle_OnGround_Indicator="U_CommonVFX_02.Esseract.Esseract_Indicator.Fire" PickableParticle_OnGround_Pickup="U_CommonVFX_02.Esseract.Esseract_Loot.Fire" SkillLearningParticle="U_CommonVFX.Skill_Learn.Skill_Learn_Fire" Inventory_HUDPicture="../u_resources/enneracts/bomb.png" Inventory_LoreDesc="@ui_enneract_lore" />
     <Range ProjectileMinDistance="7" AttackRange="15" />
     <Aggression TargetValueOnHit="60" />
-    <DamageWeapon PercentMin="450" PercentMinPerLevel="0" PercentMax="450" PercentMaxPerLevel="0" />
+    <DamageWeapon WeaponMultiplier="3.5" />
+    <StatusAilment AilmentEffectiveness="125" />
     <Cooldown Cooldown="0" CooldownPerLevel="0" />
     <ResourceCost RageCost="-300" RageCostPerLevel="0" ROSTransfertDuration="2.0" />
     <Projectile Name="player_bomb_proj" ProjectileCount="1" PenetrationLimit="1" AngleBetweenProjectiles="20" />
@@ -16,21 +17,21 @@
     <Collisions IgnoreTerrainCollisions="1" IgnoreEntityCollisions="1" />
     <ParticleList>
       <Particle Key="Muzzle" Name="U_Projectile.Bullet.Bullet.Bullet_Muzzle_Fire" Bone="L_Weapon_Bone" Direction="0,1,0" />
-      <Particle Key="Mine" Name="U_Character.Skills.Summon_Bomb_Mine_01" Direction="0,0,1" />
-      <Particle Key="MineGlue" Name="U_Character.Skills.Summon_Bomb_Mine_Glue_01" Direction="0,0,1" />
       <Particle Key="Explosion" Name="U_Monster.Trapper.Explosion_Bomb_01_3m" Direction="0,0,1" />
-      <Particle Key="ExplosionBig" Name="U_Monster.Trapper.Explosion_Bomb_01_4m" Direction="0,0,1" />
-      <Particle Key="ExplosionGlue" Name="U_Monster.Trapper.Explosion_GlueBomb_01_3m" Direction="0,0,1" />
-      <Particle Key="ExplosionBigGlue" Name="U_Monster.Trapper.Explosion_GlueBomb_01_4m" Direction="0,0,1" />
     </ParticleList>
     <VisualFeedback TrailPresetBase="default" FeedbackPresetBase="Player_skill_bomb" BloodDecalOrientation="forward" />
     <Specific_Bomb MineDeploySound="Play_Skill_Bomb_Deploy" MineTriggerSound="Play_Skill_Bomb_Trigger" BombImpactSound="Play_Skill_Bomb_Impact_Explosion_Basic" CamShakePreset="PlayerBombCamShake" />
-    <SoundTrigger OnAnimCast="Play_Skill_Bomb_Shoot" OnHit="PLAY_Player_DefaultHit" PlayAttackVoice="0" />
+    <SoundTrigger OnAnimCast="Play_Skill_Bomb_Shoot" OnHit="Play_Skill_Bomb_Impact_Hit" />
+  </Skill>
+  <Skill UID="player_bomb_variant_default_damage_type" ESkill="default_variant">
+    <HUD UIName="@ui_AST_Bomb" Lore="@ui_AST_Bomb_Lore" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_Alpha.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_Alpha.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_Alpha.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_Alpha.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_Alpha.png" HUDPictureVariant_InnerIcon="../u_resources/spells/Active_Skills/bomb_Physical.png" VariantBottomPanel="1" />
   </Skill>
   <Skill UID="player_bomb_variant_1" ESkill="player_bomb_variant" Keywords="projectile,attack_skill">
     <HUD UIName="@ui_Variant_Bomb_variant_1" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_001.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_001.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_001.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_001.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_001.png" ShowParamsInTooltip="SpecificBomb,Explosion" />
-    <Specific_Bomb IsBig="1" />
     <Explosion ExplosionRadius="1" />
+    <ParticleList>
+      <Particle Key="Explosion" Name="U_Monster.Trapper.Explosion_Bomb_01_4m" Direction="0,0,1" />
+    </ParticleList>
   </Skill>
   <Skill UID="player_bomb_variant_2" ESkill="player_bomb_variant" Keywords="projectile,attack_skill">
     <HUD UIName="@ui_Variant_Bomb_variant_2" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_003.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_003.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_003.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_003.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_003.png" ShowParamsInTooltip="SpecificBomb,Range" />
@@ -40,56 +41,41 @@
     <HUD UIName="@ui_Variant_Bomb_variant_3" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_003.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_003.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_003.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_003.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_003.png" ShowParamsInTooltip="SpecificBomb,Slow" />
     <StatusEffect_MovementSpeed SlowPercent="25" Duration="3" />
     <Specific_Bomb IsGlue="1" GlueTickrate="0.2" GlueDuration="3" BombImpactSound="Play_Skill_Bomb_Impact_Explosion_Glue" />
+    <Projectile Name="player_bomb_proj_glue" />
+    <ParticleList>
+      <Particle Key="Explosion" Name="U_Monster.Trapper.Explosion_GlueBomb_01_3m" Direction="0,0,1" />
+    </ParticleList>
   </Skill>
   <Skill UID="player_bomb_variant_4" ESkill="player_bomb_variant" Keywords="projectile,attack_skill">
     <HUD UIName="@ui_Variant_Bomb_variant_4" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_003.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_003.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_003.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_003.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_003.png" ShowParamsInTooltip="SpecificBomb,DamageWeapon,Projectiles" />
     <Projectile ProjectileCount="1" AngleBetweenProjectiles="25" />
-    <DamageWeapon PercentMin="-170" PercentMax="-170" />
-  </Skill>
-  <Skill UID="player_bomb_variant_5" ESkill="player_bomb_variant" Keywords="projectile,attack_skill">
-    <HUD UIName="@ui_Variant_Bomb_variant_5" Lore="@ui_Variant_Bomb_variant_5_Lore" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_005.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_005.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_005.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_005.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_005.png" ShowParamsInTooltip="SpecificBomb,StatusAilmentsChance" />
-    <Specific_Bomb IsRend="1" />
-    <Damage_Conversion>
-      <Entry From="physical" To="rend" ConversionRate="100" />
-    </Damage_Conversion>
-    <WeaponRequirements Requirements="rogue,bleed" />
-    <StatusAilment>
-      <bleed Stacks="1" StacksMode="AddToBase" />
-    </StatusAilment>
-    <ParticleList>
-      <Particle Key="Muzzle" Name="U_Projectile.Bullet.Bullet.Bullet_Muzzle_Rend" />
-      <Particle Key="Mine" Name="U_Character.Skills.Summon_Bomb_Mine_Rend_01" />
-      <Particle Key="MineGlue" Name="U_Character.Skills.Summon_Bomb_Mine_GlueRend_01" Direction="0,0,1" />
-      <Particle Key="Explosion" Name="U_Monster.Trapper.Explosion_Bomb_01_Rend_3m" />
-      <Particle Key="ExplosionBig" Name="U_Monster.Trapper.Explosion_Bomb_01_Rend_3m" Scale="1.33" />
-      <Particle Key="ExplosionGlue" Name="U_Monster.Trapper.Explosion_GlueBomb_01_Rend_3m" />
-      <Particle Key="ExplosionBigGlue" Name="U_Monster.Trapper.Explosion_GlueBomb_01_Rend_3m" Scale="1.33" />
-    </ParticleList>
+    <DamageWeapon WeaponMultiplier="0.75" />
   </Skill>
   <Skill UID="player_bomb_variant_6" ESkill="player_bomb_variant" Keywords="projectile,attack_skill">
     <HUD UIName="@ui_Variant_Bomb_variant_6" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_001.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_001.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_001.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_001.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_001.png" ShowParamsInTooltip="SpecificBomb,DamageWeapon" />
-    <DamageWeapon PercentMin="45" PercentMax="45" />
+    <DamageWeapon WeaponMultiplier="1.15" />
   </Skill>
   <Skill UID="player_bomb_variant_7" ESkill="player_bomb_variant" Keywords="projectile,attack_skill">
     <HUD UIName="@ui_Variant_Bomb_variant_7" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_001.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_001.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_001.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_001.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_001.png" ShowParamsInTooltip="SpecificBomb,DamageCritical" />
     <DamageCritical CriticalDamageModifier="25" />
   </Skill>
   <Skill UID="player_bomb_variant_8" ESkill="player_bomb_variant" Keywords="projectile,attack_skill">
-    <HUD UIName="@ui_Variant_Bomb_variant_8" Lore="@ui_Variant_Bomb_variant_8_Lore" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_005.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_005.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_005.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_005.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_005.png" ShowParamsInTooltip="SpecificBomb" />
-    <Specific_Bomb IsMine="1" TrapPlayerBomb="trap_player_bomb" TrapSuffixForBig="_big" TrapSuffixForGlue="_glue" TrapSuffixForRend="_rend" />
+    <HUD UIName="@ui_Variant_Bomb_variant_8" Lore="@ui_Variant_Bomb_variant_8_Lore" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_005.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_005.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_005.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_005.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_005.png" ShowParamsInTooltip="SpecificBomb,DamageWeapon" />
+    <Specific_Bomb IsMine="1" TrapPlayerBomb="trap_player_bomb" />
+    <DamageWeapon WeaponMultiplier="1.5" />
   </Skill>
   <Skill UID="player_bomb_variant_9" ESkill="player_bomb_variant" Keywords="projectile,attack_skill">
     <HUD UIName="@ui_Variant_Bomb_variant_9" Lore="@ui_Variant_Bomb_variant_9_lore" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_005.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_005.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_005.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_005.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_005.png" ShowParamsInTooltip="SpecificBomb" />
     <ParticleList>
-      <Particle Key="SubExplosion" Name="U_Monster.Trapper.Explosion_Bomb_01_Small" />
+      <Particle Key="SubExplosion" Name="U_Monster.Trapper.Explosion_Bomb_01_3m" Direction="0,0,1" Scale="0.67" />
     </ParticleList>
-    <Specific_Bomb ClusterRadius="6" ClusterProjectileCount="5" ClusterProjectileName="player_bomb_proj_cluster" ClusterDamageMultiplier="0.5" ClusterExplosionRadius="1" />
+    <Specific_Bomb ClusterRadius="6" ClusterProjectileCount="6" ClusterProjectileName="player_bomb_proj_cluster" ClusterDamageMultiplier="0.75" ClusterExplosionRadius="2" />
   </Skill>
   <Skill UID="player_bomb_variant_10" ESkill="player_bomb_variant" Keywords="projectile,attack_skill">
     <HUD UIName="@ui_Variant_Bomb_variant_10" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_003.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_003.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_003.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_003.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_003.png" ShowParamsInTooltip="SpecificBomb,DamageWeapon" />
     <Animation ActionString_FollowUp="invalid_no_assert" ActionString_In="player_skill_bomb_multishot_In" ActionString_Loop="player_skill_bomb_multishot_Loop" ActionString_Out="player_skill_bomb_multishot_Out" />
-    <Specific_Bomb MultiShotRandomRadius="5" MultiShotBulletCount="5" MultiShotTiming="0.3" />
-    <DamageWeapon PercentMin="-200" PercentMax="-200" />
+    <Specific_Bomb MultiShotRandomRadius="4" MultiShotBulletCount="5" MultiShotTiming="0.4" />
+    <Cooldown Cooldown="8.0" CooldownPerLevel="0" />
   </Skill>
   <Skill UID="player_bomb_variant_11" ESkill="player_bomb_variant" Keywords="projectile,attack_skill">
     <HUD UIName="@ui_Variant_Bomb_variant_11" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_003.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_003.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_003.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_003.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_003.png" ShowParamsInTooltip="SpecificBomb,Explosion,DamageWeapon" />
@@ -99,12 +85,13 @@
       <Particle Key="MineAdditionalCreation" Name="U_Character.Skills.Summon_Bomb_Mine_Spawn_01" Direction="0,0,1" Scale="0.3" Delay="0.2" />
     </ParticleList>
     <Specific_Bomb IsMissile="1" />
+    <Projectile Name="player_bomb_proj_missile" />
     <Explosion ExplosionRadius="-0.5" />
-    <DamageWeapon PercentMin="100" PercentMax="100" />
+    <DamageWeapon WeaponMultiplier="1.3" />
   </Skill>
   <Skill UID="player_bomb_variant_12" ESkill="player_bomb_variant" Keywords="projectile,attack_skill">
     <HUD UIName="@ui_Variant_Bomb_variant_12" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_001.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_001.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_001.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_001.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_001.png" ShowParamsInTooltip="SpecificBomb,StatusAilmentsChance" />
-    <StatusAilment AllAilmentsInflictScoreIncreasePercent="40" />
+    <StatusAilment AilmentEffectiveness="125" />
   </Skill>
   <Skill UID="player_bomb_variant_13" ESkill="player_bomb_variant" Keywords="projectile,attack_skill">
     <HUD UIName="@ui_Variant_Bomb_variant_13" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_001.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_001.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_001.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_001.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_001.png" ShowParamsInTooltip="SpecificBomb,StatusAilmentsChance" />
@@ -116,16 +103,406 @@
   </Skill>
   <Skill UID="player_bomb_variant_15" ESkill="player_bomb_variant" Keywords="projectile,attack_skill">
     <HUD UIName="@ui_Variant_Bomb_variant_15" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_001.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_001.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_001.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_001.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_001.png" ShowParamsInTooltip="SpecificBomb,DamageWeapon" />
-    <DamageWeapon PercentMin="45" PercentMinPerLevel="0" PercentMax="45" PercentMaxPerLevel="0" />
+    <DamageWeapon WeaponMultiplier="1.15" />
   </Skill>
   <Skill UID="player_bomb_variant_16" ESkill="player_bomb_variant" Keywords="projectile,attack_skill">
     <HUD UIName="@ui_Variant_Bomb_variant_16" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_003.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_003.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_003.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_003.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_003.png" ShowParamsInTooltip="SpecificBomb,Projectiles,DamageWeapon" />
     <Projectile ProjectileCount="1" AngleBetweenProjectiles="25" />
-    <DamageWeapon PercentMin="-170" PercentMax="-170" />
+    <DamageWeapon WeaponMultiplier="0.75" />
+  </Skill>
+  <Skill UID="player_bomb_variant_5" ESkill="player_bomb_variant" Keywords="projectile,attack_skill">
+    <HUD UIName="@ui_Variant_Bomb_variant_5" Lore="@ui_Variant_Bomb_variant_5_Lore" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_Alpha.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_Alpha.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_Alpha.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_Alpha.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_Alpha.png" HUDPictureVariant_InnerIcon="../u_resources/spells/Active_Skills/bomb_Rend.png" ShowParamsInTooltip="SpecificBomb,DamageWeapon" VariantBottomPanel="1" HUDPicture="../u_resources/spells/Active_Skills/bomb_Rend.png" />
+    <Damage_Conversion>
+      <Entry From="physical" To="rend" ConversionRate="100" />
+    </Damage_Conversion>
+    <WeaponRequirements Requirements="rogue,bleed" />
+    <DamageWeapon WeaponMultiplier="1.25" />
+    <ParticleList>
+      <Particle Key="Muzzle" Name="U_Projectile.Bullet.Bullet.Bullet_Muzzle_Rend" Direction="0,0,1" />
+      <Particle Key="Explosion" Name="U_Monster.Trapper.Explosion_Bomb_01_Rend_3m" Direction="0,0,1" />
+    </ParticleList>
+    <Projectile Name="player_bomb_proj_rend" />
+    <Specific_Bomb BombImpactSound="Play_Skill_Bomb_Impact_Explosion_Basic_Rend" />
+    <SoundTrigger OnHit="Play_Skill_Bomb_Impact_Hit_Rend" />
+  </Skill>
+  <Skill UID="player_bomb_variant_18" ESkill="player_bomb_variant" Keywords="projectile,attack_skill">
+    <HUD UIName="@ui_Variant_Bomb_variant_18" Lore="@ui_Variant_Bomb_variant_18_Lore" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_Alpha.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_Alpha.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_Alpha.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_Alpha.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_Alpha.png" HUDPictureVariant_InnerIcon="../u_resources/spells/Active_Skills/bomb_Sacred.png" ShowParamsInTooltip="SpecificBomb,DamageWeapon" VariantBottomPanel="1" HUDPicture="../u_resources/spells/Active_Skills/bomb_Sacred.png" />
+    <Damage_Conversion>
+      <Entry From="physical" To="sacred" ConversionRate="100" />
+    </Damage_Conversion>
+    <WeaponRequirements Requirements="rogue,sacred" />
+    <DamageWeapon WeaponMultiplier="1.25" />
+    <ParticleList>
+      <Particle Key="Muzzle" Name="U_Projectile.Bullet.Bullet.Bullet_Muzzle_Sacred" Direction="0,0,1" />
+      <Particle Key="Explosion" Name="U_Monster.Trapper.Explosion_Bomb_01_Sacred_3m" Direction="0,0,1" />
+    </ParticleList>
+    <Projectile Name="player_bomb_proj_sacred" />
+    <Specific_Bomb BombImpactSound="Play_Skill_Bomb_Impact_Explosion_Basic_Sacred" />
+    <SoundTrigger OnHit="Play_Skill_Bomb_Impact_Hit_Sacred" />
+  </Skill>
+  <Skill UID="Player_Bomb_variant_19" ESkill="default_variant">
+    <HUD UIName="@ui_variant_Player_Bomb_variant_19" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_003.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_003.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_003.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_003.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_003.png" ShowParamsInTooltip="DamageWeapon" />
+    <DamageWeapon WeaponMultiplier="1.15" />
+  </Skill>
+  <Skill UID="player_bomb_variant_17" ESkill="player_bomb_variant" Keywords="projectile,attack_skill">
+    <HUD UIName="@ui_Variant_Bomb_variant_17" Lore="@ui_Variant_Bomb_variant_17_Lore" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_Alpha.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_Alpha.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_Alpha.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_Alpha.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_Alpha.png" HUDPictureVariant_InnerIcon="../u_resources/spells/Active_Skills/bomb_lightning.png" ShowParamsInTooltip="SpecificBomb,DamageWeapon" VariantBottomPanel="1" HUDPicture="../u_resources/spells/Active_Skills/bomb_Lightning.png" />
+    <Damage_Conversion>
+      <Entry From="physical" To="lightning" ConversionRate="100" />
+    </Damage_Conversion>
+    <WeaponRequirements Requirements="rogue,lightning" />
+    <DamageWeapon WeaponMultiplier="1.25" />
+    <ParticleList>
+      <Particle Key="Muzzle" Name="U_Projectile.Bullet.Bullet.Bullet_Muzzle_Lightning" Direction="0,0,1" />
+      <Particle Key="Explosion" Name="U_Monster.Trapper.Explosion_Bomb_01_Lightning_3m" Direction="0,0,1" />
+    </ParticleList>
+    <Projectile Name="player_bomb_proj_lightning" />
+    <Specific_Bomb BombImpactSound="Play_Skill_Bomb_Impact_Explosion_Basic_Lightning" />
+    <SoundTrigger OnHit="Play_Skill_Bomb_Impact_Hit_Lightning" />
+  </Skill>
+  <Skill UID="player_bomb_variant_1,player_bomb_variant_3" ESkill="default_variant_combo">
+    <ParticleList>
+      <Particle Key="Explosion" Name="U_Monster.Trapper.Explosion_GlueBomb_01_4m" Direction="0,0,1" />
+    </ParticleList>
+  </Skill>
+  <Skill UID="player_bomb_variant_8,player_bomb_variant_1" ESkill="default_variant_combo">
+    <Specific_Bomb TrapPlayerBomb="trap_player_bomb_big" />
+  </Skill>
+  <Skill UID="player_bomb_variant_8,player_bomb_variant_3" ESkill="default_variant_combo">
+    <Specific_Bomb TrapPlayerBomb="trap_player_bomb_glue" />
+  </Skill>
+  <Skill UID="player_bomb_variant_8,player_bomb_variant_1,player_bomb_variant_3" ESkill="default_variant_combo">
+    <ParticleList>
+      <Particle Key="Explosion" Name="U_Monster.Trapper.Explosion_GlueBomb_01_4m" Direction="0,0,1" />
+    </ParticleList>
+    <Projectile Name="player_bomb_proj_glue" />
+    <Specific_Bomb TrapPlayerBomb="trap_player_bomb_big_glue" />
+  </Skill>
+  <Skill UID="player_bomb_variant_11,player_bomb_variant_3" ESkill="default_variant_combo">
+    <Projectile Name="player_bomb_proj_glue_missile" />
+  </Skill>
+  <Skill UID="player_bomb_variant_11,player_bomb_variant_8" ESkill="default_variant_combo">
+    <Projectile Name="player_bomb_proj_missile_mine" />
+  </Skill>
+  <Skill UID="player_bomb_variant_11,player_bomb_variant_3,player_bomb_variant_8" ESkill="default_variant_combo">
+    <Projectile Name="player_bomb_proj_glue_missile_mine" />
+    <Specific_Bomb TrapPlayerBomb="trap_player_bomb_glue" />
+  </Skill>
+  <Skill UID="player_bomb_variant_11,player_bomb_variant_1,player_bomb_variant_8" ESkill="default_variant_combo">
+    <Projectile Name="player_bomb_proj_missile_mine" />
+    <Specific_Bomb TrapPlayerBomb="trap_player_bomb_big" />
+  </Skill>
+  <Skill UID="player_bomb_variant_11,player_bomb_variant_1,player_bomb_variant_3,player_bomb_variant_8" ESkill="default_variant_combo">
+    <Projectile Name="player_bomb_proj_glue_missile_mine" />
+    <Specific_Bomb TrapPlayerBomb="trap_player_bomb_big_glue" />
+  </Skill>
+  <Skill UID="player_bomb_variant_5,player_bomb_variant_1" ESkill="default_variant_combo">
+    <ParticleList>
+      <Particle Key="Explosion" Name="U_Monster.Trapper.Explosion_Bomb_01_Rend_3m" Direction="0,0,1" Scale="1.33" />
+    </ParticleList>
+    <Projectile Name="player_bomb_proj_rend" />
+  </Skill>
+  <Skill UID="player_bomb_variant_5,player_bomb_variant_3" ESkill="default_variant_combo">
+    <ParticleList>
+      <Particle Key="Explosion" Name="U_Monster.Trapper.Explosion_GlueBomb_01_Rend_3m" Direction="0,0,1" />
+    </ParticleList>
+    <Projectile Name="player_bomb_proj_rend" />
+    <Specific_Bomb BombImpactSound="Play_Skill_Bomb_Impact_Explosion_Glue_Rend" />
+  </Skill>
+  <Skill UID="player_bomb_variant_5,player_bomb_variant_8" ESkill="default_variant_combo">
+    <Specific_Bomb TrapPlayerBomb="trap_player_bomb_rend" />
+    <Projectile Name="player_bomb_proj_rend" />
   </Skill>
   <Skill UID="player_bomb_variant_5,player_bomb_variant_11" ESkill="default_variant_combo">
     <ParticleList>
-      <Particle Key="AdditionalExplosion" Name="U_Projectile.Fire.FireBall_Impact_02_Rend" Direction="0,1,0" />
+      <Particle Key="AdditionalExplosion" Name="U_Projectile.Fire.FireBall_Impact_02_Rend" Direction="0,1,0" Scale="1.25" />
     </ParticleList>
+    <Projectile Name="player_bomb_proj_rend_missile" />
+  </Skill>
+  <Skill UID="player_bomb_variant_5,player_bomb_variant_1,player_bomb_variant_8" ESkill="default_variant_combo">
+    <ParticleList>
+      <Particle Key="Explosion" Name="U_Monster.Trapper.Explosion_Bomb_01_Rend_3m" Direction="0,0,1" Scale="1.33" />
+    </ParticleList>
+    <Projectile Name="player_bomb_proj_rend" />
+    <Specific_Bomb TrapPlayerBomb="trap_player_bomb_big_rend" />
+  </Skill>
+  <Skill UID="player_bomb_variant_5,player_bomb_variant_3,player_bomb_variant_8" ESkill="default_variant_combo">
+    <ParticleList>
+      <Particle Key="Explosion" Name="U_Monster.Trapper.Explosion_GlueBomb_01_Rend_3m" Direction="0,0,1" />
+    </ParticleList>
+    <Projectile Name="player_bomb_proj_rend" />
+    <Specific_Bomb TrapPlayerBomb="trap_player_bomb_glue_rend" />
+  </Skill>
+  <Skill UID="player_bomb_variant_5,player_bomb_variant_1,player_bomb_variant_3,player_bomb_variant_8" ESkill="default_variant_combo">
+    <Projectile Name="player_bomb_proj_rend" />
+    <ParticleList>
+      <Particle Key="Explosion" Name="U_Monster.Trapper.Explosion_GlueBomb_01_Rend_3m" Direction="0,0,1" Scale="1.33" />
+    </ParticleList>
+    <Specific_Bomb TrapPlayerBomb="trap_player_bomb_big_glue_rend" />
+  </Skill>
+  <Skill UID="player_bomb_variant_5,player_bomb_variant_8,player_bomb_variant_11" ESkill="default_variant_combo">
+    <Specific_Bomb TrapPlayerBomb="trap_player_bomb_rend" />
+    <ParticleList>
+      <Particle Key="AdditionalExplosion" Name="U_Projectile.Fire.FireBall_Impact_02_Rend" Direction="0,1,0" Scale="1.25" />
+    </ParticleList>
+    <Projectile Name="player_bomb_proj_rend_missile_mine" />
+  </Skill>
+  <Skill UID="player_bomb_variant_5,player_bomb_variant_3,player_bomb_variant_11" ESkill="default_variant_combo">
+    <ParticleList>
+      <Particle Key="Explosion" Name="U_Monster.Trapper.Explosion_GlueBomb_01_Rend_3m" Direction="0,0,1" />
+      <Particle Key="AdditionalExplosion" Name="U_Projectile.Fire.FireBall_Impact_02_Rend" Direction="0,1,0" Scale="1.25" />
+    </ParticleList>
+    <Projectile Name="player_bomb_proj_rend_missile" />
+  </Skill>
+  <Skill UID="player_bomb_variant_5,player_bomb_variant_3,player_bomb_variant_1" ESkill="default_variant_combo">
+    <ParticleList>
+      <Particle Key="Explosion" Name="U_Monster.Trapper.Explosion_GlueBomb_01_Rend_3m" Direction="0,0,1" Scale="1.33" />
+      <Particle Key="AdditionalExplosion" Name="U_Projectile.Fire.FireBall_Impact_02_Rend" Direction="0,1,0" Scale="1.25" />
+    </ParticleList>
+    <Projectile Name="player_bomb_proj_rend" />
+  </Skill>
+  <Skill UID="player_bomb_variant_5,player_bomb_variant_11,player_bomb_variant_1" ESkill="default_variant_combo">
+    <Projectile Name="player_bomb_proj_rend_missile" />
+    <ParticleList>
+      <Particle Key="Explosion" Name="U_Monster.Trapper.Explosion_Bomb_01_Rend_3m" Direction="0,0,1" Scale="1.33" />
+      <Particle Key="AdditionalExplosion" Name="U_Projectile.Fire.FireBall_Impact_02_Rend" Direction="0,1,0" Scale="1.25" />
+    </ParticleList>
+  </Skill>
+  <Skill UID="player_bomb_variant_5,player_bomb_variant_8,player_bomb_variant_11,player_bomb_variant_3" ESkill="default_variant_combo">
+    <Specific_Bomb TrapPlayerBomb="trap_player_bomb_glue_rend" />
+    <Projectile Name="player_bomb_proj_rend_missile_mine" />
+    <ParticleList>
+      <Particle Key="AdditionalExplosion" Name="U_Projectile.Fire.FireBall_Impact_02_Rend" Direction="0,1,0" Scale="1.25" />
+    </ParticleList>
+  </Skill>
+  <Skill UID="player_bomb_variant_5,player_bomb_variant_8,player_bomb_variant_11,player_bomb_variant_1" ESkill="default_variant_combo">
+    <Specific_Bomb TrapPlayerBomb="trap_player_bomb_big_rend" />
+    <ParticleList>
+      <Particle Key="Explosion" Name="U_Monster.Trapper.Explosion_Bomb_01_Rend_3m" Direction="0,0,1" Scale="1.33" />
+      <Particle Key="AdditionalExplosion" Name="U_Projectile.Fire.FireBall_Impact_02_Rend" Direction="0,1,0" Scale="1.25" />
+    </ParticleList>
+    <Projectile Name="player_bomb_proj_rend_missile_mine" />
+  </Skill>
+  <Skill UID="player_bomb_variant_5,player_bomb_variant_3,player_bomb_variant_11,player_bomb_variant_1" ESkill="default_variant_combo">
+    <ParticleList>
+      <Particle Key="Explosion" Name="U_Monster.Trapper.Explosion_GlueBomb_01_Rend_3m" Direction="0,0,1" Scale="1.33" />
+      <Particle Key="AdditionalExplosion" Name="U_Projectile.Fire.FireBall_Impact_02_Rend" Direction="0,1,0" Scale="1.25" />
+    </ParticleList>
+    <Projectile Name="player_bomb_proj_rend_missile" />
+  </Skill>
+  <Skill UID="player_bomb_variant_5,player_bomb_variant_1,player_bomb_variant_3,player_bomb_variant_8,player_bomb_variant_11" ESkill="default_variant_combo">
+    <Specific_Bomb TrapPlayerBomb="trap_player_bomb_big_glue_rend" />
+    <ParticleList>
+      <Particle Key="Explosion" Name="U_Monster.Trapper.Explosion_GlueBomb_01_Rend_3m" Direction="0,0,1" Scale="1.33" />
+      <Particle Key="AdditionalExplosion" Name="U_Projectile.Fire.FireBall_Impact_02_Rend" Direction="0,1,0" Scale="1.25" />
+    </ParticleList>
+    <Projectile Name="player_bomb_proj_rend_missile_mine" />
+  </Skill>
+  <Skill UID="player_bomb_variant_18,player_bomb_variant_1" ESkill="default_variant_combo">
+    <ParticleList>
+      <Particle Key="Explosion" Name="U_Monster.Trapper.Explosion_Bomb_01_Sacred_3m" Direction="0,0,1" Scale="1.33" />
+    </ParticleList>
+    <Projectile Name="player_bomb_proj_sacred" />
+  </Skill>
+  <Skill UID="player_bomb_variant_18,player_bomb_variant_3" ESkill="default_variant_combo">
+    <ParticleList>
+      <Particle Key="Explosion" Name="U_Monster.Trapper.Explosion_GlueBomb_01_Sacred_3m" Direction="0,0,1" />
+    </ParticleList>
+    <Projectile Name="player_bomb_proj_sacred" />
+    <Specific_Bomb BombImpactSound="Play_Skill_Bomb_Impact_Explosion_Glue_Sacred" />
+  </Skill>
+  <Skill UID="player_bomb_variant_18,player_bomb_variant_8" ESkill="default_variant_combo">
+    <Specific_Bomb TrapPlayerBomb="trap_player_bomb_sacred" />
+    <Projectile Name="player_bomb_proj_sacred" />
+  </Skill>
+  <Skill UID="player_bomb_variant_18,player_bomb_variant_11" ESkill="default_variant_combo">
+    <ParticleList>
+      <Particle Key="AdditionalExplosion" Name="U_Projectile.Sacred.SpreadShot_Explosion_01" Direction="0,1,0" Scale="1.25" />
+    </ParticleList>
+    <Projectile Name="player_bomb_proj_sacred_missile" />
+  </Skill>
+  <Skill UID="player_bomb_variant_18,player_bomb_variant_1,player_bomb_variant_8" ESkill="default_variant_combo">
+    <ParticleList>
+      <Particle Key="Explosion" Name="U_Monster.Trapper.Explosion_Bomb_01_Sacred_3m" Direction="0,0,1" Scale="1.33" />
+    </ParticleList>
+    <Projectile Name="player_bomb_proj_sacred" />
+    <Specific_Bomb TrapPlayerBomb="trap_player_bomb_big_sacred" />
+  </Skill>
+  <Skill UID="player_bomb_variant_18,player_bomb_variant_3,player_bomb_variant_8" ESkill="default_variant_combo">
+    <ParticleList>
+      <Particle Key="Explosion" Name="U_Monster.Trapper.Explosion_GlueBomb_01_Sacred_3m" Direction="0,0,1" />
+    </ParticleList>
+    <Projectile Name="player_bomb_proj_sacred" />
+    <Specific_Bomb TrapPlayerBomb="trap_player_bomb_glue_sacred" />
+  </Skill>
+  <Skill UID="player_bomb_variant_18,player_bomb_variant_1,player_bomb_variant_3,player_bomb_variant_8" ESkill="default_variant_combo">
+    <ParticleList>
+      <Particle Key="Explosion" Name="U_Monster.Trapper.Explosion_GlueBomb_01_Sacred_3m" Direction="0,0,1" Scale="1.33" />
+    </ParticleList>
+    <Projectile Name="player_bomb_proj_sacred" />
+    <Specific_Bomb TrapPlayerBomb="trap_player_bomb_big_glue_sacred" />
+  </Skill>
+  <Skill UID="player_bomb_variant_18,player_bomb_variant_8,player_bomb_variant_11" ESkill="default_variant_combo">
+    <Specific_Bomb TrapPlayerBomb="trap_player_bomb_sacred" />
+    <ParticleList>
+      <Particle Key="AdditionalExplosion" Name="U_Projectile.Sacred.SpreadShot_Explosion_01" Direction="0,1,0" Scale="1.25" />
+    </ParticleList>
+    <Projectile Name="player_bomb_proj_sacred_missile_mine" />
+  </Skill>
+  <Skill UID="player_bomb_variant_18,player_bomb_variant_3,player_bomb_variant_11" ESkill="default_variant_combo">
+    <Specific_Bomb TrapPlayerBomb="trap_player_bomb_glue_sacred" />
+    <ParticleList>
+      <Particle Key="Explosion" Name="U_Monster.Trapper.Explosion_GlueBomb_01_Sacred_3m" Direction="0,0,1" />
+      <Particle Key="AdditionalExplosion" Name="U_Projectile.Sacred.SpreadShot_Explosion_01" Direction="0,1,0" Scale="1.25" />
+    </ParticleList>
+    <Projectile Name="player_bomb_proj_sacred_missile" />
+  </Skill>
+  <Skill UID="player_bomb_variant_18,player_bomb_variant_3,player_bomb_variant_1" ESkill="default_variant_combo">
+    <Specific_Bomb TrapPlayerBomb="trap_player_bomb_big_glue_sacred" />
+    <ParticleList>
+      <Particle Key="Explosion" Name="U_Monster.Trapper.Explosion_GlueBomb_01_Sacred_3m" Direction="0,0,1" Scale="1.33" />
+      <Particle Key="AdditionalExplosion" Name="U_Projectile.Sacred.SpreadShot_Explosion_01" Direction="0,1,0" Scale="1.25" />
+    </ParticleList>
+    <Projectile Name="player_bomb_proj_sacred" />
+  </Skill>
+  <Skill UID="player_bomb_variant_18,player_bomb_variant_11,player_bomb_variant_1" ESkill="default_variant_combo">
+    <ParticleList>
+      <Particle Key="Explosion" Name="U_Monster.Trapper.Explosion_GlueBomb_01_Sacred_3m" Direction="0,0,1" Scale="1.33" />
+      <Particle Key="AdditionalExplosion" Name="U_Projectile.Fire.FireBall_Impact_02_Rend" Direction="0,1,0" Scale="1.25" />
+    </ParticleList>
+    <Projectile Name="player_bomb_proj_sacred_missile" />
+  </Skill>
+  <Skill UID="player_bomb_variant_18,player_bomb_variant_8,player_bomb_variant_11,player_bomb_variant_3" ESkill="default_variant_combo">
+    <Specific_Bomb TrapPlayerBomb="trap_player_bomb_glue_sacred" />
+    <Projectile Name="player_bomb_proj_sacred_missile_mine" />
+    <ParticleList>
+      <Particle Key="AdditionalExplosion" Name="U_Projectile.Sacred.SpreadShot_Explosion_01" Direction="0,1,0" Scale="1.25" />
+    </ParticleList>
+  </Skill>
+  <Skill UID="player_bomb_variant_18,player_bomb_variant_8,player_bomb_variant_11,player_bomb_variant_1" ESkill="default_variant_combo">
+    <Specific_Bomb TrapPlayerBomb="trap_player_bomb_big_sacred" />
+    <ParticleList>
+      <Particle Key="Explosion" Name="U_Monster.Trapper.Explosion_Bomb_01_Sacred_3m" Direction="0,0,1" Scale="1.33" />
+      <Particle Key="AdditionalExplosion" Name="U_Projectile.Sacred.SpreadShot_Explosion_01" Direction="0,1,0" Scale="1.25" />
+    </ParticleList>
+    <Projectile Name="player_bomb_proj_sacred_missile_mine" />
+  </Skill>
+  <Skill UID="player_bomb_variant_18,player_bomb_variant_3,player_bomb_variant_11,player_bomb_variant_1" ESkill="default_variant_combo">
+    <ParticleList>
+      <Particle Key="Explosion" Name="U_Monster.Trapper.Explosion_GlueBomb_01_Sacred_3m" Direction="0,0,1" Scale="1.33" />
+      <Particle Key="AdditionalExplosion" Name="U_Projectile.Sacred.SpreadShot_Explosion_01" Direction="0,1,0" Scale="1.25" />
+    </ParticleList>
+    <Projectile Name="player_bomb_proj_sacred_missile" />
+  </Skill>
+  <Skill UID="player_bomb_variant_18,player_bomb_variant_1,player_bomb_variant_3,player_bomb_variant_8,player_bomb_variant_11" ESkill="default_variant_combo">
+    <Specific_Bomb TrapPlayerBomb="trap_player_bomb_big_glue_sacred" />
+    <ParticleList>
+      <Particle Key="Explosion" Name="U_Monster.Trapper.Explosion_GlueBomb_01_Sacred_3m" Direction="0,0,1" Scale="1.33" />
+      <Particle Key="AdditionalExplosion" Name="U_Projectile.Sacred.SpreadShot_Explosion_01" Direction="0,1,0" Scale="1.25" />
+    </ParticleList>
+    <Projectile Name="player_bomb_proj_sacred_missile_mine" />
+  </Skill>
+  <Skill UID="player_bomb_variant_17,player_bomb_variant_1" ESkill="default_variant_combo">
+    <ParticleList>
+      <Particle Key="Explosion" Name="U_Monster.Trapper.Explosion_Bomb_01_Lightning_3m" Direction="0,0,1" Scale="1.33" />
+    </ParticleList>
+    <Projectile Name="player_bomb_proj_lightning" />
+  </Skill>
+  <Skill UID="player_bomb_variant_17,player_bomb_variant_3" ESkill="default_variant_combo">
+    <ParticleList>
+      <Particle Key="Explosion" Name="U_Monster.Trapper.Explosion_GlueBomb_01_lightning_3m" Direction="0,0,1" />
+    </ParticleList>
+    <Projectile Name="player_bomb_proj_lightning" />
+    <Specific_Bomb BombImpactSound="Play_Skill_Bomb_Impact_Explosion_Glue_lightning" />
+  </Skill>
+  <Skill UID="player_bomb_variant_17,player_bomb_variant_8" ESkill="default_variant_combo">
+    <Specific_Bomb TrapPlayerBomb="trap_player_bomb_lightning" />
+    <Projectile Name="player_bomb_proj_lightning" />
+  </Skill>
+  <Skill UID="player_bomb_variant_17,player_bomb_variant_11" ESkill="default_variant_combo">
+    <ParticleList>
+      <Particle Key="AdditionalExplosion" Name="U_Projectile.lightning.SpreadShot_Explosion_01" Direction="0,1,0" Scale="1.25" />
+    </ParticleList>
+    <Projectile Name="player_bomb_proj_lightning_missile" />
+  </Skill>
+  <Skill UID="player_bomb_variant_17,player_bomb_variant_1,player_bomb_variant_8" ESkill="default_variant_combo">
+    <ParticleList>
+      <Particle Key="Explosion" Name="U_Monster.Trapper.Explosion_Bomb_01_lightning_3m" Direction="0,0,1" Scale="1.33" />
+    </ParticleList>
+    <Projectile Name="player_bomb_proj_lightning" />
+    <Specific_Bomb TrapPlayerBomb="trap_player_bomb_big_lightning" />
+  </Skill>
+  <Skill UID="player_bomb_variant_17,player_bomb_variant_3,player_bomb_variant_8" ESkill="default_variant_combo">
+    <ParticleList>
+      <Particle Key="Explosion" Name="U_Monster.Trapper.Explosion_GlueBomb_01_lightning_3m" Direction="0,0,1" />
+    </ParticleList>
+    <Projectile Name="player_bomb_proj_lightning" />
+    <Specific_Bomb TrapPlayerBomb="trap_player_bomb_glue_lightning" />
+  </Skill>
+  <Skill UID="player_bomb_variant_17,player_bomb_variant_1,player_bomb_variant_3,player_bomb_variant_8" ESkill="default_variant_combo">
+    <ParticleList>
+      <Particle Key="Explosion" Name="U_Monster.Trapper.Explosion_GlueBomb_01_lightning_3m" Direction="0,0,1" Scale="1.33" />
+    </ParticleList>
+    <Projectile Name="player_bomb_proj_lightning" />
+    <Specific_Bomb TrapPlayerBomb="trap_player_bomb_big_glue_lightning" />
+  </Skill>
+  <Skill UID="player_bomb_variant_17,player_bomb_variant_8,player_bomb_variant_11" ESkill="default_variant_combo">
+    <Specific_Bomb TrapPlayerBomb="trap_player_bomb_lightning" />
+    <ParticleList>
+      <Particle Key="AdditionalExplosion" Name="U_Projectile.lightning.SpreadShot_Explosion_01" Direction="0,1,0" Scale="1.25" />
+    </ParticleList>
+    <Projectile Name="player_bomb_proj_lightning_missile_mine" />
+  </Skill>
+  <Skill UID="player_bomb_variant_17,player_bomb_variant_3,player_bomb_variant_11" ESkill="default_variant_combo">
+    <Specific_Bomb TrapPlayerBomb="trap_player_bomb_glue_lightning" />
+    <ParticleList>
+      <Particle Key="Explosion" Name="U_Monster.Trapper.Explosion_GlueBomb_01_lightning_3m" Direction="0,0,1" />
+      <Particle Key="AdditionalExplosion" Name="U_Projectile.lightning.SpreadShot_Explosion_01" Direction="0,1,0" Scale="1.25" />
+    </ParticleList>
+    <Projectile Name="player_bomb_proj_lightning_missile" />
+  </Skill>
+  <Skill UID="player_bomb_variant_17,player_bomb_variant_3,player_bomb_variant_1" ESkill="default_variant_combo">
+    <Specific_Bomb TrapPlayerBomb="trap_player_bomb_big_glue_lightning" />
+    <ParticleList>
+      <Particle Key="Explosion" Name="U_Monster.Trapper.Explosion_GlueBomb_01_lightning_3m" Direction="0,0,1" Scale="1.33" />
+      <Particle Key="AdditionalExplosion" Name="U_Projectile.lightning.SpreadShot_Explosion_01" Direction="0,1,0" Scale="1.25" />
+    </ParticleList>
+    <Projectile Name="player_bomb_proj_lightning" />
+  </Skill>
+  <Skill UID="player_bomb_variant_17,player_bomb_variant_11,player_bomb_variant_1" ESkill="default_variant_combo">
+    <ParticleList>
+      <Particle Key="Explosion" Name="U_Monster.Trapper.Explosion_GlueBomb_01_lightning_3m" Direction="0,0,1" Scale="1.33" />
+      <Particle Key="AdditionalExplosion" Name="U_Projectile.Fire.FireBall_Impact_02_Rend" Direction="0,1,0" Scale="1.25" />
+    </ParticleList>
+    <Projectile Name="player_bomb_proj_lightning_missile" />
+  </Skill>
+  <Skill UID="player_bomb_variant_17,player_bomb_variant_8,player_bomb_variant_11,player_bomb_variant_3" ESkill="default_variant_combo">
+    <Specific_Bomb TrapPlayerBomb="trap_player_bomb_glue_lightning" />
+    <Projectile Name="player_bomb_proj_lightning_missile_mine" />
+    <ParticleList>
+      <Particle Key="AdditionalExplosion" Name="U_Projectile.lightning.SpreadShot_Explosion_01" Direction="0,1,0" Scale="1.25" />
+    </ParticleList>
+  </Skill>
+  <Skill UID="player_bomb_variant_17,player_bomb_variant_8,player_bomb_variant_11,player_bomb_variant_1" ESkill="default_variant_combo">
+    <Specific_Bomb TrapPlayerBomb="trap_player_bomb_big_lightning" />
+    <ParticleList>
+      <Particle Key="Explosion" Name="U_Monster.Trapper.Explosion_Bomb_01_lightning_3m" Direction="0,0,1" Scale="1.33" />
+      <Particle Key="AdditionalExplosion" Name="U_Projectile.lightning.SpreadShot_Explosion_01" Direction="0,1,0" Scale="1.25" />
+    </ParticleList>
+    <Projectile Name="player_bomb_proj_lightning_missile_mine" />
+  </Skill>
+  <Skill UID="player_bomb_variant_17,player_bomb_variant_3,player_bomb_variant_11,player_bomb_variant_1" ESkill="default_variant_combo">
+    <ParticleList>
+      <Particle Key="Explosion" Name="U_Monster.Trapper.Explosion_GlueBomb_01_lightning_3m" Direction="0,0,1" Scale="1.33" />
+      <Particle Key="AdditionalExplosion" Name="U_Projectile.lightning.SpreadShot_Explosion_01" Direction="0,1,0" Scale="1.25" />
+    </ParticleList>
+    <Projectile Name="player_bomb_proj_lightning_missile" />
+  </Skill>
+  <Skill UID="player_bomb_variant_17,player_bomb_variant_1,player_bomb_variant_3,player_bomb_variant_8,player_bomb_variant_11" ESkill="default_variant_combo">
+    <Specific_Bomb TrapPlayerBomb="trap_player_bomb_big_glue_lightning" />
+    <ParticleList>
+      <Particle Key="Explosion" Name="U_Monster.Trapper.Explosion_GlueBomb_01_lightning_3m" Direction="0,0,1" Scale="1.33" />
+      <Particle Key="AdditionalExplosion" Name="U_Projectile.lightning.SpreadShot_Explosion_01" Direction="0,1,0" Scale="1.25" />
+    </ParticleList>
+    <Projectile Name="player_bomb_proj_lightning_missile_mine" />
   </Skill>
 </MetaData>

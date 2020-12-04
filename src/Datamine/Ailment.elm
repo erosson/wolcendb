@@ -18,7 +18,7 @@ type alias Ailment =
 
 type alias AilmentParam =
     { level : Int
-    , values : List ( String, Int )
+    , values : List ( String, Float )
     }
 
 
@@ -52,7 +52,7 @@ ailmentDecoder file name =
         |> P.required "Params"
             (D.succeed AilmentParam
                 |> P.requiredAt [ "$", "Level" ] Util.intString
-                |> P.requiredAt [ "$" ] (D.keyValuePairs Util.intString |> D.map (List.filter (\( k, v ) -> k /= "Level")))
+                |> P.requiredAt [ "$" ] (D.keyValuePairs Util.floatString |> D.map (List.filter (\( k, v ) -> k /= "Level")))
                 |> D.list
             )
         |> D.at [ file, "MetaData" ]

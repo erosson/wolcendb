@@ -93,7 +93,7 @@ view dm model =
                                                     :: (p.values
                                                             |> List.map
                                                                 (\( _, v ) ->
-                                                                    td [] [ text <| String.fromInt v ]
+                                                                    td [] [ text <| String.fromFloat v ]
                                                                 )
                                                        )
                                                 )

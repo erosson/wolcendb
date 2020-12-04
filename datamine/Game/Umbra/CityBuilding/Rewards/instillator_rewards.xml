@@ -1,0 +1,37 @@
+<MetaData>
+  <Reward Name="gold_to_pa_transfer_1_reward" UITitle="@ui_gold_to_pa_transfer_reward" UILore="@ui_gold_to_pa_transfer_reward_lore">
+    <CustomMessages>
+      <Message UIDesc="@ui_gold_to_pa_transfer_reward_summary" />
+    </CustomMessages>
+    <Currency Gold_Min="0" Gold_Max="0" Gold_PerPlayerLevel="0" PA_Min="2000" PA_Max="2000" PA_PerPlayerLevel="0" />
+    <ContextualSoundTrigger ToPlay="Endgame_PAToGold_ConversionProjectCompleted" ToResume="EndgameIdle" />
+  </Reward>
+  <Reward Name="gold_to_pa_transfer_2_reward" UITitle="@ui_gold_to_pa_transfer_reward" UILore="@ui_gold_to_pa_transfer_reward_lore">
+    <CustomMessages>
+      <Message UIDesc="@ui_gold_to_pa_transfer_reward_summary" />
+    </CustomMessages>
+    <Currency Gold_Min="0" Gold_Max="0" Gold_PerPlayerLevel="0" PA_Min="10000" PA_Max="10000" PA_PerPlayerLevel="0" />
+    <ContextualSoundTrigger ToPlay="Endgame_PAToGold_ConversionProjectCompleted" ToResume="EndgameIdle" />
+  </Reward>
+  <Reward Name="gold_to_pa_transfer_3_reward" UITitle="@ui_gold_to_pa_transfer_reward" UILore="@ui_gold_to_pa_transfer_reward_lore">
+    <CustomMessages>
+      <Message UIDesc="@ui_gold_to_pa_transfer_reward_summary" />
+    </CustomMessages>
+    <Currency Gold_Min="0" Gold_Max="0" Gold_PerPlayerLevel="0" PA_Min="20000" PA_Max="20000" PA_PerPlayerLevel="0" />
+    <ContextualSoundTrigger ToPlay="Endgame_PAToGold_ConversionProjectCompleted" ToResume="EndgameIdle" />
+  </Reward>
+  <Reward Name="gold_to_pa_transfer_4_reward" UITitle="@ui_gold_to_pa_transfer_reward" UILore="@ui_gold_to_pa_transfer_reward_lore">
+    <CustomMessages>
+      <Message UIDesc="@ui_gold_to_pa_transfer_reward_summary" />
+    </CustomMessages>
+    <Currency Gold_Min="0" Gold_Max="0" Gold_PerPlayerLevel="0" PA_Min="100000" PA_Max="100000" PA_PerPlayerLevel="0" />
+    <ContextualSoundTrigger ToPlay="Endgame_PAToGold_ConversionProjectCompleted" ToResume="EndgameIdle" />
+  </Reward>
+  <Reward Name="gold_to_pa_transfer_5_reward" UITitle="@ui_gold_to_pa_transfer_reward" UILore="@ui_gold_to_pa_transfer_reward_lore">
+    <CustomMessages>
+      <Message UIDesc="@ui_gold_to_pa_transfer_reward_summary" />
+    </CustomMessages>
+    <Currency Gold_Min="0" Gold_Max="0" Gold_PerPlayerLevel="0" PA_Min="200000" PA_Max="200000" PA_PerPlayerLevel="0" />
+    <ContextualSoundTrigger ToPlay="Endgame_PAToGold_ConversionProjectCompleted" ToResume="EndgameIdle" />
+  </Reward>
+</MetaData>

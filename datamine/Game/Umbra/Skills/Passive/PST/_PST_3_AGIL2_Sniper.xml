@@ -5,13 +5,13 @@
         <Semantics DamagePercentInt="10" />
       </EIM>
       <EIM Name="damage_percent_projectiles" HUDDesc="@ui_eim_damage_percent_projectiles" Permanent="1">
-        <Semantics DamagePercentInt="8" />
+        <Semantics DamagePercentInt="5" />
       </EIM>
       <EIM Name="dodgechance_score_percent" HUDDesc="@ui_eim_dodgechance_score_percent" Permanent="1">
-        <Semantics CharacteristicScorePercentInt="9" />
+        <Semantics CharacteristicScorePercentInt="5" />
       </EIM>
       <EIM Name="forceshield_percent" HUDDesc="@ui_eim_forceshield_percent" Permanent="1">
-        <Semantics ArmorPercentFloat="8" />
+        <Semantics ArmorPercentFloat="5" />
       </EIM>
     </MagicEffects>
   </Spell>
@@ -32,10 +32,10 @@
   <Spell Name="SNIP_4" UIName="@ui_SNIP_4_name" HUDLoreDesc="" GameplayDesc="">
     <MagicEffects>
       <EIM Name="dodgechance_score_percent" HUDDesc="@ui_eim_dodgechance_score_percent" Permanent="1">
-        <Semantics CharacteristicScorePercentInt="12" />
+        <Semantics CharacteristicScorePercentInt="15" />
       </EIM>
       <EIM Name="movespeed" HUDDesc="@ui_eim_movespeed" Permanent="1">
-        <Semantics SpeedPercentInt="-5" />
+        <Semantics SpeedPercentInt="-3" />
       </EIM>
     </MagicEffects>
   </Spell>
@@ -45,31 +45,31 @@
         <Semantics DamagePercentInt="10" />
       </EIM>
       <EIM Name="criticalchance_score_percent" HUDDesc="@ui_eim_criticalchance_score_percent" Permanent="1">
-        <Semantics CharacteristicScorePercentInt="9" />
+        <Semantics CharacteristicScorePercentInt="5" />
       </EIM>
     </MagicEffects>
   </Spell>
   <Spell Name="SNIP_6" UIName="@ui_SNIP_6_name" HUDLoreDesc="" GameplayDesc="">
     <MagicEffects>
       <EIM Name="criticaldamage_pts" HUDDesc="@ui_eim_criticaldamage_pts" Permanent="1">
-        <Semantics DamagePercentInt="10" />
+        <Semantics DamagePercentInt="7" />
       </EIM>
     </MagicEffects>
   </Spell>
   <Spell Name="SNIP_7" UIName="@ui_SNIP_7_name" HUDLoreDesc="" GameplayDesc="">
     <MagicEffects>
       <EIM Name="forceshield_percent" HUDDesc="@ui_eim_forceshield_percent" Permanent="1">
-        <Semantics ArmorPercentFloat="10" />
+        <Semantics ArmorPercentFloat="5" />
       </EIM>
       <EIM Name="forceshield_regeneration_percent" HUDDesc="@ui_eim_forceshield_regeneration_percent" Permanent="1">
-        <Semantics DefenseRegenerationPercentFloat="12" />
+        <Semantics DefenseRegenerationPercentFloat="3" />
       </EIM>
     </MagicEffects>
   </Spell>
   <Spell Name="SNIP_8" UIName="@ui_SNIP_8_name" HUDLoreDesc="@ui_SNIP_8_loredesc" GameplayDesc="@ui_SNIP_8_gameplaydesc">
     <MagicEffects>
       <EIM Name="remaining_pierce_as_damage" HUDDesc="@ui_eim_remaining_pierce_as_damage" Permanent="1">
-        <Semantics DamagePercentFloat="30" />
+        <Semantics DamagePercentFloat="20" />
       </EIM>
     </MagicEffects>
   </Spell>
@@ -83,64 +83,64 @@
   <Spell Name="SNIP_10" UIName="@ui_SNIP_10_name" HUDLoreDesc="" GameplayDesc="">
     <MagicEffects>
       <EIM Name="damage_percent_projectiles" HUDDesc="@ui_eim_damage_percent_projectiles" Permanent="1">
-        <Semantics DamagePercentInt="10" />
+        <Semantics DamagePercentInt="15" />
       </EIM>
-      <EIM Name="attackspeed_score_percent" HUDDesc="@ui_eim_attackspeed_score_percent" Permanent="1">
-        <Semantics CharacteristicScorePercentInt="-10" />
+      <EIM Name="attackspeed_final_percent" HUDDesc="@ui_eim_attackspeed_final_percent" Permanent="1">
+        <Semantics CharacteristicFinalPercentFloat="-5" />
       </EIM>
     </MagicEffects>
   </Spell>
   <Spell Name="SNIP_11" UIName="@ui_SNIP_11_name" HUDLoreDesc="" GameplayDesc="">
     <MagicEffects>
       <EIM Name="damage_percent_projectiles" HUDDesc="@ui_eim_damage_percent_projectiles" Permanent="1">
-        <Semantics DamagePercentInt="10" />
+        <Semantics DamagePercentInt="15" />
       </EIM>
-      <EIM Name="attackspeed_score_percent" HUDDesc="@ui_eim_attackspeed_score_percent" Permanent="1">
-        <Semantics CharacteristicScorePercentInt="-10" />
+      <EIM Name="attackspeed_final_percent" HUDDesc="@ui_eim_attackspeed_final_percent" Permanent="1">
+        <Semantics CharacteristicFinalPercentFloat="-5" />
       </EIM>
     </MagicEffects>
   </Spell>
   <Spell Name="SNIP_12" UIName="@ui_SNIP_12_name" HUDLoreDesc="" GameplayDesc="">
     <MagicEffects>
       <EIM Name="dodgechance_score_percent" HUDDesc="@ui_eim_dodgechance_score_percent" Permanent="1">
-        <Semantics CharacteristicScorePercentInt="12" />
+        <Semantics CharacteristicScorePercentInt="15" />
       </EIM>
       <EIM Name="movespeed" HUDDesc="@ui_eim_movespeed" Permanent="1">
-        <Semantics SpeedPercentInt="-5" />
+        <Semantics SpeedPercentInt="-3" />
       </EIM>
     </MagicEffects>
   </Spell>
   <Spell Name="SNIP_13" UIName="@ui_SNIP_13_name" HUDLoreDesc="" GameplayDesc="">
     <MagicEffects>
       <EIM Name="damage_percent_projectiles" HUDDesc="@ui_eim_damage_percent_projectiles" Permanent="1">
-        <Semantics DamagePercentInt="10" />
+        <Semantics DamagePercentInt="5" />
       </EIM>
       <EIM Name="criticalchance_projectiles_score_percent" HUDDesc="@ui_eim_criticalchance_projectiles_score_percent" Permanent="1">
-        <Semantics CharacteristicScorePercentInt="9" />
+        <Semantics CharacteristicScorePercentInt="5" />
       </EIM>
     </MagicEffects>
   </Spell>
   <Spell Name="SNIP_14" UIName="@ui_SNIP_14_name" HUDLoreDesc="" GameplayDesc="">
     <MagicEffects>
       <EIM Name="forceshield_percent" HUDDesc="@ui_eim_forceshield_percent" Permanent="1">
-        <Semantics ArmorPercentFloat="15" />
+        <Semantics ArmorPercentFloat="8" />
       </EIM>
     </MagicEffects>
   </Spell>
   <Spell Name="SNIP_15" UIName="@ui_SNIP_15_name" HUDLoreDesc="" GameplayDesc="">
     <MagicEffects>
       <EIM Name="criticaldamage_pts" HUDDesc="@ui_eim_criticaldamage_pts" Permanent="1">
-        <Semantics DamagePercentInt="10" />
+        <Semantics DamagePercentInt="7" />
       </EIM>
     </MagicEffects>
   </Spell>
   <Spell Name="SNIP_16" UIName="@ui_SNIP_16_name" HUDLoreDesc="" GameplayDesc="">
     <MagicEffects>
       <EIM Name="forceshield_percent" HUDDesc="@ui_eim_forceshield_percent" Permanent="1">
-        <Semantics ArmorPercentFloat="10" />
+        <Semantics ArmorPercentFloat="5" />
       </EIM>
       <EIM Name="forceshield_regeneration_percent" HUDDesc="@ui_eim_forceshield_regeneration_percent" Permanent="1">
-        <Semantics DefenseRegenerationPercentFloat="12" />
+        <Semantics DefenseRegenerationPercentFloat="3" />
       </EIM>
     </MagicEffects>
   </Spell>
@@ -150,7 +150,7 @@
         <Semantics StackCountInt="2" RadiusFloat="10" />
       </EIM>
       <EIM Name="frost_damage_bonus_on_chained_projectiles" HUDDesc="@ui_eim_frost_damage_bonus_on_chained_projectiles" Permanent="1">
-        <Semantics DamagePercentFloat="15" />
+        <Semantics DamagePercentFloat="30" />
       </EIM>
     </MagicEffects>
   </Spell>
@@ -167,7 +167,7 @@
         <Semantics PSTStackTickrateFloat="2" PSTStackMaxCountInt="10" />
       </EIM>
       <EIM Name="stacks_hunter_damage" HUDDesc="@ui_eim_stacks_hunter_damage" Permanent="1">
-        <Semantics DamagePercentFloat="6" />
+        <Semantics DamagePercentFloat="5" />
       </EIM>
     </MagicEffects>
   </Spell>
@@ -175,6 +175,34 @@
     <MagicEffects>
       <EIM Name="stacks_hunter_uses_mechanic" HUDDesc="@ui_eim_stacks_hunter_tickrate" Permanent="1">
         <Semantics PSTStackTickrateFloat="-0.5" />
+      </EIM>
+    </MagicEffects>
+  </Spell>
+  <Spell Name="SNIP_21" UIName="@ui_SNIP_21_name" HUDLoreDesc="" GameplayDesc="">
+    <MagicEffects>
+      <EIM Name="frost_damage_percent" HUDDesc="@ui_eim_frost_damage_percent" Permanent="1">
+        <Semantics DamagePercentInt="15" />
+      </EIM>
+    </MagicEffects>
+  </Spell>
+  <Spell Name="SNIP_22" UIName="@ui_SNIP_22_name" HUDLoreDesc="" GameplayDesc="">
+    <MagicEffects>
+      <EIM Name="frost_damage_percent" HUDDesc="@ui_eim_frost_damage_percent" Permanent="1">
+        <Semantics DamagePercentInt="15" />
+      </EIM>
+    </MagicEffects>
+  </Spell>
+  <Spell Name="SNIP_23" UIName="@ui_SNIP_23_name" HUDLoreDesc="" GameplayDesc="">
+    <MagicEffects>
+      <EIM Name="criticalchance_projectiles_score_percent" HUDDesc="@ui_eim_criticalchance_projectiles_score_percent" Permanent="1">
+        <Semantics CharacteristicScorePercentInt="10" />
+      </EIM>
+    </MagicEffects>
+  </Spell>
+  <Spell Name="SNIP_24" UIName="@ui_SNIP_24_name" HUDLoreDesc="" GameplayDesc="">
+    <MagicEffects>
+      <EIM Name="criticalchance_projectiles_score_percent" HUDDesc="@ui_eim_criticalchance_projectiles_score_percent" Permanent="1">
+        <Semantics CharacteristicScorePercentInt="10" />
       </EIM>
     </MagicEffects>
   </Spell>

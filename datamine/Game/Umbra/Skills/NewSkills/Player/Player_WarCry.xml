@@ -30,18 +30,19 @@
     </Specific_WarCry>
     <SoundTrigger OnAnimCast="PLAY_Skill_Warcry" />
   </Skill>
+  <Skill UID="player_warcry_variant_default_damage_type" ESkill="default_variant">
+    <HUD UIName="@ui_AST_WarCry" Lore="@ui_AST_WarCry_Lore" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_Alpha.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_Alpha.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_Alpha.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_Alpha.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_Alpha.png" HUDPictureVariant_InnerIcon="../u_resources/spells/Active_Skills/warcry.png" VariantBottomPanel="1" />
+  </Skill>
   <Skill UID="player_warcry_variant_1" ESkill="default_variant">
     <HUD UIName="@ui_Variant_WarCry_variant_1" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_001.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_001.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_001.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_001.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_001.png" ShowParamsInTooltip="SpecificWarCry" />
-    <ResourceGain RageOnHit="20" RageOnHitChance="100" RageOnHitDuration="0" />
-    <Specific_WarCry>
+    <Specific_WarCry RagePerHit="20">
       <RageGeneration IsActive="1" />
     </Specific_WarCry>
   </Skill>
   <Skill UID="player_warcry_variant_2" ESkill="default_variant">
-    <HUD UIName="@ui_Variant_WarCry_variant_2" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_001.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_001.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_001.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_001.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_001.png" ShowParamsInTooltip="SpecificWarCry" />
-    <Specific_WarCry>
-      <HealthDrop IsActive="1" />
-    </Specific_WarCry>
+    <HUD UIName="@ui_Variant_WarCry_variant_2" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_001.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_001.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_001.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_001.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_001.png" ShowParamsInTooltip="SpecificWarCry,LifeLeech,DamageWeapon" />
+    <DamageWeapon WeaponMultiplier="2" />
+    <LifeLeech TransferPercent="100" />
   </Skill>
   <Skill UID="player_warcry_variant_3" ESkill="default_variant">
     <HUD UIName="@ui_Variant_WarCry_variant_3" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_001.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_001.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_001.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_001.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_001.png" ShowParamsInTooltip="SpecificWarCry" />

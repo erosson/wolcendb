@@ -1,0 +1,95 @@
+<MetaData>
+  <Reward Name="city_hunt_narrative1_reward" UITitle="@ui_hunt_narrative1_reward" UILore="@ui_hunt_narrative1_reward_lore">
+    <CustomMessages>
+      <Message UIDesc="@ui_hunt_narrative1_reward_summary" />
+    </CustomMessages>
+    <Currency Gold_Min="0" Gold_Max="0" PA_Min="0" PA_Max="0" />
+    <ContextualSoundTrigger ToPlay="Endgame_Hunt_FinishProject_Mission1" ToResume="EndgameIdle" />
+  </Reward>
+  <Reward Name="city_hunt_narrative2_reward" UITitle="@ui_hunt_narrative2_reward" UILore="@ui_hunt_narrative2_reward_lore">
+    <CustomMessages>
+      <Message UIDesc="@ui_hunt_narrative2_reward_summary" />
+    </CustomMessages>
+    <Currency Gold_Min="0" Gold_Max="0" PA_Min="0" PA_Max="0" />
+    <ContextualSoundTrigger ToPlay="Endgame_Hunt_FinishProject_Mission2" ToResume="EndgameIdle" />
+  </Reward>
+  <Reward Name="city_hunt_narrative3_reward" UITitle="@ui_hunt_narrative3_reward" UILore="@ui_hunt_narrative3_reward_lore">
+    <CustomMessages>
+      <Message UIDesc="@ui_hunt_narrative3_reward_summary" />
+    </CustomMessages>
+    <Currency Gold_Min="0" Gold_Max="0" PA_Min="0" PA_Max="0" />
+    <ContextualSoundTrigger ToPlay="Endgame_Hunt_FinishProject_Mission3" ToResume="EndgameIdle" />
+  </Reward>
+  <Reward Name="city_hunt_consumable1_reward" UITitle="@ui_hunt_consumable1_reward" UILore="@ui_hunt_consumable1_reward_lore">
+    <CustomMessages>
+      <Message UIDesc="@ui_hunt_consumable1_reward_summary" />
+    </CustomMessages>
+    <Currency Gold_Min="0" Gold_Max="0" PA_Min="0" PA_Max="0" />
+    <FixedItems Name="Endgame_narrative_consumable_1" MinItemNumber="1" MaxItemNumber="1" SortByRarity="1" />
+  </Reward>
+  <Reward Name="city_hunt_consumable2_reward" UITitle="@ui_hunt_consumable2_reward" UILore="@ui_hunt_consumable2_reward_lore">
+    <CustomMessages>
+      <Message UIDesc="@ui_hunt_consumable2_reward_summary" />
+    </CustomMessages>
+    <Currency Gold_Min="0" Gold_Max="0" PA_Min="0" PA_Max="0" />
+    <FixedItems Name="Endgame_narrative_consumable_2" MinItemNumber="1" MaxItemNumber="1" SortByRarity="1" />
+  </Reward>
+  <Reward Name="city_hunt_consumable3_reward" UITitle="@ui_hunt_consumable3_reward" UILore="@ui_hunt_consumable3_reward_lore">
+    <CustomMessages>
+      <Message UIDesc="@ui_hunt_consumable3_reward_summary" />
+    </CustomMessages>
+    <Currency Gold_Min="0" Gold_Max="0" PA_Min="0" PA_Max="0" />
+    <FixedItems Name="Endgame_narrative_consumable_3" MinItemNumber="1" MaxItemNumber="1" SortByRarity="1" />
+  </Reward>
+  <Reward Name="city_hunt_consumable_uber_oshara_reward" UITitle="@ui_hunt_consumable_uber_oshara_reward" UILore="@ui_hunt_consumable_uber_oshara_reward_lore">
+    <CustomMessages>
+      <Message UIDesc="@ui_hunt_consumable_uber_oshara_reward_summary" />
+    </CustomMessages>
+    <Currency Gold_Min="0" Gold_Max="0" PA_Min="0" PA_Max="0" />
+    <FixedItems Name="Endgame_narrative_consumable_uber_oshara" MinItemNumber="1" MaxItemNumber="1" SortByRarity="1" />
+  </Reward>
+  <Reward Name="city_hunt_merchant_upgrade1_reward" UITitle="@ui_hunt_merchant_upgrade2_reward" UILore="@ui_hunt_merchant_upgrade2_reward_lore">
+    <CustomMessages>
+      <Message UIDesc="@ui_hunt_merchant_upgrade2_reward_summary" />
+    </CustomMessages>
+    <Currency Gold_Min="0" Gold_Max="0" PA_Min="0" PA_Max="0" />
+    <ContextualSoundTrigger ToPlay="Endgame_Hunt_FinishProject_Upgrade1" ToResume="EndgameIdle" />
+  </Reward>
+  <Reward Name="city_hunt_merchant_upgrade2_reward" UITitle="@ui_hunt_merchant_upgrade3_reward" UILore="@ui_hunt_merchant_upgrade3_reward_lore">
+    <CustomMessages>
+      <Message UIDesc="@ui_hunt_merchant_upgrade3_reward_summary" />
+    </CustomMessages>
+    <Currency Gold_Min="0" Gold_Max="0" PA_Min="0" PA_Max="0" />
+    <ContextualSoundTrigger ToPlay="Endgame_Hunt_FinishProject_Upgrade2" ToResume="EndgameIdle" />
+  </Reward>
+  <Reward Name="city_hunt_merchant_restock1_reward" UITitle="@ui_hunt_merchant_restock1_reward" UILore="@ui_hunt_merchant_restock1_reward_lore">
+    <CustomMessages>
+      <Message UIDesc="@ui_hunt_merchant_restock1_reward_summary" />
+    </CustomMessages>
+    <Currency Gold_Min="0" Gold_Max="0" PA_Min="0" PA_Max="0" />
+    <RestockMerchant>
+      <Restock MerchantName="Hunt_Merchant" Panels="Hunt_Merchant_weapon" />
+    </RestockMerchant>
+    <ContextualSoundTrigger ToPlay="Endgame_Hunt_FinishProject_Restock1" ToResume="EndgameIdle" />
+  </Reward>
+  <Reward Name="city_hunt_merchant_restock2_reward" UITitle="@ui_hunt_merchant_restock2_reward" UILore="@ui_hunt_merchant_restock2_reward_lore">
+    <CustomMessages>
+      <Message UIDesc="@ui_hunt_merchant_restock2_reward_summary" />
+    </CustomMessages>
+    <Currency Gold_Min="0" Gold_Max="0" PA_Min="0" PA_Max="0" />
+    <RestockMerchant>
+      <Restock MerchantName="Hunt_Merchant" Panels="Hunt_Merchant_armor" />
+    </RestockMerchant>
+    <ContextualSoundTrigger ToPlay="Endgame_Hunt_FinishProject_Restock2" ToResume="EndgameIdle" />
+  </Reward>
+  <Reward Name="city_hunt_merchant_restock3_reward" UITitle="@ui_hunt_merchant_restock3_reward" UILore="@ui_hunt_merchant_restock3_reward_lore">
+    <CustomMessages>
+      <Message UIDesc="@ui_hunt_merchant_restock3_reward_summary" />
+    </CustomMessages>
+    <Currency Gold_Min="0" Gold_Max="0" PA_Min="0" PA_Max="0" />
+    <RestockMerchant>
+      <Restock MerchantName="Hunt_Merchant" Panels="Hunt_Merchant_accessories" />
+    </RestockMerchant>
+    <ContextualSoundTrigger ToPlay="Endgame_Hunt_FinishProject_Restock3" ToResume="EndgameIdle" />
+  </Reward>
+</MetaData>

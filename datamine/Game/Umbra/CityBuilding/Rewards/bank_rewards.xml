@@ -11,4 +11,16 @@
     </CustomMessages>
     <ContextualSoundTrigger ToPlay="Endgame_Bank_UpgradeCompleted" ToResume="EndgameIdle" />
   </Reward>
+  <Reward Name="restock_merchant_mohabi" UITitle="@ui_restock_merchant_mohabi_reward" UILore="@ui_restock_merchant_mohabi_reward_lore">
+    <RestockMerchant>
+      <Restock MerchantName="BetaTech1_Merchant" />
+    </RestockMerchant>
+    <ContextualSoundTrigger ToPlay="Endgame_Bank_UpgradeCompleted" ToResume="EndgameIdle" />
+  </Reward>
+  <Reward Name="restock_merchant_zanafer" UITitle="@ui_restock_merchant_zanafer_reward" UILore="@ui_restock_merchant_zanafer_reward_lore">
+    <RestockMerchant>
+      <Restock MerchantName="BetaTech1_Jeweler" />
+    </RestockMerchant>
+    <ContextualSoundTrigger ToPlay="Endgame_Bank_UpgradeCompleted" ToResume="EndgameIdle" />
+  </Reward>
 </MetaData>
