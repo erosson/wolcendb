@@ -69,7 +69,7 @@ Images are hosted separately from the rest of the site, to take advantage of Clo
 
 First, install the aws cli. https://docs.aws.amazon.com/cli/latest/userguide/install-cliv2.html Sorry, this isn't automated (but images don't change often).
 
-* `yarn export:images` uploads images to s3. Run `yarn export` and `yarn export:cp` first
+* `yarn deploy:img` uploads images to s3. Run `yarn build:img` first
 
 ## Terraform
 
