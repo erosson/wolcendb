@@ -37,7 +37,7 @@ isVisible dm model aff =
         && GemFamily.filterAffix dm model.filterGemFamilies aff
         -- slave affixes - bloodtrail negative affixes/red text - are never visible on their own.
         -- && not (aff.drop.hunt && (aff.drop.frequency == 0 || aff.type_ == "slave"))
-        && not (aff.drop.hunt && String.startsWith "slave" (Maybe.withDefault "" aff.class))
+        && not (aff.type_ == "slave" || (aff.drop.hunt && String.startsWith "slave_" (Maybe.withDefault "" aff.class)))
 
 
 update : Msg -> Datamine -> Model m -> Model m
