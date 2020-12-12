@@ -3,6 +3,9 @@ Changelog
 
 ---
 
+#### 2020-12-12
+- Added Hunt (Tributary) affixes, along with their possible negative effects, to the affixes and item pages.
+
 #### 2020-12-03
 - Updated to Wolcen v1.1.0.0, Bloodtrail. [Wolcen v1.0.13.0 to v1.1.0.0 source differences.](https://gitlab.com/erosson/wolcendb/-/commit/7748f0660955722207576c4a680a0890ca74d9ac)
 

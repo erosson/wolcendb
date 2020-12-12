@@ -36,6 +36,9 @@ type alias MagicAffix =
     , tier : Int
     , effects : List MagicEffect
     , drop : DropParams
+
+    -- Gee, I wonder where wolcen devs fall on 2020's great master-branch vs main-branch debate /s
+    , enslaved : List String
     }
 
 
@@ -47,6 +50,7 @@ type alias DropParams =
     , mandatoryKeywords : List String
     , optionalKeywords : List String
     , rarity : Rarity
+    , hunt : Bool
     }
 
 
@@ -152,6 +156,12 @@ decoder =
                 String.contains "/Loot/MagicEffects/Affixes/Armors_Weapons/AffixesArmors" f
                     || String.contains "/Loot/MagicEffects/Affixes/Armors_Weapons/AffixesWeapons" f
                     || String.contains "/Loot/MagicEffects/Affixes/Armors_Weapons/AffixesAccessories" f
+                    -- bloodtrail affixes
+                    || String.contains "/Loot/MagicEffects/Affixes/Armors_Weapons/AffixesMasterSlavesAccessories" f
+                    || String.contains "/Loot/MagicEffects/Affixes/Armors_Weapons/AffixesMasterSlavesArmors" f
+                    || String.contains "/Loot/MagicEffects/Affixes/Armors_Weapons/AffixesMasterSlavesShield" f
+                    || String.contains "/Loot/MagicEffects/Affixes/Armors_Weapons/AffixesMastersSlavesMagicWeapons" f
+                    || String.contains "/Loot/MagicEffects/Affixes/Armors_Weapons/AffixesMastersSlavesPhysicalWeapons" f
             )
             |> D.map (List.map (\( filename, json ) -> D.decodeValue (magicAffixesDecoder filename) json))
             |> D.map (Result.Extra.combine >> Result.mapError D.errorToString)
@@ -194,8 +204,17 @@ magicAffixesDecoder file =
         -- |> P.optionalAt [ "$", "AffixType" ] (D.string |> D.map Just) Nothing
         |> P.custom (magicEffectDecoder |> D.list |> D.at [ "MagicEffect" ])
         |> P.custom (dropParamsDecoder |> Util.single |> D.at [ "DropParams" ])
+        |> P.optionalAt [ "Enslaved" ] enslavedDecoder []
         |> D.list
         |> D.at [ "MetaData", "Affix" ]
+
+
+enslavedDecoder : D.Decoder (List String)
+enslavedDecoder =
+    D.at [ "$", "EnslavedClass" ] D.string
+        |> D.maybe
+        |> D.list
+        |> D.map (List.filterMap identity)
 
 
 dropParamsDecoder : D.Decoder DropParams
@@ -212,6 +231,7 @@ dropParamsDecoder =
         |> P.optionalAt [ "Keywords", "0", "$", "MandatoryKeywords" ] Util.csStrings []
         |> P.optionalAt [ "Keywords", "0", "$", "OptionalKeywords" ] Util.csStrings []
         |> P.requiredAt [ "ItemRarity", "0" ] rarityDecoder
+        |> P.optionalAt [ "$", "Hunt" ] Util.boolString False
 
 
 rarityDecoder : D.Decoder Rarity

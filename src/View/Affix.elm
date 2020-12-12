@@ -5,6 +5,7 @@ module View.Affix exposing
     , summarizeEffects
     , update
     , viewAffix
+    , viewAffixEnslaved
     , viewAffixes
     , viewEffect
     , viewGemFamilies
@@ -112,18 +113,22 @@ viewItem lang dm expandeds affixes =
     let
         -- ( craftables, naturals ) =
         ( craftables, affixes1 ) =
-            affixes
-                |> List.partition (\a -> a.drop.craftOnly)
+            affixes |> List.partition (\a -> a.drop.craftOnly)
 
-        ( sarisels, naturals ) =
-            affixes1
-                |> List.partition (\a -> a.drop.sarisel)
+        ( sarisels, affixes2 ) =
+            affixes1 |> List.partition (\a -> a.drop.sarisel)
+
+        ( hunts, naturals ) =
+            affixes2 |> List.partition (\a -> a.drop.hunt)
 
         ( naturalPre, naturalSuf ) =
             naturals |> List.partition (\a -> a.type_ == "prefix")
 
         ( sariselPre, sariselSuf ) =
             sarisels |> List.partition (\a -> a.type_ == "prefix")
+
+        ( huntPre, huntSuf ) =
+            hunts |> List.partition (\a -> a.type_ == "prefix")
 
         ( craftablePre, craftableSuf ) =
             craftables |> List.partition (\a -> a.type_ == "prefix")
@@ -139,6 +144,10 @@ viewItem lang dm expandeds affixes =
     , div [ class "row" ]
         [ div [ class "col-sm" ] [ viewItemAffixes "Sarisel prefixes" lang dm expandeds sariselPre ]
         , div [ class "col-sm" ] [ viewItemAffixes "Sarisel suffixes" lang dm expandeds sariselSuf ]
+        ]
+    , div [ class "row" ]
+        [ div [ class "col-sm" ] [ viewItemAffixes "Hunt prefixes" lang dm expandeds huntPre ]
+        , div [ class "col-sm" ] [ viewItemAffixes "Hunt suffixes" lang dm expandeds huntSuf ]
         ]
     , div [ class "row" ]
         [ div [ class "col-sm" ] [ viewItemAffixes "Craft-only prefixes" lang dm expandeds craftablePre ]
@@ -247,6 +256,7 @@ viewItemAffixRow lang dm totalWeight affix =
                 , span [ class "badge badge-outline-light float-right" ] (viewGemFamilies lang dm affix)
                 ]
            )
+        ++ viewAffixEnslaved lang dm affix
 
 
 summarizeEffects : List MagicEffect -> List MagicEffect
@@ -316,6 +326,53 @@ viewItemAffixClassSummary lang totalWeight expanded effects =
         |> List.map (\s -> div [] [ text s ])
         |> div []
     ]
+
+
+viewAffixEnslaved : Lang -> Datamine -> MagicAffix -> List (Html msg)
+viewAffixEnslaved lang dm a =
+    let
+        enslaved : { errs : List String, affixes : List MagicAffix }
+        enslaved =
+            List.foldl
+                (\cls accum ->
+                    case Dict.get cls dm.magicAffixesByClass of
+                        Nothing ->
+                            { accum | errs = cls :: accum.errs }
+
+                        Just es ->
+                            { accum | affixes = es ++ accum.affixes }
+                )
+                { errs = [], affixes = [] }
+                a.enslaved
+    in
+    [ case enslaved.errs of
+        [] ->
+            []
+
+        _ ->
+            [ div [ class "enslaved-affixes-errs" ] [ text <| String.join ", " enslaved.errs ] ]
+    , case enslaved.affixes of
+        [] ->
+            []
+
+        [ e ] ->
+            [ ul [] <| viewAffix lang e ]
+
+        _ ->
+            [ details [ class "enslaved-affixes" ]
+                [ summary [ title <| "enslaved affix-classes: " ++ String.join ", " a.enslaved ]
+                    [ text <| String.fromInt <| List.length enslaved.affixes, text " negative Hunt affixes" ]
+                , ul []
+                    ((enslaved.affixes
+                        |> List.map (viewAffix lang)
+                        |> List.concat
+                     )
+                        ++ List.map (\err -> li [] [ text "???", text err, text "???" ]) enslaved.errs
+                    )
+                ]
+            ]
+    ]
+        |> List.concat
 
 
 viewWeight : Int -> MagicAffix -> Html msg

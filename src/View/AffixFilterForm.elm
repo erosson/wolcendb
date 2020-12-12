@@ -19,6 +19,7 @@ type alias Model m =
         , filterGemFamilies : Set String
         , filterKeywords : Set String
         , filterGentypes : Set String
+        , filterXpack : Set String
     }
 
 
@@ -27,12 +28,16 @@ type Msg
     | InputGemFamily String
     | InputKeywordFilter String
     | InputGentypeFilter String
+    | InputXpackFilter String
 
 
 isVisible : Datamine -> Model m -> MagicAffix -> Bool
 isVisible dm model aff =
     (model.filterItemLevel <= 0 || (model.filterItemLevel >= aff.drop.itemLevel.min && model.filterItemLevel <= aff.drop.itemLevel.max))
         && GemFamily.filterAffix dm model.filterGemFamilies aff
+        -- slave affixes - bloodtrail negative affixes/red text - are never visible on their own.
+        -- && not (aff.drop.hunt && (aff.drop.frequency == 0 || aff.type_ == "slave"))
+        && not (aff.drop.hunt && String.startsWith "slave" (Maybe.withDefault "" aff.class))
 
 
 update : Msg -> Datamine -> Model m -> Model m
@@ -58,6 +63,9 @@ update msg dm model =
 
         InputGentypeFilter kw ->
             { model | filterGentypes = model.filterGentypes |> Util.toggleSet kw }
+
+        InputXpackFilter kw ->
+            { model | filterXpack = model.filterXpack |> Util.toggleSet kw }
 
 
 viewLevelForm : Model m -> Html Msg
@@ -167,7 +175,7 @@ viewKeywordForm dm model =
                     -- (List.map .type_ dm.affixes.magic
                     -- |> List.Extra.unique
                     -- same thing, but faster
-                    ([ "prefix", "suffix" ]
+                    (([ "prefix", "suffix" ]
                         |> List.map
                             (\kw ->
                                 let
@@ -185,6 +193,26 @@ viewKeywordForm dm model =
                                     , H.label [ class "form-check-label badge", for id ] [ text kw ]
                                     ]
                             )
+                     )
+                        ++ ([ "sarisel", "hunt" ]
+                                |> List.map
+                                    (\kw ->
+                                        let
+                                            id =
+                                                "affix-filter-xpack-" ++ kw
+                                        in
+                                        div [ class "form-check form-check-inline" ]
+                                            [ input
+                                                [ class "form-check-input"
+                                                , A.id id
+                                                , type_ "checkbox"
+                                                , onCheck <| always <| InputXpackFilter kw
+                                                ]
+                                                []
+                                            , H.label [ class "form-check-label badge", for id ] [ text kw ]
+                                            ]
+                                    )
+                           )
                     )
                 ]
             ]

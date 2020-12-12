@@ -1,0 +1,2762 @@
+<MetaData>
+  <Affix AffixId="ac_master_health_pts_1" Class="health_pts" AffixType="prefix" Tier="1">
+    <Enslaved EnslavedClass="slave_accessory_1" />
+    <DropParams Frequency="10000" Hunt="1">
+      <ItemLevel LevelMin="1" LevelMax="30" />
+      <Keywords OptionalKeywords="belt,amulet,ring" MandatoryKeywords="accessory" />
+      <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
+    </DropParams>
+    <MagicEffect EffectId="health_pts">
+      <LoRoll HealthFlatInt="48" />
+      <HiRoll HealthFlatInt="60" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="ac_master_health_pts_2" Class="health_pts" AffixType="prefix" Tier="2">
+    <Enslaved EnslavedClass="slave_accessory_2" />
+    <DropParams Frequency="10000" Hunt="1">
+      <ItemLevel LevelMin="10" LevelMax="40" />
+      <Keywords OptionalKeywords="belt,amulet,ring" MandatoryKeywords="accessory" />
+      <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
+    </DropParams>
+    <MagicEffect EffectId="health_pts">
+      <LoRoll HealthFlatInt="96" />
+      <HiRoll HealthFlatInt="119" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="ac_master_health_pts_3" Class="health_pts" AffixType="prefix" Tier="3">
+    <Enslaved EnslavedClass="slave_accessory_3" />
+    <DropParams Frequency="10000" Hunt="1">
+      <ItemLevel LevelMin="20" LevelMax="50" />
+      <Keywords OptionalKeywords="belt,amulet,ring" MandatoryKeywords="accessory" />
+      <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
+    </DropParams>
+    <MagicEffect EffectId="health_pts">
+      <LoRoll HealthFlatInt="150" />
+      <HiRoll HealthFlatInt="188" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="ac_master_health_pts_4" Class="health_pts" AffixType="prefix" Tier="4">
+    <Enslaved EnslavedClass="slave_accessory_4" />
+    <DropParams Frequency="10000" Hunt="1">
+      <ItemLevel LevelMin="30" LevelMax="60" />
+      <Keywords OptionalKeywords="belt,amulet,ring" MandatoryKeywords="accessory" />
+      <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
+    </DropParams>
+    <MagicEffect EffectId="health_pts">
+      <LoRoll HealthFlatInt="213" />
+      <HiRoll HealthFlatInt="266" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="ac_master_health_pts_5" Class="health_pts" AffixType="prefix" Tier="5">
+    <Enslaved EnslavedClass="slave_accessory_5" />
+    <DropParams Frequency="10000" Hunt="1">
+      <ItemLevel LevelMin="40" LevelMax="120" />
+      <Keywords OptionalKeywords="belt,amulet,ring" MandatoryKeywords="accessory" />
+      <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
+    </DropParams>
+    <MagicEffect EffectId="health_pts">
+      <LoRoll HealthFlatInt="284" />
+      <HiRoll HealthFlatInt="356" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="ac_master_health_pts_6" Class="health_pts" AffixType="prefix" Tier="6">
+    <Enslaved EnslavedClass="slave_accessory_6" />
+    <DropParams Frequency="10000" Hunt="1">
+      <ItemLevel LevelMin="50" LevelMax="130" />
+      <Keywords OptionalKeywords="belt,amulet,ring" MandatoryKeywords="accessory" />
+      <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
+    </DropParams>
+    <MagicEffect EffectId="health_pts">
+      <LoRoll HealthFlatInt="368" />
+      <HiRoll HealthFlatInt="459" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="ac_master_health_pts_7" Class="health_pts" AffixType="prefix" Tier="7">
+    <Enslaved EnslavedClass="slave_accessory_7" />
+    <DropParams Frequency="10000" Hunt="1">
+      <ItemLevel LevelMin="60" LevelMax="140" />
+      <Keywords OptionalKeywords="belt,amulet,ring" MandatoryKeywords="accessory" />
+      <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
+    </DropParams>
+    <MagicEffect EffectId="health_pts">
+      <LoRoll HealthFlatInt="462" />
+      <HiRoll HealthFlatInt="578" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="ac_master_health_pts_8" Class="health_pts" AffixType="prefix" Tier="8">
+    <Enslaved EnslavedClass="slave_accessory_8" />
+    <DropParams Frequency="10000" Hunt="1">
+      <ItemLevel LevelMin="70" LevelMax="150" />
+      <Keywords OptionalKeywords="belt,amulet,ring" MandatoryKeywords="accessory" />
+      <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
+    </DropParams>
+    <MagicEffect EffectId="health_pts">
+      <LoRoll HealthFlatInt="572" />
+      <HiRoll HealthFlatInt="714" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="ac_master_health_pts_9" Class="health_pts" AffixType="prefix" Tier="9">
+    <Enslaved EnslavedClass="slave_accessory_9" />
+    <DropParams Frequency="10000" Hunt="1">
+      <ItemLevel LevelMin="80" LevelMax="150" />
+      <Keywords OptionalKeywords="belt,amulet,ring" MandatoryKeywords="accessory" />
+      <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
+    </DropParams>
+    <MagicEffect EffectId="health_pts">
+      <LoRoll HealthFlatInt="698" />
+      <HiRoll HealthFlatInt="872" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="ac_master_health_pts_10" Class="health_pts" AffixType="prefix" Tier="10">
+    <Enslaved EnslavedClass="slave_accessory_10" />
+    <DropParams Frequency="10000" Hunt="1">
+      <ItemLevel LevelMin="90" LevelMax="200" />
+      <Keywords OptionalKeywords="belt,amulet,ring" MandatoryKeywords="accessory" />
+      <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
+    </DropParams>
+    <MagicEffect EffectId="health_pts">
+      <LoRoll HealthFlatInt="842" />
+      <HiRoll HealthFlatInt="1053" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="ac_master_health_pts_11" Class="health_pts" AffixType="prefix" Tier="11">
+    <Enslaved EnslavedClass="slave_accessory_11" />
+    <DropParams Frequency="10000" Hunt="1">
+      <ItemLevel LevelMin="100" LevelMax="200" />
+      <Keywords OptionalKeywords="belt,amulet,ring" MandatoryKeywords="accessory" />
+      <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
+    </DropParams>
+    <MagicEffect EffectId="health_pts">
+      <LoRoll HealthFlatInt="1008" />
+      <HiRoll HealthFlatInt="1260" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="ac_master_health_pts_12" Class="health_pts" AffixType="prefix" Tier="12">
+    <Enslaved EnslavedClass="slave_accessory_12" />
+    <DropParams Frequency="10000" Hunt="1">
+      <ItemLevel LevelMin="110" LevelMax="200" />
+      <Keywords OptionalKeywords="belt,amulet,ring" MandatoryKeywords="accessory" />
+      <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
+    </DropParams>
+    <MagicEffect EffectId="health_pts">
+      <LoRoll HealthFlatInt="1200" />
+      <HiRoll HealthFlatInt="1500" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="ac_master_forceshield_pts_1" Class="forceshield_pts" AffixType="prefix" Tier="1">
+    <Enslaved EnslavedClass="slave_accessory_1" />
+    <DropParams Frequency="10000" Hunt="1">
+      <ItemLevel LevelMin="1" LevelMax="30" />
+      <Keywords OptionalKeywords="belt,amulet,ring" MandatoryKeywords="accessory" />
+      <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
+    </DropParams>
+    <MagicEffect EffectId="forceshield_pts">
+      <LoRoll ArmorFlatInt="48" />
+      <HiRoll ArmorFlatInt="60" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="ac_master_forceshield_pts_2" Class="forceshield_pts" AffixType="prefix" Tier="2">
+    <Enslaved EnslavedClass="slave_accessory_2" />
+    <DropParams Frequency="10000" Hunt="1">
+      <ItemLevel LevelMin="10" LevelMax="40" />
+      <Keywords OptionalKeywords="belt,amulet,ring" MandatoryKeywords="accessory" />
+      <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
+    </DropParams>
+    <MagicEffect EffectId="forceshield_pts">
+      <LoRoll ArmorFlatInt="96" />
+      <HiRoll ArmorFlatInt="119" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="ac_master_forceshield_pts_3" Class="forceshield_pts" AffixType="prefix" Tier="3">
+    <Enslaved EnslavedClass="slave_accessory_3" />
+    <DropParams Frequency="10000" Hunt="1">
+      <ItemLevel LevelMin="20" LevelMax="50" />
+      <Keywords OptionalKeywords="belt,amulet,ring" MandatoryKeywords="accessory" />
+      <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
+    </DropParams>
+    <MagicEffect EffectId="forceshield_pts">
+      <LoRoll ArmorFlatInt="150" />
+      <HiRoll ArmorFlatInt="188" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="ac_master_forceshield_pts_4" Class="forceshield_pts" AffixType="prefix" Tier="4">
+    <Enslaved EnslavedClass="slave_accessory_4" />
+    <DropParams Frequency="10000" Hunt="1">
+      <ItemLevel LevelMin="30" LevelMax="60" />
+      <Keywords OptionalKeywords="belt,amulet,ring" MandatoryKeywords="accessory" />
+      <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
+    </DropParams>
+    <MagicEffect EffectId="forceshield_pts">
+      <LoRoll ArmorFlatInt="213" />
+      <HiRoll ArmorFlatInt="266" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="ac_master_forceshield_pts_5" Class="forceshield_pts" AffixType="prefix" Tier="5">
+    <Enslaved EnslavedClass="slave_accessory_5" />
+    <DropParams Frequency="10000" Hunt="1">
+      <ItemLevel LevelMin="40" LevelMax="120" />
+      <Keywords OptionalKeywords="belt,amulet,ring" MandatoryKeywords="accessory" />
+      <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
+    </DropParams>
+    <MagicEffect EffectId="forceshield_pts">
+      <LoRoll ArmorFlatInt="284" />
+      <HiRoll ArmorFlatInt="356" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="ac_master_forceshield_pts_6" Class="forceshield_pts" AffixType="prefix" Tier="6">
+    <Enslaved EnslavedClass="slave_accessory_6" />
+    <DropParams Frequency="10000" Hunt="1">
+      <ItemLevel LevelMin="50" LevelMax="130" />
+      <Keywords OptionalKeywords="belt,amulet,ring" MandatoryKeywords="accessory" />
+      <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
+    </DropParams>
+    <MagicEffect EffectId="forceshield_pts">
+      <LoRoll ArmorFlatInt="368" />
+      <HiRoll ArmorFlatInt="459" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="ac_master_forceshield_pts_7" Class="forceshield_pts" AffixType="prefix" Tier="7">
+    <Enslaved EnslavedClass="slave_accessory_7" />
+    <DropParams Frequency="10000" Hunt="1">
+      <ItemLevel LevelMin="60" LevelMax="140" />
+      <Keywords OptionalKeywords="belt,amulet,ring" MandatoryKeywords="accessory" />
+      <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
+    </DropParams>
+    <MagicEffect EffectId="forceshield_pts">
+      <LoRoll ArmorFlatInt="462" />
+      <HiRoll ArmorFlatInt="578" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="ac_master_forceshield_pts_8" Class="forceshield_pts" AffixType="prefix" Tier="8">
+    <Enslaved EnslavedClass="slave_accessory_8" />
+    <DropParams Frequency="10000" Hunt="1">
+      <ItemLevel LevelMin="70" LevelMax="150" />
+      <Keywords OptionalKeywords="belt,amulet,ring" MandatoryKeywords="accessory" />
+      <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
+    </DropParams>
+    <MagicEffect EffectId="forceshield_pts">
+      <LoRoll ArmorFlatInt="572" />
+      <HiRoll ArmorFlatInt="714" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="ac_master_forceshield_pts_9" Class="forceshield_pts" AffixType="prefix" Tier="9">
+    <Enslaved EnslavedClass="slave_accessory_9" />
+    <DropParams Frequency="10000" Hunt="1">
+      <ItemLevel LevelMin="80" LevelMax="150" />
+      <Keywords OptionalKeywords="belt,amulet,ring" MandatoryKeywords="accessory" />
+      <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
+    </DropParams>
+    <MagicEffect EffectId="forceshield_pts">
+      <LoRoll ArmorFlatInt="698" />
+      <HiRoll ArmorFlatInt="872" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="ac_master_forceshield_pts_10" Class="forceshield_pts" AffixType="prefix" Tier="10">
+    <Enslaved EnslavedClass="slave_accessory_10" />
+    <DropParams Frequency="10000" Hunt="1">
+      <ItemLevel LevelMin="90" LevelMax="200" />
+      <Keywords OptionalKeywords="belt,amulet,ring" MandatoryKeywords="accessory" />
+      <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
+    </DropParams>
+    <MagicEffect EffectId="forceshield_pts">
+      <LoRoll ArmorFlatInt="842" />
+      <HiRoll ArmorFlatInt="1053" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="ac_master_forceshield_pts_11" Class="forceshield_pts" AffixType="prefix" Tier="11">
+    <Enslaved EnslavedClass="slave_accessory_11" />
+    <DropParams Frequency="10000" Hunt="1">
+      <ItemLevel LevelMin="100" LevelMax="200" />
+      <Keywords OptionalKeywords="belt,amulet,ring" MandatoryKeywords="accessory" />
+      <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
+    </DropParams>
+    <MagicEffect EffectId="forceshield_pts">
+      <LoRoll ArmorFlatInt="1008" />
+      <HiRoll ArmorFlatInt="1260" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="ac_master_forceshield_pts_12" Class="forceshield_pts" AffixType="prefix" Tier="12">
+    <Enslaved EnslavedClass="slave_accessory_12" />
+    <DropParams Frequency="10000" Hunt="1">
+      <ItemLevel LevelMin="110" LevelMax="200" />
+      <Keywords OptionalKeywords="belt,amulet,ring" MandatoryKeywords="accessory" />
+      <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
+    </DropParams>
+    <MagicEffect EffectId="forceshield_pts">
+      <LoRoll ArmorFlatInt="1200" />
+      <HiRoll ArmorFlatInt="1500" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="ac_master_all_resistance_score_percent_1" Class="all_resistance_score_percent" AffixType="prefix" Tier="1">
+    <Enslaved EnslavedClass="slave_accessory_1" />
+    <DropParams Frequency="10000" Hunt="1">
+      <ItemLevel LevelMin="1" LevelMax="30" />
+      <Keywords OptionalKeywords="belt,amulet,ring" MandatoryKeywords="accessory" />
+      <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
+    </DropParams>
+    <MagicEffect EffectId="all_resistance_score_percent">
+      <LoRoll CharacteristicScorePercentInt="12" />
+      <HiRoll CharacteristicScorePercentInt="15" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="ac_master_all_resistance_score_percent_2" Class="all_resistance_score_percent" AffixType="prefix" Tier="2">
+    <Enslaved EnslavedClass="slave_accessory_2" />
+    <DropParams Frequency="10000" Hunt="1">
+      <ItemLevel LevelMin="10" LevelMax="40" />
+      <Keywords OptionalKeywords="belt,amulet,ring" MandatoryKeywords="accessory" />
+      <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
+    </DropParams>
+    <MagicEffect EffectId="all_resistance_score_percent">
+      <LoRoll CharacteristicScorePercentInt="12" />
+      <HiRoll CharacteristicScorePercentInt="15" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="ac_master_all_resistance_score_percent_3" Class="all_resistance_score_percent" AffixType="prefix" Tier="3">
+    <Enslaved EnslavedClass="slave_accessory_3" />
+    <DropParams Frequency="10000" Hunt="1">
+      <ItemLevel LevelMin="20" LevelMax="50" />
+      <Keywords OptionalKeywords="belt,amulet,ring" MandatoryKeywords="accessory" />
+      <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
+    </DropParams>
+    <MagicEffect EffectId="all_resistance_score_percent">
+      <LoRoll CharacteristicScorePercentInt="14" />
+      <HiRoll CharacteristicScorePercentInt="17" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="ac_master_all_resistance_score_percent_4" Class="all_resistance_score_percent" AffixType="prefix" Tier="4">
+    <Enslaved EnslavedClass="slave_accessory_4" />
+    <DropParams Frequency="10000" Hunt="1">
+      <ItemLevel LevelMin="30" LevelMax="60" />
+      <Keywords OptionalKeywords="belt,amulet,ring" MandatoryKeywords="accessory" />
+      <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
+    </DropParams>
+    <MagicEffect EffectId="all_resistance_score_percent">
+      <LoRoll CharacteristicScorePercentInt="14" />
+      <HiRoll CharacteristicScorePercentInt="17" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="ac_master_all_resistance_score_percent_5" Class="all_resistance_score_percent" AffixType="prefix" Tier="5">
+    <Enslaved EnslavedClass="slave_accessory_5" />
+    <DropParams Frequency="10000" Hunt="1">
+      <ItemLevel LevelMin="40" LevelMax="120" />
+      <Keywords OptionalKeywords="belt,amulet,ring" MandatoryKeywords="accessory" />
+      <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
+    </DropParams>
+    <MagicEffect EffectId="all_resistance_score_percent">
+      <LoRoll CharacteristicScorePercentInt="15" />
+      <HiRoll CharacteristicScorePercentInt="18" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="ac_master_all_resistance_score_percent_6" Class="all_resistance_score_percent" AffixType="prefix" Tier="6">
+    <Enslaved EnslavedClass="slave_accessory_6" />
+    <DropParams Frequency="10000" Hunt="1">
+      <ItemLevel LevelMin="50" LevelMax="130" />
+      <Keywords OptionalKeywords="belt,amulet,ring" MandatoryKeywords="accessory" />
+      <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
+    </DropParams>
+    <MagicEffect EffectId="all_resistance_score_percent">
+      <LoRoll CharacteristicScorePercentInt="15" />
+      <HiRoll CharacteristicScorePercentInt="20" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="ac_master_all_resistance_score_percent_7" Class="all_resistance_score_percent" AffixType="prefix" Tier="7">
+    <Enslaved EnslavedClass="slave_accessory_7" />
+    <DropParams Frequency="10000" Hunt="1">
+      <ItemLevel LevelMin="60" LevelMax="140" />
+      <Keywords OptionalKeywords="belt,amulet,ring" MandatoryKeywords="accessory" />
+      <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
+    </DropParams>
+    <MagicEffect EffectId="all_resistance_score_percent">
+      <LoRoll CharacteristicScorePercentInt="17" />
+      <HiRoll CharacteristicScorePercentInt="21" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="ac_master_all_resistance_score_percent_8" Class="all_resistance_score_percent" AffixType="prefix" Tier="8">
+    <Enslaved EnslavedClass="slave_accessory_8" />
+    <DropParams Frequency="10000" Hunt="1">
+      <ItemLevel LevelMin="70" LevelMax="150" />
+      <Keywords OptionalKeywords="belt,amulet,ring" MandatoryKeywords="accessory" />
+      <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
+    </DropParams>
+    <MagicEffect EffectId="all_resistance_score_percent">
+      <LoRoll CharacteristicScorePercentInt="18" />
+      <HiRoll CharacteristicScorePercentInt="23" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="ac_master_all_resistance_score_percent_9" Class="all_resistance_score_percent" AffixType="prefix" Tier="9">
+    <Enslaved EnslavedClass="slave_accessory_9" />
+    <DropParams Frequency="10000" Hunt="1">
+      <ItemLevel LevelMin="80" LevelMax="150" />
+      <Keywords OptionalKeywords="belt,amulet,ring" MandatoryKeywords="accessory" />
+      <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
+    </DropParams>
+    <MagicEffect EffectId="all_resistance_score_percent">
+      <LoRoll CharacteristicScorePercentInt="20" />
+      <HiRoll CharacteristicScorePercentInt="24" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="ac_master_all_resistance_score_percent_10" Class="all_resistance_score_percent" AffixType="prefix" Tier="10">
+    <Enslaved EnslavedClass="slave_accessory_10" />
+    <DropParams Frequency="10000" Hunt="1">
+      <ItemLevel LevelMin="90" LevelMax="200" />
+      <Keywords OptionalKeywords="belt,amulet,ring" MandatoryKeywords="accessory" />
+      <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
+    </DropParams>
+    <MagicEffect EffectId="all_resistance_score_percent">
+      <LoRoll CharacteristicScorePercentInt="21" />
+      <HiRoll CharacteristicScorePercentInt="26" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="ac_master_all_resistance_score_percent_11" Class="all_resistance_score_percent" AffixType="prefix" Tier="11">
+    <Enslaved EnslavedClass="slave_accessory_11" />
+    <DropParams Frequency="10000" Hunt="1">
+      <ItemLevel LevelMin="100" LevelMax="200" />
+      <Keywords OptionalKeywords="belt,amulet,ring" MandatoryKeywords="accessory" />
+      <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
+    </DropParams>
+    <MagicEffect EffectId="all_resistance_score_percent">
+      <LoRoll CharacteristicScorePercentInt="23" />
+      <HiRoll CharacteristicScorePercentInt="27" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="ac_master_all_resistance_score_percent_12" Class="all_resistance_score_percent" AffixType="prefix" Tier="12">
+    <Enslaved EnslavedClass="slave_accessory_12" />
+    <DropParams Frequency="10000" Hunt="1">
+      <ItemLevel LevelMin="110" LevelMax="200" />
+      <Keywords OptionalKeywords="belt,amulet,ring" MandatoryKeywords="accessory" />
+      <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
+    </DropParams>
+    <MagicEffect EffectId="all_resistance_score_percent">
+      <LoRoll CharacteristicScorePercentInt="24" />
+      <HiRoll CharacteristicScorePercentInt="30" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="ac_master_global_critical_strike_damage_1" Class="criticaldamage" AffixType="suffix" Tier="1">
+    <Enslaved EnslavedClass="slave_accessory_1" />
+    <DropParams Frequency="10000" Hunt="1">
+      <ItemLevel LevelMin="1" LevelMax="30" />
+      <Keywords OptionalKeywords="belt,amulet,ring" MandatoryKeywords="accessory" />
+      <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
+    </DropParams>
+    <MagicEffect EffectId="criticaldamage_pts">
+      <LoRoll DamagePercentInt="6" />
+      <HiRoll DamagePercentInt="8" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="ac_master_global_critical_strike_damage_2" Class="criticaldamage" AffixType="suffix" Tier="2">
+    <Enslaved EnslavedClass="slave_accessory_2" />
+    <DropParams Frequency="10000" Hunt="1">
+      <ItemLevel LevelMin="10" LevelMax="40" />
+      <Keywords OptionalKeywords="belt,amulet,ring" MandatoryKeywords="accessory" />
+      <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
+    </DropParams>
+    <MagicEffect EffectId="criticaldamage_pts">
+      <LoRoll DamagePercentInt="6" />
+      <HiRoll DamagePercentInt="8" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="ac_master_global_critical_strike_damage_3" Class="criticaldamage" AffixType="suffix" Tier="3">
+    <Enslaved EnslavedClass="slave_accessory_3" />
+    <DropParams Frequency="10000" Hunt="1">
+      <ItemLevel LevelMin="20" LevelMax="50" />
+      <Keywords OptionalKeywords="belt,amulet,ring" MandatoryKeywords="accessory" />
+      <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
+    </DropParams>
+    <MagicEffect EffectId="criticaldamage_pts">
+      <LoRoll DamagePercentInt="8" />
+      <HiRoll DamagePercentInt="9" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="ac_master_global_critical_strike_damage_4" Class="criticaldamage" AffixType="suffix" Tier="4">
+    <Enslaved EnslavedClass="slave_accessory_4" />
+    <DropParams Frequency="10000" Hunt="1">
+      <ItemLevel LevelMin="30" LevelMax="60" />
+      <Keywords OptionalKeywords="belt,amulet,ring" MandatoryKeywords="accessory" />
+      <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
+    </DropParams>
+    <MagicEffect EffectId="criticaldamage_pts">
+      <LoRoll DamagePercentInt="8" />
+      <HiRoll DamagePercentInt="9" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="ac_master_global_critical_strike_damage_5" Class="criticaldamage" AffixType="suffix" Tier="5">
+    <Enslaved EnslavedClass="slave_accessory_5" />
+    <DropParams Frequency="10000" Hunt="1">
+      <ItemLevel LevelMin="40" LevelMax="120" />
+      <Keywords OptionalKeywords="belt,amulet,ring" MandatoryKeywords="accessory" />
+      <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
+    </DropParams>
+    <MagicEffect EffectId="criticaldamage_pts">
+      <LoRoll DamagePercentInt="9" />
+      <HiRoll DamagePercentInt="11" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="ac_master_global_critical_strike_damage_6" Class="criticaldamage" AffixType="suffix" Tier="6">
+    <Enslaved EnslavedClass="slave_accessory_6" />
+    <DropParams Frequency="10000" Hunt="1">
+      <ItemLevel LevelMin="50" LevelMax="130" />
+      <Keywords OptionalKeywords="belt,amulet,ring" MandatoryKeywords="accessory" />
+      <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
+    </DropParams>
+    <MagicEffect EffectId="criticaldamage_pts">
+      <LoRoll DamagePercentInt="9" />
+      <HiRoll DamagePercentInt="12" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="ac_master_global_critical_strike_damage_7" Class="criticaldamage" AffixType="suffix" Tier="7">
+    <Enslaved EnslavedClass="slave_accessory_7" />
+    <DropParams Frequency="10000" Hunt="1">
+      <ItemLevel LevelMin="60" LevelMax="140" />
+      <Keywords OptionalKeywords="belt,amulet,ring" MandatoryKeywords="accessory" />
+      <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
+    </DropParams>
+    <MagicEffect EffectId="criticaldamage_pts">
+      <LoRoll DamagePercentInt="11" />
+      <HiRoll DamagePercentInt="14" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="ac_master_global_critical_strike_damage_8" Class="criticaldamage" AffixType="suffix" Tier="8">
+    <Enslaved EnslavedClass="slave_accessory_8" />
+    <DropParams Frequency="10000" Hunt="1">
+      <ItemLevel LevelMin="70" LevelMax="150" />
+      <Keywords OptionalKeywords="belt,amulet,ring" MandatoryKeywords="accessory" />
+      <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
+    </DropParams>
+    <MagicEffect EffectId="criticaldamage_pts">
+      <LoRoll DamagePercentInt="12" />
+      <HiRoll DamagePercentInt="15" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="ac_master_global_critical_strike_damage_9" Class="criticaldamage" AffixType="suffix" Tier="9">
+    <Enslaved EnslavedClass="slave_accessory_9" />
+    <DropParams Frequency="10000" Hunt="1">
+      <ItemLevel LevelMin="80" LevelMax="150" />
+      <Keywords OptionalKeywords="belt,amulet,ring" MandatoryKeywords="accessory" />
+      <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
+    </DropParams>
+    <MagicEffect EffectId="criticaldamage_pts">
+      <LoRoll DamagePercentInt="14" />
+      <HiRoll DamagePercentInt="17" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="ac_master_global_critical_strike_damage_10" Class="criticaldamage" AffixType="suffix" Tier="10">
+    <Enslaved EnslavedClass="slave_accessory_10" />
+    <DropParams Frequency="10000" Hunt="1">
+      <ItemLevel LevelMin="90" LevelMax="200" />
+      <Keywords OptionalKeywords="belt,amulet,ring" MandatoryKeywords="accessory" />
+      <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
+    </DropParams>
+    <MagicEffect EffectId="criticaldamage_pts">
+      <LoRoll DamagePercentInt="15" />
+      <HiRoll DamagePercentInt="18" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="ac_master_global_critical_strike_damage_11" Class="criticaldamage" AffixType="suffix" Tier="11">
+    <Enslaved EnslavedClass="slave_accessory_11" />
+    <DropParams Frequency="10000" Hunt="1">
+      <ItemLevel LevelMin="100" LevelMax="200" />
+      <Keywords OptionalKeywords="belt,amulet,ring" MandatoryKeywords="accessory" />
+      <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
+    </DropParams>
+    <MagicEffect EffectId="criticaldamage_pts">
+      <LoRoll DamagePercentInt="17" />
+      <HiRoll DamagePercentInt="20" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="ac_master_global_critical_strike_damage_12" Class="criticaldamage" AffixType="suffix" Tier="12">
+    <Enslaved EnslavedClass="slave_accessory_12" />
+    <DropParams Frequency="10000" Hunt="1">
+      <ItemLevel LevelMin="110" LevelMax="200" />
+      <Keywords OptionalKeywords="belt,amulet,ring" MandatoryKeywords="accessory" />
+      <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
+    </DropParams>
+    <MagicEffect EffectId="criticaldamage_pts">
+      <LoRoll DamagePercentInt="18" />
+      <HiRoll DamagePercentInt="23" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="ac_master_transfer_time_percent_1" Class="CraftAffix" AffixType="suffix" Tier="1">
+    <Enslaved EnslavedClass="slave_accessory_1" />
+    <DropParams Frequency="0" CraftOnly="1">
+      <ItemLevel LevelMin="1" LevelMax="30" />
+      <Keywords OptionalKeywords="belt,amulet,ring" MandatoryKeywords="accessory" />
+      <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
+    </DropParams>
+    <MagicEffect EffectId="transfer_time_percent">
+      <LoRoll DurationPercentInt="9" />
+      <HiRoll DurationPercentInt="11" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="ac_master_transfer_time_percent_2" Class="CraftAffix" AffixType="suffix" Tier="2">
+    <Enslaved EnslavedClass="slave_accessory_2" />
+    <DropParams Frequency="0" CraftOnly="1">
+      <ItemLevel LevelMin="10" LevelMax="40" />
+      <Keywords OptionalKeywords="belt,amulet,ring" MandatoryKeywords="accessory" />
+      <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
+    </DropParams>
+    <MagicEffect EffectId="transfer_time_percent">
+      <LoRoll DurationPercentInt="12" />
+      <HiRoll DurationPercentInt="15" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="ac_master_transfer_time_percent_3" Class="CraftAffix" AffixType="suffix" Tier="3">
+    <Enslaved EnslavedClass="slave_accessory_3" />
+    <DropParams Frequency="0" CraftOnly="1">
+      <ItemLevel LevelMin="20" LevelMax="50" />
+      <Keywords OptionalKeywords="belt,amulet,ring" MandatoryKeywords="accessory" />
+      <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
+    </DropParams>
+    <MagicEffect EffectId="transfer_time_percent">
+      <LoRoll DurationPercentInt="15" />
+      <HiRoll DurationPercentInt="20" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="ac_master_transfer_time_percent_4" Class="CraftAffix" AffixType="suffix" Tier="4">
+    <Enslaved EnslavedClass="slave_accessory_4" />
+    <DropParams Frequency="0" CraftOnly="1">
+      <ItemLevel LevelMin="30" LevelMax="60" />
+      <Keywords OptionalKeywords="belt,amulet,ring" MandatoryKeywords="accessory" />
+      <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
+    </DropParams>
+    <MagicEffect EffectId="transfer_time_percent">
+      <LoRoll DurationPercentInt="20" />
+      <HiRoll DurationPercentInt="24" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="ac_master_transfer_time_percent_5" Class="CraftAffix" AffixType="suffix" Tier="5">
+    <Enslaved EnslavedClass="slave_accessory_5" />
+    <DropParams Frequency="0" CraftOnly="1">
+      <ItemLevel LevelMin="40" LevelMax="120" />
+      <Keywords OptionalKeywords="belt,amulet,ring" MandatoryKeywords="accessory" />
+      <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
+    </DropParams>
+    <MagicEffect EffectId="transfer_time_percent">
+      <LoRoll DurationPercentInt="23" />
+      <HiRoll DurationPercentInt="29" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="ac_master_transfer_time_percent_6" Class="CraftAffix" AffixType="suffix" Tier="6">
+    <Enslaved EnslavedClass="slave_accessory_6" />
+    <DropParams Frequency="0" CraftOnly="1">
+      <ItemLevel LevelMin="50" LevelMax="130" />
+      <Keywords OptionalKeywords="belt,amulet,ring" MandatoryKeywords="accessory" />
+      <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
+    </DropParams>
+    <MagicEffect EffectId="transfer_time_percent">
+      <LoRoll DurationPercentInt="27" />
+      <HiRoll DurationPercentInt="33" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="ac_master_transfer_time_percent_7" Class="CraftAffix" AffixType="suffix" Tier="7">
+    <Enslaved EnslavedClass="slave_accessory_7" />
+    <DropParams Frequency="0" CraftOnly="1">
+      <ItemLevel LevelMin="60" LevelMax="140" />
+      <Keywords OptionalKeywords="belt,amulet,ring" MandatoryKeywords="accessory" />
+      <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
+    </DropParams>
+    <MagicEffect EffectId="transfer_time_percent">
+      <LoRoll DurationPercentInt="30" />
+      <HiRoll DurationPercentInt="38" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="ac_master_transfer_time_percent_8" Class="CraftAffix" AffixType="suffix" Tier="8">
+    <Enslaved EnslavedClass="slave_accessory_8" />
+    <DropParams Frequency="0" CraftOnly="1">
+      <ItemLevel LevelMin="70" LevelMax="150" />
+      <Keywords OptionalKeywords="belt,amulet,ring" MandatoryKeywords="accessory" />
+      <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
+    </DropParams>
+    <MagicEffect EffectId="transfer_time_percent">
+      <LoRoll DurationPercentInt="33" />
+      <HiRoll DurationPercentInt="42" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="ac_master_transfer_time_percent_9" Class="CraftAffix" AffixType="suffix" Tier="9">
+    <Enslaved EnslavedClass="slave_accessory_9" />
+    <DropParams Frequency="0" CraftOnly="1">
+      <ItemLevel LevelMin="80" LevelMax="150" />
+      <Keywords OptionalKeywords="belt,amulet,ring" MandatoryKeywords="accessory" />
+      <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
+    </DropParams>
+    <MagicEffect EffectId="transfer_time_percent">
+      <LoRoll DurationPercentInt="38" />
+      <HiRoll DurationPercentInt="47" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="ac_master_transfer_time_percent_10" Class="CraftAffix" AffixType="suffix" Tier="10">
+    <Enslaved EnslavedClass="slave_accessory_10" />
+    <DropParams Frequency="0" CraftOnly="1">
+      <ItemLevel LevelMin="90" LevelMax="200" />
+      <Keywords OptionalKeywords="belt,amulet,ring" MandatoryKeywords="accessory" />
+      <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
+    </DropParams>
+    <MagicEffect EffectId="transfer_time_percent">
+      <LoRoll DurationPercentInt="41" />
+      <HiRoll DurationPercentInt="51" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="ac_master_transfer_time_percent_11" Class="CraftAffix" AffixType="suffix" Tier="11">
+    <Enslaved EnslavedClass="slave_accessory_11" />
+    <DropParams Frequency="0" CraftOnly="1">
+      <ItemLevel LevelMin="100" LevelMax="200" />
+      <Keywords OptionalKeywords="belt,amulet,ring" MandatoryKeywords="accessory" />
+      <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
+    </DropParams>
+    <MagicEffect EffectId="transfer_time_percent">
+      <LoRoll DurationPercentInt="45" />
+      <HiRoll DurationPercentInt="56" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="ac_master_transfer_time_percent_12" Class="CraftAffix" AffixType="suffix" Tier="12">
+    <Enslaved EnslavedClass="slave_accessory_12" />
+    <DropParams Frequency="0" CraftOnly="1">
+      <ItemLevel LevelMin="110" LevelMax="200" />
+      <Keywords OptionalKeywords="belt,amulet,ring" MandatoryKeywords="accessory" />
+      <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
+    </DropParams>
+    <MagicEffect EffectId="transfer_time_percent">
+      <LoRoll DurationPercentInt="48" />
+      <HiRoll DurationPercentInt="60" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="ac_master_damage_percent_1" Class="damagepercent" AffixType="prefix" Tier="1">
+    <Enslaved EnslavedClass="slave_accessory_1" />
+    <DropParams Frequency="10000" Hunt="1">
+      <ItemLevel LevelMin="1" LevelMax="30" />
+      <Keywords OptionalKeywords="belt,amulet,ring" MandatoryKeywords="accessory" />
+      <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
+    </DropParams>
+    <MagicEffect EffectId="damage_percent">
+      <LoRoll DamagePercentInt="6" />
+      <HiRoll DamagePercentInt="8" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="ac_master_damage_percent_2" Class="damagepercent" AffixType="prefix" Tier="2">
+    <Enslaved EnslavedClass="slave_accessory_2" />
+    <DropParams Frequency="10000" Hunt="1">
+      <ItemLevel LevelMin="10" LevelMax="40" />
+      <Keywords OptionalKeywords="belt,amulet,ring" MandatoryKeywords="accessory" />
+      <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
+    </DropParams>
+    <MagicEffect EffectId="damage_percent">
+      <LoRoll DamagePercentInt="6" />
+      <HiRoll DamagePercentInt="8" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="ac_master_damage_percent_3" Class="damagepercent" AffixType="prefix" Tier="3">
+    <Enslaved EnslavedClass="slave_accessory_3" />
+    <DropParams Frequency="10000" Hunt="1">
+      <ItemLevel LevelMin="20" LevelMax="50" />
+      <Keywords OptionalKeywords="belt,amulet,ring" MandatoryKeywords="accessory" />
+      <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
+    </DropParams>
+    <MagicEffect EffectId="damage_percent">
+      <LoRoll DamagePercentInt="8" />
+      <HiRoll DamagePercentInt="9" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="ac_master_damage_percent_4" Class="damagepercent" AffixType="prefix" Tier="4">
+    <Enslaved EnslavedClass="slave_accessory_4" />
+    <DropParams Frequency="10000" Hunt="1">
+      <ItemLevel LevelMin="30" LevelMax="60" />
+      <Keywords OptionalKeywords="belt,amulet,ring" MandatoryKeywords="accessory" />
+      <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
+    </DropParams>
+    <MagicEffect EffectId="damage_percent">
+      <LoRoll DamagePercentInt="8" />
+      <HiRoll DamagePercentInt="9" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="ac_master_damage_percent_5" Class="damagepercent" AffixType="prefix" Tier="5">
+    <Enslaved EnslavedClass="slave_accessory_5" />
+    <DropParams Frequency="10000" Hunt="1">
+      <ItemLevel LevelMin="40" LevelMax="120" />
+      <Keywords OptionalKeywords="belt,amulet,ring" MandatoryKeywords="accessory" />
+      <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
+    </DropParams>
+    <MagicEffect EffectId="damage_percent">
+      <LoRoll DamagePercentInt="9" />
+      <HiRoll DamagePercentInt="11" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="ac_master_damage_percent_6" Class="damagepercent" AffixType="prefix" Tier="6">
+    <Enslaved EnslavedClass="slave_accessory_6" />
+    <DropParams Frequency="10000" Hunt="1">
+      <ItemLevel LevelMin="50" LevelMax="130" />
+      <Keywords OptionalKeywords="belt,amulet,ring" MandatoryKeywords="accessory" />
+      <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
+    </DropParams>
+    <MagicEffect EffectId="damage_percent">
+      <LoRoll DamagePercentInt="9" />
+      <HiRoll DamagePercentInt="12" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="ac_master_damage_percent_7" Class="damagepercent" AffixType="prefix" Tier="7">
+    <Enslaved EnslavedClass="slave_accessory_7" />
+    <DropParams Frequency="10000" Hunt="1">
+      <ItemLevel LevelMin="60" LevelMax="140" />
+      <Keywords OptionalKeywords="belt,amulet,ring" MandatoryKeywords="accessory" />
+      <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
+    </DropParams>
+    <MagicEffect EffectId="damage_percent">
+      <LoRoll DamagePercentInt="11" />
+      <HiRoll DamagePercentInt="14" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="ac_master_damage_percent_8" Class="damagepercent" AffixType="prefix" Tier="8">
+    <Enslaved EnslavedClass="slave_accessory_8" />
+    <DropParams Frequency="10000" Hunt="1">
+      <ItemLevel LevelMin="70" LevelMax="150" />
+      <Keywords OptionalKeywords="belt,amulet,ring" MandatoryKeywords="accessory" />
+      <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
+    </DropParams>
+    <MagicEffect EffectId="damage_percent">
+      <LoRoll DamagePercentInt="12" />
+      <HiRoll DamagePercentInt="15" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="ac_master_damage_percent_9" Class="damagepercent" AffixType="prefix" Tier="9">
+    <Enslaved EnslavedClass="slave_accessory_9" />
+    <DropParams Frequency="10000" Hunt="1">
+      <ItemLevel LevelMin="80" LevelMax="160" />
+      <Keywords OptionalKeywords="belt,amulet,ring" MandatoryKeywords="accessory" />
+      <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
+    </DropParams>
+    <MagicEffect EffectId="damage_percent">
+      <LoRoll DamagePercentInt="14" />
+      <HiRoll DamagePercentInt="17" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="ac_master_damage_percent_10" Class="damagepercent" AffixType="prefix" Tier="10">
+    <Enslaved EnslavedClass="slave_accessory_10" />
+    <DropParams Frequency="10000" Hunt="1">
+      <ItemLevel LevelMin="90" LevelMax="200" />
+      <Keywords OptionalKeywords="belt,amulet,ring" MandatoryKeywords="accessory" />
+      <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
+    </DropParams>
+    <MagicEffect EffectId="damage_percent">
+      <LoRoll DamagePercentInt="15" />
+      <HiRoll DamagePercentInt="18" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="ac_master_damage_percent_11" Class="damagepercent" AffixType="prefix" Tier="11">
+    <Enslaved EnslavedClass="slave_accessory_11" />
+    <DropParams Frequency="10000" Hunt="1">
+      <ItemLevel LevelMin="100" LevelMax="200" />
+      <Keywords OptionalKeywords="belt,amulet,ring" MandatoryKeywords="accessory" />
+      <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
+    </DropParams>
+    <MagicEffect EffectId="damage_percent">
+      <LoRoll DamagePercentInt="17" />
+      <HiRoll DamagePercentInt="20" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="ac_master_damage_percent_12" Class="damagepercent" AffixType="prefix" Tier="12">
+    <Enslaved EnslavedClass="slave_accessory_12" />
+    <DropParams Frequency="10000" Hunt="1">
+      <ItemLevel LevelMin="110" LevelMax="200" />
+      <Keywords OptionalKeywords="belt,amulet,ring" MandatoryKeywords="accessory" />
+      <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
+    </DropParams>
+    <MagicEffect EffectId="damage_percent">
+      <LoRoll DamagePercentInt="18" />
+      <HiRoll DamagePercentInt="23" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="ac_master_offensivespeed_score_percent_1" Class="offensivespeed" AffixType="suffix" Tier="1">
+    <Enslaved EnslavedClass="slave_accessory_1" />
+    <DropParams Frequency="10000" Hunt="1">
+      <ItemLevel LevelMin="1" LevelMax="30" />
+      <Keywords OptionalKeywords="belt,amulet,ring" MandatoryKeywords="accessory" />
+      <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
+    </DropParams>
+    <MagicEffect EffectId="offensivespeed_final_percent">
+      <LoRoll CharacteristicFinalPercentFloat="2" />
+      <HiRoll CharacteristicFinalPercentFloat="3" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="ac_master_offensivespeed_score_percent_2" Class="offensivespeed" AffixType="suffix" Tier="2">
+    <Enslaved EnslavedClass="slave_accessory_2" />
+    <DropParams Frequency="10000" Hunt="1">
+      <ItemLevel LevelMin="10" LevelMax="40" />
+      <Keywords OptionalKeywords="belt,amulet,ring" MandatoryKeywords="accessory" />
+      <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
+    </DropParams>
+    <MagicEffect EffectId="offensivespeed_final_percent">
+      <LoRoll CharacteristicFinalPercentFloat="2" />
+      <HiRoll CharacteristicFinalPercentFloat="3" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="ac_master_offensivespeed_score_percent_3" Class="offensivespeed" AffixType="suffix" Tier="3">
+    <Enslaved EnslavedClass="slave_accessory_3" />
+    <DropParams Frequency="10000" Hunt="1">
+      <ItemLevel LevelMin="20" LevelMax="50" />
+      <Keywords OptionalKeywords="belt,amulet,ring" MandatoryKeywords="accessory" />
+      <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
+    </DropParams>
+    <MagicEffect EffectId="offensivespeed_final_percent">
+      <LoRoll CharacteristicFinalPercentFloat="2" />
+      <HiRoll CharacteristicFinalPercentFloat="3" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="ac_master_offensivespeed_score_percent_4" Class="offensivespeed" AffixType="suffix" Tier="4">
+    <Enslaved EnslavedClass="slave_accessory_4" />
+    <DropParams Frequency="10000" Hunt="1">
+      <ItemLevel LevelMin="30" LevelMax="60" />
+      <Keywords OptionalKeywords="belt,amulet,ring" MandatoryKeywords="accessory" />
+      <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
+    </DropParams>
+    <MagicEffect EffectId="offensivespeed_final_percent">
+      <LoRoll CharacteristicFinalPercentFloat="2" />
+      <HiRoll CharacteristicFinalPercentFloat="3" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="ac_master_offensivespeed_score_percent_5" Class="offensivespeed" AffixType="suffix" Tier="5">
+    <Enslaved EnslavedClass="slave_accessory_5" />
+    <DropParams Frequency="10000" Hunt="1">
+      <ItemLevel LevelMin="40" LevelMax="120" />
+      <Keywords OptionalKeywords="belt,amulet,ring" MandatoryKeywords="accessory" />
+      <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
+    </DropParams>
+    <MagicEffect EffectId="offensivespeed_final_percent">
+      <LoRoll CharacteristicFinalPercentFloat="3" />
+      <HiRoll CharacteristicFinalPercentFloat="5" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="ac_master_offensivespeed_score_percent_6" Class="offensivespeed" AffixType="suffix" Tier="6">
+    <Enslaved EnslavedClass="slave_accessory_6" />
+    <DropParams Frequency="10000" Hunt="1">
+      <ItemLevel LevelMin="50" LevelMax="130" />
+      <Keywords OptionalKeywords="belt,amulet,ring" MandatoryKeywords="accessory" />
+      <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
+    </DropParams>
+    <MagicEffect EffectId="offensivespeed_final_percent">
+      <LoRoll CharacteristicFinalPercentFloat="3" />
+      <HiRoll CharacteristicFinalPercentFloat="5" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="ac_master_offensivespeed_score_percent_7" Class="offensivespeed" AffixType="suffix" Tier="7">
+    <Enslaved EnslavedClass="slave_accessory_7" />
+    <DropParams Frequency="10000" Hunt="1">
+      <ItemLevel LevelMin="60" LevelMax="140" />
+      <Keywords OptionalKeywords="belt,amulet,ring" MandatoryKeywords="accessory" />
+      <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
+    </DropParams>
+    <MagicEffect EffectId="offensivespeed_final_percent">
+      <LoRoll CharacteristicFinalPercentFloat="3" />
+      <HiRoll CharacteristicFinalPercentFloat="5" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="ac_master_offensivespeed_score_percent_8" Class="offensivespeed" AffixType="suffix" Tier="8">
+    <Enslaved EnslavedClass="slave_accessory_8" />
+    <DropParams Frequency="10000" Hunt="1">
+      <ItemLevel LevelMin="70" LevelMax="150" />
+      <Keywords OptionalKeywords="belt,amulet,ring" MandatoryKeywords="accessory" />
+      <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
+    </DropParams>
+    <MagicEffect EffectId="offensivespeed_final_percent">
+      <LoRoll CharacteristicFinalPercentFloat="3" />
+      <HiRoll CharacteristicFinalPercentFloat="5" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="ac_master_offensivespeed_score_percent_9" Class="offensivespeed" AffixType="suffix" Tier="9">
+    <Enslaved EnslavedClass="slave_accessory_9" />
+    <DropParams Frequency="10000" Hunt="1">
+      <ItemLevel LevelMin="80" LevelMax="160" />
+      <Keywords OptionalKeywords="belt,amulet,ring" MandatoryKeywords="accessory" />
+      <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
+    </DropParams>
+    <MagicEffect EffectId="offensivespeed_final_percent">
+      <LoRoll CharacteristicFinalPercentFloat="5" />
+      <HiRoll CharacteristicFinalPercentFloat="6" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="ac_master_offensivespeed_score_percent_10" Class="offensivespeed" AffixType="suffix" Tier="10">
+    <Enslaved EnslavedClass="slave_accessory_10" />
+    <DropParams Frequency="10000" Hunt="1">
+      <ItemLevel LevelMin="90" LevelMax="200" />
+      <Keywords OptionalKeywords="belt,amulet,ring" MandatoryKeywords="accessory" />
+      <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
+    </DropParams>
+    <MagicEffect EffectId="offensivespeed_final_percent">
+      <LoRoll CharacteristicFinalPercentFloat="5" />
+      <HiRoll CharacteristicFinalPercentFloat="6" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="ac_master_offensivespeed_score_percent_11" Class="offensivespeed" AffixType="suffix" Tier="11">
+    <Enslaved EnslavedClass="slave_accessory_11" />
+    <DropParams Frequency="10000" Hunt="1">
+      <ItemLevel LevelMin="100" LevelMax="200" />
+      <Keywords OptionalKeywords="belt,amulet,ring" MandatoryKeywords="accessory" />
+      <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
+    </DropParams>
+    <MagicEffect EffectId="offensivespeed_final_percent">
+      <LoRoll CharacteristicFinalPercentFloat="6" />
+      <HiRoll CharacteristicFinalPercentFloat="8" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="ac_master_offensivespeed_score_percent_12" Class="offensivespeed" AffixType="suffix" Tier="12">
+    <Enslaved EnslavedClass="slave_accessory_12" />
+    <DropParams Frequency="10000" Hunt="1">
+      <ItemLevel LevelMin="110" LevelMax="200" />
+      <Keywords OptionalKeywords="belt,amulet,ring" MandatoryKeywords="accessory" />
+      <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
+    </DropParams>
+    <MagicEffect EffectId="offensivespeed_final_percent">
+      <LoRoll CharacteristicFinalPercentFloat="6" />
+      <HiRoll CharacteristicFinalPercentFloat="8" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="ac_master_life_leech_percent_global_1" Class="life_leech" AffixType="suffix" Tier="1">
+    <Enslaved EnslavedClass="slave_accessory_1" />
+    <DropParams Frequency="10000" Hunt="1">
+      <ItemLevel LevelMin="1" LevelMax="30" />
+      <Keywords OptionalKeywords="belt,amulet,ring" MandatoryKeywords="accessory" />
+      <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
+    </DropParams>
+    <MagicEffect EffectId="life_leech_percent_global">
+      <LoRoll DamagePercentFloat="0.15" />
+      <HiRoll DamagePercentFloat="0.15" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="ac_master_life_leech_percent_global_2" Class="life_leech" AffixType="suffix" Tier="2">
+    <Enslaved EnslavedClass="slave_accessory_2" />
+    <DropParams Frequency="10000" Hunt="1">
+      <ItemLevel LevelMin="10" LevelMax="40" />
+      <Keywords OptionalKeywords="belt,amulet,ring" MandatoryKeywords="accessory" />
+      <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
+    </DropParams>
+    <MagicEffect EffectId="life_leech_percent_global">
+      <LoRoll DamagePercentFloat="0.15" />
+      <HiRoll DamagePercentFloat="0.15" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="ac_master_life_leech_percent_global_3" Class="life_leech" AffixType="suffix" Tier="3">
+    <Enslaved EnslavedClass="slave_accessory_3" />
+    <DropParams Frequency="10000" Hunt="1">
+      <ItemLevel LevelMin="20" LevelMax="50" />
+      <Keywords OptionalKeywords="belt,amulet,ring" MandatoryKeywords="accessory" />
+      <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
+    </DropParams>
+    <MagicEffect EffectId="life_leech_percent_global">
+      <LoRoll DamagePercentFloat="0.15" />
+      <HiRoll DamagePercentFloat="0.15" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="ac_master_life_leech_percent_global_4" Class="life_leech" AffixType="suffix" Tier="4">
+    <Enslaved EnslavedClass="slave_accessory_4" />
+    <DropParams Frequency="10000" Hunt="1">
+      <ItemLevel LevelMin="30" LevelMax="60" />
+      <Keywords OptionalKeywords="belt,amulet,ring" MandatoryKeywords="accessory" />
+      <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
+    </DropParams>
+    <MagicEffect EffectId="life_leech_percent_global">
+      <LoRoll DamagePercentFloat="0.3" />
+      <HiRoll DamagePercentFloat="0.3" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="ac_master_life_leech_percent_global_5" Class="life_leech" AffixType="suffix" Tier="5">
+    <Enslaved EnslavedClass="slave_accessory_5" />
+    <DropParams Frequency="10000" Hunt="1">
+      <ItemLevel LevelMin="40" LevelMax="120" />
+      <Keywords OptionalKeywords="belt,amulet,ring" MandatoryKeywords="accessory" />
+      <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
+    </DropParams>
+    <MagicEffect EffectId="life_leech_percent_global">
+      <LoRoll DamagePercentFloat="0.3" />
+      <HiRoll DamagePercentFloat="0.3" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="ac_master_life_leech_percent_global_6" Class="life_leech" AffixType="suffix" Tier="6">
+    <Enslaved EnslavedClass="slave_accessory_6" />
+    <DropParams Frequency="10000" Hunt="1">
+      <ItemLevel LevelMin="50" LevelMax="130" />
+      <Keywords OptionalKeywords="belt,amulet,ring" MandatoryKeywords="accessory" />
+      <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
+    </DropParams>
+    <MagicEffect EffectId="life_leech_percent_global">
+      <LoRoll DamagePercentFloat="0.3" />
+      <HiRoll DamagePercentFloat="0.3" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="ac_master_life_leech_percent_global_7" Class="life_leech" AffixType="suffix" Tier="7">
+    <Enslaved EnslavedClass="slave_accessory_7" />
+    <DropParams Frequency="10000" Hunt="1">
+      <ItemLevel LevelMin="60" LevelMax="140" />
+      <Keywords OptionalKeywords="belt,amulet,ring" MandatoryKeywords="accessory" />
+      <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
+    </DropParams>
+    <MagicEffect EffectId="life_leech_percent_global">
+      <LoRoll DamagePercentFloat="0.3" />
+      <HiRoll DamagePercentFloat="0.3" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="ac_master_life_leech_percent_global_8" Class="life_leech" AffixType="suffix" Tier="8">
+    <Enslaved EnslavedClass="slave_accessory_8" />
+    <DropParams Frequency="10000" Hunt="1">
+      <ItemLevel LevelMin="70" LevelMax="150" />
+      <Keywords OptionalKeywords="belt,amulet,ring" MandatoryKeywords="accessory" />
+      <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
+    </DropParams>
+    <MagicEffect EffectId="life_leech_percent_global">
+      <LoRoll DamagePercentFloat="0.45" />
+      <HiRoll DamagePercentFloat="0.45" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="ac_master_life_leech_percent_global_9" Class="life_leech" AffixType="suffix" Tier="9">
+    <Enslaved EnslavedClass="slave_accessory_9" />
+    <DropParams Frequency="10000" Hunt="1">
+      <ItemLevel LevelMin="80" LevelMax="150" />
+      <Keywords OptionalKeywords="belt,amulet,ring" MandatoryKeywords="accessory" />
+      <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
+    </DropParams>
+    <MagicEffect EffectId="life_leech_percent_global">
+      <LoRoll DamagePercentFloat="0.45" />
+      <HiRoll DamagePercentFloat="0.45" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="ac_master_life_leech_percent_global_10" Class="life_leech" AffixType="suffix" Tier="10">
+    <Enslaved EnslavedClass="slave_accessory_10" />
+    <DropParams Frequency="10000" Hunt="1">
+      <ItemLevel LevelMin="90" LevelMax="200" />
+      <Keywords OptionalKeywords="belt,amulet,ring" MandatoryKeywords="accessory" />
+      <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
+    </DropParams>
+    <MagicEffect EffectId="life_leech_percent_global">
+      <LoRoll DamagePercentFloat="0.6" />
+      <HiRoll DamagePercentFloat="0.6" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="ac_master_life_leech_percent_global_11" Class="life_leech" AffixType="suffix" Tier="11">
+    <Enslaved EnslavedClass="slave_accessory_11" />
+    <DropParams Frequency="10000" Hunt="1">
+      <ItemLevel LevelMin="100" LevelMax="200" />
+      <Keywords OptionalKeywords="belt,amulet,ring" MandatoryKeywords="accessory" />
+      <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
+    </DropParams>
+    <MagicEffect EffectId="life_leech_percent_global">
+      <LoRoll DamagePercentFloat="0.6" />
+      <HiRoll DamagePercentFloat="0.6" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="ac_master_life_leech_percent_global_12" Class="life_leech" AffixType="suffix" Tier="12">
+    <Enslaved EnslavedClass="slave_accessory_12" />
+    <DropParams Frequency="10000" Hunt="1">
+      <ItemLevel LevelMin="110" LevelMax="200" />
+      <Keywords OptionalKeywords="belt,amulet,ring" MandatoryKeywords="accessory" />
+      <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
+    </DropParams>
+    <MagicEffect EffectId="life_leech_percent_global">
+      <LoRoll DamagePercentFloat="0.75" />
+      <HiRoll DamagePercentFloat="0.75" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="ac_master_attack_critical_strike_chance_1" Class="criticalchance" AffixType="suffix" Tier="1">
+    <Enslaved EnslavedClass="slave_accessory_1" />
+    <DropParams Frequency="10000" Hunt="1">
+      <ItemLevel LevelMin="1" LevelMax="30" />
+      <Keywords OptionalKeywords="belt,amulet" MandatoryKeywords="accessory" />
+      <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
+    </DropParams>
+    <MagicEffect EffectId="criticalchance_attackskill_score_percent">
+      <LoRoll CharacteristicScorePercentInt="12" />
+      <HiRoll CharacteristicScorePercentInt="15" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="ac_master_attack_critical_strike_chance_2" Class="criticalchance" AffixType="suffix" Tier="2">
+    <Enslaved EnslavedClass="slave_accessory_2" />
+    <DropParams Frequency="10000" Hunt="1">
+      <ItemLevel LevelMin="10" LevelMax="40" />
+      <Keywords OptionalKeywords="belt,amulet" MandatoryKeywords="accessory" />
+      <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
+    </DropParams>
+    <MagicEffect EffectId="criticalchance_attackskill_score_percent">
+      <LoRoll CharacteristicScorePercentInt="12" />
+      <HiRoll CharacteristicScorePercentInt="17" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="ac_master_attack_critical_strike_chance_3" Class="criticalchance" AffixType="suffix" Tier="3">
+    <Enslaved EnslavedClass="slave_accessory_3" />
+    <DropParams Frequency="10000" Hunt="1">
+      <ItemLevel LevelMin="20" LevelMax="50" />
+      <Keywords OptionalKeywords="belt,amulet" MandatoryKeywords="accessory" />
+      <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
+    </DropParams>
+    <MagicEffect EffectId="criticalchance_attackskill_score_percent">
+      <LoRoll CharacteristicScorePercentInt="14" />
+      <HiRoll CharacteristicScorePercentInt="17" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="ac_master_attack_critical_strike_chance_4" Class="criticalchance" AffixType="suffix" Tier="4">
+    <Enslaved EnslavedClass="slave_accessory_4" />
+    <DropParams Frequency="10000" Hunt="1">
+      <ItemLevel LevelMin="30" LevelMax="60" />
+      <Keywords OptionalKeywords="belt,amulet" MandatoryKeywords="accessory" />
+      <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
+    </DropParams>
+    <MagicEffect EffectId="criticalchance_attackskill_score_percent">
+      <LoRoll CharacteristicScorePercentInt="15" />
+      <HiRoll CharacteristicScorePercentInt="18" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="ac_master_attack_critical_strike_chance_5" Class="criticalchance" AffixType="suffix" Tier="5">
+    <Enslaved EnslavedClass="slave_accessory_5" />
+    <DropParams Frequency="10000" Hunt="1">
+      <ItemLevel LevelMin="40" LevelMax="120" />
+      <Keywords OptionalKeywords="belt,amulet" MandatoryKeywords="accessory" />
+      <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
+    </DropParams>
+    <MagicEffect EffectId="criticalchance_attackskill_score_percent">
+      <LoRoll CharacteristicScorePercentInt="15" />
+      <HiRoll CharacteristicScorePercentInt="20" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="ac_master_attack_critical_strike_chance_6" Class="criticalchance" AffixType="suffix" Tier="6">
+    <Enslaved EnslavedClass="slave_accessory_6" />
+    <DropParams Frequency="10000" Hunt="1">
+      <ItemLevel LevelMin="50" LevelMax="130" />
+      <Keywords OptionalKeywords="belt,amulet" MandatoryKeywords="accessory" />
+      <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
+    </DropParams>
+    <MagicEffect EffectId="criticalchance_attackskill_score_percent">
+      <LoRoll CharacteristicScorePercentInt="17" />
+      <HiRoll CharacteristicScorePercentInt="21" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="ac_master_attack_critical_strike_chance_7" Class="criticalchance" AffixType="suffix" Tier="7">
+    <Enslaved EnslavedClass="slave_accessory_7" />
+    <DropParams Frequency="10000" Hunt="1">
+      <ItemLevel LevelMin="60" LevelMax="140" />
+      <Keywords OptionalKeywords="belt,amulet" MandatoryKeywords="accessory" />
+      <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
+    </DropParams>
+    <MagicEffect EffectId="criticalchance_attackskill_score_percent">
+      <LoRoll CharacteristicScorePercentInt="18" />
+      <HiRoll CharacteristicScorePercentInt="23" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="ac_master_attack_critical_strike_chance_8" Class="criticalchance" AffixType="suffix" Tier="8">
+    <Enslaved EnslavedClass="slave_accessory_8" />
+    <DropParams Frequency="10000" Hunt="1">
+      <ItemLevel LevelMin="70" LevelMax="150" />
+      <Keywords OptionalKeywords="belt,amulet" MandatoryKeywords="accessory" />
+      <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
+    </DropParams>
+    <MagicEffect EffectId="criticalchance_attackskill_score_percent">
+      <LoRoll CharacteristicScorePercentInt="20" />
+      <HiRoll CharacteristicScorePercentInt="26" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="ac_master_attack_critical_strike_chance_9" Class="criticalchance" AffixType="suffix" Tier="9">
+    <Enslaved EnslavedClass="slave_accessory_9" />
+    <DropParams Frequency="10000" Hunt="1">
+      <ItemLevel LevelMin="80" LevelMax="150" />
+      <Keywords OptionalKeywords="belt,amulet" MandatoryKeywords="accessory" />
+      <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
+    </DropParams>
+    <MagicEffect EffectId="criticalchance_attackskill_score_percent">
+      <LoRoll CharacteristicScorePercentInt="23" />
+      <HiRoll CharacteristicScorePercentInt="27" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="ac_master_attack_critical_strike_chance_10" Class="criticalchance" AffixType="suffix" Tier="10">
+    <Enslaved EnslavedClass="slave_accessory_10" />
+    <DropParams Frequency="10000" Hunt="1">
+      <ItemLevel LevelMin="90" LevelMax="200" />
+      <Keywords OptionalKeywords="belt,amulet" MandatoryKeywords="accessory" />
+      <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
+    </DropParams>
+    <MagicEffect EffectId="criticalchance_attackskill_score_percent">
+      <LoRoll CharacteristicScorePercentInt="24" />
+      <HiRoll CharacteristicScorePercentInt="30" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="ac_master_attack_critical_strike_chance_11" Class="criticalchance" AffixType="suffix" Tier="11">
+    <Enslaved EnslavedClass="slave_accessory_11" />
+    <DropParams Frequency="10000" Hunt="1">
+      <ItemLevel LevelMin="100" LevelMax="200" />
+      <Keywords OptionalKeywords="belt,amulet" MandatoryKeywords="accessory" />
+      <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
+    </DropParams>
+    <MagicEffect EffectId="criticalchance_attackskill_score_percent">
+      <LoRoll CharacteristicScorePercentInt="27" />
+      <HiRoll CharacteristicScorePercentInt="35" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="ac_master_attack_critical_strike_chance_12" Class="criticalchance" AffixType="suffix" Tier="12">
+    <Enslaved EnslavedClass="slave_accessory_12" />
+    <DropParams Frequency="10000" Hunt="1">
+      <ItemLevel LevelMin="110" LevelMax="200" />
+      <Keywords OptionalKeywords="belt,amulet" MandatoryKeywords="accessory" />
+      <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
+    </DropParams>
+    <MagicEffect EffectId="criticalchance_attackskill_score_percent">
+      <LoRoll CharacteristicScorePercentInt="30" />
+      <HiRoll CharacteristicScorePercentInt="38" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="ac_master_status_ailment_chance_1" Class="suffix" AffixType="suffix" Tier="1">
+    <Enslaved EnslavedClass="slave_accessory_1" />
+    <DropParams Frequency="10000" Hunt="1">
+      <ItemLevel LevelMin="1" LevelMax="30" />
+      <Keywords OptionalKeywords="belt,amulet" MandatoryKeywords="accessory" />
+      <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
+    </DropParams>
+    <MagicEffect EffectId="statusailment_inflict_score_percent">
+      <LoRoll CharacteristicScorePercentInt="12" />
+      <HiRoll CharacteristicScorePercentInt="15" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="ac_master_status_ailment_chance_2" Class="suffix" AffixType="suffix" Tier="2">
+    <Enslaved EnslavedClass="slave_accessory_2" />
+    <DropParams Frequency="10000" Hunt="1">
+      <ItemLevel LevelMin="10" LevelMax="40" />
+      <Keywords OptionalKeywords="belt,amulet" MandatoryKeywords="accessory" />
+      <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
+    </DropParams>
+    <MagicEffect EffectId="statusailment_inflict_score_percent">
+      <LoRoll CharacteristicScorePercentInt="12" />
+      <HiRoll CharacteristicScorePercentInt="17" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="ac_master_status_ailment_chance_3" Class="suffix" AffixType="suffix" Tier="3">
+    <Enslaved EnslavedClass="slave_accessory_3" />
+    <DropParams Frequency="10000" Hunt="1">
+      <ItemLevel LevelMin="20" LevelMax="50" />
+      <Keywords OptionalKeywords="belt,amulet" MandatoryKeywords="accessory" />
+      <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
+    </DropParams>
+    <MagicEffect EffectId="statusailment_inflict_score_percent">
+      <LoRoll CharacteristicScorePercentInt="14" />
+      <HiRoll CharacteristicScorePercentInt="17" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="ac_master_status_ailment_chance_4" Class="suffix" AffixType="suffix" Tier="4">
+    <Enslaved EnslavedClass="slave_accessory_4" />
+    <DropParams Frequency="10000" Hunt="1">
+      <ItemLevel LevelMin="30" LevelMax="60" />
+      <Keywords OptionalKeywords="belt,amulet" MandatoryKeywords="accessory" />
+      <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
+    </DropParams>
+    <MagicEffect EffectId="statusailment_inflict_score_percent">
+      <LoRoll CharacteristicScorePercentInt="15" />
+      <HiRoll CharacteristicScorePercentInt="18" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="ac_master_status_ailment_chance_5" Class="suffix" AffixType="suffix" Tier="5">
+    <Enslaved EnslavedClass="slave_accessory_5" />
+    <DropParams Frequency="10000" Hunt="1">
+      <ItemLevel LevelMin="40" LevelMax="120" />
+      <Keywords OptionalKeywords="belt,amulet" MandatoryKeywords="accessory" />
+      <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
+    </DropParams>
+    <MagicEffect EffectId="statusailment_inflict_score_percent">
+      <LoRoll CharacteristicScorePercentInt="15" />
+      <HiRoll CharacteristicScorePercentInt="20" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="ac_master_status_ailment_chance_6" Class="suffix" AffixType="suffix" Tier="6">
+    <Enslaved EnslavedClass="slave_accessory_6" />
+    <DropParams Frequency="10000" Hunt="1">
+      <ItemLevel LevelMin="50" LevelMax="130" />
+      <Keywords OptionalKeywords="belt,amulet" MandatoryKeywords="accessory" />
+      <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
+    </DropParams>
+    <MagicEffect EffectId="statusailment_inflict_score_percent">
+      <LoRoll CharacteristicScorePercentInt="17" />
+      <HiRoll CharacteristicScorePercentInt="21" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="ac_master_status_ailment_chance_7" Class="suffix" AffixType="suffix" Tier="7">
+    <Enslaved EnslavedClass="slave_accessory_7" />
+    <DropParams Frequency="10000" Hunt="1">
+      <ItemLevel LevelMin="60" LevelMax="140" />
+      <Keywords OptionalKeywords="belt,amulet" MandatoryKeywords="accessory" />
+      <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
+    </DropParams>
+    <MagicEffect EffectId="statusailment_inflict_score_percent">
+      <LoRoll CharacteristicScorePercentInt="18" />
+      <HiRoll CharacteristicScorePercentInt="23" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="ac_master_status_ailment_chance_8" Class="suffix" AffixType="suffix" Tier="8">
+    <Enslaved EnslavedClass="slave_accessory_8" />
+    <DropParams Frequency="10000" Hunt="1">
+      <ItemLevel LevelMin="70" LevelMax="150" />
+      <Keywords OptionalKeywords="belt,amulet" MandatoryKeywords="accessory" />
+      <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
+    </DropParams>
+    <MagicEffect EffectId="statusailment_inflict_score_percent">
+      <LoRoll CharacteristicScorePercentInt="20" />
+      <HiRoll CharacteristicScorePercentInt="26" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="ac_master_status_ailment_chance_9" Class="suffix" AffixType="suffix" Tier="9">
+    <Enslaved EnslavedClass="slave_accessory_9" />
+    <DropParams Frequency="10000" Hunt="1">
+      <ItemLevel LevelMin="80" LevelMax="160" />
+      <Keywords OptionalKeywords="belt,amulet" MandatoryKeywords="accessory" />
+      <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
+    </DropParams>
+    <MagicEffect EffectId="statusailment_inflict_score_percent">
+      <LoRoll CharacteristicScorePercentInt="23" />
+      <HiRoll CharacteristicScorePercentInt="27" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="ac_master_status_ailment_chance_10" Class="suffix" AffixType="suffix" Tier="10">
+    <Enslaved EnslavedClass="slave_accessory_10" />
+    <DropParams Frequency="10000" Hunt="1">
+      <ItemLevel LevelMin="90" LevelMax="200" />
+      <Keywords OptionalKeywords="belt,amulet" MandatoryKeywords="accessory" />
+      <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
+    </DropParams>
+    <MagicEffect EffectId="statusailment_inflict_score_percent">
+      <LoRoll CharacteristicScorePercentInt="24" />
+      <HiRoll CharacteristicScorePercentInt="30" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="ac_master_status_ailment_chance_11" Class="suffix" AffixType="suffix" Tier="11">
+    <Enslaved EnslavedClass="slave_accessory_11" />
+    <DropParams Frequency="10000" Hunt="1">
+      <ItemLevel LevelMin="100" LevelMax="200" />
+      <Keywords OptionalKeywords="belt,amulet" MandatoryKeywords="accessory" />
+      <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
+    </DropParams>
+    <MagicEffect EffectId="statusailment_inflict_score_percent">
+      <LoRoll CharacteristicScorePercentInt="27" />
+      <HiRoll CharacteristicScorePercentInt="35" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="ac_master_status_ailment_chance_12" Class="suffix" AffixType="suffix" Tier="12">
+    <Enslaved EnslavedClass="slave_accessory_12" />
+    <DropParams Frequency="10000" Hunt="1">
+      <ItemLevel LevelMin="110" LevelMax="200" />
+      <Keywords OptionalKeywords="belt,amulet" MandatoryKeywords="accessory" />
+      <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
+    </DropParams>
+    <MagicEffect EffectId="statusailment_inflict_score_percent">
+      <LoRoll CharacteristicScorePercentInt="30" />
+      <HiRoll CharacteristicScorePercentInt="38" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="ac_slave_health_pts_1" Class="slave_accessory_1" AffixType="slave" Tier="1">
+    <DropParams Frequency="0">
+      <ItemLevel LevelMin="1" LevelMax="30" />
+      <Keywords OptionalKeywords="belt,amulet,ring" MandatoryKeywords="accessory" />
+      <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
+    </DropParams>
+    <MagicEffect EffectId="health_pts">
+      <LoRoll HealthFlatInt="-16" />
+      <HiRoll HealthFlatInt="-20" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="ac_slave_health_pts_2" Class="slave_accessory_2" AffixType="slave" Tier="2">
+    <DropParams Frequency="0">
+      <ItemLevel LevelMin="10" LevelMax="40" />
+      <Keywords OptionalKeywords="belt,amulet,ring" MandatoryKeywords="accessory" />
+      <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
+    </DropParams>
+    <MagicEffect EffectId="health_pts">
+      <LoRoll HealthFlatInt="-32" />
+      <HiRoll HealthFlatInt="-40" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="ac_slave_health_pts_3" Class="slave_accessory_3" AffixType="slave" Tier="3">
+    <DropParams Frequency="0">
+      <ItemLevel LevelMin="20" LevelMax="50" />
+      <Keywords OptionalKeywords="belt,amulet,ring" MandatoryKeywords="accessory" />
+      <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
+    </DropParams>
+    <MagicEffect EffectId="health_pts">
+      <LoRoll HealthFlatInt="-50" />
+      <HiRoll HealthFlatInt="-63" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="ac_slave_health_pts_4" Class="slave_accessory_4" AffixType="slave" Tier="4">
+    <DropParams Frequency="0">
+      <ItemLevel LevelMin="30" LevelMax="60" />
+      <Keywords OptionalKeywords="belt,amulet,ring" MandatoryKeywords="accessory" />
+      <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
+    </DropParams>
+    <MagicEffect EffectId="health_pts">
+      <LoRoll HealthFlatInt="-71" />
+      <HiRoll HealthFlatInt="-89" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="ac_slave_health_pts_5" Class="slave_accessory_5" AffixType="slave" Tier="5">
+    <DropParams Frequency="0">
+      <ItemLevel LevelMin="40" LevelMax="120" />
+      <Keywords OptionalKeywords="belt,amulet,ring" MandatoryKeywords="accessory" />
+      <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
+    </DropParams>
+    <MagicEffect EffectId="health_pts">
+      <LoRoll HealthFlatInt="-95" />
+      <HiRoll HealthFlatInt="-119" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="ac_slave_health_pts_6" Class="slave_accessory_6" AffixType="slave" Tier="6">
+    <DropParams Frequency="0">
+      <ItemLevel LevelMin="50" LevelMax="130" />
+      <Keywords OptionalKeywords="belt,amulet,ring" MandatoryKeywords="accessory" />
+      <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
+    </DropParams>
+    <MagicEffect EffectId="health_pts">
+      <LoRoll HealthFlatInt="-123" />
+      <HiRoll HealthFlatInt="-153" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="ac_slave_health_pts_7" Class="slave_accessory_7" AffixType="slave" Tier="7">
+    <DropParams Frequency="0">
+      <ItemLevel LevelMin="60" LevelMax="140" />
+      <Keywords OptionalKeywords="belt,amulet,ring" MandatoryKeywords="accessory" />
+      <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
+    </DropParams>
+    <MagicEffect EffectId="health_pts">
+      <LoRoll HealthFlatInt="-154" />
+      <HiRoll HealthFlatInt="-193" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="ac_slave_health_pts_8" Class="slave_accessory_8" AffixType="slave" Tier="8">
+    <DropParams Frequency="0">
+      <ItemLevel LevelMin="70" LevelMax="150" />
+      <Keywords OptionalKeywords="belt,amulet,ring" MandatoryKeywords="accessory" />
+      <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
+    </DropParams>
+    <MagicEffect EffectId="health_pts">
+      <LoRoll HealthFlatInt="-191" />
+      <HiRoll HealthFlatInt="-238" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="ac_slave_health_pts_9" Class="slave_accessory_9" AffixType="slave" Tier="9">
+    <DropParams Frequency="0">
+      <ItemLevel LevelMin="80" LevelMax="150" />
+      <Keywords OptionalKeywords="belt,amulet,ring" MandatoryKeywords="accessory" />
+      <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
+    </DropParams>
+    <MagicEffect EffectId="health_pts">
+      <LoRoll HealthFlatInt="-233" />
+      <HiRoll HealthFlatInt="-291" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="ac_slave_health_pts_10" Class="slave_accessory_10" AffixType="slave" Tier="10">
+    <DropParams Frequency="0">
+      <ItemLevel LevelMin="90" LevelMax="200" />
+      <Keywords OptionalKeywords="belt,amulet,ring" MandatoryKeywords="accessory" />
+      <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
+    </DropParams>
+    <MagicEffect EffectId="health_pts">
+      <LoRoll HealthFlatInt="-281" />
+      <HiRoll HealthFlatInt="-351" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="ac_slave_health_pts_11" Class="slave_accessory_11" AffixType="slave" Tier="11">
+    <DropParams Frequency="0">
+      <ItemLevel LevelMin="100" LevelMax="200" />
+      <Keywords OptionalKeywords="belt,amulet,ring" MandatoryKeywords="accessory" />
+      <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
+    </DropParams>
+    <MagicEffect EffectId="health_pts">
+      <LoRoll HealthFlatInt="-336" />
+      <HiRoll HealthFlatInt="-420" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="ac_slave_health_pts_12" Class="slave_accessory_12" AffixType="slave" Tier="12">
+    <DropParams Frequency="0">
+      <ItemLevel LevelMin="110" LevelMax="200" />
+      <Keywords OptionalKeywords="belt,amulet,ring" MandatoryKeywords="accessory" />
+      <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
+    </DropParams>
+    <MagicEffect EffectId="health_pts">
+      <LoRoll HealthFlatInt="-400" />
+      <HiRoll HealthFlatInt="-500" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="ac_slave_forceshield_pts_1" Class="slave_accessory_1" AffixType="slave" Tier="1">
+    <DropParams Frequency="0">
+      <ItemLevel LevelMin="1" LevelMax="30" />
+      <Keywords OptionalKeywords="belt,amulet,ring" MandatoryKeywords="accessory" />
+      <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
+    </DropParams>
+    <MagicEffect EffectId="forceshield_pts">
+      <LoRoll ArmorFlatInt="-16" />
+      <HiRoll ArmorFlatInt="-20" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="ac_slave_forceshield_pts_2" Class="slave_accessory_2" AffixType="slave" Tier="2">
+    <DropParams Frequency="0">
+      <ItemLevel LevelMin="10" LevelMax="40" />
+      <Keywords OptionalKeywords="belt,amulet,ring" MandatoryKeywords="accessory" />
+      <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
+    </DropParams>
+    <MagicEffect EffectId="forceshield_pts">
+      <LoRoll ArmorFlatInt="-32" />
+      <HiRoll ArmorFlatInt="-40" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="ac_slave_forceshield_pts_3" Class="slave_accessory_3" AffixType="slave" Tier="3">
+    <DropParams Frequency="0">
+      <ItemLevel LevelMin="20" LevelMax="50" />
+      <Keywords OptionalKeywords="belt,amulet,ring" MandatoryKeywords="accessory" />
+      <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
+    </DropParams>
+    <MagicEffect EffectId="forceshield_pts">
+      <LoRoll ArmorFlatInt="-50" />
+      <HiRoll ArmorFlatInt="-63" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="ac_slave_forceshield_pts_4" Class="slave_accessory_4" AffixType="slave" Tier="4">
+    <DropParams Frequency="0">
+      <ItemLevel LevelMin="30" LevelMax="60" />
+      <Keywords OptionalKeywords="belt,amulet,ring" MandatoryKeywords="accessory" />
+      <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
+    </DropParams>
+    <MagicEffect EffectId="forceshield_pts">
+      <LoRoll ArmorFlatInt="-71" />
+      <HiRoll ArmorFlatInt="-89" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="ac_slave_forceshield_pts_5" Class="slave_accessory_5" AffixType="slave" Tier="5">
+    <DropParams Frequency="0">
+      <ItemLevel LevelMin="40" LevelMax="120" />
+      <Keywords OptionalKeywords="belt,amulet,ring" MandatoryKeywords="accessory" />
+      <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
+    </DropParams>
+    <MagicEffect EffectId="forceshield_pts">
+      <LoRoll ArmorFlatInt="-95" />
+      <HiRoll ArmorFlatInt="-119" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="ac_slave_forceshield_pts_6" Class="slave_accessory_6" AffixType="slave" Tier="6">
+    <DropParams Frequency="0">
+      <ItemLevel LevelMin="50" LevelMax="130" />
+      <Keywords OptionalKeywords="belt,amulet,ring" MandatoryKeywords="accessory" />
+      <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
+    </DropParams>
+    <MagicEffect EffectId="forceshield_pts">
+      <LoRoll ArmorFlatInt="-123" />
+      <HiRoll ArmorFlatInt="-153" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="ac_slave_forceshield_pts_7" Class="slave_accessory_7" AffixType="slave" Tier="7">
+    <DropParams Frequency="0">
+      <ItemLevel LevelMin="60" LevelMax="140" />
+      <Keywords OptionalKeywords="belt,amulet,ring" MandatoryKeywords="accessory" />
+      <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
+    </DropParams>
+    <MagicEffect EffectId="forceshield_pts">
+      <LoRoll ArmorFlatInt="-154" />
+      <HiRoll ArmorFlatInt="-193" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="ac_slave_forceshield_pts_8" Class="slave_accessory_8" AffixType="slave" Tier="8">
+    <DropParams Frequency="0">
+      <ItemLevel LevelMin="70" LevelMax="150" />
+      <Keywords OptionalKeywords="belt,amulet,ring" MandatoryKeywords="accessory" />
+      <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
+    </DropParams>
+    <MagicEffect EffectId="forceshield_pts">
+      <LoRoll ArmorFlatInt="-191" />
+      <HiRoll ArmorFlatInt="-238" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="ac_slave_forceshield_pts_9" Class="slave_accessory_9" AffixType="slave" Tier="9">
+    <DropParams Frequency="0">
+      <ItemLevel LevelMin="80" LevelMax="150" />
+      <Keywords OptionalKeywords="belt,amulet,ring" MandatoryKeywords="accessory" />
+      <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
+    </DropParams>
+    <MagicEffect EffectId="forceshield_pts">
+      <LoRoll ArmorFlatInt="-233" />
+      <HiRoll ArmorFlatInt="-291" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="ac_slave_forceshield_pts_10" Class="slave_accessory_10" AffixType="slave" Tier="10">
+    <DropParams Frequency="0">
+      <ItemLevel LevelMin="90" LevelMax="200" />
+      <Keywords OptionalKeywords="belt,amulet,ring" MandatoryKeywords="accessory" />
+      <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
+    </DropParams>
+    <MagicEffect EffectId="forceshield_pts">
+      <LoRoll ArmorFlatInt="-281" />
+      <HiRoll ArmorFlatInt="-351" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="ac_slave_forceshield_pts_11" Class="slave_accessory_11" AffixType="slave" Tier="11">
+    <DropParams Frequency="0">
+      <ItemLevel LevelMin="100" LevelMax="200" />
+      <Keywords OptionalKeywords="belt,amulet,ring" MandatoryKeywords="accessory" />
+      <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
+    </DropParams>
+    <MagicEffect EffectId="forceshield_pts">
+      <LoRoll ArmorFlatInt="-336" />
+      <HiRoll ArmorFlatInt="-420" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="ac_slave_forceshield_pts_12" Class="slave_accessory_12" AffixType="slave" Tier="12">
+    <DropParams Frequency="0">
+      <ItemLevel LevelMin="110" LevelMax="200" />
+      <Keywords OptionalKeywords="belt,amulet,ring" MandatoryKeywords="accessory" />
+      <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
+    </DropParams>
+    <MagicEffect EffectId="forceshield_pts">
+      <LoRoll ArmorFlatInt="-400" />
+      <HiRoll ArmorFlatInt="-500" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="ac_slave_all_resistance_score_percent_1" Class="slave_accessory_1" AffixType="slave" Tier="1">
+    <DropParams Frequency="0">
+      <ItemLevel LevelMin="1" LevelMax="30" />
+      <Keywords OptionalKeywords="belt,amulet,ring" MandatoryKeywords="accessory" />
+      <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
+    </DropParams>
+    <MagicEffect EffectId="all_resistance_score_percent">
+      <LoRoll CharacteristicScorePercentInt="-4" />
+      <HiRoll CharacteristicScorePercentInt="-5" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="ac_slave_all_resistance_score_percent_2" Class="slave_accessory_2" AffixType="slave" Tier="2">
+    <DropParams Frequency="0">
+      <ItemLevel LevelMin="10" LevelMax="40" />
+      <Keywords OptionalKeywords="belt,amulet,ring" MandatoryKeywords="accessory" />
+      <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
+    </DropParams>
+    <MagicEffect EffectId="all_resistance_score_percent">
+      <LoRoll CharacteristicScorePercentInt="-4" />
+      <HiRoll CharacteristicScorePercentInt="-5" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="ac_slave_all_resistance_score_percent_3" Class="slave_accessory_3" AffixType="slave" Tier="3">
+    <DropParams Frequency="0">
+      <ItemLevel LevelMin="20" LevelMax="50" />
+      <Keywords OptionalKeywords="belt,amulet,ring" MandatoryKeywords="accessory" />
+      <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
+    </DropParams>
+    <MagicEffect EffectId="all_resistance_score_percent">
+      <LoRoll CharacteristicScorePercentInt="-5" />
+      <HiRoll CharacteristicScorePercentInt="-6" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="ac_slave_all_resistance_score_percent_4" Class="slave_accessory_4" AffixType="slave" Tier="4">
+    <DropParams Frequency="0">
+      <ItemLevel LevelMin="30" LevelMax="60" />
+      <Keywords OptionalKeywords="belt,amulet,ring" MandatoryKeywords="accessory" />
+      <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
+    </DropParams>
+    <MagicEffect EffectId="all_resistance_score_percent">
+      <LoRoll CharacteristicScorePercentInt="-5" />
+      <HiRoll CharacteristicScorePercentInt="-6" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="ac_slave_all_resistance_score_percent_5" Class="slave_accessory_5" AffixType="slave" Tier="5">
+    <DropParams Frequency="0">
+      <ItemLevel LevelMin="40" LevelMax="120" />
+      <Keywords OptionalKeywords="belt,amulet,ring" MandatoryKeywords="accessory" />
+      <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
+    </DropParams>
+    <MagicEffect EffectId="all_resistance_score_percent">
+      <LoRoll CharacteristicScorePercentInt="-5" />
+      <HiRoll CharacteristicScorePercentInt="-6" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="ac_slave_all_resistance_score_percent_6" Class="slave_accessory_6" AffixType="slave" Tier="6">
+    <DropParams Frequency="0">
+      <ItemLevel LevelMin="50" LevelMax="130" />
+      <Keywords OptionalKeywords="belt,amulet,ring" MandatoryKeywords="accessory" />
+      <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
+    </DropParams>
+    <MagicEffect EffectId="all_resistance_score_percent">
+      <LoRoll CharacteristicScorePercentInt="-5" />
+      <HiRoll CharacteristicScorePercentInt="-7" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="ac_slave_all_resistance_score_percent_7" Class="slave_accessory_7" AffixType="slave" Tier="7">
+    <DropParams Frequency="0">
+      <ItemLevel LevelMin="60" LevelMax="140" />
+      <Keywords OptionalKeywords="belt,amulet,ring" MandatoryKeywords="accessory" />
+      <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
+    </DropParams>
+    <MagicEffect EffectId="all_resistance_score_percent">
+      <LoRoll CharacteristicScorePercentInt="-6" />
+      <HiRoll CharacteristicScorePercentInt="-7" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="ac_slave_all_resistance_score_percent_8" Class="slave_accessory_8" AffixType="slave" Tier="8">
+    <DropParams Frequency="0">
+      <ItemLevel LevelMin="70" LevelMax="150" />
+      <Keywords OptionalKeywords="belt,amulet,ring" MandatoryKeywords="accessory" />
+      <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
+    </DropParams>
+    <MagicEffect EffectId="all_resistance_score_percent">
+      <LoRoll CharacteristicScorePercentInt="-6" />
+      <HiRoll CharacteristicScorePercentInt="-8" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="ac_slave_all_resistance_score_percent_9" Class="slave_accessory_9" AffixType="slave" Tier="9">
+    <DropParams Frequency="0">
+      <ItemLevel LevelMin="80" LevelMax="150" />
+      <Keywords OptionalKeywords="belt,amulet,ring" MandatoryKeywords="accessory" />
+      <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
+    </DropParams>
+    <MagicEffect EffectId="all_resistance_score_percent">
+      <LoRoll CharacteristicScorePercentInt="-7" />
+      <HiRoll CharacteristicScorePercentInt="-8" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="ac_slave_all_resistance_score_percent_10" Class="slave_accessory_10" AffixType="slave" Tier="10">
+    <DropParams Frequency="0">
+      <ItemLevel LevelMin="90" LevelMax="200" />
+      <Keywords OptionalKeywords="belt,amulet,ring" MandatoryKeywords="accessory" />
+      <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
+    </DropParams>
+    <MagicEffect EffectId="all_resistance_score_percent">
+      <LoRoll CharacteristicScorePercentInt="-7" />
+      <HiRoll CharacteristicScorePercentInt="-9" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="ac_slave_all_resistance_score_percent_11" Class="slave_accessory_11" AffixType="slave" Tier="11">
+    <DropParams Frequency="0">
+      <ItemLevel LevelMin="100" LevelMax="200" />
+      <Keywords OptionalKeywords="belt,amulet,ring" MandatoryKeywords="accessory" />
+      <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
+    </DropParams>
+    <MagicEffect EffectId="all_resistance_score_percent">
+      <LoRoll CharacteristicScorePercentInt="-8" />
+      <HiRoll CharacteristicScorePercentInt="-9" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="ac_slave_all_resistance_score_percent_12" Class="slave_accessory_12" AffixType="slave" Tier="12">
+    <DropParams Frequency="0">
+      <ItemLevel LevelMin="110" LevelMax="200" />
+      <Keywords OptionalKeywords="belt,amulet,ring" MandatoryKeywords="accessory" />
+      <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
+    </DropParams>
+    <MagicEffect EffectId="all_resistance_score_percent">
+      <LoRoll CharacteristicScorePercentInt="-8" />
+      <HiRoll CharacteristicScorePercentInt="-10" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="ac_slave_global_critical_strike_damage_1" Class="slave_accessory_1" AffixType="slave" Tier="1">
+    <DropParams Frequency="0">
+      <ItemLevel LevelMin="1" LevelMax="30" />
+      <Keywords OptionalKeywords="belt,amulet,ring" MandatoryKeywords="accessory" />
+      <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
+    </DropParams>
+    <MagicEffect EffectId="criticaldamage_pts">
+      <LoRoll DamagePercentInt="-2" />
+      <HiRoll DamagePercentInt="-3" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="ac_slave_global_critical_strike_damage_2" Class="slave_accessory_2" AffixType="slave" Tier="2">
+    <DropParams Frequency="0">
+      <ItemLevel LevelMin="10" LevelMax="40" />
+      <Keywords OptionalKeywords="belt,amulet,ring" MandatoryKeywords="accessory" />
+      <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
+    </DropParams>
+    <MagicEffect EffectId="criticaldamage_pts">
+      <LoRoll DamagePercentInt="-2" />
+      <HiRoll DamagePercentInt="-3" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="ac_slave_global_critical_strike_damage_3" Class="slave_accessory_3" AffixType="slave" Tier="3">
+    <DropParams Frequency="0">
+      <ItemLevel LevelMin="20" LevelMax="50" />
+      <Keywords OptionalKeywords="belt,amulet,ring" MandatoryKeywords="accessory" />
+      <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
+    </DropParams>
+    <MagicEffect EffectId="criticaldamage_pts">
+      <LoRoll DamagePercentInt="-3" />
+      <HiRoll DamagePercentInt="-3" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="ac_slave_global_critical_strike_damage_4" Class="slave_accessory_4" AffixType="slave" Tier="4">
+    <DropParams Frequency="0">
+      <ItemLevel LevelMin="30" LevelMax="60" />
+      <Keywords OptionalKeywords="belt,amulet,ring" MandatoryKeywords="accessory" />
+      <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
+    </DropParams>
+    <MagicEffect EffectId="criticaldamage_pts">
+      <LoRoll DamagePercentInt="-3" />
+      <HiRoll DamagePercentInt="-3" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="ac_slave_global_critical_strike_damage_5" Class="slave_accessory_5" AffixType="slave" Tier="5">
+    <DropParams Frequency="0">
+      <ItemLevel LevelMin="40" LevelMax="120" />
+      <Keywords OptionalKeywords="belt,amulet,ring" MandatoryKeywords="accessory" />
+      <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
+    </DropParams>
+    <MagicEffect EffectId="criticaldamage_pts">
+      <LoRoll DamagePercentInt="-3" />
+      <HiRoll DamagePercentInt="-4" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="ac_slave_global_critical_strike_damage_6" Class="slave_accessory_6" AffixType="slave" Tier="6">
+    <DropParams Frequency="0">
+      <ItemLevel LevelMin="50" LevelMax="130" />
+      <Keywords OptionalKeywords="belt,amulet,ring" MandatoryKeywords="accessory" />
+      <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
+    </DropParams>
+    <MagicEffect EffectId="criticaldamage_pts">
+      <LoRoll DamagePercentInt="-3" />
+      <HiRoll DamagePercentInt="-4" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="ac_slave_global_critical_strike_damage_7" Class="slave_accessory_7" AffixType="slave" Tier="7">
+    <DropParams Frequency="0">
+      <ItemLevel LevelMin="60" LevelMax="140" />
+      <Keywords OptionalKeywords="belt,amulet,ring" MandatoryKeywords="accessory" />
+      <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
+    </DropParams>
+    <MagicEffect EffectId="criticaldamage_pts">
+      <LoRoll DamagePercentInt="-4" />
+      <HiRoll DamagePercentInt="-5" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="ac_slave_global_critical_strike_damage_8" Class="slave_accessory_8" AffixType="slave" Tier="8">
+    <DropParams Frequency="0">
+      <ItemLevel LevelMin="70" LevelMax="150" />
+      <Keywords OptionalKeywords="belt,amulet,ring" MandatoryKeywords="accessory" />
+      <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
+    </DropParams>
+    <MagicEffect EffectId="criticaldamage_pts">
+      <LoRoll DamagePercentInt="-4" />
+      <HiRoll DamagePercentInt="-5" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="ac_slave_global_critical_strike_damage_9" Class="slave_accessory_9" AffixType="slave" Tier="9">
+    <DropParams Frequency="0">
+      <ItemLevel LevelMin="80" LevelMax="150" />
+      <Keywords OptionalKeywords="belt,amulet,ring" MandatoryKeywords="accessory" />
+      <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
+    </DropParams>
+    <MagicEffect EffectId="criticaldamage_pts">
+      <LoRoll DamagePercentInt="-5" />
+      <HiRoll DamagePercentInt="-6" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="ac_slave_global_critical_strike_damage_10" Class="slave_accessory_10" AffixType="slave" Tier="10">
+    <DropParams Frequency="0">
+      <ItemLevel LevelMin="90" LevelMax="200" />
+      <Keywords OptionalKeywords="belt,amulet,ring" MandatoryKeywords="accessory" />
+      <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
+    </DropParams>
+    <MagicEffect EffectId="criticaldamage_pts">
+      <LoRoll DamagePercentInt="-5" />
+      <HiRoll DamagePercentInt="-6" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="ac_slave_global_critical_strike_damage_11" Class="slave_accessory_11" AffixType="slave" Tier="11">
+    <DropParams Frequency="0">
+      <ItemLevel LevelMin="100" LevelMax="200" />
+      <Keywords OptionalKeywords="belt,amulet,ring" MandatoryKeywords="accessory" />
+      <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
+    </DropParams>
+    <MagicEffect EffectId="criticaldamage_pts">
+      <LoRoll DamagePercentInt="-6" />
+      <HiRoll DamagePercentInt="-7" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="ac_slave_global_critical_strike_damage_12" Class="slave_accessory_12" AffixType="slave" Tier="12">
+    <DropParams Frequency="0">
+      <ItemLevel LevelMin="110" LevelMax="200" />
+      <Keywords OptionalKeywords="belt,amulet,ring" MandatoryKeywords="accessory" />
+      <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
+    </DropParams>
+    <MagicEffect EffectId="criticaldamage_pts">
+      <LoRoll DamagePercentInt="-6" />
+      <HiRoll DamagePercentInt="-8" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="ac_slave_transfer_time_percent_1" Class="slave_accessory_1" AffixType="slave" Tier="1">
+    <DropParams Frequency="0">
+      <ItemLevel LevelMin="1" LevelMax="30" />
+      <Keywords OptionalKeywords="belt,amulet,ring" MandatoryKeywords="accessory" />
+      <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
+    </DropParams>
+    <MagicEffect EffectId="transfer_time_percent">
+      <LoRoll DurationPercentInt="-3" />
+      <HiRoll DurationPercentInt="-4" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="ac_slave_transfer_time_percent_2" Class="slave_accessory_2" AffixType="slave" Tier="2">
+    <DropParams Frequency="0">
+      <ItemLevel LevelMin="10" LevelMax="40" />
+      <Keywords OptionalKeywords="belt,amulet,ring" MandatoryKeywords="accessory" />
+      <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
+    </DropParams>
+    <MagicEffect EffectId="transfer_time_percent">
+      <LoRoll DurationPercentInt="-4" />
+      <HiRoll DurationPercentInt="-5" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="ac_slave_transfer_time_percent_3" Class="slave_accessory_3" AffixType="slave" Tier="3">
+    <DropParams Frequency="0">
+      <ItemLevel LevelMin="20" LevelMax="50" />
+      <Keywords OptionalKeywords="belt,amulet,ring" MandatoryKeywords="accessory" />
+      <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
+    </DropParams>
+    <MagicEffect EffectId="transfer_time_percent">
+      <LoRoll DurationPercentInt="-5" />
+      <HiRoll DurationPercentInt="-7" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="ac_slave_transfer_time_percent_4" Class="slave_accessory_4" AffixType="slave" Tier="4">
+    <DropParams Frequency="0">
+      <ItemLevel LevelMin="30" LevelMax="60" />
+      <Keywords OptionalKeywords="belt,amulet,ring" MandatoryKeywords="accessory" />
+      <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
+    </DropParams>
+    <MagicEffect EffectId="transfer_time_percent">
+      <LoRoll DurationPercentInt="-7" />
+      <HiRoll DurationPercentInt="-8" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="ac_slave_transfer_time_percent_5" Class="slave_accessory_5" AffixType="slave" Tier="5">
+    <DropParams Frequency="0">
+      <ItemLevel LevelMin="40" LevelMax="120" />
+      <Keywords OptionalKeywords="belt,amulet,ring" MandatoryKeywords="accessory" />
+      <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
+    </DropParams>
+    <MagicEffect EffectId="transfer_time_percent">
+      <LoRoll DurationPercentInt="-8" />
+      <HiRoll DurationPercentInt="-10" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="ac_slave_transfer_time_percent_6" Class="slave_accessory_6" AffixType="slave" Tier="6">
+    <DropParams Frequency="0">
+      <ItemLevel LevelMin="50" LevelMax="130" />
+      <Keywords OptionalKeywords="belt,amulet,ring" MandatoryKeywords="accessory" />
+      <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
+    </DropParams>
+    <MagicEffect EffectId="transfer_time_percent">
+      <LoRoll DurationPercentInt="-9" />
+      <HiRoll DurationPercentInt="-11" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="ac_slave_transfer_time_percent_7" Class="slave_accessory_7" AffixType="slave" Tier="7">
+    <DropParams Frequency="0">
+      <ItemLevel LevelMin="60" LevelMax="140" />
+      <Keywords OptionalKeywords="belt,amulet,ring" MandatoryKeywords="accessory" />
+      <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
+    </DropParams>
+    <MagicEffect EffectId="transfer_time_percent">
+      <LoRoll DurationPercentInt="-10" />
+      <HiRoll DurationPercentInt="-13" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="ac_slave_transfer_time_percent_8" Class="slave_accessory_8" AffixType="slave" Tier="8">
+    <DropParams Frequency="0">
+      <ItemLevel LevelMin="70" LevelMax="150" />
+      <Keywords OptionalKeywords="belt,amulet,ring" MandatoryKeywords="accessory" />
+      <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
+    </DropParams>
+    <MagicEffect EffectId="transfer_time_percent">
+      <LoRoll DurationPercentInt="-11" />
+      <HiRoll DurationPercentInt="-14" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="ac_slave_transfer_time_percent_9" Class="slave_accessory_9" AffixType="slave" Tier="9">
+    <DropParams Frequency="0">
+      <ItemLevel LevelMin="80" LevelMax="150" />
+      <Keywords OptionalKeywords="belt,amulet,ring" MandatoryKeywords="accessory" />
+      <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
+    </DropParams>
+    <MagicEffect EffectId="transfer_time_percent">
+      <LoRoll DurationPercentInt="-13" />
+      <HiRoll DurationPercentInt="-16" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="ac_slave_transfer_time_percent_10" Class="slave_accessory_10" AffixType="slave" Tier="10">
+    <DropParams Frequency="0">
+      <ItemLevel LevelMin="90" LevelMax="200" />
+      <Keywords OptionalKeywords="belt,amulet,ring" MandatoryKeywords="accessory" />
+      <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
+    </DropParams>
+    <MagicEffect EffectId="transfer_time_percent">
+      <LoRoll DurationPercentInt="-14" />
+      <HiRoll DurationPercentInt="-17" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="ac_slave_transfer_time_percent_11" Class="slave_accessory_11" AffixType="slave" Tier="11">
+    <DropParams Frequency="0">
+      <ItemLevel LevelMin="100" LevelMax="200" />
+      <Keywords OptionalKeywords="belt,amulet,ring" MandatoryKeywords="accessory" />
+      <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
+    </DropParams>
+    <MagicEffect EffectId="transfer_time_percent">
+      <LoRoll DurationPercentInt="-15" />
+      <HiRoll DurationPercentInt="-19" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="ac_slave_transfer_time_percent_12" Class="slave_accessory_12" AffixType="slave" Tier="12">
+    <DropParams Frequency="0">
+      <ItemLevel LevelMin="110" LevelMax="200" />
+      <Keywords OptionalKeywords="belt,amulet,ring" MandatoryKeywords="accessory" />
+      <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
+    </DropParams>
+    <MagicEffect EffectId="transfer_time_percent">
+      <LoRoll DurationPercentInt="-16" />
+      <HiRoll DurationPercentInt="-20" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="ac_slave_damage_percent_1" Class="slave_accessory_1" AffixType="slave" Tier="1">
+    <DropParams Frequency="0">
+      <ItemLevel LevelMin="1" LevelMax="30" />
+      <Keywords OptionalKeywords="belt,amulet,ring" MandatoryKeywords="accessory" />
+      <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
+    </DropParams>
+    <MagicEffect EffectId="damage_percent">
+      <LoRoll DamagePercentInt="-2" />
+      <HiRoll DamagePercentInt="-3" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="ac_slave_damage_percent_2" Class="slave_accessory_2" AffixType="slave" Tier="2">
+    <DropParams Frequency="0">
+      <ItemLevel LevelMin="10" LevelMax="40" />
+      <Keywords OptionalKeywords="belt,amulet,ring" MandatoryKeywords="accessory" />
+      <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
+    </DropParams>
+    <MagicEffect EffectId="damage_percent">
+      <LoRoll DamagePercentInt="-2" />
+      <HiRoll DamagePercentInt="-3" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="ac_slave_damage_percent_3" Class="slave_accessory_3" AffixType="slave" Tier="3">
+    <DropParams Frequency="0">
+      <ItemLevel LevelMin="20" LevelMax="50" />
+      <Keywords OptionalKeywords="belt,amulet,ring" MandatoryKeywords="accessory" />
+      <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
+    </DropParams>
+    <MagicEffect EffectId="damage_percent">
+      <LoRoll DamagePercentInt="-3" />
+      <HiRoll DamagePercentInt="-3" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="ac_slave_damage_percent_4" Class="slave_accessory_4" AffixType="slave" Tier="4">
+    <DropParams Frequency="0">
+      <ItemLevel LevelMin="30" LevelMax="60" />
+      <Keywords OptionalKeywords="belt,amulet,ring" MandatoryKeywords="accessory" />
+      <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
+    </DropParams>
+    <MagicEffect EffectId="damage_percent">
+      <LoRoll DamagePercentInt="-3" />
+      <HiRoll DamagePercentInt="-3" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="ac_slave_damage_percent_5" Class="slave_accessory_5" AffixType="slave" Tier="5">
+    <DropParams Frequency="0">
+      <ItemLevel LevelMin="40" LevelMax="120" />
+      <Keywords OptionalKeywords="belt,amulet,ring" MandatoryKeywords="accessory" />
+      <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
+    </DropParams>
+    <MagicEffect EffectId="damage_percent">
+      <LoRoll DamagePercentInt="-3" />
+      <HiRoll DamagePercentInt="-4" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="ac_slave_damage_percent_6" Class="slave_accessory_6" AffixType="slave" Tier="6">
+    <DropParams Frequency="0">
+      <ItemLevel LevelMin="50" LevelMax="130" />
+      <Keywords OptionalKeywords="belt,amulet,ring" MandatoryKeywords="accessory" />
+      <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
+    </DropParams>
+    <MagicEffect EffectId="damage_percent">
+      <LoRoll DamagePercentInt="-3" />
+      <HiRoll DamagePercentInt="-4" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="ac_slave_damage_percent_7" Class="slave_accessory_7" AffixType="slave" Tier="7">
+    <DropParams Frequency="0">
+      <ItemLevel LevelMin="60" LevelMax="140" />
+      <Keywords OptionalKeywords="belt,amulet,ring" MandatoryKeywords="accessory" />
+      <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
+    </DropParams>
+    <MagicEffect EffectId="damage_percent">
+      <LoRoll DamagePercentInt="-4" />
+      <HiRoll DamagePercentInt="-5" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="ac_slave_damage_percent_8" Class="slave_accessory_8" AffixType="slave" Tier="8">
+    <DropParams Frequency="0">
+      <ItemLevel LevelMin="70" LevelMax="150" />
+      <Keywords OptionalKeywords="belt,amulet,ring" MandatoryKeywords="accessory" />
+      <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
+    </DropParams>
+    <MagicEffect EffectId="damage_percent">
+      <LoRoll DamagePercentInt="-4" />
+      <HiRoll DamagePercentInt="-5" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="ac_slave_damage_percent_9" Class="slave_accessory_9" AffixType="slave" Tier="9">
+    <DropParams Frequency="0">
+      <ItemLevel LevelMin="80" LevelMax="160" />
+      <Keywords OptionalKeywords="belt,amulet,ring" MandatoryKeywords="accessory" />
+      <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
+    </DropParams>
+    <MagicEffect EffectId="damage_percent">
+      <LoRoll DamagePercentInt="-5" />
+      <HiRoll DamagePercentInt="-6" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="ac_slave_damage_percent_10" Class="slave_accessory_10" AffixType="slave" Tier="10">
+    <DropParams Frequency="0">
+      <ItemLevel LevelMin="90" LevelMax="200" />
+      <Keywords OptionalKeywords="belt,amulet,ring" MandatoryKeywords="accessory" />
+      <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
+    </DropParams>
+    <MagicEffect EffectId="damage_percent">
+      <LoRoll DamagePercentInt="-5" />
+      <HiRoll DamagePercentInt="-6" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="ac_slave_damage_percent_11" Class="slave_accessory_11" AffixType="slave" Tier="11">
+    <DropParams Frequency="0">
+      <ItemLevel LevelMin="100" LevelMax="200" />
+      <Keywords OptionalKeywords="belt,amulet,ring" MandatoryKeywords="accessory" />
+      <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
+    </DropParams>
+    <MagicEffect EffectId="damage_percent">
+      <LoRoll DamagePercentInt="-6" />
+      <HiRoll DamagePercentInt="-7" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="ac_slave_damage_percent_12" Class="slave_accessory_12" AffixType="slave" Tier="12">
+    <DropParams Frequency="0">
+      <ItemLevel LevelMin="110" LevelMax="200" />
+      <Keywords OptionalKeywords="belt,amulet,ring" MandatoryKeywords="accessory" />
+      <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
+    </DropParams>
+    <MagicEffect EffectId="damage_percent">
+      <LoRoll DamagePercentInt="-6" />
+      <HiRoll DamagePercentInt="-8" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="ac_slave_offensivespeed_score_percent_1" Class="slave_accessory_1" AffixType="slave" Tier="1">
+    <DropParams Frequency="0">
+      <ItemLevel LevelMin="1" LevelMax="30" />
+      <Keywords OptionalKeywords="belt,amulet,ring" MandatoryKeywords="accessory" />
+      <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
+    </DropParams>
+    <MagicEffect EffectId="offensivespeed_final_percent">
+      <LoRoll CharacteristicFinalPercentFloat="-1" />
+      <HiRoll CharacteristicFinalPercentFloat="-1" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="ac_slave_offensivespeed_score_percent_2" Class="slave_accessory_2" AffixType="slave" Tier="2">
+    <DropParams Frequency="0">
+      <ItemLevel LevelMin="10" LevelMax="40" />
+      <Keywords OptionalKeywords="belt,amulet,ring" MandatoryKeywords="accessory" />
+      <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
+    </DropParams>
+    <MagicEffect EffectId="offensivespeed_final_percent">
+      <LoRoll CharacteristicFinalPercentFloat="-1" />
+      <HiRoll CharacteristicFinalPercentFloat="-1" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="ac_slave_offensivespeed_score_percent_3" Class="slave_accessory_3" AffixType="slave" Tier="3">
+    <DropParams Frequency="0">
+      <ItemLevel LevelMin="20" LevelMax="50" />
+      <Keywords OptionalKeywords="belt,amulet,ring" MandatoryKeywords="accessory" />
+      <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
+    </DropParams>
+    <MagicEffect EffectId="offensivespeed_final_percent">
+      <LoRoll CharacteristicFinalPercentFloat="-1" />
+      <HiRoll CharacteristicFinalPercentFloat="-1" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="ac_slave_offensivespeed_score_percent_4" Class="slave_accessory_4" AffixType="slave" Tier="4">
+    <DropParams Frequency="0">
+      <ItemLevel LevelMin="30" LevelMax="60" />
+      <Keywords OptionalKeywords="belt,amulet,ring" MandatoryKeywords="accessory" />
+      <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
+    </DropParams>
+    <MagicEffect EffectId="offensivespeed_final_percent">
+      <LoRoll CharacteristicFinalPercentFloat="-1" />
+      <HiRoll CharacteristicFinalPercentFloat="-1" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="ac_slave_offensivespeed_score_percent_5" Class="slave_accessory_5" AffixType="slave" Tier="5">
+    <DropParams Frequency="0">
+      <ItemLevel LevelMin="40" LevelMax="120" />
+      <Keywords OptionalKeywords="belt,amulet,ring" MandatoryKeywords="accessory" />
+      <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
+    </DropParams>
+    <MagicEffect EffectId="offensivespeed_final_percent">
+      <LoRoll CharacteristicFinalPercentFloat="-1" />
+      <HiRoll CharacteristicFinalPercentFloat="-2" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="ac_slave_offensivespeed_score_percent_6" Class="slave_accessory_6" AffixType="slave" Tier="6">
+    <DropParams Frequency="0">
+      <ItemLevel LevelMin="50" LevelMax="130" />
+      <Keywords OptionalKeywords="belt,amulet,ring" MandatoryKeywords="accessory" />
+      <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
+    </DropParams>
+    <MagicEffect EffectId="offensivespeed_final_percent">
+      <LoRoll CharacteristicFinalPercentFloat="-1" />
+      <HiRoll CharacteristicFinalPercentFloat="-2" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="ac_slave_offensivespeed_score_percent_7" Class="slave_accessory_7" AffixType="slave" Tier="7">
+    <DropParams Frequency="0">
+      <ItemLevel LevelMin="60" LevelMax="140" />
+      <Keywords OptionalKeywords="belt,amulet,ring" MandatoryKeywords="accessory" />
+      <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
+    </DropParams>
+    <MagicEffect EffectId="offensivespeed_final_percent">
+      <LoRoll CharacteristicFinalPercentFloat="-1" />
+      <HiRoll CharacteristicFinalPercentFloat="-2" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="ac_slave_offensivespeed_score_percent_8" Class="slave_accessory_8" AffixType="slave" Tier="8">
+    <DropParams Frequency="0">
+      <ItemLevel LevelMin="70" LevelMax="150" />
+      <Keywords OptionalKeywords="belt,amulet,ring" MandatoryKeywords="accessory" />
+      <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
+    </DropParams>
+    <MagicEffect EffectId="offensivespeed_final_percent">
+      <LoRoll CharacteristicFinalPercentFloat="-1" />
+      <HiRoll CharacteristicFinalPercentFloat="-2" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="ac_slave_offensivespeed_score_percent_9" Class="slave_accessory_9" AffixType="slave" Tier="9">
+    <DropParams Frequency="0">
+      <ItemLevel LevelMin="80" LevelMax="160" />
+      <Keywords OptionalKeywords="belt,amulet,ring" MandatoryKeywords="accessory" />
+      <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
+    </DropParams>
+    <MagicEffect EffectId="offensivespeed_final_percent">
+      <LoRoll CharacteristicFinalPercentFloat="-2" />
+      <HiRoll CharacteristicFinalPercentFloat="-2" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="ac_slave_offensivespeed_score_percent_10" Class="slave_accessory_10" AffixType="slave" Tier="10">
+    <DropParams Frequency="0">
+      <ItemLevel LevelMin="90" LevelMax="200" />
+      <Keywords OptionalKeywords="belt,amulet,ring" MandatoryKeywords="accessory" />
+      <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
+    </DropParams>
+    <MagicEffect EffectId="offensivespeed_final_percent">
+      <LoRoll CharacteristicFinalPercentFloat="-2" />
+      <HiRoll CharacteristicFinalPercentFloat="-2" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="ac_slave_offensivespeed_score_percent_11" Class="slave_accessory_11" AffixType="slave" Tier="11">
+    <DropParams Frequency="0">
+      <ItemLevel LevelMin="100" LevelMax="200" />
+      <Keywords OptionalKeywords="belt,amulet,ring" MandatoryKeywords="accessory" />
+      <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
+    </DropParams>
+    <MagicEffect EffectId="offensivespeed_final_percent">
+      <LoRoll CharacteristicFinalPercentFloat="-2" />
+      <HiRoll CharacteristicFinalPercentFloat="-3" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="ac_slave_offensivespeed_score_percent_12" Class="slave_accessory_12" AffixType="slave" Tier="12">
+    <DropParams Frequency="0">
+      <ItemLevel LevelMin="110" LevelMax="200" />
+      <Keywords OptionalKeywords="belt,amulet,ring" MandatoryKeywords="accessory" />
+      <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
+    </DropParams>
+    <MagicEffect EffectId="offensivespeed_final_percent">
+      <LoRoll CharacteristicFinalPercentFloat="-2" />
+      <HiRoll CharacteristicFinalPercentFloat="-3" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="ac_slave_life_leech_percent_global_1" Class="slave_accessory_1" AffixType="slave" Tier="1">
+    <DropParams Frequency="0">
+      <ItemLevel LevelMin="1" LevelMax="30" />
+      <Keywords OptionalKeywords="belt,amulet,ring" MandatoryKeywords="accessory" />
+      <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
+    </DropParams>
+    <MagicEffect EffectId="life_leech_percent_global">
+      <LoRoll DamagePercentFloat="-0.05" />
+      <HiRoll DamagePercentFloat="-0.05" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="ac_slave_life_leech_percent_global_2" Class="slave_accessory_2" AffixType="slave" Tier="2">
+    <DropParams Frequency="0">
+      <ItemLevel LevelMin="10" LevelMax="40" />
+      <Keywords OptionalKeywords="belt,amulet,ring" MandatoryKeywords="accessory" />
+      <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
+    </DropParams>
+    <MagicEffect EffectId="life_leech_percent_global">
+      <LoRoll DamagePercentFloat="-0.05" />
+      <HiRoll DamagePercentFloat="-0.05" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="ac_slave_life_leech_percent_global_3" Class="slave_accessory_3" AffixType="slave" Tier="3">
+    <DropParams Frequency="10000" Hunt="1">
+      <ItemLevel LevelMin="20" LevelMax="50" />
+      <Keywords OptionalKeywords="belt,amulet,ring" MandatoryKeywords="accessory" />
+      <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
+    </DropParams>
+    <MagicEffect EffectId="life_leech_percent_global">
+      <LoRoll DamagePercentFloat="-0.05" />
+      <HiRoll DamagePercentFloat="-0.05" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="ac_slave_life_leech_percent_global_4" Class="slave_accessory_4" AffixType="slave" Tier="4">
+    <DropParams Frequency="10000" Hunt="1">
+      <ItemLevel LevelMin="30" LevelMax="60" />
+      <Keywords OptionalKeywords="belt,amulet,ring" MandatoryKeywords="accessory" />
+      <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
+    </DropParams>
+    <MagicEffect EffectId="life_leech_percent_global">
+      <LoRoll DamagePercentFloat="-0.1" />
+      <HiRoll DamagePercentFloat="-0.1" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="ac_slave_life_leech_percent_global_5" Class="slave_accessory_5" AffixType="slave" Tier="5">
+    <DropParams Frequency="10000" Hunt="1">
+      <ItemLevel LevelMin="40" LevelMax="120" />
+      <Keywords OptionalKeywords="belt,amulet,ring" MandatoryKeywords="accessory" />
+      <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
+    </DropParams>
+    <MagicEffect EffectId="life_leech_percent_global">
+      <LoRoll DamagePercentFloat="-0.1" />
+      <HiRoll DamagePercentFloat="-0.1" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="ac_slave_life_leech_percent_global_6" Class="slave_accessory_6" AffixType="slave" Tier="6">
+    <DropParams Frequency="10000" Hunt="1">
+      <ItemLevel LevelMin="50" LevelMax="130" />
+      <Keywords OptionalKeywords="belt,amulet,ring" MandatoryKeywords="accessory" />
+      <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
+    </DropParams>
+    <MagicEffect EffectId="life_leech_percent_global">
+      <LoRoll DamagePercentFloat="-0.1" />
+      <HiRoll DamagePercentFloat="-0.1" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="ac_slave_life_leech_percent_global_7" Class="slave_accessory_7" AffixType="slave" Tier="7">
+    <DropParams Frequency="10000" Hunt="1">
+      <ItemLevel LevelMin="60" LevelMax="140" />
+      <Keywords OptionalKeywords="belt,amulet,ring" MandatoryKeywords="accessory" />
+      <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
+    </DropParams>
+    <MagicEffect EffectId="life_leech_percent_global">
+      <LoRoll DamagePercentFloat="-0.1" />
+      <HiRoll DamagePercentFloat="-0.1" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="ac_slave_life_leech_percent_global_8" Class="slave_accessory_8" AffixType="slave" Tier="8">
+    <DropParams Frequency="10000" Hunt="1">
+      <ItemLevel LevelMin="70" LevelMax="150" />
+      <Keywords OptionalKeywords="belt,amulet,ring" MandatoryKeywords="accessory" />
+      <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
+    </DropParams>
+    <MagicEffect EffectId="life_leech_percent_global">
+      <LoRoll DamagePercentFloat="-0.15" />
+      <HiRoll DamagePercentFloat="-0.15" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="ac_slave_life_leech_percent_global_9" Class="slave_accessory_9" AffixType="slave" Tier="9">
+    <DropParams Frequency="10000" Hunt="1">
+      <ItemLevel LevelMin="80" LevelMax="150" />
+      <Keywords OptionalKeywords="belt,amulet,ring" MandatoryKeywords="accessory" />
+      <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
+    </DropParams>
+    <MagicEffect EffectId="life_leech_percent_global">
+      <LoRoll DamagePercentFloat="-0.15" />
+      <HiRoll DamagePercentFloat="-0.15" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="ac_slave_life_leech_percent_global_10" Class="slave_accessory_10" AffixType="slave" Tier="10">
+    <DropParams Frequency="10000" Hunt="1">
+      <ItemLevel LevelMin="90" LevelMax="200" />
+      <Keywords OptionalKeywords="belt,amulet,ring" MandatoryKeywords="accessory" />
+      <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
+    </DropParams>
+    <MagicEffect EffectId="life_leech_percent_global">
+      <LoRoll DamagePercentFloat="-0.2" />
+      <HiRoll DamagePercentFloat="-0.2" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="ac_slave_life_leech_percent_global_11" Class="slave_accessory_11" AffixType="slave" Tier="11">
+    <DropParams Frequency="10000" Hunt="1">
+      <ItemLevel LevelMin="100" LevelMax="200" />
+      <Keywords OptionalKeywords="belt,amulet,ring" MandatoryKeywords="accessory" />
+      <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
+    </DropParams>
+    <MagicEffect EffectId="life_leech_percent_global">
+      <LoRoll DamagePercentFloat="-0.2" />
+      <HiRoll DamagePercentFloat="-0.2" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="ac_slave_life_leech_percent_global_12" Class="slave_accessory_12" AffixType="slave" Tier="12">
+    <DropParams Frequency="10000" Hunt="1">
+      <ItemLevel LevelMin="110" LevelMax="200" />
+      <Keywords OptionalKeywords="belt,amulet,ring" MandatoryKeywords="accessory" />
+      <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
+    </DropParams>
+    <MagicEffect EffectId="life_leech_percent_global">
+      <LoRoll DamagePercentFloat="-0.25" />
+      <HiRoll DamagePercentFloat="-0.25" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="ac_slave_attack_critical_strike_chance_1" Class="slave_accessory_1" AffixType="slave" Tier="1">
+    <DropParams Frequency="10000" Hunt="1">
+      <ItemLevel LevelMin="1" LevelMax="30" />
+      <Keywords OptionalKeywords="belt,amulet" MandatoryKeywords="accessory" />
+      <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
+    </DropParams>
+    <MagicEffect EffectId="criticalchance_attackskill_score_percent">
+      <LoRoll CharacteristicScorePercentInt="-4" />
+      <HiRoll CharacteristicScorePercentInt="-5" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="ac_slave_attack_critical_strike_chance_2" Class="slave_accessory_2" AffixType="slave" Tier="2">
+    <DropParams Frequency="10000" Hunt="1">
+      <ItemLevel LevelMin="10" LevelMax="40" />
+      <Keywords OptionalKeywords="belt,amulet" MandatoryKeywords="accessory" />
+      <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
+    </DropParams>
+    <MagicEffect EffectId="criticalchance_attackskill_score_percent">
+      <LoRoll CharacteristicScorePercentInt="-4" />
+      <HiRoll CharacteristicScorePercentInt="-6" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="ac_slave_attack_critical_strike_chance_3" Class="slave_accessory_3" AffixType="slave" Tier="3">
+    <DropParams Frequency="10000" Hunt="1">
+      <ItemLevel LevelMin="20" LevelMax="50" />
+      <Keywords OptionalKeywords="belt,amulet" MandatoryKeywords="accessory" />
+      <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
+    </DropParams>
+    <MagicEffect EffectId="criticalchance_attackskill_score_percent">
+      <LoRoll CharacteristicScorePercentInt="-5" />
+      <HiRoll CharacteristicScorePercentInt="-6" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="ac_slave_attack_critical_strike_chance_4" Class="slave_accessory_4" AffixType="slave" Tier="4">
+    <DropParams Frequency="10000" Hunt="1">
+      <ItemLevel LevelMin="30" LevelMax="60" />
+      <Keywords OptionalKeywords="belt,amulet" MandatoryKeywords="accessory" />
+      <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
+    </DropParams>
+    <MagicEffect EffectId="criticalchance_attackskill_score_percent">
+      <LoRoll CharacteristicScorePercentInt="-5" />
+      <HiRoll CharacteristicScorePercentInt="-6" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="ac_slave_attack_critical_strike_chance_5" Class="slave_accessory_5" AffixType="slave" Tier="5">
+    <DropParams Frequency="10000" Hunt="1">
+      <ItemLevel LevelMin="40" LevelMax="120" />
+      <Keywords OptionalKeywords="belt,amulet" MandatoryKeywords="accessory" />
+      <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
+    </DropParams>
+    <MagicEffect EffectId="criticalchance_attackskill_score_percent">
+      <LoRoll CharacteristicScorePercentInt="-5" />
+      <HiRoll CharacteristicScorePercentInt="-7" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="ac_slave_attack_critical_strike_chance_6" Class="slave_accessory_6" AffixType="slave" Tier="6">
+    <DropParams Frequency="10000" Hunt="1">
+      <ItemLevel LevelMin="50" LevelMax="130" />
+      <Keywords OptionalKeywords="belt,amulet" MandatoryKeywords="accessory" />
+      <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
+    </DropParams>
+    <MagicEffect EffectId="criticalchance_attackskill_score_percent">
+      <LoRoll CharacteristicScorePercentInt="-6" />
+      <HiRoll CharacteristicScorePercentInt="-7" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="ac_slave_attack_critical_strike_chance_7" Class="slave_accessory_7" AffixType="slave" Tier="7">
+    <DropParams Frequency="10000" Hunt="1">
+      <ItemLevel LevelMin="60" LevelMax="140" />
+      <Keywords OptionalKeywords="belt,amulet" MandatoryKeywords="accessory" />
+      <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
+    </DropParams>
+    <MagicEffect EffectId="criticalchance_attackskill_score_percent">
+      <LoRoll CharacteristicScorePercentInt="-6" />
+      <HiRoll CharacteristicScorePercentInt="-8" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="ac_slave_attack_critical_strike_chance_8" Class="slave_accessory_8" AffixType="slave" Tier="8">
+    <DropParams Frequency="10000" Hunt="1">
+      <ItemLevel LevelMin="70" LevelMax="150" />
+      <Keywords OptionalKeywords="belt,amulet" MandatoryKeywords="accessory" />
+      <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
+    </DropParams>
+    <MagicEffect EffectId="criticalchance_attackskill_score_percent">
+      <LoRoll CharacteristicScorePercentInt="-7" />
+      <HiRoll CharacteristicScorePercentInt="-9" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="ac_slave_attack_critical_strike_chance_9" Class="slave_accessory_9" AffixType="slave" Tier="9">
+    <DropParams Frequency="10000" Hunt="1">
+      <ItemLevel LevelMin="80" LevelMax="150" />
+      <Keywords OptionalKeywords="belt,amulet" MandatoryKeywords="accessory" />
+      <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
+    </DropParams>
+    <MagicEffect EffectId="criticalchance_attackskill_score_percent">
+      <LoRoll CharacteristicScorePercentInt="-8" />
+      <HiRoll CharacteristicScorePercentInt="-9" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="ac_slave_attack_critical_strike_chance_10" Class="slave_accessory_10" AffixType="slave" Tier="10">
+    <DropParams Frequency="10000" Hunt="1">
+      <ItemLevel LevelMin="90" LevelMax="200" />
+      <Keywords OptionalKeywords="belt,amulet" MandatoryKeywords="accessory" />
+      <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
+    </DropParams>
+    <MagicEffect EffectId="criticalchance_attackskill_score_percent">
+      <LoRoll CharacteristicScorePercentInt="-8" />
+      <HiRoll CharacteristicScorePercentInt="-10" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="ac_slave_attack_critical_strike_chance_11" Class="slave_accessory_11" AffixType="slave" Tier="11">
+    <DropParams Frequency="10000" Hunt="1">
+      <ItemLevel LevelMin="100" LevelMax="200" />
+      <Keywords OptionalKeywords="belt,amulet" MandatoryKeywords="accessory" />
+      <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
+    </DropParams>
+    <MagicEffect EffectId="criticalchance_attackskill_score_percent">
+      <LoRoll CharacteristicScorePercentInt="-9" />
+      <HiRoll CharacteristicScorePercentInt="-12" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="ac_slave_attack_critical_strike_chance_12" Class="slave_accessory_12" AffixType="slave" Tier="12">
+    <DropParams Frequency="10000" Hunt="1">
+      <ItemLevel LevelMin="110" LevelMax="200" />
+      <Keywords OptionalKeywords="belt,amulet" MandatoryKeywords="accessory" />
+      <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
+    </DropParams>
+    <MagicEffect EffectId="criticalchance_attackskill_score_percent">
+      <LoRoll CharacteristicScorePercentInt="-10" />
+      <HiRoll CharacteristicScorePercentInt="-13" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="ac_slave_status_ailment_chance_1" Class="slave_accessory_1" AffixType="slave" Tier="1">
+    <DropParams Frequency="10000" Hunt="1">
+      <ItemLevel LevelMin="1" LevelMax="30" />
+      <Keywords OptionalKeywords="belt,amulet" MandatoryKeywords="accessory" />
+      <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
+    </DropParams>
+    <MagicEffect EffectId="statusailment_inflict_score_percent">
+      <LoRoll CharacteristicScorePercentInt="-4" />
+      <HiRoll CharacteristicScorePercentInt="-5" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="ac_slave_status_ailment_chance_2" Class="slave_accessory_2" AffixType="slave" Tier="2">
+    <DropParams Frequency="10000" Hunt="1">
+      <ItemLevel LevelMin="10" LevelMax="40" />
+      <Keywords OptionalKeywords="belt,amulet" MandatoryKeywords="accessory" />
+      <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
+    </DropParams>
+    <MagicEffect EffectId="statusailment_inflict_score_percent">
+      <LoRoll CharacteristicScorePercentInt="-4" />
+      <HiRoll CharacteristicScorePercentInt="-6" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="ac_slave_status_ailment_chance_3" Class="slave_accessory_3" AffixType="slave" Tier="3">
+    <DropParams Frequency="10000" Hunt="1">
+      <ItemLevel LevelMin="20" LevelMax="50" />
+      <Keywords OptionalKeywords="belt,amulet" MandatoryKeywords="accessory" />
+      <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
+    </DropParams>
+    <MagicEffect EffectId="statusailment_inflict_score_percent">
+      <LoRoll CharacteristicScorePercentInt="-5" />
+      <HiRoll CharacteristicScorePercentInt="-6" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="ac_slave_status_ailment_chance_4" Class="slave_accessory_4" AffixType="slave" Tier="4">
+    <DropParams Frequency="10000" Hunt="1">
+      <ItemLevel LevelMin="30" LevelMax="60" />
+      <Keywords OptionalKeywords="belt,amulet" MandatoryKeywords="accessory" />
+      <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
+    </DropParams>
+    <MagicEffect EffectId="statusailment_inflict_score_percent">
+      <LoRoll CharacteristicScorePercentInt="-5" />
+      <HiRoll CharacteristicScorePercentInt="-6" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="ac_slave_status_ailment_chance_5" Class="slave_accessory_5" AffixType="slave" Tier="5">
+    <DropParams Frequency="10000" Hunt="1">
+      <ItemLevel LevelMin="40" LevelMax="120" />
+      <Keywords OptionalKeywords="belt,amulet" MandatoryKeywords="accessory" />
+      <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
+    </DropParams>
+    <MagicEffect EffectId="statusailment_inflict_score_percent">
+      <LoRoll CharacteristicScorePercentInt="-5" />
+      <HiRoll CharacteristicScorePercentInt="-7" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="ac_slave_status_ailment_chance_6" Class="slave_accessory_6" AffixType="slave" Tier="6">
+    <DropParams Frequency="10000" Hunt="1">
+      <ItemLevel LevelMin="50" LevelMax="130" />
+      <Keywords OptionalKeywords="belt,amulet" MandatoryKeywords="accessory" />
+      <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
+    </DropParams>
+    <MagicEffect EffectId="statusailment_inflict_score_percent">
+      <LoRoll CharacteristicScorePercentInt="-6" />
+      <HiRoll CharacteristicScorePercentInt="-7" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="ac_slave_status_ailment_chance_7" Class="slave_accessory_7" AffixType="slave" Tier="7">
+    <DropParams Frequency="10000" Hunt="1">
+      <ItemLevel LevelMin="60" LevelMax="140" />
+      <Keywords OptionalKeywords="belt,amulet" MandatoryKeywords="accessory" />
+      <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
+    </DropParams>
+    <MagicEffect EffectId="statusailment_inflict_score_percent">
+      <LoRoll CharacteristicScorePercentInt="-6" />
+      <HiRoll CharacteristicScorePercentInt="-8" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="ac_slave_status_ailment_chance_8" Class="slave_accessory_8" AffixType="slave" Tier="8">
+    <DropParams Frequency="10000" Hunt="1">
+      <ItemLevel LevelMin="70" LevelMax="150" />
+      <Keywords OptionalKeywords="belt,amulet" MandatoryKeywords="accessory" />
+      <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
+    </DropParams>
+    <MagicEffect EffectId="statusailment_inflict_score_percent">
+      <LoRoll CharacteristicScorePercentInt="-7" />
+      <HiRoll CharacteristicScorePercentInt="-9" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="ac_slave_status_ailment_chance_9" Class="slave_accessory_9" AffixType="slave" Tier="9">
+    <DropParams Frequency="10000" Hunt="1">
+      <ItemLevel LevelMin="80" LevelMax="160" />
+      <Keywords OptionalKeywords="belt,amulet" MandatoryKeywords="accessory" />
+      <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
+    </DropParams>
+    <MagicEffect EffectId="statusailment_inflict_score_percent">
+      <LoRoll CharacteristicScorePercentInt="-8" />
+      <HiRoll CharacteristicScorePercentInt="-9" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="ac_slave_status_ailment_chance_10" Class="slave_accessory_10" AffixType="slave" Tier="10">
+    <DropParams Frequency="10000" Hunt="1">
+      <ItemLevel LevelMin="90" LevelMax="200" />
+      <Keywords OptionalKeywords="belt,amulet" MandatoryKeywords="accessory" />
+      <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
+    </DropParams>
+    <MagicEffect EffectId="statusailment_inflict_score_percent">
+      <LoRoll CharacteristicScorePercentInt="-8" />
+      <HiRoll CharacteristicScorePercentInt="-10" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="ac_slave_status_ailment_chance_11" Class="slave_accessory_11" AffixType="slave" Tier="11">
+    <DropParams Frequency="10000" Hunt="1">
+      <ItemLevel LevelMin="100" LevelMax="200" />
+      <Keywords OptionalKeywords="belt,amulet" MandatoryKeywords="accessory" />
+      <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
+    </DropParams>
+    <MagicEffect EffectId="statusailment_inflict_score_percent">
+      <LoRoll CharacteristicScorePercentInt="-9" />
+      <HiRoll CharacteristicScorePercentInt="-12" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="ac_slave_status_ailment_chance_12" Class="slave_accessory_12" AffixType="slave" Tier="12">
+    <DropParams Frequency="10000" Hunt="1">
+      <ItemLevel LevelMin="110" LevelMax="200" />
+      <Keywords OptionalKeywords="belt,amulet" MandatoryKeywords="accessory" />
+      <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
+    </DropParams>
+    <MagicEffect EffectId="statusailment_inflict_score_percent">
+      <LoRoll CharacteristicScorePercentInt="-10" />
+      <HiRoll CharacteristicScorePercentInt="-13" />
+    </MagicEffect>
+  </Affix>
+</MetaData>

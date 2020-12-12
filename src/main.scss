@@ -55,6 +55,23 @@ ul.affixes {
   margin: 1em;
   margin-left: 0;
 }
+.enslaved-affixes-errs,
+.enslaved-affixes {
+  color: red;
+}
+.enslaved-affixes summary {
+  outline: none;
+}
+.enslaved-affixes ul {
+  padding-left: 1em;
+  margin: 1em;
+  margin-left: 0;
+}
+.enslaved-affixes li {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
 th.sticky {
   position: sticky;
   top: 0;

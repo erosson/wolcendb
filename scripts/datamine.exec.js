@@ -18,7 +18,7 @@ async function main() {
       "{localization,lang/*}/text_ui_{Loot,Activeskills,EIM,passiveskills,Endgame}.xml",
       "Game/Umbra/Loot/Armors/{Armors,Accessories,Armors_unique,UniquesAccessories,UniqueArmors}*",
       "Game/Umbra/Loot/Weapons/{Unique,}{Weapons,Shields}*",
-      "Game/Umbra/Loot/MagicEffects/Affixes/Armors_Weapons/Affixes{Implicit,Uniques,Armors,Weapons\.,Accessories,Gems}*",
+      "Game/Umbra/Loot/MagicEffects/Affixes/Armors_Weapons/Affixes{Implicit,Uniques,Armors,Weapons\.,Accessories,Gems,Master}*",
       "Game/Umbra/Skills/NewSkills/Player/Player_*",
       "Game/Umbra/Skills/Trees/ActiveSkills/*.xml",
       "Game/Umbra/SkinParams/WeaponSkins/CosmeticWeaponDescriptorBankGameplay.xml",

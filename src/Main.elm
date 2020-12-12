@@ -72,6 +72,7 @@ type alias Model =
     , filterGemFamilies : Set String
     , filterKeywords : Set String
     , filterGentypes : Set String
+    , filterXpack : Set String
     , cityPlayerLevel : Int
     , progress : Dict String ( Int, Int )
     }
@@ -115,6 +116,7 @@ init_ flags route nav =
     , filterGemFamilies = Set.empty
     , filterKeywords = Set.empty
     , filterGentypes = Set.empty
+    , filterXpack = Set.empty
     , cityPlayerLevel = 0
     , progress = Dict.empty
     }

@@ -11,6 +11,7 @@ import Html.Events as E exposing (..)
 import Lang exposing (Lang)
 import List.Extra
 import Maybe.Extra
+import Result.Extra
 import Route exposing (Route)
 import Set exposing (Set)
 import Util
@@ -74,6 +75,15 @@ view lang dm model =
 
                     else
                         List.filter (\a -> Set.member a.type_ model.filterGentypes)
+                   )
+                |> (if Set.member "sarisel" model.filterXpack then
+                        List.filter (\a -> a.drop.sarisel)
+
+                    else if Set.member "hunt" model.filterXpack then
+                        List.filter (\a -> a.drop.hunt)
+
+                    else
+                        identity
                    )
                 |> List.filter (View.AffixFilterForm.isVisible dm model)
                 |> View.Affix.affixesByClass
@@ -197,7 +207,10 @@ viewAffixRow : Lang -> Datamine -> Model m -> MagicAffix -> Html msg
 viewAffixRow lang dm model a =
     tr []
         [ td [] []
-        , td [] [ ul [ title a.affixId, class "affixes" ] <| View.Affix.viewAffix lang a ]
+        , td []
+            ((ul [ title a.affixId, class "affixes" ] <| View.Affix.viewAffix lang a)
+                :: View.Affix.viewAffixEnslaved lang dm a
+            )
 
         -- , td [] [ text <| Maybe.withDefault "???CLASS???" a.class ]
         , td [] [ text <| String.fromInt a.tier ]
@@ -237,6 +250,16 @@ viewAffixRow lang dm model a =
                     , class "badge badge-success"
                     ]
                     [ text "CraftOnly" ]
+                ]
+
+               else
+                []
+             , if a.drop.hunt then
+                [ span
+                    [ title "Hunt: Tributary affix; only spawns from Bloodtrail content"
+                    , class "badge badge-success"
+                    ]
+                    [ text "Hunt" ]
                 ]
 
                else

@@ -34,6 +34,7 @@ import Dict.Extra
 import Json.Decode as D
 import Json.Decode.Pipeline as P
 import List.Extra
+import Maybe.Extra
 import Result.Extra
 import Set exposing (Set)
 
@@ -76,6 +77,7 @@ type alias Datamine =
     , gemsByName : Dict String Gem
     , nonmagicAffixesById : Dict String NonmagicAffix
     , magicAffixesById : Dict String MagicAffix
+    , magicAffixesByClass : Dict String (List MagicAffix)
     , magicAffixesKeywords : List String
     , passivesByName : Dict String Passive
     , passiveTreesByName : Dict String PassiveTree
@@ -191,6 +193,10 @@ index raw =
     , gemsByName = raw.gems |> Dict.Extra.fromListBy (.name >> String.toLower)
     , nonmagicAffixesById = raw.affixes.nonmagic |> Dict.Extra.fromListBy (.affixId >> String.toLower)
     , magicAffixesById = raw.affixes.magic |> Dict.Extra.fromListBy (.affixId >> String.toLower)
+    , magicAffixesByClass =
+        raw.affixes.magic
+            |> List.filter (.class >> Maybe.Extra.isJust)
+            |> Dict.Extra.groupBy (.class >> Maybe.withDefault "" >> String.toLower)
     , magicAffixesKeywords =
         raw.affixes.magic
             |> List.concatMap (\a -> a.drop.mandatoryKeywords ++ a.drop.optionalKeywords)
