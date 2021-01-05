@@ -1,12 +1,12 @@
 #!/bin/bash
-set -eu
+set -euo pipefail
 echo 'I extract data from your Wolcen game files into ./datamine.tmp'
 echo 'deleting datamine.tmp in 3...'
-sleep 3
+#sleep 3
 rm -rf datamine* build*
 
 cd third-party/WolcenExtractor
-GAMEPATH="`cat ../../GAMEPATH`"
+GAMEPATH="`realpath ../../assets-dl/dist`"
 echo $GAMEPATH
 for file in `ls $GAMEPATH/localization`; do
   echo $file
