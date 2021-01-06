@@ -16,6 +16,7 @@ jobs:
           echo "::add-mask::${{ secrets.STEAMCTL_USER }}"
           echo "::add-mask::${{ secrets.STEAMCTL_PASSWD }}"
           echo "::add-mask::${{ secrets.STEAMCTL_SECRET }}"
+      - run: df -h
       - uses: actions/checkout@v2
       # https://github.com/marketplace/actions/setup-python
       - uses: actions/setup-python@v2
@@ -34,8 +35,10 @@ jobs:
           STEAMPULL_PASSWD: ${{ secrets.STEAMCTL_PASSWD }}
           STEAMPULL_SECRET: ${{ secrets.STEAMCTL_SECRET }}
         run: yarn fetch:auth
+      - run: df -h
       - working-directory: ./assets-dl
         run: yarn fetch
+      - run: df -h
 
       - working-directory: ./assets-dl
         run: |
@@ -60,7 +63,11 @@ jobs:
       - if: ${{ env.STEAM_DEPOT_INFO_DIFF != '' }}
         run: yarn export:install
       - if: ${{ env.STEAM_DEPOT_INFO_DIFF != '' }}
+        run: df -h
+      - if: ${{ env.STEAM_DEPOT_INFO_DIFF != '' }}
         run: yarn export
+      - if: ${{ env.STEAM_DEPOT_INFO_DIFF != '' }}
+        run: df -h
 
       # TODO img deployment; none of the above things actually change the website.
       # Maybe this part should auto-run when `/datamine/**` changes, so it runs only after a PR is merged?
