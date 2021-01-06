@@ -54,10 +54,10 @@ jobs:
           cat $GITHUB_ENV
       # Stop running if there's no info.txt differences
       # https://docs.github.com/en/free-pro-team@latest/actions/guides/building-and-testing-ruby
-      - if: ${{ env.STEAM_DEPOT_INFO_DIFF != '' }}
-        #uses: ruby/setup-ruby@v1
-        #with:
-        #  ruby-version: 2.6
+      #- if: ${{ env.STEAM_DEPOT_INFO_DIFF != '' }}
+      #  uses: ruby/setup-ruby@v1
+      #  with:
+      #    ruby-version: 2.6
       - if: ${{ env.STEAM_DEPOT_INFO_DIFF != '' }}
         run: yarn install --frozen-lockfile
       #- if: ${{ env.STEAM_DEPOT_INFO_DIFF != '' }}
