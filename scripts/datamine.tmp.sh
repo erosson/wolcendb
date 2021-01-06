@@ -8,13 +8,13 @@ rm -rf datamine* build*
 cd third-party/WolcenExtractor
 GAMEPATH="`realpath ../../assets-dl/depot`"
 echo $GAMEPATH
-# ./dist/wolcen_extractor.exe extract --source "$GAMEPATH" --dest ../../datamine.tmp --only english_xml.pak
-./dist/wolcen_extractor.exe extract --source "$GAMEPATH" --dest ../../datamine.tmp --only english_xml.pak,umbra.pak,Libs_UI_ --trace
+# ruby src/main.rb extract --source "$GAMEPATH" --dest ../../datamine.tmp --only english_xml.pak
+ruby src/main.rb extract --source "$GAMEPATH" --dest ../../datamine.tmp --only english_xml.pak,umbra.pak,Libs_UI_
 for file in `ls $GAMEPATH/localization`; do
   echo $file
   dest=../../datamine.tmp/lang/$file
   mkdir -p $dest
-  ./dist/wolcen_extractor.exe extract --source "$GAMEPATH" --dest $dest --only ../../datamine.tmp --trace
+  ruby src/main.rb extract --source "$GAMEPATH" --dest $dest --only ../../datamine.tmp --trace
   unzip $GAMEPATH/localization/$file -d $dest
 done
 cd -
