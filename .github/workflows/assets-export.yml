@@ -5,14 +5,7 @@ on:
   workflow_dispatch:
 
 jobs:
-  # linux must run `fetch`, as headless steam authentication requires pexpect which has poor windows support.
-  # windows must run `export`, as WolcenExtractor's keydumper + PakDecrypt are windows-only `exe`s.
-  #
-  # I don't like the complexity of two OSes here... but it works
-  #
-  # Based on similar code I wrote for path of exile and clicker heroes 2:
-  # https://github.com/mapwatch/mapwatch/blob/master/.github/workflows/ggpk-export.yml
-  # https://github.com/erosson/ch2plan/blob/master/.github/workflows/assets-export.yml
+  # windows must run this, as WolcenExtractor's keydumper + PakDecrypt are windows-only `exe`s.
   fetch:
     runs-on: ubuntu-latest
     steps:
@@ -25,81 +18,46 @@ jobs:
       - uses: actions/setup-python@v2
         with:
           python-version: 3.x
-      - run: pip install steamctl pexpect
+      # https://docs.github.com/en/free-pro-team@latest/actions/guides/building-and-testing-nodejs
+      - uses: actions/setup-node@v1
+        with:
+          node-version: 12.x
 
+      - working-directory: ./assets-dl
+        run: yarn fetch:install
       - working-directory: ./assets-dl
         env:
-          STEAMCTL_USER: ${{ secrets.STEAMCTL_USER }}
-          STEAMCTL_PASSWD: ${{ secrets.STEAMCTL_PASSWD }}
-          STEAMCTL_SECRET: ${{ secrets.STEAMCTL_SECRET }}
-        run: python steamctl-auth.py
-
-      # fetch if and only if there are info.txt differences
+          STEAMPULL_USER: ${{ secrets.STEAMCTL_USER }}
+          STEAMPULL_PASSWD: ${{ secrets.STEAMCTL_PASSWD }}
+          STEAMPULL_SECRET: ${{ secrets.STEAMCTL_SECRET }}
+        run: yarn fetch:auth
       - working-directory: ./assets-dl
         run: yarn fetch
-      - run: ls assets-dl/dist/
-      - run: ls assets-dl/dist/*
-      - run: exit 1
 
       - working-directory: ./assets-dl
         run: |
           echo 'STEAM_DEPOT_INFO_NEW<<__EOF__' >> $GITHUB_ENV
-          cat steam-depot-info.txt >> $GITHUB_ENV
+          cat info.txt >> $GITHUB_ENV
           echo '__EOF__' >> $GITHUB_ENV
           cat $GITHUB_ENV
       - working-directory: ./assets-dl
         run: |
           echo 'STEAM_DEPOT_INFO_DIFF<<__EOF__' >> $GITHUB_ENV
-          (diff steam-depot-info-old.txt steam-depot-info.txt || true) >> $GITHUB_ENV
+          (diff info-old.txt info.txt || true) >> $GITHUB_ENV
           echo '__EOF__' >> $GITHUB_ENV
           cat $GITHUB_ENV
       # Stop running if there's no info.txt differences
-      - if: ${{ env.STEAM_DEPOT_INFO_DIFF != '' }}
-        uses: actions/upload-artifact@v2
-        with:
-          name: assets-dl
-          path: assets-dl/dist/**/*
-          retention-days: 1
-      - if: ${{ env.STEAM_DEPOT_INFO_DIFF != '' }}
-        uses: actions/upload-artifact@v2
-        with:
-          name: assets-info
-          path: assets-dl/steam-depot-info.txt
-          retention-days: 1
-    outputs:
-      STEAM_DEPOT_INFO_NEW: ${{ env.STEAM_DEPOT_INFO_NEW }}
-      STEAM_DEPOT_INFO_DIFF: ${{ env.STEAM_DEPOT_INFO_DIFF }}
-  export:
-    needs: fetch
-    if: ${{ needs.fetch.outputs.STEAM_DEPOT_INFO_DIFF != '' }}
-    runs-on: windows-latest
-    steps:
-      - run: whoami
-      - uses: actions/checkout@v2
-      - uses: actions/download-artifact@v2
-        with:
-          name: assets-dl
-          path: assets-dl/dist
-      - uses: actions/download-artifact@v2
-        with:
-          name: assets-info
-          path: steam-depot-info.txt
-      - run: ls steam-depot-info.txt
-      - run: ls assets-dl/dist/
-      - run: ls assets-dl/dist/*
-      - run: rm assets-dl/steam-depot-info.txt
-      - run: mv steam-depot-info.txt assets-dl/steam-depot-info.txt
-      # https://docs.github.com/en/free-pro-team@latest/actions/guides/building-and-testing-nodejs
-      - uses: actions/setup-node@v1
-        with:
-          node-version: 12.x
       # https://docs.github.com/en/free-pro-team@latest/actions/guides/building-and-testing-ruby
-      - uses: ruby/setup-ruby@v1
+      - if: ${{ env.STEAM_DEPOT_INFO_DIFF != '' }}
+        uses: ruby/setup-ruby@v1
         with:
           ruby-version: 2.6
-      - run: yarn install --frozen-lockfile
-      - run: yarn export:install
-      - run: yarn export
+      - if: ${{ env.STEAM_DEPOT_INFO_DIFF != '' }}
+        run: yarn install --frozen-lockfile
+      - if: ${{ env.STEAM_DEPOT_INFO_DIFF != '' }}
+        run: yarn export:install
+      - if: ${{ env.STEAM_DEPOT_INFO_DIFF != '' }}
+        run: yarn export
 
       # TODO img deployment; none of the above things actually change the website.
       # Maybe this part should auto-run when `/datamine/**` changes, so it runs only after a PR is merged?
@@ -107,7 +65,8 @@ jobs:
       #- run: yarn deploy:img
 
       # https://peterevans.dev/posts/github-actions-how-to-create-pull-requests-automatically/
-      - name: Create pull request
+      - if: ${{ env.STEAM_DEPOT_INFO_DIFF != '' }}
+        name: Create pull request
         uses: peter-evans/create-pull-request@v3
         with:
           token: ${{ secrets.GITHUB_TOKEN }}

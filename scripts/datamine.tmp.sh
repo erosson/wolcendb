@@ -6,7 +6,7 @@ echo 'deleting datamine.tmp in 3...'
 rm -rf datamine* build*
 
 cd third-party/WolcenExtractor
-GAMEPATH="`realpath ../../assets-dl/dist`"
+GAMEPATH="`realpath ../../assets-dl/depot`"
 echo $GAMEPATH
 for file in `ls $GAMEPATH/localization`; do
   echo $file
