@@ -8,21 +8,16 @@
   "scripts": {
     "export:pull": "bash -c \"git subtree pull --squash --prefix third-party/WolcenExtractor git@github.com:gabriel-dehan/WolcenExtractor.git master && yarn export:install\"",
     "export:install": "bash -c \"gem install bundler && cd third-party/WolcenExtractor && bundle install\"",
-
     "export": "bash ./scripts/datamine.tmp.sh",
     "export:datamine": "node ./scripts/datamine.exec.js && yarn build:datamine",
     "build:datamine": "bash ./scripts/build-datamine.sh",
-
     "start": "bash -c \"ELM_DEBUGGER=false elm-app start\"",
-
     "build": "bash ./scripts/build.sh",
     "build:serve": "bash -c \"serve build\"",
-
     "build:img": "bash ./scripts/build-img.sh",
     "deploy:img": "bash ./scripts/build-img/deploy.sh",
     "deploy:img:pull": "bash ./scripts/build-img/pull.sh",
     "deploy:img:buildRevisions": "bash ./scripts/public/buildRevisions.sh",
-
     "build:ci": "bash -c \"CI=1 yarn build && yarn test\"",
     "test": "node tests/fixture.js && elm-app test"
   },
@@ -38,8 +33,8 @@
     "json-loader": "^0.5.7",
     "lodash": "^4.17.15",
     "mkdirp": "^1.0.3",
-    "node-sass": "^4.13.1",
     "raw-loader": "^4.0.0",
+    "sass": "^1.59.3",
     "sass-loader": "^8.0.2",
     "serve": "^11.3.0",
     "style-loader": "^1.1.3",
