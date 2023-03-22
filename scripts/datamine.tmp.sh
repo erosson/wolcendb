@@ -3,7 +3,7 @@ set -euo pipefail
 echo 'I extract data from your Wolcen game files into ./datamine.tmp'
 echo 'deleting datamine.tmp in 3...'
 #sleep 3
-rm -rf datamine* build*
+#rm -rf datamine* build*
 
 cd third-party/WolcenExtractor
 GAMEPATH="`realpath ../../assets-dl/depot`"
@@ -14,7 +14,7 @@ for file in `ls $GAMEPATH/localization`; do
   echo $file
   dest=../../datamine.tmp/lang/$file
   mkdir -p $dest
-  ruby src/main.rb extract --source "$GAMEPATH" --dest $dest --only ../../datamine.tmp --trace
+  #ruby src/main.rb extract --source "$GAMEPATH" --dest $dest --only ../../datamine.tmp --trace
   unzip $GAMEPATH/localization/$file -d $dest
 done
 cd -
