@@ -144,8 +144,8 @@
       <EIM Name="health_percent" HUDDesc="@ui_eim_health_percent" Permanent="1">
         <Semantics HealthPercentInt="5" />
       </EIM>
-      <EIM Name="health_regen_true_percent" HUDDesc="@ui_eim_health_regen_true_percent" Permanent="1">
-        <Semantics ResourcePercentInt="10" />
+      <EIM Name="health_regen_percent" HUDDesc="@ui_eim_health_regen_percent" Permanent="1">
+        <Semantics ResourcePercentFloat="10" />
       </EIM>
     </MagicEffects>
   </Spell>
@@ -198,8 +198,8 @@
       <EIM Name="health_percent" HUDDesc="@ui_eim_health_percent" Permanent="1">
         <Semantics HealthPercentInt="5" />
       </EIM>
-      <EIM Name="health_regen_true_percent" HUDDesc="@ui_eim_health_regen_true_percent" Permanent="1">
-        <Semantics ResourcePercentInt="10" />
+      <EIM Name="health_regen_percent" HUDDesc="@ui_eim_health_regen_percent" Permanent="1">
+        <Semantics ResourcePercentFloat="10" />
       </EIM>
     </MagicEffects>
   </Spell>

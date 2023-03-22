@@ -9,8 +9,8 @@
   <Title>Untitled Spreadsheet</Title>
   <Author>Unknown Creator</Author>
   <LastAuthor>Pierre Techoueyres</LastAuthor>
-  <Created>2020-11-30T17:18:13Z</Created>
-  <LastSaved>2020-11-30T17:18:13Z</LastSaved>
+  <Created>2020-12-15T08:28:50Z</Created>
+  <LastSaved>2020-12-15T08:28:50Z</LastSaved>
   <Company>Microsoft Corporation</Company>
   <Version>16.00</Version>
  </DocumentProperties>
@@ -18,8 +18,8 @@
   <AllowPNG/>
  </OfficeDocumentSettings>
  <ExcelWorkbook xmlns="urn:schemas-microsoft-com:office:excel">
-  <WindowHeight>13665</WindowHeight>
-  <WindowWidth>28770</WindowWidth>
+  <WindowHeight>32767</WindowHeight>
+  <WindowWidth>19275</WindowWidth>
   <WindowTopX>32767</WindowTopX>
   <WindowTopY>32767</WindowTopY>
   <ProtectStructure>False</ProtectStructure>
@@ -327,8 +327,8 @@
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s19"><Data ss:Type="String">ui_eim_attack_damage_bonus_from_last_spell</Data></Cell>
-    <Cell ss:StyleID="s25"><Data ss:Type="String">Attacks gain %1 additional Damage as the Damage Type of the last Spell cast during %4s</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">Angriffe erhalten %1 zusätzlichen Schaden als Schadenstyp des letzten Zaubers, der während der letzten %4s gewirkt wurde.</Data></Cell>
+    <Cell ss:StyleID="s25"><Data ss:Type="String">Attacks gain %1 additional Damage as the Damage Type of the last Spell cast during %2s</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">Angriffe erhalten %1 zusätzlichen Schaden als Schadenstyp des letzten Zaubers, der während der letzten %2s gewirkt wurde.</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -6195,8 +6195,8 @@
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s21"><Data ss:Type="String">ui_eim_stamina_regen_on_critical_hit</Data></Cell>
-    <Cell ss:StyleID="s25"><Data ss:Type="String">Critical Strikes regenerate %1 Stamina</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">Kritische Treffer regenerieren %1 Ausdauer</Data></Cell>
+    <Cell ss:StyleID="s25"><Data ss:Type="String">Critical Hits increase your Stamina regeneration rate by %1 during 3s</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">Kritische Treffer erhöhen deine Ausdauerregenerationsrate um %1 für 3s</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -6376,7 +6376,7 @@
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s18"><Data ss:Type="String">ui_HuntReward_LC_Armor_Legendary</Data></Cell>
     <Cell ss:StyleID="s27"><Data ss:Type="String">Your Prey will drop a Legendary Armor with a Tributary Affix</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">Deine Beute wird eine legendäre Rüstung mit einem tributpflichtigen Affix fallen lassen</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">Deine Beute wird eine legendäre Rüstung mit einem tributpflichtigen Affix fallen lassen.</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -6547,7 +6547,7 @@
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s18"><Data ss:Type="String">ui_huntmodifier_SpawnLieutenants</Data></Cell>
     <Cell ss:StyleID="s25"><Data ss:Type="String">Specialists will assist the Prey during the fight.</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">Spezialisten werden die Beute während des Kampfes unterstützen.</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">Spezialisten werden deine Beute während des Kampfes unterstützen.</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>

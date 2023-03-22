@@ -9,8 +9,8 @@
   <Title>Untitled Spreadsheet</Title>
   <Author>Unknown Creator</Author>
   <LastAuthor>Pierre Techoueyres</LastAuthor>
-  <Created>2020-11-27T08:19:23Z</Created>
-  <LastSaved>2020-11-27T08:19:23Z</LastSaved>
+  <Created>2020-12-15T08:28:50Z</Created>
+  <LastSaved>2020-12-15T08:28:50Z</LastSaved>
   <Company>Microsoft Corporation</Company>
   <Version>16.00</Version>
  </DocumentProperties>
@@ -18,8 +18,8 @@
   <AllowPNG/>
  </OfficeDocumentSettings>
  <ExcelWorkbook xmlns="urn:schemas-microsoft-com:office:excel">
-  <WindowHeight>12465</WindowHeight>
-  <WindowWidth>28770</WindowWidth>
+  <WindowHeight>32767</WindowHeight>
+  <WindowWidth>19275</WindowWidth>
   <WindowTopX>32767</WindowTopX>
   <WindowTopY>32767</WindowTopY>
   <ProtectStructure>False</ProtectStructure>
@@ -141,7 +141,7 @@
    <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s18"><Data ss:Type="String">ui_ast_skillselection</Data></Cell>
     <Cell ss:StyleID="s22"><Data ss:Type="String">Skill Selection</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">Wybór Umiejętności</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">Wybór umiejętności</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s18"><Data ss:Type="String">ui_ast_skillmodifiers</Data></Cell>
@@ -456,7 +456,7 @@
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s18"><Data ss:Type="String">ui_AST_Bomb_desc</Data></Cell>
     <Cell ss:StyleID="s22"><Data ss:Type="String">Fire a projectile that explodes, dealing damage in an area of effect.\n\n&lt;font color=&quot;#cb5316&quot;&gt;Attack:&lt;/font&gt; Only usable with daggers, bows and pistols.\n&lt;font color=&quot;#509FFF&quot;&gt;Skill Tags&lt;/font&gt;: &lt;b&gt;Attack&lt;/b&gt;, &lt;b&gt;Projectile&lt;/b&gt;, &lt;b&gt;Rogue&lt;/b&gt;, &lt;b&gt;Device&lt;/b&gt;.</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">Wystrzel pocisk, który eksploduje, zadając obrażenia w obszarze działania.\n\n&lt;font color=&quot;#cb5316&quot;&gt;Attack: &lt;/font&gt; Można używać tylko ze sztyletami, łukami i pistoletami.\n&lt;font color=&quot;#509FFF&quot;&gt;Cechy umiejętności&lt;/font&gt;: &lt;b&gt;atak&lt;/b&gt;, &lt;b&gt;pocisk&lt;/b&gt;, &lt;b&gt;łotr&lt;/b&gt;, &lt;b&gt;urządzenie&lt;/b&gt;.</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">Wystrzel pocisk, który eksploduje, zadając obrażenia w obszarze działania.\n\n&lt;font color=&quot;#cb5316&quot;&gt;Atak: &lt;/font&gt; Można używać tylko ze sztyletami, łukami i pistoletami.\n&lt;font color=&quot;#509FFF&quot;&gt;Cechy umiejętności&lt;/font&gt;: &lt;b&gt;atak&lt;/b&gt;, &lt;b&gt;pocisk&lt;/b&gt;, &lt;b&gt;łotr&lt;/b&gt;, &lt;b&gt;urządzenie&lt;/b&gt;.</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s18"><Data ss:Type="String">ui_AST_Bomb_Lore</Data></Cell>
@@ -1131,7 +1131,7 @@
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s18"><Data ss:Type="String">ui_Variant_ArrowsRain_variant_7_desc</Data></Cell>
     <Cell ss:StyleID="s22"><Data ss:Type="String">Increases the Critical Chance Score of Wailing Arrows.</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">Zwiększa wartość szansy na trafienie krytyczneLamentu Strzał.</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">Zwiększa wartość szansy na trafienie krytyczne Lamentu Strzał.</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s18"><Data ss:Type="String">ui_Variant_ArrowsRain_variant_8</Data></Cell>
@@ -2521,7 +2521,7 @@
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s18"><Data ss:Type="String">ui_Variant_Charge_variant_11_desc</Data></Cell>
     <Cell ss:StyleID="s24"><Data ss:Type="String">Increases the Damage dealt by Warpath based on your Block Chance.</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">Zwiększa obrażenia zadawane przezWojennym Traktem na podstawie szansy na blok.</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">Zwiększa obrażenia zadawane przez Wojenny Trakt na podstawie szansy na blok.</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s18"><Data ss:Type="String">ui_Variant_Charge_variant_12</Data></Cell>
@@ -7556,7 +7556,7 @@
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s18"><Data ss:Type="String">ui_Variant_Vortex_variant_10_desc</Data></Cell>
     <Cell ss:StyleID="s24"><Data ss:Type="String">When Anomaly is used while a vortex is still active, the vortex explodes, dealing Damage in an Area of Effect.</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">Kiedy Anomalia jest używana gdy wir jest nadal aktywny, wir eksploduje, zadając obrażenia w obszarze działania.</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">Kiedy Anomalia zostanie użyta, gdy wir jest nadal aktywny, wir eksploduje, zadając obrażenia w obszarze działania.</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s18"><Data ss:Type="String">ui_Variant_Vortex_variant_11</Data></Cell>
@@ -8171,7 +8171,7 @@
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s18"><Data ss:Type="String">ui_Variant_Vault_variant_6_desc</Data></Cell>
     <Cell ss:StyleID="s24"><Data ss:Type="String">Evasion leaves a Decoy that generates Threat at your starting location.</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">Uniknięcie pozostawia przynętę w starowej lokalizacji generującą poziom zagrożenia.</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">Uniknięcie pozostawia przynętę w startowej lokalizacji generującą poziom zagrożenia.</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s18"><Data ss:Type="String">ui_Variant_Vault_variant_7</Data></Cell>
@@ -10631,7 +10631,7 @@
    <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s19"><Data ss:Type="String">ui_AST_Param_Projectiles_BonusPierce</Data></Cell>
     <Cell ss:StyleID="s23"><Data ss:Type="String">Pierce Strength: %1 Target(s)</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">Siła przebicia: %1 przeciwników</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">Siła przebicia: %1 przeciwnik(ów)</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s19"><Data ss:Type="String">ui_AST_Param_SkillWeaponDamage</Data></Cell>
@@ -11046,7 +11046,7 @@
    <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s20"><Data ss:Type="String">ui_AST_ParamBonus_damage</Data></Cell>
     <Cell ss:StyleID="s29"><Data ss:Type="String">%1 Damage Bonus</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">%1 Premii do obrażeń</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">%1 premii do obrażeń</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s20"><Data ss:Type="String">ui_AST_ParamBonus_Cooldown</Data></Cell>

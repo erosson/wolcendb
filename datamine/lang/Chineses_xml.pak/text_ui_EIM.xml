@@ -9,8 +9,8 @@
   <Title>Untitled Spreadsheet</Title>
   <Author>Unknown Creator</Author>
   <LastAuthor>Pierre Techoueyres</LastAuthor>
-  <Created>2020-12-01T11:35:36Z</Created>
-  <LastSaved>2020-12-01T11:35:36Z</LastSaved>
+  <Created>2020-12-15T08:28:37Z</Created>
+  <LastSaved>2020-12-15T08:28:37Z</LastSaved>
   <Company>Microsoft Corporation</Company>
   <Version>16.00</Version>
  </DocumentProperties>
@@ -18,8 +18,8 @@
   <AllowPNG/>
  </OfficeDocumentSettings>
  <ExcelWorkbook xmlns="urn:schemas-microsoft-com:office:excel">
-  <WindowHeight>13665</WindowHeight>
-  <WindowWidth>28770</WindowWidth>
+  <WindowHeight>32767</WindowHeight>
+  <WindowWidth>19275</WindowWidth>
   <WindowTopX>32767</WindowTopX>
   <WindowTopY>32767</WindowTopY>
   <ProtectStructure>False</ProtectStructure>
@@ -247,7 +247,7 @@
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s19"><Data ss:Type="String">ui_eim_ailment_stacks_multiplier</Data></Cell>
     <Cell ss:StyleID="s27"><Data ss:Type="String">%1 Chance to multiply the number of Ailment Stacks applied by %2</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">%1几率使已造成的异常状态层数翻%2倍</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">%1几率使已造成的异常状态层数乘%2</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -327,8 +327,8 @@
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s19"><Data ss:Type="String">ui_eim_attack_damage_bonus_from_last_spell</Data></Cell>
-    <Cell ss:StyleID="s25"><Data ss:Type="String">Attacks gain %1 additional Damage as the Damage Type of the last Spell cast during %4s</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">攻击从最后一次施法获得该法术对应伤害类型的%1额外伤害，持续%4秒。</Data></Cell>
+    <Cell ss:StyleID="s25"><Data ss:Type="String">Attacks gain %1 additional Damage as the Damage Type of the last Spell cast during %2s</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">施放法术将给予%2秒内的下一次攻击%1额外伤害，额外伤害类型取决于该法术。</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -355,7 +355,7 @@
    <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s19"><Data ss:Type="String">ui_eim_attackspeed_score_percent</Data></Cell>
     <Cell ss:StyleID="s27"><Data ss:Type="String">%1 Attack Speed</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">%1攻击速度值</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">%1攻击速度</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -1786,7 +1786,7 @@
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s19"><Data ss:Type="String">ui_eim_damage_from_physical_resistance</Data></Cell>
     <Cell ss:StyleID="s27"><Data ss:Type="String">%1 Damage per percent of Physical Resistance</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">每拥有百分之一物理抗性%1伤害</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">每拥有百分之一物理抗性%1额外伤害</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -1840,7 +1840,7 @@
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s19"><Data ss:Type="String">ui_eim_damage_percent_as_fire</Data></Cell>
     <Cell ss:StyleID="s27"><Data ss:Type="String">%1 additional Damage dealt as Fire Damage</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">%1总伤害的额外火焰伤害</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">%1额外火焰伤害</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -1849,7 +1849,7 @@
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s19"><Data ss:Type="String">ui_eim_damage_percent_as_frost</Data></Cell>
     <Cell ss:StyleID="s27"><Data ss:Type="String">%1 additional Damage dealt as Frost Damage</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">%1总伤害的额外冰霜伤害</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">%1额外冰霜伤害</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -1858,7 +1858,7 @@
    <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s19"><Data ss:Type="String">ui_eim_damage_percent_as_lightning</Data></Cell>
     <Cell ss:StyleID="s27"><Data ss:Type="String">%1 additional Damage dealt as Lightning Damage</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">%1总伤害的额外闪电伤害</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">%1额外闪电伤害</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -1867,7 +1867,7 @@
    <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s19"><Data ss:Type="String">ui_eim_damage_percent_as_physical</Data></Cell>
     <Cell ss:StyleID="s27"><Data ss:Type="String">%1 additional Damage dealt as Physical Damage</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">%1总伤害的额外物理伤害</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">%1额外物理伤害</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -1876,7 +1876,7 @@
    <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s19"><Data ss:Type="String">ui_eim_damage_percent_as_rend</Data></Cell>
     <Cell ss:StyleID="s27"><Data ss:Type="String">%1 additional Damage dealt as Rend Damage</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">%1总伤害的额外撕裂伤害</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">%1额外撕裂伤害</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -1885,7 +1885,7 @@
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s19"><Data ss:Type="String">ui_eim_damage_percent_as_sacred</Data></Cell>
     <Cell ss:StyleID="s27"><Data ss:Type="String">%1 additional Damage dealt as Sacred Damage</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">%1总伤害的额外神圣伤害</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">%1额外神圣伤害</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -1894,7 +1894,7 @@
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s19"><Data ss:Type="String">ui_eim_damage_percent_as_shadow</Data></Cell>
     <Cell ss:StyleID="s27"><Data ss:Type="String">%1 additional Damage dealt as Shadow Damage</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">%1总伤害的额外暗影伤害</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">%1额外暗影伤害</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -1903,7 +1903,7 @@
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s19"><Data ss:Type="String">ui_eim_damage_percent_as_toxic</Data></Cell>
     <Cell ss:StyleID="s27"><Data ss:Type="String">%1 additional Damage dealt as Toxic Damage</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">%1总伤害的额外毒素伤害</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">%1额外毒素伤害</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -1912,7 +1912,7 @@
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s19"><Data ss:Type="String">ui_eim_damage_percent_as_umbra</Data></Cell>
     <Cell ss:StyleID="s27"><Data ss:Type="String">%1 additional Damage dealt as Aether Damage</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">%1总伤害的额外以太伤害</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">%1额外以太伤害</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -1948,7 +1948,7 @@
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s19"><Data ss:Type="String">ui_eim_damage_percent_if_only_one_nearby_enemy</Data></Cell>
     <Cell ss:StyleID="s27"><Data ss:Type="String">%1 Damage when only one Enemy is within a %2m radius</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">%2米距离内只有一个敌人时获得%1伤害加成</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">%2米距离内只有一个敌人时获得%1额外伤害</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -1957,7 +1957,7 @@
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s19"><Data ss:Type="String">ui_eim_damage_percent_if_only_one_nearby_enemy_damage</Data></Cell>
     <Cell ss:StyleID="s27"><Data ss:Type="String">%1 additional Damage to the Enemy within Clandestine Execution's radius</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">判定“附近”只有一个敌人时的伤害加成%1</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">判定“附近”只有一个敌人时%1额外伤害</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -1975,7 +1975,7 @@
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s19"><Data ss:Type="String">ui_eim_damage_percent_impaired</Data></Cell>
     <Cell ss:StyleID="s27"><Data ss:Type="String">%1 Damage to Enemies Slowed, Stunned, Frozen, or in Stasis</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">对移动受损的敌人伤害加成%1</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">对移动受损的敌人造成%1额外伤害</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -1984,7 +1984,7 @@
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s19"><Data ss:Type="String">ui_eim_damage_percent_per_enemy_ailment_stack_on_target_kill</Data></Cell>
     <Cell ss:StyleID="s25"><Data ss:Type="String">When you kill an Enemy, you increase the Damage Type corresponding to each Ailment Stack on that Enemy by %1 (up to %2 Stacks per Damage Type)</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">击杀敌人时，其身上每有一层异常状态，%1总伤害的额外伤害（该额外伤害类型对应异常状态类型），每种伤害类型最多%2层</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">击杀敌人时，其身上每有一层异常状态，%1额外伤害（伤害类型与异常状态类型对应），每种伤害类型最多%2层</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -1993,7 +1993,7 @@
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s19"><Data ss:Type="String">ui_eim_damage_percent_per_enemy_in_range</Data></Cell>
     <Cell ss:StyleID="s25"><Data ss:Type="String">%1 Damage per Enemy within a %3m radius</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">“附近”%3米距离内每有一个敌人获得%1伤害加成</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">“附近”%3米距离内每有一个敌人%1额外伤害</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -2029,7 +2029,7 @@
    <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s19"><Data ss:Type="String">ui_eim_damage_percent_per_rage_point</Data></Cell>
     <Cell ss:StyleID="s27"><Data ss:Type="String">%1 Damage per 100 remaining Rage points</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">每有100点未使用怒气获得%1伤害加成</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">每有100点未使用怒气获得%1额外伤害</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -2074,7 +2074,7 @@
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s19"><Data ss:Type="String">ui_eim_damage_percent_while_nobody_close</Data></Cell>
     <Cell ss:StyleID="s27"><Data ss:Type="String">%1 Damage when no Enemies are within %2m radius</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">%2米范围内没有敌人时，获得%1伤害加成</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">%2米范围内没有敌人时，获得%1额外伤害</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -2083,7 +2083,7 @@
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s19"><Data ss:Type="String">ui_eim_damage_percent_while_nobody_close_damage</Data></Cell>
     <Cell ss:StyleID="s31"><Data ss:Type="String">%1 additional Damage to Meditative Focus</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">判定周围没有敌人时的伤害加成%1</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">判定周围没有敌人时%1额外伤害</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -2452,7 +2452,7 @@
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s19"><Data ss:Type="String">ui_eim_elemental_cycling_percent</Data></Cell>
     <Cell ss:StyleID="s25"><Data ss:Type="String">%1 Elemental Damage to the next Elemental Spell if the previous Spell had a different base Element</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">施放一次元素法术后，若下一次施放的元素法术的基础元素伤害类型与上一次不同，则其获得%1元素伤害加成</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">施放一次元素法术后，若下一次施放的元素法术的基础元素伤害类型与上一次不同，则其造成的元素伤害%1额外伤害</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -3235,7 +3235,7 @@
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s19"><Data ss:Type="String">ui_eim_melee_damage_benefits_from_projectiles_bonuses</Data></Cell>
     <Cell ss:StyleID="s27"><Data ss:Type="String">Attacks benefit from %1 Projectile Damage</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">近战伤害获得针对投射物的Buff%1的增益</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">近战伤害获得投射物所享受加成%1的加成</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -3334,7 +3334,7 @@
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s19"><Data ss:Type="String">ui_eim_offensivespeed_score</Data></Cell>
     <Cell ss:StyleID="s27"><Data ss:Type="String">%1 Attack and Spell Casting Speed</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">%1攻击速度值和施法速度值</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">%1攻击速度和施法速度</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -3505,7 +3505,7 @@
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s19"><Data ss:Type="String">ui_eim_projectiles_damage_asdistance</Data></Cell>
     <Cell ss:StyleID="s27"><Data ss:Type="String">Projectile Damage scale by %1 with distance up to %3m</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">投射物伤害随距离提高，在%3米时达到最高%1</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">获得随距离增加的额外投射物伤害，在%3米时达到%1</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -3928,7 +3928,7 @@
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s19"><Data ss:Type="String">ui_eim_shield_regeneration_from_health_globes</Data></Cell>
     <Cell ss:StyleID="s27"><Data ss:Type="String">%1 Force Shield restoration from Health Globes</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">%1护盾从生命球获得回复</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">拾取生命球时回复%1护盾</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -3973,7 +3973,7 @@
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s19"><Data ss:Type="String">ui_eim_skillrequirement_keyword_fire</Data></Cell>
     <Cell ss:StyleID="s27"><Data ss:Type="String">Allows the Bearer to use Fire Skills</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">允许穿戴者施放火焰法术</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">允许穿戴者施放火焰技能</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -3982,7 +3982,7 @@
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s19"><Data ss:Type="String">ui_eim_skillrequirement_keyword_frost</Data></Cell>
     <Cell ss:StyleID="s27"><Data ss:Type="String">Allows the Bearer to use Frost Skills</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">允许穿戴者施放冰霜法术</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">允许穿戴者施放冰霜技能</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -3991,7 +3991,7 @@
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s19"><Data ss:Type="String">ui_eim_skillrequirement_keyword_lightning</Data></Cell>
     <Cell ss:StyleID="s27"><Data ss:Type="String">Allows the Bearer to use Lightning Skills</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">允许穿戴者施放闪电法术</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">允许穿戴者施放闪电技能</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -4000,7 +4000,7 @@
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s19"><Data ss:Type="String">ui_eim_skillrequirement_keyword_physical</Data></Cell>
     <Cell ss:StyleID="s27"><Data ss:Type="String">Allows the Bearer to use Physical Skills</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">允许穿戴者施放物理法术</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">允许穿戴者施放物理技能</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -4009,7 +4009,7 @@
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s19"><Data ss:Type="String">ui_eim_skillrequirement_keyword_rend</Data></Cell>
     <Cell ss:StyleID="s27"><Data ss:Type="String">Allows the Bearer to use Rend Skills</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">允许穿戴者施放撕裂法术</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">允许穿戴者施放撕裂技能</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -4018,7 +4018,7 @@
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s19"><Data ss:Type="String">ui_eim_skillrequirement_keyword_sacred</Data></Cell>
     <Cell ss:StyleID="s27"><Data ss:Type="String">Allows the Bearer to use Sacred Skills</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">允许穿戴者施放神圣法术</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">允许穿戴者施放神圣技能</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -4027,7 +4027,7 @@
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s19"><Data ss:Type="String">ui_eim_skillrequirement_keyword_shadow</Data></Cell>
     <Cell ss:StyleID="s27"><Data ss:Type="String">Allows the Bearer to use Shadow Skills</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">允许穿戴者施放暗影法术</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">允许穿戴者施放暗影技能</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -4036,7 +4036,7 @@
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s19"><Data ss:Type="String">ui_eim_skillrequirement_keyword_toxic</Data></Cell>
     <Cell ss:StyleID="s27"><Data ss:Type="String">Allows the Bearer to use Toxic Skills</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">允许穿戴者施放毒素法术</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">允许穿戴者施放毒素技能</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -4045,7 +4045,7 @@
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s19"><Data ss:Type="String">ui_eim_skillrequirement_keyword_umbra</Data></Cell>
     <Cell ss:StyleID="s27"><Data ss:Type="String">Allows the Bearer to use Aether Skills</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">允许穿戴者施放以太法术</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">允许穿戴者施放以太技能</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -4081,7 +4081,7 @@
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s19"><Data ss:Type="String">ui_eim_spellcastingspeed_score</Data></Cell>
     <Cell ss:StyleID="s27"><Data ss:Type="String">%1 Spell Casting Speed</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">%1施法速度值</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">%1施法速度</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -4090,7 +4090,7 @@
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s19"><Data ss:Type="String">ui_eim_spellcastingspeed_score_percent</Data></Cell>
     <Cell ss:StyleID="s27"><Data ss:Type="String">%1 Spell Casting Speed</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">%1施法速度值</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">%1施法速度</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -4099,7 +4099,7 @@
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s19"><Data ss:Type="String">ui_eim_stamina_regeneration_percent</Data></Cell>
     <Cell ss:StyleID="s31"><Data ss:Type="String">%1 Stamina Regeneration Rate</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">%1降低耐力回复速率</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">%1耐力回复速率</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -4999,7 +4999,7 @@
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s18"><Data ss:Type="String">ui_eim_minion_damage_percent</Data></Cell>
     <Cell ss:StyleID="s25"><Data ss:Type="String">%1 Damage dealt by Summons</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">召唤物造成的伤害%1</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">召唤物%1额外伤害</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -5026,7 +5026,7 @@
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s21"><Data ss:Type="String">ui_eim_burn_stacks_consumption_chance_for_instant_damage</Data></Cell>
     <Cell ss:StyleID="s25"><Data ss:Type="String">If you applied %2 Burn Stacks on an Enemy, you have %1 chance to consume them on Hit, increasing the Damage of your Hit by %3 per consumed Stack</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">若敌人身上的燃烧层数超过%2层，则你命中敌人时有%1几率消耗你施加的燃烧层数，每消耗一层，这一击获得%3伤害加成。</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">若敌人身上的燃烧层数超过%2层，则你命中敌人时有%1几率消耗你施加的燃烧层数，每消耗一层，这一击获得%3额外伤害。</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -5053,7 +5053,7 @@
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s21"><Data ss:Type="String">ui_eim_stack_anger_attack_speed</Data></Cell>
     <Cell ss:StyleID="s25"><Data ss:Type="String">%1 Attack Speed per &quot;Unleashed Fury&quot; point</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">每个“暴怒”点数%1攻击速度值</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">每个暴怒点数%1攻击速度</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -5089,7 +5089,7 @@
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s21"><Data ss:Type="String">ui_eim_stance_offensive_stats</Data></Cell>
     <Cell ss:StyleID="s25"><Data ss:Type="String">The &quot;Probing Weakness&quot; Stance reduces your All Resistance Score by %2 but gives you a %1 Chance to double Basic Attack Damage</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">“寻隙”姿态下，牺牲%2全抗值，使你造成的伤害有%1几率翻倍。</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">“寻隙”姿态下，牺牲%2全抗值，使你的普攻伤害有%1几率翻倍。</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -5098,7 +5098,7 @@
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s21"><Data ss:Type="String">ui_eim_stance_defensive_stats</Data></Cell>
     <Cell ss:StyleID="s25"><Data ss:Type="String">The &quot;Stalwart Resolve&quot; Stance reduces your Attack and Spell Damage by %3 but gives you an additional %1 Block Chance and %2 Block Efficiency</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">“忠贞”姿态下，牺牲%3的攻击、施法速度，获得%2格挡效果加成，以及你当前格挡几率%1的格挡几率。</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">“忠贞”姿态下，牺牲%3的攻击、施法速度，获得%2格挡效果加成和%1格挡几率加成。</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -5116,7 +5116,7 @@
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s18"><Data ss:Type="String">ui_eim_stance_defensive_stats_bonus</Data></Cell>
     <Cell ss:StyleID="s25"><Data ss:Type="String">Adds %1 Block Chance while &quot;Stalwart Resolve&quot; is active</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">“忠贞”姿态下获得的格挡几率加成的比例增加%1</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">“忠贞”姿态下获得的格挡几率加成增加%1</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -5215,7 +5215,7 @@
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s21"><Data ss:Type="String">ui_eim_fortress_damage_percent</Data></Cell>
     <Cell ss:StyleID="s25"><Data ss:Type="String">%1 Damage per &quot;Inexorable&quot; point</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">每个“岿然”点数%1伤害加成</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">每个“岿然”点数%1额外伤害</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -5269,7 +5269,7 @@
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s21"><Data ss:Type="String">ui_eim_stat_bonus_from_chest_armor_tank</Data></Cell>
     <Cell ss:StyleID="s25"><Data ss:Type="String">Heavy: Adds %1 of the armor piece All Resistance Score to your All Resistance Score</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">若装备重型胸甲，获得其全抗值%1的全抗值</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">若装备重型胸甲，获得其全抗值乘以%1的全抗值</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -5458,7 +5458,7 @@
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s21"><Data ss:Type="String">ui_eim_attunement_fire</Data></Cell>
     <Cell ss:StyleID="s25"><Data ss:Type="String">Fire triggers &quot;Abanazaar's Accord&quot; for %3s unless it is triggered again. You have %1 Damage when &quot;Abanazaar's Accord&quot; is active</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">除非被覆盖，“阿巴那扎的协议”会激活%3秒。“阿巴那扎的协议”激活时你获得%1伤害加成。</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">除非被覆盖，“阿巴那扎的协议”会激活%3秒。“阿巴那扎的协议”激活时你获得%1额外伤害。</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -5548,7 +5548,7 @@
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s21"><Data ss:Type="String">ui_eim_stack_hybrid_attack_speed</Data></Cell>
     <Cell ss:StyleID="s25"><Data ss:Type="String">%1 Attack Speed per Earthly Paradox point</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">每个“尘世悖论”点数%1攻击速度值</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">每个“尘世悖论”点数%1攻击速度</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -5557,7 +5557,7 @@
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s21"><Data ss:Type="String">ui_eim_stack_hybrid_cast_speed</Data></Cell>
     <Cell ss:StyleID="s25"><Data ss:Type="String">%1 Spell Casting Speed per Supernatural Paradox point</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">每个“超凡悖论”点数%1施法速度值</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">每个“超凡悖论”点数%1施法速度</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -5593,7 +5593,7 @@
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s21"><Data ss:Type="String">ui_eim_dead_enemies_may_spawn_green_globes</Data></Cell>
     <Cell ss:StyleID="s25"><Data ss:Type="String">Enemies that die in %1m radius around you have %2 chance to drop green globes. Picking up green globes gives you an additional %3 Damage as Poison Damage per green globe during %4s</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">在你身边%1米内死亡的敌人有%2几率掉落绿球。拾取绿球授予你相当于总伤害%3的额外毒素伤害，持续%4秒</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">在你身边%1米内死亡的敌人有%2几率掉落绿球。拾取每个绿球授予你%3额外毒素伤害，持续%4秒</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -5602,7 +5602,7 @@
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s21"><Data ss:Type="String">ui_eim_dead_summons_may_spawn_green_globes</Data></Cell>
     <Cell ss:StyleID="s25"><Data ss:Type="String">Summons that die in a %1m radius also have %2 chance to drop green globes. Picking up green globes gives you an additional %3 Damage as Poison Damage per green globe during %4s</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">在你身边%1米内死亡的召唤物有%2几率掉落绿球。拾取绿球授予你相当于总伤害%3的额外毒素伤害，持续%4秒</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">在你身边%1米内死亡的召唤物也有%2几率掉落绿球。拾取每个绿球授予你%3额外毒素伤害，持续%4秒</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -5710,7 +5710,7 @@
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s21"><Data ss:Type="String">ui_eim_damage_on_purged_weakness_stacks</Data></Cell>
     <Cell ss:StyleID="s25"><Data ss:Type="String">Weakness Stacks removed give %1 Increased Damage to you and your Allies in a %2m radius during %3s</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">移除虚弱层数时，你和周围%2米范围内的盟友获得%1伤害加成，持续%3秒。</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">移除虚弱层数时，你和周围%2米范围内的盟友获得%1额外伤害，持续%3秒。</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -5719,7 +5719,7 @@
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s21"><Data ss:Type="String">ui_eim_heal_on_purged_dot_stacks</Data></Cell>
     <Cell ss:StyleID="s25"><Data ss:Type="String">Damage over Time Stacks removed restore %1% of your maximum Health and Force Shield</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">移除造成持续伤害的异常状态层数时，为你恢复%1的最大生命值和%1的最大护盾值</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">移除造成持续伤害的异常状态层数时，为你恢复%1%的最大生命值和%1%的最大护盾值</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -5755,7 +5755,7 @@
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s21"><Data ss:Type="String">ui_eim_material_damage_on_elites</Data></Cell>
     <Cell ss:StyleID="s25"><Data ss:Type="String">When a Champion or a Boss is killed, you gain 1 &quot;Headhunter&quot; point that gives %1 Material Damage per point. &quot;Headhunter&quot; points reset after %2s</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">每次击杀一个将级或更高级敌人时，获得1个“猎首”点数，点数会在%2秒后重置。“猎首”点数授予%1物质伤害加成</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">每次击杀一个将级敌人或Boss时，获得1个“猎首”点数，每个“猎首”点数使物质伤害造成%1额外伤害。“猎首”点数会在%2秒后重置。</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -5800,7 +5800,7 @@
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s21"><Data ss:Type="String">ui_eim_stack_bullet_proj_damage</Data></Cell>
     <Cell ss:StyleID="s25"><Data ss:Type="String">Each point of &quot;Annointed Ammunition&quot; gives you %1 Projectile Damage</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">每拥有一个“擦枪”点数%1投射物伤害加成</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">每拥有一个“擦枪”点数%1额外投射物伤害</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -5809,7 +5809,7 @@
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s21"><Data ss:Type="String">ui_eim_stack_bullet_melee_damage</Data></Cell>
     <Cell ss:StyleID="s25"><Data ss:Type="String">Each empty &quot;Annointed Ammunition&quot; point gives you %1 Melee Damage</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">每个未填装的“擦枪”点数%1近战伤害加成</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">每个未填装的“擦枪”点数%1额外近战伤害</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -5818,7 +5818,7 @@
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s21"><Data ss:Type="String">ui_eim_remaining_pierce_as_damage</Data></Cell>
     <Cell ss:StyleID="s25"><Data ss:Type="String">Each remaining Pierce on a Projectile increases its Damage by %1</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">投射物击中一个敌人后每剩余一个穿透数对敌人造成的伤害%1</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">投射物的每个剩余穿透数为其提供%1额外伤害</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -5845,7 +5845,7 @@
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s21"><Data ss:Type="String">ui_eim_frost_damage_bonus_on_chained_projectiles</Data></Cell>
     <Cell ss:StyleID="s25"><Data ss:Type="String">%1 additional Damage dealt as Frost Damage to Projectiles that have bounced</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">弹跳的投射物获得%1总伤害的额外冰霜伤害。</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">弹跳的投射物获得%1额外冰霜伤害。</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -5872,7 +5872,7 @@
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s21"><Data ss:Type="String">ui_eim_stacks_hunter_damage</Data></Cell>
     <Cell ss:StyleID="s25"><Data ss:Type="String">%1 Damage per &quot;Cold Blooded&quot; point</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">每个“冷血”点数%1伤害加成</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">每个“冷血”点数%1额外伤害</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -5881,7 +5881,7 @@
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s21"><Data ss:Type="String">ui_eim_attack_speed_on_critical_hit</Data></Cell>
     <Cell ss:StyleID="s25"><Data ss:Type="String">%1 Attack Speed Multiplier during %3s on Critical Hit</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">暴击后的%3秒内%1攻击速度值</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">暴击后的%3秒内%1攻击速度修正</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -5908,7 +5908,7 @@
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s21"><Data ss:Type="String">ui_eim_stack_gadget_damage</Data></Cell>
     <Cell ss:StyleID="s25"><Data ss:Type="String">Device and Lightning Skills Damage increased by %1 multiplied by your current points of &quot;Power Charge&quot;</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">装置和闪电基础伤害的技能会获得当前“电荷”点数数值乘以%1的伤害加成</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">装置和闪电技能会获得当前“电荷”点数数值乘以%1的额外伤害</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -5917,7 +5917,7 @@
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s21"><Data ss:Type="String">ui_eim_stack_focus_damage</Data></Cell>
     <Cell ss:StyleID="s25"><Data ss:Type="String">Basic Attacks generate 1 &quot;Overload&quot; point, up to %1 points. Each point increases Damage by %2. Using a Skill consumes all &quot;Overload&quot; points and deals double Damage</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">每个“过载”点数%2伤害。普攻会生成1“过载”点数，最多达到%1点。使用任意技能会消耗所有“过载”点数并为这次技能提供它们双倍的伤害加成 </Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">每个“过载”点数%2额外伤害。普攻会生成1“过载”点数，最多达到%1点。使用任意技能会消耗所有“过载”点数并为这次技能提供两倍“过载”点数的额外伤害</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -5944,7 +5944,7 @@
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s21"><Data ss:Type="String">ui_eim_stack_balance_mixed_bonus</Data></Cell>
     <Cell ss:StyleID="s25"><Data ss:Type="String">When the points weight 6/4, 5/5, or 4/6, you are in Equilibrium. Your Attacks gain %1 of Spell Damage bonuses and your Spells %1 of Attack Damage bonuses</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">处于“均衡”状态时，你获得法术伤害加成%1的攻击伤害加成，获得攻击伤害加成%1的法术伤害加成</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">处于“均衡”状态时，施放法术后的所有攻击获得%1额外伤害，发动攻击后的所有法术获得%1额外伤害</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -5989,7 +5989,7 @@
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s21"><Data ss:Type="String">ui_eim_active_dodge_makes_invisible</Data></Cell>
     <Cell ss:StyleID="s25"><Data ss:Type="String">Using the Active Dodge makes you invisible for %1s. Using a Skill removes the invisibility and deals %2 Skill damage as additional Shadow damage. %3s Cooldown</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">你翻滚后会隐身%1秒。隐身时，你下次施放的技能获得%2伤害加成，使用技能即打破隐身。该效果有%3秒冷却时间。  </Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">你翻滚后会隐身%1秒。隐身时，你下次施放的技能获得%2额外暗影伤害，使用技能即打破隐身。该效果有%3秒冷却时间。</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -6016,7 +6016,7 @@
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s21"><Data ss:Type="String">ui_eim_damage_from_shield_block_chance</Data></Cell>
     <Cell ss:StyleID="s25"><Data ss:Type="String">Damage increased by %1 multiplied by your equipped Shield Block Chance</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">获得手上盾牌的格挡率乘以%1的伤害加成</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">获得手上盾牌的格挡率乘以%1的额外伤害</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -6195,8 +6195,8 @@
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s21"><Data ss:Type="String">ui_eim_stamina_regen_on_critical_hit</Data></Cell>
-    <Cell ss:StyleID="s25"><Data ss:Type="String">Critical Strikes regenerate %1 Stamina</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">暴击时回复%1点耐力</Data></Cell>
+    <Cell ss:StyleID="s25"><Data ss:Type="String">Critical Hits increase your Stamina regeneration rate by %1 during 3s</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">暴击后的3秒内，你的耐力回复速率提高%1</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -6295,7 +6295,7 @@
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s18"><Data ss:Type="String">ui_huntmodifier_eim</Data></Cell>
     <Cell ss:StyleID="s27"><Data ss:Type="String">The Prey has %1</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">Boss受到%1影响</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">猎物%1</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -6304,7 +6304,7 @@
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s18"><Data ss:Type="String">ui_huntmodifier_eim_damage</Data></Cell>
     <Cell ss:StyleID="s27"><Data ss:Type="String">The Prey deals %1</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">猎物造成%1</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">猎物%1</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -6322,7 +6322,7 @@
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s18"><Data ss:Type="String">ui_eim_breakbar_percent</Data></Cell>
     <Cell ss:StyleID="s27"><Data ss:Type="String">%1 to its Break Bar</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">%1至破绽条</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">破绽条%1</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>

@@ -164,14 +164,14 @@
   <Spell Name="REPU_19" UIName="@ui_REPU_19_name" HUDLoreDesc="@ui_REPU_19_loredesc" GameplayDesc="@ui_REPU_19_gameplaydesc">
     <MagicEffects>
       <EIM Name="material_damage_on_elites" HUDDesc="@ui_eim_material_damage_on_elites" Permanent="1">
-        <Semantics PSTStackResetTimer="90" PSTStackMaxCountInt="5" DamagePercentFloat="50" />
+        <Semantics PSTStackResetTimer="30" PSTStackMaxCountInt="5" DamagePercentFloat="20" />
       </EIM>
     </MagicEffects>
   </Spell>
   <Spell Name="REPU_20" UIName="@ui_REPU_20_name" HUDLoreDesc="" GameplayDesc="">
     <MagicEffects>
       <EIM Name="material_damage_on_elites" HUDDesc="@ui_eim_material_damage_on_elites_timer" Permanent="1">
-        <Semantics PSTStackResetTimer="120" />
+        <Semantics PSTStackResetTimer="40" />
       </EIM>
     </MagicEffects>
   </Spell>

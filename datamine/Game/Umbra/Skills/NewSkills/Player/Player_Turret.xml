@@ -5,7 +5,7 @@
     <HUD HUDPicture="../u_resources/spells/Active_Skills/turret_Physical.png" UIName="@ui_AST_Turret" Lore="@ui_AST_Turret_Lore" ActiveEffectTitle="" ActiveEffectDesc="" ASTTreeNumber="1" ShowParamsInAST="Cost,ROSTime,Cooldown,Range,Projectiles,DamageDetail,DamageWeapon,DamageCritical,StatusAilmentsChance,SpecificTurret" ShowParamsInTooltip="Cost,Cooldown,DamageOverview,StatusAilmentsChance,SpecificTurret" />
     <Enneract PickableParticle_MoveToGround="U_CommonVFX_02.Esseract.Esseract_Projectile.Physical" PickableParticle_OnGround_Shape="U_CommonVFX_02.Esseract.Esseract_Shape.Circle_Physical" PickableParticle_OnGround_Damage="U_CommonVFX_02.Esseract.Esseract_Color.Physical" PickableParticle_OnGround_Symbol="U_CommonVFX_02.Esseract.Esseract_Symbol.HEPHAARON" PickableParticle_OnGround_Indicator="U_CommonVFX_02.Esseract.Esseract_Indicator.Physical" PickableParticle_OnGround_Pickup="U_CommonVFX_02.Esseract.Esseract_Loot.Physical" SkillLearningParticle="U_CommonVFX.Skill_Learn.Skill_Learn_Physical" Inventory_HUDPicture="../u_resources/enneracts/turret.png" Inventory_LoreDesc="@ui_enneract_lore" />
     <Range AttackRange="25" />
-    <Projectile Name="player_turret_proj" ProjectileCount="1" AngleBetweenProjectiles="1" />
+    <Projectile Name="player_turret_proj" ProjectileCount="1" AngleBetweenProjectiles="1" BaseDamageBonusPercentPerNonUsedProjectile="20" />
     <Aggression TargetValueOnHit="40" />
     <DamageWeapon WeaponMultiplier="0.6" />
     <StatusAilment AilmentEffectiveness="50" />

@@ -9,8 +9,8 @@
   <Title>Untitled Spreadsheet</Title>
   <Author>Unknown Creator</Author>
   <LastAuthor>Pierre Techoueyres</LastAuthor>
-  <Created>2020-11-30T17:18:10Z</Created>
-  <LastSaved>2020-11-30T17:18:10Z</LastSaved>
+  <Created>2020-12-17T10:13:12Z</Created>
+  <LastSaved>2020-12-17T10:13:12Z</LastSaved>
   <Company>Microsoft Corporation</Company>
   <Version>16.00</Version>
  </DocumentProperties>
@@ -18,8 +18,8 @@
   <AllowPNG/>
  </OfficeDocumentSettings>
  <ExcelWorkbook xmlns="urn:schemas-microsoft-com:office:excel">
-  <WindowHeight>13665</WindowHeight>
-  <WindowWidth>28770</WindowWidth>
+  <WindowHeight>32767</WindowHeight>
+  <WindowWidth>19275</WindowWidth>
   <WindowTopX>32767</WindowTopX>
   <WindowTopY>32767</WindowTopY>
   <ProtectStructure>False</ProtectStructure>
@@ -327,8 +327,8 @@
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s19"><Data ss:Type="String">ui_eim_attack_damage_bonus_from_last_spell</Data></Cell>
-    <Cell ss:StyleID="s25"><Data ss:Type="String">Attacks gain %1 additional Damage as the Damage Type of the last Spell cast during %4s</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">Les attaques gagnent %1 de dégâts supplémentaires en tant que type de dégâts du dernier sort lancé pendant %4 s</Data></Cell>
+    <Cell ss:StyleID="s25"><Data ss:Type="String">Attacks gain %1 additional Damage as the Damage Type of the last Spell cast during %2s</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">Les attaques gagnent %1 de dégâts supplémentaires en tant que type de dégâts du dernier sort lancé pendant %2 s</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -6177,8 +6177,8 @@
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s21"><Data ss:Type="String">ui_eim_explosion_on_target_kill</Data></Cell>
-    <Cell ss:StyleID="s25"><Data ss:Type="String">Enemies explode in an Area of Effect when they are killed and deal %1 Weapon Damage</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">Les ennemis déclenchent une explosion de zone en mourant et infligent %1 de dégâts de votre arme</Data></Cell>
+    <Cell ss:StyleID="s25"><Data ss:Type="String">Enemies explode in an Area of Effect when they are killed and deal %3 Weapon Damage</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">Les ennemis déclenchent une explosion de zone en mourant et infligent %3 de dégâts de votre arme</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -6186,8 +6186,8 @@
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s21"><Data ss:Type="String">ui_eim_explosion_on_globe_pickup</Data></Cell>
-    <Cell ss:StyleID="s25"><Data ss:Type="String">Globes explode in an Area of Effect when they are picked up and deal %1 Weapon Damage</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">Les globes déclenchent une explosion de zone au ramassage, et infligent %1 de dégâts de votre arme</Data></Cell>
+    <Cell ss:StyleID="s25"><Data ss:Type="String">Globes explode in an Area of Effect when they are picked up and deal %3 Weapon Damage</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">Les globes déclenchent une explosion de zone au ramassage, et infligent %3 de dégâts de votre arme</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -6195,8 +6195,8 @@
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s21"><Data ss:Type="String">ui_eim_stamina_regen_on_critical_hit</Data></Cell>
-    <Cell ss:StyleID="s25"><Data ss:Type="String">Critical Strikes regenerate %1 Stamina</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">Les coups critiques régénèrent %1 de votre endurance</Data></Cell>
+    <Cell ss:StyleID="s25"><Data ss:Type="String">Critical Hits increase your Stamina regeneration rate by %1 during 3s</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">Les coups critiques augmentent votre vitesse de régénération d'endurance de %1 pendant 3&#160;s</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>

@@ -9,8 +9,8 @@
   <Title>Untitled Spreadsheet</Title>
   <Author>Unknown Creator</Author>
   <LastAuthor>Pierre Techoueyres</LastAuthor>
-  <Created>2020-11-24T09:43:19Z</Created>
-  <LastSaved>2020-11-24T09:43:19Z</LastSaved>
+  <Created>2020-12-15T08:28:49Z</Created>
+  <LastSaved>2020-12-15T08:28:49Z</LastSaved>
   <Company>Microsoft Corporation</Company>
   <Version>16.00</Version>
  </DocumentProperties>
@@ -18,8 +18,8 @@
   <AllowPNG/>
  </OfficeDocumentSettings>
  <ExcelWorkbook xmlns="urn:schemas-microsoft-com:office:excel">
-  <WindowHeight>13065</WindowHeight>
-  <WindowWidth>28770</WindowWidth>
+  <WindowHeight>32767</WindowHeight>
+  <WindowWidth>19275</WindowWidth>
   <WindowTopX>32767</WindowTopX>
   <WindowTopY>32767</WindowTopY>
   <ProtectStructure>False</ProtectStructure>
@@ -212,7 +212,7 @@
    <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s18"><Data ss:Type="String">ui_PSTUI_RemoveAllPoints_Button</Data></Cell>
     <Cell ss:StyleID="s24"><Data ss:Type="String">Remove all</Data></Cell>
-    <Cell ss:StyleID="s19"><Data ss:Type="String">Remove all</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Сбросить всё</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s18"><Data ss:Type="String">ui_PSTUI_RemoveAllPoints_Confirmation</Data></Cell>
@@ -232,7 +232,7 @@
    <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s19"><Data ss:Type="String">ui_PST_node_not_leaf</Data></Cell>
     <Cell ss:StyleID="s24"><Data ss:Type="String">You cannot select this node without selecting its child nodes first.</Data></Cell>
-    <Cell ss:StyleID="s19"><Data ss:Type="String">You cannot select this node without selecting its child nodes first.</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Вы не можете выбрать данный узел не выбрав сперва дочерние узлы.</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s19"><Data ss:Type="String">ui_PST_no_nodes_to_reset</Data></Cell>
@@ -257,7 +257,7 @@
    <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s18"><Data ss:Type="String">ui_PSTUI_CurrentPrimordialAffinity</Data></Cell>
     <Cell ss:StyleID="s25"><Data ss:Type="String">Current Primordial Affinity: %1</Data></Cell>
-    <Cell ss:StyleID="s19"><Data ss:Type="String">Current Primordial Affinity: %1</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Текущая Благосклонность Предтеч: %1</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s18"><Data ss:Type="String">ui_PSTUI_CannotResetPointsWhilePendingNodes_Error</Data></Cell>
@@ -577,7 +577,7 @@
    <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s19"><Data ss:Type="String">ui_WARR_16_desc</Data></Cell>
     <Cell ss:StyleID="s24"><Data ss:Type="String">When you deal damage, you leech life and heal yourself on the next health regeneration tick.</Data></Cell>
-    <Cell ss:StyleID="s19"><Data ss:Type="String">Добавляет кражу здоровья всем типам повреждений. Кража здоровья восстановит здоровье при следующем срабатывании восстановления здоровья.</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">При нанесении урона вы воруете здоровье и лечите себя при следующем импульсе восстановления здоровья.</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s19"><Data ss:Type="String">ui_WARR_17_name</Data></Cell>
@@ -757,7 +757,7 @@
    <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s18"><Data ss:Type="String">ui_TANK_5_desc</Data></Cell>
     <Cell ss:StyleID="s24"><Data ss:Type="String">Trigger a resistance buff when you block.</Data></Cell>
-    <Cell ss:StyleID="s19"><Data ss:Type="String">Блокирование урона предоставляет вам и вашим союзникам усиление рейтинга всех сопротивлений.</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Активирует усиление сопротивлений при блокировании урона.</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s18"><Data ss:Type="String">ui_TANK_6_name</Data></Cell>
@@ -1652,7 +1652,7 @@
    <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s18"><Data ss:Type="String">ui_DIST_39_name</Data></Cell>
     <Cell ss:StyleID="s24"><Data ss:Type="String">Recovery</Data></Cell>
-    <Cell ss:StyleID="s19"><Data ss:Type="String">Recovery</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Восстановление</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s18"><Data ss:Type="String">ui_DIST_40_name</Data></Cell>
@@ -1832,17 +1832,17 @@
    <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s18"><Data ss:Type="String">ui_WILL_28_name</Data></Cell>
     <Cell ss:StyleID="s24"><Data ss:Type="String">Guardian</Data></Cell>
-    <Cell ss:StyleID="s19"><Data ss:Type="String">Guardian</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Хранитель</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s18"><Data ss:Type="String">ui_WILL_29_name</Data></Cell>
     <Cell ss:StyleID="s24"><Data ss:Type="String">Guardian</Data></Cell>
-    <Cell ss:StyleID="s19"><Data ss:Type="String">Guardian</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Хранитель</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s18"><Data ss:Type="String">ui_WILL_30_name</Data></Cell>
     <Cell ss:StyleID="s24"><Data ss:Type="String">Occult Barricade</Data></Cell>
-    <Cell ss:StyleID="s19"><Data ss:Type="String">Occult Barricade</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Оккультная баррикада</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s18"><Data ss:Type="String">ui_Section_Elementalist</Data></Cell>
@@ -1881,8 +1881,8 @@
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s18"><Data ss:Type="String">ui_ELEM_5_desc</Data></Cell>
-    <Cell ss:StyleID="s27"><Data ss:Type="String">Increase the number of ailment stacks applied to an enemy and decrease non damage-over-time.</Data></Cell>
-    <Cell ss:StyleID="s19"><Data ss:Type="String">Увеличивает число эффектов негативных состояний, накладываемых на врага, но снижает непериодический урон.</Data></Cell>
+    <Cell ss:StyleID="s27"><Data ss:Type="String">Increase the number of ailment stacks applied to an enemy</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Увеличивает число эффектов негативных состояний, накладываемых на врага</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s18"><Data ss:Type="String">ui_ELEM_6_name</Data></Cell>
@@ -3582,7 +3582,7 @@
    <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s22"><Data ss:Type="String">ui_ORAC_21_name</Data></Cell>
     <Cell ss:StyleID="s24"><Data ss:Type="String">Primal Casting</Data></Cell>
-    <Cell ss:StyleID="s19"><Data ss:Type="String">Primal Casting</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Первобытное колдовство</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s22"><Data ss:Type="String">ui_ORAC_22_name</Data></Cell>
@@ -3592,7 +3592,7 @@
    <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s22"><Data ss:Type="String">ui_ORAC_23_name</Data></Cell>
     <Cell ss:StyleID="s24"><Data ss:Type="String">Primal Casting</Data></Cell>
-    <Cell ss:StyleID="s19"><Data ss:Type="String">Primal Casting</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Первобытное колдовство</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s22"><Data ss:Type="String">ui_ORAC_24_name</Data></Cell>
@@ -3907,7 +3907,7 @@
    <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s22"><Data ss:Type="String">ui_CHAMP_21_name</Data></Cell>
     <Cell ss:StyleID="s24"><Data ss:Type="String">Sundering Precision</Data></Cell>
-    <Cell ss:StyleID="s19"><Data ss:Type="String">Sundering Precision</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Расколотая точность</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s22"><Data ss:Type="String">ui_CHAMP_22_name</Data></Cell>
@@ -3917,7 +3917,7 @@
    <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s22"><Data ss:Type="String">ui_CHAMP_23_name</Data></Cell>
     <Cell ss:StyleID="s24"><Data ss:Type="String">Sundering Precision</Data></Cell>
-    <Cell ss:StyleID="s19"><Data ss:Type="String">Sundering Precision</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Расколотая точность</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s22"><Data ss:Type="String">ui_CHAMP_24_name</Data></Cell>

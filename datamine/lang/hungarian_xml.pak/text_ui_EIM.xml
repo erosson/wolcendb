@@ -9,8 +9,8 @@
   <Title>Untitled Spreadsheet</Title>
   <Author>Unknown Creator</Author>
   <LastAuthor>Pierre Techoueyres</LastAuthor>
-  <Created>2020-11-30T17:18:11Z</Created>
-  <LastSaved>2020-11-30T17:18:11Z</LastSaved>
+  <Created>2020-12-15T08:28:52Z</Created>
+  <LastSaved>2020-12-15T08:28:52Z</LastSaved>
   <Company>Microsoft Corporation</Company>
   <Version>16.00</Version>
  </DocumentProperties>
@@ -18,8 +18,8 @@
   <AllowPNG/>
  </OfficeDocumentSettings>
  <ExcelWorkbook xmlns="urn:schemas-microsoft-com:office:excel">
-  <WindowHeight>13665</WindowHeight>
-  <WindowWidth>28770</WindowWidth>
+  <WindowHeight>32767</WindowHeight>
+  <WindowWidth>19275</WindowWidth>
   <WindowTopX>32767</WindowTopX>
   <WindowTopY>32767</WindowTopY>
   <ProtectStructure>False</ProtectStructure>
@@ -327,8 +327,8 @@
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s19"><Data ss:Type="String">ui_eim_attack_damage_bonus_from_last_spell</Data></Cell>
-    <Cell ss:StyleID="s25"><Data ss:Type="String">Attacks gain %1 additional Damage as the Damage Type of the last Spell cast during %4s</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">A támadások további %1 sebzést okoznak az előző %4s alatt megidézett legutóbbi varázslat sebzéstípusa alapján.</Data></Cell>
+    <Cell ss:StyleID="s25"><Data ss:Type="String">Attacks gain %1 additional Damage as the Damage Type of the last Spell cast during %2s</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">A támadások további %1 sebzést okoznak az előző %2s alatt megidézett legutóbbi varázslat sebzéstípusa alapján.</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -6195,8 +6195,8 @@
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s21"><Data ss:Type="String">ui_eim_stamina_regen_on_critical_hit</Data></Cell>
-    <Cell ss:StyleID="s25"><Data ss:Type="String">Critical Strikes regenerate %1 Stamina</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">A kritikus találatok %1 kitartást regenerálnak</Data></Cell>
+    <Cell ss:StyleID="s25"><Data ss:Type="String">Critical Hits increase your Stamina regeneration rate by %1 during 3s</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">A kritikus találatok %1-kal megnövelik a kitartás regenerációdat 3s erejéig</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>

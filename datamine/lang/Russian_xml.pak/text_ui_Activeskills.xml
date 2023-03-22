@@ -9,8 +9,8 @@
   <Title>Untitled Spreadsheet</Title>
   <Author>Unknown Creator</Author>
   <LastAuthor>Pierre Techoueyres</LastAuthor>
-  <Created>2020-11-24T09:43:17Z</Created>
-  <LastSaved>2020-11-24T09:43:17Z</LastSaved>
+  <Created>2020-12-15T08:28:53Z</Created>
+  <LastSaved>2020-12-15T08:28:53Z</LastSaved>
   <Company>Microsoft Corporation</Company>
   <Version>16.00</Version>
  </DocumentProperties>
@@ -18,8 +18,8 @@
   <AllowPNG/>
  </OfficeDocumentSettings>
  <ExcelWorkbook xmlns="urn:schemas-microsoft-com:office:excel">
-  <WindowHeight>13065</WindowHeight>
-  <WindowWidth>28770</WindowWidth>
+  <WindowHeight>32767</WindowHeight>
+  <WindowWidth>19275</WindowWidth>
   <WindowTopX>32767</WindowTopX>
   <WindowTopY>32767</WindowTopY>
   <ProtectStructure>False</ProtectStructure>
@@ -501,7 +501,7 @@
    <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s18"><Data ss:Type="String">ui_AST_ChainLightning_desc</Data></Cell>
     <Cell ss:StyleID="s22"><Data ss:Type="String">Cast a spell that bounces between enemies, dealing increased damage for each subsequent enemy hit.\n\n&lt;font color=&quot;#948ec6&quot;&gt;Spell:&lt;/font&gt; Only usable with staves or catalysts.\n&lt;font color=&quot;#509FFF&quot;&gt;Skill Tags&lt;/font&gt;: &lt;b&gt;Spell&lt;/b&gt;.</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">Создайте цепную молнию, которая перескакивает между врагами, нанося каждому следующему врагу меньший урон, чем предыдущему.\n\n&lt;font color=&quot;#948ec6&quot;&gt;Заклинание:&lt;/font&gt; Работает только с посохом или катализатором.\n&lt;font color=&quot;#509FFF&quot;&gt;Метки умения&lt;/font&gt;: &lt;b&gt;Заклинание&lt;/b&gt;.</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">Создайте цепную молнию, которая перескакивает между врагами, нанося каждому следующему врагу больший урон, чем предыдущему.\n\n&lt;font color=&quot;#948ec6&quot;&gt;Заклинание:&lt;/font&gt; Работает только с посохом или катализатором.\n&lt;font color=&quot;#509FFF&quot;&gt;Метки умения&lt;/font&gt;: &lt;b&gt;Заклинание&lt;/b&gt;.</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s18"><Data ss:Type="String">ui_AST_ChainLightning_Lore</Data></Cell>
@@ -621,7 +621,7 @@
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s18"><Data ss:Type="String">ui_AST_Hook_desc</Data></Cell>
     <Cell ss:StyleID="s22"><Data ss:Type="String">Launch a hook in the targeted direction and pull enemies reached to your location.\n\n&lt;font color=&quot;#cb5316&quot;&gt;Attack:&lt;/font&gt; Only usable with melee weapons.\n&lt;font color=&quot;#509FFF&quot;&gt;Skill Tags&lt;/font&gt;: &lt;b&gt;Attack&lt;/b&gt;, &lt;b&gt;Warrior&lt;/b&gt;.</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">Метните в указанном направлении крюк на цепи и притяните к себе всех поражённых врагов.\n\n&lt;font color=&quot;#cb5316&quot;&gt;Атака:&lt;/font&gt; Работает только с холодным оружием.\n\n&lt;font color=&quot;#509FFF&quot;&gt;Метки умения&lt;/font&gt;: &lt;b&gt;Атака&lt;/b&gt;, &lt;b&gt;Бойцовское&lt;/b&gt;.</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">Метните в указанном направлении крюк на цепи и притяните к себе всех поражённых врагов.\n\n&lt;font color=&quot;#cb5316&quot;&gt;Атака:&lt;/font&gt; Работает только с холодным оружием.\n&lt;font color=&quot;#509FFF&quot;&gt;Метки умения&lt;/font&gt;: &lt;b&gt;Атака&lt;/b&gt;, &lt;b&gt;Бойцовское&lt;/b&gt;.</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s18"><Data ss:Type="String">ui_AST_Hook_Lore</Data></Cell>
@@ -651,7 +651,7 @@
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s18"><Data ss:Type="String">ui_AST_Laceration_desc</Data></Cell>
     <Cell ss:StyleID="s22"><Data ss:Type="String">Launch an axe in a circle around you, dealing damage on hit.\n\n&lt;font color=&quot;#cb5316&quot;&gt;Attack:&lt;/font&gt; Only usable with melee weapons.\n&lt;font color=&quot;#509FFF&quot;&gt;Skill Tags&lt;/font&gt;: &lt;b&gt;Attack&lt;/b&gt;, &lt;b&gt;Warrior&lt;/b&gt;.</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">Запустите топор вокруг себя, нанося урон ближайшим врагам.\n\n&lt;font color=&quot;#cb5316&quot;&gt;Атака:&lt;/font&gt; Работает только с холодным оружием.\n&lt;font color=&quot;#509FFF&quot;&gt;Метки умения&lt;/font&gt;: &lt;b&gt;Атака&lt;/b&gt;, &lt;b&gt;Бойцовское&lt;/b&gt;.</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">Запустите топор, вращающийся вокруг вас, нанося урон ближайшим врагам.\n\n&lt;font color=&quot;#cb5316&quot;&gt;Атака:&lt;/font&gt; Работает только с холодным оружием.\n&lt;font color=&quot;#509FFF&quot;&gt;Метки умения&lt;/font&gt;: &lt;b&gt;Атака&lt;/b&gt;, &lt;b&gt;Бойцовское&lt;/b&gt;.</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s18"><Data ss:Type="String">ui_AST_Laceration_Lore</Data></Cell>
@@ -851,7 +851,7 @@
    <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s18"><Data ss:Type="String">ui_AST_Hammer_Lore</Data></Cell>
     <Cell ss:StyleID="s22"><Data ss:Type="String">&lt;Font Size=&quot;15&quot; Color=&quot;#ccb270&quot;&gt;&lt;i&gt;Hephaäron, Maestre of Industry, forged the first warhammer Gaavanir. When challenged on its ownership by the Primordial of Ambition, Baäpheth, he proved himself its rightful wielder when the hammer flew back to his open hand.&lt;/i&gt;&lt;/Font&gt;</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">&lt;Font Size=&quot;15&quot; Color=&quot;#ccb270&quot;&gt;&lt;i&gt;Гефаарон, Маэстро Ремесла, выковал первый боевой молот Гааванир. Когда право на него оспаривал владыка амбиций Баафет, он доказал, что является законным владельцем, когда молот вернулся назад в его раскрытую руку.&lt;/i&gt;&lt;/Font&gt;</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">&lt;Font Size=&quot;15&quot; Color=&quot;#ccb270&quot;&gt;&lt;i&gt;Хефаарон, Маэстро Ремесла, выковал первый боевой молот Гааванир. Когда право на него оспаривал владыка амбиций Баафет, он доказал, что является законным владельцем, когда молот вернулся назад в его раскрытую руку.&lt;/i&gt;&lt;/Font&gt;</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s18"><Data ss:Type="String">ui_AST_Sniper</Data></Cell>
@@ -866,7 +866,7 @@
    <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s18"><Data ss:Type="String">ui_AST_Sniper_Lore</Data></Cell>
     <Cell ss:StyleID="s22"><Data ss:Type="String">&lt;Font Size=&quot;15&quot; Color=&quot;#ccb270&quot;&gt;&lt;i&gt;Ezaneal, Fallen Lord of Trickery, challenged Hephaäron with the claim that his Bio-Optical Targeting Interface could match any of his master’s bows in a hunt. Taking the place of his First Man champion, Ezaneal demonstrated the superiority of his construct.&lt;/i&gt;&lt;/Font&gt;</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">&lt;Font Size=&quot;15&quot; Color=&quot;#ccb270&quot;&gt;&lt;i&gt;Эзанил, Падший Владыка Коварства, бросил вызов Гефаарону с заявлением, что его Интерфейс Био-Оптического Прицела может сравниться с любым из луков мастера. Заняв место своего поборника среди первых людей, Эзанил продемонстрировал превосходство своей конструкции.&lt;/i&gt;&lt;/Font&gt;</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">&lt;Font Size=&quot;15&quot; Color=&quot;#ccb270&quot;&gt;&lt;i&gt;Эзанил, Падший Владыка Коварства, бросил вызов Хефаарону с заявлением, что его Интерфейс Био-Оптического Прицела может сравниться с любым из луков мастера. Заняв место своего поборника среди первых людей, Эзанил продемонстрировал превосходство своей конструкции.&lt;/i&gt;&lt;/Font&gt;</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s18"><Data ss:Type="String">ui_AST_SmokeBomb</Data></Cell>
@@ -891,7 +891,7 @@
    <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s18"><Data ss:Type="String">ui_AST_Vault_desc</Data></Cell>
     <Cell ss:StyleID="s22"><Data ss:Type="String">Rush to the opposite of the targeted direction and launch a projectile that slows enemies in an area of effect. Converts your weapon physical damage into shadow damage.\n\n&lt;font color=&quot;#cb5316&quot;&gt;Attack:&lt;/font&gt; Only usable with daggers, bows and pistols.\n&lt;font color=&quot;#509FFF&quot;&gt;Skill Tags&lt;/font&gt;: &lt;b&gt;Attack&lt;/b&gt;, &lt;b&gt;Projectile&lt;/b&gt;, &lt;b&gt;Rogue&lt;/b&gt;, &lt;b&gt;Movement&lt;/b&gt;.</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">Отскочите в сторону противоположную указанному направлению и бросьте снаряд, замедляющий врагов в области действия. Конвертирует физический урон оружия в урон тенью.\n\n&lt;font color=&quot;#cb5316&quot;&gt;Атака:&lt;/font&gt; Работает только с кинжалами, луками и пистолетами.\n&lt;font color=&quot;#509FFF&quot;&gt;Метки умения&lt;/font&gt;: &lt;b&gt;Атака&lt;/b&gt;, &lt;b&gt;Снаряд&lt;/b&gt;, &lt;b&gt;Разбойничье&lt;/b&gt;, &lt;b&gt;Перемещение&lt;/b&gt;.</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">Отскочите в сторону противоположную указанному направлению и бросьте снаряд, замедляющий врагов в области действия. Конвертирует урон оружия в урон тенью.\n\n&lt;font color=&quot;#cb5316&quot;&gt;Атака:&lt;/font&gt; Работает только с кинжалами, луками и пистолетами.\n&lt;font color=&quot;#509FFF&quot;&gt;Метки умения&lt;/font&gt;: &lt;b&gt;Атака&lt;/b&gt;, &lt;b&gt;Снаряд&lt;/b&gt;, &lt;b&gt;Разбойничье&lt;/b&gt;, &lt;b&gt;Перемещение&lt;/b&gt;.</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s18"><Data ss:Type="String">ui_AST_Vault_Lore</Data></Cell>
@@ -981,7 +981,7 @@
    <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s18"><Data ss:Type="String">ui_AST_SummonChampion_desc</Data></Cell>
     <Cell ss:StyleID="s22"><Data ss:Type="String">Summon a golem that generates threat at summon and deals melee damage. If Livor Mortis is used when you already have a massive zombie, it generates threat again.\n\n&lt;font color=&quot;#948ec6&quot;&gt;Spell:&lt;/font&gt; Only usable with staves or catalysts.\n&lt;font color=&quot;#509FFF&quot;&gt;Skill Tags&lt;/font&gt;: &lt;b&gt;Spell&lt;/b&gt;, &lt;b&gt;Summon&lt;/b&gt;.</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">Призовите голема, создающего угрозу и наносящего урон в ближнем бою. При повторном применении Трупного пятна, голем создаёт угрозу.\n\n&lt;font color=&quot;#948ec6&quot;&gt;Заклинание:&lt;/font&gt; Работает только с посохом или катализатором.\n&lt;font color=&quot;#509FFF&quot;&gt;Метки умения&lt;/font&gt;: &lt;b&gt;Заклинание&lt;/b&gt;, &lt;b&gt;Призыв&lt;/b&gt;.</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">Призовите голема, создающего угрозу и наносящего урон в ближнем бою. При повторном применении Трупного пятна, голем создаёт угрозу повторно.\n\n&lt;font color=&quot;#948ec6&quot;&gt;Заклинание:&lt;/font&gt; Работает только с посохом или катализатором.\n&lt;font color=&quot;#509FFF&quot;&gt;Метки умения&lt;/font&gt;: &lt;b&gt;Заклинание&lt;/b&gt;, &lt;b&gt;Призыв&lt;/b&gt;.</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s18"><Data ss:Type="String">ui_AST_SummonChampion_Lore</Data></Cell>
@@ -1246,7 +1246,7 @@
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s18"><Data ss:Type="String">ui_Variant_ArrowsRain_variant_17_Lore</Data></Cell>
     <Cell ss:StyleID="s25"><Data ss:Type="String">&lt;Font Size=&quot;15&quot; Color=&quot;#ccb270&quot;&gt;&lt;i&gt;Ezaneal betrayed his master Hephäaron’s by crafting firepower into his creations. Though Hephäaron chided Ezaneal, he recognized something: he would have to improve his own creations to match the inevitable rise of new technologies. He modified Krearion with flared spikes to the sides of its arrows. Watching a new kind of sadism spread through mankind, he grew determined. He would fight his own obsolescence to the bitter end.&lt;/i&gt;&lt;/Font&gt;</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">&lt;Font Size=&quot;15&quot; Color=&quot;#ccb270&quot;&gt;&lt;i&gt;Ezaneal betrayed his master Hephäaron’s by crafting firepower into his creations. Though Hephäaron chided Ezaneal, he recognized something: he would have to improve his own creations to match the inevitable rise of new technologies. He modified Krearion with flared spikes to the sides of its arrows. Watching a new kind of sadism spread through mankind, he grew determined. He would fight his own obsolescence to the bitter end.&lt;/i&gt;&lt;/Font&gt;</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">&lt;Font Size=&quot;15&quot; Color=&quot;#ccb270&quot;&gt;&lt;i&gt;Эзанил предал своего учителя Хефаарона, создав огненное оружие в его кузнице. И хоть Хефаарон и выругал Эзанила, кое-что он всё же понял: ему придётся усовершенствовать свои творения, чтобы они соответствовали неизбежному росту новых технологий. Он дополнил стрелы Креариона расширяющимися шипами по бокам. Наблюдая, как новый вид садизма распространился по всему человечеству, он наполнился решительностью. Он боролся со своим моральным устареванием до самого горького конца.&lt;/i&gt;&lt;/Font&gt;</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s18"><Data ss:Type="String">ui_Variant_ArrowsRain_variant_18</Data></Cell>
@@ -1261,7 +1261,7 @@
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s18"><Data ss:Type="String">ui_Variant_ArrowsRain_variant_18_Lore</Data></Cell>
     <Cell ss:StyleID="s25"><Data ss:Type="String">&lt;Font Size=&quot;15&quot; Color=&quot;#ccb270&quot;&gt;&lt;i&gt;The Time Devourers seek to damage the Weave of Time as much as possible. One tactic involves selling the Primordial Essence to mercenary troops and imbuing their weapons with the power of time. As arrows fly, they trap their victims in the moment of their deaths which they will relive endlessly, creating a cave-in within the Weave where time can no longer progress.&lt;/i&gt;&lt;/Font&gt;</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">&lt;Font Size=&quot;15&quot; Color=&quot;#ccb270&quot;&gt;&lt;i&gt;The Time Devourers seek to damage the Weave of Time as much as possible. One tactic involves selling the Primordial Essence to mercenary troops and imbuing their weapons with the power of time. As arrows fly, they trap their victims in the moment of their deaths which they will relive endlessly, creating a cave-in within the Weave where time can no longer progress.&lt;/i&gt;&lt;/Font&gt;</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">&lt;Font Size=&quot;15&quot; Color=&quot;#ccb270&quot;&gt;&lt;i&gt;Пожиратели времени ищут способы как можно сильнее повредить Плетение Времени. Одна из тактик состоит в продаже эссенции Предтеч наемникам, чтобы пропитать их оружие силой времени. В полёте стрелы заманивают своих жертв во временную ловушку в момент их смерти, которую они будут переживать бесконечно, создавая разрыв в плетении, где время больше не может развиваться.&lt;/i&gt;&lt;/Font&gt;</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s18"><Data ss:Type="String">ui_variant_Player_ArrowsRain_variant_19</Data></Cell>
@@ -1401,7 +1401,7 @@
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s18"><Data ss:Type="String">ui_Variant_Bladeslinger_variant_11_desc</Data></Cell>
     <Cell ss:StyleID="s24"><Data ss:Type="String">The Phantom Blades Projectile no longer Pierces. Instead, it sticks to the first Enemy Hit and explodes after a few seconds, dealing Damage in an Area of Effect.</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">Снаряд Призрачных клинков больше не пробивают насквозь. Вместо этого они прилипают к первому поражённому врагу и взрывается через несколько секунд, нанося урон по области.</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">Снаряд Призрачных клинков больше не пробивает насквозь. Вместо этого он прилипает к первому поражённому врагу и взрывается через несколько секунд, нанося урон по области.</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s18"><Data ss:Type="String">ui_Variant_Bladeslinger_variant_12</Data></Cell>
@@ -1471,7 +1471,7 @@
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s18"><Data ss:Type="String">ui_Variant_Bladeslinger_variant_17_Lore</Data></Cell>
     <Cell ss:StyleID="s25"><Data ss:Type="String">&lt;Font Size=&quot;15&quot; Color=&quot;#ccb270&quot;&gt;&lt;i&gt;Anulai-Tai, suffering at the center of the Weave of Time, began to unintentionally create tumorous additions to it, adding new threads which dragged the lives of men into wildly differing directions, and threatened the linearity of human experience. Sarisel intervened in the name of order, casting Omeagram in a wild whirlwind to slice through the cancerous strings of fate.&lt;/i&gt;&lt;/Font&gt;</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">&lt;Font Size=&quot;15&quot; Color=&quot;#ccb270&quot;&gt;&lt;i&gt;Anulai-Tai, suffering at the center of the Weave of Time, began to unintentionally create tumorous additions to it, adding new threads which dragged the lives of men into wildly differing directions, and threatened the linearity of human experience. Sarisel intervened in the name of order, casting Omeagram in a wild whirlwind to slice through the cancerous strings of fate.&lt;/i&gt;&lt;/Font&gt;</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">&lt;Font Size=&quot;15&quot; Color=&quot;#ccb270&quot;&gt;&lt;i&gt;Анулай-Тай, страдая в центре Плетения Времени, начал непреднамеренно создавать в нём опухолевые образования, добавляя новые нити, увлекающие жизни людей в непредсказуемых направлениях, и угрожающие линейности развития человечества. Сарисель вмешался во имя порядка, метнув Омеаграм в диком вихре, чтобы рассечь раковые нити судьбы.&lt;/i&gt;&lt;/Font&gt;</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s18"><Data ss:Type="String">ui_Variant_Bladeslinger_variant_18</Data></Cell>
@@ -1486,7 +1486,7 @@
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s18"><Data ss:Type="String">ui_Variant_Bladeslinger_variant_18_Lore</Data></Cell>
     <Cell ss:StyleID="s25"><Data ss:Type="String">&lt;Font Size=&quot;15&quot; Color=&quot;#ccb270&quot;&gt;&lt;i&gt;The double-bladed sword Omeagram was spun in the reverse direction of a great cyclone brought on by Abanazaar. As the cyclone settled and the blade caught friction against the atmosphere, it sparked a thunderstorm over the ocean. The First Men took this thunderstrike as a sign of the Primordials’ intervention, and were thankful that a great evil was displaced for a smaller one.&lt;/i&gt;&lt;/Font&gt;</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">&lt;Font Size=&quot;15&quot; Color=&quot;#ccb270&quot;&gt;&lt;i&gt;The double-bladed sword Omeagram was spun in the reverse direction of a great cyclone brought on by Abanazaar. As the cyclone settled and the blade caught friction against the atmosphere, it sparked a thunderstorm over the ocean. The First Men took this thunderstrike as a sign of the Primordials’ intervention, and were thankful that a great evil was displaced for a smaller one.&lt;/i&gt;&lt;/Font&gt;</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">&lt;Font Size=&quot;15&quot; Color=&quot;#ccb270&quot;&gt;&lt;i&gt;Двухлезвийный меч Омеаграм был запущен в против движения большого циклона, принесенного Абаназааром. По мере оседания циклона, клинок улавливал трение об атмосферу, отчего над океаном разразилась гроза. Перволюды приняли удар грома за знак вмешательства Предтеч, и были благодарны, что великое зло было заменено меньшим.&lt;/i&gt;&lt;/Font&gt;</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s18"><Data ss:Type="String">ui_variant_Player_Bladeslinger_variant_19</Data></Cell>
@@ -1501,7 +1501,7 @@
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s18"><Data ss:Type="String">ui_variant_Player_Bladeslinger_variant_20</Data></Cell>
     <Cell ss:StyleID="s25"><Data ss:Type="String">Gushing Cuts</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">Gushing Cuts</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">Фонтанирующие порезы</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s18"><Data ss:Type="String">ui_variant_Player_Bladeslinger_variant_20_desc</Data></Cell>
@@ -1691,7 +1691,7 @@
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s18"><Data ss:Type="String">ui_Variant_Bomb_variant_17</Data></Cell>
     <Cell ss:StyleID="s25"><Data ss:Type="String">Automated Cannonry</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">Automated Cannonry</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">Автоматическая канонада</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s18"><Data ss:Type="String">ui_Variant_Bomb_variant_17_desc</Data></Cell>
@@ -1701,12 +1701,12 @@
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s18"><Data ss:Type="String">ui_Variant_Bomb_variant_17_Lore</Data></Cell>
     <Cell ss:StyleID="s25"><Data ss:Type="String">&lt;Font Size=&quot;15&quot; Color=&quot;#ccb270&quot;&gt;&lt;i&gt;Ezaneal crafted a system to free his mortars from the need for manual ignition, creating a wiring system to electrically empower the cannons. With the aid of Beelmalik, Former Primordial of Lightning, that electric power could carry through into the shells, bringing mass damage where it landed. This served as the major line of defence for the dissident Primordials.&lt;/i&gt;&lt;/Font&gt;</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">&lt;Font Size=&quot;15&quot; Color=&quot;#ccb270&quot;&gt;&lt;i&gt;Ezaneal crafted a system to free his mortars from the need for manual ignition, creating a wiring system to electrically empower the cannons. With the aid of Beelmalik, Former Primordial of Lightning, that electric power could carry through into the shells, bringing mass damage where it landed. This served as the major line of defence for the dissident Primordials.&lt;/i&gt;&lt;/Font&gt;</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">&lt;Font Size=&quot;15&quot; Color=&quot;#ccb270&quot;&gt;&lt;i&gt;Эзанил создал для своих мортир систему автоматического зажигания, добавив проводную систему для электрического включения пушек. Вместе с Билмаликом, Изначальным Предтечей молнии, они пропитали снаряды электричеством, чтобы они наносили массированный урон в точке попадания. Это служило основной линией обороны для диссидентов Предтеч.&lt;/i&gt;&lt;/Font&gt;</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s18"><Data ss:Type="String">ui_Variant_Bomb_variant_18</Data></Cell>
     <Cell ss:StyleID="s25"><Data ss:Type="String">Sunstruck Arsenal</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">Sunstruck Arsenal</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">Арсенал Солнечного удара</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s18"><Data ss:Type="String">ui_Variant_Bomb_variant_18_desc</Data></Cell>
@@ -1716,7 +1716,7 @@
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s18"><Data ss:Type="String">ui_Variant_Bomb_variant_18_Lore</Data></Cell>
     <Cell ss:StyleID="s25"><Data ss:Type="String">&lt;Font Size=&quot;15&quot; Color=&quot;#ccb270&quot;&gt;&lt;i&gt;The shells of the multi-barreled mortal were far too unstable to keep in any kind of heat; even direct sunlight could present a risk. This gave Ezaneal an idea, which he presented to his fellow dissenters. Thus, they hid the shells where Anathëa would be visiting her worshippers, and as her light rested on the explosives, they triggered and sullied her name among the faithful.&lt;/i&gt;&lt;/Font&gt;</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">&lt;Font Size=&quot;15&quot; Color=&quot;#ccb270&quot;&gt;&lt;i&gt;The shells of the multi-barreled mortal were far too unstable to keep in any kind of heat; even direct sunlight could present a risk. This gave Ezaneal an idea, which he presented to his fellow dissenters. Thus, they hid the shells where Anathëa would be visiting her worshippers, and as her light rested on the explosives, they triggered and sullied her name among the faithful.&lt;/i&gt;&lt;/Font&gt;</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">&lt;Font Size=&quot;15&quot; Color=&quot;#ccb270&quot;&gt;&lt;i&gt;Заряды многоствольной мортиры были слишком нестабильны, чтобы выжерживать даже минимальный перегрев; даже прямой солнечный свет представлял для них угрозу. Это натолкнуло Эзанила на идею, которую он представил своим последователям-диссидентам. Они спрятали снаряды в одежды, в которых Анатея должна была навещать своих верующих, и, когда её свет пролился на взрывчатку, она сдетонировала и это запятнало её имя среди последователей.&lt;/i&gt;&lt;/Font&gt;</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s18"><Data ss:Type="String">ui_variant_Player_Bomb_variant_19</Data></Cell>
@@ -1741,7 +1741,7 @@
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s18"><Data ss:Type="String">ui_Variant_BrutalStrike_variant_1_desc</Data></Cell>
     <Cell ss:StyleID="s24"><Data ss:Type="String">Increases the Damage dealt by Anvil's Woe.</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">Увеличивает урон, наносимый Наковальней горести.</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">Увеличивает урон, наносимый Наковальней горестей.</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s18"><Data ss:Type="String">ui_Variant_BrutalStrike_variant_2</Data></Cell>
@@ -1806,7 +1806,7 @@
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s18"><Data ss:Type="String">ui_Variant_BrutalStrike_variant_7_desc</Data></Cell>
     <Cell ss:StyleID="s24"><Data ss:Type="String">Increases the Critical Damage dealt by Anvil's Woe.</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">Увеличивает критический урон, наносимый Наковальней горести.</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">Увеличивает критический урон, наносимый Наковальней горестей.</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s18"><Data ss:Type="String">ui_Variant_BrutalStrike_variant_8</Data></Cell>
@@ -1831,7 +1831,7 @@
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s18"><Data ss:Type="String">ui_Variant_BrutalStrike_variant_9_desc</Data></Cell>
     <Cell ss:StyleID="s24"><Data ss:Type="String">Using Anvil's Woe causes a damaging chain of explosions in front of you.</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">При нанесении урона Наковальня горестей создает серию взрывов перед игроком.</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">Использование Наковальни горестей создает серию взрывов перед вами.</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s18"><Data ss:Type="String">ui_Variant_BrutalStrike_variant_9_Lore</Data></Cell>
@@ -1906,12 +1906,12 @@
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s18"><Data ss:Type="String">ui_Variant_BrutalStrike_variant_16_desc</Data></Cell>
     <Cell ss:StyleID="s24"><Data ss:Type="String">Increases the Damage dealt by Anvil's Woe.</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">Увеличивает урон, наносимый Наковальней горести.</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">Увеличивает урон, наносимый Наковальней горестей.</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s18"><Data ss:Type="String">ui_Variant_BrutalStrike_variant_17</Data></Cell>
     <Cell ss:StyleID="s25"><Data ss:Type="String">Tamed Ardor</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">Tamed Ardor</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">Обузданная страсть</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s18"><Data ss:Type="String">ui_Variant_BrutalStrike_variant_17_desc</Data></Cell>
@@ -1921,12 +1921,12 @@
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s18"><Data ss:Type="String">ui_Variant_BrutalStrike_variant_17_Lore</Data></Cell>
     <Cell ss:StyleID="s25"><Data ss:Type="String">&lt;Font Size=&quot;15&quot; Color=&quot;#ccb270&quot;&gt;&lt;i&gt;Hunted by Beelmalik and repulsed by Etheliel, the Primordial Abanazaar was without friend or ally. Ahriman, Primordial of Peace, saw potential in him. Uniquely powered to tame his younger counterpart, he taught Abanazaar to temper his passions and channel them into a contained form. Abanazaar emerged from these lessons wielding a great warhammer forged from the flames of his desire.&lt;/i&gt;&lt;/Font&gt;</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">&lt;Font Size=&quot;15&quot; Color=&quot;#ccb270&quot;&gt;&lt;i&gt;Hunted by Beelmalik and repulsed by Etheliel, the Primordial Abanazaar was without friend or ally. Ahriman, Primordial of Peace, saw potential in him. Uniquely powered to tame his younger counterpart, he taught Abanazaar to temper his passions and channel them into a contained form. Abanazaar emerged from these lessons wielding a great warhammer forged from the flames of his desire.&lt;/i&gt;&lt;/Font&gt;</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">&lt;Font Size=&quot;15&quot; Color=&quot;#ccb270&quot;&gt;&lt;i&gt;Охотясь на Билмалика и отбиваясь от Этелиэль, Предтеча Абаназаар потерял как друга, так и союзника. Но Ариман, Предтеча мира, всё же видел в нём потенциал. Единственный способный укротить своего младшего собрата, он научил Абаназаара подавлять свои страсти и переводить их в контролируемую форму. Из этих уроков Абаназаар вынес боевой молот, выкованный из пламени собственных желаний.&lt;/i&gt;&lt;/Font&gt;</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s18"><Data ss:Type="String">ui_Variant_BrutalStrike_variant_18</Data></Cell>
     <Cell ss:StyleID="s25"><Data ss:Type="String">Revelatory Hammerstrike</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">Revelatory Hammerstrike</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">Разоблачительный Удар Молота</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s18"><Data ss:Type="String">ui_Variant_BrutalStrike_variant_18_desc</Data></Cell>
@@ -1936,17 +1936,17 @@
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s18"><Data ss:Type="String">ui_Variant_BrutalStrike_variant_18_Lore</Data></Cell>
     <Cell ss:StyleID="s25"><Data ss:Type="String">&lt;Font Size=&quot;15&quot; Color=&quot;#ccb270&quot;&gt;&lt;i&gt;As the First Men coalesced into stable settlements and hierarchies, they learned to tell lies, accumulating unearned wealth and sinful secrets in the dark corners of their homes. Despising hypocrisy in all its forms, Anathëa brought down the Hammer of the Aurora onto Wolcen, and the resulting blast of light marked evil men for who they were.&lt;/i&gt;&lt;/Font&gt;</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">&lt;Font Size=&quot;15&quot; Color=&quot;#ccb270&quot;&gt;&lt;i&gt;As the First Men coalesced into stable settlements and hierarchies, they learned to tell lies, accumulating unearned wealth and sinful secrets in the dark corners of their homes. Despising hypocrisy in all its forms, Anathëa brought down the Hammer of the Aurora onto Wolcen, and the resulting blast of light marked evil men for who they were.&lt;/i&gt;&lt;/Font&gt;</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">&lt;Font Size=&quot;15&quot; Color=&quot;#ccb270&quot;&gt;&lt;i&gt;Когда Первые люди объединились в стабильные поселения и иерархии, они научились лгать, накапливать незаслуженное богатство и таить греховные секреты в темных уголках своих жилищ. Презирая лицемерие во всех его формах, Анатея обрушила на Вольсен Молот Авроры, и возникшая в результате вспышка света отметила всех тех, в ком таилось зло.&lt;/i&gt;&lt;/Font&gt;</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s18"><Data ss:Type="String">ui_variant_Player_BrutalStrike_step_19</Data></Cell>
     <Cell ss:StyleID="s25"><Data ss:Type="String">Fracturing Collision</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">Fracturing Collision</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">Раздробленная коллизия</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s18"><Data ss:Type="String">ui_variant_Player_BrutalStrike_step_19_desc</Data></Cell>
     <Cell ss:StyleID="s25"><Data ss:Type="String">Increases the Damage dealt by Anvil's Woe.</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">Увеличивает урон, наносимый Наковальней горести.</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">Увеличивает урон, наносимый Наковальней горестей.</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s18"><Data ss:Type="String">ui_Variant_BullEye_variant_default</Data></Cell>
@@ -2131,7 +2131,7 @@
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s18"><Data ss:Type="String">ui_Variant_BullEye_variant_17</Data></Cell>
     <Cell ss:StyleID="s25"><Data ss:Type="String">Trick Bullet</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">Trick Bullet</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">Хитрая пуля</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s18"><Data ss:Type="String">ui_Variant_BullEye_variant_17_desc</Data></Cell>
@@ -2266,7 +2266,7 @@
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s18"><Data ss:Type="String">ui_Variant_ChainLightning_variant_8_desc</Data></Cell>
     <Cell ss:StyleID="s24"><Data ss:Type="String">When used, Thunderstrike grants a Buff that grants additional Damage as its Damage Type. \nThunderstrike can also bounce between Allies, allowing them to receive the Damage Buff on Hit.</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">Применение умения даёт вам усиление базового типа урона данного умения. Молния может перескакивать между союзниками и при этом они также получают усиление.</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">Применение Раската грома даёт вам усиление базового типа урона данного умения.\nРаскат грома также может перескакивать между союзниками, позволяя им получить усиление.</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s18"><Data ss:Type="String">ui_Variant_ChainLightning_variant_8_Lore</Data></Cell>
@@ -2471,7 +2471,7 @@
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s18"><Data ss:Type="String">ui_Variant_Charge_variant_6_desc</Data></Cell>
     <Cell ss:StyleID="s24"><Data ss:Type="String">Warpath is no longer interrupted by Crowd-Control Effects.\nReduces the Damage taken from Projectiles during Warpath.</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">Тропа войны не может быть прервана эффектами контроля.\nУменьшает урон, получаемый от снарядов во время рывка Тропы войны.</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">Тропа войны больше не может быть прервана эффектами контроля.\nУменьшает урон, получаемый от снарядов во время рывка Тропы войны.</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s18"><Data ss:Type="String">ui_Variant_Charge_variant_7</Data></Cell>
@@ -2551,7 +2551,7 @@
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s18"><Data ss:Type="String">ui_Variant_Charge_variant_14_desc</Data></Cell>
     <Cell ss:StyleID="s24"><Data ss:Type="String">Increases the Critical Chance Score of Warpath.</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">Увеличивает рейтинг шанса нанесения критического урона данным умением.</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">Увеличивает рейтинг шанса нанесения критического урона Тропой войны.</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s18"><Data ss:Type="String">ui_Variant_Charge_variant_15</Data></Cell>
@@ -2611,7 +2611,7 @@
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s18"><Data ss:Type="String">ui_variant_Player_Charge_variant_19</Data></Cell>
     <Cell ss:StyleID="s25"><Data ss:Type="String">Bull of the Battlefield</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">Bull of the Battlefield</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">Бык на поле боя</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s18"><Data ss:Type="String">ui_variant_Player_Charge_variant_19_desc</Data></Cell>
@@ -2931,7 +2931,7 @@
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s18"><Data ss:Type="String">ui_Variant_DualStrike_variant_12_Lore</Data></Cell>
     <Cell ss:StyleID="s24"><Data ss:Type="String">&lt;Font Size=&quot;15&quot; Color=&quot;#ccb270&quot;&gt;&lt;i&gt;The two moons were hurled toward Hephaäron's forges to destroy them, a parting gift from his disciple Ezaneal. The Primordial Craftsman was out of time to save himself as well as his hard work. But Moros, the Primordial of Dusk intervened to shroud the enormous projectiles in his shadows, changing their course to collide against one another. Hephaäron seized the momentum to heat, fuse and concentrate the metal they contained into a blade that he would call Sazanek.&lt;/i&gt;&lt;/Font&gt;</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">&lt;Font Size=&quot;15&quot; Color=&quot;#ccb270&quot;&gt;&lt;i&gt;Две луны упали к кузницам Гефаарона, чтобы уничтожить их - прощальный подарок от его ученика Эзанила. Мастер Предтеч не успел бы спасти себя, как и свою тяжёлую работу. Но Морос, Предтеча Сумерек, вмешался: окутал своей тенью огромные снаряды, изменил их траекторию и столкнул друг с другом. Хефаарон воспользовался моментом, нагреть, расплавить и перековать содержащийся в них металл, в клинок, который он назвал Сазанек.&lt;/i&gt;&lt;/Font&gt;</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">&lt;Font Size=&quot;15&quot; Color=&quot;#ccb270&quot;&gt;&lt;i&gt;Две луны упали к кузницам Хефаарона, чтобы уничтожить их - прощальный подарок от его ученика Эзанила. Мастер Предтеч не успел бы спасти себя, как и свою тяжёлую работу. Но Морос, Предтеча Сумерек, вмешался: окутал своей тенью огромные снаряды, изменил их траекторию и столкнул друг с другом. Хефаарон воспользовался моментом, нагреть, расплавить и перековать содержащийся в них металл, в клинок, который он назвал Сазанек.&lt;/i&gt;&lt;/Font&gt;</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s18"><Data ss:Type="String">ui_Variant_DualStrike_variant_13</Data></Cell>
@@ -3026,7 +3026,7 @@
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s18"><Data ss:Type="String">ui_Variant_Fireball_variant_1_desc</Data></Cell>
     <Cell ss:StyleID="s24"><Data ss:Type="String">Increases Consuming Embers' Area of Effect.</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">Увеличивает область действия умения.</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">Увеличивает область действия Пожирающих углей.</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s18"><Data ss:Type="String">ui_Variant_Fireball_variant_2</Data></Cell>
@@ -3341,7 +3341,7 @@
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s18"><Data ss:Type="String">ui_Variant_FrostComet_variant_9_desc</Data></Cell>
     <Cell ss:StyleID="s24"><Data ss:Type="String">Tear of Etheliel's Area of Effect deals Damage over Time instead of instantly.\nReduces the Damage dealt by the Skill.</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">Область действия Слезы Этелиэль наносит периодический урон вместо мгновенного.</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">Область действия Слезы Этелиэль наносит периодический урон вместо мгновенного.\nСнижает урон, наносимый умением.</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s18"><Data ss:Type="String">ui_Variant_FrostComet_variant_9_Lore</Data></Cell>
@@ -3556,7 +3556,7 @@
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s18"><Data ss:Type="String">ui_Variant_FrostLance_variant_8_desc</Data></Cell>
     <Cell ss:StyleID="s24"><Data ss:Type="String">Each Arctic Spear that Hits an Enemy increases the Damage of the next Arctic Spear launched. If you miss, this effect is reset.</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">Каждый выпущенный умением снаряд увеличивает урон следующего снаряда. Когда снаряд промахивается, увеличение урона сбрасывается до базового урона умения.</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">Каждый снаряд Арктического копья, поразивший врага, увеличивает урон следующего выпущенного снаряда Арктического копья. Когда снаряд промахивается, увеличение урона сбрасывается.</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s18"><Data ss:Type="String">ui_Variant_FrostLance_variant_9</Data></Cell>
@@ -3571,7 +3571,7 @@
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s18"><Data ss:Type="String">ui_Variant_FrostLance_variant_9_Lore</Data></Cell>
     <Cell ss:StyleID="s24"><Data ss:Type="String">&lt;Font Size=&quot;15&quot; Color=&quot;#ccb270&quot;&gt;&lt;i&gt;Tricking the Fallen of Vanity into making her believe that you are a gateway for her will is a dangerous endeavour: a group of her cultists known as the Diamond Legion hunts down and captures usurpers, afflicting them with a frozen eternal torment.&lt;/i&gt;&lt;/Font&gt;</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">&lt;Font Size=&quot;15&quot; Color=&quot;#ccb270&quot;&gt;&lt;i&gt;Хитрить с Падшей Тщеславия, заставляя её верить, что вы врата её воли - опасная задача. Группа её культистов охотится на узурпаторов и пленяет их, обрекая на вечные морозные мучения.&lt;/i&gt;&lt;/Font&gt;</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">&lt;Font Size=&quot;15&quot; Color=&quot;#ccb270&quot;&gt;&lt;i&gt;Хитрить с Падшей Тщеславия, заставляя её верить, что вы врата её воли - опасная задача. Группа её культистов, известных как Алмазный Легион, охотится на узурпаторов и пленяет их, обрекая на вечные морозные мучения.&lt;/i&gt;&lt;/Font&gt;</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s18"><Data ss:Type="String">ui_Variant_FrostLance_variant_10</Data></Cell>
@@ -3766,7 +3766,7 @@
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s18"><Data ss:Type="String">ui_Variant_FrostNova_variant_7_desc</Data></Cell>
     <Cell ss:StyleID="s24"><Data ss:Type="String">Winter's Grasp's Area of Effect persists for a few seconds, dealing Damage to Enemies at regular intervals.</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">Область действия умения остаётся на несколько секунд, нанося урон врагам.</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">Область действия Хватки зимы остаётся на несколько секунд, нанося врагам периодический урон.</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s18"><Data ss:Type="String">ui_Variant_FrostNova_variant_8</Data></Cell>
@@ -3791,7 +3791,7 @@
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s18"><Data ss:Type="String">ui_Variant_FrostNova_variant_9_desc</Data></Cell>
     <Cell ss:StyleID="s24"><Data ss:Type="String">Enemies killed while they are Frozen by Winter's Grasp have a chance to trigger another ice nova.</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">Враги, убитые под действием заморозки данным умением, создают повторные ледяные вспышки.</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">Враги, убитые под действием заморозки от Хватки зимы, создают повторные ледяные вспышки.</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s18"><Data ss:Type="String">ui_Variant_FrostNova_variant_10</Data></Cell>
@@ -3926,7 +3926,7 @@
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s18"><Data ss:Type="String">ui_Variant_Hook_variant_2_desc</Data></Cell>
     <Cell ss:StyleID="s24"><Data ss:Type="String">Stuns Enemies Hit by Tracker's Reach.</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">Поражённые крюком враги оглушаются.</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">Поражённые Крюком следопыта враги оглушаются.</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s18"><Data ss:Type="String">ui_Variant_Hook_variant_3</Data></Cell>
@@ -3986,7 +3986,7 @@
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s18"><Data ss:Type="String">ui_Variant_Hook_variant_7_desc</Data></Cell>
     <Cell ss:StyleID="s24"><Data ss:Type="String">Enemies Hit with Tracker's Reach have a chance to drop Health Globes.</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">Увеличивает шанс выпадения сфер здоровья из врагов, поражённых умением.</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">Враги поражённые Крюком следопыта могут выронить сферы здоровья.</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s18"><Data ss:Type="String">ui_Variant_Hook_variant_8</Data></Cell>
@@ -3996,7 +3996,7 @@
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s18"><Data ss:Type="String">ui_Variant_Hook_variant_8_desc</Data></Cell>
     <Cell ss:StyleID="s24"><Data ss:Type="String">Tracker's Reach launches hooks all around your location.</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">Враги со всех сторон притягиваются к вам при попадании по ним крюком.</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">Крюк следопыта выпускает крюки во все стороны вокруг вас.</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s18"><Data ss:Type="String">ui_Variant_Hook_variant_8_Lore</Data></Cell>
@@ -4136,7 +4136,7 @@
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s18"><Data ss:Type="String">ui_Variant_Laceration_variant_1_desc</Data></Cell>
     <Cell ss:StyleID="s24"><Data ss:Type="String">Increases Bleeding Edge's spin speed.\nReduces the Damage dealt by the Skill.</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">Увеличивает скорость вращения Кровавых лезвий.</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">Увеличивает скорость вращения Кровавых лезвий.\nСнижает урон, наносимый умением.</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s18"><Data ss:Type="String">ui_Variant_Laceration_variant_2</Data></Cell>
@@ -4586,7 +4586,7 @@
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s18"><Data ss:Type="String">ui_Variant_Leap_variant_2_desc</Data></Cell>
     <Cell ss:StyleID="s24"><Data ss:Type="String">Increases the speed of Wings of Ishmir.</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">Увеличивает скорость прыжка.</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">Увеличивает скорость Крыльев Ишмира.</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s18"><Data ss:Type="String">ui_Variant_Leap_variant_3</Data></Cell>
@@ -4651,7 +4651,7 @@
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s18"><Data ss:Type="String">ui_Variant_Leap_variant_8</Data></Cell>
     <Cell ss:StyleID="s24"><Data ss:Type="String">Relentless Pursuit</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">Безжалостная погоня</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">Неумолимая погоня</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s18"><Data ss:Type="String">ui_Variant_Leap_variant_8_desc</Data></Cell>
@@ -5021,7 +5021,7 @@
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s18"><Data ss:Type="String">ui_Variant_SacredGround_variant_1_desc</Data></Cell>
     <Cell ss:StyleID="s24"><Data ss:Type="String">Increases the Duration of Bulwark of Dawn.\nIncreases the Resource Cost of the Skill.</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">Увеличивает продолжительность действия Оплота Зари.</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">Увеличивает продолжительность действия Оплота Зари.\nУвеличивает затраты ресурсов на применение умения.</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s18"><Data ss:Type="String">ui_Variant_SacredGround_variant_2</Data></Cell>
@@ -5206,7 +5206,7 @@
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s18"><Data ss:Type="String">ui_Variant_SacredGround_variant_18</Data></Cell>
     <Cell ss:StyleID="s25"><Data ss:Type="String">Meeting of Lovers</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">Meeting of Lovers</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">Встреча влюблённых</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s18"><Data ss:Type="String">ui_Variant_SacredGround_variant_18_desc</Data></Cell>
@@ -5521,7 +5521,7 @@
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s18"><Data ss:Type="String">ui_Variant_Teleport_variant_6_desc</Data></Cell>
     <Cell ss:StyleID="s24"><Data ss:Type="String">Aether Jump deals Damage to Enemies between the start and end points of the teleport.\nIncreases the Ailment Chance Score of the Skill.</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">Урон эфиром наносится всем врагам между начальной и конечной точками телепорта.\n\nУвеличивает рейтинг шанса наложения стазиса данным умением.</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">Эфирный прыжок наносит урон всем врагам между начальной и конечной точками телепорта.\nУвеличивает рейтинг шанса наложения негативных эффектов умением.</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s18"><Data ss:Type="String">ui_Variant_Teleport_variant_7</Data></Cell>
@@ -5541,7 +5541,7 @@
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s18"><Data ss:Type="String">ui_Variant_Teleport_variant_8_desc</Data></Cell>
     <Cell ss:StyleID="s24"><Data ss:Type="String">Reduces the Cooldown of Aether Jump.\nEach successive use has an increased Resource Cost within a certain timeframe.</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">Снижает перезарядку умения\n\nКаждое успешное применение умения увеличивает затраты энергии, если оно произошло в определённый промежуток времени.</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">Снижает перезарядку Эфирного прыжка.\nКаждое успешное применение умения увеличивает затраты ресурсов, если оно произошло в определённый промежуток времени.</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s18"><Data ss:Type="String">ui_Variant_Teleport_variant_8_Lore</Data></Cell>
@@ -5706,7 +5706,7 @@
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s18"><Data ss:Type="String">ui_Variant_Turret_variant_4_desc</Data></Cell>
     <Cell ss:StyleID="s24"><Data ss:Type="String">The &quot;Avenger&quot; Autoturret deals damage in a cone shape in front of it.\nIncreases the Damage dealt by the Skill.</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">Автотурель &quot;Мститель&quot; наносит урон в коническом секторе перед собой.</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">Автотурель &quot;Мститель&quot; наносит урон в коническом секторе перед собой.\nУвеличивает урон, наносимый умением.</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s18"><Data ss:Type="String">ui_Variant_Turret_variant_4_Lore</Data></Cell>
@@ -5866,7 +5866,7 @@
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s18"><Data ss:Type="String">ui_Variant_Turret_variant_18</Data></Cell>
     <Cell ss:StyleID="s25"><Data ss:Type="String">Anti-Photonic Powercell</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">Anti-Photonic Powercell</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">Анти-фотонная энергоячейка</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s18"><Data ss:Type="String">ui_Variant_Turret_variant_18_desc</Data></Cell>
@@ -6291,7 +6291,7 @@
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s18"><Data ss:Type="String">ui_Variant_AetherBlade_variant_1</Data></Cell>
     <Cell ss:StyleID="s24"><Data ss:Type="String">Three-Dimensional Scoring</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">Записи, впечатанные в материю</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">Трёхмерный счёт</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s18"><Data ss:Type="String">ui_Variant_AetherBlade_variant_1_desc</Data></Cell>
@@ -6466,7 +6466,7 @@
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s18"><Data ss:Type="String">ui_Variant_AetherBlade_variant_17</Data></Cell>
     <Cell ss:StyleID="s25"><Data ss:Type="String">Razor Wire</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">Razor Wire</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">Колючая проволока</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s18"><Data ss:Type="String">ui_Variant_AetherBlade_variant_17_desc</Data></Cell>
@@ -6576,7 +6576,7 @@
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s18"><Data ss:Type="String">ui_Variant_Possession_variant_7</Data></Cell>
     <Cell ss:StyleID="s24"><Data ss:Type="String">House Of Leeches</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">Дом личей</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">Дом пиявок</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s18"><Data ss:Type="String">ui_Variant_Possession_variant_7_desc</Data></Cell>
@@ -7261,12 +7261,12 @@
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s18"><Data ss:Type="String">ui_Variant_SummonChampion_variant_3</Data></Cell>
     <Cell ss:StyleID="s24"><Data ss:Type="String">Dusklight Guardian</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">Хищный Предел</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">Страж сумеречного света</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s18"><Data ss:Type="String">ui_Variant_SummonChampion_variant_3_desc</Data></Cell>
     <Cell ss:StyleID="s24"><Data ss:Type="String">Livor Mortis converts Weapon Physical Damage to Shadow Damage.\nThe golem can leap onto Enemies, dealing Damage.</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">Трупное пятно конвертирует физический урон оружия в урон тенью.\n\nГолем получает умение, позволяющее атаковать врагов прыжком.</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">Трупное пятно конвертирует физический урон оружия в урон тенью.\nГолем получает возможность атаковать врагов прыжком.</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s18"><Data ss:Type="String">ui_Variant_SummonChampion_variant_3_Lore</Data></Cell>
@@ -7281,7 +7281,7 @@
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s18"><Data ss:Type="String">ui_Variant_SummonChampion_variant_4_desc</Data></Cell>
     <Cell ss:StyleID="s24"><Data ss:Type="String">Livor Mortis converts Weapon Physical Damage to Lightning Damage.\nThe golem can create a shield that Blocks incoming Damage.</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">Трупное пятно конвертирует физический урон оружия в урон молнией.\n\nГолем получает умение, позволяющее создавать щит блокирующий получаемый урон.</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">Трупное пятно конвертирует физический урон оружия в урон молнией.\nГолем получает возможность создавать щит блокирующий получаемый урон.</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s18"><Data ss:Type="String">ui_Variant_SummonChampion_variant_4_lore</Data></Cell>
@@ -7406,7 +7406,7 @@
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s18"><Data ss:Type="String">ui_Variant_SummonChampion_variant_16_desc</Data></Cell>
     <Cell ss:StyleID="s24"><Data ss:Type="String">Increases the Threat and the Health of Livor Mortis' Summon.</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">Призванное существо создаёт больше угрозы.\n\nУвеличивает здоровье призванных существ.</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">Увеличивает уровень создаваемой угрозы и здоровье призванного Трупным пятном существа.</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s18"><Data ss:Type="String">ui_Variant_SummonChampion_variant_17</Data></Cell>
@@ -7476,7 +7476,7 @@
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s18"><Data ss:Type="String">ui_Variant_Vortex_variant_3</Data></Cell>
     <Cell ss:StyleID="s24"><Data ss:Type="String">Erratic Progression</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">Капризная прогрессия</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">Хаотичное движение</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s18"><Data ss:Type="String">ui_Variant_Vortex_variant_3_desc</Data></Cell>
@@ -7641,7 +7641,7 @@
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s18"><Data ss:Type="String">ui_Variant_Vortex_variant_18</Data></Cell>
     <Cell ss:StyleID="s25"><Data ss:Type="String">Night-Eater</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">Night-Eater</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">Пожиратель ночи</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s18"><Data ss:Type="String">ui_Variant_Vortex_variant_18_desc</Data></Cell>
@@ -7876,7 +7876,7 @@
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s18"><Data ss:Type="String">ui_variant_Player_CorpseExplosion_variant_19</Data></Cell>
     <Cell ss:StyleID="s25"><Data ss:Type="String">Erupting Flesh</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">Erupting Flesh</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">Извергающаяся плоть</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s18"><Data ss:Type="String">ui_variant_Player_CorpseExplosion_variant_19_desc</Data></Cell>
@@ -9141,7 +9141,7 @@
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s18"><Data ss:Type="String">ui_Variant_HolyDive_variant_14</Data></Cell>
     <Cell ss:StyleID="s24"><Data ss:Type="String">Heatstroke</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">Получивший солнечный удар</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">Тепловой удар</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s18"><Data ss:Type="String">ui_Variant_HolyDive_variant_14_desc</Data></Cell>
@@ -9435,8 +9435,8 @@
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s18"><Data ss:Type="String">ui_Variant_SmokeBomb_variant_1_desc</Data></Cell>
-    <Cell ss:StyleID="s24"><Data ss:Type="String">Duskshroud can be used on the targeted location.</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">Позволяет применить умение в указанной точке.</Data></Cell>
+    <Cell ss:StyleID="s24"><Data ss:Type="String">Duskshroud can be used on the targeted Ally.</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">Позволяет применить Сумеречную плащаницу на указанного союзника.</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s18"><Data ss:Type="String">ui_Variant_SmokeBomb_variant_2</Data></Cell>
@@ -9851,7 +9851,7 @@
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s18"><Data ss:Type="String">ui_Variant_OwlShot_variant_2_desc</Data></Cell>
     <Cell ss:StyleID="s25"><Data ss:Type="String">Talon Shot's Projectile no longer Pierces. Instead, it sticks to the first Enemy Hit and explodes after a few seconds or after cumulating a certain amount of Projectile on the same Enemy.</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">Talon Shot's Projectile no longer Pierces. Instead, it sticks to the first Enemy Hit and explodes after a few seconds or after cumulating a certain amount of Projectile on the same Enemy.</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">Снаряд Выстрела когтя больше не пробивает насквозь. Вместо этого он прилипает к первому поражённому врагу и взрывается через несколько секунд или после накопления определённого количества снарядов на одном враге.</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s18"><Data ss:Type="String">ui_Variant_OwlShot_variant_3</Data></Cell>
@@ -9896,7 +9896,7 @@
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s18"><Data ss:Type="String">ui_Variant_OwlShot_variant_6_desc</Data></Cell>
     <Cell ss:StyleID="s25"><Data ss:Type="String">Triggering Talon Shot also pulls enemies near the Projectile before it explodes.</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">Triggering Talon Shot also pulls enemies near the Projectile before it explodes.</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">Активация Выстрела когтя также притягивает ближайших к снаряду врагов перед его взрывом.</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s18"><Data ss:Type="String">ui_Variant_OwlShot_variant_7</Data></Cell>
@@ -9916,7 +9916,7 @@
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s18"><Data ss:Type="String">ui_Variant_OwlShot_variant_8</Data></Cell>
     <Cell ss:StyleID="s25"><Data ss:Type="String">Stormbird</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">Stormbird</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">Штормовая птица</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s18"><Data ss:Type="String">ui_Variant_OwlShot_variant_8_Lore</Data></Cell>
@@ -9976,7 +9976,7 @@
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s18"><Data ss:Type="String">ui_Variant_OwlShot_variant_13</Data></Cell>
     <Cell ss:StyleID="s25"><Data ss:Type="String">Vanity's Blessing</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">Vanity's Blessing</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">Благословение Тщеславия</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s18"><Data ss:Type="String">ui_Variant_OwlShot_variant_13_desc</Data></Cell>
@@ -9996,7 +9996,7 @@
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s18"><Data ss:Type="String">ui_Variant_OwlShot_variant_15</Data></Cell>
     <Cell ss:StyleID="s25"><Data ss:Type="String">The Blizzard's Call</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">The Blizzard's Call</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">Зов метели</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s18"><Data ss:Type="String">ui_Variant_OwlShot_variant_15_desc</Data></Cell>
@@ -10071,7 +10071,7 @@
    <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s18"><Data ss:Type="String">ui_FireballPoisonDamageBoost_Desc</Data></Cell>
     <Cell ss:StyleID="s22"><Data ss:Type="String">Gain an additional %1 damage as Toxic damage</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">Gain an additional %1 damage as Toxic damage</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">Добавляет %1 дополнительного урона в виде урона ядом</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s18"><Data ss:Type="String">ui_FireballPoisonDamageBoost_Title</Data></Cell>
@@ -10081,7 +10081,7 @@
    <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s18"><Data ss:Type="String">ui_FireballShadowDamageBoost_Desc</Data></Cell>
     <Cell ss:StyleID="s22"><Data ss:Type="String">Gain an additional %1 damage as Shadow damage</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">Gain an additional %1 damage as Shadow damage</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">Добавляет %1 дополнительного урона в виде урона тенью</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s18"><Data ss:Type="String">ui_FireballShadowDamageBoost_Title</Data></Cell>
@@ -10111,7 +10111,7 @@
    <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s18"><Data ss:Type="String">ui_ChainLightningBleedDamageBoost_Desc</Data></Cell>
     <Cell ss:StyleID="s22"><Data ss:Type="String">Gain an additional %1 damage as Rend damage</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">Gain an additional %1 damage as Rend damage</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">Добавляет %1 дополнительного урона в виде урона рваным ранами</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s18"><Data ss:Type="String">ui_ChainLightningBleedDamageBoost_Title</Data></Cell>
@@ -10121,7 +10121,7 @@
    <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s18"><Data ss:Type="String">ui_ChainLightningFrostDamageBoost_Desc</Data></Cell>
     <Cell ss:StyleID="s22"><Data ss:Type="String">Gain an additional %1 damage as Frost damage</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">Gain an additional %1 damage as Frost damage</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">Добавляет %1 дополнительного урона в виде урона холодом</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s18"><Data ss:Type="String">ui_ChainLightningFrostDamageBoost_Title</Data></Cell>
@@ -10151,7 +10151,7 @@
    <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s18"><Data ss:Type="String">ui_FrostNovaPoisonDamageBoost_Desc</Data></Cell>
     <Cell ss:StyleID="s22"><Data ss:Type="String">Gain an additional %1 damage as Toxic damage</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">Gain an additional %1 damage as Toxic damage</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">Добавляет %1 дополнительного урона в виде урона ядом</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s18"><Data ss:Type="String">ui_FrostNovaPoisonDamageBoost_Title</Data></Cell>
@@ -10161,7 +10161,7 @@
    <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s18"><Data ss:Type="String">ui_FrostNovaFireDamageBoost_Desc</Data></Cell>
     <Cell ss:StyleID="s22"><Data ss:Type="String">Gain an additional %1 damage as Fire damage</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">Gain an additional %1 damage as Fire damage</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">Добавляет %1 дополнительного урона в виде урона огнём</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s18"><Data ss:Type="String">ui_FrostNovaFireDamageBoost_Title</Data></Cell>

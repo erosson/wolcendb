@@ -166,8 +166,8 @@
       <Particle Key="Aura" Name="U_Character_02.Sniper.Sniper_Charging_Aura_01_Frost" Direction="0,1,0" Bone="R_Weapon_Bone" />
       <Particle Key="Muzzle" Name="U_Character_02.Sniper.Sniper_Muzzle_01_Frost" Direction="0,1,0" Scale="1.3" Offset="0,1.5,1.5" />
       <Particle Key="Wind" Name="U_Character_02.Sniper.Sniper_Charging_Wind_01_Frost" Direction="0,0,1" Bone="Bip01" Scale="0.75" />
-      <Particle Key="FinalCharging" Name="U_Character_02.Sniper.Sniper_Charging_Trigger" Direction="0,1,0" Bone="R_Weapon_Bone" Scale="0.75" />
-      <Particle Key="FinalChargingPerfect" Name="U_Character_02.Sniper.Sniper_Charging_Trigger" Direction="0,1,0" Bone="R_Weapon_Bone" Scale="1.3" />
+      <Particle Key="FinalCharging" Name="U_Character_02.Sniper.Sniper_Charging_Trigger_Frost" Direction="0,1,0" Bone="R_Weapon_Bone" Scale="0.75" />
+      <Particle Key="FinalChargingPerfect" Name="U_Character_02.Sniper.Sniper_Charging_Trigger_Frost" Direction="0,1,0" Bone="R_Weapon_Bone" Scale="1.3" />
     </ParticleList>
     <Specific_Sniper>
       <ChargeSound Trigger="Play_Skill_Sniper_Charge_Phase1_Frost" />
@@ -201,11 +201,11 @@
       <Particle Key="Gun" Name="U_Character_02.Sniper.Summon_Sniper_01_Loop_Rend" Direction="0,1,0" Bone="R_Weapon_Bone" />
       <Particle Key="GunDisapear" Name="U_Character_02.Sniper.Summon_Sniper_01_End_Rend" Direction="0,1,0" Bone="R_Weapon_Bone" />
       <Particle Key="PerfectTimingGround" Name="U_Character_02.Sniper.Sniper_Projectile_05_Under_Rend" Direction="0,1,0" Bone="Bip01" Offset="0,-1.5,0" />
-      <Particle Key="Aura" Name="U_Character_02.Sniper.Sniper_Charging_Aura_01_Rend" Direction="0,1,0" Bone="R_Weapon_Bone" />
+      <Particle Key="Aura" Name="U_Character_02.HolyDive.HolyDive_Charging_Aura_Rend" Direction="0,1,0" Bone="R_Weapon_Bone" />
       <Particle Key="Muzzle" Name="U_Character_02.Sniper.Sniper_Muzzle_01_Rend" Direction="0,1,0" Scale="1.3" Offset="0,1.5,1.5" />
       <Particle Key="Wind" Name="U_Character_02.Sniper.Sniper_Charging_Wind_01_Rend" Direction="0,0,1" Bone="Bip01" Scale="0.75" />
-      <Particle Key="FinalCharging" Name="U_Character_02.Sniper.Sniper_Charging_Trigger" Direction="0,1,0" Bone="R_Weapon_Bone" Scale="0.75" />
-      <Particle Key="FinalChargingPerfect" Name="U_Character_02.Sniper.Sniper_Charging_Trigger" Direction="0,1,0" Bone="R_Weapon_Bone" Scale="1.3" />
+      <Particle Key="FinalCharging" Name="U_Character_02.HolyDive.HolyDive_Charging_Final_Rend" Direction="0,1,0" Bone="R_Weapon_Bone" Scale="0.75" />
+      <Particle Key="FinalChargingPerfect" Name="U_Character_02.HolyDive.HolyDive_Charging_Final_Rend" Direction="0,1,0" Bone="R_Weapon_Bone" Scale="1.3" />
     </ParticleList>
     <SoundTrigger OnAnimCast="Play_Skill_Sniper_Shoot_Rend" OnHit="Play_Skill_Sniper_Impact_Rend" />
     <Specific_Sniper>
@@ -242,8 +242,8 @@
       <Particle Key="Aura" Name="U_Character_02.Sniper.Sniper_Charging_Aura_01_Shadow" Direction="0,1,0" Bone="R_Weapon_Bone" />
       <Particle Key="Muzzle" Name="U_Character_02.Sniper.Sniper_Muzzle_01_Shadow" Direction="0,1,0" Scale="1.3" Offset="0,1.5,1.5" />
       <Particle Key="Wind" Name="U_Character_02.Sniper.Sniper_Charging_Wind_01_Shadow" Direction="0,0,1" Bone="Bip01" Scale="0.75" />
-      <Particle Key="FinalCharging" Name="U_Character_02.Sniper.Sniper_Charging_Trigger" Direction="0,1,0" Bone="R_Weapon_Bone" Scale="0.75" />
-      <Particle Key="FinalChargingPerfect" Name="U_Character_02.Sniper.Sniper_Charging_Trigger" Direction="0,1,0" Bone="R_Weapon_Bone" Scale="1.3" />
+      <Particle Key="FinalCharging" Name="U_Character_02.Sniper.Sniper_Charging_Trigger_Shadow" Direction="0,1,0" Bone="R_Weapon_Bone" Scale="0.75" />
+      <Particle Key="FinalChargingPerfect" Name="U_Character_02.Sniper.Sniper_Charging_Trigger_Shadow" Direction="0,1,0" Bone="R_Weapon_Bone" Scale="1.3" />
     </ParticleList>
     <SoundTrigger OnAnimCast="Play_Skill_Sniper_Shoot_Shadow" OnHit="Play_Skill_Sniper_Impact_Shadow" />
     <Specific_Sniper>

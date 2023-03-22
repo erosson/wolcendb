@@ -2734,8 +2734,8 @@
       <ItemRarity Magic="0" Rare="0" Set="1" Legendary="0" />
     </DropParams>
     <MagicEffect EffectId="explosion_on_globe_pickup">
-      <LoRoll TriggeredSkillSelector="1" PossibilityInt="100" />
-      <HiRoll TriggeredSkillSelector="1" PossibilityInt="100" />
+      <LoRoll TriggeredSkillSelector="0" PossibilityInt="1" />
+      <HiRoll TriggeredSkillSelector="0" PossibilityInt="1" />
     </MagicEffect>
   </Affix>
   <Affix AffixId="unique_brotherhood_chest_all_resistance" Class="" AffixType="default">
@@ -2767,8 +2767,8 @@
       <ItemRarity Magic="0" Rare="0" Set="1" Legendary="0" />
     </DropParams>
     <MagicEffect EffectId="explosion_on_target_kill">
-      <LoRoll TriggeredSkillSelector="1" PossibilityInt="100" />
-      <HiRoll TriggeredSkillSelector="1" PossibilityInt="100" />
+      <LoRoll TriggeredSkillSelector="0" PossibilityInt="1" />
+      <HiRoll TriggeredSkillSelector="0" PossibilityInt="1" />
     </MagicEffect>
   </Affix>
   <Affix AffixId="unique_explosive_glove_attack_speed" Class="" AffixType="default">

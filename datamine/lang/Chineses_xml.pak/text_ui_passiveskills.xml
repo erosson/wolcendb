@@ -9,8 +9,8 @@
   <Title>Untitled Spreadsheet</Title>
   <Author>Unknown Creator</Author>
   <LastAuthor>Pierre Techoueyres</LastAuthor>
-  <Created>2020-12-01T11:35:32Z</Created>
-  <LastSaved>2020-12-01T11:35:32Z</LastSaved>
+  <Created>2020-12-15T08:28:34Z</Created>
+  <LastSaved>2020-12-15T08:28:34Z</LastSaved>
   <Company>Microsoft Corporation</Company>
   <Version>16.00</Version>
  </DocumentProperties>
@@ -18,8 +18,8 @@
   <AllowPNG/>
  </OfficeDocumentSettings>
  <ExcelWorkbook xmlns="urn:schemas-microsoft-com:office:excel">
-  <WindowHeight>13665</WindowHeight>
-  <WindowWidth>28770</WindowWidth>
+  <WindowHeight>32767</WindowHeight>
+  <WindowWidth>19275</WindowWidth>
   <WindowTopX>32767</WindowTopX>
   <WindowTopY>32767</WindowTopY>
   <ProtectStructure>False</ProtectStructure>
@@ -502,7 +502,7 @@
    <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s19"><Data ss:Type="String">ui_WARR_5_desc</Data></Cell>
     <Cell ss:StyleID="s24"><Data ss:Type="String">Increase your physical, toxic, and rend damage but you can't inflict other damage types.</Data></Cell>
-    <Cell ss:StyleID="s19"><Data ss:Type="String">提高物理、毒素、撕裂伤害加成。但无法造成其他类型的伤害。</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">造成更多物理、毒素、撕裂伤害。但无法造成其他类型的伤害。</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s19"><Data ss:Type="String">ui_WARR_6_name</Data></Cell>
@@ -522,7 +522,7 @@
    <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s19"><Data ss:Type="String">ui_WARR_7_desc</Data></Cell>
     <Cell ss:StyleID="s24"><Data ss:Type="String">Increase damage for each enemy within range.</Data></Cell>
-    <Cell ss:StyleID="s19"><Data ss:Type="String">近战范围内的每个敌人都会给予你伤害加成。 </Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">近战范围内的每个敌人都会提高你的伤害。</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s19"><Data ss:Type="String">ui_WARR_8_name</Data></Cell>
@@ -777,7 +777,7 @@
    <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s18"><Data ss:Type="String">ui_TANK_7_desc</Data></Cell>
     <Cell ss:StyleID="s24"><Data ss:Type="String">Increase damage based on your physical resistance but reduce your critical damage.</Data></Cell>
-    <Cell ss:StyleID="s19"><Data ss:Type="String">每个百分点的物理抗性都会为所有类型的伤害提供加成，但会降低你的暴击几率值。</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">根据你的物理抗性提高伤害，但会降低你的暴击伤害。</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s18"><Data ss:Type="String">ui_TANK_8_name</Data></Cell>
@@ -1117,7 +1117,7 @@
    <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s18"><Data ss:Type="String">ui_AGIL_22_desc</Data></Cell>
     <Cell ss:StyleID="s27"><Data ss:Type="String">Increase your chance to dodge passively.</Data></Cell>
-    <Cell ss:StyleID="s19"><Data ss:Type="String">增加你的被动闪避几率值。</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">增加你被动闪避的几率。</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s18"><Data ss:Type="String">ui_AGIL_23_name</Data></Cell>
@@ -1462,7 +1462,7 @@
    <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s18"><Data ss:Type="String">ui_DIST_7_desc</Data></Cell>
     <Cell ss:StyleID="s27"><Data ss:Type="String">Increase damage to enemies that have impaired movements.</Data></Cell>
-    <Cell ss:StyleID="s19"><Data ss:Type="String">对移动能力受损的敌人（减速、停滞、眩晕、冻结）造成的伤害获得一定加成。</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">对移动能力受损的敌人（减速、停滞、眩晕、冻结）造成额外伤害。</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s18"><Data ss:Type="String">ui_DIST_8_name</Data></Cell>
@@ -1607,7 +1607,7 @@
    <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s18"><Data ss:Type="String">ui_DIST_30_desc</Data></Cell>
     <Cell ss:StyleID="s27"><Data ss:Type="String">Increase projectiles damage based on the distance separating you from enemies (up to a limit).</Data></Cell>
-    <Cell ss:StyleID="s19"><Data ss:Type="String">随着敌人与你发射投射物位置的距离增加，投射物的伤害加成也会增加（直至达到上限）。</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">敌人与你发射投射物位置的距离越远，投射物的伤害就越高（直至达到上限）。</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s18"><Data ss:Type="String">ui_DIST_31_name</Data></Cell>
@@ -1881,8 +1881,8 @@
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s18"><Data ss:Type="String">ui_ELEM_5_desc</Data></Cell>
-    <Cell ss:StyleID="s27"><Data ss:Type="String">Increase the number of ailment stacks applied to an enemy and decrease non damage-over-time.</Data></Cell>
-    <Cell ss:StyleID="s19"><Data ss:Type="String">造成异常状态时，施加的异常层数增加。非持续性伤害加成降低。</Data></Cell>
+    <Cell ss:StyleID="s27"><Data ss:Type="String">Increase the number of ailment stacks applied to an enemy</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">造成异常状态时，施加的异常层数增加</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s18"><Data ss:Type="String">ui_ELEM_6_name</Data></Cell>
@@ -2047,7 +2047,7 @@
    <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s18"><Data ss:Type="String">ui_ELEM_30_desc</Data></Cell>
     <Cell ss:StyleID="s27"><Data ss:Type="String">Receive a damage buff when killing an enemy affected by ailments.</Data></Cell>
-    <Cell ss:StyleID="s19"><Data ss:Type="String">杀死一名受异常状态影响的敌人时会给予你临时的伤害加成Buff。</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">杀死一名受异常状态影响的敌人时会给予你临时的额外伤害Buff。</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s18"><Data ss:Type="String">ui_ELEM_31_name</Data></Cell>
@@ -2717,7 +2717,7 @@
    <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s22"><Data ss:Type="String">ui_SNIP_8_gameplaydesc</Data></Cell>
     <Cell ss:StyleID="s29"><Data ss:Type="String">Increase projectile damage based on its remaining pierce effect.</Data></Cell>
-    <Cell ss:StyleID="s19"><Data ss:Type="String">投射物击中第一个目标后，根据剩余穿透数获得伤害加成。</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">投射物击中第一个目标后，根据剩余穿透数获得额外伤害。</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s22"><Data ss:Type="String">ui_SNIP_9_name</Data></Cell>
@@ -2792,7 +2792,7 @@
    <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s22"><Data ss:Type="String">ui_SNIP_19_gameplaydesc</Data></Cell>
     <Cell ss:StyleID="s30"><Data ss:Type="String">Stay in combat and avoid enemy hits to gain Cold Blooded points every few seconds and increase your damage.</Data></Cell>
-    <Cell ss:StyleID="s19"><Data ss:Type="String">在战斗状态下且不被敌人击中，则每过几秒都会获得“冷血”点数，它会提供伤害加成。</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">在战斗状态下且不被敌人击中，则每过几秒都会获得“冷血”点数，“冷血”点数会提高你的伤害。</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s22"><Data ss:Type="String">ui_SNIP_20_name</Data></Cell>
@@ -2947,7 +2947,7 @@
    <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s22"><Data ss:Type="String">ui_SIEGE_19_gameplaydesc</Data></Cell>
     <Cell ss:StyleID="s29"><Data ss:Type="String">Gain Inexorable points while remaining stationary to increase damage and reduce movement speed.</Data></Cell>
-    <Cell ss:StyleID="s19"><Data ss:Type="String">当你不移动时，每过数秒就会得到一个“岿然”点数。“岿然”点数会减慢你的移动速度并提供伤害加成。</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">当你不移动时，每过数秒就会得到一个“岿然”点数。“岿然”点数会减慢你的移动速度并提供额外伤害。</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s22"><Data ss:Type="String">ui_SIEGE_20_name</Data></Cell>
@@ -3237,7 +3237,7 @@
    <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s22"><Data ss:Type="String">ui_REPU_17_gameplaydesc</Data></Cell>
     <Cell ss:StyleID="s29"><Data ss:Type="String">Increase projectile damage or melee damage by cumulating or removing Annointed Ammunition points.</Data></Cell>
-    <Cell ss:StyleID="s19"><Data ss:Type="String">通过填装或失去“擦枪”点数，获得一定的投射物或近战伤害加成。</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">通过填装或失去“擦枪”点数，获得一定的投射物或近战伤害增益。</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s22"><Data ss:Type="String">ui_REPU_18_name</Data></Cell>
@@ -3257,7 +3257,7 @@
    <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s22"><Data ss:Type="String">ui_REPU_19_gameplaydesc</Data></Cell>
     <Cell ss:StyleID="s29"><Data ss:Type="String">Gain Headhunter points by killing Champions or Bosses to increase material damage.</Data></Cell>
-    <Cell ss:StyleID="s19"><Data ss:Type="String">击杀将级敌人或Boss以获得“猎首”点数，“猎首”点数能提供物质伤害加成。</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">击杀将级敌人或Boss以获得“猎首”点数，“猎首”点数能提高物质伤害。</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s22"><Data ss:Type="String">ui_REPU_20_name</Data></Cell>
@@ -3492,7 +3492,7 @@
    <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s22"><Data ss:Type="String">ui_ORAC_8_gameplaydesc</Data></Cell>
     <Cell ss:StyleID="s29"><Data ss:Type="String">Gain Accords buffs based on the elemental damage used to increase damage, critical chance score, or ailment chance score.</Data></Cell>
-    <Cell ss:StyleID="s19"><Data ss:Type="String">根据技能造成的元素伤害类型赋予你相应的“协议”，提供暴击几率值、伤害加成或异常状态几率值。</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">根据技能造成的元素伤害类型赋予你相应的“协议”，提供暴击几率值、额外伤害或异常状态几率值。</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s22"><Data ss:Type="String">ui_ORAC_9_name</Data></Cell>
@@ -4037,7 +4037,7 @@
    <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s22"><Data ss:Type="String">ui_BSRK_17_gameplaydesc</Data></Cell>
     <Cell ss:StyleID="s28"><Data ss:Type="String">Chance to increase damage based on the amount of burn stacks on enemies.</Data></Cell>
-    <Cell ss:StyleID="s19"><Data ss:Type="String">当你击中一个身上有一定燃烧层数的的敌人时，有一定的几率清除燃烧层数并根据清除的层数为这一击提供伤害加成。</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">基于敌人身上的燃烧层数提高伤害。</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s22"><Data ss:Type="String">ui_BSRK_18_name</Data></Cell>
@@ -4057,7 +4057,7 @@
    <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s22"><Data ss:Type="String">ui_BSRK_19_gameplaydesc</Data></Cell>
     <Cell ss:StyleID="s30"><Data ss:Type="String">Gain Unleashed Fury points on hit to increase life leech and attack speed and reduce resistance score.</Data></Cell>
-    <Cell ss:StyleID="s19"><Data ss:Type="String">每当你击中一个敌人，会得到一个“暴怒”点数。每个“暴怒”点数都会给你提供攻击速度值和吸血，但会降低你的全抗值。</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">每当你击中一个敌人，会得到一个“暴怒”点数。每个“暴怒”点数都会给你提供攻击速度和吸血，但会降低你的全抗值。</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s22"><Data ss:Type="String">ui_BSRK_20_name</Data></Cell>
@@ -4137,7 +4137,7 @@
    <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s22"><Data ss:Type="String">ui_ASSA_8_gameplaydesc</Data></Cell>
     <Cell ss:StyleID="s29"><Data ss:Type="String">Gain Overload points with basic attacks to increase damage, and double the damage bonus on skill use.</Data></Cell>
-    <Cell ss:StyleID="s19"><Data ss:Type="String">普攻获得提供伤害加成的“过载”点数。当你使用技能时，移除所有“过载”点数，该技能享受这些“过载”点数提供的全伤害加成Buff双倍的效果。</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">普攻可以获得提供额外伤害的“过载”点数。当你使用技能时，移除所有“过载”点数，该技能享受这些“过载”点数提供的额外伤害Buff双倍的效果。</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s22"><Data ss:Type="String">ui_ASSA_9_name</Data></Cell>
@@ -4192,7 +4192,7 @@
    <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s22"><Data ss:Type="String">ui_ASSA_17_gameplaydesc</Data></Cell>
     <Cell ss:StyleID="s29"><Data ss:Type="String">Temporarily increase attack speed on critical hit.</Data></Cell>
-    <Cell ss:StyleID="s19"><Data ss:Type="String">每当你造成一次暴击，你的攻击速度值会在一小段时间得到增加。</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">每当你造成一次暴击，你的攻击速度会在一小段时间得到增加。</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s22"><Data ss:Type="String">ui_ASSA_18_name</Data></Cell>
@@ -4212,7 +4212,7 @@
    <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s22"><Data ss:Type="String">ui_ASSA_19_gameplaydesc</Data></Cell>
     <Cell ss:StyleID="s29"><Data ss:Type="String">You have an additional resource: Power Charge points. Power Charge points are consumed with the usual resource for device and lightning skills, and increase their damage if its value is positive. Damage is reduced if the value is negative.</Data></Cell>
-    <Cell ss:StyleID="s19"><Data ss:Type="String">让你具有“电荷”点数。该点数可以作用于任何装置技能和闪电基础伤害技能。其取值范围在-100到100之间。当电荷数值为正时，提高你的伤害加成，值为负时，降低你的伤害加成。</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">让你具有“电荷”点数。该点数可以作用于任何装置技能和闪电基础伤害技能。其取值范围在-100到100之间。当电荷数值为正时，提高你的伤害，值为负时，降低你的伤害。</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s22"><Data ss:Type="String">ui_ASSA_20_name</Data></Cell>
@@ -4377,7 +4377,7 @@
    <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s19"><Data ss:Type="String">ui_HeadHunter_Stacks_desc</Data></Cell>
     <Cell ss:StyleID="s24"><Data ss:Type="String">Each Headhunter point grants a Material damage bonus</Data></Cell>
-    <Cell ss:StyleID="s19"><Data ss:Type="String">每个猎首点数提供一定物质伤害加成</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">每个“猎首”点数使物质伤害造成一定的额外伤害</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s19"><Data ss:Type="String">ui_Offensive_Stance_title</Data></Cell>

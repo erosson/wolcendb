@@ -9,8 +9,8 @@
   <Title>Untitled Spreadsheet</Title>
   <Author>Unknown Creator</Author>
   <LastAuthor>Pierre Techoueyres</LastAuthor>
-  <Created>2020-12-01T11:35:27Z</Created>
-  <LastSaved>2020-12-01T11:35:27Z</LastSaved>
+  <Created>2020-12-15T08:28:32Z</Created>
+  <LastSaved>2020-12-15T08:28:32Z</LastSaved>
   <Company>Microsoft Corporation</Company>
   <Version>16.00</Version>
  </DocumentProperties>
@@ -18,8 +18,8 @@
   <AllowPNG/>
  </OfficeDocumentSettings>
  <ExcelWorkbook xmlns="urn:schemas-microsoft-com:office:excel">
-  <WindowHeight>13665</WindowHeight>
-  <WindowWidth>28770</WindowWidth>
+  <WindowHeight>32767</WindowHeight>
+  <WindowWidth>19275</WindowWidth>
   <WindowTopX>32767</WindowTopX>
   <WindowTopY>32767</WindowTopY>
   <ProtectStructure>False</ProtectStructure>
@@ -1046,7 +1046,7 @@
    <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s18"><Data ss:Type="String">ui_AST_OwlShot_desc</Data></Cell>
     <Cell ss:StyleID="s22"><Data ss:Type="String">Launch a projectile that pierces and damages everything in its path before exploding at maximum range in an area of effect. Using a secondary trigger allows you to detonate the launched projectiles sooner.\n\n&lt;font color=&quot;#cb5316&quot;&gt;Attack:&lt;/font&gt;  Only usable with daggers, bows and pistols.\n&lt;font color=&quot;#509FFF&quot;&gt;Skill Tags&lt;/font&gt;: &lt;b&gt;Attack&lt;/b&gt;, &lt;b&gt;Projectile&lt;/b&gt;, &lt;b&gt;Rogue&lt;/b&gt;.</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">发射一枚能穿透并伤害途径中所有目标的投射物，投射物将在达到最远射程时爆炸。二次触发该技能可以提前引爆投射物。\n\n&lt;font color=&quot;#cb5316&quot;&gt;攻击：&lt;/font&gt;需要匕首，弓和手枪。\n&lt;font color=&quot;#509FFF&quot;&gt;技能标签&lt;/font&gt;：&lt;b&gt;攻击&lt;/b&gt;，&lt;b&gt;投射物&lt;/b&gt;，&lt;b&gt;游侠&lt;/b&gt;。</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">发射一枚能穿透并伤害途径中所有目标的投射物，投射物将在达到最远射程时爆炸。使用附属按键将能提前引爆投射物。\n\n&lt;font color=&quot;#cb5316&quot;&gt;攻击：&lt;/font&gt;需要匕首，弓和手枪。\n&lt;font color=&quot;#509FFF&quot;&gt;技能标签&lt;/font&gt;：&lt;b&gt;攻击&lt;/b&gt;，&lt;b&gt;投射物&lt;/b&gt;，&lt;b&gt;游侠&lt;/b&gt;。我！</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s17"><Data ss:Type="String">SKILLS VARIANTS  &lt;font color=&quot;#cb5316&quot;&gt; Rage  &lt;font color=&quot;#948ec6&quot;&gt; Willpower</Data></Cell>
@@ -6501,7 +6501,7 @@
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s18"><Data ss:Type="String">ui_variant_Player_AetherBlade_variant_19_desc</Data></Cell>
     <Cell ss:StyleID="s24"><Data ss:Type="String">Increases the Damage dealt by Infinity Blades.</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">提高该技能造成的伤害。</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">提高该技能的暴击伤害。</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s18"><Data ss:Type="String">ui_Variant_Possession_variant_default</Data></Cell>
@@ -7336,7 +7336,7 @@
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s18"><Data ss:Type="String">ui_Variant_SummonChampion_variant_9_desc</Data></Cell>
     <Cell ss:StyleID="s24"><Data ss:Type="String">Increases the Damage dealt by Livor Mortis' Summon.</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">提高召唤物伤害。</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">提高该技能召唤物的伤害。</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s18"><Data ss:Type="String">ui_Variant_SummonChampion_variant_10</Data></Cell>
@@ -7346,7 +7346,7 @@
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s18"><Data ss:Type="String">ui_Variant_SummonChampion_variant_10_desc</Data></Cell>
     <Cell ss:StyleID="s24"><Data ss:Type="String">Increases the Damage dealt by Livor Mortis' Summon.</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">提高召唤物伤害。</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">提高该技能召唤物的伤害。</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s18"><Data ss:Type="String">ui_Variant_SummonChampion_variant_11</Data></Cell>
@@ -7356,7 +7356,7 @@
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s18"><Data ss:Type="String">ui_Variant_SummonChampion_variant_11_desc</Data></Cell>
     <Cell ss:StyleID="s24"><Data ss:Type="String">Increases the Damage dealt by Livor Mortis' Summon.</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">提高召唤物伤害。</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">提高该技能召唤物的伤害。</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s18"><Data ss:Type="String">ui_Variant_SummonChampion_variant_12</Data></Cell>
@@ -7431,7 +7431,7 @@
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s18"><Data ss:Type="String">ui_Variant_SummonChampion_variant_18_desc</Data></Cell>
     <Cell ss:StyleID="s25"><Data ss:Type="String">Increases the Health and the Damage dealt by Livor Mortis' Summon.</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">提高该技能召唤物的伤害。</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">提高该技能召唤物的生命值。</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s18"><Data ss:Type="String">ui_Variant_SummonChampion_variant_19</Data></Cell>
@@ -8841,7 +8841,7 @@
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s18"><Data ss:Type="String">ui_Variant_RingOfPain_variant_7_desc</Data></Cell>
     <Cell ss:StyleID="s24"><Data ss:Type="String">Using Blood for Blood grants a Buff to your Attack Speed and Spell Casting Speed per Enemy killed within the Area of Effect.</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">该技能施放时授予你一个Buff，每个在血阵范围内死亡的敌人都会增加你的攻击速度值和施法速度值。</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">该技能施放时授予你一个Buff，每个在血阵范围内死亡的敌人都会增加你的攻击速度和施法速度。</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s18"><Data ss:Type="String">ui_Variant_RingOfPain_variant_7_Lore</Data></Cell>
@@ -10231,7 +10231,7 @@
    <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s18"><Data ss:Type="String">ui_SacredGroundSacreddamageToAttackBonus_Desc</Data></Cell>
     <Cell ss:StyleID="s22"><Data ss:Type="String">Add %1 Sacred damage to your Attacks</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">攻击获得总伤害%1的额外神圣伤害</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">攻击获得%1额外神圣伤害</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s18"><Data ss:Type="String">ui_SacredGroundSacreddamageToAttackBonus_Title</Data></Cell>
@@ -10826,7 +10826,7 @@
    <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s19"><Data ss:Type="String">ui_AST_Param_CriticalChance</Data></Cell>
     <Cell ss:StyleID="s23"><Data ss:Type="String">Critical Chance: %1</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">暴击几率加成：%1</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">暴击几率：%1</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s19"><Data ss:Type="String">ui_AST_Param_Criticaldamage</Data></Cell>

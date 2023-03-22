@@ -87,10 +87,10 @@
       <Particle Key="Charging2" Name="U_Character.Skills.BrutalStrike_Charge_03" Direction="0,1,0" Bone="L_Weapon_Bone" Scale="0.75" />
       <Particle Key="Charging3" Name="U_Character.Skills.BrutalStrike_Charge_04" Direction="0,1,0" Bone="L_Weapon_Bone" Scale="0.75" />
       <Particle Key="ChargingF" Name="U_Character.Skills.BrutalStrike_Charge_Final" Direction="0,1,0" Bone="L_Weapon_Bone" Scale="0.75" />
-      <Particle Key="Indicator1" Name="U_Character_02.HolyDive.HolyDive_Indicator_01" Direction="0,1,0" Scale="0.725" />
-      <Particle Key="Indicator2" Name="U_Character_02.HolyDive.HolyDive_Indicator_02" Direction="0,1,0" Scale="0.725" />
-      <Particle Key="Indicator3" Name="U_Character_02.HolyDive.HolyDive_Indicator_03" Direction="0,1,0" Scale="0.725" />
-      <Particle Key="IndicatorF" Name="U_Character_02.HolyDive.HolyDive_Indicator_Activate_01" Direction="0,1,0" Scale="0.7" TimeScale="0.9" />
+      <Particle Key="Indicator1" Name="U_Character.Skills.Arrow_Rain_Indicator_01" Direction="0,1,0" Scale="0.725" />
+      <Particle Key="Indicator2" Name="U_Character.Skills.Arrow_Rain_Indicator_02" Direction="0,1,0" Scale="0.725" />
+      <Particle Key="Indicator3" Name="U_Character.Skills.Arrow_Rain_Indicator_03" Direction="0,1,0" Scale="0.725" />
+      <Particle Key="IndicatorF" Name="U_Character.Skills.Arrow_Rain_Indicator_Activate_01" Direction="0,1,0" Scale="0.7" TimeScale="0.9" />
     </ParticleList>
     <ChargedSkill WindupAnim="player_skill_arrowsrain_Charge_In" FollowupAnim="player_skill_arrowsrain_Charge_Out">
       <Step TimeToReachStep="0.5" AssociatedAnim="player_skill_arrowsrain_Charge_Loop_01" WeaponDamagePercent="100" />
@@ -196,10 +196,10 @@
   </Skill>
   <Skill UID="player_arrowsrain_step_8,player_arrowsrain_step_9" ESkill="default_variant_combo">
     <ParticleList>
-      <Particle Key="Indicator1" Name="U_Character_02.HolyDive.HolyDive_Indicator_01_Rectangle" Direction="0,1,0" Scale="1.38" />
-      <Particle Key="Indicator2" Name="U_Character_02.HolyDive.HolyDive_Indicator_02_Rectangle" Direction="0,1,0" Scale="1.38" />
-      <Particle Key="Indicator3" Name="U_Character_02.HolyDive.HolyDive_Indicator_03_Rectangle" Direction="0,1,0" Scale="1.38" />
-      <Particle Key="IndicatorF" Name="U_Character_02.HolyDive.HolyDive_Indicator_Activate_01_Rectangle" Direction="0,1,0" Scale="1.43" />
+      <Particle Key="Indicator1" Name="U_Character.Skills.Arrow_Rain_Rectangle_Indicator_01" Direction="0,1,0" Scale="1.38" />
+      <Particle Key="Indicator2" Name="U_Character.Skills.Arrow_Rain_Rectangle_Indicator_02" Direction="0,1,0" Scale="1.38" />
+      <Particle Key="Indicator3" Name="U_Character.Skills.Arrow_Rain_Rectangle_Indicator_03" Direction="0,1,0" Scale="1.38" />
+      <Particle Key="IndicatorF" Name="U_Character.Skills.Arrow_Rain_Rectangle_Indicator_Activate_01" Direction="0,1,0" Scale="1.43" />
     </ParticleList>
   </Skill>
   <Skill UID="player_arrowsrain_step_5,player_arrowsrain_step_13" ESkill="default_variant_combo">

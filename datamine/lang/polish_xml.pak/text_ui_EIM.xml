@@ -9,8 +9,8 @@
   <Title>Untitled Spreadsheet</Title>
   <Author>Unknown Creator</Author>
   <LastAuthor>Pierre Techoueyres</LastAuthor>
-  <Created>2020-11-30T17:18:17Z</Created>
-  <LastSaved>2020-11-30T17:18:17Z</LastSaved>
+  <Created>2020-12-15T08:28:48Z</Created>
+  <LastSaved>2020-12-15T08:28:48Z</LastSaved>
   <Company>Microsoft Corporation</Company>
   <Version>16.00</Version>
  </DocumentProperties>
@@ -18,8 +18,8 @@
   <AllowPNG/>
  </OfficeDocumentSettings>
  <ExcelWorkbook xmlns="urn:schemas-microsoft-com:office:excel">
-  <WindowHeight>13665</WindowHeight>
-  <WindowWidth>28770</WindowWidth>
+  <WindowHeight>32767</WindowHeight>
+  <WindowWidth>19275</WindowWidth>
   <WindowTopX>32767</WindowTopX>
   <WindowTopY>32767</WindowTopY>
   <ProtectStructure>False</ProtectStructure>
@@ -175,7 +175,7 @@
    <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s19"><Data ss:Type="String">ui_eim_ailment_stacks_multiplier_chance</Data></Cell>
     <Cell ss:StyleID="s25"><Data ss:Type="String">%1 Chance to multiply the number of Ailment Stacks you apply</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">%1 szansy na zwielokrotnienie liczby kumulacji dolegliwości, które nakładasz</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">%1 szansy na podwyższenie liczby kumulacji dolegliwości, które nakładasz</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -247,7 +247,7 @@
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s19"><Data ss:Type="String">ui_eim_ailment_stacks_multiplier</Data></Cell>
     <Cell ss:StyleID="s27"><Data ss:Type="String">%1 Chance to multiply the number of Ailment Stacks applied by %2</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">%1 szansy na zwielokrotnienia liczby nałożonych kumulacji dolegliwości %2 razy</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">%1 szansy na podwyższenie liczby nałożonych kumulacji dolegliwości %2 razy</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -256,7 +256,7 @@
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s19"><Data ss:Type="String">ui_eim_ailment_stacks_multiplier_increase</Data></Cell>
     <Cell ss:StyleID="s27"><Data ss:Type="String">%1 Chance to multiply the number of Ailment Stacks applied</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">%1 szansy na zwielokrotnienia liczby nałożonych kumulacji dolegliwości</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">%1 szansy na podwyższenie liczby nałożonych kumulacji dolegliwości</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -327,8 +327,8 @@
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s19"><Data ss:Type="String">ui_eim_attack_damage_bonus_from_last_spell</Data></Cell>
-    <Cell ss:StyleID="s25"><Data ss:Type="String">Attacks gain %1 additional Damage as the Damage Type of the last Spell cast during %4s</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">Ataki zyskują %1 dodatkowych obrażeń takich jak typ obrażeń ostatniego rzuconego zaklęcia w ciągu %4s</Data></Cell>
+    <Cell ss:StyleID="s25"><Data ss:Type="String">Attacks gain %1 additional Damage as the Damage Type of the last Spell cast during %2s</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">Ataki zyskują %1 dodatkowych obrażeń takich jak typ obrażeń ostatniego rzuconego zaklęcia w ciągu %2s</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -427,7 +427,7 @@
    <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s19"><Data ss:Type="String">ui_eim_blockchance_unconditional_flat</Data></Cell>
     <Cell ss:StyleID="s30"><Data ss:Type="String">%1 Added Block Chance and allow any weapon to block</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">%1 do szansy na blok i pozwala blokować każdą bronią</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">%1 do szansy na blok - pozwala blokować każdą bronią</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -2290,7 +2290,7 @@
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s19"><Data ss:Type="String">ui_eim_damage_reduction_on_full_force_shield</Data></Cell>
     <Cell ss:StyleID="s32"><Data ss:Type="String">When your Force Shield is full, Damage taken are reduced by %1. Only applies if your maximum Force Shield is greater than half of your maximum Health</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">Gdy Osłona jest pełna, otrzymane obrażenia są zmniejszane o %1. Obowiązuje tylko wtedy, gdy twoja maksymalna osłona jest większa niż połowa twojego maksymalnego zdrowia</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">Gdy twoja osłona jest pełna, otrzymane obrażenia są zmniejszane o %1. Obowiązuje tylko wtedy, gdy twoja maksymalna osłona jest większa niż połowa twojego maksymalnego zdrowia</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -2470,7 +2470,7 @@
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s19"><Data ss:Type="String">ui_eim_elemental_resistance</Data></Cell>
     <Cell ss:StyleID="s27"><Data ss:Type="String">%1 Elemental Resistance Score</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">%1 do wartości  odporności na żywioły</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">%1 do wartości odporności na żywioły</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -3136,7 +3136,7 @@
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s19"><Data ss:Type="String">ui_eim_lightning_resistance_score_percent</Data></Cell>
     <Cell ss:StyleID="s27"><Data ss:Type="String">%1 Lightning Resistance Score</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">%1 do wartości  odporności na błyskawice</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">%1 do wartości odporności na błyskawice</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -3154,7 +3154,7 @@
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s19"><Data ss:Type="String">ui_eim_magic_find</Data></Cell>
     <Cell ss:StyleID="s27"><Data ss:Type="String">%1 Magic Find</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">%1 znajd.przed. magicznych</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">%1 znajd.przed.magicznych</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -3289,7 +3289,7 @@
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s19"><Data ss:Type="String">ui_eim_occult_resistance</Data></Cell>
     <Cell ss:StyleID="s27"><Data ss:Type="String">%1 Occult Resistance Score</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">%1 do wartości  odporności na mistycyzm</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">%1 do wartości odporności na mistycyzm</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -3685,7 +3685,7 @@
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s19"><Data ss:Type="String">ui_eim_rend_resistance</Data></Cell>
     <Cell ss:StyleID="s27"><Data ss:Type="String">%1 Rend Resistance Score</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">%1 do wartości  odporności na okaleczenie</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">%1 do wartości odporności na okaleczenie</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -3712,7 +3712,7 @@
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s19"><Data ss:Type="String">ui_eim_rend_resistance_score_percent</Data></Cell>
     <Cell ss:StyleID="s27"><Data ss:Type="String">%1 Rend Resistance Score</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">%1 do wartości  odporności na okaleczenie</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">%1 do wartości odporności na okaleczenie</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -3793,7 +3793,7 @@
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s19"><Data ss:Type="String">ui_eim_sacred_resistance_score_percent</Data></Cell>
     <Cell ss:StyleID="s27"><Data ss:Type="String">%1 Sacred Resistance Score</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">%1 do wartości  odporności na moc świętą</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">%1 do wartości odporności na moc świętą</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -3892,7 +3892,7 @@
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s19"><Data ss:Type="String">ui_eim_shadow_resistance_score_percent</Data></Cell>
     <Cell ss:StyleID="s27"><Data ss:Type="String">%1 Shadow Resistance Score</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">%1 do wartości  odporności na mrok</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">%1 do wartości odporności na mrok</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -3928,7 +3928,7 @@
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s19"><Data ss:Type="String">ui_eim_shield_regeneration_from_health_globes</Data></Cell>
     <Cell ss:StyleID="s27"><Data ss:Type="String">%1 Force Shield restoration from Health Globes</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">%1 osłony odbudowuje się z kul zdrowia</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">%1 osłony przywracają kule zdrowia</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -4108,7 +4108,7 @@
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s19"><Data ss:Type="String">ui_eim_stasis_on_attack_skill</Data></Cell>
     <Cell ss:StyleID="s27"><Data ss:Type="String">%2 Stasis Stacks per Attacks</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">%2 kumulacji unieruchomienia na każdy atak</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">%2 kumulacje unieruchomienia na każdy atak</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -4693,7 +4693,7 @@
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s18"><Data ss:Type="String">ui_eim_local_allresistances_score_flat</Data></Cell>
     <Cell ss:StyleID="s27"><Data ss:Type="String">%1 All Resistances Score on this item</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">%1 do wartości wszystkich odporności na tym przedmiocie</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">%1 do wartości wszystkich odporności z tego przedmiotu</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -4702,7 +4702,7 @@
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s18"><Data ss:Type="String">ui_eim_local_allresistances_score_percent</Data></Cell>
     <Cell ss:StyleID="s27"><Data ss:Type="String">%1 All Resistances Score on this item</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">%1 do wartości wszystkich odporności na tym przedmiocie</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">%1 do wartości wszystkich odporności z tego przedmiotu</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -4711,7 +4711,7 @@
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s18"><Data ss:Type="String">ui_eim_local_blockchance_flat</Data></Cell>
     <Cell ss:StyleID="s27"><Data ss:Type="String">%1 Block Chance on this item</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">%1 szansy na blok na tym przedmiocie</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">%1 szansy na blok z tego przedmiotu</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -4720,7 +4720,7 @@
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s18"><Data ss:Type="String">ui_eim_local_blockchance_percent</Data></Cell>
     <Cell ss:StyleID="s27"><Data ss:Type="String">%1 Block Chance on this item</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">%1 szansy na blok na tym przedmiocie</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">%1 szansy na blok z tego przedmiotu</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -4729,7 +4729,7 @@
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s18"><Data ss:Type="String">ui_eim_local_blockefficiency_flat</Data></Cell>
     <Cell ss:StyleID="s27"><Data ss:Type="String">%1 Block Efficiency on this item</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">%1 do skuteczności bloku na tym przedmiocie</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">%1 do skuteczności bloku z tego przedmiotu</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -4738,7 +4738,7 @@
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s18"><Data ss:Type="String">ui_eim_local_blockefficiency_percent</Data></Cell>
     <Cell ss:StyleID="s27"><Data ss:Type="String">%1 Block Efficiency on this item</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">%1 do skuteczności bloku na tym przedmiocie</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">%1 do skuteczności bloku z tego przedmiotu</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -4864,7 +4864,7 @@
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s18"><Data ss:Type="String">ui_eim_local_forceshield_flat</Data></Cell>
     <Cell ss:StyleID="s27"><Data ss:Type="String">%1 Force Shield on this item</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">%1 do osłony na tym przedmiocie</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">%1 do osłony z tego przedmiotu</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -4873,7 +4873,7 @@
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s18"><Data ss:Type="String">ui_eim_local_forceshield_percent</Data></Cell>
     <Cell ss:StyleID="s27"><Data ss:Type="String">%1 Force Shield on this item</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">%1 do osłony na tym przedmiocie</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">%1 do osłony z tego przedmiotu</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -4882,7 +4882,7 @@
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s18"><Data ss:Type="String">ui_eim_local_health_flat</Data></Cell>
     <Cell ss:StyleID="s27"><Data ss:Type="String">%1 Health on this item</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">%1 do zdrowia na tym przedmiocie</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">%1 do zdrowia z tego przedmiotu</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -4891,7 +4891,7 @@
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s18"><Data ss:Type="String">ui_eim_local_health_percent</Data></Cell>
     <Cell ss:StyleID="s27"><Data ss:Type="String">%1 Health on this item</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">%1 do zdrowia na tym przedmiocie</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">%1 do zdrowia z tego przedmiotu</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -4900,7 +4900,7 @@
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s18"><Data ss:Type="String">ui_eim_local_resourcegeneration_flat</Data></Cell>
     <Cell ss:StyleID="s27"><Data ss:Type="String">%1 Resource Generation on this item</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">%1 do generowania zasobu na tym przedmiocie</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">%1 do generowania zasobu z tego przedmiotu</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -4909,7 +4909,7 @@
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s18"><Data ss:Type="String">ui_eim_local_resourcegeneration_percent</Data></Cell>
     <Cell ss:StyleID="s27"><Data ss:Type="String">%1 Resource Generation on this item</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">%1 do generowania zasobu na tym przedmiocie</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">%1 do generowania zasobu z tego przedmiotu</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -5575,7 +5575,7 @@
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s21"><Data ss:Type="String">ui_eim_cap_max_health_and_force_shield</Data></Cell>
     <Cell ss:StyleID="s25"><Data ss:Type="String">Your Health is set to %1 of its maximum. Your Force Shield is set to %2 of its maximum</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">Twoje zdrowie jest ustawione na %1 maksimum, a osłona na %2 maksimum</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">Twoje zdrowie jest ustawione na %1 maksimum. Twoja osłona jest ustawiona na %2 maksimum</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -5692,7 +5692,7 @@
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s21"><Data ss:Type="String">ui_eim_movement_speed_on_purged_stasis_stacks</Data></Cell>
     <Cell ss:StyleID="s25"><Data ss:Type="String">Stasis Stacks removed give %1 Movement Speed to you and your Allies in a %2m radius during %3s</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">%1 szybkości ruchu dla siebie i sojusznikom w promieniu %2m przez %3s po usunięciu kumulacji unieruchomienia</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">%1 szybkości ruchu dla ciebie i sojusznikom w promieniu %2m przez %3s po usunięciu kumulacji unieruchomienia</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -6195,8 +6195,8 @@
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s21"><Data ss:Type="String">ui_eim_stamina_regen_on_critical_hit</Data></Cell>
-    <Cell ss:StyleID="s25"><Data ss:Type="String">Critical Strikes regenerate %1 Stamina</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">Ataki krytyczne regenerują %1 staminy</Data></Cell>
+    <Cell ss:StyleID="s25"><Data ss:Type="String">Critical Hits increase your Stamina regeneration rate by %1 during 3s</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">Trafienia krytyczne zwiększają tempo regeneracji staminy o %1 przez 3s</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -6367,7 +6367,7 @@
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s18"><Data ss:Type="String">ui_HuntReward_LC_Weapon_Legendary</Data></Cell>
     <Cell ss:StyleID="s27"><Data ss:Type="String">Your Prey will drop a Legendary Weapon with a Tributary Affix</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">Twoja zdobycz upuści legendarną broń z pobocznym afiksem</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">Twoja ofiara upuści legendarną broń z pobocznym afiksem</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -6376,7 +6376,7 @@
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s18"><Data ss:Type="String">ui_HuntReward_LC_Armor_Legendary</Data></Cell>
     <Cell ss:StyleID="s27"><Data ss:Type="String">Your Prey will drop a Legendary Armor with a Tributary Affix</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">Twoja zdobycz upuści legendarny pancerz z pobocznym afiksem</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">Twoja ofiara upuści legendarny pancerz z pobocznym afiksem</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -6385,7 +6385,7 @@
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s18"><Data ss:Type="String">ui_HuntReward_LC_Accessory_Legendary</Data></Cell>
     <Cell ss:StyleID="s27"><Data ss:Type="String">Your Prey will drop a Legendary Accessory with a Tributary Affix</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">Twoja zdobycz upuści legendarne akcesorium z pobocznym afiksem</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">Twoja ofiara upuści legendarne akcesorium z pobocznym afiksem</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -6547,7 +6547,7 @@
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s18"><Data ss:Type="String">ui_huntmodifier_SpawnLieutenants</Data></Cell>
     <Cell ss:StyleID="s25"><Data ss:Type="String">Specialists will assist the Prey during the fight.</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">Specjaliści będą pomagać Ofierze w walce.</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">Specjaliści będą pomagać ofierze w walce.</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>

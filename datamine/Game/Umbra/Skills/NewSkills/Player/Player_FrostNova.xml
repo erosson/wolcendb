@@ -129,7 +129,7 @@
   <Skill UID="player_frostnova_step_17" ESkill="default_variant">
     <HUD UIName="@ui_Variant_FrostNova_variant_17" Lore="@ui_Variant_FrostNova_variant_17_Lore" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_Alpha.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_Alpha.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_Alpha.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_Alpha.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_Alpha.png" HUDPictureVariant_InnerIcon="../u_resources/spells/Active_Skills/frostnova_Toxic.png" ShowParamsInTooltip="SpecificFrostNova,StatusAilmentsChance,DamageWeapon" HUDPicture="../u_resources/spells/Active_Skills/frostnova_Toxic.png" VariantBottomPanel="1" />
     <Specific_FrostNova LaunchSound="Play_Skill_FrostNova_Cast_Toxic" />
-    <WeaponRequirements Requirements="shadow,magic" />
+    <WeaponRequirements Requirements="poison,magic" />
     <Damage_Conversion>
       <Entry From="physical" To="frost" ConversionRate="-100" />
       <Entry From="physical" To="toxic" ConversionRate="100" />
@@ -147,7 +147,7 @@
   <Skill UID="player_frostnova_step_18" ESkill="default_variant">
     <HUD UIName="@ui_Variant_FrostNova_variant_18" Lore="@ui_Variant_FrostNova_variant_18_Lore" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_Alpha.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_Alpha.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_Alpha.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_Alpha.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_Alpha.png" HUDPictureVariant_InnerIcon="../u_resources/spells/Active_Skills/frostnova_Fire.png" ShowParamsInTooltip="SpecificFrostNova,StatusAilmentsChance,DamageWeapon" HUDPicture="../u_resources/spells/Active_Skills/frostnova_Fire.png" VariantBottomPanel="1" />
     <Specific_FrostNova LaunchSound="Play_Skill_FrostNova_Cast_Fire" />
-    <WeaponRequirements Requirements="shadow,magic" />
+    <WeaponRequirements Requirements="fire,magic" />
     <Damage_Conversion>
       <Entry From="physical" To="frost" ConversionRate="-100" />
       <Entry From="physical" To="fire" ConversionRate="100" />
