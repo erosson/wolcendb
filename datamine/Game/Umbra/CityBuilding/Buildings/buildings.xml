@@ -78,6 +78,9 @@
     <ProjectList>
       <ProjectParams ProjectName="dark_market_construct" />
       <ProjectParams ProjectName="dark_market_buy_reagent" />
+      <ProjectParams ProjectName="dark_market_buy_unique_items_max" />
+      <ProjectParams ProjectName="dark_market_buy_unique_items_max_max" />
+      <ProjectParams ProjectName="dark_market_buy_unique_weapons_ultimate" />
       <ProjectParams ProjectName="dark_market_item_quality_upgrade" />
       <ProjectParams ProjectName="dark_market_item_rarity_upgrade" />
       <ProjectParams ProjectName="dark_market_leg_reagent_upgrade" />
@@ -207,6 +210,42 @@
       <ProjectParams ProjectName="expert_forge_construct" />
       <ProjectParams ProjectName="expert_forge_project_0" />
       <ProjectParams ProjectName="expert_forge_project_1" />
+      <ProjectParams ProjectName="expert_forge_project_2" />
+      <ProjectParams ProjectName="expert_forge_project_3" />
+      <ProjectParams ProjectName="expert_forge_project_4" />
+      <ProjectParams ProjectName="expert_forge_project_5" />
+    </ProjectList>
+  </Building>
+  <Building Name="building_regent_assemblee" BaseProduction="20">
+    <UIParams UIName="@ui_building_regent_assemblee" UILore="@ui_building_regent_assemblee_desc" ImagePath="city_building\building_illustrations\regent_assemblee.png" />
+    <ProjectList>
+      <ProjectParams ProjectName="medical_garrison_construct" />
+      <ProjectParams ProjectName="medical_garrison_flesh" />
+      <ProjectParams ProjectName="medical_garrison_souls" />
+      <ProjectParams ProjectName="medical_garrison_fury" />
+      <ProjectParams ProjectName="weakening_evil_forces_construct" />
+      <ProjectParams ProjectName="weakening_evil_forces_flesh_upgrade_1" />
+      <ProjectParams ProjectName="weakening_evil_forces_flesh_upgrade_2" />
+      <ProjectParams ProjectName="weakening_evil_forces_souls_upgrade_1" />
+      <ProjectParams ProjectName="weakening_evil_forces_souls_upgrade_2" />
+      <ProjectParams ProjectName="weakening_evil_forces_fury_upgrade_1" />
+      <ProjectParams ProjectName="weakening_evil_forces_fury_upgrade_2" />
+      <ProjectParams ProjectName="fight_the_corruption_construct" />
+      <ProjectParams ProjectName="fight_the_corruption_flesh_upgrade_1" />
+      <ProjectParams ProjectName="fight_the_corruption_flesh_upgrade_2" />
+      <ProjectParams ProjectName="fight_the_corruption_souls_upgrade_1" />
+      <ProjectParams ProjectName="fight_the_corruption_souls_upgrade_2" />
+      <ProjectParams ProjectName="fight_the_corruption_fury_upgrade_1" />
+      <ProjectParams ProjectName="fight_the_corruption_fury_upgrade_2" />
+      <ProjectParams ProjectName="time_distortion_construct" />
+      <ProjectParams ProjectName="time_distortion_upgrade_1" />
+      <ProjectParams ProjectName="time_distortion_upgrade_2" />
+      <ProjectParams ProjectName="anti_demonic_forces_construct" />
+      <ProjectParams ProjectName="seal_the_flames_construct" />
+      <ProjectParams ProjectName="mysterious_shenanigans_construct" />
+      <ProjectParams ProjectName="mysterious_shenanigans_upgrade_1" />
+      <ProjectParams ProjectName="mysterious_shenanigans_upgrade_2" />
+      <ProjectParams ProjectName="mysterious_shenanigans_upgrade_3" />
     </ProjectList>
   </Building>
 </MetaData>

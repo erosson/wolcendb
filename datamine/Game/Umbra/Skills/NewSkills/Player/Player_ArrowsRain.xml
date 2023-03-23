@@ -4,9 +4,10 @@
     <Projectile BaseDamageBonusPercentPerNonUsedProjectile="30" />
     <VisualFeedback TrailPresetBase="ranged" FeedbackPresetBase="Player_skill_arrowsrain" BloodDecalOrientation="center" />
     <WeaponRequirements Requirements="ranged" />
+    <CastingParams CancellableByDefault="1" />
     <HUD HUDPicture="../u_resources/spells/Active_Skills/arrowsRain_Physical.png" UIName="@ui_AST_ArrowsRain" Lore="@ui_AST_ArrowsRain_Lore" ActiveEffectTitle="" ActiveEffectDesc="" ASTTreeNumber="0" ShowParamsInAST="Cost,ROSTime,Cooldown,Range,DamageWeapon,DamageDetail,StatusAilmentsChance,Slow,SpecificArrowsRain" ShowParamsInTooltip="Cost,Cooldown,DamageOverview,StatusAilmentsChance,Slow,SpecificArrowsRain" />
     <Aggression TargetValueOnHit="7" />
-    <DamageWeapon WeaponMultiplier="7" />
+    <DamageWeapon WeaponMultiplier="9" />
     <StatusAilment AilmentEffectiveness="30" />
     <Cooldown Cooldown="8.0" CooldownPerLevel="0" />
     <ResourceCost RageCost="-200" ROSTransfertDuration="2" />
@@ -24,40 +25,40 @@
     </Shapes>
     <DamageZone Duration="3" RateOfFire="0.33" RemoveParticleWithShape="0" MaxEntityHits="20" />
     <Specific_ArrowsRain ArrowsSpawnDelay="0.75" DamageAsOneShot="0" NominalTickCount="6" />
-    <SoundTrigger OnAnimStart="Play_Skill_ArrowsRain_Summon" OnAnimCast="Play_Skill_ArrowsRain_Shoot" OnHit="Play_Skill_ArrowsRain_Impact" />
+    <SoundTrigger OnAnimStart="Play_Skill_ArrowsRain_Summon" OnAnimCast="Play_Skill_ArrowsRain_Shoot" OnHit="Play_Skill_ArrowsRain_Impact" OnKill="Play_OnKill_Impact_Lethal_Arrow" />
   </Skill>
   <Skill UID="player_arrowsrain_variant_default_damage_type" ESkill="default_variant">
     <HUD UIName="@ui_AST_ArrowsRain" Lore="@ui_AST_ArrowsRain_Lore" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_Alpha.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_Alpha.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_Alpha.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_Alpha.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_Alpha.png" HUDPictureVariant_InnerIcon="../u_resources/spells/Active_Skills/arrowsRain_Physical.png" VariantBottomPanel="1" />
   </Skill>
   <Skill UID="player_arrowsrain_step_1" ESkill="default_variant">
-    <HUD UIName="@ui_Variant_ArrowsRain_variant_1" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_001.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_001.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_001.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_001.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_001.png" ShowParamsInTooltip="SpecificArrowsRain,Cooldown" />
+    <HUD UIName="@ui_Variant_ArrowsRain_variant_1" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_001.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_001.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_001.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_001.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_001.png" ShowParamsInTooltip="SpecificArrowsRain,Cooldown" Category="Utility" />
     <Cooldown Cooldown="-2.0" />
   </Skill>
   <Skill UID="player_arrowsrain_step_2" ESkill="default_variant">
-    <HUD UIName="@ui_Variant_ArrowsRain_variant_2" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_001.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_001.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_001.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_001.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_001.png" ShowParamsInTooltip="SpecificArrowsRain,DamageWeapon" />
+    <HUD UIName="@ui_Variant_ArrowsRain_variant_2" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_001.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_001.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_001.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_001.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_001.png" ShowParamsInTooltip="SpecificArrowsRain,DamageWeapon" Category="Combat" />
     <DamageWeapon WeaponMultiplier="1.15" />
   </Skill>
   <Skill UID="player_arrowsrain_step_3" ESkill="default_variant">
-    <HUD UIName="@ui_Variant_ArrowsRain_variant_3" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_003.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_003.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_003.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_003.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_003.png" ShowParamsInTooltip="SpecificArrowsRain,Slow" />
-    <StatusEffect_MovementSpeed SlowPercent="20" SlowPercentPerLevel="0" Duration="2" DurationPerLevel="0" />
+    <HUD UIName="@ui_Variant_ArrowsRain_variant_3" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_003.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_003.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_003.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_003.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_003.png" ShowParamsInTooltip="SpecificArrowsRain,Slow" Category="Utility" />
+    <StatusEffect_MovementSpeed SlowPercent="30" SlowPercentPerLevel="0" Duration="2" DurationPerLevel="0" />
   </Skill>
   <Skill UID="player_arrowsrain_step_4" ESkill="default_variant">
-    <HUD UIName="@ui_Variant_ArrowsRain_variant_4" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_003.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_003.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_003.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_003.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_003.png" ShowParamsInTooltip="SpecificArrowsRain,DamageWeapon" />
-    <DamageWeapon WeaponMultiplier="0.8" />
+    <HUD UIName="@ui_Variant_ArrowsRain_variant_4" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_003.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_003.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_003.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_003.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_003.png" ShowParamsInTooltip="SpecificArrowsRain,DamageWeapon,Cooldown" Category="Mastery" />
+    <DamageWeapon WeaponMultiplier="0.7" />
     <StatusAilment AilmentEffectiveness="500" />
-    <Cooldown Cooldown="4.0" CooldownPerLevel="0" />
+    <Cooldown Cooldown="-4.0" CooldownPerLevel="0" />
     <Specific_ArrowsRain DamageAsOneShot="1" />
   </Skill>
   <Skill UID="player_arrowsrain_step_6" ESkill="default_variant">
-    <HUD UIName="@ui_Variant_ArrowsRain_variant_6" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_001.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_001.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_001.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_001.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_001.png" ShowParamsInTooltip="SpecificArrowsRain,StatusAilmentsChance" />
+    <HUD UIName="@ui_Variant_ArrowsRain_variant_6" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_001.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_001.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_001.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_001.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_001.png" ShowParamsInTooltip="SpecificArrowsRain,StatusAilmentsChance" Category="Utility" />
     <StatusAilment AilmentEffectiveness="125" />
   </Skill>
   <Skill UID="player_arrowsrain_step_7" ESkill="default_variant">
-    <HUD UIName="@ui_Variant_ArrowsRain_variant_7" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_001.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_001.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_001.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_001.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_001.png" ShowParamsInTooltip="SpecificArrowsRain,DamageCritical" />
+    <HUD UIName="@ui_Variant_ArrowsRain_variant_7" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_001.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_001.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_001.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_001.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_001.png" ShowParamsInTooltip="SpecificArrowsRain,DamageCritical" Category="Combat" />
     <DamageCritical CriticalInflictScoreModifier="40" />
   </Skill>
   <Skill UID="player_arrowsrain_step_8" ESkill="default_variant">
-    <HUD UIName="@ui_Variant_ArrowsRain_variant_8" Lore="@ui_Variant_ArrowsRain_variant_8_Lore" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_005.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_005.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_005.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_005.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_005.png" ShowParamsInTooltip="SpecificArrowsRain,DamageWeapon" />
+    <HUD UIName="@ui_Variant_ArrowsRain_variant_8" Lore="@ui_Variant_ArrowsRain_variant_8_Lore" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_005.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_005.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_005.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_005.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_005.png" ShowParamsInTooltip="SpecificArrowsRain,DamageWeapon" Category="Mastery" />
     <Shapes>
       <Entry Key="AlternateShape" ShapeName="player_arrowsrain_alternate_shape" />
       <Entry Key="InstantAlternate" ShapeName="player_arrowsrain_alternate_instant_shape" />
@@ -77,16 +78,17 @@
     <DamageWeapon WeaponMultiplier="1.5" />
   </Skill>
   <Skill UID="player_arrowsrain_step_9" ESkill="default_variant">
-    <HUD UIName="@ui_Variant_ArrowsRain_variant_9" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_003.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_003.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_003.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_003.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_003.png" ShowParamsInTooltip="SpecificArrowsRain" />
+    <HUD UIName="@ui_Variant_ArrowsRain_variant_9" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_003.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_003.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_003.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_003.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_003.png" ShowParamsInTooltip="SpecificArrowsRain" Category="Mastery" />
+    <CastingParams GamepadHoldToChangeCastPosition="1" />
     <ParticleList>
       <Particle Key="Aura" Name="U_Character.Skills.BrutalStrike_ChargingAura_01" Direction="0,1,0" Bone="L_Weapon_Bone" Scale="0.75" />
       <Particle Key="Bow" Name="U_Character.Skills.Spread_Shot_Bow_Loop_01" Direction="0,1,0" Bone="L_Weapon_Bone" />
       <Particle Key="BowDisappear" Name="U_Character.Skills.Spread_Shot_Bow_End_01" Direction="0,1,0" Bone="L_Weapon_Bone" />
       <Particle Key="Arrows" Name="U_Character.Skills.Spread_Shot_Ready_01" Direction="0,1,0" Bone="L_Weapon_Bone" />
-      <Particle Key="Charging1" Name="U_Character.Skills.BrutalStrike_Charge_02" Direction="0,1,0" Bone="L_Weapon_Bone" Scale="0.75" />
-      <Particle Key="Charging2" Name="U_Character.Skills.BrutalStrike_Charge_03" Direction="0,1,0" Bone="L_Weapon_Bone" Scale="0.75" />
-      <Particle Key="Charging3" Name="U_Character.Skills.BrutalStrike_Charge_04" Direction="0,1,0" Bone="L_Weapon_Bone" Scale="0.75" />
-      <Particle Key="ChargingF" Name="U_Character.Skills.BrutalStrike_Charge_Final" Direction="0,1,0" Bone="L_Weapon_Bone" Scale="0.75" />
+      <Particle Key="Charging1" Name="U_Character.Skills.Arrow_Rain_Charge_01" Direction="0,1,0" Bone="L_Weapon_Bone" Scale="0.75" />
+      <Particle Key="Charging2" Name="U_Character.Skills.Arrow_Rain_Charge_02" Direction="0,1,0" Bone="L_Weapon_Bone" Scale="0.75" />
+      <Particle Key="Charging3" Name="U_Character.Skills.Arrow_Rain_Charge_03" Direction="0,1,0" Bone="L_Weapon_Bone" Scale="0.75" />
+      <Particle Key="ChargingF" Name="U_Character.Skills.Arrow_Rain_Charge_Final" Direction="0,1,0" Bone="L_Weapon_Bone" Scale="0.75" />
       <Particle Key="Indicator1" Name="U_Character.Skills.Arrow_Rain_Indicator_01" Direction="0,1,0" Scale="0.725" />
       <Particle Key="Indicator2" Name="U_Character.Skills.Arrow_Rain_Indicator_02" Direction="0,1,0" Scale="0.725" />
       <Particle Key="Indicator3" Name="U_Character.Skills.Arrow_Rain_Indicator_03" Direction="0,1,0" Scale="0.725" />
@@ -94,40 +96,40 @@
     </ParticleList>
     <ChargedSkill WindupAnim="player_skill_arrowsrain_Charge_In" FollowupAnim="player_skill_arrowsrain_Charge_Out">
       <Step TimeToReachStep="0.5" AssociatedAnim="player_skill_arrowsrain_Charge_Loop_01" WeaponDamagePercent="100" />
-      <Step TimeToReachStep="0.5" AssociatedAnim="player_skill_arrowsrain_Charge_Loop_02" WeaponDamagePercent="250" />
-      <Step TimeToReachStep="0.5" AssociatedAnim="player_skill_arrowsrain_Charge_Loop_03" WeaponDamagePercent="500" />
+      <Step TimeToReachStep="0.5" AssociatedAnim="player_skill_arrowsrain_Charge_Loop_02" WeaponDamagePercent="200" />
+      <Step TimeToReachStep="0.5" AssociatedAnim="player_skill_arrowsrain_Charge_Loop_03" WeaponDamagePercent="450" />
     </ChargedSkill>
   </Skill>
   <Skill UID="player_arrowsrain_step_10" ESkill="default_variant">
-    <HUD UIName="@ui_Variant_ArrowsRain_variant_10" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_003.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_003.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_003.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_003.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_003.png" ShowParamsInTooltip="SpecificArrowsRain" />
+    <HUD UIName="@ui_Variant_ArrowsRain_variant_10" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_003.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_003.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_003.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_003.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_003.png" ShowParamsInTooltip="SpecificArrowsRain" Category="Combat" />
     <Specific_ArrowsRain BuffRadius="7" BuffDuration="10" BuffName="AST_ArrowsRain_Buff" />
   </Skill>
   <Skill UID="player_arrowsrain_step_11" ESkill="default_variant">
-    <HUD UIName="@ui_Variant_ArrowsRain_variant_11" Lore="@ui_Variant_ArrowsRain_variant_11_lore" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_005.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_005.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_005.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_005.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_005.png" ShowParamsInTooltip="SpecificArrowsRain" />
+    <HUD UIName="@ui_Variant_ArrowsRain_variant_11" Lore="@ui_Variant_ArrowsRain_variant_11_lore" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_005.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_005.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_005.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_005.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_005.png" ShowParamsInTooltip="SpecificArrowsRain" Category="Utility" />
     <Specific_ArrowsRain CDReductionPerKill="0.5" />
   </Skill>
   <Skill UID="player_arrowsrain_step_12" ESkill="default_variant">
-    <HUD UIName="@ui_Variant_ArrowsRain_variant_12" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_003.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_003.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_003.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_003.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_003.png" ShowParamsInTooltip="SpecificArrowsRain" />
-    <Specific_ArrowsRain DamageMultiplierPerMob="0.3" />
+    <HUD UIName="@ui_Variant_ArrowsRain_variant_12" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_003.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_003.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_003.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_003.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_003.png" ShowParamsInTooltip="SpecificArrowsRain" Category="Mastery" />
+    <Specific_ArrowsRain DamageMultiplierPerMob="0.1" />
   </Skill>
   <Skill UID="player_arrowsrain_step_13" ESkill="default_variant">
-    <HUD UIName="@ui_Variant_ArrowsRain_variant_13" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_003.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_003.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_003.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_003.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_003.png" ShowParamsInTooltip="SpecificArrowsRain" />
+    <HUD UIName="@ui_Variant_ArrowsRain_variant_13" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_003.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_003.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_003.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_003.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_003.png" ShowParamsInTooltip="SpecificArrowsRain" Category="Mastery" />
     <ParticleList>
       <Particle Key="GhostAppear" Name="U_Character.Skills.Teleport_Decoy_end_Summon" Direction="0,1,0" />
       <Particle Key="GhostDisappear" Name="U_Character.Skills.Teleport_Decoy_end_Summon_02" Direction="0,1,0" />
     </ParticleList>
-    <Specific_ArrowsRain GhostShapeOffset="5.5" GhostPath="Game/objects/characters/mobs/humanoid/humansoul/COSS_HumanSoul/COSS_HumanSoul01.cdf" GhostAnim="coss_humansoul_skill_atk_spreadshot_01" GhostLifeTime="1.1" GhostLoopAnimIn="cmh_skill_spreadshot_ghost_01_Charge_In" GhostLoopAnimLoop="cmh_skill_spreadshot_ghost_01_Charge_Loop" GhostLoopAnimOut="cmh_skill_spreadshot_ghost_01_Charge_Out" />
+    <Specific_ArrowsRain GhostShapeOffset="5.5" GhostPath="Game/objects/characters/mobs/humanoid/humansoul/COSS_HumanSoul/COSS_HumanSoul01.cdf" GhostAnim="COSS_HumanSoul_Skill_Atk_Arrowsrain_01" GhostLifeTime="1.1" GhostLoopAnimIn="cmh_skill_spreadshot_ghost_01_Charge_In" GhostLoopAnimLoop="cmh_skill_spreadshot_ghost_01_Charge_Loop" GhostLoopAnimOut="cmh_skill_spreadshot_ghost_01_Charge_Out" />
   </Skill>
   <Skill UID="player_arrowsrain_step_14" ESkill="default_variant">
-    <HUD UIName="@ui_Variant_ArrowsRain_variant_14" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_001.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_001.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_001.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_001.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_001.png" ShowParamsInTooltip="SpecificArrowsRain,StatusAilmentsChance" />
+    <HUD UIName="@ui_Variant_ArrowsRain_variant_14" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_001.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_001.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_001.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_001.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_001.png" ShowParamsInTooltip="SpecificArrowsRain,StatusAilmentsChance" Category="Combat" />
     <StatusAilment AllAilmentsInflictDamageIncreasePercent="40" />
   </Skill>
   <Skill UID="player_arrowsrain_step_15" ESkill="default_variant">
-    <HUD UIName="@ui_Variant_ArrowsRain_variant_15" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_001.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_001.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_001.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_001.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_001.png" ShowParamsInTooltip="SpecificArrowsRain,DamageCritical" />
+    <HUD UIName="@ui_Variant_ArrowsRain_variant_15" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_001.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_001.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_001.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_001.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_001.png" ShowParamsInTooltip="SpecificArrowsRain,DamageCritical" Category="Combat" />
     <DamageCritical CriticalDamageModifier="25" />
   </Skill>
   <Skill UID="player_arrowsrain_step_16" ESkill="default_variant">
-    <HUD UIName="@ui_Variant_ArrowsRain_variant_16" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_001.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_001.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_001.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_001.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_001.png" ShowParamsInTooltip="SpecificArrowsRain,Cost" />
+    <HUD UIName="@ui_Variant_ArrowsRain_variant_16" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_001.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_001.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_001.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_001.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_001.png" ShowParamsInTooltip="SpecificArrowsRain,Cost" Category="Utility" />
     <ResourceCost RageCost="40" />
   </Skill>
   <Skill UID="player_arrowsrain_step_5" ESkill="default_variant">
@@ -147,7 +149,6 @@
       <Particle Key="Circle_Secondary" Name="U_Character.Skills.Arrow_Rain_2m_Fire" Direction="0,0,1" />
     </ParticleList>
     <WeaponRequirements Requirements="ranged,fire" />
-    <DamageWeapon WeaponMultiplier="1.25" />
     <SoundTrigger OnAnimStart="Play_Skill_ArrowsRain_Summon_Fire" OnAnimCast="Play_Skill_ArrowsRain_Shoot_Fire" OnHit="Play_Skill_ArrowsRain_Impact_Fire" />
   </Skill>
   <Skill UID="player_arrowsrain_step_17" ESkill="default_variant">
@@ -167,7 +168,6 @@
       <Particle Key="Circle_Secondary" Name="U_Character.Skills.Arrow_Rain_2m_Rend" Direction="0,0,1" />
     </ParticleList>
     <WeaponRequirements Requirements="ranged,bleed" />
-    <DamageWeapon WeaponMultiplier="1.25" />
     <SoundTrigger OnAnimStart="Play_Skill_ArrowsRain_Summon_Rend" OnAnimCast="Play_Skill_ArrowsRain_Shoot_Rend" OnHit="Play_Skill_ArrowsRain_Impact_Rend" />
   </Skill>
   <Skill UID="player_arrowsrain_step_18" ESkill="default_variant">
@@ -187,11 +187,29 @@
       <Particle Key="Circle_Secondary" Name="U_Character.Skills.Arrow_Rain_2m_Aether" Direction="0,0,1" />
     </ParticleList>
     <WeaponRequirements Requirements="ranged,umbra" />
-    <DamageWeapon WeaponMultiplier="1.25" />
     <SoundTrigger OnAnimStart="Play_Skill_ArrowsRain_Summon_Aether" OnAnimCast="Play_Skill_ArrowsRain_Shoot_Aether" OnHit="Play_Skill_ArrowsRain_Impact_Aether" />
   </Skill>
+  <Skill UID="player_arrowsrain_step_20" ESkill="default_variant">
+    <HUD UIName="@ui_Variant_ArrowsRain_variant_20" Lore="@ui_Variant_ArrowsRain_variant_20_Lore" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_Alpha.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_Alpha.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_Alpha.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_Alpha.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_Alpha.png" HUDPictureVariant_InnerIcon="../u_resources/spells/Active_Skills/arrowsRain_Sacred.png" ShowParamsInTooltip="SpecificArrowsRain,DamageWeapon" HUDPicture="../u_resources/spells/Active_Skills/arrowsRain_Sacred.png" VariantBottomPanel="1" />
+    <Damage_Conversion>
+      <Entry From="physical" To="sacred" ConversionRate="100" />
+    </Damage_Conversion>
+    <EventEffectOverride>
+      <AnimEvent Original="U_Character.Skills.Spread_Shot_Bow_01" Override="U_Character.Skills.Spread_Shot_Bow_01_Sacred" />
+      <AnimEvent Original="U_Character.Skills.Spread_Shot_Ready_01" Override="U_Character.Skills.Spread_Shot_Ready_01_Sacred" />
+      <AnimEvent Original="U_Character.Skills.ArrowsRain_Arrow_01" Override="U_Character.Skills.ArrowsRain_Arrow_01_Sacred" />
+    </EventEffectOverride>
+    <ParticleList>
+      <Particle Key="Circle_Loop" Name="U_Character.Skills.Arrow_Rain_3m5_Sacred_Loop" Direction="0,0,1" />
+      <Particle Key="Circle" Name="U_Character.Skills.Arrow_Rain_3m5_Sacred" Direction="0,0,1" />
+      <Particle Key="Circle_Loop_Secondary" Name="U_Character.Skills.Arrow_Rain_2m_Sacred_Loop" Direction="0,0,1" />
+      <Particle Key="Circle_Secondary" Name="U_Character.Skills.Arrow_Rain_2m_Sacred" Direction="0,0,1" />
+    </ParticleList>
+    <WeaponRequirements Requirements="ranged,sacred" />
+    <SoundTrigger OnAnimStart="Play_Skill_ArrowsRain_Summon_Sacred" OnAnimCast="Play_Skill_ArrowsRain_Shoot_Sacred" OnHit="Play_Skill_ArrowsRain_Impact_Sacred" />
+  </Skill>
   <Skill UID="Player_ArrowsRain_step_19" ESkill="default_variant">
-    <HUD UIName="@ui_variant_Player_ArrowsRain_variant_19" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_003.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_003.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_003.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_003.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_003.png" ShowParamsInTooltip="DamageWeapon" />
+    <HUD UIName="@ui_variant_Player_ArrowsRain_variant_19" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_001.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_001.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_001.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_001.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_001.png" ShowParamsInTooltip="DamageWeapon" Category="Combat" />
     <DamageWeapon WeaponMultiplier="1.15" />
   </Skill>
   <Skill UID="player_arrowsrain_step_8,player_arrowsrain_step_9" ESkill="default_variant_combo">
@@ -222,10 +240,10 @@
       <Particle Key="Bow" Name="U_Character.Skills.Spread_Shot_Bow_Loop_01_Fire" Direction="0,1,0" Bone="L_Weapon_Bone" />
       <Particle Key="BowDisappear" Name="U_Character.Skills.Spread_Shot_Bow_End_01_Fire" Direction="0,1,0" Bone="L_Weapon_Bone" />
       <Particle Key="Arrows" Name="U_Character.Skills.Spread_Shot_Ready_01_Fire" Direction="0,1,0" Bone="L_Weapon_Bone" />
-      <Particle Key="Charging1" Name="U_Character_02.Sniper.Sniper_Charging_01_Fire" Direction="0,1,0" Bone="L_Weapon_Bone" />
-      <Particle Key="Charging2" Name="U_Character_02.Sniper.Sniper_Charging_02_Fire" Direction="0,1,0" Bone="L_Weapon_Bone" />
-      <Particle Key="Charging3" Name="U_Character_02.Sniper.Sniper_Charging_03_Fire" Direction="0,1,0" Bone="L_Weapon_Bone" />
-      <Particle Key="ChargingF" Name="U_Character_02.Sniper.Sniper_Charging_Trigger_Fire" Direction="0,1,0" Bone="L_Weapon_Bone" />
+      <Particle Key="Charging1" Name="U_Character.Skills.Arrow_Rain_Charge_01_Fire" Direction="0,1,0" Bone="L_Weapon_Bone" />
+      <Particle Key="Charging2" Name="U_Character.Skills.Arrow_Rain_Charge_02_Fire" Direction="0,1,0" Bone="L_Weapon_Bone" />
+      <Particle Key="Charging3" Name="U_Character.Skills.Arrow_Rain_Charge_03_Fire" Direction="0,1,0" Bone="L_Weapon_Bone" />
+      <Particle Key="ChargingF" Name="U_Character.Skills.Arrow_Rain_Charge_Final_Fire" Direction="0,1,0" Bone="L_Weapon_Bone" />
     </ParticleList>
   </Skill>
   <Skill UID="player_arrowsrain_step_17,player_arrowsrain_step_13" ESkill="default_variant_combo">
@@ -248,10 +266,10 @@
       <Particle Key="Bow" Name="U_Character.Skills.Spread_Shot_Bow_Loop_01_Rend" Direction="0,1,0" Bone="L_Weapon_Bone" />
       <Particle Key="BowDisappear" Name="U_Character.Skills.Spread_Shot_Bow_End_01_Rend" Direction="0,1,0" Bone="L_Weapon_Bone" />
       <Particle Key="Arrows" Name="U_Character.Skills.Spread_Shot_Ready_01_Rend" Direction="0,1,0" Bone="L_Weapon_Bone" />
-      <Particle Key="Charging1" Name="U_Character_02.HolyDive.HolyDive_Charging_01_Rend" Direction="0,1,0" Bone="L_Weapon_Bone" />
-      <Particle Key="Charging2" Name="U_Character_02.HolyDive.HolyDive_Charging_02_Rend" Direction="0,1,0" Bone="L_Weapon_Bone" />
-      <Particle Key="Charging3" Name="U_Character_02.HolyDive.HolyDive_Charging_03_Rend" Direction="0,1,0" Bone="L_Weapon_Bone" />
-      <Particle Key="ChargingF" Name="U_Character_02.HolyDive.HolyDive_Charging_Final_Rend" Direction="0,1,0" Bone="L_Weapon_Bone" />
+      <Particle Key="Charging1" Name="U_Character.Skills.Arrow_Rain_Charge_01_Rend" Direction="0,1,0" Bone="L_Weapon_Bone" />
+      <Particle Key="Charging2" Name="U_Character.Skills.Arrow_Rain_Charge_02_Rend" Direction="0,1,0" Bone="L_Weapon_Bone" />
+      <Particle Key="Charging3" Name="U_Character.Skills.Arrow_Rain_Charge_03_Rend" Direction="0,1,0" Bone="L_Weapon_Bone" />
+      <Particle Key="ChargingF" Name="U_Character.Skills.Arrow_Rain_Charge_Final_Rend" Direction="0,1,0" Bone="L_Weapon_Bone" />
     </ParticleList>
   </Skill>
   <Skill UID="player_arrowsrain_step_18,player_arrowsrain_step_8" ESkill="default_variant_combo">
@@ -274,10 +292,36 @@
       <Particle Key="Bow" Name="U_Character.Skills.Spread_Shot_Bow_Loop_01_Aether" Direction="0,1,0" Bone="L_Weapon_Bone" />
       <Particle Key="BowDisappear" Name="U_Character.Skills.Spread_Shot_Bow_End_01_Aether" Direction="0,1,0" Bone="L_Weapon_Bone" />
       <Particle Key="Arrows" Name="U_Character.Skills.Spread_Shot_Ready_01_Aether" Direction="0,1,0" Bone="L_Weapon_Bone" />
-      <Particle Key="Charging1" Name="U_Character_02.HolyDive.HolyDive_Charging_01_Aether" Direction="0,1,0" Bone="L_Weapon_Bone" />
-      <Particle Key="Charging2" Name="U_Character_02.HolyDive.HolyDive_Charging_02_Aether" Direction="0,1,0" Bone="L_Weapon_Bone" />
-      <Particle Key="Charging3" Name="U_Character_02.HolyDive.HolyDive_Charging_03_Aether" Direction="0,1,0" Bone="L_Weapon_Bone" />
-      <Particle Key="ChargingF" Name="U_Character_02.HolyDive.HolyDive_Charging_Final_Aether" Direction="0,1,0" Bone="L_Weapon_Bone" />
+      <Particle Key="Charging1" Name="U_Character.Skills.Arrow_Rain_Charge_01_Aether" Direction="0,1,0" Bone="L_Weapon_Bone" />
+      <Particle Key="Charging2" Name="U_Character.Skills.Arrow_Rain_Charge_02_Aether" Direction="0,1,0" Bone="L_Weapon_Bone" />
+      <Particle Key="Charging3" Name="U_Character.Skills.Arrow_Rain_Charge_03_Aether" Direction="0,1,0" Bone="L_Weapon_Bone" />
+      <Particle Key="ChargingF" Name="U_Character.Skills.Arrow_Rain_Charge_Final_Aether" Direction="0,1,0" Bone="L_Weapon_Bone" />
+    </ParticleList>
+  </Skill>
+  <Skill UID="player_arrowsrain_step_20,player_arrowsrain_step_8" ESkill="default_variant_combo">
+    <ParticleList>
+      <Particle Key="Rectangle" Name="U_Character.Skills.Arrow_Rain_Rectangle_Sacred" Direction="0,0,1" />
+      <Particle Key="Rectangle_Outline" Name="U_Character.Skills.Arrow_Rain_Rectangle_Sacred" Direction="0,0,1" />
+      <Particle Key="Rectangle_Secondary" Name="U_Character.Skills.Arrow_Rain_Rectangle_Small_Sacred" Direction="0,0,1" />
+      <Particle Key="Rectangle_Loop" Name="U_Character.Skills.Arrow_Rain_Rectangle_Sacred_Loop" Direction="0,0,1" />
+      <Particle Key="Rectangle_Loop_Outline" Name="U_Character.Skills.Arrow_Rain_Rectangle_Sacred_Loop_02" Direction="0,1,0" />
+      <Particle Key="Rectangle_Loop_Secondary" Name="U_Character.Skills.Arrow_Rain_Rectangle_Small_Sacred_Loop" Direction="0,0,1" />
+      <Particle Key="Rectangle_Loop_Secondary_Outline" Name="U_Character.Skills.Arrow_Rain_Rectangle_Small_Sacred_Loop_02" Direction="0,1,0" />
+    </ParticleList>
+  </Skill>
+  <Skill UID="player_arrowsrain_step_20,player_arrowsrain_step_13" ESkill="default_variant_combo">
+    <Specific_ArrowsRain GhostPath="Game/objects/characters/mobs/humanoid/humansoul/COSS_HumanSoul/COSS_HumanSoul04.cdf" />
+  </Skill>
+  <Skill UID="player_arrowsrain_step_20,player_arrowsrain_step_9" ESkill="default_variant_combo">
+    <ParticleList>
+      <Particle Key="Aura" Name="U_Character_02.HolyDive.HolyDive_Charging_Aura" Direction="0,1,0" Bone="L_Weapon_Bone" />
+      <Particle Key="Bow" Name="U_Character.Skills.Spread_Shot_Bow_Loop_01" Direction="0,1,0" Bone="L_Weapon_Bone" />
+      <Particle Key="BowDisappear" Name="U_Character.Skills.Spread_Shot_Bow_End_01" Direction="0,1,0" Bone="L_Weapon_Bone" />
+      <Particle Key="Arrows" Name="U_Character.Skills.Spread_Shot_Ready_01" Direction="0,1,0" Bone="L_Weapon_Bone" />
+      <Particle Key="Charging1" Name="U_Character.Skills.Arrow_Rain_Charge_01_Sacred" Direction="0,1,0" Bone="L_Weapon_Bone" />
+      <Particle Key="Charging2" Name="U_Character.Skills.Arrow_Rain_Charge_02_Sacred" Direction="0,1,0" Bone="L_Weapon_Bone" />
+      <Particle Key="Charging3" Name="U_Character.Skills.Arrow_Rain_Charge_03_Sacred" Direction="0,1,0" Bone="L_Weapon_Bone" />
+      <Particle Key="ChargingF" Name="U_Character.Skills.Arrow_Rain_Charge_Final_Sacred" Direction="0,1,0" Bone="L_Weapon_Bone" />
     </ParticleList>
   </Skill>
 </MetaData>

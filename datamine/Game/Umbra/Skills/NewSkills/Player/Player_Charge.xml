@@ -2,6 +2,7 @@
   <Skill UID="player_charge" ESkill="player_charge" Keywords="attack_skill">
     <WeaponRequirements Requirements="melee," />
     <Animation AnimationDrivenMovement="0" ActionString_In="player_skill_charge_in" ActionString_Loop="player_skill_charge_loop" ActionString_Out="player_skill_charge_out" ScaleWithSpellCastingSpeed="1" />
+    <CastingParams GamepadUseForceFeedback="1" GamepadForceFeedbackValue1="0.15" GamepadForceFeedbackValue2="0.75" />
     <HUD HUDPicture="../u_resources/spells/Active_Skills/charge_Physical.png" UIName="@ui_AST_Charge" Lore="@ui_AST_Charge_Lore" ActiveEffectTitle="" ActiveEffectDesc="" ASTTreeNumber="1" ShowParamsInAST="Cost,ROSTime,Cooldown,Range,DamageDetail,DamageWeapon,DamageCritical,StatusAilmentsChance,SpecificCharge" ShowParamsInTooltip="Cost,Cooldown,DamageOverview,StatusAilmentsChance,SpecificCharge" />
     <Enneract PickableParticle_MoveToGround="U_CommonVFX_02.Esseract.Esseract_Projectile.Physical" PickableParticle_OnGround_Shape="U_CommonVFX_02.Esseract.Esseract_Shape.Circle_Physical" PickableParticle_OnGround_Damage="U_CommonVFX_02.Esseract.Esseract_Color.Physical" PickableParticle_OnGround_Symbol="U_CommonVFX_02.Esseract.Esseract_Symbol.HEPHAARON" PickableParticle_OnGround_Indicator="U_CommonVFX_02.Esseract.Esseract_Indicator.Physical" PickableParticle_OnGround_Pickup="U_CommonVFX_02.Esseract.Esseract_Loot.Physical" SkillLearningParticle="U_CommonVFX.Skill_Learn.Skill_Learn_Physical" Inventory_HUDPicture="../u_resources/enneracts/charge.png" Inventory_LoreDesc="@ui_enneract_lore" />
     <Aggression TargetValueOnHit="75" />
@@ -15,90 +16,90 @@
     <ParticleList>
       <Particle Key="Trail" Name="U_Character_02.Charge.Charge_Physical_Ground_01" Direction="0,0,1" Scale="0.7" />
       <Particle Key="Explosion" Name="U_Character_02.Charge.Charge_Impact_01" Direction="0,0,1" Scale="1.25" />
-      <Particle Key="Shield" Name="U_Character_02.Charge.Charge_Shield_01" Direction="0,1,0" Bone="Bip01" Offset="0,0.35,0" Scale="1" />
+      <Particle Key="Shield" Name="U_Character_02.Charge.Charge_Shield_01" Direction="0,1,0" Bone="Bip01" Offset="0,0.6,0" Scale="1" />
       <Particle Key="Wave" Name="U_Character_02.Charge.Charge_Wave_Physical_01" Direction="0,1,0" Offset="0,0,0.5" Scale="0.65" />
-      <Particle Key="ShieldWind" Name="U_Character_02.Charge.Charge_Shield_Wind_01" Bone="Bip01" Direction="0,1,0" Offset="0,0.35,1.25" Scale="1" />
+      <Particle Key="ShieldWind" Name="U_Character_02.Charge.Charge_Shield_Wind_01" Bone="Bip01" Direction="0,1,0" Offset="0,0.6,1.25" Scale="1" />
       <Particle Key="Dust" Name="U_CommonVFX.Dust.Dust_dash_Loop_01_1" Bone="Bip01" Direction="0,1,0" Offset="0,0,0.15" Scale="1" />
-      <Particle Key="ShieldDisapear" Name="U_Character_02.Charge.Charge_Shield_01_Disappear" Direction="0,1,0" Offset="0,0.75,0" Scale="1" />
+      <Particle Key="ShieldDisapear" Name="U_Character_02.Charge.Charge_Shield_01_Disappear" Direction="0,1,0" Offset="0,0.7,0" Scale="1" />
       <Particle Key="TargetMark" Name="U_CommonVFX.System.Indicator_Arrow_01" Direction="0,1,0" />
-      <Particle Key="ImmuneShield" Name="U_Character_02.Charge.Charge_Shield_02" Bone="Bip01" Direction="0,1,0" Offset="0,0.35,1.25" Scale="1" />
+      <Particle Key="ImmuneShield" Name="U_Character_02.Charge.Charge_Shield_02" Bone="Bip01" Direction="0,1,0" Offset="0,0.7,1.25" Scale="1" />
     </ParticleList>
-    <VisualFeedback TrailPresetBase="default" BloodDecalOrientation="forward" />
+    <VisualFeedback TrailPresetBase="default" FeedbackPresetBase="Player_skill_charge" BloodDecalOrientation="forward" />
     <DamageZone Duration="3" RateOfFire="0.33" />
     <Blownaway Height="0.8" Distance="2" StunDuration="0.0" />
     <DamageWeapon WeaponMultiplier="1.1" />
     <Specific_Charge SpeedMultiplier="4" MaxTime="6" MinTime="0.0" CanRedirect="0" TurnRate="0" StunTimeWhenFail="0.0" LateralBlownAway="0.7" BlownAwayDamage="0" ExplosionMaxDamage="150" TrailRadius="0" CCImunity="0" ExplodeWhenFail="1" DistanceForMaxDamage="30" PlayerAnimationSpeed="1.0">
       <HitSounds Default="PLAY_Player_DefaultHit" Trail="Play_hero_default_dot_burn" Wave="Play_hero_default_dot_burn" Explosion="Play_hero_default_dot_burn" BlownAway="Play_hero_default_dot_burn" Destroyable="Play_hero_default_dot_burn" />
     </Specific_Charge>
-    <SoundTrigger OnAnimStart="Play_Skill_Charge_Forward" OnAnimLoopOut="Play_Skill_Charge_End" OnInterrupt="Stop_Skill_Charge" OnAnimEnd="Stop_Skill_Charge" OnHit="Play_hero_default_dot_burn" />
-    <ResourceCost RageCost="-150" RageCostPerLevel="0" ROSTransfertDuration="2.0" />
+    <SoundTrigger OnAnimStart="Play_Skill_Charge_Forward" OnAnimLoopOut="Play_Skill_Charge_End" OnInterrupt="Stop_Skill_Charge" OnAnimEnd="Stop_Skill_Charge" OnHit="Play_hero_default_dot_burn" OnKill="Play_OnKill_Impact_Lethal_Melee_Skill_Default" />
+    <ResourceCost RageCost="-120" RageCostPerLevel="0" ROSTransfertDuration="1.0" />
   </Skill>
   <Skill UID="player_Charge_variant_default_damage_type" ESkill="default_variant">
     <HUD UIName="@ui_AST_Charge" Lore="@ui_AST_Charge_Lore" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_Alpha.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_Alpha.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_Alpha.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_Alpha.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_Alpha.png" HUDPictureVariant_InnerIcon="../u_resources/spells/Active_Skills/charge_Physical.png" VariantBottomPanel="1" />
   </Skill>
   <Skill UID="player_Charge_variant_1" ESkill="default_variant">
-    <HUD UIName="@ui_Variant_Charge_variant_1" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_001.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_001.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_001.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_001.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_001.png" ShowParamsInTooltip="SpecificCharge" />
+    <HUD UIName="@ui_Variant_Charge_variant_1" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_001.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_001.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_001.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_001.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_001.png" ShowParamsInTooltip="SpecificCharge" Category="Utility" />
     <Specific_Charge SpeedMultiplier="2" TurnRate="80" MaxTime="-2" PlayerAnimationSpeed="1.2" />
   </Skill>
   <Skill UID="player_Charge_variant_2" ESkill="default_variant">
-    <HUD UIName="@ui_Variant_Charge_variant_2" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_001.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_001.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_001.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_001.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_001.png" ShowParamsInTooltip="SpecificCharge,DamageWeapon" />
+    <HUD UIName="@ui_Variant_Charge_variant_2" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_001.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_001.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_001.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_001.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_001.png" ShowParamsInTooltip="SpecificCharge,DamageWeapon" Category="Combat" />
     <DamageWeapon WeaponMultiplier="1.15" />
   </Skill>
   <Skill UID="player_Charge_variant_3" ESkill="default_variant">
-    <HUD UIName="@ui_Variant_Charge_variant_3" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_001.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_001.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_001.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_001.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_001.png" ShowParamsInTooltip="SpecificCharge,Cooldown" />
+    <HUD UIName="@ui_Variant_Charge_variant_3" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_001.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_001.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_001.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_001.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_001.png" ShowParamsInTooltip="SpecificCharge,Cooldown" Category="Utility" />
     <Cooldown Cooldown="4" CooldownPerLevel="0" />
     <Specific_Charge EndingStunRadius="4" EndingStunDuration="2" />
   </Skill>
   <Skill UID="player_Charge_variant_4" ESkill="default_variant">
-    <HUD UIName="@ui_Variant_Charge_variant_4" Lore="@ui_Variant_Charge_variant_4_Lore" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_005.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_005.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_005.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_005.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_005.png" ShowParamsInTooltip="SpecificCharge,Cost,CastingParams" />
+    <HUD UIName="@ui_Variant_Charge_variant_4" Lore="@ui_Variant_Charge_variant_4_Lore" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_005.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_005.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_005.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_005.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_005.png" ShowParamsInTooltip="SpecificCharge,Cost,CastingParams" Category="Mastery" />
     <CastingParams CanCastWhileMoving="0" MaintainedCast="1" KeepAliveAfterReleasing="1" />
     <ResourceCostMaintained RageCostPerSecond="-180" RageCostPerSecondPerLevel="0" ROSTransfertDuration="1.0" />
     <Specific_Charge CanRedirect="1" TurnRate="60" />
   </Skill>
   <Skill UID="player_Charge_variant_6" ESkill="default_variant">
-    <HUD UIName="@ui_Variant_Charge_variant_6" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_003.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_003.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_003.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_003.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_003.png" ShowParamsInTooltip="SpecificCharge" />
+    <HUD UIName="@ui_Variant_Charge_variant_6" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_003.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_003.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_003.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_003.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_003.png" ShowParamsInTooltip="SpecificCharge" Category="Mastery" />
     <Specific_Charge CCImunity="1" />
-    <SpecialShield ShieldAngle="360" BounceProjectiles="0" IgnoreDirectionalDamage="1" ProtectionType="ProjectilesOnly" />
+    <SpecialShield ShieldAngle="360" BounceProjectiles="0" IgnoreDirectionalDamage="1" ProtectionType="ProjectilesOnly" ResistsCrowdControl="1" />
   </Skill>
   <Skill UID="player_Charge_variant_7" ESkill="default_variant">
-    <HUD UIName="@ui_Variant_Charge_variant_7" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_003.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_003.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_003.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_003.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_003.png" ShowParamsInTooltip="SpecificCharge" />
+    <HUD UIName="@ui_Variant_Charge_variant_7" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_003.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_003.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_003.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_003.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_003.png" ShowParamsInTooltip="SpecificCharge" Category="Combat" />
     <Specific_Charge WaveDamage="100" WaveDuration="0.9" WaveFireRate="0.4" WaveSound="Play_Skill_Charge_Shockwave" />
     <SoundTrigger OnHit="Play_Skill_Charge_Shockwave_Impact" />
   </Skill>
   <Skill UID="player_Charge_variant_8" ESkill="default_variant">
-    <HUD UIName="@ui_Variant_Charge_variant_8" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_003.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_003.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_003.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_003.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_003.png" ShowParamsInTooltip="SpecificCharge" />
+    <HUD UIName="@ui_Variant_Charge_variant_8" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_003.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_003.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_003.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_003.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_003.png" ShowParamsInTooltip="SpecificCharge" Category="Combat" />
     <Specific_Charge TrailRadius="4.5" />
   </Skill>
   <Skill UID="player_Charge_variant_9" ESkill="default_variant">
-    <HUD UIName="@ui_Variant_Charge_variant_9" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_003.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_003.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_003.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_003.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_003.png" ShowParamsInTooltip="SpecificCharge" />
+    <HUD UIName="@ui_Variant_Charge_variant_9" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_003.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_003.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_003.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_003.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_003.png" ShowParamsInTooltip="SpecificCharge" Category="Combat" />
     <GhostDamage ChanceToHit="10" MinDelay="0.1" MaxDelay="0.2" DamageMultiplier="1" />
   </Skill>
   <Skill UID="player_Charge_variant_10" ESkill="default_variant">
-    <HUD UIName="@ui_Variant_Charge_variant_10" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_001.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_001.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_001.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_001.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_001.png" ShowParamsInTooltip="SpecificCharge" />
+    <HUD UIName="@ui_Variant_Charge_variant_10" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_001.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_001.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_001.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_001.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_001.png" ShowParamsInTooltip="SpecificCharge" Category="Utility" />
     <Specific_Charge RagePerHit="20" />
   </Skill>
   <Skill UID="player_Charge_variant_11" ESkill="default_variant">
-    <HUD UIName="@ui_Variant_Charge_variant_11" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_001.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_001.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_001.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_001.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_001.png" ShowParamsInTooltip="SpecificCharge" />
+    <HUD UIName="@ui_Variant_Charge_variant_11" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_001.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_001.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_001.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_001.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_001.png" ShowParamsInTooltip="SpecificCharge" Category="Combat" />
     <Specific_Charge BlockChanceAsDamageMultiplierConversionPercent="0.5" />
   </Skill>
   <Skill UID="player_Charge_variant_12" ESkill="default_variant">
-    <HUD UIName="@ui_Variant_Charge_variant_12" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_003.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_003.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_003.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_003.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_003.png" ShowParamsInTooltip="SpecificCharge" />
+    <HUD UIName="@ui_Variant_Charge_variant_12" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_003.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_003.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_003.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_003.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_003.png" ShowParamsInTooltip="SpecificCharge" Category="Utility" />
     <Specific_Charge BuffName="AST_Charge_Buff" UseBuff="1" />
   </Skill>
   <Skill UID="player_Charge_variant_13" ESkill="default_variant">
-    <HUD UIName="@ui_Variant_Charge_variant_13" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_003.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_003.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_003.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_003.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_003.png" ShowParamsInTooltip="SpecificCharge" />
+    <HUD UIName="@ui_Variant_Charge_variant_13" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_003.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_003.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_003.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_003.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_003.png" ShowParamsInTooltip="SpecificCharge" Category="Utility" />
     <Specific_Charge BuffAlliesName="AST_Charge_Buff_Allies" BuffAlliesDuration="10" BuffAlliesInRadius="5" />
   </Skill>
   <Skill UID="player_Charge_variant_14" ESkill="default_variant">
-    <HUD UIName="@ui_Variant_Charge_variant_14" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_001.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_001.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_001.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_001.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_001.png" ShowParamsInTooltip="SpecificCharge,DamageCritical" />
+    <HUD UIName="@ui_Variant_Charge_variant_14" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_001.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_001.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_001.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_001.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_001.png" ShowParamsInTooltip="SpecificCharge,DamageCritical" Category="Combat" />
     <DamageCritical CriticalInflictScoreModifier="40" />
   </Skill>
   <Skill UID="player_Charge_variant_15" ESkill="default_variant">
-    <HUD UIName="@ui_Variant_Charge_variant_15" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_001.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_001.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_001.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_001.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_001.png" ShowParamsInTooltip="SpecificCharge,DamageWeapon" />
+    <HUD UIName="@ui_Variant_Charge_variant_15" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_001.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_001.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_001.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_001.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_001.png" ShowParamsInTooltip="SpecificCharge,DamageWeapon" Category="Combat" />
     <DamageWeapon WeaponMultiplier="1.15" />
   </Skill>
   <Skill UID="player_Charge_variant_16" ESkill="default_variant">
-    <HUD UIName="@ui_Variant_Charge_variant_16" Lore="@ui_Variant_Charge_variant_16_Lore" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_005.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_005.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_005.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_005.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_005.png" ShowParamsInTooltip="SpecificCharge,Cooldown,BlownAway" />
+    <HUD UIName="@ui_Variant_Charge_variant_16" Lore="@ui_Variant_Charge_variant_16_Lore" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_005.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_005.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_005.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_005.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_005.png" ShowParamsInTooltip="SpecificCharge,Cooldown,BlownAway" Category="Mastery" />
     <Blownaway StunDuration="1.5" />
     <Cooldown Cooldown="4" CooldownPerLevel="0" />
   </Skill>
@@ -107,54 +108,67 @@
     <ParticleList>
       <Particle Key="Trail" Name="U_Character_02.Charge.Charge_Fire_Ground_01" Direction="0,0,1" Scale="0.7" />
       <Particle Key="Explosion" Name="U_Character_02.Charge.Charge_Impact_Fire_01" Direction="0,0,1" Scale="1.25" />
-      <Particle Key="Shield" Name="U_Character_02.Charge.Charge_Shield_Fire_01" Direction="0,1,0" Bone="Bip01" Offset="0,0.35,0" Scale="1" />
+      <Particle Key="Shield" Name="U_Character_02.Charge.Charge_Shield_Fire_01" Direction="0,1,0" Bone="Bip01" Offset="0,0.6,0" Scale="1" />
       <Particle Key="Wave" Name="U_Character_02.Charge.Charge_Wave_Fire_01" Direction="0,1,0" Offset="0,0,0.5" Scale="0.65" />
-      <Particle Key="ShieldWind" Name="U_Character_02.Charge.Charge_Shield_Wind_Fire_01" Bone="Bip01" Direction="0,1,0" Offset="0,0.35,1.25" Scale="1" />
+      <Particle Key="ShieldWind" Name="U_Character_02.Charge.Charge_Shield_Wind_Fire_01" Bone="Bip01" Direction="0,1,0" Offset="0,0.6,1.25" Scale="1" />
       <Particle Key="ShieldDisapear" Name="U_Character_02.Charge.Charge_Shield_Fire_01_Disappear" Direction="0,1,0" Offset="0,0.75,0" Scale="1" />
     </ParticleList>
     <Damage_Conversion>
       <Entry From="physical" To="fire" ConversionRate="100" />
     </Damage_Conversion>
     <WeaponRequirements Requirements="melee,fire" />
-    <DamageWeapon WeaponMultiplier="1.25" />
     <SoundTrigger OnAnimStart="Play_Skill_Charge_Fire_Forward" OnAnimLoopOut="Play_Skill_Charge_Fire_End" OnInterrupt="Stop_Skill_Charge" />
   </Skill>
   <Skill UID="player_Charge_variant_17" ESkill="default_variant">
     <HUD UIName="@ui_Variant_Charge_variant_17" Lore="@ui_Variant_Charge_variant_17_Lore" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_Alpha.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_Alpha.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_Alpha.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_Alpha.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_Alpha.png" HUDPictureVariant_InnerIcon="../u_resources/spells/Active_Skills/charge_Toxic.png" ShowParamsInTooltip="SpecificCharge,DamageWeapon" HUDPicture="../u_resources/spells/Active_Skills/charge_Toxic.png" VariantBottomPanel="1" />
     <ParticleList>
-      <Particle Key="Trail" Name="U_CommonVFX.Impact_Ground_Loop.Impact_01_3Sec_Poison" Direction="0,0,1" Scale="0.7" />
+      <Particle Key="Trail" Name="U_Character_02.Charge.Charge_Poison_Ground_01" Direction="0,0,1" Scale="0.7" />
       <Particle Key="Explosion" Name="U_Character_02.Charge.Charge_Impact_Poison_01" Direction="0,0,1" Scale="1.25" />
-      <Particle Key="Shield" Name="U_Character_02.Charge.Charge_Shield_Poison_01" Direction="0,1,0" Bone="Bip01" Offset="0,0.35,0" Scale="1" />
+      <Particle Key="Shield" Name="U_Character_02.Charge.Charge_Shield_Poison_01" Direction="0,1,0" Bone="Bip01" Offset="0,0.6,0" Scale="1" />
       <Particle Key="Wave" Name="U_Character_02.Charge.Charge_Wave_Poison_01" Direction="0,1,0" Offset="0,0,0.5" Scale="0.65" />
-      <Particle Key="ShieldWind" Name="U_Character_02.Charge.Charge_Shield_Wind_Poison_01" Bone="Bip01" Direction="0,1,0" Offset="0,0.35,1.25" Scale="1" />
+      <Particle Key="ShieldWind" Name="U_Character_02.Charge.Charge_Shield_Wind_Poison_01" Bone="Bip01" Direction="0,1,0" Offset="0,0.6,1.25" Scale="1" />
       <Particle Key="ShieldDisapear" Name="U_Character_02.Charge.Charge_Shield_Poison_01_Disappear" Direction="0,1,0" Offset="0,0.75,0" Scale="1" />
     </ParticleList>
     <Damage_Conversion>
       <Entry From="physical" To="toxic" ConversionRate="100" />
     </Damage_Conversion>
     <WeaponRequirements Requirements="melee,poison" />
-    <DamageWeapon WeaponMultiplier="1.25" />
     <SoundTrigger OnAnimStart="Play_Skill_Charge_Toxic_Forward" OnAnimLoopOut="Play_Skill_Charge_Toxic_End" OnInterrupt="Stop_Skill_Charge" />
   </Skill>
   <Skill UID="player_Charge_variant_18" ESkill="default_variant">
     <HUD UIName="@ui_Variant_Charge_variant_18" Lore="@ui_Variant_Charge_variant_18_Lore" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_Alpha.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_Alpha.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_Alpha.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_Alpha.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_Alpha.png" HUDPictureVariant_InnerIcon="../u_resources/spells/Active_Skills/charge_Lightning.png" ShowParamsInTooltip="SpecificCharge,DamageWeapon" HUDPicture="../u_resources/spells/Active_Skills/charge_Lightning.png" VariantBottomPanel="1" />
     <ParticleList>
-      <Particle Key="Trail" Name="U_CommonVFX.Impact_Ground_Loop.Impact_01_3Sec_Lightning" Direction="0,0,1" Scale="0.7" />
+      <Particle Key="Trail" Name="U_Character_02.Charge.Charge_Lightning_Ground_01" Direction="0,0,1" Scale="0.7" />
       <Particle Key="Explosion" Name="U_Character_02.Charge.Charge_Impact_Lightning_01" Direction="0,0,1" Scale="1.25" />
-      <Particle Key="Shield" Name="U_Character_02.Charge.Charge_Shield_Lightning_01" Direction="0,1,0" Bone="Bip01" Offset="0,0.35,0" Scale="1" />
+      <Particle Key="Shield" Name="U_Character_02.Charge.Charge_Shield_Lightning_01" Direction="0,1,0" Bone="Bip01" Offset="0,0.6,0" Scale="1" />
       <Particle Key="Wave" Name="U_Character_02.Charge.Charge_Wave_Lightning_01" Direction="0,1,0" Offset="0,0,0.5" Scale="0.65" />
-      <Particle Key="ShieldWind" Name="U_Character_02.Charge.Charge_Shield_Wind_Lightning_01" Bone="Bip01" Direction="0,1,0" Offset="0,0.35,1.25" Scale="1" />
+      <Particle Key="ShieldWind" Name="U_Character_02.Charge.Charge_Shield_Wind_Lightning_01" Bone="Bip01" Direction="0,1,0" Offset="0,0.6,1.25" Scale="1" />
       <Particle Key="ShieldDisapear" Name="U_Character_02.Charge.Charge_Shield_Lightning_01_Disappear" Direction="0,1,0" Offset="0,0.75,0" Scale="1" />
     </ParticleList>
     <Damage_Conversion>
       <Entry From="physical" To="lightning" ConversionRate="100" />
     </Damage_Conversion>
     <WeaponRequirements Requirements="melee,lightning" />
-    <DamageWeapon WeaponMultiplier="1.25" />
     <SoundTrigger OnAnimStart="Play_Skill_Charge_Lightning_Forward" OnAnimLoopOut="Play_Skill_Charge_Lightning_End" OnInterrupt="Stop_Skill_Charge" />
   </Skill>
+  <Skill UID="player_Charge_variant_20" ESkill="default_variant">
+    <HUD UIName="@ui_Variant_Charge_variant_20" Lore="@ui_Variant_Charge_variant_20_Lore" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_Alpha.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_Alpha.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_Alpha.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_Alpha.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_Alpha.png" HUDPictureVariant_InnerIcon="../u_resources/spells/Active_Skills/charge_Sacred.png" ShowParamsInTooltip="SpecificCharge,DamageWeapon" HUDPicture="../u_resources/spells/Active_Skills/charge_Sacred.png" VariantBottomPanel="1" />
+    <ParticleList>
+      <Particle Key="Trail" Name="U_Character_02.Charge.Charge_Sacred_Ground_01" Direction="0,0,1" Scale="0.7" />
+      <Particle Key="Explosion" Name="U_Character_02.Charge.Charge_Impact_Sacred_01" Direction="0,0,1" Scale="1.25" />
+      <Particle Key="Shield" Name="U_Character_02.Charge.Charge_Shield_Sacred_01" Direction="0,1,0" Bone="Bip01" Offset="0,0.6,0" Scale="1" />
+      <Particle Key="Wave" Name="U_Character_02.Charge.Charge_Wave_Sacred_01" Direction="0,1,0" Offset="0,0,0.5" Scale="0.65" />
+      <Particle Key="ShieldWind" Name="U_Character_02.Charge.Charge_Shield_Wind_Sacred_01" Bone="Bip01" Direction="0,1,0" Offset="0,0.6,1.25" Scale="1" />
+      <Particle Key="ShieldDisapear" Name="U_Character_02.Charge.Charge_Shield_Sacred_01_Disappear" Direction="0,1,0" Offset="0,0.75,0" Scale="1" />
+    </ParticleList>
+    <Damage_Conversion>
+      <Entry From="physical" To="sacred" ConversionRate="100" />
+    </Damage_Conversion>
+    <WeaponRequirements Requirements="melee,sacred" />
+    <SoundTrigger OnAnimStart="Play_Skill_Charge_Sacred_Forward" OnAnimLoopOut="Play_Skill_Charge_Sacred_End" OnInterrupt="Stop_Skill_Charge" />
+  </Skill>
   <Skill UID="Player_Charge_variant_19" ESkill="default_variant">
-    <HUD UIName="@ui_variant_Player_Charge_variant_19" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_003.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_003.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_003.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_003.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_003.png" ShowParamsInTooltip="DamageWeapon" />
+    <HUD UIName="@ui_variant_Player_Charge_variant_19" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_001.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_001.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_001.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_001.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_001.png" ShowParamsInTooltip="DamageWeapon" Category="Combat" />
     <DamageCritical CriticalDamageModifier="25" />
   </Skill>
 </MetaData>

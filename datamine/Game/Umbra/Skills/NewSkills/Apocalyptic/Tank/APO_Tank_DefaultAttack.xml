@@ -1,7 +1,7 @@
 <MetaData>
   <Skill ESkill="default_melee" Keywords="default_melee,attack_skill" UID="apotank_default_attack_01">
     <Animation ActionString="apo_atk_01" IgnoreAnimationMovementWhenHoldingShift="1" ScaleWithAttackSpeed="1" />
-    <VisualFeedback BloodDecalOrientation="right" FeedbackPresetBase="Player_weapon_1h" TrailPresetBase="apo" />
+    <VisualFeedback BloodDecalOrientation="right" FeedbackPresetBase="Player_Apo_Tank_atk_01" TrailPresetBase="apo" />
     <HUD HUDPicture="../u_resources/spells/Active_skills/apotank_default_attack.png" UIName="@ui_APO_Tank_DefaultSkill" Lore="@ui_APO_Tank_DefaultSkill_Lore" />
     <Combo ComboStarter="APO_Tank_Default_Combo" />
     <Aggression TargetValueOnHit="10" />
@@ -16,7 +16,7 @@
   </Skill>
   <Skill ESkill="default_melee" Keywords="default_melee,attack_skill" UID="apotank_default_attack_02">
     <Animation ActionString="apo_atk_02" IgnoreAnimationMovementWhenHoldingShift="1" ScaleWithAttackSpeed="1" />
-    <VisualFeedback BloodDecalOrientation="right" FeedbackPresetBase="Player_weapon_1h" TrailPresetBase="apo" />
+    <VisualFeedback BloodDecalOrientation="right" FeedbackPresetBase="Player_Apo_atk_Tank_02" TrailPresetBase="apo" />
     <HUD HUDPicture="../u_resources/spells/Active_skills/apotank_default_attack.png" UIName="@ui_AST_ComboOneHanded" Lore="@ui_AST_ComboOneHanded_lore" />
     <Aggression TargetValueOnHit="10" />
     <DamagePreset DamagePreset="Apo_Tank_Strong" Multiplier="1" Type="sacred" />
@@ -30,7 +30,7 @@
   </Skill>
   <Skill ESkill="default_melee" Keywords="default_melee,attack_skill" UID="apotank_default_attack_03">
     <Animation ActionString="apo_atk_03" IgnoreAnimationMovementWhenHoldingShift="1" ScaleWithAttackSpeed="1" />
-    <VisualFeedback BloodDecalOrientation="right" FeedbackPresetBase="Player_weapon_1h" TrailPresetBase="apo" />
+    <VisualFeedback BloodDecalOrientation="right" FeedbackPresetBase="Player_Apo_Tank_atk_03" TrailPresetBase="apo" />
     <HUD HUDPicture="../u_resources/spells/Active_skills/apotank_default_attack.png" UIName="@ui_AST_ComboOneHanded" Lore="@ui_AST_ComboOneHanded_lore" />
     <Aggression TargetValueOnHit="10" />
     <DamagePreset DamagePreset="Apo_Tank_Strong" Multiplier="1" Type="sacred" />
@@ -44,7 +44,7 @@
   </Skill>
   <Skill ESkill="default_melee" Keywords="default_melee,attack_skill" UID="apotank_default_attack_04">
     <Animation ActionString="apo_atk_04" IgnoreAnimationMovementWhenHoldingShift="1" ScaleWithAttackSpeed="1" />
-    <VisualFeedback BloodDecalOrientation="right" FeedbackPresetBase="Player_weapon_1h" TrailPresetBase="apo" />
+    <VisualFeedback BloodDecalOrientation="right" FeedbackPresetBase="Player_Apo_Tank_atk_04" TrailPresetBase="apo" />
     <HUD HUDPicture="../u_resources/spells/Active_skills/apotank_default_attack.png" UIName="@ui_AST_ComboOneHanded" Lore="@ui_AST_ComboOneHanded_lore" />
     <Aggression TargetValueOnHit="10" />
     <DamagePreset DamagePreset="Apo_Tank_Strong" Multiplier="1" Type="sacred" />

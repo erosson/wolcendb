@@ -96,7 +96,7 @@
   <Project Name="wonder_1_construct" CategoryName="construct_building" Repeatable="0" ConstructedBuilding="building_wonder_1" IsConstructingWonder="1">
     <UIParams HideWhenCompleted="0" UIName="@ui_wonder_1_construct" UILore="@ui_wonder_1_construct_lore" IconType="construction" />
     <Requirements PlayerLevel="0" Projects="">
-      <ResourceCost ComputationMethod="Static" Gold="100000" PA="5000" ProductionToComplete="2000" />
+      <ResourceCost ComputationMethod="Static" Gold="100000" PA="2000" ProductionToComplete="2000" />
     </Requirements>
     <RewardList>
       <Reward RewardName="wonder_1_construct_reward" Weight="1" />
@@ -106,7 +106,7 @@
   <Project Name="wonder_2_construct" CategoryName="construct_building" Repeatable="0" ConstructedBuilding="building_wonder_2" IsConstructingWonder="1">
     <UIParams HideWhenCompleted="0" UIName="@ui_wonder_2_construct" UILore="@ui_wonder_2_construct_lore" IconType="construction" />
     <Requirements PlayerLevel="0" Projects="">
-      <ResourceCost ComputationMethod="Static" Gold="200000" PA="20000" ProductionToComplete="5000" />
+      <ResourceCost ComputationMethod="Static" Gold="50000" PA="200" ProductionToComplete="1000" />
     </Requirements>
     <RewardList>
       <Reward RewardName="wonder_2_construct_reward" Weight="1" />
@@ -116,7 +116,7 @@
   <Project Name="wonder_3_construct" CategoryName="construct_building" Repeatable="0" ConstructedBuilding="building_wonder_3" IsConstructingWonder="1">
     <UIParams HideWhenCompleted="0" UIName="@ui_wonder_3_construct" UILore="@ui_wonder_3_construct_lore" IconType="construction" />
     <Requirements PlayerLevel="0" Projects="">
-      <ResourceCost ComputationMethod="Static" Gold="1000000" PA="200000" ProductionToComplete="100000" />
+      <ResourceCost ComputationMethod="Static" Gold="200000" PA="100000" ProductionToComplete="10000" />
     </Requirements>
     <RewardList>
       <Reward RewardName="wonder_3_construct_reward" Weight="1" />
@@ -126,7 +126,7 @@
   <Project Name="wonder_4_construct" CategoryName="construct_building" Repeatable="0" ConstructedBuilding="building_wonder_4" IsConstructingWonder="1">
     <UIParams HideWhenCompleted="0" UIName="@ui_wonder_4_construct" UILore="@ui_wonder_4_construct_lore" IconType="construction" />
     <Requirements PlayerLevel="0" Projects="">
-      <ResourceCost ComputationMethod="Static" Gold="500000" PA="100000" ProductionToComplete="50000" />
+      <ResourceCost ComputationMethod="Static" Gold="200000" PA="50000" ProductionToComplete="10000" />
     </Requirements>
     <RewardList>
       <Reward RewardName="wonder_4_construct_reward" Weight="1" />

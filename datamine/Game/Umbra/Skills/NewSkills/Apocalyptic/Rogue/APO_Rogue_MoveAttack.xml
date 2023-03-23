@@ -18,7 +18,7 @@
     <SoundTrigger OnAnimStart="Play_Skill_APO_Rogue_MoveAttack" OnHit="Play_Skill_BladeSlinger_Impact" PlayAttackVoice="1" />
   </Skill>
   <Skill UID="apo_rogue_moveattack_collision" ESkill="default_empty" Keywords="magic_spell">
-    <VisualFeedback TrailPresetBase="apo" FeedbackPresetBase="Player_Apo_rogue" BloodDecalOrientation="forward" />
+    <VisualFeedback TrailPresetBase="apo" FeedbackPresetBase="Player_apo_Rogue_moveattack" BloodDecalOrientation="forward" />
     <Aggression TargetValueOnHit="20" />
     <DamagePreset DamagePreset="Apo_Rogue_Strong" Multiplier="0.5" Type="rend" />
     <SoundTrigger OnHit="Play_Skill_BladeSlinger_Impact" />

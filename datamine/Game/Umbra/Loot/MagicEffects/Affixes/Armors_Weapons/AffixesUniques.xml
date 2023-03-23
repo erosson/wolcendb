@@ -28,8 +28,8 @@
       <ItemRarity Magic="0" Rare="0" Set="1" Legendary="0" />
     </DropParams>
     <MagicEffect EffectId="damage_percent_melee_weapon">
-      <LoRoll DamagePercentInt="1.2" />
-      <HiRoll DamagePercentInt="1.2" />
+      <LoRoll DamagePercentInt="20" />
+      <HiRoll DamagePercentInt="20" />
     </MagicEffect>
   </Affix>
   <Affix AffixId="unique_amulet_spell_damage" Class="" AffixType="default">
@@ -204,8 +204,8 @@
       <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
     </DropParams>
     <MagicEffect EffectId="health_regen_percent">
-      <LoRoll ResourcePercentFloat="0.5" />
-      <HiRoll ResourcePercentFloat="0.5" />
+      <LoRoll ResourcePercentFloat="10" />
+      <HiRoll ResourcePercentFloat="10" />
     </MagicEffect>
   </Affix>
   <Affix AffixId="unique_shield_all_res" Class="" AffixType="default">
@@ -1737,15 +1737,15 @@
       <HiRoll LocalFlatFloat="20" />
     </MagicEffect>
   </Affix>
-  <Affix AffixId="unique_genesis_forceshield_pts" Class="" AffixType="default">
+  <Affix AffixId="unique_genesis_occult_damage" Class="" AffixType="default">
     <DropParams Frequency="1">
-      <ItemLevel LevelMin="1" LevelMax="90" />
-      <Keywords OptionalKeywords="" MandatoryKeywords="unique" />
+      <ItemLevel LevelMin="190" LevelMax="300" />
+      <Keywords MandatoryKeywords="armor" />
       <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
     </DropParams>
-    <MagicEffect EffectId="forceshield_pts">
-      <LoRoll ArmorFlatInt="75" />
-      <HiRoll ArmorFlatInt="100" />
+    <MagicEffect EffectId="occult_damage_percent">
+      <LoRoll DamagePercentInt="8" />
+      <HiRoll DamagePercentInt="12" />
     </MagicEffect>
   </Affix>
   <Affix AffixId="unique_torturemask_attackspeed_score" Class="" AffixType="default">
@@ -2382,8 +2382,8 @@
       <ItemRarity Magic="0" Rare="0" Set="1" Legendary="0" />
     </DropParams>
     <MagicEffect EffectId="slow_aoe_on_active_dodge">
-      <LoRoll SpeedPercentInt="60" />
-      <HiRoll SpeedPercentInt="70" />
+      <LoRoll SpeedPercentInt="-60" />
+      <HiRoll SpeedPercentInt="-70" />
     </MagicEffect>
   </Affix>
   <Affix AffixId="unique_mag_movespeed" Class="" AffixType="default">
@@ -2549,6 +2549,1396 @@
     <MagicEffect EffectId="all_attribute_pts">
       <LoRoll AttributeFlatInt="20" />
       <HiRoll AttributeFlatInt="40" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="Act4_warrior_helmet_damage_percent" Class="" AffixType="default">
+    <DropParams Frequency="1">
+      <ItemLevel LevelMin="1" LevelMax="190" />
+      <Keywords OptionalKeywords="" MandatoryKeywords="unique" />
+      <ItemRarity Magic="0" Rare="0" Set="1" Legendary="0" />
+    </DropParams>
+    <MagicEffect EffectId="damage_percent">
+      <LoRoll DamagePercentInt="7" />
+      <HiRoll DamagePercentInt="7" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="Act4_warrior_helmet_ferocity" Class="" AffixType="default">
+    <DropParams Frequency="1">
+      <ItemLevel LevelMin="1" LevelMax="90" />
+      <Keywords OptionalKeywords="" MandatoryKeywords="unique" />
+      <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
+    </DropParams>
+    <MagicEffect EffectId="ferocity_pts">
+      <LoRoll AttributeFlatInt="10" />
+      <HiRoll AttributeFlatInt="10" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="Act4_warrior_helmet_attack_speed" Class="" AffixType="default">
+    <DropParams Frequency="1">
+      <ItemLevel LevelMin="1" LevelMax="90" />
+      <Keywords OptionalKeywords="" MandatoryKeywords="unique" />
+      <ItemRarity Magic="0" Rare="0" Set="1" Legendary="0" />
+    </DropParams>
+    <MagicEffect EffectId="attackspeed_final_percent">
+      <LoRoll CharacteristicFinalPercentFloat="2" />
+      <HiRoll CharacteristicFinalPercentFloat="2" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="Act4_warrior_helmet_cooldownreduction_percent" Class="" AffixType="default">
+    <DropParams Frequency="1">
+      <ItemLevel LevelMin="1" LevelMax="190" />
+      <Keywords OptionalKeywords="" MandatoryKeywords="unique" />
+      <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
+    </DropParams>
+    <MagicEffect EffectId="skill_cooldownreduction_percent">
+      <LoRoll DurationPercentFloat="5" />
+      <HiRoll DurationPercentFloat="5" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="Act4_warrior_shoulder_1_damage_percent" Class="" AffixType="default">
+    <DropParams Frequency="1">
+      <ItemLevel LevelMin="1" LevelMax="190" />
+      <Keywords OptionalKeywords="" MandatoryKeywords="unique" />
+      <ItemRarity Magic="0" Rare="0" Set="1" Legendary="0" />
+    </DropParams>
+    <MagicEffect EffectId="damage_percent">
+      <LoRoll DamagePercentInt="6" />
+      <HiRoll DamagePercentInt="6" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="Act4_warrior_shoulder_1_regen" Class="" AffixType="default">
+    <DropParams Frequency="1">
+      <ItemLevel LevelMin="1" LevelMax="90" />
+      <Keywords OptionalKeywords="" MandatoryKeywords="unique" />
+      <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
+    </DropParams>
+    <MagicEffect EffectId="health_regen_pts">
+      <LoRoll ResourceFlatFloat="20" />
+      <HiRoll ResourceFlatFloat="20" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="Act4_warrior_shoulder_1_toughness_pts" Class="" AffixType="default">
+    <DropParams Frequency="1">
+      <ItemLevel LevelMin="1" LevelMax="90" />
+      <Keywords OptionalKeywords="" MandatoryKeywords="unique" />
+      <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
+    </DropParams>
+    <MagicEffect EffectId="toughness_pts">
+      <LoRoll AttributeFlatInt="15" />
+      <HiRoll AttributeFlatInt="15" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="Act4_warrior_shoulder_health_pts" Class="" AffixType="default">
+    <DropParams Frequency="1">
+      <ItemLevel LevelMin="1" LevelMax="90" />
+      <Keywords OptionalKeywords="" MandatoryKeywords="unique" />
+      <ItemRarity Magic="0" Rare="0" Set="1" Legendary="0" />
+    </DropParams>
+    <MagicEffect EffectId="health_pts">
+      <LoRoll HealthFlatInt="50" />
+      <HiRoll HealthFlatInt="50" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="Act4_warrior_shoulder_2_damage_percent" Class="" AffixType="default">
+    <DropParams Frequency="1">
+      <ItemLevel LevelMin="1" LevelMax="190" />
+      <Keywords OptionalKeywords="" MandatoryKeywords="unique" />
+      <ItemRarity Magic="0" Rare="0" Set="1" Legendary="0" />
+    </DropParams>
+    <MagicEffect EffectId="damage_percent">
+      <LoRoll DamagePercentInt="6" />
+      <HiRoll DamagePercentInt="6" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="Act4_warrior_shoulder_2_attack_speed" Class="" AffixType="default">
+    <DropParams Frequency="1">
+      <ItemLevel LevelMin="1" LevelMax="90" />
+      <Keywords OptionalKeywords="" MandatoryKeywords="unique" />
+      <ItemRarity Magic="0" Rare="0" Set="1" Legendary="0" />
+    </DropParams>
+    <MagicEffect EffectId="attackspeed_final_percent">
+      <LoRoll CharacteristicFinalPercentFloat="2" />
+      <HiRoll CharacteristicFinalPercentFloat="2" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="Act4_warrior_shoulder_2_ferocity" Class="" AffixType="default">
+    <DropParams Frequency="1">
+      <ItemLevel LevelMin="1" LevelMax="90" />
+      <Keywords OptionalKeywords="" MandatoryKeywords="unique" />
+      <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
+    </DropParams>
+    <MagicEffect EffectId="ferocity_pts">
+      <LoRoll AttributeFlatInt="15" />
+      <HiRoll AttributeFlatInt="15" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="Act4_warrior_shoulder2_rageandumbra_cost_percent" Class="" AffixType="default">
+    <DropParams Frequency="1">
+      <ItemLevel LevelMin="1" LevelMax="90" />
+      <Keywords OptionalKeywords="" MandatoryKeywords="unique" />
+      <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
+    </DropParams>
+    <MagicEffect EffectId="rageandumbra_cost_percent">
+      <LoRoll ResourcePercentFloat="10" />
+      <HiRoll ResourcePercentFloat="10" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="Act4_warrior_gloves_damage_percent" Class="" AffixType="default">
+    <DropParams Frequency="1">
+      <ItemLevel LevelMin="1" LevelMax="190" />
+      <Keywords OptionalKeywords="" MandatoryKeywords="unique" />
+      <ItemRarity Magic="0" Rare="0" Set="1" Legendary="0" />
+    </DropParams>
+    <MagicEffect EffectId="damage_percent">
+      <LoRoll DamagePercentInt="5" />
+      <HiRoll DamagePercentInt="5" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="Act4_warrior_gloves_material_protection" Class="" AffixType="default">
+    <MagicEffect EffectId="material_resistance">
+      <LoRoll CharacteristicScoreInt="30" />
+      <HiRoll CharacteristicScoreInt="30" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="Act4_warrior_gloves_rageandumbra_cost_percent" Class="" AffixType="default">
+    <DropParams Frequency="1">
+      <ItemLevel LevelMin="1" LevelMax="90" />
+      <Keywords OptionalKeywords="" MandatoryKeywords="unique" />
+      <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
+    </DropParams>
+    <MagicEffect EffectId="rageandumbra_cost_percent">
+      <LoRoll ResourcePercentFloat="10" />
+      <HiRoll ResourcePercentFloat="10" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="Act4_warrior_gloves_resourcegeneration_percent" Class="" AffixType="default">
+    <DropParams Frequency="1">
+      <ItemLevel LevelMin="1" LevelMax="90" />
+      <Keywords OptionalKeywords="" MandatoryKeywords="unique" />
+      <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
+    </DropParams>
+    <MagicEffect EffectId="local_resourcegeneration_percent">
+      <LoRoll LocalPercentFloat="10" />
+      <HiRoll LocalPercentFloat="10" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="Act4_warrior_gloves_2_damage_percent" Class="" AffixType="default">
+    <DropParams Frequency="1">
+      <ItemLevel LevelMin="1" LevelMax="190" />
+      <Keywords OptionalKeywords="" MandatoryKeywords="unique" />
+      <ItemRarity Magic="0" Rare="0" Set="1" Legendary="0" />
+    </DropParams>
+    <MagicEffect EffectId="damage_percent">
+      <LoRoll DamagePercentInt="5" />
+      <HiRoll DamagePercentInt="5" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="Act4_warrior_gloves_2_attack_speed" Class="" AffixType="default">
+    <DropParams Frequency="1">
+      <ItemLevel LevelMin="1" LevelMax="90" />
+      <Keywords OptionalKeywords="" MandatoryKeywords="unique" />
+      <ItemRarity Magic="0" Rare="0" Set="1" Legendary="0" />
+    </DropParams>
+    <MagicEffect EffectId="attackspeed_final_percent">
+      <LoRoll CharacteristicFinalPercentFloat="4" />
+      <HiRoll CharacteristicFinalPercentFloat="4" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="Act4_warrior_gloves_2_agility" Class="" AffixType="default">
+    <DropParams Frequency="1">
+      <ItemLevel LevelMin="1" LevelMax="90" />
+      <Keywords OptionalKeywords="" MandatoryKeywords="unique" />
+      <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
+    </DropParams>
+    <MagicEffect EffectId="agility_pts">
+      <LoRoll AttributeFlatInt="15" />
+      <HiRoll AttributeFlatInt="15" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="Act4_warrior_chest_damage_percent" Class="" AffixType="default">
+    <DropParams Frequency="1">
+      <ItemLevel LevelMin="1" LevelMax="190" />
+      <Keywords OptionalKeywords="" MandatoryKeywords="unique" />
+      <ItemRarity Magic="0" Rare="0" Set="1" Legendary="0" />
+    </DropParams>
+    <MagicEffect EffectId="damage_percent">
+      <LoRoll DamagePercentInt="8" />
+      <HiRoll DamagePercentInt="8" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="Act4_warrior_chest_toughness_pts" Class="" AffixType="default">
+    <DropParams Frequency="1">
+      <ItemLevel LevelMin="1" LevelMax="90" />
+      <Keywords OptionalKeywords="" MandatoryKeywords="unique" />
+      <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
+    </DropParams>
+    <MagicEffect EffectId="toughness_pts">
+      <LoRoll AttributeFlatInt="20" />
+      <HiRoll AttributeFlatInt="20" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="Act4_warrior_chest_local_resourcegeneration_percent" Class="" AffixType="default">
+    <DropParams Frequency="1">
+      <ItemLevel LevelMin="1" LevelMax="90" />
+      <Keywords OptionalKeywords="" MandatoryKeywords="unique" />
+      <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
+    </DropParams>
+    <MagicEffect EffectId="local_resourcegeneration_percent">
+      <LoRoll LocalPercentFloat="10" />
+      <HiRoll LocalPercentFloat="10" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="Act4_warrior_chest_all_resistance" Class="" AffixType="default">
+    <DropParams Frequency="1">
+      <ItemLevel LevelMin="1" LevelMax="90" />
+      <Keywords OptionalKeywords="" MandatoryKeywords="unique" />
+      <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
+    </DropParams>
+    <MagicEffect EffectId="local_allresistances_score_flat">
+      <LoRoll LocalFlatFloat="30" />
+      <HiRoll LocalFlatFloat="30" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="Act4_warrior_leg_local_health_regen_percent" Class="" AffixType="default">
+    <MagicEffect EffectId="health_regen_percent">
+      <LoRoll ResourcePercentFloat="10" />
+      <HiRoll ResourcePercentFloat="10" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="Act4_warrior_leg_occult_resistance" Class="" AffixType="default">
+    <MagicEffect EffectId="occult_resistance">
+      <LoRoll CharacteristicScoreInt="40" />
+      <HiRoll CharacteristicScoreInt="40" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="Act4_warrior_leg_elemental_resistance" Class="" AffixType="default">
+    <MagicEffect EffectId="elemental_resistance">
+      <LoRoll CharacteristicScoreInt="40" />
+      <HiRoll CharacteristicScoreInt="40" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="Act4_warrior_feet_movespeed" Class="" AffixType="default">
+    <DropParams Frequency="1">
+      <ItemLevel LevelMin="1" LevelMax="90" />
+      <Keywords OptionalKeywords="" MandatoryKeywords="unique" />
+      <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
+    </DropParams>
+    <MagicEffect EffectId="movespeed">
+      <LoRoll SpeedPercentInt="12" />
+      <HiRoll SpeedPercentInt="12" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="Act4_warrior_feet_toughness_pts" Class="" AffixType="default">
+    <DropParams Frequency="1">
+      <ItemLevel LevelMin="1" LevelMax="90" />
+      <Keywords OptionalKeywords="" MandatoryKeywords="unique" />
+      <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
+    </DropParams>
+    <MagicEffect EffectId="toughness_pts">
+      <LoRoll AttributeFlatInt="15" />
+      <HiRoll AttributeFlatInt="15" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="Act4_warrior_feet_agility" Class="" AffixType="default">
+    <DropParams Frequency="1">
+      <ItemLevel LevelMin="1" LevelMax="90" />
+      <Keywords OptionalKeywords="" MandatoryKeywords="unique" />
+      <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
+    </DropParams>
+    <MagicEffect EffectId="agility_pts">
+      <LoRoll AttributeFlatInt="15" />
+      <HiRoll AttributeFlatInt="15" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="Act4_warrior_feet_critical_strike_chance" Class="" AffixType="default">
+    <DropParams Frequency="1">
+      <ItemLevel LevelMin="1" LevelMax="190" />
+      <Keywords OptionalKeywords="" MandatoryKeywords="unique" />
+      <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
+    </DropParams>
+    <MagicEffect EffectId="criticalchance_score">
+      <LoRoll CharacteristicScoreInt="30" />
+      <HiRoll CharacteristicScoreInt="30" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="Act4_warrior_ring1_fx_fire" Class="" AffixType="default">
+    <DropParams Frequency="1">
+      <ItemLevel LevelMin="1" LevelMax="90" />
+      <Keywords OptionalKeywords="" MandatoryKeywords="unique" />
+      <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
+    </DropParams>
+    <MagicEffect EffectId="local_damage_flat_fire">
+      <LoRoll DamagesFlatInt_Min="4" DamagesFlatInt_Max="6" />
+      <HiRoll DamagesFlatInt_Min="4" DamagesFlatInt_Max="6" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="Act4_warrior_ring1_damage_percent" Class="" AffixType="default">
+    <DropParams Frequency="1">
+      <ItemLevel LevelMin="1" LevelMax="190" />
+      <Keywords OptionalKeywords="" MandatoryKeywords="unique" />
+      <ItemRarity Magic="0" Rare="0" Set="1" Legendary="0" />
+    </DropParams>
+    <MagicEffect EffectId="damage_percent">
+      <LoRoll DamagePercentInt="5" />
+      <HiRoll DamagePercentInt="5" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="Act4_warrior_ring1_resistance_score_percent" Class="" AffixType="default">
+    <DropParams Frequency="1">
+      <ItemLevel LevelMin="1" LevelMax="90" />
+      <Keywords OptionalKeywords="" MandatoryKeywords="unique" />
+      <ItemRarity Magic="0" Rare="0" Set="1" Legendary="0" />
+    </DropParams>
+    <MagicEffect EffectId="all_resistance_score_percent">
+      <LoRoll CharacteristicScorePercentInt="10" />
+      <HiRoll CharacteristicScorePercentInt="10" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="Act4_warrior_ring2_rend_damage" Class="" AffixType="default">
+    <DropParams Frequency="1">
+      <ItemLevel LevelMin="1" LevelMax="90" />
+      <Keywords OptionalKeywords="" MandatoryKeywords="unique" />
+      <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
+    </DropParams>
+    <MagicEffect EffectId="local_damage_flat_rend">
+      <LoRoll DamagesFlatInt_Min="4" DamagesFlatInt_Max="6" />
+      <HiRoll DamagesFlatInt_Min="4" DamagesFlatInt_Max="6" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="Act4_warrior_ring2_health_pts" Class="" AffixType="default">
+    <DropParams Frequency="1">
+      <ItemLevel LevelMin="1" LevelMax="90" />
+      <Keywords OptionalKeywords="" MandatoryKeywords="unique" />
+      <ItemRarity Magic="0" Rare="0" Set="1" Legendary="0" />
+    </DropParams>
+    <MagicEffect EffectId="health_pts">
+      <LoRoll HealthFlatInt="150" />
+      <HiRoll HealthFlatInt="150" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="Act4_warrior_ring2_critical_damage" Class="" AffixType="default">
+    <MagicEffect EffectId="criticaldamage_pts">
+      <LoRoll DamagePercentInt="10" />
+      <HiRoll DamagePercentInt="10" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="Act4_warrior_amulet_toxic_damage" Class="" AffixType="default">
+    <DropParams Frequency="1">
+      <ItemLevel LevelMin="1" LevelMax="90" />
+      <Keywords OptionalKeywords="" MandatoryKeywords="unique" />
+      <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
+    </DropParams>
+    <MagicEffect EffectId="local_damage_flat_toxic">
+      <LoRoll DamagesFlatInt_Min="4" DamagesFlatInt_Max="6" />
+      <HiRoll DamagesFlatInt_Min="4" DamagesFlatInt_Max="6" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="Act4_warrior_amulet_rend_damage" Class="" AffixType="default">
+    <DropParams Frequency="1">
+      <ItemLevel LevelMin="1" LevelMax="90" />
+      <Keywords OptionalKeywords="" MandatoryKeywords="unique" />
+      <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
+    </DropParams>
+    <MagicEffect EffectId="local_damage_flat_rend">
+      <LoRoll DamagesFlatInt_Min="4" DamagesFlatInt_Max="6" />
+      <HiRoll DamagesFlatInt_Min="4" DamagesFlatInt_Max="6" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="Act4_warrior_amulet_rage_per_strike_percent" Class="" AffixType="default">
+    <DropParams Frequency="1">
+      <ItemLevel LevelMin="1" LevelMax="90" />
+      <Keywords OptionalKeywords="" MandatoryKeywords="unique" />
+      <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
+    </DropParams>
+    <MagicEffect EffectId="rage_per_strike_percent">
+      <LoRoll ResourcePercentInt="20" />
+      <HiRoll ResourcePercentInt="20" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="Act4_warrior_belt_damage_percent" Class="" AffixType="default">
+    <DropParams Frequency="1">
+      <ItemLevel LevelMin="1" LevelMax="190" />
+      <Keywords OptionalKeywords="" MandatoryKeywords="unique" />
+      <ItemRarity Magic="0" Rare="0" Set="1" Legendary="0" />
+    </DropParams>
+    <MagicEffect EffectId="damage_percent">
+      <LoRoll DamagePercentInt="5" />
+      <HiRoll DamagePercentInt="5" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="Act4_warrior_belt_rage_per_strike_percent" Class="" AffixType="default">
+    <DropParams Frequency="1">
+      <ItemLevel LevelMin="1" LevelMax="90" />
+      <Keywords OptionalKeywords="" MandatoryKeywords="unique" />
+      <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
+    </DropParams>
+    <MagicEffect EffectId="rage_per_strike_percent">
+      <LoRoll ResourcePercentInt="20" />
+      <HiRoll ResourcePercentInt="20" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="Act4_warrior_belt_health_pts" Class="" AffixType="default">
+    <DropParams Frequency="1">
+      <ItemLevel LevelMin="1" LevelMax="90" />
+      <Keywords OptionalKeywords="" MandatoryKeywords="unique" />
+      <ItemRarity Magic="0" Rare="0" Set="1" Legendary="0" />
+    </DropParams>
+    <MagicEffect EffectId="health_pts">
+      <LoRoll HealthFlatInt="150" />
+      <HiRoll HealthFlatInt="150" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="Act4_mage_helmet_damage_percent" Class="" AffixType="default">
+    <MagicEffect EffectId="damage_percent">
+      <LoRoll DamagePercentInt="7" />
+      <HiRoll DamagePercentInt="7" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="Act4_mage_helmet_wisdom_pts" Class="" AffixType="default">
+    <MagicEffect EffectId="willpower_pts">
+      <LoRoll AttributeFlatInt="10" />
+      <HiRoll AttributeFlatInt="10" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="Act4_mage_helmet_casting_speed" Class="" AffixType="default">
+    <MagicEffect EffectId="spellcastingspeed_final_percent">
+      <LoRoll CharacteristicFinalPercentFloat="2" />
+      <HiRoll CharacteristicFinalPercentFloat="2" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="Act4_mage_helmet_cooldownreduction_percent" Class="" AffixType="default">
+    <MagicEffect EffectId="skill_cooldownreduction_percent">
+      <LoRoll DurationPercentFloat="5" />
+      <HiRoll DurationPercentFloat="5" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="Act4_mage_shoulder1_damage_percent" Class="" AffixType="default">
+    <DropParams Frequency="1">
+      <ItemLevel LevelMin="1" LevelMax="190" />
+      <Keywords OptionalKeywords="" MandatoryKeywords="unique" />
+      <ItemRarity Magic="0" Rare="0" Set="1" Legendary="0" />
+    </DropParams>
+    <MagicEffect EffectId="damage_percent">
+      <LoRoll DamagePercentInt="6" />
+      <HiRoll DamagePercentInt="6" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="Act4_mage_shoulder1_forceshield_regenration_flat" Class="" AffixType="default">
+    <DropParams Frequency="1">
+      <ItemLevel LevelMin="1" LevelMax="190" />
+      <Keywords OptionalKeywords="" MandatoryKeywords="unique" />
+      <ItemRarity Magic="0" Rare="0" Set="1" Legendary="0" />
+    </DropParams>
+    <MagicEffect EffectId="forceshield_regeneration_flat">
+      <LoRoll DefenseRegenerationFlatFloat="20" />
+      <HiRoll DefenseRegenerationFlatFloat="20" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="Act4_mage_shoulder1_health_pts" Class="" AffixType="default">
+    <MagicEffect EffectId="health_pts">
+      <LoRoll HealthFlatInt="50" />
+      <HiRoll HealthFlatInt="50" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="Act4_mage_shoulder1_wisdom" Class="" AffixType="default">
+    <MagicEffect EffectId="willpower_pts">
+      <LoRoll AttributeFlatInt="15" />
+      <HiRoll AttributeFlatInt="15" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="Act4_mage_shoulder2_damage_percent" Class="" AffixType="default">
+    <MagicEffect EffectId="damage_percent">
+      <LoRoll DamagePercentInt="6" />
+      <HiRoll DamagePercentInt="6" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="Act4_mage_shoulder2_attack_speed" Class="" AffixType="default">
+    <MagicEffect EffectId="attackspeed_final_percent">
+      <LoRoll CharacteristicFinalPercentFloat="2" />
+      <HiRoll CharacteristicFinalPercentFloat="2" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="Act4_mage_shoulder2_wisdom_pts" Class="" AffixType="default">
+    <MagicEffect EffectId="willpower_pts">
+      <LoRoll AttributeFlatInt="15" />
+      <HiRoll AttributeFlatInt="15" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="Act4_mage_shoulder2_rageandumbra_cost_percent" Class="" AffixType="default">
+    <MagicEffect EffectId="rageandumbra_cost_percent">
+      <LoRoll ResourcePercentFloat="10" />
+      <HiRoll ResourcePercentFloat="10" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="Act4_mage_gloves_damage_percent" Class="" AffixType="default">
+    <DropParams Frequency="1">
+      <ItemLevel LevelMin="1" LevelMax="190" />
+      <Keywords OptionalKeywords="" MandatoryKeywords="unique" />
+      <ItemRarity Magic="0" Rare="0" Set="1" Legendary="0" />
+    </DropParams>
+    <MagicEffect EffectId="damage_percent">
+      <LoRoll DamagePercentInt="5" />
+      <HiRoll DamagePercentInt="5" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="Act4_mage_gloves_material_resistance" Class="" AffixType="default">
+    <DropParams Frequency="1">
+      <ItemLevel LevelMin="1" LevelMax="190" />
+      <Keywords OptionalKeywords="" MandatoryKeywords="unique" />
+      <ItemRarity Magic="0" Rare="0" Set="1" Legendary="0" />
+    </DropParams>
+    <MagicEffect EffectId="material_resistance">
+      <LoRoll CharacteristicScoreInt="30" />
+      <HiRoll CharacteristicScoreInt="30" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="Act4_mage_gloves_rageandumbra_cost_percent" Class="" AffixType="default">
+    <DropParams Frequency="1">
+      <ItemLevel LevelMin="1" LevelMax="90" />
+      <Keywords OptionalKeywords="" MandatoryKeywords="unique" />
+      <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
+    </DropParams>
+    <MagicEffect EffectId="rageandumbra_cost_percent">
+      <LoRoll ResourcePercentFloat="10" />
+      <HiRoll ResourcePercentFloat="10" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="Act4_mage_gloves__local_resourcegeneration_flat" Class="" AffixType="default">
+    <DropParams Frequency="1">
+      <ItemLevel LevelMin="1" LevelMax="90" />
+      <Keywords OptionalKeywords="" MandatoryKeywords="unique" />
+      <ItemRarity Magic="0" Rare="0" Set="1" Legendary="0" />
+    </DropParams>
+    <MagicEffect EffectId="local_resourcegeneration_flat">
+      <LoRoll LocalFlatFloat="10" />
+      <HiRoll LocalFlatFloat="10" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="Act4_mage_gloves2_damage_percent" Class="" AffixType="default">
+    <DropParams Frequency="1">
+      <ItemLevel LevelMin="1" LevelMax="190" />
+      <Keywords OptionalKeywords="" MandatoryKeywords="unique" />
+      <ItemRarity Magic="0" Rare="0" Set="1" Legendary="0" />
+    </DropParams>
+    <MagicEffect EffectId="damage_percent">
+      <LoRoll DamagePercentInt="5" />
+      <HiRoll DamagePercentInt="5" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="Act4_mage_gloves2_attack_speed" Class="" AffixType="default">
+    <DropParams Frequency="1">
+      <ItemLevel LevelMin="1" LevelMax="90" />
+      <Keywords OptionalKeywords="" MandatoryKeywords="unique" />
+      <ItemRarity Magic="0" Rare="0" Set="1" Legendary="0" />
+    </DropParams>
+    <MagicEffect EffectId="attackspeed_final_percent">
+      <LoRoll CharacteristicFinalPercentFloat="4" />
+      <HiRoll CharacteristicFinalPercentFloat="4" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="Act4_mage_gloves2_agility" Class="" AffixType="default">
+    <DropParams Frequency="1">
+      <ItemLevel LevelMin="1" LevelMax="90" />
+      <Keywords OptionalKeywords="" MandatoryKeywords="unique" />
+      <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
+    </DropParams>
+    <MagicEffect EffectId="agility_pts">
+      <LoRoll AttributeFlatInt="15" />
+      <HiRoll AttributeFlatInt="15" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="Act4_mage_chest_damage_percent" Class="" AffixType="default">
+    <DropParams Frequency="1">
+      <ItemLevel LevelMin="1" LevelMax="190" />
+      <Keywords OptionalKeywords="" MandatoryKeywords="unique" />
+      <ItemRarity Magic="0" Rare="0" Set="1" Legendary="0" />
+    </DropParams>
+    <MagicEffect EffectId="damage_percent">
+      <LoRoll DamagePercentInt="8" />
+      <HiRoll DamagePercentInt="8" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="Act4_mage_chest_toughness_pts" Class="" AffixType="default">
+    <DropParams Frequency="1">
+      <ItemLevel LevelMin="1" LevelMax="90" />
+      <Keywords OptionalKeywords="" MandatoryKeywords="unique" />
+      <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
+    </DropParams>
+    <MagicEffect EffectId="toughness_pts">
+      <LoRoll AttributeFlatInt="20" />
+      <HiRoll AttributeFlatInt="20" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="Act4_mage_chest_local_resourcegeneration_percent" Class="" AffixType="default">
+    <DropParams Frequency="1">
+      <ItemLevel LevelMin="1" LevelMax="90" />
+      <Keywords OptionalKeywords="" MandatoryKeywords="unique" />
+      <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
+    </DropParams>
+    <MagicEffect EffectId="local_resourcegeneration_percent">
+      <LoRoll LocalPercentFloat="10" />
+      <HiRoll LocalPercentFloat="10" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="Act4_mage_chest_all_resistance" Class="" AffixType="default">
+    <DropParams Frequency="1">
+      <ItemLevel LevelMin="1" LevelMax="90" />
+      <Keywords OptionalKeywords="" MandatoryKeywords="unique" />
+      <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
+    </DropParams>
+    <MagicEffect EffectId="local_allresistances_score_flat">
+      <LoRoll LocalFlatFloat="30" />
+      <HiRoll LocalFlatFloat="30" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="Act4_mage_leg_forceshield_regeneration_percent" Class="" AffixType="default">
+    <DropParams Frequency="1">
+      <ItemLevel LevelMin="1" LevelMax="90" />
+      <Keywords OptionalKeywords="" MandatoryKeywords="unique" />
+      <ItemRarity Magic="0" Rare="0" Set="1" Legendary="0" />
+    </DropParams>
+    <MagicEffect EffectId="forceshield_regeneration_percent">
+      <LoRoll DefenseRegenerationPercentFloat="10" />
+      <HiRoll DefenseRegenerationPercentFloat="10" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="Act4_mage_leg__occult_resistance" Class="" AffixType="default">
+    <DropParams Frequency="1">
+      <ItemLevel LevelMin="1" LevelMax="90" />
+      <Keywords OptionalKeywords="" MandatoryKeywords="unique" />
+      <ItemRarity Magic="0" Rare="0" Set="1" Legendary="0" />
+    </DropParams>
+    <MagicEffect EffectId="occult_resistance">
+      <LoRoll CharacteristicScoreInt="40" />
+      <HiRoll CharacteristicScoreInt="40" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="Act4_mage_leg_elemental_resistance" Class="" AffixType="default">
+    <DropParams Frequency="1">
+      <ItemLevel LevelMin="1" LevelMax="90" />
+      <Keywords OptionalKeywords="" MandatoryKeywords="unique" />
+      <ItemRarity Magic="0" Rare="0" Set="1" Legendary="0" />
+    </DropParams>
+    <MagicEffect EffectId="elemental_resistance">
+      <LoRoll CharacteristicScoreInt="40" />
+      <HiRoll CharacteristicScoreInt="40" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="Act4_mage_feet_shoulders_movespeed" Class="" AffixType="default">
+    <DropParams Frequency="1">
+      <ItemLevel LevelMin="1" LevelMax="90" />
+      <Keywords OptionalKeywords="" MandatoryKeywords="unique" />
+      <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
+    </DropParams>
+    <MagicEffect EffectId="movespeed">
+      <LoRoll SpeedPercentInt="12" />
+      <HiRoll SpeedPercentInt="12" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="Act4_mage_feet_toughness_pts" Class="" AffixType="default">
+    <DropParams Frequency="1">
+      <ItemLevel LevelMin="1" LevelMax="90" />
+      <Keywords OptionalKeywords="" MandatoryKeywords="unique" />
+      <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
+    </DropParams>
+    <MagicEffect EffectId="toughness_pts">
+      <LoRoll AttributeFlatInt="15" />
+      <HiRoll AttributeFlatInt="15" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="Act4_mage_feet_agility" Class="" AffixType="default">
+    <DropParams Frequency="1">
+      <ItemLevel LevelMin="1" LevelMax="90" />
+      <Keywords OptionalKeywords="" MandatoryKeywords="unique" />
+      <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
+    </DropParams>
+    <MagicEffect EffectId="agility_pts">
+      <LoRoll AttributeFlatInt="15" />
+      <HiRoll AttributeFlatInt="15" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="Act4_mage_feet_critical_strike_chance" Class="" AffixType="default">
+    <DropParams Frequency="1">
+      <ItemLevel LevelMin="1" LevelMax="190" />
+      <Keywords OptionalKeywords="" MandatoryKeywords="unique" />
+      <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
+    </DropParams>
+    <MagicEffect EffectId="criticalchance_score">
+      <LoRoll CharacteristicScoreInt="30" />
+      <HiRoll CharacteristicScoreInt="30" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="Act4_mage_ring_frost" Class="" AffixType="default">
+    <DropParams Frequency="1">
+      <ItemLevel LevelMin="1" LevelMax="90" />
+      <Keywords OptionalKeywords="" MandatoryKeywords="unique" />
+      <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
+    </DropParams>
+    <MagicEffect EffectId="local_damage_flat_frost">
+      <LoRoll DamagesFlatInt_Min="4" DamagesFlatInt_Max="6" />
+      <HiRoll DamagesFlatInt_Min="4" DamagesFlatInt_Max="6" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="Act4_mage_ring_damage_percent" Class="" AffixType="default">
+    <DropParams Frequency="1">
+      <ItemLevel LevelMin="1" LevelMax="190" />
+      <Keywords OptionalKeywords="" MandatoryKeywords="unique" />
+      <ItemRarity Magic="0" Rare="0" Set="1" Legendary="0" />
+    </DropParams>
+    <MagicEffect EffectId="damage_percent">
+      <LoRoll DamagePercentInt="5" />
+      <HiRoll DamagePercentInt="5" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="Act4_mage_ring_resistance_score_percent" Class="" AffixType="default">
+    <DropParams Frequency="1">
+      <ItemLevel LevelMin="1" LevelMax="90" />
+      <Keywords OptionalKeywords="" MandatoryKeywords="unique" />
+      <ItemRarity Magic="0" Rare="0" Set="1" Legendary="0" />
+    </DropParams>
+    <MagicEffect EffectId="all_resistance_score_percent">
+      <LoRoll CharacteristicScorePercentInt="10" />
+      <HiRoll CharacteristicScorePercentInt="10" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="Act4_mage_ring2_shadow_damage" Class="" AffixType="default">
+    <DropParams Frequency="1">
+      <ItemLevel LevelMin="1" LevelMax="90" />
+      <Keywords OptionalKeywords="" MandatoryKeywords="unique" />
+      <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
+    </DropParams>
+    <MagicEffect EffectId="local_damage_flat_shadow">
+      <LoRoll DamagesFlatInt_Min="4" DamagesFlatInt_Max="6" />
+      <HiRoll DamagesFlatInt_Min="4" DamagesFlatInt_Max="6" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="Act4_mage_ring2_force_shield" Class="" AffixType="default">
+    <DropParams Frequency="1">
+      <ItemLevel LevelMin="1" LevelMax="90" />
+      <Keywords OptionalKeywords="" MandatoryKeywords="unique" />
+      <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
+    </DropParams>
+    <MagicEffect EffectId="local_forceshield_flat">
+      <LoRoll LocalFlatFloat="200" />
+      <HiRoll LocalFlatFloat="200" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="Act4_mage_ring2_critical_damage" Class="" AffixType="default">
+    <MagicEffect EffectId="criticaldamage_pts">
+      <LoRoll DamagePercentInt="10" />
+      <HiRoll DamagePercentInt="10" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="Act4_mage_amulet_lightning_damage" Class="" AffixType="default">
+    <DropParams Frequency="1">
+      <ItemLevel LevelMin="1" LevelMax="90" />
+      <Keywords OptionalKeywords="" MandatoryKeywords="unique" />
+      <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
+    </DropParams>
+    <MagicEffect EffectId="local_damage_flat_lightning">
+      <LoRoll DamagesFlatInt_Min="4" DamagesFlatInt_Max="6" />
+      <HiRoll DamagesFlatInt_Min="4" DamagesFlatInt_Max="6" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="Act4_mage_amulet_frost_damage" Class="" AffixType="default">
+    <DropParams Frequency="1">
+      <ItemLevel LevelMin="1" LevelMax="90" />
+      <Keywords OptionalKeywords="" MandatoryKeywords="unique" />
+      <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
+    </DropParams>
+    <MagicEffect EffectId="local_damage_flat_frost">
+      <LoRoll DamagesFlatInt_Min="4" DamagesFlatInt_Max="6" />
+      <HiRoll DamagesFlatInt_Min="4" DamagesFlatInt_Max="6" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="Act4_mage_amulet_umbra_regen_percent" Class="" AffixType="default">
+    <DropParams Frequency="1">
+      <ItemLevel LevelMin="1" LevelMax="90" />
+      <Keywords OptionalKeywords="" MandatoryKeywords="unique" />
+      <ItemRarity Magic="0" Rare="0" Set="1" Legendary="0" />
+    </DropParams>
+    <MagicEffect EffectId="umbra_regen_pts">
+      <LoRoll ResourceFlatFloat="12" />
+      <HiRoll ResourceFlatFloat="12" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="Act4_mage_belt_damage_percent" Class="" AffixType="default">
+    <DropParams Frequency="1">
+      <ItemLevel LevelMin="1" LevelMax="190" />
+      <Keywords OptionalKeywords="" MandatoryKeywords="unique" />
+      <ItemRarity Magic="0" Rare="0" Set="1" Legendary="0" />
+    </DropParams>
+    <MagicEffect EffectId="damage_percent">
+      <LoRoll DamagePercentInt="5" />
+      <HiRoll DamagePercentInt="5" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="Act4_mage_belt_willpower_cost" Class="" AffixType="default">
+    <MagicEffect EffectId="umbracosts_percent">
+      <LoRoll ResourcePercentFloat="10" />
+      <HiRoll ResourcePercentFloat="10" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="Act4_mage_belt_force_shield" Class="" AffixType="default">
+    <DropParams Frequency="1">
+      <ItemLevel LevelMin="1" LevelMax="90" />
+      <Keywords OptionalKeywords="" MandatoryKeywords="unique" />
+      <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
+    </DropParams>
+    <MagicEffect EffectId="local_forceshield_flat">
+      <LoRoll LocalFlatFloat="150" />
+      <HiRoll LocalFlatFloat="150" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="Act4_rogue_helmet_damage_percent" Class="" AffixType="default">
+    <DropParams Frequency="1">
+      <ItemLevel LevelMin="1" LevelMax="190" />
+      <Keywords OptionalKeywords="" MandatoryKeywords="unique" />
+      <ItemRarity Magic="0" Rare="0" Set="1" Legendary="0" />
+    </DropParams>
+    <MagicEffect EffectId="damage_percent">
+      <LoRoll DamagePercentInt="7" />
+      <HiRoll DamagePercentInt="7" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="Act4_rogue_helmet_agility" Class="" AffixType="default">
+    <DropParams Frequency="1">
+      <ItemLevel LevelMin="1" LevelMax="90" />
+      <Keywords OptionalKeywords="" MandatoryKeywords="unique" />
+      <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
+    </DropParams>
+    <MagicEffect EffectId="agility_pts">
+      <LoRoll AttributeFlatInt="20" />
+      <HiRoll AttributeFlatInt="20" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="Act4_rogue_helmet_casting_speed" Class="" AffixType="default">
+    <DropParams Frequency="1">
+      <ItemLevel LevelMin="1" LevelMax="90" />
+      <Keywords OptionalKeywords="" MandatoryKeywords="unique" />
+      <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
+    </DropParams>
+    <MagicEffect EffectId="spellcastingspeed_final_percent">
+      <LoRoll CharacteristicFinalPercentFloat="2" />
+      <HiRoll CharacteristicFinalPercentFloat="2" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="Act4_rogue_helmet_cooldownreduction_percent" Class="" AffixType="default">
+    <DropParams Frequency="1">
+      <ItemLevel LevelMin="1" LevelMax="190" />
+      <Keywords OptionalKeywords="" MandatoryKeywords="unique" />
+      <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
+    </DropParams>
+    <MagicEffect EffectId="skill_cooldownreduction_percent">
+      <LoRoll DurationPercentFloat="5" />
+      <HiRoll DurationPercentFloat="5" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="Act4_rogue_shoulder_damage_percent" Class="" AffixType="default">
+    <DropParams Frequency="1">
+      <ItemLevel LevelMin="1" LevelMax="190" />
+      <Keywords OptionalKeywords="" MandatoryKeywords="unique" />
+      <ItemRarity Magic="0" Rare="0" Set="1" Legendary="0" />
+    </DropParams>
+    <MagicEffect EffectId="damage_percent">
+      <LoRoll DamagePercentInt="6" />
+      <HiRoll DamagePercentInt="6" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="Act4_rogue_shoulder_toughness_pts" Class="" AffixType="default">
+    <DropParams Frequency="1">
+      <ItemLevel LevelMin="1" LevelMax="90" />
+      <Keywords OptionalKeywords="" MandatoryKeywords="unique" />
+      <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
+    </DropParams>
+    <MagicEffect EffectId="toughness_pts">
+      <LoRoll AttributeFlatInt="15" />
+      <HiRoll AttributeFlatInt="15" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="Act4_rogue_shoulder_dodgechance_score" Class="" AffixType="default">
+    <DropParams Frequency="1">
+      <ItemLevel LevelMin="1" LevelMax="90" />
+      <Keywords OptionalKeywords="" MandatoryKeywords="unique" />
+      <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
+    </DropParams>
+    <MagicEffect EffectId="dodgechance_score">
+      <LoRoll CharacteristicScoreInt="50" />
+      <HiRoll CharacteristicScoreInt="50" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="Act4_rogue_shoulder_health_pts" Class="" AffixType="default">
+    <DropParams Frequency="1">
+      <ItemLevel LevelMin="1" LevelMax="90" />
+      <Keywords OptionalKeywords="" MandatoryKeywords="unique" />
+      <ItemRarity Magic="0" Rare="0" Set="1" Legendary="0" />
+    </DropParams>
+    <MagicEffect EffectId="health_pts">
+      <LoRoll HealthFlatInt="50" />
+      <HiRoll HealthFlatInt="50" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="Act4_rogue_shoulder2_damage_percent" Class="" AffixType="default">
+    <DropParams Frequency="1">
+      <ItemLevel LevelMin="1" LevelMax="190" />
+      <Keywords OptionalKeywords="" MandatoryKeywords="unique" />
+      <ItemRarity Magic="0" Rare="0" Set="1" Legendary="0" />
+    </DropParams>
+    <MagicEffect EffectId="damage_percent">
+      <LoRoll DamagePercentInt="6" />
+      <HiRoll DamagePercentInt="6" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="Act4_rogue_shoulder2_attack_speed" Class="" AffixType="default">
+    <DropParams Frequency="1">
+      <ItemLevel LevelMin="1" LevelMax="90" />
+      <Keywords OptionalKeywords="" MandatoryKeywords="unique" />
+      <ItemRarity Magic="0" Rare="0" Set="1" Legendary="0" />
+    </DropParams>
+    <MagicEffect EffectId="attackspeed_final_percent">
+      <LoRoll CharacteristicFinalPercentFloat="2" />
+      <HiRoll CharacteristicFinalPercentFloat="2" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="Act4_rogue_shoulder2_agility" Class="" AffixType="default">
+    <DropParams Frequency="1">
+      <ItemLevel LevelMin="1" LevelMax="90" />
+      <Keywords OptionalKeywords="" MandatoryKeywords="unique" />
+      <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
+    </DropParams>
+    <MagicEffect EffectId="agility_pts">
+      <LoRoll AttributeFlatInt="15" />
+      <HiRoll AttributeFlatInt="15" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="Act4_rogue_shoulder2_rageandumbra_cost_percent" Class="" AffixType="default">
+    <DropParams Frequency="1">
+      <ItemLevel LevelMin="1" LevelMax="90" />
+      <Keywords OptionalKeywords="" MandatoryKeywords="unique" />
+      <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
+    </DropParams>
+    <MagicEffect EffectId="rageandumbra_cost_percent">
+      <LoRoll ResourcePercentFloat="10" />
+      <HiRoll ResourcePercentFloat="10" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="Act4_rogue_gloves_damage_percent" Class="" AffixType="default">
+    <DropParams Frequency="1">
+      <ItemLevel LevelMin="1" LevelMax="190" />
+      <Keywords OptionalKeywords="" MandatoryKeywords="unique" />
+      <ItemRarity Magic="0" Rare="0" Set="1" Legendary="0" />
+    </DropParams>
+    <MagicEffect EffectId="damage_percent">
+      <LoRoll DamagePercentInt="5" />
+      <HiRoll DamagePercentInt="5" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="Act4_rogue_gloves_material_protection" Class="" AffixType="default">
+    <MagicEffect EffectId="material_resistance">
+      <LoRoll CharacteristicScoreInt="30" />
+      <HiRoll CharacteristicScoreInt="30" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="Act4_rogue_gloves_rageandumbra_cost_percent" Class="" AffixType="default">
+    <MagicEffect EffectId="rageandumbra_cost_percent">
+      <LoRoll ResourcePercentFloat="10" />
+      <HiRoll ResourcePercentFloat="10" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="Act4_rogue_gloves__local_resourcegeneration_flat" Class="" AffixType="default">
+    <DropParams Frequency="1">
+      <ItemLevel LevelMin="1" LevelMax="90" />
+      <Keywords OptionalKeywords="" MandatoryKeywords="unique" />
+      <ItemRarity Magic="0" Rare="0" Set="1" Legendary="0" />
+    </DropParams>
+    <MagicEffect EffectId="local_resourcegeneration_flat">
+      <LoRoll LocalFlatFloat="10" />
+      <HiRoll LocalFlatFloat="10" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="Act4_rogue_gloves2_damage_percent" Class="" AffixType="default">
+    <DropParams Frequency="1">
+      <ItemLevel LevelMin="1" LevelMax="190" />
+      <Keywords OptionalKeywords="" MandatoryKeywords="unique" />
+      <ItemRarity Magic="0" Rare="0" Set="1" Legendary="0" />
+    </DropParams>
+    <MagicEffect EffectId="damage_percent">
+      <LoRoll DamagePercentInt="5" />
+      <HiRoll DamagePercentInt="5" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="Act4_rogue_gloves2_attack_speed" Class="" AffixType="default">
+    <DropParams Frequency="1">
+      <ItemLevel LevelMin="1" LevelMax="90" />
+      <Keywords OptionalKeywords="" MandatoryKeywords="unique" />
+      <ItemRarity Magic="0" Rare="0" Set="1" Legendary="0" />
+    </DropParams>
+    <MagicEffect EffectId="attackspeed_final_percent">
+      <LoRoll CharacteristicFinalPercentFloat="4" />
+      <HiRoll CharacteristicFinalPercentFloat="4" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="Act4_rogue_gloves2_agility" Class="" AffixType="default">
+    <MagicEffect EffectId="agility_pts">
+      <LoRoll AttributeFlatInt="15" />
+      <HiRoll AttributeFlatInt="15" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="Act4_rogue_chest_damage_percent" Class="" AffixType="default">
+    <DropParams Frequency="1">
+      <ItemLevel LevelMin="1" LevelMax="190" />
+      <Keywords OptionalKeywords="" MandatoryKeywords="unique" />
+      <ItemRarity Magic="0" Rare="0" Set="1" Legendary="0" />
+    </DropParams>
+    <MagicEffect EffectId="damage_percent">
+      <LoRoll DamagePercentInt="8" />
+      <HiRoll DamagePercentInt="8" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="Act4_rogue_chest_toughness_pts" Class="" AffixType="default">
+    <DropParams Frequency="1">
+      <ItemLevel LevelMin="1" LevelMax="90" />
+      <Keywords OptionalKeywords="" MandatoryKeywords="unique" />
+      <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
+    </DropParams>
+    <MagicEffect EffectId="toughness_pts">
+      <LoRoll AttributeFlatInt="20" />
+      <HiRoll AttributeFlatInt="20" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="Act4_rogue_chest_local_resourcegeneration_percent" Class="" AffixType="default">
+    <DropParams Frequency="1">
+      <ItemLevel LevelMin="1" LevelMax="90" />
+      <Keywords OptionalKeywords="" MandatoryKeywords="unique" />
+      <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
+    </DropParams>
+    <MagicEffect EffectId="local_resourcegeneration_percent">
+      <LoRoll LocalPercentFloat="10" />
+      <HiRoll LocalPercentFloat="10" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="Act4_rogue_chest_dodgechance_score" Class="" AffixType="default">
+    <DropParams Frequency="1">
+      <ItemLevel LevelMin="1" LevelMax="90" />
+      <Keywords OptionalKeywords="" MandatoryKeywords="unique" />
+      <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
+    </DropParams>
+    <MagicEffect EffectId="dodgechance_score">
+      <LoRoll CharacteristicScoreInt="30" />
+      <HiRoll CharacteristicScoreInt="30" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="Act4_rogue_leg_dodgechance_score" Class="" AffixType="default">
+    <DropParams Frequency="1">
+      <ItemLevel LevelMin="1" LevelMax="90" />
+      <Keywords OptionalKeywords="" MandatoryKeywords="unique" />
+      <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
+    </DropParams>
+    <MagicEffect EffectId="dodgechance_score">
+      <LoRoll CharacteristicScoreInt="50" />
+      <HiRoll CharacteristicScoreInt="50" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="Act4_rogue_leg_occult_resistance" Class="" AffixType="default">
+    <DropParams Frequency="1">
+      <ItemLevel LevelMin="1" LevelMax="90" />
+      <Keywords OptionalKeywords="" MandatoryKeywords="unique" />
+      <ItemRarity Magic="0" Rare="0" Set="1" Legendary="0" />
+    </DropParams>
+    <MagicEffect EffectId="occult_resistance">
+      <LoRoll CharacteristicScoreInt="40" />
+      <HiRoll CharacteristicScoreInt="40" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="Act4_rogue_leg_elemental_resistance" Class="" AffixType="default">
+    <DropParams Frequency="1">
+      <ItemLevel LevelMin="1" LevelMax="90" />
+      <Keywords OptionalKeywords="" MandatoryKeywords="unique" />
+      <ItemRarity Magic="0" Rare="0" Set="1" Legendary="0" />
+    </DropParams>
+    <MagicEffect EffectId="elemental_resistance">
+      <LoRoll CharacteristicScoreInt="40" />
+      <HiRoll CharacteristicScoreInt="40" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="Act4_rogue_feet_shoulders_movespeed" Class="" AffixType="default">
+    <DropParams Frequency="1">
+      <ItemLevel LevelMin="1" LevelMax="90" />
+      <Keywords OptionalKeywords="" MandatoryKeywords="unique" />
+      <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
+    </DropParams>
+    <MagicEffect EffectId="movespeed">
+      <LoRoll SpeedPercentInt="12" />
+      <HiRoll SpeedPercentInt="12" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="Act4_rogue_feet_toughness_pts" Class="" AffixType="default">
+    <DropParams Frequency="1">
+      <ItemLevel LevelMin="1" LevelMax="90" />
+      <Keywords OptionalKeywords="" MandatoryKeywords="unique" />
+      <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
+    </DropParams>
+    <MagicEffect EffectId="toughness_pts">
+      <LoRoll AttributeFlatInt="15" />
+      <HiRoll AttributeFlatInt="15" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="Act4_rogue_feet_agility" Class="" AffixType="default">
+    <DropParams Frequency="1">
+      <ItemLevel LevelMin="1" LevelMax="90" />
+      <Keywords OptionalKeywords="" MandatoryKeywords="unique" />
+      <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
+    </DropParams>
+    <MagicEffect EffectId="agility_pts">
+      <LoRoll AttributeFlatInt="15" />
+      <HiRoll AttributeFlatInt="15" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="Act4_rogue_feet_critical_strike_chance" Class="" AffixType="default">
+    <DropParams Frequency="1">
+      <ItemLevel LevelMin="1" LevelMax="190" />
+      <Keywords OptionalKeywords="" MandatoryKeywords="unique" />
+      <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
+    </DropParams>
+    <MagicEffect EffectId="criticalchance_score">
+      <LoRoll CharacteristicScoreInt="30" />
+      <HiRoll CharacteristicScoreInt="30" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="Act4_rogue_Ring_toxic_damage" Class="" AffixType="default">
+    <DropParams Frequency="1">
+      <ItemLevel LevelMin="1" LevelMax="90" />
+      <Keywords OptionalKeywords="" MandatoryKeywords="unique" />
+      <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
+    </DropParams>
+    <MagicEffect EffectId="local_damage_flat_toxic">
+      <LoRoll DamagesFlatInt_Min="4" DamagesFlatInt_Max="6" />
+      <HiRoll DamagesFlatInt_Min="4" DamagesFlatInt_Max="6" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="Act4_rogue_ring_damage_percent" Class="" AffixType="default">
+    <DropParams Frequency="1">
+      <ItemLevel LevelMin="1" LevelMax="190" />
+      <Keywords OptionalKeywords="" MandatoryKeywords="unique" />
+      <ItemRarity Magic="0" Rare="0" Set="1" Legendary="0" />
+    </DropParams>
+    <MagicEffect EffectId="damage_percent">
+      <LoRoll DamagePercentInt="5" />
+      <HiRoll DamagePercentInt="5" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="Act4_rogue_ring_resistance_score_percent" Class="" AffixType="default">
+    <DropParams Frequency="1">
+      <ItemLevel LevelMin="1" LevelMax="90" />
+      <Keywords OptionalKeywords="" MandatoryKeywords="unique" />
+      <ItemRarity Magic="0" Rare="0" Set="1" Legendary="0" />
+    </DropParams>
+    <MagicEffect EffectId="all_resistance_score_percent">
+      <LoRoll CharacteristicScorePercentInt="10" />
+      <HiRoll CharacteristicScorePercentInt="10" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="Act4_rogue_ring2_shadow_damage_weapon" Class="" AffixType="default">
+    <DropParams Frequency="1">
+      <ItemLevel LevelMin="1" LevelMax="90" />
+      <Keywords OptionalKeywords="" MandatoryKeywords="unique" />
+      <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
+    </DropParams>
+    <MagicEffect EffectId="shadow_damage_weapon">
+      <LoRoll DamagesFlatInt_Min="4" DamagesFlatInt_Max="6" />
+      <HiRoll DamagesFlatInt_Min="4" DamagesFlatInt_Max="6" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="Act4_rogue_ring2_force_shield" Class="" AffixType="default">
+    <DropParams Frequency="1">
+      <ItemLevel LevelMin="1" LevelMax="90" />
+      <Keywords OptionalKeywords="" MandatoryKeywords="unique" />
+      <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
+    </DropParams>
+    <MagicEffect EffectId="local_forceshield_flat">
+      <LoRoll LocalFlatFloat="100" />
+      <HiRoll LocalFlatFloat="100" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="Act4_rogue_ring2_health_pts" Class="" AffixType="default">
+    <DropParams Frequency="1">
+      <ItemLevel LevelMin="1" LevelMax="90" />
+      <Keywords OptionalKeywords="" MandatoryKeywords="unique" />
+      <ItemRarity Magic="0" Rare="0" Set="1" Legendary="0" />
+    </DropParams>
+    <MagicEffect EffectId="health_pts">
+      <LoRoll HealthFlatInt="100" />
+      <HiRoll HealthFlatInt="100" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="Act4_rogue_ring2_attack_speed" Class="" AffixType="default">
+    <DropParams Frequency="1">
+      <ItemLevel LevelMin="1" LevelMax="90" />
+      <Keywords OptionalKeywords="" MandatoryKeywords="unique" />
+      <ItemRarity Magic="0" Rare="0" Set="1" Legendary="0" />
+    </DropParams>
+    <MagicEffect EffectId="attackspeed_final_percent">
+      <LoRoll CharacteristicFinalPercentFloat="3" />
+      <HiRoll CharacteristicFinalPercentFloat="3" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="Act4_rogue_amulet_toxic_damage" Class="" AffixType="default">
+    <DropParams Frequency="1">
+      <ItemLevel LevelMin="1" LevelMax="90" />
+      <Keywords OptionalKeywords="" MandatoryKeywords="unique" />
+      <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
+    </DropParams>
+    <MagicEffect EffectId="local_damage_flat_toxic">
+      <LoRoll DamagesFlatInt_Min="4" DamagesFlatInt_Max="6" />
+      <HiRoll DamagesFlatInt_Min="4" DamagesFlatInt_Max="6" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="Act4_rogue_amulet_rend_damage" Class="" AffixType="default">
+    <DropParams Frequency="1">
+      <ItemLevel LevelMin="1" LevelMax="90" />
+      <Keywords OptionalKeywords="" MandatoryKeywords="unique" />
+      <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
+    </DropParams>
+    <MagicEffect EffectId="local_damage_flat_rend">
+      <LoRoll DamagesFlatInt_Min="4" DamagesFlatInt_Max="6" />
+      <HiRoll DamagesFlatInt_Min="4" DamagesFlatInt_Max="6" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="Act4_rogue_amulet_rage_per_strike_percent" Class="" AffixType="default">
+    <DropParams Frequency="1">
+      <ItemLevel LevelMin="1" LevelMax="90" />
+      <Keywords OptionalKeywords="" MandatoryKeywords="unique" />
+      <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
+    </DropParams>
+    <MagicEffect EffectId="rage_per_strike_percent">
+      <LoRoll ResourcePercentInt="20" />
+      <HiRoll ResourcePercentInt="20" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="Act4_rogue_belt_damage_percent" Class="" AffixType="default">
+    <DropParams Frequency="1">
+      <ItemLevel LevelMin="1" LevelMax="190" />
+      <Keywords OptionalKeywords="" MandatoryKeywords="unique" />
+      <ItemRarity Magic="0" Rare="0" Set="1" Legendary="0" />
+    </DropParams>
+    <MagicEffect EffectId="damage_percent">
+      <LoRoll DamagePercentInt="5" />
+      <HiRoll DamagePercentInt="5" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="Act4_rogue_belt_rageandumbra_cost_percent" Class="" AffixType="default">
+    <DropParams Frequency="1">
+      <ItemLevel LevelMin="1" LevelMax="90" />
+      <Keywords OptionalKeywords="" MandatoryKeywords="unique" />
+      <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
+    </DropParams>
+    <MagicEffect EffectId="rageandumbra_cost_percent">
+      <LoRoll ResourcePercentFloat="5" />
+      <HiRoll ResourcePercentFloat="5" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="Act4_rogue_belt_health_pts" Class="" AffixType="default">
+    <DropParams Frequency="1">
+      <ItemLevel LevelMin="1" LevelMax="90" />
+      <Keywords OptionalKeywords="" MandatoryKeywords="unique" />
+      <ItemRarity Magic="0" Rare="0" Set="1" Legendary="0" />
+    </DropParams>
+    <MagicEffect EffectId="health_pts">
+      <LoRoll HealthFlatInt="75" />
+      <HiRoll HealthFlatInt="75" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="Act4_rogue_belt_force_shield" Class="" AffixType="default">
+    <DropParams Frequency="1">
+      <ItemLevel LevelMin="1" LevelMax="90" />
+      <Keywords OptionalKeywords="" MandatoryKeywords="unique" />
+      <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
+    </DropParams>
+    <MagicEffect EffectId="local_forceshield_flat">
+      <LoRoll LocalFlatFloat="75" />
+      <HiRoll LocalFlatFloat="75" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="Act4_rogue_1hDagger_critical_damage" Class="" AffixType="default">
+    <MagicEffect EffectId="criticaldamage_pts">
+      <LoRoll DamagePercentInt="10" />
+      <HiRoll DamagePercentInt="10" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="Act4_rogue_1hDagger_life_leech_percent_global" Class="" AffixType="default">
+    <DropParams Frequency="1">
+      <ItemLevel LevelMin="1" LevelMax="90" />
+      <Keywords OptionalKeywords="" MandatoryKeywords="unique" />
+      <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
+    </DropParams>
+    <MagicEffect EffectId="life_leech_percent_global">
+      <LoRoll DamagePercentFloat="0.2" />
+      <HiRoll DamagePercentFloat="0.2" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="Act4_rogue_1hDagger_critical_strike_chance" Class="" AffixType="default">
+    <DropParams Frequency="1">
+      <ItemLevel LevelMin="1" LevelMax="190" />
+      <Keywords OptionalKeywords="" MandatoryKeywords="unique" />
+      <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
+    </DropParams>
+    <MagicEffect EffectId="criticalchance_score">
+      <LoRoll CharacteristicScoreInt="20" />
+      <HiRoll CharacteristicScoreInt="20" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="Act4_rogue_1hPistol_statusailment_inflict_score_flat_materia" Class="" AffixType="default">
+    <MagicEffect EffectId="statusailment_inflict_score_flat_material">
+      <LoRoll CharacteristicScoreInt="20" />
+      <HiRoll CharacteristicScoreInt="20" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="Act4_rogue_1hPistol_attack_speed" Class="" AffixType="default">
+    <MagicEffect EffectId="attackspeed_final_percent">
+      <LoRoll CharacteristicFinalPercentFloat="3" />
+      <HiRoll CharacteristicFinalPercentFloat="3" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="Act4_rogue_1hPistol_local_resourcegeneration_flat" Class="" AffixType="default">
+    <MagicEffect EffectId="local_resourcegeneration_flat">
+      <LoRoll LocalFlatFloat="5" />
+      <HiRoll LocalFlatFloat="5" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="Act4_mage_2hstaff_spell_damage" Class="" AffixType="default">
+    <MagicEffect EffectId="damage_percent_spell">
+      <LoRoll DamagePercentInt="20" />
+      <HiRoll DamagePercentInt="20" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="Act4_mage_2hstaff_casting_speed" Class="" AffixType="default">
+    <MagicEffect EffectId="spellcastingspeed_final_percent">
+      <LoRoll CharacteristicFinalPercentFloat="4" />
+      <HiRoll CharacteristicFinalPercentFloat="4" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="Act4_mage_2hstaff_life_leech_spell" Class="" AffixType="default">
+    <MagicEffect EffectId="life_leech_percent_spell">
+      <LoRoll DamagePercentFloat="0.2" />
+      <HiRoll DamagePercentFloat="0.2" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="Act4_warrior_2hSword_critical_damage" Class="" AffixType="default">
+    <MagicEffect EffectId="criticaldamage_pts">
+      <LoRoll DamagePercentInt="12" />
+      <HiRoll DamagePercentInt="12" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="Act4_warrior_2hSword_leech_percent_weapon" Class="" AffixType="default">
+    <MagicEffect EffectId="life_leech_percent_global">
+      <LoRoll DamagePercentFloat="0.2" />
+      <HiRoll DamagePercentFloat="0.2" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="Act4_warrior_2hSword_critical_strike_chance" Class="" AffixType="default">
+    <MagicEffect EffectId="criticalchance_score">
+      <LoRoll CharacteristicScoreInt="20" />
+      <HiRoll CharacteristicScoreInt="20" />
     </MagicEffect>
   </Affix>
   <Affix AffixId="unique_fx_frost" Class="" AffixType="default">

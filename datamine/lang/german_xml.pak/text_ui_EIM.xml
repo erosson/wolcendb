@@ -8,9 +8,9 @@
  <DocumentProperties xmlns="urn:schemas-microsoft-com:office:office">
   <Title>Untitled Spreadsheet</Title>
   <Author>Unknown Creator</Author>
-  <LastAuthor>Pierre Techoueyres</LastAuthor>
-  <Created>2020-12-15T08:28:50Z</Created>
-  <LastSaved>2020-12-15T08:28:50Z</LastSaved>
+  <LastAuthor>User Computer</LastAuthor>
+  <Created>2023-02-24T10:33:40Z</Created>
+  <LastSaved>2023-02-24T10:33:40Z</LastSaved>
   <Company>Microsoft Corporation</Company>
   <Version>16.00</Version>
  </DocumentProperties>
@@ -18,8 +18,8 @@
   <AllowPNG/>
  </OfficeDocumentSettings>
  <ExcelWorkbook xmlns="urn:schemas-microsoft-com:office:excel">
-  <WindowHeight>32767</WindowHeight>
-  <WindowWidth>19275</WindowWidth>
+  <WindowHeight>9015</WindowHeight>
+  <WindowWidth>21570</WindowWidth>
   <WindowTopX>32767</WindowTopX>
   <WindowTopY>32767</WindowTopY>
   <ProtectStructure>False</ProtectStructure>
@@ -122,7 +122,7 @@
   </Style>
  </Styles>
  <Worksheet ss:Name="Sheet1">
-  <Table ss:ExpandedColumnCount="7" ss:ExpandedRowCount="719" x:FullColumns="1"
+  <Table ss:ExpandedColumnCount="7" ss:ExpandedRowCount="729" x:FullColumns="1"
    x:FullRows="1" ss:DefaultRowHeight="15">
    <Column ss:AutoFitWidth="0" ss:Width="356.25"/>
    <Column ss:AutoFitWidth="0" ss:Width="413.25"/>
@@ -904,7 +904,7 @@
    <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s19"><Data ss:Type="String">ui_eim_convert_fire_to_sacred</Data></Cell>
     <Cell ss:StyleID="s27"><Data ss:Type="String">%1 Fire Damage converted into Sacred Damage</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">%1 Feuerschaden in Heilig Schaden umgewandelt</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">%1 Feuerschaden in Heiligschaden umgewandelt</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -976,7 +976,7 @@
    <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s19"><Data ss:Type="String">ui_eim_convert_frost_to_sacred</Data></Cell>
     <Cell ss:StyleID="s27"><Data ss:Type="String">%1 Frost Damage converted into Sacred Damage</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">%1 Frostschaden in Heilig Schaden umgewandelt</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">%1 Frostschaden in Heiligschaden umgewandelt</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -1048,7 +1048,7 @@
    <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s19"><Data ss:Type="String">ui_eim_convert_lightning_to_sacred</Data></Cell>
     <Cell ss:StyleID="s27"><Data ss:Type="String">%1 Lightning Damage converted into Sacred Damage</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">%1 Blitzschaden in Heilig Schaden umgewandelt</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">%1 Blitzschaden in Heiligschaden umgewandelt</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -1120,7 +1120,7 @@
    <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s19"><Data ss:Type="String">ui_eim_convert_physical_to_sacred</Data></Cell>
     <Cell ss:StyleID="s27"><Data ss:Type="String">%1 Physical Damage converted into Sacred Damage</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">%1 physischen Schaden in Heilig Schaden umgewandelt</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">%1 physischen Schaden in Heiligschaden umgewandelt</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -1192,7 +1192,7 @@
    <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s19"><Data ss:Type="String">ui_eim_convert_rend_to_sacred</Data></Cell>
     <Cell ss:StyleID="s27"><Data ss:Type="String">%1 Rend Damage converted into Sacred Damage</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">%1 Zerreißungsschaden in Heilig Schaden umgewandelt</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">%1 Zerreißungsschaden in Heiligschaden umgewandelt</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -1228,7 +1228,7 @@
    <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s19"><Data ss:Type="String">ui_eim_convert_sacred_to_fire</Data></Cell>
     <Cell ss:StyleID="s27"><Data ss:Type="String">%1 Sacred Damage converted into Fire Damage</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">%1 Heilig Schaden in Feuerschaden umgewandelt</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">%1 Heiligschaden in Feuerschaden umgewandelt</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -1237,7 +1237,7 @@
    <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s19"><Data ss:Type="String">ui_eim_convert_sacred_to_frost</Data></Cell>
     <Cell ss:StyleID="s27"><Data ss:Type="String">%1 Sacred Damage converted into Frost Damage</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">%1 Heilig Schaden in Frostschaden umgewandelt</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">%1 Heiligschaden in Frostschaden umgewandelt</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -1246,7 +1246,7 @@
    <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s19"><Data ss:Type="String">ui_eim_convert_sacred_to_lightning</Data></Cell>
     <Cell ss:StyleID="s27"><Data ss:Type="String">%1 Sacred Damage converted into Lightning Damage</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">%1 Heilig Schaden in Blitzschaden umgewandelt</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">%1 Heiligschaden in Blitzschaden umgewandelt</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -1255,7 +1255,7 @@
    <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s19"><Data ss:Type="String">ui_eim_convert_sacred_to_physical</Data></Cell>
     <Cell ss:StyleID="s27"><Data ss:Type="String">%1 Sacred Damage converted into Physical Damage</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">%1 Heilig Schaden in physischen Schaden umgewandelt</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">%1 Heiligschaden in physischen Schaden umgewandelt</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -1264,7 +1264,7 @@
    <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s19"><Data ss:Type="String">ui_eim_convert_sacred_to_rend</Data></Cell>
     <Cell ss:StyleID="s27"><Data ss:Type="String">%1 Sacred Damage converted into Rend Damage</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">%1 Heilig Schaden in Zerreißungsschaden umgewandelt</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">%1 Heiligschaden in Zerreißungsschaden umgewandelt</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -1273,7 +1273,7 @@
    <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s19"><Data ss:Type="String">ui_eim_convert_sacred_to_shadow</Data></Cell>
     <Cell ss:StyleID="s27"><Data ss:Type="String">%1 Sacred Damage converted into Shadow Damage</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">%1 Heilig Schaden in Schattenschaden umgewandelt</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">%1 Heiligschaden in Schattenschaden umgewandelt</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -1282,7 +1282,7 @@
    <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s19"><Data ss:Type="String">ui_eim_convert_sacred_to_toxic</Data></Cell>
     <Cell ss:StyleID="s27"><Data ss:Type="String">%1 Sacred Damage converted into Toxic Damage</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">%1 Heilig Schaden in Giftschaden umgewandelt</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">%1 Heiligschaden in Giftschaden umgewandelt</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -1291,7 +1291,7 @@
    <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s19"><Data ss:Type="String">ui_eim_convert_sacred_to_umbra</Data></Cell>
     <Cell ss:StyleID="s27"><Data ss:Type="String">%1 Sacred Damage converted into Aether Damage</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">%1 Heilig Schaden in Ätherschaden umgewandelt</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">%1 Heiligschaden in Ätherschaden umgewandelt</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -1345,7 +1345,7 @@
    <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s19"><Data ss:Type="String">ui_eim_convert_shadow_to_sacred</Data></Cell>
     <Cell ss:StyleID="s27"><Data ss:Type="String">%1 Shadow Damage converted into Sacred Damage</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">%1 Schattenschaden in Heilig Schaden umgewandelt</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">%1 Schattenschaden in Heiligschaden umgewandelt</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -1417,7 +1417,7 @@
    <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s19"><Data ss:Type="String">ui_eim_convert_toxic_to_sacred</Data></Cell>
     <Cell ss:StyleID="s27"><Data ss:Type="String">%1 Toxic Damage converted into Sacred Damage</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">%1 Giftschaden in Heilig Schaden umgewandelt</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">%1 Giftschaden in Heiligschaden umgewandelt</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -1498,7 +1498,7 @@
    <Row ss:AutoFitHeight="0" ss:Height="20.0625">
     <Cell ss:StyleID="s19"><Data ss:Type="String">ui_eim_convert_umbra_to_sacred</Data></Cell>
     <Cell ss:StyleID="s27"><Data ss:Type="String">%1 Aether Damage converted into Sacred Damage</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">%1 Ätherschaden in Heilig Schaden umgewandelt</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">%1 Ätherschaden in Heiligschaden umgewandelt</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -1597,7 +1597,7 @@
    <Row ss:AutoFitHeight="0" ss:Height="20.0625">
     <Cell ss:StyleID="s19"><Data ss:Type="String">ui_eim_criticalchance_on_ailment_final_percent</Data></Cell>
     <Cell ss:StyleID="s27"><Data ss:Type="String">%1 Ailment Critical Chance </Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">%1 kritische Chance auf Status Effekte</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">%1 kritische Chance auf Statuseffekte</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -1606,7 +1606,7 @@
    <Row ss:AutoFitHeight="0" ss:Height="20.0625">
     <Cell ss:StyleID="s19"><Data ss:Type="String">ui_eim_criticalchance_on_ailment_score</Data></Cell>
     <Cell ss:StyleID="s27"><Data ss:Type="String">%1 Ailment Critical Chance Score</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">%1 auf den Gesamtwert der kritischen Status Effekte Chance</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">%1 auf den Gesamtwert der kritischen Statuseffekte Chance</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -1615,7 +1615,7 @@
    <Row ss:AutoFitHeight="0" ss:Height="20.0625">
     <Cell ss:StyleID="s19"><Data ss:Type="String">ui_eim_criticalchance_on_ailment_score_percent</Data></Cell>
     <Cell ss:StyleID="s27"><Data ss:Type="String">%1 Ailment Critical Chance Score</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">%1 auf den Gesamtwert der kritischen Status Effekte Chance</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">%1 auf den Gesamtwert der kritischen Statuseffekte Chance</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -1687,7 +1687,7 @@
    <Row ss:AutoFitHeight="0" ss:Height="20.0625">
     <Cell ss:StyleID="s19"><Data ss:Type="String">ui_eim_criticaldamage_on_ailment_pts</Data></Cell>
     <Cell ss:StyleID="s27"><Data ss:Type="String">%1 Critical Damage to Enemies affected by Ailments</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">%1 kritischer Schaden an Gegnern die unter Status Effekte leiden</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">%1 kritischer Schaden an Gegnern die unter Statuseffekten leiden</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -1885,7 +1885,7 @@
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s19"><Data ss:Type="String">ui_eim_damage_percent_as_sacred</Data></Cell>
     <Cell ss:StyleID="s27"><Data ss:Type="String">%1 additional Damage dealt as Sacred Damage</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">%1 zusätzlicher Schaden als Heilig Schaden</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">%1 zusätzlicher Schaden als Heiligschaden</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -2064,7 +2064,7 @@
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s19"><Data ss:Type="String">ui_eim_damage_percent_twohanded</Data></Cell>
-    <Cell ss:StyleID="s27"><Data ss:Type="String">%1 Two Handed Weapon Damage</Data></Cell>
+    <Cell ss:StyleID="s27"><Data ss:Type="String">%1 Two-Handed Weapon Damage</Data></Cell>
     <Cell ss:StyleID="s18"><Data ss:Type="String">%1 Schaden mit Zweihandwaffen</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -2200,7 +2200,7 @@
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s19"><Data ss:Type="String">ui_eim_damage_percent_major_sacred</Data></Cell>
     <Cell ss:StyleID="s27"><Data ss:Type="String">%1 Sacred Damage Multiplier</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">%1 Heilig Schaden-Multiplikator</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">%1 Heiligschaden-Multiplikator</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -2236,7 +2236,7 @@
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s19"><Data ss:Type="String">ui_eim_damage_percent_major_projectiles</Data></Cell>
     <Cell ss:StyleID="s27"><Data ss:Type="String">%1 Projectile Damage Multiplier</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">%1 Projektilschaden-Multiplikator</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">%1 Geschossschaden-Multiplikator</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -2263,7 +2263,7 @@
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s19"><Data ss:Type="String">ui_eim_damage_percent_major_dot</Data></Cell>
     <Cell ss:StyleID="s27"><Data ss:Type="String">%1 Ailment Damage Multiplier</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">%1 Status Effektschaden Multiplikator</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">%1 Statuseffektschaden Multiplikator</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -2307,7 +2307,7 @@
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s19"><Data ss:Type="String">ui_eim_deathmark_on_hit</Data></Cell>
-    <Cell ss:StyleID="s27"><Data ss:Type="String">%1 Chance to infilct Mark of Impurity to an Enemy on Hit</Data></Cell>
+    <Cell ss:StyleID="s27"><Data ss:Type="String">%1 Chance to inflict Mark of Impurity to an Enemy on Hit</Data></Cell>
     <Cell ss:StyleID="s18"><Data ss:Type="String">%1 Chance, Mal der Unreinheit bei Treffern zu wirken</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -2316,8 +2316,8 @@
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s19"><Data ss:Type="String">ui_eim_defense_up_on_block</Data></Cell>
-    <Cell ss:StyleID="s27"><Data ss:Type="String">%1 All Resistances Score for you and your Allies on Block</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">%1 auf den Gesamtwert aller Widerstände für dich und deine Verbündeten nach dem Blocken eines Treffers</Data></Cell>
+    <Cell ss:StyleID="s27"><Data ss:Type="String">%1 All Resistances Score for you and your Allies on Block within a %2m radius during %3s</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">%1 auf den Gesamtwert aller Widerstände für dich und deine Verbündeten nach dem Blocken eines Treffers innerhalb eines Radius von %2m während %3s</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -2325,8 +2325,8 @@
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s19"><Data ss:Type="String">ui_eim_defense_up_on_globe_pickup</Data></Cell>
-    <Cell ss:StyleID="s27"><Data ss:Type="String">%1 All Resistances Score for you and your Allies when you pick a Health Globe</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">%1 auf den Gesamtwert aller Widerstände für dich und deine Verbündeten nach der Aufnahme einer Gesundheitskugel</Data></Cell>
+    <Cell ss:StyleID="s27"><Data ss:Type="String">%1 All Resistances Score during %3s when you pick a Health Globe</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">%1 auf den Gesamtwert aller Widerstände nach der Aufnahme einer Gesundheitskugel für %3s</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -2334,8 +2334,8 @@
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s19"><Data ss:Type="String">ui_eim_dodgechance_on_being_hit</Data></Cell>
-    <Cell ss:StyleID="s27"><Data ss:Type="String">%1 Passive Dodge Chance Score after being Hit</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">%1 auf den Gesamtwert der Ausweichchance nach einem eingehenden Treffer</Data></Cell>
+    <Cell ss:StyleID="s27"><Data ss:Type="String">%1 Passive Dodge Chance Score during %3s after being Hit. %4s Cooldown.</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">%1 auf den Gesamtwert der Ausweichchance für %3s nach einem eingehenden Treffer. %4s Abklingzeit.</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -2407,7 +2407,7 @@
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s19"><Data ss:Type="String">ui_eim_dotdamage_percent_per_wisdom_point</Data></Cell>
     <Cell ss:StyleID="s27"><Data ss:Type="String">%1 Ailment Damage per Wisdom point (up to %2)</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">%1 Status Effektschaden pro Weisheitspunkt (bis zu %2)</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">%1 Statuseffektschaden pro Weisheitspunkt (bis zu %2)</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -2416,7 +2416,7 @@
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s19"><Data ss:Type="String">ui_eim_dotdamage_percent_poison</Data></Cell>
     <Cell ss:StyleID="s27"><Data ss:Type="String">%1 Poison Ailment Damage</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">%1 Schaden durch Giftschaden</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">%1 Vergiftungs-Effektschaden</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -2425,7 +2425,7 @@
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s19"><Data ss:Type="String">ui_eim_dotdamage_percent_received_increase</Data></Cell>
     <Cell ss:StyleID="s27"><Data ss:Type="String">%1 Ailment Damage taken</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">%1 erhaltener Status Effektschaden</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">%1 erhaltener Statuseffektschaden</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -2434,7 +2434,7 @@
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s19"><Data ss:Type="String">ui_eim_dotdamage_percent_shock</Data></Cell>
     <Cell ss:StyleID="s27"><Data ss:Type="String">%1 Shock Ailment Damage</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">%1 Schaden durch Blitzschaden</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">%1 Schock-Effektschaden</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -2515,7 +2515,7 @@
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s19"><Data ss:Type="String">ui_eim_elemental_stacks_to_shock</Data></Cell>
     <Cell ss:StyleID="s27"><Data ss:Type="String">Apply Shock instead of Freeze and Burn</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">Einfrierungen und Verbrennungen lösen stattdessen Schock aus</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">Einfrieren und Verbrennungen lösen stattdessen Schock aus</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -2677,7 +2677,7 @@
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s19"><Data ss:Type="String">ui_eim_freeze_on_hit_percent</Data></Cell>
     <Cell ss:StyleID="s27"><Data ss:Type="String">%1 Freeze Chance Score with any Damage Type</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">%1 auf den Gesamtwert der Einfrierungschance bei allen Schadenstypen</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">%1 auf den Gesamtwert der Einfrierchance bei allen Schadenstypen</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -2838,7 +2838,7 @@
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s19"><Data ss:Type="String">ui_eim_health_percent</Data></Cell>
-    <Cell ss:StyleID="s27"><Data ss:Type="String">%1 maximum Health</Data></Cell>
+    <Cell ss:StyleID="s27"><Data ss:Type="String">%1 Maximum Health</Data></Cell>
     <Cell ss:StyleID="s18"><Data ss:Type="String">%1 maximale Gesundheit</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -2847,7 +2847,7 @@
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s19"><Data ss:Type="String">ui_eim_health_pts</Data></Cell>
-    <Cell ss:StyleID="s27"><Data ss:Type="String">%1 maximum Health</Data></Cell>
+    <Cell ss:StyleID="s27"><Data ss:Type="String">%1 Maximum Health</Data></Cell>
     <Cell ss:StyleID="s18"><Data ss:Type="String">%1 maximale Gesundheit</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -2903,6 +2903,33 @@
     <Cell ss:StyleID="s19"><Data ss:Type="String">ui_eim_healthglobe_drop_chance_on_hit</Data></Cell>
     <Cell ss:StyleID="s27"><Data ss:Type="String">%1 Health Globe generation on Hit</Data></Cell>
     <Cell ss:StyleID="s18"><Data ss:Type="String">%1 Gesundheitskugelerzeugung pro Treffer</Data></Cell>
+    <Cell ss:StyleID="s18"/>
+    <Cell ss:StyleID="s18"/>
+    <Cell ss:StyleID="s18"/>
+    <Cell ss:StyleID="s18"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s19"><Data ss:Type="String">ui_eim_inflicted_elemental_duration_percent</Data></Cell>
+    <Cell ss:StyleID="s27"><Data ss:Type="String">Increases inflicted Elemental Ailments Duration by %1</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">Erhöht die Dauer von zugefügten Elementarschäden um %1</Data></Cell>
+    <Cell ss:StyleID="s18"/>
+    <Cell ss:StyleID="s18"/>
+    <Cell ss:StyleID="s18"/>
+    <Cell ss:StyleID="s18"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s19"><Data ss:Type="String">ui_eim_inflicted_material_duration_percent</Data></Cell>
+    <Cell ss:StyleID="s27"><Data ss:Type="String">Increases inflicted Material Ailments Duration by %1</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">Erhöht die Dauer von zugefügten Materialschäden um %1</Data></Cell>
+    <Cell ss:StyleID="s18"/>
+    <Cell ss:StyleID="s18"/>
+    <Cell ss:StyleID="s18"/>
+    <Cell ss:StyleID="s18"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s18"><Data ss:Type="String">ui_eim_inflicted_occult_duration_percent</Data></Cell>
+    <Cell ss:StyleID="s27"><Data ss:Type="String">Increases inflicted Occult Ailments Duration by %1</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">Erhöht die Dauer von zugefügten Okkultschäden um %1</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -2992,7 +3019,7 @@
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s19"><Data ss:Type="String">ui_eim_life_leech_percent_sacred</Data></Cell>
     <Cell ss:StyleID="s27"><Data ss:Type="String">%1 Life Leech from Sacred Damage</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">%1 Lebensdiebstahl durch Heilig Schaden</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">%1 Lebensdiebstahl durch Heiligschaden</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -3225,7 +3252,7 @@
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s19"><Data ss:Type="String">ui_eim_max_stacks_capacity</Data></Cell>
-    <Cell ss:StyleID="s27"><Data ss:Type="String">%1 maximum Ailment Stacks</Data></Cell>
+    <Cell ss:StyleID="s27"><Data ss:Type="String">%1 Maximum Ailment Stacks</Data></Cell>
     <Cell ss:StyleID="s18"><Data ss:Type="String">%1 maximale Status Effekt Stapel</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -3262,7 +3289,7 @@
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s19"><Data ss:Type="String">ui_eim_non_dot_damage_percent</Data></Cell>
     <Cell ss:StyleID="s27"><Data ss:Type="String">%1 reduced non-Ailment Damage</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">%1 reduzierter nicht Status Effektschaden</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">%1 reduzierter nicht Statuseffektschaden</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -3271,7 +3298,7 @@
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s19"><Data ss:Type="String">ui_eim_occult_damage_percent</Data></Cell>
     <Cell ss:StyleID="s27"><Data ss:Type="String">%1 Occult Damage</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">%1 Okkulteschaden</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">%1 Okkultschaden</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -3451,7 +3478,7 @@
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s19"><Data ss:Type="String">ui_eim_piercing</Data></Cell>
     <Cell ss:StyleID="s27"><Data ss:Type="String">%1 Projectile Pierce Strength</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">%1 Geschossdurchbohrungsstärke</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">%1 Geschossdurchschlagsstärke</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -3460,7 +3487,7 @@
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s19"><Data ss:Type="String">ui_eim_pinflicted_freeze_duration_percent</Data></Cell>
     <Cell ss:StyleID="s27"><Data ss:Type="String">%1 Freeze Duration on Enemies</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">%1 Einfrierungsdauer von Gegnern</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">%1 Einfrierdauer von Gegnern</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -3469,7 +3496,7 @@
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s19"><Data ss:Type="String">ui_eim_inflicted_freeze_duration_percent</Data></Cell>
     <Cell ss:StyleID="s27"><Data ss:Type="String">%1 Freeze Duration on Enemies</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">%1 Einfrierungsdauer von Gegnern</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">%1 Einfrierdauer von Gegnern</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -3478,7 +3505,7 @@
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s20"><Data ss:Type="String">ui_eim_poison_on_hit_percent</Data></Cell>
     <Cell ss:StyleID="s27"><Data ss:Type="String">%1 Poison Chance Score with any Damage Type</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">%1 auf den Gesamtwert der Vergiftungschance bei allen Schadenstypen</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">%1 auf den Gesamtwert der Vergiftungschance bei allen Schadensty.</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -3505,7 +3532,7 @@
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s19"><Data ss:Type="String">ui_eim_projectiles_damage_asdistance</Data></Cell>
     <Cell ss:StyleID="s27"><Data ss:Type="String">Projectile Damage scale by %1 with distance up to %3m</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">%1 Projektilschaden skaliert bis %3m</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">%1 Geschossschaden skaliert bis %3m</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -3585,7 +3612,7 @@
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s19"><Data ss:Type="String">ui_eim_rage_to_umbra_transfer_percent</Data></Cell>
-    <Cell ss:StyleID="s27"><Data ss:Type="String">%1 increased Transfer Rate between Rage and Willpower</Data></Cell>
+    <Cell ss:StyleID="s27"><Data ss:Type="String">%1 Increased Transfer Rate between Rage and Willpower</Data></Cell>
     <Cell ss:StyleID="s18"><Data ss:Type="String">%1 erhöhte Übertragungsrate zwischen Wut und Willenskraft</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -3594,7 +3621,7 @@
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s19"><Data ss:Type="String">ui_eim_rage_to_umbra_transfer_pts</Data></Cell>
-    <Cell ss:StyleID="s27"><Data ss:Type="String">%1-%2 reduced Transfer Rate between Rage and Willpower</Data></Cell>
+    <Cell ss:StyleID="s27"><Data ss:Type="String">%1-%2 Reduced Transfer Rate between Rage and Willpower</Data></Cell>
     <Cell ss:StyleID="s18"><Data ss:Type="String">%1-%2 Senkung der Übertragungsrate zwischen Wut und Willenskraft</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -3730,7 +3757,7 @@
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s18"><Data ss:Type="String">ui_eim_sacred_damage_percent</Data></Cell>
     <Cell ss:StyleID="s27"><Data ss:Type="String">%1 Sacred Damage</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">%1 Heilig Schaden</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">%1 Heiligschaden</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -3739,7 +3766,7 @@
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s19"><Data ss:Type="String">ui_eim_sacred_damage_percent_spell</Data></Cell>
     <Cell ss:StyleID="s27"><Data ss:Type="String">%1 Sacred Damage added to Spells</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">%1 Heilig Schaden auf Zauber hinzugefügt</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">%1 Heiligschaden auf Zauber hinzugefügt</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -3748,7 +3775,7 @@
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s18"><Data ss:Type="String">ui_eim_sacred_damage_percent_weapon</Data></Cell>
     <Cell ss:StyleID="s27"><Data ss:Type="String">%1 Sacred Damage added to Attacks</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">%1 Heilig Schaden auf Angriffe hinzugefügt</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">%1 Heiligschaden auf Angriffe hinzugefügt</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -3757,7 +3784,7 @@
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s19"><Data ss:Type="String">ui_eim_sacred_damage_spell</Data></Cell>
     <Cell ss:StyleID="s27"><Data ss:Type="String">%1-%2 Sacred Damage added to Spells</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">%1-%2 Heilig Schaden auf Zauber hinzugefügt</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">%1-%2 Heiligschaden auf Zauber hinzugefügt</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -3766,7 +3793,7 @@
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s19"><Data ss:Type="String">ui_eim_sacred_damage_weapon</Data></Cell>
     <Cell ss:StyleID="s27"><Data ss:Type="String">%1-%2 Sacred Damage added to Attacks</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">%1-%2 Heilig Schaden auf Angriffe hinzugefügt</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">%1-%2 Heiligschaden auf Angriffe hinzugefügt</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -4144,7 +4171,7 @@
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s19"><Data ss:Type="String">ui_eim_statusailment_inflict_chance_final_percent</Data></Cell>
     <Cell ss:StyleID="s27"><Data ss:Type="String">%1 Ailment Chance</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">%1 Status Effekt Chance</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">%1 Statuseffekt-Chance</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -4153,7 +4180,7 @@
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s19"><Data ss:Type="String">ui_eim_statusailment_inflict_score_flat_elemental</Data></Cell>
     <Cell ss:StyleID="s27"><Data ss:Type="String">%1 Elemental Ailment Chance Score</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">%1 auf den Gesamtwert der Elementaren Status Effekt Chance</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">%1 auf den Gesamtwert der Elementaren Statuseffekt-Chance</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -4162,7 +4189,7 @@
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s19"><Data ss:Type="String">ui_eim_statusailment_inflict_score_flat_material</Data></Cell>
     <Cell ss:StyleID="s27"><Data ss:Type="String">%1 Material Ailment Chance Score</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">%1 auf den Gesamtwert der Material Status Effekt Chance</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">%1 auf den Gesamtwert der Material Statuseffekt-Chance</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -4171,7 +4198,7 @@
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s19"><Data ss:Type="String">ui_eim_statusailment_inflict_score_flat_occult</Data></Cell>
     <Cell ss:StyleID="s27"><Data ss:Type="String">%1 Occult Ailment Chance Score</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">%1 auf den Gesamtwert der Okkulten Status Effekt Chance</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">%1 auf den Gesamtwert der Okkulten Statuseffekt-Chance</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -4180,7 +4207,7 @@
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s19"><Data ss:Type="String">ui_eim_statusailment_inflict_score_percent</Data></Cell>
     <Cell ss:StyleID="s27"><Data ss:Type="String">%1 Ailment Chance Score</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">%1 auf den Gesamtwert der Status Effekt Chance</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">%1 auf den Gesamtwert der Statuseffekt-Chance</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -4189,7 +4216,7 @@
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s19"><Data ss:Type="String">ui_eim_statusailment_inflict_chance_score</Data></Cell>
     <Cell ss:StyleID="s27"><Data ss:Type="String">%1 Ailment Chance Score</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">%1 auf den Gesamtwert der Status Effekt Chance</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">%1 auf den Gesamtwert der Statuseffekt-Chance</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -4198,7 +4225,7 @@
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s19"><Data ss:Type="String">ui_eim_statusailment_inflict_score_percent_elemental</Data></Cell>
     <Cell ss:StyleID="s27"><Data ss:Type="String">%1 Elemental Ailment Chance Score</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">%1 auf den Gesamtwert der Elementaren Status Effekt Chance</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">%1 auf den Gesamtwert der Elementaren Statuseffekt-Chance</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -4207,7 +4234,7 @@
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s19"><Data ss:Type="String">ui_eim_statusailment_inflict_score_percent_material</Data></Cell>
     <Cell ss:StyleID="s27"><Data ss:Type="String">%1 Material Ailment Chance Score</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">%1 auf den Gesamtwert der Material Status Effekt Chance </Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">%1 auf den Gesamtwert der Material Statuseffekt-Chance </Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -4216,7 +4243,7 @@
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s19"><Data ss:Type="String">ui_eim_statusailment_inflict_score_percent_occult</Data></Cell>
     <Cell ss:StyleID="s27"><Data ss:Type="String">%1 Occult Ailment Chance Score</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">%1 auf den Gesamtwert der Okkulten Status Effekt Chance </Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">%1 auf den Gesamtwert der Okkulten Statuseffekt-Chance </Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -4395,7 +4422,7 @@
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s19"><Data ss:Type="String">ui_eim_twohanded_blockchance_flat</Data></Cell>
-    <Cell ss:StyleID="s27"><Data ss:Type="String">%1 Block Chance while a Two-handed Weapon is equipped</Data></Cell>
+    <Cell ss:StyleID="s27"><Data ss:Type="String">%1 Block Chance while a Two-Handed Weapon is equipped</Data></Cell>
     <Cell ss:StyleID="s18"><Data ss:Type="String">%1 Blockchance, während eine Zweihandwaffe ausgerüstet ist</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -4567,7 +4594,7 @@
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s19"><Data ss:Type="String">ui_eim_weaknes_on_hit_percent</Data></Cell>
     <Cell ss:StyleID="s27"><Data ss:Type="String">%1 Weakness Chance Score with any Damage Type</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">%1 auf den Gesamtwert der Schwächungschance bei allen Schadenstypen</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">%1 auf den Gesamtwert der Schwächungscha. bei allen Schadenst.</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -4594,7 +4621,7 @@
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s19"><Data ss:Type="String">ui_eim_weaknesschance_on_sacred_damage_score_flat</Data></Cell>
     <Cell ss:StyleID="s31"><Data ss:Type="String">%1 Weakness Chance Score with Sacred Damage</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">%1 auf den Gesamtwert der Schwächungschance bei Heilig Schaden</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">%1 auf den Gesamtwert der Schwächungschance bei Heiligschaden</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -4603,7 +4630,7 @@
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s19"><Data ss:Type="String">ui_eim_weaknesschance_on_sacred_damage_score_percent</Data></Cell>
     <Cell ss:StyleID="s31"><Data ss:Type="String">%1 Weakness Chance Score with Sacred Damage</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">%1 auf den Gesamtwert der Schwächungschance bei Heilig Schaden</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">%1 auf den Gesamtwert der Schwächungschance bei Heiligschaden</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -4746,8 +4773,8 @@
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s19"><Data ss:Type="String">ui_eim_local_damage_flat_fire</Data></Cell>
-    <Cell ss:StyleID="s27"><Data ss:Type="String">%1-%2 Fire Damage on Attacks with this weapon</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">%1-%2 Feuerschaden auf Angriffe mit dieser Waffe</Data></Cell>
+    <Cell ss:StyleID="s27"><Data ss:Type="String">%1-%2 Fire Damage on Attacks and Spells with this weapon</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">%1-%2 Feuerschaden auf Angriffe und Zauber mit dieser Waffe</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -4755,8 +4782,8 @@
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s19"><Data ss:Type="String">ui_eim_local_damage_flat_frost</Data></Cell>
-    <Cell ss:StyleID="s27"><Data ss:Type="String">%1-%2 Frost Damage on Attacks with this weapon</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">%1-%2 Frostschaden auf Angriffe mit dieser Waffe</Data></Cell>
+    <Cell ss:StyleID="s27"><Data ss:Type="String">%1-%2 Frost Damage on Attacks and Spells with this weapon</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">%1-%2 Frostschaden auf Angriffe und Zauber mit dieser Waffe</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -4764,8 +4791,8 @@
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s19"><Data ss:Type="String">ui_eim_local_damage_flat_lightning</Data></Cell>
-    <Cell ss:StyleID="s27"><Data ss:Type="String">%1-%2 Lightning Damage on Attacks with this weapon</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">%1-%2 Blitzschaden auf Angriffe mit dieser Waffe</Data></Cell>
+    <Cell ss:StyleID="s27"><Data ss:Type="String">%1-%2 Lightning Damage on Attacks and Spells with this weapon</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">%1-%2 Blitzschaden auf Angriffe und Zauber mit dieser Waffe</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -4773,8 +4800,8 @@
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s19"><Data ss:Type="String">ui_eim_local_damage_flat_physical</Data></Cell>
-    <Cell ss:StyleID="s27"><Data ss:Type="String">%1-%2 Physical Damage on Attacks with this weapon</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">%1-%2 Physischer Schaden auf Angriffe mit dieser Waffe</Data></Cell>
+    <Cell ss:StyleID="s27"><Data ss:Type="String">%1-%2 Physical Damage on Attacks and Spells with this weapon</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">%1-%2 Physischer Schaden auf Angriffe und Zauber mit dieser Waffe</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -4782,8 +4809,8 @@
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s19"><Data ss:Type="String">ui_eim_local_damage_flat_rend</Data></Cell>
-    <Cell ss:StyleID="s27"><Data ss:Type="String">%1-%2 Rend Damage on Attacks with this weapon</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">%1-%2 Zerreißungs-Schaden auf Angriffe mit dieser Waffe</Data></Cell>
+    <Cell ss:StyleID="s27"><Data ss:Type="String">%1-%2 Rend Damage on Attacks and Spells with this weapon</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">%1-%2 Zerreißungs-Schaden auf Angriffe und Zauber mit dieser Waffe</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -4791,8 +4818,8 @@
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s19"><Data ss:Type="String">ui_eim_local_damage_flat_sacred</Data></Cell>
-    <Cell ss:StyleID="s27"><Data ss:Type="String">%1-%2 Sacred Damage on Attacks with this weapon</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">%1-%2 Heilig Schaden auf Angriffe mit dieser Waffe</Data></Cell>
+    <Cell ss:StyleID="s27"><Data ss:Type="String">%1-%2 Sacred Damage on Attacks and Spells with this weapon</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">%1-%2 Heiligschaden auf Angriffe und Zauber mit dieser Waffe</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -4800,8 +4827,8 @@
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s19"><Data ss:Type="String">ui_eim_local_damage_flat_shadow</Data></Cell>
-    <Cell ss:StyleID="s27"><Data ss:Type="String">%1-%2 Shadow Damage on Attacks with this weapon</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">%1-%2 Schattenschaden auf Angriffe mit dieser Waffe</Data></Cell>
+    <Cell ss:StyleID="s27"><Data ss:Type="String">%1-%2 Shadow Damage on Attacks and Spells with this weapon</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">%1-%2 Schattenschaden auf Angriffe und Zauber mit dieser Waffe</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -4809,8 +4836,8 @@
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s19"><Data ss:Type="String">ui_eim_local_damage_flat_toxic</Data></Cell>
-    <Cell ss:StyleID="s27"><Data ss:Type="String">%1-%2 Toxic Damage on Attacks with this weapon</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">%1-%2 Giftschaden auf Angriffe mit dieser Waffe</Data></Cell>
+    <Cell ss:StyleID="s27"><Data ss:Type="String">%1-%2 Toxic Damage on Attacks and Spells with this weapon</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">%1-%2 Giftschaden auf Angriffe und Zauber mit dieser Waffe</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -4818,8 +4845,8 @@
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s19"><Data ss:Type="String">ui_eim_local_damage_flat_umbra</Data></Cell>
-    <Cell ss:StyleID="s27"><Data ss:Type="String">%1-%2 Aether Damage on Attacks with this weapon</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">%1-%2 Ätherschaden auf Angriffe mit dieser Waffe</Data></Cell>
+    <Cell ss:StyleID="s27"><Data ss:Type="String">%1-%2 Aether Damage on Attacks and Spells with this weapon</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">%1-%2 Ätherschaden auf Angriffe und Zauber mit dieser Waffe</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -4827,8 +4854,8 @@
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s18"><Data ss:Type="String">ui_eim_local_damage_percent_elemental</Data></Cell>
-    <Cell ss:StyleID="s27"><Data ss:Type="String">%1 Elemental Damage on Attacks with this weapon</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">%1 Elementarschaden auf Angriffe mit dieser Waffe</Data></Cell>
+    <Cell ss:StyleID="s27"><Data ss:Type="String">%1 Elemental Damage on Attacks and Spells with this weapon</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">%1 Elementarschaden auf Angriffe und Zauber mit dieser Waffe</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -4836,8 +4863,8 @@
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s18"><Data ss:Type="String">ui_eim_local_damage_percent_material</Data></Cell>
-    <Cell ss:StyleID="s25"><Data ss:Type="String">%1 Material Damage on Attacks with this weapon</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">%1 Materialschaden auf Angriffe mit dieser Waffe</Data></Cell>
+    <Cell ss:StyleID="s25"><Data ss:Type="String">%1 Material Damage on Attacks and Spells with this weapon</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">%1 Materialschaden auf Angriffe und Zauber mit dieser Waffe</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -4845,8 +4872,8 @@
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s18"><Data ss:Type="String">ui_eim_local_damage_percent_primeval</Data></Cell>
-    <Cell ss:StyleID="s27"><Data ss:Type="String">%1 Occult Damage on Attacks with this weapon</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">%1 Okkultschaden auf Angriffe mit dieser Waffe</Data></Cell>
+    <Cell ss:StyleID="s27"><Data ss:Type="String">%1 Occult Damage on Attacks and Spells with this weapon</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">%1 Okkultschaden auf Angriffe und Zauber mit dieser Waffe</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -4854,8 +4881,8 @@
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s20"><Data ss:Type="String">ui_eim_local_damage_percent_all</Data></Cell>
-    <Cell ss:StyleID="s27"><Data ss:Type="String">%1 All Damage on Attacks with this weapon</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">%1 Schaden auf Angriffe mit dieser Waffe</Data></Cell>
+    <Cell ss:StyleID="s27"><Data ss:Type="String">%1 All Damage on Attacks and Spells with this weapon</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">%1 Schaden auf Angriffe und Zauber mit dieser Waffe</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -4918,7 +4945,7 @@
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s18"><Data ss:Type="String">ui_eim_block_efficiency_flat_dualwielding</Data></Cell>
     <Cell ss:StyleID="s27"><Data ss:Type="String">%1 Block Efficiency when Dual Wielding</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">%1 Block-Effizienz beim tragen von zwei Waffen</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">%1 Block-Effizienz beim Tragen von zwei Waffen</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -4927,7 +4954,7 @@
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s18"><Data ss:Type="String">ui_eim_crit_chance_score_percent_dualwielding</Data></Cell>
     <Cell ss:StyleID="s27"><Data ss:Type="String">%1 Critical Chance Score when Dual Wielding</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">%1 auf den Gesamtwert der kritischen Chance beim tragen von zwei Waffen</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">%1 auf den Gesamtwert der kritischen Chance beim Tragen von zwei Waffen</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -4936,7 +4963,7 @@
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s18"><Data ss:Type="String">ui_eim_crit_damage_percent_dualwielding</Data></Cell>
     <Cell ss:StyleID="s27"><Data ss:Type="String">%1 Critical Damage when Dual Wielding</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">%1 Kritischer Schaden beim tragen von zwei Waffen</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">%1 Kritischer Schaden beim Tragen von zwei Waffen</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -4945,7 +4972,7 @@
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s18"><Data ss:Type="String">ui_eim_ailment_chance_score_percent_dualwielding</Data></Cell>
     <Cell ss:StyleID="s27"><Data ss:Type="String">%1 Ailment Chance Score when Dual Wielding</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">%1 auf den Gesamtwert der Status Effekt Chance beim tragen von zwei Waffen</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">%1 auf den Gesamtwert der Statuseffekt-Chance beim Tragen von zwei Waffen</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -4954,7 +4981,7 @@
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s18"><Data ss:Type="String">ui_eim_ailment_damage_dualwielding</Data></Cell>
     <Cell ss:StyleID="s27"><Data ss:Type="String">%1 Ailment Damage when Dual Wielding</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">%1 Status Effektschaden beim Doppelschwingen beim beidhändigen tragen</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">%1 Statuseffektschaden beim Doppelschwingen beim beidhändigen tragen</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -5017,7 +5044,7 @@
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s21"><Data ss:Type="String">ui_eim_increased_rage_costs_double_skill_damage_on_high_rage</Data></Cell>
     <Cell ss:StyleID="s25"><Data ss:Type="String">Skills have %2 Rage Cost when Rage is over %1, but they deal double Damage</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">Fähigkeiten haben %2 Wutkosten, wenn Wut über %1 liegt. Der ausgeteilte Schaden wird Verdoppelt.</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">Fähigkeiten haben %2 Wutkosten, wenn Wut über %1 liegt. Der ausgeteilte Schaden wird verdoppelt.</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -5026,7 +5053,7 @@
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s21"><Data ss:Type="String">ui_eim_burn_stacks_consumption_chance_for_instant_damage</Data></Cell>
     <Cell ss:StyleID="s25"><Data ss:Type="String">If you applied %2 Burn Stacks on an Enemy, you have %1 chance to consume them on Hit, increasing the Damage of your Hit by %3 per consumed Stack</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">%1 Chance, die Verbrennungs-Stapel des Gegners beim Angriff zu verbrauchen, wenn die Stapel %2 überschreiten, wodurch der Schaden um %3 pro konsumierten Stapel erhöht wird</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">%1 Chance, die Verbrennungs-Stapel des Gegners beim Angriff zu verbrauchen, wenn die Stapel %2 überschreiten, wodurch der Schaden um %3 pro konsumierten Stapel erhöht wird.</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -5062,7 +5089,7 @@
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s21"><Data ss:Type="String">ui_eim_stack_anger_life_leech</Data></Cell>
     <Cell ss:StyleID="s25"><Data ss:Type="String">%1 Life Leech per &quot;Unleashed Fury&quot; point</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">%1 Lebensdiebstahl pro Raserei-Punkt</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">%1 Lebensdiebstahl pro Entfesseltem Raserei-Punkt</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -5079,7 +5106,7 @@
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s21"><Data ss:Type="String">ui_eim_can_change_stances_with_dodgeroll</Data></Cell>
-    <Cell ss:StyleID="s25"><Data ss:Type="String">Gain access to two Stances: &quot;Probing Weakness&quot; and &quot;Stalwart Resolve&quot;. You can change your Stance by using the Active Dodge</Data></Cell>
+    <Cell ss:StyleID="s25"><Data ss:Type="String">Gain access to two Stances: &quot;Probing Weakness&quot; and &quot;Stalwart Resolve.&quot; You can change your Stance by using the Active Dodge</Data></Cell>
     <Cell ss:StyleID="s18"><Data ss:Type="String">Erhalte Zugriff auf zwei Positionen: Sondierung der Schwäche und Stabile Entschlossenheit. Die Haltung wird geändert, wenn die Ausweichrolle verwendet wird.</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -5089,7 +5116,7 @@
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s21"><Data ss:Type="String">ui_eim_stance_offensive_stats</Data></Cell>
     <Cell ss:StyleID="s25"><Data ss:Type="String">The &quot;Probing Weakness&quot; Stance reduces your All Resistance Score by %2 but gives you a %1 Chance to double Basic Attack Damage</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">Die Sondierung der Schwäche reduziert den Gesamtwert aller Widerstände um %2 gewährt aber eine Chance von %1, den Schaden des Basisangriffs zu verdoppeln.</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">Die Sondierung der Schwäche reduziert den Gesamtwert aller Widerstände um %2, gewährt aber eine Chance von %1, den Schaden des Basisangriffs zu verdoppeln.</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -5097,8 +5124,8 @@
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s21"><Data ss:Type="String">ui_eim_stance_defensive_stats</Data></Cell>
-    <Cell ss:StyleID="s25"><Data ss:Type="String">The &quot;Stalwart Resolve&quot; Stance reduces your Attack and Spell Damage by %3 but gives you an additional %1 Block Chance and %2 Block Efficiency</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">Bei der stabilen Entschlossenheit erhältst du %1 Blockchance und %2 Block-Effizienz zu Lasten von %3 Angriffs- und Zaubergeschwindigkeit.</Data></Cell>
+    <Cell ss:StyleID="s25"><Data ss:Type="String">The &quot;Stalwart Resolve&quot; Stance reduces your Attack and Spell Casting Speed by %3 but gives you an additional %1 Block Chance and %2 Block Efficiency</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">Die Haltung &quot;Stabilen Entschlossenheit&quot; reduziert deine Angriffs- und Zauberwirkgeschwindigkeit um %3, verleiht dir aber zusätzlich eine Blockchance von %1 und eine Blockeffizienz von %2</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -5133,8 +5160,8 @@
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s21"><Data ss:Type="String">ui_eim_damage_on_block_rend</Data></Cell>
-    <Cell ss:StyleID="s25"><Data ss:Type="String">Proud Reprisal damage are converted into Rend Damage</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">Der Schaden von Stolzer Aufstand wird in Zerreißungsschaden konvertiert.</Data></Cell>
+    <Cell ss:StyleID="s25"><Data ss:Type="String">Proud Reprisal damage deals an additional %1 Weapon Damage and is converted into Rend Damage</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">Der Schaden von Stolzer Aufstand wird in Zerreißungsschaden konvertiert und teilt %1 zusätzlichen Waffenschaden aus</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -5197,7 +5224,7 @@
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s21"><Data ss:Type="String">ui_eim_uses_fortress_mechanic</Data></Cell>
     <Cell ss:StyleID="s25"><Data ss:Type="String">Staying stationary allows you to gain 1 &quot;Inexorable&quot; point every %1s. You can have up to %2 &quot;Inexorable&quot; points. Moving removes 1 point every %1s.</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">Während du feststehend bist, erhältst du 1 Unerbittlichkeit-Punkt alle %1s bis zu einem Maximum von %2. Alee %1s wird ein Punkt entfernt.</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">Während du feststehend bist, erhältst du 1 Unerbittlichkeit-Punkt alle %1s bis zu einem Maximum von %2. Alle %1s wird ein Punkt entfernt.</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -5250,7 +5277,7 @@
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s21"><Data ss:Type="String">ui_eim_stat_bonus_from_chest_armor</Data></Cell>
-    <Cell ss:StyleID="s25"><Data ss:Type="String">Allows you to receive a Bonus based on on the Chest-piece equipped</Data></Cell>
+    <Cell ss:StyleID="s25"><Data ss:Type="String">Allows you to receive a Bonus based on the Chest-piece equipped</Data></Cell>
     <Cell ss:StyleID="s18"><Data ss:Type="String">Ermöglicht die Erhaltung eines Buffs abhängig vom ausgerüsteten Brustschutz</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -5268,7 +5295,7 @@
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s21"><Data ss:Type="String">ui_eim_stat_bonus_from_chest_armor_tank</Data></Cell>
-    <Cell ss:StyleID="s25"><Data ss:Type="String">Heavy: Adds %1 of the armor piece All Resistance Score to your All Resistance Score</Data></Cell>
+    <Cell ss:StyleID="s25"><Data ss:Type="String">Heavy: Adds %1 of the armour piece All Resistance Score to your All Resistance Score</Data></Cell>
     <Cell ss:StyleID="s18"><Data ss:Type="String">Schwere: Fügt %1 des Gesamtwerts aller Widerstände des Rüstungsteils zu deinem Gesamtwert aller Widerstände hinzu</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -5313,7 +5340,7 @@
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s21"><Data ss:Type="String">ui_eim_stat_bonus_from_helmet_tank</Data></Cell>
-    <Cell ss:StyleID="s25"><Data ss:Type="String">Heavy: Adds %1 of the armor piece All Resistance Score to your All Resistance Score</Data></Cell>
+    <Cell ss:StyleID="s25"><Data ss:Type="String">Heavy: Adds %1 of the armour piece All Resistance Score to your All Resistance Score</Data></Cell>
     <Cell ss:StyleID="s18"><Data ss:Type="String">Schwer: Fügt %1 vom Gesamtwert aller Widerstände des Rüstungsteils dem Gesamtwert aller Widerstände hinzu.</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -5341,7 +5368,7 @@
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s18"><Data ss:Type="String">ui_eim_stack_block_uses_mechanic</Data></Cell>
     <Cell ss:StyleID="s25"><Data ss:Type="String">You gain %2 &quot;Fortress&quot; point(s) every %1s and you can have up to %3 &quot;Fortress&quot; points. All points are removed when you Block.</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">Erhalten alle %1s, %2 Festungs-Punkt(e) bis zu einem Maximum von %3. Beim blocken werden alle Punkte entfernt.</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">Erhalten alle %1s, %2 Festungs-Punkt(e) bis zu einem Maximum von %3. Beim Blocken werden alle Punkte entfernt.</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -5368,7 +5395,7 @@
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s21"><Data ss:Type="String">ui_eim_smite_wounded_on_sacred_damage</Data></Cell>
     <Cell ss:StyleID="s25"><Data ss:Type="String">Dealing Sacred Damage to Underlings and Specialists Enemies below %1 of their Max Health kills them instantly</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">Durch das Verursachen von Heilig Schaden werden Gegner unter %1 ihrer maximalen Gesundheit sofort getötet.</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">Durch das Verursachen von Heiligschaden werden Gegner unter %1 ihrer maximalen Gesundheit sofort getötet.</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -5394,8 +5421,8 @@
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s21"><Data ss:Type="String">ui_eim_pray_on_low_health_all_resistances</Data></Cell>
-    <Cell ss:StyleID="s25"><Data ss:Type="String">When your Health is below %2, all nearby Allies gain %1 additional All Resistances Score</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">Alle Verbündeten in der Nähe erhalten zusätzlich %1 auf den Gesamtwert aller Widerstände, sobald deine Gesundheit unter %2 liegt.</Data></Cell>
+    <Cell ss:StyleID="s25"><Data ss:Type="String">When your Health is below %2, all nearby Allies gain %1 additional All Resistances Score during %3s. %4s Cooldown</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">Alle Verbündeten in der Nähe erhalten zusätzlich %1 auf den Gesamtwert aller Widerstände für %3s, sobald deine Gesundheit unter %2 liegt. %4s Abklingzeit</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -5422,7 +5449,7 @@
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s18"><Data ss:Type="String">ui_eim_dawn_stat_bonus_from_force_shield_state_bonus</Data></Cell>
     <Cell ss:StyleID="s25"><Data ss:Type="String">The Sacred Damage Bonus provided by Beacon for the Lost is increased by %1</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">Der Heilig Schaden Bonus von Leuchtfeuer für die Verlorenen wird um %1 erhöht.</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">Der Heiligschaden Bonus von Leuchtfeuer für die Verlorenen wird um %1 erhöht.</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -5430,7 +5457,7 @@
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s21"><Data ss:Type="String">ui_eim_can_proc_attunements</Data></Cell>
-    <Cell ss:StyleID="s25"><Data ss:Type="String">Skills that inflict Fire, Frost, or Lightning Damage grant passive Bonuses called &quot;Accords&quot;. Up to %1 &quot;Accord(s)&quot; can be active simultaneously. Triggered &quot;Accords&quot; cannot be changed during %2s</Data></Cell>
+    <Cell ss:StyleID="s25"><Data ss:Type="String">Skills that inflict Fire, Frost, or Lightning Damage grant passive Bonuses called &quot;Accords.&quot; Up to %1 &quot;Accord(s)&quot; can be active simultaneously. Triggered &quot;Accords&quot; cannot be changed during %2s</Data></Cell>
     <Cell ss:StyleID="s18"><Data ss:Type="String">Zauber, die Feuer-, Frost- oder Blitzschaden verursachen, gewähren passive Boni, die als &quot;Abkommen&quot; bezeichnet werden. Bis zu %1 Abkommen können gleichzeitig aktiv sein. Ausgelöste Abkommen bleiben für %2s gesperrt.</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -5449,7 +5476,7 @@
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s21"><Data ss:Type="String">ui_eim_attunement_frost</Data></Cell>
     <Cell ss:StyleID="s25"><Data ss:Type="String">Frost triggers &quot;Etheliel's Accord&quot; for %3s unless it is triggered again. You have %1 Ailment Chance Score when &quot;Etheliel's Accord&quot; is active</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">Frost löst &quot;Etheliels Abkommen&quot; für %3s aus, sofern es nicht erneut ausgelöst wird. Du hast eine %1 Chance auf Status Effekte, wenn &quot;Etheliels Abkommen&quot; aktiv ist.</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">Frost löst &quot;Etheliels Abkommen&quot; für %3s aus, sofern es nicht erneut ausgelöst wird. Du hast eine %1 Chance auf Statuseffekte, wenn &quot;Etheliels Abkommen&quot; aktiv ist.</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -5475,8 +5502,8 @@
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s18"><Data ss:Type="String">ui_eim_meteor_on_casting_fire_skill</Data></Cell>
-    <Cell ss:StyleID="s25"><Data ss:Type="String">Launch a Meteor at the targeted location when a Fire Skill is used. The Meteor deals %1 Weapon Damage. %4s Cooldown</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">%1 Chance, einen Feuermeteor an der Zielposition zu wirken, wenn eine Feuerfähigkeit genutzt wurde. %4s Abklingzeit.</Data></Cell>
+    <Cell ss:StyleID="s25"><Data ss:Type="String">Launch a Meteor at the targeted location when a Fire Skill is used. The Meteor deals %3 Weapon Damage. %4s Cooldown</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">Wirkt an der Zielposition einen Meteor, wenn eine Feuer-Fähigkeit verwendet wird. Der Meteor verursacht %3 Waffenschaden. %4s Abklingzeit</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -5484,8 +5511,8 @@
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s21"><Data ss:Type="String">ui_eim_frost_lance_on_casting_frost_skill</Data></Cell>
-    <Cell ss:StyleID="s25"><Data ss:Type="String">Launch a Frost Lance at the targeted location when a Frost Skill is used. The Frost Lance deals %1 Weapon Damage. %4s Cooldown</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">%1 Chance, eine Frostlanze an der Zielposition zu wirken, wenn eine Frostfähigkeit gewirkt wurde. %4s Abklingzeit.</Data></Cell>
+    <Cell ss:StyleID="s25"><Data ss:Type="String">Launch a Frost Lance at the targeted location when a Frost Skill is used. The Frost Lance deals %3 Weapon Damage. %4s Cooldown</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">Wirkt an der Zielposition eime Frostlanze, wenn eine Frost-Fähigkeit verwendet wird. Die Frostlanze verursacht %3 Waffenschaden. %4s Abklingzeit</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -5493,8 +5520,35 @@
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s21"><Data ss:Type="String">ui_eim_thunderstrike_on_casting_lightning_skill</Data></Cell>
-    <Cell ss:StyleID="s25"><Data ss:Type="String">Launch a Chain Lightning at the targeted location when a Lightning Skill is used. The Chain Lightning deals %1 Weapon Damage. %4s Cooldown</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">%1 Chance, einen Kettenblitz an der Zielposition zu wirken, wenn eine Blitzfähigkeit gewirkt wurde. %4s Abklingzeit.</Data></Cell>
+    <Cell ss:StyleID="s25"><Data ss:Type="String">Launch a Chain Lightning at the targeted location when a Lightning Skill is used. The Chain Lightning deals %3 Weapon Damage. %4s Cooldown</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">Wirkt an der Zielposition einen Kettenblitz, wenn eine Blitz-Fähigkeit verwendet wird. Der Kettenblitz verursacht %3 Waffenschaden. %4s Abklingzeit</Data></Cell>
+    <Cell ss:StyleID="s18"/>
+    <Cell ss:StyleID="s18"/>
+    <Cell ss:StyleID="s18"/>
+    <Cell ss:StyleID="s18"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s21"><Data ss:Type="String">ui_eim_meteor_on_casting_fire_skill_moon</Data></Cell>
+    <Cell ss:StyleID="s25"><Data ss:Type="String">Omnitempest's Meteor now deals %3 Weapon Damage. %4s Cooldown</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">Omnitempest's Meteor verursacht jetzt %3 Waffenschaden. %4s Abklingzeit</Data></Cell>
+    <Cell ss:StyleID="s18"/>
+    <Cell ss:StyleID="s18"/>
+    <Cell ss:StyleID="s18"/>
+    <Cell ss:StyleID="s18"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s21"><Data ss:Type="String">ui_eim_frost_lance_on_casting_frost_skill_moon</Data></Cell>
+    <Cell ss:StyleID="s25"><Data ss:Type="String">Omnitempest's Frost Lance now deals %3 Weapon Damage. %4s Cooldown</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">Omnitempest's Frostlanze verursacht jetzt %3 Waffenschaden. %4s Abklingzeit</Data></Cell>
+    <Cell ss:StyleID="s18"/>
+    <Cell ss:StyleID="s18"/>
+    <Cell ss:StyleID="s18"/>
+    <Cell ss:StyleID="s18"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s21"><Data ss:Type="String">ui_eim_thunderstrike_on_casting_lightning_skill_moon</Data></Cell>
+    <Cell ss:StyleID="s25"><Data ss:Type="String">Omnitempest's Chain Lightning now deals %3 Weapon Damage. %4s Cooldown</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">Omnitempest's Kettenblitz verursacht jetzt %3 Waffenschaden. %4s Abklingzeit</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -5511,8 +5565,8 @@
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s18"><Data ss:Type="String">ui_eim_explosion_on_low_willpower_damage</Data></Cell>
-    <Cell ss:StyleID="s25"><Data ss:Type="String">Damage from the Elementary Destabilization explosion is now based on 30% of your maximum Health or Force Shield (whichever the highest)</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">Die durch Elementare Destabilisierung verursachte Explosion basierend auf 30% deines maximalen Kraftschilds oder deiner maximalen Gesundheit.</Data></Cell>
+    <Cell ss:StyleID="s25"><Data ss:Type="String">Damage from the Elementary Destabilization explosion is now based on %1 of your maximum Health or Force Shield (whichever the highest)</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">Die durch Elementare Destabilisierung verursachte Explosion basiert nun auf %1 deines maximalen Kraftschilds oder Gesundheit (je nachdem, welcher Wert höher ist).</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -5592,7 +5646,7 @@
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s21"><Data ss:Type="String">ui_eim_dead_enemies_may_spawn_green_globes</Data></Cell>
-    <Cell ss:StyleID="s25"><Data ss:Type="String">Enemies that die in %1m radius around you have %2 chance to drop green globes. Picking up green globes gives you an additional %3 Damage as Poison Damage per green globe during %4s</Data></Cell>
+    <Cell ss:StyleID="s25"><Data ss:Type="String">Enemies that die in %1m radius around you have %2 chance to drop green globes. Picking up green globes gives you an additional %3 Damage as Toxic Damage per green globe during %4s</Data></Cell>
     <Cell ss:StyleID="s18"><Data ss:Type="String">Gegner, die in einem Radius von %1m sterben, haben eine Chance von %2, eine grüne Kugel fallen zu lassen. Das aufsammeln der Kugel gewährt %3 Schadensbonus als Giftschaden für %4s.</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -5601,7 +5655,7 @@
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s21"><Data ss:Type="String">ui_eim_dead_summons_may_spawn_green_globes</Data></Cell>
-    <Cell ss:StyleID="s25"><Data ss:Type="String">Summons that die in a %1m radius also have %2 chance to drop green globes. Picking up green globes gives you an additional %3 Damage as Poison Damage per green globe during %4s</Data></Cell>
+    <Cell ss:StyleID="s25"><Data ss:Type="String">Summons that die in a %1m radius also have %2 chance to drop green globes. Picking up green globes gives you an additional %3 Damage as Toxic Damage per green globe during %4s</Data></Cell>
     <Cell ss:StyleID="s18"><Data ss:Type="String">Beschwörungen, die in einem Radius von %1m sterben, haben eine Chance von %2, eine grüne Kugel fallen zu lassen. Das aufsammeln einer grünen Kugel gewährt %3 Schadensbonus als Giftschaden für %4s.</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -5672,6 +5726,15 @@
     <Cell ss:StyleID="s18"/>
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s21"><Data ss:Type="String">ui_eim_life_ceil_from_force_shield_moon</Data></Cell>
+    <Cell ss:StyleID="s25"><Data ss:Type="String">Adds %1 to the maximum Health allowed by Masochistic Effigy</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">Fügt %1 zur maximalen Gesundheit hinzu, die durch Masochistisches Bildnis erlaubt werden</Data></Cell>
+    <Cell ss:StyleID="s18"/>
+    <Cell ss:StyleID="s18"/>
+    <Cell ss:StyleID="s18"/>
+    <Cell ss:StyleID="s18"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s21"><Data ss:Type="String">ui_eim_purge_ailment_stacks</Data></Cell>
     <Cell ss:StyleID="s25"><Data ss:Type="String">When you are affected by %1 Stacks of the same Ailment, they are removed and give a Buff:</Data></Cell>
     <Cell ss:StyleID="s18"><Data ss:Type="String">Wenn du mehr als %1 der gleichen Status Effekt hast, werden diese entfernt. Dir und deinen Verbündeten in der Nähe wird ein Buff gewährt.</Data></Cell>
@@ -5683,7 +5746,7 @@
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s21"><Data ss:Type="String">ui_eim_suffers_inflicted_ailment_stacks</Data></Cell>
     <Cell ss:StyleID="s25"><Data ss:Type="String">Ailment Stacks applied to Enemies are also applied to you. When you are affected by %1 Stacks of the same Ailment, they are removed and you and your nearby Allies gain the associated Buff</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">Status Effekte denen du Gegnern zufügst, werden auch dir zugefügt. Wenn du %1 desselben Status Effektes hast, werden diese entfernt und dir als auch deinen Verbündeten in der Nähe wird ein Buff gewährt.</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">Statuseffekte denen du Gegnern zufügst, werden auch dir zugefügt. Wenn du %1 desselben Statuseffektes hast, werden diese entfernt und dir als auch deinen Verbündeten in der Nähe wird ein Buff gewährt.</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -5719,7 +5782,7 @@
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s21"><Data ss:Type="String">ui_eim_heal_on_purged_dot_stacks</Data></Cell>
     <Cell ss:StyleID="s25"><Data ss:Type="String">Damage over Time Stacks removed restore %1% of your maximum Health and Force Shield</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">Das entfernen von Schaden über Zeit Stapel stellt %1% deiner maximalen Gesundheit und Kraftschildes wieder her.</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">Das Entfernen von Schaden über Zeit Stapel stellt %1% deiner maximalen Gesundheit und Kraftschildes wieder her.</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -5772,8 +5835,8 @@
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s21"><Data ss:Type="String">ui_eim_stack_bullet_uses_mechanic</Data></Cell>
-    <Cell ss:StyleID="s25"><Data ss:Type="String">You gain 1 point of &quot;Annointed Ammunition&quot; every %1s. When you use a Projectile Skill, %2 &quot;Annointed Ammunition&quot; point(s) are consumed</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">Du erhältst alle %1s einen gesalbten Munitions-Punkt. Sobald du eine Geschossffähigkeit nutzt, werden %2 gesalbte Munitions-Punkte verbraucht.</Data></Cell>
+    <Cell ss:StyleID="s25"><Data ss:Type="String">You gain 1 point of &quot;Anointed Ammunition&quot; every %1s. When you use a Projectile Skill, 1 &quot;Anointed Ammunition&quot; point is consumed</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">Du erhältst alle %1s einen gesalbten Munitions-Punkt. Sobald du eine Geschossfähigkeit nutzt, wird 1 gesalbte Munitions-Punkt verbraucht</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -5781,7 +5844,7 @@
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s21"><Data ss:Type="String">ui_eim_stack_bullet_charges_on_dodge_roll</Data></Cell>
-    <Cell ss:StyleID="s25"><Data ss:Type="String">When you complete an Active Dodge, %1 &quot;Annointed Ammunition&quot; point(s) is refilled</Data></Cell>
+    <Cell ss:StyleID="s25"><Data ss:Type="String">When you complete an Active Dodge, %1 &quot;Anointed Ammunition&quot; point(s) is refilled</Data></Cell>
     <Cell ss:StyleID="s18"><Data ss:Type="String">%1 Gesalbte Munitions Punkte werden nachgefüllt, wenn du eine Ausweichrolle durchgeführt hast.</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -5790,7 +5853,7 @@
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s21"><Data ss:Type="String">ui_eim_stack_bullet_charges_on_critical</Data></Cell>
-    <Cell ss:StyleID="s25"><Data ss:Type="String">When you deal a Critical Hit, %1 &quot;Annointed Ammunition&quot; point(s) is refilled</Data></Cell>
+    <Cell ss:StyleID="s25"><Data ss:Type="String">When you deal a Critical Hit, %1 &quot;Anointed Ammunition&quot; point(s) is refilled</Data></Cell>
     <Cell ss:StyleID="s18"><Data ss:Type="String">Wenn du einen Kritischen Treffer landest, werden %1 Punkt(e) &quot;Gesalbte Munition&quot; nachgefüllt.</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -5799,7 +5862,7 @@
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s21"><Data ss:Type="String">ui_eim_stack_bullet_proj_damage</Data></Cell>
-    <Cell ss:StyleID="s25"><Data ss:Type="String">Each point of &quot;Annointed Ammunition&quot; gives you %1 Projectile Damage</Data></Cell>
+    <Cell ss:StyleID="s25"><Data ss:Type="String">Each point of &quot;Anointed Ammunition&quot; gives you %1 Projectile Damage</Data></Cell>
     <Cell ss:StyleID="s18"><Data ss:Type="String">%1 Geschossschaden für jeden gesalbten Munitions Punkt.</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -5808,7 +5871,7 @@
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s21"><Data ss:Type="String">ui_eim_stack_bullet_melee_damage</Data></Cell>
-    <Cell ss:StyleID="s25"><Data ss:Type="String">Each empty &quot;Annointed Ammunition&quot; point gives you %1 Melee Damage</Data></Cell>
+    <Cell ss:StyleID="s25"><Data ss:Type="String">Each empty &quot;Anointed Ammunition&quot; point gives you %1 Melee Damage</Data></Cell>
     <Cell ss:StyleID="s18"><Data ss:Type="String">%1 Nahkampfschaden für jeden leeren gesalbten Munitions Punkt</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -5889,7 +5952,7 @@
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s21"><Data ss:Type="String">ui_eim_stack_gadget_uses_mechanic</Data></Cell>
-    <Cell ss:StyleID="s25"><Data ss:Type="String">You generate %2 &quot;Power Charge&quot; per second and Basic Attacks refill %1 &quot;Power Charge&quot;. Device and Lightning Skills consume %4 &quot;Power Charge&quot; points. Capped between -%3 and %3 points</Data></Cell>
+    <Cell ss:StyleID="s25"><Data ss:Type="String">You generate %2 &quot;Power Charge&quot; per second and Basic Attacks refill %1 &quot;Power Charge.&quot; Device and Lightning Skills consume %4 &quot;Power Charge&quot; points. Capped between -%3 and %3 points</Data></Cell>
     <Cell ss:StyleID="s18"><Data ss:Type="String">Du generierst %2 &quot;Energieladungs&quot;-Punkte&quot; pro Sekunde und Basisangriffe füllen %1 &quot;Energieladungs&quot;-Punkte&quot; auf. Gegenstands- und Blitzfähigkeiten verbrauchen %4 &quot;Energieladungs&quot;-Punkte&quot;. Begrenzt zwischen -%3 und %3 Punkte.</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -5934,7 +5997,7 @@
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s21"><Data ss:Type="String">ui_eim_stack_balance_uses_mechanic</Data></Cell>
-    <Cell ss:StyleID="s25"><Data ss:Type="String">You have %1 points shared between &quot;Lure of Light&quot; and &quot;Lure of Darkness&quot;. Spells convert a &quot;Lure of Light&quot; point into &quot;Lure of Darkness&quot;. Attack Skills convert a &quot;Lure of Darkness&quot; point into &quot;Lure of Light&quot;</Data></Cell>
+    <Cell ss:StyleID="s25"><Data ss:Type="String">You have %1 points shared between &quot;Lure of Light&quot; and &quot;Lure of Darkness.&quot; Spells convert a &quot;Lure of Light&quot; point into &quot;Lure of Darkness.&quot; Attack Skills convert a &quot;Lure of Darkness&quot; point into &quot;Lure of Light&quot;</Data></Cell>
     <Cell ss:StyleID="s18"><Data ss:Type="String">%1 Punkte zwischen Köder des Lichtes und Köder der Dunkelheit geteilt. Das Wirken eines Zaubers wandelt Köder des Lichtes in Köder der Dunkelheit um, und das Angreifen wandelt Köder der Dunkelheit in Köder des Lichtes um.</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -5979,8 +6042,8 @@
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s18"><Data ss:Type="String">ui_eim_leave_decoy_on_dodgeroll_explosion</Data></Cell>
-    <Cell ss:StyleID="s25"><Data ss:Type="String">The Decoy left by an Active Dodge explodes when it is destroyed, dealing Damage in a %2m radius</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">Der Köder, der durch die Ausweichrolle hinterlassen wird, explodiert sobald er zerstört wird und verursacht Schaden in einem Radius von %2m.</Data></Cell>
+    <Cell ss:StyleID="s25"><Data ss:Type="String">The Decoy left by an Active Dodge explodes when it expires, dealing Damage in a %2m radius</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">Der Köder, der durch die Ausweichrolle hinterlassen wird, explodiert sobald dieser ausläuft und verursacht dabei Schaden in einem Radius von %2m</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -6040,6 +6103,33 @@
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
    </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s21"><Data ss:Type="String">ui_eim_speed_boost_on_active_dodge</Data></Cell>
+    <Cell ss:StyleID="s25"><Data ss:Type="String">After using the Active Dodge, receive a %1 Movement Speed bonus for %3s</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">Nach Verwendung der Ausweichrolle erhältst du für %3s einen Bonus von %1 auf die Bewegungsgeschwindigkeit</Data></Cell>
+    <Cell ss:StyleID="s18"/>
+    <Cell ss:StyleID="s18"/>
+    <Cell ss:StyleID="s18"/>
+    <Cell ss:StyleID="s18"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s21"><Data ss:Type="String">ui_SpeedOnActiveDodge_Title</Data></Cell>
+    <Cell ss:StyleID="s25"><Data ss:Type="String">Evasion Velocity</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">Ausweichgeschwindigkeit</Data></Cell>
+    <Cell ss:StyleID="s18"/>
+    <Cell ss:StyleID="s18"/>
+    <Cell ss:StyleID="s18"/>
+    <Cell ss:StyleID="s18"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s21"><Data ss:Type="String">ui_SpeedOnActiveDodge_Desc</Data></Cell>
+    <Cell ss:StyleID="s25"><Data ss:Type="String">Movement Speed bonus</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">Bonus Bewegungsgeschwindigkeit</Data></Cell>
+    <Cell ss:StyleID="s18"/>
+    <Cell ss:StyleID="s18"/>
+    <Cell ss:StyleID="s18"/>
+    <Cell ss:StyleID="s18"/>
+   </Row>
    <Row ss:AutoFitHeight="0" ss:Height="14.25">
     <Cell ss:StyleID="s17"><Data ss:Type="String">Uniques</Data></Cell>
     <Cell ss:StyleID="s17"/>
@@ -6051,8 +6141,8 @@
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s22"><Data ss:Type="String">ui_eim_freeze_chance_to_crit</Data></Cell>
-    <Cell ss:StyleID="s25"><Data ss:Type="String">If your Hit has Freeze Chance, %1 of its Freeze Chance become Critical Chance. You can't Freeze Enemies anymore</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">Wenn deine Treffer eine Einfrierungschance haben, wird %1 der Einfrierungschance zu deiner kritischen Chance hinzugefügt. Du kannst Gegner nicht mehr einfrieren.</Data></Cell>
+    <Cell ss:StyleID="s25"><Data ss:Type="String">If your Hit has Freeze Chance, %1 of its Freeze Chance becomes Critical Chance. You can't Freeze Enemies anymore</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">Wenn deine Treffer eine Einfrierchance haben, wird %1 der Einfrierchance zu deiner kritischen Chance hinzugefügt. Du kannst Gegner nicht mehr einfrieren.</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -6177,8 +6267,8 @@
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s21"><Data ss:Type="String">ui_eim_explosion_on_target_kill</Data></Cell>
-    <Cell ss:StyleID="s25"><Data ss:Type="String">Enemies explode in an Area of Effect when they are killed and deal %1 Weapon Damage</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">Markierte Gegner explodieren in einem Effektbereich, sobald sie getötet werden und verursachen dabei %1 Waffenschaden</Data></Cell>
+    <Cell ss:StyleID="s25"><Data ss:Type="String">Enemies explode in an Area of Effect when they are killed and deal %3 Weapon Damage</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">Gegner explodieren in einem Effektbereich, sobald sie getötet werden und verursachen dabei %3 Waffenschaden</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -6186,8 +6276,8 @@
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s21"><Data ss:Type="String">ui_eim_explosion_on_globe_pickup</Data></Cell>
-    <Cell ss:StyleID="s25"><Data ss:Type="String">Globes explode in an Area of Effect when they are picked up and deal %1 Weapon Damage</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">Kugel explodieren beim aufsammeln in einem Effektbereich und verursachen dabei %1 Waffenschaden</Data></Cell>
+    <Cell ss:StyleID="s25"><Data ss:Type="String">Globes explode in an Area of Effect when they are picked up and deal %3 Weapon Damage</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">Kugel explodieren beim aufsammeln in einem Effektbereich und verursachen dabei %3 Waffenschaden</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -6214,7 +6304,7 @@
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s18"><Data ss:Type="String">ui_eim_ailment_spread</Data></Cell>
     <Cell ss:StyleID="s25"><Data ss:Type="String">%1 Chance to spread Ailments to Enemies surrounding the target</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">%1 Chance, Status Effekte um das Ziel herum auf Gegner zu verbreiten.</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">%1 Chance, Statuseffekte um das Ziel herum auf Gegner zu verbreiten.</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -6375,7 +6465,7 @@
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s18"><Data ss:Type="String">ui_HuntReward_LC_Armor_Legendary</Data></Cell>
-    <Cell ss:StyleID="s27"><Data ss:Type="String">Your Prey will drop a Legendary Armor with a Tributary Affix</Data></Cell>
+    <Cell ss:StyleID="s27"><Data ss:Type="String">Your Prey will drop a Legendary Armour with a Tributary Affix</Data></Cell>
     <Cell ss:StyleID="s18"><Data ss:Type="String">Deine Beute wird eine legendäre Rüstung mit einem tributpflichtigen Affix fallen lassen.</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -6438,7 +6528,7 @@
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s18"><Data ss:Type="String">ui_HuntReward_LC_Armor_Rare_1</Data></Cell>
-    <Cell ss:StyleID="s27"><Data ss:Type="String">Your Prey will drop a Rare Armor with a Tributary Affix</Data></Cell>
+    <Cell ss:StyleID="s27"><Data ss:Type="String">Your Prey will drop a Rare Armour with a Tributary Affix</Data></Cell>
     <Cell ss:StyleID="s18"><Data ss:Type="String">Deine Beute wird eine Seltene Rüstung mit einem tributpflichtigen Affix fallen lassen</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -6447,7 +6537,7 @@
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s18"><Data ss:Type="String">ui_HuntReward_LC_Armor_Rare_2</Data></Cell>
-    <Cell ss:StyleID="s27"><Data ss:Type="String">Your Prey will drop 2 Rare Armors with a Tributary Affix</Data></Cell>
+    <Cell ss:StyleID="s27"><Data ss:Type="String">Your Prey will drop 2 Rare Armours with a Tributary Affix</Data></Cell>
     <Cell ss:StyleID="s18"><Data ss:Type="String">Deine Beute wird 2 Seltene Rüstungen mit einem tributpflichtigen Affix fallen lassen</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -6456,7 +6546,7 @@
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s18"><Data ss:Type="String">ui_HuntReward_LC_Armor_Rare_3</Data></Cell>
-    <Cell ss:StyleID="s27"><Data ss:Type="String">Your Prey will drop 3 Rare Armors with a Tributary Affix</Data></Cell>
+    <Cell ss:StyleID="s27"><Data ss:Type="String">Your Prey will drop 3 Rare Armours with a Tributary Affix</Data></Cell>
     <Cell ss:StyleID="s18"><Data ss:Type="String">Deine Beute wird 3 Seltene Rüstungen mit einem tributpflichtigen Affix fallen lassen</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -6465,7 +6555,7 @@
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s18"><Data ss:Type="String">ui_HuntReward_LC_Armor_Rare_4</Data></Cell>
-    <Cell ss:StyleID="s27"><Data ss:Type="String">Your Prey will drop 4 Rare Armors with a Tributary Affix</Data></Cell>
+    <Cell ss:StyleID="s27"><Data ss:Type="String">Your Prey will drop 4 Rare Armours with a Tributary Affix</Data></Cell>
     <Cell ss:StyleID="s18"><Data ss:Type="String">Deine Beute wird 4 Seltene Rüstungen mit einem tributpflichtigen Affix fallen lassen</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -6582,7 +6672,7 @@
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s23"><Data ss:Type="String">ui_OsharaBuff_Title</Data></Cell>
-    <Cell ss:StyleID="s27"><Data ss:Type="String">Oshara's Vigor</Data></Cell>
+    <Cell ss:StyleID="s27"><Data ss:Type="String">Oshara's Vigour</Data></Cell>
     <Cell ss:StyleID="s18"><Data ss:Type="String">Osharas Kraft</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -6615,7 +6705,7 @@
    <Panes>
     <Pane>
      <Number>3</Number>
-     <ActiveRow>718</ActiveRow>
+     <ActiveRow>728</ActiveRow>
      <ActiveCol>6</ActiveCol>
     </Pane>
    </Panes>

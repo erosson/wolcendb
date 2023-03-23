@@ -1,7 +1,7 @@
 <MetaData>
-  <Project Name="hunt_narrative1" CategoryName="hunt_narrative" Repeatable="0" ConstructedBuilding="building_hunt">
-    <UIParams UIName="@ui_hunt_narrative1" UILore="@ui_hunt_narrative1_lore" IconType="exploration" HideIfRequirementsAreNotMet="0" />
-    <Requirements PlayerLevel="0" Projects="" Quest="C1_EG_SF_Q1">
+  <Project Name="hunt_narrative1" CategoryName="hunt_narrative" Repeatable="0" ConstructedBuilding="building_hunt" CharacterBound="1">
+    <UIParams UIName="@ui_hunt_narrative1" UILore="@ui_hunt_narrative1_lore" IconType="exploration" HideIfRequirementsAreNotMet="0" QuestMarker="1" />
+    <Requirements PlayerLevel="0" Projects="" Quest="ACT4_Intro">
       <ResourceCost ComputationMethod="Static" Gold="25000" PA="0" HuntCurrency="0" ProductionToComplete="50" />
     </Requirements>
     <RewardList>
@@ -10,10 +10,10 @@
     <ContextualSoundTrigger ToPlay="Endgame_Hunt_StartProject_Mission1" ToResume="Endgame_Hunt_Idle" ToPlayWhenSelected="Endgame_Hunt_SelectProject_Mission1_NotReady" ToPlayWhenSelectedWithExpeditionReady="Endgame_Hunt_SelectProject_Mission1_Ready" />
     <ExpeditionUnlock Quest="HL_M1" Step="1" LimitedByProgression="1" UIName="@ui_hunt_narrative1_expedition_name" UIDesc="@ui_hunt_narrative1_expedition_desc" GatedByVote="VotePreset_EndGame_HL_M1" />
   </Project>
-  <Project Name="hunt_narrative2" CategoryName="hunt_narrative" Repeatable="0">
-    <UIParams UIName="@ui_hunt_narrative2" UILore="@ui_hunt_narrative2_lore" IconType="exploration" HideIfRequirementsAreNotMet="1" />
+  <Project Name="hunt_narrative2" CategoryName="hunt_narrative" Repeatable="0" CharacterBound="1">
+    <UIParams UIName="@ui_hunt_narrative2" UILore="@ui_hunt_narrative2_lore" IconType="exploration" HideIfRequirementsAreNotMet="1" QuestMarker="1" />
     <Requirements PlayerLevel="0" Projects="" Quest="C1_EG_SF_Q2">
-      <ResourceCost ComputationMethod="Static" Gold="25000" PA="0" HuntCurrency="15" ProductionToComplete="50" />
+      <ResourceCost ComputationMethod="Static" Gold="25000" PA="0" HuntCurrency="0" ProductionToComplete="50" />
     </Requirements>
     <RewardList>
       <Reward RewardName="city_hunt_narrative2_reward" Weight="1" />
@@ -21,10 +21,10 @@
     <ContextualSoundTrigger ToPlay="Endgame_Hunt_StartProject_Mission2" ToResume="Endgame_Hunt_Idle" ToPlayWhenSelected="Endgame_Hunt_SelectProject_Mission2_NotReady" ToPlayWhenSelectedWithExpeditionReady="Endgame_Hunt_SelectProject_Mission2_Ready" />
     <ExpeditionUnlock Quest="HL_M2" Step="1" LimitedByProgression="1" UIName="@ui_hunt_narrative2_expedition_name" UIDesc="@ui_hunt_narrative2_expedition_desc" GatedByVote="VotePreset_EndGame_HL_M2" />
   </Project>
-  <Project Name="hunt_narrative3" CategoryName="hunt_narrative" Repeatable="0">
-    <UIParams UIName="@ui_hunt_narrative3" UILore="@ui_hunt_narrative3_lore" IconType="exploration" HideIfRequirementsAreNotMet="1" />
+  <Project Name="hunt_narrative3" CategoryName="hunt_narrative" Repeatable="0" CharacterBound="1">
+    <UIParams UIName="@ui_hunt_narrative3" UILore="@ui_hunt_narrative3_lore" IconType="exploration" HideIfRequirementsAreNotMet="1" QuestMarker="1" />
     <Requirements PlayerLevel="0" Projects="" Quest="C1_EG_SF_Q3">
-      <ResourceCost ComputationMethod="Static" Gold="25000" PA="0" HuntCurrency="25" ProductionToComplete="50" />
+      <ResourceCost ComputationMethod="Static" Gold="25000" PA="0" HuntCurrency="0" ProductionToComplete="50" />
     </Requirements>
     <RewardList>
       <Reward RewardName="city_hunt_narrative3_reward" Weight="1" />
@@ -34,50 +34,46 @@
   </Project>
   <Project Name="hunt_consumable1" CategoryName="hunt_consumable" Repeatable="1">
     <UIParams UIName="@ui_hunt_consumable1" UILore="@ui_hunt_consumable1_lore" IconType="exploration" HideIfRequirementsAreNotMet="1" />
-    <Requirements PlayerLevel="0" Projects="" Quest="HL_M1">
+    <Requirements PlayerLevel="0" Projects="" Quest="ACT4_Epilogue">
       <ResourceCost ComputationMethod="Static" Gold="15000" PA="0" HuntCurrency="100" ProductionToComplete="1000" />
     </Requirements>
     <RewardList>
       <Reward RewardName="city_hunt_consumable1_reward" Weight="1" />
     </RewardList>
     <ContextualSoundTrigger ToResume="Endgame_Hunt_Idle" ToPlayWhenSelected="Endgame_Hunt_SelectProject_Consumable1" />
-    <ExpeditionUnlock Quest="HL_M3" Step="0" LimitedByProgression="1" UIName="@ui_hunt_narrative3_expedition_name" UIDesc="@ui_hunt_narrative3_expedition_desc" GatedByVote="VotePreset_EndGame_HL_M3" />
   </Project>
   <Project Name="hunt_consumable2" CategoryName="hunt_consumable" Repeatable="1">
     <UIParams UIName="@ui_hunt_consumable2" UILore="@ui_hunt_consumable2_lore" IconType="exploration" HideIfRequirementsAreNotMet="1" />
-    <Requirements PlayerLevel="0" Projects="" Quest="HL_M2">
+    <Requirements PlayerLevel="0" Projects="" Quest="ACT4_Epilogue">
       <ResourceCost ComputationMethod="Static" Gold="15000" PA="0" HuntCurrency="100" ProductionToComplete="1000" />
     </Requirements>
     <RewardList>
       <Reward RewardName="city_hunt_consumable2_reward" Weight="1" />
     </RewardList>
     <ContextualSoundTrigger ToResume="Endgame_Hunt_Idle" ToPlayWhenSelected="Endgame_Hunt_SelectProject_Consumable2" />
-    <ExpeditionUnlock Quest="HL_M3" Step="0" LimitedByProgression="1" UIName="@ui_hunt_narrative3_expedition_name" UIDesc="@ui_hunt_narrative3_expedition_desc" GatedByVote="VotePreset_EndGame_HL_M3" />
   </Project>
   <Project Name="hunt_consumable3" CategoryName="hunt_consumable" Repeatable="1">
     <UIParams UIName="@ui_hunt_consumable3" UILore="@ui_hunt_consumable3_lore" IconType="exploration" HideIfRequirementsAreNotMet="1" />
-    <Requirements PlayerLevel="0" Projects="" Quest="HL_M3">
+    <Requirements PlayerLevel="0" Projects="" Quest="ACT4_Epilogue">
       <ResourceCost ComputationMethod="Static" Gold="15000" PA="0" HuntCurrency="100" ProductionToComplete="1000" />
     </Requirements>
     <RewardList>
       <Reward RewardName="city_hunt_consumable3_reward" Weight="1" />
     </RewardList>
     <ContextualSoundTrigger ToResume="Endgame_Hunt_Idle" ToPlayWhenSelected="Endgame_Hunt_SelectProject_Consumable3" />
-    <ExpeditionUnlock Quest="HL_M3" Step="0" LimitedByProgression="1" UIName="@ui_hunt_narrative3_expedition_name" UIDesc="@ui_hunt_narrative3_expedition_desc" GatedByVote="VotePreset_EndGame_HL_M3" />
   </Project>
   <Project Name="hunt_consumable_uber_oshara" CategoryName="hunt_consumable" Repeatable="1">
     <UIParams UIName="@ui_hunt_consumable_uber_oshara" UILore="@ui_hunt_consumable_uber_oshara_lore" IconType="exploration" HideIfRequirementsAreNotMet="1" />
-    <Requirements PlayerLevel="0" Projects="" Quest="C1_EG_SF_Q4">
+    <Requirements PlayerLevel="0" Projects="" Quest="ACT4_Epilogue">
       <ResourceCost ComputationMethod="Static" Gold="500000" PA="0" HuntCurrency="5000" ProductionToComplete="50000" />
     </Requirements>
     <RewardList>
       <Reward RewardName="city_hunt_consumable_uber_oshara_reward" Weight="1" />
     </RewardList>
-    <ExpeditionUnlock Quest="HL_M3" Step="0" LimitedByProgression="1" UIName="@ui_hunt_narrative3_expedition_name" UIDesc="@ui_hunt_narrative3_expedition_desc" GatedByVote="VotePreset_EndGame_HL_M3" />
   </Project>
   <Project Name="hunt_merchant_upgarde1" CategoryName="hunt_upgrade" Repeatable="0">
-    <UIParams UIName="@ui_hunt_merchant_upgrade2" UILore="@ui_hunt_merchant_upgrade2_lore" IconType="stash" HideIfRequirementsAreNotMet="0" />
-    <Requirements PlayerLevel="0" Projects="" Quest="HL_M1">
+    <UIParams UIName="@ui_hunt_merchant_upgrade2" UILore="@ui_hunt_merchant_upgrade2_lore" IconType="stash" HideIfRequirementsAreNotMet="1" />
+    <Requirements PlayerLevel="0" Projects="" Quest="ACT4_Epilogue">
       <ResourceCost ComputationMethod="Static" Gold="50000" PA="0" HuntCurrency="500" ProductionToComplete="5000" />
     </Requirements>
     <RewardList>
@@ -87,8 +83,8 @@
     <PermanentRewards MerchantPanel="Hunt_Merchant_armor" />
   </Project>
   <Project Name="hunt_merchant_upgarde2" CategoryName="hunt_upgrade" Repeatable="0">
-    <UIParams UIName="@ui_hunt_merchant_upgrade3" UILore="@ui_hunt_merchant_upgrade3_lore" IconType="stash" HideIfRequirementsAreNotMet="0" />
-    <Requirements PlayerLevel="0" Projects="" Quest="HL_M1">
+    <UIParams UIName="@ui_hunt_merchant_upgrade3" UILore="@ui_hunt_merchant_upgrade3_lore" IconType="stash" HideIfRequirementsAreNotMet="1" />
+    <Requirements PlayerLevel="0" Projects="" Quest="ACT4_Epilogue">
       <ResourceCost ComputationMethod="Static" Gold="50000" PA="0" HuntCurrency="500" ProductionToComplete="5000" />
     </Requirements>
     <RewardList>
@@ -98,8 +94,8 @@
     <PermanentRewards MerchantPanel="Hunt_Merchant_accessories" />
   </Project>
   <Project Name="hunt_merchant_restock1" CategoryName="hunt_restock" Repeatable="1">
-    <UIParams UIName="@ui_hunt_merchant_restock1" UILore="@ui_hunt_merchant_restock1_lore" IconType="stash" HideIfRequirementsAreNotMet="0" />
-    <Requirements PlayerLevel="0" Projects="" Quest="HL_M1">
+    <UIParams UIName="@ui_hunt_merchant_restock1" UILore="@ui_hunt_merchant_restock1_lore" IconType="stash" HideIfRequirementsAreNotMet="1" />
+    <Requirements PlayerLevel="0" Projects="" Quest="ACT4_Epilogue">
       <ResourceCost ComputationMethod="Static" Gold="100000" PA="0" HuntCurrency="1000" ProductionToComplete="10000" />
     </Requirements>
     <RewardList>
@@ -108,8 +104,8 @@
     <ContextualSoundTrigger ToPlay="Endgame_Hunt_StartProject_Restock1" ToResume="Endgame_Hunt_Idle" />
   </Project>
   <Project Name="hunt_merchant_restock2" CategoryName="hunt_restock" Repeatable="1">
-    <UIParams UIName="@ui_hunt_merchant_restock2" UILore="@ui_hunt_merchant_restock2_lore" IconType="stash" HideIfRequirementsAreNotMet="0" />
-    <Requirements PlayerLevel="0" Projects="hunt_merchant_upgarde1">
+    <UIParams UIName="@ui_hunt_merchant_restock2" UILore="@ui_hunt_merchant_restock2_lore" IconType="stash" HideIfRequirementsAreNotMet="1" />
+    <Requirements PlayerLevel="0" Projects="hunt_merchant_upgarde1" Quest="ACT4_Epilogue">
       <ResourceCost ComputationMethod="Static" Gold="100000" PA="0" HuntCurrency="1000" ProductionToComplete="10000" />
     </Requirements>
     <RewardList>
@@ -118,8 +114,8 @@
     <ContextualSoundTrigger ToPlay="Endgame_Hunt_StartProject_Restock2" ToResume="Endgame_Hunt_Idle" />
   </Project>
   <Project Name="hunt_merchant_restock3" CategoryName="hunt_restock" Repeatable="1">
-    <UIParams UIName="@ui_hunt_merchant_restock3" UILore="@ui_hunt_merchant_restock3_lore" IconType="stash" HideIfRequirementsAreNotMet="0" />
-    <Requirements PlayerLevel="0" Projects="hunt_merchant_upgarde2">
+    <UIParams UIName="@ui_hunt_merchant_restock3" UILore="@ui_hunt_merchant_restock3_lore" IconType="stash" HideIfRequirementsAreNotMet="1" />
+    <Requirements PlayerLevel="0" Projects="hunt_merchant_upgarde2" Quest="ACT4_Epilogue">
       <ResourceCost ComputationMethod="Static" Gold="100000" PA="0" HuntCurrency="1000" ProductionToComplete="10000" />
     </Requirements>
     <RewardList>

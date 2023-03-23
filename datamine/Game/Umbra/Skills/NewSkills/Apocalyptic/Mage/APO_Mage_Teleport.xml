@@ -1,7 +1,7 @@
 <MetaData>
   <Skill ESkill="player_teleport" Keywords="default_melee,attack_skill" UID="apo_mage_teleport">
     <Animation AnimationDrivenMovement="0" ActionString_In="apo_skill_move_in" ActionString_Loop="apo_skill_move_loop" ActionString_Out="apo_skill_move_out" />
-    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="Player_Apo_mage" TrailPresetBase="apo" />
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="Player_apo_Mage_Teleport" TrailPresetBase="apo" />
     <HUD HUDPicture="../u_resources/spells/Active_Skills/apo_mage_teleport.png" UIName="@ui_APO_Mage_MoveSkill" Lore="@ui_APO_Mage_MoveSkill_Lore" ShowParamsInAST="Cost,ROSTime,DamageDetail,Cooldown,Range" ShowParamsInTooltip="Cost,DamageOverview,Cooldown" />
     <Aggression TargetValueOnHit="10" />
     <ResourceCost ApoResourceCost="-40" />

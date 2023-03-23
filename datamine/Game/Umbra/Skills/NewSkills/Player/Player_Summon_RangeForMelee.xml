@@ -1,0 +1,198 @@
+<MetaData>
+  <Skill UID="player_summon_range_melee" ESkill="player_summon" Keywords="attack_skill">
+    <CastingParams CanCastWhileMoving="0" />
+    <WeaponRequirements Requirements="melee,Range" />
+    <HUD HUDPicture="../u_resources/spells/Active_Skills/alastorrailgunners_Lightning.png" UIName="@ui_AST_SummonRangedMelee" Lore="@ui_AST_SummonRangedMelee_Lore" ActiveEffectTitle="" ActiveEffectDesc="" ASTTreeNumber="1" ShowParamsInAST="Cost,ROSTime,Cooldown,Range,MaxSummon,SpecificSummon" ShowParamsInTooltip="Cost,Cooldown,MaxSummon,SpecificSummon" />
+    <Enneract PickableParticle_MoveToGround="U_CommonVFX_02.Esseract.Esseract_Projectile.Physical" PickableParticle_OnGround_Shape="U_CommonVFX_02.Esseract.Esseract_Shape.Circle_Physical" PickableParticle_OnGround_Damage="U_CommonVFX_02.Esseract.Esseract_Color.Physical" PickableParticle_OnGround_Symbol="U_CommonVFX_02.Esseract.Esseract_Symbol.BEZERIEL" PickableParticle_OnGround_Indicator="U_CommonVFX_02.Esseract.Esseract_Indicator.Physical" PickableParticle_OnGround_Pickup="U_CommonVFX_02.Esseract.Esseract_Loot.Physical" SkillLearningParticle="U_CommonVFX.Skill_Learn.Skill_Learn_Physical" Inventory_HUDPicture="../u_resources/enneracts/alastorrailgunners.png" Inventory_LoreDesc="@ui_enneract_lore" />
+    <Range AttackRange="15" />
+    <Cooldown Cooldown="5" CooldownPerLevel="0" />
+    <Summoning MaxSummons="3" KillLowestHPOnOversummoning="0" SummonsSuicideWhenMasterDies="1" HUDPortraitIcon="../u_resources/spells/summon_portraits/alastorrailgunners_Lightning.png">
+      <SummonedSpawnClass Key="Base" Name="SC_SkillSummon_Range_Melee_Lightning" />
+    </Summoning>
+    <Specific_Summon Type="lightning" SummonSoundTrigger="Play_Skill_Summon_ChampionElec_Spawn" OrderSoundTrigger="Play_Skill_Summon_ChampionElec_Command" SpawnRate="2" SpawnRateScalesWithCDR="1" TPMaxRadius="10" TPMinRadius="8" TPParameter="2" TPDisposition="line">
+      <SummonedSkills UID="Summon_Range_Melee_TakeAim" OnEvent="SummonCapacityReached" />
+      <PermanentBuffs Key="AttackSpeedDefault" Name="SummonBuff_AttackSpeed_Ranged_default" />
+    </Specific_Summon>
+    <Specific_Summon_Ranged HeightOffsetAtCastPos="1.5" />
+    <ResourceCost RageCost="-100" ROSTransfertDuration="1.0" />
+    <SoundTrigger OnAnimStart="" />
+    <ParticleList>
+      <Particle Key="PermanentRing" Name="U_Summons.SummonCircle_Opti" Bone="Bip01" Direction="0,1,0" Delay="0.1" />
+      <Particle Key="SpawnRing" Name="U_Summons.Spawn.Spawn_Physical" Bone="Bip01" Direction="0,1,0" Delay="0.1" />
+    </ParticleList>
+  </Skill>
+  <Skill UID="player_summon_range_melee_variant_default_damage_type" ESkill="default_variant">
+    <HUD UIName="@ui_AST_SummonRangedMelee" Lore="@ui_AST_SummonRangedMelee_Lore" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_Alpha.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_Alpha.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_Alpha.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_Alpha.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_Alpha.png" HUDPictureVariant_InnerIcon="../u_resources/spells/Active_Skills/alastorrailgunners_Lightning.png" VariantBottomPanel="1" />
+    <ParticleList>
+      <Particle Key="teleport_in" Name="U_Summons.Teleport.Teleport_In_Physical" Direction="0,1,0" Offset="0,0,0" Bone="Bip01" />
+      <Particle Key="teleport_out" Name="U_Summons.Teleport.Teleport_Out_Physical" Bone="Bip01 Pelvis" Direction="0,1,0" Offset="0,0,-0.4" Delay="0.0" Scale="0.8" />
+    </ParticleList>
+  </Skill>
+  <Skill UID="player_summon_range_melee_variant_1" ESkill="default_variant">
+    <HUD UIName="@ui_Variant_SummonRangedMelee_variant_1" Lore="@ui_Variant_SummonRangedMelee_variant_1_lore" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_005.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_005.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_005.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_005.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_005.png" ShowParamsInTooltip="SpecificSummon" Category="Mastery" />
+    <Summoning MaxSummons="0" KillLowestHPOnOversummoning="0" SummonsSuicideWhenMasterDies="1">
+      <SummonedSpawnClass Key="Base" Name="SC_SkillSummon_Range_Melee_Explosive_Lightning" />
+    </Summoning>
+    <Specific_Summon>
+      <SummonedSkills UID="Summon_Range_Melee_TakeAim_Explosive" OnEvent="SummonCapacityReached" />
+    </Specific_Summon>
+  </Skill>
+  <Skill UID="player_summon_range_melee_variant_2" ESkill="default_variant">
+    <HUD UIName="@ui_Variant_SummonRangedMelee_variant_2" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_001.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_001.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_001.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_001.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_001.png" ShowParamsInTooltip="SpecificSummon" Category="Mastery" />
+    <Specific_Summon>
+      <PermanentBuffs Key="Pierce" Name="SummonBuff_Pierce" />
+    </Specific_Summon>
+  </Skill>
+  <Skill UID="player_summon_range_melee_variant_3" ESkill="default_variant">
+    <HUD UIName="@ui_Variant_SummonRangedMelee_variant_3" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_003.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_003.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_003.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_003.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_003.png" ShowParamsInAST="SpecificSummon" ShowParamsInTooltip="SpecificSummon" Category="Combat" />
+    <PassiveSkills>
+      <Skill Index="0" Name="AI_Summon_FocusShot" Duration="3" Targeting="OnSkillSummons" />
+    </PassiveSkills>
+  </Skill>
+  <Skill UID="player_summon_range_melee_variant_4" ESkill="default_variant">
+    <HUD UIName="@ui_Variant_SummonRangedMelee_variant_4" Lore="@ui_Variant_SummonRangedMelee_variant_4_lore" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_005.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_005.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_005.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_005.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_005.png" ShowParamsInTooltip="SpecificSummon" Category="Combat" />
+    <Specific_Summon>
+      <PermanentBuffs Key="GlassCannon" Name="SummonBuff_GlassCannon_Ranged" />
+    </Specific_Summon>
+  </Skill>
+  <Skill UID="player_summon_range_melee_variant_8" ESkill="default_variant">
+    <HUD UIName="@ui_Variant_SummonRangedMelee_variant_8" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_003.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_003.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_003.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_003.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_003.png" ShowParamsInTooltip="SpecificSummon,MaxSummon" Category="Utility" />
+    <Summoning MaxSummons="1" KillLowestHPOnOversummoning="0" SummonsSuicideWhenMasterDies="1" />
+  </Skill>
+  <Skill UID="player_summon_range_melee_variant_9" ESkill="default_variant">
+    <HUD UIName="@ui_Variant_SummonRangedMelee_variant_9" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_003.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_003.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_003.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_003.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_003.png" ShowParamsInTooltip="SpecificSummon,MaxSummon" Category="Mastery" />
+    <Summoning MaxSummons="-1" KillLowestHPOnOversummoning="0" SummonsSuicideWhenMasterDies="1" />
+    <Specific_Summon>
+      <PermanentBuffs Key="Damage1" Name="SummonBuff_Damage_Ranged_1" />
+    </Specific_Summon>
+  </Skill>
+  <Skill UID="player_summon_range_melee_variant_10" ESkill="default_variant">
+    <HUD UIName="@ui_Variant_SummonRangedMelee_variant_10" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_001.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_001.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_001.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_001.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_001.png" ShowParamsInTooltip="SpecificSummon" Category="Combat" />
+    <Specific_Summon>
+      <PermanentBuffs Key="Damage2" Name="SummonBuff_Damage_Ranged_2" />
+    </Specific_Summon>
+  </Skill>
+  <Skill UID="player_summon_range_melee_variant_11" ESkill="default_variant">
+    <HUD UIName="@ui_Variant_SummonRangedMelee_variant_11" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_001.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_001.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_001.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_001.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_001.png" ShowParamsInTooltip="SpecificSummon" Category="Combat" />
+    <Specific_Summon>
+      <PermanentBuffs Key="Damage3" Name="SummonBuff_Damage_Ranged_3" />
+    </Specific_Summon>
+  </Skill>
+  <Skill UID="player_summon_range_melee_variant_12" ESkill="default_variant">
+    <HUD UIName="@ui_Variant_SummonRangedMelee_variant_12" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_003.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_003.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_003.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_003.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_003.png" ShowParamsInTooltip="SpecificSummon" Category="Combat" />
+    <Specific_Summon>
+      <PermanentBuffs Key="Damage4" Name="SummonBuff_Damage_Ranged_4" />
+    </Specific_Summon>
+  </Skill>
+  <Skill UID="player_summon_range_melee_variant_13" ESkill="default_variant">
+    <HUD UIName="@ui_Variant_SummonRangedMelee_variant_13" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_001.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_001.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_001.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_001.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_001.png" ShowParamsInTooltip="SpecificSummon" Category="Survival" />
+    <Specific_Summon>
+      <PermanentBuffs Key="Health1" Name="SummonBuff_Life_Ranged_1" />
+    </Specific_Summon>
+  </Skill>
+  <Skill UID="player_summon_range_melee_variant_14" ESkill="default_variant">
+    <HUD UIName="@ui_Variant_SummonRangedMelee_variant_14" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_001.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_001.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_001.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_001.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_001.png" ShowParamsInTooltip="SpecificSummon" Category="Survival" />
+    <Specific_Summon>
+      <PermanentBuffs Key="Health2" Name="SummonBuff_Life_Ranged_2" />
+    </Specific_Summon>
+  </Skill>
+  <Skill UID="player_summon_range_melee_variant_15" ESkill="default_variant">
+    <HUD UIName="@ui_Variant_SummonRangedMelee_variant_15" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_003.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_003.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_003.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_003.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_003.png" ShowParamsInTooltip="SpecificSummon" Category="Survival" />
+    <Specific_Summon>
+      <PermanentBuffs Key="MoveSpeed1" Name="SummonBuff_MovementSpeed_Ranged_1" />
+      <PermanentBuffs Key="Health3" Name="SummonBuff_Life_Ranged_3" />
+    </Specific_Summon>
+  </Skill>
+  <Skill UID="player_summon_range_melee_variant_16" ESkill="default_variant">
+    <HUD UIName="@ui_Variant_SummonRangedMelee_variant_16" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_001.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_001.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_001.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_001.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_001.png" ShowParamsInTooltip="SpecificSummon" Category="Utility" />
+    <Specific_Summon>
+      <PermanentBuffs Key="MoveSpeed2" Name="SummonBuff_MovementSpeed_Ranged_2" />
+    </Specific_Summon>
+  </Skill>
+  <Skill UID="player_summon_range_melee_variant_5" ESkill="default_variant">
+    <HUD UIName="@ui_Variant_SummonRangedMelee_variant_5" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_Alpha.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_Alpha.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_Alpha.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_Alpha.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_Alpha.png" HUDPictureVariant_InnerIcon="../u_resources/spells/Active_Skills/alastorrailgunners_Toxic.png" ShowParamsInTooltip="SpecificSummon" HUDPicture="../u_resources/spells/Active_Skills/alastorrailgunners_Toxic.png" VariantBottomPanel="1" />
+    <Specific_Summon Type="toxic" />
+    <WeaponRequirements Requirements="melee,poison" />
+    <Summoning MaxSummons="0" KillLowestHPOnOversummoning="0" SummonsSuicideWhenMasterDies="1" HUDPortraitIcon="../u_resources/spells/summon_portraits/alastorrailgunners_Toxic.png">
+      <SummonedSpawnClass Key="Base" Name="SC_SkillSummon_Range_Melee_Toxic" />
+    </Summoning>
+    <ParticleList>
+      <Particle Key="teleport_in" Name="U_Summons.Teleport.Teleport_In_Poison" Direction="0,1,0" Offset="0,0,0" Bone="Bip01" />
+      <Particle Key="teleport_out" Name="U_Summons.Teleport.Teleport_Out_Poison" Bone="Bip01 Pelvis" Direction="0,0,1" Offset="0,0,-0.4" Delay="0.1" Scale="0.8" />
+    </ParticleList>
+  </Skill>
+  <Skill UID="player_summon_range_melee_variant_6" ESkill="default_variant">
+    <HUD UIName="@ui_Variant_SummonRangedMelee_variant_6" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_Alpha.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_Alpha.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_Alpha.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_Alpha.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_Alpha.png" HUDPictureVariant_InnerIcon="../u_resources/spells/Active_Skills/alastorrailgunners_Rend.png" ShowParamsInTooltip="SpecificSummon" HUDPicture="../u_resources/spells/Active_Skills/alastorrailgunners_Rend.png" VariantBottomPanel="1" />
+    <Specific_Summon Type="rend" />
+    <WeaponRequirements Requirements="melee,bleed" />
+    <Summoning MaxSummons="0" KillLowestHPOnOversummoning="0" SummonsSuicideWhenMasterDies="1" HUDPortraitIcon="../u_resources/spells/summon_portraits/alastorrailgunners_Rend.png">
+      <SummonedSpawnClass Key="Base" Name="SC_SkillSummon_Range_Melee_Rend" />
+    </Summoning>
+    <ParticleList>
+      <Particle Key="teleport_in" Name="U_Summons.Teleport.Teleport_In_Rend" Direction="0,1,0" Offset="0,0,0" Bone="Bip01" />
+      <Particle Key="teleport_out" Name="U_Summons.Teleport.Teleport_Out_Rend" Bone="Bip01 Pelvis" Direction="0,0,1" Offset="0,0,-0.4" Delay="0.1" Scale="0.8" />
+    </ParticleList>
+  </Skill>
+  <Skill UID="player_summon_range_melee_variant_7" ESkill="default_variant">
+    <HUD UIName="@ui_Variant_SummonRangedMelee_variant_7" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_Alpha.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_Alpha.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_Alpha.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_Alpha.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_Alpha.png" HUDPictureVariant_InnerIcon="../u_resources/spells/Active_Skills/alastorrailgunners_Shadow.png" ShowParamsInTooltip="SpecificSummon" HUDPicture="../u_resources/spells/Active_Skills/alastorrailgunners_Shadow.png" VariantBottomPanel="1" />
+    <Specific_Summon Type="shadow" />
+    <WeaponRequirements Requirements="melee,shadow" />
+    <Summoning MaxSummons="0" KillLowestHPOnOversummoning="0" SummonsSuicideWhenMasterDies="1" HUDPortraitIcon="../u_resources/spells/summon_portraits/alastorrailgunners_Shadow.png">
+      <SummonedSpawnClass Key="Base" Name="SC_SkillSummon_Range_Melee_Shadow" />
+    </Summoning>
+    <ParticleList>
+      <Particle Key="teleport_in" Name="U_Summons.Teleport.Teleport_In_Shadow" Direction="0,1,0" Offset="0,0,0" Bone="Bip01" />
+      <Particle Key="teleport_out" Name="U_Summons.Teleport.Teleport_Out_Shadow" Bone="Bip01 Pelvis" Direction="0,0,1" Offset="0,0,-0.4" Delay="0.1" Scale="0.8" />
+    </ParticleList>
+  </Skill>
+  <Skill UID="player_summon_range_melee_variant_17" ESkill="default_variant">
+    <HUD UIName="@ui_Variant_SummonRangedMelee_variant_17" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_Alpha.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_Alpha.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_Alpha.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_Alpha.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_Alpha.png" HUDPictureVariant_InnerIcon="../u_resources/spells/Active_Skills/alastorrailgunners_Sacred.png" ShowParamsInTooltip="SpecificSummon" HUDPicture="../u_resources/spells/Active_Skills/alastorrailgunners_Sacred.png" VariantBottomPanel="1" />
+    <Specific_Summon Type="sacred" />
+    <WeaponRequirements Requirements="melee,sacred" />
+    <Summoning MaxSummons="0" KillLowestHPOnOversummoning="0" SummonsSuicideWhenMasterDies="1" HUDPortraitIcon="../u_resources/spells/summon_portraits/alastorrailgunners_Sacred.png">
+      <SummonedSpawnClass Key="Base" Name="SC_SkillSummon_Range_Melee_Sacred" />
+    </Summoning>
+    <ParticleList>
+      <Particle Key="teleport_in" Name="U_Summons.Teleport.Teleport_In_Sacred" Direction="0,1,0" Offset="0,0,0" Bone="Bip01" />
+      <Particle Key="teleport_out" Name="U_Summons.Teleport.Teleport_Out_Sacred" Bone="Bip01 Pelvis" Direction="0,0,1" Offset="0,0,-0.4" Delay="0.1" Scale="0.8" />
+    </ParticleList>
+  </Skill>
+  <Skill UID="player_summon_range_melee_variant_19" ESkill="default_variant">
+    <HUD UIName="@ui_Variant_SummonRangedMelee_variant_19" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_001.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_001.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_001.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_001.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_001.png" ShowParamsInTooltip="SpecificSummon" Category="Combat" />
+    <Specific_Summon>
+      <PermanentBuffs Key="Damage5" Name="SummonBuff_Damage_Ranged_5" />
+    </Specific_Summon>
+  </Skill>
+  <Skill UID="player_summon_range_melee_variant_20" ESkill="default_variant">
+    <HUD UIName="@ui_Variant_SummonRangedMelee_variant_20" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_001.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_001.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_001.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_001.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_001.png" ShowParamsInTooltip="SpecificSummon" Category="Survival" />
+    <Specific_Summon>
+      <PermanentBuffs Key="Health4" Name="SummonBuff_Life_Ranged_4" />
+    </Specific_Summon>
+  </Skill>
+  <Skill UID="player_summon_range_melee_variant_21" ESkill="default_variant">
+    <HUD UIName="@ui_Variant_SummonRangedMelee_variant_21" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_001.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_001.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_001.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_001.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_001.png" ShowParamsInTooltip="SpecificSummon" Category="Combat" />
+    <Specific_Summon>
+      <PermanentBuffs Key="AttackSpeed" Name="SummonBuff_AttackSpeed_Ranged_1" />
+    </Specific_Summon>
+  </Skill>
+  <Skill UID="player_summon_range_melee_variant_1,player_summon_range_melee_variant_5" ESkill="default_variant_combo">
+    <Summoning MaxSummons="0" KillLowestHPOnOversummoning="0" SummonsSuicideWhenMasterDies="1">
+      <SummonedSpawnClass Key="Base" Name="SC_SkillSummon_Range_Melee_Explosive_Toxic" />
+    </Summoning>
+  </Skill>
+  <Skill UID="player_summon_range_melee_variant_1,player_summon_range_melee_variant_6" ESkill="default_variant_combo">
+    <Summoning MaxSummons="0" KillLowestHPOnOversummoning="0" SummonsSuicideWhenMasterDies="1">
+      <SummonedSpawnClass Key="Base" Name="SC_SkillSummon_Range_Melee_Explosive_Rend" />
+    </Summoning>
+  </Skill>
+  <Skill UID="player_summon_range_melee_variant_1,player_summon_range_melee_variant_7" ESkill="default_variant_combo">
+    <Summoning MaxSummons="0" KillLowestHPOnOversummoning="0" SummonsSuicideWhenMasterDies="1">
+      <SummonedSpawnClass Key="Base" Name="SC_SkillSummon_Range_Melee_Explosive_Shadow" />
+    </Summoning>
+  </Skill>
+  <Skill UID="player_summon_range_melee_variant_1,player_summon_range_melee_variant_17" ESkill="default_variant_combo">
+    <Summoning MaxSummons="0" KillLowestHPOnOversummoning="0" SummonsSuicideWhenMasterDies="1">
+      <SummonedSpawnClass Key="Base" Name="SC_SkillSummon_Range_Melee_Explosive_Sacred" />
+    </Summoning>
+  </Skill>
+</MetaData>

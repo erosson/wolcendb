@@ -3,18 +3,18 @@
     <WeaponRequirements Requirements="magic,umbra" />
     <Animation ActionString="player_skill_laser" ScaleWithSpellCastingSpeed="1" />
     <VisualFeedback TrailPresetBase="default" FeedbackPresetBase="Player_skill_laser" BloodDecalOrientation="forward" />
-    <CastingParams CastBone="R_Weapon_Bone" CanCastWhileMoving="0" MinimumCastDuration="0.1" MaintainedCast="1" MaximumTurnRate="120" ScaleTurnRateWithSpellCastingSpeed="1" />
+    <CastingParams CastBone="R_Weapon_Bone" CanCastWhileMoving="0" MinimumCastDuration="0.1" MaintainedCast="1" MaximumTurnRate="120" ScaleTurnRateWithSpellCastingSpeed="1" CancellableByDefault="1" />
     <HUD HUDPicture="../u_resources/spells/Active_Skills/laser_Aether.png" UIName="@ui_AST_Laser" Lore="@ui_AST_Laser_Lore" ActiveEffectTitle="" ActiveEffectDesc="" ASTTreeNumber="3" ShowParamsInAST="DamageWeapon,Cost,ROSTime,Cooldown,Range,DamageDetail,DamageCritical,StatusAilmentsChance,SpecificLaser" ShowParamsInTooltip="Cost,Cooldown,DamageOverview,StatusAilmentsChance,SpecificLaser" />
     <Enneract PickableParticle_MoveToGround="U_CommonVFX_02.Esseract.Esseract_Projectile.Umbra" PickableParticle_OnGround_Shape="U_CommonVFX_02.Esseract.Esseract_Shape.Circle_Umbra" PickableParticle_OnGround_Damage="U_CommonVFX_02.Esseract.Esseract_Color.Umbra" PickableParticle_OnGround_Symbol="U_CommonVFX_02.Esseract.Esseract_Symbol.ANULAI_TAI" PickableParticle_OnGround_Indicator="U_CommonVFX_02.Esseract.Esseract_Indicator.Umbra" PickableParticle_OnGround_Pickup="U_CommonVFX_02.Esseract.Esseract_Loot.Umbra" SkillLearningParticle="U_CommonVFX.Skill_Learn.Skill_Learn_Umbra" Inventory_HUDPicture="../u_resources/enneracts/laser.png" Inventory_LoreDesc="@ui_enneract_lore" />
     <Aggression TargetValueOnHit="7" />
-    <DamageWeapon WeaponMultiplier="1.3" />
+    <DamageWeapon WeaponMultiplier="2" />
     <StatusAilment AilmentEffectiveness="30" />
     <Damage_Conversion>
       <Entry From="physical" To="umbra" ConversionRate="100" />
     </Damage_Conversion>
     <ParticleList>
       <Particle Key="Ready" Name="U_Character.Skills.Laser_Ready_01" Direction="0,0,1" Bone="R_Weapon_Bone" />
-      <Particle Key="Beam" Name="U_Character.Skills.Laser_01" Direction="0,0,-1" />
+      <Particle Key="Beam" Name="U_Character.Skills.Laser_02" Direction="0,0,-1" />
       <Particle Key="Hit" Name="U_Character.Skills.Laser_Hit_01" Direction="0,0,1" />
       <Particle Key="Circle" Name="U_Magic_Sign.Umbra.FrontCircle_Sign_01_Loop" Direction="0,1,0" />
       <Particle Key="CircleEnd" Name="U_Magic_Sign.Umbra.FrontCircle_Sign_01_End" Direction="0,1,0" Offset="0,0.75,1.5" />
@@ -25,21 +25,22 @@
     <ResourceCostMaintained ManaCostPerSecond="-100" ManaCostPerSecondPerLevel="0" ROSTransfertDuration="1.0" />
     <Specific_Laser Width="0.4" LengthPadding="0.1" MaxZOffset="1.5" TimeBetweenHits="0.3" WarmupTime="0.1" CanHitMultipleTargets="0" TargetBone="Bip01 Spine" SoundStart="PLAY_Skill_Laser_Loop" SoundEnd="STOP_Skill_Laser_Loop" SoundHitStart="PLAY_Skill_Laser_ImpactLoop" SoundHitEnd="STOP_Skill_Laser_ImpactLoop" NumberOfBeams="1" CastAngle_DistanceMin="2" CastAngle_DistanceMax="7" CastAngle_AngleAtDistanceMin="75" CastAngle_AngleAtDistanceMax="0" />
     <Tickrate BaseTickrate="3" MaxTickrate="5" SpeedScaleFactor="1" DamageOvercapFactor="1" />
+    <SoundTrigger OnKill="Play_OnKill_Impact_Lethal_Spell" />
   </Skill>
   <Skill UID="player_laser_variant_default_damage_type" ESkill="default_variant">
     <HUD UIName="@ui_AST_Laser" Lore="@ui_AST_Laser_Lore" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_Alpha.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_Alpha.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_Alpha.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_Alpha.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_Alpha.png" HUDPictureVariant_InnerIcon="../u_resources/spells/Active_Skills/laser_Aether.png" VariantBottomPanel="1" />
   </Skill>
   <Skill UID="player_laser_step_1" ESkill="default_variant" Keywords="magic_spell">
-    <HUD UIName="@ui_Variant_Laser_variant_1" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_001.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_001.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_001.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_001.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_001.png" ShowParamsInTooltip="SpecificLaser,Cost,ROSTime" />
+    <HUD UIName="@ui_Variant_Laser_variant_1" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_001.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_001.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_001.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_001.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_001.png" ShowParamsInTooltip="SpecificLaser,Cost,ROSTime" Category="Utility" />
     <ResourceCost ManaCost="30" ManaCostPerLevel="0" ROSTransfertDuration="1.0" />
     <ResourceCostMaintained ManaCostPerSecond="10" ManaCostPerSecondPerLevel="0" ROSTransfertDuration="1.0" />
   </Skill>
   <Skill UID="player_laser_step_2" ESkill="default_variant" Keywords="magic_spell">
-    <HUD UIName="@ui_Variant_Laser_variant_2" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_001.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_001.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_001.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_001.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_001.png" ShowParamsInTooltip="SpecificLaser,DamageWeapon" />
+    <HUD UIName="@ui_Variant_Laser_variant_2" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_001.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_001.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_001.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_001.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_001.png" ShowParamsInTooltip="SpecificLaser,DamageWeapon" Category="Combat" />
     <DamageWeapon WeaponMultiplier="1.15" />
   </Skill>
   <Skill UID="player_laser_step_3" ESkill="default_variant" Keywords="magic_spell">
-    <HUD UIName="@ui_Variant_Laser_variant_3" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_003.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_003.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_003.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_003.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_003.png" ShowParamsInTooltip="SpecificLaser" />
+    <HUD UIName="@ui_Variant_Laser_variant_3" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_003.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_003.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_003.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_003.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_003.png" ShowParamsInTooltip="SpecificLaser" Category="Combat" />
     <Specific_Laser Width="0.75" />
     <ParticleList>
       <Particle Key="Beam" Name="U_Character.Skills.Laser_02" Direction="0,0,-1" />
@@ -47,56 +48,56 @@
     </ParticleList>
   </Skill>
   <Skill UID="player_laser_step_4" ESkill="default_variant" Keywords="magic_spell">
-    <HUD UIName="@ui_Variant_Laser_variant_4" Lore="@ui_Variant_Laser_variant_4_Lore" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_005.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_005.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_005.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_005.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_005.png" ShowParamsInTooltip="SpecificLaser,DamageWeapon" />
+    <HUD UIName="@ui_Variant_Laser_variant_4" Lore="@ui_Variant_Laser_variant_4_Lore" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_005.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_005.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_005.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_005.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_005.png" ShowParamsInTooltip="SpecificLaser,DamageWeapon" Category="Mastery" />
     <Specific_Laser CanHitMultipleTargets="1" />
-    <DamageWeapon WeaponMultiplier="0.75" />
+    <DamageWeapon WeaponMultiplier="0.80" />
   </Skill>
   <Skill UID="player_laser_step_6" ESkill="default_variant" Keywords="magic_spell">
-    <HUD UIName="@ui_Variant_Laser_variant_6" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_003.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_003.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_003.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_003.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_003.png" ShowParamsInTooltip="SpecificLaser,CastingParams" />
+    <HUD UIName="@ui_Variant_Laser_variant_6" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_003.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_003.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_003.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_003.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_003.png" ShowParamsInTooltip="SpecificLaser,CastingParams" Category="Utility" />
     <CastingParams MaximumTurnRate="230" />
   </Skill>
   <Skill UID="player_laser_step_7" ESkill="default_variant" Keywords="magic_spell">
-    <HUD UIName="@ui_Variant_Laser_variant_7" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_003.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_003.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_003.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_003.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_003.png" ShowParamsInTooltip="SpecificLaser" />
-    <Specific_Laser DamageOverTimeTargetTime="2" DamageOverTimeTargetModifier="150" />
+    <HUD UIName="@ui_Variant_Laser_variant_7" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_003.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_003.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_003.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_003.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_003.png" ShowParamsInAST="DamageBoostOverTime" ShowParamsInTooltip="DamageBoostOverTime" Category="Combat" />
+    <Specific_Laser DamageOverTimeTargetTime="3" DamageOverTimeTargetModifier="250" />
   </Skill>
   <Skill UID="player_laser_step_8" ESkill="default_variant" Keywords="magic_spell">
-    <HUD UIName="@ui_Variant_Laser_variant_8" Lore="@ui_Variant_Laser_variant_8_Lore" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_005.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_005.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_005.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_005.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_005.png" ShowParamsInTooltip="SpecificLaser,Cost,ROSTime" />
+    <HUD UIName="@ui_Variant_Laser_variant_8" Lore="@ui_Variant_Laser_variant_8_Lore" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_005.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_005.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_005.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_005.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_005.png" ShowParamsInTooltip="SpecificLaser,Cost,ROSTime" Category="Mastery" />
     <Aggression TargetValueOnHit="-3" />
     <Specific_Laser NumberOfBeams="1" />
     <ResourceCost ManaCost="-30" ManaCostPerLevel="0" ROSTransfertDuration="1.0" />
     <ResourceCostMaintained ManaCostPerSecond="-30" ManaCostPerSecondPerLevel="0" ROSTransfertDuration="1.0" />
   </Skill>
   <Skill UID="player_laser_step_9" ESkill="default_variant" Keywords="magic_spell">
-    <HUD UIName="@ui_Variant_Laser_variant_9" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_003.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_003.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_003.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_003.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_003.png" ShowParamsInTooltip="SpecificLaser" />
+    <HUD UIName="@ui_Variant_Laser_variant_9" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_003.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_003.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_003.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_003.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_003.png" ShowParamsInTooltip="SpecificLaser" Category="Utility" />
     <Specific_Laser BuffAlliesName="AST_Laser_Buff_Aether" BuffAlliesDuration="10" />
   </Skill>
   <Skill UID="player_laser_step_10" ESkill="default_variant" Keywords="magic_spell">
-    <HUD UIName="@ui_Variant_Laser_variant_10" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_003.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_003.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_003.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_003.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_003.png" ShowParamsInTooltip="SpecificLaser,DamageWeapon" />
+    <HUD UIName="@ui_Variant_Laser_variant_10" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_003.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_003.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_003.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_003.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_003.png" ShowParamsInTooltip="SpecificLaser,DamageWeapon" Category="Mastery" />
     <Specific_Laser NumberOfBeams="1" />
-    <DamageWeapon WeaponMultiplier="0.85" />
+    <DamageWeapon WeaponMultiplier="0.80" />
   </Skill>
   <Skill UID="player_laser_step_11" ESkill="default_variant" Keywords="magic_spell">
-    <HUD UIName="@ui_Variant_Laser_variant_11" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_001.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_001.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_001.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_001.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_001.png" ShowParamsInTooltip="SpecificLaser,DamageCritical" />
+    <HUD UIName="@ui_Variant_Laser_variant_11" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_001.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_001.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_001.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_001.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_001.png" ShowParamsInTooltip="SpecificLaser,DamageCritical" Category="Combat" />
     <DamageCritical CriticalInflictScoreModifier="40" />
   </Skill>
   <Skill UID="player_laser_step_12" ESkill="default_variant" Keywords="magic_spell">
-    <HUD UIName="@ui_Variant_Laser_variant_12" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_001.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_001.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_001.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_001.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_001.png" ShowParamsInTooltip="SpecificLaser,StatusAilmentsChance" />
+    <HUD UIName="@ui_Variant_Laser_variant_12" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_001.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_001.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_001.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_001.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_001.png" ShowParamsInTooltip="SpecificLaser,StatusAilmentsChance" Category="Utility" />
     <StatusAilment AilmentEffectiveness="125" />
   </Skill>
   <Skill UID="player_laser_step_13" ESkill="default_variant" Keywords="magic_spell">
-    <HUD UIName="@ui_Variant_Laser_variant_13" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_001.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_001.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_001.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_001.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_001.png" ShowParamsInTooltip="SpecificLaser,StatusAilmentsChance" />
+    <HUD UIName="@ui_Variant_Laser_variant_13" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_001.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_001.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_001.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_001.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_001.png" ShowParamsInTooltip="SpecificLaser,StatusAilmentsChance" Category="Combat" />
     <StatusAilment AllAilmentsInflictDamageIncreasePercent="40" />
   </Skill>
   <Skill UID="player_laser_step_14" ESkill="default_variant" Keywords="magic_spell">
-    <HUD UIName="@ui_Variant_Laser_variant_14" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_001.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_001.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_001.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_001.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_001.png" ShowParamsInTooltip="SpecificLaser,DamageCritical" />
+    <HUD UIName="@ui_Variant_Laser_variant_14" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_001.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_001.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_001.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_001.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_001.png" ShowParamsInTooltip="SpecificLaser,DamageCritical" Category="Combat" />
     <DamageCritical CriticalDamageModifier="25" />
   </Skill>
   <Skill UID="player_laser_step_15" ESkill="default_variant" Keywords="magic_spell">
-    <HUD UIName="@ui_Variant_Laser_variant_15" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_003.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_003.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_003.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_003.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_003.png" ShowParamsInTooltip="SpecificLaser,DamageWeapon" />
+    <HUD UIName="@ui_Variant_Laser_variant_15" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_003.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_003.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_003.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_003.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_003.png" ShowParamsInTooltip="SpecificLaser,DamageWeapon" Category="Combat" />
     <DamageWeapon WeaponMultiplier="1.3" />
   </Skill>
   <Skill UID="player_laser_step_16" ESkill="default_variant" Keywords="magic_spell">
-    <HUD UIName="@ui_Variant_Laser_variant_16" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_001.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_001.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_001.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_001.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_001.png" ShowParamsInTooltip="SpecificLaser,Cost,ROSTime" />
+    <HUD UIName="@ui_Variant_Laser_variant_16" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_001.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_001.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_001.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_001.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_001.png" ShowParamsInTooltip="SpecificLaser,Cost,ROSTime" Category="Utility" />
     <ResourceCost ManaCost="15" ManaCostPerLevel="0" ROSTransfertDuration="1.0" />
     <ResourceCostMaintained ManaCostPerSecond="20" ManaCostPerSecondPerLevel="0" ROSTransfertDuration="1.0" />
   </Skill>
@@ -107,10 +108,10 @@
       <Entry From="physical" To="umbra" ConversionRate="-100" />
       <Entry From="physical" To="toxic" ConversionRate="100" />
     </Damage_Conversion>
-    <DamageWeapon WeaponMultiplier="1.25" />
+    <DamageWeapon WeaponMultiplier="1" />
     <ParticleList>
       <Particle Key="Ready" Name="U_Character.Skills.Laser_Ready_01_Poison" Direction="0,0,1" Bone="R_Weapon_Bone" />
-      <Particle Key="Beam" Name="U_Character.Skills.Laser_01_Poison" Direction="0,0,-1" />
+      <Particle Key="Beam" Name="U_Character.Skills.Laser_02_Poison" Direction="0,0,-1" />
       <Particle Key="Hit" Name="U_Character.Skills.Laser_Hit_01_Poison" Direction="0,0,1" />
       <Particle Key="Circle" Name="U_Magic_Sign.Toxic.FrontCircle_Sign_01_Loop" Direction="0,1,0" />
       <Particle Key="CircleEnd" Name="U_Magic_Sign.Toxic.FrontCircle_Sign_01_End" Direction="0,1,0" Offset="0,0.75,1.5" />
@@ -124,10 +125,10 @@
       <Entry From="physical" To="umbra" ConversionRate="-100" />
       <Entry From="physical" To="fire" ConversionRate="100" />
     </Damage_Conversion>
-    <DamageWeapon WeaponMultiplier="1.25" />
+    <DamageWeapon WeaponMultiplier="1" />
     <ParticleList>
       <Particle Key="Ready" Name="U_Character.Skills.Laser_Ready_01_Fire" Direction="0,0,1" Bone="R_Weapon_Bone" />
-      <Particle Key="Beam" Name="U_Character.Skills.Laser_01_Fire" Direction="0,0,-1" />
+      <Particle Key="Beam" Name="U_Character.Skills.Laser_02_Fire" Direction="0,0,-1" />
       <Particle Key="Hit" Name="U_Character.Skills.Laser_Hit_01_Fire" Direction="0,0,1" />
       <Particle Key="Circle" Name="U_Magic_Sign.Fire.FrontCircle_Sign_01_Loop" Direction="0,1,0" />
       <Particle Key="CircleEnd" Name="U_Magic_Sign.Fire.FrontCircle_Sign_01_End" Direction="0,1,0" Offset="0,0.75,1.5" />
@@ -141,10 +142,10 @@
       <Entry From="physical" To="umbra" ConversionRate="-100" />
       <Entry From="physical" To="sacred" ConversionRate="100" />
     </Damage_Conversion>
-    <DamageWeapon WeaponMultiplier="1.25" />
+    <DamageWeapon WeaponMultiplier="1" />
     <ParticleList>
       <Particle Key="Ready" Name="U_Character.Skills.Laser_Ready_01_Sacred" Direction="0,0,1" Bone="R_Weapon_Bone" />
-      <Particle Key="Beam" Name="U_Character.Skills.Laser_01_Sacred" Direction="0,0,-1" />
+      <Particle Key="Beam" Name="U_Character.Skills.Laser_02_Sacred" Direction="0,0,-1" />
       <Particle Key="Hit" Name="U_Character.Skills.Laser_Hit_01_Sacred" Direction="0,0,1" />
       <Particle Key="Circle" Name="U_Magic_Sign.Sacred.FrontCircle_Sign_01_Loop" Direction="0,1,0" />
       <Particle Key="CircleEnd" Name="U_Magic_Sign.Sacred.FrontCircle_Sign_01_End" Direction="0,1,0" Offset="0,0.75,1.5" />
@@ -152,7 +153,7 @@
     <Specific_Laser SoundStart="Play_Skill_Disintegrate_Cast_Loop_Sacred" SoundEnd="Stop_Skill_Disintegrate_Cast_Loop_Sacred" SoundHitStart="Play_Skill_Disintegrate_Impact_Spark_Loop_Sacred" SoundHitEnd="Stop_Skill_Disintegrate_Impact_Spark_Loop" />
   </Skill>
   <Skill UID="Player_Laser_step_19" ESkill="default_variant">
-    <HUD UIName="@ui_variant_Player_Laser_step_19" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_003.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_003.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_003.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_003.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_003.png" ShowParamsInTooltip="DamageWeapon" />
+    <HUD UIName="@ui_variant_Player_Laser_step_19" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_001.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_001.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_001.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_001.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_001.png" ShowParamsInTooltip="DamageWeapon" Category="Combat" />
     <DamageWeapon WeaponMultiplier="1.15" />
   </Skill>
   <Skill UID="player_laser_step_5,player_laser_step_3" ESkill="default_variant_combo">

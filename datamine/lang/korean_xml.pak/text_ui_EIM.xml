@@ -8,9 +8,9 @@
  <DocumentProperties xmlns="urn:schemas-microsoft-com:office:office">
   <Title>Untitled Spreadsheet</Title>
   <Author>Unknown Creator</Author>
-  <LastAuthor>Pierre Techoueyres</LastAuthor>
-  <Created>2020-12-09T10:31:46Z</Created>
-  <LastSaved>2020-12-09T10:31:46Z</LastSaved>
+  <LastAuthor>User Computer</LastAuthor>
+  <Created>2023-02-24T10:33:57Z</Created>
+  <LastSaved>2023-02-24T10:33:57Z</LastSaved>
   <Company>Microsoft Corporation</Company>
   <Version>16.00</Version>
  </DocumentProperties>
@@ -18,8 +18,8 @@
   <AllowPNG/>
  </OfficeDocumentSettings>
  <ExcelWorkbook xmlns="urn:schemas-microsoft-com:office:excel">
-  <WindowHeight>32767</WindowHeight>
-  <WindowWidth>19275</WindowWidth>
+  <WindowHeight>9015</WindowHeight>
+  <WindowWidth>21570</WindowWidth>
   <WindowTopX>32767</WindowTopX>
   <WindowTopY>32767</WindowTopY>
   <ProtectStructure>False</ProtectStructure>
@@ -122,7 +122,7 @@
   </Style>
  </Styles>
  <Worksheet ss:Name="Sheet1">
-  <Table ss:ExpandedColumnCount="7" ss:ExpandedRowCount="719" x:FullColumns="1"
+  <Table ss:ExpandedColumnCount="7" ss:ExpandedRowCount="729" x:FullColumns="1"
    x:FullRows="1" ss:DefaultRowHeight="15">
    <Column ss:AutoFitWidth="0" ss:Width="356.25"/>
    <Column ss:AutoFitWidth="0" ss:Width="413.25"/>
@@ -2064,7 +2064,7 @@
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s19"><Data ss:Type="String">ui_eim_damage_percent_twohanded</Data></Cell>
-    <Cell ss:StyleID="s27"><Data ss:Type="String">%1 Two Handed Weapon Damage</Data></Cell>
+    <Cell ss:StyleID="s27"><Data ss:Type="String">%1 Two-Handed Weapon Damage</Data></Cell>
     <Cell ss:StyleID="s18"><Data ss:Type="String">양손 무기 피해 %1</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -2307,7 +2307,7 @@
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s19"><Data ss:Type="String">ui_eim_deathmark_on_hit</Data></Cell>
-    <Cell ss:StyleID="s27"><Data ss:Type="String">%1 Chance to infilct Mark of Impurity to an Enemy on Hit</Data></Cell>
+    <Cell ss:StyleID="s27"><Data ss:Type="String">%1 Chance to inflict Mark of Impurity to an Enemy on Hit</Data></Cell>
     <Cell ss:StyleID="s18"><Data ss:Type="String">적중 시 적에게 불순의 표식 적용 확률 %1</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -2316,8 +2316,8 @@
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s19"><Data ss:Type="String">ui_eim_defense_up_on_block</Data></Cell>
-    <Cell ss:StyleID="s27"><Data ss:Type="String">%1 All Resistances Score for you and your Allies on Block</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">막기 시 자신과 아군의 모든 저항 점수 %1</Data></Cell>
+    <Cell ss:StyleID="s27"><Data ss:Type="String">%1 All Resistances Score for you and your Allies on Block within a %2m radius during %3s</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">막기 시 %3초 동안 %2m 반경 안의 자신과 아군의 모든 저항 점수 %1</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -2325,8 +2325,8 @@
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s19"><Data ss:Type="String">ui_eim_defense_up_on_globe_pickup</Data></Cell>
-    <Cell ss:StyleID="s27"><Data ss:Type="String">%1 All Resistances Score for you and your Allies when you pick a Health Globe</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">생명력 구체 습득 시 자신과 아군의 모든 저항 점수 %1</Data></Cell>
+    <Cell ss:StyleID="s27"><Data ss:Type="String">%1 All Resistances Score during %3s when you pick a Health Globe</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">생명력 구체 습득 시 %3초 동안 모든 저항 점수 %1</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -2334,8 +2334,8 @@
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s19"><Data ss:Type="String">ui_eim_dodgechance_on_being_hit</Data></Cell>
-    <Cell ss:StyleID="s27"><Data ss:Type="String">%1 Passive Dodge Chance Score after being Hit</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">공격을 받은 이후의 회피 확률 점수 %1</Data></Cell>
+    <Cell ss:StyleID="s27"><Data ss:Type="String">%1 Passive Dodge Chance Score during %3s after being Hit. %4s Cooldown.</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">공격을 받은 이후 %3초 동안 회피 확률 점수 %1. 재사용 대기시간 %4초.</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -2838,7 +2838,7 @@
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s19"><Data ss:Type="String">ui_eim_health_percent</Data></Cell>
-    <Cell ss:StyleID="s27"><Data ss:Type="String">%1 maximum Health</Data></Cell>
+    <Cell ss:StyleID="s27"><Data ss:Type="String">%1 Maximum Health</Data></Cell>
     <Cell ss:StyleID="s18"><Data ss:Type="String">최대 생명력 %1</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -2847,7 +2847,7 @@
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s19"><Data ss:Type="String">ui_eim_health_pts</Data></Cell>
-    <Cell ss:StyleID="s27"><Data ss:Type="String">%1 maximum Health</Data></Cell>
+    <Cell ss:StyleID="s27"><Data ss:Type="String">%1 Maximum Health</Data></Cell>
     <Cell ss:StyleID="s18"><Data ss:Type="String">최대 생명력 %1</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -2903,6 +2903,33 @@
     <Cell ss:StyleID="s19"><Data ss:Type="String">ui_eim_healthglobe_drop_chance_on_hit</Data></Cell>
     <Cell ss:StyleID="s27"><Data ss:Type="String">%1 Health Globe generation on Hit</Data></Cell>
     <Cell ss:StyleID="s18"><Data ss:Type="String">적중 시 생명력 구체 생성 %1</Data></Cell>
+    <Cell ss:StyleID="s18"/>
+    <Cell ss:StyleID="s18"/>
+    <Cell ss:StyleID="s18"/>
+    <Cell ss:StyleID="s18"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s19"><Data ss:Type="String">ui_eim_inflicted_elemental_duration_percent</Data></Cell>
+    <Cell ss:StyleID="s27"><Data ss:Type="String">Increases inflicted Elemental Ailments Duration by %1</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">적에게 걸린 원소 상태 이상 지속 시간 %1 증가</Data></Cell>
+    <Cell ss:StyleID="s18"/>
+    <Cell ss:StyleID="s18"/>
+    <Cell ss:StyleID="s18"/>
+    <Cell ss:StyleID="s18"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s19"><Data ss:Type="String">ui_eim_inflicted_material_duration_percent</Data></Cell>
+    <Cell ss:StyleID="s27"><Data ss:Type="String">Increases inflicted Material Ailments Duration by %1</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">적에게 걸린 물질 상태 이상 지속 시간 %1 증가</Data></Cell>
+    <Cell ss:StyleID="s18"/>
+    <Cell ss:StyleID="s18"/>
+    <Cell ss:StyleID="s18"/>
+    <Cell ss:StyleID="s18"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s18"><Data ss:Type="String">ui_eim_inflicted_occult_duration_percent</Data></Cell>
+    <Cell ss:StyleID="s27"><Data ss:Type="String">Increases inflicted Occult Ailments Duration by %1</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">적에게 걸린 주술 상태 이상 지속 시간 %1 증가</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -3225,7 +3252,7 @@
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s19"><Data ss:Type="String">ui_eim_max_stacks_capacity</Data></Cell>
-    <Cell ss:StyleID="s27"><Data ss:Type="String">%1 maximum Ailment Stacks</Data></Cell>
+    <Cell ss:StyleID="s27"><Data ss:Type="String">%1 Maximum Ailment Stacks</Data></Cell>
     <Cell ss:StyleID="s18"><Data ss:Type="String">최대 상태 이상 중첩 %1</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -3585,7 +3612,7 @@
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s19"><Data ss:Type="String">ui_eim_rage_to_umbra_transfer_percent</Data></Cell>
-    <Cell ss:StyleID="s27"><Data ss:Type="String">%1 increased Transfer Rate between Rage and Willpower</Data></Cell>
+    <Cell ss:StyleID="s27"><Data ss:Type="String">%1 Increased Transfer Rate between Rage and Willpower</Data></Cell>
     <Cell ss:StyleID="s18"><Data ss:Type="String">분노와 의지 간 변환 속도 증가 %1</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -3594,7 +3621,7 @@
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s19"><Data ss:Type="String">ui_eim_rage_to_umbra_transfer_pts</Data></Cell>
-    <Cell ss:StyleID="s27"><Data ss:Type="String">%1-%2 reduced Transfer Rate between Rage and Willpower</Data></Cell>
+    <Cell ss:StyleID="s27"><Data ss:Type="String">%1-%2 Reduced Transfer Rate between Rage and Willpower</Data></Cell>
     <Cell ss:StyleID="s18"><Data ss:Type="String">분노와 의지 간 변환 속도 감소 %1~%2</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -4395,7 +4422,7 @@
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s19"><Data ss:Type="String">ui_eim_twohanded_blockchance_flat</Data></Cell>
-    <Cell ss:StyleID="s27"><Data ss:Type="String">%1 Block Chance while a Two-handed Weapon is equipped</Data></Cell>
+    <Cell ss:StyleID="s27"><Data ss:Type="String">%1 Block Chance while a Two-Handed Weapon is equipped</Data></Cell>
     <Cell ss:StyleID="s18"><Data ss:Type="String">양손 무기 장착 시 막기 확률 %1</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -4540,7 +4567,7 @@
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s19"><Data ss:Type="String">ui_eim_umbracosts_percent</Data></Cell>
     <Cell ss:StyleID="s27"><Data ss:Type="String">%1 Willpower Cost Reduction</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">%1 de reducción de coste de maná</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">의지 비용 감소 %1</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -4746,8 +4773,8 @@
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s19"><Data ss:Type="String">ui_eim_local_damage_flat_fire</Data></Cell>
-    <Cell ss:StyleID="s27"><Data ss:Type="String">%1-%2 Fire Damage on Attacks with this weapon</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">이 무기로 공격 시 %1~%2의 화염 피해</Data></Cell>
+    <Cell ss:StyleID="s27"><Data ss:Type="String">%1-%2 Fire Damage on Attacks and Spells with this weapon</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">이 무기로 공격 및 주문 시 %1~%2의 화염 피해</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -4755,8 +4782,8 @@
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s19"><Data ss:Type="String">ui_eim_local_damage_flat_frost</Data></Cell>
-    <Cell ss:StyleID="s27"><Data ss:Type="String">%1-%2 Frost Damage on Attacks with this weapon</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">이 무기로 공격 시 %1~%2의 냉기 피해</Data></Cell>
+    <Cell ss:StyleID="s27"><Data ss:Type="String">%1-%2 Frost Damage on Attacks and Spells with this weapon</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">이 무기로 공격 및 주문 시 %1~%2의 냉기 피해</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -4764,8 +4791,8 @@
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s19"><Data ss:Type="String">ui_eim_local_damage_flat_lightning</Data></Cell>
-    <Cell ss:StyleID="s27"><Data ss:Type="String">%1-%2 Lightning Damage on Attacks with this weapon</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">이 무기로 공격 시 %1~%2의 번개 피해</Data></Cell>
+    <Cell ss:StyleID="s27"><Data ss:Type="String">%1-%2 Lightning Damage on Attacks and Spells with this weapon</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">이 무기로 공격 및 주문 시 %1~%2의 번개 피해</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -4773,8 +4800,8 @@
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s19"><Data ss:Type="String">ui_eim_local_damage_flat_physical</Data></Cell>
-    <Cell ss:StyleID="s27"><Data ss:Type="String">%1-%2 Physical Damage on Attacks with this weapon</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">이 무기로 공격 시 %1~%2의 물리 피해</Data></Cell>
+    <Cell ss:StyleID="s27"><Data ss:Type="String">%1-%2 Physical Damage on Attacks and Spells with this weapon</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">이 무기로 공격 및 주문 시 %1~%2 물리 피해</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -4782,8 +4809,8 @@
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s19"><Data ss:Type="String">ui_eim_local_damage_flat_rend</Data></Cell>
-    <Cell ss:StyleID="s27"><Data ss:Type="String">%1-%2 Rend Damage on Attacks with this weapon</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">이 무기로 공격 시 %1~%2의 분쇄 피해</Data></Cell>
+    <Cell ss:StyleID="s27"><Data ss:Type="String">%1-%2 Rend Damage on Attacks and Spells with this weapon</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">이 무기로 공격 및 주문 시 %1~%2 분쇄 피해</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -4791,8 +4818,8 @@
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s19"><Data ss:Type="String">ui_eim_local_damage_flat_sacred</Data></Cell>
-    <Cell ss:StyleID="s27"><Data ss:Type="String">%1-%2 Sacred Damage on Attacks with this weapon</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">이 무기로 공격 시 %1~%2의 신성 피해</Data></Cell>
+    <Cell ss:StyleID="s27"><Data ss:Type="String">%1-%2 Sacred Damage on Attacks and Spells with this weapon</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">이 무기로 공격 및 주문 시 %1~%2 신성 피해</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -4800,8 +4827,8 @@
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s19"><Data ss:Type="String">ui_eim_local_damage_flat_shadow</Data></Cell>
-    <Cell ss:StyleID="s27"><Data ss:Type="String">%1-%2 Shadow Damage on Attacks with this weapon</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">이 무기로 공격 시 %1~%2의 그림자 피해</Data></Cell>
+    <Cell ss:StyleID="s27"><Data ss:Type="String">%1-%2 Shadow Damage on Attacks and Spells with this weapon</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">이 무기로 공격 및 주문 시 %1~%2 그림자 피해</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -4809,8 +4836,8 @@
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s19"><Data ss:Type="String">ui_eim_local_damage_flat_toxic</Data></Cell>
-    <Cell ss:StyleID="s27"><Data ss:Type="String">%1-%2 Toxic Damage on Attacks with this weapon</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">이 무기로 공격 시 %1~%2의 독성 피해</Data></Cell>
+    <Cell ss:StyleID="s27"><Data ss:Type="String">%1-%2 Toxic Damage on Attacks and Spells with this weapon</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">이 무기로 공격 및 주문 시 %1~%2 독성 피해</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -4818,8 +4845,8 @@
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s19"><Data ss:Type="String">ui_eim_local_damage_flat_umbra</Data></Cell>
-    <Cell ss:StyleID="s27"><Data ss:Type="String">%1-%2 Aether Damage on Attacks with this weapon</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">이 무기로 공격 시 %1~%2의 에테르 피해</Data></Cell>
+    <Cell ss:StyleID="s27"><Data ss:Type="String">%1-%2 Aether Damage on Attacks and Spells with this weapon</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">이 무기로 공격 및 주문 시 %1~%2 에테르 피해</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -4827,8 +4854,8 @@
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s18"><Data ss:Type="String">ui_eim_local_damage_percent_elemental</Data></Cell>
-    <Cell ss:StyleID="s27"><Data ss:Type="String">%1 Elemental Damage on Attacks with this weapon</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">이 무기로 공격 시 %1의 원소 피해</Data></Cell>
+    <Cell ss:StyleID="s27"><Data ss:Type="String">%1 Elemental Damage on Attacks and Spells with this weapon</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">이 무기로 공격 및 주문 시 %1 원소 피해</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -4836,8 +4863,8 @@
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s18"><Data ss:Type="String">ui_eim_local_damage_percent_material</Data></Cell>
-    <Cell ss:StyleID="s25"><Data ss:Type="String">%1 Material Damage on Attacks with this weapon</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">이 무기로 공격 시 %1의 물질 피해</Data></Cell>
+    <Cell ss:StyleID="s25"><Data ss:Type="String">%1 Material Damage on Attacks and Spells with this weapon</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">이 무기로 공격 및 주문 시 %1 물질 피해</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -4845,8 +4872,8 @@
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s18"><Data ss:Type="String">ui_eim_local_damage_percent_primeval</Data></Cell>
-    <Cell ss:StyleID="s27"><Data ss:Type="String">%1 Occult Damage on Attacks with this weapon</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">이 무기로 공격 시 %1의 주술 피해</Data></Cell>
+    <Cell ss:StyleID="s27"><Data ss:Type="String">%1 Occult Damage on Attacks and Spells with this weapon</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">이 무기로 공격 및 주문 시 %1 주술 피해</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -4854,8 +4881,8 @@
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s20"><Data ss:Type="String">ui_eim_local_damage_percent_all</Data></Cell>
-    <Cell ss:StyleID="s27"><Data ss:Type="String">%1 All Damage on Attacks with this weapon</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">이 무기로 공격 시 %1의 모든 피해</Data></Cell>
+    <Cell ss:StyleID="s27"><Data ss:Type="String">%1 All Damage on Attacks and Spells with this weapon</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">이 무기로 공격 및 주문 시 %1 전체 피해</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -5079,7 +5106,7 @@
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s21"><Data ss:Type="String">ui_eim_can_change_stances_with_dodgeroll</Data></Cell>
-    <Cell ss:StyleID="s25"><Data ss:Type="String">Gain access to two Stances: &quot;Probing Weakness&quot; and &quot;Stalwart Resolve&quot;. You can change your Stance by using the Active Dodge</Data></Cell>
+    <Cell ss:StyleID="s25"><Data ss:Type="String">Gain access to two Stances: &quot;Probing Weakness&quot; and &quot;Stalwart Resolve.&quot; You can change your Stance by using the Active Dodge</Data></Cell>
     <Cell ss:StyleID="s18"><Data ss:Type="String">'약점 찾기' 및 '강건한 결의' 두 가지 태세로 전환할 수 있습니다. 활성 회피를 사용하여 태세를 변경할 수 있습니다.</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -5097,8 +5124,8 @@
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s21"><Data ss:Type="String">ui_eim_stance_defensive_stats</Data></Cell>
-    <Cell ss:StyleID="s25"><Data ss:Type="String">The &quot;Stalwart Resolve&quot; Stance reduces your Attack and Spell Damage by %3 but gives you an additional %1 Block Chance and %2 Block Efficiency</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">'강건한 결의' 태세를 취하면 입히는 공격 및 주문 피해가 %3만큼 감소하지만, 막기 확률이 %1, 막기 효율이 %2 증가합니다.</Data></Cell>
+    <Cell ss:StyleID="s25"><Data ss:Type="String">The &quot;Stalwart Resolve&quot; Stance reduces your Attack and Spell Casting Speed by %3 but gives you an additional %1 Block Chance and %2 Block Efficiency</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">'강건한 결의' 태세를 취하면 입히는 공격 및 주문 시전 속도가 %3만큼 감소하지만, 막기 확률이 %1, 막기 효율이 %2 증가합니다.</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -5133,8 +5160,8 @@
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s21"><Data ss:Type="String">ui_eim_damage_on_block_rend</Data></Cell>
-    <Cell ss:StyleID="s25"><Data ss:Type="String">Proud Reprisal damage are converted into Rend Damage</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">자랑스런 보복 피해가 분쇄 피해로 전환됨</Data></Cell>
+    <Cell ss:StyleID="s25"><Data ss:Type="String">Proud Reprisal damage deals an additional %1 Weapon Damage and is converted into Rend Damage</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">자랑스런 보복 피해가 %1 무기 피해를 추가로 주며 분쇄 피해로 전환됩니다.</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -5250,7 +5277,7 @@
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s21"><Data ss:Type="String">ui_eim_stat_bonus_from_chest_armor</Data></Cell>
-    <Cell ss:StyleID="s25"><Data ss:Type="String">Allows you to receive a Bonus based on on the Chest-piece equipped</Data></Cell>
+    <Cell ss:StyleID="s25"><Data ss:Type="String">Allows you to receive a Bonus based on the Chest-piece equipped</Data></Cell>
     <Cell ss:StyleID="s18"><Data ss:Type="String">장착한 가슴 장비에 따라 추가 효과 획득 가능</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -5268,7 +5295,7 @@
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s21"><Data ss:Type="String">ui_eim_stat_bonus_from_chest_armor_tank</Data></Cell>
-    <Cell ss:StyleID="s25"><Data ss:Type="String">Heavy: Adds %1 of the armor piece All Resistance Score to your All Resistance Score</Data></Cell>
+    <Cell ss:StyleID="s25"><Data ss:Type="String">Heavy: Adds %1 of the armour piece All Resistance Score to your All Resistance Score</Data></Cell>
     <Cell ss:StyleID="s18"><Data ss:Type="String">중갑: 모든 저항 점수에 %1 방어구 모든 저항 점수 추가</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -5313,7 +5340,7 @@
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s21"><Data ss:Type="String">ui_eim_stat_bonus_from_helmet_tank</Data></Cell>
-    <Cell ss:StyleID="s25"><Data ss:Type="String">Heavy: Adds %1 of the armor piece All Resistance Score to your All Resistance Score</Data></Cell>
+    <Cell ss:StyleID="s25"><Data ss:Type="String">Heavy: Adds %1 of the armour piece All Resistance Score to your All Resistance Score</Data></Cell>
     <Cell ss:StyleID="s18"><Data ss:Type="String">중갑: 모든 저항 점수에 %1 방어구 모든 저항 점수 추가</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -5394,8 +5421,8 @@
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s21"><Data ss:Type="String">ui_eim_pray_on_low_health_all_resistances</Data></Cell>
-    <Cell ss:StyleID="s25"><Data ss:Type="String">When your Health is below %2, all nearby Allies gain %1 additional All Resistances Score</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">플레이어 생명력이 %2 미만일 때 모든 주변 아군이 추가 저항 점수 %1 획득</Data></Cell>
+    <Cell ss:StyleID="s25"><Data ss:Type="String">When your Health is below %2, all nearby Allies gain %1 additional All Resistances Score during %3s. %4s Cooldown</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">플레이어 생명력이 %2 미만일 때 %3초 동안 모든 주변 아군이 추가 저항 점수 %1 획득. 재사용 대기시간 %4초</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -5430,7 +5457,7 @@
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s21"><Data ss:Type="String">ui_eim_can_proc_attunements</Data></Cell>
-    <Cell ss:StyleID="s25"><Data ss:Type="String">Skills that inflict Fire, Frost, or Lightning Damage grant passive Bonuses called &quot;Accords&quot;. Up to %1 &quot;Accord(s)&quot; can be active simultaneously. Triggered &quot;Accords&quot; cannot be changed during %2s</Data></Cell>
+    <Cell ss:StyleID="s25"><Data ss:Type="String">Skills that inflict Fire, Frost, or Lightning Damage grant passive Bonuses called &quot;Accords.&quot; Up to %1 &quot;Accord(s)&quot; can be active simultaneously. Triggered &quot;Accords&quot; cannot be changed during %2s</Data></Cell>
     <Cell ss:StyleID="s18"><Data ss:Type="String">화염, 냉기 또는 번개 상태 이상을 일으키는 기술에 '조화'라는 지속 추가 효과가 부여됩니다. 최대 %1개의 '조화'를 동시에 활성화할 수 있습니다. 발동된 '조화'는 %2초 동안 변경 안 됨</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -5475,8 +5502,8 @@
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s18"><Data ss:Type="String">ui_eim_meteor_on_casting_fire_skill</Data></Cell>
-    <Cell ss:StyleID="s25"><Data ss:Type="String">Launch a Meteor at the targeted location when a Fire Skill is used. The Meteor deals %1 Weapon Damage. %4s Cooldown</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">화염 기술을 시전하면 대상 위치에 %1의 확률로 유성우를 시전합니다. 재사용 대기시간 %4초</Data></Cell>
+    <Cell ss:StyleID="s25"><Data ss:Type="String">Launch a Meteor at the targeted location when a Fire Skill is used. The Meteor deals %3 Weapon Damage. %4s Cooldown</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">화염 기술을 시전하면 대상 위치에 %3의 확률로 유성우를 시전합니다. 재사용 대기시간 %4초</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -5484,8 +5511,8 @@
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s21"><Data ss:Type="String">ui_eim_frost_lance_on_casting_frost_skill</Data></Cell>
-    <Cell ss:StyleID="s25"><Data ss:Type="String">Launch a Frost Lance at the targeted location when a Frost Skill is used. The Frost Lance deals %1 Weapon Damage. %4s Cooldown</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">냉기 기술을 시전하면 대상 위치에 %1의 확률로 얼음창을 시전합니다. 재사용 대기시간 %4초</Data></Cell>
+    <Cell ss:StyleID="s25"><Data ss:Type="String">Launch a Frost Lance at the targeted location when a Frost Skill is used. The Frost Lance deals %3 Weapon Damage. %4s Cooldown</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">냉기 기술을 시전하면 대상 위치에 %3의 확률로 얼음창을 시전합니다. 재사용 대기시간 %4초</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -5493,8 +5520,35 @@
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s21"><Data ss:Type="String">ui_eim_thunderstrike_on_casting_lightning_skill</Data></Cell>
-    <Cell ss:StyleID="s25"><Data ss:Type="String">Launch a Chain Lightning at the targeted location when a Lightning Skill is used. The Chain Lightning deals %1 Weapon Damage. %4s Cooldown</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">번개 기술을 시전하면 대상 위치에 %1의 확률로 연쇄 번개를 시전합니다. 재사용 대기시간 %4초</Data></Cell>
+    <Cell ss:StyleID="s25"><Data ss:Type="String">Launch a Chain Lightning at the targeted location when a Lightning Skill is used. The Chain Lightning deals %3 Weapon Damage. %4s Cooldown</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">번개 기술을 시전하면 대상 위치에 %3의 확률로 연쇄 번개를 시전합니다. 재사용 대기시간 %4초</Data></Cell>
+    <Cell ss:StyleID="s18"/>
+    <Cell ss:StyleID="s18"/>
+    <Cell ss:StyleID="s18"/>
+    <Cell ss:StyleID="s18"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s21"><Data ss:Type="String">ui_eim_meteor_on_casting_fire_skill_moon</Data></Cell>
+    <Cell ss:StyleID="s25"><Data ss:Type="String">Omnitempest's Meteor now deals %3 Weapon Damage. %4s Cooldown</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">이제 전지한 폭풍의 유성우가 %3의 무기 피해를 줍니다. 재사용 대기시간 %4초</Data></Cell>
+    <Cell ss:StyleID="s18"/>
+    <Cell ss:StyleID="s18"/>
+    <Cell ss:StyleID="s18"/>
+    <Cell ss:StyleID="s18"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s21"><Data ss:Type="String">ui_eim_frost_lance_on_casting_frost_skill_moon</Data></Cell>
+    <Cell ss:StyleID="s25"><Data ss:Type="String">Omnitempest's Frost Lance now deals %3 Weapon Damage. %4s Cooldown</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">이제 전지한 폭풍의 얼음창이 %3의 무기 피해를 줍니다. 재사용 대기시간 %4초</Data></Cell>
+    <Cell ss:StyleID="s18"/>
+    <Cell ss:StyleID="s18"/>
+    <Cell ss:StyleID="s18"/>
+    <Cell ss:StyleID="s18"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s21"><Data ss:Type="String">ui_eim_thunderstrike_on_casting_lightning_skill_moon</Data></Cell>
+    <Cell ss:StyleID="s25"><Data ss:Type="String">Omnitempest's Chain Lightning now deals %3 Weapon Damage. %4s Cooldown</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">이제 전지한 폭풍의 번개 기술이 %3의 무기 피해를 줍니다. 재사용 대기시간 %4초</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -5511,7 +5565,7 @@
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s18"><Data ss:Type="String">ui_eim_explosion_on_low_willpower_damage</Data></Cell>
-    <Cell ss:StyleID="s25"><Data ss:Type="String">Damage from the Elementary Destabilization explosion is now based on 30% of your maximum Health or Force Shield (whichever the highest)</Data></Cell>
+    <Cell ss:StyleID="s25"><Data ss:Type="String">Damage from the Elementary Destabilization explosion is now based on %1 of your maximum Health or Force Shield (whichever the highest)</Data></Cell>
     <Cell ss:StyleID="s18"><Data ss:Type="String">불안정한 원소로 발생한 폭발이 10% 추가 피해를 입힙니다.</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -5592,7 +5646,7 @@
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s21"><Data ss:Type="String">ui_eim_dead_enemies_may_spawn_green_globes</Data></Cell>
-    <Cell ss:StyleID="s25"><Data ss:Type="String">Enemies that die in %1m radius around you have %2 chance to drop green globes. Picking up green globes gives you an additional %3 Damage as Poison Damage per green globe during %4s</Data></Cell>
+    <Cell ss:StyleID="s25"><Data ss:Type="String">Enemies that die in %1m radius around you have %2 chance to drop green globes. Picking up green globes gives you an additional %3 Damage as Toxic Damage per green globe during %4s</Data></Cell>
     <Cell ss:StyleID="s18"><Data ss:Type="String">사용자 %1m 반경에서 사망한 적이 %2의 확률로 녹색 구체를 떨어뜨립니다. 녹색 구체를 주우면 %4초 동안 %3 추가 독성 피해가 제공됩니다.</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -5601,7 +5655,7 @@
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s21"><Data ss:Type="String">ui_eim_dead_summons_may_spawn_green_globes</Data></Cell>
-    <Cell ss:StyleID="s25"><Data ss:Type="String">Summons that die in a %1m radius also have %2 chance to drop green globes. Picking up green globes gives you an additional %3 Damage as Poison Damage per green globe during %4s</Data></Cell>
+    <Cell ss:StyleID="s25"><Data ss:Type="String">Summons that die in a %1m radius also have %2 chance to drop green globes. Picking up green globes gives you an additional %3 Damage as Toxic Damage per green globe during %4s</Data></Cell>
     <Cell ss:StyleID="s18"><Data ss:Type="String">%1m 반경 안에서 사망한 소환물도 %2의 확률로 녹색 구체를 떨어뜨립니다. 장의사가 %4초 동안 %3 추가 독성 피해를 부여합니다.</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -5666,6 +5720,15 @@
     <Cell ss:StyleID="s21"><Data ss:Type="String">ui_eim_life_ceil_from_force_shield</Data></Cell>
     <Cell ss:StyleID="s25"><Data ss:Type="String">Health cannot exceed %1 of maximum Force Shield</Data></Cell>
     <Cell ss:StyleID="s18"><Data ss:Type="String">생명력이 최대 힘의 방패의 %1를 초과할 수 없습니다.</Data></Cell>
+    <Cell ss:StyleID="s18"/>
+    <Cell ss:StyleID="s18"/>
+    <Cell ss:StyleID="s18"/>
+    <Cell ss:StyleID="s18"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s21"><Data ss:Type="String">ui_eim_life_ceil_from_force_shield_moon</Data></Cell>
+    <Cell ss:StyleID="s25"><Data ss:Type="String">Adds %1 to the maximum Health allowed by Masochistic Effigy</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">피학성애의 인형에 의한 최대 생명력이 %1 증가</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -5772,8 +5835,8 @@
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s21"><Data ss:Type="String">ui_eim_stack_bullet_uses_mechanic</Data></Cell>
-    <Cell ss:StyleID="s25"><Data ss:Type="String">You gain 1 point of &quot;Annointed Ammunition&quot; every %1s. When you use a Projectile Skill, %2 &quot;Annointed Ammunition&quot; point(s) are consumed</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">1초마다 1 '축성받은 탄약' 점수를 획득합니다. 투사체 기술 사용 시, %2 '축성받은 탄약 점수 소모</Data></Cell>
+    <Cell ss:StyleID="s25"><Data ss:Type="String">You gain 1 point of &quot;Anointed Ammunition&quot; every %1s. When you use a Projectile Skill, 1 &quot;Anointed Ammunition&quot; point is consumed</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">1초마다 '축성받은 탄약' 점수 1점을 획득합니다. 투사체 기술 사용 시, '축성받은 탄약' %1점 소모</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -5781,7 +5844,7 @@
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s21"><Data ss:Type="String">ui_eim_stack_bullet_charges_on_dodge_roll</Data></Cell>
-    <Cell ss:StyleID="s25"><Data ss:Type="String">When you complete an Active Dodge, %1 &quot;Annointed Ammunition&quot; point(s) is refilled</Data></Cell>
+    <Cell ss:StyleID="s25"><Data ss:Type="String">When you complete an Active Dodge, %1 &quot;Anointed Ammunition&quot; point(s) is refilled</Data></Cell>
     <Cell ss:StyleID="s18"><Data ss:Type="String">활성 회피 완료 시, %1 '축성받은 탄약 점수 충전</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -5790,7 +5853,7 @@
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s21"><Data ss:Type="String">ui_eim_stack_bullet_charges_on_critical</Data></Cell>
-    <Cell ss:StyleID="s25"><Data ss:Type="String">When you deal a Critical Hit, %1 &quot;Annointed Ammunition&quot; point(s) is refilled</Data></Cell>
+    <Cell ss:StyleID="s25"><Data ss:Type="String">When you deal a Critical Hit, %1 &quot;Anointed Ammunition&quot; point(s) is refilled</Data></Cell>
     <Cell ss:StyleID="s18"><Data ss:Type="String">치명타 피해를 입히면, %1 '축성받은 탄약 점수 충전</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -5799,7 +5862,7 @@
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s21"><Data ss:Type="String">ui_eim_stack_bullet_proj_damage</Data></Cell>
-    <Cell ss:StyleID="s25"><Data ss:Type="String">Each point of &quot;Annointed Ammunition&quot; gives you %1 Projectile Damage</Data></Cell>
+    <Cell ss:StyleID="s25"><Data ss:Type="String">Each point of &quot;Anointed Ammunition&quot; gives you %1 Projectile Damage</Data></Cell>
     <Cell ss:StyleID="s18"><Data ss:Type="String">&quot;축성받은 탄약&quot; 점수마다 투사체 피해 %1 증가</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -5808,7 +5871,7 @@
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s21"><Data ss:Type="String">ui_eim_stack_bullet_melee_damage</Data></Cell>
-    <Cell ss:StyleID="s25"><Data ss:Type="String">Each empty &quot;Annointed Ammunition&quot; point gives you %1 Melee Damage</Data></Cell>
+    <Cell ss:StyleID="s25"><Data ss:Type="String">Each empty &quot;Anointed Ammunition&quot; point gives you %1 Melee Damage</Data></Cell>
     <Cell ss:StyleID="s18"><Data ss:Type="String">소모된 &quot;축성받은 탄약&quot; 점수마다 근접 피해 %1 증가</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -5889,7 +5952,7 @@
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s21"><Data ss:Type="String">ui_eim_stack_gadget_uses_mechanic</Data></Cell>
-    <Cell ss:StyleID="s25"><Data ss:Type="String">You generate %2 &quot;Power Charge&quot; per second and Basic Attacks refill %1 &quot;Power Charge&quot;. Device and Lightning Skills consume %4 &quot;Power Charge&quot; points. Capped between -%3 and %3 points</Data></Cell>
+    <Cell ss:StyleID="s25"><Data ss:Type="String">You generate %2 &quot;Power Charge&quot; per second and Basic Attacks refill %1 &quot;Power Charge.&quot; Device and Lightning Skills consume %4 &quot;Power Charge&quot; points. Capped between -%3 and %3 points</Data></Cell>
     <Cell ss:StyleID="s18"><Data ss:Type="String">초당 %2의 '전력 충전'을 생성하고 기본 공격이 %1의 '전력 충전'을 충전합니다. 장치 및 번개 기술이 %4의 '전력 충전' 점수를 소모합니다. -%3~+%3점으로 제한됩니다</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -5934,7 +5997,7 @@
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s21"><Data ss:Type="String">ui_eim_stack_balance_uses_mechanic</Data></Cell>
-    <Cell ss:StyleID="s25"><Data ss:Type="String">You have %1 points shared between &quot;Lure of Light&quot; and &quot;Lure of Darkness&quot;. Spells convert a &quot;Lure of Light&quot; point into &quot;Lure of Darkness&quot;. Attack Skills convert a &quot;Lure of Darkness&quot; point into &quot;Lure of Light&quot;</Data></Cell>
+    <Cell ss:StyleID="s25"><Data ss:Type="String">You have %1 points shared between &quot;Lure of Light&quot; and &quot;Lure of Darkness.&quot; Spells convert a &quot;Lure of Light&quot; point into &quot;Lure of Darkness.&quot; Attack Skills convert a &quot;Lure of Darkness&quot; point into &quot;Lure of Light&quot;</Data></Cell>
     <Cell ss:StyleID="s18"><Data ss:Type="String">'빛의 유인'과 '어둠의 유인'이 %1점을 공유합니다. 주문이 '빛의 유인' 점수를 '어둠의 유인' 점수로 전환합니다. 공격 기술이 '어둠의 유인' 점수를 '빛의 유인' 점수로 전환합니다.</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -5979,8 +6042,8 @@
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s18"><Data ss:Type="String">ui_eim_leave_decoy_on_dodgeroll_explosion</Data></Cell>
-    <Cell ss:StyleID="s25"><Data ss:Type="String">The Decoy left by an Active Dodge explodes when it is destroyed, dealing Damage in a %2m radius</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">활성 회피로 남긴 분신이 파괴되면 폭발하여 %2m 반경에 피해를 입힙니다.</Data></Cell>
+    <Cell ss:StyleID="s25"><Data ss:Type="String">The Decoy left by an Active Dodge explodes when it expires, dealing Damage in a %2m radius</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">활성 회피로 남긴 분신의 시간이 만료되면 폭발하여 %2m 반경에 피해를 입힙니다.</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -6040,6 +6103,33 @@
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
    </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s21"><Data ss:Type="String">ui_eim_speed_boost_on_active_dodge</Data></Cell>
+    <Cell ss:StyleID="s25"><Data ss:Type="String">After using the Active Dodge, receive a %1 Movement Speed bonus for %3s</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">활성 회피를 사용한 후, %3초 동안 %1의 추가 이동 속도를 얻습니다.</Data></Cell>
+    <Cell ss:StyleID="s18"/>
+    <Cell ss:StyleID="s18"/>
+    <Cell ss:StyleID="s18"/>
+    <Cell ss:StyleID="s18"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s21"><Data ss:Type="String">ui_SpeedOnActiveDodge_Title</Data></Cell>
+    <Cell ss:StyleID="s25"><Data ss:Type="String">Evasion Velocity</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">회피 속도</Data></Cell>
+    <Cell ss:StyleID="s18"/>
+    <Cell ss:StyleID="s18"/>
+    <Cell ss:StyleID="s18"/>
+    <Cell ss:StyleID="s18"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s21"><Data ss:Type="String">ui_SpeedOnActiveDodge_Desc</Data></Cell>
+    <Cell ss:StyleID="s25"><Data ss:Type="String">Movement Speed bonus</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">추가 이동 속도</Data></Cell>
+    <Cell ss:StyleID="s18"/>
+    <Cell ss:StyleID="s18"/>
+    <Cell ss:StyleID="s18"/>
+    <Cell ss:StyleID="s18"/>
+   </Row>
    <Row ss:AutoFitHeight="0" ss:Height="14.25">
     <Cell ss:StyleID="s17"><Data ss:Type="String">Uniques</Data></Cell>
     <Cell ss:StyleID="s17"/>
@@ -6051,7 +6141,7 @@
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s22"><Data ss:Type="String">ui_eim_freeze_chance_to_crit</Data></Cell>
-    <Cell ss:StyleID="s25"><Data ss:Type="String">If your Hit has Freeze Chance, %1 of its Freeze Chance become Critical Chance. You can't Freeze Enemies anymore</Data></Cell>
+    <Cell ss:StyleID="s25"><Data ss:Type="String">If your Hit has Freeze Chance, %1 of its Freeze Chance becomes Critical Chance. You can't Freeze Enemies anymore</Data></Cell>
     <Cell ss:StyleID="s18"><Data ss:Type="String">적중 시 적이 빙결되는 경우, 빙결 확률의 %1이(가) 치명타 확률이 됩니다. 더는 적을 빙결할 수 없습니다.</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -6177,8 +6267,8 @@
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s21"><Data ss:Type="String">ui_eim_explosion_on_target_kill</Data></Cell>
-    <Cell ss:StyleID="s25"><Data ss:Type="String">Enemies explode in an Area of Effect when they are killed and deal %1 Weapon Damage</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">효과 범위 안의 적이 사망 시 폭발하며 %1의 무기 피해를 입힙니다.</Data></Cell>
+    <Cell ss:StyleID="s25"><Data ss:Type="String">Enemies explode in an Area of Effect when they are killed and deal %3 Weapon Damage</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">효과 범위 안의 적이 사망 시 폭발하며 %3의 무기 피해를 입힙니다.</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -6186,8 +6276,8 @@
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s21"><Data ss:Type="String">ui_eim_explosion_on_globe_pickup</Data></Cell>
-    <Cell ss:StyleID="s25"><Data ss:Type="String">Globes explode in an Area of Effect when they are picked up and deal %1 Weapon Damage</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">효과 범위 안의 구체를 획득하면 폭발하며 %1의 무기 피해를 입힙니다.</Data></Cell>
+    <Cell ss:StyleID="s25"><Data ss:Type="String">Globes explode in an Area of Effect when they are picked up and deal %3 Weapon Damage</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">효과 범위 안의 구체를 획득하면 폭발하며 %3의 무기 피해를 입힙니다.</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -6196,7 +6286,7 @@
    <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s21"><Data ss:Type="String">ui_eim_stamina_regen_on_critical_hit</Data></Cell>
     <Cell ss:StyleID="s25"><Data ss:Type="String">Critical Hits increase your Stamina regeneration rate by %1 during 3s</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">치명타 공격으로 3초 동안 %1의 속도로 지구력 재생&#10;</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">치명타 공격으로 3초 동안 %1의 속도로 지구력 재생</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -6375,7 +6465,7 @@
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s18"><Data ss:Type="String">ui_HuntReward_LC_Armor_Legendary</Data></Cell>
-    <Cell ss:StyleID="s27"><Data ss:Type="String">Your Prey will drop a Legendary Armor with a Tributary Affix</Data></Cell>
+    <Cell ss:StyleID="s27"><Data ss:Type="String">Your Prey will drop a Legendary Armour with a Tributary Affix</Data></Cell>
     <Cell ss:StyleID="s18"><Data ss:Type="String">사냥감이 공물 접사를 가진 전설 방어구를 떨어뜨립니다.</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -6438,7 +6528,7 @@
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s18"><Data ss:Type="String">ui_HuntReward_LC_Armor_Rare_1</Data></Cell>
-    <Cell ss:StyleID="s27"><Data ss:Type="String">Your Prey will drop a Rare Armor with a Tributary Affix</Data></Cell>
+    <Cell ss:StyleID="s27"><Data ss:Type="String">Your Prey will drop a Rare Armour with a Tributary Affix</Data></Cell>
     <Cell ss:StyleID="s18"><Data ss:Type="String">사냥감이 공물 접사를 가진 희귀 방어구를 떨어뜨립니다.</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -6447,7 +6537,7 @@
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s18"><Data ss:Type="String">ui_HuntReward_LC_Armor_Rare_2</Data></Cell>
-    <Cell ss:StyleID="s27"><Data ss:Type="String">Your Prey will drop 2 Rare Armors with a Tributary Affix</Data></Cell>
+    <Cell ss:StyleID="s27"><Data ss:Type="String">Your Prey will drop 2 Rare Armours with a Tributary Affix</Data></Cell>
     <Cell ss:StyleID="s18"><Data ss:Type="String">사냥감이 공물 접사를 가진 희귀 방어구 2개를 떨어뜨립니다.</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -6456,7 +6546,7 @@
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s18"><Data ss:Type="String">ui_HuntReward_LC_Armor_Rare_3</Data></Cell>
-    <Cell ss:StyleID="s27"><Data ss:Type="String">Your Prey will drop 3 Rare Armors with a Tributary Affix</Data></Cell>
+    <Cell ss:StyleID="s27"><Data ss:Type="String">Your Prey will drop 3 Rare Armours with a Tributary Affix</Data></Cell>
     <Cell ss:StyleID="s18"><Data ss:Type="String">사냥감이 공물 접사를 가진 희귀 방어구 3개를 떨어뜨립니다.</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -6465,7 +6555,7 @@
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s18"><Data ss:Type="String">ui_HuntReward_LC_Armor_Rare_4</Data></Cell>
-    <Cell ss:StyleID="s27"><Data ss:Type="String">Your Prey will drop 4 Rare Armors with a Tributary Affix</Data></Cell>
+    <Cell ss:StyleID="s27"><Data ss:Type="String">Your Prey will drop 4 Rare Armours with a Tributary Affix</Data></Cell>
     <Cell ss:StyleID="s18"><Data ss:Type="String">사냥감이 공물 접사를 가진 희귀 방어구 4개를 떨어뜨립니다.</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -6582,7 +6672,7 @@
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s23"><Data ss:Type="String">ui_OsharaBuff_Title</Data></Cell>
-    <Cell ss:StyleID="s27"><Data ss:Type="String">Oshara's Vigor</Data></Cell>
+    <Cell ss:StyleID="s27"><Data ss:Type="String">Oshara's Vigour</Data></Cell>
     <Cell ss:StyleID="s18"><Data ss:Type="String">오스하라의 활력</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -6615,7 +6705,7 @@
    <Panes>
     <Pane>
      <Number>3</Number>
-     <ActiveRow>718</ActiveRow>
+     <ActiveRow>728</ActiveRow>
      <ActiveCol>6</ActiveCol>
     </Pane>
    </Panes>

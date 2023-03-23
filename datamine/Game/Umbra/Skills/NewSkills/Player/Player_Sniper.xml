@@ -3,11 +3,11 @@
     <WeaponRequirements Requirements="ranged,lightning" />
     <Projectile BaseDamageBonusPercentPerNonUsedProjectile="30" />
     <Animation ActionString="player_skill_sniper_in" AnimationDrivenMovement="1" />
-    <CastingParams CastBone="R_Weapon_Bone" CanCastWhileMoving="0" MaximumTurnRate="30" ShouldMoveInRange="0" />
-    <HUD HUDPicture="../u_resources/spells/Active_Skills/sniper_Lightning.png" UIName="@ui_AST_Sniper" Lore="@ui_AST_Sniper_Lore" ActiveEffectTitle="" ActiveEffectDesc="" ASTTreeNumber="8" ShowParamsInAST="Cost,ROSTime,Cooldown,Range,DamageDetail,DamageWeapon,DamageCritical,StatusAilmentsChance,Explosion,SpecificSniper" ShowParamsInTooltip="Cost,Cooldown,DamageOverview,StatusAilmentsChance,SpecificSniper" />
+    <CastingParams CastBone="R_Weapon_Bone" CanCastWhileMoving="0" MaximumTurnRate="30" ShouldMoveInRange="0" CancellableByDefault="1" />
+    <HUD HUDPicture="../u_resources/spells/Active_Skills/sniper_Lightning.png" UIName="@ui_AST_Sniper" Lore="@ui_AST_Sniper_Lore" ActiveEffectTitle="" ActiveEffectDesc="" ASTTreeNumber="8" ShowParamsInAST="Cost,ROSTime,Cooldown,Range,DamageDetail,DamageWeapon,DamageCritical,StatusAilmentsChance,Explosion,SpecificSniper,Projectiles" ShowParamsInTooltip="Cost,Cooldown,DamageOverview,StatusAilmentsChance,SpecificSniper" />
     <Enneract PickableParticle_MoveToGround="U_CommonVFX_02.Esseract.Esseract_Projectile.Lightning" PickableParticle_OnGround_Shape="U_CommonVFX_02.Esseract.Esseract_Shape.Circle_Lightning" PickableParticle_OnGround_Damage="U_CommonVFX_02.Esseract.Esseract_Color.Lightning" PickableParticle_OnGround_Symbol="U_CommonVFX_02.Esseract.Esseract_Symbol.EZANEAL" PickableParticle_OnGround_Indicator="U_CommonVFX_02.Esseract.Esseract_Indicator.Lightning" PickableParticle_OnGround_Pickup="U_CommonVFX_02.Esseract.Esseract_Loot.Lightning" SkillLearningParticle="U_CommonVFX.Skill_Learn.Skill_Learn_Lightning" Inventory_HUDPicture="../u_resources/enneracts/sniper.png" Inventory_LoreDesc="@ui_enneract_lore" />
     <Aggression TargetValueOnHit="0" />
-    <DamageWeapon WeaponMultiplier="1.5" />
+    <DamageWeapon WeaponMultiplier="1.7" />
     <Damage_Conversion>
       <Entry From="physical" To="lightning" ConversionRate="100" />
     </Damage_Conversion>
@@ -46,8 +46,8 @@
       <Particle Key="FinalCharging" Name="U_Character_02.Sniper.Sniper_Charging_Trigger" Direction="0,1,0" Scale="0.75" Bone="R_Weapon_Bone" />
       <Particle Key="FinalChargingPerfect" Name="U_Character_02.Sniper.Sniper_Charging_Trigger" Direction="0,1,0" Scale="1.3" Bone="R_Weapon_Bone" />
     </ParticleList>
-    <VisualFeedback TrailPresetBase="default" FeedbackPresetBase="Player_skill_leap" BloodDecalOrientation="forward" />
-    <SoundTrigger OnAnimCast="Play_Skill_Sniper_Shoot" OnHit="Play_Skill_Sniper_Impact_Lightning" OnInterrupt="Stop_Skill_Sniper_Charging_Loop" />
+    <VisualFeedback TrailPresetBase="default" FeedbackPresetBase="Player_skill_sniper" BloodDecalOrientation="forward" />
+    <SoundTrigger OnAnimCast="Play_Skill_Sniper_Shoot" OnHit="Play_Skill_Sniper_Impact_Lightning" OnReset="Stop_Skill_Sniper_Charging_Loop" OnInterrupt="Stop_Skill_Sniper_Charging_Loop" OnKill="Play_OnKill_Impact_Lethal_Bullet" />
     <Specific_Sniper PerfectTimingThreshold="0.0" PerfectTimingDamageMultiplier="1.5" CanTriggerPerfectAtStartingStep="1" AntiSpamTimer="0.7">
       <ChargeSound Trigger="Play_Skill_Sniper_Charge_Phase1" />
       <ChargeSound Trigger="Play_Skill_Sniper_Charge_Phase2" />
@@ -55,11 +55,11 @@
       <ChargeSound Trigger="Play_Skill_Sniper_Charge_Phase4" />
       <ChargeSound Trigger="Play_Skill_Sniper_Charge_Phase5" />
     </Specific_Sniper>
-    <ChargedSkill WindupAnim="player_skill_sniper_in" FollowupAnim="player_skill_sniper_out">
-      <Step TimeToReachStep="0.66" AssociatedAnim="player_skill_sniper_loop_01" WeaponDamagePercent="100" />
-      <Step TimeToReachStep="0.66" AssociatedAnim="player_skill_sniper_loop_02" WeaponDamagePercent="200" />
-      <Step TimeToReachStep="0.66" AssociatedAnim="player_skill_sniper_loop_03" WeaponDamagePercent="400" />
-      <Step TimeToReachStep="0.66" AssociatedAnim="player_skill_sniper_loop_03" WeaponDamagePercent="700" />
+    <ChargedSkill WindupAnim="player_skill_sniper_in" FollowupAnim="player_skill_sniper_out_02" AlternateFollowupAnim="player_skill_sniper_out">
+      <Step TimeToReachStep="0.5" AssociatedAnim="player_skill_sniper_loop_01" WeaponDamagePercent="200" />
+      <Step TimeToReachStep="0.66" AssociatedAnim="player_skill_sniper_loop_02" WeaponDamagePercent="350" />
+      <Step TimeToReachStep="0.80" AssociatedAnim="player_skill_sniper_loop_03" WeaponDamagePercent="500" />
+      <Step TimeToReachStep="1" AssociatedAnim="player_skill_sniper_loop_03" WeaponDamagePercent="900" />
     </ChargedSkill>
     <ResourceCost RageCost="-250" RageCostPerLevel="0" ROSTransfertDuration="2.0" />
   </Skill>
@@ -67,82 +67,81 @@
     <HUD UIName="@ui_AST_Sniper" Lore="@ui_AST_Sniper_Lore" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_Alpha.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_Alpha.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_Alpha.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_Alpha.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_Alpha.png" HUDPictureVariant_InnerIcon="../u_resources/spells/Active_Skills/sniper_Lightning.png" VariantBottomPanel="1" />
   </Skill>
   <Skill UID="player_Sniper_variant_1" ESkill="default_variant">
-    <HUD UIName="@ui_Variant_Sniper_variant_1" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_003.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_003.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_003.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_003.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_003.png" ShowParamsInTooltip="SpecificSniper" />
+    <HUD UIName="@ui_Variant_Sniper_variant_1" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_003.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_003.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_003.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_003.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_003.png" ShowParamsInTooltip="SpecificSniper" Category="Combat" />
     <Specific_Sniper PerfectTimingThreshold="0.25" />
   </Skill>
   <Skill UID="player_Sniper_variant_2" ESkill="default_variant">
-    <HUD UIName="@ui_Variant_Sniper_variant_2" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_003.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_003.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_003.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_003.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_003.png" ShowParamsInTooltip="SpecificSniper" />
+    <HUD UIName="@ui_Variant_Sniper_variant_2" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_003.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_003.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_003.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_003.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_003.png" ShowParamsInTooltip="SpecificSniper" Category="Mastery" />
     <ChargedSkill WindupAnim="player_skill_sniper_in" FollowupAnim="player_skill_sniper_out">
       <Step TimeToReachStep="0.001" AssociatedAnim="player_skill_sniper_loop_01" WeaponDamagePercent="0" />
       <Step TimeToReachStep="0.001" AssociatedAnim="player_skill_sniper_loop_02" WeaponDamagePercent="0" />
       <Step TimeToReachStep="0.001" AssociatedAnim="player_skill_sniper_loop_03" WeaponDamagePercent="0" />
       <Step TimeToReachStep="0.001" AssociatedAnim="player_skill_sniper_loop_03" WeaponDamagePercent="0" />
-      <Step TimeToReachStep="0.66" AssociatedAnim="player_skill_sniper_loop_03" WeaponDamagePercent="1100" />
+      <Step TimeToReachStep="0.5" AssociatedAnim="player_skill_sniper_loop_03" WeaponDamagePercent="1100" />
     </ChargedSkill>
   </Skill>
   <Skill UID="player_Sniper_variant_3" ESkill="default_variant">
-    <HUD UIName="@ui_Variant_Sniper_variant_3" Lore="@ui_Variant_Sniper_variant_3_lore" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_005.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_005.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_005.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_005.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_005.png" ShowParamsInTooltip="SpecificSniper,DamageWeapon" />
+    <HUD UIName="@ui_Variant_Sniper_variant_3" Lore="@ui_Variant_Sniper_variant_3_lore" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_005.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_005.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_005.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_005.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_005.png" ShowParamsInTooltip="SpecificSniper,DamageWeapon" Category="Mastery" />
     <DamageWeapon WeaponMultiplier="2" />
     <Specific_Sniper FireOnlyIfMax="1" />
   </Skill>
   <Skill UID="player_Sniper_variant_4" ESkill="default_variant">
-    <HUD UIName="@ui_Variant_Sniper_variant_4" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_003.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_003.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_003.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_003.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_003.png" ShowParamsInTooltip="SpecificSniper" />
+    <HUD UIName="@ui_Variant_Sniper_variant_4" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_003.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_003.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_003.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_003.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_003.png" ShowParamsInTooltip="SpecificSniper" Category="Utility" />
     <Specific_Sniper GiveRageAtFirstLevel="350" />
   </Skill>
   <Skill UID="player_Sniper_variant_5" ESkill="default_variant">
-    <HUD UIName="@ui_Variant_Sniper_variant_5" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_003.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_003.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_003.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_003.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_003.png" ShowParamsInTooltip="SpecificSniper" />
-    <DamageZone Duration="5" RateOfFire="0.3" />
+    <HUD UIName="@ui_Variant_Sniper_variant_5" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_003.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_003.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_003.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_003.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_003.png" ShowParamsInTooltip="SpecificSniper" Category="Mastery" />
+    <DamageZone Duration="5" RateOfFire="0.66" />
     <StatusAilment AilmentEffectiveness="33" />
-    <Specific_Sniper AddTrail="1" TrailDamageMultiplier="0.3" />
+    <Specific_Sniper AddTrail="1" TrailDamageMultiplier="0.1" />
   </Skill>
   <Skill UID="player_Sniper_variant_6" ESkill="default_variant">
-    <HUD UIName="@ui_Variant_Sniper_variant_6" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_001.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_001.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_001.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_001.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_001.png" ShowParamsInTooltip="SpecificSniper,StatusAilmentsChance" />
+    <HUD UIName="@ui_Variant_Sniper_variant_6" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_001.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_001.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_001.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_001.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_001.png" ShowParamsInTooltip="SpecificSniper,StatusAilmentsChance" Category="Utility" />
     <StatusAilment>
       <stasis Chance="100" ChanceMode="override" Duration="5" DurationMode="override" Stacks="1" StacksMode="override" />
     </StatusAilment>
     <Specific_Sniper ApplyStasis="1" />
   </Skill>
   <Skill UID="player_Sniper_variant_7" ESkill="default_variant">
-    <HUD UIName="@ui_Variant_Sniper_variant_7" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_003.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_003.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_003.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_003.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_003.png" ShowParamsInTooltip="SpecificSniper" />
+    <HUD UIName="@ui_Variant_Sniper_variant_7" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_003.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_003.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_003.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_003.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_003.png" ShowParamsInTooltip="SpecificSniper" Category="Utility" />
     <Specific_Sniper ApplyPassive="1" PassiveSkillName="AST_Sniper_RegenStamina" />
   </Skill>
   <Skill UID="player_Sniper_variant_8" ESkill="default_variant">
-    <HUD UIName="@ui_Variant_Sniper_variant_8" Lore="@ui_Variant_Sniper_variant_8_lore" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_005.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_005.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_005.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_005.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_005.png" ShowParamsInTooltip="SpecificSniper,DamageWeapon" />
+    <HUD UIName="@ui_Variant_Sniper_variant_8" Lore="@ui_Variant_Sniper_variant_8_lore" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_005.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_005.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_005.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_005.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_005.png" ShowParamsInTooltip="SpecificSniper,DamageWeapon" Category="Mastery" />
     <DamageWeapon WeaponMultiplier="0.9" />
     <Specific_Sniper ReverseShapes="1" />
   </Skill>
   <Skill UID="player_Sniper_variant_9" ESkill="default_variant">
-    <HUD UIName="@ui_Variant_Sniper_variant_9" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_003.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_003.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_003.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_003.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_003.png" ShowParamsInTooltip="SpecificSniper,DamageCritical" />
-    <DamageCritical CriticalDamageAgainstSlowed="40" CriticalDamageAgainstStasised="40" />
+    <HUD UIName="@ui_Variant_Sniper_variant_9" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_003.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_003.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_003.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_003.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_003.png" ShowParamsInTooltip="SpecificSniper,DamageCritical" Category="Combat" />
+    <DamageCritical CriticalDamageAgainstSlowed="30" CriticalDamageAgainstStasised="30" />
   </Skill>
   <Skill UID="player_Sniper_variant_10" ESkill="default_variant">
-    <HUD UIName="@ui_Variant_Sniper_variant_10" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_001.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_001.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_001.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_001.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_001.png" ShowParamsInTooltip="SpecificSniper,DamageCritical" />
+    <HUD UIName="@ui_Variant_Sniper_variant_10" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_001.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_001.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_001.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_001.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_001.png" ShowParamsInTooltip="SpecificSniper,DamageCritical" Category="Combat" />
     <DamageCritical CriticalChanceModifierPerStep="20" />
   </Skill>
   <Skill UID="player_Sniper_variant_11" ESkill="default_variant">
-    <HUD UIName="@ui_Variant_Sniper_variant_11" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_001.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_001.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_001.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_001.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_001.png" ShowParamsInTooltip="SpecificSniper,DamageCritical,DamageWeapon" />
+    <HUD UIName="@ui_Variant_Sniper_variant_11" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_001.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_001.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_001.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_001.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_001.png" ShowParamsInTooltip="SpecificSniper,DamageCritical,DamageWeapon" Category="Combat" />
     <DamageCritical CriticalDamageModifier="100" />
     <DamageWeapon WeaponMultiplier="0.9" />
   </Skill>
   <Skill UID="player_Sniper_variant_13" ESkill="default_variant">
-    <HUD UIName="@ui_Variant_Sniper_variant_13" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_001.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_001.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_001.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_001.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_001.png" ShowParamsInTooltip="SpecificSniper,StatusAilmentsChance" />
+    <HUD UIName="@ui_Variant_Sniper_variant_13" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_001.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_001.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_001.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_001.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_001.png" ShowParamsInTooltip="SpecificSniper,StatusAilmentsChance" Category="Combat" />
     <StatusAilment AllAilmentsInflictDamageIncreasePercent="40" />
   </Skill>
   <Skill UID="player_Sniper_variant_14" ESkill="default_variant">
-    <HUD UIName="@ui_Variant_Sniper_variant_14" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_001.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_001.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_001.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_001.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_001.png" ShowParamsInTooltip="SpecificSniper,StatusAilmentsChance" />
+    <HUD UIName="@ui_Variant_Sniper_variant_14" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_001.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_001.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_001.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_001.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_001.png" ShowParamsInTooltip="SpecificSniper,StatusAilmentsChance" Category="Utility" />
     <StatusAilment AilmentEffectiveness="125" />
   </Skill>
   <Skill UID="player_Sniper_variant_15" ESkill="default_variant">
-    <HUD UIName="@ui_Variant_Sniper_variant_15" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_001.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_001.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_001.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_001.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_001.png" ShowParamsInTooltip="SpecificSniper,DamageWeapon" />
+    <HUD UIName="@ui_Variant_Sniper_variant_15" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_001.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_001.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_001.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_001.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_001.png" ShowParamsInTooltip="SpecificSniper,DamageWeapon" Category="Combat" />
     <DamageWeapon WeaponMultiplier="1.15" />
   </Skill>
   <Skill UID="player_Sniper_variant_16" ESkill="default_variant">
-    <HUD UIName="@ui_Variant_Sniper_variant_16" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_001.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_001.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_001.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_001.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_001.png" ShowParamsInTooltip="SpecificSniper,Cost" />
+    <HUD UIName="@ui_Variant_Sniper_variant_16" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_001.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_001.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_001.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_001.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_001.png" ShowParamsInTooltip="SpecificSniper,Cost" Category="Utility" />
     <ResourceCost RageCost="50" />
   </Skill>
   <Skill UID="player_Sniper_variant_12" ESkill="default_variant">
     <HUD UIName="@ui_Variant_Sniper_variant_12" Lore="@ui_Variant_Sniper_variant_12_lore" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_Alpha.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_Alpha.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_Alpha.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_Alpha.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_Alpha.png" HUDPictureVariant_InnerIcon="../u_resources/spells/Active_Skills/sniper_Frost.png" ShowParamsInTooltip="SpecificSniper,DamageWeapon" HUDPicture="../u_resources/spells/Active_Skills/sniper_Frost.png" VariantBottomPanel="1" />
-    <DamageWeapon WeaponMultiplier="1.25" />
     <Damage_Conversion>
       <Entry From="physical" To="lightning" ConversionRate="-100" />
       <Entry From="physical" To="frost" ConversionRate="100" />
@@ -180,7 +179,6 @@
   </Skill>
   <Skill UID="player_Sniper_variant_17" ESkill="default_variant">
     <HUD UIName="@ui_Variant_Sniper_variant_17" Lore="@ui_Variant_Sniper_variant_17_lore" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_Alpha.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_Alpha.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_Alpha.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_Alpha.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_Alpha.png" HUDPictureVariant_InnerIcon="../u_resources/spells/Active_Skills/sniper_Rend.png" ShowParamsInTooltip="SpecificSniper,DamageWeapon" HUDPicture="../u_resources/spells/Active_Skills/sniper_Rend.png" VariantBottomPanel="1" />
-    <DamageWeapon WeaponMultiplier="1.25" />
     <Damage_Conversion>
       <Entry From="physical" To="lightning" ConversionRate="-100" />
       <Entry From="physical" To="rend" ConversionRate="100" />
@@ -218,7 +216,6 @@
   </Skill>
   <Skill UID="player_Sniper_variant_18" ESkill="default_variant">
     <HUD UIName="@ui_Variant_Sniper_variant_18" Lore="@ui_Variant_Sniper_variant_18_lore" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_Alpha.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_Alpha.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_Alpha.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_Alpha.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_Alpha.png" HUDPictureVariant_InnerIcon="../u_resources/spells/Active_Skills/sniper_Shadow.png" ShowParamsInTooltip="SpecificSniper,DamageWeapon" HUDPicture="../u_resources/spells/Active_Skills/sniper_Shadow.png" VariantBottomPanel="1" />
-    <DamageWeapon WeaponMultiplier="1.25" />
     <Damage_Conversion>
       <Entry From="physical" To="lightning" ConversionRate="-100" />
       <Entry From="physical" To="shadow" ConversionRate="100" />
@@ -255,7 +252,7 @@
     </Specific_Sniper>
   </Skill>
   <Skill UID="Player_Sniper_variant_19" ESkill="default_variant">
-    <HUD UIName="@ui_variant_Player_Sniper_variant_19" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_003.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_003.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_003.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_003.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_003.png" ShowParamsInTooltip="DamageWeapon" />
+    <HUD UIName="@ui_variant_Player_Sniper_variant_19" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_001.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_001.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_001.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_001.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_001.png" ShowParamsInTooltip="DamageWeapon" Category="Combat" />
     <DamageCritical CriticalInflictScoreModifier="40" />
   </Skill>
 </MetaData>

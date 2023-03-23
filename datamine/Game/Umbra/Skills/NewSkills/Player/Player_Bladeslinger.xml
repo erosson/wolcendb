@@ -12,17 +12,17 @@
       <Particle Key="Stuck" Name="U_Character.Skills.Bladeslinger_Stuck_Mesh_01" Direction="0,1,0" />
       <Particle Key="Disappear" Name="U_Character.Skills.Bladeslinger_Summon_01_Short" Direction="0,0,1" Scale="1" />
     </ParticleList>
-    <CastingParams CastBone="R_weapon_bone" />
+    <CastingParams CastBone="R_weapon_bone" CancellableByDefault="1" />
     <Aggression TargetValueOnHit="20" />
-    <DamageWeapon WeaponMultiplier="2" />
+    <DamageWeapon WeaponMultiplier="2.5" />
     <Cooldown Cooldown="0" CooldownPerLevel="0" />
     <Range AttackRange="25" />
     <Projectile Name="player_bladeslinger_proj" ProjectileCount="1" AngleBetweenProjectiles="20" PenetrationLimit="999">
       <AutomaticCastAngle distanceMin="2" distanceMax="7" totalAngleAtDistanceMin="120" totalAngleAtDistanceMax="120" projectileAngleAtDistanceMin="70" projectileAngleAtDistanceMax="15" />
     </Projectile>
-    <Stacks Max="2" CostMin="1" CostMax="1" StackEarningWay1="OnTick" StackEarningWayFParam1="5" StackEarningWayAmount1="1" StackEarningWayChance1="100" StackEarningWayCD1="0" StackEarningWayUIDesc1="@ui_AST_Stack_Earning_OnTick" />
+    <Stacks Max="2" CostMin="1" CostMax="1" StackEarningWay1="OnTick" StackEarningWayFParam1="4" StackEarningWayAmount1="1" StackEarningWayChance1="100" StackEarningWayCD1="0" StackEarningWayUIDesc1="@ui_AST_Stack_Earning_OnTick" />
     <Specific_Bladeslinger SetupProjectile_vTarget="0" CursorProximityTolerance=".5" />
-    <SoundTrigger OnAnimStart="PLAY_Skill_Bladeslinger_Summon" OnAnimCast="PLAY_Skill_Bladeslinger_Throw" />
+    <SoundTrigger OnAnimStart="PLAY_Skill_Bladeslinger_Summon" OnAnimCast="PLAY_Skill_Bladeslinger_Throw" OnKill="Play_OnKill_Impact_Lethal_Bullet" />
     <VisualFeedback TrailPresetBase="default" FeedbackPresetBase="Player_skill_bladeslinger" BloodDecalOrientation="forward" />
     <Collisions IgnoreTerrainCollisions="1" />
   </Skill>
@@ -30,15 +30,15 @@
     <HUD UIName="@ui_AST_Bladeslinger" Lore="@ui_AST_Bladeslinger_Lore" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_Alpha.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_Alpha.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_Alpha.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_Alpha.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_Alpha.png" HUDPictureVariant_InnerIcon="../u_resources/spells/Active_Skills/bladeslinger_Physical.png" VariantBottomPanel="1" />
   </Skill>
   <Skill UID="player_bladeslinger_variant_1" ESkill="default_variant">
-    <HUD UIName="@ui_Variant_Bladeslinger_variant_1" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_001.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_001.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_001.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_001.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_001.png" ShowParamsInTooltip="SpecificBladeslinger,DamageWeapon" />
+    <HUD UIName="@ui_Variant_Bladeslinger_variant_1" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_001.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_001.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_001.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_001.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_001.png" ShowParamsInTooltip="SpecificBladeslinger,DamageWeapon" Category="Combat" />
     <DamageWeapon WeaponMultiplier="1.15" />
   </Skill>
   <Skill UID="player_bladeslinger_variant_2" ESkill="default_variant">
-    <HUD UIName="@ui_Variant_Bladeslinger_variant_2" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_001.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_001.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_001.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_001.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_001.png" ShowParamsInTooltip="SpecificBladeslinger,Charges" />
-    <Stacks StackEarningWay1="OnTick" StackEarningWayFParam1="4" StackEarningWayAmount1="1" StackEarningWayChance1="100" StackEarningWayCD1="0" StackEarningWayUIDesc1="@ui_AST_Stack_Earning_OnTick" />
+    <HUD UIName="@ui_Variant_Bladeslinger_variant_2" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_001.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_001.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_001.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_001.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_001.png" ShowParamsInTooltip="SpecificBladeslinger,Charges" Category="Utility" />
+    <Stacks StackEarningWay1="OnTick" StackEarningWayFParam1="3" StackEarningWayAmount1="1" StackEarningWayChance1="100" StackEarningWayCD1="0" StackEarningWayUIDesc1="@ui_AST_Stack_Earning_OnTick" />
   </Skill>
   <Skill UID="player_bladeslinger_variant_3" ESkill="default_variant">
-    <HUD UIName="@ui_Variant_Bladeslinger_variant_3" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_003.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_003.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_003.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_003.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_003.png" ShowParamsInTooltip="SpecificBladeslinger" />
+    <HUD UIName="@ui_Variant_Bladeslinger_variant_3" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_003.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_003.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_003.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_003.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_003.png" ShowParamsInTooltip="SpecificBladeslinger" Category="Combat" />
     <Projectile Name="player_bladeslinger_proj_big" />
     <EventEffectOverride>
       <AnimEvent Original="U_Character.Skills.Bladeslinger_Summon_01" OverrideScale="1.6" />
@@ -51,16 +51,16 @@
     </ParticleList>
   </Skill>
   <Skill UID="player_bladeslinger_variant_4" ESkill="default_variant">
-    <HUD UIName="@ui_Variant_Bladeslinger_variant_4" Lore="@ui_Variant_Bladeslinger_variant_4_Lore" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_005.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_005.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_005.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_005.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_005.png" ShowParamsInTooltip="SpecificBladeslinger" />
+    <HUD UIName="@ui_Variant_Bladeslinger_variant_4" Lore="@ui_Variant_Bladeslinger_variant_4_Lore" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_005.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_005.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_005.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_005.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_005.png" ShowParamsInTooltip="SpecificBladeslinger" Category="Mastery" />
     <Specific_Bladeslinger SetupProjectile_vTarget="1" />
     <Projectile Name="player_bladeslinger_proj_chakram" />
   </Skill>
   <Skill UID="player_bladeslinger_variant_6" ESkill="default_variant">
-    <HUD UIName="@ui_Variant_Bladeslinger_variant_6" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_003.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_003.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_003.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_003.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_003.png" ShowParamsInTooltip="SpecificBladeslinger,Charges" />
+    <HUD UIName="@ui_Variant_Bladeslinger_variant_6" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_003.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_003.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_003.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_003.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_003.png" ShowParamsInTooltip="SpecificBladeslinger,Charges" Category="Utility" />
     <Stacks Max="1" />
   </Skill>
   <Skill UID="player_bladeslinger_variant_7" ESkill="default_variant">
-    <HUD UIName="@ui_Variant_Bladeslinger_variant_7" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_003.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_003.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_003.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_003.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_003.png" ShowParamsInTooltip="SpecificBladeslinger,Slow" />
+    <HUD UIName="@ui_Variant_Bladeslinger_variant_7" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_003.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_003.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_003.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_003.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_003.png" ShowParamsInTooltip="SpecificBladeslinger,Slow" Category="Utility" />
     <StatusEffect_MovementSpeed SlowPercent="100" Duration="2" />
     <Projectile Name="player_bladeslinger_proj_bolas" />
     <EventEffectOverride>
@@ -69,7 +69,7 @@
     </EventEffectOverride>
   </Skill>
   <Skill UID="player_bladeslinger_variant_8" ESkill="default_variant">
-    <HUD UIName="@ui_Variant_Bladeslinger_variant_8" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_003.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_003.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_003.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_003.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_003.png" ShowParamsInTooltip="SpecificBladeslinger" />
+    <HUD UIName="@ui_Variant_Bladeslinger_variant_8" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_003.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_003.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_003.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_003.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_003.png" ShowParamsInTooltip="SpecificBladeslinger" Category="Mastery" />
     <ParticleList>
       <Particle Key="TeleportIndicator" Name="U_Character.Skills.Bladeslinger_Spining_02" Offset="0,0,0" Direction="0,1,0" />
       <Particle Key="TeleportTrail" Name="U_Character.Skills.Bladeslinger_Move_01" Bone="Bip01" Offset="0,0,1.5" Direction="0,1,0" />
@@ -78,33 +78,33 @@
     <Recast Cooldown="0" />
   </Skill>
   <Skill UID="player_bladeslinger_variant_9" ESkill="default_variant">
-    <HUD UIName="@ui_Variant_Bladeslinger_variant_9" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_003.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_003.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_003.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_003.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_003.png" ShowParamsInTooltip="SpecificBladeslinger" />
-    <DamageZone Duration="3" RateOfFire="0.33" />
-    <Specific_Bladeslinger TrailRadius="1.5" TrailDamageMultiplier="0.25" />
+    <HUD UIName="@ui_Variant_Bladeslinger_variant_9" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_003.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_003.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_003.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_003.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_003.png" ShowParamsInTooltip="SpecificBladeslinger" Category="Mastery" />
+    <DamageZone Duration="3" RateOfFire="0.66" />
+    <Specific_Bladeslinger TrailRadius="1.5" TrailDamageMultiplier="0.33" />
     <StatusAilment AilmentEffectiveness="33" />
   </Skill>
   <Skill UID="player_bladeslinger_variant_10" ESkill="default_variant">
-    <HUD UIName="@ui_Variant_Bladeslinger_variant_10" Lore="@ui_Variant_Bladeslinger_variant_10_lore" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_005.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_005.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_005.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_005.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_005.png" ShowParamsInTooltip="SpecificBladeslinger" />
+    <HUD UIName="@ui_Variant_Bladeslinger_variant_10" Lore="@ui_Variant_Bladeslinger_variant_10_lore" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_005.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_005.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_005.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_005.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_005.png" ShowParamsInTooltip="SpecificBladeslinger" Category="Utility" />
     <Specific_Bladeslinger TransmitAilments="1" />
   </Skill>
   <Skill UID="player_bladeslinger_variant_11" ESkill="default_variant">
-    <HUD UIName="@ui_Variant_Bladeslinger_variant_11" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_003.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_003.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_003.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_003.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_003.png" ShowParamsInTooltip="SpecificBladeslinger" />
-    <Specific_Bladeslinger PlantedExplosionTime="0.5" ExplosionDamageMultiplier="3" ExplosionRadius="5" />
+    <HUD UIName="@ui_Variant_Bladeslinger_variant_11" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_003.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_003.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_003.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_003.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_003.png" ShowParamsInTooltip="SpecificBladeslinger" Category="Mastery" />
+    <Specific_Bladeslinger PlantedExplosionTime="0.5" ExplosionDamageMultiplier="3.5" ExplosionRadius="5" />
   </Skill>
   <Skill UID="player_bladeslinger_variant_13" ESkill="default_variant">
-    <HUD UIName="@ui_Variant_Bladeslinger_variant_13" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_001.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_001.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_001.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_001.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_001.png" ShowParamsInTooltip="SpecificBladeslinger,DamageWeapon" />
+    <HUD UIName="@ui_Variant_Bladeslinger_variant_13" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_001.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_001.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_001.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_001.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_001.png" ShowParamsInTooltip="SpecificBladeslinger,DamageWeapon" Category="Combat" />
     <DamageWeapon WeaponMultiplier="1.15" />
   </Skill>
   <Skill UID="player_bladeslinger_variant_14" ESkill="default_variant">
-    <HUD UIName="@ui_Variant_Bladeslinger_variant_14" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_001.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_001.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_001.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_001.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_001.png" ShowParamsInTooltip="SpecificBladeslinger,DamageCritical" />
+    <HUD UIName="@ui_Variant_Bladeslinger_variant_14" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_001.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_001.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_001.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_001.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_001.png" ShowParamsInTooltip="SpecificBladeslinger,DamageCritical" Category="Combat" />
     <DamageCritical CriticalInflictScoreModifier="40" />
   </Skill>
   <Skill UID="player_bladeslinger_variant_15" ESkill="default_variant">
-    <HUD UIName="@ui_Variant_Bladeslinger_variant_15" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_001.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_001.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_001.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_001.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_001.png" ShowParamsInTooltip="SpecificBladeslinger,DamageCritical" />
+    <HUD UIName="@ui_Variant_Bladeslinger_variant_15" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_001.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_001.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_001.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_001.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_001.png" ShowParamsInTooltip="SpecificBladeslinger,DamageCritical" Category="Combat" />
     <DamageCritical CriticalDamageModifier="25" />
   </Skill>
   <Skill UID="player_bladeslinger_variant_16" ESkill="default_variant">
-    <HUD UIName="@ui_Variant_Bladeslinger_variant_16" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_001.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_001.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_001.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_001.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_001.png" ShowParamsInTooltip="SpecificBladeslinger,StatusAilmentsChance" />
+    <HUD UIName="@ui_Variant_Bladeslinger_variant_16" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_001.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_001.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_001.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_001.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_001.png" ShowParamsInTooltip="SpecificBladeslinger,StatusAilmentsChance" Category="Combat" />
     <StatusAilment AllAilmentsInflictDamageIncreasePercent="40" />
   </Skill>
   <Skill UID="player_bladeslinger_variant_5" ESkill="default_variant">
@@ -123,7 +123,6 @@
     </Damage_Conversion>
     <Projectile Name="player_bladeslinger_proj_poison" />
     <WeaponRequirements Requirements="rogue,poison" />
-    <DamageWeapon WeaponMultiplier="1.25" />
     <SoundTrigger OnAnimStart="Play_Skill_Bladeslinger_Summon_Toxic" OnAnimCast="Play_Skill_Bladeslinger_Throw_Toxic" />
   </Skill>
   <Skill UID="player_bladeslinger_variant_12" ESkill="default_variant">
@@ -142,7 +141,6 @@
     </Damage_Conversion>
     <Projectile Name="player_bladeslinger_proj_frost" />
     <WeaponRequirements Requirements="rogue,frost" />
-    <DamageWeapon WeaponMultiplier="1.25" />
     <SoundTrigger OnAnimStart="Play_Skill_Bladeslinger_Summon_Frost" OnAnimCast="Play_Skill_Bladeslinger_Throw_Frost" />
   </Skill>
   <Skill UID="player_bladeslinger_variant_17" ESkill="default_variant">
@@ -161,7 +159,6 @@
     </Damage_Conversion>
     <Projectile Name="player_bladeslinger_proj_aether" />
     <WeaponRequirements Requirements="rogue,umbra" />
-    <DamageWeapon WeaponMultiplier="1.25" />
     <SoundTrigger OnAnimStart="Play_Skill_BladeSlinger_Summon_Aether" OnAnimCast="Play_Skill_BladeSlinger_Throw_Aether" />
   </Skill>
   <Skill UID="player_bladeslinger_variant_18" ESkill="default_variant">
@@ -180,15 +177,14 @@
     </Damage_Conversion>
     <Projectile Name="player_bladeslinger_proj_lightning" />
     <WeaponRequirements Requirements="rogue,lightning" />
-    <DamageWeapon WeaponMultiplier="1.25" />
     <SoundTrigger OnAnimStart="Play_Skill_Bladeslinger_Summon_Lightning" OnAnimCast="Play_Skill_BladeSlinger_Throw_Lightning" />
   </Skill>
   <Skill UID="Player_Bladeslinger_variant_19" ESkill="default_variant">
-    <HUD UIName="@ui_variant_player_bladeslinger_variant_19" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_003.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_003.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_003.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_003.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_003.png" ShowParamsInTooltip="DamageWeapon" />
+    <HUD UIName="@ui_variant_player_bladeslinger_variant_19" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_001.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_001.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_001.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_001.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_001.png" ShowParamsInTooltip="DamageWeapon" Category="Combat" />
     <DamageWeapon WeaponMultiplier="1.15" />
   </Skill>
   <Skill UID="Player_Bladeslinger_variant_20" ESkill="default_variant">
-    <HUD UIName="@ui_variant_player_bladeslinger_variant_20" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_003.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_003.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_003.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_003.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_003.png" ShowParamsInTooltip="DamageWeapon" />
+    <HUD UIName="@ui_variant_player_bladeslinger_variant_20" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_001.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_001.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_001.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_001.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_001.png" ShowParamsInTooltip="DamageWeapon" Category="Utility" />
     <StatusAilment AilmentEffectiveness="125" />
   </Skill>
   <Skill UID="player_bladeslinger_variant_3,player_bladeslinger_variant_9" ESkill="default_variant_combo">

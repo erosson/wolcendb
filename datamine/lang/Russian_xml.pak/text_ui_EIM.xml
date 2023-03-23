@@ -8,9 +8,9 @@
  <DocumentProperties xmlns="urn:schemas-microsoft-com:office:office">
   <Title>Untitled Spreadsheet</Title>
   <Author>Unknown Creator</Author>
-  <LastAuthor>Pierre Techoueyres</LastAuthor>
-  <Created>2020-12-15T08:28:50Z</Created>
-  <LastSaved>2020-12-15T08:28:50Z</LastSaved>
+  <LastAuthor>User Computer</LastAuthor>
+  <Created>2023-02-24T10:34:00Z</Created>
+  <LastSaved>2023-02-24T10:34:00Z</LastSaved>
   <Company>Microsoft Corporation</Company>
   <Version>16.00</Version>
  </DocumentProperties>
@@ -18,8 +18,8 @@
   <AllowPNG/>
  </OfficeDocumentSettings>
  <ExcelWorkbook xmlns="urn:schemas-microsoft-com:office:excel">
-  <WindowHeight>32767</WindowHeight>
-  <WindowWidth>19275</WindowWidth>
+  <WindowHeight>9015</WindowHeight>
+  <WindowWidth>21570</WindowWidth>
   <WindowTopX>32767</WindowTopX>
   <WindowTopY>32767</WindowTopY>
   <ProtectStructure>False</ProtectStructure>
@@ -122,7 +122,7 @@
   </Style>
  </Styles>
  <Worksheet ss:Name="Sheet1">
-  <Table ss:ExpandedColumnCount="7" ss:ExpandedRowCount="719" x:FullColumns="1"
+  <Table ss:ExpandedColumnCount="7" ss:ExpandedRowCount="729" x:FullColumns="1"
    x:FullRows="1" ss:DefaultRowHeight="15">
    <Column ss:AutoFitWidth="0" ss:Width="356.25"/>
    <Column ss:AutoFitWidth="0" ss:Width="413.25"/>
@@ -175,7 +175,7 @@
    <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s19"><Data ss:Type="String">ui_eim_ailment_stacks_multiplier_chance</Data></Cell>
     <Cell ss:StyleID="s25"><Data ss:Type="String">%1 Chance to multiply the number of Ailment Stacks you apply</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">%1 шанс увеличить количество накладываемых негативных эффектов</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">%1 шанс увеличить количество накладываемых вами негативных эффектов</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -202,7 +202,7 @@
    <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s19"><Data ss:Type="String">ui_eim_additional_projectile</Data></Cell>
     <Cell ss:StyleID="s27"><Data ss:Type="String">%1 Projectile(s) with Projectile Skills, Staves, Pistols and Bows</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">%1 дополнительный снаряд(ов) для атак и заклинаний снарядами</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">%1 дополнительный(-ых) снаряд(-ов) для умений-снарядов, посохов, пистолетов и луков</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -346,7 +346,7 @@
    <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s19"><Data ss:Type="String">ui_eim_attackspeed_score</Data></Cell>
     <Cell ss:StyleID="s27"><Data ss:Type="String">%1 Attack Speed</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">%1 к скорости атаки</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">%1 скорости атаки</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -355,7 +355,7 @@
    <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s19"><Data ss:Type="String">ui_eim_attackspeed_score_percent</Data></Cell>
     <Cell ss:StyleID="s27"><Data ss:Type="String">%1 Attack Speed</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">%1 к скорости атаки</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">%1 скорости атаки</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -364,7 +364,7 @@
    <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s19"><Data ss:Type="String">ui_eim_autodash_cdr_percent</Data></Cell>
     <Cell ss:StyleID="s27"><Data ss:Type="String">%1 Dash Cooldown Reduction</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">%1 снижения перезарядки атаки рывком</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">%1 снижения перезарядки рывка</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -841,7 +841,7 @@
    <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s20"><Data ss:Type="String">ui_eim_can_not_dodge</Data></Cell>
     <Cell ss:StyleID="s27"><Data ss:Type="String">You are unable to benefit from Passive Dodge</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">Вы теряете возможность пассивного уклонения</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">Вы лишаетесь преимуществ, даваемых пассивным уклонением</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -1750,7 +1750,7 @@
    <Row ss:AutoFitHeight="0" ss:Height="20.0625">
     <Cell ss:StyleID="s19"><Data ss:Type="String">ui_eim_crowd_control_duration_percent</Data></Cell>
     <Cell ss:StyleID="s27"><Data ss:Type="String">%1 Crowd Control Duration on you</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">%1 снижения длительности полученных эффектов контроля</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">%1 длительности эффектов контроля для вас</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -1759,7 +1759,7 @@
    <Row ss:AutoFitHeight="0" ss:Height="20.0625">
     <Cell ss:StyleID="s19"><Data ss:Type="String">ui_eim_curse_on_hit_percent</Data></Cell>
     <Cell ss:StyleID="s27"><Data ss:Type="String">%1 Curse Chance Score with any Damage Type</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">%1 к шансу проклясть любым типом урона</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">%1 рейтинга шанса проклятия любым типом урона</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -1777,7 +1777,7 @@
    <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s19"><Data ss:Type="String">ui_eim_curse_on_dash</Data></Cell>
     <Cell ss:StyleID="s27"><Data ss:Type="String">Your Dash inflicts the Curse Ailment</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">Атака рывком проклинает цель</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">Атака рывком накладывает на цель проклятие</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -1957,7 +1957,7 @@
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s19"><Data ss:Type="String">ui_eim_damage_percent_if_only_one_nearby_enemy_damage</Data></Cell>
     <Cell ss:StyleID="s27"><Data ss:Type="String">%1 additional Damage to the Enemy within Clandestine Execution's radius</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">%1 дополнительного урона врагам в радиусе действия навыка Скрытная казнь</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">%1 дополнительного урона врагам в радиусе действия Скрытной казни</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -1975,7 +1975,7 @@
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s19"><Data ss:Type="String">ui_eim_damage_percent_impaired</Data></Cell>
     <Cell ss:StyleID="s27"><Data ss:Type="String">%1 Damage to Enemies Slowed, Stunned, Frozen, or in Stasis</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">%1 урона по врагам со сниженным движением</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">%1 урона замедленным, оглушенным, замороженным и находящимся в стазисе врагам</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -1984,7 +1984,7 @@
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s19"><Data ss:Type="String">ui_eim_damage_percent_per_enemy_ailment_stack_on_target_kill</Data></Cell>
     <Cell ss:StyleID="s25"><Data ss:Type="String">When you kill an Enemy, you increase the Damage Type corresponding to each Ailment Stack on that Enemy by %1 (up to %2 Stacks per Damage Type)</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">Убийство врага добавляет %1 урона соответствующего типа за каждый негативный эффект на этом враге (вплоть до %2 эффектов каждого типа)</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">Убийство врага добавляет %1 урона соответствующего типа за каждый эффект негативного состояния на этом враге (до %2 эффектов для каждого типа урона)</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -2064,7 +2064,7 @@
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s19"><Data ss:Type="String">ui_eim_damage_percent_twohanded</Data></Cell>
-    <Cell ss:StyleID="s27"><Data ss:Type="String">%1 Two Handed Weapon Damage</Data></Cell>
+    <Cell ss:StyleID="s27"><Data ss:Type="String">%1 Two-Handed Weapon Damage</Data></Cell>
     <Cell ss:StyleID="s18"><Data ss:Type="String">%1 урона двуручным оружием</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -2074,7 +2074,7 @@
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s19"><Data ss:Type="String">ui_eim_damage_percent_while_nobody_close</Data></Cell>
     <Cell ss:StyleID="s27"><Data ss:Type="String">%1 Damage when no Enemies are within %2m radius</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">%1 урона, когда враги на удалении менее %2 м</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">%1 урона при отсутствии врагов в радиусе %2 м</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -2290,7 +2290,7 @@
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s19"><Data ss:Type="String">ui_eim_damage_reduction_on_full_force_shield</Data></Cell>
     <Cell ss:StyleID="s32"><Data ss:Type="String">When your Force Shield is full, Damage taken are reduced by %1. Only applies if your maximum Force Shield is greater than half of your maximum Health</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">Урон, получаемый при полном силовом щите снижается на %1. Применяется только если максимальное значение силового щита больше половины вашего максимального здоровья</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">Урон, получаемый при полном силовом щите, снижается на %1. Применяется только в том случае, если максимальное значение силового щита больше половины вашего максимального здоровья</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -2307,8 +2307,8 @@
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s19"><Data ss:Type="String">ui_eim_deathmark_on_hit</Data></Cell>
-    <Cell ss:StyleID="s27"><Data ss:Type="String">%1 Chance to infilct Mark of Impurity to an Enemy on Hit</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">%1 к шансу применить Знак скверны на врага при нанесении урона</Data></Cell>
+    <Cell ss:StyleID="s27"><Data ss:Type="String">%1 Chance to inflict Mark of Impurity to an Enemy on Hit</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">%1 к шансу наложить Знак скверны на врага при нанесении урона</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -2316,8 +2316,8 @@
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s19"><Data ss:Type="String">ui_eim_defense_up_on_block</Data></Cell>
-    <Cell ss:StyleID="s27"><Data ss:Type="String">%1 All Resistances Score for you and your Allies on Block</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">%1 к рейтингу всех сопротивлений для вас и ваших союзников при блокировании</Data></Cell>
+    <Cell ss:StyleID="s27"><Data ss:Type="String">%1 All Resistances Score for you and your Allies on Block within a %2m radius during %3s</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">%1 к рейтингу всех сопротивлений в течение %3 сек для вас и ваших союзников в радиусе %2 м при блокировании</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -2325,8 +2325,8 @@
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s19"><Data ss:Type="String">ui_eim_defense_up_on_globe_pickup</Data></Cell>
-    <Cell ss:StyleID="s27"><Data ss:Type="String">%1 All Resistances Score for you and your Allies when you pick a Health Globe</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">%1 к рейтингу всех сопротивлений для вас и ваших союзников при поднятии сферы здоровья</Data></Cell>
+    <Cell ss:StyleID="s27"><Data ss:Type="String">%1 All Resistances Score during %3s when you pick a Health Globe</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">%1 к рейтингу всех сопротивлений на %3 сек при поднятии сферы здоровья</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -2334,8 +2334,8 @@
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s19"><Data ss:Type="String">ui_eim_dodgechance_on_being_hit</Data></Cell>
-    <Cell ss:StyleID="s27"><Data ss:Type="String">%1 Passive Dodge Chance Score after being Hit</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">%1 к рейтингу шанса уклонения после получения удара</Data></Cell>
+    <Cell ss:StyleID="s27"><Data ss:Type="String">%1 Passive Dodge Chance Score during %3s after being Hit. %4s Cooldown.</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">%1 к рейтингу шанса уклонения в течение %3 сек после получения удара. Перезарядка %4 сек.</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -2443,7 +2443,7 @@
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s19"><Data ss:Type="String">ui_eim_dots_to_shield</Data></Cell>
     <Cell ss:StyleID="s25"><Data ss:Type="String">Damage over Time is dealt to your Force Shield before your Health</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">Периодический урон сначала наносит урон силовому щиту, пока тот не истощится</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">Периодический урон сначала наносится силовому щиту, а только потом - здоровью</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -2515,7 +2515,7 @@
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s19"><Data ss:Type="String">ui_eim_elemental_stacks_to_shock</Data></Cell>
     <Cell ss:StyleID="s27"><Data ss:Type="String">Apply Shock instead of Freeze and Burn</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">Вместо эффектов заморозки и горения накладывается ошеломление</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">Вместо заморозки и горения накладывается ошеломление</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -2623,7 +2623,7 @@
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s19"><Data ss:Type="String">ui_eim_forceshield_lock_timer_percent</Data></Cell>
     <Cell ss:StyleID="s27"><Data ss:Type="String">%1 Force Shield Regeneration Delay Reduction</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">%1 снижения задержки восстановления силового щита</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">%1 задержки восстановления силового щита</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -2677,7 +2677,7 @@
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s19"><Data ss:Type="String">ui_eim_freeze_on_hit_percent</Data></Cell>
     <Cell ss:StyleID="s27"><Data ss:Type="String">%1 Freeze Chance Score with any Damage Type</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">%1 к шансу заморозить любым типом урона</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">%1 рейтинга шанса заморозки любым типом урона</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -2686,7 +2686,7 @@
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s19"><Data ss:Type="String">ui_eim_freeze_received_duration_percent_bonus</Data></Cell>
     <Cell ss:StyleID="s27"><Data ss:Type="String">%1 increased Frozen Duration on you</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">Если на вас заморозка, она действует на %1 сек. дольше</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">%1 длительности заморозки для вас</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -2803,7 +2803,7 @@
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s19"><Data ss:Type="String">ui_eim_globes_pickup_radius</Data></Cell>
     <Cell ss:StyleID="s27"><Data ss:Type="String">%1 Additional radius for picking up Health Globes</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">%1 дальности подбора сфер здоровья</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">%1 дополнительной дальности подбора сфер здоровья</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -2838,7 +2838,7 @@
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s19"><Data ss:Type="String">ui_eim_health_percent</Data></Cell>
-    <Cell ss:StyleID="s27"><Data ss:Type="String">%1 maximum Health</Data></Cell>
+    <Cell ss:StyleID="s27"><Data ss:Type="String">%1 Maximum Health</Data></Cell>
     <Cell ss:StyleID="s18"><Data ss:Type="String">%1 максимального здоровья</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -2847,7 +2847,7 @@
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s19"><Data ss:Type="String">ui_eim_health_pts</Data></Cell>
-    <Cell ss:StyleID="s27"><Data ss:Type="String">%1 maximum Health</Data></Cell>
+    <Cell ss:StyleID="s27"><Data ss:Type="String">%1 Maximum Health</Data></Cell>
     <Cell ss:StyleID="s18"><Data ss:Type="String">%1 максимального здоровья</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -2902,7 +2902,34 @@
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s19"><Data ss:Type="String">ui_eim_healthglobe_drop_chance_on_hit</Data></Cell>
     <Cell ss:StyleID="s27"><Data ss:Type="String">%1 Health Globe generation on Hit</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">%1 генерации сфер здоровья</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">%1 генерации сфер здоровья при ударе</Data></Cell>
+    <Cell ss:StyleID="s18"/>
+    <Cell ss:StyleID="s18"/>
+    <Cell ss:StyleID="s18"/>
+    <Cell ss:StyleID="s18"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s19"><Data ss:Type="String">ui_eim_inflicted_elemental_duration_percent</Data></Cell>
+    <Cell ss:StyleID="s27"><Data ss:Type="String">Increases inflicted Elemental Ailments Duration by %1</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">Увеличивает длительность наложенных стихийных негативных состояний на %1</Data></Cell>
+    <Cell ss:StyleID="s18"/>
+    <Cell ss:StyleID="s18"/>
+    <Cell ss:StyleID="s18"/>
+    <Cell ss:StyleID="s18"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s19"><Data ss:Type="String">ui_eim_inflicted_material_duration_percent</Data></Cell>
+    <Cell ss:StyleID="s27"><Data ss:Type="String">Increases inflicted Material Ailments Duration by %1</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">Увеличивает длительность наложенных материальных негативных состояний на %1</Data></Cell>
+    <Cell ss:StyleID="s18"/>
+    <Cell ss:StyleID="s18"/>
+    <Cell ss:StyleID="s18"/>
+    <Cell ss:StyleID="s18"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s18"><Data ss:Type="String">ui_eim_inflicted_occult_duration_percent</Data></Cell>
+    <Cell ss:StyleID="s27"><Data ss:Type="String">Increases inflicted Occult Ailments Duration by %1</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">Увеличивает длительность наложенных оккультных негативных состояний на %1</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -3037,7 +3064,7 @@
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s19"><Data ss:Type="String">ui_eim_life_leech_percent_weapon</Data></Cell>
     <Cell ss:StyleID="s27"><Data ss:Type="String">%1 Life Leech from Attack Damage</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">%1 кражи здоровья от урона оружием</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">%1 кражи здоровья при уроне атакой</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -3145,7 +3172,7 @@
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s19"><Data ss:Type="String">ui_eim_lightning_strike_on_critical_hit</Data></Cell>
     <Cell ss:StyleID="s27"><Data ss:Type="String">%1 Chance to unleash a bolt of Lightning dealing Damage to your Enemies when you inflict a Critical Hit. %4s Cooldown</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">При критическом попадании этим оружием у вас %1 к шансу применить &quot;Раскат грома&quot;, наносящий урон и вам, и врагам. Перезарядка этого эффекта – %4 сек.</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">При критическом попадании этим оружием у вас %1 шанс выпустить разряд молнии, наносящий урон вашим врагам. Перезарядка: %4 сек.</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -3225,8 +3252,8 @@
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s19"><Data ss:Type="String">ui_eim_max_stacks_capacity</Data></Cell>
-    <Cell ss:StyleID="s27"><Data ss:Type="String">%1 maximum Ailment Stacks</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">%1 к максимуму негативных эффектов</Data></Cell>
+    <Cell ss:StyleID="s27"><Data ss:Type="String">%1 Maximum Ailment Stacks</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">%1 к максимуму эффектов негативных состояний</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -3235,7 +3262,7 @@
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s19"><Data ss:Type="String">ui_eim_melee_damage_benefits_from_projectiles_bonuses</Data></Cell>
     <Cell ss:StyleID="s27"><Data ss:Type="String">Attacks benefit from %1 Projectile Damage</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">Урон в ближнем бою повышается %1 от усиления снарядов</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">Атаки получают %1 бонус от урона снарядами</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -3262,7 +3289,7 @@
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s19"><Data ss:Type="String">ui_eim_non_dot_damage_percent</Data></Cell>
     <Cell ss:StyleID="s27"><Data ss:Type="String">%1 reduced non-Ailment Damage</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">%1 урона, кроме периодического урона</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">%1 уменьшения урона, не связанного с негативными состояниями</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -3451,7 +3478,7 @@
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s19"><Data ss:Type="String">ui_eim_piercing</Data></Cell>
     <Cell ss:StyleID="s27"><Data ss:Type="String">%1 Projectile Pierce Strength</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">%1 цель к пробиванию снарядами</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">%1 силы пробития снаряда</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -3460,7 +3487,7 @@
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s19"><Data ss:Type="String">ui_eim_pinflicted_freeze_duration_percent</Data></Cell>
     <Cell ss:StyleID="s27"><Data ss:Type="String">%1 Freeze Duration on Enemies</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">%1 длительности заморозки накладываемой на врагов</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">%1 длительности заморозки врагов</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -3469,7 +3496,7 @@
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s19"><Data ss:Type="String">ui_eim_inflicted_freeze_duration_percent</Data></Cell>
     <Cell ss:StyleID="s27"><Data ss:Type="String">%1 Freeze Duration on Enemies</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">%1 длительности заморозки накладываемой на врагов</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">%1 длительности заморозки врагов</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -3478,7 +3505,7 @@
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s20"><Data ss:Type="String">ui_eim_poison_on_hit_percent</Data></Cell>
     <Cell ss:StyleID="s27"><Data ss:Type="String">%1 Poison Chance Score with any Damage Type</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">%1 к шансу отравить любым типом урона</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">%1 рейтинга шанса отравления любым типом урона</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -3505,7 +3532,7 @@
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s19"><Data ss:Type="String">ui_eim_projectiles_damage_asdistance</Data></Cell>
     <Cell ss:StyleID="s27"><Data ss:Type="String">Projectile Damage scale by %1 with distance up to %3m</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">увеличение урона снарядов на %1 с расстоянием за каждые %3 м</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">Урон снарядами изменяется на %1 на дистанции до %3 м</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -3585,8 +3612,8 @@
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s19"><Data ss:Type="String">ui_eim_rage_to_umbra_transfer_percent</Data></Cell>
-    <Cell ss:StyleID="s27"><Data ss:Type="String">%1 increased Transfer Rate between Rage and Willpower</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">%1 увеличения темпа перевода ярости в энергию</Data></Cell>
+    <Cell ss:StyleID="s27"><Data ss:Type="String">%1 Increased Transfer Rate between Rage and Willpower</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">%1 ускорения перевода ярости в энергию</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -3594,8 +3621,8 @@
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s19"><Data ss:Type="String">ui_eim_rage_to_umbra_transfer_pts</Data></Cell>
-    <Cell ss:StyleID="s27"><Data ss:Type="String">%1-%2 reduced Transfer Rate between Rage and Willpower</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">%1-%2 снижения темпа перевода ярости в энергию</Data></Cell>
+    <Cell ss:StyleID="s27"><Data ss:Type="String">%1-%2 Reduced Transfer Rate between Rage and Willpower</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">%1-%2 замедления перевода ярости в энергию</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -3622,7 +3649,7 @@
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s19"><Data ss:Type="String">ui_eim_refill_stamina_on_low_health</Data></Cell>
     <Cell ss:StyleID="s27"><Data ss:Type="String">Gain %1 Stamina point(s) when reaching %2 maximum Health. %4s Cooldown</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">Добавляет %1 очко(а) выносливости при %2 от максимального здоровья. Перезарядка: %4 сек</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">Добавляет %1 очко(-а) выносливости при %2 от максимального здоровья. Перезарядка: %4 сек</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -3721,7 +3748,7 @@
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s19"><Data ss:Type="String">ui_eim_resource_points</Data></Cell>
     <Cell ss:StyleID="s27"><Data ss:Type="String">%1 maximum Willpower and Rage</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">на %1 увеличивает максимум энергии и ярости</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">%1 максимальной энергии и ярости</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -3775,7 +3802,7 @@
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s19"><Data ss:Type="String">ui_eim_sacred_ground_on_cursed_stacks</Data></Cell>
     <Cell ss:StyleID="s25"><Data ss:Type="String">When an Enemy is affected by 5 Curse Stacks, a Sacred Healing Area-of-Effect is cast on their location</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">Когда на противника наложено 5 эффектов проклятия, на его позиции создаётся Оплот Зари, излечивающий вас и ваших союзников в области действия</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">Если на противника действует 5 эффектов проклятия, вокруг него распространяется область святого лечения</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -3820,7 +3847,7 @@
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s19"><Data ss:Type="String">ui_eim_self_shock</Data></Cell>
     <Cell ss:StyleID="s27"><Data ss:Type="String">Shock Stacks applied to Enemies are also applied to you</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">Эффекты ошеломления накладываются как на противника, так и на игрока</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">Эффекты ошеломления, наложенные на врагов, также накладываются на вас</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -3874,7 +3901,7 @@
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s19"><Data ss:Type="String">ui_eim_shadow_nova_on_weakness_stacks</Data></Cell>
     <Cell ss:StyleID="s25"><Data ss:Type="String">When an Enemy is affected by 5 Weakness Stacks, a Shadow Damage Area-of-Effect is cast on their location</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">Когда на противника наложено 5 эффектов ослабления, на его позиции создаётся область, наносящая урон тенью</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">Если на противника действует 5 эффектов ослабления, вокруг него распространяется область урона тенью</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -3937,7 +3964,7 @@
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s19"><Data ss:Type="String">ui_eim_shock_on_hit_percent</Data></Cell>
     <Cell ss:StyleID="s27"><Data ss:Type="String">%1 Shock Chance Score with any Damage Type</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">%1 к шансу ошеломить при атаке</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">%1 рейтинга шанса ошеломления любым типом урона</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -3973,7 +4000,7 @@
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s19"><Data ss:Type="String">ui_eim_skillrequirement_keyword_fire</Data></Cell>
     <Cell ss:StyleID="s27"><Data ss:Type="String">Allows the Bearer to use Fire Skills</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">Позволяет использовать заклинания огня</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">Позволяет использовать умения огня</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -3982,7 +4009,7 @@
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s19"><Data ss:Type="String">ui_eim_skillrequirement_keyword_frost</Data></Cell>
     <Cell ss:StyleID="s27"><Data ss:Type="String">Allows the Bearer to use Frost Skills</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">Позволяет использовать заклинания холода</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">Позволяет использовать умения холода</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -3991,7 +4018,7 @@
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s19"><Data ss:Type="String">ui_eim_skillrequirement_keyword_lightning</Data></Cell>
     <Cell ss:StyleID="s27"><Data ss:Type="String">Allows the Bearer to use Lightning Skills</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">Позволяет использовать заклинания молний</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">Позволяет использовать умения молнии</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -4009,7 +4036,7 @@
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s19"><Data ss:Type="String">ui_eim_skillrequirement_keyword_rend</Data></Cell>
     <Cell ss:StyleID="s27"><Data ss:Type="String">Allows the Bearer to use Rend Skills</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">Позволяет использовать умения, наносящие рваные раны</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">Позволяет использовать умения рваных ран</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -4018,7 +4045,7 @@
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s19"><Data ss:Type="String">ui_eim_skillrequirement_keyword_sacred</Data></Cell>
     <Cell ss:StyleID="s27"><Data ss:Type="String">Allows the Bearer to use Sacred Skills</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">Позволяет использовать святые заклинания</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">Позволяет использовать святые умения</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -4045,7 +4072,7 @@
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s19"><Data ss:Type="String">ui_eim_skillrequirement_keyword_umbra</Data></Cell>
     <Cell ss:StyleID="s27"><Data ss:Type="String">Allows the Bearer to use Aether Skills</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">Позволяет использовать заклинания эфира</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">Позволяет использовать эфирные умения</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -4099,7 +4126,7 @@
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s19"><Data ss:Type="String">ui_eim_stamina_regeneration_percent</Data></Cell>
     <Cell ss:StyleID="s31"><Data ss:Type="String">%1 Stamina Regeneration Rate</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">%1 темпа восстановления выносливости</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">%1 скорости восстановления выносливости</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -4117,7 +4144,7 @@
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s19"><Data ss:Type="String">ui_eim_stasis_on_hit_percent</Data></Cell>
     <Cell ss:StyleID="s27"><Data ss:Type="String">%1 Stasis Chance Score with any Damage Type</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">%1 к шансу погрузить в стазис любым типом урона</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">%1 рейтинга шанса наложения стазиса любым типом урона</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -4252,7 +4279,7 @@
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s19"><Data ss:Type="String">ui_eim_stun_on_hit_percent</Data></Cell>
     <Cell ss:StyleID="s27"><Data ss:Type="String">%1 Stun Chance Score with any Damage Type</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">%1 к шансу оглушить любым типом урона</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">%1 рейтинга шанса оглушения любым типом урона</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -4261,7 +4288,7 @@
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s19"><Data ss:Type="String">ui_eim_stunchance_on_dash</Data></Cell>
     <Cell ss:StyleID="s27"><Data ss:Type="String">Your Dash Stuns enemies on Hit</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">Атака рывком оглушает врагов</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">Атака рывком оглушает цель</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -4378,7 +4405,7 @@
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s19"><Data ss:Type="String">ui_eim_transfer_time_percent</Data></Cell>
     <Cell ss:StyleID="s31"><Data ss:Type="String">%1 Transfer Time Speed between Willpower and Rage</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">%1 снижения времени перевода между энергией и яростью</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">%1 скорости перевода энергии в ярость</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -4395,7 +4422,7 @@
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s19"><Data ss:Type="String">ui_eim_twohanded_blockchance_flat</Data></Cell>
-    <Cell ss:StyleID="s27"><Data ss:Type="String">%1 Block Chance while a Two-handed Weapon is equipped</Data></Cell>
+    <Cell ss:StyleID="s27"><Data ss:Type="String">%1 Block Chance while a Two-Handed Weapon is equipped</Data></Cell>
     <Cell ss:StyleID="s18"><Data ss:Type="String">%1 шанса блокирования с экипированным двуручным оружием</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -4513,7 +4540,7 @@
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s19"><Data ss:Type="String">ui_eim_umbra_to_rage_transfer_percent</Data></Cell>
     <Cell ss:StyleID="s27"><Data ss:Type="String">%1 Transfer Time Speed between Willpower and Rage</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">%1 увеличения темпа перевода энергии в ярость</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">%1 скорости перевода энергии в ярость</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -4522,7 +4549,7 @@
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s19"><Data ss:Type="String">ui_eim_umbra_to_rage_transfer_pts</Data></Cell>
     <Cell ss:StyleID="s27"><Data ss:Type="String">%1-%2 Transfer Time Speed between Willpower and Rage</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">%1-%2 снижения темпа перевода энергии в ярость</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">%1-%2 скорости перевода энергии в ярость</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -4567,7 +4594,7 @@
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s19"><Data ss:Type="String">ui_eim_weaknes_on_hit_percent</Data></Cell>
     <Cell ss:StyleID="s27"><Data ss:Type="String">%1 Weakness Chance Score with any Damage Type</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">%1 к шансу ослабить при ударе</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">%1 рейтинга шанса ослабления любым типом урона</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -4585,7 +4612,7 @@
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s18"><Data ss:Type="String">ui_eim_weakness_aoe_onblock_detail</Data></Cell>
     <Cell ss:StyleID="s27"><Data ss:Type="String">Apply %2 Weakness Stacks upon Blocking an Attack to the Enemies in %1m Radius</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">Накладывает %2 эффект(ов) ослабления на врагов в радиусе %1 м при блокировании атаки</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">Накладывает %2 эффект(-ов) ослабления на врагов в радиусе %1 м при блокировании атаки</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -4639,7 +4666,7 @@
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s19"><Data ss:Type="String">ui_eim_aggression_percent</Data></Cell>
     <Cell ss:StyleID="s27"><Data ss:Type="String">%1 Threat generation</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">%1 создания угрозы</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">%1 к увеличению степени угрозы</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -4746,8 +4773,8 @@
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s19"><Data ss:Type="String">ui_eim_local_damage_flat_fire</Data></Cell>
-    <Cell ss:StyleID="s27"><Data ss:Type="String">%1-%2 Fire Damage on Attacks with this weapon</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">%1-%2 урона огнём к атакам этим оружием</Data></Cell>
+    <Cell ss:StyleID="s27"><Data ss:Type="String">%1-%2 Fire Damage on Attacks and Spells with this weapon</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">%1-%2 урона огнём к атакам и заклинаниям c этим оружием</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -4755,8 +4782,8 @@
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s19"><Data ss:Type="String">ui_eim_local_damage_flat_frost</Data></Cell>
-    <Cell ss:StyleID="s27"><Data ss:Type="String">%1-%2 Frost Damage on Attacks with this weapon</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">%1-%2 урона холодом к атакам этим оружием</Data></Cell>
+    <Cell ss:StyleID="s27"><Data ss:Type="String">%1-%2 Frost Damage on Attacks and Spells with this weapon</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">%1-%2 урона холодом к атакам и заклинаниям c этим оружием</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -4764,8 +4791,8 @@
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s19"><Data ss:Type="String">ui_eim_local_damage_flat_lightning</Data></Cell>
-    <Cell ss:StyleID="s27"><Data ss:Type="String">%1-%2 Lightning Damage on Attacks with this weapon</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">%1-%2 урона молниями к атакам этим оружием</Data></Cell>
+    <Cell ss:StyleID="s27"><Data ss:Type="String">%1-%2 Lightning Damage on Attacks and Spells with this weapon</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">%1-%2 урона молниями к атакам и заклинаниям c этим оружием</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -4773,8 +4800,8 @@
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s19"><Data ss:Type="String">ui_eim_local_damage_flat_physical</Data></Cell>
-    <Cell ss:StyleID="s27"><Data ss:Type="String">%1-%2 Physical Damage on Attacks with this weapon</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">%1-%2 физического урона к атакам этим оружием</Data></Cell>
+    <Cell ss:StyleID="s27"><Data ss:Type="String">%1-%2 Physical Damage on Attacks and Spells with this weapon</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">%1-%2 физического урона к атакам и заклинаниям c этим оружием</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -4782,8 +4809,8 @@
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s19"><Data ss:Type="String">ui_eim_local_damage_flat_rend</Data></Cell>
-    <Cell ss:StyleID="s27"><Data ss:Type="String">%1-%2 Rend Damage on Attacks with this weapon</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">%1-%2 урона рваными ранами к атакам этим оружием</Data></Cell>
+    <Cell ss:StyleID="s27"><Data ss:Type="String">%1-%2 Rend Damage on Attacks and Spells with this weapon</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">%1-%2 урона рваными ранами к атакам и заклинаниям c этим оружием</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -4791,8 +4818,8 @@
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s19"><Data ss:Type="String">ui_eim_local_damage_flat_sacred</Data></Cell>
-    <Cell ss:StyleID="s27"><Data ss:Type="String">%1-%2 Sacred Damage on Attacks with this weapon</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">%1-%2 святого урона к атакам этим оружием</Data></Cell>
+    <Cell ss:StyleID="s27"><Data ss:Type="String">%1-%2 Sacred Damage on Attacks and Spells with this weapon</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">%1-%2 святого урона к атакам и заклинаниям c этим оружием</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -4800,8 +4827,8 @@
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s19"><Data ss:Type="String">ui_eim_local_damage_flat_shadow</Data></Cell>
-    <Cell ss:StyleID="s27"><Data ss:Type="String">%1-%2 Shadow Damage on Attacks with this weapon</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">%1-%2 урона тенью к атакам этим оружием</Data></Cell>
+    <Cell ss:StyleID="s27"><Data ss:Type="String">%1-%2 Shadow Damage on Attacks and Spells with this weapon</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">%1-%2 урона тенью к атакам и заклинаниям c этим оружием</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -4809,8 +4836,8 @@
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s19"><Data ss:Type="String">ui_eim_local_damage_flat_toxic</Data></Cell>
-    <Cell ss:StyleID="s27"><Data ss:Type="String">%1-%2 Toxic Damage on Attacks with this weapon</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">%1-%2 урона ядом к атакам этим оружием</Data></Cell>
+    <Cell ss:StyleID="s27"><Data ss:Type="String">%1-%2 Toxic Damage on Attacks and Spells with this weapon</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">%1-%2 урона ядом к атакам и заклинаниям c этим оружием</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -4818,8 +4845,8 @@
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s19"><Data ss:Type="String">ui_eim_local_damage_flat_umbra</Data></Cell>
-    <Cell ss:StyleID="s27"><Data ss:Type="String">%1-%2 Aether Damage on Attacks with this weapon</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">%1-%2 эфирного урона к атакам этим оружием</Data></Cell>
+    <Cell ss:StyleID="s27"><Data ss:Type="String">%1-%2 Aether Damage on Attacks and Spells with this weapon</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">%1-%2 эфирного урона к атакам и заклинаниям c этим оружием</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -4827,8 +4854,8 @@
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s18"><Data ss:Type="String">ui_eim_local_damage_percent_elemental</Data></Cell>
-    <Cell ss:StyleID="s27"><Data ss:Type="String">%1 Elemental Damage on Attacks with this weapon</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">%1 стихийного урона к атакам этим оружием</Data></Cell>
+    <Cell ss:StyleID="s27"><Data ss:Type="String">%1 Elemental Damage on Attacks and Spells with this weapon</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">%1 стихийного урона к атакам и заклинаниям c этим оружием</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -4836,8 +4863,8 @@
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s18"><Data ss:Type="String">ui_eim_local_damage_percent_material</Data></Cell>
-    <Cell ss:StyleID="s25"><Data ss:Type="String">%1 Material Damage on Attacks with this weapon</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">%1 материального урона к атакам этим оружием</Data></Cell>
+    <Cell ss:StyleID="s25"><Data ss:Type="String">%1 Material Damage on Attacks and Spells with this weapon</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">%1 материального урона к атакам и заклинаниям c этим оружием</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -4845,8 +4872,8 @@
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s18"><Data ss:Type="String">ui_eim_local_damage_percent_primeval</Data></Cell>
-    <Cell ss:StyleID="s27"><Data ss:Type="String">%1 Occult Damage on Attacks with this weapon</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">%1 оккультного урона к атакам этим оружием</Data></Cell>
+    <Cell ss:StyleID="s27"><Data ss:Type="String">%1 Occult Damage on Attacks and Spells with this weapon</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">%1 оккультного урона к атакам и заклинаниям c этим оружием</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -4854,8 +4881,8 @@
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s20"><Data ss:Type="String">ui_eim_local_damage_percent_all</Data></Cell>
-    <Cell ss:StyleID="s27"><Data ss:Type="String">%1 All Damage on Attacks with this weapon</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">%1 общего урона к атакам этим оружием</Data></Cell>
+    <Cell ss:StyleID="s27"><Data ss:Type="String">%1 All Damage on Attacks and Spells with this weapon</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">%1 общего урона к атакам и заклинаниям c этим оружием</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -4972,7 +4999,7 @@
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s21"><Data ss:Type="String">ui_eim_willpower_regeneration_becomes_rage_regeneration</Data></Cell>
     <Cell ss:StyleID="s25"><Data ss:Type="String">Willpower Regeneration becomes Rage Regeneration</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">Даёт пассивное накопление ярости вместо энергии</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">Восстановление энергии превращается в восстановление ярости</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -4981,7 +5008,7 @@
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s18"><Data ss:Type="String">ui_eim_minion_health_percent</Data></Cell>
     <Cell ss:StyleID="s25"><Data ss:Type="String">%1 Summons Health</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">%1 к здоровью призванных существ</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">%1 здоровья призванных существ</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -4990,7 +5017,7 @@
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s18"><Data ss:Type="String">ui_eim_minion_regeneration_percent</Data></Cell>
     <Cell ss:StyleID="s25"><Data ss:Type="String">%1 Summons' Health Regeneration</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">%1 к восстановлению здоровья призванных существ</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">%1 восстановления здоровья призванных существ</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -4999,7 +5026,7 @@
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s18"><Data ss:Type="String">ui_eim_minion_damage_percent</Data></Cell>
     <Cell ss:StyleID="s25"><Data ss:Type="String">%1 Damage dealt by Summons</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">%1 к урону призванных существ</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">%1 урона призванных существ</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -5026,7 +5053,7 @@
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s21"><Data ss:Type="String">ui_eim_burn_stacks_consumption_chance_for_instant_damage</Data></Cell>
     <Cell ss:StyleID="s25"><Data ss:Type="String">If you applied %2 Burn Stacks on an Enemy, you have %1 chance to consume them on Hit, increasing the Damage of your Hit by %3 per consumed Stack</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">При атаках даёт %1 шанс поглотить эффекты горения на враге, когда число эффектов превышает %2, урон атаками увеличивается на %3 за каждый поглощённый эффект</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">Наложив не менее %2 эффектов горения на врага, вы получаете %1 шанс поглотить эти эффекты при ударе, вследствие чего урон от вашего удара увеличится на %3 за каждый эффект</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -5035,7 +5062,7 @@
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s21"><Data ss:Type="String">ui_eim_burn_stacks_consumption_propagate_stacks_on_kill</Data></Cell>
     <Cell ss:StyleID="s25"><Data ss:Type="String">Enemies killed by consumed Burn Stacks transfer %1 Burn Stacks to Enemies nearby</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">Враги, убитые атакой поглотившей эффекты горения переносят %1 эффектов горения на врагов, считающихся ближайшими</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">Враги, убитые с помощью поглощенных эффектов горения, передают до %1 таких эффектов соседним врагам</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -5079,7 +5106,7 @@
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s21"><Data ss:Type="String">ui_eim_can_change_stances_with_dodgeroll</Data></Cell>
-    <Cell ss:StyleID="s25"><Data ss:Type="String">Gain access to two Stances: &quot;Probing Weakness&quot; and &quot;Stalwart Resolve&quot;. You can change your Stance by using the Active Dodge</Data></Cell>
+    <Cell ss:StyleID="s25"><Data ss:Type="String">Gain access to two Stances: &quot;Probing Weakness&quot; and &quot;Stalwart Resolve.&quot; You can change your Stance by using the Active Dodge</Data></Cell>
     <Cell ss:StyleID="s18"><Data ss:Type="String">Открывает доступ к двум &quot;стойкам&quot;: &quot;Поиска Изъянов&quot; и &quot;Постоянной Готовности&quot;. &quot;Стойки&quot; можно сменить используя перекат.</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -5089,7 +5116,7 @@
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s21"><Data ss:Type="String">ui_eim_stance_offensive_stats</Data></Cell>
     <Cell ss:StyleID="s25"><Data ss:Type="String">The &quot;Probing Weakness&quot; Stance reduces your All Resistance Score by %2 but gives you a %1 Chance to double Basic Attack Damage</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">В стойке &quot;Поиска Изъянов&quot;: %1 шанс двойного урона базовой атакой ценой потери %2 вашего рейтинга всех сопротивлений</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">Стойка &quot;Поиска Изъянов&quot; уменьшает ваш рейтинг сопротивления всем видам урона на %2, но даёт %1 шанс двойного урона базовой атакой</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -5097,8 +5124,8 @@
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s21"><Data ss:Type="String">ui_eim_stance_defensive_stats</Data></Cell>
-    <Cell ss:StyleID="s25"><Data ss:Type="String">The &quot;Stalwart Resolve&quot; Stance reduces your Attack and Spell Damage by %3 but gives you an additional %1 Block Chance and %2 Block Efficiency</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">В стойке &quot;Постоянной Готовности&quot; %1 шанса блокирования и %2 эффективности блокирования ценой потери %3 вашего урона атаками и заклинаниями</Data></Cell>
+    <Cell ss:StyleID="s25"><Data ss:Type="String">The &quot;Stalwart Resolve&quot; Stance reduces your Attack and Spell Casting Speed by %3 but gives you an additional %1 Block Chance and %2 Block Efficiency</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">Стойка &quot;Постоянной Готовности&quot; снижает вашу скорость атаки и колдовства на %3, но даёт дополнительно %1 шанса блокирования и %2 эффективности блокирования</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -5125,7 +5152,7 @@
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s21"><Data ss:Type="String">ui_eim_damage_on_block</Data></Cell>
     <Cell ss:StyleID="s25"><Data ss:Type="String">When you Block an Enemy attack, you deal %1 Weapon Damage to this Enemy</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">%1 урона оружием наносится атакующим врагам, если их атака заблокирована</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">Блокируя атаку врага, вы наносите этому врагу %1 урона оружием</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -5133,8 +5160,8 @@
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s21"><Data ss:Type="String">ui_eim_damage_on_block_rend</Data></Cell>
-    <Cell ss:StyleID="s25"><Data ss:Type="String">Proud Reprisal damage are converted into Rend Damage</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">Урон навыка Гордое возмездие конвертируется в урон рваными ранами</Data></Cell>
+    <Cell ss:StyleID="s25"><Data ss:Type="String">Proud Reprisal damage deals an additional %1 Weapon Damage and is converted into Rend Damage</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">Навык Гордое возмездие наносит %1 дополнительного урона оружием и его урон конвертируется в урон рваными ранами</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -5250,7 +5277,7 @@
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s21"><Data ss:Type="String">ui_eim_stat_bonus_from_chest_armor</Data></Cell>
-    <Cell ss:StyleID="s25"><Data ss:Type="String">Allows you to receive a Bonus based on on the Chest-piece equipped</Data></Cell>
+    <Cell ss:StyleID="s25"><Data ss:Type="String">Allows you to receive a Bonus based on the Chest-piece equipped</Data></Cell>
     <Cell ss:StyleID="s18"><Data ss:Type="String">Предоставляет вам усиления в зависимости от экипированного нагрудника</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -5268,7 +5295,7 @@
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s21"><Data ss:Type="String">ui_eim_stat_bonus_from_chest_armor_tank</Data></Cell>
-    <Cell ss:StyleID="s25"><Data ss:Type="String">Heavy: Adds %1 of the armor piece All Resistance Score to your All Resistance Score</Data></Cell>
+    <Cell ss:StyleID="s25"><Data ss:Type="String">Heavy: Adds %1 of the armour piece All Resistance Score to your All Resistance Score</Data></Cell>
     <Cell ss:StyleID="s18"><Data ss:Type="String">Тяжёлый: Добавляет %1 от рейтинга всех сопротивлений на нагруднике вашему рейтингу всех сопротивлений</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -5278,7 +5305,7 @@
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s21"><Data ss:Type="String">ui_eim_stat_bonus_from_chest_armor_rogue</Data></Cell>
     <Cell ss:StyleID="s25"><Data ss:Type="String">Rogue: On Passive Dodge, you regenerate Health and Force Shield equivalent to %1 times the Health value</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">Разбойничий: При успешном пассивном уклонении вы восстанавливаете здоровье и силовой щит в %1 раз(а) больше показателя здоровья</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">Разбойничий: При успешном пассивном уклонении вы восстанавливаете здоровье и силовой щит в %1 раз(-а) больше показателя здоровья</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -5313,7 +5340,7 @@
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s21"><Data ss:Type="String">ui_eim_stat_bonus_from_helmet_tank</Data></Cell>
-    <Cell ss:StyleID="s25"><Data ss:Type="String">Heavy: Adds %1 of the armor piece All Resistance Score to your All Resistance Score</Data></Cell>
+    <Cell ss:StyleID="s25"><Data ss:Type="String">Heavy: Adds %1 of the armour piece All Resistance Score to your All Resistance Score</Data></Cell>
     <Cell ss:StyleID="s18"><Data ss:Type="String">Тяжёлый: Добавляет %1 от рейтинга всех сопротивлений на шлеме вашему рейтингу всех сопротивлений</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -5323,7 +5350,7 @@
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s21"><Data ss:Type="String">ui_eim_stat_bonus_from_helmet_rogue</Data></Cell>
     <Cell ss:StyleID="s25"><Data ss:Type="String">Rogue: On Passive Dodge, you regenerate Health and Force Shield equivalent to %1 times the Health value</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">Разбойничий: При успешном пассивном уклонении вы восстанавливаете здоровье и силовой щит в %1 раз(а) больше показателя здоровья</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">Разбойничий: При успешном пассивном уклонении вы восстанавливаете здоровье и силовой щит в %1 раз(-а) больше показателя здоровья</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -5341,7 +5368,7 @@
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s18"><Data ss:Type="String">ui_eim_stack_block_uses_mechanic</Data></Cell>
     <Cell ss:StyleID="s25"><Data ss:Type="String">You gain %2 &quot;Fortress&quot; point(s) every %1s and you can have up to %3 &quot;Fortress&quot; points. All points are removed when you Block.</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">Вы получаете %2 очко(в) &quot;Крепости&quot; каждые %1 сек, но не более %3. Все очки сбрасывается при успешном блокировании.</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">Вы получаете %2 очко(-в) &quot;Крепости&quot; каждые %1 сек, но не более %3. Все очки сбрасываются при успешном блокировании.</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -5394,8 +5421,8 @@
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s21"><Data ss:Type="String">ui_eim_pray_on_low_health_all_resistances</Data></Cell>
-    <Cell ss:StyleID="s25"><Data ss:Type="String">When your Health is below %2, all nearby Allies gain %1 additional All Resistances Score</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">Когда ваше здоровье падает ниже %2, все ближайшие союзники получают %1 рейтинга всех сопротивлений</Data></Cell>
+    <Cell ss:StyleID="s25"><Data ss:Type="String">When your Health is below %2, all nearby Allies gain %1 additional All Resistances Score during %3s. %4s Cooldown</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">Когда ваше здоровье падает ниже %2, все ближайшие союзники получают %1 рейтинга всех сопротивлений на %3 сек. Перезарядка %4 сек.</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -5404,7 +5431,7 @@
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s21"><Data ss:Type="String">ui_eim_pray_on_low_health_all_resistances_added</Data></Cell>
     <Cell ss:StyleID="s25"><Data ss:Type="String">%1 additional All Resistances Score with Unflagging Prayer</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">%1 к рейтингу всех сопротивлений при активации навыка Неослабная молитва</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">%1 к рейтингу всех сопротивлений при активации навыка &quot;Неослабная молитва&quot;</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -5413,7 +5440,7 @@
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s21"><Data ss:Type="String">ui_eim_dawn_stat_bonus_from_force_shield_state</Data></Cell>
     <Cell ss:StyleID="s25"><Data ss:Type="String">When your Force Shield is above %2, you gain %1 Sacred Spell Damage. When your Force Shield is below %2, you gain %1 Sacred Attack Damage</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">%1 святого урона заклинаниями, когда силовой щит выше уровня %2\n\n%1 святого урона атаками, когда силовой щит ниже уровня %2</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">Если ваш силовой щит выше %2, вы получаете %1 к урону святыми заклинаниями. Если ваш силовой щит ниже %2, вы получаете %1 к урону святыми атаками.</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -5422,7 +5449,7 @@
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s18"><Data ss:Type="String">ui_eim_dawn_stat_bonus_from_force_shield_state_bonus</Data></Cell>
     <Cell ss:StyleID="s25"><Data ss:Type="String">The Sacred Damage Bonus provided by Beacon for the Lost is increased by %1</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">Дополнительный святой урон от навыка Маяк для потерянных увеличивается на %1</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">Дополнительный святой урон от навыка &quot;Маяк для потерянных&quot; увеличивается на %1</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -5430,7 +5457,7 @@
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s21"><Data ss:Type="String">ui_eim_can_proc_attunements</Data></Cell>
-    <Cell ss:StyleID="s25"><Data ss:Type="String">Skills that inflict Fire, Frost, or Lightning Damage grant passive Bonuses called &quot;Accords&quot;. Up to %1 &quot;Accord(s)&quot; can be active simultaneously. Triggered &quot;Accords&quot; cannot be changed during %2s</Data></Cell>
+    <Cell ss:StyleID="s25"><Data ss:Type="String">Skills that inflict Fire, Frost, or Lightning Damage grant passive Bonuses called &quot;Accords.&quot; Up to %1 &quot;Accord(s)&quot; can be active simultaneously. Triggered &quot;Accords&quot; cannot be changed during %2s</Data></Cell>
     <Cell ss:StyleID="s18"><Data ss:Type="String">Умения, наносящие урон огнём, холодом или молнией, дают пассивные бонусы - &quot;Аккорды&quot;. Не более %1 &quot;Аккорда(ов)&quot; может быть активно одновременно. Сработавший &quot;Аккорд&quot; не может быть сменён %2 сек</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -5449,7 +5476,7 @@
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s21"><Data ss:Type="String">ui_eim_attunement_frost</Data></Cell>
     <Cell ss:StyleID="s25"><Data ss:Type="String">Frost triggers &quot;Etheliel's Accord&quot; for %3s unless it is triggered again. You have %1 Ailment Chance Score when &quot;Etheliel's Accord&quot; is active</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">&quot;Аккорд Этелиэль&quot; активен %3 сек, если не получен снова. Вы получаете %1 рейтинга шанса наложения негативных эффектов пока он активен</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">Холод вызывает &quot;Аккорд Этелиэль&quot; на %3 сек или до повторного срабатывания. Во время действия &quot;Аккорда Этелиэль&quot; вы получаете %1 к рейтингу шанса наложения негативных состояний</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -5458,7 +5485,7 @@
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s21"><Data ss:Type="String">ui_eim_attunement_fire</Data></Cell>
     <Cell ss:StyleID="s25"><Data ss:Type="String">Fire triggers &quot;Abanazaar's Accord&quot; for %3s unless it is triggered again. You have %1 Damage when &quot;Abanazaar's Accord&quot; is active</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">&quot;Аккорд Абаназаара&quot; активен %3 сек, если не получен снова. Вы получаете %1 урона пока он активен</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">Огонь вызывает &quot;Аккорд Абаназаара&quot; на %3 сек или до повторного срабатывания. Во время действия &quot;Аккорда Абаназаара&quot; вы получаете %1 к урону</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -5467,7 +5494,7 @@
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s21"><Data ss:Type="String">ui_eim_attunement_lightning</Data></Cell>
     <Cell ss:StyleID="s25"><Data ss:Type="String">Lightning triggers &quot;Beelmalik's Accord&quot; for %3s unless it is triggered again. You have %1 Critical Chance Score when &quot;Beelmalik's Accord&quot; is active</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">&quot;Аккорд Билмалика&quot; активен %3 сек, если не получен снова. Вы получаете %1 рейтинга шанса нанесения критического урона пока он активен</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">Молния вызывает &quot;Аккорд Билмалика&quot; на %3 сек или до повторного срабатывания. Во время действия &quot;Аккорда Билмалика&quot; вы получаете %1 к рейтингу шанса нанесения критического урона</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -5475,8 +5502,8 @@
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s18"><Data ss:Type="String">ui_eim_meteor_on_casting_fire_skill</Data></Cell>
-    <Cell ss:StyleID="s25"><Data ss:Type="String">Launch a Meteor at the targeted location when a Fire Skill is used. The Meteor deals %1 Weapon Damage. %4s Cooldown</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">Создайте огненный Метеор в целевой области при использовании огненного умения. Метеор наносит %1 урона оружия. Перезарядка %4 сек</Data></Cell>
+    <Cell ss:StyleID="s25"><Data ss:Type="String">Launch a Meteor at the targeted location when a Fire Skill is used. The Meteor deals %3 Weapon Damage. %4s Cooldown</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">Создайте огненный Метеор в целевой области при использовании огненного умения. Метеор наносит %3 урона оружия. Перезарядка %4 сек</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -5484,8 +5511,8 @@
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s21"><Data ss:Type="String">ui_eim_frost_lance_on_casting_frost_skill</Data></Cell>
-    <Cell ss:StyleID="s25"><Data ss:Type="String">Launch a Frost Lance at the targeted location when a Frost Skill is used. The Frost Lance deals %1 Weapon Damage. %4s Cooldown</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">Создайте Ледяную пику в целевой области при использовании холодного умения. Ледяная пика наносит %1 урона оружия. Перезарядка %4 сек</Data></Cell>
+    <Cell ss:StyleID="s25"><Data ss:Type="String">Launch a Frost Lance at the targeted location when a Frost Skill is used. The Frost Lance deals %3 Weapon Damage. %4s Cooldown</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">Создайте Ледяную пику в целевой области при использовании холодного умения. Ледяная пика наносит %3 урона оружия. Перезарядка %4 сек</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -5493,8 +5520,35 @@
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s21"><Data ss:Type="String">ui_eim_thunderstrike_on_casting_lightning_skill</Data></Cell>
-    <Cell ss:StyleID="s25"><Data ss:Type="String">Launch a Chain Lightning at the targeted location when a Lightning Skill is used. The Chain Lightning deals %1 Weapon Damage. %4s Cooldown</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">Создайте Цепную молнию в целевой области при использовании молниевого умения. Цепная молния наносит %1 урона оружия. Перезарядка %4 сек</Data></Cell>
+    <Cell ss:StyleID="s25"><Data ss:Type="String">Launch a Chain Lightning at the targeted location when a Lightning Skill is used. The Chain Lightning deals %3 Weapon Damage. %4s Cooldown</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">Создайте Цепную молнию в целевой области при использовании молниевого умения. Цепная молния наносит %3 урона оружия. Перезарядка %4 сек</Data></Cell>
+    <Cell ss:StyleID="s18"/>
+    <Cell ss:StyleID="s18"/>
+    <Cell ss:StyleID="s18"/>
+    <Cell ss:StyleID="s18"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s21"><Data ss:Type="String">ui_eim_meteor_on_casting_fire_skill_moon</Data></Cell>
+    <Cell ss:StyleID="s25"><Data ss:Type="String">Omnitempest's Meteor now deals %3 Weapon Damage. %4s Cooldown</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">Метеор Всебури теперь наносит %3 урона оружием. Перезарядка %4 сек</Data></Cell>
+    <Cell ss:StyleID="s18"/>
+    <Cell ss:StyleID="s18"/>
+    <Cell ss:StyleID="s18"/>
+    <Cell ss:StyleID="s18"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s21"><Data ss:Type="String">ui_eim_frost_lance_on_casting_frost_skill_moon</Data></Cell>
+    <Cell ss:StyleID="s25"><Data ss:Type="String">Omnitempest's Frost Lance now deals %3 Weapon Damage. %4s Cooldown</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">Ледяная пика Всебури теперь наносит %3 урона оружием. Перезарядка %4 сек</Data></Cell>
+    <Cell ss:StyleID="s18"/>
+    <Cell ss:StyleID="s18"/>
+    <Cell ss:StyleID="s18"/>
+    <Cell ss:StyleID="s18"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s21"><Data ss:Type="String">ui_eim_thunderstrike_on_casting_lightning_skill_moon</Data></Cell>
+    <Cell ss:StyleID="s25"><Data ss:Type="String">Omnitempest's Chain Lightning now deals %3 Weapon Damage. %4s Cooldown</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">Цепная молния Всебури теперь наносит %3 урона оружием. Перезарядка %4 сек</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -5511,8 +5565,8 @@
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s18"><Data ss:Type="String">ui_eim_explosion_on_low_willpower_damage</Data></Cell>
-    <Cell ss:StyleID="s25"><Data ss:Type="String">Damage from the Elementary Destabilization explosion is now based on 30% of your maximum Health or Force Shield (whichever the highest)</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">Урон от взрыва, вызванного навыком Стихийная дестабилизация, равен 30% от вашего максимального здоровья или силового щита (в зависимости от того, что выше)</Data></Cell>
+    <Cell ss:StyleID="s25"><Data ss:Type="String">Damage from the Elementary Destabilization explosion is now based on %1 of your maximum Health or Force Shield (whichever the highest)</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">Урон от взрыва, вызванного навыком &quot;Стихийная дестабилизация&quot;, равен %1 от вашего максимального здоровья или силового щита (в зависимости от того, что выше)</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -5530,7 +5584,7 @@
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s21"><Data ss:Type="String">ui_eim_stasis_afflicted_enemies_take_damage_twice_increase</Data></Cell>
     <Cell ss:StyleID="s25"><Data ss:Type="String">Hit Damage dealt after the Which Time Cannot Heal delay increased by %3</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">Урон наносимый после задержки от навыка Время, которое не лечит увеличивается на %3</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">Урон, наносимый после задержки от навыка &quot;Время, которое не лечит&quot;, увеличивается на %3</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -5539,7 +5593,7 @@
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s21"><Data ss:Type="String">ui_eim_stack_hybrid_uses_mechanic</Data></Cell>
     <Cell ss:StyleID="s25"><Data ss:Type="String">When you Hit an Enemy affected by Stasis with an Attack, you gain a Supernatural Paradox point. When you Hit an Enemy affected by Stasis with a Spell, you gain an Earthly Paradox point. You can have a maximum of %2 points. Points reset after %1s</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">Вы получаете очко &quot;Сверхпарадокса&quot;, когда враг в стазисе атакован атакой и очко &quot;Земного парадокса&quot;, когда он атакован заклинанием. Очки сбрасываются через %1 сек. Максимум очков: %2</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">Вы получаете очко &quot;Сверхпарадокса&quot;, когда враг в стазисе атакован атакой, и очко &quot;Земного парадокса&quot;, когда он атакован заклинанием. Очки сбрасываются через %1 сек. Максимум очков: %2</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -5566,7 +5620,7 @@
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s21"><Data ss:Type="String">ui_eim_take_delayed_damage</Data></Cell>
     <Cell ss:StyleID="s25"><Data ss:Type="String">You only take %1 Damage on Enemy Hit. The remaining Damage is dealt %2s after the Hit</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">При получении удара вы получаете только %1 урона вражеских атак, оставшуюся часть через %2 сек</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">В момент удара вам наносится только %1 урона от вражеской атаки. Остальное вы получаете через %2 сек.</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -5575,7 +5629,7 @@
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s21"><Data ss:Type="String">ui_eim_cap_max_health_and_force_shield</Data></Cell>
     <Cell ss:StyleID="s25"><Data ss:Type="String">Your Health is set to %1 of its maximum. Your Force Shield is set to %2 of its maximum</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">Ваше здоровье составит %1 от максимума, а силовой щит %2 от максимума</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">Ваше здоровье составляет %1 от максимума, а силовой щит - %2 от максимума</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -5584,7 +5638,7 @@
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s21"><Data ss:Type="String">ui_eim_cap_max_health_and_force_shield_increase</Data></Cell>
     <Cell ss:StyleID="s25"><Data ss:Type="String">Your maximum Health set in Dire Juncture is increased by %1 and your maximum Force Shield set in Dire Juncture is increased by %2</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">Ваше максимальное здоровье и силовой щит увеличиваются на %1 и %2 соответственно от максимумов установленных на Ужасной связи</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">Ваше максимальное здоровье, установленное &quot;Ужасной связью&quot;, повышается на %1. Ваш максимальный силовой щит, установленный &quot;Ужасной связью&quot;, повышается на %2.</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -5592,7 +5646,7 @@
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s21"><Data ss:Type="String">ui_eim_dead_enemies_may_spawn_green_globes</Data></Cell>
-    <Cell ss:StyleID="s25"><Data ss:Type="String">Enemies that die in %1m radius around you have %2 chance to drop green globes. Picking up green globes gives you an additional %3 Damage as Poison Damage per green globe during %4s</Data></Cell>
+    <Cell ss:StyleID="s25"><Data ss:Type="String">Enemies that die in %1m radius around you have %2 chance to drop green globes. Picking up green globes gives you an additional %3 Damage as Toxic Damage per green globe during %4s</Data></Cell>
     <Cell ss:StyleID="s18"><Data ss:Type="String">Враги умершие в радиусе %1 м от вас с шансом %2 могут выронить зелёную сферу. Поднятая сфера даёт %3 дополнительного урона ядом за каждую сферу на %4 сек</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -5601,7 +5655,7 @@
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s21"><Data ss:Type="String">ui_eim_dead_summons_may_spawn_green_globes</Data></Cell>
-    <Cell ss:StyleID="s25"><Data ss:Type="String">Summons that die in a %1m radius also have %2 chance to drop green globes. Picking up green globes gives you an additional %3 Damage as Poison Damage per green globe during %4s</Data></Cell>
+    <Cell ss:StyleID="s25"><Data ss:Type="String">Summons that die in a %1m radius also have %2 chance to drop green globes. Picking up green globes gives you an additional %3 Damage as Toxic Damage per green globe during %4s</Data></Cell>
     <Cell ss:StyleID="s18"><Data ss:Type="String">Призванные существа, умершие в радиусе %1 м также с шансом %2 могут выронить зелёную сферу. Поднятая сфера даёт %3 дополнительного урона ядом за каждую сферу на %4 сек</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -5611,7 +5665,7 @@
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s21"><Data ss:Type="String">ui_eim_soul_sharing</Data></Cell>
     <Cell ss:StyleID="s25"><Data ss:Type="String">Your Health is reduced by %1 and your Force Shield by %2, but all your Summons take %3 less Damage</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">Ваше здоровье снижается на %1 и силовой щит на %2, но призванные существа получают на %3 меньше урона</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">Ваше здоровье снижается на %1, и силовой щит - на %2, но призванные существа получают на %3 меньше урона</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -5620,7 +5674,7 @@
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s18"><Data ss:Type="String">ui_eim_soul_sharing_add</Data></Cell>
     <Cell ss:StyleID="s25"><Data ss:Type="String">Your Health is reduced by an additional %1 and your Force Shield by an additional %2, but all your Summons take %3 less Damage</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">Ваше здоровье дополнительно снижается на %1 и силовой щит на %2, но призванные существа получают на %3 меньше урона</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">Ваше здоровье дополнительно снижается на %1, и силовой щит - на %2, но призванные существа получают на %3 меньше урона</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -5672,6 +5726,15 @@
     <Cell ss:StyleID="s18"/>
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s21"><Data ss:Type="String">ui_eim_life_ceil_from_force_shield_moon</Data></Cell>
+    <Cell ss:StyleID="s25"><Data ss:Type="String">Adds %1 to the maximum Health allowed by Masochistic Effigy</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">Добавляет %1 к максимальному здоровью доступному с навыком Мазохистская статуэтка</Data></Cell>
+    <Cell ss:StyleID="s18"/>
+    <Cell ss:StyleID="s18"/>
+    <Cell ss:StyleID="s18"/>
+    <Cell ss:StyleID="s18"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s21"><Data ss:Type="String">ui_eim_purge_ailment_stacks</Data></Cell>
     <Cell ss:StyleID="s25"><Data ss:Type="String">When you are affected by %1 Stacks of the same Ailment, they are removed and give a Buff:</Data></Cell>
     <Cell ss:StyleID="s18"><Data ss:Type="String">Когда на вас наложено %1 одинаковых негативных эффектов, вы очищаете их, получая усиления:</Data></Cell>
@@ -5683,7 +5746,7 @@
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s21"><Data ss:Type="String">ui_eim_suffers_inflicted_ailment_stacks</Data></Cell>
     <Cell ss:StyleID="s25"><Data ss:Type="String">Ailment Stacks applied to Enemies are also applied to you. When you are affected by %1 Stacks of the same Ailment, they are removed and you and your nearby Allies gain the associated Buff</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">Негативные эффекты накладываемые на врага так же накладываются и на вас. Когда вы получаете %1 одинаковых негативных эффектов, они удаляются и вы получаете усиление</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">Негативные эффекты, накладываемые на врагов, накладываются и на вас. Если вы получаете не менее %1 эффектов одного и того же состояния, эти эффекты исчезают, а вам и вашим союзникам достается соответствующее усиление.</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -5728,7 +5791,7 @@
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s21"><Data ss:Type="String">ui_eim_self_ailment_stacks_added_chance</Data></Cell>
     <Cell ss:StyleID="s25"><Data ss:Type="String">You have %1 chance to increase the number of Stacks applied on yourself by %2 when you apply an Ailment on yourself</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">При наложении на себя негативных эффектов, %1 шанс увеличить число наложенных эффектов на %2</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">Накладывая ослабление на себя, вы получаете %1 шанс увеличить количество эффектов, наложенных на вас, на %2</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -5772,8 +5835,8 @@
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s21"><Data ss:Type="String">ui_eim_stack_bullet_uses_mechanic</Data></Cell>
-    <Cell ss:StyleID="s25"><Data ss:Type="String">You gain 1 point of &quot;Annointed Ammunition&quot; every %1s. When you use a Projectile Skill, %2 &quot;Annointed Ammunition&quot; point(s) are consumed</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">Вы получаете 1 очко &quot;Окроплённых боеприпасов&quot; каждые %1 сек. Применение умения выпускающего снаряд расходует %2 очко(в) &quot;Окроплённых боеприпасов&quot;</Data></Cell>
+    <Cell ss:StyleID="s25"><Data ss:Type="String">You gain 1 point of &quot;Anointed Ammunition&quot; every %1s. When you use a Projectile Skill, 1 &quot;Anointed Ammunition&quot; point is consumed</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">Вы получаете 1 очко &quot;Окроплённых боеприпасов&quot; каждые %1 сек. Применение умения выпускающего снаряд расходует 1 очко &quot;Окроплённых боеприпасов&quot;</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -5781,8 +5844,8 @@
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s21"><Data ss:Type="String">ui_eim_stack_bullet_charges_on_dodge_roll</Data></Cell>
-    <Cell ss:StyleID="s25"><Data ss:Type="String">When you complete an Active Dodge, %1 &quot;Annointed Ammunition&quot; point(s) is refilled</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">Каждый перекат восполняет %1 &quot;Окроплённый(ых) боеприпас(ов)&quot;</Data></Cell>
+    <Cell ss:StyleID="s25"><Data ss:Type="String">When you complete an Active Dodge, %1 &quot;Anointed Ammunition&quot; point(s) is refilled</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">Каждый перекат восполняет %1 &quot;Окроплённый(-ых) боеприпас(-ов)&quot;</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -5790,8 +5853,8 @@
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s21"><Data ss:Type="String">ui_eim_stack_bullet_charges_on_critical</Data></Cell>
-    <Cell ss:StyleID="s25"><Data ss:Type="String">When you deal a Critical Hit, %1 &quot;Annointed Ammunition&quot; point(s) is refilled</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">Каждое нанесение критического урона восполняет %1 &quot;Окроплённый(ых) боеприпас(ов)&quot;</Data></Cell>
+    <Cell ss:StyleID="s25"><Data ss:Type="String">When you deal a Critical Hit, %1 &quot;Anointed Ammunition&quot; point(s) is refilled</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">Каждое нанесение критического урона восполняет %1 &quot;Окроплённый(-ых) боеприпас(-ов)&quot;</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -5799,7 +5862,7 @@
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s21"><Data ss:Type="String">ui_eim_stack_bullet_proj_damage</Data></Cell>
-    <Cell ss:StyleID="s25"><Data ss:Type="String">Each point of &quot;Annointed Ammunition&quot; gives you %1 Projectile Damage</Data></Cell>
+    <Cell ss:StyleID="s25"><Data ss:Type="String">Each point of &quot;Anointed Ammunition&quot; gives you %1 Projectile Damage</Data></Cell>
     <Cell ss:StyleID="s18"><Data ss:Type="String">Каждый имеющийся &quot;Окроплённый боеприпас&quot; даёт %1 урона снарядами</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -5808,7 +5871,7 @@
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s21"><Data ss:Type="String">ui_eim_stack_bullet_melee_damage</Data></Cell>
-    <Cell ss:StyleID="s25"><Data ss:Type="String">Each empty &quot;Annointed Ammunition&quot; point gives you %1 Melee Damage</Data></Cell>
+    <Cell ss:StyleID="s25"><Data ss:Type="String">Each empty &quot;Anointed Ammunition&quot; point gives you %1 Melee Damage</Data></Cell>
     <Cell ss:StyleID="s18"><Data ss:Type="String">Каждое потраченное очко &quot;Окроплённых боеприпасов&quot; даёт %1 урона атаками ближнего боя</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -5818,7 +5881,7 @@
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s21"><Data ss:Type="String">ui_eim_remaining_pierce_as_damage</Data></Cell>
     <Cell ss:StyleID="s25"><Data ss:Type="String">Each remaining Pierce on a Projectile increases its Damage by %1</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">Враги получают %1 урона за каждое оставшееся на снаряде пробитие после поражения врага</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">Урон от снаряда увеличивается на %1 за каждое оставшееся пробитие</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -5836,7 +5899,7 @@
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s21"><Data ss:Type="String">ui_eim_default_attacks_chain_increase</Data></Cell>
     <Cell ss:StyleID="s25"><Data ss:Type="String">Add %1 to Projectile bounce provided by Wintry Hail</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">Под действием навыка Зимний град снаряды отскакивают в ближайших врагов дополнительно %1 раз</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">Под действием навыка &quot;Зимний град&quot; снаряды отскакивают в ближайших врагов дополнительно %1 раз</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -5845,7 +5908,7 @@
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s21"><Data ss:Type="String">ui_eim_frost_damage_bonus_on_chained_projectiles</Data></Cell>
     <Cell ss:StyleID="s25"><Data ss:Type="String">%1 additional Damage dealt as Frost Damage to Projectiles that have bounced</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">%1 урона холодом снарядам, имеющим отскок.</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">Отрикошетившие снаряды наносят %1 дополнительного урона холодом</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -5863,7 +5926,7 @@
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s18"><Data ss:Type="String">ui_eim_stacks_hunter_tickrate</Data></Cell>
     <Cell ss:StyleID="s25"><Data ss:Type="String">Change the interval between gaining &quot;Cold Blooded&quot; points by %1s</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">Снижает интервал между получением очков &quot;Хладнокровия&quot; на %1 сек</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">Изменяет интервал между получением очков &quot;Хладнокровия&quot; на %1 сек</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -5889,7 +5952,7 @@
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s21"><Data ss:Type="String">ui_eim_stack_gadget_uses_mechanic</Data></Cell>
-    <Cell ss:StyleID="s25"><Data ss:Type="String">You generate %2 &quot;Power Charge&quot; per second and Basic Attacks refill %1 &quot;Power Charge&quot;. Device and Lightning Skills consume %4 &quot;Power Charge&quot; points. Capped between -%3 and %3 points</Data></Cell>
+    <Cell ss:StyleID="s25"><Data ss:Type="String">You generate %2 &quot;Power Charge&quot; per second and Basic Attacks refill %1 &quot;Power Charge.&quot; Device and Lightning Skills consume %4 &quot;Power Charge&quot; points. Capped between -%3 and %3 points</Data></Cell>
     <Cell ss:StyleID="s18"><Data ss:Type="String">Вы восполняете %2 очков &quot;Энергозаряда&quot; ежесекундно. Базовые атаки восполняют %1 очков &quot;Энергозаряда&quot;. Устройства и молниевые умения расходуют %4 очков &quot;Энергозаряда&quot;. Ограничение очков от -%3 до +%3</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -5908,7 +5971,7 @@
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s21"><Data ss:Type="String">ui_eim_stack_gadget_damage</Data></Cell>
     <Cell ss:StyleID="s25"><Data ss:Type="String">Device and Lightning Skills Damage increased by %1 multiplied by your current points of &quot;Power Charge&quot;</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">Урон устройств и умений с базовым уроном молнией увеличивается за каждое имеющееся очко &quot;Энергозаряда&quot; вплоть до %1</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">Урон от устройств и урон молнией от умений увеличивается на текущее число очков &quot;Энергозаряда&quot;, умноженное на %1</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -5934,7 +5997,7 @@
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s21"><Data ss:Type="String">ui_eim_stack_balance_uses_mechanic</Data></Cell>
-    <Cell ss:StyleID="s25"><Data ss:Type="String">You have %1 points shared between &quot;Lure of Light&quot; and &quot;Lure of Darkness&quot;. Spells convert a &quot;Lure of Light&quot; point into &quot;Lure of Darkness&quot;. Attack Skills convert a &quot;Lure of Darkness&quot; point into &quot;Lure of Light&quot;</Data></Cell>
+    <Cell ss:StyleID="s25"><Data ss:Type="String">You have %1 points shared between &quot;Lure of Light&quot; and &quot;Lure of Darkness.&quot; Spells convert a &quot;Lure of Light&quot; point into &quot;Lure of Darkness.&quot; Attack Skills convert a &quot;Lure of Darkness&quot; point into &quot;Lure of Light&quot;</Data></Cell>
     <Cell ss:StyleID="s18"><Data ss:Type="String">%1 очков распределяется между &quot;Приманкой Света&quot; и &quot;Приманкой Тьмы&quot;. Использование заклинаний конвертирует &quot;Приманку Света&quot; в &quot;Приманку Тьмы&quot;, а использование атаки - &quot;Приманку Тьмы&quot; в &quot;Приманку Света&quot;</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -5944,7 +6007,7 @@
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s21"><Data ss:Type="String">ui_eim_stack_balance_mixed_bonus</Data></Cell>
     <Cell ss:StyleID="s25"><Data ss:Type="String">When the points weight 6/4, 5/5, or 4/6, you are in Equilibrium. Your Attacks gain %1 of Spell Damage bonuses and your Spells %1 of Attack Damage bonuses</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">Когда очки &quot;Приманок&quot; находятся в соотношении 6/4, 5/5 или 4/6 они считаются &quot;Равновесными&quot;. Ваши атаки получают %1 бонус от урона заклинаниями, а заклинания - %1 бонус от урона атаками</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">Когда очки &quot;Приманок&quot; находятся в соотношении 6/4, 5/5 или 4/6, они считаются &quot;Равновесными&quot;. Ваши атаки получают %1 бонус от урона заклинаниями, а заклинания - %1 бонус от урона атаками</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -5971,7 +6034,7 @@
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s21"><Data ss:Type="String">ui_eim_leave_decoy_on_dodgeroll</Data></Cell>
     <Cell ss:StyleID="s25"><Data ss:Type="String">Your Active Dodge damages Enemies and leaves a Decoy at your starting point during %1s</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">Перекат наносит урон врагам и оставляет приманку на %1 сек</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">При перекате враги на вашем пути получают урон, а в начальной точке переката на %1 сек. остается приманка</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -5979,8 +6042,8 @@
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s18"><Data ss:Type="String">ui_eim_leave_decoy_on_dodgeroll_explosion</Data></Cell>
-    <Cell ss:StyleID="s25"><Data ss:Type="String">The Decoy left by an Active Dodge explodes when it is destroyed, dealing Damage in a %2m radius</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">Приманка, оставляемая при перекате, взрывается при уничтожении, нанося урон в радиусе %2 м</Data></Cell>
+    <Cell ss:StyleID="s25"><Data ss:Type="String">The Decoy left by an Active Dodge explodes when it expires, dealing Damage in a %2m radius</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">Приманка, оставляемая при перекате, взрывается при истечении времени действия, нанося урон в радиусе %2 м</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -5989,7 +6052,7 @@
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s21"><Data ss:Type="String">ui_eim_active_dodge_makes_invisible</Data></Cell>
     <Cell ss:StyleID="s25"><Data ss:Type="String">Using the Active Dodge makes you invisible for %1s. Using a Skill removes the invisibility and deals %2 Skill damage as additional Shadow damage. %3s Cooldown</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">Перекат делает вас невидимым на %1 сек. Урон от следующего умения, применённого в невидимости увеличивается на %2. Применение умений сбрасывает невидимость.\nПерезарядка %3 сек.</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">Перекат даёт вам невидимость на %1 сек. Применение умения прекращает невидимость и наносит %2 дополнительного урона тенью. Перезарядка: %3 сек.</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -6040,6 +6103,33 @@
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
    </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s21"><Data ss:Type="String">ui_eim_speed_boost_on_active_dodge</Data></Cell>
+    <Cell ss:StyleID="s25"><Data ss:Type="String">After using the Active Dodge, receive a %1 Movement Speed bonus for %3s</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">Применив перекат, вы получаете %1 к скорости бега сроком на %3 сек.</Data></Cell>
+    <Cell ss:StyleID="s18"/>
+    <Cell ss:StyleID="s18"/>
+    <Cell ss:StyleID="s18"/>
+    <Cell ss:StyleID="s18"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s21"><Data ss:Type="String">ui_SpeedOnActiveDodge_Title</Data></Cell>
+    <Cell ss:StyleID="s25"><Data ss:Type="String">Evasion Velocity</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">Скорость уклонения</Data></Cell>
+    <Cell ss:StyleID="s18"/>
+    <Cell ss:StyleID="s18"/>
+    <Cell ss:StyleID="s18"/>
+    <Cell ss:StyleID="s18"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s21"><Data ss:Type="String">ui_SpeedOnActiveDodge_Desc</Data></Cell>
+    <Cell ss:StyleID="s25"><Data ss:Type="String">Movement Speed bonus</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">Доп. скорость бега</Data></Cell>
+    <Cell ss:StyleID="s18"/>
+    <Cell ss:StyleID="s18"/>
+    <Cell ss:StyleID="s18"/>
+    <Cell ss:StyleID="s18"/>
+   </Row>
    <Row ss:AutoFitHeight="0" ss:Height="14.25">
     <Cell ss:StyleID="s17"><Data ss:Type="String">Uniques</Data></Cell>
     <Cell ss:StyleID="s17"/>
@@ -6051,8 +6141,8 @@
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s22"><Data ss:Type="String">ui_eim_freeze_chance_to_crit</Data></Cell>
-    <Cell ss:StyleID="s25"><Data ss:Type="String">If your Hit has Freeze Chance, %1 of its Freeze Chance become Critical Chance. You can't Freeze Enemies anymore</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">Если ваши атаки могут заморозить, то %1 от шанса заморозки прибавляется к шансу критического урона. Такие атаки не замораживают врагов.</Data></Cell>
+    <Cell ss:StyleID="s25"><Data ss:Type="String">If your Hit has Freeze Chance, %1 of its Freeze Chance becomes Critical Chance. You can't Freeze Enemies anymore</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">Если ваши атаки способны заморозить цель, то %1 их шанса заморозки прибавляется к шансу критического урона. При этом вы больше не можете замораживать врагов.</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -6070,7 +6160,7 @@
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s18"><Data ss:Type="String">ui_eim_all_resistance_score_percent_on_full_stamina</Data></Cell>
     <Cell ss:StyleID="s25"><Data ss:Type="String">%1 All Resistances Score while at full Stamina</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">%1 к рейтингу всех сопротивлений при полной выносливости</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">%1 рейтинга всех сопротивлений при полной выносливости</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -6177,8 +6267,8 @@
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s21"><Data ss:Type="String">ui_eim_explosion_on_target_kill</Data></Cell>
-    <Cell ss:StyleID="s25"><Data ss:Type="String">Enemies explode in an Area of Effect when they are killed and deal %1 Weapon Damage</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">Enemies explode in an Area of Effect when they are killed and deal %1 Weapon Damage</Data></Cell>
+    <Cell ss:StyleID="s25"><Data ss:Type="String">Enemies explode in an Area of Effect when they are killed and deal %3 Weapon Damage</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">Враги взрываются при смерти и наносят %3 урона оружием в области действия взрыва</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -6186,8 +6276,8 @@
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s21"><Data ss:Type="String">ui_eim_explosion_on_globe_pickup</Data></Cell>
-    <Cell ss:StyleID="s25"><Data ss:Type="String">Globes explode in an Area of Effect when they are picked up and deal %1 Weapon Damage</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">Globes explode in an Area of Effect when they are picked up and deal %1 Weapon Damage</Data></Cell>
+    <Cell ss:StyleID="s25"><Data ss:Type="String">Globes explode in an Area of Effect when they are picked up and deal %3 Weapon Damage</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">Сферы взрываются при подборе и наносят %3 урона оружием в области действия взрыва</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -6250,7 +6340,7 @@
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s18"><Data ss:Type="String">ui_eim_inflicted_curse_duration_percent</Data></Cell>
     <Cell ss:StyleID="s27"><Data ss:Type="String">%1 Curse Duration on Enemy</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">%1 к длительности проклятия</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">%1 длительности проклятия врагов</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -6259,7 +6349,7 @@
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s18"><Data ss:Type="String">ui_eim_inflicted_stasis_duration_percent</Data></Cell>
     <Cell ss:StyleID="s27"><Data ss:Type="String">%1 Stasis Duration on Enemy</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">%1 к длительности стазиса</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">%1 длительности стазиса врагов</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -6268,7 +6358,7 @@
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s18"><Data ss:Type="String">ui_eim_inflicted_weakness_duration_percent</Data></Cell>
     <Cell ss:StyleID="s27"><Data ss:Type="String">%1 Weakness Duration on Enemy</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">%1 к длительности ослабления</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">%1 длительности ослабления врагов</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -6277,7 +6367,7 @@
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s18"><Data ss:Type="String">ui_eim_inflicted_stun_duration_percent</Data></Cell>
     <Cell ss:StyleID="s27"><Data ss:Type="String">%1 Stun Duration on Enemy</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">%1 к длительности оглушения</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">%1 длительности оглушения врагов</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -6349,7 +6439,7 @@
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s18"><Data ss:Type="String">ui_HuntReward_Currency_Multiplicative</Data></Cell>
     <Cell ss:StyleID="s27"><Data ss:Type="String">Multiply the Hunt Trophies given at the end of the Hunt by %1</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">Multiply the Hunt Trophies given at the end of the Hunt by %1</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">Охотничьи трофеи, получаемые в конце охоты, увеличиваются на %1</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -6367,7 +6457,7 @@
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s18"><Data ss:Type="String">ui_HuntReward_LC_Weapon_Legendary</Data></Cell>
     <Cell ss:StyleID="s27"><Data ss:Type="String">Your Prey will drop a Legendary Weapon with a Tributary Affix</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">Your Prey will drop a Legendary Weapon with a Tributary Affix</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">Настигнув добычу, вы получите легендарное оружие с дополнительным свойством</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -6375,8 +6465,8 @@
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s18"><Data ss:Type="String">ui_HuntReward_LC_Armor_Legendary</Data></Cell>
-    <Cell ss:StyleID="s27"><Data ss:Type="String">Your Prey will drop a Legendary Armor with a Tributary Affix</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">Your Prey will drop a Legendary Armor with a Tributary Affix</Data></Cell>
+    <Cell ss:StyleID="s27"><Data ss:Type="String">Your Prey will drop a Legendary Armour with a Tributary Affix</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">Настигнув добычу, вы получите легендарные доспехи с дополнительным свойством</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -6385,7 +6475,7 @@
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s18"><Data ss:Type="String">ui_HuntReward_LC_Accessory_Legendary</Data></Cell>
     <Cell ss:StyleID="s27"><Data ss:Type="String">Your Prey will drop a Legendary Accessory with a Tributary Affix</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">Your Prey will drop a Legendary Accessory with a Tributary Affix</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">Настигнув добычу, вы получите легендарный аксессуар с дополнительным свойством</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -6394,7 +6484,7 @@
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s18"><Data ss:Type="String">ui_HuntReward_LC_Reagent_Legendary</Data></Cell>
     <Cell ss:StyleID="s27"><Data ss:Type="String">Your Prey will drop a Legendary Reagent</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">Your Prey will drop a Legendary Reagent</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">Настигнув добычу, вы получите легендарный реагент</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -6403,7 +6493,7 @@
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s18"><Data ss:Type="String">ui_HuntReward_LC_Weapon_Rare_1</Data></Cell>
     <Cell ss:StyleID="s27"><Data ss:Type="String">Your Prey will drop a Rare Weapon with a Tributary Affix</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">Your Prey will drop a Rare Weapon with a Tributary Affix</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">Настигнув добычу, вы получите редкое оружие с дополнительным свойством</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -6412,7 +6502,7 @@
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s18"><Data ss:Type="String">ui_HuntReward_LC_Weapon_Rare_2</Data></Cell>
     <Cell ss:StyleID="s27"><Data ss:Type="String">Your Prey will drop 2 Rare Weapons with a Tributary Affix</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">Your Prey will drop 2 Rare Weapons with a Tributary Affix</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">Настигнув добычу, вы получите 2 ед. редкого оружия с дополнительными свойствами</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -6421,7 +6511,7 @@
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s18"><Data ss:Type="String">ui_HuntReward_LC_Weapon_Rare_3</Data></Cell>
     <Cell ss:StyleID="s27"><Data ss:Type="String">Your Prey will drop 3 Rare Weapons with a Tributary Affix</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">Your Prey will drop 3 Rare Weapons with a Tributary Affix</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">Настигнув добычу, вы получите 3 ед. редкого оружия с дополнительными свойствами</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -6430,7 +6520,7 @@
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s18"><Data ss:Type="String">ui_HuntReward_LC_Weapon_Rare_4</Data></Cell>
     <Cell ss:StyleID="s27"><Data ss:Type="String">Your Prey will drop 4 Rare Weapons with a Tributary Affix</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">Your Prey will drop 4 Rare Weapons with a Tributary Affix</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">Настигнув добычу, вы получите 4 ед. редкого оружия с дополнительными свойствами</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -6438,8 +6528,8 @@
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s18"><Data ss:Type="String">ui_HuntReward_LC_Armor_Rare_1</Data></Cell>
-    <Cell ss:StyleID="s27"><Data ss:Type="String">Your Prey will drop a Rare Armor with a Tributary Affix</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">Your Prey will drop a Rare Armor with a Tributary Affix</Data></Cell>
+    <Cell ss:StyleID="s27"><Data ss:Type="String">Your Prey will drop a Rare Armour with a Tributary Affix</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">Настигнув добычу, вы получите редкие доспехи с дополнительным свойством</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -6447,8 +6537,8 @@
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s18"><Data ss:Type="String">ui_HuntReward_LC_Armor_Rare_2</Data></Cell>
-    <Cell ss:StyleID="s27"><Data ss:Type="String">Your Prey will drop 2 Rare Armors with a Tributary Affix</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">Your Prey will drop 2 Rare Armors with a Tributary Affix</Data></Cell>
+    <Cell ss:StyleID="s27"><Data ss:Type="String">Your Prey will drop 2 Rare Armours with a Tributary Affix</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">Настигнув добычу, вы получите 2 ед. редких доспехов с дополнительными свойствами</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -6456,8 +6546,8 @@
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s18"><Data ss:Type="String">ui_HuntReward_LC_Armor_Rare_3</Data></Cell>
-    <Cell ss:StyleID="s27"><Data ss:Type="String">Your Prey will drop 3 Rare Armors with a Tributary Affix</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">Your Prey will drop 3 Rare Armors with a Tributary Affix</Data></Cell>
+    <Cell ss:StyleID="s27"><Data ss:Type="String">Your Prey will drop 3 Rare Armours with a Tributary Affix</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">Настигнув добычу, вы получите 3 ед. редких доспехов с дополнительными свойствами</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -6465,8 +6555,8 @@
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s18"><Data ss:Type="String">ui_HuntReward_LC_Armor_Rare_4</Data></Cell>
-    <Cell ss:StyleID="s27"><Data ss:Type="String">Your Prey will drop 4 Rare Armors with a Tributary Affix</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">Your Prey will drop 4 Rare Armors with a Tributary Affix</Data></Cell>
+    <Cell ss:StyleID="s27"><Data ss:Type="String">Your Prey will drop 4 Rare Armours with a Tributary Affix</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">Настигнув добычу, вы получите 4 ед. редких доспехов с дополнительными свойствами</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -6475,7 +6565,7 @@
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s18"><Data ss:Type="String">ui_HuntReward_LC_Accessory_Rare_1</Data></Cell>
     <Cell ss:StyleID="s27"><Data ss:Type="String">Your Prey will drop a Rare Accessory with a Tributary Affix</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">Your Prey will drop a Rare Accessory with a Tributary Affix</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">Настигнув добычу, вы получите редкий аксессуар с дополнительным свойством</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -6484,7 +6574,7 @@
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s18"><Data ss:Type="String">ui_HuntReward_LC_Accessory_Rare_2</Data></Cell>
     <Cell ss:StyleID="s27"><Data ss:Type="String">Your Prey will drop 2 Rare Accessories with a Tributary Affix</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">Your Prey will drop 2 Rare Accessories with a Tributary Affix</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">Настигнув добычу, вы получите 2 редких аксессуара с дополнительными свойствами</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -6493,7 +6583,7 @@
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s18"><Data ss:Type="String">ui_HuntReward_LC_Accessory_Rare_3</Data></Cell>
     <Cell ss:StyleID="s27"><Data ss:Type="String">Your Prey will drop 3 Rare Accessories with a Tributary Affix</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">Your Prey will drop 3 Rare Accessories with a Tributary Affix</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">Настигнув добычу, вы получите 3 редких аксессуара с дополнительными свойствами</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -6502,7 +6592,7 @@
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s18"><Data ss:Type="String">ui_HuntReward_LC_Accessory_Rare_4</Data></Cell>
     <Cell ss:StyleID="s27"><Data ss:Type="String">Your Prey will drop 4 Rare Accessories with a Tributary Affix</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">Your Prey will drop 4 Rare Accessories with a Tributary Affix</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">Настигнув добычу, вы получите 4 редких аксессуара с дополнительными свойствами</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -6511,7 +6601,7 @@
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s18"><Data ss:Type="String">ui_HuntReward_Gold_1</Data></Cell>
     <Cell ss:StyleID="s27"><Data ss:Type="String">Your Prey will drop a small amount of Gold</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">Your Prey will drop a small amount of Gold</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">Настигнув добычу, вы получите немного золота</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -6520,7 +6610,7 @@
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s18"><Data ss:Type="String">ui_HuntReward_Gold_2</Data></Cell>
     <Cell ss:StyleID="s27"><Data ss:Type="String">Your Prey will drop Gold</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">Your Prey will drop Gold</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">Настигнув добычу, вы получите золото</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -6529,7 +6619,7 @@
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s18"><Data ss:Type="String">ui_HuntReward_Gold_3</Data></Cell>
     <Cell ss:StyleID="s27"><Data ss:Type="String">Your Prey will drop a large amount of Gold</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">Your Prey will drop a large amount of Gold</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">Настигнув добычу, вы получите много золота</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -6574,7 +6664,7 @@
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s18"><Data ss:Type="String">ui_AI_Hunt_Ondar_Allies_Buff_desc</Data></Cell>
     <Cell ss:StyleID="s27"><Data ss:Type="String">Increases all Damage and drastically reduce Damage Taken</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">Увеличивает весь урон и резко снижает получаемый урон</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">Увеличивает весь наносимый урон и значительно уменьшает получаемый урон</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -6582,8 +6672,8 @@
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s23"><Data ss:Type="String">ui_OsharaBuff_Title</Data></Cell>
-    <Cell ss:StyleID="s27"><Data ss:Type="String">Oshara's Vigor</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">Oshara's Vigor</Data></Cell>
+    <Cell ss:StyleID="s27"><Data ss:Type="String">Oshara's Vigour</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">Бодрость Ошары</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -6592,7 +6682,7 @@
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s23"><Data ss:Type="String">ui_OsharaBuff_Description</Data></Cell>
     <Cell ss:StyleID="s27"><Data ss:Type="String">Drastically increases the Damage dealt by you and your summons</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">Drastically increases the Damage dealt by you and your summons</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">Значительно увеличивает урон, наносимый вами и вашими призванными существами</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -6615,7 +6705,7 @@
    <Panes>
     <Pane>
      <Number>3</Number>
-     <ActiveRow>718</ActiveRow>
+     <ActiveRow>728</ActiveRow>
      <ActiveCol>6</ActiveCol>
     </Pane>
    </Panes>

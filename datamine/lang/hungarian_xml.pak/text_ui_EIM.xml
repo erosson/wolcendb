@@ -8,9 +8,9 @@
  <DocumentProperties xmlns="urn:schemas-microsoft-com:office:office">
   <Title>Untitled Spreadsheet</Title>
   <Author>Unknown Creator</Author>
-  <LastAuthor>Pierre Techoueyres</LastAuthor>
-  <Created>2020-12-15T08:28:52Z</Created>
-  <LastSaved>2020-12-15T08:28:52Z</LastSaved>
+  <LastAuthor>User Computer</LastAuthor>
+  <Created>2023-02-24T10:33:50Z</Created>
+  <LastSaved>2023-02-24T10:33:50Z</LastSaved>
   <Company>Microsoft Corporation</Company>
   <Version>16.00</Version>
  </DocumentProperties>
@@ -18,8 +18,8 @@
   <AllowPNG/>
  </OfficeDocumentSettings>
  <ExcelWorkbook xmlns="urn:schemas-microsoft-com:office:excel">
-  <WindowHeight>32767</WindowHeight>
-  <WindowWidth>19275</WindowWidth>
+  <WindowHeight>9015</WindowHeight>
+  <WindowWidth>21570</WindowWidth>
   <WindowTopX>32767</WindowTopX>
   <WindowTopY>32767</WindowTopY>
   <ProtectStructure>False</ProtectStructure>
@@ -122,7 +122,7 @@
   </Style>
  </Styles>
  <Worksheet ss:Name="Sheet1">
-  <Table ss:ExpandedColumnCount="7" ss:ExpandedRowCount="719" x:FullColumns="1"
+  <Table ss:ExpandedColumnCount="7" ss:ExpandedRowCount="729" x:FullColumns="1"
    x:FullRows="1" ss:DefaultRowHeight="15">
    <Column ss:AutoFitWidth="0" ss:Width="356.25"/>
    <Column ss:AutoFitWidth="0" ss:Width="413.25"/>
@@ -1840,7 +1840,7 @@
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s19"><Data ss:Type="String">ui_eim_damage_percent_as_fire</Data></Cell>
     <Cell ss:StyleID="s27"><Data ss:Type="String">%1 additional Damage dealt as Fire Damage</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">További %1 sebzés tűzsebzésként</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">%1 további sebzés tűzsebzésként</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -2064,7 +2064,7 @@
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s19"><Data ss:Type="String">ui_eim_damage_percent_twohanded</Data></Cell>
-    <Cell ss:StyleID="s27"><Data ss:Type="String">%1 Two Handed Weapon Damage</Data></Cell>
+    <Cell ss:StyleID="s27"><Data ss:Type="String">%1 Two-Handed Weapon Damage</Data></Cell>
     <Cell ss:StyleID="s18"><Data ss:Type="String">%1 kétkezes fegyversebzés</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -2290,7 +2290,7 @@
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s19"><Data ss:Type="String">ui_eim_damage_reduction_on_full_force_shield</Data></Cell>
     <Cell ss:StyleID="s32"><Data ss:Type="String">When your Force Shield is full, Damage taken are reduced by %1. Only applies if your maximum Force Shield is greater than half of your maximum Health</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">Amikor az erőpajzsod tele van, a sebzésed %1-kal csökken. Csak akkor alkalmazható, ha a maximális erőpajzsod nagyobb, mint a maximális életerőd fele.</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">Amikor az erőpajzsod tele van, az elszenvedett sebzésed %1-kal csökken. Csak akkor alkalmazható, ha a maximális erőpajzsod nagyobb, mint a maximális életerőd fele.</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -2307,7 +2307,7 @@
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s19"><Data ss:Type="String">ui_eim_deathmark_on_hit</Data></Cell>
-    <Cell ss:StyleID="s27"><Data ss:Type="String">%1 Chance to infilct Mark of Impurity to an Enemy on Hit</Data></Cell>
+    <Cell ss:StyleID="s27"><Data ss:Type="String">%1 Chance to inflict Mark of Impurity to an Enemy on Hit</Data></Cell>
     <Cell ss:StyleID="s18"><Data ss:Type="String">%1 esély a Tisztátalanság jele okozására az ellenfél eltalálásakor</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -2316,8 +2316,8 @@
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s19"><Data ss:Type="String">ui_eim_defense_up_on_block</Data></Cell>
-    <Cell ss:StyleID="s27"><Data ss:Type="String">%1 All Resistances Score for you and your Allies on Block</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">%1 teljes ellenállás érték neked és a szövetségeseidnek hárításkor</Data></Cell>
+    <Cell ss:StyleID="s27"><Data ss:Type="String">%1 All Resistances Score for you and your Allies on Block within a %2m radius during %3s</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">%1 teljes ellenállás érték neked és a szövetségeseidnek hárításkor %2m-es hatósugárban %3s alatt.</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -2325,8 +2325,8 @@
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s19"><Data ss:Type="String">ui_eim_defense_up_on_globe_pickup</Data></Cell>
-    <Cell ss:StyleID="s27"><Data ss:Type="String">%1 All Resistances Score for you and your Allies when you pick a Health Globe</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">%1 teljes ellenállás értéket kapsz te és a szövetségeseid egy életerő gömb felvétele után.</Data></Cell>
+    <Cell ss:StyleID="s27"><Data ss:Type="String">%1 All Resistances Score during %3s when you pick a Health Globe</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">%1 teljes ellenállás értéket kapsz %3s alatt egy életerő gömb felvételekor.</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -2334,8 +2334,8 @@
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s19"><Data ss:Type="String">ui_eim_dodgechance_on_being_hit</Data></Cell>
-    <Cell ss:StyleID="s27"><Data ss:Type="String">%1 Passive Dodge Chance Score after being Hit</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">%1 passzív kitérési esélyérték egy találat elszenvedése után</Data></Cell>
+    <Cell ss:StyleID="s27"><Data ss:Type="String">%1 Passive Dodge Chance Score during %3s after being Hit. %4s Cooldown.</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">%1 passzív kitérési esélyérték %3s alatt egy találat elszenvedése után. %4s lehűlési idő.</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -2838,7 +2838,7 @@
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s19"><Data ss:Type="String">ui_eim_health_percent</Data></Cell>
-    <Cell ss:StyleID="s27"><Data ss:Type="String">%1 maximum Health</Data></Cell>
+    <Cell ss:StyleID="s27"><Data ss:Type="String">%1 Maximum Health</Data></Cell>
     <Cell ss:StyleID="s18"><Data ss:Type="String">%1 maximális életerő</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -2847,7 +2847,7 @@
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s19"><Data ss:Type="String">ui_eim_health_pts</Data></Cell>
-    <Cell ss:StyleID="s27"><Data ss:Type="String">%1 maximum Health</Data></Cell>
+    <Cell ss:StyleID="s27"><Data ss:Type="String">%1 Maximum Health</Data></Cell>
     <Cell ss:StyleID="s18"><Data ss:Type="String">%1 maximális életerő</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -2903,6 +2903,33 @@
     <Cell ss:StyleID="s19"><Data ss:Type="String">ui_eim_healthglobe_drop_chance_on_hit</Data></Cell>
     <Cell ss:StyleID="s27"><Data ss:Type="String">%1 Health Globe generation on Hit</Data></Cell>
     <Cell ss:StyleID="s18"><Data ss:Type="String">%1 életerő gömb generálás találatonként</Data></Cell>
+    <Cell ss:StyleID="s18"/>
+    <Cell ss:StyleID="s18"/>
+    <Cell ss:StyleID="s18"/>
+    <Cell ss:StyleID="s18"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s19"><Data ss:Type="String">ui_eim_inflicted_elemental_duration_percent</Data></Cell>
+    <Cell ss:StyleID="s27"><Data ss:Type="String">Increases inflicted Elemental Ailments Duration by %1</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">Megnöveli az okozott elemi állapothatás időtartamát %1-kal</Data></Cell>
+    <Cell ss:StyleID="s18"/>
+    <Cell ss:StyleID="s18"/>
+    <Cell ss:StyleID="s18"/>
+    <Cell ss:StyleID="s18"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s19"><Data ss:Type="String">ui_eim_inflicted_material_duration_percent</Data></Cell>
+    <Cell ss:StyleID="s27"><Data ss:Type="String">Increases inflicted Material Ailments Duration by %1</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">Megnöveli az okozott anyagi állapothatás időtartamát %1-kal</Data></Cell>
+    <Cell ss:StyleID="s18"/>
+    <Cell ss:StyleID="s18"/>
+    <Cell ss:StyleID="s18"/>
+    <Cell ss:StyleID="s18"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s18"><Data ss:Type="String">ui_eim_inflicted_occult_duration_percent</Data></Cell>
+    <Cell ss:StyleID="s27"><Data ss:Type="String">Increases inflicted Occult Ailments Duration by %1</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">Megnöveli az okozott okkult állapothatás időtartamát %1-kal</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -3225,7 +3252,7 @@
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s19"><Data ss:Type="String">ui_eim_max_stacks_capacity</Data></Cell>
-    <Cell ss:StyleID="s27"><Data ss:Type="String">%1 maximum Ailment Stacks</Data></Cell>
+    <Cell ss:StyleID="s27"><Data ss:Type="String">%1 Maximum Ailment Stacks</Data></Cell>
     <Cell ss:StyleID="s18"><Data ss:Type="String">%1 maximális állapothatás halom</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -3325,7 +3352,7 @@
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s19"><Data ss:Type="String">ui_eim_offensivespeed_final_percent</Data></Cell>
     <Cell ss:StyleID="s27"><Data ss:Type="String">%1 Attack and Spell Casting Speed</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">%1 támadási és varázslat idézési sebesség</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">%1 támadási és idézési sebesség</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -3334,7 +3361,7 @@
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s19"><Data ss:Type="String">ui_eim_offensivespeed_score</Data></Cell>
     <Cell ss:StyleID="s27"><Data ss:Type="String">%1 Attack and Spell Casting Speed</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">%1 támadási és varázslat idézési sebesség</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">%1 támadási és idézési sebesség</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -3343,7 +3370,7 @@
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s19"><Data ss:Type="String">ui_eim_offensivespeed_score_percent</Data></Cell>
     <Cell ss:StyleID="s27"><Data ss:Type="String">%1 Attack and Spell Casting Speed</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">%1 támadási és varázslat idézési sebesség</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">%1 támadási és idézési sebesség</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -3585,7 +3612,7 @@
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s19"><Data ss:Type="String">ui_eim_rage_to_umbra_transfer_percent</Data></Cell>
-    <Cell ss:StyleID="s27"><Data ss:Type="String">%1 increased Transfer Rate between Rage and Willpower</Data></Cell>
+    <Cell ss:StyleID="s27"><Data ss:Type="String">%1 Increased Transfer Rate between Rage and Willpower</Data></Cell>
     <Cell ss:StyleID="s18"><Data ss:Type="String">%1 megnövelt átalakítási mérték a düh és akaraterő között</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -3594,7 +3621,7 @@
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s19"><Data ss:Type="String">ui_eim_rage_to_umbra_transfer_pts</Data></Cell>
-    <Cell ss:StyleID="s27"><Data ss:Type="String">%1-%2 reduced Transfer Rate between Rage and Willpower</Data></Cell>
+    <Cell ss:StyleID="s27"><Data ss:Type="String">%1-%2 Reduced Transfer Rate between Rage and Willpower</Data></Cell>
     <Cell ss:StyleID="s18"><Data ss:Type="String">%1-%2 csökkentett átalakítási mérték a düh és akaraterő között</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -4395,7 +4422,7 @@
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s19"><Data ss:Type="String">ui_eim_twohanded_blockchance_flat</Data></Cell>
-    <Cell ss:StyleID="s27"><Data ss:Type="String">%1 Block Chance while a Two-handed Weapon is equipped</Data></Cell>
+    <Cell ss:StyleID="s27"><Data ss:Type="String">%1 Block Chance while a Two-Handed Weapon is equipped</Data></Cell>
     <Cell ss:StyleID="s18"><Data ss:Type="String">%1 hárítási esély felszerelt kétkezes fegyver esetében</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -4746,8 +4773,8 @@
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s19"><Data ss:Type="String">ui_eim_local_damage_flat_fire</Data></Cell>
-    <Cell ss:StyleID="s27"><Data ss:Type="String">%1-%2 Fire Damage on Attacks with this weapon</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">%1-%2 tűzsebzés a fegyver támadásaihoz</Data></Cell>
+    <Cell ss:StyleID="s27"><Data ss:Type="String">%1-%2 Fire Damage on Attacks and Spells with this weapon</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">%1-%2 tűzsebzés a fegyver támadásaihoz és varázslataihoz</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -4755,8 +4782,8 @@
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s19"><Data ss:Type="String">ui_eim_local_damage_flat_frost</Data></Cell>
-    <Cell ss:StyleID="s27"><Data ss:Type="String">%1-%2 Frost Damage on Attacks with this weapon</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">%1-%2 fagysebzés a fegyver támadásaihoz</Data></Cell>
+    <Cell ss:StyleID="s27"><Data ss:Type="String">%1-%2 Frost Damage on Attacks and Spells with this weapon</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">%1-%2 fagysebzés a fegyver támadásaihoz és varázslataihoz</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -4764,8 +4791,8 @@
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s19"><Data ss:Type="String">ui_eim_local_damage_flat_lightning</Data></Cell>
-    <Cell ss:StyleID="s27"><Data ss:Type="String">%1-%2 Lightning Damage on Attacks with this weapon</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">%1-%2 villámsebzés a fegyver támadásaihoz</Data></Cell>
+    <Cell ss:StyleID="s27"><Data ss:Type="String">%1-%2 Lightning Damage on Attacks and Spells with this weapon</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">%1-%2 villámsebzés a fegyver támadásaihoz és varázslataihoz</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -4773,8 +4800,8 @@
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s19"><Data ss:Type="String">ui_eim_local_damage_flat_physical</Data></Cell>
-    <Cell ss:StyleID="s27"><Data ss:Type="String">%1-%2 Physical Damage on Attacks with this weapon</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">%1-%2 fizikai sebzés a fegyver támadásaihoz</Data></Cell>
+    <Cell ss:StyleID="s27"><Data ss:Type="String">%1-%2 Physical Damage on Attacks and Spells with this weapon</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">%1-%2 fizikai sebzés a fegyver támadásaihoz és varázslataihoz</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -4782,8 +4809,8 @@
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s19"><Data ss:Type="String">ui_eim_local_damage_flat_rend</Data></Cell>
-    <Cell ss:StyleID="s27"><Data ss:Type="String">%1-%2 Rend Damage on Attacks with this weapon</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">%1-%2 hasító sebzés a fegyver támadásaihoz</Data></Cell>
+    <Cell ss:StyleID="s27"><Data ss:Type="String">%1-%2 Rend Damage on Attacks and Spells with this weapon</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">%1-%2 hasító sebzés a fegyver támadásaihoz és varázslataihoz</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -4791,8 +4818,8 @@
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s19"><Data ss:Type="String">ui_eim_local_damage_flat_sacred</Data></Cell>
-    <Cell ss:StyleID="s27"><Data ss:Type="String">%1-%2 Sacred Damage on Attacks with this weapon</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">%1-%2 szent sebzés a fegyver támadásaihoz</Data></Cell>
+    <Cell ss:StyleID="s27"><Data ss:Type="String">%1-%2 Sacred Damage on Attacks and Spells with this weapon</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">%1-%2 szent sebzés a fegyver támadásaihoz és varázslataihoz</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -4800,8 +4827,8 @@
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s19"><Data ss:Type="String">ui_eim_local_damage_flat_shadow</Data></Cell>
-    <Cell ss:StyleID="s27"><Data ss:Type="String">%1-%2 Shadow Damage on Attacks with this weapon</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">%1-%2 árnysebzés a fegyver támadásaihoz</Data></Cell>
+    <Cell ss:StyleID="s27"><Data ss:Type="String">%1-%2 Shadow Damage on Attacks and Spells with this weapon</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">%1-%2 árnysebzés a fegyver támadásaihoz és varázslataihoz</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -4809,8 +4836,8 @@
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s19"><Data ss:Type="String">ui_eim_local_damage_flat_toxic</Data></Cell>
-    <Cell ss:StyleID="s27"><Data ss:Type="String">%1-%2 Toxic Damage on Attacks with this weapon</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">%1-%2 méregsebzés a fegyver támadásaihoz</Data></Cell>
+    <Cell ss:StyleID="s27"><Data ss:Type="String">%1-%2 Toxic Damage on Attacks and Spells with this weapon</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">%1-%2 méregsebzés a fegyver támadásaihoz és varázslataihoz</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -4818,8 +4845,8 @@
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s19"><Data ss:Type="String">ui_eim_local_damage_flat_umbra</Data></Cell>
-    <Cell ss:StyleID="s27"><Data ss:Type="String">%1-%2 Aether Damage on Attacks with this weapon</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">%1-%2 étersebzés a fegyver támadásaihoz</Data></Cell>
+    <Cell ss:StyleID="s27"><Data ss:Type="String">%1-%2 Aether Damage on Attacks and Spells with this weapon</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">%1-%2 étersebzés a fegyver támadásaihoz és varázslataihoz</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -4827,8 +4854,8 @@
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s18"><Data ss:Type="String">ui_eim_local_damage_percent_elemental</Data></Cell>
-    <Cell ss:StyleID="s27"><Data ss:Type="String">%1 Elemental Damage on Attacks with this weapon</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">%1 elemi sebzés a fegyver támadásaihoz</Data></Cell>
+    <Cell ss:StyleID="s27"><Data ss:Type="String">%1 Elemental Damage on Attacks and Spells with this weapon</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">%1 elemi sebzés a fegyver támadásaihoz és varázslataihoz</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -4836,8 +4863,8 @@
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s18"><Data ss:Type="String">ui_eim_local_damage_percent_material</Data></Cell>
-    <Cell ss:StyleID="s25"><Data ss:Type="String">%1 Material Damage on Attacks with this weapon</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">%1 anyagi sebzés a fegyver támadásaihoz</Data></Cell>
+    <Cell ss:StyleID="s25"><Data ss:Type="String">%1 Material Damage on Attacks and Spells with this weapon</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">%1 anyagi sebzés a fegyver támadásaihoz és varázslataihoz</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -4845,8 +4872,8 @@
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s18"><Data ss:Type="String">ui_eim_local_damage_percent_primeval</Data></Cell>
-    <Cell ss:StyleID="s27"><Data ss:Type="String">%1 Occult Damage on Attacks with this weapon</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">%1 okkult sebzés a fegyver támadásaihoz</Data></Cell>
+    <Cell ss:StyleID="s27"><Data ss:Type="String">%1 Occult Damage on Attacks and Spells with this weapon</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">%1 okkult sebzés a fegyver támadásaihoz és varázslataihoz</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -4854,8 +4881,8 @@
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s20"><Data ss:Type="String">ui_eim_local_damage_percent_all</Data></Cell>
-    <Cell ss:StyleID="s27"><Data ss:Type="String">%1 All Damage on Attacks with this weapon</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">%1 teljes sebzés a fegyver támadásaihoz</Data></Cell>
+    <Cell ss:StyleID="s27"><Data ss:Type="String">%1 All Damage on Attacks and Spells with this weapon</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">%1 teljes sebzés a fegyver támadásaihoz és varázslataihoz</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -5008,7 +5035,7 @@
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s18"><Data ss:Type="String">ui_eim_minion_offensive_speed_percent</Data></Cell>
     <Cell ss:StyleID="s25"><Data ss:Type="String">%1 Attack and Spell Casting Speed for Summons</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">%1 a megidézett lények támadási és varázslat idézési sebességéhez</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">%1 a megidézett lények támadási és varázslatidézési sebességéhez</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -5044,7 +5071,7 @@
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s21"><Data ss:Type="String">ui_eim_stack_anger_uses_mechanic</Data></Cell>
     <Cell ss:StyleID="s25"><Data ss:Type="String">You gain 1 point of &quot;Unleashed Fury&quot; per Enemy Hit. Those Points reset after %2s out of combat. You can have up to %1 &quot;Unleashed Fury&quot;</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">1 pontnyi &quot;elszabadított haragot&quot; szerzel eltalált ellenfelenként. Ezek a pontok a harcon kívül töltött %2s után törlődnek. Maximum %1 &quot;elszabadított harag&quot; ponttal rendelkezhetsz.</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">1 pontnyi &quot;elszabadított haragot&quot; szerzel eltalált ellenfelenként. Ezek a pontok a harcon kívül töltött %2 mp után törlődnek. Maximum %1 &quot;elszabadított harag&quot; ponttal rendelkezhetsz.</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -5079,7 +5106,7 @@
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s21"><Data ss:Type="String">ui_eim_can_change_stances_with_dodgeroll</Data></Cell>
-    <Cell ss:StyleID="s25"><Data ss:Type="String">Gain access to two Stances: &quot;Probing Weakness&quot; and &quot;Stalwart Resolve&quot;. You can change your Stance by using the Active Dodge</Data></Cell>
+    <Cell ss:StyleID="s25"><Data ss:Type="String">Gain access to two Stances: &quot;Probing Weakness&quot; and &quot;Stalwart Resolve.&quot; You can change your Stance by using the Active Dodge</Data></Cell>
     <Cell ss:StyleID="s18"><Data ss:Type="String">Két &quot;beálláshoz&quot; férsz hozzá: &quot;vizsgálódó gyengeség&quot; és &quot;rendíthetetlen elhatározás&quot;. A beállásodat aktív kitérés használatával változtathatod meg.</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -5097,8 +5124,8 @@
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s21"><Data ss:Type="String">ui_eim_stance_defensive_stats</Data></Cell>
-    <Cell ss:StyleID="s25"><Data ss:Type="String">The &quot;Stalwart Resolve&quot; Stance reduces your Attack and Spell Damage by %3 but gives you an additional %1 Block Chance and %2 Block Efficiency</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">A &quot;rendíthetetlen elhatározás&quot; további %1 hárítási esélyt és %2 hárítási hatékonyságot ad, de a támadási és varázslatsebzésed %3-kal csökken.</Data></Cell>
+    <Cell ss:StyleID="s25"><Data ss:Type="String">The &quot;Stalwart Resolve&quot; Stance reduces your Attack and Spell Casting Speed by %3 but gives you an additional %1 Block Chance and %2 Block Efficiency</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">A &quot;rendíthetetlen elhatározás&quot; %3-kal csökkenti a támadási és varázslatidézési sebességedet, de további %1 hárítási esélyt és %2 hárítási hatékonyságot ad.</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -5133,8 +5160,8 @@
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s21"><Data ss:Type="String">ui_eim_damage_on_block_rend</Data></Cell>
-    <Cell ss:StyleID="s25"><Data ss:Type="String">Proud Reprisal damage are converted into Rend Damage</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">A Büszke megtorlás sebzése átalakul hasító sebzéssé</Data></Cell>
+    <Cell ss:StyleID="s25"><Data ss:Type="String">Proud Reprisal damage deals an additional %1 Weapon Damage and is converted into Rend Damage</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">A Büszke megtorlás sebzése további %1 fegyversebzést okoz, és átalakul hasító sebzéssé.</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -5250,7 +5277,7 @@
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s21"><Data ss:Type="String">ui_eim_stat_bonus_from_chest_armor</Data></Cell>
-    <Cell ss:StyleID="s25"><Data ss:Type="String">Allows you to receive a Bonus based on on the Chest-piece equipped</Data></Cell>
+    <Cell ss:StyleID="s25"><Data ss:Type="String">Allows you to receive a Bonus based on the Chest-piece equipped</Data></Cell>
     <Cell ss:StyleID="s18"><Data ss:Type="String">Lehetővé teszi egy bónusz szerzését a felszerelt mellvért alapján</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -5268,7 +5295,7 @@
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s21"><Data ss:Type="String">ui_eim_stat_bonus_from_chest_armor_tank</Data></Cell>
-    <Cell ss:StyleID="s25"><Data ss:Type="String">Heavy: Adds %1 of the armor piece All Resistance Score to your All Resistance Score</Data></Cell>
+    <Cell ss:StyleID="s25"><Data ss:Type="String">Heavy: Adds %1 of the armour piece All Resistance Score to your All Resistance Score</Data></Cell>
     <Cell ss:StyleID="s18"><Data ss:Type="String">Nehéz: A felszerelt nehézpáncél teljes ellenállás értékének %1-át a teljes ellenállás értékedhez adja.</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -5313,7 +5340,7 @@
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s21"><Data ss:Type="String">ui_eim_stat_bonus_from_helmet_tank</Data></Cell>
-    <Cell ss:StyleID="s25"><Data ss:Type="String">Heavy: Adds %1 of the armor piece All Resistance Score to your All Resistance Score</Data></Cell>
+    <Cell ss:StyleID="s25"><Data ss:Type="String">Heavy: Adds %1 of the armour piece All Resistance Score to your All Resistance Score</Data></Cell>
     <Cell ss:StyleID="s18"><Data ss:Type="String">Nehéz: A felszerelt nehézpáncél teljes ellenállás értékének %1-át a teljes ellenállás értékedhez adja.</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -5394,8 +5421,8 @@
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s21"><Data ss:Type="String">ui_eim_pray_on_low_health_all_resistances</Data></Cell>
-    <Cell ss:StyleID="s25"><Data ss:Type="String">When your Health is below %2, all nearby Allies gain %1 additional All Resistances Score</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">Amikor az életerőd %2 alatt van, az összes közeli szövetséges további %1 teljes ellenállás értéket kap.</Data></Cell>
+    <Cell ss:StyleID="s25"><Data ss:Type="String">When your Health is below %2, all nearby Allies gain %1 additional All Resistances Score during %3s. %4s Cooldown</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">Amikor az életerőd %2 alatt van, az összes közeli szövetséges további %1 teljes ellenállás értéket kap %3s alatt. %4s lehűlési idő.</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -5430,8 +5457,8 @@
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s21"><Data ss:Type="String">ui_eim_can_proc_attunements</Data></Cell>
-    <Cell ss:StyleID="s25"><Data ss:Type="String">Skills that inflict Fire, Frost, or Lightning Damage grant passive Bonuses called &quot;Accords&quot;. Up to %1 &quot;Accord(s)&quot; can be active simultaneously. Triggered &quot;Accords&quot; cannot be changed during %2s</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">A tűz, fagy vagy villámsebzést okozó képességek &quot;egyezségnek&quot; nevezett passzív bónuszokat biztosítanak. Maximum %1 &quot;egyezség&quot; lehet egyszerre aktív. Az aktivált &quot;egyezségek&quot; %2s-ig nem változtathatók meg.</Data></Cell>
+    <Cell ss:StyleID="s25"><Data ss:Type="String">Skills that inflict Fire, Frost, or Lightning Damage grant passive Bonuses called &quot;Accords.&quot; Up to %1 &quot;Accord(s)&quot; can be active simultaneously. Triggered &quot;Accords&quot; cannot be changed during %2s</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">A tűz, fagy vagy villámsebzést okozó képességek &quot;egyezségnek&quot; nevezett passzív bónuszokat biztosítanak. Maximum %1 &quot;egyezség&quot; lehet egyszerre aktív. Az aktivált &quot;egyezségek&quot; %2 mp-ig nem változtathatók meg.</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -5475,8 +5502,8 @@
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s18"><Data ss:Type="String">ui_eim_meteor_on_casting_fire_skill</Data></Cell>
-    <Cell ss:StyleID="s25"><Data ss:Type="String">Launch a Meteor at the targeted location when a Fire Skill is used. The Meteor deals %1 Weapon Damage. %4s Cooldown</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">Egy tűzképesség használatakor kilősz egy meteort a megcélzott helyre. A meteor %1 fegyversebzést okoz. A lehűlési idő %4s.</Data></Cell>
+    <Cell ss:StyleID="s25"><Data ss:Type="String">Launch a Meteor at the targeted location when a Fire Skill is used. The Meteor deals %3 Weapon Damage. %4s Cooldown</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">Egy tűzképesség használatakor kilősz egy meteort a megcélzott helyre. A meteor %3 fegyversebzést okoz. A lehűlési idő %4s.</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -5484,8 +5511,8 @@
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s21"><Data ss:Type="String">ui_eim_frost_lance_on_casting_frost_skill</Data></Cell>
-    <Cell ss:StyleID="s25"><Data ss:Type="String">Launch a Frost Lance at the targeted location when a Frost Skill is used. The Frost Lance deals %1 Weapon Damage. %4s Cooldown</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">Egy fagyképesség használatakor kilősz egy jeges lándzsát a megcélzott helyre. A jeges lándzsa %1 fegyversebzést okoz. A lehűlési idő %4s.</Data></Cell>
+    <Cell ss:StyleID="s25"><Data ss:Type="String">Launch a Frost Lance at the targeted location when a Frost Skill is used. The Frost Lance deals %3 Weapon Damage. %4s Cooldown</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">Egy fagyképesség használatakor kilősz egy jeges lándzsát a megcélzott helyre. A jeges lándzsa %3 fegyversebzést okoz. A lehűlési idő %4s.</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -5493,8 +5520,35 @@
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s21"><Data ss:Type="String">ui_eim_thunderstrike_on_casting_lightning_skill</Data></Cell>
-    <Cell ss:StyleID="s25"><Data ss:Type="String">Launch a Chain Lightning at the targeted location when a Lightning Skill is used. The Chain Lightning deals %1 Weapon Damage. %4s Cooldown</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">Egy villámképesség használatakor láncvillámot lősz ki a megcélzott helyre. A láncvillám %1 fegyversebzést okoz. A lehűlési idő %4s.</Data></Cell>
+    <Cell ss:StyleID="s25"><Data ss:Type="String">Launch a Chain Lightning at the targeted location when a Lightning Skill is used. The Chain Lightning deals %3 Weapon Damage. %4s Cooldown</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">Egy villámképesség használatakor láncvillámot lősz ki a megcélzott helyre. A láncvillám %3 fegyversebzést okoz. A lehűlési idő %4s.</Data></Cell>
+    <Cell ss:StyleID="s18"/>
+    <Cell ss:StyleID="s18"/>
+    <Cell ss:StyleID="s18"/>
+    <Cell ss:StyleID="s18"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s21"><Data ss:Type="String">ui_eim_meteor_on_casting_fire_skill_moon</Data></Cell>
+    <Cell ss:StyleID="s25"><Data ss:Type="String">Omnitempest's Meteor now deals %3 Weapon Damage. %4s Cooldown</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">Az Omniförgeteg meteorja mostantól %3 fegyversebzést okoz. A lehűlési idő %4s.</Data></Cell>
+    <Cell ss:StyleID="s18"/>
+    <Cell ss:StyleID="s18"/>
+    <Cell ss:StyleID="s18"/>
+    <Cell ss:StyleID="s18"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s21"><Data ss:Type="String">ui_eim_frost_lance_on_casting_frost_skill_moon</Data></Cell>
+    <Cell ss:StyleID="s25"><Data ss:Type="String">Omnitempest's Frost Lance now deals %3 Weapon Damage. %4s Cooldown</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">Az Omniförgeteg jeges lándzsája mostantól %3 fegyversebzést okoz. A lehűlési idő %4s.</Data></Cell>
+    <Cell ss:StyleID="s18"/>
+    <Cell ss:StyleID="s18"/>
+    <Cell ss:StyleID="s18"/>
+    <Cell ss:StyleID="s18"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s21"><Data ss:Type="String">ui_eim_thunderstrike_on_casting_lightning_skill_moon</Data></Cell>
+    <Cell ss:StyleID="s25"><Data ss:Type="String">Omnitempest's Chain Lightning now deals %3 Weapon Damage. %4s Cooldown</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">Az Omniförgeteg láncvillámja mostantól %3 fegyversebzést okoz. A lehűlési idő %4s.</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -5511,8 +5565,8 @@
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s18"><Data ss:Type="String">ui_eim_explosion_on_low_willpower_damage</Data></Cell>
-    <Cell ss:StyleID="s25"><Data ss:Type="String">Damage from the Elementary Destabilization explosion is now based on 30% of your maximum Health or Force Shield (whichever the highest)</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">Az elemi destabilizáció robbanásából származó sebzés mostantól a maximális életerőd vagy erőpajzsod (amelyik nagyobb) 30%-án alapul.</Data></Cell>
+    <Cell ss:StyleID="s25"><Data ss:Type="String">Damage from the Elementary Destabilization explosion is now based on %1 of your maximum Health or Force Shield (whichever the highest)</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">Az elemi destabilizáció robbanásából származó sebzés mostantól a maximális életerőd vagy erőpajzsod (amelyik nagyobb) %1%-án alapul.</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -5521,7 +5575,7 @@
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s21"><Data ss:Type="String">ui_eim_stasis_afflicted_enemies_take_damage_twice</Data></Cell>
     <Cell ss:StyleID="s25"><Data ss:Type="String">When you hit Enemies affected by Stasis, they take %1 of the Hit Damage again after %2s</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">Amikor eltalálsz egy sztázistól szenvedő ellenfelet, a találati sebzés %1-át %2s késleltetéssel szenvedik el.</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">Amikor eltalálsz egy sztázistól szenvedő ellenfelet, a találati sebzés %1-át %2 mp késleltetéssel szenvedik el.</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -5566,7 +5620,7 @@
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s21"><Data ss:Type="String">ui_eim_take_delayed_damage</Data></Cell>
     <Cell ss:StyleID="s25"><Data ss:Type="String">You only take %1 Damage on Enemy Hit. The remaining Damage is dealt %2s after the Hit</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">Az ellenfél támadásakor csak %1-t sebződsz, a maradék sebzést %2s-cel a találat után szenveded el.</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">Az ellenfél támadásakor csak %1-t sebződsz, a maradék sebzést %2 mp-cel a találat után szenveded el.</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -5592,7 +5646,7 @@
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s21"><Data ss:Type="String">ui_eim_dead_enemies_may_spawn_green_globes</Data></Cell>
-    <Cell ss:StyleID="s25"><Data ss:Type="String">Enemies that die in %1m radius around you have %2 chance to drop green globes. Picking up green globes gives you an additional %3 Damage as Poison Damage per green globe during %4s</Data></Cell>
+    <Cell ss:StyleID="s25"><Data ss:Type="String">Enemies that die in %1m radius around you have %2 chance to drop green globes. Picking up green globes gives you an additional %3 Damage as Toxic Damage per green globe during %4s</Data></Cell>
     <Cell ss:StyleID="s18"><Data ss:Type="String">%1 méteres hatósugárban meghaló ellenfelek %2 eséllyel zöld gömböket ejtenek el. A zöld gömbök felvétele további %3 sebzést biztosít méregsebzés formájában, zöld gömbönként %4s-ig.</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -5601,7 +5655,7 @@
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s21"><Data ss:Type="String">ui_eim_dead_summons_may_spawn_green_globes</Data></Cell>
-    <Cell ss:StyleID="s25"><Data ss:Type="String">Summons that die in a %1m radius also have %2 chance to drop green globes. Picking up green globes gives you an additional %3 Damage as Poison Damage per green globe during %4s</Data></Cell>
+    <Cell ss:StyleID="s25"><Data ss:Type="String">Summons that die in a %1m radius also have %2 chance to drop green globes. Picking up green globes gives you an additional %3 Damage as Toxic Damage per green globe during %4s</Data></Cell>
     <Cell ss:StyleID="s18"><Data ss:Type="String">A körülötted %1 méteres hatósugárban meghaló megidézett lények %2 eséllyel zöld gömböket ejtenek el. A zöld gömbök felvétele további %3 sebzést biztosít méregsebzés formájában, zöld gömbönként %4s-ig.</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -5638,7 +5692,7 @@
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s21"><Data ss:Type="String">ui_eim_poisonous_aura_slow</Data></Cell>
     <Cell ss:StyleID="s25"><Data ss:Type="String">Enemies are Slowed by %1 for %2s when they are within the Toxic Emanations radius</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">A Mérgező kisugárzások hatósugárban tartózkodó ellenfelek %1-kal lelassulnak %2s-ig.</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">A Mérgező kisugárzások hatósugárban tartózkodó ellenfelek %1-kal lelassulnak %2 mp-ig.</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -5666,6 +5720,15 @@
     <Cell ss:StyleID="s21"><Data ss:Type="String">ui_eim_life_ceil_from_force_shield</Data></Cell>
     <Cell ss:StyleID="s25"><Data ss:Type="String">Health cannot exceed %1 of maximum Force Shield</Data></Cell>
     <Cell ss:StyleID="s18"><Data ss:Type="String">Az életerő nem haladhatja meg a maximális erőpajzs %1-át.</Data></Cell>
+    <Cell ss:StyleID="s18"/>
+    <Cell ss:StyleID="s18"/>
+    <Cell ss:StyleID="s18"/>
+    <Cell ss:StyleID="s18"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s21"><Data ss:Type="String">ui_eim_life_ceil_from_force_shield_moon</Data></Cell>
+    <Cell ss:StyleID="s25"><Data ss:Type="String">Adds %1 to the maximum Health allowed by Masochistic Effigy</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">%1-t ad a Mazochista képmás által biztosított maximális életerőhöz.</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -5755,7 +5818,7 @@
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s21"><Data ss:Type="String">ui_eim_material_damage_on_elites</Data></Cell>
     <Cell ss:StyleID="s25"><Data ss:Type="String">When a Champion or a Boss is killed, you gain 1 &quot;Headhunter&quot; point that gives %1 Material Damage per point. &quot;Headhunter&quot; points reset after %2s</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">1 &quot;fejvadász&quot; pontot szerzel, amely %1 anyagi sebzést biztosít pontonként, amikor egy bajnok vagy főellenség meghal. A &quot;fejvadász&quot; pontok %2s után törlődnek.</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">1 &quot;fejvadász&quot; pontot szerzel, amely %1 anyagi sebzést biztosít pontonként, amikor egy bajnok vagy főellenség meghal. A &quot;fejvadász&quot; pontok %2 mp után törlődnek.</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -5764,7 +5827,7 @@
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s18"><Data ss:Type="String">ui_eim_material_damage_on_elites_timer</Data></Cell>
     <Cell ss:StyleID="s25"><Data ss:Type="String">The Duration of &quot;Headhunter&quot; points before resetting is increased to %2s</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">A Fejvadász pontok időtartama %2s-cel megnő, mielőtt törlődne.</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">A Fejvadász pontok időtartama %2 mp-cel megnő, mielőtt törlődne.</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -5772,8 +5835,8 @@
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s21"><Data ss:Type="String">ui_eim_stack_bullet_uses_mechanic</Data></Cell>
-    <Cell ss:StyleID="s25"><Data ss:Type="String">You gain 1 point of &quot;Annointed Ammunition&quot; every %1s. When you use a Projectile Skill, %2 &quot;Annointed Ammunition&quot; point(s) are consumed</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">1 pontnyi &quot;szent lőszert&quot; szerzel %1s-ként. Amikor egy lövedékképességet használsz, %2 &quot;szent lőszer&quot; pontot használsz el.</Data></Cell>
+    <Cell ss:StyleID="s25"><Data ss:Type="String">You gain 1 point of &quot;Anointed Ammunition&quot; every %1s. When you use a Projectile Skill, 1 &quot;Anointed Ammunition&quot; point is consumed</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">1 pontnyi &quot;szent lőszert&quot; szerzel %1s-ként. Amikor egy lövedékképességet használsz, 1 &quot;szent lőszer&quot; pontot használsz el.</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -5781,7 +5844,7 @@
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s21"><Data ss:Type="String">ui_eim_stack_bullet_charges_on_dodge_roll</Data></Cell>
-    <Cell ss:StyleID="s25"><Data ss:Type="String">When you complete an Active Dodge, %1 &quot;Annointed Ammunition&quot; point(s) is refilled</Data></Cell>
+    <Cell ss:StyleID="s25"><Data ss:Type="String">When you complete an Active Dodge, %1 &quot;Anointed Ammunition&quot; point(s) is refilled</Data></Cell>
     <Cell ss:StyleID="s18"><Data ss:Type="String">Amikor aktív kitérést hajtasz végre, %1 &quot;szent lőszer&quot; pont töltődik újra.</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -5790,7 +5853,7 @@
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s21"><Data ss:Type="String">ui_eim_stack_bullet_charges_on_critical</Data></Cell>
-    <Cell ss:StyleID="s25"><Data ss:Type="String">When you deal a Critical Hit, %1 &quot;Annointed Ammunition&quot; point(s) is refilled</Data></Cell>
+    <Cell ss:StyleID="s25"><Data ss:Type="String">When you deal a Critical Hit, %1 &quot;Anointed Ammunition&quot; point(s) is refilled</Data></Cell>
     <Cell ss:StyleID="s18"><Data ss:Type="String">Amikor kritikus találatot okozol, %1 &quot;szent lőszer&quot; pont töltődik újra.</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -5799,7 +5862,7 @@
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s21"><Data ss:Type="String">ui_eim_stack_bullet_proj_damage</Data></Cell>
-    <Cell ss:StyleID="s25"><Data ss:Type="String">Each point of &quot;Annointed Ammunition&quot; gives you %1 Projectile Damage</Data></Cell>
+    <Cell ss:StyleID="s25"><Data ss:Type="String">Each point of &quot;Anointed Ammunition&quot; gives you %1 Projectile Damage</Data></Cell>
     <Cell ss:StyleID="s18"><Data ss:Type="String">Minden egyes &quot;szent lőszer&quot; pont %1 lövedéksebzést biztosít.</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -5808,7 +5871,7 @@
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s21"><Data ss:Type="String">ui_eim_stack_bullet_melee_damage</Data></Cell>
-    <Cell ss:StyleID="s25"><Data ss:Type="String">Each empty &quot;Annointed Ammunition&quot; point gives you %1 Melee Damage</Data></Cell>
+    <Cell ss:StyleID="s25"><Data ss:Type="String">Each empty &quot;Anointed Ammunition&quot; point gives you %1 Melee Damage</Data></Cell>
     <Cell ss:StyleID="s18"><Data ss:Type="String">Minden egyes &quot;szent lőszer&quot; pont %1 közelharci sebzést biztosít.</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -5889,7 +5952,7 @@
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s21"><Data ss:Type="String">ui_eim_stack_gadget_uses_mechanic</Data></Cell>
-    <Cell ss:StyleID="s25"><Data ss:Type="String">You generate %2 &quot;Power Charge&quot; per second and Basic Attacks refill %1 &quot;Power Charge&quot;. Device and Lightning Skills consume %4 &quot;Power Charge&quot; points. Capped between -%3 and %3 points</Data></Cell>
+    <Cell ss:StyleID="s25"><Data ss:Type="String">You generate %2 &quot;Power Charge&quot; per second and Basic Attacks refill %1 &quot;Power Charge.&quot; Device and Lightning Skills consume %4 &quot;Power Charge&quot; points. Capped between -%3 and %3 points</Data></Cell>
     <Cell ss:StyleID="s18"><Data ss:Type="String">%2 &quot;energiatöltetet&quot; szerzel másodpercenként, és az alaptámadások %1 &quot;energiatöltetet&quot; töltenek fel. Az eszköz- és villámképességek %4 &quot;energiatöltet&quot; pontot használnak el. Az értéke -%3 és +%3 között korlátozott.</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -5934,7 +5997,7 @@
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s21"><Data ss:Type="String">ui_eim_stack_balance_uses_mechanic</Data></Cell>
-    <Cell ss:StyleID="s25"><Data ss:Type="String">You have %1 points shared between &quot;Lure of Light&quot; and &quot;Lure of Darkness&quot;. Spells convert a &quot;Lure of Light&quot; point into &quot;Lure of Darkness&quot;. Attack Skills convert a &quot;Lure of Darkness&quot; point into &quot;Lure of Light&quot;</Data></Cell>
+    <Cell ss:StyleID="s25"><Data ss:Type="String">You have %1 points shared between &quot;Lure of Light&quot; and &quot;Lure of Darkness.&quot; Spells convert a &quot;Lure of Light&quot; point into &quot;Lure of Darkness.&quot; Attack Skills convert a &quot;Lure of Darkness&quot; point into &quot;Lure of Light&quot;</Data></Cell>
     <Cell ss:StyleID="s18"><Data ss:Type="String">%1 pont oszlik meg a &quot;csalogató fény&quot; és a &quot;csalogató sötétség&quot; között. Egy varázslat megidézése átalakít egy &quot;csalogató fényt&quot; egy &quot;csalogató sötétséggé&quot;. A támadó képességek átalakítanak egy &quot;csalogató sötétséget&quot; egy &quot;csalogató fénnyé&quot;.</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -5979,8 +6042,8 @@
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s18"><Data ss:Type="String">ui_eim_leave_decoy_on_dodgeroll_explosion</Data></Cell>
-    <Cell ss:StyleID="s25"><Data ss:Type="String">The Decoy left by an Active Dodge explodes when it is destroyed, dealing Damage in a %2m radius</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">Az aktív kitérésnél hátrahagyott csali felrobban, ha megsemmisül, és %2 méteres sugarú körben sebzést okoz.</Data></Cell>
+    <Cell ss:StyleID="s25"><Data ss:Type="String">The Decoy left by an Active Dodge explodes when it expires, dealing Damage in a %2m radius</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">Az aktív kitérésnél hátrahagyott csali felrobban, amikor lejár, és %2 méteres sugarú körben sebzést okoz.</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -6040,6 +6103,33 @@
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
    </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s21"><Data ss:Type="String">ui_eim_speed_boost_on_active_dodge</Data></Cell>
+    <Cell ss:StyleID="s25"><Data ss:Type="String">After using the Active Dodge, receive a %1 Movement Speed bonus for %3s</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">Egy aktív kitérés használata után %1 mozgási sebességbónuszt kapsz %3s erejéig</Data></Cell>
+    <Cell ss:StyleID="s18"/>
+    <Cell ss:StyleID="s18"/>
+    <Cell ss:StyleID="s18"/>
+    <Cell ss:StyleID="s18"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s21"><Data ss:Type="String">ui_SpeedOnActiveDodge_Title</Data></Cell>
+    <Cell ss:StyleID="s25"><Data ss:Type="String">Evasion Velocity</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">Elkerülési sebesség</Data></Cell>
+    <Cell ss:StyleID="s18"/>
+    <Cell ss:StyleID="s18"/>
+    <Cell ss:StyleID="s18"/>
+    <Cell ss:StyleID="s18"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s21"><Data ss:Type="String">ui_SpeedOnActiveDodge_Desc</Data></Cell>
+    <Cell ss:StyleID="s25"><Data ss:Type="String">Movement Speed bonus</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">Mozgási sebességbónusz</Data></Cell>
+    <Cell ss:StyleID="s18"/>
+    <Cell ss:StyleID="s18"/>
+    <Cell ss:StyleID="s18"/>
+    <Cell ss:StyleID="s18"/>
+   </Row>
    <Row ss:AutoFitHeight="0" ss:Height="14.25">
     <Cell ss:StyleID="s17"><Data ss:Type="String">Uniques</Data></Cell>
     <Cell ss:StyleID="s17"/>
@@ -6051,7 +6141,7 @@
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s22"><Data ss:Type="String">ui_eim_freeze_chance_to_crit</Data></Cell>
-    <Cell ss:StyleID="s25"><Data ss:Type="String">If your Hit has Freeze Chance, %1 of its Freeze Chance become Critical Chance. You can't Freeze Enemies anymore</Data></Cell>
+    <Cell ss:StyleID="s25"><Data ss:Type="String">If your Hit has Freeze Chance, %1 of its Freeze Chance becomes Critical Chance. You can't Freeze Enemies anymore</Data></Cell>
     <Cell ss:StyleID="s18"><Data ss:Type="String">Ha a találatod fagyasztási eséllyel rendelkezik, az esély %1-a kritikus eséllyé változik. Többé nem tudsz ellenfeleket megfagyasztani.</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -6177,8 +6267,8 @@
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s21"><Data ss:Type="String">ui_eim_explosion_on_target_kill</Data></Cell>
-    <Cell ss:StyleID="s25"><Data ss:Type="String">Enemies explode in an Area of Effect when they are killed and deal %1 Weapon Damage</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">Az ellenfelek a halálukkor felrobbannak, és a hatóterületükön %1 fegyversebzést okoznak</Data></Cell>
+    <Cell ss:StyleID="s25"><Data ss:Type="String">Enemies explode in an Area of Effect when they are killed and deal %3 Weapon Damage</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">Az ellenfelek a halálukkor felrobbannak, és a hatóterületükön %3 fegyversebzést okoznak</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -6186,8 +6276,8 @@
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s21"><Data ss:Type="String">ui_eim_explosion_on_globe_pickup</Data></Cell>
-    <Cell ss:StyleID="s25"><Data ss:Type="String">Globes explode in an Area of Effect when they are picked up and deal %1 Weapon Damage</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">A gömbök a felvételükkor felrobbannak, és a hatóterületükön %1 fegyversebzést okoznak</Data></Cell>
+    <Cell ss:StyleID="s25"><Data ss:Type="String">Globes explode in an Area of Effect when they are picked up and deal %3 Weapon Damage</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">A gömbök a felvételükkor felrobbannak, és a hatóterületükön %3 fegyversebzést okoznak</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -6304,7 +6394,7 @@
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s18"><Data ss:Type="String">ui_huntmodifier_eim_damage</Data></Cell>
     <Cell ss:StyleID="s27"><Data ss:Type="String">The Prey deals %1</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">A préda %1 sebzést okoz</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">A préda %1t okoz</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -6375,7 +6465,7 @@
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s18"><Data ss:Type="String">ui_HuntReward_LC_Armor_Legendary</Data></Cell>
-    <Cell ss:StyleID="s27"><Data ss:Type="String">Your Prey will drop a Legendary Armor with a Tributary Affix</Data></Cell>
+    <Cell ss:StyleID="s27"><Data ss:Type="String">Your Prey will drop a Legendary Armour with a Tributary Affix</Data></Cell>
     <Cell ss:StyleID="s18"><Data ss:Type="String">A prédád egy mellékes jellemzővel ellátott legendás páncélt dob el.</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -6438,7 +6528,7 @@
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s18"><Data ss:Type="String">ui_HuntReward_LC_Armor_Rare_1</Data></Cell>
-    <Cell ss:StyleID="s27"><Data ss:Type="String">Your Prey will drop a Rare Armor with a Tributary Affix</Data></Cell>
+    <Cell ss:StyleID="s27"><Data ss:Type="String">Your Prey will drop a Rare Armour with a Tributary Affix</Data></Cell>
     <Cell ss:StyleID="s18"><Data ss:Type="String">A prédád egy mellékes jellemzővel ellátott ritka páncélt dob el.</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -6447,7 +6537,7 @@
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s18"><Data ss:Type="String">ui_HuntReward_LC_Armor_Rare_2</Data></Cell>
-    <Cell ss:StyleID="s27"><Data ss:Type="String">Your Prey will drop 2 Rare Armors with a Tributary Affix</Data></Cell>
+    <Cell ss:StyleID="s27"><Data ss:Type="String">Your Prey will drop 2 Rare Armours with a Tributary Affix</Data></Cell>
     <Cell ss:StyleID="s18"><Data ss:Type="String">A prédád 2, mellékes jellemzővel ellátott ritka páncélt dob el.</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -6456,7 +6546,7 @@
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s18"><Data ss:Type="String">ui_HuntReward_LC_Armor_Rare_3</Data></Cell>
-    <Cell ss:StyleID="s27"><Data ss:Type="String">Your Prey will drop 3 Rare Armors with a Tributary Affix</Data></Cell>
+    <Cell ss:StyleID="s27"><Data ss:Type="String">Your Prey will drop 3 Rare Armours with a Tributary Affix</Data></Cell>
     <Cell ss:StyleID="s18"><Data ss:Type="String">A prédád 3, mellékes jellemzővel ellátott ritka páncélt dob el.</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -6465,7 +6555,7 @@
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s18"><Data ss:Type="String">ui_HuntReward_LC_Armor_Rare_4</Data></Cell>
-    <Cell ss:StyleID="s27"><Data ss:Type="String">Your Prey will drop 4 Rare Armors with a Tributary Affix</Data></Cell>
+    <Cell ss:StyleID="s27"><Data ss:Type="String">Your Prey will drop 4 Rare Armours with a Tributary Affix</Data></Cell>
     <Cell ss:StyleID="s18"><Data ss:Type="String">A prédád 4, mellékes jellemzővel ellátott ritka páncélt dob el.</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -6582,7 +6672,7 @@
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s23"><Data ss:Type="String">ui_OsharaBuff_Title</Data></Cell>
-    <Cell ss:StyleID="s27"><Data ss:Type="String">Oshara's Vigor</Data></Cell>
+    <Cell ss:StyleID="s27"><Data ss:Type="String">Oshara's Vigour</Data></Cell>
     <Cell ss:StyleID="s18"><Data ss:Type="String">Oshara ereje</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -6615,7 +6705,7 @@
    <Panes>
     <Pane>
      <Number>3</Number>
-     <ActiveRow>718</ActiveRow>
+     <ActiveRow>728</ActiveRow>
      <ActiveCol>6</ActiveCol>
     </Pane>
    </Panes>

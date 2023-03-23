@@ -1,12 +1,12 @@
 <MetaData>
   <Skill UID="player_whirlwind" ESkill="player_whirlwind" Keywords="attack_skill">
     <WeaponRequirements Requirements="melee," />
-    <CastingParams CastBone="R_Weapon_Bone" CanCastWhileMoving="0" ShouldMoveInRange="0" MaximumTurnRate="180" />
+    <CastingParams CastBone="R_Weapon_Bone" CanCastWhileMoving="0" ShouldMoveInRange="0" MaximumTurnRate="180" CancellableByDefault="1" />
     <Animation AnimationDrivenMovement="0" ActionString_In="player_skill_whirlwind_in" ActionString_Loop="player_skill_whirlwind_loop" ActionString_Out="player_skill_whirlwind_out" ScaleWithSpellCastingSpeed="0" />
     <HUD HUDPicture="../u_resources/spells/Active_Skills/whirlwind_Physical.png" UIName="@ui_AST_WhirlWind" Lore="@ui_AST_WhirlWind_Lore" ActiveEffectTitle="" ActiveEffectDesc="" ASTTreeNumber="1" ShowParamsInAST="Cost,ROSTime,Cooldown,Range,Projectiles,DamageDetail,DamageWeapon,DamageCritical,StatusAilmentsChance,SpecificWhirlWind" ShowParamsInTooltip="Cost,Cooldown,DamageOverview,StatusAilmentsChance,SpecificWhirlWind" />
     <Enneract PickableParticle_MoveToGround="U_CommonVFX_02.Esseract.Esseract_Projectile.Physical" PickableParticle_OnGround_Shape="U_CommonVFX_02.Esseract.Esseract_Shape.Circle_Physical" PickableParticle_OnGround_Damage="U_CommonVFX_02.Esseract.Esseract_Color.Physical" PickableParticle_OnGround_Symbol="U_CommonVFX_02.Esseract.Esseract_Symbol.HEPHAARON" PickableParticle_OnGround_Indicator="U_CommonVFX_02.Esseract.Esseract_Indicator.Physical" PickableParticle_OnGround_Pickup="U_CommonVFX_02.Esseract.Esseract_Loot.Physical" SkillLearningParticle="U_CommonVFX.Skill_Learn.Skill_Learn_Physical" Inventory_HUDPicture="../u_resources/enneracts/whirlwind.png" Inventory_LoreDesc="@ui_enneract_lore" />
     <Aggression TargetValueOnHit="10" />
-    <DamageWeapon WeaponMultiplier="1.6" />
+    <DamageWeapon WeaponMultiplier="2" />
     <ParticleList>
       <Particle Key="WeaponAppear" Name="U_Character.Skills.Whirldwind_Summon_01" Direction="0,1,0" Scale="1" Bone="R_Weapon_Bone" />
       <Particle Key="WeaponLoop" Name="U_Character.Skills.Whirldwind_loop" Direction="0,1,0" Scale="1" Bone="R_Weapon_Bone" />
@@ -20,81 +20,81 @@
     <Specific_WhirlWind SpeedMultiplier="1.5" Channel="0" Radius="4.0" MinTime="0.8" BlownAwayRadius="2.5" KeyReleaseTime="0.3" SubSkillToCast="secondary_chainlightning_physical" />
     <Tickrate BaseTickrate="2" MaxTickrate="5" SpeedScaleFactor="1" DamageOvercapFactor="1" />
     <ResourceCost RageCost="-150" RageCostPerLevel="0" ROSTransfertDuration="1.5" />
-    <SoundTrigger OnAnimStart="Play_Skill_Whirlwind_Summon" OnAnimLoopIn="Play_Skill_Whirlwind_Loop" OnAnimLoopOut="Stop_Skill_Whirlwind_Loop" OnInterrupt="Stop_Skill_Whirlwind_Loop" OnHit="Play_Skill_Whirlwind_Impact" />
+    <SoundTrigger OnAnimStart="Play_Skill_Whirlwind_Summon" OnAnimLoopIn="Play_Skill_Whirlwind_Loop" OnAnimLoopOut="Stop_Skill_Whirlwind_Loop" OnInterrupt="Stop_Skill_Whirlwind_Loop" OnHit="Play_Skill_Whirlwind_Impact" OnKill="Play_OnKill_Impact_Lethal_Melee_Skill_Default" />
   </Skill>
   <Skill UID="player_WhirlWind_variant_default_damage_type" ESkill="default_variant">
     <HUD UIName="@ui_AST_WhirlWind" Lore="@ui_AST_WhirlWind_Lore" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_Alpha.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_Alpha.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_Alpha.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_Alpha.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_Alpha.png" HUDPictureVariant_InnerIcon="../u_resources/spells/Active_Skills/whirlwind_Physical.png" VariantBottomPanel="1" />
   </Skill>
   <Skill UID="player_WhirlWind_variant_1" ESkill="default_variant">
-    <HUD UIName="@ui_Variant_WhirlWind_variant_1" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_001.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_001.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_001.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_001.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_001.png" ShowParamsInTooltip="SpecificWhirlWind,Cost" />
+    <HUD UIName="@ui_Variant_WhirlWind_variant_1" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_001.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_001.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_001.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_001.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_001.png" ShowParamsInTooltip="SpecificWhirlWind,Cost" Category="Utility" />
     <ResourceCost RageCost="25" />
   </Skill>
   <Skill UID="player_WhirlWind_variant_2" ESkill="default_variant">
-    <HUD UIName="@ui_Variant_WhirlWind_variant_2" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_003.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_003.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_003.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_003.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_003.png" ShowParamsInTooltip="SpecificWhirlWind,DamageWeapon" />
-    <DamageWeapon WeaponMultiplier="1.15" />
+    <HUD UIName="@ui_Variant_WhirlWind_variant_2" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_003.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_003.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_003.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_003.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_003.png" ShowParamsInTooltip="SpecificWhirlWind,DamageWeapon" Category="Combat" />
+    <DamageWeapon WeaponMultiplier="1.30" />
   </Skill>
   <Skill UID="player_WhirlWind_variant_3" ESkill="default_variant">
-    <HUD UIName="@ui_Variant_WhirlWind_variant_3" Lore="@ui_Variant_WhirlWind_variant_3_Lore" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_005.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_005.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_005.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_005.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_005.png" ShowParamsInTooltip="SpecificWhirlWind,CastingParams,DamageWeapon" />
+    <HUD UIName="@ui_Variant_WhirlWind_variant_3" Lore="@ui_Variant_WhirlWind_variant_3_Lore" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_005.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_005.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_005.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_005.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_005.png" ShowParamsInTooltip="SpecificWhirlWind,CastingParams,DamageWeapon" Category="Mastery" />
     <CastingParams CanCastWhileMoving="0" MinimumCastDuration="5.0" MaintainedCast="1" KeepAliveAfterReleasing="1" />
     <ResourceCostMaintained RageCostPerSecond="-100" RageCostPerSecondPerLevel="0" ROSTransfertDuration="1.0" />
     <Specific_WhirlWind Channel="1" />
-    <DamageWeapon WeaponMultiplier="0.75" />
+    <DamageWeapon WeaponMultiplier="0.85" />
     <StatusAilment AilmentEffectiveness="50" />
   </Skill>
   <Skill UID="player_WhirlWind_variant_5" ESkill="default_variant">
-    <HUD UIName="@ui_Variant_WhirlWind_variant_5" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_001.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_001.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_001.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_001.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_001.png" ShowParamsInTooltip="SpecificWhirlWind,StatusAilmentsChance" />
+    <HUD UIName="@ui_Variant_WhirlWind_variant_5" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_001.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_001.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_001.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_001.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_001.png" ShowParamsInTooltip="SpecificWhirlWind,StatusAilmentsChance" Category="Combat" />
     <StatusAilment AilmentEffectiveness="125" />
   </Skill>
   <Skill UID="player_WhirlWind_variant_6" ESkill="default_variant">
-    <HUD UIName="@ui_Variant_WhirlWind_variant_6" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_001.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_001.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_001.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_001.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_001.png" ShowParamsInTooltip="SpecificWhirlWind,DamageCritical" />
+    <HUD UIName="@ui_Variant_WhirlWind_variant_6" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_001.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_001.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_001.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_001.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_001.png" ShowParamsInTooltip="SpecificWhirlWind,DamageCritical" Category="Combat" />
     <DamageCritical CriticalDamageModifier="25" />
   </Skill>
   <Skill UID="player_WhirlWind_variant_7" ESkill="default_variant">
-    <HUD UIName="@ui_Variant_WhirlWind_variant_7" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_003.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_003.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_003.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_003.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_003.png" ShowParamsInTooltip="SpecificWhirlWind" />
+    <HUD UIName="@ui_Variant_WhirlWind_variant_7" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_003.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_003.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_003.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_003.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_003.png" ShowParamsInTooltip="SpecificWhirlWind" Category="Mastery" />
     <ParticleList>
       <Particle Key="WhirlWind" Name="U_Character.Skills.Whirldwind_02" Direction="0,1,0" Scale="1.5" Offset="0,0,1.6" Bone="Bip01" />
-      <Particle Key="Wave" Name="U_Character.Skills.Whirldwind_Wave_01" Direction="0,1,0" Offset="0,1,1.25" Scale="1" />
+      <Particle Key="Wave" Name="U_Character.Skills.Whirldwind_Wave_01" Direction="0,1,0" Offset="0,1,1.25" Scale="0.4" />
     </ParticleList>
     <Tickrate BaseTickrate="0.75" SpeedScaleFactor="1" DamageOvercapFactor="1" />
   </Skill>
   <Skill UID="player_WhirlWind_variant_8" ESkill="default_variant">
-    <HUD UIName="@ui_Variant_WhirlWind_variant_8" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_003.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_003.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_003.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_003.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_003.png" ShowParamsInTooltip="SpecificWhirlWind" />
+    <HUD UIName="@ui_Variant_WhirlWind_variant_8" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_003.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_003.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_003.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_003.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_003.png" ShowParamsInTooltip="SpecificWhirlWind" Category="Utility" />
     <Specific_WhirlWind AttackSpeedBuffName="AST_Whirlwind_Buff" AttackSpeedBuffDuration="10" />
   </Skill>
   <Skill UID="player_WhirlWind_variant_9" ESkill="default_variant">
-    <HUD UIName="@ui_Variant_WhirlWind_variant_9" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_001.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_001.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_001.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_001.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_001.png" ShowParamsInTooltip="SpecificWhirlWind,LifeLeech" />
-    <LifeLeech TransferPercent="1" TransferDuration="1" />
+    <HUD UIName="@ui_Variant_WhirlWind_variant_9" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_001.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_001.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_001.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_001.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_001.png" ShowParamsInTooltip="SpecificWhirlWind,LifeLeech" Category="Survival" />
+    <LifeLeech TransferPercent="0.01" TransferDuration="1" />
   </Skill>
   <Skill UID="player_WhirlWind_variant_10" ESkill="default_variant">
-    <HUD UIName="@ui_Variant_WhirlWind_variant_10" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_001.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_001.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_001.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_001.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_001.png" ShowParamsInTooltip="SpecificWhirlWind" />
+    <HUD UIName="@ui_Variant_WhirlWind_variant_10" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_001.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_001.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_001.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_001.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_001.png" ShowParamsInTooltip="SpecificWhirlWind" Category="Utility" />
     <Specific_WhirlWind RagePerKill="20" />
   </Skill>
   <Skill UID="player_WhirlWind_variant_11" ESkill="default_variant">
-    <HUD UIName="@ui_Variant_WhirlWind_variant_11" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_003.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_003.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_003.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_003.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_003.png" ShowParamsInTooltip="SpecificWhirlWind" />
-    <Specific_WhirlWind LightningChanceOnCritical="20" />
+    <HUD UIName="@ui_Variant_WhirlWind_variant_11" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_003.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_003.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_003.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_003.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_003.png" ShowParamsInTooltip="SpecificWhirlWind" Category="Mastery" />
+    <Specific_WhirlWind LightningChanceOnCritical="25" />
   </Skill>
   <Skill UID="player_WhirlWind_variant_12" ESkill="default_variant">
-    <HUD UIName="@ui_Variant_WhirlWind_variant_12" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_003.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_003.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_003.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_003.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_003.png" ShowParamsInTooltip="SpecificWhirlWind" />
+    <HUD UIName="@ui_Variant_WhirlWind_variant_12" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_003.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_003.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_003.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_003.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_003.png" ShowParamsInTooltip="SpecificWhirlWind" Category="Combat" />
     <Specific_WhirlWind TickRateMultiplierOnCritical="1.5" TickRateTimerOnCritical="0.9" />
   </Skill>
   <Skill UID="player_WhirlWind_variant_13" ESkill="default_variant">
-    <HUD UIName="@ui_Variant_WhirlWind_variant_13" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_001.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_001.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_001.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_001.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_001.png" ShowParamsInTooltip="SpecificWhirlWind" />
+    <HUD UIName="@ui_Variant_WhirlWind_variant_13" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_001.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_001.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_001.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_001.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_001.png" ShowParamsInTooltip="SpecificWhirlWind" Category="Combat" />
     <Specific_WhirlWind BuffOnKillName="AST_Whirlwind_BuffOnKill" BuffOnKillDuration="5" />
   </Skill>
   <Skill UID="player_WhirlWind_variant_14" ESkill="default_variant">
-    <HUD UIName="@ui_Variant_WhirlWind_variant_14" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_003.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_003.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_003.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_003.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_003.png" ShowParamsInTooltip="SpecificWhirlWind" />
+    <HUD UIName="@ui_Variant_WhirlWind_variant_14" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_003.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_003.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_003.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_003.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_003.png" ShowParamsInTooltip="SpecificWhirlWind" Category="Combat" />
     <Animation ActionString_In="player_skill_whirlwind_in" ActionString_Loop="player_skill_whirlwind_loop" ActionString_Out="player_skill_whirlwind_Swipe" />
     <Shapes>
       <Entry ShapeName="Player_Whirlwind_Wave_Shape" />
     </Shapes>
-    <Specific_WhirlWind WaveDamageMultiplier="2" WaveDuration="0.7" WaveFireRate="0.5" WaveSound="Play_Skill_Charge_Shockwave" />
+    <Specific_WhirlWind WaveDamageMultiplier="3" WaveDuration="1" WaveFireRate="0.5" WaveSound="Play_Skill_Charge_Shockwave" />
   </Skill>
   <Skill UID="player_WhirlWind_variant_15" ESkill="default_variant">
-    <HUD UIName="@ui_Variant_WhirlWind_variant_15" Lore="@ui_Variant_WhirlWind_variant_15_Lore" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_005.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_005.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_005.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_005.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_005.png" ShowParamsInTooltip="SpecificWhirlWind" />
+    <HUD UIName="@ui_Variant_WhirlWind_variant_15" Lore="@ui_Variant_WhirlWind_variant_15_Lore" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_005.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_005.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_005.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_005.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_005.png" ShowParamsInTooltip="SpecificWhirlWind" Category="Mastery" />
     <Specific_WhirlWind BounceProjectiles="1" />
   </Skill>
   <Skill UID="player_WhirlWind_variant_16" ESkill="default_variant">
-    <HUD UIName="@ui_Variant_WhirlWind_variant_16" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_001.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_001.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_001.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_001.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_001.png" ShowParamsInTooltip="SpecificWhirlWind" />
+    <HUD UIName="@ui_Variant_WhirlWind_variant_16" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_001.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_001.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_001.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_001.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_001.png" ShowParamsInTooltip="SpecificWhirlWind" Category="Combat" />
     <BaseDamageMultiplier AdditionalMultiplierFactorPerAilmentStack="0.01" MaxAdditionalMultiplierFactorFromAilmentStacks="0.3" />
   </Skill>
   <Skill UID="player_WhirlWind_variant_4" ESkill="default_variant">
@@ -106,7 +106,6 @@
       <Particle Key="WhirlWind" Name="U_Character.Skills.Whirldwind_02_Frost" Direction="0,1,0" Scale="1" Offset="0,0,1.6" Bone="Bip01" />
       <Particle Key="Wave" Name="U_Character.Skills.Whirldwind_Wave_01_Frost" Direction="0,1,0" Offset="0,1,1.25" Scale="0.35" />
     </ParticleList>
-    <DamageWeapon WeaponMultiplier="1.25" />
     <Damage_Conversion>
       <Entry From="physical" To="frost" ConversionRate="100" />
     </Damage_Conversion>
@@ -123,7 +122,6 @@
       <Particle Key="WhirlWind" Name="U_Character.Skills.Whirldwind_02_Fire" Direction="0,1,0" Scale="1" Offset="0,0,1.6" Bone="Bip01" />
       <Particle Key="Wave" Name="U_Character.Skills.Whirldwind_Wave_01_Fire" Direction="0,1,0" Offset="0,1,1.25" Scale="0.35" />
     </ParticleList>
-    <DamageWeapon WeaponMultiplier="1.25" />
     <Damage_Conversion>
       <Entry From="physical" To="fire" ConversionRate="100" />
     </Damage_Conversion>
@@ -132,7 +130,7 @@
     <Specific_WhirlWind SubSkillToCast="secondary_chainlightning_fire" />
   </Skill>
   <Skill UID="Player_WhirlWind_variant_19" ESkill="default_variant">
-    <HUD UIName="@ui_variant_Player_WhirlWind_variant_19" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_003.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_003.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_003.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_003.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_003.png" ShowParamsInTooltip="DamageWeapon" />
+    <HUD UIName="@ui_variant_Player_WhirlWind_variant_19" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_001.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_001.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_001.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_001.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_001.png" ShowParamsInTooltip="DamageWeapon" Category="Combat" />
     <DamageCritical CriticalInflictScoreModifier="25" />
   </Skill>
   <Skill UID="player_WhirlWind_variant_18" ESkill="default_variant">
@@ -144,7 +142,6 @@
       <Particle Key="WhirlWind" Name="U_Character.Skills.Whirldwind_02_Poison" Direction="0,1,0" Scale="1" Offset="0,0,1.6" Bone="Bip01" />
       <Particle Key="Wave" Name="U_Character.Skills.Whirldwind_Wave_01_Poison" Direction="0,1,0" Offset="0,1,1.25" Scale="0.35" />
     </ParticleList>
-    <DamageWeapon WeaponMultiplier="1.25" />
     <Damage_Conversion>
       <Entry From="physical" To="toxic" ConversionRate="100" />
     </Damage_Conversion>
@@ -152,22 +149,44 @@
     <SoundTrigger OnAnimStart="Play_Skill_Whirlwind_Summon_Toxic" OnAnimLoopIn="Play_Skill_Whirlwind_Loop_Toxic" OnHit="Play_Skill_Whirlwind_Impact_Toxic" />
     <Specific_WhirlWind SubSkillToCast="secondary_chainlightning_poison" />
   </Skill>
+  <Skill UID="player_WhirlWind_variant_20" ESkill="default_variant">
+    <HUD UIName="@ui_Variant_WhirlWind_variant_20" Lore="@ui_Variant_WhirlWind_variant_20_Lore" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_Alpha.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_Alpha.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_Alpha.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_Alpha.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_Alpha.png" HUDPictureVariant_InnerIcon="../u_resources/spells/Active_Skills/whirlwind_Shadow.png" ShowParamsInTooltip="SpecificWhirlWind,DamageWeapon" HUDPicture="../u_resources/spells/Active_Skills/whirlwind_Shadow.png" VariantBottomPanel="1" />
+    <ParticleList>
+      <Particle Key="WeaponAppear" Name="U_Character.Skills.Whirldwind_Summon_01_Shadow" Direction="0,1,0" Scale="1" Bone="R_Weapon_Bone" />
+      <Particle Key="WeaponLoop" Name="U_Character.Skills.Whirldwind_loop_Shadow" Direction="0,1,0" Scale="1" Bone="R_Weapon_Bone" />
+      <Particle Key="WeaponDisappear" Name="U_Character.Skills.Whirldwind_Summon_Disappear_Shadow" Direction="0,1,0" Scale="1" Bone="R_Weapon_Bone" />
+      <Particle Key="WhirlWind" Name="U_Character.Skills.Whirldwind_02_Shadow" Direction="0,1,0" Scale="1" Offset="0,0,1.6" Bone="Bip01" />
+      <Particle Key="Wave" Name="U_Character.Skills.Whirldwind_Wave_01_Shadow" Direction="0,1,0" Offset="0,1,1.25" Scale="0.35" />
+    </ParticleList>
+    <Damage_Conversion>
+      <Entry From="physical" To="shadow" ConversionRate="100" />
+    </Damage_Conversion>
+    <WeaponRequirements Requirements="melee,shadow" />
+    <SoundTrigger OnAnimStart="Play_Skill_Whirlwind_Summon_Shadow" OnAnimLoopIn="Play_Skill_Whirlwind_Loop_Shadow" OnHit="Play_Skill_Whirlwind_Impact_Shadow" />
+    <Specific_WhirlWind SubSkillToCast="secondary_chainlightning_shadow" />
+  </Skill>
   <Skill UID="player_WhirlWind_variant_4,player_WhirlWind_variant_7" ESkill="default_variant_combo">
     <ParticleList>
       <Particle Key="WhirlWind" Name="U_Character.Skills.Whirldwind_02_Frost" Direction="0,1,0" Scale="1.5" Offset="0,0,1.6" Bone="Bip01" />
-      <Particle Key="Wave" Name="U_Character.Skills.Whirldwind_Wave_01_Frost" Direction="0,1,0" Offset="0,1,1.25" Scale="1" />
+      <Particle Key="Wave" Name="U_Character.Skills.Whirldwind_Wave_01_Frost" Direction="0,1,0" Offset="0,1,1.25" Scale="0.4" />
     </ParticleList>
   </Skill>
   <Skill UID="player_WhirlWind_variant_17,player_WhirlWind_variant_7" ESkill="default_variant_combo">
     <ParticleList>
       <Particle Key="WhirlWind" Name="U_Character.Skills.Whirldwind_02_Fire" Direction="0,1,0" Scale="1.5" Offset="0,0,1.6" Bone="Bip01" />
-      <Particle Key="Wave" Name="U_Character.Skills.Whirldwind_Wave_01_Fire" Direction="0,1,0" Offset="0,1,1.25" Scale="1" />
+      <Particle Key="Wave" Name="U_Character.Skills.Whirldwind_Wave_01_Fire" Direction="0,1,0" Offset="0,1,1.25" Scale="0.4" />
     </ParticleList>
   </Skill>
   <Skill UID="player_WhirlWind_variant_18,player_WhirlWind_variant_7" ESkill="default_variant_combo">
     <ParticleList>
       <Particle Key="WhirlWind" Name="U_Character.Skills.Whirldwind_02_Poison" Direction="0,1,0" Scale="1.5" Offset="0,0,1.6" Bone="Bip01" />
-      <Particle Key="Wave" Name="U_Character.Skills.Whirldwind_Wave_01_Poison" Direction="0,1,0" Offset="0,1,1.25" Scale="1" />
+      <Particle Key="Wave" Name="U_Character.Skills.Whirldwind_Wave_01_Poison" Direction="0,1,0" Offset="0,1,1.25" Scale="0.4" />
+    </ParticleList>
+  </Skill>
+  <Skill UID="player_WhirlWind_variant_20,player_WhirlWind_variant_7" ESkill="default_variant_combo">
+    <ParticleList>
+      <Particle Key="WhirlWind" Name="U_Character.Skills.Whirldwind_02_Shadow" Direction="0,1,0" Scale="1.5" Offset="0,0,1.6" Bone="Bip01" />
+      <Particle Key="Wave" Name="U_Character.Skills.Whirldwind_Wave_01_Shadow" Direction="0,1,0" Offset="0,1,1.25" Scale="0.4" />
     </ParticleList>
   </Skill>
   <Skill UID="player_WhirlWind_variant_1,player_WhirlWind_variant_3" ESkill="default_variant_combo">

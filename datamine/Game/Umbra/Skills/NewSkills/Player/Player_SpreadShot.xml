@@ -3,105 +3,105 @@
     <VisualFeedback TrailPresetBase="ranged" FeedbackPresetBase="Player_skill_spreadshot" BloodDecalOrientation="forward" HitDestroyableFromCasterPosition="1" />
     <Animation ActionString="player_skill_spreadshot" AnimationDrivenMovement="1" IgnoreAnimationMovementWhenHoldingShift="1" />
     <WeaponRequirements Requirements="ranged" />
-    <CastingParams CastBone="Bip01 Spine" MaximumTurnRate="180" />
+    <CastingParams CastBone="Bip01 Spine" MaximumTurnRate="180" CancellableByDefault="1" />
     <HUD HUDPicture="../u_resources/spells/Active_Skills/spreadshot_Physical.png" UIName="@ui_AST_SpreadShot" Lore="@ui_AST_SpreadShot_Lore" ActiveEffectTitle="" ActiveEffectDesc="" ASTTreeNumber="0" ShowParamsInAST="Cost,ROSTime,Cooldown,Range,Projectiles,DamageDetail,DamageWeapon,DamageCritical,StatusAilmentsChance,SpecificSpreadShot" ShowParamsInTooltip="Cost,Cooldown,DamageOverview,StatusAilmentsChance,SpecificSpreadShot" />
     <Enneract PickableParticle_MoveToGround="U_CommonVFX_02.Esseract.Esseract_Projectile.Physical" PickableParticle_OnGround_Shape="U_CommonVFX_02.Esseract.Esseract_Shape.Circle_Physical" PickableParticle_OnGround_Damage="U_CommonVFX_02.Esseract.Esseract_Color.Physical" PickableParticle_OnGround_Symbol="U_CommonVFX_02.Esseract.Esseract_Symbol.HEPHAARON" PickableParticle_OnGround_Indicator="U_CommonVFX_02.Esseract.Esseract_Indicator.Physical" PickableParticle_OnGround_Pickup="U_CommonVFX_02.Esseract.Esseract_Loot.Physical" SkillLearningParticle="U_CommonVFX.Skill_Learn.Skill_Learn_Physical" Inventory_HUDPicture="../u_resources/enneracts/multishot2.png" Inventory_LoreDesc="@ui_enneract_lore" />
     <Cooldown Cooldown="0.0" CooldownPerLevel="0" />
     <Aggression TargetValueOnHit="4" />
-    <DamageWeapon WeaponMultiplier="1.2" />
+    <DamageWeapon WeaponMultiplier="2" />
     <StatusAilment AilmentEffectiveness="80" />
-    <ResourceCost RageCost="-150" ROSTransfertDuration="1.5" />
+    <ResourceCost RageCost="-100" ROSTransfertDuration="1.5" />
     <Range AttackRange="20" />
     <Projectile Name="player_spreadshot_proj" ProjectileCount="5" AngleBetweenProjectiles="10" PenetrationLimit="2">
       <AutomaticCastAngle distanceMin="2" distanceMax="6" totalAngleAtDistanceMin="120" totalAngleAtDistanceMax="120" projectileAngleAtDistanceMin="20" projectileAngleAtDistanceMax="5" />
     </Projectile>
-    <SoundTrigger OnAnimStart="Play_Skill_Spreadshot_Start" OnAnimCast="Play_Skill_Spreadshot_Shoot" OnHit="Play_Skill_Spreadshot_Impact" />
+    <SoundTrigger OnAnimStart="Play_Skill_Spreadshot_Start" OnAnimCast="Play_Skill_Spreadshot_Shoot" OnHit="Play_Skill_Spreadshot_Impact" OnKill="Play_OnKill_Impact_Lethal_Arrow" />
   </Skill>
   <Skill UID="player_spreadshot_variant_default_damage_type" ESkill="default_variant">
     <HUD UIName="@ui_AST_SpreadShot" Lore="@ui_AST_SpreadShot_Lore" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_Alpha.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_Alpha.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_Alpha.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_Alpha.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_Alpha.png" HUDPictureVariant_InnerIcon="../u_resources/spells/Active_Skills/spreadshot_Physical.png" VariantBottomPanel="1" />
   </Skill>
   <Skill UID="player_spreadshot_step_1" ESkill="default_variant" Keywords="projectile">
-    <HUD UIName="@ui_Variant_SpreadShot_variant_1" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_001.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_001.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_001.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_001.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_001.png" ShowParamsInTooltip="SpecificSpreadShot,DamageWeapon" />
+    <HUD UIName="@ui_Variant_SpreadShot_variant_1" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_001.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_001.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_001.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_001.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_001.png" ShowParamsInTooltip="SpecificSpreadShot,DamageWeapon" Category="Combat" />
     <DamageWeapon WeaponMultiplier="1.15" />
   </Skill>
   <Skill UID="player_spreadshot_step_2" ESkill="default_variant" Keywords="projectile">
-    <HUD UIName="@ui_Variant_SpreadShot_variant_2" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_001.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_001.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_001.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_001.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_001.png" ShowParamsInTooltip="SpecificSpreadShot,Cost" />
+    <HUD UIName="@ui_Variant_SpreadShot_variant_2" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_001.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_001.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_001.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_001.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_001.png" ShowParamsInTooltip="SpecificSpreadShot,Cost" Category="Utility" />
     <ResourceCost RageCost="30" />
   </Skill>
   <Skill UID="player_spreadshot_step_3" ESkill="default_variant" Keywords="projectile">
-    <HUD UIName="@ui_Variant_SpreadShot_variant_3" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_003.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_003.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_003.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_003.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_003.png" ShowParamsInTooltip="SpecificSpreadShot,DamageWeapon,Projectiles" />
+    <HUD UIName="@ui_Variant_SpreadShot_variant_3" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_003.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_003.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_003.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_003.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_003.png" ShowParamsInTooltip="SpecificSpreadShot,DamageWeapon,Projectiles" Category="Combat" />
     <DamageWeapon WeaponMultiplier="1.5" />
     <Projectile ProjectileCount="-2" />
   </Skill>
   <Skill UID="player_spreadshot_step_4" ESkill="default_variant" Keywords="projectile">
-    <HUD UIName="@ui_Variant_SpreadShot_variant_4" Lore="@ui_Variant_SpreadShot_variant_4_Lore" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_005.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_005.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_005.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_005.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_005.png" ShowParamsInTooltip="SpecificSpreadShot,Explosion" />
+    <HUD UIName="@ui_Variant_SpreadShot_variant_4" Lore="@ui_Variant_SpreadShot_variant_4_Lore" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_005.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_005.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_005.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_005.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_005.png" ShowParamsInTooltip="SpecificSpreadShot,Explosion" Category="Mastery" />
     <Explosion ExplosionRadius="3" />
-    <Projectile Name="player_spreadshot_proj_exploding" />
+    <Projectile Name="player_spreadshot_proj_exploding" PenetrationLimit="-100" />
   </Skill>
   <Skill UID="player_spreadshot_step_6" ESkill="default_variant" Keywords="projectile">
-    <HUD UIName="@ui_Variant_SpreadShot_variant_6" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_001.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_001.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_001.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_001.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_001.png" ShowParamsInTooltip="SpecificSpreadShot,StatusAilmentsChance" />
+    <HUD UIName="@ui_Variant_SpreadShot_variant_6" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_001.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_001.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_001.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_001.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_001.png" ShowParamsInTooltip="SpecificSpreadShot,StatusAilmentsChance" Category="Utility" />
     <StatusAilment AilmentEffectiveness="125" />
   </Skill>
   <Skill UID="player_spreadshot_step_7" ESkill="default_variant" Keywords="projectile">
-    <HUD UIName="@ui_Variant_SpreadShot_variant_7" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_003.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_003.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_003.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_003.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_003.png" ShowParamsInTooltip="SpecificSpreadShot,Projectiles,Cost" />
+    <HUD UIName="@ui_Variant_SpreadShot_variant_7" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_003.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_003.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_003.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_003.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_003.png" ShowParamsInTooltip="SpecificSpreadShot,Projectiles,Cost" Category="Utility" />
     <Projectile ProjectileCount="2" />
     <Aggression TargetValueOnHit="0" />
   </Skill>
   <Skill UID="player_spreadshot_step_8" ESkill="default_variant" Keywords="projectile">
-    <HUD UIName="@ui_Variant_SpreadShot_variant_8" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_003.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_003.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_003.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_003.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_003.png" ShowParamsInTooltip="SpecificSpreadShot" />
+    <HUD UIName="@ui_Variant_SpreadShot_variant_8" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_003.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_003.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_003.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_003.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_003.png" ShowParamsInTooltip="SpecificSpreadShot" Category="Mastery" />
     <Animation ActionString="player_skill_spreadshot_ghost" AnimationDrivenMovement="0" />
     <ParticleList>
       <Particle Key="GhostAppear" Name="U_Character.Skills.Teleport_Decoy_end_Summon" Direction="0,1,0" />
       <Particle Key="GhostDisappear" Name="U_Character.Skills.Teleport_Decoy_end_Summon_02" Direction="0,1,0" />
     </ParticleList>
-    <Specific_SpreadShot StraightLineShot="1" SpaceBetweenShots="0.55" GhostLifetime="1.25" GhostSpawnDelay="0.18" GhostSpawnDelayBetween="0.075" GhostProjectileOffsetPosition="0.0,0.1,0.9" GhostCharacterFilepath="Game/objects/characters/mobs/humanoid/humansoul/COSS_HumanSoul/COSS_HumanSoul01.cdf" GhostAnim="coss_humansoul_skill_atk_spreadshot_01" />
+    <Specific_SpreadShot StraightLineShot="1" SpaceBetweenShots="0.55" GhostLifetime="1.25" GhostSpawnDelay="0.18" GhostSpawnDelayBetween="0.075" GhostProjectileOffsetPosition="0.0,0.1,0.9" GhostCharacterFilepath="Game/objects/characters/mobs/humanoid/humansoul/COSS_HumanSoul/COSS_HumanSoul01.cdf" GhostAnim="COSS_HumanSoul_Skill_Atk_Spreadshot_ghost_01" />
     <SoundTrigger OnAnimStart="PLAY_Skill_Spreadshot_Ghost_Start" OnAnimCast="PLAY_Skill_Spreadshot_Ghost_Shoot" OnHit="Play_Skill_ArrowsRain_Impact" />
   </Skill>
   <Skill UID="player_spreadshot_step_9" ESkill="default_variant" Keywords="projectile">
-    <HUD UIName="@ui_Variant_SpreadShot_variant_9" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_003.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_003.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_003.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_003.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_003.png" ShowParamsInTooltip="SpecificSpreadShot" />
+    <HUD UIName="@ui_Variant_SpreadShot_variant_9" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_003.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_003.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_003.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_003.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_003.png" ShowParamsInTooltip="SpecificSpreadShot" Category="Combat" />
     <GhostDamage ChanceToHit="15" ChanceToHitPerLevel="0" MinDelay="0.1" MaxDelay="0.2" DamageMultiplier="2" />
   </Skill>
   <Skill UID="player_spreadshot_step_10" ESkill="default_variant" Keywords="projectile">
-    <HUD UIName="@ui_Variant_SpreadShot_variant_10" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_003.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_003.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_003.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_003.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_003.png" ShowParamsInTooltip="SpecificSpreadShot" />
+    <HUD UIName="@ui_Variant_SpreadShot_variant_10" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_003.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_003.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_003.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_003.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_003.png" ShowParamsInTooltip="SpecificSpreadShot" Category="Combat" />
     <Specific_SpreadShot AnimIncreasePercent="15" />
   </Skill>
   <Skill UID="player_spreadshot_step_11" ESkill="default_variant" Keywords="projectile">
-    <HUD UIName="@ui_Variant_SpreadShot_variant_11" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_003.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_003.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_003.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_003.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_003.png" ShowParamsInTooltip="SpecificSpreadShot" />
-    <Specific_SpreadShot DamagePercentMinorPerRemainingPierce="10" />
+    <HUD UIName="@ui_Variant_SpreadShot_variant_11" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_003.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_003.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_003.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_003.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_003.png" ShowParamsInTooltip="SpecificSpreadShot" Category="Mastery" />
+    <Specific_SpreadShot DamagePercentMinorPerRemainingPierce="20" />
   </Skill>
   <Skill UID="player_spreadshot_step_12" ESkill="default_variant" Keywords="projectile">
-    <HUD UIName="@ui_Variant_SpreadShot_variant_12" Lore="@ui_Variant_SpreadShot_variant_12_lore" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_005.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_005.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_005.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_005.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_005.png" ShowParamsInTooltip="SpecificSpreadShot" />
+    <HUD UIName="@ui_Variant_SpreadShot_variant_12" Lore="@ui_Variant_SpreadShot_variant_12_lore" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_005.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_005.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_005.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_005.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_005.png" ShowParamsInTooltip="SpecificSpreadShot" Category="Mastery" />
     <ParticleList>
       <Particle Key="arrow" Name="U_Character.Skills.Spread_Shot_Ready_01" Bone="L_Weapon_Bone" Scale="1" Direction="0,1,0" />
-      <Particle Key="loop" Name="U_Character.Skills.Spread_Shot_Bow_Loop_01" Bone="L_Weapon_Bone" Scale="1" Angle="0,0,70" />
+      <Particle Key="loop" Name="U_Character.Skills.Spread_Shot_Bow_Loop_01" Bone="L_Weapon_Bone" Scale="1" Angle="0,0,3" />
       <Particle Key="disappear" Name="U_Character.Skills.Spread_Shot_Bow_End_01" Bone="L_Weapon_Bone" Scale="1" Direction="0,1,0" />
-      <Particle Key="aura" Name="U_Character.Skills.BrutalStrike_ChargingAura_01" Bone="L_Weapon_Bone" Scale="0.5" Direction="0,1,0" />
-      <Particle Key="glow1" Name="U_Character.Skills.BrutalStrike_Charge_01" Bone="L_Weapon_Bone" Scale="0.75" Direction="0,1,0" />
-      <Particle Key="glow2" Name="U_Character.Skills.BrutalStrike_Charge_02" Bone="L_Weapon_Bone" Scale="0.75" Direction="0,1,0" />
-      <Particle Key="glow3" Name="U_Character.Skills.BrutalStrike_Charge_03" Bone="L_Weapon_Bone" Scale="0.75" Direction="0,1,0" />
-      <Particle Key="glow4" Name="U_Character.Skills.BrutalStrike_Charge_04" Bone="L_Weapon_Bone" Scale="0.85" Direction="0,1,0" />
-      <Particle Key="glow5" Name="U_Character.Skills.BrutalStrike_Charge_04" Bone="L_Weapon_Bone" Scale="0.90" Direction="0,1,0" />
-      <Particle Key="glowf" Name="U_Character.Skills.BrutalStrike_Charge_Final" Bone="L_Weapon_Bone" Scale="0.75" Direction="0,1,0" />
+      <Particle Key="aura" Name="U_Character.Skills.Spread_Shot_Charging_Aura" Bone="L_Weapon_Bone" Scale="0.5" Direction="0,1,0" />
+      <Particle Key="glow1" Name="U_Character.Skills.Spread_Shot_Charging_01" Bone="L_Weapon_Bone" Scale="0.75" Direction="0,1,0" />
+      <Particle Key="glow2" Name="U_Character.Skills.Spread_Shot_Charging_02" Bone="L_Weapon_Bone" Scale="0.75" Direction="0,1,0" />
+      <Particle Key="glow3" Name="U_Character.Skills.Spread_Shot_Charging_03" Bone="L_Weapon_Bone" Scale="0.75" Direction="0,1,0" />
+      <Particle Key="glow4" Name="U_Character.Skills.Spread_Shot_Charging_04" Bone="L_Weapon_Bone" Scale="0.85" Direction="0,1,0" />
+      <Particle Key="glow5" Name="U_Character.Skills.Spread_Shot_Charging_05" Bone="L_Weapon_Bone" Scale="0.90" Direction="0,1,0" />
+      <Particle Key="glowf" Name="U_Character.Skills.Spread_Shot_Charging_Final" Bone="L_Weapon_Bone" Scale="0.75" Direction="0,1,0" />
     </ParticleList>
     <Specific_SpreadShot FireAnimationLoop="player_skill_spreadshot_Charge_Out" GhostLoopAnimIn="cmh_skill_spreadshot_ghost_01_Charge_In" GhostLoopAnimLoop="cmh_skill_spreadshot_ghost_01_Charge_Loop" GhostLoopAnimOut="cmh_skill_spreadshot_ghost_01_Charge_Out" GhostLoopAnimFire="cmh_skill_spreadshot_ghost_01_MultiShot" />
     <ChargedSkill WindupAnim="player_skill_spreadshot_Charge_In" FollowupAnim="player_skill_spreadshot_Multishot">
-      <Step TimeToReachStep="0.3" AssociatedAnim="player_skill_spreadshot_Charge_Loop_01" WeaponDamagePercent="20" />
-      <Step TimeToReachStep="0.4" AssociatedAnim="player_skill_spreadshot_Charge_Loop_02" WeaponDamagePercent="40" />
-      <Step TimeToReachStep="0.55" AssociatedAnim="player_skill_spreadshot_Charge_Loop_03" WeaponDamagePercent="60" />
-      <Step TimeToReachStep="0.75" AssociatedAnim="player_skill_spreadshot_Charge_Loop_03" WeaponDamagePercent="80" />
-      <Step TimeToReachStep="1" AssociatedAnim="player_skill_spreadshot_Charge_Loop_03" WeaponDamagePercent="100" />
+      <Step TimeToReachStep="0.3" AssociatedAnim="player_skill_spreadshot_Charge_Loop_01" WeaponDamagePercent="140" />
+      <Step TimeToReachStep="0.4" AssociatedAnim="player_skill_spreadshot_Charge_Loop_02" WeaponDamagePercent="160" />
+      <Step TimeToReachStep="0.6" AssociatedAnim="player_skill_spreadshot_Charge_Loop_03" WeaponDamagePercent="180" />
+      <Step TimeToReachStep="0.8" AssociatedAnim="player_skill_spreadshot_Charge_Loop_03" WeaponDamagePercent="200" />
+      <Step TimeToReachStep="1.5" AssociatedAnim="player_skill_spreadshot_Charge_Loop_03" WeaponDamagePercent="250" />
     </ChargedSkill>
   </Skill>
   <Skill UID="player_spreadshot_step_14" ESkill="default_variant" Keywords="projectile">
-    <HUD UIName="@ui_Variant_SpreadShot_variant_14" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_001.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_001.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_001.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_001.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_001.png" ShowParamsInTooltip="SpecificSpreadShot,StatusAilmentsChance" />
+    <HUD UIName="@ui_Variant_SpreadShot_variant_14" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_001.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_001.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_001.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_001.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_001.png" ShowParamsInTooltip="SpecificSpreadShot,StatusAilmentsChance" Category="Combat" />
     <StatusAilment AllAilmentsInflictDamageIncreasePercent="40" />
   </Skill>
   <Skill UID="player_spreadshot_step_15" ESkill="default_variant" Keywords="projectile">
-    <HUD UIName="@ui_Variant_SpreadShot_variant_15" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_001.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_001.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_001.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_001.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_001.png" ShowParamsInTooltip="SpecificSpreadShot,DamageCritical" />
+    <HUD UIName="@ui_Variant_SpreadShot_variant_15" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_001.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_001.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_001.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_001.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_001.png" ShowParamsInTooltip="SpecificSpreadShot,DamageCritical" Category="Combat" />
     <DamageCritical CriticalInflictScoreModifier="40" />
   </Skill>
   <Skill UID="player_spreadshot_step_16" ESkill="default_variant" Keywords="projectile">
-    <HUD UIName="@ui_Variant_SpreadShot_variant_16" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_001.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_001.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_001.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_001.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_001.png" ShowParamsInTooltip="SpecificSpreadShot,DamageCritical" />
+    <HUD UIName="@ui_Variant_SpreadShot_variant_16" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_001.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_001.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_001.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_001.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_001.png" ShowParamsInTooltip="SpecificSpreadShot,DamageCritical" Category="Combat" />
     <DamageCritical CriticalDamageModifier="25" />
   </Skill>
   <Skill UID="player_spreadshot_step_5" ESkill="default_variant" Keywords="projectile">
@@ -111,7 +111,6 @@
       <Entry From="physical" To="toxic" ConversionRate="100" />
     </Damage_Conversion>
     <WeaponRequirements Requirements="ranged,poison" />
-    <DamageWeapon WeaponMultiplier="1.25" />
     <Projectile Name="player_spreadshot_proj_poison" />
     <EventEffectOverride>
       <AnimEvent Original="U_Character.Skills.Spread_Shot_Bow_01" Override="U_Character.Skills.Spread_Shot_Bow_01_Poison" />
@@ -126,7 +125,6 @@
       <Entry From="physical" To="frost" ConversionRate="100" />
     </Damage_Conversion>
     <WeaponRequirements Requirements="ranged,frost" />
-    <DamageWeapon WeaponMultiplier="1.25" />
     <Projectile Name="player_spreadshot_proj_frost" />
     <EventEffectOverride>
       <AnimEvent Original="U_Character.Skills.Spread_Shot_Bow_01" Override="U_Character.Skills.Spread_Shot_Bow_01_Frost" />
@@ -141,7 +139,6 @@
       <Entry From="physical" To="sacred" ConversionRate="100" />
     </Damage_Conversion>
     <WeaponRequirements Requirements="ranged,sacred" />
-    <DamageWeapon WeaponMultiplier="1.25" />
     <Projectile Name="player_spreadshot_proj_sacred" />
     <EventEffectOverride>
       <AnimEvent Original="U_Character.Skills.Spread_Shot_Bow_01" Override="U_Character.Skills.Spread_Shot_Bow_01_Sacred" />
@@ -156,7 +153,6 @@
       <Entry From="physical" To="fire" ConversionRate="100" />
     </Damage_Conversion>
     <WeaponRequirements Requirements="ranged,fire" />
-    <DamageWeapon WeaponMultiplier="1.25" />
     <Projectile Name="player_spreadshot_proj_fire" />
     <EventEffectOverride>
       <AnimEvent Original="U_Character.Skills.Spread_Shot_Bow_01" Override="U_Character.Skills.Spread_Shot_Bow_01_Fire" />
@@ -165,11 +161,11 @@
     <SoundTrigger OnAnimStart="Play_Skill_Spreadshot_Start_Fire" OnAnimCast="Play_Skill_Spreadshot_Shoot_Fire" OnHit="Play_Skill_Spreadshot_Impact_Fire" />
   </Skill>
   <Skill UID="Player_SpreadShot_step_19" ESkill="default_variant">
-    <HUD UIName="@ui_variant_Player_SpreadShot_step_19" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_003.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_003.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_003.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_003.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_003.png" ShowParamsInTooltip="DamageWeapon" />
+    <HUD UIName="@ui_variant_Player_SpreadShot_step_19" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_001.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_001.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_001.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_001.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_001.png" ShowParamsInTooltip="DamageWeapon" Category="Combat" />
     <DamageWeapon WeaponMultiplier="1.15" />
   </Skill>
   <Skill UID="Player_SpreadShot_step_20" ESkill="default_variant">
-    <HUD UIName="@ui_variant_Player_SpreadShot_step_20" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_003.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_003.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_003.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_003.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_003.png" ShowParamsInTooltip="SpecificSpreadShot,Projectiles" />
+    <HUD UIName="@ui_variant_Player_SpreadShot_step_20" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_001.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_001.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_001.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_001.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_001.png" ShowParamsInTooltip="SpecificSpreadShot,Projectiles" Category="Mastery" />
     <Projectile PenetrationLimit="1" />
   </Skill>
   <Skill UID="player_spreadshot_step_5,player_spreadshot_step_4" ESkill="default_variant_combo">
@@ -180,13 +176,13 @@
       <Particle Key="arrow" Name="U_Character.Skills.Spread_Shot_Ready_01_Poison" Scale="1" Bone="L_Weapon_Bone" Direction="0,1,0" />
       <Particle Key="loop" Name="U_Character.Skills.Spread_Shot_Bow_Loop_01_Poison" Scale="1" Bone="L_Weapon_Bone" Angle="0,0,70" />
       <Particle Key="disappear" Name="U_Character.Skills.Spread_Shot_Bow_End_01_Poison" Scale="1" Bone="L_Weapon_Bone" Direction="0,1,0" />
-      <Particle Key="aura" Name="U_Character.Skills.BrutalStrike_ChargingAura_01_Poison" Scale="0.5" Bone="L_Weapon_Bone" Direction="0,1,0" />
-      <Particle Key="glow1" Name="U_Character.Skills.BrutalStrike_Charge_01_Poison" Scale="0.75" Bone="L_Weapon_Bone" Direction="0,1,0" />
-      <Particle Key="glow2" Name="U_Character.Skills.BrutalStrike_Charge_02_Poison" Scale="0.75" Bone="L_Weapon_Bone" Direction="0,1,0" />
-      <Particle Key="glow3" Name="U_Character.Skills.BrutalStrike_Charge_03_Poison" Scale="0.75" Bone="L_Weapon_Bone" Direction="0,1,0" />
-      <Particle Key="glow4" Name="U_Character.Skills.BrutalStrike_Charge_04_Poison" Scale="0.85" Bone="L_Weapon_Bone" Direction="0,1,0" />
-      <Particle Key="glow5" Name="U_Character.Skills.BrutalStrike_Charge_04_Poison" Scale="0.90" Bone="L_Weapon_Bone" Direction="0,1,0" />
-      <Particle Key="glowf" Name="U_Character.Skills.BrutalStrike_Charge_Final_Poison" Scale="0.75" Bone="L_Weapon_Bone" Direction="0,1,0" />
+      <Particle Key="aura" Name="U_Character.Skills.Spread_Shot_Charging_Poison_Aura" Scale="0.5" Bone="L_Weapon_Bone" Direction="0,1,0" />
+      <Particle Key="glow1" Name="U_Character.Skills.Spread_Shot_Charging_Poison_01" Scale="0.75" Bone="L_Weapon_Bone" Direction="0,1,0" />
+      <Particle Key="glow2" Name="U_Character.Skills.Spread_Shot_Charging_Poison_02" Scale="0.75" Bone="L_Weapon_Bone" Direction="0,1,0" />
+      <Particle Key="glow3" Name="U_Character.Skills.Spread_Shot_Charging_Poison_03" Scale="0.75" Bone="L_Weapon_Bone" Direction="0,1,0" />
+      <Particle Key="glow4" Name="U_Character.Skills.Spread_Shot_Charging_Poison_04" Scale="0.85" Bone="L_Weapon_Bone" Direction="0,1,0" />
+      <Particle Key="glow5" Name="U_Character.Skills.Spread_Shot_Charging_Poison_05" Scale="0.90" Bone="L_Weapon_Bone" Direction="0,1,0" />
+      <Particle Key="glowf" Name="U_Character.Skills.Spread_Shot_Charging_Poison_Final" Scale="0.75" Bone="L_Weapon_Bone" Direction="0,1,0" />
     </ParticleList>
   </Skill>
   <Skill UID="player_spreadshot_step_5,player_spreadshot_step_4,player_spreadshot_step_12" ESkill="default_variant_combo">
@@ -195,13 +191,13 @@
       <Particle Key="arrow" Name="U_Character.Skills.Spread_Shot_Ready_01_Poison" Scale="1" Bone="L_Weapon_Bone" Direction="0,1,0" />
       <Particle Key="loop" Name="U_Character.Skills.Spread_Shot_Bow_Loop_01_Poison" Scale="1" Bone="L_Weapon_Bone" Angle="0,0,70" />
       <Particle Key="disappear" Name="U_Character.Skills.Spread_Shot_Bow_End_01_Poison" Scale="1" Bone="L_Weapon_Bone" Direction="0,1,0" />
-      <Particle Key="aura" Name="U_Character.Skills.BrutalStrike_ChargingAura_01_Poison" Scale="0.5" Bone="L_Weapon_Bone" Direction="0,1,0" />
-      <Particle Key="glow1" Name="U_Character.Skills.BrutalStrike_Charge_01_Poison" Scale="0.75" Bone="L_Weapon_Bone" Direction="0,1,0" />
-      <Particle Key="glow2" Name="U_Character.Skills.BrutalStrike_Charge_02_Poison" Scale="0.75" Bone="L_Weapon_Bone" Direction="0,1,0" />
-      <Particle Key="glow3" Name="U_Character.Skills.BrutalStrike_Charge_03_Poison" Scale="0.75" Bone="L_Weapon_Bone" Direction="0,1,0" />
-      <Particle Key="glow4" Name="U_Character.Skills.BrutalStrike_Charge_04_Poison" Scale="0.85" Bone="L_Weapon_Bone" Direction="0,1,0" />
-      <Particle Key="glow5" Name="U_Character.Skills.BrutalStrike_Charge_04_Poison" Scale="0.90" Bone="L_Weapon_Bone" Direction="0,1,0" />
-      <Particle Key="glowf" Name="U_Character.Skills.BrutalStrike_Charge_Final_Poison" Scale="0.75" Bone="L_Weapon_Bone" Direction="0,1,0" />
+      <Particle Key="aura" Name="U_Character.Skills.Spread_Shot_Charging_Poison_Aura" Scale="0.5" Bone="L_Weapon_Bone" Direction="0,1,0" />
+      <Particle Key="glow1" Name="U_Character.Skills.Spread_Shot_Charging_Poison_01" Scale="0.75" Bone="L_Weapon_Bone" Direction="0,1,0" />
+      <Particle Key="glow2" Name="U_Character.Skills.Spread_Shot_Charging_Poison_02" Scale="0.75" Bone="L_Weapon_Bone" Direction="0,1,0" />
+      <Particle Key="glow3" Name="U_Character.Skills.Spread_Shot_Charging_Poison_03" Scale="0.75" Bone="L_Weapon_Bone" Direction="0,1,0" />
+      <Particle Key="glow4" Name="U_Character.Skills.Spread_Shot_Charging_Poison_04" Scale="0.85" Bone="L_Weapon_Bone" Direction="0,1,0" />
+      <Particle Key="glow5" Name="U_Character.Skills.Spread_Shot_Charging_Poison_05" Scale="0.90" Bone="L_Weapon_Bone" Direction="0,1,0" />
+      <Particle Key="glowf" Name="U_Character.Skills.Spread_Shot_Charging_Poison_Final" Scale="0.75" Bone="L_Weapon_Bone" Direction="0,1,0" />
     </ParticleList>
   </Skill>
   <Skill UID="player_spreadshot_step_13,player_spreadshot_step_4" ESkill="default_variant_combo">
@@ -212,13 +208,13 @@
       <Particle Key="arrow" Name="U_Character.Skills.Spread_Shot_Ready_01_Frost" Scale="1" Bone="L_Weapon_Bone" Direction="0,1,0" />
       <Particle Key="loop" Name="U_Character.Skills.Spread_Shot_Bow_Loop_01_Frost" Scale="1" Bone="L_Weapon_Bone" Angle="0,0,70" />
       <Particle Key="disappear" Name="U_Character.Skills.Spread_Shot_Bow_End_01_Frost" Scale="1" Bone="L_Weapon_Bone" Direction="0,1,0" />
-      <Particle Key="aura" Name="U_Character_02.Sniper.Sniper_Charging_Aura_01_Frost" Scale="0.5" Bone="L_Weapon_Bone" Direction="0,1,0" />
-      <Particle Key="glow1" Name="U_Character_02.Sniper.Sniper_Charging_01_Frost" Scale="0.75" Bone="L_Weapon_Bone" Direction="0,1,0" />
-      <Particle Key="glow2" Name="U_Character_02.Sniper.Sniper_Charging_02_Frost" Scale="0.75" Bone="L_Weapon_Bone" Direction="0,1,0" />
-      <Particle Key="glow3" Name="U_Character_02.Sniper.Sniper_Charging_03_Frost" Scale="0.75" Bone="L_Weapon_Bone" Direction="0,1,0" />
-      <Particle Key="glow4" Name="U_Character_02.Sniper.Sniper_Charging_03_Frost" Scale="0.85" Bone="L_Weapon_Bone" Direction="0,1,0" />
-      <Particle Key="glow5" Name="U_Character_02.Sniper.Sniper_Charging_03_Frost" Scale="0.90" Bone="L_Weapon_Bone" Direction="0,1,0" />
-      <Particle Key="glowf" Name="U_Character_02.Sniper.Sniper_Charging_Trigger_Frost" Scale="0.75" Bone="L_Weapon_Bone" Direction="0,1,0" />
+      <Particle Key="aura" Name="U_Character.Skills.Spread_Shot_Charging_Frost_Aura" Scale="0.5" Bone="L_Weapon_Bone" Direction="0,1,0" />
+      <Particle Key="glow1" Name="U_Character.Skills.Spread_Shot_Charging_Frost_01" Scale="0.75" Bone="L_Weapon_Bone" Direction="0,1,0" />
+      <Particle Key="glow2" Name="U_Character.Skills.Spread_Shot_Charging_Frost_02" Scale="0.75" Bone="L_Weapon_Bone" Direction="0,1,0" />
+      <Particle Key="glow3" Name="U_Character.Skills.Spread_Shot_Charging_Frost_03" Scale="0.75" Bone="L_Weapon_Bone" Direction="0,1,0" />
+      <Particle Key="glow4" Name="U_Character.Skills.Spread_Shot_Charging_Frost_04" Scale="0.85" Bone="L_Weapon_Bone" Direction="0,1,0" />
+      <Particle Key="glow5" Name="U_Character.Skills.Spread_Shot_Charging_Frost_05" Scale="0.90" Bone="L_Weapon_Bone" Direction="0,1,0" />
+      <Particle Key="glowf" Name="U_Character.Skills.Spread_Shot_Charging_Frost_Final" Scale="0.75" Bone="L_Weapon_Bone" Direction="0,1,0" />
     </ParticleList>
   </Skill>
   <Skill UID="player_spreadshot_step_13,player_spreadshot_step_4,player_spreadshot_step_12" ESkill="default_variant_combo">
@@ -226,13 +222,13 @@
       <Particle Key="arrow" Name="U_Character.Skills.Spread_Shot_Ready_01_Frost" Scale="1" Bone="L_Weapon_Bone" Direction="0,1,0" />
       <Particle Key="loop" Name="U_Character.Skills.Spread_Shot_Bow_Loop_01_Frost" Scale="1" Bone="L_Weapon_Bone" Angle="0,0,70" />
       <Particle Key="disappear" Name="U_Character.Skills.Spread_Shot_Bow_End_01_Frost" Scale="1" Bone="L_Weapon_Bone" Direction="0,1,0" />
-      <Particle Key="aura" Name="U_Character_02.Sniper.Sniper_Charging_Aura_01_Frost" Scale="0.5" Bone="L_Weapon_Bone" Direction="0,1,0" />
-      <Particle Key="glow1" Name="U_Character_02.Sniper.Sniper_Charging_01_Frost" Scale="0.75" Bone="L_Weapon_Bone" Direction="0,1,0" />
-      <Particle Key="glow2" Name="U_Character_02.Sniper.Sniper_Charging_02_Frost" Scale="0.75" Bone="L_Weapon_Bone" Direction="0,1,0" />
-      <Particle Key="glow3" Name="U_Character_02.Sniper.Sniper_Charging_03_Frost" Scale="0.75" Bone="L_Weapon_Bone" Direction="0,1,0" />
-      <Particle Key="glow4" Name="U_Character_02.Sniper.Sniper_Charging_03_Frost" Scale="0.85" Bone="L_Weapon_Bone" Direction="0,1,0" />
-      <Particle Key="glow5" Name="U_Character_02.Sniper.Sniper_Charging_03_Frost" Scale="0.90" Bone="L_Weapon_Bone" Direction="0,1,0" />
-      <Particle Key="glowf" Name="U_Character_02.Sniper.Sniper_Charging_Trigger_Frost" Scale="0.75" Bone="L_Weapon_Bone" Direction="0,1,0" />
+      <Particle Key="aura" Name="U_Character.Skills.Spread_Shot_Charging_Frost_Aura" Scale="0.5" Bone="L_Weapon_Bone" Direction="0,1,0" />
+      <Particle Key="glow1" Name="U_Character.Skills.Spread_Shot_Charging_Frost_01" Scale="0.75" Bone="L_Weapon_Bone" Direction="0,1,0" />
+      <Particle Key="glow2" Name="U_Character.Skills.Spread_Shot_Charging_Frost_02" Scale="0.75" Bone="L_Weapon_Bone" Direction="0,1,0" />
+      <Particle Key="glow3" Name="U_Character.Skills.Spread_Shot_Charging_Frost_03" Scale="0.75" Bone="L_Weapon_Bone" Direction="0,1,0" />
+      <Particle Key="glow4" Name="U_Character.Skills.Spread_Shot_Charging_Frost_04" Scale="0.85" Bone="L_Weapon_Bone" Direction="0,1,0" />
+      <Particle Key="glow5" Name="U_Character.Skills.Spread_Shot_Charging_Frost_05" Scale="0.90" Bone="L_Weapon_Bone" Direction="0,1,0" />
+      <Particle Key="glowf" Name="U_Character.Skills.Spread_Shot_Charging_Frost_Final" Scale="0.75" Bone="L_Weapon_Bone" Direction="0,1,0" />
     </ParticleList>
   </Skill>
   <Skill UID="player_spreadshot_step_17,player_spreadshot_step_4" ESkill="default_variant_combo">
@@ -243,13 +239,13 @@
       <Particle Key="arrow" Name="U_Character.Skills.Spread_Shot_Ready_01_Sacred" Scale="1" Bone="L_Weapon_Bone" Direction="0,1,0" />
       <Particle Key="loop" Name="U_Character.Skills.Spread_Shot_Bow_Loop_01_Sacred" Scale="1" Bone="L_Weapon_Bone" Angle="0,0,70" />
       <Particle Key="disappear" Name="U_Character.Skills.Spread_Shot_Bow_End_01_Sacred" Scale="1" Bone="L_Weapon_Bone" Direction="0,1,0" />
-      <Particle Key="aura" Name="U_Character_02.HolyDive.HolyDive_Charging_Aura" Scale="0.5" Bone="L_Weapon_Bone" Direction="0,1,0" />
-      <Particle Key="glow1" Name="U_Character_02.HolyDive.HolyDive_Charging_01" Scale="0.75" Bone="L_Weapon_Bone" Direction="0,1,0" />
-      <Particle Key="glow2" Name="U_Character_02.HolyDive.HolyDive_Charging_02" Scale="0.75" Bone="L_Weapon_Bone" Direction="0,1,0" />
-      <Particle Key="glow3" Name="U_Character_02.HolyDive.HolyDive_Charging_03" Scale="0.75" Bone="L_Weapon_Bone" Direction="0,1,0" />
-      <Particle Key="glow4" Name="U_Character_02.HolyDive.HolyDive_Charging_03" Scale="0.85" Bone="L_Weapon_Bone" Direction="0,1,0" />
-      <Particle Key="glow5" Name="U_Character_02.HolyDive.HolyDive_Charging_03" Scale="0.90" Bone="L_Weapon_Bone" Direction="0,1,0" />
-      <Particle Key="glowf" Name="U_Character_02.HolyDive.HolyDive_Charging_Final" Scale="0.75" Bone="L_Weapon_Bone" Direction="0,1,0" />
+      <Particle Key="aura" Name="U_Character.Skills.Spread_Shot_Charging_Sacred_Aura" Scale="0.5" Bone="L_Weapon_Bone" Direction="0,1,0" />
+      <Particle Key="glow1" Name="U_Character.Skills.Spread_Shot_Charging_Sacred_01" Scale="0.75" Bone="L_Weapon_Bone" Direction="0,1,0" />
+      <Particle Key="glow2" Name="U_Character.Skills.Spread_Shot_Charging_Sacred_02" Scale="0.75" Bone="L_Weapon_Bone" Direction="0,1,0" />
+      <Particle Key="glow3" Name="U_Character.Skills.Spread_Shot_Charging_Sacred_03" Scale="0.75" Bone="L_Weapon_Bone" Direction="0,1,0" />
+      <Particle Key="glow4" Name="U_Character.Skills.Spread_Shot_Charging_Sacred_04" Scale="0.85" Bone="L_Weapon_Bone" Direction="0,1,0" />
+      <Particle Key="glow5" Name="U_Character.Skills.Spread_Shot_Charging_Sacred_05" Scale="0.90" Bone="L_Weapon_Bone" Direction="0,1,0" />
+      <Particle Key="glowf" Name="U_Character.Skills.Spread_Shot_Charging_Sacred_Final" Scale="0.75" Bone="L_Weapon_Bone" Direction="0,1,0" />
     </ParticleList>
   </Skill>
   <Skill UID="player_spreadshot_step_17,player_spreadshot_step_4,player_spreadshot_step_12" ESkill="default_variant_combo">
@@ -258,13 +254,13 @@
       <Particle Key="arrow" Name="U_Character.Skills.Spread_Shot_Ready_01_Sacred" Scale="1" Bone="L_Weapon_Bone" Direction="0,1,0" />
       <Particle Key="loop" Name="U_Character.Skills.Spread_Shot_Bow_Loop_01_Sacred" Scale="1" Bone="L_Weapon_Bone" Angle="0,0,70" />
       <Particle Key="disappear" Name="U_Character.Skills.Spread_Shot_Bow_End_01_Sacred" Scale="1" Bone="L_Weapon_Bone" Direction="0,1,0" />
-      <Particle Key="aura" Name="U_Character_02.HolyDive.HolyDive_Charging_Aura" Scale="0.5" Bone="L_Weapon_Bone" Direction="0,1,0" />
-      <Particle Key="glow1" Name="U_Character_02.HolyDive.HolyDive_Charging_01" Scale="0.75" Bone="L_Weapon_Bone" Direction="0,1,0" />
-      <Particle Key="glow2" Name="U_Character_02.HolyDive.HolyDive_Charging_02" Scale="0.75" Bone="L_Weapon_Bone" Direction="0,1,0" />
-      <Particle Key="glow3" Name="U_Character_02.HolyDive.HolyDive_Charging_03" Scale="0.75" Bone="L_Weapon_Bone" Direction="0,1,0" />
-      <Particle Key="glow4" Name="U_Character_02.HolyDive.HolyDive_Charging_03" Scale="0.85" Bone="L_Weapon_Bone" Direction="0,1,0" />
-      <Particle Key="glow5" Name="U_Character_02.HolyDive.HolyDive_Charging_03" Scale="0.90" Bone="L_Weapon_Bone" Direction="0,1,0" />
-      <Particle Key="glowf" Name="U_Character_02.HolyDive.HolyDive_Charging_Final" Scale="0.75" Bone="L_Weapon_Bone" Direction="0,1,0" />
+      <Particle Key="aura" Name="U_Character.Skills.Spread_Shot_Charging_Sacred_Aura" Scale="0.5" Bone="L_Weapon_Bone" Direction="0,1,0" />
+      <Particle Key="glow1" Name="U_Character.Skills.Spread_Shot_Charging_Sacred_01" Scale="0.75" Bone="L_Weapon_Bone" Direction="0,1,0" />
+      <Particle Key="glow2" Name="U_Character.Skills.Spread_Shot_Charging_Sacred_02" Scale="0.75" Bone="L_Weapon_Bone" Direction="0,1,0" />
+      <Particle Key="glow3" Name="U_Character.Skills.Spread_Shot_Charging_Sacred_03" Scale="0.75" Bone="L_Weapon_Bone" Direction="0,1,0" />
+      <Particle Key="glow4" Name="U_Character.Skills.Spread_Shot_Charging_Sacred_04" Scale="0.85" Bone="L_Weapon_Bone" Direction="0,1,0" />
+      <Particle Key="glow5" Name="U_Character.Skills.Spread_Shot_Charging_Sacred_05" Scale="0.90" Bone="L_Weapon_Bone" Direction="0,1,0" />
+      <Particle Key="glowf" Name="U_Character.Skills.Spread_Shot_Charging_Sacred_Final" Scale="0.75" Bone="L_Weapon_Bone" Direction="0,1,0" />
     </ParticleList>
   </Skill>
   <Skill UID="player_spreadshot_step_18,player_spreadshot_step_4" ESkill="default_variant_combo">
@@ -275,13 +271,13 @@
       <Particle Key="arrow" Name="U_Character.Skills.Spread_Shot_Ready_01_Fire" Scale="1" Bone="L_Weapon_Bone" Direction="0,1,0" />
       <Particle Key="loop" Name="U_Character.Skills.Spread_Shot_Bow_Loop_01_Fire" Scale="1" Bone="L_Weapon_Bone" Angle="0,0,70" />
       <Particle Key="disappear" Name="U_Character.Skills.Spread_Shot_Bow_End_01_Fire" Scale="1" Bone="L_Weapon_Bone" Direction="0,1,0" />
-      <Particle Key="aura" Name="U_Character_02.Sniper.Sniper_Charging_Aura_01_Fire" Scale="0.5" Bone="L_Weapon_Bone" Direction="0,1,0" />
-      <Particle Key="glow1" Name="U_Character_02.Sniper.Sniper_Charging_01_Fire" Scale="0.75" Bone="L_Weapon_Bone" Direction="0,1,0" />
-      <Particle Key="glow2" Name="U_Character_02.Sniper.Sniper_Charging_02_Fire" Scale="0.75" Bone="L_Weapon_Bone" Direction="0,1,0" />
-      <Particle Key="glow3" Name="U_Character_02.Sniper.Sniper_Charging_03_Fire" Scale="0.75" Bone="L_Weapon_Bone" Direction="0,1,0" />
-      <Particle Key="glow4" Name="U_Character_02.Sniper.Sniper_Charging_03_Fire" Scale="0.85" Bone="L_Weapon_Bone" Direction="0,1,0" />
-      <Particle Key="glow5" Name="U_Character_02.Sniper.Sniper_Charging_03_Fire" Scale="0.90" Bone="L_Weapon_Bone" Direction="0,1,0" />
-      <Particle Key="glowf" Name="U_Character_02.Sniper.Sniper_Charging_Trigger_Fire" Scale="0.75" Bone="L_Weapon_Bone" Direction="0,1,0" />
+      <Particle Key="aura" Name="U_Character.Skills.Spread_Shot_Charging_Fire_Aura" Scale="0.5" Bone="L_Weapon_Bone" Direction="0,1,0" />
+      <Particle Key="glow1" Name="U_Character.Skills.Spread_Shot_Charging_Fire_01" Scale="0.75" Bone="L_Weapon_Bone" Direction="0,1,0" />
+      <Particle Key="glow2" Name="U_Character.Skills.Spread_Shot_Charging_Fire_02" Scale="0.75" Bone="L_Weapon_Bone" Direction="0,1,0" />
+      <Particle Key="glow3" Name="U_Character.Skills.Spread_Shot_Charging_Fire_03" Scale="0.75" Bone="L_Weapon_Bone" Direction="0,1,0" />
+      <Particle Key="glow4" Name="U_Character.Skills.Spread_Shot_Charging_Fire_04" Scale="0.85" Bone="L_Weapon_Bone" Direction="0,1,0" />
+      <Particle Key="glow5" Name="U_Character.Skills.Spread_Shot_Charging_Fire_05" Scale="0.90" Bone="L_Weapon_Bone" Direction="0,1,0" />
+      <Particle Key="glowf" Name="U_Character.Skills.Spread_Shot_Charging_Fire_Final" Scale="0.75" Bone="L_Weapon_Bone" Direction="0,1,0" />
     </ParticleList>
   </Skill>
   <Skill UID="player_spreadshot_step_18,player_spreadshot_step_4,player_spreadshot_step_12" ESkill="default_variant_combo">
@@ -290,13 +286,13 @@
       <Particle Key="arrow" Name="U_Character.Skills.Spread_Shot_Ready_01_Fire" Scale="1" Bone="L_Weapon_Bone" Direction="0,1,0" />
       <Particle Key="loop" Name="U_Character.Skills.Spread_Shot_Bow_Loop_01_Fire" Scale="1" Bone="L_Weapon_Bone" Angle="0,0,70" />
       <Particle Key="disappear" Name="U_Character.Skills.Spread_Shot_Bow_End_01_Fire" Scale="1" Bone="L_Weapon_Bone" Direction="0,1,0" />
-      <Particle Key="aura" Name="U_Character_02.Sniper.Sniper_Charging_Aura_01_Fire" Scale="0.5" Bone="L_Weapon_Bone" Direction="0,1,0" />
-      <Particle Key="glow1" Name="U_Character_02.Sniper.Sniper_Charging_01_Fire" Scale="0.75" Bone="L_Weapon_Bone" Direction="0,1,0" />
-      <Particle Key="glow2" Name="U_Character_02.Sniper.Sniper_Charging_02_Fire" Scale="0.75" Bone="L_Weapon_Bone" Direction="0,1,0" />
-      <Particle Key="glow3" Name="U_Character_02.Sniper.Sniper_Charging_03_Fire" Scale="0.75" Bone="L_Weapon_Bone" Direction="0,1,0" />
-      <Particle Key="glow4" Name="U_Character_02.Sniper.Sniper_Charging_03_Fire" Scale="0.85" Bone="L_Weapon_Bone" Direction="0,1,0" />
-      <Particle Key="glow5" Name="U_Character_02.Sniper.Sniper_Charging_03_Fire" Scale="0.90" Bone="L_Weapon_Bone" Direction="0,1,0" />
-      <Particle Key="glowf" Name="U_Character_02.Sniper.Sniper_Charging_Trigger_Fire" Scale="0.75" Bone="L_Weapon_Bone" Direction="0,1,0" />
+      <Particle Key="aura" Name="U_Character.Skills.Spread_Shot_Charging_Fire_Aura" Scale="0.5" Bone="L_Weapon_Bone" Direction="0,1,0" />
+      <Particle Key="glow1" Name="U_Character.Skills.Spread_Shot_Charging_Fire_01" Scale="0.75" Bone="L_Weapon_Bone" Direction="0,1,0" />
+      <Particle Key="glow2" Name="U_Character.Skills.Spread_Shot_Charging_Fire_02" Scale="0.75" Bone="L_Weapon_Bone" Direction="0,1,0" />
+      <Particle Key="glow3" Name="U_Character.Skills.Spread_Shot_Charging_Fire_03" Scale="0.75" Bone="L_Weapon_Bone" Direction="0,1,0" />
+      <Particle Key="glow4" Name="U_Character.Skills.Spread_Shot_Charging_Fire_04" Scale="0.85" Bone="L_Weapon_Bone" Direction="0,1,0" />
+      <Particle Key="glow5" Name="U_Character.Skills.Spread_Shot_Charging_Fire_05" Scale="0.90" Bone="L_Weapon_Bone" Direction="0,1,0" />
+      <Particle Key="glowf" Name="U_Character.Skills.Spread_Shot_Charging_Fire_Final" Scale="0.75" Bone="L_Weapon_Bone" Direction="0,1,0" />
     </ParticleList>
   </Skill>
 </MetaData>

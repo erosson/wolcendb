@@ -7,7 +7,7 @@
     <Range AttackRange="50" />
     <Projectile Name="player_bulleye_proj" ProjectileCount="1" AngleBetweenProjectiles="1" PenetrationLimit="1" BaseDamageBonusPercentPerNonUsedProjectile="20" />
     <Aggression TargetValueOnHit="20" />
-    <DamageWeapon WeaponMultiplier="1.2" />
+    <DamageWeapon WeaponMultiplier="2.5" />
     <StatusAilment AilmentEffectiveness="50" />
     <Cooldown Cooldown="1" CooldownPerLevel="0" />
     <ParticleList>
@@ -15,60 +15,63 @@
       <Particle Key="TargetBase" Name="U_Buff.Buff.BullsEye_Target_Under_01" Direction="0,1,0" Scale="1" Bone="Bip01" />
       <Particle Key="Gun" Name="U_Character_02.BullEye.Summon_Pistol_01_Loop" Direction="0,1,0" Scale="1" Bone="R_Weapon_Bone" />
       <Particle Key="GunDisapear" Name="U_Character_02.BullEye.Summon_Pistol_01_End" Direction="0,1,0" Scale="1" Bone="R_Weapon_Bone" />
+      <Particle Key="GamepadAreaTargetMarkerFX" Name="U_Character.Skills.Arrow_Rain_Indicator_01" Direction="0,1,0" Scale="0.4" />
     </ParticleList>
     <VisualFeedback TrailPresetBase="default" FeedbackPresetBase="Player_skill_leap" BloodDecalOrientation="forward" />
     <Specific_BullEye Shot="5" MaxTime="3" ShotAnimationScale="1" UseExplodingBullet="0" UseAlternativeSelection="1" InitialDamage="1.0" FinalDamage="1.0" MarkSizeMultiplier="0.30" MarkHeightMultiplier="1" MaxAutoTarget="10">
       <Pose Tag="player_skill_bulleye_atk_01" />
       <Pose Tag="player_skill_bulleye_atk_02" />
+      <Pose Tag="player_skill_bulleye_atk_04" />
       <Pose Tag="player_skill_bulleye_atk_03" />
       <Pose Tag="player_skill_bulleye_atk_04" />
     </Specific_BullEye>
     <ResourceCostMaintained RageCostPerSecond="0" RageCostPerSecondPerLevel="0" ROSTransfertDuration="1.0" />
-    <ResourceCost RageCost="-150" RageCostPerLevel="0" ROSTransfertDuration="2.0" />
-    <CastingParams CanCastWhileMoving="0" MaintainedCast="1" KeepAliveAfterReleasing="1" CastBone="R_Weapon_Bone" />
-    <SoundTrigger OnAnimStart="Play_Skill_Bullseye_Summon" OnAnimCast="Play_Skill_Bullseye_Attack_Gunshot" OnAnimLoopOut="Play_Skill_Bullseye_Desummon" />
+    <ResourceCost RageCost="-150" RageCostPerLevel="0" ROSTransfertDuration="1.5" />
+    <CastingParams CancellableByDefault="1" CanCastWhileMoving="0" MaintainedCast="1" KeepAliveAfterReleasing="1" CastBone="R_Weapon_Bone" GamepadHoldToChangeCastPosition="1" GamepadStartCastAtTargetPosition="1" GamepadUseCustomAreaTargetMarker="0" GamepadFindTargetsAroundCastPosition="1" GamepadTargetCycleOnHold="1" />
+    <SoundTrigger OnAnimStart="Play_Skill_Bullseye_Summon" OnAnimCast="Play_Skill_Bullseye_Attack_Gunshot" OnAnimLoopOut="Play_Skill_Bullseye_Desummon" OnKill="Play_OnKill_Impact_Lethal_Bullet" />
   </Skill>
   <Skill UID="player_BullEye_variant_default_damage_type" ESkill="default_variant">
     <HUD UIName="@ui_AST_BullEye" Lore="@ui_AST_BullEye_Lore" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_Alpha.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_Alpha.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_Alpha.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_Alpha.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_Alpha.png" HUDPictureVariant_InnerIcon="../u_resources/spells/Active_Skills/bullseye_Physical.png" VariantBottomPanel="1" />
   </Skill>
   <Skill UID="player_BullEye_variant_1" ESkill="default_variant">
-    <HUD UIName="@ui_Variant_BullEye_variant_1" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_001.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_001.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_001.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_001.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_001.png" ShowParamsInTooltip="SpecificBullEye,Cost" />
+    <HUD UIName="@ui_Variant_BullEye_variant_1" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_001.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_001.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_001.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_001.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_001.png" ShowParamsInTooltip="SpecificBullEye,Cost" Category="Utility" />
     <ResourceCost RageCost="30" />
   </Skill>
   <Skill UID="player_BullEye_variant_2" ESkill="default_variant">
-    <HUD UIName="@ui_Variant_BullEye_variant_2" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_001.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_001.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_001.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_001.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_001.png" ShowParamsInTooltip="SpecificBullEye" />
+    <HUD UIName="@ui_Variant_BullEye_variant_2" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_001.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_001.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_001.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_001.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_001.png" ShowParamsInTooltip="SpecificBullEye" Category="Utility" />
     <Specific_BullEye Shot="5" MaxTime="1" ShotAnimationScale="1.25" />
   </Skill>
   <Skill UID="player_BullEye_variant_3" ESkill="default_variant">
-    <HUD UIName="@ui_Variant_BullEye_variant_3" Lore="@ui_Variant_BullEye_variant_3_Lore" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_005.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_005.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_005.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_005.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_005.png" ShowParamsInTooltip="SpecificBullEye,Cost,Explosion" />
+    <HUD UIName="@ui_Variant_BullEye_variant_3" Lore="@ui_Variant_BullEye_variant_3_Lore" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_005.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_005.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_005.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_005.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_005.png" ShowParamsInTooltip="SpecificBullEye,Cost,Explosion" Category="Mastery" />
     <Explosion ExplosionRadius="2" />
     <Specific_BullEye UseExplodingBullet="1" />
+    <DamageWeapon WeaponMultiplier="1.3" />
     <ResourceCost RageCost="-50" />
     <Projectile Name="player_bulleye_proj_exploding" />
   </Skill>
   <Skill UID="player_BullEye_variant_5" ESkill="default_variant">
-    <HUD UIName="@ui_Variant_BullEye_variant_5" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_001.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_001.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_001.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_001.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_001.png" ShowParamsInTooltip="SpecificBullEye,StatusAilmentsChance" />
+    <HUD UIName="@ui_Variant_BullEye_variant_5" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_001.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_001.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_001.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_001.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_001.png" ShowParamsInTooltip="SpecificBullEye,StatusAilmentsChance" Category="Utility" />
     <StatusAilment AilmentEffectiveness="125" />
   </Skill>
   <Skill UID="player_BullEye_variant_6" ESkill="default_variant">
-    <HUD UIName="@ui_Variant_BullEye_variant_6" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_001.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_001.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_001.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_001.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_001.png" ShowParamsInTooltip="SpecificBullEye,DamageCritical" />
+    <HUD UIName="@ui_Variant_BullEye_variant_6" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_001.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_001.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_001.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_001.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_001.png" ShowParamsInTooltip="SpecificBullEye,DamageCritical" Category="Combat" />
     <DamageCritical CriticalDamageModifier="25" />
   </Skill>
   <Skill UID="player_BullEye_variant_7" ESkill="default_variant">
-    <HUD UIName="@ui_Variant_BullEye_variant_7" Lore="@ui_Variant_BullEye_variant_7_Lore" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_005.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_005.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_005.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_005.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_005.png" ShowParamsInTooltip="SpecificBullEye" />
-    <Specific_BullEye InitialDamage="-0.5" FinalDamage="1" />
+    <HUD UIName="@ui_Variant_BullEye_variant_7" Lore="@ui_Variant_BullEye_variant_7_Lore" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_005.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_005.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_005.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_005.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_005.png" ShowParamsInTooltip="SpecificBullEye" Category="Mastery" />
+    <Specific_BullEye InitialDamage="-0.5" FinalDamage="1.5" />
   </Skill>
   <Skill UID="player_BullEye_variant_8" ESkill="default_variant">
-    <HUD UIName="@ui_Variant_BullEye_variant_8" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_001.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_001.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_001.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_001.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_001.png" ShowParamsInTooltip="SpecificBullEye,Projectiles" />
+    <HUD UIName="@ui_Variant_BullEye_variant_8" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_001.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_001.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_001.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_001.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_001.png" ShowParamsInTooltip="SpecificBullEye,Projectiles" Category="Mastery" />
     <Projectile PenetrationLimit="1" />
   </Skill>
   <Skill UID="player_BullEye_variant_9" ESkill="default_variant">
-    <HUD UIName="@ui_Variant_BullEye_variant_9" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_003.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_003.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_003.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_003.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_003.png" ShowParamsInTooltip="SpecificBullEye,DamageWeapon" />
-    <DamageWeapon WeaponMultiplier="0.9" />
+    <HUD UIName="@ui_Variant_BullEye_variant_9" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_003.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_003.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_003.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_003.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_003.png" ShowParamsInTooltip="SpecificBullEye,DamageWeapon" Category="Mastery" />
+    <DamageWeapon WeaponMultiplier="1.0" />
     <Specific_BullEye AutoTargetLowHP="1" LowHpPercentThreshold="20" AutoTargetSlowedStasis="1" />
   </Skill>
   <Skill UID="player_BullEye_variant_10" ESkill="default_variant">
-    <HUD UIName="@ui_Variant_BullEye_variant_10" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_003.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_003.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_003.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_003.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_003.png" ShowParamsInTooltip="SpecificBullEye,DamageWeapon" />
+    <HUD UIName="@ui_Variant_BullEye_variant_10" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_003.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_003.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_003.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_003.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_003.png" ShowParamsInTooltip="SpecificBullEye,DamageWeapon" Category="Mastery" />
     <Shapes>
       <Entry ShapeName="Player_BullEye_Target_Shape" />
     </Shapes>
@@ -76,31 +79,30 @@
     <Specific_BullEye AutoTargetShape="1" />
   </Skill>
   <Skill UID="player_BullEye_variant_11" ESkill="default_variant">
-    <HUD UIName="@ui_Variant_BullEye_variant_11" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_001.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_001.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_001.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_001.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_001.png" ShowParamsInTooltip="SpecificBullEye,DamageCritical" />
+    <HUD UIName="@ui_Variant_BullEye_variant_11" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_001.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_001.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_001.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_001.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_001.png" ShowParamsInTooltip="SpecificBullEye,DamageCritical" Category="Combat" />
     <DamageCritical CriticalChancePerAilmentStack="5" CriticalDamagePerAilmentStack="2" />
   </Skill>
   <Skill UID="player_BullEye_variant_12" ESkill="default_variant">
-    <HUD UIName="@ui_Variant_BullEye_variant_12" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_003.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_003.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_003.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_003.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_003.png" ShowParamsInTooltip="SpecificBullEye" />
+    <HUD UIName="@ui_Variant_BullEye_variant_12" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_003.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_003.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_003.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_003.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_003.png" ShowParamsInTooltip="SpecificBullEye" Category="Combat" />
     <Specific_BullEye CriticalBuffName="AST_BullEye_critical" UseCriticalBuff="1" />
   </Skill>
   <Skill UID="player_BullEye_variant_13" ESkill="default_variant">
-    <HUD UIName="@ui_Variant_BullEye_variant_13" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_003.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_003.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_003.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_003.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_003.png" ShowParamsInTooltip="SpecificBullEye" />
+    <HUD UIName="@ui_Variant_BullEye_variant_13" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_003.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_003.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_003.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_003.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_003.png" ShowParamsInTooltip="SpecificBullEye" Category="Mastery" />
     <Specific_BullEye AutoTargetWhenHitted="1" />
   </Skill>
   <Skill UID="player_BullEye_variant_14" ESkill="default_variant">
-    <HUD UIName="@ui_Variant_BullEye_variant_14" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_003.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_003.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_003.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_003.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_003.png" ShowParamsInTooltip="SpecificBullEye,DamageWeapon" />
-    <DamageWeapon WeaponMultiplier="0.8" />
+    <HUD UIName="@ui_Variant_BullEye_variant_14" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_003.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_003.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_003.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_003.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_003.png" ShowParamsInTooltip="SpecificBullEye,DamageWeapon" Category="Mastery" />
+    <DamageWeapon WeaponMultiplier="0.85" />
     <Specific_BullEye FireAll="1" RemainingShotDamageMultiplier="0.2" />
   </Skill>
   <Skill UID="player_BullEye_variant_15" ESkill="default_variant">
-    <HUD UIName="@ui_Variant_BullEye_variant_15" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_001.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_001.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_001.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_001.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_001.png" ShowParamsInTooltip="SpecificBullEye" />
+    <HUD UIName="@ui_Variant_BullEye_variant_15" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_001.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_001.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_001.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_001.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_001.png" ShowParamsInTooltip="SpecificBullEye" Category="Mastery" />
     <Specific_BullEye ChainCriticals="1" />
     <Cooldown Cooldown="3" CooldownPerLevel="0" />
   </Skill>
   <Skill UID="player_BullEye_variant_16" ESkill="default_variant">
     <HUD UIName="@ui_Variant_BullEye_variant_16" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_Alpha.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_Alpha.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_Alpha.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_Alpha.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_Alpha.png" HUDPictureVariant_InnerIcon="../u_resources/spells/Active_Skills/bullseye.png" ShowParamsInTooltip="SpecificBullEye,DamageWeapon" HUDPicture="../u_resources/spells/Active_Skills/bullseye.png" VariantBottomPanel="1" />
     <Specific_BullEye ElementalRoulette="1" />
-    <DamageWeapon WeaponMultiplier="1.15" />
   </Skill>
   <Skill UID="player_BullEye_variant_4" ESkill="default_variant">
     <HUD UIName="@ui_Variant_BullEye_variant_4" Lore="@ui_Variant_BullEye_variant_4_Lore" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_Alpha.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_Alpha.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_Alpha.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_Alpha.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_Alpha.png" HUDPictureVariant_InnerIcon="../u_resources/spells/Active_Skills/bullseye_Aether.png" ShowParamsInTooltip="SpecificBullEye,DamageWeapon" HUDPicture="../u_resources/spells/Active_Skills/bullseye_Aether.png" VariantBottomPanel="1" />
@@ -117,7 +119,6 @@
       <Entry From="physical" To="umbra" ConversionRate="100" />
     </Damage_Conversion>
     <WeaponRequirements Requirements="ranged,umbra" />
-    <DamageWeapon WeaponMultiplier="1.25" />
     <SoundTrigger OnAnimStart="Play_Skill_Bullseye_Summon_Aether" OnAnimCast="Play_Skill_Bullseye_Attack_Gunshot_Aether" />
   </Skill>
   <Skill UID="player_BullEye_variant_17" ESkill="default_variant">
@@ -135,7 +136,6 @@
       <Entry From="physical" To="toxic" ConversionRate="100" />
     </Damage_Conversion>
     <WeaponRequirements Requirements="ranged,poison" />
-    <DamageWeapon WeaponMultiplier="1.25" />
     <SoundTrigger OnAnimStart="Play_Skill_Bullseye_Summon_Toxic" OnAnimCast="Play_Skill_Bullseye_Attack_Gunshot_Toxic" />
   </Skill>
   <Skill UID="player_BullEye_variant_18" ESkill="default_variant">
@@ -153,15 +153,31 @@
       <Entry From="physical" To="frost" ConversionRate="100" />
     </Damage_Conversion>
     <WeaponRequirements Requirements="ranged,frost" />
-    <DamageWeapon WeaponMultiplier="1.25" />
     <SoundTrigger OnAnimStart="Play_Skill_Bullseye_Summon_Frost" OnAnimCast="Play_Skill_Bullseye_Attack_Gunshot_Frost" />
   </Skill>
+  <Skill UID="player_BullEye_variant_21" ESkill="default_variant">
+    <HUD UIName="@ui_Variant_BullEye_variant_21" Lore="@ui_Variant_BullEye_variant_21_Lore" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_Alpha.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_Alpha.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_Alpha.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_Alpha.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_Alpha.png" HUDPictureVariant_InnerIcon="../u_resources/spells/Active_Skills/bullseye_Lightning.png" ShowParamsInTooltip="SpecificBullEye,DamageWeapon" HUDPicture="../u_resources/spells/Active_Skills/bullseye_Lightning.png" VariantBottomPanel="1" />
+    <ParticleList>
+      <Particle Key="Gun" Name="U_Character_02.BullEye.Summon_Pistol_01_Loop_Lightning" Direction="0,1,0" />
+      <Particle Key="GunDisapear" Name="U_Character_02.BullEye.Summon_Pistol_01_End_Lightning" Direction="0,1,0" />
+    </ParticleList>
+    <EventEffectOverride>
+      <AnimEvent Original="U_Projectile.Bullet.BullEye_Muzzle_01" Override="U_Projectile.Bullet.BullEye_Muzzle_01_Lightning" />
+      <AnimEvent Original="U_Projectile.Bullet.Bullet.Bullet_Shell_R" Override="U_Projectile.Bullet.Bullet.Bullet_Shell_R_Lightning" />
+    </EventEffectOverride>
+    <Projectile Name="player_bulleye_proj_Lightning" />
+    <Damage_Conversion>
+      <Entry From="physical" To="lightning" ConversionRate="100" />
+    </Damage_Conversion>
+    <WeaponRequirements Requirements="ranged,lightning" />
+    <SoundTrigger OnAnimStart="Play_Skill_Bullseye_Summon_Lightning" OnAnimCast="Play_Skill_Bullseye_Attack_Gunshot_Lightning" />
+  </Skill>
   <Skill UID="Player_BullEye_variant_19" ESkill="default_variant">
-    <HUD UIName="@ui_variant_Player_BullEye_variant_19" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_003.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_003.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_003.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_003.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_003.png" ShowParamsInTooltip="DamageWeapon" />
+    <HUD UIName="@ui_variant_Player_BullEye_variant_19" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_001.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_001.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_001.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_001.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_001.png" ShowParamsInTooltip="DamageWeapon" Category="Combat" />
     <StatusAilment AllAilmentsInflictDamageIncreasePercent="40" />
   </Skill>
   <Skill UID="Player_BullEye_variant_20" ESkill="default_variant">
-    <HUD UIName="@ui_variant_Player_BullEye_variant_20" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_003.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_003.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_003.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_003.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_003.png" ShowParamsInTooltip="DamageWeapon" />
+    <HUD UIName="@ui_variant_Player_BullEye_variant_20" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_001.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_001.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_001.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_001.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_001.png" ShowParamsInTooltip="DamageWeapon" Category="Combat" />
     <DamageCritical CriticalInflictScoreModifier="40" />
   </Skill>
   <Skill UID="player_BullEye_variant_4,player_BullEye_variant_3" ESkill="default_variant_combo">
@@ -172,6 +188,9 @@
   </Skill>
   <Skill UID="player_BullEye_variant_18,player_BullEye_variant_3" ESkill="default_variant_combo">
     <Projectile Name="player_bulleye_proj_exploding_Frost" />
+  </Skill>
+  <Skill UID="player_BullEye_variant_21,player_BullEye_variant_3" ESkill="default_variant_combo">
+    <Projectile Name="player_bulleye_proj_exploding_Lightning" />
   </Skill>
   <Skill UID="player_BullEye_variant_90" ESkill="default_variant">
     <HUD UIName="@ui_Variant_BullEye_variant_90" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_001.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_001.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_001.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_001.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_001.png" ShowParamsInTooltip="SpecificBullEye" />

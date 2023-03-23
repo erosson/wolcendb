@@ -1,7 +1,7 @@
 <MetaData>
   <Skill ESkill="apo_mage_projectile" Keywords="default_ranged,attack_skill" UID="apo_mage_projectile">
     <Animation ActionString="apo_skill_02" ScaleWithAttackSpeed="1" AnimationDrivenMovement="1" />
-    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="Player_Apo_mage" TrailPresetBase="apo" />
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="Player_Apo_Mage_Projectile" TrailPresetBase="apo" />
     <HUD HUDPicture="../u_resources/spells/Active_Skills/apo_mage_projectile.png" UIName="@ui_APO_Mage_Skill01" Lore="@ui_APO_Mage_Skill01_Lore" ShowParamsInAST="Cost,ROSTime,DamageDetail,Cooldown,Range" ShowParamsInTooltip="Cost,DamageOverview,Cooldown" />
     <Aggression TargetValueOnHit="10" />
     <DamagePreset DamagePreset="Apo_Mage_Strong" Multiplier="2" Type="umbra" />

@@ -7,7 +7,7 @@
     <Range AttackRange="25" />
     <Projectile Name="player_turret_proj" ProjectileCount="1" AngleBetweenProjectiles="1" BaseDamageBonusPercentPerNonUsedProjectile="20" />
     <Aggression TargetValueOnHit="40" />
-    <DamageWeapon WeaponMultiplier="0.6" />
+    <DamageWeapon WeaponMultiplier="1.2" />
     <StatusAilment AilmentEffectiveness="50" />
     <Cooldown Cooldown="2" CooldownPerLevel="0" />
     <ParticleList>
@@ -22,25 +22,26 @@
       <Particle Key="Explosion" Name="U_Character_02.Turret.Turret_Exlonsion_01" Direction="0,0,1" Scale="1.65" />
       <Particle Key="ShotGun" Name="U_Character_02.Turret.Turret_shotgun_01" Direction="0,1,0" />
     </ParticleList>
-    <VisualFeedback TrailPresetBase="default" BloodDecalOrientation="forward" />
-    <Specific_Turret MaxTime="5" AutoTarget="0" TurretSpawnDist="2" MaxTurnRate="90" MaxTurn="0" DualCannon="0" ShotGun="0" CanonOffset="1.0,0.27,1.0" MaxTurret="1" FireRateMultiplierWhenHeld="2" SpawnSound="Skill_Turret_Summon" DespawnSound="Skill_Turret_Desummon" FireSound="Play_Skill_Turret_Shoot" />
+    <VisualFeedback TrailPresetBase="default" FeedbackPresetBase="Player_skill_turret" BloodDecalOrientation="forward" />
+    <Specific_Turret MaxTime="5" AutoTarget="1" AutoTargetRange="15" AutoTargetAngle="60" TurretSpawnDist="2" MaxTurnRate="90" DualCannon="0" ShotGun="0" CanonOffset="1.0,0.27,1.0" MaxTurret="1" FireRateMultiplierWhenHeld="2" SpawnSound="Skill_Turret_Summon" DespawnSound="Skill_Turret_Desummon" FireSound="Play_Skill_Turret_Shoot" />
     <Tickrate BaseTickrate="3" MaxTickrate="5" SpeedScaleFactor="0.1" DamageOvercapFactor="1" />
-    <ResourceCost RageCost="-250" RageCostPerLevel="0" ROSTransfertDuration="2.0" />
-    <CastingParams CanCastWhileMoving="0" MaintainedCast="1" KeepAliveAfterReleasing="1" MaximumTurnRate="120" />
+    <ResourceCost RageCost="-300" RageCostPerLevel="0" ROSTransfertDuration="2.0" />
+    <CastingParams CanCastWhileMoving="0" MaintainedCast="1" KeepAliveAfterReleasing="1" MaximumTurnRate="120" CancellableByDefault="1" />
+    <SoundTrigger OnKill="Play_OnKill_Impact_Lethal_Bullet" />
   </Skill>
   <Skill UID="player_turret_variant_default_damage_type" ESkill="default_variant">
     <HUD UIName="@ui_AST_Turret" Lore="@ui_AST_Turret_Lore" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_Alpha.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_Alpha.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_Alpha.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_Alpha.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_Alpha.png" HUDPictureVariant_InnerIcon="../u_resources/spells/Active_Skills/turret_Physical.png" VariantBottomPanel="1" />
   </Skill>
   <Skill UID="player_Turret_variant_1" ESkill="default_variant">
-    <HUD UIName="@ui_Variant_Turret_variant_1" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_001.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_001.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_001.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_001.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_001.png" ShowParamsInTooltip="SpecificTurret" />
+    <HUD UIName="@ui_Variant_Turret_variant_1" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_001.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_001.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_001.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_001.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_001.png" ShowParamsInTooltip="SpecificTurret" Category="Utility" />
     <Specific_Turret MaxTime="2" />
   </Skill>
   <Skill UID="player_Turret_variant_2" ESkill="default_variant">
-    <HUD UIName="@ui_Variant_Turret_variant_2" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_001.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_001.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_001.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_001.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_001.png" ShowParamsInTooltip="SpecificTurret,DamageWeapon" />
+    <HUD UIName="@ui_Variant_Turret_variant_2" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_001.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_001.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_001.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_001.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_001.png" ShowParamsInTooltip="SpecificTurret,DamageWeapon" Category="Combat" />
     <DamageWeapon WeaponMultiplier="1.15" />
   </Skill>
   <Skill UID="player_Turret_variant_3" ESkill="default_variant">
-    <HUD UIName="@ui_Variant_Turret_variant_3" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_003.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_003.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_003.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_003.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_003.png" ShowParamsInTooltip="SpecificTurret,Cost,ROSTime" />
+    <HUD UIName="@ui_Variant_Turret_variant_3" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_003.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_003.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_003.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_003.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_003.png" ShowParamsInTooltip="SpecificTurret,Cost,ROSTime" Category="Combat" />
     <ParticleList>
       <Particle Key="SummonGround" Name="U_Character_02.Turret.Turret_Summon_01_Dual" Direction="0,1,0" />
       <Particle Key="HeadGround" Name="U_Character_02.Turret.Turret_Head_Attack_02_Dual" Direction="0,1,0" />
@@ -54,36 +55,36 @@
     <Tickrate BaseTickrate="1.33" SpeedScaleFactor="1" DamageOvercapFactor="1" />
   </Skill>
   <Skill UID="player_Turret_variant_4" ESkill="default_variant">
-    <HUD UIName="@ui_Variant_Turret_variant_4" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_003.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_003.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_003.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_003.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_003.png" ShowParamsInTooltip="SpecificTurret,DamageWeapon" />
+    <HUD UIName="@ui_Variant_Turret_variant_4" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_003.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_003.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_003.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_003.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_003.png" ShowParamsInTooltip="SpecificTurret,DamageWeapon" Category="Mastery" />
     <Specific_Turret ShotGun="1" FireSound="Play_Skill_Turret_Shotgun_Shoot" />
     <Tickrate BaseTickrate="0.66" SpeedScaleFactor="1" DamageOvercapFactor="1" />
-    <DamageWeapon WeaponMultiplier="1.2" />
+    <DamageWeapon WeaponMultiplier="1.5" />
     <Shapes>
       <Entry ShapeName="Player_Turret_ShotGun_Shape" />
     </Shapes>
     <SoundTrigger OnAnimCast="Play_Pistol_Fire_ShieldShot" OnHit="Play_Bullet_Impact" />
   </Skill>
   <Skill UID="player_Turret_variant_6" ESkill="default_variant">
-    <HUD UIName="@ui_Variant_Turret_variant_6" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_003.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_003.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_003.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_003.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_003.png" ShowParamsInTooltip="SpecificTurret,Explosion" />
+    <HUD UIName="@ui_Variant_Turret_variant_6" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_003.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_003.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_003.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_003.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_003.png" ShowParamsInTooltip="SpecificTurret,Explosion" Category="Mastery" />
     <Specific_Turret>
       <Explosion Radius="4" DamageMultiplier="4" />
     </Specific_Turret>
   </Skill>
   <Skill UID="player_Turret_variant_7" ESkill="default_variant">
-    <HUD UIName="@ui_Variant_Turret_variant_7" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_001.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_001.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_001.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_001.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_001.png" ShowParamsInTooltip="SpecificTurret,DamageCritical" />
+    <HUD UIName="@ui_Variant_Turret_variant_7" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_001.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_001.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_001.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_001.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_001.png" ShowParamsInTooltip="SpecificTurret,DamageCritical" Category="Combat" />
     <DamageCritical CriticalDamageModifier="25" />
   </Skill>
   <Skill UID="player_Turret_variant_8" ESkill="default_variant">
-    <HUD UIName="@ui_Variant_Turret_variant_8" Lore="@ui_Variant_Turret_variant_8_Lore" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_005.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_005.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_005.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_005.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_005.png" ShowParamsInTooltip="SpecificTurret" />
-    <Specific_Turret AutoTarget="1" MaxTurn="90" AutoTargetRange="15" />
+    <HUD UIName="@ui_Variant_Turret_variant_8" Lore="@ui_Variant_Turret_variant_8_Lore" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_005.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_005.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_005.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_005.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_005.png" ShowParamsInTooltip="SpecificTurret" Category="Mastery" />
+    <Specific_Turret AutoTargetAngle="300" />
   </Skill>
   <Skill UID="player_Turret_variant_9" ESkill="default_variant">
-    <HUD UIName="@ui_Variant_Turret_variant_9" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_003.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_003.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_003.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_003.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_003.png" ShowParamsInTooltip="SpecificTurret,DamageWeapon" />
+    <HUD UIName="@ui_Variant_Turret_variant_9" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_003.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_003.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_003.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_003.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_003.png" ShowParamsInTooltip="SpecificTurret,DamageWeapon" Category="Utility" />
     <Specific_Turret MaxTurret="1" />
     <DamageWeapon WeaponMultiplier="0.85" />
   </Skill>
   <Skill UID="player_Turret_variant_10" ESkill="default_variant">
-    <HUD UIName="@ui_Variant_Turret_variant_10" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_003.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_003.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_003.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_003.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_003.png" ShowParamsInTooltip="SpecificTurret" />
+    <HUD UIName="@ui_Variant_Turret_variant_10" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_003.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_003.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_003.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_003.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_003.png" ShowParamsInTooltip="SpecificTurret" Category="Mastery" />
     <Specific_Turret BuffRadius="6" BuffName="AST_Turret_Buff" />
     <ParticleList>
       <Particle Key="OverHead" Name="U_Buff.Buff.AttackSpeed_Up_01" Direction="0,1,0" Bone="Bip01" Offset="0,0,0.65" />
@@ -91,7 +92,7 @@
     </ParticleList>
   </Skill>
   <Skill UID="player_Turret_variant_11" ESkill="default_variant">
-    <HUD UIName="@ui_Variant_Turret_variant_11" Lore="@ui_Variant_Turret_variant_11_Lore" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_005.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_005.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_005.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_005.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_005.png" ShowParamsInTooltip="SpecificTurret" />
+    <HUD UIName="@ui_Variant_Turret_variant_11" Lore="@ui_Variant_Turret_variant_11_Lore" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_005.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_005.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_005.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_005.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_005.png" ShowParamsInTooltip="SpecificTurret" Category="Mastery" />
     <ParticleList>
       <Particle Key="Shield" Name="U_Character_02.Turret.Turret_Shield_01" Direction="0,1,0" />
       <Particle Key="ShieldDisapear" Name="U_Character_02.Turret.Turret_Shield_End_01" Direction="0,1,0" />
@@ -100,24 +101,24 @@
     <Specific_Turret ShieldProjectiles="1" ShieldLenght="3" ShieldForwardOffset="1.4" />
   </Skill>
   <Skill UID="player_Turret_variant_12" ESkill="default_variant">
-    <HUD UIName="@ui_Variant_Turret_variant_12" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_001.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_001.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_001.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_001.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_001.png" ShowParamsInTooltip="SpecificTurret,StatusAilmentsChance" />
+    <HUD UIName="@ui_Variant_Turret_variant_12" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_001.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_001.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_001.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_001.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_001.png" ShowParamsInTooltip="SpecificTurret,StatusAilmentsChance" Category="Utility" />
     <StatusAilment AilmentEffectiveness="125" />
   </Skill>
   <Skill UID="player_Turret_variant_13" ESkill="default_variant">
-    <HUD UIName="@ui_Variant_Turret_variant_13" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_001.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_001.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_001.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_001.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_001.png" ShowParamsInTooltip="SpecificTurret,StatusAilmentsChance" />
+    <HUD UIName="@ui_Variant_Turret_variant_13" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_001.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_001.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_001.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_001.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_001.png" ShowParamsInTooltip="SpecificTurret,StatusAilmentsChance" Category="Combat" />
     <StatusAilment AllAilmentsInflictDamageIncreasePercent="40" />
   </Skill>
   <Skill UID="player_Turret_variant_14" ESkill="default_variant">
-    <HUD UIName="@ui_Variant_Turret_variant_14" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_003.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_003.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_003.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_003.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_003.png" ShowParamsInTooltip="SpecificTurret,DamageWeapon" />
+    <HUD UIName="@ui_Variant_Turret_variant_14" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_003.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_003.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_003.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_003.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_003.png" ShowParamsInTooltip="SpecificTurret,DamageWeapon" Category="Combat" />
     <DamageWeapon WeaponMultiplier="1.5" />
     <Specific_Turret MaxTime="-1.5" />
   </Skill>
   <Skill UID="player_Turret_variant_15" ESkill="default_variant">
-    <HUD UIName="@ui_Variant_Turret_variant_15" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_001.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_001.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_001.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_001.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_001.png" ShowParamsInTooltip="SpecificTurret,DamageCritical" />
+    <HUD UIName="@ui_Variant_Turret_variant_15" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_001.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_001.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_001.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_001.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_001.png" ShowParamsInTooltip="SpecificTurret,DamageCritical" Category="Combat" />
     <DamageCritical CriticalInflictScoreModifier="40" />
   </Skill>
   <Skill UID="player_Turret_variant_16" ESkill="default_variant">
-    <HUD UIName="@ui_Variant_Turret_variant_16" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_001.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_001.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_001.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_001.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_001.png" ShowParamsInTooltip="SpecificTurret,Cooldown" />
+    <HUD UIName="@ui_Variant_Turret_variant_16" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_001.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_001.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_001.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_001.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_001.png" ShowParamsInTooltip="SpecificTurret,Cooldown" Category="Utility" />
     <Cooldown Cooldown="-1" CooldownPerLevel="0" />
   </Skill>
   <Skill UID="player_Turret_variant_5" ESkill="default_variant">
@@ -142,7 +143,6 @@
       <Entry From="physical" To="lightning" ConversionRate="100" />
     </Damage_Conversion>
     <WeaponRequirements Requirements="rogue,lightning" />
-    <DamageWeapon WeaponMultiplier="1.25" />
     <Specific_Turret FireSound="Play_Skill_Turret_Shoot_Lightning" />
   </Skill>
   <Skill UID="player_Turret_variant_17" ESkill="default_variant">
@@ -151,7 +151,7 @@
     <ParticleList>
       <Particle Key="SummonGround" Name="U_Character_02.Turret.Turret_Summon_01_Fire" Direction="0,1,0" />
       <Particle Key="HeadGround" Name="U_Character_02.Turret.Turret_Head_Attack_02_Fire" Direction="0,1,0" />
-      <Particle Key="LegGround" Name="U_Character_02.Turret.Turret_Legs_01_Lightning" Direction="0,1,0" />
+      <Particle Key="LegGround" Name="U_Character_02.Turret.Turret_Legs_01" Direction="0,1,0" />
       <Particle Key="HeadDespawnGround" Name="U_Character_02.Turret.Turret_Disappear_01_Head_Fire" Direction="0,1,0" />
       <Particle Key="LegDespawnGround" Name="U_Character_02.Turret.Turret_Disappear_01_Leg_Fire" Direction="0,1,0" />
       <Particle Key="SummonHold" Name="U_Character_02.Turret.Turret_Summon_01_Hold_Fire" Direction="0,1,0" />
@@ -167,7 +167,6 @@
       <Entry From="physical" To="fire" ConversionRate="100" />
     </Damage_Conversion>
     <WeaponRequirements Requirements="rogue,fire" />
-    <DamageWeapon WeaponMultiplier="1.25" />
     <Specific_Turret FireSound="Play_Skill_Turret_Shoot_Fire" />
   </Skill>
   <Skill UID="player_Turret_variant_18" ESkill="default_variant">
@@ -176,7 +175,7 @@
     <ParticleList>
       <Particle Key="SummonGround" Name="U_Character_02.Turret.Turret_Summon_01_Shadow" Direction="0,1,0" />
       <Particle Key="HeadGround" Name="U_Character_02.Turret.Turret_Head_Attack_02_Shadow" Direction="0,1,0" />
-      <Particle Key="LegGround" Name="U_Character_02.Turret.Turret_Legs_01_Lightning" Direction="0,1,0" />
+      <Particle Key="LegGround" Name="U_Character_02.Turret.Turret_Legs_01" Direction="0,1,0" />
       <Particle Key="HeadDespawnGround" Name="U_Character_02.Turret.Turret_Disappear_01_Head_Shadow" Direction="0,1,0" />
       <Particle Key="LegDespawnGround" Name="U_Character_02.Turret.Turret_Disappear_01_Leg_Shadow" Direction="0,1,0" />
       <Particle Key="SummonHold" Name="U_Character_02.Turret.Turret_Summon_01_Hold_Shadow" Direction="0,1,0" />
@@ -192,11 +191,34 @@
       <Entry From="physical" To="shadow" ConversionRate="100" />
     </Damage_Conversion>
     <WeaponRequirements Requirements="rogue,shadow" />
-    <DamageWeapon WeaponMultiplier="1.25" />
     <Specific_Turret FireSound="Play_Skill_Turret_Shoot_Shadow" />
   </Skill>
+  <Skill UID="player_Turret_variant_20" ESkill="default_variant">
+    <HUD UIName="@ui_Variant_Turret_variant_20" Lore="@ui_Variant_Turret_variant_20_Lore" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_Alpha.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_Alpha.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_Alpha.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_Alpha.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_Alpha.png" HUDPictureVariant_InnerIcon="../u_resources/spells/Active_Skills/turret_Aether.png" ShowParamsInTooltip="SpecificTurret,DamageWeapon" HUDPicture="../u_resources/spells/Active_Skills/turret_Aether.png" VariantBottomPanel="1" />
+    <Projectile Name="player_turret_proj_aether" ProjectileCount="0" AngleBetweenProjectiles="1" />
+    <ParticleList>
+      <Particle Key="SummonGround" Name="U_Character_02.Turret.Turret_Summon_01_Aether" Direction="0,1,0" />
+      <Particle Key="HeadGround" Name="U_Character_02.Turret.Turret_Head_Attack_02_Aether" Direction="0,1,0" />
+      <Particle Key="LegGround" Name="U_Character_02.Turret.Turret_Legs_01" Direction="0,1,0" />
+      <Particle Key="HeadDespawnGround" Name="U_Character_02.Turret.Turret_Disappear_01_Head_Aether" Direction="0,1,0" />
+      <Particle Key="LegDespawnGround" Name="U_Character_02.Turret.Turret_Disappear_01_Leg_Aether" Direction="0,1,0" />
+      <Particle Key="SummonHold" Name="U_Character_02.Turret.Turret_Summon_01_Hold_Aether" Direction="0,1,0" />
+      <Particle Key="HeadHold" Name="U_Character_02.Turret.Turret_Head_Attack_02_Hold_Aether" Direction="0,1,0" />
+      <Particle Key="DespawnHold" Name="U_Character_02.Turret.Turret_Disappear_01_Hold_Aether" Direction="0,1,0" />
+      <Particle Key="Explosion" Name="U_Character_02.Turret.Turret_Exlonsion_01_Aether" Direction="0,0,1" />
+      <Particle Key="ShotGun" Name="U_Character_02.Turret.Turret_shotgun_01_Aether" Direction="0,1,0" />
+    </ParticleList>
+    <EventEffectOverride>
+      <AnimEvent Original="U_Character_02.Turret.Turret_Summon_Aura_01_Hold" Override="U_Character_02.Turret.Turret_Summon_Aura_01_Hold_Aether" />
+    </EventEffectOverride>
+    <Damage_Conversion>
+      <Entry From="physical" To="umbra" ConversionRate="100" />
+    </Damage_Conversion>
+    <WeaponRequirements Requirements="rogue,umbra" />
+    <Specific_Turret FireSound="Play_Skill_Turret_Shoot_Aether" />
+  </Skill>
   <Skill UID="Player_Turret_variant_19" ESkill="default_variant">
-    <HUD UIName="@ui_variant_Player_Turret_variant_19" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_003.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_003.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_003.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_003.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_003.png" ShowParamsInTooltip="DamageWeapon" />
+    <HUD UIName="@ui_variant_Player_Turret_variant_19" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_001.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_001.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_001.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_001.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_001.png" ShowParamsInTooltip="DamageWeapon" Category="Combat" />
     <DamageWeapon WeaponMultiplier="1.15" />
   </Skill>
   <Skill UID="player_Turret_variant_5,player_Turret_variant_4" ESkill="default_variant_combo">
@@ -236,6 +258,19 @@
       <Particle Key="SummonHold" Name="U_Character_02.Turret.Turret_Summon_01_Dual_Hold_Shadow" Direction="0,1,0" />
       <Particle Key="HeadHold" Name="U_Character_02.Turret.Turret_Head_Attack_02_Dual_Hold_Shadow" Direction="0,1,0" />
       <Particle Key="DespawnHold" Name="U_Character_02.Turret.Turret_Disappear_01_Dual_Hold_Shadow" Direction="0,1,0" />
+    </ParticleList>
+  </Skill>
+  <Skill UID="player_Turret_variant_20,player_Turret_variant_4" ESkill="default_variant_combo">
+    <Specific_Turret FireSound="Play_Skill_Turret_Shotgun_Shoot_Aether" />
+  </Skill>
+  <Skill UID="player_Turret_variant_20,player_Turret_variant_3" ESkill="default_variant_combo">
+    <ParticleList>
+      <Particle Key="SummonGround" Name="U_Character_02.Turret.Turret_Summon_01_Dual_Aether" Direction="0,1,0" />
+      <Particle Key="HeadGround" Name="U_Character_02.Turret.Turret_Head_Attack_02_Dual_Aether" Direction="0,1,0" />
+      <Particle Key="HeadDespawnGround" Name="U_Character_02.Turret.Turret_Disappear_01_Dual_Head_Aether" Direction="0,1,0" />
+      <Particle Key="SummonHold" Name="U_Character_02.Turret.Turret_Summon_01_Dual_Hold_Aether" Direction="0,1,0" />
+      <Particle Key="HeadHold" Name="U_Character_02.Turret.Turret_Head_Attack_02_Dual_Hold_Aether" Direction="0,1,0" />
+      <Particle Key="DespawnHold" Name="U_Character_02.Turret.Turret_Disappear_01_Dual_Hold_Aether" Direction="0,1,0" />
     </ParticleList>
   </Skill>
 </MetaData>

@@ -8,9 +8,9 @@
  <DocumentProperties xmlns="urn:schemas-microsoft-com:office:office">
   <Title>Untitled Spreadsheet</Title>
   <Author>Unknown Creator</Author>
-  <LastAuthor>Pierre Techoueyres</LastAuthor>
-  <Created>2020-12-15T08:28:37Z</Created>
-  <LastSaved>2020-12-15T08:28:37Z</LastSaved>
+  <LastAuthor>User Computer</LastAuthor>
+  <Created>2023-02-24T10:34:04Z</Created>
+  <LastSaved>2023-02-24T10:34:04Z</LastSaved>
   <Company>Microsoft Corporation</Company>
   <Version>16.00</Version>
  </DocumentProperties>
@@ -18,8 +18,8 @@
   <AllowPNG/>
  </OfficeDocumentSettings>
  <ExcelWorkbook xmlns="urn:schemas-microsoft-com:office:excel">
-  <WindowHeight>32767</WindowHeight>
-  <WindowWidth>19275</WindowWidth>
+  <WindowHeight>9015</WindowHeight>
+  <WindowWidth>21570</WindowWidth>
   <WindowTopX>32767</WindowTopX>
   <WindowTopY>32767</WindowTopY>
   <ProtectStructure>False</ProtectStructure>
@@ -122,7 +122,7 @@
   </Style>
  </Styles>
  <Worksheet ss:Name="Sheet1">
-  <Table ss:ExpandedColumnCount="7" ss:ExpandedRowCount="719" x:FullColumns="1"
+  <Table ss:ExpandedColumnCount="7" ss:ExpandedRowCount="729" x:FullColumns="1"
    x:FullRows="1" ss:DefaultRowHeight="15">
    <Column ss:AutoFitWidth="0" ss:Width="356.25"/>
    <Column ss:AutoFitWidth="0" ss:Width="413.25"/>
@@ -328,7 +328,7 @@
    <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s19"><Data ss:Type="String">ui_eim_attack_damage_bonus_from_last_spell</Data></Cell>
     <Cell ss:StyleID="s25"><Data ss:Type="String">Attacks gain %1 additional Damage as the Damage Type of the last Spell cast during %2s</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">施放法术将给予%2秒内的下一次攻击%1额外伤害，额外伤害类型取决于该法术。</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">施放法术后的%2秒内，%1额外伤害附加至攻击，额外伤害类型取决于该法术。</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -490,7 +490,7 @@
    <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s20"><Data ss:Type="String">ui_eim_can_cast_bladeslinger</Data></Cell>
     <Cell ss:StyleID="s27"><Data ss:Type="String">Allows the Bearer to use Phantom Blades</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">允许穿戴者施放幻影之刃</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">允许穿戴者施放幻影飞刀</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -1786,7 +1786,7 @@
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s19"><Data ss:Type="String">ui_eim_damage_from_physical_resistance</Data></Cell>
     <Cell ss:StyleID="s27"><Data ss:Type="String">%1 Damage per percent of Physical Resistance</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">每拥有百分之一物理抗性%1额外伤害</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">每拥有1%物理抗性%1伤害加成</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -1813,7 +1813,7 @@
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s19"><Data ss:Type="String">ui_eim_damage_percent_against_frozen</Data></Cell>
     <Cell ss:StyleID="s27"><Data ss:Type="String">%1 Damage against Frozen Enemies</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">%1额外伤害对冻结目标</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">对冻结目标%1伤害加成</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -1948,7 +1948,7 @@
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s19"><Data ss:Type="String">ui_eim_damage_percent_if_only_one_nearby_enemy</Data></Cell>
     <Cell ss:StyleID="s27"><Data ss:Type="String">%1 Damage when only one Enemy is within a %2m radius</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">%2米距离内只有一个敌人时获得%1额外伤害</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">%2米距离内只有一个敌人时获得%1伤害加成</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -1957,7 +1957,7 @@
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s19"><Data ss:Type="String">ui_eim_damage_percent_if_only_one_nearby_enemy_damage</Data></Cell>
     <Cell ss:StyleID="s27"><Data ss:Type="String">%1 additional Damage to the Enemy within Clandestine Execution's radius</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">判定“附近”只有一个敌人时%1额外伤害</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">判定“附近”只有一个敌人时%1伤害加成</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -1975,7 +1975,7 @@
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s19"><Data ss:Type="String">ui_eim_damage_percent_impaired</Data></Cell>
     <Cell ss:StyleID="s27"><Data ss:Type="String">%1 Damage to Enemies Slowed, Stunned, Frozen, or in Stasis</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">对移动受损的敌人造成%1额外伤害</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">对移动受损的敌人造成的伤害加成%1</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -1993,7 +1993,7 @@
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s19"><Data ss:Type="String">ui_eim_damage_percent_per_enemy_in_range</Data></Cell>
     <Cell ss:StyleID="s25"><Data ss:Type="String">%1 Damage per Enemy within a %3m radius</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">“附近”%3米距离内每有一个敌人%1额外伤害</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">“附近”%3米距离内每有一个敌人获得%1伤害加成</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -2011,7 +2011,7 @@
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s19"><Data ss:Type="String">ui_eim_damage_percent_per_enemy_in_range_range</Data></Cell>
     <Cell ss:StyleID="s25"><Data ss:Type="String">+%3m to Bestial Frenzy's radius</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">敌人数增伤的“附近”判定距离+%3米</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">野性狂乱的“附近”判定距离+%3米</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -2029,7 +2029,7 @@
    <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s19"><Data ss:Type="String">ui_eim_damage_percent_per_rage_point</Data></Cell>
     <Cell ss:StyleID="s27"><Data ss:Type="String">%1 Damage per 100 remaining Rage points</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">每有100点未使用怒气获得%1额外伤害</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">每有100点未使用怒气获得%1伤害加成</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -2064,7 +2064,7 @@
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s19"><Data ss:Type="String">ui_eim_damage_percent_twohanded</Data></Cell>
-    <Cell ss:StyleID="s27"><Data ss:Type="String">%1 Two Handed Weapon Damage</Data></Cell>
+    <Cell ss:StyleID="s27"><Data ss:Type="String">%1 Two-Handed Weapon Damage</Data></Cell>
     <Cell ss:StyleID="s18"><Data ss:Type="String">%1双手武器伤害</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -2074,7 +2074,7 @@
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s19"><Data ss:Type="String">ui_eim_damage_percent_while_nobody_close</Data></Cell>
     <Cell ss:StyleID="s27"><Data ss:Type="String">%1 Damage when no Enemies are within %2m radius</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">%2米范围内没有敌人时，获得%1额外伤害</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">%2米范围内没有敌人时，获得%1伤害加成</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -2083,7 +2083,7 @@
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s19"><Data ss:Type="String">ui_eim_damage_percent_while_nobody_close_damage</Data></Cell>
     <Cell ss:StyleID="s31"><Data ss:Type="String">%1 additional Damage to Meditative Focus</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">判定周围没有敌人时%1额外伤害</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">判定周围没有敌人时的伤害加成%1</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -2299,7 +2299,7 @@
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s19"><Data ss:Type="String">ui_eim_dash_cooldown_on_kill</Data></Cell>
     <Cell ss:StyleID="s27"><Data ss:Type="String">%1 Dash Cooldown Reduction on Kill</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">%1冲刺攻击冷却时间缩减</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">每次击杀使冲刺攻击的冷却时间缩短%1</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -2307,7 +2307,7 @@
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s19"><Data ss:Type="String">ui_eim_deathmark_on_hit</Data></Cell>
-    <Cell ss:StyleID="s27"><Data ss:Type="String">%1 Chance to infilct Mark of Impurity to an Enemy on Hit</Data></Cell>
+    <Cell ss:StyleID="s27"><Data ss:Type="String">%1 Chance to inflict Mark of Impurity to an Enemy on Hit</Data></Cell>
     <Cell ss:StyleID="s18"><Data ss:Type="String">有%1几率在每次击中时施加不洁标记</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -2316,8 +2316,8 @@
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s19"><Data ss:Type="String">ui_eim_defense_up_on_block</Data></Cell>
-    <Cell ss:StyleID="s27"><Data ss:Type="String">%1 All Resistances Score for you and your Allies on Block</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">在格挡后为你和你的盟友增加%1全抗值</Data></Cell>
+    <Cell ss:StyleID="s27"><Data ss:Type="String">%1 All Resistances Score for you and your Allies on Block within a %2m radius during %3s</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">在格挡后为你和%2米范围内的盟友增加%1全抗值，持续%3秒</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -2325,8 +2325,8 @@
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s19"><Data ss:Type="String">ui_eim_defense_up_on_globe_pickup</Data></Cell>
-    <Cell ss:StyleID="s27"><Data ss:Type="String">%1 All Resistances Score for you and your Allies when you pick a Health Globe</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">在捡起生命球后为你和你的盟友增加%1全抗值</Data></Cell>
+    <Cell ss:StyleID="s27"><Data ss:Type="String">%1 All Resistances Score during %3s when you pick a Health Globe</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">在捡起生命球获得%1全抗值，持续%3秒</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -2334,8 +2334,8 @@
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s19"><Data ss:Type="String">ui_eim_dodgechance_on_being_hit</Data></Cell>
-    <Cell ss:StyleID="s27"><Data ss:Type="String">%1 Passive Dodge Chance Score after being Hit</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">被击中后%1闪避几率值</Data></Cell>
+    <Cell ss:StyleID="s27"><Data ss:Type="String">%1 Passive Dodge Chance Score during %3s after being Hit. %4s Cooldown.</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">被击中后获得%1闪避几率值，持续%3秒。该效果有%4秒冷却时间。</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -2452,7 +2452,7 @@
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s19"><Data ss:Type="String">ui_eim_elemental_cycling_percent</Data></Cell>
     <Cell ss:StyleID="s25"><Data ss:Type="String">%1 Elemental Damage to the next Elemental Spell if the previous Spell had a different base Element</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">施放一次元素法术后，若下一次施放的元素法术的基础元素伤害类型与上一次不同，则其造成的元素伤害%1额外伤害</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">施放一次元素法术后，若下一次施放的元素法术的基础元素伤害类型与上一次不同，则其获得%1元素伤害加成</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -2838,7 +2838,7 @@
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s19"><Data ss:Type="String">ui_eim_health_percent</Data></Cell>
-    <Cell ss:StyleID="s27"><Data ss:Type="String">%1 maximum Health</Data></Cell>
+    <Cell ss:StyleID="s27"><Data ss:Type="String">%1 Maximum Health</Data></Cell>
     <Cell ss:StyleID="s18"><Data ss:Type="String">%1最大生命值</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -2847,7 +2847,7 @@
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s19"><Data ss:Type="String">ui_eim_health_pts</Data></Cell>
-    <Cell ss:StyleID="s27"><Data ss:Type="String">%1 maximum Health</Data></Cell>
+    <Cell ss:StyleID="s27"><Data ss:Type="String">%1 Maximum Health</Data></Cell>
     <Cell ss:StyleID="s18"><Data ss:Type="String">%1最大生命值</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -2903,6 +2903,33 @@
     <Cell ss:StyleID="s19"><Data ss:Type="String">ui_eim_healthglobe_drop_chance_on_hit</Data></Cell>
     <Cell ss:StyleID="s27"><Data ss:Type="String">%1 Health Globe generation on Hit</Data></Cell>
     <Cell ss:StyleID="s18"><Data ss:Type="String">%1生命球生成</Data></Cell>
+    <Cell ss:StyleID="s18"/>
+    <Cell ss:StyleID="s18"/>
+    <Cell ss:StyleID="s18"/>
+    <Cell ss:StyleID="s18"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s19"><Data ss:Type="String">ui_eim_inflicted_elemental_duration_percent</Data></Cell>
+    <Cell ss:StyleID="s27"><Data ss:Type="String">Increases inflicted Elemental Ailments Duration by %1</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">造成的元素异常状态持续时间增加%1</Data></Cell>
+    <Cell ss:StyleID="s18"/>
+    <Cell ss:StyleID="s18"/>
+    <Cell ss:StyleID="s18"/>
+    <Cell ss:StyleID="s18"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s19"><Data ss:Type="String">ui_eim_inflicted_material_duration_percent</Data></Cell>
+    <Cell ss:StyleID="s27"><Data ss:Type="String">Increases inflicted Material Ailments Duration by %1</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">造成的物质异常状态持续时间增加%1</Data></Cell>
+    <Cell ss:StyleID="s18"/>
+    <Cell ss:StyleID="s18"/>
+    <Cell ss:StyleID="s18"/>
+    <Cell ss:StyleID="s18"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s18"><Data ss:Type="String">ui_eim_inflicted_occult_duration_percent</Data></Cell>
+    <Cell ss:StyleID="s27"><Data ss:Type="String">Increases inflicted Occult Ailments Duration by %1</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">造成的神秘异常状态持续时间增加%1</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -3225,7 +3252,7 @@
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s19"><Data ss:Type="String">ui_eim_max_stacks_capacity</Data></Cell>
-    <Cell ss:StyleID="s27"><Data ss:Type="String">%1 maximum Ailment Stacks</Data></Cell>
+    <Cell ss:StyleID="s27"><Data ss:Type="String">%1 Maximum Ailment Stacks</Data></Cell>
     <Cell ss:StyleID="s18"><Data ss:Type="String">%1最大异常状态层数</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -3235,7 +3262,7 @@
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s19"><Data ss:Type="String">ui_eim_melee_damage_benefits_from_projectiles_bonuses</Data></Cell>
     <Cell ss:StyleID="s27"><Data ss:Type="String">Attacks benefit from %1 Projectile Damage</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">近战伤害获得投射物所享受加成%1的加成</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">%1投射物伤害加成至近战伤害</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -3505,7 +3532,7 @@
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s19"><Data ss:Type="String">ui_eim_projectiles_damage_asdistance</Data></Cell>
     <Cell ss:StyleID="s27"><Data ss:Type="String">Projectile Damage scale by %1 with distance up to %3m</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">获得随距离增加的额外投射物伤害，在%3米时达到%1</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">获得随距离增加的投射物伤害加成，在%3米时达到%1</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -3585,8 +3612,8 @@
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s19"><Data ss:Type="String">ui_eim_rage_to_umbra_transfer_percent</Data></Cell>
-    <Cell ss:StyleID="s27"><Data ss:Type="String">%1 increased Transfer Rate between Rage and Willpower</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">%1提高怒气转魔力速率</Data></Cell>
+    <Cell ss:StyleID="s27"><Data ss:Type="String">%1 Increased Transfer Rate between Rage and Willpower</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">%1提高魔力与怒气互转速率</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -3594,8 +3621,8 @@
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s19"><Data ss:Type="String">ui_eim_rage_to_umbra_transfer_pts</Data></Cell>
-    <Cell ss:StyleID="s27"><Data ss:Type="String">%1-%2 reduced Transfer Rate between Rage and Willpower</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">%1-%2降低怒气转魔力速率</Data></Cell>
+    <Cell ss:StyleID="s27"><Data ss:Type="String">%1-%2 Reduced Transfer Rate between Rage and Willpower</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">%1-%2降低魔力与怒气互转速率</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -4378,7 +4405,7 @@
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s19"><Data ss:Type="String">ui_eim_transfer_time_percent</Data></Cell>
     <Cell ss:StyleID="s31"><Data ss:Type="String">%1 Transfer Time Speed between Willpower and Rage</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">%1魔力与怒气互转时间缩短</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">%1魔力与怒气互转速率</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -4395,7 +4422,7 @@
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s19"><Data ss:Type="String">ui_eim_twohanded_blockchance_flat</Data></Cell>
-    <Cell ss:StyleID="s27"><Data ss:Type="String">%1 Block Chance while a Two-handed Weapon is equipped</Data></Cell>
+    <Cell ss:StyleID="s27"><Data ss:Type="String">%1 Block Chance while a Two-Handed Weapon is equipped</Data></Cell>
     <Cell ss:StyleID="s18"><Data ss:Type="String">装备双手武器时%1格挡率</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -4513,7 +4540,7 @@
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s19"><Data ss:Type="String">ui_eim_umbra_to_rage_transfer_percent</Data></Cell>
     <Cell ss:StyleID="s27"><Data ss:Type="String">%1 Transfer Time Speed between Willpower and Rage</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">%1提高魔力转怒气速率</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">%1魔力与怒气互转速率</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -4522,7 +4549,7 @@
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s19"><Data ss:Type="String">ui_eim_umbra_to_rage_transfer_pts</Data></Cell>
     <Cell ss:StyleID="s27"><Data ss:Type="String">%1-%2 Transfer Time Speed between Willpower and Rage</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">%1-%2降低魔力转怒气速率</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">%1-%2魔力与怒气互转速率</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -4729,7 +4756,7 @@
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s18"><Data ss:Type="String">ui_eim_local_blockefficiency_flat</Data></Cell>
     <Cell ss:StyleID="s27"><Data ss:Type="String">%1 Block Efficiency on this item</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">%1%格挡效果至该装备</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">%1格挡效果至该装备</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -4746,8 +4773,8 @@
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s19"><Data ss:Type="String">ui_eim_local_damage_flat_fire</Data></Cell>
-    <Cell ss:StyleID="s27"><Data ss:Type="String">%1-%2 Fire Damage on Attacks with this weapon</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">%1-%2火焰伤害至该武器基础伤害</Data></Cell>
+    <Cell ss:StyleID="s27"><Data ss:Type="String">%1-%2 Fire Damage on Attacks and Spells with this weapon</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">使用此武器攻击与施放法术时造成 %1-%2 火焰伤害</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -4755,8 +4782,8 @@
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s19"><Data ss:Type="String">ui_eim_local_damage_flat_frost</Data></Cell>
-    <Cell ss:StyleID="s27"><Data ss:Type="String">%1-%2 Frost Damage on Attacks with this weapon</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">%1-%2冰霜伤害至该武器基础伤害</Data></Cell>
+    <Cell ss:StyleID="s27"><Data ss:Type="String">%1-%2 Frost Damage on Attacks and Spells with this weapon</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">使用此武器攻击与施放法术时造成 %1-%2 冰霜伤害</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -4764,8 +4791,8 @@
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s19"><Data ss:Type="String">ui_eim_local_damage_flat_lightning</Data></Cell>
-    <Cell ss:StyleID="s27"><Data ss:Type="String">%1-%2 Lightning Damage on Attacks with this weapon</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">%1-%2闪电伤害至该武器基础伤害</Data></Cell>
+    <Cell ss:StyleID="s27"><Data ss:Type="String">%1-%2 Lightning Damage on Attacks and Spells with this weapon</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">使用此武器攻击与施放法术时造成 %1-%2 闪电伤害</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -4773,8 +4800,8 @@
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s19"><Data ss:Type="String">ui_eim_local_damage_flat_physical</Data></Cell>
-    <Cell ss:StyleID="s27"><Data ss:Type="String">%1-%2 Physical Damage on Attacks with this weapon</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">%1-%2物理伤害至该武器基础伤害</Data></Cell>
+    <Cell ss:StyleID="s27"><Data ss:Type="String">%1-%2 Physical Damage on Attacks and Spells with this weapon</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">使用此武器攻击与施放法术时造成 %1-%2 物理伤害</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -4782,8 +4809,8 @@
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s19"><Data ss:Type="String">ui_eim_local_damage_flat_rend</Data></Cell>
-    <Cell ss:StyleID="s27"><Data ss:Type="String">%1-%2 Rend Damage on Attacks with this weapon</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">%1-%2撕裂伤害至该武器基础伤害</Data></Cell>
+    <Cell ss:StyleID="s27"><Data ss:Type="String">%1-%2 Rend Damage on Attacks and Spells with this weapon</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">使用此武器攻击与施放法术时造成 %1-%2 撕裂伤害</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -4791,8 +4818,8 @@
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s19"><Data ss:Type="String">ui_eim_local_damage_flat_sacred</Data></Cell>
-    <Cell ss:StyleID="s27"><Data ss:Type="String">%1-%2 Sacred Damage on Attacks with this weapon</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">%1-%2神圣伤害至该武器基础伤害</Data></Cell>
+    <Cell ss:StyleID="s27"><Data ss:Type="String">%1-%2 Sacred Damage on Attacks and Spells with this weapon</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">使用此武器攻击与施放法术时造成 %1-%2 神圣伤害</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -4800,8 +4827,8 @@
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s19"><Data ss:Type="String">ui_eim_local_damage_flat_shadow</Data></Cell>
-    <Cell ss:StyleID="s27"><Data ss:Type="String">%1-%2 Shadow Damage on Attacks with this weapon</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">%1-%2暗影伤害至该武器基础伤害</Data></Cell>
+    <Cell ss:StyleID="s27"><Data ss:Type="String">%1-%2 Shadow Damage on Attacks and Spells with this weapon</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">使用此武器攻击与施放法术时造成 %1-%2 暗影伤害</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -4809,8 +4836,8 @@
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s19"><Data ss:Type="String">ui_eim_local_damage_flat_toxic</Data></Cell>
-    <Cell ss:StyleID="s27"><Data ss:Type="String">%1-%2 Toxic Damage on Attacks with this weapon</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">%1-%2毒素伤害至该武器基础伤害</Data></Cell>
+    <Cell ss:StyleID="s27"><Data ss:Type="String">%1-%2 Toxic Damage on Attacks and Spells with this weapon</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">使用此武器攻击与施放法术时造成 %1-%2 毒素伤害</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -4818,8 +4845,8 @@
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s19"><Data ss:Type="String">ui_eim_local_damage_flat_umbra</Data></Cell>
-    <Cell ss:StyleID="s27"><Data ss:Type="String">%1-%2 Aether Damage on Attacks with this weapon</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">%1-%2以太伤害至该武器基础伤害</Data></Cell>
+    <Cell ss:StyleID="s27"><Data ss:Type="String">%1-%2 Aether Damage on Attacks and Spells with this weapon</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">使用此武器攻击与施放法术时造成 %1-%2 以太伤害</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -4827,8 +4854,8 @@
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s18"><Data ss:Type="String">ui_eim_local_damage_percent_elemental</Data></Cell>
-    <Cell ss:StyleID="s27"><Data ss:Type="String">%1 Elemental Damage on Attacks with this weapon</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">该武器元素伤害%1</Data></Cell>
+    <Cell ss:StyleID="s27"><Data ss:Type="String">%1 Elemental Damage on Attacks and Spells with this weapon</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">使用此武器攻击与施放法术时造成 %1 元素伤害</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -4836,8 +4863,8 @@
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s18"><Data ss:Type="String">ui_eim_local_damage_percent_material</Data></Cell>
-    <Cell ss:StyleID="s25"><Data ss:Type="String">%1 Material Damage on Attacks with this weapon</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">该武器物质伤害%1</Data></Cell>
+    <Cell ss:StyleID="s25"><Data ss:Type="String">%1 Material Damage on Attacks and Spells with this weapon</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">使用此武器攻击与施放法术时造成 %1 物质伤害</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -4845,8 +4872,8 @@
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s18"><Data ss:Type="String">ui_eim_local_damage_percent_primeval</Data></Cell>
-    <Cell ss:StyleID="s27"><Data ss:Type="String">%1 Occult Damage on Attacks with this weapon</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">该武器神秘伤害%1</Data></Cell>
+    <Cell ss:StyleID="s27"><Data ss:Type="String">%1 Occult Damage on Attacks and Spells with this weapon</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">使用此武器攻击与施放法术时造成 %1 神秘伤害</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -4854,8 +4881,8 @@
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s20"><Data ss:Type="String">ui_eim_local_damage_percent_all</Data></Cell>
-    <Cell ss:StyleID="s27"><Data ss:Type="String">%1 All Damage on Attacks with this weapon</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">该武器所有类型伤害%1</Data></Cell>
+    <Cell ss:StyleID="s27"><Data ss:Type="String">%1 All Damage on Attacks and Spells with this weapon</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">使用此武器攻击与施放法术时造成 %1 全部伤害</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -4999,7 +5026,7 @@
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s18"><Data ss:Type="String">ui_eim_minion_damage_percent</Data></Cell>
     <Cell ss:StyleID="s25"><Data ss:Type="String">%1 Damage dealt by Summons</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">召唤物%1额外伤害</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">召唤物伤害%1</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -5026,7 +5053,7 @@
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s21"><Data ss:Type="String">ui_eim_burn_stacks_consumption_chance_for_instant_damage</Data></Cell>
     <Cell ss:StyleID="s25"><Data ss:Type="String">If you applied %2 Burn Stacks on an Enemy, you have %1 chance to consume them on Hit, increasing the Damage of your Hit by %3 per consumed Stack</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">若敌人身上的燃烧层数超过%2层，则你命中敌人时有%1几率消耗你施加的燃烧层数，每消耗一层，这一击获得%3额外伤害。</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">若敌人身上的燃烧层数超过%2层，则你命中敌人时有%1几率消耗你施加的燃烧层数，每消耗一层，这一击享受+%3伤害修正。</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -5079,7 +5106,7 @@
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s21"><Data ss:Type="String">ui_eim_can_change_stances_with_dodgeroll</Data></Cell>
-    <Cell ss:StyleID="s25"><Data ss:Type="String">Gain access to two Stances: &quot;Probing Weakness&quot; and &quot;Stalwart Resolve&quot;. You can change your Stance by using the Active Dodge</Data></Cell>
+    <Cell ss:StyleID="s25"><Data ss:Type="String">Gain access to two Stances: &quot;Probing Weakness&quot; and &quot;Stalwart Resolve.&quot; You can change your Stance by using the Active Dodge</Data></Cell>
     <Cell ss:StyleID="s18"><Data ss:Type="String">获得两种可用“姿态”：“寻隙姿态”和“忠贞姿态”。使用翻滚会切换“姿态”。</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -5097,8 +5124,8 @@
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s21"><Data ss:Type="String">ui_eim_stance_defensive_stats</Data></Cell>
-    <Cell ss:StyleID="s25"><Data ss:Type="String">The &quot;Stalwart Resolve&quot; Stance reduces your Attack and Spell Damage by %3 but gives you an additional %1 Block Chance and %2 Block Efficiency</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">“忠贞”姿态下，牺牲%3的攻击、施法速度，获得%2格挡效果加成和%1格挡几率加成。</Data></Cell>
+    <Cell ss:StyleID="s25"><Data ss:Type="String">The &quot;Stalwart Resolve&quot; Stance reduces your Attack and Spell Casting Speed by %3 but gives you an additional %1 Block Chance and %2 Block Efficiency</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">“忠贞”姿态下，牺牲%3的攻击、施法速度，获得%2格挡效果加成和%1格挡几率。</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -5116,7 +5143,7 @@
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s18"><Data ss:Type="String">ui_eim_stance_defensive_stats_bonus</Data></Cell>
     <Cell ss:StyleID="s25"><Data ss:Type="String">Adds %1 Block Chance while &quot;Stalwart Resolve&quot; is active</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">“忠贞”姿态下获得的格挡几率加成增加%1</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">“忠贞”姿态下获得的格挡几率增加%1</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -5133,8 +5160,8 @@
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s21"><Data ss:Type="String">ui_eim_damage_on_block_rend</Data></Cell>
-    <Cell ss:StyleID="s25"><Data ss:Type="String">Proud Reprisal damage are converted into Rend Damage</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">格挡反击造成的伤害视为撕裂伤害</Data></Cell>
+    <Cell ss:StyleID="s25"><Data ss:Type="String">Proud Reprisal damage deals an additional %1 Weapon Damage and is converted into Rend Damage</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">骄纵报复额外造成%1武器伤害。将骄纵报复造成的伤害转化为撕裂伤害。</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -5188,7 +5215,7 @@
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s18"><Data ss:Type="String">ui_eim_final_weapon_combos_damage</Data></Cell>
     <Cell ss:StyleID="s25"><Data ss:Type="String">The fourth Basic Attack Combo deals %1 additional Damage</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">所有普攻连击的第四次攻击造成%1额外伤害</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">所有普攻连击的第四次攻击+%1伤害加成</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -5215,7 +5242,7 @@
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s21"><Data ss:Type="String">ui_eim_fortress_damage_percent</Data></Cell>
     <Cell ss:StyleID="s25"><Data ss:Type="String">%1 Damage per &quot;Inexorable&quot; point</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">每个“岿然”点数%1额外伤害</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">每个“岿然”点数%1伤害修正</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -5250,7 +5277,7 @@
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s21"><Data ss:Type="String">ui_eim_stat_bonus_from_chest_armor</Data></Cell>
-    <Cell ss:StyleID="s25"><Data ss:Type="String">Allows you to receive a Bonus based on on the Chest-piece equipped</Data></Cell>
+    <Cell ss:StyleID="s25"><Data ss:Type="String">Allows you to receive a Bonus based on the Chest-piece equipped</Data></Cell>
     <Cell ss:StyleID="s18"><Data ss:Type="String">获得Buff，效果取决于装备的胸甲类型</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -5268,7 +5295,7 @@
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s21"><Data ss:Type="String">ui_eim_stat_bonus_from_chest_armor_tank</Data></Cell>
-    <Cell ss:StyleID="s25"><Data ss:Type="String">Heavy: Adds %1 of the armor piece All Resistance Score to your All Resistance Score</Data></Cell>
+    <Cell ss:StyleID="s25"><Data ss:Type="String">Heavy: Adds %1 of the armour piece All Resistance Score to your All Resistance Score</Data></Cell>
     <Cell ss:StyleID="s18"><Data ss:Type="String">若装备重型胸甲，获得其全抗值乘以%1的全抗值</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -5313,7 +5340,7 @@
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s21"><Data ss:Type="String">ui_eim_stat_bonus_from_helmet_tank</Data></Cell>
-    <Cell ss:StyleID="s25"><Data ss:Type="String">Heavy: Adds %1 of the armor piece All Resistance Score to your All Resistance Score</Data></Cell>
+    <Cell ss:StyleID="s25"><Data ss:Type="String">Heavy: Adds %1 of the armour piece All Resistance Score to your All Resistance Score</Data></Cell>
     <Cell ss:StyleID="s18"><Data ss:Type="String">若装备重型胸甲，获得其全抗值%1的全抗值</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -5394,8 +5421,8 @@
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s21"><Data ss:Type="String">ui_eim_pray_on_low_health_all_resistances</Data></Cell>
-    <Cell ss:StyleID="s25"><Data ss:Type="String">When your Health is below %2, all nearby Allies gain %1 additional All Resistances Score</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">当你的生命值低于%2时，使所有附近的盟友获得%1全抗值</Data></Cell>
+    <Cell ss:StyleID="s25"><Data ss:Type="String">When your Health is below %2, all nearby Allies gain %1 additional All Resistances Score during %3s. %4s Cooldown</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">当你的生命值低于%2时，使所有附近的盟友获得%1全抗值，持续%3秒。该效果有%4秒冷却时间。</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -5430,7 +5457,7 @@
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s21"><Data ss:Type="String">ui_eim_can_proc_attunements</Data></Cell>
-    <Cell ss:StyleID="s25"><Data ss:Type="String">Skills that inflict Fire, Frost, or Lightning Damage grant passive Bonuses called &quot;Accords&quot;. Up to %1 &quot;Accord(s)&quot; can be active simultaneously. Triggered &quot;Accords&quot; cannot be changed during %2s</Data></Cell>
+    <Cell ss:StyleID="s25"><Data ss:Type="String">Skills that inflict Fire, Frost, or Lightning Damage grant passive Bonuses called &quot;Accords.&quot; Up to %1 &quot;Accord(s)&quot; can be active simultaneously. Triggered &quot;Accords&quot; cannot be changed during %2s</Data></Cell>
     <Cell ss:StyleID="s18"><Data ss:Type="String">造成燃烧、冻结、感电的法术会授予名为“协议”的被动增益。最多同时激活%1种协议。被覆盖的“协议”在%2秒内不会被再次激活。  </Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -5458,7 +5485,7 @@
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s21"><Data ss:Type="String">ui_eim_attunement_fire</Data></Cell>
     <Cell ss:StyleID="s25"><Data ss:Type="String">Fire triggers &quot;Abanazaar's Accord&quot; for %3s unless it is triggered again. You have %1 Damage when &quot;Abanazaar's Accord&quot; is active</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">除非被覆盖，“阿巴那扎的协议”会激活%3秒。“阿巴那扎的协议”激活时你获得%1额外伤害。</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">除非被覆盖，“阿巴纳扎的协议”会激活%3秒。“阿巴纳扎的协议”激活时你获得%1伤害加成。</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -5475,8 +5502,8 @@
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s18"><Data ss:Type="String">ui_eim_meteor_on_casting_fire_skill</Data></Cell>
-    <Cell ss:StyleID="s25"><Data ss:Type="String">Launch a Meteor at the targeted location when a Fire Skill is used. The Meteor deals %1 Weapon Damage. %4s Cooldown</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">施放火焰技能时会朝指定位置施放一枚陨石，造成%1武器伤害。该效果有%4秒冷却时间</Data></Cell>
+    <Cell ss:StyleID="s25"><Data ss:Type="String">Launch a Meteor at the targeted location when a Fire Skill is used. The Meteor deals %3 Weapon Damage. %4s Cooldown</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">施放火焰技能时会朝指定位置施放一枚陨石，造成%3武器伤害。该效果有%4秒冷却时间</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -5484,8 +5511,8 @@
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s21"><Data ss:Type="String">ui_eim_frost_lance_on_casting_frost_skill</Data></Cell>
-    <Cell ss:StyleID="s25"><Data ss:Type="String">Launch a Frost Lance at the targeted location when a Frost Skill is used. The Frost Lance deals %1 Weapon Damage. %4s Cooldown</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">施放冰霜技能时会朝指定位置发射一根冰矛，造成%1武器伤害。该效果有%4秒冷却时间</Data></Cell>
+    <Cell ss:StyleID="s25"><Data ss:Type="String">Launch a Frost Lance at the targeted location when a Frost Skill is used. The Frost Lance deals %3 Weapon Damage. %4s Cooldown</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">施放冰霜技能时会朝指定位置发射一根冰矛，造成%3武器伤害。该效果有%4秒冷却时间</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -5493,8 +5520,35 @@
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s21"><Data ss:Type="String">ui_eim_thunderstrike_on_casting_lightning_skill</Data></Cell>
-    <Cell ss:StyleID="s25"><Data ss:Type="String">Launch a Chain Lightning at the targeted location when a Lightning Skill is used. The Chain Lightning deals %1 Weapon Damage. %4s Cooldown</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">施放闪电技能时会朝指定位置施放一道连锁闪电，造成%1武器伤害。该效果有%4秒冷却时间</Data></Cell>
+    <Cell ss:StyleID="s25"><Data ss:Type="String">Launch a Chain Lightning at the targeted location when a Lightning Skill is used. The Chain Lightning deals %3 Weapon Damage. %4s Cooldown</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">施放闪电技能时会朝指定位置施放一道连锁闪电，造成%3武器伤害。该效果有%4秒冷却时间</Data></Cell>
+    <Cell ss:StyleID="s18"/>
+    <Cell ss:StyleID="s18"/>
+    <Cell ss:StyleID="s18"/>
+    <Cell ss:StyleID="s18"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s21"><Data ss:Type="String">ui_eim_meteor_on_casting_fire_skill_moon</Data></Cell>
+    <Cell ss:StyleID="s25"><Data ss:Type="String">Omnitempest's Meteor now deals %3 Weapon Damage. %4s Cooldown</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">无死角风暴的陨石改为造成%3武器伤害。%4秒冷却</Data></Cell>
+    <Cell ss:StyleID="s18"/>
+    <Cell ss:StyleID="s18"/>
+    <Cell ss:StyleID="s18"/>
+    <Cell ss:StyleID="s18"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s21"><Data ss:Type="String">ui_eim_frost_lance_on_casting_frost_skill_moon</Data></Cell>
+    <Cell ss:StyleID="s25"><Data ss:Type="String">Omnitempest's Frost Lance now deals %3 Weapon Damage. %4s Cooldown</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">无死角风暴的冰矛改为造成%3武器伤害。%4秒冷却</Data></Cell>
+    <Cell ss:StyleID="s18"/>
+    <Cell ss:StyleID="s18"/>
+    <Cell ss:StyleID="s18"/>
+    <Cell ss:StyleID="s18"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s21"><Data ss:Type="String">ui_eim_thunderstrike_on_casting_lightning_skill_moon</Data></Cell>
+    <Cell ss:StyleID="s25"><Data ss:Type="String">Omnitempest's Chain Lightning now deals %3 Weapon Damage. %4s Cooldown</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">无死角风暴的连锁闪电改为造成%3武器伤害。%4秒冷却</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -5511,8 +5565,8 @@
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s18"><Data ss:Type="String">ui_eim_explosion_on_low_willpower_damage</Data></Cell>
-    <Cell ss:StyleID="s25"><Data ss:Type="String">Damage from the Elementary Destabilization explosion is now based on 30% of your maximum Health or Force Shield (whichever the highest)</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">“元素扰动”造成的低魔爆炸现在造成你最大生命值或最大护盾（两者取最高）30%的伤害</Data></Cell>
+    <Cell ss:StyleID="s25"><Data ss:Type="String">Damage from the Elementary Destabilization explosion is now based on %1 of your maximum Health or Force Shield (whichever the highest)</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">“元素扰动”造成的低魔爆炸现在造成你最大生命值或最大护盾（两者取最高）%1的伤害</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -5592,7 +5646,7 @@
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s21"><Data ss:Type="String">ui_eim_dead_enemies_may_spawn_green_globes</Data></Cell>
-    <Cell ss:StyleID="s25"><Data ss:Type="String">Enemies that die in %1m radius around you have %2 chance to drop green globes. Picking up green globes gives you an additional %3 Damage as Poison Damage per green globe during %4s</Data></Cell>
+    <Cell ss:StyleID="s25"><Data ss:Type="String">Enemies that die in %1m radius around you have %2 chance to drop green globes. Picking up green globes gives you an additional %3 Damage as Toxic Damage per green globe during %4s</Data></Cell>
     <Cell ss:StyleID="s18"><Data ss:Type="String">在你身边%1米内死亡的敌人有%2几率掉落绿球。拾取每个绿球授予你%3额外毒素伤害，持续%4秒</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -5601,7 +5655,7 @@
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s21"><Data ss:Type="String">ui_eim_dead_summons_may_spawn_green_globes</Data></Cell>
-    <Cell ss:StyleID="s25"><Data ss:Type="String">Summons that die in a %1m radius also have %2 chance to drop green globes. Picking up green globes gives you an additional %3 Damage as Poison Damage per green globe during %4s</Data></Cell>
+    <Cell ss:StyleID="s25"><Data ss:Type="String">Summons that die in a %1m radius also have %2 chance to drop green globes. Picking up green globes gives you an additional %3 Damage as Toxic Damage per green globe during %4s</Data></Cell>
     <Cell ss:StyleID="s18"><Data ss:Type="String">在你身边%1米内死亡的召唤物也有%2几率掉落绿球。拾取每个绿球授予你%3额外毒素伤害，持续%4秒</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -5647,7 +5701,7 @@
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s21"><Data ss:Type="String">ui_eim_cursed_enemies_take_additional_occult_damage</Data></Cell>
     <Cell ss:StyleID="s25"><Data ss:Type="String">You deal an additional %1 Occult Damage to Enemies per Curse Stack affecting them</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">敌人身上每有一层诅咒，对其造成的神秘伤害获得%1伤害加成 </Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">敌人身上每有一层诅咒，对其造成的伤害%1神秘伤害修正</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -5666,6 +5720,15 @@
     <Cell ss:StyleID="s21"><Data ss:Type="String">ui_eim_life_ceil_from_force_shield</Data></Cell>
     <Cell ss:StyleID="s25"><Data ss:Type="String">Health cannot exceed %1 of maximum Force Shield</Data></Cell>
     <Cell ss:StyleID="s18"><Data ss:Type="String">最大生命值不能超过最大护盾的%1</Data></Cell>
+    <Cell ss:StyleID="s18"/>
+    <Cell ss:StyleID="s18"/>
+    <Cell ss:StyleID="s18"/>
+    <Cell ss:StyleID="s18"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s21"><Data ss:Type="String">ui_eim_life_ceil_from_force_shield_moon</Data></Cell>
+    <Cell ss:StyleID="s25"><Data ss:Type="String">Adds %1 to the maximum Health allowed by Masochistic Effigy</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">受虐塑像限定的最大生命值增加%1</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -5710,7 +5773,7 @@
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s21"><Data ss:Type="String">ui_eim_damage_on_purged_weakness_stacks</Data></Cell>
     <Cell ss:StyleID="s25"><Data ss:Type="String">Weakness Stacks removed give %1 Increased Damage to you and your Allies in a %2m radius during %3s</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">移除虚弱层数时，你和周围%2米范围内的盟友获得%1额外伤害，持续%3秒。</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">移除虚弱层数时，你和周围%2米范围内的盟友获得%1伤害修正，持续%3秒。</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -5755,7 +5818,7 @@
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s21"><Data ss:Type="String">ui_eim_material_damage_on_elites</Data></Cell>
     <Cell ss:StyleID="s25"><Data ss:Type="String">When a Champion or a Boss is killed, you gain 1 &quot;Headhunter&quot; point that gives %1 Material Damage per point. &quot;Headhunter&quot; points reset after %2s</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">每次击杀一个将级敌人或Boss时，获得1个“猎首”点数，每个“猎首”点数使物质伤害造成%1额外伤害。“猎首”点数会在%2秒后重置。</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">每次击杀一个将级敌人或Boss时，获得1个“猎首”点数，每个“猎首”点数提供%1物质伤害修正。“猎首”点数会在%2秒后重置。</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -5772,8 +5835,8 @@
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s21"><Data ss:Type="String">ui_eim_stack_bullet_uses_mechanic</Data></Cell>
-    <Cell ss:StyleID="s25"><Data ss:Type="String">You gain 1 point of &quot;Annointed Ammunition&quot; every %1s. When you use a Projectile Skill, %2 &quot;Annointed Ammunition&quot; point(s) are consumed</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">让你拥有%2“擦枪”点数，每次使用投射物技能时消耗。每%1秒重新填装一个“擦枪”点数</Data></Cell>
+    <Cell ss:StyleID="s25"><Data ss:Type="String">You gain 1 point of &quot;Anointed Ammunition&quot; every %1s. When you use a Projectile Skill, 1 &quot;Anointed Ammunition&quot; point is consumed</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">让你拥有“擦枪”点数，每次使用投射物技能时消耗一点。每%1秒重新填装一个“擦枪”点数</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -5781,7 +5844,7 @@
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s21"><Data ss:Type="String">ui_eim_stack_bullet_charges_on_dodge_roll</Data></Cell>
-    <Cell ss:StyleID="s25"><Data ss:Type="String">When you complete an Active Dodge, %1 &quot;Annointed Ammunition&quot; point(s) is refilled</Data></Cell>
+    <Cell ss:StyleID="s25"><Data ss:Type="String">When you complete an Active Dodge, %1 &quot;Anointed Ammunition&quot; point(s) is refilled</Data></Cell>
     <Cell ss:StyleID="s18"><Data ss:Type="String">每次完成翻滚时填装%1“擦枪”点数</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -5790,7 +5853,7 @@
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s21"><Data ss:Type="String">ui_eim_stack_bullet_charges_on_critical</Data></Cell>
-    <Cell ss:StyleID="s25"><Data ss:Type="String">When you deal a Critical Hit, %1 &quot;Annointed Ammunition&quot; point(s) is refilled</Data></Cell>
+    <Cell ss:StyleID="s25"><Data ss:Type="String">When you deal a Critical Hit, %1 &quot;Anointed Ammunition&quot; point(s) is refilled</Data></Cell>
     <Cell ss:StyleID="s18"><Data ss:Type="String">每次暴击时填装%1“擦枪”点数</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -5799,8 +5862,8 @@
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s21"><Data ss:Type="String">ui_eim_stack_bullet_proj_damage</Data></Cell>
-    <Cell ss:StyleID="s25"><Data ss:Type="String">Each point of &quot;Annointed Ammunition&quot; gives you %1 Projectile Damage</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">每拥有一个“擦枪”点数%1额外投射物伤害</Data></Cell>
+    <Cell ss:StyleID="s25"><Data ss:Type="String">Each point of &quot;Anointed Ammunition&quot; gives you %1 Projectile Damage</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">每拥有一个“擦枪”点数%1投射物伤害修正</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -5808,8 +5871,8 @@
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s21"><Data ss:Type="String">ui_eim_stack_bullet_melee_damage</Data></Cell>
-    <Cell ss:StyleID="s25"><Data ss:Type="String">Each empty &quot;Annointed Ammunition&quot; point gives you %1 Melee Damage</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">每个未填装的“擦枪”点数%1额外近战伤害</Data></Cell>
+    <Cell ss:StyleID="s25"><Data ss:Type="String">Each empty &quot;Anointed Ammunition&quot; point gives you %1 Melee Damage</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">每个未填装的“擦枪”点数%1近战伤害修正</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -5818,7 +5881,7 @@
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s21"><Data ss:Type="String">ui_eim_remaining_pierce_as_damage</Data></Cell>
     <Cell ss:StyleID="s25"><Data ss:Type="String">Each remaining Pierce on a Projectile increases its Damage by %1</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">投射物的每个剩余穿透数为其提供%1额外伤害</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">投射物的每个剩余穿透数为其提供%1伤害修正</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -5863,7 +5926,7 @@
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s18"><Data ss:Type="String">ui_eim_stacks_hunter_tickrate</Data></Cell>
     <Cell ss:StyleID="s25"><Data ss:Type="String">Change the interval between gaining &quot;Cold Blooded&quot; points by %1s</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">减少“冷血”点数获得间隔%1秒</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">“冷血”点数的获得间隔变为%1秒</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -5872,7 +5935,7 @@
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s21"><Data ss:Type="String">ui_eim_stacks_hunter_damage</Data></Cell>
     <Cell ss:StyleID="s25"><Data ss:Type="String">%1 Damage per &quot;Cold Blooded&quot; point</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">每个“冷血”点数%1额外伤害</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">每个“冷血”点数%1伤害修正</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -5889,7 +5952,7 @@
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s21"><Data ss:Type="String">ui_eim_stack_gadget_uses_mechanic</Data></Cell>
-    <Cell ss:StyleID="s25"><Data ss:Type="String">You generate %2 &quot;Power Charge&quot; per second and Basic Attacks refill %1 &quot;Power Charge&quot;. Device and Lightning Skills consume %4 &quot;Power Charge&quot; points. Capped between -%3 and %3 points</Data></Cell>
+    <Cell ss:StyleID="s25"><Data ss:Type="String">You generate %2 &quot;Power Charge&quot; per second and Basic Attacks refill %1 &quot;Power Charge.&quot; Device and Lightning Skills consume %4 &quot;Power Charge&quot; points. Capped between -%3 and %3 points</Data></Cell>
     <Cell ss:StyleID="s18"><Data ss:Type="String">普攻会填充%1“电荷”点数。每秒生成%2“电荷”点数，装置和闪电技能会消耗%4点“电荷”点数。“电荷”点数的取值范围在 -%3到 +%3之间</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -5908,7 +5971,7 @@
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s21"><Data ss:Type="String">ui_eim_stack_gadget_damage</Data></Cell>
     <Cell ss:StyleID="s25"><Data ss:Type="String">Device and Lightning Skills Damage increased by %1 multiplied by your current points of &quot;Power Charge&quot;</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">装置和闪电技能会获得当前“电荷”点数数值乘以%1的额外伤害</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">装置和闪电技能会获得当前“电荷”点数数值乘以%1的伤害修正</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -5917,7 +5980,7 @@
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s21"><Data ss:Type="String">ui_eim_stack_focus_damage</Data></Cell>
     <Cell ss:StyleID="s25"><Data ss:Type="String">Basic Attacks generate 1 &quot;Overload&quot; point, up to %1 points. Each point increases Damage by %2. Using a Skill consumes all &quot;Overload&quot; points and deals double Damage</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">每个“过载”点数%2额外伤害。普攻会生成1“过载”点数，最多达到%1点。使用任意技能会消耗所有“过载”点数并为这次技能提供两倍“过载”点数的额外伤害</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">每个“过载”点数%2伤害修正。普攻会生成1“过载”点数，最多达到%1点。使用任意技能会消耗所有“过载”点数并为这次技能提供两倍“过载”点数的伤害修正</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -5934,7 +5997,7 @@
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s21"><Data ss:Type="String">ui_eim_stack_balance_uses_mechanic</Data></Cell>
-    <Cell ss:StyleID="s25"><Data ss:Type="String">You have %1 points shared between &quot;Lure of Light&quot; and &quot;Lure of Darkness&quot;. Spells convert a &quot;Lure of Light&quot; point into &quot;Lure of Darkness&quot;. Attack Skills convert a &quot;Lure of Darkness&quot; point into &quot;Lure of Light&quot;</Data></Cell>
+    <Cell ss:StyleID="s25"><Data ss:Type="String">You have %1 points shared between &quot;Lure of Light&quot; and &quot;Lure of Darkness.&quot; Spells convert a &quot;Lure of Light&quot; point into &quot;Lure of Darkness.&quot; Attack Skills convert a &quot;Lure of Darkness&quot; point into &quot;Lure of Light&quot;</Data></Cell>
     <Cell ss:StyleID="s18"><Data ss:Type="String">让你拥有“光明吸引”点数和“黑暗诱惑”点数，合计%1点。施放一次法术会使一个“光明吸引”点数转化为“黑暗诱惑”点数，发动一次攻击则会使一个“黑暗诱惑”点数转化为“光明吸引”点数。当两种点数的比值为4：6或5：5或6：4时，判定为“均衡”。</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -5944,7 +6007,7 @@
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s21"><Data ss:Type="String">ui_eim_stack_balance_mixed_bonus</Data></Cell>
     <Cell ss:StyleID="s25"><Data ss:Type="String">When the points weight 6/4, 5/5, or 4/6, you are in Equilibrium. Your Attacks gain %1 of Spell Damage bonuses and your Spells %1 of Attack Damage bonuses</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">处于“均衡”状态时，施放法术后的所有攻击获得%1额外伤害，发动攻击后的所有法术获得%1额外伤害</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">处于“均衡”状态时，法术获得攻击所享受伤害加成%1的加成，攻击获得法术所享受伤害加成%1的加成</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -5979,8 +6042,8 @@
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s18"><Data ss:Type="String">ui_eim_leave_decoy_on_dodgeroll_explosion</Data></Cell>
-    <Cell ss:StyleID="s25"><Data ss:Type="String">The Decoy left by an Active Dodge explodes when it is destroyed, dealing Damage in a %2m radius</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">翻滚留下的诱饵被摧毁时爆炸，在%2米范围内造成伤害</Data></Cell>
+    <Cell ss:StyleID="s25"><Data ss:Type="String">The Decoy left by an Active Dodge explodes when it expires, dealing Damage in a %2m radius</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">翻滚留下的诱饵会在消散时爆炸，在%2米范围内造成伤害</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -6016,7 +6079,7 @@
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s21"><Data ss:Type="String">ui_eim_damage_from_shield_block_chance</Data></Cell>
     <Cell ss:StyleID="s25"><Data ss:Type="String">Damage increased by %1 multiplied by your equipped Shield Block Chance</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">获得手上盾牌的格挡率乘以%1的额外伤害</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">获得手上盾牌的格挡率乘以%1的伤害加成</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -6040,6 +6103,33 @@
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
    </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s21"><Data ss:Type="String">ui_eim_speed_boost_on_active_dodge</Data></Cell>
+    <Cell ss:StyleID="s25"><Data ss:Type="String">After using the Active Dodge, receive a %1 Movement Speed bonus for %3s</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">使用翻滚之后，获得%1移动速度加成，持续%3秒</Data></Cell>
+    <Cell ss:StyleID="s18"/>
+    <Cell ss:StyleID="s18"/>
+    <Cell ss:StyleID="s18"/>
+    <Cell ss:StyleID="s18"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s21"><Data ss:Type="String">ui_SpeedOnActiveDodge_Title</Data></Cell>
+    <Cell ss:StyleID="s25"><Data ss:Type="String">Evasion Velocity</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">逃逸速度</Data></Cell>
+    <Cell ss:StyleID="s18"/>
+    <Cell ss:StyleID="s18"/>
+    <Cell ss:StyleID="s18"/>
+    <Cell ss:StyleID="s18"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s21"><Data ss:Type="String">ui_SpeedOnActiveDodge_Desc</Data></Cell>
+    <Cell ss:StyleID="s25"><Data ss:Type="String">Movement Speed bonus</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">移动速度加成</Data></Cell>
+    <Cell ss:StyleID="s18"/>
+    <Cell ss:StyleID="s18"/>
+    <Cell ss:StyleID="s18"/>
+    <Cell ss:StyleID="s18"/>
+   </Row>
    <Row ss:AutoFitHeight="0" ss:Height="14.25">
     <Cell ss:StyleID="s17"><Data ss:Type="String">Uniques</Data></Cell>
     <Cell ss:StyleID="s17"/>
@@ -6051,7 +6141,7 @@
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s22"><Data ss:Type="String">ui_eim_freeze_chance_to_crit</Data></Cell>
-    <Cell ss:StyleID="s25"><Data ss:Type="String">If your Hit has Freeze Chance, %1 of its Freeze Chance become Critical Chance. You can't Freeze Enemies anymore</Data></Cell>
+    <Cell ss:StyleID="s25"><Data ss:Type="String">If your Hit has Freeze Chance, %1 of its Freeze Chance becomes Critical Chance. You can't Freeze Enemies anymore</Data></Cell>
     <Cell ss:StyleID="s18"><Data ss:Type="String">若你的打击有几率造成冻结，则冻结几率的%1将被附加到暴击几率。这些打击不再造成冻结。</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -6177,8 +6267,8 @@
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s21"><Data ss:Type="String">ui_eim_explosion_on_target_kill</Data></Cell>
-    <Cell ss:StyleID="s25"><Data ss:Type="String">Enemies explode in an Area of Effect when they are killed and deal %1 Weapon Damage</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">敌人被击杀时会产生爆炸，在一定范围内造成%1武器伤害</Data></Cell>
+    <Cell ss:StyleID="s25"><Data ss:Type="String">Enemies explode in an Area of Effect when they are killed and deal %3 Weapon Damage</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">敌人被击杀时会产生爆炸，在一定范围内造成%3武器伤害</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -6186,8 +6276,8 @@
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s21"><Data ss:Type="String">ui_eim_explosion_on_globe_pickup</Data></Cell>
-    <Cell ss:StyleID="s25"><Data ss:Type="String">Globes explode in an Area of Effect when they are picked up and deal %1 Weapon Damage</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">拾取球体时会制造爆炸，在一定范围内造成%1武器伤害</Data></Cell>
+    <Cell ss:StyleID="s25"><Data ss:Type="String">Globes explode in an Area of Effect when they are picked up and deal %3 Weapon Damage</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">拾取球体时会制造爆炸，在一定范围内造成%3武器伤害</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -6349,7 +6439,7 @@
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s18"><Data ss:Type="String">ui_HuntReward_Currency_Multiplicative</Data></Cell>
     <Cell ss:StyleID="s27"><Data ss:Type="String">Multiply the Hunt Trophies given at the end of the Hunt by %1</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">狩猎结束获得%1倍的狩猎奖牌</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">狩猎结束获得的狩猎奖牌%1</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -6367,7 +6457,7 @@
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s18"><Data ss:Type="String">ui_HuntReward_LC_Weapon_Legendary</Data></Cell>
     <Cell ss:StyleID="s27"><Data ss:Type="String">Your Prey will drop a Legendary Weapon with a Tributary Affix</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">你的猎物将会掉落一件具有附属词条的传奇武器</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">你的猎物将会掉落一件具有亵渎词条的传奇武器</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -6375,8 +6465,8 @@
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s18"><Data ss:Type="String">ui_HuntReward_LC_Armor_Legendary</Data></Cell>
-    <Cell ss:StyleID="s27"><Data ss:Type="String">Your Prey will drop a Legendary Armor with a Tributary Affix</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">你的猎物将会掉落一件具有附属词条的传奇护具</Data></Cell>
+    <Cell ss:StyleID="s27"><Data ss:Type="String">Your Prey will drop a Legendary Armour with a Tributary Affix</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">你的猎物将会掉落一件具有亵渎词条的传奇护具</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -6385,7 +6475,7 @@
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s18"><Data ss:Type="String">ui_HuntReward_LC_Accessory_Legendary</Data></Cell>
     <Cell ss:StyleID="s27"><Data ss:Type="String">Your Prey will drop a Legendary Accessory with a Tributary Affix</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">你的猎物将会掉落一件具有附属词条的传奇配饰</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">你的猎物将会掉落一件具有亵渎词条的传奇配饰</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -6403,7 +6493,7 @@
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s18"><Data ss:Type="String">ui_HuntReward_LC_Weapon_Rare_1</Data></Cell>
     <Cell ss:StyleID="s27"><Data ss:Type="String">Your Prey will drop a Rare Weapon with a Tributary Affix</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">你的猎物将会掉落一件具有附属词条的稀有武器</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">你的猎物将会掉落一件具有亵渎词条的稀有武器</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -6412,7 +6502,7 @@
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s18"><Data ss:Type="String">ui_HuntReward_LC_Weapon_Rare_2</Data></Cell>
     <Cell ss:StyleID="s27"><Data ss:Type="String">Your Prey will drop 2 Rare Weapons with a Tributary Affix</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">你的猎物将会掉落两件具有附属词条的稀有武器</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">你的猎物将会掉落两件具有亵渎词条的稀有武器</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -6421,7 +6511,7 @@
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s18"><Data ss:Type="String">ui_HuntReward_LC_Weapon_Rare_3</Data></Cell>
     <Cell ss:StyleID="s27"><Data ss:Type="String">Your Prey will drop 3 Rare Weapons with a Tributary Affix</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">你的猎物将会掉落三件具有附属词条的稀有武器</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">你的猎物将会掉落三件具有亵渎词条的稀有武器</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -6430,7 +6520,7 @@
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s18"><Data ss:Type="String">ui_HuntReward_LC_Weapon_Rare_4</Data></Cell>
     <Cell ss:StyleID="s27"><Data ss:Type="String">Your Prey will drop 4 Rare Weapons with a Tributary Affix</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">你的猎物将会掉落四件具有附属词条的稀有武器</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">你的猎物将会掉落四件具有亵渎词条的稀有武器</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -6438,8 +6528,8 @@
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s18"><Data ss:Type="String">ui_HuntReward_LC_Armor_Rare_1</Data></Cell>
-    <Cell ss:StyleID="s27"><Data ss:Type="String">Your Prey will drop a Rare Armor with a Tributary Affix</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">你的猎物将会掉落一件具有附属词条的稀有护具</Data></Cell>
+    <Cell ss:StyleID="s27"><Data ss:Type="String">Your Prey will drop a Rare Armour with a Tributary Affix</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">你的猎物将会掉落一件具有亵渎词条的稀有护具</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -6447,8 +6537,8 @@
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s18"><Data ss:Type="String">ui_HuntReward_LC_Armor_Rare_2</Data></Cell>
-    <Cell ss:StyleID="s27"><Data ss:Type="String">Your Prey will drop 2 Rare Armors with a Tributary Affix</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">你的猎物将会掉落两件具有附属词条的稀有护具</Data></Cell>
+    <Cell ss:StyleID="s27"><Data ss:Type="String">Your Prey will drop 2 Rare Armours with a Tributary Affix</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">你的猎物将会掉落两件具有亵渎词条的稀有护具</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -6456,8 +6546,8 @@
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s18"><Data ss:Type="String">ui_HuntReward_LC_Armor_Rare_3</Data></Cell>
-    <Cell ss:StyleID="s27"><Data ss:Type="String">Your Prey will drop 3 Rare Armors with a Tributary Affix</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">你的猎物将会掉落三件具有附属词条的稀有护具</Data></Cell>
+    <Cell ss:StyleID="s27"><Data ss:Type="String">Your Prey will drop 3 Rare Armours with a Tributary Affix</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">你的猎物将会掉落三件具有亵渎词条的稀有护具</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -6465,8 +6555,8 @@
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s18"><Data ss:Type="String">ui_HuntReward_LC_Armor_Rare_4</Data></Cell>
-    <Cell ss:StyleID="s27"><Data ss:Type="String">Your Prey will drop 4 Rare Armors with a Tributary Affix</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">你的猎物将会掉落四件具有附属词条的稀有护具</Data></Cell>
+    <Cell ss:StyleID="s27"><Data ss:Type="String">Your Prey will drop 4 Rare Armours with a Tributary Affix</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">你的猎物将会掉落四件具有亵渎词条的稀有护具</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -6475,7 +6565,7 @@
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s18"><Data ss:Type="String">ui_HuntReward_LC_Accessory_Rare_1</Data></Cell>
     <Cell ss:StyleID="s27"><Data ss:Type="String">Your Prey will drop a Rare Accessory with a Tributary Affix</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">你的猎物将会掉落一件具有附属词条的稀有配饰</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">你的猎物将会掉落一件具有亵渎词条的稀有配饰</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -6484,7 +6574,7 @@
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s18"><Data ss:Type="String">ui_HuntReward_LC_Accessory_Rare_2</Data></Cell>
     <Cell ss:StyleID="s27"><Data ss:Type="String">Your Prey will drop 2 Rare Accessories with a Tributary Affix</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">你的猎物将会掉落两件具有附属词条的稀有配饰</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">你的猎物将会掉落两件具有亵渎词条的稀有配饰</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -6493,7 +6583,7 @@
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s18"><Data ss:Type="String">ui_HuntReward_LC_Accessory_Rare_3</Data></Cell>
     <Cell ss:StyleID="s27"><Data ss:Type="String">Your Prey will drop 3 Rare Accessories with a Tributary Affix</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">你的猎物将会掉落三件具有附属词条的稀有配饰</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">你的猎物将会掉落三件具有亵渎词条的稀有配饰</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -6502,7 +6592,7 @@
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s18"><Data ss:Type="String">ui_HuntReward_LC_Accessory_Rare_4</Data></Cell>
     <Cell ss:StyleID="s27"><Data ss:Type="String">Your Prey will drop 4 Rare Accessories with a Tributary Affix</Data></Cell>
-    <Cell ss:StyleID="s18"><Data ss:Type="String">你的猎物将会掉落四件具有附属词条的稀有配饰</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">你的猎物将会掉落四件具有亵渎词条的稀有配饰</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -6582,7 +6672,7 @@
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:StyleID="s23"><Data ss:Type="String">ui_OsharaBuff_Title</Data></Cell>
-    <Cell ss:StyleID="s27"><Data ss:Type="String">Oshara's Vigor</Data></Cell>
+    <Cell ss:StyleID="s27"><Data ss:Type="String">Oshara's Vigour</Data></Cell>
     <Cell ss:StyleID="s18"><Data ss:Type="String">奥沙拉的活力</Data></Cell>
     <Cell ss:StyleID="s18"/>
     <Cell ss:StyleID="s18"/>
@@ -6615,7 +6705,7 @@
    <Panes>
     <Pane>
      <Number>3</Number>
-     <ActiveRow>718</ActiveRow>
+     <ActiveRow>728</ActiveRow>
      <ActiveCol>6</ActiveCol>
     </Pane>
    </Panes>

@@ -13,6 +13,6 @@
     </Damage_Conversion>
     <SkillSpecific />
     <Stacks Max="2" CostMin="1" CostMax="1" StackEarningWay1="OnTick" StackEarningWayFParam1="4" StackEarningWayAmount1="1" StackEarningWayChance1="100" StackEarningWayCD1="0" StackEarningWayUIDesc1="@ui_AST_Stack_Earning_OnTick" />
-    <SoundTrigger OnAnimStart="Play_Skill_Intro_LightningAttack_Swing" OnHit="Play_Skill_Intro_LightningAttack_Impact" OnCriticalHit="Play_Skill_Intro_LightningAttack_Impact" />
+    <SoundTrigger OnAnimStart="Play_Skill_Intro_LightningAttack_Swing" OnHit="Play_Skill_Intro_LightningAttack_Impact" OnCriticalHit="Play_Skill_Intro_LightningAttack_Impact" OnKill="Play_OnKill_Impact_Lethal_Spell" />
   </Skill>
 </MetaData>

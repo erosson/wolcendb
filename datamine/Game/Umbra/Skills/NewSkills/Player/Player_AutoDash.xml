@@ -12,7 +12,7 @@
     </Shapes>
     <ResourceGain UseDefaultRageGeneration="1" />
     <SkillSpecific DashSpeed="30" TriggerDistance="2" />
-    <SoundTrigger OnCriticalHit="PLAY_Skill_DefaultWeapon_CriticalImpact" OnHit="PLAY_Skill_DefaultWeapon_Impact" OnAnimStart="PLAY_Skill_Dash" OnAnimCast="PLAY_Skill_Dash_Attack" />
+    <SoundTrigger OnCriticalHit="PLAY_Skill_DefaultWeapon_CriticalImpact" OnHit="PLAY_Skill_DefaultWeapon_Impact" OnAnimStart="PLAY_Skill_Dash" OnAnimCast="PLAY_Skill_Dash_Attack" OnKill="Play_OnKill_Impact_Lethal_Melee" />
   </Skill>
   <Skill UID="dash_H1_melee_shield" ESkill="player_autodash" Keywords="attack_skill">
     <VisualFeedback TrailPresetBase="default" FeedbackPresetBase="Player_weapon_1h" />
@@ -31,7 +31,7 @@
     </StatusAilment>
     <ResourceGain UseDefaultRageGeneration="1" />
     <SkillSpecific DashSpeed="30" TriggerDistance="2" />
-    <SoundTrigger OnCriticalHit="PLAY_Skill_DefaultWeapon_CriticalImpact" OnHit="PLAY_Skill_DefaultWeapon_Impact" OnAnimStart="PLAY_Skill_Dash" OnAnimCast="PLAY_Skill_Dash_Attack" />
+    <SoundTrigger OnCriticalHit="PLAY_Skill_DefaultWeapon_CriticalImpact" OnHit="PLAY_Skill_DefaultWeapon_Impact" OnAnimStart="PLAY_Skill_Dash" OnAnimCast="PLAY_Skill_Dash_Attack" OnKill="Play_OnKill_Impact_Lethal_Melee" />
   </Skill>
   <Skill UID="dash_H1_melee_dualdaggers" ESkill="player_autodash" Keywords="attack_skill">
     <VisualFeedback TrailPresetBase="dagger_stab" FeedbackPresetBase="Player_weapon_daggers" />
@@ -47,7 +47,7 @@
     </Shapes>
     <ResourceGain UseDefaultRageGeneration="1" />
     <SkillSpecific DashSpeed="30" TriggerDistance="2" />
-    <SoundTrigger OnCriticalHit="PLAY_Skill_DefaultWeapon_CriticalImpact" OnHit="PLAY_Skill_DefaultWeapon_Impact" OnAnimStart="PLAY_Skill_Dash" OnAnimCast="PLAY_Skill_Dash_Attack" />
+    <SoundTrigger OnCriticalHit="PLAY_Skill_DefaultWeapon_CriticalImpact" OnHit="PLAY_Skill_DefaultWeapon_Impact" OnAnimStart="PLAY_Skill_Dash" OnAnimCast="PLAY_Skill_Dash_Attack" OnKill="Play_OnKill_Impact_Lethal_Melee" />
   </Skill>
   <Skill UID="dash_H1_melee_dualmelee" ESkill="player_autodash" Keywords="attack_skill">
     <VisualFeedback TrailPresetBase="default" FeedbackPresetBase="Player_weapon_1h" />
@@ -63,7 +63,7 @@
     </Shapes>
     <ResourceGain UseDefaultRageGeneration="1" />
     <SkillSpecific DashSpeed="30" TriggerDistance="2" />
-    <SoundTrigger OnCriticalHit="PLAY_Skill_DefaultWeapon_CriticalImpact" OnHit="PLAY_Skill_DefaultWeapon_Impact" OnAnimStart="PLAY_Skill_Dash" OnAnimCast="PLAY_Skill_Dash_Attack" />
+    <SoundTrigger OnCriticalHit="PLAY_Skill_DefaultWeapon_CriticalImpact" OnHit="PLAY_Skill_DefaultWeapon_Impact" OnAnimStart="PLAY_Skill_Dash" OnAnimCast="PLAY_Skill_Dash_Attack" OnKill="Play_OnKill_Impact_Lethal_Melee" />
   </Skill>
   <Skill UID="dash_H2_melee_hammer" ESkill="player_autodash" Keywords="attack_skill">
     <VisualFeedback TrailPresetBase="2hHammer" FeedbackPresetBase="Player_weapon_2h" />
@@ -79,7 +79,7 @@
     </Shapes>
     <ResourceGain UseDefaultRageGeneration="1" />
     <SkillSpecific DashSpeed="30" TriggerDistance="2" />
-    <SoundTrigger OnCriticalHit="PLAY_Skill_DefaultWeapon_CriticalImpact" OnHit="PLAY_Skill_DefaultWeapon_Impact" OnAnimStart="PLAY_Skill_Dash" OnAnimCast="PLAY_Skill_Dash_Attack" />
+    <SoundTrigger OnCriticalHit="PLAY_Skill_DefaultWeapon_CriticalImpact" OnHit="PLAY_Skill_DefaultWeapon_Impact" OnAnimStart="PLAY_Skill_Dash" OnAnimCast="PLAY_Skill_Dash_Attack" OnKill="Play_OnKill_Impact_Lethal_Melee" />
   </Skill>
   <Skill UID="dash_H2_melee_sword" ESkill="player_autodash" Keywords="attack_skill">
     <VisualFeedback TrailPresetBase="2hsword" FeedbackPresetBase="Player_weapon_2h" />
@@ -95,7 +95,7 @@
     </Shapes>
     <ResourceGain UseDefaultRageGeneration="1" />
     <SkillSpecific DashSpeed="30" TriggerDistance="2" />
-    <SoundTrigger OnCriticalHit="PLAY_Skill_DefaultWeapon_CriticalImpact" OnHit="PLAY_Skill_DefaultWeapon_Impact" OnAnimStart="PLAY_Skill_Dash" OnAnimCast="PLAY_Skill_Dash_Attack" />
+    <SoundTrigger OnCriticalHit="PLAY_Skill_DefaultWeapon_CriticalImpact" OnHit="PLAY_Skill_DefaultWeapon_Impact" OnAnimStart="PLAY_Skill_Dash" OnAnimCast="PLAY_Skill_Dash_Attack" OnKill="Play_OnKill_Impact_Lethal_Melee" />
   </Skill>
   <Skill UID="dash_H2_melee_axe" ESkill="player_autodash" Keywords="attack_skill">
     <VisualFeedback TrailPresetBase="2hHammer" FeedbackPresetBase="Player_weapon_2h" />
@@ -111,7 +111,7 @@
     </Shapes>
     <ResourceGain UseDefaultRageGeneration="1" />
     <SkillSpecific DashSpeed="30" TriggerDistance="2" />
-    <SoundTrigger OnCriticalHit="PLAY_Skill_DefaultWeapon_CriticalImpact" OnHit="PLAY_Skill_DefaultWeapon_Impact" OnAnimStart="PLAY_Skill_Dash" OnAnimCast="PLAY_Skill_Dash_Attack" />
+    <SoundTrigger OnCriticalHit="PLAY_Skill_DefaultWeapon_CriticalImpact" OnHit="PLAY_Skill_DefaultWeapon_Impact" OnAnimStart="PLAY_Skill_Dash" OnAnimCast="PLAY_Skill_Dash_Attack" OnKill="Play_OnKill_Impact_Lethal_Melee" />
   </Skill>
   <Skill UID="dash_H1_melee_gunweapon" ESkill="player_autodash" Keywords="attack_skill">
     <VisualFeedback TrailPresetBase="default" FeedbackPresetBase="Player_weapon_1h" />
@@ -127,6 +127,6 @@
     </Shapes>
     <ResourceGain UseDefaultRageGeneration="1" />
     <SkillSpecific DashSpeed="30" TriggerDistance="2" />
-    <SoundTrigger OnCriticalHit="PLAY_Skill_DefaultWeapon_CriticalImpact" OnHit="PLAY_Skill_DefaultWeapon_Impact" OnAnimStart="PLAY_Skill_Dash" OnAnimCast="PLAY_Skill_Dash_Attack" />
+    <SoundTrigger OnCriticalHit="PLAY_Skill_DefaultWeapon_CriticalImpact" OnHit="PLAY_Skill_DefaultWeapon_Impact" OnAnimStart="PLAY_Skill_Dash" OnAnimCast="PLAY_Skill_Dash_Attack" OnKill="Play_OnKill_Impact_Lethal_Melee" />
   </Skill>
 </MetaData>

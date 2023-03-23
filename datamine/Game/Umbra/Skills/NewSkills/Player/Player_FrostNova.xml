@@ -4,15 +4,15 @@
     <VisualFeedback TrailPresetBase="default" FeedbackPresetBase="Player_skill_frostnova" BloodDecalOrientation="forward" />
     <Animation ActionString="player_skill_frostnova" SkipAnimationWhileMoving="1" />
     <Collisions IgnoreEntityCollisions="1" />
-    <Cooldown Cooldown="10" CooldownPerLevel="0" />
-    <ResourceCost ManaCost="-100" ManaCostPerLevel="0" ROSTransfertDuration="1.0" />
+    <Cooldown Cooldown="8" CooldownPerLevel="0" />
+    <ResourceCost ManaCost="-120" ManaCostPerLevel="0" ROSTransfertDuration="1.0" />
     <Explosion ExplosionRadius="3" />
     <CastingParams CanMultiCast="1" />
     <Targeting TargetingType="self" />
     <HUD HUDPicture="../u_resources/spells/Active_Skills/frostnova_Frost.png" UIName="@ui_AST_FrostNova" Lore="@ui_AST_FrostNova_Lore" ActiveEffectTitle="" ActiveEffectDesc="" ASTTreeNumber="2" ShowParamsInAST="DamageWeapon,Cost,ROSTime,Cooldown,DamageDetail,DamageCritical,StatusAilmentsChance,Explosion,SpecificFrostNova" ShowParamsInTooltip="Cost,Cooldown,DamageOverview,StatusAilmentsChance,SpecificFrostNova" />
     <Enneract PickableParticle_MoveToGround="U_CommonVFX_02.Esseract.Esseract_Projectile.Frost" PickableParticle_OnGround_Shape="U_CommonVFX_02.Esseract.Esseract_Shape.Circle_Frost" PickableParticle_OnGround_Damage="U_CommonVFX_02.Esseract.Esseract_Color.Frost" PickableParticle_OnGround_Symbol="U_CommonVFX_02.Esseract.Esseract_Symbol.ETHELIEL" PickableParticle_OnGround_Indicator="U_CommonVFX_02.Esseract.Esseract_Indicator.Frost" PickableParticle_OnGround_Pickup="U_CommonVFX_02.Esseract.Esseract_Loot.Frost" SkillLearningParticle="U_CommonVFX.Skill_Learn.Skill_Learn_Frost" Inventory_HUDPicture="../u_resources/enneracts/frostnova.png" Inventory_LoreDesc="@ui_enneract_lore" />
     <Aggression TargetValueOnHit="40" />
-    <DamageWeapon WeaponMultiplier="2" />
+    <DamageWeapon WeaponMultiplier="3" />
     <Damage_Conversion>
       <Entry From="physical" To="frost" ConversionRate="100" />
     </Damage_Conversion>
@@ -21,7 +21,7 @@
       <Paticle Key="zone" Name="U_VFX_Temp.Temp_Chaguk.IceNova_FrozonArea_Medium" Direction="0,0,1" Delay=".15" />
     </ParticleList>
     <Specific_FrostNova LaunchSound="Play_Skill_FrostNova_Cast" />
-    <SoundTrigger OnAnimStart="Play_Skill_FrostNova_Cast_Pre" OnHit="Play_Skill_FrostNova_Impact1" />
+    <SoundTrigger OnAnimStart="Play_Skill_FrostNova_Cast_Pre" OnHit="Play_Skill_FrostNova_Impact1" OnKill="Play_OnKill_Impact_Lethal_Spell" />
   </Skill>
   <Skill UID="player_frostnova_variant_default_damage_type" ESkill="default_variant">
     <HUD UIName="@ui_AST_FrostNova" Lore="@ui_AST_FrostNova_Lore" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_Alpha.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_Alpha.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_Alpha.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_Alpha.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_Alpha.png" HUDPictureVariant_InnerIcon="../u_resources/spells/Active_Skills/frostnova_Frost.png" VariantBottomPanel="1" />
@@ -30,7 +30,7 @@
     </StatusAilment>
   </Skill>
   <Skill UID="player_frostnova_step_1" ESkill="default_variant">
-    <HUD UIName="@ui_Variant_FrostNova_variant_1" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_003.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_003.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_003.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_003.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_003.png" ShowParamsInTooltip="SpecificFrostNova,Cooldown" />
+    <HUD UIName="@ui_Variant_FrostNova_variant_1" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_003.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_003.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_003.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_003.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_003.png" ShowParamsInTooltip="SpecificFrostNova,Cooldown" Category="Combat" />
     <ParticleList>
       <Particle Key="nova" Name="U_VFX_Temp.Temp_Chaguk.IceNova_Medium" Scale="1.6" Direction="0,0,1" />
       <Particle Key="zone" Name="U_VFX_Temp.Temp_Chaguk.IceNova_FrozonArea_Medium" Scale="1.65" Direction="0,0,1" Delay=".15" />
@@ -40,11 +40,11 @@
     <Specific_FrostNova LaunchSound="" />
   </Skill>
   <Skill UID="player_frostnova_step_2" ESkill="default_variant">
-    <HUD UIName="@ui_Variant_FrostNova_variant_2" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_001.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_001.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_001.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_001.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_001.png" ShowParamsInTooltip="SpecificFrostNova,Cooldown" />
+    <HUD UIName="@ui_Variant_FrostNova_variant_2" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_001.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_001.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_001.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_001.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_001.png" ShowParamsInTooltip="SpecificFrostNova,Cooldown" Category="Utility" />
     <Cooldown Cooldown="-2" CooldownPerLevel="0" />
   </Skill>
   <Skill UID="player_frostnova_step_3" ESkill="default_variant">
-    <HUD UIName="@ui_Variant_FrostNova_variant_3" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_003.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_003.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_003.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_003.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_003.png" ShowParamsInTooltip="SpecificFrostNova,StatusAilmentsChance" />
+    <HUD UIName="@ui_Variant_FrostNova_variant_3" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_003.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_003.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_003.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_003.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_003.png" ShowParamsInTooltip="SpecificFrostNova,StatusAilmentsChance" Category="Utility" />
     <StatusAilment>
       <curse Duration="2.5" DurationMode="addtobase" />
       <freeze Duration="1" DurationMode="addtobase" />
@@ -57,52 +57,52 @@
     </StatusAilment>
   </Skill>
   <Skill UID="player_frostnova_step_4" ESkill="default_variant">
-    <HUD UIName="@ui_Variant_FrostNova_variant_4" Lore="@ui_Variant_FrostNova_variant_4_Lore" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_005.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_005.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_005.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_005.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_005.png" ShowParamsInTooltip="SpecificFrostNova,Range" />
+    <HUD UIName="@ui_Variant_FrostNova_variant_4" Lore="@ui_Variant_FrostNova_variant_4_Lore" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_005.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_005.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_005.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_005.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_005.png" ShowParamsInTooltip="SpecificFrostNova,Range" Category="Mastery" />
     <Targeting TargetingType="cursor" ComputeTargetPosAtCast="false" />
     <Range AttackRange="12" />
   </Skill>
   <Skill UID="player_frostnova_step_6" ESkill="default_variant">
-    <HUD UIName="@ui_Variant_FrostNova_variant_6" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_001.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_001.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_001.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_001.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_001.png" ShowParamsInTooltip="SpecificFrostNova,DamageWeapon" />
+    <HUD UIName="@ui_Variant_FrostNova_variant_6" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_001.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_001.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_001.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_001.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_001.png" ShowParamsInTooltip="SpecificFrostNova,DamageWeapon" Category="Combat" />
     <DamageWeapon WeaponMultiplier="1.15" />
   </Skill>
   <Skill UID="player_frostnova_step_8" ESkill="default_variant">
-    <HUD UIName="@ui_Variant_FrostNova_variant_8" Lore="@ui_Variant_FrostNova_variant_8_Lore" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_005.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_005.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_005.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_005.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_005.png" ShowParamsInTooltip="SpecificFrostNova" />
+    <HUD UIName="@ui_Variant_FrostNova_variant_8" Lore="@ui_Variant_FrostNova_variant_8_Lore" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_005.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_005.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_005.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_005.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_005.png" ShowParamsInTooltip="SpecificFrostNova" Category="Utility" />
     <Specific_FrostNova Buff="AST_FrostNova_DamageBoost" BuffDuration="10" />
   </Skill>
   <Skill UID="player_frostnova_step_9" ESkill="default_variant">
-    <HUD UIName="@ui_Variant_FrostNova_variant_9" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_003.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_003.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_003.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_003.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_003.png" ShowParamsInTooltip="SpecificFrostNova" />
+    <HUD UIName="@ui_Variant_FrostNova_variant_9" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_003.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_003.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_003.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_003.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_003.png" ShowParamsInTooltip="SpecificFrostNova" Category="Mastery" />
     <Specific_FrostNova ChanceToTriggerAgainOnDeath="50" />
   </Skill>
   <Skill UID="player_frostnova_step_10" ESkill="default_variant">
-    <HUD UIName="@ui_Variant_FrostNova_variant_10" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_001.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_001.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_001.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_001.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_001.png" ShowParamsInTooltip="SpecificFrostNova,DamageWeapon" />
+    <HUD UIName="@ui_Variant_FrostNova_variant_10" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_001.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_001.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_001.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_001.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_001.png" ShowParamsInTooltip="SpecificFrostNova,DamageWeapon" Category="Combat" />
     <DamageWeapon WeaponMultiplier="1.15" />
   </Skill>
   <Skill UID="player_frostnova_step_11" ESkill="default_variant">
-    <HUD UIName="@ui_Variant_FrostNova_variant_11" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_001.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_001.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_001.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_001.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_001.png" ShowParamsInTooltip="SpecificFrostNova,DamageCritical" />
+    <HUD UIName="@ui_Variant_FrostNova_variant_11" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_001.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_001.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_001.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_001.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_001.png" ShowParamsInTooltip="SpecificFrostNova,DamageCritical" Category="Combat" />
     <DamageCritical CriticalInflictScoreModifier="40" />
   </Skill>
   <Skill UID="player_frostnova_step_12" ESkill="default_variant">
-    <HUD UIName="@ui_Variant_FrostNova_variant_12" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_001.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_001.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_001.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_001.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_001.png" ShowParamsInTooltip="SpecificFrostNova,DamageCritical" />
+    <HUD UIName="@ui_Variant_FrostNova_variant_12" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_001.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_001.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_001.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_001.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_001.png" ShowParamsInTooltip="SpecificFrostNova,DamageCritical" Category="Combat" />
     <DamageCritical CriticalDamageModifier="25" />
   </Skill>
   <Skill UID="player_frostnova_step_13" ESkill="default_variant">
-    <HUD UIName="@ui_Variant_FrostNova_variant_13" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_001.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_001.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_001.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_001.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_001.png" ShowParamsInTooltip="SpecificFrostNova,StatusAilmentsChance" />
+    <HUD UIName="@ui_Variant_FrostNova_variant_13" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_001.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_001.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_001.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_001.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_001.png" ShowParamsInTooltip="SpecificFrostNova,StatusAilmentsChance" Category="Utility" />
     <StatusAilment AilmentEffectiveness="125" />
   </Skill>
   <Skill UID="player_frostnova_step_14" ESkill="default_variant">
-    <HUD UIName="@ui_Variant_FrostNova_variant_14" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_001.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_001.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_001.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_001.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_001.png" ShowParamsInTooltip="SpecificFrostNova,StatusAilmentsChance" />
+    <HUD UIName="@ui_Variant_FrostNova_variant_14" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_001.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_001.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_001.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_001.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_001.png" ShowParamsInTooltip="SpecificFrostNova,StatusAilmentsChance" Category="Combat" />
     <StatusAilment AllAilmentsInflictDamageIncreasePercent="40" />
   </Skill>
   <Skill UID="player_frostnova_step_15" ESkill="default_variant">
-    <HUD UIName="@ui_Variant_FrostNova_variant_15" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_003.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_003.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_003.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_003.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_003.png" ShowParamsInTooltip="SpecificFrostNova,Cooldown" />
+    <HUD UIName="@ui_Variant_FrostNova_variant_15" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_003.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_003.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_003.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_003.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_003.png" ShowParamsInTooltip="SpecificFrostNova,Cooldown" Category="Utility" />
     <Cooldown Cooldown="-2" CooldownPerLevel="0" />
   </Skill>
   <Skill UID="player_frostnova_step_16" ESkill="default_variant">
-    <HUD UIName="@ui_Variant_FrostNova_variant_16" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_003.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_003.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_003.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_003.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_003.png" ShowParamsInTooltip="SpecificFrostNova,DamageWeapon" />
+    <HUD UIName="@ui_Variant_FrostNova_variant_16" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_003.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_003.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_003.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_003.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_003.png" ShowParamsInTooltip="SpecificFrostNova,DamageWeapon" Category="Combat" />
     <DamageWeapon WeaponMultiplier="1.3" />
   </Skill>
   <Skill UID="player_frostnova_step_7" ESkill="default_variant">
-    <HUD UIName="@ui_Variant_FrostNova_variant_7" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_003.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_003.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_003.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_003.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_003.png" ShowParamsInTooltip="SpecificFrostNova" />
+    <HUD UIName="@ui_Variant_FrostNova_variant_7" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_003.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_003.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_003.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_003.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_003.png" ShowParamsInTooltip="SpecificFrostNova" Category="Mastery" />
     <Specific_FrostNova LeaveDamageZone="1" />
     <SecondarySkillToCast>
       <Entry Key="Default" UID="frostnova_zone" />
@@ -116,7 +116,7 @@
       <Entry From="physical" To="frost" ConversionRate="-100" />
       <Entry From="physical" To="shadow" ConversionRate="100" />
     </Damage_Conversion>
-    <DamageWeapon WeaponMultiplier="1.25" />
+    <DamageWeapon WeaponMultiplier="1" />
     <ParticleList>
       <Particle Key="nova" Name="U_VFX_Temp.Temp_Chaguk.IceNova_Medium_Shadow" Direction="0,0,1" />
       <Paticle Key="zone" Name="U_VFX_Temp.Temp_Chaguk.IceNova_FrozonArea_Medium_Shadow" Direction="0,0,1" Delay=".15" />
@@ -138,7 +138,7 @@
       <Particle Key="nova" Name="U_VFX_Temp.Temp_Chaguk.IceNova_Medium_Poison" Direction="0,0,1" />
       <Paticle Key="zone" Name="U_VFX_Temp.Temp_Chaguk.IceNova_FrozonArea_Medium_Poison" Direction="0,0,1" Delay=".15" />
     </ParticleList>
-    <DamageWeapon WeaponMultiplier="1.25" />
+    <DamageWeapon WeaponMultiplier="1" />
     <StatusAilment>
       <poison Chance="100" ChanceMode="override" />
     </StatusAilment>
@@ -152,7 +152,7 @@
       <Entry From="physical" To="frost" ConversionRate="-100" />
       <Entry From="physical" To="fire" ConversionRate="100" />
     </Damage_Conversion>
-    <DamageWeapon WeaponMultiplier="1.25" />
+    <DamageWeapon WeaponMultiplier="1" />
     <ParticleList>
       <Particle Key="nova" Name="U_VFX_Temp.Temp_Chaguk.IceNova_Medium_Fire" Direction="0,0,1" />
       <Paticle Key="zone" Name="U_VFX_Temp.Temp_Chaguk.IceNova_FrozonArea_Medium_Fire" Direction="0,0,1" Delay=".15" />
@@ -163,7 +163,7 @@
     <SoundTrigger OnAnimStart="Play_Skill_FrostNova_Cast_Pre_Fire" OnHit="Play_Skill_FrostNova_Impact_Fire" />
   </Skill>
   <Skill UID="Player_FrostNova_step_19" ESkill="default_variant">
-    <HUD UIName="@ui_variant_Player_FrostNova_step_19" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_003.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_003.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_003.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_003.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_003.png" ShowParamsInTooltip="DamageWeapon" />
+    <HUD UIName="@ui_variant_Player_FrostNova_step_19" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_001.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_001.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_001.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_001.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_001.png" ShowParamsInTooltip="DamageWeapon" Category="Combat" />
     <DamageWeapon WeaponMultiplier="1.15" />
   </Skill>
   <Skill UID="player_frostnova_step_5,player_frostnova_step_1" ESkill="default_variant_combo">

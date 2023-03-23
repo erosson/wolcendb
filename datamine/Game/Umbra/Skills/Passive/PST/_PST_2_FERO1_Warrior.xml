@@ -45,7 +45,7 @@
   <Spell Name="WARR_5" UIName="@ui_WARR_5_name" HUDLoreDesc="@ui_WARR_5_lore" GameplayDesc="@ui_WARR_5_desc">
     <MagicEffects>
       <EIM Name="damage_percent_major_material" HUDDesc="@ui_eim_damage_percent_major_material" Permanent="1">
-        <Semantics MajorDamageMultiplier="1.1" />
+        <Semantics MajorDamageMultiplier="1.2" />
       </EIM>
       <EIM Name="material_damage_only" HUDDesc="@ui_eim_material_damage_only" Permanent="1">
         <Semantics PossibilityInt="1" />
@@ -65,7 +65,7 @@
   <Spell Name="WARR_7" UIName="@ui_WARR_7_name" HUDLoreDesc="@ui_WARR_7_lore" GameplayDesc="@ui_WARR_7_desc">
     <MagicEffects>
       <EIM Name="damage_percent_per_enemy_in_range" HUDDesc="@ui_eim_damage_percent_per_enemy_in_range" Permanent="1">
-        <Semantics DamagePercentFloat_Max="25" DamagePercentFloat="2" RadiusFloat="4" />
+        <Semantics DamagePercentFloat_Max="30" DamagePercentFloat="3" RadiusFloat="4" />
       </EIM>
     </MagicEffects>
   </Spell>
@@ -137,7 +137,7 @@
   <Spell Name="WARR_16" UIName="@ui_WARR_16_name" HUDLoreDesc="@ui_WARR_16_lore" GameplayDesc="@ui_WARR_16_desc">
     <MagicEffects>
       <EIM Name="life_leech_percent_global" HUDDesc="@ui_eim_life_leech_percent_global" Permanent="1">
-        <Semantics DamagePercentFloat="0.5" />
+        <Semantics DamagePercentFloat="0.03" />
       </EIM>
     </MagicEffects>
   </Spell>
@@ -223,22 +223,31 @@
   </Spell>
   <Spell Name="WARR_28" UIName="@ui_WARR_28_name" HUDLoreDesc="" GameplayDesc="">
     <MagicEffects>
-      <EIM Name="life_leech_percent_against_bleeding" HUDDesc="@ui_eim_life_leech_percent_against_bleeding" Permanent="1">
-        <Semantics DamagePercentFloat="0.3" />
+      <EIM Name="damage_percent_twohanded" HUDDesc="@ui_eim_damage_percent_twohanded" Permanent="1">
+        <Semantics DamagePercentInt="8" />
       </EIM>
     </MagicEffects>
   </Spell>
   <Spell Name="WARR_29" UIName="@ui_WARR_29_name" HUDLoreDesc="" GameplayDesc="">
     <MagicEffects>
-      <EIM Name="bleedchance_on_rend_damage_score_percent" HUDDesc="@ui_eim_bleedchance_on_rend_damage_score_percent" Permanent="1">
-        <Semantics CharacteristicScorePercentInt="12" />
+      <EIM Name="damage_percent_twohanded" HUDDesc="@ui_eim_damage_percent_twohanded" Permanent="1">
+        <Semantics DamagePercentInt="8" />
       </EIM>
     </MagicEffects>
   </Spell>
   <Spell Name="WARR_30" UIName="@ui_WARR_30_name" HUDLoreDesc="@ui_WARR_30_lore" GameplayDesc="@ui_WARR_30_desc">
     <MagicEffects>
-      <EIM Name="convert_physical_to_rend" HUDDesc="@ui_eim_convert_physical_to_rend" Permanent="1">
-        <Semantics DamagePercentFloat="50" />
+      <EIM Name="critical_damage_greatsword_low_attack_speed" HUDDesc="@ui_eim_critical_damage_greatsword_low_attack_speed" Permanent="1">
+        <Semantics CharacteristicFinalPercentFloat="110" DamagePercentFloat="50" />
+      </EIM>
+      <EIM Name="damage_greataxe_low_attack_speed" HUDDesc="@ui_eim_damage_greataxe_low_attack_speed" Permanent="1">
+        <Semantics CharacteristicFinalPercentFloat="110" DamagePercentFloat="50" />
+      </EIM>
+      <EIM Name="dotdamage_warhammer_low_attack_speed" HUDDesc="@ui_eim_dotdamage_warhammer_low_attack_speed" Permanent="1">
+        <Semantics CharacteristicFinalPercentFloat="110" DamagePercentFloat="75" />
+      </EIM>
+      <EIM Name="projectile_bow_low_attack_speed" HUDDesc="@ui_eim_projectile_bow_low_attack_speed" Permanent="1">
+        <Semantics CharacteristicFinalPercentFloat="110" DamagePercentFloat="-10" ProjectileCountInt="1" />
       </EIM>
     </MagicEffects>
   </Spell>

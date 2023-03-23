@@ -1,19 +1,19 @@
 <MetaData>
   <Skill ESkill="player_owlshot" Keywords="projectile,attack_skill,additional_projectile,gadget" UID="player_owlshot">
     <WeaponRequirements Requirements="rogue,frost" />
-    <SecondarySkillTrigger TriggerSlotId="1" />
-    <CastingParams CastBone="L_Weapon_Bone" MaximumTurnRate="180" />
-    <Animation ActionString="player_skill_falcon_windup" ActionString_FollowUp="player_skill_falcon_followup" ScaleWithAttackSpeed="1" AnimationDrivenMovement="1" />
+    <CastingParams CastBone="L_Weapon_Bone" MaximumTurnRate="180" CancellableByDefault="1" MaintainedCast="1" KeepAliveAfterReleasing="0" />
+    <Animation AnimationDrivenMovement="1" ActionString_In="player_skill_falconCharge_In" ActionString_Loop="player_skill_falcon_windup" ActionString_Out="player_skill_falconCharge_Out" ScaleWithSpellCastingSpeed="1" />
     <HUD HUDPicture="../u_resources/spells/Active_Skills/owlshot_Frost.png" UIName="@ui_AST_OwlShot" Lore="@ui_AST_OwlShot_Lore" ActiveEffectTitle="" ActiveEffectDesc="" ASTTreeNumber="1" ShowParamsInAST="Cost,ROSTime,Cooldown,Range,Projectiles,DamageWeapon,DamageDetail,StatusAilmentsChance,Explosion,Slow" ShowParamsInTooltip="Cost,Cooldown,DamageOverview,StatusAilmentsChance,Slow" />
     <Enneract PickableParticle_MoveToGround="U_CommonVFX_02.Esseract.Esseract_Projectile.Frost" PickableParticle_OnGround_Shape="U_CommonVFX_02.Esseract.Esseract_Shape.Circle_Frost" PickableParticle_OnGround_Damage="U_CommonVFX_02.Esseract.Esseract_Color.Frost" PickableParticle_OnGround_Symbol="U_CommonVFX_02.Esseract.Esseract_Symbol.ETHELIEL" PickableParticle_OnGround_Indicator="U_CommonVFX_02.Esseract.Esseract_Indicator.Frost" PickableParticle_OnGround_Pickup="U_CommonVFX_02.Esseract.Esseract_Loot.Frost" SkillLearningParticle="U_CommonVFX.Skill_Learn.Skill_Learn_Frost" Inventory_HUDPicture="../u_resources/enneracts/icefalcon.png" Inventory_LoreDesc="@ui_enneract_lore" />
-    <Range AttackRange="40" />
+    <Recast Cooldown="0.5" RageCost="-10" />
+    <Range AttackRange="14" />
     <Aggression TargetValueOnHit="60" />
-    <DamageWeapon WeaponMultiplier="1.5" />
+    <DamageWeapon WeaponMultiplier="3" />
     <Damage_Conversion>
       <Entry From="physical" To="frost" ConversionRate="100" />
     </Damage_Conversion>
     <Cooldown Cooldown="0" CooldownPerLevel="0" />
-    <ResourceCost RageCost="-110" RageCostPerLevel="0" ROSTransfertDuration="0.8" />
+    <ResourceCost RageCost="-80" RageCostPerLevel="0" ROSTransfertDuration="0.8" />
     <Projectile Name="player_owlshot_proj" ProjectileCount="1" PenetrationLimit="1" AngleBetweenProjectiles="20">
       <AutomaticCastAngle distanceMin="7" distanceMax="9" totalAngleAtDistanceMin="120" totalAngleAtDistanceMax="120" projectileAngleAtDistanceMin="50" projectileAngleAtDistanceMax="20" />
     </Projectile>
@@ -40,23 +40,26 @@
       <Particle Key="PullExplosionVFX" Name="U_Skill_OwlShot.Owlshot_Frost.Owlshot_Frost_AoE_Pull_01" Direction="0,1,0" Scale="0.9" />
       <Particle Key="StickyPermanent" Name="U_Skill_OwlShot.Owlshot_Frost.Owlshot_Frost_Sticky_01" Direction="0,1,0" Bone="Bip01 Spine3" />
     </ParticleList>
-    <VisualFeedback TrailPresetBase="default" FeedbackPresetBase="Player_skill_bomb" BloodDecalOrientation="forward" />
-    <SoundTrigger OnAnimStart="Play_Skill_OwlShot_Summon" OnAnimCast="Play_Skill_Owlshot_Cast_Lightning" OnHit="" PlayAttackVoice="0" />
-    <Specific_OwlShot BaseProjectileExplosionTimerBase="2" BaseExplosionDamageMultiplier="1.5" DecoyCharacterFilepath="Objects/Animated_Object/Skill/Animated/Skill_Falcon/skill_Falcon_Frost.cdf" DecoyAnim="Skill_Falcon_Atk_01" DecoyScale="1" SecondaryTriggerIconPath="../u_resources/spells/Active_Skills/owlburst_Frost.png" />
+    <VisualFeedback TrailPresetBase="default" FeedbackPresetBase="Player_skill_OwlShot" BloodDecalOrientation="forward" />
+    <SoundTrigger OnAnimStart="Play_Skill_OwlShot_Summon" OnAnimCast="Play_Skill_Owlshot_Cast_Lightning" OnHit="" OnKill="Play_OnKill_Impact_Lethal_Spell" PlayAttackVoice="0" />
+    <Specific_OwlShot BaseProjectileExplosionTimerBase="0.15" BaseExplosionDamageMultiplier="1" DecoyCharacterFilepath="Objects/Animated_Object/Skill/Animated/Skill_Falcon/skill_Falcon_Frost.cdf" DecoyAnim="Skill_Falcon_Atk_01" DecoyScale="1" SecondaryTriggerIconPath="../u_resources/spells/Active_Skills/owlburst_Frost.png" ExplosionAnimation="player_skill_falcon_followup" />
   </Skill>
   <Skill UID="player_owlshot_variant_default_damage_type" ESkill="default_variant">
     <HUD UIName="@ui_AST_OwlShot" Lore="@ui_AST_OwlShot_Lore" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_Alpha.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_Alpha.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_Alpha.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_Alpha.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_Alpha.png" HUDPictureVariant_InnerIcon="../u_resources/spells/Active_Skills/owlshot_Frost.png" VariantBottomPanel="1" />
   </Skill>
   <Skill UID="player_owlshot_variant_1" ESkill="default_variant">
-    <HUD UIName="@ui_Variant_OwlShot_variant_1" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_003.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_003.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_003.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_003.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_003.png" ShowParamsInTooltip="DamageWeapon,Projectiles" />
-    <Specific_OwlShot MultipleTriggerBonusDamage="1" DamagePerSimultaneousProjectileBonusPercent="20" SimultaneousProjectilesNumberCeilForDamageBonus="5" />
+    <HUD UIName="@ui_Variant_OwlShot_variant_1" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_003.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_003.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_003.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_003.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_003.png" ShowParamsInTooltip="DamageWeapon,Projectiles" Category="Mastery" />
+    <Specific_OwlShot MultipleTriggerBonusDamage="1" DamagePerSimultaneousProjectileBonusPercent="25" SimultaneousProjectilesNumberCeilForDamageBonus="5" />
   </Skill>
   <Skill UID="player_owlshot_variant_2" ESkill="default_variant">
-    <HUD UIName="@ui_Variant_OwlShot_variant_2" Lore="@ui_Variant_OwlShot_variant_2_Lore" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_005.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_005.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_005.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_005.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_005.png" ShowParamsInTooltip="DamageWeapon,Projectiles" />
-    <Specific_OwlShot StickyProjectiles="1" MaxStickyProjectilesOnTarget="5" StickyProjectilesExplosionTimerBase="5" StickyDamageMultiplier="1.5" />
+    <HUD UIName="@ui_Variant_OwlShot_variant_2" Lore="@ui_Variant_OwlShot_variant_2_Lore" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_005.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_005.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_005.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_005.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_005.png" ShowParamsInTooltip="DamageWeapon,Projectiles" Category="Mastery" />
+    <Specific_OwlShot StickyProjectiles="1" MaxStickyProjectilesOnTarget="5" StickyProjectilesExplosionTimerBase="5" StickyDamageMultiplier="2" />
   </Skill>
   <Skill UID="player_owlshot_variant_3" ESkill="default_variant">
-    <HUD UIName="@ui_Variant_OwlShot_variant_3" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_003.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_003.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_003.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_003.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_003.png" ShowParamsInTooltip="DamageWeapon,Projectiles" />
+    <HUD UIName="@ui_Variant_OwlShot_variant_3" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_003.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_003.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_003.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_003.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_003.png" ShowParamsInTooltip="DamageWeapon,Projectiles" Category="Mastery" />
+    <CastingParams RemoveMaintainedCast="1" />
+    <ResourceCost RageCost="-120" RageCostPerLevel="0" ROSTransfertDuration="1.0" />
+    <Recast RageCost="70" />
     <StringList>
       <String Key="ChargedSkillLoopOut" String="player_skill_falconCharge_Out" />
     </StringList>
@@ -69,7 +72,7 @@
     </ChargedSkill>
   </Skill>
   <Skill UID="player_owlshot_variant_4" ESkill="default_variant">
-    <HUD UIName="@ui_Variant_OwlShot_variant_4" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_005.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_005.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_005.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_005.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_005.png" />
+    <HUD UIName="@ui_Variant_OwlShot_variant_4" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_001.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_001.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_001.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_001.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_001.png" Category="Mastery" />
     <StringList>
       <String Key="BaseShapeKey" String="ExplosionCone" />
       <String Key="PullShapeKey" String="PullCone" />
@@ -81,13 +84,13 @@
     </ParticleList>
   </Skill>
   <Skill UID="player_owlshot_variant_5" ESkill="default_variant">
-    <HUD UIName="@ui_Variant_OwlShot_variant_5" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_003.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_003.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_003.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_003.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_003.png" ShowParamsInTooltip="DamageWeapon,Projectiles" />
+    <HUD UIName="@ui_Variant_OwlShot_variant_5" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_003.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_003.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_003.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_003.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_003.png" ShowParamsInTooltip="DamageWeapon,Projectiles" Category="Combat" />
     <Projectile SpeedScale="0.75" />
     <DamageWeapon WeaponMultiplier="1.25" />
   </Skill>
   <Skill UID="player_owlshot_variant_6" ESkill="default_variant">
-    <HUD UIName="@ui_Variant_OwlShot_variant_6" Lore="@ui_Variant_OwlShot_variant_6_Lore" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_005.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_005.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_005.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_005.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_005.png" ShowParamsInTooltip="DamageWeapon,Projectiles" />
-    <Specific_OwlShot PullHostiles="1" PullToExplosionTimerBase="0.4" PullDamageMultiplier="1" />
+    <HUD UIName="@ui_Variant_OwlShot_variant_6" Lore="@ui_Variant_OwlShot_variant_6_Lore" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_005.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_005.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_005.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_005.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_005.png" ShowParamsInTooltip="DamageWeapon,Projectiles" Category="Mastery" />
+    <Specific_OwlShot PullHostiles="1" PullToExplosionTimerBase="0.4" PullDamageMultiplier="1.2" />
     <Blownaway Chance="0" Height="0.5" Distance="2" StunDuration="0" />
   </Skill>
   <Skill UID="player_owlshot_variant_7" ESkill="default_variant">
@@ -97,7 +100,6 @@
       <Entry From="physical" To="frost" ConversionRate="-100" />
     </Damage_Conversion>
     <WeaponRequirements Requirements="rogue,physical" />
-    <DamageWeapon WeaponMultiplier="1.25" />
     <Projectile Name="player_owlshot_proj_physical" />
     <ParticleList>
       <Particle Key="BaseExplosionVFX" Name="U_Skill_OwlShot.Owlshot_Physical.Owlshot_Physical_AoE_01" Direction="0,1,0" Scale="1.1" />
@@ -120,7 +122,6 @@
       <Entry From="physical" To="lightning" ConversionRate="100" />
     </Damage_Conversion>
     <WeaponRequirements Requirements="rogue,lightning" />
-    <DamageWeapon WeaponMultiplier="1.25" />
     <Projectile Name="player_owlshot_proj_lightning" />
     <ParticleList>
       <Particle Key="BaseExplosionVFX" Name="U_Skill_OwlShot.Owlshot_Lightning.Owlshot_Lightning_AoE_01" Direction="0,1,0" Scale="1.1" />
@@ -143,7 +144,6 @@
       <Entry From="physical" To="shadow" ConversionRate="100" />
     </Damage_Conversion>
     <WeaponRequirements Requirements="rogue,shadow" />
-    <DamageWeapon WeaponMultiplier="1.25" />
     <Projectile Name="player_owlshot_proj_shadow" />
     <ParticleList>
       <Particle Key="BaseExplosionVFX" Name="U_Skill_OwlShot.Owlshot_Shadow.Owlshot_Shadow_AoE_01" Direction="0,1,0" Scale="1.1" />
@@ -159,23 +159,23 @@
     <SoundTrigger OnAnimCast="Play_Skill_Owlshot_Cast_Shadow" />
   </Skill>
   <Skill UID="player_owlshot_variant_10" ESkill="default_variant">
-    <HUD UIName="@ui_Variant_OwlShot_variant_10" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_001.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_001.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_001.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_001.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_001.png" ShowParamsInTooltip="DamageWeapon" />
+    <HUD UIName="@ui_Variant_OwlShot_variant_10" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_001.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_001.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_001.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_001.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_001.png" ShowParamsInTooltip="DamageWeapon" Category="Combat" />
     <DamageWeapon WeaponMultiplier="1.15" />
   </Skill>
   <Skill UID="player_owlshot_variant_11" ESkill="default_variant">
-    <HUD UIName="@ui_Variant_OwlShot_variant_11" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_001.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_001.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_001.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_001.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_001.png" ShowParamsInTooltip="DamageWeapon" />
+    <HUD UIName="@ui_Variant_OwlShot_variant_11" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_001.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_001.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_001.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_001.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_001.png" ShowParamsInTooltip="DamageWeapon" Category="Combat" />
     <DamageWeapon WeaponMultiplier="1.15" />
   </Skill>
   <Skill UID="player_owlshot_variant_12" ESkill="default_variant">
-    <HUD UIName="@ui_Variant_OwlShot_variant_12" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_001.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_001.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_001.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_001.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_001.png" ShowParamsInTooltip="DamageWeapon" />
+    <HUD UIName="@ui_Variant_OwlShot_variant_12" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_001.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_001.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_001.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_001.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_001.png" ShowParamsInTooltip="DamageWeapon" Category="Combat" />
     <DamageWeapon WeaponMultiplier="1.15" />
   </Skill>
   <Skill UID="player_owlshot_variant_13" ESkill="default_variant">
-    <HUD UIName="@ui_Variant_OwlShot_variant_13" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_001.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_001.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_001.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_001.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_001.png" ShowParamsInTooltip="Cost,Cooldown" />
+    <HUD UIName="@ui_Variant_OwlShot_variant_13" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_001.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_001.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_001.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_001.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_001.png" ShowParamsInTooltip="Cost,Cooldown" Category="Utility" />
     <ResourceCost RageCost="25" />
   </Skill>
   <Skill UID="player_owlshot_variant_14" ESkill="default_variant">
-    <HUD UIName="@ui_Variant_OwlShot_variant_14" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_003.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_003.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_003.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_003.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_003.png" />
+    <HUD UIName="@ui_Variant_OwlShot_variant_14" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_003.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_003.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_003.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_003.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_003.png" Category="Combat" />
     <StringList>
       <String Key="BaseShapeKey" String="ExplosionCone_Big" />
       <String Key="PullShapeKey" String="PullCone_Big" />
@@ -187,24 +187,24 @@
     </ParticleList>
   </Skill>
   <Skill UID="player_owlshot_variant_15" ESkill="default_variant">
-    <HUD UIName="@ui_Variant_OwlShot_variant_15" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_003.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_003.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_003.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_003.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_003.png" ShowParamsInTooltip="Projectiles,DamageWeapon" />
+    <HUD UIName="@ui_Variant_OwlShot_variant_15" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_003.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_003.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_003.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_003.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_003.png" ShowParamsInTooltip="Projectiles,DamageWeapon" Category="Utility" />
     <Projectile ProjectileCount="1" />
     <DamageWeapon WeaponMultiplier="0.85" />
   </Skill>
   <Skill UID="player_owlshot_variant_16" ESkill="default_variant">
-    <HUD UIName="@ui_Variant_OwlShot_variant_16" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_001.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_001.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_001.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_001.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_001.png" />
+    <HUD UIName="@ui_Variant_OwlShot_variant_16" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_001.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_001.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_001.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_001.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_001.png" Category="Utility" />
     <StatusAilment AilmentEffectiveness="125" />
   </Skill>
   <Skill UID="player_owlshot_variant_17" ESkill="default_variant">
-    <HUD UIName="@ui_Variant_OwlShot_variant_17" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_001.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_001.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_001.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_001.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_001.png" ShowParamsInTooltip="StatusAilmentsChance" />
+    <HUD UIName="@ui_Variant_OwlShot_variant_17" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_001.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_001.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_001.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_001.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_001.png" ShowParamsInTooltip="StatusAilmentsChance" Category="Combat" />
     <StatusAilment AllAilmentsInflictDamageIncreasePercent="40" />
   </Skill>
   <Skill UID="player_owlshot_variant_18" ESkill="default_variant">
-    <HUD UIName="@ui_Variant_OwlShot_variant_18" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_001.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_001.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_001.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_001.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_001.png" ShowParamsInTooltip="DamageCritical" />
+    <HUD UIName="@ui_Variant_OwlShot_variant_18" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_001.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_001.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_001.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_001.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_001.png" ShowParamsInTooltip="DamageCritical" Category="Combat" />
     <DamageCritical CriticalInflictScoreModifier="40" />
   </Skill>
   <Skill UID="player_owlshot_variant_19" ESkill="default_variant">
-    <HUD UIName="@ui_Variant_OwlShot_variant_19" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_001.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_001.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_001.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_001.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_001.png" ShowParamsInTooltip="DamageCritical" />
+    <HUD UIName="@ui_Variant_OwlShot_variant_19" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_001.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_001.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_001.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_001.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_001.png" ShowParamsInTooltip="DamageCritical" Category="Combat" />
     <DamageCritical CriticalDamageModifier="25" />
   </Skill>
   <Skill UID="player_owlshot_variant_7,player_owlshot_variant_4" ESkill="default_variant_combo">

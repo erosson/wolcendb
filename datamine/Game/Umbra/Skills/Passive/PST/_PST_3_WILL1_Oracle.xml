@@ -161,13 +161,13 @@
   </Spell>
   <Spell Name="ORAC_20" UIName="@ui_ORAC_20_name" HUDLoreDesc="" GameplayDesc="">
     <MagicEffects>
-      <EIM Name="meteor_on_casting_fire_skill" HUDDesc="@ui_eim_meteor_on_casting_fire_skill" Permanent="1">
+      <EIM Name="meteor_on_casting_fire_skill" HUDDesc="@ui_eim_meteor_on_casting_fire_skill_moon" Permanent="1">
         <Semantics TriggeredSkillSelector="1" />
       </EIM>
-      <EIM Name="frost_lance_on_casting_frost_skill" HUDDesc="@ui_eim_frost_lance_on_casting_frost_skill" Permanent="1">
+      <EIM Name="frost_lance_on_casting_frost_skill" HUDDesc="@ui_eim_frost_lance_on_casting_frost_skill_moon" Permanent="1">
         <Semantics TriggeredSkillSelector="1" />
       </EIM>
-      <EIM Name="thunderstrike_on_casting_lightning_skill" HUDDesc="@ui_eim_thunderstrike_on_casting_lightning_skill" Permanent="1">
+      <EIM Name="thunderstrike_on_casting_lightning_skill" HUDDesc="@ui_eim_thunderstrike_on_casting_lightning_skill_moon" Permanent="1">
         <Semantics TriggeredSkillSelector="1" />
       </EIM>
     </MagicEffects>

@@ -50,7 +50,7 @@
   <Spell Name="DIST_7" UIName="@ui_DIST_7_name" HUDLoreDesc="@ui_DIST_7_lore" GameplayDesc="@ui_DIST_7_desc">
     <MagicEffects>
       <EIM Name="damage_percent_impaired" HUDDesc="@ui_eim_damage_percent_impaired" Permanent="1">
-        <Semantics DamagePercentFloat="10" />
+        <Semantics DamagePercentFloat="20" />
       </EIM>
     </MagicEffects>
   </Spell>
@@ -128,7 +128,7 @@
         <Semantics ProjectileCountInt="1" />
       </EIM>
       <EIM Name="damage_percent_major_projectiles" HUDDesc="@ui_eim_damage_percent_major_projectiles" Permanent="1">
-        <Semantics MajorDamageMultiplier="0.8" />
+        <Semantics MajorDamageMultiplier="0.7" />
       </EIM>
     </MagicEffects>
   </Spell>
@@ -229,7 +229,7 @@
   <Spell Name="DIST_30" UIName="@ui_DIST_30_name" HUDLoreDesc="@ui_DIST_30_lore" GameplayDesc="@ui_DIST_30_desc">
     <MagicEffects>
       <EIM Name="projectiles_damage_asdistance" HUDDesc="@ui_eim_projectiles_damage_asdistance" Permanent="1">
-        <Semantics DamagePercentFloat="30" RangeFloat_Min="8" RangeFloat_Max="15" />
+        <Semantics DamagePercentFloat="30" RangeFloat_Min="6" RangeFloat_Max="15" />
       </EIM>
     </MagicEffects>
   </Spell>

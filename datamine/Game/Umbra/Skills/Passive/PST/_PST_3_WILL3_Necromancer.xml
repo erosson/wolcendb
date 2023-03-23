@@ -60,7 +60,7 @@
   <Spell Name="NECRO_8" UIName="@ui_NECRO_8_name" HUDLoreDesc="@ui_NECRO_8_loredesc" GameplayDesc="@ui_NECRO_8_gameplaydesc">
     <MagicEffects>
       <EIM Name="dead_enemies_may_spawn_green_globes" HUDDesc="@ui_eim_dead_enemies_may_spawn_green_globes" Permanent="1">
-        <Semantics RadiusFloat="20" ChancePercentInt="10" DamagePercentFloat="30" DurationFlatFloat="5" />
+        <Semantics RadiusFloat="20" ChancePercentInt="10" DamagePercentFloat="20" DurationFlatFloat="5" />
       </EIM>
     </MagicEffects>
   </Spell>

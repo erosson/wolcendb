@@ -1,6 +1,7 @@
 <MetaData>
   <Skill UID="apo_tank_sacredground" ESkill="player_sacredground" Keywords="magic_spell">
     <Animation ActionString="apo_skill_03" ScaleWithSpellCastingSpeed="1" AnimationDrivenMovement="1" />
+    <VisualFeedback feedbackPresetBase="Player_Apo_Tank" />
     <CastingParams RequiresApocalypticForm="1" />
     <HUD HUDPicture="../u_resources/spells/Active_Skills/apo_tank_sacredground.png" UIName="@ui_APO_Tank_Skill03" Lore="@ui_APO_Tank_Skill03_Lore" ActiveEffectTitle="" ActiveEffectDesc="" ASTTreeNumber="3" ShowParamsInAST="Cost,ROSTime,DamageDetail,Cooldown,Range" ShowParamsInTooltip="Cost,DamageOverview,Cooldown" />
     <Enneract PickableParticle_MoveToGround="U_CommonVFX_02.Esseract.Esseract_Projectile.Sacred" PickableParticle_OnGround_Shape="U_CommonVFX_02.Esseract.Esseract_Shape.Circle_Sacred" PickableParticle_OnGround_Damage="U_CommonVFX_02.Esseract.Esseract_Color.Sacred" PickableParticle_OnGround_Symbol="U_CommonVFX_02.Esseract.Esseract_Symbol.ANATHEA" PickableParticle_OnGround_Indicator="U_CommonVFX_02.Esseract.Esseract_Indicator.Sacred" PickableParticle_OnGround_Pickup="U_CommonVFX_02.Esseract.Esseract_Loot.Sacred" SkillLearningParticle="U_CommonVFX.Skill_Learn.Skill_Learn_Sacred" Inventory_HUDPicture="../u_resources/enneracts/sacred_ground.png" Inventory_LoreDesc="@ui_enneract_lore" />

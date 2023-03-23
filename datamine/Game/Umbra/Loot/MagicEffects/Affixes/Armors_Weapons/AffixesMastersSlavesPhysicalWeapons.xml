@@ -1,7 +1,7 @@
 <MetaData>
   <Affix AffixId="master_w_criticalchance_attackskill_score_1" Class="criticalchance" AffixType="suffix" Tier="1">
     <Enslaved EnslavedClass="slave_all_weapon_1" />
-    <DropParams Frequency="10000" Hunt="1">
+    <DropParams Frequency="10000" AffixOrigin="Hunt">
       <ItemLevel LevelMin="1" LevelMax="30" />
       <Keywords OptionalKeywords="physical_weapon" MandatoryKeywords="weapon" />
       <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
@@ -13,7 +13,7 @@
   </Affix>
   <Affix AffixId="master_w_criticalchance_attackskill_score_2" Class="criticalchance" AffixType="suffix" Tier="2">
     <Enslaved EnslavedClass="slave_all_weapon_2" />
-    <DropParams Frequency="10000" Hunt="1">
+    <DropParams Frequency="10000" AffixOrigin="Hunt">
       <ItemLevel LevelMin="10" LevelMax="40" />
       <Keywords OptionalKeywords="physical_weapon" MandatoryKeywords="weapon" />
       <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
@@ -25,7 +25,7 @@
   </Affix>
   <Affix AffixId="master_w_criticalchance_attackskill_score_3" Class="criticalchance" AffixType="suffix" Tier="3">
     <Enslaved EnslavedClass="slave_all_weapon_3" />
-    <DropParams Frequency="10000" Hunt="1">
+    <DropParams Frequency="10000" AffixOrigin="Hunt">
       <ItemLevel LevelMin="20" LevelMax="50" />
       <Keywords OptionalKeywords="physical_weapon" MandatoryKeywords="weapon" />
       <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
@@ -37,7 +37,7 @@
   </Affix>
   <Affix AffixId="master_w_criticalchance_attackskill_score_4" Class="criticalchance" AffixType="suffix" Tier="4">
     <Enslaved EnslavedClass="slave_all_weapon_4" />
-    <DropParams Frequency="10000" Hunt="1">
+    <DropParams Frequency="10000" AffixOrigin="Hunt">
       <ItemLevel LevelMin="30" LevelMax="60" />
       <Keywords OptionalKeywords="physical_weapon" MandatoryKeywords="weapon" />
       <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
@@ -49,8 +49,8 @@
   </Affix>
   <Affix AffixId="master_w_criticalchance_attackskill_score_5" Class="criticalchance" AffixType="suffix" Tier="5">
     <Enslaved EnslavedClass="slave_all_weapon_5" />
-    <DropParams Frequency="10000" Hunt="1">
-      <ItemLevel LevelMin="40" LevelMax="120" />
+    <DropParams Frequency="10000" AffixOrigin="Hunt">
+      <ItemLevel LevelMin="40" LevelMax="80" />
       <Keywords OptionalKeywords="physical_weapon" MandatoryKeywords="weapon" />
       <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
     </DropParams>
@@ -61,8 +61,8 @@
   </Affix>
   <Affix AffixId="master_w_criticalchance_attackskill_score_6" Class="criticalchance" AffixType="suffix" Tier="6">
     <Enslaved EnslavedClass="slave_all_weapon_6" />
-    <DropParams Frequency="10000" Hunt="1">
-      <ItemLevel LevelMin="50" LevelMax="130" />
+    <DropParams Frequency="10000" AffixOrigin="Hunt">
+      <ItemLevel LevelMin="70" LevelMax="100" />
       <Keywords OptionalKeywords="physical_weapon" MandatoryKeywords="weapon" />
       <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
     </DropParams>
@@ -73,8 +73,8 @@
   </Affix>
   <Affix AffixId="master_w_criticalchance_attackskill_score_7" Class="criticalchance" AffixType="suffix" Tier="7">
     <Enslaved EnslavedClass="slave_all_weapon_7" />
-    <DropParams Frequency="10000" Hunt="1">
-      <ItemLevel LevelMin="60" LevelMax="140" />
+    <DropParams Frequency="10000" AffixOrigin="Hunt">
+      <ItemLevel LevelMin="90" LevelMax="140" />
       <Keywords OptionalKeywords="physical_weapon" MandatoryKeywords="weapon" />
       <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
     </DropParams>
@@ -85,8 +85,8 @@
   </Affix>
   <Affix AffixId="master_w_criticalchance_attackskill_score_8" Class="criticalchance" AffixType="suffix" Tier="8">
     <Enslaved EnslavedClass="slave_all_weapon_8" />
-    <DropParams Frequency="10000" Hunt="1">
-      <ItemLevel LevelMin="70" LevelMax="150" />
+    <DropParams Frequency="10000" AffixOrigin="Hunt">
+      <ItemLevel LevelMin="130" LevelMax="200" />
       <Keywords OptionalKeywords="physical_weapon" MandatoryKeywords="weapon" />
       <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
     </DropParams>
@@ -97,8 +97,8 @@
   </Affix>
   <Affix AffixId="master_w_criticalchance_attackskill_score_9" Class="criticalchance" AffixType="suffix" Tier="9">
     <Enslaved EnslavedClass="slave_all_weapon_9" />
-    <DropParams Frequency="10000" Hunt="1">
-      <ItemLevel LevelMin="80" LevelMax="160" />
+    <DropParams Frequency="10000" AffixOrigin="Hunt">
+      <ItemLevel LevelMin="150" LevelMax="250" />
       <Keywords OptionalKeywords="physical_weapon" MandatoryKeywords="weapon" />
       <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
     </DropParams>
@@ -109,8 +109,8 @@
   </Affix>
   <Affix AffixId="master_w_criticalchance_attackskill_score_10" Class="criticalchance" AffixType="suffix" Tier="10">
     <Enslaved EnslavedClass="slave_all_weapon_10" />
-    <DropParams Frequency="10000" Hunt="1">
-      <ItemLevel LevelMin="90" LevelMax="200" />
+    <DropParams Frequency="10000" AffixOrigin="Hunt">
+      <ItemLevel LevelMin="170" LevelMax="250" />
       <Keywords OptionalKeywords="physical_weapon" MandatoryKeywords="weapon" />
       <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
     </DropParams>
@@ -121,8 +121,8 @@
   </Affix>
   <Affix AffixId="master_w_criticalchance_attackskill_score_11" Class="criticalchance" AffixType="suffix" Tier="11">
     <Enslaved EnslavedClass="slave_all_weapon_11" />
-    <DropParams Frequency="10000" Hunt="1">
-      <ItemLevel LevelMin="100" LevelMax="200" />
+    <DropParams Frequency="10000" AffixOrigin="Hunt">
+      <ItemLevel LevelMin="190" LevelMax="300" />
       <Keywords OptionalKeywords="physical_weapon" MandatoryKeywords="weapon" />
       <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
     </DropParams>
@@ -133,8 +133,8 @@
   </Affix>
   <Affix AffixId="master_w_criticalchance_attackskill_score_12" Class="criticalchance" AffixType="suffix" Tier="12">
     <Enslaved EnslavedClass="slave_all_weapon_12" />
-    <DropParams Frequency="10000" Hunt="1">
-      <ItemLevel LevelMin="110" LevelMax="200" />
+    <DropParams Frequency="10000" AffixOrigin="Hunt">
+      <ItemLevel LevelMin="190" LevelMax="300" />
       <Keywords OptionalKeywords="physical_weapon" MandatoryKeywords="weapon" />
       <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
     </DropParams>
@@ -145,7 +145,7 @@
   </Affix>
   <Affix AffixId="master_w_attackspeed_score_1" Class="attackspeed" AffixType="suffix" Tier="1">
     <Enslaved EnslavedClass="slave_all_weapon_1" />
-    <DropParams Frequency="10000" Hunt="1">
+    <DropParams Frequency="10000" AffixOrigin="Hunt">
       <ItemLevel LevelMin="1" LevelMax="30" />
       <Keywords OptionalKeywords="physical_weapon" MandatoryKeywords="weapon" />
       <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
@@ -157,7 +157,7 @@
   </Affix>
   <Affix AffixId="master_w_attackspeed_score_2" Class="attackspeed" AffixType="suffix" Tier="2">
     <Enslaved EnslavedClass="slave_all_weapon_2" />
-    <DropParams Frequency="10000" Hunt="1">
+    <DropParams Frequency="10000" AffixOrigin="Hunt">
       <ItemLevel LevelMin="10" LevelMax="40" />
       <Keywords OptionalKeywords="physical_weapon" MandatoryKeywords="weapon" />
       <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
@@ -169,7 +169,7 @@
   </Affix>
   <Affix AffixId="master_w_attackspeed_score_3" Class="attackspeed" AffixType="suffix" Tier="3">
     <Enslaved EnslavedClass="slave_all_weapon_3" />
-    <DropParams Frequency="10000" Hunt="1">
+    <DropParams Frequency="10000" AffixOrigin="Hunt">
       <ItemLevel LevelMin="20" LevelMax="50" />
       <Keywords OptionalKeywords="physical_weapon" MandatoryKeywords="weapon" />
       <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
@@ -181,7 +181,7 @@
   </Affix>
   <Affix AffixId="master_w_attackspeed_score_4" Class="attackspeed" AffixType="suffix" Tier="4">
     <Enslaved EnslavedClass="slave_all_weapon_4" />
-    <DropParams Frequency="10000" Hunt="1">
+    <DropParams Frequency="10000" AffixOrigin="Hunt">
       <ItemLevel LevelMin="30" LevelMax="60" />
       <Keywords OptionalKeywords="physical_weapon" MandatoryKeywords="weapon" />
       <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
@@ -193,8 +193,8 @@
   </Affix>
   <Affix AffixId="master_w_attackspeed_score_5" Class="attackspeed" AffixType="suffix" Tier="5">
     <Enslaved EnslavedClass="slave_all_weapon_5" />
-    <DropParams Frequency="10000" Hunt="1">
-      <ItemLevel LevelMin="40" LevelMax="120" />
+    <DropParams Frequency="10000" AffixOrigin="Hunt">
+      <ItemLevel LevelMin="40" LevelMax="80" />
       <Keywords OptionalKeywords="physical_weapon" MandatoryKeywords="weapon" />
       <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
     </DropParams>
@@ -205,8 +205,8 @@
   </Affix>
   <Affix AffixId="master_w_attackspeed_score_6" Class="attackspeed" AffixType="suffix" Tier="6">
     <Enslaved EnslavedClass="slave_all_weapon_6" />
-    <DropParams Frequency="10000" Hunt="1">
-      <ItemLevel LevelMin="50" LevelMax="130" />
+    <DropParams Frequency="10000" AffixOrigin="Hunt">
+      <ItemLevel LevelMin="70" LevelMax="100" />
       <Keywords OptionalKeywords="physical_weapon" MandatoryKeywords="weapon" />
       <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
     </DropParams>
@@ -217,8 +217,8 @@
   </Affix>
   <Affix AffixId="master_w_attackspeed_score_7" Class="attackspeed" AffixType="suffix" Tier="7">
     <Enslaved EnslavedClass="slave_all_weapon_7" />
-    <DropParams Frequency="10000" Hunt="1">
-      <ItemLevel LevelMin="60" LevelMax="140" />
+    <DropParams Frequency="10000" AffixOrigin="Hunt">
+      <ItemLevel LevelMin="90" LevelMax="140" />
       <Keywords OptionalKeywords="physical_weapon" MandatoryKeywords="weapon" />
       <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
     </DropParams>
@@ -229,8 +229,8 @@
   </Affix>
   <Affix AffixId="master_w_attackspeed_score_8" Class="attackspeed" AffixType="suffix" Tier="8">
     <Enslaved EnslavedClass="slave_all_weapon_8" />
-    <DropParams Frequency="10000" Hunt="1">
-      <ItemLevel LevelMin="70" LevelMax="150" />
+    <DropParams Frequency="10000" AffixOrigin="Hunt">
+      <ItemLevel LevelMin="130" LevelMax="200" />
       <Keywords OptionalKeywords="physical_weapon" MandatoryKeywords="weapon" />
       <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
     </DropParams>
@@ -241,8 +241,8 @@
   </Affix>
   <Affix AffixId="master_w_attackspeed_score_9" Class="attackspeed" AffixType="suffix" Tier="9">
     <Enslaved EnslavedClass="slave_all_weapon_9" />
-    <DropParams Frequency="10000" Hunt="1">
-      <ItemLevel LevelMin="80" LevelMax="160" />
+    <DropParams Frequency="10000" AffixOrigin="Hunt">
+      <ItemLevel LevelMin="150" LevelMax="250" />
       <Keywords OptionalKeywords="physical_weapon" MandatoryKeywords="weapon" />
       <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
     </DropParams>
@@ -253,8 +253,8 @@
   </Affix>
   <Affix AffixId="master_w_attackspeed_score_10" Class="attackspeed" AffixType="suffix" Tier="10">
     <Enslaved EnslavedClass="slave_all_weapon_10" />
-    <DropParams Frequency="10000" Hunt="1">
-      <ItemLevel LevelMin="90" LevelMax="200" />
+    <DropParams Frequency="10000" AffixOrigin="Hunt">
+      <ItemLevel LevelMin="170" LevelMax="250" />
       <Keywords OptionalKeywords="physical_weapon" MandatoryKeywords="weapon" />
       <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
     </DropParams>
@@ -265,8 +265,8 @@
   </Affix>
   <Affix AffixId="master_w_attackspeed_score_11" Class="attackspeed" AffixType="suffix" Tier="11">
     <Enslaved EnslavedClass="slave_all_weapon_11" />
-    <DropParams Frequency="10000" Hunt="1">
-      <ItemLevel LevelMin="100" LevelMax="200" />
+    <DropParams Frequency="10000" AffixOrigin="Hunt">
+      <ItemLevel LevelMin="190" LevelMax="300" />
       <Keywords OptionalKeywords="physical_weapon" MandatoryKeywords="weapon" />
       <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
     </DropParams>
@@ -277,8 +277,8 @@
   </Affix>
   <Affix AffixId="master_w_attackspeed_score_12" Class="attackspeed" AffixType="suffix" Tier="12">
     <Enslaved EnslavedClass="slave_all_weapon_12" />
-    <DropParams Frequency="10000" Hunt="1">
-      <ItemLevel LevelMin="110" LevelMax="200" />
+    <DropParams Frequency="10000" AffixOrigin="Hunt">
+      <ItemLevel LevelMin="190" LevelMax="300" />
       <Keywords OptionalKeywords="physical_weapon" MandatoryKeywords="weapon" />
       <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
     </DropParams>
@@ -289,7 +289,7 @@
   </Affix>
   <Affix AffixId="master_w_statusailment_inflict_chance_score_1" Class="ailmentchance" AffixType="suffix" Tier="1">
     <Enslaved EnslavedClass="slave_all_weapon_1" />
-    <DropParams Frequency="10000" Hunt="1">
+    <DropParams Frequency="10000" AffixOrigin="Hunt">
       <ItemLevel LevelMin="1" LevelMax="30" />
       <Keywords OptionalKeywords="physical_weapon" MandatoryKeywords="weapon" />
       <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
@@ -301,7 +301,7 @@
   </Affix>
   <Affix AffixId="master_w_statusailment_inflict_chance_score_2" Class="ailmentchance" AffixType="suffix" Tier="2">
     <Enslaved EnslavedClass="slave_all_weapon_2" />
-    <DropParams Frequency="10000" Hunt="1">
+    <DropParams Frequency="10000" AffixOrigin="Hunt">
       <ItemLevel LevelMin="10" LevelMax="40" />
       <Keywords OptionalKeywords="physical_weapon" MandatoryKeywords="weapon" />
       <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
@@ -313,7 +313,7 @@
   </Affix>
   <Affix AffixId="master_w_statusailment_inflict_chance_score_3" Class="ailmentchance" AffixType="suffix" Tier="3">
     <Enslaved EnslavedClass="slave_all_weapon_3" />
-    <DropParams Frequency="10000" Hunt="1">
+    <DropParams Frequency="10000" AffixOrigin="Hunt">
       <ItemLevel LevelMin="20" LevelMax="50" />
       <Keywords OptionalKeywords="physical_weapon" MandatoryKeywords="weapon" />
       <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
@@ -325,7 +325,7 @@
   </Affix>
   <Affix AffixId="master_w_statusailment_inflict_chance_score_4" Class="ailmentchance" AffixType="suffix" Tier="4">
     <Enslaved EnslavedClass="slave_all_weapon_4" />
-    <DropParams Frequency="10000" Hunt="1">
+    <DropParams Frequency="10000" AffixOrigin="Hunt">
       <ItemLevel LevelMin="30" LevelMax="60" />
       <Keywords OptionalKeywords="physical_weapon" MandatoryKeywords="weapon" />
       <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
@@ -337,8 +337,8 @@
   </Affix>
   <Affix AffixId="master_w_statusailment_inflict_chance_score_5" Class="ailmentchance" AffixType="suffix" Tier="5">
     <Enslaved EnslavedClass="slave_all_weapon_5" />
-    <DropParams Frequency="10000" Hunt="1">
-      <ItemLevel LevelMin="40" LevelMax="120" />
+    <DropParams Frequency="10000" AffixOrigin="Hunt">
+      <ItemLevel LevelMin="40" LevelMax="80" />
       <Keywords OptionalKeywords="physical_weapon" MandatoryKeywords="weapon" />
       <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
     </DropParams>
@@ -349,8 +349,8 @@
   </Affix>
   <Affix AffixId="master_w_statusailment_inflict_chance_score_6" Class="ailmentchance" AffixType="suffix" Tier="6">
     <Enslaved EnslavedClass="slave_all_weapon_6" />
-    <DropParams Frequency="10000" Hunt="1">
-      <ItemLevel LevelMin="50" LevelMax="130" />
+    <DropParams Frequency="10000" AffixOrigin="Hunt">
+      <ItemLevel LevelMin="70" LevelMax="100" />
       <Keywords OptionalKeywords="physical_weapon" MandatoryKeywords="weapon" />
       <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
     </DropParams>
@@ -361,8 +361,8 @@
   </Affix>
   <Affix AffixId="master_w_statusailment_inflict_chance_score_7" Class="ailmentchance" AffixType="suffix" Tier="7">
     <Enslaved EnslavedClass="slave_all_weapon_7" />
-    <DropParams Frequency="10000" Hunt="1">
-      <ItemLevel LevelMin="60" LevelMax="140" />
+    <DropParams Frequency="10000" AffixOrigin="Hunt">
+      <ItemLevel LevelMin="90" LevelMax="140" />
       <Keywords OptionalKeywords="physical_weapon" MandatoryKeywords="weapon" />
       <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
     </DropParams>
@@ -373,8 +373,8 @@
   </Affix>
   <Affix AffixId="master_w_statusailment_inflict_chance_score_8" Class="ailmentchance" AffixType="suffix" Tier="8">
     <Enslaved EnslavedClass="slave_all_weapon_8" />
-    <DropParams Frequency="10000" Hunt="1">
-      <ItemLevel LevelMin="70" LevelMax="150" />
+    <DropParams Frequency="10000" AffixOrigin="Hunt">
+      <ItemLevel LevelMin="130" LevelMax="200" />
       <Keywords OptionalKeywords="physical_weapon" MandatoryKeywords="weapon" />
       <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
     </DropParams>
@@ -385,8 +385,8 @@
   </Affix>
   <Affix AffixId="master_w_statusailment_inflict_chance_score_9" Class="ailmentchance" AffixType="suffix" Tier="9">
     <Enslaved EnslavedClass="slave_all_weapon_9" />
-    <DropParams Frequency="10000" Hunt="1">
-      <ItemLevel LevelMin="80" LevelMax="160" />
+    <DropParams Frequency="10000" AffixOrigin="Hunt">
+      <ItemLevel LevelMin="150" LevelMax="250" />
       <Keywords OptionalKeywords="physical_weapon" MandatoryKeywords="weapon" />
       <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
     </DropParams>
@@ -397,8 +397,8 @@
   </Affix>
   <Affix AffixId="master_w_statusailment_inflict_chance_score_10" Class="ailmentchance" AffixType="suffix" Tier="10">
     <Enslaved EnslavedClass="slave_all_weapon_10" />
-    <DropParams Frequency="10000" Hunt="1">
-      <ItemLevel LevelMin="90" LevelMax="200" />
+    <DropParams Frequency="10000" AffixOrigin="Hunt">
+      <ItemLevel LevelMin="170" LevelMax="250" />
       <Keywords OptionalKeywords="physical_weapon" MandatoryKeywords="weapon" />
       <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
     </DropParams>
@@ -409,8 +409,8 @@
   </Affix>
   <Affix AffixId="master_w_statusailment_inflict_chance_score_11" Class="ailmentchance" AffixType="suffix" Tier="11">
     <Enslaved EnslavedClass="slave_all_weapon_11" />
-    <DropParams Frequency="10000" Hunt="1">
-      <ItemLevel LevelMin="100" LevelMax="200" />
+    <DropParams Frequency="10000" AffixOrigin="Hunt">
+      <ItemLevel LevelMin="190" LevelMax="300" />
       <Keywords OptionalKeywords="physical_weapon" MandatoryKeywords="weapon" />
       <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
     </DropParams>
@@ -421,8 +421,8 @@
   </Affix>
   <Affix AffixId="master_w_statusailment_inflict_chance_score_12" Class="ailmentchance" AffixType="suffix" Tier="12">
     <Enslaved EnslavedClass="slave_all_weapon_12" />
-    <DropParams Frequency="10000" Hunt="1">
-      <ItemLevel LevelMin="110" LevelMax="200" />
+    <DropParams Frequency="10000" AffixOrigin="Hunt">
+      <ItemLevel LevelMin="190" LevelMax="300" />
       <Keywords OptionalKeywords="physical_weapon" MandatoryKeywords="weapon" />
       <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
     </DropParams>
@@ -433,7 +433,7 @@
   </Affix>
   <Affix AffixId="master_fast_w_local_damage_percent_all_1" Class="damagepercent" AffixType="prefix" Tier="1">
     <Enslaved EnslavedClass="slave_fast_weapon_1" />
-    <DropParams Frequency="10000" Hunt="1">
+    <DropParams Frequency="10000" AffixOrigin="Hunt">
       <ItemLevel LevelMin="1" LevelMax="30" />
       <Keywords OptionalKeywords="physical_weapon" MandatoryKeywords="weapon,fast" />
       <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
@@ -445,7 +445,7 @@
   </Affix>
   <Affix AffixId="master_fast_w_local_damage_percent_all_2" Class="damagepercent" AffixType="prefix" Tier="2">
     <Enslaved EnslavedClass="slave_fast_weapon_2" />
-    <DropParams Frequency="10000" Hunt="1">
+    <DropParams Frequency="10000" AffixOrigin="Hunt">
       <ItemLevel LevelMin="10" LevelMax="40" />
       <Keywords OptionalKeywords="physical_weapon" MandatoryKeywords="weapon,fast" />
       <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
@@ -457,7 +457,7 @@
   </Affix>
   <Affix AffixId="master_fast_w_local_damage_percent_all_3" Class="damagepercent" AffixType="prefix" Tier="3">
     <Enslaved EnslavedClass="slave_fast_weapon_3" />
-    <DropParams Frequency="10000" Hunt="1">
+    <DropParams Frequency="10000" AffixOrigin="Hunt">
       <ItemLevel LevelMin="20" LevelMax="50" />
       <Keywords OptionalKeywords="physical_weapon" MandatoryKeywords="weapon,fast" />
       <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
@@ -469,7 +469,7 @@
   </Affix>
   <Affix AffixId="master_fast_w_local_damage_percent_all_4" Class="damagepercent" AffixType="prefix" Tier="4">
     <Enslaved EnslavedClass="slave_fast_weapon_4" />
-    <DropParams Frequency="10000" Hunt="1">
+    <DropParams Frequency="10000" AffixOrigin="Hunt">
       <ItemLevel LevelMin="30" LevelMax="60" />
       <Keywords OptionalKeywords="physical_weapon" MandatoryKeywords="weapon,fast" />
       <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
@@ -481,8 +481,8 @@
   </Affix>
   <Affix AffixId="master_fast_w_local_damage_percent_all_5" Class="damagepercent" AffixType="prefix" Tier="5">
     <Enslaved EnslavedClass="slave_fast_weapon_5" />
-    <DropParams Frequency="10000" Hunt="1">
-      <ItemLevel LevelMin="40" LevelMax="120" />
+    <DropParams Frequency="10000" AffixOrigin="Hunt">
+      <ItemLevel LevelMin="40" LevelMax="80" />
       <Keywords OptionalKeywords="physical_weapon" MandatoryKeywords="weapon,fast" />
       <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
     </DropParams>
@@ -493,8 +493,8 @@
   </Affix>
   <Affix AffixId="master_fast_w_local_damage_percent_all_6" Class="damagepercent" AffixType="prefix" Tier="6">
     <Enslaved EnslavedClass="slave_fast_weapon_6" />
-    <DropParams Frequency="10000" Hunt="1">
-      <ItemLevel LevelMin="50" LevelMax="130" />
+    <DropParams Frequency="10000" AffixOrigin="Hunt">
+      <ItemLevel LevelMin="70" LevelMax="100" />
       <Keywords OptionalKeywords="physical_weapon" MandatoryKeywords="weapon,fast" />
       <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
     </DropParams>
@@ -505,8 +505,8 @@
   </Affix>
   <Affix AffixId="master_fast_w_local_damage_percent_all_7" Class="damagepercent" AffixType="prefix" Tier="7">
     <Enslaved EnslavedClass="slave_fast_weapon_7" />
-    <DropParams Frequency="10000" Hunt="1">
-      <ItemLevel LevelMin="60" LevelMax="140" />
+    <DropParams Frequency="10000" AffixOrigin="Hunt">
+      <ItemLevel LevelMin="90" LevelMax="140" />
       <Keywords OptionalKeywords="physical_weapon" MandatoryKeywords="weapon,fast" />
       <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
     </DropParams>
@@ -517,8 +517,8 @@
   </Affix>
   <Affix AffixId="master_fast_w_local_damage_percent_all_8" Class="damagepercent" AffixType="prefix" Tier="8">
     <Enslaved EnslavedClass="slave_fast_weapon_8" />
-    <DropParams Frequency="10000" Hunt="1">
-      <ItemLevel LevelMin="70" LevelMax="150" />
+    <DropParams Frequency="10000" AffixOrigin="Hunt">
+      <ItemLevel LevelMin="130" LevelMax="200" />
       <Keywords OptionalKeywords="physical_weapon" MandatoryKeywords="weapon,fast" />
       <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
     </DropParams>
@@ -529,8 +529,8 @@
   </Affix>
   <Affix AffixId="master_fast_w_local_damage_percent_all_9" Class="damagepercent" AffixType="prefix" Tier="9">
     <Enslaved EnslavedClass="slave_fast_weapon_9" />
-    <DropParams Frequency="10000" Hunt="1">
-      <ItemLevel LevelMin="80" LevelMax="160" />
+    <DropParams Frequency="10000" AffixOrigin="Hunt">
+      <ItemLevel LevelMin="150" LevelMax="250" />
       <Keywords OptionalKeywords="physical_weapon" MandatoryKeywords="weapon,fast" />
       <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
     </DropParams>
@@ -541,8 +541,8 @@
   </Affix>
   <Affix AffixId="master_fast_w_local_damage_percent_all_10" Class="damagepercent" AffixType="prefix" Tier="10">
     <Enslaved EnslavedClass="slave_fast_weapon_10" />
-    <DropParams Frequency="10000" Hunt="1">
-      <ItemLevel LevelMin="90" LevelMax="200" />
+    <DropParams Frequency="10000" AffixOrigin="Hunt">
+      <ItemLevel LevelMin="170" LevelMax="250" />
       <Keywords OptionalKeywords="physical_weapon" MandatoryKeywords="weapon,fast" />
       <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
     </DropParams>
@@ -553,8 +553,8 @@
   </Affix>
   <Affix AffixId="master_fast_w_local_damage_percent_all_11" Class="damagepercent" AffixType="prefix" Tier="11">
     <Enslaved EnslavedClass="slave_fast_weapon_11" />
-    <DropParams Frequency="10000" Hunt="1">
-      <ItemLevel LevelMin="100" LevelMax="200" />
+    <DropParams Frequency="10000" AffixOrigin="Hunt">
+      <ItemLevel LevelMin="190" LevelMax="300" />
       <Keywords OptionalKeywords="physical_weapon" MandatoryKeywords="weapon,fast" />
       <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
     </DropParams>
@@ -565,8 +565,8 @@
   </Affix>
   <Affix AffixId="master_fast_w_local_damage_percent_all_12" Class="damagepercent" AffixType="prefix" Tier="12">
     <Enslaved EnslavedClass="slave_fast_weapon_12" />
-    <DropParams Frequency="10000" Hunt="1">
-      <ItemLevel LevelMin="110" LevelMax="200" />
+    <DropParams Frequency="10000" AffixOrigin="Hunt">
+      <ItemLevel LevelMin="190" LevelMax="300" />
       <Keywords OptionalKeywords="physical_weapon" MandatoryKeywords="weapon,fast" />
       <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
     </DropParams>
@@ -577,7 +577,7 @@
   </Affix>
   <Affix AffixId="master_slow_w_local_damage_percent_all_1" Class="damagepercent" AffixType="prefix" Tier="1">
     <Enslaved EnslavedClass="slave_slow_weapon_1" />
-    <DropParams Frequency="10000" Hunt="1">
+    <DropParams Frequency="10000" AffixOrigin="Hunt">
       <ItemLevel LevelMin="1" LevelMax="30" />
       <Keywords OptionalKeywords="physical_weapon" MandatoryKeywords="weapon,slow" />
       <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
@@ -589,7 +589,7 @@
   </Affix>
   <Affix AffixId="master_slow_w_local_damage_percent_all_2" Class="damagepercent" AffixType="prefix" Tier="2">
     <Enslaved EnslavedClass="slave_slow_weapon_2" />
-    <DropParams Frequency="10000" Hunt="1">
+    <DropParams Frequency="10000" AffixOrigin="Hunt">
       <ItemLevel LevelMin="10" LevelMax="40" />
       <Keywords OptionalKeywords="physical_weapon" MandatoryKeywords="weapon,slow" />
       <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
@@ -601,7 +601,7 @@
   </Affix>
   <Affix AffixId="master_slow_w_local_damage_percent_all_3" Class="damagepercent" AffixType="prefix" Tier="3">
     <Enslaved EnslavedClass="slave_slow_weapon_3" />
-    <DropParams Frequency="10000" Hunt="1">
+    <DropParams Frequency="10000" AffixOrigin="Hunt">
       <ItemLevel LevelMin="20" LevelMax="50" />
       <Keywords OptionalKeywords="physical_weapon" MandatoryKeywords="weapon,slow" />
       <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
@@ -613,7 +613,7 @@
   </Affix>
   <Affix AffixId="master_slow_w_local_damage_percent_all_4" Class="damagepercent" AffixType="prefix" Tier="4">
     <Enslaved EnslavedClass="slave_slow_weapon_4" />
-    <DropParams Frequency="10000" Hunt="1">
+    <DropParams Frequency="10000" AffixOrigin="Hunt">
       <ItemLevel LevelMin="30" LevelMax="60" />
       <Keywords OptionalKeywords="physical_weapon" MandatoryKeywords="weapon,slow" />
       <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
@@ -625,8 +625,8 @@
   </Affix>
   <Affix AffixId="master_slow_w_local_damage_percent_all_5" Class="damagepercent" AffixType="prefix" Tier="5">
     <Enslaved EnslavedClass="slave_slow_weapon_5" />
-    <DropParams Frequency="10000" Hunt="1">
-      <ItemLevel LevelMin="40" LevelMax="120" />
+    <DropParams Frequency="10000" AffixOrigin="Hunt">
+      <ItemLevel LevelMin="40" LevelMax="80" />
       <Keywords OptionalKeywords="physical_weapon" MandatoryKeywords="weapon,slow" />
       <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
     </DropParams>
@@ -637,8 +637,8 @@
   </Affix>
   <Affix AffixId="master_slow_w_local_damage_percent_all_6" Class="damagepercent" AffixType="prefix" Tier="6">
     <Enslaved EnslavedClass="slave_slow_weapon_6" />
-    <DropParams Frequency="10000" Hunt="1">
-      <ItemLevel LevelMin="50" LevelMax="130" />
+    <DropParams Frequency="10000" AffixOrigin="Hunt">
+      <ItemLevel LevelMin="70" LevelMax="100" />
       <Keywords OptionalKeywords="physical_weapon" MandatoryKeywords="weapon,slow" />
       <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
     </DropParams>
@@ -649,8 +649,8 @@
   </Affix>
   <Affix AffixId="master_slow_w_local_damage_percent_all_7" Class="damagepercent" AffixType="prefix" Tier="7">
     <Enslaved EnslavedClass="slave_slow_weapon_7" />
-    <DropParams Frequency="10000" Hunt="1">
-      <ItemLevel LevelMin="60" LevelMax="140" />
+    <DropParams Frequency="10000" AffixOrigin="Hunt">
+      <ItemLevel LevelMin="90" LevelMax="140" />
       <Keywords OptionalKeywords="physical_weapon" MandatoryKeywords="weapon,slow" />
       <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
     </DropParams>
@@ -661,8 +661,8 @@
   </Affix>
   <Affix AffixId="master_slow_w_local_damage_percent_all_8" Class="damagepercent" AffixType="prefix" Tier="8">
     <Enslaved EnslavedClass="slave_slow_weapon_8" />
-    <DropParams Frequency="10000" Hunt="1">
-      <ItemLevel LevelMin="70" LevelMax="150" />
+    <DropParams Frequency="10000" AffixOrigin="Hunt">
+      <ItemLevel LevelMin="130" LevelMax="200" />
       <Keywords OptionalKeywords="physical_weapon" MandatoryKeywords="weapon,slow" />
       <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
     </DropParams>
@@ -673,8 +673,8 @@
   </Affix>
   <Affix AffixId="master_slow_w_local_damage_percent_all_9" Class="damagepercent" AffixType="prefix" Tier="9">
     <Enslaved EnslavedClass="slave_slow_weapon_9" />
-    <DropParams Frequency="10000" Hunt="1">
-      <ItemLevel LevelMin="80" LevelMax="160" />
+    <DropParams Frequency="10000" AffixOrigin="Hunt">
+      <ItemLevel LevelMin="150" LevelMax="250" />
       <Keywords OptionalKeywords="physical_weapon" MandatoryKeywords="weapon,slow" />
       <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
     </DropParams>
@@ -685,8 +685,8 @@
   </Affix>
   <Affix AffixId="master_slow_w_local_damage_percent_all_10" Class="damagepercent" AffixType="prefix" Tier="10">
     <Enslaved EnslavedClass="slave_slow_weapon_10" />
-    <DropParams Frequency="10000" Hunt="1">
-      <ItemLevel LevelMin="90" LevelMax="200" />
+    <DropParams Frequency="10000" AffixOrigin="Hunt">
+      <ItemLevel LevelMin="170" LevelMax="250" />
       <Keywords OptionalKeywords="physical_weapon" MandatoryKeywords="weapon,slow" />
       <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
     </DropParams>
@@ -697,8 +697,8 @@
   </Affix>
   <Affix AffixId="master_slow_w_local_damage_percent_all_11" Class="damagepercent" AffixType="prefix" Tier="11">
     <Enslaved EnslavedClass="slave_slow_weapon_11" />
-    <DropParams Frequency="10000" Hunt="1">
-      <ItemLevel LevelMin="100" LevelMax="200" />
+    <DropParams Frequency="10000" AffixOrigin="Hunt">
+      <ItemLevel LevelMin="190" LevelMax="300" />
       <Keywords OptionalKeywords="physical_weapon" MandatoryKeywords="weapon,slow" />
       <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
     </DropParams>
@@ -709,8 +709,8 @@
   </Affix>
   <Affix AffixId="master_slow_w_local_damage_percent_all_12" Class="damagepercent" AffixType="prefix" Tier="12">
     <Enslaved EnslavedClass="slave_slow_weapon_12" />
-    <DropParams Frequency="10000" Hunt="1">
-      <ItemLevel LevelMin="110" LevelMax="200" />
+    <DropParams Frequency="10000" AffixOrigin="Hunt">
+      <ItemLevel LevelMin="190" LevelMax="300" />
       <Keywords OptionalKeywords="physical_weapon" MandatoryKeywords="weapon,slow" />
       <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
     </DropParams>
@@ -721,7 +721,7 @@
   </Affix>
   <Affix AffixId="fast_slave_attackspeed_score_1" Class="slave_fast_weapon_1" AffixType="slave" Tier="1">
     <Enslaved />
-    <DropParams Frequency="10000" Hunt="1">
+    <DropParams Frequency="10000" AffixOrigin="Hunt">
       <ItemLevel LevelMin="1" LevelMax="30" />
       <Keywords OptionalKeywords="axe,sword,gun,dagger,bow" MandatoryKeywords="weapon,fast" />
       <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
@@ -733,7 +733,7 @@
   </Affix>
   <Affix AffixId="fast_slave_status_ailment_chance_1" Class="slave_fast_weapon_1" AffixType="slave" Tier="1">
     <Enslaved />
-    <DropParams Frequency="10000" Hunt="1">
+    <DropParams Frequency="10000" AffixOrigin="Hunt">
       <ItemLevel LevelMin="1" LevelMax="30" />
       <Keywords OptionalKeywords="axe,sword,gun,dagger,bow" MandatoryKeywords="weapon,fast" />
       <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
@@ -745,7 +745,7 @@
   </Affix>
   <Affix AffixId="fast_slave_criticalchance_attackskill_score_1" Class="slave_fast_weapon_1" AffixType="slave" Tier="1">
     <Enslaved />
-    <DropParams Frequency="10000" Hunt="1">
+    <DropParams Frequency="10000" AffixOrigin="Hunt">
       <ItemLevel LevelMin="1" LevelMax="30" />
       <Keywords OptionalKeywords="axe,sword,gun,dagger,bow" MandatoryKeywords="weapon,fast" />
       <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
@@ -757,7 +757,7 @@
   </Affix>
   <Affix AffixId="fast_slave_local_damage_percent_all_1" Class="slave_fast_weapon_1" AffixType="slave" Tier="1">
     <Enslaved />
-    <DropParams Frequency="10000" Hunt="1">
+    <DropParams Frequency="10000" AffixOrigin="Hunt">
       <ItemLevel LevelMin="1" LevelMax="30" />
       <Keywords OptionalKeywords="axe,sword,gun,dagger,bow" MandatoryKeywords="weapon,fast" />
       <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
@@ -769,7 +769,7 @@
   </Affix>
   <Affix AffixId="fast_slave_attackspeed_score_2" Class="slave_fast_weapon_2" AffixType="slave" Tier="2">
     <Enslaved />
-    <DropParams Frequency="10000" Hunt="1">
+    <DropParams Frequency="10000" AffixOrigin="Hunt">
       <ItemLevel LevelMin="10" LevelMax="40" />
       <Keywords OptionalKeywords="axe,sword,gun,dagger,bow" MandatoryKeywords="weapon,fast" />
       <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
@@ -781,7 +781,7 @@
   </Affix>
   <Affix AffixId="fast_slave_status_ailment_chance_2" Class="slave_fast_weapon_2" AffixType="slave" Tier="2">
     <Enslaved />
-    <DropParams Frequency="10000" Hunt="1">
+    <DropParams Frequency="10000" AffixOrigin="Hunt">
       <ItemLevel LevelMin="10" LevelMax="40" />
       <Keywords OptionalKeywords="axe,sword,gun,dagger,bow" MandatoryKeywords="weapon,fast" />
       <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
@@ -793,7 +793,7 @@
   </Affix>
   <Affix AffixId="fast_slave_criticalchance_attackskill_score_2" Class="slave_fast_weapon_2" AffixType="slave" Tier="2">
     <Enslaved />
-    <DropParams Frequency="10000" Hunt="1">
+    <DropParams Frequency="10000" AffixOrigin="Hunt">
       <ItemLevel LevelMin="10" LevelMax="40" />
       <Keywords OptionalKeywords="axe,sword,gun,dagger,bow" MandatoryKeywords="weapon,fast" />
       <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
@@ -805,7 +805,7 @@
   </Affix>
   <Affix AffixId="fast_slave_local_damage_percent_all_2" Class="slave_fast_weapon_2" AffixType="slave" Tier="2">
     <Enslaved />
-    <DropParams Frequency="10000" Hunt="1">
+    <DropParams Frequency="10000" AffixOrigin="Hunt">
       <ItemLevel LevelMin="10" LevelMax="40" />
       <Keywords OptionalKeywords="axe,sword,gun,dagger,bow" MandatoryKeywords="weapon,fast" />
       <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
@@ -817,7 +817,7 @@
   </Affix>
   <Affix AffixId="fast_slave_attackspeed_score_3" Class="slave_fast_weapon_3" AffixType="slave" Tier="3">
     <Enslaved />
-    <DropParams Frequency="10000" Hunt="1">
+    <DropParams Frequency="10000" AffixOrigin="Hunt">
       <ItemLevel LevelMin="20" LevelMax="50" />
       <Keywords OptionalKeywords="axe,sword,gun,dagger,bow" MandatoryKeywords="weapon,fast" />
       <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
@@ -829,7 +829,7 @@
   </Affix>
   <Affix AffixId="fast_slave_status_ailment_chance_3" Class="slave_fast_weapon_3" AffixType="slave" Tier="3">
     <Enslaved />
-    <DropParams Frequency="10000" Hunt="1">
+    <DropParams Frequency="10000" AffixOrigin="Hunt">
       <ItemLevel LevelMin="20" LevelMax="50" />
       <Keywords OptionalKeywords="axe,sword,gun,dagger,bow" MandatoryKeywords="weapon,fast" />
       <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
@@ -841,7 +841,7 @@
   </Affix>
   <Affix AffixId="fast_slave_criticalchance_attackskill_score_3" Class="slave_fast_weapon_3" AffixType="slave" Tier="3">
     <Enslaved />
-    <DropParams Frequency="10000" Hunt="1">
+    <DropParams Frequency="10000" AffixOrigin="Hunt">
       <ItemLevel LevelMin="20" LevelMax="50" />
       <Keywords OptionalKeywords="axe,sword,gun,dagger,bow" MandatoryKeywords="weapon,fast" />
       <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
@@ -853,7 +853,7 @@
   </Affix>
   <Affix AffixId="fast_slave_local_damage_percent_all_3" Class="slave_fast_weapon_3" AffixType="slave" Tier="3">
     <Enslaved />
-    <DropParams Frequency="10000" Hunt="1">
+    <DropParams Frequency="10000" AffixOrigin="Hunt">
       <ItemLevel LevelMin="20" LevelMax="50" />
       <Keywords OptionalKeywords="axe,sword,gun,dagger,bow" MandatoryKeywords="weapon,fast" />
       <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
@@ -865,7 +865,7 @@
   </Affix>
   <Affix AffixId="fast_slave_attackspeed_score_4" Class="slave_fast_weapon_4" AffixType="slave" Tier="4">
     <Enslaved />
-    <DropParams Frequency="10000" Hunt="1">
+    <DropParams Frequency="10000" AffixOrigin="Hunt">
       <ItemLevel LevelMin="30" LevelMax="60" />
       <Keywords OptionalKeywords="axe,sword,gun,dagger,bow" MandatoryKeywords="weapon,fast" />
       <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
@@ -877,7 +877,7 @@
   </Affix>
   <Affix AffixId="fast_slave_status_ailment_chance_4" Class="slave_fast_weapon_4" AffixType="slave" Tier="4">
     <Enslaved />
-    <DropParams Frequency="10000" Hunt="1">
+    <DropParams Frequency="10000" AffixOrigin="Hunt">
       <ItemLevel LevelMin="30" LevelMax="60" />
       <Keywords OptionalKeywords="axe,sword,gun,dagger,bow" MandatoryKeywords="weapon,fast" />
       <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
@@ -889,7 +889,7 @@
   </Affix>
   <Affix AffixId="fast_slave_criticalchance_attackskill_score_4" Class="slave_fast_weapon_4" AffixType="slave" Tier="4">
     <Enslaved />
-    <DropParams Frequency="10000" Hunt="1">
+    <DropParams Frequency="10000" AffixOrigin="Hunt">
       <ItemLevel LevelMin="30" LevelMax="60" />
       <Keywords OptionalKeywords="axe,sword,gun,dagger,bow" MandatoryKeywords="weapon,fast" />
       <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
@@ -901,7 +901,7 @@
   </Affix>
   <Affix AffixId="fast_slave_local_damage_percent_all_4" Class="slave_fast_weapon_4" AffixType="slave" Tier="4">
     <Enslaved />
-    <DropParams Frequency="10000" Hunt="1">
+    <DropParams Frequency="10000" AffixOrigin="Hunt">
       <ItemLevel LevelMin="30" LevelMax="60" />
       <Keywords OptionalKeywords="axe,sword,gun,dagger,bow" MandatoryKeywords="weapon,fast" />
       <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
@@ -913,8 +913,8 @@
   </Affix>
   <Affix AffixId="fast_slave_attackspeed_score_5" Class="slave_fast_weapon_5" AffixType="slave" Tier="5">
     <Enslaved />
-    <DropParams Frequency="10000" Hunt="1">
-      <ItemLevel LevelMin="40" LevelMax="120" />
+    <DropParams Frequency="10000" AffixOrigin="Hunt">
+      <ItemLevel LevelMin="40" LevelMax="80" />
       <Keywords OptionalKeywords="axe,sword,gun,dagger,bow" MandatoryKeywords="weapon,fast" />
       <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
     </DropParams>
@@ -925,8 +925,8 @@
   </Affix>
   <Affix AffixId="fast_slave_status_ailment_chance_5" Class="slave_fast_weapon_5" AffixType="slave" Tier="5">
     <Enslaved />
-    <DropParams Frequency="10000" Hunt="1">
-      <ItemLevel LevelMin="40" LevelMax="120" />
+    <DropParams Frequency="10000" AffixOrigin="Hunt">
+      <ItemLevel LevelMin="40" LevelMax="80" />
       <Keywords OptionalKeywords="axe,sword,gun,dagger,bow" MandatoryKeywords="weapon,fast" />
       <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
     </DropParams>
@@ -937,8 +937,8 @@
   </Affix>
   <Affix AffixId="fast_slave_criticalchance_attackskill_score_5" Class="slave_fast_weapon_5" AffixType="slave" Tier="5">
     <Enslaved />
-    <DropParams Frequency="10000" Hunt="1">
-      <ItemLevel LevelMin="40" LevelMax="120" />
+    <DropParams Frequency="10000" AffixOrigin="Hunt">
+      <ItemLevel LevelMin="40" LevelMax="80" />
       <Keywords OptionalKeywords="axe,sword,gun,dagger,bow" MandatoryKeywords="weapon,fast" />
       <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
     </DropParams>
@@ -949,8 +949,8 @@
   </Affix>
   <Affix AffixId="fast_slave_local_damage_percent_all_5" Class="slave_fast_weapon_5" AffixType="slave" Tier="5">
     <Enslaved />
-    <DropParams Frequency="10000" Hunt="1">
-      <ItemLevel LevelMin="40" LevelMax="120" />
+    <DropParams Frequency="10000" AffixOrigin="Hunt">
+      <ItemLevel LevelMin="40" LevelMax="80" />
       <Keywords OptionalKeywords="axe,sword,gun,dagger,bow" MandatoryKeywords="weapon,fast" />
       <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
     </DropParams>
@@ -961,8 +961,8 @@
   </Affix>
   <Affix AffixId="fast_slave_attackspeed_score_6" Class="slave_fast_weapon_6" AffixType="slave" Tier="6">
     <Enslaved />
-    <DropParams Frequency="10000" Hunt="1">
-      <ItemLevel LevelMin="50" LevelMax="130" />
+    <DropParams Frequency="10000" AffixOrigin="Hunt">
+      <ItemLevel LevelMin="70" LevelMax="100" />
       <Keywords OptionalKeywords="axe,sword,gun,dagger,bow" MandatoryKeywords="weapon,fast" />
       <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
     </DropParams>
@@ -973,8 +973,8 @@
   </Affix>
   <Affix AffixId="fast_slave_status_ailment_chance_6" Class="slave_fast_weapon_6" AffixType="slave" Tier="6">
     <Enslaved />
-    <DropParams Frequency="10000" Hunt="1">
-      <ItemLevel LevelMin="50" LevelMax="130" />
+    <DropParams Frequency="10000" AffixOrigin="Hunt">
+      <ItemLevel LevelMin="70" LevelMax="100" />
       <Keywords OptionalKeywords="axe,sword,gun,dagger,bow" MandatoryKeywords="weapon,fast" />
       <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
     </DropParams>
@@ -985,8 +985,8 @@
   </Affix>
   <Affix AffixId="fast_slave_criticalchance_attackskill_score_6" Class="slave_fast_weapon_6" AffixType="slave" Tier="6">
     <Enslaved />
-    <DropParams Frequency="10000" Hunt="1">
-      <ItemLevel LevelMin="50" LevelMax="130" />
+    <DropParams Frequency="10000" AffixOrigin="Hunt">
+      <ItemLevel LevelMin="70" LevelMax="100" />
       <Keywords OptionalKeywords="axe,sword,gun,dagger,bow" MandatoryKeywords="weapon,fast" />
       <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
     </DropParams>
@@ -997,8 +997,8 @@
   </Affix>
   <Affix AffixId="fast_slave_local_damage_percent_all_6" Class="slave_fast_weapon_6" AffixType="slave" Tier="6">
     <Enslaved />
-    <DropParams Frequency="10000" Hunt="1">
-      <ItemLevel LevelMin="50" LevelMax="130" />
+    <DropParams Frequency="10000" AffixOrigin="Hunt">
+      <ItemLevel LevelMin="70" LevelMax="100" />
       <Keywords OptionalKeywords="axe,sword,gun,dagger,bow" MandatoryKeywords="weapon,fast" />
       <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
     </DropParams>
@@ -1009,8 +1009,8 @@
   </Affix>
   <Affix AffixId="fast_slave_attackspeed_score_7" Class="slave_fast_weapon_7" AffixType="slave" Tier="7">
     <Enslaved />
-    <DropParams Frequency="10000" Hunt="1">
-      <ItemLevel LevelMin="60" LevelMax="140" />
+    <DropParams Frequency="10000" AffixOrigin="Hunt">
+      <ItemLevel LevelMin="90" LevelMax="140" />
       <Keywords OptionalKeywords="axe,sword,gun,dagger,bow" MandatoryKeywords="weapon,fast" />
       <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
     </DropParams>
@@ -1021,8 +1021,8 @@
   </Affix>
   <Affix AffixId="fast_slave_status_ailment_chance_7" Class="slave_fast_weapon_7" AffixType="slave" Tier="7">
     <Enslaved />
-    <DropParams Frequency="10000" Hunt="1">
-      <ItemLevel LevelMin="60" LevelMax="140" />
+    <DropParams Frequency="10000" AffixOrigin="Hunt">
+      <ItemLevel LevelMin="90" LevelMax="140" />
       <Keywords OptionalKeywords="axe,sword,gun,dagger,bow" MandatoryKeywords="weapon,fast" />
       <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
     </DropParams>
@@ -1033,8 +1033,8 @@
   </Affix>
   <Affix AffixId="fast_slave_criticalchance_attackskill_score_7" Class="slave_fast_weapon_7" AffixType="slave" Tier="7">
     <Enslaved />
-    <DropParams Frequency="10000" Hunt="1">
-      <ItemLevel LevelMin="60" LevelMax="140" />
+    <DropParams Frequency="10000" AffixOrigin="Hunt">
+      <ItemLevel LevelMin="90" LevelMax="140" />
       <Keywords OptionalKeywords="axe,sword,gun,dagger,bow" MandatoryKeywords="weapon,fast" />
       <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
     </DropParams>
@@ -1045,8 +1045,8 @@
   </Affix>
   <Affix AffixId="fast_slave_local_damage_percent_all_7" Class="slave_fast_weapon_7" AffixType="slave" Tier="7">
     <Enslaved />
-    <DropParams Frequency="10000" Hunt="1">
-      <ItemLevel LevelMin="60" LevelMax="140" />
+    <DropParams Frequency="10000" AffixOrigin="Hunt">
+      <ItemLevel LevelMin="90" LevelMax="140" />
       <Keywords OptionalKeywords="axe,sword,gun,dagger,bow" MandatoryKeywords="weapon,fast" />
       <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
     </DropParams>
@@ -1057,8 +1057,8 @@
   </Affix>
   <Affix AffixId="fast_slave_attackspeed_score_8" Class="slave_fast_weapon_8" AffixType="slave" Tier="8">
     <Enslaved />
-    <DropParams Frequency="10000" Hunt="1">
-      <ItemLevel LevelMin="70" LevelMax="150" />
+    <DropParams Frequency="10000" AffixOrigin="Hunt">
+      <ItemLevel LevelMin="130" LevelMax="200" />
       <Keywords OptionalKeywords="axe,sword,gun,dagger,bow" MandatoryKeywords="weapon,fast" />
       <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
     </DropParams>
@@ -1069,8 +1069,8 @@
   </Affix>
   <Affix AffixId="fast_slave_status_ailment_chance_8" Class="slave_fast_weapon_8" AffixType="slave" Tier="8">
     <Enslaved />
-    <DropParams Frequency="10000" Hunt="1">
-      <ItemLevel LevelMin="70" LevelMax="150" />
+    <DropParams Frequency="10000" AffixOrigin="Hunt">
+      <ItemLevel LevelMin="130" LevelMax="200" />
       <Keywords OptionalKeywords="axe,sword,gun,dagger,bow" MandatoryKeywords="weapon,fast" />
       <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
     </DropParams>
@@ -1081,8 +1081,8 @@
   </Affix>
   <Affix AffixId="fast_slave_criticalchance_attackskill_score_8" Class="slave_fast_weapon_8" AffixType="slave" Tier="8">
     <Enslaved />
-    <DropParams Frequency="10000" Hunt="1">
-      <ItemLevel LevelMin="70" LevelMax="150" />
+    <DropParams Frequency="10000" AffixOrigin="Hunt">
+      <ItemLevel LevelMin="130" LevelMax="200" />
       <Keywords OptionalKeywords="axe,sword,gun,dagger,bow" MandatoryKeywords="weapon,fast" />
       <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
     </DropParams>
@@ -1093,8 +1093,8 @@
   </Affix>
   <Affix AffixId="fast_slave_local_damage_percent_all_8" Class="slave_fast_weapon_8" AffixType="slave" Tier="8">
     <Enslaved />
-    <DropParams Frequency="10000" Hunt="1">
-      <ItemLevel LevelMin="70" LevelMax="150" />
+    <DropParams Frequency="10000" AffixOrigin="Hunt">
+      <ItemLevel LevelMin="130" LevelMax="200" />
       <Keywords OptionalKeywords="axe,sword,gun,dagger,bow" MandatoryKeywords="weapon,fast" />
       <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
     </DropParams>
@@ -1105,8 +1105,8 @@
   </Affix>
   <Affix AffixId="fast_slave_attackspeed_score_9" Class="slave_fast_weapon_9" AffixType="slave" Tier="9">
     <Enslaved />
-    <DropParams Frequency="10000" Hunt="1">
-      <ItemLevel LevelMin="80" LevelMax="160" />
+    <DropParams Frequency="10000" AffixOrigin="Hunt">
+      <ItemLevel LevelMin="150" LevelMax="250" />
       <Keywords OptionalKeywords="axe,sword,gun,dagger,bow" MandatoryKeywords="weapon,fast" />
       <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
     </DropParams>
@@ -1117,8 +1117,8 @@
   </Affix>
   <Affix AffixId="fast_slave_status_ailment_chance_9" Class="slave_fast_weapon_9" AffixType="slave" Tier="9">
     <Enslaved />
-    <DropParams Frequency="10000" Hunt="1">
-      <ItemLevel LevelMin="80" LevelMax="160" />
+    <DropParams Frequency="10000" AffixOrigin="Hunt">
+      <ItemLevel LevelMin="150" LevelMax="250" />
       <Keywords OptionalKeywords="axe,sword,gun,dagger,bow" MandatoryKeywords="weapon,fast" />
       <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
     </DropParams>
@@ -1129,8 +1129,8 @@
   </Affix>
   <Affix AffixId="fast_slave_criticalchance_attackskill_score_9" Class="slave_fast_weapon_9" AffixType="slave" Tier="9">
     <Enslaved />
-    <DropParams Frequency="10000" Hunt="1">
-      <ItemLevel LevelMin="80" LevelMax="160" />
+    <DropParams Frequency="10000" AffixOrigin="Hunt">
+      <ItemLevel LevelMin="150" LevelMax="250" />
       <Keywords OptionalKeywords="axe,sword,gun,dagger,bow" MandatoryKeywords="weapon,fast" />
       <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
     </DropParams>
@@ -1141,8 +1141,8 @@
   </Affix>
   <Affix AffixId="fast_slave_local_damage_percent_all_9" Class="slave_fast_weapon_9" AffixType="slave" Tier="9">
     <Enslaved />
-    <DropParams Frequency="10000" Hunt="1">
-      <ItemLevel LevelMin="80" LevelMax="160" />
+    <DropParams Frequency="10000" AffixOrigin="Hunt">
+      <ItemLevel LevelMin="150" LevelMax="250" />
       <Keywords OptionalKeywords="axe,sword,gun,dagger,bow" MandatoryKeywords="weapon,fast" />
       <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
     </DropParams>
@@ -1153,8 +1153,8 @@
   </Affix>
   <Affix AffixId="fast_slave_attackspeed_score_10" Class="slave_fast_weapon_10" AffixType="slave" Tier="10">
     <Enslaved />
-    <DropParams Frequency="10000" Hunt="1">
-      <ItemLevel LevelMin="90" LevelMax="200" />
+    <DropParams Frequency="10000" AffixOrigin="Hunt">
+      <ItemLevel LevelMin="170" LevelMax="250" />
       <Keywords OptionalKeywords="axe,sword,gun,dagger,bow" MandatoryKeywords="weapon,fast" />
       <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
     </DropParams>
@@ -1165,8 +1165,8 @@
   </Affix>
   <Affix AffixId="fast_slave_status_ailment_chance_10" Class="slave_fast_weapon_10" AffixType="slave" Tier="10">
     <Enslaved />
-    <DropParams Frequency="10000" Hunt="1">
-      <ItemLevel LevelMin="90" LevelMax="200" />
+    <DropParams Frequency="10000" AffixOrigin="Hunt">
+      <ItemLevel LevelMin="170" LevelMax="250" />
       <Keywords OptionalKeywords="axe,sword,gun,dagger,bow" MandatoryKeywords="weapon,fast" />
       <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
     </DropParams>
@@ -1177,8 +1177,8 @@
   </Affix>
   <Affix AffixId="fast_slave_criticalchance_attackskill_score_10" Class="slave_fast_weapon_10" AffixType="slave" Tier="10">
     <Enslaved />
-    <DropParams Frequency="10000" Hunt="1">
-      <ItemLevel LevelMin="90" LevelMax="200" />
+    <DropParams Frequency="10000" AffixOrigin="Hunt">
+      <ItemLevel LevelMin="170" LevelMax="250" />
       <Keywords OptionalKeywords="axe,sword,gun,dagger,bow" MandatoryKeywords="weapon,fast" />
       <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
     </DropParams>
@@ -1189,8 +1189,8 @@
   </Affix>
   <Affix AffixId="fast_slave_local_damage_percent_all_10" Class="slave_fast_weapon_10" AffixType="slave" Tier="10">
     <Enslaved />
-    <DropParams Frequency="10000" Hunt="1">
-      <ItemLevel LevelMin="90" LevelMax="200" />
+    <DropParams Frequency="10000" AffixOrigin="Hunt">
+      <ItemLevel LevelMin="170" LevelMax="250" />
       <Keywords OptionalKeywords="axe,sword,gun,dagger,bow" MandatoryKeywords="weapon,fast" />
       <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
     </DropParams>
@@ -1201,8 +1201,8 @@
   </Affix>
   <Affix AffixId="fast_slave_attackspeed_score_11" Class="slave_fast_weapon_11" AffixType="slave" Tier="11">
     <Enslaved />
-    <DropParams Frequency="10000" Hunt="1">
-      <ItemLevel LevelMin="100" LevelMax="200" />
+    <DropParams Frequency="10000" AffixOrigin="Hunt">
+      <ItemLevel LevelMin="190" LevelMax="300" />
       <Keywords OptionalKeywords="axe,sword,gun,dagger,bow" MandatoryKeywords="weapon,fast" />
       <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
     </DropParams>
@@ -1213,8 +1213,8 @@
   </Affix>
   <Affix AffixId="fast_slave_status_ailment_chance_11" Class="slave_fast_weapon_11" AffixType="slave" Tier="11">
     <Enslaved />
-    <DropParams Frequency="10000" Hunt="1">
-      <ItemLevel LevelMin="100" LevelMax="200" />
+    <DropParams Frequency="10000" AffixOrigin="Hunt">
+      <ItemLevel LevelMin="190" LevelMax="300" />
       <Keywords OptionalKeywords="axe,sword,gun,dagger,bow" MandatoryKeywords="weapon,fast" />
       <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
     </DropParams>
@@ -1225,8 +1225,8 @@
   </Affix>
   <Affix AffixId="fast_slave_criticalchance_attackskill_score_11" Class="slave_fast_weapon_11" AffixType="slave" Tier="11">
     <Enslaved />
-    <DropParams Frequency="10000" Hunt="1">
-      <ItemLevel LevelMin="100" LevelMax="200" />
+    <DropParams Frequency="10000" AffixOrigin="Hunt">
+      <ItemLevel LevelMin="190" LevelMax="300" />
       <Keywords OptionalKeywords="axe,sword,gun,dagger,bow" MandatoryKeywords="weapon,fast" />
       <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
     </DropParams>
@@ -1237,8 +1237,8 @@
   </Affix>
   <Affix AffixId="fast_slave_local_damage_percent_all_11" Class="slave_fast_weapon_11" AffixType="slave" Tier="11">
     <Enslaved />
-    <DropParams Frequency="10000" Hunt="1">
-      <ItemLevel LevelMin="100" LevelMax="200" />
+    <DropParams Frequency="10000" AffixOrigin="Hunt">
+      <ItemLevel LevelMin="190" LevelMax="300" />
       <Keywords OptionalKeywords="axe,sword,gun,dagger,bow" MandatoryKeywords="weapon,fast" />
       <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
     </DropParams>
@@ -1249,8 +1249,8 @@
   </Affix>
   <Affix AffixId="fast_slave_attackspeed_score_12" Class="slave_fast_weapon_12" AffixType="slave" Tier="12">
     <Enslaved />
-    <DropParams Frequency="10000" Hunt="1">
-      <ItemLevel LevelMin="110" LevelMax="200" />
+    <DropParams Frequency="10000" AffixOrigin="Hunt">
+      <ItemLevel LevelMin="190" LevelMax="300" />
       <Keywords OptionalKeywords="axe,sword,gun,dagger,bow" MandatoryKeywords="weapon,fast" />
       <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
     </DropParams>
@@ -1261,8 +1261,8 @@
   </Affix>
   <Affix AffixId="fast_slave_status_ailment_chance_12" Class="slave_fast_weapon_12" AffixType="slave" Tier="12">
     <Enslaved />
-    <DropParams Frequency="10000" Hunt="1">
-      <ItemLevel LevelMin="110" LevelMax="200" />
+    <DropParams Frequency="10000" AffixOrigin="Hunt">
+      <ItemLevel LevelMin="190" LevelMax="300" />
       <Keywords OptionalKeywords="axe,sword,gun,dagger,bow" MandatoryKeywords="weapon,fast" />
       <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
     </DropParams>
@@ -1273,8 +1273,8 @@
   </Affix>
   <Affix AffixId="fast_slave_criticalchance_attackskill_score_12" Class="slave_fast_weapon_12" AffixType="slave" Tier="12">
     <Enslaved />
-    <DropParams Frequency="10000" Hunt="1">
-      <ItemLevel LevelMin="110" LevelMax="200" />
+    <DropParams Frequency="10000" AffixOrigin="Hunt">
+      <ItemLevel LevelMin="190" LevelMax="300" />
       <Keywords OptionalKeywords="axe,sword,gun,dagger,bow" MandatoryKeywords="weapon,fast" />
       <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
     </DropParams>
@@ -1285,8 +1285,8 @@
   </Affix>
   <Affix AffixId="fast_slave_local_damage_percent_all_12" Class="slave_fast_weapon_12" AffixType="slave" Tier="12">
     <Enslaved />
-    <DropParams Frequency="10000" Hunt="1">
-      <ItemLevel LevelMin="110" LevelMax="200" />
+    <DropParams Frequency="10000" AffixOrigin="Hunt">
+      <ItemLevel LevelMin="190" LevelMax="300" />
       <Keywords OptionalKeywords="axe,sword,gun,dagger,bow" MandatoryKeywords="weapon,fast" />
       <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
     </DropParams>
@@ -1297,7 +1297,7 @@
   </Affix>
   <Affix AffixId="slow_slave_attackspeed_score_1" Class="slave_slow_weapon_1" AffixType="slave" Tier="1">
     <Enslaved />
-    <DropParams Frequency="10000" Hunt="1">
+    <DropParams Frequency="10000" AffixOrigin="Hunt">
       <ItemLevel LevelMin="1" LevelMax="30" />
       <Keywords OptionalKeywords="physical_weapon" MandatoryKeywords="weapon,slow" />
       <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
@@ -1309,7 +1309,7 @@
   </Affix>
   <Affix AffixId="slow_slave_status_ailment_chance_1" Class="slave_slow_weapon_1" AffixType="slave" Tier="1">
     <Enslaved />
-    <DropParams Frequency="10000" Hunt="1">
+    <DropParams Frequency="10000" AffixOrigin="Hunt">
       <ItemLevel LevelMin="1" LevelMax="30" />
       <Keywords OptionalKeywords="physical_weapon" MandatoryKeywords="weapon,slow" />
       <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
@@ -1321,7 +1321,7 @@
   </Affix>
   <Affix AffixId="slow_slave_criticalchance_attackskill_score_1" Class="slave_slow_weapon_1" AffixType="slave" Tier="1">
     <Enslaved />
-    <DropParams Frequency="10000" Hunt="1">
+    <DropParams Frequency="10000" AffixOrigin="Hunt">
       <ItemLevel LevelMin="1" LevelMax="30" />
       <Keywords OptionalKeywords="physical_weapon" MandatoryKeywords="weapon,slow" />
       <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
@@ -1333,7 +1333,7 @@
   </Affix>
   <Affix AffixId="slow_slave_local_damage_percent_all_1" Class="slave_slow_weapon_1" AffixType="slave" Tier="1">
     <Enslaved />
-    <DropParams Frequency="10000" Hunt="1">
+    <DropParams Frequency="10000" AffixOrigin="Hunt">
       <ItemLevel LevelMin="1" LevelMax="30" />
       <Keywords OptionalKeywords="physical_weapon" MandatoryKeywords="weapon,slow" />
       <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
@@ -1345,7 +1345,7 @@
   </Affix>
   <Affix AffixId="slow_slave_attackspeed_score_2" Class="slave_slow_weapon_2" AffixType="slave" Tier="2">
     <Enslaved />
-    <DropParams Frequency="10000" Hunt="1">
+    <DropParams Frequency="10000" AffixOrigin="Hunt">
       <ItemLevel LevelMin="10" LevelMax="40" />
       <Keywords OptionalKeywords="physical_weapon" MandatoryKeywords="weapon,slow" />
       <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
@@ -1357,7 +1357,7 @@
   </Affix>
   <Affix AffixId="slow_slave_status_ailment_chance_2" Class="slave_slow_weapon_2" AffixType="slave" Tier="2">
     <Enslaved />
-    <DropParams Frequency="10000" Hunt="1">
+    <DropParams Frequency="10000" AffixOrigin="Hunt">
       <ItemLevel LevelMin="10" LevelMax="40" />
       <Keywords OptionalKeywords="physical_weapon" MandatoryKeywords="weapon,slow" />
       <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
@@ -1369,7 +1369,7 @@
   </Affix>
   <Affix AffixId="slow_slave_criticalchance_attackskill_score_2" Class="slave_slow_weapon_2" AffixType="slave" Tier="2">
     <Enslaved />
-    <DropParams Frequency="10000" Hunt="1">
+    <DropParams Frequency="10000" AffixOrigin="Hunt">
       <ItemLevel LevelMin="10" LevelMax="40" />
       <Keywords OptionalKeywords="physical_weapon" MandatoryKeywords="weapon,slow" />
       <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
@@ -1381,7 +1381,7 @@
   </Affix>
   <Affix AffixId="slow_slave_local_damage_percent_all_2" Class="slave_slow_weapon_2" AffixType="slave" Tier="2">
     <Enslaved />
-    <DropParams Frequency="10000" Hunt="1">
+    <DropParams Frequency="10000" AffixOrigin="Hunt">
       <ItemLevel LevelMin="10" LevelMax="40" />
       <Keywords OptionalKeywords="physical_weapon" MandatoryKeywords="weapon,slow" />
       <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
@@ -1393,7 +1393,7 @@
   </Affix>
   <Affix AffixId="slow_slave_attackspeed_score_3" Class="slave_slow_weapon_3" AffixType="slave" Tier="3">
     <Enslaved />
-    <DropParams Frequency="10000" Hunt="1">
+    <DropParams Frequency="10000" AffixOrigin="Hunt">
       <ItemLevel LevelMin="20" LevelMax="50" />
       <Keywords OptionalKeywords="physical_weapon" MandatoryKeywords="weapon,slow" />
       <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
@@ -1405,7 +1405,7 @@
   </Affix>
   <Affix AffixId="slow_slave_status_ailment_chance_3" Class="slave_slow_weapon_3" AffixType="slave" Tier="3">
     <Enslaved />
-    <DropParams Frequency="10000" Hunt="1">
+    <DropParams Frequency="10000" AffixOrigin="Hunt">
       <ItemLevel LevelMin="20" LevelMax="50" />
       <Keywords OptionalKeywords="physical_weapon" MandatoryKeywords="weapon,slow" />
       <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
@@ -1417,7 +1417,7 @@
   </Affix>
   <Affix AffixId="slow_slave_criticalchance_attackskill_score_3" Class="slave_slow_weapon_3" AffixType="slave" Tier="3">
     <Enslaved />
-    <DropParams Frequency="10000" Hunt="1">
+    <DropParams Frequency="10000" AffixOrigin="Hunt">
       <ItemLevel LevelMin="20" LevelMax="50" />
       <Keywords OptionalKeywords="physical_weapon" MandatoryKeywords="weapon,slow" />
       <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
@@ -1429,7 +1429,7 @@
   </Affix>
   <Affix AffixId="slow_slave_local_damage_percent_all_3" Class="slave_slow_weapon_3" AffixType="slave" Tier="3">
     <Enslaved />
-    <DropParams Frequency="10000" Hunt="1">
+    <DropParams Frequency="10000" AffixOrigin="Hunt">
       <ItemLevel LevelMin="20" LevelMax="50" />
       <Keywords OptionalKeywords="physical_weapon" MandatoryKeywords="weapon,slow" />
       <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
@@ -1441,7 +1441,7 @@
   </Affix>
   <Affix AffixId="slow_slave_attackspeed_score_4" Class="slave_slow_weapon_4" AffixType="slave" Tier="4">
     <Enslaved />
-    <DropParams Frequency="10000" Hunt="1">
+    <DropParams Frequency="10000" AffixOrigin="Hunt">
       <ItemLevel LevelMin="30" LevelMax="60" />
       <Keywords OptionalKeywords="physical_weapon" MandatoryKeywords="weapon,slow" />
       <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
@@ -1453,7 +1453,7 @@
   </Affix>
   <Affix AffixId="slow_slave_status_ailment_chance_4" Class="slave_slow_weapon_4" AffixType="slave" Tier="4">
     <Enslaved />
-    <DropParams Frequency="10000" Hunt="1">
+    <DropParams Frequency="10000" AffixOrigin="Hunt">
       <ItemLevel LevelMin="30" LevelMax="60" />
       <Keywords OptionalKeywords="physical_weapon" MandatoryKeywords="weapon,slow" />
       <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
@@ -1465,7 +1465,7 @@
   </Affix>
   <Affix AffixId="slow_slave_criticalchance_attackskill_score_4" Class="slave_slow_weapon_4" AffixType="slave" Tier="4">
     <Enslaved />
-    <DropParams Frequency="10000" Hunt="1">
+    <DropParams Frequency="10000" AffixOrigin="Hunt">
       <ItemLevel LevelMin="30" LevelMax="60" />
       <Keywords OptionalKeywords="physical_weapon" MandatoryKeywords="weapon,slow" />
       <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
@@ -1477,7 +1477,7 @@
   </Affix>
   <Affix AffixId="slow_slave_local_damage_percent_all_4" Class="slave_slow_weapon_4" AffixType="slave" Tier="4">
     <Enslaved />
-    <DropParams Frequency="10000" Hunt="1">
+    <DropParams Frequency="10000" AffixOrigin="Hunt">
       <ItemLevel LevelMin="30" LevelMax="60" />
       <Keywords OptionalKeywords="physical_weapon" MandatoryKeywords="weapon,slow" />
       <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
@@ -1489,8 +1489,8 @@
   </Affix>
   <Affix AffixId="slow_slave_attackspeed_score_5" Class="slave_slow_weapon_5" AffixType="slave" Tier="5">
     <Enslaved />
-    <DropParams Frequency="10000" Hunt="1">
-      <ItemLevel LevelMin="40" LevelMax="120" />
+    <DropParams Frequency="10000" AffixOrigin="Hunt">
+      <ItemLevel LevelMin="40" LevelMax="80" />
       <Keywords OptionalKeywords="physical_weapon" MandatoryKeywords="weapon,slow" />
       <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
     </DropParams>
@@ -1501,8 +1501,8 @@
   </Affix>
   <Affix AffixId="slow_slave_status_ailment_chance_5" Class="slave_slow_weapon_5" AffixType="slave" Tier="5">
     <Enslaved />
-    <DropParams Frequency="10000" Hunt="1">
-      <ItemLevel LevelMin="40" LevelMax="120" />
+    <DropParams Frequency="10000" AffixOrigin="Hunt">
+      <ItemLevel LevelMin="40" LevelMax="80" />
       <Keywords OptionalKeywords="physical_weapon" MandatoryKeywords="weapon,slow" />
       <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
     </DropParams>
@@ -1513,8 +1513,8 @@
   </Affix>
   <Affix AffixId="slow_slave_criticalchance_attackskill_score_5" Class="slave_slow_weapon_5" AffixType="slave" Tier="5">
     <Enslaved />
-    <DropParams Frequency="10000" Hunt="1">
-      <ItemLevel LevelMin="40" LevelMax="120" />
+    <DropParams Frequency="10000" AffixOrigin="Hunt">
+      <ItemLevel LevelMin="40" LevelMax="80" />
       <Keywords OptionalKeywords="physical_weapon" MandatoryKeywords="weapon,slow" />
       <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
     </DropParams>
@@ -1525,8 +1525,8 @@
   </Affix>
   <Affix AffixId="slow_slave_local_damage_percent_all_5" Class="slave_slow_weapon_5" AffixType="slave" Tier="5">
     <Enslaved />
-    <DropParams Frequency="10000" Hunt="1">
-      <ItemLevel LevelMin="40" LevelMax="120" />
+    <DropParams Frequency="10000" AffixOrigin="Hunt">
+      <ItemLevel LevelMin="40" LevelMax="80" />
       <Keywords OptionalKeywords="physical_weapon" MandatoryKeywords="weapon,slow" />
       <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
     </DropParams>
@@ -1537,8 +1537,8 @@
   </Affix>
   <Affix AffixId="slow_slave_attackspeed_score_6" Class="slave_slow_weapon_6" AffixType="slave" Tier="6">
     <Enslaved />
-    <DropParams Frequency="10000" Hunt="1">
-      <ItemLevel LevelMin="50" LevelMax="130" />
+    <DropParams Frequency="10000" AffixOrigin="Hunt">
+      <ItemLevel LevelMin="70" LevelMax="100" />
       <Keywords OptionalKeywords="physical_weapon" MandatoryKeywords="weapon,slow" />
       <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
     </DropParams>
@@ -1549,8 +1549,8 @@
   </Affix>
   <Affix AffixId="slow_slave_status_ailment_chance_6" Class="slave_slow_weapon_6" AffixType="slave" Tier="6">
     <Enslaved />
-    <DropParams Frequency="10000" Hunt="1">
-      <ItemLevel LevelMin="50" LevelMax="130" />
+    <DropParams Frequency="10000" AffixOrigin="Hunt">
+      <ItemLevel LevelMin="70" LevelMax="100" />
       <Keywords OptionalKeywords="physical_weapon" MandatoryKeywords="weapon,slow" />
       <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
     </DropParams>
@@ -1561,8 +1561,8 @@
   </Affix>
   <Affix AffixId="slow_slave_criticalchance_attackskill_score_6" Class="slave_slow_weapon_6" AffixType="slave" Tier="6">
     <Enslaved />
-    <DropParams Frequency="10000" Hunt="1">
-      <ItemLevel LevelMin="50" LevelMax="130" />
+    <DropParams Frequency="10000" AffixOrigin="Hunt">
+      <ItemLevel LevelMin="70" LevelMax="100" />
       <Keywords OptionalKeywords="physical_weapon" MandatoryKeywords="weapon,slow" />
       <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
     </DropParams>
@@ -1573,8 +1573,8 @@
   </Affix>
   <Affix AffixId="slow_slave_local_damage_percent_all_6" Class="slave_slow_weapon_6" AffixType="slave" Tier="6">
     <Enslaved />
-    <DropParams Frequency="10000" Hunt="1">
-      <ItemLevel LevelMin="50" LevelMax="130" />
+    <DropParams Frequency="10000" AffixOrigin="Hunt">
+      <ItemLevel LevelMin="70" LevelMax="100" />
       <Keywords OptionalKeywords="physical_weapon" MandatoryKeywords="weapon,slow" />
       <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
     </DropParams>
@@ -1585,8 +1585,8 @@
   </Affix>
   <Affix AffixId="slow_slave_attackspeed_score_7" Class="slave_slow_weapon_7" AffixType="slave" Tier="7">
     <Enslaved />
-    <DropParams Frequency="10000" Hunt="1">
-      <ItemLevel LevelMin="60" LevelMax="140" />
+    <DropParams Frequency="10000" AffixOrigin="Hunt">
+      <ItemLevel LevelMin="90" LevelMax="140" />
       <Keywords OptionalKeywords="physical_weapon" MandatoryKeywords="weapon,slow" />
       <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
     </DropParams>
@@ -1597,8 +1597,8 @@
   </Affix>
   <Affix AffixId="slow_slave_status_ailment_chance_7" Class="slave_slow_weapon_7" AffixType="slave" Tier="7">
     <Enslaved />
-    <DropParams Frequency="10000" Hunt="1">
-      <ItemLevel LevelMin="60" LevelMax="140" />
+    <DropParams Frequency="10000" AffixOrigin="Hunt">
+      <ItemLevel LevelMin="90" LevelMax="140" />
       <Keywords OptionalKeywords="physical_weapon" MandatoryKeywords="weapon,slow" />
       <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
     </DropParams>
@@ -1609,8 +1609,8 @@
   </Affix>
   <Affix AffixId="slow_slave_criticalchance_attackskill_score_7" Class="slave_slow_weapon_7" AffixType="slave" Tier="7">
     <Enslaved />
-    <DropParams Frequency="10000" Hunt="1">
-      <ItemLevel LevelMin="60" LevelMax="140" />
+    <DropParams Frequency="10000" AffixOrigin="Hunt">
+      <ItemLevel LevelMin="90" LevelMax="140" />
       <Keywords OptionalKeywords="physical_weapon" MandatoryKeywords="weapon,slow" />
       <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
     </DropParams>
@@ -1621,8 +1621,8 @@
   </Affix>
   <Affix AffixId="slow_slave_local_damage_percent_all_7" Class="slave_slow_weapon_7" AffixType="slave" Tier="7">
     <Enslaved />
-    <DropParams Frequency="10000" Hunt="1">
-      <ItemLevel LevelMin="60" LevelMax="140" />
+    <DropParams Frequency="10000" AffixOrigin="Hunt">
+      <ItemLevel LevelMin="90" LevelMax="140" />
       <Keywords OptionalKeywords="physical_weapon" MandatoryKeywords="weapon,slow" />
       <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
     </DropParams>
@@ -1633,8 +1633,8 @@
   </Affix>
   <Affix AffixId="slow_slave_attackspeed_score_8" Class="slave_slow_weapon_8" AffixType="slave" Tier="8">
     <Enslaved />
-    <DropParams Frequency="10000" Hunt="1">
-      <ItemLevel LevelMin="70" LevelMax="150" />
+    <DropParams Frequency="10000" AffixOrigin="Hunt">
+      <ItemLevel LevelMin="130" LevelMax="200" />
       <Keywords OptionalKeywords="physical_weapon" MandatoryKeywords="weapon,slow" />
       <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
     </DropParams>
@@ -1645,8 +1645,8 @@
   </Affix>
   <Affix AffixId="slow_slave_status_ailment_chance_8" Class="slave_slow_weapon_8" AffixType="slave" Tier="8">
     <Enslaved />
-    <DropParams Frequency="10000" Hunt="1">
-      <ItemLevel LevelMin="70" LevelMax="150" />
+    <DropParams Frequency="10000" AffixOrigin="Hunt">
+      <ItemLevel LevelMin="130" LevelMax="200" />
       <Keywords OptionalKeywords="physical_weapon" MandatoryKeywords="weapon,slow" />
       <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
     </DropParams>
@@ -1657,8 +1657,8 @@
   </Affix>
   <Affix AffixId="slow_slave_criticalchance_attackskill_score_8" Class="slave_slow_weapon_8" AffixType="slave" Tier="8">
     <Enslaved />
-    <DropParams Frequency="10000" Hunt="1">
-      <ItemLevel LevelMin="70" LevelMax="150" />
+    <DropParams Frequency="10000" AffixOrigin="Hunt">
+      <ItemLevel LevelMin="130" LevelMax="200" />
       <Keywords OptionalKeywords="physical_weapon" MandatoryKeywords="weapon,slow" />
       <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
     </DropParams>
@@ -1669,8 +1669,8 @@
   </Affix>
   <Affix AffixId="slow_slave_local_damage_percent_all_8" Class="slave_slow_weapon_8" AffixType="slave" Tier="8">
     <Enslaved />
-    <DropParams Frequency="10000" Hunt="1">
-      <ItemLevel LevelMin="70" LevelMax="150" />
+    <DropParams Frequency="10000" AffixOrigin="Hunt">
+      <ItemLevel LevelMin="130" LevelMax="200" />
       <Keywords OptionalKeywords="physical_weapon" MandatoryKeywords="weapon,slow" />
       <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
     </DropParams>
@@ -1681,8 +1681,8 @@
   </Affix>
   <Affix AffixId="slow_slave_attackspeed_score_9" Class="slave_slow_weapon_9" AffixType="slave" Tier="9">
     <Enslaved />
-    <DropParams Frequency="10000" Hunt="1">
-      <ItemLevel LevelMin="80" LevelMax="160" />
+    <DropParams Frequency="10000" AffixOrigin="Hunt">
+      <ItemLevel LevelMin="150" LevelMax="250" />
       <Keywords OptionalKeywords="physical_weapon" MandatoryKeywords="weapon,slow" />
       <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
     </DropParams>
@@ -1693,8 +1693,8 @@
   </Affix>
   <Affix AffixId="slow_slave_status_ailment_chance_9" Class="slave_slow_weapon_9" AffixType="slave" Tier="9">
     <Enslaved />
-    <DropParams Frequency="10000" Hunt="1">
-      <ItemLevel LevelMin="80" LevelMax="160" />
+    <DropParams Frequency="10000" AffixOrigin="Hunt">
+      <ItemLevel LevelMin="150" LevelMax="250" />
       <Keywords OptionalKeywords="physical_weapon" MandatoryKeywords="weapon,slow" />
       <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
     </DropParams>
@@ -1705,8 +1705,8 @@
   </Affix>
   <Affix AffixId="slow_slave_criticalchance_attackskill_score_9" Class="slave_slow_weapon_9" AffixType="slave" Tier="9">
     <Enslaved />
-    <DropParams Frequency="10000" Hunt="1">
-      <ItemLevel LevelMin="80" LevelMax="160" />
+    <DropParams Frequency="10000" AffixOrigin="Hunt">
+      <ItemLevel LevelMin="150" LevelMax="250" />
       <Keywords OptionalKeywords="physical_weapon" MandatoryKeywords="weapon,slow" />
       <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
     </DropParams>
@@ -1717,8 +1717,8 @@
   </Affix>
   <Affix AffixId="slow_slave_local_damage_percent_all_9" Class="slave_slow_weapon_9" AffixType="slave" Tier="9">
     <Enslaved />
-    <DropParams Frequency="10000" Hunt="1">
-      <ItemLevel LevelMin="80" LevelMax="160" />
+    <DropParams Frequency="10000" AffixOrigin="Hunt">
+      <ItemLevel LevelMin="150" LevelMax="250" />
       <Keywords OptionalKeywords="physical_weapon" MandatoryKeywords="weapon,slow" />
       <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
     </DropParams>
@@ -1729,8 +1729,8 @@
   </Affix>
   <Affix AffixId="slow_slave_attackspeed_score_10" Class="slave_slow_weapon_10" AffixType="slave" Tier="10">
     <Enslaved />
-    <DropParams Frequency="10000" Hunt="1">
-      <ItemLevel LevelMin="90" LevelMax="200" />
+    <DropParams Frequency="10000" AffixOrigin="Hunt">
+      <ItemLevel LevelMin="170" LevelMax="250" />
       <Keywords OptionalKeywords="physical_weapon" MandatoryKeywords="weapon,slow" />
       <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
     </DropParams>
@@ -1741,8 +1741,8 @@
   </Affix>
   <Affix AffixId="slow_slave_status_ailment_chance_10" Class="slave_slow_weapon_10" AffixType="slave" Tier="10">
     <Enslaved />
-    <DropParams Frequency="10000" Hunt="1">
-      <ItemLevel LevelMin="90" LevelMax="200" />
+    <DropParams Frequency="10000" AffixOrigin="Hunt">
+      <ItemLevel LevelMin="170" LevelMax="250" />
       <Keywords OptionalKeywords="physical_weapon" MandatoryKeywords="weapon,slow" />
       <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
     </DropParams>
@@ -1753,8 +1753,8 @@
   </Affix>
   <Affix AffixId="slow_slave_criticalchance_attackskill_score_10" Class="slave_slow_weapon_10" AffixType="slave" Tier="10">
     <Enslaved />
-    <DropParams Frequency="10000" Hunt="1">
-      <ItemLevel LevelMin="90" LevelMax="200" />
+    <DropParams Frequency="10000" AffixOrigin="Hunt">
+      <ItemLevel LevelMin="170" LevelMax="250" />
       <Keywords OptionalKeywords="physical_weapon" MandatoryKeywords="weapon,slow" />
       <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
     </DropParams>
@@ -1765,8 +1765,8 @@
   </Affix>
   <Affix AffixId="slow_slave_local_damage_percent_all_10" Class="slave_slow_weapon_10" AffixType="slave" Tier="10">
     <Enslaved />
-    <DropParams Frequency="10000" Hunt="1">
-      <ItemLevel LevelMin="90" LevelMax="200" />
+    <DropParams Frequency="10000" AffixOrigin="Hunt">
+      <ItemLevel LevelMin="170" LevelMax="250" />
       <Keywords OptionalKeywords="physical_weapon" MandatoryKeywords="weapon,slow" />
       <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
     </DropParams>
@@ -1777,8 +1777,8 @@
   </Affix>
   <Affix AffixId="slow_slave_attackspeed_score_11" Class="slave_slow_weapon_11" AffixType="slave" Tier="11">
     <Enslaved />
-    <DropParams Frequency="10000" Hunt="1">
-      <ItemLevel LevelMin="100" LevelMax="200" />
+    <DropParams Frequency="10000" AffixOrigin="Hunt">
+      <ItemLevel LevelMin="190" LevelMax="300" />
       <Keywords OptionalKeywords="physical_weapon" MandatoryKeywords="weapon,slow" />
       <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
     </DropParams>
@@ -1789,8 +1789,8 @@
   </Affix>
   <Affix AffixId="slow_slave_status_ailment_chance_11" Class="slave_slow_weapon_11" AffixType="slave" Tier="11">
     <Enslaved />
-    <DropParams Frequency="10000" Hunt="1">
-      <ItemLevel LevelMin="100" LevelMax="200" />
+    <DropParams Frequency="10000" AffixOrigin="Hunt">
+      <ItemLevel LevelMin="190" LevelMax="300" />
       <Keywords OptionalKeywords="physical_weapon" MandatoryKeywords="weapon,slow" />
       <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
     </DropParams>
@@ -1801,8 +1801,8 @@
   </Affix>
   <Affix AffixId="slow_slave_criticalchance_attackskill_score_11" Class="slave_slow_weapon_11" AffixType="slave" Tier="11">
     <Enslaved />
-    <DropParams Frequency="10000" Hunt="1">
-      <ItemLevel LevelMin="100" LevelMax="200" />
+    <DropParams Frequency="10000" AffixOrigin="Hunt">
+      <ItemLevel LevelMin="190" LevelMax="300" />
       <Keywords OptionalKeywords="physical_weapon" MandatoryKeywords="weapon,slow" />
       <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
     </DropParams>
@@ -1813,8 +1813,8 @@
   </Affix>
   <Affix AffixId="slow_slave_local_damage_percent_all_11" Class="slave_slow_weapon_11" AffixType="slave" Tier="11">
     <Enslaved />
-    <DropParams Frequency="10000" Hunt="1">
-      <ItemLevel LevelMin="100" LevelMax="200" />
+    <DropParams Frequency="10000" AffixOrigin="Hunt">
+      <ItemLevel LevelMin="190" LevelMax="300" />
       <Keywords OptionalKeywords="physical_weapon" MandatoryKeywords="weapon,slow" />
       <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
     </DropParams>
@@ -1825,8 +1825,8 @@
   </Affix>
   <Affix AffixId="slow_slave_attackspeed_score_12" Class="slave_slow_weapon_12" AffixType="slave" Tier="12">
     <Enslaved />
-    <DropParams Frequency="10000" Hunt="1">
-      <ItemLevel LevelMin="110" LevelMax="200" />
+    <DropParams Frequency="10000" AffixOrigin="Hunt">
+      <ItemLevel LevelMin="190" LevelMax="300" />
       <Keywords OptionalKeywords="physical_weapon" MandatoryKeywords="weapon,slow" />
       <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
     </DropParams>
@@ -1837,8 +1837,8 @@
   </Affix>
   <Affix AffixId="slow_slave_status_ailment_chance_12" Class="slave_slow_weapon_12" AffixType="slave" Tier="12">
     <Enslaved />
-    <DropParams Frequency="10000" Hunt="1">
-      <ItemLevel LevelMin="110" LevelMax="200" />
+    <DropParams Frequency="10000" AffixOrigin="Hunt">
+      <ItemLevel LevelMin="190" LevelMax="300" />
       <Keywords OptionalKeywords="physical_weapon" MandatoryKeywords="weapon,slow" />
       <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
     </DropParams>
@@ -1849,8 +1849,8 @@
   </Affix>
   <Affix AffixId="slow_slave_criticalchance_attackskill_score_12" Class="slave_slow_weapon_12" AffixType="slave" Tier="12">
     <Enslaved />
-    <DropParams Frequency="10000" Hunt="1">
-      <ItemLevel LevelMin="110" LevelMax="200" />
+    <DropParams Frequency="10000" AffixOrigin="Hunt">
+      <ItemLevel LevelMin="190" LevelMax="300" />
       <Keywords OptionalKeywords="physical_weapon" MandatoryKeywords="weapon,slow" />
       <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
     </DropParams>
@@ -1861,8 +1861,8 @@
   </Affix>
   <Affix AffixId="slow_slave_local_damage_percent_all_12" Class="slave_slow_weapon_12" AffixType="slave" Tier="12">
     <Enslaved />
-    <DropParams Frequency="10000" Hunt="1">
-      <ItemLevel LevelMin="110" LevelMax="200" />
+    <DropParams Frequency="10000" AffixOrigin="Hunt">
+      <ItemLevel LevelMin="190" LevelMax="300" />
       <Keywords OptionalKeywords="physical_weapon" MandatoryKeywords="weapon,slow" />
       <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
     </DropParams>
@@ -1873,7 +1873,7 @@
   </Affix>
   <Affix AffixId="all_slave_attackspeed_score_1" Class="slave_all_weapon_1" AffixType="slave" Tier="1">
     <Enslaved />
-    <DropParams Frequency="10000" Hunt="1">
+    <DropParams Frequency="10000" AffixOrigin="Hunt">
       <ItemLevel LevelMin="1" LevelMax="30" />
       <Keywords OptionalKeywords="physical_weapon" MandatoryKeywords="weapon" />
       <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
@@ -1885,7 +1885,7 @@
   </Affix>
   <Affix AffixId="all_slave_status_ailment_chance_1" Class="slave_all_weapon_1" AffixType="slave" Tier="1">
     <Enslaved />
-    <DropParams Frequency="10000" Hunt="1">
+    <DropParams Frequency="10000" AffixOrigin="Hunt">
       <ItemLevel LevelMin="1" LevelMax="30" />
       <Keywords OptionalKeywords="physical_weapon" MandatoryKeywords="weapon" />
       <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
@@ -1897,7 +1897,7 @@
   </Affix>
   <Affix AffixId="all_slave_criticalchance_attackskill_score_1" Class="slave_all_weapon_1" AffixType="slave" Tier="1">
     <Enslaved />
-    <DropParams Frequency="10000" Hunt="1">
+    <DropParams Frequency="10000" AffixOrigin="Hunt">
       <ItemLevel LevelMin="1" LevelMax="30" />
       <Keywords OptionalKeywords="physical_weapon" MandatoryKeywords="weapon" />
       <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
@@ -1909,7 +1909,7 @@
   </Affix>
   <Affix AffixId="all_slave_local_damage_percent_all_1" Class="slave_all_weapon_1" AffixType="slave" Tier="1">
     <Enslaved />
-    <DropParams Frequency="10000" Hunt="1">
+    <DropParams Frequency="10000" AffixOrigin="Hunt">
       <ItemLevel LevelMin="1" LevelMax="30" />
       <Keywords OptionalKeywords="physical_weapon" MandatoryKeywords="weapon" />
       <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
@@ -1921,7 +1921,7 @@
   </Affix>
   <Affix AffixId="all_slave_attackspeed_score_2" Class="slave_all_weapon_2" AffixType="slave" Tier="2">
     <Enslaved />
-    <DropParams Frequency="10000" Hunt="1">
+    <DropParams Frequency="10000" AffixOrigin="Hunt">
       <ItemLevel LevelMin="10" LevelMax="40" />
       <Keywords OptionalKeywords="physical_weapon" MandatoryKeywords="weapon" />
       <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
@@ -1933,7 +1933,7 @@
   </Affix>
   <Affix AffixId="all_slave_status_ailment_chance_2" Class="slave_all_weapon_2" AffixType="slave" Tier="2">
     <Enslaved />
-    <DropParams Frequency="10000" Hunt="1">
+    <DropParams Frequency="10000" AffixOrigin="Hunt">
       <ItemLevel LevelMin="10" LevelMax="40" />
       <Keywords OptionalKeywords="physical_weapon" MandatoryKeywords="weapon" />
       <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
@@ -1945,7 +1945,7 @@
   </Affix>
   <Affix AffixId="all_slave_criticalchance_attackskill_score_2" Class="slave_all_weapon_2" AffixType="slave" Tier="2">
     <Enslaved />
-    <DropParams Frequency="10000" Hunt="1">
+    <DropParams Frequency="10000" AffixOrigin="Hunt">
       <ItemLevel LevelMin="10" LevelMax="40" />
       <Keywords OptionalKeywords="physical_weapon" MandatoryKeywords="weapon" />
       <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
@@ -1957,7 +1957,7 @@
   </Affix>
   <Affix AffixId="all_slave_local_damage_percent_all_2" Class="slave_all_weapon_2" AffixType="slave" Tier="2">
     <Enslaved />
-    <DropParams Frequency="10000" Hunt="1">
+    <DropParams Frequency="10000" AffixOrigin="Hunt">
       <ItemLevel LevelMin="10" LevelMax="40" />
       <Keywords OptionalKeywords="physical_weapon" MandatoryKeywords="weapon" />
       <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
@@ -1969,7 +1969,7 @@
   </Affix>
   <Affix AffixId="all_slave_attackspeed_score_3" Class="slave_all_weapon_3" AffixType="slave" Tier="3">
     <Enslaved />
-    <DropParams Frequency="10000" Hunt="1">
+    <DropParams Frequency="10000" AffixOrigin="Hunt">
       <ItemLevel LevelMin="20" LevelMax="50" />
       <Keywords OptionalKeywords="physical_weapon" MandatoryKeywords="weapon" />
       <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
@@ -1981,7 +1981,7 @@
   </Affix>
   <Affix AffixId="all_slave_status_ailment_chance_3" Class="slave_all_weapon_3" AffixType="slave" Tier="3">
     <Enslaved />
-    <DropParams Frequency="10000" Hunt="1">
+    <DropParams Frequency="10000" AffixOrigin="Hunt">
       <ItemLevel LevelMin="20" LevelMax="50" />
       <Keywords OptionalKeywords="physical_weapon" MandatoryKeywords="weapon" />
       <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
@@ -1993,7 +1993,7 @@
   </Affix>
   <Affix AffixId="all_slave_criticalchance_attackskill_score_3" Class="slave_all_weapon_3" AffixType="slave" Tier="3">
     <Enslaved />
-    <DropParams Frequency="10000" Hunt="1">
+    <DropParams Frequency="10000" AffixOrigin="Hunt">
       <ItemLevel LevelMin="20" LevelMax="50" />
       <Keywords OptionalKeywords="physical_weapon" MandatoryKeywords="weapon" />
       <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
@@ -2005,7 +2005,7 @@
   </Affix>
   <Affix AffixId="all_slave_local_damage_percent_all_3" Class="slave_all_weapon_3" AffixType="slave" Tier="3">
     <Enslaved />
-    <DropParams Frequency="10000" Hunt="1">
+    <DropParams Frequency="10000" AffixOrigin="Hunt">
       <ItemLevel LevelMin="20" LevelMax="50" />
       <Keywords OptionalKeywords="physical_weapon" MandatoryKeywords="weapon" />
       <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
@@ -2017,7 +2017,7 @@
   </Affix>
   <Affix AffixId="all_slave_attackspeed_score_4" Class="slave_all_weapon_4" AffixType="slave" Tier="4">
     <Enslaved />
-    <DropParams Frequency="10000" Hunt="1">
+    <DropParams Frequency="10000" AffixOrigin="Hunt">
       <ItemLevel LevelMin="30" LevelMax="60" />
       <Keywords OptionalKeywords="physical_weapon" MandatoryKeywords="weapon" />
       <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
@@ -2029,7 +2029,7 @@
   </Affix>
   <Affix AffixId="all_slave_status_ailment_chance_4" Class="slave_all_weapon_4" AffixType="slave" Tier="4">
     <Enslaved />
-    <DropParams Frequency="10000" Hunt="1">
+    <DropParams Frequency="10000" AffixOrigin="Hunt">
       <ItemLevel LevelMin="30" LevelMax="60" />
       <Keywords OptionalKeywords="physical_weapon" MandatoryKeywords="weapon" />
       <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
@@ -2041,7 +2041,7 @@
   </Affix>
   <Affix AffixId="all_slave_criticalchance_attackskill_score_4" Class="slave_all_weapon_4" AffixType="slave" Tier="4">
     <Enslaved />
-    <DropParams Frequency="10000" Hunt="1">
+    <DropParams Frequency="10000" AffixOrigin="Hunt">
       <ItemLevel LevelMin="30" LevelMax="60" />
       <Keywords OptionalKeywords="physical_weapon" MandatoryKeywords="weapon" />
       <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
@@ -2053,7 +2053,7 @@
   </Affix>
   <Affix AffixId="all_slave_local_damage_percent_all_4" Class="slave_all_weapon_4" AffixType="slave" Tier="4">
     <Enslaved />
-    <DropParams Frequency="10000" Hunt="1">
+    <DropParams Frequency="10000" AffixOrigin="Hunt">
       <ItemLevel LevelMin="30" LevelMax="60" />
       <Keywords OptionalKeywords="physical_weapon" MandatoryKeywords="weapon" />
       <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
@@ -2065,8 +2065,8 @@
   </Affix>
   <Affix AffixId="all_slave_attackspeed_score_5" Class="slave_all_weapon_5" AffixType="slave" Tier="5">
     <Enslaved />
-    <DropParams Frequency="10000" Hunt="1">
-      <ItemLevel LevelMin="40" LevelMax="120" />
+    <DropParams Frequency="10000" AffixOrigin="Hunt">
+      <ItemLevel LevelMin="40" LevelMax="80" />
       <Keywords OptionalKeywords="physical_weapon" MandatoryKeywords="weapon" />
       <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
     </DropParams>
@@ -2077,8 +2077,8 @@
   </Affix>
   <Affix AffixId="all_slave_status_ailment_chance_5" Class="slave_all_weapon_5" AffixType="slave" Tier="5">
     <Enslaved />
-    <DropParams Frequency="10000" Hunt="1">
-      <ItemLevel LevelMin="40" LevelMax="120" />
+    <DropParams Frequency="10000" AffixOrigin="Hunt">
+      <ItemLevel LevelMin="40" LevelMax="80" />
       <Keywords OptionalKeywords="physical_weapon" MandatoryKeywords="weapon" />
       <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
     </DropParams>
@@ -2089,8 +2089,8 @@
   </Affix>
   <Affix AffixId="all_slave_criticalchance_attackskill_score_5" Class="slave_all_weapon_5" AffixType="slave" Tier="5">
     <Enslaved />
-    <DropParams Frequency="10000" Hunt="1">
-      <ItemLevel LevelMin="40" LevelMax="120" />
+    <DropParams Frequency="10000" AffixOrigin="Hunt">
+      <ItemLevel LevelMin="40" LevelMax="80" />
       <Keywords OptionalKeywords="physical_weapon" MandatoryKeywords="weapon" />
       <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
     </DropParams>
@@ -2101,8 +2101,8 @@
   </Affix>
   <Affix AffixId="all_slave_local_damage_percent_all_5" Class="slave_all_weapon_5" AffixType="slave" Tier="5">
     <Enslaved />
-    <DropParams Frequency="10000" Hunt="1">
-      <ItemLevel LevelMin="40" LevelMax="120" />
+    <DropParams Frequency="10000" AffixOrigin="Hunt">
+      <ItemLevel LevelMin="40" LevelMax="80" />
       <Keywords OptionalKeywords="physical_weapon" MandatoryKeywords="weapon" />
       <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
     </DropParams>
@@ -2113,8 +2113,8 @@
   </Affix>
   <Affix AffixId="all_slave_attackspeed_score_6" Class="slave_all_weapon_6" AffixType="slave" Tier="6">
     <Enslaved />
-    <DropParams Frequency="10000" Hunt="1">
-      <ItemLevel LevelMin="50" LevelMax="130" />
+    <DropParams Frequency="10000" AffixOrigin="Hunt">
+      <ItemLevel LevelMin="70" LevelMax="100" />
       <Keywords OptionalKeywords="physical_weapon" MandatoryKeywords="weapon" />
       <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
     </DropParams>
@@ -2125,8 +2125,8 @@
   </Affix>
   <Affix AffixId="all_slave_status_ailment_chance_6" Class="slave_all_weapon_6" AffixType="slave" Tier="6">
     <Enslaved />
-    <DropParams Frequency="10000" Hunt="1">
-      <ItemLevel LevelMin="50" LevelMax="130" />
+    <DropParams Frequency="10000" AffixOrigin="Hunt">
+      <ItemLevel LevelMin="70" LevelMax="100" />
       <Keywords OptionalKeywords="physical_weapon" MandatoryKeywords="weapon" />
       <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
     </DropParams>
@@ -2137,8 +2137,8 @@
   </Affix>
   <Affix AffixId="all_slave_criticalchance_attackskill_score_6" Class="slave_all_weapon_6" AffixType="slave" Tier="6">
     <Enslaved />
-    <DropParams Frequency="10000" Hunt="1">
-      <ItemLevel LevelMin="50" LevelMax="130" />
+    <DropParams Frequency="10000" AffixOrigin="Hunt">
+      <ItemLevel LevelMin="70" LevelMax="100" />
       <Keywords OptionalKeywords="physical_weapon" MandatoryKeywords="weapon" />
       <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
     </DropParams>
@@ -2149,8 +2149,8 @@
   </Affix>
   <Affix AffixId="all_slave_local_damage_percent_all_6" Class="slave_all_weapon_6" AffixType="slave" Tier="6">
     <Enslaved />
-    <DropParams Frequency="10000" Hunt="1">
-      <ItemLevel LevelMin="50" LevelMax="130" />
+    <DropParams Frequency="10000" AffixOrigin="Hunt">
+      <ItemLevel LevelMin="70" LevelMax="100" />
       <Keywords OptionalKeywords="physical_weapon" MandatoryKeywords="weapon" />
       <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
     </DropParams>
@@ -2161,8 +2161,8 @@
   </Affix>
   <Affix AffixId="all_slave_attackspeed_score_7" Class="slave_all_weapon_7" AffixType="slave" Tier="7">
     <Enslaved />
-    <DropParams Frequency="10000" Hunt="1">
-      <ItemLevel LevelMin="60" LevelMax="140" />
+    <DropParams Frequency="10000" AffixOrigin="Hunt">
+      <ItemLevel LevelMin="90" LevelMax="140" />
       <Keywords OptionalKeywords="physical_weapon" MandatoryKeywords="weapon" />
       <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
     </DropParams>
@@ -2173,8 +2173,8 @@
   </Affix>
   <Affix AffixId="all_slave_status_ailment_chance_7" Class="slave_all_weapon_7" AffixType="slave" Tier="7">
     <Enslaved />
-    <DropParams Frequency="10000" Hunt="1">
-      <ItemLevel LevelMin="60" LevelMax="140" />
+    <DropParams Frequency="10000" AffixOrigin="Hunt">
+      <ItemLevel LevelMin="90" LevelMax="140" />
       <Keywords OptionalKeywords="physical_weapon" MandatoryKeywords="weapon" />
       <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
     </DropParams>
@@ -2185,8 +2185,8 @@
   </Affix>
   <Affix AffixId="all_slave_criticalchance_attackskill_score_7" Class="slave_all_weapon_7" AffixType="slave" Tier="7">
     <Enslaved />
-    <DropParams Frequency="10000" Hunt="1">
-      <ItemLevel LevelMin="60" LevelMax="140" />
+    <DropParams Frequency="10000" AffixOrigin="Hunt">
+      <ItemLevel LevelMin="90" LevelMax="140" />
       <Keywords OptionalKeywords="physical_weapon" MandatoryKeywords="weapon" />
       <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
     </DropParams>
@@ -2197,8 +2197,8 @@
   </Affix>
   <Affix AffixId="all_slave_local_damage_percent_all_7" Class="slave_all_weapon_7" AffixType="slave" Tier="7">
     <Enslaved />
-    <DropParams Frequency="10000" Hunt="1">
-      <ItemLevel LevelMin="60" LevelMax="140" />
+    <DropParams Frequency="10000" AffixOrigin="Hunt">
+      <ItemLevel LevelMin="90" LevelMax="140" />
       <Keywords OptionalKeywords="physical_weapon" MandatoryKeywords="weapon" />
       <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
     </DropParams>
@@ -2209,8 +2209,8 @@
   </Affix>
   <Affix AffixId="all_slave_attackspeed_score_8" Class="slave_all_weapon_8" AffixType="slave" Tier="8">
     <Enslaved />
-    <DropParams Frequency="10000" Hunt="1">
-      <ItemLevel LevelMin="70" LevelMax="150" />
+    <DropParams Frequency="10000" AffixOrigin="Hunt">
+      <ItemLevel LevelMin="130" LevelMax="200" />
       <Keywords OptionalKeywords="physical_weapon" MandatoryKeywords="weapon" />
       <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
     </DropParams>
@@ -2221,8 +2221,8 @@
   </Affix>
   <Affix AffixId="all_slave_status_ailment_chance_8" Class="slave_all_weapon_8" AffixType="slave" Tier="8">
     <Enslaved />
-    <DropParams Frequency="10000" Hunt="1">
-      <ItemLevel LevelMin="70" LevelMax="150" />
+    <DropParams Frequency="10000" AffixOrigin="Hunt">
+      <ItemLevel LevelMin="130" LevelMax="200" />
       <Keywords OptionalKeywords="physical_weapon" MandatoryKeywords="weapon" />
       <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
     </DropParams>
@@ -2233,8 +2233,8 @@
   </Affix>
   <Affix AffixId="all_slave_criticalchance_attackskill_score_8" Class="slave_all_weapon_8" AffixType="slave" Tier="8">
     <Enslaved />
-    <DropParams Frequency="10000" Hunt="1">
-      <ItemLevel LevelMin="70" LevelMax="150" />
+    <DropParams Frequency="10000" AffixOrigin="Hunt">
+      <ItemLevel LevelMin="130" LevelMax="200" />
       <Keywords OptionalKeywords="physical_weapon" MandatoryKeywords="weapon" />
       <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
     </DropParams>
@@ -2245,8 +2245,8 @@
   </Affix>
   <Affix AffixId="all_slave_local_damage_percent_all_8" Class="slave_all_weapon_8" AffixType="slave" Tier="8">
     <Enslaved />
-    <DropParams Frequency="10000" Hunt="1">
-      <ItemLevel LevelMin="70" LevelMax="150" />
+    <DropParams Frequency="10000" AffixOrigin="Hunt">
+      <ItemLevel LevelMin="130" LevelMax="200" />
       <Keywords OptionalKeywords="physical_weapon" MandatoryKeywords="weapon" />
       <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
     </DropParams>
@@ -2257,8 +2257,8 @@
   </Affix>
   <Affix AffixId="all_slave_attackspeed_score_9" Class="slave_all_weapon_9" AffixType="slave" Tier="9">
     <Enslaved />
-    <DropParams Frequency="10000" Hunt="1">
-      <ItemLevel LevelMin="80" LevelMax="160" />
+    <DropParams Frequency="10000" AffixOrigin="Hunt">
+      <ItemLevel LevelMin="150" LevelMax="250" />
       <Keywords OptionalKeywords="physical_weapon" MandatoryKeywords="weapon" />
       <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
     </DropParams>
@@ -2269,8 +2269,8 @@
   </Affix>
   <Affix AffixId="all_slave_status_ailment_chance_9" Class="slave_all_weapon_9" AffixType="slave" Tier="9">
     <Enslaved />
-    <DropParams Frequency="10000" Hunt="1">
-      <ItemLevel LevelMin="80" LevelMax="160" />
+    <DropParams Frequency="10000" AffixOrigin="Hunt">
+      <ItemLevel LevelMin="150" LevelMax="250" />
       <Keywords OptionalKeywords="physical_weapon" MandatoryKeywords="weapon" />
       <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
     </DropParams>
@@ -2281,8 +2281,8 @@
   </Affix>
   <Affix AffixId="all_slave_criticalchance_attackskill_score_9" Class="slave_all_weapon_9" AffixType="slave" Tier="9">
     <Enslaved />
-    <DropParams Frequency="10000" Hunt="1">
-      <ItemLevel LevelMin="80" LevelMax="160" />
+    <DropParams Frequency="10000" AffixOrigin="Hunt">
+      <ItemLevel LevelMin="150" LevelMax="250" />
       <Keywords OptionalKeywords="physical_weapon" MandatoryKeywords="weapon" />
       <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
     </DropParams>
@@ -2293,8 +2293,8 @@
   </Affix>
   <Affix AffixId="all_slave_local_damage_percent_all_9" Class="slave_all_weapon_9" AffixType="slave" Tier="9">
     <Enslaved />
-    <DropParams Frequency="10000" Hunt="1">
-      <ItemLevel LevelMin="80" LevelMax="160" />
+    <DropParams Frequency="10000" AffixOrigin="Hunt">
+      <ItemLevel LevelMin="150" LevelMax="250" />
       <Keywords OptionalKeywords="physical_weapon" MandatoryKeywords="weapon" />
       <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
     </DropParams>
@@ -2305,8 +2305,8 @@
   </Affix>
   <Affix AffixId="all_slave_attackspeed_score_10" Class="slave_all_weapon_10" AffixType="slave" Tier="10">
     <Enslaved />
-    <DropParams Frequency="10000" Hunt="1">
-      <ItemLevel LevelMin="90" LevelMax="200" />
+    <DropParams Frequency="10000" AffixOrigin="Hunt">
+      <ItemLevel LevelMin="170" LevelMax="250" />
       <Keywords OptionalKeywords="physical_weapon" MandatoryKeywords="weapon" />
       <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
     </DropParams>
@@ -2317,8 +2317,8 @@
   </Affix>
   <Affix AffixId="all_slave_status_ailment_chance_10" Class="slave_all_weapon_10" AffixType="slave" Tier="10">
     <Enslaved />
-    <DropParams Frequency="10000" Hunt="1">
-      <ItemLevel LevelMin="90" LevelMax="200" />
+    <DropParams Frequency="10000" AffixOrigin="Hunt">
+      <ItemLevel LevelMin="170" LevelMax="250" />
       <Keywords OptionalKeywords="physical_weapon" MandatoryKeywords="weapon" />
       <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
     </DropParams>
@@ -2329,8 +2329,8 @@
   </Affix>
   <Affix AffixId="all_slave_criticalchance_attackskill_score_10" Class="slave_all_weapon_10" AffixType="slave" Tier="10">
     <Enslaved />
-    <DropParams Frequency="10000" Hunt="1">
-      <ItemLevel LevelMin="90" LevelMax="200" />
+    <DropParams Frequency="10000" AffixOrigin="Hunt">
+      <ItemLevel LevelMin="170" LevelMax="250" />
       <Keywords OptionalKeywords="physical_weapon" MandatoryKeywords="weapon" />
       <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
     </DropParams>
@@ -2341,8 +2341,8 @@
   </Affix>
   <Affix AffixId="all_slave_local_damage_percent_all_10" Class="slave_all_weapon_10" AffixType="slave" Tier="10">
     <Enslaved />
-    <DropParams Frequency="10000" Hunt="1">
-      <ItemLevel LevelMin="90" LevelMax="200" />
+    <DropParams Frequency="10000" AffixOrigin="Hunt">
+      <ItemLevel LevelMin="170" LevelMax="250" />
       <Keywords OptionalKeywords="physical_weapon" MandatoryKeywords="weapon" />
       <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
     </DropParams>
@@ -2353,8 +2353,8 @@
   </Affix>
   <Affix AffixId="all_slave_attackspeed_score_11" Class="slave_all_weapon_11" AffixType="slave" Tier="11">
     <Enslaved />
-    <DropParams Frequency="10000" Hunt="1">
-      <ItemLevel LevelMin="100" LevelMax="200" />
+    <DropParams Frequency="10000" AffixOrigin="Hunt">
+      <ItemLevel LevelMin="190" LevelMax="300" />
       <Keywords OptionalKeywords="physical_weapon" MandatoryKeywords="weapon" />
       <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
     </DropParams>
@@ -2365,8 +2365,8 @@
   </Affix>
   <Affix AffixId="all_slave_status_ailment_chance_11" Class="slave_all_weapon_11" AffixType="slave" Tier="11">
     <Enslaved />
-    <DropParams Frequency="10000" Hunt="1">
-      <ItemLevel LevelMin="100" LevelMax="200" />
+    <DropParams Frequency="10000" AffixOrigin="Hunt">
+      <ItemLevel LevelMin="190" LevelMax="300" />
       <Keywords OptionalKeywords="physical_weapon" MandatoryKeywords="weapon" />
       <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
     </DropParams>
@@ -2377,8 +2377,8 @@
   </Affix>
   <Affix AffixId="all_slave_criticalchance_attackskill_score_11" Class="slave_all_weapon_11" AffixType="slave" Tier="11">
     <Enslaved />
-    <DropParams Frequency="10000" Hunt="1">
-      <ItemLevel LevelMin="100" LevelMax="200" />
+    <DropParams Frequency="10000" AffixOrigin="Hunt">
+      <ItemLevel LevelMin="190" LevelMax="300" />
       <Keywords OptionalKeywords="physical_weapon" MandatoryKeywords="weapon" />
       <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
     </DropParams>
@@ -2389,8 +2389,8 @@
   </Affix>
   <Affix AffixId="all_slave_local_damage_percent_all_11" Class="slave_all_weapon_11" AffixType="slave" Tier="11">
     <Enslaved />
-    <DropParams Frequency="10000" Hunt="1">
-      <ItemLevel LevelMin="100" LevelMax="200" />
+    <DropParams Frequency="10000" AffixOrigin="Hunt">
+      <ItemLevel LevelMin="190" LevelMax="300" />
       <Keywords OptionalKeywords="physical_weapon" MandatoryKeywords="weapon" />
       <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
     </DropParams>
@@ -2401,8 +2401,8 @@
   </Affix>
   <Affix AffixId="all_slave_attackspeed_score_12" Class="slave_all_weapon_12" AffixType="slave" Tier="12">
     <Enslaved />
-    <DropParams Frequency="10000" Hunt="1">
-      <ItemLevel LevelMin="110" LevelMax="200" />
+    <DropParams Frequency="10000" AffixOrigin="Hunt">
+      <ItemLevel LevelMin="190" LevelMax="300" />
       <Keywords OptionalKeywords="physical_weapon" MandatoryKeywords="weapon" />
       <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
     </DropParams>
@@ -2413,8 +2413,8 @@
   </Affix>
   <Affix AffixId="all_slave_status_ailment_chance_12" Class="slave_all_weapon_12" AffixType="slave" Tier="12">
     <Enslaved />
-    <DropParams Frequency="10000" Hunt="1">
-      <ItemLevel LevelMin="110" LevelMax="200" />
+    <DropParams Frequency="10000" AffixOrigin="Hunt">
+      <ItemLevel LevelMin="190" LevelMax="300" />
       <Keywords OptionalKeywords="physical_weapon" MandatoryKeywords="weapon" />
       <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
     </DropParams>
@@ -2425,8 +2425,8 @@
   </Affix>
   <Affix AffixId="all_slave_criticalchance_attackskill_score_12" Class="slave_all_weapon_12" AffixType="slave" Tier="12">
     <Enslaved />
-    <DropParams Frequency="10000" Hunt="1">
-      <ItemLevel LevelMin="110" LevelMax="200" />
+    <DropParams Frequency="10000" AffixOrigin="Hunt">
+      <ItemLevel LevelMin="190" LevelMax="300" />
       <Keywords OptionalKeywords="physical_weapon" MandatoryKeywords="weapon" />
       <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
     </DropParams>
@@ -2437,8 +2437,8 @@
   </Affix>
   <Affix AffixId="all_slave_local_damage_percent_all_12" Class="slave_all_weapon_12" AffixType="slave" Tier="12">
     <Enslaved />
-    <DropParams Frequency="10000" Hunt="1">
-      <ItemLevel LevelMin="110" LevelMax="200" />
+    <DropParams Frequency="10000" AffixOrigin="Hunt">
+      <ItemLevel LevelMin="190" LevelMax="300" />
       <Keywords OptionalKeywords="physical_weapon" MandatoryKeywords="weapon" />
       <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
     </DropParams>

@@ -26,7 +26,7 @@
   <Spell Name="TANK_4" UIName="@ui_TANK_4_name" HUDLoreDesc="" GameplayDesc="">
     <MagicEffects>
       <EIM Name="blockefficiency_flat" HUDDesc="@ui_eim_blockefficiency_flat" Permanent="1">
-        <Semantics ResourcePercentFloat="2.5" />
+        <Semantics ResourcePercentFloat="5" />
       </EIM>
     </MagicEffects>
   </Spell>
@@ -122,10 +122,10 @@
   <Spell Name="TANK_16" UIName="@ui_TANK_16_name" HUDLoreDesc="@ui_TANK_16_lore" GameplayDesc="@ui_TANK_16_desc">
     <MagicEffects>
       <EIM Name="blockefficiency_flat" HUDDesc="@ui_eim_blockefficiency_flat" Permanent="1">
-        <Semantics ResourcePercentFloat="10" />
+        <Semantics ResourcePercentFloat="20" />
       </EIM>
       <EIM Name="damage_percent_major_all" HUDDesc="@ui_eim_damage_percent_major_all" Permanent="1">
-        <Semantics MajorDamageMultiplier="0.85" />
+        <Semantics MajorDamageMultiplier="0.90" />
       </EIM>
     </MagicEffects>
   </Spell>
@@ -139,7 +139,7 @@
   <Spell Name="TANK_18" UIName="@ui_TANK_18_name" HUDLoreDesc="" GameplayDesc="">
     <MagicEffects>
       <EIM Name="blockefficiency_flat" HUDDesc="@ui_eim_blockefficiency_flat" Permanent="1">
-        <Semantics ResourcePercentFloat="2.5" />
+        <Semantics ResourcePercentFloat="5" />
       </EIM>
     </MagicEffects>
   </Spell>
@@ -181,7 +181,7 @@
   <Spell Name="TANK_24" UIName="@ui_TANK_24_name" HUDLoreDesc="@ui_TANK_24_lore" GameplayDesc="@ui_TANK_24_desc">
     <MagicEffects>
       <EIM Name="weakness_aoe_onblock" HUDDesc="@ui_eim_weakness_aoe_onblock_detail" Permanent="1">
-        <Semantics RadiusFloat="7.5" StackCountInt="2" />
+        <Semantics RadiusFloat="8" StackCountInt="2" />
       </EIM>
     </MagicEffects>
   </Spell>

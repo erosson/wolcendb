@@ -66,10 +66,10 @@
   <Spell Name="REPU_8" UIName="@ui_REPU_8_name" HUDLoreDesc="@ui_REPU_8_loredesc" GameplayDesc="@ui_REPU_8_gameplaydesc">
     <MagicEffects>
       <EIM Name="stack_tatoo_use_mechanic" HUDDesc="@ui_eim_stack_tatoo_use_mechanic" Permanent="1">
-        <Semantics PSTStackTickrateFloat="2.5" PSTStackMaxCountInt="5" />
+        <Semantics PSTStackTickrateFloat="2" PSTStackMaxCountInt="5" />
       </EIM>
       <EIM Name="stack_tatoo_damage_reduction" HUDDesc="@ui_eim_stack_tatoo_damage_reduction" Permanent="1">
-        <Semantics DamagePercentFloat="15" />
+        <Semantics DamagePercentFloat="10" />
       </EIM>
     </MagicEffects>
   </Spell>
@@ -144,10 +144,10 @@
         <Semantics PSTStackTickrateFloat="2" PSTStackMaxCountInt="5" />
       </EIM>
       <EIM Name="stack_bullet_proj_damage" HUDDesc="@ui_eim_stack_bullet_proj_damage" Permanent="1">
-        <Semantics DamagePercentFloat="10" />
+        <Semantics DamagePercentFloat="5" />
       </EIM>
       <EIM Name="stack_bullet_melee_damage" HUDDesc="@ui_eim_stack_bullet_melee_damage" Permanent="1">
-        <Semantics DamagePercentFloat="10" />
+        <Semantics DamagePercentFloat="5" />
       </EIM>
       <EIM Name="stack_bullet_charges_on_dodge_roll" HUDDesc="@ui_eim_stack_bullet_charges_on_dodge_roll" Permanent="1">
         <Semantics StackCountInt="1" />
@@ -164,7 +164,7 @@
   <Spell Name="REPU_19" UIName="@ui_REPU_19_name" HUDLoreDesc="@ui_REPU_19_loredesc" GameplayDesc="@ui_REPU_19_gameplaydesc">
     <MagicEffects>
       <EIM Name="material_damage_on_elites" HUDDesc="@ui_eim_material_damage_on_elites" Permanent="1">
-        <Semantics PSTStackResetTimer="30" PSTStackMaxCountInt="5" DamagePercentFloat="20" />
+        <Semantics PSTStackResetTimer="30" PSTStackMaxCountInt="5" DamagePercentFloat="15" />
       </EIM>
     </MagicEffects>
   </Spell>

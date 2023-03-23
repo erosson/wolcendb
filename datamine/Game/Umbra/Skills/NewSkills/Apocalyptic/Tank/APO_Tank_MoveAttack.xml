@@ -1,6 +1,6 @@
 <MetaData>
   <Skill UID="apo_tank_moveattack" ESkill="apo_tank_moveattack" Keywords="">
-    <VisualFeedback TrailPresetBase="apo" BloodDecalOrientation="forward" />
+    <VisualFeedback TrailPresetBase="apo" feedbackPresetBase="Player_apo_Tank_moveattack" BloodDecalOrientation="forward" />
     <Animation AnimationDrivenMovement="1" ActionString_In="apo_skill_move_in" ActionString_Loop="apo_skill_move_loop" ActionString_Out="apo_skill_move_out" />
     <CastingParams CastBone="R_weapon_bone" RequiresApocalypticForm="1" />
     <HUD HUDPicture="../u_resources/spells/Active_Skills/apo_tank_moveattack.png" UIName="@ui_APO_Tank_MoveSkill" Lore="@ui_APO_Tank_MoveSkill_Lore" ActiveEffectTitle="" ActiveEffectDesc="" ASTTreeNumber="8" ShowParamsInAST="Cost,ROSTime,DamageDetail,Cooldown,Range" ShowParamsInTooltip="Cost,DamageOverview,Cooldown" />

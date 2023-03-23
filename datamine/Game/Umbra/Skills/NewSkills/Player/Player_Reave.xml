@@ -1,12 +1,12 @@
 <MetaData>
   <Skill UID="player_reave" ESkill="player_reave" Keywords="attack_skill">
     <WeaponRequirements Requirements="melee," />
-    <CastingParams CastBone="L_Weapon_Bone" />
+    <CastingParams CastBone="L_Weapon_Bone" CancellableByDefault="1" />
     <Combo ComboStarter="Combo_Reave" />
     <Animation ScaleWithAttackSpeed="1" AnimationDrivenMovement="1" ActionString="player_skill_reave_atk_01" IgnoreAnimationMovementWhenHoldingShift="1" />
     <HUD HUDPicture="../u_resources/spells/Active_Skills/reave_Physical.png" UIName="@ui_AST_Reave" Lore="@ui_AST_Reave_Lore" ActiveEffectTitle="" ActiveEffectDesc="" ASTTreeNumber="1" ShowParamsInAST="Cost,ROSTime,Cooldown,DamageDetail,DamageWeapon,DamageCritical,StatusAilmentsChance,SpecificReave" ShowParamsInTooltip="Cost,Cooldown,DamageOverview,StatusAilmentsChance,SpecificReave" />
     <Enneract PickableParticle_MoveToGround="U_CommonVFX_02.Esseract.Esseract_Projectile.Physical" PickableParticle_OnGround_Shape="U_CommonVFX_02.Esseract.Esseract_Shape.Circle_Physical" PickableParticle_OnGround_Damage="U_CommonVFX_02.Esseract.Esseract_Color.Physical" PickableParticle_OnGround_Symbol="U_CommonVFX_02.Esseract.Esseract_Symbol.HEPHAARON" PickableParticle_OnGround_Indicator="U_CommonVFX_02.Esseract.Esseract_Indicator.Physical" PickableParticle_OnGround_Pickup="U_CommonVFX_02.Esseract.Esseract_Loot.Physical" SkillLearningParticle="U_CommonVFX.Skill_Learn.Skill_Learn_Physical" Inventory_HUDPicture="../u_resources/enneracts/reave.png" Inventory_LoreDesc="@ui_enneract_lore" />
-    <DamageWeapon WeaponMultiplier="2" />
+    <DamageWeapon WeaponMultiplier="3" />
     <Shapes>
       <Entry ShapeName="Player_Reave_Shape_1" />
       <Entry ShapeName="Player_Reave_Shape_2" />
@@ -27,7 +27,7 @@
       <ReaveSound ComboId="3" OnAnimStart="Play_Skill_Reave_Attack_Jump" OnAnimCast="Play_Skill_Reave_Attack_Jump_Impact" OnHit="Play_Skill_Reave_Attack_Swing_Impact" />
       <ReaveSound ComboId="4" OnAnimStart="Play_Skill_Reave_Attack_Swing_Spin" OnAnimCast="" />
     </Specific_Reave>
-    <SoundTrigger OnHit="Play_Skill_Reave_Attack_Swing_Impact" />
+    <SoundTrigger OnHit="Play_Skill_Reave_Attack_Swing_Impact" OnKill="Play_OnKill_Impact_Lethal_Melee_Skill_Default" />
     <ResourceCost RageCost="-100" RageCostPerLevel="0" ROSTransfertDuration="1" />
     <Material ScaleWithAnimationSpeed="1" ForceStopDuration="0.5">
       <EmissiveIntensity From="100" To="500" In="0.5" />
@@ -40,15 +40,15 @@
     <HUD UIName="@ui_AST_Reave" Lore="@ui_AST_Reave_Lore" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_Alpha.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_Alpha.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_Alpha.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_Alpha.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_Alpha.png" HUDPictureVariant_InnerIcon="../u_resources/spells/Active_Skills/reave_Physical.png" VariantBottomPanel="1" />
   </Skill>
   <Skill UID="player_Reave_variant_1" ESkill="default_variant">
-    <HUD UIName="@ui_Variant_Reave_variant_1" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_001.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_001.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_001.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_001.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_001.png" ShowParamsInTooltip="SpecificReave,Cost" />
+    <HUD UIName="@ui_Variant_Reave_variant_1" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_001.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_001.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_001.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_001.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_001.png" ShowParamsInTooltip="SpecificReave,Cost" Category="Utility" />
     <ResourceCost RageCost="25" />
   </Skill>
   <Skill UID="player_Reave_variant_2" ESkill="default_variant">
-    <HUD UIName="@ui_Variant_Reave_variant_2" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_003.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_003.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_003.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_003.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_003.png" ShowParamsInTooltip="SpecificReave,DamageWeapon" />
+    <HUD UIName="@ui_Variant_Reave_variant_2" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_003.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_003.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_003.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_003.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_003.png" ShowParamsInTooltip="SpecificReave,DamageWeapon" Category="Combat" />
     <DamageWeapon WeaponMultiplier="1.3" />
   </Skill>
   <Skill UID="player_Reave_variant_3" ESkill="default_variant">
-    <HUD UIName="@ui_Variant_Reave_variant_3" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_003.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_003.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_003.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_003.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_003.png" ShowParamsInTooltip="SpecificReave" />
+    <HUD UIName="@ui_Variant_Reave_variant_3" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_003.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_003.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_003.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_003.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_003.png" ShowParamsInTooltip="SpecificReave" Category="Combat" />
     <Shapes>
       <Entry ShapeName="Player_Reave_Shape_1_big" />
       <Entry ShapeName="Player_Reave_Shape_2_big" />
@@ -65,19 +65,19 @@
     </Specific_Reave>
   </Skill>
   <Skill UID="player_Reave_variant_4" ESkill="default_variant">
-    <HUD UIName="@ui_Variant_Reave_variant_4" Lore="@ui_Variant_Reave_variant_4_Lore" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_005.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_005.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_005.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_005.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_005.png" ShowParamsInTooltip="SpecificReave,LifeLeech" />
-    <LifeLeech ScaleWithCasterLife="1" Inverted="1" MinTransfertPercentBasedOnLife="0" MaxTransfertPercentBasedOnLife="5" />
+    <HUD UIName="@ui_Variant_Reave_variant_4" Lore="@ui_Variant_Reave_variant_4_Lore" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_005.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_005.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_005.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_005.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_005.png" ShowParamsInTooltip="SpecificReave,LifeLeech" Category="Survival" />
+    <LifeLeech ScaleWithCasterLife="1" Inverted="1" MinTransfertPercentBasedOnLife="0" MaxTransfertPercentBasedOnLife="0.05" />
   </Skill>
   <Skill UID="player_Reave_variant_6" ESkill="default_variant">
-    <HUD UIName="@ui_Variant_Reave_variant_6" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_001.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_001.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_001.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_001.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_001.png" ShowParamsInTooltip="SpecificReave,StatusAilmentsChance" />
+    <HUD UIName="@ui_Variant_Reave_variant_6" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_001.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_001.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_001.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_001.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_001.png" ShowParamsInTooltip="SpecificReave,StatusAilmentsChance" Category="Utility" />
     <StatusAilment AilmentEffectiveness="125" />
   </Skill>
   <Skill UID="player_Reave_variant_7" ESkill="default_variant">
-    <HUD UIName="@ui_Variant_Reave_variant_7" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_001.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_001.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_001.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_001.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_001.png" ShowParamsInTooltip="SpecificReave,DamageCritical" />
+    <HUD UIName="@ui_Variant_Reave_variant_7" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_001.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_001.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_001.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_001.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_001.png" ShowParamsInTooltip="SpecificReave,DamageCritical" Category="Combat" />
     <DamageCritical CriticalDamageModifier="25" />
   </Skill>
   <Skill UID="player_Reave_variant_8" ESkill="default_variant">
-    <HUD UIName="@ui_Variant_Reave_variant_8" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_003.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_003.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_003.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_003.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_003.png" ShowParamsInTooltip="SpecificReave,DamageWeapon" />
+    <HUD UIName="@ui_Variant_Reave_variant_8" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_003.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_003.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_003.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_003.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_003.png" ShowParamsInTooltip="SpecificReave,DamageWeapon" Category="Mastery" />
     <Combo ComboStarter="Combo_Reave_Increase" />
     <Specific_Reave UseFullCombo="1">
       <ReaveSound ComboId="0" OnAnimStart="Play_Skill_Reave_Attack_Swing_Combo0" OnAnimCast="" OnHit="Play_Skill_Reave_Attack_Swing_Impact" />
@@ -86,38 +86,38 @@
       <ReaveSound ComboId="3" OnAnimStart="Play_Skill_Reave_Attack_Jump" OnAnimCast="Play_Skill_Reave_Attack_Jump_Impact" OnHit="Play_Skill_Reave_Attack_Swing_Impact" />
       <ReaveSound ComboId="4" OnAnimStart="Play_Skill_Reave_Attack_Swing_Spin" OnAnimCast="" />
     </Specific_Reave>
-    <DamageWeapon WeaponMultiplier="1.15" />
+    <DamageWeapon WeaponMultiplier="1.25" />
   </Skill>
   <Skill UID="player_Reave_variant_9" ESkill="default_variant">
-    <HUD UIName="@ui_Variant_Reave_variant_9" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_003.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_003.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_003.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_003.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_003.png" ShowParamsInTooltip="SpecificReave" />
+    <HUD UIName="@ui_Variant_Reave_variant_9" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_003.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_003.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_003.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_003.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_003.png" ShowParamsInTooltip="SpecificReave" Category="Survival" />
     <Specific_Reave BuffName="AST_Reave_Buff" BuffDuration="10" />
   </Skill>
   <Skill UID="player_Reave_variant_10" ESkill="default_variant">
-    <HUD UIName="@ui_Variant_Reave_variant_10" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_001.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_001.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_001.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_001.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_001.png" ShowParamsInTooltip="SpecificReave" />
+    <HUD UIName="@ui_Variant_Reave_variant_10" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_001.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_001.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_001.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_001.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_001.png" ShowParamsInTooltip="SpecificReave" Category="Utility" />
     <Specific_Reave RageOnKill="20" />
   </Skill>
   <Skill UID="player_Reave_variant_11" ESkill="default_variant">
-    <HUD UIName="@ui_Variant_Reave_variant_11" Lore="@ui_Variant_Reave_variant_11_Lore" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_005.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_005.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_005.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_005.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_005.png" ShowParamsInTooltip="SpecificReave" />
-    <Specific_Reave DamageMultiplierAtNoHP="2" />
+    <HUD UIName="@ui_Variant_Reave_variant_11" Lore="@ui_Variant_Reave_variant_11_Lore" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_005.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_005.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_005.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_005.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_005.png" ShowParamsInTooltip="SpecificReave" Category="Combat" />
+    <Specific_Reave DamageMultiplierAtNoHP="3.5" />
   </Skill>
   <Skill UID="player_Reave_variant_12" ESkill="default_variant">
-    <HUD UIName="@ui_Variant_Reave_variant_12" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_003.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_003.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_003.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_003.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_003.png" ShowParamsInTooltip="SpecificReave,DamageCritical" />
+    <HUD UIName="@ui_Variant_Reave_variant_12" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_003.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_003.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_003.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_003.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_003.png" ShowParamsInTooltip="SpecificReave,DamageCritical" Category="Combat" />
     <DamageCritical CriticalInflictScoreModifier="80" />
   </Skill>
   <Skill UID="player_Reave_variant_13" ESkill="default_variant">
-    <HUD UIName="@ui_Variant_Reave_variant_13" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_001.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_001.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_001.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_001.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_001.png" ShowParamsInTooltip="SpecificReave,StatusAilmentsChance" />
+    <HUD UIName="@ui_Variant_Reave_variant_13" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_001.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_001.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_001.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_001.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_001.png" ShowParamsInTooltip="SpecificReave,StatusAilmentsChance" Category="Utility" />
     <StatusAilment AllAilmentsInflictDamageIncreasePercent="40" />
   </Skill>
   <Skill UID="player_Reave_variant_14" ESkill="default_variant">
-    <HUD UIName="@ui_Variant_Reave_variant_14" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_001.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_001.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_001.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_001.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_001.png" ShowParamsInTooltip="SpecificReave,DamageWeapon" />
+    <HUD UIName="@ui_Variant_Reave_variant_14" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_001.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_001.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_001.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_001.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_001.png" ShowParamsInTooltip="SpecificReave,DamageWeapon" Category="Combat" />
     <DamageWeapon WeaponMultiplier="1.15" />
   </Skill>
   <Skill UID="player_Reave_variant_15" ESkill="default_variant">
-    <HUD UIName="@ui_Variant_Reave_variant_15" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_001.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_001.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_001.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_001.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_001.png" ShowParamsInTooltip="SpecificReave" />
+    <HUD UIName="@ui_Variant_Reave_variant_15" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_001.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_001.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_001.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_001.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_001.png" ShowParamsInTooltip="SpecificReave" Category="Combat" />
     <CastingSpeed AttackSpeedPercent="120" ApplyOnCharged="1" />
   </Skill>
   <Skill UID="player_Reave_variant_16" ESkill="default_variant">
-    <HUD UIName="@ui_Variant_Reave_variant_16" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_003.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_003.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_003.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_003.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_003.png" ShowParamsInTooltip="SpecificReave,DamageCritical,DamageWeapon" />
+    <HUD UIName="@ui_Variant_Reave_variant_16" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_003.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_003.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_003.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_003.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_003.png" ShowParamsInTooltip="SpecificReave,DamageCritical,DamageWeapon" Category="Combat" />
     <DamageCritical CriticalInflictScoreModifier="-60" />
     <DamageWeapon WeaponMultiplier="1.5" />
   </Skill>
@@ -127,7 +127,6 @@
       <Entry From="physical" To="sacred" ConversionRate="100" />
     </Damage_Conversion>
     <WeaponRequirements Requirements="melee,sacred" />
-    <DamageWeapon WeaponMultiplier="1.25" />
     <Specific_Reave LeftGeometry="Game/Objects/Animated_Object/Skill/Animated/Skill_Reave/skill_reaveL_sacred.cdf" RightGeometry="Game/Objects/Animated_Object/Skill/Animated/Skill_Reave/skill_reaveR_sacred.cdf">
       <ReaveSound ComboId="0" OnAnimStart="Play_Skill_Reave_Attack_Swing_Combo0_Sacred" OnAnimCast="" OnHit="Play_Skill_Reave_Attack_Swing_Impact_Sacred" />
       <ReaveSound ComboId="1" OnAnimStart="Play_Skill_Reave_Attack_Swing_Combo1_Sacred" OnAnimCast="" OnHit="Play_Skill_Reave_Attack_Swing_Impact_Sacred" />
@@ -149,7 +148,6 @@
       <Entry From="physical" To="lightning" ConversionRate="100" />
     </Damage_Conversion>
     <WeaponRequirements Requirements="melee,lightning" />
-    <DamageWeapon WeaponMultiplier="1.25" />
     <Specific_Reave LeftGeometry="Game/Objects/Animated_Object/Skill/Animated/Skill_Reave/skill_reaveL_lightning.cdf" RightGeometry="Game/Objects/Animated_Object/Skill/Animated/Skill_Reave/skill_reaveR_lightning.cdf">
       <ReaveSound ComboId="0" OnAnimStart="Play_Skill_Reave_Attack_Swing_Combo0_Lightning" OnAnimCast="" OnHit="Play_Skill_Reave_Attack_Swing_Impact_Lightning" />
       <ReaveSound ComboId="1" OnAnimStart="Play_Skill_Reave_Attack_Swing_Combo1_Lightning" OnAnimCast="" OnHit="Play_Skill_Reave_Attack_Swing_Impact_Lightning" />
@@ -171,7 +169,6 @@
       <Entry From="physical" To="umbra" ConversionRate="100" />
     </Damage_Conversion>
     <WeaponRequirements Requirements="melee,umbra" />
-    <DamageWeapon WeaponMultiplier="1.25" />
     <Specific_Reave LeftGeometry="Game/Objects/Animated_Object/Skill/Animated/Skill_Reave/skill_reaveL_aether.cdf" RightGeometry="Game/Objects/Animated_Object/Skill/Animated/Skill_Reave/skill_reaveR_aether.cdf">
       <ReaveSound ComboId="0" OnAnimStart="Play_Skill_Reave_Attack_Swing_Combo0_Aether" OnAnimCast="" OnHit="Play_Skill_Reave_Attack_Swing_Impact_Aether" />
       <ReaveSound ComboId="1" OnAnimStart="Play_Skill_Reave_Attack_Swing_Combo1_Aether" OnAnimCast="" OnHit="Play_Skill_Reave_Attack_Swing_Impact_Aether" />
@@ -187,8 +184,29 @@
     </EventEffectOverride>
     <SoundTrigger OnHit="Play_Skill_Reave_Attack_Swing_Impact_Aether" />
   </Skill>
+  <Skill UID="player_Reave_variant_20" ESkill="default_variant">
+    <HUD UIName="@ui_Variant_Reave_variant_20" Lore="@ui_Variant_Reave_variant_20_Lore" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_Alpha.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_Alpha.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_Alpha.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_Alpha.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_Alpha.png" HUDPictureVariant_InnerIcon="../u_resources/spells/Active_Skills/reave_Rend.png" ShowParamsInTooltip="SpecificReave,DamageWeapon" HUDPicture="../u_resources/spells/Active_Skills/reave_Rend.png" VariantBottomPanel="1" />
+    <Damage_Conversion>
+      <Entry From="physical" To="rend" ConversionRate="100" />
+    </Damage_Conversion>
+    <WeaponRequirements Requirements="melee,bleed" />
+    <Specific_Reave LeftGeometry="Game/Objects/Animated_Object/Skill/Animated/Skill_Reave/skill_reaveL_rend.cdf" RightGeometry="Game/Objects/Animated_Object/Skill/Animated/Skill_Reave/skill_reaveR_rend.cdf">
+      <ReaveSound ComboId="0" OnAnimStart="Play_Skill_Reave_Attack_Swing_Combo0_Rend" OnAnimCast="" OnHit="Play_Skill_Reave_Attack_Swing_Impact_Rend" />
+      <ReaveSound ComboId="1" OnAnimStart="Play_Skill_Reave_Attack_Swing_Combo1_Rend" OnAnimCast="" OnHit="Play_Skill_Reave_Attack_Swing_Impact_Rend" />
+      <ReaveSound ComboId="2" OnAnimStart="Play_Skill_Reave_Attack_Swing_Combo2_Rend" OnAnimCast="" OnHit="Play_Skill_Reave_Attack_Swing_Impact_Rend" />
+      <ReaveSound ComboId="3" OnAnimStart="Play_Skill_Reave_Attack_Jump" OnAnimCast="Play_Skill_Reave_Attack_Jump_Impact_Rend" OnHit="Play_Skill_Reave_Attack_Swing_Impact_Rend" />
+      <ReaveSound ComboId="4" OnAnimStart="Play_Skill_Reave_Attack_Swing_Spin" OnAnimCast="" />
+    </Specific_Reave>
+    <EventEffectOverride>
+      <AnimEvent Original="U_Character_02.Reave.Reave_Swipe" Override="U_Character_02.Reave.Reave_Swipe_Rend" />
+      <AnimEvent Original="U_Character_02.Reave.Reave_Swipe_02" Override="U_Character_02.Reave.Reave_Swipe_02_Rend" />
+      <AnimEvent Original="U_Character_02.Reave.Reave_Disappear_01" Override="U_Character_02.Reave.Reave_Disappear_01_Rend" />
+      <AnimEvent Original="U_Character_02.Reave.Ground_Impact" Override="U_Character_02.Reave.Ground_Impact_Rend" />
+    </EventEffectOverride>
+    <SoundTrigger OnHit="Play_Skill_Reave_Attack_Swing_Impact_Rend" />
+  </Skill>
   <Skill UID="player_Reave_variant_19" ESkill="default_variant">
-    <HUD UIName="@ui_variant_player_Reave_variant_19" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_003.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_003.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_003.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_003.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_003.png" ShowParamsInTooltip="DamageWeapon" />
+    <HUD UIName="@ui_variant_player_Reave_variant_19" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_001.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_001.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_001.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_001.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_001.png" ShowParamsInTooltip="DamageWeapon" Category="Combat" />
     <DamageWeapon WeaponMultiplier="1.15" />
   </Skill>
   <Skill UID="player_Reave_variant_3,player_Reave_variant_5" ESkill="default_variant_combo">
@@ -199,5 +217,8 @@
   </Skill>
   <Skill UID="player_Reave_variant_3,player_Reave_variant_18" ESkill="default_variant_combo">
     <Specific_Reave LeftGeometry="Game/Objects/Animated_Object/Skill/Animated/Skill_Reave/skill_reaveL_Big_aether.cdf" RightGeometry="Game/Objects/Animated_Object/Skill/Animated/Skill_Reave/skill_reaveR_Big_aether.cdf" />
+  </Skill>
+  <Skill UID="player_Reave_variant_3,player_Reave_variant_20" ESkill="default_variant_combo">
+    <Specific_Reave LeftGeometry="Game/Objects/Animated_Object/Skill/Animated/Skill_Reave/skill_reaveL_Big_rend.cdf" RightGeometry="Game/Objects/Animated_Object/Skill/Animated/Skill_Reave/skill_reaveR_Big_rend.cdf" />
   </Skill>
 </MetaData>

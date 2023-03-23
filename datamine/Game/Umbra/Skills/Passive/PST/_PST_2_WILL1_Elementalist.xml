@@ -125,8 +125,8 @@
       <EIM Name="dotdamage_percent_global" HUDDesc="@ui_eim_dotdamage_percent_global" Permanent="1">
         <Semantics DamagePercentFloat="30" />
       </EIM>
-      <EIM Name="damage_percent_major_all" HUDDesc="@ui_eim_damage_percent_major_all" Permanent="1">
-        <Semantics MajorDamageMultiplier="0.9" />
+      <EIM Name="non_dot_damage_percent" HUDDesc="@ui_eim_non_dot_damage_percent" Permanent="1">
+        <Semantics DamagePercentFloat="-10" />
       </EIM>
     </MagicEffects>
   </Spell>
@@ -181,7 +181,7 @@
   <Spell Name="ELEM_24" UIName="@ui_ELEM_24_name" HUDLoreDesc="@ui_ELEM_24_lore" GameplayDesc="@ui_ELEM_24_desc">
     <MagicEffects>
       <EIM Name="ailment_stacks_multiplier" HUDDesc="@ui_eim_ailment_stacks_multiplier" Permanent="1">
-        <Semantics ChancePercentInt="50" MultiplierFloat="2" />
+        <Semantics ChancePercentInt="30" MultiplierFloat="2" />
       </EIM>
     </MagicEffects>
   </Spell>
@@ -226,7 +226,7 @@
   <Spell Name="ELEM_30" UIName="@ui_ELEM_30_name" HUDLoreDesc="@ui_ELEM_30_lore" GameplayDesc="@ui_ELEM_30_desc">
     <MagicEffects>
       <EIM Name="damage_percent_per_enemy_ailment_stack_on_target_kill" HUDDesc="@ui_eim_damage_percent_per_enemy_ailment_stack_on_target_kill" Permanent="1">
-        <Semantics DamagePercentFloat="1" StacksIntMaxCombined="10" DurationFloatMaxCombined="15" />
+        <Semantics DamagePercentFloat="2" StacksIntMaxCombined="5" DurationFloatMaxCombined="10" />
       </EIM>
     </MagicEffects>
   </Spell>

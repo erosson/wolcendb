@@ -80,7 +80,7 @@
   <Spell Name="AGIL_10" UIName="@ui_AGIL_10_name" HUDLoreDesc="" GameplayDesc="">
     <MagicEffects>
       <EIM Name="skill_cooldownreduction_percent" HUDDesc="@ui_eim_skill_cooldownreduction_percent" Permanent="1">
-        <Semantics DurationPercentFloat="10" />
+        <Semantics DurationPercentFloat="6" />
       </EIM>
     </MagicEffects>
   </Spell>
@@ -182,7 +182,7 @@
   <Spell Name="AGIL_22" UIName="@ui_AGIL_22_name" HUDLoreDesc="@ui_AGIL_22_lore" GameplayDesc="@ui_AGIL_22_desc">
     <MagicEffects>
       <EIM Name="dodgechance_on_being_hit" HUDDesc="@ui_eim_dodgechance_on_being_hit" Permanent="1">
-        <Semantics CharacteristicScorePercentInt="100" />
+        <Semantics CharacteristicScorePercentInt="75" />
       </EIM>
     </MagicEffects>
   </Spell>

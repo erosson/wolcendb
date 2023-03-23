@@ -30,7 +30,7 @@
   <Spell Name="MAST_5" UIName="@ui_MAST_5_name" HUDLoreDesc="@ui_MAST_5_lore" GameplayDesc="@ui_MAST_5_desc">
     <MagicEffects>
       <EIM Name="attack_damage_bonus_from_last_spell" HUDDesc="@ui_eim_attack_damage_bonus_from_last_spell" Permanent="1">
-        <Semantics DamagePercentFloat="15" DurationFloatMaxCombined="5" />
+        <Semantics DamagePercentFloat="25" DurationFloatMaxCombined="5" />
       </EIM>
     </MagicEffects>
   </Spell>
@@ -96,7 +96,7 @@
   <Spell Name="MAST_14" UIName="@ui_MAST_14_name" HUDLoreDesc="" GameplayDesc="">
     <MagicEffects>
       <EIM Name="movespeed" HUDDesc="@ui_eim_movespeed" Permanent="1">
-        <Semantics SpeedPercentInt="5" />
+        <Semantics SpeedPercentInt="3" />
       </EIM>
       <EIM Name="attackspeed_final_percent" HUDDesc="@ui_eim_attackspeed_final_percent" Permanent="1">
         <Semantics CharacteristicFinalPercentFloat="2" />

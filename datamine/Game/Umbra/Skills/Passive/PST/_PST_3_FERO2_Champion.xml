@@ -49,7 +49,7 @@
   </Spell>
   <Spell Name="CHAMP_7" UIName="@ui_CHAMP_7_name" HUDLoreDesc="" GameplayDesc="">
     <MagicEffects>
-      <EIM Name="twohanded_blockchance_flat" HUDDesc="@ui_eim_twohanded_blockchance_flat" Permanent="1">
+      <EIM Name="onehanded_blockchance_flat" HUDDesc="@ui_eim_onehanded_blockchance_flat" Permanent="1">
         <Semantics ChanceFlatFloat="10" />
       </EIM>
     </MagicEffects>
@@ -60,10 +60,10 @@
         <Semantics PossibilityInt="1" />
       </EIM>
       <EIM Name="stance_offensive_stats" HUDDesc="@ui_eim_stance_offensive_stats" Permanent="1">
-        <Semantics ChancePercentInt="75" CharacteristicScorePercentInt="-25" />
+        <Semantics ChancePercentInt="80" CharacteristicScorePercentInt="-20" />
       </EIM>
       <EIM Name="stance_defensive_stats" HUDDesc="@ui_eim_stance_defensive_stats" Permanent="1">
-        <Semantics ChancePercentInt="15" ResourcePercentFloat="10" CharacteristicFinalPercentFloat="-15" />
+        <Semantics ChancePercentInt="20" ResourcePercentFloat="10" CharacteristicFinalPercentFloat="-20" />
       </EIM>
     </MagicEffects>
   </Spell>
@@ -135,14 +135,14 @@
   <Spell Name="CHAMP_17" UIName="@ui_CHAMP_17_name" HUDLoreDesc="@ui_CHAMP_17_loredesc" GameplayDesc="@ui_CHAMP_17_gameplaydesc">
     <MagicEffects>
       <EIM Name="damage_on_block" HUDDesc="@ui_eim_damage_on_block" Permanent="1">
-        <Semantics PossibilityInt="1" DamagePercentFloat="300" TriggeredSkillSelector="0" />
+        <Semantics PossibilityInt="1" DamagePercentFloat="500" TriggeredSkillSelector="0" />
       </EIM>
     </MagicEffects>
   </Spell>
   <Spell Name="CHAMP_18" UIName="@ui_CHAMP_18_name" HUDLoreDesc="" GameplayDesc="">
     <MagicEffects>
       <EIM Name="damage_on_block" HUDDesc="@ui_eim_damage_on_block_rend" Permanent="1">
-        <Semantics TriggeredSkillSelector="1" />
+        <Semantics TriggeredSkillSelector="1" DamagePercentFloat="90" />
       </EIM>
     </MagicEffects>
   </Spell>

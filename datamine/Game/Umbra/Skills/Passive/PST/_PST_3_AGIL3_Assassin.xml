@@ -66,7 +66,7 @@
   <Spell Name="ASSA_8" UIName="@ui_ASSA_8_name" HUDLoreDesc="@ui_ASSA_8_loredesc" GameplayDesc="@ui_ASSA_8_gameplaydesc">
     <MagicEffects>
       <EIM Name="stack_focus_damage" HUDDesc="@ui_eim_stack_focus_damage" Permanent="1">
-        <Semantics PSTStackMaxCountInt="6" DamagePercentFloat="5" />
+        <Semantics PSTStackMaxCountInt="6" DamagePercentFloat="10" />
       </EIM>
     </MagicEffects>
   </Spell>
@@ -141,7 +141,7 @@
   <Spell Name="ASSA_17" UIName="@ui_ASSA_17_name" HUDLoreDesc="@ui_ASSA_17_loredesc" GameplayDesc="@ui_ASSA_17_gameplaydesc">
     <MagicEffects>
       <EIM Name="attack_speed_on_critical_hit" HUDDesc="@ui_eim_attack_speed_on_critical_hit" Permanent="1">
-        <Semantics MajorMultiplierFloat="1.1" />
+        <Semantics MajorMultiplierFloat="1.2" />
       </EIM>
     </MagicEffects>
   </Spell>

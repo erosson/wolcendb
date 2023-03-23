@@ -1,0 +1,142 @@
+<MetaData>
+  <Skill ESkill="player_spraynpray" Keywords="projectile,attack_skill,additional_projectile" UID="player_spraynpray">
+    <WeaponRequirements Requirements="rogue" />
+    <CastingParams CanCastWhileMoving="0" MaintainedCast="1" MinimumCastDuration="0.5" CancellableByDefault="1" MaximumTurnRate="2" />
+    <Animation AnimationDrivenMovement="0" ActionString_In="player_skill_SprayAndPray_In" ActionString_Loop="player_skill_SprayAndPray_Loop" ActionString_Out="player_skill_SprayAndPray_Out" ScaleWithSpellCastingSpeed="0" />
+    <HUD HUDPicture="..\u_resources\spells\Active_Skills\sprayandpray_Physical.png" UIName="@ui_AST_Spraynpray" Lore="@ui_AST_Spraynpray_Lore" ActiveEffectTitle="" ActiveEffectDesc="" ASTTreeNumber="1" ShowParamsInAST="Cost,ROSTime,Cooldown,Range,Projectiles,DamageWeapon,DamageDetail,StatusAilmentsChance,Explosion,Slow" ShowParamsInTooltip="Cost,Cooldown,DamageOverview,StatusAilmentsChance,Slow" />
+    <Enneract PickableParticle_MoveToGround="U_CommonVFX_02.Esseract.Esseract_Projectile.Frost" PickableParticle_OnGround_Shape="U_CommonVFX_02.Esseract.Esseract_Shape.Circle_Frost" PickableParticle_OnGround_Damage="U_CommonVFX_02.Esseract.Esseract_Color.Frost" PickableParticle_OnGround_Symbol="U_CommonVFX_02.Esseract.Esseract_Symbol.ETHELIEL" PickableParticle_OnGround_Indicator="U_CommonVFX_02.Esseract.Esseract_Indicator.Frost" PickableParticle_OnGround_Pickup="U_CommonVFX_02.Esseract.Esseract_Loot.Frost" SkillLearningParticle="U_CommonVFX.Skill_Learn.Skill_Learn_Frost" Inventory_HUDPicture="../u_resources/enneracts/sprayandpray.png" Inventory_LoreDesc="@ui_enneract_lore" />
+    <Range AttackRange="20" />
+    <Aggression TargetValueOnHit="10" />
+    <DamageWeapon WeaponMultiplier="0.25" />
+    <Cooldown Cooldown="0.5" CooldownPerLevel="0" />
+    <ResourceCost RageCost="-200" RageCostPerLevel="0" ROSTransfertDuration="0.4" />
+    <ResourceCostMaintained RageCostPerSecond="-150" RageCostPerSecondPerLevel="0" ROSTransfertDuration="1.0" />
+    <Projectile Name="player_spraynpray_proj" ProjectileCount="1" PenetrationLimit="1" />
+    <VisualFeedback TrailPresetBase="default" FeedbackPresetBase="Player_skill_Spraynpray" BloodDecalOrientation="forward" />
+    <SoundTrigger OnAnimStart="Play_Skill_SprayAndPray_StartSummon" OnAnimLoopIn="Play_Skill_SprayAndPray_StartLoop" OnAnimLoopOut="Stop_Skill_SprayAndPray_Loop" OnKill="Play_OnKill_Impact_Lethal_Bullet" PlayAttackVoice="0" />
+    <Specific_SpraynPray BulletPerSecond="4" ProjectileBeamWidth="1" RightHand="R_weapon_bone" LeftHand="L_weapon_bone" FireRateScaleOnAttackSpeedFactor="2" ShotAnimationScale="1" AdditionalBulletFromBonus="4" />
+  </Skill>
+  <Skill UID="player_spraynpray_variant_default_damage_type" ESkill="default_variant">
+    <HUD UIName="@ui_AST_Spraynpray" Lore="@ui_AST_Spraynpray_Lore" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_Alpha.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_Alpha.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_Alpha.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_Alpha.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_Alpha.png" HUDPictureVariant_InnerIcon="..\u_resources\spells\Active_Skills\sprayandpray_Physical.png" VariantBottomPanel="1" />
+  </Skill>
+  <Skill UID="player_spraynpray_variant_1" ESkill="default_variant">
+    <HUD UIName="@ui_Variant_Spraynpray_variant_1" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_001.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_001.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_001.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_001.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_001.png" ShowParamsInTooltip="DamageWeapon" Category="Combat" />
+    <ResourceCost RageCost="100" />
+    <ResourceCostMaintained RageCostPerSecond="-20" />
+  </Skill>
+  <Skill UID="player_spraynpray_variant_2" ESkill="default_variant">
+    <HUD UIName="@ui_Variant_Spraynpray_variant_2" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_005.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_005.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_005.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_005.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_005.png" ShowParamsInTooltip="DamageWeapon,Projectiles" Category="Mastery" />
+    <DamageWeapon WeaponMultiplier="1.15" />
+  </Skill>
+  <Skill UID="player_spraynpray_variant_3" ESkill="default_variant">
+    <HUD UIName="@ui_Variant_Spraynpray_variant_3" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_005.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_005.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_005.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_005.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_005.png" ShowParamsInTooltip="StatusAilmentsChance,Projectiles" Category="Mastery" />
+    <StatusAilment AllAilmentsInflictDamageIncreasePercent="40" />
+  </Skill>
+  <Skill UID="player_spraynpray_variant_4" ESkill="default_variant">
+    <HUD UIName="@ui_Variant_Spraynpray_variant_4" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_001.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_001.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_001.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_001.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_001.png" Category="Mastery" />
+    <Specific_SpraynPray ProjectileBeamWidth="1" FireRateMultiplier="0.25" />
+  </Skill>
+  <Skill UID="player_spraynpray_variant_5" ESkill="default_variant">
+    <HUD UIName="@ui_Variant_Spraynpray_variant_5" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_003.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_003.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_003.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_003.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_003.png" ShowParamsInTooltip="DamageWeapon,Projectiles" Category="Combat" />
+    <Projectile SpeedScale="0.75" />
+    <DamageWeapon WeaponMultiplier="1.25" />
+  </Skill>
+  <Skill UID="player_spraynpray_variant_6" ESkill="default_variant">
+    <HUD UIName="@ui_Variant_Spraynpray_variant_6" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_001.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_001.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_001.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_001.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_001.png" ShowParamsInTooltip="DamageWeapon,DamageCritical" Category="Combat" />
+    <DamageCritical CriticalInflictScoreModifier="40" />
+  </Skill>
+  <Skill UID="player_spraynpray_variant_7" ESkill="default_variant">
+    <HUD UIName="@ui_Variant_Spraynpray_variant_7" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_003.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_003.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_003.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_003.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_003.png" ShowParamsInTooltip="DamageWeapon,Projectiles" Category="Mastery" />
+    <DamageWeapon WeaponMultiplier="1.5" />
+    <Specific_SpraynPray DisablePiercingProjectiles="1" />
+    <ResourceCostMaintained RageCostPerSecond="+50" />
+  </Skill>
+  <Skill UID="player_spraynpray_variant_8" ESkill="default_variant">
+    <HUD UIName="@ui_Variant_Spraynpray_variant_8" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_005.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_005.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_005.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_005.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_005.png" ShowParamsInTooltip="DamageWeapon,Projectiles" Category="Mastery" />
+    <DamageWeapon WeaponMultiplier="1.15" />
+  </Skill>
+  <Skill UID="player_spraynpray_variant_9" ESkill="default_variant">
+    <HUD UIName="@ui_Variant_Spraynpray_variant_9" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_001.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_001.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_001.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_001.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_001.png" ShowParamsInTooltip="DamageWeapon" Category="Combat" />
+    <ResourceCost RageCost="100" />
+    <ResourceCostMaintained RageCostPerSecond="-20" />
+  </Skill>
+  <Skill UID="player_spraynpray_variant_10" ESkill="default_variant">
+    <HUD UIName="@ui_Variant_Spraynpray_variant_10" Lore="@ui_Variant_Spraynpray_variant_10_Lore" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_003.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_003.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_003.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_003.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_003.png" ShowParamsInTooltip="DamageWeapon,Projectiles" Category="Mastery" />
+    <DamageWeapon WeaponMultiplier="1.25" />
+    <DamageCritical CriticalInflictScoreModifier="10" CriticalDamageModifier="10" />
+  </Skill>
+  <Skill UID="player_spraynpray_variant_11" ESkill="default_variant">
+    <HUD UIName="@ui_Variant_Spraynpray_variant_11" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_005.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_005.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_005.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_005.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_005.png" ShowParamsInTooltip="DamageWeapon,Projectiles" Category="Mastery" />
+    <Specific_SpraynPray MultipleHitStunDuration="1" MultipleHitStunTreshold="30" />
+  </Skill>
+  <Skill UID="player_spraynpray_variant_12" ESkill="default_variant">
+    <HUD UIName="@ui_Variant_Spraynpray_variant_12" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_001.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_001.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_001.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_001.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_001.png" ShowParamsInTooltip="DamageWeapon,DamageCritical" Category="Combat" />
+    <DamageCritical CriticalDamageModifier="30" />
+  </Skill>
+  <Skill UID="player_spraynpray_variant_13" ESkill="default_variant">
+    <HUD UIName="@ui_Variant_Spraynpray_variant_13" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_005.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_005.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_005.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_005.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_005.png" ShowParamsInTooltip="DamageWeapon,Projectiles" Category="Mastery" />
+    <Specific_SpraynPray DamageIncreaseOnHoldMultiplierPerSecond="0.25" DamageIncreaseOnHoldMaxTime="2" />
+  </Skill>
+  <Skill UID="player_spraynpray_variant_14" ESkill="default_variant">
+    <HUD UIName="@ui_Variant_Spraynpray_variant_14" Lore="@ui_Variant_Spraynpray_variant_14_lore" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_005.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_005.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_005.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_005.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_005.png" ShowParamsInTooltip="DamageWeapon,Projectiles" Category="Mastery" />
+    <Animation ActionString_In="player_skill_SprayAndPray360_In" ActionString_Loop="player_skill_SprayAndPray360_Loop" ActionString_Out="player_skill_SprayAndPray360_Out" />
+    <Specific_SpraynPray CircleMode="1" CircleModeRotationSpeed="500" BulletPerSecond="15" />
+  </Skill>
+  <Skill UID="player_spraynpray_variant_15" ESkill="default_variant">
+    <HUD UIName="@ui_Variant_Spraynpray_variant_15" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_003.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_003.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_003.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_003.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_003.png" ShowParamsInTooltip="DamageWeapon,Projectiles" Category="Combat" />
+    <Projectile SpeedScale="1.25" />
+  </Skill>
+  <Skill UID="player_spraynpray_variant_16" ESkill="default_variant">
+    <HUD UIName="@ui_Variant_Spraynpray_variant_16" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_005.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_005.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_005.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_005.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_005.png" ShowParamsInTooltip="DamageWeapon,Projectiles" Category="Mastery" />
+    <DamageWeapon WeaponMultiplier="1.15" />
+  </Skill>
+  <Skill UID="player_spraynpray_variant_17" ESkill="default_variant">
+    <HUD UIName="@ui_Variant_Spraynpray_variant_17" Lore="@ui_Variant_Spraynpray_variant_17_Lore" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_Alpha.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_Alpha.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_Alpha.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_Alpha.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_Alpha.png" HUDPictureVariant_InnerIcon="..\u_resources\spells\Active_Skills\sprayandpray_Shadow.png" HUDPicture="..\u_resources\spells\Active_Skills\sprayandpray_Shadow.png" VariantBottomPanel="1" ShowParamsInTooltip="DamageWeapon,Projectiles" />
+    <EventEffectOverride>
+      <AnimEvent Original="U_Character_02.BullEye.SprayAndPrayPistol_Loop_Physical" Override="U_Character_02.BullEye.SprayAndPrayPistol_Loop_Shadow" />
+      <AnimEvent Original="U_Character_02.BullEye.SprayAndPrayPistol_End_Physical" Override="U_Character_02.BullEye.SprayAndPrayPistol_End_Shadow" />
+    </EventEffectOverride>
+    <Damage_Conversion>
+      <Entry From="physical" To="frost" ConversionRate="-100" />
+      <Entry From="physical" To="shadow" ConversionRate="100" />
+    </Damage_Conversion>
+    <WeaponRequirements Requirements="rogue,shadow" />
+    <Projectile Name="player_spraynpray_proj_Shadow" />
+  </Skill>
+  <Skill UID="player_spraynpray_variant_18" ESkill="default_variant">
+    <HUD UIName="@ui_Variant_Spraynpray_variant_18" Lore="@ui_Variant_Spraynpray_variant_18_Lore" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_Alpha.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_Alpha.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_Alpha.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_Alpha.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_Alpha.png" HUDPictureVariant_InnerIcon="..\u_resources\spells\Active_Skills\sprayandpray_Frost.png" HUDPicture="..\u_resources\spells\Active_Skills\sprayandpray_Frost.png" VariantBottomPanel="1" ShowParamsInTooltip="DamageWeapon,Projectiles" />
+    <EventEffectOverride>
+      <AnimEvent Original="U_Character_02.BullEye.SprayAndPrayPistol_Loop_Physical" Override="U_Character_02.BullEye.SprayAndPrayPistol_Loop_Frost" />
+      <AnimEvent Original="U_Character_02.BullEye.SprayAndPrayPistol_End_Physical" Override="U_Character_02.BullEye.SprayAndPrayPistol_End_Frost" />
+    </EventEffectOverride>
+    <Damage_Conversion>
+      <Entry From="physical" To="frost" ConversionRate="100" />
+    </Damage_Conversion>
+    <WeaponRequirements Requirements="rogue,frost" />
+    <Projectile Name="player_spraynpray_proj_Frost" />
+  </Skill>
+  <Skill UID="player_spraynpray_variant_19" ESkill="default_variant">
+    <HUD UIName="@ui_Variant_Spraynpray_variant_19" Lore="@ui_Variant_Spraynpray_variant_19_Lore" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_Alpha.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_Alpha.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_Alpha.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_Alpha.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_Alpha.png" HUDPictureVariant_InnerIcon="..\u_resources\spells\Active_Skills\sprayandpray_Toxic.png" HUDPicture="..\u_resources\spells\Active_Skills\sprayandpray_Toxic.png" VariantBottomPanel="1" ShowParamsInTooltip="DamageWeapon,Projectiles" />
+    <EventEffectOverride>
+      <AnimEvent Original="U_Character_02.BullEye.SprayAndPrayPistol_Loop_Physical" Override="U_Character_02.BullEye.SprayAndPrayPistol_Loop_Toxic" />
+      <AnimEvent Original="U_Character_02.BullEye.SprayAndPrayPistol_End_Physical" Override="U_Character_02.BullEye.SprayAndPrayPistol_End_Toxic" />
+    </EventEffectOverride>
+    <Damage_Conversion>
+      <Entry From="physical" To="toxic" ConversionRate="100" />
+    </Damage_Conversion>
+    <WeaponRequirements Requirements="rogue,poison" />
+    <Projectile Name="player_spraynpray_proj_Toxic" />
+  </Skill>
+  <Skill UID="player_spraynpray_variant_20" ESkill="default_variant">
+    <HUD UIName="@ui_Variant_Spraynpray_variant_20" Lore="@ui_Variant_Spraynpray_variant_20_Lore" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_Alpha.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_Alpha.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_Alpha.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_Alpha.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_Alpha.png" HUDPictureVariant_InnerIcon="..\u_resources\spells\Active_Skills\sprayandpray_Sacred.png" HUDPicture="..\u_resources\spells\Active_Skills\sprayandpray_Sacred.png" VariantBottomPanel="1" ShowParamsInTooltip="DamageWeapon,Projectiles" />
+    <EventEffectOverride>
+      <AnimEvent Original="U_Character_02.BullEye.SprayAndPrayPistol_Loop_Physical" Override="U_Character_02.BullEye.SprayAndPrayPistol_Loop_Sacred" />
+      <AnimEvent Original="U_Character_02.BullEye.SprayAndPrayPistol_End_Physical" Override="U_Character_02.BullEye.SprayAndPrayPistol_End_Sacred" />
+    </EventEffectOverride>
+    <Damage_Conversion>
+      <Entry From="physical" To="sacred" ConversionRate="100" />
+    </Damage_Conversion>
+    <WeaponRequirements Requirements="rogue,sacred" />
+    <Projectile Name="player_spraynpray_proj_Sacred" />
+  </Skill>
+</MetaData>

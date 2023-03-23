@@ -11,15 +11,15 @@
   </Spell>
   <Spell Name="BSRK_2" UIName="@ui_BSRK_2_name" HUDLoreDesc="" GameplayDesc="">
     <MagicEffects>
-      <EIM Name="fire_damage_percent" HUDDesc="@ui_eim_fire_damage_percent" Permanent="1">
-        <Semantics DamagePercentInt="15" />
+      <EIM Name="damage_percent_melee_weapon" HUDDesc="@ui_eim_damage_percent_melee_weapon" Permanent="1">
+        <Semantics DamagePercentInt="5" />
       </EIM>
     </MagicEffects>
   </Spell>
   <Spell Name="BSRK_3" UIName="@ui_BSRK_3_name" HUDLoreDesc="" GameplayDesc="">
     <MagicEffects>
-      <EIM Name="fire_damage_percent" HUDDesc="@ui_eim_fire_damage_percent" Permanent="1">
-        <Semantics DamagePercentInt="15" />
+      <EIM Name="damage_percent_melee_weapon" HUDDesc="@ui_eim_damage_percent_melee_weapon" Permanent="1">
+        <Semantics DamagePercentInt="5" />
       </EIM>
     </MagicEffects>
   </Spell>
@@ -32,11 +32,11 @@
   </Spell>
   <Spell Name="BSRK_5" UIName="@ui_BSRK_5_name" HUDLoreDesc="" GameplayDesc="">
     <MagicEffects>
-      <EIM Name="fire_damage_percent" HUDDesc="@ui_eim_fire_damage_percent" Permanent="1">
+      <EIM Name="damage_percent_melee_weapon" HUDDesc="@ui_eim_damage_percent_melee_weapon" Permanent="1">
         <Semantics DamagePercentInt="10" />
       </EIM>
-      <EIM Name="rage_on_hit_pts" HUDDesc="@ui_eim_rage_on_hit_pts" Permanent="1">
-        <Semantics ResourceFlatFloat="10" />
+      <EIM Name="resource_points" HUDDesc="@ui_eim_resource_points" Permanent="1">
+        <Semantics ResourceFlatInt="100" />
       </EIM>
     </MagicEffects>
   </Spell>
@@ -49,8 +49,8 @@
   </Spell>
   <Spell Name="BSRK_7" UIName="@ui_BSRK_7_name" HUDLoreDesc="" GameplayDesc="">
     <MagicEffects>
-      <EIM Name="onehanded_blockchance_flat" HUDDesc="@ui_eim_onehanded_blockchance_flat" Permanent="1">
-        <Semantics ChanceFlatFloat="10" />
+      <EIM Name="damage_percent_melee_weapon" HUDDesc="@ui_eim_damage_percent_melee_weapon" Permanent="1">
+        <Semantics DamagePercentInt="5" />
       </EIM>
     </MagicEffects>
   </Spell>
@@ -70,15 +70,15 @@
   </Spell>
   <Spell Name="BSRK_10" UIName="@ui_BSRK_10_name" HUDLoreDesc="" GameplayDesc="">
     <MagicEffects>
-      <EIM Name="convert_physical_to_fire" HUDDesc="@ui_eim_convert_physical_to_fire" Permanent="1">
-        <Semantics DamagePercentFloat="10" />
+      <EIM Name="fire_damage_percent" HUDDesc="@ui_eim_fire_damage_percent" Permanent="1">
+        <Semantics DamagePercentInt="15" />
       </EIM>
     </MagicEffects>
   </Spell>
   <Spell Name="BSRK_11" UIName="@ui_BSRK_11_name" HUDLoreDesc="" GameplayDesc="">
     <MagicEffects>
-      <EIM Name="convert_physical_to_fire" HUDDesc="@ui_eim_convert_physical_to_fire" Permanent="1">
-        <Semantics DamagePercentFloat="10" />
+      <EIM Name="fire_damage_percent" HUDDesc="@ui_eim_fire_damage_percent" Permanent="1">
+        <Semantics DamagePercentInt="15" />
       </EIM>
     </MagicEffects>
   </Spell>
@@ -91,11 +91,11 @@
   </Spell>
   <Spell Name="BSRK_13" UIName="@ui_BSRK_13_name" HUDLoreDesc="" GameplayDesc="">
     <MagicEffects>
-      <EIM Name="convert_physical_to_fire" HUDDesc="@ui_eim_convert_physical_to_fire" Permanent="1">
-        <Semantics DamagePercentFloat="10" />
+      <EIM Name="fire_damage_percent" HUDDesc="@ui_eim_fire_damage_percent" Permanent="1">
+        <Semantics DamagePercentInt="10" />
       </EIM>
-      <EIM Name="statusailment_inflict_score_percent" HUDDesc="@ui_eim_statusailment_inflict_score_percent" Permanent="1">
-        <Semantics CharacteristicScorePercentInt="5" />
+      <EIM Name="statusailment_inflict_score_percent_elemental" HUDDesc="@ui_eim_statusailment_inflict_score_percent_elemental" Permanent="1">
+        <Semantics CharacteristicScorePercentInt="10" />
       </EIM>
     </MagicEffects>
   </Spell>
@@ -115,8 +115,8 @@
   </Spell>
   <Spell Name="BSRK_16" UIName="@ui_BSRK_16_name" HUDLoreDesc="" GameplayDesc="">
     <MagicEffects>
-      <EIM Name="health_percent" HUDDesc="@ui_eim_health_percent" Permanent="1">
-        <Semantics HealthPercentInt="8" />
+      <EIM Name="fire_damage_percent" HUDDesc="@ui_eim_fire_damage_percent" Permanent="1">
+        <Semantics DamagePercentInt="5" />
       </EIM>
     </MagicEffects>
   </Spell>
@@ -140,10 +140,10 @@
         <Semantics PSTStackMaxCountInt="50" PSTStackResetTimer="3" />
       </EIM>
       <EIM Name="stack_anger_attack_speed" HUDDesc="@ui_eim_stack_anger_attack_speed" Permanent="1">
-        <Semantics CharacteristicFinalPercentFloat="0.3" />
+        <Semantics CharacteristicFinalPercentFloat="0.5" />
       </EIM>
       <EIM Name="stack_anger_life_leech" HUDDesc="@ui_eim_stack_anger_life_leech" Permanent="1">
-        <Semantics DamagePercentFloat="0.04" />
+        <Semantics DamagePercentFloat="0.02" />
       </EIM>
       <EIM Name="stack_anger_all_resistances" HUDDesc="@ui_eim_stack_anger_all_resistances" Permanent="1">
         <Semantics CharacteristicScorePercentInt="-1" />

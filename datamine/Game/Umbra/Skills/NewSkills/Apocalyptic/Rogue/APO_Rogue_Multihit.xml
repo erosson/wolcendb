@@ -1,6 +1,6 @@
 <MetaData>
   <Skill UID="apo_rogue_multihit" ESkill="apo_rogue_multihit" Keywords="magic_spell">
-    <VisualFeedback TrailPresetBase="apo" FeedbackPresetBase="Player_Apo_rogue" BloodDecalOrientation="forward" />
+    <VisualFeedback TrailPresetBase="apo" FeedbackPresetBase="Player_Apo_Rogue_Multihit" BloodDecalOrientation="forward" />
     <Animation AnimationDrivenMovement="0" ActionString_In="apo_skill_04_in" ActionString_Loop="apo_skill_04_loop" ActionString_Out="apo_skill_04_out" />
     <CastingParams RequiresApocalypticForm="1" CastBone="R_Weapon_Bone" MinimumCastDuration="0.3" MaintainedCast="1" KeepAliveAfterReleasing="1" />
     <HUD HUDPicture="../u_resources/spells/Active_Skills/rogue_clones.png" UIName="@ui_APO_Rogue_Skill03" Lore="@ui_APO_Rogue_Skill03_Lore" ActiveEffectTitle="" ActiveEffectDesc="" ASTTreeNumber="1" ShowParamsInAST="Cost,ROSTime,Cooldown,Range,DamageDetail,StatusAilmentsChance,Explosion" ShowParamsInTooltip="Cost,Cooldown,DamageOverview,StatusAilmentsChance" />
@@ -32,10 +32,10 @@
         <Step TimeToReachStep="1.0" DamagePercentBonus="150" />
       </ChargeSteps>
     </Specific_ApoRogue_Multihit>
-    <SoundTrigger OnAnimStart="Play_Skill_APO_Rogue_Multihit_StartDash" OnAnimLoopIn="" OnHit="" OnAnimLoopOut="Stop_Skill_APO_Rogue_Multihit_Main" />
+    <SoundTrigger OnAnimStart="Play_Skill_APO_Rogue_Multihit_StartDash" OnAnimLoopIn="" OnHit="Play_Skill_APO_Rogue_Multihit_Impact" OnAnimLoopOut="Stop_Skill_APO_Rogue_Multihit_Main" />
   </Skill>
   <Skill UID="apo_rogue_multihit_final" ESkill="default_empty" Keywords="magic_spell">
-    <VisualFeedback TrailPresetBase="apo" FeedbackPresetBase="Player_Apo_rogue" BloodDecalOrientation="forward" />
+    <VisualFeedback TrailPresetBase="apo" FeedbackPresetBase="Player_Apo_Rogue_Multihit" BloodDecalOrientation="forward" />
     <Aggression TargetValueOnHit="20" />
     <DamagePreset DamagePreset="Apo_Rogue_Strong" Multiplier="3" Type="rend" />
   </Skill>

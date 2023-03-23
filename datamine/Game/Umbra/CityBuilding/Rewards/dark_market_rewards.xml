@@ -76,4 +76,28 @@
     <ContextualSoundTrigger ToPlay="Endgame_Crafting_ReagentUpgradeProjectCompleted" ToResume="EndgameIdle" />
     <ItemModification Type="Reagent" RarityIncreaseChancePercent="100" QualityIncreaseChancePercent="0" />
   </Reward>
+  <Reward Name="buy_unique_items_max" UITitle="@ui_buy_unique_reward" UILore="@ui_buy_unique_reward_lore">
+    <CustomMessages>
+      <Message UIDesc="@ui_buy_unique_reward_summary" />
+    </CustomMessages>
+    <Currency Gold_Min="0" Gold_Max="0" Gold_PerPlayerLevel="0" PA_Min="0" PA_Max="0" PA_PerPlayerLevel="0" />
+    <ChoiceItems Name="Unique_Project_max" MinItemNumber="1" MaxItemNumber="1" SortByRarity="1" />
+    <ContextualSoundTrigger ToPlay="Endgame_Crafting_ReagentAquisitionProjectCompleted" ToResume="EndgameIdle" />
+  </Reward>
+  <Reward Name="buy_unique_items_max_max" UITitle="@ui_buy_unique_reward" UILore="@ui_buy_unique_reward_lore">
+    <CustomMessages>
+      <Message UIDesc="@ui_buy_unique_reward_summary" />
+    </CustomMessages>
+    <Currency Gold_Min="0" Gold_Max="0" Gold_PerPlayerLevel="0" PA_Min="0" PA_Max="0" PA_PerPlayerLevel="0" />
+    <ChoiceItems Name="Unique_Project_max_max" MinItemNumber="1" MaxItemNumber="1" SortByRarity="1" />
+    <ContextualSoundTrigger ToPlay="Endgame_Crafting_ReagentAquisitionProjectCompleted" ToResume="EndgameIdle" />
+  </Reward>
+  <Reward Name="buy_unique_items_ultimate" UITitle="@ui_buy_unique_reward" UILore="@ui_buy_unique_reward_lore">
+    <CustomMessages>
+      <Message UIDesc="@ui_buy_unique_reward_summary" />
+    </CustomMessages>
+    <Currency Gold_Min="0" Gold_Max="0" Gold_PerPlayerLevel="0" PA_Min="0" PA_Max="0" PA_PerPlayerLevel="0" />
+    <ChoiceItems Name="Unique_Project_Weapon_Ultimate" MinItemNumber="1" MaxItemNumber="1" SortByRarity="1" />
+    <ContextualSoundTrigger ToPlay="Endgame_Crafting_ReagentAquisitionProjectCompleted" ToResume="EndgameIdle" />
+  </Reward>
 </MetaData>

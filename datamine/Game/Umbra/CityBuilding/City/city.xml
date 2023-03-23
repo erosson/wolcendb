@@ -1,25 +1,26 @@
 <MetaData>
   <City MaxActiveProjects="2" MaxForcedProjects="3">
     <Buildings>
-      <city_hall BuildingName="building_city_stormfall_palace" />
-      <explorers_guild BuildingName="building_seekers_garrison" />
-      <diplomats_guild BuildingName="building_trade_assembly" />
-      <crafting_building BuildingName="building_dark_market" />
-      <alchesmith BuildingName="building_transmutation_forge" />
-      <bankers_guild BuildingName="building_bank" />
-      <apocalyptic_building BuildingName="building_anankis_artifact" />
-      <skills_building BuildingName="building_enneract_lab" />
-      <pa_to_gold_converter BuildingName="building_siphon_chamber" />
-      <gold_to_pa_converter BuildingName="building_injector_seat" />
-      <shipyard BuildingName="building_shipyard" />
-      <wonder_1 BuildingName="building_wonder_1" />
-      <wonder_2 BuildingName="building_wonder_2" />
-      <wonder_3 BuildingName="building_wonder_3" />
-      <wonder_4 BuildingName="building_wonder_4" />
-      <wonder_5 BuildingName="building_wonder_5" />
-      <wonder_6 BuildingName="building_wonder_6" />
-      <hunt BuildingName="building_hunt" HideInLegacy="1" HideInStandard="1" HideInChronicle="0" RequiredQuest="C1_EG_SF_Q1" />
-      <expert_forge BuildingName="building_expert_forge" />
+      <city_hall BuildingName="building_city_stormfall_palace" RequiredQuest="ACT4_Loop0" />
+      <explorers_guild BuildingName="building_seekers_garrison" RequiredQuest="ACT4_Loop0" />
+      <diplomats_guild BuildingName="building_trade_assembly" RequiredQuest="ACT4_Epilogue" />
+      <crafting_building BuildingName="building_dark_market" RequiredQuest="ACT4_Epilogue" />
+      <alchesmith BuildingName="building_transmutation_forge" RequiredQuest="ACT4_Epilogue" />
+      <bankers_guild BuildingName="building_bank" RequiredQuest="ACT4_Loop0" />
+      <apocalyptic_building BuildingName="building_anankis_artifact" RequiredQuest="ACT4_Epilogue" />
+      <skills_building BuildingName="building_enneract_lab" RequiredQuest="ACT4_Epilogue" />
+      <pa_to_gold_converter BuildingName="building_siphon_chamber" RequiredQuest="ACT4_Epilogue" />
+      <gold_to_pa_converter BuildingName="building_injector_seat" RequiredQuest="ACT4_Epilogue" />
+      <shipyard BuildingName="building_shipyard" RequiredQuest="ACT4_Epilogue" />
+      <wonder_1 BuildingName="building_wonder_1" RequiredQuest="ACT4_Epilogue" />
+      <wonder_2 BuildingName="building_wonder_2" RequiredQuest="ACT4_Loop0" />
+      <wonder_3 BuildingName="building_wonder_3" RequiredQuest="ACT4_Epilogue" />
+      <wonder_4 BuildingName="building_wonder_4" RequiredQuest="ACT4_Epilogue" />
+      <wonder_5 BuildingName="building_wonder_5" RequiredQuest="ACT4_Epilogue" />
+      <wonder_6 BuildingName="building_wonder_6" RequiredQuest="ACT4_Epilogue" />
+      <hunt BuildingName="building_hunt" RequiredQuest="ACT4_Intro" />
+      <regent_assemblee BuildingName="building_regent_assemblee" RequiredQuest="ACT4_Loop0" BoundToTimeline="1" />
+      <expert_forge BuildingName="building_expert_forge" RequiredQuest="ACT4_Epilogue" />
     </Buildings>
     <CourierEvents Frequency_Min="5" Frequency_Max="8">
       <Event Name="courier_1" RewardName="courier_reward_1" Weight="1" Cooldown="0" RequiredPlayerLevel="0" RequiredCityLevel="3" RequiredProjects="" />

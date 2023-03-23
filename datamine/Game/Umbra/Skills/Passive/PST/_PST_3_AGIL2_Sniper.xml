@@ -69,7 +69,7 @@
   <Spell Name="SNIP_8" UIName="@ui_SNIP_8_name" HUDLoreDesc="@ui_SNIP_8_loredesc" GameplayDesc="@ui_SNIP_8_gameplaydesc">
     <MagicEffects>
       <EIM Name="remaining_pierce_as_damage" HUDDesc="@ui_eim_remaining_pierce_as_damage" Permanent="1">
-        <Semantics DamagePercentFloat="20" />
+        <Semantics DamagePercentFloat="15" />
       </EIM>
     </MagicEffects>
   </Spell>
@@ -147,7 +147,7 @@
   <Spell Name="SNIP_17" UIName="@ui_SNIP_17_name" HUDLoreDesc="@ui_SNIP_17_loredesc" GameplayDesc="@ui_SNIP_17_gameplaydesc">
     <MagicEffects>
       <EIM Name="default_attacks_chain" HUDDesc="@ui_eim_default_attacks_chain" Permanent="1">
-        <Semantics StackCountInt="2" RadiusFloat="10" />
+        <Semantics StackCountInt="3" RadiusFloat="10" />
       </EIM>
       <EIM Name="frost_damage_bonus_on_chained_projectiles" HUDDesc="@ui_eim_frost_damage_bonus_on_chained_projectiles" Permanent="1">
         <Semantics DamagePercentFloat="30" />
@@ -167,7 +167,7 @@
         <Semantics PSTStackTickrateFloat="2" PSTStackMaxCountInt="10" />
       </EIM>
       <EIM Name="stacks_hunter_damage" HUDDesc="@ui_eim_stacks_hunter_damage" Permanent="1">
-        <Semantics DamagePercentFloat="5" />
+        <Semantics DamagePercentFloat="3" />
       </EIM>
     </MagicEffects>
   </Spell>

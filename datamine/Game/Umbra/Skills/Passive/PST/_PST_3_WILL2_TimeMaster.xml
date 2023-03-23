@@ -60,7 +60,7 @@
   <Spell Name="TIME_8" UIName="@ui_TIME_8_name" HUDLoreDesc="@ui_TIME_8_loredesc" GameplayDesc="@ui_TIME_8_gameplaydesc">
     <MagicEffects>
       <EIM Name="stasis_afflicted_enemies_take_damage_twice" HUDDesc="@ui_eim_stasis_afflicted_enemies_take_damage_twice" Permanent="1">
-        <Semantics DurationFlatFloat="1.5" DamagePercentFloat="10" />
+        <Semantics DurationFlatFloat="2.5" DamagePercentFloat="10" />
       </EIM>
     </MagicEffects>
   </Spell>
@@ -158,7 +158,7 @@
   <Spell Name="TIME_19" UIName="@ui_TIME_19_name" HUDLoreDesc="@ui_TIME_19_loredesc" GameplayDesc="@ui_TIME_19_gameplaydesc">
     <MagicEffects>
       <EIM Name="take_delayed_damage" HUDDesc="@ui_eim_take_delayed_damage" Permanent="1">
-        <Semantics DurationFlatFloat="1" DamagePercentFloat="40" />
+        <Semantics DurationFlatFloat="1" DamagePercentFloat="50" />
       </EIM>
       <EIM Name="cap_max_health_and_force_shield" HUDDesc="@ui_eim_cap_max_health_and_force_shield" Permanent="1">
         <Semantics HealthPercentInt="85" ArmorPercentFloat="85" />

@@ -1,26 +1,26 @@
 <MetaData>
   <Skill ESkill="player_frostcomet" Keywords="projectile,magic_spell" UID="player_frostcomet">
     <WeaponRequirements Requirements="magic,frost" />
-    <Projectile Name="player_frostcomet_proj" ProjectileCount="1" BaseDamageBonusPercentPerNonUsedProjectile="30" />
+    <Projectile Name="player_frostcomet_proj" ProjectileCount="1" BaseDamageBonusPercentPerNonUsedProjectile="50" />
     <Collisions IgnoreEntityCollisions="1" />
     <Attachments HideEquippedItemsWhilecasting_Right="1" />
     <Animation ActionString="player_skill_frostcomet" ActionString_FollowUp="player_skill_frostcomet" />
     <SkillLoop PresetID="skillloop_frostcomet" SpawnAtSkillTargetPos="1" />
-    <CastingParams AnimationTrigger="1" CastBone="weapon_bone" CastDelay="1" />
-    <ResourceCost ManaCost="-250" ROSTransfertDuration="2" RageCost="0" />
-    <Cooldown Cooldown="8" CooldownPerLevel="0" />
+    <CastingParams AnimationTrigger="1" CastBone="weapon_bone" CastDelay="1" CancellableByDefault="1" />
+    <ResourceCost ManaCost="-200" ROSTransfertDuration="2" RageCost="0" />
+    <Cooldown Cooldown="6" CooldownPerLevel="0" />
     <Targeting TargetOnGround="1" />
     <HUD HUDPicture="../u_resources/spells/Active_Skills/frostcomet_Frost.png" UIName="@ui_AST_FrostComet" Lore="@ui_AST_FrostComet_Lore" ActiveEffectDesc="" ActiveEffectTitle="" ASTTreeNumber="2" ShowParamsInAST="DamageWeapon,Cost,ROSTime,Cooldown,Range,DamageDetail,DamageCritical,StatusAilmentsChance,Explosion,CastingParams,SpecificFrostComet" ShowParamsInTooltip="Cost,Cooldown,DamageOverview,StatusAilmentsChance,SpecificFrostComet" />
     <Enneract PickableParticle_MoveToGround="U_CommonVFX_02.Esseract.Esseract_Projectile.Frost" PickableParticle_OnGround_Shape="U_CommonVFX_02.Esseract.Esseract_Shape.Circle_Frost" PickableParticle_OnGround_Damage="U_CommonVFX_02.Esseract.Esseract_Color.Frost" PickableParticle_OnGround_Symbol="U_CommonVFX_02.Esseract.Esseract_Symbol.ETHELIEL" PickableParticle_OnGround_Indicator="U_CommonVFX_02.Esseract.Esseract_Indicator.Frost" PickableParticle_OnGround_Pickup="U_CommonVFX_02.Esseract.Esseract_Loot.Frost" SkillLearningParticle="U_CommonVFX.Skill_Learn.Skill_Learn_Frost" Inventory_HUDPicture="../u_resources/enneracts/frostcomet.png" Inventory_LoreDesc="@ui_enneract_lore" />
     <Explosion ExplosionRadius="3" />
     <Aggression TargetValueOnHit="60" />
-    <DamageWeapon WeaponMultiplier="5" />
+    <DamageWeapon WeaponMultiplier="6" />
     <StatusAilment AilmentEffectiveness="150" />
     <Damage_Conversion>
       <Entry From="physical" To="frost" ConversionRate="100" />
     </Damage_Conversion>
     <Range AttackRange="15" ProjectileMinDistance="0" />
-    <SoundTrigger OnAnimStart="PLAY_Skill_FrostMeteor_Summon" />
+    <SoundTrigger OnAnimStart="PLAY_Skill_FrostMeteor_Summon" OnKill="Play_OnKill_Impact_Lethal_Spell" />
     <Specific_FrostComet InitialProjectileHeight="7.5" ProjectileIndicatorTimeScale="1.1" />
     <VisualFeedback TrailPresetBase="default" FeedbackPresetBase="Player_skill_frostcomet" BloodDecalOrientation="forward" />
     <ParticleList>
@@ -31,52 +31,52 @@
     <HUD UIName="@ui_AST_FrostComet" Lore="@ui_AST_FrostComet_Lore" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_Alpha.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_Alpha.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_Alpha.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_Alpha.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_Alpha.png" HUDPictureVariant_InnerIcon="../u_resources/spells/Active_Skills/frostcomet_Frost.png" VariantBottomPanel="1" />
   </Skill>
   <Skill ESkill="default_variant" UID="player_frostcomet_step_1">
-    <HUD UIName="@ui_Variant_FrostComet_variant_1" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_003.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_003.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_003.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_003.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_003.png" ShowParamsInTooltip="SpecificFrostComet,Explosion" />
+    <HUD UIName="@ui_Variant_FrostComet_variant_1" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_003.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_003.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_003.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_003.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_003.png" ShowParamsInTooltip="SpecificFrostComet,Explosion" Category="Combat" />
     <Projectile Name="player_frostcomet_proj_large" />
     <Explosion ExplosionRadius="1" />
     <Specific_FrostComet DOTCometBaseRadius="1.5" />
   </Skill>
   <Skill ESkill="default_variant" UID="player_frostcomet_step_2">
-    <HUD UIName="@ui_Variant_FrostComet_variant_2" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_001.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_001.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_001.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_001.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_001.png" ShowParamsInTooltip="SpecificFrostComet,Cost" />
+    <HUD UIName="@ui_Variant_FrostComet_variant_2" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_001.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_001.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_001.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_001.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_001.png" ShowParamsInTooltip="SpecificFrostComet,Cost" Category="Utility" />
     <ResourceCost ManaCost="45" />
   </Skill>
   <Skill ESkill="default_variant" UID="player_frostcomet_step_3">
-    <HUD UIName="@ui_Variant_FrostComet_variant_3" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_003.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_003.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_003.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_003.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_003.png" ShowParamsInTooltip="SpecificFrostComet,CastingParams" />
+    <HUD UIName="@ui_Variant_FrostComet_variant_3" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_003.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_003.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_003.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_003.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_003.png" ShowParamsInTooltip="SpecificFrostComet,CastingParams" Category="Utility" />
     <CastingParams CastDelay="-0.35" />
     <Specific_FrostComet ProjectileIndicatorTimeScale="-0.35" />
   </Skill>
   <Skill ESkill="default_variant" UID="player_frostcomet_step_4">
-    <HUD UIName="@ui_Variant_FrostComet_variant_4" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_003.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_003.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_003.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_003.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_003.png" ShowParamsInTooltip="SpecificFrostComet,DamageWeapon" />
+    <HUD UIName="@ui_Variant_FrostComet_variant_4" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_003.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_003.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_003.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_003.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_003.png" ShowParamsInTooltip="SpecificFrostComet,DamageWeapon" Category="Combat" />
     <DamageWeapon WeaponMultiplier="1.15" />
   </Skill>
   <Skill ESkill="default_variant" UID="player_frostcomet_step_6">
-    <HUD UIName="@ui_Variant_FrostComet_variant_6" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_001.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_001.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_001.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_001.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_001.png" ShowParamsInTooltip="SpecificFrostComet,StatusAilmentsChance" />
+    <HUD UIName="@ui_Variant_FrostComet_variant_6" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_001.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_001.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_001.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_001.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_001.png" ShowParamsInTooltip="SpecificFrostComet,StatusAilmentsChance" Category="Utility" />
     <StatusAilment AilmentEffectiveness="125" />
   </Skill>
   <Skill ESkill="default_variant" UID="player_frostcomet_step_7">
-    <HUD UIName="@ui_Variant_FrostComet_variant_7" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_001.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_001.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_001.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_001.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_001.png" ShowParamsInTooltip="SpecificFrostComet,DamageCritical" />
+    <HUD UIName="@ui_Variant_FrostComet_variant_7" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_001.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_001.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_001.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_001.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_001.png" ShowParamsInTooltip="SpecificFrostComet,DamageCritical" Category="Combat" />
     <DamageCritical CriticalInflictScoreModifier="40" />
   </Skill>
   <Skill ESkill="default_variant" UID="player_frostcomet_step_8">
-    <HUD UIName="@ui_Variant_FrostComet_variant_8" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_003.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_003.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_003.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_003.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_003.png" ShowParamsInTooltip="SpecificFrostComet,CastingParams,DamageWeapon" />
+    <HUD UIName="@ui_Variant_FrostComet_variant_8" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_003.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_003.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_003.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_003.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_003.png" ShowParamsInTooltip="SpecificFrostComet,CastingParams,DamageWeapon" Category="Combat" />
     <CastingParams CastDelay="0.35" />
     <DamageWeapon WeaponMultiplier="1.5" />
     <Specific_FrostComet ProjectileIndicatorTimeScale="0.35" />
   </Skill>
   <Skill ESkill="default_variant" UID="player_frostcomet_step_9">
-    <HUD UIName="@ui_Variant_FrostComet_variant_9" Lore="@ui_Variant_FrostComet_variant_9_lore" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_005.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_005.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_005.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_005.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_005.png" ShowParamsInTooltip="SpecificFrostComet,CastingParams,DamageWeapon,Cost" />
+    <HUD UIName="@ui_Variant_FrostComet_variant_9" Lore="@ui_Variant_FrostComet_variant_9_lore" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_005.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_005.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_005.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_005.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_005.png" ShowParamsInTooltip="SpecificFrostComet,CastingParams,DamageWeapon,Cost" Category="Mastery" />
     <DamageZone Duration="3" RateOfFire="0.5" RemoveParticleWithShape="1" />
     <CastingParams CastDelay="-2" />
-    <DamageWeapon WeaponMultiplier="0.1" />
+    <DamageWeapon WeaponMultiplier="0.4" />
     <ParticleList>
       <Particle Key="Loop" Name="U_Character.Skills.Frost_Meteor_MeteorShower_01" Direction="0,1,0" />
       <Particle Key="LoopAdditional" Name="U_Character.Skills.Frost_Meteor_MeteorShower_02" Direction="0,1,0" />
       <Particle Key="ChannelAura1" Name="U_Character_02.Sniper.Sniper_Charging_02_Frost" Direction="0,1,0" Bone="R_Weapon_Bone" />
-      <Particle Key="ChannelAura2" Name="U_Character_02.Sniper.Sniper_Charging_Aura_01_Frost" Direction="0,1,0" Bone="R_Weapon_Bone" />
+      <Particle Key="ChannelAura2" Name="U_Character.Skills.Frost_Meteor_HandAura_01" Direction="0,1,0" Bone="R_Weapon_Bone" />
     </ParticleList>
   </Skill>
   <Skill ESkill="default_variant" UID="player_frostcomet_step_10">
-    <HUD UIName="@ui_Variant_FrostComet_variant_10" Lore="@ui_Variant_FrostComet_variant_10_lore" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_005.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_005.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_005.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_005.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_005.png" ShowParamsInTooltip="SpecificFrostComet,CastingParams" />
+    <HUD UIName="@ui_Variant_FrostComet_variant_10" Lore="@ui_Variant_FrostComet_variant_10_lore" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_005.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_005.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_005.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_005.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_005.png" ShowParamsInTooltip="SpecificFrostComet,CastingParams" Category="Mastery" />
     <Animation ActionString_In="player_skill_frostcomet_Channel_In" ActionString_Loop="player_skill_frostcomet_Channel_Loop" ActionString_Out="player_skill_frostcomet_Channel_Out" />
     <Specific_FrostComet ChanneledMoveSpeed="5" SoundChargeLevel1="Play_Skill_Meteor_Chargelevel_1" SoundChargeLevel2="Play_Skill_Meteor_Chargelevel_2" SoundChargeLevel3="Play_Skill_Meteor_Chargelevel_3" />
     <CastingParams CastDelay="-2" />
@@ -87,7 +87,7 @@
     </ChargedSkill>
     <ParticleList>
       <Particle Key="AdditionalExplosion" Name="U_CommonVFX.Icy_Soul.Icy_Soul_Impact_01" Direction="0,1,0" Offset="0,0,0.2" TimeScale="0.75" />
-      <Particle Key="Aura" Name="U_Character_02.Sniper.Sniper_Charging_Aura_01_Frost" Direction="0,1,0" Bone="R_Weapon_Bone" Scale="0.65" />
+      <Particle Key="Aura" Name="U_Character.Skills.Frost_Meteor_HandAura_01" Direction="0,1,0" Bone="R_Weapon_Bone" Scale="0.65" />
       <Particle Key="Wind" Name="U_Character_02.Sniper.Sniper_Charging_Wind_01_Frost" Direction="0,0,1" Bone="Bip01" Scale="0.6" />
       <Particle Key="Blink" Name="U_Character_02.Sniper.Sniper_Charging_01" Direction="0,0,1" Scale="0.8" />
       <Particle Key="Indicator1" Name="U_Character_02.HolyDive.HolyDive_Indicator_01" Direction="0,1,0" Scale="0.62" />
@@ -109,34 +109,34 @@
     </ParticleList>
   </Skill>
   <Skill ESkill="default_variant" UID="player_frostcomet_step_11">
-    <HUD UIName="@ui_Variant_FrostComet_variant_11" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_003.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_003.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_003.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_003.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_003.png" ShowParamsInTooltip="SpecificFrostComet,StatusAilmentsChance" />
+    <HUD UIName="@ui_Variant_FrostComet_variant_11" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_003.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_003.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_003.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_003.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_003.png" ShowParamsInTooltip="SpecificFrostComet,StatusAilmentsChance" Category="Combat" />
     <StatusAilment AllAilmentsInflictDamageIncreasePercent="40" />
   </Skill>
   <Skill ESkill="default_variant" UID="player_frostcomet_step_12">
-    <HUD UIName="@ui_Variant_FrostComet_variant_12" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_001.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_001.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_001.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_001.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_001.png" ShowParamsInTooltip="SpecificFrostComet,DamageCritical" />
+    <HUD UIName="@ui_Variant_FrostComet_variant_12" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_001.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_001.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_001.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_001.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_001.png" ShowParamsInTooltip="SpecificFrostComet,DamageCritical" Category="Combat" />
     <DamageCritical CriticalDamageModifier="25" />
   </Skill>
   <Skill ESkill="default_variant" UID="player_frostcomet_step_13">
-    <HUD UIName="@ui_Variant_FrostComet_variant_13" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_001.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_001.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_001.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_001.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_001.png" ShowParamsInTooltip="SpecificFrostComet,Cooldown" />
-    <Cooldown Cooldown="-2" CooldownPerLevel="0" />
+    <HUD UIName="@ui_Variant_FrostComet_variant_13" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_001.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_001.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_001.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_001.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_001.png" ShowParamsInTooltip="SpecificFrostComet,Cooldown" Category="Utility" />
+    <Cooldown Cooldown="-1.5" CooldownPerLevel="0" />
   </Skill>
   <Skill ESkill="default_variant" UID="player_frostcomet_step_14">
-    <HUD UIName="@ui_Variant_FrostComet_variant_14" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_001.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_001.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_001.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_001.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_001.png" ShowParamsInTooltip="SpecificFrostComet,DamageWeapon" />
+    <HUD UIName="@ui_Variant_FrostComet_variant_14" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_001.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_001.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_001.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_001.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_001.png" ShowParamsInTooltip="SpecificFrostComet,DamageWeapon" Category="Combat" />
     <DamageWeapon WeaponMultiplier="1.15" />
   </Skill>
   <Skill ESkill="default_variant" UID="player_frostcomet_step_15">
-    <HUD UIName="@ui_Variant_FrostComet_variant_15" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_001.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_001.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_001.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_001.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_001.png" ShowParamsInTooltip="SpecificFrostComet,Cooldown" />
-    <Cooldown Cooldown="-2" CooldownPerLevel="0" />
+    <HUD UIName="@ui_Variant_FrostComet_variant_15" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_001.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_001.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_001.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_001.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_001.png" ShowParamsInTooltip="SpecificFrostComet,Cooldown" Category="Utility" />
+    <Cooldown Cooldown="-1.5" CooldownPerLevel="0" />
   </Skill>
   <Skill ESkill="default_variant" UID="player_frostcomet_step_16">
-    <HUD UIName="@ui_Variant_FrostComet_variant_16" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_003.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_003.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_003.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_003.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_003.png" ShowParamsInTooltip="SpecificFrostComet,DamageWeapon,Cost,ROSTime" />
+    <HUD UIName="@ui_Variant_FrostComet_variant_16" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_003.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_003.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_003.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_003.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_003.png" ShowParamsInTooltip="SpecificFrostComet,DamageWeapon,Cost,ROSTime" Category="Combat" />
     <DamageWeapon WeaponMultiplier="1.3" />
-    <ResourceCost ManaCost="-150" ManaCostPerLevel="0" ROSTransfertDuration="1.0" />
+    <ResourceCost ManaCost="-100" ManaCostPerLevel="0" ROSTransfertDuration="1.0" />
   </Skill>
   <Skill ESkill="default_variant" UID="player_frostcomet_step_5">
     <HUD UIName="@ui_Variant_FrostComet_variant_5" Lore="@ui_Variant_FrostComet_variant_5_Lore" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_Alpha.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_Alpha.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_Alpha.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_Alpha.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_Alpha.png" HUDPictureVariant_InnerIcon="../u_resources/spells/Active_Skills/frostcomet_Fire.png" ShowParamsInTooltip="SpecificFrostComet,DamageWeapon" HUDPicture="../u_resources/spells/Active_Skills/frostcomet_Fire.png" VariantBottomPanel="1" />
     <SkillLoop PresetID="skillloop_frostcomet_fire" SpawnAtSkillTargetPos="1" />
-    <DamageWeapon WeaponMultiplier="1.25" />
+    <DamageWeapon WeaponMultiplier="1" />
     <Projectile Name="player_frostcomet_proj_fire" />
     <Damage_Conversion>
       <Entry From="physical" To="frost" ConversionRate="-100" />
@@ -154,7 +154,7 @@
   <Skill ESkill="default_variant" UID="player_frostcomet_step_17">
     <HUD UIName="@ui_Variant_FrostComet_variant_17" Lore="@ui_Variant_FrostComet_variant_17_Lore" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_Alpha.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_Alpha.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_Alpha.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_Alpha.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_Alpha.png" HUDPictureVariant_InnerIcon="../u_resources/spells/Active_Skills/frostcomet_Rend.png" ShowParamsInTooltip="SpecificFrostComet,DamageWeapon" HUDPicture="../u_resources/spells/Active_Skills/frostcomet_Rend.png" VariantBottomPanel="1" />
     <SkillLoop PresetID="skillloop_frostcomet_rend" SpawnAtSkillTargetPos="1" />
-    <DamageWeapon WeaponMultiplier="1.25" />
+    <DamageWeapon WeaponMultiplier="1" />
     <Projectile Name="player_frostcomet_proj_rend" />
     <Damage_Conversion>
       <Entry From="physical" To="frost" ConversionRate="-100" />
@@ -172,7 +172,7 @@
   <Skill ESkill="default_variant" UID="player_frostcomet_step_18">
     <HUD UIName="@ui_Variant_FrostComet_variant_18" Lore="@ui_Variant_FrostComet_variant_18_Lore" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_Alpha.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_Alpha.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_Alpha.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_Alpha.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_Alpha.png" HUDPictureVariant_InnerIcon="../u_resources/spells/Active_Skills/frostcomet_Sacred.png" ShowParamsInTooltip="SpecificFrostComet,DamageWeapon" HUDPicture="../u_resources/spells/Active_Skills/frostcomet_Sacred.png" VariantBottomPanel="1" />
     <SkillLoop PresetID="skillloop_frostcomet_sacred" SpawnAtSkillTargetPos="1" />
-    <DamageWeapon WeaponMultiplier="1.25" />
+    <DamageWeapon WeaponMultiplier="1" />
     <Projectile Name="player_frostcomet_proj_sacred" />
     <Damage_Conversion>
       <Entry From="physical" To="frost" ConversionRate="-100" />
@@ -217,7 +217,7 @@
     </ParticleList>
   </Skill>
   <Skill UID="Player_FrostComet_step_19" ESkill="default_variant">
-    <HUD UIName="@ui_variant_Player_FrostComet_step_19" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_003.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_003.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_003.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_003.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_003.png" ShowParamsInTooltip="DamageWeapon" />
+    <HUD UIName="@ui_variant_Player_FrostComet_step_19" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_001.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_001.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_001.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_001.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_001.png" ShowParamsInTooltip="DamageWeapon" Category="Combat" />
     <DamageWeapon WeaponMultiplier="1.15" />
   </Skill>
   <Skill UID="player_frostcomet_step_5,player_frostcomet_step_1" ESkill="default_variant_combo">
@@ -228,7 +228,7 @@
       <Particle Key="Loop" Name="U_Character.Skills.Frost_Meteor_MeteorShower_01_Fire" Direction="0,1,0" />
       <Particle Key="LoopAdditional" Name="U_Character.Skills.Frost_Meteor_MeteorShower_02_Fire" Direction="0,1,0" />
       <Particle Key="ChannelAura1" Name="U_Character_02.Sniper.Sniper_Charging_02_Fire" Direction="0,1,0" Bone="R_Weapon_Bone" />
-      <Particle Key="ChannelAura2" Name="U_Character_02.Sniper.Sniper_Charging_Aura_01_Fire" Direction="0,1,0" Bone="R_Weapon_Bone" />
+      <Particle Key="ChannelAura2" Name="U_Character.Skills.Frost_Meteor_HandAura_01_Fire" Direction="0,1,0" Bone="R_Weapon_Bone" />
     </ParticleList>
   </Skill>
   <Skill UID="player_frostcomet_step_5,player_frostcomet_step_9,player_frostcomet_step_1" ESkill="default_variant_combo">
@@ -240,7 +240,7 @@
   <Skill UID="player_frostcomet_step_5,player_frostcomet_step_10" ESkill="default_variant_combo">
     <ParticleList>
       <Particle Key="AdditionalExplosion" Name="U_CommonVFX.Icy_Soul.Icy_Soul_Impact_01_Fire" Direction="0,1,0" />
-      <Particle Key="Aura" Name="U_Character_02.Sniper.Sniper_Charging_Aura_01_Fire" Direction="0,1,0" Bone="R_Weapon_Bone" />
+      <Particle Key="Aura" Name="U_Character.Skills.Frost_Meteor_HandAura_01_Fire" Direction="0,1,0" Bone="R_Weapon_Bone" />
       <Particle Key="Wind" Name="U_Character_02.Sniper.Sniper_Charging_Wind_01_Fire" Direction="0,0,1" Bone="Bip01" />
       <Particle Key="Blink" Name="U_Character_02.Sniper.Sniper_Charging_01_Fire" Direction="0,0,1" Scale="1" />
       <Particle Key="Charging1" Name="U_Character_02.Sniper.Sniper_Charging_01_Fire" Direction="0,1,0" Bone="R_Weapon_Bone" />
@@ -283,7 +283,7 @@
       <Particle Key="Loop" Name="U_Character.Skills.Frost_Meteor_MeteorShower_01_Rend" Direction="0,1,0" />
       <Particle Key="LoopAdditional" Name="U_Character.Skills.Frost_Meteor_MeteorShower_02_Rend" Direction="0,1,0" />
       <Particle Key="ChannelAura1" Name="U_Character_02.HolyDive.HolyDive_Charging_02_Rend" Direction="0,1,0" Bone="R_Weapon_Bone" />
-      <Particle Key="ChannelAura2" Name="U_Character_02.HolyDive.HolyDive_Charging_01_Rend" Direction="0,1,0" Bone="R_Weapon_Bone" />
+      <Particle Key="ChannelAura2" Name="U_Character.Skills.Frost_Meteor_HandAura_01_Rend" Direction="0,1,0" Bone="R_Weapon_Bone" />
     </ParticleList>
   </Skill>
   <Skill UID="player_frostcomet_step_17,player_frostcomet_step_9,player_frostcomet_step_1" ESkill="default_variant_combo">
@@ -338,7 +338,7 @@
       <Particle Key="Loop" Name="U_Character.Skills.Frost_Meteor_MeteorShower_01_Sacred" Direction="0,1,0" />
       <Particle Key="LoopAdditional" Name="U_Character.Skills.Frost_Meteor_MeteorShower_02_Sacred" Direction="0,1,0" />
       <Particle Key="ChannelAura1" Name="U_Character_02.HolyDive.HolyDive_Charging_02" Direction="0,1,0" Bone="R_Weapon_Bone" />
-      <Particle Key="ChannelAura2" Name="U_Character_02.HolyDive.HolyDive_Charging_01" Direction="0,1,0" Bone="R_Weapon_Bone" />
+      <Particle Key="ChannelAura2" Name="U_Character.Skills.Frost_Meteor_HandAura_01_Sacred" Direction="0,1,0" Bone="R_Weapon_Bone" />
     </ParticleList>
   </Skill>
   <Skill UID="player_frostcomet_step_18,player_frostcomet_step_9,player_frostcomet_step_1" ESkill="default_variant_combo">

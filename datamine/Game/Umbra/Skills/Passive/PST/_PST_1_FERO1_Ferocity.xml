@@ -70,14 +70,14 @@
   <Spell Name="FERO_9" UIName="@ui_FERO_9_name" HUDLoreDesc="@ui_FERO_9_lore" GameplayDesc="@ui_FERO_9_desc">
     <MagicEffects>
       <EIM Name="criticalchance_score_percent" HUDDesc="@ui_eim_criticalchance_score_percent" Permanent="1">
-        <Semantics CharacteristicScorePercentInt="30" />
+        <Semantics CharacteristicScorePercentInt="20" />
       </EIM>
     </MagicEffects>
   </Spell>
   <Spell Name="FERO_10" UIName="@ui_FERO_10_name" HUDLoreDesc="" GameplayDesc="">
     <MagicEffects>
       <EIM Name="skill_cooldownreduction_percent" HUDDesc="@ui_eim_skill_cooldownreduction_percent" Permanent="1">
-        <Semantics DurationPercentFloat="10" />
+        <Semantics DurationPercentFloat="6" />
       </EIM>
     </MagicEffects>
   </Spell>
@@ -174,7 +174,7 @@
   </Spell>
   <Spell Name="FERO_21" UIName="@ui_FERO_21_name" HUDLoreDesc="" GameplayDesc="">
     <MagicEffects>
-      <EIM Name="all_resistance_score_percent" HUDDesc="@ui_eim_statusailment_resist_score_percent" Permanent="1">
+      <EIM Name="all_resistance_score_percent" HUDDesc="@ui_eim_all_resistance_score_percent" Permanent="1">
         <Semantics CharacteristicScorePercentInt="5" />
       </EIM>
       <EIM Name="health_regen_percent" HUDDesc="@ui_eim_health_regen_percent" Permanent="1">
@@ -185,7 +185,7 @@
   <Spell Name="FERO_22" UIName="@ui_FERO_22_name" HUDLoreDesc="@ui_FERO_22_lore" GameplayDesc="@ui_FERO_22_desc">
     <MagicEffects>
       <EIM Name="health_regen_on_low_health" HUDDesc="@ui_eim_health_regen_on_low_health" Permanent="1">
-        <Semantics ResourcePercentInt="25" />
+        <Semantics ResourcePercentInt="33" />
       </EIM>
     </MagicEffects>
   </Spell>

@@ -1,0 +1,261 @@
+<MetaData>
+  <Project Name="medical_garrison_construct" CategoryName="medical_garrison" Repeatable="0" CharacterBound="1">
+    <UIParams UIName="@ui_medical_garrison_construct" UILore="@ui_medical_garrison_construct_lore" />
+    <Requirements PlayerLevel="0" Projects="">
+      <ResourceCost ComputationMethod="Static" Gold="20000" Gold_PerPlayerLevel="0" PA="200" PA_PerPlayerLevel="0" ProductionToComplete="200" />
+    </Requirements>
+    <RewardList>
+      <Reward RewardName="city_RA_medical_garrison_reward" Weight="1" />
+    </RewardList>
+    <ContextualSoundTrigger ToPlay="RAMedicalGarnisonProjectStart" ToResume="Endgame_RegentAssembly_Idle" />
+  </Project>
+  <Project Name="medical_garrison_flesh" CategoryName="medical_garrison" Repeatable="1" Upgrade="medical_garrison_construct" UpgradeKeyword="flesh" CharacterBound="1">
+    <UIParams UIName="@ui_medical_garrison_flesh" UILore="@ui_medical_garrison_flesh_lore" HideIfRequirementsAreNotMet="1" />
+    <Requirements PlayerLevel="0" Projects="" UpgradeIndex="0">
+      <ResourceCost ComputationMethod="Static" Gold="15000" Gold_PerPlayerLevel="0" PA="150" PA_PerPlayerLevel="0" ProductionToComplete="150" />
+    </Requirements>
+    <RewardList>
+      <Reward RewardName="city_RA_medical_garrison_flesh_reward" Weight="1" />
+    </RewardList>
+    <ContextualSoundTrigger ToPlay="RAMedicalGarnisonUpgrade2ProjectStart" ToResume="Endgame_RegentAssembly_Idle" />
+  </Project>
+  <Project Name="medical_garrison_souls" CategoryName="medical_garrison" Repeatable="1" Upgrade="medical_garrison_construct" UpgradeKeyword="souls" CharacterBound="1">
+    <UIParams UIName="@ui_medical_garrison_souls" UILore="@ui_medical_garrison_souls_lore" HideIfRequirementsAreNotMet="1" />
+    <Requirements PlayerLevel="0" Projects="" UpgradeIndex="0">
+      <ResourceCost ComputationMethod="Static" Gold="15000" Gold_PerPlayerLevel="0" PA="150" PA_PerPlayerLevel="0" ProductionToComplete="150" />
+    </Requirements>
+    <RewardList>
+      <Reward RewardName="city_RA_medical_garrison_souls_reward" Weight="1" />
+    </RewardList>
+    <ContextualSoundTrigger ToPlay="RAMedicalGarnisonUpgrade1ProjectStart" ToResume="Endgame_RegentAssembly_Idle" />
+  </Project>
+  <Project Name="medical_garrison_fury" CategoryName="medical_garrison" Repeatable="1" Upgrade="medical_garrison_construct" UpgradeKeyword="fury" CharacterBound="1">
+    <UIParams UIName="@ui_medical_garrison_fury" UILore="@ui_medical_garrison_fury_lore" HideIfRequirementsAreNotMet="1" />
+    <Requirements PlayerLevel="0" Projects="" UpgradeIndex="0">
+      <ResourceCost ComputationMethod="Static" Gold="15000" Gold_PerPlayerLevel="0" PA="150" PA_PerPlayerLevel="0" ProductionToComplete="150" />
+    </Requirements>
+    <RewardList>
+      <Reward RewardName="city_RA_medical_garrison_fury_reward" Weight="1" />
+    </RewardList>
+    <ContextualSoundTrigger ToPlay="RAMedicalGarnisonUpgrade3ProjectStart" ToResume="Endgame_RegentAssembly_Idle" />
+  </Project>
+  <Project Name="weakening_evil_forces_construct" CategoryName="weakening_evil_forces" Repeatable="0" CharacterBound="1">
+    <UIParams UIName="@ui_weakening_evil_forces_construct" UILore="@ui_weakening_evil_forces_construct_lore" />
+    <Requirements PlayerLevel="0" Projects="">
+      <ResourceCost ComputationMethod="Static" Gold="20000" Gold_PerPlayerLevel="0" PA="200" PA_PerPlayerLevel="0" ProductionToComplete="200" />
+    </Requirements>
+    <RewardList>
+      <Reward RewardName="city_RA_weakening_evil_forces_reward" Weight="1" />
+    </RewardList>
+  </Project>
+  <Project Name="weakening_evil_forces_flesh_upgrade_1" CategoryName="weakening_evil_forces" Repeatable="0" Upgrade="weakening_evil_forces_construct" UpgradeKeyword="flesh" CharacterBound="1">
+    <UIParams UIName="@ui_weakening_evil_forces_flesh_upgrade_1" UILore="@ui_weakening_evil_forces_flesh_upgrade_1_lore" HideIfRequirementsAreNotMet="1" HideWhenCompleted="1" />
+    <Requirements PlayerLevel="0" Projects="" UpgradeIndex="0">
+      <ResourceCost ComputationMethod="Static" Gold="15000" Gold_PerPlayerLevel="0" PA="150" PA_PerPlayerLevel="0" ProductionToComplete="150" />
+    </Requirements>
+    <RewardList>
+      <Reward RewardName="city_RA_weakening_evil_forces_flesh_upgrade_1_reward" Weight="1" />
+    </RewardList>
+    <ContextualSoundTrigger ToPlay="RAWeakeningEvilForcesFleshProjectStart" ToResume="Endgame_RegentAssembly_Idle" />
+  </Project>
+  <Project Name="weakening_evil_forces_flesh_upgrade_2" CategoryName="weakening_evil_forces" Repeatable="0" Upgrade="weakening_evil_forces_construct" UpgradeKeyword="flesh" CharacterBound="1">
+    <UIParams UIName="@ui_weakening_evil_forces_flesh_upgrade_2" UILore="@ui_weakening_evil_forces_flesh_upgrade_2_lore" HideIfRequirementsAreNotMet="1" HideWhenCompleted="1" />
+    <Requirements PlayerLevel="0" Projects="" UpgradeIndex="1">
+      <ResourceCost ComputationMethod="Static" Gold="15000" Gold_PerPlayerLevel="0" PA="150" PA_PerPlayerLevel="0" ProductionToComplete="150" />
+    </Requirements>
+    <RewardList>
+      <Reward RewardName="city_RA_weakening_evil_forces_flesh_upgrade_2_reward" Weight="1" />
+    </RewardList>
+  </Project>
+  <Project Name="weakening_evil_forces_souls_upgrade_1" CategoryName="weakening_evil_forces" Repeatable="0" Upgrade="weakening_evil_forces_construct" UpgradeKeyword="souls" CharacterBound="1">
+    <UIParams UIName="@ui_weakening_evil_forces_souls_upgrade_1" UILore="@ui_weakening_evil_forces_souls_upgrade_1_lore" HideIfRequirementsAreNotMet="1" HideWhenCompleted="1" />
+    <Requirements PlayerLevel="0" Projects="" UpgradeIndex="0">
+      <ResourceCost ComputationMethod="Static" Gold="15000" Gold_PerPlayerLevel="0" PA="150" PA_PerPlayerLevel="0" ProductionToComplete="150" />
+    </Requirements>
+    <RewardList>
+      <Reward RewardName="city_RA_weakening_evil_forces_souls_upgrade_1_reward" Weight="1" />
+    </RewardList>
+    <ContextualSoundTrigger ToPlay="RAWeakeningEvilForcesSoulProjectStart" ToResume="Endgame_RegentAssembly_Idle" />
+  </Project>
+  <Project Name="weakening_evil_forces_souls_upgrade_2" CategoryName="weakening_evil_forces" Repeatable="0" Upgrade="weakening_evil_forces_construct" UpgradeKeyword="souls" CharacterBound="1">
+    <UIParams UIName="@ui_weakening_evil_forces_souls_upgrade_2" UILore="@ui_weakening_evil_forces_souls_upgrade_2_lore" HideIfRequirementsAreNotMet="1" HideWhenCompleted="1" />
+    <Requirements PlayerLevel="0" Projects="" UpgradeIndex="1">
+      <ResourceCost ComputationMethod="Static" Gold="15000" Gold_PerPlayerLevel="0" PA="150" PA_PerPlayerLevel="0" ProductionToComplete="150" />
+    </Requirements>
+    <RewardList>
+      <Reward RewardName="city_RA_weakening_evil_forces_souls_upgrade_2_reward" Weight="1" />
+    </RewardList>
+  </Project>
+  <Project Name="weakening_evil_forces_fury_upgrade_1" CategoryName="weakening_evil_forces" Repeatable="0" Upgrade="weakening_evil_forces_construct" UpgradeKeyword="fury" CharacterBound="1">
+    <UIParams UIName="@ui_weakening_evil_forces_fury_upgrade_1" UILore="@ui_weakening_evil_forces_fury_upgrade_1_lore" HideIfRequirementsAreNotMet="1" HideWhenCompleted="1" />
+    <Requirements PlayerLevel="0" Projects="" UpgradeIndex="0">
+      <ResourceCost ComputationMethod="Static" Gold="15000" Gold_PerPlayerLevel="0" PA="150" PA_PerPlayerLevel="0" ProductionToComplete="150" />
+    </Requirements>
+    <RewardList>
+      <Reward RewardName="city_RA_weakening_evil_forces_fury_upgrade_1_reward" Weight="1" />
+    </RewardList>
+    <ContextualSoundTrigger ToPlay="RAWeakeningEvilForcesFuryProjectStart" ToResume="Endgame_RegentAssembly_Idle" />
+  </Project>
+  <Project Name="weakening_evil_forces_fury_upgrade_2" CategoryName="weakening_evil_forces" Repeatable="0" Upgrade="weakening_evil_forces_construct" UpgradeKeyword="fury" CharacterBound="1">
+    <UIParams UIName="@ui_weakening_evil_forces_fury_upgrade_2" UILore="@ui_weakening_evil_forces_fury_upgrade_2_lore" HideIfRequirementsAreNotMet="1" HideWhenCompleted="1" />
+    <Requirements PlayerLevel="0" Projects="" UpgradeIndex="1">
+      <ResourceCost ComputationMethod="Static" Gold="15000" Gold_PerPlayerLevel="0" PA="150" PA_PerPlayerLevel="0" ProductionToComplete="150" />
+    </Requirements>
+    <RewardList>
+      <Reward RewardName="city_RA_weakening_evil_forces_fury_upgrade_2_reward" Weight="1" />
+    </RewardList>
+  </Project>
+  <Project Name="fight_the_corruption_construct" CategoryName="fight_the_corruption" Repeatable="0" CharacterBound="1">
+    <UIParams UIName="@ui_fight_the_corruption_construct" UILore="@ui_fight_the_corruption_construct_lore" />
+    <Requirements PlayerLevel="0" Projects="">
+      <ResourceCost ComputationMethod="Static" Gold="20000" Gold_PerPlayerLevel="0" PA="200" PA_PerPlayerLevel="0" ProductionToComplete="200" />
+    </Requirements>
+    <RewardList>
+      <Reward RewardName="city_RA_fight_the_corruption_reward" Weight="1" />
+    </RewardList>
+  </Project>
+  <Project Name="fight_the_corruption_flesh_upgrade_1" CategoryName="fight_the_corruption" Repeatable="0" Upgrade="fight_the_corruption_construct" UpgradeKeyword="flesh" CharacterBound="1">
+    <UIParams UIName="@ui_fight_the_corruption_flesh_upgrade_1" UILore="@ui_fight_the_corruption_flesh_upgrade_1_lore" HideIfRequirementsAreNotMet="1" HideWhenCompleted="1" />
+    <Requirements PlayerLevel="0" Projects="" UpgradeIndex="0">
+      <ResourceCost ComputationMethod="Static" Gold="15000" Gold_PerPlayerLevel="0" PA="150" PA_PerPlayerLevel="0" ProductionToComplete="150" />
+    </Requirements>
+    <RewardList>
+      <Reward RewardName="city_RA_fight_the_corruption_flesh_upgrade_1_reward" Weight="1" />
+    </RewardList>
+    <ContextualSoundTrigger ToPlay="RAFightTheCorruptionFleshProjectStart" ToResume="Endgame_RegentAssembly_Idle" />
+  </Project>
+  <Project Name="fight_the_corruption_flesh_upgrade_2" CategoryName="fight_the_corruption" Repeatable="0" Upgrade="fight_the_corruption_construct" UpgradeKeyword="flesh" CharacterBound="1">
+    <UIParams UIName="@ui_fight_the_corruption_flesh_upgrade_2" UILore="@ui_fight_the_corruption_flesh_upgrade_2_lore" HideIfRequirementsAreNotMet="1" HideWhenCompleted="1" />
+    <Requirements PlayerLevel="0" Projects="" UpgradeIndex="1">
+      <ResourceCost ComputationMethod="Static" Gold="15000" Gold_PerPlayerLevel="0" PA="150" PA_PerPlayerLevel="0" ProductionToComplete="150" />
+    </Requirements>
+    <RewardList>
+      <Reward RewardName="city_RA_fight_the_corruption_flesh_upgrade_2_reward" Weight="1" />
+    </RewardList>
+  </Project>
+  <Project Name="fight_the_corruption_souls_upgrade_1" CategoryName="fight_the_corruption" Repeatable="0" Upgrade="fight_the_corruption_construct" UpgradeKeyword="souls" CharacterBound="1">
+    <UIParams UIName="@ui_fight_the_corruption_souls_upgrade_1" UILore="@ui_fight_the_corruption_souls_upgrade_1_lore" HideIfRequirementsAreNotMet="1" HideWhenCompleted="1" />
+    <Requirements PlayerLevel="0" Projects="" UpgradeIndex="0">
+      <ResourceCost ComputationMethod="Static" Gold="15000" Gold_PerPlayerLevel="0" PA="150" PA_PerPlayerLevel="0" ProductionToComplete="150" />
+    </Requirements>
+    <RewardList>
+      <Reward RewardName="city_RA_fight_the_corruption_souls_upgrade_1_reward" Weight="1" />
+    </RewardList>
+    <ContextualSoundTrigger ToPlay="RAFightTheCorruptionSoulProjectStart" ToResume="Endgame_RegentAssembly_Idle" />
+  </Project>
+  <Project Name="fight_the_corruption_souls_upgrade_2" CategoryName="fight_the_corruption" Repeatable="0" Upgrade="fight_the_corruption_construct" UpgradeKeyword="souls" CharacterBound="1">
+    <UIParams UIName="@ui_fight_the_corruption_souls_upgrade_2" UILore="@ui_fight_the_corruption_souls_upgrade_2_lore" HideIfRequirementsAreNotMet="1" HideWhenCompleted="1" />
+    <Requirements PlayerLevel="0" Projects="" UpgradeIndex="1">
+      <ResourceCost ComputationMethod="Static" Gold="15000" Gold_PerPlayerLevel="0" PA="150" PA_PerPlayerLevel="0" ProductionToComplete="150" />
+    </Requirements>
+    <RewardList>
+      <Reward RewardName="city_RA_fight_the_corruption_souls_upgrade_2_reward" Weight="1" />
+    </RewardList>
+  </Project>
+  <Project Name="fight_the_corruption_fury_upgrade_1" CategoryName="fight_the_corruption" Repeatable="0" Upgrade="fight_the_corruption_construct" UpgradeKeyword="fury" CharacterBound="1">
+    <UIParams UIName="@ui_fight_the_corruption_fury_upgrade_1" UILore="@ui_fight_the_corruption_fury_upgrade_1_lore" HideIfRequirementsAreNotMet="1" HideWhenCompleted="1" />
+    <Requirements PlayerLevel="0" Projects="" UpgradeIndex="0">
+      <ResourceCost ComputationMethod="Static" Gold="15000" Gold_PerPlayerLevel="0" PA="150" PA_PerPlayerLevel="0" ProductionToComplete="150" />
+    </Requirements>
+    <RewardList>
+      <Reward RewardName="city_RA_fight_the_corruption_fury_upgrade_1_reward" Weight="1" />
+    </RewardList>
+    <ContextualSoundTrigger ToPlay="RAFightTheCorruptionFuryProjectStart" ToResume="Endgame_RegentAssembly_Idle" />
+  </Project>
+  <Project Name="fight_the_corruption_fury_upgrade_2" CategoryName="fight_the_corruption" Repeatable="0" Upgrade="fight_the_corruption_construct" UpgradeKeyword="fury" CharacterBound="1">
+    <UIParams UIName="@ui_fight_the_corruption_fury_upgrade_2" UILore="@ui_fight_the_corruption_fury_upgrade_2_lore" HideIfRequirementsAreNotMet="1" HideWhenCompleted="1" />
+    <Requirements PlayerLevel="0" Projects="" UpgradeIndex="1">
+      <ResourceCost ComputationMethod="Static" Gold="15000" Gold_PerPlayerLevel="0" PA="150" PA_PerPlayerLevel="0" ProductionToComplete="150" />
+    </Requirements>
+    <RewardList>
+      <Reward RewardName="city_RA_fight_the_corruption_fury_upgrade_2_reward" Weight="1" />
+    </RewardList>
+  </Project>
+  <Project Name="time_distortion_construct" CategoryName="time_distortion" Repeatable="0" CharacterBound="1">
+    <UIParams UIName="@ui_time_distortion_construct" UILore="@ui_time_distortion_construct_lore" />
+    <Requirements PlayerLevel="0" Projects="">
+      <ResourceCost ComputationMethod="Static" Gold="20000" Gold_PerPlayerLevel="0" PA="200" PA_PerPlayerLevel="0" ProductionToComplete="200" />
+    </Requirements>
+    <RewardList>
+      <Reward RewardName="city_RA_time_distortion_reward" Weight="1" />
+    </RewardList>
+    <ContextualSoundTrigger ToPlay="RATimeDistortionProjectStart" ToResume="Endgame_RegentAssembly_Idle" />
+  </Project>
+  <Project Name="time_distortion_upgrade_1" CategoryName="time_distortion" Repeatable="0" Upgrade="time_distortion_construct" CharacterBound="1">
+    <UIParams UIName="@ui_time_distortion_upgrade_1" UILore="@ui_time_distortion_upgrade_1_lore" HideIfRequirementsAreNotMet="1" HideWhenCompleted="1" />
+    <Requirements PlayerLevel="0" Projects="" UpgradeIndex="0">
+      <ResourceCost ComputationMethod="Static" Gold="15000" Gold_PerPlayerLevel="0" PA="150" PA_PerPlayerLevel="0" ProductionToComplete="150" />
+    </Requirements>
+    <RewardList>
+      <Reward RewardName="city_RA_time_distortion_upgrade_1_reward" Weight="1" />
+    </RewardList>
+  </Project>
+  <Project Name="time_distortion_upgrade_2" CategoryName="time_distortion" Repeatable="0" Upgrade="time_distortion_construct" CharacterBound="1">
+    <UIParams UIName="@ui_time_distortion_upgrade_2" UILore="@ui_time_distortion_upgrade_2_lore" HideIfRequirementsAreNotMet="1" />
+    <Requirements PlayerLevel="0" Projects="" UpgradeIndex="1">
+      <ResourceCost ComputationMethod="Static" Gold="15000" Gold_PerPlayerLevel="0" PA="150" PA_PerPlayerLevel="0" ProductionToComplete="150" />
+    </Requirements>
+    <RewardList>
+      <Reward RewardName="city_RA_time_distortion_upgrade_2_reward" Weight="1" />
+    </RewardList>
+  </Project>
+  <Project Name="anti_demonic_forces_construct" CategoryName="anti_demonic_forces" Repeatable="0" CharacterBound="1">
+    <UIParams UIName="@ui_anti_demonic_forces_construct" UILore="@ui_anti_demonic_forces_construct_lore" />
+    <Requirements PlayerLevel="0" Projects="">
+      <ResourceCost ComputationMethod="Static" Gold="20000" Gold_PerPlayerLevel="0" PA="200" PA_PerPlayerLevel="0" ProductionToComplete="200" />
+    </Requirements>
+    <RewardList>
+      <Reward RewardName="city_RA_anti_demonic_forces_reward" Weight="1" />
+    </RewardList>
+  </Project>
+  <Project Name="seal_the_flames_construct" CategoryName="seal_the_flames" Repeatable="0" CharacterBound="1">
+    <UIParams UIName="@ui_seal_the_flames_construct" UILore="@ui_seal_the_flames_construct_lore" />
+    <Requirements PlayerLevel="0" Projects="">
+      <ResourceCost ComputationMethod="Static" Gold="20000" Gold_PerPlayerLevel="0" PA="200" PA_PerPlayerLevel="0" ProductionToComplete="200" />
+    </Requirements>
+    <RewardList>
+      <Reward RewardName="city_RA_seal_the_flames_reward" Weight="1" />
+    </RewardList>
+    <ContextualSoundTrigger ToPlay="RASealTheFlamesProjectStart" ToResume="Endgame_RegentAssembly_Idle" />
+  </Project>
+  <Project Name="mysterious_shenanigans_construct" CategoryName="mysterious_shenanigans" Repeatable="0" CharacterBound="1">
+    <UIParams UIName="@ui_mysterious_shenanigans_construct" UILore="@ui_mysterious_shenanigans_construct_lore" />
+    <Requirements PlayerLevel="0" Projects="">
+      <ResourceCost ComputationMethod="Static" Gold="20000" Gold_PerPlayerLevel="0" PA="200" PA_PerPlayerLevel="0" ProductionToComplete="200" />
+    </Requirements>
+    <RewardList>
+      <Reward RewardName="city_RA_mysterious_shenanigans_reward" Weight="1" />
+    </RewardList>
+    <ContextualSoundTrigger ToPlay="RAMysteriousShenanigansProjectStart" ToResume="Endgame_RegentAssembly_Idle" />
+  </Project>
+  <Project Name="mysterious_shenanigans_upgrade_1" CategoryName="mysterious_shenanigans" Repeatable="0" Upgrade="mysterious_shenanigans_construct" CharacterBound="1">
+    <UIParams UIName="@ui_mysterious_shenanigans_upgrade_1" UILore="@ui_mysterious_shenanigans_upgrade_1_lore" HideIfRequirementsAreNotMet="1" HideWhenCompleted="1" />
+    <Requirements PlayerLevel="0" Projects="" UpgradeIndex="0">
+      <ResourceCost ComputationMethod="Static" Gold="15000" Gold_PerPlayerLevel="0" PA="150" PA_PerPlayerLevel="0" ProductionToComplete="150" />
+    </Requirements>
+    <RewardList>
+      <Reward RewardName="city_RA_mysterious_shenanigans_upgrade_1_reward" Weight="1" />
+    </RewardList>
+    <ContextualSoundTrigger ToPlay="RAMysteriousShenanigansUpgrade1ProjectStart" ToResume="Endgame_RegentAssembly_Idle" />
+  </Project>
+  <Project Name="mysterious_shenanigans_upgrade_2" CategoryName="mysterious_shenanigans" Repeatable="0" Upgrade="mysterious_shenanigans_construct" CharacterBound="1">
+    <UIParams UIName="@ui_mysterious_shenanigans_upgrade_2" UILore="@ui_mysterious_shenanigans_upgrade_2_lore" HideIfRequirementsAreNotMet="1" HideWhenCompleted="1" />
+    <Requirements PlayerLevel="0" Projects="" UpgradeIndex="1">
+      <ResourceCost ComputationMethod="Static" Gold="15000" Gold_PerPlayerLevel="0" PA="150" PA_PerPlayerLevel="0" ProductionToComplete="150" />
+    </Requirements>
+    <RewardList>
+      <Reward RewardName="city_RA_mysterious_shenanigans_upgrade_2_reward" Weight="1" />
+    </RewardList>
+    <ContextualSoundTrigger ToPlay="RAMysteriousShenanigansUpgrade2ProjectStart" ToResume="Endgame_RegentAssembly_Idle" />
+  </Project>
+  <Project Name="mysterious_shenanigans_upgrade_3" CategoryName="mysterious_shenanigans" Repeatable="0" Upgrade="mysterious_shenanigans_construct" CharacterBound="1">
+    <UIParams UIName="@ui_mysterious_shenanigans_upgrade_3" UILore="@ui_mysterious_shenanigans_upgrade_3_lore" HideIfRequirementsAreNotMet="1" />
+    <Requirements PlayerLevel="0" Projects="" UpgradeIndex="2">
+      <ResourceCost ComputationMethod="Static" Gold="15000" Gold_PerPlayerLevel="0" PA="150" PA_PerPlayerLevel="0" ProductionToComplete="150" />
+    </Requirements>
+    <RewardList>
+      <Reward RewardName="city_RA_mysterious_shenanigans_upgrade_3_reward" Weight="1" />
+    </RewardList>
+    <ContextualSoundTrigger ToPlay="RAMysteriousShenanigansUpgrade3ProjectStart" ToResume="Endgame_RegentAssembly_Idle" />
+  </Project>
+</MetaData>

@@ -70,15 +70,15 @@
   </Spell>
   <Spell Name="SPBD_10" UIName="@ui_SPBD_10_name" HUDLoreDesc="" GameplayDesc="">
     <MagicEffects>
-      <EIM Name="statusailment_inflict_score_flat_occult" HUDDesc="@ui_eim_statusailment_inflict_score_flat_occult" Permanent="1">
-        <Semantics CharacteristicScoreInt="12" />
+      <EIM Name="inflicted_occult_duration_percent" HUDDesc="@ui_eim_inflicted_occult_duration_percent" Permanent="1">
+        <Semantics DurationPercentInt="25" />
       </EIM>
     </MagicEffects>
   </Spell>
   <Spell Name="SPBD_11" UIName="@ui_SPBD_11_name" HUDLoreDesc="" GameplayDesc="">
     <MagicEffects>
-      <EIM Name="statusailment_inflict_score_flat_occult" HUDDesc="@ui_eim_statusailment_inflict_score_flat_occult" Permanent="1">
-        <Semantics CharacteristicScoreInt="12" />
+      <EIM Name="inflicted_occult_duration_percent" HUDDesc="@ui_eim_inflicted_occult_duration_percent" Permanent="1">
+        <Semantics DurationPercentInt="25" />
       </EIM>
     </MagicEffects>
   </Spell>
@@ -91,8 +91,8 @@
   </Spell>
   <Spell Name="SPBD_13" UIName="@ui_SPBD_13_name" HUDLoreDesc="" GameplayDesc="">
     <MagicEffects>
-      <EIM Name="statusailment_inflict_score_flat_occult" HUDDesc="@ui_eim_statusailment_inflict_score_flat_occult" Permanent="1">
-        <Semantics CharacteristicScoreInt="12" />
+      <EIM Name="statusailment_inflict_score_percent_occult" HUDDesc="@ui_eim_statusailment_inflict_score_percent_occult" Permanent="1">
+        <Semantics CharacteristicScorePercentInt="15" />
       </EIM>
     </MagicEffects>
   </Spell>
@@ -132,16 +132,16 @@
         <Semantics StackCountInt="10" />
       </EIM>
       <EIM Name="movement_speed_on_purged_stasis_stacks" HUDDesc="@ui_eim_movement_speed_on_purged_stasis_stacks" Permanent="1">
-        <Semantics SpeedPercentInt="25" />
+        <Semantics SpeedPercentInt="20" />
       </EIM>
       <EIM Name="all_resistances_score_on_purged_curse_stacks" HUDDesc="@ui_eim_all_resistances_score_on_purged_curse_stacks" Permanent="1">
-        <Semantics CharacteristicScorePercentInt="30" />
+        <Semantics CharacteristicScorePercentInt="40" />
       </EIM>
       <EIM Name="damage_on_purged_weakness_stacks" HUDDesc="@ui_eim_damage_on_purged_weakness_stacks" Permanent="1">
-        <Semantics DamagePercentInt="20" />
+        <Semantics DamagePercentInt="30" />
       </EIM>
       <EIM Name="heal_on_purged_dot_stacks" HUDDesc="@ui_eim_heal_on_purged_dot_stacks" Permanent="1">
-        <Semantics TriggerGainHealthPercentFloat="10" />
+        <Semantics TriggerGainHealthPercentFloat="20" />
       </EIM>
     </MagicEffects>
   </Spell>
@@ -164,7 +164,7 @@
   </Spell>
   <Spell Name="SPBD_20" UIName="@ui_SPBD_20_name" HUDLoreDesc="" GameplayDesc="">
     <MagicEffects>
-      <EIM Name="life_ceil_from_force_shield" HUDDesc="@ui_eim_life_ceil_from_force_shield" Permanent="1">
+      <EIM Name="life_ceil_from_force_shield" HUDDesc="@ui_eim_life_ceil_from_force_shield_moon" Permanent="1">
         <Semantics ArmorPercentFloat="15" />
       </EIM>
     </MagicEffects>

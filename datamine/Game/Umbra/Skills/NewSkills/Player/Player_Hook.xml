@@ -4,9 +4,10 @@
     <Animation ActionString="player_skill_hook" ScaleWithSpellCastingSpeed="1" />
     <HUD HUDPicture="../u_resources/spells/Active_Skills/hook_Physical.png" UIName="@ui_AST_Hook" Lore="@ui_AST_Hook_Lore" ActiveEffectTitle="" ActiveEffectDesc="" ASTTreeNumber="8" ShowParamsInAST="Cost,ROSTime,Cooldown,Range,DamageDetail,DamageWeapon,DamageCritical,StatusAilmentsChance,SpecificHook" ShowParamsInTooltip="Cost,Cooldown,DamageOverview,StatusAilmentsChance,SpecificHook" />
     <Enneract PickableParticle_MoveToGround="U_CommonVFX_02.Esseract.Esseract_Projectile.Physical" PickableParticle_OnGround_Shape="U_CommonVFX_02.Esseract.Esseract_Shape.Circle_Physical" PickableParticle_OnGround_Damage="U_CommonVFX_02.Esseract.Esseract_Color.Physical" PickableParticle_OnGround_Symbol="U_CommonVFX_02.Esseract.Esseract_Symbol.EZANEAL" PickableParticle_OnGround_Indicator="U_CommonVFX_02.Esseract.Esseract_Indicator.Physical" PickableParticle_OnGround_Pickup="U_CommonVFX_02.Esseract.Esseract_Loot.Physical" SkillLearningParticle="U_CommonVFX.Skill_Learn.Skill_Learn_Physical" Inventory_HUDPicture="../u_resources/enneracts/hook.png" Inventory_LoreDesc="@ui_enneract_lore" />
-    <CastingParams CastBone="R_Weapon_Bone" />
+    <CastingParams CastBone="R_Weapon_Bone" CancellableByDefault="1" />
     <Cooldown Cooldown="10" />
     <Aggression TargetValueOnHit="40" />
+    <DamageWeapon WeaponMultiplier="1.5" />
     <Shapes>
       <Entry ShapeName="Player_HookShape" />
     </Shapes>
@@ -28,76 +29,77 @@
       </HookForwardMovementKeyFrames>
     </Specific_Hook>
     <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="Player_skill_hook" TrailPresetBase="default" />
+    <SoundTrigger OnKill="Play_OnKill_Impact_Lethal_Melee_Skill_Default" />
   </Skill>
   <Skill UID="player_hook_variant_default_damage_type" ESkill="default_variant">
     <HUD UIName="@ui_AST_Hook" Lore="@ui_AST_Hook_Lore" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_Alpha.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_Alpha.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_Alpha.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_Alpha.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_Alpha.png" HUDPictureVariant_InnerIcon="../u_resources/spells/Active_Skills/hook_Physical.png" VariantBottomPanel="1" />
   </Skill>
   <Skill UID="player_hook_variant_1" ESkill="player_hook_variant">
-    <HUD UIName="@ui_Variant_Hook_variant_1" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_001.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_001.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_001.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_001.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_001.png" ShowParamsInTooltip="SpecificHook" />
+    <HUD UIName="@ui_Variant_Hook_variant_1" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_001.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_001.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_001.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_001.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_001.png" ShowParamsInTooltip="SpecificHook" Category="Utility" />
     <Specific_Hook MainHookExtraLength="1.5" />
   </Skill>
   <Skill UID="player_hook_variant_2" ESkill="player_hook_variant">
-    <HUD UIName="@ui_Variant_Hook_variant_2" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_003.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_003.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_003.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_003.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_003.png" ShowParamsInTooltip="SpecificHook,StatusAilmentsChance" />
+    <HUD UIName="@ui_Variant_Hook_variant_2" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_003.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_003.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_003.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_003.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_003.png" ShowParamsInTooltip="SpecificHook,StatusAilmentsChance" Category="Mastery" />
     <StatusAilment>
       <stun Chance="100" ChanceMode="override" Duration="1" DurationMode="override" />
     </StatusAilment>
   </Skill>
   <Skill UID="player_hook_variant_3" ESkill="player_hook_variant">
-    <HUD UIName="@ui_Variant_Hook_variant_3" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_003.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_003.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_003.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_003.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_003.png" ShowParamsInTooltip="SpecificHook" />
-    <Specific_Hook RageGenerationOnEnemyHit="30" MaxRageGenerationOnEnemyHit="200" />
+    <HUD UIName="@ui_Variant_Hook_variant_3" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_003.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_003.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_003.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_003.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_003.png" ShowParamsInTooltip="SpecificHook" Category="Utility" />
+    <Specific_Hook RageGenerationOnEnemyHit="30" MaxRageGenerationOnEnemyHit="210" />
   </Skill>
   <Skill UID="player_hook_variant_4" ESkill="player_hook_variant">
-    <HUD UIName="@ui_Variant_Hook_variant_4" Lore="@ui_Variant_Hook_variant_4_Lore" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_005.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_005.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_005.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_005.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_005.png" ShowParamsInTooltip="SpecificHook" />
+    <HUD UIName="@ui_Variant_Hook_variant_4" Lore="@ui_Variant_Hook_variant_4_Lore" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_005.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_005.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_005.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_005.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_005.png" ShowParamsInTooltip="SpecificHook" Category="Mastery" />
     <Specific_Hook GoOnTarget="1" />
   </Skill>
   <Skill UID="player_hook_variant_6" ESkill="player_hook_variant">
-    <HUD UIName="@ui_Variant_Hook_variant_6" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_001.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_001.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_001.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_001.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_001.png" ShowParamsInTooltip="SpecificHook,Cooldown" />
+    <HUD UIName="@ui_Variant_Hook_variant_6" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_001.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_001.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_001.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_001.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_001.png" ShowParamsInTooltip="SpecificHook,Cooldown" Category="Utility" />
     <Cooldown Cooldown="-1.5" />
   </Skill>
   <Skill UID="player_hook_variant_7" ESkill="player_hook_variant">
-    <HUD UIName="@ui_Variant_Hook_variant_7" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_003.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_003.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_003.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_003.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_003.png" ShowParamsInTooltip="SpecificHook" />
-    <Specific_Hook LootGlobeName="health_globe" LootChancePercent="10" MaxLootsPerCast="3" />
+    <HUD UIName="@ui_Variant_Hook_variant_7" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_003.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_003.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_003.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_003.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_003.png" ShowParamsInTooltip="SpecificHook" Category="Survival" />
+    <Specific_Hook LootGlobeName="health_globe" LootChancePercent="10" MaxLootsPerCast="1" />
   </Skill>
   <Skill UID="player_hook_variant_8" ESkill="player_hook_variant">
-    <HUD UIName="@ui_Variant_Hook_variant_8" Lore="@ui_Variant_Hook_variant_8_Lore" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_005.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_005.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_005.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_005.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_005.png" ShowParamsInTooltip="SpecificHook" />
+    <HUD UIName="@ui_Variant_Hook_variant_8" Lore="@ui_Variant_Hook_variant_8_Lore" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_005.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_005.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_005.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_005.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_005.png" ShowParamsInTooltip="SpecificHook" Category="Mastery" />
     <Specific_Hook MultiHook="1" NumberOfHooks="8" MultiHookRadius="5" />
   </Skill>
   <Skill UID="player_hook_variant_9" ESkill="player_hook_variant">
-    <HUD UIName="@ui_Variant_Hook_variant_9" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_003.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_003.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_003.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_003.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_003.png" ShowParamsInTooltip="SpecificHook,StatusAilmentsChance" />
+    <HUD UIName="@ui_Variant_Hook_variant_9" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_003.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_003.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_003.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_003.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_003.png" ShowParamsInTooltip="SpecificHook,StatusAilmentsChance" Category="Utility" />
     <StatusAilment>
       <Stasis Chance="100" ChanceMode="override" Duration="4" DurationMode="override" Stacks="1" StacksMode="override" />
     </StatusAilment>
   </Skill>
   <Skill UID="player_hook_variant_10" ESkill="player_hook_variant">
-    <HUD UIName="@ui_Variant_Hook_variant_10" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_001.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_001.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_001.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_001.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_001.png" ShowParamsInTooltip="SpecificHook,DamageWeapon" />
+    <HUD UIName="@ui_Variant_Hook_variant_10" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_001.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_001.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_001.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_001.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_001.png" ShowParamsInTooltip="SpecificHook,DamageWeapon" Category="Combat" />
     <DamageWeapon WeaponMultiplier="2" />
   </Skill>
   <Skill UID="player_hook_variant_11" ESkill="player_hook_variant">
-    <HUD UIName="@ui_Variant_Hook_variant_11" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_003.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_003.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_003.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_003.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_003.png" ShowParamsInTooltip="SpecificHook,DamageWeapon" />
-    <DamageWeapon WeaponMultiplier="2" />
+    <HUD UIName="@ui_Variant_Hook_variant_11" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_003.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_003.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_003.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_003.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_003.png" ShowParamsInTooltip="SpecificHook,DamageWeapon" Category="Combat" />
+    <DamageWeapon WeaponMultiplier="3.5" />
   </Skill>
   <Skill UID="player_hook_variant_12" ESkill="player_hook_variant">
-    <HUD UIName="@ui_Variant_Hook_variant_12" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_001.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_001.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_001.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_001.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_001.png" ShowParamsInTooltip="SpecificHook" />
+    <HUD UIName="@ui_Variant_Hook_variant_12" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_001.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_001.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_001.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_001.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_001.png" ShowParamsInTooltip="SpecificHook" Category="Utility" />
     <Specific_Hook MainHookExtraLength="1.5" />
   </Skill>
   <Skill UID="player_hook_variant_13" ESkill="player_hook_variant">
-    <HUD UIName="@ui_Variant_Hook_variant_13" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_001.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_001.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_001.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_001.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_001.png" ShowParamsInTooltip="SpecificHook,Cooldown" />
+    <HUD UIName="@ui_Variant_Hook_variant_13" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_001.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_001.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_001.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_001.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_001.png" ShowParamsInTooltip="SpecificHook,Cooldown" Category="Utility" />
     <Cooldown Cooldown="-1.5" CooldownPerLevel="0" />
   </Skill>
   <Skill UID="player_hook_variant_14" ESkill="player_hook_variant">
-    <HUD UIName="@ui_Variant_Hook_variant_14" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_001.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_001.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_001.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_001.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_001.png" ShowParamsInTooltip="SpecificHook,Cooldown" />
+    <HUD UIName="@ui_Variant_Hook_variant_14" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_001.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_001.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_001.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_001.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_001.png" ShowParamsInTooltip="SpecificHook,Cooldown" Category="Utility" />
     <Cooldown Cooldown="-1.5" CooldownPerLevel="0" />
   </Skill>
   <Skill UID="player_hook_variant_15" ESkill="player_hook_variant">
-    <HUD UIName="@ui_Variant_Hook_variant_15" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_003.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_003.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_003.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_003.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_003.png" ShowParamsInTooltip="SpecificHook,Cooldown" />
+    <HUD UIName="@ui_Variant_Hook_variant_15" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_003.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_003.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_003.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_003.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_003.png" ShowParamsInTooltip="SpecificHook,Cooldown" Category="Utility" />
     <Cooldown Cooldown="-2.25" CooldownPerLevel="0" />
   </Skill>
   <Skill UID="player_hook_variant_16" ESkill="player_hook_variant">
-    <HUD UIName="@ui_Variant_Hook_variant_16" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_001.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_001.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_001.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_001.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_001.png" ShowParamsInTooltip="SpecificHook" />
+    <HUD UIName="@ui_Variant_Hook_variant_16" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_001.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_001.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_001.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_001.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_001.png" ShowParamsInTooltip="SpecificHook" Category="Utility" />
     <Specific_Hook MainHookExtraLength="1.5" />
   </Skill>
   <Skill UID="player_hook_variant_19" ESkill="player_hook_variant">
-    <HUD UIName="@ui_Variant_Hook_variant_19" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_001.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_001.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_001.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_001.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_001.png" ShowParamsInTooltip="SpecificHook" />
+    <HUD UIName="@ui_Variant_Hook_variant_19" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_001.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_001.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_001.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_001.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_001.png" ShowParamsInTooltip="SpecificHook" Category="Combat" />
     <CastingSpeed AttackSpeedPercent="125" />
   </Skill>
   <Skill UID="player_hook_variant_5" ESkill="player_hook_variant">
@@ -110,7 +112,6 @@
       <Particle Key="PullTrail" Name="U_CommonVFX.Hook.Hook_follow_Red_01" Bone="Bip01 Spine1" Offset="0,0,0" Direction="0,1,0" />
       <Particle Key="Hit" Name="U_CommonVFX.Hook.Hook_Hit_Blood" Offset="0,0,1.35" Direction="0,1,0" />
     </ParticleList>
-    <DamageWeapon WeaponMultiplier="1.25" />
     <Damage_Conversion>
       <Entry From="physical" To="rend" ConversionRate="100" />
     </Damage_Conversion>
@@ -130,7 +131,6 @@
       <Particle Key="PullTrail" Name="U_CommonVFX.Hook.Hook_follow_Blue_01" Bone="Bip01 Spine1" Offset="0,0,0" Direction="0,1,0" />
       <Particle Key="Hit" Name="U_Swipe_02.Directional_Hit_01.Staff_Hit_Frost_01" Offset="0,0,1.35" Direction="0,1,0" />
     </ParticleList>
-    <DamageWeapon WeaponMultiplier="1.25" />
     <Damage_Conversion>
       <Entry From="physical" To="frost" ConversionRate="100" />
     </Damage_Conversion>
@@ -150,7 +150,6 @@
       <Particle Key="PullTrail" Name="U_CommonVFX.Hook.Hook_follow_Purple_01" Bone="Bip01 Spine1" Offset="0,0,0" Direction="0,1,0" />
       <Particle Key="Hit" Name="U_Swipe_02.Directional_Hit_01.Staff_Hit_Umbra_01" Offset="0,0,1.35" Direction="0,1,0" />
     </ParticleList>
-    <DamageWeapon WeaponMultiplier="1.25" />
     <Damage_Conversion>
       <Entry From="physical" To="umbra" ConversionRate="100" />
     </Damage_Conversion>

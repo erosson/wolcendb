@@ -1,6 +1,7 @@
 <MetaData>
   <Skill UID="player_leap" ESkill="player_leap" Keywords="attack_skill">
     <WeaponRequirements Requirements="melee," />
+    <CastingParams GamepadHoldToChangeCastPosition="1" GamepadUseCustomAreaTargetMarker="1" GamepadUseForceFeedback="1" GamepadForceFeedbackValue1="0.25" GamepadForceFeedbackValue2="0.5" />
     <Animation AnimationDrivenMovement="0" ActionString_In="player_skill_leap_in" ActionString_Loop="player_skill_leap_loop" ActionString_Out="player_skill_leap_out" ScaleWithSpellCastingSpeed="1" />
     <HUD HUDPicture="../u_resources/spells/Active_Skills/leap_Physical.png" UIName="@ui_AST_Leap" Lore="@ui_AST_Leap_Lore" ActiveEffectTitle="" ActiveEffectDesc="" ASTTreeNumber="1" ShowParamsInAST="Cost,ROSTime,Cooldown,Range,Blownaway,DamageDetail,DamageWeapon,DamageCritical,StatusAilmentsChance,SpecificLeap" ShowParamsInTooltip="Cost,Cooldown,DamageOverview,StatusAilmentsChance,SpecificLeap" />
     <Enneract PickableParticle_MoveToGround="U_CommonVFX_02.Esseract.Esseract_Projectile.Physical" PickableParticle_OnGround_Shape="U_CommonVFX_02.Esseract.Esseract_Shape.Circle_Physical" PickableParticle_OnGround_Damage="U_CommonVFX_02.Esseract.Esseract_Color.Physical" PickableParticle_OnGround_Symbol="U_CommonVFX_02.Esseract.Esseract_Symbol.HEPHAARON" PickableParticle_OnGround_Indicator="U_CommonVFX_02.Esseract.Esseract_Indicator.Physical" PickableParticle_OnGround_Pickup="U_CommonVFX_02.Esseract.Esseract_Loot.Physical" SkillLearningParticle="U_CommonVFX.Skill_Learn.Skill_Learn_Physical" Inventory_HUDPicture="../u_resources/enneracts/leap.png" Inventory_LoreDesc="@ui_enneract_lore" />
@@ -15,31 +16,32 @@
       <Particle Key="Impact" Name="U_CommonVFX.Impact_Ground.Physical_01_3M" Direction="0,0,1" />
       <Particle Key="JumpDust" Name="U_CommonVFX.Dust.Dust_Jump_02" Direction="0,0,1" />
       <Particle Key="Spear" Bone="R_Weapon_Bone" Name="U_Character.Skills.Leap_Spear_02" Direction="0,1,0" />
+      <Particle Key="GamepadAreaTargetMarkerFX" Name="U_Character.Skills.Arrow_Rain_Indicator_01" Direction="0,1,0" Scale="0.4" />
     </ParticleList>
     <VisualFeedback TrailPresetBase="default" FeedbackPresetBase="Player_skill_leap" BloodDecalOrientation="forward" />
     <Specific_Leap Speed="15" MoveDistanceMinimum="1" MoveDistanceMaximum="10" MidPointAdvancement="0.5" RaycastHeightOffset="2.5" JumpHeight="3.5" JumpZOnlyForce="15" JumpZOnlyFallingGravityMultiplier="8" HeightLimit="3" NavPathLengthLimit="15" TriggerDistance="1.5" ImpactForwardOffset="1" SpearParticleSpawnDelay="0.185" SoundTriggerOnAnimStart="" />
     <ResourceCost RageCost="100" ROSTransfertDuration="1.0" />
-    <SoundTrigger OnAnimStart="Play_Skill_Leap_Jump" OnAnimCast="PLAY_Skill_Leap_Impact" />
+    <SoundTrigger OnAnimStart="Play_Skill_Leap_Jump" OnAnimCast="PLAY_Skill_Leap_Impact" OnKill="Play_OnKill_Impact_Lethal_Melee_Skill_Default" />
   </Skill>
   <Skill UID="player_leap_variant_default_damage_type" ESkill="default_variant">
     <HUD UIName="@ui_AST_Leap" Lore="@ui_AST_Leap_Lore" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_Alpha.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_Alpha.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_Alpha.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_Alpha.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_Alpha.png" HUDPictureVariant_InnerIcon="../u_resources/spells/Active_Skills/leap_Physical.png" VariantBottomPanel="1" />
   </Skill>
   <Skill UID="player_leap_step_1" ESkill="default_variant">
-    <HUD UIName="@ui_Variant_Leap_variant_1" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_001.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_001.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_001.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_001.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_001.png" ShowParamsInTooltip="SpecificLeap,Cost" />
+    <HUD UIName="@ui_Variant_Leap_variant_1" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_001.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_001.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_001.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_001.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_001.png" ShowParamsInTooltip="SpecificLeap,Cost" Category="Utility" />
     <ResourceCost RageCost="30" />
   </Skill>
   <Skill UID="player_leap_step_2" ESkill="default_variant">
-    <HUD UIName="@ui_Variant_Leap_variant_2" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_001.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_001.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_001.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_001.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_001.png" ShowParamsInTooltip="SpecificLeap" />
+    <HUD UIName="@ui_Variant_Leap_variant_2" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_001.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_001.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_001.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_001.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_001.png" ShowParamsInTooltip="SpecificLeap" Category="Utility" />
     <Specific_Leap Speed="6" MidPointAdvancement="-0.1" JumpZOnlyFallingGravityMultiplier="1" JumpZOnlyForce="-2" SpearParticleSpawnDelay="-0.185" />
   </Skill>
   <Skill UID="player_leap_step_3" ESkill="default_variant">
-    <HUD UIName="@ui_Variant_Leap_variant_3" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_003.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_003.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_003.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_003.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_003.png" ShowParamsInTooltip="SpecificLeap,StatusAilmentsChance" />
+    <HUD UIName="@ui_Variant_Leap_variant_3" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_003.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_003.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_003.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_003.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_003.png" ShowParamsInTooltip="SpecificLeap,StatusAilmentsChance" Category="Mastery" />
     <StatusAilment>
       <stun Chance="100" ChanceMode="override" Duration="1.5" DurationMode="override" />
     </StatusAilment>
   </Skill>
   <Skill UID="player_leap_step_4" ESkill="default_variant">
-    <HUD UIName="@ui_Variant_Leap_variant_4" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_003.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_003.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_003.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_003.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_003.png" ShowParamsInTooltip="SpecificLeap" />
+    <HUD UIName="@ui_Variant_Leap_variant_4" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_003.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_003.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_003.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_003.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_003.png" ShowParamsInTooltip="SpecificLeap" Category="Combat" />
     <Specific_Leap UseRing="1" />
     <Shapes>
       <Entry Key="Impact" ShapeName="player_leap_shape_ring" />
@@ -47,61 +49,60 @@
     <ParticleList>
       <Particle Key="Impact_Ring" Name="U_CommonVFX.Impact_Ground.Leap_Impact_Ring_01" Direction="0,0,1" />
     </ParticleList>
-    <DamageZone Duration="1.25" RateOfFire="1" RemoveParticleWithShape="1" MaxEntityHits="20" />
+    <DamageZone Duration="1.25" RateOfFire="0.66" RemoveParticleWithShape="1" MaxEntityHits="20" />
     <SoundTrigger OnAnimCast="Play_Skill_Leap_Impact_Donut" />
   </Skill>
   <Skill UID="player_leap_step_6" ESkill="default_variant">
-    <HUD UIName="@ui_Variant_Leap_variant_6" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_001.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_001.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_001.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_001.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_001.png" ShowParamsInTooltip="SpecificLeap,DamageWeapon" />
+    <HUD UIName="@ui_Variant_Leap_variant_6" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_001.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_001.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_001.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_001.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_001.png" ShowParamsInTooltip="SpecificLeap,DamageWeapon" Category="Combat" />
     <DamageWeapon WeaponMultiplier="1.15" />
   </Skill>
   <Skill UID="player_leap_step_7" ESkill="default_variant">
-    <HUD UIName="@ui_Variant_Leap_variant_7" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_003.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_003.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_003.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_003.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_003.png" ShowParamsInTooltip="SpecificLeap,BlownAway" />
+    <HUD UIName="@ui_Variant_Leap_variant_7" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_003.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_003.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_003.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_003.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_003.png" ShowParamsInTooltip="SpecificLeap,BlownAway" Category="Mastery" />
     <Blownaway Chance="100" Height="2" Distance="4.5" StunDuration="0.0" />
   </Skill>
   <Skill UID="player_leap_step_8" ESkill="default_variant">
-    <HUD UIName="@ui_Variant_Leap_variant_8" Lore="@ui_Variant_Leap_variant_8_Lore" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_005.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_005.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_005.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_005.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_005.png" ShowParamsInTooltip="SpecificLeap,Cost,Cooldown" />
+    <HUD UIName="@ui_Variant_Leap_variant_8" Lore="@ui_Variant_Leap_variant_8_Lore" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_005.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_005.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_005.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_005.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_005.png" ShowParamsInTooltip="SpecificLeap,Cost,Cooldown" Category="Mastery" />
     <Cooldown Cooldown="-10" />
     <Aggression TargetValueOnHit="-10" />
     <ResourceCost StaminaCost="-1" />
   </Skill>
   <Skill UID="player_leap_step_9" ESkill="default_variant">
-    <HUD UIName="@ui_Variant_Leap_variant_9" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_001.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_001.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_001.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_001.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_001.png" ShowParamsInTooltip="SpecificLeap" />
-    <Specific_Leap CDReducrionPerKill="0.5" />
+    <HUD UIName="@ui_Variant_Leap_variant_9" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_001.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_001.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_001.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_001.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_001.png" ShowParamsInTooltip="SpecificLeap" Category="Utility" />
+    <Specific_Leap CDReductionPerHit="0.5" />
   </Skill>
   <Skill UID="player_leap_step_10" ESkill="default_variant">
-    <HUD UIName="@ui_Variant_Leap_variant_10" Lore="@ui_Variant_Leap_variant_10_lore" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_005.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_005.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_005.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_005.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_005.png" ShowParamsInTooltip="SpecificLeap" />
+    <HUD UIName="@ui_Variant_Leap_variant_10" Lore="@ui_Variant_Leap_variant_10_lore" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_005.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_005.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_005.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_005.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_005.png" ShowParamsInTooltip="SpecificLeap" Category="Mastery" />
     <ParticleList>
       <Particle Key="Vortex" Name="U_Character.Skills.Leep_Pulling_01" Direction="0,1,0" Scale="1" TimeScale="0.85" />
     </ParticleList>
     <Specific_Leap VortexRadius="4" />
   </Skill>
   <Skill UID="player_leap_step_11" ESkill="default_variant">
-    <HUD UIName="@ui_Variant_Leap_variant_11" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_003.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_003.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_003.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_003.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_003.png" ShowParamsInTooltip="SpecificLeap" />
+    <HUD UIName="@ui_Variant_Leap_variant_11" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_003.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_003.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_003.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_003.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_003.png" ShowParamsInTooltip="SpecificLeap" Category="Survival" />
     <Specific_Leap ForceShieldPerHit="5" />
   </Skill>
   <Skill UID="player_leap_step_12" ESkill="default_variant">
-    <HUD UIName="@ui_Variant_Leap_variant_12" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_003.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_003.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_003.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_003.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_003.png" ShowParamsInTooltip="SpecificLeap" />
+    <HUD UIName="@ui_Variant_Leap_variant_12" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_003.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_003.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_003.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_003.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_003.png" ShowParamsInTooltip="SpecificLeap" Category="Combat" />
     <Specific_Leap BuffPerHitName="AST_Leap_BuffPerHit" BuffPerHitDuration="10" />
   </Skill>
   <Skill UID="player_leap_step_13" ESkill="default_variant">
-    <HUD UIName="@ui_Variant_Leap_variant_13" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_003.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_003.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_003.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_003.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_003.png" ShowParamsInTooltip="SpecificLeap" />
+    <HUD UIName="@ui_Variant_Leap_variant_13" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_003.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_003.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_003.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_003.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_003.png" ShowParamsInTooltip="SpecificLeap" Category="Utility" />
     <Specific_Leap LandingBuffName="AST_Leap_Buff" LandingBuffDuration="10" />
   </Skill>
   <Skill UID="player_leap_step_14" ESkill="default_variant">
-    <HUD UIName="@ui_Variant_Leap_variant_14" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_001.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_001.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_001.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_001.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_001.png" ShowParamsInTooltip="SpecificLeap,DamageCritical" />
+    <HUD UIName="@ui_Variant_Leap_variant_14" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_001.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_001.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_001.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_001.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_001.png" ShowParamsInTooltip="SpecificLeap,DamageCritical" Category="Combat" />
     <DamageCritical CriticalInflictScoreModifier="40" />
   </Skill>
   <Skill UID="player_leap_step_15" ESkill="default_variant">
-    <HUD UIName="@ui_Variant_Leap_variant_15" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_001.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_001.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_001.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_001.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_001.png" ShowParamsInTooltip="SpecificLeap,StatusAilmentsChance" />
+    <HUD UIName="@ui_Variant_Leap_variant_15" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_001.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_001.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_001.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_001.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_001.png" ShowParamsInTooltip="SpecificLeap,StatusAilmentsChance" Category="Utility" />
     <StatusAilment AilmentEffectiveness="125" />
   </Skill>
   <Skill UID="player_leap_step_16" ESkill="default_variant">
-    <HUD UIName="@ui_Variant_Leap_variant_16" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_001.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_001.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_001.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_001.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_001.png" ShowParamsInTooltip="SpecificLeap" />
+    <HUD UIName="@ui_Variant_Leap_variant_16" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_001.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_001.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_001.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_001.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_001.png" ShowParamsInTooltip="SpecificLeap" Category="Utility" />
     <Aggression TargetValueOnHit="200" />
   </Skill>
   <Skill UID="player_leap_step_5" ESkill="default_variant">
     <HUD UIName="@ui_Variant_Leap_variant_5" Lore="@ui_Variant_Leap_variant_5_Lore" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_Alpha.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_Alpha.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_Alpha.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_Alpha.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_Alpha.png" HUDPictureVariant_InnerIcon="../u_resources/spells/Active_Skills/leap_Sacred.png" ShowParamsInTooltip="SpecificLeap,DamageWeapon" HUDPicture="../u_resources/spells/Active_Skills/leap_Sacred.png" VariantBottomPanel="1" />
-    <DamageWeapon WeaponMultiplier="1.25" />
     <Damage_Conversion>
       <Entry From="physical" To="sacred" ConversionRate="100" />
     </Damage_Conversion>
@@ -118,7 +119,6 @@
   </Skill>
   <Skill UID="player_leap_step_17" ESkill="default_variant">
     <HUD UIName="@ui_Variant_Leap_variant_17" Lore="@ui_Variant_Leap_variant_17_Lore" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_Alpha.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_Alpha.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_Alpha.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_Alpha.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_Alpha.png" HUDPictureVariant_InnerIcon="../u_resources/spells/Active_Skills/leap_Rend.png" ShowParamsInTooltip="SpecificLeap,DamageWeapon" HUDPicture="../u_resources/spells/Active_Skills/leap_Rend.png" VariantBottomPanel="1" />
-    <DamageWeapon WeaponMultiplier="1.25" />
     <Damage_Conversion>
       <Entry From="physical" To="rend" ConversionRate="100" />
     </Damage_Conversion>
@@ -135,7 +135,6 @@
   </Skill>
   <Skill UID="player_leap_step_18" ESkill="default_variant">
     <HUD UIName="@ui_Variant_Leap_variant_18" Lore="@ui_Variant_Leap_variant_18_Lore" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_Alpha.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_Alpha.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_Alpha.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_Alpha.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_Alpha.png" HUDPictureVariant_InnerIcon="../u_resources/spells/Active_Skills/leap_Frost.png" ShowParamsInTooltip="SpecificLeap,DamageWeapon" HUDPicture="../u_resources/spells/Active_Skills/leap_Frost.png" VariantBottomPanel="1" />
-    <DamageWeapon WeaponMultiplier="1.25" />
     <Damage_Conversion>
       <Entry From="physical" To="frost" ConversionRate="100" />
     </Damage_Conversion>
@@ -150,8 +149,24 @@
       <AnimEvent Original="U_CommonVFX.Impact_Ground.Physical_01_Blue_3M" Override="U_CommonVFX.Impact_Ground.Physical_01_Frost_3M" />
     </EventEffectOverride>
   </Skill>
+  <Skill UID="player_leap_step_20" ESkill="default_variant">
+    <HUD UIName="@ui_Variant_Leap_variant_20" Lore="@ui_Variant_Leap_variant_20_Lore" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_Alpha.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_Alpha.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_Alpha.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_Alpha.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_Alpha.png" HUDPictureVariant_InnerIcon="../u_resources/spells/Active_Skills/leap_Shadow.png" ShowParamsInTooltip="SpecificLeap,DamageWeapon" HUDPicture="../u_resources/spells/Active_Skills/leap_Shadow.png" VariantBottomPanel="1" />
+    <Damage_Conversion>
+      <Entry From="physical" To="shadow" ConversionRate="100" />
+    </Damage_Conversion>
+    <WeaponRequirements Requirements="melee,shadow" />
+    <ParticleList>
+      <Particle Key="Impact" Name="U_CommonVFX.Impact_Ground.Physical_01_Shadow_3M" Direction="0,0,1" />
+      <Particle Key="Spear" Bone="R_Weapon_Bone" Name="U_Character.Skills.Leap_Spear_02_Shadow" Direction="0,1,0" />
+    </ParticleList>
+    <SoundTrigger OnAnimCast="Play_Skill_Leap_Impact_Shadow" />
+    <EventEffectOverride>
+      <AnimEvent Original="U_Character.Skills.Leap_Line_01" Override="U_Character.Skills.Leap_Line_01_Shadow" />
+      <AnimEvent Original="U_CommonVFX.Impact_Ground.Physical_01_Blue_3M" Override="U_CommonVFX.Impact_Ground.Physical_01_Shadow_3M" />
+    </EventEffectOverride>
+  </Skill>
   <Skill UID="Player_Leap_step_19" ESkill="default_variant">
-    <HUD UIName="@ui_variant_Player_Leap_step_19" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_003.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_003.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_003.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_003.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_003.png" ShowParamsInTooltip="DamageWeapon" />
+    <HUD UIName="@ui_variant_Player_Leap_step_19" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_001.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_001.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_001.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_001.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_001.png" ShowParamsInTooltip="DamageWeapon" Category="Combat" />
     <DamageCritical CriticalDamageModifier="25" />
   </Skill>
   <Skill UID="player_leap_step_5,player_leap_step_4" ESkill="default_variant_combo">
@@ -170,6 +185,12 @@
     <SoundTrigger OnAnimCast="Play_Skill_Leap_Impact_Donut_Frost" />
     <ParticleList>
       <Particle Key="Impact_Ring" Name="U_CommonVFX.Impact_Ground.Leap_Impact_Ring_01_Frost" Direction="0,0,1" />
+    </ParticleList>
+  </Skill>
+  <Skill UID="player_leap_step_20,player_leap_step_4" ESkill="default_variant_combo">
+    <SoundTrigger OnAnimCast="Play_Skill_Leap_Impact_Donut_Shadow" />
+    <ParticleList>
+      <Particle Key="Impact_Ring" Name="U_CommonVFX.Impact_Ground.Leap_Impact_Ring_01_Shadow" Direction="0,0,1" />
     </ParticleList>
   </Skill>
 </MetaData>

@@ -1,6 +1,6 @@
 <MetaData>
   <Skill UID="apo_tank_vortex" ESkill="player_vortex" Keywords="">
-    <VisualFeedback TrailPresetBase="default" BloodDecalOrientation="forward" />
+    <VisualFeedback TrailPresetBase="default" feedbackPresetBase="Player_Apo_Tank" BloodDecalOrientation="forward" />
     <Animation AnimationDrivenMovement="1" ActionString="apo_skill_02" />
     <CastingParams CastBone="R_weapon_bone" CasterImmobilizationTime="0.33" RequiresApocalypticForm="1" />
     <HUD HUDPicture="../u_resources/spells/Active_Skills/apo_tank_vortex.png" UIName="@ui_APO_Tank_Skill02" Lore="@ui_APO_Tank_Skill02_Lore" ActiveEffectTitle="" ActiveEffectDesc="" ASTTreeNumber="8" ShowParamsInAST="Cost,DamageDetail,Cooldown,Range" ShowParamsInTooltip="Cost,DamageOverview,Cooldown,Range" />
@@ -11,18 +11,19 @@
     <SoundTrigger OnAnimStart="Play_Skill_APO_Tank_Vortex_Start" OnAnimCast="" />
     <Range AttackRange="20" />
     <ResourceCost ApoResourceCost="-100" ROSTransfertDuration="1.5" />
-    <DamageZone Duration="10" RateOfFire="0.33" MaxEntityHits="20" />
+    <DamageZone Duration="6" RateOfFire="0.33" MaxEntityHits="20" />
     <Shapes>
       <Entry Key="attraction" ShapeName="vortex_attraction_shape" />
       <Entry Key="damage" ShapeName="vortex_damage_shape" />
       <Entry Key="explosion" ShapeName="vortex_explosion_shape" />
     </Shapes>
     <ParticleList>
-      <Particle Key="Wind" Name="U_ApocalypticForm.Heavy_ApocalypticForm.Hammer_Spining_01" Offset="0,0,1" Direction="0,1,0" Scale="1.5" Delay="1.5" />
-      <Particle Key="Lightning" Name="U_ApocalypticForm.Heavy_ApocalypticForm.Hammer_02" Direction="0,1,0" Delay="1" />
+      <Particle Key="Wind" Name="U_ApocalypticForm.Heavy_ApocalypticForm.Hammer_Spining_01" Offset="0,0,1" Direction="0,1,0" Scale="1.5" />
+      <Particle Key="Lightning" Name="U_ApocalypticForm.Heavy_ApocalypticForm.Hammer_02" Direction="0,1,0" />
+      <Particle Key="Disappear" Name="U_ApocalypticForm.Heavy_ApocalypticForm.Hammer_02_End" Direction="0,1,0" Scale="1" />
       <Particle Key="Explosion" Name="U_ApocalypticForm.Heavy_ApocalypticForm.Hammer_Impact" Direction="0,0,1" Scale="0.75" />
     </ParticleList>
-    <Specific_Vortex CanBeRecastForExplosion="1" RepeatingPulse="1" PulseFrequency=".5" AttractionLength="4.5" AttractionDuration=".5" ApoChargesGainPerEnemyPulled="1" HammerOnGroundDelayFromSkillStart="0.25" SoundTriggerPreHammerOnGround="Play_Skill_APO_Tank_Vortex_HammerGround" SoundTriggerVortexAuraLoopStart="Play_Skill_APO_Tank_Vortex_HammerAura_Loop" SoundTriggerVortexAuraLoopStop="Stop_Skill_APO_Tank_Vortex_HammerAura_Loop" SoundTriggerHammerExplode="Play_Skill_APO_Tank_Vortex_HammerExplode" />
+    <Specific_Vortex CanBeRecastForExplosion="1" RepeatingPulse="1" PulseFrequency=".5" AttractionLength="4.5" AttractionDuration=".5" ApoChargesGainPerEnemyPulled="1" ExplosionDamageFactor="5" HammerOnGroundDelayFromSkillStart="0.25" SoundTriggerPreHammerOnGround="Play_Skill_APO_Tank_Vortex_HammerGround" SoundTriggerVortexAuraLoopStart="Play_Skill_APO_Tank_Vortex_HammerAura_Loop" SoundTriggerVortexAuraLoopStop="Stop_Skill_APO_Tank_Vortex_HammerAura_Loop" SoundTriggerHammerExplode="Play_Skill_APO_Tank_Vortex_HammerExplode" PullImmediately="1" />
     <Recast Cooldown="1.5" />
   </Skill>
 </MetaData>

@@ -2,105 +2,112 @@
   <Skill UID="player_summon_ranged" ESkill="player_summon" Keywords="magic_spell">
     <CastingParams CanCastWhileMoving="0" />
     <WeaponRequirements Requirements="magic" />
-    <Animation AnimationDrivenMovement="0" ActionString="player_skill_Sumoning" ScaleWithSpellCastingSpeed="1" />
     <HUD HUDPicture="../u_resources/spells/Active_Skills/Huntingswarm_Physical.png" UIName="@ui_AST_SummonRanged" Lore="@ui_AST_SummonRanged_Lore" ActiveEffectTitle="" ActiveEffectDesc="" ASTTreeNumber="1" ShowParamsInAST="Cost,ROSTime,Cooldown,Range,MaxSummon,SpecificSummon" ShowParamsInTooltip="Cost,Cooldown,MaxSummon,SpecificSummon" />
     <Enneract PickableParticle_MoveToGround="U_CommonVFX_02.Esseract.Esseract_Projectile.Physical" PickableParticle_OnGround_Shape="U_CommonVFX_02.Esseract.Esseract_Shape.Circle_Physical" PickableParticle_OnGround_Damage="U_CommonVFX_02.Esseract.Esseract_Color.Physical" PickableParticle_OnGround_Symbol="U_CommonVFX_02.Esseract.Esseract_Symbol.BEZERIEL" PickableParticle_OnGround_Indicator="U_CommonVFX_02.Esseract.Esseract_Indicator.Physical" PickableParticle_OnGround_Pickup="U_CommonVFX_02.Esseract.Esseract_Loot.Physical" SkillLearningParticle="U_CommonVFX.Skill_Learn.Skill_Learn_Physical" Inventory_HUDPicture="../u_resources/enneracts/Huntingswarm.png" Inventory_LoreDesc="@ui_enneract_lore" />
     <Range AttackRange="15" />
-    <Cooldown Cooldown="1.5" CooldownPerLevel="0" />
-    <Summoning MaxSummons="2" KillLowestHPOnOversummoning="0" SummonsSuicideWhenMasterDies="1" HUDPortraitIcon="../u_resources/spells/summon_portraits/PortraitHuntingswarm.png">
+    <Cooldown Cooldown="0.5" CooldownPerLevel="0" />
+    <Summoning MaxSummons="2" KillLowestHPOnOversummoning="0" SummonsSuicideWhenMasterDies="1" HUDPortraitIcon="../u_resources/spells/summon_portraits/huntingswarm_Physical.png">
       <SummonedSpawnClass Key="Base" Name="SC_SkillSummon_Ranged" />
     </Summoning>
-    <Specific_Summon Type="physical" SummonSoundTrigger="Play_Skill_Summon_SpawnScream">
-      <SummonedSkills UID="summon_default_range" OnEvent="SummonCapacityReached" />
+    <Specific_Summon Type="physical" SummonSoundTrigger="Play_Skill_Summon_Spawn_Ranged" OrderSoundTrigger="Play_Skill_Summon_Command_Ranged" SpawnRate="2" SpawnRateScalesWithCDR="1" TPMaxRadius="10" TPMinRadius="8" TPParameter="2" TPDisposition="line">
+      <SummonedSkills UID="summon_ranged_leapshot_base" OnEvent="SummonCapacityReached" />
+      <PermanentBuffs Key="AttackSpeedDefault" Name="SummonBuff_AttackSpeed_Ranged_default" />
     </Specific_Summon>
     <Specific_Summon_Ranged HeightOffsetAtCastPos="1.5" />
-    <ResourceCost ManaCost="-100" ROSTransfertDuration="2.0" />
-    <SoundTrigger OnAnimStart="Play_Skill_Summon_Start" />
+    <ResourceCost ManaCost="-200" ROSTransfertDuration="1.0" />
+    <SoundTrigger OnAnimStart="" />
     <ParticleList>
-      <Particle Key="PermanentRing" Name="U_Character_02.Summon.SummonLoop.SummonLoop_Aura_01" Bone="Bip01" Direction="0,1,0" Delay="0.1" />
-      <Particle Key="SpawnRing" Name="U_Character_02.Summon.SummonStart_01_Physical" Bone="Bip01" Direction="0,1,0" Delay="0.1" />
+      <Particle Key="PermanentRing" Name="U_Summons.SummonCircle_Opti" Bone="Bip01" Direction="0,1,0" Delay="0.1" />
+      <Particle Key="SpawnRing" Name="U_Summons.Spawn.Spawn_Physical" Bone="Bip01" Direction="0,1,0" Delay="0.1" />
     </ParticleList>
   </Skill>
   <Skill UID="player_summon_ranged_variant_default_damage_type" ESkill="default_variant">
     <HUD UIName="@ui_AST_SummonRanged" Lore="@ui_AST_SummonRanged_Lore" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_Alpha.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_Alpha.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_Alpha.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_Alpha.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_Alpha.png" HUDPictureVariant_InnerIcon="../u_resources/spells/Active_Skills/Huntingswarm_Physical.png" VariantBottomPanel="1" />
+    <ParticleList>
+      <Particle Key="teleport_in" Name="U_Summons.Teleport.Teleport_In_Physical" Direction="0,1,0" Offset="0,0,0" Bone="Bip01" />
+      <Particle Key="teleport_out" Name="U_Summons.Teleport.Teleport_Out_Physical" Bone="Bip01 Pelvis" Direction="0,1,0" Offset="0,0,-0.4" Delay="0.0" Scale="0.8" />
+    </ParticleList>
   </Skill>
   <Skill UID="player_summon_ranged_variant_1" ESkill="default_variant">
-    <HUD UIName="@ui_Variant_SummonRanged_variant_1" Lore="@ui_Variant_SummonRanged_variant_1_lore" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_005.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_005.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_005.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_005.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_005.png" ShowParamsInTooltip="SpecificSummon" />
+    <HUD UIName="@ui_Variant_SummonRanged_variant_1" Lore="@ui_Variant_SummonRanged_variant_1_lore" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_005.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_005.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_005.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_005.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_005.png" ShowParamsInTooltip="SpecificSummon" Category="Mastery" />
     <Summoning MaxSummons="0" KillLowestHPOnOversummoning="0" SummonsSuicideWhenMasterDies="1">
       <SummonedSpawnClass Key="Base" Name="SC_SkillSummon_Ranged_Explosive" />
     </Summoning>
     <Specific_Summon>
-      <SummonedSkills UID="summon_default_range_explosive" OnEvent="SummonCapacityReached" />
+      <SummonedSkills UID="summon_ranged_leapshot_explosive" OnEvent="SummonCapacityReached" />
     </Specific_Summon>
   </Skill>
   <Skill UID="player_summon_ranged_variant_2" ESkill="default_variant">
-    <HUD UIName="@ui_Variant_SummonRanged_variant_2" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_001.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_001.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_001.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_001.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_001.png" ShowParamsInTooltip="SpecificSummon" />
+    <HUD UIName="@ui_Variant_SummonRanged_variant_2" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_001.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_001.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_001.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_001.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_001.png" ShowParamsInTooltip="SpecificSummon" Category="Mastery" />
     <Specific_Summon>
       <PermanentBuffs Key="Pierce" Name="SummonBuff_Pierce" />
     </Specific_Summon>
   </Skill>
   <Skill UID="player_summon_ranged_variant_3" ESkill="default_variant">
-    <HUD UIName="@ui_Variant_SummonRanged_variant_3" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_003.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_003.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_003.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_003.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_003.png" ShowParamsInTooltip="SpecificSummon" />
+    <HUD UIName="@ui_Variant_SummonRanged_variant_3" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_003.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_003.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_003.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_003.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_003.png" ShowParamsInAST="SpecificSummon" ShowParamsInTooltip="SpecificSummon" Category="Combat" />
     <PassiveSkills>
-      <Skill Index="0" Name="AI_Summon_FocusShot" Duration="3" Targeting="OnSummons" />
+      <Skill Index="0" Name="AI_Summon_FocusShot" Duration="3" Targeting="OnSkillSummons" />
     </PassiveSkills>
+    <Specific_Summon>
+      <SummonedSkills UID="summon_ranged_leapshot_withIncreasedAttackSpeed" OnEvent="SummonCapacityReached" />
+    </Specific_Summon>
   </Skill>
   <Skill UID="player_summon_ranged_variant_4" ESkill="default_variant">
-    <HUD UIName="@ui_Variant_SummonRanged_variant_4" Lore="@ui_Variant_SummonRanged_variant_4_lore" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_005.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_005.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_005.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_005.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_005.png" ShowParamsInTooltip="SpecificSummon" />
+    <HUD UIName="@ui_Variant_SummonRanged_variant_4" Lore="@ui_Variant_SummonRanged_variant_4_lore" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_005.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_005.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_005.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_005.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_005.png" ShowParamsInTooltip="SpecificSummon" Category="Combat" />
     <Specific_Summon>
       <PermanentBuffs Key="GlassCannon" Name="SummonBuff_GlassCannon_Ranged" />
     </Specific_Summon>
   </Skill>
   <Skill UID="player_summon_ranged_variant_8" ESkill="default_variant">
-    <HUD UIName="@ui_Variant_SummonRanged_variant_8" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_003.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_003.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_003.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_003.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_003.png" ShowParamsInTooltip="SpecificSummon,MaxSummon" />
+    <HUD UIName="@ui_Variant_SummonRanged_variant_8" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_003.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_003.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_003.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_003.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_003.png" ShowParamsInTooltip="SpecificSummon,MaxSummon" Category="Utility" />
     <Summoning MaxSummons="1" KillLowestHPOnOversummoning="0" SummonsSuicideWhenMasterDies="1" />
   </Skill>
   <Skill UID="player_summon_ranged_variant_9" ESkill="default_variant">
-    <HUD UIName="@ui_Variant_SummonRanged_variant_9" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_003.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_003.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_003.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_003.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_003.png" ShowParamsInTooltip="SpecificSummon,MaxSummon" />
+    <HUD UIName="@ui_Variant_SummonRanged_variant_9" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_003.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_003.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_003.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_003.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_003.png" ShowParamsInTooltip="SpecificSummon,MaxSummon" Category="Mastery" />
     <Summoning MaxSummons="-1" KillLowestHPOnOversummoning="0" SummonsSuicideWhenMasterDies="1" />
     <Specific_Summon>
       <PermanentBuffs Key="Damage1" Name="SummonBuff_Damage_Ranged_1" />
     </Specific_Summon>
   </Skill>
   <Skill UID="player_summon_ranged_variant_10" ESkill="default_variant">
-    <HUD UIName="@ui_Variant_SummonRanged_variant_10" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_001.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_001.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_001.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_001.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_001.png" ShowParamsInTooltip="SpecificSummon" />
+    <HUD UIName="@ui_Variant_SummonRanged_variant_10" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_001.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_001.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_001.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_001.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_001.png" ShowParamsInTooltip="SpecificSummon" Category="Combat" />
     <Specific_Summon>
       <PermanentBuffs Key="Damage2" Name="SummonBuff_Damage_Ranged_2" />
     </Specific_Summon>
   </Skill>
   <Skill UID="player_summon_ranged_variant_11" ESkill="default_variant">
-    <HUD UIName="@ui_Variant_SummonRanged_variant_11" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_001.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_001.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_001.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_001.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_001.png" ShowParamsInTooltip="SpecificSummon" />
+    <HUD UIName="@ui_Variant_SummonRanged_variant_11" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_001.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_001.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_001.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_001.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_001.png" ShowParamsInTooltip="SpecificSummon" Category="Combat" />
     <Specific_Summon>
       <PermanentBuffs Key="Damage3" Name="SummonBuff_Damage_Ranged_3" />
     </Specific_Summon>
   </Skill>
   <Skill UID="player_summon_ranged_variant_12" ESkill="default_variant">
-    <HUD UIName="@ui_Variant_SummonRanged_variant_12" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_003.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_003.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_003.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_003.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_003.png" ShowParamsInTooltip="SpecificSummon" />
+    <HUD UIName="@ui_Variant_SummonRanged_variant_12" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_003.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_003.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_003.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_003.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_003.png" ShowParamsInTooltip="SpecificSummon" Category="Combat" />
     <Specific_Summon>
       <PermanentBuffs Key="Damage4" Name="SummonBuff_Damage_Ranged_4" />
     </Specific_Summon>
   </Skill>
   <Skill UID="player_summon_ranged_variant_13" ESkill="default_variant">
-    <HUD UIName="@ui_Variant_SummonRanged_variant_13" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_001.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_001.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_001.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_001.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_001.png" ShowParamsInTooltip="SpecificSummon" />
+    <HUD UIName="@ui_Variant_SummonRanged_variant_13" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_001.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_001.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_001.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_001.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_001.png" ShowParamsInTooltip="SpecificSummon" Category="Survival" />
     <Specific_Summon>
       <PermanentBuffs Key="Health1" Name="SummonBuff_Life_Ranged_1" />
     </Specific_Summon>
   </Skill>
   <Skill UID="player_summon_ranged_variant_14" ESkill="default_variant">
-    <HUD UIName="@ui_Variant_SummonRanged_variant_14" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_001.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_001.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_001.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_001.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_001.png" ShowParamsInTooltip="SpecificSummon" />
+    <HUD UIName="@ui_Variant_SummonRanged_variant_14" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_001.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_001.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_001.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_001.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_001.png" ShowParamsInTooltip="SpecificSummon" Category="Survival" />
     <Specific_Summon>
       <PermanentBuffs Key="Health2" Name="SummonBuff_Life_Ranged_2" />
     </Specific_Summon>
   </Skill>
   <Skill UID="player_summon_ranged_variant_15" ESkill="default_variant">
-    <HUD UIName="@ui_Variant_SummonRanged_variant_15" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_003.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_003.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_003.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_003.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_003.png" ShowParamsInTooltip="SpecificSummon" />
+    <HUD UIName="@ui_Variant_SummonRanged_variant_15" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_003.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_003.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_003.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_003.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_003.png" ShowParamsInTooltip="SpecificSummon" Category="Survival" />
     <Specific_Summon>
       <PermanentBuffs Key="MoveSpeed1" Name="SummonBuff_MovementSpeed_Ranged_1" />
       <PermanentBuffs Key="Health3" Name="SummonBuff_Life_Ranged_3" />
     </Specific_Summon>
   </Skill>
   <Skill UID="player_summon_ranged_variant_16" ESkill="default_variant">
-    <HUD UIName="@ui_Variant_SummonRanged_variant_16" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_001.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_001.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_001.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_001.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_001.png" ShowParamsInTooltip="SpecificSummon" />
+    <HUD UIName="@ui_Variant_SummonRanged_variant_16" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_001.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_001.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_001.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_001.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_001.png" ShowParamsInTooltip="SpecificSummon" Category="Utility" />
     <Specific_Summon>
       <PermanentBuffs Key="MoveSpeed2" Name="SummonBuff_MovementSpeed_Ranged_2" />
     </Specific_Summon>
@@ -109,58 +116,78 @@
     <HUD UIName="@ui_Variant_SummonRanged_variant_5" Lore="@ui_Variant_SummonRanged_variant_5_lore" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_Alpha.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_Alpha.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_Alpha.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_Alpha.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_Alpha.png" HUDPictureVariant_InnerIcon="../u_resources/spells/Active_Skills/Huntingswarm_Toxic.png" ShowParamsInTooltip="SpecificSummon" HUDPicture="../u_resources/spells/Active_Skills/Huntingswarm_Toxic.png" VariantBottomPanel="1" />
     <Specific_Summon Type="toxic" />
     <WeaponRequirements Requirements="magic,poison" />
-    <Summoning MaxSummons="0" KillLowestHPOnOversummoning="0" SummonsSuicideWhenMasterDies="1">
+    <Summoning MaxSummons="0" KillLowestHPOnOversummoning="0" SummonsSuicideWhenMasterDies="1" HUDPortraitIcon="../u_resources/spells/summon_portraits/huntingswarm_Toxic.png">
       <SummonedSpawnClass Key="Base" Name="SC_SkillSummon_Ranged_Toxic" />
     </Summoning>
+    <ParticleList>
+      <Particle Key="teleport_in" Name="U_Summons.Teleport.Teleport_In_Poison" Direction="0,1,0" Offset="0,0,0" Bone="Bip01" />
+      <Particle Key="teleport_out" Name="U_Summons.Teleport.Teleport_Out_Poison" Bone="Bip01 Pelvis" Direction="0,0,1" Offset="0,0,-0.4" Delay="0.1" Scale="0.8" />
+    </ParticleList>
   </Skill>
   <Skill UID="player_summon_ranged_variant_6" ESkill="default_variant">
     <HUD UIName="@ui_Variant_SummonRanged_variant_6" Lore="@ui_Variant_SummonRanged_variant_6_lore" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_Alpha.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_Alpha.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_Alpha.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_Alpha.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_Alpha.png" HUDPictureVariant_InnerIcon="../u_resources/spells/Active_Skills/Huntingswarm_Frost.png" ShowParamsInTooltip="SpecificSummon" HUDPicture="../u_resources/spells/Active_Skills/Huntingswarm_Frost.png" VariantBottomPanel="1" />
     <Specific_Summon Type="frost" />
     <WeaponRequirements Requirements="magic,frost" />
-    <Summoning MaxSummons="0" KillLowestHPOnOversummoning="0" SummonsSuicideWhenMasterDies="1">
+    <Summoning MaxSummons="0" KillLowestHPOnOversummoning="0" SummonsSuicideWhenMasterDies="1" HUDPortraitIcon="../u_resources/spells/summon_portraits/huntingswarm_Frost.png">
       <SummonedSpawnClass Key="Base" Name="SC_SkillSummon_Ranged_Frost" />
     </Summoning>
+    <ParticleList>
+      <Particle Key="teleport_in" Name="U_Summons.Teleport.Teleport_In_Frost" Direction="0,1,0" Offset="0,0,0" Bone="Bip01" />
+      <Particle Key="teleport_out" Name="U_Summons.Teleport.Teleport_Out_Frost" Bone="Bip01 Pelvis" Direction="0,0,1" Offset="0,0,-0.4" Delay="0.1" Scale="0.8" />
+    </ParticleList>
   </Skill>
   <Skill UID="player_summon_ranged_variant_7" ESkill="default_variant">
     <HUD UIName="@ui_Variant_SummonRanged_variant_7" Lore="@ui_Variant_SummonRanged_variant_7_lore" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_Alpha.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_Alpha.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_Alpha.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_Alpha.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_Alpha.png" HUDPictureVariant_InnerIcon="../u_resources/spells/Active_Skills/Huntingswarm_Shadow.png" ShowParamsInTooltip="SpecificSummon" HUDPicture="../u_resources/spells/Active_Skills/Huntingswarm_Shadow.png" VariantBottomPanel="1" />
     <Specific_Summon Type="shadow" />
     <WeaponRequirements Requirements="magic,shadow" />
-    <Summoning MaxSummons="0" KillLowestHPOnOversummoning="0" SummonsSuicideWhenMasterDies="1">
+    <Summoning MaxSummons="0" KillLowestHPOnOversummoning="0" SummonsSuicideWhenMasterDies="1" HUDPortraitIcon="../u_resources/spells/summon_portraits/huntingswarm_Shadow.png">
       <SummonedSpawnClass Key="Base" Name="SC_SkillSummon_Ranged_Shadow" />
     </Summoning>
+    <ParticleList>
+      <Particle Key="teleport_in" Name="U_Summons.Teleport.Teleport_In_Shadow" Direction="0,1,0" Offset="0,0,0" Bone="Bip01" />
+      <Particle Key="teleport_out" Name="U_Summons.Teleport.Teleport_Out_Shadow" Bone="Bip01 Pelvis" Direction="0,0,1" Offset="0,0,-0.4" Delay="0.1" Scale="0.8" />
+    </ParticleList>
   </Skill>
   <Skill UID="player_summon_ranged_variant_17" ESkill="default_variant">
     <HUD UIName="@ui_Variant_SummonRanged_variant_17" Lore="@ui_Variant_SummonRanged_variant_17_lore" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_Alpha.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_Alpha.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_Alpha.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_Alpha.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_Alpha.png" HUDPictureVariant_InnerIcon="../u_resources/spells/Active_Skills/Huntingswarm_Fire.png" ShowParamsInTooltip="SpecificSummon" HUDPicture="../u_resources/spells/Active_Skills/Huntingswarm_Fire.png" VariantBottomPanel="1" />
     <Specific_Summon Type="fire" />
     <WeaponRequirements Requirements="magic,fire" />
-    <Summoning MaxSummons="0" KillLowestHPOnOversummoning="0" SummonsSuicideWhenMasterDies="1">
+    <Summoning MaxSummons="0" KillLowestHPOnOversummoning="0" SummonsSuicideWhenMasterDies="1" HUDPortraitIcon="../u_resources/spells/summon_portraits/huntingswarm_Fire.png">
       <SummonedSpawnClass Key="Base" Name="SC_SkillSummon_Ranged_Fire" />
     </Summoning>
+    <ParticleList>
+      <Particle Key="teleport_in" Name="U_Summons.Teleport.Teleport_In_Fire" Direction="0,1,0" Offset="0,0,0" Bone="Bip01" />
+      <Particle Key="teleport_out" Name="U_Summons.Teleport.Teleport_Out_Fire" Bone="Bip01 Pelvis" Direction="0,0,1" Offset="0,0,-0.4" Delay="0.1" Scale="0.8" />
+    </ParticleList>
   </Skill>
   <Skill UID="player_summon_ranged_variant_18" ESkill="default_variant">
     <HUD UIName="@ui_Variant_SummonRanged_variant_18" Lore="@ui_Variant_SummonRanged_variant_18_lore" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_Alpha.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_Alpha.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_Alpha.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_Alpha.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_Alpha.png" HUDPictureVariant_InnerIcon="../u_resources/spells/Active_Skills/Huntingswarm_Aether.png" ShowParamsInTooltip="SpecificSummon" HUDPicture="../u_resources/spells/Active_Skills/Huntingswarm_Aether.png" VariantBottomPanel="1" />
     <Specific_Summon Type="umbra" />
     <WeaponRequirements Requirements="magic,umbra" />
-    <Summoning MaxSummons="0" KillLowestHPOnOversummoning="0" SummonsSuicideWhenMasterDies="1">
+    <Summoning MaxSummons="0" KillLowestHPOnOversummoning="0" SummonsSuicideWhenMasterDies="1" HUDPortraitIcon="../u_resources/spells/summon_portraits/huntingswarm_Aether.png">
       <SummonedSpawnClass Key="Base" Name="SC_SkillSummon_Ranged_Aether" />
     </Summoning>
+    <ParticleList>
+      <Particle Key="teleport_in" Name="U_Summons.Teleport.Teleport_In_Aether" Direction="0,1,0" Offset="0,0,0" Bone="Bip01" />
+      <Particle Key="teleport_out" Name="U_Summons.Teleport.Teleport_Out_Aether" Bone="Bip01 Pelvis" Direction="0,0,1" Offset="0,0,-0.4" Delay="0.1" Scale="0.8" />
+    </ParticleList>
   </Skill>
   <Skill UID="player_summon_Ranged_variant_19" ESkill="default_variant">
-    <HUD UIName="@ui_Variant_SummonRanged_variant_19" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_001.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_001.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_001.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_001.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_001.png" ShowParamsInTooltip="SpecificSummon" />
+    <HUD UIName="@ui_Variant_SummonRanged_variant_19" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_001.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_001.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_001.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_001.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_001.png" ShowParamsInTooltip="SpecificSummon" Category="Combat" />
     <Specific_Summon>
       <PermanentBuffs Key="Damage5" Name="SummonBuff_Damage_Ranged_5" />
     </Specific_Summon>
   </Skill>
   <Skill UID="player_summon_Ranged_variant_20" ESkill="default_variant">
-    <HUD UIName="@ui_Variant_SummonRanged_variant_20" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_001.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_001.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_001.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_001.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_001.png" ShowParamsInTooltip="SpecificSummon" />
+    <HUD UIName="@ui_Variant_SummonRanged_variant_20" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_001.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_001.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_001.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_001.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_001.png" ShowParamsInTooltip="SpecificSummon" Category="Survival" />
     <Specific_Summon>
       <PermanentBuffs Key="Health4" Name="SummonBuff_Life_Ranged_4" />
     </Specific_Summon>
   </Skill>
   <Skill UID="player_summon_Ranged_variant_21" ESkill="default_variant">
-    <HUD UIName="@ui_Variant_SummonRanged_variant_21" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_001.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_001.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_001.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_001.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_001.png" ShowParamsInTooltip="SpecificSummon" />
+    <HUD UIName="@ui_Variant_SummonRanged_variant_21" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_001.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_001.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_001.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_001.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_001.png" ShowParamsInTooltip="SpecificSummon" Category="Combat" />
     <Specific_Summon>
-      <PermanentBuffs Key="AttackSpeed" Name="SummonBuff_Attackspeed_Ranged_1" />
+      <PermanentBuffs Key="AttackSpeed" Name="SummonBuff_AttackSpeed_Ranged_1" />
     </Specific_Summon>
   </Skill>
   <Skill UID="player_summon_ranged_variant_1,player_summon_ranged_variant_5" ESkill="default_variant_combo">
@@ -187,5 +214,10 @@
     <Summoning MaxSummons="0" KillLowestHPOnOversummoning="0" SummonsSuicideWhenMasterDies="1">
       <SummonedSpawnClass Key="Base" Name="SC_SkillSummon_Ranged_Explosive_Aether" />
     </Summoning>
+  </Skill>
+  <Skill UID="player_summon_ranged_variant_1,player_summon_ranged_variant_3" ESkill="default_variant_combo">
+    <Specific_Summon>
+      <SummonedSkills UID="summon_ranged_leapshot_withIncreasedAttackSpeedExplosive" OnEvent="SummonCapacityReached" />
+    </Specific_Summon>
   </Skill>
 </MetaData>

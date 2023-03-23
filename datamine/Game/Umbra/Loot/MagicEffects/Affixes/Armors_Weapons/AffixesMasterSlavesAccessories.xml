@@ -1,7 +1,7 @@
 <MetaData>
   <Affix AffixId="ac_master_health_pts_1" Class="health_pts" AffixType="prefix" Tier="1">
     <Enslaved EnslavedClass="slave_accessory_1" />
-    <DropParams Frequency="10000" Hunt="1">
+    <DropParams Frequency="10000" AffixOrigin="Hunt">
       <ItemLevel LevelMin="1" LevelMax="30" />
       <Keywords OptionalKeywords="belt,amulet,ring" MandatoryKeywords="accessory" />
       <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
@@ -13,7 +13,7 @@
   </Affix>
   <Affix AffixId="ac_master_health_pts_2" Class="health_pts" AffixType="prefix" Tier="2">
     <Enslaved EnslavedClass="slave_accessory_2" />
-    <DropParams Frequency="10000" Hunt="1">
+    <DropParams Frequency="10000" AffixOrigin="Hunt">
       <ItemLevel LevelMin="10" LevelMax="40" />
       <Keywords OptionalKeywords="belt,amulet,ring" MandatoryKeywords="accessory" />
       <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
@@ -25,7 +25,7 @@
   </Affix>
   <Affix AffixId="ac_master_health_pts_3" Class="health_pts" AffixType="prefix" Tier="3">
     <Enslaved EnslavedClass="slave_accessory_3" />
-    <DropParams Frequency="10000" Hunt="1">
+    <DropParams Frequency="10000" AffixOrigin="Hunt">
       <ItemLevel LevelMin="20" LevelMax="50" />
       <Keywords OptionalKeywords="belt,amulet,ring" MandatoryKeywords="accessory" />
       <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
@@ -37,7 +37,7 @@
   </Affix>
   <Affix AffixId="ac_master_health_pts_4" Class="health_pts" AffixType="prefix" Tier="4">
     <Enslaved EnslavedClass="slave_accessory_4" />
-    <DropParams Frequency="10000" Hunt="1">
+    <DropParams Frequency="10000" AffixOrigin="Hunt">
       <ItemLevel LevelMin="30" LevelMax="60" />
       <Keywords OptionalKeywords="belt,amulet,ring" MandatoryKeywords="accessory" />
       <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
@@ -49,8 +49,8 @@
   </Affix>
   <Affix AffixId="ac_master_health_pts_5" Class="health_pts" AffixType="prefix" Tier="5">
     <Enslaved EnslavedClass="slave_accessory_5" />
-    <DropParams Frequency="10000" Hunt="1">
-      <ItemLevel LevelMin="40" LevelMax="120" />
+    <DropParams Frequency="10000" AffixOrigin="Hunt">
+      <ItemLevel LevelMin="40" LevelMax="80" />
       <Keywords OptionalKeywords="belt,amulet,ring" MandatoryKeywords="accessory" />
       <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
     </DropParams>
@@ -61,8 +61,8 @@
   </Affix>
   <Affix AffixId="ac_master_health_pts_6" Class="health_pts" AffixType="prefix" Tier="6">
     <Enslaved EnslavedClass="slave_accessory_6" />
-    <DropParams Frequency="10000" Hunt="1">
-      <ItemLevel LevelMin="50" LevelMax="130" />
+    <DropParams Frequency="10000" AffixOrigin="Hunt">
+      <ItemLevel LevelMin="70" LevelMax="100" />
       <Keywords OptionalKeywords="belt,amulet,ring" MandatoryKeywords="accessory" />
       <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
     </DropParams>
@@ -73,8 +73,8 @@
   </Affix>
   <Affix AffixId="ac_master_health_pts_7" Class="health_pts" AffixType="prefix" Tier="7">
     <Enslaved EnslavedClass="slave_accessory_7" />
-    <DropParams Frequency="10000" Hunt="1">
-      <ItemLevel LevelMin="60" LevelMax="140" />
+    <DropParams Frequency="10000" AffixOrigin="Hunt">
+      <ItemLevel LevelMin="90" LevelMax="140" />
       <Keywords OptionalKeywords="belt,amulet,ring" MandatoryKeywords="accessory" />
       <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
     </DropParams>
@@ -85,8 +85,8 @@
   </Affix>
   <Affix AffixId="ac_master_health_pts_8" Class="health_pts" AffixType="prefix" Tier="8">
     <Enslaved EnslavedClass="slave_accessory_8" />
-    <DropParams Frequency="10000" Hunt="1">
-      <ItemLevel LevelMin="70" LevelMax="150" />
+    <DropParams Frequency="10000" AffixOrigin="Hunt">
+      <ItemLevel LevelMin="130" LevelMax="200" />
       <Keywords OptionalKeywords="belt,amulet,ring" MandatoryKeywords="accessory" />
       <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
     </DropParams>
@@ -97,8 +97,8 @@
   </Affix>
   <Affix AffixId="ac_master_health_pts_9" Class="health_pts" AffixType="prefix" Tier="9">
     <Enslaved EnslavedClass="slave_accessory_9" />
-    <DropParams Frequency="10000" Hunt="1">
-      <ItemLevel LevelMin="80" LevelMax="150" />
+    <DropParams Frequency="10000" AffixOrigin="Hunt">
+      <ItemLevel LevelMin="150" LevelMax="250" />
       <Keywords OptionalKeywords="belt,amulet,ring" MandatoryKeywords="accessory" />
       <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
     </DropParams>
@@ -109,8 +109,8 @@
   </Affix>
   <Affix AffixId="ac_master_health_pts_10" Class="health_pts" AffixType="prefix" Tier="10">
     <Enslaved EnslavedClass="slave_accessory_10" />
-    <DropParams Frequency="10000" Hunt="1">
-      <ItemLevel LevelMin="90" LevelMax="200" />
+    <DropParams Frequency="10000" AffixOrigin="Hunt">
+      <ItemLevel LevelMin="170" LevelMax="250" />
       <Keywords OptionalKeywords="belt,amulet,ring" MandatoryKeywords="accessory" />
       <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
     </DropParams>
@@ -121,8 +121,8 @@
   </Affix>
   <Affix AffixId="ac_master_health_pts_11" Class="health_pts" AffixType="prefix" Tier="11">
     <Enslaved EnslavedClass="slave_accessory_11" />
-    <DropParams Frequency="10000" Hunt="1">
-      <ItemLevel LevelMin="100" LevelMax="200" />
+    <DropParams Frequency="10000" AffixOrigin="Hunt">
+      <ItemLevel LevelMin="190" LevelMax="300" />
       <Keywords OptionalKeywords="belt,amulet,ring" MandatoryKeywords="accessory" />
       <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
     </DropParams>
@@ -133,8 +133,8 @@
   </Affix>
   <Affix AffixId="ac_master_health_pts_12" Class="health_pts" AffixType="prefix" Tier="12">
     <Enslaved EnslavedClass="slave_accessory_12" />
-    <DropParams Frequency="10000" Hunt="1">
-      <ItemLevel LevelMin="110" LevelMax="200" />
+    <DropParams Frequency="10000" AffixOrigin="Hunt">
+      <ItemLevel LevelMin="190" LevelMax="300" />
       <Keywords OptionalKeywords="belt,amulet,ring" MandatoryKeywords="accessory" />
       <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
     </DropParams>
@@ -145,7 +145,7 @@
   </Affix>
   <Affix AffixId="ac_master_forceshield_pts_1" Class="forceshield_pts" AffixType="prefix" Tier="1">
     <Enslaved EnslavedClass="slave_accessory_1" />
-    <DropParams Frequency="10000" Hunt="1">
+    <DropParams Frequency="10000" AffixOrigin="Hunt">
       <ItemLevel LevelMin="1" LevelMax="30" />
       <Keywords OptionalKeywords="belt,amulet,ring" MandatoryKeywords="accessory" />
       <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
@@ -157,7 +157,7 @@
   </Affix>
   <Affix AffixId="ac_master_forceshield_pts_2" Class="forceshield_pts" AffixType="prefix" Tier="2">
     <Enslaved EnslavedClass="slave_accessory_2" />
-    <DropParams Frequency="10000" Hunt="1">
+    <DropParams Frequency="10000" AffixOrigin="Hunt">
       <ItemLevel LevelMin="10" LevelMax="40" />
       <Keywords OptionalKeywords="belt,amulet,ring" MandatoryKeywords="accessory" />
       <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
@@ -169,7 +169,7 @@
   </Affix>
   <Affix AffixId="ac_master_forceshield_pts_3" Class="forceshield_pts" AffixType="prefix" Tier="3">
     <Enslaved EnslavedClass="slave_accessory_3" />
-    <DropParams Frequency="10000" Hunt="1">
+    <DropParams Frequency="10000" AffixOrigin="Hunt">
       <ItemLevel LevelMin="20" LevelMax="50" />
       <Keywords OptionalKeywords="belt,amulet,ring" MandatoryKeywords="accessory" />
       <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
@@ -181,7 +181,7 @@
   </Affix>
   <Affix AffixId="ac_master_forceshield_pts_4" Class="forceshield_pts" AffixType="prefix" Tier="4">
     <Enslaved EnslavedClass="slave_accessory_4" />
-    <DropParams Frequency="10000" Hunt="1">
+    <DropParams Frequency="10000" AffixOrigin="Hunt">
       <ItemLevel LevelMin="30" LevelMax="60" />
       <Keywords OptionalKeywords="belt,amulet,ring" MandatoryKeywords="accessory" />
       <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
@@ -193,8 +193,8 @@
   </Affix>
   <Affix AffixId="ac_master_forceshield_pts_5" Class="forceshield_pts" AffixType="prefix" Tier="5">
     <Enslaved EnslavedClass="slave_accessory_5" />
-    <DropParams Frequency="10000" Hunt="1">
-      <ItemLevel LevelMin="40" LevelMax="120" />
+    <DropParams Frequency="10000" AffixOrigin="Hunt">
+      <ItemLevel LevelMin="40" LevelMax="80" />
       <Keywords OptionalKeywords="belt,amulet,ring" MandatoryKeywords="accessory" />
       <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
     </DropParams>
@@ -205,8 +205,8 @@
   </Affix>
   <Affix AffixId="ac_master_forceshield_pts_6" Class="forceshield_pts" AffixType="prefix" Tier="6">
     <Enslaved EnslavedClass="slave_accessory_6" />
-    <DropParams Frequency="10000" Hunt="1">
-      <ItemLevel LevelMin="50" LevelMax="130" />
+    <DropParams Frequency="10000" AffixOrigin="Hunt">
+      <ItemLevel LevelMin="70" LevelMax="100" />
       <Keywords OptionalKeywords="belt,amulet,ring" MandatoryKeywords="accessory" />
       <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
     </DropParams>
@@ -217,8 +217,8 @@
   </Affix>
   <Affix AffixId="ac_master_forceshield_pts_7" Class="forceshield_pts" AffixType="prefix" Tier="7">
     <Enslaved EnslavedClass="slave_accessory_7" />
-    <DropParams Frequency="10000" Hunt="1">
-      <ItemLevel LevelMin="60" LevelMax="140" />
+    <DropParams Frequency="10000" AffixOrigin="Hunt">
+      <ItemLevel LevelMin="90" LevelMax="140" />
       <Keywords OptionalKeywords="belt,amulet,ring" MandatoryKeywords="accessory" />
       <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
     </DropParams>
@@ -229,8 +229,8 @@
   </Affix>
   <Affix AffixId="ac_master_forceshield_pts_8" Class="forceshield_pts" AffixType="prefix" Tier="8">
     <Enslaved EnslavedClass="slave_accessory_8" />
-    <DropParams Frequency="10000" Hunt="1">
-      <ItemLevel LevelMin="70" LevelMax="150" />
+    <DropParams Frequency="10000" AffixOrigin="Hunt">
+      <ItemLevel LevelMin="130" LevelMax="200" />
       <Keywords OptionalKeywords="belt,amulet,ring" MandatoryKeywords="accessory" />
       <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
     </DropParams>
@@ -241,8 +241,8 @@
   </Affix>
   <Affix AffixId="ac_master_forceshield_pts_9" Class="forceshield_pts" AffixType="prefix" Tier="9">
     <Enslaved EnslavedClass="slave_accessory_9" />
-    <DropParams Frequency="10000" Hunt="1">
-      <ItemLevel LevelMin="80" LevelMax="150" />
+    <DropParams Frequency="10000" AffixOrigin="Hunt">
+      <ItemLevel LevelMin="150" LevelMax="250" />
       <Keywords OptionalKeywords="belt,amulet,ring" MandatoryKeywords="accessory" />
       <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
     </DropParams>
@@ -253,8 +253,8 @@
   </Affix>
   <Affix AffixId="ac_master_forceshield_pts_10" Class="forceshield_pts" AffixType="prefix" Tier="10">
     <Enslaved EnslavedClass="slave_accessory_10" />
-    <DropParams Frequency="10000" Hunt="1">
-      <ItemLevel LevelMin="90" LevelMax="200" />
+    <DropParams Frequency="10000" AffixOrigin="Hunt">
+      <ItemLevel LevelMin="170" LevelMax="250" />
       <Keywords OptionalKeywords="belt,amulet,ring" MandatoryKeywords="accessory" />
       <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
     </DropParams>
@@ -265,8 +265,8 @@
   </Affix>
   <Affix AffixId="ac_master_forceshield_pts_11" Class="forceshield_pts" AffixType="prefix" Tier="11">
     <Enslaved EnslavedClass="slave_accessory_11" />
-    <DropParams Frequency="10000" Hunt="1">
-      <ItemLevel LevelMin="100" LevelMax="200" />
+    <DropParams Frequency="10000" AffixOrigin="Hunt">
+      <ItemLevel LevelMin="190" LevelMax="300" />
       <Keywords OptionalKeywords="belt,amulet,ring" MandatoryKeywords="accessory" />
       <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
     </DropParams>
@@ -277,8 +277,8 @@
   </Affix>
   <Affix AffixId="ac_master_forceshield_pts_12" Class="forceshield_pts" AffixType="prefix" Tier="12">
     <Enslaved EnslavedClass="slave_accessory_12" />
-    <DropParams Frequency="10000" Hunt="1">
-      <ItemLevel LevelMin="110" LevelMax="200" />
+    <DropParams Frequency="10000" AffixOrigin="Hunt">
+      <ItemLevel LevelMin="190" LevelMax="300" />
       <Keywords OptionalKeywords="belt,amulet,ring" MandatoryKeywords="accessory" />
       <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
     </DropParams>
@@ -289,7 +289,7 @@
   </Affix>
   <Affix AffixId="ac_master_all_resistance_score_percent_1" Class="all_resistance_score_percent" AffixType="prefix" Tier="1">
     <Enslaved EnslavedClass="slave_accessory_1" />
-    <DropParams Frequency="10000" Hunt="1">
+    <DropParams Frequency="10000" AffixOrigin="Hunt">
       <ItemLevel LevelMin="1" LevelMax="30" />
       <Keywords OptionalKeywords="belt,amulet,ring" MandatoryKeywords="accessory" />
       <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
@@ -301,7 +301,7 @@
   </Affix>
   <Affix AffixId="ac_master_all_resistance_score_percent_2" Class="all_resistance_score_percent" AffixType="prefix" Tier="2">
     <Enslaved EnslavedClass="slave_accessory_2" />
-    <DropParams Frequency="10000" Hunt="1">
+    <DropParams Frequency="10000" AffixOrigin="Hunt">
       <ItemLevel LevelMin="10" LevelMax="40" />
       <Keywords OptionalKeywords="belt,amulet,ring" MandatoryKeywords="accessory" />
       <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
@@ -313,7 +313,7 @@
   </Affix>
   <Affix AffixId="ac_master_all_resistance_score_percent_3" Class="all_resistance_score_percent" AffixType="prefix" Tier="3">
     <Enslaved EnslavedClass="slave_accessory_3" />
-    <DropParams Frequency="10000" Hunt="1">
+    <DropParams Frequency="10000" AffixOrigin="Hunt">
       <ItemLevel LevelMin="20" LevelMax="50" />
       <Keywords OptionalKeywords="belt,amulet,ring" MandatoryKeywords="accessory" />
       <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
@@ -325,7 +325,7 @@
   </Affix>
   <Affix AffixId="ac_master_all_resistance_score_percent_4" Class="all_resistance_score_percent" AffixType="prefix" Tier="4">
     <Enslaved EnslavedClass="slave_accessory_4" />
-    <DropParams Frequency="10000" Hunt="1">
+    <DropParams Frequency="10000" AffixOrigin="Hunt">
       <ItemLevel LevelMin="30" LevelMax="60" />
       <Keywords OptionalKeywords="belt,amulet,ring" MandatoryKeywords="accessory" />
       <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
@@ -337,8 +337,8 @@
   </Affix>
   <Affix AffixId="ac_master_all_resistance_score_percent_5" Class="all_resistance_score_percent" AffixType="prefix" Tier="5">
     <Enslaved EnslavedClass="slave_accessory_5" />
-    <DropParams Frequency="10000" Hunt="1">
-      <ItemLevel LevelMin="40" LevelMax="120" />
+    <DropParams Frequency="10000" AffixOrigin="Hunt">
+      <ItemLevel LevelMin="40" LevelMax="80" />
       <Keywords OptionalKeywords="belt,amulet,ring" MandatoryKeywords="accessory" />
       <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
     </DropParams>
@@ -349,8 +349,8 @@
   </Affix>
   <Affix AffixId="ac_master_all_resistance_score_percent_6" Class="all_resistance_score_percent" AffixType="prefix" Tier="6">
     <Enslaved EnslavedClass="slave_accessory_6" />
-    <DropParams Frequency="10000" Hunt="1">
-      <ItemLevel LevelMin="50" LevelMax="130" />
+    <DropParams Frequency="10000" AffixOrigin="Hunt">
+      <ItemLevel LevelMin="70" LevelMax="100" />
       <Keywords OptionalKeywords="belt,amulet,ring" MandatoryKeywords="accessory" />
       <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
     </DropParams>
@@ -361,8 +361,8 @@
   </Affix>
   <Affix AffixId="ac_master_all_resistance_score_percent_7" Class="all_resistance_score_percent" AffixType="prefix" Tier="7">
     <Enslaved EnslavedClass="slave_accessory_7" />
-    <DropParams Frequency="10000" Hunt="1">
-      <ItemLevel LevelMin="60" LevelMax="140" />
+    <DropParams Frequency="10000" AffixOrigin="Hunt">
+      <ItemLevel LevelMin="90" LevelMax="140" />
       <Keywords OptionalKeywords="belt,amulet,ring" MandatoryKeywords="accessory" />
       <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
     </DropParams>
@@ -373,8 +373,8 @@
   </Affix>
   <Affix AffixId="ac_master_all_resistance_score_percent_8" Class="all_resistance_score_percent" AffixType="prefix" Tier="8">
     <Enslaved EnslavedClass="slave_accessory_8" />
-    <DropParams Frequency="10000" Hunt="1">
-      <ItemLevel LevelMin="70" LevelMax="150" />
+    <DropParams Frequency="10000" AffixOrigin="Hunt">
+      <ItemLevel LevelMin="130" LevelMax="200" />
       <Keywords OptionalKeywords="belt,amulet,ring" MandatoryKeywords="accessory" />
       <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
     </DropParams>
@@ -385,8 +385,8 @@
   </Affix>
   <Affix AffixId="ac_master_all_resistance_score_percent_9" Class="all_resistance_score_percent" AffixType="prefix" Tier="9">
     <Enslaved EnslavedClass="slave_accessory_9" />
-    <DropParams Frequency="10000" Hunt="1">
-      <ItemLevel LevelMin="80" LevelMax="150" />
+    <DropParams Frequency="10000" AffixOrigin="Hunt">
+      <ItemLevel LevelMin="150" LevelMax="250" />
       <Keywords OptionalKeywords="belt,amulet,ring" MandatoryKeywords="accessory" />
       <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
     </DropParams>
@@ -397,8 +397,8 @@
   </Affix>
   <Affix AffixId="ac_master_all_resistance_score_percent_10" Class="all_resistance_score_percent" AffixType="prefix" Tier="10">
     <Enslaved EnslavedClass="slave_accessory_10" />
-    <DropParams Frequency="10000" Hunt="1">
-      <ItemLevel LevelMin="90" LevelMax="200" />
+    <DropParams Frequency="10000" AffixOrigin="Hunt">
+      <ItemLevel LevelMin="170" LevelMax="250" />
       <Keywords OptionalKeywords="belt,amulet,ring" MandatoryKeywords="accessory" />
       <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
     </DropParams>
@@ -409,8 +409,8 @@
   </Affix>
   <Affix AffixId="ac_master_all_resistance_score_percent_11" Class="all_resistance_score_percent" AffixType="prefix" Tier="11">
     <Enslaved EnslavedClass="slave_accessory_11" />
-    <DropParams Frequency="10000" Hunt="1">
-      <ItemLevel LevelMin="100" LevelMax="200" />
+    <DropParams Frequency="10000" AffixOrigin="Hunt">
+      <ItemLevel LevelMin="190" LevelMax="300" />
       <Keywords OptionalKeywords="belt,amulet,ring" MandatoryKeywords="accessory" />
       <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
     </DropParams>
@@ -421,8 +421,8 @@
   </Affix>
   <Affix AffixId="ac_master_all_resistance_score_percent_12" Class="all_resistance_score_percent" AffixType="prefix" Tier="12">
     <Enslaved EnslavedClass="slave_accessory_12" />
-    <DropParams Frequency="10000" Hunt="1">
-      <ItemLevel LevelMin="110" LevelMax="200" />
+    <DropParams Frequency="10000" AffixOrigin="Hunt">
+      <ItemLevel LevelMin="190" LevelMax="300" />
       <Keywords OptionalKeywords="belt,amulet,ring" MandatoryKeywords="accessory" />
       <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
     </DropParams>
@@ -433,7 +433,7 @@
   </Affix>
   <Affix AffixId="ac_master_global_critical_strike_damage_1" Class="criticaldamage" AffixType="suffix" Tier="1">
     <Enslaved EnslavedClass="slave_accessory_1" />
-    <DropParams Frequency="10000" Hunt="1">
+    <DropParams Frequency="10000" AffixOrigin="Hunt">
       <ItemLevel LevelMin="1" LevelMax="30" />
       <Keywords OptionalKeywords="belt,amulet,ring" MandatoryKeywords="accessory" />
       <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
@@ -445,7 +445,7 @@
   </Affix>
   <Affix AffixId="ac_master_global_critical_strike_damage_2" Class="criticaldamage" AffixType="suffix" Tier="2">
     <Enslaved EnslavedClass="slave_accessory_2" />
-    <DropParams Frequency="10000" Hunt="1">
+    <DropParams Frequency="10000" AffixOrigin="Hunt">
       <ItemLevel LevelMin="10" LevelMax="40" />
       <Keywords OptionalKeywords="belt,amulet,ring" MandatoryKeywords="accessory" />
       <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
@@ -457,7 +457,7 @@
   </Affix>
   <Affix AffixId="ac_master_global_critical_strike_damage_3" Class="criticaldamage" AffixType="suffix" Tier="3">
     <Enslaved EnslavedClass="slave_accessory_3" />
-    <DropParams Frequency="10000" Hunt="1">
+    <DropParams Frequency="10000" AffixOrigin="Hunt">
       <ItemLevel LevelMin="20" LevelMax="50" />
       <Keywords OptionalKeywords="belt,amulet,ring" MandatoryKeywords="accessory" />
       <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
@@ -469,7 +469,7 @@
   </Affix>
   <Affix AffixId="ac_master_global_critical_strike_damage_4" Class="criticaldamage" AffixType="suffix" Tier="4">
     <Enslaved EnslavedClass="slave_accessory_4" />
-    <DropParams Frequency="10000" Hunt="1">
+    <DropParams Frequency="10000" AffixOrigin="Hunt">
       <ItemLevel LevelMin="30" LevelMax="60" />
       <Keywords OptionalKeywords="belt,amulet,ring" MandatoryKeywords="accessory" />
       <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
@@ -481,8 +481,8 @@
   </Affix>
   <Affix AffixId="ac_master_global_critical_strike_damage_5" Class="criticaldamage" AffixType="suffix" Tier="5">
     <Enslaved EnslavedClass="slave_accessory_5" />
-    <DropParams Frequency="10000" Hunt="1">
-      <ItemLevel LevelMin="40" LevelMax="120" />
+    <DropParams Frequency="10000" AffixOrigin="Hunt">
+      <ItemLevel LevelMin="40" LevelMax="80" />
       <Keywords OptionalKeywords="belt,amulet,ring" MandatoryKeywords="accessory" />
       <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
     </DropParams>
@@ -493,8 +493,8 @@
   </Affix>
   <Affix AffixId="ac_master_global_critical_strike_damage_6" Class="criticaldamage" AffixType="suffix" Tier="6">
     <Enslaved EnslavedClass="slave_accessory_6" />
-    <DropParams Frequency="10000" Hunt="1">
-      <ItemLevel LevelMin="50" LevelMax="130" />
+    <DropParams Frequency="10000" AffixOrigin="Hunt">
+      <ItemLevel LevelMin="70" LevelMax="100" />
       <Keywords OptionalKeywords="belt,amulet,ring" MandatoryKeywords="accessory" />
       <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
     </DropParams>
@@ -505,8 +505,8 @@
   </Affix>
   <Affix AffixId="ac_master_global_critical_strike_damage_7" Class="criticaldamage" AffixType="suffix" Tier="7">
     <Enslaved EnslavedClass="slave_accessory_7" />
-    <DropParams Frequency="10000" Hunt="1">
-      <ItemLevel LevelMin="60" LevelMax="140" />
+    <DropParams Frequency="10000" AffixOrigin="Hunt">
+      <ItemLevel LevelMin="90" LevelMax="140" />
       <Keywords OptionalKeywords="belt,amulet,ring" MandatoryKeywords="accessory" />
       <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
     </DropParams>
@@ -517,8 +517,8 @@
   </Affix>
   <Affix AffixId="ac_master_global_critical_strike_damage_8" Class="criticaldamage" AffixType="suffix" Tier="8">
     <Enslaved EnslavedClass="slave_accessory_8" />
-    <DropParams Frequency="10000" Hunt="1">
-      <ItemLevel LevelMin="70" LevelMax="150" />
+    <DropParams Frequency="10000" AffixOrigin="Hunt">
+      <ItemLevel LevelMin="130" LevelMax="200" />
       <Keywords OptionalKeywords="belt,amulet,ring" MandatoryKeywords="accessory" />
       <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
     </DropParams>
@@ -529,8 +529,8 @@
   </Affix>
   <Affix AffixId="ac_master_global_critical_strike_damage_9" Class="criticaldamage" AffixType="suffix" Tier="9">
     <Enslaved EnslavedClass="slave_accessory_9" />
-    <DropParams Frequency="10000" Hunt="1">
-      <ItemLevel LevelMin="80" LevelMax="150" />
+    <DropParams Frequency="10000" AffixOrigin="Hunt">
+      <ItemLevel LevelMin="150" LevelMax="250" />
       <Keywords OptionalKeywords="belt,amulet,ring" MandatoryKeywords="accessory" />
       <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
     </DropParams>
@@ -541,8 +541,8 @@
   </Affix>
   <Affix AffixId="ac_master_global_critical_strike_damage_10" Class="criticaldamage" AffixType="suffix" Tier="10">
     <Enslaved EnslavedClass="slave_accessory_10" />
-    <DropParams Frequency="10000" Hunt="1">
-      <ItemLevel LevelMin="90" LevelMax="200" />
+    <DropParams Frequency="10000" AffixOrigin="Hunt">
+      <ItemLevel LevelMin="170" LevelMax="250" />
       <Keywords OptionalKeywords="belt,amulet,ring" MandatoryKeywords="accessory" />
       <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
     </DropParams>
@@ -553,8 +553,8 @@
   </Affix>
   <Affix AffixId="ac_master_global_critical_strike_damage_11" Class="criticaldamage" AffixType="suffix" Tier="11">
     <Enslaved EnslavedClass="slave_accessory_11" />
-    <DropParams Frequency="10000" Hunt="1">
-      <ItemLevel LevelMin="100" LevelMax="200" />
+    <DropParams Frequency="10000" AffixOrigin="Hunt">
+      <ItemLevel LevelMin="190" LevelMax="300" />
       <Keywords OptionalKeywords="belt,amulet,ring" MandatoryKeywords="accessory" />
       <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
     </DropParams>
@@ -565,8 +565,8 @@
   </Affix>
   <Affix AffixId="ac_master_global_critical_strike_damage_12" Class="criticaldamage" AffixType="suffix" Tier="12">
     <Enslaved EnslavedClass="slave_accessory_12" />
-    <DropParams Frequency="10000" Hunt="1">
-      <ItemLevel LevelMin="110" LevelMax="200" />
+    <DropParams Frequency="10000" AffixOrigin="Hunt">
+      <ItemLevel LevelMin="190" LevelMax="300" />
       <Keywords OptionalKeywords="belt,amulet,ring" MandatoryKeywords="accessory" />
       <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
     </DropParams>
@@ -626,7 +626,7 @@
   <Affix AffixId="ac_master_transfer_time_percent_5" Class="CraftAffix" AffixType="suffix" Tier="5">
     <Enslaved EnslavedClass="slave_accessory_5" />
     <DropParams Frequency="0" CraftOnly="1">
-      <ItemLevel LevelMin="40" LevelMax="120" />
+      <ItemLevel LevelMin="40" LevelMax="80" />
       <Keywords OptionalKeywords="belt,amulet,ring" MandatoryKeywords="accessory" />
       <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
     </DropParams>
@@ -638,7 +638,7 @@
   <Affix AffixId="ac_master_transfer_time_percent_6" Class="CraftAffix" AffixType="suffix" Tier="6">
     <Enslaved EnslavedClass="slave_accessory_6" />
     <DropParams Frequency="0" CraftOnly="1">
-      <ItemLevel LevelMin="50" LevelMax="130" />
+      <ItemLevel LevelMin="70" LevelMax="100" />
       <Keywords OptionalKeywords="belt,amulet,ring" MandatoryKeywords="accessory" />
       <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
     </DropParams>
@@ -650,7 +650,7 @@
   <Affix AffixId="ac_master_transfer_time_percent_7" Class="CraftAffix" AffixType="suffix" Tier="7">
     <Enslaved EnslavedClass="slave_accessory_7" />
     <DropParams Frequency="0" CraftOnly="1">
-      <ItemLevel LevelMin="60" LevelMax="140" />
+      <ItemLevel LevelMin="90" LevelMax="140" />
       <Keywords OptionalKeywords="belt,amulet,ring" MandatoryKeywords="accessory" />
       <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
     </DropParams>
@@ -662,7 +662,7 @@
   <Affix AffixId="ac_master_transfer_time_percent_8" Class="CraftAffix" AffixType="suffix" Tier="8">
     <Enslaved EnslavedClass="slave_accessory_8" />
     <DropParams Frequency="0" CraftOnly="1">
-      <ItemLevel LevelMin="70" LevelMax="150" />
+      <ItemLevel LevelMin="130" LevelMax="200" />
       <Keywords OptionalKeywords="belt,amulet,ring" MandatoryKeywords="accessory" />
       <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
     </DropParams>
@@ -674,7 +674,7 @@
   <Affix AffixId="ac_master_transfer_time_percent_9" Class="CraftAffix" AffixType="suffix" Tier="9">
     <Enslaved EnslavedClass="slave_accessory_9" />
     <DropParams Frequency="0" CraftOnly="1">
-      <ItemLevel LevelMin="80" LevelMax="150" />
+      <ItemLevel LevelMin="150" LevelMax="250" />
       <Keywords OptionalKeywords="belt,amulet,ring" MandatoryKeywords="accessory" />
       <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
     </DropParams>
@@ -686,7 +686,7 @@
   <Affix AffixId="ac_master_transfer_time_percent_10" Class="CraftAffix" AffixType="suffix" Tier="10">
     <Enslaved EnslavedClass="slave_accessory_10" />
     <DropParams Frequency="0" CraftOnly="1">
-      <ItemLevel LevelMin="90" LevelMax="200" />
+      <ItemLevel LevelMin="170" LevelMax="250" />
       <Keywords OptionalKeywords="belt,amulet,ring" MandatoryKeywords="accessory" />
       <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
     </DropParams>
@@ -698,7 +698,7 @@
   <Affix AffixId="ac_master_transfer_time_percent_11" Class="CraftAffix" AffixType="suffix" Tier="11">
     <Enslaved EnslavedClass="slave_accessory_11" />
     <DropParams Frequency="0" CraftOnly="1">
-      <ItemLevel LevelMin="100" LevelMax="200" />
+      <ItemLevel LevelMin="190" LevelMax="300" />
       <Keywords OptionalKeywords="belt,amulet,ring" MandatoryKeywords="accessory" />
       <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
     </DropParams>
@@ -710,7 +710,7 @@
   <Affix AffixId="ac_master_transfer_time_percent_12" Class="CraftAffix" AffixType="suffix" Tier="12">
     <Enslaved EnslavedClass="slave_accessory_12" />
     <DropParams Frequency="0" CraftOnly="1">
-      <ItemLevel LevelMin="110" LevelMax="200" />
+      <ItemLevel LevelMin="190" LevelMax="300" />
       <Keywords OptionalKeywords="belt,amulet,ring" MandatoryKeywords="accessory" />
       <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
     </DropParams>
@@ -721,7 +721,7 @@
   </Affix>
   <Affix AffixId="ac_master_damage_percent_1" Class="damagepercent" AffixType="prefix" Tier="1">
     <Enslaved EnslavedClass="slave_accessory_1" />
-    <DropParams Frequency="10000" Hunt="1">
+    <DropParams Frequency="10000" AffixOrigin="Hunt">
       <ItemLevel LevelMin="1" LevelMax="30" />
       <Keywords OptionalKeywords="belt,amulet,ring" MandatoryKeywords="accessory" />
       <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
@@ -733,7 +733,7 @@
   </Affix>
   <Affix AffixId="ac_master_damage_percent_2" Class="damagepercent" AffixType="prefix" Tier="2">
     <Enslaved EnslavedClass="slave_accessory_2" />
-    <DropParams Frequency="10000" Hunt="1">
+    <DropParams Frequency="10000" AffixOrigin="Hunt">
       <ItemLevel LevelMin="10" LevelMax="40" />
       <Keywords OptionalKeywords="belt,amulet,ring" MandatoryKeywords="accessory" />
       <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
@@ -745,7 +745,7 @@
   </Affix>
   <Affix AffixId="ac_master_damage_percent_3" Class="damagepercent" AffixType="prefix" Tier="3">
     <Enslaved EnslavedClass="slave_accessory_3" />
-    <DropParams Frequency="10000" Hunt="1">
+    <DropParams Frequency="10000" AffixOrigin="Hunt">
       <ItemLevel LevelMin="20" LevelMax="50" />
       <Keywords OptionalKeywords="belt,amulet,ring" MandatoryKeywords="accessory" />
       <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
@@ -757,7 +757,7 @@
   </Affix>
   <Affix AffixId="ac_master_damage_percent_4" Class="damagepercent" AffixType="prefix" Tier="4">
     <Enslaved EnslavedClass="slave_accessory_4" />
-    <DropParams Frequency="10000" Hunt="1">
+    <DropParams Frequency="10000" AffixOrigin="Hunt">
       <ItemLevel LevelMin="30" LevelMax="60" />
       <Keywords OptionalKeywords="belt,amulet,ring" MandatoryKeywords="accessory" />
       <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
@@ -769,8 +769,8 @@
   </Affix>
   <Affix AffixId="ac_master_damage_percent_5" Class="damagepercent" AffixType="prefix" Tier="5">
     <Enslaved EnslavedClass="slave_accessory_5" />
-    <DropParams Frequency="10000" Hunt="1">
-      <ItemLevel LevelMin="40" LevelMax="120" />
+    <DropParams Frequency="10000" AffixOrigin="Hunt">
+      <ItemLevel LevelMin="40" LevelMax="80" />
       <Keywords OptionalKeywords="belt,amulet,ring" MandatoryKeywords="accessory" />
       <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
     </DropParams>
@@ -781,8 +781,8 @@
   </Affix>
   <Affix AffixId="ac_master_damage_percent_6" Class="damagepercent" AffixType="prefix" Tier="6">
     <Enslaved EnslavedClass="slave_accessory_6" />
-    <DropParams Frequency="10000" Hunt="1">
-      <ItemLevel LevelMin="50" LevelMax="130" />
+    <DropParams Frequency="10000" AffixOrigin="Hunt">
+      <ItemLevel LevelMin="70" LevelMax="100" />
       <Keywords OptionalKeywords="belt,amulet,ring" MandatoryKeywords="accessory" />
       <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
     </DropParams>
@@ -793,8 +793,8 @@
   </Affix>
   <Affix AffixId="ac_master_damage_percent_7" Class="damagepercent" AffixType="prefix" Tier="7">
     <Enslaved EnslavedClass="slave_accessory_7" />
-    <DropParams Frequency="10000" Hunt="1">
-      <ItemLevel LevelMin="60" LevelMax="140" />
+    <DropParams Frequency="10000" AffixOrigin="Hunt">
+      <ItemLevel LevelMin="90" LevelMax="140" />
       <Keywords OptionalKeywords="belt,amulet,ring" MandatoryKeywords="accessory" />
       <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
     </DropParams>
@@ -805,8 +805,8 @@
   </Affix>
   <Affix AffixId="ac_master_damage_percent_8" Class="damagepercent" AffixType="prefix" Tier="8">
     <Enslaved EnslavedClass="slave_accessory_8" />
-    <DropParams Frequency="10000" Hunt="1">
-      <ItemLevel LevelMin="70" LevelMax="150" />
+    <DropParams Frequency="10000" AffixOrigin="Hunt">
+      <ItemLevel LevelMin="130" LevelMax="200" />
       <Keywords OptionalKeywords="belt,amulet,ring" MandatoryKeywords="accessory" />
       <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
     </DropParams>
@@ -817,8 +817,8 @@
   </Affix>
   <Affix AffixId="ac_master_damage_percent_9" Class="damagepercent" AffixType="prefix" Tier="9">
     <Enslaved EnslavedClass="slave_accessory_9" />
-    <DropParams Frequency="10000" Hunt="1">
-      <ItemLevel LevelMin="80" LevelMax="160" />
+    <DropParams Frequency="10000" AffixOrigin="Hunt">
+      <ItemLevel LevelMin="150" LevelMax="250" />
       <Keywords OptionalKeywords="belt,amulet,ring" MandatoryKeywords="accessory" />
       <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
     </DropParams>
@@ -829,8 +829,8 @@
   </Affix>
   <Affix AffixId="ac_master_damage_percent_10" Class="damagepercent" AffixType="prefix" Tier="10">
     <Enslaved EnslavedClass="slave_accessory_10" />
-    <DropParams Frequency="10000" Hunt="1">
-      <ItemLevel LevelMin="90" LevelMax="200" />
+    <DropParams Frequency="10000" AffixOrigin="Hunt">
+      <ItemLevel LevelMin="170" LevelMax="250" />
       <Keywords OptionalKeywords="belt,amulet,ring" MandatoryKeywords="accessory" />
       <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
     </DropParams>
@@ -841,8 +841,8 @@
   </Affix>
   <Affix AffixId="ac_master_damage_percent_11" Class="damagepercent" AffixType="prefix" Tier="11">
     <Enslaved EnslavedClass="slave_accessory_11" />
-    <DropParams Frequency="10000" Hunt="1">
-      <ItemLevel LevelMin="100" LevelMax="200" />
+    <DropParams Frequency="10000" AffixOrigin="Hunt">
+      <ItemLevel LevelMin="190" LevelMax="300" />
       <Keywords OptionalKeywords="belt,amulet,ring" MandatoryKeywords="accessory" />
       <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
     </DropParams>
@@ -853,8 +853,8 @@
   </Affix>
   <Affix AffixId="ac_master_damage_percent_12" Class="damagepercent" AffixType="prefix" Tier="12">
     <Enslaved EnslavedClass="slave_accessory_12" />
-    <DropParams Frequency="10000" Hunt="1">
-      <ItemLevel LevelMin="110" LevelMax="200" />
+    <DropParams Frequency="10000" AffixOrigin="Hunt">
+      <ItemLevel LevelMin="190" LevelMax="300" />
       <Keywords OptionalKeywords="belt,amulet,ring" MandatoryKeywords="accessory" />
       <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
     </DropParams>
@@ -865,7 +865,7 @@
   </Affix>
   <Affix AffixId="ac_master_offensivespeed_score_percent_1" Class="offensivespeed" AffixType="suffix" Tier="1">
     <Enslaved EnslavedClass="slave_accessory_1" />
-    <DropParams Frequency="10000" Hunt="1">
+    <DropParams Frequency="10000" AffixOrigin="Hunt">
       <ItemLevel LevelMin="1" LevelMax="30" />
       <Keywords OptionalKeywords="belt,amulet,ring" MandatoryKeywords="accessory" />
       <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
@@ -877,7 +877,7 @@
   </Affix>
   <Affix AffixId="ac_master_offensivespeed_score_percent_2" Class="offensivespeed" AffixType="suffix" Tier="2">
     <Enslaved EnslavedClass="slave_accessory_2" />
-    <DropParams Frequency="10000" Hunt="1">
+    <DropParams Frequency="10000" AffixOrigin="Hunt">
       <ItemLevel LevelMin="10" LevelMax="40" />
       <Keywords OptionalKeywords="belt,amulet,ring" MandatoryKeywords="accessory" />
       <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
@@ -889,7 +889,7 @@
   </Affix>
   <Affix AffixId="ac_master_offensivespeed_score_percent_3" Class="offensivespeed" AffixType="suffix" Tier="3">
     <Enslaved EnslavedClass="slave_accessory_3" />
-    <DropParams Frequency="10000" Hunt="1">
+    <DropParams Frequency="10000" AffixOrigin="Hunt">
       <ItemLevel LevelMin="20" LevelMax="50" />
       <Keywords OptionalKeywords="belt,amulet,ring" MandatoryKeywords="accessory" />
       <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
@@ -901,7 +901,7 @@
   </Affix>
   <Affix AffixId="ac_master_offensivespeed_score_percent_4" Class="offensivespeed" AffixType="suffix" Tier="4">
     <Enslaved EnslavedClass="slave_accessory_4" />
-    <DropParams Frequency="10000" Hunt="1">
+    <DropParams Frequency="10000" AffixOrigin="Hunt">
       <ItemLevel LevelMin="30" LevelMax="60" />
       <Keywords OptionalKeywords="belt,amulet,ring" MandatoryKeywords="accessory" />
       <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
@@ -913,8 +913,8 @@
   </Affix>
   <Affix AffixId="ac_master_offensivespeed_score_percent_5" Class="offensivespeed" AffixType="suffix" Tier="5">
     <Enslaved EnslavedClass="slave_accessory_5" />
-    <DropParams Frequency="10000" Hunt="1">
-      <ItemLevel LevelMin="40" LevelMax="120" />
+    <DropParams Frequency="10000" AffixOrigin="Hunt">
+      <ItemLevel LevelMin="40" LevelMax="80" />
       <Keywords OptionalKeywords="belt,amulet,ring" MandatoryKeywords="accessory" />
       <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
     </DropParams>
@@ -925,8 +925,8 @@
   </Affix>
   <Affix AffixId="ac_master_offensivespeed_score_percent_6" Class="offensivespeed" AffixType="suffix" Tier="6">
     <Enslaved EnslavedClass="slave_accessory_6" />
-    <DropParams Frequency="10000" Hunt="1">
-      <ItemLevel LevelMin="50" LevelMax="130" />
+    <DropParams Frequency="10000" AffixOrigin="Hunt">
+      <ItemLevel LevelMin="70" LevelMax="100" />
       <Keywords OptionalKeywords="belt,amulet,ring" MandatoryKeywords="accessory" />
       <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
     </DropParams>
@@ -937,8 +937,8 @@
   </Affix>
   <Affix AffixId="ac_master_offensivespeed_score_percent_7" Class="offensivespeed" AffixType="suffix" Tier="7">
     <Enslaved EnslavedClass="slave_accessory_7" />
-    <DropParams Frequency="10000" Hunt="1">
-      <ItemLevel LevelMin="60" LevelMax="140" />
+    <DropParams Frequency="10000" AffixOrigin="Hunt">
+      <ItemLevel LevelMin="90" LevelMax="140" />
       <Keywords OptionalKeywords="belt,amulet,ring" MandatoryKeywords="accessory" />
       <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
     </DropParams>
@@ -949,8 +949,8 @@
   </Affix>
   <Affix AffixId="ac_master_offensivespeed_score_percent_8" Class="offensivespeed" AffixType="suffix" Tier="8">
     <Enslaved EnslavedClass="slave_accessory_8" />
-    <DropParams Frequency="10000" Hunt="1">
-      <ItemLevel LevelMin="70" LevelMax="150" />
+    <DropParams Frequency="10000" AffixOrigin="Hunt">
+      <ItemLevel LevelMin="130" LevelMax="200" />
       <Keywords OptionalKeywords="belt,amulet,ring" MandatoryKeywords="accessory" />
       <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
     </DropParams>
@@ -961,8 +961,8 @@
   </Affix>
   <Affix AffixId="ac_master_offensivespeed_score_percent_9" Class="offensivespeed" AffixType="suffix" Tier="9">
     <Enslaved EnslavedClass="slave_accessory_9" />
-    <DropParams Frequency="10000" Hunt="1">
-      <ItemLevel LevelMin="80" LevelMax="160" />
+    <DropParams Frequency="10000" AffixOrigin="Hunt">
+      <ItemLevel LevelMin="150" LevelMax="250" />
       <Keywords OptionalKeywords="belt,amulet,ring" MandatoryKeywords="accessory" />
       <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
     </DropParams>
@@ -973,8 +973,8 @@
   </Affix>
   <Affix AffixId="ac_master_offensivespeed_score_percent_10" Class="offensivespeed" AffixType="suffix" Tier="10">
     <Enslaved EnslavedClass="slave_accessory_10" />
-    <DropParams Frequency="10000" Hunt="1">
-      <ItemLevel LevelMin="90" LevelMax="200" />
+    <DropParams Frequency="10000" AffixOrigin="Hunt">
+      <ItemLevel LevelMin="170" LevelMax="250" />
       <Keywords OptionalKeywords="belt,amulet,ring" MandatoryKeywords="accessory" />
       <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
     </DropParams>
@@ -985,8 +985,8 @@
   </Affix>
   <Affix AffixId="ac_master_offensivespeed_score_percent_11" Class="offensivespeed" AffixType="suffix" Tier="11">
     <Enslaved EnslavedClass="slave_accessory_11" />
-    <DropParams Frequency="10000" Hunt="1">
-      <ItemLevel LevelMin="100" LevelMax="200" />
+    <DropParams Frequency="10000" AffixOrigin="Hunt">
+      <ItemLevel LevelMin="190" LevelMax="300" />
       <Keywords OptionalKeywords="belt,amulet,ring" MandatoryKeywords="accessory" />
       <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
     </DropParams>
@@ -997,8 +997,8 @@
   </Affix>
   <Affix AffixId="ac_master_offensivespeed_score_percent_12" Class="offensivespeed" AffixType="suffix" Tier="12">
     <Enslaved EnslavedClass="slave_accessory_12" />
-    <DropParams Frequency="10000" Hunt="1">
-      <ItemLevel LevelMin="110" LevelMax="200" />
+    <DropParams Frequency="10000" AffixOrigin="Hunt">
+      <ItemLevel LevelMin="190" LevelMax="300" />
       <Keywords OptionalKeywords="belt,amulet,ring" MandatoryKeywords="accessory" />
       <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
     </DropParams>
@@ -1009,7 +1009,7 @@
   </Affix>
   <Affix AffixId="ac_master_life_leech_percent_global_1" Class="life_leech" AffixType="suffix" Tier="1">
     <Enslaved EnslavedClass="slave_accessory_1" />
-    <DropParams Frequency="10000" Hunt="1">
+    <DropParams Frequency="10000" AffixOrigin="Hunt">
       <ItemLevel LevelMin="1" LevelMax="30" />
       <Keywords OptionalKeywords="belt,amulet,ring" MandatoryKeywords="accessory" />
       <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
@@ -1021,7 +1021,7 @@
   </Affix>
   <Affix AffixId="ac_master_life_leech_percent_global_2" Class="life_leech" AffixType="suffix" Tier="2">
     <Enslaved EnslavedClass="slave_accessory_2" />
-    <DropParams Frequency="10000" Hunt="1">
+    <DropParams Frequency="10000" AffixOrigin="Hunt">
       <ItemLevel LevelMin="10" LevelMax="40" />
       <Keywords OptionalKeywords="belt,amulet,ring" MandatoryKeywords="accessory" />
       <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
@@ -1033,7 +1033,7 @@
   </Affix>
   <Affix AffixId="ac_master_life_leech_percent_global_3" Class="life_leech" AffixType="suffix" Tier="3">
     <Enslaved EnslavedClass="slave_accessory_3" />
-    <DropParams Frequency="10000" Hunt="1">
+    <DropParams Frequency="10000" AffixOrigin="Hunt">
       <ItemLevel LevelMin="20" LevelMax="50" />
       <Keywords OptionalKeywords="belt,amulet,ring" MandatoryKeywords="accessory" />
       <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
@@ -1045,7 +1045,7 @@
   </Affix>
   <Affix AffixId="ac_master_life_leech_percent_global_4" Class="life_leech" AffixType="suffix" Tier="4">
     <Enslaved EnslavedClass="slave_accessory_4" />
-    <DropParams Frequency="10000" Hunt="1">
+    <DropParams Frequency="10000" AffixOrigin="Hunt">
       <ItemLevel LevelMin="30" LevelMax="60" />
       <Keywords OptionalKeywords="belt,amulet,ring" MandatoryKeywords="accessory" />
       <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
@@ -1057,8 +1057,8 @@
   </Affix>
   <Affix AffixId="ac_master_life_leech_percent_global_5" Class="life_leech" AffixType="suffix" Tier="5">
     <Enslaved EnslavedClass="slave_accessory_5" />
-    <DropParams Frequency="10000" Hunt="1">
-      <ItemLevel LevelMin="40" LevelMax="120" />
+    <DropParams Frequency="10000" AffixOrigin="Hunt">
+      <ItemLevel LevelMin="40" LevelMax="80" />
       <Keywords OptionalKeywords="belt,amulet,ring" MandatoryKeywords="accessory" />
       <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
     </DropParams>
@@ -1069,8 +1069,8 @@
   </Affix>
   <Affix AffixId="ac_master_life_leech_percent_global_6" Class="life_leech" AffixType="suffix" Tier="6">
     <Enslaved EnslavedClass="slave_accessory_6" />
-    <DropParams Frequency="10000" Hunt="1">
-      <ItemLevel LevelMin="50" LevelMax="130" />
+    <DropParams Frequency="10000" AffixOrigin="Hunt">
+      <ItemLevel LevelMin="70" LevelMax="100" />
       <Keywords OptionalKeywords="belt,amulet,ring" MandatoryKeywords="accessory" />
       <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
     </DropParams>
@@ -1081,8 +1081,8 @@
   </Affix>
   <Affix AffixId="ac_master_life_leech_percent_global_7" Class="life_leech" AffixType="suffix" Tier="7">
     <Enslaved EnslavedClass="slave_accessory_7" />
-    <DropParams Frequency="10000" Hunt="1">
-      <ItemLevel LevelMin="60" LevelMax="140" />
+    <DropParams Frequency="10000" AffixOrigin="Hunt">
+      <ItemLevel LevelMin="90" LevelMax="140" />
       <Keywords OptionalKeywords="belt,amulet,ring" MandatoryKeywords="accessory" />
       <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
     </DropParams>
@@ -1093,8 +1093,8 @@
   </Affix>
   <Affix AffixId="ac_master_life_leech_percent_global_8" Class="life_leech" AffixType="suffix" Tier="8">
     <Enslaved EnslavedClass="slave_accessory_8" />
-    <DropParams Frequency="10000" Hunt="1">
-      <ItemLevel LevelMin="70" LevelMax="150" />
+    <DropParams Frequency="10000" AffixOrigin="Hunt">
+      <ItemLevel LevelMin="130" LevelMax="200" />
       <Keywords OptionalKeywords="belt,amulet,ring" MandatoryKeywords="accessory" />
       <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
     </DropParams>
@@ -1105,8 +1105,8 @@
   </Affix>
   <Affix AffixId="ac_master_life_leech_percent_global_9" Class="life_leech" AffixType="suffix" Tier="9">
     <Enslaved EnslavedClass="slave_accessory_9" />
-    <DropParams Frequency="10000" Hunt="1">
-      <ItemLevel LevelMin="80" LevelMax="150" />
+    <DropParams Frequency="10000" AffixOrigin="Hunt">
+      <ItemLevel LevelMin="150" LevelMax="250" />
       <Keywords OptionalKeywords="belt,amulet,ring" MandatoryKeywords="accessory" />
       <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
     </DropParams>
@@ -1117,8 +1117,8 @@
   </Affix>
   <Affix AffixId="ac_master_life_leech_percent_global_10" Class="life_leech" AffixType="suffix" Tier="10">
     <Enslaved EnslavedClass="slave_accessory_10" />
-    <DropParams Frequency="10000" Hunt="1">
-      <ItemLevel LevelMin="90" LevelMax="200" />
+    <DropParams Frequency="10000" AffixOrigin="Hunt">
+      <ItemLevel LevelMin="170" LevelMax="250" />
       <Keywords OptionalKeywords="belt,amulet,ring" MandatoryKeywords="accessory" />
       <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
     </DropParams>
@@ -1129,8 +1129,8 @@
   </Affix>
   <Affix AffixId="ac_master_life_leech_percent_global_11" Class="life_leech" AffixType="suffix" Tier="11">
     <Enslaved EnslavedClass="slave_accessory_11" />
-    <DropParams Frequency="10000" Hunt="1">
-      <ItemLevel LevelMin="100" LevelMax="200" />
+    <DropParams Frequency="10000" AffixOrigin="Hunt">
+      <ItemLevel LevelMin="190" LevelMax="300" />
       <Keywords OptionalKeywords="belt,amulet,ring" MandatoryKeywords="accessory" />
       <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
     </DropParams>
@@ -1141,8 +1141,8 @@
   </Affix>
   <Affix AffixId="ac_master_life_leech_percent_global_12" Class="life_leech" AffixType="suffix" Tier="12">
     <Enslaved EnslavedClass="slave_accessory_12" />
-    <DropParams Frequency="10000" Hunt="1">
-      <ItemLevel LevelMin="110" LevelMax="200" />
+    <DropParams Frequency="10000" AffixOrigin="Hunt">
+      <ItemLevel LevelMin="190" LevelMax="300" />
       <Keywords OptionalKeywords="belt,amulet,ring" MandatoryKeywords="accessory" />
       <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
     </DropParams>
@@ -1153,7 +1153,7 @@
   </Affix>
   <Affix AffixId="ac_master_attack_critical_strike_chance_1" Class="criticalchance" AffixType="suffix" Tier="1">
     <Enslaved EnslavedClass="slave_accessory_1" />
-    <DropParams Frequency="10000" Hunt="1">
+    <DropParams Frequency="10000" AffixOrigin="Hunt">
       <ItemLevel LevelMin="1" LevelMax="30" />
       <Keywords OptionalKeywords="belt,amulet" MandatoryKeywords="accessory" />
       <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
@@ -1165,7 +1165,7 @@
   </Affix>
   <Affix AffixId="ac_master_attack_critical_strike_chance_2" Class="criticalchance" AffixType="suffix" Tier="2">
     <Enslaved EnslavedClass="slave_accessory_2" />
-    <DropParams Frequency="10000" Hunt="1">
+    <DropParams Frequency="10000" AffixOrigin="Hunt">
       <ItemLevel LevelMin="10" LevelMax="40" />
       <Keywords OptionalKeywords="belt,amulet" MandatoryKeywords="accessory" />
       <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
@@ -1177,7 +1177,7 @@
   </Affix>
   <Affix AffixId="ac_master_attack_critical_strike_chance_3" Class="criticalchance" AffixType="suffix" Tier="3">
     <Enslaved EnslavedClass="slave_accessory_3" />
-    <DropParams Frequency="10000" Hunt="1">
+    <DropParams Frequency="10000" AffixOrigin="Hunt">
       <ItemLevel LevelMin="20" LevelMax="50" />
       <Keywords OptionalKeywords="belt,amulet" MandatoryKeywords="accessory" />
       <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
@@ -1189,7 +1189,7 @@
   </Affix>
   <Affix AffixId="ac_master_attack_critical_strike_chance_4" Class="criticalchance" AffixType="suffix" Tier="4">
     <Enslaved EnslavedClass="slave_accessory_4" />
-    <DropParams Frequency="10000" Hunt="1">
+    <DropParams Frequency="10000" AffixOrigin="Hunt">
       <ItemLevel LevelMin="30" LevelMax="60" />
       <Keywords OptionalKeywords="belt,amulet" MandatoryKeywords="accessory" />
       <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
@@ -1201,8 +1201,8 @@
   </Affix>
   <Affix AffixId="ac_master_attack_critical_strike_chance_5" Class="criticalchance" AffixType="suffix" Tier="5">
     <Enslaved EnslavedClass="slave_accessory_5" />
-    <DropParams Frequency="10000" Hunt="1">
-      <ItemLevel LevelMin="40" LevelMax="120" />
+    <DropParams Frequency="10000" AffixOrigin="Hunt">
+      <ItemLevel LevelMin="40" LevelMax="80" />
       <Keywords OptionalKeywords="belt,amulet" MandatoryKeywords="accessory" />
       <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
     </DropParams>
@@ -1213,8 +1213,8 @@
   </Affix>
   <Affix AffixId="ac_master_attack_critical_strike_chance_6" Class="criticalchance" AffixType="suffix" Tier="6">
     <Enslaved EnslavedClass="slave_accessory_6" />
-    <DropParams Frequency="10000" Hunt="1">
-      <ItemLevel LevelMin="50" LevelMax="130" />
+    <DropParams Frequency="10000" AffixOrigin="Hunt">
+      <ItemLevel LevelMin="70" LevelMax="100" />
       <Keywords OptionalKeywords="belt,amulet" MandatoryKeywords="accessory" />
       <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
     </DropParams>
@@ -1225,8 +1225,8 @@
   </Affix>
   <Affix AffixId="ac_master_attack_critical_strike_chance_7" Class="criticalchance" AffixType="suffix" Tier="7">
     <Enslaved EnslavedClass="slave_accessory_7" />
-    <DropParams Frequency="10000" Hunt="1">
-      <ItemLevel LevelMin="60" LevelMax="140" />
+    <DropParams Frequency="10000" AffixOrigin="Hunt">
+      <ItemLevel LevelMin="90" LevelMax="140" />
       <Keywords OptionalKeywords="belt,amulet" MandatoryKeywords="accessory" />
       <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
     </DropParams>
@@ -1237,8 +1237,8 @@
   </Affix>
   <Affix AffixId="ac_master_attack_critical_strike_chance_8" Class="criticalchance" AffixType="suffix" Tier="8">
     <Enslaved EnslavedClass="slave_accessory_8" />
-    <DropParams Frequency="10000" Hunt="1">
-      <ItemLevel LevelMin="70" LevelMax="150" />
+    <DropParams Frequency="10000" AffixOrigin="Hunt">
+      <ItemLevel LevelMin="130" LevelMax="200" />
       <Keywords OptionalKeywords="belt,amulet" MandatoryKeywords="accessory" />
       <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
     </DropParams>
@@ -1249,8 +1249,8 @@
   </Affix>
   <Affix AffixId="ac_master_attack_critical_strike_chance_9" Class="criticalchance" AffixType="suffix" Tier="9">
     <Enslaved EnslavedClass="slave_accessory_9" />
-    <DropParams Frequency="10000" Hunt="1">
-      <ItemLevel LevelMin="80" LevelMax="150" />
+    <DropParams Frequency="10000" AffixOrigin="Hunt">
+      <ItemLevel LevelMin="150" LevelMax="250" />
       <Keywords OptionalKeywords="belt,amulet" MandatoryKeywords="accessory" />
       <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
     </DropParams>
@@ -1261,8 +1261,8 @@
   </Affix>
   <Affix AffixId="ac_master_attack_critical_strike_chance_10" Class="criticalchance" AffixType="suffix" Tier="10">
     <Enslaved EnslavedClass="slave_accessory_10" />
-    <DropParams Frequency="10000" Hunt="1">
-      <ItemLevel LevelMin="90" LevelMax="200" />
+    <DropParams Frequency="10000" AffixOrigin="Hunt">
+      <ItemLevel LevelMin="170" LevelMax="250" />
       <Keywords OptionalKeywords="belt,amulet" MandatoryKeywords="accessory" />
       <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
     </DropParams>
@@ -1273,8 +1273,8 @@
   </Affix>
   <Affix AffixId="ac_master_attack_critical_strike_chance_11" Class="criticalchance" AffixType="suffix" Tier="11">
     <Enslaved EnslavedClass="slave_accessory_11" />
-    <DropParams Frequency="10000" Hunt="1">
-      <ItemLevel LevelMin="100" LevelMax="200" />
+    <DropParams Frequency="10000" AffixOrigin="Hunt">
+      <ItemLevel LevelMin="190" LevelMax="300" />
       <Keywords OptionalKeywords="belt,amulet" MandatoryKeywords="accessory" />
       <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
     </DropParams>
@@ -1285,8 +1285,8 @@
   </Affix>
   <Affix AffixId="ac_master_attack_critical_strike_chance_12" Class="criticalchance" AffixType="suffix" Tier="12">
     <Enslaved EnslavedClass="slave_accessory_12" />
-    <DropParams Frequency="10000" Hunt="1">
-      <ItemLevel LevelMin="110" LevelMax="200" />
+    <DropParams Frequency="10000" AffixOrigin="Hunt">
+      <ItemLevel LevelMin="190" LevelMax="300" />
       <Keywords OptionalKeywords="belt,amulet" MandatoryKeywords="accessory" />
       <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
     </DropParams>
@@ -1297,7 +1297,7 @@
   </Affix>
   <Affix AffixId="ac_master_status_ailment_chance_1" Class="suffix" AffixType="suffix" Tier="1">
     <Enslaved EnslavedClass="slave_accessory_1" />
-    <DropParams Frequency="10000" Hunt="1">
+    <DropParams Frequency="10000" AffixOrigin="Hunt">
       <ItemLevel LevelMin="1" LevelMax="30" />
       <Keywords OptionalKeywords="belt,amulet" MandatoryKeywords="accessory" />
       <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
@@ -1309,7 +1309,7 @@
   </Affix>
   <Affix AffixId="ac_master_status_ailment_chance_2" Class="suffix" AffixType="suffix" Tier="2">
     <Enslaved EnslavedClass="slave_accessory_2" />
-    <DropParams Frequency="10000" Hunt="1">
+    <DropParams Frequency="10000" AffixOrigin="Hunt">
       <ItemLevel LevelMin="10" LevelMax="40" />
       <Keywords OptionalKeywords="belt,amulet" MandatoryKeywords="accessory" />
       <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
@@ -1321,7 +1321,7 @@
   </Affix>
   <Affix AffixId="ac_master_status_ailment_chance_3" Class="suffix" AffixType="suffix" Tier="3">
     <Enslaved EnslavedClass="slave_accessory_3" />
-    <DropParams Frequency="10000" Hunt="1">
+    <DropParams Frequency="10000" AffixOrigin="Hunt">
       <ItemLevel LevelMin="20" LevelMax="50" />
       <Keywords OptionalKeywords="belt,amulet" MandatoryKeywords="accessory" />
       <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
@@ -1333,7 +1333,7 @@
   </Affix>
   <Affix AffixId="ac_master_status_ailment_chance_4" Class="suffix" AffixType="suffix" Tier="4">
     <Enslaved EnslavedClass="slave_accessory_4" />
-    <DropParams Frequency="10000" Hunt="1">
+    <DropParams Frequency="10000" AffixOrigin="Hunt">
       <ItemLevel LevelMin="30" LevelMax="60" />
       <Keywords OptionalKeywords="belt,amulet" MandatoryKeywords="accessory" />
       <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
@@ -1345,8 +1345,8 @@
   </Affix>
   <Affix AffixId="ac_master_status_ailment_chance_5" Class="suffix" AffixType="suffix" Tier="5">
     <Enslaved EnslavedClass="slave_accessory_5" />
-    <DropParams Frequency="10000" Hunt="1">
-      <ItemLevel LevelMin="40" LevelMax="120" />
+    <DropParams Frequency="10000" AffixOrigin="Hunt">
+      <ItemLevel LevelMin="40" LevelMax="80" />
       <Keywords OptionalKeywords="belt,amulet" MandatoryKeywords="accessory" />
       <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
     </DropParams>
@@ -1357,8 +1357,8 @@
   </Affix>
   <Affix AffixId="ac_master_status_ailment_chance_6" Class="suffix" AffixType="suffix" Tier="6">
     <Enslaved EnslavedClass="slave_accessory_6" />
-    <DropParams Frequency="10000" Hunt="1">
-      <ItemLevel LevelMin="50" LevelMax="130" />
+    <DropParams Frequency="10000" AffixOrigin="Hunt">
+      <ItemLevel LevelMin="70" LevelMax="100" />
       <Keywords OptionalKeywords="belt,amulet" MandatoryKeywords="accessory" />
       <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
     </DropParams>
@@ -1369,8 +1369,8 @@
   </Affix>
   <Affix AffixId="ac_master_status_ailment_chance_7" Class="suffix" AffixType="suffix" Tier="7">
     <Enslaved EnslavedClass="slave_accessory_7" />
-    <DropParams Frequency="10000" Hunt="1">
-      <ItemLevel LevelMin="60" LevelMax="140" />
+    <DropParams Frequency="10000" AffixOrigin="Hunt">
+      <ItemLevel LevelMin="90" LevelMax="140" />
       <Keywords OptionalKeywords="belt,amulet" MandatoryKeywords="accessory" />
       <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
     </DropParams>
@@ -1381,8 +1381,8 @@
   </Affix>
   <Affix AffixId="ac_master_status_ailment_chance_8" Class="suffix" AffixType="suffix" Tier="8">
     <Enslaved EnslavedClass="slave_accessory_8" />
-    <DropParams Frequency="10000" Hunt="1">
-      <ItemLevel LevelMin="70" LevelMax="150" />
+    <DropParams Frequency="10000" AffixOrigin="Hunt">
+      <ItemLevel LevelMin="130" LevelMax="200" />
       <Keywords OptionalKeywords="belt,amulet" MandatoryKeywords="accessory" />
       <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
     </DropParams>
@@ -1393,8 +1393,8 @@
   </Affix>
   <Affix AffixId="ac_master_status_ailment_chance_9" Class="suffix" AffixType="suffix" Tier="9">
     <Enslaved EnslavedClass="slave_accessory_9" />
-    <DropParams Frequency="10000" Hunt="1">
-      <ItemLevel LevelMin="80" LevelMax="160" />
+    <DropParams Frequency="10000" AffixOrigin="Hunt">
+      <ItemLevel LevelMin="150" LevelMax="250" />
       <Keywords OptionalKeywords="belt,amulet" MandatoryKeywords="accessory" />
       <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
     </DropParams>
@@ -1405,8 +1405,8 @@
   </Affix>
   <Affix AffixId="ac_master_status_ailment_chance_10" Class="suffix" AffixType="suffix" Tier="10">
     <Enslaved EnslavedClass="slave_accessory_10" />
-    <DropParams Frequency="10000" Hunt="1">
-      <ItemLevel LevelMin="90" LevelMax="200" />
+    <DropParams Frequency="10000" AffixOrigin="Hunt">
+      <ItemLevel LevelMin="170" LevelMax="250" />
       <Keywords OptionalKeywords="belt,amulet" MandatoryKeywords="accessory" />
       <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
     </DropParams>
@@ -1417,8 +1417,8 @@
   </Affix>
   <Affix AffixId="ac_master_status_ailment_chance_11" Class="suffix" AffixType="suffix" Tier="11">
     <Enslaved EnslavedClass="slave_accessory_11" />
-    <DropParams Frequency="10000" Hunt="1">
-      <ItemLevel LevelMin="100" LevelMax="200" />
+    <DropParams Frequency="10000" AffixOrigin="Hunt">
+      <ItemLevel LevelMin="190" LevelMax="300" />
       <Keywords OptionalKeywords="belt,amulet" MandatoryKeywords="accessory" />
       <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
     </DropParams>
@@ -1429,8 +1429,8 @@
   </Affix>
   <Affix AffixId="ac_master_status_ailment_chance_12" Class="suffix" AffixType="suffix" Tier="12">
     <Enslaved EnslavedClass="slave_accessory_12" />
-    <DropParams Frequency="10000" Hunt="1">
-      <ItemLevel LevelMin="110" LevelMax="200" />
+    <DropParams Frequency="10000" AffixOrigin="Hunt">
+      <ItemLevel LevelMin="190" LevelMax="300" />
       <Keywords OptionalKeywords="belt,amulet" MandatoryKeywords="accessory" />
       <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
     </DropParams>
@@ -1485,7 +1485,7 @@
   </Affix>
   <Affix AffixId="ac_slave_health_pts_5" Class="slave_accessory_5" AffixType="slave" Tier="5">
     <DropParams Frequency="0">
-      <ItemLevel LevelMin="40" LevelMax="120" />
+      <ItemLevel LevelMin="40" LevelMax="80" />
       <Keywords OptionalKeywords="belt,amulet,ring" MandatoryKeywords="accessory" />
       <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
     </DropParams>
@@ -1496,7 +1496,7 @@
   </Affix>
   <Affix AffixId="ac_slave_health_pts_6" Class="slave_accessory_6" AffixType="slave" Tier="6">
     <DropParams Frequency="0">
-      <ItemLevel LevelMin="50" LevelMax="130" />
+      <ItemLevel LevelMin="70" LevelMax="100" />
       <Keywords OptionalKeywords="belt,amulet,ring" MandatoryKeywords="accessory" />
       <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
     </DropParams>
@@ -1507,7 +1507,7 @@
   </Affix>
   <Affix AffixId="ac_slave_health_pts_7" Class="slave_accessory_7" AffixType="slave" Tier="7">
     <DropParams Frequency="0">
-      <ItemLevel LevelMin="60" LevelMax="140" />
+      <ItemLevel LevelMin="90" LevelMax="140" />
       <Keywords OptionalKeywords="belt,amulet,ring" MandatoryKeywords="accessory" />
       <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
     </DropParams>
@@ -1518,7 +1518,7 @@
   </Affix>
   <Affix AffixId="ac_slave_health_pts_8" Class="slave_accessory_8" AffixType="slave" Tier="8">
     <DropParams Frequency="0">
-      <ItemLevel LevelMin="70" LevelMax="150" />
+      <ItemLevel LevelMin="130" LevelMax="200" />
       <Keywords OptionalKeywords="belt,amulet,ring" MandatoryKeywords="accessory" />
       <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
     </DropParams>
@@ -1529,7 +1529,7 @@
   </Affix>
   <Affix AffixId="ac_slave_health_pts_9" Class="slave_accessory_9" AffixType="slave" Tier="9">
     <DropParams Frequency="0">
-      <ItemLevel LevelMin="80" LevelMax="150" />
+      <ItemLevel LevelMin="150" LevelMax="250" />
       <Keywords OptionalKeywords="belt,amulet,ring" MandatoryKeywords="accessory" />
       <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
     </DropParams>
@@ -1540,7 +1540,7 @@
   </Affix>
   <Affix AffixId="ac_slave_health_pts_10" Class="slave_accessory_10" AffixType="slave" Tier="10">
     <DropParams Frequency="0">
-      <ItemLevel LevelMin="90" LevelMax="200" />
+      <ItemLevel LevelMin="170" LevelMax="250" />
       <Keywords OptionalKeywords="belt,amulet,ring" MandatoryKeywords="accessory" />
       <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
     </DropParams>
@@ -1551,7 +1551,7 @@
   </Affix>
   <Affix AffixId="ac_slave_health_pts_11" Class="slave_accessory_11" AffixType="slave" Tier="11">
     <DropParams Frequency="0">
-      <ItemLevel LevelMin="100" LevelMax="200" />
+      <ItemLevel LevelMin="190" LevelMax="300" />
       <Keywords OptionalKeywords="belt,amulet,ring" MandatoryKeywords="accessory" />
       <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
     </DropParams>
@@ -1562,7 +1562,7 @@
   </Affix>
   <Affix AffixId="ac_slave_health_pts_12" Class="slave_accessory_12" AffixType="slave" Tier="12">
     <DropParams Frequency="0">
-      <ItemLevel LevelMin="110" LevelMax="200" />
+      <ItemLevel LevelMin="190" LevelMax="300" />
       <Keywords OptionalKeywords="belt,amulet,ring" MandatoryKeywords="accessory" />
       <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
     </DropParams>
@@ -1617,7 +1617,7 @@
   </Affix>
   <Affix AffixId="ac_slave_forceshield_pts_5" Class="slave_accessory_5" AffixType="slave" Tier="5">
     <DropParams Frequency="0">
-      <ItemLevel LevelMin="40" LevelMax="120" />
+      <ItemLevel LevelMin="40" LevelMax="80" />
       <Keywords OptionalKeywords="belt,amulet,ring" MandatoryKeywords="accessory" />
       <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
     </DropParams>
@@ -1628,7 +1628,7 @@
   </Affix>
   <Affix AffixId="ac_slave_forceshield_pts_6" Class="slave_accessory_6" AffixType="slave" Tier="6">
     <DropParams Frequency="0">
-      <ItemLevel LevelMin="50" LevelMax="130" />
+      <ItemLevel LevelMin="70" LevelMax="100" />
       <Keywords OptionalKeywords="belt,amulet,ring" MandatoryKeywords="accessory" />
       <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
     </DropParams>
@@ -1639,7 +1639,7 @@
   </Affix>
   <Affix AffixId="ac_slave_forceshield_pts_7" Class="slave_accessory_7" AffixType="slave" Tier="7">
     <DropParams Frequency="0">
-      <ItemLevel LevelMin="60" LevelMax="140" />
+      <ItemLevel LevelMin="90" LevelMax="140" />
       <Keywords OptionalKeywords="belt,amulet,ring" MandatoryKeywords="accessory" />
       <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
     </DropParams>
@@ -1650,7 +1650,7 @@
   </Affix>
   <Affix AffixId="ac_slave_forceshield_pts_8" Class="slave_accessory_8" AffixType="slave" Tier="8">
     <DropParams Frequency="0">
-      <ItemLevel LevelMin="70" LevelMax="150" />
+      <ItemLevel LevelMin="130" LevelMax="200" />
       <Keywords OptionalKeywords="belt,amulet,ring" MandatoryKeywords="accessory" />
       <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
     </DropParams>
@@ -1661,7 +1661,7 @@
   </Affix>
   <Affix AffixId="ac_slave_forceshield_pts_9" Class="slave_accessory_9" AffixType="slave" Tier="9">
     <DropParams Frequency="0">
-      <ItemLevel LevelMin="80" LevelMax="150" />
+      <ItemLevel LevelMin="150" LevelMax="250" />
       <Keywords OptionalKeywords="belt,amulet,ring" MandatoryKeywords="accessory" />
       <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
     </DropParams>
@@ -1672,7 +1672,7 @@
   </Affix>
   <Affix AffixId="ac_slave_forceshield_pts_10" Class="slave_accessory_10" AffixType="slave" Tier="10">
     <DropParams Frequency="0">
-      <ItemLevel LevelMin="90" LevelMax="200" />
+      <ItemLevel LevelMin="170" LevelMax="250" />
       <Keywords OptionalKeywords="belt,amulet,ring" MandatoryKeywords="accessory" />
       <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
     </DropParams>
@@ -1683,7 +1683,7 @@
   </Affix>
   <Affix AffixId="ac_slave_forceshield_pts_11" Class="slave_accessory_11" AffixType="slave" Tier="11">
     <DropParams Frequency="0">
-      <ItemLevel LevelMin="100" LevelMax="200" />
+      <ItemLevel LevelMin="190" LevelMax="300" />
       <Keywords OptionalKeywords="belt,amulet,ring" MandatoryKeywords="accessory" />
       <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
     </DropParams>
@@ -1694,7 +1694,7 @@
   </Affix>
   <Affix AffixId="ac_slave_forceshield_pts_12" Class="slave_accessory_12" AffixType="slave" Tier="12">
     <DropParams Frequency="0">
-      <ItemLevel LevelMin="110" LevelMax="200" />
+      <ItemLevel LevelMin="190" LevelMax="300" />
       <Keywords OptionalKeywords="belt,amulet,ring" MandatoryKeywords="accessory" />
       <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
     </DropParams>
@@ -1749,7 +1749,7 @@
   </Affix>
   <Affix AffixId="ac_slave_all_resistance_score_percent_5" Class="slave_accessory_5" AffixType="slave" Tier="5">
     <DropParams Frequency="0">
-      <ItemLevel LevelMin="40" LevelMax="120" />
+      <ItemLevel LevelMin="40" LevelMax="80" />
       <Keywords OptionalKeywords="belt,amulet,ring" MandatoryKeywords="accessory" />
       <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
     </DropParams>
@@ -1760,7 +1760,7 @@
   </Affix>
   <Affix AffixId="ac_slave_all_resistance_score_percent_6" Class="slave_accessory_6" AffixType="slave" Tier="6">
     <DropParams Frequency="0">
-      <ItemLevel LevelMin="50" LevelMax="130" />
+      <ItemLevel LevelMin="70" LevelMax="100" />
       <Keywords OptionalKeywords="belt,amulet,ring" MandatoryKeywords="accessory" />
       <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
     </DropParams>
@@ -1771,7 +1771,7 @@
   </Affix>
   <Affix AffixId="ac_slave_all_resistance_score_percent_7" Class="slave_accessory_7" AffixType="slave" Tier="7">
     <DropParams Frequency="0">
-      <ItemLevel LevelMin="60" LevelMax="140" />
+      <ItemLevel LevelMin="90" LevelMax="140" />
       <Keywords OptionalKeywords="belt,amulet,ring" MandatoryKeywords="accessory" />
       <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
     </DropParams>
@@ -1782,7 +1782,7 @@
   </Affix>
   <Affix AffixId="ac_slave_all_resistance_score_percent_8" Class="slave_accessory_8" AffixType="slave" Tier="8">
     <DropParams Frequency="0">
-      <ItemLevel LevelMin="70" LevelMax="150" />
+      <ItemLevel LevelMin="130" LevelMax="200" />
       <Keywords OptionalKeywords="belt,amulet,ring" MandatoryKeywords="accessory" />
       <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
     </DropParams>
@@ -1793,7 +1793,7 @@
   </Affix>
   <Affix AffixId="ac_slave_all_resistance_score_percent_9" Class="slave_accessory_9" AffixType="slave" Tier="9">
     <DropParams Frequency="0">
-      <ItemLevel LevelMin="80" LevelMax="150" />
+      <ItemLevel LevelMin="150" LevelMax="250" />
       <Keywords OptionalKeywords="belt,amulet,ring" MandatoryKeywords="accessory" />
       <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
     </DropParams>
@@ -1804,7 +1804,7 @@
   </Affix>
   <Affix AffixId="ac_slave_all_resistance_score_percent_10" Class="slave_accessory_10" AffixType="slave" Tier="10">
     <DropParams Frequency="0">
-      <ItemLevel LevelMin="90" LevelMax="200" />
+      <ItemLevel LevelMin="170" LevelMax="250" />
       <Keywords OptionalKeywords="belt,amulet,ring" MandatoryKeywords="accessory" />
       <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
     </DropParams>
@@ -1815,7 +1815,7 @@
   </Affix>
   <Affix AffixId="ac_slave_all_resistance_score_percent_11" Class="slave_accessory_11" AffixType="slave" Tier="11">
     <DropParams Frequency="0">
-      <ItemLevel LevelMin="100" LevelMax="200" />
+      <ItemLevel LevelMin="190" LevelMax="300" />
       <Keywords OptionalKeywords="belt,amulet,ring" MandatoryKeywords="accessory" />
       <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
     </DropParams>
@@ -1826,7 +1826,7 @@
   </Affix>
   <Affix AffixId="ac_slave_all_resistance_score_percent_12" Class="slave_accessory_12" AffixType="slave" Tier="12">
     <DropParams Frequency="0">
-      <ItemLevel LevelMin="110" LevelMax="200" />
+      <ItemLevel LevelMin="190" LevelMax="300" />
       <Keywords OptionalKeywords="belt,amulet,ring" MandatoryKeywords="accessory" />
       <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
     </DropParams>
@@ -1881,7 +1881,7 @@
   </Affix>
   <Affix AffixId="ac_slave_global_critical_strike_damage_5" Class="slave_accessory_5" AffixType="slave" Tier="5">
     <DropParams Frequency="0">
-      <ItemLevel LevelMin="40" LevelMax="120" />
+      <ItemLevel LevelMin="40" LevelMax="80" />
       <Keywords OptionalKeywords="belt,amulet,ring" MandatoryKeywords="accessory" />
       <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
     </DropParams>
@@ -1892,7 +1892,7 @@
   </Affix>
   <Affix AffixId="ac_slave_global_critical_strike_damage_6" Class="slave_accessory_6" AffixType="slave" Tier="6">
     <DropParams Frequency="0">
-      <ItemLevel LevelMin="50" LevelMax="130" />
+      <ItemLevel LevelMin="70" LevelMax="100" />
       <Keywords OptionalKeywords="belt,amulet,ring" MandatoryKeywords="accessory" />
       <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
     </DropParams>
@@ -1903,7 +1903,7 @@
   </Affix>
   <Affix AffixId="ac_slave_global_critical_strike_damage_7" Class="slave_accessory_7" AffixType="slave" Tier="7">
     <DropParams Frequency="0">
-      <ItemLevel LevelMin="60" LevelMax="140" />
+      <ItemLevel LevelMin="90" LevelMax="140" />
       <Keywords OptionalKeywords="belt,amulet,ring" MandatoryKeywords="accessory" />
       <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
     </DropParams>
@@ -1914,7 +1914,7 @@
   </Affix>
   <Affix AffixId="ac_slave_global_critical_strike_damage_8" Class="slave_accessory_8" AffixType="slave" Tier="8">
     <DropParams Frequency="0">
-      <ItemLevel LevelMin="70" LevelMax="150" />
+      <ItemLevel LevelMin="130" LevelMax="200" />
       <Keywords OptionalKeywords="belt,amulet,ring" MandatoryKeywords="accessory" />
       <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
     </DropParams>
@@ -1925,7 +1925,7 @@
   </Affix>
   <Affix AffixId="ac_slave_global_critical_strike_damage_9" Class="slave_accessory_9" AffixType="slave" Tier="9">
     <DropParams Frequency="0">
-      <ItemLevel LevelMin="80" LevelMax="150" />
+      <ItemLevel LevelMin="150" LevelMax="250" />
       <Keywords OptionalKeywords="belt,amulet,ring" MandatoryKeywords="accessory" />
       <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
     </DropParams>
@@ -1936,7 +1936,7 @@
   </Affix>
   <Affix AffixId="ac_slave_global_critical_strike_damage_10" Class="slave_accessory_10" AffixType="slave" Tier="10">
     <DropParams Frequency="0">
-      <ItemLevel LevelMin="90" LevelMax="200" />
+      <ItemLevel LevelMin="170" LevelMax="250" />
       <Keywords OptionalKeywords="belt,amulet,ring" MandatoryKeywords="accessory" />
       <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
     </DropParams>
@@ -1947,7 +1947,7 @@
   </Affix>
   <Affix AffixId="ac_slave_global_critical_strike_damage_11" Class="slave_accessory_11" AffixType="slave" Tier="11">
     <DropParams Frequency="0">
-      <ItemLevel LevelMin="100" LevelMax="200" />
+      <ItemLevel LevelMin="190" LevelMax="300" />
       <Keywords OptionalKeywords="belt,amulet,ring" MandatoryKeywords="accessory" />
       <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
     </DropParams>
@@ -1958,7 +1958,7 @@
   </Affix>
   <Affix AffixId="ac_slave_global_critical_strike_damage_12" Class="slave_accessory_12" AffixType="slave" Tier="12">
     <DropParams Frequency="0">
-      <ItemLevel LevelMin="110" LevelMax="200" />
+      <ItemLevel LevelMin="190" LevelMax="300" />
       <Keywords OptionalKeywords="belt,amulet,ring" MandatoryKeywords="accessory" />
       <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
     </DropParams>
@@ -2013,7 +2013,7 @@
   </Affix>
   <Affix AffixId="ac_slave_transfer_time_percent_5" Class="slave_accessory_5" AffixType="slave" Tier="5">
     <DropParams Frequency="0">
-      <ItemLevel LevelMin="40" LevelMax="120" />
+      <ItemLevel LevelMin="40" LevelMax="80" />
       <Keywords OptionalKeywords="belt,amulet,ring" MandatoryKeywords="accessory" />
       <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
     </DropParams>
@@ -2024,7 +2024,7 @@
   </Affix>
   <Affix AffixId="ac_slave_transfer_time_percent_6" Class="slave_accessory_6" AffixType="slave" Tier="6">
     <DropParams Frequency="0">
-      <ItemLevel LevelMin="50" LevelMax="130" />
+      <ItemLevel LevelMin="70" LevelMax="100" />
       <Keywords OptionalKeywords="belt,amulet,ring" MandatoryKeywords="accessory" />
       <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
     </DropParams>
@@ -2035,7 +2035,7 @@
   </Affix>
   <Affix AffixId="ac_slave_transfer_time_percent_7" Class="slave_accessory_7" AffixType="slave" Tier="7">
     <DropParams Frequency="0">
-      <ItemLevel LevelMin="60" LevelMax="140" />
+      <ItemLevel LevelMin="90" LevelMax="140" />
       <Keywords OptionalKeywords="belt,amulet,ring" MandatoryKeywords="accessory" />
       <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
     </DropParams>
@@ -2046,7 +2046,7 @@
   </Affix>
   <Affix AffixId="ac_slave_transfer_time_percent_8" Class="slave_accessory_8" AffixType="slave" Tier="8">
     <DropParams Frequency="0">
-      <ItemLevel LevelMin="70" LevelMax="150" />
+      <ItemLevel LevelMin="130" LevelMax="200" />
       <Keywords OptionalKeywords="belt,amulet,ring" MandatoryKeywords="accessory" />
       <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
     </DropParams>
@@ -2057,7 +2057,7 @@
   </Affix>
   <Affix AffixId="ac_slave_transfer_time_percent_9" Class="slave_accessory_9" AffixType="slave" Tier="9">
     <DropParams Frequency="0">
-      <ItemLevel LevelMin="80" LevelMax="150" />
+      <ItemLevel LevelMin="150" LevelMax="250" />
       <Keywords OptionalKeywords="belt,amulet,ring" MandatoryKeywords="accessory" />
       <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
     </DropParams>
@@ -2068,7 +2068,7 @@
   </Affix>
   <Affix AffixId="ac_slave_transfer_time_percent_10" Class="slave_accessory_10" AffixType="slave" Tier="10">
     <DropParams Frequency="0">
-      <ItemLevel LevelMin="90" LevelMax="200" />
+      <ItemLevel LevelMin="170" LevelMax="250" />
       <Keywords OptionalKeywords="belt,amulet,ring" MandatoryKeywords="accessory" />
       <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
     </DropParams>
@@ -2079,7 +2079,7 @@
   </Affix>
   <Affix AffixId="ac_slave_transfer_time_percent_11" Class="slave_accessory_11" AffixType="slave" Tier="11">
     <DropParams Frequency="0">
-      <ItemLevel LevelMin="100" LevelMax="200" />
+      <ItemLevel LevelMin="190" LevelMax="300" />
       <Keywords OptionalKeywords="belt,amulet,ring" MandatoryKeywords="accessory" />
       <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
     </DropParams>
@@ -2090,7 +2090,7 @@
   </Affix>
   <Affix AffixId="ac_slave_transfer_time_percent_12" Class="slave_accessory_12" AffixType="slave" Tier="12">
     <DropParams Frequency="0">
-      <ItemLevel LevelMin="110" LevelMax="200" />
+      <ItemLevel LevelMin="190" LevelMax="300" />
       <Keywords OptionalKeywords="belt,amulet,ring" MandatoryKeywords="accessory" />
       <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
     </DropParams>
@@ -2145,7 +2145,7 @@
   </Affix>
   <Affix AffixId="ac_slave_damage_percent_5" Class="slave_accessory_5" AffixType="slave" Tier="5">
     <DropParams Frequency="0">
-      <ItemLevel LevelMin="40" LevelMax="120" />
+      <ItemLevel LevelMin="40" LevelMax="80" />
       <Keywords OptionalKeywords="belt,amulet,ring" MandatoryKeywords="accessory" />
       <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
     </DropParams>
@@ -2156,7 +2156,7 @@
   </Affix>
   <Affix AffixId="ac_slave_damage_percent_6" Class="slave_accessory_6" AffixType="slave" Tier="6">
     <DropParams Frequency="0">
-      <ItemLevel LevelMin="50" LevelMax="130" />
+      <ItemLevel LevelMin="70" LevelMax="100" />
       <Keywords OptionalKeywords="belt,amulet,ring" MandatoryKeywords="accessory" />
       <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
     </DropParams>
@@ -2167,7 +2167,7 @@
   </Affix>
   <Affix AffixId="ac_slave_damage_percent_7" Class="slave_accessory_7" AffixType="slave" Tier="7">
     <DropParams Frequency="0">
-      <ItemLevel LevelMin="60" LevelMax="140" />
+      <ItemLevel LevelMin="90" LevelMax="140" />
       <Keywords OptionalKeywords="belt,amulet,ring" MandatoryKeywords="accessory" />
       <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
     </DropParams>
@@ -2178,7 +2178,7 @@
   </Affix>
   <Affix AffixId="ac_slave_damage_percent_8" Class="slave_accessory_8" AffixType="slave" Tier="8">
     <DropParams Frequency="0">
-      <ItemLevel LevelMin="70" LevelMax="150" />
+      <ItemLevel LevelMin="130" LevelMax="200" />
       <Keywords OptionalKeywords="belt,amulet,ring" MandatoryKeywords="accessory" />
       <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
     </DropParams>
@@ -2189,7 +2189,7 @@
   </Affix>
   <Affix AffixId="ac_slave_damage_percent_9" Class="slave_accessory_9" AffixType="slave" Tier="9">
     <DropParams Frequency="0">
-      <ItemLevel LevelMin="80" LevelMax="160" />
+      <ItemLevel LevelMin="150" LevelMax="250" />
       <Keywords OptionalKeywords="belt,amulet,ring" MandatoryKeywords="accessory" />
       <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
     </DropParams>
@@ -2200,7 +2200,7 @@
   </Affix>
   <Affix AffixId="ac_slave_damage_percent_10" Class="slave_accessory_10" AffixType="slave" Tier="10">
     <DropParams Frequency="0">
-      <ItemLevel LevelMin="90" LevelMax="200" />
+      <ItemLevel LevelMin="170" LevelMax="250" />
       <Keywords OptionalKeywords="belt,amulet,ring" MandatoryKeywords="accessory" />
       <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
     </DropParams>
@@ -2211,7 +2211,7 @@
   </Affix>
   <Affix AffixId="ac_slave_damage_percent_11" Class="slave_accessory_11" AffixType="slave" Tier="11">
     <DropParams Frequency="0">
-      <ItemLevel LevelMin="100" LevelMax="200" />
+      <ItemLevel LevelMin="190" LevelMax="300" />
       <Keywords OptionalKeywords="belt,amulet,ring" MandatoryKeywords="accessory" />
       <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
     </DropParams>
@@ -2222,7 +2222,7 @@
   </Affix>
   <Affix AffixId="ac_slave_damage_percent_12" Class="slave_accessory_12" AffixType="slave" Tier="12">
     <DropParams Frequency="0">
-      <ItemLevel LevelMin="110" LevelMax="200" />
+      <ItemLevel LevelMin="190" LevelMax="300" />
       <Keywords OptionalKeywords="belt,amulet,ring" MandatoryKeywords="accessory" />
       <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
     </DropParams>
@@ -2277,7 +2277,7 @@
   </Affix>
   <Affix AffixId="ac_slave_offensivespeed_score_percent_5" Class="slave_accessory_5" AffixType="slave" Tier="5">
     <DropParams Frequency="0">
-      <ItemLevel LevelMin="40" LevelMax="120" />
+      <ItemLevel LevelMin="40" LevelMax="80" />
       <Keywords OptionalKeywords="belt,amulet,ring" MandatoryKeywords="accessory" />
       <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
     </DropParams>
@@ -2288,7 +2288,7 @@
   </Affix>
   <Affix AffixId="ac_slave_offensivespeed_score_percent_6" Class="slave_accessory_6" AffixType="slave" Tier="6">
     <DropParams Frequency="0">
-      <ItemLevel LevelMin="50" LevelMax="130" />
+      <ItemLevel LevelMin="70" LevelMax="100" />
       <Keywords OptionalKeywords="belt,amulet,ring" MandatoryKeywords="accessory" />
       <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
     </DropParams>
@@ -2299,7 +2299,7 @@
   </Affix>
   <Affix AffixId="ac_slave_offensivespeed_score_percent_7" Class="slave_accessory_7" AffixType="slave" Tier="7">
     <DropParams Frequency="0">
-      <ItemLevel LevelMin="60" LevelMax="140" />
+      <ItemLevel LevelMin="90" LevelMax="140" />
       <Keywords OptionalKeywords="belt,amulet,ring" MandatoryKeywords="accessory" />
       <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
     </DropParams>
@@ -2310,7 +2310,7 @@
   </Affix>
   <Affix AffixId="ac_slave_offensivespeed_score_percent_8" Class="slave_accessory_8" AffixType="slave" Tier="8">
     <DropParams Frequency="0">
-      <ItemLevel LevelMin="70" LevelMax="150" />
+      <ItemLevel LevelMin="130" LevelMax="200" />
       <Keywords OptionalKeywords="belt,amulet,ring" MandatoryKeywords="accessory" />
       <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
     </DropParams>
@@ -2321,7 +2321,7 @@
   </Affix>
   <Affix AffixId="ac_slave_offensivespeed_score_percent_9" Class="slave_accessory_9" AffixType="slave" Tier="9">
     <DropParams Frequency="0">
-      <ItemLevel LevelMin="80" LevelMax="160" />
+      <ItemLevel LevelMin="150" LevelMax="250" />
       <Keywords OptionalKeywords="belt,amulet,ring" MandatoryKeywords="accessory" />
       <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
     </DropParams>
@@ -2332,7 +2332,7 @@
   </Affix>
   <Affix AffixId="ac_slave_offensivespeed_score_percent_10" Class="slave_accessory_10" AffixType="slave" Tier="10">
     <DropParams Frequency="0">
-      <ItemLevel LevelMin="90" LevelMax="200" />
+      <ItemLevel LevelMin="170" LevelMax="250" />
       <Keywords OptionalKeywords="belt,amulet,ring" MandatoryKeywords="accessory" />
       <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
     </DropParams>
@@ -2343,7 +2343,7 @@
   </Affix>
   <Affix AffixId="ac_slave_offensivespeed_score_percent_11" Class="slave_accessory_11" AffixType="slave" Tier="11">
     <DropParams Frequency="0">
-      <ItemLevel LevelMin="100" LevelMax="200" />
+      <ItemLevel LevelMin="190" LevelMax="300" />
       <Keywords OptionalKeywords="belt,amulet,ring" MandatoryKeywords="accessory" />
       <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
     </DropParams>
@@ -2354,7 +2354,7 @@
   </Affix>
   <Affix AffixId="ac_slave_offensivespeed_score_percent_12" Class="slave_accessory_12" AffixType="slave" Tier="12">
     <DropParams Frequency="0">
-      <ItemLevel LevelMin="110" LevelMax="200" />
+      <ItemLevel LevelMin="190" LevelMax="300" />
       <Keywords OptionalKeywords="belt,amulet,ring" MandatoryKeywords="accessory" />
       <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
     </DropParams>
@@ -2386,7 +2386,7 @@
     </MagicEffect>
   </Affix>
   <Affix AffixId="ac_slave_life_leech_percent_global_3" Class="slave_accessory_3" AffixType="slave" Tier="3">
-    <DropParams Frequency="10000" Hunt="1">
+    <DropParams Frequency="10000" AffixOrigin="Hunt">
       <ItemLevel LevelMin="20" LevelMax="50" />
       <Keywords OptionalKeywords="belt,amulet,ring" MandatoryKeywords="accessory" />
       <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
@@ -2397,7 +2397,7 @@
     </MagicEffect>
   </Affix>
   <Affix AffixId="ac_slave_life_leech_percent_global_4" Class="slave_accessory_4" AffixType="slave" Tier="4">
-    <DropParams Frequency="10000" Hunt="1">
+    <DropParams Frequency="10000" AffixOrigin="Hunt">
       <ItemLevel LevelMin="30" LevelMax="60" />
       <Keywords OptionalKeywords="belt,amulet,ring" MandatoryKeywords="accessory" />
       <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
@@ -2408,8 +2408,8 @@
     </MagicEffect>
   </Affix>
   <Affix AffixId="ac_slave_life_leech_percent_global_5" Class="slave_accessory_5" AffixType="slave" Tier="5">
-    <DropParams Frequency="10000" Hunt="1">
-      <ItemLevel LevelMin="40" LevelMax="120" />
+    <DropParams Frequency="10000" AffixOrigin="Hunt">
+      <ItemLevel LevelMin="40" LevelMax="80" />
       <Keywords OptionalKeywords="belt,amulet,ring" MandatoryKeywords="accessory" />
       <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
     </DropParams>
@@ -2419,8 +2419,8 @@
     </MagicEffect>
   </Affix>
   <Affix AffixId="ac_slave_life_leech_percent_global_6" Class="slave_accessory_6" AffixType="slave" Tier="6">
-    <DropParams Frequency="10000" Hunt="1">
-      <ItemLevel LevelMin="50" LevelMax="130" />
+    <DropParams Frequency="10000" AffixOrigin="Hunt">
+      <ItemLevel LevelMin="70" LevelMax="100" />
       <Keywords OptionalKeywords="belt,amulet,ring" MandatoryKeywords="accessory" />
       <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
     </DropParams>
@@ -2430,8 +2430,8 @@
     </MagicEffect>
   </Affix>
   <Affix AffixId="ac_slave_life_leech_percent_global_7" Class="slave_accessory_7" AffixType="slave" Tier="7">
-    <DropParams Frequency="10000" Hunt="1">
-      <ItemLevel LevelMin="60" LevelMax="140" />
+    <DropParams Frequency="10000" AffixOrigin="Hunt">
+      <ItemLevel LevelMin="90" LevelMax="140" />
       <Keywords OptionalKeywords="belt,amulet,ring" MandatoryKeywords="accessory" />
       <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
     </DropParams>
@@ -2441,8 +2441,8 @@
     </MagicEffect>
   </Affix>
   <Affix AffixId="ac_slave_life_leech_percent_global_8" Class="slave_accessory_8" AffixType="slave" Tier="8">
-    <DropParams Frequency="10000" Hunt="1">
-      <ItemLevel LevelMin="70" LevelMax="150" />
+    <DropParams Frequency="10000" AffixOrigin="Hunt">
+      <ItemLevel LevelMin="130" LevelMax="200" />
       <Keywords OptionalKeywords="belt,amulet,ring" MandatoryKeywords="accessory" />
       <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
     </DropParams>
@@ -2452,8 +2452,8 @@
     </MagicEffect>
   </Affix>
   <Affix AffixId="ac_slave_life_leech_percent_global_9" Class="slave_accessory_9" AffixType="slave" Tier="9">
-    <DropParams Frequency="10000" Hunt="1">
-      <ItemLevel LevelMin="80" LevelMax="150" />
+    <DropParams Frequency="10000" AffixOrigin="Hunt">
+      <ItemLevel LevelMin="150" LevelMax="250" />
       <Keywords OptionalKeywords="belt,amulet,ring" MandatoryKeywords="accessory" />
       <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
     </DropParams>
@@ -2463,8 +2463,8 @@
     </MagicEffect>
   </Affix>
   <Affix AffixId="ac_slave_life_leech_percent_global_10" Class="slave_accessory_10" AffixType="slave" Tier="10">
-    <DropParams Frequency="10000" Hunt="1">
-      <ItemLevel LevelMin="90" LevelMax="200" />
+    <DropParams Frequency="10000" AffixOrigin="Hunt">
+      <ItemLevel LevelMin="170" LevelMax="250" />
       <Keywords OptionalKeywords="belt,amulet,ring" MandatoryKeywords="accessory" />
       <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
     </DropParams>
@@ -2474,8 +2474,8 @@
     </MagicEffect>
   </Affix>
   <Affix AffixId="ac_slave_life_leech_percent_global_11" Class="slave_accessory_11" AffixType="slave" Tier="11">
-    <DropParams Frequency="10000" Hunt="1">
-      <ItemLevel LevelMin="100" LevelMax="200" />
+    <DropParams Frequency="10000" AffixOrigin="Hunt">
+      <ItemLevel LevelMin="190" LevelMax="300" />
       <Keywords OptionalKeywords="belt,amulet,ring" MandatoryKeywords="accessory" />
       <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
     </DropParams>
@@ -2485,8 +2485,8 @@
     </MagicEffect>
   </Affix>
   <Affix AffixId="ac_slave_life_leech_percent_global_12" Class="slave_accessory_12" AffixType="slave" Tier="12">
-    <DropParams Frequency="10000" Hunt="1">
-      <ItemLevel LevelMin="110" LevelMax="200" />
+    <DropParams Frequency="10000" AffixOrigin="Hunt">
+      <ItemLevel LevelMin="190" LevelMax="300" />
       <Keywords OptionalKeywords="belt,amulet,ring" MandatoryKeywords="accessory" />
       <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
     </DropParams>
@@ -2496,7 +2496,7 @@
     </MagicEffect>
   </Affix>
   <Affix AffixId="ac_slave_attack_critical_strike_chance_1" Class="slave_accessory_1" AffixType="slave" Tier="1">
-    <DropParams Frequency="10000" Hunt="1">
+    <DropParams Frequency="10000" AffixOrigin="Hunt">
       <ItemLevel LevelMin="1" LevelMax="30" />
       <Keywords OptionalKeywords="belt,amulet" MandatoryKeywords="accessory" />
       <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
@@ -2507,7 +2507,7 @@
     </MagicEffect>
   </Affix>
   <Affix AffixId="ac_slave_attack_critical_strike_chance_2" Class="slave_accessory_2" AffixType="slave" Tier="2">
-    <DropParams Frequency="10000" Hunt="1">
+    <DropParams Frequency="10000" AffixOrigin="Hunt">
       <ItemLevel LevelMin="10" LevelMax="40" />
       <Keywords OptionalKeywords="belt,amulet" MandatoryKeywords="accessory" />
       <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
@@ -2518,7 +2518,7 @@
     </MagicEffect>
   </Affix>
   <Affix AffixId="ac_slave_attack_critical_strike_chance_3" Class="slave_accessory_3" AffixType="slave" Tier="3">
-    <DropParams Frequency="10000" Hunt="1">
+    <DropParams Frequency="10000" AffixOrigin="Hunt">
       <ItemLevel LevelMin="20" LevelMax="50" />
       <Keywords OptionalKeywords="belt,amulet" MandatoryKeywords="accessory" />
       <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
@@ -2529,7 +2529,7 @@
     </MagicEffect>
   </Affix>
   <Affix AffixId="ac_slave_attack_critical_strike_chance_4" Class="slave_accessory_4" AffixType="slave" Tier="4">
-    <DropParams Frequency="10000" Hunt="1">
+    <DropParams Frequency="10000" AffixOrigin="Hunt">
       <ItemLevel LevelMin="30" LevelMax="60" />
       <Keywords OptionalKeywords="belt,amulet" MandatoryKeywords="accessory" />
       <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
@@ -2540,8 +2540,8 @@
     </MagicEffect>
   </Affix>
   <Affix AffixId="ac_slave_attack_critical_strike_chance_5" Class="slave_accessory_5" AffixType="slave" Tier="5">
-    <DropParams Frequency="10000" Hunt="1">
-      <ItemLevel LevelMin="40" LevelMax="120" />
+    <DropParams Frequency="10000" AffixOrigin="Hunt">
+      <ItemLevel LevelMin="40" LevelMax="80" />
       <Keywords OptionalKeywords="belt,amulet" MandatoryKeywords="accessory" />
       <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
     </DropParams>
@@ -2551,8 +2551,8 @@
     </MagicEffect>
   </Affix>
   <Affix AffixId="ac_slave_attack_critical_strike_chance_6" Class="slave_accessory_6" AffixType="slave" Tier="6">
-    <DropParams Frequency="10000" Hunt="1">
-      <ItemLevel LevelMin="50" LevelMax="130" />
+    <DropParams Frequency="10000" AffixOrigin="Hunt">
+      <ItemLevel LevelMin="70" LevelMax="100" />
       <Keywords OptionalKeywords="belt,amulet" MandatoryKeywords="accessory" />
       <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
     </DropParams>
@@ -2562,8 +2562,8 @@
     </MagicEffect>
   </Affix>
   <Affix AffixId="ac_slave_attack_critical_strike_chance_7" Class="slave_accessory_7" AffixType="slave" Tier="7">
-    <DropParams Frequency="10000" Hunt="1">
-      <ItemLevel LevelMin="60" LevelMax="140" />
+    <DropParams Frequency="10000" AffixOrigin="Hunt">
+      <ItemLevel LevelMin="90" LevelMax="140" />
       <Keywords OptionalKeywords="belt,amulet" MandatoryKeywords="accessory" />
       <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
     </DropParams>
@@ -2573,8 +2573,8 @@
     </MagicEffect>
   </Affix>
   <Affix AffixId="ac_slave_attack_critical_strike_chance_8" Class="slave_accessory_8" AffixType="slave" Tier="8">
-    <DropParams Frequency="10000" Hunt="1">
-      <ItemLevel LevelMin="70" LevelMax="150" />
+    <DropParams Frequency="10000" AffixOrigin="Hunt">
+      <ItemLevel LevelMin="130" LevelMax="200" />
       <Keywords OptionalKeywords="belt,amulet" MandatoryKeywords="accessory" />
       <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
     </DropParams>
@@ -2584,8 +2584,8 @@
     </MagicEffect>
   </Affix>
   <Affix AffixId="ac_slave_attack_critical_strike_chance_9" Class="slave_accessory_9" AffixType="slave" Tier="9">
-    <DropParams Frequency="10000" Hunt="1">
-      <ItemLevel LevelMin="80" LevelMax="150" />
+    <DropParams Frequency="10000" AffixOrigin="Hunt">
+      <ItemLevel LevelMin="150" LevelMax="250" />
       <Keywords OptionalKeywords="belt,amulet" MandatoryKeywords="accessory" />
       <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
     </DropParams>
@@ -2595,8 +2595,8 @@
     </MagicEffect>
   </Affix>
   <Affix AffixId="ac_slave_attack_critical_strike_chance_10" Class="slave_accessory_10" AffixType="slave" Tier="10">
-    <DropParams Frequency="10000" Hunt="1">
-      <ItemLevel LevelMin="90" LevelMax="200" />
+    <DropParams Frequency="10000" AffixOrigin="Hunt">
+      <ItemLevel LevelMin="170" LevelMax="250" />
       <Keywords OptionalKeywords="belt,amulet" MandatoryKeywords="accessory" />
       <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
     </DropParams>
@@ -2606,8 +2606,8 @@
     </MagicEffect>
   </Affix>
   <Affix AffixId="ac_slave_attack_critical_strike_chance_11" Class="slave_accessory_11" AffixType="slave" Tier="11">
-    <DropParams Frequency="10000" Hunt="1">
-      <ItemLevel LevelMin="100" LevelMax="200" />
+    <DropParams Frequency="10000" AffixOrigin="Hunt">
+      <ItemLevel LevelMin="190" LevelMax="300" />
       <Keywords OptionalKeywords="belt,amulet" MandatoryKeywords="accessory" />
       <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
     </DropParams>
@@ -2617,8 +2617,8 @@
     </MagicEffect>
   </Affix>
   <Affix AffixId="ac_slave_attack_critical_strike_chance_12" Class="slave_accessory_12" AffixType="slave" Tier="12">
-    <DropParams Frequency="10000" Hunt="1">
-      <ItemLevel LevelMin="110" LevelMax="200" />
+    <DropParams Frequency="10000" AffixOrigin="Hunt">
+      <ItemLevel LevelMin="190" LevelMax="300" />
       <Keywords OptionalKeywords="belt,amulet" MandatoryKeywords="accessory" />
       <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
     </DropParams>
@@ -2628,7 +2628,7 @@
     </MagicEffect>
   </Affix>
   <Affix AffixId="ac_slave_status_ailment_chance_1" Class="slave_accessory_1" AffixType="slave" Tier="1">
-    <DropParams Frequency="10000" Hunt="1">
+    <DropParams Frequency="10000" AffixOrigin="Hunt">
       <ItemLevel LevelMin="1" LevelMax="30" />
       <Keywords OptionalKeywords="belt,amulet" MandatoryKeywords="accessory" />
       <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
@@ -2639,7 +2639,7 @@
     </MagicEffect>
   </Affix>
   <Affix AffixId="ac_slave_status_ailment_chance_2" Class="slave_accessory_2" AffixType="slave" Tier="2">
-    <DropParams Frequency="10000" Hunt="1">
+    <DropParams Frequency="10000" AffixOrigin="Hunt">
       <ItemLevel LevelMin="10" LevelMax="40" />
       <Keywords OptionalKeywords="belt,amulet" MandatoryKeywords="accessory" />
       <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
@@ -2650,7 +2650,7 @@
     </MagicEffect>
   </Affix>
   <Affix AffixId="ac_slave_status_ailment_chance_3" Class="slave_accessory_3" AffixType="slave" Tier="3">
-    <DropParams Frequency="10000" Hunt="1">
+    <DropParams Frequency="10000" AffixOrigin="Hunt">
       <ItemLevel LevelMin="20" LevelMax="50" />
       <Keywords OptionalKeywords="belt,amulet" MandatoryKeywords="accessory" />
       <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
@@ -2661,7 +2661,7 @@
     </MagicEffect>
   </Affix>
   <Affix AffixId="ac_slave_status_ailment_chance_4" Class="slave_accessory_4" AffixType="slave" Tier="4">
-    <DropParams Frequency="10000" Hunt="1">
+    <DropParams Frequency="10000" AffixOrigin="Hunt">
       <ItemLevel LevelMin="30" LevelMax="60" />
       <Keywords OptionalKeywords="belt,amulet" MandatoryKeywords="accessory" />
       <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
@@ -2672,8 +2672,8 @@
     </MagicEffect>
   </Affix>
   <Affix AffixId="ac_slave_status_ailment_chance_5" Class="slave_accessory_5" AffixType="slave" Tier="5">
-    <DropParams Frequency="10000" Hunt="1">
-      <ItemLevel LevelMin="40" LevelMax="120" />
+    <DropParams Frequency="10000" AffixOrigin="Hunt">
+      <ItemLevel LevelMin="40" LevelMax="80" />
       <Keywords OptionalKeywords="belt,amulet" MandatoryKeywords="accessory" />
       <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
     </DropParams>
@@ -2683,8 +2683,8 @@
     </MagicEffect>
   </Affix>
   <Affix AffixId="ac_slave_status_ailment_chance_6" Class="slave_accessory_6" AffixType="slave" Tier="6">
-    <DropParams Frequency="10000" Hunt="1">
-      <ItemLevel LevelMin="50" LevelMax="130" />
+    <DropParams Frequency="10000" AffixOrigin="Hunt">
+      <ItemLevel LevelMin="70" LevelMax="100" />
       <Keywords OptionalKeywords="belt,amulet" MandatoryKeywords="accessory" />
       <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
     </DropParams>
@@ -2694,8 +2694,8 @@
     </MagicEffect>
   </Affix>
   <Affix AffixId="ac_slave_status_ailment_chance_7" Class="slave_accessory_7" AffixType="slave" Tier="7">
-    <DropParams Frequency="10000" Hunt="1">
-      <ItemLevel LevelMin="60" LevelMax="140" />
+    <DropParams Frequency="10000" AffixOrigin="Hunt">
+      <ItemLevel LevelMin="90" LevelMax="140" />
       <Keywords OptionalKeywords="belt,amulet" MandatoryKeywords="accessory" />
       <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
     </DropParams>
@@ -2705,8 +2705,8 @@
     </MagicEffect>
   </Affix>
   <Affix AffixId="ac_slave_status_ailment_chance_8" Class="slave_accessory_8" AffixType="slave" Tier="8">
-    <DropParams Frequency="10000" Hunt="1">
-      <ItemLevel LevelMin="70" LevelMax="150" />
+    <DropParams Frequency="10000" AffixOrigin="Hunt">
+      <ItemLevel LevelMin="130" LevelMax="200" />
       <Keywords OptionalKeywords="belt,amulet" MandatoryKeywords="accessory" />
       <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
     </DropParams>
@@ -2716,8 +2716,8 @@
     </MagicEffect>
   </Affix>
   <Affix AffixId="ac_slave_status_ailment_chance_9" Class="slave_accessory_9" AffixType="slave" Tier="9">
-    <DropParams Frequency="10000" Hunt="1">
-      <ItemLevel LevelMin="80" LevelMax="160" />
+    <DropParams Frequency="10000" AffixOrigin="Hunt">
+      <ItemLevel LevelMin="150" LevelMax="250" />
       <Keywords OptionalKeywords="belt,amulet" MandatoryKeywords="accessory" />
       <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
     </DropParams>
@@ -2727,8 +2727,8 @@
     </MagicEffect>
   </Affix>
   <Affix AffixId="ac_slave_status_ailment_chance_10" Class="slave_accessory_10" AffixType="slave" Tier="10">
-    <DropParams Frequency="10000" Hunt="1">
-      <ItemLevel LevelMin="90" LevelMax="200" />
+    <DropParams Frequency="10000" AffixOrigin="Hunt">
+      <ItemLevel LevelMin="170" LevelMax="250" />
       <Keywords OptionalKeywords="belt,amulet" MandatoryKeywords="accessory" />
       <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
     </DropParams>
@@ -2738,8 +2738,8 @@
     </MagicEffect>
   </Affix>
   <Affix AffixId="ac_slave_status_ailment_chance_11" Class="slave_accessory_11" AffixType="slave" Tier="11">
-    <DropParams Frequency="10000" Hunt="1">
-      <ItemLevel LevelMin="100" LevelMax="200" />
+    <DropParams Frequency="10000" AffixOrigin="Hunt">
+      <ItemLevel LevelMin="190" LevelMax="300" />
       <Keywords OptionalKeywords="belt,amulet" MandatoryKeywords="accessory" />
       <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
     </DropParams>
@@ -2749,8 +2749,8 @@
     </MagicEffect>
   </Affix>
   <Affix AffixId="ac_slave_status_ailment_chance_12" Class="slave_accessory_12" AffixType="slave" Tier="12">
-    <DropParams Frequency="10000" Hunt="1">
-      <ItemLevel LevelMin="110" LevelMax="200" />
+    <DropParams Frequency="10000" AffixOrigin="Hunt">
+      <ItemLevel LevelMin="190" LevelMax="300" />
       <Keywords OptionalKeywords="belt,amulet" MandatoryKeywords="accessory" />
       <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
     </DropParams>

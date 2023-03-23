@@ -1,6 +1,6 @@
 <MetaData>
   <Skill ESkill="apo_mage_laser" Keywords="default_melee,attack_skill" UID="apo_mage_laser">
-    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="Player_Apo_mage" TrailPresetBase="apo" />
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="Player_Apo_Mage_Laser" TrailPresetBase="apo" />
     <Animation ActionString="apo_skill_ult_in_01" ScaleWithAttackSpeed="1" AnimationDrivenMovement="0" />
     <AnimationList>
       <Animation Key="in_01" ActionString="apo_skill_ult_in_01" />
@@ -66,7 +66,7 @@
     </Specific_ApoMage_Laser>
   </Skill>
   <Skill UID="apo_mage_laser_beam_01" Keywords="default_melee,attack_skill" ESkill="default_empty">
-    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="Player_Apo_mage" TrailPresetBase="apo" />
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="Player_Apo_Mage_Laser_1" TrailPresetBase="apo" />
     <Aggression TargetValueOnHit="10" />
     <DamagePreset DamagePreset="Apo_Mage_Strong" Multiplier="0.2" Type="umbra" />
     <StatusAilment>
@@ -75,7 +75,7 @@
     <SoundTrigger OnHit="Play_APO_Mage_BigProjectile_Hit" OnKill="Play_OnKill_Impact_Lethal_Spell" />
   </Skill>
   <Skill UID="apo_mage_laser_beam_02" Keywords="default_melee,attack_skill" ESkill="default_empty">
-    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="Player_Apo_mage" TrailPresetBase="apo" />
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="Player_Apo_Mage_Laser_2" TrailPresetBase="apo" />
     <Aggression TargetValueOnHit="10" />
     <DamagePreset DamagePreset="Apo_Mage_Strong" Multiplier="0.4" Type="umbra" />
     <StatusAilment>
@@ -84,7 +84,7 @@
     <SoundTrigger OnHit="Play_APO_Mage_BigProjectile_Hit" OnKill="Play_OnKill_Impact_Lethal_Spell" />
   </Skill>
   <Skill UID="apo_mage_laser_beam_03" Keywords="default_melee,attack_skill" ESkill="default_empty">
-    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="Player_Apo_mage" TrailPresetBase="apo" />
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="Player_Apo_Mage_Laser_3" TrailPresetBase="apo" />
     <Aggression TargetValueOnHit="10" />
     <DamagePreset DamagePreset="Apo_Mage_Strong" Multiplier="0.6" Type="umbra" />
     <StatusAilment>
@@ -93,7 +93,7 @@
     <SoundTrigger OnHit="Play_APO_Mage_BigProjectile_Hit" OnKill="Play_OnKill_Impact_Lethal_Spell" />
   </Skill>
   <Skill UID="apo_mage_laser_impact_01" Keywords="default_melee,attack_skill" ESkill="default_empty">
-    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="Player_Apo_mage" TrailPresetBase="apo" />
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="Player_Apo_Mage_Laser_1" TrailPresetBase="apo" />
     <Aggression TargetValueOnHit="10" />
     <DamagePreset DamagePreset="Apo_Mage_Strong" Multiplier="0.5" Type="umbra" />
     <StatusAilment>
@@ -102,7 +102,7 @@
     <SoundTrigger OnHit="Play_APO_Mage_BigProjectile_Hit" OnKill="Play_OnKill_Impact_Lethal_Spell" />
   </Skill>
   <Skill UID="apo_mage_laser_impact_02" Keywords="default_melee,attack_skill" ESkill="default_empty">
-    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="Player_Apo_mage" TrailPresetBase="apo" />
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="Player_Apo_Mage_Laser_2" TrailPresetBase="apo" />
     <Aggression TargetValueOnHit="10" />
     <DamagePreset DamagePreset="Apo_Mage_Strong" Multiplier="1" Type="umbra" />
     <StatusAilment>
@@ -111,7 +111,7 @@
     <SoundTrigger OnHit="Play_APO_Mage_BigProjectile_Hit" OnKill="Play_OnKill_Impact_Lethal_Spell" />
   </Skill>
   <Skill UID="apo_mage_laser_impact_03" Keywords="default_melee,attack_skill" ESkill="default_empty">
-    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="Player_Apo_mage" TrailPresetBase="apo" />
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="Player_Apo_Mage_Laser_3" TrailPresetBase="apo" />
     <Aggression TargetValueOnHit="10" />
     <DamagePreset DamagePreset="Apo_Mage_Strong" Multiplier="1.5" Type="umbra" />
     <StatusAilment>

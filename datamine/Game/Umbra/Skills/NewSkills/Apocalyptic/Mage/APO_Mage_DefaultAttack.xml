@@ -1,7 +1,7 @@
 <MetaData>
   <Skill ESkill="apo_mage_defaultattack" Keywords="default_ranged,attack_skill" UID="apo_mage_default_attack_01">
     <Animation ActionString="apo_atk_01" IgnoreAnimationMovementWhenHoldingShift="1" ScaleWithAttackSpeed="1" AnimationDrivenMovement="1" />
-    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="Player_Apo_mage" TrailPresetBase="apo" />
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="Player_Apo_Mage_atk_01" TrailPresetBase="apo" />
     <HUD HUDPicture="../u_resources/spells/Active_Skills/apo_mage_default_attack.png" UIName="@ui_APO_Mage_DefaultSkill" Lore="@ui_APO_Mage_DefaultSkill_Lore" />
     <Combo ComboStarter="APO_Mage_Default_Combo" />
     <Aggression TargetValueOnHit="10" />
@@ -9,7 +9,7 @@
     <ResourceCost ApoResourceCost="-40" />
     <CastingParams CastBone="Bip01 Spine2" RequiresApocalypticForm="1" />
     <Projectile Name="apo_mage_defaultattack_proj" ProjectileCount="5">
-      <AutomaticCastAngle distanceMin="2" distanceMax="9" totalAngleAtDistanceMin="90" totalAngleAtDistanceMax="90" projectileAngleAtDistanceMin="30" projectileAngleAtDistanceMax="10" />
+      <AutomaticCastAngle distanceMin="2" distanceMax="9" totalAngleAtDistanceMin="25" totalAngleAtDistanceMax="90" projectileAngleAtDistanceMin="30" projectileAngleAtDistanceMax="10" />
     </Projectile>
     <ParticleList>
       <Particle Key="extra_explosion" Name="U_ApocalypticForm.Mage_ApocalypticFrom.Additional_Impact_BasicProjectile_01" Offset="0,0,0" Direction="0,1,0" Scale="1" InstantKill="0" />
@@ -22,7 +22,7 @@
   </Skill>
   <Skill ESkill="apo_mage_defaultattack" Keywords="default_ranged,attack_skill" UID="apo_mage_default_attack_02">
     <Animation ActionString="apo_atk_02" IgnoreAnimationMovementWhenHoldingShift="1" ScaleWithAttackSpeed="1" AnimationDrivenMovement="1" />
-    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="Player_Apo_mage" TrailPresetBase="apo" />
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="Player_Apo_Mage_atk_02" TrailPresetBase="apo" />
     <HUD HUDPicture="../u_resources/spells/Active_Skills/apo_mage_default_attack.png" UIName="@ui_APO_Mage_DefaultSkill" Lore="@ui_APO_Mage_DefaultSkill_Lore" />
     <Combo ComboStarter="APO_Mage_Default_Combo" />
     <Aggression TargetValueOnHit="10" />
@@ -30,7 +30,7 @@
     <ResourceCost ApoResourceCost="-40" />
     <CastingParams CastBone="Bip01 Spine2" RequiresApocalypticForm="1" />
     <Projectile Name="apo_mage_defaultattack_proj" ProjectileCount="5">
-      <AutomaticCastAngle distanceMin="2" distanceMax="9" totalAngleAtDistanceMin="90" totalAngleAtDistanceMax="90" projectileAngleAtDistanceMin="30" projectileAngleAtDistanceMax="10" />
+      <AutomaticCastAngle distanceMin="2" distanceMax="9" totalAngleAtDistanceMin="25" totalAngleAtDistanceMax="90" projectileAngleAtDistanceMin="30" projectileAngleAtDistanceMax="10" />
     </Projectile>
     <ParticleList>
       <Particle Key="extra_explosion" Name="U_ApocalypticForm.Mage_ApocalypticFrom.Additional_Impact_BasicProjectile_01" Offset="0,0,0" Direction="0,1,0" Scale="1" InstantKill="0" />
@@ -43,7 +43,7 @@
   </Skill>
   <Skill ESkill="apo_mage_defaultattack" Keywords="default_ranged,attack_skill" UID="apo_mage_default_attack_03">
     <Animation ActionString="apo_atk_03" IgnoreAnimationMovementWhenHoldingShift="1" ScaleWithAttackSpeed="1" AnimationDrivenMovement="1" />
-    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="Player_Apo_mage" TrailPresetBase="apo" />
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="Player_Apo_Mage_atk_03" TrailPresetBase="apo" />
     <HUD HUDPicture="../u_resources/spells/Active_Skills/apo_mage_default_attack.png" UIName="@ui_APO_Mage_DefaultSkill" Lore="@ui_APO_Mage_DefaultSkill_Lore" />
     <Combo ComboStarter="APO_Mage_Default_Combo" />
     <Aggression TargetValueOnHit="10" />
@@ -51,7 +51,7 @@
     <ResourceCost ApoResourceCost="-40" />
     <CastingParams CastBone="Bip01 Spine2" RequiresApocalypticForm="1" />
     <Projectile Name="apo_mage_defaultattack_proj" ProjectileCount="5">
-      <AutomaticCastAngle distanceMin="2" distanceMax="9" totalAngleAtDistanceMin="90" totalAngleAtDistanceMax="90" projectileAngleAtDistanceMin="30" projectileAngleAtDistanceMax="10" />
+      <AutomaticCastAngle distanceMin="2" distanceMax="9" totalAngleAtDistanceMin="25" totalAngleAtDistanceMax="90" projectileAngleAtDistanceMin="30" projectileAngleAtDistanceMax="10" />
     </Projectile>
     <ParticleList>
       <Particle Key="extra_explosion" Name="U_ApocalypticForm.Mage_ApocalypticFrom.Additional_Impact_BasicProjectile_01" Offset="0,0,0" Direction="0,1,0" Scale="1" InstantKill="0" />
@@ -64,7 +64,7 @@
   </Skill>
   <Skill ESkill="apo_mage_defaultattack" Keywords="default_ranged,attack_skill" UID="apo_mage_default_attack_04">
     <Animation ActionString="apo_atk_04" IgnoreAnimationMovementWhenHoldingShift="1" ScaleWithAttackSpeed="1" AnimationDrivenMovement="1" />
-    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="Player_Apo_mage" TrailPresetBase="apo" />
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="Player_Apo_Mage_atk_04" TrailPresetBase="apo" />
     <HUD HUDPicture="../u_resources/spells/Active_Skills/apo_mage_default_attack.png" UIName="@ui_APO_Mage_DefaultSkill" Lore="@ui_APO_Mage_DefaultSkill_Lore" />
     <Combo ComboStarter="APO_Mage_Default_Combo" />
     <Aggression TargetValueOnHit="10" />
@@ -72,7 +72,7 @@
     <ResourceCost ApoResourceCost="-40" />
     <CastingParams CastBone="Bip01 Spine2" RequiresApocalypticForm="1" />
     <Projectile Name="apo_mage_defaultattack_proj" ProjectileCount="5">
-      <AutomaticCastAngle distanceMin="2" distanceMax="9" totalAngleAtDistanceMin="90" totalAngleAtDistanceMax="90" projectileAngleAtDistanceMin="30" projectileAngleAtDistanceMax="10" />
+      <AutomaticCastAngle distanceMin="2" distanceMax="9" totalAngleAtDistanceMin="25" totalAngleAtDistanceMax="90" projectileAngleAtDistanceMin="30" projectileAngleAtDistanceMax="10" />
     </Projectile>
     <ParticleList>
       <Particle Key="extra_explosion" Name="U_ApocalypticForm.Mage_ApocalypticFrom.Additional_Impact_BasicProjectile_01" Offset="0,0,0" Direction="0,1,0" Scale="1" InstantKill="0" />

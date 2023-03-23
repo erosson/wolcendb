@@ -27,4 +27,60 @@
     </Cosmetics>
     <ContextualSoundTrigger ToPlay="Endgame_ExpertForge_FinishProject_Liberator" ToResume="EndgameIdle" />
   </Reward>
+  <Reward Name="expert_forge_reward_2" UITitle="@ui_gdc_armor_reward" UILore="@ui_gdc_armor_reward_lore">
+    <CustomMessages>
+      <Message UIDesc="@ui_gdc_armor_summary" />
+    </CustomMessages>
+    <Cosmetics>
+      <Cosmetic Name="u_gdc_helmet" Weapon="0" />
+      <Cosmetic Name="u_gdc_arm" Weapon="0" />
+      <Cosmetic Name="u_gdc_chest" Weapon="0" />
+      <Cosmetic Name="u_gdc_shoulder" Weapon="0" />
+      <Cosmetic Name="u_gdc_pant" Weapon="0" />
+      <Cosmetic Name="u_gdc_boots" Weapon="0" />
+    </Cosmetics>
+    <ContextualSoundTrigger ToPlay="Endgame_ExpertForge_FinishProject_Liberator" ToResume="EndgameIdle" />
+  </Reward>
+  <Reward Name="expert_forge_reward_3" UITitle="@ui_sunmoon_armor_reward" UILore="@ui_sunmoon_armor_reward_lore">
+    <CustomMessages>
+      <Message UIDesc="@ui_sunmoon_armor_summary" />
+    </CustomMessages>
+    <Cosmetics>
+      <Cosmetic Name="u_Sunmoon_Helmet" Weapon="0" />
+      <Cosmetic Name="u_Sunmoon_Arm" Weapon="0" />
+      <Cosmetic Name="u_Sunmoon_Chest" Weapon="0" />
+      <Cosmetic Name="u_Sunmoon_Shoulder" Weapon="0" />
+      <Cosmetic Name="u_Sunmoon_Pant" Weapon="0" />
+      <Cosmetic Name="u_Sunmoon_Boots" Weapon="0" />
+    </Cosmetics>
+    <ContextualSoundTrigger ToPlay="Endgame_ExpertForge_FinishProject_Liberator" ToResume="EndgameIdle" />
+  </Reward>
+  <Reward Name="expert_forge_reward_4" UITitle="@ui_veteran_armor_reward" UILore="@ui_veteran_armor_reward_lore">
+    <CustomMessages>
+      <Message UIDesc="@ui_veteran_armor_summary" />
+    </CustomMessages>
+    <Cosmetics>
+      <Cosmetic Name="u_Veteran_Helmet" Weapon="0" />
+      <Cosmetic Name="u_Veteran_Arm" Weapon="0" />
+      <Cosmetic Name="u_Veteran_Chest" Weapon="0" />
+      <Cosmetic Name="u_Veteran_Shoulder" Weapon="0" />
+      <Cosmetic Name="u_Veteran_Pant" Weapon="0" />
+      <Cosmetic Name="u_Veteran_Boots" Weapon="0" />
+    </Cosmetics>
+    <ContextualSoundTrigger ToPlay="Endgame_ExpertForge_FinishProject_Liberator" ToResume="EndgameIdle" />
+  </Reward>
+  <Reward Name="expert_forge_reward_5" UITitle="@ui_republic_armor_reward" UILore="@ui_republic_armor_reward_lore">
+    <CustomMessages>
+      <Message UIDesc="@ui_veteran_armor_summary" />
+    </CustomMessages>
+    <Cosmetics>
+      <Cosmetic Name="u_republic_Helmet" Weapon="0" />
+      <Cosmetic Name="u_republic_Arm" Weapon="0" />
+      <Cosmetic Name="u_republic_Chest" Weapon="0" />
+      <Cosmetic Name="u_republic_Shoulder" Weapon="0" />
+      <Cosmetic Name="u_republic_Pant" Weapon="0" />
+      <Cosmetic Name="u_republic_Boots" Weapon="0" />
+    </Cosmetics>
+    <ContextualSoundTrigger ToPlay="Endgame_ExpertForge_FinishProject_Liberator" ToResume="EndgameIdle" />
+  </Reward>
 </MetaData>

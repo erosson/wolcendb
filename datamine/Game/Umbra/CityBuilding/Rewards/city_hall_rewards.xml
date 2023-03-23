@@ -48,7 +48,7 @@
     <Currency Gold_Min="0" Gold_Max="0" PA_Min="0" PA_Max="0" />
     <ContextualSoundTrigger ToPlay="Endgame_CityHall_ProjectCompleted" ToResume="EndgameIdle" />
   </Reward>
-  <Reward Name="city_hall_working_conditions_reward" UITitle="@ui_city_hall_working_conditions_reward_lore" UILore="@ui_city_hall_working_conditions_reward">
+  <Reward Name="city_hall_working_conditions_reward" UITitle="@ui_city_hall_working_conditions_reward" UILore="@ui_city_hall_working_conditions_reward_lore">
     <CustomMessages>
       <Message UIDesc="@ui_city_hall_working_conditions_reward_summary" />
     </CustomMessages>

@@ -70,14 +70,14 @@
   <Spell Name="WILL_9" UIName="@ui_WILL_9_name" HUDLoreDesc="@ui_WILL_9_lore" GameplayDesc="@ui_WILL_9_desc">
     <MagicEffects>
       <EIM Name="statusailment_inflict_score_percent" HUDDesc="@ui_eim_statusailment_inflict_score_percent" Permanent="1">
-        <Semantics CharacteristicScorePercentInt="30" />
+        <Semantics CharacteristicScorePercentInt="20" />
       </EIM>
     </MagicEffects>
   </Spell>
   <Spell Name="WILL_10" UIName="@ui_WILL_10_name" HUDLoreDesc="" GameplayDesc="">
     <MagicEffects>
       <EIM Name="skill_cooldownreduction_percent" HUDDesc="@ui_eim_skill_cooldownreduction_percent" Permanent="1">
-        <Semantics DurationPercentFloat="10" />
+        <Semantics DurationPercentFloat="6" />
       </EIM>
     </MagicEffects>
   </Spell>
@@ -91,7 +91,7 @@
   <Spell Name="WILL_12" UIName="@ui_WILL_12_name" HUDLoreDesc="" GameplayDesc="">
     <MagicEffects>
       <EIM Name="globes_pickup_radius" HUDDesc="@ui_eim_globes_pickup_radius" Permanent="1">
-        <Semantics RadiusFloat="15" />
+        <Semantics RadiusFloat="5" />
       </EIM>
     </MagicEffects>
   </Spell>
@@ -170,7 +170,7 @@
   <Spell Name="WILL_22" UIName="@ui_WILL_22_name" HUDLoreDesc="@ui_WILL_22_lore" GameplayDesc="@ui_WILL_22_desc">
     <MagicEffects>
       <EIM Name="damage_reduction_on_full_force_shield" HUDDesc="@ui_eim_damage_reduction_on_full_force_shield" Permanent="1">
-        <Semantics DamagePercentFloat="30" />
+        <Semantics DamagePercentFloat="20" />
       </EIM>
     </MagicEffects>
   </Spell>

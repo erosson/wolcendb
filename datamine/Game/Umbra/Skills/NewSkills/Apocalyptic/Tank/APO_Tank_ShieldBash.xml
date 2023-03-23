@@ -1,6 +1,6 @@
 <MetaData>
   <Skill UID="apo_tank_shieldbash" ESkill="apo_tank_shieldbash" Keywords="">
-    <VisualFeedback TrailPresetBase="apo" BloodDecalOrientation="forward" />
+    <VisualFeedback TrailPresetBase="apo" feedbackPresetBase="Player_apo_Tank_ShieldBash" BloodDecalOrientation="forward" />
     <Animation AnimationDrivenMovement="1" ActionString="apo_skill_01" />
     <CastingParams CastBone="R_weapon_bone" RequiresApocalypticForm="1" />
     <HUD HUDPicture="../u_resources/spells/Active_Skills/apo_tank_shieldbash.png" UIName="@ui_APO_Tank_Skill01" Lore="@ui_APO_Tank_Skill01_Lore" ActiveEffectTitle="" ActiveEffectDesc="" ASTTreeNumber="8" ShowParamsInAST="Cost,ROSTime,DamageDetail,Cooldown,Range" ShowParamsInTooltip="Cost,DamageOverview,Cooldown,Range" />
@@ -8,7 +8,7 @@
     <Aggression TargetValueOnHit="20" />
     <DamagePreset DamagePreset="Apo_Tank_Strong" Multiplier="2" Type="sacred" />
     <Cooldown Cooldown="5.0" CooldownTrigger="OnEnd" />
-    <SoundTrigger OnAnimStart="Play_Skill_APO_Tank_ShieldBash_HammerGround" OnHit="Play_Skill_APO_Tank_ShieldBash_Impact" />
+    <SoundTrigger OnAnimStart="" OnHit="Play_Skill_APO_Tank_ShieldBash_Impact" />
     <Range AttackRange="20" />
     <ResourceCost ApoResourceCost="-60" ROSTransfertDuration="1.5" />
     <DamageZone Duration="10" RateOfFire="0.33" MaxEntityHits="20" />
@@ -17,6 +17,6 @@
       <Entry Key="bash" ShapeName="ApoTank_ShieldBash_DamageShape" />
       <Entry Key="wave" ShapeName="ApoTank_ShieldBash_EnergyWave" />
     </Shapes>
-    <Specific_ApoTank_ShieldBash PullCenterOffset="3" PullDuration="0.4" PullDistance="10" PullHeight=".4" WaveDamageMultiplier=".2" SoundTriggerOnBash="Play_Skill_APO_Tank_ShieldBash_ShieldSwing" AlternativeHitSound="Play_skill_BrutalStrike_Impact" />
+    <Specific_ApoTank_ShieldBash PullCenterOffset="3" PullDuration="0.4" PullDistance="10" PullHeight=".4" WaveDamageMultiplier=".2" SoundTriggerOnBash="" AlternativeHitSound="Play_skill_BrutalStrike_Impact" />
   </Skill>
 </MetaData>

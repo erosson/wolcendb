@@ -10,12 +10,6 @@
   <CCosmeticTransferTemplate is_dev_armor="1" name="u_MenuArmor_Pant" />
   <CCosmeticTransferTemplate is_dev_armor="1" name="u_MenuArmor_Chest" foley_parameter="1" />
   <CCosmeticTransferTemplate is_dev_armor="1" name="u_MenuArmor_Boots" />
-  <CCosmeticTransferTemplate is_dev_armor="1" name="u_Veteran_Helmet" hide_beard="1" hide_hair="0" replace_hair="1" />
-  <CCosmeticTransferTemplate is_dev_armor="1" name="u_Veteran_Arm" />
-  <CCosmeticTransferTemplate is_dev_armor="1" name="u_Veteran_Chest" foley_parameter="2" />
-  <CCosmeticTransferTemplate is_dev_armor="1" name="u_Veteran_Shoulder" />
-  <CCosmeticTransferTemplate is_dev_armor="1" name="u_Veteran_Pant" />
-  <CCosmeticTransferTemplate is_dev_armor="1" name="u_Veteran_Boots" />
   <CCosmeticTransferTemplate is_dev_armor="1" name="u_Menuarmormage_Helmet" hide_beard="0" hide_hair="0" replace_hair="1" />
   <CCosmeticTransferTemplate is_dev_armor="1" name="u_Menuarmormage_Arm" />
   <CCosmeticTransferTemplate is_dev_armor="1" name="u_Menuarmormage_Chest" foley_parameter="4" />
@@ -34,24 +28,114 @@
   <CCosmeticTransferTemplate is_dev_armor="1" name="u_Menuarmorheavy_Shoulder" />
   <CCosmeticTransferTemplate is_dev_armor="1" name="u_Menuarmorheavy_Pant" />
   <CCosmeticTransferTemplate is_dev_armor="1" name="u_Menuarmorheavy_Boots" />
-  <CCosmeticTransferTemplate is_dev_armor="1" name="u_GDC_Helmet" hide_beard="1" hide_hair="1" replace_hair="0" />
-  <CCosmeticTransferTemplate is_dev_armor="1" name="u_GDC_Arm" />
-  <CCosmeticTransferTemplate is_dev_armor="1" name="u_GDC_Chest" foley_parameter="2" />
-  <CCosmeticTransferTemplate is_dev_armor="1" name="u_GDC_Shoulder" />
-  <CCosmeticTransferTemplate is_dev_armor="1" name="u_GDC_Pant" />
-  <CCosmeticTransferTemplate is_dev_armor="1" name="u_GDC_Boots" />
-  <CCosmeticTransferTemplate is_dev_armor="1" name="u_Sunmoon_Helmet" hide_beard="1" hide_hair="1" replace_hair="0" />
-  <CCosmeticTransferTemplate is_dev_armor="1" name="u_Sunmoon_Arm" />
-  <CCosmeticTransferTemplate is_dev_armor="1" name="u_Sunmoon_Chest" foley_parameter="1" />
-  <CCosmeticTransferTemplate is_dev_armor="1" name="u_Sunmoon_Shoulder" />
-  <CCosmeticTransferTemplate is_dev_armor="1" name="u_Sunmoon_Pant" />
-  <CCosmeticTransferTemplate is_dev_armor="1" name="u_Sunmoon_Boots" />
-  <CCosmeticTransferTemplate is_dev_armor="1" name="u_Republic_Helmet" hide_beard="1" hide_hair="0" replace_hair="1" />
-  <CCosmeticTransferTemplate is_dev_armor="1" name="u_Republic_Arm" />
-  <CCosmeticTransferTemplate is_dev_armor="1" name="u_Republic_Chest" foley_parameter="1" />
-  <CCosmeticTransferTemplate is_dev_armor="1" name="u_Republic_Shoulder" />
-  <CCosmeticTransferTemplate is_dev_armor="1" name="u_Republic_Pant" />
-  <CCosmeticTransferTemplate is_dev_armor="1" name="u_Republic_Boots" />
+  <CCosmeticTransferTemplate is_dev_armor="1" panel_category="heavy" name="u_Blade_Helmet" hud_picture="unique_blade/unique_helmet_blade.png" hide_beard="1" hide_hair="1" replace_hair="0" />
+  <CCosmeticTransferTemplate is_dev_armor="1" panel_category="heavy" name="u_Blade_Arm" hud_picture="unique_blade/unique_glove_blade.png" />
+  <CCosmeticTransferTemplate is_dev_armor="1" panel_category="heavy" name="u_Blade_Pant" hud_picture="unique_blade/unique_pants_blade.png" />
+  <CCosmeticTransferTemplate is_dev_armor="1" panel_category="heavy" name="u_Blade_Chest" hud_picture="unique_blade/unique_chest_blade.png" foley_parameter="3" />
+  <CCosmeticTransferTemplate is_dev_armor="1" panel_category="heavy" name="u_Blade_Boots" hud_picture="unique_blade/unique_boots_blade.png" />
+  <CCosmeticTransferTemplate is_dev_armor="1" panel_category="heavy" name="u_Blade_Shoulder" hud_picture="unique_blade/unique_shoulder_blade.png" />
+  <CCosmeticTransferTemplate is_dev_armor="1" panel_category="heavy" name="u_Herald_Helmet" hud_picture="unique_herald/unique_helmet_herald.png" hide_beard="1" hide_hair="1" replace_hair="0" />
+  <CCosmeticTransferTemplate is_dev_armor="1" panel_category="heavy" name="u_Herald_Arm" hud_picture="unique_herald/unique_glove_herald.png" />
+  <CCosmeticTransferTemplate is_dev_armor="1" panel_category="heavy" name="u_Herald_Pant" hud_picture="unique_herald/unique_pants_herald.png" />
+  <CCosmeticTransferTemplate is_dev_armor="1" panel_category="heavy" name="u_Herald_Chest" hud_picture="unique_herald/unique_chest_herald.png" foley_parameter="3" />
+  <CCosmeticTransferTemplate is_dev_armor="1" panel_category="heavy" name="u_Herald_Boots" hud_picture="unique_herald/unique_boots_herald.png" />
+  <CCosmeticTransferTemplate is_dev_armor="1" panel_category="heavy" name="u_Herald_Shoulder" hud_picture="unique_herald/unique_shoulder_herald.png" />
+  <CCosmeticTransferTemplate is_dev_armor="1" panel_category="Rogue" name="u_AureateLight_Helmet" hud_picture="unique_aureatelight/unique_helmet_aureatelight.png" hide_beard="1" hide_hair="1" replace_hair="0" />
+  <CCosmeticTransferTemplate is_dev_armor="1" panel_category="Rogue" name="u_AureateLight_Arm" hud_picture="unique_aureatelight/unique_glove_aureatelight.png" />
+  <CCosmeticTransferTemplate is_dev_armor="1" panel_category="Rogue" name="u_AureateLight_Pant" hud_picture="unique_aureatelight/unique_pants_aureatelight.png" />
+  <CCosmeticTransferTemplate is_dev_armor="1" panel_category="Rogue" name="u_AureateLight_Chest" hud_picture="unique_aureatelight/unique_chest_aureatelight.png" foley_parameter="3" />
+  <CCosmeticTransferTemplate is_dev_armor="1" panel_category="Rogue" name="u_AureateLight_Boots" hud_picture="unique_aureatelight/unique_boots_aureatelight.png" />
+  <CCosmeticTransferTemplate is_dev_armor="1" panel_category="Rogue" name="u_AureateLight_Shoulder" hud_picture="unique_aureatelight/unique_pauldron_aureatelight.png" />
+  <CCosmeticTransferTemplate is_dev_armor="1" panel_category="Bruiser" name="u_AureateInt_Helmet" hud_picture="unique_aureateint/unique_helmet_aureateint.png" hide_beard="1" hide_hair="1" replace_hair="0" />
+  <CCosmeticTransferTemplate is_dev_armor="1" panel_category="Bruiser" name="u_AureateInt_Arm" hud_picture="unique_aureateint/unique_glove_aureateint.png" />
+  <CCosmeticTransferTemplate is_dev_armor="1" panel_category="Bruiser" name="u_AureateInt_Pant" hud_picture="unique_aureateint/unique_pants_aureateint.png" />
+  <CCosmeticTransferTemplate is_dev_armor="1" panel_category="Bruiser" name="u_AureateInt_Chest" hud_picture="unique_aureateint/unique_chest_aureateint.png" foley_parameter="3" />
+  <CCosmeticTransferTemplate is_dev_armor="1" panel_category="Bruiser" name="u_AureateInt_Boots" hud_picture="unique_aureateint/unique_boots_aureateint.png" />
+  <CCosmeticTransferTemplate is_dev_armor="1" panel_category="Bruiser" name="u_AureateInt_Shoulder" hud_picture="unique_aureateint/unique_pauldron_aureateint.png" />
+  <CCosmeticTransferTemplate is_dev_armor="1" panel_category="heavy" name="u_AureateHeavy_Helmet" hud_picture="unique_aureateheavy/unique_helmet_aureateheavy.png" hide_beard="1" hide_hair="1" replace_hair="0" />
+  <CCosmeticTransferTemplate is_dev_armor="1" panel_category="heavy" name="u_AureateHeavy_Arm" hud_picture="unique_aureateheavy/unique_glove_aureateheavy.png" />
+  <CCosmeticTransferTemplate is_dev_armor="1" panel_category="heavy" name="u_AureateHeavy_Pant" hud_picture="unique_aureateheavy/unique_pants_aureateheavy.png" />
+  <CCosmeticTransferTemplate is_dev_armor="1" panel_category="heavy" name="u_AureateHeavy_Chest" hud_picture="unique_aureateheavy/unique_chest_aureateheavy.png" foley_parameter="3" />
+  <CCosmeticTransferTemplate is_dev_armor="1" panel_category="heavy" name="u_AureateHeavy_Boots" hud_picture="unique_aureateheavy/unique_boots_aureateheavy.png" />
+  <CCosmeticTransferTemplate is_dev_armor="1" panel_category="heavy" name="u_AureateHeavy_Shoulder" hud_picture="unique_aureateheavy/unique_pauldron_aureateheavy.png" />
+  <CCosmeticTransferTemplate is_dev_armor="1" panel_category="Mage" name="u_AureateMage_Helmet" hud_picture="unique_aureatemage/unique_helmet_aureatemage.png" hide_beard="1" hide_hair="1" replace_hair="0" />
+  <CCosmeticTransferTemplate is_dev_armor="1" panel_category="Mage" name="u_AureateMage_Arm" hud_picture="unique_aureatemage/unique_glove_aureatemage.png" />
+  <CCosmeticTransferTemplate is_dev_armor="1" panel_category="Mage" name="u_AureateMage_Pant" hud_picture="unique_aureatemage/unique_pants_aureatemage.png" />
+  <CCosmeticTransferTemplate is_dev_armor="1" panel_category="Mage" name="u_AureateMage_Chest" hud_picture="unique_aureatemage/unique_chest_aureatemage.png" foley_parameter="3" />
+  <CCosmeticTransferTemplate is_dev_armor="1" panel_category="Mage" name="u_AureateMage_Boots" hud_picture="unique_aureatemage/unique_boots_aureatemage.png" />
+  <CCosmeticTransferTemplate is_dev_armor="1" panel_category="Mage" name="u_AureateMage_Shoulder" hud_picture="unique_aureatemage/unique_pauldron_aureatemage.png" />
+  <CCosmeticTransferTemplate is_dev_armor="1" panel_category="Rogue" name="u_AdrigionLight_Helmet" hud_picture="unique_adrigionint/unique_helmet_adrigionlight.png" hide_beard="1" hide_hair="1" replace_hair="0" />
+  <CCosmeticTransferTemplate is_dev_armor="1" panel_category="Rogue" name="u_AdrigionLight_Arm" hud_picture="unique_adrigionint/unique_glove_adrigionlight.png" />
+  <CCosmeticTransferTemplate is_dev_armor="1" panel_category="Rogue" name="u_AdrigionLight_Pant" hud_picture="unique_adrigionint/unique_pants_adrigionlight.png" />
+  <CCosmeticTransferTemplate is_dev_armor="1" panel_category="Rogue" name="u_AdrigionLight_Chest" hud_picture="unique_adrigionint/unique_chest_adrigionlight.png" foley_parameter="3" />
+  <CCosmeticTransferTemplate is_dev_armor="1" panel_category="Rogue" name="u_AdrigionLight_Boots" hud_picture="unique_adrigionint/unique_boots_adrigionlight.png" />
+  <CCosmeticTransferTemplate is_dev_armor="1" panel_category="Rogue" name="u_AdrigionLight_Shoulder" hud_picture="unique_adrigionint/unique_pauldron_adrigionlight.png" />
+  <CCosmeticTransferTemplate is_dev_armor="1" panel_category="Bruiser" xbox_id="31534e39-4843-3032-c05a-515344525c00" ps4_id="000001" name="u_AdrigionInt_Helmet" hud_picture="unique_adrigionint/unique_helmet_adrigionint.png" hide_beard="1" hide_hair="1" replace_hair="0" />
+  <CCosmeticTransferTemplate is_dev_armor="1" panel_category="Bruiser" xbox_id="31534e39-4843-3032-c05a-515344525c00" ps4_id="000001" name="u_AdrigionInt_Arm" hud_picture="unique_adrigionint/unique_glove_adrigionint.png" />
+  <CCosmeticTransferTemplate is_dev_armor="1" panel_category="Bruiser" xbox_id="31534e39-4843-3032-c05a-515344525c00" ps4_id="000001" name="u_AdrigionInt_Pant" hud_picture="unique_adrigionint/unique_pants_adrigionint.png" />
+  <CCosmeticTransferTemplate is_dev_armor="1" panel_category="Bruiser" xbox_id="31534e39-4843-3032-c05a-515344525c00" ps4_id="000001" name="u_AdrigionInt_Chest" hud_picture="unique_adrigionint/unique_chest_adrigionint.png" foley_parameter="3" />
+  <CCosmeticTransferTemplate is_dev_armor="1" panel_category="Bruiser" xbox_id="31534e39-4843-3032-c05a-515344525c00" ps4_id="000001" name="u_AdrigionInt_Boots" hud_picture="unique_adrigionint/unique_boots_adrigionint.png" />
+  <CCosmeticTransferTemplate is_dev_armor="1" panel_category="Bruiser" xbox_id="31534e39-4843-3032-c05a-515344525c00" ps4_id="000001" name="u_AdrigionInt_Shoulder" hud_picture="unique_adrigionint/unique_pauldron_adrigionint.png" />
+  <CCosmeticTransferTemplate is_dev_armor="1" panel_category="heavy" name="u_AdrigionHeavy_Helmet" hud_picture="unique_adrigionheavy/unique_helmet_adrigionheavy.png" hide_beard="1" hide_hair="1" replace_hair="0" />
+  <CCosmeticTransferTemplate is_dev_armor="1" panel_category="heavy" name="u_AdrigionHeavy_Arm" hud_picture="unique_adrigionheavy/unique_glove_adrigionheavy.png" />
+  <CCosmeticTransferTemplate is_dev_armor="1" panel_category="heavy" name="u_AdrigionHeavy_Pant" hud_picture="unique_adrigionheavy/unique_pants_adrigionheavy.png" />
+  <CCosmeticTransferTemplate is_dev_armor="1" panel_category="heavy" name="u_AdrigionHeavy_Chest" hud_picture="unique_adrigionheavy/unique_chest_adrigionheavy.png" foley_parameter="3" />
+  <CCosmeticTransferTemplate is_dev_armor="1" panel_category="heavy" name="u_AdrigionHeavy_Boots" hud_picture="unique_adrigionheavy/unique_boots_adrigionheavy.png" />
+  <CCosmeticTransferTemplate is_dev_armor="1" panel_category="heavy" name="u_AdrigionHeavy_Shoulder" hud_picture="unique_adrigionheavy/unique_pauldron_adrigionheavy.png" />
+  <CCosmeticTransferTemplate is_dev_armor="1" panel_category="Mage" name="u_AdrigionMage_Helmet" hud_picture="unique_adrigionmage/unique_helmet_adrigionmage.png" hide_beard="1" hide_hair="1" replace_hair="0" />
+  <CCosmeticTransferTemplate is_dev_armor="1" panel_category="Mage" name="u_AdrigionMage_Arm" hud_picture="unique_adrigionmage/unique_glove_adrigionmage.png" />
+  <CCosmeticTransferTemplate is_dev_armor="1" panel_category="Mage" name="u_AdrigionMage_Pant" hud_picture="unique_adrigionmage/unique_pants_adrigionmage.png" />
+  <CCosmeticTransferTemplate is_dev_armor="1" panel_category="Mage" name="u_AdrigionMage_Chest" hud_picture="unique_adrigionmage/unique_chest_adrigionmage.png" foley_parameter="3" />
+  <CCosmeticTransferTemplate is_dev_armor="1" panel_category="Mage" name="u_AdrigionMage_Boots" hud_picture="unique_adrigionmage/unique_boots_adrigionmage.png" />
+  <CCosmeticTransferTemplate is_dev_armor="1" panel_category="Mage" name="u_AdrigionMage_Shoulder" hud_picture="unique_adrigionmage/unique_pauldron_adrigionmage.png" />
+  <CCosmeticTransferTemplate is_dev_armor="1" panel_category="Rogue" name="u_DustCrownLight_Helmet" hud_picture="unique_dustcrownlight/unique_helmet_dustcrownlight.png" hide_beard="1" hide_hair="1" replace_hair="0" />
+  <CCosmeticTransferTemplate is_dev_armor="1" panel_category="Rogue" name="u_DustCrownLight_Arm" hud_picture="unique_dustcrownlight/unique_glove_dustcrownlight.png" />
+  <CCosmeticTransferTemplate is_dev_armor="1" panel_category="Rogue" name="u_DustCrownLight_Pant" hud_picture="unique_dustcrownlight/unique_pants_dustcrownlight.png" />
+  <CCosmeticTransferTemplate is_dev_armor="1" panel_category="Rogue" name="u_DustCrownLight_Chest" hud_picture="unique_dustcrownlight/unique_chest_dustcrownlight.png" foley_parameter="3" />
+  <CCosmeticTransferTemplate is_dev_armor="1" panel_category="Rogue" name="u_DustCrownLight_Boots" hud_picture="unique_dustcrownlight/unique_boots_dustcrownlight.png" />
+  <CCosmeticTransferTemplate is_dev_armor="1" panel_category="Rogue" name="u_DustCrownLight_Shoulder" hud_picture="unique_dustcrownlight/unique_pauldron_dustcrownlight.png" />
+  <CCosmeticTransferTemplate is_dev_armor="1" panel_category="Bruiser" name="u_DustCrownInt_Helmet" hud_picture="unique_dustcrownint/unique_helmet_dustcrownint.png" hide_beard="1" hide_hair="1" replace_hair="0" />
+  <CCosmeticTransferTemplate is_dev_armor="1" panel_category="Bruiser" name="u_DustCrownInt_Arm" hud_picture="unique_dustcrownint/unique_glove_dustcrownint.png" />
+  <CCosmeticTransferTemplate is_dev_armor="1" panel_category="Bruiser" name="u_DustCrownInt_Pant" hud_picture="unique_dustcrownint/unique_pants_dustcrownint.png" />
+  <CCosmeticTransferTemplate is_dev_armor="1" panel_category="Bruiser" name="u_DustCrownInt_Chest" hud_picture="unique_dustcrownint/unique_chest_dustcrownint.png" foley_parameter="3" />
+  <CCosmeticTransferTemplate is_dev_armor="1" panel_category="Bruiser" name="u_DustCrownInt_Boots" hud_picture="unique_dustcrownint/unique_boots_dustcrownint.png" />
+  <CCosmeticTransferTemplate is_dev_armor="1" panel_category="Bruiser" name="u_DustCrownInt_Shoulder" hud_picture="unique_dustcrownint/unique_pauldron_dustcrownint.png" />
+  <CCosmeticTransferTemplate is_dev_armor="1" panel_category="heavy" xbox_id="31534e39-4843-3032-c05a-515344525c00" ps4_id="000001" name="u_DustCrownHeavy_Helmet" hud_picture="unique_dustcrownheavy/unique_helmet_dustcrownheavy.png" hide_beard="1" hide_hair="1" replace_hair="0" />
+  <CCosmeticTransferTemplate is_dev_armor="1" panel_category="heavy" xbox_id="31534e39-4843-3032-c05a-515344525c00" ps4_id="000001" name="u_DustCrownHeavy_Arm" hud_picture="unique_dustcrownheavy/unique_glove_dustcrownheavy.png" />
+  <CCosmeticTransferTemplate is_dev_armor="1" panel_category="heavy" xbox_id="31534e39-4843-3032-c05a-515344525c00" ps4_id="000001" name="u_DustCrownHeavy_Pant" hud_picture="unique_dustcrownheavy/unique_pants_dustcrownheavy.png" />
+  <CCosmeticTransferTemplate is_dev_armor="1" panel_category="heavy" xbox_id="31534e39-4843-3032-c05a-515344525c00" ps4_id="000001" name="u_DustCrownHeavy_Chest" hud_picture="unique_dustcrownheavy/unique_chest_dustcrownheavy.png" foley_parameter="3" />
+  <CCosmeticTransferTemplate is_dev_armor="1" panel_category="heavy" xbox_id="31534e39-4843-3032-c05a-515344525c00" ps4_id="000001" name="u_DustCrownHeavy_Boots" hud_picture="unique_dustcrownheavy/unique_boots_dustcrownheavy.png" />
+  <CCosmeticTransferTemplate is_dev_armor="1" panel_category="heavy" xbox_id="31534e39-4843-3032-c05a-515344525c00" ps4_id="000001" name="u_DustCrownHeavy_Shoulder" hud_picture="unique_dustcrownheavy/unique_pauldron_dustcrownheavy.png" />
+  <CCosmeticTransferTemplate is_dev_armor="1" panel_category="Mage" name="u_DustCrownMage_Helmet" hud_picture="unique_dustcrownmage/unique_helmet_dustcrownmage.png" hide_beard="1" hide_hair="1" replace_hair="0" />
+  <CCosmeticTransferTemplate is_dev_armor="1" panel_category="Mage" name="u_DustCrownMage_Arm" hud_picture="unique_dustcrownmage/unique_glove_dustcrownmage.png" />
+  <CCosmeticTransferTemplate is_dev_armor="1" panel_category="Mage" name="u_DustCrownMage_Pant" hud_picture="unique_dustcrownmage/unique_pants_dustcrownmage.png" />
+  <CCosmeticTransferTemplate is_dev_armor="1" panel_category="Mage" name="u_DustCrownMage_Chest" hud_picture="unique_dustcrownmage/unique_chest_dustcrownmage.png" foley_parameter="3" />
+  <CCosmeticTransferTemplate is_dev_armor="1" panel_category="Mage" name="u_DustCrownMage_Boots" hud_picture="unique_dustcrownmage/unique_boots_dustcrownmage.png" />
+  <CCosmeticTransferTemplate is_dev_armor="1" panel_category="Mage" name="u_DustCrownMage_Shoulder" hud_picture="unique_dustcrownmage/unique_pauldron_dustcrownmage.png" />
+  <CCosmeticTransferTemplate is_dev_armor="1" panel_category="Rogue" name="u_ConniverLight_Helmet" hud_picture="unique_conniverlight/unique_helmet_conniverlight.png" hide_beard="1" hide_hair="1" replace_hair="0" />
+  <CCosmeticTransferTemplate is_dev_armor="1" panel_category="Rogue" name="u_ConniverLight_Arm" hud_picture="unique_conniverlight/unique_glove_conniverlight.png" />
+  <CCosmeticTransferTemplate is_dev_armor="1" panel_category="Rogue" name="u_ConniverLight_Pant" hud_picture="unique_conniverlight/unique_pants_conniverlight.png" />
+  <CCosmeticTransferTemplate is_dev_armor="1" panel_category="Rogue" name="u_ConniverLight_Chest" hud_picture="unique_conniverlight/unique_chest_conniverlight.png" foley_parameter="3" />
+  <CCosmeticTransferTemplate is_dev_armor="1" panel_category="Rogue" name="u_ConniverLight_Boots" hud_picture="unique_conniverlight/unique_boots_conniverlight.png" />
+  <CCosmeticTransferTemplate is_dev_armor="1" panel_category="Rogue" name="u_ConniverLight_Shoulder" hud_picture="unique_conniverlight/unique_pauldron_conniverlight.png" />
+  <CCosmeticTransferTemplate is_dev_armor="1" panel_category="Bruiser" name="u_ConniverInt_Helmet" hud_picture="unique_conniverint/unique_helmet_conniverint.png" hide_beard="1" hide_hair="1" replace_hair="0" />
+  <CCosmeticTransferTemplate is_dev_armor="1" panel_category="Bruiser" name="u_ConniverInt_Arm" hud_picture="unique_conniverint/unique_glove_conniverint.png" />
+  <CCosmeticTransferTemplate is_dev_armor="1" panel_category="Bruiser" name="u_ConniverInt_Pant" hud_picture="unique_conniverint/unique_pants_conniverint.png" />
+  <CCosmeticTransferTemplate is_dev_armor="1" panel_category="Bruiser" name="u_ConniverInt_Chest" hud_picture="unique_conniverint/unique_chest_conniverint.png" foley_parameter="3" />
+  <CCosmeticTransferTemplate is_dev_armor="1" panel_category="Bruiser" name="u_ConniverInt_Boots" hud_picture="unique_conniverint/unique_boots_conniverint.png" />
+  <CCosmeticTransferTemplate is_dev_armor="1" panel_category="Bruiser" name="u_ConniverInt_Shoulder" hud_picture="unique_conniverint/unique_pauldron_conniverint.png" />
+  <CCosmeticTransferTemplate is_dev_armor="1" panel_category="heavy" name="u_ConniverHeavy_Helmet" hud_picture="unique_conniverheavy/unique_helmet_conniverheavy.png" hide_beard="1" hide_hair="1" replace_hair="0" />
+  <CCosmeticTransferTemplate is_dev_armor="1" panel_category="heavy" name="u_ConniverHeavy_Arm" hud_picture="unique_conniverheavy/unique_glove_conniverheavy.png" />
+  <CCosmeticTransferTemplate is_dev_armor="1" panel_category="heavy" name="u_ConniverHeavy_Pant" hud_picture="unique_conniverheavy/unique_pants_conniverheavy.png" />
+  <CCosmeticTransferTemplate is_dev_armor="1" panel_category="heavy" name="u_ConniverHeavy_Chest" hud_picture="unique_conniverheavy/unique_chest_conniverheavy.png" foley_parameter="3" />
+  <CCosmeticTransferTemplate is_dev_armor="1" panel_category="heavy" name="u_ConniverHeavy_Boots" hud_picture="unique_conniverheavy/unique_boots_conniverheavy.png" />
+  <CCosmeticTransferTemplate is_dev_armor="1" panel_category="heavy" name="u_ConniverHeavy_Shoulder" hud_picture="unique_conniverheavy/unique_pauldron_conniverheavy.png" />
+  <CCosmeticTransferTemplate is_dev_armor="1" panel_category="Mage" name="u_ConniverMage_Helmet" hud_picture="unique_connivermage/unique_helmet_connivermage.png" hide_beard="1" hide_hair="1" replace_hair="0" />
+  <CCosmeticTransferTemplate is_dev_armor="1" panel_category="Mage" name="u_ConniverMage_Arm" hud_picture="unique_connivermage/unique_glove_connivermage.png" />
+  <CCosmeticTransferTemplate is_dev_armor="1" panel_category="Mage" name="u_ConniverMage_Pant" hud_picture="unique_connivermage/unique_pants_connivermage.png" />
+  <CCosmeticTransferTemplate is_dev_armor="1" panel_category="Mage" name="u_ConniverMage_Chest" hud_picture="unique_connivermage/unique_chest_connivermage.png" foley_parameter="3" />
+  <CCosmeticTransferTemplate is_dev_armor="1" panel_category="Mage" name="u_ConniverMage_Boots" hud_picture="unique_connivermage/unique_boots_connivermage.png" />
+  <CCosmeticTransferTemplate is_dev_armor="1" panel_category="Mage" name="u_ConniverMage_Shoulder" hud_picture="unique_connivermage/unique_pauldron_connivermage.png" />
   <CCosmeticTransferTemplate is_dev_armor="1" steam_item_def_id="1004" panel_category="Steam" name="u_KickStarter01_Helmet" hud_picture="unique_kickstarter_1/unique_helmet_kickstarter_1.png" hide_beard="0" hide_hair="0" replace_hair="1" />
   <CCosmeticTransferTemplate is_dev_armor="1" steam_item_def_id="1004" panel_category="Steam" name="u_KickStarter01_Arm" hud_picture="unique_kickstarter_1/unique_glove_kickstarter_1.png" />
   <CCosmeticTransferTemplate is_dev_armor="1" steam_item_def_id="1004" panel_category="Steam" name="u_KickStarter01_Chest" hud_picture="unique_kickstarter_1/unique_chestarmor_kickstarter_1.png" foley_parameter="3" />
@@ -485,12 +569,12 @@
   <CCosmeticTransferTemplate save_id="412" panel_category="Unique" name="u_Unicorn_Shoulder" hud_picture="uniques/unique_pauldron_unicorn.png" />
   <CCosmeticTransferTemplate save_id="413" panel_category="Unique" name="u_Vanity_Chest" hud_picture="uniques/unique_chestarmor_vanity.png" foley_parameter="5" />
   <CCosmeticTransferTemplate save_id="414" panel_category="Unique" name="u_WormQuickbladeThreaders_Boots" hud_picture="uniques/unique_boots_worn_quickblade_threaders.png" />
-  <CCosmeticTransferTemplate save_id="415" panel_category="Unique" name="u_Hunt_Helmet" hud_picture="unique_hunt/unique_helmet_hunt.png" hide_beard="0" hide_hair="0" replace_hair="1" />
-  <CCosmeticTransferTemplate save_id="416" panel_category="Unique" name="u_Hunt_Arm" hud_picture="unique_hunt/unique_glove_hunt.png" />
-  <CCosmeticTransferTemplate save_id="417" panel_category="Unique" name="u_Hunt_Chest" hud_picture="unique_hunt/unique_chest_hunt.png" foley_parameter="3" />
-  <CCosmeticTransferTemplate save_id="418" panel_category="Unique" name="u_Hunt_Shoulder" hud_picture="unique_hunt/unique_shoulder_hunt.png" />
-  <CCosmeticTransferTemplate save_id="419" panel_category="Unique" name="u_Hunt_Pant" hud_picture="unique_hunt/unique_pants_hunt.png" />
-  <CCosmeticTransferTemplate save_id="420" panel_category="Unique" name="u_Hunt_Boots" hud_picture="unique_hunt/unique_boots_hunt.png" />
+  <CCosmeticTransferTemplate save_id="415" panel_category="Unique" name="u_hunt_Helmet" hud_picture="unique_hunt/unique_helmet_hunt.png" hide_beard="1" hide_hair="0" replace_hair="1" />
+  <CCosmeticTransferTemplate save_id="416" panel_category="Unique" name="u_hunt_Arm" hud_picture="unique_hunt/unique_glove_hunt.png" />
+  <CCosmeticTransferTemplate save_id="417" panel_category="Unique" name="u_hunt_Chest" hud_picture="unique_hunt/unique_chest_hunt.png" foley_parameter="3" />
+  <CCosmeticTransferTemplate save_id="418" panel_category="Unique" name="u_hunt_Shoulder" hud_picture="unique_hunt/unique_shoulder_hunt.png" />
+  <CCosmeticTransferTemplate save_id="419" panel_category="Unique" name="u_hunt_Pant" hud_picture="unique_hunt/unique_pants_hunt.png" />
+  <CCosmeticTransferTemplate save_id="420" panel_category="Unique" name="u_hunt_Boots" hud_picture="unique_hunt/unique_boots_hunt.png" />
   <CCosmeticTransferTemplate save_id="421" panel_category="Unique" name="u_Pillager_Helmet" hud_picture="unique_pillager/unique_helmet_pillager.png" hide_beard="1" hide_hair="0" replace_hair="1" />
   <CCosmeticTransferTemplate save_id="422" panel_category="Unique" name="u_Pillager_Arm" hud_picture="unique_pillager/unique_glove_pillager.png" />
   <CCosmeticTransferTemplate save_id="423" panel_category="Unique" name="u_Pillager_Chest" hud_picture="unique_pillager/unique_chest_pillager.png" foley_parameter="3" />
@@ -507,6 +591,18 @@
   <CCosmeticTransferTemplate save_id="434" panel_category="Unique" name="u_discordant_chest" hud_picture="uniques/unique_discordant_armor.png" foley_parameter="3" />
   <CCosmeticTransferTemplate save_id="435" panel_category="Unique" name="u_FuryGloves_arm" hud_picture="uniques/unique_ChildOfFury_gloves.png" />
   <CCosmeticTransferTemplate save_id="436" panel_category="Unique" name="u_WormTooth_helmet" hud_picture="uniques/unique_helmet_wormtooth.png" hide_beard="1" hide_hair="1" replace_hair="0" />
+  <CCosmeticTransferTemplate save_id="437" panel_category="Unique" name="u_GDC_Helmet" hud_picture="unique_gdc/unique_helmet_gdc.png" hide_beard="1" hide_hair="1" replace_hair="0" />
+  <CCosmeticTransferTemplate save_id="438" panel_category="Unique" name="u_GDC_Arm" hud_picture="unique_gdc/unique_glove_gdc.png" />
+  <CCosmeticTransferTemplate save_id="439" panel_category="Unique" name="u_GDC_Chest" hud_picture="unique_gdc/unique_chest_gdc.png" foley_parameter="2" />
+  <CCosmeticTransferTemplate save_id="440" panel_category="Unique" name="u_GDC_Shoulder" hud_picture="unique_gdc/unique_pauldron_gdc.png" />
+  <CCosmeticTransferTemplate save_id="441" panel_category="Unique" name="u_GDC_Pant" hud_picture="unique_gdc/unique_pants_gdc.png" />
+  <CCosmeticTransferTemplate save_id="442" panel_category="Unique" name="u_GDC_Boots" hud_picture="unique_gdc/unique_boots_gdc.png" />
+  <CCosmeticTransferTemplate save_id="443" panel_category="Unique" name="u_Sunmoon_Helmet" hud_picture="unique_sunmoon/unique_helmet_sunmoon.png" hide_beard="1" hide_hair="1" replace_hair="0" />
+  <CCosmeticTransferTemplate save_id="444" panel_category="Unique" name="u_Sunmoon_Arm" hud_picture="unique_sunmoon/unique_glove_sunmoon.png" />
+  <CCosmeticTransferTemplate save_id="445" panel_category="Unique" name="u_Sunmoon_Chest" hud_picture="unique_sunmoon/unique_chest_sunmoon.png" foley_parameter="5" />
+  <CCosmeticTransferTemplate save_id="446" panel_category="Unique" name="u_Sunmoon_Shoulder" hud_picture="unique_sunmoon/unique_shoulder_sunmoon.png" />
+  <CCosmeticTransferTemplate save_id="447" panel_category="Unique" name="u_Sunmoon_Pant" hud_picture="unique_sunmoon/unique_pants_sunmoon.png" />
+  <CCosmeticTransferTemplate save_id="448" panel_category="Unique" name="u_Sunmoon_Boots" hud_picture="unique_sunmoon/unique_boots_sunmoon.png" />
   <CCosmeticTransferTemplate save_id="451" panel_category="Unique" name="u_Energizer_Chest" hud_picture="uniques/unique_chestarmor_energizer.png" foley_parameter="6" />
   <CCosmeticTransferTemplate save_id="452" panel_category="Unique" name="u_SharpIce_chest" hud_picture="uniques/unique_Sharpicechest_armor.png" foley_parameter="2" />
   <CCosmeticTransferTemplate save_id="453" panel_category="Unique" name="u_Nododge_pant" hud_picture="uniques/unique_nododgepants.png" />
@@ -514,4 +610,30 @@
   <CCosmeticTransferTemplate save_id="455" panel_category="Unique" name="u_LastChampion_helmet" hud_picture="uniques/unique_lastchampionhelmet.png" hide_beard="1" hide_hair="0" replace_hair="1" />
   <CCosmeticTransferTemplate save_id="456" panel_category="Unique" name="u_Exorcist_arm" hud_picture="uniques/unique_exorcistbracer.png" />
   <CCosmeticTransferTemplate save_id="457" panel_category="Unique" name="u_RepuSniper_helmet" hud_picture="uniques/unique_helmet_RepuSniper.png" hide_beard="1" hide_hair="0" replace_hair="1" />
+  <CCosmeticTransferTemplate save_id="458" panel_category="Unique" name="u_Veteran_Helmet" hud_picture="unique_veteran/unique_helmet_veteran.png" hide_beard="1" hide_hair="0" replace_hair="1" />
+  <CCosmeticTransferTemplate save_id="459" panel_category="Unique" name="u_Veteran_Arm" hud_picture="unique_veteran/unique_glove_veteran.png" />
+  <CCosmeticTransferTemplate save_id="460" panel_category="Unique" name="u_Veteran_Chest" hud_picture="unique_veteran/unique_chest_veteran.png" foley_parameter="2" />
+  <CCosmeticTransferTemplate save_id="461" panel_category="Unique" name="u_Veteran_Shoulder" hud_picture="unique_veteran/unique_shoulder_veteran.png" />
+  <CCosmeticTransferTemplate save_id="462" panel_category="Unique" name="u_Veteran_Pant" hud_picture="unique_veteran/unique_pants_veteran.png" />
+  <CCosmeticTransferTemplate save_id="463" panel_category="Unique" name="u_Veteran_Boots" hud_picture="unique_veteran/unique_boots_veteran.png" />
+  <CCosmeticTransferTemplate save_id="464" panel_category="Unique" name="u_Republic_Helmet" hud_picture="unique_republic/unique_helmet_republic.png" hide_beard="1" hide_hair="0" replace_hair="1" />
+  <CCosmeticTransferTemplate save_id="465" panel_category="Unique" name="u_Republic_Arm" hud_picture="unique_republic/unique_glove_republic.png" />
+  <CCosmeticTransferTemplate save_id="466" panel_category="Unique" name="u_Republic_Chest" hud_picture="unique_republic/unique_chest_republic.png" foley_parameter="2" />
+  <CCosmeticTransferTemplate save_id="467" panel_category="Unique" name="u_Republic_Shoulder" hud_picture="unique_republic/unique_pauldron_republic.png" />
+  <CCosmeticTransferTemplate save_id="468" panel_category="Unique" name="u_Republic_Pant" hud_picture="unique_republic/unique_pants_republic.png" />
+  <CCosmeticTransferTemplate save_id="469" panel_category="Unique" name="u_Republic_Boots" hud_picture="unique_republic/unique_boots_republic.png" />
+  <CCosmeticTransferTemplate save_id="470" panel_category="Unique" name="u_CriticalChest_Chest" hud_picture="uniques\unique_chest_RogueCriticalBoost.png" foley_parameter="5" />
+  <CCosmeticTransferTemplate save_id="471" panel_category="Unique" name="u_HealthRegenChest_Chest" hud_picture="uniques\unique_chest_HeavyHealthRegen.png" foley_parameter="5" />
+  <CCosmeticTransferTemplate save_id="472" panel_category="Unique" name="u_StaminaStackerHelmet_Helmet" hud_picture="uniques/unique_helmet_StaminaStacker.png" hide_beard="1" hide_hair="0" replace_hair="1" />
+  <CCosmeticTransferTemplate save_id="473" panel_category="Unique" name="u_FrenzyRollHelmet_Helmet" hud_picture="uniques/unique_helmet_FrenzyRoll.png" hide_beard="1" hide_hair="0" replace_hair="1" />
+  <CCosmeticTransferTemplate save_id="474" panel_category="Unique" name="u_Blessing_Pant" hud_picture="uniques/unique_BlessingPants.png" />
+  <CCosmeticTransferTemplate save_id="475" panel_category="Unique" name="u_Bloody_Pant" hud_picture="uniques/Unique_BloodyPants.png" />
+  <CCosmeticTransferTemplate save_id="476" panel_category="Unique" name="u_FrostTouchGloves_Arm" hud_picture="uniques/unique_frosttouch_gloves.png" />
+  <CCosmeticTransferTemplate save_id="478" panel_category="Unique" name="u_Nova_Boots" hud_picture="uniques/unique_NovaBoots.png" />
+  <CCosmeticTransferTemplate save_id="479" panel_category="Unique" name="u_JuggernautAuto_Shoulder" hud_picture="uniques/unique_JuggerNautAuto.png" />
+  <CCosmeticTransferTemplate save_id="480" panel_category="Unique" name="u_JuggernautBlock_Shoulder" hud_picture="uniques/unique_JuggernautBlock.png" />
+  <CCosmeticTransferTemplate save_id="481" panel_category="Unique" name="u_ShoutingRage_Helmet" hud_picture="uniques/unique_ShoutingRage.png" hide_beard="0" hide_hair="1" replace_hair="0" />
+  <CCosmeticTransferTemplate save_id="482" panel_category="Unique" name="u_ShieldBoost_Chest" hud_picture="uniques/unique_shieldboost_armor.png" foley_parameter="3" />
+  <CCosmeticTransferTemplate save_id="483" panel_category="Unique" name="u_AilmentStack_Pant" hud_picture="uniques/unique_pants_ailmentstacks.png" />
+  <CCosmeticTransferTemplate save_id="484" panel_category="Unique" name="u_AilmentGloves_Arm" hud_picture="uniques/unique_ailmentgloves.png" />
 </CCosmeticTransferTemplateBank>

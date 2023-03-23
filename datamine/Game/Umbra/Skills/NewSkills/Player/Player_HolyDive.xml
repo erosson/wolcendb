@@ -3,7 +3,7 @@
     <VisualFeedback TrailPresetBase="default" FeedbackPresetBase="Player_skill_holydive" BloodDecalOrientation="forward" />
     <WeaponRequirements Requirements="magic,sacred" />
     <Animation ActionString="player_skill_HolyDive_charge_in" AnimationDrivenMovement="1" />
-    <CastingParams CastBone="R_weapon_bone" CasterImmobilizationTime="0" CanCastWhileMoving="0" MaximumTurnRate="0" ShouldMoveInRange="0" />
+    <CastingParams CastBone="R_weapon_bone" CasterImmobilizationTime="0" CanCastWhileMoving="0" MaximumTurnRate="0" ShouldMoveInRange="0" GamepadHoldToChangeCastPosition="1" CancellableByDefault="1" GamepadUseForceFeedback="1" GamepadForceFeedbackValue1="0.25" GamepadForceFeedbackValue2="0.5" />
     <HUD HUDPicture="../u_resources/spells/Active_Skills/Crashingsun_Sacred.png" UIName="@ui_AST_HolyDive" Lore="@ui_AST_HolyDive_Lore" ActiveEffectTitle="" ActiveEffectDesc="" ASTTreeNumber="8" ShowParamsInAST="DamageWeapon,Cost,ROSTime,Cooldown,Range,DamageDetail,DamageCritical,StatusAilmentsChance,Explosion,SpecificHolyDive" ShowParamsInTooltip="Cost,Cooldown,DamageOverview,StatusAilmentsChance,SpecificHolyDive" />
     <Enneract PickableParticle_MoveToGround="U_CommonVFX_02.Esseract.Esseract_Projectile.Sacred" PickableParticle_OnGround_Shape="U_CommonVFX_02.Esseract.Esseract_Shape.Circle_Sacred" PickableParticle_OnGround_Damage="U_CommonVFX_02.Esseract.Esseract_Color.Sacred" PickableParticle_OnGround_Symbol="U_CommonVFX_02.Esseract.Esseract_Symbol.ANATHEA" PickableParticle_OnGround_Indicator="U_CommonVFX_02.Esseract.Esseract_Indicator.Sacred" PickableParticle_OnGround_Pickup="U_CommonVFX_02.Esseract.Esseract_Loot.Sacred" SkillLearningParticle="U_CommonVFX.Skill_Learn.Skill_Learn_Sacred" Inventory_HUDPicture="../u_resources/enneracts/Crashingsun.png" Inventory_LoreDesc="@ui_enneract_lore" />
     <DamageWeapon WeaponMultiplier="1" />
@@ -11,7 +11,7 @@
       <Entry From="physical" To="sacred" ConversionRate="100" />
     </Damage_Conversion>
     <Cooldown Cooldown="8" CooldownPerLevel="0" />
-    <ResourceCost ManaCost="-120" ManaCostPerLevel="0" ROSTransfertDuration="1.2" />
+    <ResourceCost ManaCost="-150" ManaCostPerLevel="0" ROSTransfertDuration="1.2" />
     <Shapes>
       <Entry ShapeName="player_holydive_AOE_1" />
       <Entry ShapeName="player_holydive_AOE_2" />
@@ -34,8 +34,8 @@
       <Particle Key="Charging4" Name="U_Character_02.HolyDive.HolyDive_Charging_Final" Direction="0,0,1" Bone="Bip01 Spine3" Scale="1" InstantKill="0" />
     </ParticleList>
     <ChargedSkill WindupAnim="player_skill_HolyDive_charge_in" FollowupAnim="player_skill_HolyDive_charge_out">
-      <Step TimeToReachStep="0.5" AssociatedAnim="player_skill_HolyDive_charge_loop_01" SpellDamagePercent="100" />
-      <Step TimeToReachStep="0.75" AssociatedAnim="player_skill_HolyDive_charge_loop_02" SpellDamagePercent="500" />
+      <Step TimeToReachStep="0.5" AssociatedAnim="player_skill_HolyDive_charge_loop_01" TransitionAnim="player_skill_HolyDive_charge_loop_01_out" TransitionDuration="0.25" SpellDamagePercent="200" />
+      <Step TimeToReachStep="0.75" AssociatedAnim="player_skill_HolyDive_charge_loop_02" TransitionAnim="player_skill_HolyDive_charge_loop_02_out" TransitionDuration="0.25" SpellDamagePercent="400" />
       <Step TimeToReachStep="1" AssociatedAnim="player_skill_HolyDive_charge_loop_03" SpellDamagePercent="1000" />
     </ChargedSkill>
     <Range AttackRange="22" />
@@ -48,13 +48,13 @@
       <LandSounds step0="Play_Skill_HolyDive_Land" step1="Play_Skill_HolyDive_Land_Bigger" step2="Play_Skill_HolyDive_Land_Bigger" step3="Play_Skill_HolyDive_Land_Big" />
       <ChargeSounds step0="Play_Skill_HolyDive_ChargeFlash_1" step1="Play_Skill_HolyDive_ChargeFlash_2" step2="Play_Skill_HolyDive_ChargeFlash_3" step3="Play_Skill_HolyDive_ChargeFlash_4" />
     </Specific_HolyDive>
-    <SoundTrigger OnAnimStart="Play_Skill_HolyDive_Charge_Loop" OnAnimCast="Play_Skill_HolyDive_Jump" onInterrupt="Stop_Skill_HolyDive_Charge_Loop" />
+    <SoundTrigger OnAnimStart="Play_Skill_HolyDive_Charge_Loop" OnAnimCast="Play_Skill_HolyDive_Jump" onInterrupt="Stop_Skill_HolyDive_Charge_Loop" OnKill="Play_OnKill_Impact_Lethal_Spell" />
   </Skill>
   <Skill UID="player_HolyDive_variant_default_damage_type" ESkill="default_variant">
     <HUD UIName="@ui_AST_HolyDive" Lore="@ui_AST_HolyDive_Lore" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_Alpha.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_Alpha.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_Alpha.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_Alpha.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_Alpha.png" HUDPictureVariant_InnerIcon="../u_resources/spells/Active_Skills/Crashingsun_Sacred.png" VariantBottomPanel="1" />
   </Skill>
   <Skill UID="player_HolyDive_variant_1" ESkill="default_variant">
-    <HUD UIName="@ui_Variant_HolyDive_variant_1" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_003.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_003.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_003.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_003.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_003.png" ShowParamsInTooltip="SpecificHolyDive" />
+    <HUD UIName="@ui_Variant_HolyDive_variant_1" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_003.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_003.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_003.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_003.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_003.png" ShowParamsInTooltip="SpecificHolyDive" Category="Mastery" />
     <DamageZone UseDamageZoneList="1">
       <Entry DamageZoneName="HolyDive_AOE1_DZ" />
       <Entry DamageZoneName="HolyDive_AOE2_DZ" />
@@ -64,14 +64,14 @@
     <Specific_HolyDive UseDamageZone="1" DamageZoneDamageMultiplier="0.5" />
   </Skill>
   <Skill UID="player_HolyDive_variant_2" ESkill="default_variant">
-    <HUD UIName="@ui_Variant_HolyDive_variant_2" Lore="@ui_Variant_HolyDive_variant_2_lore" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_005.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_005.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_005.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_005.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_005.png" ShowParamsInTooltip="SpecificHolyDive" />
+    <HUD UIName="@ui_Variant_HolyDive_variant_2" Lore="@ui_Variant_HolyDive_variant_2_lore" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_005.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_005.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_005.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_005.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_005.png" ShowParamsInTooltip="SpecificHolyDive" Category="Survival" />
     <ParticleList>
       <Particle Key="Heal" Name="U_Character_02.HolyDive.HolyDive_Heal_01" Direction="0,0,1" Scale="2" />
     </ParticleList>
     <HealthTransfer Value="25" Timer="0" ValuePerLevel="0" ValuesAsPercent="1" />
   </Skill>
   <Skill UID="player_HolyDive_variant_3" ESkill="default_variant">
-    <HUD UIName="@ui_Variant_HolyDive_variant_3" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_001.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_001.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_001.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_001.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_001.png" ShowParamsInTooltip="SpecificHolyDive" />
+    <HUD UIName="@ui_Variant_HolyDive_variant_3" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_001.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_001.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_001.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_001.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_001.png" ShowParamsInTooltip="SpecificHolyDive" Category="Combat" />
     <ChargedSkill WindupAnim="player_skill_HolyDive_charge_in" FollowupAnim="player_skill_HolyDive_charge_out">
       <Step TimeToReachStep="-0.2" AssociatedAnim="player_skill_HolyDive_charge_loop_01" SpellDamagePercent="0" />
       <Step TimeToReachStep="-0.2" AssociatedAnim="player_skill_HolyDive_charge_loop_02" SpellDamagePercent="0" />
@@ -79,14 +79,14 @@
     </ChargedSkill>
   </Skill>
   <Skill UID="player_HolyDive_variant_4" ESkill="default_variant">
-    <HUD UIName="@ui_Variant_HolyDive_variant_4" Lore="@ui_Variant_HolyDive_variant_4_Lore" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_005.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_005.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_005.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_005.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_005.png" ShowParamsInTooltip="SpecificHolyDive" />
+    <HUD UIName="@ui_Variant_HolyDive_variant_4" Lore="@ui_Variant_HolyDive_variant_4_Lore" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_005.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_005.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_005.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_005.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_005.png" ShowParamsInTooltip="SpecificHolyDive" Category="Mastery" />
     <ParticleList>
       <Particle Key="Charging3" Name="U_Character_02.HolyDive.HolyDive_Charging_03" Direction="0,0,1" Bone="Bip01 Spine3" />
     </ParticleList>
     <ChargedSkill WindupAnim="player_skill_HolyDive_charge_in" FollowupAnim="player_skill_HolyDive_charge_out">
       <Step TimeToReachStep="0.01" AssociatedAnim="player_skill_HolyDive_charge_loop_01" SpellDamagePercent="0" />
       <Step TimeToReachStep="0.01" AssociatedAnim="player_skill_HolyDive_charge_loop_02" SpellDamagePercent="0" />
-      <Step TimeToReachStep="0.01" AssociatedAnim="player_skill_HolyDive_charge_loop_03" SpellDamagePercent="0" />
+      <Step TimeToReachStep="0.01" AssociatedAnim="player_skill_HolyDive_charge_loop_03" TransitionAnim="player_skill_HolyDive_charge_loop_03_out" TransitionDuration="0.25" SpellDamagePercent="0" />
       <Step TimeToReachStep="1.25" AssociatedAnim="player_skill_HolyDive_charge_loop_04" SpellDamagePercent="2000" />
     </ChargedSkill>
   </Skill>
@@ -99,12 +99,12 @@
     </ChargedSkill>
   </Skill>
   <Skill UID="player_HolyDive_variant_5" ESkill="default_variant">
-    <HUD UIName="@ui_Variant_HolyDive_variant_5" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_003.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_003.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_003.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_003.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_003.png" ShowParamsInTooltip="SpecificHolyDive,Explosion" />
+    <HUD UIName="@ui_Variant_HolyDive_variant_5" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_003.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_003.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_003.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_003.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_003.png" ShowParamsInTooltip="SpecificHolyDive,Explosion" Category="Mastery" />
     <Explosion ExplosionRadius="4" />
     <Specific_HolyDive ExplosionAtStart="1" ExplosionDamageMultiplier="0.5" />
   </Skill>
   <Skill UID="player_HolyDive_variant_6" ESkill="default_variant">
-    <HUD UIName="@ui_Variant_HolyDive_variant_6" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_003.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_003.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_003.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_003.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_003.png" ShowParamsInTooltip="SpecificHolyDive,StatusAilmentsChance,Cooldown" />
+    <HUD UIName="@ui_Variant_HolyDive_variant_6" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_003.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_003.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_003.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_003.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_003.png" ShowParamsInTooltip="SpecificHolyDive,StatusAilmentsChance,Cooldown" Category="Mastery" />
     <StatusAilment>
       <stun Chance="100" ChanceMode="override" Duration="1.5" DurationMode="override" />
     </StatusAilment>
@@ -112,41 +112,41 @@
     <Cooldown Cooldown="8" CooldownPerLevel="0" />
   </Skill>
   <Skill UID="player_HolyDive_variant_7" ESkill="default_variant">
-    <HUD UIName="@ui_Variant_HolyDive_variant_7" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_003.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_003.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_003.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_003.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_003.png" ShowParamsInTooltip="SpecificHolyDive" />
+    <HUD UIName="@ui_Variant_HolyDive_variant_7" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_003.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_003.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_003.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_003.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_003.png" ShowParamsInTooltip="SpecificHolyDive" Category="Utility" />
     <StatusAilment>
       <weakness Chance="100" ChanceMode="override" />
     </StatusAilment>
   </Skill>
   <Skill UID="player_HolyDive_variant_8" ESkill="default_variant">
-    <HUD UIName="@ui_Variant_HolyDive_variant_8" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_001.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_001.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_001.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_001.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_001.png" ShowParamsInTooltip="SpecificHolyDive" />
+    <HUD UIName="@ui_Variant_HolyDive_variant_8" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_001.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_001.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_001.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_001.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_001.png" ShowParamsInTooltip="SpecificHolyDive" Category="Utility" />
     <Specific_HolyDive ResistanceChargingBuffName="AST_HolyDive_ChargingBuff" UseChargingBuff="1" />
   </Skill>
   <Skill UID="player_HolyDive_variant_9" ESkill="default_variant">
-    <HUD UIName="@ui_Variant_HolyDive_variant_9" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_001.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_001.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_001.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_001.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_001.png" ShowParamsInTooltip="SpecificHolyDive" />
-    <Specific_HolyDive ResistanceLandingBuffName="AST_HolyDive_LandingBuff" ResistanceBuffDuration="5" />
+    <HUD UIName="@ui_Variant_HolyDive_variant_9" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_001.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_001.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_001.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_001.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_001.png" ShowParamsInTooltip="SpecificHolyDive" Category="Survival" />
+    <Specific_HolyDive ResistanceLandingBuffName="AST_HolyDive_LandingBuff" ResistanceBuffDuration="10" />
   </Skill>
   <Skill UID="player_HolyDive_variant_10" ESkill="default_variant">
-    <HUD UIName="@ui_Variant_HolyDive_variant_10" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_001.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_001.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_001.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_001.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_001.png" ShowParamsInTooltip="SpecificHolyDive" />
+    <HUD UIName="@ui_Variant_HolyDive_variant_10" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_001.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_001.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_001.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_001.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_001.png" ShowParamsInTooltip="SpecificHolyDive" Category="Survival" />
     <Specific_HolyDive ForceFieldPerHit="5" />
   </Skill>
   <Skill UID="player_HolyDive_variant_11" ESkill="default_variant">
-    <HUD UIName="@ui_Variant_HolyDive_variant_11" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_003.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_003.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_003.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_003.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_003.png" ShowParamsInTooltip="SpecificHolyDive" />
-    <Specific_HolyDive UmbraPerHit="10" />
+    <HUD UIName="@ui_Variant_HolyDive_variant_11" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_003.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_003.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_003.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_003.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_003.png" ShowParamsInTooltip="SpecificHolyDive" Category="Utility" />
+    <Specific_HolyDive UmbraPerHit="30" />
   </Skill>
   <Skill UID="player_HolyDive_variant_13" ESkill="default_variant">
-    <HUD UIName="@ui_Variant_HolyDive_variant_13" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_001.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_001.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_001.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_001.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_001.png" ShowParamsInTooltip="SpecificHolyDive,DamageWeapon" />
+    <HUD UIName="@ui_Variant_HolyDive_variant_13" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_001.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_001.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_001.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_001.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_001.png" ShowParamsInTooltip="SpecificHolyDive,DamageWeapon" Category="Combat" />
     <DamageWeapon WeaponMultiplier="1.15" />
   </Skill>
   <Skill UID="player_HolyDive_variant_14" ESkill="default_variant">
-    <HUD UIName="@ui_Variant_HolyDive_variant_14" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_001.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_001.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_001.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_001.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_001.png" ShowParamsInTooltip="SpecificHolyDive,StatusAilmentsChance" />
+    <HUD UIName="@ui_Variant_HolyDive_variant_14" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_001.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_001.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_001.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_001.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_001.png" ShowParamsInTooltip="SpecificHolyDive,StatusAilmentsChance" Category="Utility" />
     <StatusAilment AilmentEffectiveness="125" />
   </Skill>
   <Skill UID="player_HolyDive_variant_15" ESkill="default_variant">
-    <HUD UIName="@ui_Variant_HolyDive_variant_15" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_001.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_001.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_001.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_001.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_001.png" ShowParamsInTooltip="SpecificHolyDive,DamageCritical" />
+    <HUD UIName="@ui_Variant_HolyDive_variant_15" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_001.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_001.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_001.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_001.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_001.png" ShowParamsInTooltip="SpecificHolyDive,DamageCritical" Category="Combat" />
     <DamageCritical CriticalInflictScoreModifier="40" />
   </Skill>
   <Skill UID="player_HolyDive_variant_16" ESkill="default_variant">
-    <HUD UIName="@ui_Variant_HolyDive_variant_16" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_003.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_003.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_003.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_003.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_003.png" ShowParamsInTooltip="SpecificHolyDive,DamageWeapon" />
+    <HUD UIName="@ui_Variant_HolyDive_variant_16" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_003.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_003.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_003.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_003.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_003.png" ShowParamsInTooltip="SpecificHolyDive,DamageWeapon" Category="Combat" />
     <DamageWeapon WeaponMultiplier="1.3" />
   </Skill>
   <Skill UID="player_HolyDive_variant_12" ESkill="default_variant">
@@ -168,7 +168,7 @@
       <Entry From="physical" To="sacred" ConversionRate="-100" />
       <Entry From="physical" To="umbra" ConversionRate="100" />
     </Damage_Conversion>
-    <DamageWeapon WeaponMultiplier="1.25" />
+    <DamageWeapon WeaponMultiplier="1" />
     <WeaponRequirements Requirements="magic,umbra" />
     <Specific_HolyDive>
       <LandSounds step0="Play_Skill_HolyDive_Land_Aether" step1="Play_Skill_HolyDive_Land_Bigger_Aether" step2="Play_Skill_HolyDive_Land_Bigger_Aether" step3="Play_Skill_HolyDive_Land_Big_Aether" />
@@ -195,7 +195,7 @@
       <Entry From="physical" To="sacred" ConversionRate="-100" />
       <Entry From="physical" To="lightning" ConversionRate="100" />
     </Damage_Conversion>
-    <DamageWeapon WeaponMultiplier="1.25" />
+    <DamageWeapon WeaponMultiplier="1" />
     <WeaponRequirements Requirements="magic,lightning" />
     <Specific_HolyDive>
       <LandSounds step0="Play_Skill_HolyDive_Land_Lightning" step1="Play_Skill_HolyDive_Land_Bigger_Lightning" step2="Play_Skill_HolyDive_Land_Bigger_Lightning" step3="Play_Skill_HolyDive_Land_Big_Lightning" />
@@ -204,7 +204,7 @@
     <SoundTrigger OnAnimCast="Play_Skill_HolyDive_Jump_Lightning" />
   </Skill>
   <Skill UID="Player_HolyDive_variant_19" ESkill="default_variant">
-    <HUD UIName="@ui_variant_Player_HolyDive_variant_19" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_003.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_003.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_003.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_003.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_003.png" ShowParamsInTooltip="DamageWeapon" />
+    <HUD UIName="@ui_variant_Player_HolyDive_variant_19" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_001.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_001.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_001.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_001.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_001.png" ShowParamsInTooltip="DamageWeapon" Category="Combat" />
     <DamageCritical CriticalDamageModifier="25" />
   </Skill>
   <Skill UID="player_HolyDive_variant_18" ESkill="default_variant">
@@ -224,9 +224,8 @@
     </ParticleList>
     <Damage_Conversion>
       <Entry From="physical" To="sacred" ConversionRate="-100" />
-      <Entry From="physical" To="lightning" ConversionRate="100" />
     </Damage_Conversion>
-    <DamageWeapon WeaponMultiplier="1.25" />
+    <DamageWeapon WeaponMultiplier="1" />
     <WeaponRequirements Requirements="magic,lightning" />
   </Skill>
   <Skill UID="player_HolyDive_variant_4,player_HolyDive_variant_12" ESkill="default_variant_combo">

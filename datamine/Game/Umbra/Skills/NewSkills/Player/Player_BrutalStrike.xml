@@ -2,15 +2,15 @@
   <Skill UID="player_brutalstrike" ESkill="player_brutalstrike" Keywords="explosion,attack_skill">
     <WeaponRequirements Requirements="melee," />
     <Animation ActionString="player_skill_brutalstrike" />
-    <CastingParams CastBone="Bip01 Spine" MaximumTurnRate="180" />
+    <CastingParams CastBone="Bip01 Spine" MaximumTurnRate="180" CancellableByDefault="1" />
     <HUD HUDPicture="../u_resources/spells/Active_Skills/brutal_strike_Physical.png" UIName="@ui_AST_BrutalStrike" Lore="@ui_AST_BrutalStrike_Lore" ActiveEffectTitle="" ActiveEffectDesc="" ASTTreeNumber="1" ShowParamsInAST="Cost,ROSTime,Cooldown,Range,DamageDetail,DamageWeapon,DamageCritical,StatusAilmentsChance,Explosion,SpecificBrutalStrike" ShowParamsInTooltip="Cost,Cooldown,DamageOverview,StatusAilmentsChance" />
     <Enneract PickableParticle_MoveToGround="U_CommonVFX_02.Esseract.Esseract_Projectile.Physical" PickableParticle_OnGround_Shape="U_CommonVFX_02.Esseract.Esseract_Shape.Circle_Physical" PickableParticle_OnGround_Damage="U_CommonVFX_02.Esseract.Esseract_Color.Physical" PickableParticle_OnGround_Symbol="U_CommonVFX_02.Esseract.Esseract_Symbol.HEPHAARON" PickableParticle_OnGround_Indicator="U_CommonVFX_02.Esseract.Esseract_Indicator.Physical" PickableParticle_OnGround_Pickup="U_CommonVFX_02.Esseract.Esseract_Loot.Physical" SkillLearningParticle="U_CommonVFX.Skill_Learn.Skill_Learn_Physical" Inventory_HUDPicture="../u_resources/enneracts/brutal_strike.png" Inventory_LoreDesc="@ui_enneract_lore" />
     <Aggression TargetValueOnHit="20" />
-    <DamageWeapon WeaponMultiplier="3" />
+    <DamageWeapon WeaponMultiplier="4" />
     <StatusAilment AilmentEffectiveness="115" />
     <PostProcess CameraZoomStartTime=".2" CameraZoomDuration="0.5" CameraUnzoomDuration="0.08" CameraZoomFov="32" ChromaShiftStartTime="0.4" ChromaShiftLerpDuration="0.2" ChromaShiftRestoreLerpDuration="0.15" ChromaShiftMaxAmount=".65" />
     <Cooldown Cooldown="0" CooldownPerLevel="0" />
-    <ResourceCost RageCost="-150" ROSTransfertDuration="1.5" />
+    <ResourceCost RageCost="-120" ROSTransfertDuration="1" />
     <ParticleList>
       <Particle Key="Impact_Base" Name="U_CommonVFX.Impact_Ground.Physical_01_Blue_2M" Direction="0,0,1" Scale="1" OffSet="0,0,0" />
       <Particle Key="appear" Name="U_Character.Skills.BrutalStrike_Hammer_Appear_01" Bone="R_Weapon_Bone" Scale="1" Direction="0,1,0" />
@@ -28,22 +28,22 @@
     </ParticleList>
     <Specific_BrutalStrike HitForwardOffset="1.8" SubSkillToCast="secondary_chainlightning_physical" MaxHitPerEntity="1" />
     <Explosion ExplosionRadius="2" />
-    <SoundTrigger OnAnimStart="PLAY_Skill_BrutalStrike_Swing" OnAnimCast="PLAY_Skill_BrutalStrike_Impact" OnHit="Play_Skill_BrutalStrike_Damage" />
+    <SoundTrigger OnAnimStart="PLAY_Skill_BrutalStrike_Swing" OnAnimCast="PLAY_Skill_BrutalStrike_Impact" OnHit="Play_Skill_BrutalStrike_Damage" OnKill="Play_OnKill_Impact_Lethal_Melee_Skill_Hammer" />
     <VisualFeedback TrailPresetBase="default" FeedbackPresetBase="Player_skill_brutalstrike" BloodDecalOrientation="forward" />
   </Skill>
   <Skill UID="player_brutalstrike_variant_default_damage_type" ESkill="default_variant">
     <HUD UIName="@ui_AST_BrutalStrike" Lore="@ui_AST_BrutalStrike_Lore" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_Alpha.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_Alpha.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_Alpha.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_Alpha.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_Alpha.png" HUDPictureVariant_InnerIcon="../u_resources/spells/Active_Skills/brutal_strike.png" VariantBottomPanel="1" />
   </Skill>
   <Skill UID="player_brutalstrike_step_1" ESkill="default_variant">
-    <HUD UIName="@ui_Variant_BrutalStrike_variant_1" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_001.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_001.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_001.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_001.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_001.png" ShowParamsInTooltip="SpecificBrutalStrike,DamageWeapon" />
+    <HUD UIName="@ui_Variant_BrutalStrike_variant_1" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_001.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_001.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_001.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_001.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_001.png" ShowParamsInTooltip="SpecificBrutalStrike,DamageWeapon" Category="Combat" />
     <DamageWeapon WeaponMultiplier="1.15" />
   </Skill>
   <Skill UID="player_brutalstrike_step_2" ESkill="default_variant">
-    <HUD UIName="@ui_Variant_BrutalStrike_variant_2" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_001.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_001.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_001.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_001.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_001.png" ShowParamsInTooltip="SpecificBrutalStrike,Cost" />
+    <HUD UIName="@ui_Variant_BrutalStrike_variant_2" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_001.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_001.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_001.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_001.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_001.png" ShowParamsInTooltip="SpecificBrutalStrike,Cost" Category="Utility" />
     <ResourceCost RageCost="30" />
   </Skill>
   <Skill UID="player_brutalstrike_step_3" ESkill="default_variant">
-    <HUD UIName="@ui_Variant_BrutalStrike_variant_3" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_003.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_003.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_003.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_003.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_003.png" ShowParamsInTooltip="SpecificBrutalStrike,Explosion" />
+    <HUD UIName="@ui_Variant_BrutalStrike_variant_3" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_003.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_003.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_003.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_003.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_003.png" ShowParamsInTooltip="SpecificBrutalStrike,Explosion" Category="Utility" />
     <Explosion ExplosionRadius="1" />
     <ParticleList>
       <Particle Key="impact_base" Name="U_CommonVFX.Impact_Ground.Physical_01_Blue_3M" Direction="0,0,1" Scale="1" OffSet="0,0,0" />
@@ -58,35 +58,35 @@
     </Specific_BrutalStrike>
   </Skill>
   <Skill UID="player_brutalstrike_step_4" ESkill="default_variant">
-    <HUD UIName="@ui_Variant_BrutalStrike_variant_4" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_001.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_001.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_001.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_001.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_001.png" ShowParamsInTooltip="SpecificBrutalStrike,DamageCritical" />
+    <HUD UIName="@ui_Variant_BrutalStrike_variant_4" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_001.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_001.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_001.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_001.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_001.png" ShowParamsInTooltip="SpecificBrutalStrike,DamageCritical" Category="Mastery" />
     <DamageCritical CriticalChanceAgainstStunned="50" />
   </Skill>
   <Skill UID="player_brutalstrike_step_6" ESkill="default_variant">
-    <HUD UIName="@ui_Variant_BrutalStrike_variant_6" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_001.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_001.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_001.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_001.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_001.png" ShowParamsInTooltip="SpecificBrutalStrike,StatusAilmentsChance" />
+    <HUD UIName="@ui_Variant_BrutalStrike_variant_6" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_001.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_001.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_001.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_001.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_001.png" ShowParamsInTooltip="SpecificBrutalStrike,StatusAilmentsChance" Category="Combat" />
     <StatusAilment AilmentEffectiveness="125" />
   </Skill>
   <Skill UID="player_brutalstrike_step_7" ESkill="default_variant">
-    <HUD UIName="@ui_Variant_BrutalStrike_variant_7" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_001.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_001.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_001.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_001.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_001.png" ShowParamsInTooltip="SpecificBrutalStrike,DamageCritical" />
+    <HUD UIName="@ui_Variant_BrutalStrike_variant_7" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_001.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_001.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_001.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_001.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_001.png" ShowParamsInTooltip="SpecificBrutalStrike,DamageCritical" Category="Combat" />
     <DamageCritical CriticalDamageModifier="25" />
   </Skill>
   <Skill UID="player_brutalstrike_step_8" ESkill="default_variant">
-    <HUD UIName="@ui_Variant_BrutalStrike_variant_8" Lore="@ui_Variant_BrutalStrike_variant_8_Lore" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_005.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_005.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_005.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_005.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_005.png" ShowParamsInTooltip="SpecificBrutalStrike" />
+    <HUD UIName="@ui_Variant_BrutalStrike_variant_8" Lore="@ui_Variant_BrutalStrike_variant_8_Lore" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_005.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_005.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_005.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_005.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_005.png" ShowParamsInTooltip="SpecificBrutalStrike" Category="Mastery" />
     <ChargedSkill WindupAnim="player_brutalstrike_charge_windup" FollowupAnim="player_brutalstrike_charge_followup">
-      <Step TimeToReachStep="1" AssociatedAnim="player_brutalstrike_charge_loop_01" WeaponDamagePercent="300" />
-      <Step TimeToReachStep="1" AssociatedAnim="player_brutalstrike_charge_loop_02" WeaponDamagePercent="800" />
-      <Step TimeToReachStep="1.5" AssociatedAnim="player_brutalstrike_charge_loop_03" WeaponDamagePercent="1500" />
+      <Step TimeToReachStep="0.75" AssociatedAnim="player_brutalstrike_charge_loop_01" WeaponDamagePercent="300" />
+      <Step TimeToReachStep="1" AssociatedAnim="player_brutalstrike_charge_loop_02" WeaponDamagePercent="700" />
+      <Step TimeToReachStep="1.25" AssociatedAnim="player_brutalstrike_charge_loop_03" WeaponDamagePercent="1400" />
     </ChargedSkill>
     <SoundTrigger OnAnimStart="Play_Skill_BrutalStrike_Charge_Point_1" OnAnimLoopIn="Play_Skill_BrutalStrike_Charge_Base" OnAnimLoopOut="Play_Skill_BrutalStrike_Charge_Swing" OnAnimCast="Play_Skill_BrutalStrike_Charge_Impact" OnHit="Play_Skill_BrutalStrike_Damage" OnInterrupt="Stop_Skill_BrutalStrike_Charge_Sound" />
   </Skill>
   <Skill UID="player_brutalstrike_step_9" ESkill="default_variant">
-    <HUD UIName="@ui_Variant_BrutalStrike_variant_9" Lore="@ui_Variant_BrutalStrike_variant_9_Lore" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_005.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_005.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_005.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_005.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_005.png" ShowParamsInTooltip="SpecificBrutalStrike,DamageWeapon" />
+    <HUD UIName="@ui_Variant_BrutalStrike_variant_9" Lore="@ui_Variant_BrutalStrike_variant_9_Lore" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_005.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_005.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_005.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_005.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_005.png" ShowParamsInTooltip="SpecificBrutalStrike,DamageWeapon" Category="Mastery" />
     <ParticleList>
       <Particle Key="Wave" Name="U_Character.Skills.BrutalStrike_Impact_Wave_01" Direction="0,1,0" />
     </ParticleList>
     <Shapes>
       <Entry Key="Wave" ShapeName="Player_BrutalStrike_Wave_Shape" />
     </Shapes>
-    <Specific_BrutalStrike WaveDamageMultiplier="0.8" WaveComponentRadius="1.5">
+    <Specific_BrutalStrike WaveDamageMultiplier="0.85" WaveComponentRadius="1.5">
       <ExplosionSequence>
         <Entry Offset="0,2,0" Delay="0" />
         <Entry Offset="1.5,4,0" Delay="0.05" />
@@ -98,7 +98,7 @@
     </Specific_BrutalStrike>
   </Skill>
   <Skill UID="player_brutalstrike_step_10" ESkill="default_variant">
-    <HUD UIName="@ui_Variant_BrutalStrike_variant_10" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_003.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_003.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_003.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_003.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_003.png" ShowParamsInTooltip="SpecificBrutalStrike,DamageWeapon" />
+    <HUD UIName="@ui_Variant_BrutalStrike_variant_10" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_003.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_003.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_003.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_003.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_003.png" ShowParamsInTooltip="SpecificBrutalStrike,DamageWeapon,StatusAilmentsChance" Category="Combat" />
     <ParticleList>
       <Particle Key="appear" Name="U_Character.Skills.BrutalStrike_Axe_Appear_01" Bone="R_Weapon_Bone" Scale="1" Direction="0,1,0" />
       <Particle Key="loop" Name="U_Character.Skills.BrutalStrike_Axe_Looping_01" Bone="R_Weapon_Bone" Scale="1" Direction="0,1,0" />
@@ -112,29 +112,29 @@
     <StatusAilment AilmentEffectiveness="80" />
   </Skill>
   <Skill UID="player_brutalstrike_step_11" ESkill="default_variant">
-    <HUD UIName="@ui_Variant_BrutalStrike_variant_11" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_003.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_003.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_003.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_003.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_003.png" ShowParamsInTooltip="SpecificBrutalStrike" />
+    <HUD UIName="@ui_Variant_BrutalStrike_variant_11" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_003.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_003.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_003.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_003.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_003.png" ShowParamsInTooltip="SpecificBrutalStrike" Category="Mastery" />
     <GhostDamage ChanceToHit="20" MaxHit="5" MinDelay="0.1" MaxDelay="0.4" DamageMultiplier="1.5" />
   </Skill>
   <Skill UID="player_brutalstrike_step_12" ESkill="default_variant">
-    <HUD UIName="@ui_Variant_BrutalStrike_variant_12" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_003.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_003.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_003.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_003.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_003.png" ShowParamsInTooltip="SpecificBrutalStrike,Cooldown,DamageWeapon" />
+    <HUD UIName="@ui_Variant_BrutalStrike_variant_12" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_003.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_003.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_003.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_003.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_003.png" ShowParamsInTooltip="SpecificBrutalStrike,Cooldown,DamageWeapon" Category="Mastery" />
     <Specific_BrutalStrike CriticalStunDuration="2" />
     <Cooldown Cooldown="4" CooldownPerLevel="0" />
     <DamageWeapon WeaponMultiplier="2" />
   </Skill>
   <Skill UID="player_brutalstrike_step_13" ESkill="default_variant">
-    <HUD UIName="@ui_Variant_BrutalStrike_variant_13" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_003.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_003.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_003.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_003.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_003.png" ShowParamsInTooltip="SpecificBrutalStrike" />
+    <HUD UIName="@ui_Variant_BrutalStrike_variant_13" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_003.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_003.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_003.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_003.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_003.png" ShowParamsInTooltip="SpecificBrutalStrike" Category="Mastery" />
     <Specific_BrutalStrike LightningChanceOnCritical="100" />
   </Skill>
   <Skill UID="player_brutalstrike_step_14" ESkill="default_variant">
-    <HUD UIName="@ui_Variant_BrutalStrike_variant_14" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_001.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_001.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_001.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_001.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_001.png" ShowParamsInTooltip="SpecificBrutalStrike,StatusAilmentsChance" />
+    <HUD UIName="@ui_Variant_BrutalStrike_variant_14" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_001.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_001.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_001.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_001.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_001.png" ShowParamsInTooltip="SpecificBrutalStrike,StatusAilmentsChance" Category="Combat" />
     <StatusAilment AllAilmentsInflictDamageIncreasePercent="40" />
   </Skill>
   <Skill UID="player_brutalstrike_step_15" ESkill="default_variant">
-    <HUD UIName="@ui_Variant_BrutalStrike_variant_15" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_001.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_001.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_001.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_001.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_001.png" ShowParamsInTooltip="SpecificBrutalStrike,DamageCritical" />
+    <HUD UIName="@ui_Variant_BrutalStrike_variant_15" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_001.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_001.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_001.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_001.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_001.png" ShowParamsInTooltip="SpecificBrutalStrike,DamageCritical" Category="Combat" />
     <DamageCritical CriticalInflictScoreModifier="40" />
   </Skill>
   <Skill UID="player_brutalstrike_step_16" ESkill="default_variant">
-    <HUD UIName="@ui_Variant_BrutalStrike_variant_16" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_003.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_003.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_003.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_003.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_003.png" ShowParamsInTooltip="SpecificBrutalStrike,DamageWeapon" />
+    <HUD UIName="@ui_Variant_BrutalStrike_variant_16" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_003.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_003.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_003.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_003.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_003.png" ShowParamsInTooltip="SpecificBrutalStrike,DamageWeapon" Category="Combat" />
     <DamageWeapon WeaponMultiplier="1.3" />
   </Skill>
   <Skill UID="player_brutalstrike_step_5" ESkill="default_variant">
@@ -144,7 +144,6 @@
       <Entry From="physical" To="lightning" ConversionRate="100" />
     </Damage_Conversion>
     <WeaponRequirements Requirements="melee,lightning" />
-    <DamageWeapon WeaponMultiplier="1.25" />
     <EventEffectOverride>
       <AnimEvent Original="U_Character.Skills.BrutalStrike_Hammer_01" Override="U_Character.Skills.BrutalStrike_Hammer_01_Lightning" />
       <AnimEvent Original="U_Character.Skills.BrutalStrike_Disappear_01" Override="U_Character.Skills.BrutalStrike_Disappear_01_Lightning" />
@@ -171,7 +170,6 @@
       <Entry From="physical" To="fire" ConversionRate="100" />
     </Damage_Conversion>
     <WeaponRequirements Requirements="melee,fire" />
-    <DamageWeapon WeaponMultiplier="1.25" />
     <EventEffectOverride>
       <AnimEvent Original="U_Character.Skills.BrutalStrike_Hammer_01" Override="U_Character.Skills.BrutalStrike_Hammer_01_Fire" />
       <AnimEvent Original="U_Character.Skills.BrutalStrike_Disappear_01" Override="U_Character.Skills.BrutalStrike_Disappear_01_Fire" />
@@ -200,7 +198,6 @@
       <Entry From="physical" To="sacred" ConversionRate="100" />
     </Damage_Conversion>
     <WeaponRequirements Requirements="melee,sacred" />
-    <DamageWeapon WeaponMultiplier="1.25" />
     <EventEffectOverride>
       <AnimEvent Original="U_Character.Skills.BrutalStrike_Hammer_01" Override="U_Character.Skills.BrutalStrike_Hammer_01_Sacred" />
       <AnimEvent Original="U_Character.Skills.BrutalStrike_Disappear_01" Override="U_Character.Skills.BrutalStrike_Disappear_01_Sacred" />
@@ -222,8 +219,36 @@
     </ParticleList>
     <SoundTrigger OnAnimStart="Play_Skill_BrutalStrike_Sacred_Swing" OnAnimCast="Play_Skill_BrutalStrike_Sacred_Impact" OnHit="Play_Skill_BrutalStrike_Sacred_Damage" />
   </Skill>
+  <Skill UID="player_brutalstrike_step_20" ESkill="default_variant">
+    <HUD UIName="@ui_Variant_BrutalStrike_variant_20" Lore="@ui_Variant_BrutalStrike_variant_20_Lore" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_Alpha.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_Alpha.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_Alpha.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_Alpha.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_Alpha.png" HUDPictureVariant_InnerIcon="../u_resources/spells/Active_Skills/brutal_strike_Aether.png" ShowParamsInTooltip="SpecificBrutalStrike,DamageWeapon" HUDPicture="../u_resources/spells/Active_Skills/brutal_strike_Aether.png" VariantBottomPanel="1" />
+    <Specific_BrutalStrike SubSkillToCast="secondary_chainlightning_aether" />
+    <Damage_Conversion>
+      <Entry From="physical" To="umbra" ConversionRate="100" />
+    </Damage_Conversion>
+    <WeaponRequirements Requirements="melee,umbra" />
+    <EventEffectOverride>
+      <AnimEvent Original="U_Character.Skills.BrutalStrike_Hammer_01" Override="U_Character.Skills.BrutalStrike_Hammer_01_Aether" />
+      <AnimEvent Original="U_Character.Skills.BrutalStrike_Disappear_01" Override="U_Character.Skills.BrutalStrike_Disappear_01_Aether" />
+    </EventEffectOverride>
+    <ParticleList>
+      <Particle Key="Impact_Base" Name="U_CommonVFX.Impact_Ground.Physical_01_Aether_2M" Direction="0,0,1" Scale="1" OffSet="0,0,0" />
+      <Particle Key="appear" Name="U_Character.Skills.BrutalStrike_Hammer_Appear_01_Aether" Bone="R_Weapon_Bone" Scale="1" Direction="0,1,0" />
+      <Particle Key="loop" Name="U_Character.Skills.BrutalStrike_Hammer_Looping_01_Aether" Bone="R_Weapon_Bone" Scale="1" Direction="0,1,0" />
+      <Particle Key="disappear" Name="U_Character.Skills.BrutalStrike_Hammer_Disappear_01_Aether" Bone="R_Weapon_Bone" Scale="1" Direction="0,1,0" />
+      <Particle Key="aura" Name="U_Character.Skills.BrutalStrike_Charging_Aura_Aether" Bone="R_Weapon_Bone" OffSet="0,1.5,0" Scale="1" Direction="0,1,0" />
+      <Particle Key="wind" Name="U_Character.Skills.BrutalStrike_Wind_01_Aether" Scale="1" Direction="0,1,0" />
+      <Particle Key="blink" Name="U_Character.Skills.BrutalStrike_Hammer_Blink_01_Aether" Bone="R_Weapon_Bone" Scale="1" Direction="0,1,0" />
+      <Particle Key="glow1" Name="U_Character.Skills.BrutalStrike_Charging_Aether_01" Bone="R_Weapon_Bone" OffSet="0,1.5,0" Scale="1" Direction="0,1,0" />
+      <Particle Key="glow2" Name="U_Character.Skills.BrutalStrike_Charging_Aether_02" Bone="R_Weapon_Bone" OffSet="0,1.5,0" Scale="1" Direction="0,1,0" />
+      <Particle Key="glow3" Name="U_Character.Skills.BrutalStrike_Charging_Aether_03" Bone="R_Weapon_Bone" OffSet="0,1.5,0" Scale="1" Direction="0,1,0" />
+      <Particle Key="glow4" Name="U_Character.Skills.BrutalStrike_Charging_Aether_04" Bone="R_Weapon_Bone" OffSet="0,1.5,0" Scale="1" Direction="0,1,0" />
+      <Particle Key="glowf" Name="U_Character.Skills.BrutalStrike_Charging_Trigger_Aether" Bone="R_Weapon_Bone" OffSet="0,1.5,0" Scale="1.2" Direction="0,1,0" />
+      <Particle Key="impact" Name="U_CommonVFX.Impact_Ground.Physical_01_Aether_2M" Direction="0,0,1" Scale=".75" />
+    </ParticleList>
+    <SoundTrigger OnAnimStart="Play_Skill_BrutalStrike_Aether_Swing" OnAnimCast="Play_Skill_BrutalStrike_Aether_Impact" OnHit="Play_Skill_BrutalStrike_Aether_Damage" />
+  </Skill>
   <Skill UID="Player_BrutalStrike_step_19" ESkill="default_variant">
-    <HUD UIName="@ui_variant_Player_BrutalStrike_step_19" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_003.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_003.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_003.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_003.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_003.png" ShowParamsInTooltip="DamageWeapon" />
+    <HUD UIName="@ui_variant_Player_BrutalStrike_step_19" Lore="" HUDPictureVariant_Normal="../u_resources/spells/variants/normal_activation_001.png" HUDPictureVariant_Hover="../u_resources/spells/variants/normal_hover_001.png" HUDPictureVariant_Selected="../u_resources/spells/variants/normal_clicked_001.png" HUDPictureVariant_NotEnoughPoints="../u_resources/spells/variants/locked_points_001.png" HUDPictureVariant_InvalidLevel="../u_resources/spells/variants/locked_levels_001.png" ShowParamsInTooltip="DamageWeapon" Category="Combat" />
     <DamageWeapon WeaponMultiplier="1.15" />
   </Skill>
   <Skill UID="player_brutalstrike_step_3,player_brutalstrike_step_8" ESkill="default_variant_combo">
@@ -318,6 +343,36 @@
   <Skill UID="player_brutalstrike_step_18,player_brutalstrike_step_3,player_brutalstrike_step_8" ESkill="default_variant_combo">
     <ParticleList>
       <Particle Key="impact" Name="U_CommonVFX.Impact_Ground.Physical_01_Sacred_2M" Direction="0,0,1" Scale="1.5" />
+    </ParticleList>
+  </Skill>
+  <Skill UID="player_brutalstrike_step_20,player_brutalstrike_step_3" ESkill="default_variant_combo">
+    <ParticleList>
+      <Particle Key="Impact_Base" Name="U_CommonVFX.Impact_Ground.Physical_01_Aether_2M" Direction="0,0,1" Scale="1.5" OffSet="0,0,0" />
+    </ParticleList>
+  </Skill>
+  <Skill UID="player_brutalstrike_step_20,player_brutalstrike_step_8" ESkill="default_variant_combo">
+    <SoundTrigger OnAnimStart="Play_Skill_BrutalStrike_Charge_Aether_Point_1" OnAnimLoopIn="Play_Skill_BrutalStrike_Charge_Base" OnAnimLoopOut="Play_Skill_BrutalStrike_Charge_Aether_Swing" OnInterrupt="Stop_Skill_BrutalStrike_Charge_Aether_Sound" OnAnimCast="Play_Skill_BrutalStrike_Charge_Aether_Impact" OnHit="Play_Skill_BrutalStrike_Aether_Damage" />
+  </Skill>
+  <Skill UID="player_brutalstrike_step_20,player_brutalstrike_step_9" ESkill="default_variant_combo">
+    <ParticleList>
+      <Particle Key="Wave" Name="U_Character.Skills.BrutalStrike_Impact_Wave_01_Aether" Direction="0,1,0" />
+    </ParticleList>
+  </Skill>
+  <Skill UID="player_brutalstrike_step_20,player_brutalstrike_step_10" ESkill="default_variant_combo">
+    <ParticleList>
+      <Particle Key="appear" Name="U_Character.Skills.BrutalStrike_Axe_Appear_01_Aether" Bone="R_Weapon_Bone" Scale="1" Direction="0,1,0" />
+      <Particle Key="loop" Name="U_Character.Skills.BrutalStrike_Axe_Looping_01_Aether" Bone="R_Weapon_Bone" Scale="1" Direction="0,1,0" />
+      <Particle Key="disappear" Name="U_Character.Skills.BrutalStrike_Axe_Disappear_01_Aether" Bone="R_Weapon_Bone" Scale="1" Direction="0,1,0" />
+      <Particle Key="blink" Name="U_Character.Skills.BrutalStrike_Axe_Blink_01_Aether" Bone="R_Weapon_Bone" Scale="1" Direction="0,1,0" />
+    </ParticleList>
+    <EventEffectOverride>
+      <AnimEvent Original="U_Character.Skills.BrutalStrike_Hammer_01" Override="U_Character.Skills.BrutalStrike_Axe_01_Aether" />
+      <AnimEvent Original="U_Character.Skills.BrutalStrike_Disappear_01" Override="U_Character.Skills.BrutalStrike_Disappear_01_Aether" />
+    </EventEffectOverride>
+  </Skill>
+  <Skill UID="player_brutalstrike_step_20,player_brutalstrike_step_3,player_brutalstrike_step_8" ESkill="default_variant_combo">
+    <ParticleList>
+      <Particle Key="impact" Name="U_CommonVFX.Impact_Ground.Physical_01_Aether_2M" Direction="0,0,1" Scale="1.5" />
     </ParticleList>
   </Skill>
 </MetaData>
