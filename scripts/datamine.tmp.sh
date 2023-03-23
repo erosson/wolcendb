@@ -7,8 +7,8 @@ rm -rf datamine* build*
 
 cd third-party/WolcenExtractor
 # GAMEPATH="`realpath ../../assets-dl/depot`"
-GAMEPATH="`realpath ../../wolcen`"
-# GAMEPATH="`realpath $(cat ../../GAMEPATH)`"
+# GAMEPATH="`realpath ../../wolcen`"
+GAMEPATH="`realpath $(cat ../../GAMEPATH)`"
 echo $GAMEPATH
 # DEST="`realpath ../../datamine.tmp`"
 DEST="..\..\datamine.tmp"
