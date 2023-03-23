@@ -3,6 +3,9 @@ Changelog
 
 ---
 
+#### 2023-03-22
+- Updated to Wolcen v1.1.7.0, Endgame. [Wolcen v1.1.0.0 to v1.1.7.0 source differences.](https://github.com/erosson/wolcendb/commit/0aa1a7a5e73eb605b60fda01c6fafb25a0c2b2b7)
+
 #### 2020-12-12
 - Added Hunt (Tributary) affixes, along with their possible negative effects, to the affixes and item pages.
 
