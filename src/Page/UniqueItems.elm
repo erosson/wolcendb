@@ -25,14 +25,14 @@ view lang dm tagStr =
             Set.fromList tagList
 
         loot =
-            dm.uniqueLoot
-                |> List.filter UniqueItem.isNonmax
-                |> List.filter (UniqueItem.keywords >> List.map String.toLower >> Set.fromList >> Set.diff tagSet >> Set.isEmpty)
+            dm.uniqueLootByNonmaxName
+                |> Dict.values
+                |> List.filter (Tuple.first >> UniqueItem.keywords >> List.map String.toLower >> Set.fromList >> Set.diff tagSet >> Set.isEmpty)
     in
     viewMain lang dm tagList loot
 
 
-viewMain : Lang -> Datamine -> List String -> List UniqueItem -> List (Html msg)
+viewMain : Lang -> Datamine -> List String -> List ( UniqueItem, List UniqueItem ) -> List (Html msg)
 viewMain lang dm keywords items =
     [ ol [ class "breadcrumb" ]
         [ a [ class "breadcrumb-item active", Route.href Route.Home ] [ text "Home" ]
@@ -44,31 +44,38 @@ viewMain lang dm keywords items =
     , ul [ class "list-group" ]
         (items
             |> List.map
-                (\mainitem ->
+                (\( mainitem, group ) ->
                     let
-                        group : List UniqueItem
-                        group =
-                            case Dict.get (String.toLower <| UniqueItem.name mainitem) dm.uniqueLootByNonmaxName of
-                                Nothing ->
-                                    [ mainitem ]
+                        colCls =
+                            case group |> List.length of
+                                1 ->
+                                    "col-sm-12"
 
-                                Just [] ->
-                                    [ mainitem ]
+                                2 ->
+                                    "col-sm-6"
 
-                                Just g ->
-                                    g
+                                3 ->
+                                    "col-sm-4"
+
+                                4 ->
+                                    "col-sm-3"
+
+                                _ ->
+                                    "col-sm-3"
                     in
                     li [ class "list-group-item" ]
                         [ div [ class "row" ]
-                            (div [ class "col-sm-3" ]
+                            [ div [ class "col-sm-3" ]
                                 [ a [ Route.href <| Route.UniqueItem <| UniqueItem.name mainitem ]
                                     [ img [ class "unique-list-img", src <| Maybe.withDefault "" <| UniqueItem.img dm mainitem ] []
                                     ]
                                 ]
-                                :: (group
+                            , div [ class "col-sm-9" ]
+                                [ div [ class "row" ]
+                                    (group
                                         |> List.map
                                             (\uitem ->
-                                                div [ class "col-sm-3" ]
+                                                div [ class colCls ]
                                                     [ a [ Route.href <| Route.UniqueItem <| UniqueItem.name uitem ] [ UniqueItem.label lang uitem |> Maybe.withDefault "???" |> text ]
                                                     , uitem |> UniqueItem.levelPrereq |> Maybe.Extra.unwrap (p [] []) (\lvl -> p [] [ text <| "Level: " ++ String.fromInt lvl ])
                                                     , uitem |> UniqueItem.baseEffects dm |> List.map (\s -> li [ class "list-group-item" ] [ text s ]) |> ul [ class "list-group affixes" ]
@@ -77,8 +84,9 @@ viewMain lang dm keywords items =
                                                     , small [ class "text-muted" ] [ text "Keywords: ", text <| String.join ", " <| UniqueItem.keywords uitem ]
                                                     ]
                                             )
-                                   )
-                            )
+                                    )
+                                ]
+                            ]
                         ]
                 )
         )

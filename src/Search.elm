@@ -23,6 +23,7 @@ import Lang exposing (Lang)
 import List.Extra
 import Route exposing (Route)
 import View.Affix
+import Set exposing (Set)
 
 
 type alias Doc =
@@ -142,6 +143,8 @@ docs lang dm =
                 , lore = UniqueItem.lore lang uitem |> Maybe.withDefault ""
                 }
             )
+        -- I don't know why it's generating duplicates, but let's just get this running
+        |> List.Extra.uniqueBy .id
     ]
         |> List.concat
 

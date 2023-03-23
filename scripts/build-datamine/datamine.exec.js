@@ -30,10 +30,15 @@ async function buildJson() {
 
   const gameXmls = await glob(path.join('Game', '**', '*.xml'), {cwd: util.PATH.DATAMINE})
   const gameJsons = await Promise.all(gameXmls.map(async src => {
-    const f = await fs.readFile(path.join(util.PATH.DATAMINE, src))
-    const xml = await f.toString()
-    const json = await xml2json(xml)
-    return [src.replace(/\.xml$/, '.json'), json]
+    try {
+      const f = await fs.readFile(path.join(util.PATH.DATAMINE, src))
+      const xml = await f.toString()
+      const json = await xml2json(xml)
+      return [src.replace(/\.xml$/, '.json'), json]
+    }
+    catch (cause) {
+      throw new Error(`error converting '${src}' to json`, {cause})
+    }
   }))
 
   return {
