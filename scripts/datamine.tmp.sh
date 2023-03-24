@@ -35,4 +35,4 @@ yarn export:datamine
 set +x
 echo
 echo
-echo "Done! Don't forget to run \`yarn deploy:img\` with the right credentials, to deploy this new version to \`img-datamine.erosson.org\`"
+echo "Done! Don't forget to run \`yarn deploy:img\` with the right credentials, to deploy this new version to \`img-wolcendb.erosson.org\`"
