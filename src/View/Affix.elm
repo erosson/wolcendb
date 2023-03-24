@@ -135,7 +135,7 @@ viewItem lang dm expandeds affixes =
     in
     --[ div [ class "alert alert-warning" ]
     --    [ text "Beware: affix possibilities below might be wrong - the developer isn't completely sure how they work yet. "
-    --    , a [ href "https://gitlab.com/erosson/wolcendb/issues" ] [ text "Please file an issue if these are wrong!" ]
+    --    , a [ href "https://github.com/erosson/wolcendb/issues" ] [ text "Please file an issue if these are wrong!" ]
     --    ]
     [ div [ class "row" ]
         [ div [ class "col-sm" ] [ viewItemAffixes "Magic prefixes [click to expand]" lang dm expandeds naturalPre ]

@@ -253,7 +253,7 @@ viewSource source =
             String.replace ".json" ".xml" source.file
     in
     [ div []
-        [ a [ target "_blank", href <| "https://gitlab.com/erosson/wolcendb/-/tree/master/datamine/" ++ file ]
+        [ a [ target "_blank", href <| "https://github.com/erosson/wolcendb/blob/master/datamine/" ++ file ]
             [ text file ]
         ]
     , pre [] [ text <| viewSourceNode 0 source.node ]

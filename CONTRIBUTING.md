@@ -1,6 +1,6 @@
 # Contributing to WolcenDB
 
-Talk to Evan before starting your contribution - no guarantee I'll accept it. [A Gitlab issue](https://gitlab.com/erosson/wolcendb/issues/new) is a good place for this.
+Talk to Evan before starting your contribution - no guarantee I'll accept it. [A Github issue](https://github.com/erosson/wolcendb/issues/new) is a good place for this.
 
 All contributions are GPL-3.0 licensed, like the rest of WolcenDB
 

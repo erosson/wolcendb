@@ -19,7 +19,7 @@ view m =
             [ text "Contact the developer: "
             , a [ href "https://keybase.io/erosson", target "_blank" ] [ text "Keybase chat" ]
             , text ", "
-            , a [ href "https://gitlab.com/erosson/wolcendb/issues/new", target "_blank" ] [ text "GitLab issue" ]
+            , a [ href "https://github.com/erosson/wolcendb/issues/new", target "_blank" ] [ text "Github issue" ]
             , text ", or "
             , a [ href "https://www.reddit.com/message/compose/?to=kawaritai&subject=WolcenDB", target "_blank" ] [ text "Reddit" ]
             , text "."

@@ -100,7 +100,7 @@ view dm =
                     [ a
                         [ class "btn btn-link"
                         , target "_blank"
-                        , href "https://gitlab.com/erosson/wolcendb"
+                        , href "https://github.com/erosson/wolcendb"
                         ]
                         [ text "Source code" ]
                     ]
