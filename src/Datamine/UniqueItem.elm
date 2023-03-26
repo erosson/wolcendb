@@ -131,7 +131,7 @@ img dm uitem =
 -}
 nonmaxName : UniqueItem -> String
 nonmaxName =
-    name >> String.replace "_max" ""
+    name >> String.replace "_max" "" >> String.replace "_ultimate" ""
 
 
 isNonmax : UniqueItem -> Bool
@@ -338,6 +338,7 @@ decoder =
         [ uniqueWeaponsDecoder "Game/Umbra/Loot/Weapons/UniqueWeapons.json"
         , uniqueWeaponsDecoder "Game/Umbra/Loot/Weapons/UniqueWeaponsMax.json"
         , uniqueWeaponsDecoder "Game/Umbra/Loot/Weapons/UniqueWeaponsMaxMax.json"
+        , uniqueWeaponsDecoder "Game/Umbra/Loot/Weapons/UniqueWeaponsUltimate.json"
         , uniqueWeaponsDecoder "Game/Umbra/Loot/Weapons/UniqueShields.json"
         , uniqueArmorsDecoder "Game/Umbra/Loot/Armors/Armors_uniques.json"
         , uniqueArmorsDecoder "Game/Umbra/Loot/Armors/UniqueArmorsMax.json"

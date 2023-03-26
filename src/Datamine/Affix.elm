@@ -171,6 +171,7 @@ decoder =
         (Util.filteredJsons
             (\f ->
                 String.contains "/Loot/MagicEffects/Affixes/Armors_Weapons/AffixesImplicit" f
+                    -- also fetches Affixes*Max, Affixes*MaxMax, Affixes*Ultimate
                     || String.contains "/Loot/MagicEffects/Affixes/Armors_Weapons/AffixesUniques" f
                     || String.contains "/Loot/MagicEffects/Affixes/Armors_Weapons/AffixesGems" f
             )
