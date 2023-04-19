@@ -1,4 +1,4 @@
-module View.AffixFilterForm exposing (Model, Msg, isVisible, update, viewGemForm, viewKeywordForm, viewLevelForm)
+module View.AffixFilterForm exposing (Model, Msg, isVisible, update, viewFrequencyForm, viewGemForm, viewKeywordForm, viewLevelForm)
 
 import Datamine exposing (Datamine)
 import Datamine.Affix as Affix exposing (MagicAffix)
@@ -20,6 +20,7 @@ type alias Model m =
         , filterKeywords : Set String
         , filterGentypes : Set String
         , filterXpack : Set String
+        , filterFrequency0 : Set String
     }
 
 
@@ -29,6 +30,7 @@ type Msg
     | InputKeywordFilter String
     | InputGentypeFilter String
     | InputXpackFilter String
+    | InputFrequency0 String
 
 
 isVisible : Datamine -> Model m -> MagicAffix -> Bool
@@ -38,6 +40,8 @@ isVisible dm model aff =
         -- slave affixes - bloodtrail negative affixes/red text - are never visible on their own.
         -- && not (aff.drop.hunt && (aff.drop.frequency == 0 || aff.type_ == "slave"))
         && not (aff.type_ == "slave" || (aff.drop.hunt && String.startsWith "slave_" (Maybe.withDefault "" aff.class)))
+        && (Set.member "hidden" model.filterFrequency0 || aff.drop.frequency > 0)
+        && (Set.member "default" model.filterFrequency0 || aff.drop.frequency <= 0)
 
 
 update : Msg -> Datamine -> Model m -> Model m
@@ -66,6 +70,9 @@ update msg dm model =
 
         InputXpackFilter kw ->
             { model | filterXpack = model.filterXpack |> Util.toggleSet kw }
+
+        InputFrequency0 kw ->
+            { model | filterFrequency0 = model.filterFrequency0 |> Util.toggleSet kw }
 
 
 viewLevelForm : Model m -> Html Msg
@@ -215,5 +222,38 @@ viewKeywordForm dm model =
                            )
                     )
                 ]
+            ]
+        ]
+
+
+viewFrequencyForm : Model m -> Html Msg
+viewFrequencyForm model =
+    H.form []
+        [ div [ class "form-group form-row" ]
+            [ div
+                [ class "col-sm-3"
+                , style "text-align" "right"
+                ]
+                [ text "Show only affixes with drop frequency" ]
+            , div [ class "col" ]
+                ([ { id = "default", label = "Available", tooltip = "frequency > 0; normal affixes available to players." }
+                 , { id = "hidden", label = "Unavailable", tooltip = "frequency == 0; affixes not currently available to players. You probably don't want this." }
+                 ]
+                    |> List.map
+                        (\o ->
+                            div [ class "form-check form-check-inline" ]
+                                [ input
+                                    [ class "form-check-input"
+                                    , A.id o.id
+                                    , type_ "checkbox"
+                                    , A.checked <| Set.member o.id model.filterFrequency0
+                                    , onCheck <| always <| InputFrequency0 o.id
+                                    ]
+                                    []
+                                , H.label [ class "form-check-label badge", for o.id, title o.tooltip ]
+                                    [ text o.label ]
+                                ]
+                        )
+                )
             ]
         ]

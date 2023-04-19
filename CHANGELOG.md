@@ -4,6 +4,9 @@ Changelog
 ---
 
 #### 2023-04-18
+- Magic affixes now show drop frequency.
+- You can now filter magic affixes by drop frequency. Unavailable affixes are hidden by default.
+  - Previously, WolcenDB showed some affixes that were in the game's files, but could never drop. Sorry for the confusion!
 - Viewing data from old versions of Wolcen works again.
 
 #### 2023-03-26

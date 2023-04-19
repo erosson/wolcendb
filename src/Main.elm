@@ -73,6 +73,7 @@ type alias Model =
     , filterKeywords : Set String
     , filterGentypes : Set String
     , filterXpack : Set String
+    , filterFrequency0 : Set String
     , cityPlayerLevel : Int
     , progress : Dict String ( Int, Int )
     }
@@ -117,6 +118,7 @@ init_ flags route nav =
     , filterKeywords = Set.empty
     , filterGentypes = Set.empty
     , filterXpack = Set.empty
+    , filterFrequency0 = Set.singleton "default"
     , cityPlayerLevel = 0
     , progress = Dict.empty
     }

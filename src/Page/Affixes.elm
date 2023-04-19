@@ -47,6 +47,7 @@ view lang dm model =
     , View.AffixFilterForm.viewLevelForm model |> H.map FormMsg
     , View.AffixFilterForm.viewGemForm dm model |> H.map FormMsg
     , View.AffixFilterForm.viewKeywordForm dm model |> H.map FormMsg
+    , View.AffixFilterForm.viewFrequencyForm model |> H.map FormMsg
     , table [ class "table affixes" ]
         [ thead []
             [ tr []
@@ -57,6 +58,7 @@ view lang dm model =
                 , th [ class "sticky" ] [ text "level" ]
                 , th [ class "sticky" ] [ text "keywords" ]
                 , th [ class "sticky" ] [ text "gemFamilies" ]
+                , th [ class "sticky" ] [ text "frequency" ]
                 , th [ class "sticky" ] [ text "source" ]
                 ]
             ]
@@ -191,6 +193,7 @@ viewAffixClassRow lang dm model ( cls, affixes ) =
 
         -- , td [ class "nowrap" ] (View.Affix.viewGemFamiliesList model.datamine affixes)
         , td [] [{- gems -}]
+        , td [] []
         , td []
             [ button [ class "btn btn-outline-secondary p-1 nowrap" ]
                 (if isExpanded then
@@ -269,6 +272,7 @@ viewAffixRow lang dm model a =
                 |> List.concat
             )
         , td [ class "nowrap" ] (View.Affix.viewGemFamilies lang dm a)
+        , td [] [ text <| String.fromInt a.drop.frequency ]
         , td []
             [ span []
                 [ text "["
