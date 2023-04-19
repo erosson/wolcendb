@@ -3,6 +3,9 @@ Changelog
 
 ---
 
+#### 2023-04-18
+- Viewing data from old versions of Wolcen works again.
+
 #### 2023-03-26
 - Add ultimate-tier unique weapons (level 80).
 

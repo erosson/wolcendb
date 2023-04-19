@@ -338,7 +338,9 @@ decoder =
         [ uniqueWeaponsDecoder "Game/Umbra/Loot/Weapons/UniqueWeapons.json"
         , uniqueWeaponsDecoder "Game/Umbra/Loot/Weapons/UniqueWeaponsMax.json"
         , uniqueWeaponsDecoder "Game/Umbra/Loot/Weapons/UniqueWeaponsMaxMax.json"
-        , uniqueWeaponsDecoder "Game/Umbra/Loot/Weapons/UniqueWeaponsUltimate.json"
+
+        -- older versions of wolcen don't have ultimate-tier unique weapons
+        , uniqueWeaponsDecoder "Game/Umbra/Loot/Weapons/UniqueWeaponsUltimate.json" |> D.maybe |> D.map (Maybe.withDefault [])
         , uniqueWeaponsDecoder "Game/Umbra/Loot/Weapons/UniqueShields.json"
         , uniqueArmorsDecoder "Game/Umbra/Loot/Armors/Armors_uniques.json"
         , uniqueArmorsDecoder "Game/Umbra/Loot/Armors/UniqueArmorsMax.json"
