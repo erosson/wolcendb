@@ -92,14 +92,6 @@ view dm =
                     [ a
                         [ class "btn btn-link"
                         , target "_blank"
-                        , href "https://www.reddit.com/r/wolcendb"
-                        ]
-                        [ text "Reddit: /r/wolcendb" ]
-                    ]
-                , li []
-                    [ a
-                        [ class "btn btn-link"
-                        , target "_blank"
                         , href "https://github.com/erosson/wolcendb"
                         ]
                         [ text "Source code" ]

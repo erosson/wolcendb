@@ -3,6 +3,9 @@ Changelog
 
 ---
 
+#### 2023-06-16
+- Removed links to the inactive community website.
+
 #### 2023-04-18
 - Magic affixes now show drop frequency.
 - You can now filter magic affixes by drop frequency. Unavailable affixes are hidden by default.
@@ -56,7 +59,7 @@ Changelog
 - Images have been restored to loot/unique/skill lists.
 - Normal loot now has a "tier" filter, set to tier 16 by default. (You can still select "all tiers" if you like long lists.)
 - Wolcen version is now shown on the home page.
-- Created a subreddit
+- Created a community website
 - Slightly redesigned some homepage links
 
 #### 2020-03-03
